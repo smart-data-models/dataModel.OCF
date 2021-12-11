@@ -2,11 +2,18 @@ Entità: AutoFocus
 =================  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.OCF/blob/master/AutoFocus/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+Descrizione globale: **Adattamento del programma Smart Data Models dell'originale IoTData data Models. Questa risorsa descrive una funzione di autofocus on/off.  
+La proprietà "autoFocus" è un booleano.  
+Un valore "autoFocus" di 'true' significa che la funzione di autofocus è attiva.  
+Un valore "autoFocus" di 'false' significa che l'autofocus è disattivato.  
+Nota che quando viene usato il Pan Tilt Zoom (vedi definizione della risorsa 'Pan Tilt Zoom') l'autofocus funziona solo nell'area selezionata.**  
 
 ## Elenco delle proprietà  
 
-Proprietà richieste  
-- Nessuna proprietà richiesta  ## Descrizione del modello di dati delle proprietà  
+- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `autoFocus`: Lo stato della funzione Auto Focus.  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `id`: Identificatore unico dell'entità  - `if`: L'insieme di interfacce OCF supportato da questa risorsa.  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n`: Nome amichevole della risorsa  - `name`: Il nome di questo articolo.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `rt`: Il tipo di risorsa.  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `type`: Tipo di entità NGSI. Deve essere AutoFocus    
+Proprietà richieste  
+Questo modello di dati proviene dall'originale [Open Conenctivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels). È stato esteso per soddisfare i requisiti NGSI.  
+## Descrizione del modello di dati delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
@@ -330,10 +337,18 @@ AutoFocus:
 ## Esempio di payloads  
 #### AutoFocus NGSI-v2 valori chiave Esempio  
 Ecco un esempio di un AutoFocus in formato JSON-LD come key-values. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+```json  
+```  
 #### AutoFocus NGSI-v2 normalizzato Esempio  
 Ecco un esempio di un AutoFocus in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+```json  
+```  
 #### AutoFocus NGSI-LD valori chiave Esempio  
 Ecco un esempio di un AutoFocus in formato JSON-LD come key-values. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+```json  
+```  
 #### AutoFocus NGSI-LD normalizzato Esempio  
 Ecco un esempio di un AutoFocus in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+```json  
+```  
 Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza  
