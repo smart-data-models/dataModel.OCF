@@ -2,11 +2,18 @@
 ==============  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/AutoFocus/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+グローバルな説明です。**スマートデータモデル オリジナルのIoTDataデータモデルをプログラム化したものです。このリソースは、オートフォーカスのオン/オフ機能を記述する。  
+プロパティ "autoFocus "は、ブール値である。  
+autoFocus」の値が「true」であれば、オートフォーカス機能がオンであることを意味する。  
+autoFocus」の値が「false」の場合は、オートフォーカス機能がオフであることを意味する。  
+パン・チルト・ズーム（リソース定義の「パン・チルト・ズーム」を参照）が使用されている場合、オートフォーカスは選択された領域でのみ機能することに注意してください。  
 
 ## プロパティのリスト  
 
-必須項目  
-- 必須項目なし  ## データモデルによるプロパティの記述  
+- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `autoFocus`: オートフォーカス機能の状態。  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `if`: このResourceがサポートしているOCF Interface set。  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `n`: リソースのフレンドリーネーム  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `rt`: The Resource Type。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSIエンティティタイプ。オートフォーカスでなければならない    
+必須項目  
+このデータモデルは、オリジナルの[Open Conenctivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)から来ています。NGSIの要件を満たすように拡張されています。  
+## データモデルによるプロパティの記述  
 アルファベット順（クリックすると詳細が表示されます）  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
@@ -330,10 +337,18 @@ AutoFocus:
 ## ペイロードの例  
 #### AutoFocus NGSI-v2 のキーバリューの例。  
 オートフォーカスをJSON-LD形式でkey-valuesにした例を紹介します。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+```json  
+```  
 #### AutoFocus NGSI-v2の正規化例  
 オートフォーカスを正規化したJSON-LD形式の例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+```json  
+```  
 #### AutoFocus NGSI-LD のキーバリューの例  
 オートフォーカスをJSON-LD形式でkey-valuesとして表現した例です。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+```json  
+```  
 #### オートフォーカス NGSI-LDの正規化例  
 JSON-LD形式のAutoFocusを正規化した例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+```json  
+```  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
