@@ -3,7 +3,7 @@
     "@type": "Interface",
     "@context": "dtmi:dtdl:context;2",
     "comment": "Acceleration Sensor adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/acceleration/schema.json",
-    "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource provides a measure of proper acceleration (g force) as opposed to co-ordinate acceleration (which is dependent on the co-ordinate system and the observer).\nThe Property \"value\" is a float which describes the acceleration experienced by the object in \"g\".",
+    "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource provides a measure of proper acceleration (g force) as opposed to co-ordinate acceleration (which is dependent on the co-ordinate system and the observer). The Property 'value' is a float which describes the acceleration experienced by the object in 'g'.",
     "displayName": "acceleration",
     "contents": [
         {
