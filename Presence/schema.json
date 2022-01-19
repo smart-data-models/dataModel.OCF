@@ -4,7 +4,7 @@
   "modelTags": "OCF",
   "$id": "https://smart-data-models.github.io/dataModel.IoTDataModels/Presence/schema.json",
   "title": "Presence Sensor",
-  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes whether presence has been sensed or not.\nThe Property \"value\" is a boolean.\nA value of 'true' means that presence has been sensed.\nA value of 'false' means that presence not been sensed.",
+  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes whether presence has been sensed or not. The Property 'value' is a boolean. A value of 'true' means that presence has been sensed. A value of 'false' means that presence not been sensed.",
   "type": "object",
   "allOf": [
     {

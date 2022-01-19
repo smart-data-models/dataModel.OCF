@@ -4,7 +4,7 @@
   "modelTags": "OCF",
   "$id": "https://smart-data-models.github.io/dataModel.IoTDataModels/movement/schema.json",
   "title": "Movement",
-  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource specifies linear movement.\nThe Property \"movementSettings\" is an array of strings containing possible movement values (e.g. spin, stop, left, right).\nThe Property \"movement\" is the currently selected movement value.\nThe Property \"movementModifier\" is a modifier to the movement value (e.g. \"spin\", \"90\")\n",
+  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource specifies linear movement. The Property 'movementSettings' is an array of strings containing possible movement values (e.g. spin, stop, left, right). The Property 'movement' is the currently selected movement value. The Property 'movementModifier' is a modifier to the movement value (e.g. 'spin', '90') ",
   "type": "object",
   "allOf": [
     {

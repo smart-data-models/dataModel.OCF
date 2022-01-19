@@ -4,7 +4,7 @@
   "modelTags": "OCF",
   "$id": "https://smart-data-models.github.io/dataModel.IoTDataModels/LockCode/schema.json",
   "title": "Lock Code",
-  "description": "Smart Data Models Program adaptation of the original IoTData data Models. The Resource describing a lock code.\nThe Property \"lockCodeList\" is an array of possible codes that may be associated with a lock.\nThe codes are all presented as strings.",
+  "description": "Smart Data Models Program adaptation of the original IoTData data Models. The Resource describing a lock code. The Property 'lockCodeList' is an array of possible codes that may be associated with a lock. The codes are all presented as strings.",
   "type": "object",
   "allOf": [
     {

@@ -4,7 +4,7 @@
   "modelTags": "OCF",
   "$id": "https://smart-data-models.github.io/dataModel.IoTDataModels/UVRadiation/schema.json",
   "title": "UV Radiation",
-  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource specifies UV radiation measurement.\nThe Property \"measurement\" is the current measured UV Index",
+  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource specifies UV radiation measurement. The Property 'measurement' is the current measured UV Index",
   "type": "object",
   "allOf": [
     {

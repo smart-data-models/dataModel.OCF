@@ -4,7 +4,7 @@
   "modelTags": "OCF",
   "$id": "https://smart-data-models.github.io/dataModel.IoTDataModels/EnergyOverload/schema.json",
   "title": "Energy Overload/Circuit Breaker",
-  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes whether an energy overload detector/circuit breaker is currently tripped.\nThe Property \"value\" is a boolean.\nA value of 'true' means that energy overload has been tripped.\nA value of 'false' means that energy overload has not been tripped.\n",
+  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes whether an energy overload detector/circuit breaker is currently tripped. The Property 'value' is a boolean. A value of 'true' means that energy overload has been tripped. A value of 'false' means that energy overload has not been tripped. ",
   "type": "object",
   "allOf": [
     {

@@ -4,7 +4,7 @@
   "modelTags": "OCF",
   "$id": "https://smart-data-models.github.io/dataModel.IoTDataModels/GlucoseSampleLocation/schema.json",
   "title": "Context Sample Location for Glucose Meter",
-  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the Properties associated with context sample Location.\nAST means Alternative Site Test specifying that the location of test performed was from an alternative site on the body.\nThe samplelocation Property is a read-only value that is provided by the Server.",
+  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the Properties associated with context sample Location. AST means Alternative Site Test specifying that the location of test performed was from an alternative site on the body. The samplelocation Property is a read-only value that is provided by the Server.",
   "type": "object",
   "allOf": [
     {

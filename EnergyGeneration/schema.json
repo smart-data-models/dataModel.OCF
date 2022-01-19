@@ -4,7 +4,7 @@
   "modelTags": "OCF",
   "$id": "https://smart-data-models.github.io/dataModel.IoTDataModels/EnergyGeneration/schema.json",
   "title": "Energy Generation",
-  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the attributes associated with energy generation\nThe Property \"energygenerated\" is a number that provides the energy generated in Watt-hour(Wh).",
+  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the attributes associated with energy generation The Property 'energygenerated' is a number that provides the energy generated in Watt-hour(Wh).",
   "type": "object",
   "allOf": [
     {

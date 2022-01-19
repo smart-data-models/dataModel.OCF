@@ -4,7 +4,7 @@
   "modelTags": "OCF",
   "$id": "https://smart-data-models.github.io/dataModel.IoTDataModels/Lock/schema.json",
   "title": "Lock",
-  "description": "Smart Data Models Program adaptation of the original IoTData data Models. The Resource describing a lock.\nThe Property \"lockState\" is a string. The value 'Locked' indicates that the door is Locked.\nThe value 'Unlocked' indicates that the door is Unlocked.",
+  "description": "Smart Data Models Program adaptation of the original IoTData data Models. The Resource describing a lock. The Property 'lockState' is a string. The value 'Locked' indicates that the door is Locked. The value 'Unlocked' indicates that the door is Unlocked.",
   "type": "object",
   "allOf": [
     {

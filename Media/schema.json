@@ -4,7 +4,7 @@
   "modelTags": "OCF",
   "$id": "https://smart-data-models.github.io/dataModel.IoTDataModels/Media/schema.json",
   "title": "Media",
-  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource specifies the media types that an OCF Server supports.\nThe resource is an array of media elements.  Each element contains:\n    A URL at which the specified media type can be accessed.\n    A string array containing the definition of the media using SDP.\n    Each entry in the sdp array is an SDP line.\n    Each line shall follow the SDP description syntax as defined in the SDP specification.\nThe SDP specification can be found at http://tools.ietf.org/html/rfc4566.",
+  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource specifies the media types that an OCF Server supports. The resource is an array of media elements.  Each element contains:     A URL at which the specified media type can be accessed.     A string array containing the definition of the media using SDP.     Each entry in the sdp array is an SDP line.     Each line shall follow the SDP description syntax as defined in the SDP specification. The SDP specification can be found at http://tools.ietf.org/html/rfc4566.",
   "type": "object",
   "allOf": [
     {

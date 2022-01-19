@@ -4,7 +4,7 @@
   "modelTags": "OCF",
   "$id": "https://smart-data-models.github.io/dataModel.IoTDataModels/GlucoseTester/schema.json",
   "title": "Context Tester for Glucose Meter",
-  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the Properties associated with context tester.\nThe tester Property is a read-only value that is provided by the Server where especially\nhcp stands for HealthCare Professional.",
+  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the Properties associated with context tester. The tester Property is a read-only value that is provided by the Server where especially hcp stands for HealthCare Professional.",
   "type": "object",
   "allOf": [
     {

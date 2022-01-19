@@ -4,7 +4,7 @@
   "modelTags": "OCF",
   "$id": "https://smart-data-models.github.io/dataModel.IoTDataModels/Touch/schema.json",
   "title": "Touch Sensor",
-  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes whether a touch has been sensed or not.\nThe Property \"value\" is a boolean.\nA value of 'true' means that touch has been sensed.\nA value of 'false' means that touch not been sensed.\n",
+  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes whether a touch has been sensed or not. The Property 'value' is a boolean. A value of 'true' means that touch has been sensed. A value of 'false' means that touch not been sensed. ",
   "type": "object",
   "allOf": [
     {

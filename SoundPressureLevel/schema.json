@@ -4,7 +4,7 @@
   "modelTags": "OCF",
   "$id": "https://smart-data-models.github.io/dataModel.IoTDataModels/SoundPressureLevel/schema.json",
   "title": "Sound Pressure Level in dB",
-  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes a measured sound pressure in dB.\n The Sound pressure is a property of the sound field at a point in space where the point is the actual location of the sensor.",
+  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes a measured sound pressure in dB.  The Sound pressure is a property of the sound field at a point in space where the point is the actual location of the sensor.",
   "type": "object",
   "allOf": [
     {

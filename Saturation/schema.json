@@ -4,7 +4,7 @@
   "modelTags": "OCF",
   "$id": "https://smart-data-models.github.io/dataModel.IoTDataModels/Saturation/schema.json",
   "title": "Colour Saturation",
-  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes a Colour saturation value.\nThe Property \"colourSaturation\" is an integer.\nA \"colourSaturation\" has a range of [0,100].\nA \"colourSaturation\" value of 0 means producing black and white images.\nA \"colourSaturation\" value of 50 means producing device specific normal colour images.\nA \"colourSaturation\" value of 100 means producing device very full colour images.\n",
+  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes a Colour saturation value. The Property 'colourSaturation' is an integer. A 'colourSaturation' has a range of [0,100]. A 'colourSaturation' value of 0 means producing black and white images. A 'colourSaturation' value of 50 means producing device specific normal colour images. A 'colourSaturation' value of 100 means producing device very full colour images. ",
   "type": "object",
   "allOf": [
     {

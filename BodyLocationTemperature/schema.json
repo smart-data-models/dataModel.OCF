@@ -4,7 +4,7 @@
   "modelTags": "OCF",
   "$id": "https://smart-data-models.github.io/dataModel.IoTDataModels/BodyLocationTemperature/schema.json",
   "title": "Body Location Temperature",
-  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the Properties associated with body location for temperature measurement of a person.\nThe bloc Property is a read-only value that is provided by the Server.",
+  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the Properties associated with body location for temperature measurement of a person. The bloc Property is a read-only value that is provided by the Server.",
   "type": "object",
   "allOf": [
     {

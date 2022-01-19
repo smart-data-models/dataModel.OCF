@@ -4,7 +4,7 @@
   "modelTags": "OCF",
   "$id": "https://smart-data-models.github.io/dataModel.IoTDataModels/BinarySwitch/schema.json",
   "title": "Binary Switch",
-  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes a binary switch (on/off).\nThe Property \"value\" is a boolean.\nA value of 'true' means that the switch is on.\nA value of 'false' means that the switch is off.\n",
+  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes a binary switch (on/off). The Property 'value' is a boolean. A value of 'true' means that the switch is on. A value of 'false' means that the switch is off. ",
   "type": "object",
   "allOf": [
     {

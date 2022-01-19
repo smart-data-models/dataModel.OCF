@@ -4,7 +4,7 @@
   "modelTags": "OCF",
   "$id": "https://smart-data-models.github.io/dataModel.IoTDataModels/magneticFieldDirection/schema.json",
   "title": "Magnetic Field Direction Sensor",
-  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the direction of the Earth's magnetic field at the observer's current point in space.\nTypical use case includes measurement of compass readings on a personal device.\nThe Property \"value\" is an array containing Hx, Hy, Hz (in that order) each of which are floats.\nEach of Hx, Hy and Hz are expressed in A/m (Amperes per metre).",
+  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the direction of the Earth's magnetic field at the observer's current point in space. Typical use case includes measurement of compass readings on a personal device. The Property 'value' is an array containing Hx, Hy, Hz (in that order) each of which are floats. Each of Hx, Hy and Hz are expressed in A/m (Amperes per metre).",
   "type": "object",
   "allOf": [
     {

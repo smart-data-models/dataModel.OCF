@@ -4,7 +4,7 @@
   "modelTags": "OCF",
   "$id": "https://smart-data-models.github.io/dataModel.IoTDataModels/Clock/schema.json",
   "title": "Clock",
-  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the properties associated with clock and time.\nClock is a time information.\nThe Property \"datetime\" is using RFC3339 datetime format (e.g: \"2007-04-05T14:30Z\") (Time+Date+Timezone)\nThe Property \"countdown\" is the desired total seconds for countdown.",
+  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the properties associated with clock and time. Clock is a time information. The Property 'datetime' is using RFC3339 datetime format (e.g: '2007-04-05T14:30Z') (Time+Date+Timezone) The Property 'countdown' is the desired total seconds for countdown.",
   "type": "object",
   "allOf": [
     {

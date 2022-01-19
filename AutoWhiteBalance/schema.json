@@ -4,7 +4,7 @@
   "modelTags": "OCF",
   "$id": "https://smart-data-models.github.io/dataModel.IoTDataModels/AutoWhiteBalance/schema.json",
   "title": "Auto White Balance",
-  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes an auto balance on/off feature.\nThe Property \"autoWhiteBalance\" is a boolean.\nAn AutoWhiteBalance value of 'true' means that the auto white balance feature is on.\nAn AutoWhiteBalance value of 'false' means that the auto white balance feature is off.\n",
+  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes an auto balance on/off feature. The Property 'autoWhiteBalance' is a boolean. An AutoWhiteBalance value of 'true' means that the auto white balance feature is on. An AutoWhiteBalance value of 'false' means that the auto white balance feature is off. ",
   "type": "object",
   "allOf": [
     {

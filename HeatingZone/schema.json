@@ -4,7 +4,7 @@
   "modelTags": "OCF",
   "$id": "https://smart-data-models.github.io/dataModel.IoTDataModels/HeatingZone/schema.json",
   "title": "Heating Zone",
-  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource provides information about the status of a (single) heating zone of a Cook-Top.\nIt describes the case of a Cook-Top whose zones can be activated dynamically (i.e. the device implements pot recognition).\nThe Property \"maxheatinglevel\" defines the max level for the heating zone\nThe Property \"heatinglevel\" is the current heating level of the zone\n  For each element, the value range is from 0 (indication that the zone is not heating) to \"maxheatinglevel\".",
+  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource provides information about the status of a (single) heating zone of a Cook-Top. It describes the case of a Cook-Top whose zones can be activated dynamically (i.e. the device implements pot recognition). The Property 'maxheatinglevel' defines the max level for the heating zone The Property 'heatinglevel' is the current heating level of the zone   For each element, the value range is from 0 (indication that the zone is not heating) to 'maxheatinglevel'.",
   "type": "object",
   "allOf": [
     {

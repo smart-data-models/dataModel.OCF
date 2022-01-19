@@ -4,7 +4,7 @@
   "modelTags": "OCF",
   "$id": "https://smart-data-models.github.io/dataModel.IoTDataModels/SignalStrength/schema.json",
   "title": "Signal Strength",
-  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the strength of a signal by means of lqi and rssi.\nThe Property \"lqi\" is a floating point number that represents Link Quality Indicator.\nThe Property \"rssi\" is a floating point number that represents the received signal strength indicator.",
+  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the strength of a signal by means of lqi and rssi. The Property 'lqi' is a floating point number that represents Link Quality Indicator. The Property 'rssi' is a floating point number that represents the received signal strength indicator.",
   "type": "object",
   "allOf": [
     {

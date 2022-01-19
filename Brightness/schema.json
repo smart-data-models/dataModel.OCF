@@ -4,7 +4,7 @@
   "modelTags": "OCF",
   "$id": "https://smart-data-models.github.io/dataModel.IoTDataModels/Brightness/schema.json",
   "title": "Brightness",
-  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the brightness of a light or lamp.\nThe Property \"brightness\" is an integer showing the current brightness level as a quantized representation in the range 0-100.\nA brightness of 0 is the minimum for the resource.\nA brightness of 100 is the maximum for the resource.",
+  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the brightness of a light or lamp. The Property 'brightness' is an integer showing the current brightness level as a quantized representation in the range 0-100. A brightness of 0 is the minimum for the resource. A brightness of 100 is the maximum for the resource.",
   "type": "object",
   "allOf": [
     {

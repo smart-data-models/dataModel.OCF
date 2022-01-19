@@ -4,7 +4,7 @@
   "modelTags": "OCF",
   "$id": "https://smart-data-models.github.io/dataModel.IoTDataModels/GlucoseHealth/schema.json",
   "title": "Context Health for Glucose Meter",
-  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the Properties associated with context health.\nThe health Property is a read-only value that is provided by the Server where\nminor and major are related to the general health or the level of illness of the person;\nmenses refers to the female menstrual cycle;\nstress refers to physiological or psychological stress.",
+  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the Properties associated with context health. The health Property is a read-only value that is provided by the Server where minor and major are related to the general health or the level of illness of the person; menses refers to the female menstrual cycle; stress refers to physiological or psychological stress.",
   "type": "object",
   "allOf": [
     {

@@ -4,7 +4,7 @@
   "modelTags": "OCF",
   "$id": "https://smart-data-models.github.io/dataModel.IoTDataModels/GlucoseMeal/schema.json",
   "title": "Context Meal for Glucose Meter",
-  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the Properties associated with context meal.\nPreprandial means pre-meal.\nPostprandial means post-meal.\nFasting means the effect of long-term absence of food intake (overnight).\nThe meal Property is a read-only value that is provided by the Server.",
+  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the Properties associated with context meal. Preprandial means pre-meal. Postprandial means post-meal. Fasting means the effect of long-term absence of food intake (overnight). The meal Property is a read-only value that is provided by the Server.",
   "type": "object",
   "allOf": [
     {

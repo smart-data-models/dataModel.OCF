@@ -4,7 +4,7 @@
   "modelTags": "OCF",
   "$id": "https://smart-data-models.github.io/dataModel.IoTDataModels/AutomaticDocumentFeeder/schema.json",
   "title": "Automatic Document Feeder",
-  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the state of an automatic document feeder, typically used with a scanner.\nThe Property \"adfstates\" and \"currentAdfState\" are read only.\nThe Property \"adfStates\" is an array of the possible operational states.\nThe Property \"adfProcessing\" is the OK state, other states are errors or require 'user attention'.\nThe currentAdfState is the current value of the ADF state on the device.",
+  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the state of an automatic document feeder, typically used with a scanner. The Property 'adfstates' and 'currentAdfState' are read only. The Property 'adfStates' is an array of the possible operational states. The Property 'adfProcessing' is the OK state, other states are errors or require 'user attention'. The currentAdfState is the current value of the ADF state on the device.",
   "type": "object",
   "allOf": [
     {
