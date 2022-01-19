@@ -4,8 +4,6 @@
   "modelTags": "OCF",
   "$id": "https://smart-data-models.github.io/dataModel.IoTDataModels/AutoFocus/schema.json",
   "title": "Auto Focus",
-  "derivedFrom": "https://github.com/OpenInterConnect/IoTDataModels/blob/master/AutoFocusResURI.swagger.json",
-"license": "https://github.com/OpenInterConnect/IoTDataModels/blob/master/README.md",
   "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes an auto focus on/off feature.\nThe Property \"autoFocus\" is a boolean.\nAn \"autoFocus\" value of 'true' means that the auto focus feature is on.\nAn \"autoFocus\" value of 'false' means that the auto focus feature is off.\nNote that when Pan Tilt Zoom (see 'Pan Tilt Zoom' Resource definition) is used the autofocus works only in the selected area.",
   "type": "object",
   "allOf": [
@@ -62,5 +60,11 @@
       ],
       "description": "Property. NGSI entity type. It has to be AutoFocus"
     }
-  }
+  },
+  "derivedFrom": "https://github.com/OpenInterConnect/IoTDataModels/blob/master/AutoFocusResURI.swagger.json",
+  "license": "https://github.com/OpenInterConnect/IoTDataModels/blob/master/README.md",
+  "required": [
+    "id",
+    "type"
+  ]
 }
