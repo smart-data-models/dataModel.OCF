@@ -2,8 +2,7 @@ Entidad: aceleración
 ====================  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.OCF/blob/master/acceleration/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descripción global: **Adaptación del programa de modelos de datos inteligentes de los modelos de datos originales de IoTData. Este Recurso proporciona una medida de la aceleración propia (fuerza g) en contraposición a la aceleración por coordenadas (que depende del sistema de coordenadas y del observador).  
-La propiedad "valor" es un flotador que describe la aceleración experimentada por el objeto en "g".**  
+Descripción global: **Adaptación del programa de modelos de datos inteligentes de los modelos de datos originales de IoTData. Este Recurso proporciona una medida de la aceleración propia (fuerza g) en contraposición a la aceleración por coordenadas (que depende del sistema de coordenadas y del observador). La propiedad 'value' es un flotador que describe la aceleración experimentada por el objeto en 'g'.**  
 
 ## Lista de propiedades  
 
@@ -16,9 +15,7 @@ La propiedad "valor" es un flotador que describe la aceleración experimentada p
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 acceleration:    
-  description: |-    
-    Smart Data Models Program adaptation of the original IoTData data Models. This Resource provides a measure of proper acceleration (g force) as opposed to co-ordinate acceleration (which is dependent on the co-ordinate system and the observer).    
-    The Property "value" is a float which describes the acceleration experienced by the object in "g".    
+  description: 'Smart Data Models Program adaptation of the original IoTData data Models. This Resource provides a measure of proper acceleration (g force) as opposed to co-ordinate acceleration (which is dependent on the co-ordinate system and the observer). The Property ''value'' is a float which describes the acceleration experienced by the object in ''g''.'    
   properties:    
     acceleration:    
       description: 'The sensed acceleration experienced in ''g''.'    
