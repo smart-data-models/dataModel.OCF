@@ -1,0 +1,34 @@
+{
+  "id": "urn:ngsi-ld:MuscleOxygenSaturation:id:MJZI:03017437",
+  "dateCreated": "2013-07-10T17:13:30Z",
+  "dateModified": "2012-11-08T18:30:37Z",
+  "source": "Worker car play from product become city. Heavy act gas must. Choice former often political at face to hot.",
+  "name": "Support center item sport. Laugh discover cause herself surface. Author sense certainly cover of beyond.",
+  "alternateName": "Something goal decision nearly dark. House consumer like will necessary seat place note. Marriage hour free special everybody agreement me.",
+  "description": "Choose often single onto game smile right off. Together up fast he already maintain lawyer.",
+  "dataProvider": "Responsibility population a paper base material certain. Tough item offer road condition nice. Generation however trip car interesting south me leg.",
+  "owner": [
+    "urn:ngsi-ld:MuscleOxygenSaturation:items:WGLA:65975855",
+    "urn:ngsi-ld:MuscleOxygenSaturation:items:CMHD:47128517"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:MuscleOxygenSaturation:items:VUSP:21428811",
+    "urn:ngsi-ld:MuscleOxygenSaturation:items:WZCN:91502055"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -83.5104955,
+      93.47094
+    ]
+  },
+  "address": {
+    "streetAddress": "His staff second game clearly pass guess.",
+    "addressLocality": "Impact specific get season process. Live scientist customer white statement low. Director notice option full dark.",
+    "addressRegion": "Great subject next likely sound reason suffer. Eye quickly spend head speech raise return. Building situation market court including appear together. Show here vote hard use involve help.",
+    "addressCountry": "Teach box fear room eat religious. Through drive per available tough. Hour artist at beautiful return public inside. Magazine near thousand expect sound claim.",
+    "postalCode": "Get off meeting ahead close or break. Happy four rule future and series. Table happen possible everybody mean.",
+    "postOfficeBoxNumber": "Option that likely world very who standard. Impact without pay magazine information smile. Particular him rate minute particularly."
+  },
+  "areaServed": "Well memory author they long final position. Door strong rest certainly final."
+}

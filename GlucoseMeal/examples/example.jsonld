@@ -1,0 +1,37 @@
+{
+  "id": "urn:ngsi-ld:GlucoseMeal:id:HLGE:82344698",
+  "dateCreated": "1977-08-15T01:39:07Z",
+  "dateModified": "1997-06-24T22:20:47Z",
+  "source": "Say alone feel sound. Every affect billion feel during. Particular road instead fast should grow. Give next skin deal building.",
+  "name": "Film experience anything us accept respond late really. Building still foot main.",
+  "alternateName": "Low anything score rather my will continue. By city people raise operation amount. Mission measure cause company short.",
+  "description": "Radio computer listen high return sit. Professor watch stock among eye. Speech phone firm reason.",
+  "dataProvider": "Fire church cold early doctor civil white. Until easy action candidate few skin. Guy four production community film.",
+  "owner": [
+    "urn:ngsi-ld:GlucoseMeal:items:KJWE:83688146",
+    "urn:ngsi-ld:GlucoseMeal:items:CPXX:84082182"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:GlucoseMeal:items:NLUW:70195588",
+    "urn:ngsi-ld:GlucoseMeal:items:ZPDL:30436070"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -82.9153815,
+      -36.845329
+    ]
+  },
+  "address": {
+    "streetAddress": "Anything build writer reduce behind shoulder to. Third Republican kind develop money.",
+    "addressLocality": "Parent name poor action item table support. Forward decide tree sign here strong.",
+    "addressRegion": "Life rise only fall little approach. Themselves affect before pay none. Trade kitchen guess.",
+    "addressCountry": "Expect American suddenly forget senior cost. Line defense big activity. Leg rich firm subject you.",
+    "postalCode": "Shake should offer foreign list. Decision life win major capital manage either. Throw performance soldier know goal black.",
+    "postOfficeBoxNumber": "Sit those arm rich rather consider will. Million much campaign director free."
+  },
+  "areaServed": "Guy sport garden too result worker institution. Tough seat pattern light sing. Standard attack staff require there light article.",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

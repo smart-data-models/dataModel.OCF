@@ -1,0 +1,75 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:UVRadiation:id:DVPN:03447085"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1998-04-20T02:40:35Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1999-07-19T23:12:20Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Somebody debate picture direction. Off part machine face. Head high out."
+  },
+  "name": {
+    "type": "string",
+    "value": "Security less security suggest fall point buy catch. Mouth show cultural continue pressure sell away."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Everyone exactly under cost. Chance take agent light contain."
+  },
+  "description": {
+    "type": "string",
+    "value": "Free should name serve about. Despite box visit off cost. Great affect whose so sea particularly brother."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "Baby reduce well state myself establish glass. Model wall store reality management simply."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:UVRadiation:items:ZXLC:95274945",
+      "urn:ngsi-ld:UVRadiation:items:QOZS:96467115"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:UVRadiation:items:GYGW:54600384",
+      "urn:ngsi-ld:UVRadiation:items:MRRI:23547865"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        15.0318265,
+        -2.234148
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Food why situation many prove while put. Early star person traditional picture fight owner. Senior may tell room decide.",
+      "addressLocality": "Clear matter enjoy us them general reach. While head second politics investment read. Yes model determine various power rest goal pass.",
+      "addressRegion": "Then house resource resource information wide. Team those notice south.",
+      "addressCountry": "Wind recent and wife pull. Analysis several bed attack activity amount job. Whatever short science least tend imagine.",
+      "postalCode": "Shake character leave candidate. Way next else power anything.",
+      "postOfficeBoxNumber": "Threat nearly until why season. Administration add parent scene. Choice back effort law."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Eight wait table discover career involve include."
+  }
+}

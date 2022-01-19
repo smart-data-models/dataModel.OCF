@@ -1,0 +1,75 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:Media:id:KDPQ:83036391"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1997-01-03T03:13:22Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "2000-02-09T21:59:03Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Especially according myself office place. Test case expert forget."
+  },
+  "name": {
+    "type": "string",
+    "value": "East product share fact school. Sound bad police most college among."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Media trade today plant. Art fly but price production. Stand here power wonder its keep."
+  },
+  "description": {
+    "type": "string",
+    "value": "Wide skin maybe western especially look live. Value agency blood current. Since affect star miss general election."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "Painting cup half tend identify student mission world. Interesting easy anyone operation how sound."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:Media:items:LNSZ:90498442",
+      "urn:ngsi-ld:Media:items:FKOX:99131384"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:Media:items:XRQW:77854149",
+      "urn:ngsi-ld:Media:items:WYHM:27291806"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -59.32886,
+        108.974994
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Cut arm act home short. Not under bill executive morning home rate.",
+      "addressLocality": "Change popular last arrive to issue soldier. Blood city fine old nothing. Back memory father be reach get focus.",
+      "addressRegion": "Help large hear look end live world fact. Certainly senior fall go tell general heavy. Back fund shake their environment.",
+      "addressCountry": "Pull kind personal Congress score. Should east capital address fast realize sort. Perform impact player truth stay senior.",
+      "postalCode": "Treat recognize where cover watch. Interest bring assume agree health. Marriage specific claim movie sing.",
+      "postOfficeBoxNumber": "Light personal benefit person environmental."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Answer wife call may under. Anything inside write. Tough however study know coach industry tree in. But town parent."
+  }
+}

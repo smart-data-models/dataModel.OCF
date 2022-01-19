@@ -1,0 +1,78 @@
+{
+  "id": "urn:ngsi-ld:GlucoseMeal:id:ABVE:19702704",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2002-02-17T00:53:08Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2010-03-31T20:20:55Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Leader ten audience his."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Play participant away rate claim none sense little. Evening class teach war game. Nation campaign body human. Program message protect economy chair race ago."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Indeed finally indeed word mind hit shake. Section attorney take rate. Fear leg because suggest degree."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Fire charge outside head majority capital. Of happen past instead interesting audience throughout. Join marriage certain turn happen."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Him indeed some allow. Reduce somebody white card another. Member seat produce animal position."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:GlucoseMeal:items:IQSO:46372161",
+      "urn:ngsi-ld:GlucoseMeal:items:IZFK:40511946"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:GlucoseMeal:items:WFRZ:03670754"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        0.614666,
+        60.591506
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Way tree option central car beautiful. Your able democratic already possible.",
+      "addressLocality": "Analysis focus sort agency. Open fall blood animal understand enough industry. Chair above drug figure sit result.",
+      "addressRegion": "Throughout no group participant medical call natural. Less collection top get everybody. Another improve risk suffer our leader century.",
+      "addressCountry": "Student travel floor fish hear matter nothing. Along people claim light fact maybe five. Walk middle arrive main address include.",
+      "postalCode": "Nearly eight happy water. College Republican buy door head. Stand especially science issue positive tend fast result.",
+      "postOfficeBoxNumber": "Ahead if design safe watch. Language sound guy fight break."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "My which public amount. Identify media none future cost network party. Modern six discuss writer receive."
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

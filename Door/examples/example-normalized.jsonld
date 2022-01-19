@@ -1,0 +1,78 @@
+{
+  "id": "urn:ngsi-ld:Door:id:BPYU:35495736",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1981-10-31T15:38:52Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1983-02-10T00:04:25Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Why discussion visit. Rest as himself situation around employee. Get blue nature late impact heart friend."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Time training significant key. Think benefit skin finally tend like structure also."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Better together high option effort. Necessary although interview opportunity trial stock. Central want raise morning."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Feel parent next four sound statement list. Every seem remain society west term. Right share middle run theory reduce."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Card scene notice. Center just four worker maintain conference."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Door:items:IMUY:85423080",
+      "urn:ngsi-ld:Door:items:QZIH:12147561"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Door:items:YQXT:11349906"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -25.8682615,
+        -34.601028
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Hope somebody reveal chair model he step. Help scene treat should group serious. Plant series claim store arm family heart.",
+      "addressLocality": "Option give house whose admit society. Meet away late beautiful billion thing field.",
+      "addressRegion": "Shoulder student win my. Art part exist bank. For tell cup choice though.",
+      "addressCountry": "Find authority whole heart. Professional trial hand seven raise. Learn democratic whether play car all.",
+      "postalCode": "Minute small such away worry. Air window material fire sometimes these team best. Term best because indeed player summer visit.",
+      "postOfficeBoxNumber": "Together international Republican owner upon me paper. Store force remember director three. Magazine five really become establish affect degree cause. On help certainly buy land through."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Talk respond sort group environmental. Cause court page type. When end study run loss activity responsibility."
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

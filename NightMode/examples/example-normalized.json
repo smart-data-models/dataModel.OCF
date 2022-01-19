@@ -1,0 +1,75 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:NightMode:id:AWMD:73023927"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1970-09-04T13:16:55Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1980-02-03T17:58:53Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Change debate hour stock."
+  },
+  "name": {
+    "type": "string",
+    "value": "Store day firm owner turn trouble compare. Sure list require lead form."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Magazine program manager consider. Pull difficult red process figure live."
+  },
+  "description": {
+    "type": "string",
+    "value": "Interview behind provide happy black industry right service. Dream exactly safe wait white edge address."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "Design record lead lead artist deal peace. Black throw democratic movement detail begin size amount."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:NightMode:items:JULK:15845973",
+      "urn:ngsi-ld:NightMode:items:QOJR:35576615"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:NightMode:items:YZVC:86779056",
+      "urn:ngsi-ld:NightMode:items:UAYK:95782700"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        9.086368,
+        -115.572061
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Few career level space raise population. Send I down into.",
+      "addressLocality": "Travel officer watch but throw war. Talk ball member trip probably. Say cup player check.",
+      "addressRegion": "Argue role into type politics evidence between. Various brother agreement property apply talk our lot.",
+      "addressCountry": "Agree heavy across peace. Nearly follow according with might. Camera near site source. Gas service establish south sense.",
+      "postalCode": "Maybe form seem administration TV. Perhaps whom dinner magazine. Successful certainly old store specific. South experience month five out save win.",
+      "postOfficeBoxNumber": "Letter laugh partner teacher game. Cup election popular see."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Parent debate heart no. Detail address guess we star environmental card. Job agreement seek here too over too."
+  }
+}

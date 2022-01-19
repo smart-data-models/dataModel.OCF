@@ -1,0 +1,78 @@
+{
+  "id": "urn:ngsi-ld:KeyCardSwitch:id:LEEZ:97554540",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2013-05-18T21:24:36Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2006-07-08T05:04:06Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Stock for lead best add yourself decide everyone. Member pass toward treat. Skin throw remain four."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Lot too town drive. Per fear science buy pull. Notice forward energy necessary."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Fund worry leader return executive I house. World everybody learn day."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Cultural industry worry black well. Because nation project third better. Mention art window owner very."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Southern public ability feel think. Military fire green guy yes better authority same. Until wind these fly for hand."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:KeyCardSwitch:items:HCSA:07183623",
+      "urn:ngsi-ld:KeyCardSwitch:items:POTQ:78503118"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:KeyCardSwitch:items:NNBX:82221089"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        1.61911,
+        -121.561893
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Bring choice by a hundred ago guess. Pass floor watch attorney individual.",
+      "addressLocality": "Out indeed process difficult let whole necessary. Action could produce without sit talk performance not.",
+      "addressRegion": "Outside hotel question foot international term.",
+      "addressCountry": "Girl only another action throughout. Perhaps table this list. Sign civil red eight. Do fish move during across once.",
+      "postalCode": "Civil ready affect knowledge. Amount six against example go learn.",
+      "postOfficeBoxNumber": "Bank significant similar station leader. Bag country cup military. Police fund simple put."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Congress newspaper education seat. Spring month skill land production away. I back plant mind bag deal who. Glass fill think expect remain."
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

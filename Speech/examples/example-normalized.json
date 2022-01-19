@@ -1,0 +1,75 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:Speech:id:MSFY:34806271"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1973-12-25T02:28:43Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "2016-12-27T10:52:44Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Happy talk boy although everybody art central. Read Republican really cultural within."
+  },
+  "name": {
+    "type": "string",
+    "value": "With every game hard how. Direction management industry generation send director."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Anything building move card east institution minute. Speech view since environmental however management painting. Long strategy price ask treatment of."
+  },
+  "description": {
+    "type": "string",
+    "value": "Always worker discover bank. Leg none six measure fast cost."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "Manager about country smile. Fall woman yeah thing clear. Street already Republican life."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:Speech:items:QSTJ:71949007",
+      "urn:ngsi-ld:Speech:items:YUJN:53243319"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:Speech:items:XMUU:79983626",
+      "urn:ngsi-ld:Speech:items:PPOG:87651750"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -9.2267575,
+        -152.388253
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "White audience serious day suffer. Western outside word draw especially.",
+      "addressLocality": "Maintain response simply. Indeed dinner argue surface business move television education. Imagine hotel send Republican stage technology choice.",
+      "addressRegion": "Hot benefit list trial clear suffer. Important body difference cause only energy. Long attention there bad letter generation. Relationship worker model end they quickly.",
+      "addressCountry": "Practice change treat degree. Board conference name past space.",
+      "postalCode": "Effect garden fish while. Record professor determine dream.",
+      "postOfficeBoxNumber": "Keep education someone could. Mrs knowledge note great else half fish live. Base through likely newspaper throw read someone then."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Camera talk statement ground base. Pull alone enjoy score off right do. Increase success front side."
+  }
+}

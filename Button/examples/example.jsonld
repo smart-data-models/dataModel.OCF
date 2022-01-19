@@ -1,0 +1,37 @@
+{
+  "id": "urn:ngsi-ld:Button:id:ISZL:65414478",
+  "dateCreated": "1996-10-24T13:42:33Z",
+  "dateModified": "1979-07-19T07:45:44Z",
+  "source": "Board wind few before whatever region air.",
+  "name": "President relationship woman study discover. Wide station season store and.",
+  "alternateName": "Produce lose find land give so. She official Democrat short year western through.",
+  "description": "Partner dog east concern my half move. Within whole air those. Chair image month capital.",
+  "dataProvider": "Trade around region certain speech enter imagine believe. Discuss class local finally. Collection government not pull.",
+  "owner": [
+    "urn:ngsi-ld:Button:items:QRXM:19903716",
+    "urn:ngsi-ld:Button:items:OMQJ:53912842"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:Button:items:EBXK:60389920",
+    "urn:ngsi-ld:Button:items:LIPE:98868295"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -63.4215695,
+      -75.180162
+    ]
+  },
+  "address": {
+    "streetAddress": "Serious now area. Go building sell yes office Mrs. Could bad back.",
+    "addressLocality": "Ahead add effort mind house. Condition decade picture various. Chair run politics. Civil common yeah month character physical parent.",
+    "addressRegion": "Property present think including moment. Out full bring vote receive season.",
+    "addressCountry": "Dinner according much beat. Purpose accept agency account realize realize gas.",
+    "postalCode": "Concern rise style. Region national democratic how wall.",
+    "postOfficeBoxNumber": "Design white whole music."
+  },
+  "areaServed": "Young eat despite medical. Company off manager knowledge fast million. Risk those rest system stuff thus.",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:PanTiltZoom:id:UHWT:54067498"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1973-12-23T12:38:20Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1978-03-27T01:53:55Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Resource however management now much. While free environmental himself culture whose. History job series movement."
+  },
+  "name": {
+    "type": "string",
+    "value": "Though lead take method door. Forget law those fly."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Skin financial dog yet success."
+  },
+  "description": {
+    "type": "string",
+    "value": "Rich speak camera without history. Wait growth low want appear feel spend."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "Cut not while reveal. Laugh whole field boy figure total."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:PanTiltZoom:items:CGQE:63039182",
+      "urn:ngsi-ld:PanTiltZoom:items:AECL:70645964"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:PanTiltZoom:items:QUDB:02426174",
+      "urn:ngsi-ld:PanTiltZoom:items:LWVB:28240919"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        39.0863645,
+        100.59068
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Develop box sense nearly for speech. Street stock possible. Identify increase trial try reveal there model end.",
+      "addressLocality": "Whose environmental continue result early note. Find agent wrong seek line later weight. Room act think last whom minute again.",
+      "addressRegion": "Interview piece idea employee trade old use.",
+      "addressCountry": "Indicate sing again leg art professional practice support. Return increase administration challenge toward art computer there. Speak activity still fall agreement look significant.",
+      "postalCode": "Treat thousand article government compare necessary trouble site. Million fight two.",
+      "postOfficeBoxNumber": "Yard outside deal receive. On attorney teach federal high standard."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Man lay sometimes begin compare get course. Front there music."
+  }
+}

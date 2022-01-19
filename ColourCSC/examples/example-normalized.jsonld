@@ -1,0 +1,78 @@
+{
+  "id": "urn:ngsi-ld:ColourCSC:id:QXXW:01773179",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1981-01-01T22:54:47Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2018-04-25T12:29:34Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Pick tend read employee art interview. Wife production know officer small. Let training study specific seat young."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Dog police quite prove ok law but."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Line power thought plan surface. None often arm catch not night new public."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Month feeling region international make son. Six spend certainly. Suggest bad great lawyer."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Such allow nothing down very her record. Or travel reduce throughout change. Brother history over medical."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:ColourCSC:items:NUWJ:83419287",
+      "urn:ngsi-ld:ColourCSC:items:PSON:82588261"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:ColourCSC:items:IFMS:64015606"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -34.482211,
+        33.71405
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Foreign per begin.",
+      "addressLocality": "Vote rule always section. Respond fish event run particularly style establish key.",
+      "addressRegion": "Foot computer seven unit future. Front employee step star.",
+      "addressCountry": "Game relationship where civil research improve later. Practice agent each recently until send.",
+      "postalCode": "Reduce single culture hour can lawyer speech. Point attention stay reason. Evening benefit subject between.",
+      "postOfficeBoxNumber": "Can stop save military despite memory would."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Simple pressure test difficult Congress business mean. North dark lose blue test your buy."
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

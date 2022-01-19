@@ -1,0 +1,75 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:ecomode:id:XTKS:41735897"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1984-05-09T22:46:30Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "2005-12-26T00:05:52Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Pick five government out several. Onto care door future."
+  },
+  "name": {
+    "type": "string",
+    "value": "Source bed up these. Focus allow act rather cover what. Body rock product history management."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Dark wrong could thank yard. Before think major necessary police responsibility himself think. Would sit avoid floor relationship suffer thousand modern."
+  },
+  "description": {
+    "type": "string",
+    "value": "Morning financial law compare paper. Two find model tough remember war. Business identify particularly claim."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "Wish church to event in line. Ever career sound her from figure."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:ecomode:items:VUPI:33448029",
+      "urn:ngsi-ld:ecomode:items:JAMY:20507933"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:ecomode:items:NYJQ:21494614",
+      "urn:ngsi-ld:ecomode:items:MKLF:57041922"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -44.6641115,
+        141.353721
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Name husband local positive hear past open. Pay dream recently card never.",
+      "addressLocality": "Arm should bar western beautiful. Continue affect Republican attention level on.",
+      "addressRegion": "Thousand yes beautiful work national key born. Cut stage believe town enough gas past. Scene peace six factor happy those blood condition. Dream police somebody fill.",
+      "addressCountry": "Somebody drug cup green stand. Upon finish outside agent.",
+      "postalCode": "Season ten movie different drug. Thus these picture seat.",
+      "postOfficeBoxNumber": "Special who big movement. Entire could page item decade consumer lawyer kitchen."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Build type series executive technology whole situation for. Series natural religious enjoy oil. Beat eat arrive ever."
+  }
+}

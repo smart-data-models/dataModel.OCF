@@ -1,0 +1,78 @@
+{
+  "id": "urn:ngsi-ld:settings-broadcasting:id:BHOO:39692040",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1982-12-04T02:37:52Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1999-09-14T17:36:02Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Everything field she piece hard ready. Drive voice produce show against occur happen. Role entire window on significant."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Issue election exist college wall positive. Even fall skill foot small."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Word fact top shake across where. Choice pick manage billion right most. Professor financial among office power."
+  },
+  "description": {
+    "type": "Property",
+    "value": "State fast high perhaps trip voice. Oil teacher represent third. Possible spend left agreement outside page bank little. Collection fall those method three little."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Knowledge body member fire newspaper. Democrat little smile. Commercial single buy spring evidence involve."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:settings-broadcasting:items:TJUK:79894047",
+      "urn:ngsi-ld:settings-broadcasting:items:OUMH:58838615"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:settings-broadcasting:items:VMSZ:11469759"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -69.1373175,
+        -136.039644
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Ball feel summer meet much quickly a kid. Long interesting money everybody site approach situation. Team miss training minute American late condition.",
+      "addressLocality": "Quickly one attack. Can rule agency however.",
+      "addressRegion": "Improve century soldier join important toward. I training ago teach there sell. Leave agreement third sure even question.",
+      "addressCountry": "Image want trouble son. Position animal discussion rather bed must treat.",
+      "postalCode": "Pay sound agency player. Cover sport trip public.",
+      "postOfficeBoxNumber": "Plant mission candidate speech modern inside little. However increase her once together music. Blood boy glass however draw. Live cover if everybody no build."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Various vote suffer should goal bad. Early air laugh forward media whether similar."
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "urn:ngsi-ld:movement:id:CPZE:29185997",
+  "dateCreated": "2014-08-15T05:57:18Z",
+  "dateModified": "1990-04-02T03:13:24Z",
+  "source": "Billion parent city country citizen benefit order try. Sport hear very research. In series vote.",
+  "name": "Between next production plant else want. Never during care goal people machine.",
+  "alternateName": "Carry owner letter sure shake later into. Television people tell center teacher game sit.",
+  "description": "Choose throughout school civil grow writer food. Language treat around travel brother their. Rich open machine at. Himself cut them live product region.",
+  "dataProvider": "For door this agent another management size. Office upon strong way. Charge good although lot food body.",
+  "owner": [
+    "urn:ngsi-ld:movement:items:TNVL:40980728",
+    "urn:ngsi-ld:movement:items:VRHP:35252843"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:movement:items:JPAP:34694458",
+    "urn:ngsi-ld:movement:items:RDOR:34337888"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      60.96489,
+      46.089257
+    ]
+  },
+  "address": {
+    "streetAddress": "Seek commercial out thousand exactly loss.",
+    "addressLocality": "Quite majority call agreement keep somebody that number.",
+    "addressRegion": "Rise lead imagine strategy future country girl. Family ahead effort pattern view effort writer. Every entire sell star product hand. President gun example nor.",
+    "addressCountry": "Full bring contain probably thing receive political get. National increase which stop hope must always.",
+    "postalCode": "Any herself same father teach involve seven indeed. Fish might ten goal.",
+    "postOfficeBoxNumber": "Unit step environmental finally. Process beautiful meeting seat. Use race out whole message success. Store real environmental try."
+  },
+  "areaServed": "Meet foreign Congress receive ahead year add. Child poor memory remain hot argue.",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

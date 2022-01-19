@@ -1,0 +1,75 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:Conversion:id:DKJV:44849161"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "2010-02-08T21:57:25Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "2004-09-21T01:38:10Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Best actually company race add cover along. According way international. Natural whether item skin."
+  },
+  "name": {
+    "type": "string",
+    "value": "Suggest someone leave foot. Case agency thousand section."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Can plant hand nearly choice society. Newspaper dark bit direction discuss not sort amount."
+  },
+  "description": {
+    "type": "string",
+    "value": "Officer join base sport since cell. Type impact yourself enough position. Down represent camera policy account buy power page."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "Hear face street among general speak dog child. Couple civil information city take yet. Build bring Mrs side college east."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:Conversion:items:CFKS:46510991",
+      "urn:ngsi-ld:Conversion:items:QBTN:84889064"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:Conversion:items:AOWI:79063714",
+      "urn:ngsi-ld:Conversion:items:JEWQ:71586332"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        48.6082595,
+        -148.627494
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Thank author mouth political. East perform cultural low seat close rise. Star window we special mission.",
+      "addressLocality": "Answer himself though artist clearly area total. Sure realize alone. Able nation community realize camera.",
+      "addressRegion": "Artist Mrs enjoy herself. Lot plant three employee find.",
+      "addressCountry": "Strategy coach industry daughter. Much me hot Mr author. Firm style room story worry back travel.",
+      "postalCode": "Voice very power ever. Nature share six nation recognize. Son knowledge make. Require remain deep she investment.",
+      "postOfficeBoxNumber": "Tree report trouble away feeling summer. Might boy these clearly choose."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Involve attorney they day success scientist. Author customer anything fact now always. Describe former forget improve reach."
+  }
+}

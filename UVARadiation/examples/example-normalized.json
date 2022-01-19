@@ -1,0 +1,75 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:UVARadiation:id:XLXB:19118181"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1976-06-20T20:20:58Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1986-09-17T07:45:30Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Out recognize head health him return. Open skill well factor social pay."
+  },
+  "name": {
+    "type": "string",
+    "value": "Mouth nation quite bring price administration. Relate end their part rate information. Pattern look recently let member. Perhaps thus perhaps force report value."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Beat usually once us Mr soon. Cost record take moment particular participant."
+  },
+  "description": {
+    "type": "string",
+    "value": "Discussion during phone loss."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "Education however exist close either hard seem."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:UVARadiation:items:YRGO:27251925",
+      "urn:ngsi-ld:UVARadiation:items:VOMP:44723721"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:UVARadiation:items:JOIY:23173391",
+      "urn:ngsi-ld:UVARadiation:items:OIHP:83028662"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        16.951078,
+        -96.703778
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Majority man available side. Item ready individual time. Box month cover I than.",
+      "addressLocality": "As produce writer strategy little green need. Only here heart leg.",
+      "addressRegion": "Finally both much on evening along foreign. Product culture term shoulder career. Forget especially body past course executive push. Away chance friend information detail her.",
+      "addressCountry": "Marriage by central sport kitchen politics. Term question run add door.",
+      "postalCode": "Admit science prepare maybe well president season. Determine true high baby according three.",
+      "postOfficeBoxNumber": "Eye gun beat possible service. Thank service law air. Worry specific claim girl machine future."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Film really information land. Arm decade foreign phone. Avoid least once plan page."
+  }
+}

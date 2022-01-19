@@ -1,0 +1,37 @@
+{
+  "id": "urn:ngsi-ld:acceleration:id:AKKA:92596343",
+  "dateCreated": "2000-01-22T03:24:49Z",
+  "dateModified": "2002-02-16T14:36:32Z",
+  "source": "Half across bar analysis set another chance. Address run local name nothing whether newspaper.",
+  "name": "Add remember often rock listen. Hard find every. News start message sea dinner seek hand.",
+  "alternateName": "National store guy firm power race civil movie. Without difference live trade Democrat radio attention. Sort president push story improve free.",
+  "description": "Act event need down crime sell. Thus serious identify song add how method.",
+  "dataProvider": "Consider leave send chance fill small.",
+  "owner": [
+    "urn:ngsi-ld:acceleration:items:JBWN:36613923",
+    "urn:ngsi-ld:acceleration:items:NOJT:32000181"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:acceleration:items:ATXW:46664069",
+    "urn:ngsi-ld:acceleration:items:NBUQ:53228079"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      12.1695535,
+      -135.072105
+    ]
+  },
+  "address": {
+    "streetAddress": "High animal again very fish receive treatment. Learn simple less much certainly. Join reality section cut tough dark shoulder.",
+    "addressLocality": "Deep each ever attorney capital future agree over. Cultural institution against face. Win wide off win source help against.",
+    "addressRegion": "Ground include life small. We leader throughout player catch. Budget join trip war.",
+    "addressCountry": "Moment quickly environment small late likely. Short final agreement stage green painting natural end.",
+    "postalCode": "Her start similar control threat particular attorney.",
+    "postOfficeBoxNumber": "Me form item data. Case bag spend available."
+  },
+  "areaServed": "Individual ask site marriage stuff thing. History others rich.",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

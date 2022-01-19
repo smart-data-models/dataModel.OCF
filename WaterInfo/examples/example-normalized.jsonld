@@ -1,0 +1,78 @@
+{
+  "id": "urn:ngsi-ld:WaterInfo:id:YOCI:60285099",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1998-08-15T18:04:30Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1988-08-23T07:30:17Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Ask use then represent society toward behind. Report amount from determine movement. Anyone leg market long price."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Make from radio. Dream agency trouble garden up."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Heart daughter modern through democratic perform time. New picture true."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Of board while gas surface hundred. Goal fund note responsibility media yes. American tell sometimes stop series."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Ever election point beat speak."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:WaterInfo:items:HBMT:72566566",
+      "urn:ngsi-ld:WaterInfo:items:TPIP:75041044"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:WaterInfo:items:ICKZ:40105092"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        17.8641435,
+        -30.215867
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "At still black. Everyone often chance. Away notice year inside room ago.",
+      "addressLocality": "Third fill play. Resource pull skin take school religious side. Effort close analysis best interest group. Pull available feeling learn wear statement.",
+      "addressRegion": "Rise doctor window me bed short. Art represent begin run letter.",
+      "addressCountry": "Law price police machine size. Thing firm would memory.",
+      "postalCode": "Suggest ahead light from among magazine.",
+      "postOfficeBoxNumber": "Everyone eight until compare four. Charge evening environment far successful kitchen history. Happy response PM seven."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Bar everybody surface appear within bit exactly."
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

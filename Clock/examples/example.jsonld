@@ -1,0 +1,37 @@
+{
+  "id": "urn:ngsi-ld:Clock:id:TNLT:77942213",
+  "dateCreated": "1989-10-30T22:03:05Z",
+  "dateModified": "1996-10-04T07:43:43Z",
+  "source": "Establish successful open wall can. Offer enjoy pay should science respond put.",
+  "name": "She final some positive section senior sort. Reveal measure also entire easy. Particularly stay force bring bill break.",
+  "alternateName": "Voice color thing well bar nice. Pretty citizen light go run.",
+  "description": "Seek claim certain environment. Believe body fill two treat alone. Near new ever tax.",
+  "dataProvider": "Arm develop song force discussion conference model. Majority air tonight open. Future culture foot marriage benefit life.",
+  "owner": [
+    "urn:ngsi-ld:Clock:items:VUTJ:62578136",
+    "urn:ngsi-ld:Clock:items:RCQN:52240568"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:Clock:items:YJJQ:04423472",
+    "urn:ngsi-ld:Clock:items:SDZW:26555238"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -46.644135,
+      -111.62986
+    ]
+  },
+  "address": {
+    "streetAddress": "Recent protect site where general door. Study about many approach politics little national. Chance produce south.",
+    "addressLocality": "Wish cost course sister him young. Cold behind spend food truth.",
+    "addressRegion": "Despite price particular win response hour network figure. Establish generation community husband no up international. Miss watch land economy. Later machine hope piece.",
+    "addressCountry": "Save prove argue. Stuff spend thing performance strategy. Media style fall early seven leave.",
+    "postalCode": "Forward stuff sit early accept. Rise clearly may pay speak far look. Simple force would. Meeting friend this situation close.",
+    "postOfficeBoxNumber": "Leave national adult PM sure some. Final shake show certainly various."
+  },
+  "areaServed": "City theory five way try. Evening house top job she. Part Mr light.",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

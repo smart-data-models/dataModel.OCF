@@ -1,0 +1,75 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:LockCode:id:UAFO:32880755"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1973-11-19T13:11:24Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1976-10-21T20:02:58Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Big their thing bank growth. Court adult matter structure. Ask focus artist young speak. Part actually song lead financial summer."
+  },
+  "name": {
+    "type": "string",
+    "value": "Most case this be. Factor leader weight science firm miss bed if. Play still wait evidence however without."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Each kitchen soldier take if brother. Assume our article close couple school five issue. Lot policy maybe culture notice."
+  },
+  "description": {
+    "type": "string",
+    "value": "Candidate why industry apply. Late official the represent window mind especially. Cultural rock need learn organization evening."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "Shake campaign culture church ok. Money thing agree. Hair few cause many some resource wide."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:LockCode:items:BPFG:16122473",
+      "urn:ngsi-ld:LockCode:items:KYAO:28376534"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:LockCode:items:IQKM:49639880",
+      "urn:ngsi-ld:LockCode:items:HHKM:59980343"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        40.5582215,
+        -6.700416
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Fall would bar under. Soldier certain group expert could specific mouth off. World successful special ball adult yourself.",
+      "addressLocality": "Energy least many Democrat box occur.",
+      "addressRegion": "Certain large sort avoid cultural. Pay movement save from consumer turn.",
+      "addressCountry": "Worker theory speak truth. Tell college skill. Matter customer range none story likely.",
+      "postalCode": "Deep remember return energy employee mouth anyone full. Remember father ok figure record election rule simply. Maybe test vote result identify often growth.",
+      "postOfficeBoxNumber": "Wife what allow various high threat black war. Model million yourself. Either stand right suggest add however north."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Hold state wait point camera marriage according. Newspaper partner teach rest candidate. Provide yard black pattern."
+  }
+}

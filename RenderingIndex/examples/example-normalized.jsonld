@@ -1,0 +1,78 @@
+{
+  "id": "urn:ngsi-ld:RenderingIndex:id:MQEK:91143660",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2019-05-12T01:29:22Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2012-07-22T14:18:51Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Truth real cover his. Ground against outside to."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Pressure admit interview interview. She conference forget democratic break effect."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Firm remain final long six compare voice. Dinner city write someone. Song itself event cost describe speak."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Chance hundred whatever short. Door government financial service create describe. Player ready interview."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Source strong few. War water travel hotel take. Include plan chair risk tax positive."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:RenderingIndex:items:TTHV:52228086",
+      "urn:ngsi-ld:RenderingIndex:items:XNER:44759686"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:RenderingIndex:items:ZGSE:28706989"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        2.5042655,
+        155.288883
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Bar him win. Candidate baby produce both. Head system thousand pass represent choice. Exist learn much image.",
+      "addressLocality": "Those product pull reality young huge more. Only worry to practice. Show size foot common too across white.",
+      "addressRegion": "Her mind treatment manage adult figure. Issue growth drug television state hope miss. Like international hope view. Probably argue professor account behind.",
+      "addressCountry": "Participant car main quickly sit. Party make college its my. Religious president director production director push. Relationship enjoy later Mrs.",
+      "postalCode": "Hit start international. Peace management face determine product happen police.",
+      "postOfficeBoxNumber": "Animal player week then. From back song provide. War market he turn."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Government determine theory almost very. Investment sister choice. Name position on example particular anything fast."
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

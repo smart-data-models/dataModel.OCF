@@ -1,0 +1,37 @@
+{
+  "id": "urn:ngsi-ld:Door:id:VCIY:56887503",
+  "dateCreated": "1979-09-10T12:21:15Z",
+  "dateModified": "1992-06-21T16:13:30Z",
+  "source": "Blue other across force turn. After standard now resource two. New behind training unit health tend anyone.",
+  "name": "Rule hour car scene hit alone. Cut true property either treatment. Her cell relate level wife.",
+  "alternateName": "In focus person. Determine painting series be. Offer still health color establish.",
+  "description": "Eight close pull country within beat work. Record exactly senior.",
+  "dataProvider": "Win between she sport. Second appear couple beat. Perform on create successful able.",
+  "owner": [
+    "urn:ngsi-ld:Door:items:AHUR:85284630",
+    "urn:ngsi-ld:Door:items:MIYK:06076807"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:Door:items:DOII:39861843",
+    "urn:ngsi-ld:Door:items:NURV:05944119"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -41.917993,
+      -156.219139
+    ]
+  },
+  "address": {
+    "streetAddress": "True market let believe wrong business allow. Woman later information suggest admit.",
+    "addressLocality": "Run air when five still church certainly. Reflect short east late in line.",
+    "addressRegion": "National office heart high them. Organization deal why wear important. Military effect Mrs floor environment skill detail.",
+    "addressCountry": "Would throughout realize moment marriage want. Sense fight radio hold gun throw before.",
+    "postalCode": "Save beautiful drive break down kitchen job. School state religious score development region.",
+    "postOfficeBoxNumber": "Mention affect approach."
+  },
+  "areaServed": "Stuff conference chair during open expect fight. Investment she matter present back.",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

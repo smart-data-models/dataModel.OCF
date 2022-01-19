@@ -1,0 +1,78 @@
+{
+  "id": "urn:ngsi-ld:BinarySwitch:id:MBYI:62994024",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2011-12-19T10:56:00Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2011-04-28T16:30:27Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Point story other far. Field central like might."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Group establish manager cell exist save challenge. Market Mrs agree college. Car officer like today moment account."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Animal less life. Time especially action represent least hot. The pay perhaps loss plant campaign order."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Themselves left because last how see travel."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Financial agency father ready. Audience all system behind. Toward beat anything. Sport probably wrong tonight behind."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:BinarySwitch:items:BSXN:34386254",
+      "urn:ngsi-ld:BinarySwitch:items:WKOT:94703715"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:BinarySwitch:items:ZPKH:25901423"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        58.1844035,
+        -93.247878
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Answer goal rather meet leave let. Seek forward clear. Want such color institution month.",
+      "addressLocality": "Including certainly remain recognize field early.",
+      "addressRegion": "Actually building measure learn garden specific level. Address continue trip home technology window strong. Heavy arrive science just maintain recent.",
+      "addressCountry": "Call though drug look American skill president. Hair create add ground. Last civil interview among woman stop sign.",
+      "postalCode": "Speech create word light citizen phone. Responsibility oil college maybe number. Speech skin defense shoulder program.",
+      "postOfficeBoxNumber": "Network study friend exist about consider. Own thank game finally central data community born. Police field product impact season unit we."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Certain these special very probably. Account choose authority piece vote."
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

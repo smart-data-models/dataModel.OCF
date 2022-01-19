@@ -1,0 +1,75 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:GlucoseSampleLocation:id:HMRW:59656193"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1988-11-05T02:31:54Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1981-06-04T04:33:39Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Decision despite soon. Will decision another avoid wall believe. Pick serious hotel arrive like indeed."
+  },
+  "name": {
+    "type": "string",
+    "value": "Place fire majority theory today senior according."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Peace pick consumer quality issue claim. Policy arm yard structure two. Similar girl who bring before inside trial."
+  },
+  "description": {
+    "type": "string",
+    "value": "Five spring player play go record modern. White yard trouble last chance. Some others as just kitchen do hospital."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "Clearly establish draw action land end. Method look cause human partner whatever."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:GlucoseSampleLocation:items:GTSG:35648681",
+      "urn:ngsi-ld:GlucoseSampleLocation:items:BRNL:14310622"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:GlucoseSampleLocation:items:COGG:05616250",
+      "urn:ngsi-ld:GlucoseSampleLocation:items:AJHV:00001057"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -5.802658,
+        118.84406
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Everything hour piece nothing simply effort. Business various entire. Bad member trade meet. Bring fall shoulder several help.",
+      "addressLocality": "Total deep region buy. Arm kind stay government possible.",
+      "addressRegion": "Source ready ten wind.",
+      "addressCountry": "Bring western here. Child physical like able truth. Kind alone major thought agreement worker.",
+      "postalCode": "Nothing father task analysis again blood. Friend threat society art wait. Middle theory customer field.",
+      "postOfficeBoxNumber": "Before not second anyone example point."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Young similar late with what. Respond quality fact green assume movement. White president discover garden here."
+  }
+}

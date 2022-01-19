@@ -1,0 +1,78 @@
+{
+  "id": "urn:ngsi-ld:Lock:id:VNNQ:73928084",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1976-08-01T20:57:02Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2011-10-02T07:14:35Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Compare when medical per. Already near perform yet."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Garden maybe work newspaper relate people identify. Table PM author."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Finish alone because energy."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Foreign special happy. Buy account image entire."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Get choice face sea. Thing poor treat country. Old bank I meet price. Special gun discover continue."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Lock:items:DCOG:83560997",
+      "urn:ngsi-ld:Lock:items:CSRD:45439878"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Lock:items:IKQT:29230314"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        33.225734,
+        10.770827
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Four phone stay tax. Than new itself strategy strong central.",
+      "addressLocality": "Song question government very why. Account red two include forward. Them case fear employee positive out. Training ever too system town enter movie store.",
+      "addressRegion": "Through million but year million. His try brother history particularly protect.",
+      "addressCountry": "Event blue power describe bed who. Eight vote product speak president him no. Push say worker pay.",
+      "postalCode": "South gun especially speak yeah.",
+      "postOfficeBoxNumber": "Hard beat national war receive child. Control especially less bar. Father word trip art once follow."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Not situation study adult. View long whose management visit would business former. Play pattern large measure other change."
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

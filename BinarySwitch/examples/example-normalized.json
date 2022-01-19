@@ -1,0 +1,75 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:BinarySwitch:id:FUWM:76347888"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "2012-08-12T19:01:35Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1997-08-16T11:48:31Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Listen now remember compare. Without indeed become thing."
+  },
+  "name": {
+    "type": "string",
+    "value": "Recent personal sister toward cup attorney. Movement offer gas along. Sure will ahead hour poor pay price."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "View Mr song do thought ten. Resource now often recent walk apply."
+  },
+  "description": {
+    "type": "string",
+    "value": "Contain pass early member. Reach price quality miss charge. Share notice lay water travel."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "Look else collection analysis lay fish. Foreign art perhaps his only. Group treatment available own market billion."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:BinarySwitch:items:WDLW:60793756",
+      "urn:ngsi-ld:BinarySwitch:items:RKFU:64379233"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:BinarySwitch:items:NKTQ:43294724",
+      "urn:ngsi-ld:BinarySwitch:items:LTOV:90056783"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        73.757996,
+        40.59649
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Better risk among art hear education. Study new call research.",
+      "addressLocality": "Camera each begin choose too base show. Name of court model evidence professor know.",
+      "addressRegion": "Wide wonder theory foot report mind. Reduce country same truth there his.",
+      "addressCountry": "Positive sound scene authority might. Top style whatever support at whatever a they. Fall before week then.",
+      "postalCode": "Method spring fish. Reveal southern family song ok subject sing.",
+      "postOfficeBoxNumber": "My or tonight chance vote effort street power. Sell activity cell color. Apply yard record friend half million organization."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "To gun drug concern. Stand memory sense without."
+  }
+}

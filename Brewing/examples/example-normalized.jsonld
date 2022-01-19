@@ -1,0 +1,78 @@
+{
+  "id": "urn:ngsi-ld:Brewing:id:BLTL:87642764",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2020-08-14T06:38:02Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2002-04-26T18:29:58Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Interview program toward lot girl help. Front shoulder now green."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Hard information letter standard clear service. Simple policy model nature off member."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Charge born left dark consumer run. Office large when news defense they fact cost. This glass cultural child any energy control include."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Continue apply for out method along get. Buy strategy production cup much argue likely. Develop end area likely."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Miss themselves garden indicate management bed note eye. Security heavy avoid."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Brewing:items:YWSQ:23386207",
+      "urn:ngsi-ld:Brewing:items:YQIA:28562705"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Brewing:items:ZJAC:04750991"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -81.103564,
+        61.079647
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Town popular fish leg force into thought. Watch know prove another resource long test. Husband nature PM. Today medical capital even general hope rest.",
+      "addressLocality": "Important fire a imagine write ten two. Along treatment wish would relationship.",
+      "addressRegion": "Hope far physical develop. Talk identify six final forget answer entire.",
+      "addressCountry": "Modern issue whose so tree action lead discuss. Several important you. Claim need add food easy pretty.",
+      "postalCode": "Member student measure what be understand try. Loss less bag certain similar.",
+      "postOfficeBoxNumber": "Through growth rich blood argue represent source event. Language show impact."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Strategy large save close both. Yeah field care manage. Share soon their include green economic."
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

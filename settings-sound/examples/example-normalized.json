@@ -1,0 +1,75 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:settings-sound:id:DJPZ:53873776"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1997-10-31T22:05:18Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1996-03-30T03:46:06Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Administration radio federal significant cup need. Read hour at build exactly left read. Everyone perform nothing popular."
+  },
+  "name": {
+    "type": "string",
+    "value": "Later food speech computer."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Manage perform attack computer hard. General get tax story degree."
+  },
+  "description": {
+    "type": "string",
+    "value": "For today at cup laugh."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "Meeting sound author hotel court style they. Might final course simply rather. Machine life do thousand a professional. Similar return wait."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:settings-sound:items:TAGU:20409749",
+      "urn:ngsi-ld:settings-sound:items:OACX:13015302"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:settings-sound:items:BAFE:60565166",
+      "urn:ngsi-ld:settings-sound:items:WFCN:62742480"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        81.343291,
+        -101.756791
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Trial recent wait grow. Learn west glass upon shake none.",
+      "addressLocality": "Learn turn about security director. Current occur person.",
+      "addressRegion": "First court group student cause accept prove. Board thank before sing few address. Wall save tough maintain for Congress.",
+      "addressCountry": "Entire citizen method concern sit fall activity. Baby two food through force my. Shoulder imagine might name.",
+      "postalCode": "Those side short miss less. Budget top run trial. Woman his arrive whether common act.",
+      "postOfficeBoxNumber": "Effort find experience north shake short year. Reality analysis expert see president. True include event city behavior admit."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Movement begin or well design analysis least. Another writer central their add successful bed. East four deal ten common purpose once either."
+  }
+}

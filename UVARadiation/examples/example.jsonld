@@ -1,0 +1,37 @@
+{
+  "id": "urn:ngsi-ld:UVARadiation:id:XLXB:19118181",
+  "dateCreated": "1976-06-20T20:20:58Z",
+  "dateModified": "1986-09-17T07:45:30Z",
+  "source": "Out recognize head health him return. Open skill well factor social pay.",
+  "name": "Mouth nation quite bring price administration. Relate end their part rate information. Pattern look recently let member. Perhaps thus perhaps force report value.",
+  "alternateName": "Beat usually once us Mr soon. Cost record take moment particular participant.",
+  "description": "Discussion during phone loss.",
+  "dataProvider": "Education however exist close either hard seem.",
+  "owner": [
+    "urn:ngsi-ld:UVARadiation:items:YRGO:27251925",
+    "urn:ngsi-ld:UVARadiation:items:VOMP:44723721"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:UVARadiation:items:JOIY:23173391",
+    "urn:ngsi-ld:UVARadiation:items:OIHP:83028662"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      16.951078,
+      -96.703778
+    ]
+  },
+  "address": {
+    "streetAddress": "Majority man available side. Item ready individual time. Box month cover I than.",
+    "addressLocality": "As produce writer strategy little green need. Only here heart leg.",
+    "addressRegion": "Finally both much on evening along foreign. Product culture term shoulder career. Forget especially body past course executive push. Away chance friend information detail her.",
+    "addressCountry": "Marriage by central sport kitchen politics. Term question run add door.",
+    "postalCode": "Admit science prepare maybe well president season. Determine true high baby according three.",
+    "postOfficeBoxNumber": "Eye gun beat possible service. Thank service law air. Worry specific claim girl machine future."
+  },
+  "areaServed": "Film really information land. Arm decade foreign phone. Avoid least once plan page.",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

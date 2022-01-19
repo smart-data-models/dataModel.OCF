@@ -1,0 +1,75 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:SelectableLevels:id:UJSG:70864614"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "2009-11-25T00:49:53Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1991-07-12T18:22:29Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Activity rest moment mention marriage test. Remain spend section happen project. Pm same artist budget various when."
+  },
+  "name": {
+    "type": "string",
+    "value": "View offer scientist worry."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Our enter physical wait. Suddenly across very not campaign trade. Pay thought former hour. Major floor organization prevent hear."
+  },
+  "description": {
+    "type": "string",
+    "value": "Yard shake important single home organization. Ok third same page."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "Personal arrive book movement week agree safe. Work student board TV end view business. Cost situation board add fall trial."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:SelectableLevels:items:CXNY:93672731",
+      "urn:ngsi-ld:SelectableLevels:items:WSAQ:25159741"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:SelectableLevels:items:LBVR:24974129",
+      "urn:ngsi-ld:SelectableLevels:items:HLEU:24933576"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        71.913606,
+        -98.03712
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Material have drive already drive interview toward drug. Worker national standard three energy man. Apply history page.",
+      "addressLocality": "President couple meet chance argue. Talk evidence war result reveal.",
+      "addressRegion": "Try collection throw. Board type check list action kind response.",
+      "addressCountry": "Kid computer few. Discussion discover fish.",
+      "postalCode": "Treatment behavior arrive turn know anything. Can debate why office color American brother. Test player nature whether not eye save.",
+      "postOfficeBoxNumber": "Large five story hundred charge. Question fine may street."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Five expert east. Draw official begin hand beat major low."
+  }
+}

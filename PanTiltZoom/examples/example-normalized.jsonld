@@ -1,0 +1,78 @@
+{
+  "id": "urn:ngsi-ld:PanTiltZoom:id:RDKB:12056428",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2012-12-10T11:17:16Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1996-12-15T22:16:07Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Throughout second century according soon space how. Church push grow trial sign speech include."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Itself reflect child image detail. Boy would challenge."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Put owner lot offer beyond air difficult. Sometimes impact television course."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Kitchen way region dinner. Lead because happen central. See lay onto candidate we imagine mission could."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Kind teach nation discuss social. Painting we future would anyone kitchen forward would."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:PanTiltZoom:items:QSEI:87305470",
+      "urn:ngsi-ld:PanTiltZoom:items:WEFY:37838415"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:PanTiltZoom:items:OOAX:70233899"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        3.685433,
+        -111.432176
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Drug leg detail yard represent take. Share our after your resource.",
+      "addressLocality": "Ball say where nature democratic blood anyone. Upon home order hospital. Source technology create policy house.",
+      "addressRegion": "Turn suggest interest believe mother compare Mrs. Bring or down serve model rest science.",
+      "addressCountry": "Head food treatment per speak. Rate start history less raise.",
+      "postalCode": "Good reach nice against thank apply human. Defense dark meeting.",
+      "postOfficeBoxNumber": "Right art social born. Young skill his activity from until sure."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Back impact including something church get. Wonder peace end then go fast certainly. Smile program doctor father."
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

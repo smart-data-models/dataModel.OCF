@@ -1,0 +1,78 @@
+{
+  "id": "urn:ngsi-ld:GlucoseTester:id:XEDG:50059607",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2016-11-13T14:32:51Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2019-11-24T17:05:51Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Ability relate state at. Old him include reason less example. Own yard brother central defense. Glass success thousand class explain me."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Key girl culture view hundred model."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Republican away central. Practice often manage Congress model least."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Message reveal discussion. Tree on go small law. Surface office inside American so fact."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Every she serious level run. Machine again you term once up place."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:GlucoseTester:items:PYHU:37732903",
+      "urn:ngsi-ld:GlucoseTester:items:LFMT:25283830"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:GlucoseTester:items:QILE:91116266"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -73.307678,
+        79.131281
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Tend health begin because without would. Indeed time difference box last federal leave. Figure smile great unit.",
+      "addressLocality": "President ground catch argue accept especially. Allow magazine floor ago various PM. Billion once maintain student.",
+      "addressRegion": "Friend show project in president before truth maybe.",
+      "addressCountry": "Forget ten worry unit stand yes entire. Situation west per body skin policy TV stop. Alone pick world its power bag human.",
+      "postalCode": "Back area early. Issue firm message break.",
+      "postOfficeBoxNumber": "Meet new same with natural side. Green turn accept ask call. Standard community weight get political."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Fine case star. Hand really surface skill agreement produce. Author become another economy through bring."
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

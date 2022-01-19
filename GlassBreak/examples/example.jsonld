@@ -1,0 +1,37 @@
+{
+  "id": "urn:ngsi-ld:GlassBreak:id:FWUH:35942957",
+  "dateCreated": "2009-10-21T02:22:36Z",
+  "dateModified": "2013-10-14T04:05:52Z",
+  "source": "Carry check everybody less movie country. Involve least whole base reveal issue.",
+  "name": "Administration top open least peace bring memory. State executive necessary while clearly.",
+  "alternateName": "Guy machine American summer into become clear. Field ago serve example lay.",
+  "description": "Relate at bad exist. World threat enjoy production seat least growth. Pick late month.",
+  "dataProvider": "Certain friend they phone. Consumer physical public car maybe really notice. Form able seat drive book ball. Respond eight add year rich inside.",
+  "owner": [
+    "urn:ngsi-ld:GlassBreak:items:ORFJ:17538036",
+    "urn:ngsi-ld:GlassBreak:items:DKLT:96666411"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:GlassBreak:items:WDSY:29441631",
+    "urn:ngsi-ld:GlassBreak:items:BNHK:54637489"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      50.243696,
+      -4.489475
+    ]
+  },
+  "address": {
+    "streetAddress": "Choice property share charge available individual help. Front its let. Knowledge long adult whom mention some black. Investment few list action around policy.",
+    "addressLocality": "When learn behind. Interesting if inside attorney executive discover.",
+    "addressRegion": "Begin film remain sense focus tonight join forward. Receive mind learn image final. Find my attorney good another poor popular.",
+    "addressCountry": "Moment force open today son. Move level participant reflect. Each together change light truth tough building. Billion region news dream create serious.",
+    "postalCode": "Throw live modern every camera authority chance. Serious guy almost goal tree a. Four think better war. Five loss always heavy off relate Republican check.",
+    "postOfficeBoxNumber": "Authority never mission wide bank reduce pull for. Many girl get teach big. Issue view rise most join."
+  },
+  "areaServed": "Land debate account resource. Green defense mind Mrs field together.",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

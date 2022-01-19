@@ -1,0 +1,37 @@
+{
+  "id": "urn:ngsi-ld:GlucoseTester:id:NYRG:29308322",
+  "dateCreated": "1980-11-08T18:27:08Z",
+  "dateModified": "2014-03-28T16:12:00Z",
+  "source": "Time like management low agree language knowledge. Answer term enjoy career well knowledge material. Strategy decade week theory.",
+  "name": "Break age my audience budget behavior mention. Organization involve become example fast.",
+  "alternateName": "Who total than leg. Which everybody sit sit structure doctor physical.",
+  "description": "Someone choice minute fact kid. Social professor bring race matter save create.",
+  "dataProvider": "Capital particular away realize operation. Common tree number wear exactly difficult. Evidence lead red without risk small half.",
+  "owner": [
+    "urn:ngsi-ld:GlucoseTester:items:KDOJ:82541574",
+    "urn:ngsi-ld:GlucoseTester:items:TXYP:18981011"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:GlucoseTester:items:RMSY:70339406",
+    "urn:ngsi-ld:GlucoseTester:items:RLTE:72455890"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      75.3523795,
+      -77.248798
+    ]
+  },
+  "address": {
+    "streetAddress": "Eight painting author by born history themselves than. Father century sound role together professor both.",
+    "addressLocality": "Throughout eat another I drug democratic gas great. Detail too election physical concern positive particularly. Church face blue skill center despite stage.",
+    "addressRegion": "Score writer teach night again space defense. Use scientist claim pressure family. Season politics talk others. Likely decade size know.",
+    "addressCountry": "Decide effort simple personal. Middle young their people professor physical.",
+    "postalCode": "Determine effort quality many trouble public current too. Agree tree this together occur draw need. Point current number animal. Current many phone world bank ahead fire.",
+    "postOfficeBoxNumber": "Republican try hit. Fall family approach thing issue type single. Cultural away least major someone. Prevent dog none different environment create."
+  },
+  "areaServed": "Among my plant oil question able protect forget. Democrat drive find pick.",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

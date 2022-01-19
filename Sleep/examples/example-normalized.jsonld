@@ -1,0 +1,78 @@
+{
+  "id": "urn:ngsi-ld:Sleep:id:DEWW:30338193",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1988-01-12T23:48:03Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2007-07-28T08:40:23Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Agree daughter finally morning less share than. Choose training between bring town. Door truth upon upon."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Position keep forward crime reach. Especially wish paper."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Significant concern significant local concern represent particularly serious. Others above onto no. Lawyer hard able two thus oil sit action."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Matter raise goal my. Into send what."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "American protect material. Three realize leader watch entire material."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Sleep:items:ORVF:05537533",
+      "urn:ngsi-ld:Sleep:items:EZSB:78221686"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Sleep:items:UJRS:30722806"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -86.6050775,
+        -132.16776
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Successful better perform job deal. Work concern require join opportunity magazine general. Occur determine firm nice school. Activity create central executive.",
+      "addressLocality": "Imagine quality last purpose. Sound like catch population writer. Possible establish provide. Less strong certainly visit open.",
+      "addressRegion": "Successful according meet hear recent well. Now policy lay democratic he something important.",
+      "addressCountry": "Something edge pressure wide six suffer. Age consider specific foreign measure. Fly those huge general future hand woman.",
+      "postalCode": "Between return long rest her best prepare relationship. Instead set art sport quickly.",
+      "postOfficeBoxNumber": "Sort threat between deal. Over turn every billion. On look lot deal rock. Society wait pass century figure crime picture."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Thought chance help hear miss ability. Remember report real matter strategy. Offer walk as plant environment. Control executive class list."
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

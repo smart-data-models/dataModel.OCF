@@ -1,0 +1,34 @@
+{
+  "id": "urn:ngsi-ld:Brewing:id:CUFI:10169757",
+  "dateCreated": "2021-08-20T05:54:49Z",
+  "dateModified": "2021-02-27T19:01:40Z",
+  "source": "Current must out civil big point leg. Rest investment production design worker operation. Fish store establish news discover.",
+  "name": "Guy resource draw whatever walk do. Community morning night time.",
+  "alternateName": "Bill culture yard summer environmental. Return difference unit alone program standard.",
+  "description": "Sign share part. Black couple policy. Model produce nature world second.",
+  "dataProvider": "Majority party cover step approach may always. Line military tax dark your.",
+  "owner": [
+    "urn:ngsi-ld:Brewing:items:ASJM:77529932",
+    "urn:ngsi-ld:Brewing:items:GGFW:83699150"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:Brewing:items:DXVZ:45868431",
+    "urn:ngsi-ld:Brewing:items:EVIW:14635277"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -83.2190845,
+      -60.290995
+    ]
+  },
+  "address": {
+    "streetAddress": "Record loss edge economic.",
+    "addressLocality": "Middle reflect floor. Executive rest team specific husband challenge. Once commercial charge pressure should say.",
+    "addressRegion": "Almost collection country. Interesting reduce fast.",
+    "addressCountry": "More turn treatment soon begin organization human. Be necessary perform treatment enough light down. Source light thought purpose someone add. Night want air out.",
+    "postalCode": "Character future maintain open. Certainly truth economic year nation. Herself find woman trouble standard forget top.",
+    "postOfficeBoxNumber": "Week break fine spend because. Mrs likely third very prove rich. Smile although also."
+  },
+  "areaServed": "Face board when leave education let admit. Responsibility policy movement sea avoid myself nation suffer. Cost meet itself yes environment."
+}

@@ -1,0 +1,37 @@
+{
+  "id": "urn:ngsi-ld:Deodorization:id:XDXD:95550483",
+  "dateCreated": "1999-03-18T19:45:38Z",
+  "dateModified": "2003-06-19T17:39:31Z",
+  "source": "Enter example study enjoy get research cost once. Professor bill page center.",
+  "name": "Attention produce quite newspaper world story approach.",
+  "alternateName": "Stand usually material per great although young. During move somebody everybody inside.",
+  "description": "Talk fund we course affect mother. Bring western apply security democratic.",
+  "dataProvider": "Success show social modern view. Officer stock true center have foot watch firm. Require capital yourself yard bar approach.",
+  "owner": [
+    "urn:ngsi-ld:Deodorization:items:RAZH:64911453",
+    "urn:ngsi-ld:Deodorization:items:TUDH:55185476"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:Deodorization:items:KRVY:49754379",
+    "urn:ngsi-ld:Deodorization:items:YFMD:65193227"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -4.4983885,
+      -135.992885
+    ]
+  },
+  "address": {
+    "streetAddress": "Low record Republican number prevent citizen group. List memory begin marriage weight.",
+    "addressLocality": "Standard religious your buy boy down lot. Partner someone available guess security sing between create. Within standard everyone speech require street manage.",
+    "addressRegion": "Short yet just table month until. Expert true dark director throughout red continue. You remain street various than training able.",
+    "addressCountry": "There meet maybe message language such.",
+    "postalCode": "Someone music several little training easy human.",
+    "postOfficeBoxNumber": "Walk me continue executive green. Feel coach fall stuff often."
+  },
+  "areaServed": "Common collection agree away. Gun collection recently old project.",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

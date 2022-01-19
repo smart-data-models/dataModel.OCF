@@ -1,0 +1,37 @@
+{
+  "id": "urn:ngsi-ld:AutoWhiteBalance:id:YBGX:79096195",
+  "dateCreated": "1988-12-28T18:35:21Z",
+  "dateModified": "1995-01-26T21:45:21Z",
+  "source": "Identify most event degree. Beautiful national baby Mr. True brother sign after head. Enjoy rather last evidence easy.",
+  "name": "Name million behavior. Arrive enough kitchen financial control. Top Mr add structure.",
+  "alternateName": "Computer long food sense born break air care. Rule camera college ability mind defense.",
+  "description": "Reflect book religious rule argue born second artist. Class perform anything. Couple together dream.",
+  "dataProvider": "Instead present poor decision manage tend. Receive plan thus already. Could see population full himself.",
+  "owner": [
+    "urn:ngsi-ld:AutoWhiteBalance:items:GMHA:08426645",
+    "urn:ngsi-ld:AutoWhiteBalance:items:OQIY:30011178"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:AutoWhiteBalance:items:FELU:43170881",
+    "urn:ngsi-ld:AutoWhiteBalance:items:RFVY:17552908"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -43.3466335,
+      -125.620359
+    ]
+  },
+  "address": {
+    "streetAddress": "Bag form author.",
+    "addressLocality": "Family along class boy analysis. One control citizen language blue eye painting.",
+    "addressRegion": "Song ago begin wear either. Dinner establish theory until. Argue describe behavior step.",
+    "addressCountry": "Few near year notice. Thank white there once rich. Nothing clear line artist off effort image.",
+    "postalCode": "Fast bar language young husband. Loss million enough me.",
+    "postOfficeBoxNumber": "I paper share operation billion play mouth smile."
+  },
+  "areaServed": "Generation soldier history financial their. Simple tough clearly Congress artist wonder. International morning shoulder help.",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

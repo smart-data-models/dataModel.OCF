@@ -1,0 +1,75 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:BodyLocationTemperature:id:DVEE:22471005"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1986-05-14T05:25:58Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "2004-03-17T12:13:13Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Indeed professor interest hold might. Whose better reason letter. Statement hold church kind well much so commercial."
+  },
+  "name": {
+    "type": "string",
+    "value": "Marriage behind gas appear door appear special. Message themselves person assume walk. Shoulder act road thus both season."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Fall old home understand old meet friend. Team at actually week dinner."
+  },
+  "description": {
+    "type": "string",
+    "value": "Support red party owner never consumer. Whom long protect almost leader particular. Chance technology any notice which story."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "Hotel it increase especially home ball. Community smile station painting. Finish force effort worry cause region store just."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:BodyLocationTemperature:items:HNIK:73021014",
+      "urn:ngsi-ld:BodyLocationTemperature:items:JIZY:16075956"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:BodyLocationTemperature:items:PJOG:26128975",
+      "urn:ngsi-ld:BodyLocationTemperature:items:CMDA:05499547"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        7.4156865,
+        107.49888
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Major popular tell usually fall avoid. Star claim show arrive determine.",
+      "addressLocality": "Help simply well front point news. Movement will report responsibility those field capital night. Special sit late mouth reason body actually.",
+      "addressRegion": "Fact brother act. Company traditional manage. Scientist manager shoulder draw.",
+      "addressCountry": "Hair include firm time. Degree son old skin painting whom service.",
+      "postalCode": "Station truth southern color. Former ever environmental low fly thing score recent. Seven indicate start modern education watch message election.",
+      "postOfficeBoxNumber": "Firm not friend. However over computer."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Again collection ten. Agent evidence necessary already. Push something environment central young born no."
+  }
+}

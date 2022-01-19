@@ -1,0 +1,37 @@
+{
+  "id": "urn:ngsi-ld:RemoteControl:id:MHYX:27427391",
+  "dateCreated": "2020-10-23T08:18:45Z",
+  "dateModified": "2011-02-10T14:50:06Z",
+  "source": "Age particularly place discover pull. Enter white start our man particularly. What let seem someone.",
+  "name": "Item concern begin kitchen business. Push religious consumer more.",
+  "alternateName": "Specific here floor though source yes. While great simple physical. Agree woman research.",
+  "description": "Commercial rate Mrs I both task key. Describe night apply difficult each cut appear night.",
+  "dataProvider": "Size hear sign apply. Front service box wind affect.",
+  "owner": [
+    "urn:ngsi-ld:RemoteControl:items:RTDX:85566642",
+    "urn:ngsi-ld:RemoteControl:items:BEUB:18985018"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:RemoteControl:items:XFFV:50856411",
+    "urn:ngsi-ld:RemoteControl:items:HRVI:81575167"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -71.980562,
+      89.374763
+    ]
+  },
+  "address": {
+    "streetAddress": "Arm begin themselves all million. Meeting believe away only. Only scientist make yeah kind.",
+    "addressLocality": "Tv so young.",
+    "addressRegion": "Animal analysis defense resource. Attorney find his box oil figure much. Test hair radio pay break herself important.",
+    "addressCountry": "Tonight under across history. Particular inside sound same. Idea manage author second.",
+    "postalCode": "Message make meet recognize foreign piece. Option stuff hotel condition. News product need program.",
+    "postOfficeBoxNumber": "Camera rate point until away. Now police sit benefit I sign. Enjoy face create number science level. Major hour where care wear."
+  },
+  "areaServed": "Often particular few science officer center feel. Government white watch north capital professional enter.",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

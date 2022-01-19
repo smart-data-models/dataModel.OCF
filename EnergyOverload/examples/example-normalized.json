@@ -1,0 +1,75 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:EnergyOverload:id:XYJB:57383405"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1974-03-17T20:21:35Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "2003-05-25T04:57:21Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Response alone this great visit site industry add. Painting according woman former several."
+  },
+  "name": {
+    "type": "string",
+    "value": "Age standard mention Mrs. Explain art class chance drug who everything. Style stuff financial. Owner remember glass yes performance section."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Care network speech brother ahead. His religious college star."
+  },
+  "description": {
+    "type": "string",
+    "value": "Church two record painting. Strong season end identify remember message. Nation side soon learn realize bad."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "Nice international week actually. Appear chance light attack discussion world land."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:EnergyOverload:items:VFZT:44182994",
+      "urn:ngsi-ld:EnergyOverload:items:UUEJ:58597087"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:EnergyOverload:items:DZHC:27624371",
+      "urn:ngsi-ld:EnergyOverload:items:DTBB:94053851"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -62.3715995,
+        82.314226
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Reduce this protect able. Add history dream rather condition partner. Authority laugh become color represent image.",
+      "addressLocality": "Might production exactly account. Imagine behind offer maybe push expect behavior vote. She grow heavy.",
+      "addressRegion": "Parent site lawyer woman stage. Somebody again early he nice. Mother however they live task together.",
+      "addressCountry": "Task computer card notice road feel. May research produce address. Five act serious environment protect itself lose.",
+      "postalCode": "Think material rock. Thank back center parent set outside both. He avoid on understand to thousand perhaps.",
+      "postOfficeBoxNumber": "Owner big result turn born. Threat chance by particular could man."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "That relationship plant know. Full natural wall coach."
+  }
+}

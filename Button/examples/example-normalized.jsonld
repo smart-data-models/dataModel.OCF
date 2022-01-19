@@ -1,0 +1,78 @@
+{
+  "id": "urn:ngsi-ld:Button:id:CSOS:74812314",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1998-01-07T10:00:33Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2013-03-24T08:33:25Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Everything choose bring about ball himself seat street. Item play hour do. Add child stop."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Recognize always bed system value several. Cold involve myself this pass me. Return also everything poor environmental people."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Situation several spring serve occur. Pick sport land feel left by. Station region cultural Mrs film item life."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Study interesting listen chance ready lead brother key. Although future job bed business."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Return participant positive another everything strategy. Threat cultural quality hundred night white knowledge."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Button:items:TTQN:67676614",
+      "urn:ngsi-ld:Button:items:SYJP:41408316"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Button:items:LWCH:82036977"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -26.20595,
+        -78.346435
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Air last nearly two. Official crime country reach radio.",
+      "addressLocality": "Debate medical population ball rule TV. Federal stock list just buy.",
+      "addressRegion": "Already training ok with pattern positive. Adult design church visit low oil. Scientist probably beyond college.",
+      "addressCountry": "That city year check up true. Answer notice week change. Next pressure leave yes stop college two.",
+      "postalCode": "Above already because cultural single. Election much prepare reduce sign.",
+      "postOfficeBoxNumber": "Friend expert treatment win. Floor community shoulder generation miss theory. Ago tell reason."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Benefit write begin. Theory buy sister among develop minute sure."
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

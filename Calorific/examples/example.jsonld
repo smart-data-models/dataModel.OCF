@@ -1,0 +1,37 @@
+{
+  "id": "urn:ngsi-ld:Calorific:id:FMQF:67893052",
+  "dateCreated": "1977-03-31T18:46:16Z",
+  "dateModified": "2007-06-06T14:47:00Z",
+  "source": "Bit life option. Near law yet study song source. Sea technology family remember.",
+  "name": "Well certainly girl threat he prove news. Ground who teach.",
+  "alternateName": "Recently pass a trouble service whose. Up apply Democrat born thousand employee common. Black born peace light.",
+  "description": "Four your middle. Join these occur away. Cell quality technology day glass.",
+  "dataProvider": "Huge development nation democratic who network imagine. Seek accept better smile hour.",
+  "owner": [
+    "urn:ngsi-ld:Calorific:items:ZPWD:90571353",
+    "urn:ngsi-ld:Calorific:items:WLVH:40512989"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:Calorific:items:GKDH:42748428",
+    "urn:ngsi-ld:Calorific:items:TIGX:54603853"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      42.680074,
+      8.875732
+    ]
+  },
+  "address": {
+    "streetAddress": "Medical light suffer word already. Former born sure this car physical notice.",
+    "addressLocality": "Source statement test report serious character nation.",
+    "addressRegion": "Society often never simply foreign process upon perhaps. Suddenly year alone.",
+    "addressCountry": "Star nature thing design. When source consumer letter system southern common.",
+    "postalCode": "Role figure almost. Many responsibility research teach.",
+    "postOfficeBoxNumber": "Nothing task under up since value write social. Official mind four family. Become scene test poor produce box organization TV."
+  },
+  "areaServed": "Green put oil accept. Interview wide cover grow.",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

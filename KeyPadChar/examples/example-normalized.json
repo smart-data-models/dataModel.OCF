@@ -1,0 +1,75 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:KeyPadChar:id:AUBP:20991466"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1995-04-06T20:48:38Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "2000-10-01T18:01:36Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Leave stock good reveal best difficult. Stock think significant activity."
+  },
+  "name": {
+    "type": "string",
+    "value": "Thank tonight threat. Still sure unit line reduce car turn. Little space others sometimes card. Soldier daughter hand win else position agree."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Inside meeting board sometimes official question dinner. Moment hit point fight hair. Yourself record face must point oil then."
+  },
+  "description": {
+    "type": "string",
+    "value": "Network tree mind place fund along south. Produce listen first role science mention land. Research laugh think plan two."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "However many while think play face. Maintain suggest administration. Black leg decade hear should form financial."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:KeyPadChar:items:KFQK:36162854",
+      "urn:ngsi-ld:KeyPadChar:items:GXKW:43506063"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:KeyPadChar:items:JJYA:86979262",
+      "urn:ngsi-ld:KeyPadChar:items:GZYM:77577120"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -84.361774,
+        -138.562003
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Decide seem operation structure. Brother rule hundred toward page look. Just stock occur science western between.",
+      "addressLocality": "Almost simply care former discover. Health realize more together go third whether particularly.",
+      "addressRegion": "Note tax situation suddenly how interesting suddenly. Along back face show husband team. Enough however star work industry this.",
+      "addressCountry": "Approach kitchen human he plant act nature. Which like head dream past reason. Open send money.",
+      "postalCode": "Attorney mother big place. Adult officer purpose wrong pay you question. Report serve mother return it training.",
+      "postOfficeBoxNumber": "Ever able close fight born. Condition box land young five."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Cup century name safe member try speak. Unit image policy next character."
+  }
+}

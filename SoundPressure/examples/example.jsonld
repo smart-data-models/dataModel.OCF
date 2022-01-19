@@ -1,0 +1,37 @@
+{
+  "id": "urn:ngsi-ld:SoundPressure:id:CKNQ:89924602",
+  "dateCreated": "2005-05-14T05:51:42Z",
+  "dateModified": "2020-02-22T11:45:25Z",
+  "source": "Against purpose question American. Major possible simply imagine. Discuss last small especially Democrat else.",
+  "name": "Ago nor could summer on western. Trial white environmental.",
+  "alternateName": "Chair remain community catch prove. Direction form gun require program. Everybody meet daughter line but.",
+  "description": "Young result education market.",
+  "dataProvider": "A worry around senior fall time religious. Consider control foot war drug his.",
+  "owner": [
+    "urn:ngsi-ld:SoundPressure:items:SAGN:62135245",
+    "urn:ngsi-ld:SoundPressure:items:NHZI:18994579"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:SoundPressure:items:DMLZ:04503933",
+    "urn:ngsi-ld:SoundPressure:items:JMBO:05242364"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -34.294154,
+      -104.619699
+    ]
+  },
+  "address": {
+    "streetAddress": "Moment life much both herself road.",
+    "addressLocality": "Him help his pattern. Feel already teach all.",
+    "addressRegion": "System former manager international smile four difficult hospital. Age cost officer sister.",
+    "addressCountry": "Audience finally statement paper. Majority hundred citizen. Serious information provide help great body.",
+    "postalCode": "Sport music sister. West offer weight author room.",
+    "postOfficeBoxNumber": "List health day son view will. Church Republican almost avoid call."
+  },
+  "areaServed": "Whether public kitchen glass.",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:mediaSource:id:ECVX:00681141"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "2015-02-09T15:38:55Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1972-09-25T13:56:03Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Win off Congress thought order. Risk near listen spend. Successful reduce tell better."
+  },
+  "name": {
+    "type": "string",
+    "value": "Radio six seem floor player. Discussion many kind. Series this senior fact feel."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Bring star somebody. Pm best exist begin television room professor."
+  },
+  "description": {
+    "type": "string",
+    "value": "Him range long their three yeah value. Turn sound he store industry realize. Quality become agreement black consumer site. Clear clear and investment those factor."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "Program spring again ten. Kind agency prevent give bad term."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:mediaSource:items:JUXL:73007356",
+      "urn:ngsi-ld:mediaSource:items:ATGQ:91911106"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:mediaSource:items:OPHS:82281803",
+      "urn:ngsi-ld:mediaSource:items:XSND:63263592"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        55.704287,
+        165.220634
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Though carry country. Open amount budget.",
+      "addressLocality": "Senior front computer commercial operation. Seat tonight method accept.",
+      "addressRegion": "Series know spring activity. Now direction piece keep fight nature let.",
+      "addressCountry": "Include on attack budget. Station practice perform during last may realize. Marriage else walk beat computer.",
+      "postalCode": "Possible beat real performance. Every fill way bar participant. Thought relationship message admit especially.",
+      "postOfficeBoxNumber": "Everything town individual fine along pressure. Sell share can ahead real military. Bank rich forward candidate season believe politics. Pm economic enjoy political kid three."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Teach financial resource return wife mean. Civil road vote summer state offer lead. Base while bad product back different throughout."
+  }
+}

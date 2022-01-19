@@ -1,0 +1,75 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:GlucoseTester:id:NYRG:29308322"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1980-11-08T18:27:08Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "2014-03-28T16:12:00Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Time like management low agree language knowledge. Answer term enjoy career well knowledge material. Strategy decade week theory."
+  },
+  "name": {
+    "type": "string",
+    "value": "Break age my audience budget behavior mention. Organization involve become example fast."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Who total than leg. Which everybody sit sit structure doctor physical."
+  },
+  "description": {
+    "type": "string",
+    "value": "Someone choice minute fact kid. Social professor bring race matter save create."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "Capital particular away realize operation. Common tree number wear exactly difficult. Evidence lead red without risk small half."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:GlucoseTester:items:KDOJ:82541574",
+      "urn:ngsi-ld:GlucoseTester:items:TXYP:18981011"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:GlucoseTester:items:RMSY:70339406",
+      "urn:ngsi-ld:GlucoseTester:items:RLTE:72455890"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        75.3523795,
+        -77.248798
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Eight painting author by born history themselves than. Father century sound role together professor both.",
+      "addressLocality": "Throughout eat another I drug democratic gas great. Detail too election physical concern positive particularly. Church face blue skill center despite stage.",
+      "addressRegion": "Score writer teach night again space defense. Use scientist claim pressure family. Season politics talk others. Likely decade size know.",
+      "addressCountry": "Decide effort simple personal. Middle young their people professor physical.",
+      "postalCode": "Determine effort quality many trouble public current too. Agree tree this together occur draw need. Point current number animal. Current many phone world bank ahead fire.",
+      "postOfficeBoxNumber": "Republican try hit. Fall family approach thing issue type single. Cultural away least major someone. Prevent dog none different environment create."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Among my plant oil question able protect forget. Democrat drive find pick."
+  }
+}

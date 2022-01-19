@@ -1,0 +1,78 @@
+{
+  "id": "urn:ngsi-ld:ColourChroma:id:XBCJ:78890788",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1983-04-11T03:39:24Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1993-03-06T19:48:24Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Believe rise company similar seven. Week network nice room whose. Worker treat statement former how direction. Have lead act write money."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Race enjoy see more will ball. Concern sign happen really. Yard senior scientist magazine country."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Send though firm usually. Laugh he paper building husband. Old push above rather."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Financial thing safe policy. Security ability remain act. House agreement side fast."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "School capital job worry radio full claim. Wall agree car new population red world note. Trip far environment talk."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:ColourChroma:items:QHKT:12885344",
+      "urn:ngsi-ld:ColourChroma:items:EFGF:01514513"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:ColourChroma:items:YLHX:20933403"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        23.189858,
+        14.005876
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Radio interesting but fill suddenly.",
+      "addressLocality": "Activity forward scene economy collection hope page here. Role box similar fine who last. Material center school throw today let executive.",
+      "addressRegion": "Guy suggest task paper name hard. Research pull project weight young course land high.",
+      "addressCountry": "Seek from shoulder read. Front later effect thus. Behavior until enjoy note meet interview.",
+      "postalCode": "Outside white impact probably. Strategy different difference forward physical house become.",
+      "postOfficeBoxNumber": "Police for send fine price for east. Note memory especially during family argue crime. Staff us nice strong."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Write form bank executive affect may above."
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

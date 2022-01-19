@@ -1,0 +1,75 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:Deodorization:id:XDXD:95550483"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1999-03-18T19:45:38Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "2003-06-19T17:39:31Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Enter example study enjoy get research cost once. Professor bill page center."
+  },
+  "name": {
+    "type": "string",
+    "value": "Attention produce quite newspaper world story approach."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Stand usually material per great although young. During move somebody everybody inside."
+  },
+  "description": {
+    "type": "string",
+    "value": "Talk fund we course affect mother. Bring western apply security democratic."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "Success show social modern view. Officer stock true center have foot watch firm. Require capital yourself yard bar approach."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:Deodorization:items:RAZH:64911453",
+      "urn:ngsi-ld:Deodorization:items:TUDH:55185476"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:Deodorization:items:KRVY:49754379",
+      "urn:ngsi-ld:Deodorization:items:YFMD:65193227"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -4.4983885,
+        -135.992885
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Low record Republican number prevent citizen group. List memory begin marriage weight.",
+      "addressLocality": "Standard religious your buy boy down lot. Partner someone available guess security sing between create. Within standard everyone speech require street manage.",
+      "addressRegion": "Short yet just table month until. Expert true dark director throughout red continue. You remain street various than training able.",
+      "addressCountry": "There meet maybe message language such.",
+      "postalCode": "Someone music several little training easy human.",
+      "postOfficeBoxNumber": "Walk me continue executive green. Feel coach fall stuff often."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Common collection agree away. Gun collection recently old project."
+  }
+}

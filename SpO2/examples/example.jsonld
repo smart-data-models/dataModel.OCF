@@ -1,0 +1,37 @@
+{
+  "id": "urn:ngsi-ld:SpO2:id:UXVB:49250554",
+  "dateCreated": "1979-10-18T15:29:13Z",
+  "dateModified": "2012-12-25T02:07:10Z",
+  "source": "No own particularly tough marriage west person. Perform country stay necessary best. Move to still less specific general quality clear. It report far over.",
+  "name": "Exactly join represent. Board least develop.",
+  "alternateName": "Form after speech think within hotel need effort. Commercial several threat officer paper have side. Sing believe commercial TV vote exactly for continue.",
+  "description": "Form carry human action much age care future. Well make every recognize. State consumer might continue.",
+  "dataProvider": "Gun cost leave once amount phone. Beyond save guess approach you big over. Small summer style very value candidate stay wait.",
+  "owner": [
+    "urn:ngsi-ld:SpO2:items:FOVM:74049734",
+    "urn:ngsi-ld:SpO2:items:VNLZ:87274151"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:SpO2:items:EDDV:12327755",
+    "urn:ngsi-ld:SpO2:items:PKWK:80687657"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -35.838291,
+      27.47286
+    ]
+  },
+  "address": {
+    "streetAddress": "Sell main that different. News ground include. Whose fear mouth table each issue.",
+    "addressLocality": "Fall while back.",
+    "addressRegion": "Affect down us new relate. Hold adult despite fear position red hair.",
+    "addressCountry": "Necessary purpose base field imagine mention popular. Discover could fill two field. Policy energy option simply.",
+    "postalCode": "Have your fear single food year. This coach whose total food. Tend call career wife.",
+    "postOfficeBoxNumber": "Consider performance produce black group it instead. Organization after American similar appear."
+  },
+  "areaServed": "Traditional society technology little plant on ago. Audience heavy point expect security difficult general read. Participant everybody action Mrs middle enter agency.",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

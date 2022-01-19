@@ -1,0 +1,78 @@
+{
+  "id": "urn:ngsi-ld:settings-support:id:QVJM:58518858",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1996-07-26T05:54:21Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2003-05-11T10:13:08Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "System fill will clear market base. Role listen interest up. Together seven answer draw wear boy."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Around painting leg control boy. Model through natural loss country message. Wall rather purpose statement."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "She control argue worker road morning. Few stuff offer message believe Democrat."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Have history person wonder particularly according."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Agreement upon traditional bill couple. Tell mean expect."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:settings-support:items:FLOW:79198536",
+      "urn:ngsi-ld:settings-support:items:STKW:49670786"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:settings-support:items:LZCL:52072895"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        15.8114245,
+        25.157261
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Television those hope TV material single north. Yeah although ability his defense apply.",
+      "addressLocality": "Republican however resource professor. Well ever claim no star even.",
+      "addressRegion": "Trial end between worry carry training trouble.",
+      "addressCountry": "Grow relationship natural among when. Career answer record data key read table. See during million on.",
+      "postalCode": "Black computer away into design beyond. Specific hand car. Chair case similar.",
+      "postOfficeBoxNumber": "Notice similar begin maybe growth. Drop health last picture. Citizen affect many."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Say box want focus whom. Fear still hold scientist."
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

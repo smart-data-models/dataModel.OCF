@@ -1,0 +1,78 @@
+{
+  "id": "urn:ngsi-ld:ColourHS:id:VIED:72184359",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1974-12-21T13:03:31Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2010-08-25T07:04:37Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Lot whole task use."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Until drug young what way agency reality. Mission explain wrong moment here source. Since down unit policy price candidate start."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Myself entire past face cup support behavior. Face such could character according send end."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Upon respond analysis fall mission mention miss a. None drug report tend future."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Sell anything later really major. Mention data partner."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:ColourHS:items:DRUT:10402699",
+      "urn:ngsi-ld:ColourHS:items:XTXA:97530272"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:ColourHS:items:IQHE:71148899"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -86.1604745,
+        -18.960842
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Walk land try relate peace hour quality. Although fall star treat career still.",
+      "addressLocality": "Letter fill billion could either every. Stage throughout position brother sell. Talk material at everybody why yet.",
+      "addressRegion": "Dream top hold let day strong. Also road ask radio. Middle partner middle administration past.",
+      "addressCountry": "Purpose every traditional pass low sense choice.",
+      "postalCode": "Until their benefit green set find. Message place member player picture task condition. Best across green figure born.",
+      "postOfficeBoxNumber": "Wrong up customer stop church goal. Heavy way sister admit between actually he."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Spring never girl deep season. Floor media company election."
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

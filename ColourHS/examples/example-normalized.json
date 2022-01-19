@@ -1,0 +1,75 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:ColourHS:id:DLXG:90211144"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1977-03-13T17:59:46Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "2012-10-15T11:19:46Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Catch protect gas yard heavy voice. Put writer myself we eat test. Statement development system left arm agree head."
+  },
+  "name": {
+    "type": "string",
+    "value": "Dark color hand commercial bit while."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Military address about several. Lay ball level fight notice current. Bank peace future box."
+  },
+  "description": {
+    "type": "string",
+    "value": "Majority produce home short church. Window issue dark these. Discussion a reflect kitchen offer weight. Various charge table hit write."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "Them attack on produce enjoy political ago fast. Apply hundred expert."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:ColourHS:items:VBDX:22087584",
+      "urn:ngsi-ld:ColourHS:items:RTUI:58785534"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:ColourHS:items:IEEC:67313530",
+      "urn:ngsi-ld:ColourHS:items:MVIN:52384772"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        25.3046825,
+        -126.528647
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Mr if structure whom save. Small human kitchen. There scientist accept authority finally finish democratic.",
+      "addressLocality": "Hot west short specific interesting provide current campaign. Institution provide agree medical face whatever.",
+      "addressRegion": "Test campaign painting leader. Central possible none church summer approach.",
+      "addressCountry": "Sell fly piece democratic decide land church store. Whether interest situation five. Provide research democratic within since talk beyond.",
+      "postalCode": "Only check election police. All positive include owner leg end. Suggest health music piece build yard.",
+      "postOfficeBoxNumber": "Career answer himself listen. Attorney society home production part."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Action yes plant pull make spend. Several radio the deal fall. Remain suddenly voice building."
+  }
+}

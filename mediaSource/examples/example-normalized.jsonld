@@ -1,0 +1,78 @@
+{
+  "id": "urn:ngsi-ld:mediaSource:id:UFBP:40162706",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2017-03-03T06:37:12Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1971-08-11T10:31:18Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Cultural player sort trouble heart lot production deal. Themselves car foot student. Else law act night third."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Often dog democratic more short recognize past. Each social purpose four key relate. Live last science. Long real seem free hard."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Rest old Congress see small. May plant financial attack life figure. Meeting baby throw talk."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Girl first mouth help friend hundred foot program. Add if close. Country even interesting response both decision. Maintain chance customer war thousand others situation."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Your organization week course. Today less try list stuff life."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:mediaSource:items:ZIVE:79826817",
+      "urn:ngsi-ld:mediaSource:items:MYBU:68140592"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:mediaSource:items:REKA:63415753"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        4.9847935,
+        2.355449
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Before campaign form lead. Test rate piece point together quickly claim.",
+      "addressLocality": "Still response feel thank. Season environmental quite reflect rise.",
+      "addressRegion": "Pm sound medical least want factor. Through treat look expect although visit health purpose. Reveal actually thought.",
+      "addressCountry": "Policy own have. Allow beat need interesting. They drop condition citizen former.",
+      "postalCode": "Staff them foot need town.",
+      "postOfficeBoxNumber": "Heavy too charge level blue. Free generation relate fast American lose."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Similar history more serious American city. Move make memory tax. Reveal energy catch interesting region too. Sing serve president."
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

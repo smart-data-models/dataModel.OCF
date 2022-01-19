@@ -1,0 +1,78 @@
+{
+  "id": "urn:ngsi-ld:RemoteControl:id:EYJP:91596154",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2008-11-13T01:24:49Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1978-05-03T18:54:47Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Human just hard leg actually again point. To agree Democrat last price drive whatever. Site huge debate member billion method majority."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Model remain morning against sing firm begin. Meet learn picture I store also. Yourself school good voice. Word under exactly then open."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Free protect add debate. Condition since another once air end. Dark return check."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Back professional three. Network among suffer house red prevent wind."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Where require sense imagine. Prove run remain society."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:RemoteControl:items:OWWS:35241253",
+      "urn:ngsi-ld:RemoteControl:items:GGHC:41725322"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:RemoteControl:items:TYPD:74208940"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -83.0392055,
+        122.775853
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Statement student bank air road trade work tough. Office or meet organization on capital. Record large sport bed society box study music.",
+      "addressLocality": "Base former computer view administration. Might role listen public. Tree coach spend. Market both stock heart federal.",
+      "addressRegion": "Million hundred front star. Charge account land human image. Significant let almost major clear court short.",
+      "addressCountry": "Our national spring either best.",
+      "postalCode": "Laugh stop challenge continue standard civil condition authority. Will party collection watch employee traditional race. Power yard bill government.",
+      "postOfficeBoxNumber": "Picture create yourself town available ball. Experience plant east chance along."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Remain network represent. Administration part better coach nothing."
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "urn:ngsi-ld:Calorific:id:CFRO:24987966",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1980-01-14T16:27:01Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2005-10-09T16:08:25Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "May give voice long. Option shake detail business camera right."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Up toward weight matter. Mention cup oil provide state."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Single industry including. Price TV whether marriage responsibility better."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Imagine a tell best artist. Certain fact join any return."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Upon enter then. Prove nor table hotel show same board. Media other bed door accept skin. Article hit fact speak quality."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Calorific:items:PVCH:41794062",
+      "urn:ngsi-ld:Calorific:items:AXTC:32120303"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Calorific:items:EWBK:09194755"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -10.590852,
+        43.387916
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Administration see claim bring gun. Draw consumer let should place.",
+      "addressLocality": "Pay situation discussion seek open time. How list during off. Her worry power you against recently.",
+      "addressRegion": "Account which interesting one anyone community shoulder. Close issue early positive house newspaper test. Must process heart including partner.",
+      "addressCountry": "Fact science there establish agree strategy thus. Who produce trip movie generation.",
+      "postalCode": "That house generation face machine service be if. As under line environmental drug head.",
+      "postOfficeBoxNumber": "Federal yet from there. Ready same involve truth thousand play enter really."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Speech who operation hundred."
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

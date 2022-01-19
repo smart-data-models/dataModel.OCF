@@ -1,0 +1,78 @@
+{
+  "id": "urn:ngsi-ld:EnergyGeneration:id:JKAS:17317112",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1973-06-23T15:48:55Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1988-09-02T22:09:40Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Quite these represent. Least occur save apply common condition make."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Help might brother total. Many manager true view bed remember perhaps sign."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Example newspaper interest grow. Approach attorney east game culture how fast. Quality build officer sound weight community one."
+  },
+  "description": {
+    "type": "Property",
+    "value": "See field service indeed total dark dream support. Son anything action job."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Which whole fire staff join early. Me decade gun."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:EnergyGeneration:items:DFHG:21721195",
+      "urn:ngsi-ld:EnergyGeneration:items:ELES:06221684"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:EnergyGeneration:items:YMSQ:31557089"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        9.638445,
+        -143.885877
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Hundred main opportunity result author him. Power view available Mrs.",
+      "addressLocality": "Executive black citizen nearly into deal. Step house recognize share discussion then once.",
+      "addressRegion": "Evening firm carry firm. Probably available south view process care money. Better red table remember wife.",
+      "addressCountry": "Hold possible too animal. Both land doctor seat. So majority unit culture rate avoid discussion.",
+      "postalCode": "Dinner threat week off leg ever watch. Action what key statement indeed together. Data key hard fight something line adult drug.",
+      "postOfficeBoxNumber": "Finish whether miss up."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "He notice ever read herself word kind. Owner suddenly customer nor."
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "urn:ngsi-ld:movement:id:LSYB:95630304",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1971-12-27T13:20:41Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1995-01-31T13:08:29Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "City school take chair cover. Technology range usually throughout product. Factor light adult will law."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Community pull agreement too really. Scientist morning energy table in."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Million hit weight."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Fear fill class buy activity. Determine recent area financial doctor. Check his then very give represent."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Across enough attention reflect exactly morning president effect. Actually arm professor face strategy picture. Century until building indeed wide protect."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:movement:items:YUWD:58118313",
+      "urn:ngsi-ld:movement:items:SYOW:19929938"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:movement:items:NTLC:79497614"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -77.6253045,
+        154.659618
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Collection event ago fly. Who know want program myself. Even one adult organization discover its travel.",
+      "addressLocality": "Baby contain view friend gas type. Good shoulder safe appear eight. Present born specific certainly range despite game.",
+      "addressRegion": "Difference not bank great. Water character throughout thus wonder claim.",
+      "addressCountry": "Likely glass before animal fear order. North technology attorney suffer catch message where.",
+      "postalCode": "Class hair say. Artist rate argue begin modern. Product north matter television student mention age.",
+      "postOfficeBoxNumber": "Moment play son ago anything study. Citizen happy detail car account though. Short enjoy resource soon use."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Practice national voice statement approach. Language very black bit. Green ten serve true. Anything rate generation."
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "urn:ngsi-ld:BatteryMaterial:id:HCTC:40821775",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2017-07-21T12:56:20Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1993-07-01T23:00:49Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Live current program whom order throughout. Then as sure daughter may. Head adult result increase edge lay."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Himself central situation prepare that adult point."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Type statement only air dark open despite. Ball college military number."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Modern affect item. Bag better according modern similar week. Outside interest beat often do. Protect debate evidence range city some."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Choose either although once. Population director color fall. Everyone whose bit. Economy lot your organization she road learn plan."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:BatteryMaterial:items:JHVW:48519448",
+      "urn:ngsi-ld:BatteryMaterial:items:IZMM:77243061"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:BatteryMaterial:items:NXED:66845258"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        3.9893905,
+        -149.157008
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Probably ask half behavior risk. Citizen school tough government north simple former. American view rock school fill true. Away behind level whether.",
+      "addressLocality": "Class amount again system act consumer subject. Left keep building identify case. Decade create reveal billion Mr. Clear purpose stand piece today bit who.",
+      "addressRegion": "Be other official life. Court first available find face across task.",
+      "addressCountry": "Public home rock point maybe design. Police that whom morning inside coach choose. Sell whole remain range account candidate over paper.",
+      "postalCode": "Ten heavy recently miss concern. Race several great know. Care once level western trouble.",
+      "postOfficeBoxNumber": "Specific cause example government nice free window product. And she water she between."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Yourself activity wrong pattern Mrs important. Finally moment western wish strategy likely be."
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

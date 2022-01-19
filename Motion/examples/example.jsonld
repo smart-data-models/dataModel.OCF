@@ -1,0 +1,37 @@
+{
+  "id": "urn:ngsi-ld:Motion:id:RRKM:02826696",
+  "dateCreated": "2000-12-27T23:06:25Z",
+  "dateModified": "2009-09-17T13:19:55Z",
+  "source": "Spring system tell film center fear. Very not understand majority social between song.",
+  "name": "True receive exist really. Husband sit reveal kid finally will hope truth. Thousand look scene share.",
+  "alternateName": "Part man scene game impact stop special. Politics hot argue doctor woman service her. Rule step him.",
+  "description": "Woman time set now. Year home better unit fear nothing every it. Season nature month visit bill.",
+  "dataProvider": "Blue human section mention ability free. Bring book analysis media speak. Technology several indicate since.",
+  "owner": [
+    "urn:ngsi-ld:Motion:items:IABR:70407954",
+    "urn:ngsi-ld:Motion:items:VMAW:96148752"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:Motion:items:TKKO:38397456",
+    "urn:ngsi-ld:Motion:items:FAKB:48173608"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -74.4946895,
+      -175.26395
+    ]
+  },
+  "address": {
+    "streetAddress": "Painting serious still simple within bed. Just argue although certain wind. Phone chance its half western.",
+    "addressLocality": "Worker spring increase thousand large bank local. Action station attack less. Able choice discussion.",
+    "addressRegion": "Read center deep return create research resource. Effect reflect authority who.",
+    "addressCountry": "Boy responsibility guy prove laugh base. Street however kitchen quality. Three ability dog study hard test concern.",
+    "postalCode": "Third budget newspaper base support move.",
+    "postOfficeBoxNumber": "Base coach pretty fear work wind case. Style catch agree answer line less happen."
+  },
+  "areaServed": "Type where good court central notice stop. Movement four fire herself black.",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

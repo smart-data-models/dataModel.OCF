@@ -1,0 +1,37 @@
+{
+  "id": "urn:ngsi-ld:pulsatileoccurrence:id:BTYL:28394004",
+  "dateCreated": "1970-12-13T02:13:10Z",
+  "dateModified": "1982-12-01T06:24:27Z",
+  "source": "List international it production guy car great commercial. Paper structure several knowledge author. Improve especially term because allow eye.",
+  "name": "Black section edge father read prepare find. Cell respond front girl. Energy research occur effect. Animal huge during may sing education major.",
+  "alternateName": "Where class sure approach number maintain air. Water return hard less.",
+  "description": "Feel big almost hospital happy. Production develop would investment.",
+  "dataProvider": "Majority land read figure year. Everybody behind rule director shoulder even matter. Animal side participant writer break.",
+  "owner": [
+    "urn:ngsi-ld:pulsatileoccurrence:items:GOVI:81693831",
+    "urn:ngsi-ld:pulsatileoccurrence:items:VYPK:21819237"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:pulsatileoccurrence:items:BDJU:07700056",
+    "urn:ngsi-ld:pulsatileoccurrence:items:FRUZ:41836023"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -67.0955035,
+      122.088537
+    ]
+  },
+  "address": {
+    "streetAddress": "Eye writer enough. Morning other law blood production technology least. Feel all present mention.",
+    "addressLocality": "Through boy machine. Him kitchen record shake.",
+    "addressRegion": "Process matter pull. Loss performance ten six information go. Life source entire.",
+    "addressCountry": "Set view study suffer. Water it air mention create life trip.",
+    "postalCode": "Game long despite hard among. Television wait suffer professional support trial. At record wonder understand popular majority.",
+    "postOfficeBoxNumber": "Wish source lead production. Recently owner choose loss card bit. Matter always artist different."
+  },
+  "areaServed": "Drug leg left sometimes yard. Friend themselves police him. Resource daughter approach.",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

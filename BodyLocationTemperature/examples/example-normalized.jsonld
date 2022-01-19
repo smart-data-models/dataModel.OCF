@@ -1,0 +1,78 @@
+{
+  "id": "urn:ngsi-ld:BodyLocationTemperature:id:JKQS:15774687",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2002-12-03T00:56:09Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2013-09-18T04:07:02Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Military market through. Task environment college oil tonight sometimes else."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Agree school entire themselves east want vote. Once hot industry research yet stock fight reality."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Friend its speech much time. Senior town really different spend matter."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Picture believe cell agency. Six body radio behavior she cold."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Those now statement build firm think. Medical others for season return his."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:BodyLocationTemperature:items:QSWE:40587381",
+      "urn:ngsi-ld:BodyLocationTemperature:items:XUGP:16309252"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:BodyLocationTemperature:items:IUGS:31998308"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        6.908481,
+        179.542808
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Little cold believe third sure news individual. As everything short energy. Radio on store become plant responsibility. Development sometimes authority herself.",
+      "addressLocality": "Life price onto traditional learn break play. Type eye edge fight child avoid really measure. North administration quality artist simple police. Back generation main method employee possible.",
+      "addressRegion": "American involve fight part choice way early. Item skill rule voice instead when. Of once oil somebody yeah.",
+      "addressCountry": "Particularly note hospital call dinner. Financial think magazine fill window.",
+      "postalCode": "Sure road special financial camera rule someone.",
+      "postOfficeBoxNumber": "Manage challenge suffer idea perform. Certain score able decide near."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Central hot save view nature window suddenly. Free eye build commercial."
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "urn:ngsi-ld:Touch:id:BHOE:99629945",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1976-09-22T04:56:59Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1976-08-17T10:01:00Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Evening pick report."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Protect or trip keep keep. Society every card happy."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Long down deep order across. Dinner space keep compare. Manager majority tonight."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Message amount always between use yes. Plan plan actually thus focus authority. Task perhaps build professional movement individual field."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Reality house we apply hit."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Touch:items:ORBA:00184639",
+      "urn:ngsi-ld:Touch:items:YLIL:03077083"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Touch:items:JXOV:82597506"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -0.1744025,
+        -153.346539
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Cultural teach light factor keep.",
+      "addressLocality": "Each risk sell final game save major collection. Also interview drug let participant. Cup nor mind check much fear.",
+      "addressRegion": "Ground Mr hot sometimes change off deep. Loss eye image level something recent yes.",
+      "addressCountry": "Full pay response win require increase despite. Bring which bar. Concern you cause black democratic back.",
+      "postalCode": "Hand decision share. Technology imagine score technology treat state image name.",
+      "postOfficeBoxNumber": "Find turn think some than role. Treat serve change final think cost somebody. Financial turn population hair do ahead."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "List impact owner detail everyone. By picture rich middle long very. Window indicate walk exactly figure."
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

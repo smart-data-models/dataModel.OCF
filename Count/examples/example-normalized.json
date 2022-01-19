@@ -1,0 +1,75 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:Count:id:ANPP:64594792"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1970-08-14T20:52:44Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1982-07-21T00:53:54Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Fear very opportunity sea prevent hospital check."
+  },
+  "name": {
+    "type": "string",
+    "value": "Federal simply turn meet less. North stay step while window network can."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Produce summer alone toward attorney. Discuss article four go."
+  },
+  "description": {
+    "type": "string",
+    "value": "Head enter heart though later. Form agree plant exactly back before. Mouth able probably threat."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "Lose allow oil box any film. Someone people reveal exist significant admit treatment idea. Bank perhaps choice none."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:Count:items:BHAE:96828546",
+      "urn:ngsi-ld:Count:items:VDZM:08245550"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:Count:items:JZGY:19989096",
+      "urn:ngsi-ld:Count:items:VPFW:31471711"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -75.8259115,
+        -9.81898
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Choice anything lawyer necessary open. Hope left believe science water bill. Cell several senior exist. Often a camera join picture.",
+      "addressLocality": "Eight across him source democratic future create big.",
+      "addressRegion": "Political memory how public almost. Affect local effort instead. Hard financial can small already.",
+      "addressCountry": "Must happen degree truth something.",
+      "postalCode": "Do thus address generation. Source medical many past realize service then. Work red central model professional small.",
+      "postOfficeBoxNumber": "Myself until politics bag police citizen. Pretty contain process."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Much maybe through you less cut after."
+  }
+}

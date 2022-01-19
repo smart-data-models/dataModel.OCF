@@ -1,0 +1,34 @@
+{
+  "id": "urn:ngsi-ld:WaterInfo:id:BWUP:35826914",
+  "dateCreated": "1984-11-27T20:49:31Z",
+  "dateModified": "2004-06-02T09:44:44Z",
+  "source": "Along those purpose ok painting television fill. Worker wish race music trial about.",
+  "name": "Enough thank teacher boy garden law both. Put modern customer short.",
+  "alternateName": "Realize above attention present participant. Billion those candidate TV raise low course. Early science kid down.",
+  "description": "According carry half. Civil meet option place pass perhaps. Mother might you age represent.",
+  "dataProvider": "Financial live local view single.",
+  "owner": [
+    "urn:ngsi-ld:WaterInfo:items:JMPQ:05255850",
+    "urn:ngsi-ld:WaterInfo:items:QJSR:25392303"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:WaterInfo:items:NTHC:63052587",
+    "urn:ngsi-ld:WaterInfo:items:GRFX:83012714"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -80.746038,
+      66.99956
+    ]
+  },
+  "address": {
+    "streetAddress": "Area suddenly front game describe south. Store loss debate surface finish stand occur food.",
+    "addressLocality": "Kitchen accept both of natural. Maintain traditional laugh plant on mind require contain. Wife group guy challenge.",
+    "addressRegion": "Feel approach lead operation way single instead despite. Mean model social white near citizen firm.",
+    "addressCountry": "Heart describe forward generation maintain. Last term shake card issue.",
+    "postalCode": "Radio expect them usually decision none to. Tough certain tough while.",
+    "postOfficeBoxNumber": "Analysis leg program. Country computer plan reveal available article may. Now gun third knowledge record single."
+  },
+  "areaServed": "Future then expect everybody team garden spend. End compare significant discover notice including Democrat."
+}

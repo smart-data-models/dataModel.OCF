@@ -1,0 +1,37 @@
+{
+  "id": "urn:ngsi-ld:PrintQueue:id:LXHD:13994505",
+  "dateCreated": "1979-09-20T10:22:44Z",
+  "dateModified": "2009-09-05T09:27:19Z",
+  "source": "When with even yet. Continue black rich ahead issue follow wish. Onto pull particular able.",
+  "name": "Officer respond return hard. Money team wonder break group pressure. Style section across agreement approach agent.",
+  "alternateName": "Experience all music field image as employee. Chair plant should understand society world writer exactly. Hospital food sea have trade effort investment.",
+  "description": "Window artist its company space decade operation. Appear whose without law laugh his physical television.",
+  "dataProvider": "Might coach anything. Above upon apply. Say product station recognize.",
+  "owner": [
+    "urn:ngsi-ld:PrintQueue:items:QKHC:45761722",
+    "urn:ngsi-ld:PrintQueue:items:WNVQ:88631782"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:PrintQueue:items:AKXG:18898809",
+    "urn:ngsi-ld:PrintQueue:items:GCRN:39757926"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      50.515152,
+      129.363957
+    ]
+  },
+  "address": {
+    "streetAddress": "Their career Congress away off mission source. Much poor trade later actually fast. Pressure tell itself wall.",
+    "addressLocality": "Turn statement involve. Hundred toward fear avoid week hair campaign. Party community increase beat situation kitchen significant. Probably fund decide skill many consumer thing particularly.",
+    "addressRegion": "With amount leg difference visit involve blue. While single health line.",
+    "addressCountry": "Center note father such ability sense suffer. Then pretty well information moment body camera.",
+    "postalCode": "Walk Republican bill work can. Look understand pull free.",
+    "postOfficeBoxNumber": "Because show stop near themselves look. Consider number firm next. Have throughout report could I white left. Stuff toward finally budget."
+  },
+  "areaServed": "Important us main leg seven unit explain best. It guess present material trouble. Medical what bed huge. Film indeed positive.",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

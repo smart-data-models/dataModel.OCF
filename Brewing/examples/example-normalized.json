@@ -1,0 +1,75 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:Brewing:id:CUFI:10169757"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "2021-08-20T05:54:49Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "2021-02-27T19:01:40Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Current must out civil big point leg. Rest investment production design worker operation. Fish store establish news discover."
+  },
+  "name": {
+    "type": "string",
+    "value": "Guy resource draw whatever walk do. Community morning night time."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Bill culture yard summer environmental. Return difference unit alone program standard."
+  },
+  "description": {
+    "type": "string",
+    "value": "Sign share part. Black couple policy. Model produce nature world second."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "Majority party cover step approach may always. Line military tax dark your."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:Brewing:items:ASJM:77529932",
+      "urn:ngsi-ld:Brewing:items:GGFW:83699150"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:Brewing:items:DXVZ:45868431",
+      "urn:ngsi-ld:Brewing:items:EVIW:14635277"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -83.2190845,
+        -60.290995
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Record loss edge economic.",
+      "addressLocality": "Middle reflect floor. Executive rest team specific husband challenge. Once commercial charge pressure should say.",
+      "addressRegion": "Almost collection country. Interesting reduce fast.",
+      "addressCountry": "More turn treatment soon begin organization human. Be necessary perform treatment enough light down. Source light thought purpose someone add. Night want air out.",
+      "postalCode": "Character future maintain open. Certainly truth economic year nation. Herself find woman trouble standard forget top.",
+      "postOfficeBoxNumber": "Week break fine spend because. Mrs likely third very prove rich. Smile although also."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Face board when leave education let admit. Responsibility policy movement sea avoid myself nation suffer. Cost meet itself yes environment."
+  }
+}

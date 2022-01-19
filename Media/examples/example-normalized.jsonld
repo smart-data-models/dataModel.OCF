@@ -1,0 +1,78 @@
+{
+  "id": "urn:ngsi-ld:Media:id:JBFJ:85590267",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1999-11-01T04:37:28Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2014-02-07T07:07:30Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Today dark project still. Cell some together because."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Create anyone close."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Offer fish pick news chance reflect long. Role exist method daughter. Run one beautiful method hospital find know young."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Sing firm try how finish day. Will letter staff middle. Here prevent your major mother activity discussion instead."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Family never possible why scientist."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Media:items:JUEF:68145877",
+      "urn:ngsi-ld:Media:items:SUAX:54574771"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Media:items:QFXF:74085416"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        11.0430135,
+        -64.961196
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Hot reduce life national final. Administration citizen determine machine movement dog.",
+      "addressLocality": "Serve occur wife option life stand. My which realize focus. House coach stuff issue point foreign exist. Could girl bad bed yard debate.",
+      "addressRegion": "Particular north she itself debate. Behind go true. Successful young space.",
+      "addressCountry": "Oil door game church service.",
+      "postalCode": "Own room risk also. Someone wife mouth magazine. Major administration believe north where religious hotel sell.",
+      "postOfficeBoxNumber": "Draw field appear toward. Republican computer science explain while. Pretty party baby professor list contain here."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Dream wall seem million. At health player provide test."
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

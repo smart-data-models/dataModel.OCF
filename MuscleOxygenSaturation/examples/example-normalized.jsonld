@@ -1,0 +1,78 @@
+{
+  "id": "urn:ngsi-ld:MuscleOxygenSaturation:id:IBLJ:74568783",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2006-10-03T06:43:11Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2014-04-01T18:48:04Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Open must meeting. System describe way act several bag available."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Anything Mr some board area science miss. Particularly finish near hard majority writer whom. Administration away especially generation recent."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Maintain never possible week. Her anyone college cost."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Rate system audience will lot middle. War add truth pattern stuff know marriage. Party better week suggest food language fly."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Ready fear shake where throughout which. Next drop letter rate job. Health method spring fact there music share appear."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:MuscleOxygenSaturation:items:XLVR:40170732",
+      "urn:ngsi-ld:MuscleOxygenSaturation:items:RWDB:65001685"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:MuscleOxygenSaturation:items:LHGZ:59229115"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -14.2965595,
+        -144.282412
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Kid world energy before sense dog. Skin force picture nearly manager. Hotel open mouth know ground view should.",
+      "addressLocality": "Laugh report central space political. Student wait institution soldier reveal book. Kid decade pass customer.",
+      "addressRegion": "Southern institution adult light member. Occur smile fish couple.",
+      "addressCountry": "Artist activity itself administration since window. Can weight figure about remember nation. Popular charge part. Fight before wide pressure art design charge.",
+      "postalCode": "Sea current fight.",
+      "postOfficeBoxNumber": "Visit style part begin try next face. Either choose music person. Life magazine management image bill social."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "High firm card this south Republican gun. Last lead wrong key matter get kid. Southern little fall example."
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

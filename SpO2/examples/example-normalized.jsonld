@@ -1,0 +1,78 @@
+{
+  "id": "urn:ngsi-ld:SpO2:id:MEUN:62331652",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1972-09-30T16:17:09Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2011-03-03T21:22:48Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Task various station public conference per necessary. Animal wrong like capital analysis. Benefit agree draw bill. Perhaps tax test plant boy bar last perform."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Bed join another now theory young whose important. Worry education everything six shoulder force."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Father cell election company hair black. Wife marriage assume care experience article guess."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Population show soldier. Music apply foreign. People policy most left. Appear computer cut deep allow carry."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Including these beautiful goal move role serve. Might herself fill create throw. Both free campaign station describe."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:SpO2:items:HUNW:33943179",
+      "urn:ngsi-ld:SpO2:items:ZQCA:74870697"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:SpO2:items:VCRV:48239423"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -70.0546185,
+        -23.401117
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Case discussion game mother performance yes. Face skin whose television lawyer where. Ok store lay prove wish within.",
+      "addressLocality": "Hold possible free nor. Paper have structure church. Star fly hot improve material nation appear.",
+      "addressRegion": "Development debate tough charge information either miss. Speech right drug wife behind themselves. Despite inside raise choose.",
+      "addressCountry": "Top sometimes above base month put. Team media culture economy yes next. Represent imagine drive task career.",
+      "postalCode": "Class sister present brother democratic life. Different pick action else he where trial. Program cost foot outside after end.",
+      "postOfficeBoxNumber": "Until establish be clear such."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "About have without main save off."
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

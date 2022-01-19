@@ -1,0 +1,37 @@
+{
+  "id": "urn:ngsi-ld:SignalStrength:id:LYPG:67131944",
+  "dateCreated": "1979-04-01T08:20:09Z",
+  "dateModified": "1972-04-08T19:10:46Z",
+  "source": "Him financial boy top shoulder among building. Special easy against myself.",
+  "name": "Issue tax executive edge risk event human. Physical science treat give put check.",
+  "alternateName": "About tax century late control focus law son. Smile movie recent after partner everything popular model. Feeling building center blue free recent.",
+  "description": "Fight bag listen police. Dog baby finally movement pressure almost.",
+  "dataProvider": "Option price contain nice. Pattern find data fear. Husband ball same play.",
+  "owner": [
+    "urn:ngsi-ld:SignalStrength:items:UUTV:05597043",
+    "urn:ngsi-ld:SignalStrength:items:HPGS:58277001"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:SignalStrength:items:DHAC:60343846",
+    "urn:ngsi-ld:SignalStrength:items:SKJT:28033772"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      48.4533765,
+      -149.18009
+    ]
+  },
+  "address": {
+    "streetAddress": "Respond network protect financial produce across. Should call direction protect employee. Including wind indeed.",
+    "addressLocality": "Type people those create apply share trip about. Management national another pattern age consumer follow over.",
+    "addressRegion": "Late site worry north suggest play yard result. Will peace Congress resource level require. Character chair within close.",
+    "addressCountry": "Southern decision food sound. Along take kid assume. See simple miss in.",
+    "postalCode": "Set seem condition yeah fly. Could growth toward mean court two. Situation skill raise big.",
+    "postOfficeBoxNumber": "Reduce glass what mother tough second. Break key strong partner stock."
+  },
+  "areaServed": "Trial idea daughter American mention. Cold level sport charge.",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

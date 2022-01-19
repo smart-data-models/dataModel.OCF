@@ -1,0 +1,75 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:Sleep:id:DQYD:66419001"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "2006-06-22T00:23:34Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1985-04-14T07:05:46Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Team improve per difficult design perhaps remain. Something town now year."
+  },
+  "name": {
+    "type": "string",
+    "value": "Debate notice eat share day fire serve seem. Through want husband."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "System his with management resource real various. Task right mean paper western seem near beat. Skin expert that pattern drive free that."
+  },
+  "description": {
+    "type": "string",
+    "value": "Here ability even exist class movement grow. War church probably."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "Consumer fish himself crime finish some pretty. Kid stand individual tree weight stand apply."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:Sleep:items:NRHF:98813192",
+      "urn:ngsi-ld:Sleep:items:ROUA:34648361"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:Sleep:items:JVPG:56549433",
+      "urn:ngsi-ld:Sleep:items:CGGJ:52083387"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -0.4463355,
+        155.160512
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Example experience bar cover machine him along. Last must general sister yourself. Mean also store apply.",
+      "addressLocality": "They arrive among would participant those seem. Run door mission player ever year.",
+      "addressRegion": "Professor we raise. Brother treat you ahead whatever tough game necessary.",
+      "addressCountry": "Technology specific key generation. Process most apply choose feel visit with. Play modern state address popular job.",
+      "postalCode": "Yourself news TV institution how again field democratic. Industry water body.",
+      "postOfficeBoxNumber": "Series election free cold. System information else even evening."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Your reality almost four use. Degree simply bag drop."
+  }
+}

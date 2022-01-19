@@ -1,0 +1,78 @@
+{
+  "id": "urn:ngsi-ld:NightMode:id:BIYL:16038251",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1973-05-15T01:34:03Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2000-10-23T09:24:52Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Garden organization central high structure maintain story. Interest else politics pay."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Item between radio better meet buy window woman. Home room do research."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Rule city gun wind care maintain. Could radio receive raise quality feeling. Ball successful leave college evidence."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Range room second will sound your leg. Perhaps agree sure term smile along. Suddenly guess hear."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "College court shake open able. Build door article decision environmental Mr."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:NightMode:items:QDOG:43988141",
+      "urn:ngsi-ld:NightMode:items:MRYT:64100614"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:NightMode:items:LTOJ:76255898"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -21.279646,
+        -26.607471
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Safe yard identify very dark generation. Town what tough sound. Woman evidence military.",
+      "addressLocality": "Card through series government nothing. Investment treatment pull thought fly.",
+      "addressRegion": "Technology almost however box than close. Father determine sister four enough. Discover start too might peace more form strategy. Special break long us project beyond available.",
+      "addressCountry": "She tell activity. Big owner will shoulder production wonder too street.",
+      "postalCode": "Early himself series move significant close. Industry begin claim continue property sit.",
+      "postOfficeBoxNumber": "Doctor hit statement simple. Significant realize doctor gun. Third get challenge join."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Area ready dog daughter training education."
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

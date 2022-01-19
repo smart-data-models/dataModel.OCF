@@ -1,0 +1,78 @@
+{
+  "id": "urn:ngsi-ld:SignalStrength:id:YHRP:70225814",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1983-05-03T17:46:03Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1993-05-17T17:49:35Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Loss make realize. Meeting walk college student us between car."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Suggest represent feel bad learn save."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Former newspaper group administration artist trouble admit. Hit man improve movement improve whom. Effect however machine arrive although since response."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Position make or service billion left prepare."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Name model at guy machine. Pretty trade discuss cultural fill although focus. Town project power memory produce."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:SignalStrength:items:RLGW:14102075",
+      "urn:ngsi-ld:SignalStrength:items:PYMB:31937927"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:SignalStrength:items:OKGM:14141306"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        29.1792985,
+        78.286458
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Attorney power ten professor claim.",
+      "addressLocality": "Concern test arm full ahead star. Majority firm idea similar. Major partner cell man news particular southern.",
+      "addressRegion": "Meet concern wear nothing. Ten about fish.",
+      "addressCountry": "Responsibility sure major choice dream movie. North read like available. Deep book blood else deep.",
+      "postalCode": "Resource born last hope stock network. Ahead town school crime city similar. Rather interest see executive identify especially apply. Likely answer enough low sit high.",
+      "postOfficeBoxNumber": "Five bag him. It movement decide."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Religious question base accept hair left. Dark vote involve hotel."
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

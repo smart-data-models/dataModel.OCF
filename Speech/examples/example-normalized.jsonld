@@ -1,0 +1,78 @@
+{
+  "id": "urn:ngsi-ld:Speech:id:GEWQ:12227601",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1991-09-26T05:16:34Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2006-01-12T06:39:33Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Strong cost see certainly job push. At set baby professional."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Machine miss fly guess authority everyone. Different language condition town government lot opportunity."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Doctor early east hour near ball. Order language doctor water still head any face. True career officer get amount nation since those."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Have foot particular nearly culture suffer. Wife partner by way itself. Employee much relationship his majority near travel think."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Health field section above within cell each. Speech give that individual break against."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Speech:items:VFPP:46854686",
+      "urn:ngsi-ld:Speech:items:FUNQ:67496691"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Speech:items:JXWG:61166781"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        52.163571,
+        -38.680616
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "You first sure Mrs. Staff nice community ready forward affect least. Admit five subject accept.",
+      "addressLocality": "Little thousand bag system cover. Animal newspaper matter ok surface main. Collection letter reality.",
+      "addressRegion": "Arrive each real side speak reduce station Democrat. Some wish material whether.",
+      "addressCountry": "Tax leader tonight item remember occur drug position.",
+      "postalCode": "Economic prepare spend discussion.",
+      "postOfficeBoxNumber": "Police election ready board again. Think right discover institution issue."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "None medical result market process cell type send. Summer heart half. Late all system ok movement travel pretty."
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

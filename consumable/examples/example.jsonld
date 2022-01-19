@@ -1,0 +1,37 @@
+{
+  "id": "urn:ngsi-ld:consumable:id:HQRQ:55721588",
+  "dateCreated": "1994-02-03T09:06:25Z",
+  "dateModified": "1980-12-14T14:08:28Z",
+  "source": "Subject already view bring force animal according especially. Clearly leg investment anyone.",
+  "name": "Share degree hope society free down. Expect result expert control such thing. Past something every future billion.",
+  "alternateName": "Court green answer career garden special.",
+  "description": "In bad page tell wide. Key least out nation machine assume alone.",
+  "dataProvider": "Window him own work human pattern all. Approach officer live treatment future activity participant.",
+  "owner": [
+    "urn:ngsi-ld:consumable:items:OIWA:88403035",
+    "urn:ngsi-ld:consumable:items:EBDB:93426135"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:consumable:items:QTFW:38344697",
+    "urn:ngsi-ld:consumable:items:EUTD:81027203"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -57.68437,
+      -85.068576
+    ]
+  },
+  "address": {
+    "streetAddress": "Direction success analysis ok them democratic. Require especially concern doctor possible cover. Article live against course month color.",
+    "addressLocality": "Arm few stand religious. It turn everything. Decide population change message there sometimes general.",
+    "addressRegion": "Whom seek case score five. Side whole better conference. Imagine detail according goal form.",
+    "addressCountry": "New face medical and production.",
+    "postalCode": "Measure middle structure enter particularly find.",
+    "postOfficeBoxNumber": "Itself everything community morning subject not play wonder. Finally arm painting wind."
+  },
+  "areaServed": "Organization reflect will fall now plan sign. Artist Congress thus own.",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

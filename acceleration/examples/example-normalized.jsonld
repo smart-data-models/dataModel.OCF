@@ -1,0 +1,78 @@
+{
+  "id": "urn:ngsi-ld:acceleration:id:NGIX:57424946",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2006-10-27T10:09:51Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1976-11-20T00:14:22Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Wife as child city mean current property. Result debate against within."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Design write amount task alone treatment Republican trip. List benefit strategy rest month. Guy throughout do doctor hair step really."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Energy song ability example. Big list air culture ever sometimes court."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Of build contain stage type discussion language. Force game upon enough arm score letter."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "High his series visit I. Sure event current and hair as."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:acceleration:items:RLAK:02634901",
+      "urn:ngsi-ld:acceleration:items:GVYU:66034550"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:acceleration:items:CNCF:95278992"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -71.507505,
+        -18.291869
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Affect big level career see simple product. Six tough majority able only billion food expect. Go serve option suddenly beat.",
+      "addressLocality": "Hit prove board similar game. Sea daughter Congress account behind.",
+      "addressRegion": "Seek threat student ever expert positive serve become. Guy seek pull total happen enter. Every too just after long themselves turn.",
+      "addressCountry": "Language family true might less. Make within begin myself certain enjoy.",
+      "postalCode": "Expect any thank TV drop information behavior join. Situation type letter group.",
+      "postOfficeBoxNumber": "Your score central return realize interview growth. Should per buy their stand nothing grow."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "My somebody behind property present view. Discuss tree second. Close score authority person throw."
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

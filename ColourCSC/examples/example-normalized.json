@@ -1,0 +1,75 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:ColourCSC:id:CILR:22609889"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1972-02-07T04:39:05Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1995-06-21T21:30:16Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Sit whole certainly chance eye. Picture blood himself movement put enter camera."
+  },
+  "name": {
+    "type": "string",
+    "value": "Actually open walk occur red tonight eight. Marriage either before focus hand fear. Choice executive dream too your goal up similar."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Must help seat together deep. Pick just hundred. Along with development sound night matter."
+  },
+  "description": {
+    "type": "string",
+    "value": "Exist major pick."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "Shoulder floor off another any."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:ColourCSC:items:HVOC:54830748",
+      "urn:ngsi-ld:ColourCSC:items:ZZYY:78981473"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:ColourCSC:items:FYZV:24314298",
+      "urn:ngsi-ld:ColourCSC:items:EKPS:06727525"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        9.5180045,
+        -162.458131
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Still information trial adult. Feel total between activity that own different.",
+      "addressLocality": "Rest computer though I can. Within nature game reason.",
+      "addressRegion": "Cost later tough data. Hotel him technology national imagine along. Sound Mr off.",
+      "addressCountry": "Guess say miss increase lay attention. Road free president make page. Know wind data. Score little dream put size know daughter.",
+      "postalCode": "Continue ask at fast likely site color. Art those worry treat. Price tonight white maintain.",
+      "postOfficeBoxNumber": "Result fund generation direction."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Power last south movement. Provide wrong half within on building cup idea."
+  }
+}

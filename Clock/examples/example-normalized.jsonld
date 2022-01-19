@@ -1,0 +1,78 @@
+{
+  "id": "urn:ngsi-ld:Clock:id:FCFN:80105293",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1982-02-07T11:43:31Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2012-09-30T09:55:02Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Suffer civil product responsibility box. Allow truth phone accept drug rule."
+  },
+  "name": {
+    "type": "Property",
+    "value": "School fly into chance."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Style TV easy alone attack foot report. Themselves compare stand cause bag consumer. Final gas least church produce."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Third production environment production me southern. Region never girl word sport each. Food fast standard record fish show."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Create be sport evidence admit go tough. Minute along bank leg its deal fear. Win economic similar."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Clock:items:BAFT:39690986",
+      "urn:ngsi-ld:Clock:items:XEPN:69571148"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Clock:items:QXOB:86838384"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -20.399833,
+        64.300225
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Man food common. Pattern myself responsibility nature notice drop camera. Garden show upon stop lead list.",
+      "addressLocality": "Program north nice describe. Quality relationship few trade short sound vote. Its receive notice environment knowledge.",
+      "addressRegion": "Mind fly knowledge traditional process west bill. Center under long subject itself way.",
+      "addressCountry": "Position friend fact price term answer people. Term general sure performance.",
+      "postalCode": "Open blood computer employee class when manager send. Work yes just scientist expert serve account.",
+      "postOfficeBoxNumber": "Network discover remember despite statement song arm case."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Late follow much base. Analysis nation page respond."
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

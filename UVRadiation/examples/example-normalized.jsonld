@@ -1,0 +1,78 @@
+{
+  "id": "urn:ngsi-ld:UVRadiation:id:PEWM:60646471",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1987-07-16T01:21:36Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1995-03-03T21:14:27Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Card like inside trade under alone. Child at case fund once them. Name history key."
+  },
+  "name": {
+    "type": "Property",
+    "value": "In view gas day wish modern best. Behavior relate two throughout wish."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Answer area plant industry place see eye establish. Great knowledge realize hit black sport some. Consider fund tough."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Marriage score meet couple want other range product. Cup speech magazine evidence reflect table region."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Institution theory color food. Watch development song response father. All director even beyond ball notice."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:UVRadiation:items:NKVI:91989787",
+      "urn:ngsi-ld:UVRadiation:items:LSHP:80197913"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:UVRadiation:items:YMZK:32241450"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -39.509289,
+        -160.12506
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Doctor simply scientist modern chair. Power claim remain before bad few. Word could quite.",
+      "addressLocality": "Increase society somebody major simple special. Operation hold evidence trial choose.",
+      "addressRegion": "Method manage Mr arm style unit charge. Their usually why treatment bed tree.",
+      "addressCountry": "Them then movie no while. Herself film window event single data. Hope member go under heavy fill hotel.",
+      "postalCode": "Little ability several drive plan three. Democrat very chair second our white significant. Party city question lawyer check within enjoy mission. Discuss pull officer relate hair bit wonder.",
+      "postOfficeBoxNumber": "Region heart support. Perform once catch professional score front international today. Congress itself culture federal budget agree painting."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Ask material lawyer southern need billion. Power guy happen heart far."
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

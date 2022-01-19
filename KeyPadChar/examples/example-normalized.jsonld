@@ -1,0 +1,78 @@
+{
+  "id": "urn:ngsi-ld:KeyPadChar:id:KXUT:50908923",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2021-08-21T14:51:03Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2001-05-14T20:30:00Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Soldier store feeling many help event wrong. Old develop tree picture account whole indicate. Heart skill offer. Partner read career product south fund interview."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Administration actually live from."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Writer per first increase design size. Tax health drug loss."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Project indeed while baby third. Bank after condition wife. National within standard record indicate fact Democrat mean."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Magazine quickly a. Every social month hot policy reduce. Deal produce chair another although."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:KeyPadChar:items:EXVC:21629351",
+      "urn:ngsi-ld:KeyPadChar:items:QPDN:56214490"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:KeyPadChar:items:XLTN:33438506"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -65.7253095,
+        -48.188615
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Least environment believe least director series consumer letter. Friend before finally huge data official. Style think myself face arm theory clear home.",
+      "addressLocality": "Modern start quite cover. Resource role quality.",
+      "addressRegion": "Whole subject interview cup debate professor item. Always sense kind three foreign increase case. Page assume we another else according.",
+      "addressCountry": "Candidate eye live you house why. Finish beat detail across. Eye alone prove avoid agreement.",
+      "postalCode": "Reflect collection scene doctor or her bar. Debate common term imagine.",
+      "postOfficeBoxNumber": "Discuss really score deep hotel. Boy meeting much."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Store set party five. Assume mouth every measure."
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

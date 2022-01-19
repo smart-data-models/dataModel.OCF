@@ -1,0 +1,37 @@
+{
+  "id": "urn:ngsi-ld:HeatingZone:id:THMX:89392478",
+  "dateCreated": "1975-06-12T13:28:15Z",
+  "dateModified": "2020-12-18T11:29:37Z",
+  "source": "Administration treat month also movie oil. I unit nothing green dinner ask. Foot name can.",
+  "name": "Ever hospital bring PM south family foreign necessary. Form story over step everybody watch important.",
+  "alternateName": "Station level action others young energy town. Happy only cover anything sing sit.",
+  "description": "Partner Mr receive view especially read player. Ready consider save listen.",
+  "dataProvider": "Once audience summer themselves. Not avoid natural radio many blood relationship. Keep drug agent tonight.",
+  "owner": [
+    "urn:ngsi-ld:HeatingZone:items:TFYW:95365282",
+    "urn:ngsi-ld:HeatingZone:items:XVWO:21267042"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:HeatingZone:items:BKFP:50989634",
+    "urn:ngsi-ld:HeatingZone:items:GWYJ:65777501"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -22.0545635,
+      124.132065
+    ]
+  },
+  "address": {
+    "streetAddress": "Heart build road end age people third man. Sister nice range election actually.",
+    "addressLocality": "Establish trouble realize us. Learn everything appear most.",
+    "addressRegion": "Control evidence must cover age. Begin think agreement house.",
+    "addressCountry": "Product third back everybody onto science. Three south people stop world model test. Develop final certainly black.",
+    "postalCode": "Exist into kid night power walk. End with student.",
+    "postOfficeBoxNumber": "Player today magazine bag check. Trouble today civil."
+  },
+  "areaServed": "Owner market range executive point.",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

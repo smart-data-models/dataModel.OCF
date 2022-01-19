@@ -1,0 +1,78 @@
+{
+  "id": "urn:ngsi-ld:settings-sound:id:TWFM:59833741",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1980-08-20T20:10:35Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2021-06-16T21:25:41Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Sound professor pass. East never sort scientist while prepare region knowledge. Seven be hold along civil west capital resource."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Away president early media you. Always fill industry thought."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Indeed heart price in identify state hold church. Nor child heart great common."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Choice likely thought. Southern agreement week guess deep choose. Condition money able reflect staff series develop."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Order probably yard Democrat draw. Save fund might southern resource training activity. Music hope city physical."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:settings-sound:items:QXMH:74451942",
+      "urn:ngsi-ld:settings-sound:items:IDJX:14479708"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:settings-sound:items:INPA:31446788"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        38.16846,
+        138.887384
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Course lead indeed key plant network. Role policy direction many.",
+      "addressLocality": "Want behind anyone seat.",
+      "addressRegion": "Knowledge wife give speak total back. Three form different I final. Perhaps need skin factor board service heart.",
+      "addressCountry": "Baby age pay news than nation. Exactly forget more prepare blue instead. Body personal affect likely hour middle chair.",
+      "postalCode": "High spend treat. However hair behavior particularly.",
+      "postOfficeBoxNumber": "Stay lawyer wide ahead expect some. Alone crime after kind perform."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Both or window media. White national feeling public chance behind."
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

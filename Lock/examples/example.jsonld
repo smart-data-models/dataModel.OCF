@@ -1,0 +1,37 @@
+{
+  "id": "urn:ngsi-ld:Lock:id:XMLC:04027868",
+  "dateCreated": "2017-01-25T17:25:05Z",
+  "dateModified": "1973-01-31T14:51:30Z",
+  "source": "Market oil few line concern approach. Remember spring continue us follow. Mind know hundred allow.",
+  "name": "Voice institution newspaper majority she hand treatment. Page concern send town this. Pressure after face federal small.",
+  "alternateName": "Somebody lose often artist only real. Speak partner listen source population suggest. High if relate small turn might other.",
+  "description": "Statement bit decide for seem walk. Role line door learn.",
+  "dataProvider": "Front suggest however great task. Far accept morning make. His food your quickly near.",
+  "owner": [
+    "urn:ngsi-ld:Lock:items:RLUG:76139399",
+    "urn:ngsi-ld:Lock:items:XCHK:80300766"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:Lock:items:ADQP:70471091",
+    "urn:ngsi-ld:Lock:items:RISH:90517499"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -27.3523885,
+      -73.996577
+    ]
+  },
+  "address": {
+    "streetAddress": "Listen region player. Director alone example general carry.",
+    "addressLocality": "Blue green write total road voice data girl. Degree must only forward movement tell. Begin boy commercial machine indicate time arrive.",
+    "addressRegion": "Science deal until daughter state politics. Per whom break model. Place kid moment spend can at gas our.",
+    "addressCountry": "Sister part over. Couple partner save your site price green.",
+    "postalCode": "Respond single whatever. Campaign worry move soldier allow apply. Mr everybody possible opportunity.",
+    "postOfficeBoxNumber": "Beyond name meet test finally evidence. Everyone lot grow executive structure term strong attack."
+  },
+  "areaServed": "Walk this agent brother reveal always writer. Experience usually simply cup. Thing later soon step bring end.",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "urn:ngsi-ld:Motion:id:OVPW:34635816",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2007-12-01T07:55:03Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1979-01-09T15:37:39Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "As point lose grow. Discussion identify carry travel church. About way charge improve seven."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Pm rate town lawyer example by foot. Section set marriage challenge pattern budget treat end."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Base land hear street better. Off arrive two interest sort. Life describe state price learn second."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Expect pick environmental. Heavy type run especially work car point. Head check page recognize choose country like."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Add sense common unit travel difference model. Compare smile everything couple. Suddenly kind list name Democrat."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Motion:items:OMMG:90717851",
+      "urn:ngsi-ld:Motion:items:BQRI:62090721"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Motion:items:UGHG:47333076"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -13.3984525,
+        116.718151
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Trade miss beautiful play. Pay employee employee others read. Social third great assume vote such.",
+      "addressLocality": "Capital effect scene. Environmental along purpose writer apply.",
+      "addressRegion": "Actually analysis wonder apply laugh. Before deep address up parent loss success.",
+      "addressCountry": "Plan fill recognize fact church wife. Paper edge not whose. Hard eight why.",
+      "postalCode": "Blue population use professional act unit. Carry ok all style much. Clear enter item box sit easy light.",
+      "postOfficeBoxNumber": "Impact example hot west state beautiful. Last feel his talk put."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Join capital purpose. Black democratic rate day player end. Suffer rule dinner among green effect economic."
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}
