@@ -2,8 +2,7 @@ Entità: accelerazione
 =====================  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.OCF/blob/master/acceleration/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Adattamento del programma Smart Data Models dell'originale IoTData data Models. Questa risorsa fornisce una misura dell'accelerazione propria (forza g) in opposizione all'accelerazione coordinata (che dipende dal sistema di coordinate e dall'osservatore).  
-La proprietà "value" è un float che descrive l'accelerazione sperimentata dall'oggetto in "g".**  
+Descrizione globale: **Adattamento del programma Smart Data Models dell'originale IoTData data Models. Questa risorsa fornisce una misura dell'accelerazione propria (forza g) in opposizione all'accelerazione coordinata (che dipende dal sistema di coordinate e dall'osservatore). La proprietà 'value' è un float che descrive l'accelerazione sperimentata dall'oggetto in 'g'.**  
 
 ## Elenco delle proprietà  
 
@@ -16,9 +15,7 @@ La proprietà "value" è un float che descrive l'accelerazione sperimentata dall
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 acceleration:    
-  description: |-    
-    Smart Data Models Program adaptation of the original IoTData data Models. This Resource provides a measure of proper acceleration (g force) as opposed to co-ordinate acceleration (which is dependent on the co-ordinate system and the observer).    
-    The Property "value" is a float which describes the acceleration experienced by the object in "g".    
+  description: 'Smart Data Models Program adaptation of the original IoTData data Models. This Resource provides a measure of proper acceleration (g force) as opposed to co-ordinate acceleration (which is dependent on the co-ordinate system and the observer). The Property ''value'' is a float which describes the acceleration experienced by the object in ''g''.'    
   properties:    
     acceleration:    
       description: 'The sensed acceleration experienced in ''g''.'    
