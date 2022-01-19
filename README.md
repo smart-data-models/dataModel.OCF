@@ -1,5 +1,5 @@
 # dataModel.OCF
-These data models come from the original [Open Conenctivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels). They have been extended to comply with NGSI requirements.
+These data models come from the original [Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels). They have been extended to comply with NGSI requirements.
 
 ### List of data models
 
