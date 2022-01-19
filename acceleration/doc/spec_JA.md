@@ -2,8 +2,7 @@
 ==========  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/acceleration/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな説明です。**スマートデータモデル オリジナルのIoTDataデータモデルをプログラム化したものです。このリソースは、座標加速度（座標系と観測者に依存する）とは対照的に、適切な加速度（g力）の測定値を提供する。  
-プロパティ "value "はfloatで、オブジェクトが経験した加速度を "g "で表します。  
+グローバルな説明です。**スマートデータモデル オリジナルのIoTDataデータモデルをプログラム化したものです。このリソースは、座標加速度（座標系と観測者に依存する）とは対照的に、適切な加速度（g力）の測定値を提供する。プロパティ'value'は、オブジェクトが経験した加速度を'g'で表した浮動小数点数です。  
 
 ## プロパティのリスト  
 
@@ -16,9 +15,7 @@
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 acceleration:    
-  description: |-    
-    Smart Data Models Program adaptation of the original IoTData data Models. This Resource provides a measure of proper acceleration (g force) as opposed to co-ordinate acceleration (which is dependent on the co-ordinate system and the observer).    
-    The Property "value" is a float which describes the acceleration experienced by the object in "g".    
+  description: 'Smart Data Models Program adaptation of the original IoTData data Models. This Resource provides a measure of proper acceleration (g force) as opposed to co-ordinate acceleration (which is dependent on the co-ordinate system and the observer). The Property ''value'' is a float which describes the acceleration experienced by the object in ''g''.'    
   properties:    
     acceleration:    
       description: 'The sensed acceleration experienced in ''g''.'    

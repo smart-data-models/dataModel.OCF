@@ -1,12 +1,6 @@
-acceleration:
-  description: 'Smart Data Models Program adaptation of the original IoTData data Models. This Resource provides a measure of proper acceleration (g force) as opposed to co-ordinate acceleration (which is dependent on the co-ordinate system and the observer). The Property ''value'' is a float which describes the acceleration experienced by the object in ''g''.'
+AutoWhiteBalance:
+  description: 'Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes an auto balance on/off feature. The Property ''autoWhiteBalance'' is a boolean. An AutoWhiteBalance value of ''true'' means that the auto white balance feature is on. An AutoWhiteBalance value of ''false'' means that the auto white balance feature is off. '
   properties:
-    acceleration:
-      description: 'The sensed acceleration experienced in ''g''.'
-      readOnly: true
-      type: number
-      x-ngsi:
-        type: Property
     address:
       description: 'The mailing address'
       properties:
@@ -43,6 +37,11 @@ acceleration:
       x-ngsi:
         model: https://schema.org/Text
         type: Property
+    autoWhiteBalance:
+      description: 'The status of the Auto White balance feature.'
+      type: boolean
+      x-ngsi:
+        type: Property
     dataProvider:
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'
       type: string
@@ -66,7 +65,7 @@ acceleration:
       x-ngsi:
         type: Property
     id:
-      anyOf: &acceleration_-_properties_-_owner_-_items_-_anyof
+      anyOf: &autowhitebalance_-_properties_-_owner_-_items_-_anyof
         - description: 'Property. Identifier format of any NGSI entity'
           maxLength: 256
           minLength: 1
@@ -82,7 +81,7 @@ acceleration:
       description: 'The OCF Interface set supported by this Resource.'
       items:
         enum:
-          - oic.if.s
+          - oic.if.a
           - oic.if.baseline
         type: string
       minItems: 2
@@ -259,32 +258,16 @@ acceleration:
     owner:
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
       items:
-        anyOf: *acceleration_-_properties_-_owner_-_items_-_anyof
+        anyOf: *autowhitebalance_-_properties_-_owner_-_items_-_anyof
         description: 'Property. Unique identifier of the entity'
       type: array
       x-ngsi:
         type: Property
-    precision:
-      description: 'When exposed the value in ''precision'' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision'
-      readOnly: true
-      type: number
-      x-ngsi:
-        type: Property
-    range:
-      description: 'The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.'
-      items:
-        type: number
-      maxItems: 2
-      minItems: 2
-      readOnly: true
-      type: array
-      x-ngsi:
-        type: Property
     rt:
-      description: 'Resource Type'
+      description: 'The Resource Type.'
       items:
         enum:
-          - oic.r.sensor.acceleration
+          - oic.r.colour.autowhitebalance
         maxLength: 64
         type: string
       minItems: 1
@@ -310,16 +293,10 @@ acceleration:
       type: string
       x-ngsi:
         type: Property
-    step:
-      description: 'Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.'
-      readOnly: true
-      type: number
-      x-ngsi:
-        type: Property
     type:
-      description: 'NGSI entity type. It has to be acceleration'
+      description: 'NGSI entity type. It has to be AutoWhiteBalance'
       enum:
-        - acceleration
+        - AutoWhiteBalance
       type: string
       x-ngsi:
         type: Property
@@ -327,9 +304,9 @@ acceleration:
     - id
     - type
   type: object
-  x-derived-from: https://github.com/OpenInterConnect/IoTDataModels/blob/master/accelerationResURI.swagger.json
+  x-derived-from: https://github.com/OpenInterConnect/IoTDataModels/blob/master/AutoWhiteBalanceResURI.swagger.json
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'
-  x-license-url: https://github.com/smart-data-models/dataModel.OCF/blob/master/acceleration/LICENSE.md
-  x-model-schema: https://smart-data-models.github.io/dataModel.IoTDataModels/acceleration/schema.json
+  x-license-url: https://github.com/smart-data-models/dataModel.OCF/blob/master/AutoWhiteBalance/LICENSE.md
+  x-model-schema: https://smart-data-models.github.io/dataModel.IoTDataModels/AutoWhiteBalance/schema.json
   x-model-tags: OCF
   x-version: 0.0.1
