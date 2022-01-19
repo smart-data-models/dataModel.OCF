@@ -4,11 +4,7 @@ These data models come from the original [Open Conenctivity Foundation repositor
 ### List of data models
 
 The following entity types are available:
-- [AutoFocus](https://github.com/smart-data-models/dataModel.OCF/blob/master/AutoFocus/README.md). Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes an auto focus on/off feature.
-The Property "autoFocus" is a boolean.
-An "autoFocus" value of 'true' means that the auto focus feature is on.
-An "autoFocus" value of 'false' means that the auto focus feature is off.
-Note that when Pan Tilt Zoom (see 'Pan Tilt Zoom' Resource definition) is used the autofocus works only in the selected area.
+- [AutoFocus](https://github.com/smart-data-models/dataModel.OCF/blob/master/AutoFocus/README.md). Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes an auto focus on/off feature. The Property "autoFocus" is a boolean. An "autoFocus" value of "true" means that the auto focus feature is on. An "autoFocus" value of "false" means that the auto focus feature is off.  Note that when Pan Tilt Zoom (see "Pan Tilt Zoom" Resource definition) is used the autofocus works only in the selected area.
 
 
 
