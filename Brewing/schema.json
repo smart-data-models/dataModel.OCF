@@ -44,7 +44,8 @@
       "maxItems": 2,
       "minItems": 2,
       "readOnly": true,
-      "type": "array"
+      "type": "array",
+      "description": "Property. No original description has been provided"
     },
     "n": {
       "type": "string",
