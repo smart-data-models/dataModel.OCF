@@ -2,11 +2,11 @@
 ===========  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/ColourHS/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな説明です。**IoTDataのデータモデルをスマートデータモデルプログラムで再現したものです。このResourceは、色相-彩度の規則を用いて色を記述する。プロパティ「hue」は色相角であり、CIECAM02モデル定義（参考文献[CIE CIE159:2004]参照）で定義された数値である。小数点以下の色相角に対応していないデバイスでは、整数値を指定することができます。プロパティ「精度」が提供されている場合は、色相角に適用されます。プロパティ「彩度」は、CIECAM02 モデル定義（参考文献[CIE CIE159:2004]）で定義されている整数値です。  プロパティ「彩度」は saturation/maximumsaturation X 100 でパーセンテージに変換することができますが、プロパティ自体が存在しない場合、maximumsaturation は 32767 となります。プロパティ「maximumsaturation」は、本機がサポートする飽和度の上限値です。存在しない場合、彩度の最大値は 32767 となります。リソースは、色相と彩度の規則を使用して色を提供します。**  
+グローバルな説明です。**IoTDataのデータモデルをスマートデータモデルプログラムで実現したものです。このResourceは、色相-彩度の規則を用いて色を記述する。プロパティ「hue」は色相角であり、CIECAM02モデル定義（参考文献[CIE CIE159:2004]参照）で定義された数値である。小数点以下の色相角に対応していないデバイスでは、整数値を指定することができます。プロパティ「精度」が提供されている場合は、色相角に適用されます。プロパティ「彩度」は、CIECAM02 モデル定義（参考文献[CIE CIE159:2004]）で定義されている整数値です。  プロパティ「彩度」は saturation/maximumsaturation X 100 でパーセンテージに変換することができますが、プロパティ自体が存在しない場合、maximumsaturation は 32767 となります。プロパティ「maximumsaturation」は、本機がサポートする飽和度の上限値です。存在しない場合、彩度の最大値は 32767 となります。リソースは、色相と彩度の規則を使用して色を提供します。**  
 
 ## プロパティのリスト  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `hue`: CIECAM02のモデル定義で定義されている色相の角度。  - `id`: エンティティのユニークな識別子  - `if`: このResourceがサポートしているOCF Interface set。  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `maximumsaturation`: このデバイスでサポートされている "saturation "の最大値です。  - `n`: リソースのフレンドリーネーム  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `precision`: 公開された場合、「精度」の値は、リソース内のプロパティに対して±の許容範囲を提供する。従って、あるプロパティがある値に更新され、そのプロパティがRETRIEVEDされた場合、RETRIEVEDされた値は、設定された値の±精度の範囲内であれば有効である。  - `rt`: The Resource Type。  - `saturation`: CIECAM02のモデル定義で定められた飽和度。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSIエンティティタイプ。カラーHSでなければならない。    
+- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `hue`: CIECAM02のモデル定義で定義されている色相の角度。  - `id`: エンティティのユニークな識別子  - `if`: このResourceがサポートしているOCF Interface set。  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `maximumsaturation`: このデバイスでサポートされている「saturation」の最大値です。  - `n`: リソースのフレンドリーネーム  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `precision`: 公開された場合、「精度」の値は、リソース内のプロパティに対して±の許容範囲を提供する。従って、あるプロパティがある値に更新され、そのプロパティがRETRIEVEDされた場合、RETRIEVEDされた値は、設定された値の±精度の範囲内であれば有効である。  - `rt`: The Resource Type。  - `saturation`: CIECAM02のモデル定義で定められた飽和度。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSIエンティティタイプ。カラーHSでなければならない。    
 必須項目  
 - `id`  - `type`    
 このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)から来ています。NGSIの要件に適合するように拡張されています。  
@@ -262,7 +262,7 @@ ColourHS:
       x-ngsi:    
         type: Geoproperty    
     maximumsaturation:    
-      description: 'The maximum supported value of "saturation" for this Device.'    
+      description: 'The maximum supported value of ''saturation'' for this Device.'    
       maximum: 32767    
       minimum: 0    
       readOnly: true    
