@@ -391,7 +391,7 @@ ColourHS:
 }  
 ```  
 #### ColorHS NGSI-v2 normalizado Ejemplo  
-Este es un ejemplo de un ColourHS en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+He aquí un ejemplo de un ColourHS en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 ```json  
 {  
   "id": {  
