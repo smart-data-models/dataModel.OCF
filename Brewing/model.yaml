@@ -299,12 +299,15 @@ Brewing:
       x-ngsi:
         type: Property
     strengthrange:
+      description: 'No original description has been provided'
       items:
         type: integer
       maxItems: 2
       minItems: 2
       readOnly: true
       type: array
+      x-ngsi:
+        type: Property
     type:
       description: 'NGSI entity type. It has to be Brewing'
       enum:
