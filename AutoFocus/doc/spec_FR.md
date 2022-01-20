@@ -2,11 +2,7 @@ Entité : AutoFocus
 ==================  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.OCF/blob/master/AutoFocus/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Description globale : **Adaptation du programme Smart Data Models des modèles de données IoTData originaux. Cette ressource décrit une fonction d'activation/désactivation de la mise au point automatique.  
-La propriété "autoFocus" est un booléen.  
-Une valeur "autoFocus" de 'true' signifie que la fonction de mise au point automatique est activée.  
-Une valeur "autoFocus" de 'false' signifie que la fonction de mise au point automatique est désactivée.  
-Notez que lorsque la fonction Pan Tilt Zoom (voir la définition de la ressource 'Pan Tilt Zoom') est utilisée, l'autofocus ne fonctionne que dans la zone sélectionnée.  
+Description globale : **Adaptation du programme Smart Data Models des modèles de données IoTData originaux. Cette ressource décrit une fonction d'activation/désactivation de la mise au point automatique. La propriété 'autoFocus' est un booléen. Une valeur 'autoFocus' de 'true' signifie que la fonction de mise au point automatique est activée. Une valeur 'autoFocus' de 'false' signifie que la fonction de mise au point automatique est désactivée. Notez que lorsque la fonction Pan Tilt Zoom (voir la définition de la ressource 'Pan Tilt Zoom') est utilisée, l'autofocus ne fonctionne que dans la zone sélectionnée.  
 
 ## Liste des propriétés  
 
@@ -19,12 +15,7 @@ Notez que lorsque la fonction Pan Tilt Zoom (voir la définition de la ressource
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 AutoFocus:    
-  description: |-    
-    Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes an auto focus on/off feature.    
-    The Property "autoFocus" is a boolean.    
-    An "autoFocus" value of 'true' means that the auto focus feature is on.    
-    An "autoFocus" value of 'false' means that the auto focus feature is off.    
-    Note that when Pan Tilt Zoom (see 'Pan Tilt Zoom' Resource definition) is used the autofocus works only in the selected area.    
+  description: 'Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes an auto focus on/off feature. The Property ''autoFocus'' is a boolean. An ''autoFocus'' value of ''true'' means that the auto focus feature is on. An ''autoFocus'' value of ''false'' means that the auto focus feature is off. Note that when Pan Tilt Zoom (see ''Pan Tilt Zoom'' Resource definition) is used the autofocus works only in the selected area.'    
   properties:    
     address:    
       description: 'The mailing address'    
