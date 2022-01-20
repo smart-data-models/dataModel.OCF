@@ -2,7 +2,7 @@ Entität: magneticFieldDirection
 ===============================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.OCF/blob/master/magneticFieldDirection/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Globale Beschreibung: **Smart Data Models Program Anpassung der ursprünglichen IoTData-Datenmodelle. Diese Ressource beschreibt die Richtung des Erdmagnetfeldes am aktuellen Punkt des Beobachters im Raum. Ein typischer Anwendungsfall ist die Messung von Kompassablesungen auf einem persönlichen Gerät. Die Eigenschaft "value" ist ein Array, das Hx, Hy, Hz (in dieser Reihenfolge) enthält, die jeweils Fließkommazahlen sind. Hx, Hy und Hz werden jeweils in A/m (Ampere pro Meter) angegeben.**  
+Globale Beschreibung: **Smart Data Models Program Anpassung der ursprünglichen IoTData-Datenmodelle. Diese Ressource beschreibt die Richtung des Erdmagnetfeldes am aktuellen Punkt des Beobachters im Raum. Ein typischer Anwendungsfall ist die Messung von Kompassablesungen auf einem persönlichen Gerät. Die Eigenschaft "value" ist ein Array, das Hx, Hy und Hz (in dieser Reihenfolge) enthält, die alle Fließkommazahlen sind. Hx, Hy und Hz werden jeweils in A/m (Ampere pro Meter) angegeben.**  
 
 ## Liste der Eigenschaften  
 
