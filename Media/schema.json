@@ -47,7 +47,8 @@
         },
         "type": "object"
       },
-      "type": "array"
+      "type": "array",
+      "description": "Property. No original description was available"
     },
     "n": {
       "type": "string",
