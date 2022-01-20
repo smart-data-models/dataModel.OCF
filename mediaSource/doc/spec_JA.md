@@ -349,7 +349,7 @@ mediaSource:
 ```  
 </details>    
 ## ペイロードの例  
-#### mediaSource NGSI-v2 key-valuesの例。  
+#### mediaSource NGSI-v2 key-values の例。  
 ここでは、JSON-LD形式でkey-valuesとしてmediaSourceの例を示します。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
@@ -508,7 +508,7 @@ mediaSource:
 }  
 ```  
 #### メディアソース NGSI-LD 正規化例  
-ここでは、正規化されたJSON-LD形式のmediaSourceの例を示します。これはオプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+ここでは、正規化されたJSON-LD形式のmediaSourceの例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:mediaSource:id:UFBP:40162706",  
