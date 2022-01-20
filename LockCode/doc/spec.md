@@ -255,10 +255,12 @@ LockCode:
       x-ngsi:    
         type: Geoproperty    
     lockCodeList:    
+      description: 'The value for the lock code'    
       items:    
-        description: 'The value for the lock code.'    
         type: string    
       type: array    
+      x-ngsi:    
+        type: Property    
     n:    
       description: 'Friendly name of the Resource'    
       maxLength: 64    
