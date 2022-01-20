@@ -15,6 +15,12 @@ Link to the [specification](https://github.com/smart-data-models/dataModel.OCF/b
 Enlace a la [Especificación en español](https://github.com/smart-data-models/dataModel.OCF/blob/master/ColourHS/doc/spec_ES.md)
 
 Lien vers le [spécification en français](https://github.com/smart-data-models/dataModel.OCF/blob/master/ColourHS/doc/spec_FR.md)
+
+Link zur [deutschen Spezifikation](https://github.com/smart-data-models/dataModel.OCF/blob/master/ColourHS/doc/spec_DE.md)
+
+Link alla [specifica](https://github.com/smart-data-models/dataModel.OCF/blob/master/ColourHS/doc/spec_IT.md)
+
+[仕様へのリンク](https://github.com/smart-data-models/dataModel.OCF/blob/master/ColourHS/doc/spec_JA.md)
 ### Examples
 
 Link to the [example](https://smart-data-models.github.io/dataModel.OCF/ColourHS/examples/example.json) (keyvalues) for NGSI v2
