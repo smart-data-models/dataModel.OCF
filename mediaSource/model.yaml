@@ -1,10 +1,5 @@
-AutoFocus:
-  description: |-
-    Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes an auto focus on/off feature.
-    The Property "autoFocus" is a boolean.
-    An "autoFocus" value of 'true' means that the auto focus feature is on.
-    An "autoFocus" value of 'false' means that the auto focus feature is off.
-    Note that when Pan Tilt Zoom (see 'Pan Tilt Zoom' Resource definition) is used the autofocus works only in the selected area.
+mediaSource:
+  description: 'Smart Data Models Program adaptation of the original IoTData data Models. This Resource defines a single media source that exists on a device. The source can be an input source or output source, this resource is agnostic of that. The Property ''sourceName'' specifies a pre-defined media input or output (e.g.''HDMI'', ''DVI''). The Property ''sourceNumber'' is a label to specify the instance (e.g. ''PC'', ''1''). The Property ''sourceType'' is an enumeration defining whether the source is audio, video or both. The Property ''status'' is a boolean that determines if the specific source instance is selected or not.  A status of true means that the source instance is selected.  A status of false means that the source instance is not selected.'
   properties:
     address:
       description: 'The mailing address'
@@ -42,11 +37,6 @@ AutoFocus:
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-    autoFocus:
-      description: 'The status of the Auto Focus feature.'
-      type: boolean
-      x-ngsi:
-        type: Property
     dataProvider:
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'
       type: string
@@ -70,7 +60,7 @@ AutoFocus:
       x-ngsi:
         type: Property
     id:
-      anyOf: &autofocus_-_properties_-_owner_-_items_-_anyof
+      anyOf: &mediasource_-_properties_-_owner_-_items_-_anyof
         - description: 'Property. Identifier format of any NGSI entity'
           maxLength: 256
           minLength: 1
@@ -263,7 +253,7 @@ AutoFocus:
     owner:
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
       items:
-        anyOf: *autofocus_-_properties_-_owner_-_items_-_anyof
+        anyOf: *mediasource_-_properties_-_owner_-_items_-_anyof
         description: 'Property. Unique identifier of the entity'
       type: array
       x-ngsi:
@@ -272,7 +262,7 @@ AutoFocus:
       description: 'The Resource Type.'
       items:
         enum:
-          - oic.r.autofocus
+          - oic.r.mediasource
         maxLength: 64
         type: string
       minItems: 1
@@ -298,10 +288,35 @@ AutoFocus:
       type: string
       x-ngsi:
         type: Property
-    type:
-      description: 'NGSI entity type. It has to be AutoFocus'
+    sourceName:
+      description: 'Specifies a pre-defined media input or output.'
+      type: string
+      x-ngsi:
+        type: Property
+    sourceNumber:
+      description: 'Label to specify the instance.'
+      type: string
+      x-ngsi:
+        type: Property
+    sourceType:
+      description: 'Specifies the type of the source.'
       enum:
-        - AutoFocus
+        - audioOnly
+        - videoOnly
+        - audioPlusVideo
+      readOnly: true
+      type: string
+      x-ngsi:
+        type: Property
+    status:
+      description: 'Specifies if the specific source instance is selected or not.'
+      type: boolean
+      x-ngsi:
+        type: Property
+    type:
+      description: 'NGSI entity type. It has to be mediaSource'
+      enum:
+        - mediaSource
       type: string
       x-ngsi:
         type: Property
@@ -309,9 +324,9 @@ AutoFocus:
     - id
     - type
   type: object
-  x-derived-from: https://github.com/OpenInterConnect/IoTDataModels/blob/master/AutoFocusResURI.swagger.json
+  x-derived-from: https://github.com/OpenInterConnect/IoTDataModels/blob/master/mediaSourceResURI.swagger.json
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'
-  x-license-url: https://github.com/smart-data-models/dataModel.OCF/blob/master/AutoFocus/LICENSE.md
-  x-model-schema: https://smart-data-models.github.io/dataModel.IoTDataModels/AutoFocus/schema.json
+  x-license-url: https://github.com/smart-data-models/dataModel.OCF/blob/master/mediaSource/LICENSE.md
+  x-model-schema: https://smart-data-models.github.io/dataModel.IoTDataModels/mediaSource/schema.json
   x-model-tags: OCF
   x-version: 0.0.1

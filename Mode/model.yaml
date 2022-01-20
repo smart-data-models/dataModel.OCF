@@ -1,10 +1,5 @@
-AutoFocus:
-  description: |-
-    Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes an auto focus on/off feature.
-    The Property "autoFocus" is a boolean.
-    An "autoFocus" value of 'true' means that the auto focus feature is on.
-    An "autoFocus" value of 'false' means that the auto focus feature is off.
-    Note that when Pan Tilt Zoom (see 'Pan Tilt Zoom' Resource definition) is used the autofocus works only in the selected area.
+Mode:
+  description: 'Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the modes of operation that a Device can provide. The mode can be read or set. The Property ''supportedModes'' is an array of possible modes the device supports. The Property ''modes'' is an array of the currently active mode(s).'
   properties:
     address:
       description: 'The mailing address'
@@ -42,11 +37,6 @@ AutoFocus:
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-    autoFocus:
-      description: 'The status of the Auto Focus feature.'
-      type: boolean
-      x-ngsi:
-        type: Property
     dataProvider:
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'
       type: string
@@ -70,7 +60,7 @@ AutoFocus:
       x-ngsi:
         type: Property
     id:
-      anyOf: &autofocus_-_properties_-_owner_-_items_-_anyof
+      anyOf: &mode_-_properties_-_owner_-_items_-_anyof
         - description: 'Property. Identifier format of any NGSI entity'
           maxLength: 256
           minLength: 1
@@ -248,6 +238,13 @@ AutoFocus:
           type: object
       x-ngsi:
         type: Geoproperty
+    modes:
+      description: 'The array of the currently active mode(s).'
+      items:
+        type: string
+      type: array
+      x-ngsi:
+        type: Property
     n:
       description: 'Friendly name of the Resource'
       maxLength: 64
@@ -263,7 +260,7 @@ AutoFocus:
     owner:
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
       items:
-        anyOf: *autofocus_-_properties_-_owner_-_items_-_anyof
+        anyOf: *mode_-_properties_-_owner_-_items_-_anyof
         description: 'Property. Unique identifier of the entity'
       type: array
       x-ngsi:
@@ -272,7 +269,7 @@ AutoFocus:
       description: 'The Resource Type.'
       items:
         enum:
-          - oic.r.autofocus
+          - oic.r.mode
         maxLength: 64
         type: string
       minItems: 1
@@ -298,10 +295,18 @@ AutoFocus:
       type: string
       x-ngsi:
         type: Property
+    supportedModes:
+      description: 'The array of possible modes the device supports.'
+      items:
+        type: string
+      readOnly: true
+      type: array
+      x-ngsi:
+        type: Property
     type:
-      description: 'NGSI entity type. It has to be AutoFocus'
+      description: 'NGSI entity type. It has to be Mode'
       enum:
-        - AutoFocus
+        - Mode
       type: string
       x-ngsi:
         type: Property
@@ -309,9 +314,9 @@ AutoFocus:
     - id
     - type
   type: object
-  x-derived-from: https://github.com/OpenInterConnect/IoTDataModels/blob/master/AutoFocusResURI.swagger.json
+  x-derived-from: https://github.com/OpenInterConnect/IoTDataModels/blob/master/ModeResURI.swagger.json
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'
-  x-license-url: https://github.com/smart-data-models/dataModel.OCF/blob/master/AutoFocus/LICENSE.md
-  x-model-schema: https://smart-data-models.github.io/dataModel.IoTDataModels/AutoFocus/schema.json
+  x-license-url: https://github.com/smart-data-models/dataModel.OCF/blob/master/Mode/LICENSE.md
+  x-model-schema: https://smart-data-models.github.io/dataModel.IoTDataModels/Mode/schema.json
   x-model-tags: OCF
   x-version: 0.0.1

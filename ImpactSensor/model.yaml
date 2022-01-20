@@ -1,10 +1,5 @@
-AutoFocus:
-  description: |-
-    Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes an auto focus on/off feature.
-    The Property "autoFocus" is a boolean.
-    An "autoFocus" value of 'true' means that the auto focus feature is on.
-    An "autoFocus" value of 'false' means that the auto focus feature is off.
-    Note that when Pan Tilt Zoom (see 'Pan Tilt Zoom' Resource definition) is used the autofocus works only in the selected area.
+ImpactSensor:
+  description: 'Smart Data Models Program adaptation of the original IoTData data Models. This Resource provides a status and properties of an impact sensor. Included is the current status (boolean), horizontal and vertical direction (in degrees) and impact level (g force).'
   properties:
     address:
       description: 'The mailing address'
@@ -42,11 +37,6 @@ AutoFocus:
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-    autoFocus:
-      description: 'The status of the Auto Focus feature.'
-      type: boolean
-      x-ngsi:
-        type: Property
     dataProvider:
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'
       type: string
@@ -70,7 +60,7 @@ AutoFocus:
       x-ngsi:
         type: Property
     id:
-      anyOf: &autofocus_-_properties_-_owner_-_items_-_anyof
+      anyOf: &impactsensor_-_properties_-_owner_-_items_-_anyof
         - description: 'Property. Identifier format of any NGSI entity'
           maxLength: 256
           minLength: 1
@@ -86,13 +76,41 @@ AutoFocus:
       description: 'The OCF Interface set supported by this Resource.'
       items:
         enum:
-          - oic.if.a
+          - oic.if.s
           - oic.if.baseline
         type: string
       minItems: 2
       readOnly: true
       type: array
       uniqueItems: true
+      x-ngsi:
+        type: Property
+    impactdirectionhorizontal:
+      description: 'The "impactdirectionhorizontal" Property shows a horizontal direction where the impact comes from. The value is 0 to 360 degrees. 0 is the front of the sensor and clockwise increment.'
+      maximum: 360
+      minimum: 0
+      readOnly: true
+      type: number
+      x-ngsi:
+        type: Property
+    impactdirectionvertical:
+      description: 'The "impactdirectionvertical" Property shows a vertical direction where the impact comes from. The value is 0 to 360 degrees. 0 is the front of the sensor and upward increment.'
+      maximum: 360
+      minimum: 0
+      readOnly: true
+      type: number
+      x-ngsi:
+        type: Property
+    impactlevel:
+      description: 'The "impactlevel" Property provides the level of impact. The unit is in "G" (G-force).'
+      readOnly: true
+      type: number
+      x-ngsi:
+        type: Property
+    impactstatus:
+      description: 'The "impactstatus" Property indicates the impact as: "true" A physical impact is detected, "false" Normal status, an impact is not detected.'
+      readOnly: true
+      type: boolean
       x-ngsi:
         type: Property
     location:
@@ -263,7 +281,7 @@ AutoFocus:
     owner:
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
       items:
-        anyOf: *autofocus_-_properties_-_owner_-_items_-_anyof
+        anyOf: *impactsensor_-_properties_-_owner_-_items_-_anyof
         description: 'Property. Unique identifier of the entity'
       type: array
       x-ngsi:
@@ -272,7 +290,7 @@ AutoFocus:
       description: 'The Resource Type.'
       items:
         enum:
-          - oic.r.autofocus
+          - oic.r.impactsensor
         maxLength: 64
         type: string
       minItems: 1
@@ -299,9 +317,9 @@ AutoFocus:
       x-ngsi:
         type: Property
     type:
-      description: 'NGSI entity type. It has to be AutoFocus'
+      description: 'NGSI entity type. It has to be ImpactSensor'
       enum:
-        - AutoFocus
+        - ImpactSensor
       type: string
       x-ngsi:
         type: Property
@@ -309,9 +327,9 @@ AutoFocus:
     - id
     - type
   type: object
-  x-derived-from: https://github.com/OpenInterConnect/IoTDataModels/blob/master/AutoFocusResURI.swagger.json
+  x-derived-from: https://github.com/OpenInterConnect/IoTDataModels/blob/master/ImpactSensorResURI.swagger.json
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'
-  x-license-url: https://github.com/smart-data-models/dataModel.OCF/blob/master/AutoFocus/LICENSE.md
-  x-model-schema: https://smart-data-models.github.io/dataModel.IoTDataModels/AutoFocus/schema.json
+  x-license-url: https://github.com/smart-data-models/dataModel.OCF/blob/master/ImpactSensor/LICENSE.md
+  x-model-schema: https://smart-data-models.github.io/dataModel.IoTDataModels/ImpactSensor/schema.json
   x-model-tags: OCF
   x-version: 0.0.1

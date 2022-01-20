@@ -1,10 +1,5 @@
-AutoFocus:
-  description: |-
-    Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes an auto focus on/off feature.
-    The Property "autoFocus" is a boolean.
-    An "autoFocus" value of 'true' means that the auto focus feature is on.
-    An "autoFocus" value of 'false' means that the auto focus feature is off.
-    Note that when Pan Tilt Zoom (see 'Pan Tilt Zoom' Resource definition) is used the autofocus works only in the selected area.
+Brightness:
+  description: 'Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the brightness of a light or lamp. The Property ''brightness'' is an integer showing the current brightness level as a quantized representation in the range 0-100. A brightness of 0 is the minimum for the resource. A brightness of 100 is the maximum for the resource.'
   properties:
     address:
       description: 'The mailing address'
@@ -42,9 +37,11 @@ AutoFocus:
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-    autoFocus:
-      description: 'The status of the Auto Focus feature.'
-      type: boolean
+    brightness:
+      description: 'The Quantized representation in the range 0-100 of the current sensed or set value for Brightness.'
+      maximum: 100
+      minimum: 0
+      type: integer
       x-ngsi:
         type: Property
     dataProvider:
@@ -70,7 +67,7 @@ AutoFocus:
       x-ngsi:
         type: Property
     id:
-      anyOf: &autofocus_-_properties_-_owner_-_items_-_anyof
+      anyOf: &brightness_-_properties_-_owner_-_items_-_anyof
         - description: 'Property. Identifier format of any NGSI entity'
           maxLength: 256
           minLength: 1
@@ -263,7 +260,7 @@ AutoFocus:
     owner:
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
       items:
-        anyOf: *autofocus_-_properties_-_owner_-_items_-_anyof
+        anyOf: *brightness_-_properties_-_owner_-_items_-_anyof
         description: 'Property. Unique identifier of the entity'
       type: array
       x-ngsi:
@@ -272,7 +269,7 @@ AutoFocus:
       description: 'The Resource Type.'
       items:
         enum:
-          - oic.r.autofocus
+          - oic.r.light.brightness
         maxLength: 64
         type: string
       minItems: 1
@@ -299,9 +296,9 @@ AutoFocus:
       x-ngsi:
         type: Property
     type:
-      description: 'NGSI entity type. It has to be AutoFocus'
+      description: 'NGSI entity type. It has to be Brightness'
       enum:
-        - AutoFocus
+        - Brightness
       type: string
       x-ngsi:
         type: Property
@@ -309,9 +306,9 @@ AutoFocus:
     - id
     - type
   type: object
-  x-derived-from: https://github.com/OpenInterConnect/IoTDataModels/blob/master/AutoFocusResURI.swagger.json
+  x-derived-from: https://github.com/OpenInterConnect/IoTDataModels/blob/master/BrightnessResURI.swagger.json
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'
-  x-license-url: https://github.com/smart-data-models/dataModel.OCF/blob/master/AutoFocus/LICENSE.md
-  x-model-schema: https://smart-data-models.github.io/dataModel.IoTDataModels/AutoFocus/schema.json
+  x-license-url: https://github.com/smart-data-models/dataModel.OCF/blob/master/Brightness/LICENSE.md
+  x-model-schema: https://smart-data-models.github.io/dataModel.IoTDataModels/Brightness/schema.json
   x-model-tags: OCF
   x-version: 0.0.1

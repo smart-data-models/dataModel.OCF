@@ -1,10 +1,5 @@
-AutoFocus:
-  description: |-
-    Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes an auto focus on/off feature.
-    The Property "autoFocus" is a boolean.
-    An "autoFocus" value of 'true' means that the auto focus feature is on.
-    An "autoFocus" value of 'false' means that the auto focus feature is off.
-    Note that when Pan Tilt Zoom (see 'Pan Tilt Zoom' Resource definition) is used the autofocus works only in the selected area.
+Door:
+  description: 'Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the open state of the door. A door is modelled by means of openState (Open/Closed), openDuration (ISO 8601 Time), and openAlarm (boolean). For Property ''openState'', the value ''Open'' indicates the door is open. The value ''Closed'' indicates the door is closed. The type of Property ''openDuration'' is an RFC Time encoded string. The Property ''openAlarm'' value ''true'' indicates that the open alarm is active. The openAlarm value ''false'' indicates that open alarm is not active. retrieves the state of the Door.'
   properties:
     address:
       description: 'The mailing address'
@@ -42,11 +37,6 @@ AutoFocus:
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-    autoFocus:
-      description: 'The status of the Auto Focus feature.'
-      type: boolean
-      x-ngsi:
-        type: Property
     dataProvider:
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'
       type: string
@@ -70,7 +60,7 @@ AutoFocus:
       x-ngsi:
         type: Property
     id:
-      anyOf: &autofocus_-_properties_-_owner_-_items_-_anyof
+      anyOf: &door_-_properties_-_owner_-_items_-_anyof
         - description: 'Property. Identifier format of any NGSI entity'
           maxLength: 256
           minLength: 1
@@ -260,10 +250,30 @@ AutoFocus:
       type: string
       x-ngsi:
         type: Property
+    openAlarm:
+      description: 'The state of the door open alarm.'
+      type: boolean
+      x-ngsi:
+        type: Property
+    openDuration:
+      description: 'A string representing duration formatted as defined in ISO 8601. Allowable formats are: P[n]Y[n]M[n]DT[n]H[n]M[n]S, P[n]W, P[n]Y[n]-M[n]-DT[0-23]H[0-59]:M[0-59]:S, and P[n]W, P[n]Y[n]M[n]DT[0-23]H[0-59]M[0-59]S. P is mandatory, all other elements are optional, time elements must follow a T.'
+      pattern: ^(P(?!$)([0-9]+Y)?([0-9]+M)?([0-9]+W)?([0-9]+D)?((T(?=[0-9]+[HMS])([0-9]+H)?([0-9]+M)?([0-9]+S)?)?))$|^(P[0-9]+W)$|^(P[0-9]{4})-(1[0-2]|0[1-9])-(3[0-1]|2[0-9]|1[0-9]|0[1-9])T(2[0-3]|1[0-9]|0[1-9]):([0-5][0-9]):([0-5][0-9])$|^(P[0-9]{4})(1[0-2]|0[1-9])(3[0-1]|2[0-9]|1[0-9]|0[1-9])T(2[0-3]|1[0-9]|0[1-9])([0-5][0-9])([0-5][0-9])$
+      type: string
+      x-ngsi:
+        type: Property
+    openState:
+      description: 'The state of the door (open or closed).'
+      enum:
+        - Open
+        - Closed
+      readOnly: true
+      type: string
+      x-ngsi:
+        type: Property
     owner:
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
       items:
-        anyOf: *autofocus_-_properties_-_owner_-_items_-_anyof
+        anyOf: *door_-_properties_-_owner_-_items_-_anyof
         description: 'Property. Unique identifier of the entity'
       type: array
       x-ngsi:
@@ -272,7 +282,7 @@ AutoFocus:
       description: 'The Resource Type.'
       items:
         enum:
-          - oic.r.autofocus
+          - oic.r.door
         maxLength: 64
         type: string
       minItems: 1
@@ -299,9 +309,9 @@ AutoFocus:
       x-ngsi:
         type: Property
     type:
-      description: 'NGSI entity type. It has to be AutoFocus'
+      description: 'NGSI entity type. It has to be Door'
       enum:
-        - AutoFocus
+        - Door
       type: string
       x-ngsi:
         type: Property
@@ -309,9 +319,9 @@ AutoFocus:
     - id
     - type
   type: object
-  x-derived-from: https://github.com/OpenInterConnect/IoTDataModels/blob/master/AutoFocusResURI.swagger.json
+  x-derived-from: https://github.com/OpenInterConnect/IoTDataModels/blob/master/DoorResURI.swagger.json
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'
-  x-license-url: https://github.com/smart-data-models/dataModel.OCF/blob/master/AutoFocus/LICENSE.md
-  x-model-schema: https://smart-data-models.github.io/dataModel.IoTDataModels/AutoFocus/schema.json
+  x-license-url: https://github.com/smart-data-models/dataModel.OCF/blob/master/Door/LICENSE.md
+  x-model-schema: https://smart-data-models.github.io/dataModel.IoTDataModels/Door/schema.json
   x-model-tags: OCF
   x-version: 0.0.1

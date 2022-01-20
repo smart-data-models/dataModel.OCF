@@ -5,12 +5,12 @@
 
 components:
   schemas: 
-    acceleration: 
-      $ref: "https://smart-data-models.github.io/dataModel.OCF/acceleration/model.yaml#/acceleration"
+    AutoWhiteBalance: 
+      $ref: "https://smart-data-models.github.io/dataModel.OCF/AutoWhiteBalance/model.yaml#/AutoWhiteBalance"
 info:
   description:  |
-    Smart Data Models Program adaptation of the original IoTData data Models. This Resource provides a measure of proper acceleration (g force) as opposed to co-ordinate acceleration (which is dependent on the co-ordinate system and the observer). The Property 'value' is a float which describes the acceleration experienced by the object in 'g'.
-  title: acceleration
+    Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes an auto balance on/off feature. The Property 'autoWhiteBalance' is a boolean. An AutoWhiteBalance value of 'true' means that the auto white balance feature is on. An AutoWhiteBalance value of 'false' means that the auto white balance feature is off. 
+  title: AutoWhiteBalance
   version: "0.0.1"
 openapi: "3.0.0"
 
@@ -25,7 +25,7 @@ paths:
           required: true
           schema: 
             enum: 
-              - acceleration
+              - AutoWhiteBalance
             type: string
       responses: 
         ? "200"
@@ -37,12 +37,12 @@ paths:
                   summary: "Key-Values Pairs"
                   value: 
                     - 
-                      $ref: "https://smart-data-models.github.io/dataModel.OCF/acceleration/examples/example.json"
+                      $ref: "https://smart-data-models.github.io/dataModel.OCF/AutoWhiteBalance/examples/example.json"
                 normalized: 
                   summary: "Normalized NGSI-LD"
                   value: 
                     - 
-                      $ref: "https://smart-data-models.github.io/dataModel.OCF/acceleration/examples/example-normalized.jsonld"
+                      $ref: "https://smart-data-models.github.io/dataModel.OCF/AutoWhiteBalance/examples/example-normalized.jsonld"
           description: OK
       tags: 
         - ngsi-ld

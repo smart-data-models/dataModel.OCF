@@ -1,10 +1,5 @@
-AutoFocus:
-  description: |-
-    Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes an auto focus on/off feature.
-    The Property "autoFocus" is a boolean.
-    An "autoFocus" value of 'true' means that the auto focus feature is on.
-    An "autoFocus" value of 'false' means that the auto focus feature is off.
-    Note that when Pan Tilt Zoom (see 'Pan Tilt Zoom' Resource definition) is used the autofocus works only in the selected area.
+heartRateZone:
+  description: 'Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes a measured heart rate by the current Zone using the Zoladz method. The Zoladz method defines Zones based on maximum heart rate; Zone 1 is the lowest, Zone 5 is the highest. The heartRateZone is an enumeration containing one of: ''Zone1'', ''Zone2'', ''Zone3'', ''Zone4'', and ''Zone5''. '
   properties:
     address:
       description: 'The mailing address'
@@ -42,11 +37,6 @@ AutoFocus:
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-    autoFocus:
-      description: 'The status of the Auto Focus feature.'
-      type: boolean
-      x-ngsi:
-        type: Property
     dataProvider:
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'
       type: string
@@ -69,8 +59,20 @@ AutoFocus:
       type: string
       x-ngsi:
         type: Property
+    heartRateZone:
+      description: 'Current heart rate zone based on the Zoladz system.'
+      enum:
+        - Zone1
+        - Zone2
+        - Zone3
+        - Zone4
+        - Zone5
+      readOnly: true
+      type: string
+      x-ngsi:
+        type: Property
     id:
-      anyOf: &autofocus_-_properties_-_owner_-_items_-_anyof
+      anyOf: &heartratezone_-_properties_-_owner_-_items_-_anyof
         - description: 'Property. Identifier format of any NGSI entity'
           maxLength: 256
           minLength: 1
@@ -83,13 +85,14 @@ AutoFocus:
       x-ngsi:
         type: Property
     if:
-      description: 'The OCF Interface set supported by this Resource.'
+      description: 'The OCF Interface set supported by this Resource'
       items:
         enum:
-          - oic.if.a
+          - oic.if.s
           - oic.if.baseline
+        maxLength: 64
         type: string
-      minItems: 2
+      minItems: 1
       readOnly: true
       type: array
       uniqueItems: true
@@ -263,16 +266,16 @@ AutoFocus:
     owner:
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
       items:
-        anyOf: *autofocus_-_properties_-_owner_-_items_-_anyof
+        anyOf: *heartratezone_-_properties_-_owner_-_items_-_anyof
         description: 'Property. Unique identifier of the entity'
       type: array
       x-ngsi:
         type: Property
     rt:
-      description: 'The Resource Type.'
+      description: 'Resource Type'
       items:
         enum:
-          - oic.r.autofocus
+          - oic.r.sensor.heart.zone
         maxLength: 64
         type: string
       minItems: 1
@@ -299,9 +302,9 @@ AutoFocus:
       x-ngsi:
         type: Property
     type:
-      description: 'NGSI entity type. It has to be AutoFocus'
+      description: 'NGSI entity type. It has to be heartRateZone'
       enum:
-        - AutoFocus
+        - heartRateZone
       type: string
       x-ngsi:
         type: Property
@@ -309,9 +312,9 @@ AutoFocus:
     - id
     - type
   type: object
-  x-derived-from: https://github.com/OpenInterConnect/IoTDataModels/blob/master/AutoFocusResURI.swagger.json
+  x-derived-from: https://github.com/OpenInterConnect/IoTDataModels/blob/master/heartRateZoneResURI.swagger.json
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'
-  x-license-url: https://github.com/smart-data-models/dataModel.OCF/blob/master/AutoFocus/LICENSE.md
-  x-model-schema: https://smart-data-models.github.io/dataModel.IoTDataModels/AutoFocus/schema.json
+  x-license-url: https://github.com/smart-data-models/dataModel.OCF/blob/master/heartRateZone/LICENSE.md
+  x-model-schema: https://smart-data-models.github.io/dataModel.IoTDataModels/heartRateZone/schema.json
   x-model-tags: OCF
   x-version: 0.0.1

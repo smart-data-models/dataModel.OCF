@@ -1,10 +1,5 @@
-AutoFocus:
-  description: |-
-    Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes an auto focus on/off feature.
-    The Property "autoFocus" is a boolean.
-    An "autoFocus" value of 'true' means that the auto focus feature is on.
-    An "autoFocus" value of 'false' means that the auto focus feature is off.
-    Note that when Pan Tilt Zoom (see 'Pan Tilt Zoom' Resource definition) is used the autofocus works only in the selected area.
+ColourChroma:
+  description: 'Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the colour using chroma conventions. Properties are ''hue'', ''saturation'', ''csc'', and ''ct''. The Property ''hue'' is the hue angle, it is an integer value as defined by the CIECAM02 model definition (see reference [CIE CIE159:2004]). The Property ''saturation'' is an integer value as defined by the CIECAM02 model definition (see reference [CIE CIE159:2004]). The Property ''maximumsaturation'' is the upper bound on the saturation supported by the Device. If not present the maximum value for ''saturation'' is 32767. The Property ''csc'' is the colour space coordinates in CIE colour space.   The first item in the array is the X coordinate.   The second item in the array is the Y coordinate. The Property ''nct'' is the Mired colour temperature. The Resource provides the colour using chroma conventions.'
   properties:
     address:
       description: 'The mailing address'
@@ -42,9 +37,21 @@ AutoFocus:
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-    autoFocus:
-      description: 'The status of the Auto Focus feature.'
-      type: boolean
+    csc:
+      description: 'The X and Y coordinates of the colour in CIE colour space'
+      items:
+        maximum: 1
+        minimum: 0
+        type: number
+      maxItems: 2
+      minItems: 2
+      type: array
+      x-ngsi:
+        type: Property
+    ct:
+      description: 'The Mired colour temperature.'
+      minimum: 0
+      type: integer
       x-ngsi:
         type: Property
     dataProvider:
@@ -69,8 +76,15 @@ AutoFocus:
       type: string
       x-ngsi:
         type: Property
+    hue:
+      description: 'The hue angle as defined by the CIECAM02 model definition.'
+      maximum: 360.0
+      minimum: 0.0
+      type: number
+      x-ngsi:
+        type: Property
     id:
-      anyOf: &autofocus_-_properties_-_owner_-_items_-_anyof
+      anyOf: &colourchroma_-_properties_-_owner_-_items_-_anyof
         - description: 'Property. Identifier format of any NGSI entity'
           maxLength: 256
           minLength: 1
@@ -88,6 +102,7 @@ AutoFocus:
         enum:
           - oic.if.a
           - oic.if.baseline
+        maxLength: 64
         type: string
       minItems: 2
       readOnly: true
@@ -248,6 +263,14 @@ AutoFocus:
           type: object
       x-ngsi:
         type: Geoproperty
+    maximumsaturation:
+      description: 'The maximum supported value of "saturation" for this Device.'
+      maximum: 32767
+      minimum: 0
+      readOnly: true
+      type: integer
+      x-ngsi:
+        type: Property
     n:
       description: 'Friendly name of the Resource'
       maxLength: 64
@@ -263,7 +286,7 @@ AutoFocus:
     owner:
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
       items:
-        anyOf: *autofocus_-_properties_-_owner_-_items_-_anyof
+        anyOf: *colourchroma_-_properties_-_owner_-_items_-_anyof
         description: 'Property. Unique identifier of the entity'
       type: array
       x-ngsi:
@@ -272,13 +295,20 @@ AutoFocus:
       description: 'The Resource Type.'
       items:
         enum:
-          - oic.r.autofocus
+          - oic.r.colour.chroma
         maxLength: 64
         type: string
       minItems: 1
       readOnly: true
       type: array
       uniqueItems: true
+      x-ngsi:
+        type: Property
+    saturation:
+      description: 'The saturation as defined by the CIECAM02 model definition.'
+      maximum: 32767
+      minimum: 0
+      type: integer
       x-ngsi:
         type: Property
     seeAlso:
@@ -299,9 +329,9 @@ AutoFocus:
       x-ngsi:
         type: Property
     type:
-      description: 'NGSI entity type. It has to be AutoFocus'
+      description: 'NGSI entity type. It has to be ColourChroma'
       enum:
-        - AutoFocus
+        - ColourChroma
       type: string
       x-ngsi:
         type: Property
@@ -309,9 +339,9 @@ AutoFocus:
     - id
     - type
   type: object
-  x-derived-from: https://github.com/OpenInterConnect/IoTDataModels/blob/master/AutoFocusResURI.swagger.json
+  x-derived-from: https://github.com/OpenInterConnect/IoTDataModels/blob/master/ColourChromaResURI.swagger.json
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'
-  x-license-url: https://github.com/smart-data-models/dataModel.OCF/blob/master/AutoFocus/LICENSE.md
-  x-model-schema: https://smart-data-models.github.io/dataModel.IoTDataModels/AutoFocus/schema.json
+  x-license-url: https://github.com/smart-data-models/dataModel.OCF/blob/master/ColourChroma/LICENSE.md
+  x-model-schema: https://smart-data-models.github.io/dataModel.IoTDataModels/ColourChroma/schema.json
   x-model-tags: OCF
   x-version: 0.0.1
