@@ -338,7 +338,7 @@ GlucoseMeal:
 </details>    
 ## Ejemplo de carga útil  
 #### GlucoseMeal NGSI-v2 key-values Ejemplo  
-Aquí hay un ejemplo de una GlucoseMeal en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+Aquí hay un ejemplo de un GlucoseMeal en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 ```json  
 {  
   "id": "urn:ngsi-ld:GlucoseMeal:id:HLGE:82344698",  
