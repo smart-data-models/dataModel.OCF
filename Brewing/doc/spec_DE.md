@@ -341,7 +341,7 @@ Brewing:
 ```  
 </details>    
 ## Beispiel-Nutzlasten  
-#### Brewing NGSI-v2 key-values Beispiel  
+#### Brauen von NGSI-v2-Schlüsselwerten Beispiel  
 Hier ist ein Beispiel für einen Brewing im JSON-LD-Format als Key-Values. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
@@ -500,7 +500,7 @@ Brewing:
 }  
 ```  
 #### Brauen NGSI-LD normalisiert Beispiel  
-Hier ist ein Beispiel für einen Brewing im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-LD kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für einen Brewing im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
   "id": "urn:ngsi-ld:Brewing:id:BLTL:87642764",  
