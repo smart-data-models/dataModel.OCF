@@ -31,10 +31,10 @@
     },
     "lockCodeList": {
       "items": {
-        "description": "The value for the lock code.",
         "type": "string"
       },
-      "type": "array"
+      "type": "array",
+      "description": "Property. The value for the lock code",
     },
     "n": {
       "type": "string",
