@@ -280,7 +280,7 @@ ColourChroma:
       x-ngsi:    
         type: Geoproperty    
     maximumsaturation:    
-      description: 'The maximum supported value of "saturation" for this Device.'    
+      description: 'The maximum supported value of ''saturation'' for this Device.'    
       maximum: 32767    
       minimum: 0    
       readOnly: true    
