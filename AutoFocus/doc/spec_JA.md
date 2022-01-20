@@ -2,11 +2,7 @@
 ==============  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/AutoFocus/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな説明です。**スマートデータモデル オリジナルのIoTDataデータモデルをプログラム化したものです。このリソースは、オートフォーカスのオン/オフ機能を記述する。  
-プロパティ "autoFocus "は、ブール値である。  
-autoFocus」の値が「true」であれば、オートフォーカス機能がオンであることを意味する。  
-autoFocus」の値が「false」の場合は、オートフォーカス機能がオフであることを意味する。  
-パン・チルト・ズーム（リソース定義の「パン・チルト・ズーム」を参照）が使用されている場合、オートフォーカスは選択された領域でのみ機能することに注意してください。  
+グローバルな説明です。**スマートデータモデル オリジナルのIoTDataデータモデルをプログラム化したものです。このリソースは、オートフォーカスのオン/オフ機能を記述する。autoFocus'はブール値である。autoFocus'の値が'true'であれば、オートフォーカス機能がオンであることを意味する。autoFocus」の値が「false」の場合は、オートフォーカス機能がオフになっていることを意味します。パン・チルト・ズーム（リソース定義の「パン・チルト・ズーム」を参照）を使用している場合、オートフォーカスは選択された領域でのみ機能することに注意してください。  
 
 ## プロパティのリスト  
 
@@ -19,12 +15,7 @@ autoFocus」の値が「false」の場合は、オートフォーカス機能が
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 AutoFocus:    
-  description: |-    
-    Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes an auto focus on/off feature.    
-    The Property "autoFocus" is a boolean.    
-    An "autoFocus" value of 'true' means that the auto focus feature is on.    
-    An "autoFocus" value of 'false' means that the auto focus feature is off.    
-    Note that when Pan Tilt Zoom (see 'Pan Tilt Zoom' Resource definition) is used the autofocus works only in the selected area.    
+  description: 'Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes an auto focus on/off feature. The Property ''autoFocus'' is a boolean. An ''autoFocus'' value of ''true'' means that the auto focus feature is on. An ''autoFocus'' value of ''false'' means that the auto focus feature is off. Note that when Pan Tilt Zoom (see ''Pan Tilt Zoom'' Resource definition) is used the autofocus works only in the selected area.'    
   properties:    
     address:    
       description: 'The mailing address'    
