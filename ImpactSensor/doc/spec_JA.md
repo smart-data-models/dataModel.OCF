@@ -6,7 +6,7 @@
 
 ## プロパティのリスト  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `if`: このResourceがサポートしているOCF Interface set。  - `impactdirectionhorizontal`: impactdirectionhorizontal」プロパティは、インパクトが来る水平方向を示します。値は0～360度です。0 はセンサーの正面で、時計回りの増分です。  - `impactdirectionvertical`: impactdirectionvertical」プロパティは、インパクトが来る垂直方向を示します。値は0～360度です。0 はセンサーの正面で、上方向に増分します。  - `impactlevel`: impactlevel」プロパティでは、衝撃のレベルを指定します。単位は「G」（Gフォース）です。  - `impactstatus`: impactstatus "プロパティは、衝撃を示す。"true" 物理的な衝撃が検出された場合、"false" 衝撃が検出されなかった通常の状態。  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `n`: リソースのフレンドリーネーム  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `rt`: The Resource Type。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSIエンティティタイプ。それはImpactSensorでなければならない。    
+- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `if`: このResourceがサポートしているOCF Interface set。  - `impactdirectionhorizontal`: impactdirectionhorizontal」プロパティは、衝撃が来る水平方向を示します。値は0～360度です。0 はセンサーの正面で、時計回りの増分です。  - `impactdirectionvertical`: impactdirectionvertical」プロパティは、衝撃が来る垂直方向を示します。値は0～360度です。0 はセンサーの正面で、上方向に増分します。  - `impactlevel`: impactlevel」プロパティでは、衝撃のレベルを指定します。単位は「G」（Gフォース）です。  - `impactstatus`: impactstatus」プロパティは、衝撃を示す。true」物理的な衝撃が検出された場合、「false」通常の状態、衝撃が検出されない場合。  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `n`: リソースのフレンドリーネーム  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `rt`: The Resource Type。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSIエンティティタイプ。それはImpactSensorでなければならない。    
 必須項目  
 - `id`  - `type`    
 このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)から来ています。NGSIの要件に適合するように拡張されています。  
@@ -102,7 +102,7 @@ ImpactSensor:
       x-ngsi:    
         type: Property    
     impactdirectionhorizontal:    
-      description: 'The "impactdirectionhorizontal" Property shows a horizontal direction where the impact comes from. The value is 0 to 360 degrees. 0 is the front of the sensor and clockwise increment.'    
+      description: 'The ''impactdirectionhorizontal'' Property shows a horizontal direction where the impact comes from. The value is 0 to 360 degrees. 0 is the front of the sensor and clockwise increment.'    
       maximum: 360    
       minimum: 0    
       readOnly: true    
@@ -110,7 +110,7 @@ ImpactSensor:
       x-ngsi:    
         type: Property    
     impactdirectionvertical:    
-      description: 'The "impactdirectionvertical" Property shows a vertical direction where the impact comes from. The value is 0 to 360 degrees. 0 is the front of the sensor and upward increment.'    
+      description: 'The ''impactdirectionvertical'' Property shows a vertical direction where the impact comes from. The value is 0 to 360 degrees. 0 is the front of the sensor and upward increment.'    
       maximum: 360    
       minimum: 0    
       readOnly: true    
@@ -118,13 +118,13 @@ ImpactSensor:
       x-ngsi:    
         type: Property    
     impactlevel:    
-      description: 'The "impactlevel" Property provides the level of impact. The unit is in "G" (G-force).'    
+      description: 'The ''impactlevel'' Property provides the level of impact. The unit is in ''G'' (G-force).'    
       readOnly: true    
       type: number    
       x-ngsi:    
         type: Property    
     impactstatus:    
-      description: 'The "impactstatus" Property indicates the impact as: "true" A physical impact is detected, "false" Normal status, an impact is not detected.'    
+      description: 'The ''impactstatus'' Property indicates the impact as: ''true'' A physical impact is detected, ''false'' Normal status, an impact is not detected.'    
       readOnly: true    
       type: boolean    
       x-ngsi:    
