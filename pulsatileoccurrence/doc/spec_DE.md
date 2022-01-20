@@ -373,7 +373,7 @@ pulsatileoccurrence:
 }  
 ```  
 #### pulsatileoccurrence NGSI-v2 normalisiert Beispiel  
-Hier ist ein Beispiel für ein pulsatileoccurrence im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für ein pulsatileoccurrence im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-v2 kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
   "id": {  
@@ -493,7 +493,7 @@ pulsatileoccurrence:
 }  
 ```  
 #### pulsatileoccurrence NGSI-LD normalisiert Beispiel  
-Hier ist ein Beispiel für ein pulsatileoccurrence im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-LD kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für ein pulsatileoccurrence im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
   "id": "urn:ngsi-ld:pulsatileoccurrence:id:JXKM:10085961",  
