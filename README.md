@@ -6,11 +6,7 @@ These data models come from the original [Open Connectivity Foundation repositor
 The following entity types are available:
 - [acceleration](https://github.com/smart-data-models/dataModel.OCF/blob/master/acceleration/README.md). Smart Data Models Program adaptation of the original IoTData data Models. This Resource provides a measure of proper acceleration (g force) as opposed to co-ordinate acceleration (which is dependent on the co-ordinate system and the observer). The Property 'value' is a float which describes the acceleration experienced by the object in 'g'.
 
-- [AutoFocus](https://github.com/smart-data-models/dataModel.OCF/blob/master/AutoFocus/README.md). Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes an auto focus on/off feature.
-The Property "autoFocus" is a boolean.
-An "autoFocus" value of 'true' means that the auto focus feature is on.
-An "autoFocus" value of 'false' means that the auto focus feature is off.
-Note that when Pan Tilt Zoom (see 'Pan Tilt Zoom' Resource definition) is used the autofocus works only in the selected area.
+- [AutoFocus](https://github.com/smart-data-models/dataModel.OCF/blob/master/AutoFocus/README.md). Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes an auto focus on/off feature. The Property 'autoFocus' is a boolean. An 'autoFocus' value of 'true' means that the auto focus feature is on. An 'autoFocus' value of 'false' means that the auto focus feature is off. Note that when Pan Tilt Zoom (see 'Pan Tilt Zoom' Resource definition) is used the autofocus works only in the selected area.
 
 - [AutomaticDocumentFeeder](https://github.com/smart-data-models/dataModel.OCF/blob/master/AutomaticDocumentFeeder/README.md). Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the state of an automatic document feeder, typically used with a scanner. The Property 'adfstates' and 'currentAdfState' are read only. The Property 'adfStates' is an array of the possible operational states. The Property 'adfProcessing' is the OK state, other states are errors or require 'user attention'. The currentAdfState is the current value of the ADF state on the device.
 
