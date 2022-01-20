@@ -2,14 +2,14 @@
 ==========  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/acceleration/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな説明です。**スマートデータモデル オリジナルのIoTDataデータモデルをプログラム化したものです。このリソースは、座標加速度（座標系と観測者に依存する）とは対照的に、適切な加速度（g力）の測定値を提供する。プロパティ'value'は、オブジェクトが経験した加速度を'g'で表した浮動小数点数です。  
+グローバルな説明です。**スマートデータモデル オリジナルのIoTDataデータモデルをプログラム化したものです。このリソースは、（座標系と観測者に依存する）座標加速度とは対照的に、適切な加速度（g力）の測定値を提供します。プロパティ'value'は、オブジェクトが経験した加速度を'g'で表した浮動小数点数です。  
 
 ## プロパティのリスト  
 
 - `acceleration`: 感じた加速度を「g」で表す。  - `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `if`: このResourceがサポートしているOCF Interface set。  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `n`: リソースのフレンドリーネーム  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `precision`: 公開された場合、「精度」の値は、リソース内のプロパティに対して±の許容範囲を提供する。従って、あるプロパティがある値に更新され、そのプロパティがRETRIEVEDされた場合、RETRIEVEDされた値は、設定された値の±精度の範囲内であれば有効である。  - `range`: リソースのプロパティの有効範囲を数値で表したもの。配列の最初の値が最小値、配列の2番目の値が最大値となります。  - `rt`: リソースタイプ  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `step`: 定義された範囲のステップ値。範囲が数値の場合は整数。  例えば、範囲が0.0～10.0でステップが2.5の場合、有効な値は0.0,2.5,5.0,7.5,10.0となります。  - `type`: NGSIのエンティティタイプ。加速でなければならない    
 必須項目  
 - `id`  - `type`    
-このデータモデルは、オリジナルの[Open Conenctivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)から来ています。NGSIの要件を満たすように拡張されています。  
+このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)から来ています。NGSIの要件に適合するように拡張されています。  
 ## データモデルによるプロパティの記述  
 アルファベット順（クリックすると詳細が表示されます）  
 <details><summary><strong>full yaml details</strong></summary>    
