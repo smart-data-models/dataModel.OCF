@@ -3,7 +3,7 @@
     "@type": "Interface",
     "@context": "dtmi:dtdl:context;2",
     "comment": "Auto Focus adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/AutoFocus/schema.json",
-    "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes an auto focus on/off feature.\nThe Property \"autoFocus\" is a boolean.\nAn \"autoFocus\" value of 'true' means that the auto focus feature is on.\nAn \"autoFocus\" value of 'false' means that the auto focus feature is off.\nNote that when Pan Tilt Zoom (see 'Pan Tilt Zoom' Resource definition) is used the autofocus works only in the selected area.",
+    "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes an auto focus on/off feature. The Property 'autoFocus' is a boolean. An 'autoFocus' value of 'true' means that the auto focus feature is on. An 'autoFocus' value of 'false' means that the auto focus feature is off. Note that when Pan Tilt Zoom (see 'Pan Tilt Zoom' Resource definition) is used the autofocus works only in the selected area.",
     "displayName": "AutoFocus",
     "contents": [
         {

@@ -30,7 +30,7 @@
       "type": "array"
     },
     "stateofcard": {
-      "description": "Property. The status of the keycardswitch. \"validCardInserted\" means that a keycard was inserted and passed validation check. \"validCardNotInserted\" means that a keycard is not inserted or it was inserted but failed to pass validation check.",
+      "description": "Property. The status of the keycardswitch. 'validCardInserted' means that a keycard was inserted and passed validation check. 'validCardNotInserted' means that a keycard is not inserted or it was inserted but failed to pass validation check.",
       "readOnly": true,
       "type": "string",
       "enum": [

@@ -42,7 +42,7 @@
       "type": "integer"
     },
     "maximumsaturation": {
-      "description": "Property. The maximum supported value of \"saturation\" for this Device.",
+      "description": "Property. The maximum supported value of 'saturation' for this Device.",
       "maximum": 32767,
       "minimum": 0,
       "readOnly": true,
