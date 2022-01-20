@@ -256,6 +256,7 @@ Media:
       x-ngsi:    
         type: Geoproperty    
     media:    
+      description: 'No original description was available'    
       items:    
         properties:    
           sdp:    
@@ -269,6 +270,8 @@ Media:
             type: string    
         type: object    
       type: array    
+      x-ngsi:    
+        type: Property    
     n:    
       description: 'Friendly name of the Resource'    
       maxLength: 64    
