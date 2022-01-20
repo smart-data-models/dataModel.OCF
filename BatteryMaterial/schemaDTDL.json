@@ -1,0 +1,579 @@
+{
+    "@id": "dtmi:com:ngsi-ld:BatteryMaterial;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "Battery Material adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/BatteryMaterial/schema.json",
+    "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the battery material represented as an enumerated set of strings.",
+    "displayName": "BatteryMaterial",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "n",
+            "writable": true,
+            "displayName": "n",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Friendly name of the Resource"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "@type": "Telemetry",
+            "name": "if",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "The OCF Interface set supported by this Resource.",
+            "displayName": "if"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "rt",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "The Resource Type.",
+            "displayName": "rt"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "material",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "Alkaline",
+                        "displayName": "Alkaline",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "Aluminium Air",
+                        "displayName": "Aluminium Air",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "Aluminium Ion",
+                        "displayName": "Aluminium Ion",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "Atomic Betavoltaics",
+                        "displayName": "Atomic Betavoltaics",
+                        "enumValue": 4
+                    },
+                    {
+                        "name": "Atomic Optoelectric Nuclear",
+                        "displayName": "Atomic Optoelectric Nuclear",
+                        "enumValue": 5
+                    },
+                    {
+                        "name": "Atomic Nuclear",
+                        "displayName": "Atomic Nuclear",
+                        "enumValue": 6
+                    },
+                    {
+                        "name": "Bunsen Cell",
+                        "displayName": "Bunsen Cell",
+                        "enumValue": 7
+                    },
+                    {
+                        "name": "Chromic Acid Cell",
+                        "displayName": "Chromic Acid Cell",
+                        "enumValue": 8
+                    },
+                    {
+                        "name": "Poggendorff Cell",
+                        "displayName": "Poggendorff Cell",
+                        "enumValue": 9
+                    },
+                    {
+                        "name": "Clark Cell",
+                        "displayName": "Clark Cell",
+                        "enumValue": 10
+                    },
+                    {
+                        "name": "Daniell Cell",
+                        "displayName": "Daniell Cell",
+                        "enumValue": 11
+                    },
+                    {
+                        "name": "Dry Cell",
+                        "displayName": "Dry Cell",
+                        "enumValue": 12
+                    },
+                    {
+                        "name": "Earth",
+                        "displayName": "Earth",
+                        "enumValue": 13
+                    },
+                    {
+                        "name": "Flow",
+                        "displayName": "Flow",
+                        "enumValue": 14
+                    },
+                    {
+                        "name": "Flow Vanadium Redox",
+                        "displayName": "Flow Vanadium Redox",
+                        "enumValue": 15
+                    },
+                    {
+                        "name": "Flow Zinc Bromine",
+                        "displayName": "Flow Zinc Bromine",
+                        "enumValue": 16
+                    },
+                    {
+                        "name": "Flow Zinc Cerium",
+                        "displayName": "Flow Zinc Cerium",
+                        "enumValue": 17
+                    },
+                    {
+                        "name": "Frog",
+                        "displayName": "Frog",
+                        "enumValue": 18
+                    },
+                    {
+                        "name": "Fuel",
+                        "displayName": "Fuel",
+                        "enumValue": 19
+                    },
+                    {
+                        "name": "Galvanic Cell",
+                        "displayName": "Galvanic Cell",
+                        "enumValue": 20
+                    },
+                    {
+                        "name": "Glass",
+                        "displayName": "Glass",
+                        "enumValue": 21
+                    },
+                    {
+                        "name": "Grove Cell",
+                        "displayName": "Grove Cell",
+                        "enumValue": 22
+                    },
+                    {
+                        "name": "Lead Acid",
+                        "displayName": "Lead Acid",
+                        "enumValue": 23
+                    },
+                    {
+                        "name": "Lead Acid Deep Cycle",
+                        "displayName": "Lead Acid Deep Cycle",
+                        "enumValue": 24
+                    },
+                    {
+                        "name": "Lead Acid VRLA",
+                        "displayName": "Lead Acid VRLA",
+                        "enumValue": 25
+                    },
+                    {
+                        "name": "Lead Acid AGM",
+                        "displayName": "Lead Acid AGM",
+                        "enumValue": 26
+                    },
+                    {
+                        "name": "Lead Acid Gel",
+                        "displayName": "Lead Acid Gel",
+                        "enumValue": 27
+                    },
+                    {
+                        "name": "Leclanche Cell",
+                        "displayName": "Leclanche Cell",
+                        "enumValue": 28
+                    },
+                    {
+                        "name": "Lemon Potato",
+                        "displayName": "Lemon Potato",
+                        "enumValue": 29
+                    },
+                    {
+                        "name": "Lithium",
+                        "displayName": "Lithium",
+                        "enumValue": 30
+                    },
+                    {
+                        "name": "Lithium Air",
+                        "displayName": "Lithium Air",
+                        "enumValue": 31
+                    },
+                    {
+                        "name": "Lithium Ion",
+                        "displayName": "Lithium Ion",
+                        "enumValue": 32
+                    },
+                    {
+                        "name": "Lithium Ion Cobalt Oxide (ICR)",
+                        "displayName": "Lithium Ion Cobalt Oxide (ICR)",
+                        "enumValue": 33
+                    },
+                    {
+                        "name": "Lithium Ion Manganese Oxide (IMR)",
+                        "displayName": "Lithium Ion Manganese Oxide (IMR)",
+                        "enumValue": 34
+                    },
+                    {
+                        "name": "Lithium Ion Polymer",
+                        "displayName": "Lithium Ion Polymer",
+                        "enumValue": 35
+                    },
+                    {
+                        "name": "Lithium Iron Phosphate",
+                        "displayName": "Lithium Iron Phosphate",
+                        "enumValue": 36
+                    },
+                    {
+                        "name": "Lithium Sulfur",
+                        "displayName": "Lithium Sulfur",
+                        "enumValue": 37
+                    },
+                    {
+                        "name": "Lithium Titanate",
+                        "displayName": "Lithium Titanate",
+                        "enumValue": 38
+                    },
+                    {
+                        "name": "Lithium Ion Thin Film",
+                        "displayName": "Lithium Ion Thin Film",
+                        "enumValue": 39
+                    },
+                    {
+                        "name": "Magnesium",
+                        "displayName": "Magnesium",
+                        "enumValue": 40
+                    },
+                    {
+                        "name": "Magnesium Ion",
+                        "displayName": "Magnesium Ion",
+                        "enumValue": 41
+                    },
+                    {
+                        "name": "Mercury",
+                        "displayName": "Mercury",
+                        "enumValue": 42
+                    },
+                    {
+                        "name": "Molten Salt",
+                        "displayName": "Molten Salt",
+                        "enumValue": 43
+                    },
+                    {
+                        "name": "Nickel Cadmium",
+                        "displayName": "Nickel Cadmium",
+                        "enumValue": 44
+                    },
+                    {
+                        "name": "Nickel Cadmium Vented Cell",
+                        "displayName": "Nickel Cadmium Vented Cell",
+                        "enumValue": 45
+                    },
+                    {
+                        "name": "Nickel Hydrogen",
+                        "displayName": "Nickel Hydrogen",
+                        "enumValue": 46
+                    },
+                    {
+                        "name": "Nickel Iron ",
+                        "displayName": "Nickel Iron ",
+                        "enumValue": 47
+                    },
+                    {
+                        "name": "Nickel Metal Hydride",
+                        "displayName": "Nickel Metal Hydride",
+                        "enumValue": 48
+                    },
+                    {
+                        "name": "Nickel Metal Hydride Low Self-Discharge",
+                        "displayName": "Nickel Metal Hydride Low Self-Discharge",
+                        "enumValue": 49
+                    },
+                    {
+                        "name": "Nickel Oxyhydroxide",
+                        "displayName": "Nickel Oxyhydroxide",
+                        "enumValue": 50
+                    },
+                    {
+                        "name": "Nickel Oxyride",
+                        "displayName": "Nickel Oxyride",
+                        "enumValue": 51
+                    },
+                    {
+                        "name": "Nickel Zinc",
+                        "displayName": "Nickel Zinc",
+                        "enumValue": 52
+                    },
+                    {
+                        "name": "Organic Radical",
+                        "displayName": "Organic Radical",
+                        "enumValue": 53
+                    },
+                    {
+                        "name": "Paper",
+                        "displayName": "Paper",
+                        "enumValue": 54
+                    },
+                    {
+                        "name": "Polymer Based",
+                        "displayName": "Polymer Based",
+                        "enumValue": 55
+                    },
+                    {
+                        "name": "Polysulfide Bromide",
+                        "displayName": "Polysulfide Bromide",
+                        "enumValue": 56
+                    },
+                    {
+                        "name": "Potassium Ion",
+                        "displayName": "Potassium Ion",
+                        "enumValue": 57
+                    },
+                    {
+                        "name": "Pulvermachers Chain",
+                        "displayName": "Pulvermachers Chain",
+                        "enumValue": 58
+                    },
+                    {
+                        "name": "Silicon Air",
+                        "displayName": "Silicon Air",
+                        "enumValue": 59
+                    },
+                    {
+                        "name": "Silver Calcium",
+                        "displayName": "Silver Calcium",
+                        "enumValue": 60
+                    },
+                    {
+                        "name": "Silver Oxide",
+                        "displayName": "Silver Oxide",
+                        "enumValue": 61
+                    },
+                    {
+                        "name": "Silver Zinc",
+                        "displayName": "Silver Zinc",
+                        "enumValue": 62
+                    },
+                    {
+                        "name": "Sodium Ion",
+                        "displayName": "Sodium Ion",
+                        "enumValue": 63
+                    },
+                    {
+                        "name": "Sodium Sulfur",
+                        "displayName": "Sodium Sulfur",
+                        "enumValue": 64
+                    },
+                    {
+                        "name": "Solid State",
+                        "displayName": "Solid State",
+                        "enumValue": 65
+                    },
+                    {
+                        "name": "Sugar",
+                        "displayName": "Sugar",
+                        "enumValue": 66
+                    },
+                    {
+                        "name": "Super Iron",
+                        "displayName": "Super Iron",
+                        "enumValue": 67
+                    },
+                    {
+                        "name": "UltraBattery",
+                        "displayName": "UltraBattery",
+                        "enumValue": 68
+                    },
+                    {
+                        "name": "Voltaic Pile",
+                        "displayName": "Voltaic Pile",
+                        "enumValue": 69
+                    },
+                    {
+                        "name": "Voltaic Pile Penny",
+                        "displayName": "Voltaic Pile Penny",
+                        "enumValue": 70
+                    },
+                    {
+                        "name": "Voltaic Pile Trough",
+                        "displayName": "Voltaic Pile Trough",
+                        "enumValue": 71
+                    },
+                    {
+                        "name": "Water Activated",
+                        "displayName": "Water Activated",
+                        "enumValue": 72
+                    },
+                    {
+                        "name": "Weston Cell",
+                        "displayName": "Weston Cell",
+                        "enumValue": 73
+                    },
+                    {
+                        "name": "Zinc Air",
+                        "displayName": "Zinc Air",
+                        "enumValue": 74
+                    },
+                    {
+                        "name": "Zinc Carbon",
+                        "displayName": "Zinc Carbon",
+                        "enumValue": 75
+                    },
+                    {
+                        "name": "Zinc Chloride",
+                        "displayName": "Zinc Chloride",
+                        "enumValue": 76
+                    },
+                    {
+                        "name": "Zinc Ion",
+                        "displayName": "Zinc Ion",
+                        "enumValue": 77
+                    },
+                    {
+                        "name": "Unknown",
+                        "displayName": "Unknown",
+                        "enumValue": 78
+                    }
+                ]
+            }
+        }
+    ]
+}
