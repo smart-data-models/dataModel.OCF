@@ -2,7 +2,7 @@
 ==========  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/Media/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな説明です。**スマートデータモデル オリジナルのIoTDataデータモデルをプログラム化したものである。このリソースは、OCFサーバがサポートするメディアタイプを指定する。このリソースは、メディア要素の配列である。  各要素は以下を含む。     指定されたメディアタイプにアクセスするための URL     SDP を使用したメディアの定義を含む文字列配列。     sdp配列の各エントリは、SDP行である。     各行は、SDP仕様で定義されているSDP記述構文に従わなければならない。SDP仕様は、http://tools.ietf.org/html/rfc4566.**にあります。  
+グローバルな説明です。**スマートデータモデル オリジナルのIoTDataデータモデルの適応プログラム。このリソースは、OCFサーバがサポートするメディアタイプを指定する。このリソースは、メディア要素の配列である。  各要素は以下を含む。     指定されたメディアタイプにアクセスするための URL     SDP を使用したメディアの定義を含む文字列配列。     sdp配列の各エントリは、SDP行である。     各行は、SDP仕様で定義されているSDP記述構文に従わなければならない。SDP仕様は、http://tools.ietf.org/html/rfc4566.**にあります。  
 
 ## プロパティのリスト  
 
@@ -256,6 +256,7 @@ Media:
       x-ngsi:    
         type: Geoproperty    
     media:    
+      description: 'No original description was available'    
       items:    
         properties:    
           sdp:    
@@ -269,6 +270,8 @@ Media:
             type: string    
         type: object    
       type: array    
+      x-ngsi:    
+        type: Property    
     n:    
       description: 'Friendly name of the Resource'    
       maxLength: 64    
