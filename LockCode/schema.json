@@ -34,7 +34,7 @@
         "type": "string"
       },
       "type": "array",
-      "description": "Property. The value for the lock code",
+      "description": "Property. The value for the lock code"
     },
     "n": {
       "type": "string",
