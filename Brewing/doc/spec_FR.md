@@ -2,11 +2,11 @@ Entité : Brewing
 ================  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.OCF/blob/master/Brewing/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Description globale : **Adaptation du programme Smart Data Models des modèles de données IoTData originaux. Cette ressource décrit les attributs associés au brassage. Cette ressource est utilisée uniquement pour la configuration. Le fonctionnement de l'appareil est traité indépendamment de cette ressource. La quantité demandée est en ml. La force d'une boisson brassée est un nombre entier, dont la plage peut être renforcée par la présence d'une propriété strengthrange**.  
+Description globale : **Adaptation du programme Smart Data Models des modèles de données IoTData originaux. Cette ressource décrit les attributs associés au brassage. Cette ressource est utilisée uniquement pour la configuration. Le fonctionnement de l'appareil est traité indépendamment de cette ressource. La quantité demandée est en ml. La force d'une boisson brassée est un nombre entier, dont l'étendue peut être renforcée par la présence d'une propriété strengthrange**.  
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `amountrequested`: La quantité demandée en ml.  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `if`: Le jeu d'interfaces OCF supporté par cette ressource.  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `n`: Nom amical de la ressource  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `rt`: Le type de ressource.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `strength`: La force d'une boisson brassée.  - `strengthrange`:   - `type`: Type d'entité NGSI. Il doit s'agir d'un brassage    
+- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `amountrequested`: La quantité demandée en ml.  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `if`: Le jeu d'interfaces OCF supporté par cette ressource.  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `n`: Nom amical de la ressource  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codés JSON référençant les identifiants uniques du ou des propriétaires.  - `rt`: Le type de ressource.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `strength`: La force d'une boisson brassée.  - `strengthrange`:   - `type`: Type d'entité NGSI. Il doit s'agir d'un brassage    
 Propriétés requises  
 - `id`  - `type`    
 Ce modèle de données provient du référentiel original de la [Open Connectivity Foundation] (https://github.com/openconnectivityfoundation/IoTDataModels). Il a été étendu pour se conformer aux exigences de la NGSI.  
@@ -315,12 +315,15 @@ Brewing:
       x-ngsi:    
         type: Property    
     strengthrange:    
+      description: 'No original description has been provided'    
       items:    
         type: integer    
       maxItems: 2    
       minItems: 2    
       readOnly: true    
       type: array    
+      x-ngsi:    
+        type: Property    
     type:    
       description: 'NGSI entity type. It has to be Brewing'    
       enum:    
