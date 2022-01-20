@@ -3,11 +3,7 @@ Version: 0.0.1
 
 ## Description 
 
-Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes an auto focus on/off feature.
-The Property "autoFocus" is a boolean.
-An "autoFocus" value of 'true' means that the auto focus feature is on.
-An "autoFocus" value of 'false' means that the auto focus feature is off.
-Note that when Pan Tilt Zoom (see 'Pan Tilt Zoom' Resource definition) is used the autofocus works only in the selected area.
+Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes an auto focus on/off feature. The Property 'autoFocus' is a boolean. An 'autoFocus' value of 'true' means that the auto focus feature is on. An 'autoFocus' value of 'false' means that the auto focus feature is off. Note that when Pan Tilt Zoom (see 'Pan Tilt Zoom' Resource definition) is used the autofocus works only in the selected area.
 
 This data model comes from the original [Open Conenctivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels). It has been extended to comply with NGSI requirements.
 ### Specification
