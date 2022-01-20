@@ -9,6 +9,10 @@ This data model comes from the original [Open Connectivity Foundation repository
 ### Specification
 
 Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.OCF/GlucoseSampleLocation/swagger.yaml)
+
+Link to the [specification](https://github.com/smart-data-models/dataModel.OCF/blob/master/GlucoseSampleLocation/doc/spec.md)
+
+Enlace a la [Especificación en español](https://github.com/smart-data-models/dataModel.OCF/blob/master/GlucoseSampleLocation/doc/spec_ES.md)
 ### Examples
 
 Link to the [example](https://smart-data-models.github.io/dataModel.OCF/GlucoseSampleLocation/examples/example.json) (keyvalues) for NGSI v2
