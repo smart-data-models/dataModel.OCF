@@ -6,7 +6,7 @@ Entität: ImpactSensor
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `if`: Der von dieser Ressource unterstützte OCF-Schnittstellensatz.  - `impactdirectionhorizontal`: Die Eigenschaft "impactdirectionhorizontal" zeigt die horizontale Richtung an, aus der der Aufprall erfolgt. Der Wert reicht von 0 bis 360 Grad. 0 ist die Vorderseite des Sensors und wird im Uhrzeigersinn erhöht.  - `impactdirectionvertical`: Die Eigenschaft "impactdirectionvertical" zeigt die vertikale Richtung an, aus der der Aufprall erfolgt. Der Wert reicht von 0 bis 360 Grad. 0 ist die Vorderseite des Sensors und ein Anstieg nach oben.  - `impactlevel`: Die Eigenschaft "Aufprallstärke" gibt die Stärke des Aufpralls an. Die Einheit ist "G" (G-force).  - `impactstatus`: Die Eigenschaft "impactstatus" zeigt die Auswirkung als: "true" Eine physische Auswirkung wird erkannt, "false" Normaler Status, eine Auswirkung wird nicht erkannt.  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `n`: Freundlicher Name der Ressource  - `name`: Der Name dieses Artikels.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `rt`: Der Ressourcentyp.  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der vollständig qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `type`: NGSI-Entitätstyp. Es muss ImpactSensor sein    
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `if`: Der von dieser Ressource unterstützte OCF-Schnittstellensatz.  - `impactdirectionhorizontal`: Die Eigenschaft "impactdirectionhorizontal" zeigt die horizontale Richtung an, aus der der Aufprall kommt. Der Wert reicht von 0 bis 360 Grad. 0 ist die Vorderseite des Sensors und wird im Uhrzeigersinn erhöht.  - `impactdirectionvertical`: Die Eigenschaft "impactdirectionvertical" gibt die vertikale Richtung an, aus der der Aufprall erfolgt. Der Wert reicht von 0 bis 360 Grad. 0 ist die Vorderseite des Sensors und eine Erhöhung nach oben.  - `impactlevel`: Die Eigenschaft "Aufprallstärke" gibt die Stärke des Aufpralls an. Die Einheit ist "G" (G-force).  - `impactstatus`: Die Eigenschaft 'impactstatus' zeigt die Auswirkung als: 'true' Eine physische Auswirkung wurde erkannt, 'false' Normaler Status, eine Auswirkung wurde nicht erkannt.  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `n`: Freundlicher Name der Ressource  - `name`: Der Name dieses Artikels.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `rt`: Der Ressourcentyp.  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `type`: NGSI-Entitätstyp. Es muss ImpactSensor sein    
 Erforderliche Eigenschaften  
 - `id`  - `type`    
 Dieses Datenmodell stammt aus dem ursprünglichen [Open Connectivity Foundation repository] (https://github.com/openconnectivityfoundation/IoTDataModels). Es wurde erweitert, um den Anforderungen der NGSI zu entsprechen.  
@@ -102,7 +102,7 @@ ImpactSensor:
       x-ngsi:    
         type: Property    
     impactdirectionhorizontal:    
-      description: 'The "impactdirectionhorizontal" Property shows a horizontal direction where the impact comes from. The value is 0 to 360 degrees. 0 is the front of the sensor and clockwise increment.'    
+      description: 'The ''impactdirectionhorizontal'' Property shows a horizontal direction where the impact comes from. The value is 0 to 360 degrees. 0 is the front of the sensor and clockwise increment.'    
       maximum: 360    
       minimum: 0    
       readOnly: true    
@@ -110,7 +110,7 @@ ImpactSensor:
       x-ngsi:    
         type: Property    
     impactdirectionvertical:    
-      description: 'The "impactdirectionvertical" Property shows a vertical direction where the impact comes from. The value is 0 to 360 degrees. 0 is the front of the sensor and upward increment.'    
+      description: 'The ''impactdirectionvertical'' Property shows a vertical direction where the impact comes from. The value is 0 to 360 degrees. 0 is the front of the sensor and upward increment.'    
       maximum: 360    
       minimum: 0    
       readOnly: true    
@@ -118,13 +118,13 @@ ImpactSensor:
       x-ngsi:    
         type: Property    
     impactlevel:    
-      description: 'The "impactlevel" Property provides the level of impact. The unit is in "G" (G-force).'    
+      description: 'The ''impactlevel'' Property provides the level of impact. The unit is in ''G'' (G-force).'    
       readOnly: true    
       type: number    
       x-ngsi:    
         type: Property    
     impactstatus:    
-      description: 'The "impactstatus" Property indicates the impact as: "true" A physical impact is detected, "false" Normal status, an impact is not detected.'    
+      description: 'The ''impactstatus'' Property indicates the impact as: ''true'' A physical impact is detected, ''false'' Normal status, an impact is not detected.'    
       readOnly: true    
       type: boolean    
       x-ngsi:    
