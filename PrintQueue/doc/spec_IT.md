@@ -353,7 +353,7 @@ PrintQueue:
 </details>    
 ## Esempio di payloads  
 #### PrintQueue NGSI-v2 valori chiave Esempio  
-Ecco un esempio di un PrintQueue in formato JSON-LD come key-values. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di un PrintQueue in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
   "id": "urn:ngsi-ld:PrintQueue:id:LXHD:13994505",  
