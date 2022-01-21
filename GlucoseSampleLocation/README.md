@@ -13,6 +13,14 @@ Link to the [interactive specification](https://swagger.lab.fiware.org/?url=http
 Link to the [specification](https://github.com/smart-data-models/dataModel.OCF/blob/master/GlucoseSampleLocation/doc/spec.md)
 
 Enlace a la [Especificación en español](https://github.com/smart-data-models/dataModel.OCF/blob/master/GlucoseSampleLocation/doc/spec_ES.md)
+
+Lien vers le [spécification en français](https://github.com/smart-data-models/dataModel.OCF/blob/master/GlucoseSampleLocation/doc/spec_FR.md)
+
+Link zur [deutschen Spezifikation](https://github.com/smart-data-models/dataModel.OCF/blob/master/GlucoseSampleLocation/doc/spec_DE.md)
+
+Link alla [specifica](https://github.com/smart-data-models/dataModel.OCF/blob/master/GlucoseSampleLocation/doc/spec_IT.md)
+
+[仕様へのリンク](https://github.com/smart-data-models/dataModel.OCF/blob/master/GlucoseSampleLocation/doc/spec_JA.md)
 ### Examples
 
 Link to the [example](https://smart-data-models.github.io/dataModel.OCF/GlucoseSampleLocation/examples/example.json) (keyvalues) for NGSI v2
