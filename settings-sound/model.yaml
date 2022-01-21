@@ -83,6 +83,7 @@ settings-sound:
       x-ngsi:
         type: Property
     if:
+      description: 'No description is available in the original'
       items:
         enum:
           - oic.if.rw
@@ -92,6 +93,8 @@ settings-sound:
       readOnly: true
       type: array
       uniqueItems: true
+      x-ngsi:
+        type: Property
     location:
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
