@@ -39,7 +39,8 @@
       "minItems": 2,
       "uniqueItems": true,
       "readOnly": true,
-      "type": "array"
+      "type": "array",
+      "description": "Property. No description is available in the original"
     },
     "remote-management": {
       "description": "Property. Allows support remote access so support can control user setting and troubleshoot problem.",

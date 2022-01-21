@@ -39,7 +39,8 @@
       "minItems": 2,
       "uniqueItems": true,
       "readOnly": true,
-      "type": "array"
+      "type": "array",
+      "description": "Property. No description is available in the original"
     },
     "speaker": {
       "description": "Property. Device Settings Sound - Speaker. Client can change speaker using supported-speakers property.",
