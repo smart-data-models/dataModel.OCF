@@ -1,0 +1,78 @@
+{
+  "id": "urn:ngsi-ld:AutoFocus:id:ENIM:82565304",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2000-10-08T18:08:37Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1982-01-28T03:38:13Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Up animal heavy girl. Which citizen life see ground show."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Fly knowledge guess. Respond open unit approach. Give likely fight she film usually forget."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Group than life public popular. Simply feel travel leave baby ok five author."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Will board eight stuff hundred run. Nature Mrs speech suggest foot these."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Machine level blue third parent today continue allow. Little car edge plant live radio. Still claim like degree force."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:AutoFocus:items:FVVV:45930843",
+      "urn:ngsi-ld:AutoFocus:items:IXPP:46777984"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:AutoFocus:items:LJSM:63192540"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        35.0296575,
+        49.48666
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Strong detail guess manage possible eye.",
+      "addressLocality": "Whose one involve simple thing star. Good ask it middle apply.",
+      "addressRegion": "Building old scientist ball front agency hot. Provide article special.",
+      "addressCountry": "Fact tonight professor minute sort professional significant. Me degree treatment young kitchen ball speak.",
+      "postalCode": "Note level upon only usually administration. Open attack or watch base.",
+      "postOfficeBoxNumber": "Class sound contain. Key appear skin half. Phone floor I enjoy rock suggest success travel."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Material national good good join particularly bill. Crime once entire. Political imagine source."
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}
