@@ -1,0 +1,37 @@
+{
+  "id": "urn:ngsi-ld:AutoFocus:id:MDJJ:39804414",
+  "dateCreated": "2016-09-05T02:46:41Z",
+  "dateModified": "2019-09-26T17:37:19Z",
+  "source": "Forget fear common east chance want. Writer city along simply money.",
+  "name": "Ever probably seek first eight how follow Mrs. Choice western away either particular old.",
+  "alternateName": "Modern already usually leader long. Rich region third authority employee not research.",
+  "description": "Without million outside skin draw bar economic glass. Site course method speech respond.",
+  "dataProvider": "Travel view final write commercial next. Edge stop according environmental money himself. Loss simply resource return protect he.",
+  "owner": [
+    "urn:ngsi-ld:AutoFocus:items:URFP:37492409",
+    "urn:ngsi-ld:AutoFocus:items:QPKC:88758327"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:AutoFocus:items:NHYN:18141122",
+    "urn:ngsi-ld:AutoFocus:items:KKHG:49747728"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      35.771134,
+      133.186789
+    ]
+  },
+  "address": {
+    "streetAddress": "Franklinstrasse 13",
+    "addressLocality": "Berlin",
+    "addressRegion": "Berlin",
+    "addressCountry": "Germany",
+    "postalCode": "10587",
+    "postOfficeBoxNumber": ""
+  },
+  "areaServed": "European Union",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}
