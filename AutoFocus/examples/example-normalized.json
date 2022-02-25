@@ -1,0 +1,70 @@
+{
+  "id": "urn:ngsi-ld:AutoFocus:id:ENIM:82565304",
+  "dateCreated": {
+    "type": "Date-Time",
+    "value": "2000-10-08T18:08:37Z"
+  },
+  "dateModified": {
+    "type":  "DateTime",
+      "@value": "1982-01-28T03:38:13Z"
+    
+  },
+  "source": {
+    "type": "Text",
+    "value": "Up animal heavy girl. Which citizen life see ground show."
+  },
+  "name": {
+    "type": "Text",
+    "value": "Fly knowledge guess. Respond open unit approach. Give likely fight she film usually forget."
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "Group than life public popular. Simply feel travel leave baby ok five author."
+  },
+  "description": {
+    "type": "Text",
+    "value": "Will board eight stuff hundred run. Nature Mrs speech suggest foot these."
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Machine level blue third parent today continue allow. Little car edge plant live radio. Still claim like degree force."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:AutoFocus:items:FVVV:45930843",
+      "urn:ngsi-ld:AutoFocus:items:IXPP:46777984"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:AutoFocus:items:LJSM:63192540"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        35.0296575,
+        49.48666
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "Strong detail guess manage possible eye.",
+      "addressLocality": "Whose one involve simple thing star. Good ask it middle apply.",
+      "addressRegion": "Building old scientist ball front agency hot. Provide article special.",
+      "addressCountry": "Fact tonight professor minute sort professional significant. Me degree treatment young kitchen ball speak.",
+      "postalCode": "Note level upon only usually administration. Open attack or watch base.",
+      "postOfficeBoxNumber": "Class sound contain. Key appear skin half. Phone floor I enjoy rock suggest success travel."
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "Material national good good join particularly bill. Crime once entire. Political imagine source."
+  }
+}
