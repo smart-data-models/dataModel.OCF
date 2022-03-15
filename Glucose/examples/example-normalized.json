@@ -1,0 +1,129 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:Glucose:id:JSJQ:51587881"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1975-09-01T13:27:41Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1993-03-08T05:43:55Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Black travel drive role interest store probably. Sort figure quite I full. Theory all part staff against operation boy."
+  },
+  "name": {
+    "type": "string",
+    "value": "Bank clearly color safe born."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Though situation from develop. Yes difference million cost research international. Collection say financial."
+  },
+  "description": {
+    "type": "string",
+    "value": "Need record half country military."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "History start a sound article in. Million well likely difficult son manage administration."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:Glucose:items:KXZR:70407791",
+      "urn:ngsi-ld:Glucose:items:KYIF:96473148"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:Glucose:items:HSIL:33388034",
+      "urn:ngsi-ld:Glucose:items:HWWV:68040790"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        35.1666325,
+        -13.973505
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Need explain yourself trip head. Away difficult bit grow. Name page service bit old bad.",
+      "addressLocality": "Improve from particularly night whose soon. Treat talk adult control.",
+      "addressRegion": "Him service relationship employee painting easy. Between season also leg tonight.",
+      "addressCountry": "System prove serious moment rock knowledge while. Memory market call car size.",
+      "postalCode": "Young center through friend somebody. Bit those million hand heavy those. Specific model glass note culture style.",
+      "postOfficeBoxNumber": "Hit able dinner stage line. Whatever around glass specific tough. Present toward rock throughout project."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Camera sport hot animal ask director necessary. Several perhaps traditional listen successful time should. Coach increase leave there with."
+  },
+  "rt": {
+    "type": "array",
+    "value": [
+      "oic.r.glucose",
+      "oic.r.glucose"
+    ]
+  },
+  "glucose": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 596.7
+    }
+  },
+  "units": {
+    "type": "string",
+    "value": "mg/dL"
+  },
+  "range": {
+    "type": "array",
+    "value": [
+      207.3,
+      256.4
+    ]
+  },
+  "step": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 922.2
+    }
+  },
+  "precision": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 25.6
+    }
+  },
+  "n": {
+    "type": "string",
+    "value": "Support far board how resource order physical."
+  },
+  "if": {
+    "type": "array",
+    "value": [
+      "oic.if.baseline",
+      "oic.if.s"
+    ]
+  },
+  "type": {
+    "type": "string",
+    "value": "Glucose"
+  }
+}

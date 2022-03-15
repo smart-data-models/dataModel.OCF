@@ -1,0 +1,119 @@
+{
+  "id": "urn:ngsi-ld:Temperature:id:YJWE:44231919",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1974-10-02T12:25:25Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1982-01-05T09:10:50Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Well culture past key little information. Wrong economic never child."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Hospital across offer surface when difference tend. Hour modern break need organization. Mission management available."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Seem stock list thousand officer remain opportunity. Between believe both never world mean."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Your good drug security either indeed happen than. City another spend history sister indeed. Lay remember sell resource necessary recognize."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Them yourself just. City available performance policy crime term show."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Temperature:items:EASB:74128989",
+      "urn:ngsi-ld:Temperature:items:OBHQ:72441409"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Temperature:items:LNIB:52742786"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        86.8298555,
+        179.323609
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Expect indeed activity military. Take country research above word home grow.",
+      "addressLocality": "Technology black remain find himself. Industry business response relationship there.",
+      "addressRegion": "North although among. Computer specific do avoid beyond fly house recognize. Certainly teacher pay main summer.",
+      "addressCountry": "Girl budget pick cup color. Dream a agency debate tough else explain. Age thousand important take interesting write.",
+      "postalCode": "Leg and safe speak reveal almost know. Soon player hand culture morning own here. Eat start field bill close might media. Development crime wear.",
+      "postOfficeBoxNumber": "Task interest nature choose purpose. Option charge bring other."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Difference herself huge able. Street author heavy born star when response. Smile picture staff human."
+  },
+  "rt": {
+    "type": "Property",
+    "value": [
+      "oic.r.temperature"
+    ]
+  },
+  "temperature": {
+    "type": "Property",
+    "value": 691.4
+  },
+  "units": {
+    "type": "Property",
+    "value": "F"
+  },
+  "n": {
+    "type": "Property",
+    "value": "Current dog involve laugh PM. Option use indeed first then."
+  },
+  "range": {
+    "type": "Property",
+    "value": [
+      717.5,
+      181.7
+    ]
+  },
+  "step": {
+    "type": "Property",
+    "value": 720.9
+  },
+  "precision": {
+    "type": "Property",
+    "value": 909.2
+  },
+  "if": {
+    "type": "Property",
+    "value": [
+      "oic.if.s",
+      "oic.if.a"
+    ]
+  },
+  "type": "Temperature",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

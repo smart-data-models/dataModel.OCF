@@ -1,0 +1,56 @@
+{
+  "id": "urn:ngsi-ld:VehicleConnector:id:JADI:02407105",
+  "dateCreated": "1987-12-29T01:28:41Z",
+  "dateModified": "2007-05-07T23:28:25Z",
+  "source": "Contain member fire popular when great join. Data may job social minute beat east.",
+  "name": "Tv run cold might wall force. Site practice certain state.",
+  "alternateName": "Moment oil trade accept. Especially event piece never. Partner security play mission put support just.",
+  "description": "Case ten according yes. Student only side safe enter. Plan fine civil threat imagine.",
+  "dataProvider": "Month without prepare financial. Theory door number Mrs itself third. Remember job middle energy standard image care.",
+  "owner": [
+    "urn:ngsi-ld:VehicleConnector:items:GOHP:94242286",
+    "urn:ngsi-ld:VehicleConnector:items:DNMA:32514112"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:VehicleConnector:items:FHFN:25053328",
+    "urn:ngsi-ld:VehicleConnector:items:JUMC:26636842"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -65.886465,
+      -22.450009
+    ]
+  },
+  "address": {
+    "streetAddress": "Floor back near although nothing detail. Cultural result page project miss form college. Improve yeah walk sure she whose.",
+    "addressLocality": "Including record happen claim. Itself worry hospital career likely that local. House professional husband record enough set focus. Public goal bank current star begin house.",
+    "addressRegion": "Quality live force just including official. Need season side middle.",
+    "addressCountry": "Under debate city today seem. Rate sing test sport series. Tough public imagine officer answer.",
+    "postalCode": "Health anyone product figure wonder here. You several admit establish everyone age wall. Measure information together technology. Size wish risk move cause Democrat.",
+    "postOfficeBoxNumber": "Beyond defense standard church describe social painting. Matter child capital new sometimes its right. Fact worry fish phone."
+  },
+  "areaServed": "Southern hour success toward agree choose environment. Size feel his computer door eat weight eye.",
+  "rt": [
+    "oic.r.vehicle.connector",
+    "oic.r.vehicle.connector"
+  ],
+  "connected": {
+    "type": "Property",
+    "value": true
+  },
+  "ratedchargingcapacity": {
+    "type": "Property",
+    "value": 385.6
+  },
+  "rateddischargingcapacity": {
+    "type": "Property",
+    "value": 679.8
+  },
+  "n": "East man seven explain worry nation choice. Whether trouble young perhaps friend course. As vote hour professional across home.",
+  "if": [
+    "oic.if.baseline",
+    "oic.if.s"
+  ],
+  "type": "VehicleConnector"
+}

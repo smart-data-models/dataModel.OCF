@@ -1,0 +1,64 @@
+{
+  "id": "urn:ngsi-ld:SensorProps:id:YVXU:42637893",
+  "dateCreated": "2001-03-14T07:22:29Z",
+  "dateModified": "1978-09-22T09:34:56Z",
+  "source": "While simply allow miss like marriage hit. Reveal author guess nearly enjoy.",
+  "name": "Ball financial head read. Stay trial must particularly question range or.",
+  "alternateName": "Front growth room. Study kid young pick.",
+  "description": "Their nature much up. Believe modern quickly particularly heavy better chair body. Great drive stop age loss.",
+  "dataProvider": "Of visit senior training book while happen word. Look improve daughter life explain area new. Place represent option can treat.",
+  "owner": [
+    "urn:ngsi-ld:SensorProps:items:LMHY:88012207",
+    "urn:ngsi-ld:SensorProps:items:JIBE:61713140"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:SensorProps:items:XJZJ:14603122",
+    "urn:ngsi-ld:SensorProps:items:WMHF:99500885"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      10.5752175,
+      -85.719918
+    ]
+  },
+  "address": {
+    "streetAddress": "Of answer cost they soldier image. Serve pull air lay. Structure phone be trade trial those. Position special meeting trip gun second.",
+    "addressLocality": "Standard machine final if read economy. Chair decide under action the notice.",
+    "addressRegion": "One glass pass we. Week production put. Today nice collection look next account determine.",
+    "addressCountry": "Fund place case less wear item article. Customer instead according or better.",
+    "postalCode": "Several reduce rock yet book. Dog sit traditional one network Republican. Great church yard within mission million.",
+    "postOfficeBoxNumber": "Situation enjoy show. Lose from style pretty here. Such chair father prove radio."
+  },
+  "areaServed": "Challenge after behavior again cell because.",
+  "rt": [
+    "oic.r.sensor.props",
+    "oic.r.sensor.props"
+  ],
+  "silenttime": {
+    "type": "Property",
+    "value": 864
+  },
+  "sensitivity": {
+    "type": "Property",
+    "value": 706.5
+  },
+  "n": "Management alone morning million public travel. Sit guess staff once marriage. Wrong describe office seven bit miss off.",
+  "range": [
+    846.0,
+    714.8
+  ],
+  "step": {
+    "type": "Property",
+    "value": 782.2
+  },
+  "precision": {
+    "type": "Property",
+    "value": 770.3
+  },
+  "if": [
+    "oic.if.baseline",
+    "oic.if.baseline"
+  ],
+  "type": "SensorProps"
+}

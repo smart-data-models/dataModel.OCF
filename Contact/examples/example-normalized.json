@@ -1,0 +1,104 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:Contact:id:HMUT:83435609"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "2019-11-03T13:34:13Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1987-05-08T16:34:27Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Yet back writer so bank nature south. Resource including speak."
+  },
+  "name": {
+    "type": "string",
+    "value": "Court material main five appear. Answer face bad leader."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Especially term detail beautiful. Coach step agreement home."
+  },
+  "description": {
+    "type": "string",
+    "value": "Country off allow rate record. Growth when economy save. Example later whom son audience."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "Important pick red while machine take. Born baby because back way hit play."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:Contact:items:VORM:50502773",
+      "urn:ngsi-ld:Contact:items:ADVX:61609895"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:Contact:items:KLNB:69768334",
+      "urn:ngsi-ld:Contact:items:ITWA:14516433"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        53.154571,
+        157.418088
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Part physical really head work past maintain. Late third kitchen suffer fund fill each. Four three your heart industry employee realize.",
+      "addressLocality": "Behind explain show mission. Thousand forward wall. Size worry any town chance.",
+      "addressRegion": "Job ever design toward boy citizen. Happy city part rule present try. Indicate doctor job look different.",
+      "addressCountry": "Despite cup fund thank fight hard camera. Myself area pull watch dog.",
+      "postalCode": "Size else present still now. Country support choose treatment manager.",
+      "postOfficeBoxNumber": "Food often candidate century popular huge. After culture tend feel. Sport win because according election present customer."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Take reflect member. Next attack discover employee sit accept. Range available nearly impact federal how receive view."
+  },
+  "rt": {
+    "type": "array",
+    "value": [
+      "oic.r.sensor.contact",
+      "oic.r.sensor.contact"
+    ]
+  },
+  "value": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": false
+    }
+  },
+  "n": {
+    "type": "string",
+    "value": "Condition lay state ask. Him we safe program. Responsibility among imagine everything within pass."
+  },
+  "if": {
+    "type": "array",
+    "value": [
+      "oic.if.s",
+      "oic.if.s"
+    ]
+  },
+  "type": {
+    "type": "string",
+    "value": "Contact"
+  }
+}

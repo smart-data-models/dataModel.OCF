@@ -1,0 +1,118 @@
+{
+  "id": "urn:ngsi-ld:BodyWater:id:BVOV:66825399",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1982-05-18T07:17:49Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1974-02-21T12:36:24Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Lawyer risk doctor project answer them. Summer subject upon detail believe manager."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Without fight require. Country property hear. Thousand television miss understand."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Red our eye edge range. Chair box heavy source without."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Peace message attack great thousand visit read. Guy challenge language natural need. Suddenly may feel."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "List police heavy establish type. Create song region sign he benefit. Story wind message minute phone."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:BodyWater:items:NNZA:54978923",
+      "urn:ngsi-ld:BodyWater:items:HMFG:01092209"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:BodyWater:items:YEXG:25411046"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -6.6273955,
+        -90.098469
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Shake address agency could perform carry. Hundred until wide new make garden. Police identify girl second charge.",
+      "addressLocality": "Lay natural go federal store present. Baby themselves stop program yes growth top.",
+      "addressRegion": "Head score rest. Work southern response build middle particular ball. Service may laugh artist budget.",
+      "addressCountry": "Painting hot senior expert father part play son.",
+      "postalCode": "Field cold card. Career one left factor weight technology buy. Establish institution network car.",
+      "postOfficeBoxNumber": "Performance ground phone discussion. Pass notice he include position able do. Property medical us quite time."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Ask young stuff wear big nothing factor my. Hold real win number."
+  },
+  "rt": {
+    "type": "Property",
+    "value": [
+      "oic.r.body.water"
+    ]
+  },
+  "bwater": {
+    "type": "Property",
+    "value": 659.2
+  },
+  "units": {
+    "type": "Property",
+    "value": "lb"
+  },
+  "range": {
+    "type": "Property",
+    "value": [
+      603.5,
+      483.9
+    ]
+  },
+  "step": {
+    "type": "Property",
+    "value": 70.0
+  },
+  "precision": {
+    "type": "Property",
+    "value": 404.2
+  },
+  "n": {
+    "type": "Property",
+    "value": "Sort maintain talk mission hair. Professional wall interest friend. Authority road cup education movie wait. All concern medical get traditional Mr year involve."
+  },
+  "if": {
+    "type": "Property",
+    "value": [
+      "oic.if.baseline"
+    ]
+  },
+  "type": "BodyWater",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

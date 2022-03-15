@@ -1,0 +1,61 @@
+{
+  "id": "urn:ngsi-ld:mediaSourceList:id:OPFC:36117462",
+  "dateCreated": "1973-09-17T22:36:21Z",
+  "dateModified": "2022-01-05T00:59:32Z",
+  "source": "Before land house chance idea accept opportunity. Buy standard song media. True peace structure identify.",
+  "name": "Speak fine hard look among various traditional name. Reveal build the American. Do hold always floor represent blood. Image quite often mind order night.",
+  "alternateName": "Here manager every street. Usually grow raise describe receive box similar.",
+  "description": "Page notice star certain pretty skin.",
+  "dataProvider": "Tough order affect get work change. Result later couple rather speak. School want keep lose. Congress strong two piece consider century nature.",
+  "owner": [
+    "urn:ngsi-ld:mediaSourceList:items:KOOM:38861188",
+    "urn:ngsi-ld:mediaSourceList:items:HIKF:72168563"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:mediaSourceList:items:KQJT:21372746",
+    "urn:ngsi-ld:mediaSourceList:items:NGAT:99587943"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -4.536531,
+      35.505038
+    ]
+  },
+  "address": {
+    "streetAddress": "Interview garden language at style step. Yes memory especially prevent community. Personal old positive couple.",
+    "addressLocality": "Store west body maintain customer.",
+    "addressRegion": "Mrs because activity piece site loss. Break test edge population focus pay career. A gun information understand team own.",
+    "addressCountry": "Young phone low though likely. Provide thought part draw build.",
+    "postalCode": "Boy small letter six business box.",
+    "postOfficeBoxNumber": "Off performance yourself ahead explain. Single style politics study common pretty."
+  },
+  "areaServed": "Particular also scientist. Eye sing body foreign themselves. Thing expert bed article.",
+  "rt": [
+    "oic.r.media.input",
+    "oic.r.media.input"
+  ],
+  "sources": [
+    {
+      "sourceName": "West and happy culture finally lawyer final.",
+      "sourceNumber": "Beat claim another them adult how. Always image despite until.",
+      "sourceType": "audioOnly",
+      "status": true
+    },
+    {
+      "sourceName": "Notice church production back. Describe key site great commercial product water. Important career ever near call. Together right determine network government our forward.",
+      "sourceNumber": "Such society pull these close product top. Experience unit fear drop standard available light. High organization artist sell fish.",
+      "sourceType": "audioOnly",
+      "status": true
+    }
+  ],
+  "n": "Sport husband ago movement letter affect. None continue wait building indicate. Wonder sign of huge.",
+  "if": [
+    "oic.if.a",
+    "oic.if.baseline"
+  ],
+  "type": "mediaSourceList",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

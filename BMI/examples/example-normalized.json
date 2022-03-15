@@ -1,0 +1,125 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:BMI:id:VDFV:55667741"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1972-08-04T01:32:47Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1990-12-10T18:23:52Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Perhaps particularly over news. Section ability young read whose experience put."
+  },
+  "name": {
+    "type": "string",
+    "value": "Figure risk bill other. Manage account sell language middle learn."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Campaign military adult maintain movie our more. Figure energy small include little institution. Something government anyone there spend skill."
+  },
+  "description": {
+    "type": "string",
+    "value": "Fly person development around control. Discover back nature politics apply crime teach recognize. Give nearly collection resource left site agree meeting."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "Box scientist major really face everything final remember. Notice cover leave feel out word activity listen."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:BMI:items:TLGO:89545122",
+      "urn:ngsi-ld:BMI:items:ZSQM:54988728"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:BMI:items:EWVZ:54612682",
+      "urn:ngsi-ld:BMI:items:HUQO:69722028"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        54.2093595,
+        -81.722699
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Bag key computer home. Pm view however right speech.",
+      "addressLocality": "Response smile place our.",
+      "addressRegion": "Little poor public sense. Else race ready.",
+      "addressCountry": "Example prepare arm bag spend movie simple today. Skin her research box.",
+      "postalCode": "Their street figure decade parent. Land respond whatever generation explain.",
+      "postOfficeBoxNumber": "Power receive which certainly shake organization better. Congress discussion where suddenly specific too west. Dog hear series voice glass open white."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Administration hundred ever speak medical. Another movement live environment author let show. Sit myself third later boy put poor."
+  },
+  "rt": {
+    "type": "array",
+    "value": [
+      "oic.r.bmi",
+      "oic.r.bmi"
+    ]
+  },
+  "bmi": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 969.4
+    }
+  },
+  "range": {
+    "type": "array",
+    "value": [
+      966.8,
+      231.5
+    ]
+  },
+  "step": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 326.9
+    }
+  },
+  "precision": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 465.9
+    }
+  },
+  "n": {
+    "type": "string",
+    "value": "Mother various avoid few describe. Develop deal artist write end down language. Yourself section staff authority already."
+  },
+  "if": {
+    "type": "array",
+    "value": [
+      "oic.if.baseline",
+      "oic.if.baseline"
+    ]
+  },
+  "type": {
+    "type": "string",
+    "value": "BMI"
+  }
+}

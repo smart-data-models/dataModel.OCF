@@ -1,0 +1,59 @@
+{
+  "id": "urn:ngsi-ld:ColourTemp:id:SIGR:57783175",
+  "dateCreated": "2013-02-09T19:26:34Z",
+  "dateModified": "1980-05-22T11:29:50Z",
+  "source": "Social race dream improve between. Mind hear final mother hundred happen. Suddenly fact mother mouth city campaign resource.",
+  "name": "Reality these sometimes choice begin hit. Spring full offer common receive situation. Ability well personal across cold.",
+  "alternateName": "Identify stay local dream main apply government. Identify clearly forget subject it lawyer. High skill need nice factor. Save like international sense bar produce source.",
+  "description": "Ground the long toward tend someone. Social risk bank oil better weight wide.",
+  "dataProvider": "Night likely into issue particularly school. For career team since pattern. Few red bed year situation.",
+  "owner": [
+    "urn:ngsi-ld:ColourTemp:items:GIII:86193381",
+    "urn:ngsi-ld:ColourTemp:items:LEUS:66364515"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:ColourTemp:items:IKWJ:11271274",
+    "urn:ngsi-ld:ColourTemp:items:WUAG:37359340"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      35.625337,
+      124.92428
+    ]
+  },
+  "address": {
+    "streetAddress": "Movie Democrat sometimes. Structure visit instead believe. Risk sense three action chance.",
+    "addressLocality": "Mouth call whom make black. Both wrong small in. Member field with position her include home. School particularly require behind data.",
+    "addressRegion": "Contain interview weight summer. Able change rock trial stock check. Recently name finish dinner business. Common issue Congress city.",
+    "addressCountry": "Anything purpose just step tell performance. Effect find say outside first really sing. Subject rate yet fire box per. Religious sound call range within believe.",
+    "postalCode": "Space move law customer box impact. Former dark economy if.",
+    "postOfficeBoxNumber": "Minute power to plant charge. Determine over training wear campaign stock. Force most final. Thing admit since goal especially soon letter ago."
+  },
+  "areaServed": "Skin every federal son table. Charge surface letter movie radio.",
+  "rt": [
+    "oic.r.colour.colourtemperature",
+    "oic.r.colour.colourtemperature"
+  ],
+  "ct": {
+    "type": "Property",
+    "value": 864
+  },
+  "n": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair.",
+  "range": [
+    864,
+    864
+  ],
+  "step": {
+    "type": "Property",
+    "value": 864
+  },
+  "if": [
+    "oic.if.a",
+    "oic.if.baseline"
+  ],
+  "type": "ColourTemp",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

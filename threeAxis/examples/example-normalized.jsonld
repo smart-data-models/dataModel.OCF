@@ -1,0 +1,104 @@
+{
+  "id": "urn:ngsi-ld:threeAxis:id:HWJT:19776306",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2019-08-17T14:34:59Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1973-09-02T07:45:08Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Film president near election agent teacher. Learn organization green play moment ball role."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Born fight agreement then computer top describe page. Task loss compare financial attack."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Computer building service so life actually effort. Entire bed interest data. Teach world operation Congress general major."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Including detail building Mr might. Think participant east section."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Response to anything investment beautiful possible network."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:threeAxis:items:RFJU:81627755",
+      "urn:ngsi-ld:threeAxis:items:RTKZ:08401097"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:threeAxis:items:LHRP:82492240"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        47.491969,
+        151.603806
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Southern much knowledge edge. With smile vote card forward reach.",
+      "addressLocality": "Red seven believe hard rule arrive move place. Smile drop home future family debate. Political blue guess paper lose cup.",
+      "addressRegion": "Kid not test else age research. Reveal number would music. Then range less general.",
+      "addressCountry": "Need international consider soon month toward. Total person particularly author authority everybody Mr set.",
+      "postalCode": "Home live history tough. Least ever president buy spend look. Phone man race role develop friend with.",
+      "postOfficeBoxNumber": "Less message certain prevent age major. Far answer onto sometimes employee significant."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Rise financial technology option natural quickly. Sure offer memory."
+  },
+  "rt": {
+    "type": "Property",
+    "value": [
+      "oic.r.sensor.threeaxis"
+    ]
+  },
+  "orientation": {
+    "type": "Property",
+    "value": [
+      533.4,
+      302.7,
+      612.3
+    ]
+  },
+  "n": {
+    "type": "Property",
+    "value": "Change term dream officer memory. Institution here on financial develop popular relationship choice."
+  },
+  "if": {
+    "type": "Property",
+    "value": [
+      "oic.if.baseline",
+      "oic.if.baseline"
+    ]
+  },
+  "type": "threeAxis",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

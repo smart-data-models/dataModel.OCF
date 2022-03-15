@@ -1,0 +1,124 @@
+{
+  "id": "urn:ngsi-ld:Geolocation:id:GSZV:79226802",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1988-11-27T04:38:06Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1988-11-11T00:10:18Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Develop three cell take hard design. Door behavior once. Second prove father likely economy begin interview. Argue staff value."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Friend young have clearly. Then before wife like. Black join also pressure administration. Choose executive past century hot four music various."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Magazine rather two share section. Teach build size food quickly group."
+  },
+  "description": {
+    "type": "Property",
+    "value": "News main according always. Strategy difference throughout factor enough."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Sell along ground look window forget. Class which result enter type organization interview him. Smile student oil."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Geolocation:items:HLNO:95575236",
+      "urn:ngsi-ld:Geolocation:items:MFNZ:26753486"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Geolocation:items:OAET:30926469"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        50.524751,
+        -158.916106
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Vote area ability support growth give black what. Course either garden should. Rise when huge sometimes director production newspaper.",
+      "addressLocality": "Low process crime floor development resource. Bring east different view could.",
+      "addressRegion": "Someone thing television environmental more member bar list. Successful beyond she best.",
+      "addressCountry": "Office item cultural factor I month. Student policy have.",
+      "postalCode": "Experience really add long better college food. Campaign fight reason add. Past lead actually author under.",
+      "postOfficeBoxNumber": "Race shake its money."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Imagine hotel close some prepare force find glass. Develop to nature professor weight senior."
+  },
+  "rt": {
+    "type": "Property",
+    "value": [
+      "oic.r.sensor.geolocation"
+    ]
+  },
+  "longitude": {
+    "type": "Property",
+    "value": 166.3
+  },
+  "heading": {
+    "type": "Property",
+    "value": 348.5
+  },
+  "latitude": {
+    "type": "Property",
+    "value": 935.3
+  },
+  "altitudeAccuracy": {
+    "type": "Property",
+    "value": 319.9
+  },
+  "alt": {
+    "type": "Property",
+    "value": 418.0
+  },
+  "accuracy": {
+    "type": "Property",
+    "value": 388.1
+  },
+  "speed": {
+    "type": "Property",
+    "value": 300.2
+  },
+  "n": {
+    "type": "Property",
+    "value": "Task type road every wide well. Decide bag care public."
+  },
+  "if": {
+    "type": "Property",
+    "value": [
+      "oic.if.baseline",
+      "oic.if.s"
+    ]
+  },
+  "type": "Geolocation",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

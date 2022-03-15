@@ -1,0 +1,64 @@
+{
+  "id": "urn:ngsi-ld:Sensor:id:EEVF:23119928",
+  "dateCreated": "1991-01-27T02:40:57Z",
+  "dateModified": "1971-12-13T00:43:58Z",
+  "source": "Term event garden father large.",
+  "name": "Hundred number record population speak democratic consider. Describe exist ok also black imagine son.",
+  "alternateName": "Measure bank part still low century. Wind our our foreign prove southern. Hit moment drop anyone. According eye hospital have fund partner.",
+  "description": "Amount until similar Mr debate. Other skin high term challenge Mrs building. Whatever stay our this.",
+  "dataProvider": "Plant suggest decision movement. Training term put agent common eat help while. Single morning offer detail other man look. Baby age dinner task right property lot.",
+  "owner": [
+    "urn:ngsi-ld:Sensor:items:NGFL:29340842",
+    "urn:ngsi-ld:Sensor:items:HZVS:91325080"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:Sensor:items:SVWN:41330440",
+    "urn:ngsi-ld:Sensor:items:DLFC:40040901"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -19.9539755,
+      -135.278603
+    ]
+  },
+  "address": {
+    "streetAddress": "Into Mrs old blood. Reflect better land direction.",
+    "addressLocality": "One thus five the stand our open. Large approach in hard place. Business begin program kid. Religious include home guy now five feel hour.",
+    "addressRegion": "Out both range clearly just. Event they realize this somebody.",
+    "addressCountry": "Every only vote stock he power list. Believe contain inside next buy bill particularly food.",
+    "postalCode": "Century major more. Rise glass anyone sit our class family thing.",
+    "postOfficeBoxNumber": "That direction attention significant though article day. Hour various south note later."
+  },
+  "areaServed": "Another article Mr. Determine art treat answer. Career list cold from stuff rather material.",
+  "rt": [
+    "oic.r.sensor",
+    "oic.r.sensor"
+  ],
+  "value": {
+    "type": "Property",
+    "value": false
+  },
+  "measurement": {
+    "type": "Property",
+    "value": 96.8
+  },
+  "precision": {
+    "type": "Property",
+    "value": 314.9
+  },
+  "n": "Between apply probably seat half. Republican world accept job.",
+  "range": [
+    791.0,
+    897.9
+  ],
+  "step": {
+    "type": "Property",
+    "value": 917.7
+  },
+  "if": [
+    "oic.if.s",
+    "oic.if.baseline"
+  ],
+  "type": "Sensor"
+}

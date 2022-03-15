@@ -1,0 +1,137 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:DRLC:id:YRHU:68741537"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1997-12-08T23:27:56Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "2004-11-30T18:19:55Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Condition save total return wind about article. Together month born stay service ball."
+  },
+  "name": {
+    "type": "string",
+    "value": "Sound development easy site. Baby subject national financial purpose dream."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Magazine her today measure condition business system. There indicate student soldier pass ahead."
+  },
+  "description": {
+    "type": "string",
+    "value": "Open character course picture wait pattern study."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "However team white order drive appear."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:DRLC:items:WBMF:71307654",
+      "urn:ngsi-ld:DRLC:items:UAKJ:45716313"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:DRLC:items:OBII:13287673",
+      "urn:ngsi-ld:DRLC:items:LAIX:63931275"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        57.1700595,
+        -147.083571
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Support most bill whom. Four however little table quality Republican forget maintain.",
+      "addressLocality": "Likely blue president ever. And positive idea present.",
+      "addressRegion": "Guy analysis degree general detail energy. Report big measure teach put around.",
+      "addressCountry": "Son American Mrs say design resource century. Win clearly present prove toward gun increase. That shake card continue book but.",
+      "postalCode": "Here drug should list bag employee. Environmental think discussion customer property. Effort consumer special wonder.",
+      "postOfficeBoxNumber": "Spend whom try. Cultural or natural firm what myself town. Close note expect third especially character."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Law drop director must chair. Turn many single rest country through moment. Trade school teach worker morning."
+  },
+  "rt": {
+    "type": "array",
+    "value": [
+      "oic.r.energy.drlc",
+      "oic.r.energy.drlc"
+    ]
+  },
+  "start": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1995-05-08T04:13:52Z"
+  },
+  "duration": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 864
+    }
+  },
+  "override": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": true
+    }
+  },
+  "DRType": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 864
+    }
+  },
+  "drlevel": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 3
+    }
+  },
+  "mandate": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": false
+    }
+  },
+  "n": {
+    "type": "string",
+    "value": "Else memory if. Whose group through despite cause. Sense peace economy travel."
+  },
+  "if": {
+    "type": "array",
+    "value": [
+      "oic.if.baseline",
+      "oic.if.baseline"
+    ]
+  },
+  "type": {
+    "type": "string",
+    "value": "DRLC"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "id": "urn:ngsi-ld:Torque:id:AHRY:39993102",
+  "dateCreated": "2020-07-30T12:21:20Z",
+  "dateModified": "2000-07-15T22:05:12Z",
+  "source": "Kind democratic example. Safe determine early activity. Response rule cultural student himself administration reality.",
+  "name": "Country but scientist heart structure easy. Chance past life laugh.",
+  "alternateName": "Network serve east moment can. Grow democratic party. Church hour response dream.",
+  "description": "Dog food country blood mean analysis. Practice here gun knowledge remain. Various information day management trip mouth keep might.",
+  "dataProvider": "Blue inside serve culture modern. Identify analysis cover probably leave. Probably senior teach couple.",
+  "owner": [
+    "urn:ngsi-ld:Torque:items:XCPF:15637893",
+    "urn:ngsi-ld:Torque:items:BIEE:45180365"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:Torque:items:CLYF:27135589",
+    "urn:ngsi-ld:Torque:items:LUCC:27975542"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      9.9461635,
+      53.930522
+    ]
+  },
+  "address": {
+    "streetAddress": "Radio people bag control foot person for.",
+    "addressLocality": "Forget somebody list bit ahead. Parent discuss color low accept.",
+    "addressRegion": "Range team public note what explain. Life garden sound dark world course.",
+    "addressCountry": "Blue hair compare issue believe you. Thousand everybody since day give student. Common break question. Policy let daughter challenge risk fast.",
+    "postalCode": "Republican turn war development impact own message. Question despite concern five indeed.",
+    "postOfficeBoxNumber": "With member knowledge newspaper east ahead none beautiful. Want choose physical create upon month. Hundred officer whom movement team within remember."
+  },
+  "areaServed": "Lot move peace water more pass. Whatever marriage outside third knowledge a sense. Have purpose majority court interview.",
+  "torque": {
+    "type": "Property",
+    "value": 73.3
+  },
+  "rt": [
+    "oic.r.torque",
+    "oic.r.torque"
+  ],
+  "n": "Property blood turn fast center standard very. Sit serve never can once about challenge. Try list choice control.",
+  "if": [
+    "oic.if.s",
+    "oic.if.s"
+  ],
+  "range": [
+    29.2,
+    164.7
+  ],
+  "step": {
+    "type": "Property",
+    "value": 742.9
+  },
+  "type": "Torque"
+}

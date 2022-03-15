@@ -1,0 +1,132 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:id:CJHL:94857287"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1997-03-04T06:55:37Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "2017-06-11T05:32:12Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Window manager computer energy participant yourself. Every prevent lay those."
+  },
+  "name": {
+    "type": "string",
+    "value": "Executive simple adult probably agreement. Seek dog room. Off machine middle after theory challenge father."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Base parent hear detail. Likely PM loss chair kind whom take. Begin paper somebody once before order."
+  },
+  "description": {
+    "type": "string",
+    "value": "Reflect billion edge brother. Billion half inside whose prepare. Market evening ahead address population turn."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "Social behind national focus case. Only keep teacher side. Remain among attack probably way believe. Consider like car could."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:items:FUFH:29025073",
+      "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:items:MFGW:68854970"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:items:HUXT:70560900",
+      "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:items:YXWE:18747159"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -11.3563695,
+        44.763616
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Other choose represent accept hard environmental reason event. By world game despite statement real ball.",
+      "addressLocality": "Player traditional forward evening admit. Own hotel little sometimes themselves example eat.",
+      "addressRegion": "Possible appear production PM. Agency cell health civil. Fill performance style teacher military safe. Sport politics already more seat.",
+      "addressCountry": "Rich particular green part young practice region. Development have everything class.",
+      "postalCode": "Light arrive medical brother somebody medical. Anyone determine month conference there throughout.",
+      "postOfficeBoxNumber": "Usually according thing power over whose audience. Property eye nature. Reduce girl return garden however help husband. Establish several owner per water forward."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Focus pull job case possible must which nearly. Thus woman play. Focus religious fly must might field."
+  },
+  "Cvalue": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 809.6
+    }
+  },
+  "Cstatus": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": false
+    }
+  },
+  "rt": {
+    "type": "array",
+    "value": [
+      "oic.r.cgm.calibrate",
+      "oic.r.cgm.calibrate"
+    ]
+  },
+  "n": {
+    "type": "string",
+    "value": "Story catch imagine now mention pressure thousand. Represent week notice government."
+  },
+  "if": {
+    "type": "array",
+    "value": [
+      "oic.if.rw",
+      "oic.if.baseline"
+    ]
+  },
+  "range": {
+    "type": "array",
+    "value": [
+      578.5,
+      349.1
+    ]
+  },
+  "step": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 494.8
+    }
+  },
+  "precision": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 932.6
+    }
+  },
+  "type": {
+    "type": "string",
+    "value": "ContinuousGlucoseMeterCalibrate"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "id": "urn:ngsi-ld:mediaSourceList:id:CPPM:30655362",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2020-01-25T23:40:36Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2010-03-12T23:11:43Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Kid us whole cultural skin."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Range once language agency. Watch my big head information adult everyone. Choose recently event kitchen."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Fast manage explain health argue. Morning well young amount modern sense some front."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Program yet somebody Congress this. Surface cover blood especially just company least. Look thus but over personal whose without. American television relationship work behind."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Lead black rule character clear push sport. Hold court with note develop sound moment."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:mediaSourceList:items:NVPJ:22154045",
+      "urn:ngsi-ld:mediaSourceList:items:LUQB:00068551"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:mediaSourceList:items:ZHVV:58774434"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        44.2340255,
+        41.02291
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Health animal avoid during begin we. Away something store boy really.",
+      "addressLocality": "Not hand role. Must common leader. Cold sister instead because.",
+      "addressRegion": "Member middle dog indicate defense nature pass join. Building single relationship then upon. Detail wish trouble various include ability bad.",
+      "addressCountry": "Level learn middle range food. Picture include author move everything though. Better community difficult yard ball simple him resource.",
+      "postalCode": "Together more participant probably. Stuff after eye natural.",
+      "postOfficeBoxNumber": "Speech around few opportunity. Popular should buy rate share. Tv ground space them federal."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Hot hair recent argue resource risk she nature. Grow live about poor suffer almost others."
+  },
+  "rt": {
+    "type": "Property",
+    "value": [
+      "oic.r.media.input"
+    ]
+  },
+  "sources": {
+    "type": "Property",
+    "value": [
+      {
+        "sourceName": "Expert tend million upon decade fund employee.",
+        "sourceNumber": "Better late me. White possible seem them society million speech. Watch offer under middle employee of site lose.",
+        "sourceType": "videoOnly",
+        "status": true
+      },
+      {
+        "sourceName": "Feel design that.",
+        "sourceNumber": "News black else even win. Able change relationship avoid role food.",
+        "sourceType": "videoOnly",
+        "status": true
+      }
+    ]
+  },
+  "n": {
+    "type": "Property",
+    "value": "Everyone quite respond detail reach law nearly. Group skill could look talk develop population."
+  },
+  "if": {
+    "type": "Property",
+    "value": [
+      "oic.if.baseline",
+      "oic.if.a"
+    ]
+  },
+  "type": "mediaSourceList",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

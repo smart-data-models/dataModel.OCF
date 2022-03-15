@@ -1,0 +1,100 @@
+{
+  "id": "urn:ngsi-ld:Contact:id:PHQT:43656254",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1979-06-21T02:42:47Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2009-05-13T06:47:50Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Project need follow simply brother. Gas continue everyone those language. Receive new always yard ever both."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Special nice how today culture. Grow age world step quickly how move off. Here style data no bill discussion."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Window more similar contain. Anything song key."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Debate bank spend technology father."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Billion democratic behind fly memory. Poor window significant accept look amount probably."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Contact:items:EONI:36946282",
+      "urn:ngsi-ld:Contact:items:JZPI:03143081"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Contact:items:IKIB:26985774"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -16.2109895,
+        118.55362
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Our food use business but. Push behavior affect quite small travel.",
+      "addressLocality": "Bad front check fight. Ten must place fast. Pattern chance some. Police forget certain once degree wrong page scientist.",
+      "addressRegion": "Parent campaign notice can agent back produce career. Under color style difference. Summer recognize join good type hospital thought argue. Still public foreign if camera thus.",
+      "addressCountry": "Meet me television social research industry. Voice also seat police. Assume stay color time western pay. Style rather build specific.",
+      "postalCode": "Certainly join deal agent mention entire speak. No space little attorney number nor firm old. Simple red six day consider recognize.",
+      "postOfficeBoxNumber": "Stop middle individual since truth exist expect expect. Husband yeah learn beat. Bed reduce identify old Democrat whole citizen."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Allow coach population sit movement local. Catch budget piece matter."
+  },
+  "rt": {
+    "type": "Property",
+    "value": [
+      "oic.r.sensor.contact"
+    ]
+  },
+  "value": {
+    "type": "Property",
+    "value": false
+  },
+  "n": {
+    "type": "Property",
+    "value": "Half daughter officer product travel toward every. Live never impact."
+  },
+  "if": {
+    "type": "Property",
+    "value": [
+      "oic.if.baseline",
+      "oic.if.baseline"
+    ]
+  },
+  "type": "Contact",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

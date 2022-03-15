@@ -1,0 +1,72 @@
+{
+  "id": "urn:ngsi-ld:BloodPressure:id:FWRY:98906666",
+  "dateCreated": "2011-02-21T13:43:08Z",
+  "dateModified": "2007-05-05T04:35:49Z",
+  "source": "Development minute same clear painting audience. Single ready church low social message. Sister up receive travel perform physical material. Trade word world open then energy claim.",
+  "name": "Again center newspaper catch democratic way. Throw age while professional hear five.",
+  "alternateName": "School radio lose structure. Way marriage these answer.",
+  "description": "Test career add behind explain media doctor near. Fire hope job people. Owner front enjoy material economic would development.",
+  "dataProvider": "West game your style. Arrive now stock left against officer.",
+  "owner": [
+    "urn:ngsi-ld:BloodPressure:items:YVEO:41144099",
+    "urn:ngsi-ld:BloodPressure:items:UWAN:50182026"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:BloodPressure:items:ZADQ:82722565",
+    "urn:ngsi-ld:BloodPressure:items:KENT:89839721"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      44.0087455,
+      -5.319791
+    ]
+  },
+  "address": {
+    "streetAddress": "Particular personal second. Create bad because light draw message year PM. Lay wrong even call.",
+    "addressLocality": "Land middle part war money when other fish. Part fact reflect fund.",
+    "addressRegion": "During leader matter important follow.",
+    "addressCountry": "Only message off what what soldier firm. Continue spend present offer leave run head.",
+    "postalCode": "Defense resource certain different. So local director region.",
+    "postOfficeBoxNumber": "Glass condition president indicate any. Rise might move give thought local huge."
+  },
+  "areaServed": "Herself world allow work. Point nice sort amount summer standard. Capital dinner parent power. Help election reach.",
+  "rt": [
+    "oic.r.blood.pressure",
+    "oic.r.blood.pressure"
+  ],
+  "map": {
+    "type": "Property",
+    "value": 934.7
+  },
+  "units": "mmHg",
+  "systolic": {
+    "type": "Property",
+    "value": 907.5
+  },
+  "diastolic": {
+    "type": "Property",
+    "value": 687.6
+  },
+  "if": [
+    "oic.if.s",
+    "oic.if.baseline"
+  ],
+  "range": [
+    395.4,
+    494.6
+  ],
+  "step": {
+    "type": "Property",
+    "value": 948.3
+  },
+  "precision": {
+    "type": "Property",
+    "value": 716.2
+  },
+  "n": "Very human south price. Case sign fight data myself quickly relationship. Deep different set respond necessary share produce.",
+  "type": "BloodPressure",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

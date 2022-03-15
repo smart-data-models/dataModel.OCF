@@ -1,0 +1,129 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:BodySoftLeanMass:id:OGDW:46540242"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1989-06-11T22:18:29Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1978-12-15T19:26:12Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Machine each so food push. Fund beautiful culture image. Very soon with miss stage food kitchen."
+  },
+  "name": {
+    "type": "string",
+    "value": "Base next themselves. Few eight true life."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Group court morning get. Avoid go claim. Use office around indicate prove paper."
+  },
+  "description": {
+    "type": "string",
+    "value": "Nation method system Mrs. Visit into set. Number happen should develop avoid power. Cultural should interesting could free image threat."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "Home remember if it able. Low drug final. Kitchen only best also significant sing."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:BodySoftLeanMass:items:DKRY:82217410",
+      "urn:ngsi-ld:BodySoftLeanMass:items:ZCMK:67258121"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:BodySoftLeanMass:items:TBOM:56057423",
+      "urn:ngsi-ld:BodySoftLeanMass:items:BBVH:69926810"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        38.8551175,
+        -154.708855
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Operation such under list whether improve. Lose first myself large account red. Near similar involve. Charge can law include and western.",
+      "addressLocality": "Watch employee from professional hear particular. Same save little town. Least goal stay seat.",
+      "addressRegion": "Role environmental top. Direction day usually them level development western financial.",
+      "addressCountry": "Career these western whom. Officer interview family fact. Always party stand development perform require machine drug.",
+      "postalCode": "South answer story. Hold fight when I each. Natural actually bit investment. Compare without where prepare take.",
+      "postOfficeBoxNumber": "Probably minute source great. Republican ask on whose week matter major. Age ago heart political."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Yard difficult fill resource however open. Term like politics nothing."
+  },
+  "rt": {
+    "type": "array",
+    "value": [
+      "oic.r.body.slm",
+      "oic.r.body.slm"
+    ]
+  },
+  "slm": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 331.6
+    }
+  },
+  "units": {
+    "type": "string",
+    "value": "lb"
+  },
+  "range": {
+    "type": "array",
+    "value": [
+      918.8,
+      946.6
+    ]
+  },
+  "step": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 240.5
+    }
+  },
+  "precision": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 850.2
+    }
+  },
+  "n": {
+    "type": "string",
+    "value": "Enter part history small. Everyone difficult else feeling."
+  },
+  "if": {
+    "type": "array",
+    "value": [
+      "oic.if.baseline",
+      "oic.if.baseline"
+    ]
+  },
+  "type": {
+    "type": "string",
+    "value": "BodySoftLeanMass"
+  }
+}

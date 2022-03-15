@@ -1,0 +1,111 @@
+{
+  "id": "urn:ngsi-ld:ColourTemp:id:MXZP:04964505",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2003-04-02T22:58:26Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1986-08-04T00:21:58Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Safe thousand southern rate top. Them job very."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Although fast perhaps move. Prevent lose our exactly item across author. Off recently minute. Church where large movie."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Notice project take computer. Defense develop rate anything interesting science."
+  },
+  "description": {
+    "type": "Property",
+    "value": "That standard risk. Company wish spend reach movie sell. If hair notice rock writer."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Also beyond full method bar. Check American increase when."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:ColourTemp:items:MJFM:80235046",
+      "urn:ngsi-ld:ColourTemp:items:YIJV:04552958"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:ColourTemp:items:DNNY:14770603"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -45.7508565,
+        70.843307
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Hold matter by worry international right hotel. Machine risk professor himself big time.",
+      "addressLocality": "After various stock event fact. Probably see on trial anyone recent care. Last available rate song.",
+      "addressRegion": "Month family opportunity ground fight certain talk.",
+      "addressCountry": "Appear second course term successful yes someone memory. Remain leg trip million. Laugh good yeah again table tree weight space. Particularly party fish like seem notice.",
+      "postalCode": "Environment level responsibility behavior. Culture scene future stop peace another.",
+      "postOfficeBoxNumber": "My try ask traditional. Its most hair benefit pattern during. Per represent central music tough total society."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Card whether eight quite among. Yes keep particular statement dog million my."
+  },
+  "rt": {
+    "type": "Property",
+    "value": [
+      "oic.r.colour.colourtemperature"
+    ]
+  },
+  "ct": {
+    "type": "Property",
+    "value": 123
+  },
+  "n": {
+    "type": "Property",
+    "value": "Recently movie evidence feeling moment. Like along international. Still likely either garden her human."
+  },
+  "range": {
+    "type": "Property",
+    "value": [
+      972,
+      421
+    ]
+  },
+  "step": {
+    "type": "Property",
+    "value": 785
+  },
+  "if": {
+    "type": "Property",
+    "value": [
+      "oic.if.a",
+      "oic.if.baseline"
+    ]
+  },
+  "type": "ColourTemp",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

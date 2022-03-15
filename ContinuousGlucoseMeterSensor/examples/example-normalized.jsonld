@@ -1,0 +1,118 @@
+{
+  "id": "urn:ngsi-ld:ContinuousGlucoseMeterSensor:id:YJIM:68056027",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2019-03-02T01:19:29Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2016-05-30T02:46:32Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Question four must source also decide role. Bank high word effort. Fine support drive arrive politics institution."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Particularly tell similar recognize card often while. Between within avoid east president."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Little long whose. Still wife beat everyone magazine apply walk."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Cup indeed on simply vote big same modern. Relationship cultural page itself wonder."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Second seem bed tax recent organization. Drug individual movement ball. Show suffer and small table without prepare."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:ContinuousGlucoseMeterSensor:items:OSEN:98502198",
+      "urn:ngsi-ld:ContinuousGlucoseMeterSensor:items:BJDY:06916629"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:ContinuousGlucoseMeterSensor:items:IAUP:42382262"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -83.8309825,
+        16.633986
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Same large can must note guess continue once. Father writer suggest edge meeting. Responsibility poor agreement provide quality instead.",
+      "addressLocality": "Style as I site need. Employee scientist minute American improve. Happen pretty project thank structure individual. Human growth build someone hour ten relate media.",
+      "addressRegion": "Stock try drive city increase avoid. Up behind step term difference offer.",
+      "addressCountry": "Republican east true bring home together it. Ability value sign officer long.",
+      "postalCode": "Activity partner worker week reflect. No choice new word hope. Opportunity operation speak girl far they.",
+      "postOfficeBoxNumber": "East mention meet poor wonder model owner movement. Letter three the describe. Where much decade interest."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Both truth agreement little skill surface. Indicate pretty Democrat Mrs able somebody. Opportunity college spring ask expect couple still audience."
+  },
+  "starttime": {
+    "type": "Property",
+    "value": "Product husband dog science word able. Usually relationship already you."
+  },
+  "runtime": {
+    "type": "Property",
+    "value": 2.8
+  },
+  "rt": {
+    "type": "Property",
+    "value": [
+      "oic.r.cgm.sensor"
+    ]
+  },
+  "n": {
+    "type": "Property",
+    "value": "Picture chair his small small. Story which determine quality."
+  },
+  "if": {
+    "type": "Property",
+    "value": [
+      "oic.if.s"
+    ]
+  },
+  "range": {
+    "type": "Property",
+    "value": [
+      39.0,
+      191.7
+    ]
+  },
+  "step": {
+    "type": "Property",
+    "value": 481.8
+  },
+  "precision": {
+    "type": "Property",
+    "value": 103.6
+  },
+  "type": "ContinuousGlucoseMeterSensor",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

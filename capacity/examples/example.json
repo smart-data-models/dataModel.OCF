@@ -1,0 +1,48 @@
+{
+  "id": "urn:ngsi-ld:capacity:id:OKVJ:33594794",
+  "dateCreated": "2016-12-11T21:09:57Z",
+  "dateModified": "1996-07-20T18:21:27Z",
+  "source": "Main former put good. Again doctor law year.",
+  "name": "Site report institution anyone society summer. Really dark difference age. President dark throughout seat computer reality him fish.",
+  "alternateName": "Course carry model painting thus beat. Section step build say indeed father.",
+  "description": "Future by exist evening field rock. Power near ready true recent miss. Life a much be reality health wide.",
+  "dataProvider": "It step charge water need. Ahead do vote against success human.",
+  "owner": [
+    "urn:ngsi-ld:capacity:items:PMUG:26598192",
+    "urn:ngsi-ld:capacity:items:SDUE:71510759"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:capacity:items:BJNP:08236092",
+    "urn:ngsi-ld:capacity:items:LHGM:61864509"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -8.0115965,
+      59.096009
+    ]
+  },
+  "address": {
+    "streetAddress": "Staff its protect least. Though himself interesting its start room. Crime group specific others unit fish.",
+    "addressLocality": "Send speak bar lay late road long. Economy put finish specific. Radio attention floor positive collection. Eye son sell win system cultural involve behavior.",
+    "addressRegion": "Talk stop state.",
+    "addressCountry": "Authority phone year newspaper learn scene these performance. Easy bit someone truth past. Scientist response identify be enjoy wife.",
+    "postalCode": "Network his against most north debate event. Data data central very anything.",
+    "postOfficeBoxNumber": "Born four amount soon approach unit family. Hundred up away bring piece middle fear. Require answer foot cell choice nor."
+  },
+  "areaServed": "Somebody they prepare education allow. Free base reveal school over.",
+  "rt": [
+    "oic.r.hvac.capacity",
+    "oic.r.hvac.capacity"
+  ],
+  "capacity": {
+    "type": "Property",
+    "value": 941.1
+  },
+  "n": "Artist risk morning important can create time. Possible stuff participant medical its hundred. Mother writer particular almost.",
+  "if": [
+    "oic.if.baseline",
+    "oic.if.baseline"
+  ],
+  "type": "capacity"
+}

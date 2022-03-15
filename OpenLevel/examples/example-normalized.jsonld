@@ -1,0 +1,111 @@
+{
+  "id": "urn:ngsi-ld:OpenLevel:id:GFHN:95096500",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2021-02-12T19:29:57Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1984-01-25T00:06:23Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Final too tax still traditional majority. Certainly tough admit."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Class good main page parent. Note wind series few wide. Base surface environment inside Democrat better pay. High action enter ground marriage card community."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Tough move something deep fact so. Already order read act owner wish. Both one each."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Might stock eight a."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Sign dog indicate wrong. Affect never school face notice finally while."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:OpenLevel:items:DFVT:37088837",
+      "urn:ngsi-ld:OpenLevel:items:SEGJ:48404454"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:OpenLevel:items:APOK:02229473"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -50.800692,
+        135.281918
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Also would attorney. Number ability approach season. Imagine only age program.",
+      "addressLocality": "Response effort wait human where particularly pay. Concern language response able police toward tell.",
+      "addressRegion": "Music study they item admit name beautiful. House capital goal national. Discover treat table ready summer defense. West away high training force ground every.",
+      "addressCountry": "Impact themselves contain nearly time cup later. Real view box foot. Focus why sense year job daughter work.",
+      "postalCode": "Cold prove answer off. Recognize second attention how everybody cause. Want defense model relationship attorney maybe they. Win mother both chair.",
+      "postOfficeBoxNumber": "Talk trial budget property coach much white."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Spring yet collection. Live information case mention particularly notice report."
+  },
+  "rt": {
+    "type": "Property",
+    "value": [
+      "oic.r.openlevel"
+    ]
+  },
+  "openLevel": {
+    "type": "Property",
+    "value": 586
+  },
+  "n": {
+    "type": "Property",
+    "value": "Between letter everything. Fish into collection final commercial these."
+  },
+  "range": {
+    "type": "Property",
+    "value": [
+      564,
+      341
+    ]
+  },
+  "step": {
+    "type": "Property",
+    "value": 695
+  },
+  "if": {
+    "type": "Property",
+    "value": [
+      "oic.if.baseline",
+      "oic.if.a"
+    ]
+  },
+  "type": "OpenLevel",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

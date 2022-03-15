@@ -1,0 +1,68 @@
+{
+  "id": "urn:ngsi-ld:DRLC:id:YRHU:68741537",
+  "dateCreated": "1997-12-08T23:27:56Z",
+  "dateModified": "2004-11-30T18:19:55Z",
+  "source": "Condition save total return wind about article. Together month born stay service ball.",
+  "name": "Sound development easy site. Baby subject national financial purpose dream.",
+  "alternateName": "Magazine her today measure condition business system. There indicate student soldier pass ahead.",
+  "description": "Open character course picture wait pattern study.",
+  "dataProvider": "However team white order drive appear.",
+  "owner": [
+    "urn:ngsi-ld:DRLC:items:WBMF:71307654",
+    "urn:ngsi-ld:DRLC:items:UAKJ:45716313"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:DRLC:items:OBII:13287673",
+    "urn:ngsi-ld:DRLC:items:LAIX:63931275"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      57.1700595,
+      -147.083571
+    ]
+  },
+  "address": {
+    "streetAddress": "Support most bill whom. Four however little table quality Republican forget maintain.",
+    "addressLocality": "Likely blue president ever. And positive idea present.",
+    "addressRegion": "Guy analysis degree general detail energy. Report big measure teach put around.",
+    "addressCountry": "Son American Mrs say design resource century. Win clearly present prove toward gun increase. That shake card continue book but.",
+    "postalCode": "Here drug should list bag employee. Environmental think discussion customer property. Effort consumer special wonder.",
+    "postOfficeBoxNumber": "Spend whom try. Cultural or natural firm what myself town. Close note expect third especially character."
+  },
+  "areaServed": "Law drop director must chair. Turn many single rest country through moment. Trade school teach worker morning.",
+  "rt": [
+    "oic.r.energy.drlc",
+    "oic.r.energy.drlc"
+  ],
+  "start": "1995-05-08T04:13:52Z",
+  "duration": {
+    "type": "Property",
+    "value": 864
+  },
+  "override": {
+    "type": "Property",
+    "value": true
+  },
+  "DRType": {
+    "type": "Property",
+    "value": 864
+  },
+  "drlevel": {
+    "type": "Property",
+    "value": 3
+  },
+  "mandate": {
+    "type": "Property",
+    "value": false
+  },
+  "n": "Else memory if. Whose group through despite cause. Sense peace economy travel.",
+  "if": [
+    "oic.if.baseline",
+    "oic.if.baseline"
+  ],
+  "type": "DRLC",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

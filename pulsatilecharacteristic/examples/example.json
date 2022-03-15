@@ -1,0 +1,56 @@
+{
+  "id": "urn:ngsi-ld:pulsatilecharacteristic:id:YHCK:29783958",
+  "dateCreated": "1976-02-28T05:22:23Z",
+  "dateModified": "2017-07-16T13:00:46Z",
+  "source": "Yet agreement bill answer hope social turn. Letter about loss simple.",
+  "name": "Financial wall black. Fund lay writer allow need.",
+  "alternateName": "Chance another opportunity board science. Sometimes east firm traditional heavy talk. Where democratic agree majority.",
+  "description": "Why we behavior support. Republican fine character. Management range me color reduce only accept.",
+  "dataProvider": "Why large entire simply recognize policy center. Responsibility start one film family condition away. Individual condition suggest reveal. Kind gas weight life.",
+  "owner": [
+    "urn:ngsi-ld:pulsatilecharacteristic:items:BFZF:28818876",
+    "urn:ngsi-ld:pulsatilecharacteristic:items:AMNC:70571781"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:pulsatilecharacteristic:items:AZOK:81117701",
+    "urn:ngsi-ld:pulsatilecharacteristic:items:CDIN:32720162"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      15.6929545,
+      -154.323339
+    ]
+  },
+  "address": {
+    "streetAddress": "Modern store western training.",
+    "addressLocality": "Program manager prove heart raise key once. Least lay compare. In prevent baby.",
+    "addressRegion": "Subject our baby line. Vote its your society record. Find remain space capital structure. List offer although computer reflect.",
+    "addressCountry": "Early right size whole teacher trip. Over behavior ok positive.",
+    "postalCode": "Single industry skill like blue shake box. Adult sound would yeah.",
+    "postOfficeBoxNumber": "Lay plant possible involve huge. Ok me always specific white growth. Generation check end visit TV quality family."
+  },
+  "areaServed": "During effect type short light. Structure pretty stock heavy list officer laugh actually.",
+  "characteristic": {
+    "type": "Property",
+    "value": 3
+  },
+  "rt": [
+    "oic.r.pulsatilecharacteristic",
+    "oic.r.pulsatilecharacteristic"
+  ],
+  "n": "Magazine truth stop whose group through despite. Example sense peace economy.",
+  "if": [
+    "oic.if.baseline",
+    "oic.if.baseline"
+  ],
+  "range": [
+    864,
+    864
+  ],
+  "step": {
+    "type": "Property",
+    "value": 864
+  },
+  "type": "pulsatilecharacteristic"
+}

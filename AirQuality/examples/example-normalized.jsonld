@@ -1,0 +1,115 @@
+{
+  "id": "urn:ngsi-ld:AirQuality:id:LNQC:72550215",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1977-12-12T05:27:39Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2013-02-06T05:53:44Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Successful he may. Civil soldier well whom challenge anyone. True director bad material control but. Want entire nothing herself middle song."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Finish line north particularly wait step. Child argue add."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Do especially world tonight remember."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Film wish edge star address lose action drive. Safe may decide college. Agent everybody available party range. Owner turn baby response."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Quickly boy hour indeed wish success. Police break reach able unit. Particularly painting around light lose."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:AirQuality:items:CBIB:33216193",
+      "urn:ngsi-ld:AirQuality:items:RJZC:40470330"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:AirQuality:items:IZCL:58197135"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        16.41076,
+        -119.319515
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Create policy name full. Trial care card along open investment. Individual great while knowledge.",
+      "addressLocality": "Parent school through visit property various nature. Position picture a how director.",
+      "addressRegion": "Certainly become deep. Buy image strategy. It quite edge already executive nation same. More window left real.",
+      "addressCountry": "Report picture series tough final attorney. Hold mind take myself reduce. Majority chair check magazine.",
+      "postalCode": "Enjoy professor low. Building customer loss chair management. Goal factor gun. Administration create very physical eye phone.",
+      "postOfficeBoxNumber": "Hear window pay door image stage TV. Budget second response since fill interview."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Case really society describe. Live responsibility knowledge goal degree station."
+  },
+  "rt": {
+    "type": "Property",
+    "value": [
+      "oic.r.airquality"
+    ]
+  },
+  "contaminanttype": {
+    "type": "Property",
+    "value": "NO2"
+  },
+  "valuetype": {
+    "type": "Property",
+    "value": "Measured"
+  },
+  "contaminantvalue": {
+    "type": "Property",
+    "value": 939
+  },
+  "n": {
+    "type": "Property",
+    "value": "Happen opportunity town religious parent social bad. Mean parent nature understand cell stuff."
+  },
+  "range": {
+    "type": "Property",
+    "value": [
+      728,
+      9
+    ]
+  },
+  "if": {
+    "type": "Property",
+    "value": [
+      "oic.if.s",
+      "oic.if.s"
+    ]
+  },
+  "type": "AirQuality",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

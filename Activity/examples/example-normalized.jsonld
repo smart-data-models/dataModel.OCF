@@ -1,0 +1,167 @@
+{
+  "id": "urn:ngsi-ld:Activity:id:MZWF:26893545",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1983-04-27T11:52:16Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2010-10-31T00:41:19Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Expert mouth media difficult anyone pull must. Employee let father can easy opportunity fact. In begin appear."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Feel everyone form. City reality exactly believe different open least. Lawyer pay travel foreign."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Once have cold she writer size. Direction girl some into memory close receive."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Garden author drop place dinner method notice. Subject head true environment leave."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "North ready because probably in yourself professional."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Activity:items:XPCK:51151835",
+      "urn:ngsi-ld:Activity:items:EEHP:04982258"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Activity:items:GSIY:61112353"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        20.34346,
+        68.954533
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Pass else western century perhaps relate for. Perhaps suffer product loss office. Action first idea fact everybody.",
+      "addressLocality": "Attention decade course everything. Line sell three over senior player measure. Country movement almost true change idea.",
+      "addressRegion": "Else much time heavy two detail. Similar drug want enjoy sure surface. Mean market total.",
+      "addressCountry": "Hundred high ability grow professional own often film.",
+      "postalCode": "Current seat explain keep spring certainly yourself. Room toward agreement.",
+      "postOfficeBoxNumber": "Positive memory small family energy. Peace value eye reflect teach study dinner hospital. Three of may street election I night."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "System management responsibility least."
+  },
+  "activity": {
+    "type": "Property",
+    "value": "sleep"
+  },
+  "steps_day": {
+    "type": "Property",
+    "value": 308
+  },
+  "steps_reset": {
+    "type": "Property",
+    "value": 221
+  },
+  "ccal_day": {
+    "type": "Property",
+    "value": 140.9
+  },
+  "ccal_reset": {
+    "type": "Property",
+    "value": 545.7
+  },
+  "rt": {
+    "type": "Property",
+    "value": [
+      "oic.r.activity"
+    ]
+  },
+  "n": {
+    "type": "Property",
+    "value": "Simple figure consumer my defense across tough. Decision religious attorney."
+  },
+  "if": {
+    "type": "Property",
+    "value": [
+      "oic.if.s"
+    ]
+  },
+  "steps_day_range": {
+    "type": "Property",
+    "value": [
+      935,
+      193
+    ]
+  },
+  "steps_day_step": {
+    "type": "Property",
+    "value": 21
+  },
+  "steps_reset_range": {
+    "type": "Property",
+    "value": [
+      513,
+      809
+    ]
+  },
+  "steps_reset_step": {
+    "type": "Property",
+    "value": 890
+  },
+  "ccal_day_range": {
+    "type": "Property",
+    "value": [
+      506.1,
+      443.7
+    ]
+  },
+  "ccal_day_step": {
+    "type": "Property",
+    "value": 70.2
+  },
+  "ccal_day_precision": {
+    "type": "Property",
+    "value": 588.3
+  },
+  "ccal_reset_range": {
+    "type": "Property",
+    "value": [
+      533.3,
+      185.3
+    ]
+  },
+  "ccal_reset_step": {
+    "type": "Property",
+    "value": 823.7
+  },
+  "ccal_reset_precision": {
+    "type": "Property",
+    "value": 802.8
+  },
+  "type": "Activity",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

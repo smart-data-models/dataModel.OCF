@@ -1,0 +1,118 @@
+{
+  "id": "urn:ngsi-ld:Weight:id:SJPG:70921933",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1993-03-15T11:24:45Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2015-07-28T06:46:49Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Later white success officer bag."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Environmental notice also home professional occur picture. Land mention charge whether good."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Many happen family better. They bed treatment across son service believe. Protect sport citizen key high that. Leg office sign head."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Animal prepare include run. Structure big represent contain of here head."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Important candidate case fight senior wife. President mean we your."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Weight:items:WCAY:56473919",
+      "urn:ngsi-ld:Weight:items:DUDL:86411480"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Weight:items:QLPQ:72550779"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        62.3391355,
+        -48.594117
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Week perform real soon but discuss expect leader. End front reach benefit price. Put personal usually size Mrs industry.",
+      "addressLocality": "Money four middle but author free speech town.",
+      "addressRegion": "Institution prove certain first page car lay. Evening look speak Democrat technology recognize. There five arrive line last material.",
+      "addressCountry": "Green strategy forget yard good finally.",
+      "postalCode": "Design seat enough artist over. Treatment necessary question protect class fill call.",
+      "postOfficeBoxNumber": "Record girl president particularly actually group. Sense you continue she. Alone some teach."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Rest anyone specific great source offer. Analysis range available entire."
+  },
+  "rt": {
+    "type": "Property",
+    "value": [
+      "oic.r.weight"
+    ]
+  },
+  "weight": {
+    "type": "Property",
+    "value": 573.9
+  },
+  "units": {
+    "type": "Property",
+    "value": "oz"
+  },
+  "range": {
+    "type": "Property",
+    "value": [
+      998.1,
+      197.8
+    ]
+  },
+  "step": {
+    "type": "Property",
+    "value": 718.8
+  },
+  "precision": {
+    "type": "Property",
+    "value": 946.7
+  },
+  "n": {
+    "type": "Property",
+    "value": "Somebody would commercial life population third. Live involve save."
+  },
+  "if": {
+    "type": "Property",
+    "value": [
+      "oic.if.a"
+    ]
+  },
+  "type": "Weight",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

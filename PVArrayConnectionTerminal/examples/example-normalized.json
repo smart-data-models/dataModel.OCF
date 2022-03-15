@@ -1,0 +1,144 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:PVArrayConnectionTerminal:id:PBQS:43835461"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "2012-07-24T16:11:16Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "2003-05-24T19:12:32Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Area able surface south attention measure involve. Establish product because floor reason exist design effect. Place point Republican conference ten. Professional teach budget mother unit."
+  },
+  "name": {
+    "type": "string",
+    "value": "Send offer season significant. Or glass especially Democrat enter spring people."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Six benefit relationship. Language stay she fact explain growth sister. Reach reveal police day key read office."
+  },
+  "description": {
+    "type": "string",
+    "value": "Two might million benefit continue specific clearly street. Society dream show of."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "Bad either recently rate candidate plan. Deep young again pass provide something ok."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:PVArrayConnectionTerminal:items:GZHR:33550282",
+      "urn:ngsi-ld:PVArrayConnectionTerminal:items:JFYB:81797940"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:PVArrayConnectionTerminal:items:QZDS:82605439",
+      "urn:ngsi-ld:PVArrayConnectionTerminal:items:CCOW:10298726"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -16.2130695,
+        103.091866
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Like business much top tree fish. Exist place he two. Weight stop ball development yard already. Record cultural ground foreign purpose director make.",
+      "addressLocality": "Police subject cup figure media stuff. My through sure good scene. Less action among hard quite leave stand apply.",
+      "addressRegion": "Notice my power know water standard. Actually none effect at smile.",
+      "addressCountry": "Production defense however dinner say successful. Ok model enter subject kid reduce art.",
+      "postalCode": "Physical management she fish land director. Name nothing beyond kitchen.",
+      "postOfficeBoxNumber": "Rock economic add physical power. Away physical size woman garden surface foreign."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Over choice nearly they budget find. Power others environmental since page brother party house."
+  },
+  "rt": {
+    "type": "array",
+    "value": [
+      "oic.r.pvconnectionterminal",
+      "oic.r.pvconnectionterminal"
+    ]
+  },
+  "ratedarrayvoltage": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 391.0
+    }
+  },
+  "ratedarraycurrent": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 169.2
+    }
+  },
+  "arrayvoltage": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 763.9
+    }
+  },
+  "arraycurrent": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 519.0
+    }
+  },
+  "leakagecurrent": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 313.0
+    }
+  },
+  "insulationresistance": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 348.8
+    }
+  },
+  "timestamp": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1979-06-05T23:42:36Z"
+  },
+  "n": {
+    "type": "string",
+    "value": "Reason movie student performance. Best gas including. Huge food deep relate raise fear."
+  },
+  "if": {
+    "type": "array",
+    "value": [
+      "oic.if.baseline",
+      "oic.if.s"
+    ]
+  },
+  "type": {
+    "type": "string",
+    "value": "PVArrayConnectionTerminal"
+  }
+}

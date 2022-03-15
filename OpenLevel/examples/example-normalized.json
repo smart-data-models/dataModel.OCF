@@ -1,0 +1,118 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:OpenLevel:id:DXZU:90727712"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1974-06-12T04:22:16Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "2001-04-01T12:10:53Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Model fact everybody subject listen rather suggest. Within crime ok central sing unit thing. Family car eye very."
+  },
+  "name": {
+    "type": "string",
+    "value": "Traditional understand reduce two ok between. Claim today herself sing travel. Every while expect down best society."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Issue lose certain this fish. Sport hour he force benefit because. Company year rule Mrs despite."
+  },
+  "description": {
+    "type": "string",
+    "value": "Color discussion college by partner team back less. Impact front official watch meet."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "Leave thus thing only treatment. Which more operation mouth."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:OpenLevel:items:ZFES:00965111",
+      "urn:ngsi-ld:OpenLevel:items:VBPJ:93015429"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:OpenLevel:items:KREP:15798269",
+      "urn:ngsi-ld:OpenLevel:items:EWJY:42743420"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        74.6360845,
+        80.399151
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Especially tend successful thousand thank occur. Security three so choose somebody staff.",
+      "addressLocality": "Maybe drug government war. Suffer but thank all street call full account. Responsibility himself mission half claim market information.",
+      "addressRegion": "Within environmental black head capital raise daughter. Throw matter need author spend industry fly. Enter board try little their group.",
+      "addressCountry": "Would suffer traditional couple woman always sort brother. Near agency blood number continue.",
+      "postalCode": "We determine dog figure source talk. Pay data result carry sort. Same sell huge only ever.",
+      "postOfficeBoxNumber": "Knowledge fall well art doctor. They raise international. Choice require event."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Front dinner third term figure. Project also none spring compare identify."
+  },
+  "rt": {
+    "type": "array",
+    "value": [
+      "oic.r.openlevel",
+      "oic.r.openlevel"
+    ]
+  },
+  "openLevel": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 864
+    }
+  },
+  "n": {
+    "type": "string",
+    "value": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair."
+  },
+  "range": {
+    "type": "array",
+    "value": [
+      864,
+      864
+    ]
+  },
+  "step": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 864
+    }
+  },
+  "if": {
+    "type": "array",
+    "value": [
+      "oic.if.a",
+      "oic.if.baseline"
+    ]
+  },
+  "type": {
+    "type": "string",
+    "value": "OpenLevel"
+  }
+}

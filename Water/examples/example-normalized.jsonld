@@ -1,0 +1,118 @@
+{
+  "id": "urn:ngsi-ld:Water:id:IGIX:52349323",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2008-12-09T09:24:38Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1970-07-26T10:30:36Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Wait method certain to. Three prevent southern turn market outside. Should night edge policy benefit any store. Audience keep else on name."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Democratic especially behavior good discover recognize behavior. Reason yeah nice population."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "East majority painting fact. Watch recognize city system result simply concern. Song possible on accept."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Either movement understand manage call. Seven market table mouth feeling now base. Short size act sound."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Industry national task lay. Thank as line level."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Water:items:QYEH:60886268",
+      "urn:ngsi-ld:Water:items:SCJR:34861037"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Water:items:VHGW:29144445"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -38.9642505,
+        -126.072131
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Give represent government use eye. Police road return focus.",
+      "addressLocality": "Someone area I oil. Military wind direction yes environmental.",
+      "addressRegion": "Possible hold can. Born likely group.",
+      "addressCountry": "Future upon information learn certain. Democrat argue wind member. Current probably campaign seem language young future above.",
+      "postalCode": "Big push federal weight play. Involve onto however soldier contain. Give raise because over.",
+      "postOfficeBoxNumber": "Democrat ahead when return poor well. Speech effort those. Simply particular big they better."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Rule full country result community central environment. Memory authority popular election alone."
+  },
+  "rt": {
+    "type": "Property",
+    "value": [
+      "oic.r.sensor.water"
+    ]
+  },
+  "value": {
+    "type": "Property",
+    "value": false
+  },
+  "measurement": {
+    "type": "Property",
+    "value": 488.6
+  },
+  "precision": {
+    "type": "Property",
+    "value": 976.2
+  },
+  "n": {
+    "type": "Property",
+    "value": "Mind arm popular rate never. Similar so body box. Reflect right development."
+  },
+  "range": {
+    "type": "Property",
+    "value": [
+      450.6,
+      89.0
+    ]
+  },
+  "step": {
+    "type": "Property",
+    "value": 832.4
+  },
+  "if": {
+    "type": "Property",
+    "value": [
+      "oic.if.baseline"
+    ]
+  },
+  "type": "Water",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

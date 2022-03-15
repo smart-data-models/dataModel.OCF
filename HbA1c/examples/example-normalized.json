@@ -1,0 +1,125 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:HbA1c:id:UWED:68312299"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1977-01-27T17:50:21Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1993-11-12T19:53:01Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Strong option relationship fact. Item kitchen pass show. Meeting personal upon."
+  },
+  "name": {
+    "type": "string",
+    "value": "Picture physical reason break glass. Small step lose above capital his."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Opportunity first show main particular life. Individual back these note. Box foreign surface reality think."
+  },
+  "description": {
+    "type": "string",
+    "value": "Real expect however prevent song design behind. Three finish manage religious present. There this process meet who."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "So seem office. By president alone fight economic production school few."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:HbA1c:items:ZRBL:34609429",
+      "urn:ngsi-ld:HbA1c:items:IRSV:73111056"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:HbA1c:items:NWVA:01008160",
+      "urn:ngsi-ld:HbA1c:items:NIJP:00792290"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -18.431417,
+        -61.000553
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Popular hold wear notice. Defense head professional win reduce.",
+      "addressLocality": "Security rock production public rather movie return base. Agreement national TV leave around international. Agency nice face low.",
+      "addressRegion": "Daughter south safe quickly about. Could language traditional soldier growth week better security.",
+      "addressCountry": "Vote work continue that into imagine example. White character last popular fish and. Rate identify issue here possible.",
+      "postalCode": "Low job clear free. Case yard fund majority training.",
+      "postOfficeBoxNumber": "Sure up theory all assume. Nature act enjoy however option industry."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Leg off foreign recent if lot pull. Product majority seven market blue one skill this."
+  },
+  "rt": {
+    "type": "array",
+    "value": [
+      "oic.r.glucose.hba1c",
+      "oic.r.glucose.hba1c"
+    ]
+  },
+  "hba1c": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 67.1
+    }
+  },
+  "range": {
+    "type": "array",
+    "value": [
+      553.7,
+      255.0
+    ]
+  },
+  "step": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 342.7
+    }
+  },
+  "precision": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 978.5
+    }
+  },
+  "n": {
+    "type": "string",
+    "value": "Show front know total soldier spring him. Whatever guy like husband three. Finally Congress teacher partner usually."
+  },
+  "if": {
+    "type": "array",
+    "value": [
+      "oic.if.s",
+      "oic.if.s"
+    ]
+  },
+  "type": {
+    "type": "string",
+    "value": "HbA1c"
+  }
+}

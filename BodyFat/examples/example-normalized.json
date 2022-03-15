@@ -1,0 +1,129 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:BodyFat:id:NCXO:90580036"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "2005-02-19T20:56:16Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "2005-11-28T17:19:04Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Attack force rise tree author. Feeling clearly prepare much commercial everyone might quality."
+  },
+  "name": {
+    "type": "string",
+    "value": "The health whether feel. Five investment never base collection official. West later close without only country same affect."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Support not big recently media wind near. Writer suffer kind population scene he any."
+  },
+  "description": {
+    "type": "string",
+    "value": "Yeah model bar cup population mention meeting hundred."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "Thing yourself thing fly control."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:BodyFat:items:PVXS:05086008",
+      "urn:ngsi-ld:BodyFat:items:XFWO:96280071"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:BodyFat:items:HPXB:45693919",
+      "urn:ngsi-ld:BodyFat:items:LODK:47292476"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -75.359217,
+        169.747483
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Return responsibility future nature child travel themselves. Listen show production skin offer individual artist.",
+      "addressLocality": "Question find unit. Newspaper program do television speech game attorney difference.",
+      "addressRegion": "Will piece character hair agency over. Red quickly wait west. Heavy consider couple.",
+      "addressCountry": "Nor factor off Democrat research event low. Red media possible quickly role color evidence approach.",
+      "postalCode": "Hold drop tough ask material mind simply. Hope lot environment scene only night challenge.",
+      "postOfficeBoxNumber": "Fear food out modern hotel town every. Since authority field minute sort finish. Against campaign science mention week myself."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Treatment claim morning away individual anyone international. Economy girl morning."
+  },
+  "rt": {
+    "type": "array",
+    "value": [
+      "oic.r.body.fat",
+      "oic.r.body.fat"
+    ]
+  },
+  "bodyfat": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 828.2
+    }
+  },
+  "units": {
+    "type": "string",
+    "value": "kg"
+  },
+  "range": {
+    "type": "array",
+    "value": [
+      744.7,
+      370.0
+    ]
+  },
+  "step": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 990.8
+    }
+  },
+  "precision": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 238.8
+    }
+  },
+  "n": {
+    "type": "string",
+    "value": "Either establish then long war eat. Tell ground describe home determine similar. Democrat someone development young nation. Defense total explain trial."
+  },
+  "if": {
+    "type": "array",
+    "value": [
+      "oic.if.baseline",
+      "oic.if.baseline"
+    ]
+  },
+  "type": {
+    "type": "string",
+    "value": "BodyFat"
+  }
+}

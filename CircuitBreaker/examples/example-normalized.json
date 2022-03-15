@@ -1,0 +1,141 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:CircuitBreaker:id:GAWA:26483322"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1975-09-18T13:42:58Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "2017-02-05T13:44:17Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Right site might whose and."
+  },
+  "name": {
+    "type": "string",
+    "value": "Open lose material big eight military benefit believe. Someone daughter peace draw sit say beautiful."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Job night make station take take page. Save reduce each by strong."
+  },
+  "description": {
+    "type": "string",
+    "value": "Week after represent economy leave. Physical threat area hard difficult road minute grow."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "Today build staff score like."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:CircuitBreaker:items:FSTL:10434961",
+      "urn:ngsi-ld:CircuitBreaker:items:PTJI:96858742"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:CircuitBreaker:items:GAYB:75604341",
+      "urn:ngsi-ld:CircuitBreaker:items:HJGW:42840646"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        1.1981925,
+        -156.48494
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Country as close board worry car score other. Treatment likely between century church author raise.",
+      "addressLocality": "Family mean strategy future federal. Term article rise article business grow make. Visit art by choice morning politics.",
+      "addressRegion": "Individual him business purpose. Bad interesting smile.",
+      "addressCountry": "Focus agency know note town season policy respond. Up represent building though official. Cut sort serious every compare describe.",
+      "postalCode": "Practice happy today social somebody less. Standard common half door team move.",
+      "postOfficeBoxNumber": "Cup song notice than. On look building likely. Leave from option style reality score kind. Together natural learn."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Remember pressure whole form industry interest wish. Forget week dark avoid themselves say mother."
+  },
+  "rt": {
+    "type": "array",
+    "value": [
+      "oic.r.circuitbreaker",
+      "oic.r.circuitbreaker"
+    ]
+  },
+  "status": {
+    "type": "string",
+    "value": "off"
+  },
+  "ratedcurrent": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 479.6
+    }
+  },
+  "ratedbreakingcurrent": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 999.7
+    }
+  },
+  "ratedvoltage": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 816.8
+    }
+  },
+  "leakagecurrent": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 790.2
+    }
+  },
+  "insulationresistance": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 966.6
+    }
+  },
+  "timestamp": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1972-10-08T10:26:39Z"
+  },
+  "n": {
+    "type": "string",
+    "value": "Child admit group hit too. Wind eye can."
+  },
+  "if": {
+    "type": "array",
+    "value": [
+      "oic.if.s",
+      "oic.if.baseline"
+    ]
+  },
+  "type": {
+    "type": "string",
+    "value": "CircuitBreaker"
+  }
+}

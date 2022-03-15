@@ -1,0 +1,56 @@
+{
+  "id": "urn:ngsi-ld:PulseRate:id:NUJB:58758354",
+  "dateCreated": "1971-10-24T12:34:23Z",
+  "dateModified": "1987-09-14T19:28:34Z",
+  "source": "Sometimes with at we prevent Congress. Simply career occur race born program adult. Page behind response ready.",
+  "name": "Customer likely my teach American turn address. Consumer message still moment. Early discover themselves professor car argue material.",
+  "alternateName": "There there these whether brother. Dark Mrs avoid actually still. Government two check democratic suffer appear.",
+  "description": "Itself necessary economic way issue. Certainly four financial soon reveal world social.",
+  "dataProvider": "National here matter probably window such. Road model against candidate baby.",
+  "owner": [
+    "urn:ngsi-ld:PulseRate:items:KBKK:08734295",
+    "urn:ngsi-ld:PulseRate:items:NCCB:30294375"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:PulseRate:items:MPUF:87206651",
+    "urn:ngsi-ld:PulseRate:items:NDCP:58802805"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -78.467846,
+      -21.346787
+    ]
+  },
+  "address": {
+    "streetAddress": "Near stage reach hear throughout. Within onto later reason.",
+    "addressLocality": "Open against trouble study. Possible compare describe foot although. Bill nor word evening despite. Property there lead worry.",
+    "addressRegion": "Sit data recently future decide operation. Five check green hard make million chair.",
+    "addressCountry": "Relate political low around weight collection city. However move sound.",
+    "postalCode": "Against author heart kitchen fire door. Require game staff interest. Nearly executive small trip relationship.",
+    "postOfficeBoxNumber": "Few fill agent behavior drug hit. All treat why subject now according number."
+  },
+  "areaServed": "Late notice skill field. Morning yard we in.",
+  "rt": [
+    "oic.r.pulserate",
+    "oic.r.pulserate"
+  ],
+  "pulserate": {
+    "type": "Property",
+    "value": 864
+  },
+  "if": [
+    "oic.if.s",
+    "oic.if.baseline"
+  ],
+  "range": [
+    864,
+    864
+  ],
+  "step": {
+    "type": "Property",
+    "value": 864
+  },
+  "n": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair.",
+  "type": "PulseRate"
+}

@@ -1,0 +1,61 @@
+{
+  "id": "urn:ngsi-ld:BodyWater:id:MEJE:18514125",
+  "dateCreated": "1997-04-10T16:39:09Z",
+  "dateModified": "2019-05-10T20:10:20Z",
+  "source": "Blue save design whose area church hit crime. Environmental environmental bill music heart finally. Few strong senior peace top book have.",
+  "name": "Behind place every window. Become area between general plan.",
+  "alternateName": "Large different eight collection room market society. Firm trouble live. Pattern concern employee movement. More religious beautiful moment serve Mrs.",
+  "description": "Animal right local sound argue. Image employee deal final good economy continue.",
+  "dataProvider": "Fish rather clearly power less crime. Appear hand science free.",
+  "owner": [
+    "urn:ngsi-ld:BodyWater:items:LMBU:67181228",
+    "urn:ngsi-ld:BodyWater:items:MHGW:24811389"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:BodyWater:items:WKGV:03404439",
+    "urn:ngsi-ld:BodyWater:items:IYRC:15142649"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -77.4914945,
+      -21.70219
+    ]
+  },
+  "address": {
+    "streetAddress": "Memory easy difference. Onto stage purpose throw.",
+    "addressLocality": "Way if because ground. Market this father road. Agency true someone hand dream film.",
+    "addressRegion": "Recently consider most fall central stage. Other can land after.",
+    "addressCountry": "Ask quite lot region us. Thought long majority. Item list fill ready claim.",
+    "postalCode": "Affect adult find rule. They size focus response special.",
+    "postOfficeBoxNumber": "Focus ok industry. Your trial identify until improve speech American practice. Stage what north on someone player physical current."
+  },
+  "areaServed": "Life three degree goal seat. Guess late today family movement form. Stop many air shoulder subject technology.",
+  "rt": [
+    "oic.r.body.water",
+    "oic.r.body.water"
+  ],
+  "bwater": {
+    "type": "Property",
+    "value": 110.0
+  },
+  "units": "kg",
+  "range": [
+    117.8,
+    516.3
+  ],
+  "step": {
+    "type": "Property",
+    "value": 424.7
+  },
+  "precision": {
+    "type": "Property",
+    "value": 730.5
+  },
+  "n": "Think can no natural too half protect production. Board force sport himself say. Fear former collection make on.",
+  "if": [
+    "oic.if.s",
+    "oic.if.baseline"
+  ],
+  "type": "BodyWater"
+}

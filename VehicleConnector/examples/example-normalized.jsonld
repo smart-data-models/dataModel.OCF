@@ -1,0 +1,108 @@
+{
+  "id": "urn:ngsi-ld:VehicleConnector:id:KJFN:91046688",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1979-06-19T14:53:09Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1984-01-17T10:15:27Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Nice kind who a very animal yourself. Cause performance professional parent."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Mean political investment movie never. Look only base play."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Finally nature about degree. But upon cost agreement force continue have. Win even rule especially send and subject."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Less easy state possible much. Cut size east. Rule also care since. Could line foot different."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Concern blood during trip address key. Artist above little tend without cover."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:VehicleConnector:items:QZMD:32671659",
+      "urn:ngsi-ld:VehicleConnector:items:OWTS:91756327"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:VehicleConnector:items:DJCP:79960404"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -22.827501,
+        -44.485689
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Fill science against describe include sign. Air man develop oil shake scene fall. Bring though production science.",
+      "addressLocality": "Draw necessary store catch. Teach half southern understand. Oil mission own move establish available beyond.",
+      "addressRegion": "Bring sound risk they general. Position officer song knowledge war none.",
+      "addressCountry": "Evidence consider summer investment east against heavy line. Course every whole perhaps them fear. End collection report. Interview not goal ground political continue.",
+      "postalCode": "Education thus oil end those. Up feeling approach fire run challenge dog.",
+      "postOfficeBoxNumber": "Range your whether resource couple bad indicate surface. Head expert in data wonder. Song black write happy several billion."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Common him rest understand however color. Answer add during admit they quickly need."
+  },
+  "rt": {
+    "type": "Property",
+    "value": [
+      "oic.r.vehicle.connector"
+    ]
+  },
+  "connected": {
+    "type": "Property",
+    "value": false
+  },
+  "ratedchargingcapacity": {
+    "type": "Property",
+    "value": 519.5
+  },
+  "rateddischargingcapacity": {
+    "type": "Property",
+    "value": 460.6
+  },
+  "n": {
+    "type": "Property",
+    "value": "Education particularly employee trade. Dinner research big hope least accept analysis."
+  },
+  "if": {
+    "type": "Property",
+    "value": [
+      "oic.if.baseline",
+      "oic.if.s"
+    ]
+  },
+  "type": "VehicleConnector",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

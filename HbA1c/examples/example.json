@@ -1,0 +1,60 @@
+{
+  "id": "urn:ngsi-ld:HbA1c:id:UWED:68312299",
+  "dateCreated": "1977-01-27T17:50:21Z",
+  "dateModified": "1993-11-12T19:53:01Z",
+  "source": "Strong option relationship fact. Item kitchen pass show. Meeting personal upon.",
+  "name": "Picture physical reason break glass. Small step lose above capital his.",
+  "alternateName": "Opportunity first show main particular life. Individual back these note. Box foreign surface reality think.",
+  "description": "Real expect however prevent song design behind. Three finish manage religious present. There this process meet who.",
+  "dataProvider": "So seem office. By president alone fight economic production school few.",
+  "owner": [
+    "urn:ngsi-ld:HbA1c:items:ZRBL:34609429",
+    "urn:ngsi-ld:HbA1c:items:IRSV:73111056"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:HbA1c:items:NWVA:01008160",
+    "urn:ngsi-ld:HbA1c:items:NIJP:00792290"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -18.431417,
+      -61.000553
+    ]
+  },
+  "address": {
+    "streetAddress": "Popular hold wear notice. Defense head professional win reduce.",
+    "addressLocality": "Security rock production public rather movie return base. Agreement national TV leave around international. Agency nice face low.",
+    "addressRegion": "Daughter south safe quickly about. Could language traditional soldier growth week better security.",
+    "addressCountry": "Vote work continue that into imagine example. White character last popular fish and. Rate identify issue here possible.",
+    "postalCode": "Low job clear free. Case yard fund majority training.",
+    "postOfficeBoxNumber": "Sure up theory all assume. Nature act enjoy however option industry."
+  },
+  "areaServed": "Leg off foreign recent if lot pull. Product majority seven market blue one skill this.",
+  "rt": [
+    "oic.r.glucose.hba1c",
+    "oic.r.glucose.hba1c"
+  ],
+  "hba1c": {
+    "type": "Property",
+    "value": 67.1
+  },
+  "range": [
+    553.7,
+    255.0
+  ],
+  "step": {
+    "type": "Property",
+    "value": 342.7
+  },
+  "precision": {
+    "type": "Property",
+    "value": 978.5
+  },
+  "n": "Show front know total soldier spring him. Whatever guy like husband three. Finally Congress teacher partner usually.",
+  "if": [
+    "oic.if.s",
+    "oic.if.s"
+  ],
+  "type": "HbA1c"
+}

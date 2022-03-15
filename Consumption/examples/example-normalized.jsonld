@@ -1,0 +1,107 @@
+{
+  "id": "urn:ngsi-ld:Consumption:id:RWEB:24364675",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1989-07-06T18:37:14Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1994-11-08T02:45:06Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Son worry animal. Foot service including any manage policy."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Green decade man. Stuff different too security analysis."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Hundred how live approach. More impact deep agree. Major system represent indeed."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Push country they simply management will. Must pressure quite remain."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Model participant position music three agency yes medical. Thought analysis space sort eight budget. Computer while less sea listen project."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Consumption:items:SUTR:00014807",
+      "urn:ngsi-ld:Consumption:items:SIDL:46053291"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Consumption:items:WHLG:61639670"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -41.379881,
+        -97.456012
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Visit economic size. Raise sign statement.",
+      "addressLocality": "Bar safe production suddenly be. Their former say from recently fact.",
+      "addressRegion": "Give tell everything political admit world fear. Teacher under area feel reveal.",
+      "addressCountry": "Bed dream fast three. Particularly onto enough painting.",
+      "postalCode": "Create nothing major sometimes international work. Management Congress building meet. Teacher minute particular should.",
+      "postOfficeBoxNumber": "Improve report forget or. Congress interview peace nature player. Should TV yard my increase music."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Upon century information event act. Two suggest this health just fly."
+  },
+  "rt": {
+    "type": "Property",
+    "value": [
+      "oic.r.gas.consumption"
+    ]
+  },
+  "if": {
+    "type": "Property",
+    "value": [
+      "oic.if.baseline"
+    ]
+  },
+  "n": {
+    "type": "Property",
+    "value": "Key there sea. Difficult wonder moment paper suggest huge. Fear population major stage."
+  },
+  "gas": {
+    "type": "Property",
+    "value": 217.2
+  },
+  "precision": {
+    "type": "Property",
+    "value": 963.4
+  },
+  "volume": {
+    "type": "Property",
+    "value": 213.0
+  },
+  "type": "Consumption",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

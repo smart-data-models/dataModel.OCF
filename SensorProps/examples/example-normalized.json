@@ -1,0 +1,132 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:SensorProps:id:YVXU:42637893"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "2001-03-14T07:22:29Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1978-09-22T09:34:56Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "While simply allow miss like marriage hit. Reveal author guess nearly enjoy."
+  },
+  "name": {
+    "type": "string",
+    "value": "Ball financial head read. Stay trial must particularly question range or."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Front growth room. Study kid young pick."
+  },
+  "description": {
+    "type": "string",
+    "value": "Their nature much up. Believe modern quickly particularly heavy better chair body. Great drive stop age loss."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "Of visit senior training book while happen word. Look improve daughter life explain area new. Place represent option can treat."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:SensorProps:items:LMHY:88012207",
+      "urn:ngsi-ld:SensorProps:items:JIBE:61713140"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:SensorProps:items:XJZJ:14603122",
+      "urn:ngsi-ld:SensorProps:items:WMHF:99500885"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        10.5752175,
+        -85.719918
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Of answer cost they soldier image. Serve pull air lay. Structure phone be trade trial those. Position special meeting trip gun second.",
+      "addressLocality": "Standard machine final if read economy. Chair decide under action the notice.",
+      "addressRegion": "One glass pass we. Week production put. Today nice collection look next account determine.",
+      "addressCountry": "Fund place case less wear item article. Customer instead according or better.",
+      "postalCode": "Several reduce rock yet book. Dog sit traditional one network Republican. Great church yard within mission million.",
+      "postOfficeBoxNumber": "Situation enjoy show. Lose from style pretty here. Such chair father prove radio."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Challenge after behavior again cell because."
+  },
+  "rt": {
+    "type": "array",
+    "value": [
+      "oic.r.sensor.props",
+      "oic.r.sensor.props"
+    ]
+  },
+  "silenttime": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 864
+    }
+  },
+  "sensitivity": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 706.5
+    }
+  },
+  "n": {
+    "type": "string",
+    "value": "Management alone morning million public travel. Sit guess staff once marriage. Wrong describe office seven bit miss off."
+  },
+  "range": {
+    "type": "array",
+    "value": [
+      846.0,
+      714.8
+    ]
+  },
+  "step": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 782.2
+    }
+  },
+  "precision": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 770.3
+    }
+  },
+  "if": {
+    "type": "array",
+    "value": [
+      "oic.if.baseline",
+      "oic.if.baseline"
+    ]
+  },
+  "type": {
+    "type": "string",
+    "value": "SensorProps"
+  }
+}

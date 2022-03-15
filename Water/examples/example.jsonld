@@ -1,0 +1,67 @@
+{
+  "id": "urn:ngsi-ld:Water:id:ZWTK:51423051",
+  "dateCreated": "1972-06-13T09:00:45Z",
+  "dateModified": "1995-08-14T22:33:37Z",
+  "source": "Up rule production rock catch. Look detail discover knowledge bank. Well a wonder successful suffer follow. Occur less big study despite.",
+  "name": "Allow really nice interesting happy production thank. First technology produce least late task. Garden clearly memory establish market attention.",
+  "alternateName": "Member hot seem town hundred after bit. Teacher top far actually fast herself. Good charge collection improve specific even rule.",
+  "description": "Task somebody soon modern instead cell science. Rise grow himself politics soon success front individual. Win down admit service. College produce policy.",
+  "dataProvider": "Religious person improve relate than approach cut.",
+  "owner": [
+    "urn:ngsi-ld:Water:items:POQB:86877040",
+    "urn:ngsi-ld:Water:items:KRDJ:18769822"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:Water:items:TKJZ:35513270",
+    "urn:ngsi-ld:Water:items:CIRR:73493788"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -56.619548,
+      105.731117
+    ]
+  },
+  "address": {
+    "streetAddress": "Throughout fund much kitchen relationship.",
+    "addressLocality": "Very leave turn again admit decide discuss.",
+    "addressRegion": "Role break many tax.",
+    "addressCountry": "Opportunity what create color. Community would around eight hot civil.",
+    "postalCode": "Major sound great range. Stand hundred lot bring crime hold democratic until. Top together source represent onto prove century.",
+    "postOfficeBoxNumber": "National your easy onto."
+  },
+  "areaServed": "Glass act six. Seven sort set western put agent bad. Capital position his safe skin single country.",
+  "rt": [
+    "oic.r.sensor.water",
+    "oic.r.sensor.water"
+  ],
+  "value": {
+    "type": "Property",
+    "value": true
+  },
+  "measurement": {
+    "type": "Property",
+    "value": 337.9
+  },
+  "precision": {
+    "type": "Property",
+    "value": 149.1
+  },
+  "n": "Sort thank build year allow war possible federal. Bad network reach important strong age.",
+  "range": [
+    59.7,
+    65.7
+  ],
+  "step": {
+    "type": "Property",
+    "value": 404.8
+  },
+  "if": [
+    "oic.if.s",
+    "oic.if.s"
+  ],
+  "type": "Water",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

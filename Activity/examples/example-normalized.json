@@ -1,0 +1,199 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:Activity:id:DUCN:00203733"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1995-09-14T09:07:48Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1976-12-05T00:37:06Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Ability hand reason management. Middle entire room public suggest."
+  },
+  "name": {
+    "type": "string",
+    "value": "Those catch research instead prove up. Career small great sense become certain wait require. Thank break whole street black."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Particularly attention at citizen lead scientist. North conference anyone. Against consider dog seek."
+  },
+  "description": {
+    "type": "string",
+    "value": "Measure his everyone manage participant six."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "Street standard Congress anything. Way million discover nation mission teach. Race table from."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:Activity:items:BRJD:11553936",
+      "urn:ngsi-ld:Activity:items:ZGHH:01998249"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:Activity:items:PTPX:08898077",
+      "urn:ngsi-ld:Activity:items:LQLV:84757861"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        41.0514365,
+        -160.549428
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "His situation focus final. Idea summer determine win every PM time explain.",
+      "addressLocality": "Audience issue policy present growth along. Less ten make picture late allow everyone take.",
+      "addressRegion": "Under surface paper event month. Offer room such the work threat group order.",
+      "addressCountry": "Gun those among cup good inside successful. Base option break poor third.",
+      "postalCode": "Interview someone subject office. Laugh Mrs reason maintain ten source everybody.",
+      "postOfficeBoxNumber": "Party eat hope box lot ready poor. South town room guy. Day throughout exactly actually be."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Many body chair listen protect see kid. Establish born American number civil happy. Letter chance or thus mention size."
+  },
+  "activity": {
+    "type": "string",
+    "value": "walk"
+  },
+  "steps_day": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 864
+    }
+  },
+  "steps_reset": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 864
+    }
+  },
+  "ccal_day": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 927.6
+    }
+  },
+  "ccal_reset": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 848.5
+    }
+  },
+  "rt": {
+    "type": "array",
+    "value": [
+      "oic.r.activity",
+      "oic.r.activity"
+    ]
+  },
+  "n": {
+    "type": "string",
+    "value": "Address future financial sing. Cut outside everybody soon. State they animal case industry chance though. Decision but force economic left report ability."
+  },
+  "if": {
+    "type": "array",
+    "value": [
+      "oic.if.baseline",
+      "oic.if.s"
+    ]
+  },
+  "steps_day_range": {
+    "type": "array",
+    "value": [
+      864,
+      864
+    ]
+  },
+  "steps_day_step": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 864
+    }
+  },
+  "steps_reset_range": {
+    "type": "array",
+    "value": [
+      864,
+      864
+    ]
+  },
+  "steps_reset_step": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 864
+    }
+  },
+  "ccal_day_range": {
+    "type": "array",
+    "value": [
+      428.4,
+      249.0
+    ]
+  },
+  "ccal_day_step": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 23.2
+    }
+  },
+  "ccal_day_precision": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 836.0
+    }
+  },
+  "ccal_reset_range": {
+    "type": "array",
+    "value": [
+      162.8,
+      797.5
+    ]
+  },
+  "ccal_reset_step": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 252.5
+    }
+  },
+  "ccal_reset_precision": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 442.1
+    }
+  },
+  "type": {
+    "type": "string",
+    "value": "Activity"
+  }
+}

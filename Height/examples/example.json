@@ -1,0 +1,61 @@
+{
+  "id": "urn:ngsi-ld:Height:id:RYIB:13844863",
+  "dateCreated": "1996-02-16T02:34:56Z",
+  "dateModified": "2021-01-12T09:16:42Z",
+  "source": "Indeed ten bring however off entire. Kind raise cold expert reduce.",
+  "name": "Almost film behavior. Cut teacher relate model.",
+  "alternateName": "Gas myself old have fear ability fill. Game seven condition can.",
+  "description": "Short language subject have focus. Medical most kitchen ahead since wear. Help morning open economic.",
+  "dataProvider": "Happen food best threat impact under start.",
+  "owner": [
+    "urn:ngsi-ld:Height:items:XXYT:59749058",
+    "urn:ngsi-ld:Height:items:EKFC:11330307"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:Height:items:PSOZ:92305346",
+    "urn:ngsi-ld:Height:items:CQLU:61464845"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -80.5323945,
+      -133.65561
+    ]
+  },
+  "address": {
+    "streetAddress": "Economy way reduce similar. Bring interview again would establish group myself.",
+    "addressLocality": "So certain head truth should where. Year box painting reason try. Thing enter argue write hand. Billion serious morning argue suffer level teacher.",
+    "addressRegion": "Hit she box reason party personal fact. Protect police generation analysis field everything.",
+    "addressCountry": "Who left whose security even executive. Worker there huge surface cause central. Oil animal financial yeah authority. Point south public.",
+    "postalCode": "Save adult cell simple adult nation activity. Light smile state many.",
+    "postOfficeBoxNumber": "Life form receive sure cell marriage room."
+  },
+  "areaServed": "Worry hospital effort ago. Style course throw local thought of. Again inside police film lead lose still smile.",
+  "rt": [
+    "oic.r.height",
+    "oic.r.height"
+  ],
+  "height": {
+    "type": "Property",
+    "value": 942.5
+  },
+  "units": "m",
+  "range": [
+    702.6,
+    504.6
+  ],
+  "step": {
+    "type": "Property",
+    "value": 9.3
+  },
+  "precision": {
+    "type": "Property",
+    "value": 487.5
+  },
+  "n": "Join bar for. Medical see miss sister real. Level nor require drug for clear hair.",
+  "if": [
+    "oic.if.a",
+    "oic.if.s"
+  ],
+  "type": "Height"
+}

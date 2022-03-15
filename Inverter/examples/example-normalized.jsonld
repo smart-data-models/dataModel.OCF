@@ -1,0 +1,131 @@
+{
+  "id": "urn:ngsi-ld:Inverter:id:JJXX:06248424",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1991-06-28T22:23:41Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1995-07-25T00:46:03Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Fear class ability close benefit. We moment score fund allow art."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Never ask too future billion window. May blood class sort message nothing. Fine through accept attorney fish."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Bit middle research church exactly current. Like single ok cup."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Population throw soldier action kitchen soon professor. Particularly which sea away financial of wife."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Night public evening foot section. Clearly talk effort century. Natural attack street unit."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Inverter:items:AWPK:98614702",
+      "urn:ngsi-ld:Inverter:items:FCYN:45549371"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Inverter:items:NTQT:09016096"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        81.1846425,
+        53.749567
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Operation probably one sell. Table stand number heart personal able bank. Draw prove continue second fact truth number loss.",
+      "addressLocality": "Plant street could drop expect. Either late Democrat to. Strategy difference practice address. Low size campaign see political thus.",
+      "addressRegion": "Would smile next body level Mr moment. Something court attack continue. Describe under market especially research weight million measure.",
+      "addressCountry": "Agent go case may break.",
+      "postalCode": "Agree activity without project agree. Its material evidence.",
+      "postOfficeBoxNumber": "Key despite computer apply system into. Exist water key answer building against. Wind site without more health quite good church."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Meeting event office. Fill certain talk safe authority public."
+  },
+  "rt": {
+    "type": "Property",
+    "value": [
+      "oic.r.inverter"
+    ]
+  },
+  "status": {
+    "type": "Property",
+    "value": "trip"
+  },
+  "ratedpower": {
+    "type": "Property",
+    "value": 507.0
+  },
+  "minvoltmppt": {
+    "type": "Property",
+    "value": 937.7
+  },
+  "maxvoltmppt": {
+    "type": "Property",
+    "value": 7.0
+  },
+  "inputvoltage": {
+    "type": "Property",
+    "value": 993.2
+  },
+  "inputcurrent": {
+    "type": "Property",
+    "value": 875.3
+  },
+  "outputpower": {
+    "type": "Property",
+    "value": 799.9
+  },
+  "timestamp": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1972-12-17T09:04:11Z"
+    }
+  },
+  "n": {
+    "type": "Property",
+    "value": "Difficult however coach will cover final hear. Cup husband box they."
+  },
+  "if": {
+    "type": "Property",
+    "value": [
+      "oic.if.baseline",
+      "oic.if.baseline"
+    ]
+  },
+  "type": "Inverter",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

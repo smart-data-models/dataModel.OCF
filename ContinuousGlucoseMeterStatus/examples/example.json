@@ -1,0 +1,66 @@
+{
+  "id": "urn:ngsi-ld:ContinuousGlucoseMeterStatus:id:FOLL:67268630",
+  "dateCreated": "1998-10-08T22:16:19Z",
+  "dateModified": "2006-11-21T05:20:19Z",
+  "source": "Same leg mention interesting throughout lay.",
+  "name": "Interest time want they lot sing air. Poor system event writer. Prepare difficult card structure form present.",
+  "alternateName": "Mean first real upon maintain choice actually woman. Possible term mind coach whole campaign.",
+  "description": "Energy factor join research. Produce ball best son. Want huge big beat guess generation. Perform ahead national do.",
+  "dataProvider": "Relationship difficult rather. Sit she help Republican ability court above state. Maybe mouth image. Born but pretty price father.",
+  "owner": [
+    "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:SHYQ:93356123",
+    "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:EKNP:26634712"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:AIWB:97278201",
+    "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:MDYT:32462764"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      58.850143,
+      165.413238
+    ]
+  },
+  "address": {
+    "streetAddress": "Whom common travel cost laugh start. Cultural general operation operation.",
+    "addressLocality": "Material technology machine just. Single team produce your practice program leg. Card ask medical.",
+    "addressRegion": "Describe cold piece hospital tough amount right traditional. Game try various mean her rule.",
+    "addressCountry": "Do table fast check pay when argue deep.",
+    "postalCode": "Final center but station actually under. Day figure be mother. Town officer skill drug huge each.",
+    "postOfficeBoxNumber": "Old specific star attorney walk put people. Eat better road ok state energy."
+  },
+  "areaServed": "Draw north series leader. Such tell responsibility defense. Weight star hundred set pretty leave.",
+  "cgmtype": "Interstitial Fluid",
+  "cgmstatus": "Serve laugh center base development determine. Way someone opportunity realize around management stay.",
+  "gtrend": {
+    "type": "Property",
+    "value": 912.7
+  },
+  "malfunction": {
+    "type": "Property",
+    "value": true
+  },
+  "rt": [
+    "oic.r.cgm.status",
+    "oic.r.cgm.status"
+  ],
+  "n": "About record want position they argue may. Action recognize must imagine fund leg security. Able rise surface first.",
+  "if": [
+    "oic.if.s",
+    "oic.if.baseline"
+  ],
+  "range": [
+    994.5,
+    959.4
+  ],
+  "step": {
+    "type": "Property",
+    "value": 185.6
+  },
+  "precision": {
+    "type": "Property",
+    "value": 204.8
+  },
+  "type": "ContinuousGlucoseMeterStatus"
+}

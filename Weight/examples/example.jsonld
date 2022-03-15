@@ -1,0 +1,64 @@
+{
+  "id": "urn:ngsi-ld:Weight:id:OJUO:43383279",
+  "dateCreated": "1972-04-12T09:44:39Z",
+  "dateModified": "2020-05-28T11:42:59Z",
+  "source": "Decade then very member. Find above artist store.",
+  "name": "Fact artist sport happen perhaps assume responsibility. Full subject turn design voice road degree discover.",
+  "alternateName": "Listen hospital anything teach foot. Present far food maintain play bring keep billion.",
+  "description": "Artist each follow soldier executive camera wind.",
+  "dataProvider": "Lose where area his kitchen. Box method work us I can ability.",
+  "owner": [
+    "urn:ngsi-ld:Weight:items:BTBX:55752700",
+    "urn:ngsi-ld:Weight:items:RERQ:90930122"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:Weight:items:KRUV:71413026",
+    "urn:ngsi-ld:Weight:items:PTWT:50710894"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -12.433652,
+      172.571818
+    ]
+  },
+  "address": {
+    "streetAddress": "Alone over street network year ask up black. Game meeting population wife sell past country.",
+    "addressLocality": "Rich break base line great prepare speech. Growth above reduce dog.",
+    "addressRegion": "Science various interest civil. Theory value people administration natural. Others how need.",
+    "addressCountry": "Probably field participant report nature. Arm hospital process none already growth.",
+    "postalCode": "Fund listen though suffer phone. Everybody environment movement man left.",
+    "postOfficeBoxNumber": "Their hair call need evidence hospital surface. Mouth newspaper chance resource protect. Court enough hard law trouble second."
+  },
+  "areaServed": "Skin over perform happen. Race action protect teach.",
+  "rt": [
+    "oic.r.weight",
+    "oic.r.weight"
+  ],
+  "weight": {
+    "type": "Property",
+    "value": 732.0
+  },
+  "units": "kg",
+  "range": [
+    25.2,
+    787.6
+  ],
+  "step": {
+    "type": "Property",
+    "value": 227.8
+  },
+  "precision": {
+    "type": "Property",
+    "value": 390.9
+  },
+  "n": "Offer field Mrs music near will big. Wrong offer bag pick phone improve.",
+  "if": [
+    "oic.if.baseline",
+    "oic.if.baseline"
+  ],
+  "type": "Weight",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

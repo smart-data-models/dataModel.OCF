@@ -1,0 +1,118 @@
+{
+  "id": "urn:ngsi-ld:smoke:id:SCJX:93736644",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1993-09-01T10:02:46Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1987-10-14T19:32:15Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Turn turn any thing. Agent common three figure middle six. Quality guess seat late woman beautiful base."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Team voice up base move. Skill me scientist bill course."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Fight mean audience design conference."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Model court power point. Strong authority agent morning. Also audience management dream realize letter."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Produce citizen three top. Throw offer degree."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:smoke:items:GYSB:34245560",
+      "urn:ngsi-ld:smoke:items:RVWA:68557559"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:smoke:items:FELW:31350615"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -23.4820015,
+        85.453417
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Full sit west significant foreign contain. Skill allow key student white.",
+      "addressLocality": "Year instead visit establish. Power senior cell ball fine central discuss.",
+      "addressRegion": "Up process thousand task sell Mr. Cold according lead interest.",
+      "addressCountry": "Investment successful bed professional. Reduce task continue radio across.",
+      "postalCode": "Whether sport man necessary mission or. Change today something left development kind activity. Sound cell since help six writer.",
+      "postOfficeBoxNumber": "Still because painting soldier everybody plant work sport. Rule ago anyone staff."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Take add rate minute long practice security. Where lay price know final knowledge."
+  },
+  "rt": {
+    "type": "Property",
+    "value": [
+      "oic.r.sensor.smoke"
+    ]
+  },
+  "value": {
+    "type": "Property",
+    "value": false
+  },
+  "measurement": {
+    "type": "Property",
+    "value": 805.1
+  },
+  "precision": {
+    "type": "Property",
+    "value": 904.3
+  },
+  "n": {
+    "type": "Property",
+    "value": "Evidence significant because long. Notice change understand trouble toward age leave short. Trial billion capital every try front I."
+  },
+  "range": {
+    "type": "Property",
+    "value": [
+      594.8,
+      68.6
+    ]
+  },
+  "step": {
+    "type": "Property",
+    "value": 31.9
+  },
+  "if": {
+    "type": "Property",
+    "value": [
+      "oic.if.baseline"
+    ]
+  },
+  "type": "smoke",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

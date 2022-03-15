@@ -1,0 +1,118 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:Speed:id:TMBQ:86557501"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1971-05-07T09:22:01Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "2001-02-25T04:31:00Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Standard trip consider development. Analysis walk similar clearly commercial western animal. News mouth year consumer."
+  },
+  "name": {
+    "type": "string",
+    "value": "Office arrive structure down. Make become number mind."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Ahead recognize event guy player land. West community increase sure. Night office account toward."
+  },
+  "description": {
+    "type": "string",
+    "value": "Stock can best face treat first arrive here. She some recent fight wrong white. Somebody month soon future but reflect explain."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "Black member here serve evidence near wind. Learn college say interesting make great affect. Democrat local because treatment."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:Speed:items:EOKC:04139618",
+      "urn:ngsi-ld:Speed:items:LTWJ:10169397"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:Speed:items:ARYG:93617525",
+      "urn:ngsi-ld:Speed:items:IUVN:24628987"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        63.217539,
+        -175.83232
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Red ahead culture reality Mr difficult. Politics involve note just.",
+      "addressLocality": "Ability watch Mrs minute. Artist about quite read exactly education director keep. Director else away power perhaps.",
+      "addressRegion": "Gun more short then action. Skin course father house. Two guess strong onto.",
+      "addressCountry": "Necessary memory drug available newspaper. Discussion modern away coach foot plant.",
+      "postalCode": "Consumer future measure total many order early. Leave defense center around company attorney customer.",
+      "postOfficeBoxNumber": "Direction small strategy oil sit."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Future heart guess kitchen set check official."
+  },
+  "speed": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 242.3
+    }
+  },
+  "rt": {
+    "type": "array",
+    "value": [
+      "oic.r.speed",
+      "oic.r.speed"
+    ]
+  },
+  "n": {
+    "type": "string",
+    "value": "Nice I happy ground foreign fall. Sell style treat. Series build be continue."
+  },
+  "if": {
+    "type": "array",
+    "value": [
+      "oic.if.baseline",
+      "oic.if.s"
+    ]
+  },
+  "range": {
+    "type": "array",
+    "value": [
+      255.1,
+      419.5
+    ]
+  },
+  "step": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 266.2
+    }
+  },
+  "type": {
+    "type": "string",
+    "value": "Speed"
+  }
+}

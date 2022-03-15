@@ -1,0 +1,132 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:Water:id:ZWTK:51423051"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1972-06-13T09:00:45Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1995-08-14T22:33:37Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Up rule production rock catch. Look detail discover knowledge bank. Well a wonder successful suffer follow. Occur less big study despite."
+  },
+  "name": {
+    "type": "string",
+    "value": "Allow really nice interesting happy production thank. First technology produce least late task. Garden clearly memory establish market attention."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Member hot seem town hundred after bit. Teacher top far actually fast herself. Good charge collection improve specific even rule."
+  },
+  "description": {
+    "type": "string",
+    "value": "Task somebody soon modern instead cell science. Rise grow himself politics soon success front individual. Win down admit service. College produce policy."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "Religious person improve relate than approach cut."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:Water:items:POQB:86877040",
+      "urn:ngsi-ld:Water:items:KRDJ:18769822"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:Water:items:TKJZ:35513270",
+      "urn:ngsi-ld:Water:items:CIRR:73493788"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -56.619548,
+        105.731117
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Throughout fund much kitchen relationship.",
+      "addressLocality": "Very leave turn again admit decide discuss.",
+      "addressRegion": "Role break many tax.",
+      "addressCountry": "Opportunity what create color. Community would around eight hot civil.",
+      "postalCode": "Major sound great range. Stand hundred lot bring crime hold democratic until. Top together source represent onto prove century.",
+      "postOfficeBoxNumber": "National your easy onto."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Glass act six. Seven sort set western put agent bad. Capital position his safe skin single country."
+  },
+  "rt": {
+    "type": "array",
+    "value": [
+      "oic.r.sensor.water",
+      "oic.r.sensor.water"
+    ]
+  },
+  "value": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": true
+    }
+  },
+  "measurement": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 337.9
+    }
+  },
+  "precision": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 149.1
+    }
+  },
+  "n": {
+    "type": "string",
+    "value": "Sort thank build year allow war possible federal. Bad network reach important strong age."
+  },
+  "range": {
+    "type": "array",
+    "value": [
+      59.7,
+      65.7
+    ]
+  },
+  "step": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 404.8
+    }
+  },
+  "if": {
+    "type": "array",
+    "value": [
+      "oic.if.s",
+      "oic.if.s"
+    ]
+  },
+  "type": {
+    "type": "string",
+    "value": "Water"
+  }
+}

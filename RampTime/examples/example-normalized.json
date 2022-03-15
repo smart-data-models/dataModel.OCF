@@ -1,0 +1,125 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:RampTime:id:ZHJF:61229976"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "2013-01-02T18:46:37Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1985-03-11T15:55:10Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Since court baby. Nature alone dinner major break organization listen."
+  },
+  "name": {
+    "type": "string",
+    "value": "Industry officer member our. Research similar call exist way by teach. Natural understand organization ever create."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Vote part free over long. Herself room piece save property democratic. Very experience evening play speech record."
+  },
+  "description": {
+    "type": "string",
+    "value": "Operation senior cold edge detail leg. Above theory eye administration economy third. Share personal ready reduce remain through owner."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "He state score. Throw describe then seem federal someone."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:RampTime:items:TGKY:57138477",
+      "urn:ngsi-ld:RampTime:items:QSGQ:84806884"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:RampTime:items:RCKL:49386497",
+      "urn:ngsi-ld:RampTime:items:MEBB:04213405"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        59.1823935,
+        169.242295
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Memory happen condition cold director you dream. Current financial care. Believe we report rest sport indicate sure.",
+      "addressLocality": "Cold culture audience leave question continue office many. Walk note rich generation clearly drive to source.",
+      "addressRegion": "Best meeting public whom us rather. Create citizen get civil local reveal my.",
+      "addressCountry": "Find actually available safe. Pressure many chair must.",
+      "postalCode": "Leave expect where particularly sometimes. Treatment official report make technology production.",
+      "postOfficeBoxNumber": "Describe boy look yeah particular knowledge. Process else threat."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Beautiful successful perform each democratic walk bill. Offer laugh just anyone far. Feel hope likely say into enter explain century."
+  },
+  "rt": {
+    "type": "array",
+    "value": [
+      "oic.r.light.ramptime",
+      "oic.r.light.ramptime"
+    ]
+  },
+  "rampTime": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 864
+    }
+  },
+  "n": {
+    "type": "string",
+    "value": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair."
+  },
+  "range": {
+    "type": "array",
+    "value": [
+      864,
+      864
+    ]
+  },
+  "step": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 864
+    }
+  },
+  "precision": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 24.0
+    }
+  },
+  "if": {
+    "type": "array",
+    "value": [
+      "oic.if.baseline",
+      "oic.if.baseline"
+    ]
+  },
+  "type": {
+    "type": "string",
+    "value": "RampTime"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "id": "urn:ngsi-ld:TimeStamp:id:UEVV:41074270",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2000-12-06T14:34:04Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1987-09-11T01:17:16Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Price discover some million whose remember. Discuss establish who hotel."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Myself state everything officer parent. Whether democratic manage themselves use. Finally even industry thing sign write agreement. Director security group about."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Class similar here author carry table particularly case. Quality during store represent. Race age its do."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Manage hard young his several try. Letter message at result. Old different up simple itself. Mother two soldier outside decade home effort."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Kind but learn well thing and ball. Identify mouth still home vote race view wall. While five every policy."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:TimeStamp:items:WPNG:60576733",
+      "urn:ngsi-ld:TimeStamp:items:OAFN:97290886"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:TimeStamp:items:CXRM:15094818"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -71.802608,
+        -116.144207
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Four race this be foreign time. Effect no control half me discuss decision collection.",
+      "addressLocality": "Quality there sound him close tax smile. Figure experience however free. Mention trouble follow up personal current bed.",
+      "addressRegion": "Wife Mr away size article. Same respond system outside yeah audience. West majority determine grow at car.",
+      "addressCountry": "Interest right shoulder allow real step. Inside six conference wait medical surface. Finish skill base option attorney.",
+      "postalCode": "Both avoid discover way church.",
+      "postOfficeBoxNumber": "Authority dark business media wait rate. Station seem adult international race impact."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Can magazine just trial. Box later second imagine throughout know third evening. Cover later same reveal that focus."
+  },
+  "rt": {
+    "type": "Property",
+    "value": [
+      "oic.r.time.stamp"
+    ]
+  },
+  "timestamp": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1991-12-30T10:38:29Z"
+    }
+  },
+  "n": {
+    "type": "Property",
+    "value": "Card film direction eat cover available. Read network lose laugh structure style. Feeling strategy door benefit stock."
+  },
+  "if": {
+    "type": "Property",
+    "value": [
+      "oic.if.baseline",
+      "oic.if.r"
+    ]
+  },
+  "type": "TimeStamp",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

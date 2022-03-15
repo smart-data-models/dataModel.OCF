@@ -1,0 +1,64 @@
+{
+  "id": "urn:ngsi-ld:BodyFatFreeMass:id:OWUF:38686534",
+  "dateCreated": "2016-04-20T09:01:59Z",
+  "dateModified": "2011-01-29T20:40:15Z",
+  "source": "Third draw do environment college. Author each position.",
+  "name": "Feeling evidence adult loss thing new floor likely. Memory prove back finish record. Number eat fact natural describe able.",
+  "alternateName": "Wish everyone end carry.",
+  "description": "Sign summer house citizen official. Nearly business heart development population.",
+  "dataProvider": "So as today reveal environmental safe right. Pick major environmental listen share day. Star term artist or want.",
+  "owner": [
+    "urn:ngsi-ld:BodyFatFreeMass:items:VNNT:07840154",
+    "urn:ngsi-ld:BodyFatFreeMass:items:KFNY:73865310"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:BodyFatFreeMass:items:KAPP:63866226",
+    "urn:ngsi-ld:BodyFatFreeMass:items:QYFK:82184121"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -30.758229,
+      124.110579
+    ]
+  },
+  "address": {
+    "streetAddress": "Fast ask camera food. Though traditional group number live coach agreement. Thank production hope reflect long else. May science difficult.",
+    "addressLocality": "Special major major sure apply thing operation set. Box tell serve almost simply. Better increase particular group sure both.",
+    "addressRegion": "Social best beyond lead structure. Challenge high beat nature.",
+    "addressCountry": "Staff better standard feel air oil other. Perhaps only newspaper recognize why Congress. High find suffer relationship eight letter door.",
+    "postalCode": "Day back these appear wear. Medical contain consider agent.",
+    "postOfficeBoxNumber": "Allow television gun industry morning. Home ability vote into nearly to."
+  },
+  "areaServed": "Behind cold hot benefit. Or many gas election for none.",
+  "rt": [
+    "oic.r.body.ffm",
+    "oic.r.body.ffm"
+  ],
+  "ffm": {
+    "type": "Property",
+    "value": 103.8
+  },
+  "units": "percent",
+  "range": [
+    974.9,
+    706.9
+  ],
+  "step": {
+    "type": "Property",
+    "value": 406.8
+  },
+  "precision": {
+    "type": "Property",
+    "value": 396.6
+  },
+  "n": "Audience particularly receive offer national course.",
+  "if": [
+    "oic.if.s",
+    "oic.if.s"
+  ],
+  "type": "BodyFatFreeMass",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

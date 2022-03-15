@@ -1,0 +1,118 @@
+{
+  "id": "urn:ngsi-ld:GlucoseCarb:id:COKE:43939058",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1972-10-23T07:02:37Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2020-07-11T01:59:03Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Sound than consumer yet meet around maybe. Tree report deal TV lawyer receive. Take manager several nice million bag."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Family detail federal bad practice as dark. Article really point step southern maintain central worry."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Serious simple art town nor plant state happen. Policy evidence idea game."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Tell magazine field kid free some. I certain picture front key."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Tough interest computer pattern happen less enjoy threat. Role life bad process explain. Finally soon first most. Tend street impact role."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:GlucoseCarb:items:NIZT:03977609",
+      "urn:ngsi-ld:GlucoseCarb:items:DWEA:06806930"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:GlucoseCarb:items:NTWO:83362058"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -73.169997,
+        -161.055539
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "State table pretty account sort detail. Treatment pattern way attorney. Letter drop wish nothing yes indeed.",
+      "addressLocality": "Peace hope popular shoulder career course choose. Husband keep collection machine water.",
+      "addressRegion": "Wear thought box seven wind manager. Pay force surface manager day store. Ok head occur executive range.",
+      "addressCountry": "Whatever administration it often. We fund idea ask capital despite pay.",
+      "postalCode": "Feeling free these certainly brother. So situation court fire rich expert local.",
+      "postOfficeBoxNumber": "Risk big lead particularly audience dinner sign and. Size difficult relationship back thousand realize."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Both rock and defense imagine. Such especially grow civil per. Sea ago spring."
+  },
+  "rt": {
+    "type": "Property",
+    "value": [
+      "oic.r.glucose.carb"
+    ]
+  },
+  "carb": {
+    "type": "Property",
+    "value": 156.3
+  },
+  "meal": {
+    "type": "Property",
+    "value": "undetermined"
+  },
+  "range": {
+    "type": "Property",
+    "value": [
+      730.8,
+      508.3
+    ]
+  },
+  "step": {
+    "type": "Property",
+    "value": 60.5
+  },
+  "precision": {
+    "type": "Property",
+    "value": 892.1
+  },
+  "n": {
+    "type": "Property",
+    "value": "Its program population best. Wind through because then leave expert mouth. Lay tell drug animal law vote degree."
+  },
+  "if": {
+    "type": "Property",
+    "value": [
+      "oic.if.s"
+    ]
+  },
+  "type": "GlucoseCarb",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

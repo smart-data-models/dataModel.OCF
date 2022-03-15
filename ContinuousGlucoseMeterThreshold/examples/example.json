@@ -1,0 +1,80 @@
+{
+  "id": "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:id:CVLC:04532465",
+  "dateCreated": "2004-01-04T01:24:18Z",
+  "dateModified": "2002-01-05T16:59:18Z",
+  "source": "Pull most article nation radio official. Perhaps much recently above suffer knowledge. Box forget theory American room pass six thousand.",
+  "name": "My door old quite force. Position difficult man lose standard grow ground.",
+  "alternateName": "Many level ever nothing market officer discover. Interesting simply summer including apply. Soldier painting movie month always budget artist through.",
+  "description": "Stock one hot allow. Just consider out true. Property data compare send could family very billion.",
+  "dataProvider": "Station enough real green. Night strong final television yes.",
+  "owner": [
+    "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:EIPO:90879168",
+    "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:NTIT:46901124"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:WRLC:85100790",
+    "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:LKKG:98184784"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      61.618817,
+      96.892198
+    ]
+  },
+  "address": {
+    "streetAddress": "Which opportunity expect grow. Time truth serious best product very. Yeah but million think seven good language.",
+    "addressLocality": "Finally talk enter personal medical above. Book senior yourself life second back.",
+    "addressRegion": "Bring value future cover meeting across station spring. Let kitchen leg game cover.",
+    "addressCountry": "Include present book best. Always along attack. Officer dog later decade light.",
+    "postalCode": "World probably until result detail window. Form himself design population war. Think black sell up discover month.",
+    "postOfficeBoxNumber": "Paper wall think focus. Figure threat material increase increase respond protect. Recently character reach see type."
+  },
+  "areaServed": "Start including movement trip. Machine moment light court. Own that once smile nation just. Push everything total save option investment manage.",
+  "plow": {
+    "type": "Property",
+    "value": 977.2
+  },
+  "phigh": {
+    "type": "Property",
+    "value": 381.1
+  },
+  "dhypo": {
+    "type": "Property",
+    "value": 879.9
+  },
+  "dhyper": {
+    "type": "Property",
+    "value": 851.2
+  },
+  "gir": {
+    "type": "Property",
+    "value": 711.2
+  },
+  "gdr": {
+    "type": "Property",
+    "value": 725.3
+  },
+  "rt": [
+    "oic.r.cgm.threshold",
+    "oic.r.cgm.threshold"
+  ],
+  "n": "Heart against through live size work. Apply vote system show sea.",
+  "if": [
+    "oic.if.rw",
+    "oic.if.rw"
+  ],
+  "range": [
+    776.5,
+    406.9
+  ],
+  "step": {
+    "type": "Property",
+    "value": 751.9
+  },
+  "precision": {
+    "type": "Property",
+    "value": 471.3
+  },
+  "type": "ContinuousGlucoseMeterThreshold"
+}

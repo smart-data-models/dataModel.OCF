@@ -1,0 +1,129 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:ContinuousGlucoseMeterSensor:id:WAEX:44862903"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1999-03-30T22:51:27Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "2012-12-22T07:39:58Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Perhaps price recent total describe time once before. Personal pretty new pull really break whether. Culture listen thank future however."
+  },
+  "name": {
+    "type": "string",
+    "value": "Their hand she fire instead knowledge. Television statement meeting experience attorney."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Full inside great style fall song attention. Way indicate wall Mr section exist. Information training firm room whatever."
+  },
+  "description": {
+    "type": "string",
+    "value": "Even resource yourself sea."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "Test side stand protect response. Education color man general series. Mrs financial pattern program. Think future color however."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:ContinuousGlucoseMeterSensor:items:VFHC:26378445",
+      "urn:ngsi-ld:ContinuousGlucoseMeterSensor:items:XYIY:53974790"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:ContinuousGlucoseMeterSensor:items:ELPR:93944920",
+      "urn:ngsi-ld:ContinuousGlucoseMeterSensor:items:YVNE:68441652"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        61.9624645,
+        19.178525
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Line guess each impact structure sister. Set he help race outside yeah according step. Method entire hotel hard after. Without break enter direction sit green news.",
+      "addressLocality": "Catch radio down enter pretty. Pattern if until which. Course color general live.",
+      "addressRegion": "Expert reveal world to. Fast civil others relate. Community art team board far serve.",
+      "addressCountry": "Occur off Congress participant meet. Determine discover just production.",
+      "postalCode": "Near involve data. Effort mother candidate run enough.",
+      "postOfficeBoxNumber": "Soon PM off. Onto design soldier manage sound toward. From way perhaps school fact central."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Reach experience instead people newspaper bar."
+  },
+  "starttime": {
+    "type": "string",
+    "value": "Dinner join couple dream loss high real. War during fire board. Become mention again here special."
+  },
+  "runtime": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 205.2
+    }
+  },
+  "rt": {
+    "type": "array",
+    "value": [
+      "oic.r.cgm.sensor",
+      "oic.r.cgm.sensor"
+    ]
+  },
+  "n": {
+    "type": "string",
+    "value": "Center system responsibility. Show very wife address can owner voice. Message so age focus."
+  },
+  "if": {
+    "type": "array",
+    "value": [
+      "oic.if.s",
+      "oic.if.s"
+    ]
+  },
+  "range": {
+    "type": "array",
+    "value": [
+      449.6,
+      786.7
+    ]
+  },
+  "step": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 471.9
+    }
+  },
+  "precision": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 270.2
+    }
+  },
+  "type": {
+    "type": "string",
+    "value": "ContinuousGlucoseMeterSensor"
+  }
+}

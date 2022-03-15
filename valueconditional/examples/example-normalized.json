@@ -1,0 +1,118 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:valueconditional:id:BISX:77681840"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1997-11-18T18:13:36Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "2015-01-18T22:14:58Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Body old owner tend mention age."
+  },
+  "name": {
+    "type": "string",
+    "value": "Effect apply table. Purpose natural center clearly pay. Show just per light."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Respond fear piece military. South life both school operation how which. Without event generation television believe avoid. Chair though thus north."
+  },
+  "description": {
+    "type": "string",
+    "value": "Statement list method. Tv guy production ever. Record picture eye recent. Media face charge water."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "Him particularly tell body school. Push fast during beyond factor."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:valueconditional:items:OUAM:46082102",
+      "urn:ngsi-ld:valueconditional:items:IVSZ:02100459"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:valueconditional:items:CVRL:46090390",
+      "urn:ngsi-ld:valueconditional:items:XDVQ:18129772"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -1.3326215,
+        -35.006362
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Able red glass sure southern rather carry author.",
+      "addressLocality": "Authority war over before a TV plan. Give we account air. Deal result first federal page.",
+      "addressRegion": "Growth outside stage its share movie. Voice remain so could student. Leave black without.",
+      "addressCountry": "Site key available amount art their safe. Most market mission civil. Serve treat collection seat food condition. Upon expert cold TV throw federal.",
+      "postalCode": "Nation wonder pattern suffer worker only play. Six catch area less crime fine international.",
+      "postOfficeBoxNumber": "Push live term seven despite condition teach."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Hold exist quickly debate dark. Play American certainly seek very we data."
+  },
+  "rt": {
+    "type": "array",
+    "value": [
+      "oic.r.value.conditional",
+      "oic.r.value.conditional"
+    ]
+  },
+  "maxnotifyperiod": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 864
+    }
+  },
+  "minnotifyperiod": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 864
+    }
+  },
+  "threshold": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 515.9
+    }
+  },
+  "n": {
+    "type": "string",
+    "value": "Raise occur movie mention central. Factor control whether. Brother prevent recent close."
+  },
+  "if": {
+    "type": "array",
+    "value": [
+      "oic.if.rw",
+      "oic.if.baseline"
+    ]
+  },
+  "type": {
+    "type": "string",
+    "value": "valueconditional"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "id": "urn:ngsi-ld:Speed:id:TMBQ:86557501",
+  "dateCreated": "1971-05-07T09:22:01Z",
+  "dateModified": "2001-02-25T04:31:00Z",
+  "source": "Standard trip consider development. Analysis walk similar clearly commercial western animal. News mouth year consumer.",
+  "name": "Office arrive structure down. Make become number mind.",
+  "alternateName": "Ahead recognize event guy player land. West community increase sure. Night office account toward.",
+  "description": "Stock can best face treat first arrive here. She some recent fight wrong white. Somebody month soon future but reflect explain.",
+  "dataProvider": "Black member here serve evidence near wind. Learn college say interesting make great affect. Democrat local because treatment.",
+  "owner": [
+    "urn:ngsi-ld:Speed:items:EOKC:04139618",
+    "urn:ngsi-ld:Speed:items:LTWJ:10169397"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:Speed:items:ARYG:93617525",
+    "urn:ngsi-ld:Speed:items:IUVN:24628987"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      63.217539,
+      -175.83232
+    ]
+  },
+  "address": {
+    "streetAddress": "Red ahead culture reality Mr difficult. Politics involve note just.",
+    "addressLocality": "Ability watch Mrs minute. Artist about quite read exactly education director keep. Director else away power perhaps.",
+    "addressRegion": "Gun more short then action. Skin course father house. Two guess strong onto.",
+    "addressCountry": "Necessary memory drug available newspaper. Discussion modern away coach foot plant.",
+    "postalCode": "Consumer future measure total many order early. Leave defense center around company attorney customer.",
+    "postOfficeBoxNumber": "Direction small strategy oil sit."
+  },
+  "areaServed": "Future heart guess kitchen set check official.",
+  "speed": {
+    "type": "Property",
+    "value": 242.3
+  },
+  "rt": [
+    "oic.r.speed",
+    "oic.r.speed"
+  ],
+  "n": "Nice I happy ground foreign fall. Sell style treat. Series build be continue.",
+  "if": [
+    "oic.if.baseline",
+    "oic.if.s"
+  ],
+  "range": [
+    255.1,
+    419.5
+  ],
+  "step": {
+    "type": "Property",
+    "value": 266.2
+  },
+  "type": "Speed",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

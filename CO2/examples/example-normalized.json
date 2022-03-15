@@ -1,0 +1,132 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:CO2:id:CCNH:15843409"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1986-12-14T04:30:52Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "2015-09-11T00:07:26Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Prove action boy today city do. Spend effort watch first."
+  },
+  "name": {
+    "type": "string",
+    "value": "Meeting could respond individual bed receive four. Key worker suggest learn Congress."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Collection small find per word cup explain check. Body list they American newspaper purpose although."
+  },
+  "description": {
+    "type": "string",
+    "value": "Theory consider teach north news different. Deal partner money."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "Because officer quite walk next reveal recognize. Place break fight take."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:CO2:items:UXPG:87304304",
+      "urn:ngsi-ld:CO2:items:USYI:41576659"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:CO2:items:CMQE:26360445",
+      "urn:ngsi-ld:CO2:items:SUUK:32060695"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -38.7693965,
+        35.719856
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Me force entire money finish ten sure property. Tax good probably shake discuss political general glass.",
+      "addressLocality": "Ground everything join fish apply. Yet small easy door. Somebody bill benefit individual happy relationship. Tax all source evening particular charge.",
+      "addressRegion": "Hold cut attention community wish form. Board call simple operation notice range industry. Outside institution deep nor.",
+      "addressCountry": "Night state issue although however system development. Much great authority claim no church black agency.",
+      "postalCode": "Wrong move make job themselves still federal pull. Relationship everyone family. Audience trial article book soldier.",
+      "postOfficeBoxNumber": "Fall light black several Mrs Congress knowledge hear. Door big population."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Cause easy sister themselves protect type field."
+  },
+  "rt": {
+    "type": "array",
+    "value": [
+      "oic.r.sensor.carbondioxide",
+      "oic.r.sensor.carbondioxide"
+    ]
+  },
+  "value": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": true
+    }
+  },
+  "measurement": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 80.6
+    }
+  },
+  "precision": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 106.0
+    }
+  },
+  "n": {
+    "type": "string",
+    "value": "Itself now ball so. Quality upon outside risk likely stock budget."
+  },
+  "range": {
+    "type": "array",
+    "value": [
+      335.3,
+      963.5
+    ]
+  },
+  "step": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 383.7
+    }
+  },
+  "if": {
+    "type": "array",
+    "value": [
+      "oic.if.s",
+      "oic.if.s"
+    ]
+  },
+  "type": {
+    "type": "string",
+    "value": "CO2"
+  }
+}

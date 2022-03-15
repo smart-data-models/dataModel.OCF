@@ -1,0 +1,60 @@
+{
+  "id": "urn:ngsi-ld:RampTime:id:ZHJF:61229976",
+  "dateCreated": "2013-01-02T18:46:37Z",
+  "dateModified": "1985-03-11T15:55:10Z",
+  "source": "Since court baby. Nature alone dinner major break organization listen.",
+  "name": "Industry officer member our. Research similar call exist way by teach. Natural understand organization ever create.",
+  "alternateName": "Vote part free over long. Herself room piece save property democratic. Very experience evening play speech record.",
+  "description": "Operation senior cold edge detail leg. Above theory eye administration economy third. Share personal ready reduce remain through owner.",
+  "dataProvider": "He state score. Throw describe then seem federal someone.",
+  "owner": [
+    "urn:ngsi-ld:RampTime:items:TGKY:57138477",
+    "urn:ngsi-ld:RampTime:items:QSGQ:84806884"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:RampTime:items:RCKL:49386497",
+    "urn:ngsi-ld:RampTime:items:MEBB:04213405"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      59.1823935,
+      169.242295
+    ]
+  },
+  "address": {
+    "streetAddress": "Memory happen condition cold director you dream. Current financial care. Believe we report rest sport indicate sure.",
+    "addressLocality": "Cold culture audience leave question continue office many. Walk note rich generation clearly drive to source.",
+    "addressRegion": "Best meeting public whom us rather. Create citizen get civil local reveal my.",
+    "addressCountry": "Find actually available safe. Pressure many chair must.",
+    "postalCode": "Leave expect where particularly sometimes. Treatment official report make technology production.",
+    "postOfficeBoxNumber": "Describe boy look yeah particular knowledge. Process else threat."
+  },
+  "areaServed": "Beautiful successful perform each democratic walk bill. Offer laugh just anyone far. Feel hope likely say into enter explain century.",
+  "rt": [
+    "oic.r.light.ramptime",
+    "oic.r.light.ramptime"
+  ],
+  "rampTime": {
+    "type": "Property",
+    "value": 864
+  },
+  "n": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair.",
+  "range": [
+    864,
+    864
+  ],
+  "step": {
+    "type": "Property",
+    "value": 864
+  },
+  "precision": {
+    "type": "Property",
+    "value": 24.0
+  },
+  "if": [
+    "oic.if.baseline",
+    "oic.if.baseline"
+  ],
+  "type": "RampTime"
+}

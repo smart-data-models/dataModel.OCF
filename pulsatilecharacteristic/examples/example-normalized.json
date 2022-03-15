@@ -1,0 +1,118 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:pulsatilecharacteristic:id:YHCK:29783958"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1976-02-28T05:22:23Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "2017-07-16T13:00:46Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Yet agreement bill answer hope social turn. Letter about loss simple."
+  },
+  "name": {
+    "type": "string",
+    "value": "Financial wall black. Fund lay writer allow need."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Chance another opportunity board science. Sometimes east firm traditional heavy talk. Where democratic agree majority."
+  },
+  "description": {
+    "type": "string",
+    "value": "Why we behavior support. Republican fine character. Management range me color reduce only accept."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "Why large entire simply recognize policy center. Responsibility start one film family condition away. Individual condition suggest reveal. Kind gas weight life."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:pulsatilecharacteristic:items:BFZF:28818876",
+      "urn:ngsi-ld:pulsatilecharacteristic:items:AMNC:70571781"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:pulsatilecharacteristic:items:AZOK:81117701",
+      "urn:ngsi-ld:pulsatilecharacteristic:items:CDIN:32720162"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        15.6929545,
+        -154.323339
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Modern store western training.",
+      "addressLocality": "Program manager prove heart raise key once. Least lay compare. In prevent baby.",
+      "addressRegion": "Subject our baby line. Vote its your society record. Find remain space capital structure. List offer although computer reflect.",
+      "addressCountry": "Early right size whole teacher trip. Over behavior ok positive.",
+      "postalCode": "Single industry skill like blue shake box. Adult sound would yeah.",
+      "postOfficeBoxNumber": "Lay plant possible involve huge. Ok me always specific white growth. Generation check end visit TV quality family."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "During effect type short light. Structure pretty stock heavy list officer laugh actually."
+  },
+  "characteristic": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 3
+    }
+  },
+  "rt": {
+    "type": "array",
+    "value": [
+      "oic.r.pulsatilecharacteristic",
+      "oic.r.pulsatilecharacteristic"
+    ]
+  },
+  "n": {
+    "type": "string",
+    "value": "Magazine truth stop whose group through despite. Example sense peace economy."
+  },
+  "if": {
+    "type": "array",
+    "value": [
+      "oic.if.baseline",
+      "oic.if.baseline"
+    ]
+  },
+  "range": {
+    "type": "array",
+    "value": [
+      864,
+      864
+    ]
+  },
+  "step": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 864
+    }
+  },
+  "type": {
+    "type": "string",
+    "value": "pulsatilecharacteristic"
+  }
+}

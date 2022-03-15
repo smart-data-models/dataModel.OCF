@@ -1,0 +1,110 @@
+{
+  "id": "urn:ngsi-ld:PulseRate:id:CAKY:60522977",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2018-07-25T21:58:49Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2012-07-03T10:51:09Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Begin common friend job agreement billion. Employee several guy. Example yard kid attorney know hundred doctor."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Write son could city his. Other part more late. One threat material least assume into."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Task not later gun unit off. Late home inside car pretty shake. Population edge let wonder dark standard. My might plan."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Worker yeah reflect. Describe plant coach save similar."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Audience blood art window."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:PulseRate:items:CCUR:33782771",
+      "urn:ngsi-ld:PulseRate:items:CXUS:74878184"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:PulseRate:items:FPJW:35681671"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        89.796559,
+        146.512788
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Election else quite show cause mean south five. Information necessary report probably and positive up.",
+      "addressLocality": "Interest direction history party. Cost whether guess remember. Cup involve sort according positive population movie respond.",
+      "addressRegion": "Cut cup about than require their near eat. Gas everyone training car we find treat. Old quality many anything mean.",
+      "addressCountry": "Deal local although remain. Way similar peace significant name center.",
+      "postalCode": "Just score parent main after. Republican create imagine else scene.",
+      "postOfficeBoxNumber": "Kind thing safe order. Pull whatever success state nature girl star same."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Attack agent focus reason vote require. Almost sure movement hold pass before."
+  },
+  "rt": {
+    "type": "Property",
+    "value": [
+      "oic.r.pulserate"
+    ]
+  },
+  "pulserate": {
+    "type": "Property",
+    "value": 700
+  },
+  "if": {
+    "type": "Property",
+    "value": [
+      "oic.if.s"
+    ]
+  },
+  "range": {
+    "type": "Property",
+    "value": [
+      152,
+      528
+    ]
+  },
+  "step": {
+    "type": "Property",
+    "value": 872
+  },
+  "n": {
+    "type": "Property",
+    "value": "Reduce bill read politics identify also such. Score direction leave chance assume."
+  },
+  "type": "PulseRate",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

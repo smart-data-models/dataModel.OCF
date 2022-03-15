@@ -1,0 +1,61 @@
+{
+  "id": "urn:ngsi-ld:BodyFat:id:NCXO:90580036",
+  "dateCreated": "2005-02-19T20:56:16Z",
+  "dateModified": "2005-11-28T17:19:04Z",
+  "source": "Attack force rise tree author. Feeling clearly prepare much commercial everyone might quality.",
+  "name": "The health whether feel. Five investment never base collection official. West later close without only country same affect.",
+  "alternateName": "Support not big recently media wind near. Writer suffer kind population scene he any.",
+  "description": "Yeah model bar cup population mention meeting hundred.",
+  "dataProvider": "Thing yourself thing fly control.",
+  "owner": [
+    "urn:ngsi-ld:BodyFat:items:PVXS:05086008",
+    "urn:ngsi-ld:BodyFat:items:XFWO:96280071"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:BodyFat:items:HPXB:45693919",
+    "urn:ngsi-ld:BodyFat:items:LODK:47292476"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -75.359217,
+      169.747483
+    ]
+  },
+  "address": {
+    "streetAddress": "Return responsibility future nature child travel themselves. Listen show production skin offer individual artist.",
+    "addressLocality": "Question find unit. Newspaper program do television speech game attorney difference.",
+    "addressRegion": "Will piece character hair agency over. Red quickly wait west. Heavy consider couple.",
+    "addressCountry": "Nor factor off Democrat research event low. Red media possible quickly role color evidence approach.",
+    "postalCode": "Hold drop tough ask material mind simply. Hope lot environment scene only night challenge.",
+    "postOfficeBoxNumber": "Fear food out modern hotel town every. Since authority field minute sort finish. Against campaign science mention week myself."
+  },
+  "areaServed": "Treatment claim morning away individual anyone international. Economy girl morning.",
+  "rt": [
+    "oic.r.body.fat",
+    "oic.r.body.fat"
+  ],
+  "bodyfat": {
+    "type": "Property",
+    "value": 828.2
+  },
+  "units": "kg",
+  "range": [
+    744.7,
+    370.0
+  ],
+  "step": {
+    "type": "Property",
+    "value": 990.8
+  },
+  "precision": {
+    "type": "Property",
+    "value": 238.8
+  },
+  "n": "Either establish then long war eat. Tell ground describe home determine similar. Democrat someone development young nation. Defense total explain trial.",
+  "if": [
+    "oic.if.baseline",
+    "oic.if.baseline"
+  ],
+  "type": "BodyFat"
+}

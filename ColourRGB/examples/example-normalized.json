@@ -1,0 +1,118 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:ColourRGB:id:SBFN:43526348"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "2004-03-05T02:33:53Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1993-02-07T07:54:02Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Quickly challenge PM interview sense."
+  },
+  "name": {
+    "type": "string",
+    "value": "Although late bar lose might lay any. Onto day success should."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Continue want pick. Buy scientist floor Mrs anyone yeah training."
+  },
+  "description": {
+    "type": "string",
+    "value": "Beyond generation through develop some. Past matter upon live per purpose."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "Us argue southern. Matter even billion growth game thousand."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:ColourRGB:items:AVKI:08794223",
+      "urn:ngsi-ld:ColourRGB:items:DXEJ:68189427"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:ColourRGB:items:ZTRB:95997585",
+      "urn:ngsi-ld:ColourRGB:items:SBPQ:37878570"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        84.505348,
+        52.402685
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Garden give card determine. Season whether nothing senior popular. Step model father bed miss recently. Church material take choice cut.",
+      "addressLocality": "News month focus around free surface. Clearly through interview see pressure machine money.",
+      "addressRegion": "Brother describe agree yes have material list. Soldier alone car bank too talk push. Modern brother gun service I air.",
+      "addressCountry": "Tend rise certainly water response interesting. Can bad prevent yes worker learn owner. Fight increase bar produce recently. Back road entire look end color reflect exist.",
+      "postalCode": "Resource nothing week boy. Focus off sister compare seek physical.",
+      "postOfficeBoxNumber": "Head know general away reduce assume. Represent piece physical investment throughout. Choose news stay throw."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Reach gas send if establish guess short. Audience write police indicate author talk."
+  },
+  "rt": {
+    "type": "array",
+    "value": [
+      "oic.r.colour.rgb",
+      "oic.r.colour.rgb"
+    ]
+  },
+  "rgbValue": {
+    "type": "array",
+    "value": [
+      864,
+      864
+    ]
+  },
+  "n": {
+    "type": "string",
+    "value": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair."
+  },
+  "range": {
+    "type": "array",
+    "value": [
+      864,
+      864
+    ]
+  },
+  "step": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 864
+    }
+  },
+  "if": {
+    "type": "array",
+    "value": [
+      "oic.if.a",
+      "oic.if.baseline"
+    ]
+  },
+  "type": {
+    "type": "string",
+    "value": "ColourRGB"
+  }
+}

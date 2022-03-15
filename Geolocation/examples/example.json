@@ -1,0 +1,72 @@
+{
+  "id": "urn:ngsi-ld:Geolocation:id:BEHA:68562233",
+  "dateCreated": "2009-08-09T05:45:27Z",
+  "dateModified": "1984-10-08T22:22:35Z",
+  "source": "Cover alone Congress station sense able. Summer court recognize yes. Foreign operation Mrs system.",
+  "name": "Cut recently stand test third. Least similar end speech author Congress young.",
+  "alternateName": "Cup above final indicate father. Each million letter just organization east.",
+  "description": "Structure bed per season score organization significant. Reality out stock bad south care.",
+  "dataProvider": "Understand production past list information career. Head wall edge build theory design. She building news could hotel. Rest series sound free want series could.",
+  "owner": [
+    "urn:ngsi-ld:Geolocation:items:XHMM:99523747",
+    "urn:ngsi-ld:Geolocation:items:WXXZ:02303430"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:Geolocation:items:KFQI:84642992",
+    "urn:ngsi-ld:Geolocation:items:DIMR:65496779"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -56.856346,
+      153.530621
+    ]
+  },
+  "address": {
+    "streetAddress": "Begin discuss language table. Bar might likely find interview herself think.",
+    "addressLocality": "Bed give create window blue. Project tend put must himself try. Pretty season my system.",
+    "addressRegion": "Reduce give information successful woman. Boy accept though mother year. Great hotel war home two official.",
+    "addressCountry": "Blood reality other during recognize miss task name. Discuss those she expect reduce agreement benefit.",
+    "postalCode": "Base happen age nature produce traditional floor. Build couple administration cell happen. Compare focus billion man increase nature phone.",
+    "postOfficeBoxNumber": "Significant poor central business. Be page ahead amount civil chance upon. Future once some none seek. Win blue a since sing leg."
+  },
+  "areaServed": "Local audience offer firm section whether way. Rest recognize worry become bill just.",
+  "rt": [
+    "oic.r.sensor.geolocation",
+    "oic.r.sensor.geolocation"
+  ],
+  "longitude": {
+    "type": "Property",
+    "value": 65.0
+  },
+  "heading": {
+    "type": "Property",
+    "value": 0.3
+  },
+  "latitude": {
+    "type": "Property",
+    "value": 749.4
+  },
+  "altitudeAccuracy": {
+    "type": "Property",
+    "value": 870.8
+  },
+  "alt": {
+    "type": "Property",
+    "value": 488.6
+  },
+  "accuracy": {
+    "type": "Property",
+    "value": 660.8
+  },
+  "speed": {
+    "type": "Property",
+    "value": 63.3
+  },
+  "n": "East story TV end official relate. Image help significant particularly wall.",
+  "if": [
+    "oic.if.baseline",
+    "oic.if.s"
+  ],
+  "type": "Geolocation"
+}

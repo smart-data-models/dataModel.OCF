@@ -1,0 +1,115 @@
+{
+  "id": "urn:ngsi-ld:RampTime:id:FFSR:90520934",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2018-03-18T03:19:11Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1993-01-25T21:55:52Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Three sound resource. Parent parent base including task like drive."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Almost identify bring imagine. Notice important party step old."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Here most data certainly strategy. Carry act process anyone foreign sell society. Especially summer appear. Better allow car administration."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Reduce process issue party clearly anything. Career condition opportunity general. Experience around manage room spend throw although few."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Official culture indicate position. Cover leader medical law catch western."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:RampTime:items:OMMO:16943723",
+      "urn:ngsi-ld:RampTime:items:NTJI:24099913"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:RampTime:items:EKVY:98458166"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -5.345031,
+        86.253962
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Her our teach something edge seem. Event life respond including beyond huge. Job reflect go former level ready.",
+      "addressLocality": "Picture professional central east computer PM executive.",
+      "addressRegion": "Single current both pattern which list. Moment author subject lot.",
+      "addressCountry": "Attack form former training. Win reduce history international. Site body study where. Report indicate until box former never whether.",
+      "postalCode": "Program police whatever must. Fine place opportunity nation.",
+      "postOfficeBoxNumber": "Tv assume much. Return reveal force myself."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Address career trial statement. Subject president sense."
+  },
+  "rt": {
+    "type": "Property",
+    "value": [
+      "oic.r.light.ramptime"
+    ]
+  },
+  "rampTime": {
+    "type": "Property",
+    "value": 932
+  },
+  "n": {
+    "type": "Property",
+    "value": "World practice town politics cost there physical out."
+  },
+  "range": {
+    "type": "Property",
+    "value": [
+      694,
+      895
+    ]
+  },
+  "step": {
+    "type": "Property",
+    "value": 850
+  },
+  "precision": {
+    "type": "Property",
+    "value": 772.7
+  },
+  "if": {
+    "type": "Property",
+    "value": [
+      "oic.if.a",
+      "oic.if.baseline"
+    ]
+  },
+  "type": "RampTime",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

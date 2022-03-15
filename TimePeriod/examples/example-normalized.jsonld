@@ -1,0 +1,130 @@
+{
+  "id": "urn:ngsi-ld:TimePeriod:id:TFSS:01462651",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2018-04-07T03:15:37Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2000-11-20T13:02:07Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Future health he interesting deal wife team. Early possible official similar individual actually good. Me something peace year but society."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Myself rate help sort still. Growth fill bed support smile. Stop usually product pretty use response."
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Act we hope east everything represent. Because probably service example government."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Interview actually authority performance kid score. Blood against have. Beautiful game tree drop listen often citizen."
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Say size strategy easy. Summer may discuss beat ten. Hospital couple same analysis break."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:TimePeriod:items:KCTO:34471219",
+      "urn:ngsi-ld:TimePeriod:items:WOCL:63416768"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:TimePeriod:items:IEHN:03499364"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        4.979827,
+        27.027311
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Painting for street surface cup. Here particularly identify ahead news bill. Along investment possible painting treat.",
+      "addressLocality": "Director your be billion us sea glass heavy. Boy program against development improve life conference. Political store general.",
+      "addressRegion": "Treat maintain just protect clear poor. Must morning security describe. Foreign structure score music.",
+      "addressCountry": "Size early item agent test key color. Game mind wall defense science institution. Activity claim white no some truth.",
+      "postalCode": "Range later letter contain plan. Let grow population skill respond.",
+      "postOfficeBoxNumber": "Case look election some tough exactly. Mr visit out choose life floor his hotel."
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Front particular maintain lead economy. Visit hotel focus position."
+  },
+  "rt": {
+    "type": "Property",
+    "value": [
+      "oic.r.time.period"
+    ]
+  },
+  "interval": {
+    "type": "Property",
+    "value": 850
+  },
+  "intervalsecond": {
+    "type": "Property",
+    "value": 176
+  },
+  "stopTime": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2002-11-06T17:47:24Z"
+    }
+  },
+  "startTime": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1985-01-08T06:11:51Z"
+    }
+  },
+  "repeat": {
+    "type": "Property",
+    "value": 128
+  },
+  "triggertiming": {
+    "type": "Property",
+    "value": "startTime"
+  },
+  "state": {
+    "type": "Property",
+    "value": "preInterval"
+  },
+  "n": {
+    "type": "Property",
+    "value": "Former answer political resource nothing. Develop lawyer important executive clear. Financial industry night trip bank end."
+  },
+  "if": {
+    "type": "Property",
+    "value": [
+      "oic.if.baseline",
+      "oic.if.baseline"
+    ]
+  },
+  "type": "TimePeriod",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

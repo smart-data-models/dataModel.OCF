@@ -1,0 +1,129 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:GlucoseCarb:id:IXKW:55577808"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1993-02-18T14:28:07Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1997-09-28T09:47:10Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Financial civil western modern message together strategy. Meeting room hold drug mention. Policy indeed school identify government know. Take ok together environmental candidate."
+  },
+  "name": {
+    "type": "string",
+    "value": "Meeting and under hair occur. Within season check special example."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Develop involve source study participant commercial. Figure recent whom brother answer. Often conference country let among although book modern."
+  },
+  "description": {
+    "type": "string",
+    "value": "Plant present consumer if fire. Information still movie language style. Page per form reality."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "Project she real. Foot half movement north."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:GlucoseCarb:items:TDIO:31776660",
+      "urn:ngsi-ld:GlucoseCarb:items:TJOS:80357915"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:GlucoseCarb:items:FTII:88661137",
+      "urn:ngsi-ld:GlucoseCarb:items:LQRK:95045619"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -78.118671,
+        -21.584307
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Yard writer after economy since audience. Again little must exactly.",
+      "addressLocality": "Throw network second design threat. Several radio budget set against maintain. Provide movie receive Republican base read boy.",
+      "addressRegion": "Significant chance training individual forget learn state. Church who yes recent yet although trial. Here information only.",
+      "addressCountry": "Contain bar other bed draw. Me natural girl music account law. Film education let what upon war measure relate.",
+      "postalCode": "Answer east nature this. Join that social. Miss game save step choice.",
+      "postOfficeBoxNumber": "Record mind market task power fund find. Skill region stage happen. Suddenly total want against former. Military deal institution."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Work hand gas appear type. Entire why her huge first."
+  },
+  "rt": {
+    "type": "array",
+    "value": [
+      "oic.r.glucose.carb",
+      "oic.r.glucose.carb"
+    ]
+  },
+  "carb": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 136.7
+    }
+  },
+  "meal": {
+    "type": "string",
+    "value": "other"
+  },
+  "range": {
+    "type": "array",
+    "value": [
+      170.5,
+      706.1
+    ]
+  },
+  "step": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 671.9
+    }
+  },
+  "precision": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 648.4
+    }
+  },
+  "n": {
+    "type": "string",
+    "value": "Interview person person whole success top edge. Brother quite describe could Republican network single walk. Among program determine doctor."
+  },
+  "if": {
+    "type": "array",
+    "value": [
+      "oic.if.s",
+      "oic.if.baseline"
+    ]
+  },
+  "type": {
+    "type": "string",
+    "value": "GlucoseCarb"
+  }
+}

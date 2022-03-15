@@ -1,0 +1,148 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:Inverter:id:QKHM:28779877"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "2011-09-26T02:57:58Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1999-06-01T10:31:41Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Both before finish whole space including hospital. Arrive anything take deep reveal more seven page."
+  },
+  "name": {
+    "type": "string",
+    "value": "Whether life realize fire. Guy happen thought material no certainly."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Certain difference boy. Performance score weight performance. Republican stuff visit ten."
+  },
+  "description": {
+    "type": "string",
+    "value": "So describe believe environmental build necessary. Treat they memory oil parent."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "Risk such medical. Among whom every discuss series deal."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:Inverter:items:KSSI:21376961",
+      "urn:ngsi-ld:Inverter:items:YQQI:56248386"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:Inverter:items:STCD:23046259",
+      "urn:ngsi-ld:Inverter:items:UJCA:53322929"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -88.997438,
+        -124.268822
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Grow after much house our.",
+      "addressLocality": "Firm yard answer consider second.",
+      "addressRegion": "Also challenge discover event picture onto. Subject machine into lawyer major hold get.",
+      "addressCountry": "House identify inside student along. See right husband weight education get positive assume. Certain environmental worry specific.",
+      "postalCode": "Pm man born hit crime space kitchen treat. Physical method southern provide.",
+      "postOfficeBoxNumber": "Century treat create pattern voice analysis level. Property newspaper rest."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Try opportunity along some skill. Ball cover machine stage want than father. Create authority pressure."
+  },
+  "rt": {
+    "type": "array",
+    "value": [
+      "oic.r.inverter",
+      "oic.r.inverter"
+    ]
+  },
+  "status": {
+    "type": "string",
+    "value": "on"
+  },
+  "ratedpower": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 792.6
+    }
+  },
+  "minvoltmppt": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 429.9
+    }
+  },
+  "maxvoltmppt": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 549.6
+    }
+  },
+  "inputvoltage": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 333.3
+    }
+  },
+  "inputcurrent": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 227.3
+    }
+  },
+  "outputpower": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 237.0
+    }
+  },
+  "timestamp": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1977-09-25T18:29:39Z"
+  },
+  "n": {
+    "type": "string",
+    "value": "Whatever nice teach possible well."
+  },
+  "if": {
+    "type": "array",
+    "value": [
+      "oic.if.baseline",
+      "oic.if.s"
+    ]
+  },
+  "type": {
+    "type": "string",
+    "value": "Inverter"
+  }
+}

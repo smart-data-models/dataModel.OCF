@@ -1,0 +1,64 @@
+{
+  "id": "urn:ngsi-ld:smoke:id:GQAK:36211876",
+  "dateCreated": "1992-09-23T05:44:58Z",
+  "dateModified": "1984-07-19T21:01:38Z",
+  "source": "Professor director car by professor mean half. Edge war travel.",
+  "name": "Daughter situation material can police. Role focus at take question.",
+  "alternateName": "Debate across break Mrs drive. Truth notice anyone field necessary trial case. Address total skin carry. Medical finally discover production.",
+  "description": "Respond there yard out. Operation feeling dream surface.",
+  "dataProvider": "Choose of keep less position end. Drive either away speak I network hold deep. Value age necessary technology.",
+  "owner": [
+    "urn:ngsi-ld:smoke:items:AIIV:73533274",
+    "urn:ngsi-ld:smoke:items:RHKO:33594575"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:smoke:items:LSEC:69544898",
+    "urn:ngsi-ld:smoke:items:LMGY:01203312"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -9.5081105,
+      134.428105
+    ]
+  },
+  "address": {
+    "streetAddress": "Team citizen like question response market investment. Opportunity heart choose could. Whatever help player soon.",
+    "addressLocality": "Politics option interview movie student eye well gas. Physical so edge pressure decide. Inside executive decision development to contain sea find.",
+    "addressRegion": "Whatever describe example cup. Yet agency quickly.",
+    "addressCountry": "Thought support deep result century commercial. Per suddenly local service.",
+    "postalCode": "Environment page tell wonder garden side process first. Exactly article a appear cultural indicate hit decade. Radio officer page.",
+    "postOfficeBoxNumber": "Close seat yourself they. Pattern quite activity. Life deep now Mrs school expert pass."
+  },
+  "areaServed": "Culture change suggest. Process skill bar. Turn tree work wonder forget.",
+  "rt": [
+    "oic.r.sensor.smoke",
+    "oic.r.sensor.smoke"
+  ],
+  "value": {
+    "type": "Property",
+    "value": false
+  },
+  "measurement": {
+    "type": "Property",
+    "value": 683.9
+  },
+  "precision": {
+    "type": "Property",
+    "value": 400.1
+  },
+  "n": "Discuss arrive most short send alone. Business author third rich. Technology we mention brother.",
+  "range": [
+    570.7,
+    838.8
+  ],
+  "step": {
+    "type": "Property",
+    "value": 565.9
+  },
+  "if": [
+    "oic.if.s",
+    "oic.if.baseline"
+  ],
+  "type": "smoke"
+}

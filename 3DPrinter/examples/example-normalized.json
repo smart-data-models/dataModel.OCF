@@ -1,0 +1,136 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:3DPrinter:id:YUSH:12422704"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1982-12-22T16:51:18Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "2016-04-19T02:35:28Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Size purpose hit American color minute. Improve send public crime long bag. Design benefit our evening her expect seek. Process catch up hear source work this."
+  },
+  "name": {
+    "type": "string",
+    "value": "Wall relate upon decision official. Return per system sound society current. Environment bar hope."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Range though no ground study store."
+  },
+  "description": {
+    "type": "string",
+    "value": "Party prevent sort. Population simply keep run line. Ground about wish raise."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "Stage environment effort expect. It company history place really. Result Mr data those on organization. Affect save factor up cause."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:3DPrinter:items:BJQF:44557977",
+      "urn:ngsi-ld:3DPrinter:items:UJGY:74455021"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:3DPrinter:items:INTV:14103670",
+      "urn:ngsi-ld:3DPrinter:items:HVOD:77311767"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -88.6783455,
+        -161.926308
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Their soldier next full together. Us word national pretty war common. Either herself event either career.",
+      "addressLocality": "Letter imagine box watch nation value. Along start put pattern try. Per smile however media money resource gun.",
+      "addressRegion": "Clearly generation light quite less.",
+      "addressCountry": "Pretty popular plant attention. Start physical phone measure your eye. High instead book yourself.",
+      "postalCode": "Law close sound along card. While tough evening fight ball radio whose.",
+      "postOfficeBoxNumber": "Leg charge people senior. Look foreign possible be. Case figure coach road sell on."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Show near system coach particularly memory provide front. Already risk close plan value member. Son Mr only edge."
+  },
+  "rt": {
+    "type": "array",
+    "value": [
+      "oic.r.printer.3d",
+      "oic.r.printer.3d"
+    ]
+  },
+  "printsizey": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 141.9
+    }
+  },
+  "memorysize": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 423.2
+    }
+  },
+  "3dprinttype": {
+    "type": "string",
+    "value": "Digital Light Processing"
+  },
+  "wanconnected": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": true
+    }
+  },
+  "printsizex": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 638.7
+    }
+  },
+  "printsizez": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 659.8
+    }
+  },
+  "n": {
+    "type": "string",
+    "value": "Direction expert staff property. Wall score before increase."
+  },
+  "if": {
+    "type": "array",
+    "value": [
+      "oic.if.r",
+      "oic.if.r"
+    ]
+  },
+  "type": {
+    "type": "string",
+    "value": "3DPrinter"
+  }
+}

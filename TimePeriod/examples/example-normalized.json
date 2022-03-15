@@ -1,0 +1,136 @@
+{
+  "id": {
+    "type": "string",
+    "value": "urn:ngsi-ld:TimePeriod:id:TPVF:35142901"
+  },
+  "dateCreated": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1981-10-01T03:58:28Z"
+  },
+  "dateModified": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1974-09-01T01:11:55Z"
+  },
+  "source": {
+    "type": "string",
+    "value": "Case girl this call woman where. Easy area sport church."
+  },
+  "name": {
+    "type": "string",
+    "value": "Industry artist resource contain strategy Democrat far. From here theory behind these. Itself modern face page indicate."
+  },
+  "alternateName": {
+    "type": "string",
+    "value": "Let we even hold coach morning particular. Form after read language cultural worry."
+  },
+  "description": {
+    "type": "string",
+    "value": "Town word young necessary south."
+  },
+  "dataProvider": {
+    "type": "string",
+    "value": "Then plant hot. Stage conference institution most."
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:TimePeriod:items:XCRJ:98728117",
+      "urn:ngsi-ld:TimePeriod:items:TSXQ:22724273"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:TimePeriod:items:UYCH:34421521",
+      "urn:ngsi-ld:TimePeriod:items:WXER:47463782"
+    ]
+  },
+  "location": {
+    "type": "object",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        44.6383085,
+        67.311772
+      ]
+    }
+  },
+  "address": {
+    "type": "object",
+    "value": {
+      "streetAddress": "Among region sea two. Treatment drop American large morning turn. Information cultural institution control growth claim manager.",
+      "addressLocality": "Reduce finally size because business. Store defense force debate instead such dream face.",
+      "addressRegion": "Attorney situation TV fly authority himself. Attack gas bring.",
+      "addressCountry": "Defense those sing Mr seek build. Rest garden level financial good. Market training evidence firm establish thus.",
+      "postalCode": "Region reflect money condition join town career. Least wait still strategy structure under.",
+      "postOfficeBoxNumber": "Impact my about pressure picture. Recent party then party nature ability dinner. Dark green everything bag wear make even provide."
+    }
+  },
+  "areaServed": {
+    "type": "string",
+    "value": "Order require grow him. Reveal sell dark ever as."
+  },
+  "rt": {
+    "type": "array",
+    "value": [
+      "oic.r.time.period",
+      "oic.r.time.period"
+    ]
+  },
+  "interval": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 864
+    }
+  },
+  "intervalsecond": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 864
+    }
+  },
+  "stopTime": {
+    "format": "date-time",
+    "type": "string",
+    "value": "1996-03-20T07:46:39Z"
+  },
+  "startTime": {
+    "format": "date-time",
+    "type": "string",
+    "value": "2021-07-31T01:24:38Z"
+  },
+  "repeat": {
+    "type": "object",
+    "value": {
+      "type": "Property",
+      "value": 863
+    }
+  },
+  "triggertiming": {
+    "type": "string",
+    "value": "stopTime"
+  },
+  "state": {
+    "type": "string",
+    "value": "postInterval"
+  },
+  "n": {
+    "type": "string",
+    "value": "Whole magazine truth stop whose."
+  },
+  "if": {
+    "type": "array",
+    "value": [
+      "oic.if.a",
+      "oic.if.baseline"
+    ]
+  },
+  "type": {
+    "type": "string",
+    "value": "TimePeriod"
+  }
+}

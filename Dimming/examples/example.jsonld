@@ -1,0 +1,59 @@
+{
+  "id": "urn:ngsi-ld:Dimming:id:FQDB:16398581",
+  "dateCreated": "2013-03-14T23:32:57Z",
+  "dateModified": "2000-04-30T06:54:11Z",
+  "source": "Southern act artist figure body. Someone write name performance network talk dog also.",
+  "name": "Focus finish apply many far few. Because different onto material sometimes. Work wife little agree.",
+  "alternateName": "New soldier apply personal. Particularly goal help individual accept seat.",
+  "description": "Well single natural near rather that country. Language social buy manage officer.",
+  "dataProvider": "Break everybody group include. Then name key television. Beyond tend surface eat last herself interesting.",
+  "owner": [
+    "urn:ngsi-ld:Dimming:items:UYRH:03063472",
+    "urn:ngsi-ld:Dimming:items:MLEW:62413875"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:Dimming:items:HSCK:11633956",
+    "urn:ngsi-ld:Dimming:items:PAOU:39584686"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      75.8030785,
+      -21.050609
+    ]
+  },
+  "address": {
+    "streetAddress": "Study plant while camera. Support each specific travel.",
+    "addressLocality": "After interview value. Officer accept power language summer. Data site soon act cost enjoy.",
+    "addressRegion": "See shoulder clear agree. Rate stop often teacher big economy.",
+    "addressCountry": "Place bank money performance. Big director and force Congress. Rich paper like trouble morning read. Daughter onto spring peace end.",
+    "postalCode": "Question animal oil leader air mention. Will lose Mr. Control long increase statement.",
+    "postOfficeBoxNumber": "Article go skin charge. Up would few region turn scientist respond."
+  },
+  "areaServed": "Best whether force in military. Season woman major month.",
+  "rt": [
+    "oic.r.light.dimming",
+    "oic.r.light.dimming"
+  ],
+  "dimmingSetting": {
+    "type": "Property",
+    "value": 864
+  },
+  "n": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair.",
+  "range": [
+    864,
+    864
+  ],
+  "step": {
+    "type": "Property",
+    "value": 864
+  },
+  "if": [
+    "oic.if.a",
+    "oic.if.baseline"
+  ],
+  "type": "Dimming",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

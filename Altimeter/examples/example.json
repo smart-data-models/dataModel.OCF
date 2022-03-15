@@ -1,0 +1,60 @@
+{
+  "id": "urn:ngsi-ld:Altimeter:id:YYBR:30368709",
+  "dateCreated": "1986-03-01T02:40:38Z",
+  "dateModified": "2001-12-01T21:24:11Z",
+  "source": "Itself almost analysis wide foot friend. Stage especially series long word animal. Eat generation draw clearly relate.",
+  "name": "Whose else interest into hit. Cost reveal technology recognize. Sport concern north agreement success.",
+  "alternateName": "At itself art open news commercial technology. Color set floor develop care begin. Anyone generation price. College he soon whether his child democratic.",
+  "description": "Cut laugh western after. Senior hit look possible. Thought stop hand behind.",
+  "dataProvider": "Mouth space ball bad. Receive father gas industry.",
+  "owner": [
+    "urn:ngsi-ld:Altimeter:items:LSEB:86391437",
+    "urn:ngsi-ld:Altimeter:items:PZHR:42287265"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:Altimeter:items:QQGX:27750120",
+    "urn:ngsi-ld:Altimeter:items:UDQN:45142445"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      19.3085445,
+      142.76353
+    ]
+  },
+  "address": {
+    "streetAddress": "Today find there pull feeling garden. Nothing to manager watch. Accept two step value.",
+    "addressLocality": "Base control beat cause national at out. Beautiful put increase less than its young. Charge role sit social help to even.",
+    "addressRegion": "Example somebody through speech. Fund international use fly song live. Film road site all suffer necessary up.",
+    "addressCountry": "Quickly at something true help. Program when keep reason boy main.",
+    "postalCode": "Mouth order from degree later view. Suffer senior although modern wind be growth. Rate operation appear ten ability.",
+    "postOfficeBoxNumber": "Quality question since for away young. Summer little nature plant store less figure. Bring response resource discover finish staff."
+  },
+  "areaServed": "Up easy miss treatment society might black approach. Gas public item choose church.",
+  "rt": [
+    "oic.r.altimeter",
+    "oic.r.altimeter"
+  ],
+  "alt": {
+    "type": "Property",
+    "value": 956.8
+  },
+  "n": "Suddenly bank assume north often tell. Beat night contain fast fight game wish. We option know institution especially.",
+  "precision": {
+    "type": "Property",
+    "value": 446.9
+  },
+  "range": [
+    219.9,
+    173.9
+  ],
+  "step": {
+    "type": "Property",
+    "value": 62.6
+  },
+  "if": [
+    "oic.if.baseline",
+    "oic.if.baseline"
+  ],
+  "type": "Altimeter"
+}
