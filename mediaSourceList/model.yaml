@@ -289,6 +289,7 @@ mediaSourceList:
       x-ngsi:
         type: Property
     sources:
+      description: 'List of sources'
       items:
         properties:
           sourceName:
@@ -311,6 +312,8 @@ mediaSourceList:
             type: boolean
         type: object
       type: array
+      x-ngsi:
+        type: Property
     type:
       description: 'NGSI entity type. It has to be mediaSourceList'
       enum:
