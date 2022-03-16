@@ -1,0 +1,357 @@
+Geolocation:
+  description: 'This Resource describes the properties associated with the current geolocation coordinate.Geolocation is a geolocation coordinate data.The Property "latitude" is a device''s current Latitude coordinate (degrees).The Property "longitude" is a device''s current Longitude coordinate (degrees).The Property "alt" is a device''s current distance (metres) above or below ''local'' sea-level.The Property "accuracy" is the accuracy level of the latitude and longitude coordinates (metres).The Property "altitudeAccuracy" is the accuracy level of the altitude coordinates (metres).The Property "heading" is a direction of travel of device (degree).The Property "speed" is a device''s current velocity (metres per second).'
+  properties:
+    accuracy:
+      description: 'The accuracy level of the latitude and longitude coordinates (metres).'
+      minimum: 0
+      readOnly: true
+      type: number
+      x-ngsi:
+        type: Property
+    address:
+      description: 'The mailing address'
+      properties:
+        addressCountry:
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''
+          type: string
+        addressLocality:
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''
+          type: string
+        addressRegion:
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''
+          type: string
+        postOfficeBoxNumber:
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''
+          type: string
+        postalCode:
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''
+          type: string
+        streetAddress:
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''
+          type: string
+      type: object
+      x-ngsi:
+        model: https://schema.org/address
+        type: Property
+    alt:
+      description: 'The current distance (metres) above or below ''local'' sea-level.'
+      readOnly: true
+      type: number
+      x-ngsi:
+        type: Property
+    alternateName:
+      description: 'An alternative name for this item'
+      type: string
+      x-ngsi:
+        type: Property
+    altitudeAccuracy:
+      description: 'The accuracy level of the altitude coordinates (metres).'
+      minimum: 0
+      readOnly: true
+      type: number
+      x-ngsi:
+        type: Property
+    areaServed:
+      description: 'The geographic area where a service or offered item is provided'
+      type: string
+      x-ngsi:
+        model: https://schema.org/Text
+        type: Property
+    dataProvider:
+      description: 'A sequence of characters identifying the provider of the harmonised data entity.'
+      type: string
+      x-ngsi:
+        type: Property
+    dateCreated:
+      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'
+      format: date-time
+      type: string
+      x-ngsi:
+        type: Property
+    dateModified:
+      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'
+      format: date-time
+      type: string
+      x-ngsi:
+        type: Property
+    description:
+      description: 'A description of this item'
+      type: string
+      x-ngsi:
+        type: Property
+    heading:
+      description: 'The direction of travel of the Device (degree).'
+      maximum: 360
+      minimum: 0
+      readOnly: true
+      type: number
+      x-ngsi:
+        type: Property
+    id:
+      anyOf: &geolocation_-_properties_-_owner_-_items_-_anyof
+        - description: 'Property. Identifier format of any NGSI entity'
+          maxLength: 256
+          minLength: 1
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
+          type: string
+        - description: 'Property. Identifier format of any NGSI entity'
+          format: uri
+          type: string
+      description: 'Unique identifier of the entity'
+      x-ngsi:
+        type: Property
+    if:
+      description: 'The OCF Interface set supported by this Resource.'
+      items:
+        enum:
+          - oic.if.s
+          - oic.if.baseline
+        type: string
+      minItems: 2
+      readOnly: true
+      type: array
+      uniqueItems: true
+      x-ngsi:
+        type: Property
+    latitude:
+      description: 'The Device''s Current Latitude coordinate (degrees).'
+      readOnly: true
+      type: number
+      x-ngsi:
+        type: Property
+    location:
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
+      oneOf:
+        - description: 'Geoproperty. Geojson reference to the item. Point'
+          properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              items:
+                type: number
+              minItems: 2
+              type: array
+            type:
+              enum:
+                - Point
+              type: string
+          required:
+            - type
+            - coordinates
+          title: 'GeoJSON Point'
+          type: object
+        - description: 'Geoproperty. Geojson reference to the item. LineString'
+          properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              items:
+                items:
+                  type: number
+                minItems: 2
+                type: array
+              minItems: 2
+              type: array
+            type:
+              enum:
+                - LineString
+              type: string
+          required:
+            - type
+            - coordinates
+          title: 'GeoJSON LineString'
+          type: object
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'
+          properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              items:
+                items:
+                  items:
+                    type: number
+                  minItems: 2
+                  type: array
+                minItems: 4
+                type: array
+              type: array
+            type:
+              enum:
+                - Polygon
+              type: string
+          required:
+            - type
+            - coordinates
+          title: 'GeoJSON Polygon'
+          type: object
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'
+          properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              items:
+                items:
+                  type: number
+                minItems: 2
+                type: array
+              type: array
+            type:
+              enum:
+                - MultiPoint
+              type: string
+          required:
+            - type
+            - coordinates
+          title: 'GeoJSON MultiPoint'
+          type: object
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'
+          properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              items:
+                items:
+                  items:
+                    type: number
+                  minItems: 2
+                  type: array
+                minItems: 2
+                type: array
+              type: array
+            type:
+              enum:
+                - MultiLineString
+              type: string
+          required:
+            - type
+            - coordinates
+          title: 'GeoJSON MultiLineString'
+          type: object
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'
+          properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              items:
+                items:
+                  items:
+                    items:
+                      type: number
+                    minItems: 2
+                    type: array
+                  minItems: 4
+                  type: array
+                type: array
+              type: array
+            type:
+              enum:
+                - MultiPolygon
+              type: string
+          required:
+            - type
+            - coordinates
+          title: 'GeoJSON MultiPolygon'
+          type: object
+      x-ngsi:
+        type: Geoproperty
+    longitude:
+      description: 'The Device''s Current Longitude coordinate (degrees).'
+      readOnly: true
+      type: number
+      x-ngsi:
+        type: Property
+    n:
+      description: 'Friendly name of the Resource'
+      maxLength: 64
+      readOnly: true
+      type: string
+      x-ngsi:
+        type: Property
+    name:
+      description: 'The name of this item.'
+      type: string
+      x-ngsi:
+        type: Property
+    owner:
+      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
+      items:
+        anyOf: *geolocation_-_properties_-_owner_-_items_-_anyof
+        description: 'Property. Unique identifier of the entity'
+      type: array
+      x-ngsi:
+        type: Property
+    rt:
+      description: 'The Resource Type.'
+      items:
+        enum:
+          - oic.r.sensor.geolocation
+        maxLength: 64
+        type: string
+      minItems: 1
+      readOnly: true
+      type: array
+      uniqueItems: true
+      x-ngsi:
+        type: Property
+    seeAlso:
+      description: 'list of uri pointing to additional resources about the item'
+      oneOf:
+        - items:
+            format: uri
+            type: string
+          minItems: 1
+          type: array
+        - format: uri
+          type: string
+      x-ngsi:
+        type: Property
+    source:
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'
+      type: string
+      x-ngsi:
+        type: Property
+    speed:
+      description: 'The Device''s current velocity (metres per second).'
+      minimum: 0
+      readOnly: true
+      type: number
+      x-ngsi:
+        type: Property
+    type:
+      description: 'NGSI entity type. It has to be Geolocation'
+      enum:
+        - Geolocation
+      type: string
+      x-ngsi:
+        type: Property
+  required:
+    - latitude
+    - longitude
+    - alt
+    - id
+    - type
+  type: object
+  x-derived-from: https://raw.githubusercontent.com/openconnectivityfoundation/IoTDataModels/master/GeolocationResURI.swagger.json
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'
+  x-license-url: https://github.com/smart-data-models/dataModel.OCF/blob/master/Geolocation/LICENSE.md
+  x-model-schema: https://smart-data-models.github.io/dataModel.OCF/Geolocation/schema.json
+  x-model-tags: OCF
+  x-version: 0.0.1
