@@ -300,7 +300,7 @@ SensorProps:
       x-ngsi:
         type: Property
     sensitivity:
-      description: 'The level of the detection accuracy of the Sensor. This is used to control the level at which the Sensor detects a state change. The "range" Property should be specified per manufacturer device capabilities.'
+      description: 'The level of the detection accuracy of the Sensor. This is used to control the level at which the Sensor detects a state change. The ''range'' Property should be specified per manufacturer device capabilities.'
       type: number
       x-ngsi:
         type: Property
