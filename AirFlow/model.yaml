@@ -68,7 +68,7 @@ AirFlow:
       x-ngsi:
         type: Property
     direction:
-      description: 'The directionality of the air flow, a value indicated by "supporteddirections".'
+      description: 'The directionality of the air flow, a value indicated by ''supporteddirections''.'
       type: string
       x-ngsi:
         type: Property
