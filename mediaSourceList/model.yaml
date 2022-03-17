@@ -1,5 +1,5 @@
 mediaSourceList:
-  description: 'This Resource provides the list of input media sources available on the device.The sources are an array of Media Source(s) see Resource Type "oic.r.mediasource"'
+  description: 'This Resource provides the list of input media sources available on the device.The sources are an array of Media Source(s) see Resource Type ''oic.r.mediasource'''
   properties:
     address:
       description: 'The mailing address'
@@ -289,7 +289,6 @@ mediaSourceList:
       x-ngsi:
         type: Property
     sources:
-      description: 'List of sources'
       items:
         properties:
           sourceName:
@@ -312,8 +311,6 @@ mediaSourceList:
             type: boolean
         type: object
       type: array
-      x-ngsi:
-        type: Property
     type:
       description: 'NGSI entity type. It has to be mediaSourceList'
       enum:
