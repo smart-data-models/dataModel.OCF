@@ -1,0 +1,52 @@
+---
+# Copyleft (c) 2021 Contributors to Smart Data Models initiative
+# 
+
+
+components:
+  schemas: 
+    DRLC: 
+      $ref: "https://smart-data-models.github.io/dataModel.OCF/DRLC/model.yaml#/DRLC"
+info:
+  description:  |
+    This Resource describes any to be applied or currently being applied DRLC signal.The Property 'DRType' is the ApplianceLoadReductionType defined in Zigbee/HA Smart Energy Profile 2.0.The Property 'start' is a string containing an RFC3339 encoded start time.The Property 'duration' value is in minutes.The Property 'Override' indicates whether the consumer has overridden the request (true) or not (false).The Resource provides the current DRLC action that is being applied.A duration of 0 (zero) means that no DRLC is currently active.
+  title: DRLC
+  version: "0.0.1"
+openapi: "3.0.0"
+
+paths: 
+  /ngsi-ld/v1/entities: 
+    get: 
+      description: "Retrieve a set of entities which matches a specific query from an NGSI-LD system"
+      parameters: 
+        - 
+          in: query
+          name: type
+          required: true
+          schema: 
+            enum: 
+              - DRLC
+            type: string
+      responses: 
+        ? "200"
+        : 
+          content: 
+            application/ld+json: 
+              examples: 
+                keyvalues: 
+                  summary: "Key-Values Pairs"
+                  value: 
+                    - 
+                      $ref: "https://smart-data-models.github.io/dataModel.OCF/DRLC/examples/example.json"
+                normalized: 
+                  summary: "Normalized NGSI-LD"
+                  value: 
+                    - 
+                      $ref: "https://smart-data-models.github.io/dataModel.OCF/DRLC/examples/example-normalized.jsonld"
+          description: OK
+      tags: 
+        - ngsi-ld
+tags: 
+  - 
+    description: "NGSI-LD Linked-data Format"
+    name: ngsi-ld
