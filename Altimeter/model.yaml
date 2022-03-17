@@ -1,5 +1,5 @@
 Altimeter:
-  description: 'This Resource describes the properties associated with altimeter.The Property "alt" is the distance (metres) above or below ''local'' sea-level.'
+  description: 'This Resource describes the properties associated with altimeter.The Property ''alt'' is the distance (metres) above or below ''local'' sea-level.'
   properties:
     address:
       description: 'The mailing address'
