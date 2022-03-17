@@ -86,13 +86,13 @@ TimePeriod:
       x-ngsi:
         type: Property
     interval:
-      description: 'The time interval in minutes after the "startTime", if present the Property "stopTime" cannot be present.'
+      description: 'The time interval in minutes after the ''startTime'', if present the Property ''stopTime'' cannot be present.'
       minimum: 0
       type: integer
       x-ngsi:
         type: Property
     intervalsecond:
-      description: 'The time interval in seconds after the "startTime", if present the Property "stopTime" cannot be present.'
+      description: 'The time interval in seconds after the ''startTime'', if present the Property ''stopTime'' cannot be present.'
       minimum: 0
       type: integer
       x-ngsi:
@@ -323,7 +323,7 @@ TimePeriod:
       x-ngsi:
         type: Property
     stopTime:
-      description: 'The stop time for the time period, if present the Property "interval" or "intervalsecond" cannot be present.'
+      description: 'The stop time for the time period, if present the Property ''interval'' or ''intervalsecond'' cannot be present.'
       format: date-time
       type: string
       x-ngsi:
