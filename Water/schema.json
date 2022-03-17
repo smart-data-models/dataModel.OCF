@@ -4,7 +4,7 @@
   "modelTags": "OCF",
   "$id": "https://smart-data-models.github.io/dataModel.OCF/Water/schema.json",
   "title": "Smart Data models - Water schema derived from the open connectivity foundation repository https://github.com/openconnectivityfoundation/IoTDataModels",
-  "description": "This Resource describes whether water has been sensed or not.The Property \"value\" is a boolean.A value of 'true' means that water has been sensed.A value of 'false' means that water not been sensed.",
+  "description": "This Resource describes whether water has been sensed or not.The Property 'value' is a boolean.A value of 'true' means that water has been sensed.A value of 'false' means that water not been sensed.",
   "type": "object",
   "allOf": [
     {
