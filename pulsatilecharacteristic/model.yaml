@@ -1,5 +1,5 @@
 pulsatilecharacteristic:
-  description: 'This Resource describes the Properties associated with a pulsatile characteristic of the pulsative wave of a Pulse Oximeter. The characteristic Property is a read-only value that is provided by the server. When range (from "oic.r.baseresource") is omitted the default is 0 to +MAXFLOAT.'
+  description: 'This Resource describes the Properties associated with a pulsatile characteristic of the pulsative wave of a Pulse Oximeter. The characteristic Property is a read-only value that is provided by the server. When range (from ''oic.r.baseresource'') is omitted the default is 0 to +MAXFLOAT.'
   properties:
     address:
       description: 'The mailing address'
