@@ -3,10 +3,12 @@ Version: 0.0.1
 
 ## Description 
 
-This Resource describes the cadence, which is the number of revolutions of crank per minute when cyclists pedal the pedals. The unit, which is the default unit, is rpm. The cadence Property is a read-only value that is provided by the server. When range (from "oic.r.baseresource") is omitted the default is 0 to +MAXFLOAT.
+This Resource describes the cadence, which is the number of revolutions of crank per minute when cyclists pedal the pedals. The unit, which is the default unit, is rpm. The cadence Property is a read-only value that is provided by the server. When range (from 'oic.r.baseresource') is omitted the default is 0 to +MAXFLOAT.
 
 Data Model adapted from the original created by the Open Connectivity Foundation. Original repository in https://github.com/openconnectivityfoundation/IoTDataModels
 ### Specification
+
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.OCF/Cadence/swagger.yaml)
 ### Examples
 
 Link to the [example](https://smart-data-models.github.io/dataModel.OCF/Cadence/examples/example.json) (keyvalues) for NGSI v2
