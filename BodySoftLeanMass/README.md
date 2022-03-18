@@ -7,6 +7,8 @@ This Resource describes the Properties associated with a person's body soft lean
 
 Data Model adapted from the original created by the Open Connectivity Foundation. Original repository in https://github.com/openconnectivityfoundation/IoTDataModels
 ### Specification
+
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.OCF/BodySoftLeanMass/swagger.yaml)
 ### Examples
 
 Link to the [example](https://smart-data-models.github.io/dataModel.OCF/BodySoftLeanMass/examples/example.json) (keyvalues) for NGSI v2
