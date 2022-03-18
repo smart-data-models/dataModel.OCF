@@ -1,5 +1,5 @@
 Measurement:
-  description: 'This Resource describes a continuous measurement of some value or property or entity .The Property "measurement" is a number. The Property unit is a string and will contain an SI unit of measurement in senML format  https://www.iana.org/assignments/senml/senml.xhtml'
+  description: 'This Resource describes a continuous measurement of some value or property or entity .The Property ''measurement'' is a number. The Property unit is a string and will contain an SI unit of measurement in senML format  https://www.iana.org/assignments/senml/senml.xhtml'
   properties:
     address:
       description: 'The mailing address'
