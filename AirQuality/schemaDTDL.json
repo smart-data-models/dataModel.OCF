@@ -1,0 +1,292 @@
+{
+    "@id": "dtmi:com:ngsi-ld:AirQuality;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "Smart Data models - AirQuality schema derived from the open connectivity foundation repository https://github.com/openconnectivityfoundation/IoTDataModels adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/AirQuality/schema.json",
+    "description": "This Resource describes a qualitative or measured contaminant that can be used to infer Air Quality.The Property 'valueType' indicates a qualitative or measured reading within the contaminantvalue Property.The Property 'contaminantvalue' can contain the actual sensed value with units per contaminant type.Qualitative is a representative value within the range provided where the minimum value is minimum contamination and maximum value is maximum contamination for the specific contaminant.The Property 'contami",
+    "displayName": "AirQuality",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "contaminantvalue",
+            "writable": true,
+            "displayName": "contaminantvalue",
+            "@type": "Property",
+            "schema": "integer",
+            "comment": "The measured or qualitative value for the contaminant."
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "n",
+            "writable": true,
+            "displayName": "n",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Friendly name of the Resource"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "@type": "Telemetry",
+            "name": "if",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "The OCF Interface set supported by this Resource.",
+            "displayName": "if"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "range",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "integer"
+            },
+            "comment": "The valid range for the Property in the Resource as an integer. The first value in the array is the minimum value, the second value in the array is the maximum value.",
+            "displayName": "range"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "rt",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "The Resource Type.",
+            "displayName": "rt"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "contaminanttype",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "CH2O",
+                        "displayName": "CH2O",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "CO2",
+                        "displayName": "CO2",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "CO",
+                        "displayName": "CO",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "PM1",
+                        "displayName": "PM1",
+                        "enumValue": 4
+                    },
+                    {
+                        "name": "PM2.5",
+                        "displayName": "PM2.5",
+                        "enumValue": 5
+                    },
+                    {
+                        "name": "PM10",
+                        "displayName": "PM10",
+                        "enumValue": 6
+                    },
+                    {
+                        "name": "VOC",
+                        "displayName": "VOC",
+                        "enumValue": 7
+                    },
+                    {
+                        "name": "Smoke",
+                        "displayName": "Smoke",
+                        "enumValue": 8
+                    },
+                    {
+                        "name": "Odor",
+                        "displayName": "Odor",
+                        "enumValue": 9
+                    },
+                    {
+                        "name": "AirPollution",
+                        "displayName": "AirPollution",
+                        "enumValue": 10
+                    },
+                    {
+                        "name": "NO2",
+                        "displayName": "NO2",
+                        "enumValue": 11
+                    },
+                    {
+                        "name": "SO2",
+                        "displayName": "SO2",
+                        "enumValue": 12
+                    },
+                    {
+                        "name": "O3",
+                        "displayName": "O3",
+                        "enumValue": 13
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Telemetry",
+            "name": "valuetype",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "Qualitative",
+                        "displayName": "Qualitative",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "Measured",
+                        "displayName": "Measured",
+                        "enumValue": 2
+                    }
+                ]
+            }
+        }
+    ]
+}
