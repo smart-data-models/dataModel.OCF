@@ -3,10 +3,12 @@ Version: 0.0.1
 
 ## Description 
 
-This Resource describes Properties associated with air flow.The Property "supporteddirections" is the set of valid values for the direction property for a particular instance of this Resource Type.The Property "direction" is the directionality of the air flow if applicable, if Property "supporteddirections" is also present it must be a value from that set. The values of Property "direction" are dependent on the capabilities of the unit.The Property "speed" is an integer representing the current speed level for the unit.The Property "range" is an array of the min,max values for the speed level. If not present the "range" defaults to [0,100]. Property "automode" is the status of the automode feature; Off means automode is not enabled, On means automode is active and the speed is automatically controlled by the Device.
+This Resource describes Properties associated with air flow.The Property 'supporteddirections' is the set of valid values for the direction property for a particular instance of this Resource Type.The Property 'direction' is the directionality of the air flow if applicable, if Property 'supporteddirections' is also present it must be a value from that set. The values of Property 'direction' are dependent on the capabilities of the unit.The Property 'speed' is an integer representing the current speed level for the unit.The Property 'range' is an array of the min,max values for the speed level. If not present the 'range' defaults to [0,100]. Property 'automode' is the status of the automode feature; Off means automode is not enabled, On means automode is active and the speed is automatically controlled by the Device.
 
 Data Model adapted from the original created by the Open Connectivity Foundation. Original repository in https://github.com/openconnectivityfoundation/IoTDataModels
 ### Specification
+
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.OCF/AirFlow/swagger.yaml)
 ### Examples
 
 Link to the [example](https://smart-data-models.github.io/dataModel.OCF/AirFlow/examples/example.json) (keyvalues) for NGSI v2
