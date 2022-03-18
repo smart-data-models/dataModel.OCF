@@ -7,6 +7,8 @@ This Resource describes the Properties associated with Calibrate for Continuous 
 
 Data Model adapted from the original created by the Open Connectivity Foundation. Original repository in https://github.com/openconnectivityfoundation/IoTDataModels
 ### Specification
+
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.OCF/ContinuousGlucoseMeterCalibrate/swagger.yaml)
 ### Examples
 
 Link to the [example](https://smart-data-models.github.io/dataModel.OCF/ContinuousGlucoseMeterCalibrate/examples/example.json) (keyvalues) for NGSI v2
