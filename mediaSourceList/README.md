@@ -3,7 +3,7 @@ Version: 0.0.1
 
 ## Description 
 
-This Resource provides the list of input media sources available on the device.The sources are an array of Media Source(s) see Resource Type "oic.r.mediasource"
+This Resource provides the list of input media sources available on the device.The sources are an array of Media Source(s) see Resource Type 'oic.r.mediasource'
 
 Data Model adapted from the original created by the Open Connectivity Foundation. Original repository in https://github.com/openconnectivityfoundation/IoTDataModels
 ### Specification
