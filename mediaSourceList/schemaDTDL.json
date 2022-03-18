@@ -3,7 +3,7 @@
     "@type": "Interface",
     "@context": "dtmi:dtdl:context;2",
     "comment": "Smart Data models - mediaSourceList schema derived from the open connectivity foundation repository https://github.com/openconnectivityfoundation/IoTDataModels adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/mediaSourceList/schema.json",
-    "description": "This Resource provides the list of input media sources available on the device.The sources are an array of Media Source(s) see Resource Type \"oic.r.mediasource\"",
+    "description": "This Resource provides the list of input media sources available on the device.The sources are an array of Media Source(s) see Resource Type 'oic.r.mediasource'",
     "displayName": "mediaSourceList",
     "contents": [
         {
@@ -120,7 +120,7 @@
                 "@type": "Array",
                 "elementSchema": "object"
             },
-            "comment": "List of sources",
+            "comment": "The list of sources",
             "displayName": "sources"
         },
         {
