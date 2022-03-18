@@ -5,12 +5,12 @@
 
 components:
   schemas: 
-    Water: 
-      $ref: "https://smart-data-models.github.io/dataModel.OCF/Water/model.yaml#/Water"
+    VehicleConnector: 
+      $ref: "https://smart-data-models.github.io/dataModel.OCF/VehicleConnector/model.yaml#/VehicleConnector"
 info:
   description:  |
-    This Resource describes whether water has been sensed or not.The Property 'value' is a boolean.A value of 'true' means that water has been sensed.A value of 'false' means that water not been sensed.
-  title: Water
+    This Resource describes the attributes associated with an electric vehicle charging connector. The Property 'connected' is a boolean indicating the status of the connector (False = disconnected, True = connected). The Property 'ratedchargingcapacity' and 'rateddischargingcapacity' are in Amps (A).
+  title: VehicleConnector
   version: "0.0.1"
 openapi: "3.0.0"
 
@@ -25,7 +25,7 @@ paths:
           required: true
           schema: 
             enum: 
-              - Water
+              - VehicleConnector
             type: string
       responses: 
         ? "200"
@@ -37,12 +37,12 @@ paths:
                   summary: "Key-Values Pairs"
                   value: 
                     - 
-                      $ref: "https://smart-data-models.github.io/dataModel.OCF/Water/examples/example.json"
+                      $ref: "https://smart-data-models.github.io/dataModel.OCF/VehicleConnector/examples/example.json"
                 normalized: 
                   summary: "Normalized NGSI-LD"
                   value: 
                     - 
-                      $ref: "https://smart-data-models.github.io/dataModel.OCF/Water/examples/example-normalized.jsonld"
+                      $ref: "https://smart-data-models.github.io/dataModel.OCF/VehicleConnector/examples/example-normalized.jsonld"
           description: OK
       tags: 
         - ngsi-ld

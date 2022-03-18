@@ -5,12 +5,12 @@
 
 components:
   schemas: 
-    Water: 
-      $ref: "https://smart-data-models.github.io/dataModel.OCF/Water/model.yaml#/Water"
+    UserID: 
+      $ref: "https://smart-data-models.github.io/dataModel.OCF/UserID/model.yaml#/UserID"
 info:
   description:  |
-    This Resource describes whether water has been sensed or not.The Property 'value' is a boolean.A value of 'true' means that water has been sensed.A value of 'false' means that water not been sensed.
-  title: Water
+    This Resource describes the Properties associated with user id of an OCF Client.The userid Property is a single value of type string.The userid Property is a read-only value that is provided by the Server.
+  title: UserID
   version: "0.0.1"
 openapi: "3.0.0"
 
@@ -25,7 +25,7 @@ paths:
           required: true
           schema: 
             enum: 
-              - Water
+              - UserID
             type: string
       responses: 
         ? "200"
@@ -37,12 +37,12 @@ paths:
                   summary: "Key-Values Pairs"
                   value: 
                     - 
-                      $ref: "https://smart-data-models.github.io/dataModel.OCF/Water/examples/example.json"
+                      $ref: "https://smart-data-models.github.io/dataModel.OCF/UserID/examples/example.json"
                 normalized: 
                   summary: "Normalized NGSI-LD"
                   value: 
                     - 
-                      $ref: "https://smart-data-models.github.io/dataModel.OCF/Water/examples/example-normalized.jsonld"
+                      $ref: "https://smart-data-models.github.io/dataModel.OCF/UserID/examples/example-normalized.jsonld"
           description: OK
       tags: 
         - ngsi-ld

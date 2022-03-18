@@ -5,12 +5,12 @@
 
 components:
   schemas: 
-    Water: 
-      $ref: "https://smart-data-models.github.io/dataModel.OCF/Water/model.yaml#/Water"
+    Torque: 
+      $ref: "https://smart-data-models.github.io/dataModel.OCF/Torque/model.yaml#/Torque"
 info:
   description:  |
-    This Resource describes whether water has been sensed or not.The Property 'value' is a boolean.A value of 'true' means that water has been sensed.A value of 'false' means that water not been sensed.
-  title: Water
+    This Resource describes the torque, which is the rotational equivalent of linear force. The unit, which is the default SI unit, is N*m (Newton metre). The torque Property is a read-only value that is provided by the server. When range (from 'oic.r.baseresource') is omitted the default is 0 to +MAXFLOAT.
+  title: Torque
   version: "0.0.1"
 openapi: "3.0.0"
 
@@ -25,7 +25,7 @@ paths:
           required: true
           schema: 
             enum: 
-              - Water
+              - Torque
             type: string
       responses: 
         ? "200"
@@ -37,12 +37,12 @@ paths:
                   summary: "Key-Values Pairs"
                   value: 
                     - 
-                      $ref: "https://smart-data-models.github.io/dataModel.OCF/Water/examples/example.json"
+                      $ref: "https://smart-data-models.github.io/dataModel.OCF/Torque/examples/example.json"
                 normalized: 
                   summary: "Normalized NGSI-LD"
                   value: 
                     - 
-                      $ref: "https://smart-data-models.github.io/dataModel.OCF/Water/examples/example-normalized.jsonld"
+                      $ref: "https://smart-data-models.github.io/dataModel.OCF/Torque/examples/example-normalized.jsonld"
           description: OK
       tags: 
         - ngsi-ld
