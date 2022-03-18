@@ -3,10 +3,12 @@ Version: 0.0.1
 
 ## Description 
 
-This Resource describes the attributes associated with foaming. The Property "foamstrength" of the liquid is represented as an integer.The foam strength is an integer, the range of which may be enforced by the presence of the Property "range".
+This Resource describes the attributes associated with foaming. The Property 'foamstrength' of the liquid is represented as an integer.The foam strength is an integer, the range of which may be enforced by the presence of the Property 'range'.
 
 Data Model adapted from the original created by the Open Connectivity Foundation. Original repository in https://github.com/openconnectivityfoundation/IoTDataModels
 ### Specification
+
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.OCF/Foaming/swagger.yaml)
 ### Examples
 
 Link to the [example](https://smart-data-models.github.io/dataModel.OCF/Foaming/examples/example.json) (keyvalues) for NGSI v2
