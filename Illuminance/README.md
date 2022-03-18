@@ -3,10 +3,12 @@ Version: 0.0.1
 
 ## Description 
 
-This Resource describes an illuminance sensor.The Property "illuminance" is a float and represents the sensed luminous flux per unit area in lux.
+This Resource describes an illuminance sensor.The Property 'illuminance' is a float and represents the sensed luminous flux per unit area in lux.
 
 Data Model adapted from the original created by the Open Connectivity Foundation. Original repository in https://github.com/openconnectivityfoundation/IoTDataModels
 ### Specification
+
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.OCF/Illuminance/swagger.yaml)
 ### Examples
 
 Link to the [example](https://smart-data-models.github.io/dataModel.OCF/Illuminance/examples/example.json) (keyvalues) for NGSI v2
