@@ -3,10 +3,12 @@ Version: 0.0.1
 
 ## Description 
 
-This Resource describes a dimming function.The Property "dimmingSetting" is an integer showing the current dimming level.If Property "step" is present then it represents the increment between dimmer values.When the Property "range" is omitted, then the range is [0,100].A value of 0 means total dimming; a value of 100 means no dimming.
+This Resource describes a dimming function.The Property 'dimmingSetting' is an integer showing the current dimming level.If Property 'step' is present then it represents the increment between dimmer values.When the Property 'range' is omitted, then the range is [0,100].A value of 0 means total dimming; a value of 100 means no dimming.
 
 Data Model adapted from the original created by the Open Connectivity Foundation. Original repository in https://github.com/openconnectivityfoundation/IoTDataModels
 ### Specification
+
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.OCF/Dimming/swagger.yaml)
 ### Examples
 
 Link to the [example](https://smart-data-models.github.io/dataModel.OCF/Dimming/examples/example.json) (keyvalues) for NGSI v2
