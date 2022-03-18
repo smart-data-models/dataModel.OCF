@@ -3,7 +3,7 @@
     "@type": "Interface",
     "@context": "dtmi:dtdl:context;2",
     "comment": "Smart Data models - DRLC schema derived from the open connectivity foundation repository https://github.com/openconnectivityfoundation/IoTDataModels adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/DRLC/schema.json",
-    "description": "This Resource describes any to be applied or currently being applied DRLC signal.The Property \"DRType\" is the ApplianceLoadReductionType defined in Zigbee/HA Smart Energy Profile 2.0.The Property \"start\" is a string containing an RFC3339 encoded start time.The Property \"duration\" value is in minutes.The Property \"Override\" indicates whether the consumer has overridden the request (true) or not (false).The Resource provides the current DRLC action that is being applied.A duration of 0 (zero) means that no DR",
+    "description": "This Resource describes any to be applied or currently being applied DRLC signal.The Property 'DRType' is the ApplianceLoadReductionType defined in Zigbee/HA Smart Energy Profile 2.0.The Property 'start' is a string containing an RFC3339 encoded start time.The Property 'duration' value is in minutes.The Property 'Override' indicates whether the consumer has overridden the request (true) or not (false).The Resource provides the current DRLC action that is being applied.A duration of 0 (zero) means that no DR",
     "displayName": "DRLC",
     "contents": [
         {
