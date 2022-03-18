@@ -1,0 +1,264 @@
+{
+    "@id": "dtmi:com:ngsi-ld:Alarm;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "Smart Data models - Alarm schema derived from the open connectivity foundation repository https://github.com/openconnectivityfoundation/IoTDataModels adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/Alarm/schema.json",
+    "description": "This Resource describes the Properties associated with alarm status.",
+    "displayName": "Alarm",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "duration",
+            "writable": true,
+            "displayName": "duration",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "This Property describes the alarm duration (seconds)."
+        },
+        {
+            "name": "n",
+            "writable": true,
+            "displayName": "n",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Friendly name of the Resource"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "precision",
+            "writable": true,
+            "displayName": "precision",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "status",
+            "writable": true,
+            "displayName": "status",
+            "@type": "Property",
+            "schema": "boolean",
+            "comment": "This Property describes the status of the alarm: true - on, false - off."
+        },
+        {
+            "name": "step",
+            "writable": true,
+            "displayName": "step",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0."
+        },
+        {
+            "name": "time",
+            "writable": true,
+            "displayName": "time",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "This Property describes the alarm time using ISO 8601 datetime format (e.g: 2007-04-05T14:30Z, 2007-04-05T14:30+09:00)."
+        },
+        {
+            "@type": "Telemetry",
+            "name": "if",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "The OCF Interface set supported by this Resource.",
+            "displayName": "if"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "range",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "number"
+            },
+            "comment": "The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.",
+            "displayName": "range"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "rt",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "The Resource Type.",
+            "displayName": "rt"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "alarmtype",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "General",
+                        "displayName": "General",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "Fire",
+                        "displayName": "Fire",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "Flood",
+                        "displayName": "Flood",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "Weather",
+                        "displayName": "Weather",
+                        "enumValue": 4
+                    },
+                    {
+                        "name": "Security",
+                        "displayName": "Security",
+                        "enumValue": 5
+                    }
+                ]
+            }
+        }
+    ]
+}
