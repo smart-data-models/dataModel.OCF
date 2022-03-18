@@ -3,10 +3,12 @@ Version: 0.0.1
 
 ## Description 
 
-This Resource describes the colour using colour temperature conventions.The Property "ct" is the Mired colour temperature.The equivalent value in Kelvin is obtained by Colour Temp(K) = 1,000,000/Colour Temp(Mired)THe Resource provides the colour using colour temperature conventions.
+This Resource describes the colour using colour temperature conventions.The Property 'ct' is the Mired colour temperature.The equivalent value in Kelvin is obtained by Colour Temp(K) = 1,000,000/Colour Temp(Mired)THe Resource provides the colour using colour temperature conventions.
 
 Data Model adapted from the original created by the Open Connectivity Foundation. Original repository in https://github.com/openconnectivityfoundation/IoTDataModels
 ### Specification
+
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.OCF/ColourTemp/swagger.yaml)
 ### Examples
 
 Link to the [example](https://smart-data-models.github.io/dataModel.OCF/ColourTemp/examples/example.json) (keyvalues) for NGSI v2
