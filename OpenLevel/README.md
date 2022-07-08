@@ -1,9 +1,10 @@
-# OpenLevel
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
+# OpenLevel
 Version: 0.0.1
 
 ## Description 
 
-This Resource describes how open or ajar an entity such as a window, door, blind or shutter is.The Property "openLevel" can be read (acting as a sensor).The "openLevel" can also be set (acting as an actuator).The "openLevel" is device dependent across the range provided.When the Property "range" is omitted then 0 to 100 is assumed where 0 means closed, 100 means fully open.If a "range" is provided then the lower bound=closed, upper bound=open.If Property "step" is present then it represents the increment between possible values; if not provided 1 is assumed.
+This Resource describes how open or ajar an entity such as a window, door, blind or shutter is.The Property 'openLevel' can be read (acting as a sensor).The 'openLevel' can also be set (acting as an actuator).The 'openLevel' is device dependent across the range provided.When the Property 'range' is omitted then 0 to 100 is assumed where 0 means closed, 100 means fully open.If a 'range' is provided then the lower bound=closed, upper bound=open.If Property 'step' is present then it represents the increment between possible values; if not provided 1 is assumed.
 
 Data Model adapted from the original created by the Open Connectivity Foundation. Original repository in https://github.com/openconnectivityfoundation/IoTDataModels
 ### Specification
