@@ -1,9 +1,10 @@
-# Water
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
+# Water
 Version: 0.0.1
 
 ## Description 
 
-This Resource describes whether water has been sensed or not.The Property "value" is a boolean.A value of 'true' means that water has been sensed.A value of 'false' means that water not been sensed.
+This Resource describes whether water has been sensed or not.The Property 'value' is a boolean.A value of 'true' means that water has been sensed.A value of 'false' means that water not been sensed.
 
 Data Model adapted from the original created by the Open Connectivity Foundation. Original repository in https://github.com/openconnectivityfoundation/IoTDataModels
 ### Specification
