@@ -1,9 +1,10 @@
-# threeAxis
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
+# threeAxis
 Version: 0.0.1
 
 ## Description 
 
-This Resource provides a representation of the measurement from a three-axis sensor.The Property "orientation" is an array of numbers representing x-plane, y-plane and z-plane values.The unit of measurement for each pane is 'g'.
+This Resource provides a representation of the measurement from a three-axis sensor.The Property 'orientation' is an array of numbers representing x-plane, y-plane and z-plane values.The unit of measurement for each pane is 'g'.
 
 Data Model adapted from the original created by the Open Connectivity Foundation. Original repository in https://github.com/openconnectivityfoundation/IoTDataModels
 ### Specification
