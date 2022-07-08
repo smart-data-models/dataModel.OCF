@@ -1,9 +1,10 @@
-# RampTime
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
+# RampTime
 Version: 0.0.1
 
 ## Description 
 
-This Resource that describes the ramp time of a dimming function.It specifies the actual speed of changing between 2 dimming values.The Property "ramptime" is specified in milliseconds [ms].When range is omitted the maximum value is 100 ms.The ramp time of 0ms indicates the minimal delay possible by the implementation.
+This Resource that describes the ramp time of a dimming function.It specifies the actual speed of changing between 2 dimming values.The Property 'ramptime' is specified in milliseconds [ms].When range is omitted the maximum value is 100 ms.The ramp time of 0ms indicates the minimal delay possible by the implementation.
 
 Data Model adapted from the original created by the Open Connectivity Foundation. Original repository in https://github.com/openconnectivityfoundation/IoTDataModels
 ### Specification
