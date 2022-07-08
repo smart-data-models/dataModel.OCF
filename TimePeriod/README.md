@@ -1,12 +1,27 @@
-# TimePeriod
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
+# TimePeriod
 Version: 0.0.1
 
 ## Description 
 
-This Resource describes the time period over which any additionally provided information is derived or bounded.The Property "startTime" and "stopTime" are RFC3339 encoded strings. The Property "startTime" must be present.The interval is the interval of the time period in minutes, if present this value must be no less than 0 minute.The intervalsecond is the interval of the time period in seconds, if present this value must be numerical zero or greater.The repeat is the number of the time period's iteration, which means how many times to repeat the time period. The Property "repeat" accepts only negative one, numerical zero, and positive number. When this value is numerical zero, the time period will be repeated infinitely until a client makes it stop by inputting negative one for the value.The Property "stoptime" and "interval" are mutually exclusive; both Properties cannot be present in a Resource instance.The Property "intervalsecond" cannot be presented with the Property "stopTime". In case of both the Property "interval" and "intervalsecond" are presented together, the total time interval is the sum of "interval" and "intervalsecond".The Property "triggertiming" describes a specific time to execute an action. This property must have one of the values among "startTime", "stopTime", and "totalInterval". The totalInterval means the sum of the Property "interval" and "intervalsecond". If one of the properties does not exist, the value of the unexpressed property is taken as a numerical zero.The Property "state" describes a state of time interval. This property must have one of the values among "preInterval", "inInterval", and "postInterval".The Resource defines a time period for information retrieval, action or other behaviour.
+This Resource describes the time period over which any additionally provided information is derived or bounded.The Property 'startTime' and 'stopTime' are RFC3339 encoded strings. The Property 'startTime' must be present.The interval is the interval of the time period in minutes, if present this value must be no less than 0 minute.The intervalsecond is the interval of the time period in seconds, if present this value must be numerical zero or greater.The repeat is the number of the time period's iteration, which means how many times to repeat the time period. The Property 'repeat' accepts only negative one, numerical zero, and positive number. When this value is numerical zero, the time period will be repeated infinitely until a client makes it stop by inputting negative one for the value.The Property 'stoptime' and 'interval' are mutually exclusive; both Properties cannot be present in a Resource instance.The Property 'intervalsecond' cannot be presented with the Property 'stopTime'. In case of both the Property 'interval' and 'intervalsecond' are presented together, the total time interval is the sum of 'interval' and 'intervalsecond'.The Property 'triggertiming' describes a specific time to execute an action. This property must have one of the values among 'startTime', 'stopTime', and 'totalInterval'. The totalInterval means the sum of the Property 'interval' and 'intervalsecond'. If one of the properties does not exist, the value of the unexpressed property is taken as a numerical zero.The Property 'state' describes a state of time interval. This property must have one of the values among 'preInterval', 'inInterval', and 'postInterval'.The Resource defines a time period for information retrieval, action or other behaviour.
 
 Data Model adapted from the original created by the Open Connectivity Foundation. Original repository in https://github.com/openconnectivityfoundation/IoTDataModels
 ### Specification
+
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.OCF/TimePeriod/swagger.yaml)
+
+Link to the [specification](https://github.com/smart-data-models/dataModel.OCF/blob/master/TimePeriod/doc/spec.md)
+
+Enlace a la [Especificación en español](https://github.com/smart-data-models/dataModel.OCF/blob/master/TimePeriod/doc/spec_ES.md)
+
+Lien vers le [spécification en français](https://github.com/smart-data-models/dataModel.OCF/blob/master/TimePeriod/doc/spec_FR.md)
+
+Link zur [deutschen Spezifikation](https://github.com/smart-data-models/dataModel.OCF/blob/master/TimePeriod/doc/spec_DE.md)
+
+Link alla [specifica](https://github.com/smart-data-models/dataModel.OCF/blob/master/TimePeriod/doc/spec_IT.md)
+
+[仕様へのリンク](https://github.com/smart-data-models/dataModel.OCF/blob/master/TimePeriod/doc/spec_JA.md)
 ### Examples
 
 Link to the [example](https://smart-data-models.github.io/dataModel.OCF/TimePeriod/examples/example.json) (keyvalues) for NGSI v2
