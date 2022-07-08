@@ -1,12 +1,27 @@
-# smoke
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
+# smoke
 Version: 0.0.1
 
 ## Description 
 
-This Resource describes whether smoke has been sensed or not.The Property "value" is a boolean.A value of 'true' means that smoke has been sensed.A value of 'false' means that smoke not been sensed.
+This Resource describes whether smoke has been sensed or not.The Property 'value' is a boolean.A value of 'true' means that smoke has been sensed.A value of 'false' means that smoke not been sensed.
 
 Data Model adapted from the original created by the Open Connectivity Foundation. Original repository in https://github.com/openconnectivityfoundation/IoTDataModels
 ### Specification
+
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.OCF/smoke/swagger.yaml)
+
+Link to the [specification](https://github.com/smart-data-models/dataModel.OCF/blob/master/smoke/doc/spec.md)
+
+Enlace a la [Especificación en español](https://github.com/smart-data-models/dataModel.OCF/blob/master/smoke/doc/spec_ES.md)
+
+Lien vers le [spécification en français](https://github.com/smart-data-models/dataModel.OCF/blob/master/smoke/doc/spec_FR.md)
+
+Link zur [deutschen Spezifikation](https://github.com/smart-data-models/dataModel.OCF/blob/master/smoke/doc/spec_DE.md)
+
+Link alla [specifica](https://github.com/smart-data-models/dataModel.OCF/blob/master/smoke/doc/spec_IT.md)
+
+[仕様へのリンク](https://github.com/smart-data-models/dataModel.OCF/blob/master/smoke/doc/spec_JA.md)
 ### Examples
 
 Link to the [example](https://smart-data-models.github.io/dataModel.OCF/smoke/examples/example.json) (keyvalues) for NGSI v2
