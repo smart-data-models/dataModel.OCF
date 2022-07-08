@@ -1,4 +1,5 @@
-# CO2
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
+# CO2
 Version: 0.0.1
 
 ## Description 
@@ -9,6 +10,18 @@ Data Model adapted from the original created by the Open Connectivity Foundation
 ### Specification
 
 Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.OCF/CO2/swagger.yaml)
+
+Link to the [specification](https://github.com/smart-data-models/dataModel.OCF/blob/master/CO2/doc/spec.md)
+
+Enlace a la [Especificación en español](https://github.com/smart-data-models/dataModel.OCF/blob/master/CO2/doc/spec_ES.md)
+
+Lien vers le [spécification en français](https://github.com/smart-data-models/dataModel.OCF/blob/master/CO2/doc/spec_FR.md)
+
+Link zur [deutschen Spezifikation](https://github.com/smart-data-models/dataModel.OCF/blob/master/CO2/doc/spec_DE.md)
+
+Link alla [specifica](https://github.com/smart-data-models/dataModel.OCF/blob/master/CO2/doc/spec_IT.md)
+
+[仕様へのリンク](https://github.com/smart-data-models/dataModel.OCF/blob/master/CO2/doc/spec_JA.md)
 ### Examples
 
 Link to the [example](https://smart-data-models.github.io/dataModel.OCF/CO2/examples/example.json) (keyvalues) for NGSI v2
