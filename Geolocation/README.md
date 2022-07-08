@@ -1,9 +1,10 @@
-# Geolocation
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
+# Geolocation
 Version: 0.0.1
 
 ## Description 
 
-This Resource describes the properties associated with the current geolocation coordinate.Geolocation is a geolocation coordinate data.The Property "latitude" is a device's current Latitude coordinate (degrees).The Property "longitude" is a device's current Longitude coordinate (degrees).The Property "alt" is a device's current distance (metres) above or below 'local' sea-level.The Property "accuracy" is the accuracy level of the latitude and longitude coordinates (metres).The Property "altitudeAccuracy" is the accuracy level of the altitude coordinates (metres).The Property "heading" is a direction of travel of device (degree).The Property "speed" is a device's current velocity (metres per second).
+This Resource describes the properties associated with the current geolocation coordinate.Geolocation is a geolocation coordinate data.The Property 'latitude' is a device's current Latitude coordinate (degrees).The Property 'longitude' is a device's current Longitude coordinate (degrees).The Property 'alt' is a device's current distance (metres) above or below 'local' sea-level.The Property 'accuracy' is the accuracy level of the latitude and longitude coordinates (metres).The Property 'altitudeAccuracy' is the accuracy level of the altitude coordinates (metres).The Property 'heading' is a direction of travel of device (degree).The Property 'speed' is a device's current velocity (metres per second).
 
 Data Model adapted from the original created by the Open Connectivity Foundation. Original repository in https://github.com/openconnectivityfoundation/IoTDataModels
 ### Specification
