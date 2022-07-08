@@ -1,12 +1,27 @@
-# Temperature
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
+# Temperature
 Version: 0.0.1
 
 ## Description 
 
-This Resource describes a sensed or actuated Temperature value.The Property "temperature" describes the current value measured.The Property "units" is a single value that is one of "C", "F" or "K".It provides the unit of measurement for the "temperature" value.It is a read-only value that is provided by the server.If the "units" Property is missing the default is Celsius [C].When the Property "range" is omitted the default is +/- MAXINT.A client can specify the units for the requested temperature by use of a query parameter.If no query parameter is provided the server provides its default measure or set value.It is recommended to return always the units Property in the result.
+This Resource describes a sensed or actuated Temperature value.The Property 'temperature' describes the current value measured.The Property 'units' is a single value that is one of 'C', 'F' or 'K'.It provides the unit of measurement for the 'temperature' value.It is a read-only value that is provided by the server.If the 'units' Property is missing the default is Celsius [C].When the Property 'range' is omitted the default is +/- MAXINT.A client can specify the units for the requested temperature by use of a query parameter.If no query parameter is provided the server provides its default measure or set value.It is recommended to return always the units Property in the result.
 
 Data Model adapted from the original created by the Open Connectivity Foundation. Original repository in https://github.com/openconnectivityfoundation/IoTDataModels
 ### Specification
+
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.OCF/Temperature/swagger.yaml)
+
+Link to the [specification](https://github.com/smart-data-models/dataModel.OCF/blob/master/Temperature/doc/spec.md)
+
+Enlace a la [Especificación en español](https://github.com/smart-data-models/dataModel.OCF/blob/master/Temperature/doc/spec_ES.md)
+
+Lien vers le [spécification en français](https://github.com/smart-data-models/dataModel.OCF/blob/master/Temperature/doc/spec_FR.md)
+
+Link zur [deutschen Spezifikation](https://github.com/smart-data-models/dataModel.OCF/blob/master/Temperature/doc/spec_DE.md)
+
+Link alla [specifica](https://github.com/smart-data-models/dataModel.OCF/blob/master/Temperature/doc/spec_IT.md)
+
+[仕様へのリンク](https://github.com/smart-data-models/dataModel.OCF/blob/master/Temperature/doc/spec_JA.md)
 ### Examples
 
 Link to the [example](https://smart-data-models.github.io/dataModel.OCF/Temperature/examples/example.json) (keyvalues) for NGSI v2
