@@ -1,12 +1,27 @@
-# SensorProps
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
+# SensorProps
 Version: 0.0.1
 
 ## Description 
 
-This Resource describes the properties which guide the reporting of a state change of a Sensor.The Property "silenttime" represents the period after which a state change report was sent where the Sensor state change is not reported.The Property "sensitivity" represents the level at which the sensor detects a state change.These values are completely dependent on the type of Sensor and the manufacturer capability, so no range restrictions are used.The Properties "range", "step" and "precision" are only applied to the "sensitivity" Property.
+This Resource describes the properties which guide the reporting of a state change of a Sensor.The Property 'silenttime' represents the period after which a state change report was sent where the Sensor state change is not reported.The Property 'sensitivity' represents the level at which the sensor detects a state change.These values are completely dependent on the type of Sensor and the manufacturer capability, so no range restrictions are used.The Properties 'range', 'step' and 'precision' are only applied to the 'sensitivity' Property.
 
 Data Model adapted from the original created by the Open Connectivity Foundation. Original repository in https://github.com/openconnectivityfoundation/IoTDataModels
 ### Specification
+
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.OCF/SensorProps/swagger.yaml)
+
+Link to the [specification](https://github.com/smart-data-models/dataModel.OCF/blob/master/SensorProps/doc/spec.md)
+
+Enlace a la [Especificación en español](https://github.com/smart-data-models/dataModel.OCF/blob/master/SensorProps/doc/spec_ES.md)
+
+Lien vers le [spécification en français](https://github.com/smart-data-models/dataModel.OCF/blob/master/SensorProps/doc/spec_FR.md)
+
+Link zur [deutschen Spezifikation](https://github.com/smart-data-models/dataModel.OCF/blob/master/SensorProps/doc/spec_DE.md)
+
+Link alla [specifica](https://github.com/smart-data-models/dataModel.OCF/blob/master/SensorProps/doc/spec_IT.md)
+
+[仕様へのリンク](https://github.com/smart-data-models/dataModel.OCF/blob/master/SensorProps/doc/spec_JA.md)
 ### Examples
 
 Link to the [example](https://smart-data-models.github.io/dataModel.OCF/SensorProps/examples/example.json) (keyvalues) for NGSI v2
