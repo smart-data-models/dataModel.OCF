@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0.1",
+  "$schemaVersion": "0.0.2",
   "modelTags": "OCF",
   "$id": "https://smart-data-models.github.io/dataModel.IoTDataModels/Request/schema.json",
   "title": "DALI Configuration",
@@ -15,6 +15,13 @@
     }
   ],
   "properties": {
+    "type": {
+      "type": "string",
+      "description": "Property. It has to be Request. NGSI entity type",
+      "enum": [
+        "Request"
+      ]
+    },
     "bus": {
       "description": "Property. assign the bus identifier.",
       "type": "integer"
