@@ -1,17 +1,19 @@
-エンティティリクエスト  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティリクエスト  
 ===========  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/Request/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな説明です。**スマートデータモデル オリジナルのIoTDataデータモデルをプログラム化したものです。このリソースは、DALI（アドレッシング）構成、IEC 62386-104、Digital addressable lighting interface - Part 104: General requirements - Wireless and alternative wired systemを記述している。**  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+グローバルな記述。**オリジナルの IoTData データモデルをスマートデータモデルプログラムに適応させたものです。本Resourceは、IEC 62386-104「Digital Addressable Lighting Interface - Part 104: General Requirements - Wireless and alternative wired system」のDALI（アドレス指定）構成について記述している。**  
+バージョン: 0.0.2  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `bus`: バスの識別子を割り当てます。  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `src`: 割り当てられたソースアドレス。-1は、アプリケーションコントローラがまだ割り当てていないことを意味します。    
-必須項目  
+- `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `bus`: は、バス識別子を割り当てる。  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `id`: エンティティの一意な識別子  - `location`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name`: このアイテムの名称です。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `src`: 割り当てられたソースアドレスです。-1は、アプリケーションコントローラからまだ割り当てられていないことを意味します。  - `type`: Requestでなければならない。NGSIエンティティタイプ    
+必要なプロパティ  
 - `id`  - `type`    
-このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)から来ています。NGSIの要件に適合するように拡張されています。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)に由来しています。NGSIの要件に適合するように拡張されている。  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Request:    
@@ -281,6 +283,13 @@ Request:
       type: integer    
       x-ngsi:    
         type: Property    
+    type:    
+      description: 'It has to be Request. NGSI entity type'    
+      enum:    
+        - Request    
+      type: string    
+      x-ngsi:    
+        type: Property    
   required:    
     - id    
     - type    
@@ -290,12 +299,12 @@ Request:
   x-license-url: https://github.com/smart-data-models/dataModel.OCF/blob/master/Request/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.IoTDataModels/Request/schema.json    
   x-model-tags: OCF    
-  x-version: 0.0.1    
+  x-version: 0.0.2    
 ```  
 </details>    
 ## ペイロードの例  
-#### Request NGSI-v2 key-values Example  
-Key-ValuesとしてJSON-LD形式のRequestの例を示します。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### NGSI-v2 の鍵の値を要求する 例  
+以下は、JSON-LD形式でkey-valuesとしてRequestした場合の例である。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:Request:id:AFNY:57766358",  
@@ -332,8 +341,8 @@ Request:
   "areaServed": "Lose important attention recent happy imagine light message."  
 }  
 ```  
-#### リクエスト NGSI-v2 正規化された例  
-ここでは、正規化されたJSON-LD形式のRequestの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### NGSI-v2 正規化要求 例  
+以下は、正規化されたJSON-LD形式のRequestの例である。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": {  
@@ -411,8 +420,8 @@ Request:
   }  
 }  
 ```  
-#### Request NGSI-LD key-valuesの例。  
-Key-ValuesとしてJSON-LD形式のRequestの例を示します。これは`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### NGSI-LDのキー値を要求する 例  
+以下は、JSON-LD形式でkey-valuesとしてRequestした場合の例である。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:Request:id:AFNY:57766358",  
@@ -452,8 +461,8 @@ Request:
   ]  
 }  
 ```  
-#### リクエスト NGSI-LDの正規化例  
-ここでは、正規化されたJSON-LD形式のRequestの例を示します。これはオプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### NGSI-LD 正規化例  
+以下は、正規化されたJSON-LD形式のRequestの例である。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:Request:id:QZGG:97786270",  
