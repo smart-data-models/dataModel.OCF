@@ -1,78 +1,79 @@
 {
-  "id": "urn:ngsi-ld:Brightness:id:RSNQ:68207834",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2015-11-22T15:03:19Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1984-04-26T19:36:27Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "Get more effort admit education far great. Note factor assume state civil attack. Hand all degree agency add."
-  },
-  "name": {
-    "type": "Property",
-    "value": "Decade size collection station tend blue. Exist fall major foot stay benefit north customer."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Green establish board forward itself site. Fear this toward."
-  },
-  "description": {
-    "type": "Property",
-    "value": "Happen network history fight half law. Wear rate place improve best. Health effect concern happen whose loss. Information action leave bar heavy support city cut."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Sort hear walk close dark more get. Baby general candidate guy treat."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:Brightness:items:KFXN:87184809",
-      "urn:ngsi-ld:Brightness:items:FIHS:96874543"
+    "id": "urn:ngsi-ld:Brightness:id:RSNQ:68207834",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2015-11-22T15:03:19Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1984-04-26T19:36:27Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "Get more effort admit education far great. Note factor assume state civil attack. Hand all degree agency add."
+    },
+    "name": {
+        "type": "Property",
+        "value": "Decade size collection station tend blue. Exist fall major foot stay benefit north customer."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Green establish board forward itself site. Fear this toward."
+    },
+    "description": {
+        "type": "Property",
+        "value": "Happen network history fight half law. Wear rate place improve best. Health effect concern happen whose loss. Information action leave bar heavy support city cut."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Sort hear walk close dark more get. Baby general candidate guy treat."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:Brightness:items:KFXN:87184809",
+            "urn:ngsi-ld:Brightness:items:FIHS:96874543"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:Brightness:items:RCAP:18990801"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -36.083538,
+                -0.107567
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "Wait myself upon huge coach decide allow decade. One without improve drive across security also imagine. Trade early challenge ok job blue.",
+            "addressLocality": "Example hour already rise reduce again everybody degree. Onto range campaign research night. Share white single case get international.",
+            "addressRegion": "Manager together personal all. Back trip receive bill.",
+            "addressCountry": "Beautiful recent herself beyond game major into. Explain society dream day history record change speech. Those under direction.",
+            "postalCode": "Husband support clearly once new only. Visit establish between identify attorney. Every week federal describe best building prove day.",
+            "postOfficeBoxNumber": "Theory expert miss live. Sense information become detail."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Budget fire country discover travel."
+    },
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:Brightness:items:RCAP:18990801"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        -36.083538,
-        -0.107567
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "Wait myself upon huge coach decide allow decade. One without improve drive across security also imagine. Trade early challenge ok job blue.",
-      "addressLocality": "Example hour already rise reduce again everybody degree. Onto range campaign research night. Share white single case get international.",
-      "addressRegion": "Manager together personal all. Back trip receive bill.",
-      "addressCountry": "Beautiful recent herself beyond game major into. Explain society dream day history record change speech. Those under direction.",
-      "postalCode": "Husband support clearly once new only. Visit establish between identify attorney. Every week federal describe best building prove day.",
-      "postOfficeBoxNumber": "Theory expert miss live. Sense information become detail."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Budget fire country discover travel."
-  },
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
