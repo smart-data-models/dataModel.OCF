@@ -1,114 +1,115 @@
 {
-  "id": "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:id:AIIG:74958910",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2007-01-18T12:32:22Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1984-03-30T06:35:44Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "Article mention some agree field western standard. Professor describe hot interesting. First side main source woman."
-  },
-  "name": {
-    "type": "Property",
-    "value": "Want experience different parent. Director rather subject my husband goal risk. Enjoy direction task wait."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Authority study describe. Key agency away blood heart police. Offer program study foreign."
-  },
-  "description": {
-    "type": "Property",
-    "value": "Practice large shoulder feeling. Administration happy live into drive cause. Outside face expert kitchen agent guess hope. Road future finish tree will."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Contain them positive discussion tough free. Number keep oil box big activity table never. Consider let western receive economy."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:IUDT:75300031",
-      "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:FDEE:72612683"
+    "id": "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:id:AIIG:74958910",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2007-01-18T12:32:22Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1984-03-30T06:35:44Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "Article mention some agree field western standard. Professor describe hot interesting. First side main source woman."
+    },
+    "name": {
+        "type": "Property",
+        "value": "Want experience different parent. Director rather subject my husband goal risk. Enjoy direction task wait."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Authority study describe. Key agency away blood heart police. Offer program study foreign."
+    },
+    "description": {
+        "type": "Property",
+        "value": "Practice large shoulder feeling. Administration happy live into drive cause. Outside face expert kitchen agent guess hope. Road future finish tree will."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Contain them positive discussion tough free. Number keep oil box big activity table never. Consider let western receive economy."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:IUDT:75300031",
+            "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:FDEE:72612683"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:RGOV:72508868"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                61.4283155,
+                63.567087
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "Affect accept local single. College cost couple. Customer safe dream cold final star.",
+            "addressLocality": "Minute church pass believe even song. Shake wind boy animal story everyone. Adult at top responsibility head dog generation.",
+            "addressRegion": "Choice color western animal myself bring. Hear serious food garden. Key remember area kid recognize.",
+            "addressCountry": "Democratic trip glass quality eye. Marriage glass reveal state huge article. Keep minute rule those identify high ever.",
+            "postalCode": "Us push food effect party mouth likely. Oil cold box final stand.",
+            "postOfficeBoxNumber": "Technology fear throughout wife give realize. Organization write task in while senior. Or area spring size second hour evidence."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Take record treatment area response. System rock wear particular sport sea."
+    },
+    "interval": {
+        "type": "Property",
+        "value": 76.1
+    },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.cgm.samplinginterval"
+        ]
+    },
+    "n": {
+        "type": "Property",
+        "value": "Believe marriage career cut war I. Behavior resource since field put. Art again miss director let. Hundred anyone energy city let day sit."
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.baseline"
+        ]
+    },
+    "range": {
+        "type": "Property",
+        "value": [
+            776.9,
+            500.2
+        ]
+    },
+    "step": {
+        "type": "Property",
+        "value": 403.2
+    },
+    "precision": {
+        "type": "Property",
+        "value": 79.5
+    },
+    "type": "ContinuousGlucoseMeterSamplingInterval",
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:RGOV:72508868"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        61.4283155,
-        63.567087
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "Affect accept local single. College cost couple. Customer safe dream cold final star.",
-      "addressLocality": "Minute church pass believe even song. Shake wind boy animal story everyone. Adult at top responsibility head dog generation.",
-      "addressRegion": "Choice color western animal myself bring. Hear serious food garden. Key remember area kid recognize.",
-      "addressCountry": "Democratic trip glass quality eye. Marriage glass reveal state huge article. Keep minute rule those identify high ever.",
-      "postalCode": "Us push food effect party mouth likely. Oil cold box final stand.",
-      "postOfficeBoxNumber": "Technology fear throughout wife give realize. Organization write task in while senior. Or area spring size second hour evidence."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Take record treatment area response. System rock wear particular sport sea."
-  },
-  "interval": {
-    "type": "Property",
-    "value": 76.1
-  },
-  "rt": {
-    "type": "Property",
-    "value": [
-      "oic.r.cgm.samplinginterval"
-    ]
-  },
-  "n": {
-    "type": "Property",
-    "value": "Believe marriage career cut war I. Behavior resource since field put. Art again miss director let. Hundred anyone energy city let day sit."
-  },
-  "if": {
-    "type": "Property",
-    "value": [
-      "oic.if.baseline"
-    ]
-  },
-  "range": {
-    "type": "Property",
-    "value": [
-      776.9,
-      500.2
-    ]
-  },
-  "step": {
-    "type": "Property",
-    "value": 403.2
-  },
-  "precision": {
-    "type": "Property",
-    "value": 79.5
-  },
-  "type": "ContinuousGlucoseMeterSamplingInterval",
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
