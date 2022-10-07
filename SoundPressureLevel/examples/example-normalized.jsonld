@@ -1,78 +1,79 @@
 {
-  "id": "urn:ngsi-ld:SoundPressureLevel:id:MFVG:52496238",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1976-06-02T06:04:18Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2017-01-21T09:12:27Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "Rise television nor which suggest. Seek head apply defense model. Reduce catch worker matter."
-  },
-  "name": {
-    "type": "Property",
-    "value": "Improve measure improve light test people choice along. Both reduce industry degree."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Expect yourself blood argue and task. This food fight culture fill newspaper. How beyond station."
-  },
-  "description": {
-    "type": "Property",
-    "value": "Allow event describe become. Property me away pressure. Use protect arrive race its since."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Opportunity there police real know ground real. Land cause section value find."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:SoundPressureLevel:items:NQAZ:75992265",
-      "urn:ngsi-ld:SoundPressureLevel:items:DZSC:24608114"
+    "id": "urn:ngsi-ld:SoundPressureLevel:id:MFVG:52496238",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1976-06-02T06:04:18Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2017-01-21T09:12:27Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "Rise television nor which suggest. Seek head apply defense model. Reduce catch worker matter."
+    },
+    "name": {
+        "type": "Property",
+        "value": "Improve measure improve light test people choice along. Both reduce industry degree."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Expect yourself blood argue and task. This food fight culture fill newspaper. How beyond station."
+    },
+    "description": {
+        "type": "Property",
+        "value": "Allow event describe become. Property me away pressure. Use protect arrive race its since."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Opportunity there police real know ground real. Land cause section value find."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:SoundPressureLevel:items:NQAZ:75992265",
+            "urn:ngsi-ld:SoundPressureLevel:items:DZSC:24608114"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:SoundPressureLevel:items:VANZ:73429763"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                31.8568995,
+                -81.615159
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "Middle would thousand present. Hundred prepare near whole far strategy partner.",
+            "addressLocality": "Goal show into serious. Each magazine floor page job. I effort person put watch.",
+            "addressRegion": "Sure so first eye. Marriage thought claim adult church suggest price. Carry wish ago federal dream sort once.",
+            "addressCountry": "With bag learn main foot sense personal.",
+            "postalCode": "Bill action individual one early issue. Occur within bag because door reduce even.",
+            "postOfficeBoxNumber": "Today store fill certain. Voice wear husband force certain. Down million raise may."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "In always vote less along. Game security arm arrive talk maybe both. Save song machine three share amount."
+    },
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:SoundPressureLevel:items:VANZ:73429763"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        31.8568995,
-        -81.615159
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "Middle would thousand present. Hundred prepare near whole far strategy partner.",
-      "addressLocality": "Goal show into serious. Each magazine floor page job. I effort person put watch.",
-      "addressRegion": "Sure so first eye. Marriage thought claim adult church suggest price. Carry wish ago federal dream sort once.",
-      "addressCountry": "With bag learn main foot sense personal.",
-      "postalCode": "Bill action individual one early issue. Occur within bag because door reduce even.",
-      "postOfficeBoxNumber": "Today store fill certain. Voice wear husband force certain. Down million raise may."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "In always vote less along. Game security arm arrive talk maybe both. Save song machine three share amount."
-  },
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
