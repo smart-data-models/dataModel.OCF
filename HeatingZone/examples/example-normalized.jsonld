@@ -1,78 +1,79 @@
 {
-  "id": "urn:ngsi-ld:HeatingZone:id:RBNR:18879286",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1986-11-22T05:39:29Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1999-08-09T02:32:27Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "Throw range clear base. Certain discover middle old along law. Whose sea pressure."
-  },
-  "name": {
-    "type": "Property",
-    "value": "Leg stop defense. Meeting coach success single administration."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Already girl visit national total. Whatever expert mouth plan yard."
-  },
-  "description": {
-    "type": "Property",
-    "value": "Too exactly Mrs letter camera thing ability. Article under culture company perform high."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Eight ever who look. Point establish however stop."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:HeatingZone:items:SJDN:43138533",
-      "urn:ngsi-ld:HeatingZone:items:SHII:92547783"
+    "id": "urn:ngsi-ld:HeatingZone:id:RBNR:18879286",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1986-11-22T05:39:29Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1999-08-09T02:32:27Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "Throw range clear base. Certain discover middle old along law. Whose sea pressure."
+    },
+    "name": {
+        "type": "Property",
+        "value": "Leg stop defense. Meeting coach success single administration."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Already girl visit national total. Whatever expert mouth plan yard."
+    },
+    "description": {
+        "type": "Property",
+        "value": "Too exactly Mrs letter camera thing ability. Article under culture company perform high."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Eight ever who look. Point establish however stop."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:HeatingZone:items:SJDN:43138533",
+            "urn:ngsi-ld:HeatingZone:items:SHII:92547783"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:HeatingZone:items:BOFC:36575947"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -13.2668295,
+                -167.674428
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "Business toward style really least several affect. Would school plan can company his. Court memory one central remain south.",
+            "addressLocality": "Race class police use certainly lay seat. Issue upon determine possible everybody agree catch the. Then ground performance exactly. Kind place court later PM.",
+            "addressRegion": "According practice west media political senior. Stuff leader lead make challenge. Picture level check look. Machine throughout image tonight.",
+            "addressCountry": "Until kid city law least knowledge. Respond especially true adult well. Affect all nothing.",
+            "postalCode": "Art black reality herself. Although friend relate floor western in expect. Establish staff become method imagine center.",
+            "postOfficeBoxNumber": "Old employee sometimes example recent. Card space while fact meet consider."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Authority amount in middle. Physical own save skin store political stock man. Bank six similar issue."
+    },
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:HeatingZone:items:BOFC:36575947"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        -13.2668295,
-        -167.674428
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "Business toward style really least several affect. Would school plan can company his. Court memory one central remain south.",
-      "addressLocality": "Race class police use certainly lay seat. Issue upon determine possible everybody agree catch the. Then ground performance exactly. Kind place court later PM.",
-      "addressRegion": "According practice west media political senior. Stuff leader lead make challenge. Picture level check look. Machine throughout image tonight.",
-      "addressCountry": "Until kid city law least knowledge. Respond especially true adult well. Affect all nothing.",
-      "postalCode": "Art black reality herself. Although friend relate floor western in expect. Establish staff become method imagine center.",
-      "postOfficeBoxNumber": "Old employee sometimes example recent. Card space while fact meet consider."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Authority amount in middle. Physical own save skin store political stock man. Bank six similar issue."
-  },
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
