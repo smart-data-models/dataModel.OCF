@@ -1,127 +1,128 @@
 {
-  "id": "urn:ngsi-ld:PVArrayConnectionTerminal:id:TSKM:94319420",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1985-04-07T15:49:57Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2001-06-17T14:35:04Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "Sit animal word hair design. Suffer until town human. Ever statement race ready also TV rock. Indicate sing rate your civil reality house."
-  },
-  "name": {
-    "type": "Property",
-    "value": "Behavior Congress skill region huge. Young put sound agreement especially line section. Management approach work high great available charge rate."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Success south top especially. City ask store lawyer."
-  },
-  "description": {
-    "type": "Property",
-    "value": "Hospital father remember including enjoy special. Green military interesting close they. Culture health doctor light seem magazine."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Anything performance building its drug. Character officer dream bar open body reflect."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:PVArrayConnectionTerminal:items:WIPM:01594399",
-      "urn:ngsi-ld:PVArrayConnectionTerminal:items:MNFV:28890953"
+    "id": "urn:ngsi-ld:PVArrayConnectionTerminal:id:TSKM:94319420",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1985-04-07T15:49:57Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2001-06-17T14:35:04Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "Sit animal word hair design. Suffer until town human. Ever statement race ready also TV rock. Indicate sing rate your civil reality house."
+    },
+    "name": {
+        "type": "Property",
+        "value": "Behavior Congress skill region huge. Young put sound agreement especially line section. Management approach work high great available charge rate."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Success south top especially. City ask store lawyer."
+    },
+    "description": {
+        "type": "Property",
+        "value": "Hospital father remember including enjoy special. Green military interesting close they. Culture health doctor light seem magazine."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Anything performance building its drug. Character officer dream bar open body reflect."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:PVArrayConnectionTerminal:items:WIPM:01594399",
+            "urn:ngsi-ld:PVArrayConnectionTerminal:items:MNFV:28890953"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:PVArrayConnectionTerminal:items:VXKM:24155728"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -56.20957,
+                -170.652443
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "Tv second concern least price relationship. International fly debate indicate exactly. Business experience control relate entire style game.",
+            "addressLocality": "Themselves go financial skill sound full half. Mr our accept plant adult beat partner. Red present movement option reason low indicate.",
+            "addressRegion": "Usually stand evening deep activity. Instead catch physical song cell. Unit member would dinner form other water treat.",
+            "addressCountry": "Share place reduce available leader nor. Smile them fly. Can main example water technology world break.",
+            "postalCode": "Assume fight fund them number white. Music again knowledge defense. Establish once those degree board data.",
+            "postOfficeBoxNumber": "Wear air crime performance."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Fill person national. Concern dream upon."
+    },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.pvconnectionterminal"
+        ]
+    },
+    "ratedarrayvoltage": {
+        "type": "Property",
+        "value": 775.5
+    },
+    "ratedarraycurrent": {
+        "type": "Property",
+        "value": 712.8
+    },
+    "arrayvoltage": {
+        "type": "Property",
+        "value": 977.5
+    },
+    "arraycurrent": {
+        "type": "Property",
+        "value": 460.0
+    },
+    "leakagecurrent": {
+        "type": "Property",
+        "value": 951.2
+    },
+    "insulationresistance": {
+        "type": "Property",
+        "value": 438.9
+    },
+    "timestamp": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1976-04-28T20:02:52Z"
+        }
+    },
+    "n": {
+        "type": "Property",
+        "value": "Owner surface news eat piece land. Front realize cover week within along. Student war painting rate."
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.s",
+            "oic.if.baseline"
+        ]
+    },
+    "type": "PVArrayConnectionTerminal",
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:PVArrayConnectionTerminal:items:VXKM:24155728"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        -56.20957,
-        -170.652443
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "Tv second concern least price relationship. International fly debate indicate exactly. Business experience control relate entire style game.",
-      "addressLocality": "Themselves go financial skill sound full half. Mr our accept plant adult beat partner. Red present movement option reason low indicate.",
-      "addressRegion": "Usually stand evening deep activity. Instead catch physical song cell. Unit member would dinner form other water treat.",
-      "addressCountry": "Share place reduce available leader nor. Smile them fly. Can main example water technology world break.",
-      "postalCode": "Assume fight fund them number white. Music again knowledge defense. Establish once those degree board data.",
-      "postOfficeBoxNumber": "Wear air crime performance."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Fill person national. Concern dream upon."
-  },
-  "rt": {
-    "type": "Property",
-    "value": [
-      "oic.r.pvconnectionterminal"
-    ]
-  },
-  "ratedarrayvoltage": {
-    "type": "Property",
-    "value": 775.5
-  },
-  "ratedarraycurrent": {
-    "type": "Property",
-    "value": 712.8
-  },
-  "arrayvoltage": {
-    "type": "Property",
-    "value": 977.5
-  },
-  "arraycurrent": {
-    "type": "Property",
-    "value": 460.0
-  },
-  "leakagecurrent": {
-    "type": "Property",
-    "value": 951.2
-  },
-  "insulationresistance": {
-    "type": "Property",
-    "value": 438.9
-  },
-  "timestamp": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1976-04-28T20:02:52Z"
-    }
-  },
-  "n": {
-    "type": "Property",
-    "value": "Owner surface news eat piece land. Front realize cover week within along. Student war painting rate."
-  },
-  "if": {
-    "type": "Property",
-    "value": [
-      "oic.if.s",
-      "oic.if.baseline"
-    ]
-  },
-  "type": "PVArrayConnectionTerminal",
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
