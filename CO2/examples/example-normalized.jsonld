@@ -1,119 +1,120 @@
 {
-  "id": "urn:ngsi-ld:CO2:id:SVES:89502461",
-  "dateCreated": {
-    "type": "Property",
+    "id": "urn:ngsi-ld:CO2:id:SVES:89502461",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1980-11-02T05:43:09Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1987-05-22T08:24:10Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "Receive wife price issue laugh campaign. Spend detail case practice as. Generation in describe body friend ground style."
+    },
+    "name": {
+        "type": "Property",
+        "value": "Allow set least expect we person. Interview what change class specific. Energy put into military identify."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Deep view report which budget. Friend top because purpose word nature box. Nature south campaign treatment week wrong."
+    },
+    "description": {
+        "type": "Property",
+        "value": "Picture generation use star among. Either send future scene military."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Born say already sense song author cut. Task place discuss score."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:CO2:items:JOUW:60859756",
+            "urn:ngsi-ld:CO2:items:DGAF:22248342"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:CO2:items:ETQR:90005195"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                27.2603735,
+                -163.603735
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "Water fish floor end every lose. Indicate trouble authority pick room million catch. Kid for receive well.",
+            "addressLocality": "Fall to thing second whom. First them already two until.",
+            "addressRegion": "High thus national call staff concern. Value range order artist. Because culture your will thus.",
+            "addressCountry": "Place word thank book culture. Though project building guy action open doctor. Whole population new music chance manage.",
+            "postalCode": "Third according teach stock true pull significant over. Suggest wife foot mouth mother since support.",
+            "postOfficeBoxNumber": "Somebody left car growth."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Soon discover leg fight each shoulder eight set. Majority Republican play show standard well."
+    },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.sensor.carbondioxide"
+        ]
+    },
     "value": {
-      "@type": "DateTime",
-      "@value": "1980-11-02T05:43:09Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1987-05-22T08:24:10Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "Receive wife price issue laugh campaign. Spend detail case practice as. Generation in describe body friend ground style."
-  },
-  "name": {
-    "type": "Property",
-    "value": "Allow set least expect we person. Interview what change class specific. Energy put into military identify."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Deep view report which budget. Friend top because purpose word nature box. Nature south campaign treatment week wrong."
-  },
-  "description": {
-    "type": "Property",
-    "value": "Picture generation use star among. Either send future scene military."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Born say already sense song author cut. Task place discuss score."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:CO2:items:JOUW:60859756",
-      "urn:ngsi-ld:CO2:items:DGAF:22248342"
+        "type": "Property",
+        "value": false
+    },
+    "measurement": {
+        "type": "Property",
+        "value": 874.2
+    },
+    "precision": {
+        "type": "Property",
+        "value": 765.9
+    },
+    "n": {
+        "type": "Property",
+        "value": "Hit his kid."
+    },
+    "range": {
+        "type": "Property",
+        "value": [
+            316.3,
+            505.4
+        ]
+    },
+    "step": {
+        "type": "Property",
+        "value": 641.7
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.s",
+            "oic.if.s"
+        ]
+    },
+    "type": "CO2",
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:CO2:items:ETQR:90005195"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        27.2603735,
-        -163.603735
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "Water fish floor end every lose. Indicate trouble authority pick room million catch. Kid for receive well.",
-      "addressLocality": "Fall to thing second whom. First them already two until.",
-      "addressRegion": "High thus national call staff concern. Value range order artist. Because culture your will thus.",
-      "addressCountry": "Place word thank book culture. Though project building guy action open doctor. Whole population new music chance manage.",
-      "postalCode": "Third according teach stock true pull significant over. Suggest wife foot mouth mother since support.",
-      "postOfficeBoxNumber": "Somebody left car growth."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Soon discover leg fight each shoulder eight set. Majority Republican play show standard well."
-  },
-  "rt": {
-    "type": "Property",
-    "value": [
-      "oic.r.sensor.carbondioxide"
-    ]
-  },
-  "value": {
-    "type": "Property",
-    "value": false
-  },
-  "measurement": {
-    "type": "Property",
-    "value": 874.2
-  },
-  "precision": {
-    "type": "Property",
-    "value": 765.9
-  },
-  "n": {
-    "type": "Property",
-    "value": "Hit his kid."
-  },
-  "range": {
-    "type": "Property",
-    "value": [
-      316.3,
-      505.4
-    ]
-  },
-  "step": {
-    "type": "Property",
-    "value": 641.7
-  },
-  "if": {
-    "type": "Property",
-    "value": [
-      "oic.if.s",
-      "oic.if.s"
-    ]
-  },
-  "type": "CO2",
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
