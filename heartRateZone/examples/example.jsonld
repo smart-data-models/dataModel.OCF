@@ -1,37 +1,38 @@
 {
-  "id": "urn:ngsi-ld:heartRateZone:id:UZVJ:22985409",
-  "dateCreated": "1979-03-05T13:38:17Z",
-  "dateModified": "2018-12-08T03:09:47Z",
-  "source": "Property responsibility heart buy history tree local. Economic wife easy able. Experience create condition or story.",
-  "name": "Ever message major so goal. Of size them determine.",
-  "alternateName": "Among appear far result. Tree force chance reach author inside certain. Meeting guess forward knowledge central feeling sense culture.",
-  "description": "Few nice prepare read process. Who particular relationship serious quickly hear crime effort.",
-  "dataProvider": "Explain you avoid property provide buy. Agreement seem political learn understand new argue.",
-  "owner": [
-    "urn:ngsi-ld:heartRateZone:items:VDWX:92609296",
-    "urn:ngsi-ld:heartRateZone:items:TPGH:46115386"
-  ],
-  "seeAlso": [
-    "urn:ngsi-ld:heartRateZone:items:EGNT:69353743",
-    "urn:ngsi-ld:heartRateZone:items:CVQC:21023520"
-  ],
-  "location": {
-    "type": "Point",
-    "coordinates": [
-      33.114013,
-      -116.102574
+    "id": "urn:ngsi-ld:heartRateZone:id:UZVJ:22985409",
+    "dateCreated": "1979-03-05T13:38:17Z",
+    "dateModified": "2018-12-08T03:09:47Z",
+    "source": "Property responsibility heart buy history tree local. Economic wife easy able. Experience create condition or story.",
+    "name": "Ever message major so goal. Of size them determine.",
+    "alternateName": "Among appear far result. Tree force chance reach author inside certain. Meeting guess forward knowledge central feeling sense culture.",
+    "description": "Few nice prepare read process. Who particular relationship serious quickly hear crime effort.",
+    "dataProvider": "Explain you avoid property provide buy. Agreement seem political learn understand new argue.",
+    "owner": [
+        "urn:ngsi-ld:heartRateZone:items:VDWX:92609296",
+        "urn:ngsi-ld:heartRateZone:items:TPGH:46115386"
+    ],
+    "seeAlso": [
+        "urn:ngsi-ld:heartRateZone:items:EGNT:69353743",
+        "urn:ngsi-ld:heartRateZone:items:CVQC:21023520"
+    ],
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            33.114013,
+            -116.102574
+        ]
+    },
+    "address": {
+        "streetAddress": "Low ahead also actually speak college far throughout. Three pull many seat sea vote our approach. Stay huge hospital along probably kid the machine. Claim opportunity few throughout.",
+        "addressLocality": "Service what others enjoy up response. Western budget model especially. Read few your expert.",
+        "addressRegion": "Not anyone hand accept scene road. Official travel carry back arm happen region.",
+        "addressCountry": "Resource politics garden identify teacher whole. Like information include carry rich middle. Agency western age work board officer establish may.",
+        "postalCode": "Machine right total. Expect wish establish north section rise ask something. So indeed large leg three. Fight themselves man draw machine once good.",
+        "postOfficeBoxNumber": "Drop easy order turn actually. Produce marriage month purpose send."
+    },
+    "areaServed": "Arrive response nothing ahead. Whether east if reflect feeling. Opportunity group special.",
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "address": {
-    "streetAddress": "Low ahead also actually speak college far throughout. Three pull many seat sea vote our approach. Stay huge hospital along probably kid the machine. Claim opportunity few throughout.",
-    "addressLocality": "Service what others enjoy up response. Western budget model especially. Read few your expert.",
-    "addressRegion": "Not anyone hand accept scene road. Official travel carry back arm happen region.",
-    "addressCountry": "Resource politics garden identify teacher whole. Like information include carry rich middle. Agency western age work board officer establish may.",
-    "postalCode": "Machine right total. Expect wish establish north section rise ask something. So indeed large leg three. Fight themselves man draw machine once good.",
-    "postOfficeBoxNumber": "Drop easy order turn actually. Produce marriage month purpose send."
-  },
-  "areaServed": "Arrive response nothing ahead. Whether east if reflect feeling. Opportunity group special.",
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
