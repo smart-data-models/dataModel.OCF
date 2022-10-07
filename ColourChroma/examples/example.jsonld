@@ -1,37 +1,38 @@
 {
-  "id": "urn:ngsi-ld:ColourChroma:id:KXUY:75560351",
-  "dateCreated": "2012-06-16T11:21:50Z",
-  "dateModified": "1995-10-29T01:15:24Z",
-  "source": "Evening building state. Receive edge management pass recognize information nothing. Dog run thousand newspaper want hear each down. Letter north ground protect.",
-  "name": "Everything live maintain but wonder effect finish. Five per turn admit amount. Involve style available.",
-  "alternateName": "Rather fire rate try behind medical leader. I imagine five movement. Up occur weight south.",
-  "description": "Theory peace skill red pretty subject story. Have think hundred foot. Turn information there Republican participant ready population.",
-  "dataProvider": "These writer dog travel will base public. Thousand responsibility risk organization operation plant truth. Finish defense together gun. Voice soon long institution.",
-  "owner": [
-    "urn:ngsi-ld:ColourChroma:items:PBMH:06259714",
-    "urn:ngsi-ld:ColourChroma:items:EGFN:24379609"
-  ],
-  "seeAlso": [
-    "urn:ngsi-ld:ColourChroma:items:NZIB:01052551",
-    "urn:ngsi-ld:ColourChroma:items:GVUJ:91800255"
-  ],
-  "location": {
-    "type": "Point",
-    "coordinates": [
-      6.6581095,
-      163.113571
+    "id": "urn:ngsi-ld:ColourChroma:id:KXUY:75560351",
+    "dateCreated": "2012-06-16T11:21:50Z",
+    "dateModified": "1995-10-29T01:15:24Z",
+    "source": "Evening building state. Receive edge management pass recognize information nothing. Dog run thousand newspaper want hear each down. Letter north ground protect.",
+    "name": "Everything live maintain but wonder effect finish. Five per turn admit amount. Involve style available.",
+    "alternateName": "Rather fire rate try behind medical leader. I imagine five movement. Up occur weight south.",
+    "description": "Theory peace skill red pretty subject story. Have think hundred foot. Turn information there Republican participant ready population.",
+    "dataProvider": "These writer dog travel will base public. Thousand responsibility risk organization operation plant truth. Finish defense together gun. Voice soon long institution.",
+    "owner": [
+        "urn:ngsi-ld:ColourChroma:items:PBMH:06259714",
+        "urn:ngsi-ld:ColourChroma:items:EGFN:24379609"
+    ],
+    "seeAlso": [
+        "urn:ngsi-ld:ColourChroma:items:NZIB:01052551",
+        "urn:ngsi-ld:ColourChroma:items:GVUJ:91800255"
+    ],
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            6.6581095,
+            163.113571
+        ]
+    },
+    "address": {
+        "streetAddress": "Production coach five serve safe. Rest attention staff lay key expect. Decide suddenly represent watch.",
+        "addressLocality": "Yes body last consider despite. Put try get all center discussion or.",
+        "addressRegion": "Half none call because. Nature young nature west. Summer price ask be force this.",
+        "addressCountry": "Character very sometimes pay skin impact others. Traditional maybe half region change physical. City high blood where network manage series management.",
+        "postalCode": "Change and prove green. Decision character away reality vote another ready them.",
+        "postOfficeBoxNumber": "Movie modern maintain million type lot. Live speak middle structure not group."
+    },
+    "areaServed": "Quickly ten off behavior story laugh change.",
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "address": {
-    "streetAddress": "Production coach five serve safe. Rest attention staff lay key expect. Decide suddenly represent watch.",
-    "addressLocality": "Yes body last consider despite. Put try get all center discussion or.",
-    "addressRegion": "Half none call because. Nature young nature west. Summer price ask be force this.",
-    "addressCountry": "Character very sometimes pay skin impact others. Traditional maybe half region change physical. City high blood where network manage series management.",
-    "postalCode": "Change and prove green. Decision character away reality vote another ready them.",
-    "postOfficeBoxNumber": "Movie modern maintain million type lot. Live speak middle structure not group."
-  },
-  "areaServed": "Quickly ten off behavior story laugh change.",
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
