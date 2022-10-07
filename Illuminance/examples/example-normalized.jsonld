@@ -1,107 +1,108 @@
 {
-  "id": "urn:ngsi-ld:Illuminance:id:MNLY:30937921",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1975-05-11T13:09:10Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2003-12-02T03:26:21Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "After thing maybe watch spring show we. Several south address building she. Protect force hair machine. Season government goal wait air section."
-  },
-  "name": {
-    "type": "Property",
-    "value": "Method institution hand first up. Media care sea."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Image man after large."
-  },
-  "description": {
-    "type": "Property",
-    "value": "Really although sign paper season store. Fear exactly collection."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Start plan effort soon smile probably."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:Illuminance:items:SVMJ:39738594",
-      "urn:ngsi-ld:Illuminance:items:IPBX:16843864"
+    "id": "urn:ngsi-ld:Illuminance:id:MNLY:30937921",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1975-05-11T13:09:10Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2003-12-02T03:26:21Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "After thing maybe watch spring show we. Several south address building she. Protect force hair machine. Season government goal wait air section."
+    },
+    "name": {
+        "type": "Property",
+        "value": "Method institution hand first up. Media care sea."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Image man after large."
+    },
+    "description": {
+        "type": "Property",
+        "value": "Really although sign paper season store. Fear exactly collection."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Start plan effort soon smile probably."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:Illuminance:items:SVMJ:39738594",
+            "urn:ngsi-ld:Illuminance:items:IPBX:16843864"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:Illuminance:items:PBYJ:13845109"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -72.2442105,
+                103.919595
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "Figure shoulder activity south test. Doctor herself detail. Power teach itself ability risk consider.",
+            "addressLocality": "Report feeling player picture. Program air sometimes crime son management. Home choose cup drive standard.",
+            "addressRegion": "Admit art half adult image memory.",
+            "addressCountry": "Nature support else week power present own floor.",
+            "postalCode": "Right open effect sense question end. Training laugh speak behind focus in win analysis.",
+            "postOfficeBoxNumber": "To under car if newspaper player prove article."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Film consumer why indeed heavy. Perform production report. North seven risk company ever firm."
+    },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.sensor.illuminance"
+        ]
+    },
+    "illuminance": {
+        "type": "Property",
+        "value": 338.8
+    },
+    "n": {
+        "type": "Property",
+        "value": "Off woman hour your also. Lead hold race space. Rich available hold base project page."
+    },
+    "range": {
+        "type": "Property",
+        "value": [
+            194.8,
+            76.4
+        ]
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.baseline",
+            "oic.if.baseline"
+        ]
+    },
+    "type": "Illuminance",
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:Illuminance:items:PBYJ:13845109"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        -72.2442105,
-        103.919595
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "Figure shoulder activity south test. Doctor herself detail. Power teach itself ability risk consider.",
-      "addressLocality": "Report feeling player picture. Program air sometimes crime son management. Home choose cup drive standard.",
-      "addressRegion": "Admit art half adult image memory.",
-      "addressCountry": "Nature support else week power present own floor.",
-      "postalCode": "Right open effect sense question end. Training laugh speak behind focus in win analysis.",
-      "postOfficeBoxNumber": "To under car if newspaper player prove article."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Film consumer why indeed heavy. Perform production report. North seven risk company ever firm."
-  },
-  "rt": {
-    "type": "Property",
-    "value": [
-      "oic.r.sensor.illuminance"
-    ]
-  },
-  "illuminance": {
-    "type": "Property",
-    "value": 338.8
-  },
-  "n": {
-    "type": "Property",
-    "value": "Off woman hour your also. Lead hold race space. Rich available hold base project page."
-  },
-  "range": {
-    "type": "Property",
-    "value": [
-      194.8,
-      76.4
-    ]
-  },
-  "if": {
-    "type": "Property",
-    "value": [
-      "oic.if.baseline",
-      "oic.if.baseline"
-    ]
-  },
-  "type": "Illuminance",
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
