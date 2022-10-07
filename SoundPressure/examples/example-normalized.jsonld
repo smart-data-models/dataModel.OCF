@@ -1,78 +1,79 @@
 {
-  "id": "urn:ngsi-ld:SoundPressure:id:SCOB:82581699",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2014-09-18T10:32:52Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2007-05-28T05:03:37Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "Involve student vote support reality month black. Suggest cause option responsibility everyone. Increase similar firm already try."
-  },
-  "name": {
-    "type": "Property",
-    "value": "Chance computer your if. Reflect page trade wife situation probably close. Wish will ten. You leg discussion off will level."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Nature program both important station apply. Top rest power decision."
-  },
-  "description": {
-    "type": "Property",
-    "value": "Seek candidate west daughter purpose fly. Position cup pass lawyer why military religious. Great star run world audience stop."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Current nearly popular. Along and toward tend occur. Explain remain away occur fast defense ask."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:SoundPressure:items:PLYN:04859699",
-      "urn:ngsi-ld:SoundPressure:items:UJHG:28450549"
+    "id": "urn:ngsi-ld:SoundPressure:id:SCOB:82581699",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2014-09-18T10:32:52Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2007-05-28T05:03:37Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "Involve student vote support reality month black. Suggest cause option responsibility everyone. Increase similar firm already try."
+    },
+    "name": {
+        "type": "Property",
+        "value": "Chance computer your if. Reflect page trade wife situation probably close. Wish will ten. You leg discussion off will level."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Nature program both important station apply. Top rest power decision."
+    },
+    "description": {
+        "type": "Property",
+        "value": "Seek candidate west daughter purpose fly. Position cup pass lawyer why military religious. Great star run world audience stop."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Current nearly popular. Along and toward tend occur. Explain remain away occur fast defense ask."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:SoundPressure:items:PLYN:04859699",
+            "urn:ngsi-ld:SoundPressure:items:UJHG:28450549"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:SoundPressure:items:ZBZQ:48591255"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                50.2793285,
+                -127.924098
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "Rise before give speech. Every thank read. During church around attack state first.",
+            "addressLocality": "Drive you thought religious just sister girl while. Leader human energy collection be travel study. Level our indeed manage huge.",
+            "addressRegion": "Million various baby. Mr court her scene. Follow evidence property.",
+            "addressCountry": "Space exist ok away. Hold foot short anyone final near. Later right newspaper rather large culture.",
+            "postalCode": "Ground social drop organization. Page husband dream ever possible despite able.",
+            "postOfficeBoxNumber": "Fire agreement work long beautiful government person."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Language forget store. Between cause send agency. Seat like purpose would ok forward author."
+    },
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:SoundPressure:items:ZBZQ:48591255"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        50.2793285,
-        -127.924098
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "Rise before give speech. Every thank read. During church around attack state first.",
-      "addressLocality": "Drive you thought religious just sister girl while. Leader human energy collection be travel study. Level our indeed manage huge.",
-      "addressRegion": "Million various baby. Mr court her scene. Follow evidence property.",
-      "addressCountry": "Space exist ok away. Hold foot short anyone final near. Later right newspaper rather large culture.",
-      "postalCode": "Ground social drop organization. Page husband dream ever possible despite able.",
-      "postOfficeBoxNumber": "Fire agreement work long beautiful government person."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Language forget store. Between cause send agency. Seat like purpose would ok forward author."
-  },
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
