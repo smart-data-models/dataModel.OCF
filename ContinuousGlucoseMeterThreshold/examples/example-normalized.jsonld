@@ -1,134 +1,135 @@
 {
-  "id": "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:id:JNLC:20811520",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2014-10-06T01:57:51Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2009-09-21T14:09:17Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "Contain check product major certainly. Quickly expect wait cost conference fund similar. Night or carry purpose of article."
-  },
-  "name": {
-    "type": "Property",
-    "value": "Bed close late gun. Later financial on. Both lose rather. Necessary mouth question."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Meet PM service water. Trade interesting consumer idea."
-  },
-  "description": {
-    "type": "Property",
-    "value": "Number lot edge whatever democratic. How total treat. Though not represent control leader marriage."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Soldier different school far reality south charge. Piece exactly today gas loss thousand idea."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:OEJX:09311250",
-      "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:QHQH:24761502"
+    "id": "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:id:JNLC:20811520",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2014-10-06T01:57:51Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2009-09-21T14:09:17Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "Contain check product major certainly. Quickly expect wait cost conference fund similar. Night or carry purpose of article."
+    },
+    "name": {
+        "type": "Property",
+        "value": "Bed close late gun. Later financial on. Both lose rather. Necessary mouth question."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Meet PM service water. Trade interesting consumer idea."
+    },
+    "description": {
+        "type": "Property",
+        "value": "Number lot edge whatever democratic. How total treat. Though not represent control leader marriage."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Soldier different school far reality south charge. Piece exactly today gas loss thousand idea."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:OEJX:09311250",
+            "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:QHQH:24761502"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:EANX:32862165"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -14.737475,
+                -83.850391
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "Send arm you yeah somebody. Blue along push wait.",
+            "addressLocality": "Billion central ask trade significant could eat. Again piece Mr. Mother upon quickly reach also.",
+            "addressRegion": "Media per contain bed type major. Open view social use see laugh. Party budget back. Program money protect.",
+            "addressCountry": "Quality sort course yard several agent. Activity throughout memory arm.",
+            "postalCode": "Guy effect computer less soon. Know never southern bar audience. Respond check share risk this story six. Age eight watch special everybody thank.",
+            "postOfficeBoxNumber": "Candidate happy natural. See wear case few."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Local across including real. Pattern resource everybody ability."
+    },
+    "plow": {
+        "type": "Property",
+        "value": 352.0
+    },
+    "phigh": {
+        "type": "Property",
+        "value": 410.6
+    },
+    "dhypo": {
+        "type": "Property",
+        "value": 472.3
+    },
+    "dhyper": {
+        "type": "Property",
+        "value": 117.2
+    },
+    "gir": {
+        "type": "Property",
+        "value": 650.9
+    },
+    "gdr": {
+        "type": "Property",
+        "value": 718.9
+    },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.cgm.threshold"
+        ]
+    },
+    "n": {
+        "type": "Property",
+        "value": "Story her eye key rich individual. Area avoid small these. Usually night health responsibility behind no ground. Design drive above discover."
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.baseline"
+        ]
+    },
+    "range": {
+        "type": "Property",
+        "value": [
+            641.4,
+            917.0
+        ]
+    },
+    "step": {
+        "type": "Property",
+        "value": 228.3
+    },
+    "precision": {
+        "type": "Property",
+        "value": 832.7
+    },
+    "type": "ContinuousGlucoseMeterThreshold",
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:EANX:32862165"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        -14.737475,
-        -83.850391
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "Send arm you yeah somebody. Blue along push wait.",
-      "addressLocality": "Billion central ask trade significant could eat. Again piece Mr. Mother upon quickly reach also.",
-      "addressRegion": "Media per contain bed type major. Open view social use see laugh. Party budget back. Program money protect.",
-      "addressCountry": "Quality sort course yard several agent. Activity throughout memory arm.",
-      "postalCode": "Guy effect computer less soon. Know never southern bar audience. Respond check share risk this story six. Age eight watch special everybody thank.",
-      "postOfficeBoxNumber": "Candidate happy natural. See wear case few."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Local across including real. Pattern resource everybody ability."
-  },
-  "plow": {
-    "type": "Property",
-    "value": 352.0
-  },
-  "phigh": {
-    "type": "Property",
-    "value": 410.6
-  },
-  "dhypo": {
-    "type": "Property",
-    "value": 472.3
-  },
-  "dhyper": {
-    "type": "Property",
-    "value": 117.2
-  },
-  "gir": {
-    "type": "Property",
-    "value": 650.9
-  },
-  "gdr": {
-    "type": "Property",
-    "value": 718.9
-  },
-  "rt": {
-    "type": "Property",
-    "value": [
-      "oic.r.cgm.threshold"
-    ]
-  },
-  "n": {
-    "type": "Property",
-    "value": "Story her eye key rich individual. Area avoid small these. Usually night health responsibility behind no ground. Design drive above discover."
-  },
-  "if": {
-    "type": "Property",
-    "value": [
-      "oic.if.baseline"
-    ]
-  },
-  "range": {
-    "type": "Property",
-    "value": [
-      641.4,
-      917.0
-    ]
-  },
-  "step": {
-    "type": "Property",
-    "value": 228.3
-  },
-  "precision": {
-    "type": "Property",
-    "value": 832.7
-  },
-  "type": "ContinuousGlucoseMeterThreshold",
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
