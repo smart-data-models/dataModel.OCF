@@ -1,63 +1,64 @@
 {
-  "id": "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:id:OOGF:69870196",
-  "dateCreated": "1972-02-12T03:37:16Z",
-  "dateModified": "1976-12-01T04:04:51Z",
-  "source": "Set generation health southern skin program stage consumer. Three old number turn soon see eat small.",
-  "name": "Affect night poor cut event player operation.",
-  "alternateName": "Range effort interview mention. Age article education decade great form clearly. Rock wish national.",
-  "description": "Culture people risk. Radio reality then front art. Explain add remain issue white modern.",
-  "dataProvider": "Shake kitchen star business similar late best. Want shake yard wish.",
-  "owner": [
-    "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:OHIL:56337429",
-    "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:QAIF:17459576"
-  ],
-  "seeAlso": [
-    "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:MFBH:37527794",
-    "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:KQOY:03988106"
-  ],
-  "location": {
-    "type": "Point",
-    "coordinates": [
-      -83.0665985,
-      38.283775
+    "id": "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:id:OOGF:69870196",
+    "dateCreated": "1972-02-12T03:37:16Z",
+    "dateModified": "1976-12-01T04:04:51Z",
+    "source": "Set generation health southern skin program stage consumer. Three old number turn soon see eat small.",
+    "name": "Affect night poor cut event player operation.",
+    "alternateName": "Range effort interview mention. Age article education decade great form clearly. Rock wish national.",
+    "description": "Culture people risk. Radio reality then front art. Explain add remain issue white modern.",
+    "dataProvider": "Shake kitchen star business similar late best. Want shake yard wish.",
+    "owner": [
+        "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:OHIL:56337429",
+        "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:QAIF:17459576"
+    ],
+    "seeAlso": [
+        "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:MFBH:37527794",
+        "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:KQOY:03988106"
+    ],
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            -83.0665985,
+            38.283775
+        ]
+    },
+    "address": {
+        "streetAddress": "Writer fire particular impact force. Southern couple traditional cover year. Instead effort resource American instead foreign magazine. Mean go often back goal guy easy anything.",
+        "addressLocality": "Future little find.",
+        "addressRegion": "Success two exist wind big. Concern bill management interesting step project wear.",
+        "addressCountry": "Generation light exist in well sound even want. Draw these main live cause.",
+        "postalCode": "Church begin dinner but bank step. Can else growth inside human better. When off remain industry marriage car. Either commercial possible detail yard view us.",
+        "postOfficeBoxNumber": "Party though eat research stand either strong. Cultural eight mean maybe. Leave structure might out check peace most ok."
+    },
+    "areaServed": "Despite over soon share. Follow season agency.",
+    "interval": {
+        "type": "Property",
+        "value": 111.1
+    },
+    "rt": [
+        "oic.r.cgm.samplinginterval",
+        "oic.r.cgm.samplinginterval"
+    ],
+    "n": "Authority all before career up. Officer also order dark top involve feel. Form bill fear teach walk system back.",
+    "if": [
+        "oic.if.baseline",
+        "oic.if.baseline"
+    ],
+    "range": [
+        669.3,
+        970.8
+    ],
+    "step": {
+        "type": "Property",
+        "value": 583.7
+    },
+    "precision": {
+        "type": "Property",
+        "value": 640.4
+    },
+    "type": "ContinuousGlucoseMeterSamplingInterval",
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "address": {
-    "streetAddress": "Writer fire particular impact force. Southern couple traditional cover year. Instead effort resource American instead foreign magazine. Mean go often back goal guy easy anything.",
-    "addressLocality": "Future little find.",
-    "addressRegion": "Success two exist wind big. Concern bill management interesting step project wear.",
-    "addressCountry": "Generation light exist in well sound even want. Draw these main live cause.",
-    "postalCode": "Church begin dinner but bank step. Can else growth inside human better. When off remain industry marriage car. Either commercial possible detail yard view us.",
-    "postOfficeBoxNumber": "Party though eat research stand either strong. Cultural eight mean maybe. Leave structure might out check peace most ok."
-  },
-  "areaServed": "Despite over soon share. Follow season agency.",
-  "interval": {
-    "type": "Property",
-    "value": 111.1
-  },
-  "rt": [
-    "oic.r.cgm.samplinginterval",
-    "oic.r.cgm.samplinginterval"
-  ],
-  "n": "Authority all before career up. Officer also order dark top involve feel. Form bill fear teach walk system back.",
-  "if": [
-    "oic.if.baseline",
-    "oic.if.baseline"
-  ],
-  "range": [
-    669.3,
-    970.8
-  ],
-  "step": {
-    "type": "Property",
-    "value": 583.7
-  },
-  "precision": {
-    "type": "Property",
-    "value": 640.4
-  },
-  "type": "ContinuousGlucoseMeterSamplingInterval",
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
