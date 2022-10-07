@@ -1,78 +1,79 @@
 {
-  "id": "urn:ngsi-ld:UserInfo-retrieve:id:SARL:53055590",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2004-11-07T15:43:42Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2007-07-08T01:47:16Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "Its grow toward threat expect center father. Than western race write expert political I."
-  },
-  "name": {
-    "type": "Property",
-    "value": "Simply charge page remember treatment care deep. There check hospital road. Wear serious decade soldier table."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Reality accept ago give adult as service. Commercial body manager network station. Forward political join alone short share above."
-  },
-  "description": {
-    "type": "Property",
-    "value": "Go middle science check."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Else board fund score add. Draw born onto system five."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:UserInfo-retrieve:items:ZPSG:82205432",
-      "urn:ngsi-ld:UserInfo-retrieve:items:YKIF:85261963"
+    "id": "urn:ngsi-ld:UserInfo-retrieve:id:SARL:53055590",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2004-11-07T15:43:42Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2007-07-08T01:47:16Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "Its grow toward threat expect center father. Than western race write expert political I."
+    },
+    "name": {
+        "type": "Property",
+        "value": "Simply charge page remember treatment care deep. There check hospital road. Wear serious decade soldier table."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Reality accept ago give adult as service. Commercial body manager network station. Forward political join alone short share above."
+    },
+    "description": {
+        "type": "Property",
+        "value": "Go middle science check."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Else board fund score add. Draw born onto system five."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:UserInfo-retrieve:items:ZPSG:82205432",
+            "urn:ngsi-ld:UserInfo-retrieve:items:YKIF:85261963"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:UserInfo-retrieve:items:QJRR:59773643"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -71.2702425,
+                122.709099
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "Not situation young finish upon.",
+            "addressLocality": "Break mission share only do. Around sure fire evening however.",
+            "addressRegion": "Market measure garden night talk. Program available until best actually animal simple.",
+            "addressCountry": "She certainly describe Mr walk. Impact nearly be myself up green.",
+            "postalCode": "Major money by receive ahead enjoy show. Key age experience behavior entire stage understand.",
+            "postOfficeBoxNumber": "Impact size specific responsibility back subject walk. Job student action stand over not boy kitchen."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "And mother structure chance. Difficult challenge wish threat around. Tend civil million side bar strategy tough."
+    },
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:UserInfo-retrieve:items:QJRR:59773643"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        -71.2702425,
-        122.709099
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "Not situation young finish upon.",
-      "addressLocality": "Break mission share only do. Around sure fire evening however.",
-      "addressRegion": "Market measure garden night talk. Program available until best actually animal simple.",
-      "addressCountry": "She certainly describe Mr walk. Impact nearly be myself up green.",
-      "postalCode": "Major money by receive ahead enjoy show. Key age experience behavior entire stage understand.",
-      "postOfficeBoxNumber": "Impact size specific responsibility back subject walk. Job student action stand over not boy kitchen."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "And mother structure chance. Difficult challenge wish threat around. Tend civil million side bar strategy tough."
-  },
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
