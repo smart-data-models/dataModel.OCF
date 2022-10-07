@@ -1,78 +1,79 @@
 {
-  "id": "urn:ngsi-ld:UVARadiation:id:KQAD:81292509",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1992-01-21T04:38:55Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1996-10-01T07:58:59Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "Yard generation knowledge data. Onto policy yet bag especially can into. Sea live sea this. Always test carry experience thank thing dream."
-  },
-  "name": {
-    "type": "Property",
-    "value": "Area financial civil Republican lay. Much stage either onto newspaper."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "School heavy plant reveal cell. Art cut each evening. Simply could cultural physical low."
-  },
-  "description": {
-    "type": "Property",
-    "value": "Turn buy material discussion. News against participant seven fly. Stand not see."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Ready else position scene level positive. Drop debate answer above decide key program. Seven stand practice rock down space scientist form."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:UVARadiation:items:XKZW:26791641",
-      "urn:ngsi-ld:UVARadiation:items:GGFG:22456376"
+    "id": "urn:ngsi-ld:UVARadiation:id:KQAD:81292509",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1992-01-21T04:38:55Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1996-10-01T07:58:59Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "Yard generation knowledge data. Onto policy yet bag especially can into. Sea live sea this. Always test carry experience thank thing dream."
+    },
+    "name": {
+        "type": "Property",
+        "value": "Area financial civil Republican lay. Much stage either onto newspaper."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "School heavy plant reveal cell. Art cut each evening. Simply could cultural physical low."
+    },
+    "description": {
+        "type": "Property",
+        "value": "Turn buy material discussion. News against participant seven fly. Stand not see."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Ready else position scene level positive. Drop debate answer above decide key program. Seven stand practice rock down space scientist form."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:UVARadiation:items:XKZW:26791641",
+            "urn:ngsi-ld:UVARadiation:items:GGFG:22456376"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:UVARadiation:items:UMFI:73942232"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                87.5524365,
+                -1.506489
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "Dream score human head yet good bit. World agent knowledge them law call peace. Great after art lay.",
+            "addressLocality": "Cold goal support around. Admit first gas teach memory. War sort take indicate return.",
+            "addressRegion": "Recent company usually maybe middle short serve. Television many plan need. Throw paper once lawyer mother interview.",
+            "addressCountry": "Performance foot various bed evening design region. Decision base the. Value father picture ever type common wear.",
+            "postalCode": "Say ground commercial impact about news. Science financial cultural much.",
+            "postOfficeBoxNumber": "System appear account particularly marriage my available. Shoulder ever customer test base account anything."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Threat effect experience central. Speak least vote information purpose move. Instead necessary hundred couple sell."
+    },
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:UVARadiation:items:UMFI:73942232"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        87.5524365,
-        -1.506489
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "Dream score human head yet good bit. World agent knowledge them law call peace. Great after art lay.",
-      "addressLocality": "Cold goal support around. Admit first gas teach memory. War sort take indicate return.",
-      "addressRegion": "Recent company usually maybe middle short serve. Television many plan need. Throw paper once lawyer mother interview.",
-      "addressCountry": "Performance foot various bed evening design region. Decision base the. Value father picture ever type common wear.",
-      "postalCode": "Say ground commercial impact about news. Science financial cultural much.",
-      "postOfficeBoxNumber": "System appear account particularly marriage my available. Shoulder ever customer test base account anything."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Threat effect experience central. Speak least vote information purpose move. Instead necessary hundred couple sell."
-  },
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
