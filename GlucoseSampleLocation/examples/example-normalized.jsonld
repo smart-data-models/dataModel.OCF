@@ -1,78 +1,79 @@
 {
-  "id": "urn:ngsi-ld:GlucoseSampleLocation:id:QSBX:29851292",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1982-02-15T19:25:40Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1975-12-28T04:09:27Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "And forward sort now."
-  },
-  "name": {
-    "type": "Property",
-    "value": "Outside election free another relationship me above."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Budget card forward option. Political or town money around leg second. Job kid result baby."
-  },
-  "description": {
-    "type": "Property",
-    "value": "Season door win note three. Team ball notice who me top. Can tend fund where include responsibility necessary."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Series hundred however man. Place bill soldier security then perform animal election."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:GlucoseSampleLocation:items:REPG:54879373",
-      "urn:ngsi-ld:GlucoseSampleLocation:items:HHTT:80346776"
+    "id": "urn:ngsi-ld:GlucoseSampleLocation:id:QSBX:29851292",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1982-02-15T19:25:40Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1975-12-28T04:09:27Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "And forward sort now."
+    },
+    "name": {
+        "type": "Property",
+        "value": "Outside election free another relationship me above."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Budget card forward option. Political or town money around leg second. Job kid result baby."
+    },
+    "description": {
+        "type": "Property",
+        "value": "Season door win note three. Team ball notice who me top. Can tend fund where include responsibility necessary."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Series hundred however man. Place bill soldier security then perform animal election."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:GlucoseSampleLocation:items:REPG:54879373",
+            "urn:ngsi-ld:GlucoseSampleLocation:items:HHTT:80346776"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:GlucoseSampleLocation:items:WEIJ:01724018"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                58.0901955,
+                -109.970684
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "Society factor big benefit school much. Fly ahead reduce key including attorney. Half manage firm kitchen. It majority new good right.",
+            "addressLocality": "As no involve option natural. Other certain Democrat continue hotel. Usually how rather onto already itself.",
+            "addressRegion": "Rise clear candidate rest security record skin. Sense watch although against ago agreement.",
+            "addressCountry": "Against break reach great he. Size soon film stage let.",
+            "postalCode": "Good not pressure arrive.",
+            "postOfficeBoxNumber": "Despite minute above difference. Claim impact education moment. Answer TV establish indicate throw."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Until outside low often area professor fact."
+    },
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:GlucoseSampleLocation:items:WEIJ:01724018"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        58.0901955,
-        -109.970684
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "Society factor big benefit school much. Fly ahead reduce key including attorney. Half manage firm kitchen. It majority new good right.",
-      "addressLocality": "As no involve option natural. Other certain Democrat continue hotel. Usually how rather onto already itself.",
-      "addressRegion": "Rise clear candidate rest security record skin. Sense watch although against ago agreement.",
-      "addressCountry": "Against break reach great he. Size soon film stage let.",
-      "postalCode": "Good not pressure arrive.",
-      "postOfficeBoxNumber": "Despite minute above difference. Claim impact education moment. Answer TV establish indicate throw."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Until outside low often area professor fact."
-  },
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
