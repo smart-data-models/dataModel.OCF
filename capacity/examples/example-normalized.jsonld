@@ -1,100 +1,101 @@
 {
-  "id": "urn:ngsi-ld:capacity:id:TVMI:12454219",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1991-05-31T20:25:24Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1999-05-07T18:10:53Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "Modern glass door. Media plant near them everybody authority. Gas end way good position."
-  },
-  "name": {
-    "type": "Property",
-    "value": "Former machine finish agree generation everyone. According work simple control. Add decision piece author. Interesting such entire knowledge."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Its painting while drug truth similar. Shoulder example enter unit interest produce listen."
-  },
-  "description": {
-    "type": "Property",
-    "value": "Look try perform stop home employee. Foot describe decision heavy. Majority finish social understand voice personal reduce."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Thousand compare image born cost consider. Simple recognize common character per both school see."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:capacity:items:FVAS:53585229",
-      "urn:ngsi-ld:capacity:items:PRTW:10958954"
+    "id": "urn:ngsi-ld:capacity:id:TVMI:12454219",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1991-05-31T20:25:24Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1999-05-07T18:10:53Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "Modern glass door. Media plant near them everybody authority. Gas end way good position."
+    },
+    "name": {
+        "type": "Property",
+        "value": "Former machine finish agree generation everyone. According work simple control. Add decision piece author. Interesting such entire knowledge."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Its painting while drug truth similar. Shoulder example enter unit interest produce listen."
+    },
+    "description": {
+        "type": "Property",
+        "value": "Look try perform stop home employee. Foot describe decision heavy. Majority finish social understand voice personal reduce."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Thousand compare image born cost consider. Simple recognize common character per both school see."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:capacity:items:FVAS:53585229",
+            "urn:ngsi-ld:capacity:items:PRTW:10958954"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:capacity:items:BBMO:20301317"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                78.336253,
+                -124.974608
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "Respond agree age throw. Way idea behind project amount. Thing respond professor choose accept rich top.",
+            "addressLocality": "Sound sound itself entire ago six base. Poor best trouble stage lawyer price.",
+            "addressRegion": "Always effort through notice difference letter discuss. And but hundred one million method quite. Forward person prevent.",
+            "addressCountry": "Building list break quite. Poor rate behavior drive.",
+            "postalCode": "Age around employee language number scientist source. Type tough begin price senior away. Approach series often fund drug long technology.",
+            "postOfficeBoxNumber": "Research through brother history apply country ready cup. Under determine early magazine also wait region time."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Develop several safe long how eight production."
+    },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.hvac.capacity"
+        ]
+    },
+    "capacity": {
+        "type": "Property",
+        "value": 148.9
+    },
+    "n": {
+        "type": "Property",
+        "value": "Trial per pull reach expert part successful course. Energy hope nor sea each civil."
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.baseline",
+            "oic.if.baseline"
+        ]
+    },
+    "type": "capacity",
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:capacity:items:BBMO:20301317"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        78.336253,
-        -124.974608
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "Respond agree age throw. Way idea behind project amount. Thing respond professor choose accept rich top.",
-      "addressLocality": "Sound sound itself entire ago six base. Poor best trouble stage lawyer price.",
-      "addressRegion": "Always effort through notice difference letter discuss. And but hundred one million method quite. Forward person prevent.",
-      "addressCountry": "Building list break quite. Poor rate behavior drive.",
-      "postalCode": "Age around employee language number scientist source. Type tough begin price senior away. Approach series often fund drug long technology.",
-      "postOfficeBoxNumber": "Research through brother history apply country ready cup. Under determine early magazine also wait region time."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Develop several safe long how eight production."
-  },
-  "rt": {
-    "type": "Property",
-    "value": [
-      "oic.r.hvac.capacity"
-    ]
-  },
-  "capacity": {
-    "type": "Property",
-    "value": 148.9
-  },
-  "n": {
-    "type": "Property",
-    "value": "Trial per pull reach expert part successful course. Energy hope nor sea each civil."
-  },
-  "if": {
-    "type": "Property",
-    "value": [
-      "oic.if.baseline",
-      "oic.if.baseline"
-    ]
-  },
-  "type": "capacity",
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
