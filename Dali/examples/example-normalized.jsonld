@@ -1,78 +1,79 @@
 {
-  "id": "urn:ngsi-ld:Dali:id:ASCA:96985110",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2003-06-06T14:11:29Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1994-05-26T22:35:06Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "Under trade view piece. Value walk sense appear since sign evening. Teacher specific measure dinner whatever."
-  },
-  "name": {
-    "type": "Property",
-    "value": "Social how air threat memory hit effect. Total poor meeting race rich particularly yourself."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Contain admit newspaper system defense character."
-  },
-  "description": {
-    "type": "Property",
-    "value": "Scene free success other so. Action lose report bill yard home painting man. Game senior expert ok talk general current. Stage scientist point card place inside."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Top daughter support open girl author wear season. Plan teacher several range. Anything street boy including."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:Dali:items:YVYZ:75892470",
-      "urn:ngsi-ld:Dali:items:CZAM:05311010"
+    "id": "urn:ngsi-ld:Dali:id:ASCA:96985110",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2003-06-06T14:11:29Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1994-05-26T22:35:06Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "Under trade view piece. Value walk sense appear since sign evening. Teacher specific measure dinner whatever."
+    },
+    "name": {
+        "type": "Property",
+        "value": "Social how air threat memory hit effect. Total poor meeting race rich particularly yourself."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Contain admit newspaper system defense character."
+    },
+    "description": {
+        "type": "Property",
+        "value": "Scene free success other so. Action lose report bill yard home painting man. Game senior expert ok talk general current. Stage scientist point card place inside."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Top daughter support open girl author wear season. Plan teacher several range. Anything street boy including."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:Dali:items:YVYZ:75892470",
+            "urn:ngsi-ld:Dali:items:CZAM:05311010"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:Dali:items:IWBT:06739145"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -55.820818,
+                18.312295
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "Take high figure beautiful three relate. Throughout special wish idea plant heavy.",
+            "addressLocality": "Discuss seek tree eat state Democrat small total. Bill central public any strategy story.",
+            "addressRegion": "Ahead director window by hot simple prove still. Feeling too child.",
+            "addressCountry": "Answer use since federal certain check process. Under mean bad worry under fear lose commercial. Last ground inside number he.",
+            "postalCode": "Media none help body. You lot during daughter court pay size. Physical interest able center watch know.",
+            "postOfficeBoxNumber": "Day chair whole modern off local quite. Figure decide seat agency do."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Its night former break through third mean interesting. Build beat wall until figure collection. Among opportunity or without ask."
+    },
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:Dali:items:IWBT:06739145"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        -55.820818,
-        18.312295
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "Take high figure beautiful three relate. Throughout special wish idea plant heavy.",
-      "addressLocality": "Discuss seek tree eat state Democrat small total. Bill central public any strategy story.",
-      "addressRegion": "Ahead director window by hot simple prove still. Feeling too child.",
-      "addressCountry": "Answer use since federal certain check process. Under mean bad worry under fear lose commercial. Last ground inside number he.",
-      "postalCode": "Media none help body. You lot during daughter court pay size. Physical interest able center watch know.",
-      "postOfficeBoxNumber": "Day chair whole modern off local quite. Figure decide seat agency do."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Its night former break through third mean interesting. Build beat wall until figure collection. Among opportunity or without ask."
-  },
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
