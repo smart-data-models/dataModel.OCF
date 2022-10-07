@@ -1,110 +1,111 @@
 {
-  "id": "urn:ngsi-ld:Torque:id:PWSP:64950507",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2012-06-02T09:48:18Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1984-10-18T01:58:07Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "Direction man coach theory. Cover do name forward. Arrive level tell will hundred also."
-  },
-  "name": {
-    "type": "Property",
-    "value": "A page space according. Result coach study director. Specific receive fall they despite. This go air amount job."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Seem account already second back song. Move style process rock director. How since system."
-  },
-  "description": {
-    "type": "Property",
-    "value": "Have which party sound every. Dream side ahead. Security traditional fine real school effort everyone."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Successful ago boy ask. Yet goal image structure south. Apply physical their assume middle owner."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:Torque:items:SURM:54518655",
-      "urn:ngsi-ld:Torque:items:RYYZ:32856448"
+    "id": "urn:ngsi-ld:Torque:id:PWSP:64950507",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2012-06-02T09:48:18Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1984-10-18T01:58:07Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "Direction man coach theory. Cover do name forward. Arrive level tell will hundred also."
+    },
+    "name": {
+        "type": "Property",
+        "value": "A page space according. Result coach study director. Specific receive fall they despite. This go air amount job."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Seem account already second back song. Move style process rock director. How since system."
+    },
+    "description": {
+        "type": "Property",
+        "value": "Have which party sound every. Dream side ahead. Security traditional fine real school effort everyone."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Successful ago boy ask. Yet goal image structure south. Apply physical their assume middle owner."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:Torque:items:SURM:54518655",
+            "urn:ngsi-ld:Torque:items:RYYZ:32856448"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:Torque:items:VIUT:41240428"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -84.7598125,
+                67.696977
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "Newspaper lot interesting speak class way. Also school police possible performance mind. Maintain traditional including decide dog.",
+            "addressLocality": "General do subject lawyer interview sit. Our return who direction value poor. Bank international staff door although own cold.",
+            "addressRegion": "Its letter mention modern give year. Fight happen up that woman wrong. First they behind office see conference gas.",
+            "addressCountry": "Reduce know property event happy. Town peace tough woman national clearly fact. Fund its brother pay.",
+            "postalCode": "Try drop final police challenge. Forget pattern hold leg option be however.",
+            "postOfficeBoxNumber": "Similar low whole audience charge. Win air deep difference. Piece analysis create information eat far. Culture question group behavior age key."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "New report serve. Small star fly place bad."
+    },
+    "torque": {
+        "type": "Property",
+        "value": 881.5
+    },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.torque"
+        ]
+    },
+    "n": {
+        "type": "Property",
+        "value": "Military build often sound day election others. Animal card event woman doctor stay."
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.baseline"
+        ]
+    },
+    "range": {
+        "type": "Property",
+        "value": [
+            399.8,
+            528.9
+        ]
+    },
+    "step": {
+        "type": "Property",
+        "value": 794.0
+    },
+    "type": "Torque",
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:Torque:items:VIUT:41240428"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        -84.7598125,
-        67.696977
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "Newspaper lot interesting speak class way. Also school police possible performance mind. Maintain traditional including decide dog.",
-      "addressLocality": "General do subject lawyer interview sit. Our return who direction value poor. Bank international staff door although own cold.",
-      "addressRegion": "Its letter mention modern give year. Fight happen up that woman wrong. First they behind office see conference gas.",
-      "addressCountry": "Reduce know property event happy. Town peace tough woman national clearly fact. Fund its brother pay.",
-      "postalCode": "Try drop final police challenge. Forget pattern hold leg option be however.",
-      "postOfficeBoxNumber": "Similar low whole audience charge. Win air deep difference. Piece analysis create information eat far. Culture question group behavior age key."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "New report serve. Small star fly place bad."
-  },
-  "torque": {
-    "type": "Property",
-    "value": 881.5
-  },
-  "rt": {
-    "type": "Property",
-    "value": [
-      "oic.r.torque"
-    ]
-  },
-  "n": {
-    "type": "Property",
-    "value": "Military build often sound day election others. Animal card event woman doctor stay."
-  },
-  "if": {
-    "type": "Property",
-    "value": [
-      "oic.if.baseline"
-    ]
-  },
-  "range": {
-    "type": "Property",
-    "value": [
-      399.8,
-      528.9
-    ]
-  },
-  "step": {
-    "type": "Property",
-    "value": 794.0
-  },
-  "type": "Torque",
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
