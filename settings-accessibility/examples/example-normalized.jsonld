@@ -1,78 +1,79 @@
 {
-  "id": "urn:ngsi-ld:settings-accessibility:id:YTYO:39074734",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1985-08-23T22:17:38Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1984-07-04T10:36:24Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "End during card evidence available music as yeah. Level more ever."
-  },
-  "name": {
-    "type": "Property",
-    "value": "Card these technology right cause fear. Citizen dream word teach international."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Character picture wide area friend."
-  },
-  "description": {
-    "type": "Property",
-    "value": "Perhaps mother at main great. Week analysis mission a name image matter. Key region exist recently inside loss woman."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Performance kid west company. Trade listen woman final. Leave including window wonder where purpose."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:settings-accessibility:items:TSVP:47098070",
-      "urn:ngsi-ld:settings-accessibility:items:KVUU:35972170"
+    "id": "urn:ngsi-ld:settings-accessibility:id:YTYO:39074734",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1985-08-23T22:17:38Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1984-07-04T10:36:24Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "End during card evidence available music as yeah. Level more ever."
+    },
+    "name": {
+        "type": "Property",
+        "value": "Card these technology right cause fear. Citizen dream word teach international."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Character picture wide area friend."
+    },
+    "description": {
+        "type": "Property",
+        "value": "Perhaps mother at main great. Week analysis mission a name image matter. Key region exist recently inside loss woman."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Performance kid west company. Trade listen woman final. Leave including window wonder where purpose."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:settings-accessibility:items:TSVP:47098070",
+            "urn:ngsi-ld:settings-accessibility:items:KVUU:35972170"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:settings-accessibility:items:IBXG:89083403"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -27.4331595,
+                -82.080853
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "Beyond low hotel black poor page tonight. Account summer admit name some. Provide game change explain consider produce reveal.",
+            "addressLocality": "Partner business best term high against. Others wish especially security whole if. Visit outside over player produce when.",
+            "addressRegion": "Return he important least much consumer hot. Collection for number for tend.",
+            "addressCountry": "Weight concern behind deal take sing. Tv hit during music poor whole. Cell couple character brother member describe fly.",
+            "postalCode": "Activity green key drug far accept actually. Discussion soon break reflect TV minute. Pretty perhaps movement water mother.",
+            "postOfficeBoxNumber": "Mention performance thus market majority who one. Speak score put feeling cost. Politics off keep everyone partner."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Out today dinner. Store power campaign your management rich even."
+    },
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:settings-accessibility:items:IBXG:89083403"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        -27.4331595,
-        -82.080853
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "Beyond low hotel black poor page tonight. Account summer admit name some. Provide game change explain consider produce reveal.",
-      "addressLocality": "Partner business best term high against. Others wish especially security whole if. Visit outside over player produce when.",
-      "addressRegion": "Return he important least much consumer hot. Collection for number for tend.",
-      "addressCountry": "Weight concern behind deal take sing. Tv hit during music poor whole. Cell couple character brother member describe fly.",
-      "postalCode": "Activity green key drug far accept actually. Discussion soon break reflect TV minute. Pretty perhaps movement water mother.",
-      "postOfficeBoxNumber": "Mention performance thus market majority who one. Speak score put feeling cost. Politics off keep everyone partner."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Out today dinner. Store power campaign your management rich even."
-  },
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
