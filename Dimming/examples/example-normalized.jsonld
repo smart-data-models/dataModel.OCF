@@ -1,111 +1,112 @@
 {
-  "id": "urn:ngsi-ld:Dimming:id:GJEI:27775424",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1997-03-04T04:45:11Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1978-08-08T07:33:27Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "Morning member nation return section hand player. Social right him television and world. From unit best send cut current."
-  },
-  "name": {
-    "type": "Property",
-    "value": "Fly institution owner every. Street research hair smile where parent media."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Most unit not day head."
-  },
-  "description": {
-    "type": "Property",
-    "value": "Old million order even peace wait so. Reveal than part least fire race character."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Inside decade recognize choice. Green clear seem environment shake. Choice few responsibility action citizen."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:Dimming:items:VZPC:69696442",
-      "urn:ngsi-ld:Dimming:items:KAOV:68332845"
+    "id": "urn:ngsi-ld:Dimming:id:GJEI:27775424",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1997-03-04T04:45:11Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1978-08-08T07:33:27Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "Morning member nation return section hand player. Social right him television and world. From unit best send cut current."
+    },
+    "name": {
+        "type": "Property",
+        "value": "Fly institution owner every. Street research hair smile where parent media."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Most unit not day head."
+    },
+    "description": {
+        "type": "Property",
+        "value": "Old million order even peace wait so. Reveal than part least fire race character."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Inside decade recognize choice. Green clear seem environment shake. Choice few responsibility action citizen."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:Dimming:items:VZPC:69696442",
+            "urn:ngsi-ld:Dimming:items:KAOV:68332845"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:Dimming:items:WRHS:76719441"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                45.639393,
+                -103.289701
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "Within fight civil join American leader perform. Far writer rich raise north.",
+            "addressLocality": "Similar treatment necessary back. Prevent above on. In trade perhaps time almost myself world. Newspaper safe must.",
+            "addressRegion": "Economy opportunity although hour become recognize. Media list crime fine quite spend serve.",
+            "addressCountry": "Able front including. Evidence maintain identify front travel attack.",
+            "postalCode": "Yeah far reach indicate goal security ten prevent. Positive foot successful system list respond what.",
+            "postOfficeBoxNumber": "Carry trip on born. Movie right happen them speech see almost."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Relate class another production check buy sister life. Blood including life senior until represent. Series ability fund ask interview."
+    },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.light.dimming"
+        ]
+    },
+    "dimmingSetting": {
+        "type": "Property",
+        "value": 80
+    },
+    "n": {
+        "type": "Property",
+        "value": "Pressure imagine forget hand model summer. Gas use record water."
+    },
+    "range": {
+        "type": "Property",
+        "value": [
+            740,
+            905
+        ]
+    },
+    "step": {
+        "type": "Property",
+        "value": 916
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.baseline",
+            "oic.if.a"
+        ]
+    },
+    "type": "Dimming",
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:Dimming:items:WRHS:76719441"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        45.639393,
-        -103.289701
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "Within fight civil join American leader perform. Far writer rich raise north.",
-      "addressLocality": "Similar treatment necessary back. Prevent above on. In trade perhaps time almost myself world. Newspaper safe must.",
-      "addressRegion": "Economy opportunity although hour become recognize. Media list crime fine quite spend serve.",
-      "addressCountry": "Able front including. Evidence maintain identify front travel attack.",
-      "postalCode": "Yeah far reach indicate goal security ten prevent. Positive foot successful system list respond what.",
-      "postOfficeBoxNumber": "Carry trip on born. Movie right happen them speech see almost."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Relate class another production check buy sister life. Blood including life senior until represent. Series ability fund ask interview."
-  },
-  "rt": {
-    "type": "Property",
-    "value": [
-      "oic.r.light.dimming"
-    ]
-  },
-  "dimmingSetting": {
-    "type": "Property",
-    "value": 80
-  },
-  "n": {
-    "type": "Property",
-    "value": "Pressure imagine forget hand model summer. Gas use record water."
-  },
-  "range": {
-    "type": "Property",
-    "value": [
-      740,
-      905
-    ]
-  },
-  "step": {
-    "type": "Property",
-    "value": 916
-  },
-  "if": {
-    "type": "Property",
-    "value": [
-      "oic.if.baseline",
-      "oic.if.a"
-    ]
-  },
-  "type": "Dimming",
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
