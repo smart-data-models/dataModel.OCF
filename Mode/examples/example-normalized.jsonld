@@ -1,78 +1,79 @@
 {
-  "id": "urn:ngsi-ld:Mode:id:APLU:09904504",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2012-10-23T11:05:02Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2000-11-07T00:35:18Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "Industry model very tough can national increase. Director people win exist concern."
-  },
-  "name": {
-    "type": "Property",
-    "value": "Any interview after work both. Test almost responsibility little product apply."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Spend six dog. Strong want for finally hand."
-  },
-  "description": {
-    "type": "Property",
-    "value": "Among around lay hotel. Bag stop idea most late citizen lay. Mouth kind cover manage thank lawyer."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Other nothing key market fight gun true. Teach face similar pressure camera front administration. Learn through thought."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:Mode:items:RRDS:56051869",
-      "urn:ngsi-ld:Mode:items:XGMO:64673219"
+    "id": "urn:ngsi-ld:Mode:id:APLU:09904504",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2012-10-23T11:05:02Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2000-11-07T00:35:18Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "Industry model very tough can national increase. Director people win exist concern."
+    },
+    "name": {
+        "type": "Property",
+        "value": "Any interview after work both. Test almost responsibility little product apply."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Spend six dog. Strong want for finally hand."
+    },
+    "description": {
+        "type": "Property",
+        "value": "Among around lay hotel. Bag stop idea most late citizen lay. Mouth kind cover manage thank lawyer."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Other nothing key market fight gun true. Teach face similar pressure camera front administration. Learn through thought."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:Mode:items:RRDS:56051869",
+            "urn:ngsi-ld:Mode:items:XGMO:64673219"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:Mode:items:VTEU:28588649"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                79.393507,
+                -152.446929
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "History star may bring such action. Really travel couple.",
+            "addressLocality": "Evening international truth evidence image sit financial. Trial unit world owner line. The week produce language when tree continue training.",
+            "addressRegion": "Arm relate only finish. Certain officer drug card. Actually summer bring situation build. Heart field degree against site current best.",
+            "addressCountry": "Set family civil question not rest current. Brother develop think place perhaps. Class concern pressure woman defense politics week.",
+            "postalCode": "Seat city forward hand house. Way doctor general rule.",
+            "postOfficeBoxNumber": "Speak bed information soldier do write light. Again professor film."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "History eat close old represent board herself."
+    },
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:Mode:items:VTEU:28588649"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        79.393507,
-        -152.446929
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "History star may bring such action. Really travel couple.",
-      "addressLocality": "Evening international truth evidence image sit financial. Trial unit world owner line. The week produce language when tree continue training.",
-      "addressRegion": "Arm relate only finish. Certain officer drug card. Actually summer bring situation build. Heart field degree against site current best.",
-      "addressCountry": "Set family civil question not rest current. Brother develop think place perhaps. Class concern pressure woman defense politics week.",
-      "postalCode": "Seat city forward hand house. Way doctor general rule.",
-      "postOfficeBoxNumber": "Speak bed information soldier do write light. Again professor film."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "History eat close old represent board herself."
-  },
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
