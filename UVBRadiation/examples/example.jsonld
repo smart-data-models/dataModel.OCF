@@ -1,37 +1,38 @@
 {
-  "id": "urn:ngsi-ld:UVBRadiation:id:RUFN:84434026",
-  "dateCreated": "1979-02-01T21:38:01Z",
-  "dateModified": "1988-11-04T08:50:06Z",
-  "source": "Shake business seem why state until. Memory western we which back technology speech health. Push performance scene information radio total college.",
-  "name": "Turn program teach heavy son. Bad bank yeah. All security water indicate teach.",
-  "alternateName": "American theory gas other. Down where tend benefit position model friend use. Democrat director air each teach audience. Democratic painting center former.",
-  "description": "College color amount individual job quality. Employee region modern wear look short employee. Red strong song each activity conference.",
-  "dataProvider": "Loss return food life she blue here throw. Major Democrat sister husband street kind. Sport white station difference movie population in help.",
-  "owner": [
-    "urn:ngsi-ld:UVBRadiation:items:OYEQ:78049778",
-    "urn:ngsi-ld:UVBRadiation:items:ETDC:16806735"
-  ],
-  "seeAlso": [
-    "urn:ngsi-ld:UVBRadiation:items:MKPQ:73465414",
-    "urn:ngsi-ld:UVBRadiation:items:KUHU:28508572"
-  ],
-  "location": {
-    "type": "Point",
-    "coordinates": [
-      -89.050093,
-      -69.422876
+    "id": "urn:ngsi-ld:UVBRadiation:id:RUFN:84434026",
+    "dateCreated": "1979-02-01T21:38:01Z",
+    "dateModified": "1988-11-04T08:50:06Z",
+    "source": "Shake business seem why state until. Memory western we which back technology speech health. Push performance scene information radio total college.",
+    "name": "Turn program teach heavy son. Bad bank yeah. All security water indicate teach.",
+    "alternateName": "American theory gas other. Down where tend benefit position model friend use. Democrat director air each teach audience. Democratic painting center former.",
+    "description": "College color amount individual job quality. Employee region modern wear look short employee. Red strong song each activity conference.",
+    "dataProvider": "Loss return food life she blue here throw. Major Democrat sister husband street kind. Sport white station difference movie population in help.",
+    "owner": [
+        "urn:ngsi-ld:UVBRadiation:items:OYEQ:78049778",
+        "urn:ngsi-ld:UVBRadiation:items:ETDC:16806735"
+    ],
+    "seeAlso": [
+        "urn:ngsi-ld:UVBRadiation:items:MKPQ:73465414",
+        "urn:ngsi-ld:UVBRadiation:items:KUHU:28508572"
+    ],
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            -89.050093,
+            -69.422876
+        ]
+    },
+    "address": {
+        "streetAddress": "Shake assume apply space indeed window. Ok shoulder responsibility person us increase. As check attention book.",
+        "addressLocality": "No spend sport owner. Interesting relate form yet score market.",
+        "addressRegion": "Back which pick war.",
+        "addressCountry": "Agent bar high single. Risk piece chance likely often television. Might science catch indicate save. Officer wrong become part move assume.",
+        "postalCode": "Carry move position goal. Plan whom past current alone environmental. Two better suddenly bed gun challenge.",
+        "postOfficeBoxNumber": "Author be federal long paper product. Enjoy catch cell company even act yard. Kitchen field visit true determine imagine yes."
+    },
+    "areaServed": "Which boy see no audience sound. Everything but air reach sing perhaps red. Agree set performance practice tend send.",
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "address": {
-    "streetAddress": "Shake assume apply space indeed window. Ok shoulder responsibility person us increase. As check attention book.",
-    "addressLocality": "No spend sport owner. Interesting relate form yet score market.",
-    "addressRegion": "Back which pick war.",
-    "addressCountry": "Agent bar high single. Risk piece chance likely often television. Might science catch indicate save. Officer wrong become part move assume.",
-    "postalCode": "Carry move position goal. Plan whom past current alone environmental. Two better suddenly bed gun challenge.",
-    "postOfficeBoxNumber": "Author be federal long paper product. Enjoy catch cell company even act yard. Kitchen field visit true determine imagine yes."
-  },
-  "areaServed": "Which boy see no audience sound. Everything but air reach sing perhaps red. Agree set performance practice tend send.",
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
