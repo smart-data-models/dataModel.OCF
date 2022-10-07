@@ -1,118 +1,119 @@
 {
-  "id": "urn:ngsi-ld:BodyFat:id:VUOK:95021473",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1987-10-14T09:02:16Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1994-07-04T01:12:53Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "Must green international thank. Spring plant control partner. At information decide for born action."
-  },
-  "name": {
-    "type": "Property",
-    "value": "Child over claim administration by attention still."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Company mouth Mrs door. Rich national store list whom. Side produce fact study. Television travel him bank."
-  },
-  "description": {
-    "type": "Property",
-    "value": "Seat half sometimes year customer science notice. Knowledge he use."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Since professional son perhaps yard. General little worker glass southern state middle. Often including about son."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:BodyFat:items:MQTE:23850921",
-      "urn:ngsi-ld:BodyFat:items:NQZR:87612870"
+    "id": "urn:ngsi-ld:BodyFat:id:VUOK:95021473",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1987-10-14T09:02:16Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1994-07-04T01:12:53Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "Must green international thank. Spring plant control partner. At information decide for born action."
+    },
+    "name": {
+        "type": "Property",
+        "value": "Child over claim administration by attention still."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Company mouth Mrs door. Rich national store list whom. Side produce fact study. Television travel him bank."
+    },
+    "description": {
+        "type": "Property",
+        "value": "Seat half sometimes year customer science notice. Knowledge he use."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Since professional son perhaps yard. General little worker glass southern state middle. Often including about son."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:BodyFat:items:MQTE:23850921",
+            "urn:ngsi-ld:BodyFat:items:NQZR:87612870"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:BodyFat:items:XDTN:06870476"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                56.538434,
+                -168.581689
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "Show occur size war. Prevent father teacher clear.",
+            "addressLocality": "Indeed able about international major visit. Door minute station second only mission room.",
+            "addressRegion": "Drive machine director. Five rise boy partner.",
+            "addressCountry": "Direction pretty item car model election discussion protect. Long rule to painting low. Ago exist here smile sell. And three thus expert history country improve.",
+            "postalCode": "Continue west least writer few prevent seem. Last apply strong dream bed. Remain write which hospital let political action.",
+            "postOfficeBoxNumber": "Exactly PM behind huge life news. Such road former whole enter yes political represent."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Mr financial again here nature create. General to bar mother discuss figure."
+    },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.body.fat"
+        ]
+    },
+    "bodyfat": {
+        "type": "Property",
+        "value": 171.6
+    },
+    "units": {
+        "type": "Property",
+        "value": "kg"
+    },
+    "range": {
+        "type": "Property",
+        "value": [
+            362.3,
+            206.0
+        ]
+    },
+    "step": {
+        "type": "Property",
+        "value": 453.1
+    },
+    "precision": {
+        "type": "Property",
+        "value": 124.2
+    },
+    "n": {
+        "type": "Property",
+        "value": "Write recent suffer marriage must affect. Sense indeed me kitchen. Describe speech even small offer area goal."
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.s"
+        ]
+    },
+    "type": "BodyFat",
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:BodyFat:items:XDTN:06870476"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        56.538434,
-        -168.581689
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "Show occur size war. Prevent father teacher clear.",
-      "addressLocality": "Indeed able about international major visit. Door minute station second only mission room.",
-      "addressRegion": "Drive machine director. Five rise boy partner.",
-      "addressCountry": "Direction pretty item car model election discussion protect. Long rule to painting low. Ago exist here smile sell. And three thus expert history country improve.",
-      "postalCode": "Continue west least writer few prevent seem. Last apply strong dream bed. Remain write which hospital let political action.",
-      "postOfficeBoxNumber": "Exactly PM behind huge life news. Such road former whole enter yes political represent."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Mr financial again here nature create. General to bar mother discuss figure."
-  },
-  "rt": {
-    "type": "Property",
-    "value": [
-      "oic.r.body.fat"
-    ]
-  },
-  "bodyfat": {
-    "type": "Property",
-    "value": 171.6
-  },
-  "units": {
-    "type": "Property",
-    "value": "kg"
-  },
-  "range": {
-    "type": "Property",
-    "value": [
-      362.3,
-      206.0
-    ]
-  },
-  "step": {
-    "type": "Property",
-    "value": 453.1
-  },
-  "precision": {
-    "type": "Property",
-    "value": 124.2
-  },
-  "n": {
-    "type": "Property",
-    "value": "Write recent suffer marriage must affect. Sense indeed me kitchen. Describe speech even small offer area goal."
-  },
-  "if": {
-    "type": "Property",
-    "value": [
-      "oic.if.s"
-    ]
-  },
-  "type": "BodyFat",
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
