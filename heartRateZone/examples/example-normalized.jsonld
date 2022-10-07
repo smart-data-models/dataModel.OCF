@@ -1,78 +1,79 @@
 {
-  "id": "urn:ngsi-ld:heartRateZone:id:CEHZ:58898697",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1991-04-18T21:11:56Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1995-01-26T05:36:04Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "Member attorney through allow environmental traditional low. Rate near federal rise always consider good."
-  },
-  "name": {
-    "type": "Property",
-    "value": "Machine create herself dark determine painting suddenly. Drug foot morning her commercial as. Himself court account after stage street establish. Still color technology certain section everything job."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Huge fund oil end card I enter. Professor black action act task follow outside. Message member week general."
-  },
-  "description": {
-    "type": "Property",
-    "value": "Local light product commercial sound. Reduce national lead myself watch."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Similar far its. Project these sometimes first."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:heartRateZone:items:BPSC:73150514",
-      "urn:ngsi-ld:heartRateZone:items:EFSD:48378576"
+    "id": "urn:ngsi-ld:heartRateZone:id:CEHZ:58898697",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1991-04-18T21:11:56Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1995-01-26T05:36:04Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "Member attorney through allow environmental traditional low. Rate near federal rise always consider good."
+    },
+    "name": {
+        "type": "Property",
+        "value": "Machine create herself dark determine painting suddenly. Drug foot morning her commercial as. Himself court account after stage street establish. Still color technology certain section everything job."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Huge fund oil end card I enter. Professor black action act task follow outside. Message member week general."
+    },
+    "description": {
+        "type": "Property",
+        "value": "Local light product commercial sound. Reduce national lead myself watch."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Similar far its. Project these sometimes first."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:heartRateZone:items:BPSC:73150514",
+            "urn:ngsi-ld:heartRateZone:items:EFSD:48378576"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:heartRateZone:items:WMWA:60306746"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -5.0300965,
+                -156.656203
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "Collection thus manager customer. Read almost top now I set lose. Including lose war central benefit him others never.",
+            "addressLocality": "Happy child option wall. Mother many environment student score main person. Ready easy sure direction compare project cold.",
+            "addressRegion": "Generation foreign include admit prepare music want success. Nature continue manager back. Quality commercial learn identify full.",
+            "addressCountry": "Lead pick computer expert office pass. Apply reduce old live off sure eat everything.",
+            "postalCode": "Maybe direction future plan. Act address may hour lead. Poor way several.",
+            "postOfficeBoxNumber": "Arrive democratic research thus end ready."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Blood class media follow author consider. Magazine upon which artist. She power system hundred."
+    },
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:heartRateZone:items:WMWA:60306746"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        -5.0300965,
-        -156.656203
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "Collection thus manager customer. Read almost top now I set lose. Including lose war central benefit him others never.",
-      "addressLocality": "Happy child option wall. Mother many environment student score main person. Ready easy sure direction compare project cold.",
-      "addressRegion": "Generation foreign include admit prepare music want success. Nature continue manager back. Quality commercial learn identify full.",
-      "addressCountry": "Lead pick computer expert office pass. Apply reduce old live off sure eat everything.",
-      "postalCode": "Maybe direction future plan. Act address may hour lead. Poor way several.",
-      "postOfficeBoxNumber": "Arrive democratic research thus end ready."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Blood class media follow author consider. Magazine upon which artist. She power system hundred."
-  },
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
