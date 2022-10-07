@@ -1,37 +1,38 @@
 {
-  "id": "urn:ngsi-ld:ecomode:id:XTKS:41735897",
-  "dateCreated": "1984-05-09T22:46:30Z",
-  "dateModified": "2005-12-26T00:05:52Z",
-  "source": "Pick five government out several. Onto care door future.",
-  "name": "Source bed up these. Focus allow act rather cover what. Body rock product history management.",
-  "alternateName": "Dark wrong could thank yard. Before think major necessary police responsibility himself think. Would sit avoid floor relationship suffer thousand modern.",
-  "description": "Morning financial law compare paper. Two find model tough remember war. Business identify particularly claim.",
-  "dataProvider": "Wish church to event in line. Ever career sound her from figure.",
-  "owner": [
-    "urn:ngsi-ld:ecomode:items:VUPI:33448029",
-    "urn:ngsi-ld:ecomode:items:JAMY:20507933"
-  ],
-  "seeAlso": [
-    "urn:ngsi-ld:ecomode:items:NYJQ:21494614",
-    "urn:ngsi-ld:ecomode:items:MKLF:57041922"
-  ],
-  "location": {
-    "type": "Point",
-    "coordinates": [
-      -44.6641115,
-      141.353721
+    "id": "urn:ngsi-ld:ecomode:id:XTKS:41735897",
+    "dateCreated": "1984-05-09T22:46:30Z",
+    "dateModified": "2005-12-26T00:05:52Z",
+    "source": "Pick five government out several. Onto care door future.",
+    "name": "Source bed up these. Focus allow act rather cover what. Body rock product history management.",
+    "alternateName": "Dark wrong could thank yard. Before think major necessary police responsibility himself think. Would sit avoid floor relationship suffer thousand modern.",
+    "description": "Morning financial law compare paper. Two find model tough remember war. Business identify particularly claim.",
+    "dataProvider": "Wish church to event in line. Ever career sound her from figure.",
+    "owner": [
+        "urn:ngsi-ld:ecomode:items:VUPI:33448029",
+        "urn:ngsi-ld:ecomode:items:JAMY:20507933"
+    ],
+    "seeAlso": [
+        "urn:ngsi-ld:ecomode:items:NYJQ:21494614",
+        "urn:ngsi-ld:ecomode:items:MKLF:57041922"
+    ],
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            -44.6641115,
+            141.353721
+        ]
+    },
+    "address": {
+        "streetAddress": "Name husband local positive hear past open. Pay dream recently card never.",
+        "addressLocality": "Arm should bar western beautiful. Continue affect Republican attention level on.",
+        "addressRegion": "Thousand yes beautiful work national key born. Cut stage believe town enough gas past. Scene peace six factor happy those blood condition. Dream police somebody fill.",
+        "addressCountry": "Somebody drug cup green stand. Upon finish outside agent.",
+        "postalCode": "Season ten movie different drug. Thus these picture seat.",
+        "postOfficeBoxNumber": "Special who big movement. Entire could page item decade consumer lawyer kitchen."
+    },
+    "areaServed": "Build type series executive technology whole situation for. Series natural religious enjoy oil. Beat eat arrive ever.",
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "address": {
-    "streetAddress": "Name husband local positive hear past open. Pay dream recently card never.",
-    "addressLocality": "Arm should bar western beautiful. Continue affect Republican attention level on.",
-    "addressRegion": "Thousand yes beautiful work national key born. Cut stage believe town enough gas past. Scene peace six factor happy those blood condition. Dream police somebody fill.",
-    "addressCountry": "Somebody drug cup green stand. Upon finish outside agent.",
-    "postalCode": "Season ten movie different drug. Thus these picture seat.",
-    "postOfficeBoxNumber": "Special who big movement. Entire could page item decade consumer lawyer kitchen."
-  },
-  "areaServed": "Build type series executive technology whole situation for. Series natural religious enjoy oil. Beat eat arrive ever.",
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
