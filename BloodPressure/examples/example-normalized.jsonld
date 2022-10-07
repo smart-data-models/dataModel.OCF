@@ -1,126 +1,127 @@
 {
-  "id": "urn:ngsi-ld:BloodPressure:id:MWUO:80041751",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2020-05-09T02:59:44Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2010-09-02T23:50:12Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "However long knowledge. Remain different action. Street ago apply."
-  },
-  "name": {
-    "type": "Property",
-    "value": "Pay reach all oil on. Major court seven hair painting see both."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Open agree knowledge time walk able. Experience large report meet."
-  },
-  "description": {
-    "type": "Property",
-    "value": "Myself say career ago design condition go. Thank citizen policy situation. Hit pretty gas remember effect ago minute."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Magazine candidate need nearly church almost. Choose right stand something."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:BloodPressure:items:KIIY:23731432",
-      "urn:ngsi-ld:BloodPressure:items:JSYR:00171590"
+    "id": "urn:ngsi-ld:BloodPressure:id:MWUO:80041751",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2020-05-09T02:59:44Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2010-09-02T23:50:12Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "However long knowledge. Remain different action. Street ago apply."
+    },
+    "name": {
+        "type": "Property",
+        "value": "Pay reach all oil on. Major court seven hair painting see both."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Open agree knowledge time walk able. Experience large report meet."
+    },
+    "description": {
+        "type": "Property",
+        "value": "Myself say career ago design condition go. Thank citizen policy situation. Hit pretty gas remember effect ago minute."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Magazine candidate need nearly church almost. Choose right stand something."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:BloodPressure:items:KIIY:23731432",
+            "urn:ngsi-ld:BloodPressure:items:JSYR:00171590"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:BloodPressure:items:VRNO:88271615"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                2.782601,
+                91.84993
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "New into method treat call. Society often over now before. Radio partner music.",
+            "addressLocality": "Mind do social find population young. Establish response we talk total. Reveal operation community contain produce likely money.",
+            "addressRegion": "Executive fast consider law model debate because. Share fine but sing majority shoulder. Factor over Republican gas throw.",
+            "addressCountry": "Modern camera air include authority player. System speech fire toward. Up until reach player likely.",
+            "postalCode": "Why kind agree page.",
+            "postOfficeBoxNumber": "Kind a heavy piece measure wonder least well. Page major material safe without defense feel hold. Father stop friend security allow. Man play degree magazine because."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Necessary section worker once body. They important involve discuss camera. Others statement set power kid mind more."
+    },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.blood.pressure"
+        ]
+    },
+    "map": {
+        "type": "Property",
+        "value": 207.0
+    },
+    "units": {
+        "type": "Property",
+        "value": "mmHg"
+    },
+    "systolic": {
+        "type": "Property",
+        "value": 457.9
+    },
+    "diastolic": {
+        "type": "Property",
+        "value": 11.4
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.baseline"
+        ]
+    },
+    "range": {
+        "type": "Property",
+        "value": [
+            208.9,
+            583.5
+        ]
+    },
+    "step": {
+        "type": "Property",
+        "value": 1.2
+    },
+    "precision": {
+        "type": "Property",
+        "value": 933.1
+    },
+    "n": {
+        "type": "Property",
+        "value": "Before effort technology commercial finally. Effect cell thousand rich. Modern happen less turn common around audience."
+    },
+    "type": "BloodPressure",
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:BloodPressure:items:VRNO:88271615"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        2.782601,
-        91.84993
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "New into method treat call. Society often over now before. Radio partner music.",
-      "addressLocality": "Mind do social find population young. Establish response we talk total. Reveal operation community contain produce likely money.",
-      "addressRegion": "Executive fast consider law model debate because. Share fine but sing majority shoulder. Factor over Republican gas throw.",
-      "addressCountry": "Modern camera air include authority player. System speech fire toward. Up until reach player likely.",
-      "postalCode": "Why kind agree page.",
-      "postOfficeBoxNumber": "Kind a heavy piece measure wonder least well. Page major material safe without defense feel hold. Father stop friend security allow. Man play degree magazine because."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Necessary section worker once body. They important involve discuss camera. Others statement set power kid mind more."
-  },
-  "rt": {
-    "type": "Property",
-    "value": [
-      "oic.r.blood.pressure"
-    ]
-  },
-  "map": {
-    "type": "Property",
-    "value": 207.0
-  },
-  "units": {
-    "type": "Property",
-    "value": "mmHg"
-  },
-  "systolic": {
-    "type": "Property",
-    "value": 457.9
-  },
-  "diastolic": {
-    "type": "Property",
-    "value": 11.4
-  },
-  "if": {
-    "type": "Property",
-    "value": [
-      "oic.if.baseline"
-    ]
-  },
-  "range": {
-    "type": "Property",
-    "value": [
-      208.9,
-      583.5
-    ]
-  },
-  "step": {
-    "type": "Property",
-    "value": 1.2
-  },
-  "precision": {
-    "type": "Property",
-    "value": 933.1
-  },
-  "n": {
-    "type": "Property",
-    "value": "Before effort technology commercial finally. Effect cell thousand rich. Modern happen less turn common around audience."
-  },
-  "type": "BloodPressure",
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
