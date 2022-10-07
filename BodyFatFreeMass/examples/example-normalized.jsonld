@@ -1,118 +1,119 @@
 {
-  "id": "urn:ngsi-ld:BodyFatFreeMass:id:BYYC:85997792",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1979-04-14T17:16:17Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1982-11-26T18:17:09Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "With letter region set lay realize."
-  },
-  "name": {
-    "type": "Property",
-    "value": "Important hot speak product. Anything property face actually weight. Because hour admit case."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Race ball hard fine."
-  },
-  "description": {
-    "type": "Property",
-    "value": "Several list outside statement assume government. Size upon that staff lay everybody."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "List exist worry authority. Ok strategy security able huge. Control that early type control action new mouth."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:BodyFatFreeMass:items:YGWC:27965149",
-      "urn:ngsi-ld:BodyFatFreeMass:items:JJZI:38517462"
+    "id": "urn:ngsi-ld:BodyFatFreeMass:id:BYYC:85997792",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1979-04-14T17:16:17Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1982-11-26T18:17:09Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "With letter region set lay realize."
+    },
+    "name": {
+        "type": "Property",
+        "value": "Important hot speak product. Anything property face actually weight. Because hour admit case."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Race ball hard fine."
+    },
+    "description": {
+        "type": "Property",
+        "value": "Several list outside statement assume government. Size upon that staff lay everybody."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "List exist worry authority. Ok strategy security able huge. Control that early type control action new mouth."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:BodyFatFreeMass:items:YGWC:27965149",
+            "urn:ngsi-ld:BodyFatFreeMass:items:JJZI:38517462"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:BodyFatFreeMass:items:IRKO:22252881"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -73.99554,
+                -50.163726
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "Soon agreement rate evidence since answer bar. Never account center know.",
+            "addressLocality": "Growth against deep clearly let grow. Order over training have let high occur game. Make other enjoy ever human identify short summer.",
+            "addressRegion": "White budget ten doctor cup husband area. Wait spend myself serve whose south wonder bed. And clearly set argue. Represent then cause animal.",
+            "addressCountry": "Against finish hope business decade feeling. Fund really find line. Claim knowledge outside support way.",
+            "postalCode": "Think professional new those theory boy road. Something follow physical some reach might condition. Explain really production a nature so.",
+            "postOfficeBoxNumber": "All stand myself this case. Remain push win sea cell. Throughout account goal."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Happy Democrat yet Mr share time its. Half least record reveal leg fish. Vote development Republican single serve amount."
+    },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.body.ffm"
+        ]
+    },
+    "ffm": {
+        "type": "Property",
+        "value": 661.3
+    },
+    "units": {
+        "type": "Property",
+        "value": "kg"
+    },
+    "range": {
+        "type": "Property",
+        "value": [
+            609.9,
+            585.5
+        ]
+    },
+    "step": {
+        "type": "Property",
+        "value": 91.6
+    },
+    "precision": {
+        "type": "Property",
+        "value": 675.6
+    },
+    "n": {
+        "type": "Property",
+        "value": "Future reality write read law list. Account friend shake region tell program. Rate most mind save cup agency big rather."
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.baseline"
+        ]
+    },
+    "type": "BodyFatFreeMass",
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:BodyFatFreeMass:items:IRKO:22252881"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        -73.99554,
-        -50.163726
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "Soon agreement rate evidence since answer bar. Never account center know.",
-      "addressLocality": "Growth against deep clearly let grow. Order over training have let high occur game. Make other enjoy ever human identify short summer.",
-      "addressRegion": "White budget ten doctor cup husband area. Wait spend myself serve whose south wonder bed. And clearly set argue. Represent then cause animal.",
-      "addressCountry": "Against finish hope business decade feeling. Fund really find line. Claim knowledge outside support way.",
-      "postalCode": "Think professional new those theory boy road. Something follow physical some reach might condition. Explain really production a nature so.",
-      "postOfficeBoxNumber": "All stand myself this case. Remain push win sea cell. Throughout account goal."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Happy Democrat yet Mr share time its. Half least record reveal leg fish. Vote development Republican single serve amount."
-  },
-  "rt": {
-    "type": "Property",
-    "value": [
-      "oic.r.body.ffm"
-    ]
-  },
-  "ffm": {
-    "type": "Property",
-    "value": 661.3
-  },
-  "units": {
-    "type": "Property",
-    "value": "kg"
-  },
-  "range": {
-    "type": "Property",
-    "value": [
-      609.9,
-      585.5
-    ]
-  },
-  "step": {
-    "type": "Property",
-    "value": 91.6
-  },
-  "precision": {
-    "type": "Property",
-    "value": 675.6
-  },
-  "n": {
-    "type": "Property",
-    "value": "Future reality write read law list. Account friend shake region tell program. Rate most mind save cup agency big rather."
-  },
-  "if": {
-    "type": "Property",
-    "value": [
-      "oic.if.baseline"
-    ]
-  },
-  "type": "BodyFatFreeMass",
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
