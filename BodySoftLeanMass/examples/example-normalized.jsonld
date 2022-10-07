@@ -1,118 +1,119 @@
 {
-  "id": "urn:ngsi-ld:BodySoftLeanMass:id:SYRF:82432210",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1996-02-28T20:56:42Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1991-02-21T22:05:11Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "Range six speech act. Husband ball water before church thought resource change."
-  },
-  "name": {
-    "type": "Property",
-    "value": "Argue push management."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Scientist talk education fine full population level thank. Investment because reveal memory choose. Official south inside fund."
-  },
-  "description": {
-    "type": "Property",
-    "value": "Together difficult then any. Notice animal performance since sometimes ready so. Bit should its suffer house their. Son as much next actually."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Painting book hand low certain sometimes itself. Painting hundred face field. Return buy upon maybe service."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:BodySoftLeanMass:items:UQUW:63154460",
-      "urn:ngsi-ld:BodySoftLeanMass:items:FZVF:84597741"
+    "id": "urn:ngsi-ld:BodySoftLeanMass:id:SYRF:82432210",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1996-02-28T20:56:42Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1991-02-21T22:05:11Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "Range six speech act. Husband ball water before church thought resource change."
+    },
+    "name": {
+        "type": "Property",
+        "value": "Argue push management."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Scientist talk education fine full population level thank. Investment because reveal memory choose. Official south inside fund."
+    },
+    "description": {
+        "type": "Property",
+        "value": "Together difficult then any. Notice animal performance since sometimes ready so. Bit should its suffer house their. Son as much next actually."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Painting book hand low certain sometimes itself. Painting hundred face field. Return buy upon maybe service."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:BodySoftLeanMass:items:UQUW:63154460",
+            "urn:ngsi-ld:BodySoftLeanMass:items:FZVF:84597741"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:BodySoftLeanMass:items:DGRC:74899642"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -54.613213,
+                -49.063645
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "Cost note enough. Human feeling how certainly care. Security next success of attack measure.",
+            "addressLocality": "Able rock move tree part. Despite ago seat bit easy everything indicate. Policy ten hour none determine tell lose.",
+            "addressRegion": "Garden pretty build. Certain couple teach cold table.",
+            "addressCountry": "Pressure ask stop fund least political. Responsibility the election morning culture.",
+            "postalCode": "World simply whatever create radio tell finally. She field detail voice body employee sometimes.",
+            "postOfficeBoxNumber": "Wear knowledge member begin hear question bit. Production court pull sort common majority population. Someone part west decade appear resource. Treat win check action."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Network despite recently fall chance. Occur training quite. Brother western blood life than red almost."
+    },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.body.slm"
+        ]
+    },
+    "slm": {
+        "type": "Property",
+        "value": 585.5
+    },
+    "units": {
+        "type": "Property",
+        "value": "percent"
+    },
+    "range": {
+        "type": "Property",
+        "value": [
+            190.3,
+            292.8
+        ]
+    },
+    "step": {
+        "type": "Property",
+        "value": 944.6
+    },
+    "precision": {
+        "type": "Property",
+        "value": 411.9
+    },
+    "n": {
+        "type": "Property",
+        "value": "Fund foreign forget."
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.s"
+        ]
+    },
+    "type": "BodySoftLeanMass",
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:BodySoftLeanMass:items:DGRC:74899642"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        -54.613213,
-        -49.063645
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "Cost note enough. Human feeling how certainly care. Security next success of attack measure.",
-      "addressLocality": "Able rock move tree part. Despite ago seat bit easy everything indicate. Policy ten hour none determine tell lose.",
-      "addressRegion": "Garden pretty build. Certain couple teach cold table.",
-      "addressCountry": "Pressure ask stop fund least political. Responsibility the election morning culture.",
-      "postalCode": "World simply whatever create radio tell finally. She field detail voice body employee sometimes.",
-      "postOfficeBoxNumber": "Wear knowledge member begin hear question bit. Production court pull sort common majority population. Someone part west decade appear resource. Treat win check action."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Network despite recently fall chance. Occur training quite. Brother western blood life than red almost."
-  },
-  "rt": {
-    "type": "Property",
-    "value": [
-      "oic.r.body.slm"
-    ]
-  },
-  "slm": {
-    "type": "Property",
-    "value": 585.5
-  },
-  "units": {
-    "type": "Property",
-    "value": "percent"
-  },
-  "range": {
-    "type": "Property",
-    "value": [
-      190.3,
-      292.8
-    ]
-  },
-  "step": {
-    "type": "Property",
-    "value": 944.6
-  },
-  "precision": {
-    "type": "Property",
-    "value": 411.9
-  },
-  "n": {
-    "type": "Property",
-    "value": "Fund foreign forget."
-  },
-  "if": {
-    "type": "Property",
-    "value": [
-      "oic.if.s"
-    ]
-  },
-  "type": "BodySoftLeanMass",
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
