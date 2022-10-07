@@ -1,78 +1,79 @@
 {
-  "id": "urn:ngsi-ld:GlucoseHealth:id:OYOG:86546161",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1996-03-31T08:57:37Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1992-09-20T11:34:04Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "Civil agreement after organization. Medical computer statement tree herself wonder. Investment ago society late particular place."
-  },
-  "name": {
-    "type": "Property",
-    "value": "Point magazine feel. Successful career play window. Avoid she debate drop."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Subject public evening body difference society. Again decade analysis music."
-  },
-  "description": {
-    "type": "Property",
-    "value": "Maintain collection idea quickly out. Leader teacher reason play view. Significant build painting what population worker."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Affect church pattern heavy camera water month."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:GlucoseHealth:items:WXXP:92272198",
-      "urn:ngsi-ld:GlucoseHealth:items:GOFL:73035775"
+    "id": "urn:ngsi-ld:GlucoseHealth:id:OYOG:86546161",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1996-03-31T08:57:37Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1992-09-20T11:34:04Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "Civil agreement after organization. Medical computer statement tree herself wonder. Investment ago society late particular place."
+    },
+    "name": {
+        "type": "Property",
+        "value": "Point magazine feel. Successful career play window. Avoid she debate drop."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Subject public evening body difference society. Again decade analysis music."
+    },
+    "description": {
+        "type": "Property",
+        "value": "Maintain collection idea quickly out. Leader teacher reason play view. Significant build painting what population worker."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Affect church pattern heavy camera water month."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:GlucoseHealth:items:WXXP:92272198",
+            "urn:ngsi-ld:GlucoseHealth:items:GOFL:73035775"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:GlucoseHealth:items:PYQU:68924026"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -65.464196,
+                -102.585699
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "Traditional least property. Eye message ability wrong.",
+            "addressLocality": "Remember wide culture. Weight senior pay.",
+            "addressRegion": "Attorney money decide its off author. Traditional citizen attorney dark.",
+            "addressCountry": "Pretty old foot imagine. Yourself sound lot physical relationship.",
+            "postalCode": "Entire sport white operation month. Sing garden wall want. Interview our cold product class. Likely agent southern this.",
+            "postOfficeBoxNumber": "Administration clear assume consider summer cold read. Hundred guess list energy bed drive rest."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Picture memory picture red letter crime already. Watch place expert out choose big stop way. Job Mr agree."
+    },
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:GlucoseHealth:items:PYQU:68924026"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        -65.464196,
-        -102.585699
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "Traditional least property. Eye message ability wrong.",
-      "addressLocality": "Remember wide culture. Weight senior pay.",
-      "addressRegion": "Attorney money decide its off author. Traditional citizen attorney dark.",
-      "addressCountry": "Pretty old foot imagine. Yourself sound lot physical relationship.",
-      "postalCode": "Entire sport white operation month. Sing garden wall want. Interview our cold product class. Likely agent southern this.",
-      "postOfficeBoxNumber": "Administration clear assume consider summer cold read. Hundred guess list energy bed drive rest."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Picture memory picture red letter crime already. Watch place expert out choose big stop way. Job Mr agree."
-  },
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
