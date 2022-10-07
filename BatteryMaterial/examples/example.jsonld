@@ -1,37 +1,38 @@
 {
-  "id": "urn:ngsi-ld:BatteryMaterial:id:BIGG:65391750",
-  "dateCreated": "2015-08-09T21:48:44Z",
-  "dateModified": "2011-09-08T04:27:31Z",
-  "source": "Value two guy eye music wife might. Pressure police relationship cause person. Million official tree say art we system.",
-  "name": "Clearly turn series another kid. Arrive on firm TV the spring piece. Score man crime million stock peace risk.",
-  "alternateName": "Company kid pull realize special maybe. Letter result prevent room. Position billion home discover industry often general.",
-  "description": "Really road stay make face compare heart. Main note green item why ago.",
-  "dataProvider": "Develop throw bar discussion. Head continue growth either these hundred. Story space expect but church.",
-  "owner": [
-    "urn:ngsi-ld:BatteryMaterial:items:DZKF:56488970",
-    "urn:ngsi-ld:BatteryMaterial:items:XBYH:64008923"
-  ],
-  "seeAlso": [
-    "urn:ngsi-ld:BatteryMaterial:items:HLUT:17324623",
-    "urn:ngsi-ld:BatteryMaterial:items:RSRZ:45355989"
-  ],
-  "location": {
-    "type": "Point",
-    "coordinates": [
-      72.3612535,
-      145.935183
+    "id": "urn:ngsi-ld:BatteryMaterial:id:BIGG:65391750",
+    "dateCreated": "2015-08-09T21:48:44Z",
+    "dateModified": "2011-09-08T04:27:31Z",
+    "source": "Value two guy eye music wife might. Pressure police relationship cause person. Million official tree say art we system.",
+    "name": "Clearly turn series another kid. Arrive on firm TV the spring piece. Score man crime million stock peace risk.",
+    "alternateName": "Company kid pull realize special maybe. Letter result prevent room. Position billion home discover industry often general.",
+    "description": "Really road stay make face compare heart. Main note green item why ago.",
+    "dataProvider": "Develop throw bar discussion. Head continue growth either these hundred. Story space expect but church.",
+    "owner": [
+        "urn:ngsi-ld:BatteryMaterial:items:DZKF:56488970",
+        "urn:ngsi-ld:BatteryMaterial:items:XBYH:64008923"
+    ],
+    "seeAlso": [
+        "urn:ngsi-ld:BatteryMaterial:items:HLUT:17324623",
+        "urn:ngsi-ld:BatteryMaterial:items:RSRZ:45355989"
+    ],
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            72.3612535,
+            145.935183
+        ]
+    },
+    "address": {
+        "streetAddress": "Break and six table agree. Year garden board claim mention total.",
+        "addressLocality": "Camera responsibility interview animal not. Artist end ball me.",
+        "addressRegion": "Say explain available Mrs floor fall security parent. Pick let challenge decade bed camera develop. Huge likely memory people great mention.",
+        "addressCountry": "Black beat run collection. Country billion any whom doctor. Contain may keep south.",
+        "postalCode": "Close organization man take type save. Tree space wind would off summer.",
+        "postOfficeBoxNumber": "Build president action cover."
+    },
+    "areaServed": "Reality drive forward enter travel game about. Successful who direction stay answer law vote certain.",
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "address": {
-    "streetAddress": "Break and six table agree. Year garden board claim mention total.",
-    "addressLocality": "Camera responsibility interview animal not. Artist end ball me.",
-    "addressRegion": "Say explain available Mrs floor fall security parent. Pick let challenge decade bed camera develop. Huge likely memory people great mention.",
-    "addressCountry": "Black beat run collection. Country billion any whom doctor. Contain may keep south.",
-    "postalCode": "Close organization man take type save. Tree space wind would off summer.",
-    "postOfficeBoxNumber": "Build president action cover."
-  },
-  "areaServed": "Reality drive forward enter travel game about. Successful who direction stay answer law vote certain.",
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
