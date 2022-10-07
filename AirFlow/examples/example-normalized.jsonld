@@ -1,125 +1,126 @@
 {
-  "id": "urn:ngsi-ld:AirFlow:id:CTQH:10088755",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1971-04-04T11:51:02Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1972-10-11T04:22:40Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "Above add institution message use. Player owner together ago."
-  },
-  "name": {
-    "type": "Property",
-    "value": "Could read computer minute. Trip no last thought push."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Most oil his tonight. Five perform any media."
-  },
-  "description": {
-    "type": "Property",
-    "value": "History trade per summer. Material spring base attack note forget. Win not itself character thought according property."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Kitchen commercial bed modern mean finish people. Rate base cultural bar time."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:AirFlow:items:THBX:12648291",
-      "urn:ngsi-ld:AirFlow:items:WYAI:06881272"
+    "id": "urn:ngsi-ld:AirFlow:id:CTQH:10088755",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1971-04-04T11:51:02Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1972-10-11T04:22:40Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "Above add institution message use. Player owner together ago."
+    },
+    "name": {
+        "type": "Property",
+        "value": "Could read computer minute. Trip no last thought push."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Most oil his tonight. Five perform any media."
+    },
+    "description": {
+        "type": "Property",
+        "value": "History trade per summer. Material spring base attack note forget. Win not itself character thought according property."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Kitchen commercial bed modern mean finish people. Rate base cultural bar time."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:AirFlow:items:THBX:12648291",
+            "urn:ngsi-ld:AirFlow:items:WYAI:06881272"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:AirFlow:items:FOOH:86766119"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                11.690259,
+                -163.367986
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "Quickly leg little certain his. Financial music run miss out. Attack again same production leg fund. Task consider nature author.",
+            "addressLocality": "Single particularly some economy choice. Will tree success call window direction though be. Deep serious play establish.",
+            "addressRegion": "Moment strategy sing party up. There travel sit science government. Military democratic hard case probably kitchen. Suffer kid order year since affect.",
+            "addressCountry": "Toward product indeed voice character. Low drug view memory.",
+            "postalCode": "West figure produce. Nature month husband.",
+            "postOfficeBoxNumber": "Early true turn. Son wonder politics young health. Suggest design message standard save style school agree."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Art guess ok front become lay per. Attorney step company."
+    },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.airflow"
+        ]
+    },
+    "speed": {
+        "type": "Property",
+        "value": 725
+    },
+    "direction": {
+        "type": "Property",
+        "value": "For team service avoid boy clear election small."
+    },
+    "automode": {
+        "type": "Property",
+        "value": "Off"
+    },
+    "supporteddirections": {
+        "type": "Property",
+        "value": [
+            "Instead process economy bad. Television chance name sort claim current. Attention adult onto dog American sport."
+        ]
+    },
+    "n": {
+        "type": "Property",
+        "value": "Account today process discussion factor need race wait. System produce professor choose trouble join. Focus edge picture."
+    },
+    "range": {
+        "type": "Property",
+        "value": [
+            961,
+            463
+        ]
+    },
+    "step": {
+        "type": "Property",
+        "value": 320
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.baseline",
+            "oic.if.baseline"
+        ]
+    },
+    "type": "AirFlow",
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:AirFlow:items:FOOH:86766119"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        11.690259,
-        -163.367986
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "Quickly leg little certain his. Financial music run miss out. Attack again same production leg fund. Task consider nature author.",
-      "addressLocality": "Single particularly some economy choice. Will tree success call window direction though be. Deep serious play establish.",
-      "addressRegion": "Moment strategy sing party up. There travel sit science government. Military democratic hard case probably kitchen. Suffer kid order year since affect.",
-      "addressCountry": "Toward product indeed voice character. Low drug view memory.",
-      "postalCode": "West figure produce. Nature month husband.",
-      "postOfficeBoxNumber": "Early true turn. Son wonder politics young health. Suggest design message standard save style school agree."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Art guess ok front become lay per. Attorney step company."
-  },
-  "rt": {
-    "type": "Property",
-    "value": [
-      "oic.r.airflow"
-    ]
-  },
-  "speed": {
-    "type": "Property",
-    "value": 725
-  },
-  "direction": {
-    "type": "Property",
-    "value": "For team service avoid boy clear election small."
-  },
-  "automode": {
-    "type": "Property",
-    "value": "Off"
-  },
-  "supporteddirections": {
-    "type": "Property",
-    "value": [
-      "Instead process economy bad. Television chance name sort claim current. Attention adult onto dog American sport."
-    ]
-  },
-  "n": {
-    "type": "Property",
-    "value": "Account today process discussion factor need race wait. System produce professor choose trouble join. Focus edge picture."
-  },
-  "range": {
-    "type": "Property",
-    "value": [
-      961,
-      463
-    ]
-  },
-  "step": {
-    "type": "Property",
-    "value": 320
-  },
-  "if": {
-    "type": "Property",
-    "value": [
-      "oic.if.baseline",
-      "oic.if.baseline"
-    ]
-  },
-  "type": "AirFlow",
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
