@@ -1,64 +1,65 @@
 {
-  "id": "urn:ngsi-ld:Temperature:id:TDIW:54028449",
-  "dateCreated": "2002-11-15T00:39:26Z",
-  "dateModified": "1984-04-05T09:28:18Z",
-  "source": "Report reveal along thank conference anything. Strong commercial oil great little eat film. Son source question all bed continue.",
-  "name": "Hope clearly appear my project former goal ago. Put edge assume close believe focus.",
-  "alternateName": "Employee machine rate among goal drive. Management fish author until second.",
-  "description": "Mission full life thank feeling approach. Newspaper our color bring final. Enter fall wear age ago.",
-  "dataProvider": "Improve reflect ago bad result.",
-  "owner": [
-    "urn:ngsi-ld:Temperature:items:RMOR:11444543",
-    "urn:ngsi-ld:Temperature:items:GBKW:61820150"
-  ],
-  "seeAlso": [
-    "urn:ngsi-ld:Temperature:items:AXXM:54456212",
-    "urn:ngsi-ld:Temperature:items:LIWH:14572760"
-  ],
-  "location": {
-    "type": "Point",
-    "coordinates": [
-      39.6865755,
-      168.763262
+    "id": "urn:ngsi-ld:Temperature:id:TDIW:54028449",
+    "dateCreated": "2002-11-15T00:39:26Z",
+    "dateModified": "1984-04-05T09:28:18Z",
+    "source": "Report reveal along thank conference anything. Strong commercial oil great little eat film. Son source question all bed continue.",
+    "name": "Hope clearly appear my project former goal ago. Put edge assume close believe focus.",
+    "alternateName": "Employee machine rate among goal drive. Management fish author until second.",
+    "description": "Mission full life thank feeling approach. Newspaper our color bring final. Enter fall wear age ago.",
+    "dataProvider": "Improve reflect ago bad result.",
+    "owner": [
+        "urn:ngsi-ld:Temperature:items:RMOR:11444543",
+        "urn:ngsi-ld:Temperature:items:GBKW:61820150"
+    ],
+    "seeAlso": [
+        "urn:ngsi-ld:Temperature:items:AXXM:54456212",
+        "urn:ngsi-ld:Temperature:items:LIWH:14572760"
+    ],
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            39.6865755,
+            168.763262
+        ]
+    },
+    "address": {
+        "streetAddress": "Case institution side suddenly land set trip. Other police own activity field they. With new individual. Notice he loss recognize start exactly difference picture.",
+        "addressLocality": "President president new.",
+        "addressRegion": "Little newspaper to some Congress. School organization account heavy now strong organization. Bit it great its very.",
+        "addressCountry": "Control outside save similar. Citizen only PM able product main.",
+        "postalCode": "Road Mr or success science. Civil fact compare floor loss.",
+        "postOfficeBoxNumber": "Add in spring often American. When coach relationship sell production. Great relationship participant piece ground."
+    },
+    "areaServed": "Policy yet line half. Meet machine still never. Father both phone teacher throw particularly admit seek.",
+    "rt": [
+        "oic.r.temperature",
+        "oic.r.temperature"
+    ],
+    "temperature": {
+        "type": "Property",
+        "value": 246.8
+    },
+    "units": "F",
+    "n": "Action thought sing fall play require owner. Business itself artist how chair interest.",
+    "range": [
+        515.3,
+        539.9
+    ],
+    "step": {
+        "type": "Property",
+        "value": 292.0
+    },
+    "precision": {
+        "type": "Property",
+        "value": 843.0
+    },
+    "if": [
+        "oic.if.a",
+        "oic.if.baseline"
+    ],
+    "type": "Temperature",
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "address": {
-    "streetAddress": "Case institution side suddenly land set trip. Other police own activity field they. With new individual. Notice he loss recognize start exactly difference picture.",
-    "addressLocality": "President president new.",
-    "addressRegion": "Little newspaper to some Congress. School organization account heavy now strong organization. Bit it great its very.",
-    "addressCountry": "Control outside save similar. Citizen only PM able product main.",
-    "postalCode": "Road Mr or success science. Civil fact compare floor loss.",
-    "postOfficeBoxNumber": "Add in spring often American. When coach relationship sell production. Great relationship participant piece ground."
-  },
-  "areaServed": "Policy yet line half. Meet machine still never. Father both phone teacher throw particularly admit seek.",
-  "rt": [
-    "oic.r.temperature",
-    "oic.r.temperature"
-  ],
-  "temperature": {
-    "type": "Property",
-    "value": 246.8
-  },
-  "units": "F",
-  "n": "Action thought sing fall play require owner. Business itself artist how chair interest.",
-  "range": [
-    515.3,
-    539.9
-  ],
-  "step": {
-    "type": "Property",
-    "value": 292.0
-  },
-  "precision": {
-    "type": "Property",
-    "value": 843.0
-  },
-  "if": [
-    "oic.if.a",
-    "oic.if.baseline"
-  ],
-  "type": "Temperature",
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
