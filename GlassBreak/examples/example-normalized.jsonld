@@ -1,78 +1,79 @@
 {
-  "id": "urn:ngsi-ld:GlassBreak:id:VRDE:91139471",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2015-07-08T01:20:46Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1974-04-09T02:47:26Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "Store important image."
-  },
-  "name": {
-    "type": "Property",
-    "value": "Ten out gun huge little reality minute. Add seem daughter story especially focus. Degree trouble despite during."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Food thus describe indicate use front. Out can little boy yourself husband. Thing bad actually interesting western room."
-  },
-  "description": {
-    "type": "Property",
-    "value": "Environment your act sure put member. Throughout detail less day your on camera believe."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Prevent door TV. Test tough rich lot range. Test meet campaign knowledge interview dog end."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:GlassBreak:items:MYRX:42586581",
-      "urn:ngsi-ld:GlassBreak:items:DLUQ:40554906"
+    "id": "urn:ngsi-ld:GlassBreak:id:VRDE:91139471",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2015-07-08T01:20:46Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1974-04-09T02:47:26Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "Store important image."
+    },
+    "name": {
+        "type": "Property",
+        "value": "Ten out gun huge little reality minute. Add seem daughter story especially focus. Degree trouble despite during."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Food thus describe indicate use front. Out can little boy yourself husband. Thing bad actually interesting western room."
+    },
+    "description": {
+        "type": "Property",
+        "value": "Environment your act sure put member. Throughout detail less day your on camera believe."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Prevent door TV. Test tough rich lot range. Test meet campaign knowledge interview dog end."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:GlassBreak:items:MYRX:42586581",
+            "urn:ngsi-ld:GlassBreak:items:DLUQ:40554906"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:GlassBreak:items:QLKR:46279365"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                12.002529,
+                101.536074
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "Yard certain themselves at. Occur seven friend pay. Discussion kid hot cover require picture information.",
+            "addressLocality": "Increase through bank second feel save boy. Cell to loss talk organization agency herself. Its picture simple agency difference back resource.",
+            "addressRegion": "Maintain traditional use speech most sister. Amount common new. Sea student thank effect help wind result region. Usually value occur by ready player agreement.",
+            "addressCountry": "Glass knowledge former over thought oil. World another from market third. Important question plant wait name magazine case.",
+            "postalCode": "Single different popular north everybody increase. Game adult east long third positive PM. Itself kitchen defense any he.",
+            "postOfficeBoxNumber": "Service world money magazine account head rest about. Doctor instead bank law building drive eight. Teacher no their home. Somebody share will full answer."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Big left half serious far total one. Stock else money billion east dream."
+    },
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:GlassBreak:items:QLKR:46279365"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        12.002529,
-        101.536074
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "Yard certain themselves at. Occur seven friend pay. Discussion kid hot cover require picture information.",
-      "addressLocality": "Increase through bank second feel save boy. Cell to loss talk organization agency herself. Its picture simple agency difference back resource.",
-      "addressRegion": "Maintain traditional use speech most sister. Amount common new. Sea student thank effect help wind result region. Usually value occur by ready player agreement.",
-      "addressCountry": "Glass knowledge former over thought oil. World another from market third. Important question plant wait name magazine case.",
-      "postalCode": "Single different popular north everybody increase. Game adult east long third positive PM. Itself kitchen defense any he.",
-      "postOfficeBoxNumber": "Service world money magazine account head rest about. Doctor instead bank law building drive eight. Teacher no their home. Somebody share will full answer."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Big left half serious far total one. Stock else money billion east dream."
-  },
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
