@@ -1,72 +1,73 @@
 {
-  "id": "urn:ngsi-ld:PVArrayConnectionTerminal:id:PBQS:43835461",
-  "dateCreated": "2012-07-24T16:11:16Z",
-  "dateModified": "2003-05-24T19:12:32Z",
-  "source": "Area able surface south attention measure involve. Establish product because floor reason exist design effect. Place point Republican conference ten. Professional teach budget mother unit.",
-  "name": "Send offer season significant. Or glass especially Democrat enter spring people.",
-  "alternateName": "Six benefit relationship. Language stay she fact explain growth sister. Reach reveal police day key read office.",
-  "description": "Two might million benefit continue specific clearly street. Society dream show of.",
-  "dataProvider": "Bad either recently rate candidate plan. Deep young again pass provide something ok.",
-  "owner": [
-    "urn:ngsi-ld:PVArrayConnectionTerminal:items:GZHR:33550282",
-    "urn:ngsi-ld:PVArrayConnectionTerminal:items:JFYB:81797940"
-  ],
-  "seeAlso": [
-    "urn:ngsi-ld:PVArrayConnectionTerminal:items:QZDS:82605439",
-    "urn:ngsi-ld:PVArrayConnectionTerminal:items:CCOW:10298726"
-  ],
-  "location": {
-    "type": "Point",
-    "coordinates": [
-      -16.2130695,
-      103.091866
+    "id": "urn:ngsi-ld:PVArrayConnectionTerminal:id:PBQS:43835461",
+    "dateCreated": "2012-07-24T16:11:16Z",
+    "dateModified": "2003-05-24T19:12:32Z",
+    "source": "Area able surface south attention measure involve. Establish product because floor reason exist design effect. Place point Republican conference ten. Professional teach budget mother unit.",
+    "name": "Send offer season significant. Or glass especially Democrat enter spring people.",
+    "alternateName": "Six benefit relationship. Language stay she fact explain growth sister. Reach reveal police day key read office.",
+    "description": "Two might million benefit continue specific clearly street. Society dream show of.",
+    "dataProvider": "Bad either recently rate candidate plan. Deep young again pass provide something ok.",
+    "owner": [
+        "urn:ngsi-ld:PVArrayConnectionTerminal:items:GZHR:33550282",
+        "urn:ngsi-ld:PVArrayConnectionTerminal:items:JFYB:81797940"
+    ],
+    "seeAlso": [
+        "urn:ngsi-ld:PVArrayConnectionTerminal:items:QZDS:82605439",
+        "urn:ngsi-ld:PVArrayConnectionTerminal:items:CCOW:10298726"
+    ],
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            -16.2130695,
+            103.091866
+        ]
+    },
+    "address": {
+        "streetAddress": "Like business much top tree fish. Exist place he two. Weight stop ball development yard already. Record cultural ground foreign purpose director make.",
+        "addressLocality": "Police subject cup figure media stuff. My through sure good scene. Less action among hard quite leave stand apply.",
+        "addressRegion": "Notice my power know water standard. Actually none effect at smile.",
+        "addressCountry": "Production defense however dinner say successful. Ok model enter subject kid reduce art.",
+        "postalCode": "Physical management she fish land director. Name nothing beyond kitchen.",
+        "postOfficeBoxNumber": "Rock economic add physical power. Away physical size woman garden surface foreign."
+    },
+    "areaServed": "Over choice nearly they budget find. Power others environmental since page brother party house.",
+    "rt": [
+        "oic.r.pvconnectionterminal",
+        "oic.r.pvconnectionterminal"
+    ],
+    "ratedarrayvoltage": {
+        "type": "Property",
+        "value": 391.0
+    },
+    "ratedarraycurrent": {
+        "type": "Property",
+        "value": 169.2
+    },
+    "arrayvoltage": {
+        "type": "Property",
+        "value": 763.9
+    },
+    "arraycurrent": {
+        "type": "Property",
+        "value": 519.0
+    },
+    "leakagecurrent": {
+        "type": "Property",
+        "value": 313.0
+    },
+    "insulationresistance": {
+        "type": "Property",
+        "value": 348.8
+    },
+    "timestamp": "1979-06-05T23:42:36Z",
+    "n": "Reason movie student performance. Best gas including. Huge food deep relate raise fear.",
+    "if": [
+        "oic.if.baseline",
+        "oic.if.s"
+    ],
+    "type": "PVArrayConnectionTerminal",
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "address": {
-    "streetAddress": "Like business much top tree fish. Exist place he two. Weight stop ball development yard already. Record cultural ground foreign purpose director make.",
-    "addressLocality": "Police subject cup figure media stuff. My through sure good scene. Less action among hard quite leave stand apply.",
-    "addressRegion": "Notice my power know water standard. Actually none effect at smile.",
-    "addressCountry": "Production defense however dinner say successful. Ok model enter subject kid reduce art.",
-    "postalCode": "Physical management she fish land director. Name nothing beyond kitchen.",
-    "postOfficeBoxNumber": "Rock economic add physical power. Away physical size woman garden surface foreign."
-  },
-  "areaServed": "Over choice nearly they budget find. Power others environmental since page brother party house.",
-  "rt": [
-    "oic.r.pvconnectionterminal",
-    "oic.r.pvconnectionterminal"
-  ],
-  "ratedarrayvoltage": {
-    "type": "Property",
-    "value": 391.0
-  },
-  "ratedarraycurrent": {
-    "type": "Property",
-    "value": 169.2
-  },
-  "arrayvoltage": {
-    "type": "Property",
-    "value": 763.9
-  },
-  "arraycurrent": {
-    "type": "Property",
-    "value": 519.0
-  },
-  "leakagecurrent": {
-    "type": "Property",
-    "value": 313.0
-  },
-  "insulationresistance": {
-    "type": "Property",
-    "value": 348.8
-  },
-  "timestamp": "1979-06-05T23:42:36Z",
-  "n": "Reason movie student performance. Best gas including. Huge food deep relate raise fear.",
-  "if": [
-    "oic.if.baseline",
-    "oic.if.s"
-  ],
-  "type": "PVArrayConnectionTerminal",
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
