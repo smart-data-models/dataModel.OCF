@@ -1,67 +1,68 @@
 {
-  "id": "urn:ngsi-ld:CO:id:YQVH:59080054",
-  "dateCreated": "2009-04-24T13:29:20Z",
-  "dateModified": "2001-09-01T12:10:21Z",
-  "source": "Year sort eat student happen federal message.",
-  "name": "Manager ever future him. Executive school list final consider increase staff.",
-  "alternateName": "Fall firm here lay. Call management dinner.",
-  "description": "Kid evening four goal lay. Down trip third cell or over class.",
-  "dataProvider": "Which color human at main. Offer exactly next field soldier move. Site bad should who minute.",
-  "owner": [
-    "urn:ngsi-ld:CO:items:RGMJ:62379010",
-    "urn:ngsi-ld:CO:items:GJQM:91546810"
-  ],
-  "seeAlso": [
-    "urn:ngsi-ld:CO:items:KLIZ:44237049",
-    "urn:ngsi-ld:CO:items:CTKA:51545589"
-  ],
-  "location": {
-    "type": "Point",
-    "coordinates": [
-      -65.6347215,
-      -20.584982
+    "id": "urn:ngsi-ld:CO:id:YQVH:59080054",
+    "dateCreated": "2009-04-24T13:29:20Z",
+    "dateModified": "2001-09-01T12:10:21Z",
+    "source": "Year sort eat student happen federal message.",
+    "name": "Manager ever future him. Executive school list final consider increase staff.",
+    "alternateName": "Fall firm here lay. Call management dinner.",
+    "description": "Kid evening four goal lay. Down trip third cell or over class.",
+    "dataProvider": "Which color human at main. Offer exactly next field soldier move. Site bad should who minute.",
+    "owner": [
+        "urn:ngsi-ld:CO:items:RGMJ:62379010",
+        "urn:ngsi-ld:CO:items:GJQM:91546810"
+    ],
+    "seeAlso": [
+        "urn:ngsi-ld:CO:items:KLIZ:44237049",
+        "urn:ngsi-ld:CO:items:CTKA:51545589"
+    ],
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            -65.6347215,
+            -20.584982
+        ]
+    },
+    "address": {
+        "streetAddress": "Million bill shoulder writer respond type television. Group it partner recently in. Believe class face wonder heart.",
+        "addressLocality": "Not someone second evening with north down. Anyone and relate challenge cell reveal long news. Win TV today side kid public. Rest quite have face partner act senior.",
+        "addressRegion": "Whether floor standard rate carry great. Something miss partner live democratic product camera.",
+        "addressCountry": "Social member late them offer argue military Mrs. Safe as as report responsibility anything stuff. Seat happy both listen. Provide true leave business.",
+        "postalCode": "Dream must federal build. Grow nice company thus.",
+        "postOfficeBoxNumber": "Under have majority while quite environment single anyone. Finally international possible record practice ball so. Maintain keep letter entire last. Notice loss some important share computer heart chair."
+    },
+    "areaServed": "Know author property imagine event relate. Someone either pattern particularly thank. Indicate east by value single yet. Happen PM certain tough.",
+    "rt": [
+        "oic.r.sensor.carbonmonoxide",
+        "oic.r.sensor.carbonmonoxide"
+    ],
+    "value": {
+        "type": "Property",
+        "value": false
+    },
+    "measurement": {
+        "type": "Property",
+        "value": 629.1
+    },
+    "precision": {
+        "type": "Property",
+        "value": 771.1
+    },
+    "n": "Serve main throughout agent. End perhaps thus policy five budget indeed history.",
+    "range": [
+        904.9,
+        165.3
+    ],
+    "step": {
+        "type": "Property",
+        "value": 848.4
+    },
+    "if": [
+        "oic.if.s",
+        "oic.if.s"
+    ],
+    "type": "CO",
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "address": {
-    "streetAddress": "Million bill shoulder writer respond type television. Group it partner recently in. Believe class face wonder heart.",
-    "addressLocality": "Not someone second evening with north down. Anyone and relate challenge cell reveal long news. Win TV today side kid public. Rest quite have face partner act senior.",
-    "addressRegion": "Whether floor standard rate carry great. Something miss partner live democratic product camera.",
-    "addressCountry": "Social member late them offer argue military Mrs. Safe as as report responsibility anything stuff. Seat happy both listen. Provide true leave business.",
-    "postalCode": "Dream must federal build. Grow nice company thus.",
-    "postOfficeBoxNumber": "Under have majority while quite environment single anyone. Finally international possible record practice ball so. Maintain keep letter entire last. Notice loss some important share computer heart chair."
-  },
-  "areaServed": "Know author property imagine event relate. Someone either pattern particularly thank. Indicate east by value single yet. Happen PM certain tough.",
-  "rt": [
-    "oic.r.sensor.carbonmonoxide",
-    "oic.r.sensor.carbonmonoxide"
-  ],
-  "value": {
-    "type": "Property",
-    "value": false
-  },
-  "measurement": {
-    "type": "Property",
-    "value": 629.1
-  },
-  "precision": {
-    "type": "Property",
-    "value": 771.1
-  },
-  "n": "Serve main throughout agent. End perhaps thus policy five budget indeed history.",
-  "range": [
-    904.9,
-    165.3
-  ],
-  "step": {
-    "type": "Property",
-    "value": 848.4
-  },
-  "if": [
-    "oic.if.s",
-    "oic.if.s"
-  ],
-  "type": "CO",
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
