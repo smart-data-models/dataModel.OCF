@@ -1,78 +1,79 @@
 {
-  "id": "urn:ngsi-ld:magneticFieldDirection:id:NFKN:79775431",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1978-04-22T15:09:39Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2001-12-15T20:03:11Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "Sometimes style several above. Million without help position. While among save billion."
-  },
-  "name": {
-    "type": "Property",
-    "value": "My very family agent time any. Series left show."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Give rest trade spend. Somebody tonight suffer point. List owner cold big."
-  },
-  "description": {
-    "type": "Property",
-    "value": "People which serve concern friend they on which. Near plant name nothing. Law because nice nice truth."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Pretty possible simply send later because huge image. Someone budget else their boy because focus far. Itself defense something close."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:magneticFieldDirection:items:EVHH:20236404",
-      "urn:ngsi-ld:magneticFieldDirection:items:ABFE:60567337"
+    "id": "urn:ngsi-ld:magneticFieldDirection:id:NFKN:79775431",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1978-04-22T15:09:39Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2001-12-15T20:03:11Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "Sometimes style several above. Million without help position. While among save billion."
+    },
+    "name": {
+        "type": "Property",
+        "value": "My very family agent time any. Series left show."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Give rest trade spend. Somebody tonight suffer point. List owner cold big."
+    },
+    "description": {
+        "type": "Property",
+        "value": "People which serve concern friend they on which. Near plant name nothing. Law because nice nice truth."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Pretty possible simply send later because huge image. Someone budget else their boy because focus far. Itself defense something close."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:magneticFieldDirection:items:EVHH:20236404",
+            "urn:ngsi-ld:magneticFieldDirection:items:ABFE:60567337"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:magneticFieldDirection:items:NYGS:71718992"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                31.166223,
+                91.878466
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "Father church agreement. Risk store weight put tonight bed. Through fly box soldier you together.",
+            "addressLocality": "Quality team owner law method outside bag. Food hand effect wear industry physical.",
+            "addressRegion": "Fund community she memory oil financial. History statement listen world build bill help after.",
+            "addressCountry": "Bank some white eat.",
+            "postalCode": "Which Democrat effect explain work hand produce. Attorney ball method sea smile anyone history.",
+            "postOfficeBoxNumber": "Southern find why. Course admit year get point. Street class apply where law."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Several candidate whatever increase. Present leave case performance here."
+    },
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:magneticFieldDirection:items:NYGS:71718992"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        31.166223,
-        91.878466
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "Father church agreement. Risk store weight put tonight bed. Through fly box soldier you together.",
-      "addressLocality": "Quality team owner law method outside bag. Food hand effect wear industry physical.",
-      "addressRegion": "Fund community she memory oil financial. History statement listen world build bill help after.",
-      "addressCountry": "Bank some white eat.",
-      "postalCode": "Which Democrat effect explain work hand produce. Attorney ball method sea smile anyone history.",
-      "postOfficeBoxNumber": "Southern find why. Course admit year get point. Street class apply where law."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Several candidate whatever increase. Present leave case performance here."
-  },
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
