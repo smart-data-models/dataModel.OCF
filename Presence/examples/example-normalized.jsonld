@@ -1,78 +1,79 @@
 {
-  "id": "urn:ngsi-ld:Presence:id:HOZJ:52421725",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1977-07-31T22:23:39Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1977-07-07T03:50:10Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "Year account notice relationship behind reason."
-  },
-  "name": {
-    "type": "Property",
-    "value": "Hear daughter indeed station paper find. Field strategy down much sport character program."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Leader environmental throw order power east fish. Group agree camera their draw personal even. Movement true though stage audience clear."
-  },
-  "description": {
-    "type": "Property",
-    "value": "Music same authority simple age suddenly. Ball yeah much himself employee finally."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Study reason security loss often especially."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:Presence:items:SXTP:56856707",
-      "urn:ngsi-ld:Presence:items:OXIC:88608101"
+    "id": "urn:ngsi-ld:Presence:id:HOZJ:52421725",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1977-07-31T22:23:39Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1977-07-07T03:50:10Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "Year account notice relationship behind reason."
+    },
+    "name": {
+        "type": "Property",
+        "value": "Hear daughter indeed station paper find. Field strategy down much sport character program."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Leader environmental throw order power east fish. Group agree camera their draw personal even. Movement true though stage audience clear."
+    },
+    "description": {
+        "type": "Property",
+        "value": "Music same authority simple age suddenly. Ball yeah much himself employee finally."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Study reason security loss often especially."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:Presence:items:SXTP:56856707",
+            "urn:ngsi-ld:Presence:items:OXIC:88608101"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:Presence:items:WGDM:46942839"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -33.2143295,
+                106.859226
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "Evening door data stand positive kind. Discover eye story let throw sometimes natural. Wear matter cultural risk grow.",
+            "addressLocality": "Vote face hospital baby program door. Green wide benefit last spring believe single.",
+            "addressRegion": "Pass but produce make address debate. Imagine third research if somebody defense instead. Former production vote cover wife develop strategy.",
+            "addressCountry": "Stage understand first give one less bad. Fine machine expect although.",
+            "postalCode": "Site ok chance question water Republican it. Also so down stuff. Actually soldier behavior three trip certain simply father. Half mouth kitchen strategy.",
+            "postOfficeBoxNumber": "Which various woman a wish."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Radio lay president this matter theory. Box per site call. Respond manager hundred interview choice purpose."
+    },
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:Presence:items:WGDM:46942839"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        -33.2143295,
-        106.859226
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "Evening door data stand positive kind. Discover eye story let throw sometimes natural. Wear matter cultural risk grow.",
-      "addressLocality": "Vote face hospital baby program door. Green wide benefit last spring believe single.",
-      "addressRegion": "Pass but produce make address debate. Imagine third research if somebody defense instead. Former production vote cover wife develop strategy.",
-      "addressCountry": "Stage understand first give one less bad. Fine machine expect although.",
-      "postalCode": "Site ok chance question water Republican it. Also so down stuff. Actually soldier behavior three trip certain simply father. Half mouth kitchen strategy.",
-      "postOfficeBoxNumber": "Which various woman a wish."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Radio lay president this matter theory. Box per site call. Respond manager hundred interview choice purpose."
-  },
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
