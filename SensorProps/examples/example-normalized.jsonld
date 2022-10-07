@@ -1,119 +1,120 @@
 {
-  "id": "urn:ngsi-ld:SensorProps:id:KXOX:86098583",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1984-12-31T17:02:03Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2006-04-22T23:48:28Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "Have local modern firm. Mr total not election enough."
-  },
-  "name": {
-    "type": "Property",
-    "value": "Indicate crime compare partner. Marriage officer she old sign view act husband."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Ahead imagine health station fear. Voice share society despite himself both. Style plan green pattern into up animal."
-  },
-  "description": {
-    "type": "Property",
-    "value": "City way economic hit make cell goal. Place apply administration little prevent. Security same teacher police same until art cold."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Apply job work discover maintain. Feel father prepare positive. Material ask compare yourself."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:SensorProps:items:VLUH:05879065",
-      "urn:ngsi-ld:SensorProps:items:XEFK:27739524"
+    "id": "urn:ngsi-ld:SensorProps:id:KXOX:86098583",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1984-12-31T17:02:03Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2006-04-22T23:48:28Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "Have local modern firm. Mr total not election enough."
+    },
+    "name": {
+        "type": "Property",
+        "value": "Indicate crime compare partner. Marriage officer she old sign view act husband."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Ahead imagine health station fear. Voice share society despite himself both. Style plan green pattern into up animal."
+    },
+    "description": {
+        "type": "Property",
+        "value": "City way economic hit make cell goal. Place apply administration little prevent. Security same teacher police same until art cold."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Apply job work discover maintain. Feel father prepare positive. Material ask compare yourself."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:SensorProps:items:VLUH:05879065",
+            "urn:ngsi-ld:SensorProps:items:XEFK:27739524"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:SensorProps:items:JNTX:91967149"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -38.0434205,
+                -34.086759
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "Agree best tell condition standard. Care rock surface organization various field. Receive fly reveal pass owner.",
+            "addressLocality": "Argue more poor board bring individual. Detail while next model no. Big ball data daughter region sister.",
+            "addressRegion": "Ready certain him spend save me Mrs. Main pattern second place. Score network share remain production step task major.",
+            "addressCountry": "Wife player good. Activity place meeting who western bring town.",
+            "postalCode": "Hour effort marriage talk. Floor quite call stuff tonight ever. Energy win improve tell miss eye just travel.",
+            "postOfficeBoxNumber": "Window especially bad. Either try development science stand on. Despite per lose fill."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Quite mind draw decide. Win my say office computer pressure."
+    },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.sensor.props"
+        ]
+    },
+    "silenttime": {
+        "type": "Property",
+        "value": 599
+    },
+    "sensitivity": {
+        "type": "Property",
+        "value": 40.5
+    },
+    "n": {
+        "type": "Property",
+        "value": "Better hospital offer indeed."
+    },
+    "range": {
+        "type": "Property",
+        "value": [
+            818.0,
+            689.1
+        ]
+    },
+    "step": {
+        "type": "Property",
+        "value": 580.4
+    },
+    "precision": {
+        "type": "Property",
+        "value": 698.4
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.rw",
+            "oic.if.rw"
+        ]
+    },
+    "type": "SensorProps",
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:SensorProps:items:JNTX:91967149"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        -38.0434205,
-        -34.086759
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "Agree best tell condition standard. Care rock surface organization various field. Receive fly reveal pass owner.",
-      "addressLocality": "Argue more poor board bring individual. Detail while next model no. Big ball data daughter region sister.",
-      "addressRegion": "Ready certain him spend save me Mrs. Main pattern second place. Score network share remain production step task major.",
-      "addressCountry": "Wife player good. Activity place meeting who western bring town.",
-      "postalCode": "Hour effort marriage talk. Floor quite call stuff tonight ever. Energy win improve tell miss eye just travel.",
-      "postOfficeBoxNumber": "Window especially bad. Either try development science stand on. Despite per lose fill."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Quite mind draw decide. Win my say office computer pressure."
-  },
-  "rt": {
-    "type": "Property",
-    "value": [
-      "oic.r.sensor.props"
-    ]
-  },
-  "silenttime": {
-    "type": "Property",
-    "value": 599
-  },
-  "sensitivity": {
-    "type": "Property",
-    "value": 40.5
-  },
-  "n": {
-    "type": "Property",
-    "value": "Better hospital offer indeed."
-  },
-  "range": {
-    "type": "Property",
-    "value": [
-      818.0,
-      689.1
-    ]
-  },
-  "step": {
-    "type": "Property",
-    "value": 580.4
-  },
-  "precision": {
-    "type": "Property",
-    "value": 698.4
-  },
-  "if": {
-    "type": "Property",
-    "value": [
-      "oic.if.rw",
-      "oic.if.rw"
-    ]
-  },
-  "type": "SensorProps",
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
