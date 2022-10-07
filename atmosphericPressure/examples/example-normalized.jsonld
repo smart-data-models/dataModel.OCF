@@ -1,115 +1,116 @@
 {
-  "id": "urn:ngsi-ld:atmosphericPressure:id:RJQY:59820312",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2007-06-26T17:29:21Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2011-06-17T02:00:43Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "Teach Mrs easy fight across reason himself. Former section why today stay. High way official structure."
-  },
-  "name": {
-    "type": "Property",
-    "value": "Little compare take education. Dinner lose western feel. Next list since then."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Door recently drive."
-  },
-  "description": {
-    "type": "Property",
-    "value": "End consider financial hope. Mouth south start single strong. Doctor itself popular choose give possible into."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Share cover road fish think investment account."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:atmosphericPressure:items:HDEN:32343695",
-      "urn:ngsi-ld:atmosphericPressure:items:RVRC:69480931"
+    "id": "urn:ngsi-ld:atmosphericPressure:id:RJQY:59820312",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2007-06-26T17:29:21Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2011-06-17T02:00:43Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "Teach Mrs easy fight across reason himself. Former section why today stay. High way official structure."
+    },
+    "name": {
+        "type": "Property",
+        "value": "Little compare take education. Dinner lose western feel. Next list since then."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Door recently drive."
+    },
+    "description": {
+        "type": "Property",
+        "value": "End consider financial hope. Mouth south start single strong. Doctor itself popular choose give possible into."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Share cover road fish think investment account."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:atmosphericPressure:items:HDEN:32343695",
+            "urn:ngsi-ld:atmosphericPressure:items:RVRC:69480931"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:atmosphericPressure:items:PRFC:27292619"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -11.8938735,
+                11.02388
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "Six boy would produce. Beyond forward ability much resource.",
+            "addressLocality": "Catch heavy usually phone whom property every.",
+            "addressRegion": "Visit response direction statement feeling. Medical new matter a president them.",
+            "addressCountry": "Institution recent consider clearly and argue indicate. Tell general wear keep arm relationship hundred.",
+            "postalCode": "American campaign too at view card. School word those score in. Article table size near crime investment.",
+            "postOfficeBoxNumber": "Particularly skin research whether goal need. Last court position politics sell."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Game education structure force fine resource. Expert rise board sometimes. Wrong simple a public study get."
+    },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.sensor.atmosphericpressure"
+        ]
+    },
+    "atmosphericPressure": {
+        "type": "Property",
+        "value": 904.6
+    },
+    "n": {
+        "type": "Property",
+        "value": "Factor charge often artist husband wall region. Continue role particularly top. Of song attorney week force continue because few."
+    },
+    "precision": {
+        "type": "Property",
+        "value": 953.2
+    },
+    "range": {
+        "type": "Property",
+        "value": [
+            801.2,
+            869.8
+        ]
+    },
+    "step": {
+        "type": "Property",
+        "value": 620.7
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.baseline",
+            "oic.if.baseline"
+        ]
+    },
+    "type": "atmosphericPressure",
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:atmosphericPressure:items:PRFC:27292619"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        -11.8938735,
-        11.02388
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "Six boy would produce. Beyond forward ability much resource.",
-      "addressLocality": "Catch heavy usually phone whom property every.",
-      "addressRegion": "Visit response direction statement feeling. Medical new matter a president them.",
-      "addressCountry": "Institution recent consider clearly and argue indicate. Tell general wear keep arm relationship hundred.",
-      "postalCode": "American campaign too at view card. School word those score in. Article table size near crime investment.",
-      "postOfficeBoxNumber": "Particularly skin research whether goal need. Last court position politics sell."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Game education structure force fine resource. Expert rise board sometimes. Wrong simple a public study get."
-  },
-  "rt": {
-    "type": "Property",
-    "value": [
-      "oic.r.sensor.atmosphericpressure"
-    ]
-  },
-  "atmosphericPressure": {
-    "type": "Property",
-    "value": 904.6
-  },
-  "n": {
-    "type": "Property",
-    "value": "Factor charge often artist husband wall region. Continue role particularly top. Of song attorney week force continue because few."
-  },
-  "precision": {
-    "type": "Property",
-    "value": 953.2
-  },
-  "range": {
-    "type": "Property",
-    "value": [
-      801.2,
-      869.8
-    ]
-  },
-  "step": {
-    "type": "Property",
-    "value": 620.7
-  },
-  "if": {
-    "type": "Property",
-    "value": [
-      "oic.if.baseline",
-      "oic.if.baseline"
-    ]
-  },
-  "type": "atmosphericPressure",
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
