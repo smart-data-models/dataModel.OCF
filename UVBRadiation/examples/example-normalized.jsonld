@@ -1,78 +1,79 @@
 {
-  "id": "urn:ngsi-ld:UVBRadiation:id:LKJP:50948325",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1995-01-18T23:27:40Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1984-12-17T17:18:49Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "Here start blood health prove challenge perform. Idea another watch the possible."
-  },
-  "name": {
-    "type": "Property",
-    "value": "Trip we view. Current now same continue one moment social."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Particularly make evening production. Reduce major above institution image. Left law every include protect several."
-  },
-  "description": {
-    "type": "Property",
-    "value": "Call stock economic. Leave pick stuff usually."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Region author doctor might. Stop financial realize admit picture father find."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:UVBRadiation:items:LBQI:53524326",
-      "urn:ngsi-ld:UVBRadiation:items:HXII:53345543"
+    "id": "urn:ngsi-ld:UVBRadiation:id:LKJP:50948325",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1995-01-18T23:27:40Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1984-12-17T17:18:49Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "Here start blood health prove challenge perform. Idea another watch the possible."
+    },
+    "name": {
+        "type": "Property",
+        "value": "Trip we view. Current now same continue one moment social."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Particularly make evening production. Reduce major above institution image. Left law every include protect several."
+    },
+    "description": {
+        "type": "Property",
+        "value": "Call stock economic. Leave pick stuff usually."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Region author doctor might. Stop financial realize admit picture father find."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:UVBRadiation:items:LBQI:53524326",
+            "urn:ngsi-ld:UVBRadiation:items:HXII:53345543"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:UVBRadiation:items:YIHE:58894024"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                52.194558,
+                6.329331
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "Study accept according teach effect it able be. It crime south chance together floor.",
+            "addressLocality": "Force recently particular these remain find want. Moment relate send structure moment final business.",
+            "addressRegion": "Sign approach phone picture. Treat lay her hold both.",
+            "addressCountry": "From east phone bar adult chance. Discussion his leg today each wear amount.",
+            "postalCode": "True cost consider. Rest long pull treatment improve.",
+            "postOfficeBoxNumber": "Point perform team care technology. Away break training then. Born beautiful trouble single fall respond."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "East share system increase interesting. Friend box positive report concern wait."
+    },
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:UVBRadiation:items:YIHE:58894024"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        52.194558,
-        6.329331
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "Study accept according teach effect it able be. It crime south chance together floor.",
-      "addressLocality": "Force recently particular these remain find want. Moment relate send structure moment final business.",
-      "addressRegion": "Sign approach phone picture. Treat lay her hold both.",
-      "addressCountry": "From east phone bar adult chance. Discussion his leg today each wear amount.",
-      "postalCode": "True cost consider. Rest long pull treatment improve.",
-      "postOfficeBoxNumber": "Point perform team care technology. Away break training then. Born beautiful trouble single fall respond."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "East share system increase interesting. Friend box positive report concern wait."
-  },
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
