@@ -1,118 +1,119 @@
 {
-  "id": "urn:ngsi-ld:CO:id:TLMT:85397772",
-  "dateCreated": {
-    "type": "Property",
+    "id": "urn:ngsi-ld:CO:id:TLMT:85397772",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1993-02-12T18:56:03Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2003-12-05T22:57:02Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "He top today program. Strong sign treatment quickly bank."
+    },
+    "name": {
+        "type": "Property",
+        "value": "Manager whatever station mother. Possible across wind before."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "State stand main practice kid. Require less its own mouth. International movement have study arrive fight fact ground. Need source most resource practice old American."
+    },
+    "description": {
+        "type": "Property",
+        "value": "Argue body subject daughter us. Task have condition side bad program shoulder. Situation personal suffer eat man production soldier."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Have the young point education agree. Whether crime question individual personal now social."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:CO:items:PMDY:07690464",
+            "urn:ngsi-ld:CO:items:KZPY:00464484"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:CO:items:UUCE:15603427"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -23.156593,
+                70.781554
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "Base coach himself marriage though population. Statement ready along find truth cover drop. People daughter teacher contain apply.",
+            "addressLocality": "Someone four particularly use morning environment next. Describe reduce think minute door key hard. Culture stock own authority shoulder.",
+            "addressRegion": "Will down assume consider high doctor street. Bad five return bit their challenge know.",
+            "addressCountry": "Wall card kid peace fly exactly performance. Hair method medical window whose outside. Image up successful usually nice.",
+            "postalCode": "Cover compare long left itself. Sell up term. A bit teach space recognize.",
+            "postOfficeBoxNumber": "Say bill computer often difference trade."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Condition certain rest determine still soldier write. Energy low not sit lot care class. Test little social."
+    },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.sensor.carbonmonoxide"
+        ]
+    },
     "value": {
-      "@type": "DateTime",
-      "@value": "1993-02-12T18:56:03Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2003-12-05T22:57:02Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "He top today program. Strong sign treatment quickly bank."
-  },
-  "name": {
-    "type": "Property",
-    "value": "Manager whatever station mother. Possible across wind before."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "State stand main practice kid. Require less its own mouth. International movement have study arrive fight fact ground. Need source most resource practice old American."
-  },
-  "description": {
-    "type": "Property",
-    "value": "Argue body subject daughter us. Task have condition side bad program shoulder. Situation personal suffer eat man production soldier."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Have the young point education agree. Whether crime question individual personal now social."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:CO:items:PMDY:07690464",
-      "urn:ngsi-ld:CO:items:KZPY:00464484"
+        "type": "Property",
+        "value": true
+    },
+    "measurement": {
+        "type": "Property",
+        "value": 235.2
+    },
+    "precision": {
+        "type": "Property",
+        "value": 624.8
+    },
+    "n": {
+        "type": "Property",
+        "value": "Down see reach. Win physical want arrive financial. Same I sometimes pass."
+    },
+    "range": {
+        "type": "Property",
+        "value": [
+            341.7,
+            185.5
+        ]
+    },
+    "step": {
+        "type": "Property",
+        "value": 259.2
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.s"
+        ]
+    },
+    "type": "CO",
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:CO:items:UUCE:15603427"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        -23.156593,
-        70.781554
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "Base coach himself marriage though population. Statement ready along find truth cover drop. People daughter teacher contain apply.",
-      "addressLocality": "Someone four particularly use morning environment next. Describe reduce think minute door key hard. Culture stock own authority shoulder.",
-      "addressRegion": "Will down assume consider high doctor street. Bad five return bit their challenge know.",
-      "addressCountry": "Wall card kid peace fly exactly performance. Hair method medical window whose outside. Image up successful usually nice.",
-      "postalCode": "Cover compare long left itself. Sell up term. A bit teach space recognize.",
-      "postOfficeBoxNumber": "Say bill computer often difference trade."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Condition certain rest determine still soldier write. Energy low not sit lot care class. Test little social."
-  },
-  "rt": {
-    "type": "Property",
-    "value": [
-      "oic.r.sensor.carbonmonoxide"
-    ]
-  },
-  "value": {
-    "type": "Property",
-    "value": true
-  },
-  "measurement": {
-    "type": "Property",
-    "value": 235.2
-  },
-  "precision": {
-    "type": "Property",
-    "value": 624.8
-  },
-  "n": {
-    "type": "Property",
-    "value": "Down see reach. Win physical want arrive financial. Same I sometimes pass."
-  },
-  "range": {
-    "type": "Property",
-    "value": [
-      341.7,
-      185.5
-    ]
-  },
-  "step": {
-    "type": "Property",
-    "value": 259.2
-  },
-  "if": {
-    "type": "Property",
-    "value": [
-      "oic.if.s"
-    ]
-  },
-  "type": "CO",
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
