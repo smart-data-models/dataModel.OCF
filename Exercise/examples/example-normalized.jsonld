@@ -1,114 +1,115 @@
 {
-  "id": "urn:ngsi-ld:Exercise:id:BICD:19768156",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2010-02-12T20:49:40Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1987-05-28T10:25:55Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "Total heart table before because. Capital detail show do. Front history mention address."
-  },
-  "name": {
-    "type": "Property",
-    "value": "Must believe professional arrive. Rich suggest bad. Participant chance one."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Choose gun local charge almost low. Science fire life."
-  },
-  "description": {
-    "type": "Property",
-    "value": "Quite already others oil sit type. Government eye bit cultural sort. Store fine have when value drop population. Side establish debate feeling herself."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Reason realize develop simply democratic about our. Relationship man resource figure. Letter fear maybe buy age member."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:Exercise:items:EVOS:60128818",
-      "urn:ngsi-ld:Exercise:items:DQRS:06073019"
+    "id": "urn:ngsi-ld:Exercise:id:BICD:19768156",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2010-02-12T20:49:40Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1987-05-28T10:25:55Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "Total heart table before because. Capital detail show do. Front history mention address."
+    },
+    "name": {
+        "type": "Property",
+        "value": "Must believe professional arrive. Rich suggest bad. Participant chance one."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Choose gun local charge almost low. Science fire life."
+    },
+    "description": {
+        "type": "Property",
+        "value": "Quite already others oil sit type. Government eye bit cultural sort. Store fine have when value drop population. Side establish debate feeling herself."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Reason realize develop simply democratic about our. Relationship man resource figure. Letter fear maybe buy age member."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:Exercise:items:EVOS:60128818",
+            "urn:ngsi-ld:Exercise:items:DQRS:06073019"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:Exercise:items:DSHC:77333553"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -24.634838,
+                50.1582
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "Service day media energy. Item instead minute this woman.",
+            "addressLocality": "As popular people make pay. Democratic authority pressure allow other.",
+            "addressRegion": "Artist seek significant.",
+            "addressCountry": "Exactly serve sea president new.",
+            "postalCode": "Someone move ahead painting. Talk tough senior manager young point. Campaign yes central break off.",
+            "postOfficeBoxNumber": "Real training loss so bad majority."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Manage left letter. House group without girl laugh out above."
+    },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.glucose.exercise"
+        ]
+    },
+    "exercise": {
+        "type": "Property",
+        "value": 75.1
+    },
+    "range": {
+        "type": "Property",
+        "value": [
+            936.3,
+            509.9
+        ]
+    },
+    "step": {
+        "type": "Property",
+        "value": 992.3
+    },
+    "precision": {
+        "type": "Property",
+        "value": 939.2
+    },
+    "n": {
+        "type": "Property",
+        "value": "Require foot practice chance much receive. Pull TV industry happy tree pretty American. Himself game ask short wide beat."
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.s"
+        ]
+    },
+    "type": "Exercise",
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:Exercise:items:DSHC:77333553"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        -24.634838,
-        50.1582
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "Service day media energy. Item instead minute this woman.",
-      "addressLocality": "As popular people make pay. Democratic authority pressure allow other.",
-      "addressRegion": "Artist seek significant.",
-      "addressCountry": "Exactly serve sea president new.",
-      "postalCode": "Someone move ahead painting. Talk tough senior manager young point. Campaign yes central break off.",
-      "postOfficeBoxNumber": "Real training loss so bad majority."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Manage left letter. House group without girl laugh out above."
-  },
-  "rt": {
-    "type": "Property",
-    "value": [
-      "oic.r.glucose.exercise"
-    ]
-  },
-  "exercise": {
-    "type": "Property",
-    "value": 75.1
-  },
-  "range": {
-    "type": "Property",
-    "value": [
-      936.3,
-      509.9
-    ]
-  },
-  "step": {
-    "type": "Property",
-    "value": 992.3
-  },
-  "precision": {
-    "type": "Property",
-    "value": 939.2
-  },
-  "n": {
-    "type": "Property",
-    "value": "Require foot practice chance much receive. Pull TV industry happy tree pretty American. Himself game ask short wide beat."
-  },
-  "if": {
-    "type": "Property",
-    "value": [
-      "oic.if.s"
-    ]
-  },
-  "type": "Exercise",
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
