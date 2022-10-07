@@ -1,123 +1,124 @@
 {
-  "id": "urn:ngsi-ld:DRLC:id:XRYK:72373882",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1984-11-10T01:19:28Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2019-04-01T13:43:00Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "Role seat coach. Everything if kid spend really single. Song together shoulder heavy walk between hospital."
-  },
-  "name": {
-    "type": "Property",
-    "value": "Whose choice best population speak newspaper. Read four citizen manage drop."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Recently a because impact create. Peace common but name notice hundred affect. Research question campaign black take great."
-  },
-  "description": {
-    "type": "Property",
-    "value": "Pull country consider heavy pretty. American produce evening by interview finish. He leg war fear."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "He thank add second pressure teach forward rate. Picture force long avoid figure would. Throw high direction type vote."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:DRLC:items:RAVC:41248553",
-      "urn:ngsi-ld:DRLC:items:JIRT:96354185"
+    "id": "urn:ngsi-ld:DRLC:id:XRYK:72373882",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1984-11-10T01:19:28Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2019-04-01T13:43:00Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "Role seat coach. Everything if kid spend really single. Song together shoulder heavy walk between hospital."
+    },
+    "name": {
+        "type": "Property",
+        "value": "Whose choice best population speak newspaper. Read four citizen manage drop."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Recently a because impact create. Peace common but name notice hundred affect. Research question campaign black take great."
+    },
+    "description": {
+        "type": "Property",
+        "value": "Pull country consider heavy pretty. American produce evening by interview finish. He leg war fear."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "He thank add second pressure teach forward rate. Picture force long avoid figure would. Throw high direction type vote."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:DRLC:items:RAVC:41248553",
+            "urn:ngsi-ld:DRLC:items:JIRT:96354185"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:DRLC:items:WSDX:92810352"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                5.129012,
+                103.296499
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "Unit admit common seem power office find. Indeed number accept range million hotel use. Government especially prevent other growth color certainly. Policy these simple position check simply letter.",
+            "addressLocality": "Year century as ok. Hotel treatment stop quickly computer. Least picture another.",
+            "addressRegion": "Yes unit century hair ok live part sell. Quickly road town large think return.",
+            "addressCountry": "Successful prove seem building close front different always. Statement real science anyone realize quality.",
+            "postalCode": "During table either after him religious. Hard heavy anyone modern.",
+            "postOfficeBoxNumber": "You church black. Hear game ok treatment prepare item."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Of owner hold over them wonder. Chance represent at news country."
+    },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.energy.drlc"
+        ]
+    },
+    "start": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2010-05-18T22:28:57Z"
+        }
+    },
+    "duration": {
+        "type": "Property",
+        "value": 88
+    },
+    "override": {
+        "type": "Property",
+        "value": true
+    },
+    "DRType": {
+        "type": "Property",
+        "value": 118
+    },
+    "drlevel": {
+        "type": "Property",
+        "value": 1
+    },
+    "mandate": {
+        "type": "Property",
+        "value": false
+    },
+    "n": {
+        "type": "Property",
+        "value": "In do instead style number resource. Truth game official want."
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.a",
+            "oic.if.a"
+        ]
+    },
+    "type": "DRLC",
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:DRLC:items:WSDX:92810352"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        5.129012,
-        103.296499
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "Unit admit common seem power office find. Indeed number accept range million hotel use. Government especially prevent other growth color certainly. Policy these simple position check simply letter.",
-      "addressLocality": "Year century as ok. Hotel treatment stop quickly computer. Least picture another.",
-      "addressRegion": "Yes unit century hair ok live part sell. Quickly road town large think return.",
-      "addressCountry": "Successful prove seem building close front different always. Statement real science anyone realize quality.",
-      "postalCode": "During table either after him religious. Hard heavy anyone modern.",
-      "postOfficeBoxNumber": "You church black. Hear game ok treatment prepare item."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Of owner hold over them wonder. Chance represent at news country."
-  },
-  "rt": {
-    "type": "Property",
-    "value": [
-      "oic.r.energy.drlc"
-    ]
-  },
-  "start": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2010-05-18T22:28:57Z"
-    }
-  },
-  "duration": {
-    "type": "Property",
-    "value": 88
-  },
-  "override": {
-    "type": "Property",
-    "value": true
-  },
-  "DRType": {
-    "type": "Property",
-    "value": 118
-  },
-  "drlevel": {
-    "type": "Property",
-    "value": 1
-  },
-  "mandate": {
-    "type": "Property",
-    "value": false
-  },
-  "n": {
-    "type": "Property",
-    "value": "In do instead style number resource. Truth game official want."
-  },
-  "if": {
-    "type": "Property",
-    "value": [
-      "oic.if.a",
-      "oic.if.a"
-    ]
-  },
-  "type": "DRLC",
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
