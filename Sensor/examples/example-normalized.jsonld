@@ -1,118 +1,119 @@
 {
-  "id": "urn:ngsi-ld:Sensor:id:BIZN:29586189",
-  "dateCreated": {
-    "type": "Property",
+    "id": "urn:ngsi-ld:Sensor:id:BIZN:29586189",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1970-01-29T22:09:55Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1990-10-17T03:52:28Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "He suddenly little every list wait. Process third yeah option Congress first form."
+    },
+    "name": {
+        "type": "Property",
+        "value": "Firm lot appear war program office. Stage if receive play often act. Operation whole within method technology."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Care gas recently on response item. Finish become week speak memory west may."
+    },
+    "description": {
+        "type": "Property",
+        "value": "Experience window source. Effect perform similar staff two. Realize manage board civil music."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Campaign general interesting leave sing hotel. Every all inside now whose air. Recent decade trial."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:Sensor:items:OBUU:26432740",
+            "urn:ngsi-ld:Sensor:items:SQLE:55745312"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:Sensor:items:WCUC:42787397"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -24.2466645,
+                -141.953472
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "Use more site wear loss. Offer anyone per any.",
+            "addressLocality": "Value try hour various. Organization executive scientist society. Ago bring edge check wide.",
+            "addressRegion": "Read be scene cell ok himself soldier example.",
+            "addressCountry": "Shake while animal. Author view respond former thousand every leave. Race business free grow.",
+            "postalCode": "Family attack hospital summer western her. Some should sell treatment mean. Down a identify fine job.",
+            "postOfficeBoxNumber": "Natural tonight such concern more effect. Reason theory figure activity body head. Direction past sit everyone ahead can."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Face test set go walk magazine interesting. Staff raise ready another north. Scientist surface specific."
+    },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.sensor"
+        ]
+    },
     "value": {
-      "@type": "DateTime",
-      "@value": "1970-01-29T22:09:55Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1990-10-17T03:52:28Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "He suddenly little every list wait. Process third yeah option Congress first form."
-  },
-  "name": {
-    "type": "Property",
-    "value": "Firm lot appear war program office. Stage if receive play often act. Operation whole within method technology."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Care gas recently on response item. Finish become week speak memory west may."
-  },
-  "description": {
-    "type": "Property",
-    "value": "Experience window source. Effect perform similar staff two. Realize manage board civil music."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Campaign general interesting leave sing hotel. Every all inside now whose air. Recent decade trial."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:Sensor:items:OBUU:26432740",
-      "urn:ngsi-ld:Sensor:items:SQLE:55745312"
+        "type": "Property",
+        "value": true
+    },
+    "measurement": {
+        "type": "Property",
+        "value": 292.1
+    },
+    "precision": {
+        "type": "Property",
+        "value": 988.6
+    },
+    "n": {
+        "type": "Property",
+        "value": "My build indeed nice take have student. Figure impact here employee realize. Floor meeting entire main myself visit."
+    },
+    "range": {
+        "type": "Property",
+        "value": [
+            824.6,
+            684.9
+        ]
+    },
+    "step": {
+        "type": "Property",
+        "value": 0.4
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.baseline"
+        ]
+    },
+    "type": "Sensor",
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:Sensor:items:WCUC:42787397"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        -24.2466645,
-        -141.953472
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "Use more site wear loss. Offer anyone per any.",
-      "addressLocality": "Value try hour various. Organization executive scientist society. Ago bring edge check wide.",
-      "addressRegion": "Read be scene cell ok himself soldier example.",
-      "addressCountry": "Shake while animal. Author view respond former thousand every leave. Race business free grow.",
-      "postalCode": "Family attack hospital summer western her. Some should sell treatment mean. Down a identify fine job.",
-      "postOfficeBoxNumber": "Natural tonight such concern more effect. Reason theory figure activity body head. Direction past sit everyone ahead can."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Face test set go walk magazine interesting. Staff raise ready another north. Scientist surface specific."
-  },
-  "rt": {
-    "type": "Property",
-    "value": [
-      "oic.r.sensor"
-    ]
-  },
-  "value": {
-    "type": "Property",
-    "value": true
-  },
-  "measurement": {
-    "type": "Property",
-    "value": 292.1
-  },
-  "precision": {
-    "type": "Property",
-    "value": 988.6
-  },
-  "n": {
-    "type": "Property",
-    "value": "My build indeed nice take have student. Figure impact here employee realize. Floor meeting entire main myself visit."
-  },
-  "range": {
-    "type": "Property",
-    "value": [
-      824.6,
-      684.9
-    ]
-  },
-  "step": {
-    "type": "Property",
-    "value": 0.4
-  },
-  "if": {
-    "type": "Property",
-    "value": [
-      "oic.if.baseline"
-    ]
-  },
-  "type": "Sensor",
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
