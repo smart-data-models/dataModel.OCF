@@ -1,115 +1,116 @@
 {
-  "id": "urn:ngsi-ld:ColourRGB:id:VHWB:56558954",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1991-05-27T05:12:38Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2007-07-25T15:41:21Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "Require modern high same meet second. That myself nature industry dinner professional. Central while memory live third far successful half. Hospital avoid allow place."
-  },
-  "name": {
-    "type": "Property",
-    "value": "Goal picture method everything forward report. Certain probably every figure dog without."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Culture coach western act. Vote beat reduce argue discussion investment lot moment."
-  },
-  "description": {
-    "type": "Property",
-    "value": "Business feel foot itself author little method resource. Bad feeling charge student type. Country green focus walk."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Party discover organization everyone father nothing science. Reduce surface special here Democrat drop agent. Window evidence establish now month ground."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:ColourRGB:items:XNXK:84019011",
-      "urn:ngsi-ld:ColourRGB:items:WREB:79366163"
+    "id": "urn:ngsi-ld:ColourRGB:id:VHWB:56558954",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1991-05-27T05:12:38Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2007-07-25T15:41:21Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "Require modern high same meet second. That myself nature industry dinner professional. Central while memory live third far successful half. Hospital avoid allow place."
+    },
+    "name": {
+        "type": "Property",
+        "value": "Goal picture method everything forward report. Certain probably every figure dog without."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Culture coach western act. Vote beat reduce argue discussion investment lot moment."
+    },
+    "description": {
+        "type": "Property",
+        "value": "Business feel foot itself author little method resource. Bad feeling charge student type. Country green focus walk."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Party discover organization everyone father nothing science. Reduce surface special here Democrat drop agent. Window evidence establish now month ground."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:ColourRGB:items:XNXK:84019011",
+            "urn:ngsi-ld:ColourRGB:items:WREB:79366163"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:ColourRGB:items:NLBR:70214598"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                69.3938615,
+                -144.508054
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "High very participant. Wall indeed medical teacher responsibility set line.",
+            "addressLocality": "Officer tree answer message state. Result rather and possible must budget. Investment well why race notice key herself arm.",
+            "addressRegion": "Event find financial whatever this. Course administration ok learn certainly. Response mention new find check.",
+            "addressCountry": "Around bank between. Family field continue because face man once political. Ever performance bill respond decade.",
+            "postalCode": "Rule ok beautiful behind and perform. Mr clear when technology. Growth bring water boy six.",
+            "postOfficeBoxNumber": "Those surface arrive see ball. Rock anyone may subject analysis leg east."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Social accept do itself dark decade. Along black about skill six. American language key since life southern. Nice east risk talk identify plant."
+    },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.colour.rgb"
+        ]
+    },
+    "rgbValue": {
+        "type": "Property",
+        "value": [
+            378,
+            453,
+            21
+        ]
+    },
+    "n": {
+        "type": "Property",
+        "value": "Fight fill sound themselves sea. Candidate southern population within. Amount only help third hospital."
+    },
+    "range": {
+        "type": "Property",
+        "value": [
+            100,
+            825
+        ]
+    },
+    "step": {
+        "type": "Property",
+        "value": 972
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.a",
+            "oic.if.baseline"
+        ]
+    },
+    "type": "ColourRGB",
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:ColourRGB:items:NLBR:70214598"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        69.3938615,
-        -144.508054
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "High very participant. Wall indeed medical teacher responsibility set line.",
-      "addressLocality": "Officer tree answer message state. Result rather and possible must budget. Investment well why race notice key herself arm.",
-      "addressRegion": "Event find financial whatever this. Course administration ok learn certainly. Response mention new find check.",
-      "addressCountry": "Around bank between. Family field continue because face man once political. Ever performance bill respond decade.",
-      "postalCode": "Rule ok beautiful behind and perform. Mr clear when technology. Growth bring water boy six.",
-      "postOfficeBoxNumber": "Those surface arrive see ball. Rock anyone may subject analysis leg east."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Social accept do itself dark decade. Along black about skill six. American language key since life southern. Nice east risk talk identify plant."
-  },
-  "rt": {
-    "type": "Property",
-    "value": [
-      "oic.r.colour.rgb"
-    ]
-  },
-  "rgbValue": {
-    "type": "Property",
-    "value": [
-      378,
-      453,
-      21
-    ]
-  },
-  "n": {
-    "type": "Property",
-    "value": "Fight fill sound themselves sea. Candidate southern population within. Amount only help third hospital."
-  },
-  "range": {
-    "type": "Property",
-    "value": [
-      100,
-      825
-    ]
-  },
-  "step": {
-    "type": "Property",
-    "value": 972
-  },
-  "if": {
-    "type": "Property",
-    "value": [
-      "oic.if.a",
-      "oic.if.baseline"
-    ]
-  },
-  "type": "ColourRGB",
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
