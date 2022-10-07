@@ -1,78 +1,79 @@
 {
-  "id": "urn:ngsi-ld:ecomode:id:GJVA:13699863",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1994-11-01T22:23:55Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2006-05-08T02:19:52Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "Color attorney late customer enjoy. Wait think range before. Water save good well city might."
-  },
-  "name": {
-    "type": "Property",
-    "value": "Energy happen through difficult sense arm edge. Understand street tree notice dog scene."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Enjoy soon son recognize wear site energy. Reality no government allow open easy me."
-  },
-  "description": {
-    "type": "Property",
-    "value": "Throughout government half somebody piece keep better agent. Eat else society region century affect."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Each financial cut maintain. Sign until yourself son act teach particular."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:ecomode:items:TLNB:35212256",
-      "urn:ngsi-ld:ecomode:items:JTVR:32851398"
+    "id": "urn:ngsi-ld:ecomode:id:GJVA:13699863",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1994-11-01T22:23:55Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2006-05-08T02:19:52Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "Color attorney late customer enjoy. Wait think range before. Water save good well city might."
+    },
+    "name": {
+        "type": "Property",
+        "value": "Energy happen through difficult sense arm edge. Understand street tree notice dog scene."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Enjoy soon son recognize wear site energy. Reality no government allow open easy me."
+    },
+    "description": {
+        "type": "Property",
+        "value": "Throughout government half somebody piece keep better agent. Eat else society region century affect."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Each financial cut maintain. Sign until yourself son act teach particular."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:ecomode:items:TLNB:35212256",
+            "urn:ngsi-ld:ecomode:items:JTVR:32851398"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:ecomode:items:QBWQ:99867251"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -78.420297,
+                -10.920941
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "Build myself health. Let generation movie. Safe interest popular buy.",
+            "addressLocality": "Apply idea buy. Like simply point staff each nor member. Nature prevent religious share set fine the.",
+            "addressRegion": "Senior method leader. Research prepare health style. Out might simple interesting marriage space present wall.",
+            "addressCountry": "Result station draw return education professor tend practice. Agency offer sure thus. Visit safe wonder traditional. Name where rate.",
+            "postalCode": "Talk political position anyone building despite. Long candidate stuff away.",
+            "postOfficeBoxNumber": "Congress audience then throw treat here president. Reality situation enter though we high past under. Green outside easy process various or."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Political night prove along sure coach. Way system another up herself. Idea high standard make. Short whom sister wait this."
+    },
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:ecomode:items:QBWQ:99867251"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        -78.420297,
-        -10.920941
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "Build myself health. Let generation movie. Safe interest popular buy.",
-      "addressLocality": "Apply idea buy. Like simply point staff each nor member. Nature prevent religious share set fine the.",
-      "addressRegion": "Senior method leader. Research prepare health style. Out might simple interesting marriage space present wall.",
-      "addressCountry": "Result station draw return education professor tend practice. Agency offer sure thus. Visit safe wonder traditional. Name where rate.",
-      "postalCode": "Talk political position anyone building despite. Long candidate stuff away.",
-      "postOfficeBoxNumber": "Congress audience then throw treat here president. Reality situation enter though we high past under. Green outside easy process various or."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Political night prove along sure coach. Way system another up herself. Idea high standard make. Short whom sister wait this."
-  },
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
