@@ -1,126 +1,127 @@
 {
-  "id": "urn:ngsi-ld:ContinuousGlucoseMeterStatus:id:GEYM:33511226",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1970-01-31T04:25:22Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2013-03-06T21:48:48Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "Son picture nice floor staff. Remember rest rather certainly education light trip."
-  },
-  "name": {
-    "type": "Property",
-    "value": "Appear present citizen plan town light. Success sign near hot. Receive visit energy interview look total production."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Institution exist class. Tax Mrs news gas join especially easy. Fight about religious price school."
-  },
-  "description": {
-    "type": "Property",
-    "value": "Enough local particularly capital show simply. Perform management type director. Statement central across bit class give."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Benefit able affect director upon sense happen. Yard born term set task cause between sure."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:CWSI:41736479",
-      "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:EEOO:71067269"
+    "id": "urn:ngsi-ld:ContinuousGlucoseMeterStatus:id:GEYM:33511226",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1970-01-31T04:25:22Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2013-03-06T21:48:48Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "Son picture nice floor staff. Remember rest rather certainly education light trip."
+    },
+    "name": {
+        "type": "Property",
+        "value": "Appear present citizen plan town light. Success sign near hot. Receive visit energy interview look total production."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Institution exist class. Tax Mrs news gas join especially easy. Fight about religious price school."
+    },
+    "description": {
+        "type": "Property",
+        "value": "Enough local particularly capital show simply. Perform management type director. Statement central across bit class give."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Benefit able affect director upon sense happen. Yard born term set task cause between sure."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:CWSI:41736479",
+            "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:EEOO:71067269"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:ARZK:43891632"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -29.772074,
+                114.010154
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "Can model hour give inside strong husband. Theory question evening step fast create. Eye remember industry than.",
+            "addressLocality": "History long story I must. Bag campaign begin factor art prevent civil.",
+            "addressRegion": "Process unit however north yet.",
+            "addressCountry": "Law but live measure. Staff man mention buy billion develop these green. Most attention forget evidence idea show.",
+            "postalCode": "Cell charge direction here them sure involve. Both hotel create challenge follow federal second.",
+            "postOfficeBoxNumber": "She magazine loss themselves. And fear operation ready should democratic. Reflect serious during term decision heavy which."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Environment machine back central let deep race. Material cost yard like bank."
+    },
+    "cgmtype": {
+        "type": "Property",
+        "value": "Capillary Whole blood"
+    },
+    "cgmstatus": {
+        "type": "Property",
+        "value": "Name thousand great cell. Last action bed executive financial. Foot read environment film able trial could."
+    },
+    "gtrend": {
+        "type": "Property",
+        "value": 620.2
+    },
+    "malfunction": {
+        "type": "Property",
+        "value": true
+    },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.cgm.status"
+        ]
+    },
+    "n": {
+        "type": "Property",
+        "value": "Audience study meet today need international. Material Mrs plant part watch trip build professor. Protect your risk letter floor article nature."
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.s"
+        ]
+    },
+    "range": {
+        "type": "Property",
+        "value": [
+            263.0,
+            342.7
+        ]
+    },
+    "step": {
+        "type": "Property",
+        "value": 563.4
+    },
+    "precision": {
+        "type": "Property",
+        "value": 498.0
+    },
+    "type": "ContinuousGlucoseMeterStatus",
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:ARZK:43891632"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        -29.772074,
-        114.010154
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "Can model hour give inside strong husband. Theory question evening step fast create. Eye remember industry than.",
-      "addressLocality": "History long story I must. Bag campaign begin factor art prevent civil.",
-      "addressRegion": "Process unit however north yet.",
-      "addressCountry": "Law but live measure. Staff man mention buy billion develop these green. Most attention forget evidence idea show.",
-      "postalCode": "Cell charge direction here them sure involve. Both hotel create challenge follow federal second.",
-      "postOfficeBoxNumber": "She magazine loss themselves. And fear operation ready should democratic. Reflect serious during term decision heavy which."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Environment machine back central let deep race. Material cost yard like bank."
-  },
-  "cgmtype": {
-    "type": "Property",
-    "value": "Capillary Whole blood"
-  },
-  "cgmstatus": {
-    "type": "Property",
-    "value": "Name thousand great cell. Last action bed executive financial. Foot read environment film able trial could."
-  },
-  "gtrend": {
-    "type": "Property",
-    "value": 620.2
-  },
-  "malfunction": {
-    "type": "Property",
-    "value": true
-  },
-  "rt": {
-    "type": "Property",
-    "value": [
-      "oic.r.cgm.status"
-    ]
-  },
-  "n": {
-    "type": "Property",
-    "value": "Audience study meet today need international. Material Mrs plant part watch trip build professor. Protect your risk letter floor article nature."
-  },
-  "if": {
-    "type": "Property",
-    "value": [
-      "oic.if.s"
-    ]
-  },
-  "range": {
-    "type": "Property",
-    "value": [
-      263.0,
-      342.7
-    ]
-  },
-  "step": {
-    "type": "Property",
-    "value": 563.4
-  },
-  "precision": {
-    "type": "Property",
-    "value": 498.0
-  },
-  "type": "ContinuousGlucoseMeterStatus",
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
