@@ -1,115 +1,116 @@
 {
-  "id": "urn:ngsi-ld:Altimeter:id:XXJS:08120957",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1975-04-10T00:13:53Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1986-06-13T16:36:25Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "Rock ask look run. Her share majority within provide. Cold simple area."
-  },
-  "name": {
-    "type": "Property",
-    "value": "Follow level single maintain north letter. Another tough can off. Town hundred help traditional feeling rock cell."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Big wide plant assume team put never."
-  },
-  "description": {
-    "type": "Property",
-    "value": "Town position skin record mind. Positive source exactly team edge. Either child a study everyone process."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Within six ok sit edge marriage could. Yard international it feeling between itself sure. End answer fill tough human."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:Altimeter:items:CPCX:44604650",
-      "urn:ngsi-ld:Altimeter:items:FUHL:47481286"
+    "id": "urn:ngsi-ld:Altimeter:id:XXJS:08120957",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1975-04-10T00:13:53Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1986-06-13T16:36:25Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "Rock ask look run. Her share majority within provide. Cold simple area."
+    },
+    "name": {
+        "type": "Property",
+        "value": "Follow level single maintain north letter. Another tough can off. Town hundred help traditional feeling rock cell."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Big wide plant assume team put never."
+    },
+    "description": {
+        "type": "Property",
+        "value": "Town position skin record mind. Positive source exactly team edge. Either child a study everyone process."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Within six ok sit edge marriage could. Yard international it feeling between itself sure. End answer fill tough human."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:Altimeter:items:CPCX:44604650",
+            "urn:ngsi-ld:Altimeter:items:FUHL:47481286"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:Altimeter:items:KSOB:49084055"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                71.048026,
+                94.574079
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "Not pay art. Manager hope dinner style yes difference model know.",
+            "addressLocality": "Become man Democrat argue best. Seven thank space understand manage writer.",
+            "addressRegion": "Hand serious live important when. Tough shoulder entire most. Nature note smile open.",
+            "addressCountry": "Program amount company would. Letter tell full despite.",
+            "postalCode": "Movie write government although and very sometimes. Hand address hold him every walk south cultural. Hotel second describe include party tax different.",
+            "postOfficeBoxNumber": "Life fast television economic. Hope rule or could toward. Get yes here even floor nor."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Half two stock low. Back management successful almost cold building democratic."
+    },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.altimeter"
+        ]
+    },
+    "alt": {
+        "type": "Property",
+        "value": 916.8
+    },
+    "n": {
+        "type": "Property",
+        "value": "Somebody audience yet magazine hundred support but. Move building public part court price."
+    },
+    "precision": {
+        "type": "Property",
+        "value": 171.6
+    },
+    "range": {
+        "type": "Property",
+        "value": [
+            593.9,
+            778.3
+        ]
+    },
+    "step": {
+        "type": "Property",
+        "value": 276.9
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.baseline",
+            "oic.if.baseline"
+        ]
+    },
+    "type": "Altimeter",
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:Altimeter:items:KSOB:49084055"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        71.048026,
-        94.574079
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "Not pay art. Manager hope dinner style yes difference model know.",
-      "addressLocality": "Become man Democrat argue best. Seven thank space understand manage writer.",
-      "addressRegion": "Hand serious live important when. Tough shoulder entire most. Nature note smile open.",
-      "addressCountry": "Program amount company would. Letter tell full despite.",
-      "postalCode": "Movie write government although and very sometimes. Hand address hold him every walk south cultural. Hotel second describe include party tax different.",
-      "postOfficeBoxNumber": "Life fast television economic. Hope rule or could toward. Get yes here even floor nor."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Half two stock low. Back management successful almost cold building democratic."
-  },
-  "rt": {
-    "type": "Property",
-    "value": [
-      "oic.r.altimeter"
-    ]
-  },
-  "alt": {
-    "type": "Property",
-    "value": 916.8
-  },
-  "n": {
-    "type": "Property",
-    "value": "Somebody audience yet magazine hundred support but. Move building public part court price."
-  },
-  "precision": {
-    "type": "Property",
-    "value": 171.6
-  },
-  "range": {
-    "type": "Property",
-    "value": [
-      593.9,
-      778.3
-    ]
-  },
-  "step": {
-    "type": "Property",
-    "value": 276.9
-  },
-  "if": {
-    "type": "Property",
-    "value": [
-      "oic.if.baseline",
-      "oic.if.baseline"
-    ]
-  },
-  "type": "Altimeter",
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
