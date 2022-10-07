@@ -1,110 +1,111 @@
 {
-  "id": "urn:ngsi-ld:Speed:id:FDJH:34364969",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1985-11-16T03:08:33Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1990-12-26T00:39:02Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "Soon beat life own good since social. Society road remain agency specific describe."
-  },
-  "name": {
-    "type": "Property",
-    "value": "Wrong level worker describe computer food speech. Campaign hundred how source."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Lose us ready beautiful message store up. Top certain ground. Memory none dark inside ball some boy always."
-  },
-  "description": {
-    "type": "Property",
-    "value": "Despite about national today worry use under. Person per key specific foot claim into. Whole rise wide small art rise."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Church board executive boy girl. Important cut price above age."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:Speed:items:ZOUH:64779507",
-      "urn:ngsi-ld:Speed:items:HAKR:79899173"
+    "id": "urn:ngsi-ld:Speed:id:FDJH:34364969",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1985-11-16T03:08:33Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1990-12-26T00:39:02Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "Soon beat life own good since social. Society road remain agency specific describe."
+    },
+    "name": {
+        "type": "Property",
+        "value": "Wrong level worker describe computer food speech. Campaign hundred how source."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Lose us ready beautiful message store up. Top certain ground. Memory none dark inside ball some boy always."
+    },
+    "description": {
+        "type": "Property",
+        "value": "Despite about national today worry use under. Person per key specific foot claim into. Whole rise wide small art rise."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Church board executive boy girl. Important cut price above age."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:Speed:items:ZOUH:64779507",
+            "urn:ngsi-ld:Speed:items:HAKR:79899173"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:Speed:items:JKMX:48696197"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -39.8227335,
+                163.224954
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "Represent reach bag worker within. Value wonder image week. Decade term from responsibility sell.",
+            "addressLocality": "Represent value ball last population least season. Organization significant discussion increase standard similar old. Alone him situation. Improve light officer become.",
+            "addressRegion": "Professor can find. Assume protect pattern high pick. Difficult former still meet player director. Detail listen eat try major challenge.",
+            "addressCountry": "Leader industry performance discover cause. His discussion have produce international worry bank.",
+            "postalCode": "Material where prevent animal moment. Challenge party role now leg camera development produce.",
+            "postOfficeBoxNumber": "Certainly popular science them describe drive through. Present might series nice picture."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Ability half easy discuss series alone. Item factor note well accept. Including time audience."
+    },
+    "speed": {
+        "type": "Property",
+        "value": 954.1
+    },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.speed"
+        ]
+    },
+    "n": {
+        "type": "Property",
+        "value": "Anyone national writer author pretty. Step close his future model."
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.baseline"
+        ]
+    },
+    "range": {
+        "type": "Property",
+        "value": [
+            196.3,
+            305.1
+        ]
+    },
+    "step": {
+        "type": "Property",
+        "value": 803.5
+    },
+    "type": "Speed",
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:Speed:items:JKMX:48696197"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        -39.8227335,
-        163.224954
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "Represent reach bag worker within. Value wonder image week. Decade term from responsibility sell.",
-      "addressLocality": "Represent value ball last population least season. Organization significant discussion increase standard similar old. Alone him situation. Improve light officer become.",
-      "addressRegion": "Professor can find. Assume protect pattern high pick. Difficult former still meet player director. Detail listen eat try major challenge.",
-      "addressCountry": "Leader industry performance discover cause. His discussion have produce international worry bank.",
-      "postalCode": "Material where prevent animal moment. Challenge party role now leg camera development produce.",
-      "postOfficeBoxNumber": "Certainly popular science them describe drive through. Present might series nice picture."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Ability half easy discuss series alone. Item factor note well accept. Including time audience."
-  },
-  "speed": {
-    "type": "Property",
-    "value": 954.1
-  },
-  "rt": {
-    "type": "Property",
-    "value": [
-      "oic.r.speed"
-    ]
-  },
-  "n": {
-    "type": "Property",
-    "value": "Anyone national writer author pretty. Step close his future model."
-  },
-  "if": {
-    "type": "Property",
-    "value": [
-      "oic.if.baseline"
-    ]
-  },
-  "range": {
-    "type": "Property",
-    "value": [
-      196.3,
-      305.1
-    ]
-  },
-  "step": {
-    "type": "Property",
-    "value": 803.5
-  },
-  "type": "Speed",
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
