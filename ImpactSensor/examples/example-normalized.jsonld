@@ -1,78 +1,79 @@
 {
-  "id": "urn:ngsi-ld:ImpactSensor:id:EZZD:66764165",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1985-03-06T16:55:17Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1997-10-15T00:13:57Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "Network various state."
-  },
-  "name": {
-    "type": "Property",
-    "value": "Reach subject fall unit pass support choice. Religious itself almost."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Born morning animal ago point. Clearly improve position over continue sell can."
-  },
-  "description": {
-    "type": "Property",
-    "value": "These professor own win. Second wonder over class rather week. Hand popular property college let."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Fine expect human media. Risk effort fire line toward TV. Trial ago a traditional continue."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:ImpactSensor:items:PJKU:92011858",
-      "urn:ngsi-ld:ImpactSensor:items:ZWRX:14208511"
+    "id": "urn:ngsi-ld:ImpactSensor:id:EZZD:66764165",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1985-03-06T16:55:17Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1997-10-15T00:13:57Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "Network various state."
+    },
+    "name": {
+        "type": "Property",
+        "value": "Reach subject fall unit pass support choice. Religious itself almost."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Born morning animal ago point. Clearly improve position over continue sell can."
+    },
+    "description": {
+        "type": "Property",
+        "value": "These professor own win. Second wonder over class rather week. Hand popular property college let."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Fine expect human media. Risk effort fire line toward TV. Trial ago a traditional continue."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:ImpactSensor:items:PJKU:92011858",
+            "urn:ngsi-ld:ImpactSensor:items:ZWRX:14208511"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:ImpactSensor:items:ZYPR:43698790"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -77.057311,
+                -111.71733
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "Good note early reveal budget peace foot party. Sell though color student. Face yes arrive eight book thus. Quality focus against appear concern order.",
+            "addressLocality": "Amount question energy college friend. Who ball shake speech. Ten occur enter dog right outside stage.",
+            "addressRegion": "Kitchen executive prepare voice bar but information. Skin feeling room party head career than. Agency which base.",
+            "addressCountry": "Hit safe training. Occur total sell interview into daughter and. Focus small possible quality.",
+            "postalCode": "Her site blue couple risk compare. Movie too break level good small relate.",
+            "postOfficeBoxNumber": "Those figure specific agent become together the. Beyond none truth none operation."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Top section financial during red. Nature try situation tell."
+    },
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:ImpactSensor:items:ZYPR:43698790"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        -77.057311,
-        -111.71733
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "Good note early reveal budget peace foot party. Sell though color student. Face yes arrive eight book thus. Quality focus against appear concern order.",
-      "addressLocality": "Amount question energy college friend. Who ball shake speech. Ten occur enter dog right outside stage.",
-      "addressRegion": "Kitchen executive prepare voice bar but information. Skin feeling room party head career than. Agency which base.",
-      "addressCountry": "Hit safe training. Occur total sell interview into daughter and. Focus small possible quality.",
-      "postalCode": "Her site blue couple risk compare. Movie too break level good small relate.",
-      "postOfficeBoxNumber": "Those figure specific agent become together the. Beyond none truth none operation."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Top section financial during red. Nature try situation tell."
-  },
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
