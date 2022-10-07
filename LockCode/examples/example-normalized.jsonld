@@ -1,78 +1,79 @@
 {
-  "id": "urn:ngsi-ld:LockCode:id:DSOC:42964529",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1994-04-07T20:31:59Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2010-09-17T15:38:07Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "Among happy produce class."
-  },
-  "name": {
-    "type": "Property",
-    "value": "Quality red believe leader sure contain. Indicate final policy question change environment person."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Return key window decision. Only take today."
-  },
-  "description": {
-    "type": "Property",
-    "value": "Audience challenge three main experience what. Personal American ago cold. Next financial administration deal."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Claim cold throughout oil network. Conference sort day yard or financial. Easy take cultural apply program determine send mind."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:LockCode:items:CCGS:49580900",
-      "urn:ngsi-ld:LockCode:items:LFBS:64671066"
+    "id": "urn:ngsi-ld:LockCode:id:DSOC:42964529",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1994-04-07T20:31:59Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2010-09-17T15:38:07Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "Among happy produce class."
+    },
+    "name": {
+        "type": "Property",
+        "value": "Quality red believe leader sure contain. Indicate final policy question change environment person."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Return key window decision. Only take today."
+    },
+    "description": {
+        "type": "Property",
+        "value": "Audience challenge three main experience what. Personal American ago cold. Next financial administration deal."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Claim cold throughout oil network. Conference sort day yard or financial. Easy take cultural apply program determine send mind."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:LockCode:items:CCGS:49580900",
+            "urn:ngsi-ld:LockCode:items:LFBS:64671066"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:LockCode:items:WDUI:94831427"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                26.500678,
+                7.456238
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "Well more treat movement wind. Finish attorney realize daughter office share back.",
+            "addressLocality": "Cold care relate until among any. Television education law.",
+            "addressRegion": "Summer bad cause take. Mention before quickly dark. Across community end behavior before.",
+            "addressCountry": "Current his state I. Available next which health. Week matter collection prevent.",
+            "postalCode": "Education tell energy middle raise continue. Teach must site trouble.",
+            "postOfficeBoxNumber": "Down common plant kind. Really strong somebody and only executive consumer. Too reflect affect buy painting."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Recognize be page unit well behind. Contain always right son minute world."
+    },
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:LockCode:items:WDUI:94831427"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        26.500678,
-        7.456238
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "Well more treat movement wind. Finish attorney realize daughter office share back.",
-      "addressLocality": "Cold care relate until among any. Television education law.",
-      "addressRegion": "Summer bad cause take. Mention before quickly dark. Across community end behavior before.",
-      "addressCountry": "Current his state I. Available next which health. Week matter collection prevent.",
-      "postalCode": "Education tell energy middle raise continue. Teach must site trouble.",
-      "postOfficeBoxNumber": "Down common plant kind. Really strong somebody and only executive consumer. Too reflect affect buy painting."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Recognize be page unit well behind. Contain always right son minute world."
-  },
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
