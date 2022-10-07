@@ -1,108 +1,109 @@
 {
-  "id": "urn:ngsi-ld:valueconditional:id:LFZE:63894418",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2000-06-29T21:00:50Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1990-11-26T02:50:43Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "Question one network parent able season. Toward physical over cultural."
-  },
-  "name": {
-    "type": "Property",
-    "value": "Deal enter pressure bad. Mouth computer water enough floor stuff usually. Various more high gas start financial."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Career late become billion. Everything home happen develop pattern. Number her newspaper show."
-  },
-  "description": {
-    "type": "Property",
-    "value": "Radio why picture research father community. Guy avoid every program when member. Stay last message page ball newspaper religious."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Despite age fall none price. Big concern particular mention fine nation."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:valueconditional:items:KLHZ:91159315",
-      "urn:ngsi-ld:valueconditional:items:AQIU:86602939"
+    "id": "urn:ngsi-ld:valueconditional:id:LFZE:63894418",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2000-06-29T21:00:50Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1990-11-26T02:50:43Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "Question one network parent able season. Toward physical over cultural."
+    },
+    "name": {
+        "type": "Property",
+        "value": "Deal enter pressure bad. Mouth computer water enough floor stuff usually. Various more high gas start financial."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Career late become billion. Everything home happen develop pattern. Number her newspaper show."
+    },
+    "description": {
+        "type": "Property",
+        "value": "Radio why picture research father community. Guy avoid every program when member. Stay last message page ball newspaper religious."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Despite age fall none price. Big concern particular mention fine nation."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:valueconditional:items:KLHZ:91159315",
+            "urn:ngsi-ld:valueconditional:items:AQIU:86602939"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:valueconditional:items:YHRG:04597786"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -29.636661,
+                -28.098623
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "Republican save party possible radio position. Box town other keep evidence color. Move try face box fact program he.",
+            "addressLocality": "Be low remain. State find kind leg officer.",
+            "addressRegion": "Finish protect ever nearly mean. Citizen chair ok only player down. Message officer beat section cell spend fund.",
+            "addressCountry": "Machine able kitchen chair time Congress. Military allow mind notice. Former spend tough.",
+            "postalCode": "Safe present once have shake outside brother institution. Color page believe identify ten far. Unit husband large government.",
+            "postOfficeBoxNumber": "Reduce agent book participant. Argue example allow story million two worry. Sport similar performance computer apply front anything. Skin civil close so."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Democratic spend accept fall be politics. Expert time player security."
+    },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.value.conditional"
+        ]
+    },
+    "maxnotifyperiod": {
+        "type": "Property",
+        "value": 322
+    },
+    "minnotifyperiod": {
+        "type": "Property",
+        "value": 234
+    },
+    "threshold": {
+        "type": "Property",
+        "value": 391.8
+    },
+    "n": {
+        "type": "Property",
+        "value": "Significant skin spend yourself throughout garden. Even teacher party operation hit. Middle special pattern such drug."
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.baseline",
+            "oic.if.rw"
+        ]
+    },
+    "type": "valueconditional",
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:valueconditional:items:YHRG:04597786"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        -29.636661,
-        -28.098623
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "Republican save party possible radio position. Box town other keep evidence color. Move try face box fact program he.",
-      "addressLocality": "Be low remain. State find kind leg officer.",
-      "addressRegion": "Finish protect ever nearly mean. Citizen chair ok only player down. Message officer beat section cell spend fund.",
-      "addressCountry": "Machine able kitchen chair time Congress. Military allow mind notice. Former spend tough.",
-      "postalCode": "Safe present once have shake outside brother institution. Color page believe identify ten far. Unit husband large government.",
-      "postOfficeBoxNumber": "Reduce agent book participant. Argue example allow story million two worry. Sport similar performance computer apply front anything. Skin civil close so."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Democratic spend accept fall be politics. Expert time player security."
-  },
-  "rt": {
-    "type": "Property",
-    "value": [
-      "oic.r.value.conditional"
-    ]
-  },
-  "maxnotifyperiod": {
-    "type": "Property",
-    "value": 322
-  },
-  "minnotifyperiod": {
-    "type": "Property",
-    "value": 234
-  },
-  "threshold": {
-    "type": "Property",
-    "value": 391.8
-  },
-  "n": {
-    "type": "Property",
-    "value": "Significant skin spend yourself throughout garden. Even teacher party operation hit. Middle special pattern such drug."
-  },
-  "if": {
-    "type": "Property",
-    "value": [
-      "oic.if.baseline",
-      "oic.if.rw"
-    ]
-  },
-  "type": "valueconditional",
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
