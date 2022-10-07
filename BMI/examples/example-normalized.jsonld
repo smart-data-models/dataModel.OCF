@@ -1,114 +1,115 @@
 {
-  "id": "urn:ngsi-ld:BMI:id:EMJI:97474029",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2022-03-01T18:43:19Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1995-08-23T11:49:56Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "Fill lot management perform professor admit herself."
-  },
-  "name": {
-    "type": "Property",
-    "value": "Late college somebody a property thought. Ever sell board just require."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Bar suffer thought record shoulder activity one. Support music serious so speak feeling event. Phone radio about produce practice order."
-  },
-  "description": {
-    "type": "Property",
-    "value": "Say book popular back million. Degree local live."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Good morning shake whose. Safe employee buy offer majority. Provide lead catch try chair main develop. Chance here type heavy."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:BMI:items:WJYW:99456940",
-      "urn:ngsi-ld:BMI:items:IBTQ:54917398"
+    "id": "urn:ngsi-ld:BMI:id:EMJI:97474029",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2022-03-01T18:43:19Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1995-08-23T11:49:56Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "Fill lot management perform professor admit herself."
+    },
+    "name": {
+        "type": "Property",
+        "value": "Late college somebody a property thought. Ever sell board just require."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Bar suffer thought record shoulder activity one. Support music serious so speak feeling event. Phone radio about produce practice order."
+    },
+    "description": {
+        "type": "Property",
+        "value": "Say book popular back million. Degree local live."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Good morning shake whose. Safe employee buy offer majority. Provide lead catch try chair main develop. Chance here type heavy."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:BMI:items:WJYW:99456940",
+            "urn:ngsi-ld:BMI:items:IBTQ:54917398"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:BMI:items:DUBD:09125435"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -71.4924345,
+                -95.488647
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "That claim else already.",
+            "addressLocality": "Painting break mother speak while eye. Political student hospital free down teacher.",
+            "addressRegion": "Gas beat scientist. Election full defense deep morning black. Interesting PM in. Production authority name method price talk.",
+            "addressCountry": "Door floor most task so fast much. Also address play stand.",
+            "postalCode": "Happy value analysis far. Spring true family yeah.",
+            "postOfficeBoxNumber": "Toward raise wait send mouth be everybody evidence. Court majority grow employee yourself crime. Car alone kitchen most painting at sea."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Us outside simply suffer. Social inside above war bit light charge."
+    },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.bmi"
+        ]
+    },
+    "bmi": {
+        "type": "Property",
+        "value": 443.8
+    },
+    "range": {
+        "type": "Property",
+        "value": [
+            661.2,
+            444.8
+        ]
+    },
+    "step": {
+        "type": "Property",
+        "value": 198.7
+    },
+    "precision": {
+        "type": "Property",
+        "value": 977.8
+    },
+    "n": {
+        "type": "Property",
+        "value": "Laugh such force final. Them media line involve. Age meet follow character card news seat."
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.baseline"
+        ]
+    },
+    "type": "BMI",
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:BMI:items:DUBD:09125435"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        -71.4924345,
-        -95.488647
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "That claim else already.",
-      "addressLocality": "Painting break mother speak while eye. Political student hospital free down teacher.",
-      "addressRegion": "Gas beat scientist. Election full defense deep morning black. Interesting PM in. Production authority name method price talk.",
-      "addressCountry": "Door floor most task so fast much. Also address play stand.",
-      "postalCode": "Happy value analysis far. Spring true family yeah.",
-      "postOfficeBoxNumber": "Toward raise wait send mouth be everybody evidence. Court majority grow employee yourself crime. Car alone kitchen most painting at sea."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Us outside simply suffer. Social inside above war bit light charge."
-  },
-  "rt": {
-    "type": "Property",
-    "value": [
-      "oic.r.bmi"
-    ]
-  },
-  "bmi": {
-    "type": "Property",
-    "value": 443.8
-  },
-  "range": {
-    "type": "Property",
-    "value": [
-      661.2,
-      444.8
-    ]
-  },
-  "step": {
-    "type": "Property",
-    "value": 198.7
-  },
-  "precision": {
-    "type": "Property",
-    "value": 977.8
-  },
-  "n": {
-    "type": "Property",
-    "value": "Laugh such force final. Them media line involve. Age meet follow character card news seat."
-  },
-  "if": {
-    "type": "Property",
-    "value": [
-      "oic.if.baseline"
-    ]
-  },
-  "type": "BMI",
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
