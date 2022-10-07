@@ -1,118 +1,119 @@
 {
-  "id": "urn:ngsi-ld:Glucose:id:IVSS:30679394",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2019-08-31T00:56:15Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2020-10-18T13:20:32Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "His hit generation early of."
-  },
-  "name": {
-    "type": "Property",
-    "value": "Nation heavy themselves group Mrs. Movement morning fund worker experience them around. Nice north find later act."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Ball share help administration beautiful imagine great. Include writer animal four. Consider visit direction carry very."
-  },
-  "description": {
-    "type": "Property",
-    "value": "Wish customer end collection position until career benefit."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Need daughter card series at. Thought remember only prove thousand campaign. Method attention itself."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:Glucose:items:FKDJ:98345867",
-      "urn:ngsi-ld:Glucose:items:IZPH:43223618"
+    "id": "urn:ngsi-ld:Glucose:id:IVSS:30679394",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2019-08-31T00:56:15Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2020-10-18T13:20:32Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "His hit generation early of."
+    },
+    "name": {
+        "type": "Property",
+        "value": "Nation heavy themselves group Mrs. Movement morning fund worker experience them around. Nice north find later act."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Ball share help administration beautiful imagine great. Include writer animal four. Consider visit direction carry very."
+    },
+    "description": {
+        "type": "Property",
+        "value": "Wish customer end collection position until career benefit."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Need daughter card series at. Thought remember only prove thousand campaign. Method attention itself."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:Glucose:items:FKDJ:98345867",
+            "urn:ngsi-ld:Glucose:items:IZPH:43223618"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:Glucose:items:VGCR:54273116"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                15.7658455,
+                124.71625
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "Lay beat loss goal face. Where western apply company head. Data chair police church cold.",
+            "addressLocality": "Two red democratic surface follow buy themselves. Out last then difference.",
+            "addressRegion": "Firm finish center grow like church total. Season new per though music hard win.",
+            "addressCountry": "News adult especially form media series scene. Cold treatment year.",
+            "postalCode": "Attention purpose reveal try between. Then expect pull both.",
+            "postOfficeBoxNumber": "Not Mr spend their will. Threat ok civil sometimes draw maintain assume employee. Think animal day nice business foreign."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Now world wish fish wall. Forward modern follow name herself send political ask. Maybe majority goal there."
+    },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.glucose"
+        ]
+    },
+    "glucose": {
+        "type": "Property",
+        "value": 174.1
+    },
+    "units": {
+        "type": "Property",
+        "value": "mmol/L"
+    },
+    "range": {
+        "type": "Property",
+        "value": [
+            675.0,
+            291.5
+        ]
+    },
+    "step": {
+        "type": "Property",
+        "value": 691.5
+    },
+    "precision": {
+        "type": "Property",
+        "value": 421.4
+    },
+    "n": {
+        "type": "Property",
+        "value": "Player nature front relationship job think. Also five outside subject. Record produce country among news."
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.baseline"
+        ]
+    },
+    "type": "Glucose",
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:Glucose:items:VGCR:54273116"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        15.7658455,
-        124.71625
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "Lay beat loss goal face. Where western apply company head. Data chair police church cold.",
-      "addressLocality": "Two red democratic surface follow buy themselves. Out last then difference.",
-      "addressRegion": "Firm finish center grow like church total. Season new per though music hard win.",
-      "addressCountry": "News adult especially form media series scene. Cold treatment year.",
-      "postalCode": "Attention purpose reveal try between. Then expect pull both.",
-      "postOfficeBoxNumber": "Not Mr spend their will. Threat ok civil sometimes draw maintain assume employee. Think animal day nice business foreign."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Now world wish fish wall. Forward modern follow name herself send political ask. Maybe majority goal there."
-  },
-  "rt": {
-    "type": "Property",
-    "value": [
-      "oic.r.glucose"
-    ]
-  },
-  "glucose": {
-    "type": "Property",
-    "value": 174.1
-  },
-  "units": {
-    "type": "Property",
-    "value": "mmol/L"
-  },
-  "range": {
-    "type": "Property",
-    "value": [
-      675.0,
-      291.5
-    ]
-  },
-  "step": {
-    "type": "Property",
-    "value": 691.5
-  },
-  "precision": {
-    "type": "Property",
-    "value": 421.4
-  },
-  "n": {
-    "type": "Property",
-    "value": "Player nature front relationship job think. Also five outside subject. Record produce country among news."
-  },
-  "if": {
-    "type": "Property",
-    "value": [
-      "oic.if.baseline"
-    ]
-  },
-  "type": "Glucose",
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
