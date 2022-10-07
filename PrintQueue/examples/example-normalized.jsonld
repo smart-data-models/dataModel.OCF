@@ -1,78 +1,79 @@
 {
-  "id": "urn:ngsi-ld:PrintQueue:id:OEMJ:12779437",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1990-09-03T20:56:23Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2020-07-04T18:25:54Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "Agree hope popular cut single father approach. Year page rise theory. Mind know allow."
-  },
-  "name": {
-    "type": "Property",
-    "value": "End southern night while arrive film be. Listen degree thousand technology at word."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Region almost trip sometimes test seek first. Although yard expect hundred at teach politics."
-  },
-  "description": {
-    "type": "Property",
-    "value": "Author benefit while player. Boy card course anything sell open away."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Kind mean fish five plan traditional wrong."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:PrintQueue:items:OKZE:51742354",
-      "urn:ngsi-ld:PrintQueue:items:HYJQ:55236644"
+    "id": "urn:ngsi-ld:PrintQueue:id:OEMJ:12779437",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1990-09-03T20:56:23Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2020-07-04T18:25:54Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "Agree hope popular cut single father approach. Year page rise theory. Mind know allow."
+    },
+    "name": {
+        "type": "Property",
+        "value": "End southern night while arrive film be. Listen degree thousand technology at word."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Region almost trip sometimes test seek first. Although yard expect hundred at teach politics."
+    },
+    "description": {
+        "type": "Property",
+        "value": "Author benefit while player. Boy card course anything sell open away."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Kind mean fish five plan traditional wrong."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:PrintQueue:items:OKZE:51742354",
+            "urn:ngsi-ld:PrintQueue:items:HYJQ:55236644"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:PrintQueue:items:MZMO:08550907"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -37.2988135,
+                -156.766091
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "North everybody democratic. Behind last test computer than usually fund. Thought eight interview spend morning measure book.",
+            "addressLocality": "Only ready next. Attorney wish name.",
+            "addressRegion": "Entire budget land. Oil sometimes American exist such five run. Car sense technology both.",
+            "addressCountry": "Threat high form well candidate rest listen minute. Scientist budget candidate officer person. Short half water south fish.",
+            "postalCode": "Create white end they describe production parent face. Rise its baby. Break me base night what high.",
+            "postOfficeBoxNumber": "Themselves collection town water life can. Suffer hope memory provide."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Along south word course green. Ball hope there security along."
+    },
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:PrintQueue:items:MZMO:08550907"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        -37.2988135,
-        -156.766091
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "North everybody democratic. Behind last test computer than usually fund. Thought eight interview spend morning measure book.",
-      "addressLocality": "Only ready next. Attorney wish name.",
-      "addressRegion": "Entire budget land. Oil sometimes American exist such five run. Car sense technology both.",
-      "addressCountry": "Threat high form well candidate rest listen minute. Scientist budget candidate officer person. Short half water south fish.",
-      "postalCode": "Create white end they describe production parent face. Rise its baby. Break me base night what high.",
-      "postOfficeBoxNumber": "Themselves collection town water life can. Suffer hope memory provide."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Along south word course green. Ball hope there security along."
-  },
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
