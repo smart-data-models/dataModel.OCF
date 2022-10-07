@@ -1,120 +1,121 @@
 {
-  "id": "urn:ngsi-ld:3DPrinter:id:OSAJ:25765068",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1988-01-28T14:13:40Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2012-05-04T06:05:12Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": "Score nearly wait."
-  },
-  "name": {
-    "type": "Property",
-    "value": "Day claim democratic standard sing general growth miss. Large for yard city behavior anyone. Pretty down too."
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "Water popular pretty head. Visit as although quickly away Congress sell rule. Language approach challenge of situation home prove. May gas civil word suddenly."
-  },
-  "description": {
-    "type": "Property",
-    "value": "Reach beautiful key article wish. Range age future suggest choose stop organization. Total claim why involve."
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Sort left must. First Mrs everybody eat thank it. Relationship source hear recent every drive."
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:3DPrinter:items:KCRI:07432229",
-      "urn:ngsi-ld:3DPrinter:items:CIVT:12782306"
+    "id": "urn:ngsi-ld:3DPrinter:id:OSAJ:25765068",
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1988-01-28T14:13:40Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2012-05-04T06:05:12Z"
+        }
+    },
+    "source": {
+        "type": "Property",
+        "value": "Score nearly wait."
+    },
+    "name": {
+        "type": "Property",
+        "value": "Day claim democratic standard sing general growth miss. Large for yard city behavior anyone. Pretty down too."
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Water popular pretty head. Visit as although quickly away Congress sell rule. Language approach challenge of situation home prove. May gas civil word suddenly."
+    },
+    "description": {
+        "type": "Property",
+        "value": "Reach beautiful key article wish. Range age future suggest choose stop organization. Total claim why involve."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Sort left must. First Mrs everybody eat thank it. Relationship source hear recent every drive."
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:3DPrinter:items:KCRI:07432229",
+            "urn:ngsi-ld:3DPrinter:items:CIVT:12782306"
+        ]
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:3DPrinter:items:ANXI:44669183"
+        ]
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                20.7678465,
+                -50.604614
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "Chair series join shoulder southern camera. These wear ever it leave create. Middle nice fish push property network.",
+            "addressLocality": "Meet industry experience fire. Let local civil public federal.",
+            "addressRegion": "Among hospital condition human focus reach customer. Subject shoulder plant computer worry meeting.",
+            "addressCountry": "Finally hot address establish drug else. Language in rate. Physical quickly note you. Rock both degree him consider gun number certain.",
+            "postalCode": "Population camera second identify cold single. Miss act seek heavy south company. Grow both relate. Its including she represent.",
+            "postOfficeBoxNumber": "Join task enough. College travel north. Region collection research opportunity agency condition court."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Station gun during instead energy politics. Health find expert. Civil land past mouth watch series kind."
+    },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.printer.3d"
+        ]
+    },
+    "printsizey": {
+        "type": "Property",
+        "value": 862.4
+    },
+    "memorysize": {
+        "type": "Property",
+        "value": 798.4
+    },
+    "3dprinttype": {
+        "type": "Property",
+        "value": "Digital Light Processing"
+    },
+    "wanconnected": {
+        "type": "Property",
+        "value": false
+    },
+    "printsizex": {
+        "type": "Property",
+        "value": 172.6
+    },
+    "printsizez": {
+        "type": "Property",
+        "value": 926.1
+    },
+    "n": {
+        "type": "Property",
+        "value": "Threat look change. Down company do wall since bank."
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.r",
+            "oic.if.r"
+        ]
+    },
+    "type": "3DPrinter",
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
     ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:3DPrinter:items:ANXI:44669183"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        20.7678465,
-        -50.604614
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "Chair series join shoulder southern camera. These wear ever it leave create. Middle nice fish push property network.",
-      "addressLocality": "Meet industry experience fire. Let local civil public federal.",
-      "addressRegion": "Among hospital condition human focus reach customer. Subject shoulder plant computer worry meeting.",
-      "addressCountry": "Finally hot address establish drug else. Language in rate. Physical quickly note you. Rock both degree him consider gun number certain.",
-      "postalCode": "Population camera second identify cold single. Miss act seek heavy south company. Grow both relate. Its including she represent.",
-      "postOfficeBoxNumber": "Join task enough. College travel north. Region collection research opportunity agency condition court."
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Station gun during instead energy politics. Health find expert. Civil land past mouth watch series kind."
-  },
-  "rt": {
-    "type": "Property",
-    "value": [
-      "oic.r.printer.3d"
-    ]
-  },
-  "printsizey": {
-    "type": "Property",
-    "value": 862.4
-  },
-  "memorysize": {
-    "type": "Property",
-    "value": 798.4
-  },
-  "3dprinttype": {
-    "type": "Property",
-    "value": "Digital Light Processing"
-  },
-  "wanconnected": {
-    "type": "Property",
-    "value": false
-  },
-  "printsizex": {
-    "type": "Property",
-    "value": 172.6
-  },
-  "printsizez": {
-    "type": "Property",
-    "value": 926.1
-  },
-  "n": {
-    "type": "Property",
-    "value": "Threat look change. Down company do wall since bank."
-  },
-  "if": {
-    "type": "Property",
-    "value": [
-      "oic.if.r",
-      "oic.if.r"
-    ]
-  },
-  "type": "3DPrinter",
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
