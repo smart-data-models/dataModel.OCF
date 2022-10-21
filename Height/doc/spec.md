@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entity: Height  
-==============  
+==============<!-- /10-Header -->  
+<!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.OCF/blob/master/Height/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description: **This Resource describes the Properties associated with height of an object's physical size.The unit is a single value that is one of m, cm, ft or in.If the unit Property is missing the default is meters [m].The unit Property is a read-only value that is provided by the server.When range is omitted the default is 0 to +MAXFLOAT.**  
 version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `height`: Height of an object  - `id`: Unique identifier of the entity  - `if`: The OCF Interface set supported by this Resource  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n`: Friendly name of the Resource  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `precision`: When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision  - `range`: The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.  - `rt`: Resource Type  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `step`: Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.  - `type`: NGSI entity type. It has to be Height  - `units`: Height unit    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `height[number]`: Height of an object  - `id[*]`: Unique identifier of the entity  - `if[array]`: The OCF Interface set supported by this Resource  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n[string]`: Friendly name of the Resource  - `name[string]`: The name of this item.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `precision[number]`: When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision  - `range[array]`: The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.  - `rt[array]`: Resource Type  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `step[number]`: Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.  - `type[string]`: NGSI entity type. It has to be Height  - `units[string]`: Height unit  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Required properties  
-- `height`  - `id`  - `type`    
+- `height`  - `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Data Model adapted from the original created by the Open Connectivity Foundation. Original repository in https://github.com/openconnectivityfoundation/IoTDataModels  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Data Model description of properties  
 Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Height:    
@@ -368,9 +381,14 @@ Height:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Example payloads    
 #### Height NGSI-v2 key-values Example    
 Here is an example of a Height in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Height:id:RYIB:13844863",  
@@ -434,8 +452,10 @@ Height:
   "type": "Height"  
 }  
 ```  
+</details>  
 #### Height NGSI-v2 normalized Example    
 Here is an example of a Height in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -567,194 +587,208 @@ Height:
   }  
 }  
 ```  
+</details>  
 #### Height NGSI-LD key-values Example    
 Here is an example of a Height in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Height:id:RYIB:13844863",  
-  "dateCreated": "1996-02-16T02:34:56Z",  
-  "dateModified": "2021-01-12T09:16:42Z",  
-  "source": "Indeed ten bring however off entire. Kind raise cold expert reduce.",  
-  "name": "Almost film behavior. Cut teacher relate model.",  
-  "alternateName": "Gas myself old have fear ability fill. Game seven condition can.",  
-  "description": "Short language subject have focus. Medical most kitchen ahead since wear. Help morning open economic.",  
-  "dataProvider": "Happen food best threat impact under start.",  
-  "owner": [  
-    "urn:ngsi-ld:Height:items:XXYT:59749058",  
-    "urn:ngsi-ld:Height:items:EKFC:11330307"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Height:items:PSOZ:92305346",  
-    "urn:ngsi-ld:Height:items:CQLU:61464845"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -80.5323945,  
-      -133.65561  
+    "id": "urn:ngsi-ld:Height:id:RYIB:13844863",  
+    "dateCreated": "1996-02-16T02:34:56Z",  
+    "dateModified": "2021-01-12T09:16:42Z",  
+    "source": "Indeed ten bring however off entire. Kind raise cold expert reduce.",  
+    "name": "Almost film behavior. Cut teacher relate model.",  
+    "alternateName": "Gas myself old have fear ability fill. Game seven condition can.",  
+    "description": "Short language subject have focus. Medical most kitchen ahead since wear. Help morning open economic.",  
+    "dataProvider": "Happen food best threat impact under start.",  
+    "owner": [  
+        "urn:ngsi-ld:Height:items:XXYT:59749058",  
+        "urn:ngsi-ld:Height:items:EKFC:11330307"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Height:items:PSOZ:92305346",  
+        "urn:ngsi-ld:Height:items:CQLU:61464845"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -80.5323945,  
+            -133.65561  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Economy way reduce similar. Bring interview again would establish group myself.",  
+        "addressLocality": "So certain head truth should where. Year box painting reason try. Thing enter argue write hand. Billion serious morning argue suffer level teacher.",  
+        "addressRegion": "Hit she box reason party personal fact. Protect police generation analysis field everything.",  
+        "addressCountry": "Who left whose security even executive. Worker there huge surface cause central. Oil animal financial yeah authority. Point south public.",  
+        "postalCode": "Save adult cell simple adult nation activity. Light smile state many.",  
+        "postOfficeBoxNumber": "Life form receive sure cell marriage room."  
+    },  
+    "areaServed": "Worry hospital effort ago. Style course throw local thought of. Again inside police film lead lose still smile.",  
+    "rt": [  
+        "oic.r.height",  
+        "oic.r.height"  
+    ],  
+    "height": {  
+        "type": "Property",  
+        "value": 942.5  
+    },  
+    "units": "m",  
+    "range": [  
+        702.6,  
+        504.6  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 9.3  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 487.5  
+    },  
+    "n": "Join bar for. Medical see miss sister real. Level nor require drug for clear hair.",  
+    "if": [  
+        "oic.if.a",  
+        "oic.if.s"  
+    ],  
+    "type": "Height",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Economy way reduce similar. Bring interview again would establish group myself.",  
-    "addressLocality": "So certain head truth should where. Year box painting reason try. Thing enter argue write hand. Billion serious morning argue suffer level teacher.",  
-    "addressRegion": "Hit she box reason party personal fact. Protect police generation analysis field everything.",  
-    "addressCountry": "Who left whose security even executive. Worker there huge surface cause central. Oil animal financial yeah authority. Point south public.",  
-    "postalCode": "Save adult cell simple adult nation activity. Light smile state many.",  
-    "postOfficeBoxNumber": "Life form receive sure cell marriage room."  
-  },  
-  "areaServed": "Worry hospital effort ago. Style course throw local thought of. Again inside police film lead lose still smile.",  
-  "rt": [  
-    "oic.r.height",  
-    "oic.r.height"  
-  ],  
-  "height": {  
-    "type": "Property",  
-    "value": 942.5  
-  },  
-  "units": "m",  
-  "range": [  
-    702.6,  
-    504.6  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 9.3  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 487.5  
-  },  
-  "n": "Join bar for. Medical see miss sister real. Level nor require drug for clear hair.",  
-  "if": [  
-    "oic.if.a",  
-    "oic.if.s"  
-  ],  
-  "type": "Height",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### Height NGSI-LD normalized Example    
 Here is an example of a Height in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Height:id:DRXF:40586832",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2018-09-07T01:19:39Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2002-04-22T21:48:02Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Imagine standard PM contain sometimes. Program range soldier election. Wonder various place."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Look with capital page when physical. Fine until case manage through more. Report enough open since yes bar. Discussion seat second energy forget matter necessary."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Herself personal staff still. Enjoy above single."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Long page near staff strategy."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "End enjoy agree party. Voice wide budget indeed society live church. Week drop value."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Height:items:YNVT:44921672",  
-      "urn:ngsi-ld:Height:items:LBGJ:87740547"  
+    "id": "urn:ngsi-ld:Height:id:DRXF:40586832",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2018-09-07T01:19:39Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2002-04-22T21:48:02Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Imagine standard PM contain sometimes. Program range soldier election. Wonder various place."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Look with capital page when physical. Fine until case manage through more. Report enough open since yes bar. Discussion seat second energy forget matter necessary."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Herself personal staff still. Enjoy above single."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Long page near staff strategy."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "End enjoy agree party. Voice wide budget indeed society live church. Week drop value."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Height:items:YNVT:44921672",  
+            "urn:ngsi-ld:Height:items:LBGJ:87740547"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Height:items:UFWW:21754479"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                85.9525085,  
+                95.794551  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Claim message prepare range. Accept position something loss third along popular. During skin space major water manager rise.",  
+            "addressLocality": "Who could may majority board.",  
+            "addressRegion": "Admit listen system base long. Adult idea out in. Other ball field example.",  
+            "addressCountry": "Assume government of begin myself sometimes. Worry white story officer thus history which.",  
+            "postalCode": "As myself but same amount address. Majority be Mrs quickly charge.",  
+            "postOfficeBoxNumber": "Garden tell author site learn. Win young toward teach moment industry source would. Person south trial little city."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Age ability financial real second. Old study step force. Model ball husband boy deal Republican."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.height"  
+        ]  
+    },  
+    "height": {  
+        "type": "Property",  
+        "value": 491.6  
+    },  
+    "units": {  
+        "type": "Property",  
+        "value": "cm"  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            918.6,  
+            738.7  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 413.7  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 830.6  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "House red office interview."  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.a"  
+        ]  
+    },  
+    "type": "Height",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Height:items:UFWW:21754479"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        85.9525085,  
-        95.794551  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Claim message prepare range. Accept position something loss third along popular. During skin space major water manager rise.",  
-      "addressLocality": "Who could may majority board.",  
-      "addressRegion": "Admit listen system base long. Adult idea out in. Other ball field example.",  
-      "addressCountry": "Assume government of begin myself sometimes. Worry white story officer thus history which.",  
-      "postalCode": "As myself but same amount address. Majority be Mrs quickly charge.",  
-      "postOfficeBoxNumber": "Garden tell author site learn. Win young toward teach moment industry source would. Person south trial little city."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Age ability financial real second. Old study step force. Model ball husband boy deal Republican."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.height"  
-    ]  
-  },  
-  "height": {  
-    "type": "Property",  
-    "value": 491.6  
-  },  
-  "units": {  
-    "type": "Property",  
-    "value": "cm"  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      918.6,  
-      738.7  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 413.7  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 830.6  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "House red office interview."  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.a"  
-    ]  
-  },  
-  "type": "Height",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
