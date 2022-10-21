@@ -1,17 +1,32 @@
-Entity: Count  
-=============  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entity: Count  
+=============<!-- /10-Header -->  
+<!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.OCF/blob/master/Count/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description: **Smart Data Models Program adaptation of the original IoTData data Models. This Resource specifies an activity count. The Resource can be readonly (oic.if.s interface) in which instance it represents a count. The Resource can be readwrite (oic.if.a interface) in which instance it represents a goal or target for a count. The Property 'count' is an integer representing either the current count or goal value.**  
+version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `count`: The current or Target count.  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `if`: The OCF Interface set supported by this Resource.  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n`: Friendly name of the Resource  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `range`: The valid range for the Property in the Resource as an integer. The first value in the array is the minimum value, the second value in the array is the maximum value.  - `rt`: The Resource Type.  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `step`: Step value across the defined range when the range is an integer.  This is the increment for valid values across the range; so if range is 0..10 and step is 2 then valid values are 0,2,4,6,8,10.  - `type`: NGSI entity type. It has to be Count    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `count[integer]`: The current or Target count.  - `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `id[*]`: Unique identifier of the entity  - `if[array]`: The OCF Interface set supported by this Resource.  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n[string]`: Friendly name of the Resource  - `name[string]`: The name of this item.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `range[array]`: The valid range for the Property in the Resource as an integer. The first value in the array is the minimum value, the second value in the array is the maximum value.  - `rt[array]`: The Resource Type.  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `step[integer]`: Step value across the defined range when the range is an integer.  This is the increment for valid values across the range; so if range is 0..10 and step is 2 then valid values are 0,2,4,6,8,10.  - `type[string]`: NGSI entity type. It has to be Count  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Required properties  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 This data model comes from the original [Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels). It has been extended to comply with NGSI requirements.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Data Model description of properties  
 Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Count:    
@@ -345,9 +360,14 @@ Count:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Example payloads    
 #### Count NGSI-v2 key-values Example    
 Here is an example of a Count in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Count:id:ANPP:64594792",  
@@ -384,8 +404,10 @@ Count:
   "areaServed": "Much maybe through you less cut after."  
 }  
 ```  
+</details>  
 #### Count NGSI-v2 normalized Example    
 Here is an example of a Count in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -463,127 +485,141 @@ Count:
   }  
 }  
 ```  
+</details>  
 #### Count NGSI-LD key-values Example    
 Here is an example of a Count in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Count:id:ANPP:64594792",  
-  "dateCreated": "1970-08-14T20:52:44Z",  
-  "dateModified": "1982-07-21T00:53:54Z",  
-  "source": "Fear very opportunity sea prevent hospital check.",  
-  "name": "Federal simply turn meet less. North stay step while window network can.",  
-  "alternateName": "Produce summer alone toward attorney. Discuss article four go.",  
-  "description": "Head enter heart though later. Form agree plant exactly back before. Mouth able probably threat.",  
-  "dataProvider": "Lose allow oil box any film. Someone people reveal exist significant admit treatment idea. Bank perhaps choice none.",  
-  "owner": [  
-    "urn:ngsi-ld:Count:items:BHAE:96828546",  
-    "urn:ngsi-ld:Count:items:VDZM:08245550"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Count:items:JZGY:19989096",  
-    "urn:ngsi-ld:Count:items:VPFW:31471711"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -75.8259115,  
-      -9.81898  
+    "id": "urn:ngsi-ld:Count:id:ANPP:64594792",  
+    "dateCreated": "1970-08-14T20:52:44Z",  
+    "dateModified": "1982-07-21T00:53:54Z",  
+    "source": "Fear very opportunity sea prevent hospital check.",  
+    "name": "Federal simply turn meet less. North stay step while window network can.",  
+    "alternateName": "Produce summer alone toward attorney. Discuss article four go.",  
+    "description": "Head enter heart though later. Form agree plant exactly back before. Mouth able probably threat.",  
+    "dataProvider": "Lose allow oil box any film. Someone people reveal exist significant admit treatment idea. Bank perhaps choice none.",  
+    "owner": [  
+        "urn:ngsi-ld:Count:items:BHAE:96828546",  
+        "urn:ngsi-ld:Count:items:VDZM:08245550"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Count:items:JZGY:19989096",  
+        "urn:ngsi-ld:Count:items:VPFW:31471711"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -75.8259115,  
+            -9.81898  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Choice anything lawyer necessary open. Hope left believe science water bill. Cell several senior exist. Often a camera join picture.",  
+        "addressLocality": "Eight across him source democratic future create big.",  
+        "addressRegion": "Political memory how public almost. Affect local effort instead. Hard financial can small already.",  
+        "addressCountry": "Must happen degree truth something.",  
+        "postalCode": "Do thus address generation. Source medical many past realize service then. Work red central model professional small.",  
+        "postOfficeBoxNumber": "Myself until politics bag police citizen. Pretty contain process."  
+    },  
+    "areaServed": "Much maybe through you less cut after.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Choice anything lawyer necessary open. Hope left believe science water bill. Cell several senior exist. Often a camera join picture.",  
-    "addressLocality": "Eight across him source democratic future create big.",  
-    "addressRegion": "Political memory how public almost. Affect local effort instead. Hard financial can small already.",  
-    "addressCountry": "Must happen degree truth something.",  
-    "postalCode": "Do thus address generation. Source medical many past realize service then. Work red central model professional small.",  
-    "postOfficeBoxNumber": "Myself until politics bag police citizen. Pretty contain process."  
-  },  
-  "areaServed": "Much maybe through you less cut after.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### Count NGSI-LD normalized Example    
 Here is an example of a Count in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Count:id:BDUD:14746690",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1976-07-07T08:45:45Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1981-11-13T20:20:30Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Partner child majority industry. Responsibility prepare statement story security great style. Project phone hear pass city including growth role."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Kind under nature day near."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Side heavy model. Nice identify fund push start. Upon edge much ok from image reality. When employee require standard during blue out."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Would adult but road. Still few attention professional."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Bed begin trouble first always up thank study. Item maybe public commercial series task month. Age down simple ahead radio ball."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Count:items:DNXT:36065942",  
-      "urn:ngsi-ld:Count:items:RFBR:16164093"  
+    "id": "urn:ngsi-ld:Count:id:BDUD:14746690",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1976-07-07T08:45:45Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1981-11-13T20:20:30Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Partner child majority industry. Responsibility prepare statement story security great style. Project phone hear pass city including growth role."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Kind under nature day near."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Side heavy model. Nice identify fund push start. Upon edge much ok from image reality. When employee require standard during blue out."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Would adult but road. Still few attention professional."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Bed begin trouble first always up thank study. Item maybe public commercial series task month. Age down simple ahead radio ball."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Count:items:DNXT:36065942",  
+            "urn:ngsi-ld:Count:items:RFBR:16164093"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Count:items:ATKL:76510154"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -11.246975,  
+                52.808364  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Level company sure reach. Federal majority not protect name what where. Brother board nearly none reduce decision.",  
+            "addressLocality": "Should act early art take how. Save us Mr set large. Day source play property data piece or.",  
+            "addressRegion": "Develop suggest purpose compare system. She task behavior worker color up owner.",  
+            "addressCountry": "Party ten political contain town little. Community reality Mrs city.",  
+            "postalCode": "Pretty skill old believe. Hear least base back. Knowledge green money this east identify almost. Glass all improve.",  
+            "postOfficeBoxNumber": "Wear itself here field should watch. Number listen local do likely wrong begin."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Machine knowledge oil situation business mother see. Team group young."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Count:items:ATKL:76510154"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -11.246975,  
-        52.808364  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Level company sure reach. Federal majority not protect name what where. Brother board nearly none reduce decision.",  
-      "addressLocality": "Should act early art take how. Save us Mr set large. Day source play property data piece or.",  
-      "addressRegion": "Develop suggest purpose compare system. She task behavior worker color up owner.",  
-      "addressCountry": "Party ten political contain town little. Community reality Mrs city.",  
-      "postalCode": "Pretty skill old believe. Hear least base back. Knowledge green money this east identify almost. Glass all improve.",  
-      "postOfficeBoxNumber": "Wear itself here field should watch. Number listen local do likely wrong begin."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Machine knowledge oil situation business mother see. Team group young."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
