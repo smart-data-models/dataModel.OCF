@@ -1,17 +1,32 @@
-Entity: BatteryMaterial  
-=======================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entity: BatteryMaterial  
+=======================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.OCF/blob/master/BatteryMaterial/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description: **Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the battery material represented as an enumerated set of strings.**  
+version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `if`: The OCF Interface set supported by this Resource.  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `material`: The battery construction material (type).  - `n`: Friendly name of the Resource  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `rt`: The Resource Type.  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type`: NGSI entity type. It has to be BatteryMaterial    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `id[*]`: Unique identifier of the entity  - `if[array]`: The OCF Interface set supported by this Resource.  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `material[string]`: The battery construction material (type).  - `n[string]`: Friendly name of the Resource  - `name[string]`: The name of this item.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `rt[array]`: The Resource Type.  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type[string]`: NGSI entity type. It has to be BatteryMaterial  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Required properties  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 This data model comes from the original [Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels). It has been extended to comply with NGSI requirements.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Data Model description of properties  
 Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 BatteryMaterial:    
@@ -408,9 +423,14 @@ BatteryMaterial:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Example payloads    
 #### BatteryMaterial NGSI-v2 key-values Example    
 Here is an example of a BatteryMaterial in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:BatteryMaterial:id:BIGG:65391750",  
@@ -447,8 +467,10 @@ BatteryMaterial:
   "areaServed": "Reality drive forward enter travel game about. Successful who direction stay answer law vote certain."  
 }  
 ```  
+</details>  
 #### BatteryMaterial NGSI-v2 normalized Example    
 Here is an example of a BatteryMaterial in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -526,127 +548,141 @@ BatteryMaterial:
   }  
 }  
 ```  
+</details>  
 #### BatteryMaterial NGSI-LD key-values Example    
 Here is an example of a BatteryMaterial in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:BatteryMaterial:id:BIGG:65391750",  
-  "dateCreated": "2015-08-09T21:48:44Z",  
-  "dateModified": "2011-09-08T04:27:31Z",  
-  "source": "Value two guy eye music wife might. Pressure police relationship cause person. Million official tree say art we system.",  
-  "name": "Clearly turn series another kid. Arrive on firm TV the spring piece. Score man crime million stock peace risk.",  
-  "alternateName": "Company kid pull realize special maybe. Letter result prevent room. Position billion home discover industry often general.",  
-  "description": "Really road stay make face compare heart. Main note green item why ago.",  
-  "dataProvider": "Develop throw bar discussion. Head continue growth either these hundred. Story space expect but church.",  
-  "owner": [  
-    "urn:ngsi-ld:BatteryMaterial:items:DZKF:56488970",  
-    "urn:ngsi-ld:BatteryMaterial:items:XBYH:64008923"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:BatteryMaterial:items:HLUT:17324623",  
-    "urn:ngsi-ld:BatteryMaterial:items:RSRZ:45355989"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      72.3612535,  
-      145.935183  
+    "id": "urn:ngsi-ld:BatteryMaterial:id:BIGG:65391750",  
+    "dateCreated": "2015-08-09T21:48:44Z",  
+    "dateModified": "2011-09-08T04:27:31Z",  
+    "source": "Value two guy eye music wife might. Pressure police relationship cause person. Million official tree say art we system.",  
+    "name": "Clearly turn series another kid. Arrive on firm TV the spring piece. Score man crime million stock peace risk.",  
+    "alternateName": "Company kid pull realize special maybe. Letter result prevent room. Position billion home discover industry often general.",  
+    "description": "Really road stay make face compare heart. Main note green item why ago.",  
+    "dataProvider": "Develop throw bar discussion. Head continue growth either these hundred. Story space expect but church.",  
+    "owner": [  
+        "urn:ngsi-ld:BatteryMaterial:items:DZKF:56488970",  
+        "urn:ngsi-ld:BatteryMaterial:items:XBYH:64008923"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:BatteryMaterial:items:HLUT:17324623",  
+        "urn:ngsi-ld:BatteryMaterial:items:RSRZ:45355989"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            72.3612535,  
+            145.935183  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Break and six table agree. Year garden board claim mention total.",  
+        "addressLocality": "Camera responsibility interview animal not. Artist end ball me.",  
+        "addressRegion": "Say explain available Mrs floor fall security parent. Pick let challenge decade bed camera develop. Huge likely memory people great mention.",  
+        "addressCountry": "Black beat run collection. Country billion any whom doctor. Contain may keep south.",  
+        "postalCode": "Close organization man take type save. Tree space wind would off summer.",  
+        "postOfficeBoxNumber": "Build president action cover."  
+    },  
+    "areaServed": "Reality drive forward enter travel game about. Successful who direction stay answer law vote certain.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Break and six table agree. Year garden board claim mention total.",  
-    "addressLocality": "Camera responsibility interview animal not. Artist end ball me.",  
-    "addressRegion": "Say explain available Mrs floor fall security parent. Pick let challenge decade bed camera develop. Huge likely memory people great mention.",  
-    "addressCountry": "Black beat run collection. Country billion any whom doctor. Contain may keep south.",  
-    "postalCode": "Close organization man take type save. Tree space wind would off summer.",  
-    "postOfficeBoxNumber": "Build president action cover."  
-  },  
-  "areaServed": "Reality drive forward enter travel game about. Successful who direction stay answer law vote certain.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### BatteryMaterial NGSI-LD normalized Example    
 Here is an example of a BatteryMaterial in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:BatteryMaterial:id:HCTC:40821775",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2017-07-21T12:56:20Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1993-07-01T23:00:49Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Live current program whom order throughout. Then as sure daughter may. Head adult result increase edge lay."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Himself central situation prepare that adult point."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Type statement only air dark open despite. Ball college military number."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Modern affect item. Bag better according modern similar week. Outside interest beat often do. Protect debate evidence range city some."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Choose either although once. Population director color fall. Everyone whose bit. Economy lot your organization she road learn plan."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:BatteryMaterial:items:JHVW:48519448",  
-      "urn:ngsi-ld:BatteryMaterial:items:IZMM:77243061"  
+    "id": "urn:ngsi-ld:BatteryMaterial:id:HCTC:40821775",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2017-07-21T12:56:20Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1993-07-01T23:00:49Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Live current program whom order throughout. Then as sure daughter may. Head adult result increase edge lay."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Himself central situation prepare that adult point."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Type statement only air dark open despite. Ball college military number."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Modern affect item. Bag better according modern similar week. Outside interest beat often do. Protect debate evidence range city some."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Choose either although once. Population director color fall. Everyone whose bit. Economy lot your organization she road learn plan."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:BatteryMaterial:items:JHVW:48519448",  
+            "urn:ngsi-ld:BatteryMaterial:items:IZMM:77243061"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:BatteryMaterial:items:NXED:66845258"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                3.9893905,  
+                -149.157008  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Probably ask half behavior risk. Citizen school tough government north simple former. American view rock school fill true. Away behind level whether.",  
+            "addressLocality": "Class amount again system act consumer subject. Left keep building identify case. Decade create reveal billion Mr. Clear purpose stand piece today bit who.",  
+            "addressRegion": "Be other official life. Court first available find face across task.",  
+            "addressCountry": "Public home rock point maybe design. Police that whom morning inside coach choose. Sell whole remain range account candidate over paper.",  
+            "postalCode": "Ten heavy recently miss concern. Race several great know. Care once level western trouble.",  
+            "postOfficeBoxNumber": "Specific cause example government nice free window product. And she water she between."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Yourself activity wrong pattern Mrs important. Finally moment western wish strategy likely be."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:BatteryMaterial:items:NXED:66845258"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        3.9893905,  
-        -149.157008  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Probably ask half behavior risk. Citizen school tough government north simple former. American view rock school fill true. Away behind level whether.",  
-      "addressLocality": "Class amount again system act consumer subject. Left keep building identify case. Decade create reveal billion Mr. Clear purpose stand piece today bit who.",  
-      "addressRegion": "Be other official life. Court first available find face across task.",  
-      "addressCountry": "Public home rock point maybe design. Police that whom morning inside coach choose. Sell whole remain range account candidate over paper.",  
-      "postalCode": "Ten heavy recently miss concern. Race several great know. Care once level western trouble.",  
-      "postOfficeBoxNumber": "Specific cause example government nice free window product. And she water she between."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Yourself activity wrong pattern Mrs important. Finally moment western wish strategy likely be."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
