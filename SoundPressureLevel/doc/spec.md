@@ -1,17 +1,32 @@
-Entity: SoundPressureLevel  
-==========================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entity: SoundPressureLevel  
+==========================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.OCF/blob/master/SoundPressureLevel/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description: **Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes a measured sound pressure in dB.  The Sound pressure is a property of the sound field at a point in space where the point is the actual location of the sensor.**  
+version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `if`: The OCF Interface set supported by this Resource.  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n`: Friendly name of the Resource  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `rt`: The Resource Type.  - `seeAlso`: list of uri pointing to additional resources about the item  - `sounddB`: The sound pressure level in dB.  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type`: NGSI entity type. It has to be SoundPressureLevel    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `id[*]`: Unique identifier of the entity  - `if[array]`: The OCF Interface set supported by this Resource.  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n[string]`: Friendly name of the Resource  - `name[string]`: The name of this item.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `rt[array]`: The Resource Type.  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `sounddB[number]`: The sound pressure level in dB.  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type[string]`: NGSI entity type. It has to be SoundPressureLevel  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Required properties  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 This data model comes from the original [Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels). It has been extended to comply with NGSI requirements.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Data Model description of properties  
 Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 SoundPressureLevel:    
@@ -330,9 +345,14 @@ SoundPressureLevel:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Example payloads    
 #### SoundPressureLevel NGSI-v2 key-values Example    
 Here is an example of a SoundPressureLevel in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:SoundPressureLevel:id:NLPM:36024607",  
@@ -369,8 +389,10 @@ SoundPressureLevel:
   "areaServed": "Well industry order. Service choice out. Choice watch above compare finish develop director. Soon hold order somebody skin toward."  
 }  
 ```  
+</details>  
 #### SoundPressureLevel NGSI-v2 normalized Example    
 Here is an example of a SoundPressureLevel in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -448,127 +470,141 @@ SoundPressureLevel:
   }  
 }  
 ```  
+</details>  
 #### SoundPressureLevel NGSI-LD key-values Example    
 Here is an example of a SoundPressureLevel in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:SoundPressureLevel:id:NLPM:36024607",  
-  "dateCreated": "1994-11-21T08:10:27Z",  
-  "dateModified": "1994-02-01T16:52:26Z",  
-  "source": "Like sure likely scientist family series away. From gun image style factor marriage box.",  
-  "name": "Street lose meeting.",  
-  "alternateName": "Enter many doctor election. Half check side but often. Daughter prove whose television other. Lose drive action attorney window sister.",  
-  "description": "Mean should enter human. Black foot decide represent opportunity thing nor goal. Public become painting none seek.",  
-  "dataProvider": "Article write next money. Take feeling music happy fight. Increase one remember respond strategy young.",  
-  "owner": [  
-    "urn:ngsi-ld:SoundPressureLevel:items:UYKY:61155327",  
-    "urn:ngsi-ld:SoundPressureLevel:items:KRAM:94468927"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:SoundPressureLevel:items:PZKV:28652036",  
-    "urn:ngsi-ld:SoundPressureLevel:items:ETTY:68001950"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      9.316914,  
-      107.47875  
+    "id": "urn:ngsi-ld:SoundPressureLevel:id:NLPM:36024607",  
+    "dateCreated": "1994-11-21T08:10:27Z",  
+    "dateModified": "1994-02-01T16:52:26Z",  
+    "source": "Like sure likely scientist family series away. From gun image style factor marriage box.",  
+    "name": "Street lose meeting.",  
+    "alternateName": "Enter many doctor election. Half check side but often. Daughter prove whose television other. Lose drive action attorney window sister.",  
+    "description": "Mean should enter human. Black foot decide represent opportunity thing nor goal. Public become painting none seek.",  
+    "dataProvider": "Article write next money. Take feeling music happy fight. Increase one remember respond strategy young.",  
+    "owner": [  
+        "urn:ngsi-ld:SoundPressureLevel:items:UYKY:61155327",  
+        "urn:ngsi-ld:SoundPressureLevel:items:KRAM:94468927"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:SoundPressureLevel:items:PZKV:28652036",  
+        "urn:ngsi-ld:SoundPressureLevel:items:ETTY:68001950"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            9.316914,  
+            107.47875  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Morning some consider finally ball. Run spring radio magazine history.",  
+        "addressLocality": "Return establish east high course eye large. More if network tend.",  
+        "addressRegion": "Move newspaper really tough protect capital series.",  
+        "addressCountry": "Hour through measure across community speak. Least among card particular feeling anything effect. Agency day help physical few former.",  
+        "postalCode": "Hold subject unit spend. Out boy make like town almost.",  
+        "postOfficeBoxNumber": "Quality campaign how one past. Respond culture unit table step. Necessary charge responsibility."  
+    },  
+    "areaServed": "Well industry order. Service choice out. Choice watch above compare finish develop director. Soon hold order somebody skin toward.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Morning some consider finally ball. Run spring radio magazine history.",  
-    "addressLocality": "Return establish east high course eye large. More if network tend.",  
-    "addressRegion": "Move newspaper really tough protect capital series.",  
-    "addressCountry": "Hour through measure across community speak. Least among card particular feeling anything effect. Agency day help physical few former.",  
-    "postalCode": "Hold subject unit spend. Out boy make like town almost.",  
-    "postOfficeBoxNumber": "Quality campaign how one past. Respond culture unit table step. Necessary charge responsibility."  
-  },  
-  "areaServed": "Well industry order. Service choice out. Choice watch above compare finish develop director. Soon hold order somebody skin toward.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### SoundPressureLevel NGSI-LD normalized Example    
 Here is an example of a SoundPressureLevel in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:SoundPressureLevel:id:MFVG:52496238",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1976-06-02T06:04:18Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2017-01-21T09:12:27Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Rise television nor which suggest. Seek head apply defense model. Reduce catch worker matter."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Improve measure improve light test people choice along. Both reduce industry degree."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Expect yourself blood argue and task. This food fight culture fill newspaper. How beyond station."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Allow event describe become. Property me away pressure. Use protect arrive race its since."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Opportunity there police real know ground real. Land cause section value find."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:SoundPressureLevel:items:NQAZ:75992265",  
-      "urn:ngsi-ld:SoundPressureLevel:items:DZSC:24608114"  
+    "id": "urn:ngsi-ld:SoundPressureLevel:id:MFVG:52496238",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1976-06-02T06:04:18Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2017-01-21T09:12:27Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Rise television nor which suggest. Seek head apply defense model. Reduce catch worker matter."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Improve measure improve light test people choice along. Both reduce industry degree."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Expect yourself blood argue and task. This food fight culture fill newspaper. How beyond station."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Allow event describe become. Property me away pressure. Use protect arrive race its since."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Opportunity there police real know ground real. Land cause section value find."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:SoundPressureLevel:items:NQAZ:75992265",  
+            "urn:ngsi-ld:SoundPressureLevel:items:DZSC:24608114"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:SoundPressureLevel:items:VANZ:73429763"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                31.8568995,  
+                -81.615159  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Middle would thousand present. Hundred prepare near whole far strategy partner.",  
+            "addressLocality": "Goal show into serious. Each magazine floor page job. I effort person put watch.",  
+            "addressRegion": "Sure so first eye. Marriage thought claim adult church suggest price. Carry wish ago federal dream sort once.",  
+            "addressCountry": "With bag learn main foot sense personal.",  
+            "postalCode": "Bill action individual one early issue. Occur within bag because door reduce even.",  
+            "postOfficeBoxNumber": "Today store fill certain. Voice wear husband force certain. Down million raise may."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "In always vote less along. Game security arm arrive talk maybe both. Save song machine three share amount."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:SoundPressureLevel:items:VANZ:73429763"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        31.8568995,  
-        -81.615159  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Middle would thousand present. Hundred prepare near whole far strategy partner.",  
-      "addressLocality": "Goal show into serious. Each magazine floor page job. I effort person put watch.",  
-      "addressRegion": "Sure so first eye. Marriage thought claim adult church suggest price. Carry wish ago federal dream sort once.",  
-      "addressCountry": "With bag learn main foot sense personal.",  
-      "postalCode": "Bill action individual one early issue. Occur within bag because door reduce even.",  
-      "postOfficeBoxNumber": "Today store fill certain. Voice wear husband force certain. Down million raise may."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "In always vote less along. Game security arm arrive talk maybe both. Save song machine three share amount."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
