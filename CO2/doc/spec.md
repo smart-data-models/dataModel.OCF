@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entity: CO2  
-===========  
+===========<!-- /10-Header -->  
+<!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.OCF/blob/master/CO2/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description: **This Resource describes whether carbon dioxide has been sensed or not.The Property 'value' is a boolean.A value of 'true' means that carbon dioxide has been detected.A value of 'false' means that carbon dioxide has not been detected.**  
 version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `if`: The OCF Interface set supported by this Resource  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `measurement`: Measured value for this sensor, units are in ppm  - `n`: Friendly name of the Resource  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `precision`: When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision  - `range`: The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.  - `rt`: The Resource Type  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `step`: Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.  - `type`: NGSI entity type. It has to be CO2  - `value`: The carbon dioxide indicator, true = sensed, false = not sensed.    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `id[*]`: Unique identifier of the entity  - `if[array]`: The OCF Interface set supported by this Resource  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `measurement[number]`: Measured value for this sensor, units are in ppm  - `n[string]`: Friendly name of the Resource  - `name[string]`: The name of this item.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `precision[number]`: When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision  - `range[array]`: The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.  - `rt[array]`: The Resource Type  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `step[number]`: Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.  - `type[string]`: NGSI entity type. It has to be CO2  - `value[boolean]`: The carbon dioxide indicator, true = sensed, false = not sensed.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Required properties  
-- `id`  - `type`  - `value`    
+- `id`  - `type`  - `value`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Data Model adapted from the original created by the Open Connectivity Foundation. Original repository in https://github.com/openconnectivityfoundation/IoTDataModels  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Data Model description of properties  
 Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 CO2:    
@@ -361,9 +374,14 @@ CO2:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Example payloads    
 #### CO2 NGSI-v2 key-values Example    
 Here is an example of a CO2 in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:CO2:id:CCNH:15843409",  
@@ -430,8 +448,10 @@ CO2:
   "type": "CO2"  
 }  
 ```  
+</details>  
 #### CO2 NGSI-v2 normalized Example    
 Here is an example of a CO2 in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -566,198 +586,212 @@ CO2:
   }  
 }  
 ```  
+</details>  
 #### CO2 NGSI-LD key-values Example    
 Here is an example of a CO2 in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:CO2:id:CCNH:15843409",  
-  "dateCreated": "1986-12-14T04:30:52Z",  
-  "dateModified": "2015-09-11T00:07:26Z",  
-  "source": "Prove action boy today city do. Spend effort watch first.",  
-  "name": "Meeting could respond individual bed receive four. Key worker suggest learn Congress.",  
-  "alternateName": "Collection small find per word cup explain check. Body list they American newspaper purpose although.",  
-  "description": "Theory consider teach north news different. Deal partner money.",  
-  "dataProvider": "Because officer quite walk next reveal recognize. Place break fight take.",  
-  "owner": [  
-    "urn:ngsi-ld:CO2:items:UXPG:87304304",  
-    "urn:ngsi-ld:CO2:items:USYI:41576659"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:CO2:items:CMQE:26360445",  
-    "urn:ngsi-ld:CO2:items:SUUK:32060695"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -38.7693965,  
-      35.719856  
+    "id": "urn:ngsi-ld:CO2:id:CCNH:15843409",  
+    "dateCreated": "1986-12-14T04:30:52Z",  
+    "dateModified": "2015-09-11T00:07:26Z",  
+    "source": "Prove action boy today city do. Spend effort watch first.",  
+    "name": "Meeting could respond individual bed receive four. Key worker suggest learn Congress.",  
+    "alternateName": "Collection small find per word cup explain check. Body list they American newspaper purpose although.",  
+    "description": "Theory consider teach north news different. Deal partner money.",  
+    "dataProvider": "Because officer quite walk next reveal recognize. Place break fight take.",  
+    "owner": [  
+        "urn:ngsi-ld:CO2:items:UXPG:87304304",  
+        "urn:ngsi-ld:CO2:items:USYI:41576659"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:CO2:items:CMQE:26360445",  
+        "urn:ngsi-ld:CO2:items:SUUK:32060695"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -38.7693965,  
+            35.719856  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Me force entire money finish ten sure property. Tax good probably shake discuss political general glass.",  
+        "addressLocality": "Ground everything join fish apply. Yet small easy door. Somebody bill benefit individual happy relationship. Tax all source evening particular charge.",  
+        "addressRegion": "Hold cut attention community wish form. Board call simple operation notice range industry. Outside institution deep nor.",  
+        "addressCountry": "Night state issue although however system development. Much great authority claim no church black agency.",  
+        "postalCode": "Wrong move make job themselves still federal pull. Relationship everyone family. Audience trial article book soldier.",  
+        "postOfficeBoxNumber": "Fall light black several Mrs Congress knowledge hear. Door big population."  
+    },  
+    "areaServed": "Cause easy sister themselves protect type field.",  
+    "rt": [  
+        "oic.r.sensor.carbondioxide",  
+        "oic.r.sensor.carbondioxide"  
+    ],  
+    "value": {  
+        "type": "Property",  
+        "value": true  
+    },  
+    "measurement": {  
+        "type": "Property",  
+        "value": 80.6  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 106.0  
+    },  
+    "n": "Itself now ball so. Quality upon outside risk likely stock budget.",  
+    "range": [  
+        335.3,  
+        963.5  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 383.7  
+    },  
+    "if": [  
+        "oic.if.s",  
+        "oic.if.s"  
+    ],  
+    "type": "CO2",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Me force entire money finish ten sure property. Tax good probably shake discuss political general glass.",  
-    "addressLocality": "Ground everything join fish apply. Yet small easy door. Somebody bill benefit individual happy relationship. Tax all source evening particular charge.",  
-    "addressRegion": "Hold cut attention community wish form. Board call simple operation notice range industry. Outside institution deep nor.",  
-    "addressCountry": "Night state issue although however system development. Much great authority claim no church black agency.",  
-    "postalCode": "Wrong move make job themselves still federal pull. Relationship everyone family. Audience trial article book soldier.",  
-    "postOfficeBoxNumber": "Fall light black several Mrs Congress knowledge hear. Door big population."  
-  },  
-  "areaServed": "Cause easy sister themselves protect type field.",  
-  "rt": [  
-    "oic.r.sensor.carbondioxide",  
-    "oic.r.sensor.carbondioxide"  
-  ],  
-  "value": {  
-    "type": "Property",  
-    "value": true  
-  },  
-  "measurement": {  
-    "type": "Property",  
-    "value": 80.6  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 106.0  
-  },  
-  "n": "Itself now ball so. Quality upon outside risk likely stock budget.",  
-  "range": [  
-    335.3,  
-    963.5  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 383.7  
-  },  
-  "if": [  
-    "oic.if.s",  
-    "oic.if.s"  
-  ],  
-  "type": "CO2",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### CO2 NGSI-LD normalized Example    
 Here is an example of a CO2 in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:CO2:id:SVES:89502461",  
-  "dateCreated": {  
-    "type": "Property",  
+    "id": "urn:ngsi-ld:CO2:id:SVES:89502461",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1980-11-02T05:43:09Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1987-05-22T08:24:10Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Receive wife price issue laugh campaign. Spend detail case practice as. Generation in describe body friend ground style."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Allow set least expect we person. Interview what change class specific. Energy put into military identify."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Deep view report which budget. Friend top because purpose word nature box. Nature south campaign treatment week wrong."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Picture generation use star among. Either send future scene military."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Born say already sense song author cut. Task place discuss score."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:CO2:items:JOUW:60859756",  
+            "urn:ngsi-ld:CO2:items:DGAF:22248342"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:CO2:items:ETQR:90005195"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                27.2603735,  
+                -163.603735  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Water fish floor end every lose. Indicate trouble authority pick room million catch. Kid for receive well.",  
+            "addressLocality": "Fall to thing second whom. First them already two until.",  
+            "addressRegion": "High thus national call staff concern. Value range order artist. Because culture your will thus.",  
+            "addressCountry": "Place word thank book culture. Though project building guy action open doctor. Whole population new music chance manage.",  
+            "postalCode": "Third according teach stock true pull significant over. Suggest wife foot mouth mother since support.",  
+            "postOfficeBoxNumber": "Somebody left car growth."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Soon discover leg fight each shoulder eight set. Majority Republican play show standard well."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.sensor.carbondioxide"  
+        ]  
+    },  
     "value": {  
-      "@type": "DateTime",  
-      "@value": "1980-11-02T05:43:09Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1987-05-22T08:24:10Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Receive wife price issue laugh campaign. Spend detail case practice as. Generation in describe body friend ground style."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Allow set least expect we person. Interview what change class specific. Energy put into military identify."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Deep view report which budget. Friend top because purpose word nature box. Nature south campaign treatment week wrong."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Picture generation use star among. Either send future scene military."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Born say already sense song author cut. Task place discuss score."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:CO2:items:JOUW:60859756",  
-      "urn:ngsi-ld:CO2:items:DGAF:22248342"  
+        "type": "Property",  
+        "value": false  
+    },  
+    "measurement": {  
+        "type": "Property",  
+        "value": 874.2  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 765.9  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Hit his kid."  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            316.3,  
+            505.4  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 641.7  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.s",  
+            "oic.if.s"  
+        ]  
+    },  
+    "type": "CO2",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:CO2:items:ETQR:90005195"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        27.2603735,  
-        -163.603735  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Water fish floor end every lose. Indicate trouble authority pick room million catch. Kid for receive well.",  
-      "addressLocality": "Fall to thing second whom. First them already two until.",  
-      "addressRegion": "High thus national call staff concern. Value range order artist. Because culture your will thus.",  
-      "addressCountry": "Place word thank book culture. Though project building guy action open doctor. Whole population new music chance manage.",  
-      "postalCode": "Third according teach stock true pull significant over. Suggest wife foot mouth mother since support.",  
-      "postOfficeBoxNumber": "Somebody left car growth."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Soon discover leg fight each shoulder eight set. Majority Republican play show standard well."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.sensor.carbondioxide"  
-    ]  
-  },  
-  "value": {  
-    "type": "Property",  
-    "value": false  
-  },  
-  "measurement": {  
-    "type": "Property",  
-    "value": 874.2  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 765.9  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Hit his kid."  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      316.3,  
-      505.4  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 641.7  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.s",  
-      "oic.if.s"  
-    ]  
-  },  
-  "type": "CO2",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
