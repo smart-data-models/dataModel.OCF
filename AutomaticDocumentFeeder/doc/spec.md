@@ -1,17 +1,32 @@
-Entity: AutomaticDocumentFeeder  
-===============================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entity: AutomaticDocumentFeeder  
+===============================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.OCF/blob/master/AutomaticDocumentFeeder/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description: **Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the state of an automatic document feeder, typically used with a scanner. The Property 'adfstates' and 'currentAdfState' are read only. The Property 'adfStates' is an array of the possible operational states. The Property 'adfProcessing' is the OK state, other states are errors or require 'user attention'. The currentAdfState is the current value of the ADF state on the device.**  
+version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-- `address`: The mailing address  - `adfStates`: The array of the possible adf states.  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `currentAdfState`: The current adf state.  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `if`: The OCF Interface set supported by this Resource.  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n`: Friendly name of the Resource  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `rt`: The Resource Type.  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type`: NGSI entity type. It has to be AutomaticDocumentFeeder    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `adfStates[array]`: The array of the possible adf states.  - `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `currentAdfState[string]`: The current adf state.  - `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `id[*]`: Unique identifier of the entity  - `if[array]`: The OCF Interface set supported by this Resource.  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n[string]`: Friendly name of the Resource  - `name[string]`: The name of this item.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `rt[array]`: The Resource Type.  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type[string]`: NGSI entity type. It has to be AutomaticDocumentFeeder  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Required properties  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 This data model comes from the original [Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels). It has been extended to comply with NGSI requirements.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Data Model description of properties  
 Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 AutomaticDocumentFeeder:    
@@ -338,9 +353,14 @@ AutomaticDocumentFeeder:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Example payloads    
 #### AutomaticDocumentFeeder NGSI-v2 key-values Example    
 Here is an example of a AutomaticDocumentFeeder in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:AutomaticDocumentFeeder:id:ZQKU:56184669",  
@@ -377,8 +397,10 @@ AutomaticDocumentFeeder:
   "areaServed": "Future receive among quite price. This seek even mouth character ahead agree. While beat sound that fast particularly business."  
 }  
 ```  
+</details>  
 #### AutomaticDocumentFeeder NGSI-v2 normalized Example    
 Here is an example of a AutomaticDocumentFeeder in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -456,127 +478,141 @@ AutomaticDocumentFeeder:
   }  
 }  
 ```  
+</details>  
 #### AutomaticDocumentFeeder NGSI-LD key-values Example    
 Here is an example of a AutomaticDocumentFeeder in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:AutomaticDocumentFeeder:id:ZQKU:56184669",  
-  "dateCreated": "1976-12-18T06:20:43Z",  
-  "dateModified": "1993-01-30T15:42:46Z",  
-  "source": "Stock how account owner PM floor. Easy public lead star where such next.",  
-  "name": "Black institution since leave remain across. Structure low hand pick TV main end. Seven blue few where author industry some.",  
-  "alternateName": "Need cut professional campaign. Anything rest citizen analysis catch significant film. Learn important force consider individual any field specific.",  
-  "description": "Second task charge need foot stuff serious. Reflect blue the expect husband. Own require language attention. Participant trouble note three relationship.",  
-  "dataProvider": "Game full result head professor. Fine stage response could gas within. Suddenly almost pattern simple wide majority wife manager.",  
-  "owner": [  
-    "urn:ngsi-ld:AutomaticDocumentFeeder:items:JIZT:98809158",  
-    "urn:ngsi-ld:AutomaticDocumentFeeder:items:PLTN:27424383"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:AutomaticDocumentFeeder:items:IGAP:14582256",  
-    "urn:ngsi-ld:AutomaticDocumentFeeder:items:MLZR:78921517"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -29.3315105,  
-      89.803881  
+    "id": "urn:ngsi-ld:AutomaticDocumentFeeder:id:ZQKU:56184669",  
+    "dateCreated": "1976-12-18T06:20:43Z",  
+    "dateModified": "1993-01-30T15:42:46Z",  
+    "source": "Stock how account owner PM floor. Easy public lead star where such next.",  
+    "name": "Black institution since leave remain across. Structure low hand pick TV main end. Seven blue few where author industry some.",  
+    "alternateName": "Need cut professional campaign. Anything rest citizen analysis catch significant film. Learn important force consider individual any field specific.",  
+    "description": "Second task charge need foot stuff serious. Reflect blue the expect husband. Own require language attention. Participant trouble note three relationship.",  
+    "dataProvider": "Game full result head professor. Fine stage response could gas within. Suddenly almost pattern simple wide majority wife manager.",  
+    "owner": [  
+        "urn:ngsi-ld:AutomaticDocumentFeeder:items:JIZT:98809158",  
+        "urn:ngsi-ld:AutomaticDocumentFeeder:items:PLTN:27424383"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:AutomaticDocumentFeeder:items:IGAP:14582256",  
+        "urn:ngsi-ld:AutomaticDocumentFeeder:items:MLZR:78921517"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -29.3315105,  
+            89.803881  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Full standard major. Blood seem live son challenge pass.",  
+        "addressLocality": "Really fill scientist toward write identify only describe. Always difference difficult option.",  
+        "addressRegion": "Also bag challenge against read. Capital wonder enjoy per. Baby structure letter assume contain.",  
+        "addressCountry": "Soldier election after kid particular always. Agency decade similar scientist. Collection mother evidence pretty add.",  
+        "postalCode": "Truth network two recent. City scene institution represent. Game understand some church interest sort course.",  
+        "postOfficeBoxNumber": "Support born few sea family move. He could quite give rule him candidate."  
+    },  
+    "areaServed": "Future receive among quite price. This seek even mouth character ahead agree. While beat sound that fast particularly business.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Full standard major. Blood seem live son challenge pass.",  
-    "addressLocality": "Really fill scientist toward write identify only describe. Always difference difficult option.",  
-    "addressRegion": "Also bag challenge against read. Capital wonder enjoy per. Baby structure letter assume contain.",  
-    "addressCountry": "Soldier election after kid particular always. Agency decade similar scientist. Collection mother evidence pretty add.",  
-    "postalCode": "Truth network two recent. City scene institution represent. Game understand some church interest sort course.",  
-    "postOfficeBoxNumber": "Support born few sea family move. He could quite give rule him candidate."  
-  },  
-  "areaServed": "Future receive among quite price. This seek even mouth character ahead agree. While beat sound that fast particularly business.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### AutomaticDocumentFeeder NGSI-LD normalized Example    
 Here is an example of a AutomaticDocumentFeeder in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:AutomaticDocumentFeeder:id:IUVF:43770942",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2022-01-16T06:44:54Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1989-10-01T00:48:43Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Ever total along choice miss industry."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Fill not worry of drug child."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Enter be data. Task add rather surface through event cover. Against like reach process cell this."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Public must along name purpose explain. None green nation before give new tend."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Grow amount cut believe. Guess street scene summer kid simple project. It investment smile bit wife beyond."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:AutomaticDocumentFeeder:items:XFLV:89902711",  
-      "urn:ngsi-ld:AutomaticDocumentFeeder:items:BXLH:66680147"  
+    "id": "urn:ngsi-ld:AutomaticDocumentFeeder:id:IUVF:43770942",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2022-01-16T06:44:54Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1989-10-01T00:48:43Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Ever total along choice miss industry."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Fill not worry of drug child."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Enter be data. Task add rather surface through event cover. Against like reach process cell this."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Public must along name purpose explain. None green nation before give new tend."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Grow amount cut believe. Guess street scene summer kid simple project. It investment smile bit wife beyond."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:AutomaticDocumentFeeder:items:XFLV:89902711",  
+            "urn:ngsi-ld:AutomaticDocumentFeeder:items:BXLH:66680147"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:AutomaticDocumentFeeder:items:IFQO:59716788"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -36.977523,  
+                -32.719309  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Speech save leader guy. Table without church western. Color hour represent outside.",  
+            "addressLocality": "Serve owner court remain.",  
+            "addressRegion": "Fish in simple eat too space reduce. Skill social three phone coach local out point. Sea series official sister benefit radio cup.",  
+            "addressCountry": "Current something after enough human population. Message oil career present day when. Money often interest hand rather question.",  
+            "postalCode": "Home add modern maintain local. Rise grow sit close beyond enter. Different attention garden push.",  
+            "postOfficeBoxNumber": "Customer suggest enter specific event involve learn interest. Month standard myself maintain provide three."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Child significant sing nice his establish beat. Include eight allow determine work. Know perform arm within inside police."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:AutomaticDocumentFeeder:items:IFQO:59716788"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -36.977523,  
-        -32.719309  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Speech save leader guy. Table without church western. Color hour represent outside.",  
-      "addressLocality": "Serve owner court remain.",  
-      "addressRegion": "Fish in simple eat too space reduce. Skill social three phone coach local out point. Sea series official sister benefit radio cup.",  
-      "addressCountry": "Current something after enough human population. Message oil career present day when. Money often interest hand rather question.",  
-      "postalCode": "Home add modern maintain local. Rise grow sit close beyond enter. Different attention garden push.",  
-      "postOfficeBoxNumber": "Customer suggest enter specific event involve learn interest. Month standard myself maintain provide three."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Child significant sing nice his establish beat. Include eight allow determine work. Know perform arm within inside police."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
