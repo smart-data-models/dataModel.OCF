@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entity: ContinuousGlucoseMeterSamplingInterval  
-==============================================  
+==============================================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.OCF/blob/master/ContinuousGlucoseMeterSamplingInterval/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description: **This Resource describes the Properties associated with Sampling Interval for Continuous Glucose Meter (CGM).**  
 version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `if`: The OCF Interface set supported by this Resource.  - `interval`: This Property describes the Sampling interval in seconds.  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n`: Friendly name of the Resource  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `precision`: When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision  - `range`: The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.  - `rt`: The Resource Type.  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `step`: Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.  - `type`: NGSI entity type. It has to be ContinuousGlucoseMeterSamplingInterval    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `id[*]`: Unique identifier of the entity  - `if[array]`: The OCF Interface set supported by this Resource.  - `interval[number]`: This Property describes the Sampling interval in seconds.  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n[string]`: Friendly name of the Resource  - `name[string]`: The name of this item.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `precision[number]`: When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision  - `range[array]`: The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.  - `rt[array]`: The Resource Type.  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `step[number]`: Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.  - `type[string]`: NGSI entity type. It has to be ContinuousGlucoseMeterSamplingInterval  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Required properties  
-- `id`  - `interval`  - `type`    
+- `id`  - `interval`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Data Model adapted from the original created by the Open Connectivity Foundation. Original repository in https://github.com/openconnectivityfoundation/IoTDataModels  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Data Model description of properties  
 Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ContinuousGlucoseMeterSamplingInterval:    
@@ -354,9 +367,14 @@ ContinuousGlucoseMeterSamplingInterval:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Example payloads    
 #### ContinuousGlucoseMeterSamplingInterval NGSI-v2 key-values Example    
 Here is an example of a ContinuousGlucoseMeterSamplingInterval in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:id:OOGF:69870196",  
@@ -419,8 +437,10 @@ ContinuousGlucoseMeterSamplingInterval:
   "type": "ContinuousGlucoseMeterSamplingInterval"  
 }  
 ```  
+</details>  
 #### ContinuousGlucoseMeterSamplingInterval NGSI-v2 normalized Example    
 Here is an example of a ContinuousGlucoseMeterSamplingInterval in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -548,189 +568,203 @@ ContinuousGlucoseMeterSamplingInterval:
   }  
 }  
 ```  
+</details>  
 #### ContinuousGlucoseMeterSamplingInterval NGSI-LD key-values Example    
 Here is an example of a ContinuousGlucoseMeterSamplingInterval in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:id:OOGF:69870196",  
-  "dateCreated": "1972-02-12T03:37:16Z",  
-  "dateModified": "1976-12-01T04:04:51Z",  
-  "source": "Set generation health southern skin program stage consumer. Three old number turn soon see eat small.",  
-  "name": "Affect night poor cut event player operation.",  
-  "alternateName": "Range effort interview mention. Age article education decade great form clearly. Rock wish national.",  
-  "description": "Culture people risk. Radio reality then front art. Explain add remain issue white modern.",  
-  "dataProvider": "Shake kitchen star business similar late best. Want shake yard wish.",  
-  "owner": [  
-    "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:OHIL:56337429",  
-    "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:QAIF:17459576"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:MFBH:37527794",  
-    "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:KQOY:03988106"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -83.0665985,  
-      38.283775  
+    "id": "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:id:OOGF:69870196",  
+    "dateCreated": "1972-02-12T03:37:16Z",  
+    "dateModified": "1976-12-01T04:04:51Z",  
+    "source": "Set generation health southern skin program stage consumer. Three old number turn soon see eat small.",  
+    "name": "Affect night poor cut event player operation.",  
+    "alternateName": "Range effort interview mention. Age article education decade great form clearly. Rock wish national.",  
+    "description": "Culture people risk. Radio reality then front art. Explain add remain issue white modern.",  
+    "dataProvider": "Shake kitchen star business similar late best. Want shake yard wish.",  
+    "owner": [  
+        "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:OHIL:56337429",  
+        "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:QAIF:17459576"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:MFBH:37527794",  
+        "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:KQOY:03988106"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -83.0665985,  
+            38.283775  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Writer fire particular impact force. Southern couple traditional cover year. Instead effort resource American instead foreign magazine. Mean go often back goal guy easy anything.",  
+        "addressLocality": "Future little find.",  
+        "addressRegion": "Success two exist wind big. Concern bill management interesting step project wear.",  
+        "addressCountry": "Generation light exist in well sound even want. Draw these main live cause.",  
+        "postalCode": "Church begin dinner but bank step. Can else growth inside human better. When off remain industry marriage car. Either commercial possible detail yard view us.",  
+        "postOfficeBoxNumber": "Party though eat research stand either strong. Cultural eight mean maybe. Leave structure might out check peace most ok."  
+    },  
+    "areaServed": "Despite over soon share. Follow season agency.",  
+    "interval": {  
+        "type": "Property",  
+        "value": 111.1  
+    },  
+    "rt": [  
+        "oic.r.cgm.samplinginterval",  
+        "oic.r.cgm.samplinginterval"  
+    ],  
+    "n": "Authority all before career up. Officer also order dark top involve feel. Form bill fear teach walk system back.",  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.baseline"  
+    ],  
+    "range": [  
+        669.3,  
+        970.8  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 583.7  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 640.4  
+    },  
+    "type": "ContinuousGlucoseMeterSamplingInterval",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Writer fire particular impact force. Southern couple traditional cover year. Instead effort resource American instead foreign magazine. Mean go often back goal guy easy anything.",  
-    "addressLocality": "Future little find.",  
-    "addressRegion": "Success two exist wind big. Concern bill management interesting step project wear.",  
-    "addressCountry": "Generation light exist in well sound even want. Draw these main live cause.",  
-    "postalCode": "Church begin dinner but bank step. Can else growth inside human better. When off remain industry marriage car. Either commercial possible detail yard view us.",  
-    "postOfficeBoxNumber": "Party though eat research stand either strong. Cultural eight mean maybe. Leave structure might out check peace most ok."  
-  },  
-  "areaServed": "Despite over soon share. Follow season agency.",  
-  "interval": {  
-    "type": "Property",  
-    "value": 111.1  
-  },  
-  "rt": [  
-    "oic.r.cgm.samplinginterval",  
-    "oic.r.cgm.samplinginterval"  
-  ],  
-  "n": "Authority all before career up. Officer also order dark top involve feel. Form bill fear teach walk system back.",  
-  "if": [  
-    "oic.if.baseline",  
-    "oic.if.baseline"  
-  ],  
-  "range": [  
-    669.3,  
-    970.8  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 583.7  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 640.4  
-  },  
-  "type": "ContinuousGlucoseMeterSamplingInterval",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### ContinuousGlucoseMeterSamplingInterval NGSI-LD normalized Example    
 Here is an example of a ContinuousGlucoseMeterSamplingInterval in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:id:AIIG:74958910",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2007-01-18T12:32:22Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1984-03-30T06:35:44Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Article mention some agree field western standard. Professor describe hot interesting. First side main source woman."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Want experience different parent. Director rather subject my husband goal risk. Enjoy direction task wait."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Authority study describe. Key agency away blood heart police. Offer program study foreign."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Practice large shoulder feeling. Administration happy live into drive cause. Outside face expert kitchen agent guess hope. Road future finish tree will."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Contain them positive discussion tough free. Number keep oil box big activity table never. Consider let western receive economy."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:IUDT:75300031",  
-      "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:FDEE:72612683"  
+    "id": "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:id:AIIG:74958910",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2007-01-18T12:32:22Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1984-03-30T06:35:44Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Article mention some agree field western standard. Professor describe hot interesting. First side main source woman."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Want experience different parent. Director rather subject my husband goal risk. Enjoy direction task wait."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Authority study describe. Key agency away blood heart police. Offer program study foreign."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Practice large shoulder feeling. Administration happy live into drive cause. Outside face expert kitchen agent guess hope. Road future finish tree will."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Contain them positive discussion tough free. Number keep oil box big activity table never. Consider let western receive economy."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:IUDT:75300031",  
+            "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:FDEE:72612683"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:RGOV:72508868"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                61.4283155,  
+                63.567087  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Affect accept local single. College cost couple. Customer safe dream cold final star.",  
+            "addressLocality": "Minute church pass believe even song. Shake wind boy animal story everyone. Adult at top responsibility head dog generation.",  
+            "addressRegion": "Choice color western animal myself bring. Hear serious food garden. Key remember area kid recognize.",  
+            "addressCountry": "Democratic trip glass quality eye. Marriage glass reveal state huge article. Keep minute rule those identify high ever.",  
+            "postalCode": "Us push food effect party mouth likely. Oil cold box final stand.",  
+            "postOfficeBoxNumber": "Technology fear throughout wife give realize. Organization write task in while senior. Or area spring size second hour evidence."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Take record treatment area response. System rock wear particular sport sea."  
+    },  
+    "interval": {  
+        "type": "Property",  
+        "value": 76.1  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.cgm.samplinginterval"  
+        ]  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Believe marriage career cut war I. Behavior resource since field put. Art again miss director let. Hundred anyone energy city let day sit."  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            776.9,  
+            500.2  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 403.2  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 79.5  
+    },  
+    "type": "ContinuousGlucoseMeterSamplingInterval",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:RGOV:72508868"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        61.4283155,  
-        63.567087  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Affect accept local single. College cost couple. Customer safe dream cold final star.",  
-      "addressLocality": "Minute church pass believe even song. Shake wind boy animal story everyone. Adult at top responsibility head dog generation.",  
-      "addressRegion": "Choice color western animal myself bring. Hear serious food garden. Key remember area kid recognize.",  
-      "addressCountry": "Democratic trip glass quality eye. Marriage glass reveal state huge article. Keep minute rule those identify high ever.",  
-      "postalCode": "Us push food effect party mouth likely. Oil cold box final stand.",  
-      "postOfficeBoxNumber": "Technology fear throughout wife give realize. Organization write task in while senior. Or area spring size second hour evidence."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Take record treatment area response. System rock wear particular sport sea."  
-  },  
-  "interval": {  
-    "type": "Property",  
-    "value": 76.1  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.cgm.samplinginterval"  
-    ]  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Believe marriage career cut war I. Behavior resource since field put. Art again miss director let. Hundred anyone energy city let day sit."  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      776.9,  
-      500.2  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 403.2  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 79.5  
-  },  
-  "type": "ContinuousGlucoseMeterSamplingInterval",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
