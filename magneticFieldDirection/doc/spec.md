@@ -1,17 +1,32 @@
-Entity: magneticFieldDirection  
-==============================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entity: magneticFieldDirection  
+==============================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.OCF/blob/master/magneticFieldDirection/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description: **Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the direction of the Earth's magnetic field at the observer's current point in space. Typical use case includes measurement of compass readings on a personal device. The Property 'value' is an array containing Hx, Hy, Hz (in that order) each of which are floats. Each of Hx, Hy and Hz are expressed in A/m (Amperes per metre).**  
+version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `if`: The OCF Interface set supported by this Resource.  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n`: Friendly name of the Resource  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `rt`: The Resource Type.  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type`: NGSI entity type. It has to be magneticFieldDirection  - `value`: The array containing Hx, Hy, Hz.    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `id[*]`: Unique identifier of the entity  - `if[array]`: The OCF Interface set supported by this Resource.  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n[string]`: Friendly name of the Resource  - `name[string]`: The name of this item.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `rt[array]`: The Resource Type.  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type[string]`: NGSI entity type. It has to be magneticFieldDirection  - `value[array]`: The array containing Hx, Hy, Hz.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Required properties  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 This data model comes from the original [Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels). It has been extended to comply with NGSI requirements.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Data Model description of properties  
 Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 magneticFieldDirection:    
@@ -333,9 +348,14 @@ magneticFieldDirection:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Example payloads    
 #### magneticFieldDirection NGSI-v2 key-values Example    
 Here is an example of a magneticFieldDirection in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:magneticFieldDirection:id:DFET:51612362",  
@@ -372,8 +392,10 @@ magneticFieldDirection:
   "areaServed": "Agreement accept fear image network hot. Tonight institution window also fine participant. Land court to law."  
 }  
 ```  
+</details>  
 #### magneticFieldDirection NGSI-v2 normalized Example    
 Here is an example of a magneticFieldDirection in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -451,127 +473,141 @@ magneticFieldDirection:
   }  
 }  
 ```  
+</details>  
 #### magneticFieldDirection NGSI-LD key-values Example    
 Here is an example of a magneticFieldDirection in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:magneticFieldDirection:id:DFET:51612362",  
-  "dateCreated": "1987-11-30T08:29:33Z",  
-  "dateModified": "2015-03-23T18:34:12Z",  
-  "source": "Crime teacher trouble it writer time fish. Game voice project.",  
-  "name": "Guess gas product professional figure rich foreign present. Although might appear as space today four. Eye drug career yeah international involve.",  
-  "alternateName": "Camera behind right mind lawyer. Claim trial assume information recently enjoy could.",  
-  "description": "Even gun direction get our hair meeting idea. Capital successful Democrat allow consider concern. Require us court parent apply while study.",  
-  "dataProvider": "Usually maintain foreign each prevent. Item note coach defense or hotel.",  
-  "owner": [  
-    "urn:ngsi-ld:magneticFieldDirection:items:SYTN:45300161",  
-    "urn:ngsi-ld:magneticFieldDirection:items:EDSS:83567458"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:magneticFieldDirection:items:WPHP:11237236",  
-    "urn:ngsi-ld:magneticFieldDirection:items:EOQH:56416051"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      77.3068715,  
-      -132.092547  
+    "id": "urn:ngsi-ld:magneticFieldDirection:id:DFET:51612362",  
+    "dateCreated": "1987-11-30T08:29:33Z",  
+    "dateModified": "2015-03-23T18:34:12Z",  
+    "source": "Crime teacher trouble it writer time fish. Game voice project.",  
+    "name": "Guess gas product professional figure rich foreign present. Although might appear as space today four. Eye drug career yeah international involve.",  
+    "alternateName": "Camera behind right mind lawyer. Claim trial assume information recently enjoy could.",  
+    "description": "Even gun direction get our hair meeting idea. Capital successful Democrat allow consider concern. Require us court parent apply while study.",  
+    "dataProvider": "Usually maintain foreign each prevent. Item note coach defense or hotel.",  
+    "owner": [  
+        "urn:ngsi-ld:magneticFieldDirection:items:SYTN:45300161",  
+        "urn:ngsi-ld:magneticFieldDirection:items:EDSS:83567458"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:magneticFieldDirection:items:WPHP:11237236",  
+        "urn:ngsi-ld:magneticFieldDirection:items:EOQH:56416051"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            77.3068715,  
+            -132.092547  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Trade perhaps street mean establish. Character fall president yourself ago ahead. Consider store here include any tell.",  
+        "addressLocality": "Should law product include once go. Nearly ground outside article call likely.",  
+        "addressRegion": "Beyond thousand drop full dark enter. Most organization themselves radio.",  
+        "addressCountry": "Forward child there practice and set pattern. Family imagine maintain her toward.",  
+        "postalCode": "Experience shoulder keep woman police than. Woman little beat ball. Subject Congress establish sit pick police head.",  
+        "postOfficeBoxNumber": "Book likely kind last. Another town benefit sea field put. Determine compare available attack one ahead trial. Region artist system raise affect traditional debate develop."  
+    },  
+    "areaServed": "Agreement accept fear image network hot. Tonight institution window also fine participant. Land court to law.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Trade perhaps street mean establish. Character fall president yourself ago ahead. Consider store here include any tell.",  
-    "addressLocality": "Should law product include once go. Nearly ground outside article call likely.",  
-    "addressRegion": "Beyond thousand drop full dark enter. Most organization themselves radio.",  
-    "addressCountry": "Forward child there practice and set pattern. Family imagine maintain her toward.",  
-    "postalCode": "Experience shoulder keep woman police than. Woman little beat ball. Subject Congress establish sit pick police head.",  
-    "postOfficeBoxNumber": "Book likely kind last. Another town benefit sea field put. Determine compare available attack one ahead trial. Region artist system raise affect traditional debate develop."  
-  },  
-  "areaServed": "Agreement accept fear image network hot. Tonight institution window also fine participant. Land court to law.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### magneticFieldDirection NGSI-LD normalized Example    
 Here is an example of a magneticFieldDirection in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:magneticFieldDirection:id:NFKN:79775431",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1978-04-22T15:09:39Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2001-12-15T20:03:11Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Sometimes style several above. Million without help position. While among save billion."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "My very family agent time any. Series left show."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Give rest trade spend. Somebody tonight suffer point. List owner cold big."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "People which serve concern friend they on which. Near plant name nothing. Law because nice nice truth."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Pretty possible simply send later because huge image. Someone budget else their boy because focus far. Itself defense something close."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:magneticFieldDirection:items:EVHH:20236404",  
-      "urn:ngsi-ld:magneticFieldDirection:items:ABFE:60567337"  
+    "id": "urn:ngsi-ld:magneticFieldDirection:id:NFKN:79775431",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1978-04-22T15:09:39Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2001-12-15T20:03:11Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Sometimes style several above. Million without help position. While among save billion."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "My very family agent time any. Series left show."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Give rest trade spend. Somebody tonight suffer point. List owner cold big."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "People which serve concern friend they on which. Near plant name nothing. Law because nice nice truth."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Pretty possible simply send later because huge image. Someone budget else their boy because focus far. Itself defense something close."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:magneticFieldDirection:items:EVHH:20236404",  
+            "urn:ngsi-ld:magneticFieldDirection:items:ABFE:60567337"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:magneticFieldDirection:items:NYGS:71718992"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                31.166223,  
+                91.878466  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Father church agreement. Risk store weight put tonight bed. Through fly box soldier you together.",  
+            "addressLocality": "Quality team owner law method outside bag. Food hand effect wear industry physical.",  
+            "addressRegion": "Fund community she memory oil financial. History statement listen world build bill help after.",  
+            "addressCountry": "Bank some white eat.",  
+            "postalCode": "Which Democrat effect explain work hand produce. Attorney ball method sea smile anyone history.",  
+            "postOfficeBoxNumber": "Southern find why. Course admit year get point. Street class apply where law."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Several candidate whatever increase. Present leave case performance here."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:magneticFieldDirection:items:NYGS:71718992"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        31.166223,  
-        91.878466  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Father church agreement. Risk store weight put tonight bed. Through fly box soldier you together.",  
-      "addressLocality": "Quality team owner law method outside bag. Food hand effect wear industry physical.",  
-      "addressRegion": "Fund community she memory oil financial. History statement listen world build bill help after.",  
-      "addressCountry": "Bank some white eat.",  
-      "postalCode": "Which Democrat effect explain work hand produce. Attorney ball method sea smile anyone history.",  
-      "postOfficeBoxNumber": "Southern find why. Course admit year get point. Street class apply where law."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Several candidate whatever increase. Present leave case performance here."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
