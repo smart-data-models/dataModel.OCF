@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entity: CO  
-==========  
+==========<!-- /10-Header -->  
+<!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.OCF/blob/master/CO/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description: **This Resource describes whether carbon monoxide has been sensed or not.The Property 'value' is a boolean.A value of 'true' means that carbon monoxide has been detected.A value of 'false' means that carbon monoxide has not been detected.**  
 version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `if`: The OCF Interface set supported by this Resource  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `measurement`: Measured value for this sensor, units are in ppm  - `n`: Friendly name of the Resource  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `precision`: When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision  - `range`: The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.  - `rt`: Resource Type  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `step`: Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.  - `type`: NGSI entity type. It has to be CO  - `value`: The carbon monoxide indicator, true = sensed, false = not sensed.    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `id[*]`: Unique identifier of the entity  - `if[array]`: The OCF Interface set supported by this Resource  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `measurement[number]`: Measured value for this sensor, units are in ppm  - `n[string]`: Friendly name of the Resource  - `name[string]`: The name of this item.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `precision[number]`: When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision  - `range[array]`: The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.  - `rt[array]`: Resource Type  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `step[number]`: Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.  - `type[string]`: NGSI entity type. It has to be CO  - `value[boolean]`: The carbon monoxide indicator, true = sensed, false = not sensed.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Required properties  
-- `id`  - `type`  - `value`    
+- `id`  - `type`  - `value`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Data Model adapted from the original created by the Open Connectivity Foundation. Original repository in https://github.com/openconnectivityfoundation/IoTDataModels  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Data Model description of properties  
 Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 CO:    
@@ -361,9 +374,14 @@ CO:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Example payloads    
 #### CO NGSI-v2 key-values Example    
 Here is an example of a CO in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:CO:id:YQVH:59080054",  
@@ -430,8 +448,10 @@ CO:
   "type": "CO"  
 }  
 ```  
+</details>  
 #### CO NGSI-v2 normalized Example    
 Here is an example of a CO in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -566,197 +586,211 @@ CO:
   }  
 }  
 ```  
+</details>  
 #### CO NGSI-LD key-values Example    
 Here is an example of a CO in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:CO:id:YQVH:59080054",  
-  "dateCreated": "2009-04-24T13:29:20Z",  
-  "dateModified": "2001-09-01T12:10:21Z",  
-  "source": "Year sort eat student happen federal message.",  
-  "name": "Manager ever future him. Executive school list final consider increase staff.",  
-  "alternateName": "Fall firm here lay. Call management dinner.",  
-  "description": "Kid evening four goal lay. Down trip third cell or over class.",  
-  "dataProvider": "Which color human at main. Offer exactly next field soldier move. Site bad should who minute.",  
-  "owner": [  
-    "urn:ngsi-ld:CO:items:RGMJ:62379010",  
-    "urn:ngsi-ld:CO:items:GJQM:91546810"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:CO:items:KLIZ:44237049",  
-    "urn:ngsi-ld:CO:items:CTKA:51545589"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -65.6347215,  
-      -20.584982  
+    "id": "urn:ngsi-ld:CO:id:YQVH:59080054",  
+    "dateCreated": "2009-04-24T13:29:20Z",  
+    "dateModified": "2001-09-01T12:10:21Z",  
+    "source": "Year sort eat student happen federal message.",  
+    "name": "Manager ever future him. Executive school list final consider increase staff.",  
+    "alternateName": "Fall firm here lay. Call management dinner.",  
+    "description": "Kid evening four goal lay. Down trip third cell or over class.",  
+    "dataProvider": "Which color human at main. Offer exactly next field soldier move. Site bad should who minute.",  
+    "owner": [  
+        "urn:ngsi-ld:CO:items:RGMJ:62379010",  
+        "urn:ngsi-ld:CO:items:GJQM:91546810"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:CO:items:KLIZ:44237049",  
+        "urn:ngsi-ld:CO:items:CTKA:51545589"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -65.6347215,  
+            -20.584982  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Million bill shoulder writer respond type television. Group it partner recently in. Believe class face wonder heart.",  
+        "addressLocality": "Not someone second evening with north down. Anyone and relate challenge cell reveal long news. Win TV today side kid public. Rest quite have face partner act senior.",  
+        "addressRegion": "Whether floor standard rate carry great. Something miss partner live democratic product camera.",  
+        "addressCountry": "Social member late them offer argue military Mrs. Safe as as report responsibility anything stuff. Seat happy both listen. Provide true leave business.",  
+        "postalCode": "Dream must federal build. Grow nice company thus.",  
+        "postOfficeBoxNumber": "Under have majority while quite environment single anyone. Finally international possible record practice ball so. Maintain keep letter entire last. Notice loss some important share computer heart chair."  
+    },  
+    "areaServed": "Know author property imagine event relate. Someone either pattern particularly thank. Indicate east by value single yet. Happen PM certain tough.",  
+    "rt": [  
+        "oic.r.sensor.carbonmonoxide",  
+        "oic.r.sensor.carbonmonoxide"  
+    ],  
+    "value": {  
+        "type": "Property",  
+        "value": false  
+    },  
+    "measurement": {  
+        "type": "Property",  
+        "value": 629.1  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 771.1  
+    },  
+    "n": "Serve main throughout agent. End perhaps thus policy five budget indeed history.",  
+    "range": [  
+        904.9,  
+        165.3  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 848.4  
+    },  
+    "if": [  
+        "oic.if.s",  
+        "oic.if.s"  
+    ],  
+    "type": "CO",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Million bill shoulder writer respond type television. Group it partner recently in. Believe class face wonder heart.",  
-    "addressLocality": "Not someone second evening with north down. Anyone and relate challenge cell reveal long news. Win TV today side kid public. Rest quite have face partner act senior.",  
-    "addressRegion": "Whether floor standard rate carry great. Something miss partner live democratic product camera.",  
-    "addressCountry": "Social member late them offer argue military Mrs. Safe as as report responsibility anything stuff. Seat happy both listen. Provide true leave business.",  
-    "postalCode": "Dream must federal build. Grow nice company thus.",  
-    "postOfficeBoxNumber": "Under have majority while quite environment single anyone. Finally international possible record practice ball so. Maintain keep letter entire last. Notice loss some important share computer heart chair."  
-  },  
-  "areaServed": "Know author property imagine event relate. Someone either pattern particularly thank. Indicate east by value single yet. Happen PM certain tough.",  
-  "rt": [  
-    "oic.r.sensor.carbonmonoxide",  
-    "oic.r.sensor.carbonmonoxide"  
-  ],  
-  "value": {  
-    "type": "Property",  
-    "value": false  
-  },  
-  "measurement": {  
-    "type": "Property",  
-    "value": 629.1  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 771.1  
-  },  
-  "n": "Serve main throughout agent. End perhaps thus policy five budget indeed history.",  
-  "range": [  
-    904.9,  
-    165.3  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 848.4  
-  },  
-  "if": [  
-    "oic.if.s",  
-    "oic.if.s"  
-  ],  
-  "type": "CO",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### CO NGSI-LD normalized Example    
 Here is an example of a CO in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:CO:id:TLMT:85397772",  
-  "dateCreated": {  
-    "type": "Property",  
+    "id": "urn:ngsi-ld:CO:id:TLMT:85397772",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1993-02-12T18:56:03Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2003-12-05T22:57:02Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "He top today program. Strong sign treatment quickly bank."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Manager whatever station mother. Possible across wind before."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "State stand main practice kid. Require less its own mouth. International movement have study arrive fight fact ground. Need source most resource practice old American."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Argue body subject daughter us. Task have condition side bad program shoulder. Situation personal suffer eat man production soldier."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Have the young point education agree. Whether crime question individual personal now social."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:CO:items:PMDY:07690464",  
+            "urn:ngsi-ld:CO:items:KZPY:00464484"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:CO:items:UUCE:15603427"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -23.156593,  
+                70.781554  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Base coach himself marriage though population. Statement ready along find truth cover drop. People daughter teacher contain apply.",  
+            "addressLocality": "Someone four particularly use morning environment next. Describe reduce think minute door key hard. Culture stock own authority shoulder.",  
+            "addressRegion": "Will down assume consider high doctor street. Bad five return bit their challenge know.",  
+            "addressCountry": "Wall card kid peace fly exactly performance. Hair method medical window whose outside. Image up successful usually nice.",  
+            "postalCode": "Cover compare long left itself. Sell up term. A bit teach space recognize.",  
+            "postOfficeBoxNumber": "Say bill computer often difference trade."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Condition certain rest determine still soldier write. Energy low not sit lot care class. Test little social."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.sensor.carbonmonoxide"  
+        ]  
+    },  
     "value": {  
-      "@type": "DateTime",  
-      "@value": "1993-02-12T18:56:03Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2003-12-05T22:57:02Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "He top today program. Strong sign treatment quickly bank."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Manager whatever station mother. Possible across wind before."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "State stand main practice kid. Require less its own mouth. International movement have study arrive fight fact ground. Need source most resource practice old American."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Argue body subject daughter us. Task have condition side bad program shoulder. Situation personal suffer eat man production soldier."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Have the young point education agree. Whether crime question individual personal now social."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:CO:items:PMDY:07690464",  
-      "urn:ngsi-ld:CO:items:KZPY:00464484"  
+        "type": "Property",  
+        "value": true  
+    },  
+    "measurement": {  
+        "type": "Property",  
+        "value": 235.2  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 624.8  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Down see reach. Win physical want arrive financial. Same I sometimes pass."  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            341.7,  
+            185.5  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 259.2  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.s"  
+        ]  
+    },  
+    "type": "CO",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:CO:items:UUCE:15603427"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -23.156593,  
-        70.781554  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Base coach himself marriage though population. Statement ready along find truth cover drop. People daughter teacher contain apply.",  
-      "addressLocality": "Someone four particularly use morning environment next. Describe reduce think minute door key hard. Culture stock own authority shoulder.",  
-      "addressRegion": "Will down assume consider high doctor street. Bad five return bit their challenge know.",  
-      "addressCountry": "Wall card kid peace fly exactly performance. Hair method medical window whose outside. Image up successful usually nice.",  
-      "postalCode": "Cover compare long left itself. Sell up term. A bit teach space recognize.",  
-      "postOfficeBoxNumber": "Say bill computer often difference trade."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Condition certain rest determine still soldier write. Energy low not sit lot care class. Test little social."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.sensor.carbonmonoxide"  
-    ]  
-  },  
-  "value": {  
-    "type": "Property",  
-    "value": true  
-  },  
-  "measurement": {  
-    "type": "Property",  
-    "value": 235.2  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 624.8  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Down see reach. Win physical want arrive financial. Same I sometimes pass."  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      341.7,  
-      185.5  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 259.2  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.s"  
-    ]  
-  },  
-  "type": "CO",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
