@@ -1,17 +1,32 @@
-Entity: Sleep  
-=============  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entity: Sleep  
+=============<!-- /10-Header -->  
+<!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.OCF/blob/master/Sleep/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description: **Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the Properties associated with Sleep. Sleep shows the time spent in each of the sleep stages (awake, nrem1, nrem2, nrem3, nrem4, rem, light sleep, deep sleep), along with a sleep score indicating the quality of sleep.**  
+version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `awake`: Time spent in Awake stage (in seconds)  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `deepsleep`: Time spent in Deep Sleep stage, consisting in NREM stages 3 and 4 (in seconds)  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `if`: The Interface set supported by this Resource  - `lightsleep`: Time spent in Light Sleep stage, consisting in NREM stages 1 and 2 (in seconds)  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n`: Friendly name of the Resource  - `name`: The name of this item.  - `nrem1`: Time spent in Non Rapid Eye Movement stage 1 (in seconds)  - `nrem2`: Time spent in Non Rapid Eye Movement stage 2 (in seconds)  - `nrem3`: Time spent in Non Rapid Eye Movement stage 3 (in seconds)  - `nrem4`: Time spent in Non Rapid Eye Movement stage 4 (in seconds)  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `precision`: When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision  - `range_phases`: The valid range for the Property in the Resource as an integer. The first value in the array is the minimum value, the second value in the array is the maximum value.  - `range_score`: The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.  - `rem`: Time spent in Rapid Eye Movement (in seconds)  - `rt`: Resource Type  - `seeAlso`: list of uri pointing to additional resources about the item  - `sleepscore`: Score computed from the time spent in each sleep stage, indicative of the quality of sleep  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `step_phases`: Step value across the defined range when the range is an integer.  This is the increment for valid values across the range; so if range is 0..10 and step is 2 then valid values are 0,2,4,6,8,10.  - `step_score`: Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.  - `type`: NGSI entity type. It has to be Sleep    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `awake[integer]`: Time spent in Awake stage (in seconds)  - `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `deepsleep[integer]`: Time spent in Deep Sleep stage, consisting in NREM stages 3 and 4 (in seconds)  - `description[string]`: A description of this item  - `id[*]`: Unique identifier of the entity  - `if[array]`: The Interface set supported by this Resource  - `lightsleep[integer]`: Time spent in Light Sleep stage, consisting in NREM stages 1 and 2 (in seconds)  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n[string]`: Friendly name of the Resource  - `name[string]`: The name of this item.  - `nrem1[integer]`: Time spent in Non Rapid Eye Movement stage 1 (in seconds)  - `nrem2[integer]`: Time spent in Non Rapid Eye Movement stage 2 (in seconds)  - `nrem3[integer]`: Time spent in Non Rapid Eye Movement stage 3 (in seconds)  - `nrem4[integer]`: Time spent in Non Rapid Eye Movement stage 4 (in seconds)  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `precision[number]`: When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision  - `range_phases[array]`: The valid range for the Property in the Resource as an integer. The first value in the array is the minimum value, the second value in the array is the maximum value.  - `range_score[array]`: The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.  - `rem[integer]`: Time spent in Rapid Eye Movement (in seconds)  - `rt[array]`: Resource Type  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `sleepscore[number]`: Score computed from the time spent in each sleep stage, indicative of the quality of sleep  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `step_phases[integer]`: Step value across the defined range when the range is an integer.  This is the increment for valid values across the range; so if range is 0..10 and step is 2 then valid values are 0,2,4,6,8,10.  - `step_score[number]`: Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.  - `type[string]`: NGSI entity type. It has to be Sleep  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Required properties  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 This data model comes from the original [Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels). It has been extended to comply with NGSI requirements.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Data Model description of properties  
 Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Sleep:    
@@ -423,9 +438,14 @@ Sleep:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Example payloads    
 #### Sleep NGSI-v2 key-values Example    
 Here is an example of a Sleep in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Sleep:id:DQYD:66419001",  
@@ -462,8 +482,10 @@ Sleep:
   "areaServed": "Your reality almost four use. Degree simply bag drop."  
 }  
 ```  
+</details>  
 #### Sleep NGSI-v2 normalized Example    
 Here is an example of a Sleep in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -541,127 +563,141 @@ Sleep:
   }  
 }  
 ```  
+</details>  
 #### Sleep NGSI-LD key-values Example    
 Here is an example of a Sleep in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Sleep:id:DQYD:66419001",  
-  "dateCreated": "2006-06-22T00:23:34Z",  
-  "dateModified": "1985-04-14T07:05:46Z",  
-  "source": "Team improve per difficult design perhaps remain. Something town now year.",  
-  "name": "Debate notice eat share day fire serve seem. Through want husband.",  
-  "alternateName": "System his with management resource real various. Task right mean paper western seem near beat. Skin expert that pattern drive free that.",  
-  "description": "Here ability even exist class movement grow. War church probably.",  
-  "dataProvider": "Consumer fish himself crime finish some pretty. Kid stand individual tree weight stand apply.",  
-  "owner": [  
-    "urn:ngsi-ld:Sleep:items:NRHF:98813192",  
-    "urn:ngsi-ld:Sleep:items:ROUA:34648361"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Sleep:items:JVPG:56549433",  
-    "urn:ngsi-ld:Sleep:items:CGGJ:52083387"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -0.4463355,  
-      155.160512  
+    "id": "urn:ngsi-ld:Sleep:id:DQYD:66419001",  
+    "dateCreated": "2006-06-22T00:23:34Z",  
+    "dateModified": "1985-04-14T07:05:46Z",  
+    "source": "Team improve per difficult design perhaps remain. Something town now year.",  
+    "name": "Debate notice eat share day fire serve seem. Through want husband.",  
+    "alternateName": "System his with management resource real various. Task right mean paper western seem near beat. Skin expert that pattern drive free that.",  
+    "description": "Here ability even exist class movement grow. War church probably.",  
+    "dataProvider": "Consumer fish himself crime finish some pretty. Kid stand individual tree weight stand apply.",  
+    "owner": [  
+        "urn:ngsi-ld:Sleep:items:NRHF:98813192",  
+        "urn:ngsi-ld:Sleep:items:ROUA:34648361"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Sleep:items:JVPG:56549433",  
+        "urn:ngsi-ld:Sleep:items:CGGJ:52083387"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -0.4463355,  
+            155.160512  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Example experience bar cover machine him along. Last must general sister yourself. Mean also store apply.",  
+        "addressLocality": "They arrive among would participant those seem. Run door mission player ever year.",  
+        "addressRegion": "Professor we raise. Brother treat you ahead whatever tough game necessary.",  
+        "addressCountry": "Technology specific key generation. Process most apply choose feel visit with. Play modern state address popular job.",  
+        "postalCode": "Yourself news TV institution how again field democratic. Industry water body.",  
+        "postOfficeBoxNumber": "Series election free cold. System information else even evening."  
+    },  
+    "areaServed": "Your reality almost four use. Degree simply bag drop.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Example experience bar cover machine him along. Last must general sister yourself. Mean also store apply.",  
-    "addressLocality": "They arrive among would participant those seem. Run door mission player ever year.",  
-    "addressRegion": "Professor we raise. Brother treat you ahead whatever tough game necessary.",  
-    "addressCountry": "Technology specific key generation. Process most apply choose feel visit with. Play modern state address popular job.",  
-    "postalCode": "Yourself news TV institution how again field democratic. Industry water body.",  
-    "postOfficeBoxNumber": "Series election free cold. System information else even evening."  
-  },  
-  "areaServed": "Your reality almost four use. Degree simply bag drop.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### Sleep NGSI-LD normalized Example    
 Here is an example of a Sleep in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Sleep:id:DEWW:30338193",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1988-01-12T23:48:03Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2007-07-28T08:40:23Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Agree daughter finally morning less share than. Choose training between bring town. Door truth upon upon."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Position keep forward crime reach. Especially wish paper."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Significant concern significant local concern represent particularly serious. Others above onto no. Lawyer hard able two thus oil sit action."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Matter raise goal my. Into send what."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "American protect material. Three realize leader watch entire material."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Sleep:items:ORVF:05537533",  
-      "urn:ngsi-ld:Sleep:items:EZSB:78221686"  
+    "id": "urn:ngsi-ld:Sleep:id:DEWW:30338193",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1988-01-12T23:48:03Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2007-07-28T08:40:23Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Agree daughter finally morning less share than. Choose training between bring town. Door truth upon upon."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Position keep forward crime reach. Especially wish paper."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Significant concern significant local concern represent particularly serious. Others above onto no. Lawyer hard able two thus oil sit action."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Matter raise goal my. Into send what."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "American protect material. Three realize leader watch entire material."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Sleep:items:ORVF:05537533",  
+            "urn:ngsi-ld:Sleep:items:EZSB:78221686"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Sleep:items:UJRS:30722806"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -86.6050775,  
+                -132.16776  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Successful better perform job deal. Work concern require join opportunity magazine general. Occur determine firm nice school. Activity create central executive.",  
+            "addressLocality": "Imagine quality last purpose. Sound like catch population writer. Possible establish provide. Less strong certainly visit open.",  
+            "addressRegion": "Successful according meet hear recent well. Now policy lay democratic he something important.",  
+            "addressCountry": "Something edge pressure wide six suffer. Age consider specific foreign measure. Fly those huge general future hand woman.",  
+            "postalCode": "Between return long rest her best prepare relationship. Instead set art sport quickly.",  
+            "postOfficeBoxNumber": "Sort threat between deal. Over turn every billion. On look lot deal rock. Society wait pass century figure crime picture."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Thought chance help hear miss ability. Remember report real matter strategy. Offer walk as plant environment. Control executive class list."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Sleep:items:UJRS:30722806"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -86.6050775,  
-        -132.16776  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Successful better perform job deal. Work concern require join opportunity magazine general. Occur determine firm nice school. Activity create central executive.",  
-      "addressLocality": "Imagine quality last purpose. Sound like catch population writer. Possible establish provide. Less strong certainly visit open.",  
-      "addressRegion": "Successful according meet hear recent well. Now policy lay democratic he something important.",  
-      "addressCountry": "Something edge pressure wide six suffer. Age consider specific foreign measure. Fly those huge general future hand woman.",  
-      "postalCode": "Between return long rest her best prepare relationship. Instead set art sport quickly.",  
-      "postOfficeBoxNumber": "Sort threat between deal. Over turn every billion. On look lot deal rock. Society wait pass century figure crime picture."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Thought chance help hear miss ability. Remember report real matter strategy. Offer walk as plant environment. Control executive class list."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
