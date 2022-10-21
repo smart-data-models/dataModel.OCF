@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entity: pulsatilecharacteristic  
-===============================  
+===============================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.OCF/blob/master/pulsatilecharacteristic/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description: **This Resource describes the Properties associated with a pulsatile characteristic of the pulsative wave of a Pulse Oximeter. The characteristic Property is a read-only value that is provided by the server. When range (from 'oic.r.baseresource') is omitted the default is 0 to +MAXFLOAT.**  
 version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `characteristic`: This Property describes the current pulsatile characteristic measurement. The value is an integer bit mapped value. The following describes what each integer means. 0 - Quality of the detected pulse is nominal, in that there are no recognized abnormalities in the detected pulse. 1 - Perfusion or quality of the detected pulse is marginal. 2 - Perfusion or quality of the detected pulse is minimal. 3 - Perfusion or quality of the detected pulse is unacceptable.  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `if`: The OCF Interface set supported by this Resource.  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n`: Friendly name of the Resource  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `range`: The valid range for the Property in the Resource as an integer. The first value in the array is the minimum value, the second value in the array is the maximum value.  - `rt`: The Resource Type.  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `step`: Step value across the defined range when the range is an integer.  This is the increment for valid values across the range; so if range is 0..10 and step is 2 then valid values are 0,2,4,6,8,10.  - `type`: NGSI entity type. It has to be pulsatilecharacteristic    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `characteristic[integer]`: This Property describes the current pulsatile characteristic measurement. The value is an integer bit mapped value. The following describes what each integer means. 0 - Quality of the detected pulse is nominal, in that there are no recognized abnormalities in the detected pulse. 1 - Perfusion or quality of the detected pulse is marginal. 2 - Perfusion or quality of the detected pulse is minimal. 3 - Perfusion or quality of the detected pulse is unacceptable.  - `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `id[*]`: Unique identifier of the entity  - `if[array]`: The OCF Interface set supported by this Resource.  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n[string]`: Friendly name of the Resource  - `name[string]`: The name of this item.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `range[array]`: The valid range for the Property in the Resource as an integer. The first value in the array is the minimum value, the second value in the array is the maximum value.  - `rt[array]`: The Resource Type.  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `step[integer]`: Step value across the defined range when the range is an integer.  This is the increment for valid values across the range; so if range is 0..10 and step is 2 then valid values are 0,2,4,6,8,10.  - `type[string]`: NGSI entity type. It has to be pulsatilecharacteristic  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Required properties  
-- `characteristic`  - `id`  - `type`    
+- `characteristic`  - `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Data Model adapted from the original created by the Open Connectivity Foundation. Original repository in https://github.com/openconnectivityfoundation/IoTDataModels  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Data Model description of properties  
 Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 pulsatilecharacteristic:    
@@ -349,9 +362,14 @@ pulsatilecharacteristic:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Example payloads    
 #### pulsatilecharacteristic NGSI-v2 key-values Example    
 Here is an example of a pulsatilecharacteristic in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:pulsatilecharacteristic:id:YHCK:29783958",  
@@ -410,8 +428,10 @@ pulsatilecharacteristic:
   "type": "pulsatilecharacteristic"  
 }  
 ```  
+</details>  
 #### pulsatilecharacteristic NGSI-v2 normalized Example    
 Here is an example of a pulsatilecharacteristic in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -532,181 +552,195 @@ pulsatilecharacteristic:
   }  
 }  
 ```  
+</details>  
 #### pulsatilecharacteristic NGSI-LD key-values Example    
 Here is an example of a pulsatilecharacteristic in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:pulsatilecharacteristic:id:YHCK:29783958",  
-  "dateCreated": "1976-02-28T05:22:23Z",  
-  "dateModified": "2017-07-16T13:00:46Z",  
-  "source": "Yet agreement bill answer hope social turn. Letter about loss simple.",  
-  "name": "Financial wall black. Fund lay writer allow need.",  
-  "alternateName": "Chance another opportunity board science. Sometimes east firm traditional heavy talk. Where democratic agree majority.",  
-  "description": "Why we behavior support. Republican fine character. Management range me color reduce only accept.",  
-  "dataProvider": "Why large entire simply recognize policy center. Responsibility start one film family condition away. Individual condition suggest reveal. Kind gas weight life.",  
-  "owner": [  
-    "urn:ngsi-ld:pulsatilecharacteristic:items:BFZF:28818876",  
-    "urn:ngsi-ld:pulsatilecharacteristic:items:AMNC:70571781"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:pulsatilecharacteristic:items:AZOK:81117701",  
-    "urn:ngsi-ld:pulsatilecharacteristic:items:CDIN:32720162"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      15.6929545,  
-      -154.323339  
+    "id": "urn:ngsi-ld:pulsatilecharacteristic:id:YHCK:29783958",  
+    "dateCreated": "1976-02-28T05:22:23Z",  
+    "dateModified": "2017-07-16T13:00:46Z",  
+    "source": "Yet agreement bill answer hope social turn. Letter about loss simple.",  
+    "name": "Financial wall black. Fund lay writer allow need.",  
+    "alternateName": "Chance another opportunity board science. Sometimes east firm traditional heavy talk. Where democratic agree majority.",  
+    "description": "Why we behavior support. Republican fine character. Management range me color reduce only accept.",  
+    "dataProvider": "Why large entire simply recognize policy center. Responsibility start one film family condition away. Individual condition suggest reveal. Kind gas weight life.",  
+    "owner": [  
+        "urn:ngsi-ld:pulsatilecharacteristic:items:BFZF:28818876",  
+        "urn:ngsi-ld:pulsatilecharacteristic:items:AMNC:70571781"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:pulsatilecharacteristic:items:AZOK:81117701",  
+        "urn:ngsi-ld:pulsatilecharacteristic:items:CDIN:32720162"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            15.6929545,  
+            -154.323339  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Modern store western training.",  
+        "addressLocality": "Program manager prove heart raise key once. Least lay compare. In prevent baby.",  
+        "addressRegion": "Subject our baby line. Vote its your society record. Find remain space capital structure. List offer although computer reflect.",  
+        "addressCountry": "Early right size whole teacher trip. Over behavior ok positive.",  
+        "postalCode": "Single industry skill like blue shake box. Adult sound would yeah.",  
+        "postOfficeBoxNumber": "Lay plant possible involve huge. Ok me always specific white growth. Generation check end visit TV quality family."  
+    },  
+    "areaServed": "During effect type short light. Structure pretty stock heavy list officer laugh actually.",  
+    "characteristic": {  
+        "type": "Property",  
+        "value": 3  
+    },  
+    "rt": [  
+        "oic.r.pulsatilecharacteristic",  
+        "oic.r.pulsatilecharacteristic"  
+    ],  
+    "n": "Magazine truth stop whose group through despite. Example sense peace economy.",  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.baseline"  
+    ],  
+    "range": [  
+        864,  
+        864  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "type": "pulsatilecharacteristic",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Modern store western training.",  
-    "addressLocality": "Program manager prove heart raise key once. Least lay compare. In prevent baby.",  
-    "addressRegion": "Subject our baby line. Vote its your society record. Find remain space capital structure. List offer although computer reflect.",  
-    "addressCountry": "Early right size whole teacher trip. Over behavior ok positive.",  
-    "postalCode": "Single industry skill like blue shake box. Adult sound would yeah.",  
-    "postOfficeBoxNumber": "Lay plant possible involve huge. Ok me always specific white growth. Generation check end visit TV quality family."  
-  },  
-  "areaServed": "During effect type short light. Structure pretty stock heavy list officer laugh actually.",  
-  "characteristic": {  
-    "type": "Property",  
-    "value": 3  
-  },  
-  "rt": [  
-    "oic.r.pulsatilecharacteristic",  
-    "oic.r.pulsatilecharacteristic"  
-  ],  
-  "n": "Magazine truth stop whose group through despite. Example sense peace economy.",  
-  "if": [  
-    "oic.if.baseline",  
-    "oic.if.baseline"  
-  ],  
-  "range": [  
-    864,  
-    864  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "type": "pulsatilecharacteristic",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### pulsatilecharacteristic NGSI-LD normalized Example    
 Here is an example of a pulsatilecharacteristic in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:pulsatilecharacteristic:id:PEQB:72314296",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1984-03-15T12:56:52Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2008-12-25T07:46:38Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Security major fill. Marriage mind pass view few."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Science three kitchen back commercial cup."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Practice too itself attorney. Again idea by business. Only still require. Ball from writer book very."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Often him movement top say woman room. Majority north rest. View statement kitchen stock share."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Nice city marriage fish fast significant reality treatment."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:pulsatilecharacteristic:items:NCQB:61984770",  
-      "urn:ngsi-ld:pulsatilecharacteristic:items:DTSC:44774924"  
+    "id": "urn:ngsi-ld:pulsatilecharacteristic:id:PEQB:72314296",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1984-03-15T12:56:52Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2008-12-25T07:46:38Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Security major fill. Marriage mind pass view few."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Science three kitchen back commercial cup."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Practice too itself attorney. Again idea by business. Only still require. Ball from writer book very."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Often him movement top say woman room. Majority north rest. View statement kitchen stock share."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Nice city marriage fish fast significant reality treatment."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:pulsatilecharacteristic:items:NCQB:61984770",  
+            "urn:ngsi-ld:pulsatilecharacteristic:items:DTSC:44774924"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:pulsatilecharacteristic:items:IOXR:74178561"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -9.058526,  
+                -178.41251  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Start account director increase firm defense. Teacher television recently home. Around administration drug artist team little our purpose. Interview out wrong daughter why drop image.",  
+            "addressLocality": "Top young young call inside.",  
+            "addressRegion": "I gas animal into. Father end mind. Three religious travel heart.",  
+            "addressCountry": "Seat artist cut black. Low go threat final.",  
+            "postalCode": "Bank history top. Appear a him land truth leg center. Hope TV at pass nation author.",  
+            "postOfficeBoxNumber": "Spend use news main strong each."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Box kitchen world kitchen public technology save."  
+    },  
+    "characteristic": {  
+        "type": "Property",  
+        "value": 3  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.pulsatilecharacteristic"  
+        ]  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Under recently discover ready its. So color capital current. Kitchen require half."  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            304,  
+            754  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 737  
+    },  
+    "type": "pulsatilecharacteristic",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:pulsatilecharacteristic:items:IOXR:74178561"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -9.058526,  
-        -178.41251  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Start account director increase firm defense. Teacher television recently home. Around administration drug artist team little our purpose. Interview out wrong daughter why drop image.",  
-      "addressLocality": "Top young young call inside.",  
-      "addressRegion": "I gas animal into. Father end mind. Three religious travel heart.",  
-      "addressCountry": "Seat artist cut black. Low go threat final.",  
-      "postalCode": "Bank history top. Appear a him land truth leg center. Hope TV at pass nation author.",  
-      "postOfficeBoxNumber": "Spend use news main strong each."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Box kitchen world kitchen public technology save."  
-  },  
-  "characteristic": {  
-    "type": "Property",  
-    "value": 3  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.pulsatilecharacteristic"  
-    ]  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Under recently discover ready its. So color capital current. Kitchen require half."  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      304,  
-      754  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 737  
-  },  
-  "type": "pulsatilecharacteristic",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
