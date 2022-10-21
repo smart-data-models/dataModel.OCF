@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entity: Contact  
-===============  
+===============<!-- /10-Header -->  
+<!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.OCF/blob/master/Contact/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description: **This Resource describes whether a contact sensor has been tripped or not.Typical use case is in Security Systems detecting window or door open.The Property 'value' is a boolean.A value of 'true' means that contact has been broken (open).A value of 'false' means that contact is in place (closed).**  
 version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `if`: The OCF Interface set supported by this Resource.  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n`: Friendly name of the Resource  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `rt`: The Resource Type.  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type`: NGSI entity type. It has to be Contact  - `value`: The contact indication, true = broken (open), false = in place (closed).    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `id[*]`: Unique identifier of the entity  - `if[array]`: The OCF Interface set supported by this Resource.  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n[string]`: Friendly name of the Resource  - `name[string]`: The name of this item.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `rt[array]`: The Resource Type.  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type[string]`: NGSI entity type. It has to be Contact  - `value[boolean]`: The contact indication, true = broken (open), false = in place (closed).  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Required properties  
-- `id`  - `type`  - `value`    
+- `id`  - `type`  - `value`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Data Model adapted from the original created by the Open Connectivity Foundation. Original repository in https://github.com/openconnectivityfoundation/IoTDataModels  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Data Model description of properties  
 Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Contact:    
@@ -332,9 +345,14 @@ Contact:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Example payloads    
 #### Contact NGSI-v2 key-values Example    
 Here is an example of a Contact in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Contact:id:HMUT:83435609",  
@@ -385,8 +403,10 @@ Contact:
   "type": "Contact"  
 }  
 ```  
+</details>  
 #### Contact NGSI-v2 normalized Example    
 Here is an example of a Contact in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -493,163 +513,177 @@ Contact:
   }  
 }  
 ```  
+</details>  
 #### Contact NGSI-LD key-values Example    
 Here is an example of a Contact in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Contact:id:HMUT:83435609",  
-  "dateCreated": "2019-11-03T13:34:13Z",  
-  "dateModified": "1987-05-08T16:34:27Z",  
-  "source": "Yet back writer so bank nature south. Resource including speak.",  
-  "name": "Court material main five appear. Answer face bad leader.",  
-  "alternateName": "Especially term detail beautiful. Coach step agreement home.",  
-  "description": "Country off allow rate record. Growth when economy save. Example later whom son audience.",  
-  "dataProvider": "Important pick red while machine take. Born baby because back way hit play.",  
-  "owner": [  
-    "urn:ngsi-ld:Contact:items:VORM:50502773",  
-    "urn:ngsi-ld:Contact:items:ADVX:61609895"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Contact:items:KLNB:69768334",  
-    "urn:ngsi-ld:Contact:items:ITWA:14516433"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      53.154571,  
-      157.418088  
+    "id": "urn:ngsi-ld:Contact:id:HMUT:83435609",  
+    "dateCreated": "2019-11-03T13:34:13Z",  
+    "dateModified": "1987-05-08T16:34:27Z",  
+    "source": "Yet back writer so bank nature south. Resource including speak.",  
+    "name": "Court material main five appear. Answer face bad leader.",  
+    "alternateName": "Especially term detail beautiful. Coach step agreement home.",  
+    "description": "Country off allow rate record. Growth when economy save. Example later whom son audience.",  
+    "dataProvider": "Important pick red while machine take. Born baby because back way hit play.",  
+    "owner": [  
+        "urn:ngsi-ld:Contact:items:VORM:50502773",  
+        "urn:ngsi-ld:Contact:items:ADVX:61609895"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Contact:items:KLNB:69768334",  
+        "urn:ngsi-ld:Contact:items:ITWA:14516433"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            53.154571,  
+            157.418088  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Part physical really head work past maintain. Late third kitchen suffer fund fill each. Four three your heart industry employee realize.",  
+        "addressLocality": "Behind explain show mission. Thousand forward wall. Size worry any town chance.",  
+        "addressRegion": "Job ever design toward boy citizen. Happy city part rule present try. Indicate doctor job look different.",  
+        "addressCountry": "Despite cup fund thank fight hard camera. Myself area pull watch dog.",  
+        "postalCode": "Size else present still now. Country support choose treatment manager.",  
+        "postOfficeBoxNumber": "Food often candidate century popular huge. After culture tend feel. Sport win because according election present customer."  
+    },  
+    "areaServed": "Take reflect member. Next attack discover employee sit accept. Range available nearly impact federal how receive view.",  
+    "rt": [  
+        "oic.r.sensor.contact",  
+        "oic.r.sensor.contact"  
+    ],  
+    "value": {  
+        "type": "Property",  
+        "value": false  
+    },  
+    "n": "Condition lay state ask. Him we safe program. Responsibility among imagine everything within pass.",  
+    "if": [  
+        "oic.if.s",  
+        "oic.if.s"  
+    ],  
+    "type": "Contact",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Part physical really head work past maintain. Late third kitchen suffer fund fill each. Four three your heart industry employee realize.",  
-    "addressLocality": "Behind explain show mission. Thousand forward wall. Size worry any town chance.",  
-    "addressRegion": "Job ever design toward boy citizen. Happy city part rule present try. Indicate doctor job look different.",  
-    "addressCountry": "Despite cup fund thank fight hard camera. Myself area pull watch dog.",  
-    "postalCode": "Size else present still now. Country support choose treatment manager.",  
-    "postOfficeBoxNumber": "Food often candidate century popular huge. After culture tend feel. Sport win because according election present customer."  
-  },  
-  "areaServed": "Take reflect member. Next attack discover employee sit accept. Range available nearly impact federal how receive view.",  
-  "rt": [  
-    "oic.r.sensor.contact",  
-    "oic.r.sensor.contact"  
-  ],  
-  "value": {  
-    "type": "Property",  
-    "value": false  
-  },  
-  "n": "Condition lay state ask. Him we safe program. Responsibility among imagine everything within pass.",  
-  "if": [  
-    "oic.if.s",  
-    "oic.if.s"  
-  ],  
-  "type": "Contact",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### Contact NGSI-LD normalized Example    
 Here is an example of a Contact in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Contact:id:PHQT:43656254",  
-  "dateCreated": {  
-    "type": "Property",  
+    "id": "urn:ngsi-ld:Contact:id:PHQT:43656254",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1979-06-21T02:42:47Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2009-05-13T06:47:50Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Project need follow simply brother. Gas continue everyone those language. Receive new always yard ever both."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Special nice how today culture. Grow age world step quickly how move off. Here style data no bill discussion."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Window more similar contain. Anything song key."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Debate bank spend technology father."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Billion democratic behind fly memory. Poor window significant accept look amount probably."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Contact:items:EONI:36946282",  
+            "urn:ngsi-ld:Contact:items:JZPI:03143081"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Contact:items:IKIB:26985774"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -16.2109895,  
+                118.55362  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Our food use business but. Push behavior affect quite small travel.",  
+            "addressLocality": "Bad front check fight. Ten must place fast. Pattern chance some. Police forget certain once degree wrong page scientist.",  
+            "addressRegion": "Parent campaign notice can agent back produce career. Under color style difference. Summer recognize join good type hospital thought argue. Still public foreign if camera thus.",  
+            "addressCountry": "Meet me television social research industry. Voice also seat police. Assume stay color time western pay. Style rather build specific.",  
+            "postalCode": "Certainly join deal agent mention entire speak. No space little attorney number nor firm old. Simple red six day consider recognize.",  
+            "postOfficeBoxNumber": "Stop middle individual since truth exist expect expect. Husband yeah learn beat. Bed reduce identify old Democrat whole citizen."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Allow coach population sit movement local. Catch budget piece matter."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.sensor.contact"  
+        ]  
+    },  
     "value": {  
-      "@type": "DateTime",  
-      "@value": "1979-06-21T02:42:47Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2009-05-13T06:47:50Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Project need follow simply brother. Gas continue everyone those language. Receive new always yard ever both."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Special nice how today culture. Grow age world step quickly how move off. Here style data no bill discussion."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Window more similar contain. Anything song key."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Debate bank spend technology father."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Billion democratic behind fly memory. Poor window significant accept look amount probably."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Contact:items:EONI:36946282",  
-      "urn:ngsi-ld:Contact:items:JZPI:03143081"  
+        "type": "Property",  
+        "value": false  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Half daughter officer product travel toward every. Live never impact."  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline",  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "Contact",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Contact:items:IKIB:26985774"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -16.2109895,  
-        118.55362  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Our food use business but. Push behavior affect quite small travel.",  
-      "addressLocality": "Bad front check fight. Ten must place fast. Pattern chance some. Police forget certain once degree wrong page scientist.",  
-      "addressRegion": "Parent campaign notice can agent back produce career. Under color style difference. Summer recognize join good type hospital thought argue. Still public foreign if camera thus.",  
-      "addressCountry": "Meet me television social research industry. Voice also seat police. Assume stay color time western pay. Style rather build specific.",  
-      "postalCode": "Certainly join deal agent mention entire speak. No space little attorney number nor firm old. Simple red six day consider recognize.",  
-      "postOfficeBoxNumber": "Stop middle individual since truth exist expect expect. Husband yeah learn beat. Bed reduce identify old Democrat whole citizen."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Allow coach population sit movement local. Catch budget piece matter."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.sensor.contact"  
-    ]  
-  },  
-  "value": {  
-    "type": "Property",  
-    "value": false  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Half daughter officer product travel toward every. Live never impact."  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.baseline",  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "type": "Contact",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
