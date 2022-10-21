@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entity: ContinuousGlucoseMeterThreshold  
-=======================================  
+=======================================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.OCF/blob/master/ContinuousGlucoseMeterThreshold/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description: **This Resource describes the Properties associated with Threshold for Continuous Glucose Meter (CGM).**  
 version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `dhyper`: This Property describes the Device hyperglycemia threshold (mg/dL)  - `dhypo`: This Property describes the Device hypoglycemia threshold (mg/dL)  - `gdr`: This Property describes the Glucose Decrease rate of change threshold (%)  - `gir`: This Property describes the Glucose Increase rate of change threshold (%)  - `id`: Unique identifier of the entity  - `if`: The OCF Interface set supported by this Resource.  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n`: Friendly name of the Resource  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `phigh`: This Property describes the Patient high threshold (mg/dL)  - `plow`: This Property describes the Patient low threshold (mg/dL)  - `precision`: When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision  - `range`: The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.  - `rt`: The Resource Type.  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `step`: Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.  - `type`: NGSI entity type. It has to be ContinuousGlucoseMeterThreshold    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `dhyper[number]`: This Property describes the Device hyperglycemia threshold (mg/dL)  - `dhypo[number]`: This Property describes the Device hypoglycemia threshold (mg/dL)  - `gdr[number]`: This Property describes the Glucose Decrease rate of change threshold (%)  - `gir[number]`: This Property describes the Glucose Increase rate of change threshold (%)  - `id[*]`: Unique identifier of the entity  - `if[array]`: The OCF Interface set supported by this Resource.  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n[string]`: Friendly name of the Resource  - `name[string]`: The name of this item.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `phigh[number]`: This Property describes the Patient high threshold (mg/dL)  - `plow[number]`: This Property describes the Patient low threshold (mg/dL)  - `precision[number]`: When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision  - `range[array]`: The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.  - `rt[array]`: The Resource Type.  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `step[number]`: Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.  - `type[string]`: NGSI entity type. It has to be ContinuousGlucoseMeterThreshold  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Required properties  
-- `dhyper`  - `dhypo`  - `gdr`  - `gir`  - `id`  - `phigh`  - `plow`  - `type`    
+- `dhyper`  - `dhypo`  - `gdr`  - `gir`  - `id`  - `phigh`  - `plow`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Data Model adapted from the original created by the Open Connectivity Foundation. Original repository in https://github.com/openconnectivityfoundation/IoTDataModels  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Data Model description of properties  
 Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ContinuousGlucoseMeterThreshold:    
@@ -394,9 +407,14 @@ ContinuousGlucoseMeterThreshold:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Example payloads    
 #### ContinuousGlucoseMeterThreshold NGSI-v2 key-values Example    
 Here is an example of a ContinuousGlucoseMeterThreshold in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:id:CVLC:04532465",  
@@ -479,8 +497,10 @@ ContinuousGlucoseMeterThreshold:
   "type": "ContinuousGlucoseMeterThreshold"  
 }  
 ```  
+</details>  
 #### ContinuousGlucoseMeterThreshold NGSI-v2 normalized Example    
 Here is an example of a ContinuousGlucoseMeterThreshold in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -643,229 +663,243 @@ ContinuousGlucoseMeterThreshold:
   }  
 }  
 ```  
+</details>  
 #### ContinuousGlucoseMeterThreshold NGSI-LD key-values Example    
 Here is an example of a ContinuousGlucoseMeterThreshold in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:id:CVLC:04532465",  
-  "dateCreated": "2004-01-04T01:24:18Z",  
-  "dateModified": "2002-01-05T16:59:18Z",  
-  "source": "Pull most article nation radio official. Perhaps much recently above suffer knowledge. Box forget theory American room pass six thousand.",  
-  "name": "My door old quite force. Position difficult man lose standard grow ground.",  
-  "alternateName": "Many level ever nothing market officer discover. Interesting simply summer including apply. Soldier painting movie month always budget artist through.",  
-  "description": "Stock one hot allow. Just consider out true. Property data compare send could family very billion.",  
-  "dataProvider": "Station enough real green. Night strong final television yes.",  
-  "owner": [  
-    "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:EIPO:90879168",  
-    "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:NTIT:46901124"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:WRLC:85100790",  
-    "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:LKKG:98184784"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      61.618817,  
-      96.892198  
+    "id": "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:id:CVLC:04532465",  
+    "dateCreated": "2004-01-04T01:24:18Z",  
+    "dateModified": "2002-01-05T16:59:18Z",  
+    "source": "Pull most article nation radio official. Perhaps much recently above suffer knowledge. Box forget theory American room pass six thousand.",  
+    "name": "My door old quite force. Position difficult man lose standard grow ground.",  
+    "alternateName": "Many level ever nothing market officer discover. Interesting simply summer including apply. Soldier painting movie month always budget artist through.",  
+    "description": "Stock one hot allow. Just consider out true. Property data compare send could family very billion.",  
+    "dataProvider": "Station enough real green. Night strong final television yes.",  
+    "owner": [  
+        "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:EIPO:90879168",  
+        "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:NTIT:46901124"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:WRLC:85100790",  
+        "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:LKKG:98184784"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            61.618817,  
+            96.892198  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Which opportunity expect grow. Time truth serious best product very. Yeah but million think seven good language.",  
+        "addressLocality": "Finally talk enter personal medical above. Book senior yourself life second back.",  
+        "addressRegion": "Bring value future cover meeting across station spring. Let kitchen leg game cover.",  
+        "addressCountry": "Include present book best. Always along attack. Officer dog later decade light.",  
+        "postalCode": "World probably until result detail window. Form himself design population war. Think black sell up discover month.",  
+        "postOfficeBoxNumber": "Paper wall think focus. Figure threat material increase increase respond protect. Recently character reach see type."  
+    },  
+    "areaServed": "Start including movement trip. Machine moment light court. Own that once smile nation just. Push everything total save option investment manage.",  
+    "plow": {  
+        "type": "Property",  
+        "value": 977.2  
+    },  
+    "phigh": {  
+        "type": "Property",  
+        "value": 381.1  
+    },  
+    "dhypo": {  
+        "type": "Property",  
+        "value": 879.9  
+    },  
+    "dhyper": {  
+        "type": "Property",  
+        "value": 851.2  
+    },  
+    "gir": {  
+        "type": "Property",  
+        "value": 711.2  
+    },  
+    "gdr": {  
+        "type": "Property",  
+        "value": 725.3  
+    },  
+    "rt": [  
+        "oic.r.cgm.threshold",  
+        "oic.r.cgm.threshold"  
+    ],  
+    "n": "Heart against through live size work. Apply vote system show sea.",  
+    "if": [  
+        "oic.if.rw",  
+        "oic.if.rw"  
+    ],  
+    "range": [  
+        776.5,  
+        406.9  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 751.9  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 471.3  
+    },  
+    "type": "ContinuousGlucoseMeterThreshold",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Which opportunity expect grow. Time truth serious best product very. Yeah but million think seven good language.",  
-    "addressLocality": "Finally talk enter personal medical above. Book senior yourself life second back.",  
-    "addressRegion": "Bring value future cover meeting across station spring. Let kitchen leg game cover.",  
-    "addressCountry": "Include present book best. Always along attack. Officer dog later decade light.",  
-    "postalCode": "World probably until result detail window. Form himself design population war. Think black sell up discover month.",  
-    "postOfficeBoxNumber": "Paper wall think focus. Figure threat material increase increase respond protect. Recently character reach see type."  
-  },  
-  "areaServed": "Start including movement trip. Machine moment light court. Own that once smile nation just. Push everything total save option investment manage.",  
-  "plow": {  
-    "type": "Property",  
-    "value": 977.2  
-  },  
-  "phigh": {  
-    "type": "Property",  
-    "value": 381.1  
-  },  
-  "dhypo": {  
-    "type": "Property",  
-    "value": 879.9  
-  },  
-  "dhyper": {  
-    "type": "Property",  
-    "value": 851.2  
-  },  
-  "gir": {  
-    "type": "Property",  
-    "value": 711.2  
-  },  
-  "gdr": {  
-    "type": "Property",  
-    "value": 725.3  
-  },  
-  "rt": [  
-    "oic.r.cgm.threshold",  
-    "oic.r.cgm.threshold"  
-  ],  
-  "n": "Heart against through live size work. Apply vote system show sea.",  
-  "if": [  
-    "oic.if.rw",  
-    "oic.if.rw"  
-  ],  
-  "range": [  
-    776.5,  
-    406.9  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 751.9  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 471.3  
-  },  
-  "type": "ContinuousGlucoseMeterThreshold",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### ContinuousGlucoseMeterThreshold NGSI-LD normalized Example    
 Here is an example of a ContinuousGlucoseMeterThreshold in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:id:JNLC:20811520",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2014-10-06T01:57:51Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2009-09-21T14:09:17Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Contain check product major certainly. Quickly expect wait cost conference fund similar. Night or carry purpose of article."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Bed close late gun. Later financial on. Both lose rather. Necessary mouth question."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Meet PM service water. Trade interesting consumer idea."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Number lot edge whatever democratic. How total treat. Though not represent control leader marriage."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Soldier different school far reality south charge. Piece exactly today gas loss thousand idea."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:OEJX:09311250",  
-      "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:QHQH:24761502"  
+    "id": "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:id:JNLC:20811520",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2014-10-06T01:57:51Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2009-09-21T14:09:17Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Contain check product major certainly. Quickly expect wait cost conference fund similar. Night or carry purpose of article."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Bed close late gun. Later financial on. Both lose rather. Necessary mouth question."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Meet PM service water. Trade interesting consumer idea."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Number lot edge whatever democratic. How total treat. Though not represent control leader marriage."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Soldier different school far reality south charge. Piece exactly today gas loss thousand idea."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:OEJX:09311250",  
+            "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:QHQH:24761502"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:EANX:32862165"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -14.737475,  
+                -83.850391  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Send arm you yeah somebody. Blue along push wait.",  
+            "addressLocality": "Billion central ask trade significant could eat. Again piece Mr. Mother upon quickly reach also.",  
+            "addressRegion": "Media per contain bed type major. Open view social use see laugh. Party budget back. Program money protect.",  
+            "addressCountry": "Quality sort course yard several agent. Activity throughout memory arm.",  
+            "postalCode": "Guy effect computer less soon. Know never southern bar audience. Respond check share risk this story six. Age eight watch special everybody thank.",  
+            "postOfficeBoxNumber": "Candidate happy natural. See wear case few."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Local across including real. Pattern resource everybody ability."  
+    },  
+    "plow": {  
+        "type": "Property",  
+        "value": 352.0  
+    },  
+    "phigh": {  
+        "type": "Property",  
+        "value": 410.6  
+    },  
+    "dhypo": {  
+        "type": "Property",  
+        "value": 472.3  
+    },  
+    "dhyper": {  
+        "type": "Property",  
+        "value": 117.2  
+    },  
+    "gir": {  
+        "type": "Property",  
+        "value": 650.9  
+    },  
+    "gdr": {  
+        "type": "Property",  
+        "value": 718.9  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.cgm.threshold"  
+        ]  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Story her eye key rich individual. Area avoid small these. Usually night health responsibility behind no ground. Design drive above discover."  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            641.4,  
+            917.0  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 228.3  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 832.7  
+    },  
+    "type": "ContinuousGlucoseMeterThreshold",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:EANX:32862165"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -14.737475,  
-        -83.850391  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Send arm you yeah somebody. Blue along push wait.",  
-      "addressLocality": "Billion central ask trade significant could eat. Again piece Mr. Mother upon quickly reach also.",  
-      "addressRegion": "Media per contain bed type major. Open view social use see laugh. Party budget back. Program money protect.",  
-      "addressCountry": "Quality sort course yard several agent. Activity throughout memory arm.",  
-      "postalCode": "Guy effect computer less soon. Know never southern bar audience. Respond check share risk this story six. Age eight watch special everybody thank.",  
-      "postOfficeBoxNumber": "Candidate happy natural. See wear case few."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Local across including real. Pattern resource everybody ability."  
-  },  
-  "plow": {  
-    "type": "Property",  
-    "value": 352.0  
-  },  
-  "phigh": {  
-    "type": "Property",  
-    "value": 410.6  
-  },  
-  "dhypo": {  
-    "type": "Property",  
-    "value": 472.3  
-  },  
-  "dhyper": {  
-    "type": "Property",  
-    "value": 117.2  
-  },  
-  "gir": {  
-    "type": "Property",  
-    "value": 650.9  
-  },  
-  "gdr": {  
-    "type": "Property",  
-    "value": 718.9  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.cgm.threshold"  
-    ]  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Story her eye key rich individual. Area avoid small these. Usually night health responsibility behind no ground. Design drive above discover."  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      641.4,  
-      917.0  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 228.3  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 832.7  
-  },  
-  "type": "ContinuousGlucoseMeterThreshold",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
