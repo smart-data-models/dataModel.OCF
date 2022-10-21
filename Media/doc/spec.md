@@ -1,17 +1,32 @@
-Entity: Media  
-=============  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entity: Media  
+=============<!-- /10-Header -->  
+<!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.OCF/blob/master/Media/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description: **Smart Data Models Program adaptation of the original IoTData data Models. This Resource specifies the media types that an OCF Server supports. The resource is an array of media elements.  Each element contains:     A URL at which the specified media type can be accessed.     A string array containing the definition of the media using SDP.     Each entry in the sdp array is an SDP line.     Each line shall follow the SDP description syntax as defined in the SDP specification. The SDP specification can be found at http://tools.ietf.org/html/rfc4566.**  
+version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `if`: The OCF Interface set supported by this Resource.  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `media`: No original description was available  - `n`: Friendly name of the Resource  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `rt`: The Resource Type.  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type`: NGSI entity type. It has to be Media    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `id[*]`: Unique identifier of the entity  - `if[array]`: The OCF Interface set supported by this Resource.  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `media[array]`: No original description was available  - `n[string]`: Friendly name of the Resource  - `name[string]`: The name of this item.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `rt[array]`: The Resource Type.  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type[string]`: NGSI entity type. It has to be Media  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Required properties  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 This data model comes from the original [Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels). It has been extended to comply with NGSI requirements.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Data Model description of properties  
 Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Media:    
@@ -341,9 +356,14 @@ Media:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Example payloads    
 #### Media NGSI-v2 key-values Example    
 Here is an example of a Media in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Media:id:KDPQ:83036391",  
@@ -380,8 +400,10 @@ Media:
   "areaServed": "Answer wife call may under. Anything inside write. Tough however study know coach industry tree in. But town parent."  
 }  
 ```  
+</details>  
 #### Media NGSI-v2 normalized Example    
 Here is an example of a Media in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -459,127 +481,141 @@ Media:
   }  
 }  
 ```  
+</details>  
 #### Media NGSI-LD key-values Example    
 Here is an example of a Media in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Media:id:KDPQ:83036391",  
-  "dateCreated": "1997-01-03T03:13:22Z",  
-  "dateModified": "2000-02-09T21:59:03Z",  
-  "source": "Especially according myself office place. Test case expert forget.",  
-  "name": "East product share fact school. Sound bad police most college among.",  
-  "alternateName": "Media trade today plant. Art fly but price production. Stand here power wonder its keep.",  
-  "description": "Wide skin maybe western especially look live. Value agency blood current. Since affect star miss general election.",  
-  "dataProvider": "Painting cup half tend identify student mission world. Interesting easy anyone operation how sound.",  
-  "owner": [  
-    "urn:ngsi-ld:Media:items:LNSZ:90498442",  
-    "urn:ngsi-ld:Media:items:FKOX:99131384"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Media:items:XRQW:77854149",  
-    "urn:ngsi-ld:Media:items:WYHM:27291806"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -59.32886,  
-      108.974994  
+    "id": "urn:ngsi-ld:Media:id:KDPQ:83036391",  
+    "dateCreated": "1997-01-03T03:13:22Z",  
+    "dateModified": "2000-02-09T21:59:03Z",  
+    "source": "Especially according myself office place. Test case expert forget.",  
+    "name": "East product share fact school. Sound bad police most college among.",  
+    "alternateName": "Media trade today plant. Art fly but price production. Stand here power wonder its keep.",  
+    "description": "Wide skin maybe western especially look live. Value agency blood current. Since affect star miss general election.",  
+    "dataProvider": "Painting cup half tend identify student mission world. Interesting easy anyone operation how sound.",  
+    "owner": [  
+        "urn:ngsi-ld:Media:items:LNSZ:90498442",  
+        "urn:ngsi-ld:Media:items:FKOX:99131384"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Media:items:XRQW:77854149",  
+        "urn:ngsi-ld:Media:items:WYHM:27291806"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -59.32886,  
+            108.974994  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Cut arm act home short. Not under bill executive morning home rate.",  
+        "addressLocality": "Change popular last arrive to issue soldier. Blood city fine old nothing. Back memory father be reach get focus.",  
+        "addressRegion": "Help large hear look end live world fact. Certainly senior fall go tell general heavy. Back fund shake their environment.",  
+        "addressCountry": "Pull kind personal Congress score. Should east capital address fast realize sort. Perform impact player truth stay senior.",  
+        "postalCode": "Treat recognize where cover watch. Interest bring assume agree health. Marriage specific claim movie sing.",  
+        "postOfficeBoxNumber": "Light personal benefit person environmental."  
+    },  
+    "areaServed": "Answer wife call may under. Anything inside write. Tough however study know coach industry tree in. But town parent.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Cut arm act home short. Not under bill executive morning home rate.",  
-    "addressLocality": "Change popular last arrive to issue soldier. Blood city fine old nothing. Back memory father be reach get focus.",  
-    "addressRegion": "Help large hear look end live world fact. Certainly senior fall go tell general heavy. Back fund shake their environment.",  
-    "addressCountry": "Pull kind personal Congress score. Should east capital address fast realize sort. Perform impact player truth stay senior.",  
-    "postalCode": "Treat recognize where cover watch. Interest bring assume agree health. Marriage specific claim movie sing.",  
-    "postOfficeBoxNumber": "Light personal benefit person environmental."  
-  },  
-  "areaServed": "Answer wife call may under. Anything inside write. Tough however study know coach industry tree in. But town parent.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### Media NGSI-LD normalized Example    
 Here is an example of a Media in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Media:id:JBFJ:85590267",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1999-11-01T04:37:28Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2014-02-07T07:07:30Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Today dark project still. Cell some together because."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Create anyone close."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Offer fish pick news chance reflect long. Role exist method daughter. Run one beautiful method hospital find know young."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Sing firm try how finish day. Will letter staff middle. Here prevent your major mother activity discussion instead."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Family never possible why scientist."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Media:items:JUEF:68145877",  
-      "urn:ngsi-ld:Media:items:SUAX:54574771"  
+    "id": "urn:ngsi-ld:Media:id:JBFJ:85590267",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1999-11-01T04:37:28Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2014-02-07T07:07:30Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Today dark project still. Cell some together because."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Create anyone close."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Offer fish pick news chance reflect long. Role exist method daughter. Run one beautiful method hospital find know young."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Sing firm try how finish day. Will letter staff middle. Here prevent your major mother activity discussion instead."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Family never possible why scientist."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Media:items:JUEF:68145877",  
+            "urn:ngsi-ld:Media:items:SUAX:54574771"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Media:items:QFXF:74085416"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                11.0430135,  
+                -64.961196  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Hot reduce life national final. Administration citizen determine machine movement dog.",  
+            "addressLocality": "Serve occur wife option life stand. My which realize focus. House coach stuff issue point foreign exist. Could girl bad bed yard debate.",  
+            "addressRegion": "Particular north she itself debate. Behind go true. Successful young space.",  
+            "addressCountry": "Oil door game church service.",  
+            "postalCode": "Own room risk also. Someone wife mouth magazine. Major administration believe north where religious hotel sell.",  
+            "postOfficeBoxNumber": "Draw field appear toward. Republican computer science explain while. Pretty party baby professor list contain here."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Dream wall seem million. At health player provide test."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Media:items:QFXF:74085416"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        11.0430135,  
-        -64.961196  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Hot reduce life national final. Administration citizen determine machine movement dog.",  
-      "addressLocality": "Serve occur wife option life stand. My which realize focus. House coach stuff issue point foreign exist. Could girl bad bed yard debate.",  
-      "addressRegion": "Particular north she itself debate. Behind go true. Successful young space.",  
-      "addressCountry": "Oil door game church service.",  
-      "postalCode": "Own room risk also. Someone wife mouth magazine. Major administration believe north where religious hotel sell.",  
-      "postOfficeBoxNumber": "Draw field appear toward. Republican computer science explain while. Pretty party baby professor list contain here."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Dream wall seem million. At health player provide test."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
