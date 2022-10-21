@@ -1,17 +1,32 @@
-Entity: Presence  
-================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entity: Presence  
+================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.OCF/blob/master/Presence/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description: **Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes whether presence has been sensed or not. The Property 'value' is a boolean. A value of 'true' means that presence has been sensed. A value of 'false' means that presence not been sensed.**  
+version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `if`: The OCF Interface set supported by this Resource.  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n`: Friendly name of the Resource  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `rt`: The Resource Type.  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type`: NGSI entity type. It has to be Presence  - `value`: The presences sensor, true = precense sensed, false = precensenot sensed.    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `id[*]`: Unique identifier of the entity  - `if[array]`: The OCF Interface set supported by this Resource.  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n[string]`: Friendly name of the Resource  - `name[string]`: The name of this item.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `rt[array]`: The Resource Type.  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type[string]`: NGSI entity type. It has to be Presence  - `value[boolean]`: The presences sensor, true = precense sensed, false = precensenot sensed.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Required properties  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 This data model comes from the original [Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels). It has been extended to comply with NGSI requirements.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Data Model description of properties  
 Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Presence:    
@@ -329,9 +344,14 @@ Presence:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Example payloads    
 #### Presence NGSI-v2 key-values Example    
 Here is an example of a Presence in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Presence:id:JLTW:38479281",  
@@ -368,8 +388,10 @@ Presence:
   "areaServed": "Care perform into relationship check remain. Financial line item end. Store law produce. Total data expect both sound."  
 }  
 ```  
+</details>  
 #### Presence NGSI-v2 normalized Example    
 Here is an example of a Presence in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -447,127 +469,141 @@ Presence:
   }  
 }  
 ```  
+</details>  
 #### Presence NGSI-LD key-values Example    
 Here is an example of a Presence in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Presence:id:JLTW:38479281",  
-  "dateCreated": "1997-05-02T20:22:06Z",  
-  "dateModified": "1979-07-21T14:01:17Z",  
-  "source": "Away manage mouth instead. Benefit improve and seat real choose. Shake he many range imagine program.",  
-  "name": "Under water less. Student question page develop focus whose factor. Move little stay really.",  
-  "alternateName": "Hear hope need dream read too. Year a and team detail. Call owner recent certain plant everybody sign.",  
-  "description": "Project almost political than section. Professional artist him six.",  
-  "dataProvider": "My off around fear.",  
-  "owner": [  
-    "urn:ngsi-ld:Presence:items:WEHM:58203570",  
-    "urn:ngsi-ld:Presence:items:OKMR:47628130"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Presence:items:XLNT:17090672",  
-    "urn:ngsi-ld:Presence:items:NKKA:82599000"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -77.9042455,  
-      -139.298575  
+    "id": "urn:ngsi-ld:Presence:id:JLTW:38479281",  
+    "dateCreated": "1997-05-02T20:22:06Z",  
+    "dateModified": "1979-07-21T14:01:17Z",  
+    "source": "Away manage mouth instead. Benefit improve and seat real choose. Shake he many range imagine program.",  
+    "name": "Under water less. Student question page develop focus whose factor. Move little stay really.",  
+    "alternateName": "Hear hope need dream read too. Year a and team detail. Call owner recent certain plant everybody sign.",  
+    "description": "Project almost political than section. Professional artist him six.",  
+    "dataProvider": "My off around fear.",  
+    "owner": [  
+        "urn:ngsi-ld:Presence:items:WEHM:58203570",  
+        "urn:ngsi-ld:Presence:items:OKMR:47628130"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Presence:items:XLNT:17090672",  
+        "urn:ngsi-ld:Presence:items:NKKA:82599000"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -77.9042455,  
+            -139.298575  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Generation be color conference issue quickly human. Next study role example.",  
+        "addressLocality": "It social level nor. It stand support then lot this forget. Ok moment financial rich hard.",  
+        "addressRegion": "Few form radio industry head understand. Individual ten commercial easy understand pull good mouth. Dog wife bar ever consider in pull.",  
+        "addressCountry": "Local model customer baby similar senior suggest. Religious coach responsibility major. Recognize say play right create name. Television seat somebody investment small to ball.",  
+        "postalCode": "Strategy bar inside respond. Environmental major hope wear certain human make. Institution cause anything smile body structure impact.",  
+        "postOfficeBoxNumber": "Congress great operation experience manager assume capital. Stay parent room other. Positive amount nation hope heart wait."  
+    },  
+    "areaServed": "Care perform into relationship check remain. Financial line item end. Store law produce. Total data expect both sound.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Generation be color conference issue quickly human. Next study role example.",  
-    "addressLocality": "It social level nor. It stand support then lot this forget. Ok moment financial rich hard.",  
-    "addressRegion": "Few form radio industry head understand. Individual ten commercial easy understand pull good mouth. Dog wife bar ever consider in pull.",  
-    "addressCountry": "Local model customer baby similar senior suggest. Religious coach responsibility major. Recognize say play right create name. Television seat somebody investment small to ball.",  
-    "postalCode": "Strategy bar inside respond. Environmental major hope wear certain human make. Institution cause anything smile body structure impact.",  
-    "postOfficeBoxNumber": "Congress great operation experience manager assume capital. Stay parent room other. Positive amount nation hope heart wait."  
-  },  
-  "areaServed": "Care perform into relationship check remain. Financial line item end. Store law produce. Total data expect both sound.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### Presence NGSI-LD normalized Example    
 Here is an example of a Presence in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Presence:id:HOZJ:52421725",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1977-07-31T22:23:39Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1977-07-07T03:50:10Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Year account notice relationship behind reason."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Hear daughter indeed station paper find. Field strategy down much sport character program."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Leader environmental throw order power east fish. Group agree camera their draw personal even. Movement true though stage audience clear."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Music same authority simple age suddenly. Ball yeah much himself employee finally."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Study reason security loss often especially."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Presence:items:SXTP:56856707",  
-      "urn:ngsi-ld:Presence:items:OXIC:88608101"  
+    "id": "urn:ngsi-ld:Presence:id:HOZJ:52421725",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1977-07-31T22:23:39Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1977-07-07T03:50:10Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Year account notice relationship behind reason."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Hear daughter indeed station paper find. Field strategy down much sport character program."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Leader environmental throw order power east fish. Group agree camera their draw personal even. Movement true though stage audience clear."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Music same authority simple age suddenly. Ball yeah much himself employee finally."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Study reason security loss often especially."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Presence:items:SXTP:56856707",  
+            "urn:ngsi-ld:Presence:items:OXIC:88608101"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Presence:items:WGDM:46942839"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -33.2143295,  
+                106.859226  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Evening door data stand positive kind. Discover eye story let throw sometimes natural. Wear matter cultural risk grow.",  
+            "addressLocality": "Vote face hospital baby program door. Green wide benefit last spring believe single.",  
+            "addressRegion": "Pass but produce make address debate. Imagine third research if somebody defense instead. Former production vote cover wife develop strategy.",  
+            "addressCountry": "Stage understand first give one less bad. Fine machine expect although.",  
+            "postalCode": "Site ok chance question water Republican it. Also so down stuff. Actually soldier behavior three trip certain simply father. Half mouth kitchen strategy.",  
+            "postOfficeBoxNumber": "Which various woman a wish."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Radio lay president this matter theory. Box per site call. Respond manager hundred interview choice purpose."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Presence:items:WGDM:46942839"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -33.2143295,  
-        106.859226  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Evening door data stand positive kind. Discover eye story let throw sometimes natural. Wear matter cultural risk grow.",  
-      "addressLocality": "Vote face hospital baby program door. Green wide benefit last spring believe single.",  
-      "addressRegion": "Pass but produce make address debate. Imagine third research if somebody defense instead. Former production vote cover wife develop strategy.",  
-      "addressCountry": "Stage understand first give one less bad. Fine machine expect although.",  
-      "postalCode": "Site ok chance question water Republican it. Also so down stuff. Actually soldier behavior three trip certain simply father. Half mouth kitchen strategy.",  
-      "postOfficeBoxNumber": "Which various woman a wish."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Radio lay president this matter theory. Box per site call. Respond manager hundred interview choice purpose."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
