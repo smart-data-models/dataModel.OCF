@@ -1,17 +1,32 @@
-Entity: Calorific  
-=================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entity: Calorific  
+=================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.OCF/blob/master/Calorific/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description: **Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes Properties associated with the energy associated with the consumption of different fuels (including natural gas) The calorific value is a number the calorific value is a measure of the available heat energy, used as part of the calculation to convert a volume of a fuel (e.g. m3) to an energy value (e.g. KWh). **  
+version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `calorific`: Calorific value of fuel  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `if`: The OCF Interfaces supported by this Resource  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n`: Friendly name of the Resource  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `precision`: Accuracy granularity of the exposed value  - `rt`: Resource Type  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type`: NGSI entity type. It has to be Calorific    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `calorific[number]`: Calorific value of fuel  - `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `id[*]`: Unique identifier of the entity  - `if[array]`: The OCF Interfaces supported by this Resource  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n[string]`: Friendly name of the Resource  - `name[string]`: The name of this item.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `precision[number]`: Accuracy granularity of the exposed value  - `rt[array]`: Resource Type  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type[string]`: NGSI entity type. It has to be Calorific  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Required properties  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 This data model comes from the original [Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels). It has been extended to comply with NGSI requirements.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Data Model description of properties  
 Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Calorific:    
@@ -338,9 +353,14 @@ Calorific:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Example payloads    
 #### Calorific NGSI-v2 key-values Example    
 Here is an example of a Calorific in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Calorific:id:FMQF:67893052",  
@@ -377,8 +397,10 @@ Calorific:
   "areaServed": "Green put oil accept. Interview wide cover grow."  
 }  
 ```  
+</details>  
 #### Calorific NGSI-v2 normalized Example    
 Here is an example of a Calorific in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -456,127 +478,141 @@ Calorific:
   }  
 }  
 ```  
+</details>  
 #### Calorific NGSI-LD key-values Example    
 Here is an example of a Calorific in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Calorific:id:FMQF:67893052",  
-  "dateCreated": "1977-03-31T18:46:16Z",  
-  "dateModified": "2007-06-06T14:47:00Z",  
-  "source": "Bit life option. Near law yet study song source. Sea technology family remember.",  
-  "name": "Well certainly girl threat he prove news. Ground who teach.",  
-  "alternateName": "Recently pass a trouble service whose. Up apply Democrat born thousand employee common. Black born peace light.",  
-  "description": "Four your middle. Join these occur away. Cell quality technology day glass.",  
-  "dataProvider": "Huge development nation democratic who network imagine. Seek accept better smile hour.",  
-  "owner": [  
-    "urn:ngsi-ld:Calorific:items:ZPWD:90571353",  
-    "urn:ngsi-ld:Calorific:items:WLVH:40512989"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Calorific:items:GKDH:42748428",  
-    "urn:ngsi-ld:Calorific:items:TIGX:54603853"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      42.680074,  
-      8.875732  
+    "id": "urn:ngsi-ld:Calorific:id:FMQF:67893052",  
+    "dateCreated": "1977-03-31T18:46:16Z",  
+    "dateModified": "2007-06-06T14:47:00Z",  
+    "source": "Bit life option. Near law yet study song source. Sea technology family remember.",  
+    "name": "Well certainly girl threat he prove news. Ground who teach.",  
+    "alternateName": "Recently pass a trouble service whose. Up apply Democrat born thousand employee common. Black born peace light.",  
+    "description": "Four your middle. Join these occur away. Cell quality technology day glass.",  
+    "dataProvider": "Huge development nation democratic who network imagine. Seek accept better smile hour.",  
+    "owner": [  
+        "urn:ngsi-ld:Calorific:items:ZPWD:90571353",  
+        "urn:ngsi-ld:Calorific:items:WLVH:40512989"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Calorific:items:GKDH:42748428",  
+        "urn:ngsi-ld:Calorific:items:TIGX:54603853"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            42.680074,  
+            8.875732  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Medical light suffer word already. Former born sure this car physical notice.",  
+        "addressLocality": "Source statement test report serious character nation.",  
+        "addressRegion": "Society often never simply foreign process upon perhaps. Suddenly year alone.",  
+        "addressCountry": "Star nature thing design. When source consumer letter system southern common.",  
+        "postalCode": "Role figure almost. Many responsibility research teach.",  
+        "postOfficeBoxNumber": "Nothing task under up since value write social. Official mind four family. Become scene test poor produce box organization TV."  
+    },  
+    "areaServed": "Green put oil accept. Interview wide cover grow.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Medical light suffer word already. Former born sure this car physical notice.",  
-    "addressLocality": "Source statement test report serious character nation.",  
-    "addressRegion": "Society often never simply foreign process upon perhaps. Suddenly year alone.",  
-    "addressCountry": "Star nature thing design. When source consumer letter system southern common.",  
-    "postalCode": "Role figure almost. Many responsibility research teach.",  
-    "postOfficeBoxNumber": "Nothing task under up since value write social. Official mind four family. Become scene test poor produce box organization TV."  
-  },  
-  "areaServed": "Green put oil accept. Interview wide cover grow.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### Calorific NGSI-LD normalized Example    
 Here is an example of a Calorific in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Calorific:id:CFRO:24987966",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1980-01-14T16:27:01Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2005-10-09T16:08:25Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "May give voice long. Option shake detail business camera right."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Up toward weight matter. Mention cup oil provide state."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Single industry including. Price TV whether marriage responsibility better."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Imagine a tell best artist. Certain fact join any return."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Upon enter then. Prove nor table hotel show same board. Media other bed door accept skin. Article hit fact speak quality."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Calorific:items:PVCH:41794062",  
-      "urn:ngsi-ld:Calorific:items:AXTC:32120303"  
+    "id": "urn:ngsi-ld:Calorific:id:CFRO:24987966",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1980-01-14T16:27:01Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2005-10-09T16:08:25Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "May give voice long. Option shake detail business camera right."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Up toward weight matter. Mention cup oil provide state."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Single industry including. Price TV whether marriage responsibility better."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Imagine a tell best artist. Certain fact join any return."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Upon enter then. Prove nor table hotel show same board. Media other bed door accept skin. Article hit fact speak quality."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Calorific:items:PVCH:41794062",  
+            "urn:ngsi-ld:Calorific:items:AXTC:32120303"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Calorific:items:EWBK:09194755"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -10.590852,  
+                43.387916  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Administration see claim bring gun. Draw consumer let should place.",  
+            "addressLocality": "Pay situation discussion seek open time. How list during off. Her worry power you against recently.",  
+            "addressRegion": "Account which interesting one anyone community shoulder. Close issue early positive house newspaper test. Must process heart including partner.",  
+            "addressCountry": "Fact science there establish agree strategy thus. Who produce trip movie generation.",  
+            "postalCode": "That house generation face machine service be if. As under line environmental drug head.",  
+            "postOfficeBoxNumber": "Federal yet from there. Ready same involve truth thousand play enter really."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Speech who operation hundred."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Calorific:items:EWBK:09194755"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -10.590852,  
-        43.387916  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Administration see claim bring gun. Draw consumer let should place.",  
-      "addressLocality": "Pay situation discussion seek open time. How list during off. Her worry power you against recently.",  
-      "addressRegion": "Account which interesting one anyone community shoulder. Close issue early positive house newspaper test. Must process heart including partner.",  
-      "addressCountry": "Fact science there establish agree strategy thus. Who produce trip movie generation.",  
-      "postalCode": "That house generation face machine service be if. As under line environmental drug head.",  
-      "postOfficeBoxNumber": "Federal yet from there. Ready same involve truth thousand play enter really."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Speech who operation hundred."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
