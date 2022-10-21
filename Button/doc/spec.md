@@ -1,17 +1,32 @@
-Entity: Button  
-==============  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entity: Button  
+==============<!-- /10-Header -->  
+<!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.OCF/blob/master/Button/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description: **Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the operation of a button style switch. The Property 'value' is a boolean. A value of 'true' means that the button is being pushed/pressed. A value of 'false' means that the button is not being pushed/pressed.**  
+version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `if`: The OCF Interface set supported by this Resource.  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n`: Friendly name of the Resource  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `rt`: The Resource Type.  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type`: NGSI entity type. It has to be Button  - `value`: The status of the button    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `id[*]`: Unique identifier of the entity  - `if[array]`: The OCF Interface set supported by this Resource.  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n[string]`: Friendly name of the Resource  - `name[string]`: The name of this item.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `rt[array]`: The Resource Type.  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type[string]`: NGSI entity type. It has to be Button  - `value[boolean]`: The status of the button  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Required properties  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 This data model comes from the original [Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels). It has been extended to comply with NGSI requirements.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Data Model description of properties  
 Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Button:    
@@ -329,9 +344,14 @@ Button:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Example payloads    
 #### Button NGSI-v2 key-values Example    
 Here is an example of a Button in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Button:id:ISZL:65414478",  
@@ -368,8 +388,10 @@ Button:
   "areaServed": "Young eat despite medical. Company off manager knowledge fast million. Risk those rest system stuff thus."  
 }  
 ```  
+</details>  
 #### Button NGSI-v2 normalized Example    
 Here is an example of a Button in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -447,127 +469,141 @@ Button:
   }  
 }  
 ```  
+</details>  
 #### Button NGSI-LD key-values Example    
 Here is an example of a Button in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Button:id:ISZL:65414478",  
-  "dateCreated": "1996-10-24T13:42:33Z",  
-  "dateModified": "1979-07-19T07:45:44Z",  
-  "source": "Board wind few before whatever region air.",  
-  "name": "President relationship woman study discover. Wide station season store and.",  
-  "alternateName": "Produce lose find land give so. She official Democrat short year western through.",  
-  "description": "Partner dog east concern my half move. Within whole air those. Chair image month capital.",  
-  "dataProvider": "Trade around region certain speech enter imagine believe. Discuss class local finally. Collection government not pull.",  
-  "owner": [  
-    "urn:ngsi-ld:Button:items:QRXM:19903716",  
-    "urn:ngsi-ld:Button:items:OMQJ:53912842"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Button:items:EBXK:60389920",  
-    "urn:ngsi-ld:Button:items:LIPE:98868295"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -63.4215695,  
-      -75.180162  
+    "id": "urn:ngsi-ld:Button:id:ISZL:65414478",  
+    "dateCreated": "1996-10-24T13:42:33Z",  
+    "dateModified": "1979-07-19T07:45:44Z",  
+    "source": "Board wind few before whatever region air.",  
+    "name": "President relationship woman study discover. Wide station season store and.",  
+    "alternateName": "Produce lose find land give so. She official Democrat short year western through.",  
+    "description": "Partner dog east concern my half move. Within whole air those. Chair image month capital.",  
+    "dataProvider": "Trade around region certain speech enter imagine believe. Discuss class local finally. Collection government not pull.",  
+    "owner": [  
+        "urn:ngsi-ld:Button:items:QRXM:19903716",  
+        "urn:ngsi-ld:Button:items:OMQJ:53912842"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Button:items:EBXK:60389920",  
+        "urn:ngsi-ld:Button:items:LIPE:98868295"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -63.4215695,  
+            -75.180162  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Serious now area. Go building sell yes office Mrs. Could bad back.",  
+        "addressLocality": "Ahead add effort mind house. Condition decade picture various. Chair run politics. Civil common yeah month character physical parent.",  
+        "addressRegion": "Property present think including moment. Out full bring vote receive season.",  
+        "addressCountry": "Dinner according much beat. Purpose accept agency account realize realize gas.",  
+        "postalCode": "Concern rise style. Region national democratic how wall.",  
+        "postOfficeBoxNumber": "Design white whole music."  
+    },  
+    "areaServed": "Young eat despite medical. Company off manager knowledge fast million. Risk those rest system stuff thus.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Serious now area. Go building sell yes office Mrs. Could bad back.",  
-    "addressLocality": "Ahead add effort mind house. Condition decade picture various. Chair run politics. Civil common yeah month character physical parent.",  
-    "addressRegion": "Property present think including moment. Out full bring vote receive season.",  
-    "addressCountry": "Dinner according much beat. Purpose accept agency account realize realize gas.",  
-    "postalCode": "Concern rise style. Region national democratic how wall.",  
-    "postOfficeBoxNumber": "Design white whole music."  
-  },  
-  "areaServed": "Young eat despite medical. Company off manager knowledge fast million. Risk those rest system stuff thus.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### Button NGSI-LD normalized Example    
 Here is an example of a Button in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Button:id:CSOS:74812314",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1998-01-07T10:00:33Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2013-03-24T08:33:25Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Everything choose bring about ball himself seat street. Item play hour do. Add child stop."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Recognize always bed system value several. Cold involve myself this pass me. Return also everything poor environmental people."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Situation several spring serve occur. Pick sport land feel left by. Station region cultural Mrs film item life."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Study interesting listen chance ready lead brother key. Although future job bed business."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Return participant positive another everything strategy. Threat cultural quality hundred night white knowledge."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Button:items:TTQN:67676614",  
-      "urn:ngsi-ld:Button:items:SYJP:41408316"  
+    "id": "urn:ngsi-ld:Button:id:CSOS:74812314",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1998-01-07T10:00:33Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2013-03-24T08:33:25Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Everything choose bring about ball himself seat street. Item play hour do. Add child stop."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Recognize always bed system value several. Cold involve myself this pass me. Return also everything poor environmental people."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Situation several spring serve occur. Pick sport land feel left by. Station region cultural Mrs film item life."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Study interesting listen chance ready lead brother key. Although future job bed business."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Return participant positive another everything strategy. Threat cultural quality hundred night white knowledge."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Button:items:TTQN:67676614",  
+            "urn:ngsi-ld:Button:items:SYJP:41408316"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Button:items:LWCH:82036977"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -26.20595,  
+                -78.346435  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Air last nearly two. Official crime country reach radio.",  
+            "addressLocality": "Debate medical population ball rule TV. Federal stock list just buy.",  
+            "addressRegion": "Already training ok with pattern positive. Adult design church visit low oil. Scientist probably beyond college.",  
+            "addressCountry": "That city year check up true. Answer notice week change. Next pressure leave yes stop college two.",  
+            "postalCode": "Above already because cultural single. Election much prepare reduce sign.",  
+            "postOfficeBoxNumber": "Friend expert treatment win. Floor community shoulder generation miss theory. Ago tell reason."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Benefit write begin. Theory buy sister among develop minute sure."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Button:items:LWCH:82036977"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -26.20595,  
-        -78.346435  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Air last nearly two. Official crime country reach radio.",  
-      "addressLocality": "Debate medical population ball rule TV. Federal stock list just buy.",  
-      "addressRegion": "Already training ok with pattern positive. Adult design church visit low oil. Scientist probably beyond college.",  
-      "addressCountry": "That city year check up true. Answer notice week change. Next pressure leave yes stop college two.",  
-      "postalCode": "Above already because cultural single. Election much prepare reduce sign.",  
-      "postOfficeBoxNumber": "Friend expert treatment win. Floor community shoulder generation miss theory. Ago tell reason."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Benefit write begin. Theory buy sister among develop minute sure."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
