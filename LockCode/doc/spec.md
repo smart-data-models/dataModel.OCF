@@ -1,17 +1,32 @@
-Entity: LockCode  
-================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entity: LockCode  
+================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.OCF/blob/master/LockCode/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description: **Smart Data Models Program adaptation of the original IoTData data Models. The Resource describing a lock code. The Property 'lockCodeList' is an array of possible codes that may be associated with a lock. The codes are all presented as strings.**  
+version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `if`: The OCF Interface set supported by this Resource.  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `lockCodeList`:   - `n`: Friendly name of the Resource  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `rt`: The Resource Type.  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type`: NGSI entity type. It has to be LockCode    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `id[*]`: Unique identifier of the entity  - `if[array]`: The OCF Interface set supported by this Resource.  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `lockCodeList[array]`: The value for the lock code  - `n[string]`: Friendly name of the Resource  - `name[string]`: The name of this item.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `rt[array]`: The Resource Type.  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type[string]`: NGSI entity type. It has to be LockCode  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Required properties  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 This data model comes from the original [Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels). It has been extended to comply with NGSI requirements.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Data Model description of properties  
 Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 LockCode:    
@@ -330,9 +345,14 @@ LockCode:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Example payloads    
 #### LockCode NGSI-v2 key-values Example    
 Here is an example of a LockCode in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:LockCode:id:UAFO:32880755",  
@@ -369,8 +389,10 @@ LockCode:
   "areaServed": "Hold state wait point camera marriage according. Newspaper partner teach rest candidate. Provide yard black pattern."  
 }  
 ```  
+</details>  
 #### LockCode NGSI-v2 normalized Example    
 Here is an example of a LockCode in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -448,127 +470,141 @@ LockCode:
   }  
 }  
 ```  
+</details>  
 #### LockCode NGSI-LD key-values Example    
 Here is an example of a LockCode in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:LockCode:id:UAFO:32880755",  
-  "dateCreated": "1973-11-19T13:11:24Z",  
-  "dateModified": "1976-10-21T20:02:58Z",  
-  "source": "Big their thing bank growth. Court adult matter structure. Ask focus artist young speak. Part actually song lead financial summer.",  
-  "name": "Most case this be. Factor leader weight science firm miss bed if. Play still wait evidence however without.",  
-  "alternateName": "Each kitchen soldier take if brother. Assume our article close couple school five issue. Lot policy maybe culture notice.",  
-  "description": "Candidate why industry apply. Late official the represent window mind especially. Cultural rock need learn organization evening.",  
-  "dataProvider": "Shake campaign culture church ok. Money thing agree. Hair few cause many some resource wide.",  
-  "owner": [  
-    "urn:ngsi-ld:LockCode:items:BPFG:16122473",  
-    "urn:ngsi-ld:LockCode:items:KYAO:28376534"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:LockCode:items:IQKM:49639880",  
-    "urn:ngsi-ld:LockCode:items:HHKM:59980343"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      40.5582215,  
-      -6.700416  
+    "id": "urn:ngsi-ld:LockCode:id:UAFO:32880755",  
+    "dateCreated": "1973-11-19T13:11:24Z",  
+    "dateModified": "1976-10-21T20:02:58Z",  
+    "source": "Big their thing bank growth. Court adult matter structure. Ask focus artist young speak. Part actually song lead financial summer.",  
+    "name": "Most case this be. Factor leader weight science firm miss bed if. Play still wait evidence however without.",  
+    "alternateName": "Each kitchen soldier take if brother. Assume our article close couple school five issue. Lot policy maybe culture notice.",  
+    "description": "Candidate why industry apply. Late official the represent window mind especially. Cultural rock need learn organization evening.",  
+    "dataProvider": "Shake campaign culture church ok. Money thing agree. Hair few cause many some resource wide.",  
+    "owner": [  
+        "urn:ngsi-ld:LockCode:items:BPFG:16122473",  
+        "urn:ngsi-ld:LockCode:items:KYAO:28376534"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:LockCode:items:IQKM:49639880",  
+        "urn:ngsi-ld:LockCode:items:HHKM:59980343"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            40.5582215,  
+            -6.700416  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Fall would bar under. Soldier certain group expert could specific mouth off. World successful special ball adult yourself.",  
+        "addressLocality": "Energy least many Democrat box occur.",  
+        "addressRegion": "Certain large sort avoid cultural. Pay movement save from consumer turn.",  
+        "addressCountry": "Worker theory speak truth. Tell college skill. Matter customer range none story likely.",  
+        "postalCode": "Deep remember return energy employee mouth anyone full. Remember father ok figure record election rule simply. Maybe test vote result identify often growth.",  
+        "postOfficeBoxNumber": "Wife what allow various high threat black war. Model million yourself. Either stand right suggest add however north."  
+    },  
+    "areaServed": "Hold state wait point camera marriage according. Newspaper partner teach rest candidate. Provide yard black pattern.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Fall would bar under. Soldier certain group expert could specific mouth off. World successful special ball adult yourself.",  
-    "addressLocality": "Energy least many Democrat box occur.",  
-    "addressRegion": "Certain large sort avoid cultural. Pay movement save from consumer turn.",  
-    "addressCountry": "Worker theory speak truth. Tell college skill. Matter customer range none story likely.",  
-    "postalCode": "Deep remember return energy employee mouth anyone full. Remember father ok figure record election rule simply. Maybe test vote result identify often growth.",  
-    "postOfficeBoxNumber": "Wife what allow various high threat black war. Model million yourself. Either stand right suggest add however north."  
-  },  
-  "areaServed": "Hold state wait point camera marriage according. Newspaper partner teach rest candidate. Provide yard black pattern.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### LockCode NGSI-LD normalized Example    
 Here is an example of a LockCode in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:LockCode:id:DSOC:42964529",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1994-04-07T20:31:59Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2010-09-17T15:38:07Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Among happy produce class."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Quality red believe leader sure contain. Indicate final policy question change environment person."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Return key window decision. Only take today."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Audience challenge three main experience what. Personal American ago cold. Next financial administration deal."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Claim cold throughout oil network. Conference sort day yard or financial. Easy take cultural apply program determine send mind."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:LockCode:items:CCGS:49580900",  
-      "urn:ngsi-ld:LockCode:items:LFBS:64671066"  
+    "id": "urn:ngsi-ld:LockCode:id:DSOC:42964529",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1994-04-07T20:31:59Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2010-09-17T15:38:07Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Among happy produce class."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Quality red believe leader sure contain. Indicate final policy question change environment person."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Return key window decision. Only take today."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Audience challenge three main experience what. Personal American ago cold. Next financial administration deal."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Claim cold throughout oil network. Conference sort day yard or financial. Easy take cultural apply program determine send mind."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:LockCode:items:CCGS:49580900",  
+            "urn:ngsi-ld:LockCode:items:LFBS:64671066"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:LockCode:items:WDUI:94831427"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                26.500678,  
+                7.456238  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Well more treat movement wind. Finish attorney realize daughter office share back.",  
+            "addressLocality": "Cold care relate until among any. Television education law.",  
+            "addressRegion": "Summer bad cause take. Mention before quickly dark. Across community end behavior before.",  
+            "addressCountry": "Current his state I. Available next which health. Week matter collection prevent.",  
+            "postalCode": "Education tell energy middle raise continue. Teach must site trouble.",  
+            "postOfficeBoxNumber": "Down common plant kind. Really strong somebody and only executive consumer. Too reflect affect buy painting."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Recognize be page unit well behind. Contain always right son minute world."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:LockCode:items:WDUI:94831427"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        26.500678,  
-        7.456238  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Well more treat movement wind. Finish attorney realize daughter office share back.",  
-      "addressLocality": "Cold care relate until among any. Television education law.",  
-      "addressRegion": "Summer bad cause take. Mention before quickly dark. Across community end behavior before.",  
-      "addressCountry": "Current his state I. Available next which health. Week matter collection prevent.",  
-      "postalCode": "Education tell energy middle raise continue. Teach must site trouble.",  
-      "postOfficeBoxNumber": "Down common plant kind. Really strong somebody and only executive consumer. Too reflect affect buy painting."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Recognize be page unit well behind. Contain always right son minute world."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
