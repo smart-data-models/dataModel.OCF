@@ -1,17 +1,32 @@
-Entity: Clock  
-=============  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entity: Clock  
+=============<!-- /10-Header -->  
+<!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.OCF/blob/master/Clock/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description: **Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the properties associated with clock and time. Clock is a time information. The Property 'datetime' is using RFC3339 datetime format (e.g: '2007-04-05T14:30Z') (Time+Date+Timezone) The Property 'countdown' is the desired total seconds for countdown.**  
+version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `countdown`: The desired total seconds for countdown.  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `datetime`: Rhe date time using RFC3339 datetime format (e.g: 2007-04-05T14:30:00Z, 2007-04-05T14:30:00+09:00).  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `if`: The OCF Interface set supported by this Resource.  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n`: Friendly name of the Resource  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `rt`: The Resource Type.  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type`: NGSI entity type. It has to be Clock    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `countdown[number]`: The desired total seconds for countdown.  - `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `datetime[string]`: Rhe date time using RFC3339 datetime format (e.g: 2007-04-05T14:30:00Z, 2007-04-05T14:30:00+09:00).  - `description[string]`: A description of this item  - `id[*]`: Unique identifier of the entity  - `if[array]`: The OCF Interface set supported by this Resource.  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n[string]`: Friendly name of the Resource  - `name[string]`: The name of this item.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `rt[array]`: The Resource Type.  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type[string]`: NGSI entity type. It has to be Clock  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Required properties  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 This data model comes from the original [Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels). It has been extended to comply with NGSI requirements.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Data Model description of properties  
 Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Clock:    
@@ -334,9 +349,14 @@ Clock:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Example payloads    
 #### Clock NGSI-v2 key-values Example    
 Here is an example of a Clock in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Clock:id:TNLT:77942213",  
@@ -373,8 +393,10 @@ Clock:
   "areaServed": "City theory five way try. Evening house top job she. Part Mr light."  
 }  
 ```  
+</details>  
 #### Clock NGSI-v2 normalized Example    
 Here is an example of a Clock in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -452,127 +474,141 @@ Clock:
   }  
 }  
 ```  
+</details>  
 #### Clock NGSI-LD key-values Example    
 Here is an example of a Clock in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Clock:id:TNLT:77942213",  
-  "dateCreated": "1989-10-30T22:03:05Z",  
-  "dateModified": "1996-10-04T07:43:43Z",  
-  "source": "Establish successful open wall can. Offer enjoy pay should science respond put.",  
-  "name": "She final some positive section senior sort. Reveal measure also entire easy. Particularly stay force bring bill break.",  
-  "alternateName": "Voice color thing well bar nice. Pretty citizen light go run.",  
-  "description": "Seek claim certain environment. Believe body fill two treat alone. Near new ever tax.",  
-  "dataProvider": "Arm develop song force discussion conference model. Majority air tonight open. Future culture foot marriage benefit life.",  
-  "owner": [  
-    "urn:ngsi-ld:Clock:items:VUTJ:62578136",  
-    "urn:ngsi-ld:Clock:items:RCQN:52240568"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Clock:items:YJJQ:04423472",  
-    "urn:ngsi-ld:Clock:items:SDZW:26555238"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -46.644135,  
-      -111.62986  
+    "id": "urn:ngsi-ld:Clock:id:TNLT:77942213",  
+    "dateCreated": "1989-10-30T22:03:05Z",  
+    "dateModified": "1996-10-04T07:43:43Z",  
+    "source": "Establish successful open wall can. Offer enjoy pay should science respond put.",  
+    "name": "She final some positive section senior sort. Reveal measure also entire easy. Particularly stay force bring bill break.",  
+    "alternateName": "Voice color thing well bar nice. Pretty citizen light go run.",  
+    "description": "Seek claim certain environment. Believe body fill two treat alone. Near new ever tax.",  
+    "dataProvider": "Arm develop song force discussion conference model. Majority air tonight open. Future culture foot marriage benefit life.",  
+    "owner": [  
+        "urn:ngsi-ld:Clock:items:VUTJ:62578136",  
+        "urn:ngsi-ld:Clock:items:RCQN:52240568"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Clock:items:YJJQ:04423472",  
+        "urn:ngsi-ld:Clock:items:SDZW:26555238"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -46.644135,  
+            -111.62986  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Recent protect site where general door. Study about many approach politics little national. Chance produce south.",  
+        "addressLocality": "Wish cost course sister him young. Cold behind spend food truth.",  
+        "addressRegion": "Despite price particular win response hour network figure. Establish generation community husband no up international. Miss watch land economy. Later machine hope piece.",  
+        "addressCountry": "Save prove argue. Stuff spend thing performance strategy. Media style fall early seven leave.",  
+        "postalCode": "Forward stuff sit early accept. Rise clearly may pay speak far look. Simple force would. Meeting friend this situation close.",  
+        "postOfficeBoxNumber": "Leave national adult PM sure some. Final shake show certainly various."  
+    },  
+    "areaServed": "City theory five way try. Evening house top job she. Part Mr light.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Recent protect site where general door. Study about many approach politics little national. Chance produce south.",  
-    "addressLocality": "Wish cost course sister him young. Cold behind spend food truth.",  
-    "addressRegion": "Despite price particular win response hour network figure. Establish generation community husband no up international. Miss watch land economy. Later machine hope piece.",  
-    "addressCountry": "Save prove argue. Stuff spend thing performance strategy. Media style fall early seven leave.",  
-    "postalCode": "Forward stuff sit early accept. Rise clearly may pay speak far look. Simple force would. Meeting friend this situation close.",  
-    "postOfficeBoxNumber": "Leave national adult PM sure some. Final shake show certainly various."  
-  },  
-  "areaServed": "City theory five way try. Evening house top job she. Part Mr light.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### Clock NGSI-LD normalized Example    
 Here is an example of a Clock in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Clock:id:FCFN:80105293",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1982-02-07T11:43:31Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2012-09-30T09:55:02Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Suffer civil product responsibility box. Allow truth phone accept drug rule."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "School fly into chance."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Style TV easy alone attack foot report. Themselves compare stand cause bag consumer. Final gas least church produce."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Third production environment production me southern. Region never girl word sport each. Food fast standard record fish show."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Create be sport evidence admit go tough. Minute along bank leg its deal fear. Win economic similar."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Clock:items:BAFT:39690986",  
-      "urn:ngsi-ld:Clock:items:XEPN:69571148"  
+    "id": "urn:ngsi-ld:Clock:id:FCFN:80105293",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1982-02-07T11:43:31Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2012-09-30T09:55:02Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Suffer civil product responsibility box. Allow truth phone accept drug rule."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "School fly into chance."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Style TV easy alone attack foot report. Themselves compare stand cause bag consumer. Final gas least church produce."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Third production environment production me southern. Region never girl word sport each. Food fast standard record fish show."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Create be sport evidence admit go tough. Minute along bank leg its deal fear. Win economic similar."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Clock:items:BAFT:39690986",  
+            "urn:ngsi-ld:Clock:items:XEPN:69571148"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Clock:items:QXOB:86838384"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -20.399833,  
+                64.300225  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Man food common. Pattern myself responsibility nature notice drop camera. Garden show upon stop lead list.",  
+            "addressLocality": "Program north nice describe. Quality relationship few trade short sound vote. Its receive notice environment knowledge.",  
+            "addressRegion": "Mind fly knowledge traditional process west bill. Center under long subject itself way.",  
+            "addressCountry": "Position friend fact price term answer people. Term general sure performance.",  
+            "postalCode": "Open blood computer employee class when manager send. Work yes just scientist expert serve account.",  
+            "postOfficeBoxNumber": "Network discover remember despite statement song arm case."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Late follow much base. Analysis nation page respond."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Clock:items:QXOB:86838384"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -20.399833,  
-        64.300225  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Man food common. Pattern myself responsibility nature notice drop camera. Garden show upon stop lead list.",  
-      "addressLocality": "Program north nice describe. Quality relationship few trade short sound vote. Its receive notice environment knowledge.",  
-      "addressRegion": "Mind fly knowledge traditional process west bill. Center under long subject itself way.",  
-      "addressCountry": "Position friend fact price term answer people. Term general sure performance.",  
-      "postalCode": "Open blood computer employee class when manager send. Work yes just scientist expert serve account.",  
-      "postOfficeBoxNumber": "Network discover remember despite statement song arm case."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Late follow much base. Analysis nation page respond."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
