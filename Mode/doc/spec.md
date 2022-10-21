@@ -1,17 +1,32 @@
-Entity: Mode  
-============  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entity: Mode  
+============<!-- /10-Header -->  
+<!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.OCF/blob/master/Mode/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description: **Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the modes of operation that a Device can provide. The mode can be read or set. The Property 'supportedModes' is an array of possible modes the device supports. The Property 'modes' is an array of the currently active mode(s).**  
+version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `if`: The OCF Interface set supported by this Resource.  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `modes`: The array of the currently active mode(s).  - `n`: Friendly name of the Resource  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `rt`: The Resource Type.  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `supportedModes`: The array of possible modes the device supports.  - `type`: NGSI entity type. It has to be Mode    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `id[*]`: Unique identifier of the entity  - `if[array]`: The OCF Interface set supported by this Resource.  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `modes[array]`: The array of the currently active mode(s).  - `n[string]`: Friendly name of the Resource  - `name[string]`: The name of this item.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `rt[array]`: The Resource Type.  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `supportedModes[array]`: The array of possible modes the device supports.  - `type[string]`: NGSI entity type. It has to be Mode  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Required properties  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 This data model comes from the original [Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels). It has been extended to comply with NGSI requirements.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Data Model description of properties  
 Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Mode:    
@@ -338,9 +353,14 @@ Mode:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Example payloads    
 #### Mode NGSI-v2 key-values Example    
 Here is an example of a Mode in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Mode:id:BYYD:43425177",  
@@ -377,8 +397,10 @@ Mode:
   "areaServed": "Mother down travel. Bed either relationship particular past miss finish. Herself visit dark it according admit."  
 }  
 ```  
+</details>  
 #### Mode NGSI-v2 normalized Example    
 Here is an example of a Mode in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -456,127 +478,141 @@ Mode:
   }  
 }  
 ```  
+</details>  
 #### Mode NGSI-LD key-values Example    
 Here is an example of a Mode in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Mode:id:BYYD:43425177",  
-  "dateCreated": "1978-06-18T20:57:22Z",  
-  "dateModified": "2017-03-14T10:10:05Z",  
-  "source": "Herself the help however quite add into. Trial wear morning near seven enjoy herself.",  
-  "name": "Behavior person especially important important. Offer song force drop.",  
-  "alternateName": "Yes notice pick skill lead partner free. Cost forget development program least question.",  
-  "description": "Soon tree less until. Artist piece rich suggest. Speak system best Republican.",  
-  "dataProvider": "War receive staff sister. Leg behavior effort finish.",  
-  "owner": [  
-    "urn:ngsi-ld:Mode:items:DKNK:15772010",  
-    "urn:ngsi-ld:Mode:items:ODER:46506924"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Mode:items:JCNN:69502080",  
-    "urn:ngsi-ld:Mode:items:BWWD:69660903"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -12.9809025,  
-      149.268724  
+    "id": "urn:ngsi-ld:Mode:id:BYYD:43425177",  
+    "dateCreated": "1978-06-18T20:57:22Z",  
+    "dateModified": "2017-03-14T10:10:05Z",  
+    "source": "Herself the help however quite add into. Trial wear morning near seven enjoy herself.",  
+    "name": "Behavior person especially important important. Offer song force drop.",  
+    "alternateName": "Yes notice pick skill lead partner free. Cost forget development program least question.",  
+    "description": "Soon tree less until. Artist piece rich suggest. Speak system best Republican.",  
+    "dataProvider": "War receive staff sister. Leg behavior effort finish.",  
+    "owner": [  
+        "urn:ngsi-ld:Mode:items:DKNK:15772010",  
+        "urn:ngsi-ld:Mode:items:ODER:46506924"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Mode:items:JCNN:69502080",  
+        "urn:ngsi-ld:Mode:items:BWWD:69660903"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -12.9809025,  
+            149.268724  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Team role recently president. Interview space another time wrong. Growth attorney more wear they better expert year.",  
+        "addressLocality": "Go realize apply brother job should medical. Staff drop available amount civil decide land toward. General rock yourself data each thought conference.",  
+        "addressRegion": "Face sort just really. Exactly wind parent American.",  
+        "addressCountry": "Character it society network join return force deal. Office throw increase those floor.",  
+        "postalCode": "Rich reveal view learn crime control between water. Per which fact call old image. Treat quite very. Thank consumer travel present matter such pass.",  
+        "postOfficeBoxNumber": "Member water describe four message popular. Worker window personal number forget material animal agreement. Service care analysis stay go whole lot suddenly."  
+    },  
+    "areaServed": "Mother down travel. Bed either relationship particular past miss finish. Herself visit dark it according admit.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Team role recently president. Interview space another time wrong. Growth attorney more wear they better expert year.",  
-    "addressLocality": "Go realize apply brother job should medical. Staff drop available amount civil decide land toward. General rock yourself data each thought conference.",  
-    "addressRegion": "Face sort just really. Exactly wind parent American.",  
-    "addressCountry": "Character it society network join return force deal. Office throw increase those floor.",  
-    "postalCode": "Rich reveal view learn crime control between water. Per which fact call old image. Treat quite very. Thank consumer travel present matter such pass.",  
-    "postOfficeBoxNumber": "Member water describe four message popular. Worker window personal number forget material animal agreement. Service care analysis stay go whole lot suddenly."  
-  },  
-  "areaServed": "Mother down travel. Bed either relationship particular past miss finish. Herself visit dark it according admit.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### Mode NGSI-LD normalized Example    
 Here is an example of a Mode in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Mode:id:APLU:09904504",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2012-10-23T11:05:02Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2000-11-07T00:35:18Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Industry model very tough can national increase. Director people win exist concern."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Any interview after work both. Test almost responsibility little product apply."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Spend six dog. Strong want for finally hand."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Among around lay hotel. Bag stop idea most late citizen lay. Mouth kind cover manage thank lawyer."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Other nothing key market fight gun true. Teach face similar pressure camera front administration. Learn through thought."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Mode:items:RRDS:56051869",  
-      "urn:ngsi-ld:Mode:items:XGMO:64673219"  
+    "id": "urn:ngsi-ld:Mode:id:APLU:09904504",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2012-10-23T11:05:02Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2000-11-07T00:35:18Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Industry model very tough can national increase. Director people win exist concern."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Any interview after work both. Test almost responsibility little product apply."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Spend six dog. Strong want for finally hand."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Among around lay hotel. Bag stop idea most late citizen lay. Mouth kind cover manage thank lawyer."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Other nothing key market fight gun true. Teach face similar pressure camera front administration. Learn through thought."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Mode:items:RRDS:56051869",  
+            "urn:ngsi-ld:Mode:items:XGMO:64673219"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Mode:items:VTEU:28588649"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                79.393507,  
+                -152.446929  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "History star may bring such action. Really travel couple.",  
+            "addressLocality": "Evening international truth evidence image sit financial. Trial unit world owner line. The week produce language when tree continue training.",  
+            "addressRegion": "Arm relate only finish. Certain officer drug card. Actually summer bring situation build. Heart field degree against site current best.",  
+            "addressCountry": "Set family civil question not rest current. Brother develop think place perhaps. Class concern pressure woman defense politics week.",  
+            "postalCode": "Seat city forward hand house. Way doctor general rule.",  
+            "postOfficeBoxNumber": "Speak bed information soldier do write light. Again professor film."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "History eat close old represent board herself."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Mode:items:VTEU:28588649"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        79.393507,  
-        -152.446929  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "History star may bring such action. Really travel couple.",  
-      "addressLocality": "Evening international truth evidence image sit financial. Trial unit world owner line. The week produce language when tree continue training.",  
-      "addressRegion": "Arm relate only finish. Certain officer drug card. Actually summer bring situation build. Heart field degree against site current best.",  
-      "addressCountry": "Set family civil question not rest current. Brother develop think place perhaps. Class concern pressure woman defense politics week.",  
-      "postalCode": "Seat city forward hand house. Way doctor general rule.",  
-      "postOfficeBoxNumber": "Speak bed information soldier do write light. Again professor film."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "History eat close old represent board herself."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
