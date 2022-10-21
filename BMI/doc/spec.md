@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entity: BMI  
-===========  
+===========<!-- /10-Header -->  
+<!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.OCF/blob/master/BMI/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description: **This Resource describes the Properties associated with a person's Body Mass Index (BMI).The unit, which is the default unit, is kg/m^2.The bmi and unit Properties are read-only values that are provided by the server.When range is omitted the default is 0 to +MAXFLOAT.**  
 version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `bmi`: Body Mass Index (BMI) in kg/m^2  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `if`: The OCF Interface set supported by this Resource  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n`: Friendly name of the Resource  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `precision`: When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision  - `range`: The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.  - `rt`: Resource Type  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `step`: Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.  - `type`: NGSI entity type. It has to be BMI    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `bmi[number]`: Body Mass Index (BMI) in kg/m^2  - `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `id[*]`: Unique identifier of the entity  - `if[array]`: The OCF Interface set supported by this Resource  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n[string]`: Friendly name of the Resource  - `name[string]`: The name of this item.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `precision[number]`: When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision  - `range[array]`: The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.  - `rt[array]`: Resource Type  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `step[number]`: Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.  - `type[string]`: NGSI entity type. It has to be BMI  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Required properties  
-- `bmi`  - `id`  - `type`    
+- `bmi`  - `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Data Model adapted from the original created by the Open Connectivity Foundation. Original repository in https://github.com/openconnectivityfoundation/IoTDataModels  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Data Model description of properties  
 Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 BMI:    
@@ -356,9 +369,14 @@ BMI:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Example payloads    
 #### BMI NGSI-v2 key-values Example    
 Here is an example of a BMI in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:BMI:id:VDFV:55667741",  
@@ -421,8 +439,10 @@ BMI:
   "type": "BMI"  
 }  
 ```  
+</details>  
 #### BMI NGSI-v2 normalized Example    
 Here is an example of a BMI in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -550,189 +570,203 @@ BMI:
   }  
 }  
 ```  
+</details>  
 #### BMI NGSI-LD key-values Example    
 Here is an example of a BMI in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:BMI:id:VDFV:55667741",  
-  "dateCreated": "1972-08-04T01:32:47Z",  
-  "dateModified": "1990-12-10T18:23:52Z",  
-  "source": "Perhaps particularly over news. Section ability young read whose experience put.",  
-  "name": "Figure risk bill other. Manage account sell language middle learn.",  
-  "alternateName": "Campaign military adult maintain movie our more. Figure energy small include little institution. Something government anyone there spend skill.",  
-  "description": "Fly person development around control. Discover back nature politics apply crime teach recognize. Give nearly collection resource left site agree meeting.",  
-  "dataProvider": "Box scientist major really face everything final remember. Notice cover leave feel out word activity listen.",  
-  "owner": [  
-    "urn:ngsi-ld:BMI:items:TLGO:89545122",  
-    "urn:ngsi-ld:BMI:items:ZSQM:54988728"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:BMI:items:EWVZ:54612682",  
-    "urn:ngsi-ld:BMI:items:HUQO:69722028"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      54.2093595,  
-      -81.722699  
+    "id": "urn:ngsi-ld:BMI:id:VDFV:55667741",  
+    "dateCreated": "1972-08-04T01:32:47Z",  
+    "dateModified": "1990-12-10T18:23:52Z",  
+    "source": "Perhaps particularly over news. Section ability young read whose experience put.",  
+    "name": "Figure risk bill other. Manage account sell language middle learn.",  
+    "alternateName": "Campaign military adult maintain movie our more. Figure energy small include little institution. Something government anyone there spend skill.",  
+    "description": "Fly person development around control. Discover back nature politics apply crime teach recognize. Give nearly collection resource left site agree meeting.",  
+    "dataProvider": "Box scientist major really face everything final remember. Notice cover leave feel out word activity listen.",  
+    "owner": [  
+        "urn:ngsi-ld:BMI:items:TLGO:89545122",  
+        "urn:ngsi-ld:BMI:items:ZSQM:54988728"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:BMI:items:EWVZ:54612682",  
+        "urn:ngsi-ld:BMI:items:HUQO:69722028"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            54.2093595,  
+            -81.722699  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Bag key computer home. Pm view however right speech.",  
+        "addressLocality": "Response smile place our.",  
+        "addressRegion": "Little poor public sense. Else race ready.",  
+        "addressCountry": "Example prepare arm bag spend movie simple today. Skin her research box.",  
+        "postalCode": "Their street figure decade parent. Land respond whatever generation explain.",  
+        "postOfficeBoxNumber": "Power receive which certainly shake organization better. Congress discussion where suddenly specific too west. Dog hear series voice glass open white."  
+    },  
+    "areaServed": "Administration hundred ever speak medical. Another movement live environment author let show. Sit myself third later boy put poor.",  
+    "rt": [  
+        "oic.r.bmi",  
+        "oic.r.bmi"  
+    ],  
+    "bmi": {  
+        "type": "Property",  
+        "value": 969.4  
+    },  
+    "range": [  
+        966.8,  
+        231.5  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 326.9  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 465.9  
+    },  
+    "n": "Mother various avoid few describe. Develop deal artist write end down language. Yourself section staff authority already.",  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.baseline"  
+    ],  
+    "type": "BMI",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Bag key computer home. Pm view however right speech.",  
-    "addressLocality": "Response smile place our.",  
-    "addressRegion": "Little poor public sense. Else race ready.",  
-    "addressCountry": "Example prepare arm bag spend movie simple today. Skin her research box.",  
-    "postalCode": "Their street figure decade parent. Land respond whatever generation explain.",  
-    "postOfficeBoxNumber": "Power receive which certainly shake organization better. Congress discussion where suddenly specific too west. Dog hear series voice glass open white."  
-  },  
-  "areaServed": "Administration hundred ever speak medical. Another movement live environment author let show. Sit myself third later boy put poor.",  
-  "rt": [  
-    "oic.r.bmi",  
-    "oic.r.bmi"  
-  ],  
-  "bmi": {  
-    "type": "Property",  
-    "value": 969.4  
-  },  
-  "range": [  
-    966.8,  
-    231.5  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 326.9  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 465.9  
-  },  
-  "n": "Mother various avoid few describe. Develop deal artist write end down language. Yourself section staff authority already.",  
-  "if": [  
-    "oic.if.baseline",  
-    "oic.if.baseline"  
-  ],  
-  "type": "BMI",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### BMI NGSI-LD normalized Example    
 Here is an example of a BMI in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:BMI:id:EMJI:97474029",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2022-03-01T18:43:19Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1995-08-23T11:49:56Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Fill lot management perform professor admit herself."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Late college somebody a property thought. Ever sell board just require."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Bar suffer thought record shoulder activity one. Support music serious so speak feeling event. Phone radio about produce practice order."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Say book popular back million. Degree local live."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Good morning shake whose. Safe employee buy offer majority. Provide lead catch try chair main develop. Chance here type heavy."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:BMI:items:WJYW:99456940",  
-      "urn:ngsi-ld:BMI:items:IBTQ:54917398"  
+    "id": "urn:ngsi-ld:BMI:id:EMJI:97474029",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2022-03-01T18:43:19Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1995-08-23T11:49:56Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Fill lot management perform professor admit herself."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Late college somebody a property thought. Ever sell board just require."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Bar suffer thought record shoulder activity one. Support music serious so speak feeling event. Phone radio about produce practice order."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Say book popular back million. Degree local live."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Good morning shake whose. Safe employee buy offer majority. Provide lead catch try chair main develop. Chance here type heavy."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:BMI:items:WJYW:99456940",  
+            "urn:ngsi-ld:BMI:items:IBTQ:54917398"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:BMI:items:DUBD:09125435"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -71.4924345,  
+                -95.488647  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "That claim else already.",  
+            "addressLocality": "Painting break mother speak while eye. Political student hospital free down teacher.",  
+            "addressRegion": "Gas beat scientist. Election full defense deep morning black. Interesting PM in. Production authority name method price talk.",  
+            "addressCountry": "Door floor most task so fast much. Also address play stand.",  
+            "postalCode": "Happy value analysis far. Spring true family yeah.",  
+            "postOfficeBoxNumber": "Toward raise wait send mouth be everybody evidence. Court majority grow employee yourself crime. Car alone kitchen most painting at sea."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Us outside simply suffer. Social inside above war bit light charge."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.bmi"  
+        ]  
+    },  
+    "bmi": {  
+        "type": "Property",  
+        "value": 443.8  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            661.2,  
+            444.8  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 198.7  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 977.8  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Laugh such force final. Them media line involve. Age meet follow character card news seat."  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "BMI",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:BMI:items:DUBD:09125435"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -71.4924345,  
-        -95.488647  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "That claim else already.",  
-      "addressLocality": "Painting break mother speak while eye. Political student hospital free down teacher.",  
-      "addressRegion": "Gas beat scientist. Election full defense deep morning black. Interesting PM in. Production authority name method price talk.",  
-      "addressCountry": "Door floor most task so fast much. Also address play stand.",  
-      "postalCode": "Happy value analysis far. Spring true family yeah.",  
-      "postOfficeBoxNumber": "Toward raise wait send mouth be everybody evidence. Court majority grow employee yourself crime. Car alone kitchen most painting at sea."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Us outside simply suffer. Social inside above war bit light charge."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.bmi"  
-    ]  
-  },  
-  "bmi": {  
-    "type": "Property",  
-    "value": 443.8  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      661.2,  
-      444.8  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 198.7  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 977.8  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Laugh such force final. Them media line involve. Age meet follow character card news seat."  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "type": "BMI",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
