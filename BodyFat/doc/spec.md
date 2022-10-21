@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entity: BodyFat  
-===============  
+===============<!-- /10-Header -->  
+<!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.OCF/blob/master/BodyFat/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description: **This Resource describes the Properties associated with a person's body fat.The unit is a single value that is one of kg, lb or percent.If the unit Property is missing the default is kilograms [kg].The bodyfat and unit Properties are read-only values that are provided by the Server.When range is omitted the default is 0 to +MAXFLOAT.**  
 version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `bodyfat`: Body fat.  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `if`: The OCF Interface set supported by this Resource  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n`: Friendly name of the Resource  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `precision`: When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision  - `range`: The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.  - `rt`: Resource Type  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `step`: Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.  - `type`: NGSI entity type. It has to be BodyFat  - `units`: Body fat units    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `bodyfat[number]`: Body fat.  - `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `id[*]`: Unique identifier of the entity  - `if[array]`: The OCF Interface set supported by this Resource  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n[string]`: Friendly name of the Resource  - `name[string]`: The name of this item.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `precision[number]`: When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision  - `range[array]`: The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.  - `rt[array]`: Resource Type  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `step[number]`: Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.  - `type[string]`: NGSI entity type. It has to be BodyFat  - `units[string]`: Body fat units  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Required properties  
-- `bodyfat`  - `id`  - `type`    
+- `bodyfat`  - `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Data Model adapted from the original created by the Open Connectivity Foundation. Original repository in https://github.com/openconnectivityfoundation/IoTDataModels  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Data Model description of properties  
 Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 BodyFat:    
@@ -366,9 +379,14 @@ BodyFat:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Example payloads    
 #### BodyFat NGSI-v2 key-values Example    
 Here is an example of a BodyFat in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:BodyFat:id:NCXO:90580036",  
@@ -432,8 +450,10 @@ BodyFat:
   "type": "BodyFat"  
 }  
 ```  
+</details>  
 #### BodyFat NGSI-v2 normalized Example    
 Here is an example of a BodyFat in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -565,194 +585,208 @@ BodyFat:
   }  
 }  
 ```  
+</details>  
 #### BodyFat NGSI-LD key-values Example    
 Here is an example of a BodyFat in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:BodyFat:id:NCXO:90580036",  
-  "dateCreated": "2005-02-19T20:56:16Z",  
-  "dateModified": "2005-11-28T17:19:04Z",  
-  "source": "Attack force rise tree author. Feeling clearly prepare much commercial everyone might quality.",  
-  "name": "The health whether feel. Five investment never base collection official. West later close without only country same affect.",  
-  "alternateName": "Support not big recently media wind near. Writer suffer kind population scene he any.",  
-  "description": "Yeah model bar cup population mention meeting hundred.",  
-  "dataProvider": "Thing yourself thing fly control.",  
-  "owner": [  
-    "urn:ngsi-ld:BodyFat:items:PVXS:05086008",  
-    "urn:ngsi-ld:BodyFat:items:XFWO:96280071"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:BodyFat:items:HPXB:45693919",  
-    "urn:ngsi-ld:BodyFat:items:LODK:47292476"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -75.359217,  
-      169.747483  
+    "id": "urn:ngsi-ld:BodyFat:id:NCXO:90580036",  
+    "dateCreated": "2005-02-19T20:56:16Z",  
+    "dateModified": "2005-11-28T17:19:04Z",  
+    "source": "Attack force rise tree author. Feeling clearly prepare much commercial everyone might quality.",  
+    "name": "The health whether feel. Five investment never base collection official. West later close without only country same affect.",  
+    "alternateName": "Support not big recently media wind near. Writer suffer kind population scene he any.",  
+    "description": "Yeah model bar cup population mention meeting hundred.",  
+    "dataProvider": "Thing yourself thing fly control.",  
+    "owner": [  
+        "urn:ngsi-ld:BodyFat:items:PVXS:05086008",  
+        "urn:ngsi-ld:BodyFat:items:XFWO:96280071"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:BodyFat:items:HPXB:45693919",  
+        "urn:ngsi-ld:BodyFat:items:LODK:47292476"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -75.359217,  
+            169.747483  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Return responsibility future nature child travel themselves. Listen show production skin offer individual artist.",  
+        "addressLocality": "Question find unit. Newspaper program do television speech game attorney difference.",  
+        "addressRegion": "Will piece character hair agency over. Red quickly wait west. Heavy consider couple.",  
+        "addressCountry": "Nor factor off Democrat research event low. Red media possible quickly role color evidence approach.",  
+        "postalCode": "Hold drop tough ask material mind simply. Hope lot environment scene only night challenge.",  
+        "postOfficeBoxNumber": "Fear food out modern hotel town every. Since authority field minute sort finish. Against campaign science mention week myself."  
+    },  
+    "areaServed": "Treatment claim morning away individual anyone international. Economy girl morning.",  
+    "rt": [  
+        "oic.r.body.fat",  
+        "oic.r.body.fat"  
+    ],  
+    "bodyfat": {  
+        "type": "Property",  
+        "value": 828.2  
+    },  
+    "units": "kg",  
+    "range": [  
+        744.7,  
+        370.0  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 990.8  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 238.8  
+    },  
+    "n": "Either establish then long war eat. Tell ground describe home determine similar. Democrat someone development young nation. Defense total explain trial.",  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.baseline"  
+    ],  
+    "type": "BodyFat",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Return responsibility future nature child travel themselves. Listen show production skin offer individual artist.",  
-    "addressLocality": "Question find unit. Newspaper program do television speech game attorney difference.",  
-    "addressRegion": "Will piece character hair agency over. Red quickly wait west. Heavy consider couple.",  
-    "addressCountry": "Nor factor off Democrat research event low. Red media possible quickly role color evidence approach.",  
-    "postalCode": "Hold drop tough ask material mind simply. Hope lot environment scene only night challenge.",  
-    "postOfficeBoxNumber": "Fear food out modern hotel town every. Since authority field minute sort finish. Against campaign science mention week myself."  
-  },  
-  "areaServed": "Treatment claim morning away individual anyone international. Economy girl morning.",  
-  "rt": [  
-    "oic.r.body.fat",  
-    "oic.r.body.fat"  
-  ],  
-  "bodyfat": {  
-    "type": "Property",  
-    "value": 828.2  
-  },  
-  "units": "kg",  
-  "range": [  
-    744.7,  
-    370.0  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 990.8  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 238.8  
-  },  
-  "n": "Either establish then long war eat. Tell ground describe home determine similar. Democrat someone development young nation. Defense total explain trial.",  
-  "if": [  
-    "oic.if.baseline",  
-    "oic.if.baseline"  
-  ],  
-  "type": "BodyFat",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### BodyFat NGSI-LD normalized Example    
 Here is an example of a BodyFat in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:BodyFat:id:VUOK:95021473",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1987-10-14T09:02:16Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1994-07-04T01:12:53Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Must green international thank. Spring plant control partner. At information decide for born action."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Child over claim administration by attention still."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Company mouth Mrs door. Rich national store list whom. Side produce fact study. Television travel him bank."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Seat half sometimes year customer science notice. Knowledge he use."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Since professional son perhaps yard. General little worker glass southern state middle. Often including about son."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:BodyFat:items:MQTE:23850921",  
-      "urn:ngsi-ld:BodyFat:items:NQZR:87612870"  
+    "id": "urn:ngsi-ld:BodyFat:id:VUOK:95021473",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1987-10-14T09:02:16Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1994-07-04T01:12:53Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Must green international thank. Spring plant control partner. At information decide for born action."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Child over claim administration by attention still."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Company mouth Mrs door. Rich national store list whom. Side produce fact study. Television travel him bank."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Seat half sometimes year customer science notice. Knowledge he use."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Since professional son perhaps yard. General little worker glass southern state middle. Often including about son."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:BodyFat:items:MQTE:23850921",  
+            "urn:ngsi-ld:BodyFat:items:NQZR:87612870"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:BodyFat:items:XDTN:06870476"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                56.538434,  
+                -168.581689  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Show occur size war. Prevent father teacher clear.",  
+            "addressLocality": "Indeed able about international major visit. Door minute station second only mission room.",  
+            "addressRegion": "Drive machine director. Five rise boy partner.",  
+            "addressCountry": "Direction pretty item car model election discussion protect. Long rule to painting low. Ago exist here smile sell. And three thus expert history country improve.",  
+            "postalCode": "Continue west least writer few prevent seem. Last apply strong dream bed. Remain write which hospital let political action.",  
+            "postOfficeBoxNumber": "Exactly PM behind huge life news. Such road former whole enter yes political represent."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Mr financial again here nature create. General to bar mother discuss figure."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.body.fat"  
+        ]  
+    },  
+    "bodyfat": {  
+        "type": "Property",  
+        "value": 171.6  
+    },  
+    "units": {  
+        "type": "Property",  
+        "value": "kg"  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            362.3,  
+            206.0  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 453.1  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 124.2  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Write recent suffer marriage must affect. Sense indeed me kitchen. Describe speech even small offer area goal."  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.s"  
+        ]  
+    },  
+    "type": "BodyFat",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:BodyFat:items:XDTN:06870476"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        56.538434,  
-        -168.581689  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Show occur size war. Prevent father teacher clear.",  
-      "addressLocality": "Indeed able about international major visit. Door minute station second only mission room.",  
-      "addressRegion": "Drive machine director. Five rise boy partner.",  
-      "addressCountry": "Direction pretty item car model election discussion protect. Long rule to painting low. Ago exist here smile sell. And three thus expert history country improve.",  
-      "postalCode": "Continue west least writer few prevent seem. Last apply strong dream bed. Remain write which hospital let political action.",  
-      "postOfficeBoxNumber": "Exactly PM behind huge life news. Such road former whole enter yes political represent."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Mr financial again here nature create. General to bar mother discuss figure."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.body.fat"  
-    ]  
-  },  
-  "bodyfat": {  
-    "type": "Property",  
-    "value": 171.6  
-  },  
-  "units": {  
-    "type": "Property",  
-    "value": "kg"  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      362.3,  
-      206.0  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 453.1  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 124.2  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Write recent suffer marriage must affect. Sense indeed me kitchen. Describe speech even small offer area goal."  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.s"  
-    ]  
-  },  
-  "type": "BodyFat",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
