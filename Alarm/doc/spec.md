@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entity: Alarm  
-=============  
+=============<!-- /10-Header -->  
+<!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.OCF/blob/master/Alarm/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description: **This Resource describes the Properties associated with alarm status.**  
 version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-- `address`: The mailing address  - `alarmtype`: The Alarm Type.  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `duration`: This Property describes the alarm duration (seconds).  - `id`: Unique identifier of the entity  - `if`: The OCF Interface set supported by this Resource.  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n`: Friendly name of the Resource  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `precision`: When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision  - `range`: The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.  - `rt`: The Resource Type.  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `status`: This Property describes the status of the alarm: true - on, false - off.  - `step`: Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.  - `time`: This Property describes the alarm time using ISO 8601 datetime format (e.g: 2007-04-05T14:30Z, 2007-04-05T14:30+09:00).  - `type`: NGSI entity type. It has to be Alarm    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alarmtype[string]`: The Alarm Type.  - `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `duration[number]`: This Property describes the alarm duration (seconds).  - `id[*]`: Unique identifier of the entity  - `if[array]`: The OCF Interface set supported by this Resource.  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n[string]`: Friendly name of the Resource  - `name[string]`: The name of this item.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `precision[number]`: When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision  - `range[array]`: The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.  - `rt[array]`: The Resource Type.  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `status[boolean]`: This Property describes the status of the alarm: true - on, false - off.  - `step[number]`: Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.  - `time[string]`: This Property describes the alarm time using ISO 8601 datetime format (e.g: 2007-04-05T14:30Z, 2007-04-05T14:30+09:00).  - `type[string]`: NGSI entity type. It has to be Alarm  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Required properties  
-- `id`  - `status`  - `type`    
+- `id`  - `status`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Data Model adapted from the original created by the Open Connectivity Foundation. Original repository in https://github.com/openconnectivityfoundation/IoTDataModels  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Data Model description of properties  
 Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Alarm:    
@@ -378,9 +391,14 @@ Alarm:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Example payloads    
 #### Alarm NGSI-v2 key-values Example    
 Here is an example of a Alarm in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Alarm:id:ZHIS:63298431",  
@@ -449,8 +467,10 @@ Alarm:
   "type": "Alarm"  
 }  
 ```  
+</details>  
 #### Alarm NGSI-v2 normalized Example    
 Here is an example of a Alarm in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -593,207 +613,221 @@ Alarm:
   }  
 }  
 ```  
+</details>  
 #### Alarm NGSI-LD key-values Example    
 Here is an example of a Alarm in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Alarm:id:ZHIS:63298431",  
-  "dateCreated": "1982-12-26T01:01:12Z",  
-  "dateModified": "1995-10-16T11:14:54Z",  
-  "source": "Camera now natural drive reduce consumer themselves fact.",  
-  "name": "Season your ten big. Though support return she information. May concern determine born. Never positive be buy.",  
-  "alternateName": "Similar down while shake type reality. They reason at financial perhaps. That performance teacher many message how officer. Throw me head.",  
-  "description": "Improve last approach bad pass. Reveal check sit forget member note side too.",  
-  "dataProvider": "Cut region push care clear benefit. Difficult contain we my cut. Year hit care world.",  
-  "owner": [  
-    "urn:ngsi-ld:Alarm:items:VLBT:83946472",  
-    "urn:ngsi-ld:Alarm:items:KJQR:31565876"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Alarm:items:IBYB:42338597",  
-    "urn:ngsi-ld:Alarm:items:QXVK:05986964"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -9.0469705,  
-      105.770773  
+    "id": "urn:ngsi-ld:Alarm:id:ZHIS:63298431",  
+    "dateCreated": "1982-12-26T01:01:12Z",  
+    "dateModified": "1995-10-16T11:14:54Z",  
+    "source": "Camera now natural drive reduce consumer themselves fact.",  
+    "name": "Season your ten big. Though support return she information. May concern determine born. Never positive be buy.",  
+    "alternateName": "Similar down while shake type reality. They reason at financial perhaps. That performance teacher many message how officer. Throw me head.",  
+    "description": "Improve last approach bad pass. Reveal check sit forget member note side too.",  
+    "dataProvider": "Cut region push care clear benefit. Difficult contain we my cut. Year hit care world.",  
+    "owner": [  
+        "urn:ngsi-ld:Alarm:items:VLBT:83946472",  
+        "urn:ngsi-ld:Alarm:items:KJQR:31565876"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Alarm:items:IBYB:42338597",  
+        "urn:ngsi-ld:Alarm:items:QXVK:05986964"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -9.0469705,  
+            105.770773  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Sure its everybody without. Save agency customer fall Democrat economic raise kid. Plan TV grow seek name. Kind room management.",  
+        "addressLocality": "Hot seem spring according court.",  
+        "addressRegion": "Team government mean son. You back she marriage themselves. Light class trouble effort.",  
+        "addressCountry": "Expect people turn measure system wide reach. Many political yes speech. Movie seem government actually.",  
+        "postalCode": "Fact several test ago help. Range late call bag south. Necessary ground career interview particular drop bill.",  
+        "postOfficeBoxNumber": "Whom fear class professor to store. Make know lead executive side."  
+    },  
+    "areaServed": "Administration information cut new make century. Generation simply wall close. Few such listen key dog arrive citizen cultural.",  
+    "rt": [  
+        "oic.r.alarm",  
+        "oic.r.alarm"  
+    ],  
+    "status": {  
+        "type": "Property",  
+        "value": true  
+    },  
+    "duration": {  
+        "type": "Property",  
+        "value": 977.1  
+    },  
+    "time": "Defense public two couple article. Fast collection too main play.",  
+    "alarmtype": "Flood",  
+    "n": "Money it couple idea success oil adult. Culture report want certain. Measure have war food together morning up.",  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.baseline"  
+    ],  
+    "range": [  
+        468.7,  
+        952.7  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 170.4  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 590.6  
+    },  
+    "type": "Alarm",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Sure its everybody without. Save agency customer fall Democrat economic raise kid. Plan TV grow seek name. Kind room management.",  
-    "addressLocality": "Hot seem spring according court.",  
-    "addressRegion": "Team government mean son. You back she marriage themselves. Light class trouble effort.",  
-    "addressCountry": "Expect people turn measure system wide reach. Many political yes speech. Movie seem government actually.",  
-    "postalCode": "Fact several test ago help. Range late call bag south. Necessary ground career interview particular drop bill.",  
-    "postOfficeBoxNumber": "Whom fear class professor to store. Make know lead executive side."  
-  },  
-  "areaServed": "Administration information cut new make century. Generation simply wall close. Few such listen key dog arrive citizen cultural.",  
-  "rt": [  
-    "oic.r.alarm",  
-    "oic.r.alarm"  
-  ],  
-  "status": {  
-    "type": "Property",  
-    "value": true  
-  },  
-  "duration": {  
-    "type": "Property",  
-    "value": 977.1  
-  },  
-  "time": "Defense public two couple article. Fast collection too main play.",  
-  "alarmtype": "Flood",  
-  "n": "Money it couple idea success oil adult. Culture report want certain. Measure have war food together morning up.",  
-  "if": [  
-    "oic.if.baseline",  
-    "oic.if.baseline"  
-  ],  
-  "range": [  
-    468.7,  
-    952.7  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 170.4  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 590.6  
-  },  
-  "type": "Alarm",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### Alarm NGSI-LD normalized Example    
 Here is an example of a Alarm in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Alarm:id:CQWI:87210186",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2016-11-17T03:07:59Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2004-01-01T23:29:51Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Still some hotel majority child event yes. Woman traditional key hard. During company her better."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Although record least mother. Risk reach various right camera sense. This begin charge participant include seem relate."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "White travel rest human detail free paper. Kid base page notice wonder. Notice friend identify doctor."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Top result media onto the carry memory. A guess half decide every value season."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Team personal store administration strategy. Stuff policy home let group hope nature. Star worry seem first huge music."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Alarm:items:YZSD:84563060",  
-      "urn:ngsi-ld:Alarm:items:HSBD:00505684"  
+    "id": "urn:ngsi-ld:Alarm:id:CQWI:87210186",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2016-11-17T03:07:59Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2004-01-01T23:29:51Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Still some hotel majority child event yes. Woman traditional key hard. During company her better."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Although record least mother. Risk reach various right camera sense. This begin charge participant include seem relate."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "White travel rest human detail free paper. Kid base page notice wonder. Notice friend identify doctor."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Top result media onto the carry memory. A guess half decide every value season."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Team personal store administration strategy. Stuff policy home let group hope nature. Star worry seem first huge music."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Alarm:items:YZSD:84563060",  
+            "urn:ngsi-ld:Alarm:items:HSBD:00505684"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Alarm:items:QUCE:80086314"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                47.7292685,  
+                167.452011  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "However environment represent. Before one situation word. Edge shake popular rather common activity.",  
+            "addressLocality": "Throughout car drive sit sea hope. News guess least. Agreement increase school until try toward friend idea. Ready far however social measure mother never.",  
+            "addressRegion": "Save already inside million employee. Here law skill.",  
+            "addressCountry": "Friend pay save wonder senior ever edge. Left reach husband provide too security past.",  
+            "postalCode": "Film sometimes even throughout necessary. Born technology military ground reveal live door issue.",  
+            "postOfficeBoxNumber": "Lot whether husband skin remember organization. Apply president key standard close market successful. International evidence successful."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Wear use by strong difference least science entire. None hard scientist event the everything. Wrong trip vote leave analysis test point."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.alarm"  
+        ]  
+    },  
+    "status": {  
+        "type": "Property",  
+        "value": false  
+    },  
+    "duration": {  
+        "type": "Property",  
+        "value": 167.8  
+    },  
+    "time": {  
+        "type": "Property",  
+        "value": "Get low crime leg heavy. Table response share effect treatment."  
+    },  
+    "alarmtype": {  
+        "type": "Property",  
+        "value": "Flood"  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Property environmental clear attack bar just study. There well knowledge work better. Plant she never whom guy identify."  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            160.7,  
+            645.1  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 967.3  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 330.0  
+    },  
+    "type": "Alarm",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Alarm:items:QUCE:80086314"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        47.7292685,  
-        167.452011  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "However environment represent. Before one situation word. Edge shake popular rather common activity.",  
-      "addressLocality": "Throughout car drive sit sea hope. News guess least. Agreement increase school until try toward friend idea. Ready far however social measure mother never.",  
-      "addressRegion": "Save already inside million employee. Here law skill.",  
-      "addressCountry": "Friend pay save wonder senior ever edge. Left reach husband provide too security past.",  
-      "postalCode": "Film sometimes even throughout necessary. Born technology military ground reveal live door issue.",  
-      "postOfficeBoxNumber": "Lot whether husband skin remember organization. Apply president key standard close market successful. International evidence successful."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Wear use by strong difference least science entire. None hard scientist event the everything. Wrong trip vote leave analysis test point."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.alarm"  
-    ]  
-  },  
-  "status": {  
-    "type": "Property",  
-    "value": false  
-  },  
-  "duration": {  
-    "type": "Property",  
-    "value": 167.8  
-  },  
-  "time": {  
-    "type": "Property",  
-    "value": "Get low crime leg heavy. Table response share effect treatment."  
-  },  
-  "alarmtype": {  
-    "type": "Property",  
-    "value": "Flood"  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Property environmental clear attack bar just study. There well knowledge work better. Plant she never whom guy identify."  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      160.7,  
-      645.1  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 967.3  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 330.0  
-  },  
-  "type": "Alarm",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
