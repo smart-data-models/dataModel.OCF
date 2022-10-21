@@ -1,17 +1,32 @@
-Entity: RemoteControl  
-=====================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entity: RemoteControl  
+=====================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.OCF/blob/master/RemoteControl/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description: **Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes a remote control function, which helps users to control a device without the actual remote controller provided by the manufacturer.**  
+version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `if`: The OCF Interface set supported by this Resource.  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n`: Friendly name of the Resource  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `rt`: The Resource Type.  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `supportedactions`: The list of of supported remote control key values.  - `type`: NGSI entity type. It has to be RemoteControl    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `id[*]`: Unique identifier of the entity  - `if[array]`: The OCF Interface set supported by this Resource.  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n[string]`: Friendly name of the Resource  - `name[string]`: The name of this item.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `rt[array]`: The Resource Type.  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `supportedactions[array]`: The list of of supported remote control key values.  - `type[string]`: NGSI entity type. It has to be RemoteControl  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Required properties  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 This data model comes from the original [Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels). It has been extended to comply with NGSI requirements.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Data Model description of properties  
 Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 RemoteControl:    
@@ -353,9 +368,14 @@ RemoteControl:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Example payloads    
 #### RemoteControl NGSI-v2 key-values Example    
 Here is an example of a RemoteControl in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:RemoteControl:id:MHYX:27427391",  
@@ -392,8 +412,10 @@ RemoteControl:
   "areaServed": "Often particular few science officer center feel. Government white watch north capital professional enter."  
 }  
 ```  
+</details>  
 #### RemoteControl NGSI-v2 normalized Example    
 Here is an example of a RemoteControl in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -471,127 +493,141 @@ RemoteControl:
   }  
 }  
 ```  
+</details>  
 #### RemoteControl NGSI-LD key-values Example    
 Here is an example of a RemoteControl in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:RemoteControl:id:MHYX:27427391",  
-  "dateCreated": "2020-10-23T08:18:45Z",  
-  "dateModified": "2011-02-10T14:50:06Z",  
-  "source": "Age particularly place discover pull. Enter white start our man particularly. What let seem someone.",  
-  "name": "Item concern begin kitchen business. Push religious consumer more.",  
-  "alternateName": "Specific here floor though source yes. While great simple physical. Agree woman research.",  
-  "description": "Commercial rate Mrs I both task key. Describe night apply difficult each cut appear night.",  
-  "dataProvider": "Size hear sign apply. Front service box wind affect.",  
-  "owner": [  
-    "urn:ngsi-ld:RemoteControl:items:RTDX:85566642",  
-    "urn:ngsi-ld:RemoteControl:items:BEUB:18985018"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:RemoteControl:items:XFFV:50856411",  
-    "urn:ngsi-ld:RemoteControl:items:HRVI:81575167"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -71.980562,  
-      89.374763  
+    "id": "urn:ngsi-ld:RemoteControl:id:MHYX:27427391",  
+    "dateCreated": "2020-10-23T08:18:45Z",  
+    "dateModified": "2011-02-10T14:50:06Z",  
+    "source": "Age particularly place discover pull. Enter white start our man particularly. What let seem someone.",  
+    "name": "Item concern begin kitchen business. Push religious consumer more.",  
+    "alternateName": "Specific here floor though source yes. While great simple physical. Agree woman research.",  
+    "description": "Commercial rate Mrs I both task key. Describe night apply difficult each cut appear night.",  
+    "dataProvider": "Size hear sign apply. Front service box wind affect.",  
+    "owner": [  
+        "urn:ngsi-ld:RemoteControl:items:RTDX:85566642",  
+        "urn:ngsi-ld:RemoteControl:items:BEUB:18985018"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:RemoteControl:items:XFFV:50856411",  
+        "urn:ngsi-ld:RemoteControl:items:HRVI:81575167"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -71.980562,  
+            89.374763  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Arm begin themselves all million. Meeting believe away only. Only scientist make yeah kind.",  
+        "addressLocality": "Tv so young.",  
+        "addressRegion": "Animal analysis defense resource. Attorney find his box oil figure much. Test hair radio pay break herself important.",  
+        "addressCountry": "Tonight under across history. Particular inside sound same. Idea manage author second.",  
+        "postalCode": "Message make meet recognize foreign piece. Option stuff hotel condition. News product need program.",  
+        "postOfficeBoxNumber": "Camera rate point until away. Now police sit benefit I sign. Enjoy face create number science level. Major hour where care wear."  
+    },  
+    "areaServed": "Often particular few science officer center feel. Government white watch north capital professional enter.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Arm begin themselves all million. Meeting believe away only. Only scientist make yeah kind.",  
-    "addressLocality": "Tv so young.",  
-    "addressRegion": "Animal analysis defense resource. Attorney find his box oil figure much. Test hair radio pay break herself important.",  
-    "addressCountry": "Tonight under across history. Particular inside sound same. Idea manage author second.",  
-    "postalCode": "Message make meet recognize foreign piece. Option stuff hotel condition. News product need program.",  
-    "postOfficeBoxNumber": "Camera rate point until away. Now police sit benefit I sign. Enjoy face create number science level. Major hour where care wear."  
-  },  
-  "areaServed": "Often particular few science officer center feel. Government white watch north capital professional enter.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### RemoteControl NGSI-LD normalized Example    
 Here is an example of a RemoteControl in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:RemoteControl:id:EYJP:91596154",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2008-11-13T01:24:49Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1978-05-03T18:54:47Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Human just hard leg actually again point. To agree Democrat last price drive whatever. Site huge debate member billion method majority."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Model remain morning against sing firm begin. Meet learn picture I store also. Yourself school good voice. Word under exactly then open."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Free protect add debate. Condition since another once air end. Dark return check."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Back professional three. Network among suffer house red prevent wind."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Where require sense imagine. Prove run remain society."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:RemoteControl:items:OWWS:35241253",  
-      "urn:ngsi-ld:RemoteControl:items:GGHC:41725322"  
+    "id": "urn:ngsi-ld:RemoteControl:id:EYJP:91596154",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2008-11-13T01:24:49Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1978-05-03T18:54:47Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Human just hard leg actually again point. To agree Democrat last price drive whatever. Site huge debate member billion method majority."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Model remain morning against sing firm begin. Meet learn picture I store also. Yourself school good voice. Word under exactly then open."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Free protect add debate. Condition since another once air end. Dark return check."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Back professional three. Network among suffer house red prevent wind."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Where require sense imagine. Prove run remain society."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:RemoteControl:items:OWWS:35241253",  
+            "urn:ngsi-ld:RemoteControl:items:GGHC:41725322"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:RemoteControl:items:TYPD:74208940"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -83.0392055,  
+                122.775853  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Statement student bank air road trade work tough. Office or meet organization on capital. Record large sport bed society box study music.",  
+            "addressLocality": "Base former computer view administration. Might role listen public. Tree coach spend. Market both stock heart federal.",  
+            "addressRegion": "Million hundred front star. Charge account land human image. Significant let almost major clear court short.",  
+            "addressCountry": "Our national spring either best.",  
+            "postalCode": "Laugh stop challenge continue standard civil condition authority. Will party collection watch employee traditional race. Power yard bill government.",  
+            "postOfficeBoxNumber": "Picture create yourself town available ball. Experience plant east chance along."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Remain network represent. Administration part better coach nothing."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:RemoteControl:items:TYPD:74208940"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -83.0392055,  
-        122.775853  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Statement student bank air road trade work tough. Office or meet organization on capital. Record large sport bed society box study music.",  
-      "addressLocality": "Base former computer view administration. Might role listen public. Tree coach spend. Market both stock heart federal.",  
-      "addressRegion": "Million hundred front star. Charge account land human image. Significant let almost major clear court short.",  
-      "addressCountry": "Our national spring either best.",  
-      "postalCode": "Laugh stop challenge continue standard civil condition authority. Will party collection watch employee traditional race. Power yard bill government.",  
-      "postOfficeBoxNumber": "Picture create yourself town available ball. Experience plant east chance along."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Remain network represent. Administration part better coach nothing."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
