@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entity: Weight  
-==============  
+==============<!-- /10-Header -->  
+<!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.OCF/blob/master/Weight/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description: **This Resource describes the Properties associated with weight of an object.The unit is a single value that is one of kg, g, lb or oz.If the unit Property is missing the default is kilograms [kg].The unit Property is a read-only value that is provided by the server.When range is omitted the default is 0 to +MAXFLOAT.**  
 version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `if`: The OCF Interface set supported by this Resource  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n`: Friendly name of the Resource  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `precision`: When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision  - `range`: The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.  - `rt`: Resource Type  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `step`: Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.  - `type`: NGSI entity type. It has to be Weight  - `units`: Weight unit  - `weight`: Weight of an object    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `id[*]`: Unique identifier of the entity  - `if[array]`: The OCF Interface set supported by this Resource  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n[string]`: Friendly name of the Resource  - `name[string]`: The name of this item.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `precision[number]`: When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision  - `range[array]`: The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.  - `rt[array]`: Resource Type  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `step[number]`: Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.  - `type[string]`: NGSI entity type. It has to be Weight  - `units[string]`: Weight unit  - `weight[number]`: Weight of an object  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Required properties  
-- `id`  - `type`  - `units`  - `weight`    
+- `id`  - `type`  - `units`  - `weight`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Data Model adapted from the original created by the Open Connectivity Foundation. Original repository in https://github.com/openconnectivityfoundation/IoTDataModels  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Data Model description of properties  
 Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Weight:    
@@ -369,9 +382,14 @@ Weight:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Example payloads    
 #### Weight NGSI-v2 key-values Example    
 Here is an example of a Weight in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Weight:id:OJUO:43383279",  
@@ -435,8 +453,10 @@ Weight:
   "type": "Weight"  
 }  
 ```  
+</details>  
 #### Weight NGSI-v2 normalized Example    
 Here is an example of a Weight in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -568,194 +588,208 @@ Weight:
   }  
 }  
 ```  
+</details>  
 #### Weight NGSI-LD key-values Example    
 Here is an example of a Weight in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Weight:id:OJUO:43383279",  
-  "dateCreated": "1972-04-12T09:44:39Z",  
-  "dateModified": "2020-05-28T11:42:59Z",  
-  "source": "Decade then very member. Find above artist store.",  
-  "name": "Fact artist sport happen perhaps assume responsibility. Full subject turn design voice road degree discover.",  
-  "alternateName": "Listen hospital anything teach foot. Present far food maintain play bring keep billion.",  
-  "description": "Artist each follow soldier executive camera wind.",  
-  "dataProvider": "Lose where area his kitchen. Box method work us I can ability.",  
-  "owner": [  
-    "urn:ngsi-ld:Weight:items:BTBX:55752700",  
-    "urn:ngsi-ld:Weight:items:RERQ:90930122"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Weight:items:KRUV:71413026",  
-    "urn:ngsi-ld:Weight:items:PTWT:50710894"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -12.433652,  
-      172.571818  
+    "id": "urn:ngsi-ld:Weight:id:OJUO:43383279",  
+    "dateCreated": "1972-04-12T09:44:39Z",  
+    "dateModified": "2020-05-28T11:42:59Z",  
+    "source": "Decade then very member. Find above artist store.",  
+    "name": "Fact artist sport happen perhaps assume responsibility. Full subject turn design voice road degree discover.",  
+    "alternateName": "Listen hospital anything teach foot. Present far food maintain play bring keep billion.",  
+    "description": "Artist each follow soldier executive camera wind.",  
+    "dataProvider": "Lose where area his kitchen. Box method work us I can ability.",  
+    "owner": [  
+        "urn:ngsi-ld:Weight:items:BTBX:55752700",  
+        "urn:ngsi-ld:Weight:items:RERQ:90930122"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Weight:items:KRUV:71413026",  
+        "urn:ngsi-ld:Weight:items:PTWT:50710894"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -12.433652,  
+            172.571818  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Alone over street network year ask up black. Game meeting population wife sell past country.",  
+        "addressLocality": "Rich break base line great prepare speech. Growth above reduce dog.",  
+        "addressRegion": "Science various interest civil. Theory value people administration natural. Others how need.",  
+        "addressCountry": "Probably field participant report nature. Arm hospital process none already growth.",  
+        "postalCode": "Fund listen though suffer phone. Everybody environment movement man left.",  
+        "postOfficeBoxNumber": "Their hair call need evidence hospital surface. Mouth newspaper chance resource protect. Court enough hard law trouble second."  
+    },  
+    "areaServed": "Skin over perform happen. Race action protect teach.",  
+    "rt": [  
+        "oic.r.weight",  
+        "oic.r.weight"  
+    ],  
+    "weight": {  
+        "type": "Property",  
+        "value": 732.0  
+    },  
+    "units": "kg",  
+    "range": [  
+        25.2,  
+        787.6  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 227.8  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 390.9  
+    },  
+    "n": "Offer field Mrs music near will big. Wrong offer bag pick phone improve.",  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.baseline"  
+    ],  
+    "type": "Weight",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Alone over street network year ask up black. Game meeting population wife sell past country.",  
-    "addressLocality": "Rich break base line great prepare speech. Growth above reduce dog.",  
-    "addressRegion": "Science various interest civil. Theory value people administration natural. Others how need.",  
-    "addressCountry": "Probably field participant report nature. Arm hospital process none already growth.",  
-    "postalCode": "Fund listen though suffer phone. Everybody environment movement man left.",  
-    "postOfficeBoxNumber": "Their hair call need evidence hospital surface. Mouth newspaper chance resource protect. Court enough hard law trouble second."  
-  },  
-  "areaServed": "Skin over perform happen. Race action protect teach.",  
-  "rt": [  
-    "oic.r.weight",  
-    "oic.r.weight"  
-  ],  
-  "weight": {  
-    "type": "Property",  
-    "value": 732.0  
-  },  
-  "units": "kg",  
-  "range": [  
-    25.2,  
-    787.6  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 227.8  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 390.9  
-  },  
-  "n": "Offer field Mrs music near will big. Wrong offer bag pick phone improve.",  
-  "if": [  
-    "oic.if.baseline",  
-    "oic.if.baseline"  
-  ],  
-  "type": "Weight",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### Weight NGSI-LD normalized Example    
 Here is an example of a Weight in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Weight:id:SJPG:70921933",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1993-03-15T11:24:45Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2015-07-28T06:46:49Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Later white success officer bag."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Environmental notice also home professional occur picture. Land mention charge whether good."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Many happen family better. They bed treatment across son service believe. Protect sport citizen key high that. Leg office sign head."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Animal prepare include run. Structure big represent contain of here head."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Important candidate case fight senior wife. President mean we your."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Weight:items:WCAY:56473919",  
-      "urn:ngsi-ld:Weight:items:DUDL:86411480"  
+    "id": "urn:ngsi-ld:Weight:id:SJPG:70921933",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1993-03-15T11:24:45Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2015-07-28T06:46:49Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Later white success officer bag."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Environmental notice also home professional occur picture. Land mention charge whether good."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Many happen family better. They bed treatment across son service believe. Protect sport citizen key high that. Leg office sign head."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Animal prepare include run. Structure big represent contain of here head."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Important candidate case fight senior wife. President mean we your."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Weight:items:WCAY:56473919",  
+            "urn:ngsi-ld:Weight:items:DUDL:86411480"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Weight:items:QLPQ:72550779"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                62.3391355,  
+                -48.594117  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Week perform real soon but discuss expect leader. End front reach benefit price. Put personal usually size Mrs industry.",  
+            "addressLocality": "Money four middle but author free speech town.",  
+            "addressRegion": "Institution prove certain first page car lay. Evening look speak Democrat technology recognize. There five arrive line last material.",  
+            "addressCountry": "Green strategy forget yard good finally.",  
+            "postalCode": "Design seat enough artist over. Treatment necessary question protect class fill call.",  
+            "postOfficeBoxNumber": "Record girl president particularly actually group. Sense you continue she. Alone some teach."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Rest anyone specific great source offer. Analysis range available entire."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.weight"  
+        ]  
+    },  
+    "weight": {  
+        "type": "Property",  
+        "value": 573.9  
+    },  
+    "units": {  
+        "type": "Property",  
+        "value": "oz"  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            998.1,  
+            197.8  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 718.8  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 946.7  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Somebody would commercial life population third. Live involve save."  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.a"  
+        ]  
+    },  
+    "type": "Weight",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Weight:items:QLPQ:72550779"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        62.3391355,  
-        -48.594117  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Week perform real soon but discuss expect leader. End front reach benefit price. Put personal usually size Mrs industry.",  
-      "addressLocality": "Money four middle but author free speech town.",  
-      "addressRegion": "Institution prove certain first page car lay. Evening look speak Democrat technology recognize. There five arrive line last material.",  
-      "addressCountry": "Green strategy forget yard good finally.",  
-      "postalCode": "Design seat enough artist over. Treatment necessary question protect class fill call.",  
-      "postOfficeBoxNumber": "Record girl president particularly actually group. Sense you continue she. Alone some teach."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Rest anyone specific great source offer. Analysis range available entire."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.weight"  
-    ]  
-  },  
-  "weight": {  
-    "type": "Property",  
-    "value": 573.9  
-  },  
-  "units": {  
-    "type": "Property",  
-    "value": "oz"  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      998.1,  
-      197.8  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 718.8  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 946.7  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Somebody would commercial life population third. Live involve save."  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.a"  
-    ]  
-  },  
-  "type": "Weight",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
