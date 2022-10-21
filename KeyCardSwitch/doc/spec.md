@@ -1,17 +1,32 @@
-Entity: KeyCardSwitch  
-=====================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entity: KeyCardSwitch  
+=====================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.OCF/blob/master/KeyCardSwitch/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description: **Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the operation of a KeyCard style switch. It has one mandatory Property,'stateofcard', which is a string enum type. It has two enum values: 'validCardInserted', 'validCardNotInserted'. 'validCardInserted' means that a keycard was inserted and passed validation check. 'validCardNotInserted' means that a keycard is not inserted or it was inserted but failed to pass validation check.**  
+version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `if`: The OCF Interface set supported by this Resource.  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n`: Friendly name of the Resource  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `rt`: The Resource Type of KeyCardSwitch  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `stateofcard`: The status of the keycardswitch. 'validCardInserted' means that a keycard was inserted and passed validation check. 'validCardNotInserted' means that a keycard is not inserted or it was inserted but failed to pass validation check.  - `type`: NGSI entity type. It has to be KeyCardSwitch    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `id[*]`: Unique identifier of the entity  - `if[array]`: The OCF Interface set supported by this Resource.  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n[string]`: Friendly name of the Resource  - `name[string]`: The name of this item.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `rt[array]`: The Resource Type of KeyCardSwitch  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `stateofcard[string]`: The status of the keycardswitch. 'validCardInserted' means that a keycard was inserted and passed validation check. 'validCardNotInserted' means that a keycard is not inserted or it was inserted but failed to pass validation check.  - `type[string]`: NGSI entity type. It has to be KeyCardSwitch  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Required properties  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 This data model comes from the original [Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels). It has been extended to comply with NGSI requirements.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Data Model description of properties  
 Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 KeyCardSwitch:    
@@ -332,9 +347,14 @@ KeyCardSwitch:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Example payloads    
 #### KeyCardSwitch NGSI-v2 key-values Example    
 Here is an example of a KeyCardSwitch in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:KeyCardSwitch:id:GZOF:35641475",  
@@ -371,8 +391,10 @@ KeyCardSwitch:
   "areaServed": "Front cup leave vote per official race. Else present evening let right these person. Institution peace three current."  
 }  
 ```  
+</details>  
 #### KeyCardSwitch NGSI-v2 normalized Example    
 Here is an example of a KeyCardSwitch in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -450,127 +472,141 @@ KeyCardSwitch:
   }  
 }  
 ```  
+</details>  
 #### KeyCardSwitch NGSI-LD key-values Example    
 Here is an example of a KeyCardSwitch in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:KeyCardSwitch:id:GZOF:35641475",  
-  "dateCreated": "1979-06-19T15:05:24Z",  
-  "dateModified": "1999-08-17T22:39:05Z",  
-  "source": "Star total weight would. Yeah general down government.",  
-  "name": "Ago three pattern sport remember skin walk pressure. Rule specific agree why oil morning exactly. Around think couple particular long long agency.",  
-  "alternateName": "Tree mission after strategy window coach. Loss shake newspaper myself sure now project movie. Senior like glass sister success toward discover.",  
-  "description": "Decision risk citizen in must. Know not change result wish none your.",  
-  "dataProvider": "Writer standard skin notice. Institution man relationship material someone skill.",  
-  "owner": [  
-    "urn:ngsi-ld:KeyCardSwitch:items:YDJZ:93348834",  
-    "urn:ngsi-ld:KeyCardSwitch:items:SKQE:26700583"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:KeyCardSwitch:items:ICWM:26074718",  
-    "urn:ngsi-ld:KeyCardSwitch:items:QCPV:59780183"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      14.563401,  
-      -16.208054  
+    "id": "urn:ngsi-ld:KeyCardSwitch:id:GZOF:35641475",  
+    "dateCreated": "1979-06-19T15:05:24Z",  
+    "dateModified": "1999-08-17T22:39:05Z",  
+    "source": "Star total weight would. Yeah general down government.",  
+    "name": "Ago three pattern sport remember skin walk pressure. Rule specific agree why oil morning exactly. Around think couple particular long long agency.",  
+    "alternateName": "Tree mission after strategy window coach. Loss shake newspaper myself sure now project movie. Senior like glass sister success toward discover.",  
+    "description": "Decision risk citizen in must. Know not change result wish none your.",  
+    "dataProvider": "Writer standard skin notice. Institution man relationship material someone skill.",  
+    "owner": [  
+        "urn:ngsi-ld:KeyCardSwitch:items:YDJZ:93348834",  
+        "urn:ngsi-ld:KeyCardSwitch:items:SKQE:26700583"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:KeyCardSwitch:items:ICWM:26074718",  
+        "urn:ngsi-ld:KeyCardSwitch:items:QCPV:59780183"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            14.563401,  
+            -16.208054  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Number wall perhaps let whom throughout bring pattern.",  
+        "addressLocality": "Pass cell building. Hair senior college receive option south. Step recent local list feel.",  
+        "addressRegion": "Agency real man forward house heart wind democratic. Citizen affect choose bit help theory. And machine culture short piece thousand.",  
+        "addressCountry": "Again goal push fund compare item do. Street through evening vote single join she wonder.",  
+        "postalCode": "Establish record successful whatever since less probably. Pull member form strategy.",  
+        "postOfficeBoxNumber": "There quite gas. Sing painting wonder there let boy summer. Staff until skill camera whole could center."  
+    },  
+    "areaServed": "Front cup leave vote per official race. Else present evening let right these person. Institution peace three current.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Number wall perhaps let whom throughout bring pattern.",  
-    "addressLocality": "Pass cell building. Hair senior college receive option south. Step recent local list feel.",  
-    "addressRegion": "Agency real man forward house heart wind democratic. Citizen affect choose bit help theory. And machine culture short piece thousand.",  
-    "addressCountry": "Again goal push fund compare item do. Street through evening vote single join she wonder.",  
-    "postalCode": "Establish record successful whatever since less probably. Pull member form strategy.",  
-    "postOfficeBoxNumber": "There quite gas. Sing painting wonder there let boy summer. Staff until skill camera whole could center."  
-  },  
-  "areaServed": "Front cup leave vote per official race. Else present evening let right these person. Institution peace three current.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### KeyCardSwitch NGSI-LD normalized Example    
 Here is an example of a KeyCardSwitch in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:KeyCardSwitch:id:LEEZ:97554540",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2013-05-18T21:24:36Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2006-07-08T05:04:06Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Stock for lead best add yourself decide everyone. Member pass toward treat. Skin throw remain four."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Lot too town drive. Per fear science buy pull. Notice forward energy necessary."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Fund worry leader return executive I house. World everybody learn day."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Cultural industry worry black well. Because nation project third better. Mention art window owner very."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Southern public ability feel think. Military fire green guy yes better authority same. Until wind these fly for hand."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:KeyCardSwitch:items:HCSA:07183623",  
-      "urn:ngsi-ld:KeyCardSwitch:items:POTQ:78503118"  
+    "id": "urn:ngsi-ld:KeyCardSwitch:id:LEEZ:97554540",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2013-05-18T21:24:36Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2006-07-08T05:04:06Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Stock for lead best add yourself decide everyone. Member pass toward treat. Skin throw remain four."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Lot too town drive. Per fear science buy pull. Notice forward energy necessary."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Fund worry leader return executive I house. World everybody learn day."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Cultural industry worry black well. Because nation project third better. Mention art window owner very."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Southern public ability feel think. Military fire green guy yes better authority same. Until wind these fly for hand."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:KeyCardSwitch:items:HCSA:07183623",  
+            "urn:ngsi-ld:KeyCardSwitch:items:POTQ:78503118"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:KeyCardSwitch:items:NNBX:82221089"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                1.61911,  
+                -121.561893  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Bring choice by a hundred ago guess. Pass floor watch attorney individual.",  
+            "addressLocality": "Out indeed process difficult let whole necessary. Action could produce without sit talk performance not.",  
+            "addressRegion": "Outside hotel question foot international term.",  
+            "addressCountry": "Girl only another action throughout. Perhaps table this list. Sign civil red eight. Do fish move during across once.",  
+            "postalCode": "Civil ready affect knowledge. Amount six against example go learn.",  
+            "postOfficeBoxNumber": "Bank significant similar station leader. Bag country cup military. Police fund simple put."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Congress newspaper education seat. Spring month skill land production away. I back plant mind bag deal who. Glass fill think expect remain."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:KeyCardSwitch:items:NNBX:82221089"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        1.61911,  
-        -121.561893  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Bring choice by a hundred ago guess. Pass floor watch attorney individual.",  
-      "addressLocality": "Out indeed process difficult let whole necessary. Action could produce without sit talk performance not.",  
-      "addressRegion": "Outside hotel question foot international term.",  
-      "addressCountry": "Girl only another action throughout. Perhaps table this list. Sign civil red eight. Do fish move during across once.",  
-      "postalCode": "Civil ready affect knowledge. Amount six against example go learn.",  
-      "postOfficeBoxNumber": "Bank significant similar station leader. Bag country cup military. Police fund simple put."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Congress newspaper education seat. Spring month skill land production away. I back plant mind bag deal who. Glass fill think expect remain."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
