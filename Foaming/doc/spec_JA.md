@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 エンティティ発泡  
-========  
+========<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/Foaming/LICENSE.md)  
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述。**この Resource は発泡に関連する属性を記述する。液体のProperty 'foamstrength' は整数で表される。泡の強さは整数であり、その範囲はProperty 'range' の存在によって強制されることがある**。  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述です。**このResourceは発泡に関連する属性を記述する。液体のProperty 'foamstrength' は整数で表される。泡の強さは整数であり、その範囲はProperty 'range' の存在によって強制されることがある**。  
 バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `foamstrength`: 液体の泡立ちの希望。  - `id`: エンティティの一意な識別子  - `if`: このリソースがサポートするインタフェースセット  - `location`: アイテムへのGeojsonリファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `n`: リソースのフレンドリ名  - `name`: このアイテムの名称です。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `range`: リソース内のプロパティの有効範囲を整数で表したもの。配列の最初の値が最小値、2 番目の値が最大値となります。  - `rt`: リソースの種類  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで指定する文字の列。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `step`: 範囲が整数の場合、定義された範囲に渡るステップ値。  つまり、範囲が0〜10でステップが2の場合、有効な値は0,2,4,6,8,10である。  - `type`: NGSIエンティティタイプ。これは、Foamingでなければならない    
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `foamstrength[integer]`: 液体の泡立ちの希望。  - `id[*]`: エンティティの一意な識別子  - `if[array]`: このリソースがサポートするインタフェースセット  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `n[string]`: リソースのフレンドリ名  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリスト  - `range[array]`: Resource に含まれる Property の有効範囲を表す整数値。配列の最初の値が最小値、2 番目の値が最大値となります。  - `rt[array]`: リソースの種類  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `step[integer]`: 範囲が整数の場合、定義された範囲に渡るステップ値。  つまり、範囲が0〜10でステップが2の場合、有効な値は0,2,4,6,8,10である。  - `type[string]`: NGSIエンティティタイプ。これは、Foamingでなければならない  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 必要なプロパティ  
-- `foamstrength`  - `id`  - `type`    
+- `foamstrength`  - `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 データモデルは、Open Connectivity Foundationが作成したオリジナルを引用しています。https://github.com/openconnectivityfoundation/IoTDataModels のオリジナルリポジトリ  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
 アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Foaming:    
@@ -347,9 +360,14 @@ Foaming:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
 #### NGSI-v2 キー値の発泡例  
-以下は、JSON-LD形式でkey-valueとしてFoamingした例です。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+ここでは、key-valuesとしてJSON-LD形式でFoamingを行う例を示す。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Foaming:id:JVUH:45422568",  
@@ -408,8 +426,10 @@ Foaming:
   "type": "Foaming"  
 }  
 ```  
+</details>  
 #### 発泡NGSI-v2規格化例  
 以下は、正規化されたJSON-LD形式のFoamingの例です。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -530,182 +550,196 @@ Foaming:
   }  
 }  
 ```  
+</details>  
 #### 発泡性NGSI-LDのキー値例  
-以下は、JSON-LD形式でkey-valueとしてFoamingした例です。これは `options=keyValues` を利用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+ここでは、key-valuesとしてJSON-LD形式でFoamingを行う例を示します。これは `options=keyValues` を利用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Foaming:id:JVUH:45422568",  
-  "dateCreated": "2006-03-05T12:55:37Z",  
-  "dateModified": "2017-01-14T01:28:34Z",  
-  "source": "Summer most science while. Structure would address plan avoid very everybody exist.",  
-  "name": "Identify city outside personal. Call back try. Watch president scientist prove responsibility say rich appear.",  
-  "alternateName": "Friend capital fund doctor test product character house. Notice know step fight young enter edge medical. She likely man.",  
-  "description": "Suddenly range discussion. Little large either thought. Rest care thus building hotel political. Case who get child.",  
-  "dataProvider": "Executive reveal audience among impact young occur. Everyone worker relate eight.",  
-  "owner": [  
-    "urn:ngsi-ld:Foaming:items:XZJP:84751263",  
-    "urn:ngsi-ld:Foaming:items:JAIZ:59812776"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Foaming:items:DXAV:64111853",  
-    "urn:ngsi-ld:Foaming:items:GNTA:34626623"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -35.0776695,  
-      158.939982  
+    "id": "urn:ngsi-ld:Foaming:id:JVUH:45422568",  
+    "dateCreated": "2006-03-05T12:55:37Z",  
+    "dateModified": "2017-01-14T01:28:34Z",  
+    "source": "Summer most science while. Structure would address plan avoid very everybody exist.",  
+    "name": "Identify city outside personal. Call back try. Watch president scientist prove responsibility say rich appear.",  
+    "alternateName": "Friend capital fund doctor test product character house. Notice know step fight young enter edge medical. She likely man.",  
+    "description": "Suddenly range discussion. Little large either thought. Rest care thus building hotel political. Case who get child.",  
+    "dataProvider": "Executive reveal audience among impact young occur. Everyone worker relate eight.",  
+    "owner": [  
+        "urn:ngsi-ld:Foaming:items:XZJP:84751263",  
+        "urn:ngsi-ld:Foaming:items:JAIZ:59812776"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Foaming:items:DXAV:64111853",  
+        "urn:ngsi-ld:Foaming:items:GNTA:34626623"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -35.0776695,  
+            158.939982  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "She audience class former. Accept affect player cell message floor. Unit ok any research far.",  
+        "addressLocality": "Real may increase. Finish up east edge speech reason. Difficult history policy prepare good mouth maintain where.",  
+        "addressRegion": "Sense exist play. Single seek between.",  
+        "addressCountry": "Mouth mouth such sing culture note water. Cell human former throughout.",  
+        "postalCode": "Building present according item movement three apply. Long price group raise leader throughout to.",  
+        "postOfficeBoxNumber": "Draw nation particular public order when easy. Do this science across radio."  
+    },  
+    "areaServed": "Analysis serious instead staff. Buy the seem admit six tonight. Between there five. Form she color thus story.",  
+    "rt": [  
+        "oic.r.foaming",  
+        "oic.r.foaming"  
+    ],  
+    "foamstrength": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "n": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair.",  
+    "range": [  
+        864,  
+        864  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "if": [  
+        "oic.if.rw",  
+        "oic.if.baseline"  
+    ],  
+    "type": "Foaming",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "She audience class former. Accept affect player cell message floor. Unit ok any research far.",  
-    "addressLocality": "Real may increase. Finish up east edge speech reason. Difficult history policy prepare good mouth maintain where.",  
-    "addressRegion": "Sense exist play. Single seek between.",  
-    "addressCountry": "Mouth mouth such sing culture note water. Cell human former throughout.",  
-    "postalCode": "Building present according item movement three apply. Long price group raise leader throughout to.",  
-    "postOfficeBoxNumber": "Draw nation particular public order when easy. Do this science across radio."  
-  },  
-  "areaServed": "Analysis serious instead staff. Buy the seem admit six tonight. Between there five. Form she color thus story.",  
-  "rt": [  
-    "oic.r.foaming",  
-    "oic.r.foaming"  
-  ],  
-  "foamstrength": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "n": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair.",  
-  "range": [  
-    864,  
-    864  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "if": [  
-    "oic.if.rw",  
-    "oic.if.baseline"  
-  ],  
-  "type": "Foaming",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### 発泡 NGSI-LD 正規化例  
-以下は、JSON-LD形式で正規化されたFoamingの例です。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、正規化されたJSON-LD形式のFoamingの例です。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Foaming:id:GEGO:66285307",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2003-09-02T12:26:48Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1981-04-29T20:42:24Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Training media arm need avoid child develop. Surface animal kid president serious. Still ten prove leave bar."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Cup can including choose. Police student modern still six media about. But try instead cultural understand game perhaps."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Or mother everyone part billion bit only. Ok share investment hard discover Mr."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Build write room country hear. Whose along fill."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Blood determine prove know must. Organization possible growth between. Far billion individual then. Account sometimes although."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Foaming:items:XKMJ:59551566",  
-      "urn:ngsi-ld:Foaming:items:CNPL:54368317"  
+    "id": "urn:ngsi-ld:Foaming:id:GEGO:66285307",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2003-09-02T12:26:48Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1981-04-29T20:42:24Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Training media arm need avoid child develop. Surface animal kid president serious. Still ten prove leave bar."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Cup can including choose. Police student modern still six media about. But try instead cultural understand game perhaps."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Or mother everyone part billion bit only. Ok share investment hard discover Mr."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Build write room country hear. Whose along fill."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Blood determine prove know must. Organization possible growth between. Far billion individual then. Account sometimes although."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Foaming:items:XKMJ:59551566",  
+            "urn:ngsi-ld:Foaming:items:CNPL:54368317"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Foaming:items:CYRA:63394422"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -76.5520235,  
+                -158.221848  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Human draw really remain. Task various argue keep.",  
+            "addressLocality": "Conference generation on in case opportunity detail. Stand town entire minute over effort war far.",  
+            "addressRegion": "Purpose number trade right yet. Her service clear north fish. Back blood mind whose.",  
+            "addressCountry": "Move it food democratic minute line. Leg pressure science audience.",  
+            "postalCode": "Even crime white believe for. Suddenly nature bag measure. There heart apply upon raise face.",  
+            "postOfficeBoxNumber": "Run follow rock seem assume. West care at develop item able money lot."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Drug war our Democrat senior. Down notice another answer newspaper notice goal. Activity someone create explain center once allow."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.foaming"  
+        ]  
+    },  
+    "foamstrength": {  
+        "type": "Property",  
+        "value": 714  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Value person that. Night at interesting push TV computer."  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            233,  
+            781  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 433  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.rw",  
+            "oic.if.rw"  
+        ]  
+    },  
+    "type": "Foaming",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Foaming:items:CYRA:63394422"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -76.5520235,  
-        -158.221848  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Human draw really remain. Task various argue keep.",  
-      "addressLocality": "Conference generation on in case opportunity detail. Stand town entire minute over effort war far.",  
-      "addressRegion": "Purpose number trade right yet. Her service clear north fish. Back blood mind whose.",  
-      "addressCountry": "Move it food democratic minute line. Leg pressure science audience.",  
-      "postalCode": "Even crime white believe for. Suddenly nature bag measure. There heart apply upon raise face.",  
-      "postOfficeBoxNumber": "Run follow rock seem assume. West care at develop item able money lot."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Drug war our Democrat senior. Down notice another answer newspaper notice goal. Activity someone create explain center once allow."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.foaming"  
-    ]  
-  },  
-  "foamstrength": {  
-    "type": "Property",  
-    "value": 714  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Value person that. Night at interesting push TV computer."  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      233,  
-      781  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 433  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.rw",  
-      "oic.if.rw"  
-    ]  
-  },  
-  "type": "Foaming",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
