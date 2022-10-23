@@ -1,17 +1,32 @@
-Entidad: Saturación  
-===================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entidad: Saturación  
+===================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.OCF/blob/master/Saturation/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Descripción global: **Adaptación del programa de modelos de datos inteligentes de los modelos de datos originales de IoTData. Este recurso describe un valor de saturación de color. La propiedad 'colourSaturation' es un número entero. Un 'colourSaturation' tiene un rango de [0,100]. Un valor de 'colourSaturation' de 0 significa producir imágenes en blanco y negro. Un valor de 'colourSaturation' de 50 significa producir imágenes de color normal específicas del dispositivo. Un valor de 'colourSaturation' de 100 significa producir imágenes a todo color del dispositivo. **  
+versión: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `colourSaturation`: El valor de saturación del color.  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `if`: El conjunto de interfaces OCF que admite este recurso.  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n`: Nombre amistoso del recurso  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `rt`: El tipo de recurso.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type`: Tipo de entidad NGSI. Tiene que ser Saturación    
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>  
+- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `colourSaturation[integer]`: El valor de saturación del color.  - `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Una descripción de este artículo  - `id[*]`: Identificador único de la entidad  - `if[array]`: El conjunto de interfaces OCF que admite este recurso.  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n[string]`: Nombre amigable del Recurso  - `name[string]`: El nombre de este artículo.  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `rt[array]`: El tipo de recurso.  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type[string]`: Tipo de entidad NGSI. Tiene que ser Saturación  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propiedades requeridas  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Este modelo de datos procede del original [repositorio de la Open Connectivity Foundation](https://github.com/openconnectivityfoundation/IoTDataModels). Se ha ampliado para cumplir con los requisitos de la NGSI.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Saturation:    
@@ -330,9 +345,14 @@ Saturation:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Ejemplo de carga útil  
 #### Saturación de valores clave NGSI-v2 Ejemplo  
 Aquí hay un ejemplo de una Saturación en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Saturation:id:UAQO:16151655",  
@@ -369,8 +389,10 @@ Saturation:
   "areaServed": "Campaign personal gas someone speak treatment. Relate something degree itself item. International environment add arrive early them show."  
 }  
 ```  
+</details>  
 #### Saturación NGSI-v2 normalizada Ejemplo  
 Este es un ejemplo de una Saturación en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -448,127 +470,141 @@ Saturation:
   }  
 }  
 ```  
+</details>  
 #### Saturación NGSI-LD valores-clave Ejemplo  
 Aquí hay un ejemplo de una Saturación en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Saturation:id:UAQO:16151655",  
-  "dateCreated": "1984-09-23T14:35:27Z",  
-  "dateModified": "1999-01-24T17:38:14Z",  
-  "source": "As nation meeting structure person. Realize science design so.",  
-  "name": "Probably apply month next attention land establish. Various respond report opportunity light agent.",  
-  "alternateName": "Sing lose spring join. Store interest fact long. Try dinner town situation window law. Forget instead every school.",  
-  "description": "Toward true former series list result. Stand food style site north election.",  
-  "dataProvider": "Door control carry indeed very. Her chance late of build everyone. Small report charge score sit.",  
-  "owner": [  
-    "urn:ngsi-ld:Saturation:items:LTXZ:22207364",  
-    "urn:ngsi-ld:Saturation:items:LYGT:62865746"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Saturation:items:RRFG:80837873",  
-    "urn:ngsi-ld:Saturation:items:JKFG:05511341"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -82.4344335,  
-      127.876722  
+    "id": "urn:ngsi-ld:Saturation:id:UAQO:16151655",  
+    "dateCreated": "1984-09-23T14:35:27Z",  
+    "dateModified": "1999-01-24T17:38:14Z",  
+    "source": "As nation meeting structure person. Realize science design so.",  
+    "name": "Probably apply month next attention land establish. Various respond report opportunity light agent.",  
+    "alternateName": "Sing lose spring join. Store interest fact long. Try dinner town situation window law. Forget instead every school.",  
+    "description": "Toward true former series list result. Stand food style site north election.",  
+    "dataProvider": "Door control carry indeed very. Her chance late of build everyone. Small report charge score sit.",  
+    "owner": [  
+        "urn:ngsi-ld:Saturation:items:LTXZ:22207364",  
+        "urn:ngsi-ld:Saturation:items:LYGT:62865746"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Saturation:items:RRFG:80837873",  
+        "urn:ngsi-ld:Saturation:items:JKFG:05511341"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -82.4344335,  
+            127.876722  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Us yes thank too address. Prevent yet state build property.",  
+        "addressLocality": "Guy on physical song city why think. Section attorney argue nation.",  
+        "addressRegion": "Word wife crime choose. Own across social position senior common Congress.",  
+        "addressCountry": "Thing television water girl realize help. Late myself choose speech investment whose front.",  
+        "postalCode": "Himself dream skill spend clearly. Development research character moment from lay identify. Part yet even again.",  
+        "postOfficeBoxNumber": "Somebody nature under young rock occur case outside. Air suffer week next population war that. Argue anyone miss land often hold offer song."  
+    },  
+    "areaServed": "Campaign personal gas someone speak treatment. Relate something degree itself item. International environment add arrive early them show.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Us yes thank too address. Prevent yet state build property.",  
-    "addressLocality": "Guy on physical song city why think. Section attorney argue nation.",  
-    "addressRegion": "Word wife crime choose. Own across social position senior common Congress.",  
-    "addressCountry": "Thing television water girl realize help. Late myself choose speech investment whose front.",  
-    "postalCode": "Himself dream skill spend clearly. Development research character moment from lay identify. Part yet even again.",  
-    "postOfficeBoxNumber": "Somebody nature under young rock occur case outside. Air suffer week next population war that. Argue anyone miss land often hold offer song."  
-  },  
-  "areaServed": "Campaign personal gas someone speak treatment. Relate something degree itself item. International environment add arrive early them show.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### Saturación NGSI-LD normalizada Ejemplo  
 Este es un ejemplo de una Saturación en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Saturation:id:UNWK:22706072",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1982-02-20T20:24:28Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1972-04-28T12:38:01Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Form media budget situation purpose red. Man exactly fund teach lead will what partner. Safe impact debate PM unit campaign front."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Republican town light wish herself. Mr story north good behind science pull. Painting accept south glass."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Machine read would guy foreign serve begin next. Ball cost customer leave floor single."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Although door serious traditional. Price military all put sign."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Your to how newspaper. Kitchen reflect low whatever especially single dinner."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Saturation:items:BXQH:90967402",  
-      "urn:ngsi-ld:Saturation:items:QCNM:21634817"  
+    "id": "urn:ngsi-ld:Saturation:id:UNWK:22706072",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1982-02-20T20:24:28Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1972-04-28T12:38:01Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Form media budget situation purpose red. Man exactly fund teach lead will what partner. Safe impact debate PM unit campaign front."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Republican town light wish herself. Mr story north good behind science pull. Painting accept south glass."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Machine read would guy foreign serve begin next. Ball cost customer leave floor single."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Although door serious traditional. Price military all put sign."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Your to how newspaper. Kitchen reflect low whatever especially single dinner."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Saturation:items:BXQH:90967402",  
+            "urn:ngsi-ld:Saturation:items:QCNM:21634817"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Saturation:items:YAYR:74793251"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -16.4431155,  
+                -42.45979  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Range provide thing develop. Rock interesting cover beautiful involve herself eight history.",  
+            "addressLocality": "Adult discussion once at anything drug finish machine. Pull discover nature star grow.",  
+            "addressRegion": "Follow art to case. Cut represent hundred same Mr quality reach.",  
+            "addressCountry": "Other tree sense wide cause. Use full sit herself.",  
+            "postalCode": "According nation adult someone. Under order guess note couple approach. Never of later dinner president.",  
+            "postOfficeBoxNumber": "Difference sister man. Certain north girl make cup condition."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Thing data appear director structure sound."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Saturation:items:YAYR:74793251"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -16.4431155,  
-        -42.45979  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Range provide thing develop. Rock interesting cover beautiful involve herself eight history.",  
-      "addressLocality": "Adult discussion once at anything drug finish machine. Pull discover nature star grow.",  
-      "addressRegion": "Follow art to case. Cut represent hundred same Mr quality reach.",  
-      "addressCountry": "Other tree sense wide cause. Use full sit herself.",  
-      "postalCode": "According nation adult someone. Under order guess note couple approach. Never of later dinner president.",  
-      "postOfficeBoxNumber": "Difference sister man. Certain north girl make cup condition."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Thing data appear director structure sound."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
