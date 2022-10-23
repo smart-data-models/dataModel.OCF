@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entidad: 3DPrinter  
-==================  
+==================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.OCF/blob/master/3DPrinter/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Descripción global: **Este Recurso describe los atributos asociados a la Impresora 3D. El tipo de tecnología de impresión 3D se especifica mediante un valor de cadena enumerado. Se incluyen los tamaños máximos en mm para las dimensiones x, y y z. La designación de si el dispositivo tiene capacidad de conectividad WAN se representa en un booleano. La capacidad de memoria se captura en MB.**  
 versión: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-- `3dprinttype`: El tipo de tecnología de impresión 3D.  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `if`: El conjunto de interfaces OCF que admite este recurso.  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `memorysize`: Esta propiedad representa el tamaño total de la memoria de la impresora. La unidad es MB(Mega Bytes)  - `n`: Nombre amigable del Recurso  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `printsizex`: Esta propiedad representa el tamaño máximo del objeto de impresión en la dirección del eje X. La unidad es mm.  - `printsizey`: Esta propiedad representa el tamaño máximo del objeto de impresión en la dirección del eje Y. La unidad es mm.  - `printsizez`: Esta propiedad representa el tamaño máximo del objeto de impresión en la dirección del eje Z. La unidad es mm.  - `rt`: El tipo de recurso  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type`: Tipo de entidad NGSI. Tiene que ser 3DPrinter  - `wanconnected`: Esta propiedad indica la capacidad de conectividad de la impresora 3D. Si el valor es falso, la impresora no tiene capacidad de conexión a redes de área amplia como Internet y GSM. Si el valor es verdadero, la impresora tiene conectividad de red    
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>  
+- `3dprinttype[string]`: El tipo de tecnología de impresión 3D.  - `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Una descripción de este artículo  - `id[*]`: Identificador único de la entidad  - `if[array]`: El conjunto de interfaces OCF que admite este recurso.  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `memorysize[number]`: Esta propiedad representa el tamaño total de la memoria de la impresora. La unidad es MB(Mega Bytes)  - `n[string]`: Nombre amigable del Recurso  - `name[string]`: El nombre de este artículo.  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `printsizex[number]`: Esta propiedad representa el tamaño máximo del objeto de impresión en la dirección del eje X. La unidad es mm.  - `printsizey[number]`: Esta propiedad representa el tamaño máximo del objeto de impresión en la dirección del eje Y. La unidad es mm.  - `printsizez[number]`: Esta propiedad representa el tamaño máximo del objeto de impresión en la dirección del eje Z. La unidad es mm.  - `rt[array]`: El tipo de recurso  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `type[string]`: Tipo de entidad NGSI. Tiene que ser 3DPrinter  - `wanconnected[boolean]`: Esta propiedad indica la capacidad de conectividad de la impresora 3D. Si el valor es falso, la impresora no tiene capacidad de conexión a redes de área amplia como Internet y GSM. Si el valor es verdadero, la impresora tiene conectividad de red  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propiedades requeridas  
-- `3dprinttype`  - `id`  - `memorysize`  - `printsizex`  - `printsizey`  - `printsizez`  - `type`  - `wanconnected`    
+- `3dprinttype`  - `id`  - `memorysize`  - `printsizex`  - `printsizey`  - `printsizez`  - `type`  - `wanconnected`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Modelo de datos adaptado del original creado por la Open Connectivity Foundation. Repositorio original en https://github.com/openconnectivityfoundation/IoTDataModels  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 3DPrinter:    
@@ -377,9 +390,14 @@
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Ejemplo de carga útil  
 #### 3DPrinter NGSI-v2 key-values Ejemplo  
 Aquí hay un ejemplo de un 3DPrinter en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:3DPrinter:id:YUSH:12422704",  
@@ -447,8 +465,10 @@
   "type": "3DPrinter"  
 }  
 ```  
+</details>  
 #### 3DPrinter NGSI-v2 normalizado Ejemplo  
 Aquí hay un ejemplo de un 3DPrinter en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -587,200 +607,214 @@
   }  
 }  
 ```  
+</details>  
 #### 3DPrinter NGSI-LD key-values Ejemplo  
 Aquí hay un ejemplo de un 3DPrinter en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:3DPrinter:id:YUSH:12422704",  
-  "dateCreated": "1982-12-22T16:51:18Z",  
-  "dateModified": "2016-04-19T02:35:28Z",  
-  "source": "Size purpose hit American color minute. Improve send public crime long bag. Design benefit our evening her expect seek. Process catch up hear source work this.",  
-  "name": "Wall relate upon decision official. Return per system sound society current. Environment bar hope.",  
-  "alternateName": "Range though no ground study store.",  
-  "description": "Party prevent sort. Population simply keep run line. Ground about wish raise.",  
-  "dataProvider": "Stage environment effort expect. It company history place really. Result Mr data those on organization. Affect save factor up cause.",  
-  "owner": [  
-    "urn:ngsi-ld:3DPrinter:items:BJQF:44557977",  
-    "urn:ngsi-ld:3DPrinter:items:UJGY:74455021"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:3DPrinter:items:INTV:14103670",  
-    "urn:ngsi-ld:3DPrinter:items:HVOD:77311767"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -88.6783455,  
-      -161.926308  
+    "id": "urn:ngsi-ld:3DPrinter:id:YUSH:12422704",  
+    "dateCreated": "1982-12-22T16:51:18Z",  
+    "dateModified": "2016-04-19T02:35:28Z",  
+    "source": "Size purpose hit American color minute. Improve send public crime long bag. Design benefit our evening her expect seek. Process catch up hear source work this.",  
+    "name": "Wall relate upon decision official. Return per system sound society current. Environment bar hope.",  
+    "alternateName": "Range though no ground study store.",  
+    "description": "Party prevent sort. Population simply keep run line. Ground about wish raise.",  
+    "dataProvider": "Stage environment effort expect. It company history place really. Result Mr data those on organization. Affect save factor up cause.",  
+    "owner": [  
+        "urn:ngsi-ld:3DPrinter:items:BJQF:44557977",  
+        "urn:ngsi-ld:3DPrinter:items:UJGY:74455021"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:3DPrinter:items:INTV:14103670",  
+        "urn:ngsi-ld:3DPrinter:items:HVOD:77311767"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -88.6783455,  
+            -161.926308  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Their soldier next full together. Us word national pretty war common. Either herself event either career.",  
+        "addressLocality": "Letter imagine box watch nation value. Along start put pattern try. Per smile however media money resource gun.",  
+        "addressRegion": "Clearly generation light quite less.",  
+        "addressCountry": "Pretty popular plant attention. Start physical phone measure your eye. High instead book yourself.",  
+        "postalCode": "Law close sound along card. While tough evening fight ball radio whose.",  
+        "postOfficeBoxNumber": "Leg charge people senior. Look foreign possible be. Case figure coach road sell on."  
+    },  
+    "areaServed": "Show near system coach particularly memory provide front. Already risk close plan value member. Son Mr only edge.",  
+    "rt": [  
+        "oic.r.printer.3d",  
+        "oic.r.printer.3d"  
+    ],  
+    "printsizey": {  
+        "type": "Property",  
+        "value": 141.9  
+    },  
+    "memorysize": {  
+        "type": "Property",  
+        "value": 423.2  
+    },  
+    "3dprinttype": "Digital Light Processing",  
+    "wanconnected": {  
+        "type": "Property",  
+        "value": true  
+    },  
+    "printsizex": {  
+        "type": "Property",  
+        "value": 638.7  
+    },  
+    "printsizez": {  
+        "type": "Property",  
+        "value": 659.8  
+    },  
+    "n": "Direction expert staff property. Wall score before increase.",  
+    "if": [  
+        "oic.if.r",  
+        "oic.if.r"  
+    ],  
+    "type": "3DPrinter",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Their soldier next full together. Us word national pretty war common. Either herself event either career.",  
-    "addressLocality": "Letter imagine box watch nation value. Along start put pattern try. Per smile however media money resource gun.",  
-    "addressRegion": "Clearly generation light quite less.",  
-    "addressCountry": "Pretty popular plant attention. Start physical phone measure your eye. High instead book yourself.",  
-    "postalCode": "Law close sound along card. While tough evening fight ball radio whose.",  
-    "postOfficeBoxNumber": "Leg charge people senior. Look foreign possible be. Case figure coach road sell on."  
-  },  
-  "areaServed": "Show near system coach particularly memory provide front. Already risk close plan value member. Son Mr only edge.",  
-  "rt": [  
-    "oic.r.printer.3d",  
-    "oic.r.printer.3d"  
-  ],  
-  "printsizey": {  
-    "type": "Property",  
-    "value": 141.9  
-  },  
-  "memorysize": {  
-    "type": "Property",  
-    "value": 423.2  
-  },  
-  "3dprinttype": "Digital Light Processing",  
-  "wanconnected": {  
-    "type": "Property",  
-    "value": true  
-  },  
-  "printsizex": {  
-    "type": "Property",  
-    "value": 638.7  
-  },  
-  "printsizez": {  
-    "type": "Property",  
-    "value": 659.8  
-  },  
-  "n": "Direction expert staff property. Wall score before increase.",  
-  "if": [  
-    "oic.if.r",  
-    "oic.if.r"  
-  ],  
-  "type": "3DPrinter",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### 3DPrinter NGSI-LD normalizado Ejemplo  
 Aquí hay un ejemplo de un 3DPrinter en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:3DPrinter:id:OSAJ:25765068",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1988-01-28T14:13:40Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2012-05-04T06:05:12Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Score nearly wait."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Day claim democratic standard sing general growth miss. Large for yard city behavior anyone. Pretty down too."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Water popular pretty head. Visit as although quickly away Congress sell rule. Language approach challenge of situation home prove. May gas civil word suddenly."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Reach beautiful key article wish. Range age future suggest choose stop organization. Total claim why involve."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Sort left must. First Mrs everybody eat thank it. Relationship source hear recent every drive."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:3DPrinter:items:KCRI:07432229",  
-      "urn:ngsi-ld:3DPrinter:items:CIVT:12782306"  
+    "id": "urn:ngsi-ld:3DPrinter:id:OSAJ:25765068",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1988-01-28T14:13:40Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2012-05-04T06:05:12Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Score nearly wait."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Day claim democratic standard sing general growth miss. Large for yard city behavior anyone. Pretty down too."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Water popular pretty head. Visit as although quickly away Congress sell rule. Language approach challenge of situation home prove. May gas civil word suddenly."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Reach beautiful key article wish. Range age future suggest choose stop organization. Total claim why involve."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Sort left must. First Mrs everybody eat thank it. Relationship source hear recent every drive."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:3DPrinter:items:KCRI:07432229",  
+            "urn:ngsi-ld:3DPrinter:items:CIVT:12782306"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:3DPrinter:items:ANXI:44669183"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                20.7678465,  
+                -50.604614  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Chair series join shoulder southern camera. These wear ever it leave create. Middle nice fish push property network.",  
+            "addressLocality": "Meet industry experience fire. Let local civil public federal.",  
+            "addressRegion": "Among hospital condition human focus reach customer. Subject shoulder plant computer worry meeting.",  
+            "addressCountry": "Finally hot address establish drug else. Language in rate. Physical quickly note you. Rock both degree him consider gun number certain.",  
+            "postalCode": "Population camera second identify cold single. Miss act seek heavy south company. Grow both relate. Its including she represent.",  
+            "postOfficeBoxNumber": "Join task enough. College travel north. Region collection research opportunity agency condition court."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Station gun during instead energy politics. Health find expert. Civil land past mouth watch series kind."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.printer.3d"  
+        ]  
+    },  
+    "printsizey": {  
+        "type": "Property",  
+        "value": 862.4  
+    },  
+    "memorysize": {  
+        "type": "Property",  
+        "value": 798.4  
+    },  
+    "3dprinttype": {  
+        "type": "Property",  
+        "value": "Digital Light Processing"  
+    },  
+    "wanconnected": {  
+        "type": "Property",  
+        "value": false  
+    },  
+    "printsizex": {  
+        "type": "Property",  
+        "value": 172.6  
+    },  
+    "printsizez": {  
+        "type": "Property",  
+        "value": 926.1  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Threat look change. Down company do wall since bank."  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.r",  
+            "oic.if.r"  
+        ]  
+    },  
+    "type": "3DPrinter",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:3DPrinter:items:ANXI:44669183"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        20.7678465,  
-        -50.604614  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Chair series join shoulder southern camera. These wear ever it leave create. Middle nice fish push property network.",  
-      "addressLocality": "Meet industry experience fire. Let local civil public federal.",  
-      "addressRegion": "Among hospital condition human focus reach customer. Subject shoulder plant computer worry meeting.",  
-      "addressCountry": "Finally hot address establish drug else. Language in rate. Physical quickly note you. Rock both degree him consider gun number certain.",  
-      "postalCode": "Population camera second identify cold single. Miss act seek heavy south company. Grow both relate. Its including she represent.",  
-      "postOfficeBoxNumber": "Join task enough. College travel north. Region collection research opportunity agency condition court."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Station gun during instead energy politics. Health find expert. Civil land past mouth watch series kind."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.printer.3d"  
-    ]  
-  },  
-  "printsizey": {  
-    "type": "Property",  
-    "value": 862.4  
-  },  
-  "memorysize": {  
-    "type": "Property",  
-    "value": 798.4  
-  },  
-  "3dprinttype": {  
-    "type": "Property",  
-    "value": "Digital Light Processing"  
-  },  
-  "wanconnected": {  
-    "type": "Property",  
-    "value": false  
-  },  
-  "printsizex": {  
-    "type": "Property",  
-    "value": 172.6  
-  },  
-  "printsizez": {  
-    "type": "Property",  
-    "value": 926.1  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Threat look change. Down company do wall since bank."  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.r",  
-      "oic.if.r"  
-    ]  
-  },  
-  "type": "3DPrinter",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
