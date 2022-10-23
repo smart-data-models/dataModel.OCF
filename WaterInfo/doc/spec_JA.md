@@ -1,17 +1,32 @@
-エンティティウォーターインフォ  
-===============  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティWaterInfo  
+===============<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/WaterInfo/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな説明です。**IoTDataのデータモデルをスマートデータモデルに変換したものです。このResourceは、デバイスが現在提供している水の種類を示す水情報を記述する。水の種類は、読み取りまたは設定することができる。supportedwatertypesは、水の種類を列挙した配列で、['cold', 'hot', 'ambient', 'ice']で定義されています。supportedadditivetypes "は、水の添加物の種類を表す配列です。添加物タイプとは、クライアントの好みに応じて特定の水タイプに追加できるオプションのタイプを意味し、列挙型['none', 'soda', 'mineral']で定義されます。存在しない場合、デフォルト値は「none」となります。  プロパティ「currentwatertype」は、現在希望する水の種類です。  currentadditivetypes」は、現在選択されている添加物の種類です。  例えば、「currentwatertype」で「cold」を選択した場合、「currentadditivetypes」として「soda」と「mineral」またはその両方を選択できます。なお、「currentwatertype」で「hot」を選択した場合、「currentadditivetypes」として「soda」と「mineral」が制限されることがあります。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**IoTData のデータモデルをスマートデータモデルプログラムに適合させたものである。本 Resource は、機器が現在供給している水の種類を示す水情報を記述する。水種別は読み出しと設定が可能である。プロパティ 'supportedwatertypes' は、'cold', 'hot', 'ambient', 'ice'で定義される水の種類を示す配列である。Property 'supportedadditivetypes' は、水に対して可能な添加物の型の配列です。添加物の種類は、クライアントの好みに応じて特定の水の種類に追加できるオプションの種類を意味し、列挙型 ['none', 'soda', 'mineral'] で定義されています。存在しない場合、デフォルト値は'none'である。  プロパティ 'currentwatertype' は、現在希望する水の種類である。  Property 'currentadditivetypes' は、現在希望している添加物のタイプである。  例えば、'currentwatertype' で 'cold' を選択した場合、'currentadditivetypes' として 'soda' と 'mineral' のいずれか、または両方を選択することができます。もし 'currentwatertype' で 'hot' が選択されている場合、'currentadditivetypes' には 'soda' と 'mineral' が制限されることがあることに注意すること。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `currentadditivetypes`: お客様のお好みに応じて、現在希望されている添加剤の種類。  - `currentwatertype`: 現在希望している水の種類です。  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `if`: このResourceがサポートしているOCF Interface set。  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `n`: リソースのフレンドリーネーム  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `rt`: The Resource Type。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `supportedadditivetypes`: 可能な加算タイプの配列です。  - `supportedwatertypes`: 可能な水の種類の配列です。  - `type`: NGSIエンティティタイプ。それはWaterInfoでなければならない。    
-必須項目  
-- `id`  - `type`    
-このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)から来ています。NGSIの要件に適合するように拡張されています。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `currentadditivetypes[array]`: お客様のご希望により、現在希望されている添加物の種類。  - `currentwatertype[string]`: 現在希望している水の種類。  - `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `if[array]`: このResourceがサポートするOCF Interfaceセット。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `n[string]`: リソースのフレンドリ名  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `rt[array]`: リソースタイプです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `supportedadditivetypes[array]`: 使用可能な添加物の種類の配列。  - `supportedwatertypes[array]`: 使用可能な水の種類を表す配列。  - `type[string]`: NGSIエンティティタイプ。これはWaterInfoでなければならない。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)に由来しています。NGSIの要件に適合するように拡張されている。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 WaterInfo:    
@@ -352,9 +367,14 @@ WaterInfo:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### WaterInfo NGSI-v2 key-values の例  
-WaterInfoをJSON-LD形式でkey-valuesにした例を示します。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### WaterInfo NGSI-v2 key-value の例。  
+ここでは、WaterInfoをJSON-LD形式でkey-valuesにした例を示す。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:WaterInfo:id:BWUP:35826914",  
@@ -391,8 +411,10 @@ WaterInfo:
   "areaServed": "Future then expect everybody team garden spend. End compare significant discover notice including Democrat."  
 }  
 ```  
+</details>  
 #### WaterInfo NGSI-v2 正規化例  
-ここでは、正規化されたJSON-LD形式のWaterInfoの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、JSON-LD形式のWaterInfoを正規化した例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -470,127 +492,141 @@ WaterInfo:
   }  
 }  
 ```  
-#### WaterInfo NGSI-LD のキーバリューの例。  
-WaterInfoをJSON-LD形式のkey-valuesで表現した例を示します。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### WaterInfo NGSI-LD key-value の例。  
+ここでは、WaterInfoをJSON-LD形式でkey-valuesにした例を示す。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:WaterInfo:id:BWUP:35826914",  
-  "dateCreated": "1984-11-27T20:49:31Z",  
-  "dateModified": "2004-06-02T09:44:44Z",  
-  "source": "Along those purpose ok painting television fill. Worker wish race music trial about.",  
-  "name": "Enough thank teacher boy garden law both. Put modern customer short.",  
-  "alternateName": "Realize above attention present participant. Billion those candidate TV raise low course. Early science kid down.",  
-  "description": "According carry half. Civil meet option place pass perhaps. Mother might you age represent.",  
-  "dataProvider": "Financial live local view single.",  
-  "owner": [  
-    "urn:ngsi-ld:WaterInfo:items:JMPQ:05255850",  
-    "urn:ngsi-ld:WaterInfo:items:QJSR:25392303"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:WaterInfo:items:NTHC:63052587",  
-    "urn:ngsi-ld:WaterInfo:items:GRFX:83012714"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -80.746038,  
-      66.99956  
+    "id": "urn:ngsi-ld:WaterInfo:id:BWUP:35826914",  
+    "dateCreated": "1984-11-27T20:49:31Z",  
+    "dateModified": "2004-06-02T09:44:44Z",  
+    "source": "Along those purpose ok painting television fill. Worker wish race music trial about.",  
+    "name": "Enough thank teacher boy garden law both. Put modern customer short.",  
+    "alternateName": "Realize above attention present participant. Billion those candidate TV raise low course. Early science kid down.",  
+    "description": "According carry half. Civil meet option place pass perhaps. Mother might you age represent.",  
+    "dataProvider": "Financial live local view single.",  
+    "owner": [  
+        "urn:ngsi-ld:WaterInfo:items:JMPQ:05255850",  
+        "urn:ngsi-ld:WaterInfo:items:QJSR:25392303"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:WaterInfo:items:NTHC:63052587",  
+        "urn:ngsi-ld:WaterInfo:items:GRFX:83012714"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -80.746038,  
+            66.99956  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Area suddenly front game describe south. Store loss debate surface finish stand occur food.",  
+        "addressLocality": "Kitchen accept both of natural. Maintain traditional laugh plant on mind require contain. Wife group guy challenge.",  
+        "addressRegion": "Feel approach lead operation way single instead despite. Mean model social white near citizen firm.",  
+        "addressCountry": "Heart describe forward generation maintain. Last term shake card issue.",  
+        "postalCode": "Radio expect them usually decision none to. Tough certain tough while.",  
+        "postOfficeBoxNumber": "Analysis leg program. Country computer plan reveal available article may. Now gun third knowledge record single."  
+    },  
+    "areaServed": "Future then expect everybody team garden spend. End compare significant discover notice including Democrat.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Area suddenly front game describe south. Store loss debate surface finish stand occur food.",  
-    "addressLocality": "Kitchen accept both of natural. Maintain traditional laugh plant on mind require contain. Wife group guy challenge.",  
-    "addressRegion": "Feel approach lead operation way single instead despite. Mean model social white near citizen firm.",  
-    "addressCountry": "Heart describe forward generation maintain. Last term shake card issue.",  
-    "postalCode": "Radio expect them usually decision none to. Tough certain tough while.",  
-    "postOfficeBoxNumber": "Analysis leg program. Country computer plan reveal available article may. Now gun third knowledge record single."  
-  },  
-  "areaServed": "Future then expect everybody team garden spend. End compare significant discover notice including Democrat.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### WaterInfo NGSI-LD 正規化例  
-ここでは、正規化されたJSON-LD形式のWaterInfoの例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+ここでは、JSON-LD形式のWaterInfoを正規化した例を示す。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:WaterInfo:id:YOCI:60285099",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1998-08-15T18:04:30Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1988-08-23T07:30:17Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Ask use then represent society toward behind. Report amount from determine movement. Anyone leg market long price."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Make from radio. Dream agency trouble garden up."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Heart daughter modern through democratic perform time. New picture true."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Of board while gas surface hundred. Goal fund note responsibility media yes. American tell sometimes stop series."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Ever election point beat speak."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:WaterInfo:items:HBMT:72566566",  
-      "urn:ngsi-ld:WaterInfo:items:TPIP:75041044"  
+    "id": "urn:ngsi-ld:WaterInfo:id:YOCI:60285099",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1998-08-15T18:04:30Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1988-08-23T07:30:17Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Ask use then represent society toward behind. Report amount from determine movement. Anyone leg market long price."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Make from radio. Dream agency trouble garden up."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Heart daughter modern through democratic perform time. New picture true."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Of board while gas surface hundred. Goal fund note responsibility media yes. American tell sometimes stop series."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Ever election point beat speak."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:WaterInfo:items:HBMT:72566566",  
+            "urn:ngsi-ld:WaterInfo:items:TPIP:75041044"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:WaterInfo:items:ICKZ:40105092"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                17.8641435,  
+                -30.215867  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "At still black. Everyone often chance. Away notice year inside room ago.",  
+            "addressLocality": "Third fill play. Resource pull skin take school religious side. Effort close analysis best interest group. Pull available feeling learn wear statement.",  
+            "addressRegion": "Rise doctor window me bed short. Art represent begin run letter.",  
+            "addressCountry": "Law price police machine size. Thing firm would memory.",  
+            "postalCode": "Suggest ahead light from among magazine.",  
+            "postOfficeBoxNumber": "Everyone eight until compare four. Charge evening environment far successful kitchen history. Happy response PM seven."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Bar everybody surface appear within bit exactly."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:WaterInfo:items:ICKZ:40105092"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        17.8641435,  
-        -30.215867  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "At still black. Everyone often chance. Away notice year inside room ago.",  
-      "addressLocality": "Third fill play. Resource pull skin take school religious side. Effort close analysis best interest group. Pull available feeling learn wear statement.",  
-      "addressRegion": "Rise doctor window me bed short. Art represent begin run letter.",  
-      "addressCountry": "Law price police machine size. Thing firm would memory.",  
-      "postalCode": "Suggest ahead light from among magazine.",  
-      "postOfficeBoxNumber": "Everyone eight until compare four. Charge evening environment far successful kitchen history. Happy response PM seven."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Bar everybody surface appear within bit exactly."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
