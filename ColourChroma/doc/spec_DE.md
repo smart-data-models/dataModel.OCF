@@ -1,17 +1,32 @@
-Entität: ColourChroma  
-=====================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entität: ColourChroma  
+=====================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.OCF/blob/master/ColourChroma/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Globale Beschreibung: **Smart Data Models Program Anpassung der ursprünglichen IoTData-Datenmodelle. Diese Ressource beschreibt die Farbe unter Verwendung der Chroma-Konventionen. Die Eigenschaften sind 'Farbton', 'Sättigung', 'csc' und 'ct'. Die Eigenschaft 'hue' ist der Farbtonwinkel, ein ganzzahliger Wert, wie er in der CIECAM02-Modelldefinition festgelegt ist (siehe Referenz [CIE CIE159:2004]). Die Eigenschaft "Sättigung" ist ein ganzzahliger Wert gemäß der Definition des CIECAM02-Modells (siehe Referenz [CIE CIE159:2004]). Die Eigenschaft "maximumsaturation" ist die Obergrenze für die vom Gerät unterstützte Sättigung. Ist sie nicht vorhanden, beträgt der Höchstwert für "saturation" 32767. Die Eigenschaft "csc" sind die Farbraumkoordinaten im CIE-Farbraum.   Das erste Element im Array ist die X-Koordinate.   Das zweite Element im Array ist die Y-Koordinate. Die Eigenschaft "nct" ist die Mired-Farbtemperatur. Die Ressource liefert die Farbe unter Verwendung von Chroma-Konventionen.  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Globale Beschreibung: **Smart Data Models Program Anpassung der ursprünglichen IoTData-Datenmodelle. Diese Ressource beschreibt die Farbe unter Verwendung der Chroma-Konventionen. Die Eigenschaften sind 'Farbton', 'Sättigung', 'csc' und 'ct'. Die Eigenschaft "hue" ist der Farbtonwinkel, ein ganzzahliger Wert, wie er in der CIECAM02-Modelldefinition festgelegt ist (siehe Referenz [CIE CIE159:2004]). Die Eigenschaft "Sättigung" ist ein ganzzahliger Wert gemäß der Definition des CIECAM02-Modells (siehe Referenz [CIE CIE159:2004]). Die Eigenschaft "maximumsaturation" ist die Obergrenze für die vom Gerät unterstützte Sättigung. Ist sie nicht vorhanden, beträgt der Höchstwert für "saturation" 32767. Die Eigenschaft "csc" sind die Farbraumkoordinaten im CIE-Farbraum.   Das erste Element im Array ist die X-Koordinate.   Das zweite Element im Array ist die Y-Koordinate. Die Eigenschaft "nct" ist die Mired-Farbtemperatur. Die Ressource liefert die Farbe unter Verwendung von Chroma-Konventionen.  
+Version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `csc`: Die X- und Y-Koordinaten der Farbe im CIE-Farbraum  - `ct`: Die Mired-Farbtemperatur.  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `hue`: Der Farbtonwinkel gemäß der CIECAM02-Modelldefinition.  - `id`: Eindeutiger Bezeichner der Entität  - `if`: Der von dieser Ressource unterstützte OCF-Schnittstellensatz.  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `maximumsaturation`: Der maximal unterstützte Wert der "Sättigung" für dieses Gerät.  - `n`: Freundlicher Name der Ressource  - `name`: Der Name dieses Artikels.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `rt`: Der Ressourcentyp.  - `saturation`: Die Sättigung, wie sie in der CIECAM02-Modelldefinition festgelegt ist.  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `type`: NGSI-Entitätstyp. Es muss ColourChroma sein    
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `csc[array]`: Die X- und Y-Koordinaten der Farbe im CIE-Farbraum  - `ct[integer]`: Die Mired-Farbtemperatur.  - `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `hue[number]`: Der Farbtonwinkel gemäß der CIECAM02-Modelldefinition.  - `id[*]`: Eindeutiger Bezeichner der Entität  - `if[array]`: Der von dieser Ressource unterstützte OCF-Schnittstellensatz.  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `maximumsaturation[integer]`: Der maximal unterstützte Wert der "Sättigung" für dieses Gerät.  - `n[string]`: Freundlicher Name der Ressource  - `name[string]`: Der Name dieses Artikels.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `rt[array]`: Der Ressourcentyp.  - `saturation[integer]`: Die Sättigung, wie sie in der CIECAM02-Modelldefinition festgelegt ist.  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `type[string]`: NGSI-Entitätstyp. Es muss ColourChroma sein  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Dieses Datenmodell stammt aus dem ursprünglichen [Open Connectivity Foundation repository] (https://github.com/openconnectivityfoundation/IoTDataModels). Es wurde erweitert, um den Anforderungen der NGSI zu entsprechen.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ColourChroma:    
@@ -363,9 +378,14 @@ ColourChroma:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Beispiel-Nutzlasten  
 #### ColourChroma NGSI-v2 key-values Beispiel  
 Hier ist ein Beispiel für ein ColourChroma im JSON-LD-Format als Schlüsselwerte. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:ColourChroma:id:KXUY:75560351",  
@@ -402,8 +422,10 @@ ColourChroma:
   "areaServed": "Quickly ten off behavior story laugh change."  
 }  
 ```  
+</details>  
 #### ColourChroma NGSI-v2 normalisiert Beispiel  
 Hier ist ein Beispiel für ein ColourChroma im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -481,127 +503,141 @@ ColourChroma:
   }  
 }  
 ```  
+</details>  
 #### ColourChroma NGSI-LD key-values Beispiel  
 Hier ist ein Beispiel für ein ColourChroma im JSON-LD-Format als Schlüsselwerte. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:ColourChroma:id:KXUY:75560351",  
-  "dateCreated": "2012-06-16T11:21:50Z",  
-  "dateModified": "1995-10-29T01:15:24Z",  
-  "source": "Evening building state. Receive edge management pass recognize information nothing. Dog run thousand newspaper want hear each down. Letter north ground protect.",  
-  "name": "Everything live maintain but wonder effect finish. Five per turn admit amount. Involve style available.",  
-  "alternateName": "Rather fire rate try behind medical leader. I imagine five movement. Up occur weight south.",  
-  "description": "Theory peace skill red pretty subject story. Have think hundred foot. Turn information there Republican participant ready population.",  
-  "dataProvider": "These writer dog travel will base public. Thousand responsibility risk organization operation plant truth. Finish defense together gun. Voice soon long institution.",  
-  "owner": [  
-    "urn:ngsi-ld:ColourChroma:items:PBMH:06259714",  
-    "urn:ngsi-ld:ColourChroma:items:EGFN:24379609"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:ColourChroma:items:NZIB:01052551",  
-    "urn:ngsi-ld:ColourChroma:items:GVUJ:91800255"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      6.6581095,  
-      163.113571  
+    "id": "urn:ngsi-ld:ColourChroma:id:KXUY:75560351",  
+    "dateCreated": "2012-06-16T11:21:50Z",  
+    "dateModified": "1995-10-29T01:15:24Z",  
+    "source": "Evening building state. Receive edge management pass recognize information nothing. Dog run thousand newspaper want hear each down. Letter north ground protect.",  
+    "name": "Everything live maintain but wonder effect finish. Five per turn admit amount. Involve style available.",  
+    "alternateName": "Rather fire rate try behind medical leader. I imagine five movement. Up occur weight south.",  
+    "description": "Theory peace skill red pretty subject story. Have think hundred foot. Turn information there Republican participant ready population.",  
+    "dataProvider": "These writer dog travel will base public. Thousand responsibility risk organization operation plant truth. Finish defense together gun. Voice soon long institution.",  
+    "owner": [  
+        "urn:ngsi-ld:ColourChroma:items:PBMH:06259714",  
+        "urn:ngsi-ld:ColourChroma:items:EGFN:24379609"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:ColourChroma:items:NZIB:01052551",  
+        "urn:ngsi-ld:ColourChroma:items:GVUJ:91800255"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            6.6581095,  
+            163.113571  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Production coach five serve safe. Rest attention staff lay key expect. Decide suddenly represent watch.",  
+        "addressLocality": "Yes body last consider despite. Put try get all center discussion or.",  
+        "addressRegion": "Half none call because. Nature young nature west. Summer price ask be force this.",  
+        "addressCountry": "Character very sometimes pay skin impact others. Traditional maybe half region change physical. City high blood where network manage series management.",  
+        "postalCode": "Change and prove green. Decision character away reality vote another ready them.",  
+        "postOfficeBoxNumber": "Movie modern maintain million type lot. Live speak middle structure not group."  
+    },  
+    "areaServed": "Quickly ten off behavior story laugh change.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Production coach five serve safe. Rest attention staff lay key expect. Decide suddenly represent watch.",  
-    "addressLocality": "Yes body last consider despite. Put try get all center discussion or.",  
-    "addressRegion": "Half none call because. Nature young nature west. Summer price ask be force this.",  
-    "addressCountry": "Character very sometimes pay skin impact others. Traditional maybe half region change physical. City high blood where network manage series management.",  
-    "postalCode": "Change and prove green. Decision character away reality vote another ready them.",  
-    "postOfficeBoxNumber": "Movie modern maintain million type lot. Live speak middle structure not group."  
-  },  
-  "areaServed": "Quickly ten off behavior story laugh change.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### ColourChroma NGSI-LD normalisiert Beispiel  
 Hier ist ein Beispiel für ein ColourChroma im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-LD kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:ColourChroma:id:XBCJ:78890788",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1983-04-11T03:39:24Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1993-03-06T19:48:24Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Believe rise company similar seven. Week network nice room whose. Worker treat statement former how direction. Have lead act write money."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Race enjoy see more will ball. Concern sign happen really. Yard senior scientist magazine country."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Send though firm usually. Laugh he paper building husband. Old push above rather."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Financial thing safe policy. Security ability remain act. House agreement side fast."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "School capital job worry radio full claim. Wall agree car new population red world note. Trip far environment talk."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:ColourChroma:items:QHKT:12885344",  
-      "urn:ngsi-ld:ColourChroma:items:EFGF:01514513"  
+    "id": "urn:ngsi-ld:ColourChroma:id:XBCJ:78890788",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1983-04-11T03:39:24Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1993-03-06T19:48:24Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Believe rise company similar seven. Week network nice room whose. Worker treat statement former how direction. Have lead act write money."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Race enjoy see more will ball. Concern sign happen really. Yard senior scientist magazine country."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Send though firm usually. Laugh he paper building husband. Old push above rather."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Financial thing safe policy. Security ability remain act. House agreement side fast."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "School capital job worry radio full claim. Wall agree car new population red world note. Trip far environment talk."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:ColourChroma:items:QHKT:12885344",  
+            "urn:ngsi-ld:ColourChroma:items:EFGF:01514513"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:ColourChroma:items:YLHX:20933403"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                23.189858,  
+                14.005876  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Radio interesting but fill suddenly.",  
+            "addressLocality": "Activity forward scene economy collection hope page here. Role box similar fine who last. Material center school throw today let executive.",  
+            "addressRegion": "Guy suggest task paper name hard. Research pull project weight young course land high.",  
+            "addressCountry": "Seek from shoulder read. Front later effect thus. Behavior until enjoy note meet interview.",  
+            "postalCode": "Outside white impact probably. Strategy different difference forward physical house become.",  
+            "postOfficeBoxNumber": "Police for send fine price for east. Note memory especially during family argue crime. Staff us nice strong."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Write form bank executive affect may above."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:ColourChroma:items:YLHX:20933403"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        23.189858,  
-        14.005876  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Radio interesting but fill suddenly.",  
-      "addressLocality": "Activity forward scene economy collection hope page here. Role box similar fine who last. Material center school throw today let executive.",  
-      "addressRegion": "Guy suggest task paper name hard. Research pull project weight young course land high.",  
-      "addressCountry": "Seek from shoulder read. Front later effect thus. Behavior until enjoy note meet interview.",  
-      "postalCode": "Outside white impact probably. Strategy different difference forward physical house become.",  
-      "postOfficeBoxNumber": "Police for send fine price for east. Note memory especially during family argue crime. Staff us nice strong."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Write form bank executive affect may above."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
