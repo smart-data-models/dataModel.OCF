@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entité : BodyWater  
-==================  
+==================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.OCF/blob/master/BodyWater/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Description globale : **Cette ressource décrit les propriétés associées à l'eau corporelle d'une personne.l'unité est une valeur unique qui est l'un des kg ou lb.si la propriété unité est manquante, la valeur par défaut est kilogrammes [kg].les propriétés bwater et unité sont des valeurs en lecture seule qui sont fournies par le serveur.lorsque la plage est omise, la valeur par défaut est 0 à +MAXFLOAT.**  
 version : 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `bwater`: L'eau du corps.  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `if`: L'ensemble des interfaces OCF supportées par cette ressource  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `n`: Nom amical de la ressource  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `precision`: Lorsqu'elle est exposée, la valeur de "précision" fournit une tolérance +/- par rapport aux propriétés de la ressource. Ainsi, si une propriété est mise à jour avec une valeur et que cette propriété est ensuite récupérée, la valeur récupérée est valide si elle se situe dans la plage de la valeur définie +/- la précision.  - `range`: La plage valide pour la propriété de la ressource sous forme de nombre. La première valeur du tableau est la valeur minimale, la deuxième valeur du tableau est la valeur maximale.  - `rt`: Type de ressource  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `step`: Valeur de pas sur la plage définie, un nombre entier lorsque la plage est un nombre.  Il s'agit de l'incrément pour les valeurs valides dans l'intervalle ; ainsi, si l'intervalle est de 0,0 à 10,0 et que le pas est de 2,5, les valeurs valides sont 0,0, 2,5, 5,0, 7,5 et 10,0.  - `type`: Type d'entité NGSI. Il doit s'agir de BodyWater  - `units`: Unité d'eau corporelle    
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour cet élément  - `areaServed[string]`: La zone géographique où un service ou un article offert est fourni  . Model: [https://schema.org/Text](https://schema.org/Text)- `bwater[number]`: L'eau du corps.  - `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified[string]`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description[string]`: Une description de cet article  - `id[*]`: Identifiant unique de l'entité  - `if[array]`: L'ensemble des interfaces OCF supportées par cette ressource  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `n[string]`: Nom amical de la ressource  - `name[string]`: Le nom de cet élément.  - `owner[array]`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `precision[number]`: Lorsqu'elle est exposée, la valeur de "précision" fournit une tolérance +/- par rapport aux propriétés de la ressource. Ainsi, si une propriété est mise à jour avec une valeur et que cette propriété est ensuite récupérée, la valeur récupérée est valide si elle se situe dans la plage de la valeur définie +/- la précision.  - `range[array]`: La plage valide pour la propriété de la ressource sous forme de nombre. La première valeur du tableau est la valeur minimale, la deuxième valeur du tableau est la valeur maximale.  - `rt[array]`: Type de ressource  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `step[number]`: Valeur de pas sur la plage définie, un nombre entier lorsque la plage est un nombre.  Il s'agit de l'incrément pour les valeurs valides dans l'intervalle ; ainsi, si l'intervalle est de 0,0 à 10,0 et que le pas est de 2,5, les valeurs valides sont 0,0, 2,5, 5,0, 7,5 et 10,0.  - `type[string]`: Type d'entité NGSI. Il doit s'agir de BodyWater  - `units[string]`: Unité d'eau corporelle  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propriétés requises  
-- `bwater`  - `id`  - `type`    
+- `bwater`  - `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Modèle de données adapté de l'original créé par l'Open Connectivity Foundation. Dépôt original dans https://github.com/openconnectivityfoundation/IoTDataModels  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 BodyWater:    
@@ -366,9 +379,14 @@ BodyWater:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Exemples de charges utiles  
 #### BodyWater NGSI-v2 key-values Exemple  
 Voici un exemple de BodyWater au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:BodyWater:id:MEJE:18514125",  
@@ -432,8 +450,10 @@ BodyWater:
   "type": "BodyWater"  
 }  
 ```  
+</details>  
 #### BodyWater NGSI-v2 normalisé Exemple  
 Voici un exemple de BodyWater au format JSON-LD tel que normalisé. Ce format est compatible avec la NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -565,194 +585,208 @@ BodyWater:
   }  
 }  
 ```  
+</details>  
 #### BodyWater NGSI-LD key-values Exemple  
 Voici un exemple de BodyWater au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-LD quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:BodyWater:id:MEJE:18514125",  
-  "dateCreated": "1997-04-10T16:39:09Z",  
-  "dateModified": "2019-05-10T20:10:20Z",  
-  "source": "Blue save design whose area church hit crime. Environmental environmental bill music heart finally. Few strong senior peace top book have.",  
-  "name": "Behind place every window. Become area between general plan.",  
-  "alternateName": "Large different eight collection room market society. Firm trouble live. Pattern concern employee movement. More religious beautiful moment serve Mrs.",  
-  "description": "Animal right local sound argue. Image employee deal final good economy continue.",  
-  "dataProvider": "Fish rather clearly power less crime. Appear hand science free.",  
-  "owner": [  
-    "urn:ngsi-ld:BodyWater:items:LMBU:67181228",  
-    "urn:ngsi-ld:BodyWater:items:MHGW:24811389"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:BodyWater:items:WKGV:03404439",  
-    "urn:ngsi-ld:BodyWater:items:IYRC:15142649"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -77.4914945,  
-      -21.70219  
+    "id": "urn:ngsi-ld:BodyWater:id:MEJE:18514125",  
+    "dateCreated": "1997-04-10T16:39:09Z",  
+    "dateModified": "2019-05-10T20:10:20Z",  
+    "source": "Blue save design whose area church hit crime. Environmental environmental bill music heart finally. Few strong senior peace top book have.",  
+    "name": "Behind place every window. Become area between general plan.",  
+    "alternateName": "Large different eight collection room market society. Firm trouble live. Pattern concern employee movement. More religious beautiful moment serve Mrs.",  
+    "description": "Animal right local sound argue. Image employee deal final good economy continue.",  
+    "dataProvider": "Fish rather clearly power less crime. Appear hand science free.",  
+    "owner": [  
+        "urn:ngsi-ld:BodyWater:items:LMBU:67181228",  
+        "urn:ngsi-ld:BodyWater:items:MHGW:24811389"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:BodyWater:items:WKGV:03404439",  
+        "urn:ngsi-ld:BodyWater:items:IYRC:15142649"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -77.4914945,  
+            -21.70219  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Memory easy difference. Onto stage purpose throw.",  
+        "addressLocality": "Way if because ground. Market this father road. Agency true someone hand dream film.",  
+        "addressRegion": "Recently consider most fall central stage. Other can land after.",  
+        "addressCountry": "Ask quite lot region us. Thought long majority. Item list fill ready claim.",  
+        "postalCode": "Affect adult find rule. They size focus response special.",  
+        "postOfficeBoxNumber": "Focus ok industry. Your trial identify until improve speech American practice. Stage what north on someone player physical current."  
+    },  
+    "areaServed": "Life three degree goal seat. Guess late today family movement form. Stop many air shoulder subject technology.",  
+    "rt": [  
+        "oic.r.body.water",  
+        "oic.r.body.water"  
+    ],  
+    "bwater": {  
+        "type": "Property",  
+        "value": 110.0  
+    },  
+    "units": "kg",  
+    "range": [  
+        117.8,  
+        516.3  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 424.7  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 730.5  
+    },  
+    "n": "Think can no natural too half protect production. Board force sport himself say. Fear former collection make on.",  
+    "if": [  
+        "oic.if.s",  
+        "oic.if.baseline"  
+    ],  
+    "type": "BodyWater",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Memory easy difference. Onto stage purpose throw.",  
-    "addressLocality": "Way if because ground. Market this father road. Agency true someone hand dream film.",  
-    "addressRegion": "Recently consider most fall central stage. Other can land after.",  
-    "addressCountry": "Ask quite lot region us. Thought long majority. Item list fill ready claim.",  
-    "postalCode": "Affect adult find rule. They size focus response special.",  
-    "postOfficeBoxNumber": "Focus ok industry. Your trial identify until improve speech American practice. Stage what north on someone player physical current."  
-  },  
-  "areaServed": "Life three degree goal seat. Guess late today family movement form. Stop many air shoulder subject technology.",  
-  "rt": [  
-    "oic.r.body.water",  
-    "oic.r.body.water"  
-  ],  
-  "bwater": {  
-    "type": "Property",  
-    "value": 110.0  
-  },  
-  "units": "kg",  
-  "range": [  
-    117.8,  
-    516.3  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 424.7  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 730.5  
-  },  
-  "n": "Think can no natural too half protect production. Board force sport himself say. Fear former collection make on.",  
-  "if": [  
-    "oic.if.s",  
-    "oic.if.baseline"  
-  ],  
-  "type": "BodyWater",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### BodyWater NGSI-LD normalisé Exemple  
 Voici un exemple de BodyWater au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:BodyWater:id:BVOV:66825399",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1982-05-18T07:17:49Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1974-02-21T12:36:24Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Lawyer risk doctor project answer them. Summer subject upon detail believe manager."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Without fight require. Country property hear. Thousand television miss understand."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Red our eye edge range. Chair box heavy source without."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Peace message attack great thousand visit read. Guy challenge language natural need. Suddenly may feel."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "List police heavy establish type. Create song region sign he benefit. Story wind message minute phone."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:BodyWater:items:NNZA:54978923",  
-      "urn:ngsi-ld:BodyWater:items:HMFG:01092209"  
+    "id": "urn:ngsi-ld:BodyWater:id:BVOV:66825399",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1982-05-18T07:17:49Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1974-02-21T12:36:24Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Lawyer risk doctor project answer them. Summer subject upon detail believe manager."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Without fight require. Country property hear. Thousand television miss understand."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Red our eye edge range. Chair box heavy source without."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Peace message attack great thousand visit read. Guy challenge language natural need. Suddenly may feel."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "List police heavy establish type. Create song region sign he benefit. Story wind message minute phone."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:BodyWater:items:NNZA:54978923",  
+            "urn:ngsi-ld:BodyWater:items:HMFG:01092209"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:BodyWater:items:YEXG:25411046"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -6.6273955,  
+                -90.098469  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Shake address agency could perform carry. Hundred until wide new make garden. Police identify girl second charge.",  
+            "addressLocality": "Lay natural go federal store present. Baby themselves stop program yes growth top.",  
+            "addressRegion": "Head score rest. Work southern response build middle particular ball. Service may laugh artist budget.",  
+            "addressCountry": "Painting hot senior expert father part play son.",  
+            "postalCode": "Field cold card. Career one left factor weight technology buy. Establish institution network car.",  
+            "postOfficeBoxNumber": "Performance ground phone discussion. Pass notice he include position able do. Property medical us quite time."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Ask young stuff wear big nothing factor my. Hold real win number."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.body.water"  
+        ]  
+    },  
+    "bwater": {  
+        "type": "Property",  
+        "value": 659.2  
+    },  
+    "units": {  
+        "type": "Property",  
+        "value": "lb"  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            603.5,  
+            483.9  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 70.0  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 404.2  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Sort maintain talk mission hair. Professional wall interest friend. Authority road cup education movie wait. All concern medical get traditional Mr year involve."  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "BodyWater",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:BodyWater:items:YEXG:25411046"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -6.6273955,  
-        -90.098469  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Shake address agency could perform carry. Hundred until wide new make garden. Police identify girl second charge.",  
-      "addressLocality": "Lay natural go federal store present. Baby themselves stop program yes growth top.",  
-      "addressRegion": "Head score rest. Work southern response build middle particular ball. Service may laugh artist budget.",  
-      "addressCountry": "Painting hot senior expert father part play son.",  
-      "postalCode": "Field cold card. Career one left factor weight technology buy. Establish institution network car.",  
-      "postOfficeBoxNumber": "Performance ground phone discussion. Pass notice he include position able do. Property medical us quite time."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Ask young stuff wear big nothing factor my. Hold real win number."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.body.water"  
-    ]  
-  },  
-  "bwater": {  
-    "type": "Property",  
-    "value": 659.2  
-  },  
-  "units": {  
-    "type": "Property",  
-    "value": "lb"  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      603.5,  
-      483.9  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 70.0  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 404.2  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Sort maintain talk mission hair. Professional wall interest friend. Authority road cup education movie wait. All concern medical get traditional Mr year involve."  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "type": "BodyWater",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
