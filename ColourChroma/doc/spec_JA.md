@@ -1,17 +1,32 @@
-エンティティカラークロマ  
-============  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティカラークロマ  
+============<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/ColourChroma/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな説明です。**IoTDataのデータモデルをスマートデータモデルプログラムで実現したものです。このResourceは、chroma conventionを使用して色を記述する。プロパティは、'hue', 'saturation', 'scsc', 'ct'である。プロパティ「hue」は色相角であり、CIECAM02のモデル定義（参考文献[CIE CIE159:2004]参照）で定義された整数値である。プロパティ「彩度」はCIECAM02のモデル定義（参考文献[CIE CIE159:2004]）に従った整数値です。プロパティ「maxsaturation」はデバイスがサポートする飽和度の上限値です。存在しない場合、「saturation」の最大値は32767です。プロパティ「ccc」は、CIEカラースペースの色空間座標です。   配列の最初の項目はX座標です。   配列の2番目の項目はY座標です。プロパティ「nct」は、Mired色温度です。リソースは、クロマコンベンションを使用して色を提供します。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**IoTData のデータモデルをスマートデータモデルプログラムに適応させたもの。この Resource は、色相の規格を使用して色を記述する。プロパティは 'hue', 'saturation', 'csc', 'ct'である。Property 'hue' は色相角であり、CIECAM02モデル定義（参考文献[CIE CIE159:2004]参照）に従った整数値である。Property 'saturation'はCIECAM02のモデル定義に従った整数値である(参考文献[CIE CIE159:2004]参照)。Property 'maxsaturation'は、Device がサポートする飽和度の上限値である。存在しない場合、'saturation'の最大値は32767である。Property 'csc' は、CIE 色空間における色空間座標である。   配列の最初の項目は X 座標です。   配列の 2 番目の項目は Y 座標です。Property 'nct' はミレッド色温度です。Resource は、クロマ規格に従った色を提供します**。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `csc`: CIE色空間における色のXおよびY座標  - `ct`: Miredの色温度。  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `hue`: CIECAM02のモデル定義で定義されている色相の角度。  - `id`: エンティティのユニークな識別子  - `if`: このResourceがサポートしているOCF Interface set。  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `maximumsaturation`: このデバイスでサポートされている「saturation」の最大値です。  - `n`: リソースのフレンドリーネーム  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `rt`: The Resource Type。  - `saturation`: CIECAM02のモデル定義で定められた飽和度。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSIエンティティタイプ。これはColourChromaでなければならない。    
-必須項目  
-- `id`  - `type`    
-このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)から来ています。NGSIの要件に適合するように拡張されています。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `csc[array]`: CIE色空間における色のX座標とY座標  - `ct[integer]`: ミレッドの色温度。  - `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `hue[number]`: CIECAM02のモデル定義で定義された色相角。  - `id[*]`: エンティティの一意な識別子  - `if[array]`: このResourceがサポートするOCF Interfaceセット。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `maximumsaturation[integer]`: このデバイスでサポートされる'saturation'の最大値。  - `n[string]`: リソースのフレンドリ名  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `rt[array]`: リソースタイプです。  - `saturation[integer]`: CIECAM02のモデル定義による飽和度です。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSIエンティティタイプ。ColourChromaでなければならない。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)に由来しています。NGSIの要件に適合するように拡張されている。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ColourChroma:    
@@ -363,9 +378,14 @@ ColourChroma:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### ColourChroma NGSI-v2 key-values 例  
-ここでは、ColourChromaをJSON-LD形式でkey-valuesとして表現した例を紹介します。これは、`options=keyValues`を使った場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### ColourChroma NGSI-v2 key-value の例。  
+以下は、ColourChromaをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用したときにNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:ColourChroma:id:KXUY:75560351",  
@@ -402,8 +422,10 @@ ColourChroma:
   "areaServed": "Quickly ten off behavior story laugh change."  
 }  
 ```  
+</details>  
 #### ColourChroma NGSI-v2 正規化例  
-ここでは、正規化されたJSON-LD形式のColourChromaの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、ColourChromaをJSON-LD形式で正規化した例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -481,127 +503,141 @@ ColourChroma:
   }  
 }  
 ```  
-#### ColourChroma NGSI-LD key-values 例  
-ここでは、ColourChromaをJSON-LD形式でkey-valuesとして表現した例を紹介します。これは、`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### ColourChroma NGSI-LD key-value 例  
+以下は、ColourChromaをJSON-LD形式でkey-valuesにした例です。これは `options=keyValues` を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:ColourChroma:id:KXUY:75560351",  
-  "dateCreated": "2012-06-16T11:21:50Z",  
-  "dateModified": "1995-10-29T01:15:24Z",  
-  "source": "Evening building state. Receive edge management pass recognize information nothing. Dog run thousand newspaper want hear each down. Letter north ground protect.",  
-  "name": "Everything live maintain but wonder effect finish. Five per turn admit amount. Involve style available.",  
-  "alternateName": "Rather fire rate try behind medical leader. I imagine five movement. Up occur weight south.",  
-  "description": "Theory peace skill red pretty subject story. Have think hundred foot. Turn information there Republican participant ready population.",  
-  "dataProvider": "These writer dog travel will base public. Thousand responsibility risk organization operation plant truth. Finish defense together gun. Voice soon long institution.",  
-  "owner": [  
-    "urn:ngsi-ld:ColourChroma:items:PBMH:06259714",  
-    "urn:ngsi-ld:ColourChroma:items:EGFN:24379609"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:ColourChroma:items:NZIB:01052551",  
-    "urn:ngsi-ld:ColourChroma:items:GVUJ:91800255"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      6.6581095,  
-      163.113571  
+    "id": "urn:ngsi-ld:ColourChroma:id:KXUY:75560351",  
+    "dateCreated": "2012-06-16T11:21:50Z",  
+    "dateModified": "1995-10-29T01:15:24Z",  
+    "source": "Evening building state. Receive edge management pass recognize information nothing. Dog run thousand newspaper want hear each down. Letter north ground protect.",  
+    "name": "Everything live maintain but wonder effect finish. Five per turn admit amount. Involve style available.",  
+    "alternateName": "Rather fire rate try behind medical leader. I imagine five movement. Up occur weight south.",  
+    "description": "Theory peace skill red pretty subject story. Have think hundred foot. Turn information there Republican participant ready population.",  
+    "dataProvider": "These writer dog travel will base public. Thousand responsibility risk organization operation plant truth. Finish defense together gun. Voice soon long institution.",  
+    "owner": [  
+        "urn:ngsi-ld:ColourChroma:items:PBMH:06259714",  
+        "urn:ngsi-ld:ColourChroma:items:EGFN:24379609"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:ColourChroma:items:NZIB:01052551",  
+        "urn:ngsi-ld:ColourChroma:items:GVUJ:91800255"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            6.6581095,  
+            163.113571  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Production coach five serve safe. Rest attention staff lay key expect. Decide suddenly represent watch.",  
+        "addressLocality": "Yes body last consider despite. Put try get all center discussion or.",  
+        "addressRegion": "Half none call because. Nature young nature west. Summer price ask be force this.",  
+        "addressCountry": "Character very sometimes pay skin impact others. Traditional maybe half region change physical. City high blood where network manage series management.",  
+        "postalCode": "Change and prove green. Decision character away reality vote another ready them.",  
+        "postOfficeBoxNumber": "Movie modern maintain million type lot. Live speak middle structure not group."  
+    },  
+    "areaServed": "Quickly ten off behavior story laugh change.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Production coach five serve safe. Rest attention staff lay key expect. Decide suddenly represent watch.",  
-    "addressLocality": "Yes body last consider despite. Put try get all center discussion or.",  
-    "addressRegion": "Half none call because. Nature young nature west. Summer price ask be force this.",  
-    "addressCountry": "Character very sometimes pay skin impact others. Traditional maybe half region change physical. City high blood where network manage series management.",  
-    "postalCode": "Change and prove green. Decision character away reality vote another ready them.",  
-    "postOfficeBoxNumber": "Movie modern maintain million type lot. Live speak middle structure not group."  
-  },  
-  "areaServed": "Quickly ten off behavior story laugh change.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-#### ColourChroma NGSI-LDの正規化例  
-ここでは、正規化されたJSON-LD形式のColourChromaの例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### ColourChroma NGSI-LD 正規化例  
+以下は、ColourChromaをJSON-LD形式で正規化した例である。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:ColourChroma:id:XBCJ:78890788",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1983-04-11T03:39:24Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1993-03-06T19:48:24Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Believe rise company similar seven. Week network nice room whose. Worker treat statement former how direction. Have lead act write money."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Race enjoy see more will ball. Concern sign happen really. Yard senior scientist magazine country."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Send though firm usually. Laugh he paper building husband. Old push above rather."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Financial thing safe policy. Security ability remain act. House agreement side fast."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "School capital job worry radio full claim. Wall agree car new population red world note. Trip far environment talk."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:ColourChroma:items:QHKT:12885344",  
-      "urn:ngsi-ld:ColourChroma:items:EFGF:01514513"  
+    "id": "urn:ngsi-ld:ColourChroma:id:XBCJ:78890788",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1983-04-11T03:39:24Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1993-03-06T19:48:24Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Believe rise company similar seven. Week network nice room whose. Worker treat statement former how direction. Have lead act write money."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Race enjoy see more will ball. Concern sign happen really. Yard senior scientist magazine country."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Send though firm usually. Laugh he paper building husband. Old push above rather."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Financial thing safe policy. Security ability remain act. House agreement side fast."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "School capital job worry radio full claim. Wall agree car new population red world note. Trip far environment talk."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:ColourChroma:items:QHKT:12885344",  
+            "urn:ngsi-ld:ColourChroma:items:EFGF:01514513"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:ColourChroma:items:YLHX:20933403"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                23.189858,  
+                14.005876  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Radio interesting but fill suddenly.",  
+            "addressLocality": "Activity forward scene economy collection hope page here. Role box similar fine who last. Material center school throw today let executive.",  
+            "addressRegion": "Guy suggest task paper name hard. Research pull project weight young course land high.",  
+            "addressCountry": "Seek from shoulder read. Front later effect thus. Behavior until enjoy note meet interview.",  
+            "postalCode": "Outside white impact probably. Strategy different difference forward physical house become.",  
+            "postOfficeBoxNumber": "Police for send fine price for east. Note memory especially during family argue crime. Staff us nice strong."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Write form bank executive affect may above."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:ColourChroma:items:YLHX:20933403"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        23.189858,  
-        14.005876  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Radio interesting but fill suddenly.",  
-      "addressLocality": "Activity forward scene economy collection hope page here. Role box similar fine who last. Material center school throw today let executive.",  
-      "addressRegion": "Guy suggest task paper name hard. Research pull project weight young course land high.",  
-      "addressCountry": "Seek from shoulder read. Front later effect thus. Behavior until enjoy note meet interview.",  
-      "postalCode": "Outside white impact probably. Strategy different difference forward physical house become.",  
-      "postOfficeBoxNumber": "Police for send fine price for east. Note memory especially during family argue crime. Staff us nice strong."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Write form bank executive affect may above."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
