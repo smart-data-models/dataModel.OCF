@@ -1,17 +1,32 @@
-Entità: pulsatileoccurrence  
-===========================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entità: occorrenza pulsatile  
+============================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.OCF/blob/master/pulsatileoccurrence/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Adattamento del programma Smart Data Models dei modelli di dati originali IoTData. Questa risorsa descrive le proprietà associate a un'occorrenza pulsatile rilevata da un pulsossimetro.  La proprietà occurrence è un valore di sola lettura fornito dal server.  Quando l'intervallo (da 'oic.r.baseresource') è omesso il valore predefinito è da 0 a +MAXFLOAT.**  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **Adattamento del programma Smart Data Models dei modelli di dati IoTData originali. Questa risorsa descrive le proprietà associate a un'occorrenza pulsatile rilevata da un pulsossimetro.  La proprietà dell'evento è un valore di sola lettura fornito dal server.  Quando l'intervallo (da 'oic.r.baseresource') è omesso, l'impostazione predefinita è da 0 a +MAXFLOAT.**  
+versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `id`: Identificatore unico dell'entità  - `if`: L'insieme di interfacce OCF supportato da questa risorsa.  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n`: Nome amichevole della risorsa  - `name`: Il nome di questo articolo.  - `occurrence`: Questa proprietà descrive l'occorrenza pulsatile rilevata da un pulsossimetro. BEAT - Si è verificata un'occorrenza pulsatile. BEAT_MAX_INRUSH - Si è verificato l'ingresso massimo dell'onda pulsatile. NOS - Non si è verificato alcun evento pulsatile.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `rt`: Il tipo di risorsa.  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `type`: Tipo di entità NGSI. Deve essere pulsatileoccorrenza    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `if[array]`: Il set di interfacce OCF supportato da questa risorsa.  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `n[string]`: Nome amichevole della risorsa  - `name[string]`: Il nome di questo elemento.  - `occurrence[string]`: Questa proprietà descrive l'evento pulsatile rilevato da un pulsossimetro. BEAT - Si è verificato un evento pulsatile. BEAT_MAX_INRUSH - Si è verificato l'inrush massimo dell'onda pulsatile. NOS - Non si è verificato alcun evento pulsatile.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `rt[array]`: Il tipo di risorsa.  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `type[string]`: Tipo di entità NGSI. Deve essere pulsatileoccurrence  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- `id`  - `type`    
-Questo modello di dati proviene dall'originale [Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels). È stato esteso per soddisfare i requisiti di NGSI.  
-## Descrizione del modello di dati delle proprietà  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+Questo modello di dati proviene dal repository originale della [Open Connectivity Foundation] (https://github.com/openconnectivityfoundation/IoTDataModels). È stato esteso per soddisfare i requisiti NGSI.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 pulsatileoccurrence:    
@@ -333,9 +348,14 @@ pulsatileoccurrence:
   x-version: 0.0.1    
 ```  
 </details>    
-## Esempio di payloads  
-#### pulsatileoccurrence NGSI-v2 valori chiave Esempio  
-Qui c'è un esempio di pulsatileoccurrence in formato JSON-LD come key-values. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
+#### pulsatileoccorrenza Valori chiave NGSI-v2 Esempio  
+Ecco un esempio di un'occorrenza pulsatile in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:pulsatileoccurrence:id:BTYL:28394004",  
@@ -372,8 +392,10 @@ pulsatileoccurrence:
   "areaServed": "Drug leg left sometimes yard. Friend themselves police him. Resource daughter approach."  
 }  
 ```  
-#### pulsazioni NGSI-v2 normalizzate Esempio  
-Qui c'è un esempio di un pulsatileoccurrence in formato JSON-LD come normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### pulsatilità NGSI-v2 normalizzato Esempio  
+Ecco un esempio di un'occorrenza pulsatile in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano le opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -451,127 +473,141 @@ pulsatileoccurrence:
   }  
 }  
 ```  
-#### pulsatileoccurrence NGSI-LD key-values Esempio  
-Qui c'è un esempio di pulsatileoccurrence in formato JSON-LD come key-values. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### pulsatileoccorrenza Valori-chiave NGSI-LD Esempio  
+Ecco un esempio di un'occorrenza pulsatile in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:pulsatileoccurrence:id:BTYL:28394004",  
-  "dateCreated": "1970-12-13T02:13:10Z",  
-  "dateModified": "1982-12-01T06:24:27Z",  
-  "source": "List international it production guy car great commercial. Paper structure several knowledge author. Improve especially term because allow eye.",  
-  "name": "Black section edge father read prepare find. Cell respond front girl. Energy research occur effect. Animal huge during may sing education major.",  
-  "alternateName": "Where class sure approach number maintain air. Water return hard less.",  
-  "description": "Feel big almost hospital happy. Production develop would investment.",  
-  "dataProvider": "Majority land read figure year. Everybody behind rule director shoulder even matter. Animal side participant writer break.",  
-  "owner": [  
-    "urn:ngsi-ld:pulsatileoccurrence:items:GOVI:81693831",  
-    "urn:ngsi-ld:pulsatileoccurrence:items:VYPK:21819237"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:pulsatileoccurrence:items:BDJU:07700056",  
-    "urn:ngsi-ld:pulsatileoccurrence:items:FRUZ:41836023"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -67.0955035,  
-      122.088537  
+    "id": "urn:ngsi-ld:pulsatileoccurrence:id:BTYL:28394004",  
+    "dateCreated": "1970-12-13T02:13:10Z",  
+    "dateModified": "1982-12-01T06:24:27Z",  
+    "source": "List international it production guy car great commercial. Paper structure several knowledge author. Improve especially term because allow eye.",  
+    "name": "Black section edge father read prepare find. Cell respond front girl. Energy research occur effect. Animal huge during may sing education major.",  
+    "alternateName": "Where class sure approach number maintain air. Water return hard less.",  
+    "description": "Feel big almost hospital happy. Production develop would investment.",  
+    "dataProvider": "Majority land read figure year. Everybody behind rule director shoulder even matter. Animal side participant writer break.",  
+    "owner": [  
+        "urn:ngsi-ld:pulsatileoccurrence:items:GOVI:81693831",  
+        "urn:ngsi-ld:pulsatileoccurrence:items:VYPK:21819237"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:pulsatileoccurrence:items:BDJU:07700056",  
+        "urn:ngsi-ld:pulsatileoccurrence:items:FRUZ:41836023"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -67.0955035,  
+            122.088537  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Eye writer enough. Morning other law blood production technology least. Feel all present mention.",  
+        "addressLocality": "Through boy machine. Him kitchen record shake.",  
+        "addressRegion": "Process matter pull. Loss performance ten six information go. Life source entire.",  
+        "addressCountry": "Set view study suffer. Water it air mention create life trip.",  
+        "postalCode": "Game long despite hard among. Television wait suffer professional support trial. At record wonder understand popular majority.",  
+        "postOfficeBoxNumber": "Wish source lead production. Recently owner choose loss card bit. Matter always artist different."  
+    },  
+    "areaServed": "Drug leg left sometimes yard. Friend themselves police him. Resource daughter approach.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Eye writer enough. Morning other law blood production technology least. Feel all present mention.",  
-    "addressLocality": "Through boy machine. Him kitchen record shake.",  
-    "addressRegion": "Process matter pull. Loss performance ten six information go. Life source entire.",  
-    "addressCountry": "Set view study suffer. Water it air mention create life trip.",  
-    "postalCode": "Game long despite hard among. Television wait suffer professional support trial. At record wonder understand popular majority.",  
-    "postOfficeBoxNumber": "Wish source lead production. Recently owner choose loss card bit. Matter always artist different."  
-  },  
-  "areaServed": "Drug leg left sometimes yard. Friend themselves police him. Resource daughter approach.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-#### pulsazioni NGSI-LD normalizzate Esempio  
-Qui c'è un esempio di un pulsatileoccurrence in formato JSON-LD come normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### pulsatilità NGSI-LD normalizzato Esempio  
+Ecco un esempio di un'occorrenza pulsatile in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano le opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:pulsatileoccurrence:id:JXKM:10085961",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1973-08-13T08:16:10Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2004-05-22T12:35:08Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Way along follow seek health huge off. Radio week probably. Article Mrs act interesting hope general."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Modern while almost tough. Sing senior begin one bag anyone fear significant. Production suggest education."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Task specific report medical young involve here. Be color actually. Cell cut administration never involve."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Address not money instead. Significant defense cultural shake capital look garden. Through opportunity little."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Oil coach return sell."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:pulsatileoccurrence:items:QYAO:25171235",  
-      "urn:ngsi-ld:pulsatileoccurrence:items:KAAU:74482349"  
+    "id": "urn:ngsi-ld:pulsatileoccurrence:id:JXKM:10085961",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1973-08-13T08:16:10Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2004-05-22T12:35:08Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Way along follow seek health huge off. Radio week probably. Article Mrs act interesting hope general."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Modern while almost tough. Sing senior begin one bag anyone fear significant. Production suggest education."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Task specific report medical young involve here. Be color actually. Cell cut administration never involve."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Address not money instead. Significant defense cultural shake capital look garden. Through opportunity little."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Oil coach return sell."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:pulsatileoccurrence:items:QYAO:25171235",  
+            "urn:ngsi-ld:pulsatileoccurrence:items:KAAU:74482349"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:pulsatileoccurrence:items:XWNX:63745482"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -78.4305215,  
+                -176.821541  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Study four sister live around message. Become fish bad others yard. Artist up cup learn blood.",  
+            "addressLocality": "Read prevent specific hotel adult mean. Agree first modern alone song person college indeed.",  
+            "addressRegion": "News news identify wall. Ask happen respond entire science during. History last ten week accept last spend.",  
+            "addressCountry": "Wrong race policy whether cup maintain news foot. Reflect teacher which. Mouth beyond result beyond eye nice reach.",  
+            "postalCode": "Seven expert skin it local western. Follow response nation interesting instead summer. Price commercial improve professional hope grow. Inside with suddenly culture even.",  
+            "postOfficeBoxNumber": "During air least seat. Dream ago drop my firm."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Local own article enough serve wrong gun. Treatment seem data radio whole much against."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:pulsatileoccurrence:items:XWNX:63745482"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -78.4305215,  
-        -176.821541  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Study four sister live around message. Become fish bad others yard. Artist up cup learn blood.",  
-      "addressLocality": "Read prevent specific hotel adult mean. Agree first modern alone song person college indeed.",  
-      "addressRegion": "News news identify wall. Ask happen respond entire science during. History last ten week accept last spend.",  
-      "addressCountry": "Wrong race policy whether cup maintain news foot. Reflect teacher which. Mouth beyond result beyond eye nice reach.",  
-      "postalCode": "Seven expert skin it local western. Follow response nation interesting instead summer. Price commercial improve professional hope grow. Inside with suddenly culture even.",  
-      "postOfficeBoxNumber": "During air least seat. Dream ago drop my firm."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Local own article enough serve wrong gun. Treatment seem data radio whole much against."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
