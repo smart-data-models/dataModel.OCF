@@ -1,17 +1,32 @@
-Entidad: Radiación UV  
-=====================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entidad: Radiación UV  
+=====================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.OCF/blob/master/UVRadiation/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Descripción global: **Adaptación del programa de modelos de datos inteligentes de los modelos de datos originales de IoTData. Este recurso especifica la medición de la radiación UV. La propiedad "medición" es el índice UV medido actualmente**.  
+versión: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `if`: El conjunto de interfaces OCF que admite este recurso.  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `measurement`: El índice UV medido.  - `n`: Nombre amistoso del recurso  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `rt`: El tipo de recurso.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type`: Tipo de entidad NGSI. Tiene que ser UVRadiation    
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>  
+- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Una descripción de este artículo  - `id[*]`: Identificador único de la entidad  - `if[array]`: El conjunto de interfaces OCF que admite este recurso.  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `measurement[number]`: El índice UV medido.  - `n[string]`: Nombre amigable del Recurso  - `name[string]`: El nombre de este artículo.  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `rt[array]`: El tipo de recurso.  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type[string]`: Tipo de entidad NGSI. Tiene que ser UVRadiation  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propiedades requeridas  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Este modelo de datos procede del original [repositorio de la Open Connectivity Foundation](https://github.com/openconnectivityfoundation/IoTDataModels). Se ha ampliado para cumplir con los requisitos de la NGSI.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 UVRadiation:    
@@ -329,9 +344,14 @@ UVRadiation:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Ejemplo de carga útil  
 #### UVRadiation NGSI-v2 key-values Ejemplo  
 Aquí hay un ejemplo de una UVRadiation en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:UVRadiation:id:DVPN:03447085",  
@@ -368,8 +388,10 @@ UVRadiation:
   "areaServed": "Eight wait table discover career involve include."  
 }  
 ```  
+</details>  
 #### UVRadiation NGSI-v2 normalizado Ejemplo  
 He aquí un ejemplo de una UVRadiation en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -447,127 +469,141 @@ UVRadiation:
   }  
 }  
 ```  
+</details>  
 #### UVRadiation NGSI-LD key-values Ejemplo  
 Aquí hay un ejemplo de una UVRadiation en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:UVRadiation:id:DVPN:03447085",  
-  "dateCreated": "1998-04-20T02:40:35Z",  
-  "dateModified": "1999-07-19T23:12:20Z",  
-  "source": "Somebody debate picture direction. Off part machine face. Head high out.",  
-  "name": "Security less security suggest fall point buy catch. Mouth show cultural continue pressure sell away.",  
-  "alternateName": "Everyone exactly under cost. Chance take agent light contain.",  
-  "description": "Free should name serve about. Despite box visit off cost. Great affect whose so sea particularly brother.",  
-  "dataProvider": "Baby reduce well state myself establish glass. Model wall store reality management simply.",  
-  "owner": [  
-    "urn:ngsi-ld:UVRadiation:items:ZXLC:95274945",  
-    "urn:ngsi-ld:UVRadiation:items:QOZS:96467115"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:UVRadiation:items:GYGW:54600384",  
-    "urn:ngsi-ld:UVRadiation:items:MRRI:23547865"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      15.0318265,  
-      -2.234148  
+    "id": "urn:ngsi-ld:UVRadiation:id:DVPN:03447085",  
+    "dateCreated": "1998-04-20T02:40:35Z",  
+    "dateModified": "1999-07-19T23:12:20Z",  
+    "source": "Somebody debate picture direction. Off part machine face. Head high out.",  
+    "name": "Security less security suggest fall point buy catch. Mouth show cultural continue pressure sell away.",  
+    "alternateName": "Everyone exactly under cost. Chance take agent light contain.",  
+    "description": "Free should name serve about. Despite box visit off cost. Great affect whose so sea particularly brother.",  
+    "dataProvider": "Baby reduce well state myself establish glass. Model wall store reality management simply.",  
+    "owner": [  
+        "urn:ngsi-ld:UVRadiation:items:ZXLC:95274945",  
+        "urn:ngsi-ld:UVRadiation:items:QOZS:96467115"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:UVRadiation:items:GYGW:54600384",  
+        "urn:ngsi-ld:UVRadiation:items:MRRI:23547865"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            15.0318265,  
+            -2.234148  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Food why situation many prove while put. Early star person traditional picture fight owner. Senior may tell room decide.",  
+        "addressLocality": "Clear matter enjoy us them general reach. While head second politics investment read. Yes model determine various power rest goal pass.",  
+        "addressRegion": "Then house resource resource information wide. Team those notice south.",  
+        "addressCountry": "Wind recent and wife pull. Analysis several bed attack activity amount job. Whatever short science least tend imagine.",  
+        "postalCode": "Shake character leave candidate. Way next else power anything.",  
+        "postOfficeBoxNumber": "Threat nearly until why season. Administration add parent scene. Choice back effort law."  
+    },  
+    "areaServed": "Eight wait table discover career involve include.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Food why situation many prove while put. Early star person traditional picture fight owner. Senior may tell room decide.",  
-    "addressLocality": "Clear matter enjoy us them general reach. While head second politics investment read. Yes model determine various power rest goal pass.",  
-    "addressRegion": "Then house resource resource information wide. Team those notice south.",  
-    "addressCountry": "Wind recent and wife pull. Analysis several bed attack activity amount job. Whatever short science least tend imagine.",  
-    "postalCode": "Shake character leave candidate. Way next else power anything.",  
-    "postOfficeBoxNumber": "Threat nearly until why season. Administration add parent scene. Choice back effort law."  
-  },  
-  "areaServed": "Eight wait table discover career involve include.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### Radiación UV NGSI-LD normalizada Ejemplo  
 He aquí un ejemplo de una UVRadiation en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:UVRadiation:id:PEWM:60646471",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1987-07-16T01:21:36Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1995-03-03T21:14:27Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Card like inside trade under alone. Child at case fund once them. Name history key."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "In view gas day wish modern best. Behavior relate two throughout wish."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Answer area plant industry place see eye establish. Great knowledge realize hit black sport some. Consider fund tough."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Marriage score meet couple want other range product. Cup speech magazine evidence reflect table region."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Institution theory color food. Watch development song response father. All director even beyond ball notice."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:UVRadiation:items:NKVI:91989787",  
-      "urn:ngsi-ld:UVRadiation:items:LSHP:80197913"  
+    "id": "urn:ngsi-ld:UVRadiation:id:PEWM:60646471",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1987-07-16T01:21:36Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1995-03-03T21:14:27Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Card like inside trade under alone. Child at case fund once them. Name history key."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "In view gas day wish modern best. Behavior relate two throughout wish."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Answer area plant industry place see eye establish. Great knowledge realize hit black sport some. Consider fund tough."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Marriage score meet couple want other range product. Cup speech magazine evidence reflect table region."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Institution theory color food. Watch development song response father. All director even beyond ball notice."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:UVRadiation:items:NKVI:91989787",  
+            "urn:ngsi-ld:UVRadiation:items:LSHP:80197913"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:UVRadiation:items:YMZK:32241450"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -39.509289,  
+                -160.12506  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Doctor simply scientist modern chair. Power claim remain before bad few. Word could quite.",  
+            "addressLocality": "Increase society somebody major simple special. Operation hold evidence trial choose.",  
+            "addressRegion": "Method manage Mr arm style unit charge. Their usually why treatment bed tree.",  
+            "addressCountry": "Them then movie no while. Herself film window event single data. Hope member go under heavy fill hotel.",  
+            "postalCode": "Little ability several drive plan three. Democrat very chair second our white significant. Party city question lawyer check within enjoy mission. Discuss pull officer relate hair bit wonder.",  
+            "postOfficeBoxNumber": "Region heart support. Perform once catch professional score front international today. Congress itself culture federal budget agree painting."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Ask material lawyer southern need billion. Power guy happen heart far."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:UVRadiation:items:YMZK:32241450"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -39.509289,  
-        -160.12506  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Doctor simply scientist modern chair. Power claim remain before bad few. Word could quite.",  
-      "addressLocality": "Increase society somebody major simple special. Operation hold evidence trial choose.",  
-      "addressRegion": "Method manage Mr arm style unit charge. Their usually why treatment bed tree.",  
-      "addressCountry": "Them then movie no while. Herself film window event single data. Hope member go under heavy fill hotel.",  
-      "postalCode": "Little ability several drive plan three. Democrat very chair second our white significant. Party city question lawyer check within enjoy mission. Discuss pull officer relate hair bit wonder.",  
-      "postOfficeBoxNumber": "Region heart support. Perform once catch professional score front international today. Congress itself culture federal budget agree painting."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Ask material lawyer southern need billion. Power guy happen heart far."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
