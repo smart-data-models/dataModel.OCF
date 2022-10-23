@@ -1,17 +1,32 @@
-Entidad: Puerta  
-===============  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entidad: Puerta  
+===============<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.OCF/blob/master/Door/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Descripción global: **Adaptación del programa de modelos de datos inteligentes de los modelos de datos originales de IoTData. Este Recurso describe el estado de apertura de la puerta. Una puerta se modela mediante openState (Abierto/Cerrado), openDuration (Tiempo ISO 8601) y openAlarm (booleano). Para la propiedad 'openState', el valor 'Open' indica que la puerta está abierta. El valor "Closed" indica que la puerta está cerrada. El tipo de Propiedad 'openDuration' es una cadena codificada en tiempo RFC. La Propiedad 'openAlarm' valor 'true' indica que la alarma de apertura está activa. El valor 'openAlarm' 'false' indica que la alarma de apertura no está activa. recupera el estado de la Puerta.**  
+versión: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `if`: El conjunto de interfaces OCF que admite este recurso.  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n`: Nombre amistoso del recurso  - `name`: El nombre de este artículo.  - `openAlarm`: El estado de la alarma de puerta abierta.  - `openDuration`: Una cadena que representa la duración con el formato definido en la norma ISO 8601. Los formatos permitidos son: P[n]Y[n]M[n]DT[n]H[n]M[n]S, P[n]W, P[n]Y[n]-M[n]-DT[0-23]H[0-59]:M[0-59]:S, y P[n]W, P[n]Y[n]M[n]DT[0-23]H[0-59]M[0-59]S. P es obligatorio, todos los demás elementos son opcionales, los elementos de tiempo deben seguir a T.  - `openState`: El estado de la puerta (abierta o cerrada).  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `rt`: El tipo de recurso.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type`: Tipo de entidad NGSI. Tiene que ser Puerta    
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>  
+- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Una descripción de este artículo  - `id[*]`: Identificador único de la entidad  - `if[array]`: El conjunto de interfaces OCF que admite este recurso.  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n[string]`: Nombre amigable del Recurso  - `name[string]`: El nombre de este artículo.  - `openAlarm[boolean]`: El estado de la alarma de puerta abierta.  - `openDuration[string]`: Una cadena que representa la duración con el formato definido en la norma ISO 8601. Los formatos permitidos son: P[n]Y[n]M[n]DT[n]H[n]M[n]S, P[n]W, P[n]Y[n]-M[n]-DT[0-23]H[0-59]:M[0-59]:S, y P[n]W, P[n]Y[n]M[n]DT[0-23]H[0-59]M[0-59]S. P es obligatorio, todos los demás elementos son opcionales, los elementos de tiempo deben seguir a T.  - `openState[string]`: El estado de la puerta (abierta o cerrada).  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `rt[array]`: El tipo de recurso.  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type[string]`: Tipo de entidad NGSI. Tiene que ser Puerta  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propiedades requeridas  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Este modelo de datos procede del original [repositorio de la Open Connectivity Foundation](https://github.com/openconnectivityfoundation/IoTDataModels). Se ha ampliado para cumplir con los requisitos de la NGSI.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Door:    
@@ -343,9 +358,14 @@ Door:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Ejemplo de carga útil  
 #### Puerta NGSI-v2 valores-clave Ejemplo  
 Aquí hay un ejemplo de una Puerta en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Door:id:VCIY:56887503",  
@@ -382,8 +402,10 @@ Door:
   "areaServed": "Stuff conference chair during open expect fight. Investment she matter present back."  
 }  
 ```  
+</details>  
 #### Puerta NGSI-v2 normalizada Ejemplo  
 He aquí un ejemplo de una Puerta en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -461,127 +483,141 @@ Door:
   }  
 }  
 ```  
+</details>  
 #### Puerta NGSI-LD valores-clave Ejemplo  
 Aquí hay un ejemplo de una Puerta en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Door:id:VCIY:56887503",  
-  "dateCreated": "1979-09-10T12:21:15Z",  
-  "dateModified": "1992-06-21T16:13:30Z",  
-  "source": "Blue other across force turn. After standard now resource two. New behind training unit health tend anyone.",  
-  "name": "Rule hour car scene hit alone. Cut true property either treatment. Her cell relate level wife.",  
-  "alternateName": "In focus person. Determine painting series be. Offer still health color establish.",  
-  "description": "Eight close pull country within beat work. Record exactly senior.",  
-  "dataProvider": "Win between she sport. Second appear couple beat. Perform on create successful able.",  
-  "owner": [  
-    "urn:ngsi-ld:Door:items:AHUR:85284630",  
-    "urn:ngsi-ld:Door:items:MIYK:06076807"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Door:items:DOII:39861843",  
-    "urn:ngsi-ld:Door:items:NURV:05944119"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -41.917993,  
-      -156.219139  
+    "id": "urn:ngsi-ld:Door:id:VCIY:56887503",  
+    "dateCreated": "1979-09-10T12:21:15Z",  
+    "dateModified": "1992-06-21T16:13:30Z",  
+    "source": "Blue other across force turn. After standard now resource two. New behind training unit health tend anyone.",  
+    "name": "Rule hour car scene hit alone. Cut true property either treatment. Her cell relate level wife.",  
+    "alternateName": "In focus person. Determine painting series be. Offer still health color establish.",  
+    "description": "Eight close pull country within beat work. Record exactly senior.",  
+    "dataProvider": "Win between she sport. Second appear couple beat. Perform on create successful able.",  
+    "owner": [  
+        "urn:ngsi-ld:Door:items:AHUR:85284630",  
+        "urn:ngsi-ld:Door:items:MIYK:06076807"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Door:items:DOII:39861843",  
+        "urn:ngsi-ld:Door:items:NURV:05944119"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -41.917993,  
+            -156.219139  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "True market let believe wrong business allow. Woman later information suggest admit.",  
+        "addressLocality": "Run air when five still church certainly. Reflect short east late in line.",  
+        "addressRegion": "National office heart high them. Organization deal why wear important. Military effect Mrs floor environment skill detail.",  
+        "addressCountry": "Would throughout realize moment marriage want. Sense fight radio hold gun throw before.",  
+        "postalCode": "Save beautiful drive break down kitchen job. School state religious score development region.",  
+        "postOfficeBoxNumber": "Mention affect approach."  
+    },  
+    "areaServed": "Stuff conference chair during open expect fight. Investment she matter present back.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "True market let believe wrong business allow. Woman later information suggest admit.",  
-    "addressLocality": "Run air when five still church certainly. Reflect short east late in line.",  
-    "addressRegion": "National office heart high them. Organization deal why wear important. Military effect Mrs floor environment skill detail.",  
-    "addressCountry": "Would throughout realize moment marriage want. Sense fight radio hold gun throw before.",  
-    "postalCode": "Save beautiful drive break down kitchen job. School state religious score development region.",  
-    "postOfficeBoxNumber": "Mention affect approach."  
-  },  
-  "areaServed": "Stuff conference chair during open expect fight. Investment she matter present back.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### Puerta NGSI-LD normalizada Ejemplo  
 He aquí un ejemplo de una Puerta en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Door:id:BPYU:35495736",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1981-10-31T15:38:52Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1983-02-10T00:04:25Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Why discussion visit. Rest as himself situation around employee. Get blue nature late impact heart friend."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Time training significant key. Think benefit skin finally tend like structure also."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Better together high option effort. Necessary although interview opportunity trial stock. Central want raise morning."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Feel parent next four sound statement list. Every seem remain society west term. Right share middle run theory reduce."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Card scene notice. Center just four worker maintain conference."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Door:items:IMUY:85423080",  
-      "urn:ngsi-ld:Door:items:QZIH:12147561"  
+    "id": "urn:ngsi-ld:Door:id:BPYU:35495736",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1981-10-31T15:38:52Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1983-02-10T00:04:25Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Why discussion visit. Rest as himself situation around employee. Get blue nature late impact heart friend."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Time training significant key. Think benefit skin finally tend like structure also."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Better together high option effort. Necessary although interview opportunity trial stock. Central want raise morning."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Feel parent next four sound statement list. Every seem remain society west term. Right share middle run theory reduce."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Card scene notice. Center just four worker maintain conference."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Door:items:IMUY:85423080",  
+            "urn:ngsi-ld:Door:items:QZIH:12147561"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Door:items:YQXT:11349906"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -25.8682615,  
+                -34.601028  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Hope somebody reveal chair model he step. Help scene treat should group serious. Plant series claim store arm family heart.",  
+            "addressLocality": "Option give house whose admit society. Meet away late beautiful billion thing field.",  
+            "addressRegion": "Shoulder student win my. Art part exist bank. For tell cup choice though.",  
+            "addressCountry": "Find authority whole heart. Professional trial hand seven raise. Learn democratic whether play car all.",  
+            "postalCode": "Minute small such away worry. Air window material fire sometimes these team best. Term best because indeed player summer visit.",  
+            "postOfficeBoxNumber": "Together international Republican owner upon me paper. Store force remember director three. Magazine five really become establish affect degree cause. On help certainly buy land through."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Talk respond sort group environmental. Cause court page type. When end study run loss activity responsibility."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Door:items:YQXT:11349906"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -25.8682615,  
-        -34.601028  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Hope somebody reveal chair model he step. Help scene treat should group serious. Plant series claim store arm family heart.",  
-      "addressLocality": "Option give house whose admit society. Meet away late beautiful billion thing field.",  
-      "addressRegion": "Shoulder student win my. Art part exist bank. For tell cup choice though.",  
-      "addressCountry": "Find authority whole heart. Professional trial hand seven raise. Learn democratic whether play car all.",  
-      "postalCode": "Minute small such away worry. Air window material fire sometimes these team best. Term best because indeed player summer visit.",  
-      "postOfficeBoxNumber": "Together international Republican owner upon me paper. Store force remember director three. Magazine five really become establish affect degree cause. On help certainly buy land through."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Talk respond sort group environmental. Cause court page type. When end study run loss activity responsibility."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
