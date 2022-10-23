@@ -1,17 +1,32 @@
-Entità: EnergyOverload  
-======================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entità: EnergiaSovraccarico  
+===========================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.OCF/blob/master/EnergyOverload/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Adattamento del programma Smart Data Models dei modelli di dati originali IoTData. Questa risorsa descrive se un rilevatore di sovraccarico di energia/interruttore di circuito è attualmente scattato. La proprietà 'value' è un booleano. Un valore di 'true' significa che il sovraccarico di energia è stato attivato. Un valore 'false' significa che il sovraccarico di energia non è scattato. **  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **Adattamento del programma Smart Data Models dei modelli di dati IoTData originali. Questa risorsa descrive se un rilevatore di sovraccarico energetico/interruttore automatico è attualmente scattato. La proprietà 'value' è un booleano. Un valore di "true" significa che il sovraccarico di energia è intervenuto. Un valore di "false" significa che il sovraccarico di energia non è intervenuto. **  
+versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `id`: Identificatore unico dell'entità  - `if`: L'insieme di interfacce OCF supportato da questa risorsa.  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n`: Nome amichevole della risorsa  - `name`: Il nome di questo articolo.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `rt`: Il tipo di risorsa.  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `type`: Tipo di entità NGSI. Deve essere EnergyOverload  - `value`: L'indicazione di sovraccarico di energia, vero = scattato, falso = non scattato.    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `if[array]`: Il set di interfacce OCF supportato da questa risorsa.  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `n[string]`: Nome amichevole della risorsa  - `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `rt[array]`: Il tipo di risorsa.  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `type[string]`: Tipo di entità NGSI. Deve essere EnergyOverload  - `value[boolean]`: L'indicazione di sovraccarico di energia, vero = intervenuto, falso = non intervenuto.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- `id`  - `type`    
-Questo modello di dati proviene dall'originale [Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels). È stato esteso per soddisfare i requisiti di NGSI.  
-## Descrizione del modello di dati delle proprietà  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+Questo modello di dati proviene dal repository originale della [Open Connectivity Foundation] (https://github.com/openconnectivityfoundation/IoTDataModels). È stato esteso per soddisfare i requisiti NGSI.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 EnergyOverload:    
@@ -329,9 +344,14 @@ EnergyOverload:
   x-version: 0.0.1    
 ```  
 </details>    
-## Esempio di payloads  
-#### EnergyOverload NGSI-v2 valori chiave Esempio  
-Ecco un esempio di un EnergyOverload in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
+#### Valori chiave NGSI-v2 di EnergyOverload Esempio  
+Ecco un esempio di EnergyOverload in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:EnergyOverload:id:XYJB:57383405",  
@@ -368,8 +388,10 @@ EnergyOverload:
   "areaServed": "That relationship plant know. Full natural wall coach."  
 }  
 ```  
+</details>  
 #### EnergyOverload NGSI-v2 normalizzato Esempio  
-Ecco un esempio di un EnergyOverload in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di EnergyOverload in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -447,127 +469,141 @@ EnergyOverload:
   }  
 }  
 ```  
-#### EnergyOverload NGSI-LD valori chiave Esempio  
-Ecco un esempio di un EnergyOverload in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### Valori chiave NGSI-LD di EnergyOverload Esempio  
+Ecco un esempio di EnergyOverload in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:EnergyOverload:id:XYJB:57383405",  
-  "dateCreated": "1974-03-17T20:21:35Z",  
-  "dateModified": "2003-05-25T04:57:21Z",  
-  "source": "Response alone this great visit site industry add. Painting according woman former several.",  
-  "name": "Age standard mention Mrs. Explain art class chance drug who everything. Style stuff financial. Owner remember glass yes performance section.",  
-  "alternateName": "Care network speech brother ahead. His religious college star.",  
-  "description": "Church two record painting. Strong season end identify remember message. Nation side soon learn realize bad.",  
-  "dataProvider": "Nice international week actually. Appear chance light attack discussion world land.",  
-  "owner": [  
-    "urn:ngsi-ld:EnergyOverload:items:VFZT:44182994",  
-    "urn:ngsi-ld:EnergyOverload:items:UUEJ:58597087"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:EnergyOverload:items:DZHC:27624371",  
-    "urn:ngsi-ld:EnergyOverload:items:DTBB:94053851"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -62.3715995,  
-      82.314226  
+    "id": "urn:ngsi-ld:EnergyOverload:id:XYJB:57383405",  
+    "dateCreated": "1974-03-17T20:21:35Z",  
+    "dateModified": "2003-05-25T04:57:21Z",  
+    "source": "Response alone this great visit site industry add. Painting according woman former several.",  
+    "name": "Age standard mention Mrs. Explain art class chance drug who everything. Style stuff financial. Owner remember glass yes performance section.",  
+    "alternateName": "Care network speech brother ahead. His religious college star.",  
+    "description": "Church two record painting. Strong season end identify remember message. Nation side soon learn realize bad.",  
+    "dataProvider": "Nice international week actually. Appear chance light attack discussion world land.",  
+    "owner": [  
+        "urn:ngsi-ld:EnergyOverload:items:VFZT:44182994",  
+        "urn:ngsi-ld:EnergyOverload:items:UUEJ:58597087"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:EnergyOverload:items:DZHC:27624371",  
+        "urn:ngsi-ld:EnergyOverload:items:DTBB:94053851"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -62.3715995,  
+            82.314226  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Reduce this protect able. Add history dream rather condition partner. Authority laugh become color represent image.",  
+        "addressLocality": "Might production exactly account. Imagine behind offer maybe push expect behavior vote. She grow heavy.",  
+        "addressRegion": "Parent site lawyer woman stage. Somebody again early he nice. Mother however they live task together.",  
+        "addressCountry": "Task computer card notice road feel. May research produce address. Five act serious environment protect itself lose.",  
+        "postalCode": "Think material rock. Thank back center parent set outside both. He avoid on understand to thousand perhaps.",  
+        "postOfficeBoxNumber": "Owner big result turn born. Threat chance by particular could man."  
+    },  
+    "areaServed": "That relationship plant know. Full natural wall coach.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Reduce this protect able. Add history dream rather condition partner. Authority laugh become color represent image.",  
-    "addressLocality": "Might production exactly account. Imagine behind offer maybe push expect behavior vote. She grow heavy.",  
-    "addressRegion": "Parent site lawyer woman stage. Somebody again early he nice. Mother however they live task together.",  
-    "addressCountry": "Task computer card notice road feel. May research produce address. Five act serious environment protect itself lose.",  
-    "postalCode": "Think material rock. Thank back center parent set outside both. He avoid on understand to thousand perhaps.",  
-    "postOfficeBoxNumber": "Owner big result turn born. Threat chance by particular could man."  
-  },  
-  "areaServed": "That relationship plant know. Full natural wall coach.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-#### EnergyOverload NGSI-LD normalizzato Esempio  
-Ecco un esempio di un EnergyOverload in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### EnergiaSovraccarico NGSI-LD normalizzato Esempio  
+Ecco un esempio di EnergyOverload in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:EnergyOverload:id:PXSH:23096499",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1998-01-05T07:49:58Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1989-05-27T02:44:22Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Move building will two a. Including drop drop policy opportunity."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "President admit both realize remember hot relationship."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Keep imagine stand answer. Appear owner we. Live whom contain miss."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Article stock treat. Anything set claim whom contain those."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Hear property it effect top. First central bit particular American mean. Hundred light also church."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:EnergyOverload:items:KLTE:97669741",  
-      "urn:ngsi-ld:EnergyOverload:items:LGOK:70219090"  
+    "id": "urn:ngsi-ld:EnergyOverload:id:PXSH:23096499",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1998-01-05T07:49:58Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1989-05-27T02:44:22Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Move building will two a. Including drop drop policy opportunity."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "President admit both realize remember hot relationship."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Keep imagine stand answer. Appear owner we. Live whom contain miss."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Article stock treat. Anything set claim whom contain those."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Hear property it effect top. First central bit particular American mean. Hundred light also church."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:EnergyOverload:items:KLTE:97669741",  
+            "urn:ngsi-ld:EnergyOverload:items:LGOK:70219090"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:EnergyOverload:items:LKOG:56325483"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -77.6364145,  
+                46.870351  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Fund alone role determine conference realize against including. Reflect save scene subject state sense certainly successful. Improve develop medical people over. Least cover manager.",  
+            "addressLocality": "Make son per Democrat information. Picture color run training billion read. Than big stay. Increase religious choose year drive born company.",  
+            "addressRegion": "Situation account yourself his several approach indicate. Travel character easy policy record west seat.",  
+            "addressCountry": "Finish just discuss agree event. Cup evidence point least happen measure. Television lose down instead painting others.",  
+            "postalCode": "Seat protect doctor thank later. Full whatever at door commercial. Every agency spring answer.",  
+            "postOfficeBoxNumber": "Short north family fish. Artist challenge those."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Just choice cell stage. Student own son economy book others lot. Foot science heart bank. Service beautiful fact shake arm over when art."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:EnergyOverload:items:LKOG:56325483"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -77.6364145,  
-        46.870351  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Fund alone role determine conference realize against including. Reflect save scene subject state sense certainly successful. Improve develop medical people over. Least cover manager.",  
-      "addressLocality": "Make son per Democrat information. Picture color run training billion read. Than big stay. Increase religious choose year drive born company.",  
-      "addressRegion": "Situation account yourself his several approach indicate. Travel character easy policy record west seat.",  
-      "addressCountry": "Finish just discuss agree event. Cup evidence point least happen measure. Television lose down instead painting others.",  
-      "postalCode": "Seat protect doctor thank later. Full whatever at door commercial. Every agency spring answer.",  
-      "postOfficeBoxNumber": "Short north family fish. Artist challenge those."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Just choice cell stage. Student own son economy book others lot. Foot science heart bank. Service beautiful fact shake arm over when art."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
