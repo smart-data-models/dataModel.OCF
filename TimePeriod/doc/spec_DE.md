@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entität: ZeitPeriode  
-====================  
+====================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.OCF/blob/master/TimePeriod/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Globale Beschreibung: **Diese Ressource beschreibt den Zeitraum, über den die zusätzlich bereitgestellten Informationen abgeleitet oder begrenzt werden.Die Eigenschaften "startTime" und "stopTime" sind RFC3339-kodierte Strings. Die Eigenschaft 'startTime' muss vorhanden sein.interval ist das Intervall des Zeitraums in Minuten, wenn vorhanden muss dieser Wert mindestens 0 Minuten betragen.intervalsecond ist das Intervall des Zeitraums in Sekunden, wenn vorhanden muss dieser Wert numerisch Null oder größer sein.repeat ist die Iterationsnummer des Zeitraums, d.h. wie oft der Zeitraum wiederholt werden soll. Die Eigenschaft 'repeat' akzeptiert nur negative Eins, numerische Null und positive Zahlen. Wenn dieser Wert eine numerische Null ist, wird der Zeitraum unendlich wiederholt, bis ein Client ihn durch Eingabe einer negativen Eins für den Wert stoppt.Die Eigenschaften 'stopTime' und 'interval' schließen sich gegenseitig aus; beide Eigenschaften können nicht in einer Ressourceninstanz vorhanden sein.Die Eigenschaft 'intervalsecond' kann nicht mit der Eigenschaft 'stopTime' präsentiert werden. Werden die beiden Eigenschaften 'interval' und 'intervalsecond' zusammen dargestellt, ist das gesamte Zeitintervall die Summe aus 'interval' und 'intervalsecond'.Die Eigenschaft 'triggertiming' beschreibt einen bestimmten Zeitpunkt für die Ausführung einer Aktion. Diese Eigenschaft muss einen der Werte 'startTime', 'stopTime' und 'totalInterval' haben. Das 'totalInterval' ist die Summe aus den Eigenschaften 'interval' und 'intervalsecond'. Wenn eine der Eigenschaften nicht vorhanden ist, wird der Wert der nicht ausgedrückten Eigenschaft als numerische Null genommen.Die Eigenschaft 'state' beschreibt einen Zustand des Zeitintervalls. Diese Eigenschaft muss einen der Werte "preInterval", "inInterval" und "postInterval" haben.** Die Ressource definiert einen Zeitraum für den Abruf von Informationen, eine Aktion oder ein anderes Verhalten.  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Globale Beschreibung: **Diese Ressource beschreibt den Zeitraum, über den die zusätzlich bereitgestellten Informationen abgeleitet oder begrenzt werden.Die Eigenschaften "startTime" und "stopTime" sind RFC3339-kodierte Strings. Die Eigenschaft 'startTime' muss vorhanden sein.interval ist das Intervall des Zeitraums in Minuten, wenn vorhanden muss dieser Wert mindestens 0 Minuten betragen.intervalsecond ist das Intervall des Zeitraums in Sekunden, wenn vorhanden muss dieser Wert numerisch Null oder größer sein.repeat ist die Iterationsnummer des Zeitraums, d.h. wie oft der Zeitraum wiederholt werden soll. Die Eigenschaft 'repeat' akzeptiert nur negative Eins, numerische Null und positive Zahlen. Wenn dieser Wert eine numerische Null ist, wird der Zeitraum unendlich wiederholt, bis ein Client ihn durch Eingabe einer negativen Eins für den Wert stoppt.Die Eigenschaften 'stopTime' und 'interval' schließen sich gegenseitig aus; beide Eigenschaften können nicht in einer Ressourceninstanz vorhanden sein.Die Eigenschaft 'intervalsecond' kann nicht mit der Eigenschaft 'stopTime' präsentiert werden. Werden die beiden Eigenschaften 'interval' und 'intervalsecond' zusammen dargestellt, so ist das gesamte Zeitintervall die Summe aus 'interval' und 'intervalsecond'.Die Eigenschaft 'triggertiming' beschreibt einen bestimmten Zeitpunkt für die Ausführung einer Aktion. Diese Eigenschaft muss einen der Werte 'startTime', 'stopTime' und 'totalInterval' haben. Das 'totalInterval' ist die Summe aus den Eigenschaften 'interval' und 'intervalsecond'. Wenn eine der Eigenschaften nicht vorhanden ist, wird der Wert der nicht ausgedrückten Eigenschaft als numerische Null genommen.Die Eigenschaft 'state' beschreibt einen Zustand des Zeitintervalls. Diese Eigenschaft muss einen der Werte "preInterval", "inInterval" und "postInterval" haben.** Die Ressource definiert einen Zeitraum für den Abruf von Informationen, eine Aktion oder ein anderes Verhalten.  
 Version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `if`: Der von dieser Ressource unterstützte OCF-Schnittstellensatz.  - `interval`: Das Zeitintervall in Minuten nach der "startTime", wenn vorhanden, kann die Eigenschaft "stopTime" nicht vorhanden sein.  - `intervalsecond`: Das Zeitintervall in Sekunden nach der "startTime", wenn vorhanden, kann die Eigenschaft "stopTime" nicht vorhanden sein.  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `n`: Freundlicher Name der Ressource  - `name`: Der Name dieses Artikels.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `repeat`: Die Anzahl der Wiederholungen des Zeitraums  - `rt`: Der Ressourcentyp.  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `startTime`: Die Startzeit des Zeitraums.  - `state`: Der aktuelle Stand des Zeitintervalls  - `stopTime`: Die Stoppzeit für den Zeitraum, falls vorhanden kann die Eigenschaft "Intervall" oder "Intervallsekunde" nicht vorhanden sein.  - `triggertiming`: Der gewünschte Zeitpunkt für die Ausführung einer Aktion  - `type`: NGSI-Entitätstyp. Es muss TimePeriod sein    
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, liegt das daran, dass es mehrere Typen oder unterschiedliche Formate/Muster haben kann</sub></sup>.  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `id[*]`: Eindeutiger Bezeichner der Entität  - `if[array]`: Der von dieser Ressource unterstützte OCF-Schnittstellensatz.  - `interval[integer]`: Das Zeitintervall in Minuten nach der "startTime", wenn vorhanden, kann die Eigenschaft "stopTime" nicht vorhanden sein.  - `intervalsecond[integer]`: Das Zeitintervall in Sekunden nach der "startTime", wenn vorhanden, kann die Eigenschaft "stopTime" nicht vorhanden sein.  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `n[string]`: Freundlicher Name der Ressource  - `name[string]`: Der Name dieses Artikels.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `repeat[integer]`: Die Anzahl der Wiederholungen des Zeitraums  - `rt[array]`: Der Ressourcentyp.  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `startTime[string]`: Die Startzeit des Zeitraums.  - `state[string]`: Der aktuelle Stand des Zeitintervalls  - `stopTime[string]`: Die Stoppzeit für den Zeitraum, falls vorhanden kann die Eigenschaft "Intervall" oder "Intervallsekunde" nicht vorhanden sein.  - `triggertiming[string]`: Der gewünschte Zeitpunkt für die Ausführung einer Aktion  - `type[string]`: NGSI-Entitätstyp. Es muss TimePeriod sein  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
-- `id`  - `startTime`  - `type`    
+- `id`  - `startTime`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Datenmodell nach dem von der Open Connectivity Foundation erstellten Original. Ursprüngliches Repository in https://github.com/openconnectivityfoundation/IoTDataModels  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 TimePeriod:    
@@ -375,9 +388,14 @@ TimePeriod:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Beispiel-Nutzlasten  
 #### TimePeriod NGSI-v2 key-values Beispiel  
 Hier ist ein Beispiel für einen TimePeriod im JSON-LD-Format als Key-Values. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:TimePeriod:id:TPVF:35142901",  
@@ -440,8 +458,10 @@ TimePeriod:
   "type": "TimePeriod"  
 }  
 ```  
+</details>  
 #### TimePeriod NGSI-v2 normalized Beispiel  
 Hier ist ein Beispiel für eine TimePeriod im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-v2 kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -580,205 +600,219 @@ TimePeriod:
   }  
 }  
 ```  
+</details>  
 #### TimePeriod NGSI-LD key-values Beispiel  
 Hier ist ein Beispiel für einen TimePeriod im JSON-LD-Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:TimePeriod:id:TPVF:35142901",  
-  "dateCreated": "1981-10-01T03:58:28Z",  
-  "dateModified": "1974-09-01T01:11:55Z",  
-  "source": "Case girl this call woman where. Easy area sport church.",  
-  "name": "Industry artist resource contain strategy Democrat far. From here theory behind these. Itself modern face page indicate.",  
-  "alternateName": "Let we even hold coach morning particular. Form after read language cultural worry.",  
-  "description": "Town word young necessary south.",  
-  "dataProvider": "Then plant hot. Stage conference institution most.",  
-  "owner": [  
-    "urn:ngsi-ld:TimePeriod:items:XCRJ:98728117",  
-    "urn:ngsi-ld:TimePeriod:items:TSXQ:22724273"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:TimePeriod:items:UYCH:34421521",  
-    "urn:ngsi-ld:TimePeriod:items:WXER:47463782"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      44.6383085,  
-      67.311772  
+    "id": "urn:ngsi-ld:TimePeriod:id:TPVF:35142901",  
+    "dateCreated": "1981-10-01T03:58:28Z",  
+    "dateModified": "1974-09-01T01:11:55Z",  
+    "source": "Case girl this call woman where. Easy area sport church.",  
+    "name": "Industry artist resource contain strategy Democrat far. From here theory behind these. Itself modern face page indicate.",  
+    "alternateName": "Let we even hold coach morning particular. Form after read language cultural worry.",  
+    "description": "Town word young necessary south.",  
+    "dataProvider": "Then plant hot. Stage conference institution most.",  
+    "owner": [  
+        "urn:ngsi-ld:TimePeriod:items:XCRJ:98728117",  
+        "urn:ngsi-ld:TimePeriod:items:TSXQ:22724273"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:TimePeriod:items:UYCH:34421521",  
+        "urn:ngsi-ld:TimePeriod:items:WXER:47463782"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            44.6383085,  
+            67.311772  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Among region sea two. Treatment drop American large morning turn. Information cultural institution control growth claim manager.",  
+        "addressLocality": "Reduce finally size because business. Store defense force debate instead such dream face.",  
+        "addressRegion": "Attorney situation TV fly authority himself. Attack gas bring.",  
+        "addressCountry": "Defense those sing Mr seek build. Rest garden level financial good. Market training evidence firm establish thus.",  
+        "postalCode": "Region reflect money condition join town career. Least wait still strategy structure under.",  
+        "postOfficeBoxNumber": "Impact my about pressure picture. Recent party then party nature ability dinner. Dark green everything bag wear make even provide."  
+    },  
+    "areaServed": "Order require grow him. Reveal sell dark ever as.",  
+    "rt": [  
+        "oic.r.time.period",  
+        "oic.r.time.period"  
+    ],  
+    "interval": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "intervalsecond": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "stopTime": "1996-03-20T07:46:39Z",  
+    "startTime": "2021-07-31T01:24:38Z",  
+    "repeat": {  
+        "type": "Property",  
+        "value": 863  
+    },  
+    "triggertiming": "stopTime",  
+    "state": "postInterval",  
+    "n": "Whole magazine truth stop whose.",  
+    "if": [  
+        "oic.if.a",  
+        "oic.if.baseline"  
+    ],  
+    "type": "TimePeriod",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Among region sea two. Treatment drop American large morning turn. Information cultural institution control growth claim manager.",  
-    "addressLocality": "Reduce finally size because business. Store defense force debate instead such dream face.",  
-    "addressRegion": "Attorney situation TV fly authority himself. Attack gas bring.",  
-    "addressCountry": "Defense those sing Mr seek build. Rest garden level financial good. Market training evidence firm establish thus.",  
-    "postalCode": "Region reflect money condition join town career. Least wait still strategy structure under.",  
-    "postOfficeBoxNumber": "Impact my about pressure picture. Recent party then party nature ability dinner. Dark green everything bag wear make even provide."  
-  },  
-  "areaServed": "Order require grow him. Reveal sell dark ever as.",  
-  "rt": [  
-    "oic.r.time.period",  
-    "oic.r.time.period"  
-  ],  
-  "interval": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "intervalsecond": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "stopTime": "1996-03-20T07:46:39Z",  
-  "startTime": "2021-07-31T01:24:38Z",  
-  "repeat": {  
-    "type": "Property",  
-    "value": 863  
-  },  
-  "triggertiming": "stopTime",  
-  "state": "postInterval",  
-  "n": "Whole magazine truth stop whose.",  
-  "if": [  
-    "oic.if.a",  
-    "oic.if.baseline"  
-  ],  
-  "type": "TimePeriod",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### TimePeriod NGSI-LD normalized Beispiel  
 Hier ist ein Beispiel für eine TimePeriod im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-LD kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:TimePeriod:id:TFSS:01462651",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2018-04-07T03:15:37Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2000-11-20T13:02:07Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Future health he interesting deal wife team. Early possible official similar individual actually good. Me something peace year but society."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Myself rate help sort still. Growth fill bed support smile. Stop usually product pretty use response."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Act we hope east everything represent. Because probably service example government."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Interview actually authority performance kid score. Blood against have. Beautiful game tree drop listen often citizen."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Say size strategy easy. Summer may discuss beat ten. Hospital couple same analysis break."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:TimePeriod:items:KCTO:34471219",  
-      "urn:ngsi-ld:TimePeriod:items:WOCL:63416768"  
+    "id": "urn:ngsi-ld:TimePeriod:id:TFSS:01462651",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2018-04-07T03:15:37Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2000-11-20T13:02:07Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Future health he interesting deal wife team. Early possible official similar individual actually good. Me something peace year but society."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Myself rate help sort still. Growth fill bed support smile. Stop usually product pretty use response."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Act we hope east everything represent. Because probably service example government."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Interview actually authority performance kid score. Blood against have. Beautiful game tree drop listen often citizen."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Say size strategy easy. Summer may discuss beat ten. Hospital couple same analysis break."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:TimePeriod:items:KCTO:34471219",  
+            "urn:ngsi-ld:TimePeriod:items:WOCL:63416768"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:TimePeriod:items:IEHN:03499364"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                4.979827,  
+                27.027311  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Painting for street surface cup. Here particularly identify ahead news bill. Along investment possible painting treat.",  
+            "addressLocality": "Director your be billion us sea glass heavy. Boy program against development improve life conference. Political store general.",  
+            "addressRegion": "Treat maintain just protect clear poor. Must morning security describe. Foreign structure score music.",  
+            "addressCountry": "Size early item agent test key color. Game mind wall defense science institution. Activity claim white no some truth.",  
+            "postalCode": "Range later letter contain plan. Let grow population skill respond.",  
+            "postOfficeBoxNumber": "Case look election some tough exactly. Mr visit out choose life floor his hotel."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Front particular maintain lead economy. Visit hotel focus position."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.time.period"  
+        ]  
+    },  
+    "interval": {  
+        "type": "Property",  
+        "value": 850  
+    },  
+    "intervalsecond": {  
+        "type": "Property",  
+        "value": 176  
+    },  
+    "stopTime": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2002-11-06T17:47:24Z"  
+        }  
+    },  
+    "startTime": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1985-01-08T06:11:51Z"  
+        }  
+    },  
+    "repeat": {  
+        "type": "Property",  
+        "value": 128  
+    },  
+    "triggertiming": {  
+        "type": "Property",  
+        "value": "startTime"  
+    },  
+    "state": {  
+        "type": "Property",  
+        "value": "preInterval"  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Former answer political resource nothing. Develop lawyer important executive clear. Financial industry night trip bank end."  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline",  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "TimePeriod",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:TimePeriod:items:IEHN:03499364"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        4.979827,  
-        27.027311  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Painting for street surface cup. Here particularly identify ahead news bill. Along investment possible painting treat.",  
-      "addressLocality": "Director your be billion us sea glass heavy. Boy program against development improve life conference. Political store general.",  
-      "addressRegion": "Treat maintain just protect clear poor. Must morning security describe. Foreign structure score music.",  
-      "addressCountry": "Size early item agent test key color. Game mind wall defense science institution. Activity claim white no some truth.",  
-      "postalCode": "Range later letter contain plan. Let grow population skill respond.",  
-      "postOfficeBoxNumber": "Case look election some tough exactly. Mr visit out choose life floor his hotel."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Front particular maintain lead economy. Visit hotel focus position."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.time.period"  
-    ]  
-  },  
-  "interval": {  
-    "type": "Property",  
-    "value": 850  
-  },  
-  "intervalsecond": {  
-    "type": "Property",  
-    "value": 176  
-  },  
-  "stopTime": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2002-11-06T17:47:24Z"  
-    }  
-  },  
-  "startTime": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1985-01-08T06:11:51Z"  
-    }  
-  },  
-  "repeat": {  
-    "type": "Property",  
-    "value": 128  
-  },  
-  "triggertiming": {  
-    "type": "Property",  
-    "value": "startTime"  
-  },  
-  "state": {  
-    "type": "Property",  
-    "value": "preInterval"  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Former answer political resource nothing. Develop lawyer important executive clear. Financial industry night trip bank end."  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.baseline",  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "type": "TimePeriod",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
