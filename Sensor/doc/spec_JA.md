@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 エンティティセンサー  
-==========  
+==========<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/Sensor/LICENSE.md)  
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述。**このResourceは、ある値や特性、実体が感知されたかどうかを記述する。'value'プロパティはブール値で、'true'の値は感知されたことを意味し、'false'の値は感知されていないことを意味する。  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**このResourceは、ある値や特性、実体が感知されたかどうかを記述する。valueというプロパティはブール値で、trueの値は感知されたことを意味し、falseの値は感知されていないことを意味する。  
 バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `id`: エンティティの一意な識別子  - `if`: このリソースがサポートする OCF インタフェースセット。  - `location`: アイテムへのGeojsonリファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `measurement`: このセンサーの測定値、単位はセンサーの種類に依存します。  - `n`: リソースのフレンドリ名  - `name`: このアイテムの名称です。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `precision`: precision'の値が公開されると、ResourceのPropertiesに対して+/-の許容範囲を提供します。したがって、あるプロパティがある値にUPDATEされ、そのプロパティがRETRIEVEDされた場合、RETRIEVEDされた値は設定された値+/-精度の範囲内であれば有効である。  - `range`: リソースに含まれるプロパティの有効範囲を数値で表したもの。配列の最初の値が最小値、2 番目の値が最大値となります。  - `rt`: リソースタイプ  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで指定する文字の列。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `step`: 定義された範囲のステップ値（範囲が数値の場合は整数）。  範囲が0.0〜10.0でステップが2.5の場合、有効な値は0.0、2.5、5.0、7.5、10.0である。  - `type`: NGSIエンティティタイプ。センサーでなければならない  - `value`: true = 感知した、false = 感知していない。    
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `if[array]`: このリソースがサポートする OCF インタフェースセット。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `measurement[number]`: このセンサーの測定値、単位はセンサーの種類に依存します。  - `n[string]`: リソースのフレンドリ名  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `precision[number]`: 公開されるとき、'precision'の値は、ResourceのPropertyに対して+/-の許容範囲を提供する。したがって、あるプロパティがある値にUPDATEされ、そのプロパティがRETRIEVEDされた場合、RETRIEVEDされた値は設定された値+/-精度の範囲内であれば有効である。  - `range[array]`: Resource に含まれる Property の有効範囲を数値で表します。配列の最初の値が最小値、2 番目の値が最大値となります。  - `rt[array]`: リソースタイプ  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `step[number]`: 定義された範囲にわたるステップ値。  範囲が0.0〜10.0でステップが2.5の場合、有効な値は0.0、2.5、5.0、7.5、10.0である。  - `type[string]`: NGSIエンティティタイプ。センサーでなければならない  - `value[boolean]`: true = 感知した、false = 感知していない。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 必要なプロパティ  
-- `id`  - `type`  - `value`    
+- `id`  - `type`  - `value`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 データモデルは、Open Connectivity Foundationが作成したオリジナルを引用しています。https://github.com/openconnectivityfoundation/IoTDataModels のオリジナルリポジトリ  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
 アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Sensor:    
@@ -361,9 +374,14 @@ Sensor:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
 #### センサーNGSI-v2 キー値例  
-SensorをJSON-LD形式でkey-valueにした例です。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+ここでは、SensorをJSON-LD形式でkey-valuesにした例を示す。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Sensor:id:EEVF:23119928",  
@@ -430,8 +448,10 @@ Sensor:
   "type": "Sensor"  
 }  
 ```  
+</details>  
 #### センサー NGSI-v2 正規化例  
-以下は、SensorをJSON-LD形式で正規化した例です。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+ここでは、SensorをJSON-LD形式で正規化した例を示す。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -566,197 +586,211 @@ Sensor:
   }  
 }  
 ```  
+</details>  
 #### センサーNGSI-LDのキー値例  
-SensorをJSON-LD形式でkey-valueにした例です。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+ここでは、SensorをJSON-LD形式でkey-valuesにした例を示します。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Sensor:id:EEVF:23119928",  
-  "dateCreated": "1991-01-27T02:40:57Z",  
-  "dateModified": "1971-12-13T00:43:58Z",  
-  "source": "Term event garden father large.",  
-  "name": "Hundred number record population speak democratic consider. Describe exist ok also black imagine son.",  
-  "alternateName": "Measure bank part still low century. Wind our our foreign prove southern. Hit moment drop anyone. According eye hospital have fund partner.",  
-  "description": "Amount until similar Mr debate. Other skin high term challenge Mrs building. Whatever stay our this.",  
-  "dataProvider": "Plant suggest decision movement. Training term put agent common eat help while. Single morning offer detail other man look. Baby age dinner task right property lot.",  
-  "owner": [  
-    "urn:ngsi-ld:Sensor:items:NGFL:29340842",  
-    "urn:ngsi-ld:Sensor:items:HZVS:91325080"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Sensor:items:SVWN:41330440",  
-    "urn:ngsi-ld:Sensor:items:DLFC:40040901"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -19.9539755,  
-      -135.278603  
+    "id": "urn:ngsi-ld:Sensor:id:EEVF:23119928",  
+    "dateCreated": "1991-01-27T02:40:57Z",  
+    "dateModified": "1971-12-13T00:43:58Z",  
+    "source": "Term event garden father large.",  
+    "name": "Hundred number record population speak democratic consider. Describe exist ok also black imagine son.",  
+    "alternateName": "Measure bank part still low century. Wind our our foreign prove southern. Hit moment drop anyone. According eye hospital have fund partner.",  
+    "description": "Amount until similar Mr debate. Other skin high term challenge Mrs building. Whatever stay our this.",  
+    "dataProvider": "Plant suggest decision movement. Training term put agent common eat help while. Single morning offer detail other man look. Baby age dinner task right property lot.",  
+    "owner": [  
+        "urn:ngsi-ld:Sensor:items:NGFL:29340842",  
+        "urn:ngsi-ld:Sensor:items:HZVS:91325080"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Sensor:items:SVWN:41330440",  
+        "urn:ngsi-ld:Sensor:items:DLFC:40040901"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -19.9539755,  
+            -135.278603  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Into Mrs old blood. Reflect better land direction.",  
+        "addressLocality": "One thus five the stand our open. Large approach in hard place. Business begin program kid. Religious include home guy now five feel hour.",  
+        "addressRegion": "Out both range clearly just. Event they realize this somebody.",  
+        "addressCountry": "Every only vote stock he power list. Believe contain inside next buy bill particularly food.",  
+        "postalCode": "Century major more. Rise glass anyone sit our class family thing.",  
+        "postOfficeBoxNumber": "That direction attention significant though article day. Hour various south note later."  
+    },  
+    "areaServed": "Another article Mr. Determine art treat answer. Career list cold from stuff rather material.",  
+    "rt": [  
+        "oic.r.sensor",  
+        "oic.r.sensor"  
+    ],  
+    "value": {  
+        "type": "Property",  
+        "value": false  
+    },  
+    "measurement": {  
+        "type": "Property",  
+        "value": 96.8  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 314.9  
+    },  
+    "n": "Between apply probably seat half. Republican world accept job.",  
+    "range": [  
+        791.0,  
+        897.9  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 917.7  
+    },  
+    "if": [  
+        "oic.if.s",  
+        "oic.if.baseline"  
+    ],  
+    "type": "Sensor",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Into Mrs old blood. Reflect better land direction.",  
-    "addressLocality": "One thus five the stand our open. Large approach in hard place. Business begin program kid. Religious include home guy now five feel hour.",  
-    "addressRegion": "Out both range clearly just. Event they realize this somebody.",  
-    "addressCountry": "Every only vote stock he power list. Believe contain inside next buy bill particularly food.",  
-    "postalCode": "Century major more. Rise glass anyone sit our class family thing.",  
-    "postOfficeBoxNumber": "That direction attention significant though article day. Hour various south note later."  
-  },  
-  "areaServed": "Another article Mr. Determine art treat answer. Career list cold from stuff rather material.",  
-  "rt": [  
-    "oic.r.sensor",  
-    "oic.r.sensor"  
-  ],  
-  "value": {  
-    "type": "Property",  
-    "value": false  
-  },  
-  "measurement": {  
-    "type": "Property",  
-    "value": 96.8  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 314.9  
-  },  
-  "n": "Between apply probably seat half. Republican world accept job.",  
-  "range": [  
-    791.0,  
-    897.9  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 917.7  
-  },  
-  "if": [  
-    "oic.if.s",  
-    "oic.if.baseline"  
-  ],  
-  "type": "Sensor",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### センサー NGSI-LD 正規化例  
-以下は、SensorをJSON-LD形式で正規化した例です。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+ここでは、SensorをJSON-LD形式で正規化した例を示します。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Sensor:id:BIZN:29586189",  
-  "dateCreated": {  
-    "type": "Property",  
+    "id": "urn:ngsi-ld:Sensor:id:BIZN:29586189",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1970-01-29T22:09:55Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1990-10-17T03:52:28Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "He suddenly little every list wait. Process third yeah option Congress first form."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Firm lot appear war program office. Stage if receive play often act. Operation whole within method technology."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Care gas recently on response item. Finish become week speak memory west may."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Experience window source. Effect perform similar staff two. Realize manage board civil music."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Campaign general interesting leave sing hotel. Every all inside now whose air. Recent decade trial."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Sensor:items:OBUU:26432740",  
+            "urn:ngsi-ld:Sensor:items:SQLE:55745312"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Sensor:items:WCUC:42787397"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -24.2466645,  
+                -141.953472  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Use more site wear loss. Offer anyone per any.",  
+            "addressLocality": "Value try hour various. Organization executive scientist society. Ago bring edge check wide.",  
+            "addressRegion": "Read be scene cell ok himself soldier example.",  
+            "addressCountry": "Shake while animal. Author view respond former thousand every leave. Race business free grow.",  
+            "postalCode": "Family attack hospital summer western her. Some should sell treatment mean. Down a identify fine job.",  
+            "postOfficeBoxNumber": "Natural tonight such concern more effect. Reason theory figure activity body head. Direction past sit everyone ahead can."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Face test set go walk magazine interesting. Staff raise ready another north. Scientist surface specific."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.sensor"  
+        ]  
+    },  
     "value": {  
-      "@type": "DateTime",  
-      "@value": "1970-01-29T22:09:55Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1990-10-17T03:52:28Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "He suddenly little every list wait. Process third yeah option Congress first form."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Firm lot appear war program office. Stage if receive play often act. Operation whole within method technology."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Care gas recently on response item. Finish become week speak memory west may."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Experience window source. Effect perform similar staff two. Realize manage board civil music."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Campaign general interesting leave sing hotel. Every all inside now whose air. Recent decade trial."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Sensor:items:OBUU:26432740",  
-      "urn:ngsi-ld:Sensor:items:SQLE:55745312"  
+        "type": "Property",  
+        "value": true  
+    },  
+    "measurement": {  
+        "type": "Property",  
+        "value": 292.1  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 988.6  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "My build indeed nice take have student. Figure impact here employee realize. Floor meeting entire main myself visit."  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            824.6,  
+            684.9  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 0.4  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "Sensor",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Sensor:items:WCUC:42787397"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -24.2466645,  
-        -141.953472  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Use more site wear loss. Offer anyone per any.",  
-      "addressLocality": "Value try hour various. Organization executive scientist society. Ago bring edge check wide.",  
-      "addressRegion": "Read be scene cell ok himself soldier example.",  
-      "addressCountry": "Shake while animal. Author view respond former thousand every leave. Race business free grow.",  
-      "postalCode": "Family attack hospital summer western her. Some should sell treatment mean. Down a identify fine job.",  
-      "postOfficeBoxNumber": "Natural tonight such concern more effect. Reason theory figure activity body head. Direction past sit everyone ahead can."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Face test set go walk magazine interesting. Staff raise ready another north. Scientist surface specific."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.sensor"  
-    ]  
-  },  
-  "value": {  
-    "type": "Property",  
-    "value": true  
-  },  
-  "measurement": {  
-    "type": "Property",  
-    "value": 292.1  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 988.6  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "My build indeed nice take have student. Figure impact here employee realize. Floor meeting entire main myself visit."  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      824.6,  
-      684.9  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 0.4  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "type": "Sensor",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
