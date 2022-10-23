@@ -1,17 +1,32 @@
-Entità: heartRateZone  
-=====================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entità: heartRateZone  
+=====================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.OCF/blob/master/heartRateZone/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Adattamento del programma Smart Data Models dell'originale IoTData data Models. Questa Risorsa descrive una frequenza cardiaca misurata in base alla Zona corrente utilizzando il metodo Zoladz. Il metodo Zoladz definisce le Zone in base alla frequenza cardiaca massima; la Zona 1 è la più bassa, la Zona 5 è la più alta. La heartRateZone è un'enumerazione contenente uno dei seguenti elementi: 'Zona1', 'Zona2', 'Zona3', 'Zona4' e 'Zona5'. **  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **Programma di modelli di dati intelligenti adattamento dei modelli di dati originali di IoTData. Questa risorsa descrive la frequenza cardiaca misurata in base alla Zona corrente utilizzando il metodo Zoladz. Il metodo Zoladz definisce le Zone in base alla frequenza cardiaca massima; la Zona 1 è la più bassa, la Zona 5 è la più alta. Il parametro heartRateZone è un'enumerazione contenente uno dei seguenti valori: 'Zona1', 'Zona2', 'Zona3', 'Zona4' e 'Zona5'. **  
+versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `heartRateZone`: Zona di frequenza cardiaca attuale basata sul sistema Zoladz.  - `id`: Identificatore unico dell'entità  - `if`: L'insieme di interfacce OCF supportate da questa risorsa  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n`: Nome amichevole della risorsa  - `name`: Il nome di questo articolo.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `rt`: Tipo di risorsa  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `type`: Tipo di entità NGSI. Deve essere heartRateZone    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `heartRateZone[string]`: Zona di frequenza cardiaca attuale basata sul sistema Zoladz.  - `id[*]`: Identificatore univoco dell'entità  - `if[array]`: Il set di interfacce OCF supportato da questa risorsa.  - `location[*]`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `n[string]`: Nome amichevole della risorsa  - `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `rt[array]`: Tipo di risorsa  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `type[string]`: Tipo di entità NGSI. Deve essere heartRateZone  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- `id`  - `type`    
-Questo modello di dati proviene dall'originale [Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels). È stato esteso per soddisfare i requisiti di NGSI.  
-## Descrizione del modello di dati delle proprietà  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+Questo modello di dati proviene dal repository originale della [Open Connectivity Foundation] (https://github.com/openconnectivityfoundation/IoTDataModels). È stato esteso per soddisfare i requisiti NGSI.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 heartRateZone:    
@@ -336,9 +351,14 @@ heartRateZone:
   x-version: 0.0.1    
 ```  
 </details>    
-## Esempio di payloads  
-#### heartRateZone NGSI-v2 valori chiave Esempio  
-Ecco un esempio di heartRateZone in formato JSON-LD come key-values. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
+#### heartRateZone Valori-chiave NGSI-v2 Esempio  
+Ecco un esempio di heartRateZone in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:heartRateZone:id:UZVJ:22985409",  
@@ -375,8 +395,10 @@ heartRateZone:
   "areaServed": "Arrive response nothing ahead. Whether east if reflect feeling. Opportunity group special."  
 }  
 ```  
+</details>  
 #### heartRateZone NGSI-v2 normalizzato Esempio  
-Ecco un esempio di heartRateZone in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di heartRateZone in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si usano le opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -454,127 +476,141 @@ heartRateZone:
   }  
 }  
 ```  
+</details>  
 #### heartRateZone Valori chiave NGSI-LD Esempio  
-Ecco un esempio di heartRateZone in formato JSON-LD come key-values. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di heartRateZone in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:heartRateZone:id:UZVJ:22985409",  
-  "dateCreated": "1979-03-05T13:38:17Z",  
-  "dateModified": "2018-12-08T03:09:47Z",  
-  "source": "Property responsibility heart buy history tree local. Economic wife easy able. Experience create condition or story.",  
-  "name": "Ever message major so goal. Of size them determine.",  
-  "alternateName": "Among appear far result. Tree force chance reach author inside certain. Meeting guess forward knowledge central feeling sense culture.",  
-  "description": "Few nice prepare read process. Who particular relationship serious quickly hear crime effort.",  
-  "dataProvider": "Explain you avoid property provide buy. Agreement seem political learn understand new argue.",  
-  "owner": [  
-    "urn:ngsi-ld:heartRateZone:items:VDWX:92609296",  
-    "urn:ngsi-ld:heartRateZone:items:TPGH:46115386"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:heartRateZone:items:EGNT:69353743",  
-    "urn:ngsi-ld:heartRateZone:items:CVQC:21023520"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      33.114013,  
-      -116.102574  
+    "id": "urn:ngsi-ld:heartRateZone:id:UZVJ:22985409",  
+    "dateCreated": "1979-03-05T13:38:17Z",  
+    "dateModified": "2018-12-08T03:09:47Z",  
+    "source": "Property responsibility heart buy history tree local. Economic wife easy able. Experience create condition or story.",  
+    "name": "Ever message major so goal. Of size them determine.",  
+    "alternateName": "Among appear far result. Tree force chance reach author inside certain. Meeting guess forward knowledge central feeling sense culture.",  
+    "description": "Few nice prepare read process. Who particular relationship serious quickly hear crime effort.",  
+    "dataProvider": "Explain you avoid property provide buy. Agreement seem political learn understand new argue.",  
+    "owner": [  
+        "urn:ngsi-ld:heartRateZone:items:VDWX:92609296",  
+        "urn:ngsi-ld:heartRateZone:items:TPGH:46115386"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:heartRateZone:items:EGNT:69353743",  
+        "urn:ngsi-ld:heartRateZone:items:CVQC:21023520"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            33.114013,  
+            -116.102574  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Low ahead also actually speak college far throughout. Three pull many seat sea vote our approach. Stay huge hospital along probably kid the machine. Claim opportunity few throughout.",  
+        "addressLocality": "Service what others enjoy up response. Western budget model especially. Read few your expert.",  
+        "addressRegion": "Not anyone hand accept scene road. Official travel carry back arm happen region.",  
+        "addressCountry": "Resource politics garden identify teacher whole. Like information include carry rich middle. Agency western age work board officer establish may.",  
+        "postalCode": "Machine right total. Expect wish establish north section rise ask something. So indeed large leg three. Fight themselves man draw machine once good.",  
+        "postOfficeBoxNumber": "Drop easy order turn actually. Produce marriage month purpose send."  
+    },  
+    "areaServed": "Arrive response nothing ahead. Whether east if reflect feeling. Opportunity group special.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Low ahead also actually speak college far throughout. Three pull many seat sea vote our approach. Stay huge hospital along probably kid the machine. Claim opportunity few throughout.",  
-    "addressLocality": "Service what others enjoy up response. Western budget model especially. Read few your expert.",  
-    "addressRegion": "Not anyone hand accept scene road. Official travel carry back arm happen region.",  
-    "addressCountry": "Resource politics garden identify teacher whole. Like information include carry rich middle. Agency western age work board officer establish may.",  
-    "postalCode": "Machine right total. Expect wish establish north section rise ask something. So indeed large leg three. Fight themselves man draw machine once good.",  
-    "postOfficeBoxNumber": "Drop easy order turn actually. Produce marriage month purpose send."  
-  },  
-  "areaServed": "Arrive response nothing ahead. Whether east if reflect feeling. Opportunity group special.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### heartRateZone NGSI-LD normalizzato Esempio  
-Ecco un esempio di heartRateZone in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di heartRateZone in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:heartRateZone:id:CEHZ:58898697",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1991-04-18T21:11:56Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1995-01-26T05:36:04Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Member attorney through allow environmental traditional low. Rate near federal rise always consider good."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Machine create herself dark determine painting suddenly. Drug foot morning her commercial as. Himself court account after stage street establish. Still color technology certain section everything job."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Huge fund oil end card I enter. Professor black action act task follow outside. Message member week general."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Local light product commercial sound. Reduce national lead myself watch."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Similar far its. Project these sometimes first."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:heartRateZone:items:BPSC:73150514",  
-      "urn:ngsi-ld:heartRateZone:items:EFSD:48378576"  
+    "id": "urn:ngsi-ld:heartRateZone:id:CEHZ:58898697",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1991-04-18T21:11:56Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1995-01-26T05:36:04Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Member attorney through allow environmental traditional low. Rate near federal rise always consider good."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Machine create herself dark determine painting suddenly. Drug foot morning her commercial as. Himself court account after stage street establish. Still color technology certain section everything job."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Huge fund oil end card I enter. Professor black action act task follow outside. Message member week general."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Local light product commercial sound. Reduce national lead myself watch."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Similar far its. Project these sometimes first."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:heartRateZone:items:BPSC:73150514",  
+            "urn:ngsi-ld:heartRateZone:items:EFSD:48378576"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:heartRateZone:items:WMWA:60306746"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -5.0300965,  
+                -156.656203  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Collection thus manager customer. Read almost top now I set lose. Including lose war central benefit him others never.",  
+            "addressLocality": "Happy child option wall. Mother many environment student score main person. Ready easy sure direction compare project cold.",  
+            "addressRegion": "Generation foreign include admit prepare music want success. Nature continue manager back. Quality commercial learn identify full.",  
+            "addressCountry": "Lead pick computer expert office pass. Apply reduce old live off sure eat everything.",  
+            "postalCode": "Maybe direction future plan. Act address may hour lead. Poor way several.",  
+            "postOfficeBoxNumber": "Arrive democratic research thus end ready."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Blood class media follow author consider. Magazine upon which artist. She power system hundred."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:heartRateZone:items:WMWA:60306746"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -5.0300965,  
-        -156.656203  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Collection thus manager customer. Read almost top now I set lose. Including lose war central benefit him others never.",  
-      "addressLocality": "Happy child option wall. Mother many environment student score main person. Ready easy sure direction compare project cold.",  
-      "addressRegion": "Generation foreign include admit prepare music want success. Nature continue manager back. Quality commercial learn identify full.",  
-      "addressCountry": "Lead pick computer expert office pass. Apply reduce old live off sure eat everything.",  
-      "postalCode": "Maybe direction future plan. Act address may hour lead. Poor way several.",  
-      "postOfficeBoxNumber": "Arrive democratic research thus end ready."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Blood class media follow author consider. Magazine upon which artist. She power system hundred."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
