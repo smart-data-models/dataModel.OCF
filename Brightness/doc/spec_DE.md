@@ -1,17 +1,32 @@
-Entität: Helligkeit  
-===================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entität: Helligkeit  
+===================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.OCF/blob/master/Brightness/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Globale Beschreibung: **Smart Data Models Programmanpassung der ursprünglichen IoTData-Datenmodelle. Diese Ressource beschreibt die Helligkeit eines Lichts oder einer Lampe. Die Eigenschaft 'brightness' ist eine ganze Zahl, die den aktuellen Helligkeitswert als quantisierte Darstellung im Bereich von 0-100 anzeigt. Eine Helligkeit von 0 ist das Minimum für diese Ressource. Eine Helligkeit von 100 ist das Maximum für die Ressource.**  
+Version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `brightness`: Die quantisierte Darstellung im Bereich 0-100 des aktuell erfassten oder eingestellten Wertes für die Helligkeit.  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `if`: Der von dieser Ressource unterstützte OCF-Schnittstellensatz.  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `n`: Freundlicher Name der Ressource  - `name`: Der Name dieses Artikels.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `rt`: Der Ressourcentyp.  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `type`: NGSI-Entitätstyp. Es muss Helligkeit sein    
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, liegt das daran, dass es mehrere Typen oder unterschiedliche Formate/Muster haben kann</sub></sup>.  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `brightness[integer]`: Die quantisierte Darstellung im Bereich 0-100 des aktuell erfassten oder eingestellten Wertes für die Helligkeit.  - `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `id[*]`: Eindeutiger Bezeichner der Entität  - `if[array]`: Der von dieser Ressource unterstützte OCF-Schnittstellensatz.  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `n[string]`: Freundlicher Name der Ressource  - `name[string]`: Der Name dieses Artikels.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `rt[array]`: Der Ressourcentyp.  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `type[string]`: NGSI-Entitätstyp. Es muss Helligkeit sein  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Dieses Datenmodell stammt aus dem ursprünglichen [Open Connectivity Foundation repository] (https://github.com/openconnectivityfoundation/IoTDataModels). Es wurde erweitert, um den Anforderungen der NGSI zu entsprechen.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Brightness:    
@@ -330,9 +345,14 @@ Brightness:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Beispiel-Nutzlasten  
 #### Helligkeit NGSI-v2 Schlüsselwerte Beispiel  
-Hier ist ein Beispiel für eine Helligkeit im JSON-LD-Format als Schlüsselwerte. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird und gibt die Kontextdaten einer einzelnen Entität zurück.  
+Hier ist ein Beispiel für eine Helligkeit im JSON-LD-Format als Schlüsselwerte. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Brightness:id:WQCM:27115895",  
@@ -369,8 +389,10 @@ Brightness:
   "areaServed": "Or parent civil miss seem season kitchen. Next order another manage a."  
 }  
 ```  
+</details>  
 #### Helligkeit NGSI-v2 normalisiert Beispiel  
 Hier ist ein Beispiel für eine Helligkeit im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -448,127 +470,141 @@ Brightness:
   }  
 }  
 ```  
+</details>  
 #### Helligkeit NGSI-LD Schlüsselwerte Beispiel  
-Hier ist ein Beispiel für eine Helligkeit im JSON-LD-Format als Schlüsselwerte. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und gibt die Kontextdaten einer einzelnen Entität zurück.  
+Hier ist ein Beispiel für eine Helligkeit im JSON-LD-Format als Schlüsselwerte. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Brightness:id:WQCM:27115895",  
-  "dateCreated": "2016-08-17T21:11:58Z",  
-  "dateModified": "1980-09-17T16:44:12Z",  
-  "source": "Town career six agreement half financial born. Learn everyone level most. Radio force build I leave environment system.",  
-  "name": "Until case family. Research day practice go from car.",  
-  "alternateName": "Ball law read very paper traditional.",  
-  "description": "But stand once miss. Easy mention it. Yeah center past movement.",  
-  "dataProvider": "Low enjoy listen five rock poor. Machine it us determine any.",  
-  "owner": [  
-    "urn:ngsi-ld:Brightness:items:FXDV:13819924",  
-    "urn:ngsi-ld:Brightness:items:ABGQ:72000460"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Brightness:items:PMDS:79707077",  
-    "urn:ngsi-ld:Brightness:items:DHES:41648412"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -41.7502805,  
-      -102.953763  
+    "id": "urn:ngsi-ld:Brightness:id:WQCM:27115895",  
+    "dateCreated": "2016-08-17T21:11:58Z",  
+    "dateModified": "1980-09-17T16:44:12Z",  
+    "source": "Town career six agreement half financial born. Learn everyone level most. Radio force build I leave environment system.",  
+    "name": "Until case family. Research day practice go from car.",  
+    "alternateName": "Ball law read very paper traditional.",  
+    "description": "But stand once miss. Easy mention it. Yeah center past movement.",  
+    "dataProvider": "Low enjoy listen five rock poor. Machine it us determine any.",  
+    "owner": [  
+        "urn:ngsi-ld:Brightness:items:FXDV:13819924",  
+        "urn:ngsi-ld:Brightness:items:ABGQ:72000460"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Brightness:items:PMDS:79707077",  
+        "urn:ngsi-ld:Brightness:items:DHES:41648412"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -41.7502805,  
+            -102.953763  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Increase money loss begin billion. Town future less general make control become. Decision positive edge.",  
+        "addressLocality": "Go low box might marriage natural. Notice include group growth walk fund card. Again management stay skill factor action.",  
+        "addressRegion": "Skill sing maybe call deep. Report push almost drop.",  
+        "addressCountry": "Other film between one. Measure team way already behind. Sea quality adult news civil.",  
+        "postalCode": "Very when remember seven seem final system. Network notice accept probably board yourself tell. One operation assume use simply section available.",  
+        "postOfficeBoxNumber": "Soon image stop. Deal newspaper factor brother."  
+    },  
+    "areaServed": "Or parent civil miss seem season kitchen. Next order another manage a.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Increase money loss begin billion. Town future less general make control become. Decision positive edge.",  
-    "addressLocality": "Go low box might marriage natural. Notice include group growth walk fund card. Again management stay skill factor action.",  
-    "addressRegion": "Skill sing maybe call deep. Report push almost drop.",  
-    "addressCountry": "Other film between one. Measure team way already behind. Sea quality adult news civil.",  
-    "postalCode": "Very when remember seven seem final system. Network notice accept probably board yourself tell. One operation assume use simply section available.",  
-    "postOfficeBoxNumber": "Soon image stop. Deal newspaper factor brother."  
-  },  
-  "areaServed": "Or parent civil miss seem season kitchen. Next order another manage a.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### Helligkeit NGSI-LD normalisiert Beispiel  
-Hier ist ein Beispiel für eine Helligkeit im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für eine Helligkeit im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-LD kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Brightness:id:RSNQ:68207834",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2015-11-22T15:03:19Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1984-04-26T19:36:27Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Get more effort admit education far great. Note factor assume state civil attack. Hand all degree agency add."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Decade size collection station tend blue. Exist fall major foot stay benefit north customer."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Green establish board forward itself site. Fear this toward."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Happen network history fight half law. Wear rate place improve best. Health effect concern happen whose loss. Information action leave bar heavy support city cut."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Sort hear walk close dark more get. Baby general candidate guy treat."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Brightness:items:KFXN:87184809",  
-      "urn:ngsi-ld:Brightness:items:FIHS:96874543"  
+    "id": "urn:ngsi-ld:Brightness:id:RSNQ:68207834",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2015-11-22T15:03:19Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1984-04-26T19:36:27Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Get more effort admit education far great. Note factor assume state civil attack. Hand all degree agency add."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Decade size collection station tend blue. Exist fall major foot stay benefit north customer."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Green establish board forward itself site. Fear this toward."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Happen network history fight half law. Wear rate place improve best. Health effect concern happen whose loss. Information action leave bar heavy support city cut."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Sort hear walk close dark more get. Baby general candidate guy treat."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Brightness:items:KFXN:87184809",  
+            "urn:ngsi-ld:Brightness:items:FIHS:96874543"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Brightness:items:RCAP:18990801"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -36.083538,  
+                -0.107567  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Wait myself upon huge coach decide allow decade. One without improve drive across security also imagine. Trade early challenge ok job blue.",  
+            "addressLocality": "Example hour already rise reduce again everybody degree. Onto range campaign research night. Share white single case get international.",  
+            "addressRegion": "Manager together personal all. Back trip receive bill.",  
+            "addressCountry": "Beautiful recent herself beyond game major into. Explain society dream day history record change speech. Those under direction.",  
+            "postalCode": "Husband support clearly once new only. Visit establish between identify attorney. Every week federal describe best building prove day.",  
+            "postOfficeBoxNumber": "Theory expert miss live. Sense information become detail."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Budget fire country discover travel."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Brightness:items:RCAP:18990801"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -36.083538,  
-        -0.107567  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Wait myself upon huge coach decide allow decade. One without improve drive across security also imagine. Trade early challenge ok job blue.",  
-      "addressLocality": "Example hour already rise reduce again everybody degree. Onto range campaign research night. Share white single case get international.",  
-      "addressRegion": "Manager together personal all. Back trip receive bill.",  
-      "addressCountry": "Beautiful recent herself beyond game major into. Explain society dream day history record change speech. Those under direction.",  
-      "postalCode": "Husband support clearly once new only. Visit establish between identify attorney. Every week federal describe best building prove day.",  
-      "postOfficeBoxNumber": "Theory expert miss live. Sense information become detail."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Budget fire country discover travel."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
