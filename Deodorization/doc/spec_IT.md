@@ -1,17 +1,32 @@
-Entità: Deodorizzazione  
-=======================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entità: Deodorizzazione  
+=======================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.OCF/blob/master/Deodorization/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Adattamento del programma Smart Data Models dell'originale IoTData data Models. Questa risorsa descrive una funzione di deodorizzazione, che può essere supportata dal controllo del filtro dell'aria.   La proprietà 'mode' è una modalità della funzione di deodorizzazione. Le modalità supportate sono definite dall'enumerazione ['off', 'on', 'auto'].  'off' significa che la funzione di deodorizzazione non è abilitata. 'on' significa che la funzione di deodorizzazione è attiva. 'auto' significa che la funzione di deodorizzazione è controllata automaticamente a seconda della condizione dell'aria rilevata nel dispositivo all'interno.  La proprietà 'currentstate' è lo stato attuale della funzione di deodorizzazione. Nel caso della modalità 'auto', se la condizione dell'aria rilevata è determinata come cattiva, la funzione sarà 'on'. Allora, il valore 'mode' è 'auto' e il valore 'currentstate' è 'on'. In caso contrario, la funzione rimane 'off'. Allora, il valore 'currentstate' è 'off'.**  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **Adattamento del programma di modelli di dati intelligenti dei modelli di dati IoTData originali. Questa risorsa descrive una funzione di deodorizzazione, che può essere supportata dal controllo del filtro dell'aria.   La proprietà 'mode' è una modalità della funzione di deodorizzazione. Le modalità supportate sono definite dall'enumerazione ['off', 'on', 'auto']. 'off' significa che la funzione di deodorizzazione non è abilitata. 'on' significa che la funzione di deodorizzazione è attiva. auto" significa che la funzione di deodorazione è controllata automaticamente in base alle condizioni dell'aria rilevate all'interno del dispositivo.  La proprietà "currentstate" è lo stato attuale della funzione di deodorizzazione. Nel caso della modalità 'auto', se le condizioni dell'aria rilevate sono cattive, la funzione sarà 'on'. Allora, il valore di 'mode' è 'auto' e il valore di 'currentstate' è 'on'. In caso contrario, la funzione rimane in stato "off". In tal caso, il valore "currentstate" è "off "**.  
+versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `currentstate`: Lo stato attuale della funzione Deodorizzazione.  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `id`: Identificatore unico dell'entità  - `if`: L'insieme di interfacce OCF supportato da questa risorsa.  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `mode`: Le modalità della funzione di deodorizzazione.  - `n`: Nome amichevole della risorsa  - `name`: Il nome di questo articolo.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `rt`: Il tipo di risorsa.  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `type`: Tipo di entità NGSI. Deve essere Deodorizzazione    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `currentstate[string]`: Lo stato attuale della funzione Deodorizzazione.  - `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `if[array]`: Il set di interfacce OCF supportato da questa risorsa.  - `location[*]`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `mode[string]`: Le modalità della funzione di deodorazione.  - `n[string]`: Nome amichevole della risorsa  - `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `rt[array]`: Il tipo di risorsa.  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `type[string]`: Tipo di entità NGSI. Deve essere Deodorizzazione  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- `id`  - `type`    
-Questo modello di dati proviene dall'originale [Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels). È stato esteso per soddisfare i requisiti di NGSI.  
-## Descrizione del modello di dati delle proprietà  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+Questo modello di dati proviene dal repository originale della [Open Connectivity Foundation] (https://github.com/openconnectivityfoundation/IoTDataModels). È stato esteso per soddisfare i requisiti NGSI.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Deodorization:    
@@ -341,9 +356,14 @@ Deodorization:
   x-version: 0.0.1    
 ```  
 </details>    
-## Esempio di payloads  
-#### Deodorizzazione dei valori chiave NGSI-v2 Esempio  
-Ecco un esempio di una deodorizzazione in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
+#### Deodorizzazione dei valori-chiave NGSI-v2 Esempio  
+Ecco un esempio di deodorizzazione in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Deodorization:id:XDXD:95550483",  
@@ -380,8 +400,10 @@ Deodorization:
   "areaServed": "Common collection agree away. Gun collection recently old project."  
 }  
 ```  
+</details>  
 #### Deodorizzazione NGSI-v2 normalizzata Esempio  
-Ecco un esempio di una deodorizzazione in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di deodorizzazione in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si usano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -459,127 +481,141 @@ Deodorization:
   }  
 }  
 ```  
-#### Deodorizzazione NGSI-LD valori chiave Esempio  
-Ecco un esempio di una deodorizzazione in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### Deodorizzazione Valori chiave NGSI-LD Esempio  
+Ecco un esempio di deodorizzazione in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Deodorization:id:XDXD:95550483",  
-  "dateCreated": "1999-03-18T19:45:38Z",  
-  "dateModified": "2003-06-19T17:39:31Z",  
-  "source": "Enter example study enjoy get research cost once. Professor bill page center.",  
-  "name": "Attention produce quite newspaper world story approach.",  
-  "alternateName": "Stand usually material per great although young. During move somebody everybody inside.",  
-  "description": "Talk fund we course affect mother. Bring western apply security democratic.",  
-  "dataProvider": "Success show social modern view. Officer stock true center have foot watch firm. Require capital yourself yard bar approach.",  
-  "owner": [  
-    "urn:ngsi-ld:Deodorization:items:RAZH:64911453",  
-    "urn:ngsi-ld:Deodorization:items:TUDH:55185476"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Deodorization:items:KRVY:49754379",  
-    "urn:ngsi-ld:Deodorization:items:YFMD:65193227"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -4.4983885,  
-      -135.992885  
+    "id": "urn:ngsi-ld:Deodorization:id:XDXD:95550483",  
+    "dateCreated": "1999-03-18T19:45:38Z",  
+    "dateModified": "2003-06-19T17:39:31Z",  
+    "source": "Enter example study enjoy get research cost once. Professor bill page center.",  
+    "name": "Attention produce quite newspaper world story approach.",  
+    "alternateName": "Stand usually material per great although young. During move somebody everybody inside.",  
+    "description": "Talk fund we course affect mother. Bring western apply security democratic.",  
+    "dataProvider": "Success show social modern view. Officer stock true center have foot watch firm. Require capital yourself yard bar approach.",  
+    "owner": [  
+        "urn:ngsi-ld:Deodorization:items:RAZH:64911453",  
+        "urn:ngsi-ld:Deodorization:items:TUDH:55185476"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Deodorization:items:KRVY:49754379",  
+        "urn:ngsi-ld:Deodorization:items:YFMD:65193227"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -4.4983885,  
+            -135.992885  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Low record Republican number prevent citizen group. List memory begin marriage weight.",  
+        "addressLocality": "Standard religious your buy boy down lot. Partner someone available guess security sing between create. Within standard everyone speech require street manage.",  
+        "addressRegion": "Short yet just table month until. Expert true dark director throughout red continue. You remain street various than training able.",  
+        "addressCountry": "There meet maybe message language such.",  
+        "postalCode": "Someone music several little training easy human.",  
+        "postOfficeBoxNumber": "Walk me continue executive green. Feel coach fall stuff often."  
+    },  
+    "areaServed": "Common collection agree away. Gun collection recently old project.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Low record Republican number prevent citizen group. List memory begin marriage weight.",  
-    "addressLocality": "Standard religious your buy boy down lot. Partner someone available guess security sing between create. Within standard everyone speech require street manage.",  
-    "addressRegion": "Short yet just table month until. Expert true dark director throughout red continue. You remain street various than training able.",  
-    "addressCountry": "There meet maybe message language such.",  
-    "postalCode": "Someone music several little training easy human.",  
-    "postOfficeBoxNumber": "Walk me continue executive green. Feel coach fall stuff often."  
-  },  
-  "areaServed": "Common collection agree away. Gun collection recently old project.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### Deodorizzazione NGSI-LD normalizzata Esempio  
-Ecco un esempio di una deodorizzazione in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di deodorizzazione in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si usano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Deodorization:id:GSSB:36330935",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1993-06-11T07:49:03Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2001-12-13T21:31:27Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Commercial visit fly particularly training. Heart degree leave child. Surface summer style student red."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Drive many rule check activity may. Of yeah ready career me."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Market fund series. Share simply country kind music class. Degree push against company point energy court. I modern face if respond."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Loss often skin."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Economy it total stock PM just enjoy. Ground official professional idea present. Young open situation than debate concern."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Deodorization:items:XPSC:94768884",  
-      "urn:ngsi-ld:Deodorization:items:FYFX:66660011"  
+    "id": "urn:ngsi-ld:Deodorization:id:GSSB:36330935",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1993-06-11T07:49:03Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2001-12-13T21:31:27Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Commercial visit fly particularly training. Heart degree leave child. Surface summer style student red."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Drive many rule check activity may. Of yeah ready career me."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Market fund series. Share simply country kind music class. Degree push against company point energy court. I modern face if respond."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Loss often skin."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Economy it total stock PM just enjoy. Ground official professional idea present. Young open situation than debate concern."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Deodorization:items:XPSC:94768884",  
+            "urn:ngsi-ld:Deodorization:items:FYFX:66660011"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Deodorization:items:TUUK:04645794"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -30.7009055,  
+                60.468347  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Claim Mrs seek tax condition down article. Teach start and nice blood myself dog.",  
+            "addressLocality": "Middle rise score concern.",  
+            "addressRegion": "Tax expect believe situation only stuff. These tax church surface happen arrive of.",  
+            "addressCountry": "Local everyone everything them radio total.",  
+            "postalCode": "Feeling perhaps course base involve oil try. Question democratic health design realize. Mean nothing machine officer form generation his.",  
+            "postOfficeBoxNumber": "House rest health entire down every carry. Staff away sell task effect describe."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Likely spring structure service. Congress various environment policy ground."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Deodorization:items:TUUK:04645794"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -30.7009055,  
-        60.468347  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Claim Mrs seek tax condition down article. Teach start and nice blood myself dog.",  
-      "addressLocality": "Middle rise score concern.",  
-      "addressRegion": "Tax expect believe situation only stuff. These tax church surface happen arrive of.",  
-      "addressCountry": "Local everyone everything them radio total.",  
-      "postalCode": "Feeling perhaps course base involve oil try. Question democratic health design realize. Mean nothing machine officer form generation his.",  
-      "postOfficeBoxNumber": "House rest health entire down every carry. Staff away sell task effect describe."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Likely spring structure service. Congress various environment policy ground."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
