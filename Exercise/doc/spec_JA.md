@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-事業体運動  
-=====  
+事業者運動  
+=====<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/Exercise/LICENSE.md)  
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**このリソースは、グルコース演習に関連するプロパティを記述する。演習プロパティは、デフォルトでパーセンテージの単位を持つ。  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Global description:**このリソースは、グルコース演習に関連するプロパティを記述する。演習プロパティは、デフォルトでパーセンテージの単位を持つ。  
 バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `exercise`: 実施した運動のレベル（％）。  - `id`: エンティティの一意な識別子  - `if`: このリソースがサポートする OCF インタフェースセット。  - `location`: 項目へのGeojson参照。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `n`: リソースのフレンドリ名  - `name`: このアイテムの名称です。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `precision`: precision'の値が公開されると、ResourceのPropertiesに対して+/-の許容範囲を提供します。したがって、あるプロパティがある値にUPDATEされ、そのプロパティがRETRIEVEDされた場合、RETRIEVEDされた値は設定された値+/-精度の範囲内であれば有効である。  - `range`: リソースに含まれるプロパティの有効範囲を数値で表したもの。配列の最初の値が最小値、2 番目の値が最大値となります。  - `rt`: リソースの種類  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで指定する文字の列。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `step`: 定義された範囲のステップ値（範囲が数値の場合は整数）。  範囲が0.0〜10.0でステップが2.5の場合、有効な値は0.0、2.5、5.0、7.5、10.0である。  - `type`: NGSIエンティティタイプ。それは運動でなければならない    
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `exercise[number]`: 実施した運動のレベル（％）。  - `id[*]`: エンティティの一意な識別子  - `if[array]`: このリソースがサポートする OCF インタフェースセット。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `n[string]`: リソースのフレンドリ名  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリスト  - `precision[number]`: 公開されるとき、'precision'の値は、ResourceのPropertyに対して+/-の許容範囲を提供する。したがって、あるプロパティがある値にUPDATEされ、そのプロパティがRETRIEVEDされた場合、RETRIEVEDされた値は設定された値+/-精度の範囲内であれば有効である。  - `range[array]`: Resource に含まれる Property の有効範囲を数値で表します。配列の最初の値が最小値、2 番目の値が最大値となります。  - `rt[array]`: リソースの種類  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `step[number]`: 定義された範囲にわたるステップ値。  範囲が0.0〜10.0でステップが2.5の場合、有効な値は0.0、2.5、5.0、7.5、10.0である。  - `type[string]`: NGSIエンティティタイプ。それは運動でなければならない  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 必要なプロパティ  
-- `exercise`  - `id`  - `type`    
+- `exercise`  - `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 データモデルは、Open Connectivity Foundationが作成したオリジナルを引用しています。https://github.com/openconnectivityfoundation/IoTDataModels のオリジナルリポジトリ  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
 アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Exercise:    
@@ -357,9 +370,14 @@ Exercise:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
 #### NGSI-v2キーバリューエクササイズ例  
-ここでは、ExerciseをJSON-LD形式でkey-valueとした例を示す。これは `options=keyValues` を使用した場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータが返される。  
+ここでは、ExerciseをJSON-LD形式でkey-valuesとした場合の例を示す。これは `options=keyValues` を使用した場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Exercise:id:JGBJ:53980716",  
@@ -422,8 +440,10 @@ Exercise:
   "type": "Exercise"  
 }  
 ```  
+</details>  
 #### NGSI-v2 正規化演習例  
 以下は、ExerciseをJSON-LD形式で正規化した例である。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -551,189 +571,203 @@ Exercise:
   }  
 }  
 ```  
+</details>  
 #### NGSI-LD鍵盤の演習例  
-ここでは、ExerciseをJSON-LD形式でkey-valueとして記述した例を示します。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを返します。  
+ここでは、ExerciseをJSON-LD形式でkey-valuesにした例を示す。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Exercise:id:JGBJ:53980716",  
-  "dateCreated": "1993-01-31T15:09:33Z",  
-  "dateModified": "1982-03-15T00:18:01Z",  
-  "source": "Ago fund along American mean. Fish federal body thought sing.",  
-  "name": "Experience season meet deal care. Available five study interview specific particular. Traditional minute probably manage half amount Mrs. Whose memory ground in field.",  
-  "alternateName": "Treatment course account drug peace nature physical. Outside recognize others argue attention. Specific couple total success lead seek expert. Their blue store project.",  
-  "description": "Level article decide goal.",  
-  "dataProvider": "Identify cultural board news. Mission it trouble after both I pull share.",  
-  "owner": [  
-    "urn:ngsi-ld:Exercise:items:WGHS:28673615",  
-    "urn:ngsi-ld:Exercise:items:MXJB:48370746"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Exercise:items:OOUL:62187452",  
-    "urn:ngsi-ld:Exercise:items:JJUR:56610269"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      80.5504325,  
-      64.021025  
+    "id": "urn:ngsi-ld:Exercise:id:JGBJ:53980716",  
+    "dateCreated": "1993-01-31T15:09:33Z",  
+    "dateModified": "1982-03-15T00:18:01Z",  
+    "source": "Ago fund along American mean. Fish federal body thought sing.",  
+    "name": "Experience season meet deal care. Available five study interview specific particular. Traditional minute probably manage half amount Mrs. Whose memory ground in field.",  
+    "alternateName": "Treatment course account drug peace nature physical. Outside recognize others argue attention. Specific couple total success lead seek expert. Their blue store project.",  
+    "description": "Level article decide goal.",  
+    "dataProvider": "Identify cultural board news. Mission it trouble after both I pull share.",  
+    "owner": [  
+        "urn:ngsi-ld:Exercise:items:WGHS:28673615",  
+        "urn:ngsi-ld:Exercise:items:MXJB:48370746"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Exercise:items:OOUL:62187452",  
+        "urn:ngsi-ld:Exercise:items:JJUR:56610269"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            80.5504325,  
+            64.021025  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Its whole prepare stand. Beyond apply magazine finish window whole. Help or out region major foreign relate. Husband fine stock politics stand.",  
+        "addressLocality": "Nation magazine guy themselves character. Order factor song doctor easy.",  
+        "addressRegion": "Sit toward left young.",  
+        "addressCountry": "Reason none meet power. Against cell event. About each become be. Choose as get sea.",  
+        "postalCode": "Control commercial shoulder. Source well activity three pressure too bad teach. Source second any just TV attack eight.",  
+        "postOfficeBoxNumber": "Yard purpose speech team south brother. Response ready tax focus."  
+    },  
+    "areaServed": "Thought compare personal light rich foot. Bar state positive spend appear language party do. Baby then property together back story.",  
+    "rt": [  
+        "oic.r.glucose.exercise",  
+        "oic.r.glucose.exercise"  
+    ],  
+    "exercise": {  
+        "type": "Property",  
+        "value": 86.5  
+    },  
+    "range": [  
+        655.2,  
+        560.6  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 448.3  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 111.5  
+    },  
+    "n": "Sound form along. Arm class air little. Line later teacher truth anyone perhaps. Support trip style he really free fund.",  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.baseline"  
+    ],  
+    "type": "Exercise",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Its whole prepare stand. Beyond apply magazine finish window whole. Help or out region major foreign relate. Husband fine stock politics stand.",  
-    "addressLocality": "Nation magazine guy themselves character. Order factor song doctor easy.",  
-    "addressRegion": "Sit toward left young.",  
-    "addressCountry": "Reason none meet power. Against cell event. About each become be. Choose as get sea.",  
-    "postalCode": "Control commercial shoulder. Source well activity three pressure too bad teach. Source second any just TV attack eight.",  
-    "postOfficeBoxNumber": "Yard purpose speech team south brother. Response ready tax focus."  
-  },  
-  "areaServed": "Thought compare personal light rich foot. Bar state positive spend appear language party do. Baby then property together back story.",  
-  "rt": [  
-    "oic.r.glucose.exercise",  
-    "oic.r.glucose.exercise"  
-  ],  
-  "exercise": {  
-    "type": "Property",  
-    "value": 86.5  
-  },  
-  "range": [  
-    655.2,  
-    560.6  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 448.3  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 111.5  
-  },  
-  "n": "Sound form along. Arm class air little. Line later teacher truth anyone perhaps. Support trip style he really free fund.",  
-  "if": [  
-    "oic.if.baseline",  
-    "oic.if.baseline"  
-  ],  
-  "type": "Exercise",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### 演習 NGSI-LD 正規化例  
-以下は、ExerciseをJSON-LD形式で正規化した例である。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+ここでは、Exercise を JSON-LD 形式で正規化した例を示す。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Exercise:id:BICD:19768156",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2010-02-12T20:49:40Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1987-05-28T10:25:55Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Total heart table before because. Capital detail show do. Front history mention address."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Must believe professional arrive. Rich suggest bad. Participant chance one."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Choose gun local charge almost low. Science fire life."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Quite already others oil sit type. Government eye bit cultural sort. Store fine have when value drop population. Side establish debate feeling herself."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Reason realize develop simply democratic about our. Relationship man resource figure. Letter fear maybe buy age member."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Exercise:items:EVOS:60128818",  
-      "urn:ngsi-ld:Exercise:items:DQRS:06073019"  
+    "id": "urn:ngsi-ld:Exercise:id:BICD:19768156",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2010-02-12T20:49:40Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1987-05-28T10:25:55Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Total heart table before because. Capital detail show do. Front history mention address."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Must believe professional arrive. Rich suggest bad. Participant chance one."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Choose gun local charge almost low. Science fire life."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Quite already others oil sit type. Government eye bit cultural sort. Store fine have when value drop population. Side establish debate feeling herself."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Reason realize develop simply democratic about our. Relationship man resource figure. Letter fear maybe buy age member."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Exercise:items:EVOS:60128818",  
+            "urn:ngsi-ld:Exercise:items:DQRS:06073019"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Exercise:items:DSHC:77333553"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -24.634838,  
+                50.1582  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Service day media energy. Item instead minute this woman.",  
+            "addressLocality": "As popular people make pay. Democratic authority pressure allow other.",  
+            "addressRegion": "Artist seek significant.",  
+            "addressCountry": "Exactly serve sea president new.",  
+            "postalCode": "Someone move ahead painting. Talk tough senior manager young point. Campaign yes central break off.",  
+            "postOfficeBoxNumber": "Real training loss so bad majority."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Manage left letter. House group without girl laugh out above."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.glucose.exercise"  
+        ]  
+    },  
+    "exercise": {  
+        "type": "Property",  
+        "value": 75.1  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            936.3,  
+            509.9  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 992.3  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 939.2  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Require foot practice chance much receive. Pull TV industry happy tree pretty American. Himself game ask short wide beat."  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.s"  
+        ]  
+    },  
+    "type": "Exercise",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Exercise:items:DSHC:77333553"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -24.634838,  
-        50.1582  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Service day media energy. Item instead minute this woman.",  
-      "addressLocality": "As popular people make pay. Democratic authority pressure allow other.",  
-      "addressRegion": "Artist seek significant.",  
-      "addressCountry": "Exactly serve sea president new.",  
-      "postalCode": "Someone move ahead painting. Talk tough senior manager young point. Campaign yes central break off.",  
-      "postOfficeBoxNumber": "Real training loss so bad majority."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Manage left letter. House group without girl laugh out above."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.glucose.exercise"  
-    ]  
-  },  
-  "exercise": {  
-    "type": "Property",  
-    "value": 75.1  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      936.3,  
-      509.9  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 992.3  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 939.2  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Require foot practice chance much receive. Pull TV industry happy tree pretty American. Himself game ask short wide beat."  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.s"  
-    ]  
-  },  
-  "type": "Exercise",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
