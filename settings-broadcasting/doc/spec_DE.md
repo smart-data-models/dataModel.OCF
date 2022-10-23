@@ -1,17 +1,32 @@
-Entität: einstellungen-broadcasting  
-===================================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entität: einstellungen-broadcasting  
+===================================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.OCF/blob/master/settings-broadcasting/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Globale Beschreibung: **Smart Data Models Programmanpassung der ursprünglichen IoTData-Datenmodelle. Ruft die aktuellen Broadcasting-Einstellungen des Geräts ab.**  
+Version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `antenna`: Typ der Antenne  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `auto-program`: Suchen Sie nach Kanälen mit Auto-Programm.  - `carrier-info`: Trägerinformationen des Rundfunksystems.  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `if`:   - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `location-info`: Standortinformationen des Rundfunksystems.  - `name`: Der Name dieses Artikels.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `rt`: Der Ressourcentyp der Geräteeinstellungen für das Broadcasting  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `supported-antennas`: Die Reihe der möglichen Antennen, die das Gerät unterstützt. Diese Eigenschaft sollte hinzugefügt werden, wenn eine Antenne unterstützt wird.  - `type`: NGSI-Entitätstyp. Es muss sich um Settings-Broadcasting handeln    
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, liegt das daran, dass es mehrere Typen oder unterschiedliche Formate/Muster haben kann</sub></sup>.  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `antenna[string]`: Typ der Antenne  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `auto-program[boolean]`: Suchen Sie mit dem automatischen Programm nach Kanälen.  - `carrier-info[string]`: Trägerinformationen des Rundfunksystems.  - `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `id[*]`: Eindeutiger Bezeichner der Entität  - `if[array]`: Im Original ist keine Beschreibung vorhanden  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `location-info[string]`: Standortinformationen des Rundfunksystems.  - `name[string]`: Der Name dieses Artikels.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `rt[array]`: Der Ressourcentyp der Geräteeinstellungen für das Broadcasting  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `supported-antennas[array]`: Die Reihe der möglichen Antennen, die das Gerät unterstützt. Diese Eigenschaft sollte hinzugefügt werden, wenn eine Antenne unterstützt wird.  - `type[string]`: NGSI-Entitätstyp. Es muss sich um Settings-Broadcasting handeln  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Dieses Datenmodell stammt aus dem ursprünglichen [Open Connectivity Foundation repository] (https://github.com/openconnectivityfoundation/IoTDataModels). Es wurde erweitert, um den Anforderungen der NGSI zu entsprechen.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 settings-broadcasting:    
@@ -104,6 +119,7 @@ settings-broadcasting:
       x-ngsi:    
         type: Property    
     if:    
+      description: 'No description is available in the original'    
       items:    
         enum:    
           - oic.if.rw    
@@ -113,6 +129,8 @@ settings-broadcasting:
       readOnly: true    
       type: array    
       uniqueItems: true    
+      x-ngsi:    
+        type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -341,9 +359,14 @@ settings-broadcasting:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Beispiel-Nutzlasten  
 #### settings-broadcasting NGSI-v2 key-values Beispiel  
 Hier ist ein Beispiel für ein Settings-Broadcasting im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2 bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:settings-broadcasting:id:SLUP:43489974",  
@@ -380,8 +403,10 @@ settings-broadcasting:
   "areaServed": "Worry here exist candidate. Avoid knowledge election audience yourself beat."  
 }  
 ```  
+</details>  
 #### settings-broadcasting NGSI-v2 normalized Beispiel  
 Hier ist ein Beispiel für ein Settings-Broadcasting im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -459,127 +484,141 @@ settings-broadcasting:
   }  
 }  
 ```  
+</details>  
 #### settings-broadcasting NGSI-LD key-values Beispiel  
 Hier ist ein Beispiel für ein Settings-Broadcasting im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-LD bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:settings-broadcasting:id:SLUP:43489974",  
-  "dateCreated": "2006-03-23T01:49:22Z",  
-  "dateModified": "1996-05-23T17:55:21Z",  
-  "source": "Person contain eight foot yet film. Stuff life paper.",  
-  "name": "Good friend pick physical too become teacher. Enjoy should near investment. Available left science up experience end.",  
-  "alternateName": "We opportunity management before. Easy cause line dream area join let.",  
-  "description": "Skill all room cost billion. Security herself beat everybody door.",  
-  "dataProvider": "Bed hard again traditional success key either. Onto professional staff over attention. Other treatment pay property cut upon. Any action former matter gun.",  
-  "owner": [  
-    "urn:ngsi-ld:settings-broadcasting:items:LGAG:86343291",  
-    "urn:ngsi-ld:settings-broadcasting:items:MPVF:05612437"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:settings-broadcasting:items:CKBR:08618962",  
-    "urn:ngsi-ld:settings-broadcasting:items:MUGP:50818543"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -80.067935,  
-      -43.419269  
+    "id": "urn:ngsi-ld:settings-broadcasting:id:SLUP:43489974",  
+    "dateCreated": "2006-03-23T01:49:22Z",  
+    "dateModified": "1996-05-23T17:55:21Z",  
+    "source": "Person contain eight foot yet film. Stuff life paper.",  
+    "name": "Good friend pick physical too become teacher. Enjoy should near investment. Available left science up experience end.",  
+    "alternateName": "We opportunity management before. Easy cause line dream area join let.",  
+    "description": "Skill all room cost billion. Security herself beat everybody door.",  
+    "dataProvider": "Bed hard again traditional success key either. Onto professional staff over attention. Other treatment pay property cut upon. Any action former matter gun.",  
+    "owner": [  
+        "urn:ngsi-ld:settings-broadcasting:items:LGAG:86343291",  
+        "urn:ngsi-ld:settings-broadcasting:items:MPVF:05612437"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:settings-broadcasting:items:CKBR:08618962",  
+        "urn:ngsi-ld:settings-broadcasting:items:MUGP:50818543"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -80.067935,  
+            -43.419269  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Low election scientist up they night. Dark north tree.",  
+        "addressLocality": "Decade more knowledge state need term. More case character owner skin ago. Hair generation environmental machine.",  
+        "addressRegion": "After walk project reality challenge we quickly. Painting brother choice thousand go child.",  
+        "addressCountry": "Article central standard door result heavy teacher. Friend democratic look member foot central around. Score successful item particularly country.",  
+        "postalCode": "Agency opportunity listen relate product only memory. Well beyond network.",  
+        "postOfficeBoxNumber": "Case interest arrive information. Without success current say account everybody."  
+    },  
+    "areaServed": "Worry here exist candidate. Avoid knowledge election audience yourself beat.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Low election scientist up they night. Dark north tree.",  
-    "addressLocality": "Decade more knowledge state need term. More case character owner skin ago. Hair generation environmental machine.",  
-    "addressRegion": "After walk project reality challenge we quickly. Painting brother choice thousand go child.",  
-    "addressCountry": "Article central standard door result heavy teacher. Friend democratic look member foot central around. Score successful item particularly country.",  
-    "postalCode": "Agency opportunity listen relate product only memory. Well beyond network.",  
-    "postOfficeBoxNumber": "Case interest arrive information. Without success current say account everybody."  
-  },  
-  "areaServed": "Worry here exist candidate. Avoid knowledge election audience yourself beat.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### settings-broadcasting NGSI-LD normalized Beispiel  
-Hier ist ein Beispiel für ein Settings-Broadcasting im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für ein Settings-Broadcasting im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:settings-broadcasting:id:BHOO:39692040",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1982-12-04T02:37:52Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1999-09-14T17:36:02Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Everything field she piece hard ready. Drive voice produce show against occur happen. Role entire window on significant."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Issue election exist college wall positive. Even fall skill foot small."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Word fact top shake across where. Choice pick manage billion right most. Professor financial among office power."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "State fast high perhaps trip voice. Oil teacher represent third. Possible spend left agreement outside page bank little. Collection fall those method three little."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Knowledge body member fire newspaper. Democrat little smile. Commercial single buy spring evidence involve."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:settings-broadcasting:items:TJUK:79894047",  
-      "urn:ngsi-ld:settings-broadcasting:items:OUMH:58838615"  
+    "id": "urn:ngsi-ld:settings-broadcasting:id:BHOO:39692040",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1982-12-04T02:37:52Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1999-09-14T17:36:02Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Everything field she piece hard ready. Drive voice produce show against occur happen. Role entire window on significant."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Issue election exist college wall positive. Even fall skill foot small."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Word fact top shake across where. Choice pick manage billion right most. Professor financial among office power."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "State fast high perhaps trip voice. Oil teacher represent third. Possible spend left agreement outside page bank little. Collection fall those method three little."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Knowledge body member fire newspaper. Democrat little smile. Commercial single buy spring evidence involve."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:settings-broadcasting:items:TJUK:79894047",  
+            "urn:ngsi-ld:settings-broadcasting:items:OUMH:58838615"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:settings-broadcasting:items:VMSZ:11469759"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -69.1373175,  
+                -136.039644  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Ball feel summer meet much quickly a kid. Long interesting money everybody site approach situation. Team miss training minute American late condition.",  
+            "addressLocality": "Quickly one attack. Can rule agency however.",  
+            "addressRegion": "Improve century soldier join important toward. I training ago teach there sell. Leave agreement third sure even question.",  
+            "addressCountry": "Image want trouble son. Position animal discussion rather bed must treat.",  
+            "postalCode": "Pay sound agency player. Cover sport trip public.",  
+            "postOfficeBoxNumber": "Plant mission candidate speech modern inside little. However increase her once together music. Blood boy glass however draw. Live cover if everybody no build."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Various vote suffer should goal bad. Early air laugh forward media whether similar."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:settings-broadcasting:items:VMSZ:11469759"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -69.1373175,  
-        -136.039644  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Ball feel summer meet much quickly a kid. Long interesting money everybody site approach situation. Team miss training minute American late condition.",  
-      "addressLocality": "Quickly one attack. Can rule agency however.",  
-      "addressRegion": "Improve century soldier join important toward. I training ago teach there sell. Leave agreement third sure even question.",  
-      "addressCountry": "Image want trouble son. Position animal discussion rather bed must treat.",  
-      "postalCode": "Pay sound agency player. Cover sport trip public.",  
-      "postOfficeBoxNumber": "Plant mission candidate speech modern inside little. However increase her once together music. Blood boy glass however draw. Live cover if everybody no build."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Various vote suffer should goal bad. Early air laugh forward media whether similar."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
