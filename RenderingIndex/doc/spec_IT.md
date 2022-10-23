@@ -1,17 +1,32 @@
-Entità: RenderingIndex  
-======================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entità: RenderingIndex  
+======================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.OCF/blob/master/RenderingIndex/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Adattamento del programma Smart Data Models dei modelli di dati originali IoTData. Questa risorsa descrive un indice di resa dei colori (CRI). La proprietà 'cri' è un numero. Un indice di resa cromatica (CRI) è una misura quantitativa della capacità di una fonte di luce di rivelare fedelmente i colori di vari oggetti rispetto ad una fonte di luce ideale o naturale. Le fonti di luce con un CRI elevato sono desiderabili in applicazioni critiche per il colore, come le cure neonatali e il restauro artistico. È definito dalla Commissione Internazionale per l'Illuminazione (CIE) come segue:[1] Resa cromatica: Effetto di un illuminante sull'aspetto cromatico degli oggetti per confronto conscio o subconscio con il loro aspetto cromatico sotto un illuminante di riferimento. Il valore spesso citato come 'CRI' sui prodotti di illuminazione disponibili in commercio è propriamente chiamato valore CIE Ra, essendo CRI un termine generico e CIE Ra l'indice di resa cromatica standard internazionale**  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **Adattamento del programma Modelli di dati intelligenti dei modelli di dati originali di IoTData. Questa risorsa descrive un indice di resa cromatica (CRI). La proprietà 'cri' è un numero. L'indice di resa cromatica (CRI) è una misura quantitativa della capacità di una sorgente luminosa di rivelare fedelmente i colori di vari oggetti rispetto a una sorgente luminosa ideale o naturale. Le sorgenti luminose con un CRI elevato sono auspicabili in applicazioni critiche dal punto di vista cromatico, come le cure neonatali e il restauro artistico. Il CRI è definito dalla Commissione Internazionale per l'Illuminazione (CIE) come segue:[1] Resa cromatica: Effetto di un illuminante sull'aspetto cromatico degli oggetti attraverso un confronto cosciente o subcosciente con il loro aspetto cromatico sotto un illuminante di riferimento. Il valore spesso indicato come "CRI" sui prodotti di illuminazione disponibili in commercio è propriamente chiamato valore CIE Ra, essendo "CRI" un termine generico e CIE Ra l'indice di resa cromatica standard internazionale**.  
+versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `cri`: L'indice di resa dei colori.  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `id`: Identificatore unico dell'entità  - `if`: L'insieme di interfacce OCF supportato da questa risorsa.  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n`: Nome amichevole della risorsa  - `name`: Il nome di questo articolo.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `rt`: Il tipo di risorsa.  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `type`: Tipo di entità NGSI. Deve essere RenderingIndex    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `cri[number]`: L'indice di resa cromatica.  - `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `if[array]`: Il set di interfacce OCF supportato da questa risorsa.  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `n[string]`: Nome amichevole della risorsa  - `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `rt[array]`: Il tipo di risorsa.  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `type[string]`: Tipo di entità NGSI. Deve essere RenderingIndex  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- `id`  - `type`    
-Questo modello di dati proviene dall'originale [Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels). È stato esteso per soddisfare i requisiti di NGSI.  
-## Descrizione del modello di dati delle proprietà  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+Questo modello di dati proviene dal repository originale della [Open Connectivity Foundation] (https://github.com/openconnectivityfoundation/IoTDataModels). È stato esteso per soddisfare i requisiti NGSI.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 RenderingIndex:    
@@ -330,9 +345,14 @@ RenderingIndex:
   x-version: 0.0.1    
 ```  
 </details>    
-## Esempio di payloads  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
 #### RenderingIndex Valori chiave NGSI-v2 Esempio  
-Ecco un esempio di un RenderingIndex in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di RenderingIndex in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:RenderingIndex:id:TMMA:93847518",  
@@ -369,8 +389,10 @@ RenderingIndex:
   "areaServed": "Institution attention different head movie. Provide cut writer."  
 }  
 ```  
+</details>  
 #### RenderingIndex NGSI-v2 normalizzato Esempio  
-Ecco un esempio di un RenderingIndex in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di RenderingIndex in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano le opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -448,127 +470,141 @@ RenderingIndex:
   }  
 }  
 ```  
+</details>  
 #### RenderingIndex Valori chiave NGSI-LD Esempio  
-Ecco un esempio di un RenderingIndex in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di RenderingIndex in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:RenderingIndex:id:TMMA:93847518",  
-  "dateCreated": "2000-09-16T05:33:48Z",  
-  "dateModified": "2013-07-30T12:39:10Z",  
-  "source": "Place produce left return while take. Process will develop admit. Upon next give appear. Star middle modern recently popular later.",  
-  "name": "Wrong media whom can free pretty since. Growth carry last wind example stuff. Also somebody choice grow worry throughout tough.",  
-  "alternateName": "Course first east. More hospital social sometimes project.",  
-  "description": "Trip address human price. Painting attack heart. Vote draw four during senior charge.",  
-  "dataProvider": "Low player up organization enter no machine. Establish physical magazine dark reality floor with father. Sure miss approach.",  
-  "owner": [  
-    "urn:ngsi-ld:RenderingIndex:items:VZQD:39658344",  
-    "urn:ngsi-ld:RenderingIndex:items:BJHS:76521119"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:RenderingIndex:items:FEZG:12690570",  
-    "urn:ngsi-ld:RenderingIndex:items:CGJL:41616557"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -28.874227,  
-      10.746036  
+    "id": "urn:ngsi-ld:RenderingIndex:id:TMMA:93847518",  
+    "dateCreated": "2000-09-16T05:33:48Z",  
+    "dateModified": "2013-07-30T12:39:10Z",  
+    "source": "Place produce left return while take. Process will develop admit. Upon next give appear. Star middle modern recently popular later.",  
+    "name": "Wrong media whom can free pretty since. Growth carry last wind example stuff. Also somebody choice grow worry throughout tough.",  
+    "alternateName": "Course first east. More hospital social sometimes project.",  
+    "description": "Trip address human price. Painting attack heart. Vote draw four during senior charge.",  
+    "dataProvider": "Low player up organization enter no machine. Establish physical magazine dark reality floor with father. Sure miss approach.",  
+    "owner": [  
+        "urn:ngsi-ld:RenderingIndex:items:VZQD:39658344",  
+        "urn:ngsi-ld:RenderingIndex:items:BJHS:76521119"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:RenderingIndex:items:FEZG:12690570",  
+        "urn:ngsi-ld:RenderingIndex:items:CGJL:41616557"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -28.874227,  
+            10.746036  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Offer run choose both far. Off less space continue at easy change push. Hundred eight land doctor. Stuff wait improve start term positive.",  
+        "addressLocality": "Rise former nearly appear stock draw. Tv image American above college. Manage month offer them stage dinner.",  
+        "addressRegion": "Number of tree head stay. Less maintain side professional pass letter.",  
+        "addressCountry": "Cut night determine. A next low me space follow.",  
+        "postalCode": "Stop continue peace. Read I fine first.",  
+        "postOfficeBoxNumber": "Hard story different soldier star kid official. Reach rather might current owner wrong listen effort."  
+    },  
+    "areaServed": "Institution attention different head movie. Provide cut writer.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Offer run choose both far. Off less space continue at easy change push. Hundred eight land doctor. Stuff wait improve start term positive.",  
-    "addressLocality": "Rise former nearly appear stock draw. Tv image American above college. Manage month offer them stage dinner.",  
-    "addressRegion": "Number of tree head stay. Less maintain side professional pass letter.",  
-    "addressCountry": "Cut night determine. A next low me space follow.",  
-    "postalCode": "Stop continue peace. Read I fine first.",  
-    "postOfficeBoxNumber": "Hard story different soldier star kid official. Reach rather might current owner wrong listen effort."  
-  },  
-  "areaServed": "Institution attention different head movie. Provide cut writer.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### RenderingIndex NGSI-LD normalizzato Esempio  
-Ecco un esempio di un RenderingIndex in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di RenderingIndex in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:RenderingIndex:id:MQEK:91143660",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2019-05-12T01:29:22Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2012-07-22T14:18:51Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Truth real cover his. Ground against outside to."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Pressure admit interview interview. She conference forget democratic break effect."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Firm remain final long six compare voice. Dinner city write someone. Song itself event cost describe speak."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Chance hundred whatever short. Door government financial service create describe. Player ready interview."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Source strong few. War water travel hotel take. Include plan chair risk tax positive."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:RenderingIndex:items:TTHV:52228086",  
-      "urn:ngsi-ld:RenderingIndex:items:XNER:44759686"  
+    "id": "urn:ngsi-ld:RenderingIndex:id:MQEK:91143660",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2019-05-12T01:29:22Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2012-07-22T14:18:51Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Truth real cover his. Ground against outside to."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Pressure admit interview interview. She conference forget democratic break effect."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Firm remain final long six compare voice. Dinner city write someone. Song itself event cost describe speak."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Chance hundred whatever short. Door government financial service create describe. Player ready interview."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Source strong few. War water travel hotel take. Include plan chair risk tax positive."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:RenderingIndex:items:TTHV:52228086",  
+            "urn:ngsi-ld:RenderingIndex:items:XNER:44759686"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:RenderingIndex:items:ZGSE:28706989"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                2.5042655,  
+                155.288883  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Bar him win. Candidate baby produce both. Head system thousand pass represent choice. Exist learn much image.",  
+            "addressLocality": "Those product pull reality young huge more. Only worry to practice. Show size foot common too across white.",  
+            "addressRegion": "Her mind treatment manage adult figure. Issue growth drug television state hope miss. Like international hope view. Probably argue professor account behind.",  
+            "addressCountry": "Participant car main quickly sit. Party make college its my. Religious president director production director push. Relationship enjoy later Mrs.",  
+            "postalCode": "Hit start international. Peace management face determine product happen police.",  
+            "postOfficeBoxNumber": "Animal player week then. From back song provide. War market he turn."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Government determine theory almost very. Investment sister choice. Name position on example particular anything fast."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:RenderingIndex:items:ZGSE:28706989"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        2.5042655,  
-        155.288883  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Bar him win. Candidate baby produce both. Head system thousand pass represent choice. Exist learn much image.",  
-      "addressLocality": "Those product pull reality young huge more. Only worry to practice. Show size foot common too across white.",  
-      "addressRegion": "Her mind treatment manage adult figure. Issue growth drug television state hope miss. Like international hope view. Probably argue professor account behind.",  
-      "addressCountry": "Participant car main quickly sit. Party make college its my. Religious president director production director push. Relationship enjoy later Mrs.",  
-      "postalCode": "Hit start international. Peace management face determine product happen police.",  
-      "postOfficeBoxNumber": "Animal player week then. From back song provide. War market he turn."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Government determine theory almost very. Investment sister choice. Name position on example particular anything fast."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
