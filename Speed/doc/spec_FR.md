@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-Entité : Vitesse  
-================  
+Entité : Speed  
+==============<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.OCF/blob/master/Speed/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Description globale : **Cette ressource décrit la vitesse d'un objet, qui est la magnitude de sa vélocité. L'unité, qui est l'unité SI par défaut, est le mètre par seconde. La propriété speed est une valeur en lecture seule qui est fournie par le serveur. Lorsque la plage (de 'oic.r.baseresource') est omise, la valeur par défaut est 0 à +MAXFLOAT.**  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Description globale : **Cette ressource décrit la vitesse d'un objet, qui est la magnitude de sa vélocité. L'unité, qui est l'unité SI par défaut, est le mètre par seconde. La propriété speed est une valeur en lecture seule qui est fournie par le serveur. Lorsque la plage (de 'oic.r.baseresource') est omise, la valeur par défaut est de 0 à +MAXFLOAT.**  
 version : 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `if`: L'ensemble des interfaces OCF supportées par cette ressource.  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `n`: Nom amical de la ressource  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `range`: La plage valide pour la propriété de la ressource sous forme de nombre. La première valeur du tableau est la valeur minimale, la deuxième valeur du tableau est la valeur maximale.  - `rt`: Le type de ressource.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `speed`: Cette propriété décrit la vitesse d'un objet en mètre par seconde (unité SI). Il convient toutefois de noter que l'unité de vitesse la plus courante dans l'usage quotidien est le kilomètre par heure ou, aux États-Unis et au Royaume-Uni, les miles par heure.  - `step`: Valeur de pas sur la plage définie, un nombre entier lorsque la plage est un nombre.  Il s'agit de l'incrément pour les valeurs valides dans l'intervalle ; ainsi, si l'intervalle est de 0,0 à 10,0 et que le pas est de 2,5, les valeurs valides sont 0,0, 2,5, 5,0, 7,5 et 10,0.  - `type`: Type d'entité NGSI. Il doit s'agir de Speed    
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour cet élément  - `areaServed[string]`: La zone géographique où un service ou un article offert est fourni  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified[string]`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description[string]`: Une description de cet article  - `id[*]`: Identifiant unique de l'entité  - `if[array]`: L'ensemble des interfaces OCF supportées par cette ressource.  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `n[string]`: Nom amical de la ressource  - `name[string]`: Le nom de cet élément.  - `owner[array]`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `range[array]`: La plage valide pour la propriété de la ressource sous forme de nombre. La première valeur du tableau est la valeur minimale, la deuxième valeur du tableau est la valeur maximale.  - `rt[array]`: Le type de ressource.  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `speed[number]`: Cette propriété décrit la vitesse d'un objet en mètre par seconde (unité SI). Il convient toutefois de noter que l'unité de vitesse la plus courante dans l'usage quotidien est le kilomètre par heure ou, aux États-Unis et au Royaume-Uni, les miles par heure.  - `step[number]`: Valeur de pas sur la plage définie, un nombre entier lorsque la plage est un nombre.  Il s'agit de l'incrément pour les valeurs valides dans l'intervalle ; ainsi, si l'intervalle est de 0,0 à 10,0 et que le pas est de 2,5, les valeurs valides sont 0,0, 2,5, 5,0, 7,5 et 10,0.  - `type[string]`: Type d'entité NGSI. Il doit s'agir de Speed  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propriétés requises  
-- `id`  - `speed`  - `type`    
+- `id`  - `speed`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Modèle de données adapté de l'original créé par l'Open Connectivity Foundation. Dépôt original dans https://github.com/openconnectivityfoundation/IoTDataModels  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Speed:    
@@ -348,9 +361,14 @@ Speed:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Exemples de charges utiles  
 #### Vitesse NGSI-v2 valeurs-clés Exemple  
 Voici un exemple de Speed au format JSON-LD en tant que key-values. Ceci est compatible avec NGSI-v2 quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Speed:id:TMBQ:86557501",  
@@ -409,8 +427,10 @@ Speed:
   "type": "Speed"  
 }  
 ```  
+</details>  
 #### Vitesse NGSI-v2 normalisée Exemple  
 Voici un exemple d'un Speed au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -531,181 +551,195 @@ Speed:
   }  
 }  
 ```  
+</details>  
 #### Valeurs clés de la vitesse NGSI-LD Exemple  
 Voici un exemple de Speed au format JSON-LD en tant que key-values. Ceci est compatible avec NGSI-LD en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Speed:id:TMBQ:86557501",  
-  "dateCreated": "1971-05-07T09:22:01Z",  
-  "dateModified": "2001-02-25T04:31:00Z",  
-  "source": "Standard trip consider development. Analysis walk similar clearly commercial western animal. News mouth year consumer.",  
-  "name": "Office arrive structure down. Make become number mind.",  
-  "alternateName": "Ahead recognize event guy player land. West community increase sure. Night office account toward.",  
-  "description": "Stock can best face treat first arrive here. She some recent fight wrong white. Somebody month soon future but reflect explain.",  
-  "dataProvider": "Black member here serve evidence near wind. Learn college say interesting make great affect. Democrat local because treatment.",  
-  "owner": [  
-    "urn:ngsi-ld:Speed:items:EOKC:04139618",  
-    "urn:ngsi-ld:Speed:items:LTWJ:10169397"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Speed:items:ARYG:93617525",  
-    "urn:ngsi-ld:Speed:items:IUVN:24628987"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      63.217539,  
-      -175.83232  
+    "id": "urn:ngsi-ld:Speed:id:TMBQ:86557501",  
+    "dateCreated": "1971-05-07T09:22:01Z",  
+    "dateModified": "2001-02-25T04:31:00Z",  
+    "source": "Standard trip consider development. Analysis walk similar clearly commercial western animal. News mouth year consumer.",  
+    "name": "Office arrive structure down. Make become number mind.",  
+    "alternateName": "Ahead recognize event guy player land. West community increase sure. Night office account toward.",  
+    "description": "Stock can best face treat first arrive here. She some recent fight wrong white. Somebody month soon future but reflect explain.",  
+    "dataProvider": "Black member here serve evidence near wind. Learn college say interesting make great affect. Democrat local because treatment.",  
+    "owner": [  
+        "urn:ngsi-ld:Speed:items:EOKC:04139618",  
+        "urn:ngsi-ld:Speed:items:LTWJ:10169397"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Speed:items:ARYG:93617525",  
+        "urn:ngsi-ld:Speed:items:IUVN:24628987"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            63.217539,  
+            -175.83232  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Red ahead culture reality Mr difficult. Politics involve note just.",  
+        "addressLocality": "Ability watch Mrs minute. Artist about quite read exactly education director keep. Director else away power perhaps.",  
+        "addressRegion": "Gun more short then action. Skin course father house. Two guess strong onto.",  
+        "addressCountry": "Necessary memory drug available newspaper. Discussion modern away coach foot plant.",  
+        "postalCode": "Consumer future measure total many order early. Leave defense center around company attorney customer.",  
+        "postOfficeBoxNumber": "Direction small strategy oil sit."  
+    },  
+    "areaServed": "Future heart guess kitchen set check official.",  
+    "speed": {  
+        "type": "Property",  
+        "value": 242.3  
+    },  
+    "rt": [  
+        "oic.r.speed",  
+        "oic.r.speed"  
+    ],  
+    "n": "Nice I happy ground foreign fall. Sell style treat. Series build be continue.",  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.s"  
+    ],  
+    "range": [  
+        255.1,  
+        419.5  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 266.2  
+    },  
+    "type": "Speed",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Red ahead culture reality Mr difficult. Politics involve note just.",  
-    "addressLocality": "Ability watch Mrs minute. Artist about quite read exactly education director keep. Director else away power perhaps.",  
-    "addressRegion": "Gun more short then action. Skin course father house. Two guess strong onto.",  
-    "addressCountry": "Necessary memory drug available newspaper. Discussion modern away coach foot plant.",  
-    "postalCode": "Consumer future measure total many order early. Leave defense center around company attorney customer.",  
-    "postOfficeBoxNumber": "Direction small strategy oil sit."  
-  },  
-  "areaServed": "Future heart guess kitchen set check official.",  
-  "speed": {  
-    "type": "Property",  
-    "value": 242.3  
-  },  
-  "rt": [  
-    "oic.r.speed",  
-    "oic.r.speed"  
-  ],  
-  "n": "Nice I happy ground foreign fall. Sell style treat. Series build be continue.",  
-  "if": [  
-    "oic.if.baseline",  
-    "oic.if.s"  
-  ],  
-  "range": [  
-    255.1,  
-    419.5  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 266.2  
-  },  
-  "type": "Speed",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### Vitesse NGSI-LD normalisée Exemple  
 Voici un exemple d'un Speed au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Speed:id:FDJH:34364969",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1985-11-16T03:08:33Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1990-12-26T00:39:02Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Soon beat life own good since social. Society road remain agency specific describe."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Wrong level worker describe computer food speech. Campaign hundred how source."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Lose us ready beautiful message store up. Top certain ground. Memory none dark inside ball some boy always."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Despite about national today worry use under. Person per key specific foot claim into. Whole rise wide small art rise."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Church board executive boy girl. Important cut price above age."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Speed:items:ZOUH:64779507",  
-      "urn:ngsi-ld:Speed:items:HAKR:79899173"  
+    "id": "urn:ngsi-ld:Speed:id:FDJH:34364969",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1985-11-16T03:08:33Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1990-12-26T00:39:02Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Soon beat life own good since social. Society road remain agency specific describe."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Wrong level worker describe computer food speech. Campaign hundred how source."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Lose us ready beautiful message store up. Top certain ground. Memory none dark inside ball some boy always."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Despite about national today worry use under. Person per key specific foot claim into. Whole rise wide small art rise."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Church board executive boy girl. Important cut price above age."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Speed:items:ZOUH:64779507",  
+            "urn:ngsi-ld:Speed:items:HAKR:79899173"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Speed:items:JKMX:48696197"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -39.8227335,  
+                163.224954  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Represent reach bag worker within. Value wonder image week. Decade term from responsibility sell.",  
+            "addressLocality": "Represent value ball last population least season. Organization significant discussion increase standard similar old. Alone him situation. Improve light officer become.",  
+            "addressRegion": "Professor can find. Assume protect pattern high pick. Difficult former still meet player director. Detail listen eat try major challenge.",  
+            "addressCountry": "Leader industry performance discover cause. His discussion have produce international worry bank.",  
+            "postalCode": "Material where prevent animal moment. Challenge party role now leg camera development produce.",  
+            "postOfficeBoxNumber": "Certainly popular science them describe drive through. Present might series nice picture."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Ability half easy discuss series alone. Item factor note well accept. Including time audience."  
+    },  
+    "speed": {  
+        "type": "Property",  
+        "value": 954.1  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.speed"  
+        ]  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Anyone national writer author pretty. Step close his future model."  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            196.3,  
+            305.1  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 803.5  
+    },  
+    "type": "Speed",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Speed:items:JKMX:48696197"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -39.8227335,  
-        163.224954  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Represent reach bag worker within. Value wonder image week. Decade term from responsibility sell.",  
-      "addressLocality": "Represent value ball last population least season. Organization significant discussion increase standard similar old. Alone him situation. Improve light officer become.",  
-      "addressRegion": "Professor can find. Assume protect pattern high pick. Difficult former still meet player director. Detail listen eat try major challenge.",  
-      "addressCountry": "Leader industry performance discover cause. His discussion have produce international worry bank.",  
-      "postalCode": "Material where prevent animal moment. Challenge party role now leg camera development produce.",  
-      "postOfficeBoxNumber": "Certainly popular science them describe drive through. Present might series nice picture."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Ability half easy discuss series alone. Item factor note well accept. Including time audience."  
-  },  
-  "speed": {  
-    "type": "Property",  
-    "value": 954.1  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.speed"  
-    ]  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Anyone national writer author pretty. Step close his future model."  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      196.3,  
-      305.1  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 803.5  
-  },  
-  "type": "Speed",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
