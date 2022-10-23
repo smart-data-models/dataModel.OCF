@@ -1,17 +1,32 @@
-エンティティGlucoseHealth  
-===================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティグルコースヘルス  
+==============<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/GlucoseHealth/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな説明です。**IoTDataのデータモデルをスマートデータモデルプログラムで改良したものです。このリソースは、コンテキストヘルスに関連するプロパティを記述している。healthプロパティは、サーバーから提供される読み取り専用の値で、minorとmajorは一般的な健康状態や病気のレベル、mensesは女性の月経周期、stressは生理的または心理的なストレスを表しています。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**オリジナルの IoTData データモデルをスマートデータモデルプログラムに適応させたもの。この Resource は、コンテキストの健康に関連する Properties を記述する。健康状態プロパティは、サーバーから提供される読み取り専用の値であり、マイナーとメジャーは、一般的な健康状態や病気のレベルに関連し、月経は女性の月経周期を指し、ストレスは生理的または心理的ストレスを指します**。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `health`: ブドウ糖を摂取することで、人が感じる様々な健康のレベル。  - `id`: エンティティのユニークな識別子  - `if`: このリソースがサポートするOCFインターフェースセット  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `n`: リソースのフレンドリーネーム  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `rt`: リソースタイプ  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSIエンティティタイプ。GlucoseHealthである必要があります。    
-必須項目  
-- `id`  - `type`    
-このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)から来ています。NGSIの要件に適合するように拡張されています。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `health[string]`: ブドウ糖を摂取したときに人が感じる健康状態の様々なレベル。  - `id[*]`: エンティティの一意な識別子  - `if[array]`: このリソースがサポートする OCF インタフェースセット。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `n[string]`: リソースのフレンドリ名  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリスト  - `rt[array]`: リソースの種類  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSIエンティティタイプ。GlucoseHealth である必要があります。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)に由来しています。NGSIの要件に適合するように拡張されている。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 GlucoseHealth:    
@@ -335,9 +350,14 @@ GlucoseHealth:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### GlucoseHealth NGSI-v2 key-values 例  
-GlucoseHealthをkey-valuesとしてJSON-LD形式で出力した例です。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### GlucoseHealth NGSI-v2 key-value の例。  
+GlucoseHealthをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:GlucoseHealth:id:YGNK:51960649",  
@@ -374,8 +394,10 @@ GlucoseHealth:
   "areaServed": "Other song mission education artist specific goal. White worker order follow head. Grow design option control."  
 }  
 ```  
-#### GlucoseHealth NGSI-v2の正規化例  
-正常化されたJSON-LD形式のGlucoseHealthの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### GlucoseHealth NGSI-v2 正規化例  
+以下は、正規化された JSON-LD 形式の GlucoseHealth の例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -453,127 +475,141 @@ GlucoseHealth:
   }  
 }  
 ```  
-#### GlucoseHealth NGSI-LDのキーバリューの例  
-GlucoseHealthをkey-valuesとしてJSON-LD形式で出力した例です。これは`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### GlucoseHealth NGSI-LD key-value の例  
+GlucoseHealthをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返されます。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:GlucoseHealth:id:YGNK:51960649",  
-  "dateCreated": "1986-04-06T00:49:05Z",  
-  "dateModified": "2008-08-16T16:15:39Z",  
-  "source": "Response control produce traditional thing boy professional. Lot professional perhaps evening.",  
-  "name": "Subject me sound admit within. Ahead different final and already.",  
-  "alternateName": "Toward bring ten. Best citizen project majority strong bad. On series another she whose.",  
-  "description": "Make produce able society. A meet natural have off child.",  
-  "dataProvider": "Just white short when stay. Work civil rise front.",  
-  "owner": [  
-    "urn:ngsi-ld:GlucoseHealth:items:FZEK:56874643",  
-    "urn:ngsi-ld:GlucoseHealth:items:FWOW:04889902"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:GlucoseHealth:items:WUFR:61731131",  
-    "urn:ngsi-ld:GlucoseHealth:items:CRGK:49104126"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -53.461772,  
-      1.252465  
+    "id": "urn:ngsi-ld:GlucoseHealth:id:YGNK:51960649",  
+    "dateCreated": "1986-04-06T00:49:05Z",  
+    "dateModified": "2008-08-16T16:15:39Z",  
+    "source": "Response control produce traditional thing boy professional. Lot professional perhaps evening.",  
+    "name": "Subject me sound admit within. Ahead different final and already.",  
+    "alternateName": "Toward bring ten. Best citizen project majority strong bad. On series another she whose.",  
+    "description": "Make produce able society. A meet natural have off child.",  
+    "dataProvider": "Just white short when stay. Work civil rise front.",  
+    "owner": [  
+        "urn:ngsi-ld:GlucoseHealth:items:FZEK:56874643",  
+        "urn:ngsi-ld:GlucoseHealth:items:FWOW:04889902"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:GlucoseHealth:items:WUFR:61731131",  
+        "urn:ngsi-ld:GlucoseHealth:items:CRGK:49104126"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -53.461772,  
+            1.252465  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Rise rather see recognize better dinner. Not evidence find view buy. Garden note skin during blue meeting.",  
+        "addressLocality": "Charge high early take. Defense daughter protect I simple. Name current in.",  
+        "addressRegion": "Detail tend military baby protect focus. Including money describe. School political interesting involve art information once bring.",  
+        "addressCountry": "Civil experience not off. History hour rest she.",  
+        "postalCode": "Consumer despite degree process. Sister budget total anyone behavior book. Billion require law participant election front month maybe.",  
+        "postOfficeBoxNumber": "Relate national take capital off half picture. That class apply line color have skill. Such Republican yard issue. Tough manager court grow summer your thousand."  
+    },  
+    "areaServed": "Other song mission education artist specific goal. White worker order follow head. Grow design option control.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Rise rather see recognize better dinner. Not evidence find view buy. Garden note skin during blue meeting.",  
-    "addressLocality": "Charge high early take. Defense daughter protect I simple. Name current in.",  
-    "addressRegion": "Detail tend military baby protect focus. Including money describe. School political interesting involve art information once bring.",  
-    "addressCountry": "Civil experience not off. History hour rest she.",  
-    "postalCode": "Consumer despite degree process. Sister budget total anyone behavior book. Billion require law participant election front month maybe.",  
-    "postOfficeBoxNumber": "Relate national take capital off half picture. That class apply line color have skill. Such Republican yard issue. Tough manager court grow summer your thousand."  
-  },  
-  "areaServed": "Other song mission education artist specific goal. White worker order follow head. Grow design option control.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-#### GlucoseHealth NGSI-LDの正規化例  
-正常化されたJSON-LD形式のGlucoseHealthの例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### GlucoseHealth NGSI-LD 正規化例  
+GlucoseHealth を JSON-LD 形式で正規化した例です。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:GlucoseHealth:id:OYOG:86546161",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1996-03-31T08:57:37Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1992-09-20T11:34:04Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Civil agreement after organization. Medical computer statement tree herself wonder. Investment ago society late particular place."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Point magazine feel. Successful career play window. Avoid she debate drop."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Subject public evening body difference society. Again decade analysis music."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Maintain collection idea quickly out. Leader teacher reason play view. Significant build painting what population worker."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Affect church pattern heavy camera water month."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:GlucoseHealth:items:WXXP:92272198",  
-      "urn:ngsi-ld:GlucoseHealth:items:GOFL:73035775"  
+    "id": "urn:ngsi-ld:GlucoseHealth:id:OYOG:86546161",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1996-03-31T08:57:37Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1992-09-20T11:34:04Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Civil agreement after organization. Medical computer statement tree herself wonder. Investment ago society late particular place."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Point magazine feel. Successful career play window. Avoid she debate drop."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Subject public evening body difference society. Again decade analysis music."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Maintain collection idea quickly out. Leader teacher reason play view. Significant build painting what population worker."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Affect church pattern heavy camera water month."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:GlucoseHealth:items:WXXP:92272198",  
+            "urn:ngsi-ld:GlucoseHealth:items:GOFL:73035775"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:GlucoseHealth:items:PYQU:68924026"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -65.464196,  
+                -102.585699  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Traditional least property. Eye message ability wrong.",  
+            "addressLocality": "Remember wide culture. Weight senior pay.",  
+            "addressRegion": "Attorney money decide its off author. Traditional citizen attorney dark.",  
+            "addressCountry": "Pretty old foot imagine. Yourself sound lot physical relationship.",  
+            "postalCode": "Entire sport white operation month. Sing garden wall want. Interview our cold product class. Likely agent southern this.",  
+            "postOfficeBoxNumber": "Administration clear assume consider summer cold read. Hundred guess list energy bed drive rest."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Picture memory picture red letter crime already. Watch place expert out choose big stop way. Job Mr agree."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:GlucoseHealth:items:PYQU:68924026"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -65.464196,  
-        -102.585699  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Traditional least property. Eye message ability wrong.",  
-      "addressLocality": "Remember wide culture. Weight senior pay.",  
-      "addressRegion": "Attorney money decide its off author. Traditional citizen attorney dark.",  
-      "addressCountry": "Pretty old foot imagine. Yourself sound lot physical relationship.",  
-      "postalCode": "Entire sport white operation month. Sing garden wall want. Interview our cold product class. Likely agent southern this.",  
-      "postOfficeBoxNumber": "Administration clear assume consider summer cold read. Hundred guess list energy bed drive rest."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Picture memory picture red letter crime already. Watch place expert out choose big stop way. Job Mr agree."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
