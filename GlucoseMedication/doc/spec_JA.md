@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 エンティティグルコースメディケーション  
-===================  
+===================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/GlucoseMedication/LICENSE.md)  
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 グローバルな記述です。**このリソースは、コンテキストに関連する薬のプロパティを記述する。単位はmgとmLのうちの1つの値で、薬のプロパティはミリグラム[mg]のデフォルト単位を持つ。  
 バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `id`: エンティティの一意な識別子  - `if`: このリソースがサポートする OCF インタフェースセット。  - `location`: アイテムへのGeojsonリファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `medication`: 服用した薬の量  - `n`: リソースのフレンドリ名  - `name`: このアイテムの名称です。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `precision`: precision'の値が公開されると、ResourceのPropertiesに対して+/-の許容範囲を提供します。したがって、あるプロパティがある値にUPDATEされ、そのプロパティがRETRIEVEDされた場合、RETRIEVEDされた値は設定された値+/-精度の範囲内であれば有効である。  - `range`: リソースに含まれるプロパティの有効範囲を数値で表したもの。配列の最初の値が最小値、2 番目の値が最大値となります。  - `regimen`: 薬物療法  - `rt`: リソースの種類  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで指定する文字の列。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `step`: 定義された範囲のステップ値（範囲が数値の場合は整数）。  範囲が0.0〜10.0でステップが2.5の場合、有効な値は0.0、2.5、5.0、7.5、10.0である。  - `type`: NGSIエンティティタイプ。GlucoseMedicationでなければならない。  - `units`: 服薬量の単位    
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `if[array]`: このリソースがサポートする OCF インタフェースセット。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `medication[number]`: 服用した薬の量  - `n[string]`: リソースのフレンドリ名  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `precision[number]`: 公開されるとき、'precision'の値は、ResourceのPropertyに対して+/-の許容範囲を提供する。したがって、あるプロパティがある値にUPDATEされ、そのプロパティがRETRIEVEDされた場合、RETRIEVEDされた値は設定された値+/-精度の範囲内であれば有効である。  - `range[array]`: Resource に含まれる Property の有効範囲を数値で表します。配列の最初の値が最小値、2 番目の値が最大値となります。  - `regimen[string]`: 薬物療法  - `rt[array]`: リソースの種類  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `step[number]`: 定義された範囲にわたるステップ値。  範囲が0.0〜10.0でステップが2.5の場合、有効な値は0.0、2.5、5.0、7.5、10.0である。  - `type[string]`: NGSIエンティティタイプ。GlucoseMedicationでなければならない。  - `units[string]`: 服薬量の単位  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 必要なプロパティ  
-- `id`  - `medication`  - `type`    
+- `id`  - `medication`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 データモデルは、Open Connectivity Foundationが作成したオリジナルを引用しています。https://github.com/openconnectivityfoundation/IoTDataModels のオリジナルリポジトリ  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
 アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 GlucoseMedication:    
@@ -378,9 +391,14 @@ GlucoseMedication:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
 #### GlucoseMedication NGSI-v2 key-value の例。  
-GlucoseMedicationをJSON-LD形式でkey-valueとした例です。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+GlucoseMedicationをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:GlucoseMedication:id:FUCJ:71822707",  
@@ -445,8 +463,10 @@ GlucoseMedication:
   "type": "GlucoseMedication"  
 }  
 ```  
+</details>  
 #### GlucoseMedication NGSI-v2 正規化例  
-以下は、GlucoseMedicationをJSON-LD形式で正規化した例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+GlucoseMedication を JSON-LD 形式で正規化した例です。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -582,199 +602,213 @@ GlucoseMedication:
   }  
 }  
 ```  
+</details>  
 #### GlucoseMedication NGSI-LD key-value の例  
-GlucoseMedicationをJSON-LD形式でkey-valueとして記述した例です。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返されます。  
+GlucoseMedicationをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返されます。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:GlucoseMedication:id:FUCJ:71822707",  
-  "dateCreated": "2019-06-23T02:12:16Z",  
-  "dateModified": "2006-11-21T13:06:16Z",  
-  "source": "Week money out course up step.",  
-  "name": "Recent result figure fine phone after first. Happen training early.",  
-  "alternateName": "True wear attorney work writer baby.",  
-  "description": "President price character hard group per window too. Key reduce impact edge training system radio. Chair religious create dream six third they.",  
-  "dataProvider": "Hour third name impact remember computer event. Have social seek.",  
-  "owner": [  
-    "urn:ngsi-ld:GlucoseMedication:items:QYNE:69055829",  
-    "urn:ngsi-ld:GlucoseMedication:items:IFJD:14934446"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:GlucoseMedication:items:VHJA:84783857",  
-    "urn:ngsi-ld:GlucoseMedication:items:KIGQ:46185764"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      56.010655,  
-      -59.477813  
+    "id": "urn:ngsi-ld:GlucoseMedication:id:FUCJ:71822707",  
+    "dateCreated": "2019-06-23T02:12:16Z",  
+    "dateModified": "2006-11-21T13:06:16Z",  
+    "source": "Week money out course up step.",  
+    "name": "Recent result figure fine phone after first. Happen training early.",  
+    "alternateName": "True wear attorney work writer baby.",  
+    "description": "President price character hard group per window too. Key reduce impact edge training system radio. Chair religious create dream six third they.",  
+    "dataProvider": "Hour third name impact remember computer event. Have social seek.",  
+    "owner": [  
+        "urn:ngsi-ld:GlucoseMedication:items:QYNE:69055829",  
+        "urn:ngsi-ld:GlucoseMedication:items:IFJD:14934446"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:GlucoseMedication:items:VHJA:84783857",  
+        "urn:ngsi-ld:GlucoseMedication:items:KIGQ:46185764"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            56.010655,  
+            -59.477813  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Break trouble agreement choice at attention nothing. Trip white physical summer expect pass. Raise media practice goal garden red.",  
+        "addressLocality": "Model from break add unit same offer. Meeting maybe picture poor face. Own amount know road budget agency she. Election president these action woman pressure though.",  
+        "addressRegion": "East little voice source officer individual. Science new television serve machine pay talk. Drive near travel.",  
+        "addressCountry": "Blood performance pass similar subject. Month explain check buy meet require.",  
+        "postalCode": "Live hour indeed become vote. Lose shake line our single be win.",  
+        "postOfficeBoxNumber": "Will high challenge remain food stage. Soldier vote see how."  
+    },  
+    "areaServed": "Drop image result manager theory practice Democrat enough. Building see strong send radio serve its. Offer page north born travel should and off.",  
+    "rt": [  
+        "oic.r.glucose.medication",  
+        "oic.r.glucose.medication"  
+    ],  
+    "regimen": "rapidacting",  
+    "medication": {  
+        "type": "Property",  
+        "value": 972.0  
+    },  
+    "units": "mg",  
+    "range": [  
+        778.1,  
+        631.7  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 150.9  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 560.6  
+    },  
+    "n": "Respond with lawyer arm off. Ahead own job mention. Institution matter represent eye.",  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.baseline"  
+    ],  
+    "type": "GlucoseMedication",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Break trouble agreement choice at attention nothing. Trip white physical summer expect pass. Raise media practice goal garden red.",  
-    "addressLocality": "Model from break add unit same offer. Meeting maybe picture poor face. Own amount know road budget agency she. Election president these action woman pressure though.",  
-    "addressRegion": "East little voice source officer individual. Science new television serve machine pay talk. Drive near travel.",  
-    "addressCountry": "Blood performance pass similar subject. Month explain check buy meet require.",  
-    "postalCode": "Live hour indeed become vote. Lose shake line our single be win.",  
-    "postOfficeBoxNumber": "Will high challenge remain food stage. Soldier vote see how."  
-  },  
-  "areaServed": "Drop image result manager theory practice Democrat enough. Building see strong send radio serve its. Offer page north born travel should and off.",  
-  "rt": [  
-    "oic.r.glucose.medication",  
-    "oic.r.glucose.medication"  
-  ],  
-  "regimen": "rapidacting",  
-  "medication": {  
-    "type": "Property",  
-    "value": 972.0  
-  },  
-  "units": "mg",  
-  "range": [  
-    778.1,  
-    631.7  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 150.9  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 560.6  
-  },  
-  "n": "Respond with lawyer arm off. Ahead own job mention. Institution matter represent eye.",  
-  "if": [  
-    "oic.if.baseline",  
-    "oic.if.baseline"  
-  ],  
-  "type": "GlucoseMedication",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### GlucoseMedication NGSI-LD 正規化例  
-以下は、GlucoseMedicationをJSON-LD形式で正規化した例である。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+GlucoseMedication を JSON-LD 形式で正規化した例です。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:GlucoseMedication:id:DOTX:97724506",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1999-11-02T12:35:23Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1988-11-15T10:04:46Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Former country themselves commercial fund impact term. Number quite direction dream happy."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Carry keep long resource west anyone agent. Close our seek its son general. Recent cost as society."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Language goal commercial officer. Former box reflect dog heavy note. Collection middle meet pressure style professor director."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Behavior usually class early. Authority tonight yes among leave market worker party."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Just three whole one work. Less series performance look information individual. Their certainly drop seven eat. Charge half film represent red."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:GlucoseMedication:items:CQJF:84658084",  
-      "urn:ngsi-ld:GlucoseMedication:items:SQFV:47101660"  
+    "id": "urn:ngsi-ld:GlucoseMedication:id:DOTX:97724506",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1999-11-02T12:35:23Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1988-11-15T10:04:46Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Former country themselves commercial fund impact term. Number quite direction dream happy."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Carry keep long resource west anyone agent. Close our seek its son general. Recent cost as society."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Language goal commercial officer. Former box reflect dog heavy note. Collection middle meet pressure style professor director."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Behavior usually class early. Authority tonight yes among leave market worker party."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Just three whole one work. Less series performance look information individual. Their certainly drop seven eat. Charge half film represent red."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:GlucoseMedication:items:CQJF:84658084",  
+            "urn:ngsi-ld:GlucoseMedication:items:SQFV:47101660"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:GlucoseMedication:items:GLFD:86747338"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                7.5633525,  
+                89.974066  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Say toward them society large guy western pretty. Full six wall condition sea. Ten enter officer enough suggest society.",  
+            "addressLocality": "Sing Mrs main protect no. Inside safe member which sing training environment.",  
+            "addressRegion": "Relationship determine finish fire police least deep. Indeed score inside it south huge material and. Blue campaign radio night first wish beat.",  
+            "addressCountry": "Point your finish local surface including oil end. Current various walk student. Marriage provide particularly pressure perhaps teach. Live country coach word lawyer.",  
+            "postalCode": "Old tough performance assume himself. Figure memory fear long event his.",  
+            "postOfficeBoxNumber": "Matter share space billion pattern happy easy."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Eight fall movement design leave often activity. Radio music stuff property through near southern."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.glucose.medication"  
+        ]  
+    },  
+    "regimen": {  
+        "type": "Property",  
+        "value": "longacting"  
+    },  
+    "medication": {  
+        "type": "Property",  
+        "value": 201.5  
+    },  
+    "units": {  
+        "type": "Property",  
+        "value": "mL"  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            235.7,  
+            719.5  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 78.9  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 20.5  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Speak see senior continue perform."  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "GlucoseMedication",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:GlucoseMedication:items:GLFD:86747338"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        7.5633525,  
-        89.974066  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Say toward them society large guy western pretty. Full six wall condition sea. Ten enter officer enough suggest society.",  
-      "addressLocality": "Sing Mrs main protect no. Inside safe member which sing training environment.",  
-      "addressRegion": "Relationship determine finish fire police least deep. Indeed score inside it south huge material and. Blue campaign radio night first wish beat.",  
-      "addressCountry": "Point your finish local surface including oil end. Current various walk student. Marriage provide particularly pressure perhaps teach. Live country coach word lawyer.",  
-      "postalCode": "Old tough performance assume himself. Figure memory fear long event his.",  
-      "postOfficeBoxNumber": "Matter share space billion pattern happy easy."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Eight fall movement design leave often activity. Radio music stuff property through near southern."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.glucose.medication"  
-    ]  
-  },  
-  "regimen": {  
-    "type": "Property",  
-    "value": "longacting"  
-  },  
-  "medication": {  
-    "type": "Property",  
-    "value": 201.5  
-  },  
-  "units": {  
-    "type": "Property",  
-    "value": "mL"  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      235.7,  
-      719.5  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 78.9  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 20.5  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Speak see senior continue perform."  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "type": "GlucoseMedication",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
