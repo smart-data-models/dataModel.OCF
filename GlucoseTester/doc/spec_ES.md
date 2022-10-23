@@ -1,17 +1,32 @@
-Entidad: GlucoseTester  
-======================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entidad: GlucoseTester  
+======================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.OCF/blob/master/GlucoseTester/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Descripción global: **Adaptación del programa de modelos de datos inteligentes de los modelos de datos originales de IoTData. Este Recurso describe las Propiedades asociadas al contexto tester. La Propiedad tester es un valor de sólo lectura que es proporcionado por el Servidor donde especialmente hcp significa HealthCare Professional.**  
+versión: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `if`: El conjunto de interfaces OCF que admite este recurso  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n`: Nombre amistoso del recurso  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `rt`: Tipo de recurso  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `tester`: Los posibles casos de probadores que pueden realizar la medición de azúcar en sangre.  - `type`: Tipo de entidad NGSI. Tiene que ser GlucoseTester    
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>  
+- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Una descripción de este artículo  - `id[*]`: Identificador único de la entidad  - `if[array]`: El conjunto de interfaces OCF que admite este recurso  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n[string]`: Nombre amigable del Recurso  - `name[string]`: El nombre de este artículo.  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `rt[array]`: Tipo de recurso  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `tester[string]`: Los posibles casos de probadores que pueden realizar la medición de azúcar en sangre.  - `type[string]`: Tipo de entidad NGSI. Tiene que ser GlucoseTester  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propiedades requeridas  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Este modelo de datos procede del original [repositorio de la Open Connectivity Foundation](https://github.com/openconnectivityfoundation/IoTDataModels). Se ha ampliado para cumplir con los requisitos de la NGSI.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 GlucoseTester:    
@@ -334,9 +349,14 @@ GlucoseTester:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Ejemplo de carga útil  
 #### GlucoseTester NGSI-v2 key-values Ejemplo  
 Aquí hay un ejemplo de un GlucoseTester en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:GlucoseTester:id:NYRG:29308322",  
@@ -373,8 +393,10 @@ GlucoseTester:
   "areaServed": "Among my plant oil question able protect forget. Democrat drive find pick."  
 }  
 ```  
+</details>  
 #### GlucoseTester NGSI-v2 normalizado Ejemplo  
 Aquí hay un ejemplo de un GlucoseTester en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -452,127 +474,141 @@ GlucoseTester:
   }  
 }  
 ```  
+</details>  
 #### GlucoseTester NGSI-LD key-values Ejemplo  
 Aquí hay un ejemplo de un GlucoseTester en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:GlucoseTester:id:NYRG:29308322",  
-  "dateCreated": "1980-11-08T18:27:08Z",  
-  "dateModified": "2014-03-28T16:12:00Z",  
-  "source": "Time like management low agree language knowledge. Answer term enjoy career well knowledge material. Strategy decade week theory.",  
-  "name": "Break age my audience budget behavior mention. Organization involve become example fast.",  
-  "alternateName": "Who total than leg. Which everybody sit sit structure doctor physical.",  
-  "description": "Someone choice minute fact kid. Social professor bring race matter save create.",  
-  "dataProvider": "Capital particular away realize operation. Common tree number wear exactly difficult. Evidence lead red without risk small half.",  
-  "owner": [  
-    "urn:ngsi-ld:GlucoseTester:items:KDOJ:82541574",  
-    "urn:ngsi-ld:GlucoseTester:items:TXYP:18981011"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:GlucoseTester:items:RMSY:70339406",  
-    "urn:ngsi-ld:GlucoseTester:items:RLTE:72455890"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      75.3523795,  
-      -77.248798  
+    "id": "urn:ngsi-ld:GlucoseTester:id:NYRG:29308322",  
+    "dateCreated": "1980-11-08T18:27:08Z",  
+    "dateModified": "2014-03-28T16:12:00Z",  
+    "source": "Time like management low agree language knowledge. Answer term enjoy career well knowledge material. Strategy decade week theory.",  
+    "name": "Break age my audience budget behavior mention. Organization involve become example fast.",  
+    "alternateName": "Who total than leg. Which everybody sit sit structure doctor physical.",  
+    "description": "Someone choice minute fact kid. Social professor bring race matter save create.",  
+    "dataProvider": "Capital particular away realize operation. Common tree number wear exactly difficult. Evidence lead red without risk small half.",  
+    "owner": [  
+        "urn:ngsi-ld:GlucoseTester:items:KDOJ:82541574",  
+        "urn:ngsi-ld:GlucoseTester:items:TXYP:18981011"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:GlucoseTester:items:RMSY:70339406",  
+        "urn:ngsi-ld:GlucoseTester:items:RLTE:72455890"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            75.3523795,  
+            -77.248798  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Eight painting author by born history themselves than. Father century sound role together professor both.",  
+        "addressLocality": "Throughout eat another I drug democratic gas great. Detail too election physical concern positive particularly. Church face blue skill center despite stage.",  
+        "addressRegion": "Score writer teach night again space defense. Use scientist claim pressure family. Season politics talk others. Likely decade size know.",  
+        "addressCountry": "Decide effort simple personal. Middle young their people professor physical.",  
+        "postalCode": "Determine effort quality many trouble public current too. Agree tree this together occur draw need. Point current number animal. Current many phone world bank ahead fire.",  
+        "postOfficeBoxNumber": "Republican try hit. Fall family approach thing issue type single. Cultural away least major someone. Prevent dog none different environment create."  
+    },  
+    "areaServed": "Among my plant oil question able protect forget. Democrat drive find pick.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Eight painting author by born history themselves than. Father century sound role together professor both.",  
-    "addressLocality": "Throughout eat another I drug democratic gas great. Detail too election physical concern positive particularly. Church face blue skill center despite stage.",  
-    "addressRegion": "Score writer teach night again space defense. Use scientist claim pressure family. Season politics talk others. Likely decade size know.",  
-    "addressCountry": "Decide effort simple personal. Middle young their people professor physical.",  
-    "postalCode": "Determine effort quality many trouble public current too. Agree tree this together occur draw need. Point current number animal. Current many phone world bank ahead fire.",  
-    "postOfficeBoxNumber": "Republican try hit. Fall family approach thing issue type single. Cultural away least major someone. Prevent dog none different environment create."  
-  },  
-  "areaServed": "Among my plant oil question able protect forget. Democrat drive find pick.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### GlucoseTester NGSI-LD normalizado Ejemplo  
 Este es un ejemplo de un GlucoseTester en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:GlucoseTester:id:XEDG:50059607",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2016-11-13T14:32:51Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2019-11-24T17:05:51Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Ability relate state at. Old him include reason less example. Own yard brother central defense. Glass success thousand class explain me."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Key girl culture view hundred model."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Republican away central. Practice often manage Congress model least."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Message reveal discussion. Tree on go small law. Surface office inside American so fact."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Every she serious level run. Machine again you term once up place."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:GlucoseTester:items:PYHU:37732903",  
-      "urn:ngsi-ld:GlucoseTester:items:LFMT:25283830"  
+    "id": "urn:ngsi-ld:GlucoseTester:id:XEDG:50059607",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2016-11-13T14:32:51Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2019-11-24T17:05:51Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Ability relate state at. Old him include reason less example. Own yard brother central defense. Glass success thousand class explain me."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Key girl culture view hundred model."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Republican away central. Practice often manage Congress model least."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Message reveal discussion. Tree on go small law. Surface office inside American so fact."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Every she serious level run. Machine again you term once up place."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:GlucoseTester:items:PYHU:37732903",  
+            "urn:ngsi-ld:GlucoseTester:items:LFMT:25283830"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:GlucoseTester:items:QILE:91116266"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -73.307678,  
+                79.131281  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Tend health begin because without would. Indeed time difference box last federal leave. Figure smile great unit.",  
+            "addressLocality": "President ground catch argue accept especially. Allow magazine floor ago various PM. Billion once maintain student.",  
+            "addressRegion": "Friend show project in president before truth maybe.",  
+            "addressCountry": "Forget ten worry unit stand yes entire. Situation west per body skin policy TV stop. Alone pick world its power bag human.",  
+            "postalCode": "Back area early. Issue firm message break.",  
+            "postOfficeBoxNumber": "Meet new same with natural side. Green turn accept ask call. Standard community weight get political."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Fine case star. Hand really surface skill agreement produce. Author become another economy through bring."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:GlucoseTester:items:QILE:91116266"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -73.307678,  
-        79.131281  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Tend health begin because without would. Indeed time difference box last federal leave. Figure smile great unit.",  
-      "addressLocality": "President ground catch argue accept especially. Allow magazine floor ago various PM. Billion once maintain student.",  
-      "addressRegion": "Friend show project in president before truth maybe.",  
-      "addressCountry": "Forget ten worry unit stand yes entire. Situation west per body skin policy TV stop. Alone pick world its power bag human.",  
-      "postalCode": "Back area early. Issue firm message break.",  
-      "postOfficeBoxNumber": "Meet new same with natural side. Green turn accept ask call. Standard community weight get political."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Fine case star. Hand really surface skill agreement produce. Author become another economy through bring."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
