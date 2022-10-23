@@ -1,23 +1,36 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entità: mediaSourceList  
-=======================  
+=======================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.OCF/blob/master/mediaSourceList/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Questa risorsa fornisce l'elenco delle sorgenti multimediali in ingresso disponibili sul dispositivo. le sorgenti sono un array di sorgenti multimediali vedi Tipo di risorsa "oic.r.mediasource "**  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **Le sorgenti sono un array di sorgenti multimediali, vedi il tipo di risorsa 'oic.r.mediasource'**.  
 versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `id`: Identificatore unico dell'entità  - `if`: L'insieme di interfacce OCF supportate da questa risorsa  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n`: Nome amichevole della risorsa  - `name`: Il nome di questo articolo.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `rt`: Tipo di risorsa  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `sources`: Elenco delle fonti  - `type`: Tipo di entità NGSI. Deve essere mediaSourceList    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `if[array]`: L'insieme di interfacce OCF supportate da questa risorsa.  - `location[*]`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `n[string]`: Nome amichevole della risorsa  - `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `rt[array]`: Tipo di risorsa  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `sources[array]`: L'elenco delle fonti  - `type[string]`: Tipo di entità NGSI. Deve essere mediaSourceList  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- `id`  - `sources`  - `type`    
+- `id`  - `sources`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Modello di dati adattato dall'originale creato dalla Open Connectivity Foundation. Repository originale in https://github.com/openconnectivityfoundation/IoTDataModels  
-## Descrizione del modello di dati delle proprietà  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 mediaSourceList:    
-  description: 'This Resource provides the list of input media sources available on the device.The sources are an array of Media Source(s) see Resource Type "oic.r.mediasource"'    
+  description: 'This Resource provides the list of input media sources available on the device.The sources are an array of Media Source(s) see Resource Type ''oic.r.mediasource'''    
   properties:    
     address:    
       description: 'The mailing address'    
@@ -307,7 +320,7 @@ mediaSourceList:
       x-ngsi:    
         type: Property    
     sources:    
-      description: 'List of sources'    
+      description: 'The list of sources'    
       items:    
         properties:    
           sourceName:    
@@ -352,9 +365,14 @@ mediaSourceList:
   x-version: 0.0.1    
 ```  
 </details>    
-## Esempio di payloads  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
 #### mediaSourceList Valori chiave NGSI-v2 Esempio  
-Ecco un esempio di una mediaSourceList in formato JSON-LD come key-values. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di mediaSourceList in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:mediaSourceList:id:OPFC:36117462",  
@@ -415,8 +433,10 @@ mediaSourceList:
   "type": "mediaSourceList"  
 }  
 ```  
+</details>  
 #### mediaSourceList NGSI-v2 normalizzato Esempio  
-Ecco un esempio di una mediaSourceList in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di mediaSourceList in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si usano le opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -533,186 +553,200 @@ mediaSourceList:
   }  
 }  
 ```  
+</details>  
 #### mediaSourceList Valori chiave NGSI-LD Esempio  
-Ecco un esempio di una mediaSourceList in formato JSON-LD come key-values. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di mediaSourceList in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:mediaSourceList:id:OPFC:36117462",  
-  "dateCreated": "1973-09-17T22:36:21Z",  
-  "dateModified": "2022-01-05T00:59:32Z",  
-  "source": "Before land house chance idea accept opportunity. Buy standard song media. True peace structure identify.",  
-  "name": "Speak fine hard look among various traditional name. Reveal build the American. Do hold always floor represent blood. Image quite often mind order night.",  
-  "alternateName": "Here manager every street. Usually grow raise describe receive box similar.",  
-  "description": "Page notice star certain pretty skin.",  
-  "dataProvider": "Tough order affect get work change. Result later couple rather speak. School want keep lose. Congress strong two piece consider century nature.",  
-  "owner": [  
-    "urn:ngsi-ld:mediaSourceList:items:KOOM:38861188",  
-    "urn:ngsi-ld:mediaSourceList:items:HIKF:72168563"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:mediaSourceList:items:KQJT:21372746",  
-    "urn:ngsi-ld:mediaSourceList:items:NGAT:99587943"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -4.536531,  
-      35.505038  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Interview garden language at style step. Yes memory especially prevent community. Personal old positive couple.",  
-    "addressLocality": "Store west body maintain customer.",  
-    "addressRegion": "Mrs because activity piece site loss. Break test edge population focus pay career. A gun information understand team own.",  
-    "addressCountry": "Young phone low though likely. Provide thought part draw build.",  
-    "postalCode": "Boy small letter six business box.",  
-    "postOfficeBoxNumber": "Off performance yourself ahead explain. Single style politics study common pretty."  
-  },  
-  "areaServed": "Particular also scientist. Eye sing body foreign themselves. Thing expert bed article.",  
-  "rt": [  
-    "oic.r.media.input",  
-    "oic.r.media.input"  
-  ],  
-  "sources": [  
-    {  
-      "sourceName": "West and happy culture finally lawyer final.",  
-      "sourceNumber": "Beat claim another them adult how. Always image despite until.",  
-      "sourceType": "audioOnly",  
-      "status": true  
+    "id": "urn:ngsi-ld:mediaSourceList:id:OPFC:36117462",  
+    "dateCreated": "1973-09-17T22:36:21Z",  
+    "dateModified": "2022-01-05T00:59:32Z",  
+    "source": "Before land house chance idea accept opportunity. Buy standard song media. True peace structure identify.",  
+    "name": "Speak fine hard look among various traditional name. Reveal build the American. Do hold always floor represent blood. Image quite often mind order night.",  
+    "alternateName": "Here manager every street. Usually grow raise describe receive box similar.",  
+    "description": "Page notice star certain pretty skin.",  
+    "dataProvider": "Tough order affect get work change. Result later couple rather speak. School want keep lose. Congress strong two piece consider century nature.",  
+    "owner": [  
+        "urn:ngsi-ld:mediaSourceList:items:KOOM:38861188",  
+        "urn:ngsi-ld:mediaSourceList:items:HIKF:72168563"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:mediaSourceList:items:KQJT:21372746",  
+        "urn:ngsi-ld:mediaSourceList:items:NGAT:99587943"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -4.536531,  
+            35.505038  
+        ]  
     },  
-    {  
-      "sourceName": "Notice church production back. Describe key site great commercial product water. Important career ever near call. Together right determine network government our forward.",  
-      "sourceNumber": "Such society pull these close product top. Experience unit fear drop standard available light. High organization artist sell fish.",  
-      "sourceType": "audioOnly",  
-      "status": true  
-    }  
-  ],  
-  "n": "Sport husband ago movement letter affect. None continue wait building indicate. Wonder sign of huge.",  
-  "if": [  
-    "oic.if.a",  
-    "oic.if.baseline"  
-  ],  
-  "type": "mediaSourceList",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
+    "address": {  
+        "streetAddress": "Interview garden language at style step. Yes memory especially prevent community. Personal old positive couple.",  
+        "addressLocality": "Store west body maintain customer.",  
+        "addressRegion": "Mrs because activity piece site loss. Break test edge population focus pay career. A gun information understand team own.",  
+        "addressCountry": "Young phone low though likely. Provide thought part draw build.",  
+        "postalCode": "Boy small letter six business box.",  
+        "postOfficeBoxNumber": "Off performance yourself ahead explain. Single style politics study common pretty."  
+    },  
+    "areaServed": "Particular also scientist. Eye sing body foreign themselves. Thing expert bed article.",  
+    "rt": [  
+        "oic.r.media.input",  
+        "oic.r.media.input"  
+    ],  
+    "sources": [  
+        {  
+            "sourceName": "West and happy culture finally lawyer final.",  
+            "sourceNumber": "Beat claim another them adult how. Always image despite until.",  
+            "sourceType": "audioOnly",  
+            "status": true  
+        },  
+        {  
+            "sourceName": "Notice church production back. Describe key site great commercial product water. Important career ever near call. Together right determine network government our forward.",  
+            "sourceNumber": "Such society pull these close product top. Experience unit fear drop standard available light. High organization artist sell fish.",  
+            "sourceType": "audioOnly",  
+            "status": true  
+        }  
+    ],  
+    "n": "Sport husband ago movement letter affect. None continue wait building indicate. Wonder sign of huge.",  
+    "if": [  
+        "oic.if.a",  
+        "oic.if.baseline"  
+    ],  
+    "type": "mediaSourceList",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+    ]  
 }  
 ```  
+</details>  
 #### mediaSourceList NGSI-LD normalizzato Esempio  
-Ecco un esempio di una mediaSourceList in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di mediaSourceList in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si usano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:mediaSourceList:id:CPPM:30655362",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2020-01-25T23:40:36Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2010-03-12T23:11:43Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Kid us whole cultural skin."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Range once language agency. Watch my big head information adult everyone. Choose recently event kitchen."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Fast manage explain health argue. Morning well young amount modern sense some front."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Program yet somebody Congress this. Surface cover blood especially just company least. Look thus but over personal whose without. American television relationship work behind."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Lead black rule character clear push sport. Hold court with note develop sound moment."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:mediaSourceList:items:NVPJ:22154045",  
-      "urn:ngsi-ld:mediaSourceList:items:LUQB:00068551"  
+    "id": "urn:ngsi-ld:mediaSourceList:id:CPPM:30655362",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2020-01-25T23:40:36Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2010-03-12T23:11:43Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Kid us whole cultural skin."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Range once language agency. Watch my big head information adult everyone. Choose recently event kitchen."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Fast manage explain health argue. Morning well young amount modern sense some front."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Program yet somebody Congress this. Surface cover blood especially just company least. Look thus but over personal whose without. American television relationship work behind."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Lead black rule character clear push sport. Hold court with note develop sound moment."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:mediaSourceList:items:NVPJ:22154045",  
+            "urn:ngsi-ld:mediaSourceList:items:LUQB:00068551"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:mediaSourceList:items:ZHVV:58774434"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                44.2340255,  
+                41.02291  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Health animal avoid during begin we. Away something store boy really.",  
+            "addressLocality": "Not hand role. Must common leader. Cold sister instead because.",  
+            "addressRegion": "Member middle dog indicate defense nature pass join. Building single relationship then upon. Detail wish trouble various include ability bad.",  
+            "addressCountry": "Level learn middle range food. Picture include author move everything though. Better community difficult yard ball simple him resource.",  
+            "postalCode": "Together more participant probably. Stuff after eye natural.",  
+            "postOfficeBoxNumber": "Speech around few opportunity. Popular should buy rate share. Tv ground space them federal."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Hot hair recent argue resource risk she nature. Grow live about poor suffer almost others."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.media.input"  
+        ]  
+    },  
+    "sources": {  
+        "type": "Property",  
+        "value": [  
+            {  
+                "sourceName": "Expert tend million upon decade fund employee.",  
+                "sourceNumber": "Better late me. White possible seem them society million speech. Watch offer under middle employee of site lose.",  
+                "sourceType": "videoOnly",  
+                "status": true  
+            },  
+            {  
+                "sourceName": "Feel design that.",  
+                "sourceNumber": "News black else even win. Able change relationship avoid role food.",  
+                "sourceType": "videoOnly",  
+                "status": true  
+            }  
+        ]  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Everyone quite respond detail reach law nearly. Group skill could look talk develop population."  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline",  
+            "oic.if.a"  
+        ]  
+    },  
+    "type": "mediaSourceList",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:mediaSourceList:items:ZHVV:58774434"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        44.2340255,  
-        41.02291  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Health animal avoid during begin we. Away something store boy really.",  
-      "addressLocality": "Not hand role. Must common leader. Cold sister instead because.",  
-      "addressRegion": "Member middle dog indicate defense nature pass join. Building single relationship then upon. Detail wish trouble various include ability bad.",  
-      "addressCountry": "Level learn middle range food. Picture include author move everything though. Better community difficult yard ball simple him resource.",  
-      "postalCode": "Together more participant probably. Stuff after eye natural.",  
-      "postOfficeBoxNumber": "Speech around few opportunity. Popular should buy rate share. Tv ground space them federal."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Hot hair recent argue resource risk she nature. Grow live about poor suffer almost others."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.media.input"  
-    ]  
-  },  
-  "sources": {  
-    "type": "Property",  
-    "value": [  
-      {  
-        "sourceName": "Expert tend million upon decade fund employee.",  
-        "sourceNumber": "Better late me. White possible seem them society million speech. Watch offer under middle employee of site lose.",  
-        "sourceType": "videoOnly",  
-        "status": true  
-      },  
-      {  
-        "sourceName": "Feel design that.",  
-        "sourceNumber": "News black else even win. Able change relationship avoid role food.",  
-        "sourceType": "videoOnly",  
-        "status": true  
-      }  
-    ]  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Everyone quite respond detail reach law nearly. Group skill could look talk develop population."  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.baseline",  
-      "oic.if.a"  
-    ]  
-  },  
-  "type": "mediaSourceList",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
