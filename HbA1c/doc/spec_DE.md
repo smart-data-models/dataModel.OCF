@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entität: HbA1c  
-==============  
+==============<!-- /10-Header -->  
+<!-- 15-License -->  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.OCF/blob/master/HbA1c/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Globale Beschreibung: **Diese Ressource beschreibt die Eigenschaften, die mit dem hba1c-Level einer Person verbunden sind.** Die Einheit ist ein Einzelwert in Prozent.** Die hba1c-Eigenschaft ist ein schreibgeschützter Wert, der vom Server bereitgestellt wird.  
 Version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `hba1c`: Aktueller HbA1c-Wert in Prozent  - `id`: Eindeutiger Bezeichner der Entität  - `if`: Der von dieser Ressource unterstützte OCF-Schnittstellensatz  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `n`: Freundlicher Name der Ressource  - `name`: Der Name dieses Artikels.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `precision`: Bei der Exposition bietet der Wert in "precision" eine +/- Toleranz gegenüber den Eigenschaften in der Ressource. Wenn also eine Eigenschaft auf einen Wert AKTUALISIERT wird und diese Eigenschaft dann ZURÜCKGEZOGEN wird, ist der ZURÜCKGEZOGENE Wert gültig, wenn er im Bereich des festgelegten Wertes +/- Präzision liegt  - `range`: Der gültige Bereich für die Eigenschaft in der Ressource in Form einer Zahl. Der erste Wert im Array ist der Mindestwert, der zweite Wert im Array ist der Höchstwert.  - `rt`: Ressourcentyp  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `step`: Schrittwert über den definierten Bereich eine ganze Zahl, wenn der Bereich eine Zahl ist.  Dies ist die Schrittweite für gültige Werte innerhalb des Bereichs; wenn also der Bereich 0.0..10.0 und der Schritt 2.5 ist, sind die Werte 0.0,2.5,5.0,7.5,10.0 gültig.  - `type`: NGSI-Entitätstyp. Es muss HbA1c sein    
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `hba1c[number]`: Aktueller HbA1c-Wert in Prozent  - `id[*]`: Eindeutiger Bezeichner der Entität  - `if[array]`: Der von dieser Ressource unterstützte OCF-Schnittstellensatz  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `n[string]`: Freundlicher Name der Ressource  - `name[string]`: Der Name dieses Artikels.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `precision[number]`: Bei der Exposition bietet der Wert in "precision" eine +/- Toleranz gegenüber den Eigenschaften in der Ressource. Wenn also eine Eigenschaft auf einen Wert AKTUALISIERT wird und diese Eigenschaft dann ZURÜCKGEZOGEN wird, ist der ZURÜCKGEZOGENE Wert gültig, wenn er im Bereich des festgelegten Wertes +/- Präzision liegt  - `range[array]`: Der gültige Bereich für die Eigenschaft in der Ressource in Form einer Zahl. Der erste Wert im Array ist der Mindestwert, der zweite Wert im Array ist der Höchstwert.  - `rt[array]`: Ressourcentyp  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `step[number]`: Schrittwert über den definierten Bereich eine ganze Zahl, wenn der Bereich eine Zahl ist.  Dies ist die Schrittweite für gültige Werte innerhalb des Bereichs; wenn also der Bereich 0.0..10.0 und der Schritt 2.5 ist, sind die Werte 0.0,2.5,5.0,7.5,10.0 gültig.  - `type[string]`: NGSI-Entitätstyp. Es muss HbA1c sein  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
-- `hba1c`  - `id`  - `type`    
+- `hba1c`  - `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Datenmodell nach dem von der Open Connectivity Foundation erstellten Original. Ursprüngliches Repository in https://github.com/openconnectivityfoundation/IoTDataModels  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 HbA1c:    
@@ -357,9 +370,14 @@ HbA1c:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Beispiel-Nutzlasten  
 #### HbA1c NGSI-v2 Schlüsselwerte Beispiel  
 Hier ist ein Beispiel für einen HbA1c-Wert im JSON-LD-Format als Key-Values. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:HbA1c:id:UWED:68312299",  
@@ -422,8 +440,10 @@ HbA1c:
   "type": "HbA1c"  
 }  
 ```  
+</details>  
 #### HbA1c NGSI-v2 normalisiert Beispiel  
 Hier ist ein Beispiel für einen HbA1c-Wert im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-v2 kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -551,189 +571,203 @@ HbA1c:
   }  
 }  
 ```  
+</details>  
 #### HbA1c NGSI-LD Schlüsselwerte Beispiel  
 Hier ist ein Beispiel für einen HbA1c-Wert im JSON-LD-Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:HbA1c:id:UWED:68312299",  
-  "dateCreated": "1977-01-27T17:50:21Z",  
-  "dateModified": "1993-11-12T19:53:01Z",  
-  "source": "Strong option relationship fact. Item kitchen pass show. Meeting personal upon.",  
-  "name": "Picture physical reason break glass. Small step lose above capital his.",  
-  "alternateName": "Opportunity first show main particular life. Individual back these note. Box foreign surface reality think.",  
-  "description": "Real expect however prevent song design behind. Three finish manage religious present. There this process meet who.",  
-  "dataProvider": "So seem office. By president alone fight economic production school few.",  
-  "owner": [  
-    "urn:ngsi-ld:HbA1c:items:ZRBL:34609429",  
-    "urn:ngsi-ld:HbA1c:items:IRSV:73111056"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:HbA1c:items:NWVA:01008160",  
-    "urn:ngsi-ld:HbA1c:items:NIJP:00792290"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -18.431417,  
-      -61.000553  
+    "id": "urn:ngsi-ld:HbA1c:id:UWED:68312299",  
+    "dateCreated": "1977-01-27T17:50:21Z",  
+    "dateModified": "1993-11-12T19:53:01Z",  
+    "source": "Strong option relationship fact. Item kitchen pass show. Meeting personal upon.",  
+    "name": "Picture physical reason break glass. Small step lose above capital his.",  
+    "alternateName": "Opportunity first show main particular life. Individual back these note. Box foreign surface reality think.",  
+    "description": "Real expect however prevent song design behind. Three finish manage religious present. There this process meet who.",  
+    "dataProvider": "So seem office. By president alone fight economic production school few.",  
+    "owner": [  
+        "urn:ngsi-ld:HbA1c:items:ZRBL:34609429",  
+        "urn:ngsi-ld:HbA1c:items:IRSV:73111056"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:HbA1c:items:NWVA:01008160",  
+        "urn:ngsi-ld:HbA1c:items:NIJP:00792290"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -18.431417,  
+            -61.000553  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Popular hold wear notice. Defense head professional win reduce.",  
+        "addressLocality": "Security rock production public rather movie return base. Agreement national TV leave around international. Agency nice face low.",  
+        "addressRegion": "Daughter south safe quickly about. Could language traditional soldier growth week better security.",  
+        "addressCountry": "Vote work continue that into imagine example. White character last popular fish and. Rate identify issue here possible.",  
+        "postalCode": "Low job clear free. Case yard fund majority training.",  
+        "postOfficeBoxNumber": "Sure up theory all assume. Nature act enjoy however option industry."  
+    },  
+    "areaServed": "Leg off foreign recent if lot pull. Product majority seven market blue one skill this.",  
+    "rt": [  
+        "oic.r.glucose.hba1c",  
+        "oic.r.glucose.hba1c"  
+    ],  
+    "hba1c": {  
+        "type": "Property",  
+        "value": 67.1  
+    },  
+    "range": [  
+        553.7,  
+        255.0  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 342.7  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 978.5  
+    },  
+    "n": "Show front know total soldier spring him. Whatever guy like husband three. Finally Congress teacher partner usually.",  
+    "if": [  
+        "oic.if.s",  
+        "oic.if.s"  
+    ],  
+    "type": "HbA1c",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Popular hold wear notice. Defense head professional win reduce.",  
-    "addressLocality": "Security rock production public rather movie return base. Agreement national TV leave around international. Agency nice face low.",  
-    "addressRegion": "Daughter south safe quickly about. Could language traditional soldier growth week better security.",  
-    "addressCountry": "Vote work continue that into imagine example. White character last popular fish and. Rate identify issue here possible.",  
-    "postalCode": "Low job clear free. Case yard fund majority training.",  
-    "postOfficeBoxNumber": "Sure up theory all assume. Nature act enjoy however option industry."  
-  },  
-  "areaServed": "Leg off foreign recent if lot pull. Product majority seven market blue one skill this.",  
-  "rt": [  
-    "oic.r.glucose.hba1c",  
-    "oic.r.glucose.hba1c"  
-  ],  
-  "hba1c": {  
-    "type": "Property",  
-    "value": 67.1  
-  },  
-  "range": [  
-    553.7,  
-    255.0  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 342.7  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 978.5  
-  },  
-  "n": "Show front know total soldier spring him. Whatever guy like husband three. Finally Congress teacher partner usually.",  
-  "if": [  
-    "oic.if.s",  
-    "oic.if.s"  
-  ],  
-  "type": "HbA1c",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### HbA1c NGSI-LD normalisiert Beispiel  
 Hier ist ein Beispiel für einen HbA1c-Wert im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-LD kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:HbA1c:id:RCVD:88651516",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2016-03-12T15:26:00Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1977-04-24T02:09:01Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Need fine customer apply notice staff let campaign. About young eat field yeah realize hot. Loss sort window gun girl."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Market life mother military. Police happy he time subject anyone. Method small full bill newspaper even environmental."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Summer travel draw game another. Think process serve low all above clearly."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Oil modern least Congress even machine. Someone surface peace concern size. Today join night officer section source argue natural."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Key top close listen article usually experience above. Nation appear more party sport. American which education. Wide local another term room."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:HbA1c:items:PZWR:06990420",  
-      "urn:ngsi-ld:HbA1c:items:MBAS:58596912"  
+    "id": "urn:ngsi-ld:HbA1c:id:RCVD:88651516",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2016-03-12T15:26:00Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1977-04-24T02:09:01Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Need fine customer apply notice staff let campaign. About young eat field yeah realize hot. Loss sort window gun girl."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Market life mother military. Police happy he time subject anyone. Method small full bill newspaper even environmental."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Summer travel draw game another. Think process serve low all above clearly."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Oil modern least Congress even machine. Someone surface peace concern size. Today join night officer section source argue natural."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Key top close listen article usually experience above. Nation appear more party sport. American which education. Wide local another term room."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:HbA1c:items:PZWR:06990420",  
+            "urn:ngsi-ld:HbA1c:items:MBAS:58596912"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:HbA1c:items:OOXY:11821113"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                15.365764,  
+                -119.004517  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Focus option scene throughout question resource. Month car lead drug raise young. Something PM second certainly shake.",  
+            "addressLocality": "Carry friend assume huge lot. Evidence church political organization join kid what. Voice party appear but free.",  
+            "addressRegion": "Establish research far central likely. Range lawyer still mean box star. Strong people wear magazine.",  
+            "addressCountry": "Run whom myself close. Son technology tell probably member watch kid former. Candidate certainly investment laugh opportunity trip positive.",  
+            "postalCode": "Relationship bed over whatever peace TV throw. Building when local easy result officer ever.",  
+            "postOfficeBoxNumber": "Great turn thought leg skill. Tree man ago task amount. Kind year interest training society economy leave."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Product successful your receive white management. Put professor because. Over like wall billion."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.glucose.hba1c"  
+        ]  
+    },  
+    "hba1c": {  
+        "type": "Property",  
+        "value": 11.5  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            598.6,  
+            395.9  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 941.6  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 659.1  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Field notice idea professor draw dark heavy. Well ago room floor me successful."  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.s"  
+        ]  
+    },  
+    "type": "HbA1c",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:HbA1c:items:OOXY:11821113"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        15.365764,  
-        -119.004517  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Focus option scene throughout question resource. Month car lead drug raise young. Something PM second certainly shake.",  
-      "addressLocality": "Carry friend assume huge lot. Evidence church political organization join kid what. Voice party appear but free.",  
-      "addressRegion": "Establish research far central likely. Range lawyer still mean box star. Strong people wear magazine.",  
-      "addressCountry": "Run whom myself close. Son technology tell probably member watch kid former. Candidate certainly investment laugh opportunity trip positive.",  
-      "postalCode": "Relationship bed over whatever peace TV throw. Building when local easy result officer ever.",  
-      "postOfficeBoxNumber": "Great turn thought leg skill. Tree man ago task amount. Kind year interest training society economy leave."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Product successful your receive white management. Put professor because. Over like wall billion."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.glucose.hba1c"  
-    ]  
-  },  
-  "hba1c": {  
-    "type": "Property",  
-    "value": 11.5  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      598.6,  
-      395.9  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 941.6  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 659.1  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Field notice idea professor draw dark heavy. Well ago room floor me successful."  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.s"  
-    ]  
-  },  
-  "type": "HbA1c",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
