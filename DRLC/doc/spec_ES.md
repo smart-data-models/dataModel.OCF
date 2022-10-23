@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entidad: DRLC  
-=============  
+=============<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.OCF/blob/master/DRLC/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Descripción global: **La propiedad "DRType" es el ApplianceLoadReductionType definido en el perfil Zigbee/HA Smart Energy 2.0. La propiedad "start" es una cadena que contiene una hora de inicio codificada en RFC3339.El valor de la propiedad 'duration' está en minutos.La propiedad 'Override' indica si el consumidor ha anulado la solicitud (true) o no (false).El recurso proporciona la acción DRLC actual que se está aplicando.Una duración de 0 (cero) significa que no hay DRLC activo actualmente.**  
 versión: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-- `DRType`: El tipo de respuesta a la demanda que debe aplicarse.  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `drlevel`: Indicador de la fuerza de la respuesta de RD que se solicita; 0-0%, 1-30%, 2-50%, 3-70%  - `duration`: La duración del tipo de RD a aplicar en minutos. Un valor de 0 significa que no se aplica DR.  - `id`: Identificador único de la entidad  - `if`: El conjunto de interfaces OCF que admite este recurso.  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `mandate`: Si se permite anular la solicitud de RD por parte del consumidor  - `n`: Nombre amigable del Recurso  - `name`: El nombre de este artículo.  - `override`: Si el consumidor ha anulado la aplicación del DR.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `rt`: El tipo de recurso.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `start`: La hora de inicio de la aplicación del DR.  - `type`: Tipo de entidad NGSI. Tiene que ser DRLC    
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>  
+- `DRType[integer]`: El tipo de respuesta a la demanda que debe aplicarse.  - `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Una descripción de este artículo  - `drlevel[integer]`: Indicador de la fuerza de la respuesta de RD que se solicita; 0-0%, 1-30%, 2-50%, 3-70%  - `duration[integer]`: La duración del tipo de DR a aplicar en minutos. Un valor de 0 significa que no se aplica DR.  - `id[*]`: Identificador único de la entidad  - `if[array]`: El conjunto de interfaces OCF que admite este recurso.  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `mandate[boolean]`: Si se permite anular la solicitud de RD por parte del consumidor  - `n[string]`: Nombre amistoso del recurso  - `name[string]`: El nombre de este artículo.  - `override[boolean]`: Si el consumidor ha anulado la aplicación del DR.  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `rt[array]`: El tipo de recurso.  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `start[string]`: La hora de inicio de la aplicación del DR.  - `type[string]`: Tipo de entidad NGSI. Tiene que ser DRLC  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propiedades requeridas  
-- `DRType`  - `id`  - `type`    
+- `DRType`  - `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Modelo de datos adaptado del original creado por la Open Connectivity Foundation. Repositorio original en https://github.com/openconnectivityfoundation/IoTDataModels  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 DRLC:    
@@ -360,9 +373,14 @@ DRLC:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Ejemplo de carga útil  
 #### DRLC NGSI-v2 key-values Ejemplo  
 Aquí hay un ejemplo de un DRLC en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:DRLC:id:YRHU:68741537",  
@@ -430,8 +448,10 @@ DRLC:
   "type": "DRLC"  
 }  
 ```  
+</details>  
 #### DRLC NGSI-v2 normalizado Ejemplo  
 Aquí hay un ejemplo de un DRLC en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -571,203 +591,217 @@ DRLC:
   }  
 }  
 ```  
+</details>  
 #### DRLC NGSI-LD key-values Ejemplo  
 Aquí hay un ejemplo de un DRLC en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:DRLC:id:YRHU:68741537",  
-  "dateCreated": "1997-12-08T23:27:56Z",  
-  "dateModified": "2004-11-30T18:19:55Z",  
-  "source": "Condition save total return wind about article. Together month born stay service ball.",  
-  "name": "Sound development easy site. Baby subject national financial purpose dream.",  
-  "alternateName": "Magazine her today measure condition business system. There indicate student soldier pass ahead.",  
-  "description": "Open character course picture wait pattern study.",  
-  "dataProvider": "However team white order drive appear.",  
-  "owner": [  
-    "urn:ngsi-ld:DRLC:items:WBMF:71307654",  
-    "urn:ngsi-ld:DRLC:items:UAKJ:45716313"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:DRLC:items:OBII:13287673",  
-    "urn:ngsi-ld:DRLC:items:LAIX:63931275"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      57.1700595,  
-      -147.083571  
+    "id": "urn:ngsi-ld:DRLC:id:YRHU:68741537",  
+    "dateCreated": "1997-12-08T23:27:56Z",  
+    "dateModified": "2004-11-30T18:19:55Z",  
+    "source": "Condition save total return wind about article. Together month born stay service ball.",  
+    "name": "Sound development easy site. Baby subject national financial purpose dream.",  
+    "alternateName": "Magazine her today measure condition business system. There indicate student soldier pass ahead.",  
+    "description": "Open character course picture wait pattern study.",  
+    "dataProvider": "However team white order drive appear.",  
+    "owner": [  
+        "urn:ngsi-ld:DRLC:items:WBMF:71307654",  
+        "urn:ngsi-ld:DRLC:items:UAKJ:45716313"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:DRLC:items:OBII:13287673",  
+        "urn:ngsi-ld:DRLC:items:LAIX:63931275"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            57.1700595,  
+            -147.083571  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Support most bill whom. Four however little table quality Republican forget maintain.",  
+        "addressLocality": "Likely blue president ever. And positive idea present.",  
+        "addressRegion": "Guy analysis degree general detail energy. Report big measure teach put around.",  
+        "addressCountry": "Son American Mrs say design resource century. Win clearly present prove toward gun increase. That shake card continue book but.",  
+        "postalCode": "Here drug should list bag employee. Environmental think discussion customer property. Effort consumer special wonder.",  
+        "postOfficeBoxNumber": "Spend whom try. Cultural or natural firm what myself town. Close note expect third especially character."  
+    },  
+    "areaServed": "Law drop director must chair. Turn many single rest country through moment. Trade school teach worker morning.",  
+    "rt": [  
+        "oic.r.energy.drlc",  
+        "oic.r.energy.drlc"  
+    ],  
+    "start": "1995-05-08T04:13:52Z",  
+    "duration": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "override": {  
+        "type": "Property",  
+        "value": true  
+    },  
+    "DRType": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "drlevel": {  
+        "type": "Property",  
+        "value": 3  
+    },  
+    "mandate": {  
+        "type": "Property",  
+        "value": false  
+    },  
+    "n": "Else memory if. Whose group through despite cause. Sense peace economy travel.",  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.baseline"  
+    ],  
+    "type": "DRLC",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Support most bill whom. Four however little table quality Republican forget maintain.",  
-    "addressLocality": "Likely blue president ever. And positive idea present.",  
-    "addressRegion": "Guy analysis degree general detail energy. Report big measure teach put around.",  
-    "addressCountry": "Son American Mrs say design resource century. Win clearly present prove toward gun increase. That shake card continue book but.",  
-    "postalCode": "Here drug should list bag employee. Environmental think discussion customer property. Effort consumer special wonder.",  
-    "postOfficeBoxNumber": "Spend whom try. Cultural or natural firm what myself town. Close note expect third especially character."  
-  },  
-  "areaServed": "Law drop director must chair. Turn many single rest country through moment. Trade school teach worker morning.",  
-  "rt": [  
-    "oic.r.energy.drlc",  
-    "oic.r.energy.drlc"  
-  ],  
-  "start": "1995-05-08T04:13:52Z",  
-  "duration": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "override": {  
-    "type": "Property",  
-    "value": true  
-  },  
-  "DRType": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "drlevel": {  
-    "type": "Property",  
-    "value": 3  
-  },  
-  "mandate": {  
-    "type": "Property",  
-    "value": false  
-  },  
-  "n": "Else memory if. Whose group through despite cause. Sense peace economy travel.",  
-  "if": [  
-    "oic.if.baseline",  
-    "oic.if.baseline"  
-  ],  
-  "type": "DRLC",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### DRLC NGSI-LD normalizado Ejemplo  
 Aquí hay un ejemplo de un DRLC en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:DRLC:id:XRYK:72373882",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1984-11-10T01:19:28Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2019-04-01T13:43:00Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Role seat coach. Everything if kid spend really single. Song together shoulder heavy walk between hospital."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Whose choice best population speak newspaper. Read four citizen manage drop."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Recently a because impact create. Peace common but name notice hundred affect. Research question campaign black take great."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Pull country consider heavy pretty. American produce evening by interview finish. He leg war fear."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "He thank add second pressure teach forward rate. Picture force long avoid figure would. Throw high direction type vote."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:DRLC:items:RAVC:41248553",  
-      "urn:ngsi-ld:DRLC:items:JIRT:96354185"  
+    "id": "urn:ngsi-ld:DRLC:id:XRYK:72373882",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1984-11-10T01:19:28Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2019-04-01T13:43:00Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Role seat coach. Everything if kid spend really single. Song together shoulder heavy walk between hospital."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Whose choice best population speak newspaper. Read four citizen manage drop."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Recently a because impact create. Peace common but name notice hundred affect. Research question campaign black take great."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Pull country consider heavy pretty. American produce evening by interview finish. He leg war fear."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "He thank add second pressure teach forward rate. Picture force long avoid figure would. Throw high direction type vote."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:DRLC:items:RAVC:41248553",  
+            "urn:ngsi-ld:DRLC:items:JIRT:96354185"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:DRLC:items:WSDX:92810352"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                5.129012,  
+                103.296499  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Unit admit common seem power office find. Indeed number accept range million hotel use. Government especially prevent other growth color certainly. Policy these simple position check simply letter.",  
+            "addressLocality": "Year century as ok. Hotel treatment stop quickly computer. Least picture another.",  
+            "addressRegion": "Yes unit century hair ok live part sell. Quickly road town large think return.",  
+            "addressCountry": "Successful prove seem building close front different always. Statement real science anyone realize quality.",  
+            "postalCode": "During table either after him religious. Hard heavy anyone modern.",  
+            "postOfficeBoxNumber": "You church black. Hear game ok treatment prepare item."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Of owner hold over them wonder. Chance represent at news country."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.energy.drlc"  
+        ]  
+    },  
+    "start": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2010-05-18T22:28:57Z"  
+        }  
+    },  
+    "duration": {  
+        "type": "Property",  
+        "value": 88  
+    },  
+    "override": {  
+        "type": "Property",  
+        "value": true  
+    },  
+    "DRType": {  
+        "type": "Property",  
+        "value": 118  
+    },  
+    "drlevel": {  
+        "type": "Property",  
+        "value": 1  
+    },  
+    "mandate": {  
+        "type": "Property",  
+        "value": false  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "In do instead style number resource. Truth game official want."  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.a",  
+            "oic.if.a"  
+        ]  
+    },  
+    "type": "DRLC",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:DRLC:items:WSDX:92810352"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        5.129012,  
-        103.296499  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Unit admit common seem power office find. Indeed number accept range million hotel use. Government especially prevent other growth color certainly. Policy these simple position check simply letter.",  
-      "addressLocality": "Year century as ok. Hotel treatment stop quickly computer. Least picture another.",  
-      "addressRegion": "Yes unit century hair ok live part sell. Quickly road town large think return.",  
-      "addressCountry": "Successful prove seem building close front different always. Statement real science anyone realize quality.",  
-      "postalCode": "During table either after him religious. Hard heavy anyone modern.",  
-      "postOfficeBoxNumber": "You church black. Hear game ok treatment prepare item."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Of owner hold over them wonder. Chance represent at news country."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.energy.drlc"  
-    ]  
-  },  
-  "start": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2010-05-18T22:28:57Z"  
-    }  
-  },  
-  "duration": {  
-    "type": "Property",  
-    "value": 88  
-  },  
-  "override": {  
-    "type": "Property",  
-    "value": true  
-  },  
-  "DRType": {  
-    "type": "Property",  
-    "value": 118  
-  },  
-  "drlevel": {  
-    "type": "Property",  
-    "value": 1  
-  },  
-  "mandate": {  
-    "type": "Property",  
-    "value": false  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "In do instead style number resource. Truth game official want."  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.a",  
-      "oic.if.a"  
-    ]  
-  },  
-  "type": "DRLC",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
