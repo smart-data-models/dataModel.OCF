@@ -1,17 +1,32 @@
-エンティティタッチ  
-=========  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティタッチ  
+=========<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/Touch/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな説明です。**IoTDataのデータモデルをスマートデータモデルに変換したものです。このResourceは、タッチが感知されたかどうかを記述する。Propertyの'value'はブール値である。値が'true'の場合、タッチが感知されたことを意味する。値が'false'の場合は、タッチが感知されていないことを意味する。**  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**IoTData のデータモデルをスマートデータモデルプログラムに適応させたものである。この Resource は、タッチが感知されたか否かを記述する。Property 'value'はブール値である。値'true'は、タッチが感知されたことを意味する。false'はタッチが感知されないことを意味する。**  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `if`: このResourceがサポートしているOCF Interface set。  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `n`: リソースのフレンドリーネーム  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `rt`: The Resource Type。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSIのエンティティタイプ。タッチでなければならない  - `value`: タッチセンサー、true＝感知、false＝感知していない。    
-必須項目  
-- `id`  - `type`    
-このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)から来ています。NGSIの要件に適合するように拡張されています。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `if[array]`: このResourceがサポートするOCF Interfaceセット。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `n[string]`: リソースのフレンドリ名  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `rt[array]`: リソースタイプです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSIエンティティタイプ。タッチでなければならない  - `value[boolean]`: タッチセンサー、true = 感知、false = 非感知。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)に由来しています。NGSIの要件に適合するように拡張されている。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Touch:    
@@ -329,9 +344,14 @@ Touch:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### Touch NGSI-v2 キーバリューの例  
-Touchをkey-valuesとしてJSON-LD形式にした例を紹介します。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### タッチNGSI-v2キー値例  
+ここでは、TouchをJSON-LD形式でkey-valuesにした例を示す。これは、`options=keyValues`を使用したときにNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Touch:id:LOIR:63598499",  
@@ -368,8 +388,10 @@ Touch:
   "areaServed": "These list spend local ball cultural. Series thought go vote. Per state push general."  
 }  
 ```  
-#### タッチNGSI-v2規格化例  
-ここでは、正規化されたJSON-LD形式のTouchの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### タッチ NGSI-v2 正規化例  
+以下は、TouchをJSON-LD形式で正規化した例である。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -447,127 +469,141 @@ Touch:
   }  
 }  
 ```  
-#### Touch NGSI-LDのキーバリューの例  
-ここでは、JSON-LD形式でTouchをkey-valuesにした例を紹介します。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### タッチNGSI-LDキー値例  
+ここでは、TouchをJSON-LD形式でkey-valuesにした例を示します。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータが返されます。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Touch:id:LOIR:63598499",  
-  "dateCreated": "1983-12-11T19:06:03Z",  
-  "dateModified": "2013-08-06T21:33:42Z",  
-  "source": "National hold movie his idea hear actually. Represent tough another to high reach. Everyone consumer area a between player.",  
-  "name": "Second record indeed discussion discover. Modern candidate factor.",  
-  "alternateName": "Campaign wonder media international pass wait cost. Break certainly process car positive along learn. Yet everyone fast.",  
-  "description": "Mrs position force scene task. Believe manager challenge everything.",  
-  "dataProvider": "Course force hotel ability friend red beyond official. Reveal realize then medical name must. Exactly official population able little expert include.",  
-  "owner": [  
-    "urn:ngsi-ld:Touch:items:IHLX:24425242",  
-    "urn:ngsi-ld:Touch:items:QUCL:88074146"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Touch:items:DMBH:20221912",  
-    "urn:ngsi-ld:Touch:items:FGQX:49550308"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      54.5830575,  
-      95.942963  
+    "id": "urn:ngsi-ld:Touch:id:LOIR:63598499",  
+    "dateCreated": "1983-12-11T19:06:03Z",  
+    "dateModified": "2013-08-06T21:33:42Z",  
+    "source": "National hold movie his idea hear actually. Represent tough another to high reach. Everyone consumer area a between player.",  
+    "name": "Second record indeed discussion discover. Modern candidate factor.",  
+    "alternateName": "Campaign wonder media international pass wait cost. Break certainly process car positive along learn. Yet everyone fast.",  
+    "description": "Mrs position force scene task. Believe manager challenge everything.",  
+    "dataProvider": "Course force hotel ability friend red beyond official. Reveal realize then medical name must. Exactly official population able little expert include.",  
+    "owner": [  
+        "urn:ngsi-ld:Touch:items:IHLX:24425242",  
+        "urn:ngsi-ld:Touch:items:QUCL:88074146"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Touch:items:DMBH:20221912",  
+        "urn:ngsi-ld:Touch:items:FGQX:49550308"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            54.5830575,  
+            95.942963  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Forward pass know suggest music from source. Our deep reality suggest change.",  
+        "addressLocality": "Leader positive already for cultural class. Turn treatment break quality. Success now special sound bank where relate.",  
+        "addressRegion": "Off perhaps necessary save deal late still. Nice ever gas. Area son house forward their then.",  
+        "addressCountry": "Successful our student none campaign.",  
+        "postalCode": "Pattern who author window loss culture over. Box method customer present. Course that enjoy within economic interview. Off quality edge pay church voice.",  
+        "postOfficeBoxNumber": "For agency treat style."  
+    },  
+    "areaServed": "These list spend local ball cultural. Series thought go vote. Per state push general.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Forward pass know suggest music from source. Our deep reality suggest change.",  
-    "addressLocality": "Leader positive already for cultural class. Turn treatment break quality. Success now special sound bank where relate.",  
-    "addressRegion": "Off perhaps necessary save deal late still. Nice ever gas. Area son house forward their then.",  
-    "addressCountry": "Successful our student none campaign.",  
-    "postalCode": "Pattern who author window loss culture over. Box method customer present. Course that enjoy within economic interview. Off quality edge pay church voice.",  
-    "postOfficeBoxNumber": "For agency treat style."  
-  },  
-  "areaServed": "These list spend local ball cultural. Series thought go vote. Per state push general.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-#### タッチNGSI-LDの正規化例  
-正規化されたJSON-LD形式のTouchの例を示します。これは、オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### タッチ NGSI-LD 正規化例  
+以下は、TouchをJSON-LD形式で正規化した例である。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Touch:id:BHOE:99629945",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1976-09-22T04:56:59Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1976-08-17T10:01:00Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Evening pick report."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Protect or trip keep keep. Society every card happy."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Long down deep order across. Dinner space keep compare. Manager majority tonight."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Message amount always between use yes. Plan plan actually thus focus authority. Task perhaps build professional movement individual field."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Reality house we apply hit."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Touch:items:ORBA:00184639",  
-      "urn:ngsi-ld:Touch:items:YLIL:03077083"  
+    "id": "urn:ngsi-ld:Touch:id:BHOE:99629945",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1976-09-22T04:56:59Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1976-08-17T10:01:00Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Evening pick report."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Protect or trip keep keep. Society every card happy."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Long down deep order across. Dinner space keep compare. Manager majority tonight."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Message amount always between use yes. Plan plan actually thus focus authority. Task perhaps build professional movement individual field."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Reality house we apply hit."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Touch:items:ORBA:00184639",  
+            "urn:ngsi-ld:Touch:items:YLIL:03077083"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Touch:items:JXOV:82597506"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -0.1744025,  
+                -153.346539  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Cultural teach light factor keep.",  
+            "addressLocality": "Each risk sell final game save major collection. Also interview drug let participant. Cup nor mind check much fear.",  
+            "addressRegion": "Ground Mr hot sometimes change off deep. Loss eye image level something recent yes.",  
+            "addressCountry": "Full pay response win require increase despite. Bring which bar. Concern you cause black democratic back.",  
+            "postalCode": "Hand decision share. Technology imagine score technology treat state image name.",  
+            "postOfficeBoxNumber": "Find turn think some than role. Treat serve change final think cost somebody. Financial turn population hair do ahead."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "List impact owner detail everyone. By picture rich middle long very. Window indicate walk exactly figure."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Touch:items:JXOV:82597506"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -0.1744025,  
-        -153.346539  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Cultural teach light factor keep.",  
-      "addressLocality": "Each risk sell final game save major collection. Also interview drug let participant. Cup nor mind check much fear.",  
-      "addressRegion": "Ground Mr hot sometimes change off deep. Loss eye image level something recent yes.",  
-      "addressCountry": "Full pay response win require increase despite. Bring which bar. Concern you cause black democratic back.",  
-      "postalCode": "Hand decision share. Technology imagine score technology treat state image name.",  
-      "postOfficeBoxNumber": "Find turn think some than role. Treat serve change final think cost somebody. Financial turn population hair do ahead."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "List impact owner detail everyone. By picture rich middle long very. Window indicate walk exactly figure."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
