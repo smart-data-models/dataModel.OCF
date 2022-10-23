@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entität: Dimmen  
-===============  
+===============<!-- /10-Header -->  
+<!-- 15-License -->  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.OCF/blob/master/Dimming/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Globale Beschreibung: **Diese Ressource beschreibt eine Dimmfunktion.Die Eigenschaft 'dimmingSetting' ist eine ganze Zahl, die den aktuellen Dimmwert angibt.Wenn die Eigenschaft 'step' vorhanden ist, dann stellt sie die Schrittweite zwischen den Dimmwerten dar.Wenn die Eigenschaft 'range' weggelassen wird, dann ist der Bereich [0,100].Ein Wert von 0 bedeutet vollständiges Dimmen; ein Wert von 100 bedeutet kein Dimmen.**  
 Version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `dimmingSetting`: Der aktuelle Dimmwert.  - `id`: Eindeutiger Bezeichner der Entität  - `if`: Der von dieser Ressource unterstützte OCF-Schnittstellensatz.  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `n`: Freundlicher Name der Ressource  - `name`: Der Name dieses Artikels.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `range`: Der gültige Bereich für die Eigenschaft in der Ressource in Form einer Ganzzahl. Der erste Wert im Array ist der Mindestwert, der zweite Wert im Array ist der Höchstwert.  - `rt`: Der Ressourcentyp.  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `step`: Schrittwert über den definierten Bereich, wenn der Bereich eine ganze Zahl ist.  Dies ist die Schrittweite für gültige Werte innerhalb des Bereichs; wenn also der Bereich 0..10 und der Schritt 2 ist, sind die Werte 0,2,4,6,8,10 gültig.  - `type`: NGSI-Entitätstyp. Es muss Dimming sein    
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, liegt das daran, dass es mehrere Typen oder unterschiedliche Formate/Muster haben kann</sub></sup>.  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `dimmingSetting[integer]`: Der aktuelle Dimmwert.  - `id[*]`: Eindeutiger Bezeichner der Entität  - `if[array]`: Der von dieser Ressource unterstützte OCF-Schnittstellensatz.  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `n[string]`: Freundlicher Name der Ressource  - `name[string]`: Der Name dieses Artikels.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `range[array]`: Der gültige Bereich für die Eigenschaft in der Ressource in Form einer Ganzzahl. Der erste Wert im Array ist der Mindestwert, der zweite Wert im Array ist der Höchstwert.  - `rt[array]`: Der Ressourcentyp.  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `step[integer]`: Schrittwert über den definierten Bereich, wenn der Bereich eine ganze Zahl ist.  Dies ist die Schrittweite für gültige Werte innerhalb des Bereichs; wenn also der Bereich 0..10 und der Schritt 2 ist, sind die Werte 0,2,4,6,8,10 gültig.  - `type[string]`: NGSI-Entitätstyp. Es muss Dimming sein  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
-- `dimmingSetting`  - `id`  - `type`    
+- `dimmingSetting`  - `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Datenmodell nach dem von der Open Connectivity Foundation erstellten Original. Ursprüngliches Repository in https://github.com/openconnectivityfoundation/IoTDataModels  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Dimming:    
@@ -347,9 +360,14 @@ Dimming:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Beispiel-Nutzlasten  
 #### Dimmen von NGSI-v2 Schlüsselwerten Beispiel  
-Hier ist ein Beispiel für ein Dimming im JSON-LD-Format als Key-Values. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für ein Dimming im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Dimming:id:FQDB:16398581",  
@@ -408,8 +426,10 @@ Dimming:
   "type": "Dimming"  
 }  
 ```  
+</details>  
 #### Dimmen NGSI-v2 normalisiert Beispiel  
 Hier ist ein Beispiel für ein Dimming im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -530,182 +550,196 @@ Dimming:
   }  
 }  
 ```  
+</details>  
 #### Dimmen NGSI-LD Schlüsselwerte Beispiel  
 Hier ist ein Beispiel für ein Dimming im JSON-LD-Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Dimming:id:FQDB:16398581",  
-  "dateCreated": "2013-03-14T23:32:57Z",  
-  "dateModified": "2000-04-30T06:54:11Z",  
-  "source": "Southern act artist figure body. Someone write name performance network talk dog also.",  
-  "name": "Focus finish apply many far few. Because different onto material sometimes. Work wife little agree.",  
-  "alternateName": "New soldier apply personal. Particularly goal help individual accept seat.",  
-  "description": "Well single natural near rather that country. Language social buy manage officer.",  
-  "dataProvider": "Break everybody group include. Then name key television. Beyond tend surface eat last herself interesting.",  
-  "owner": [  
-    "urn:ngsi-ld:Dimming:items:UYRH:03063472",  
-    "urn:ngsi-ld:Dimming:items:MLEW:62413875"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Dimming:items:HSCK:11633956",  
-    "urn:ngsi-ld:Dimming:items:PAOU:39584686"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      75.8030785,  
-      -21.050609  
+    "id": "urn:ngsi-ld:Dimming:id:FQDB:16398581",  
+    "dateCreated": "2013-03-14T23:32:57Z",  
+    "dateModified": "2000-04-30T06:54:11Z",  
+    "source": "Southern act artist figure body. Someone write name performance network talk dog also.",  
+    "name": "Focus finish apply many far few. Because different onto material sometimes. Work wife little agree.",  
+    "alternateName": "New soldier apply personal. Particularly goal help individual accept seat.",  
+    "description": "Well single natural near rather that country. Language social buy manage officer.",  
+    "dataProvider": "Break everybody group include. Then name key television. Beyond tend surface eat last herself interesting.",  
+    "owner": [  
+        "urn:ngsi-ld:Dimming:items:UYRH:03063472",  
+        "urn:ngsi-ld:Dimming:items:MLEW:62413875"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Dimming:items:HSCK:11633956",  
+        "urn:ngsi-ld:Dimming:items:PAOU:39584686"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            75.8030785,  
+            -21.050609  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Study plant while camera. Support each specific travel.",  
+        "addressLocality": "After interview value. Officer accept power language summer. Data site soon act cost enjoy.",  
+        "addressRegion": "See shoulder clear agree. Rate stop often teacher big economy.",  
+        "addressCountry": "Place bank money performance. Big director and force Congress. Rich paper like trouble morning read. Daughter onto spring peace end.",  
+        "postalCode": "Question animal oil leader air mention. Will lose Mr. Control long increase statement.",  
+        "postOfficeBoxNumber": "Article go skin charge. Up would few region turn scientist respond."  
+    },  
+    "areaServed": "Best whether force in military. Season woman major month.",  
+    "rt": [  
+        "oic.r.light.dimming",  
+        "oic.r.light.dimming"  
+    ],  
+    "dimmingSetting": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "n": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair.",  
+    "range": [  
+        864,  
+        864  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "if": [  
+        "oic.if.a",  
+        "oic.if.baseline"  
+    ],  
+    "type": "Dimming",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Study plant while camera. Support each specific travel.",  
-    "addressLocality": "After interview value. Officer accept power language summer. Data site soon act cost enjoy.",  
-    "addressRegion": "See shoulder clear agree. Rate stop often teacher big economy.",  
-    "addressCountry": "Place bank money performance. Big director and force Congress. Rich paper like trouble morning read. Daughter onto spring peace end.",  
-    "postalCode": "Question animal oil leader air mention. Will lose Mr. Control long increase statement.",  
-    "postOfficeBoxNumber": "Article go skin charge. Up would few region turn scientist respond."  
-  },  
-  "areaServed": "Best whether force in military. Season woman major month.",  
-  "rt": [  
-    "oic.r.light.dimming",  
-    "oic.r.light.dimming"  
-  ],  
-  "dimmingSetting": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "n": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair.",  
-  "range": [  
-    864,  
-    864  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "if": [  
-    "oic.if.a",  
-    "oic.if.baseline"  
-  ],  
-  "type": "Dimming",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### Dimmen NGSI-LD normalisiert Beispiel  
 Hier ist ein Beispiel für ein Dimming im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Dimming:id:GJEI:27775424",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1997-03-04T04:45:11Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1978-08-08T07:33:27Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Morning member nation return section hand player. Social right him television and world. From unit best send cut current."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Fly institution owner every. Street research hair smile where parent media."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Most unit not day head."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Old million order even peace wait so. Reveal than part least fire race character."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Inside decade recognize choice. Green clear seem environment shake. Choice few responsibility action citizen."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Dimming:items:VZPC:69696442",  
-      "urn:ngsi-ld:Dimming:items:KAOV:68332845"  
+    "id": "urn:ngsi-ld:Dimming:id:GJEI:27775424",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1997-03-04T04:45:11Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1978-08-08T07:33:27Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Morning member nation return section hand player. Social right him television and world. From unit best send cut current."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Fly institution owner every. Street research hair smile where parent media."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Most unit not day head."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Old million order even peace wait so. Reveal than part least fire race character."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Inside decade recognize choice. Green clear seem environment shake. Choice few responsibility action citizen."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Dimming:items:VZPC:69696442",  
+            "urn:ngsi-ld:Dimming:items:KAOV:68332845"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Dimming:items:WRHS:76719441"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                45.639393,  
+                -103.289701  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Within fight civil join American leader perform. Far writer rich raise north.",  
+            "addressLocality": "Similar treatment necessary back. Prevent above on. In trade perhaps time almost myself world. Newspaper safe must.",  
+            "addressRegion": "Economy opportunity although hour become recognize. Media list crime fine quite spend serve.",  
+            "addressCountry": "Able front including. Evidence maintain identify front travel attack.",  
+            "postalCode": "Yeah far reach indicate goal security ten prevent. Positive foot successful system list respond what.",  
+            "postOfficeBoxNumber": "Carry trip on born. Movie right happen them speech see almost."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Relate class another production check buy sister life. Blood including life senior until represent. Series ability fund ask interview."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.light.dimming"  
+        ]  
+    },  
+    "dimmingSetting": {  
+        "type": "Property",  
+        "value": 80  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Pressure imagine forget hand model summer. Gas use record water."  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            740,  
+            905  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 916  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline",  
+            "oic.if.a"  
+        ]  
+    },  
+    "type": "Dimming",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Dimming:items:WRHS:76719441"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        45.639393,  
-        -103.289701  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Within fight civil join American leader perform. Far writer rich raise north.",  
-      "addressLocality": "Similar treatment necessary back. Prevent above on. In trade perhaps time almost myself world. Newspaper safe must.",  
-      "addressRegion": "Economy opportunity although hour become recognize. Media list crime fine quite spend serve.",  
-      "addressCountry": "Able front including. Evidence maintain identify front travel attack.",  
-      "postalCode": "Yeah far reach indicate goal security ten prevent. Positive foot successful system list respond what.",  
-      "postOfficeBoxNumber": "Carry trip on born. Movie right happen them speech see almost."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Relate class another production check buy sister life. Blood including life senior until represent. Series ability fund ask interview."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.light.dimming"  
-    ]  
-  },  
-  "dimmingSetting": {  
-    "type": "Property",  
-    "value": 80  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Pressure imagine forget hand model summer. Gas use record water."  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      740,  
-      905  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 916  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.baseline",  
-      "oic.if.a"  
-    ]  
-  },  
-  "type": "Dimming",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
