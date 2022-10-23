@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 エンティティエンティティ：VehicleConnector  
-=============================  
+=============================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/VehicleConnector/LICENSE.md)  
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述。**このリソースは、電気自動車用充電コネクタに関連する属性を記述する。プロパティ 'connected' はコネクタの状態を示すブーリアン値である（False = disconnected, True = connected）。プロパティ 'ratedchargingcapacity' と 'rateddischargingcapacity' はアンペア(A)である。  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述です。**この Resource は、電気自動車用充電コネクタに関連する属性を記述する。プロパティ 'connected' は、コネクタの状態を示すブーリアン値である（False = disconnected, True = connected）。プロパティ 'ratedchargingcapacity' と 'rateddischargingcapacity' はアンペア(A)である。  
 バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `connected`: 接続状態です。  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `id`: エンティティの一意な識別子  - `if`: このResourceがサポートするOCF Interfaceセット。  - `location`: 項目へのGeojson参照。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `n`: リソースのフレンドリ名  - `name`: このアイテムの名称です。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `ratedchargingcapacity`: 定格充電容量をA（アンペア）で示す。  - `rateddischargingcapacity`: 定格放電容量をA（アンペア）で示す。  - `rt`: リソースタイプです。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで指定する文字の列。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSIエンティティタイプ。これはVehicleConnectorでなければならない。    
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `connected[boolean]`: 接続状態です。  - `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `if[array]`: このResourceがサポートするOCF Interfaceセット。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `n[string]`: リソースのフレンドリ名  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `ratedchargingcapacity[number]`: 定格充電容量をA（アンペア）で示す。  - `rateddischargingcapacity[number]`: 定格放電容量をA（アンペア）で示す。  - `rt[array]`: リソースタイプです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSIエンティティタイプ。これはVehicleConnectorでなければならない。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 必要なプロパティ  
-- `connected`  - `id`  - `type`    
+- `connected`  - `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 データモデルは、Open Connectivity Foundationが作成したオリジナルを引用しています。https://github.com/openconnectivityfoundation/IoTDataModels のオリジナルリポジトリ  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
 アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 VehicleConnector:    
@@ -344,9 +357,14 @@ VehicleConnector:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
 #### VehicleConnector NGSI-v2 key-value の例。  
-以下は、VehicleConnectorをJSON-LD形式でkey-valueにした例です。これは、`options=keyValues` を使用した場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、VehicleConnectorをJSON-LD形式でkey-valuesにした例である。これは、`options=keyValues` を使用した場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:VehicleConnector:id:JADI:02407105",  
@@ -405,8 +423,10 @@ VehicleConnector:
   "type": "VehicleConnector"  
 }  
 ```  
+</details>  
 #### VehicleConnector NGSI-v2 正規化例  
-以下は、VehicleConnectorをJSON-LD形式で正規化した例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、VehicleConnector を JSON-LD 形式で正規化した例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -527,179 +547,193 @@ VehicleConnector:
   }  
 }  
 ```  
+</details>  
 #### VehicleConnector NGSI-LD キー値例  
-ここでは、VehicleConnectorをJSON-LD形式でkey-valueとして記述した例を示します。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータが返される。  
+以下はVehicleConnectorをJSON-LD形式でkey-valuesとして表した例です。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:VehicleConnector:id:JADI:02407105",  
-  "dateCreated": "1987-12-29T01:28:41Z",  
-  "dateModified": "2007-05-07T23:28:25Z",  
-  "source": "Contain member fire popular when great join. Data may job social minute beat east.",  
-  "name": "Tv run cold might wall force. Site practice certain state.",  
-  "alternateName": "Moment oil trade accept. Especially event piece never. Partner security play mission put support just.",  
-  "description": "Case ten according yes. Student only side safe enter. Plan fine civil threat imagine.",  
-  "dataProvider": "Month without prepare financial. Theory door number Mrs itself third. Remember job middle energy standard image care.",  
-  "owner": [  
-    "urn:ngsi-ld:VehicleConnector:items:GOHP:94242286",  
-    "urn:ngsi-ld:VehicleConnector:items:DNMA:32514112"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:VehicleConnector:items:FHFN:25053328",  
-    "urn:ngsi-ld:VehicleConnector:items:JUMC:26636842"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -65.886465,  
-      -22.450009  
+    "id": "urn:ngsi-ld:VehicleConnector:id:JADI:02407105",  
+    "dateCreated": "1987-12-29T01:28:41Z",  
+    "dateModified": "2007-05-07T23:28:25Z",  
+    "source": "Contain member fire popular when great join. Data may job social minute beat east.",  
+    "name": "Tv run cold might wall force. Site practice certain state.",  
+    "alternateName": "Moment oil trade accept. Especially event piece never. Partner security play mission put support just.",  
+    "description": "Case ten according yes. Student only side safe enter. Plan fine civil threat imagine.",  
+    "dataProvider": "Month without prepare financial. Theory door number Mrs itself third. Remember job middle energy standard image care.",  
+    "owner": [  
+        "urn:ngsi-ld:VehicleConnector:items:GOHP:94242286",  
+        "urn:ngsi-ld:VehicleConnector:items:DNMA:32514112"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:VehicleConnector:items:FHFN:25053328",  
+        "urn:ngsi-ld:VehicleConnector:items:JUMC:26636842"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -65.886465,  
+            -22.450009  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Floor back near although nothing detail. Cultural result page project miss form college. Improve yeah walk sure she whose.",  
+        "addressLocality": "Including record happen claim. Itself worry hospital career likely that local. House professional husband record enough set focus. Public goal bank current star begin house.",  
+        "addressRegion": "Quality live force just including official. Need season side middle.",  
+        "addressCountry": "Under debate city today seem. Rate sing test sport series. Tough public imagine officer answer.",  
+        "postalCode": "Health anyone product figure wonder here. You several admit establish everyone age wall. Measure information together technology. Size wish risk move cause Democrat.",  
+        "postOfficeBoxNumber": "Beyond defense standard church describe social painting. Matter child capital new sometimes its right. Fact worry fish phone."  
+    },  
+    "areaServed": "Southern hour success toward agree choose environment. Size feel his computer door eat weight eye.",  
+    "rt": [  
+        "oic.r.vehicle.connector",  
+        "oic.r.vehicle.connector"  
+    ],  
+    "connected": {  
+        "type": "Property",  
+        "value": true  
+    },  
+    "ratedchargingcapacity": {  
+        "type": "Property",  
+        "value": 385.6  
+    },  
+    "rateddischargingcapacity": {  
+        "type": "Property",  
+        "value": 679.8  
+    },  
+    "n": "East man seven explain worry nation choice. Whether trouble young perhaps friend course. As vote hour professional across home.",  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.s"  
+    ],  
+    "type": "VehicleConnector",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Floor back near although nothing detail. Cultural result page project miss form college. Improve yeah walk sure she whose.",  
-    "addressLocality": "Including record happen claim. Itself worry hospital career likely that local. House professional husband record enough set focus. Public goal bank current star begin house.",  
-    "addressRegion": "Quality live force just including official. Need season side middle.",  
-    "addressCountry": "Under debate city today seem. Rate sing test sport series. Tough public imagine officer answer.",  
-    "postalCode": "Health anyone product figure wonder here. You several admit establish everyone age wall. Measure information together technology. Size wish risk move cause Democrat.",  
-    "postOfficeBoxNumber": "Beyond defense standard church describe social painting. Matter child capital new sometimes its right. Fact worry fish phone."  
-  },  
-  "areaServed": "Southern hour success toward agree choose environment. Size feel his computer door eat weight eye.",  
-  "rt": [  
-    "oic.r.vehicle.connector",  
-    "oic.r.vehicle.connector"  
-  ],  
-  "connected": {  
-    "type": "Property",  
-    "value": true  
-  },  
-  "ratedchargingcapacity": {  
-    "type": "Property",  
-    "value": 385.6  
-  },  
-  "rateddischargingcapacity": {  
-    "type": "Property",  
-    "value": 679.8  
-  },  
-  "n": "East man seven explain worry nation choice. Whether trouble young perhaps friend course. As vote hour professional across home.",  
-  "if": [  
-    "oic.if.baseline",  
-    "oic.if.s"  
-  ],  
-  "type": "VehicleConnector",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### VehicleConnector NGSI-LD 正規化例  
-以下は、VehicleConnectorをJSON-LD形式で正規化した例である。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、VehicleConnector を JSON-LD 形式で正規化した例です。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:VehicleConnector:id:KJFN:91046688",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1979-06-19T14:53:09Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1984-01-17T10:15:27Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Nice kind who a very animal yourself. Cause performance professional parent."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Mean political investment movie never. Look only base play."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Finally nature about degree. But upon cost agreement force continue have. Win even rule especially send and subject."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Less easy state possible much. Cut size east. Rule also care since. Could line foot different."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Concern blood during trip address key. Artist above little tend without cover."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:VehicleConnector:items:QZMD:32671659",  
-      "urn:ngsi-ld:VehicleConnector:items:OWTS:91756327"  
+    "id": "urn:ngsi-ld:VehicleConnector:id:KJFN:91046688",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1979-06-19T14:53:09Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1984-01-17T10:15:27Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Nice kind who a very animal yourself. Cause performance professional parent."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Mean political investment movie never. Look only base play."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Finally nature about degree. But upon cost agreement force continue have. Win even rule especially send and subject."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Less easy state possible much. Cut size east. Rule also care since. Could line foot different."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Concern blood during trip address key. Artist above little tend without cover."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:VehicleConnector:items:QZMD:32671659",  
+            "urn:ngsi-ld:VehicleConnector:items:OWTS:91756327"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:VehicleConnector:items:DJCP:79960404"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -22.827501,  
+                -44.485689  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Fill science against describe include sign. Air man develop oil shake scene fall. Bring though production science.",  
+            "addressLocality": "Draw necessary store catch. Teach half southern understand. Oil mission own move establish available beyond.",  
+            "addressRegion": "Bring sound risk they general. Position officer song knowledge war none.",  
+            "addressCountry": "Evidence consider summer investment east against heavy line. Course every whole perhaps them fear. End collection report. Interview not goal ground political continue.",  
+            "postalCode": "Education thus oil end those. Up feeling approach fire run challenge dog.",  
+            "postOfficeBoxNumber": "Range your whether resource couple bad indicate surface. Head expert in data wonder. Song black write happy several billion."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Common him rest understand however color. Answer add during admit they quickly need."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.vehicle.connector"  
+        ]  
+    },  
+    "connected": {  
+        "type": "Property",  
+        "value": false  
+    },  
+    "ratedchargingcapacity": {  
+        "type": "Property",  
+        "value": 519.5  
+    },  
+    "rateddischargingcapacity": {  
+        "type": "Property",  
+        "value": 460.6  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Education particularly employee trade. Dinner research big hope least accept analysis."  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline",  
+            "oic.if.s"  
+        ]  
+    },  
+    "type": "VehicleConnector",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:VehicleConnector:items:DJCP:79960404"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -22.827501,  
-        -44.485689  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Fill science against describe include sign. Air man develop oil shake scene fall. Bring though production science.",  
-      "addressLocality": "Draw necessary store catch. Teach half southern understand. Oil mission own move establish available beyond.",  
-      "addressRegion": "Bring sound risk they general. Position officer song knowledge war none.",  
-      "addressCountry": "Evidence consider summer investment east against heavy line. Course every whole perhaps them fear. End collection report. Interview not goal ground political continue.",  
-      "postalCode": "Education thus oil end those. Up feeling approach fire run challenge dog.",  
-      "postOfficeBoxNumber": "Range your whether resource couple bad indicate surface. Head expert in data wonder. Song black write happy several billion."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Common him rest understand however color. Answer add during admit they quickly need."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.vehicle.connector"  
-    ]  
-  },  
-  "connected": {  
-    "type": "Property",  
-    "value": false  
-  },  
-  "ratedchargingcapacity": {  
-    "type": "Property",  
-    "value": 519.5  
-  },  
-  "rateddischargingcapacity": {  
-    "type": "Property",  
-    "value": 460.6  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Education particularly employee trade. Dinner research big hope least accept analysis."  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.baseline",  
-      "oic.if.s"  
-    ]  
-  },  
-  "type": "VehicleConnector",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
