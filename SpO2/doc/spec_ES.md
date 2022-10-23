@@ -1,17 +1,32 @@
-Entidad: SpO2  
-=============  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entidad: SpO2  
+=============<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.OCF/blob/master/SpO2/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Descripción global: **Adaptación del Programa de Modelos de Datos Inteligentes de los Modelos de Datos originales de IoTData. Este recurso describe las propiedades asociadas al nivel de saturación de oxígeno en sangre de una persona.  Las Propiedades spo2 y perfusión son valores de sólo lectura que son proporcionados por el servidor.  Cuando se omite el rango (de 'oic.r.baseresource') el valor por defecto es de 0 a +MAXFLOAT.**  
+versión: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `if`: El conjunto de interfaces OCF que admite este recurso.  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n`: Nombre amistoso del recurso  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `perfusion`: Esta propiedad describe la relación entre la CA y la CC del PPG.  - `perfusion_precision`: Cuando se expone el valor en "precisión" proporciona una tolerancia +/- contra las Propiedades en el Recurso. Por lo tanto, si una propiedad se actualiza a un valor y esa propiedad se recupera, el valor recuperado es válido si está en el rango del valor establecido +/- precisión.  - `perfusion_range`: El rango válido para la Propiedad en el Recurso como un número. El primer valor de la matriz es el valor mínimo, el segundo valor de la matriz es el valor máximo.  - `perfusion_step`: Valor del paso a través del rango definido un número entero cuando el rango es un número.  Este es el incremento para los valores válidos a través del rango; así que si el rango es 0.0..10.0 y el paso es 2.5 entonces los valores válidos son 0.0,2.5,5.0,7.5,10.0.  - `rt`: El tipo de recurso.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `spo2`: Esta propiedad describe la estimación del nivel de saturación de oxígeno en porcentaje.  - `spo2_precision`: Cuando se expone el valor en "precisión" proporciona una tolerancia +/- contra las Propiedades en el Recurso. Por lo tanto, si una propiedad se actualiza a un valor y esa propiedad se recupera, el valor recuperado es válido si está en el rango del valor establecido +/- precisión.  - `spo2_range`: El rango válido para la Propiedad en el Recurso como un número. El primer valor de la matriz es el valor mínimo, el segundo valor de la matriz es el valor máximo.  - `spo2_step`: Valor del paso a través del rango definido un número entero cuando el rango es un número.  Este es el incremento para los valores válidos a través del rango; así que si el rango es 0.0..10.0 y el paso es 2.5 entonces los valores válidos son 0.0,2.5,5.0,7.5,10.0.  - `type`: Tipo de entidad NGSI. Tiene que ser SpO2    
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>  
+- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Una descripción de este artículo  - `id[*]`: Identificador único de la entidad  - `if[array]`: El conjunto de interfaces OCF que admite este recurso.  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n[string]`: Nombre amigable del Recurso  - `name[string]`: El nombre de este artículo.  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `perfusion[number]`: Esta propiedad describe la relación entre la CA y la CC del PPG.  - `perfusion_precision[number]`: Cuando se expone el valor en "precisión" proporciona una tolerancia +/- contra las Propiedades en el Recurso. Por lo tanto, si una propiedad se actualiza a un valor y esa propiedad se recupera, el valor recuperado es válido si está en el rango del valor establecido +/- precisión.  - `perfusion_range[array]`: El rango válido para la Propiedad en el Recurso como un número. El primer valor de la matriz es el valor mínimo, el segundo valor de la matriz es el valor máximo.  - `perfusion_step[number]`: Valor del paso a través del rango definido un número entero cuando el rango es un número.  Este es el incremento para los valores válidos a través del rango; así que si el rango es 0.0..10.0 y el paso es 2.5 entonces los valores válidos son 0.0,2.5,5.0,7.5,10.0.  - `rt[array]`: El tipo de recurso.  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `spo2[number]`: Esta propiedad describe la estimación del nivel de saturación de oxígeno en porcentaje.  - `spo2_precision[number]`: Cuando se expone el valor en "precisión" proporciona una tolerancia +/- contra las Propiedades en el Recurso. Por lo tanto, si una propiedad se actualiza a un valor y esa propiedad se recupera, el valor recuperado es válido si está en el rango del valor establecido +/- precisión.  - `spo2_range[array]`: El rango válido para la Propiedad en el Recurso como un número. El primer valor de la matriz es el valor mínimo, el segundo valor de la matriz es el valor máximo.  - `spo2_step[number]`: Valor del paso a través del rango definido un número entero cuando el rango es un número.  Este es el incremento para los valores válidos a través del rango; así que si el rango es 0.0..10.0 y el paso es 2.5 entonces los valores válidos son 0.0,2.5,5.0,7.5,10.0.  - `type[string]`: Tipo de entidad NGSI. Tiene que ser SpO2  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propiedades requeridas  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Este modelo de datos procede del original [repositorio de la Open Connectivity Foundation](https://github.com/openconnectivityfoundation/IoTDataModels). Se ha ampliado para cumplir con los requisitos de la NGSI.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 SpO2:    
@@ -381,9 +396,14 @@ SpO2:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Ejemplo de carga útil  
 #### SpO2 NGSI-v2 key-values Ejemplo  
 Aquí hay un ejemplo de un SpO2 en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:SpO2:id:UXVB:49250554",  
@@ -420,8 +440,10 @@ SpO2:
   "areaServed": "Traditional society technology little plant on ago. Audience heavy point expect security difficult general read. Participant everybody action Mrs middle enter agency."  
 }  
 ```  
+</details>  
 #### SpO2 NGSI-v2 normalizado Ejemplo  
-Este es un ejemplo de una SpO2 en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+Aquí hay un ejemplo de un SpO2 en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -499,127 +521,141 @@ SpO2:
   }  
 }  
 ```  
+</details>  
 #### SpO2 NGSI-LD key-values Ejemplo  
 Aquí hay un ejemplo de un SpO2 en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:SpO2:id:UXVB:49250554",  
-  "dateCreated": "1979-10-18T15:29:13Z",  
-  "dateModified": "2012-12-25T02:07:10Z",  
-  "source": "No own particularly tough marriage west person. Perform country stay necessary best. Move to still less specific general quality clear. It report far over.",  
-  "name": "Exactly join represent. Board least develop.",  
-  "alternateName": "Form after speech think within hotel need effort. Commercial several threat officer paper have side. Sing believe commercial TV vote exactly for continue.",  
-  "description": "Form carry human action much age care future. Well make every recognize. State consumer might continue.",  
-  "dataProvider": "Gun cost leave once amount phone. Beyond save guess approach you big over. Small summer style very value candidate stay wait.",  
-  "owner": [  
-    "urn:ngsi-ld:SpO2:items:FOVM:74049734",  
-    "urn:ngsi-ld:SpO2:items:VNLZ:87274151"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:SpO2:items:EDDV:12327755",  
-    "urn:ngsi-ld:SpO2:items:PKWK:80687657"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -35.838291,  
-      27.47286  
+    "id": "urn:ngsi-ld:SpO2:id:UXVB:49250554",  
+    "dateCreated": "1979-10-18T15:29:13Z",  
+    "dateModified": "2012-12-25T02:07:10Z",  
+    "source": "No own particularly tough marriage west person. Perform country stay necessary best. Move to still less specific general quality clear. It report far over.",  
+    "name": "Exactly join represent. Board least develop.",  
+    "alternateName": "Form after speech think within hotel need effort. Commercial several threat officer paper have side. Sing believe commercial TV vote exactly for continue.",  
+    "description": "Form carry human action much age care future. Well make every recognize. State consumer might continue.",  
+    "dataProvider": "Gun cost leave once amount phone. Beyond save guess approach you big over. Small summer style very value candidate stay wait.",  
+    "owner": [  
+        "urn:ngsi-ld:SpO2:items:FOVM:74049734",  
+        "urn:ngsi-ld:SpO2:items:VNLZ:87274151"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:SpO2:items:EDDV:12327755",  
+        "urn:ngsi-ld:SpO2:items:PKWK:80687657"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -35.838291,  
+            27.47286  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Sell main that different. News ground include. Whose fear mouth table each issue.",  
+        "addressLocality": "Fall while back.",  
+        "addressRegion": "Affect down us new relate. Hold adult despite fear position red hair.",  
+        "addressCountry": "Necessary purpose base field imagine mention popular. Discover could fill two field. Policy energy option simply.",  
+        "postalCode": "Have your fear single food year. This coach whose total food. Tend call career wife.",  
+        "postOfficeBoxNumber": "Consider performance produce black group it instead. Organization after American similar appear."  
+    },  
+    "areaServed": "Traditional society technology little plant on ago. Audience heavy point expect security difficult general read. Participant everybody action Mrs middle enter agency.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Sell main that different. News ground include. Whose fear mouth table each issue.",  
-    "addressLocality": "Fall while back.",  
-    "addressRegion": "Affect down us new relate. Hold adult despite fear position red hair.",  
-    "addressCountry": "Necessary purpose base field imagine mention popular. Discover could fill two field. Policy energy option simply.",  
-    "postalCode": "Have your fear single food year. This coach whose total food. Tend call career wife.",  
-    "postOfficeBoxNumber": "Consider performance produce black group it instead. Organization after American similar appear."  
-  },  
-  "areaServed": "Traditional society technology little plant on ago. Audience heavy point expect security difficult general read. Participant everybody action Mrs middle enter agency.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### SpO2 NGSI-LD normalizado Ejemplo  
 Este es un ejemplo de una SpO2 en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:SpO2:id:MEUN:62331652",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1972-09-30T16:17:09Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2011-03-03T21:22:48Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Task various station public conference per necessary. Animal wrong like capital analysis. Benefit agree draw bill. Perhaps tax test plant boy bar last perform."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Bed join another now theory young whose important. Worry education everything six shoulder force."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Father cell election company hair black. Wife marriage assume care experience article guess."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Population show soldier. Music apply foreign. People policy most left. Appear computer cut deep allow carry."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Including these beautiful goal move role serve. Might herself fill create throw. Both free campaign station describe."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:SpO2:items:HUNW:33943179",  
-      "urn:ngsi-ld:SpO2:items:ZQCA:74870697"  
+    "id": "urn:ngsi-ld:SpO2:id:MEUN:62331652",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1972-09-30T16:17:09Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2011-03-03T21:22:48Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Task various station public conference per necessary. Animal wrong like capital analysis. Benefit agree draw bill. Perhaps tax test plant boy bar last perform."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Bed join another now theory young whose important. Worry education everything six shoulder force."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Father cell election company hair black. Wife marriage assume care experience article guess."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Population show soldier. Music apply foreign. People policy most left. Appear computer cut deep allow carry."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Including these beautiful goal move role serve. Might herself fill create throw. Both free campaign station describe."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:SpO2:items:HUNW:33943179",  
+            "urn:ngsi-ld:SpO2:items:ZQCA:74870697"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:SpO2:items:VCRV:48239423"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -70.0546185,  
+                -23.401117  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Case discussion game mother performance yes. Face skin whose television lawyer where. Ok store lay prove wish within.",  
+            "addressLocality": "Hold possible free nor. Paper have structure church. Star fly hot improve material nation appear.",  
+            "addressRegion": "Development debate tough charge information either miss. Speech right drug wife behind themselves. Despite inside raise choose.",  
+            "addressCountry": "Top sometimes above base month put. Team media culture economy yes next. Represent imagine drive task career.",  
+            "postalCode": "Class sister present brother democratic life. Different pick action else he where trial. Program cost foot outside after end.",  
+            "postOfficeBoxNumber": "Until establish be clear such."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "About have without main save off."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:SpO2:items:VCRV:48239423"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -70.0546185,  
-        -23.401117  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Case discussion game mother performance yes. Face skin whose television lawyer where. Ok store lay prove wish within.",  
-      "addressLocality": "Hold possible free nor. Paper have structure church. Star fly hot improve material nation appear.",  
-      "addressRegion": "Development debate tough charge information either miss. Speech right drug wife behind themselves. Despite inside raise choose.",  
-      "addressCountry": "Top sometimes above base month put. Team media culture economy yes next. Represent imagine drive task career.",  
-      "postalCode": "Class sister present brother democratic life. Different pick action else he where trial. Program cost foot outside after end.",  
-      "postOfficeBoxNumber": "Until establish be clear such."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "About have without main save off."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
