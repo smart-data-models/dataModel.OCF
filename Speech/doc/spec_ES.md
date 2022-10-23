@@ -1,18 +1,33 @@
-Entidad: Discurso  
-=================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entidad: Discurso  
+=================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.OCF/blob/master/Speech/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Descripción global: **Adaptación del Programa de Modelos de Datos Inteligentes de los Modelos de Datos originales de IoTData. Este Recurso puede ser creado en el Servidor OCF que es capaz de renderizar voz por un Cliente OCF y permite al cliente proporcionar un documento SSML con texto para renderizar o puede ser creado en el Servidor OIC por alguna aplicación residente. El audio renderizado es en esta etapa local al Servidor (es decir, no se transmite). La expresión es un documento SSML. El supportedLanguages es un array de las etiquetas de lenguaje definidas por RFC5646 que son soportadas. El supportedVoices es un fragmento de documento SSML que indica las voces soportadas. Utterance en el ejemplo será un documento SSML debidamente escapado (reglas JSON). Un ejemplo: '<?xml version='1.0' encoding='ISO-8859-1'?> <speak version='1.1' xmlns='http://www.w3.org/2001/10/synthesis' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.w3.org/2001/10/synthesis http://www.w3.org/TR/speech-synthesis11/synthesis.xsd' xml:lang='en-US'>  
 El título de la película es: 'Monty Pythons The Meaning of Life' que está dirigida por Terry Jones. </speak' **  
+versión: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `if`: El conjunto de interfaces OCF que admite este recurso.  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n`: Nombre amistoso del recurso  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `rt`: El tipo de recurso.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `supportedLanguages`: La matriz de etiquetas de idioma admitidas.  - `supportedVoices`: El fragmento del documento SSML que indica las voces admitidas.  - `type`: Tipo de entidad NGSI. Tiene que ser Discurso  - `utterance`: El documento SSML que incluye el cuerpo del discurso.    
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>  
+- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Una descripción de este artículo  - `id[*]`: Identificador único de la entidad  - `if[array]`: El conjunto de interfaces OCF que admite este recurso.  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n[string]`: Nombre amigable del Recurso  - `name[string]`: El nombre de este artículo.  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `rt[array]`: El tipo de recurso.  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `supportedLanguages[array]`: La matriz de etiquetas de idioma admitidas.  - `supportedVoices[string]`: El fragmento del documento SSML que indica las voces admitidas.  - `type[string]`: Tipo de entidad NGSI. Tiene que ser Discurso  - `utterance[string]`: El documento SSML que incluye el cuerpo del discurso.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propiedades requeridas  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Este modelo de datos procede del original [repositorio de la Open Connectivity Foundation](https://github.com/openconnectivityfoundation/IoTDataModels). Se ha ampliado para cumplir con los requisitos de la NGSI.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Speech:    
@@ -345,9 +360,14 @@ Speech:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Ejemplo de carga útil  
 #### Ejemplo de valores clave de NGSI-v2  
 Aquí hay un ejemplo de un discurso en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Speech:id:MSFY:34806271",  
@@ -384,8 +404,10 @@ Speech:
   "areaServed": "Camera talk statement ground base. Pull alone enjoy score off right do. Increase success front side."  
 }  
 ```  
+</details>  
 #### Discurso NGSI-v2 normalizado Ejemplo  
 Aquí hay un ejemplo de un Discurso en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -463,127 +485,141 @@ Speech:
   }  
 }  
 ```  
+</details>  
 #### Valores clave de NGSI-LD del habla Ejemplo  
 Aquí hay un ejemplo de un discurso en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Speech:id:MSFY:34806271",  
-  "dateCreated": "1973-12-25T02:28:43Z",  
-  "dateModified": "2016-12-27T10:52:44Z",  
-  "source": "Happy talk boy although everybody art central. Read Republican really cultural within.",  
-  "name": "With every game hard how. Direction management industry generation send director.",  
-  "alternateName": "Anything building move card east institution minute. Speech view since environmental however management painting. Long strategy price ask treatment of.",  
-  "description": "Always worker discover bank. Leg none six measure fast cost.",  
-  "dataProvider": "Manager about country smile. Fall woman yeah thing clear. Street already Republican life.",  
-  "owner": [  
-    "urn:ngsi-ld:Speech:items:QSTJ:71949007",  
-    "urn:ngsi-ld:Speech:items:YUJN:53243319"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Speech:items:XMUU:79983626",  
-    "urn:ngsi-ld:Speech:items:PPOG:87651750"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -9.2267575,  
-      -152.388253  
+    "id": "urn:ngsi-ld:Speech:id:MSFY:34806271",  
+    "dateCreated": "1973-12-25T02:28:43Z",  
+    "dateModified": "2016-12-27T10:52:44Z",  
+    "source": "Happy talk boy although everybody art central. Read Republican really cultural within.",  
+    "name": "With every game hard how. Direction management industry generation send director.",  
+    "alternateName": "Anything building move card east institution minute. Speech view since environmental however management painting. Long strategy price ask treatment of.",  
+    "description": "Always worker discover bank. Leg none six measure fast cost.",  
+    "dataProvider": "Manager about country smile. Fall woman yeah thing clear. Street already Republican life.",  
+    "owner": [  
+        "urn:ngsi-ld:Speech:items:QSTJ:71949007",  
+        "urn:ngsi-ld:Speech:items:YUJN:53243319"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Speech:items:XMUU:79983626",  
+        "urn:ngsi-ld:Speech:items:PPOG:87651750"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -9.2267575,  
+            -152.388253  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "White audience serious day suffer. Western outside word draw especially.",  
+        "addressLocality": "Maintain response simply. Indeed dinner argue surface business move television education. Imagine hotel send Republican stage technology choice.",  
+        "addressRegion": "Hot benefit list trial clear suffer. Important body difference cause only energy. Long attention there bad letter generation. Relationship worker model end they quickly.",  
+        "addressCountry": "Practice change treat degree. Board conference name past space.",  
+        "postalCode": "Effect garden fish while. Record professor determine dream.",  
+        "postOfficeBoxNumber": "Keep education someone could. Mrs knowledge note great else half fish live. Base through likely newspaper throw read someone then."  
+    },  
+    "areaServed": "Camera talk statement ground base. Pull alone enjoy score off right do. Increase success front side.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "White audience serious day suffer. Western outside word draw especially.",  
-    "addressLocality": "Maintain response simply. Indeed dinner argue surface business move television education. Imagine hotel send Republican stage technology choice.",  
-    "addressRegion": "Hot benefit list trial clear suffer. Important body difference cause only energy. Long attention there bad letter generation. Relationship worker model end they quickly.",  
-    "addressCountry": "Practice change treat degree. Board conference name past space.",  
-    "postalCode": "Effect garden fish while. Record professor determine dream.",  
-    "postOfficeBoxNumber": "Keep education someone could. Mrs knowledge note great else half fish live. Base through likely newspaper throw read someone then."  
-  },  
-  "areaServed": "Camera talk statement ground base. Pull alone enjoy score off right do. Increase success front side.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### Discurso NGSI-LD normalizado Ejemplo  
 He aquí un ejemplo de un discurso en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Speech:id:GEWQ:12227601",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1991-09-26T05:16:34Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2006-01-12T06:39:33Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Strong cost see certainly job push. At set baby professional."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Machine miss fly guess authority everyone. Different language condition town government lot opportunity."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Doctor early east hour near ball. Order language doctor water still head any face. True career officer get amount nation since those."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Have foot particular nearly culture suffer. Wife partner by way itself. Employee much relationship his majority near travel think."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Health field section above within cell each. Speech give that individual break against."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Speech:items:VFPP:46854686",  
-      "urn:ngsi-ld:Speech:items:FUNQ:67496691"  
+    "id": "urn:ngsi-ld:Speech:id:GEWQ:12227601",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1991-09-26T05:16:34Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2006-01-12T06:39:33Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Strong cost see certainly job push. At set baby professional."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Machine miss fly guess authority everyone. Different language condition town government lot opportunity."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Doctor early east hour near ball. Order language doctor water still head any face. True career officer get amount nation since those."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Have foot particular nearly culture suffer. Wife partner by way itself. Employee much relationship his majority near travel think."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Health field section above within cell each. Speech give that individual break against."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Speech:items:VFPP:46854686",  
+            "urn:ngsi-ld:Speech:items:FUNQ:67496691"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Speech:items:JXWG:61166781"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                52.163571,  
+                -38.680616  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "You first sure Mrs. Staff nice community ready forward affect least. Admit five subject accept.",  
+            "addressLocality": "Little thousand bag system cover. Animal newspaper matter ok surface main. Collection letter reality.",  
+            "addressRegion": "Arrive each real side speak reduce station Democrat. Some wish material whether.",  
+            "addressCountry": "Tax leader tonight item remember occur drug position.",  
+            "postalCode": "Economic prepare spend discussion.",  
+            "postOfficeBoxNumber": "Police election ready board again. Think right discover institution issue."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "None medical result market process cell type send. Summer heart half. Late all system ok movement travel pretty."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Speech:items:JXWG:61166781"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        52.163571,  
-        -38.680616  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "You first sure Mrs. Staff nice community ready forward affect least. Admit five subject accept.",  
-      "addressLocality": "Little thousand bag system cover. Animal newspaper matter ok surface main. Collection letter reality.",  
-      "addressRegion": "Arrive each real side speak reduce station Democrat. Some wish material whether.",  
-      "addressCountry": "Tax leader tonight item remember occur drug position.",  
-      "postalCode": "Economic prepare spend discussion.",  
-      "postOfficeBoxNumber": "Police election ready board again. Think right discover institution issue."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "None medical result market process cell type send. Summer heart half. Late all system ok movement travel pretty."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
