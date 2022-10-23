@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entidad: Cadence  
-================  
+================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.OCF/blob/master/Cadence/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Descripción global: **Este Recurso describe la cadencia, que es el número de revoluciones de manivela por minuto cuando los ciclistas pedalean los pedales. La unidad, que es la unidad por defecto, es rpm. La Propiedad cadencia es un valor de sólo lectura que es proporcionado por el servidor. Cuando se omite el rango (de 'oic.r.baseresource') el valor por defecto es de 0 a +MAXFLOAT.**  
 versión: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `cadence`: Esta propiedad describe la velocidad a la que un ciclista está pedaleando/girando los pedales.  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `if`: El conjunto de interfaces OCF que admite este recurso.  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n`: Nombre amistoso del recurso  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `range`: El rango válido para la Propiedad en el Recurso como un entero. El primer valor de la matriz es el valor mínimo, el segundo valor de la matriz es el valor máximo.  - `rt`: El tipo de recurso.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `step`: Valor del paso a través del rango definido cuando el rango es un entero.  Este es el incremento para los valores válidos a través del rango; así que si el rango es 0..10 y el paso es 2 entonces los valores válidos son 0,2,4,6,8,10.  - `type`: Tipo de entidad NGSI. Tiene que ser Cadence    
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>  
+- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `cadence[integer]`: Esta propiedad describe la velocidad a la que un ciclista está pedaleando/girando los pedales.  - `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Una descripción de este artículo  - `id[*]`: Identificador único de la entidad  - `if[array]`: El conjunto de interfaces OCF que admite este recurso.  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n[string]`: Nombre amigable del Recurso  - `name[string]`: El nombre de este artículo.  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `range[array]`: El rango válido para la Propiedad en el Recurso como un entero. El primer valor de la matriz es el valor mínimo, el segundo valor de la matriz es el valor máximo.  - `rt[array]`: El tipo de recurso.  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `step[integer]`: Valor del paso a través del rango definido cuando el rango es un entero.  Este es el incremento para los valores válidos a través del rango; así que si el rango es 0..10 y el paso es 2 entonces los valores válidos son 0,2,4,6,8,10.  - `type[string]`: Tipo de entidad NGSI. Tiene que ser Cadence  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propiedades requeridas  
-- `cadence`  - `id`  - `type`    
+- `cadence`  - `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Modelo de datos adaptado del original creado por la Open Connectivity Foundation. Repositorio original en https://github.com/openconnectivityfoundation/IoTDataModels  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Cadence:    
@@ -348,9 +361,14 @@ Cadence:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Ejemplo de carga útil  
 #### Cadence NGSI-v2 key-values Ejemplo  
 Aquí hay un ejemplo de una Cadencia en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Cadence:id:HOCY:33423995",  
@@ -409,8 +427,10 @@ Cadence:
   "type": "Cadence"  
 }  
 ```  
+</details>  
 #### Cadence NGSI-v2 normalizado Ejemplo  
 Aquí hay un ejemplo de un Cadence en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -531,181 +551,195 @@ Cadence:
   }  
 }  
 ```  
+</details>  
 #### Cadence NGSI-LD key-values Ejemplo  
 Aquí hay un ejemplo de una Cadencia en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Cadence:id:HOCY:33423995",  
-  "dateCreated": "1982-07-11T18:42:18Z",  
-  "dateModified": "1976-08-10T22:06:18Z",  
-  "source": "Key state be. Coach lead image fear late picture.",  
-  "name": "Produce miss structure policy fall east move. Mouth sort free recent range positive make. Ready eye east little.",  
-  "alternateName": "Minute room executive present happen pick sing nor. Job future behind poor. Answer mother possible significant.",  
-  "description": "Window trouble ever prepare along especially check skin. Seem look trade kid add finally process speech.",  
-  "dataProvider": "Building form store media economy shoulder body yeah. Court certain field wall wind. Much five argue Mrs Mr.",  
-  "owner": [  
-    "urn:ngsi-ld:Cadence:items:ACCG:67885309",  
-    "urn:ngsi-ld:Cadence:items:DUAP:61806876"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Cadence:items:OOOM:73838844",  
-    "urn:ngsi-ld:Cadence:items:SKJC:85233323"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -9.528281,  
-      95.749617  
+    "id": "urn:ngsi-ld:Cadence:id:HOCY:33423995",  
+    "dateCreated": "1982-07-11T18:42:18Z",  
+    "dateModified": "1976-08-10T22:06:18Z",  
+    "source": "Key state be. Coach lead image fear late picture.",  
+    "name": "Produce miss structure policy fall east move. Mouth sort free recent range positive make. Ready eye east little.",  
+    "alternateName": "Minute room executive present happen pick sing nor. Job future behind poor. Answer mother possible significant.",  
+    "description": "Window trouble ever prepare along especially check skin. Seem look trade kid add finally process speech.",  
+    "dataProvider": "Building form store media economy shoulder body yeah. Court certain field wall wind. Much five argue Mrs Mr.",  
+    "owner": [  
+        "urn:ngsi-ld:Cadence:items:ACCG:67885309",  
+        "urn:ngsi-ld:Cadence:items:DUAP:61806876"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Cadence:items:OOOM:73838844",  
+        "urn:ngsi-ld:Cadence:items:SKJC:85233323"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -9.528281,  
+            95.749617  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "By who issue continue perhaps if black. During kind world table air. Modern ever about goal some some research.",  
+        "addressLocality": "Would chair suggest recognize learn.",  
+        "addressRegion": "Claim here evening go response front rise phone. Success father series including important low. Minute glass she task its.",  
+        "addressCountry": "Financial north pattern poor rise structure history. Director student picture.",  
+        "postalCode": "Prepare role money dream here prepare tend. Fight nearly now attention alone personal increase. Fish guess family nature drop eight drug. Paper medical similar thank.",  
+        "postOfficeBoxNumber": "Magazine where party agent draw might carry. Story she image next society exactly. Season discussion Congress news movement mouth radio."  
+    },  
+    "areaServed": "Free step record paper ever quality. Inside west baby letter. Organization guess pay rich environment him choice film.",  
+    "cadence": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "rt": [  
+        "oic.r.cadence",  
+        "oic.r.cadence"  
+    ],  
+    "n": "Whole magazine truth stop whose.",  
+    "if": [  
+        "oic.if.s",  
+        "oic.if.baseline"  
+    ],  
+    "range": [  
+        864,  
+        864  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "type": "Cadence",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "By who issue continue perhaps if black. During kind world table air. Modern ever about goal some some research.",  
-    "addressLocality": "Would chair suggest recognize learn.",  
-    "addressRegion": "Claim here evening go response front rise phone. Success father series including important low. Minute glass she task its.",  
-    "addressCountry": "Financial north pattern poor rise structure history. Director student picture.",  
-    "postalCode": "Prepare role money dream here prepare tend. Fight nearly now attention alone personal increase. Fish guess family nature drop eight drug. Paper medical similar thank.",  
-    "postOfficeBoxNumber": "Magazine where party agent draw might carry. Story she image next society exactly. Season discussion Congress news movement mouth radio."  
-  },  
-  "areaServed": "Free step record paper ever quality. Inside west baby letter. Organization guess pay rich environment him choice film.",  
-  "cadence": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "rt": [  
-    "oic.r.cadence",  
-    "oic.r.cadence"  
-  ],  
-  "n": "Whole magazine truth stop whose.",  
-  "if": [  
-    "oic.if.s",  
-    "oic.if.baseline"  
-  ],  
-  "range": [  
-    864,  
-    864  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "type": "Cadence",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### Cadencia NGSI-LD normalizada Ejemplo  
 Aquí hay un ejemplo de un Cadence en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Cadence:id:CPQI:14485913",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1982-12-31T04:23:33Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2006-06-01T01:53:09Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Soldier piece chance. Design whether tonight mouth if. Management present government few might million four and."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Explain hundred pretty the miss center recognize. Operation could indicate bit throw."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "News federal spend recent recent. Dog appear feel often each. Research feeling son tend."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Personal political respond light whom through short maybe. Lay high exist night bring try expert. Successful star draw."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Job condition message station fact watch. Start evening traditional growth push. Parent detail around oil American picture."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Cadence:items:MCBW:69103959",  
-      "urn:ngsi-ld:Cadence:items:FGEA:86464655"  
+    "id": "urn:ngsi-ld:Cadence:id:CPQI:14485913",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1982-12-31T04:23:33Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2006-06-01T01:53:09Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Soldier piece chance. Design whether tonight mouth if. Management present government few might million four and."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Explain hundred pretty the miss center recognize. Operation could indicate bit throw."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "News federal spend recent recent. Dog appear feel often each. Research feeling son tend."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Personal political respond light whom through short maybe. Lay high exist night bring try expert. Successful star draw."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Job condition message station fact watch. Start evening traditional growth push. Parent detail around oil American picture."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Cadence:items:MCBW:69103959",  
+            "urn:ngsi-ld:Cadence:items:FGEA:86464655"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Cadence:items:ZZBY:81588794"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -78.402157,  
+                -60.655419  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Front color even community majority reflect. Situation wish design major level half. Parent claim lot image.",  
+            "addressLocality": "Something focus center try.",  
+            "addressRegion": "None clearly picture education live apply current great. Author beyond mind certainly.",  
+            "addressCountry": "Claim decide career gas dark wonder. Suddenly federal similar very learn free. Maintain loss drive their though.",  
+            "postalCode": "Billion along necessary history every yet down hair. Morning with mention life suddenly many.",  
+            "postOfficeBoxNumber": "By Mrs too nor."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Use will family stand question suggest. Choice across but center continue modern continue. Out account always cultural some watch hear. Attack safe until career."  
+    },  
+    "cadence": {  
+        "type": "Property",  
+        "value": 779  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.cadence"  
+        ]  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Sing six consider ground. Wish collection character remember message son whatever real."  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.s"  
+        ]  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            469,  
+            155  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 400  
+    },  
+    "type": "Cadence",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Cadence:items:ZZBY:81588794"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -78.402157,  
-        -60.655419  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Front color even community majority reflect. Situation wish design major level half. Parent claim lot image.",  
-      "addressLocality": "Something focus center try.",  
-      "addressRegion": "None clearly picture education live apply current great. Author beyond mind certainly.",  
-      "addressCountry": "Claim decide career gas dark wonder. Suddenly federal similar very learn free. Maintain loss drive their though.",  
-      "postalCode": "Billion along necessary history every yet down hair. Morning with mention life suddenly many.",  
-      "postOfficeBoxNumber": "By Mrs too nor."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Use will family stand question suggest. Choice across but center continue modern continue. Out account always cultural some watch hear. Attack safe until career."  
-  },  
-  "cadence": {  
-    "type": "Property",  
-    "value": 779  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.cadence"  
-    ]  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Sing six consider ground. Wish collection character remember message son whatever real."  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.s"  
-    ]  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      469,  
-      155  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 400  
-  },  
-  "type": "Cadence",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
