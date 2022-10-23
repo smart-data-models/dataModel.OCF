@@ -1,23 +1,36 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entität: Wasser  
-===============  
+===============<!-- /10-Header -->  
+<!-- 15-License -->  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.OCF/blob/master/Water/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Globale Beschreibung: **Diese Ressource beschreibt, ob Wasser erfasst wurde oder nicht.** Die Eigenschaft "value" ist ein Boolean.** Ein Wert von "true" bedeutet, dass Wasser erfasst wurde.** Ein Wert von "false" bedeutet, dass Wasser nicht erfasst wurde.  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Globale Beschreibung: **Diese Ressource beschreibt, ob Wasser erfasst wurde oder nicht.** Die Eigenschaft "value" ist ein Boolescher Wert.** Ein Wert von "true" bedeutet, dass Wasser erfasst wurde.** Ein Wert von "false" bedeutet, dass Wasser nicht erfasst wurde.  
 Version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `if`: Der von dieser Ressource unterstützte OCF-Schnittstellensatz  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `measurement`: Messwert für diesen Sensor in der Einheit Liter/Stunde  - `n`: Freundlicher Name der Ressource  - `name`: Der Name dieses Artikels.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `precision`: Bei der Exposition bietet der Wert in "precision" eine +/- Toleranz gegenüber den Eigenschaften in der Ressource. Wenn also eine Eigenschaft auf einen Wert AKTUALISIERT wird und diese Eigenschaft dann ZURÜCKGEZOGEN wird, ist der ZURÜCKGEZOGENE Wert gültig, wenn er im Bereich des festgelegten Wertes +/- Präzision liegt  - `range`: Der gültige Bereich für die Eigenschaft in der Ressource in Form einer Zahl. Der erste Wert im Array ist der Mindestwert, der zweite Wert im Array ist der Höchstwert.  - `rt`: Der Ressourcentyp  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `step`: Schrittwert über den definierten Bereich eine ganze Zahl, wenn der Bereich eine Zahl ist.  Dies ist die Schrittweite für gültige Werte innerhalb des Bereichs; wenn also der Bereich 0.0..10.0 und der Schritt 2.5 ist, sind die Werte 0.0,2.5,5.0,7.5,10.0 gültig.  - `type`: NGSI-Entitätstyp. Es muss Wasser sein  - `value`: wahr = wahrgenommen, falsch = nicht wahrgenommen.    
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, liegt das daran, dass es mehrere Typen oder unterschiedliche Formate/Muster haben kann</sub></sup>.  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `id[*]`: Eindeutiger Bezeichner der Entität  - `if[array]`: Der von dieser Ressource unterstützte OCF-Schnittstellensatz  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `measurement[number]`: Messwert für diesen Sensor in der Einheit Liter/Stunde  - `n[string]`: Freundlicher Name der Ressource  - `name[string]`: Der Name dieses Artikels.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `precision[number]`: Bei der Exposition bietet der Wert in "precision" eine +/- Toleranz gegenüber den Eigenschaften in der Ressource. Wenn also eine Eigenschaft auf einen Wert AKTUALISIERT wird und diese Eigenschaft dann ZURÜCKGEZOGEN wird, ist der ZURÜCKGEZOGENE Wert gültig, wenn er im Bereich des festgelegten Wertes +/- Präzision liegt  - `range[array]`: Der gültige Bereich für die Eigenschaft in der Ressource in Form einer Zahl. Der erste Wert im Array ist der Mindestwert, der zweite Wert im Array ist der Höchstwert.  - `rt[array]`: Der Ressourcentyp  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `step[number]`: Schrittwert über den definierten Bereich eine ganze Zahl, wenn der Bereich eine Zahl ist.  Dies ist die Schrittweite für gültige Werte innerhalb des Bereichs; wenn also der Bereich 0.0..10.0 und der Schritt 2.5 ist, sind die Werte 0.0,2.5,5.0,7.5,10.0 gültig.  - `type[string]`: NGSI-Entitätstyp. Es muss Wasser sein  - `value[boolean]`: wahr = wahrgenommen, falsch = nicht wahrgenommen.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
-- `id`  - `type`  - `value`    
+- `id`  - `type`  - `value`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Datenmodell nach dem von der Open Connectivity Foundation erstellten Original. Ursprüngliches Repository in https://github.com/openconnectivityfoundation/IoTDataModels  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Water:    
-  description: 'This Resource describes whether water has been sensed or not.The Property "value" is a boolean.A value of ''true'' means that water has been sensed.A value of ''false'' means that water not been sensed.'    
+  description: 'This Resource describes whether water has been sensed or not.The Property ''value'' is a boolean.A value of ''true'' means that water has been sensed.A value of ''false'' means that water not been sensed.'    
   properties:    
     address:    
       description: 'The mailing address'    
@@ -361,9 +374,14 @@ Water:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Beispiel-Nutzlasten  
 #### Wasser NGSI-v2 Schlüsselwerte Beispiel  
 Hier ist ein Beispiel für ein Wasser im JSON-LD-Format als Schlüsselwerte. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Water:id:ZWTK:51423051",  
@@ -430,8 +448,10 @@ Water:
   "type": "Water"  
 }  
 ```  
+</details>  
 #### Wasser NGSI-v2 normalisiert Beispiel  
-Hier ist ein Beispiel für ein Wasser im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-v2 kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für ein Wasser im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -566,197 +586,211 @@ Water:
   }  
 }  
 ```  
+</details>  
 #### Wasser NGSI-LD Schlüsselwerte Beispiel  
 Hier ist ein Beispiel für ein Wasser im JSON-LD-Format als Schlüsselwerte. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Water:id:ZWTK:51423051",  
-  "dateCreated": "1972-06-13T09:00:45Z",  
-  "dateModified": "1995-08-14T22:33:37Z",  
-  "source": "Up rule production rock catch. Look detail discover knowledge bank. Well a wonder successful suffer follow. Occur less big study despite.",  
-  "name": "Allow really nice interesting happy production thank. First technology produce least late task. Garden clearly memory establish market attention.",  
-  "alternateName": "Member hot seem town hundred after bit. Teacher top far actually fast herself. Good charge collection improve specific even rule.",  
-  "description": "Task somebody soon modern instead cell science. Rise grow himself politics soon success front individual. Win down admit service. College produce policy.",  
-  "dataProvider": "Religious person improve relate than approach cut.",  
-  "owner": [  
-    "urn:ngsi-ld:Water:items:POQB:86877040",  
-    "urn:ngsi-ld:Water:items:KRDJ:18769822"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Water:items:TKJZ:35513270",  
-    "urn:ngsi-ld:Water:items:CIRR:73493788"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -56.619548,  
-      105.731117  
+    "id": "urn:ngsi-ld:Water:id:ZWTK:51423051",  
+    "dateCreated": "1972-06-13T09:00:45Z",  
+    "dateModified": "1995-08-14T22:33:37Z",  
+    "source": "Up rule production rock catch. Look detail discover knowledge bank. Well a wonder successful suffer follow. Occur less big study despite.",  
+    "name": "Allow really nice interesting happy production thank. First technology produce least late task. Garden clearly memory establish market attention.",  
+    "alternateName": "Member hot seem town hundred after bit. Teacher top far actually fast herself. Good charge collection improve specific even rule.",  
+    "description": "Task somebody soon modern instead cell science. Rise grow himself politics soon success front individual. Win down admit service. College produce policy.",  
+    "dataProvider": "Religious person improve relate than approach cut.",  
+    "owner": [  
+        "urn:ngsi-ld:Water:items:POQB:86877040",  
+        "urn:ngsi-ld:Water:items:KRDJ:18769822"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Water:items:TKJZ:35513270",  
+        "urn:ngsi-ld:Water:items:CIRR:73493788"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -56.619548,  
+            105.731117  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Throughout fund much kitchen relationship.",  
+        "addressLocality": "Very leave turn again admit decide discuss.",  
+        "addressRegion": "Role break many tax.",  
+        "addressCountry": "Opportunity what create color. Community would around eight hot civil.",  
+        "postalCode": "Major sound great range. Stand hundred lot bring crime hold democratic until. Top together source represent onto prove century.",  
+        "postOfficeBoxNumber": "National your easy onto."  
+    },  
+    "areaServed": "Glass act six. Seven sort set western put agent bad. Capital position his safe skin single country.",  
+    "rt": [  
+        "oic.r.sensor.water",  
+        "oic.r.sensor.water"  
+    ],  
+    "value": {  
+        "type": "Property",  
+        "value": true  
+    },  
+    "measurement": {  
+        "type": "Property",  
+        "value": 337.9  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 149.1  
+    },  
+    "n": "Sort thank build year allow war possible federal. Bad network reach important strong age.",  
+    "range": [  
+        59.7,  
+        65.7  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 404.8  
+    },  
+    "if": [  
+        "oic.if.s",  
+        "oic.if.s"  
+    ],  
+    "type": "Water",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Throughout fund much kitchen relationship.",  
-    "addressLocality": "Very leave turn again admit decide discuss.",  
-    "addressRegion": "Role break many tax.",  
-    "addressCountry": "Opportunity what create color. Community would around eight hot civil.",  
-    "postalCode": "Major sound great range. Stand hundred lot bring crime hold democratic until. Top together source represent onto prove century.",  
-    "postOfficeBoxNumber": "National your easy onto."  
-  },  
-  "areaServed": "Glass act six. Seven sort set western put agent bad. Capital position his safe skin single country.",  
-  "rt": [  
-    "oic.r.sensor.water",  
-    "oic.r.sensor.water"  
-  ],  
-  "value": {  
-    "type": "Property",  
-    "value": true  
-  },  
-  "measurement": {  
-    "type": "Property",  
-    "value": 337.9  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 149.1  
-  },  
-  "n": "Sort thank build year allow war possible federal. Bad network reach important strong age.",  
-  "range": [  
-    59.7,  
-    65.7  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 404.8  
-  },  
-  "if": [  
-    "oic.if.s",  
-    "oic.if.s"  
-  ],  
-  "type": "Water",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### Wasser NGSI-LD normalisiert Beispiel  
 Hier ist ein Beispiel für ein Wasser im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-LD kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Water:id:IGIX:52349323",  
-  "dateCreated": {  
-    "type": "Property",  
+    "id": "urn:ngsi-ld:Water:id:IGIX:52349323",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2008-12-09T09:24:38Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1970-07-26T10:30:36Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Wait method certain to. Three prevent southern turn market outside. Should night edge policy benefit any store. Audience keep else on name."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Democratic especially behavior good discover recognize behavior. Reason yeah nice population."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "East majority painting fact. Watch recognize city system result simply concern. Song possible on accept."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Either movement understand manage call. Seven market table mouth feeling now base. Short size act sound."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Industry national task lay. Thank as line level."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Water:items:QYEH:60886268",  
+            "urn:ngsi-ld:Water:items:SCJR:34861037"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Water:items:VHGW:29144445"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -38.9642505,  
+                -126.072131  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Give represent government use eye. Police road return focus.",  
+            "addressLocality": "Someone area I oil. Military wind direction yes environmental.",  
+            "addressRegion": "Possible hold can. Born likely group.",  
+            "addressCountry": "Future upon information learn certain. Democrat argue wind member. Current probably campaign seem language young future above.",  
+            "postalCode": "Big push federal weight play. Involve onto however soldier contain. Give raise because over.",  
+            "postOfficeBoxNumber": "Democrat ahead when return poor well. Speech effort those. Simply particular big they better."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Rule full country result community central environment. Memory authority popular election alone."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.sensor.water"  
+        ]  
+    },  
     "value": {  
-      "@type": "DateTime",  
-      "@value": "2008-12-09T09:24:38Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1970-07-26T10:30:36Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Wait method certain to. Three prevent southern turn market outside. Should night edge policy benefit any store. Audience keep else on name."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Democratic especially behavior good discover recognize behavior. Reason yeah nice population."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "East majority painting fact. Watch recognize city system result simply concern. Song possible on accept."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Either movement understand manage call. Seven market table mouth feeling now base. Short size act sound."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Industry national task lay. Thank as line level."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Water:items:QYEH:60886268",  
-      "urn:ngsi-ld:Water:items:SCJR:34861037"  
+        "type": "Property",  
+        "value": false  
+    },  
+    "measurement": {  
+        "type": "Property",  
+        "value": 488.6  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 976.2  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Mind arm popular rate never. Similar so body box. Reflect right development."  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            450.6,  
+            89.0  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 832.4  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "Water",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Water:items:VHGW:29144445"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -38.9642505,  
-        -126.072131  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Give represent government use eye. Police road return focus.",  
-      "addressLocality": "Someone area I oil. Military wind direction yes environmental.",  
-      "addressRegion": "Possible hold can. Born likely group.",  
-      "addressCountry": "Future upon information learn certain. Democrat argue wind member. Current probably campaign seem language young future above.",  
-      "postalCode": "Big push federal weight play. Involve onto however soldier contain. Give raise because over.",  
-      "postOfficeBoxNumber": "Democrat ahead when return poor well. Speech effort those. Simply particular big they better."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Rule full country result community central environment. Memory authority popular election alone."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.sensor.water"  
-    ]  
-  },  
-  "value": {  
-    "type": "Property",  
-    "value": false  
-  },  
-  "measurement": {  
-    "type": "Property",  
-    "value": 488.6  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 976.2  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Mind arm popular rate never. Similar so body box. Reflect right development."  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      450.6,  
-      89.0  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 832.4  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "type": "Water",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
