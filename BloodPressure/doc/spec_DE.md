@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entität: Blutdruck  
-==================  
+==================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.OCF/blob/master/BloodPressure/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Globale Beschreibung: **Diese Ressource beschreibt die Eigenschaften, die mit dem Blutdruck einer Person verbunden sind.** Die Einheit ist ein einzelner Wert, der entweder mmHg oder kPa ist.** Fehlt die Einheitseigenschaft, ist der Standardwert ein Millimeter Quecksilber [mmHg].** Die Blutdruck- und Einheitseigenschaften sind schreibgeschützte Werte, die vom Server bereitgestellt werden.** Wenn der Bereich weggelassen wird, ist der Standardwert 0 bis +MAXFLOAT.  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Globale Beschreibung: **Diese Ressource beschreibt die Eigenschaften, die mit dem Blutdruck einer Person verbunden sind.Die Einheit ist ein einzelner Wert, der entweder mmHg oder kPa ist.Wenn die Einheitseigenschaft fehlt, ist der Standardwert ein Millimeter Quecksilber [mmHg].Die Blutdruck- und Einheitseigenschaften sind schreibgeschützte Werte, die vom Server bereitgestellt werden.Wenn der Bereich weggelassen wird, ist der Standardwert 0 bis +MAXFLOAT.**  
 Version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `diastolic`: Diastolischer Blutdruck  - `id`: Eindeutiger Bezeichner der Entität  - `if`: Der von dieser Ressource unterstützte OCF-Schnittstellensatz  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `map`: Mittlerer arterieller Druck (MAP)  - `n`: Freundlicher Name der Ressource  - `name`: Der Name dieses Artikels.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `precision`: Bei der Exposition bietet der Wert in "precision" eine +/- Toleranz gegenüber den Eigenschaften in der Ressource. Wenn also eine Eigenschaft auf einen Wert AKTUALISIERT wird und diese Eigenschaft dann ZURÜCKGEZOGEN wird, ist der ZURÜCKGEZOGENE Wert gültig, wenn er im Bereich des festgelegten Wertes +/- Präzision liegt  - `range`: Der gültige Bereich für die Eigenschaft in der Ressource in Form einer Zahl. Der erste Wert im Array ist der Mindestwert, der zweite Wert im Array ist der Höchstwert.  - `rt`: Ressourcentyp  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `step`: Schrittwert über den definierten Bereich eine ganze Zahl, wenn der Bereich eine Zahl ist.  Dies ist die Schrittweite für gültige Werte innerhalb des Bereichs; wenn also der Bereich 0.0..10.0 und der Schritt 2.5 ist, sind die Werte 0.0,2.5,5.0,7.5,10.0 gültig.  - `systolic`: Systolischer Blutdruck  - `type`: NGSI-Entitätstyp. Es muss BloodPressure sein  - `units`: Blutdruckmessgerät    
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, liegt das daran, dass es mehrere Typen oder unterschiedliche Formate/Muster haben kann</sub></sup>.  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `diastolic[number]`: Diastolischer Blutdruck  - `id[*]`: Eindeutiger Bezeichner der Entität  - `if[array]`: Der von dieser Ressource unterstützte OCF-Schnittstellensatz  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `map[number]`: Mittlerer arterieller Druck (MAP)  - `n[string]`: Freundlicher Name der Ressource  - `name[string]`: Der Name dieses Artikels.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `precision[number]`: Bei der Exposition bietet der Wert in "precision" eine +/- Toleranz gegenüber den Eigenschaften in der Ressource. Wenn also eine Eigenschaft auf einen Wert AKTUALISIERT wird und diese Eigenschaft dann ZURÜCKGEZOGEN wird, ist der ZURÜCKGEZOGENE Wert gültig, wenn er im Bereich des festgelegten Wertes +/- Präzision liegt  - `range[array]`: Der gültige Bereich für die Eigenschaft in der Ressource in Form einer Zahl. Der erste Wert im Array ist der Mindestwert, der zweite Wert im Array ist der Höchstwert.  - `rt[array]`: Ressourcentyp  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `step[number]`: Schrittwert über den definierten Bereich eine ganze Zahl, wenn der Bereich eine Zahl ist.  Dies ist die Schrittweite für gültige Werte innerhalb des Bereichs; wenn also der Bereich 0.0..10.0 und der Schritt 2.5 ist, sind die Werte 0.0,2.5,5.0,7.5,10.0 gültig.  - `systolic[number]`: Systolischer Blutdruck  - `type[string]`: NGSI-Entitätstyp. Es muss BloodPressure sein  - `units[string]`: Blutdruckmessgerät  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
-- `diastolic`  - `id`  - `systolic`  - `type`    
+- `diastolic`  - `id`  - `systolic`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Datenmodell nach dem von der Open Connectivity Foundation erstellten Original. Ursprüngliches Repository in https://github.com/openconnectivityfoundation/IoTDataModels  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 BloodPressure:    
@@ -381,9 +394,14 @@ BloodPressure:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Beispiel-Nutzlasten  
 #### Blutdruck NGSI-v2 Schlüsselwerte Beispiel  
 Hier ist ein Beispiel für einen Blutdruck im JSON-LD-Format als Schlüsselwerte. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:BloodPressure:id:FWRY:98906666",  
@@ -455,8 +473,10 @@ BloodPressure:
   "type": "BloodPressure"  
 }  
 ```  
+</details>  
 #### Blutdruck NGSI-v2 normalisiert Beispiel  
 Hier ist ein Beispiel für einen Blutdruck im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -602,210 +622,224 @@ BloodPressure:
   }  
 }  
 ```  
+</details>  
 #### Blutdruck NGSI-LD Schlüsselwerte Beispiel  
-Hier ist ein Beispiel für einen Blutdruck im JSON-LD-Format als Schlüsselwerte. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für einen Blutdruck im JSON-LD-Format als Schlüsselwerte. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:BloodPressure:id:FWRY:98906666",  
-  "dateCreated": "2011-02-21T13:43:08Z",  
-  "dateModified": "2007-05-05T04:35:49Z",  
-  "source": "Development minute same clear painting audience. Single ready church low social message. Sister up receive travel perform physical material. Trade word world open then energy claim.",  
-  "name": "Again center newspaper catch democratic way. Throw age while professional hear five.",  
-  "alternateName": "School radio lose structure. Way marriage these answer.",  
-  "description": "Test career add behind explain media doctor near. Fire hope job people. Owner front enjoy material economic would development.",  
-  "dataProvider": "West game your style. Arrive now stock left against officer.",  
-  "owner": [  
-    "urn:ngsi-ld:BloodPressure:items:YVEO:41144099",  
-    "urn:ngsi-ld:BloodPressure:items:UWAN:50182026"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:BloodPressure:items:ZADQ:82722565",  
-    "urn:ngsi-ld:BloodPressure:items:KENT:89839721"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      44.0087455,  
-      -5.319791  
+    "id": "urn:ngsi-ld:BloodPressure:id:FWRY:98906666",  
+    "dateCreated": "2011-02-21T13:43:08Z",  
+    "dateModified": "2007-05-05T04:35:49Z",  
+    "source": "Development minute same clear painting audience. Single ready church low social message. Sister up receive travel perform physical material. Trade word world open then energy claim.",  
+    "name": "Again center newspaper catch democratic way. Throw age while professional hear five.",  
+    "alternateName": "School radio lose structure. Way marriage these answer.",  
+    "description": "Test career add behind explain media doctor near. Fire hope job people. Owner front enjoy material economic would development.",  
+    "dataProvider": "West game your style. Arrive now stock left against officer.",  
+    "owner": [  
+        "urn:ngsi-ld:BloodPressure:items:YVEO:41144099",  
+        "urn:ngsi-ld:BloodPressure:items:UWAN:50182026"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:BloodPressure:items:ZADQ:82722565",  
+        "urn:ngsi-ld:BloodPressure:items:KENT:89839721"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            44.0087455,  
+            -5.319791  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Particular personal second. Create bad because light draw message year PM. Lay wrong even call.",  
+        "addressLocality": "Land middle part war money when other fish. Part fact reflect fund.",  
+        "addressRegion": "During leader matter important follow.",  
+        "addressCountry": "Only message off what what soldier firm. Continue spend present offer leave run head.",  
+        "postalCode": "Defense resource certain different. So local director region.",  
+        "postOfficeBoxNumber": "Glass condition president indicate any. Rise might move give thought local huge."  
+    },  
+    "areaServed": "Herself world allow work. Point nice sort amount summer standard. Capital dinner parent power. Help election reach.",  
+    "rt": [  
+        "oic.r.blood.pressure",  
+        "oic.r.blood.pressure"  
+    ],  
+    "map": {  
+        "type": "Property",  
+        "value": 934.7  
+    },  
+    "units": "mmHg",  
+    "systolic": {  
+        "type": "Property",  
+        "value": 907.5  
+    },  
+    "diastolic": {  
+        "type": "Property",  
+        "value": 687.6  
+    },  
+    "if": [  
+        "oic.if.s",  
+        "oic.if.baseline"  
+    ],  
+    "range": [  
+        395.4,  
+        494.6  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 948.3  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 716.2  
+    },  
+    "n": "Very human south price. Case sign fight data myself quickly relationship. Deep different set respond necessary share produce.",  
+    "type": "BloodPressure",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Particular personal second. Create bad because light draw message year PM. Lay wrong even call.",  
-    "addressLocality": "Land middle part war money when other fish. Part fact reflect fund.",  
-    "addressRegion": "During leader matter important follow.",  
-    "addressCountry": "Only message off what what soldier firm. Continue spend present offer leave run head.",  
-    "postalCode": "Defense resource certain different. So local director region.",  
-    "postOfficeBoxNumber": "Glass condition president indicate any. Rise might move give thought local huge."  
-  },  
-  "areaServed": "Herself world allow work. Point nice sort amount summer standard. Capital dinner parent power. Help election reach.",  
-  "rt": [  
-    "oic.r.blood.pressure",  
-    "oic.r.blood.pressure"  
-  ],  
-  "map": {  
-    "type": "Property",  
-    "value": 934.7  
-  },  
-  "units": "mmHg",  
-  "systolic": {  
-    "type": "Property",  
-    "value": 907.5  
-  },  
-  "diastolic": {  
-    "type": "Property",  
-    "value": 687.6  
-  },  
-  "if": [  
-    "oic.if.s",  
-    "oic.if.baseline"  
-  ],  
-  "range": [  
-    395.4,  
-    494.6  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 948.3  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 716.2  
-  },  
-  "n": "Very human south price. Case sign fight data myself quickly relationship. Deep different set respond necessary share produce.",  
-  "type": "BloodPressure",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### Blutdruck NGSI-LD normalisiert Beispiel  
 Hier ist ein Beispiel für einen Blutdruck im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-LD kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:BloodPressure:id:MWUO:80041751",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2020-05-09T02:59:44Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2010-09-02T23:50:12Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "However long knowledge. Remain different action. Street ago apply."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Pay reach all oil on. Major court seven hair painting see both."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Open agree knowledge time walk able. Experience large report meet."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Myself say career ago design condition go. Thank citizen policy situation. Hit pretty gas remember effect ago minute."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Magazine candidate need nearly church almost. Choose right stand something."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:BloodPressure:items:KIIY:23731432",  
-      "urn:ngsi-ld:BloodPressure:items:JSYR:00171590"  
+    "id": "urn:ngsi-ld:BloodPressure:id:MWUO:80041751",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2020-05-09T02:59:44Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2010-09-02T23:50:12Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "However long knowledge. Remain different action. Street ago apply."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Pay reach all oil on. Major court seven hair painting see both."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Open agree knowledge time walk able. Experience large report meet."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Myself say career ago design condition go. Thank citizen policy situation. Hit pretty gas remember effect ago minute."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Magazine candidate need nearly church almost. Choose right stand something."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:BloodPressure:items:KIIY:23731432",  
+            "urn:ngsi-ld:BloodPressure:items:JSYR:00171590"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:BloodPressure:items:VRNO:88271615"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                2.782601,  
+                91.84993  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "New into method treat call. Society often over now before. Radio partner music.",  
+            "addressLocality": "Mind do social find population young. Establish response we talk total. Reveal operation community contain produce likely money.",  
+            "addressRegion": "Executive fast consider law model debate because. Share fine but sing majority shoulder. Factor over Republican gas throw.",  
+            "addressCountry": "Modern camera air include authority player. System speech fire toward. Up until reach player likely.",  
+            "postalCode": "Why kind agree page.",  
+            "postOfficeBoxNumber": "Kind a heavy piece measure wonder least well. Page major material safe without defense feel hold. Father stop friend security allow. Man play degree magazine because."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Necessary section worker once body. They important involve discuss camera. Others statement set power kid mind more."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.blood.pressure"  
+        ]  
+    },  
+    "map": {  
+        "type": "Property",  
+        "value": 207.0  
+    },  
+    "units": {  
+        "type": "Property",  
+        "value": "mmHg"  
+    },  
+    "systolic": {  
+        "type": "Property",  
+        "value": 457.9  
+    },  
+    "diastolic": {  
+        "type": "Property",  
+        "value": 11.4  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            208.9,  
+            583.5  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 1.2  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 933.1  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Before effort technology commercial finally. Effect cell thousand rich. Modern happen less turn common around audience."  
+    },  
+    "type": "BloodPressure",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:BloodPressure:items:VRNO:88271615"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        2.782601,  
-        91.84993  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "New into method treat call. Society often over now before. Radio partner music.",  
-      "addressLocality": "Mind do social find population young. Establish response we talk total. Reveal operation community contain produce likely money.",  
-      "addressRegion": "Executive fast consider law model debate because. Share fine but sing majority shoulder. Factor over Republican gas throw.",  
-      "addressCountry": "Modern camera air include authority player. System speech fire toward. Up until reach player likely.",  
-      "postalCode": "Why kind agree page.",  
-      "postOfficeBoxNumber": "Kind a heavy piece measure wonder least well. Page major material safe without defense feel hold. Father stop friend security allow. Man play degree magazine because."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Necessary section worker once body. They important involve discuss camera. Others statement set power kid mind more."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.blood.pressure"  
-    ]  
-  },  
-  "map": {  
-    "type": "Property",  
-    "value": 207.0  
-  },  
-  "units": {  
-    "type": "Property",  
-    "value": "mmHg"  
-  },  
-  "systolic": {  
-    "type": "Property",  
-    "value": 457.9  
-  },  
-  "diastolic": {  
-    "type": "Property",  
-    "value": 11.4  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      208.9,  
-      583.5  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 1.2  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 933.1  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Before effort technology commercial finally. Effect cell thousand rich. Modern happen less turn common around audience."  
-  },  
-  "type": "BloodPressure",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
