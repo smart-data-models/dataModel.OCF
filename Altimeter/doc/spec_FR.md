@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entité : Altimètre  
-==================  
+==================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.OCF/blob/master/Altimeter/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Description globale : **La propriété 'alt' est la distance (en mètres) au-dessus ou au-dessous du niveau de la mer 'local'.  
 version : 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alt`: La distance actuelle (en mètres) au-dessus ou au-dessous du niveau de la mer "local".  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `if`: Le jeu d'interfaces OCF supporté par cette ressource.  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `n`: Nom amical de la ressource  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `precision`: Lorsqu'elle est exposée, la valeur de "précision" fournit une tolérance +/- par rapport aux propriétés de la ressource. Ainsi, si une propriété est mise à jour avec une valeur et que cette propriété est ensuite récupérée, la valeur récupérée est valide si elle se situe dans la plage de la valeur définie +/- la précision.  - `range`: La plage valide pour la propriété de la ressource sous forme de nombre. La première valeur du tableau est la valeur minimale, la deuxième valeur du tableau est la valeur maximale.  - `rt`: Le type de ressource.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `step`: Valeur de pas sur la plage définie, un nombre entier lorsque la plage est un nombre.  Il s'agit de l'incrément pour les valeurs valides dans l'intervalle ; ainsi, si l'intervalle est de 0,0 à 10,0 et que le pas est de 2,5, les valeurs valides sont 0,0, 2,5, 5,0, 7,5 et 10,0.  - `type`: Type d'entité NGSI. Il doit s'agir de l'altimètre    
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alt[number]`: La distance actuelle (en mètres) au-dessus ou au-dessous du niveau de la mer "local".  - `alternateName[string]`: Un nom alternatif pour cet élément  - `areaServed[string]`: La zone géographique où un service ou un article offert est fourni  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified[string]`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description[string]`: Une description de cet article  - `id[*]`: Identifiant unique de l'entité  - `if[array]`: L'ensemble des interfaces OCF supportées par cette ressource.  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `n[string]`: Nom amical de la ressource  - `name[string]`: Le nom de cet élément.  - `owner[array]`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `precision[number]`: Lorsqu'elle est exposée, la valeur de "précision" fournit une tolérance +/- par rapport aux propriétés de la ressource. Ainsi, si une propriété est mise à jour avec une valeur et que cette propriété est ensuite récupérée, la valeur récupérée est valide si elle se situe dans la plage de la valeur définie +/- la précision.  - `range[array]`: La plage valide pour la propriété de la ressource sous forme de nombre. La première valeur du tableau est la valeur minimale, la deuxième valeur du tableau est la valeur maximale.  - `rt[array]`: Le type de ressource.  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `step[number]`: Valeur de pas sur la plage définie, un nombre entier lorsque la plage est un nombre.  Il s'agit de l'incrément pour les valeurs valides dans l'intervalle ; ainsi, si l'intervalle est de 0,0 à 10,0 et que le pas est de 2,5, les valeurs valides sont 0,0, 2,5, 5,0, 7,5 et 10,0.  - `type[string]`: Type d'entité NGSI. Il doit s'agir de l'altimètre  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propriétés requises  
-- `alt`  - `id`  - `type`    
+- `alt`  - `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Modèle de données adapté de l'original créé par l'Open Connectivity Foundation. Dépôt original dans https://github.com/openconnectivityfoundation/IoTDataModels  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Altimeter:    
@@ -354,9 +367,14 @@ Altimeter:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Exemples de charges utiles  
 #### Altimètre NGSI-v2 valeurs-clés Exemple  
 Voici un exemple d'altimètre au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-v2 en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Altimeter:id:YYBR:30368709",  
@@ -419,8 +437,10 @@ Altimeter:
   "type": "Altimeter"  
 }  
 ```  
+</details>  
 #### Altimètre NGSI-v2 normalisé Exemple  
 Voici un exemple d'un altimètre au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -548,190 +568,204 @@ Altimeter:
   }  
 }  
 ```  
+</details>  
 #### Valeurs clés de l'altimètre NGSI-LD Exemple  
-Voici un exemple d'altimètre au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-LD en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Voici un exemple d'altimètre au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-LD quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Altimeter:id:YYBR:30368709",  
-  "dateCreated": "1986-03-01T02:40:38Z",  
-  "dateModified": "2001-12-01T21:24:11Z",  
-  "source": "Itself almost analysis wide foot friend. Stage especially series long word animal. Eat generation draw clearly relate.",  
-  "name": "Whose else interest into hit. Cost reveal technology recognize. Sport concern north agreement success.",  
-  "alternateName": "At itself art open news commercial technology. Color set floor develop care begin. Anyone generation price. College he soon whether his child democratic.",  
-  "description": "Cut laugh western after. Senior hit look possible. Thought stop hand behind.",  
-  "dataProvider": "Mouth space ball bad. Receive father gas industry.",  
-  "owner": [  
-    "urn:ngsi-ld:Altimeter:items:LSEB:86391437",  
-    "urn:ngsi-ld:Altimeter:items:PZHR:42287265"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Altimeter:items:QQGX:27750120",  
-    "urn:ngsi-ld:Altimeter:items:UDQN:45142445"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      19.3085445,  
-      142.76353  
+    "id": "urn:ngsi-ld:Altimeter:id:YYBR:30368709",  
+    "dateCreated": "1986-03-01T02:40:38Z",  
+    "dateModified": "2001-12-01T21:24:11Z",  
+    "source": "Itself almost analysis wide foot friend. Stage especially series long word animal. Eat generation draw clearly relate.",  
+    "name": "Whose else interest into hit. Cost reveal technology recognize. Sport concern north agreement success.",  
+    "alternateName": "At itself art open news commercial technology. Color set floor develop care begin. Anyone generation price. College he soon whether his child democratic.",  
+    "description": "Cut laugh western after. Senior hit look possible. Thought stop hand behind.",  
+    "dataProvider": "Mouth space ball bad. Receive father gas industry.",  
+    "owner": [  
+        "urn:ngsi-ld:Altimeter:items:LSEB:86391437",  
+        "urn:ngsi-ld:Altimeter:items:PZHR:42287265"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Altimeter:items:QQGX:27750120",  
+        "urn:ngsi-ld:Altimeter:items:UDQN:45142445"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            19.3085445,  
+            142.76353  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Today find there pull feeling garden. Nothing to manager watch. Accept two step value.",  
+        "addressLocality": "Base control beat cause national at out. Beautiful put increase less than its young. Charge role sit social help to even.",  
+        "addressRegion": "Example somebody through speech. Fund international use fly song live. Film road site all suffer necessary up.",  
+        "addressCountry": "Quickly at something true help. Program when keep reason boy main.",  
+        "postalCode": "Mouth order from degree later view. Suffer senior although modern wind be growth. Rate operation appear ten ability.",  
+        "postOfficeBoxNumber": "Quality question since for away young. Summer little nature plant store less figure. Bring response resource discover finish staff."  
+    },  
+    "areaServed": "Up easy miss treatment society might black approach. Gas public item choose church.",  
+    "rt": [  
+        "oic.r.altimeter",  
+        "oic.r.altimeter"  
+    ],  
+    "alt": {  
+        "type": "Property",  
+        "value": 956.8  
+    },  
+    "n": "Suddenly bank assume north often tell. Beat night contain fast fight game wish. We option know institution especially.",  
+    "precision": {  
+        "type": "Property",  
+        "value": 446.9  
+    },  
+    "range": [  
+        219.9,  
+        173.9  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 62.6  
+    },  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.baseline"  
+    ],  
+    "type": "Altimeter",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Today find there pull feeling garden. Nothing to manager watch. Accept two step value.",  
-    "addressLocality": "Base control beat cause national at out. Beautiful put increase less than its young. Charge role sit social help to even.",  
-    "addressRegion": "Example somebody through speech. Fund international use fly song live. Film road site all suffer necessary up.",  
-    "addressCountry": "Quickly at something true help. Program when keep reason boy main.",  
-    "postalCode": "Mouth order from degree later view. Suffer senior although modern wind be growth. Rate operation appear ten ability.",  
-    "postOfficeBoxNumber": "Quality question since for away young. Summer little nature plant store less figure. Bring response resource discover finish staff."  
-  },  
-  "areaServed": "Up easy miss treatment society might black approach. Gas public item choose church.",  
-  "rt": [  
-    "oic.r.altimeter",  
-    "oic.r.altimeter"  
-  ],  
-  "alt": {  
-    "type": "Property",  
-    "value": 956.8  
-  },  
-  "n": "Suddenly bank assume north often tell. Beat night contain fast fight game wish. We option know institution especially.",  
-  "precision": {  
-    "type": "Property",  
-    "value": 446.9  
-  },  
-  "range": [  
-    219.9,  
-    173.9  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 62.6  
-  },  
-  "if": [  
-    "oic.if.baseline",  
-    "oic.if.baseline"  
-  ],  
-  "type": "Altimeter",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### Altimètre normalisé NGSI-LD Exemple  
 Voici un exemple d'un altimètre au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Altimeter:id:XXJS:08120957",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1975-04-10T00:13:53Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1986-06-13T16:36:25Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Rock ask look run. Her share majority within provide. Cold simple area."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Follow level single maintain north letter. Another tough can off. Town hundred help traditional feeling rock cell."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Big wide plant assume team put never."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Town position skin record mind. Positive source exactly team edge. Either child a study everyone process."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Within six ok sit edge marriage could. Yard international it feeling between itself sure. End answer fill tough human."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Altimeter:items:CPCX:44604650",  
-      "urn:ngsi-ld:Altimeter:items:FUHL:47481286"  
+    "id": "urn:ngsi-ld:Altimeter:id:XXJS:08120957",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1975-04-10T00:13:53Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1986-06-13T16:36:25Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Rock ask look run. Her share majority within provide. Cold simple area."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Follow level single maintain north letter. Another tough can off. Town hundred help traditional feeling rock cell."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Big wide plant assume team put never."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Town position skin record mind. Positive source exactly team edge. Either child a study everyone process."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Within six ok sit edge marriage could. Yard international it feeling between itself sure. End answer fill tough human."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Altimeter:items:CPCX:44604650",  
+            "urn:ngsi-ld:Altimeter:items:FUHL:47481286"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Altimeter:items:KSOB:49084055"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                71.048026,  
+                94.574079  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Not pay art. Manager hope dinner style yes difference model know.",  
+            "addressLocality": "Become man Democrat argue best. Seven thank space understand manage writer.",  
+            "addressRegion": "Hand serious live important when. Tough shoulder entire most. Nature note smile open.",  
+            "addressCountry": "Program amount company would. Letter tell full despite.",  
+            "postalCode": "Movie write government although and very sometimes. Hand address hold him every walk south cultural. Hotel second describe include party tax different.",  
+            "postOfficeBoxNumber": "Life fast television economic. Hope rule or could toward. Get yes here even floor nor."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Half two stock low. Back management successful almost cold building democratic."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.altimeter"  
+        ]  
+    },  
+    "alt": {  
+        "type": "Property",  
+        "value": 916.8  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Somebody audience yet magazine hundred support but. Move building public part court price."  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 171.6  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            593.9,  
+            778.3  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 276.9  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline",  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "Altimeter",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Altimeter:items:KSOB:49084055"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        71.048026,  
-        94.574079  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Not pay art. Manager hope dinner style yes difference model know.",  
-      "addressLocality": "Become man Democrat argue best. Seven thank space understand manage writer.",  
-      "addressRegion": "Hand serious live important when. Tough shoulder entire most. Nature note smile open.",  
-      "addressCountry": "Program amount company would. Letter tell full despite.",  
-      "postalCode": "Movie write government although and very sometimes. Hand address hold him every walk south cultural. Hotel second describe include party tax different.",  
-      "postOfficeBoxNumber": "Life fast television economic. Hope rule or could toward. Get yes here even floor nor."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Half two stock low. Back management successful almost cold building democratic."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.altimeter"  
-    ]  
-  },  
-  "alt": {  
-    "type": "Property",  
-    "value": 916.8  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Somebody audience yet magazine hundred support but. Move building public part court price."  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 171.6  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      593.9,  
-      778.3  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 276.9  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.baseline",  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "type": "Altimeter",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
