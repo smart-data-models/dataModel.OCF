@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-事業者BMI  
-======  
+エンティティBMI  
+=========<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/BMI/LICENSE.md)  
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**bmi と unit のプロパティは、サーバから提供される読み取り専用の値である。  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Global description:**bmi と unit のプロパティは、サーバから提供される読み取り専用の値である。  
 バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `bmi`: ボディマス指数（BMI）（kg/m^2  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `id`: エンティティの一意な識別子  - `if`: このリソースがサポートする OCF インタフェースセット。  - `location`: アイテムへのGeojsonリファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `n`: リソースのフレンドリ名  - `name`: このアイテムの名称です。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `precision`: precision'の値が公開されると、ResourceのPropertiesに対して+/-の許容範囲を提供します。したがって、あるプロパティがある値にUPDATEされ、そのプロパティがRETRIEVEDされた場合、RETRIEVEDされた値は設定された値+/-精度の範囲内であれば有効である。  - `range`: リソースに含まれるプロパティの有効範囲を数値で表したもの。配列の最初の値が最小値、2 番目の値が最大値となります。  - `rt`: リソースの種類  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで指定する文字の列。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `step`: 定義された範囲のステップ値（範囲が数値の場合は整数）。  範囲が0.0〜10.0でステップが2.5の場合、有効な値は0.0、2.5、5.0、7.5、10.0である。  - `type`: NGSIエンティティタイプ。BMIでなければならない    
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `bmi[number]`: ボディマス指数（BMI）（kg/m^2  - `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `if[array]`: このリソースがサポートする OCF インタフェースセット。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `n[string]`: リソースのフレンドリ名  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリスト  - `precision[number]`: 公開されるとき、'precision'の値は、ResourceのPropertyに対して+/-の許容範囲を提供する。したがって、あるプロパティがある値にUPDATEされ、そのプロパティがRETRIEVEDされた場合、RETRIEVEDされた値は設定された値+/-精度の範囲内であれば有効である。  - `range[array]`: Resource に含まれる Property の有効範囲を数値で表します。配列の最初の値が最小値、2 番目の値が最大値となります。  - `rt[array]`: リソースの種類  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `step[number]`: 定義された範囲にわたるステップ値。  範囲が0.0〜10.0でステップが2.5の場合、有効な値は0.0、2.5、5.0、7.5、10.0である。  - `type[string]`: NGSIエンティティタイプ。BMIでなければならない  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 必要なプロパティ  
-- `bmi`  - `id`  - `type`    
+- `bmi`  - `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 データモデルは、Open Connectivity Foundationが作成したオリジナルを引用しています。https://github.com/openconnectivityfoundation/IoTDataModels のオリジナルリポジトリ  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
 アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 BMI:    
@@ -356,9 +369,14 @@ BMI:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
 #### BMI NGSI-v2 key-value の例  
-BMIをJSON-LD形式でkey-valueにした例です。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+ここでは、BMIをJSON-LD形式でkey-valuesにした例を示す。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:BMI:id:VDFV:55667741",  
@@ -421,8 +439,10 @@ BMI:
   "type": "BMI"  
 }  
 ```  
+</details>  
 #### BMI NGSI-v2 正規化例  
 以下は、BMIを正規化したJSON-LD形式の例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -550,189 +570,203 @@ BMI:
   }  
 }  
 ```  
+</details>  
 #### BMI NGSI-LD キー値の例  
-BMIをJSON-LD形式でkey-valueにした例です。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータが返される。  
+ここでは、BMIをJSON-LD形式でkey-valuesにした例を示す。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:BMI:id:VDFV:55667741",  
-  "dateCreated": "1972-08-04T01:32:47Z",  
-  "dateModified": "1990-12-10T18:23:52Z",  
-  "source": "Perhaps particularly over news. Section ability young read whose experience put.",  
-  "name": "Figure risk bill other. Manage account sell language middle learn.",  
-  "alternateName": "Campaign military adult maintain movie our more. Figure energy small include little institution. Something government anyone there spend skill.",  
-  "description": "Fly person development around control. Discover back nature politics apply crime teach recognize. Give nearly collection resource left site agree meeting.",  
-  "dataProvider": "Box scientist major really face everything final remember. Notice cover leave feel out word activity listen.",  
-  "owner": [  
-    "urn:ngsi-ld:BMI:items:TLGO:89545122",  
-    "urn:ngsi-ld:BMI:items:ZSQM:54988728"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:BMI:items:EWVZ:54612682",  
-    "urn:ngsi-ld:BMI:items:HUQO:69722028"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      54.2093595,  
-      -81.722699  
+    "id": "urn:ngsi-ld:BMI:id:VDFV:55667741",  
+    "dateCreated": "1972-08-04T01:32:47Z",  
+    "dateModified": "1990-12-10T18:23:52Z",  
+    "source": "Perhaps particularly over news. Section ability young read whose experience put.",  
+    "name": "Figure risk bill other. Manage account sell language middle learn.",  
+    "alternateName": "Campaign military adult maintain movie our more. Figure energy small include little institution. Something government anyone there spend skill.",  
+    "description": "Fly person development around control. Discover back nature politics apply crime teach recognize. Give nearly collection resource left site agree meeting.",  
+    "dataProvider": "Box scientist major really face everything final remember. Notice cover leave feel out word activity listen.",  
+    "owner": [  
+        "urn:ngsi-ld:BMI:items:TLGO:89545122",  
+        "urn:ngsi-ld:BMI:items:ZSQM:54988728"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:BMI:items:EWVZ:54612682",  
+        "urn:ngsi-ld:BMI:items:HUQO:69722028"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            54.2093595,  
+            -81.722699  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Bag key computer home. Pm view however right speech.",  
+        "addressLocality": "Response smile place our.",  
+        "addressRegion": "Little poor public sense. Else race ready.",  
+        "addressCountry": "Example prepare arm bag spend movie simple today. Skin her research box.",  
+        "postalCode": "Their street figure decade parent. Land respond whatever generation explain.",  
+        "postOfficeBoxNumber": "Power receive which certainly shake organization better. Congress discussion where suddenly specific too west. Dog hear series voice glass open white."  
+    },  
+    "areaServed": "Administration hundred ever speak medical. Another movement live environment author let show. Sit myself third later boy put poor.",  
+    "rt": [  
+        "oic.r.bmi",  
+        "oic.r.bmi"  
+    ],  
+    "bmi": {  
+        "type": "Property",  
+        "value": 969.4  
+    },  
+    "range": [  
+        966.8,  
+        231.5  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 326.9  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 465.9  
+    },  
+    "n": "Mother various avoid few describe. Develop deal artist write end down language. Yourself section staff authority already.",  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.baseline"  
+    ],  
+    "type": "BMI",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Bag key computer home. Pm view however right speech.",  
-    "addressLocality": "Response smile place our.",  
-    "addressRegion": "Little poor public sense. Else race ready.",  
-    "addressCountry": "Example prepare arm bag spend movie simple today. Skin her research box.",  
-    "postalCode": "Their street figure decade parent. Land respond whatever generation explain.",  
-    "postOfficeBoxNumber": "Power receive which certainly shake organization better. Congress discussion where suddenly specific too west. Dog hear series voice glass open white."  
-  },  
-  "areaServed": "Administration hundred ever speak medical. Another movement live environment author let show. Sit myself third later boy put poor.",  
-  "rt": [  
-    "oic.r.bmi",  
-    "oic.r.bmi"  
-  ],  
-  "bmi": {  
-    "type": "Property",  
-    "value": 969.4  
-  },  
-  "range": [  
-    966.8,  
-    231.5  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 326.9  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 465.9  
-  },  
-  "n": "Mother various avoid few describe. Develop deal artist write end down language. Yourself section staff authority already.",  
-  "if": [  
-    "oic.if.baseline",  
-    "oic.if.baseline"  
-  ],  
-  "type": "BMI",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### BMI NGSI-LD 正規化例  
 以下は、BMIを正規化したJSON-LD形式の例である。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:BMI:id:EMJI:97474029",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2022-03-01T18:43:19Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1995-08-23T11:49:56Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Fill lot management perform professor admit herself."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Late college somebody a property thought. Ever sell board just require."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Bar suffer thought record shoulder activity one. Support music serious so speak feeling event. Phone radio about produce practice order."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Say book popular back million. Degree local live."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Good morning shake whose. Safe employee buy offer majority. Provide lead catch try chair main develop. Chance here type heavy."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:BMI:items:WJYW:99456940",  
-      "urn:ngsi-ld:BMI:items:IBTQ:54917398"  
+    "id": "urn:ngsi-ld:BMI:id:EMJI:97474029",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2022-03-01T18:43:19Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1995-08-23T11:49:56Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Fill lot management perform professor admit herself."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Late college somebody a property thought. Ever sell board just require."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Bar suffer thought record shoulder activity one. Support music serious so speak feeling event. Phone radio about produce practice order."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Say book popular back million. Degree local live."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Good morning shake whose. Safe employee buy offer majority. Provide lead catch try chair main develop. Chance here type heavy."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:BMI:items:WJYW:99456940",  
+            "urn:ngsi-ld:BMI:items:IBTQ:54917398"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:BMI:items:DUBD:09125435"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -71.4924345,  
+                -95.488647  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "That claim else already.",  
+            "addressLocality": "Painting break mother speak while eye. Political student hospital free down teacher.",  
+            "addressRegion": "Gas beat scientist. Election full defense deep morning black. Interesting PM in. Production authority name method price talk.",  
+            "addressCountry": "Door floor most task so fast much. Also address play stand.",  
+            "postalCode": "Happy value analysis far. Spring true family yeah.",  
+            "postOfficeBoxNumber": "Toward raise wait send mouth be everybody evidence. Court majority grow employee yourself crime. Car alone kitchen most painting at sea."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Us outside simply suffer. Social inside above war bit light charge."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.bmi"  
+        ]  
+    },  
+    "bmi": {  
+        "type": "Property",  
+        "value": 443.8  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            661.2,  
+            444.8  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 198.7  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 977.8  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Laugh such force final. Them media line involve. Age meet follow character card news seat."  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "BMI",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:BMI:items:DUBD:09125435"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -71.4924345,  
-        -95.488647  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "That claim else already.",  
-      "addressLocality": "Painting break mother speak while eye. Political student hospital free down teacher.",  
-      "addressRegion": "Gas beat scientist. Election full defense deep morning black. Interesting PM in. Production authority name method price talk.",  
-      "addressCountry": "Door floor most task so fast much. Also address play stand.",  
-      "postalCode": "Happy value analysis far. Spring true family yeah.",  
-      "postOfficeBoxNumber": "Toward raise wait send mouth be everybody evidence. Court majority grow employee yourself crime. Car alone kitchen most painting at sea."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Us outside simply suffer. Social inside above war bit light charge."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.bmi"  
-    ]  
-  },  
-  "bmi": {  
-    "type": "Property",  
-    "value": 443.8  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      661.2,  
-      444.8  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 198.7  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 977.8  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Laugh such force final. Them media line involve. Age meet follow character card news seat."  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "type": "BMI",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
