@@ -1,17 +1,32 @@
-Entità: GlucoseSampleLocation  
-=============================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entità: GlucoseSampleLocation  
+=============================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.OCF/blob/master/GlucoseSampleLocation/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Adattamento del programma Smart Data Models dei modelli di dati originali IoTData. Questa risorsa descrive le proprietà associate con il campione di contesto Location. AST significa Alternative Site Test specificando che la posizione del test eseguito era da un sito alternativo sul corpo. La proprietà samplelocation è un valore di sola lettura che viene fornito dal Server.**  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **Adattamento del programma Smart Data Models dei modelli di dati originali di IoTData. Questa risorsa descrive le proprietà associate al campione di contesto Posizione. AST significa Alternative Site Test (Test del sito alternativo), specificando che la posizione del test eseguito era un sito alternativo sul corpo. La proprietà samplelocation è un valore di sola lettura fornito dal server **.  
+versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `id`: Identificatore unico dell'entità  - `if`: L'insieme di interfacce OCF supportate da questa risorsa  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n`: Nome amichevole della risorsa  - `name`: Il nome di questo articolo.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `rt`: Tipo di risorsa  - `samplelocation`: I possibili luoghi del sangue dove il campione di sangue può essere prelevato.  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `type`: Tipo di entità NGSI. Deve essere GlucoseSampleLocation    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `if[array]`: L'insieme di interfacce OCF supportate da questa risorsa.  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `n[string]`: Nome amichevole della risorsa  - `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `rt[array]`: Tipo di risorsa  - `samplelocation[string]`: Le possibili sedi ematiche in cui può essere prelevato il campione di sangue.  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `type[string]`: Tipo di entità NGSI. Deve essere GlucoseSampleLocation (Localizzazione del campione di glucosio).  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- `id`  - `type`    
-Questo modello di dati proviene dall'originale [Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels). È stato esteso per soddisfare i requisiti di NGSI.  
-## Descrizione del modello di dati delle proprietà  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+Questo modello di dati proviene dal repository originale della [Open Connectivity Foundation] (https://github.com/openconnectivityfoundation/IoTDataModels). È stato esteso per soddisfare i requisiti NGSI.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 GlucoseSampleLocation:    
@@ -335,9 +350,14 @@ GlucoseSampleLocation:
   x-version: 0.0.1    
 ```  
 </details>    
-## Esempio di payloads  
-#### GlucoseSampleLocation NGSI-v2 valori chiave Esempio  
-Ecco un esempio di GlucoseSampleLocation in formato JSON-LD come valori chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
+#### GlucoseSampleLocation Valori chiave NGSI-v2 Esempio  
+Ecco un esempio di GlucoseSampleLocation in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:GlucoseSampleLocation:id:HMRW:59656193",  
@@ -374,8 +394,10 @@ GlucoseSampleLocation:
   "areaServed": "Young similar late with what. Respond quality fact green assume movement. White president discover garden here."  
 }  
 ```  
+</details>  
 #### GlucoseSampleLocation NGSI-v2 normalizzato Esempio  
-Ecco un esempio di GlucoseSampleLocation in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di GlucoseSampleLocation in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -453,127 +475,141 @@ GlucoseSampleLocation:
   }  
 }  
 ```  
-#### GlucoseSampleLocation valori chiave NGSI-LD Esempio  
-Ecco un esempio di GlucoseSampleLocation in formato JSON-LD come valori chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### GlucoseSampleLocation Valori chiave NGSI-LD Esempio  
+Ecco un esempio di GlucoseSampleLocation in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:GlucoseSampleLocation:id:HMRW:59656193",  
-  "dateCreated": "1988-11-05T02:31:54Z",  
-  "dateModified": "1981-06-04T04:33:39Z",  
-  "source": "Decision despite soon. Will decision another avoid wall believe. Pick serious hotel arrive like indeed.",  
-  "name": "Place fire majority theory today senior according.",  
-  "alternateName": "Peace pick consumer quality issue claim. Policy arm yard structure two. Similar girl who bring before inside trial.",  
-  "description": "Five spring player play go record modern. White yard trouble last chance. Some others as just kitchen do hospital.",  
-  "dataProvider": "Clearly establish draw action land end. Method look cause human partner whatever.",  
-  "owner": [  
-    "urn:ngsi-ld:GlucoseSampleLocation:items:GTSG:35648681",  
-    "urn:ngsi-ld:GlucoseSampleLocation:items:BRNL:14310622"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:GlucoseSampleLocation:items:COGG:05616250",  
-    "urn:ngsi-ld:GlucoseSampleLocation:items:AJHV:00001057"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -5.802658,  
-      118.84406  
+    "id": "urn:ngsi-ld:GlucoseSampleLocation:id:HMRW:59656193",  
+    "dateCreated": "1988-11-05T02:31:54Z",  
+    "dateModified": "1981-06-04T04:33:39Z",  
+    "source": "Decision despite soon. Will decision another avoid wall believe. Pick serious hotel arrive like indeed.",  
+    "name": "Place fire majority theory today senior according.",  
+    "alternateName": "Peace pick consumer quality issue claim. Policy arm yard structure two. Similar girl who bring before inside trial.",  
+    "description": "Five spring player play go record modern. White yard trouble last chance. Some others as just kitchen do hospital.",  
+    "dataProvider": "Clearly establish draw action land end. Method look cause human partner whatever.",  
+    "owner": [  
+        "urn:ngsi-ld:GlucoseSampleLocation:items:GTSG:35648681",  
+        "urn:ngsi-ld:GlucoseSampleLocation:items:BRNL:14310622"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:GlucoseSampleLocation:items:COGG:05616250",  
+        "urn:ngsi-ld:GlucoseSampleLocation:items:AJHV:00001057"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -5.802658,  
+            118.84406  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Everything hour piece nothing simply effort. Business various entire. Bad member trade meet. Bring fall shoulder several help.",  
+        "addressLocality": "Total deep region buy. Arm kind stay government possible.",  
+        "addressRegion": "Source ready ten wind.",  
+        "addressCountry": "Bring western here. Child physical like able truth. Kind alone major thought agreement worker.",  
+        "postalCode": "Nothing father task analysis again blood. Friend threat society art wait. Middle theory customer field.",  
+        "postOfficeBoxNumber": "Before not second anyone example point."  
+    },  
+    "areaServed": "Young similar late with what. Respond quality fact green assume movement. White president discover garden here.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Everything hour piece nothing simply effort. Business various entire. Bad member trade meet. Bring fall shoulder several help.",  
-    "addressLocality": "Total deep region buy. Arm kind stay government possible.",  
-    "addressRegion": "Source ready ten wind.",  
-    "addressCountry": "Bring western here. Child physical like able truth. Kind alone major thought agreement worker.",  
-    "postalCode": "Nothing father task analysis again blood. Friend threat society art wait. Middle theory customer field.",  
-    "postOfficeBoxNumber": "Before not second anyone example point."  
-  },  
-  "areaServed": "Young similar late with what. Respond quality fact green assume movement. White president discover garden here.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-#### GlucoseSampleLocation NGSI-LD normalizzato Esempio  
-Ecco un esempio di GlucoseSampleLocation in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### GlucosioCampioneLocazione NGSI-LD normalizzato Esempio  
+Ecco un esempio di GlucoseSampleLocation in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:GlucoseSampleLocation:id:QSBX:29851292",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1982-02-15T19:25:40Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1975-12-28T04:09:27Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "And forward sort now."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Outside election free another relationship me above."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Budget card forward option. Political or town money around leg second. Job kid result baby."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Season door win note three. Team ball notice who me top. Can tend fund where include responsibility necessary."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Series hundred however man. Place bill soldier security then perform animal election."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:GlucoseSampleLocation:items:REPG:54879373",  
-      "urn:ngsi-ld:GlucoseSampleLocation:items:HHTT:80346776"  
+    "id": "urn:ngsi-ld:GlucoseSampleLocation:id:QSBX:29851292",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1982-02-15T19:25:40Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1975-12-28T04:09:27Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "And forward sort now."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Outside election free another relationship me above."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Budget card forward option. Political or town money around leg second. Job kid result baby."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Season door win note three. Team ball notice who me top. Can tend fund where include responsibility necessary."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Series hundred however man. Place bill soldier security then perform animal election."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:GlucoseSampleLocation:items:REPG:54879373",  
+            "urn:ngsi-ld:GlucoseSampleLocation:items:HHTT:80346776"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:GlucoseSampleLocation:items:WEIJ:01724018"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                58.0901955,  
+                -109.970684  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Society factor big benefit school much. Fly ahead reduce key including attorney. Half manage firm kitchen. It majority new good right.",  
+            "addressLocality": "As no involve option natural. Other certain Democrat continue hotel. Usually how rather onto already itself.",  
+            "addressRegion": "Rise clear candidate rest security record skin. Sense watch although against ago agreement.",  
+            "addressCountry": "Against break reach great he. Size soon film stage let.",  
+            "postalCode": "Good not pressure arrive.",  
+            "postOfficeBoxNumber": "Despite minute above difference. Claim impact education moment. Answer TV establish indicate throw."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Until outside low often area professor fact."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:GlucoseSampleLocation:items:WEIJ:01724018"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        58.0901955,  
-        -109.970684  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Society factor big benefit school much. Fly ahead reduce key including attorney. Half manage firm kitchen. It majority new good right.",  
-      "addressLocality": "As no involve option natural. Other certain Democrat continue hotel. Usually how rather onto already itself.",  
-      "addressRegion": "Rise clear candidate rest security record skin. Sense watch although against ago agreement.",  
-      "addressCountry": "Against break reach great he. Size soon film stage let.",  
-      "postalCode": "Good not pressure arrive.",  
-      "postOfficeBoxNumber": "Despite minute above difference. Claim impact education moment. Answer TV establish indicate throw."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Until outside low often area professor fact."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
