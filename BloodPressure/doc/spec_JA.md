@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 エンティティ血液の圧力  
-===========  
+===========<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/BloodPressure/LICENSE.md)  
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述。**このリソースは、人の血圧に関連するプロパティを記述する。単位は、mmHg または kPa のいずれか1つの値である。  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Global description:**このリソースは、人の血圧に関連するプロパティを記述する。単位は、mmHg または kPa のいずれか1つの値である。  
 バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `diastolic`: 拡張期血圧  - `id`: エンティティの一意な識別子  - `if`: このリソースがサポートする OCF インタフェースセット。  - `location`: アイテムへのGeojsonリファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `map`: 平均動脈圧(MAP)  - `n`: リソースのフレンドリ名  - `name`: このアイテムの名称です。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `precision`: precision'の値が公開されると、ResourceのPropertiesに対して+/-の許容範囲を提供します。したがって、あるプロパティがある値にUPDATEされ、そのプロパティがRETRIEVEDされた場合、RETRIEVEDされた値は設定された値+/-精度の範囲内であれば有効である。  - `range`: リソースに含まれるプロパティの有効範囲を数値で表したもの。配列の最初の値が最小値、2 番目の値が最大値となります。  - `rt`: リソースの種類  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで指定する文字の列。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `step`: 定義された範囲のステップ値（範囲が数値の場合は整数）。  範囲が0.0〜10.0でステップが2.5の場合、有効な値は0.0、2.5、5.0、7.5、10.0である。  - `systolic`: 収縮期血圧  - `type`: NGSIエンティティタイプ。これはBloodPressureでなければならない。  - `units`: 血圧計    
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `diastolic[number]`: 拡張期血圧  - `id[*]`: エンティティの一意な識別子  - `if[array]`: このリソースがサポートする OCF インタフェースセット。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `map[number]`: 平均動脈圧(MAP)  - `n[string]`: リソースのフレンドリ名  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `precision[number]`: 公開されるとき、'precision'の値は、ResourceのPropertyに対して+/-の許容範囲を提供する。したがって、あるプロパティがある値にUPDATEされ、そのプロパティがRETRIEVEDされた場合、RETRIEVEDされた値は設定された値+/-精度の範囲内であれば有効である。  - `range[array]`: Resource に含まれる Property の有効範囲を数値で表します。配列の最初の値が最小値、2 番目の値が最大値となります。  - `rt[array]`: リソースの種類  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `step[number]`: 定義された範囲にわたるステップ値。  範囲が0.0〜10.0でステップが2.5の場合、有効な値は0.0、2.5、5.0、7.5、10.0である。  - `systolic[number]`: 収縮期血圧  - `type[string]`: NGSIエンティティタイプ。これはBloodPressureでなければならない。  - `units[string]`: 血圧計  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 必要なプロパティ  
-- `diastolic`  - `id`  - `systolic`  - `type`    
+- `diastolic`  - `id`  - `systolic`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 データモデルは、Open Connectivity Foundationが作成したオリジナルを引用しています。https://github.com/openconnectivityfoundation/IoTDataModels のオリジナルリポジトリ  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
 アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 BloodPressure:    
@@ -381,9 +394,14 @@ BloodPressure:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
 #### BloodPressure NGSI-v2 key-value の例。  
-BloodPressureをJSON-LD形式でkey-valueとした例です。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+BloodPressureをJSON-LD形式でkey-valuesとした例である。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:BloodPressure:id:FWRY:98906666",  
@@ -455,8 +473,10 @@ BloodPressure:
   "type": "BloodPressure"  
 }  
 ```  
+</details>  
 #### BloodPressure NGSI-v2 正規化例  
-以下は、BloodPressureをJSON-LD形式で正規化した例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、BloodPressure を JSON-LD 形式で正規化した例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -602,210 +622,224 @@ BloodPressure:
   }  
 }  
 ```  
+</details>  
 #### BloodPressure NGSI-LD key-value 例  
-BloodPressureをJSON-LD形式でkey-valueにした例です。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+BloodPressureをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:BloodPressure:id:FWRY:98906666",  
-  "dateCreated": "2011-02-21T13:43:08Z",  
-  "dateModified": "2007-05-05T04:35:49Z",  
-  "source": "Development minute same clear painting audience. Single ready church low social message. Sister up receive travel perform physical material. Trade word world open then energy claim.",  
-  "name": "Again center newspaper catch democratic way. Throw age while professional hear five.",  
-  "alternateName": "School radio lose structure. Way marriage these answer.",  
-  "description": "Test career add behind explain media doctor near. Fire hope job people. Owner front enjoy material economic would development.",  
-  "dataProvider": "West game your style. Arrive now stock left against officer.",  
-  "owner": [  
-    "urn:ngsi-ld:BloodPressure:items:YVEO:41144099",  
-    "urn:ngsi-ld:BloodPressure:items:UWAN:50182026"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:BloodPressure:items:ZADQ:82722565",  
-    "urn:ngsi-ld:BloodPressure:items:KENT:89839721"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      44.0087455,  
-      -5.319791  
+    "id": "urn:ngsi-ld:BloodPressure:id:FWRY:98906666",  
+    "dateCreated": "2011-02-21T13:43:08Z",  
+    "dateModified": "2007-05-05T04:35:49Z",  
+    "source": "Development minute same clear painting audience. Single ready church low social message. Sister up receive travel perform physical material. Trade word world open then energy claim.",  
+    "name": "Again center newspaper catch democratic way. Throw age while professional hear five.",  
+    "alternateName": "School radio lose structure. Way marriage these answer.",  
+    "description": "Test career add behind explain media doctor near. Fire hope job people. Owner front enjoy material economic would development.",  
+    "dataProvider": "West game your style. Arrive now stock left against officer.",  
+    "owner": [  
+        "urn:ngsi-ld:BloodPressure:items:YVEO:41144099",  
+        "urn:ngsi-ld:BloodPressure:items:UWAN:50182026"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:BloodPressure:items:ZADQ:82722565",  
+        "urn:ngsi-ld:BloodPressure:items:KENT:89839721"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            44.0087455,  
+            -5.319791  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Particular personal second. Create bad because light draw message year PM. Lay wrong even call.",  
+        "addressLocality": "Land middle part war money when other fish. Part fact reflect fund.",  
+        "addressRegion": "During leader matter important follow.",  
+        "addressCountry": "Only message off what what soldier firm. Continue spend present offer leave run head.",  
+        "postalCode": "Defense resource certain different. So local director region.",  
+        "postOfficeBoxNumber": "Glass condition president indicate any. Rise might move give thought local huge."  
+    },  
+    "areaServed": "Herself world allow work. Point nice sort amount summer standard. Capital dinner parent power. Help election reach.",  
+    "rt": [  
+        "oic.r.blood.pressure",  
+        "oic.r.blood.pressure"  
+    ],  
+    "map": {  
+        "type": "Property",  
+        "value": 934.7  
+    },  
+    "units": "mmHg",  
+    "systolic": {  
+        "type": "Property",  
+        "value": 907.5  
+    },  
+    "diastolic": {  
+        "type": "Property",  
+        "value": 687.6  
+    },  
+    "if": [  
+        "oic.if.s",  
+        "oic.if.baseline"  
+    ],  
+    "range": [  
+        395.4,  
+        494.6  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 948.3  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 716.2  
+    },  
+    "n": "Very human south price. Case sign fight data myself quickly relationship. Deep different set respond necessary share produce.",  
+    "type": "BloodPressure",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Particular personal second. Create bad because light draw message year PM. Lay wrong even call.",  
-    "addressLocality": "Land middle part war money when other fish. Part fact reflect fund.",  
-    "addressRegion": "During leader matter important follow.",  
-    "addressCountry": "Only message off what what soldier firm. Continue spend present offer leave run head.",  
-    "postalCode": "Defense resource certain different. So local director region.",  
-    "postOfficeBoxNumber": "Glass condition president indicate any. Rise might move give thought local huge."  
-  },  
-  "areaServed": "Herself world allow work. Point nice sort amount summer standard. Capital dinner parent power. Help election reach.",  
-  "rt": [  
-    "oic.r.blood.pressure",  
-    "oic.r.blood.pressure"  
-  ],  
-  "map": {  
-    "type": "Property",  
-    "value": 934.7  
-  },  
-  "units": "mmHg",  
-  "systolic": {  
-    "type": "Property",  
-    "value": 907.5  
-  },  
-  "diastolic": {  
-    "type": "Property",  
-    "value": 687.6  
-  },  
-  "if": [  
-    "oic.if.s",  
-    "oic.if.baseline"  
-  ],  
-  "range": [  
-    395.4,  
-    494.6  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 948.3  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 716.2  
-  },  
-  "n": "Very human south price. Case sign fight data myself quickly relationship. Deep different set respond necessary share produce.",  
-  "type": "BloodPressure",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### BloodPressure NGSI-LD 正規化例  
-以下は、BloodPressureをJSON-LD形式で正規化した例である。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、BloodPressure を正規化した JSON-LD 形式の例である。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:BloodPressure:id:MWUO:80041751",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2020-05-09T02:59:44Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2010-09-02T23:50:12Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "However long knowledge. Remain different action. Street ago apply."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Pay reach all oil on. Major court seven hair painting see both."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Open agree knowledge time walk able. Experience large report meet."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Myself say career ago design condition go. Thank citizen policy situation. Hit pretty gas remember effect ago minute."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Magazine candidate need nearly church almost. Choose right stand something."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:BloodPressure:items:KIIY:23731432",  
-      "urn:ngsi-ld:BloodPressure:items:JSYR:00171590"  
+    "id": "urn:ngsi-ld:BloodPressure:id:MWUO:80041751",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2020-05-09T02:59:44Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2010-09-02T23:50:12Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "However long knowledge. Remain different action. Street ago apply."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Pay reach all oil on. Major court seven hair painting see both."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Open agree knowledge time walk able. Experience large report meet."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Myself say career ago design condition go. Thank citizen policy situation. Hit pretty gas remember effect ago minute."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Magazine candidate need nearly church almost. Choose right stand something."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:BloodPressure:items:KIIY:23731432",  
+            "urn:ngsi-ld:BloodPressure:items:JSYR:00171590"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:BloodPressure:items:VRNO:88271615"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                2.782601,  
+                91.84993  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "New into method treat call. Society often over now before. Radio partner music.",  
+            "addressLocality": "Mind do social find population young. Establish response we talk total. Reveal operation community contain produce likely money.",  
+            "addressRegion": "Executive fast consider law model debate because. Share fine but sing majority shoulder. Factor over Republican gas throw.",  
+            "addressCountry": "Modern camera air include authority player. System speech fire toward. Up until reach player likely.",  
+            "postalCode": "Why kind agree page.",  
+            "postOfficeBoxNumber": "Kind a heavy piece measure wonder least well. Page major material safe without defense feel hold. Father stop friend security allow. Man play degree magazine because."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Necessary section worker once body. They important involve discuss camera. Others statement set power kid mind more."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.blood.pressure"  
+        ]  
+    },  
+    "map": {  
+        "type": "Property",  
+        "value": 207.0  
+    },  
+    "units": {  
+        "type": "Property",  
+        "value": "mmHg"  
+    },  
+    "systolic": {  
+        "type": "Property",  
+        "value": 457.9  
+    },  
+    "diastolic": {  
+        "type": "Property",  
+        "value": 11.4  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            208.9,  
+            583.5  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 1.2  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 933.1  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Before effort technology commercial finally. Effect cell thousand rich. Modern happen less turn common around audience."  
+    },  
+    "type": "BloodPressure",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:BloodPressure:items:VRNO:88271615"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        2.782601,  
-        91.84993  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "New into method treat call. Society often over now before. Radio partner music.",  
-      "addressLocality": "Mind do social find population young. Establish response we talk total. Reveal operation community contain produce likely money.",  
-      "addressRegion": "Executive fast consider law model debate because. Share fine but sing majority shoulder. Factor over Republican gas throw.",  
-      "addressCountry": "Modern camera air include authority player. System speech fire toward. Up until reach player likely.",  
-      "postalCode": "Why kind agree page.",  
-      "postOfficeBoxNumber": "Kind a heavy piece measure wonder least well. Page major material safe without defense feel hold. Father stop friend security allow. Man play degree magazine because."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Necessary section worker once body. They important involve discuss camera. Others statement set power kid mind more."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.blood.pressure"  
-    ]  
-  },  
-  "map": {  
-    "type": "Property",  
-    "value": 207.0  
-  },  
-  "units": {  
-    "type": "Property",  
-    "value": "mmHg"  
-  },  
-  "systolic": {  
-    "type": "Property",  
-    "value": 457.9  
-  },  
-  "diastolic": {  
-    "type": "Property",  
-    "value": 11.4  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      208.9,  
-      583.5  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 1.2  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 933.1  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Before effort technology commercial finally. Effect cell thousand rich. Modern happen less turn common around audience."  
-  },  
-  "type": "BloodPressure",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
