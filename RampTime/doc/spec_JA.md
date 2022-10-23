@@ -1,23 +1,36 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 エンティティRampTime  
-==============  
+==============<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/RampTime/LICENSE.md)  
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**ramptime はミリ秒[ms]単位で指定し、省略時は最大 100ms。  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルに記述する。**ramptime はミリ秒[ms]単位で指定し、省略時は最大 100ms。  
 バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `id`: エンティティの一意な識別子  - `if`: このResourceがサポートするOCF Interfaceセット。  - `location`: 項目へのGeojson参照。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `n`: リソースのフレンドリ名  - `name`: このアイテムの名称です。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `precision`: precision'の値が公開されると、ResourceのPropertiesに対して+/-の許容範囲を提供します。したがって、あるプロパティがある値にUPDATEされ、そのプロパティがRETRIEVEDされた場合、RETRIEVEDされた値は設定された値+/-精度の範囲内であれば有効である。  - `rampTime`: 2つの調光値の間を実際に変化させる速度。  - `range`: リソース内のプロパティの有効範囲を整数で表したもの。配列の最初の値が最小値、2 番目の値が最大値となります。  - `rt`: リソースタイプです。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで指定する文字の列。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `step`: 範囲が整数の場合、定義された範囲に渡るステップ値。  つまり、範囲が0〜10でステップが2の場合、有効な値は0,2,4,6,8,10である。  - `type`: NGSIエンティティタイプ。RampTimeでなければならない。    
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `if[array]`: このResourceがサポートするOCF Interfaceセット。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `n[string]`: リソースのフレンドリ名  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `precision[number]`: 公開されるとき、'precision'の値は、ResourceのPropertyに対して+/-の許容範囲を提供する。したがって、あるプロパティがある値にUPDATEされ、そのプロパティがRETRIEVEDされた場合、RETRIEVEDされた値は設定された値+/-精度の範囲内であれば有効である。  - `rampTime[integer]`: 2つの調光値の間を実際に変化させる速度。  - `range[array]`: Resource に含まれる Property の有効範囲を表す整数値。配列の最初の値が最小値、2 番目の値が最大値となります。  - `rt[array]`: リソースタイプです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `step[integer]`: 範囲が整数の場合、定義された範囲に渡るステップ値。  つまり、範囲が0〜10でステップが2の場合、有効な値は0,2,4,6,8,10である。  - `type[string]`: NGSIエンティティタイプ。RampTimeでなければならない。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 必要なプロパティ  
-- `id`  - `rampTime`  - `type`    
+- `id`  - `rampTime`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 データモデルは、Open Connectivity Foundationが作成したオリジナルを引用しています。https://github.com/openconnectivityfoundation/IoTDataModels のオリジナルリポジトリ  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
 アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 RampTime:    
-  description: 'This Resource that describes the ramp time of a dimming function.It specifies the actual speed of changing between 2 dimming values.The Property "ramptime" is specified in milliseconds [ms].When range is omitted the maximum value is 100 ms.The ramp time of 0ms indicates the minimal delay possible by the implementation.'    
+  description: 'This Resource that describes the ramp time of a dimming function.It specifies the actual speed of changing between 2 dimming values.The Property ''ramptime'' is specified in milliseconds [ms].When range is omitted the maximum value is 100 ms.The ramp time of 0ms indicates the minimal delay possible by the implementation.'    
   properties:    
     address:    
       description: 'The mailing address'    
@@ -353,9 +366,14 @@ RampTime:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### RampTime NGSI-v2 key-value 例  
-RampTimeをJSON-LD形式でkey-valueとした例です。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返す。  
+#### RampTime NGSI-v2 key-value の例  
+ここでは、RampTimeをJSON-LD形式でkey-valuesとした例を示す。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:RampTime:id:ZHJF:61229976",  
@@ -418,8 +436,10 @@ RampTime:
   "type": "RampTime"  
 }  
 ```  
+</details>  
 #### RampTime NGSI-v2 正規化例  
-以下は、RampTimeをJSON-LD形式で正規化した例である。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、RampTimeを正規化したJSON-LD形式の例である。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -547,190 +567,204 @@ RampTime:
   }  
 }  
 ```  
+</details>  
 #### RampTime NGSI-LD key-value 例  
-RampTimeをJSON-LD形式でkey-valueとした例です。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+ここでは、RampTimeをJSON-LD形式でkey-valuesとした例を示す。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:RampTime:id:ZHJF:61229976",  
-  "dateCreated": "2013-01-02T18:46:37Z",  
-  "dateModified": "1985-03-11T15:55:10Z",  
-  "source": "Since court baby. Nature alone dinner major break organization listen.",  
-  "name": "Industry officer member our. Research similar call exist way by teach. Natural understand organization ever create.",  
-  "alternateName": "Vote part free over long. Herself room piece save property democratic. Very experience evening play speech record.",  
-  "description": "Operation senior cold edge detail leg. Above theory eye administration economy third. Share personal ready reduce remain through owner.",  
-  "dataProvider": "He state score. Throw describe then seem federal someone.",  
-  "owner": [  
-    "urn:ngsi-ld:RampTime:items:TGKY:57138477",  
-    "urn:ngsi-ld:RampTime:items:QSGQ:84806884"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:RampTime:items:RCKL:49386497",  
-    "urn:ngsi-ld:RampTime:items:MEBB:04213405"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      59.1823935,  
-      169.242295  
+    "id": "urn:ngsi-ld:RampTime:id:ZHJF:61229976",  
+    "dateCreated": "2013-01-02T18:46:37Z",  
+    "dateModified": "1985-03-11T15:55:10Z",  
+    "source": "Since court baby. Nature alone dinner major break organization listen.",  
+    "name": "Industry officer member our. Research similar call exist way by teach. Natural understand organization ever create.",  
+    "alternateName": "Vote part free over long. Herself room piece save property democratic. Very experience evening play speech record.",  
+    "description": "Operation senior cold edge detail leg. Above theory eye administration economy third. Share personal ready reduce remain through owner.",  
+    "dataProvider": "He state score. Throw describe then seem federal someone.",  
+    "owner": [  
+        "urn:ngsi-ld:RampTime:items:TGKY:57138477",  
+        "urn:ngsi-ld:RampTime:items:QSGQ:84806884"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:RampTime:items:RCKL:49386497",  
+        "urn:ngsi-ld:RampTime:items:MEBB:04213405"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            59.1823935,  
+            169.242295  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Memory happen condition cold director you dream. Current financial care. Believe we report rest sport indicate sure.",  
+        "addressLocality": "Cold culture audience leave question continue office many. Walk note rich generation clearly drive to source.",  
+        "addressRegion": "Best meeting public whom us rather. Create citizen get civil local reveal my.",  
+        "addressCountry": "Find actually available safe. Pressure many chair must.",  
+        "postalCode": "Leave expect where particularly sometimes. Treatment official report make technology production.",  
+        "postOfficeBoxNumber": "Describe boy look yeah particular knowledge. Process else threat."  
+    },  
+    "areaServed": "Beautiful successful perform each democratic walk bill. Offer laugh just anyone far. Feel hope likely say into enter explain century.",  
+    "rt": [  
+        "oic.r.light.ramptime",  
+        "oic.r.light.ramptime"  
+    ],  
+    "rampTime": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "n": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair.",  
+    "range": [  
+        864,  
+        864  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 24.0  
+    },  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.baseline"  
+    ],  
+    "type": "RampTime",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Memory happen condition cold director you dream. Current financial care. Believe we report rest sport indicate sure.",  
-    "addressLocality": "Cold culture audience leave question continue office many. Walk note rich generation clearly drive to source.",  
-    "addressRegion": "Best meeting public whom us rather. Create citizen get civil local reveal my.",  
-    "addressCountry": "Find actually available safe. Pressure many chair must.",  
-    "postalCode": "Leave expect where particularly sometimes. Treatment official report make technology production.",  
-    "postOfficeBoxNumber": "Describe boy look yeah particular knowledge. Process else threat."  
-  },  
-  "areaServed": "Beautiful successful perform each democratic walk bill. Offer laugh just anyone far. Feel hope likely say into enter explain century.",  
-  "rt": [  
-    "oic.r.light.ramptime",  
-    "oic.r.light.ramptime"  
-  ],  
-  "rampTime": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "n": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair.",  
-  "range": [  
-    864,  
-    864  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 24.0  
-  },  
-  "if": [  
-    "oic.if.baseline",  
-    "oic.if.baseline"  
-  ],  
-  "type": "RampTime",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### RampTime NGSI-LD 正規化例  
-以下は、RampTimeをJSON-LD形式で正規化した例である。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+RampTimeをJSON-LD形式で正規化した例です。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:RampTime:id:FFSR:90520934",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2018-03-18T03:19:11Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1993-01-25T21:55:52Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Three sound resource. Parent parent base including task like drive."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Almost identify bring imagine. Notice important party step old."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Here most data certainly strategy. Carry act process anyone foreign sell society. Especially summer appear. Better allow car administration."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Reduce process issue party clearly anything. Career condition opportunity general. Experience around manage room spend throw although few."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Official culture indicate position. Cover leader medical law catch western."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:RampTime:items:OMMO:16943723",  
-      "urn:ngsi-ld:RampTime:items:NTJI:24099913"  
+    "id": "urn:ngsi-ld:RampTime:id:FFSR:90520934",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2018-03-18T03:19:11Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1993-01-25T21:55:52Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Three sound resource. Parent parent base including task like drive."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Almost identify bring imagine. Notice important party step old."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Here most data certainly strategy. Carry act process anyone foreign sell society. Especially summer appear. Better allow car administration."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Reduce process issue party clearly anything. Career condition opportunity general. Experience around manage room spend throw although few."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Official culture indicate position. Cover leader medical law catch western."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:RampTime:items:OMMO:16943723",  
+            "urn:ngsi-ld:RampTime:items:NTJI:24099913"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:RampTime:items:EKVY:98458166"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -5.345031,  
+                86.253962  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Her our teach something edge seem. Event life respond including beyond huge. Job reflect go former level ready.",  
+            "addressLocality": "Picture professional central east computer PM executive.",  
+            "addressRegion": "Single current both pattern which list. Moment author subject lot.",  
+            "addressCountry": "Attack form former training. Win reduce history international. Site body study where. Report indicate until box former never whether.",  
+            "postalCode": "Program police whatever must. Fine place opportunity nation.",  
+            "postOfficeBoxNumber": "Tv assume much. Return reveal force myself."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Address career trial statement. Subject president sense."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.light.ramptime"  
+        ]  
+    },  
+    "rampTime": {  
+        "type": "Property",  
+        "value": 932  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "World practice town politics cost there physical out."  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            694,  
+            895  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 850  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 772.7  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.a",  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "RampTime",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:RampTime:items:EKVY:98458166"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -5.345031,  
-        86.253962  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Her our teach something edge seem. Event life respond including beyond huge. Job reflect go former level ready.",  
-      "addressLocality": "Picture professional central east computer PM executive.",  
-      "addressRegion": "Single current both pattern which list. Moment author subject lot.",  
-      "addressCountry": "Attack form former training. Win reduce history international. Site body study where. Report indicate until box former never whether.",  
-      "postalCode": "Program police whatever must. Fine place opportunity nation.",  
-      "postOfficeBoxNumber": "Tv assume much. Return reveal force myself."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Address career trial statement. Subject president sense."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.light.ramptime"  
-    ]  
-  },  
-  "rampTime": {  
-    "type": "Property",  
-    "value": 932  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "World practice town politics cost there physical out."  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      694,  
-      895  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 850  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 772.7  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.a",  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "type": "RampTime",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
