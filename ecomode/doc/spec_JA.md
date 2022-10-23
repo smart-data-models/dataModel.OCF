@@ -1,17 +1,32 @@
-事業体：エコモード  
-=========  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティ：エコモデ  
+===========<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/ecomode/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな説明です。**IoTDataデータモデルをスマートデータモデルプログラムに適合させたものである。このリソースは、デバイスのサポートされているエコモードを指定します。このリソースは、モードリソース(oic.r.mode)から派生したもので、サポートされているモードとモードプロパティの母集団が、値のセットに制限されているという制限があります。サポートされているモードとモードのプロパティは、「disabled」、「enabled」、「notsupported」という値に制限されています。adminforcedプロパティは、その値が他者によって設定されたものであることを示します（例えば、オフボードのスマートエナジーとのやりとりを通じて）。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**IoTData データモデルをスマートデータモデルプログラムに適応させたものである。この Resource は、Mode Resource (oic.r.mode) の派生型であり、supportedmodes と modes Properties の数が一連の値に制限されている。disabled'、'enabled'、'notsupported' の 3 つの値からなる。adminforced プロパティは、その値が他の者によって設定されたことを示す（例：オフボードスマートエナジーとの対話を通じて）***。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `adminforced`: 現在の動作モードが管理者の操作によって強制的に変更されたことを示すインジケータです。  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `if`: このResourceがサポートしているOCF Interface set。  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `modes`: 現在アクティブなモードの配列です。  - `n`: リソースのフレンドリーネーム  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `rt`: The Resource Type。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `supportedModes`: デバイスがサポートする可能なモードの配列です。  - `type`: NGSIエンティティタイプ。ecomodeである必要があります。    
-必須項目  
-- `id`  - `type`    
-このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)から来ています。NGSIの要件に適合するように拡張されています。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `adminforced[boolean]`: 現在の動作モードが管理者の操作により強制されたことを示す表示。  - `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `if[array]`: このResourceがサポートするOCF Interfaceセット。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `modes[array]`: 現在アクティブなモード（複数可）の配列。  - `n[string]`: リソースのフレンドリ名  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `rt[array]`: リソースタイプです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `supportedModes[array]`: デバイスがサポートする可能なモードの配列。  - `type[string]`: NGSIエンティティタイプ。ecomodeである必要があります。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)に由来しています。NGSIの要件に適合するように拡張されている。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ecomode:    
@@ -353,9 +368,14 @@ ecomode:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### ecomode NGSI-v2 key-values の例。  
-key-valuesとしてJSON-LD形式のecomodeの例を示します。これは`options=keyValues`を使うとNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返すことができます。  
+#### ecomode NGSI-v2 key-value 例．  
+ここでは、ecomodeをJSON-LD形式でkey-valuesとして表現した例を示す。これは `options=keyValues` を使用した場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:ecomode:id:XTKS:41735897",  
@@ -392,8 +412,10 @@ ecomode:
   "areaServed": "Build type series executive technology whole situation for. Series natural religious enjoy oil. Beat eat arrive ever."  
 }  
 ```  
+</details>  
 #### ecomode NGSI-v2 正規化例  
-正規化されたJSON-LD形式のecomodeの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+JSON-LD 形式で正規化された ecomode の例を示す。これはオプションを使用しない場合，NGSI-v2と互換性があり，個々のエンティティのコンテキストデータを返す。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -471,127 +493,141 @@ ecomode:
   }  
 }  
 ```  
-#### ecomode NGSI-LDのキーバリューの例  
-JSON-LD形式でkey-valuesとしてecomodeを表現した例を紹介します。これは`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### ecomode NGSI-LD キー値例  
+ここでは、ecomodeをJSON-LD形式でkey-valuesにした例を示します。これは `options=keyValues` を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:ecomode:id:XTKS:41735897",  
-  "dateCreated": "1984-05-09T22:46:30Z",  
-  "dateModified": "2005-12-26T00:05:52Z",  
-  "source": "Pick five government out several. Onto care door future.",  
-  "name": "Source bed up these. Focus allow act rather cover what. Body rock product history management.",  
-  "alternateName": "Dark wrong could thank yard. Before think major necessary police responsibility himself think. Would sit avoid floor relationship suffer thousand modern.",  
-  "description": "Morning financial law compare paper. Two find model tough remember war. Business identify particularly claim.",  
-  "dataProvider": "Wish church to event in line. Ever career sound her from figure.",  
-  "owner": [  
-    "urn:ngsi-ld:ecomode:items:VUPI:33448029",  
-    "urn:ngsi-ld:ecomode:items:JAMY:20507933"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:ecomode:items:NYJQ:21494614",  
-    "urn:ngsi-ld:ecomode:items:MKLF:57041922"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -44.6641115,  
-      141.353721  
+    "id": "urn:ngsi-ld:ecomode:id:XTKS:41735897",  
+    "dateCreated": "1984-05-09T22:46:30Z",  
+    "dateModified": "2005-12-26T00:05:52Z",  
+    "source": "Pick five government out several. Onto care door future.",  
+    "name": "Source bed up these. Focus allow act rather cover what. Body rock product history management.",  
+    "alternateName": "Dark wrong could thank yard. Before think major necessary police responsibility himself think. Would sit avoid floor relationship suffer thousand modern.",  
+    "description": "Morning financial law compare paper. Two find model tough remember war. Business identify particularly claim.",  
+    "dataProvider": "Wish church to event in line. Ever career sound her from figure.",  
+    "owner": [  
+        "urn:ngsi-ld:ecomode:items:VUPI:33448029",  
+        "urn:ngsi-ld:ecomode:items:JAMY:20507933"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:ecomode:items:NYJQ:21494614",  
+        "urn:ngsi-ld:ecomode:items:MKLF:57041922"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -44.6641115,  
+            141.353721  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Name husband local positive hear past open. Pay dream recently card never.",  
+        "addressLocality": "Arm should bar western beautiful. Continue affect Republican attention level on.",  
+        "addressRegion": "Thousand yes beautiful work national key born. Cut stage believe town enough gas past. Scene peace six factor happy those blood condition. Dream police somebody fill.",  
+        "addressCountry": "Somebody drug cup green stand. Upon finish outside agent.",  
+        "postalCode": "Season ten movie different drug. Thus these picture seat.",  
+        "postOfficeBoxNumber": "Special who big movement. Entire could page item decade consumer lawyer kitchen."  
+    },  
+    "areaServed": "Build type series executive technology whole situation for. Series natural religious enjoy oil. Beat eat arrive ever.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Name husband local positive hear past open. Pay dream recently card never.",  
-    "addressLocality": "Arm should bar western beautiful. Continue affect Republican attention level on.",  
-    "addressRegion": "Thousand yes beautiful work national key born. Cut stage believe town enough gas past. Scene peace six factor happy those blood condition. Dream police somebody fill.",  
-    "addressCountry": "Somebody drug cup green stand. Upon finish outside agent.",  
-    "postalCode": "Season ten movie different drug. Thus these picture seat.",  
-    "postOfficeBoxNumber": "Special who big movement. Entire could page item decade consumer lawyer kitchen."  
-  },  
-  "areaServed": "Build type series executive technology whole situation for. Series natural religious enjoy oil. Beat eat arrive ever.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### ecomode NGSI-LD 正規化例  
-ここでは、JSON-LD形式のecomodeを正規化した例を示します。これはオプションを使わない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+JSON-LD 形式で正規化された ecomode の例を示す。これはオプションを使用しない場合のNGSI-LDと互換性があり，個々のエンティティのコンテキストデータを返します．  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:ecomode:id:GJVA:13699863",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1994-11-01T22:23:55Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2006-05-08T02:19:52Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Color attorney late customer enjoy. Wait think range before. Water save good well city might."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Energy happen through difficult sense arm edge. Understand street tree notice dog scene."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Enjoy soon son recognize wear site energy. Reality no government allow open easy me."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Throughout government half somebody piece keep better agent. Eat else society region century affect."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Each financial cut maintain. Sign until yourself son act teach particular."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:ecomode:items:TLNB:35212256",  
-      "urn:ngsi-ld:ecomode:items:JTVR:32851398"  
+    "id": "urn:ngsi-ld:ecomode:id:GJVA:13699863",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1994-11-01T22:23:55Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2006-05-08T02:19:52Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Color attorney late customer enjoy. Wait think range before. Water save good well city might."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Energy happen through difficult sense arm edge. Understand street tree notice dog scene."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Enjoy soon son recognize wear site energy. Reality no government allow open easy me."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Throughout government half somebody piece keep better agent. Eat else society region century affect."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Each financial cut maintain. Sign until yourself son act teach particular."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:ecomode:items:TLNB:35212256",  
+            "urn:ngsi-ld:ecomode:items:JTVR:32851398"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:ecomode:items:QBWQ:99867251"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -78.420297,  
+                -10.920941  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Build myself health. Let generation movie. Safe interest popular buy.",  
+            "addressLocality": "Apply idea buy. Like simply point staff each nor member. Nature prevent religious share set fine the.",  
+            "addressRegion": "Senior method leader. Research prepare health style. Out might simple interesting marriage space present wall.",  
+            "addressCountry": "Result station draw return education professor tend practice. Agency offer sure thus. Visit safe wonder traditional. Name where rate.",  
+            "postalCode": "Talk political position anyone building despite. Long candidate stuff away.",  
+            "postOfficeBoxNumber": "Congress audience then throw treat here president. Reality situation enter though we high past under. Green outside easy process various or."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Political night prove along sure coach. Way system another up herself. Idea high standard make. Short whom sister wait this."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:ecomode:items:QBWQ:99867251"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -78.420297,  
-        -10.920941  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Build myself health. Let generation movie. Safe interest popular buy.",  
-      "addressLocality": "Apply idea buy. Like simply point staff each nor member. Nature prevent religious share set fine the.",  
-      "addressRegion": "Senior method leader. Research prepare health style. Out might simple interesting marriage space present wall.",  
-      "addressCountry": "Result station draw return education professor tend practice. Agency offer sure thus. Visit safe wonder traditional. Name where rate.",  
-      "postalCode": "Talk political position anyone building despite. Long candidate stuff away.",  
-      "postOfficeBoxNumber": "Congress audience then throw treat here president. Reality situation enter though we high past under. Green outside easy process various or."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Political night prove along sure coach. Way system another up herself. Idea high standard make. Short whom sister wait this."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
