@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 エンティティPulseRate  
-===============  
+===============<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/PulseRate/LICENSE.md)  
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**pulserate と unit Properties は、サーバーから提供される読み取り専用の値である。  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Global description:**pulserate と unit Properties は、サーバーから提供される読み取り専用の値である。  
 バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `id`: エンティティの一意な識別子  - `if`: このリソースがサポートする OCF インタフェースセット。  - `location`: アイテムへのGeojsonリファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `n`: リソースのフレンドリ名  - `name`: このアイテムの名称です。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `pulserate`: 脈拍数（bpm）。  - `range`: リソース内のプロパティの有効範囲を整数で表したもの。配列の最初の値が最小値、2 番目の値が最大値となります。  - `rt`: リソースの種類  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで指定する文字の列。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `step`: 範囲が整数の場合、定義された範囲に渡るステップ値。  つまり、範囲が0〜10でステップが2の場合、有効な値は0,2,4,6,8,10である。  - `type`: NGSIエンティティタイプ。PulseRateでなければならない。    
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `if[array]`: このリソースがサポートする OCF インタフェースセット。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `n[string]`: リソースのフレンドリ名  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリスト  - `pulserate[integer]`: 脈拍数（bpm）。  - `range[array]`: Resource に含まれる Property の有効範囲を表す整数値。配列の最初の値が最小値、2 番目の値が最大値となります。  - `rt[array]`: リソースの種類  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `step[integer]`: 範囲が整数の場合、定義された範囲に渡るステップ値。  つまり、範囲が0〜10でステップが2の場合、有効な値は0,2,4,6,8,10である。  - `type[string]`: NGSIエンティティタイプ。PulseRateでなければならない。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 必要なプロパティ  
-- `id`  - `pulserate`  - `type`    
+- `id`  - `pulserate`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 データモデルは、Open Connectivity Foundationが作成したオリジナルを引用しています。https://github.com/openconnectivityfoundation/IoTDataModels のオリジナルリポジトリ  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
 アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 PulseRate:    
@@ -350,9 +363,14 @@ PulseRate:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### PulseRate NGSI-v2 key-value 例  
-PulseRateをJSON-LD形式でkey-valueにした例です。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### PulseRate NGSI-v2 key-value の例  
+以下は、PulseRateをJSON-LD形式でkey-valuesにした例である。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:PulseRate:id:NUJB:58758354",  
@@ -411,8 +429,10 @@ PulseRate:
   "type": "PulseRate"  
 }  
 ```  
+</details>  
 #### PulseRate NGSI-v2 正規化例  
 以下は、PulseRateをJSON-LD形式で正規化した例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -533,181 +553,195 @@ PulseRate:
   }  
 }  
 ```  
+</details>  
 #### PulseRate NGSI-LD キー値例  
-PulseRateをJSON-LD形式でkey-valueにした例です。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+ここでは、PulseRateをJSON-LD形式でkey-valuesにした例を示す。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:PulseRate:id:NUJB:58758354",  
-  "dateCreated": "1971-10-24T12:34:23Z",  
-  "dateModified": "1987-09-14T19:28:34Z",  
-  "source": "Sometimes with at we prevent Congress. Simply career occur race born program adult. Page behind response ready.",  
-  "name": "Customer likely my teach American turn address. Consumer message still moment. Early discover themselves professor car argue material.",  
-  "alternateName": "There there these whether brother. Dark Mrs avoid actually still. Government two check democratic suffer appear.",  
-  "description": "Itself necessary economic way issue. Certainly four financial soon reveal world social.",  
-  "dataProvider": "National here matter probably window such. Road model against candidate baby.",  
-  "owner": [  
-    "urn:ngsi-ld:PulseRate:items:KBKK:08734295",  
-    "urn:ngsi-ld:PulseRate:items:NCCB:30294375"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:PulseRate:items:MPUF:87206651",  
-    "urn:ngsi-ld:PulseRate:items:NDCP:58802805"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -78.467846,  
-      -21.346787  
+    "id": "urn:ngsi-ld:PulseRate:id:NUJB:58758354",  
+    "dateCreated": "1971-10-24T12:34:23Z",  
+    "dateModified": "1987-09-14T19:28:34Z",  
+    "source": "Sometimes with at we prevent Congress. Simply career occur race born program adult. Page behind response ready.",  
+    "name": "Customer likely my teach American turn address. Consumer message still moment. Early discover themselves professor car argue material.",  
+    "alternateName": "There there these whether brother. Dark Mrs avoid actually still. Government two check democratic suffer appear.",  
+    "description": "Itself necessary economic way issue. Certainly four financial soon reveal world social.",  
+    "dataProvider": "National here matter probably window such. Road model against candidate baby.",  
+    "owner": [  
+        "urn:ngsi-ld:PulseRate:items:KBKK:08734295",  
+        "urn:ngsi-ld:PulseRate:items:NCCB:30294375"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:PulseRate:items:MPUF:87206651",  
+        "urn:ngsi-ld:PulseRate:items:NDCP:58802805"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -78.467846,  
+            -21.346787  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Near stage reach hear throughout. Within onto later reason.",  
+        "addressLocality": "Open against trouble study. Possible compare describe foot although. Bill nor word evening despite. Property there lead worry.",  
+        "addressRegion": "Sit data recently future decide operation. Five check green hard make million chair.",  
+        "addressCountry": "Relate political low around weight collection city. However move sound.",  
+        "postalCode": "Against author heart kitchen fire door. Require game staff interest. Nearly executive small trip relationship.",  
+        "postOfficeBoxNumber": "Few fill agent behavior drug hit. All treat why subject now according number."  
+    },  
+    "areaServed": "Late notice skill field. Morning yard we in.",  
+    "rt": [  
+        "oic.r.pulserate",  
+        "oic.r.pulserate"  
+    ],  
+    "pulserate": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "if": [  
+        "oic.if.s",  
+        "oic.if.baseline"  
+    ],  
+    "range": [  
+        864,  
+        864  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "n": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair.",  
+    "type": "PulseRate",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Near stage reach hear throughout. Within onto later reason.",  
-    "addressLocality": "Open against trouble study. Possible compare describe foot although. Bill nor word evening despite. Property there lead worry.",  
-    "addressRegion": "Sit data recently future decide operation. Five check green hard make million chair.",  
-    "addressCountry": "Relate political low around weight collection city. However move sound.",  
-    "postalCode": "Against author heart kitchen fire door. Require game staff interest. Nearly executive small trip relationship.",  
-    "postOfficeBoxNumber": "Few fill agent behavior drug hit. All treat why subject now according number."  
-  },  
-  "areaServed": "Late notice skill field. Morning yard we in.",  
-  "rt": [  
-    "oic.r.pulserate",  
-    "oic.r.pulserate"  
-  ],  
-  "pulserate": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "if": [  
-    "oic.if.s",  
-    "oic.if.baseline"  
-  ],  
-  "range": [  
-    864,  
-    864  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "n": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair.",  
-  "type": "PulseRate",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### PulseRate NGSI-LD 正規化例  
-以下は、PulseRateをJSON-LD形式で正規化した例である。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、PulseRateを正規化したJSON-LD形式の例である。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:PulseRate:id:CAKY:60522977",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2018-07-25T21:58:49Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2012-07-03T10:51:09Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Begin common friend job agreement billion. Employee several guy. Example yard kid attorney know hundred doctor."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Write son could city his. Other part more late. One threat material least assume into."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Task not later gun unit off. Late home inside car pretty shake. Population edge let wonder dark standard. My might plan."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Worker yeah reflect. Describe plant coach save similar."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Audience blood art window."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:PulseRate:items:CCUR:33782771",  
-      "urn:ngsi-ld:PulseRate:items:CXUS:74878184"  
+    "id": "urn:ngsi-ld:PulseRate:id:CAKY:60522977",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2018-07-25T21:58:49Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2012-07-03T10:51:09Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Begin common friend job agreement billion. Employee several guy. Example yard kid attorney know hundred doctor."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Write son could city his. Other part more late. One threat material least assume into."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Task not later gun unit off. Late home inside car pretty shake. Population edge let wonder dark standard. My might plan."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Worker yeah reflect. Describe plant coach save similar."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Audience blood art window."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:PulseRate:items:CCUR:33782771",  
+            "urn:ngsi-ld:PulseRate:items:CXUS:74878184"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:PulseRate:items:FPJW:35681671"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                89.796559,  
+                146.512788  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Election else quite show cause mean south five. Information necessary report probably and positive up.",  
+            "addressLocality": "Interest direction history party. Cost whether guess remember. Cup involve sort according positive population movie respond.",  
+            "addressRegion": "Cut cup about than require their near eat. Gas everyone training car we find treat. Old quality many anything mean.",  
+            "addressCountry": "Deal local although remain. Way similar peace significant name center.",  
+            "postalCode": "Just score parent main after. Republican create imagine else scene.",  
+            "postOfficeBoxNumber": "Kind thing safe order. Pull whatever success state nature girl star same."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Attack agent focus reason vote require. Almost sure movement hold pass before."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.pulserate"  
+        ]  
+    },  
+    "pulserate": {  
+        "type": "Property",  
+        "value": 700  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.s"  
+        ]  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            152,  
+            528  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 872  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Reduce bill read politics identify also such. Score direction leave chance assume."  
+    },  
+    "type": "PulseRate",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:PulseRate:items:FPJW:35681671"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        89.796559,  
-        146.512788  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Election else quite show cause mean south five. Information necessary report probably and positive up.",  
-      "addressLocality": "Interest direction history party. Cost whether guess remember. Cup involve sort according positive population movie respond.",  
-      "addressRegion": "Cut cup about than require their near eat. Gas everyone training car we find treat. Old quality many anything mean.",  
-      "addressCountry": "Deal local although remain. Way similar peace significant name center.",  
-      "postalCode": "Just score parent main after. Republican create imagine else scene.",  
-      "postOfficeBoxNumber": "Kind thing safe order. Pull whatever success state nature girl star same."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Attack agent focus reason vote require. Almost sure movement hold pass before."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.pulserate"  
-    ]  
-  },  
-  "pulserate": {  
-    "type": "Property",  
-    "value": 700  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.s"  
-    ]  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      152,  
-      528  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 872  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Reduce bill read politics identify also such. Score direction leave chance assume."  
-  },  
-  "type": "PulseRate",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
