@@ -1,17 +1,32 @@
-エンティティSignalStrength  
-====================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティSignalStrength  
+====================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/SignalStrength/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな説明です。**IoTDataのデータモデルをスマートデータモデルに変換したものです。このResourceは、lqiとrssiによって信号の強さを記述する。lqiはLink Quality Indicatorを表す浮動小数点数である。プロパティ「rssi」は、受信信号強度インジケータを表す浮動小数点数である。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**IoTData のデータモデルをスマートデータモデルプログラムに適応させたものである。この Resource は、lqi と rssi によって信号の強さを記述する。Property 'lqi' は Link Quality Indicator を表す浮動小数点数である。プロパティ 'rssi' は、受信信号強度インジケータを表す浮動小数点数である**。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `if`: このResourceがサポートしているOCF Interface set。  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `lqi`: Link Quality Indicatorの現在の値です。  - `n`: リソースのフレンドリーネーム  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `rssi`: 受信信号強度インジケータの現在の値。  - `rt`: The Resource Type。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSIエンティティタイプ。SignalStrengthである必要があります。    
-必須項目  
-- `id`  - `type`    
-このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)から来ています。NGSIの要件に適合するように拡張されています。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `if[array]`: このResourceがサポートするOCF Interfaceセット。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `lqi[number]`: Link Quality Indicatorの現在値。  - `n[string]`: リソースのフレンドリ名  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `rssi[number]`: Received Signal Strength Indicator の現在の値。  - `rt[array]`: リソースタイプです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSIエンティティタイプ。SignalStrengthでなければならない。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)に由来しています。NGSIの要件に適合するように拡張されている。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 SignalStrength:    
@@ -335,9 +350,14 @@ SignalStrength:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### SignalStrength NGSI-v2 key-values 例  
-SignalStrengthをkey-valuesとしてJSON-LD形式で表現した例を示します。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### SignalStrength NGSI-v2 key-value 例．  
+SignalStrengthをJSON-LD形式でkey-valuesとした例である。これは `options=keyValues` を使用した場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:SignalStrength:id:LYPG:67131944",  
@@ -374,8 +394,10 @@ SignalStrength:
   "areaServed": "Trial idea daughter American mention. Cold level sport charge."  
 }  
 ```  
-#### SignalStrength NGSI-v2の正規化例  
-JSON-LD形式で正規化されたSignalStrengthの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### SignalStrength NGSI-v2 正規化例  
+SignalStrengthをJSON-LD形式で正規化した例です。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -453,127 +475,141 @@ SignalStrength:
   }  
 }  
 ```  
-#### SignalStrength NGSI-LDのキーバリューの例。  
-SignalStrengthをkey-valuesとしてJSON-LD形式で表現した例です。これは`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### SignalStrength NGSI-LD キー値例  
+SignalStrengthをJSON-LD形式でkey-valuesにした例です。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:SignalStrength:id:LYPG:67131944",  
-  "dateCreated": "1979-04-01T08:20:09Z",  
-  "dateModified": "1972-04-08T19:10:46Z",  
-  "source": "Him financial boy top shoulder among building. Special easy against myself.",  
-  "name": "Issue tax executive edge risk event human. Physical science treat give put check.",  
-  "alternateName": "About tax century late control focus law son. Smile movie recent after partner everything popular model. Feeling building center blue free recent.",  
-  "description": "Fight bag listen police. Dog baby finally movement pressure almost.",  
-  "dataProvider": "Option price contain nice. Pattern find data fear. Husband ball same play.",  
-  "owner": [  
-    "urn:ngsi-ld:SignalStrength:items:UUTV:05597043",  
-    "urn:ngsi-ld:SignalStrength:items:HPGS:58277001"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:SignalStrength:items:DHAC:60343846",  
-    "urn:ngsi-ld:SignalStrength:items:SKJT:28033772"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      48.4533765,  
-      -149.18009  
+    "id": "urn:ngsi-ld:SignalStrength:id:LYPG:67131944",  
+    "dateCreated": "1979-04-01T08:20:09Z",  
+    "dateModified": "1972-04-08T19:10:46Z",  
+    "source": "Him financial boy top shoulder among building. Special easy against myself.",  
+    "name": "Issue tax executive edge risk event human. Physical science treat give put check.",  
+    "alternateName": "About tax century late control focus law son. Smile movie recent after partner everything popular model. Feeling building center blue free recent.",  
+    "description": "Fight bag listen police. Dog baby finally movement pressure almost.",  
+    "dataProvider": "Option price contain nice. Pattern find data fear. Husband ball same play.",  
+    "owner": [  
+        "urn:ngsi-ld:SignalStrength:items:UUTV:05597043",  
+        "urn:ngsi-ld:SignalStrength:items:HPGS:58277001"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:SignalStrength:items:DHAC:60343846",  
+        "urn:ngsi-ld:SignalStrength:items:SKJT:28033772"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            48.4533765,  
+            -149.18009  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Respond network protect financial produce across. Should call direction protect employee. Including wind indeed.",  
+        "addressLocality": "Type people those create apply share trip about. Management national another pattern age consumer follow over.",  
+        "addressRegion": "Late site worry north suggest play yard result. Will peace Congress resource level require. Character chair within close.",  
+        "addressCountry": "Southern decision food sound. Along take kid assume. See simple miss in.",  
+        "postalCode": "Set seem condition yeah fly. Could growth toward mean court two. Situation skill raise big.",  
+        "postOfficeBoxNumber": "Reduce glass what mother tough second. Break key strong partner stock."  
+    },  
+    "areaServed": "Trial idea daughter American mention. Cold level sport charge.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Respond network protect financial produce across. Should call direction protect employee. Including wind indeed.",  
-    "addressLocality": "Type people those create apply share trip about. Management national another pattern age consumer follow over.",  
-    "addressRegion": "Late site worry north suggest play yard result. Will peace Congress resource level require. Character chair within close.",  
-    "addressCountry": "Southern decision food sound. Along take kid assume. See simple miss in.",  
-    "postalCode": "Set seem condition yeah fly. Could growth toward mean court two. Situation skill raise big.",  
-    "postOfficeBoxNumber": "Reduce glass what mother tough second. Break key strong partner stock."  
-  },  
-  "areaServed": "Trial idea daughter American mention. Cold level sport charge.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-#### SignalStrength NGSI-LDの正規化例  
-ここでは、JSON-LD形式のSignalStrengthを正規化した例を示します。これはオプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### SignalStrength NGSI-LD 正規化例  
+SignalStrengthをJSON-LD形式で正規化した例です。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:SignalStrength:id:YHRP:70225814",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1983-05-03T17:46:03Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1993-05-17T17:49:35Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Loss make realize. Meeting walk college student us between car."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Suggest represent feel bad learn save."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Former newspaper group administration artist trouble admit. Hit man improve movement improve whom. Effect however machine arrive although since response."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Position make or service billion left prepare."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Name model at guy machine. Pretty trade discuss cultural fill although focus. Town project power memory produce."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:SignalStrength:items:RLGW:14102075",  
-      "urn:ngsi-ld:SignalStrength:items:PYMB:31937927"  
+    "id": "urn:ngsi-ld:SignalStrength:id:YHRP:70225814",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1983-05-03T17:46:03Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1993-05-17T17:49:35Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Loss make realize. Meeting walk college student us between car."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Suggest represent feel bad learn save."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Former newspaper group administration artist trouble admit. Hit man improve movement improve whom. Effect however machine arrive although since response."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Position make or service billion left prepare."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Name model at guy machine. Pretty trade discuss cultural fill although focus. Town project power memory produce."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:SignalStrength:items:RLGW:14102075",  
+            "urn:ngsi-ld:SignalStrength:items:PYMB:31937927"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:SignalStrength:items:OKGM:14141306"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                29.1792985,  
+                78.286458  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Attorney power ten professor claim.",  
+            "addressLocality": "Concern test arm full ahead star. Majority firm idea similar. Major partner cell man news particular southern.",  
+            "addressRegion": "Meet concern wear nothing. Ten about fish.",  
+            "addressCountry": "Responsibility sure major choice dream movie. North read like available. Deep book blood else deep.",  
+            "postalCode": "Resource born last hope stock network. Ahead town school crime city similar. Rather interest see executive identify especially apply. Likely answer enough low sit high.",  
+            "postOfficeBoxNumber": "Five bag him. It movement decide."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Religious question base accept hair left. Dark vote involve hotel."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:SignalStrength:items:OKGM:14141306"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        29.1792985,  
-        78.286458  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Attorney power ten professor claim.",  
-      "addressLocality": "Concern test arm full ahead star. Majority firm idea similar. Major partner cell man news particular southern.",  
-      "addressRegion": "Meet concern wear nothing. Ten about fish.",  
-      "addressCountry": "Responsibility sure major choice dream movie. North read like available. Deep book blood else deep.",  
-      "postalCode": "Resource born last hope stock network. Ahead town school crime city similar. Rather interest see executive identify especially apply. Likely answer enough low sit high.",  
-      "postOfficeBoxNumber": "Five bag him. It movement decide."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Religious question base accept hair left. Dark vote involve hotel."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
