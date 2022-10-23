@@ -1,15 +1,32 @@
-Entidad: MuscleOxygenSaturation  
-===============================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entidad: MuscleOxygenSaturation  
+===============================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.OCF/blob/master/MuscleOxygenSaturation/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descripción global: **Adaptación del programa de modelos de datos inteligentes de los modelos de datos originales de IoTData. Este recurso describe la saturación de oxígeno del músculo (SmO2), que es el porcentaje de hemoglobina que está saturado de oxígeno en los capilares de un músculo.  La unidad es el porcentaje.  La Propiedad smo2 es un valor de sólo lectura que es proporcionado por el servidor.**  
+versión: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-Propiedades requeridas  
-- `id`  - `type`    
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>  
+- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Una descripción de este artículo  - `id[*]`: Identificador único de la entidad  - `if[array]`: El conjunto de interfaces OCF que admite este recurso.  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `muscleoxygensaturation[number]`: Esta propiedad describe la saturación de oxígeno muscular (SmO2), que es el porcentaje de hemoglobina que está saturado de oxígeno en los capilares de un músculo. La unidad es el porcentaje.  - `n[string]`: Nombre amigable del Recurso  - `name[string]`: El nombre de este artículo.  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `rt[array]`: El tipo de recurso.  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type[string]`: Tipo de entidad NGSI. Tiene que ser MuscleOxygenSaturation  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+Propiedades requeridas  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Este modelo de datos procede del original [repositorio de la Open Connectivity Foundation](https://github.com/openconnectivityfoundation/IoTDataModels). Se ha ampliado para cumplir con los requisitos de la NGSI.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 MuscleOxygenSaturation:    
@@ -328,9 +345,14 @@ MuscleOxygenSaturation:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Ejemplo de carga útil  
 #### MuscleOxygenSaturation NGSI-v2 key-values Ejemplo  
 Aquí hay un ejemplo de MuscleOxygenSaturation en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:MuscleOxygenSaturation:id:MJZI:03017437",  
@@ -367,8 +389,10 @@ MuscleOxygenSaturation:
   "areaServed": "Well memory author they long final position. Door strong rest certainly final."  
 }  
 ```  
+</details>  
 #### MuscleOxygenSaturation NGSI-v2 normalizado Ejemplo  
 Aquí hay un ejemplo de un MuscleOxygenSaturation en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -446,127 +470,141 @@ MuscleOxygenSaturation:
   }  
 }  
 ```  
+</details>  
 #### MuscleOxygenSaturation NGSI-LD key-values Ejemplo  
 Aquí hay un ejemplo de MuscleOxygenSaturation en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:MuscleOxygenSaturation:id:MJZI:03017437",  
-  "dateCreated": "2013-07-10T17:13:30Z",  
-  "dateModified": "2012-11-08T18:30:37Z",  
-  "source": "Worker car play from product become city. Heavy act gas must. Choice former often political at face to hot.",  
-  "name": "Support center item sport. Laugh discover cause herself surface. Author sense certainly cover of beyond.",  
-  "alternateName": "Something goal decision nearly dark. House consumer like will necessary seat place note. Marriage hour free special everybody agreement me.",  
-  "description": "Choose often single onto game smile right off. Together up fast he already maintain lawyer.",  
-  "dataProvider": "Responsibility population a paper base material certain. Tough item offer road condition nice. Generation however trip car interesting south me leg.",  
-  "owner": [  
-    "urn:ngsi-ld:MuscleOxygenSaturation:items:WGLA:65975855",  
-    "urn:ngsi-ld:MuscleOxygenSaturation:items:CMHD:47128517"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:MuscleOxygenSaturation:items:VUSP:21428811",  
-    "urn:ngsi-ld:MuscleOxygenSaturation:items:WZCN:91502055"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -83.5104955,  
-      93.47094  
+    "id": "urn:ngsi-ld:MuscleOxygenSaturation:id:MJZI:03017437",  
+    "dateCreated": "2013-07-10T17:13:30Z",  
+    "dateModified": "2012-11-08T18:30:37Z",  
+    "source": "Worker car play from product become city. Heavy act gas must. Choice former often political at face to hot.",  
+    "name": "Support center item sport. Laugh discover cause herself surface. Author sense certainly cover of beyond.",  
+    "alternateName": "Something goal decision nearly dark. House consumer like will necessary seat place note. Marriage hour free special everybody agreement me.",  
+    "description": "Choose often single onto game smile right off. Together up fast he already maintain lawyer.",  
+    "dataProvider": "Responsibility population a paper base material certain. Tough item offer road condition nice. Generation however trip car interesting south me leg.",  
+    "owner": [  
+        "urn:ngsi-ld:MuscleOxygenSaturation:items:WGLA:65975855",  
+        "urn:ngsi-ld:MuscleOxygenSaturation:items:CMHD:47128517"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:MuscleOxygenSaturation:items:VUSP:21428811",  
+        "urn:ngsi-ld:MuscleOxygenSaturation:items:WZCN:91502055"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -83.5104955,  
+            93.47094  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "His staff second game clearly pass guess.",  
+        "addressLocality": "Impact specific get season process. Live scientist customer white statement low. Director notice option full dark.",  
+        "addressRegion": "Great subject next likely sound reason suffer. Eye quickly spend head speech raise return. Building situation market court including appear together. Show here vote hard use involve help.",  
+        "addressCountry": "Teach box fear room eat religious. Through drive per available tough. Hour artist at beautiful return public inside. Magazine near thousand expect sound claim.",  
+        "postalCode": "Get off meeting ahead close or break. Happy four rule future and series. Table happen possible everybody mean.",  
+        "postOfficeBoxNumber": "Option that likely world very who standard. Impact without pay magazine information smile. Particular him rate minute particularly."  
+    },  
+    "areaServed": "Well memory author they long final position. Door strong rest certainly final.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "His staff second game clearly pass guess.",  
-    "addressLocality": "Impact specific get season process. Live scientist customer white statement low. Director notice option full dark.",  
-    "addressRegion": "Great subject next likely sound reason suffer. Eye quickly spend head speech raise return. Building situation market court including appear together. Show here vote hard use involve help.",  
-    "addressCountry": "Teach box fear room eat religious. Through drive per available tough. Hour artist at beautiful return public inside. Magazine near thousand expect sound claim.",  
-    "postalCode": "Get off meeting ahead close or break. Happy four rule future and series. Table happen possible everybody mean.",  
-    "postOfficeBoxNumber": "Option that likely world very who standard. Impact without pay magazine information smile. Particular him rate minute particularly."  
-  },  
-  "areaServed": "Well memory author they long final position. Door strong rest certainly final.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### SaturaciónOxígenoMuscular NGSI-LD normalizada Ejemplo  
 Aquí hay un ejemplo de un MuscleOxygenSaturation en formato JSON-LD como normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:MuscleOxygenSaturation:id:IBLJ:74568783",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2006-10-03T06:43:11Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2014-04-01T18:48:04Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Open must meeting. System describe way act several bag available."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Anything Mr some board area science miss. Particularly finish near hard majority writer whom. Administration away especially generation recent."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Maintain never possible week. Her anyone college cost."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Rate system audience will lot middle. War add truth pattern stuff know marriage. Party better week suggest food language fly."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Ready fear shake where throughout which. Next drop letter rate job. Health method spring fact there music share appear."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:MuscleOxygenSaturation:items:XLVR:40170732",  
-      "urn:ngsi-ld:MuscleOxygenSaturation:items:RWDB:65001685"  
+    "id": "urn:ngsi-ld:MuscleOxygenSaturation:id:IBLJ:74568783",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2006-10-03T06:43:11Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2014-04-01T18:48:04Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Open must meeting. System describe way act several bag available."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Anything Mr some board area science miss. Particularly finish near hard majority writer whom. Administration away especially generation recent."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Maintain never possible week. Her anyone college cost."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Rate system audience will lot middle. War add truth pattern stuff know marriage. Party better week suggest food language fly."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Ready fear shake where throughout which. Next drop letter rate job. Health method spring fact there music share appear."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:MuscleOxygenSaturation:items:XLVR:40170732",  
+            "urn:ngsi-ld:MuscleOxygenSaturation:items:RWDB:65001685"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:MuscleOxygenSaturation:items:LHGZ:59229115"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -14.2965595,  
+                -144.282412  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Kid world energy before sense dog. Skin force picture nearly manager. Hotel open mouth know ground view should.",  
+            "addressLocality": "Laugh report central space political. Student wait institution soldier reveal book. Kid decade pass customer.",  
+            "addressRegion": "Southern institution adult light member. Occur smile fish couple.",  
+            "addressCountry": "Artist activity itself administration since window. Can weight figure about remember nation. Popular charge part. Fight before wide pressure art design charge.",  
+            "postalCode": "Sea current fight.",  
+            "postOfficeBoxNumber": "Visit style part begin try next face. Either choose music person. Life magazine management image bill social."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "High firm card this south Republican gun. Last lead wrong key matter get kid. Southern little fall example."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:MuscleOxygenSaturation:items:LHGZ:59229115"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -14.2965595,  
-        -144.282412  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Kid world energy before sense dog. Skin force picture nearly manager. Hotel open mouth know ground view should.",  
-      "addressLocality": "Laugh report central space political. Student wait institution soldier reveal book. Kid decade pass customer.",  
-      "addressRegion": "Southern institution adult light member. Occur smile fish couple.",  
-      "addressCountry": "Artist activity itself administration since window. Can weight figure about remember nation. Popular charge part. Fight before wide pressure art design charge.",  
-      "postalCode": "Sea current fight.",  
-      "postOfficeBoxNumber": "Visit style part begin try next face. Either choose music person. Life magazine management image bill social."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "High firm card this south Republican gun. Last lead wrong key matter get kid. Southern little fall example."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
