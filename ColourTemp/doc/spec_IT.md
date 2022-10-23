@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entità: ColourTemp  
-==================  
+==================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.OCF/blob/master/ColourTemp/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Questa risorsa descrive il colore usando le convenzioni della temperatura di colore.La proprietà 'ct' è la temperatura di colore Mired.Il valore equivalente in Kelvin si ottiene da Colour Temp(K) = 1.000.000/Colour Temp(Mired)Questa risorsa fornisce il colore usando le convenzioni della temperatura di colore.**  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **Questa risorsa descrive il colore utilizzando le convenzioni sulla temperatura del colore.La proprietà 'ct' è la temperatura del colore Mired.Il valore equivalente in Kelvin è ottenuto da Colour Temp(K) = 1.000.000/Colour Temp(Mired)**Questa risorsa fornisce il colore utilizzando le convenzioni sulla temperatura del colore.  
 versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `ct`: La temperatura di colore Mired.  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `id`: Identificatore unico dell'entità  - `if`: L'insieme di interfacce OCF supportato da questa risorsa.  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n`: Nome amichevole della risorsa  - `name`: Il nome di questo articolo.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `range`: L'intervallo valido per la proprietà nella risorsa come un intero. Il primo valore nell'array è il valore minimo, il secondo valore nell'array è il valore massimo.  - `rt`: Il tipo di risorsa.  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `step`: Valore di passo attraverso l'intervallo definito quando l'intervallo è un intero.  Questo è l'incremento per i valori validi attraverso l'intervallo; quindi se l'intervallo è 0..10 e il passo è 2 allora i valori validi sono 0,2,4,6,8,10.  - `type`: Tipo di entità NGSI. Deve essere ColourTemp    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `ct[integer]`: La temperatura del colore Mired.  - `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `if[array]`: Il set di interfacce OCF supportato da questa risorsa.  - `location[*]`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `n[string]`: Nome amichevole della risorsa  - `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `range[array]`: L'intervallo valido per la proprietà nella risorsa come numero intero. Il primo valore della matrice è il valore minimo, il secondo valore della matrice è il valore massimo.  - `rt[array]`: Il tipo di risorsa.  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `step[integer]`: Valore di passo nell'intervallo definito quando l'intervallo è un numero intero.  Si tratta dell'incremento per i valori validi in tutto l'intervallo; quindi se l'intervallo è 0..10 e il passo è 2, i valori validi sono 0,2,4,6,8,10.  - `type[string]`: Tipo di entità NGSI. Deve essere ColourTemp  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- `ct`  - `id`  - `type`    
+- `ct`  - `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Modello di dati adattato dall'originale creato dalla Open Connectivity Foundation. Repository originale in https://github.com/openconnectivityfoundation/IoTDataModels  
-## Descrizione del modello di dati delle proprietà  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ColourTemp:    
@@ -348,9 +361,14 @@ ColourTemp:
   x-version: 0.0.1    
 ```  
 </details>    
-## Esempio di payloads  
-#### ColourTemp NGSI-v2 valori chiave Esempio  
-Ecco un esempio di ColourTemp in formato JSON-LD come valori chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
+#### Valori chiave ColourTemp NGSI-v2 Esempio  
+Ecco un esempio di ColourTemp in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:ColourTemp:id:SIGR:57783175",  
@@ -409,8 +427,10 @@ ColourTemp:
   "type": "ColourTemp"  
 }  
 ```  
+</details>  
 #### ColourTemp NGSI-v2 normalizzato Esempio  
-Ecco un esempio di un ColourTemp in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di ColourTemp in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -531,182 +551,196 @@ ColourTemp:
   }  
 }  
 ```  
-#### ColourTemp NGSI-LD valori chiave Esempio  
-Ecco un esempio di ColourTemp in formato JSON-LD come valori chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### Valori chiave di ColourTemp NGSI-LD Esempio  
+Ecco un esempio di ColourTemp in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:ColourTemp:id:SIGR:57783175",  
-  "dateCreated": "2013-02-09T19:26:34Z",  
-  "dateModified": "1980-05-22T11:29:50Z",  
-  "source": "Social race dream improve between. Mind hear final mother hundred happen. Suddenly fact mother mouth city campaign resource.",  
-  "name": "Reality these sometimes choice begin hit. Spring full offer common receive situation. Ability well personal across cold.",  
-  "alternateName": "Identify stay local dream main apply government. Identify clearly forget subject it lawyer. High skill need nice factor. Save like international sense bar produce source.",  
-  "description": "Ground the long toward tend someone. Social risk bank oil better weight wide.",  
-  "dataProvider": "Night likely into issue particularly school. For career team since pattern. Few red bed year situation.",  
-  "owner": [  
-    "urn:ngsi-ld:ColourTemp:items:GIII:86193381",  
-    "urn:ngsi-ld:ColourTemp:items:LEUS:66364515"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:ColourTemp:items:IKWJ:11271274",  
-    "urn:ngsi-ld:ColourTemp:items:WUAG:37359340"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      35.625337,  
-      124.92428  
+    "id": "urn:ngsi-ld:ColourTemp:id:SIGR:57783175",  
+    "dateCreated": "2013-02-09T19:26:34Z",  
+    "dateModified": "1980-05-22T11:29:50Z",  
+    "source": "Social race dream improve between. Mind hear final mother hundred happen. Suddenly fact mother mouth city campaign resource.",  
+    "name": "Reality these sometimes choice begin hit. Spring full offer common receive situation. Ability well personal across cold.",  
+    "alternateName": "Identify stay local dream main apply government. Identify clearly forget subject it lawyer. High skill need nice factor. Save like international sense bar produce source.",  
+    "description": "Ground the long toward tend someone. Social risk bank oil better weight wide.",  
+    "dataProvider": "Night likely into issue particularly school. For career team since pattern. Few red bed year situation.",  
+    "owner": [  
+        "urn:ngsi-ld:ColourTemp:items:GIII:86193381",  
+        "urn:ngsi-ld:ColourTemp:items:LEUS:66364515"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:ColourTemp:items:IKWJ:11271274",  
+        "urn:ngsi-ld:ColourTemp:items:WUAG:37359340"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            35.625337,  
+            124.92428  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Movie Democrat sometimes. Structure visit instead believe. Risk sense three action chance.",  
+        "addressLocality": "Mouth call whom make black. Both wrong small in. Member field with position her include home. School particularly require behind data.",  
+        "addressRegion": "Contain interview weight summer. Able change rock trial stock check. Recently name finish dinner business. Common issue Congress city.",  
+        "addressCountry": "Anything purpose just step tell performance. Effect find say outside first really sing. Subject rate yet fire box per. Religious sound call range within believe.",  
+        "postalCode": "Space move law customer box impact. Former dark economy if.",  
+        "postOfficeBoxNumber": "Minute power to plant charge. Determine over training wear campaign stock. Force most final. Thing admit since goal especially soon letter ago."  
+    },  
+    "areaServed": "Skin every federal son table. Charge surface letter movie radio.",  
+    "rt": [  
+        "oic.r.colour.colourtemperature",  
+        "oic.r.colour.colourtemperature"  
+    ],  
+    "ct": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "n": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair.",  
+    "range": [  
+        864,  
+        864  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "if": [  
+        "oic.if.a",  
+        "oic.if.baseline"  
+    ],  
+    "type": "ColourTemp",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Movie Democrat sometimes. Structure visit instead believe. Risk sense three action chance.",  
-    "addressLocality": "Mouth call whom make black. Both wrong small in. Member field with position her include home. School particularly require behind data.",  
-    "addressRegion": "Contain interview weight summer. Able change rock trial stock check. Recently name finish dinner business. Common issue Congress city.",  
-    "addressCountry": "Anything purpose just step tell performance. Effect find say outside first really sing. Subject rate yet fire box per. Religious sound call range within believe.",  
-    "postalCode": "Space move law customer box impact. Former dark economy if.",  
-    "postOfficeBoxNumber": "Minute power to plant charge. Determine over training wear campaign stock. Force most final. Thing admit since goal especially soon letter ago."  
-  },  
-  "areaServed": "Skin every federal son table. Charge surface letter movie radio.",  
-  "rt": [  
-    "oic.r.colour.colourtemperature",  
-    "oic.r.colour.colourtemperature"  
-  ],  
-  "ct": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "n": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair.",  
-  "range": [  
-    864,  
-    864  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "if": [  
-    "oic.if.a",  
-    "oic.if.baseline"  
-  ],  
-  "type": "ColourTemp",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### ColourTemp NGSI-LD normalizzato Esempio  
-Ecco un esempio di un ColourTemp in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di ColourTemp in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:ColourTemp:id:MXZP:04964505",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2003-04-02T22:58:26Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1986-08-04T00:21:58Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Safe thousand southern rate top. Them job very."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Although fast perhaps move. Prevent lose our exactly item across author. Off recently minute. Church where large movie."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Notice project take computer. Defense develop rate anything interesting science."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "That standard risk. Company wish spend reach movie sell. If hair notice rock writer."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Also beyond full method bar. Check American increase when."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:ColourTemp:items:MJFM:80235046",  
-      "urn:ngsi-ld:ColourTemp:items:YIJV:04552958"  
+    "id": "urn:ngsi-ld:ColourTemp:id:MXZP:04964505",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2003-04-02T22:58:26Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1986-08-04T00:21:58Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Safe thousand southern rate top. Them job very."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Although fast perhaps move. Prevent lose our exactly item across author. Off recently minute. Church where large movie."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Notice project take computer. Defense develop rate anything interesting science."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "That standard risk. Company wish spend reach movie sell. If hair notice rock writer."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Also beyond full method bar. Check American increase when."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:ColourTemp:items:MJFM:80235046",  
+            "urn:ngsi-ld:ColourTemp:items:YIJV:04552958"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:ColourTemp:items:DNNY:14770603"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -45.7508565,  
+                70.843307  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Hold matter by worry international right hotel. Machine risk professor himself big time.",  
+            "addressLocality": "After various stock event fact. Probably see on trial anyone recent care. Last available rate song.",  
+            "addressRegion": "Month family opportunity ground fight certain talk.",  
+            "addressCountry": "Appear second course term successful yes someone memory. Remain leg trip million. Laugh good yeah again table tree weight space. Particularly party fish like seem notice.",  
+            "postalCode": "Environment level responsibility behavior. Culture scene future stop peace another.",  
+            "postOfficeBoxNumber": "My try ask traditional. Its most hair benefit pattern during. Per represent central music tough total society."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Card whether eight quite among. Yes keep particular statement dog million my."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.colour.colourtemperature"  
+        ]  
+    },  
+    "ct": {  
+        "type": "Property",  
+        "value": 123  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Recently movie evidence feeling moment. Like along international. Still likely either garden her human."  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            972,  
+            421  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 785  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.a",  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "ColourTemp",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:ColourTemp:items:DNNY:14770603"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -45.7508565,  
-        70.843307  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Hold matter by worry international right hotel. Machine risk professor himself big time.",  
-      "addressLocality": "After various stock event fact. Probably see on trial anyone recent care. Last available rate song.",  
-      "addressRegion": "Month family opportunity ground fight certain talk.",  
-      "addressCountry": "Appear second course term successful yes someone memory. Remain leg trip million. Laugh good yeah again table tree weight space. Particularly party fish like seem notice.",  
-      "postalCode": "Environment level responsibility behavior. Culture scene future stop peace another.",  
-      "postOfficeBoxNumber": "My try ask traditional. Its most hair benefit pattern during. Per represent central music tough total society."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Card whether eight quite among. Yes keep particular statement dog million my."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.colour.colourtemperature"  
-    ]  
-  },  
-  "ct": {  
-    "type": "Property",  
-    "value": 123  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Recently movie evidence feeling moment. Like along international. Still likely either garden her human."  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      972,  
-      421  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 785  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.a",  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "type": "ColourTemp",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
