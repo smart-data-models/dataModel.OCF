@@ -1,17 +1,32 @@
-Entità: Dali  
-============  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entità: Dali  
+============<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.OCF/blob/master/Dali/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Adattamento del programma Smart Data Models dell'originale IoTData data Models. Questa Risorsa descrive la risorsa di scrittura DALI, capace di trasmettere FF e BF secondo IEC 62386-104, Digital addressable lighting interface - Part 104: General requirements - Wireless and alternative wired system. Retrieve su questa Risorsa restituisce solo le Proprietà comuni. **  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **Adattamento del programma Smart Data Models dei modelli di dati IoTData originali. Questa risorsa descrive la risorsa di scrittura DALI, in grado di trasmettere FF e BF secondo IEC 62386-104, Digital addressable lighting interface - Part 104: General requirements - Wireless and alternative wired system. Il recupero di questa risorsa restituisce solo le proprietà comuni. **  
+versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `id`: Identificatore unico dell'entità  - `if`: L'insieme di interfacce OCF supportato da questa risorsa.  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n`: Nome amichevole della risorsa  - `name`: Il nome di questo articolo.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `rt`: Il tipo di risorsa.  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `type`: Tipo di entità NGSI. Deve essere Dali    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `if[array]`: Il set di interfacce OCF supportato da questa risorsa.  - `location[*]`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `n[string]`: Nome amichevole della risorsa  - `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `rt[array]`: Il tipo di risorsa.  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `type[string]`: Tipo di entità NGSI. Deve essere Dali  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- `id`  - `type`    
-Questo modello di dati proviene dall'originale [Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels). È stato esteso per soddisfare i requisiti di NGSI.  
-## Descrizione del modello di dati delle proprietà  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+Questo modello di dati proviene dal repository originale della [Open Connectivity Foundation] (https://github.com/openconnectivityfoundation/IoTDataModels). È stato esteso per soddisfare i requisiti NGSI.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Dali:    
@@ -323,9 +338,14 @@ Dali:
   x-version: 0.0.1    
 ```  
 </details>    
-## Esempio di payloads  
-#### Esempio di valori chiave di Dali NGSI-v2  
-Ecco un esempio di un Dali in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
+#### Esempio di valori chiave Dali NGSI-v2  
+Ecco un esempio di Dali in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Dali:id:WHRE:46492357",  
@@ -362,8 +382,10 @@ Dali:
   "areaServed": "Thousand what admit peace yourself art while today. Benefit manage address court sometimes thing. Fish evening compare drop each training."  
 }  
 ```  
+</details>  
 #### Dali NGSI-v2 normalizzato Esempio  
-Ecco un esempio di un Dali in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di un Dali in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si usano le opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -441,127 +463,141 @@ Dali:
   }  
 }  
 ```  
+</details>  
 #### Dali NGSI-LD valori-chiave Esempio  
-Ecco un esempio di un Dali in formato JSON-LD come key-values. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di Dali in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Dali:id:WHRE:46492357",  
-  "dateCreated": "1981-11-26T06:30:17Z",  
-  "dateModified": "1970-09-11T07:01:47Z",  
-  "source": "Trouble give son too adult our. Reach meet matter new increase so itself. Wife should vote building skill sell law night.",  
-  "name": "About represent manager young important catch its. Value blood majority approach energy watch.",  
-  "alternateName": "Though together as money mean. Sing space trade but hundred. Raise any range responsibility shoulder enjoy always.",  
-  "description": "Either provide one along remain main. Technology also food pretty room civil.",  
-  "dataProvider": "Admit different administration force since never. North already least young enjoy send goal. Since science growth likely certainly matter research.",  
-  "owner": [  
-    "urn:ngsi-ld:Dali:items:OUPK:23201726",  
-    "urn:ngsi-ld:Dali:items:VCMY:25370307"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Dali:items:TWLB:29866476",  
-    "urn:ngsi-ld:Dali:items:NFXS:00917240"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -84.4789355,  
-      16.118833  
+    "id": "urn:ngsi-ld:Dali:id:WHRE:46492357",  
+    "dateCreated": "1981-11-26T06:30:17Z",  
+    "dateModified": "1970-09-11T07:01:47Z",  
+    "source": "Trouble give son too adult our. Reach meet matter new increase so itself. Wife should vote building skill sell law night.",  
+    "name": "About represent manager young important catch its. Value blood majority approach energy watch.",  
+    "alternateName": "Though together as money mean. Sing space trade but hundred. Raise any range responsibility shoulder enjoy always.",  
+    "description": "Either provide one along remain main. Technology also food pretty room civil.",  
+    "dataProvider": "Admit different administration force since never. North already least young enjoy send goal. Since science growth likely certainly matter research.",  
+    "owner": [  
+        "urn:ngsi-ld:Dali:items:OUPK:23201726",  
+        "urn:ngsi-ld:Dali:items:VCMY:25370307"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Dali:items:TWLB:29866476",  
+        "urn:ngsi-ld:Dali:items:NFXS:00917240"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -84.4789355,  
+            16.118833  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Hospital stay represent season have worker. Direction world act fill. Point number itself Mr simple way.",  
+        "addressLocality": "Call second forget coach threat and return.",  
+        "addressRegion": "Space similar require late.",  
+        "addressCountry": "Be hard performance benefit. Figure body next else degree attorney. Election will daughter them short information.",  
+        "postalCode": "Understand by leg. Media affect return kitchen.",  
+        "postOfficeBoxNumber": "Subject lose art why meeting. Change movement including watch theory measure thousand surface. Officer TV might reveal."  
+    },  
+    "areaServed": "Thousand what admit peace yourself art while today. Benefit manage address court sometimes thing. Fish evening compare drop each training.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Hospital stay represent season have worker. Direction world act fill. Point number itself Mr simple way.",  
-    "addressLocality": "Call second forget coach threat and return.",  
-    "addressRegion": "Space similar require late.",  
-    "addressCountry": "Be hard performance benefit. Figure body next else degree attorney. Election will daughter them short information.",  
-    "postalCode": "Understand by leg. Media affect return kitchen.",  
-    "postOfficeBoxNumber": "Subject lose art why meeting. Change movement including watch theory measure thousand surface. Officer TV might reveal."  
-  },  
-  "areaServed": "Thousand what admit peace yourself art while today. Benefit manage address court sometimes thing. Fish evening compare drop each training.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### Dali NGSI-LD normalizzato Esempio  
-Ecco un esempio di un Dali in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di Dali in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si usano le opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Dali:id:ASCA:96985110",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2003-06-06T14:11:29Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1994-05-26T22:35:06Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Under trade view piece. Value walk sense appear since sign evening. Teacher specific measure dinner whatever."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Social how air threat memory hit effect. Total poor meeting race rich particularly yourself."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Contain admit newspaper system defense character."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Scene free success other so. Action lose report bill yard home painting man. Game senior expert ok talk general current. Stage scientist point card place inside."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Top daughter support open girl author wear season. Plan teacher several range. Anything street boy including."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Dali:items:YVYZ:75892470",  
-      "urn:ngsi-ld:Dali:items:CZAM:05311010"  
+    "id": "urn:ngsi-ld:Dali:id:ASCA:96985110",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2003-06-06T14:11:29Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1994-05-26T22:35:06Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Under trade view piece. Value walk sense appear since sign evening. Teacher specific measure dinner whatever."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Social how air threat memory hit effect. Total poor meeting race rich particularly yourself."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Contain admit newspaper system defense character."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Scene free success other so. Action lose report bill yard home painting man. Game senior expert ok talk general current. Stage scientist point card place inside."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Top daughter support open girl author wear season. Plan teacher several range. Anything street boy including."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Dali:items:YVYZ:75892470",  
+            "urn:ngsi-ld:Dali:items:CZAM:05311010"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Dali:items:IWBT:06739145"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -55.820818,  
+                18.312295  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Take high figure beautiful three relate. Throughout special wish idea plant heavy.",  
+            "addressLocality": "Discuss seek tree eat state Democrat small total. Bill central public any strategy story.",  
+            "addressRegion": "Ahead director window by hot simple prove still. Feeling too child.",  
+            "addressCountry": "Answer use since federal certain check process. Under mean bad worry under fear lose commercial. Last ground inside number he.",  
+            "postalCode": "Media none help body. You lot during daughter court pay size. Physical interest able center watch know.",  
+            "postOfficeBoxNumber": "Day chair whole modern off local quite. Figure decide seat agency do."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Its night former break through third mean interesting. Build beat wall until figure collection. Among opportunity or without ask."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Dali:items:IWBT:06739145"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -55.820818,  
-        18.312295  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Take high figure beautiful three relate. Throughout special wish idea plant heavy.",  
-      "addressLocality": "Discuss seek tree eat state Democrat small total. Bill central public any strategy story.",  
-      "addressRegion": "Ahead director window by hot simple prove still. Feeling too child.",  
-      "addressCountry": "Answer use since federal certain check process. Under mean bad worry under fear lose commercial. Last ground inside number he.",  
-      "postalCode": "Media none help body. You lot during daughter court pay size. Physical interest able center watch know.",  
-      "postOfficeBoxNumber": "Day chair whole modern off local quite. Figure decide seat agency do."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Its night former break through third mean interesting. Build beat wall until figure collection. Among opportunity or without ask."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
