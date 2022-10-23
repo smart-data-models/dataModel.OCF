@@ -1,17 +1,32 @@
-Entidad: Luminosidad  
-====================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entidad: Luminosidad  
+====================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.OCF/blob/master/Brightness/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Descripción global: **Adaptación del programa de modelos de datos inteligentes de los modelos de datos originales de IoTData. Este Recurso describe el brillo de una luz o lámpara. La propiedad 'brightness' es un entero que muestra el nivel de brillo actual como una representación cuantificada en el rango 0-100. Un brillo de 0 es el mínimo para el recurso. Un brillo de 100 es el máximo para el recurso.**  
+versión: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `brightness`: La representación cuantificada en el rango 0-100 del valor actual detectado o ajustado para el brillo.  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `if`: El conjunto de interfaces OCF que admite este recurso.  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n`: Nombre amistoso del recurso  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `rt`: El tipo de recurso.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `type`: Tipo de entidad NGSI. Tiene que ser Brillo    
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>  
+- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `brightness[integer]`: La representación cuantificada en el rango 0-100 del valor actual detectado o ajustado para el brillo.  - `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Una descripción de este artículo  - `id[*]`: Identificador único de la entidad  - `if[array]`: El conjunto de interfaces OCF que admite este recurso.  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n[string]`: Nombre amistoso del recurso  - `name[string]`: El nombre de este artículo.  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `rt[array]`: El tipo de recurso.  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `type[string]`: Tipo de entidad NGSI. Tiene que ser Brillo  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propiedades requeridas  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Este modelo de datos procede del original [repositorio de la Open Connectivity Foundation](https://github.com/openconnectivityfoundation/IoTDataModels). Se ha ampliado para cumplir con los requisitos de la NGSI.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Brightness:    
@@ -330,9 +345,14 @@ Brightness:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Ejemplo de carga útil  
 #### Valores clave de luminosidad NGSI-v2 Ejemplo  
 Aquí hay un ejemplo de un Brillo en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Brightness:id:WQCM:27115895",  
@@ -369,8 +389,10 @@ Brightness:
   "areaServed": "Or parent civil miss seem season kitchen. Next order another manage a."  
 }  
 ```  
+</details>  
 #### Brillo NGSI-v2 normalizado Ejemplo  
 Aquí hay un ejemplo de un brillo en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -448,127 +470,141 @@ Brightness:
   }  
 }  
 ```  
+</details>  
 #### Valores clave de luminosidad NGSI-LD Ejemplo  
 Aquí hay un ejemplo de un Brillo en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Brightness:id:WQCM:27115895",  
-  "dateCreated": "2016-08-17T21:11:58Z",  
-  "dateModified": "1980-09-17T16:44:12Z",  
-  "source": "Town career six agreement half financial born. Learn everyone level most. Radio force build I leave environment system.",  
-  "name": "Until case family. Research day practice go from car.",  
-  "alternateName": "Ball law read very paper traditional.",  
-  "description": "But stand once miss. Easy mention it. Yeah center past movement.",  
-  "dataProvider": "Low enjoy listen five rock poor. Machine it us determine any.",  
-  "owner": [  
-    "urn:ngsi-ld:Brightness:items:FXDV:13819924",  
-    "urn:ngsi-ld:Brightness:items:ABGQ:72000460"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Brightness:items:PMDS:79707077",  
-    "urn:ngsi-ld:Brightness:items:DHES:41648412"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -41.7502805,  
-      -102.953763  
+    "id": "urn:ngsi-ld:Brightness:id:WQCM:27115895",  
+    "dateCreated": "2016-08-17T21:11:58Z",  
+    "dateModified": "1980-09-17T16:44:12Z",  
+    "source": "Town career six agreement half financial born. Learn everyone level most. Radio force build I leave environment system.",  
+    "name": "Until case family. Research day practice go from car.",  
+    "alternateName": "Ball law read very paper traditional.",  
+    "description": "But stand once miss. Easy mention it. Yeah center past movement.",  
+    "dataProvider": "Low enjoy listen five rock poor. Machine it us determine any.",  
+    "owner": [  
+        "urn:ngsi-ld:Brightness:items:FXDV:13819924",  
+        "urn:ngsi-ld:Brightness:items:ABGQ:72000460"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Brightness:items:PMDS:79707077",  
+        "urn:ngsi-ld:Brightness:items:DHES:41648412"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -41.7502805,  
+            -102.953763  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Increase money loss begin billion. Town future less general make control become. Decision positive edge.",  
+        "addressLocality": "Go low box might marriage natural. Notice include group growth walk fund card. Again management stay skill factor action.",  
+        "addressRegion": "Skill sing maybe call deep. Report push almost drop.",  
+        "addressCountry": "Other film between one. Measure team way already behind. Sea quality adult news civil.",  
+        "postalCode": "Very when remember seven seem final system. Network notice accept probably board yourself tell. One operation assume use simply section available.",  
+        "postOfficeBoxNumber": "Soon image stop. Deal newspaper factor brother."  
+    },  
+    "areaServed": "Or parent civil miss seem season kitchen. Next order another manage a.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Increase money loss begin billion. Town future less general make control become. Decision positive edge.",  
-    "addressLocality": "Go low box might marriage natural. Notice include group growth walk fund card. Again management stay skill factor action.",  
-    "addressRegion": "Skill sing maybe call deep. Report push almost drop.",  
-    "addressCountry": "Other film between one. Measure team way already behind. Sea quality adult news civil.",  
-    "postalCode": "Very when remember seven seem final system. Network notice accept probably board yourself tell. One operation assume use simply section available.",  
-    "postOfficeBoxNumber": "Soon image stop. Deal newspaper factor brother."  
-  },  
-  "areaServed": "Or parent civil miss seem season kitchen. Next order another manage a.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### Brillo NGSI-LD normalizado Ejemplo  
 Aquí hay un ejemplo de un brillo en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Brightness:id:RSNQ:68207834",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2015-11-22T15:03:19Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1984-04-26T19:36:27Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Get more effort admit education far great. Note factor assume state civil attack. Hand all degree agency add."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Decade size collection station tend blue. Exist fall major foot stay benefit north customer."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Green establish board forward itself site. Fear this toward."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Happen network history fight half law. Wear rate place improve best. Health effect concern happen whose loss. Information action leave bar heavy support city cut."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Sort hear walk close dark more get. Baby general candidate guy treat."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Brightness:items:KFXN:87184809",  
-      "urn:ngsi-ld:Brightness:items:FIHS:96874543"  
+    "id": "urn:ngsi-ld:Brightness:id:RSNQ:68207834",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2015-11-22T15:03:19Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1984-04-26T19:36:27Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Get more effort admit education far great. Note factor assume state civil attack. Hand all degree agency add."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Decade size collection station tend blue. Exist fall major foot stay benefit north customer."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Green establish board forward itself site. Fear this toward."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Happen network history fight half law. Wear rate place improve best. Health effect concern happen whose loss. Information action leave bar heavy support city cut."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Sort hear walk close dark more get. Baby general candidate guy treat."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Brightness:items:KFXN:87184809",  
+            "urn:ngsi-ld:Brightness:items:FIHS:96874543"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Brightness:items:RCAP:18990801"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -36.083538,  
+                -0.107567  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Wait myself upon huge coach decide allow decade. One without improve drive across security also imagine. Trade early challenge ok job blue.",  
+            "addressLocality": "Example hour already rise reduce again everybody degree. Onto range campaign research night. Share white single case get international.",  
+            "addressRegion": "Manager together personal all. Back trip receive bill.",  
+            "addressCountry": "Beautiful recent herself beyond game major into. Explain society dream day history record change speech. Those under direction.",  
+            "postalCode": "Husband support clearly once new only. Visit establish between identify attorney. Every week federal describe best building prove day.",  
+            "postOfficeBoxNumber": "Theory expert miss live. Sense information become detail."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Budget fire country discover travel."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Brightness:items:RCAP:18990801"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -36.083538,  
-        -0.107567  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Wait myself upon huge coach decide allow decade. One without improve drive across security also imagine. Trade early challenge ok job blue.",  
-      "addressLocality": "Example hour already rise reduce again everybody degree. Onto range campaign research night. Share white single case get international.",  
-      "addressRegion": "Manager together personal all. Back trip receive bill.",  
-      "addressCountry": "Beautiful recent herself beyond game major into. Explain society dream day history record change speech. Those under direction.",  
-      "postalCode": "Husband support clearly once new only. Visit establish between identify attorney. Every week federal describe best building prove day.",  
-      "postOfficeBoxNumber": "Theory expert miss live. Sense information become detail."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Budget fire country discover travel."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
