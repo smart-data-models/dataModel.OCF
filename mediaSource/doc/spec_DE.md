@@ -1,17 +1,32 @@
-Entität: mediaSource  
-====================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entität: mediaSource  
+====================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.OCF/blob/master/mediaSource/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Globale Beschreibung: **Smart Data Models Programmanpassung der ursprünglichen IoTData-Datenmodelle. Diese Ressource definiert eine einzelne Medienquelle, die auf einem Gerät vorhanden ist. Die Quelle kann eine Eingabe- oder eine Ausgabequelle sein, diese Ressource ist davon unabhängig. Die Eigenschaft "sourceName" gibt einen vordefinierten Medieneingang oder -ausgang an (z. B. "HDMI", "DVI"). Die Eigenschaft "sourceNumber" ist eine Bezeichnung zur Angabe der Instanz (z. B. "PC", "1"). Die Eigenschaft "sourceType" ist eine Aufzählung, die festlegt, ob es sich bei der Quelle um Audio, Video oder beides handelt. Die Eigenschaft "status" ist ein boolescher Wert, der festlegt, ob die spezifische Quelleninstanz ausgewählt ist oder nicht.  Ein Status von true bedeutet, dass die Quelle ausgewählt ist.  Ein Status von "false" bedeutet, dass die Quelle nicht ausgewählt ist.**  
+Version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `if`: Der von dieser Ressource unterstützte OCF-Schnittstellensatz.  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `n`: Freundlicher Name der Ressource  - `name`: Der Name dieses Artikels.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `rt`: Der Ressourcentyp.  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `sourceName`: Gibt einen vordefinierten Medieneingang oder -ausgang an.  - `sourceNumber`: Label zur Angabe der Instanz.  - `sourceType`: Gibt den Typ der Quelle an.  - `status`: Gibt an, ob die spezifische Quellinstanz ausgewählt ist oder nicht.  - `type`: NGSI-Entitätstyp. Es muss mediaSource sein    
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, liegt das daran, dass es mehrere Typen oder unterschiedliche Formate/Muster haben kann</sub></sup>.  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `id[*]`: Eindeutiger Bezeichner der Entität  - `if[array]`: Der von dieser Ressource unterstützte OCF-Schnittstellensatz.  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `n[string]`: Freundlicher Name der Ressource  - `name[string]`: Der Name dieses Artikels.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `rt[array]`: Der Ressourcentyp.  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `sourceName[string]`: Gibt einen vordefinierten Medieneingang oder -ausgang an.  - `sourceNumber[string]`: Label zur Angabe der Instanz.  - `sourceType[string]`: Gibt den Typ der Quelle an.  - `status[boolean]`: Gibt an, ob die spezifische Quellinstanz ausgewählt ist oder nicht.  - `type[string]`: NGSI-Entitätstyp. Es muss mediaSource sein  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Dieses Datenmodell stammt aus dem ursprünglichen [Open Connectivity Foundation repository] (https://github.com/openconnectivityfoundation/IoTDataModels). Es wurde erweitert, um den Anforderungen der NGSI zu entsprechen.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 mediaSource:    
@@ -348,9 +363,14 @@ mediaSource:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Beispiel-Nutzlasten  
 #### mediaSource NGSI-v2 key-values Beispiel  
-Hier ist ein Beispiel für eine mediaSource im JSON-LD-Format als Key-Values. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für eine mediaSource im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:mediaSource:id:ECVX:00681141",  
@@ -387,8 +407,10 @@ mediaSource:
   "areaServed": "Teach financial resource return wife mean. Civil road vote summer state offer lead. Base while bad product back different throughout."  
 }  
 ```  
+</details>  
 #### mediaSource NGSI-v2 normalisiert Beispiel  
 Hier ist ein Beispiel für eine mediaSource im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -466,127 +488,141 @@ mediaSource:
   }  
 }  
 ```  
+</details>  
 #### mediaSource NGSI-LD key-values Beispiel  
 Hier ist ein Beispiel für eine mediaSource im JSON-LD-Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:mediaSource:id:ECVX:00681141",  
-  "dateCreated": "2015-02-09T15:38:55Z",  
-  "dateModified": "1972-09-25T13:56:03Z",  
-  "source": "Win off Congress thought order. Risk near listen spend. Successful reduce tell better.",  
-  "name": "Radio six seem floor player. Discussion many kind. Series this senior fact feel.",  
-  "alternateName": "Bring star somebody. Pm best exist begin television room professor.",  
-  "description": "Him range long their three yeah value. Turn sound he store industry realize. Quality become agreement black consumer site. Clear clear and investment those factor.",  
-  "dataProvider": "Program spring again ten. Kind agency prevent give bad term.",  
-  "owner": [  
-    "urn:ngsi-ld:mediaSource:items:JUXL:73007356",  
-    "urn:ngsi-ld:mediaSource:items:ATGQ:91911106"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:mediaSource:items:OPHS:82281803",  
-    "urn:ngsi-ld:mediaSource:items:XSND:63263592"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      55.704287,  
-      165.220634  
+    "id": "urn:ngsi-ld:mediaSource:id:ECVX:00681141",  
+    "dateCreated": "2015-02-09T15:38:55Z",  
+    "dateModified": "1972-09-25T13:56:03Z",  
+    "source": "Win off Congress thought order. Risk near listen spend. Successful reduce tell better.",  
+    "name": "Radio six seem floor player. Discussion many kind. Series this senior fact feel.",  
+    "alternateName": "Bring star somebody. Pm best exist begin television room professor.",  
+    "description": "Him range long their three yeah value. Turn sound he store industry realize. Quality become agreement black consumer site. Clear clear and investment those factor.",  
+    "dataProvider": "Program spring again ten. Kind agency prevent give bad term.",  
+    "owner": [  
+        "urn:ngsi-ld:mediaSource:items:JUXL:73007356",  
+        "urn:ngsi-ld:mediaSource:items:ATGQ:91911106"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:mediaSource:items:OPHS:82281803",  
+        "urn:ngsi-ld:mediaSource:items:XSND:63263592"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            55.704287,  
+            165.220634  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Though carry country. Open amount budget.",  
+        "addressLocality": "Senior front computer commercial operation. Seat tonight method accept.",  
+        "addressRegion": "Series know spring activity. Now direction piece keep fight nature let.",  
+        "addressCountry": "Include on attack budget. Station practice perform during last may realize. Marriage else walk beat computer.",  
+        "postalCode": "Possible beat real performance. Every fill way bar participant. Thought relationship message admit especially.",  
+        "postOfficeBoxNumber": "Everything town individual fine along pressure. Sell share can ahead real military. Bank rich forward candidate season believe politics. Pm economic enjoy political kid three."  
+    },  
+    "areaServed": "Teach financial resource return wife mean. Civil road vote summer state offer lead. Base while bad product back different throughout.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Though carry country. Open amount budget.",  
-    "addressLocality": "Senior front computer commercial operation. Seat tonight method accept.",  
-    "addressRegion": "Series know spring activity. Now direction piece keep fight nature let.",  
-    "addressCountry": "Include on attack budget. Station practice perform during last may realize. Marriage else walk beat computer.",  
-    "postalCode": "Possible beat real performance. Every fill way bar participant. Thought relationship message admit especially.",  
-    "postOfficeBoxNumber": "Everything town individual fine along pressure. Sell share can ahead real military. Bank rich forward candidate season believe politics. Pm economic enjoy political kid three."  
-  },  
-  "areaServed": "Teach financial resource return wife mean. Civil road vote summer state offer lead. Base while bad product back different throughout.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### mediaSource NGSI-LD normalisiert Beispiel  
 Hier ist ein Beispiel für eine mediaSource im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:mediaSource:id:UFBP:40162706",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2017-03-03T06:37:12Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1971-08-11T10:31:18Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Cultural player sort trouble heart lot production deal. Themselves car foot student. Else law act night third."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Often dog democratic more short recognize past. Each social purpose four key relate. Live last science. Long real seem free hard."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Rest old Congress see small. May plant financial attack life figure. Meeting baby throw talk."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Girl first mouth help friend hundred foot program. Add if close. Country even interesting response both decision. Maintain chance customer war thousand others situation."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Your organization week course. Today less try list stuff life."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:mediaSource:items:ZIVE:79826817",  
-      "urn:ngsi-ld:mediaSource:items:MYBU:68140592"  
+    "id": "urn:ngsi-ld:mediaSource:id:UFBP:40162706",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2017-03-03T06:37:12Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1971-08-11T10:31:18Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Cultural player sort trouble heart lot production deal. Themselves car foot student. Else law act night third."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Often dog democratic more short recognize past. Each social purpose four key relate. Live last science. Long real seem free hard."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Rest old Congress see small. May plant financial attack life figure. Meeting baby throw talk."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Girl first mouth help friend hundred foot program. Add if close. Country even interesting response both decision. Maintain chance customer war thousand others situation."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Your organization week course. Today less try list stuff life."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:mediaSource:items:ZIVE:79826817",  
+            "urn:ngsi-ld:mediaSource:items:MYBU:68140592"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:mediaSource:items:REKA:63415753"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                4.9847935,  
+                2.355449  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Before campaign form lead. Test rate piece point together quickly claim.",  
+            "addressLocality": "Still response feel thank. Season environmental quite reflect rise.",  
+            "addressRegion": "Pm sound medical least want factor. Through treat look expect although visit health purpose. Reveal actually thought.",  
+            "addressCountry": "Policy own have. Allow beat need interesting. They drop condition citizen former.",  
+            "postalCode": "Staff them foot need town.",  
+            "postOfficeBoxNumber": "Heavy too charge level blue. Free generation relate fast American lose."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Similar history more serious American city. Move make memory tax. Reveal energy catch interesting region too. Sing serve president."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:mediaSource:items:REKA:63415753"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        4.9847935,  
-        2.355449  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Before campaign form lead. Test rate piece point together quickly claim.",  
-      "addressLocality": "Still response feel thank. Season environmental quite reflect rise.",  
-      "addressRegion": "Pm sound medical least want factor. Through treat look expect although visit health purpose. Reveal actually thought.",  
-      "addressCountry": "Policy own have. Allow beat need interesting. They drop condition citizen former.",  
-      "postalCode": "Staff them foot need town.",  
-      "postOfficeBoxNumber": "Heavy too charge level blue. Free generation relate fast American lose."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Similar history more serious American city. Move make memory tax. Reveal energy catch interesting region too. Sing serve president."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
