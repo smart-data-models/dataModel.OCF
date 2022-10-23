@@ -1,17 +1,32 @@
-エンティティロック  
-=========  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティロック  
+=========<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/Lock/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな説明です。**スマートデータモデル オリジナルのIoTDataデータモデルをプログラム化したものです。ロックを記述するリソース。プロパティ「lockState」は文字列である。値'Locked'は、ドアがロックされていることを示す。値'Unlocked'は、ドアがロックされていないことを示す。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**IoTData データモデルをスマートデータモデルプログラムに適応させたもの。Resource はロックを記述している。Property 'lockState' は文字列である。値'Locked'はドアがロックされていることを示す。値'Unlocked'は、ドアがUnlockedであることを示す**。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `if`: このResourceがサポートしているOCF Interface set。  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `lockState`: ロックの状態です。  - `n`: リソースのフレンドリーネーム  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `rt`: リソースタイプ  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSIエンティティタイプ。ロックでなければならない    
-必須項目  
-- `id`  - `type`    
-このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)から来ています。NGSIの要件に適合するように拡張されています。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `if[array]`: このResourceがサポートするOCF Interfaceセット。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `lockState[string]`: ロックの状態です。  - `n[string]`: リソースのフレンドリ名  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `rt[array]`: リソースの種類  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSIエンティティタイプ。ロックでなければならない  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)に由来しています。NGSIの要件に適合するように拡張されている。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Lock:    
@@ -331,9 +346,14 @@ Lock:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### Lock NGSI-v2 key-valuesの例。  
-Key-ValuesとしてJSON-LD形式のLockの例を紹介します。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### NGSI-v2鍵のロック例  
+ここでは、LockをJSON-LD形式でkey-valuesとした場合の例を示す。これは、`options=keyValues` を使用した場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータを返す。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Lock:id:XMLC:04027868",  
@@ -370,8 +390,10 @@ Lock:
   "areaServed": "Walk this agent brother reveal always writer. Experience usually simply cup. Thing later soon step bring end."  
 }  
 ```  
+</details>  
 #### ロック NGSI-v2 正規化例  
-ここでは、正規化されたJSON-LD形式のLockの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、正規化されたJSON-LD形式のLockの例である。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -449,127 +471,141 @@ Lock:
   }  
 }  
 ```  
-#### ロックNGSI-LDのキーバリューの例  
-Key-ValuesとしてJSON-LD形式でLockを表示した例です。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### NGSI-LDのキー値をロックする 例  
+ここでは、LockをJSON-LD形式でkey-valuesとした例を示す。これは `options=keyValues` を使った場合の NGSI-LD と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Lock:id:XMLC:04027868",  
-  "dateCreated": "2017-01-25T17:25:05Z",  
-  "dateModified": "1973-01-31T14:51:30Z",  
-  "source": "Market oil few line concern approach. Remember spring continue us follow. Mind know hundred allow.",  
-  "name": "Voice institution newspaper majority she hand treatment. Page concern send town this. Pressure after face federal small.",  
-  "alternateName": "Somebody lose often artist only real. Speak partner listen source population suggest. High if relate small turn might other.",  
-  "description": "Statement bit decide for seem walk. Role line door learn.",  
-  "dataProvider": "Front suggest however great task. Far accept morning make. His food your quickly near.",  
-  "owner": [  
-    "urn:ngsi-ld:Lock:items:RLUG:76139399",  
-    "urn:ngsi-ld:Lock:items:XCHK:80300766"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Lock:items:ADQP:70471091",  
-    "urn:ngsi-ld:Lock:items:RISH:90517499"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -27.3523885,  
-      -73.996577  
+    "id": "urn:ngsi-ld:Lock:id:XMLC:04027868",  
+    "dateCreated": "2017-01-25T17:25:05Z",  
+    "dateModified": "1973-01-31T14:51:30Z",  
+    "source": "Market oil few line concern approach. Remember spring continue us follow. Mind know hundred allow.",  
+    "name": "Voice institution newspaper majority she hand treatment. Page concern send town this. Pressure after face federal small.",  
+    "alternateName": "Somebody lose often artist only real. Speak partner listen source population suggest. High if relate small turn might other.",  
+    "description": "Statement bit decide for seem walk. Role line door learn.",  
+    "dataProvider": "Front suggest however great task. Far accept morning make. His food your quickly near.",  
+    "owner": [  
+        "urn:ngsi-ld:Lock:items:RLUG:76139399",  
+        "urn:ngsi-ld:Lock:items:XCHK:80300766"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Lock:items:ADQP:70471091",  
+        "urn:ngsi-ld:Lock:items:RISH:90517499"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -27.3523885,  
+            -73.996577  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Listen region player. Director alone example general carry.",  
+        "addressLocality": "Blue green write total road voice data girl. Degree must only forward movement tell. Begin boy commercial machine indicate time arrive.",  
+        "addressRegion": "Science deal until daughter state politics. Per whom break model. Place kid moment spend can at gas our.",  
+        "addressCountry": "Sister part over. Couple partner save your site price green.",  
+        "postalCode": "Respond single whatever. Campaign worry move soldier allow apply. Mr everybody possible opportunity.",  
+        "postOfficeBoxNumber": "Beyond name meet test finally evidence. Everyone lot grow executive structure term strong attack."  
+    },  
+    "areaServed": "Walk this agent brother reveal always writer. Experience usually simply cup. Thing later soon step bring end.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Listen region player. Director alone example general carry.",  
-    "addressLocality": "Blue green write total road voice data girl. Degree must only forward movement tell. Begin boy commercial machine indicate time arrive.",  
-    "addressRegion": "Science deal until daughter state politics. Per whom break model. Place kid moment spend can at gas our.",  
-    "addressCountry": "Sister part over. Couple partner save your site price green.",  
-    "postalCode": "Respond single whatever. Campaign worry move soldier allow apply. Mr everybody possible opportunity.",  
-    "postOfficeBoxNumber": "Beyond name meet test finally evidence. Everyone lot grow executive structure term strong attack."  
-  },  
-  "areaServed": "Walk this agent brother reveal always writer. Experience usually simply cup. Thing later soon step bring end.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### ロック NGSI-LD 正規化例  
-ここでは、正規化されたJSON-LD形式のLockの例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+ここでは、JSON-LD 形式の Lock を正規化した例を示す。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Lock:id:VNNQ:73928084",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1976-08-01T20:57:02Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2011-10-02T07:14:35Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Compare when medical per. Already near perform yet."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Garden maybe work newspaper relate people identify. Table PM author."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Finish alone because energy."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Foreign special happy. Buy account image entire."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Get choice face sea. Thing poor treat country. Old bank I meet price. Special gun discover continue."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Lock:items:DCOG:83560997",  
-      "urn:ngsi-ld:Lock:items:CSRD:45439878"  
+    "id": "urn:ngsi-ld:Lock:id:VNNQ:73928084",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1976-08-01T20:57:02Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2011-10-02T07:14:35Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Compare when medical per. Already near perform yet."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Garden maybe work newspaper relate people identify. Table PM author."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Finish alone because energy."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Foreign special happy. Buy account image entire."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Get choice face sea. Thing poor treat country. Old bank I meet price. Special gun discover continue."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Lock:items:DCOG:83560997",  
+            "urn:ngsi-ld:Lock:items:CSRD:45439878"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Lock:items:IKQT:29230314"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                33.225734,  
+                10.770827  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Four phone stay tax. Than new itself strategy strong central.",  
+            "addressLocality": "Song question government very why. Account red two include forward. Them case fear employee positive out. Training ever too system town enter movie store.",  
+            "addressRegion": "Through million but year million. His try brother history particularly protect.",  
+            "addressCountry": "Event blue power describe bed who. Eight vote product speak president him no. Push say worker pay.",  
+            "postalCode": "South gun especially speak yeah.",  
+            "postOfficeBoxNumber": "Hard beat national war receive child. Control especially less bar. Father word trip art once follow."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Not situation study adult. View long whose management visit would business former. Play pattern large measure other change."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Lock:items:IKQT:29230314"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        33.225734,  
-        10.770827  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Four phone stay tax. Than new itself strategy strong central.",  
-      "addressLocality": "Song question government very why. Account red two include forward. Them case fear employee positive out. Training ever too system town enter movie store.",  
-      "addressRegion": "Through million but year million. His try brother history particularly protect.",  
-      "addressCountry": "Event blue power describe bed who. Eight vote product speak president him no. Push say worker pay.",  
-      "postalCode": "South gun especially speak yeah.",  
-      "postOfficeBoxNumber": "Hard beat national war receive child. Control especially less bar. Father word trip art once follow."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Not situation study adult. View long whose management visit would business former. Play pattern large measure other change."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
