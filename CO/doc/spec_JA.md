@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 エンティティCO  
-========  
+========<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/CO/LICENSE.md)  
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**この Resource は、一酸化炭素が検知されたか否かを記述する。Property 'value' は boolean で、値 'true' は一酸化炭素が検知されたことを意味し、値 'false' は一酸化炭素が検知されていないことを意味する。  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Global description:**この Resource は、一酸化炭素が検知されたか否かを記述する。Property 'value' は boolean で、値 'true' は一酸化炭素が検知されたことを意味し、値 'false' は一酸化炭素が検知されていないことを意味する。  
 バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `id`: エンティティの一意な識別子  - `if`: このリソースがサポートする OCF インタフェースセット。  - `location`: 項目へのGeojson参照。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `measurement`: このセンサーの測定値、単位はppmです。  - `n`: リソースのフレンドリ名  - `name`: このアイテムの名称です。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `precision`: precision'の値が公開されると、ResourceのPropertiesに対して+/-の許容範囲を提供します。したがって、あるプロパティがある値にUPDATEされ、そのプロパティがRETRIEVEDされた場合、RETRIEVEDされた値は設定された値+/-精度の範囲内であれば有効である。  - `range`: リソースに含まれるプロパティの有効範囲を数値で表したもの。配列の最初の値が最小値、2 番目の値が最大値となります。  - `rt`: リソースの種類  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで指定する文字の列。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `step`: 定義された範囲のステップ値（範囲が数値の場合は整数）。  範囲が0.0〜10.0でステップが2.5の場合、有効な値は0.0、2.5、5.0、7.5、10.0である。  - `type`: NGSIエンティティタイプ。これはCO  - `value`: 一酸化炭素インジケーター、真＝感知、偽＝感知しない。    
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `if[array]`: このリソースがサポートする OCF インタフェースセット。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `measurement[number]`: このセンサーの測定値、単位はppmです。  - `n[string]`: リソースのフレンドリ名  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリスト  - `precision[number]`: 公開されるとき、'precision'の値は、ResourceのPropertyに対して+/-の許容範囲を提供する。したがって、あるプロパティがある値にUPDATEされ、そのプロパティがRETRIEVEDされた場合、RETRIEVEDされた値は設定された値+/-精度の範囲内であれば有効である。  - `range[array]`: Resource に含まれる Property の有効範囲を数値で表します。配列の最初の値が最小値、2 番目の値が最大値となります。  - `rt[array]`: リソースの種類  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `step[number]`: 定義された範囲にわたるステップ値。  範囲が0.0〜10.0でステップが2.5の場合、有効な値は0.0、2.5、5.0、7.5、10.0である。  - `type[string]`: NGSIエンティティタイプ。これはCO  - `value[boolean]`: 一酸化炭素インジケーター、真＝感知、偽＝感知しない。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 必要なプロパティ  
-- `id`  - `type`  - `value`    
+- `id`  - `type`  - `value`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 データモデルは、Open Connectivity Foundationが作成したオリジナルを引用しています。https://github.com/openconnectivityfoundation/IoTDataModels のオリジナルリポジトリ  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
 アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 CO:    
@@ -361,9 +374,14 @@ CO:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### CO NGSI-v2キーバリアブルの例  
-ここでは、COをJSON-LD形式でkey-valueとした場合の例を示す。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+#### CO NGSI-v2鍵盤の例  
+ここでは、COをJSON-LD形式でkey-valuesとした場合の例を示す。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:CO:id:YQVH:59080054",  
@@ -430,8 +448,10 @@ CO:
   "type": "CO"  
 }  
 ```  
+</details>  
 #### CO NGSI-v2 正規化例  
 以下は、正規化されたJSON-LD形式のCOの例である。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -566,197 +586,211 @@ CO:
   }  
 }  
 ```  
+</details>  
 #### CO NGSI-LDのキー値 例  
-ここでは、COをJSON-LD形式でkey-valueとして記述した例を示す。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを返す。  
+ここでは、COをJSON-LD形式でkey-valuesとした場合の例を示す。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:CO:id:YQVH:59080054",  
-  "dateCreated": "2009-04-24T13:29:20Z",  
-  "dateModified": "2001-09-01T12:10:21Z",  
-  "source": "Year sort eat student happen federal message.",  
-  "name": "Manager ever future him. Executive school list final consider increase staff.",  
-  "alternateName": "Fall firm here lay. Call management dinner.",  
-  "description": "Kid evening four goal lay. Down trip third cell or over class.",  
-  "dataProvider": "Which color human at main. Offer exactly next field soldier move. Site bad should who minute.",  
-  "owner": [  
-    "urn:ngsi-ld:CO:items:RGMJ:62379010",  
-    "urn:ngsi-ld:CO:items:GJQM:91546810"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:CO:items:KLIZ:44237049",  
-    "urn:ngsi-ld:CO:items:CTKA:51545589"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -65.6347215,  
-      -20.584982  
+    "id": "urn:ngsi-ld:CO:id:YQVH:59080054",  
+    "dateCreated": "2009-04-24T13:29:20Z",  
+    "dateModified": "2001-09-01T12:10:21Z",  
+    "source": "Year sort eat student happen federal message.",  
+    "name": "Manager ever future him. Executive school list final consider increase staff.",  
+    "alternateName": "Fall firm here lay. Call management dinner.",  
+    "description": "Kid evening four goal lay. Down trip third cell or over class.",  
+    "dataProvider": "Which color human at main. Offer exactly next field soldier move. Site bad should who minute.",  
+    "owner": [  
+        "urn:ngsi-ld:CO:items:RGMJ:62379010",  
+        "urn:ngsi-ld:CO:items:GJQM:91546810"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:CO:items:KLIZ:44237049",  
+        "urn:ngsi-ld:CO:items:CTKA:51545589"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -65.6347215,  
+            -20.584982  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Million bill shoulder writer respond type television. Group it partner recently in. Believe class face wonder heart.",  
+        "addressLocality": "Not someone second evening with north down. Anyone and relate challenge cell reveal long news. Win TV today side kid public. Rest quite have face partner act senior.",  
+        "addressRegion": "Whether floor standard rate carry great. Something miss partner live democratic product camera.",  
+        "addressCountry": "Social member late them offer argue military Mrs. Safe as as report responsibility anything stuff. Seat happy both listen. Provide true leave business.",  
+        "postalCode": "Dream must federal build. Grow nice company thus.",  
+        "postOfficeBoxNumber": "Under have majority while quite environment single anyone. Finally international possible record practice ball so. Maintain keep letter entire last. Notice loss some important share computer heart chair."  
+    },  
+    "areaServed": "Know author property imagine event relate. Someone either pattern particularly thank. Indicate east by value single yet. Happen PM certain tough.",  
+    "rt": [  
+        "oic.r.sensor.carbonmonoxide",  
+        "oic.r.sensor.carbonmonoxide"  
+    ],  
+    "value": {  
+        "type": "Property",  
+        "value": false  
+    },  
+    "measurement": {  
+        "type": "Property",  
+        "value": 629.1  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 771.1  
+    },  
+    "n": "Serve main throughout agent. End perhaps thus policy five budget indeed history.",  
+    "range": [  
+        904.9,  
+        165.3  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 848.4  
+    },  
+    "if": [  
+        "oic.if.s",  
+        "oic.if.s"  
+    ],  
+    "type": "CO",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Million bill shoulder writer respond type television. Group it partner recently in. Believe class face wonder heart.",  
-    "addressLocality": "Not someone second evening with north down. Anyone and relate challenge cell reveal long news. Win TV today side kid public. Rest quite have face partner act senior.",  
-    "addressRegion": "Whether floor standard rate carry great. Something miss partner live democratic product camera.",  
-    "addressCountry": "Social member late them offer argue military Mrs. Safe as as report responsibility anything stuff. Seat happy both listen. Provide true leave business.",  
-    "postalCode": "Dream must federal build. Grow nice company thus.",  
-    "postOfficeBoxNumber": "Under have majority while quite environment single anyone. Finally international possible record practice ball so. Maintain keep letter entire last. Notice loss some important share computer heart chair."  
-  },  
-  "areaServed": "Know author property imagine event relate. Someone either pattern particularly thank. Indicate east by value single yet. Happen PM certain tough.",  
-  "rt": [  
-    "oic.r.sensor.carbonmonoxide",  
-    "oic.r.sensor.carbonmonoxide"  
-  ],  
-  "value": {  
-    "type": "Property",  
-    "value": false  
-  },  
-  "measurement": {  
-    "type": "Property",  
-    "value": 629.1  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 771.1  
-  },  
-  "n": "Serve main throughout agent. End perhaps thus policy five budget indeed history.",  
-  "range": [  
-    904.9,  
-    165.3  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 848.4  
-  },  
-  "if": [  
-    "oic.if.s",  
-    "oic.if.s"  
-  ],  
-  "type": "CO",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### CO NGSI-LD 正規化例  
-以下は、COをJSON-LD形式で正規化した例である。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、正規化されたJSON-LD形式のCOの例である。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:CO:id:TLMT:85397772",  
-  "dateCreated": {  
-    "type": "Property",  
+    "id": "urn:ngsi-ld:CO:id:TLMT:85397772",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1993-02-12T18:56:03Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2003-12-05T22:57:02Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "He top today program. Strong sign treatment quickly bank."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Manager whatever station mother. Possible across wind before."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "State stand main practice kid. Require less its own mouth. International movement have study arrive fight fact ground. Need source most resource practice old American."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Argue body subject daughter us. Task have condition side bad program shoulder. Situation personal suffer eat man production soldier."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Have the young point education agree. Whether crime question individual personal now social."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:CO:items:PMDY:07690464",  
+            "urn:ngsi-ld:CO:items:KZPY:00464484"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:CO:items:UUCE:15603427"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -23.156593,  
+                70.781554  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Base coach himself marriage though population. Statement ready along find truth cover drop. People daughter teacher contain apply.",  
+            "addressLocality": "Someone four particularly use morning environment next. Describe reduce think minute door key hard. Culture stock own authority shoulder.",  
+            "addressRegion": "Will down assume consider high doctor street. Bad five return bit their challenge know.",  
+            "addressCountry": "Wall card kid peace fly exactly performance. Hair method medical window whose outside. Image up successful usually nice.",  
+            "postalCode": "Cover compare long left itself. Sell up term. A bit teach space recognize.",  
+            "postOfficeBoxNumber": "Say bill computer often difference trade."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Condition certain rest determine still soldier write. Energy low not sit lot care class. Test little social."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.sensor.carbonmonoxide"  
+        ]  
+    },  
     "value": {  
-      "@type": "DateTime",  
-      "@value": "1993-02-12T18:56:03Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2003-12-05T22:57:02Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "He top today program. Strong sign treatment quickly bank."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Manager whatever station mother. Possible across wind before."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "State stand main practice kid. Require less its own mouth. International movement have study arrive fight fact ground. Need source most resource practice old American."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Argue body subject daughter us. Task have condition side bad program shoulder. Situation personal suffer eat man production soldier."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Have the young point education agree. Whether crime question individual personal now social."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:CO:items:PMDY:07690464",  
-      "urn:ngsi-ld:CO:items:KZPY:00464484"  
+        "type": "Property",  
+        "value": true  
+    },  
+    "measurement": {  
+        "type": "Property",  
+        "value": 235.2  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 624.8  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Down see reach. Win physical want arrive financial. Same I sometimes pass."  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            341.7,  
+            185.5  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 259.2  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.s"  
+        ]  
+    },  
+    "type": "CO",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:CO:items:UUCE:15603427"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -23.156593,  
-        70.781554  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Base coach himself marriage though population. Statement ready along find truth cover drop. People daughter teacher contain apply.",  
-      "addressLocality": "Someone four particularly use morning environment next. Describe reduce think minute door key hard. Culture stock own authority shoulder.",  
-      "addressRegion": "Will down assume consider high doctor street. Bad five return bit their challenge know.",  
-      "addressCountry": "Wall card kid peace fly exactly performance. Hair method medical window whose outside. Image up successful usually nice.",  
-      "postalCode": "Cover compare long left itself. Sell up term. A bit teach space recognize.",  
-      "postOfficeBoxNumber": "Say bill computer often difference trade."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Condition certain rest determine still soldier write. Energy low not sit lot care class. Test little social."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.sensor.carbonmonoxide"  
-    ]  
-  },  
-  "value": {  
-    "type": "Property",  
-    "value": true  
-  },  
-  "measurement": {  
-    "type": "Property",  
-    "value": 235.2  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 624.8  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Down see reach. Win physical want arrive financial. Same I sometimes pass."  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      341.7,  
-      185.5  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 259.2  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.s"  
-    ]  
-  },  
-  "type": "CO",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
