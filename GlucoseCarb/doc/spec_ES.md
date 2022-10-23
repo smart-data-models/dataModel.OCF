@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entidad: GlucosaCarb  
-====================  
+====================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.OCF/blob/master/GlucoseCarb/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Descripción global: **Este Recurso describe las Propiedades asociadas a los carbohidratos de un contexto.La Propiedad carb tiene una unidad por defecto de gramos[g].Las Propiedades carb y meal son valores de sólo lectura que son proporcionados por el Servidor.Cuando se omite el rango el valor por defecto es de 0 a +MAXFLOAT.**  
 versión: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `carb`: La cantidad de hidratos de carbono que se ha emprendido en gramos  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `if`: El conjunto de interfaces OCF que admite este recurso  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `meal`: Registro de la hora de ingesta de carbohidratos  - `n`: Nombre amistoso del recurso  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `precision`: Cuando se expone el valor en "precisión" proporciona una tolerancia +/- contra las Propiedades en el Recurso. Por lo tanto, si una propiedad se actualiza a un valor y esa propiedad se recupera, el valor recuperado es válido si está en el rango del valor establecido +/- precisión.  - `range`: El rango válido para la Propiedad en el Recurso como un número. El primer valor de la matriz es el valor mínimo, el segundo valor de la matriz es el valor máximo.  - `rt`: Tipo de recurso  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `step`: Valor del paso a través del rango definido un número entero cuando el rango es un número.  Este es el incremento para los valores válidos a través del rango; así que si el rango es 0.0..10.0 y el paso es 2.5 entonces los valores válidos son 0.0,2.5,5.0,7.5,10.0.  - `type`: Tipo de entidad NGSI. Tiene que ser GlucoseCarb    
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>  
+- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `carb[number]`: La cantidad de hidratos de carbono que se ha emprendido en gramos  - `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Una descripción de este artículo  - `id[*]`: Identificador único de la entidad  - `if[array]`: El conjunto de interfaces OCF que admite este recurso  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `meal[string]`: Registro de la hora de ingesta de carbohidratos  - `n[string]`: Nombre amigable del Recurso  - `name[string]`: El nombre de este artículo.  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `precision[number]`: Cuando se expone el valor en "precisión" proporciona una tolerancia +/- contra las Propiedades en el Recurso. Por lo tanto, si una propiedad se actualiza a un valor y esa propiedad se recupera, el valor recuperado es válido si está en el rango del valor establecido +/- precisión.  - `range[array]`: El rango válido para la Propiedad en el Recurso como un número. El primer valor de la matriz es el valor mínimo, el segundo valor de la matriz es el valor máximo.  - `rt[array]`: Tipo de recurso  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `step[number]`: Valor del paso a través del rango definido un número entero cuando el rango es un número.  Este es el incremento para los valores válidos a través del rango; así que si el rango es 0.0..10.0 y el paso es 2.5 entonces los valores válidos son 0.0,2.5,5.0,7.5,10.0.  - `type[string]`: Tipo de entidad NGSI. Tiene que ser GlucoseCarb  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propiedades requeridas  
-- `carb`  - `id`  - `meal`  - `type`    
+- `carb`  - `id`  - `meal`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Modelo de datos adaptado del original creado por la Open Connectivity Foundation. Repositorio original en https://github.com/openconnectivityfoundation/IoTDataModels  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 GlucoseCarb:    
@@ -375,9 +388,14 @@ GlucoseCarb:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Ejemplo de carga útil  
 #### GlucoseCarb NGSI-v2 key-values Ejemplo  
 Aquí hay un ejemplo de un GlucoseCarb en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:GlucoseCarb:id:IXKW:55577808",  
@@ -441,8 +459,10 @@ GlucoseCarb:
   "type": "GlucoseCarb"  
 }  
 ```  
+</details>  
 #### GlucoseCarb NGSI-v2 normalizado Ejemplo  
 Este es un ejemplo de un GlucoseCarb en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -574,194 +594,208 @@ GlucoseCarb:
   }  
 }  
 ```  
+</details>  
 #### GlucoseCarb NGSI-LD key-values Ejemplo  
 Aquí hay un ejemplo de un GlucoseCarb en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:GlucoseCarb:id:IXKW:55577808",  
-  "dateCreated": "1993-02-18T14:28:07Z",  
-  "dateModified": "1997-09-28T09:47:10Z",  
-  "source": "Financial civil western modern message together strategy. Meeting room hold drug mention. Policy indeed school identify government know. Take ok together environmental candidate.",  
-  "name": "Meeting and under hair occur. Within season check special example.",  
-  "alternateName": "Develop involve source study participant commercial. Figure recent whom brother answer. Often conference country let among although book modern.",  
-  "description": "Plant present consumer if fire. Information still movie language style. Page per form reality.",  
-  "dataProvider": "Project she real. Foot half movement north.",  
-  "owner": [  
-    "urn:ngsi-ld:GlucoseCarb:items:TDIO:31776660",  
-    "urn:ngsi-ld:GlucoseCarb:items:TJOS:80357915"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:GlucoseCarb:items:FTII:88661137",  
-    "urn:ngsi-ld:GlucoseCarb:items:LQRK:95045619"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -78.118671,  
-      -21.584307  
+    "id": "urn:ngsi-ld:GlucoseCarb:id:IXKW:55577808",  
+    "dateCreated": "1993-02-18T14:28:07Z",  
+    "dateModified": "1997-09-28T09:47:10Z",  
+    "source": "Financial civil western modern message together strategy. Meeting room hold drug mention. Policy indeed school identify government know. Take ok together environmental candidate.",  
+    "name": "Meeting and under hair occur. Within season check special example.",  
+    "alternateName": "Develop involve source study participant commercial. Figure recent whom brother answer. Often conference country let among although book modern.",  
+    "description": "Plant present consumer if fire. Information still movie language style. Page per form reality.",  
+    "dataProvider": "Project she real. Foot half movement north.",  
+    "owner": [  
+        "urn:ngsi-ld:GlucoseCarb:items:TDIO:31776660",  
+        "urn:ngsi-ld:GlucoseCarb:items:TJOS:80357915"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:GlucoseCarb:items:FTII:88661137",  
+        "urn:ngsi-ld:GlucoseCarb:items:LQRK:95045619"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -78.118671,  
+            -21.584307  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Yard writer after economy since audience. Again little must exactly.",  
+        "addressLocality": "Throw network second design threat. Several radio budget set against maintain. Provide movie receive Republican base read boy.",  
+        "addressRegion": "Significant chance training individual forget learn state. Church who yes recent yet although trial. Here information only.",  
+        "addressCountry": "Contain bar other bed draw. Me natural girl music account law. Film education let what upon war measure relate.",  
+        "postalCode": "Answer east nature this. Join that social. Miss game save step choice.",  
+        "postOfficeBoxNumber": "Record mind market task power fund find. Skill region stage happen. Suddenly total want against former. Military deal institution."  
+    },  
+    "areaServed": "Work hand gas appear type. Entire why her huge first.",  
+    "rt": [  
+        "oic.r.glucose.carb",  
+        "oic.r.glucose.carb"  
+    ],  
+    "carb": {  
+        "type": "Property",  
+        "value": 136.7  
+    },  
+    "meal": "other",  
+    "range": [  
+        170.5,  
+        706.1  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 671.9  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 648.4  
+    },  
+    "n": "Interview person person whole success top edge. Brother quite describe could Republican network single walk. Among program determine doctor.",  
+    "if": [  
+        "oic.if.s",  
+        "oic.if.baseline"  
+    ],  
+    "type": "GlucoseCarb",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Yard writer after economy since audience. Again little must exactly.",  
-    "addressLocality": "Throw network second design threat. Several radio budget set against maintain. Provide movie receive Republican base read boy.",  
-    "addressRegion": "Significant chance training individual forget learn state. Church who yes recent yet although trial. Here information only.",  
-    "addressCountry": "Contain bar other bed draw. Me natural girl music account law. Film education let what upon war measure relate.",  
-    "postalCode": "Answer east nature this. Join that social. Miss game save step choice.",  
-    "postOfficeBoxNumber": "Record mind market task power fund find. Skill region stage happen. Suddenly total want against former. Military deal institution."  
-  },  
-  "areaServed": "Work hand gas appear type. Entire why her huge first.",  
-  "rt": [  
-    "oic.r.glucose.carb",  
-    "oic.r.glucose.carb"  
-  ],  
-  "carb": {  
-    "type": "Property",  
-    "value": 136.7  
-  },  
-  "meal": "other",  
-  "range": [  
-    170.5,  
-    706.1  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 671.9  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 648.4  
-  },  
-  "n": "Interview person person whole success top edge. Brother quite describe could Republican network single walk. Among program determine doctor.",  
-  "if": [  
-    "oic.if.s",  
-    "oic.if.baseline"  
-  ],  
-  "type": "GlucoseCarb",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### GlucoseCarb NGSI-LD normalizado Ejemplo  
 Este es un ejemplo de un GlucoseCarb en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:GlucoseCarb:id:COKE:43939058",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1972-10-23T07:02:37Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2020-07-11T01:59:03Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Sound than consumer yet meet around maybe. Tree report deal TV lawyer receive. Take manager several nice million bag."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Family detail federal bad practice as dark. Article really point step southern maintain central worry."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Serious simple art town nor plant state happen. Policy evidence idea game."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Tell magazine field kid free some. I certain picture front key."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Tough interest computer pattern happen less enjoy threat. Role life bad process explain. Finally soon first most. Tend street impact role."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:GlucoseCarb:items:NIZT:03977609",  
-      "urn:ngsi-ld:GlucoseCarb:items:DWEA:06806930"  
+    "id": "urn:ngsi-ld:GlucoseCarb:id:COKE:43939058",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1972-10-23T07:02:37Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2020-07-11T01:59:03Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Sound than consumer yet meet around maybe. Tree report deal TV lawyer receive. Take manager several nice million bag."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Family detail federal bad practice as dark. Article really point step southern maintain central worry."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Serious simple art town nor plant state happen. Policy evidence idea game."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Tell magazine field kid free some. I certain picture front key."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Tough interest computer pattern happen less enjoy threat. Role life bad process explain. Finally soon first most. Tend street impact role."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:GlucoseCarb:items:NIZT:03977609",  
+            "urn:ngsi-ld:GlucoseCarb:items:DWEA:06806930"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:GlucoseCarb:items:NTWO:83362058"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -73.169997,  
+                -161.055539  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "State table pretty account sort detail. Treatment pattern way attorney. Letter drop wish nothing yes indeed.",  
+            "addressLocality": "Peace hope popular shoulder career course choose. Husband keep collection machine water.",  
+            "addressRegion": "Wear thought box seven wind manager. Pay force surface manager day store. Ok head occur executive range.",  
+            "addressCountry": "Whatever administration it often. We fund idea ask capital despite pay.",  
+            "postalCode": "Feeling free these certainly brother. So situation court fire rich expert local.",  
+            "postOfficeBoxNumber": "Risk big lead particularly audience dinner sign and. Size difficult relationship back thousand realize."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Both rock and defense imagine. Such especially grow civil per. Sea ago spring."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.glucose.carb"  
+        ]  
+    },  
+    "carb": {  
+        "type": "Property",  
+        "value": 156.3  
+    },  
+    "meal": {  
+        "type": "Property",  
+        "value": "undetermined"  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            730.8,  
+            508.3  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 60.5  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 892.1  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Its program population best. Wind through because then leave expert mouth. Lay tell drug animal law vote degree."  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.s"  
+        ]  
+    },  
+    "type": "GlucoseCarb",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:GlucoseCarb:items:NTWO:83362058"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -73.169997,  
-        -161.055539  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "State table pretty account sort detail. Treatment pattern way attorney. Letter drop wish nothing yes indeed.",  
-      "addressLocality": "Peace hope popular shoulder career course choose. Husband keep collection machine water.",  
-      "addressRegion": "Wear thought box seven wind manager. Pay force surface manager day store. Ok head occur executive range.",  
-      "addressCountry": "Whatever administration it often. We fund idea ask capital despite pay.",  
-      "postalCode": "Feeling free these certainly brother. So situation court fire rich expert local.",  
-      "postOfficeBoxNumber": "Risk big lead particularly audience dinner sign and. Size difficult relationship back thousand realize."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Both rock and defense imagine. Such especially grow civil per. Sea ago spring."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.glucose.carb"  
-    ]  
-  },  
-  "carb": {  
-    "type": "Property",  
-    "value": 156.3  
-  },  
-  "meal": {  
-    "type": "Property",  
-    "value": "undetermined"  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      730.8,  
-      508.3  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 60.5  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 892.1  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Its program population best. Wind through because then leave expert mouth. Lay tell drug animal law vote degree."  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.s"  
-    ]  
-  },  
-  "type": "GlucoseCarb",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
