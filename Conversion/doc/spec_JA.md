@@ -1,17 +1,32 @@
-エンティティ変換  
-========  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+事業者コンバージョン  
+==========<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/Conversion/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな説明です。**スマートデータモデル オリジナルのIoTDataデータモデルをプログラム化したものです。このリソースは、異なる燃料（天然ガスを含む）の消費に関連するエネルギーに関連するプロパティを記述します。変換係数は、ガスの体積をガスのエネルギーに変換するための計算の一部として使用される数値です。この計算に使用される値は、一般的に地域の規制によって定義され、したがって変換係数リソースは設定可能です。燃料量(m3)から燃料エネルギー(kWh)に変換するために、計算の一部として使用/要求される変換係数を提供します。**  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**オリジナルの IoTData データモデルをスマートデータモデルプログラムに適応させたもの。このリソースは、異なる燃料（天然ガスを含む）の消費に関連するエネルギーに関連するプロパティを記述する。変換係数は、ガス量をガスエネルギーに変換するための計算の一部として使用される数値である。この計算に使用される値は、一般的に地域の規制によって定義され、従って変換係数リソースは設定可能である。燃料の体積（m3）から燃料のエネルギー（kWh）へ変換する計算の一部として使用される/必要とされる変換係数を提供する。**  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `conversion`: 燃料の体積を消費エネルギーに換算するための換算係数  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `if`: このリソースがサポートするOCFインターフェイス  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `n`: リソースのフレンドリーネーム  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `precision`: 露出値の精度の粒度  - `rt`: リソースタイプ  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSIエンティティタイプ。変換でなければならない    
-必須項目  
-- `id`  - `type`    
-このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)から来ています。NGSIの要件に適合するように拡張されています。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `conversion[number]`: 燃料の体積を消費エネルギーに換算するための換算係数  - `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `if[array]`: このリソースがサポートする OCF インターフェース。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `n[string]`: リソースのフレンドリ名  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリスト  - `precision[number]`: 露出値の精度粒度  - `rt[array]`: リソースの種類  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSIエンティティタイプ。これは、Conversionでなければなりません。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)に由来しています。NGSIの要件に適合するように拡張されている。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Conversion:    
@@ -338,9 +353,14 @@ Conversion:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### 変換NGSI-v2のキーバリューの例  
-ここでは、JSON-LD形式でkey-valuesとして変換した例を紹介します。これは`options=keyValues`を使った場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### 変換NGSI-v2キー値例  
+ここでは、key-valuesとしてJSON-LD形式でConversionを行う例を示す。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Conversion:id:DKJV:44849161",  
@@ -377,8 +397,10 @@ Conversion:
   "areaServed": "Involve attorney they day success scientist. Author customer anything fact now always. Describe former forget improve reach."  
 }  
 ```  
+</details>  
 #### 変換 NGSI-v2 正規化例  
-ここでは、正規化されたJSON-LD形式のConversionの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、正規化されたJSON-LD形式のConversionの例である。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -456,127 +478,141 @@ Conversion:
   }  
 }  
 ```  
-#### 変換NGSI-LDのキーバリューの例  
-ここでは、JSON-LD形式でkey-valuesとしてConversionした例を紹介します。これは、`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### 変換NGSI-LDキー値例  
+ここでは、key-valuesとしてJSON-LD形式でConversionを行う例を示します。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Conversion:id:DKJV:44849161",  
-  "dateCreated": "2010-02-08T21:57:25Z",  
-  "dateModified": "2004-09-21T01:38:10Z",  
-  "source": "Best actually company race add cover along. According way international. Natural whether item skin.",  
-  "name": "Suggest someone leave foot. Case agency thousand section.",  
-  "alternateName": "Can plant hand nearly choice society. Newspaper dark bit direction discuss not sort amount.",  
-  "description": "Officer join base sport since cell. Type impact yourself enough position. Down represent camera policy account buy power page.",  
-  "dataProvider": "Hear face street among general speak dog child. Couple civil information city take yet. Build bring Mrs side college east.",  
-  "owner": [  
-    "urn:ngsi-ld:Conversion:items:CFKS:46510991",  
-    "urn:ngsi-ld:Conversion:items:QBTN:84889064"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Conversion:items:AOWI:79063714",  
-    "urn:ngsi-ld:Conversion:items:JEWQ:71586332"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      48.6082595,  
-      -148.627494  
+    "id": "urn:ngsi-ld:Conversion:id:DKJV:44849161",  
+    "dateCreated": "2010-02-08T21:57:25Z",  
+    "dateModified": "2004-09-21T01:38:10Z",  
+    "source": "Best actually company race add cover along. According way international. Natural whether item skin.",  
+    "name": "Suggest someone leave foot. Case agency thousand section.",  
+    "alternateName": "Can plant hand nearly choice society. Newspaper dark bit direction discuss not sort amount.",  
+    "description": "Officer join base sport since cell. Type impact yourself enough position. Down represent camera policy account buy power page.",  
+    "dataProvider": "Hear face street among general speak dog child. Couple civil information city take yet. Build bring Mrs side college east.",  
+    "owner": [  
+        "urn:ngsi-ld:Conversion:items:CFKS:46510991",  
+        "urn:ngsi-ld:Conversion:items:QBTN:84889064"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Conversion:items:AOWI:79063714",  
+        "urn:ngsi-ld:Conversion:items:JEWQ:71586332"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            48.6082595,  
+            -148.627494  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Thank author mouth political. East perform cultural low seat close rise. Star window we special mission.",  
+        "addressLocality": "Answer himself though artist clearly area total. Sure realize alone. Able nation community realize camera.",  
+        "addressRegion": "Artist Mrs enjoy herself. Lot plant three employee find.",  
+        "addressCountry": "Strategy coach industry daughter. Much me hot Mr author. Firm style room story worry back travel.",  
+        "postalCode": "Voice very power ever. Nature share six nation recognize. Son knowledge make. Require remain deep she investment.",  
+        "postOfficeBoxNumber": "Tree report trouble away feeling summer. Might boy these clearly choose."  
+    },  
+    "areaServed": "Involve attorney they day success scientist. Author customer anything fact now always. Describe former forget improve reach.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Thank author mouth political. East perform cultural low seat close rise. Star window we special mission.",  
-    "addressLocality": "Answer himself though artist clearly area total. Sure realize alone. Able nation community realize camera.",  
-    "addressRegion": "Artist Mrs enjoy herself. Lot plant three employee find.",  
-    "addressCountry": "Strategy coach industry daughter. Much me hot Mr author. Firm style room story worry back travel.",  
-    "postalCode": "Voice very power ever. Nature share six nation recognize. Son knowledge make. Require remain deep she investment.",  
-    "postOfficeBoxNumber": "Tree report trouble away feeling summer. Might boy these clearly choose."  
-  },  
-  "areaServed": "Involve attorney they day success scientist. Author customer anything fact now always. Describe former forget improve reach.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-#### 変換NGSI-LDの正規化例  
-ここでは、正規化されたJSON-LD形式のConversionの例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### 変換 NGSI-LD 正規化例  
+以下は、正規化されたJSON-LD形式のConversionの例である。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Conversion:id:MLBE:30264218",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2013-06-24T03:19:06Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2002-09-22T02:56:38Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Anyone season apply something might send. Our marriage final choose."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Ground unit candidate day else boy next. Listen office car star."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Sound price sister. Cell phone within seem. Try hotel lot can more one."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Pass gun nearly image still subject. Your nothing about people moment contain get. Try treatment body level decide."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Network respond land media near able design."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Conversion:items:EEEA:28093445",  
-      "urn:ngsi-ld:Conversion:items:ZXDN:42698908"  
+    "id": "urn:ngsi-ld:Conversion:id:MLBE:30264218",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2013-06-24T03:19:06Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2002-09-22T02:56:38Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Anyone season apply something might send. Our marriage final choose."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Ground unit candidate day else boy next. Listen office car star."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Sound price sister. Cell phone within seem. Try hotel lot can more one."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Pass gun nearly image still subject. Your nothing about people moment contain get. Try treatment body level decide."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Network respond land media near able design."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Conversion:items:EEEA:28093445",  
+            "urn:ngsi-ld:Conversion:items:ZXDN:42698908"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Conversion:items:BDPQ:45490144"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                25.8744655,  
+                -47.724996  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Rather live government course. Pass mention training or base. Near peace second indicate. Seem lot real amount movie my.",  
+            "addressLocality": "Author director lead face. Through tonight crime. Red save up action add mouth when.",  
+            "addressRegion": "Goal there hard determine. Set help size heavy. Model yes newspaper both without blue between.",  
+            "addressCountry": "Class future wrong. Picture they help firm road.",  
+            "postalCode": "Indeed all decade. Create move season hour clear more system. Save only cut order.",  
+            "postOfficeBoxNumber": "Budget bill situation throw so new oil."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Common effect economic also. Decade can suggest girl training. Study practice policy yeah might outside so."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Conversion:items:BDPQ:45490144"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        25.8744655,  
-        -47.724996  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Rather live government course. Pass mention training or base. Near peace second indicate. Seem lot real amount movie my.",  
-      "addressLocality": "Author director lead face. Through tonight crime. Red save up action add mouth when.",  
-      "addressRegion": "Goal there hard determine. Set help size heavy. Model yes newspaper both without blue between.",  
-      "addressCountry": "Class future wrong. Picture they help firm road.",  
-      "postalCode": "Indeed all decade. Create move season hour clear more system. Save only cut order.",  
-      "postOfficeBoxNumber": "Budget bill situation throw so new oil."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Common effect economic also. Decade can suggest girl training. Study practice policy yeah might outside so."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
