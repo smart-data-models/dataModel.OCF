@@ -1,17 +1,32 @@
-エンティティ：設定-サポート  
-==============  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティ：Settings-support  
+=======================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/settings-support/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな説明です。**スマートデータモデル オリジナルのIoTDataデータモデルをプログラム化したものです。現在のデバイスサポート設定を取得します。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**スマート・データ・モデル IoTData データ・モデルをプログラム化したものです。現在のデバイスのサポート設定を取得する **。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `if`:   - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `remote-management`: サポートがリモートアクセスできるようにすることで、サポートがユーザーの設定を管理し、問題を解決できるようになります。  - `rt`: サポートのためのデバイス設定のリソースタイプ  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `software-auto-update`: ソフトウェア - 自動更新。  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSIのエンティティタイプ。設定サポートでなければならない    
-必須項目  
-- `id`  - `type`    
-このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)から来ています。NGSIの要件に適合するように拡張されています。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `if[array]`: 原文には記載がありません  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリスト  - `remote-management[boolean]`: サポートがリモートアクセスできるようにすることで、サポートがユーザーの設定を操作したり、問題のトラブルシューティングを行えるようにします。  - `rt[array]`: サポート用デバイス設定のリソースタイプ  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `software-auto-update[boolean]`: ソフトウェア - 自動更新。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSIエンティティタイプ。設定-サポートでなければならない  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)に由来しています。NGSIの要件に適合するように拡張されている。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 settings-support:    
@@ -89,6 +104,7 @@ settings-support:
       x-ngsi:    
         type: Property    
     if:    
+      description: 'No description is available in the original'    
       items:    
         enum:    
           - oic.if.rw    
@@ -98,6 +114,8 @@ settings-support:
       readOnly: true    
       type: array    
       uniqueItems: true    
+      x-ngsi:    
+        type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -322,9 +340,14 @@ settings-support:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### settings-support NGSI-v2 key-values の例。  
-ここでは、JSON-LD形式でkey-valuesとして設定をサポートする例を紹介します。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### settings-support NGSI-v2 key-values 例．  
+ここでは、Settings-supportをJSON-LD形式でkey-valuesとして記述した例を示します。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:settings-support:id:DCXL:35135214",  
@@ -361,8 +384,10 @@ settings-support:
   "areaServed": "Remain issue law be authority animal morning. Value eye water court hundred."  
 }  
 ```  
-#### 設定サポート NGSI-v2 正規化例  
-ここでは、正規化されたJSON-LD形式のsettings-supportの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### settings-support NGSI-v2 normalized Example  
+以下は、正規化されたJSON-LD形式のSettings-supportの例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -440,127 +465,141 @@ settings-support:
   }  
 }  
 ```  
+</details>  
 #### settings-support NGSI-LD key-values の例。  
-ここでは、JSON-LD形式でkey-valuesとして設定をサポートする例を紹介します。これは、`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+ここでは、Settings-supportをJSON-LD形式でkey-valuesとして記述した例を示します。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:settings-support:id:DCXL:35135214",  
-  "dateCreated": "1970-08-28T07:17:42Z",  
-  "dateModified": "1985-03-07T20:36:42Z",  
-  "source": "But tend across trade grow whose social. Turn also these fast. Responsibility back speech effect study value artist.",  
-  "name": "You available foreign note conference plant. Collection run never.",  
-  "alternateName": "Two happy technology among part. Feel official effect wonder idea weight. Strategy tree every soldier within.",  
-  "description": "Defense food thousand that Republican call. Order morning relate issue until listen one.",  
-  "dataProvider": "Safe from nothing career understand. Worker exactly nature not parent leave effect.",  
-  "owner": [  
-    "urn:ngsi-ld:settings-support:items:GPDL:92961545",  
-    "urn:ngsi-ld:settings-support:items:DVHR:85360112"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:settings-support:items:ITCV:18611678",  
-    "urn:ngsi-ld:settings-support:items:JJUH:55370163"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -39.545254,  
-      -58.72669  
+    "id": "urn:ngsi-ld:settings-support:id:DCXL:35135214",  
+    "dateCreated": "1970-08-28T07:17:42Z",  
+    "dateModified": "1985-03-07T20:36:42Z",  
+    "source": "But tend across trade grow whose social. Turn also these fast. Responsibility back speech effect study value artist.",  
+    "name": "You available foreign note conference plant. Collection run never.",  
+    "alternateName": "Two happy technology among part. Feel official effect wonder idea weight. Strategy tree every soldier within.",  
+    "description": "Defense food thousand that Republican call. Order morning relate issue until listen one.",  
+    "dataProvider": "Safe from nothing career understand. Worker exactly nature not parent leave effect.",  
+    "owner": [  
+        "urn:ngsi-ld:settings-support:items:GPDL:92961545",  
+        "urn:ngsi-ld:settings-support:items:DVHR:85360112"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:settings-support:items:ITCV:18611678",  
+        "urn:ngsi-ld:settings-support:items:JJUH:55370163"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -39.545254,  
+            -58.72669  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Cold be week boy draw.",  
+        "addressLocality": "Cause citizen think matter a call. Sport part seven however trouble focus hold.",  
+        "addressRegion": "Next government interview feeling newspaper family response usually. Become carry buy control everyone administration.",  
+        "addressCountry": "Power gas consumer study.",  
+        "postalCode": "Different Mrs decide history body early suggest. Cell serve probably focus everybody laugh travel determine. Out over low first either four.",  
+        "postOfficeBoxNumber": "Camera suddenly appear cut next mean. Hold short country message."  
+    },  
+    "areaServed": "Remain issue law be authority animal morning. Value eye water court hundred.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Cold be week boy draw.",  
-    "addressLocality": "Cause citizen think matter a call. Sport part seven however trouble focus hold.",  
-    "addressRegion": "Next government interview feeling newspaper family response usually. Become carry buy control everyone administration.",  
-    "addressCountry": "Power gas consumer study.",  
-    "postalCode": "Different Mrs decide history body early suggest. Cell serve probably focus everybody laugh travel determine. Out over low first either four.",  
-    "postOfficeBoxNumber": "Camera suddenly appear cut next mean. Hold short country message."  
-  },  
-  "areaServed": "Remain issue law be authority animal morning. Value eye water court hundred.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-#### 設定支援 NGSI-LD 正規化例  
-ここでは、正規化されたJSON-LD形式のsettings-supportの例を示します。これはオプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### settings-support NGSI-LD normalized Example  
+以下は、正規化されたJSON-LD形式のSettings-supportの例である。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:settings-support:id:QVJM:58518858",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1996-07-26T05:54:21Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2003-05-11T10:13:08Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "System fill will clear market base. Role listen interest up. Together seven answer draw wear boy."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Around painting leg control boy. Model through natural loss country message. Wall rather purpose statement."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "She control argue worker road morning. Few stuff offer message believe Democrat."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Have history person wonder particularly according."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Agreement upon traditional bill couple. Tell mean expect."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:settings-support:items:FLOW:79198536",  
-      "urn:ngsi-ld:settings-support:items:STKW:49670786"  
+    "id": "urn:ngsi-ld:settings-support:id:QVJM:58518858",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1996-07-26T05:54:21Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2003-05-11T10:13:08Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "System fill will clear market base. Role listen interest up. Together seven answer draw wear boy."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Around painting leg control boy. Model through natural loss country message. Wall rather purpose statement."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "She control argue worker road morning. Few stuff offer message believe Democrat."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Have history person wonder particularly according."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Agreement upon traditional bill couple. Tell mean expect."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:settings-support:items:FLOW:79198536",  
+            "urn:ngsi-ld:settings-support:items:STKW:49670786"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:settings-support:items:LZCL:52072895"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                15.8114245,  
+                25.157261  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Television those hope TV material single north. Yeah although ability his defense apply.",  
+            "addressLocality": "Republican however resource professor. Well ever claim no star even.",  
+            "addressRegion": "Trial end between worry carry training trouble.",  
+            "addressCountry": "Grow relationship natural among when. Career answer record data key read table. See during million on.",  
+            "postalCode": "Black computer away into design beyond. Specific hand car. Chair case similar.",  
+            "postOfficeBoxNumber": "Notice similar begin maybe growth. Drop health last picture. Citizen affect many."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Say box want focus whom. Fear still hold scientist."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:settings-support:items:LZCL:52072895"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        15.8114245,  
-        25.157261  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Television those hope TV material single north. Yeah although ability his defense apply.",  
-      "addressLocality": "Republican however resource professor. Well ever claim no star even.",  
-      "addressRegion": "Trial end between worry carry training trouble.",  
-      "addressCountry": "Grow relationship natural among when. Career answer record data key read table. See during million on.",  
-      "postalCode": "Black computer away into design beyond. Specific hand car. Chair case similar.",  
-      "postOfficeBoxNumber": "Notice similar begin maybe growth. Drop health last picture. Citizen affect many."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Say box want focus whom. Fear still hold scientist."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
