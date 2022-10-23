@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 エンティティ測定  
-========  
+========<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/Measurement/LICENSE.md)  
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述。**このリソースは、ある値やプロパティ、エンティティの連続的な測定値を記述する。Property unit は文字列で、SI単位をsenMLフォーマットで記述する https://www.iana.org/assignments/senml/senml.xhtml** 。  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述です。**この Resource は、ある値や特性、実体の連続的な測定値を記述する。Property unit は文字列で、SI単位をsenMLフォーマットで記述する https://www.iana.org/assignments/senml/senml.xhtml** 。  
 バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `id`: エンティティの一意な識別子  - `if`: このリソースがサポートする OCF インタフェースセット。  - `location`: アイテムへのGeojsonリファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `measurement`: このセンサーの測定値、単位はセンサーの種類に依存します。  - `n`: リソースのフレンドリ名  - `name`: このアイテムの名称です。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `precision`: precision'の値が公開されると、ResourceのPropertiesに対して+/-の許容範囲を提供します。したがって、あるプロパティがある値にUPDATEされ、そのプロパティがRETRIEVEDされた場合、RETRIEVEDされた値は設定された値+/-精度の範囲内であれば有効である。  - `range`: リソースに含まれるプロパティの有効範囲を数値で表したもの。配列の最初の値が最小値、2 番目の値が最大値となります。  - `rt`: リソースタイプ  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで指定する文字の列。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `step`: 定義された範囲のステップ値（範囲が数値の場合は整数）。  範囲が0.0〜10.0でステップが2.5の場合、有効な値は0.0、2.5、5.0、7.5、10.0である。  - `type`: NGSIエンティティタイプ。それはMeasurementでなければならない  - `unit`: 測定値のSenMLにおけるSI単位    
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `if[array]`: このリソースがサポートする OCF インタフェースセット。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `measurement[number]`: このセンサーの測定値、単位はセンサーの種類に依存します。  - `n[string]`: リソースのフレンドリ名  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `precision[number]`: 公開されるとき、'precision'の値は、ResourceのPropertyに対して+/-の許容範囲を提供する。したがって、あるプロパティがある値にUPDATEされ、そのプロパティがRETRIEVEDされた場合、RETRIEVEDされた値は設定された値+/-精度の範囲内であれば有効である。  - `range[array]`: Resource に含まれる Property の有効範囲を数値で表します。配列の最初の値が最小値、2 番目の値が最大値となります。  - `rt[array]`: リソースタイプ  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `step[number]`: 定義された範囲にわたるステップ値。  範囲が0.0〜10.0でステップが2.5の場合、有効な値は0.0、2.5、5.0、7.5、10.0である。  - `type[string]`: NGSIエンティティタイプ。それはMeasurementでなければならない  - `unit[string]`: 測定値のSenMLにおけるSI単位  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 必要なプロパティ  
-- `id`  - `measurement`  - `type`  - `unit`    
+- `id`  - `measurement`  - `type`  - `unit`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 データモデルは、Open Connectivity Foundationが作成したオリジナルを引用しています。https://github.com/openconnectivityfoundation/IoTDataModels のオリジナルリポジトリ  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
 アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Measurement:    
@@ -362,9 +375,14 @@ Measurement:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
 #### 測定NGSI-v2キー値例  
-ここでは、MeasurementをJSON-LD形式でkey-valueとして記述した例を示します。これは、`options=keyValues`を使用したときにNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+ここでは、MeasurementをJSON-LD形式でkey-valuesとした例を示す。これは、`options=keyValues`を使用したときにNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Measurement:id:SIOX:11739593",  
@@ -428,8 +446,10 @@ Measurement:
   "type": "Measurement"  
 }  
 ```  
+</details>  
 #### 測定 NGSI-v2 正規化例  
 以下は、正規化されたJSON-LD形式のMeasurementの例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -561,195 +581,209 @@ Measurement:
   }  
 }  
 ```  
-#### 測定NGSI-LDのキー値例  
-ここでは、MeasurementをJSON-LD形式でkey-valueとして記述した例を示します。これは、`options=keyValues`を使用したときにNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### 測定NGSI-LDキー値例  
+ここでは、MeasurementをJSON-LD形式でkey-valuesにした例を示します。これは、`options=keyValues`を使用したときにNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Measurement:id:SIOX:11739593",  
-  "dateCreated": "2012-07-28T08:54:49Z",  
-  "dateModified": "2006-03-02T07:04:57Z",  
-  "source": "First response big PM. Bad not program what worry.",  
-  "name": "Outside actually Democrat foot sign situation. Professor society wife especially. Cost law close maintain interesting.",  
-  "alternateName": "Kitchen take bit hold away dream region team.",  
-  "description": "Center adult even feeling. Chance send light tell skin likely.",  
-  "dataProvider": "Body maybe design collection. Song try dinner huge help.",  
-  "owner": [  
-    "urn:ngsi-ld:Measurement:items:QZGX:60313449",  
-    "urn:ngsi-ld:Measurement:items:BXXK:45037618"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Measurement:items:GEJJ:63681855",  
-    "urn:ngsi-ld:Measurement:items:AJTT:05782902"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -12.225041,  
-      58.259399  
+    "id": "urn:ngsi-ld:Measurement:id:SIOX:11739593",  
+    "dateCreated": "2012-07-28T08:54:49Z",  
+    "dateModified": "2006-03-02T07:04:57Z",  
+    "source": "First response big PM. Bad not program what worry.",  
+    "name": "Outside actually Democrat foot sign situation. Professor society wife especially. Cost law close maintain interesting.",  
+    "alternateName": "Kitchen take bit hold away dream region team.",  
+    "description": "Center adult even feeling. Chance send light tell skin likely.",  
+    "dataProvider": "Body maybe design collection. Song try dinner huge help.",  
+    "owner": [  
+        "urn:ngsi-ld:Measurement:items:QZGX:60313449",  
+        "urn:ngsi-ld:Measurement:items:BXXK:45037618"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Measurement:items:GEJJ:63681855",  
+        "urn:ngsi-ld:Measurement:items:AJTT:05782902"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -12.225041,  
+            58.259399  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Break edge particularly each possible degree four. If pay contain responsibility kid nor manage get. Life argue five.",  
+        "addressLocality": "Final already free customer research close past himself. Maintain gun next mission camera.",  
+        "addressRegion": "Test certainly that follow available evidence explain. He meeting he management rich industry price. Three decade prevent something.",  
+        "addressCountry": "Focus produce whatever keep official use hear happen.",  
+        "postalCode": "Evidence miss middle pull increase determine. Sing range eye be among benefit peace tax. Ready rule send lay.",  
+        "postOfficeBoxNumber": "Lawyer road century reveal method. Partner anyone far."  
+    },  
+    "areaServed": "Ten force hand present us story. That beat record economic table mouth image understand. Run see article still work.",  
+    "rt": [  
+        "oic.r.sensor.measurement",  
+        "oic.r.sensor.measurement"  
+    ],  
+    "unit": "Scene consider so me push professional employee thank.",  
+    "measurement": {  
+        "type": "Property",  
+        "value": 17.5  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 619.8  
+    },  
+    "n": "Size voice write best.",  
+    "range": [  
+        395.3,  
+        73.0  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 944.6  
+    },  
+    "if": [  
+        "oic.if.s",  
+        "oic.if.baseline"  
+    ],  
+    "type": "Measurement",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Break edge particularly each possible degree four. If pay contain responsibility kid nor manage get. Life argue five.",  
-    "addressLocality": "Final already free customer research close past himself. Maintain gun next mission camera.",  
-    "addressRegion": "Test certainly that follow available evidence explain. He meeting he management rich industry price. Three decade prevent something.",  
-    "addressCountry": "Focus produce whatever keep official use hear happen.",  
-    "postalCode": "Evidence miss middle pull increase determine. Sing range eye be among benefit peace tax. Ready rule send lay.",  
-    "postOfficeBoxNumber": "Lawyer road century reveal method. Partner anyone far."  
-  },  
-  "areaServed": "Ten force hand present us story. That beat record economic table mouth image understand. Run see article still work.",  
-  "rt": [  
-    "oic.r.sensor.measurement",  
-    "oic.r.sensor.measurement"  
-  ],  
-  "unit": "Scene consider so me push professional employee thank.",  
-  "measurement": {  
-    "type": "Property",  
-    "value": 17.5  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 619.8  
-  },  
-  "n": "Size voice write best.",  
-  "range": [  
-    395.3,  
-    73.0  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 944.6  
-  },  
-  "if": [  
-    "oic.if.s",  
-    "oic.if.baseline"  
-  ],  
-  "type": "Measurement",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### 測定 NGSI-LD 正規化例  
 ここでは、MeasurementをJSON-LD形式で正規化した例を示します。これは、オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Measurement:id:YAWA:53179077",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1989-03-04T00:13:33Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2007-12-31T15:08:19Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Mean consider even nature mouth. Road treatment staff."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Policy across Democrat part girl pattern reality. List drug machine college."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Machine cultural describe matter. Move bed drop expert upon catch guy."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Democrat her reality sure memory boy support training. Interesting weight theory out under."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Prevent expert decision ahead. Customer generation finish course marriage organization very."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Measurement:items:MTAY:57069402",  
-      "urn:ngsi-ld:Measurement:items:OBSI:19767896"  
+    "id": "urn:ngsi-ld:Measurement:id:YAWA:53179077",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1989-03-04T00:13:33Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2007-12-31T15:08:19Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Mean consider even nature mouth. Road treatment staff."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Policy across Democrat part girl pattern reality. List drug machine college."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Machine cultural describe matter. Move bed drop expert upon catch guy."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Democrat her reality sure memory boy support training. Interesting weight theory out under."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Prevent expert decision ahead. Customer generation finish course marriage organization very."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Measurement:items:MTAY:57069402",  
+            "urn:ngsi-ld:Measurement:items:OBSI:19767896"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Measurement:items:HPGE:08143492"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                51.5163355,  
+                97.358247  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Standard risk management piece. Anything fund either form. Eye street word family.",  
+            "addressLocality": "Upon type degree off skill possible area. School power traditional eat. Deep successful mind single system.",  
+            "addressRegion": "Yeah happy to research. Catch surface billion race ok activity.",  
+            "addressCountry": "Including region half pick.",  
+            "postalCode": "Sing fear score make capital. Ever finish red out necessary. Because laugh trouble might.",  
+            "postOfficeBoxNumber": "Effort enjoy reach billion similar project less. Strong stand season me. That record ready could reflect place."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Report him laugh. Yard particular politics."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.sensor.measurement"  
+        ]  
+    },  
+    "unit": {  
+        "type": "Property",  
+        "value": "Week deep drive lead everybody. Necessary lawyer indeed strategy sing. Information voice remain. Bag benefit behavior he."  
+    },  
+    "measurement": {  
+        "type": "Property",  
+        "value": 27.0  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 145.8  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Environmental anything follow military reach. Stock trip rest view perhaps single painting. Program company doctor chair field voice pay."  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            556.9,  
+            981.2  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 840.7  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline",  
+            "oic.if.s"  
+        ]  
+    },  
+    "type": "Measurement",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Measurement:items:HPGE:08143492"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        51.5163355,  
-        97.358247  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Standard risk management piece. Anything fund either form. Eye street word family.",  
-      "addressLocality": "Upon type degree off skill possible area. School power traditional eat. Deep successful mind single system.",  
-      "addressRegion": "Yeah happy to research. Catch surface billion race ok activity.",  
-      "addressCountry": "Including region half pick.",  
-      "postalCode": "Sing fear score make capital. Ever finish red out necessary. Because laugh trouble might.",  
-      "postOfficeBoxNumber": "Effort enjoy reach billion similar project less. Strong stand season me. That record ready could reflect place."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Report him laugh. Yard particular politics."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.sensor.measurement"  
-    ]  
-  },  
-  "unit": {  
-    "type": "Property",  
-    "value": "Week deep drive lead everybody. Necessary lawyer indeed strategy sing. Information voice remain. Bag benefit behavior he."  
-  },  
-  "measurement": {  
-    "type": "Property",  
-    "value": 27.0  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 145.8  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Environmental anything follow military reach. Stock trip rest view perhaps single painting. Program company doctor chair field voice pay."  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      556.9,  
-      981.2  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 840.7  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.baseline",  
-      "oic.if.s"  
-    ]  
-  },  
-  "type": "Measurement",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
