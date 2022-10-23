@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 エンティティDRLC  
-==========  
+==========<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/DRLC/LICENSE.md)  
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**DRType 属性は、Zigbee/HA Smart Energy Profile 2.0 で定義される ApplianceLoadReductionType である。Property 'duration'の値は分単位である。Property 'Override'は、消費者が要求をオーバーライドしたかどうか（true）またはしないか（false）を示す。  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**Property 'start'は、RFC3339でエンコードされた開始時刻を含む文字列である。Property 'duration'の値は分単位である。Property 'Override'は、消費者が要求をオーバーライドしたかどうか（true）またはしないか（false）を示す。  
 バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
-- `DRType`: 適用されるデマンドレスポンスタイプ。  - `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `drlevel`: 要求されたDR応答の強さを示す指標；0-0％、1-30％、2-50％、3-70％。  - `duration`: DRタイプの適用期間を分単位で指定します。値0はDRが適用されないことを意味する。  - `id`: エンティティの一意な識別子  - `if`: このResourceがサポートするOCF Interfaceセット。  - `location`: アイテムへのGeojsonリファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `mandate`: コンシューマによるDR要求の上書きが可能かどうか  - `n`: リソースのフレンドリ名  - `name`: このアイテムの名称です。  - `override`: 消費者がDRの適用を覆したかどうか。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `rt`: リソースタイプです。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで指定する文字の列。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `start`: DRの適用開始時間です。  - `type`: NGSIエンティティタイプ。DRLCでなければならない    
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `DRType[integer]`: 適用されるデマンドレスポンスタイプ。  - `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `drlevel[integer]`: 要求されたDR応答の強さを示す指標；0-0％、1-30％、2-50％、3-70％。  - `duration[integer]`: 適用されるDRタイプの継続時間を分単位で指定する。値0はDRが適用されないことを意味します。  - `id[*]`: エンティティの一意な識別子  - `if[array]`: このResourceがサポートするOCF Interfaceセット。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `mandate[boolean]`: コンシューマによるDR要求の上書きが可能かどうか  - `n[string]`: リソースのフレンドリ名  - `name[string]`: このアイテムの名称です。  - `override[boolean]`: 消費者がDRの適用を覆したかどうか。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `rt[array]`: リソースタイプです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `start[string]`: DRの適用開始時間です。  - `type[string]`: NGSIエンティティタイプ。DRLCでなければならない  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 必要なプロパティ  
-- `DRType`  - `id`  - `type`    
+- `DRType`  - `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 データモデルは、Open Connectivity Foundationが作成したオリジナルを引用しています。https://github.com/openconnectivityfoundation/IoTDataModels のオリジナルリポジトリ  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
 アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 DRLC:    
@@ -360,9 +373,14 @@ DRLC:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### DRLC NGSI-v2 キー値の例  
-ここでは、DRLCをJSON-LD形式でkey-valueとして記述した例を示します。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+#### DRLC NGSI-v2 鍵盤の例  
+ここでは、DRLCをJSON-LD形式でkey-valuesとした例を示す。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:DRLC:id:YRHU:68741537",  
@@ -430,8 +448,10 @@ DRLC:
   "type": "DRLC"  
 }  
 ```  
+</details>  
 #### DRLC NGSI-v2 正規化例  
-ここでは、DRLCをJSON-LD形式で正規化した例を示す。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、正規化されたJSON-LD形式のDRLCの例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -571,203 +591,217 @@ DRLC:
   }  
 }  
 ```  
+</details>  
 #### DRLC NGSI-LD キー値の例  
-ここでは、DRLCをJSON-LD形式でkey-valueとして記述した例を示します。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを返します。  
+ここでは、DRLCをJSON-LD形式でkey-valuesにした例を示す。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:DRLC:id:YRHU:68741537",  
-  "dateCreated": "1997-12-08T23:27:56Z",  
-  "dateModified": "2004-11-30T18:19:55Z",  
-  "source": "Condition save total return wind about article. Together month born stay service ball.",  
-  "name": "Sound development easy site. Baby subject national financial purpose dream.",  
-  "alternateName": "Magazine her today measure condition business system. There indicate student soldier pass ahead.",  
-  "description": "Open character course picture wait pattern study.",  
-  "dataProvider": "However team white order drive appear.",  
-  "owner": [  
-    "urn:ngsi-ld:DRLC:items:WBMF:71307654",  
-    "urn:ngsi-ld:DRLC:items:UAKJ:45716313"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:DRLC:items:OBII:13287673",  
-    "urn:ngsi-ld:DRLC:items:LAIX:63931275"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      57.1700595,  
-      -147.083571  
+    "id": "urn:ngsi-ld:DRLC:id:YRHU:68741537",  
+    "dateCreated": "1997-12-08T23:27:56Z",  
+    "dateModified": "2004-11-30T18:19:55Z",  
+    "source": "Condition save total return wind about article. Together month born stay service ball.",  
+    "name": "Sound development easy site. Baby subject national financial purpose dream.",  
+    "alternateName": "Magazine her today measure condition business system. There indicate student soldier pass ahead.",  
+    "description": "Open character course picture wait pattern study.",  
+    "dataProvider": "However team white order drive appear.",  
+    "owner": [  
+        "urn:ngsi-ld:DRLC:items:WBMF:71307654",  
+        "urn:ngsi-ld:DRLC:items:UAKJ:45716313"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:DRLC:items:OBII:13287673",  
+        "urn:ngsi-ld:DRLC:items:LAIX:63931275"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            57.1700595,  
+            -147.083571  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Support most bill whom. Four however little table quality Republican forget maintain.",  
+        "addressLocality": "Likely blue president ever. And positive idea present.",  
+        "addressRegion": "Guy analysis degree general detail energy. Report big measure teach put around.",  
+        "addressCountry": "Son American Mrs say design resource century. Win clearly present prove toward gun increase. That shake card continue book but.",  
+        "postalCode": "Here drug should list bag employee. Environmental think discussion customer property. Effort consumer special wonder.",  
+        "postOfficeBoxNumber": "Spend whom try. Cultural or natural firm what myself town. Close note expect third especially character."  
+    },  
+    "areaServed": "Law drop director must chair. Turn many single rest country through moment. Trade school teach worker morning.",  
+    "rt": [  
+        "oic.r.energy.drlc",  
+        "oic.r.energy.drlc"  
+    ],  
+    "start": "1995-05-08T04:13:52Z",  
+    "duration": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "override": {  
+        "type": "Property",  
+        "value": true  
+    },  
+    "DRType": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "drlevel": {  
+        "type": "Property",  
+        "value": 3  
+    },  
+    "mandate": {  
+        "type": "Property",  
+        "value": false  
+    },  
+    "n": "Else memory if. Whose group through despite cause. Sense peace economy travel.",  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.baseline"  
+    ],  
+    "type": "DRLC",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Support most bill whom. Four however little table quality Republican forget maintain.",  
-    "addressLocality": "Likely blue president ever. And positive idea present.",  
-    "addressRegion": "Guy analysis degree general detail energy. Report big measure teach put around.",  
-    "addressCountry": "Son American Mrs say design resource century. Win clearly present prove toward gun increase. That shake card continue book but.",  
-    "postalCode": "Here drug should list bag employee. Environmental think discussion customer property. Effort consumer special wonder.",  
-    "postOfficeBoxNumber": "Spend whom try. Cultural or natural firm what myself town. Close note expect third especially character."  
-  },  
-  "areaServed": "Law drop director must chair. Turn many single rest country through moment. Trade school teach worker morning.",  
-  "rt": [  
-    "oic.r.energy.drlc",  
-    "oic.r.energy.drlc"  
-  ],  
-  "start": "1995-05-08T04:13:52Z",  
-  "duration": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "override": {  
-    "type": "Property",  
-    "value": true  
-  },  
-  "DRType": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "drlevel": {  
-    "type": "Property",  
-    "value": 3  
-  },  
-  "mandate": {  
-    "type": "Property",  
-    "value": false  
-  },  
-  "n": "Else memory if. Whose group through despite cause. Sense peace economy travel.",  
-  "if": [  
-    "oic.if.baseline",  
-    "oic.if.baseline"  
-  ],  
-  "type": "DRLC",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### DRLC NGSI-LD 正規化例  
-ここでは、DRLCをJSON-LD形式で正規化した例を示します。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+ここでは、DRLCをJSON-LD形式で正規化した例を示す。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:DRLC:id:XRYK:72373882",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1984-11-10T01:19:28Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2019-04-01T13:43:00Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Role seat coach. Everything if kid spend really single. Song together shoulder heavy walk between hospital."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Whose choice best population speak newspaper. Read four citizen manage drop."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Recently a because impact create. Peace common but name notice hundred affect. Research question campaign black take great."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Pull country consider heavy pretty. American produce evening by interview finish. He leg war fear."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "He thank add second pressure teach forward rate. Picture force long avoid figure would. Throw high direction type vote."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:DRLC:items:RAVC:41248553",  
-      "urn:ngsi-ld:DRLC:items:JIRT:96354185"  
+    "id": "urn:ngsi-ld:DRLC:id:XRYK:72373882",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1984-11-10T01:19:28Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2019-04-01T13:43:00Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Role seat coach. Everything if kid spend really single. Song together shoulder heavy walk between hospital."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Whose choice best population speak newspaper. Read four citizen manage drop."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Recently a because impact create. Peace common but name notice hundred affect. Research question campaign black take great."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Pull country consider heavy pretty. American produce evening by interview finish. He leg war fear."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "He thank add second pressure teach forward rate. Picture force long avoid figure would. Throw high direction type vote."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:DRLC:items:RAVC:41248553",  
+            "urn:ngsi-ld:DRLC:items:JIRT:96354185"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:DRLC:items:WSDX:92810352"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                5.129012,  
+                103.296499  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Unit admit common seem power office find. Indeed number accept range million hotel use. Government especially prevent other growth color certainly. Policy these simple position check simply letter.",  
+            "addressLocality": "Year century as ok. Hotel treatment stop quickly computer. Least picture another.",  
+            "addressRegion": "Yes unit century hair ok live part sell. Quickly road town large think return.",  
+            "addressCountry": "Successful prove seem building close front different always. Statement real science anyone realize quality.",  
+            "postalCode": "During table either after him religious. Hard heavy anyone modern.",  
+            "postOfficeBoxNumber": "You church black. Hear game ok treatment prepare item."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Of owner hold over them wonder. Chance represent at news country."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.energy.drlc"  
+        ]  
+    },  
+    "start": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2010-05-18T22:28:57Z"  
+        }  
+    },  
+    "duration": {  
+        "type": "Property",  
+        "value": 88  
+    },  
+    "override": {  
+        "type": "Property",  
+        "value": true  
+    },  
+    "DRType": {  
+        "type": "Property",  
+        "value": 118  
+    },  
+    "drlevel": {  
+        "type": "Property",  
+        "value": 1  
+    },  
+    "mandate": {  
+        "type": "Property",  
+        "value": false  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "In do instead style number resource. Truth game official want."  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.a",  
+            "oic.if.a"  
+        ]  
+    },  
+    "type": "DRLC",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:DRLC:items:WSDX:92810352"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        5.129012,  
-        103.296499  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Unit admit common seem power office find. Indeed number accept range million hotel use. Government especially prevent other growth color certainly. Policy these simple position check simply letter.",  
-      "addressLocality": "Year century as ok. Hotel treatment stop quickly computer. Least picture another.",  
-      "addressRegion": "Yes unit century hair ok live part sell. Quickly road town large think return.",  
-      "addressCountry": "Successful prove seem building close front different always. Statement real science anyone realize quality.",  
-      "postalCode": "During table either after him religious. Hard heavy anyone modern.",  
-      "postOfficeBoxNumber": "You church black. Hear game ok treatment prepare item."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Of owner hold over them wonder. Chance represent at news country."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.energy.drlc"  
-    ]  
-  },  
-  "start": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2010-05-18T22:28:57Z"  
-    }  
-  },  
-  "duration": {  
-    "type": "Property",  
-    "value": 88  
-  },  
-  "override": {  
-    "type": "Property",  
-    "value": true  
-  },  
-  "DRType": {  
-    "type": "Property",  
-    "value": 118  
-  },  
-  "drlevel": {  
-    "type": "Property",  
-    "value": 1  
-  },  
-  "mandate": {  
-    "type": "Property",  
-    "value": false  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "In do instead style number resource. Truth game official want."  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.a",  
-      "oic.if.a"  
-    ]  
-  },  
-  "type": "DRLC",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
