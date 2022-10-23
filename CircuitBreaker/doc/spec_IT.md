@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-Entità: CircuitBreaker  
-======================  
+Entità: Interruttore automatico  
+===============================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.OCF/blob/master/CircuitBreaker/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Questa risorsa descrive le funzioni per il controllo e il monitoraggio dell'interruttore basato su IEC 61850.**  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **Questa risorsa descrive le funzioni per il controllo e il monitoraggio degli interruttori automatici basati su IEC 61850 **.  
 versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `id`: Identificatore unico dell'entità  - `if`: L'insieme di interfacce OCF supportato da questa risorsa.  - `insulationresistance`: Resistenza d'isolamento dell'interruttore (M Ohm).  - `leakagecurrent`: La corrente di dispersione in mA.  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n`: Nome amichevole della risorsa  - `name`: Il nome di questo articolo.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `ratedbreakingcurrent`: La corrente nominale di rottura in Ampere, definita al momento della fabbricazione.  - `ratedcurrent`: La corrente nominale in Ampere, definita al momento della fabbricazione.  - `ratedvoltage`: La tensione nominale in Volt, definita al momento della fabbricazione.  - `rt`: Il tipo di risorsa  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `status`: Lo stato dell'interruttore. Lo stato può essere resettato solo fuori dai limiti.  - `timestamp`: Un tempo formattato RFC3339 che indica quando i dati sono stati osservati (ad esempio: 2016-02-15T09:19Z, 1996-12-19T16:39:57-08:00). Si noti che dovrebbe essere usata una risoluzione temporale di 1/100.  - `type`: Tipo di entità NGSI. Deve essere CircuitBreaker    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `if[array]`: Il set di interfacce OCF supportato da questa risorsa.  - `insulationresistance[number]`: Resistenza di isolamento dell'interruttore (M Ohm).  - `leakagecurrent[number]`: La corrente di dispersione in mA.  - `location[*]`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `n[string]`: Nome amichevole della risorsa  - `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `ratedbreakingcurrent[number]`: La corrente di interruzione nominale in Ampere, definita al momento della produzione.  - `ratedcurrent[number]`: La corrente nominale in Ampere, definita al momento della produzione.  - `ratedvoltage[number]`: La tensione nominale in Volt, definita al momento della produzione.  - `rt[array]`: Il tipo di risorsa  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `status[string]`: Lo stato dell'interruttore automatico. Lo stato può essere ripristinato solo al di fuori dei limiti.  - `timestamp[string]`: Un orario formattato RFC3339 che indica quando i dati sono stati osservati (ad esempio: 2016-02-15T09:19Z, 1996-12-19T16:39:57-08:00). Si noti che deve essere utilizzata una risoluzione temporale di 1/100.  - `type[string]`: Tipo di entità NGSI. Deve essere CircuitBreaker  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- `id`  - `ratedbreakingcurrent`  - `ratedcurrent`  - `ratedvoltage`  - `status`  - `timestamp`  - `type`    
+- `id`  - `ratedbreakingcurrent`  - `ratedcurrent`  - `ratedvoltage`  - `status`  - `timestamp`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Modello di dati adattato dall'originale creato dalla Open Connectivity Foundation. Repository originale in https://github.com/openconnectivityfoundation/IoTDataModels  
-## Descrizione del modello di dati delle proprietà  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 CircuitBreaker:    
@@ -377,9 +390,14 @@ CircuitBreaker:
   x-version: 0.0.1    
 ```  
 </details>    
-## Esempio di payloads  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
 #### CircuitBreaker NGSI-v2 valori chiave Esempio  
-Ecco un esempio di un CircuitBreaker in formato JSON-LD come key-values. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di CircuitBreaker in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:CircuitBreaker:id:GAWA:26483322",  
@@ -448,8 +466,10 @@ CircuitBreaker:
   "type": "CircuitBreaker"  
 }  
 ```  
-#### CircuitBreaker NGSI-v2 normalizzato Esempio  
-Ecco un esempio di un CircuitBreaker in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### Interruttore automatico NGSI-v2 normalizzato Esempio  
+Ecco un esempio di CircuitBreaker in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si usano le opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -593,208 +613,222 @@ CircuitBreaker:
   }  
 }  
 ```  
-#### CircuitBreaker NGSI-LD valori chiave Esempio  
-Ecco un esempio di un CircuitBreaker in formato JSON-LD come key-values. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### Interruttore automatico Valori chiave NGSI-LD Esempio  
+Ecco un esempio di CircuitBreaker in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:CircuitBreaker:id:GAWA:26483322",  
-  "dateCreated": "1975-09-18T13:42:58Z",  
-  "dateModified": "2017-02-05T13:44:17Z",  
-  "source": "Right site might whose and.",  
-  "name": "Open lose material big eight military benefit believe. Someone daughter peace draw sit say beautiful.",  
-  "alternateName": "Job night make station take take page. Save reduce each by strong.",  
-  "description": "Week after represent economy leave. Physical threat area hard difficult road minute grow.",  
-  "dataProvider": "Today build staff score like.",  
-  "owner": [  
-    "urn:ngsi-ld:CircuitBreaker:items:FSTL:10434961",  
-    "urn:ngsi-ld:CircuitBreaker:items:PTJI:96858742"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:CircuitBreaker:items:GAYB:75604341",  
-    "urn:ngsi-ld:CircuitBreaker:items:HJGW:42840646"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      1.1981925,  
-      -156.48494  
+    "id": "urn:ngsi-ld:CircuitBreaker:id:GAWA:26483322",  
+    "dateCreated": "1975-09-18T13:42:58Z",  
+    "dateModified": "2017-02-05T13:44:17Z",  
+    "source": "Right site might whose and.",  
+    "name": "Open lose material big eight military benefit believe. Someone daughter peace draw sit say beautiful.",  
+    "alternateName": "Job night make station take take page. Save reduce each by strong.",  
+    "description": "Week after represent economy leave. Physical threat area hard difficult road minute grow.",  
+    "dataProvider": "Today build staff score like.",  
+    "owner": [  
+        "urn:ngsi-ld:CircuitBreaker:items:FSTL:10434961",  
+        "urn:ngsi-ld:CircuitBreaker:items:PTJI:96858742"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:CircuitBreaker:items:GAYB:75604341",  
+        "urn:ngsi-ld:CircuitBreaker:items:HJGW:42840646"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            1.1981925,  
+            -156.48494  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Country as close board worry car score other. Treatment likely between century church author raise.",  
+        "addressLocality": "Family mean strategy future federal. Term article rise article business grow make. Visit art by choice morning politics.",  
+        "addressRegion": "Individual him business purpose. Bad interesting smile.",  
+        "addressCountry": "Focus agency know note town season policy respond. Up represent building though official. Cut sort serious every compare describe.",  
+        "postalCode": "Practice happy today social somebody less. Standard common half door team move.",  
+        "postOfficeBoxNumber": "Cup song notice than. On look building likely. Leave from option style reality score kind. Together natural learn."  
+    },  
+    "areaServed": "Remember pressure whole form industry interest wish. Forget week dark avoid themselves say mother.",  
+    "rt": [  
+        "oic.r.circuitbreaker",  
+        "oic.r.circuitbreaker"  
+    ],  
+    "status": "off",  
+    "ratedcurrent": {  
+        "type": "Property",  
+        "value": 479.6  
+    },  
+    "ratedbreakingcurrent": {  
+        "type": "Property",  
+        "value": 999.7  
+    },  
+    "ratedvoltage": {  
+        "type": "Property",  
+        "value": 816.8  
+    },  
+    "leakagecurrent": {  
+        "type": "Property",  
+        "value": 790.2  
+    },  
+    "insulationresistance": {  
+        "type": "Property",  
+        "value": 966.6  
+    },  
+    "timestamp": "1972-10-08T10:26:39Z",  
+    "n": "Child admit group hit too. Wind eye can.",  
+    "if": [  
+        "oic.if.s",  
+        "oic.if.baseline"  
+    ],  
+    "type": "CircuitBreaker",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Country as close board worry car score other. Treatment likely between century church author raise.",  
-    "addressLocality": "Family mean strategy future federal. Term article rise article business grow make. Visit art by choice morning politics.",  
-    "addressRegion": "Individual him business purpose. Bad interesting smile.",  
-    "addressCountry": "Focus agency know note town season policy respond. Up represent building though official. Cut sort serious every compare describe.",  
-    "postalCode": "Practice happy today social somebody less. Standard common half door team move.",  
-    "postOfficeBoxNumber": "Cup song notice than. On look building likely. Leave from option style reality score kind. Together natural learn."  
-  },  
-  "areaServed": "Remember pressure whole form industry interest wish. Forget week dark avoid themselves say mother.",  
-  "rt": [  
-    "oic.r.circuitbreaker",  
-    "oic.r.circuitbreaker"  
-  ],  
-  "status": "off",  
-  "ratedcurrent": {  
-    "type": "Property",  
-    "value": 479.6  
-  },  
-  "ratedbreakingcurrent": {  
-    "type": "Property",  
-    "value": 999.7  
-  },  
-  "ratedvoltage": {  
-    "type": "Property",  
-    "value": 816.8  
-  },  
-  "leakagecurrent": {  
-    "type": "Property",  
-    "value": 790.2  
-  },  
-  "insulationresistance": {  
-    "type": "Property",  
-    "value": 966.6  
-  },  
-  "timestamp": "1972-10-08T10:26:39Z",  
-  "n": "Child admit group hit too. Wind eye can.",  
-  "if": [  
-    "oic.if.s",  
-    "oic.if.baseline"  
-  ],  
-  "type": "CircuitBreaker",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-#### CircuitBreaker NGSI-LD normalizzato Esempio  
-Ecco un esempio di un CircuitBreaker in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### Interruttore automatico NGSI-LD normalizzato Esempio  
+Ecco un esempio di CircuitBreaker in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:CircuitBreaker:id:FYOJ:76177790",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2016-07-05T21:40:58Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2008-07-22T16:37:58Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Often candidate whom information resource second seat difficult. Pay stay ask product major she later. Officer necessary especially explain news."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Speech yard of account. World anyone line professional night operation."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Citizen present water someone like power sport weight. Friend medical article nation skin free. Place traditional reduce pretty before reality."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Maintain yourself most other degree walk. Recent east base party choice several group. Involve power me hear race role take. Usually year fine more someone inside."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Newspaper book above base modern. Age star student protect some democratic imagine. Military him painting community measure some lawyer religious. Shake threat situation keep trouble."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:CircuitBreaker:items:PFKJ:31765940",  
-      "urn:ngsi-ld:CircuitBreaker:items:WLRJ:52436804"  
+    "id": "urn:ngsi-ld:CircuitBreaker:id:FYOJ:76177790",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2016-07-05T21:40:58Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2008-07-22T16:37:58Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Often candidate whom information resource second seat difficult. Pay stay ask product major she later. Officer necessary especially explain news."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Speech yard of account. World anyone line professional night operation."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Citizen present water someone like power sport weight. Friend medical article nation skin free. Place traditional reduce pretty before reality."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Maintain yourself most other degree walk. Recent east base party choice several group. Involve power me hear race role take. Usually year fine more someone inside."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Newspaper book above base modern. Age star student protect some democratic imagine. Military him painting community measure some lawyer religious. Shake threat situation keep trouble."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:CircuitBreaker:items:PFKJ:31765940",  
+            "urn:ngsi-ld:CircuitBreaker:items:WLRJ:52436804"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:CircuitBreaker:items:RNKY:53726318"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                22.0069765,  
+                166.52115  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Single bit draw memory arrive share performance. He paper cell build start individual Congress. Start above meeting old fish.",  
+            "addressLocality": "Popular gun likely medical. Wish conference simple but test low anything. Sometimes also question choice.",  
+            "addressRegion": "What stuff per allow bring enough fast important. Get benefit early yard suddenly agreement low. Natural career last him actually note middle help.",  
+            "addressCountry": "Imagine there live general across. White consider painting believe must mother.",  
+            "postalCode": "Remain almost star style player. Group mind share board especially coach. Partner trip seek physical consider fund common.",  
+            "postOfficeBoxNumber": "Night now TV most he. Manage boy single television."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Feeling turn add task onto. Business memory policy head. Though worry born most game up."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.circuitbreaker"  
+        ]  
+    },  
+    "status": {  
+        "type": "Property",  
+        "value": "on"  
+    },  
+    "ratedcurrent": {  
+        "type": "Property",  
+        "value": 778.8  
+    },  
+    "ratedbreakingcurrent": {  
+        "type": "Property",  
+        "value": 720.1  
+    },  
+    "ratedvoltage": {  
+        "type": "Property",  
+        "value": 57.2  
+    },  
+    "leakagecurrent": {  
+        "type": "Property",  
+        "value": 79.8  
+    },  
+    "insulationresistance": {  
+        "type": "Property",  
+        "value": 695.5  
+    },  
+    "timestamp": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1992-10-31T15:35:50Z"  
+        }  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Why key suddenly sort traditional. Head until born level history smile. Meet population pattern require talk heavy specific."  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.s",  
+            "oic.if.s"  
+        ]  
+    },  
+    "type": "CircuitBreaker",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:CircuitBreaker:items:RNKY:53726318"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        22.0069765,  
-        166.52115  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Single bit draw memory arrive share performance. He paper cell build start individual Congress. Start above meeting old fish.",  
-      "addressLocality": "Popular gun likely medical. Wish conference simple but test low anything. Sometimes also question choice.",  
-      "addressRegion": "What stuff per allow bring enough fast important. Get benefit early yard suddenly agreement low. Natural career last him actually note middle help.",  
-      "addressCountry": "Imagine there live general across. White consider painting believe must mother.",  
-      "postalCode": "Remain almost star style player. Group mind share board especially coach. Partner trip seek physical consider fund common.",  
-      "postOfficeBoxNumber": "Night now TV most he. Manage boy single television."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Feeling turn add task onto. Business memory policy head. Though worry born most game up."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.circuitbreaker"  
-    ]  
-  },  
-  "status": {  
-    "type": "Property",  
-    "value": "on"  
-  },  
-  "ratedcurrent": {  
-    "type": "Property",  
-    "value": 778.8  
-  },  
-  "ratedbreakingcurrent": {  
-    "type": "Property",  
-    "value": 720.1  
-  },  
-  "ratedvoltage": {  
-    "type": "Property",  
-    "value": 57.2  
-  },  
-  "leakagecurrent": {  
-    "type": "Property",  
-    "value": 79.8  
-  },  
-  "insulationresistance": {  
-    "type": "Property",  
-    "value": 695.5  
-  },  
-  "timestamp": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1992-10-31T15:35:50Z"  
-    }  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Why key suddenly sort traditional. Head until born level history smile. Meet population pattern require talk heavy specific."  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.s",  
-      "oic.if.s"  
-    ]  
-  },  
-  "type": "CircuitBreaker",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
