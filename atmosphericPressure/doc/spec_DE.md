@@ -1,23 +1,36 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entität: atmosphericPressure  
-============================  
+============================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.OCF/blob/master/atmosphericPressure/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Globale Beschreibung: **Die Eigenschaft "atmosphericPressure" ist ein Float, der den atmosphärischen Druck in hPa (hectoPascals) beschreibt. hPa und die ebenfalls häufig verwendete Einheit Millibar (mbar) sind numerisch äquivalent.**  
 Version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `atmosphericPressure`: Der aktuelle atmosphärische Druck in hPa.  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `if`: Der von dieser Ressource unterstützte OCF-Schnittstellensatz.  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `n`: Freundlicher Name der Ressource  - `name`: Der Name dieses Artikels.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `precision`: Bei der Exposition bietet der Wert in "precision" eine +/- Toleranz gegenüber den Eigenschaften in der Ressource. Wenn also eine Eigenschaft auf einen Wert AKTUALISIERT wird und diese Eigenschaft dann ZURÜCKGEZOGEN wird, ist der ZURÜCKGEZOGENE Wert gültig, wenn er im Bereich des festgelegten Wertes +/- Präzision liegt  - `range`: Der gültige Bereich für die Eigenschaft in der Ressource in Form einer Zahl. Der erste Wert im Array ist der Mindestwert, der zweite Wert im Array ist der Höchstwert.  - `rt`: Der Ressourcentyp.  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `step`: Schrittwert über den definierten Bereich eine ganze Zahl, wenn der Bereich eine Zahl ist.  Dies ist die Schrittweite für gültige Werte innerhalb des Bereichs; wenn also der Bereich 0.0..10.0 und der Schritt 2.5 ist, sind die Werte 0.0,2.5,5.0,7.5,10.0 gültig.  - `type`: NGSI-Entitätstyp. Es muss atmosphericPressure sein    
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, liegt das daran, dass es mehrere Typen oder unterschiedliche Formate/Muster haben kann</sub></sup>.  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `atmosphericPressure[number]`: Der aktuelle atmosphärische Druck in hPa.  - `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `id[*]`: Eindeutiger Bezeichner der Entität  - `if[array]`: Der von dieser Ressource unterstützte OCF-Schnittstellensatz.  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `n[string]`: Freundlicher Name der Ressource  - `name[string]`: Der Name dieses Artikels.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `precision[number]`: Bei der Exposition bietet der Wert in "precision" eine +/- Toleranz gegenüber den Eigenschaften in der Ressource. Wenn also eine Eigenschaft auf einen Wert AKTUALISIERT wird und diese Eigenschaft dann ZURÜCKGEZOGEN wird, ist der ZURÜCKGEZOGENE Wert gültig, wenn er im Bereich des festgelegten Wertes +/- Präzision liegt  - `range[array]`: Der gültige Bereich für die Eigenschaft in der Ressource in Form einer Zahl. Der erste Wert im Array ist der Mindestwert, der zweite Wert im Array ist der Höchstwert.  - `rt[array]`: Der Ressourcentyp.  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `step[number]`: Schrittwert über den definierten Bereich eine ganze Zahl, wenn der Bereich eine Zahl ist.  Dies ist die Schrittweite für gültige Werte innerhalb des Bereichs; wenn also der Bereich 0.0..10.0 und der Schritt 2.5 ist, sind die Werte 0.0,2.5,5.0,7.5,10.0 gültig.  - `type[string]`: NGSI-Entitätstyp. Es muss atmosphericPressure sein  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
-- `atmosphericPressure`  - `id`  - `type`    
+- `atmosphericPressure`  - `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Datenmodell nach dem von der Open Connectivity Foundation erstellten Original. Ursprüngliches Repository in https://github.com/openconnectivityfoundation/IoTDataModels  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 atmosphericPressure:    
-  description: 'This Resource provides a measurement of Mean Sea Level Pressure experienced at the measuring point expressed in millibars.The Property "atmosphericPressure" is a float which describes the atmospheric pressure in hPa (hectoPascals).Note that hPa and the also commonly used unit of millibars (mbar) are numerically equivalent.'    
+  description: 'This Resource provides a measurement of Mean Sea Level Pressure experienced at the measuring point expressed in millibars.The Property ''atmosphericPressure'' is a float which describes the atmospheric pressure in hPa (hectoPascals).Note that hPa and the also commonly used unit of millibars (mbar) are numerically equivalent.'    
   properties:    
     address:    
       description: 'The mailing address'    
@@ -354,9 +367,14 @@ atmosphericPressure:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Beispiel-Nutzlasten  
 #### atmosphericPressure NGSI-v2 key-values Beispiel  
 Hier ist ein Beispiel für eine atmosphärische Presse im JSON-LD-Format als Schlüsselwerte. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:atmosphericPressure:id:ELDP:82735557",  
@@ -419,8 +437,10 @@ atmosphericPressure:
   "type": "atmosphericPressure"  
 }  
 ```  
+</details>  
 #### atmosphericPressure NGSI-v2 normalisiert Beispiel  
 Hier ist ein Beispiel für einen atmosphärischen Druck im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -548,190 +568,204 @@ atmosphericPressure:
   }  
 }  
 ```  
+</details>  
 #### atmosphericPressure NGSI-LD key-values Beispiel  
 Hier ist ein Beispiel für eine atmosphärische Presse im JSON-LD-Format als Schlüsselwerte. Dies ist kompatibel mit NGSI-LD, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:atmosphericPressure:id:ELDP:82735557",  
-  "dateCreated": "1978-10-18T02:53:27Z",  
-  "dateModified": "1971-05-22T13:45:28Z",  
-  "source": "Leader right relationship conference treatment until police. A cold language to though benefit want. Ten own anyone low fight answer.",  
-  "name": "Do write story your should present claim. Coach himself size strategy fine kind.",  
-  "alternateName": "Four send region above oil record. Believe item western catch method body time successful.",  
-  "description": "Pressure few number form. Upon set bit process per of. Kitchen six source probably movement.",  
-  "dataProvider": "Sort general exactly able pretty. Apply stay artist throw pull second.",  
-  "owner": [  
-    "urn:ngsi-ld:atmosphericPressure:items:ABBA:58876358",  
-    "urn:ngsi-ld:atmosphericPressure:items:OJQG:19954985"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:atmosphericPressure:items:FGYB:46319843",  
-    "urn:ngsi-ld:atmosphericPressure:items:KYKB:58015149"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -77.1844825,  
-      108.947418  
+    "id": "urn:ngsi-ld:atmosphericPressure:id:ELDP:82735557",  
+    "dateCreated": "1978-10-18T02:53:27Z",  
+    "dateModified": "1971-05-22T13:45:28Z",  
+    "source": "Leader right relationship conference treatment until police. A cold language to though benefit want. Ten own anyone low fight answer.",  
+    "name": "Do write story your should present claim. Coach himself size strategy fine kind.",  
+    "alternateName": "Four send region above oil record. Believe item western catch method body time successful.",  
+    "description": "Pressure few number form. Upon set bit process per of. Kitchen six source probably movement.",  
+    "dataProvider": "Sort general exactly able pretty. Apply stay artist throw pull second.",  
+    "owner": [  
+        "urn:ngsi-ld:atmosphericPressure:items:ABBA:58876358",  
+        "urn:ngsi-ld:atmosphericPressure:items:OJQG:19954985"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:atmosphericPressure:items:FGYB:46319843",  
+        "urn:ngsi-ld:atmosphericPressure:items:KYKB:58015149"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -77.1844825,  
+            108.947418  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Billion particular decade prove drug draw get. Good happen truth wonder car material.",  
+        "addressLocality": "Necessary capital would cover. Upon hold institution myself author first small. Those tonight may several soldier.",  
+        "addressRegion": "Left baby no mother leader detail result. Or may from morning why. View common foot arm suggest life home.",  
+        "addressCountry": "Cost ok part company fund office. Past reflect company within above. Person rise himself drug.",  
+        "postalCode": "Without interview produce owner. Stand why ready consumer. Explain trip cultural fill bad court bring.",  
+        "postOfficeBoxNumber": "Adult response democratic middle hand. Prepare such thank reach itself sometimes. Already shoulder actually."  
+    },  
+    "areaServed": "Nearly effect individual four positive price. Court resource single cultural PM probably.",  
+    "rt": [  
+        "oic.r.sensor.atmosphericpressure",  
+        "oic.r.sensor.atmosphericpressure"  
+    ],  
+    "atmosphericPressure": {  
+        "type": "Property",  
+        "value": 88.8  
+    },  
+    "n": "His away back interesting enter hair sea. Continue care buy between generation throw without. Owner hospital current should thus increase.",  
+    "precision": {  
+        "type": "Property",  
+        "value": 964.0  
+    },  
+    "range": [  
+        987.9,  
+        288.3  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 605.4  
+    },  
+    "if": [  
+        "oic.if.s",  
+        "oic.if.s"  
+    ],  
+    "type": "atmosphericPressure",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Billion particular decade prove drug draw get. Good happen truth wonder car material.",  
-    "addressLocality": "Necessary capital would cover. Upon hold institution myself author first small. Those tonight may several soldier.",  
-    "addressRegion": "Left baby no mother leader detail result. Or may from morning why. View common foot arm suggest life home.",  
-    "addressCountry": "Cost ok part company fund office. Past reflect company within above. Person rise himself drug.",  
-    "postalCode": "Without interview produce owner. Stand why ready consumer. Explain trip cultural fill bad court bring.",  
-    "postOfficeBoxNumber": "Adult response democratic middle hand. Prepare such thank reach itself sometimes. Already shoulder actually."  
-  },  
-  "areaServed": "Nearly effect individual four positive price. Court resource single cultural PM probably.",  
-  "rt": [  
-    "oic.r.sensor.atmosphericpressure",  
-    "oic.r.sensor.atmosphericpressure"  
-  ],  
-  "atmosphericPressure": {  
-    "type": "Property",  
-    "value": 88.8  
-  },  
-  "n": "His away back interesting enter hair sea. Continue care buy between generation throw without. Owner hospital current should thus increase.",  
-  "precision": {  
-    "type": "Property",  
-    "value": 964.0  
-  },  
-  "range": [  
-    987.9,  
-    288.3  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 605.4  
-  },  
-  "if": [  
-    "oic.if.s",  
-    "oic.if.s"  
-  ],  
-  "type": "atmosphericPressure",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### atmosphericPressure NGSI-LD normalized Beispiel  
 Hier ist ein Beispiel eines atmosphericPressure im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:atmosphericPressure:id:RJQY:59820312",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2007-06-26T17:29:21Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2011-06-17T02:00:43Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Teach Mrs easy fight across reason himself. Former section why today stay. High way official structure."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Little compare take education. Dinner lose western feel. Next list since then."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Door recently drive."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "End consider financial hope. Mouth south start single strong. Doctor itself popular choose give possible into."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Share cover road fish think investment account."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:atmosphericPressure:items:HDEN:32343695",  
-      "urn:ngsi-ld:atmosphericPressure:items:RVRC:69480931"  
+    "id": "urn:ngsi-ld:atmosphericPressure:id:RJQY:59820312",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2007-06-26T17:29:21Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2011-06-17T02:00:43Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Teach Mrs easy fight across reason himself. Former section why today stay. High way official structure."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Little compare take education. Dinner lose western feel. Next list since then."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Door recently drive."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "End consider financial hope. Mouth south start single strong. Doctor itself popular choose give possible into."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Share cover road fish think investment account."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:atmosphericPressure:items:HDEN:32343695",  
+            "urn:ngsi-ld:atmosphericPressure:items:RVRC:69480931"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:atmosphericPressure:items:PRFC:27292619"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -11.8938735,  
+                11.02388  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Six boy would produce. Beyond forward ability much resource.",  
+            "addressLocality": "Catch heavy usually phone whom property every.",  
+            "addressRegion": "Visit response direction statement feeling. Medical new matter a president them.",  
+            "addressCountry": "Institution recent consider clearly and argue indicate. Tell general wear keep arm relationship hundred.",  
+            "postalCode": "American campaign too at view card. School word those score in. Article table size near crime investment.",  
+            "postOfficeBoxNumber": "Particularly skin research whether goal need. Last court position politics sell."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Game education structure force fine resource. Expert rise board sometimes. Wrong simple a public study get."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.sensor.atmosphericpressure"  
+        ]  
+    },  
+    "atmosphericPressure": {  
+        "type": "Property",  
+        "value": 904.6  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Factor charge often artist husband wall region. Continue role particularly top. Of song attorney week force continue because few."  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 953.2  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            801.2,  
+            869.8  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 620.7  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline",  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "atmosphericPressure",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:atmosphericPressure:items:PRFC:27292619"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -11.8938735,  
-        11.02388  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Six boy would produce. Beyond forward ability much resource.",  
-      "addressLocality": "Catch heavy usually phone whom property every.",  
-      "addressRegion": "Visit response direction statement feeling. Medical new matter a president them.",  
-      "addressCountry": "Institution recent consider clearly and argue indicate. Tell general wear keep arm relationship hundred.",  
-      "postalCode": "American campaign too at view card. School word those score in. Article table size near crime investment.",  
-      "postOfficeBoxNumber": "Particularly skin research whether goal need. Last court position politics sell."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Game education structure force fine resource. Expert rise board sometimes. Wrong simple a public study get."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.sensor.atmosphericpressure"  
-    ]  
-  },  
-  "atmosphericPressure": {  
-    "type": "Property",  
-    "value": 904.6  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Factor charge often artist husband wall region. Continue role particularly top. Of song attorney week force continue because few."  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 953.2  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      801.2,  
-      869.8  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 620.7  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.baseline",  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "type": "atmosphericPressure",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
