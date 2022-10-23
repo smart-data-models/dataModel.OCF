@@ -1,17 +1,32 @@
-Entität: Brauen  
-===============  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entität: Brauen  
+===============<!-- /10-Header -->  
+<!-- 15-License -->  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.OCF/blob/master/Brewing/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Globale Beschreibung: **Smart Data Models Program Anpassung der ursprünglichen IoTData-Datenmodelle. Diese Ressource beschreibt die mit dem Brauen verbundenen Attribute. Diese Ressource wird nur für die Konfiguration verwendet. Der Betrieb des Geräts wird unabhängig von dieser Ressource gehandhabt. Die angeforderte Menge wird in ml angegeben. Die Stärke eines gebrühten Getränks ist eine ganze Zahl, deren Bereich durch das Vorhandensein einer Eigenschaft strengthrange erzwungen werden kann.**  
+Version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `amountrequested`: Die angeforderte Menge in ml.  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `if`: Der von dieser Ressource unterstützte OCF-Schnittstellensatz.  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `n`: Freundlicher Name der Ressource  - `name`: Der Name dieses Artikels.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `rt`: Der Ressourcentyp.  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `strength`: Die Stärke eines gebrauten Getränks.  - `strengthrange`: Es liegt keine Originalbeschreibung vor  - `type`: NGSI-Entitätstyp. Es muss Brewing sein    
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, liegt das daran, dass es mehrere Typen oder unterschiedliche Formate/Muster haben kann</sub></sup>.  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `amountrequested[integer]`: Die angeforderte Menge in ml.  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `id[*]`: Eindeutiger Bezeichner der Entität  - `if[array]`: Der von dieser Ressource unterstützte OCF-Schnittstellensatz.  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `n[string]`: Freundlicher Name der Ressource  - `name[string]`: Der Name dieses Artikels.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `rt[array]`: Der Ressourcentyp.  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `strength[integer]`: Die Stärke eines gebrauten Getränks.  - `strengthrange[array]`: Es liegt keine Originalbeschreibung vor  - `type[string]`: NGSI-Entitätstyp. Es muss Brewing sein  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Dieses Datenmodell stammt aus dem ursprünglichen [Open Connectivity Foundation repository] (https://github.com/openconnectivityfoundation/IoTDataModels). Es wurde erweitert, um den Anforderungen der NGSI zu entsprechen.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Brewing:    
@@ -343,9 +358,14 @@ Brewing:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Beispiel-Nutzlasten  
-#### Brewing NGSI-v2 key-values Beispiel  
+#### Brauen von NGSI-v2-Schlüsselwerten Beispiel  
 Hier ist ein Beispiel für einen Brewing im JSON-LD-Format als Key-Values. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Brewing:id:CUFI:10169757",  
@@ -382,8 +402,10 @@ Brewing:
   "areaServed": "Face board when leave education let admit. Responsibility policy movement sea avoid myself nation suffer. Cost meet itself yes environment."  
 }  
 ```  
+</details>  
 #### Brauen NGSI-v2 normalisiert Beispiel  
 Hier ist ein Beispiel für einen Brewing im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -461,127 +483,141 @@ Brewing:
   }  
 }  
 ```  
+</details>  
 #### Erzeugen von NGSI-LD-Schlüsselwerten Beispiel  
 Hier ist ein Beispiel für einen Brewing im JSON-LD-Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Brewing:id:CUFI:10169757",  
-  "dateCreated": "2021-08-20T05:54:49Z",  
-  "dateModified": "2021-02-27T19:01:40Z",  
-  "source": "Current must out civil big point leg. Rest investment production design worker operation. Fish store establish news discover.",  
-  "name": "Guy resource draw whatever walk do. Community morning night time.",  
-  "alternateName": "Bill culture yard summer environmental. Return difference unit alone program standard.",  
-  "description": "Sign share part. Black couple policy. Model produce nature world second.",  
-  "dataProvider": "Majority party cover step approach may always. Line military tax dark your.",  
-  "owner": [  
-    "urn:ngsi-ld:Brewing:items:ASJM:77529932",  
-    "urn:ngsi-ld:Brewing:items:GGFW:83699150"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Brewing:items:DXVZ:45868431",  
-    "urn:ngsi-ld:Brewing:items:EVIW:14635277"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -83.2190845,  
-      -60.290995  
+    "id": "urn:ngsi-ld:Brewing:id:CUFI:10169757",  
+    "dateCreated": "2021-08-20T05:54:49Z",  
+    "dateModified": "2021-02-27T19:01:40Z",  
+    "source": "Current must out civil big point leg. Rest investment production design worker operation. Fish store establish news discover.",  
+    "name": "Guy resource draw whatever walk do. Community morning night time.",  
+    "alternateName": "Bill culture yard summer environmental. Return difference unit alone program standard.",  
+    "description": "Sign share part. Black couple policy. Model produce nature world second.",  
+    "dataProvider": "Majority party cover step approach may always. Line military tax dark your.",  
+    "owner": [  
+        "urn:ngsi-ld:Brewing:items:ASJM:77529932",  
+        "urn:ngsi-ld:Brewing:items:GGFW:83699150"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Brewing:items:DXVZ:45868431",  
+        "urn:ngsi-ld:Brewing:items:EVIW:14635277"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -83.2190845,  
+            -60.290995  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Record loss edge economic.",  
+        "addressLocality": "Middle reflect floor. Executive rest team specific husband challenge. Once commercial charge pressure should say.",  
+        "addressRegion": "Almost collection country. Interesting reduce fast.",  
+        "addressCountry": "More turn treatment soon begin organization human. Be necessary perform treatment enough light down. Source light thought purpose someone add. Night want air out.",  
+        "postalCode": "Character future maintain open. Certainly truth economic year nation. Herself find woman trouble standard forget top.",  
+        "postOfficeBoxNumber": "Week break fine spend because. Mrs likely third very prove rich. Smile although also."  
+    },  
+    "areaServed": "Face board when leave education let admit. Responsibility policy movement sea avoid myself nation suffer. Cost meet itself yes environment.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Record loss edge economic.",  
-    "addressLocality": "Middle reflect floor. Executive rest team specific husband challenge. Once commercial charge pressure should say.",  
-    "addressRegion": "Almost collection country. Interesting reduce fast.",  
-    "addressCountry": "More turn treatment soon begin organization human. Be necessary perform treatment enough light down. Source light thought purpose someone add. Night want air out.",  
-    "postalCode": "Character future maintain open. Certainly truth economic year nation. Herself find woman trouble standard forget top.",  
-    "postOfficeBoxNumber": "Week break fine spend because. Mrs likely third very prove rich. Smile although also."  
-  },  
-  "areaServed": "Face board when leave education let admit. Responsibility policy movement sea avoid myself nation suffer. Cost meet itself yes environment.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### Brauen NGSI-LD normalisiert Beispiel  
 Hier ist ein Beispiel für einen Brewing im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-LD kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Brewing:id:BLTL:87642764",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2020-08-14T06:38:02Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2002-04-26T18:29:58Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Interview program toward lot girl help. Front shoulder now green."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Hard information letter standard clear service. Simple policy model nature off member."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Charge born left dark consumer run. Office large when news defense they fact cost. This glass cultural child any energy control include."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Continue apply for out method along get. Buy strategy production cup much argue likely. Develop end area likely."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Miss themselves garden indicate management bed note eye. Security heavy avoid."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Brewing:items:YWSQ:23386207",  
-      "urn:ngsi-ld:Brewing:items:YQIA:28562705"  
+    "id": "urn:ngsi-ld:Brewing:id:BLTL:87642764",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2020-08-14T06:38:02Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2002-04-26T18:29:58Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Interview program toward lot girl help. Front shoulder now green."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Hard information letter standard clear service. Simple policy model nature off member."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Charge born left dark consumer run. Office large when news defense they fact cost. This glass cultural child any energy control include."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Continue apply for out method along get. Buy strategy production cup much argue likely. Develop end area likely."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Miss themselves garden indicate management bed note eye. Security heavy avoid."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Brewing:items:YWSQ:23386207",  
+            "urn:ngsi-ld:Brewing:items:YQIA:28562705"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Brewing:items:ZJAC:04750991"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -81.103564,  
+                61.079647  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Town popular fish leg force into thought. Watch know prove another resource long test. Husband nature PM. Today medical capital even general hope rest.",  
+            "addressLocality": "Important fire a imagine write ten two. Along treatment wish would relationship.",  
+            "addressRegion": "Hope far physical develop. Talk identify six final forget answer entire.",  
+            "addressCountry": "Modern issue whose so tree action lead discuss. Several important you. Claim need add food easy pretty.",  
+            "postalCode": "Member student measure what be understand try. Loss less bag certain similar.",  
+            "postOfficeBoxNumber": "Through growth rich blood argue represent source event. Language show impact."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Strategy large save close both. Yeah field care manage. Share soon their include green economic."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Brewing:items:ZJAC:04750991"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -81.103564,  
-        61.079647  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Town popular fish leg force into thought. Watch know prove another resource long test. Husband nature PM. Today medical capital even general hope rest.",  
-      "addressLocality": "Important fire a imagine write ten two. Along treatment wish would relationship.",  
-      "addressRegion": "Hope far physical develop. Talk identify six final forget answer entire.",  
-      "addressCountry": "Modern issue whose so tree action lead discuss. Several important you. Claim need add food easy pretty.",  
-      "postalCode": "Member student measure what be understand try. Loss less bag certain similar.",  
-      "postOfficeBoxNumber": "Through growth rich blood argue represent source event. Language show impact."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Strategy large save close both. Yeah field care manage. Share soon their include green economic."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
