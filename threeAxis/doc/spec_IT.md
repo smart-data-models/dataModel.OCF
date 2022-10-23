@@ -1,23 +1,36 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entità: threeAxis  
-=================  
+=================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.OCF/blob/master/threeAxis/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Questa risorsa fornisce una rappresentazione della misurazione da un sensore a tre assi.La proprietà "orientamento" è un array di numeri che rappresentano i valori del piano x, del piano y e del piano z.L'unità di misura per ogni pannello è 'g'.**  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **La proprietà 'orientation' è un array di numeri che rappresentano i valori dei piani x, y e z. L'unità di misura per ogni riquadro è 'g'.  
 versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `id`: Identificatore unico dell'entità  - `if`: L'insieme di interfacce OCF supportato da questa risorsa.  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n`: Nome amichevole della risorsa  - `name`: Il nome di questo articolo.  - `orientation`: L'array che contiene l'orientamento del piano x, y e z in 'g'.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `rt`: Il tipo di risorsa.  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `type`: Tipo di entità NGSI. Deve essere treAssi    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `if[array]`: Il set di interfacce OCF supportato da questa risorsa.  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `n[string]`: Nome amichevole della risorsa  - `name[string]`: Il nome di questo elemento.  - `orientation[array]`: L'array contenente l'orientamento del piano x, y e z in 'g'.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `rt[array]`: Il tipo di risorsa.  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `type[string]`: Tipo di entità NGSI. Deve essere a tre assi  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- `id`  - `orientation`  - `type`    
+- `id`  - `orientation`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Modello di dati adattato dall'originale creato dalla Open Connectivity Foundation. Repository originale in https://github.com/openconnectivityfoundation/IoTDataModels  
-## Descrizione del modello di dati delle proprietà  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 threeAxis:    
-  description: 'This Resource provides a representation of the measurement from a three-axis sensor.The Property "orientation" is an array of numbers representing x-plane, y-plane and z-plane values.The unit of measurement for each pane is ''g''.'    
+  description: 'This Resource provides a representation of the measurement from a three-axis sensor.The Property ''orientation'' is an array of numbers representing x-plane, y-plane and z-plane values.The unit of measurement for each pane is ''g''.'    
   properties:    
     address:    
       description: 'The mailing address'    
@@ -336,9 +349,14 @@ threeAxis:
   x-version: 0.0.1    
 ```  
 </details>    
-## Esempio di payloads  
-#### tre assi NGSI-v2 valori chiave Esempio  
-Ecco un esempio di un threeAxis in formato JSON-LD come key-values. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
+#### treAssi NGSI-v2 valori-chiave Esempio  
+Ecco un esempio di un threeAxis in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:threeAxis:id:RASO:06616206",  
@@ -389,8 +407,10 @@ threeAxis:
   "type": "threeAxis"  
 }  
 ```  
+</details>  
 #### threeAxis NGSI-v2 normalizzato Esempio  
-Ecco un esempio di un threeAxis in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di un threeAxis in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano le opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -497,167 +517,181 @@ threeAxis:
   }  
 }  
 ```  
-#### tre assi NGSI-LD valori chiave Esempio  
-Ecco un esempio di un threeAxis in formato JSON-LD come key-values. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### valori chiave NGSI-LD a tre assi Esempio  
+Ecco un esempio di un threeAxis in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:threeAxis:id:RASO:06616206",  
-  "dateCreated": "1979-04-23T14:45:08Z",  
-  "dateModified": "1970-12-05T09:45:00Z",  
-  "source": "Indeed begin week action. Blood before record democratic. Moment imagine evidence which front. Simply office because have number for.",  
-  "name": "Media vote fund glass likely hour. Eye peace everyone live half teacher. Dark man marriage raise most. Process bag so specific growth.",  
-  "alternateName": "Century every task miss none those statement. Career station now use listen alone language.",  
-  "description": "Mr property both ago nature blood subject teach. Amount read position stay. Hot point group office.",  
-  "dataProvider": "Compare war data identify movie talk fine. Trip move sit identify already education information. Add level financial view huge lay.",  
-  "owner": [  
-    "urn:ngsi-ld:threeAxis:items:OAYB:94248007",  
-    "urn:ngsi-ld:threeAxis:items:EBDC:08126235"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:threeAxis:items:CJOO:72940193",  
-    "urn:ngsi-ld:threeAxis:items:DCWZ:29485898"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -49.994884,  
-      141.567463  
+    "id": "urn:ngsi-ld:threeAxis:id:RASO:06616206",  
+    "dateCreated": "1979-04-23T14:45:08Z",  
+    "dateModified": "1970-12-05T09:45:00Z",  
+    "source": "Indeed begin week action. Blood before record democratic. Moment imagine evidence which front. Simply office because have number for.",  
+    "name": "Media vote fund glass likely hour. Eye peace everyone live half teacher. Dark man marriage raise most. Process bag so specific growth.",  
+    "alternateName": "Century every task miss none those statement. Career station now use listen alone language.",  
+    "description": "Mr property both ago nature blood subject teach. Amount read position stay. Hot point group office.",  
+    "dataProvider": "Compare war data identify movie talk fine. Trip move sit identify already education information. Add level financial view huge lay.",  
+    "owner": [  
+        "urn:ngsi-ld:threeAxis:items:OAYB:94248007",  
+        "urn:ngsi-ld:threeAxis:items:EBDC:08126235"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:threeAxis:items:CJOO:72940193",  
+        "urn:ngsi-ld:threeAxis:items:DCWZ:29485898"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -49.994884,  
+            141.567463  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Property anyone point choose poor family one. Here those choose.",  
+        "addressLocality": "Strategy year town determine value thank. Ago girl middle soldier class.",  
+        "addressRegion": "Rather company large quite continue. Probably where whether space address.",  
+        "addressCountry": "Help once pass however outside accept to deep. Middle other argue author world. Before billion in argue guy. Quickly understand year face let piece sound there.",  
+        "postalCode": "Treat value within charge artist run management. Heart share environment put as.",  
+        "postOfficeBoxNumber": "Follow foot the hold five season add. Process be my your enjoy degree. Me figure who."  
+    },  
+    "areaServed": "Off animal argue. Discover follow store cup operation win movement property.",  
+    "rt": [  
+        "oic.r.sensor.threeaxis",  
+        "oic.r.sensor.threeaxis"  
+    ],  
+    "orientation": [  
+        477.9,  
+        239.9  
+    ],  
+    "n": "Democratic inside three contain short find never. Sense they off project.",  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.s"  
+    ],  
+    "type": "threeAxis",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Property anyone point choose poor family one. Here those choose.",  
-    "addressLocality": "Strategy year town determine value thank. Ago girl middle soldier class.",  
-    "addressRegion": "Rather company large quite continue. Probably where whether space address.",  
-    "addressCountry": "Help once pass however outside accept to deep. Middle other argue author world. Before billion in argue guy. Quickly understand year face let piece sound there.",  
-    "postalCode": "Treat value within charge artist run management. Heart share environment put as.",  
-    "postOfficeBoxNumber": "Follow foot the hold five season add. Process be my your enjoy degree. Me figure who."  
-  },  
-  "areaServed": "Off animal argue. Discover follow store cup operation win movement property.",  
-  "rt": [  
-    "oic.r.sensor.threeaxis",  
-    "oic.r.sensor.threeaxis"  
-  ],  
-  "orientation": [  
-    477.9,  
-    239.9  
-  ],  
-  "n": "Democratic inside three contain short find never. Sense they off project.",  
-  "if": [  
-    "oic.if.baseline",  
-    "oic.if.s"  
-  ],  
-  "type": "threeAxis",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-#### threeAxis NGSI-LD normalizzato Esempio  
-Ecco un esempio di un threeAxis in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### tre assi NGSI-LD normalizzato Esempio  
+Ecco un esempio di un threeAxis in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:threeAxis:id:HWJT:19776306",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2019-08-17T14:34:59Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1973-09-02T07:45:08Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Film president near election agent teacher. Learn organization green play moment ball role."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Born fight agreement then computer top describe page. Task loss compare financial attack."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Computer building service so life actually effort. Entire bed interest data. Teach world operation Congress general major."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Including detail building Mr might. Think participant east section."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Response to anything investment beautiful possible network."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:threeAxis:items:RFJU:81627755",  
-      "urn:ngsi-ld:threeAxis:items:RTKZ:08401097"  
+    "id": "urn:ngsi-ld:threeAxis:id:HWJT:19776306",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2019-08-17T14:34:59Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1973-09-02T07:45:08Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Film president near election agent teacher. Learn organization green play moment ball role."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Born fight agreement then computer top describe page. Task loss compare financial attack."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Computer building service so life actually effort. Entire bed interest data. Teach world operation Congress general major."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Including detail building Mr might. Think participant east section."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Response to anything investment beautiful possible network."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:threeAxis:items:RFJU:81627755",  
+            "urn:ngsi-ld:threeAxis:items:RTKZ:08401097"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:threeAxis:items:LHRP:82492240"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                47.491969,  
+                151.603806  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Southern much knowledge edge. With smile vote card forward reach.",  
+            "addressLocality": "Red seven believe hard rule arrive move place. Smile drop home future family debate. Political blue guess paper lose cup.",  
+            "addressRegion": "Kid not test else age research. Reveal number would music. Then range less general.",  
+            "addressCountry": "Need international consider soon month toward. Total person particularly author authority everybody Mr set.",  
+            "postalCode": "Home live history tough. Least ever president buy spend look. Phone man race role develop friend with.",  
+            "postOfficeBoxNumber": "Less message certain prevent age major. Far answer onto sometimes employee significant."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Rise financial technology option natural quickly. Sure offer memory."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.sensor.threeaxis"  
+        ]  
+    },  
+    "orientation": {  
+        "type": "Property",  
+        "value": [  
+            533.4,  
+            302.7,  
+            612.3  
+        ]  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Change term dream officer memory. Institution here on financial develop popular relationship choice."  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline",  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "threeAxis",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:threeAxis:items:LHRP:82492240"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        47.491969,  
-        151.603806  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Southern much knowledge edge. With smile vote card forward reach.",  
-      "addressLocality": "Red seven believe hard rule arrive move place. Smile drop home future family debate. Political blue guess paper lose cup.",  
-      "addressRegion": "Kid not test else age research. Reveal number would music. Then range less general.",  
-      "addressCountry": "Need international consider soon month toward. Total person particularly author authority everybody Mr set.",  
-      "postalCode": "Home live history tough. Least ever president buy spend look. Phone man race role develop friend with.",  
-      "postOfficeBoxNumber": "Less message certain prevent age major. Far answer onto sometimes employee significant."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Rise financial technology option natural quickly. Sure offer memory."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.sensor.threeaxis"  
-    ]  
-  },  
-  "orientation": {  
-    "type": "Property",  
-    "value": [  
-      533.4,  
-      302.7,  
-      612.3  
-    ]  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Change term dream officer memory. Institution here on financial develop popular relationship choice."  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.baseline",  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "type": "threeAxis",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
