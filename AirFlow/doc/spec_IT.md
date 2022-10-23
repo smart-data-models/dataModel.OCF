@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entità: AirFlow  
-===============  
+===============<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.OCF/blob/master/AirFlow/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Questa risorsa descrive le proprietà associate al flusso d'aria.La proprietà 'supporteddirections' è l'insieme dei valori validi per la proprietà direction per una particolare istanza di questo Resource Type.La proprietà 'direction' è la direzionalità del flusso d'aria se applicabile, se anche la proprietà 'supporteddirections' è presente deve essere un valore da quell'insieme. I valori della proprietà 'direction' dipendono dalle capacità dell'unità.La proprietà 'speed' è un intero che rappresenta il livello di velocità corrente per l'unità.La proprietà 'range' è un array di valori minimi e massimi per il livello di velocità. Se non presente il 'range' è predefinito a [0,100]. La proprietà 'automode' è lo stato della funzione automode; Off significa che l'automode non è abilitato, On significa che l'automode è attivo e la velocità è controllata automaticamente dal dispositivo.**  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **La proprietà 'supporteddirections' è l'insieme dei valori validi per la proprietà direction per una particolare istanza di questo tipo di risorsa.La proprietà 'direction' è la direzionalità del flusso d'aria, se applicabile; se è presente anche la proprietà 'supporteddirections', deve essere un valore di quell'insieme. I valori della proprietà 'direction' dipendono dalle capacità dell'unità.La proprietà 'speed' è un numero intero che rappresenta il livello di velocità corrente dell'unità.La proprietà 'range' è un array di valori minimi e massimi per il livello di velocità. Se non è presente, il valore predefinito di 'range' è [0,100]. La proprietà 'automode' è lo stato della funzione automode; Off significa che l'automode non è abilitato, On significa che l'automode è attivo e la velocità è controllata automaticamente dal dispositivo.**  
 versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `automode`: Lo stato della funzione automode, se la velocità è impostata dal dispositivo.  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `direction`: La direzionalità del flusso d'aria, un valore indicato da 'supporteddirections'.  - `id`: Identificatore unico dell'entità  - `if`: L'insieme di interfacce OCF supportato da questa risorsa.  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n`: Nome amichevole della risorsa  - `name`: Il nome di questo articolo.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `range`: L'intervallo valido per la proprietà nella risorsa come un intero. Il primo valore nell'array è il valore minimo, il secondo valore nell'array è il valore massimo.  - `rt`: Il tipo di risorsa  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `speed`: Il livello di velocità attuale.  - `step`: Valore di passo attraverso l'intervallo definito quando l'intervallo è un intero.  Questo è l'incremento per i valori validi attraverso l'intervallo; quindi se l'intervallo è 0..10 e il passo è 2 allora i valori validi sono 0,2,4,6,8,10.  - `supporteddirections`: L'array di possibili impostazioni di direzione per questa istanza del tipo di risorsa.  - `type`: Tipo di entità NGSI. Deve essere AirFlow    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `automode[string]`: Lo stato della funzione automode, se la velocità è impostata dal dispositivo.  - `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `direction[string]`: La direzionalità del flusso d'aria, un valore indicato da "direzioni supportate".  - `id[*]`: Identificatore univoco dell'entità  - `if[array]`: Il set di interfacce OCF supportato da questa risorsa.  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `n[string]`: Nome amichevole della risorsa  - `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `range[array]`: L'intervallo valido per la proprietà nella risorsa come numero intero. Il primo valore della matrice è il valore minimo, il secondo valore della matrice è il valore massimo.  - `rt[array]`: Il tipo di risorsa  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `speed[integer]`: Il livello di velocità attuale.  - `step[integer]`: Valore di passo nell'intervallo definito quando l'intervallo è un numero intero.  Si tratta dell'incremento per i valori validi in tutto l'intervallo; quindi se l'intervallo è 0..10 e il passo è 2, i valori validi sono 0,2,4,6,8,10.  - `supporteddirections[array]`: L'array delle possibili impostazioni di direzione per questa istanza del tipo di risorsa.  - `type[string]`: Tipo di entità NGSI. Deve essere AirFlow  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- `id`  - `speed`  - `type`    
+- `id`  - `speed`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Modello di dati adattato dall'originale creato dalla Open Connectivity Foundation. Repository originale in https://github.com/openconnectivityfoundation/IoTDataModels  
-## Descrizione del modello di dati delle proprietà  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 AirFlow:    
@@ -370,9 +383,14 @@ AirFlow:
   x-version: 0.0.1    
 ```  
 </details>    
-## Esempio di payloads  
-#### AirFlow NGSI-v2 valori chiave Esempio  
-Ecco un esempio di un AirFlow in formato JSON-LD come key-values. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
+#### Valori-chiave di AirFlow NGSI-v2 Esempio  
+Ecco un esempio di AirFlow in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:AirFlow:id:XSWU:58062726",  
@@ -437,8 +455,10 @@ AirFlow:
   "type": "AirFlow"  
 }  
 ```  
+</details>  
 #### AirFlow NGSI-v2 normalizzato Esempio  
-Ecco un esempio di un AirFlow in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di AirFlow in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si usano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -574,202 +594,216 @@ AirFlow:
   }  
 }  
 ```  
-#### AirFlow NGSI-LD valori chiave Esempio  
-Ecco un esempio di un AirFlow in formato JSON-LD come key-values. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### Valori chiave AirFlow NGSI-LD Esempio  
+Ecco un esempio di AirFlow in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:AirFlow:id:XSWU:58062726",  
-  "dateCreated": "2010-02-14T21:51:25Z",  
-  "dateModified": "2010-03-18T13:03:00Z",  
-  "source": "Hospital be move baby reality. Education affect risk off. Per building film soon get whatever.",  
-  "name": "Power fill agency stay water body know. Physical option foreign common imagine relationship eight. Over coach next product bank situation daughter.",  
-  "alternateName": "Senior consumer home peace. Against benefit treat heavy. Study avoid matter civil adult wind him.",  
-  "description": "Cultural receive against particular with summer stay. Second commercial from another movie record rise.",  
-  "dataProvider": "Win message smile dinner talk citizen. Professor spend see heart.",  
-  "owner": [  
-    "urn:ngsi-ld:AirFlow:items:HQBW:07594514",  
-    "urn:ngsi-ld:AirFlow:items:XTIH:34920922"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:AirFlow:items:AAHX:93448219",  
-    "urn:ngsi-ld:AirFlow:items:ZBBK:34409235"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -58.0369645,  
-      22.817704  
+    "id": "urn:ngsi-ld:AirFlow:id:XSWU:58062726",  
+    "dateCreated": "2010-02-14T21:51:25Z",  
+    "dateModified": "2010-03-18T13:03:00Z",  
+    "source": "Hospital be move baby reality. Education affect risk off. Per building film soon get whatever.",  
+    "name": "Power fill agency stay water body know. Physical option foreign common imagine relationship eight. Over coach next product bank situation daughter.",  
+    "alternateName": "Senior consumer home peace. Against benefit treat heavy. Study avoid matter civil adult wind him.",  
+    "description": "Cultural receive against particular with summer stay. Second commercial from another movie record rise.",  
+    "dataProvider": "Win message smile dinner talk citizen. Professor spend see heart.",  
+    "owner": [  
+        "urn:ngsi-ld:AirFlow:items:HQBW:07594514",  
+        "urn:ngsi-ld:AirFlow:items:XTIH:34920922"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:AirFlow:items:AAHX:93448219",  
+        "urn:ngsi-ld:AirFlow:items:ZBBK:34409235"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -58.0369645,  
+            22.817704  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Eye reason order father always. Wait oil beat benefit front technology finish.",  
+        "addressLocality": "Space while so she. Tend blue determine level toward much keep.",  
+        "addressRegion": "Although bring Democrat purpose threat nation wind. Hotel develop remain else point. Bill coach guy grow political family.",  
+        "addressCountry": "Should list dark by firm already third agency. Page although what expect before expect. Affect enter hot I mission sort.",  
+        "postalCode": "Public reach consumer picture catch plan.",  
+        "postOfficeBoxNumber": "Lawyer leg agent follow finally."  
+    },  
+    "areaServed": "Seat great coach health yourself former simply. Impact under professional short scientist. Land season business inside reach.",  
+    "rt": [  
+        "oic.r.airflow",  
+        "oic.r.airflow"  
+    ],  
+    "speed": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "direction": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair.",  
+    "automode": "On",  
+    "supporteddirections": [  
+        "Line beyond its particularly tree whom. Kind miss artist truth trouble behavior style.",  
+        "Partner stock four. Region as true develop sound central. Language ball floor meet usually board necessary. Natural sport music white."  
+    ],  
+    "n": "Onto knowledge other his offer face country. Almost wonder employee attorney. Theory type successful together. Raise study modern miss dog Democrat quickly.",  
+    "range": [  
+        864,  
+        864  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "if": [  
+        "oic.if.a",  
+        "oic.if.baseline"  
+    ],  
+    "type": "AirFlow",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Eye reason order father always. Wait oil beat benefit front technology finish.",  
-    "addressLocality": "Space while so she. Tend blue determine level toward much keep.",  
-    "addressRegion": "Although bring Democrat purpose threat nation wind. Hotel develop remain else point. Bill coach guy grow political family.",  
-    "addressCountry": "Should list dark by firm already third agency. Page although what expect before expect. Affect enter hot I mission sort.",  
-    "postalCode": "Public reach consumer picture catch plan.",  
-    "postOfficeBoxNumber": "Lawyer leg agent follow finally."  
-  },  
-  "areaServed": "Seat great coach health yourself former simply. Impact under professional short scientist. Land season business inside reach.",  
-  "rt": [  
-    "oic.r.airflow",  
-    "oic.r.airflow"  
-  ],  
-  "speed": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "direction": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair.",  
-  "automode": "On",  
-  "supporteddirections": [  
-    "Line beyond its particularly tree whom. Kind miss artist truth trouble behavior style.",  
-    "Partner stock four. Region as true develop sound central. Language ball floor meet usually board necessary. Natural sport music white."  
-  ],  
-  "n": "Onto knowledge other his offer face country. Almost wonder employee attorney. Theory type successful together. Raise study modern miss dog Democrat quickly.",  
-  "range": [  
-    864,  
-    864  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "if": [  
-    "oic.if.a",  
-    "oic.if.baseline"  
-  ],  
-  "type": "AirFlow",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### AirFlow NGSI-LD normalizzato Esempio  
-Ecco un esempio di un AirFlow in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di AirFlow in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:AirFlow:id:CTQH:10088755",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1971-04-04T11:51:02Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1972-10-11T04:22:40Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Above add institution message use. Player owner together ago."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Could read computer minute. Trip no last thought push."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Most oil his tonight. Five perform any media."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "History trade per summer. Material spring base attack note forget. Win not itself character thought according property."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Kitchen commercial bed modern mean finish people. Rate base cultural bar time."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:AirFlow:items:THBX:12648291",  
-      "urn:ngsi-ld:AirFlow:items:WYAI:06881272"  
+    "id": "urn:ngsi-ld:AirFlow:id:CTQH:10088755",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1971-04-04T11:51:02Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1972-10-11T04:22:40Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Above add institution message use. Player owner together ago."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Could read computer minute. Trip no last thought push."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Most oil his tonight. Five perform any media."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "History trade per summer. Material spring base attack note forget. Win not itself character thought according property."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Kitchen commercial bed modern mean finish people. Rate base cultural bar time."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:AirFlow:items:THBX:12648291",  
+            "urn:ngsi-ld:AirFlow:items:WYAI:06881272"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:AirFlow:items:FOOH:86766119"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                11.690259,  
+                -163.367986  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Quickly leg little certain his. Financial music run miss out. Attack again same production leg fund. Task consider nature author.",  
+            "addressLocality": "Single particularly some economy choice. Will tree success call window direction though be. Deep serious play establish.",  
+            "addressRegion": "Moment strategy sing party up. There travel sit science government. Military democratic hard case probably kitchen. Suffer kid order year since affect.",  
+            "addressCountry": "Toward product indeed voice character. Low drug view memory.",  
+            "postalCode": "West figure produce. Nature month husband.",  
+            "postOfficeBoxNumber": "Early true turn. Son wonder politics young health. Suggest design message standard save style school agree."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Art guess ok front become lay per. Attorney step company."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.airflow"  
+        ]  
+    },  
+    "speed": {  
+        "type": "Property",  
+        "value": 725  
+    },  
+    "direction": {  
+        "type": "Property",  
+        "value": "For team service avoid boy clear election small."  
+    },  
+    "automode": {  
+        "type": "Property",  
+        "value": "Off"  
+    },  
+    "supporteddirections": {  
+        "type": "Property",  
+        "value": [  
+            "Instead process economy bad. Television chance name sort claim current. Attention adult onto dog American sport."  
+        ]  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Account today process discussion factor need race wait. System produce professor choose trouble join. Focus edge picture."  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            961,  
+            463  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 320  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline",  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "AirFlow",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:AirFlow:items:FOOH:86766119"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        11.690259,  
-        -163.367986  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Quickly leg little certain his. Financial music run miss out. Attack again same production leg fund. Task consider nature author.",  
-      "addressLocality": "Single particularly some economy choice. Will tree success call window direction though be. Deep serious play establish.",  
-      "addressRegion": "Moment strategy sing party up. There travel sit science government. Military democratic hard case probably kitchen. Suffer kid order year since affect.",  
-      "addressCountry": "Toward product indeed voice character. Low drug view memory.",  
-      "postalCode": "West figure produce. Nature month husband.",  
-      "postOfficeBoxNumber": "Early true turn. Son wonder politics young health. Suggest design message standard save style school agree."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Art guess ok front become lay per. Attorney step company."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.airflow"  
-    ]  
-  },  
-  "speed": {  
-    "type": "Property",  
-    "value": 725  
-  },  
-  "direction": {  
-    "type": "Property",  
-    "value": "For team service avoid boy clear election small."  
-  },  
-  "automode": {  
-    "type": "Property",  
-    "value": "Off"  
-  },  
-  "supporteddirections": {  
-    "type": "Property",  
-    "value": [  
-      "Instead process economy bad. Television chance name sort claim current. Attention adult onto dog American sport."  
-    ]  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Account today process discussion factor need race wait. System produce professor choose trouble join. Focus edge picture."  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      961,  
-      463  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 320  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.baseline",  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "type": "AirFlow",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
