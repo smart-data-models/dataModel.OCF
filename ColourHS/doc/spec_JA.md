@@ -1,17 +1,32 @@
-エンティティカラーHS  
-===========  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティColourHS  
+==============<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/ColourHS/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな説明です。**IoTDataのデータモデルをスマートデータモデルプログラムで実現したものです。このResourceは、色相-彩度の規則を用いて色を記述する。プロパティ「hue」は色相角であり、CIECAM02モデル定義（参考文献[CIE CIE159:2004]参照）で定義された数値である。小数点以下の色相角に対応していないデバイスでは、整数値を指定することができます。プロパティ「精度」が提供されている場合は、色相角に適用されます。プロパティ「彩度」は、CIECAM02 モデル定義（参考文献[CIE CIE159:2004]）で定義されている整数値です。  プロパティ「彩度」は saturation/maximumsaturation X 100 でパーセンテージに変換することができますが、プロパティ自体が存在しない場合、maximumsaturation は 32767 となります。プロパティ「maximumsaturation」は、本機がサポートする飽和度の上限値です。存在しない場合、彩度の最大値は 32767 となります。リソースは、色相と彩度の規則を使用して色を提供します。**  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**IoTData のデータモデルをスマートデータモデルプログラムに適応させたもの。この Resource は色相-彩度の規則を使って色を記述する。Property 'hue'は色相角であり、CIECAM02モデル定義（参考文献[CIE CIE159:2004]）で定義された数値値である。分数の色相角をサポートしないDeviceは、整数値を提供することができる。Property 'precision' が提供される場合、それは色相角度に適用される。Property 'saturation'はCIECAM02モデル定義（参考文献[CIE CIE159:2004]参照）で定義された整数値である。  Property 'saturation'は、saturation/maximumsaturation X 100によってパーセンテージに変換することができる。Property 'maximumsaturation'は、Device がサポートする飽和度の上限値である。存在しない場合、彩度の最大値は32767である。Resource は色相と彩度の規約を使用して色を提供する。**  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `hue`: CIECAM02のモデル定義で定義されている色相の角度。  - `id`: エンティティのユニークな識別子  - `if`: このResourceがサポートしているOCF Interface set。  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `maximumsaturation`: このデバイスでサポートされている「saturation」の最大値です。  - `n`: リソースのフレンドリーネーム  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `precision`: 公開された場合、「精度」の値は、リソース内のプロパティに対して±の許容範囲を提供する。従って、あるプロパティがある値に更新され、そのプロパティがRETRIEVEDされた場合、RETRIEVEDされた値は、設定された値の±精度の範囲内であれば有効である。  - `rt`: The Resource Type。  - `saturation`: CIECAM02のモデル定義で定められた飽和度。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSIエンティティタイプ。カラーHSでなければならない。    
-必須項目  
-- `id`  - `type`    
-このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)から来ています。NGSIの要件に適合するように拡張されています。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `hue[number]`: CIECAM02のモデル定義で定義された色相角。  - `id[*]`: エンティティの一意な識別子  - `if[array]`: このResourceがサポートするOCF Interfaceセット。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `maximumsaturation[integer]`: このデバイスでサポートされる'saturation'の最大値。  - `n[string]`: リソースのフレンドリ名  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `precision[number]`: 公開されるとき、'precision'の値は、ResourceのPropertyに対して+/-の許容範囲を提供する。したがって、あるプロパティがある値にUPDATEされ、そのプロパティがRETRIEVEDされた場合、RETRIEVEDされた値は設定された値+/-精度の範囲内であれば有効である。  - `rt[array]`: リソースタイプです。  - `saturation[integer]`: CIECAM02のモデル定義による飽和度です。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSIエンティティタイプ。ColourHSである必要があります。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)に由来しています。NGSIの要件に適合するように拡張されている。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ColourHS:    
@@ -351,9 +366,14 @@ ColourHS:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### カラーHS NGSI-v2 キーバリューの例  
-ColourHSをkey-valuesとしてJSON-LD形式で出力した例です。これは`options=keyValues`を使った場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### ColourHS NGSI-v2キーバリューの例  
+ここでは、ColourHSをJSON-LD形式でkey-valuesとした例を示す。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:ColourHS:id:DLXG:90211144",  
@@ -390,8 +410,10 @@ ColourHS:
   "areaServed": "Action yes plant pull make spend. Several radio the deal fall. Remain suddenly voice building."  
 }  
 ```  
-#### カラーHS NGSI-v2 正規化例  
-ここでは、正規化されたJSON-LD形式のColourHSの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### ColourHS NGSI-v2 正規化例  
+以下は、正規化されたJSON-LD形式のColourHSの例である。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -469,127 +491,141 @@ ColourHS:
   }  
 }  
 ```  
-#### カラーHS NGSI-LDのキーバリューの例  
-ここでは、ColourHSをkey-valuesとしてJSON-LD形式で表現した例を紹介します。これは`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### ColourHS NGSI-LD key-value 例  
+ここでは、ColourHSをJSON-LD形式でkey-valuesとした例を示す。これは `options=keyValues` を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:ColourHS:id:DLXG:90211144",  
-  "dateCreated": "1977-03-13T17:59:46Z",  
-  "dateModified": "2012-10-15T11:19:46Z",  
-  "source": "Catch protect gas yard heavy voice. Put writer myself we eat test. Statement development system left arm agree head.",  
-  "name": "Dark color hand commercial bit while.",  
-  "alternateName": "Military address about several. Lay ball level fight notice current. Bank peace future box.",  
-  "description": "Majority produce home short church. Window issue dark these. Discussion a reflect kitchen offer weight. Various charge table hit write.",  
-  "dataProvider": "Them attack on produce enjoy political ago fast. Apply hundred expert.",  
-  "owner": [  
-    "urn:ngsi-ld:ColourHS:items:VBDX:22087584",  
-    "urn:ngsi-ld:ColourHS:items:RTUI:58785534"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:ColourHS:items:IEEC:67313530",  
-    "urn:ngsi-ld:ColourHS:items:MVIN:52384772"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      25.3046825,  
-      -126.528647  
+    "id": "urn:ngsi-ld:ColourHS:id:DLXG:90211144",  
+    "dateCreated": "1977-03-13T17:59:46Z",  
+    "dateModified": "2012-10-15T11:19:46Z",  
+    "source": "Catch protect gas yard heavy voice. Put writer myself we eat test. Statement development system left arm agree head.",  
+    "name": "Dark color hand commercial bit while.",  
+    "alternateName": "Military address about several. Lay ball level fight notice current. Bank peace future box.",  
+    "description": "Majority produce home short church. Window issue dark these. Discussion a reflect kitchen offer weight. Various charge table hit write.",  
+    "dataProvider": "Them attack on produce enjoy political ago fast. Apply hundred expert.",  
+    "owner": [  
+        "urn:ngsi-ld:ColourHS:items:VBDX:22087584",  
+        "urn:ngsi-ld:ColourHS:items:RTUI:58785534"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:ColourHS:items:IEEC:67313530",  
+        "urn:ngsi-ld:ColourHS:items:MVIN:52384772"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            25.3046825,  
+            -126.528647  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Mr if structure whom save. Small human kitchen. There scientist accept authority finally finish democratic.",  
+        "addressLocality": "Hot west short specific interesting provide current campaign. Institution provide agree medical face whatever.",  
+        "addressRegion": "Test campaign painting leader. Central possible none church summer approach.",  
+        "addressCountry": "Sell fly piece democratic decide land church store. Whether interest situation five. Provide research democratic within since talk beyond.",  
+        "postalCode": "Only check election police. All positive include owner leg end. Suggest health music piece build yard.",  
+        "postOfficeBoxNumber": "Career answer himself listen. Attorney society home production part."  
+    },  
+    "areaServed": "Action yes plant pull make spend. Several radio the deal fall. Remain suddenly voice building.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Mr if structure whom save. Small human kitchen. There scientist accept authority finally finish democratic.",  
-    "addressLocality": "Hot west short specific interesting provide current campaign. Institution provide agree medical face whatever.",  
-    "addressRegion": "Test campaign painting leader. Central possible none church summer approach.",  
-    "addressCountry": "Sell fly piece democratic decide land church store. Whether interest situation five. Provide research democratic within since talk beyond.",  
-    "postalCode": "Only check election police. All positive include owner leg end. Suggest health music piece build yard.",  
-    "postOfficeBoxNumber": "Career answer himself listen. Attorney society home production part."  
-  },  
-  "areaServed": "Action yes plant pull make spend. Several radio the deal fall. Remain suddenly voice building.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-#### カラーHS NGSI-LD 正規化例  
-ここでは、正規化されたJSON-LD形式のColourHSの例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### ColourHS NGSI-LD 正規化例  
+以下は、正規化されたJSON-LD形式のColourHSの例である。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:ColourHS:id:VIED:72184359",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1974-12-21T13:03:31Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2010-08-25T07:04:37Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Lot whole task use."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Until drug young what way agency reality. Mission explain wrong moment here source. Since down unit policy price candidate start."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Myself entire past face cup support behavior. Face such could character according send end."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Upon respond analysis fall mission mention miss a. None drug report tend future."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Sell anything later really major. Mention data partner."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:ColourHS:items:DRUT:10402699",  
-      "urn:ngsi-ld:ColourHS:items:XTXA:97530272"  
+    "id": "urn:ngsi-ld:ColourHS:id:VIED:72184359",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1974-12-21T13:03:31Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2010-08-25T07:04:37Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Lot whole task use."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Until drug young what way agency reality. Mission explain wrong moment here source. Since down unit policy price candidate start."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Myself entire past face cup support behavior. Face such could character according send end."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Upon respond analysis fall mission mention miss a. None drug report tend future."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Sell anything later really major. Mention data partner."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:ColourHS:items:DRUT:10402699",  
+            "urn:ngsi-ld:ColourHS:items:XTXA:97530272"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:ColourHS:items:IQHE:71148899"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -86.1604745,  
+                -18.960842  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Walk land try relate peace hour quality. Although fall star treat career still.",  
+            "addressLocality": "Letter fill billion could either every. Stage throughout position brother sell. Talk material at everybody why yet.",  
+            "addressRegion": "Dream top hold let day strong. Also road ask radio. Middle partner middle administration past.",  
+            "addressCountry": "Purpose every traditional pass low sense choice.",  
+            "postalCode": "Until their benefit green set find. Message place member player picture task condition. Best across green figure born.",  
+            "postOfficeBoxNumber": "Wrong up customer stop church goal. Heavy way sister admit between actually he."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Spring never girl deep season. Floor media company election."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:ColourHS:items:IQHE:71148899"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -86.1604745,  
-        -18.960842  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Walk land try relate peace hour quality. Although fall star treat career still.",  
-      "addressLocality": "Letter fill billion could either every. Stage throughout position brother sell. Talk material at everybody why yet.",  
-      "addressRegion": "Dream top hold let day strong. Also road ask radio. Middle partner middle administration past.",  
-      "addressCountry": "Purpose every traditional pass low sense choice.",  
-      "postalCode": "Until their benefit green set find. Message place member player picture task condition. Best across green figure born.",  
-      "postOfficeBoxNumber": "Wrong up customer stop church goal. Heavy way sister admit between actually he."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Spring never girl deep season. Floor media company election."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
