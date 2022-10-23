@@ -1,17 +1,32 @@
-Entité : GlucoseMeal  
-====================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entité : GlucoseMeal  
+====================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.OCF/blob/master/GlucoseMeal/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Description globale : **Adaptation du programme Smart Data Models des modèles de données IoTData originaux. Cette ressource décrit les propriétés associées au contexte repas. Preprandial signifie pré-repas. Postprandial signifie postprandial. Le jeûne désigne l'effet d'une absence prolongée d'apport alimentaire (pendant la nuit). La propriété meal est une valeur en lecture seule qui est fournie par le serveur.  
+version : 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `if`: L'ensemble des interfaces OCF supportées par cette ressource  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `meal`: Heure de la journée à laquelle la mesure est effectuée.  - `n`: Nom amical de la ressource  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `rt`: Type de ressource  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type`: Type d'entité NGSI. Il doit s'agir de GlucoseMeal.    
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour cet élément  - `areaServed[string]`: La zone géographique où un service ou un article offert est fourni  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified[string]`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description[string]`: Une description de cet article  - `id[*]`: Identifiant unique de l'entité  - `if[array]`: L'ensemble des interfaces OCF supportées par cette ressource  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `meal[string]`: Heure de la journée à laquelle la mesure est effectuée.  - `n[string]`: Nom amical de la ressource  - `name[string]`: Le nom de cet élément.  - `owner[array]`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `rt[array]`: Type de ressource  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type[string]`: Type d'entité NGSI. Il doit s'agir de GlucoseMeal.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propriétés requises  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Ce modèle de données provient du référentiel original de la [Open Connectivity Foundation] (https://github.com/openconnectivityfoundation/IoTDataModels). Il a été étendu pour se conformer aux exigences de la NGSI.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 GlucoseMeal:    
@@ -336,9 +351,14 @@ GlucoseMeal:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Exemples de charges utiles  
 #### GlucoseMeal Valeurs-clés NGSI-v2 Exemple  
 Voici un exemple de GlucoseMeal au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:GlucoseMeal:id:HLGE:82344698",  
@@ -375,8 +395,10 @@ GlucoseMeal:
   "areaServed": "Guy sport garden too result worker institution. Tough seat pattern light sing. Standard attack staff require there light article."  
 }  
 ```  
+</details>  
 #### GlucoseMeal NGSI-v2 normalisé Exemple  
 Voici un exemple de GlucoseMeal au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -454,127 +476,141 @@ GlucoseMeal:
   }  
 }  
 ```  
+</details>  
 #### GlucoseMeal Valeurs-clés NGSI-LD Exemple  
 Voici un exemple de GlucoseMeal au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-LD lorsque vous utilisez `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:GlucoseMeal:id:HLGE:82344698",  
-  "dateCreated": "1977-08-15T01:39:07Z",  
-  "dateModified": "1997-06-24T22:20:47Z",  
-  "source": "Say alone feel sound. Every affect billion feel during. Particular road instead fast should grow. Give next skin deal building.",  
-  "name": "Film experience anything us accept respond late really. Building still foot main.",  
-  "alternateName": "Low anything score rather my will continue. By city people raise operation amount. Mission measure cause company short.",  
-  "description": "Radio computer listen high return sit. Professor watch stock among eye. Speech phone firm reason.",  
-  "dataProvider": "Fire church cold early doctor civil white. Until easy action candidate few skin. Guy four production community film.",  
-  "owner": [  
-    "urn:ngsi-ld:GlucoseMeal:items:KJWE:83688146",  
-    "urn:ngsi-ld:GlucoseMeal:items:CPXX:84082182"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:GlucoseMeal:items:NLUW:70195588",  
-    "urn:ngsi-ld:GlucoseMeal:items:ZPDL:30436070"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -82.9153815,  
-      -36.845329  
+    "id": "urn:ngsi-ld:GlucoseMeal:id:HLGE:82344698",  
+    "dateCreated": "1977-08-15T01:39:07Z",  
+    "dateModified": "1997-06-24T22:20:47Z",  
+    "source": "Say alone feel sound. Every affect billion feel during. Particular road instead fast should grow. Give next skin deal building.",  
+    "name": "Film experience anything us accept respond late really. Building still foot main.",  
+    "alternateName": "Low anything score rather my will continue. By city people raise operation amount. Mission measure cause company short.",  
+    "description": "Radio computer listen high return sit. Professor watch stock among eye. Speech phone firm reason.",  
+    "dataProvider": "Fire church cold early doctor civil white. Until easy action candidate few skin. Guy four production community film.",  
+    "owner": [  
+        "urn:ngsi-ld:GlucoseMeal:items:KJWE:83688146",  
+        "urn:ngsi-ld:GlucoseMeal:items:CPXX:84082182"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:GlucoseMeal:items:NLUW:70195588",  
+        "urn:ngsi-ld:GlucoseMeal:items:ZPDL:30436070"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -82.9153815,  
+            -36.845329  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Anything build writer reduce behind shoulder to. Third Republican kind develop money.",  
+        "addressLocality": "Parent name poor action item table support. Forward decide tree sign here strong.",  
+        "addressRegion": "Life rise only fall little approach. Themselves affect before pay none. Trade kitchen guess.",  
+        "addressCountry": "Expect American suddenly forget senior cost. Line defense big activity. Leg rich firm subject you.",  
+        "postalCode": "Shake should offer foreign list. Decision life win major capital manage either. Throw performance soldier know goal black.",  
+        "postOfficeBoxNumber": "Sit those arm rich rather consider will. Million much campaign director free."  
+    },  
+    "areaServed": "Guy sport garden too result worker institution. Tough seat pattern light sing. Standard attack staff require there light article.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Anything build writer reduce behind shoulder to. Third Republican kind develop money.",  
-    "addressLocality": "Parent name poor action item table support. Forward decide tree sign here strong.",  
-    "addressRegion": "Life rise only fall little approach. Themselves affect before pay none. Trade kitchen guess.",  
-    "addressCountry": "Expect American suddenly forget senior cost. Line defense big activity. Leg rich firm subject you.",  
-    "postalCode": "Shake should offer foreign list. Decision life win major capital manage either. Throw performance soldier know goal black.",  
-    "postOfficeBoxNumber": "Sit those arm rich rather consider will. Million much campaign director free."  
-  },  
-  "areaServed": "Guy sport garden too result worker institution. Tough seat pattern light sing. Standard attack staff require there light article.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### GlucoseMeal NGSI-LD normalisé Exemple  
 Voici un exemple de GlucoseMeal au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:GlucoseMeal:id:ABVE:19702704",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2002-02-17T00:53:08Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2010-03-31T20:20:55Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Leader ten audience his."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Play participant away rate claim none sense little. Evening class teach war game. Nation campaign body human. Program message protect economy chair race ago."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Indeed finally indeed word mind hit shake. Section attorney take rate. Fear leg because suggest degree."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Fire charge outside head majority capital. Of happen past instead interesting audience throughout. Join marriage certain turn happen."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Him indeed some allow. Reduce somebody white card another. Member seat produce animal position."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:GlucoseMeal:items:IQSO:46372161",  
-      "urn:ngsi-ld:GlucoseMeal:items:IZFK:40511946"  
+    "id": "urn:ngsi-ld:GlucoseMeal:id:ABVE:19702704",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2002-02-17T00:53:08Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2010-03-31T20:20:55Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Leader ten audience his."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Play participant away rate claim none sense little. Evening class teach war game. Nation campaign body human. Program message protect economy chair race ago."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Indeed finally indeed word mind hit shake. Section attorney take rate. Fear leg because suggest degree."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Fire charge outside head majority capital. Of happen past instead interesting audience throughout. Join marriage certain turn happen."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Him indeed some allow. Reduce somebody white card another. Member seat produce animal position."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:GlucoseMeal:items:IQSO:46372161",  
+            "urn:ngsi-ld:GlucoseMeal:items:IZFK:40511946"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:GlucoseMeal:items:WFRZ:03670754"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                0.614666,  
+                60.591506  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Way tree option central car beautiful. Your able democratic already possible.",  
+            "addressLocality": "Analysis focus sort agency. Open fall blood animal understand enough industry. Chair above drug figure sit result.",  
+            "addressRegion": "Throughout no group participant medical call natural. Less collection top get everybody. Another improve risk suffer our leader century.",  
+            "addressCountry": "Student travel floor fish hear matter nothing. Along people claim light fact maybe five. Walk middle arrive main address include.",  
+            "postalCode": "Nearly eight happy water. College Republican buy door head. Stand especially science issue positive tend fast result.",  
+            "postOfficeBoxNumber": "Ahead if design safe watch. Language sound guy fight break."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "My which public amount. Identify media none future cost network party. Modern six discuss writer receive."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:GlucoseMeal:items:WFRZ:03670754"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        0.614666,  
-        60.591506  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Way tree option central car beautiful. Your able democratic already possible.",  
-      "addressLocality": "Analysis focus sort agency. Open fall blood animal understand enough industry. Chair above drug figure sit result.",  
-      "addressRegion": "Throughout no group participant medical call natural. Less collection top get everybody. Another improve risk suffer our leader century.",  
-      "addressCountry": "Student travel floor fish hear matter nothing. Along people claim light fact maybe five. Walk middle arrive main address include.",  
-      "postalCode": "Nearly eight happy water. College Republican buy door head. Stand especially science issue positive tend fast result.",  
-      "postOfficeBoxNumber": "Ahead if design safe watch. Language sound guy fight break."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "My which public amount. Identify media none future cost network party. Modern six discuss writer receive."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
