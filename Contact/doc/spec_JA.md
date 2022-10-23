@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 エンティティ連絡先  
-=========  
+=========<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/Contact/LICENSE.md)  
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 グローバルな記述です。**この Resource は、接点センサがトリップしたかどうかを記述する。  
 バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `id`: エンティティの一意な識別子  - `if`: このResourceがサポートするOCF Interfaceセット。  - `location`: アイテムへのGeojsonリファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `n`: リソースのフレンドリ名  - `name`: このアイテムの名称です。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `rt`: リソースタイプです。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで指定する文字の列。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSIエンティティタイプ。これは、Contact（連絡先）でなければなりません。  - `value`: 接点表示で、真＝断線（オープン）、偽＝定位置（クローズ）です。    
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `if[array]`: このResourceがサポートするOCF Interfaceセット。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `n[string]`: リソースのフレンドリ名  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `rt[array]`: リソースタイプです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSIエンティティタイプ。これは、Contact（連絡先）でなければなりません。  - `value[boolean]`: 接点表示で、真＝断線（オープン）、偽＝定位置（クローズ）です。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 必要なプロパティ  
-- `id`  - `type`  - `value`    
+- `id`  - `type`  - `value`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 データモデルは、Open Connectivity Foundationが作成したオリジナルを引用しています。https://github.com/openconnectivityfoundation/IoTDataModels のオリジナルリポジトリ  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
 アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Contact:    
@@ -332,9 +345,14 @@ Contact:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
 #### NGSI-v2 キー値の連絡先 例  
-ここでは、ContactをJSON-LD形式でkey-valueとして記述した例を示します。これは `options=keyValues` を使用した場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータが返される。  
+ここでは、ContactをJSON-LD形式でkey-valuesにした例を示します。これは `options=keyValues` を使用した場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Contact:id:HMUT:83435609",  
@@ -385,8 +403,10 @@ Contact:
   "type": "Contact"  
 }  
 ```  
+</details>  
 #### コンタクト NGSI-v2 正規化例  
 以下は、正規化されたJSON-LD形式のContactの例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -493,163 +513,177 @@ Contact:
   }  
 }  
 ```  
+</details>  
 #### NGSI-LD キー値の連絡先 例  
-ここでは、ContactをJSON-LD形式でkey-valueとして記述した例を示します。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータが返される。  
+ここでは、ContactをJSON-LD形式でkey-valuesにした例を示します。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Contact:id:HMUT:83435609",  
-  "dateCreated": "2019-11-03T13:34:13Z",  
-  "dateModified": "1987-05-08T16:34:27Z",  
-  "source": "Yet back writer so bank nature south. Resource including speak.",  
-  "name": "Court material main five appear. Answer face bad leader.",  
-  "alternateName": "Especially term detail beautiful. Coach step agreement home.",  
-  "description": "Country off allow rate record. Growth when economy save. Example later whom son audience.",  
-  "dataProvider": "Important pick red while machine take. Born baby because back way hit play.",  
-  "owner": [  
-    "urn:ngsi-ld:Contact:items:VORM:50502773",  
-    "urn:ngsi-ld:Contact:items:ADVX:61609895"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Contact:items:KLNB:69768334",  
-    "urn:ngsi-ld:Contact:items:ITWA:14516433"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      53.154571,  
-      157.418088  
+    "id": "urn:ngsi-ld:Contact:id:HMUT:83435609",  
+    "dateCreated": "2019-11-03T13:34:13Z",  
+    "dateModified": "1987-05-08T16:34:27Z",  
+    "source": "Yet back writer so bank nature south. Resource including speak.",  
+    "name": "Court material main five appear. Answer face bad leader.",  
+    "alternateName": "Especially term detail beautiful. Coach step agreement home.",  
+    "description": "Country off allow rate record. Growth when economy save. Example later whom son audience.",  
+    "dataProvider": "Important pick red while machine take. Born baby because back way hit play.",  
+    "owner": [  
+        "urn:ngsi-ld:Contact:items:VORM:50502773",  
+        "urn:ngsi-ld:Contact:items:ADVX:61609895"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Contact:items:KLNB:69768334",  
+        "urn:ngsi-ld:Contact:items:ITWA:14516433"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            53.154571,  
+            157.418088  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Part physical really head work past maintain. Late third kitchen suffer fund fill each. Four three your heart industry employee realize.",  
+        "addressLocality": "Behind explain show mission. Thousand forward wall. Size worry any town chance.",  
+        "addressRegion": "Job ever design toward boy citizen. Happy city part rule present try. Indicate doctor job look different.",  
+        "addressCountry": "Despite cup fund thank fight hard camera. Myself area pull watch dog.",  
+        "postalCode": "Size else present still now. Country support choose treatment manager.",  
+        "postOfficeBoxNumber": "Food often candidate century popular huge. After culture tend feel. Sport win because according election present customer."  
+    },  
+    "areaServed": "Take reflect member. Next attack discover employee sit accept. Range available nearly impact federal how receive view.",  
+    "rt": [  
+        "oic.r.sensor.contact",  
+        "oic.r.sensor.contact"  
+    ],  
+    "value": {  
+        "type": "Property",  
+        "value": false  
+    },  
+    "n": "Condition lay state ask. Him we safe program. Responsibility among imagine everything within pass.",  
+    "if": [  
+        "oic.if.s",  
+        "oic.if.s"  
+    ],  
+    "type": "Contact",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Part physical really head work past maintain. Late third kitchen suffer fund fill each. Four three your heart industry employee realize.",  
-    "addressLocality": "Behind explain show mission. Thousand forward wall. Size worry any town chance.",  
-    "addressRegion": "Job ever design toward boy citizen. Happy city part rule present try. Indicate doctor job look different.",  
-    "addressCountry": "Despite cup fund thank fight hard camera. Myself area pull watch dog.",  
-    "postalCode": "Size else present still now. Country support choose treatment manager.",  
-    "postOfficeBoxNumber": "Food often candidate century popular huge. After culture tend feel. Sport win because according election present customer."  
-  },  
-  "areaServed": "Take reflect member. Next attack discover employee sit accept. Range available nearly impact federal how receive view.",  
-  "rt": [  
-    "oic.r.sensor.contact",  
-    "oic.r.sensor.contact"  
-  ],  
-  "value": {  
-    "type": "Property",  
-    "value": false  
-  },  
-  "n": "Condition lay state ask. Him we safe program. Responsibility among imagine everything within pass.",  
-  "if": [  
-    "oic.if.s",  
-    "oic.if.s"  
-  ],  
-  "type": "Contact",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### コンタクト NGSI-LD 正規化例  
-以下は、正規化されたJSON-LD形式のContactの例である。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、Contact を正規化した JSON-LD 形式の例です。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Contact:id:PHQT:43656254",  
-  "dateCreated": {  
-    "type": "Property",  
+    "id": "urn:ngsi-ld:Contact:id:PHQT:43656254",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1979-06-21T02:42:47Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2009-05-13T06:47:50Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Project need follow simply brother. Gas continue everyone those language. Receive new always yard ever both."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Special nice how today culture. Grow age world step quickly how move off. Here style data no bill discussion."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Window more similar contain. Anything song key."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Debate bank spend technology father."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Billion democratic behind fly memory. Poor window significant accept look amount probably."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Contact:items:EONI:36946282",  
+            "urn:ngsi-ld:Contact:items:JZPI:03143081"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Contact:items:IKIB:26985774"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -16.2109895,  
+                118.55362  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Our food use business but. Push behavior affect quite small travel.",  
+            "addressLocality": "Bad front check fight. Ten must place fast. Pattern chance some. Police forget certain once degree wrong page scientist.",  
+            "addressRegion": "Parent campaign notice can agent back produce career. Under color style difference. Summer recognize join good type hospital thought argue. Still public foreign if camera thus.",  
+            "addressCountry": "Meet me television social research industry. Voice also seat police. Assume stay color time western pay. Style rather build specific.",  
+            "postalCode": "Certainly join deal agent mention entire speak. No space little attorney number nor firm old. Simple red six day consider recognize.",  
+            "postOfficeBoxNumber": "Stop middle individual since truth exist expect expect. Husband yeah learn beat. Bed reduce identify old Democrat whole citizen."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Allow coach population sit movement local. Catch budget piece matter."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.sensor.contact"  
+        ]  
+    },  
     "value": {  
-      "@type": "DateTime",  
-      "@value": "1979-06-21T02:42:47Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2009-05-13T06:47:50Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Project need follow simply brother. Gas continue everyone those language. Receive new always yard ever both."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Special nice how today culture. Grow age world step quickly how move off. Here style data no bill discussion."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Window more similar contain. Anything song key."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Debate bank spend technology father."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Billion democratic behind fly memory. Poor window significant accept look amount probably."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Contact:items:EONI:36946282",  
-      "urn:ngsi-ld:Contact:items:JZPI:03143081"  
+        "type": "Property",  
+        "value": false  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Half daughter officer product travel toward every. Live never impact."  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline",  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "Contact",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Contact:items:IKIB:26985774"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -16.2109895,  
-        118.55362  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Our food use business but. Push behavior affect quite small travel.",  
-      "addressLocality": "Bad front check fight. Ten must place fast. Pattern chance some. Police forget certain once degree wrong page scientist.",  
-      "addressRegion": "Parent campaign notice can agent back produce career. Under color style difference. Summer recognize join good type hospital thought argue. Still public foreign if camera thus.",  
-      "addressCountry": "Meet me television social research industry. Voice also seat police. Assume stay color time western pay. Style rather build specific.",  
-      "postalCode": "Certainly join deal agent mention entire speak. No space little attorney number nor firm old. Simple red six day consider recognize.",  
-      "postOfficeBoxNumber": "Stop middle individual since truth exist expect expect. Husband yeah learn beat. Bed reduce identify old Democrat whole citizen."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Allow coach population sit movement local. Catch budget piece matter."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.sensor.contact"  
-    ]  
-  },  
-  "value": {  
-    "type": "Property",  
-    "value": false  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Half daughter officer product travel toward every. Live never impact."  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.baseline",  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "type": "Contact",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
