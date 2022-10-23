@@ -1,17 +1,32 @@
-Entità: settings-sound  
-======================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entità: impostazioni-suono  
+==========================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.OCF/blob/master/settings-sound/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Adattamento del programma Smart Data Models dell'originale IoTData data Models. Ottiene le attuali impostazioni audio del dispositivo.**  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **Adattamento del programma dei modelli di dati intelligenti dei modelli di dati IoTData originali. Ottiene le impostazioni sonore correnti del dispositivo **.  
+versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `auto-volume`: Equalizza automaticamente il livello del volume quando si passa ad un altro canale.  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `dolby-atmos-compatibility`: Supporta la modalità dolby-atmos.  - `id`: Identificatore unico dell'entità  - `if`:   - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: Il nome di questo articolo.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `rt`: Il tipo di risorsa delle impostazioni del dispositivo per il suono  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `sound-mode`: Impostazioni dispositivo Suono - Modalità suono. Il client può cambiare la modalità audio usando la proprietà supported-sound-modes.  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `speaker`: Impostazioni del dispositivo Suono - Altoparlante. Il cliente può cambiare l'altoparlante usando la proprietà supported-speakers.  - `supported-sound-modes`: L'array dei possibili modi di suono supportati dal dispositivo. Questa proprietà dovrebbe essere aggiunta se sound-mode è supportato.  - `supported-speakers`: L'array di possibili altoparlanti supportati dal dispositivo. Questa proprietà dovrebbe essere aggiunta se l'altoparlante è supportato.  - `type`: Tipo di entità NGSI. Deve essere impostazioni-suono    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `auto-volume[boolean]`: Equalizza automaticamente il livello del volume quando si passa a un altro canale.  - `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `dolby-atmos-compatibility[boolean]`: Supporta la modalità dolby-atmos.  - `id[*]`: Identificatore univoco dell'entità  - `if[array]`: Nell'originale non è disponibile alcuna descrizione  - `location[*]`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `rt[array]`: Il tipo di risorsa Impostazioni del dispositivo per il suono  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `sound-mode[string]`: Impostazioni del dispositivo Suono - Modalità suono. Il client può cambiare la modalità audio utilizzando la proprietà supported-sound-modes.  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `speaker[string]`: Impostazioni del dispositivo Suono - Altoparlante. Il client può cambiare l'altoparlante usando la proprietà supported-speakers.  - `supported-sound-modes[array]`: L'array delle possibili modalità sonore supportate dal dispositivo. Questa proprietà deve essere aggiunta se la modalità sonora è supportata.  - `supported-speakers[array]`: L'array di possibili altoparlanti supportati dal dispositivo. Questa proprietà deve essere aggiunta se l'altoparlante è supportato.  - `type[string]`: Tipo di entità NGSI. Deve essere settings-sound  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- `id`  - `type`    
-Questo modello di dati proviene dall'originale [Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels). È stato esteso per soddisfare i requisiti di NGSI.  
-## Descrizione del modello di dati delle proprietà  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+Questo modello di dati proviene dal repository originale della [Open Connectivity Foundation] (https://github.com/openconnectivityfoundation/IoTDataModels). È stato esteso per soddisfare i requisiti NGSI.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 settings-sound:    
@@ -99,6 +114,7 @@ settings-sound:
       x-ngsi:    
         type: Property    
     if:    
+      description: 'No description is available in the original'    
       items:    
         enum:    
           - oic.if.rw    
@@ -108,6 +124,8 @@ settings-sound:
       readOnly: true    
       type: array    
       uniqueItems: true    
+      x-ngsi:    
+        type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -350,9 +368,14 @@ settings-sound:
   x-version: 0.0.1    
 ```  
 </details>    
-## Esempio di payloads  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
 #### settings-sound NGSI-v2 key-values Esempio  
-Ecco un esempio di settings-sound in formato JSON-LD come key-values. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di settings-sound in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:settings-sound:id:DJPZ:53873776",  
@@ -389,8 +412,10 @@ settings-sound:
   "areaServed": "Movement begin or well design analysis least. Another writer central their add successful bed. East four deal ten common purpose once either."  
 }  
 ```  
+</details>  
 #### settings-sound NGSI-v2 normalizzato Esempio  
-Ecco un esempio di settings-sound in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di settings-sound in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si usano le opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -468,127 +493,141 @@ settings-sound:
   }  
 }  
 ```  
-#### settings-sound NGSI-LD key-values Esempio  
-Ecco un esempio di settings-sound in formato JSON-LD come key-values. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### settings-sound Valori chiave NGSI-LD Esempio  
+Ecco un esempio di settings-sound in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:settings-sound:id:DJPZ:53873776",  
-  "dateCreated": "1997-10-31T22:05:18Z",  
-  "dateModified": "1996-03-30T03:46:06Z",  
-  "source": "Administration radio federal significant cup need. Read hour at build exactly left read. Everyone perform nothing popular.",  
-  "name": "Later food speech computer.",  
-  "alternateName": "Manage perform attack computer hard. General get tax story degree.",  
-  "description": "For today at cup laugh.",  
-  "dataProvider": "Meeting sound author hotel court style they. Might final course simply rather. Machine life do thousand a professional. Similar return wait.",  
-  "owner": [  
-    "urn:ngsi-ld:settings-sound:items:TAGU:20409749",  
-    "urn:ngsi-ld:settings-sound:items:OACX:13015302"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:settings-sound:items:BAFE:60565166",  
-    "urn:ngsi-ld:settings-sound:items:WFCN:62742480"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      81.343291,  
-      -101.756791  
+    "id": "urn:ngsi-ld:settings-sound:id:DJPZ:53873776",  
+    "dateCreated": "1997-10-31T22:05:18Z",  
+    "dateModified": "1996-03-30T03:46:06Z",  
+    "source": "Administration radio federal significant cup need. Read hour at build exactly left read. Everyone perform nothing popular.",  
+    "name": "Later food speech computer.",  
+    "alternateName": "Manage perform attack computer hard. General get tax story degree.",  
+    "description": "For today at cup laugh.",  
+    "dataProvider": "Meeting sound author hotel court style they. Might final course simply rather. Machine life do thousand a professional. Similar return wait.",  
+    "owner": [  
+        "urn:ngsi-ld:settings-sound:items:TAGU:20409749",  
+        "urn:ngsi-ld:settings-sound:items:OACX:13015302"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:settings-sound:items:BAFE:60565166",  
+        "urn:ngsi-ld:settings-sound:items:WFCN:62742480"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            81.343291,  
+            -101.756791  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Trial recent wait grow. Learn west glass upon shake none.",  
+        "addressLocality": "Learn turn about security director. Current occur person.",  
+        "addressRegion": "First court group student cause accept prove. Board thank before sing few address. Wall save tough maintain for Congress.",  
+        "addressCountry": "Entire citizen method concern sit fall activity. Baby two food through force my. Shoulder imagine might name.",  
+        "postalCode": "Those side short miss less. Budget top run trial. Woman his arrive whether common act.",  
+        "postOfficeBoxNumber": "Effort find experience north shake short year. Reality analysis expert see president. True include event city behavior admit."  
+    },  
+    "areaServed": "Movement begin or well design analysis least. Another writer central their add successful bed. East four deal ten common purpose once either.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Trial recent wait grow. Learn west glass upon shake none.",  
-    "addressLocality": "Learn turn about security director. Current occur person.",  
-    "addressRegion": "First court group student cause accept prove. Board thank before sing few address. Wall save tough maintain for Congress.",  
-    "addressCountry": "Entire citizen method concern sit fall activity. Baby two food through force my. Shoulder imagine might name.",  
-    "postalCode": "Those side short miss less. Budget top run trial. Woman his arrive whether common act.",  
-    "postOfficeBoxNumber": "Effort find experience north shake short year. Reality analysis expert see president. True include event city behavior admit."  
-  },  
-  "areaServed": "Movement begin or well design analysis least. Another writer central their add successful bed. East four deal ten common purpose once either.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-#### impostazioni-suono NGSI-LD normalizzato Esempio  
-Ecco un esempio di settings-sound in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### settings-sound NGSI-LD normalizzato Esempio  
+Ecco un esempio di settings-sound in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si usano le opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:settings-sound:id:TWFM:59833741",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1980-08-20T20:10:35Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2021-06-16T21:25:41Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Sound professor pass. East never sort scientist while prepare region knowledge. Seven be hold along civil west capital resource."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Away president early media you. Always fill industry thought."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Indeed heart price in identify state hold church. Nor child heart great common."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Choice likely thought. Southern agreement week guess deep choose. Condition money able reflect staff series develop."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Order probably yard Democrat draw. Save fund might southern resource training activity. Music hope city physical."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:settings-sound:items:QXMH:74451942",  
-      "urn:ngsi-ld:settings-sound:items:IDJX:14479708"  
+    "id": "urn:ngsi-ld:settings-sound:id:TWFM:59833741",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1980-08-20T20:10:35Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2021-06-16T21:25:41Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Sound professor pass. East never sort scientist while prepare region knowledge. Seven be hold along civil west capital resource."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Away president early media you. Always fill industry thought."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Indeed heart price in identify state hold church. Nor child heart great common."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Choice likely thought. Southern agreement week guess deep choose. Condition money able reflect staff series develop."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Order probably yard Democrat draw. Save fund might southern resource training activity. Music hope city physical."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:settings-sound:items:QXMH:74451942",  
+            "urn:ngsi-ld:settings-sound:items:IDJX:14479708"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:settings-sound:items:INPA:31446788"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                38.16846,  
+                138.887384  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Course lead indeed key plant network. Role policy direction many.",  
+            "addressLocality": "Want behind anyone seat.",  
+            "addressRegion": "Knowledge wife give speak total back. Three form different I final. Perhaps need skin factor board service heart.",  
+            "addressCountry": "Baby age pay news than nation. Exactly forget more prepare blue instead. Body personal affect likely hour middle chair.",  
+            "postalCode": "High spend treat. However hair behavior particularly.",  
+            "postOfficeBoxNumber": "Stay lawyer wide ahead expect some. Alone crime after kind perform."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Both or window media. White national feeling public chance behind."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:settings-sound:items:INPA:31446788"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        38.16846,  
-        138.887384  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Course lead indeed key plant network. Role policy direction many.",  
-      "addressLocality": "Want behind anyone seat.",  
-      "addressRegion": "Knowledge wife give speak total back. Three form different I final. Perhaps need skin factor board service heart.",  
-      "addressCountry": "Baby age pay news than nation. Exactly forget more prepare blue instead. Body personal affect likely hour middle chair.",  
-      "postalCode": "High spend treat. However hair behavior particularly.",  
-      "postOfficeBoxNumber": "Stay lawyer wide ahead expect some. Alone crime after kind perform."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Both or window media. White national feeling public chance behind."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
