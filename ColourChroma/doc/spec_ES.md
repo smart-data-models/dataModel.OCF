@@ -1,17 +1,32 @@
-Entidad: ColourChroma  
-=====================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entidad: ColourChroma  
+=====================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.OCF/blob/master/ColourChroma/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Descripción global: **Adaptación del Programa de Modelos de Datos Inteligentes de los modelos de datos originales de IoTData. Este recurso describe el color utilizando las convenciones de croma. Las propiedades son 'hue', 'saturation', 'csc', y 'ct'. La propiedad "hue" es el ángulo de matiz, es un valor entero según la definición del modelo CIECAM02 (véase la referencia [CIE CIE159:2004]). La propiedad "saturación" es un valor entero según la definición del modelo CIECAM02 (véase la referencia [CIE CIE159:2004]). La propiedad "saturación máxima" es el límite superior de la saturación admitida por el dispositivo. Si no está presente, el valor máximo de "saturación" es 32767. La propiedad "csc" son las coordenadas del espacio de color en el espacio de color CIE.   El primer elemento de la matriz es la coordenada X.   El segundo elemento de la matriz es la coordenada Y. La propiedad "nct" es la temperatura de color Mired. El Recurso proporciona el color utilizando las convenciones de croma.**  
+versión: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `csc`: Las coordenadas X e Y del color en el espacio de color CIE  - `ct`: La temperatura del color de Mired.  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `hue`: El ángulo de tonalidad según la definición del modelo CIECAM02.  - `id`: Identificador único de la entidad  - `if`: El conjunto de interfaces OCF que admite este recurso.  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `maximumsaturation`: El valor máximo admitido de "saturación" para este Dispositivo.  - `n`: Nombre amistoso del recurso  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `rt`: El tipo de recurso.  - `saturation`: La saturación según la definición del modelo CIECAM02.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `type`: Tipo de entidad NGSI. Tiene que ser ColourChroma    
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>  
+- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `csc[array]`: Las coordenadas X e Y del color en el espacio de color CIE  - `ct[integer]`: La temperatura del color de Mired.  - `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Una descripción de este artículo  - `hue[number]`: El ángulo de tonalidad según la definición del modelo CIECAM02.  - `id[*]`: Identificador único de la entidad  - `if[array]`: El conjunto de interfaces OCF que admite este recurso.  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `maximumsaturation[integer]`: El valor máximo admitido de "saturación" para este Dispositivo.  - `n[string]`: Nombre amigable del Recurso  - `name[string]`: El nombre de este artículo.  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `rt[array]`: El tipo de recurso.  - `saturation[integer]`: La saturación según la definición del modelo CIECAM02.  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `type[string]`: Tipo de entidad NGSI. Tiene que ser ColourChroma  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propiedades requeridas  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Este modelo de datos procede del original [repositorio de la Open Connectivity Foundation](https://github.com/openconnectivityfoundation/IoTDataModels). Se ha ampliado para cumplir con los requisitos de la NGSI.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ColourChroma:    
@@ -363,9 +378,14 @@ ColourChroma:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Ejemplo de carga útil  
 #### ColourChroma NGSI-v2 key-values Ejemplo  
 Aquí hay un ejemplo de un ColourChroma en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:ColourChroma:id:KXUY:75560351",  
@@ -402,8 +422,10 @@ ColourChroma:
   "areaServed": "Quickly ten off behavior story laugh change."  
 }  
 ```  
+</details>  
 #### ColourChroma NGSI-v2 normalizado Ejemplo  
 He aquí un ejemplo de un ColourChroma en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -481,127 +503,141 @@ ColourChroma:
   }  
 }  
 ```  
+</details>  
 #### ColourChroma NGSI-LD key-values Ejemplo  
 Aquí hay un ejemplo de un ColourChroma en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:ColourChroma:id:KXUY:75560351",  
-  "dateCreated": "2012-06-16T11:21:50Z",  
-  "dateModified": "1995-10-29T01:15:24Z",  
-  "source": "Evening building state. Receive edge management pass recognize information nothing. Dog run thousand newspaper want hear each down. Letter north ground protect.",  
-  "name": "Everything live maintain but wonder effect finish. Five per turn admit amount. Involve style available.",  
-  "alternateName": "Rather fire rate try behind medical leader. I imagine five movement. Up occur weight south.",  
-  "description": "Theory peace skill red pretty subject story. Have think hundred foot. Turn information there Republican participant ready population.",  
-  "dataProvider": "These writer dog travel will base public. Thousand responsibility risk organization operation plant truth. Finish defense together gun. Voice soon long institution.",  
-  "owner": [  
-    "urn:ngsi-ld:ColourChroma:items:PBMH:06259714",  
-    "urn:ngsi-ld:ColourChroma:items:EGFN:24379609"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:ColourChroma:items:NZIB:01052551",  
-    "urn:ngsi-ld:ColourChroma:items:GVUJ:91800255"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      6.6581095,  
-      163.113571  
+    "id": "urn:ngsi-ld:ColourChroma:id:KXUY:75560351",  
+    "dateCreated": "2012-06-16T11:21:50Z",  
+    "dateModified": "1995-10-29T01:15:24Z",  
+    "source": "Evening building state. Receive edge management pass recognize information nothing. Dog run thousand newspaper want hear each down. Letter north ground protect.",  
+    "name": "Everything live maintain but wonder effect finish. Five per turn admit amount. Involve style available.",  
+    "alternateName": "Rather fire rate try behind medical leader. I imagine five movement. Up occur weight south.",  
+    "description": "Theory peace skill red pretty subject story. Have think hundred foot. Turn information there Republican participant ready population.",  
+    "dataProvider": "These writer dog travel will base public. Thousand responsibility risk organization operation plant truth. Finish defense together gun. Voice soon long institution.",  
+    "owner": [  
+        "urn:ngsi-ld:ColourChroma:items:PBMH:06259714",  
+        "urn:ngsi-ld:ColourChroma:items:EGFN:24379609"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:ColourChroma:items:NZIB:01052551",  
+        "urn:ngsi-ld:ColourChroma:items:GVUJ:91800255"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            6.6581095,  
+            163.113571  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Production coach five serve safe. Rest attention staff lay key expect. Decide suddenly represent watch.",  
+        "addressLocality": "Yes body last consider despite. Put try get all center discussion or.",  
+        "addressRegion": "Half none call because. Nature young nature west. Summer price ask be force this.",  
+        "addressCountry": "Character very sometimes pay skin impact others. Traditional maybe half region change physical. City high blood where network manage series management.",  
+        "postalCode": "Change and prove green. Decision character away reality vote another ready them.",  
+        "postOfficeBoxNumber": "Movie modern maintain million type lot. Live speak middle structure not group."  
+    },  
+    "areaServed": "Quickly ten off behavior story laugh change.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Production coach five serve safe. Rest attention staff lay key expect. Decide suddenly represent watch.",  
-    "addressLocality": "Yes body last consider despite. Put try get all center discussion or.",  
-    "addressRegion": "Half none call because. Nature young nature west. Summer price ask be force this.",  
-    "addressCountry": "Character very sometimes pay skin impact others. Traditional maybe half region change physical. City high blood where network manage series management.",  
-    "postalCode": "Change and prove green. Decision character away reality vote another ready them.",  
-    "postOfficeBoxNumber": "Movie modern maintain million type lot. Live speak middle structure not group."  
-  },  
-  "areaServed": "Quickly ten off behavior story laugh change.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### ColourChroma NGSI-LD normalizado Ejemplo  
 He aquí un ejemplo de un ColourChroma en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:ColourChroma:id:XBCJ:78890788",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1983-04-11T03:39:24Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1993-03-06T19:48:24Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Believe rise company similar seven. Week network nice room whose. Worker treat statement former how direction. Have lead act write money."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Race enjoy see more will ball. Concern sign happen really. Yard senior scientist magazine country."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Send though firm usually. Laugh he paper building husband. Old push above rather."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Financial thing safe policy. Security ability remain act. House agreement side fast."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "School capital job worry radio full claim. Wall agree car new population red world note. Trip far environment talk."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:ColourChroma:items:QHKT:12885344",  
-      "urn:ngsi-ld:ColourChroma:items:EFGF:01514513"  
+    "id": "urn:ngsi-ld:ColourChroma:id:XBCJ:78890788",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1983-04-11T03:39:24Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1993-03-06T19:48:24Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Believe rise company similar seven. Week network nice room whose. Worker treat statement former how direction. Have lead act write money."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Race enjoy see more will ball. Concern sign happen really. Yard senior scientist magazine country."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Send though firm usually. Laugh he paper building husband. Old push above rather."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Financial thing safe policy. Security ability remain act. House agreement side fast."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "School capital job worry radio full claim. Wall agree car new population red world note. Trip far environment talk."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:ColourChroma:items:QHKT:12885344",  
+            "urn:ngsi-ld:ColourChroma:items:EFGF:01514513"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:ColourChroma:items:YLHX:20933403"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                23.189858,  
+                14.005876  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Radio interesting but fill suddenly.",  
+            "addressLocality": "Activity forward scene economy collection hope page here. Role box similar fine who last. Material center school throw today let executive.",  
+            "addressRegion": "Guy suggest task paper name hard. Research pull project weight young course land high.",  
+            "addressCountry": "Seek from shoulder read. Front later effect thus. Behavior until enjoy note meet interview.",  
+            "postalCode": "Outside white impact probably. Strategy different difference forward physical house become.",  
+            "postOfficeBoxNumber": "Police for send fine price for east. Note memory especially during family argue crime. Staff us nice strong."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Write form bank executive affect may above."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:ColourChroma:items:YLHX:20933403"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        23.189858,  
-        14.005876  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Radio interesting but fill suddenly.",  
-      "addressLocality": "Activity forward scene economy collection hope page here. Role box similar fine who last. Material center school throw today let executive.",  
-      "addressRegion": "Guy suggest task paper name hard. Research pull project weight young course land high.",  
-      "addressCountry": "Seek from shoulder read. Front later effect thus. Behavior until enjoy note meet interview.",  
-      "postalCode": "Outside white impact probably. Strategy different difference forward physical house become.",  
-      "postOfficeBoxNumber": "Police for send fine price for east. Note memory especially during family argue crime. Staff us nice strong."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Write form bank executive affect may above."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
