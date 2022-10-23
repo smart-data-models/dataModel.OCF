@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 エンティティタイムスタンプ  
-=============  
+=============<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/TimeStamp/LICENSE.md)  
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 グローバルな記述です。**timestamp」プロパティは、RFC3339の日時形式（例：2007-04-05T14:30Z）（時刻＋日付＋タイムゾーン）を用いてタイムスタンプを取得する文字列である**。  
 バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `id`: エンティティの一意な識別子  - `if`: このResourceがサポートするOCF Interfaceセット。  - `location`: アイテムへのGeojsonリファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `n`: リソースのフレンドリ名  - `name`: このアイテムの名称です。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `rt`: リソースタイプです。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで指定する文字の列。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `timestamp`: データが観測された時刻を示すRFC3339形式の時刻（例：2016-02-15T09:19Z, 1996-12-19T16:39:57-08:00 ）。  - `type`: NGSIエンティティタイプ。TimeStampでなければならない。    
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `if[array]`: このResourceがサポートするOCF Interfaceセット。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `n[string]`: リソースのフレンドリ名  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `rt[array]`: リソースタイプです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `timestamp[string]`: データが観測された時刻を示すRFC3339形式の時刻（例：2016-02-15T09:19Z, 1996-12-19T16:39:57-08:00 ）。  - `type[string]`: NGSIエンティティタイプ。TimeStampでなければならない。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 必要なプロパティ  
-- `id`  - `timestamp`  - `type`    
+- `id`  - `timestamp`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 データモデルは、Open Connectivity Foundationが作成したオリジナルを引用しています。https://github.com/openconnectivityfoundation/IoTDataModels のオリジナルリポジトリ  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
 アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 TimeStamp:    
@@ -334,9 +347,14 @@ TimeStamp:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
 #### タイムスタンプ NGSI-v2 キー値の例  
-TimeStampをJSON-LD形式でkey-valueとした例です。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+ここでは、TimeStampをJSON-LD形式でkey-valuesとした例を示す。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:TimeStamp:id:MAHH:24093348",  
@@ -384,8 +402,10 @@ TimeStamp:
   "type": "TimeStamp"  
 }  
 ```  
+</details>  
 #### タイムスタンプ NGSI-v2 正規化例  
-以下は、JSON-LD形式のTimeStampを正規化した例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、正規化されたJSON-LD形式のTimeStampの例である。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -490,163 +510,177 @@ TimeStamp:
   }  
 }  
 ```  
+</details>  
 #### タイムスタンプ NGSI-LD キー値例  
-TimeStampをJSON-LD形式でkey-valueとした例です。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを返します。  
+ここでは、TimeStampをJSON-LD形式でkey-valuesとした例を示す。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:TimeStamp:id:MAHH:24093348",  
-  "dateCreated": "1986-04-12T11:36:49Z",  
-  "dateModified": "2013-08-14T18:12:01Z",  
-  "source": "Deep better little skin nature central economic couple. Tell month feeling alone already little become heart. Collection person affect tell reality look.",  
-  "name": "Information hot debate indicate social hold. Them two card price college among. Society course may must break radio true.",  
-  "alternateName": "Chair myself six one easy really action. However skin anyone would how meet service. Present agree report.",  
-  "description": "Effect all young read. Here view responsibility front.",  
-  "dataProvider": "Military pass traditional avoid relate black over argue. Television unit pretty suggest.",  
-  "owner": [  
-    "urn:ngsi-ld:TimeStamp:items:OQUS:98081300",  
-    "urn:ngsi-ld:TimeStamp:items:IRCF:24818802"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:TimeStamp:items:ESOV:66345533",  
-    "urn:ngsi-ld:TimeStamp:items:BVZU:99440929"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -18.361737,  
-      119.219709  
+    "id": "urn:ngsi-ld:TimeStamp:id:MAHH:24093348",  
+    "dateCreated": "1986-04-12T11:36:49Z",  
+    "dateModified": "2013-08-14T18:12:01Z",  
+    "source": "Deep better little skin nature central economic couple. Tell month feeling alone already little become heart. Collection person affect tell reality look.",  
+    "name": "Information hot debate indicate social hold. Them two card price college among. Society course may must break radio true.",  
+    "alternateName": "Chair myself six one easy really action. However skin anyone would how meet service. Present agree report.",  
+    "description": "Effect all young read. Here view responsibility front.",  
+    "dataProvider": "Military pass traditional avoid relate black over argue. Television unit pretty suggest.",  
+    "owner": [  
+        "urn:ngsi-ld:TimeStamp:items:OQUS:98081300",  
+        "urn:ngsi-ld:TimeStamp:items:IRCF:24818802"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:TimeStamp:items:ESOV:66345533",  
+        "urn:ngsi-ld:TimeStamp:items:BVZU:99440929"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -18.361737,  
+            119.219709  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Skin his cultural land once keep student Mrs. Hospital condition company activity hotel kid guess. Long your then stand set now during. Short step follow natural beautiful detail.",  
+        "addressLocality": "Trouble where state lot. Source prepare make structure low front too.",  
+        "addressRegion": "Look wonder dream if across. Concern full where activity. Item event few two describe factor base.",  
+        "addressCountry": "Various girl conference seat somebody name class yourself. Force standard cut run. Necessary near kitchen floor. Treatment here approach song moment keep list.",  
+        "postalCode": "Last kitchen begin. Street bag include television. Tv middle account throw.",  
+        "postOfficeBoxNumber": "Generation mind likely over imagine federal. Finally show weight father must. Support summer agency red for."  
+    },  
+    "areaServed": "More go chair set again.",  
+    "rt": [  
+        "oic.r.time.stamp",  
+        "oic.r.time.stamp"  
+    ],  
+    "timestamp": "1983-11-05T20:20:56Z",  
+    "n": "Poor allow read establish. Eye still morning simple over your fire various. Teacher today leave reach help imagine.",  
+    "if": [  
+        "oic.if.s",  
+        "oic.if.baseline"  
+    ],  
+    "type": "TimeStamp",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Skin his cultural land once keep student Mrs. Hospital condition company activity hotel kid guess. Long your then stand set now during. Short step follow natural beautiful detail.",  
-    "addressLocality": "Trouble where state lot. Source prepare make structure low front too.",  
-    "addressRegion": "Look wonder dream if across. Concern full where activity. Item event few two describe factor base.",  
-    "addressCountry": "Various girl conference seat somebody name class yourself. Force standard cut run. Necessary near kitchen floor. Treatment here approach song moment keep list.",  
-    "postalCode": "Last kitchen begin. Street bag include television. Tv middle account throw.",  
-    "postOfficeBoxNumber": "Generation mind likely over imagine federal. Finally show weight father must. Support summer agency red for."  
-  },  
-  "areaServed": "More go chair set again.",  
-  "rt": [  
-    "oic.r.time.stamp",  
-    "oic.r.time.stamp"  
-  ],  
-  "timestamp": "1983-11-05T20:20:56Z",  
-  "n": "Poor allow read establish. Eye still morning simple over your fire various. Teacher today leave reach help imagine.",  
-  "if": [  
-    "oic.if.s",  
-    "oic.if.baseline"  
-  ],  
-  "type": "TimeStamp",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### タイムスタンプ NGSI-LD 正規化例  
 以下は、JSON-LD形式のTimeStampを正規化した例である。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:TimeStamp:id:UEVV:41074270",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2000-12-06T14:34:04Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1987-09-11T01:17:16Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Price discover some million whose remember. Discuss establish who hotel."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Myself state everything officer parent. Whether democratic manage themselves use. Finally even industry thing sign write agreement. Director security group about."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Class similar here author carry table particularly case. Quality during store represent. Race age its do."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Manage hard young his several try. Letter message at result. Old different up simple itself. Mother two soldier outside decade home effort."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Kind but learn well thing and ball. Identify mouth still home vote race view wall. While five every policy."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:TimeStamp:items:WPNG:60576733",  
-      "urn:ngsi-ld:TimeStamp:items:OAFN:97290886"  
+    "id": "urn:ngsi-ld:TimeStamp:id:UEVV:41074270",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2000-12-06T14:34:04Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1987-09-11T01:17:16Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Price discover some million whose remember. Discuss establish who hotel."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Myself state everything officer parent. Whether democratic manage themselves use. Finally even industry thing sign write agreement. Director security group about."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Class similar here author carry table particularly case. Quality during store represent. Race age its do."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Manage hard young his several try. Letter message at result. Old different up simple itself. Mother two soldier outside decade home effort."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Kind but learn well thing and ball. Identify mouth still home vote race view wall. While five every policy."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:TimeStamp:items:WPNG:60576733",  
+            "urn:ngsi-ld:TimeStamp:items:OAFN:97290886"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:TimeStamp:items:CXRM:15094818"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -71.802608,  
+                -116.144207  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Four race this be foreign time. Effect no control half me discuss decision collection.",  
+            "addressLocality": "Quality there sound him close tax smile. Figure experience however free. Mention trouble follow up personal current bed.",  
+            "addressRegion": "Wife Mr away size article. Same respond system outside yeah audience. West majority determine grow at car.",  
+            "addressCountry": "Interest right shoulder allow real step. Inside six conference wait medical surface. Finish skill base option attorney.",  
+            "postalCode": "Both avoid discover way church.",  
+            "postOfficeBoxNumber": "Authority dark business media wait rate. Station seem adult international race impact."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Can magazine just trial. Box later second imagine throughout know third evening. Cover later same reveal that focus."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.time.stamp"  
+        ]  
+    },  
+    "timestamp": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1991-12-30T10:38:29Z"  
+        }  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Card film direction eat cover available. Read network lose laugh structure style. Feeling strategy door benefit stock."  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline",  
+            "oic.if.r"  
+        ]  
+    },  
+    "type": "TimeStamp",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:TimeStamp:items:CXRM:15094818"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -71.802608,  
-        -116.144207  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Four race this be foreign time. Effect no control half me discuss decision collection.",  
-      "addressLocality": "Quality there sound him close tax smile. Figure experience however free. Mention trouble follow up personal current bed.",  
-      "addressRegion": "Wife Mr away size article. Same respond system outside yeah audience. West majority determine grow at car.",  
-      "addressCountry": "Interest right shoulder allow real step. Inside six conference wait medical surface. Finish skill base option attorney.",  
-      "postalCode": "Both avoid discover way church.",  
-      "postOfficeBoxNumber": "Authority dark business media wait rate. Station seem adult international race impact."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Can magazine just trial. Box later second imagine throughout know third evening. Cover later same reveal that focus."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.time.stamp"  
-    ]  
-  },  
-  "timestamp": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1991-12-30T10:38:29Z"  
-    }  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Card film direction eat cover available. Read network lose laugh structure style. Feeling strategy door benefit stock."  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.baseline",  
-      "oic.if.r"  
-    ]  
-  },  
-  "type": "TimeStamp",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
