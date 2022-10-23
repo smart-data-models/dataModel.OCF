@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entité : smoke  
-==============  
+==============<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.OCF/blob/master/smoke/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Description globale : **Cette ressource décrit si la fumée a été détectée ou non. La propriété 'value' est un booléen. La valeur 'true' signifie que la fumée a été détectée, la valeur 'false' signifie que la fumée n'a pas été détectée.  
 version : 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `if`: L'ensemble des interfaces OCF supportées par cette ressource  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `measurement`: Valeur mesurée pour ce capteur, il s'agit d'un pourcentage.  - `n`: Nom amical de la ressource  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `precision`: Lorsqu'elle est exposée, la valeur de "précision" fournit une tolérance +/- par rapport aux propriétés de la ressource. Ainsi, si une propriété est mise à jour avec une valeur et que cette propriété est ensuite récupérée, la valeur récupérée est valide si elle se situe dans la plage de la valeur définie +/- la précision.  - `range`: La plage valide pour la propriété de la ressource sous forme de nombre. La première valeur du tableau est la valeur minimale, la deuxième valeur du tableau est la valeur maximale.  - `rt`: Le type de ressource  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `step`: Valeur de pas sur la plage définie, un nombre entier lorsque la plage est un nombre.  Il s'agit de l'incrément pour les valeurs valides dans l'intervalle ; ainsi, si l'intervalle est de 0,0 à 10,0 et que le pas est de 2,5, les valeurs valides sont 0,0, 2,5, 5,0, 7,5 et 10,0.  - `type`: Type d'entité NGSI. Elle doit être fumée  - `value`: L'indicateur de fumée, vrai = détecté, faux = non détecté.    
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour cet élément  - `areaServed[string]`: La zone géographique où un service ou un article offert est fourni  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified[string]`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description[string]`: Une description de cet article  - `id[*]`: Identifiant unique de l'entité  - `if[array]`: L'ensemble des interfaces OCF supportées par cette ressource  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `measurement[number]`: Valeur mesurée pour ce capteur, il s'agit d'un pourcentage.  - `n[string]`: Nom amical de la ressource  - `name[string]`: Le nom de cet élément.  - `owner[array]`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `precision[number]`: Lorsqu'elle est exposée, la valeur de "précision" fournit une tolérance +/- par rapport aux propriétés de la ressource. Ainsi, si une propriété est mise à jour avec une valeur et que cette propriété est ensuite récupérée, la valeur récupérée est valide si elle se situe dans la plage de la valeur définie +/- la précision.  - `range[array]`: La plage valide pour la propriété de la ressource sous forme de nombre. La première valeur du tableau est la valeur minimale, la deuxième valeur du tableau est la valeur maximale.  - `rt[array]`: Le type de ressource  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `step[number]`: Valeur de pas sur la plage définie, un nombre entier lorsque la plage est un nombre.  Il s'agit de l'incrément pour les valeurs valides dans l'intervalle ; ainsi, si l'intervalle est de 0,0 à 10,0 et que le pas est de 2,5, les valeurs valides sont 0,0, 2,5, 5,0, 7,5 et 10,0.  - `type[string]`: Type d'entité NGSI. Elle doit être fumée  - `value[boolean]`: L'indicateur de fumée, vrai = détecté, faux = non détecté.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propriétés requises  
-- `id`  - `type`  - `value`    
+- `id`  - `type`  - `value`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Modèle de données adapté de l'original créé par l'Open Connectivity Foundation. Dépôt original dans https://github.com/openconnectivityfoundation/IoTDataModels  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 smoke:    
@@ -361,9 +374,14 @@ smoke:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Exemples de charges utiles  
 #### smoke NGSI-v2 key-values Exemple  
 Voici un exemple de fumée au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-v2 quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:smoke:id:GQAK:36211876",  
@@ -430,8 +448,10 @@ smoke:
   "type": "smoke"  
 }  
 ```  
+</details>  
 #### fumée NGSI-v2 normalisée Exemple  
 Voici un exemple de fumée au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -566,197 +586,211 @@ smoke:
   }  
 }  
 ```  
+</details>  
 #### smoke NGSI-LD key-values Exemple  
 Voici un exemple de fumée au format JSON-LD en tant que key-values. Ceci est compatible avec NGSI-LD quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:smoke:id:GQAK:36211876",  
-  "dateCreated": "1992-09-23T05:44:58Z",  
-  "dateModified": "1984-07-19T21:01:38Z",  
-  "source": "Professor director car by professor mean half. Edge war travel.",  
-  "name": "Daughter situation material can police. Role focus at take question.",  
-  "alternateName": "Debate across break Mrs drive. Truth notice anyone field necessary trial case. Address total skin carry. Medical finally discover production.",  
-  "description": "Respond there yard out. Operation feeling dream surface.",  
-  "dataProvider": "Choose of keep less position end. Drive either away speak I network hold deep. Value age necessary technology.",  
-  "owner": [  
-    "urn:ngsi-ld:smoke:items:AIIV:73533274",  
-    "urn:ngsi-ld:smoke:items:RHKO:33594575"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:smoke:items:LSEC:69544898",  
-    "urn:ngsi-ld:smoke:items:LMGY:01203312"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -9.5081105,  
-      134.428105  
+    "id": "urn:ngsi-ld:smoke:id:GQAK:36211876",  
+    "dateCreated": "1992-09-23T05:44:58Z",  
+    "dateModified": "1984-07-19T21:01:38Z",  
+    "source": "Professor director car by professor mean half. Edge war travel.",  
+    "name": "Daughter situation material can police. Role focus at take question.",  
+    "alternateName": "Debate across break Mrs drive. Truth notice anyone field necessary trial case. Address total skin carry. Medical finally discover production.",  
+    "description": "Respond there yard out. Operation feeling dream surface.",  
+    "dataProvider": "Choose of keep less position end. Drive either away speak I network hold deep. Value age necessary technology.",  
+    "owner": [  
+        "urn:ngsi-ld:smoke:items:AIIV:73533274",  
+        "urn:ngsi-ld:smoke:items:RHKO:33594575"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:smoke:items:LSEC:69544898",  
+        "urn:ngsi-ld:smoke:items:LMGY:01203312"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -9.5081105,  
+            134.428105  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Team citizen like question response market investment. Opportunity heart choose could. Whatever help player soon.",  
+        "addressLocality": "Politics option interview movie student eye well gas. Physical so edge pressure decide. Inside executive decision development to contain sea find.",  
+        "addressRegion": "Whatever describe example cup. Yet agency quickly.",  
+        "addressCountry": "Thought support deep result century commercial. Per suddenly local service.",  
+        "postalCode": "Environment page tell wonder garden side process first. Exactly article a appear cultural indicate hit decade. Radio officer page.",  
+        "postOfficeBoxNumber": "Close seat yourself they. Pattern quite activity. Life deep now Mrs school expert pass."  
+    },  
+    "areaServed": "Culture change suggest. Process skill bar. Turn tree work wonder forget.",  
+    "rt": [  
+        "oic.r.sensor.smoke",  
+        "oic.r.sensor.smoke"  
+    ],  
+    "value": {  
+        "type": "Property",  
+        "value": false  
+    },  
+    "measurement": {  
+        "type": "Property",  
+        "value": 683.9  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 400.1  
+    },  
+    "n": "Discuss arrive most short send alone. Business author third rich. Technology we mention brother.",  
+    "range": [  
+        570.7,  
+        838.8  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 565.9  
+    },  
+    "if": [  
+        "oic.if.s",  
+        "oic.if.baseline"  
+    ],  
+    "type": "smoke",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Team citizen like question response market investment. Opportunity heart choose could. Whatever help player soon.",  
-    "addressLocality": "Politics option interview movie student eye well gas. Physical so edge pressure decide. Inside executive decision development to contain sea find.",  
-    "addressRegion": "Whatever describe example cup. Yet agency quickly.",  
-    "addressCountry": "Thought support deep result century commercial. Per suddenly local service.",  
-    "postalCode": "Environment page tell wonder garden side process first. Exactly article a appear cultural indicate hit decade. Radio officer page.",  
-    "postOfficeBoxNumber": "Close seat yourself they. Pattern quite activity. Life deep now Mrs school expert pass."  
-  },  
-  "areaServed": "Culture change suggest. Process skill bar. Turn tree work wonder forget.",  
-  "rt": [  
-    "oic.r.sensor.smoke",  
-    "oic.r.sensor.smoke"  
-  ],  
-  "value": {  
-    "type": "Property",  
-    "value": false  
-  },  
-  "measurement": {  
-    "type": "Property",  
-    "value": 683.9  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 400.1  
-  },  
-  "n": "Discuss arrive most short send alone. Business author third rich. Technology we mention brother.",  
-  "range": [  
-    570.7,  
-    838.8  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 565.9  
-  },  
-  "if": [  
-    "oic.if.s",  
-    "oic.if.baseline"  
-  ],  
-  "type": "smoke",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### fumée NGSI-LD normalisée Exemple  
 Voici un exemple de fumée au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:smoke:id:SCJX:93736644",  
-  "dateCreated": {  
-    "type": "Property",  
+    "id": "urn:ngsi-ld:smoke:id:SCJX:93736644",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1993-09-01T10:02:46Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1987-10-14T19:32:15Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Turn turn any thing. Agent common three figure middle six. Quality guess seat late woman beautiful base."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Team voice up base move. Skill me scientist bill course."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Fight mean audience design conference."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Model court power point. Strong authority agent morning. Also audience management dream realize letter."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Produce citizen three top. Throw offer degree."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:smoke:items:GYSB:34245560",  
+            "urn:ngsi-ld:smoke:items:RVWA:68557559"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:smoke:items:FELW:31350615"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -23.4820015,  
+                85.453417  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Full sit west significant foreign contain. Skill allow key student white.",  
+            "addressLocality": "Year instead visit establish. Power senior cell ball fine central discuss.",  
+            "addressRegion": "Up process thousand task sell Mr. Cold according lead interest.",  
+            "addressCountry": "Investment successful bed professional. Reduce task continue radio across.",  
+            "postalCode": "Whether sport man necessary mission or. Change today something left development kind activity. Sound cell since help six writer.",  
+            "postOfficeBoxNumber": "Still because painting soldier everybody plant work sport. Rule ago anyone staff."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Take add rate minute long practice security. Where lay price know final knowledge."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.sensor.smoke"  
+        ]  
+    },  
     "value": {  
-      "@type": "DateTime",  
-      "@value": "1993-09-01T10:02:46Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1987-10-14T19:32:15Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Turn turn any thing. Agent common three figure middle six. Quality guess seat late woman beautiful base."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Team voice up base move. Skill me scientist bill course."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Fight mean audience design conference."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Model court power point. Strong authority agent morning. Also audience management dream realize letter."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Produce citizen three top. Throw offer degree."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:smoke:items:GYSB:34245560",  
-      "urn:ngsi-ld:smoke:items:RVWA:68557559"  
+        "type": "Property",  
+        "value": false  
+    },  
+    "measurement": {  
+        "type": "Property",  
+        "value": 805.1  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 904.3  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Evidence significant because long. Notice change understand trouble toward age leave short. Trial billion capital every try front I."  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            594.8,  
+            68.6  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 31.9  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "smoke",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:smoke:items:FELW:31350615"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -23.4820015,  
-        85.453417  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Full sit west significant foreign contain. Skill allow key student white.",  
-      "addressLocality": "Year instead visit establish. Power senior cell ball fine central discuss.",  
-      "addressRegion": "Up process thousand task sell Mr. Cold according lead interest.",  
-      "addressCountry": "Investment successful bed professional. Reduce task continue radio across.",  
-      "postalCode": "Whether sport man necessary mission or. Change today something left development kind activity. Sound cell since help six writer.",  
-      "postOfficeBoxNumber": "Still because painting soldier everybody plant work sport. Rule ago anyone staff."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Take add rate minute long practice security. Where lay price know final knowledge."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.sensor.smoke"  
-    ]  
-  },  
-  "value": {  
-    "type": "Property",  
-    "value": false  
-  },  
-  "measurement": {  
-    "type": "Property",  
-    "value": 805.1  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 904.3  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Evidence significant because long. Notice change understand trouble toward age leave short. Trial billion capital every try front I."  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      594.8,  
-      68.6  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 31.9  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "type": "smoke",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
