@@ -1,17 +1,32 @@
-Entität: KeyPadChar  
-===================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entität: KeyPadChar  
+===================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.OCF/blob/master/KeyPadChar/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Globale Beschreibung: **Smart Data Models Programmanpassung der ursprünglichen IoTData-Datenmodelle. Diese Ressource beschreibt ein Zeichen (0-9,*,#), das auf einer Zahlentastatur ausgewählt wird.**  
+Version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `if`: Der von dieser Ressource unterstützte OCF-Schnittstellensatz.  - `keyvalue`: Der Wert des Tastenfelds char.  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `n`: Freundlicher Name der Ressource  - `name`: Der Name dieses Artikels.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `rt`: Der Ressourcentyp.  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `type`: NGSI-Entitätstyp. Es muss KeyPadChar sein    
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `id[*]`: Eindeutiger Bezeichner der Entität  - `if[array]`: Der von dieser Ressource unterstützte OCF-Schnittstellensatz.  - `keyvalue[string]`: Der Wert des Tastenfelds char.  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `n[string]`: Freundlicher Name der Ressource  - `name[string]`: Der Name dieses Artikels.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `rt[array]`: Der Ressourcentyp.  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `type[string]`: NGSI-Entitätstyp. Es muss KeyPadChar sein  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Dieses Datenmodell stammt aus dem ursprünglichen [Open Connectivity Foundation repository] (https://github.com/openconnectivityfoundation/IoTDataModels). Es wurde erweitert, um den Anforderungen der NGSI zu entsprechen.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 KeyPadChar:    
@@ -341,9 +356,14 @@ KeyPadChar:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Beispiel-Nutzlasten  
 #### KeyPadChar NGSI-v2 key-values Beispiel  
-Hier ist ein Beispiel für ein KeyPadChar im JSON-LD-Format als Schlüsselwerte. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird und gibt die Kontextdaten einer einzelnen Entität zurück.  
+Hier ist ein Beispiel für ein KeyPadChar im JSON-LD-Format als Schlüsselwerte. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:KeyPadChar:id:AUBP:20991466",  
@@ -380,8 +400,10 @@ KeyPadChar:
   "areaServed": "Cup century name safe member try speak. Unit image policy next character."  
 }  
 ```  
+</details>  
 #### KeyPadChar NGSI-v2 normalisiert Beispiel  
 Hier ist ein Beispiel für ein KeyPadChar im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -459,127 +481,141 @@ KeyPadChar:
   }  
 }  
 ```  
+</details>  
 #### KeyPadChar NGSI-LD key-values Beispiel  
 Hier ist ein Beispiel für ein KeyPadChar im JSON-LD-Format als Schlüsselwerte. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und gibt die Kontextdaten einer einzelnen Entität zurück.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:KeyPadChar:id:AUBP:20991466",  
-  "dateCreated": "1995-04-06T20:48:38Z",  
-  "dateModified": "2000-10-01T18:01:36Z",  
-  "source": "Leave stock good reveal best difficult. Stock think significant activity.",  
-  "name": "Thank tonight threat. Still sure unit line reduce car turn. Little space others sometimes card. Soldier daughter hand win else position agree.",  
-  "alternateName": "Inside meeting board sometimes official question dinner. Moment hit point fight hair. Yourself record face must point oil then.",  
-  "description": "Network tree mind place fund along south. Produce listen first role science mention land. Research laugh think plan two.",  
-  "dataProvider": "However many while think play face. Maintain suggest administration. Black leg decade hear should form financial.",  
-  "owner": [  
-    "urn:ngsi-ld:KeyPadChar:items:KFQK:36162854",  
-    "urn:ngsi-ld:KeyPadChar:items:GXKW:43506063"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:KeyPadChar:items:JJYA:86979262",  
-    "urn:ngsi-ld:KeyPadChar:items:GZYM:77577120"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -84.361774,  
-      -138.562003  
+    "id": "urn:ngsi-ld:KeyPadChar:id:AUBP:20991466",  
+    "dateCreated": "1995-04-06T20:48:38Z",  
+    "dateModified": "2000-10-01T18:01:36Z",  
+    "source": "Leave stock good reveal best difficult. Stock think significant activity.",  
+    "name": "Thank tonight threat. Still sure unit line reduce car turn. Little space others sometimes card. Soldier daughter hand win else position agree.",  
+    "alternateName": "Inside meeting board sometimes official question dinner. Moment hit point fight hair. Yourself record face must point oil then.",  
+    "description": "Network tree mind place fund along south. Produce listen first role science mention land. Research laugh think plan two.",  
+    "dataProvider": "However many while think play face. Maintain suggest administration. Black leg decade hear should form financial.",  
+    "owner": [  
+        "urn:ngsi-ld:KeyPadChar:items:KFQK:36162854",  
+        "urn:ngsi-ld:KeyPadChar:items:GXKW:43506063"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:KeyPadChar:items:JJYA:86979262",  
+        "urn:ngsi-ld:KeyPadChar:items:GZYM:77577120"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -84.361774,  
+            -138.562003  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Decide seem operation structure. Brother rule hundred toward page look. Just stock occur science western between.",  
+        "addressLocality": "Almost simply care former discover. Health realize more together go third whether particularly.",  
+        "addressRegion": "Note tax situation suddenly how interesting suddenly. Along back face show husband team. Enough however star work industry this.",  
+        "addressCountry": "Approach kitchen human he plant act nature. Which like head dream past reason. Open send money.",  
+        "postalCode": "Attorney mother big place. Adult officer purpose wrong pay you question. Report serve mother return it training.",  
+        "postOfficeBoxNumber": "Ever able close fight born. Condition box land young five."  
+    },  
+    "areaServed": "Cup century name safe member try speak. Unit image policy next character.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Decide seem operation structure. Brother rule hundred toward page look. Just stock occur science western between.",  
-    "addressLocality": "Almost simply care former discover. Health realize more together go third whether particularly.",  
-    "addressRegion": "Note tax situation suddenly how interesting suddenly. Along back face show husband team. Enough however star work industry this.",  
-    "addressCountry": "Approach kitchen human he plant act nature. Which like head dream past reason. Open send money.",  
-    "postalCode": "Attorney mother big place. Adult officer purpose wrong pay you question. Report serve mother return it training.",  
-    "postOfficeBoxNumber": "Ever able close fight born. Condition box land young five."  
-  },  
-  "areaServed": "Cup century name safe member try speak. Unit image policy next character.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### KeyPadChar NGSI-LD normalisiert Beispiel  
 Hier ist ein Beispiel für ein KeyPadChar im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:KeyPadChar:id:KXUT:50908923",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2021-08-21T14:51:03Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2001-05-14T20:30:00Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Soldier store feeling many help event wrong. Old develop tree picture account whole indicate. Heart skill offer. Partner read career product south fund interview."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Administration actually live from."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Writer per first increase design size. Tax health drug loss."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Project indeed while baby third. Bank after condition wife. National within standard record indicate fact Democrat mean."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Magazine quickly a. Every social month hot policy reduce. Deal produce chair another although."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:KeyPadChar:items:EXVC:21629351",  
-      "urn:ngsi-ld:KeyPadChar:items:QPDN:56214490"  
+    "id": "urn:ngsi-ld:KeyPadChar:id:KXUT:50908923",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2021-08-21T14:51:03Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2001-05-14T20:30:00Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Soldier store feeling many help event wrong. Old develop tree picture account whole indicate. Heart skill offer. Partner read career product south fund interview."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Administration actually live from."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Writer per first increase design size. Tax health drug loss."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Project indeed while baby third. Bank after condition wife. National within standard record indicate fact Democrat mean."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Magazine quickly a. Every social month hot policy reduce. Deal produce chair another although."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:KeyPadChar:items:EXVC:21629351",  
+            "urn:ngsi-ld:KeyPadChar:items:QPDN:56214490"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:KeyPadChar:items:XLTN:33438506"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -65.7253095,  
+                -48.188615  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Least environment believe least director series consumer letter. Friend before finally huge data official. Style think myself face arm theory clear home.",  
+            "addressLocality": "Modern start quite cover. Resource role quality.",  
+            "addressRegion": "Whole subject interview cup debate professor item. Always sense kind three foreign increase case. Page assume we another else according.",  
+            "addressCountry": "Candidate eye live you house why. Finish beat detail across. Eye alone prove avoid agreement.",  
+            "postalCode": "Reflect collection scene doctor or her bar. Debate common term imagine.",  
+            "postOfficeBoxNumber": "Discuss really score deep hotel. Boy meeting much."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Store set party five. Assume mouth every measure."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:KeyPadChar:items:XLTN:33438506"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -65.7253095,  
-        -48.188615  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Least environment believe least director series consumer letter. Friend before finally huge data official. Style think myself face arm theory clear home.",  
-      "addressLocality": "Modern start quite cover. Resource role quality.",  
-      "addressRegion": "Whole subject interview cup debate professor item. Always sense kind three foreign increase case. Page assume we another else according.",  
-      "addressCountry": "Candidate eye live you house why. Finish beat detail across. Eye alone prove avoid agreement.",  
-      "postalCode": "Reflect collection scene doctor or her bar. Debate common term imagine.",  
-      "postOfficeBoxNumber": "Discuss really score deep hotel. Boy meeting much."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Store set party five. Assume mouth every measure."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
