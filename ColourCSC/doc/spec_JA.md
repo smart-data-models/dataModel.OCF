@@ -1,17 +1,32 @@
-エンティティカラーCSC  
-============  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティカラーCSC  
+============<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/ColourCSC/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな説明です。**IoTDataのデータモデルをスマートデータモデルに変換したものです。このResourceは、色空間座標を用いて色を記述する。Property 'sc'は、CIEカラースペースにおけるカラースペース座標である。   配列の最初の項目は、X座標である。   配列の2番目の項目はY座標である。   Property 'precision'が指定されている場合は、X座標とY座標の両方に適用されます。リソースは、色空間座標を用いて色を提供します。**  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**IoTData のデータモデルをスマートデータモデルプログラムに適応させたもの。この Resource は、色空間座標を使用して色を記述する。Property 'csc' は、CIE 色空間における色空間座標である。   配列の最初の項目は X 座標である。   配列の 2 番目の項目は Y 座標である。   プロパティ 'precision' が指定されている場合は、X 座標と Y 座標の両方に適用されます。Resource は、色空間座標を用いた色を提供します。**  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `csc`: CIEカラースペースでの色のX、Y座標です。  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `if`: このResourceがサポートしているOCF Interface set。  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `n`: リソースのフレンドリーネーム  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `precision`: 公開された場合、「精度」の値は、リソース内のプロパティに対して±の許容範囲を提供する。従って、あるプロパティがある値に更新され、そのプロパティがRETRIEVEDされた場合、RETRIEVEDされた値は、設定された値の±精度の範囲内であれば有効である。  - `rt`: The Resource Type。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSIエンティティタイプ。それはColourCSCでなければならない。    
-必須項目  
-- `id`  - `type`    
-このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)から来ています。NGSIの要件に適合するように拡張されています。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `csc[array]`: CIE色空間における色のX、Y座標。  - `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `if[array]`: このResourceがサポートするOCF Interfaceセット。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `n[string]`: リソースのフレンドリ名  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリスト  - `precision[number]`: 公開されるとき、'precision'の値は、ResourceのPropertyに対して+/-の許容範囲を提供する。したがって、あるプロパティがある値にUPDATEされ、そのプロパティがRETRIEVEDされた場合、RETRIEVEDされた値は設定された値+/-精度の範囲内であれば有効である。  - `rt[array]`: リソースタイプです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSIエンティティタイプ。これはColourCSCでなければならない。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)に由来しています。NGSIの要件に適合するように拡張されている。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ColourCSC:    
@@ -340,9 +355,14 @@ ColourCSC:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### ColourCSC NGSI-v2 キーバリューの例  
-ここでは、ColourCSCをkey-valuesとしてJSON-LD形式で表現した例を紹介します。これは`options=keyValues`を使った場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### ColourCSC NGSI-v2キーバリューの例  
+以下は、ColourCSCをJSON-LD形式でkey-valuesにした例である。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:ColourCSC:id:CILR:22609889",  
@@ -379,8 +399,10 @@ ColourCSC:
   "areaServed": "Power last south movement. Provide wrong half within on building cup idea."  
 }  
 ```  
-#### ColourCSC NGSI-v2規格化例  
-ここでは、正規化されたJSON-LD形式のColourCSCの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### ColourCSC NGSI-v2 正規化例  
+以下は、ColourCSCを正規化したJSON-LD形式の例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -458,127 +480,141 @@ ColourCSC:
   }  
 }  
 ```  
-#### ColourCSC NGSI-LDのキーバリューの例  
-ここでは、ColourCSCをkey-valuesとしてJSON-LD形式で表現した例を紹介します。これは、`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### ColourCSC NGSI-LD キー値の例  
+以下は、ColourCSCをJSON-LD形式でkey-valuesにした例である。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:ColourCSC:id:CILR:22609889",  
-  "dateCreated": "1972-02-07T04:39:05Z",  
-  "dateModified": "1995-06-21T21:30:16Z",  
-  "source": "Sit whole certainly chance eye. Picture blood himself movement put enter camera.",  
-  "name": "Actually open walk occur red tonight eight. Marriage either before focus hand fear. Choice executive dream too your goal up similar.",  
-  "alternateName": "Must help seat together deep. Pick just hundred. Along with development sound night matter.",  
-  "description": "Exist major pick.",  
-  "dataProvider": "Shoulder floor off another any.",  
-  "owner": [  
-    "urn:ngsi-ld:ColourCSC:items:HVOC:54830748",  
-    "urn:ngsi-ld:ColourCSC:items:ZZYY:78981473"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:ColourCSC:items:FYZV:24314298",  
-    "urn:ngsi-ld:ColourCSC:items:EKPS:06727525"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      9.5180045,  
-      -162.458131  
+    "id": "urn:ngsi-ld:ColourCSC:id:CILR:22609889",  
+    "dateCreated": "1972-02-07T04:39:05Z",  
+    "dateModified": "1995-06-21T21:30:16Z",  
+    "source": "Sit whole certainly chance eye. Picture blood himself movement put enter camera.",  
+    "name": "Actually open walk occur red tonight eight. Marriage either before focus hand fear. Choice executive dream too your goal up similar.",  
+    "alternateName": "Must help seat together deep. Pick just hundred. Along with development sound night matter.",  
+    "description": "Exist major pick.",  
+    "dataProvider": "Shoulder floor off another any.",  
+    "owner": [  
+        "urn:ngsi-ld:ColourCSC:items:HVOC:54830748",  
+        "urn:ngsi-ld:ColourCSC:items:ZZYY:78981473"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:ColourCSC:items:FYZV:24314298",  
+        "urn:ngsi-ld:ColourCSC:items:EKPS:06727525"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            9.5180045,  
+            -162.458131  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Still information trial adult. Feel total between activity that own different.",  
+        "addressLocality": "Rest computer though I can. Within nature game reason.",  
+        "addressRegion": "Cost later tough data. Hotel him technology national imagine along. Sound Mr off.",  
+        "addressCountry": "Guess say miss increase lay attention. Road free president make page. Know wind data. Score little dream put size know daughter.",  
+        "postalCode": "Continue ask at fast likely site color. Art those worry treat. Price tonight white maintain.",  
+        "postOfficeBoxNumber": "Result fund generation direction."  
+    },  
+    "areaServed": "Power last south movement. Provide wrong half within on building cup idea.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Still information trial adult. Feel total between activity that own different.",  
-    "addressLocality": "Rest computer though I can. Within nature game reason.",  
-    "addressRegion": "Cost later tough data. Hotel him technology national imagine along. Sound Mr off.",  
-    "addressCountry": "Guess say miss increase lay attention. Road free president make page. Know wind data. Score little dream put size know daughter.",  
-    "postalCode": "Continue ask at fast likely site color. Art those worry treat. Price tonight white maintain.",  
-    "postOfficeBoxNumber": "Result fund generation direction."  
-  },  
-  "areaServed": "Power last south movement. Provide wrong half within on building cup idea.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-#### ColourCSC NGSI-LDの正規化例  
-ここでは、正規化されたJSON-LD形式のColourCSCの例を示します。これはオプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### ColourCSC NGSI-LD 正規化例  
+以下は、ColourCSCをJSON-LD形式で正規化した例である。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:ColourCSC:id:QXXW:01773179",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1981-01-01T22:54:47Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2018-04-25T12:29:34Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Pick tend read employee art interview. Wife production know officer small. Let training study specific seat young."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Dog police quite prove ok law but."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Line power thought plan surface. None often arm catch not night new public."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Month feeling region international make son. Six spend certainly. Suggest bad great lawyer."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Such allow nothing down very her record. Or travel reduce throughout change. Brother history over medical."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:ColourCSC:items:NUWJ:83419287",  
-      "urn:ngsi-ld:ColourCSC:items:PSON:82588261"  
+    "id": "urn:ngsi-ld:ColourCSC:id:QXXW:01773179",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1981-01-01T22:54:47Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2018-04-25T12:29:34Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Pick tend read employee art interview. Wife production know officer small. Let training study specific seat young."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Dog police quite prove ok law but."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Line power thought plan surface. None often arm catch not night new public."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Month feeling region international make son. Six spend certainly. Suggest bad great lawyer."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Such allow nothing down very her record. Or travel reduce throughout change. Brother history over medical."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:ColourCSC:items:NUWJ:83419287",  
+            "urn:ngsi-ld:ColourCSC:items:PSON:82588261"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:ColourCSC:items:IFMS:64015606"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -34.482211,  
+                33.71405  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Foreign per begin.",  
+            "addressLocality": "Vote rule always section. Respond fish event run particularly style establish key.",  
+            "addressRegion": "Foot computer seven unit future. Front employee step star.",  
+            "addressCountry": "Game relationship where civil research improve later. Practice agent each recently until send.",  
+            "postalCode": "Reduce single culture hour can lawyer speech. Point attention stay reason. Evening benefit subject between.",  
+            "postOfficeBoxNumber": "Can stop save military despite memory would."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Simple pressure test difficult Congress business mean. North dark lose blue test your buy."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:ColourCSC:items:IFMS:64015606"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -34.482211,  
-        33.71405  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Foreign per begin.",  
-      "addressLocality": "Vote rule always section. Respond fish event run particularly style establish key.",  
-      "addressRegion": "Foot computer seven unit future. Front employee step star.",  
-      "addressCountry": "Game relationship where civil research improve later. Practice agent each recently until send.",  
-      "postalCode": "Reduce single culture hour can lawyer speech. Point attention stay reason. Evening benefit subject between.",  
-      "postOfficeBoxNumber": "Can stop save military despite memory would."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Simple pressure test difficult Congress business mean. North dark lose blue test your buy."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
