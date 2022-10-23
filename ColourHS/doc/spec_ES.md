@@ -1,17 +1,32 @@
-Entidad: ColourHS  
-=================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entidad: ColourHS  
+=================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.OCF/blob/master/ColourHS/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Descripción global: **Adaptación del Programa de Modelos de Datos Inteligentes de los modelos de datos originales de IoTData. Este Recurso describe el color utilizando las convenciones de matiz-saturación. La propiedad 'hue' es el ángulo de matiz, es un valor numérico según la definición del modelo CIECAM02 (véase la referencia [CIE CIE159:2004]). Un dispositivo que no admita ángulos de matiz fraccionarios puede proporcionar valores enteros. Si se proporciona la propiedad 'precisión', se aplica al ángulo de tonalidad. La propiedad "saturación" es un valor entero según la definición del modelo CIECAM02 (véase la referencia [CIE CIE159:2004]).  La propiedad "saturación" puede convertirse en un porcentaje mediante saturación/máxima saturación X 100; donde máxima saturación es 32767 si la propiedad no está presente. La propiedad "saturación máxima" es el límite superior de la saturación admitida por el dispositivo. Si no está presente, el valor máximo de la saturación es 32767. El Recurso proporciona el color utilizando las convenciones de tono y saturación. **  
+versión: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `hue`: El ángulo de tonalidad según la definición del modelo CIECAM02.  - `id`: Identificador único de la entidad  - `if`: El conjunto de interfaces OCF que admite este recurso.  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `maximumsaturation`: El valor máximo admitido de "saturación" para este Dispositivo.  - `n`: Nombre amistoso del recurso  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `precision`: Cuando se expone el valor en "precisión" proporciona una tolerancia +/- contra las Propiedades en el Recurso. Por lo tanto, si una propiedad se actualiza a un valor y esa propiedad se recupera, el valor recuperado es válido si está en el rango del valor establecido +/- precisión.  - `rt`: El tipo de recurso.  - `saturation`: La saturación según la definición del modelo CIECAM02.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type`: Tipo de entidad NGSI. Tiene que ser ColourHS    
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>  
+- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Una descripción de este artículo  - `hue[number]`: El ángulo de tonalidad según la definición del modelo CIECAM02.  - `id[*]`: Identificador único de la entidad  - `if[array]`: El conjunto de interfaces OCF que admite este recurso.  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `maximumsaturation[integer]`: El valor máximo admitido de "saturación" para este Dispositivo.  - `n[string]`: Nombre amigable del Recurso  - `name[string]`: El nombre de este artículo.  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `precision[number]`: Cuando se expone el valor en "precisión" proporciona una tolerancia +/- contra las Propiedades en el Recurso. Por lo tanto, si una propiedad se actualiza a un valor y esa propiedad se recupera, el valor recuperado es válido si está en el rango del valor establecido +/- precisión.  - `rt[array]`: El tipo de recurso.  - `saturation[integer]`: La saturación según la definición del modelo CIECAM02.  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type[string]`: Tipo de entidad NGSI. Tiene que ser ColourHS  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propiedades requeridas  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Este modelo de datos procede del original [repositorio de la Open Connectivity Foundation](https://github.com/openconnectivityfoundation/IoTDataModels). Se ha ampliado para cumplir con los requisitos de la NGSI.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ColourHS:    
@@ -351,9 +366,14 @@ ColourHS:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Ejemplo de carga útil  
 #### ColorHS NGSI-v2 key-values Ejemplo  
 Aquí hay un ejemplo de un ColourHS en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:ColourHS:id:DLXG:90211144",  
@@ -390,8 +410,10 @@ ColourHS:
   "areaServed": "Action yes plant pull make spend. Several radio the deal fall. Remain suddenly voice building."  
 }  
 ```  
+</details>  
 #### ColorHS NGSI-v2 normalizado Ejemplo  
-Este es un ejemplo de un ColourHS en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+He aquí un ejemplo de un ColourHS en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -469,127 +491,141 @@ ColourHS:
   }  
 }  
 ```  
+</details>  
 #### ColorHS NGSI-LD key-values Ejemplo  
 Aquí hay un ejemplo de un ColourHS en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:ColourHS:id:DLXG:90211144",  
-  "dateCreated": "1977-03-13T17:59:46Z",  
-  "dateModified": "2012-10-15T11:19:46Z",  
-  "source": "Catch protect gas yard heavy voice. Put writer myself we eat test. Statement development system left arm agree head.",  
-  "name": "Dark color hand commercial bit while.",  
-  "alternateName": "Military address about several. Lay ball level fight notice current. Bank peace future box.",  
-  "description": "Majority produce home short church. Window issue dark these. Discussion a reflect kitchen offer weight. Various charge table hit write.",  
-  "dataProvider": "Them attack on produce enjoy political ago fast. Apply hundred expert.",  
-  "owner": [  
-    "urn:ngsi-ld:ColourHS:items:VBDX:22087584",  
-    "urn:ngsi-ld:ColourHS:items:RTUI:58785534"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:ColourHS:items:IEEC:67313530",  
-    "urn:ngsi-ld:ColourHS:items:MVIN:52384772"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      25.3046825,  
-      -126.528647  
+    "id": "urn:ngsi-ld:ColourHS:id:DLXG:90211144",  
+    "dateCreated": "1977-03-13T17:59:46Z",  
+    "dateModified": "2012-10-15T11:19:46Z",  
+    "source": "Catch protect gas yard heavy voice. Put writer myself we eat test. Statement development system left arm agree head.",  
+    "name": "Dark color hand commercial bit while.",  
+    "alternateName": "Military address about several. Lay ball level fight notice current. Bank peace future box.",  
+    "description": "Majority produce home short church. Window issue dark these. Discussion a reflect kitchen offer weight. Various charge table hit write.",  
+    "dataProvider": "Them attack on produce enjoy political ago fast. Apply hundred expert.",  
+    "owner": [  
+        "urn:ngsi-ld:ColourHS:items:VBDX:22087584",  
+        "urn:ngsi-ld:ColourHS:items:RTUI:58785534"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:ColourHS:items:IEEC:67313530",  
+        "urn:ngsi-ld:ColourHS:items:MVIN:52384772"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            25.3046825,  
+            -126.528647  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Mr if structure whom save. Small human kitchen. There scientist accept authority finally finish democratic.",  
+        "addressLocality": "Hot west short specific interesting provide current campaign. Institution provide agree medical face whatever.",  
+        "addressRegion": "Test campaign painting leader. Central possible none church summer approach.",  
+        "addressCountry": "Sell fly piece democratic decide land church store. Whether interest situation five. Provide research democratic within since talk beyond.",  
+        "postalCode": "Only check election police. All positive include owner leg end. Suggest health music piece build yard.",  
+        "postOfficeBoxNumber": "Career answer himself listen. Attorney society home production part."  
+    },  
+    "areaServed": "Action yes plant pull make spend. Several radio the deal fall. Remain suddenly voice building.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Mr if structure whom save. Small human kitchen. There scientist accept authority finally finish democratic.",  
-    "addressLocality": "Hot west short specific interesting provide current campaign. Institution provide agree medical face whatever.",  
-    "addressRegion": "Test campaign painting leader. Central possible none church summer approach.",  
-    "addressCountry": "Sell fly piece democratic decide land church store. Whether interest situation five. Provide research democratic within since talk beyond.",  
-    "postalCode": "Only check election police. All positive include owner leg end. Suggest health music piece build yard.",  
-    "postOfficeBoxNumber": "Career answer himself listen. Attorney society home production part."  
-  },  
-  "areaServed": "Action yes plant pull make spend. Several radio the deal fall. Remain suddenly voice building.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### ColorHS NGSI-LD normalizado Ejemplo  
-Este es un ejemplo de un ColourHS en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+He aquí un ejemplo de un ColourHS en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:ColourHS:id:VIED:72184359",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1974-12-21T13:03:31Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2010-08-25T07:04:37Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Lot whole task use."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Until drug young what way agency reality. Mission explain wrong moment here source. Since down unit policy price candidate start."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Myself entire past face cup support behavior. Face such could character according send end."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Upon respond analysis fall mission mention miss a. None drug report tend future."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Sell anything later really major. Mention data partner."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:ColourHS:items:DRUT:10402699",  
-      "urn:ngsi-ld:ColourHS:items:XTXA:97530272"  
+    "id": "urn:ngsi-ld:ColourHS:id:VIED:72184359",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1974-12-21T13:03:31Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2010-08-25T07:04:37Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Lot whole task use."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Until drug young what way agency reality. Mission explain wrong moment here source. Since down unit policy price candidate start."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Myself entire past face cup support behavior. Face such could character according send end."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Upon respond analysis fall mission mention miss a. None drug report tend future."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Sell anything later really major. Mention data partner."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:ColourHS:items:DRUT:10402699",  
+            "urn:ngsi-ld:ColourHS:items:XTXA:97530272"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:ColourHS:items:IQHE:71148899"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -86.1604745,  
+                -18.960842  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Walk land try relate peace hour quality. Although fall star treat career still.",  
+            "addressLocality": "Letter fill billion could either every. Stage throughout position brother sell. Talk material at everybody why yet.",  
+            "addressRegion": "Dream top hold let day strong. Also road ask radio. Middle partner middle administration past.",  
+            "addressCountry": "Purpose every traditional pass low sense choice.",  
+            "postalCode": "Until their benefit green set find. Message place member player picture task condition. Best across green figure born.",  
+            "postOfficeBoxNumber": "Wrong up customer stop church goal. Heavy way sister admit between actually he."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Spring never girl deep season. Floor media company election."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:ColourHS:items:IQHE:71148899"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -86.1604745,  
-        -18.960842  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Walk land try relate peace hour quality. Although fall star treat career still.",  
-      "addressLocality": "Letter fill billion could either every. Stage throughout position brother sell. Talk material at everybody why yet.",  
-      "addressRegion": "Dream top hold let day strong. Also road ask radio. Middle partner middle administration past.",  
-      "addressCountry": "Purpose every traditional pass low sense choice.",  
-      "postalCode": "Until their benefit green set find. Message place member player picture task condition. Best across green figure born.",  
-      "postOfficeBoxNumber": "Wrong up customer stop church goal. Heavy way sister admit between actually he."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Spring never girl deep season. Floor media company election."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
