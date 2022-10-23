@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entità: Sensore  
-===============  
+===============<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.OCF/blob/master/Sensor/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Questa risorsa descrive se qualche valore o proprietà o entità è stata rilevata o meno.La proprietà 'value' è un booleano.Un valore di 'true' significa che l'obiettivo è stato rilevato.Un valore di 'false' significa che l'obiettivo non è stato rilevato.**  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **La proprietà 'value' è un booleano. Un valore di 'true' significa che l'obiettivo è stato rilevato. Un valore di 'false' significa che l'obiettivo non è stato rilevato.  
 versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `id`: Identificatore unico dell'entità  - `if`: L'insieme di interfacce OCF supportato da questa risorsa  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `measurement`: Valore misurato per questo sensore, le unità dipendono dal tipo specifico di sensore  - `n`: Nome amichevole della risorsa  - `name`: Il nome di questo articolo.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `precision`: Quando è esposto, il valore in 'precisione' fornisce una tolleranza +/- rispetto alle Proprietà nella Risorsa. Quindi, se una proprietà viene aggiornata a un valore e tale proprietà viene poi ripristinata, il valore ripristinato è valido se rientra nell'intervallo del valore impostato +/- precisione  - `range`: L'intervallo valido per la proprietà nella risorsa come numero. Il primo valore nell'array è il valore minimo, il secondo valore nell'array è il valore massimo.  - `rt`: Il tipo di risorsa  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `step`: Valore di passo attraverso l'intervallo definito un intero quando l'intervallo è un numero.  Questo è l'incremento per i valori validi attraverso l'intervallo; così se l'intervallo è 0.0..10.0 e il passo è 2.5 allora i valori validi sono 0.0,2.5,5.0,7.5,10.0.  - `type`: Tipo di entità NGSI. Deve essere Sensor  - `value`: vero = percepito, falso = non percepito.    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `if[array]`: L'insieme di interfacce OCF supportate da questa risorsa.  - `location[*]`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `measurement[number]`: Valore misurato per questo sensore, le unità dipendono dal tipo specifico di sensore  - `n[string]`: Nome amichevole della risorsa  - `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `precision[number]`: Quando viene esposto, il valore in 'precision' fornisce una tolleranza +/- rispetto alle proprietà della risorsa. Pertanto, se una proprietà viene AGGIORNATA a un valore e poi viene restituita, il valore restituito è valido se rientra nell'intervallo del valore impostato +/- precision.  - `range[array]`: L'intervallo valido per la proprietà nella risorsa come numero. Il primo valore della matrice è il valore minimo, il secondo valore della matrice è il valore massimo.  - `rt[array]`: Il tipo di risorsa  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `step[number]`: Valore del passo nell'intervallo definito, un numero intero quando l'intervallo è un numero.  Si tratta dell'incremento per i valori validi nell'intervallo; quindi, se l'intervallo è 0.0..10.0 e il passo è 2.5, i valori validi sono 0.0,2.5,5.0,7.5,10.0.  - `type[string]`: Tipo di entità NGSI. Deve essere Sensore  - `value[boolean]`: vero = rilevato, falso = non rilevato.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- `id`  - `type`  - `value`    
+- `id`  - `type`  - `value`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Modello di dati adattato dall'originale creato dalla Open Connectivity Foundation. Repository originale in https://github.com/openconnectivityfoundation/IoTDataModels  
-## Descrizione del modello di dati delle proprietà  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Sensor:    
@@ -361,9 +374,14 @@ Sensor:
   x-version: 0.0.1    
 ```  
 </details>    
-## Esempio di payloads  
-#### Sensore NGSI-v2 valori chiave Esempio  
-Ecco un esempio di un sensore in formato JSON-LD come key-values. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
+#### Sensore NGSI-v2 valori-chiave Esempio  
+Ecco un esempio di sensore in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Sensor:id:EEVF:23119928",  
@@ -430,8 +448,10 @@ Sensor:
   "type": "Sensor"  
 }  
 ```  
+</details>  
 #### Sensore NGSI-v2 normalizzato Esempio  
-Ecco un esempio di un sensore in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di sensore in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano le opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -566,197 +586,211 @@ Sensor:
   }  
 }  
 ```  
+</details>  
 #### Sensore NGSI-LD valori chiave Esempio  
-Ecco un esempio di un sensore in formato JSON-LD come key-values. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di sensore in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Sensor:id:EEVF:23119928",  
-  "dateCreated": "1991-01-27T02:40:57Z",  
-  "dateModified": "1971-12-13T00:43:58Z",  
-  "source": "Term event garden father large.",  
-  "name": "Hundred number record population speak democratic consider. Describe exist ok also black imagine son.",  
-  "alternateName": "Measure bank part still low century. Wind our our foreign prove southern. Hit moment drop anyone. According eye hospital have fund partner.",  
-  "description": "Amount until similar Mr debate. Other skin high term challenge Mrs building. Whatever stay our this.",  
-  "dataProvider": "Plant suggest decision movement. Training term put agent common eat help while. Single morning offer detail other man look. Baby age dinner task right property lot.",  
-  "owner": [  
-    "urn:ngsi-ld:Sensor:items:NGFL:29340842",  
-    "urn:ngsi-ld:Sensor:items:HZVS:91325080"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Sensor:items:SVWN:41330440",  
-    "urn:ngsi-ld:Sensor:items:DLFC:40040901"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -19.9539755,  
-      -135.278603  
+    "id": "urn:ngsi-ld:Sensor:id:EEVF:23119928",  
+    "dateCreated": "1991-01-27T02:40:57Z",  
+    "dateModified": "1971-12-13T00:43:58Z",  
+    "source": "Term event garden father large.",  
+    "name": "Hundred number record population speak democratic consider. Describe exist ok also black imagine son.",  
+    "alternateName": "Measure bank part still low century. Wind our our foreign prove southern. Hit moment drop anyone. According eye hospital have fund partner.",  
+    "description": "Amount until similar Mr debate. Other skin high term challenge Mrs building. Whatever stay our this.",  
+    "dataProvider": "Plant suggest decision movement. Training term put agent common eat help while. Single morning offer detail other man look. Baby age dinner task right property lot.",  
+    "owner": [  
+        "urn:ngsi-ld:Sensor:items:NGFL:29340842",  
+        "urn:ngsi-ld:Sensor:items:HZVS:91325080"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Sensor:items:SVWN:41330440",  
+        "urn:ngsi-ld:Sensor:items:DLFC:40040901"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -19.9539755,  
+            -135.278603  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Into Mrs old blood. Reflect better land direction.",  
+        "addressLocality": "One thus five the stand our open. Large approach in hard place. Business begin program kid. Religious include home guy now five feel hour.",  
+        "addressRegion": "Out both range clearly just. Event they realize this somebody.",  
+        "addressCountry": "Every only vote stock he power list. Believe contain inside next buy bill particularly food.",  
+        "postalCode": "Century major more. Rise glass anyone sit our class family thing.",  
+        "postOfficeBoxNumber": "That direction attention significant though article day. Hour various south note later."  
+    },  
+    "areaServed": "Another article Mr. Determine art treat answer. Career list cold from stuff rather material.",  
+    "rt": [  
+        "oic.r.sensor",  
+        "oic.r.sensor"  
+    ],  
+    "value": {  
+        "type": "Property",  
+        "value": false  
+    },  
+    "measurement": {  
+        "type": "Property",  
+        "value": 96.8  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 314.9  
+    },  
+    "n": "Between apply probably seat half. Republican world accept job.",  
+    "range": [  
+        791.0,  
+        897.9  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 917.7  
+    },  
+    "if": [  
+        "oic.if.s",  
+        "oic.if.baseline"  
+    ],  
+    "type": "Sensor",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Into Mrs old blood. Reflect better land direction.",  
-    "addressLocality": "One thus five the stand our open. Large approach in hard place. Business begin program kid. Religious include home guy now five feel hour.",  
-    "addressRegion": "Out both range clearly just. Event they realize this somebody.",  
-    "addressCountry": "Every only vote stock he power list. Believe contain inside next buy bill particularly food.",  
-    "postalCode": "Century major more. Rise glass anyone sit our class family thing.",  
-    "postOfficeBoxNumber": "That direction attention significant though article day. Hour various south note later."  
-  },  
-  "areaServed": "Another article Mr. Determine art treat answer. Career list cold from stuff rather material.",  
-  "rt": [  
-    "oic.r.sensor",  
-    "oic.r.sensor"  
-  ],  
-  "value": {  
-    "type": "Property",  
-    "value": false  
-  },  
-  "measurement": {  
-    "type": "Property",  
-    "value": 96.8  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 314.9  
-  },  
-  "n": "Between apply probably seat half. Republican world accept job.",  
-  "range": [  
-    791.0,  
-    897.9  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 917.7  
-  },  
-  "if": [  
-    "oic.if.s",  
-    "oic.if.baseline"  
-  ],  
-  "type": "Sensor",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### Sensore NGSI-LD normalizzato Esempio  
-Ecco un esempio di un sensore in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di sensore in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Sensor:id:BIZN:29586189",  
-  "dateCreated": {  
-    "type": "Property",  
+    "id": "urn:ngsi-ld:Sensor:id:BIZN:29586189",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1970-01-29T22:09:55Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1990-10-17T03:52:28Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "He suddenly little every list wait. Process third yeah option Congress first form."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Firm lot appear war program office. Stage if receive play often act. Operation whole within method technology."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Care gas recently on response item. Finish become week speak memory west may."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Experience window source. Effect perform similar staff two. Realize manage board civil music."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Campaign general interesting leave sing hotel. Every all inside now whose air. Recent decade trial."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Sensor:items:OBUU:26432740",  
+            "urn:ngsi-ld:Sensor:items:SQLE:55745312"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Sensor:items:WCUC:42787397"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -24.2466645,  
+                -141.953472  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Use more site wear loss. Offer anyone per any.",  
+            "addressLocality": "Value try hour various. Organization executive scientist society. Ago bring edge check wide.",  
+            "addressRegion": "Read be scene cell ok himself soldier example.",  
+            "addressCountry": "Shake while animal. Author view respond former thousand every leave. Race business free grow.",  
+            "postalCode": "Family attack hospital summer western her. Some should sell treatment mean. Down a identify fine job.",  
+            "postOfficeBoxNumber": "Natural tonight such concern more effect. Reason theory figure activity body head. Direction past sit everyone ahead can."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Face test set go walk magazine interesting. Staff raise ready another north. Scientist surface specific."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.sensor"  
+        ]  
+    },  
     "value": {  
-      "@type": "DateTime",  
-      "@value": "1970-01-29T22:09:55Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1990-10-17T03:52:28Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "He suddenly little every list wait. Process third yeah option Congress first form."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Firm lot appear war program office. Stage if receive play often act. Operation whole within method technology."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Care gas recently on response item. Finish become week speak memory west may."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Experience window source. Effect perform similar staff two. Realize manage board civil music."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Campaign general interesting leave sing hotel. Every all inside now whose air. Recent decade trial."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Sensor:items:OBUU:26432740",  
-      "urn:ngsi-ld:Sensor:items:SQLE:55745312"  
+        "type": "Property",  
+        "value": true  
+    },  
+    "measurement": {  
+        "type": "Property",  
+        "value": 292.1  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 988.6  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "My build indeed nice take have student. Figure impact here employee realize. Floor meeting entire main myself visit."  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            824.6,  
+            684.9  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 0.4  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "Sensor",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Sensor:items:WCUC:42787397"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -24.2466645,  
-        -141.953472  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Use more site wear loss. Offer anyone per any.",  
-      "addressLocality": "Value try hour various. Organization executive scientist society. Ago bring edge check wide.",  
-      "addressRegion": "Read be scene cell ok himself soldier example.",  
-      "addressCountry": "Shake while animal. Author view respond former thousand every leave. Race business free grow.",  
-      "postalCode": "Family attack hospital summer western her. Some should sell treatment mean. Down a identify fine job.",  
-      "postOfficeBoxNumber": "Natural tonight such concern more effect. Reason theory figure activity body head. Direction past sit everyone ahead can."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Face test set go walk magazine interesting. Staff raise ready another north. Scientist surface specific."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.sensor"  
-    ]  
-  },  
-  "value": {  
-    "type": "Property",  
-    "value": true  
-  },  
-  "measurement": {  
-    "type": "Property",  
-    "value": 292.1  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 988.6  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "My build indeed nice take have student. Figure impact here employee realize. Floor meeting entire main myself visit."  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      824.6,  
-      684.9  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 0.4  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "type": "Sensor",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
