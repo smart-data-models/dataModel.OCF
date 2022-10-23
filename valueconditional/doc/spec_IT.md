@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entità: valueconditional  
-========================  
+========================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.OCF/blob/master/valueconditional/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Questa Risorsa specifica le condizioni che possono essere applicate ad un valore osservato in qualsiasi Risorsa.Queste condizioni sono applicate dal Server OCF che espone la Risorsa a qualsiasi notifica generata a causa delle sottoscrizioni alla Risorsa.Un RETRIEVE unicast alla Risorsa riceverà il valore più recente; che potrebbe non essere il valore notificato più recente.Un server OCF espone questa Risorsa in associazione con la Risorsa che trasmette il valore osservato.Questo viene fatto per mezzo di una nuova istanza di Risorsa con un RT di ['oic.r.<cosa osservata>', 'oic.r.value.conditional'], ad esempio ['oic.r.temperature', 'oic.r.value.conditional'].La proprietà 'threshold' è la quantità di cui la cosa osservata deve cambiare prima che venga inviata una notifica.La proprietà 'minnotifyperiod' è il tempo minimo in ms (millisecondi) che deve trascorrere prima che venga inviata una notifica.Se il maxnotifyperiod (tempo in ms (millisecondi)) trascorre, allora deve essere inviata una notifica.La proprietà 'maxnotifyperiod' è un timer che si azzera ogni volta che viene inviata una notifica.Un valore di '0' per qualsiasi 'threshold', 'minnotifyperiod' o 'maxnotifyperiod' significa che la capacità è supportata ma non attiva.**  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **Queste condizioni sono applicate dal Server OCF che espone la Risorsa a tutte le notifiche generate a causa delle sottoscrizioni alla Risorsa.Un RETRIEVE unicast alla Risorsa riceverà il valore più recente, che potrebbe non essere il più recente valore notificato. Un Server OCF espone questa Risorsa in associazione con la Risorsa che trasmette il valore osservato. Ciò avviene per mezzo di una nuova istanza di Risorsa con un RT di ['oic.r.<cosa osservata>', 'oic.r.value.conditional'], ad esempio ['oic.r.La proprietà "threshold" è l'entità della variazione della cosa osservata prima che venga inviata una notifica. La proprietà "minnotifyperiod" è il tempo minimo in ms (millisecondi) che deve trascorrere prima che venga inviata una notifica.La proprietà 'maxnotifyperiod' è un timer che si azzera ogni volta che viene inviata una notifica. Un valore di '0' per una qualsiasi delle proprietà 'threshold', 'minnotifyperiod' o 'maxnotifyperiod' significa che la funzionalità è supportata ma non attiva.  
 versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `id`: Identificatore unico dell'entità  - `if`: L'insieme di interfacce OCF supportato da questa risorsa.  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `maxnotifyperiod`: Il tempo massimo trascorso in ms prima che una notifica debba essere inviata.  - `minnotifyperiod`: Il tempo minimo trascorso in ms prima che venga inviata una notifica.  - `n`: Nome amichevole della risorsa  - `name`: Il nome di questo articolo.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `rt`: Il tipo di risorsa.  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `threshold`: La quantità di cui il valore misurato deve cambiare prima che venga inviata una notifica.  - `type`: Tipo di entità NGSI. Deve essere condizionato al valore    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `if[array]`: Il set di interfacce OCF supportato da questa risorsa.  - `location[*]`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `maxnotifyperiod[integer]`: Il tempo massimo trascorso in ms prima che venga inviata una notifica.  - `minnotifyperiod[integer]`: Il tempo minimo trascorso in ms prima che venga inviata una notifica.  - `n[string]`: Nome amichevole della risorsa  - `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `rt[array]`: Il tipo di risorsa.  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `threshold[number]`: L'entità della variazione del valore misurato prima dell'invio di una notifica.  - `type[string]`: Tipo di entità NGSI. Deve essere condizionato dal valore  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Modello di dati adattato dall'originale creato dalla Open Connectivity Foundation. Repository originale in https://github.com/openconnectivityfoundation/IoTDataModels  
-## Descrizione del modello di dati delle proprietà  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 valueconditional:    
@@ -344,9 +357,14 @@ valueconditional:
   x-version: 0.0.1    
 ```  
 </details>    
-## Esempio di payloads  
-#### valore condizionale NGSI-v2 valori-chiave Esempio  
-Ecco un esempio di un valueconditional in formato JSON-LD come key-values. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
+#### valori-chiave NGSI-v2 condizionati Esempio  
+Ecco un esempio di un valore-condizione in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:valueconditional:id:BISX:77681840",  
@@ -405,8 +423,10 @@ valueconditional:
   "type": "valueconditional"  
 }  
 ```  
-#### valueconditional NGSI-v2 normalizzato Esempio  
-Ecco un esempio di un valueconditional in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### valorecondizionato NGSI-v2 normalizzato Esempio  
+Ecco un esempio di un valueconditional in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si usano le opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -527,179 +547,193 @@ valueconditional:
   }  
 }  
 ```  
-#### valori condizionali NGSI-LD valori-chiave Esempio  
-Ecco un esempio di un valueconditional in formato JSON-LD come key-values. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### valori-chiave NGSI-LD condizionati Esempio  
+Ecco un esempio di un valore-condizione in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:valueconditional:id:BISX:77681840",  
-  "dateCreated": "1997-11-18T18:13:36Z",  
-  "dateModified": "2015-01-18T22:14:58Z",  
-  "source": "Body old owner tend mention age.",  
-  "name": "Effect apply table. Purpose natural center clearly pay. Show just per light.",  
-  "alternateName": "Respond fear piece military. South life both school operation how which. Without event generation television believe avoid. Chair though thus north.",  
-  "description": "Statement list method. Tv guy production ever. Record picture eye recent. Media face charge water.",  
-  "dataProvider": "Him particularly tell body school. Push fast during beyond factor.",  
-  "owner": [  
-    "urn:ngsi-ld:valueconditional:items:OUAM:46082102",  
-    "urn:ngsi-ld:valueconditional:items:IVSZ:02100459"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:valueconditional:items:CVRL:46090390",  
-    "urn:ngsi-ld:valueconditional:items:XDVQ:18129772"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -1.3326215,  
-      -35.006362  
+    "id": "urn:ngsi-ld:valueconditional:id:BISX:77681840",  
+    "dateCreated": "1997-11-18T18:13:36Z",  
+    "dateModified": "2015-01-18T22:14:58Z",  
+    "source": "Body old owner tend mention age.",  
+    "name": "Effect apply table. Purpose natural center clearly pay. Show just per light.",  
+    "alternateName": "Respond fear piece military. South life both school operation how which. Without event generation television believe avoid. Chair though thus north.",  
+    "description": "Statement list method. Tv guy production ever. Record picture eye recent. Media face charge water.",  
+    "dataProvider": "Him particularly tell body school. Push fast during beyond factor.",  
+    "owner": [  
+        "urn:ngsi-ld:valueconditional:items:OUAM:46082102",  
+        "urn:ngsi-ld:valueconditional:items:IVSZ:02100459"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:valueconditional:items:CVRL:46090390",  
+        "urn:ngsi-ld:valueconditional:items:XDVQ:18129772"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -1.3326215,  
+            -35.006362  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Able red glass sure southern rather carry author.",  
+        "addressLocality": "Authority war over before a TV plan. Give we account air. Deal result first federal page.",  
+        "addressRegion": "Growth outside stage its share movie. Voice remain so could student. Leave black without.",  
+        "addressCountry": "Site key available amount art their safe. Most market mission civil. Serve treat collection seat food condition. Upon expert cold TV throw federal.",  
+        "postalCode": "Nation wonder pattern suffer worker only play. Six catch area less crime fine international.",  
+        "postOfficeBoxNumber": "Push live term seven despite condition teach."  
+    },  
+    "areaServed": "Hold exist quickly debate dark. Play American certainly seek very we data.",  
+    "rt": [  
+        "oic.r.value.conditional",  
+        "oic.r.value.conditional"  
+    ],  
+    "maxnotifyperiod": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "minnotifyperiod": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "threshold": {  
+        "type": "Property",  
+        "value": 515.9  
+    },  
+    "n": "Raise occur movie mention central. Factor control whether. Brother prevent recent close.",  
+    "if": [  
+        "oic.if.rw",  
+        "oic.if.baseline"  
+    ],  
+    "type": "valueconditional",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Able red glass sure southern rather carry author.",  
-    "addressLocality": "Authority war over before a TV plan. Give we account air. Deal result first federal page.",  
-    "addressRegion": "Growth outside stage its share movie. Voice remain so could student. Leave black without.",  
-    "addressCountry": "Site key available amount art their safe. Most market mission civil. Serve treat collection seat food condition. Upon expert cold TV throw federal.",  
-    "postalCode": "Nation wonder pattern suffer worker only play. Six catch area less crime fine international.",  
-    "postOfficeBoxNumber": "Push live term seven despite condition teach."  
-  },  
-  "areaServed": "Hold exist quickly debate dark. Play American certainly seek very we data.",  
-  "rt": [  
-    "oic.r.value.conditional",  
-    "oic.r.value.conditional"  
-  ],  
-  "maxnotifyperiod": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "minnotifyperiod": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "threshold": {  
-    "type": "Property",  
-    "value": 515.9  
-  },  
-  "n": "Raise occur movie mention central. Factor control whether. Brother prevent recent close.",  
-  "if": [  
-    "oic.if.rw",  
-    "oic.if.baseline"  
-  ],  
-  "type": "valueconditional",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-#### valueconditional NGSI-LD normalizzato Esempio  
-Ecco un esempio di un valueconditional in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### valorecondizionato NGSI-LD normalizzato Esempio  
+Ecco un esempio di un valueconditional in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non utilizza le opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:valueconditional:id:LFZE:63894418",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2000-06-29T21:00:50Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1990-11-26T02:50:43Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Question one network parent able season. Toward physical over cultural."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Deal enter pressure bad. Mouth computer water enough floor stuff usually. Various more high gas start financial."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Career late become billion. Everything home happen develop pattern. Number her newspaper show."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Radio why picture research father community. Guy avoid every program when member. Stay last message page ball newspaper religious."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Despite age fall none price. Big concern particular mention fine nation."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:valueconditional:items:KLHZ:91159315",  
-      "urn:ngsi-ld:valueconditional:items:AQIU:86602939"  
+    "id": "urn:ngsi-ld:valueconditional:id:LFZE:63894418",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2000-06-29T21:00:50Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1990-11-26T02:50:43Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Question one network parent able season. Toward physical over cultural."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Deal enter pressure bad. Mouth computer water enough floor stuff usually. Various more high gas start financial."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Career late become billion. Everything home happen develop pattern. Number her newspaper show."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Radio why picture research father community. Guy avoid every program when member. Stay last message page ball newspaper religious."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Despite age fall none price. Big concern particular mention fine nation."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:valueconditional:items:KLHZ:91159315",  
+            "urn:ngsi-ld:valueconditional:items:AQIU:86602939"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:valueconditional:items:YHRG:04597786"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -29.636661,  
+                -28.098623  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Republican save party possible radio position. Box town other keep evidence color. Move try face box fact program he.",  
+            "addressLocality": "Be low remain. State find kind leg officer.",  
+            "addressRegion": "Finish protect ever nearly mean. Citizen chair ok only player down. Message officer beat section cell spend fund.",  
+            "addressCountry": "Machine able kitchen chair time Congress. Military allow mind notice. Former spend tough.",  
+            "postalCode": "Safe present once have shake outside brother institution. Color page believe identify ten far. Unit husband large government.",  
+            "postOfficeBoxNumber": "Reduce agent book participant. Argue example allow story million two worry. Sport similar performance computer apply front anything. Skin civil close so."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Democratic spend accept fall be politics. Expert time player security."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.value.conditional"  
+        ]  
+    },  
+    "maxnotifyperiod": {  
+        "type": "Property",  
+        "value": 322  
+    },  
+    "minnotifyperiod": {  
+        "type": "Property",  
+        "value": 234  
+    },  
+    "threshold": {  
+        "type": "Property",  
+        "value": 391.8  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Significant skin spend yourself throughout garden. Even teacher party operation hit. Middle special pattern such drug."  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline",  
+            "oic.if.rw"  
+        ]  
+    },  
+    "type": "valueconditional",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:valueconditional:items:YHRG:04597786"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -29.636661,  
-        -28.098623  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Republican save party possible radio position. Box town other keep evidence color. Move try face box fact program he.",  
-      "addressLocality": "Be low remain. State find kind leg officer.",  
-      "addressRegion": "Finish protect ever nearly mean. Citizen chair ok only player down. Message officer beat section cell spend fund.",  
-      "addressCountry": "Machine able kitchen chair time Congress. Military allow mind notice. Former spend tough.",  
-      "postalCode": "Safe present once have shake outside brother institution. Color page believe identify ten far. Unit husband large government.",  
-      "postOfficeBoxNumber": "Reduce agent book participant. Argue example allow story million two worry. Sport similar performance computer apply front anything. Skin civil close so."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Democratic spend accept fall be politics. Expert time player security."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.value.conditional"  
-    ]  
-  },  
-  "maxnotifyperiod": {  
-    "type": "Property",  
-    "value": 322  
-  },  
-  "minnotifyperiod": {  
-    "type": "Property",  
-    "value": 234  
-  },  
-  "threshold": {  
-    "type": "Property",  
-    "value": 391.8  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Significant skin spend yourself throughout garden. Even teacher party operation hit. Middle special pattern such drug."  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.baseline",  
-      "oic.if.rw"  
-    ]  
-  },  
-  "type": "valueconditional",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
