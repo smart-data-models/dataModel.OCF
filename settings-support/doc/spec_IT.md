@@ -1,17 +1,32 @@
-Entità: settings-support  
-========================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entità: impostazioni-supporto  
+=============================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.OCF/blob/master/settings-support/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Adattamento del programma Smart Data Models dell'originale IoTData data Models. Ottiene le attuali impostazioni di supporto del dispositivo.**  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **Adattamento del programma Smart Data Models dei modelli di dati IoTData originali. Ottiene le impostazioni di supporto del dispositivo corrente.**  
+versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `id`: Identificatore unico dell'entità  - `if`:   - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: Il nome di questo articolo.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `remote-management`: Consente l'accesso remoto del supporto in modo che il supporto possa controllare le impostazioni dell'utente e risolvere i problemi.  - `rt`: Il tipo di risorsa delle impostazioni del dispositivo per il supporto  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `software-auto-update`: Software - Aggiornamento automatico.  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `type`: Tipo di entità NGSI. Deve essere settings-support    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `if[array]`: Nell'originale non è disponibile alcuna descrizione  - `location[*]`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `remote-management[boolean]`: Consente l'accesso remoto al supporto per controllare le impostazioni dell'utente e risolvere i problemi.  - `rt[array]`: Il tipo di risorsa Impostazioni del dispositivo per il supporto  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `software-auto-update[boolean]`: Software - Aggiornamento automatico.  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `type[string]`: Tipo di entità NGSI. Deve essere settings-support  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- `id`  - `type`    
-Questo modello di dati proviene dall'originale [Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels). È stato esteso per soddisfare i requisiti di NGSI.  
-## Descrizione del modello di dati delle proprietà  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+Questo modello di dati proviene dal repository originale della [Open Connectivity Foundation] (https://github.com/openconnectivityfoundation/IoTDataModels). È stato esteso per soddisfare i requisiti NGSI.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 settings-support:    
@@ -89,6 +104,7 @@ settings-support:
       x-ngsi:    
         type: Property    
     if:    
+      description: 'No description is available in the original'    
       items:    
         enum:    
           - oic.if.rw    
@@ -98,6 +114,8 @@ settings-support:
       readOnly: true    
       type: array    
       uniqueItems: true    
+      x-ngsi:    
+        type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -322,9 +340,14 @@ settings-support:
   x-version: 0.0.1    
 ```  
 </details>    
-## Esempio di payloads  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
 #### settings-support NGSI-v2 key-values Esempio  
-Ecco un esempio di un supporto per le impostazioni in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di supporto alle impostazioni in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:settings-support:id:DCXL:35135214",  
@@ -361,8 +384,10 @@ settings-support:
   "areaServed": "Remain issue law be authority animal morning. Value eye water court hundred."  
 }  
 ```  
-#### impostazioni-supporto NGSI-v2 normalizzato Esempio  
-Ecco un esempio di un supporto per le impostazioni in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### settings-support NGSI-v2 normalizzato Esempio  
+Ecco un esempio di supporto alle impostazioni in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non utilizza le opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -440,127 +465,141 @@ settings-support:
   }  
 }  
 ```  
+</details>  
 #### settings-support NGSI-LD key-values Esempio  
-Ecco un esempio di un supporto per le impostazioni in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di supporto alle impostazioni in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:settings-support:id:DCXL:35135214",  
-  "dateCreated": "1970-08-28T07:17:42Z",  
-  "dateModified": "1985-03-07T20:36:42Z",  
-  "source": "But tend across trade grow whose social. Turn also these fast. Responsibility back speech effect study value artist.",  
-  "name": "You available foreign note conference plant. Collection run never.",  
-  "alternateName": "Two happy technology among part. Feel official effect wonder idea weight. Strategy tree every soldier within.",  
-  "description": "Defense food thousand that Republican call. Order morning relate issue until listen one.",  
-  "dataProvider": "Safe from nothing career understand. Worker exactly nature not parent leave effect.",  
-  "owner": [  
-    "urn:ngsi-ld:settings-support:items:GPDL:92961545",  
-    "urn:ngsi-ld:settings-support:items:DVHR:85360112"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:settings-support:items:ITCV:18611678",  
-    "urn:ngsi-ld:settings-support:items:JJUH:55370163"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -39.545254,  
-      -58.72669  
+    "id": "urn:ngsi-ld:settings-support:id:DCXL:35135214",  
+    "dateCreated": "1970-08-28T07:17:42Z",  
+    "dateModified": "1985-03-07T20:36:42Z",  
+    "source": "But tend across trade grow whose social. Turn also these fast. Responsibility back speech effect study value artist.",  
+    "name": "You available foreign note conference plant. Collection run never.",  
+    "alternateName": "Two happy technology among part. Feel official effect wonder idea weight. Strategy tree every soldier within.",  
+    "description": "Defense food thousand that Republican call. Order morning relate issue until listen one.",  
+    "dataProvider": "Safe from nothing career understand. Worker exactly nature not parent leave effect.",  
+    "owner": [  
+        "urn:ngsi-ld:settings-support:items:GPDL:92961545",  
+        "urn:ngsi-ld:settings-support:items:DVHR:85360112"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:settings-support:items:ITCV:18611678",  
+        "urn:ngsi-ld:settings-support:items:JJUH:55370163"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -39.545254,  
+            -58.72669  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Cold be week boy draw.",  
+        "addressLocality": "Cause citizen think matter a call. Sport part seven however trouble focus hold.",  
+        "addressRegion": "Next government interview feeling newspaper family response usually. Become carry buy control everyone administration.",  
+        "addressCountry": "Power gas consumer study.",  
+        "postalCode": "Different Mrs decide history body early suggest. Cell serve probably focus everybody laugh travel determine. Out over low first either four.",  
+        "postOfficeBoxNumber": "Camera suddenly appear cut next mean. Hold short country message."  
+    },  
+    "areaServed": "Remain issue law be authority animal morning. Value eye water court hundred.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Cold be week boy draw.",  
-    "addressLocality": "Cause citizen think matter a call. Sport part seven however trouble focus hold.",  
-    "addressRegion": "Next government interview feeling newspaper family response usually. Become carry buy control everyone administration.",  
-    "addressCountry": "Power gas consumer study.",  
-    "postalCode": "Different Mrs decide history body early suggest. Cell serve probably focus everybody laugh travel determine. Out over low first either four.",  
-    "postOfficeBoxNumber": "Camera suddenly appear cut next mean. Hold short country message."  
-  },  
-  "areaServed": "Remain issue law be authority animal morning. Value eye water court hundred.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-#### impostazioni-supporto NGSI-LD normalizzato Esempio  
-Ecco un esempio di un supporto per le impostazioni in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### settings-support NGSI-LD normalizzato Esempio  
+Ecco un esempio di supporto alle impostazioni in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si usano le opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:settings-support:id:QVJM:58518858",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1996-07-26T05:54:21Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2003-05-11T10:13:08Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "System fill will clear market base. Role listen interest up. Together seven answer draw wear boy."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Around painting leg control boy. Model through natural loss country message. Wall rather purpose statement."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "She control argue worker road morning. Few stuff offer message believe Democrat."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Have history person wonder particularly according."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Agreement upon traditional bill couple. Tell mean expect."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:settings-support:items:FLOW:79198536",  
-      "urn:ngsi-ld:settings-support:items:STKW:49670786"  
+    "id": "urn:ngsi-ld:settings-support:id:QVJM:58518858",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1996-07-26T05:54:21Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2003-05-11T10:13:08Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "System fill will clear market base. Role listen interest up. Together seven answer draw wear boy."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Around painting leg control boy. Model through natural loss country message. Wall rather purpose statement."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "She control argue worker road morning. Few stuff offer message believe Democrat."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Have history person wonder particularly according."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Agreement upon traditional bill couple. Tell mean expect."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:settings-support:items:FLOW:79198536",  
+            "urn:ngsi-ld:settings-support:items:STKW:49670786"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:settings-support:items:LZCL:52072895"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                15.8114245,  
+                25.157261  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Television those hope TV material single north. Yeah although ability his defense apply.",  
+            "addressLocality": "Republican however resource professor. Well ever claim no star even.",  
+            "addressRegion": "Trial end between worry carry training trouble.",  
+            "addressCountry": "Grow relationship natural among when. Career answer record data key read table. See during million on.",  
+            "postalCode": "Black computer away into design beyond. Specific hand car. Chair case similar.",  
+            "postOfficeBoxNumber": "Notice similar begin maybe growth. Drop health last picture. Citizen affect many."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Say box want focus whom. Fear still hold scientist."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:settings-support:items:LZCL:52072895"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        15.8114245,  
-        25.157261  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Television those hope TV material single north. Yeah although ability his defense apply.",  
-      "addressLocality": "Republican however resource professor. Well ever claim no star even.",  
-      "addressRegion": "Trial end between worry carry training trouble.",  
-      "addressCountry": "Grow relationship natural among when. Career answer record data key read table. See during million on.",  
-      "postalCode": "Black computer away into design beyond. Specific hand car. Chair case similar.",  
-      "postOfficeBoxNumber": "Notice similar begin maybe growth. Drop health last picture. Citizen affect many."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Say box want focus whom. Fear still hold scientist."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
