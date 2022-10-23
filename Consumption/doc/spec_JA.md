@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 エンティティ消費  
-========  
+========<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/Consumption/LICENSE.md)  
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 グローバルな記述です。**この資源は、天然ガスの消費に伴うエネルギーに関連する特性について記述している。  
 バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `gas`: ガスエネルギー消費量（kWh  - `id`: エンティティの一意な識別子  - `if`: このリソースがサポートする OCF インターフェース。  - `location`: アイテムへのGeojsonリファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `n`: リソースのフレンドリ名  - `name`: このアイテムの名称です。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `precision`: 露出値の精度粒度  - `rt`: リソースの種類  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで指定する文字の列。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSIエンティティタイプ。消費者でなければならない  - `volume`: 消費ガス量（m3）（立方メートル    
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `gas[number]`: ガスエネルギー消費量（kWh  - `id[*]`: エンティティの一意な識別子  - `if[array]`: このリソースがサポートする OCF インターフェース。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `n[string]`: リソースのフレンドリ名  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `precision[number]`: 露出値の精度粒度  - `rt[array]`: リソースの種類  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSIエンティティタイプ。消費者でなければならない  - `volume[number]`: 消費ガス量（m3）（立方メートル  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 必要なプロパティ  
-- `gas`  - `id`  - `type`    
+- `gas`  - `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 データモデルは、Open Connectivity Foundationが作成したオリジナルを引用しています。https://github.com/openconnectivityfoundation/IoTDataModels のオリジナルリポジトリ  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
 アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Consumption:    
@@ -346,9 +359,14 @@ Consumption:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
 #### 消費NGSI-v2キー値例  
-ここでは、ConsumptionをJSON-LD形式でkey-valueとして記述した例を示す。これは `options=keyValues` を使用した場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータを返します。  
+ここでは、ConsumptionをJSON-LD形式でkey-valuesとした例を示す。これは `options=keyValues` を使用した場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Consumption:id:MBLZ:89037969",  
@@ -407,8 +425,10 @@ Consumption:
   "type": "Consumption"  
 }  
 ```  
+</details>  
 #### 消費NGSI-v2 正規化例  
-以下は、ConsumptionをJSON-LD形式で正規化した例である。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、Consumption を JSON-LD 形式で正規化した例である。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -529,178 +549,192 @@ Consumption:
   }  
 }  
 ```  
+</details>  
 #### 消費NGSI-LDキー値例  
-ここでは、ConsumptionをJSON-LD形式でkey-valueとして記述した例を示す。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを返します。  
+ここでは、ConsumptionをJSON-LD形式でkey-valuesとした例を示す。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Consumption:id:MBLZ:89037969",  
-  "dateCreated": "1994-06-10T09:16:21Z",  
-  "dateModified": "1989-03-09T16:35:40Z",  
-  "source": "About woman law fear water if lose serious. Point direction probably structure member.",  
-  "name": "Forward recognize health where sit. Clearly space down attack. Really dream star specific.",  
-  "alternateName": "Above ball glass give. Method alone mean particularly with. Off total nice heavy she pressure six pressure.",  
-  "description": "Pretty increase miss daughter fall base represent. Month consider quite black.",  
-  "dataProvider": "Party small finally girl.",  
-  "owner": [  
-    "urn:ngsi-ld:Consumption:items:CEYP:76446909",  
-    "urn:ngsi-ld:Consumption:items:ACRF:69587722"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Consumption:items:PJCD:36748962",  
-    "urn:ngsi-ld:Consumption:items:XIQR:39589952"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      12.537086,  
-      -64.777382  
+    "id": "urn:ngsi-ld:Consumption:id:MBLZ:89037969",  
+    "dateCreated": "1994-06-10T09:16:21Z",  
+    "dateModified": "1989-03-09T16:35:40Z",  
+    "source": "About woman law fear water if lose serious. Point direction probably structure member.",  
+    "name": "Forward recognize health where sit. Clearly space down attack. Really dream star specific.",  
+    "alternateName": "Above ball glass give. Method alone mean particularly with. Off total nice heavy she pressure six pressure.",  
+    "description": "Pretty increase miss daughter fall base represent. Month consider quite black.",  
+    "dataProvider": "Party small finally girl.",  
+    "owner": [  
+        "urn:ngsi-ld:Consumption:items:CEYP:76446909",  
+        "urn:ngsi-ld:Consumption:items:ACRF:69587722"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Consumption:items:PJCD:36748962",  
+        "urn:ngsi-ld:Consumption:items:XIQR:39589952"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            12.537086,  
+            -64.777382  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "South now run girl whatever onto run. Father somebody production far away. Education tell member anything word amount truth. Environmental land join PM since plan school.",  
+        "addressLocality": "Best increase hand above able test case explain. Record teach song. Western beautiful stuff dark.",  
+        "addressRegion": "Small past second southern. Brother reveal Mr southern animal recently. Action activity manage try hundred truth really.",  
+        "addressCountry": "Ask tend exist might tough trade between. One indeed of high one. Senior minute set only building southern outside. How threat sure share per do visit space.",  
+        "postalCode": "Three college industry character.",  
+        "postOfficeBoxNumber": "Not environmental expect former. Close through both because full specific. Mrs truth kind west science responsibility area enjoy."  
+    },  
+    "areaServed": "Staff up research read degree maybe body television. Finally drug Mr high. Traditional issue people south.",  
+    "rt": [  
+        "oic.r.gas.consumption",  
+        "oic.r.gas.consumption"  
+    ],  
+    "if": [  
+        "oic.if.r",  
+        "oic.if.r"  
+    ],  
+    "n": "Walk past none truth sound small. Feel house road she against. Street interesting daughter be chair image. Still religious sit.",  
+    "gas": {  
+        "type": "Property",  
+        "value": 696.9  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 321.2  
+    },  
+    "volume": {  
+        "type": "Property",  
+        "value": 991.4  
+    },  
+    "type": "Consumption",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "South now run girl whatever onto run. Father somebody production far away. Education tell member anything word amount truth. Environmental land join PM since plan school.",  
-    "addressLocality": "Best increase hand above able test case explain. Record teach song. Western beautiful stuff dark.",  
-    "addressRegion": "Small past second southern. Brother reveal Mr southern animal recently. Action activity manage try hundred truth really.",  
-    "addressCountry": "Ask tend exist might tough trade between. One indeed of high one. Senior minute set only building southern outside. How threat sure share per do visit space.",  
-    "postalCode": "Three college industry character.",  
-    "postOfficeBoxNumber": "Not environmental expect former. Close through both because full specific. Mrs truth kind west science responsibility area enjoy."  
-  },  
-  "areaServed": "Staff up research read degree maybe body television. Finally drug Mr high. Traditional issue people south.",  
-  "rt": [  
-    "oic.r.gas.consumption",  
-    "oic.r.gas.consumption"  
-  ],  
-  "if": [  
-    "oic.if.r",  
-    "oic.if.r"  
-  ],  
-  "n": "Walk past none truth sound small. Feel house road she against. Street interesting daughter be chair image. Still religious sit.",  
-  "gas": {  
-    "type": "Property",  
-    "value": 696.9  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 321.2  
-  },  
-  "volume": {  
-    "type": "Property",  
-    "value": 991.4  
-  },  
-  "type": "Consumption",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### 消費量 NGSI-LD 正規化例  
-以下は、ConsumptionをJSON-LD形式で正規化した例である。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、Consumption を JSON-LD 形式で正規化した例である。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Consumption:id:RWEB:24364675",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1989-07-06T18:37:14Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1994-11-08T02:45:06Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Son worry animal. Foot service including any manage policy."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Green decade man. Stuff different too security analysis."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Hundred how live approach. More impact deep agree. Major system represent indeed."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Push country they simply management will. Must pressure quite remain."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Model participant position music three agency yes medical. Thought analysis space sort eight budget. Computer while less sea listen project."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Consumption:items:SUTR:00014807",  
-      "urn:ngsi-ld:Consumption:items:SIDL:46053291"  
+    "id": "urn:ngsi-ld:Consumption:id:RWEB:24364675",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1989-07-06T18:37:14Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1994-11-08T02:45:06Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Son worry animal. Foot service including any manage policy."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Green decade man. Stuff different too security analysis."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Hundred how live approach. More impact deep agree. Major system represent indeed."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Push country they simply management will. Must pressure quite remain."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Model participant position music three agency yes medical. Thought analysis space sort eight budget. Computer while less sea listen project."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Consumption:items:SUTR:00014807",  
+            "urn:ngsi-ld:Consumption:items:SIDL:46053291"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Consumption:items:WHLG:61639670"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -41.379881,  
+                -97.456012  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Visit economic size. Raise sign statement.",  
+            "addressLocality": "Bar safe production suddenly be. Their former say from recently fact.",  
+            "addressRegion": "Give tell everything political admit world fear. Teacher under area feel reveal.",  
+            "addressCountry": "Bed dream fast three. Particularly onto enough painting.",  
+            "postalCode": "Create nothing major sometimes international work. Management Congress building meet. Teacher minute particular should.",  
+            "postOfficeBoxNumber": "Improve report forget or. Congress interview peace nature player. Should TV yard my increase music."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Upon century information event act. Two suggest this health just fly."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.gas.consumption"  
+        ]  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Key there sea. Difficult wonder moment paper suggest huge. Fear population major stage."  
+    },  
+    "gas": {  
+        "type": "Property",  
+        "value": 217.2  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 963.4  
+    },  
+    "volume": {  
+        "type": "Property",  
+        "value": 213.0  
+    },  
+    "type": "Consumption",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Consumption:items:WHLG:61639670"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -41.379881,  
-        -97.456012  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Visit economic size. Raise sign statement.",  
-      "addressLocality": "Bar safe production suddenly be. Their former say from recently fact.",  
-      "addressRegion": "Give tell everything political admit world fear. Teacher under area feel reveal.",  
-      "addressCountry": "Bed dream fast three. Particularly onto enough painting.",  
-      "postalCode": "Create nothing major sometimes international work. Management Congress building meet. Teacher minute particular should.",  
-      "postOfficeBoxNumber": "Improve report forget or. Congress interview peace nature player. Should TV yard my increase music."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Upon century information event act. Two suggest this health just fly."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.gas.consumption"  
-    ]  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Key there sea. Difficult wonder moment paper suggest huge. Fear population major stage."  
-  },  
-  "gas": {  
-    "type": "Property",  
-    "value": 217.2  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 963.4  
-  },  
-  "volume": {  
-    "type": "Property",  
-    "value": 213.0  
-  },  
-  "type": "Consumption",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
