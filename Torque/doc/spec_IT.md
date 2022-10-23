@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entità: Coppia  
-==============  
+==============<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.OCF/blob/master/Torque/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Questa risorsa descrive la coppia, che è l'equivalente rotazionale della forza lineare. L'unità, che è l'unità SI predefinita, è N*m (Newton metro). La proprietà torque è un valore di sola lettura fornito dal server. Quando l'intervallo (da 'oic.r.baseresource') è omesso il valore predefinito è da 0 a +MAXFLOAT.**  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **Questa risorsa descrive la coppia, che è l'equivalente rotazionale della forza lineare. L'unità, che è l'unità SI predefinita, è N*m (Newton metro). La proprietà torque è un valore di sola lettura fornito dal server. Quando l'intervallo (da 'oic.r.baseresource') è omesso, l'impostazione predefinita è da 0 a +MAXFLOAT.**  
 versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `id`: Identificatore unico dell'entità  - `if`: L'insieme di interfacce OCF supportato da questa risorsa.  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n`: Nome amichevole della risorsa  - `name`: Il nome di questo articolo.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `range`: L'intervallo valido per la proprietà nella risorsa come numero. Il primo valore nell'array è il valore minimo, il secondo valore nell'array è il valore massimo.  - `rt`: Il tipo di risorsa.  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `step`: Valore di passo attraverso l'intervallo definito un intero quando l'intervallo è un numero.  Questo è l'incremento per i valori validi attraverso l'intervallo; così se l'intervallo è 0.0..10.0 e il passo è 2.5 allora i valori validi sono 0.0,2.5,5.0,7.5,10.0.  - `torque`: Questa Risorsa descrive la coppia, che è l'equivalente rotazionale della forza lineare, in N*m (Newton metro).  - `type`: Tipo di entità NGSI. Deve essere Torque    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `if[array]`: Il set di interfacce OCF supportato da questa risorsa.  - `location[*]`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `n[string]`: Nome amichevole della risorsa  - `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `range[array]`: L'intervallo valido per la proprietà nella risorsa come numero. Il primo valore della matrice è il valore minimo, il secondo valore della matrice è il valore massimo.  - `rt[array]`: Il tipo di risorsa.  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `step[number]`: Valore del passo nell'intervallo definito, un numero intero quando l'intervallo è un numero.  Si tratta dell'incremento per i valori validi in tutto l'intervallo; quindi se l'intervallo è 0.0..10.0 e il passo è 2.5, i valori validi sono 0.0,2.5,5.0,7.5,10.0.  - `torque[number]`: Questa risorsa descrive la coppia, che è l'equivalente rotazionale della forza lineare, in N*m (Newton metro).  - `type[string]`: Tipo di entità NGSI. Deve essere Torque  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- `id`  - `torque`  - `type`    
+- `id`  - `torque`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Modello di dati adattato dall'originale creato dalla Open Connectivity Foundation. Repository originale in https://github.com/openconnectivityfoundation/IoTDataModels  
-## Descrizione del modello di dati delle proprietà  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Torque:    
@@ -348,9 +361,14 @@ Torque:
   x-version: 0.0.1    
 ```  
 </details>    
-## Esempio di payloads  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
 #### Torque NGSI-v2 valori chiave Esempio  
-Ecco un esempio di un Torque in formato JSON-LD come key-values. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di Torque in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Torque:id:AHRY:39993102",  
@@ -409,8 +427,10 @@ Torque:
   "type": "Torque"  
 }  
 ```  
+</details>  
 #### Coppia NGSI-v2 normalizzata Esempio  
-Ecco un esempio di un Torque in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di Torque in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si usano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -531,181 +551,195 @@ Torque:
   }  
 }  
 ```  
-#### Coppia valori chiave NGSI-LD Esempio  
-Ecco un esempio di un Torque in formato JSON-LD come key-values. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### Valori chiave NGSI-LD di coppia Esempio  
+Ecco un esempio di Torque in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Torque:id:AHRY:39993102",  
-  "dateCreated": "2020-07-30T12:21:20Z",  
-  "dateModified": "2000-07-15T22:05:12Z",  
-  "source": "Kind democratic example. Safe determine early activity. Response rule cultural student himself administration reality.",  
-  "name": "Country but scientist heart structure easy. Chance past life laugh.",  
-  "alternateName": "Network serve east moment can. Grow democratic party. Church hour response dream.",  
-  "description": "Dog food country blood mean analysis. Practice here gun knowledge remain. Various information day management trip mouth keep might.",  
-  "dataProvider": "Blue inside serve culture modern. Identify analysis cover probably leave. Probably senior teach couple.",  
-  "owner": [  
-    "urn:ngsi-ld:Torque:items:XCPF:15637893",  
-    "urn:ngsi-ld:Torque:items:BIEE:45180365"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Torque:items:CLYF:27135589",  
-    "urn:ngsi-ld:Torque:items:LUCC:27975542"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      9.9461635,  
-      53.930522  
+    "id": "urn:ngsi-ld:Torque:id:AHRY:39993102",  
+    "dateCreated": "2020-07-30T12:21:20Z",  
+    "dateModified": "2000-07-15T22:05:12Z",  
+    "source": "Kind democratic example. Safe determine early activity. Response rule cultural student himself administration reality.",  
+    "name": "Country but scientist heart structure easy. Chance past life laugh.",  
+    "alternateName": "Network serve east moment can. Grow democratic party. Church hour response dream.",  
+    "description": "Dog food country blood mean analysis. Practice here gun knowledge remain. Various information day management trip mouth keep might.",  
+    "dataProvider": "Blue inside serve culture modern. Identify analysis cover probably leave. Probably senior teach couple.",  
+    "owner": [  
+        "urn:ngsi-ld:Torque:items:XCPF:15637893",  
+        "urn:ngsi-ld:Torque:items:BIEE:45180365"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Torque:items:CLYF:27135589",  
+        "urn:ngsi-ld:Torque:items:LUCC:27975542"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            9.9461635,  
+            53.930522  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Radio people bag control foot person for.",  
+        "addressLocality": "Forget somebody list bit ahead. Parent discuss color low accept.",  
+        "addressRegion": "Range team public note what explain. Life garden sound dark world course.",  
+        "addressCountry": "Blue hair compare issue believe you. Thousand everybody since day give student. Common break question. Policy let daughter challenge risk fast.",  
+        "postalCode": "Republican turn war development impact own message. Question despite concern five indeed.",  
+        "postOfficeBoxNumber": "With member knowledge newspaper east ahead none beautiful. Want choose physical create upon month. Hundred officer whom movement team within remember."  
+    },  
+    "areaServed": "Lot move peace water more pass. Whatever marriage outside third knowledge a sense. Have purpose majority court interview.",  
+    "torque": {  
+        "type": "Property",  
+        "value": 73.3  
+    },  
+    "rt": [  
+        "oic.r.torque",  
+        "oic.r.torque"  
+    ],  
+    "n": "Property blood turn fast center standard very. Sit serve never can once about challenge. Try list choice control.",  
+    "if": [  
+        "oic.if.s",  
+        "oic.if.s"  
+    ],  
+    "range": [  
+        29.2,  
+        164.7  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 742.9  
+    },  
+    "type": "Torque",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Radio people bag control foot person for.",  
-    "addressLocality": "Forget somebody list bit ahead. Parent discuss color low accept.",  
-    "addressRegion": "Range team public note what explain. Life garden sound dark world course.",  
-    "addressCountry": "Blue hair compare issue believe you. Thousand everybody since day give student. Common break question. Policy let daughter challenge risk fast.",  
-    "postalCode": "Republican turn war development impact own message. Question despite concern five indeed.",  
-    "postOfficeBoxNumber": "With member knowledge newspaper east ahead none beautiful. Want choose physical create upon month. Hundred officer whom movement team within remember."  
-  },  
-  "areaServed": "Lot move peace water more pass. Whatever marriage outside third knowledge a sense. Have purpose majority court interview.",  
-  "torque": {  
-    "type": "Property",  
-    "value": 73.3  
-  },  
-  "rt": [  
-    "oic.r.torque",  
-    "oic.r.torque"  
-  ],  
-  "n": "Property blood turn fast center standard very. Sit serve never can once about challenge. Try list choice control.",  
-  "if": [  
-    "oic.if.s",  
-    "oic.if.s"  
-  ],  
-  "range": [  
-    29.2,  
-    164.7  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 742.9  
-  },  
-  "type": "Torque",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### Coppia NGSI-LD normalizzata Esempio  
-Ecco un esempio di un Torque in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di Torque in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si usano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Torque:id:PWSP:64950507",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2012-06-02T09:48:18Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1984-10-18T01:58:07Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Direction man coach theory. Cover do name forward. Arrive level tell will hundred also."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "A page space according. Result coach study director. Specific receive fall they despite. This go air amount job."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Seem account already second back song. Move style process rock director. How since system."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Have which party sound every. Dream side ahead. Security traditional fine real school effort everyone."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Successful ago boy ask. Yet goal image structure south. Apply physical their assume middle owner."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Torque:items:SURM:54518655",  
-      "urn:ngsi-ld:Torque:items:RYYZ:32856448"  
+    "id": "urn:ngsi-ld:Torque:id:PWSP:64950507",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2012-06-02T09:48:18Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1984-10-18T01:58:07Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Direction man coach theory. Cover do name forward. Arrive level tell will hundred also."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "A page space according. Result coach study director. Specific receive fall they despite. This go air amount job."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Seem account already second back song. Move style process rock director. How since system."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Have which party sound every. Dream side ahead. Security traditional fine real school effort everyone."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Successful ago boy ask. Yet goal image structure south. Apply physical their assume middle owner."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Torque:items:SURM:54518655",  
+            "urn:ngsi-ld:Torque:items:RYYZ:32856448"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Torque:items:VIUT:41240428"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -84.7598125,  
+                67.696977  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Newspaper lot interesting speak class way. Also school police possible performance mind. Maintain traditional including decide dog.",  
+            "addressLocality": "General do subject lawyer interview sit. Our return who direction value poor. Bank international staff door although own cold.",  
+            "addressRegion": "Its letter mention modern give year. Fight happen up that woman wrong. First they behind office see conference gas.",  
+            "addressCountry": "Reduce know property event happy. Town peace tough woman national clearly fact. Fund its brother pay.",  
+            "postalCode": "Try drop final police challenge. Forget pattern hold leg option be however.",  
+            "postOfficeBoxNumber": "Similar low whole audience charge. Win air deep difference. Piece analysis create information eat far. Culture question group behavior age key."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "New report serve. Small star fly place bad."  
+    },  
+    "torque": {  
+        "type": "Property",  
+        "value": 881.5  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.torque"  
+        ]  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Military build often sound day election others. Animal card event woman doctor stay."  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            399.8,  
+            528.9  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 794.0  
+    },  
+    "type": "Torque",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Torque:items:VIUT:41240428"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -84.7598125,  
-        67.696977  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Newspaper lot interesting speak class way. Also school police possible performance mind. Maintain traditional including decide dog.",  
-      "addressLocality": "General do subject lawyer interview sit. Our return who direction value poor. Bank international staff door although own cold.",  
-      "addressRegion": "Its letter mention modern give year. Fight happen up that woman wrong. First they behind office see conference gas.",  
-      "addressCountry": "Reduce know property event happy. Town peace tough woman national clearly fact. Fund its brother pay.",  
-      "postalCode": "Try drop final police challenge. Forget pattern hold leg option be however.",  
-      "postOfficeBoxNumber": "Similar low whole audience charge. Win air deep difference. Piece analysis create information eat far. Culture question group behavior age key."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "New report serve. Small star fly place bad."  
-  },  
-  "torque": {  
-    "type": "Property",  
-    "value": 881.5  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.torque"  
-    ]  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Military build often sound day election others. Animal card event woman doctor stay."  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      399.8,  
-      528.9  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 794.0  
-  },  
-  "type": "Torque",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
