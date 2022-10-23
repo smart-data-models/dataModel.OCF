@@ -1,17 +1,32 @@
-Entità: WaterInfo  
-=================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entità: WaterInfo  
+=================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.OCF/blob/master/WaterInfo/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Adattamento del programma Smart Data Models dell'originale IoTData data Models. Questa risorsa descrive le informazioni sull'acqua per indicare il tipo di acqua attualmente fornita dal dispositivo. Il tipo di acqua può essere letto o impostato. La proprietà 'supportedwatertypes' è un array dei possibili tipi di acqua definiti dall'enumerazione ['cold', 'hot', 'ambient', 'ice']. La proprietà 'supportedadditivetypes' è un array dei possibili tipi di additivi per l'acqua. I tipi di additivi significano tipi opzionali che possono essere aggiunti al tipo specifico di acqua secondo le preferenze del cliente e sono definiti dall'enumerazione ['none', 'soda', 'mineral']. Se assente, il valore predefinito è 'none'.  La proprietà 'currentwatertype' è il tipo di acqua attualmente desiderato.  La proprietà 'currentadditivetypes' è il tipo o i tipi di additivi attualmente desiderati.  Per esempio, se 'cold' è selezionato con 'currentwatertype', 'soda' e 'mineral' o entrambi possono essere selezionati come 'currentadditivetypes'. Nota che se 'hot' è selezionato con 'currentwatertype', 'soda' e 'mineral' possono essere limitati per i 'currentadditivetypes'.**  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **Adattamento del programma Modelli di dati intelligenti dei modelli di dati IoTData originali. Questa risorsa descrive le informazioni sull'acqua per indicare il tipo di acqua attualmente fornita dal dispositivo. Il tipo di acqua può essere letto o impostato. La proprietà 'supportedwatertypes' è un array dei possibili tipi di acqua definiti dall'enumerazione ['cold', 'hot', 'ambient', 'ice']. La proprietà 'supportedadditivetypes' è una matrice dei possibili tipi di additivi per l'acqua. I tipi di additivi sono tipi opzionali che possono essere aggiunti al tipo specifico di acqua in base alle preferenze del cliente e sono definiti dall'enumerazione ['none', 'soda', 'mineral']. Se assente, il valore predefinito è 'none'.  La proprietà "currentwatertype" è il tipo di acqua attualmente desiderato.  La proprietà 'currentadditivetypes' è il tipo di additivo attualmente desiderato.  Ad esempio, se con 'currentwatertype' si seleziona 'cold', 'soda' e 'mineral' o entrambi possono essere selezionati come 'currentadditivetypes'. Si noti che se si seleziona "caldo" con il "tipo di acqua corrente", "soda" e "minerale" possono essere limitati per i "tipi di additivi correnti "**.  
+versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `currentadditivetypes`: Il tipo o i tipi di additivi attualmente desiderati secondo le preferenze del cliente.  - `currentwatertype`:  Il tipo di acqua attualmente desiderato.  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `id`: Identificatore unico dell'entità  - `if`: L'insieme di interfacce OCF supportato da questa risorsa.  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n`: Nome amichevole della risorsa  - `name`: Il nome di questo articolo.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `rt`: Il tipo di risorsa.  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `supportedadditivetypes`: L'array dei possibili tipi di additivi.  - `supportedwatertypes`: L'array dei possibili tipi di acqua.  - `type`: Tipo di entità NGSI. Deve essere WaterInfo    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `currentadditivetypes[array]`: Il tipo o i tipi di additivi attualmente desiderati in base alle preferenze del Cliente.  - `currentwatertype[string]`:  Il tipo di acqua attualmente desiderato.  - `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `if[array]`: Il set di interfacce OCF supportato da questa risorsa.  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `n[string]`: Nome amichevole della risorsa  - `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `rt[array]`: Il tipo di risorsa.  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `supportedadditivetypes[array]`: L'array dei possibili tipi di additivi.  - `supportedwatertypes[array]`: L'array dei possibili tipi di acqua.  - `type[string]`: Tipo di entità NGSI. Deve essere WaterInfo  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- `id`  - `type`    
-Questo modello di dati proviene dall'originale [Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels). È stato esteso per soddisfare i requisiti di NGSI.  
-## Descrizione del modello di dati delle proprietà  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+Questo modello di dati proviene dal repository originale della [Open Connectivity Foundation] (https://github.com/openconnectivityfoundation/IoTDataModels). È stato esteso per soddisfare i requisiti NGSI.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 WaterInfo:    
@@ -352,9 +367,14 @@ WaterInfo:
   x-version: 0.0.1    
 ```  
 </details>    
-## Esempio di payloads  
-#### WaterInfo NGSI-v2 valori chiave Esempio  
-Ecco un esempio di un WaterInfo in formato JSON-LD come key-values. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
+#### WaterInfo NGSI-v2 valori-chiave Esempio  
+Ecco un esempio di WaterInfo in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:WaterInfo:id:BWUP:35826914",  
@@ -391,8 +411,10 @@ WaterInfo:
   "areaServed": "Future then expect everybody team garden spend. End compare significant discover notice including Democrat."  
 }  
 ```  
+</details>  
 #### WaterInfo NGSI-v2 normalizzato Esempio  
-Ecco un esempio di un WaterInfo in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di WaterInfo in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -470,127 +492,141 @@ WaterInfo:
   }  
 }  
 ```  
-#### WaterInfo NGSI-LD valori chiave Esempio  
-Ecco un esempio di un WaterInfo in formato JSON-LD come key-values. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### Valori chiave di WaterInfo NGSI-LD Esempio  
+Ecco un esempio di WaterInfo in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:WaterInfo:id:BWUP:35826914",  
-  "dateCreated": "1984-11-27T20:49:31Z",  
-  "dateModified": "2004-06-02T09:44:44Z",  
-  "source": "Along those purpose ok painting television fill. Worker wish race music trial about.",  
-  "name": "Enough thank teacher boy garden law both. Put modern customer short.",  
-  "alternateName": "Realize above attention present participant. Billion those candidate TV raise low course. Early science kid down.",  
-  "description": "According carry half. Civil meet option place pass perhaps. Mother might you age represent.",  
-  "dataProvider": "Financial live local view single.",  
-  "owner": [  
-    "urn:ngsi-ld:WaterInfo:items:JMPQ:05255850",  
-    "urn:ngsi-ld:WaterInfo:items:QJSR:25392303"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:WaterInfo:items:NTHC:63052587",  
-    "urn:ngsi-ld:WaterInfo:items:GRFX:83012714"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -80.746038,  
-      66.99956  
+    "id": "urn:ngsi-ld:WaterInfo:id:BWUP:35826914",  
+    "dateCreated": "1984-11-27T20:49:31Z",  
+    "dateModified": "2004-06-02T09:44:44Z",  
+    "source": "Along those purpose ok painting television fill. Worker wish race music trial about.",  
+    "name": "Enough thank teacher boy garden law both. Put modern customer short.",  
+    "alternateName": "Realize above attention present participant. Billion those candidate TV raise low course. Early science kid down.",  
+    "description": "According carry half. Civil meet option place pass perhaps. Mother might you age represent.",  
+    "dataProvider": "Financial live local view single.",  
+    "owner": [  
+        "urn:ngsi-ld:WaterInfo:items:JMPQ:05255850",  
+        "urn:ngsi-ld:WaterInfo:items:QJSR:25392303"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:WaterInfo:items:NTHC:63052587",  
+        "urn:ngsi-ld:WaterInfo:items:GRFX:83012714"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -80.746038,  
+            66.99956  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Area suddenly front game describe south. Store loss debate surface finish stand occur food.",  
+        "addressLocality": "Kitchen accept both of natural. Maintain traditional laugh plant on mind require contain. Wife group guy challenge.",  
+        "addressRegion": "Feel approach lead operation way single instead despite. Mean model social white near citizen firm.",  
+        "addressCountry": "Heart describe forward generation maintain. Last term shake card issue.",  
+        "postalCode": "Radio expect them usually decision none to. Tough certain tough while.",  
+        "postOfficeBoxNumber": "Analysis leg program. Country computer plan reveal available article may. Now gun third knowledge record single."  
+    },  
+    "areaServed": "Future then expect everybody team garden spend. End compare significant discover notice including Democrat.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Area suddenly front game describe south. Store loss debate surface finish stand occur food.",  
-    "addressLocality": "Kitchen accept both of natural. Maintain traditional laugh plant on mind require contain. Wife group guy challenge.",  
-    "addressRegion": "Feel approach lead operation way single instead despite. Mean model social white near citizen firm.",  
-    "addressCountry": "Heart describe forward generation maintain. Last term shake card issue.",  
-    "postalCode": "Radio expect them usually decision none to. Tough certain tough while.",  
-    "postOfficeBoxNumber": "Analysis leg program. Country computer plan reveal available article may. Now gun third knowledge record single."  
-  },  
-  "areaServed": "Future then expect everybody team garden spend. End compare significant discover notice including Democrat.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### WaterInfo NGSI-LD normalizzato Esempio  
-Ecco un esempio di un WaterInfo in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di WaterInfo in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:WaterInfo:id:YOCI:60285099",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1998-08-15T18:04:30Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1988-08-23T07:30:17Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Ask use then represent society toward behind. Report amount from determine movement. Anyone leg market long price."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Make from radio. Dream agency trouble garden up."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Heart daughter modern through democratic perform time. New picture true."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Of board while gas surface hundred. Goal fund note responsibility media yes. American tell sometimes stop series."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Ever election point beat speak."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:WaterInfo:items:HBMT:72566566",  
-      "urn:ngsi-ld:WaterInfo:items:TPIP:75041044"  
+    "id": "urn:ngsi-ld:WaterInfo:id:YOCI:60285099",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1998-08-15T18:04:30Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1988-08-23T07:30:17Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Ask use then represent society toward behind. Report amount from determine movement. Anyone leg market long price."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Make from radio. Dream agency trouble garden up."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Heart daughter modern through democratic perform time. New picture true."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Of board while gas surface hundred. Goal fund note responsibility media yes. American tell sometimes stop series."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Ever election point beat speak."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:WaterInfo:items:HBMT:72566566",  
+            "urn:ngsi-ld:WaterInfo:items:TPIP:75041044"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:WaterInfo:items:ICKZ:40105092"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                17.8641435,  
+                -30.215867  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "At still black. Everyone often chance. Away notice year inside room ago.",  
+            "addressLocality": "Third fill play. Resource pull skin take school religious side. Effort close analysis best interest group. Pull available feeling learn wear statement.",  
+            "addressRegion": "Rise doctor window me bed short. Art represent begin run letter.",  
+            "addressCountry": "Law price police machine size. Thing firm would memory.",  
+            "postalCode": "Suggest ahead light from among magazine.",  
+            "postOfficeBoxNumber": "Everyone eight until compare four. Charge evening environment far successful kitchen history. Happy response PM seven."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Bar everybody surface appear within bit exactly."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:WaterInfo:items:ICKZ:40105092"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        17.8641435,  
-        -30.215867  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "At still black. Everyone often chance. Away notice year inside room ago.",  
-      "addressLocality": "Third fill play. Resource pull skin take school religious side. Effort close analysis best interest group. Pull available feeling learn wear statement.",  
-      "addressRegion": "Rise doctor window me bed short. Art represent begin run letter.",  
-      "addressCountry": "Law price police machine size. Thing firm would memory.",  
-      "postalCode": "Suggest ahead light from among magazine.",  
-      "postOfficeBoxNumber": "Everyone eight until compare four. Charge evening environment far successful kitchen history. Happy response PM seven."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Bar everybody surface appear within bit exactly."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
