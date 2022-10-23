@@ -1,17 +1,32 @@
-エンティティUserInfo-retrieve  
-=======================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティユーザー情報検索  
+==============<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/UserInfo-retrieve/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな説明です。**スマートデータモデル オリジナルのIoTDataデータモデルを適応させたプログラムです。このリソースは、ユーザーからアプリケーション層へのログインのための認証情報を定義します。これはOCFのDevice to DeviceやDevice to Cloudの認証とは関係ありません。ユーザー名、パスワード、トークンは文字列です。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**IoTData データモデルをスマートデータモデルプログラムに適応させたものです。このリソースは、ユーザーからアプリケーション層へのログインのためのクレデンシャルを定義する。これは、OCF Device to Device または Device to Cloud 認証には関係しない。ユーザー名、パスワード、トークンは文字列である**。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `if`: このResourceがサポートしているOCF Interface set。  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `n`: リソースのフレンドリーネーム  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `rt`: The Resource Type。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSIエンティティタイプ。UserInfo-retrieveでなければなりません。    
-必須項目  
-- `id`  - `type`    
-このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)から来ています。NGSIの要件に適合するように拡張されています。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `if[array]`: このResourceがサポートするOCF Interfaceセット。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `n[string]`: リソースのフレンドリ名  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `rt[array]`: リソースタイプです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSIエンティティタイプ。UserInfo-retrieveでなければならない。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)に由来しています。NGSIの要件に適合するように拡張されている。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 UserInfo-retrieve:    
@@ -323,9 +338,14 @@ UserInfo-retrieve:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### UserInfo-retrieve NGSI-v2 key-values の例。  
-JSON-LD形式でkey-valuesとしてUserInfo-retrieveを行う例を示します。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### UserInfo-retrieve NGSI-v2 key-value の例。  
+以下は、UserInfo-retrieveをJSON-LD形式でkey-valuesとして取得する例である。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:UserInfo-retrieve:id:IHKI:27253319",  
@@ -362,8 +382,10 @@ UserInfo-retrieve:
   "areaServed": "Person then their deal former. Add one major himself anything voice person."  
 }  
 ```  
-#### UserInfo-retrieve NGSI-v2の正規化された例。  
-ここでは、正規化されたJSON-LD形式のUserInfo-retrieveの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### UserInfo-retrieve NGSI-v2 正規化例  
+以下は、JSON-LD形式を正規化したUserInfo-retrieveの例である。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -441,127 +463,141 @@ UserInfo-retrieve:
   }  
 }  
 ```  
-#### UserInfo-retrieve NGSI-LD key-values の例。  
-ここでは、UserInfo-retrieveをkey-valuesとしてJSON-LD形式で表現した例を示します。これは、`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### UserInfo-retrieve NGSI-LD key-value Example  
+ここでは、UserInfo-retrieveをJSON-LD形式でkey-valuesとして取得する例を示します。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:UserInfo-retrieve:id:IHKI:27253319",  
-  "dateCreated": "2007-09-14T06:36:40Z",  
-  "dateModified": "2021-07-07T07:30:19Z",  
-  "source": "As simply read resource best research. Plant leave small apply next cover. Cup difference clearly could read.",  
-  "name": "Movie put perform executive mind smile. Special other market recognize budget yeah. Share adult war sound.",  
-  "alternateName": "Pm easy answer food. Eat special nice stand situation. Design continue girl food law last.",  
-  "description": "Economy usually pressure positive and less tree herself. Expert worker wide east each run later shoulder. Able agree similar raise reflect feel its.",  
-  "dataProvider": "Current police card through fear. Somebody travel side moment follow him. Still occur Congress material together into use skin.",  
-  "owner": [  
-    "urn:ngsi-ld:UserInfo-retrieve:items:HFOS:13005145",  
-    "urn:ngsi-ld:UserInfo-retrieve:items:SRTT:52024706"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:UserInfo-retrieve:items:QVVK:28692168",  
-    "urn:ngsi-ld:UserInfo-retrieve:items:FWSM:63094973"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      79.31196,  
-      137.523533  
+    "id": "urn:ngsi-ld:UserInfo-retrieve:id:IHKI:27253319",  
+    "dateCreated": "2007-09-14T06:36:40Z",  
+    "dateModified": "2021-07-07T07:30:19Z",  
+    "source": "As simply read resource best research. Plant leave small apply next cover. Cup difference clearly could read.",  
+    "name": "Movie put perform executive mind smile. Special other market recognize budget yeah. Share adult war sound.",  
+    "alternateName": "Pm easy answer food. Eat special nice stand situation. Design continue girl food law last.",  
+    "description": "Economy usually pressure positive and less tree herself. Expert worker wide east each run later shoulder. Able agree similar raise reflect feel its.",  
+    "dataProvider": "Current police card through fear. Somebody travel side moment follow him. Still occur Congress material together into use skin.",  
+    "owner": [  
+        "urn:ngsi-ld:UserInfo-retrieve:items:HFOS:13005145",  
+        "urn:ngsi-ld:UserInfo-retrieve:items:SRTT:52024706"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:UserInfo-retrieve:items:QVVK:28692168",  
+        "urn:ngsi-ld:UserInfo-retrieve:items:FWSM:63094973"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            79.31196,  
+            137.523533  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Reason beautiful answer stay prepare interview newspaper computer. Audience middle side more. Actually energy win writer onto.",  
+        "addressLocality": "Conference line single school. Skill check happy station relate foot. Myself newspaper to interview edge figure serve.",  
+        "addressRegion": "Collection admit sell physical. Without significant quickly now agent able.",  
+        "addressCountry": "Lead TV that subject race power. Forward with individual best senior health. Theory lot section always five might through degree.",  
+        "postalCode": "Option business enough tell debate. Pull attorney local. Official important entire detail allow late for. Former perform lot feeling represent charge lead.",  
+        "postOfficeBoxNumber": "Analysis could street put reach program. Star radio start ready science."  
+    },  
+    "areaServed": "Person then their deal former. Add one major himself anything voice person.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Reason beautiful answer stay prepare interview newspaper computer. Audience middle side more. Actually energy win writer onto.",  
-    "addressLocality": "Conference line single school. Skill check happy station relate foot. Myself newspaper to interview edge figure serve.",  
-    "addressRegion": "Collection admit sell physical. Without significant quickly now agent able.",  
-    "addressCountry": "Lead TV that subject race power. Forward with individual best senior health. Theory lot section always five might through degree.",  
-    "postalCode": "Option business enough tell debate. Pull attorney local. Official important entire detail allow late for. Former perform lot feeling represent charge lead.",  
-    "postOfficeBoxNumber": "Analysis could street put reach program. Star radio start ready science."  
-  },  
-  "areaServed": "Person then their deal former. Add one major himself anything voice person.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-#### UserInfo-retrieve NGSI-LDを正規化した例。  
-ここでは、正規化されたJSON-LD形式のUserInfo-retrieveの例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### UserInfo-retrieveのNGSI-LD正規化例  
+以下は、JSON-LD形式を正規化したUserInfo-retrieveの例である。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:UserInfo-retrieve:id:SARL:53055590",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2004-11-07T15:43:42Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2007-07-08T01:47:16Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Its grow toward threat expect center father. Than western race write expert political I."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Simply charge page remember treatment care deep. There check hospital road. Wear serious decade soldier table."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Reality accept ago give adult as service. Commercial body manager network station. Forward political join alone short share above."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Go middle science check."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Else board fund score add. Draw born onto system five."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:UserInfo-retrieve:items:ZPSG:82205432",  
-      "urn:ngsi-ld:UserInfo-retrieve:items:YKIF:85261963"  
+    "id": "urn:ngsi-ld:UserInfo-retrieve:id:SARL:53055590",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2004-11-07T15:43:42Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2007-07-08T01:47:16Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Its grow toward threat expect center father. Than western race write expert political I."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Simply charge page remember treatment care deep. There check hospital road. Wear serious decade soldier table."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Reality accept ago give adult as service. Commercial body manager network station. Forward political join alone short share above."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Go middle science check."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Else board fund score add. Draw born onto system five."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:UserInfo-retrieve:items:ZPSG:82205432",  
+            "urn:ngsi-ld:UserInfo-retrieve:items:YKIF:85261963"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:UserInfo-retrieve:items:QJRR:59773643"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -71.2702425,  
+                122.709099  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Not situation young finish upon.",  
+            "addressLocality": "Break mission share only do. Around sure fire evening however.",  
+            "addressRegion": "Market measure garden night talk. Program available until best actually animal simple.",  
+            "addressCountry": "She certainly describe Mr walk. Impact nearly be myself up green.",  
+            "postalCode": "Major money by receive ahead enjoy show. Key age experience behavior entire stage understand.",  
+            "postOfficeBoxNumber": "Impact size specific responsibility back subject walk. Job student action stand over not boy kitchen."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "And mother structure chance. Difficult challenge wish threat around. Tend civil million side bar strategy tough."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:UserInfo-retrieve:items:QJRR:59773643"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -71.2702425,  
-        122.709099  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Not situation young finish upon.",  
-      "addressLocality": "Break mission share only do. Around sure fire evening however.",  
-      "addressRegion": "Market measure garden night talk. Program available until best actually animal simple.",  
-      "addressCountry": "She certainly describe Mr walk. Impact nearly be myself up green.",  
-      "postalCode": "Major money by receive ahead enjoy show. Key age experience behavior entire stage understand.",  
-      "postOfficeBoxNumber": "Impact size specific responsibility back subject walk. Job student action stand over not boy kitchen."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "And mother structure chance. Difficult challenge wish threat around. Tend civil million side bar strategy tough."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
