@@ -1,17 +1,32 @@
-エンティティ脱臭  
-========  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティ脱臭  
+========<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/Deodorization/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな説明です。**IoTDataのデータモデルをスマートデータモデルに変換したものです。本リソースでは、エアフィルタを制御することで対応可能な脱臭機能を記述する。   mode "は脱臭機能のモードを表す。サポートされるモードは、列挙式['off', 'on', 'auto']で定義される。  off」は脱臭機能が有効でないことを意味します。on」は脱臭機能が有効であることを意味します。auto」は、機器内の空気の状態を検知して、脱臭機能を自動制御することを意味します。  プロパティ「currentstate」は、現在の脱臭機能の状態を表します。auto」の場合、感知した空気の状態が悪いと判断された場合、機能は「on」になります。この場合、「mode」の値は「auto」、「currentstate」の値は「on」となります。そうでない場合、機能は'off'状態のままです。この場合、「currentstate」の値は「off」となります。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**IoTData のデータモデルをスマートデータモデルプログラムに変換したもの。本 Resource は、エアフィルタの制御により対応可能な脱臭機能を記述する。   property 'mode' は、脱臭機能のモードである。off'は脱臭機能が有効でないことを示す。on' は、消臭機能が有効であることを示す。auto' は、感知した機器内部の空気に応じて、脱臭機能が自動的に制御されることを意味する。  currentstate プロパティは、脱臭機能の現在の状態を示す。auto の場合、感知した空気の状態が悪いと判断されれば、機能は「on」となる。このとき、「mode」の値は「auto」、「currentstate」の値は「on」である。そうでなければ、機能は「オフ」状態のままである。その場合、「currentstate」値は「off」となる。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `currentstate`: 現在の脱臭機能の状態。  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `if`: このResourceがサポートしているOCF Interface set。  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `mode`: 消臭機能のモードです。  - `n`: リソースのフレンドリーネーム  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `rt`: The Resource Type。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSIのエンティティタイプ。Deodorizationでなければならない。    
-必須項目  
-- `id`  - `type`    
-このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)から来ています。NGSIの要件に適合するように拡張されています。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `currentstate[string]`: 現在の消臭機能の状態。  - `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `if[array]`: このResourceがサポートするOCF Interfaceセット。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `mode[string]`: 消臭機能のモード。  - `n[string]`: リソースのフレンドリ名  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `rt[array]`: リソースタイプです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSIエンティティタイプ。脱臭でなければならない  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)に由来しています。NGSIの要件に適合するように拡張されている。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Deodorization:    
@@ -341,9 +356,14 @@ Deodorization:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### 脱臭 NGSI-v2 キーバリュー例  
-ここでは、JSON-LD形式のkey-valuesによるDeodorizationの例を紹介します。これは`options=keyValues`を使うとNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### NGSI-v2 キー値の消臭例  
+ここでは、DeodorizationをJSON-LD形式でkey-valuesにした例を示す。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Deodorization:id:XDXD:95550483",  
@@ -380,8 +400,10 @@ Deodorization:
   "areaServed": "Common collection agree away. Gun collection recently old project."  
 }  
 ```  
+</details>  
 #### 脱臭 NGSI-v2 正規化例  
-ここでは、JSON-LD形式のDeodorizationを正規化した例を紹介します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+DeodorizationをJSON-LD形式で正規化した例です。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -459,127 +481,141 @@ Deodorization:
   }  
 }  
 ```  
-#### 消臭 NGSI-LDのキーバリューの例  
-ここでは、JSON-LD形式でkey-valuesとしてDeoodorizationの例を紹介します。これは`options=keyValues`を使うとNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### 脱臭 NGSI-LD キー値例  
+ここでは、DeodorizationをJSON-LD形式でkey-valuesにした例を示す。これは `options=keyValues` を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Deodorization:id:XDXD:95550483",  
-  "dateCreated": "1999-03-18T19:45:38Z",  
-  "dateModified": "2003-06-19T17:39:31Z",  
-  "source": "Enter example study enjoy get research cost once. Professor bill page center.",  
-  "name": "Attention produce quite newspaper world story approach.",  
-  "alternateName": "Stand usually material per great although young. During move somebody everybody inside.",  
-  "description": "Talk fund we course affect mother. Bring western apply security democratic.",  
-  "dataProvider": "Success show social modern view. Officer stock true center have foot watch firm. Require capital yourself yard bar approach.",  
-  "owner": [  
-    "urn:ngsi-ld:Deodorization:items:RAZH:64911453",  
-    "urn:ngsi-ld:Deodorization:items:TUDH:55185476"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Deodorization:items:KRVY:49754379",  
-    "urn:ngsi-ld:Deodorization:items:YFMD:65193227"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -4.4983885,  
-      -135.992885  
+    "id": "urn:ngsi-ld:Deodorization:id:XDXD:95550483",  
+    "dateCreated": "1999-03-18T19:45:38Z",  
+    "dateModified": "2003-06-19T17:39:31Z",  
+    "source": "Enter example study enjoy get research cost once. Professor bill page center.",  
+    "name": "Attention produce quite newspaper world story approach.",  
+    "alternateName": "Stand usually material per great although young. During move somebody everybody inside.",  
+    "description": "Talk fund we course affect mother. Bring western apply security democratic.",  
+    "dataProvider": "Success show social modern view. Officer stock true center have foot watch firm. Require capital yourself yard bar approach.",  
+    "owner": [  
+        "urn:ngsi-ld:Deodorization:items:RAZH:64911453",  
+        "urn:ngsi-ld:Deodorization:items:TUDH:55185476"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Deodorization:items:KRVY:49754379",  
+        "urn:ngsi-ld:Deodorization:items:YFMD:65193227"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -4.4983885,  
+            -135.992885  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Low record Republican number prevent citizen group. List memory begin marriage weight.",  
+        "addressLocality": "Standard religious your buy boy down lot. Partner someone available guess security sing between create. Within standard everyone speech require street manage.",  
+        "addressRegion": "Short yet just table month until. Expert true dark director throughout red continue. You remain street various than training able.",  
+        "addressCountry": "There meet maybe message language such.",  
+        "postalCode": "Someone music several little training easy human.",  
+        "postOfficeBoxNumber": "Walk me continue executive green. Feel coach fall stuff often."  
+    },  
+    "areaServed": "Common collection agree away. Gun collection recently old project.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Low record Republican number prevent citizen group. List memory begin marriage weight.",  
-    "addressLocality": "Standard religious your buy boy down lot. Partner someone available guess security sing between create. Within standard everyone speech require street manage.",  
-    "addressRegion": "Short yet just table month until. Expert true dark director throughout red continue. You remain street various than training able.",  
-    "addressCountry": "There meet maybe message language such.",  
-    "postalCode": "Someone music several little training easy human.",  
-    "postOfficeBoxNumber": "Walk me continue executive green. Feel coach fall stuff often."  
-  },  
-  "areaServed": "Common collection agree away. Gun collection recently old project.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### 脱臭 NGSI-LD 正規化例  
-ここでは、JSON-LD形式のDeodorizationを正規化した例を紹介します。これはオプションを使わない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+DeodorizationをJSON-LD形式で正規化した例です。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Deodorization:id:GSSB:36330935",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1993-06-11T07:49:03Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2001-12-13T21:31:27Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Commercial visit fly particularly training. Heart degree leave child. Surface summer style student red."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Drive many rule check activity may. Of yeah ready career me."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Market fund series. Share simply country kind music class. Degree push against company point energy court. I modern face if respond."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Loss often skin."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Economy it total stock PM just enjoy. Ground official professional idea present. Young open situation than debate concern."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Deodorization:items:XPSC:94768884",  
-      "urn:ngsi-ld:Deodorization:items:FYFX:66660011"  
+    "id": "urn:ngsi-ld:Deodorization:id:GSSB:36330935",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1993-06-11T07:49:03Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2001-12-13T21:31:27Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Commercial visit fly particularly training. Heart degree leave child. Surface summer style student red."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Drive many rule check activity may. Of yeah ready career me."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Market fund series. Share simply country kind music class. Degree push against company point energy court. I modern face if respond."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Loss often skin."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Economy it total stock PM just enjoy. Ground official professional idea present. Young open situation than debate concern."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Deodorization:items:XPSC:94768884",  
+            "urn:ngsi-ld:Deodorization:items:FYFX:66660011"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Deodorization:items:TUUK:04645794"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -30.7009055,  
+                60.468347  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Claim Mrs seek tax condition down article. Teach start and nice blood myself dog.",  
+            "addressLocality": "Middle rise score concern.",  
+            "addressRegion": "Tax expect believe situation only stuff. These tax church surface happen arrive of.",  
+            "addressCountry": "Local everyone everything them radio total.",  
+            "postalCode": "Feeling perhaps course base involve oil try. Question democratic health design realize. Mean nothing machine officer form generation his.",  
+            "postOfficeBoxNumber": "House rest health entire down every carry. Staff away sell task effect describe."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Likely spring structure service. Congress various environment policy ground."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Deodorization:items:TUUK:04645794"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -30.7009055,  
-        60.468347  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Claim Mrs seek tax condition down article. Teach start and nice blood myself dog.",  
-      "addressLocality": "Middle rise score concern.",  
-      "addressRegion": "Tax expect believe situation only stuff. These tax church surface happen arrive of.",  
-      "addressCountry": "Local everyone everything them radio total.",  
-      "postalCode": "Feeling perhaps course base involve oil try. Question democratic health design realize. Mean nothing machine officer form generation his.",  
-      "postOfficeBoxNumber": "House rest health entire down every carry. Staff away sell task effect describe."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Likely spring structure service. Congress various environment policy ground."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
