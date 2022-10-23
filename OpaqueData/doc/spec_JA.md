@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 エンティティOpaqueData  
-================  
+================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/OpaqueData/LICENSE.md)  
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 グローバルな記述。**このリソースは、データ自体が OCF エンドポイントによって解釈できないエンドポイント間で転送できる不透明なデータを定義する。  
 バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `encoding`: このプロパティは、ペイロードのエンコーディングを記述する。例えば、バイナリは base64、json、xml、utf-8 である。  - `hash`: blobのハッシュコード。存在する場合、オブジェクトデータポイントのデコードされたコンテンツの整合性を確認するために使用される。ハッシュ値の生成に使用されるアルゴリズムはSHA-2[15]です。データポイントには、16進エンコードされた値としてハッシュが含まれています。  - `id`: エンティティの一意な識別子  - `if`: このResourceがサポートするOCF Interfaceセット。  - `location`: アイテムへのGeojsonリファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name`: このアイテムの名称です。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `payload`: このプロパティは、不透明なデータを含む。  - `payloadtype`: このプロパティは、ペイロードの識別、例えば、ペイロードが何を表現しているかを記述する。  - `rt`: リソースタイプです。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `size`: デコードされたバイナリオブジェクトのバイト単位のサイズ。  - `source`: エンティティデータの元のソースをURLで指定する文字の列。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `system`: ペイロードを使用しているエコシステム。  - `type`: NGSIエンティティタイプ。OpaqueDataでなければならない。    
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `encoding[string]`: このプロパティは、ペイロードのエンコーディングを記述する。例えば、バイナリは base64、json、xml、utf-8 である。  - `hash[string]`: blobのハッシュコード。存在する場合、オブジェクトデータポイントのデコードされたコンテンツの完全性を確認するために使用される。ハッシュ値を生成するために使用されるアルゴリズムは、SHA-2 [15]です。データポイントには、16進エンコードされた値としてハッシュが含まれています。  - `id[*]`: エンティティの一意な識別子  - `if[array]`: このResourceがサポートするOCF Interfaceセット。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリスト  - `payload[string]`: このプロパティは、不透明なデータを含む。  - `payloadtype[string]`: このプロパティは、ペイロードの識別、例えば、ペイロードが何を表現しているかを記述する。  - `rt[array]`: リソースタイプです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `size[integer]`: デコードされたバイナリオブジェクトのバイト単位のサイズ。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `system[string]`: ペイロードを使用しているエコシステム。  - `type[string]`: NGSIエンティティタイプ。OpaqueDataでなければならない。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 必要なプロパティ  
-- `encoding`  - `id`  - `payload`  - `system`  - `type`    
+- `encoding`  - `id`  - `payload`  - `system`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 データモデルは、Open Connectivity Foundationが作成したオリジナルを引用しています。https://github.com/openconnectivityfoundation/IoTDataModels のオリジナルリポジトリ  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
 アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 OpaqueData:    
@@ -351,9 +364,14 @@ OpaqueData:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
 #### OpaqueData NGSI-v2 key-value の例。  
-ここでは、OpaqueDataをJSON-LD形式でkey-valueとした例を示します。これは `options=keyValues` を使用した場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータが返される。  
+ここでは、OpaqueDataをJSON-LD形式でkey-valuesとした例を示す。これは `options=keyValues` を使用した場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:OpaqueData:id:TTMN:47954873",  
@@ -408,8 +426,10 @@ OpaqueData:
   "type": "OpaqueData"  
 }  
 ```  
+</details>  
 #### OpaqueData NGSI-v2 正規化例  
-以下は、OpaqueDataをJSON-LD形式で正規化した例です。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、正規化されたJSON-LD形式のOpaqueDataの例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -532,183 +552,197 @@ OpaqueData:
   }  
 }  
 ```  
+</details>  
 #### OpaqueData NGSI-LD key-value 例  
-ここでは、OpaqueDataをJSON-LD形式でkey-valueとした例を示します。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを返す。  
+ここでは、OpaqueDataをJSON-LD形式でkey-valuesとした例を示す。これは `options=keyValues` を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返す。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:OpaqueData:id:TTMN:47954873",  
-  "dateCreated": "1996-10-07T07:39:16Z",  
-  "dateModified": "2018-10-06T00:30:42Z",  
-  "source": "Draw less food. Born central require action development public national. Hot set course store.",  
-  "name": "Important eye western oil.",  
-  "alternateName": "Recent realize fear company. Light first what century man station according bring. Understand record stop author reach.",  
-  "description": "Almost center world machine someone. Size star analysis protect.",  
-  "dataProvider": "Fight exist than line behavior. Turn risk investment political energy activity.",  
-  "owner": [  
-    "urn:ngsi-ld:OpaqueData:items:YPJA:37648723",  
-    "urn:ngsi-ld:OpaqueData:items:IKVA:78883767"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:OpaqueData:items:YQIG:40434840",  
-    "urn:ngsi-ld:OpaqueData:items:JQWJ:08248941"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      82.924221,  
-      -154.083239  
+    "id": "urn:ngsi-ld:OpaqueData:id:TTMN:47954873",  
+    "dateCreated": "1996-10-07T07:39:16Z",  
+    "dateModified": "2018-10-06T00:30:42Z",  
+    "source": "Draw less food. Born central require action development public national. Hot set course store.",  
+    "name": "Important eye western oil.",  
+    "alternateName": "Recent realize fear company. Light first what century man station according bring. Understand record stop author reach.",  
+    "description": "Almost center world machine someone. Size star analysis protect.",  
+    "dataProvider": "Fight exist than line behavior. Turn risk investment political energy activity.",  
+    "owner": [  
+        "urn:ngsi-ld:OpaqueData:items:YPJA:37648723",  
+        "urn:ngsi-ld:OpaqueData:items:IKVA:78883767"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:OpaqueData:items:YQIG:40434840",  
+        "urn:ngsi-ld:OpaqueData:items:JQWJ:08248941"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            82.924221,  
+            -154.083239  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "News imagine apply research six either which. At really anyone teacher since military. Indicate television from source nothing.",  
+        "addressLocality": "Democratic exist audience investment. Against listen travel. Rest only back if despite.",  
+        "addressRegion": "Red ready pay leader book cup. Letter something play their.",  
+        "addressCountry": "Hold performance line have responsibility trip poor court.",  
+        "postalCode": "His culture describe rock camera continue. Training accept act wear grow participant. Put cell quickly strategy budget.",  
+        "postOfficeBoxNumber": "Myself manage care almost trouble top thousand. Begin build quickly audience scientist. Girl opportunity top exist against. Trade with fish her around."  
+    },  
+    "areaServed": "Party consumer leave yes. Reality both finish since power.",  
+    "rt": [  
+        "oic.r.opaquedata",  
+        "oic.r.opaquedata"  
+    ],  
+    "payload": "Close degree budget argue boy something off. Early meeting sell challenge condition brother but.",  
+    "encoding": "Turn officer statement they person notice investment another. Important reach sort mention successful.",  
+    "payloadtype": "Create hear yes support. Life by stay kind Congress stuff operation.",  
+    "size": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "hash": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair.",  
+    "system": "Together range line beyond. First policy daughter need kind miss.",  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.rw"  
+    ],  
+    "type": "OpaqueData",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "News imagine apply research six either which. At really anyone teacher since military. Indicate television from source nothing.",  
-    "addressLocality": "Democratic exist audience investment. Against listen travel. Rest only back if despite.",  
-    "addressRegion": "Red ready pay leader book cup. Letter something play their.",  
-    "addressCountry": "Hold performance line have responsibility trip poor court.",  
-    "postalCode": "His culture describe rock camera continue. Training accept act wear grow participant. Put cell quickly strategy budget.",  
-    "postOfficeBoxNumber": "Myself manage care almost trouble top thousand. Begin build quickly audience scientist. Girl opportunity top exist against. Trade with fish her around."  
-  },  
-  "areaServed": "Party consumer leave yes. Reality both finish since power.",  
-  "rt": [  
-    "oic.r.opaquedata",  
-    "oic.r.opaquedata"  
-  ],  
-  "payload": "Close degree budget argue boy something off. Early meeting sell challenge condition brother but.",  
-  "encoding": "Turn officer statement they person notice investment another. Important reach sort mention successful.",  
-  "payloadtype": "Create hear yes support. Life by stay kind Congress stuff operation.",  
-  "size": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "hash": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair.",  
-  "system": "Together range line beyond. First policy daughter need kind miss.",  
-  "if": [  
-    "oic.if.baseline",  
-    "oic.if.rw"  
-  ],  
-  "type": "OpaqueData",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### OpaqueData NGSI-LD 正規化例  
-以下は、OpaqueDataをJSON-LD形式で正規化した例です。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、JSON-LD形式のOpaqueDataを正規化した例である。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:OpaqueData:id:MSUV:41241185",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1982-09-13T10:21:14Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2017-10-08T02:09:10Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Political item language carry different. Nature consider direction change attention into skin. Official charge fact husband."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Campaign crime where. Feeling seem field. Message kid case family. Continue half clear activity."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Eye we mean born. Short provide environment. Ten service human institution image small. Pull write those stop together stand small."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Modern form ahead buy heavy. Seem federal employee per."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "According sometimes list affect five prevent best war. Wait wall song after ask summer thus condition. Subject necessary discussion give American become."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:OpaqueData:items:ZWFD:05617865",  
-      "urn:ngsi-ld:OpaqueData:items:PGWB:29545962"  
+    "id": "urn:ngsi-ld:OpaqueData:id:MSUV:41241185",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1982-09-13T10:21:14Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2017-10-08T02:09:10Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Political item language carry different. Nature consider direction change attention into skin. Official charge fact husband."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Campaign crime where. Feeling seem field. Message kid case family. Continue half clear activity."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Eye we mean born. Short provide environment. Ten service human institution image small. Pull write those stop together stand small."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Modern form ahead buy heavy. Seem federal employee per."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "According sometimes list affect five prevent best war. Wait wall song after ask summer thus condition. Subject necessary discussion give American become."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:OpaqueData:items:ZWFD:05617865",  
+            "urn:ngsi-ld:OpaqueData:items:PGWB:29545962"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:OpaqueData:items:IGOK:32850032"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                27.1059105,  
+                149.252978  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Cut full PM book. Car history easy while if treatment else. Month among year carry feeling.",  
+            "addressLocality": "Degree enter its would bring after space another. Apply land everything happen level behavior. Figure manager six provide.",  
+            "addressRegion": "Stop heart yes our data information. Job per discover thought bank term degree half. Sign you line care leave. Option question later speech either student source.",  
+            "addressCountry": "Camera special specific strategy place spend.",  
+            "postalCode": "Start good culture myself general. They it like detail ago fish hope. Unit woman degree sing hit building.",  
+            "postOfficeBoxNumber": "Main town positive tell since. Street level cell mind yard moment."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Director hope adult bag including anyone camera."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.opaquedata"  
+        ]  
+    },  
+    "payload": {  
+        "type": "Property",  
+        "value": "Parent personal a actually whose agree. Training less send trade five behind lot best."  
+    },  
+    "encoding": {  
+        "type": "Property",  
+        "value": "First myself hour nearly many dark. Forward year market so state event."  
+    },  
+    "payloadtype": {  
+        "type": "Property",  
+        "value": "Involve oil recent nothing huge. Establish build show. Music prepare necessary arm."  
+    },  
+    "size": {  
+        "type": "Property",  
+        "value": 390  
+    },  
+    "hash": {  
+        "type": "Property",  
+        "value": "Affect against deep item tough usually. Hair PM they right. Adult read site save."  
+    },  
+    "system": {  
+        "type": "Property",  
+        "value": "Tell meeting since phone. Bed together myself something draw become chair. Foot actually degree. Imagine democratic likely staff."  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline",  
+            "oic.if.rw"  
+        ]  
+    },  
+    "type": "OpaqueData",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:OpaqueData:items:IGOK:32850032"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        27.1059105,  
-        149.252978  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Cut full PM book. Car history easy while if treatment else. Month among year carry feeling.",  
-      "addressLocality": "Degree enter its would bring after space another. Apply land everything happen level behavior. Figure manager six provide.",  
-      "addressRegion": "Stop heart yes our data information. Job per discover thought bank term degree half. Sign you line care leave. Option question later speech either student source.",  
-      "addressCountry": "Camera special specific strategy place spend.",  
-      "postalCode": "Start good culture myself general. They it like detail ago fish hope. Unit woman degree sing hit building.",  
-      "postOfficeBoxNumber": "Main town positive tell since. Street level cell mind yard moment."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Director hope adult bag including anyone camera."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.opaquedata"  
-    ]  
-  },  
-  "payload": {  
-    "type": "Property",  
-    "value": "Parent personal a actually whose agree. Training less send trade five behind lot best."  
-  },  
-  "encoding": {  
-    "type": "Property",  
-    "value": "First myself hour nearly many dark. Forward year market so state event."  
-  },  
-  "payloadtype": {  
-    "type": "Property",  
-    "value": "Involve oil recent nothing huge. Establish build show. Music prepare necessary arm."  
-  },  
-  "size": {  
-    "type": "Property",  
-    "value": 390  
-  },  
-  "hash": {  
-    "type": "Property",  
-    "value": "Affect against deep item tough usually. Hair PM they right. Adult read site save."  
-  },  
-  "system": {  
-    "type": "Property",  
-    "value": "Tell meeting since phone. Bed together myself something draw become chair. Foot actually degree. Imagine democratic likely staff."  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.baseline",  
-      "oic.if.rw"  
-    ]  
-  },  
-  "type": "OpaqueData",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
