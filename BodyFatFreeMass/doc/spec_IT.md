@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-Entità: BodyFatFreeMass  
-=======================  
+Entità: MassaGrassaCorporea  
+===========================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.OCF/blob/master/BodyFatFreeMass/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Questa risorsa descrive le proprietà associate alla massa libera di grasso corporeo di una persona.L'unità è un singolo valore che è uno tra kg, lb o percentuale.Se la proprietà unità è mancante il valore predefinito è chilogrammi [kg].Le proprietà ffm e unità sono valori di sola lettura che sono forniti dal server.Quando il range è omesso il valore predefinito è da 0 a +MAXFLOAT.**  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **Questa risorsa descrive le proprietà associate alla massa grassa libera del corpo di una persona.L'unità è un singolo valore che è uno tra kg, lb o percentuale.Se la proprietà dell'unità è mancante, il valore predefinito è chilogrammi [kg].Le proprietà ffm e unit sono valori di sola lettura che vengono forniti dal server.Quando l'intervallo è omesso, il valore predefinito è da 0 a +MAXFLOAT.**  
 versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `ffm`: Massa grassa libera del corpo.  - `id`: Identificatore unico dell'entità  - `if`: L'insieme di interfacce OCF supportate da questa risorsa  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n`: Nome amichevole della risorsa  - `name`: Il nome di questo articolo.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `precision`: Quando è esposto, il valore in 'precisione' fornisce una tolleranza +/- rispetto alle Proprietà nella Risorsa. Quindi, se una proprietà viene aggiornata a un valore e tale proprietà viene poi ripristinata, il valore ripristinato è valido se rientra nell'intervallo del valore impostato +/- precisione  - `range`: L'intervallo valido per la proprietà nella risorsa come numero. Il primo valore nell'array è il valore minimo, il secondo valore nell'array è il valore massimo.  - `rt`: Tipo di risorsa  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `step`: Valore di passo attraverso l'intervallo definito un intero quando l'intervallo è un numero.  Questo è l'incremento per i valori validi attraverso l'intervallo; così se l'intervallo è 0.0..10.0 e il passo è 2.5 allora i valori validi sono 0.0,2.5,5.0,7.5,10.0.  - `type`: Tipo di entità NGSI. Deve essere BodyFatFreeMass  - `units`: Unità di massa libera di grasso corporeo    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `ffm[number]`: Massa grassa corporea.  - `id[*]`: Identificatore univoco dell'entità  - `if[array]`: L'insieme di interfacce OCF supportate da questa risorsa.  - `location[*]`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `n[string]`: Nome amichevole della risorsa  - `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `precision[number]`: Quando viene esposto, il valore in 'precision' fornisce una tolleranza +/- rispetto alle proprietà della risorsa. Pertanto, se una proprietà viene AGGIORNATA a un valore e poi viene restituita, il valore restituito è valido se rientra nell'intervallo del valore impostato +/- precision.  - `range[array]`: L'intervallo valido per la proprietà nella risorsa come numero. Il primo valore della matrice è il valore minimo, il secondo valore della matrice è il valore massimo.  - `rt[array]`: Tipo di risorsa  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `step[number]`: Valore del passo nell'intervallo definito, un numero intero quando l'intervallo è un numero.  Si tratta dell'incremento per i valori validi in tutto l'intervallo; quindi se l'intervallo è 0.0..10.0 e il passo è 2.5, i valori validi sono 0.0,2.5,5.0,7.5,10.0.  - `type[string]`: Tipo di entità NGSI. Deve essere BodyFatFreeMass (massa grassa).  - `units[string]`: Unità di massa grassa libera del corpo  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- `ffm`  - `id`  - `type`    
+- `ffm`  - `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Modello di dati adattato dall'originale creato dalla Open Connectivity Foundation. Repository originale in https://github.com/openconnectivityfoundation/IoTDataModels  
-## Descrizione del modello di dati delle proprietà  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 BodyFatFreeMass:    
@@ -367,9 +380,14 @@ BodyFatFreeMass:
   x-version: 0.0.1    
 ```  
 </details>    
-## Esempio di payloads  
-#### BodyFatFreeMass NGSI-v2 valori chiave Esempio  
-Ecco un esempio di BodyFatFreeMass in formato JSON-LD come valori chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
+#### Valori chiave di BodyFatFreeMass NGSI-v2 Esempio  
+Ecco un esempio di BodyFatFreeMass in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:BodyFatFreeMass:id:OWUF:38686534",  
@@ -433,8 +451,10 @@ BodyFatFreeMass:
   "type": "BodyFatFreeMass"  
 }  
 ```  
+</details>  
 #### BodyFatFreeMass NGSI-v2 normalizzato Esempio  
-Ecco un esempio di BodyFatFreeMass in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di BodyFatFreeMass in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano le opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -566,194 +586,208 @@ BodyFatFreeMass:
   }  
 }  
 ```  
-#### BodyFatFreeMass valori chiave NGSI-LD Esempio  
-Ecco un esempio di BodyFatFreeMass in formato JSON-LD come valori chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### Valori chiave NGSI-LD di BodyFatFreeMass Esempio  
+Ecco un esempio di BodyFatFreeMass in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:BodyFatFreeMass:id:OWUF:38686534",  
-  "dateCreated": "2016-04-20T09:01:59Z",  
-  "dateModified": "2011-01-29T20:40:15Z",  
-  "source": "Third draw do environment college. Author each position.",  
-  "name": "Feeling evidence adult loss thing new floor likely. Memory prove back finish record. Number eat fact natural describe able.",  
-  "alternateName": "Wish everyone end carry.",  
-  "description": "Sign summer house citizen official. Nearly business heart development population.",  
-  "dataProvider": "So as today reveal environmental safe right. Pick major environmental listen share day. Star term artist or want.",  
-  "owner": [  
-    "urn:ngsi-ld:BodyFatFreeMass:items:VNNT:07840154",  
-    "urn:ngsi-ld:BodyFatFreeMass:items:KFNY:73865310"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:BodyFatFreeMass:items:KAPP:63866226",  
-    "urn:ngsi-ld:BodyFatFreeMass:items:QYFK:82184121"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -30.758229,  
-      124.110579  
+    "id": "urn:ngsi-ld:BodyFatFreeMass:id:OWUF:38686534",  
+    "dateCreated": "2016-04-20T09:01:59Z",  
+    "dateModified": "2011-01-29T20:40:15Z",  
+    "source": "Third draw do environment college. Author each position.",  
+    "name": "Feeling evidence adult loss thing new floor likely. Memory prove back finish record. Number eat fact natural describe able.",  
+    "alternateName": "Wish everyone end carry.",  
+    "description": "Sign summer house citizen official. Nearly business heart development population.",  
+    "dataProvider": "So as today reveal environmental safe right. Pick major environmental listen share day. Star term artist or want.",  
+    "owner": [  
+        "urn:ngsi-ld:BodyFatFreeMass:items:VNNT:07840154",  
+        "urn:ngsi-ld:BodyFatFreeMass:items:KFNY:73865310"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:BodyFatFreeMass:items:KAPP:63866226",  
+        "urn:ngsi-ld:BodyFatFreeMass:items:QYFK:82184121"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -30.758229,  
+            124.110579  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Fast ask camera food. Though traditional group number live coach agreement. Thank production hope reflect long else. May science difficult.",  
+        "addressLocality": "Special major major sure apply thing operation set. Box tell serve almost simply. Better increase particular group sure both.",  
+        "addressRegion": "Social best beyond lead structure. Challenge high beat nature.",  
+        "addressCountry": "Staff better standard feel air oil other. Perhaps only newspaper recognize why Congress. High find suffer relationship eight letter door.",  
+        "postalCode": "Day back these appear wear. Medical contain consider agent.",  
+        "postOfficeBoxNumber": "Allow television gun industry morning. Home ability vote into nearly to."  
+    },  
+    "areaServed": "Behind cold hot benefit. Or many gas election for none.",  
+    "rt": [  
+        "oic.r.body.ffm",  
+        "oic.r.body.ffm"  
+    ],  
+    "ffm": {  
+        "type": "Property",  
+        "value": 103.8  
+    },  
+    "units": "percent",  
+    "range": [  
+        974.9,  
+        706.9  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 406.8  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 396.6  
+    },  
+    "n": "Audience particularly receive offer national course.",  
+    "if": [  
+        "oic.if.s",  
+        "oic.if.s"  
+    ],  
+    "type": "BodyFatFreeMass",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Fast ask camera food. Though traditional group number live coach agreement. Thank production hope reflect long else. May science difficult.",  
-    "addressLocality": "Special major major sure apply thing operation set. Box tell serve almost simply. Better increase particular group sure both.",  
-    "addressRegion": "Social best beyond lead structure. Challenge high beat nature.",  
-    "addressCountry": "Staff better standard feel air oil other. Perhaps only newspaper recognize why Congress. High find suffer relationship eight letter door.",  
-    "postalCode": "Day back these appear wear. Medical contain consider agent.",  
-    "postOfficeBoxNumber": "Allow television gun industry morning. Home ability vote into nearly to."  
-  },  
-  "areaServed": "Behind cold hot benefit. Or many gas election for none.",  
-  "rt": [  
-    "oic.r.body.ffm",  
-    "oic.r.body.ffm"  
-  ],  
-  "ffm": {  
-    "type": "Property",  
-    "value": 103.8  
-  },  
-  "units": "percent",  
-  "range": [  
-    974.9,  
-    706.9  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 406.8  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 396.6  
-  },  
-  "n": "Audience particularly receive offer national course.",  
-  "if": [  
-    "oic.if.s",  
-    "oic.if.s"  
-  ],  
-  "type": "BodyFatFreeMass",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### BodyFatFreeMass NGSI-LD normalizzato Esempio  
-Ecco un esempio di BodyFatFreeMass in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di BodyFatFreeMass in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:BodyFatFreeMass:id:BYYC:85997792",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1979-04-14T17:16:17Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1982-11-26T18:17:09Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "With letter region set lay realize."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Important hot speak product. Anything property face actually weight. Because hour admit case."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Race ball hard fine."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Several list outside statement assume government. Size upon that staff lay everybody."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "List exist worry authority. Ok strategy security able huge. Control that early type control action new mouth."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:BodyFatFreeMass:items:YGWC:27965149",  
-      "urn:ngsi-ld:BodyFatFreeMass:items:JJZI:38517462"  
+    "id": "urn:ngsi-ld:BodyFatFreeMass:id:BYYC:85997792",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1979-04-14T17:16:17Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1982-11-26T18:17:09Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "With letter region set lay realize."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Important hot speak product. Anything property face actually weight. Because hour admit case."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Race ball hard fine."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Several list outside statement assume government. Size upon that staff lay everybody."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "List exist worry authority. Ok strategy security able huge. Control that early type control action new mouth."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:BodyFatFreeMass:items:YGWC:27965149",  
+            "urn:ngsi-ld:BodyFatFreeMass:items:JJZI:38517462"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:BodyFatFreeMass:items:IRKO:22252881"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -73.99554,  
+                -50.163726  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Soon agreement rate evidence since answer bar. Never account center know.",  
+            "addressLocality": "Growth against deep clearly let grow. Order over training have let high occur game. Make other enjoy ever human identify short summer.",  
+            "addressRegion": "White budget ten doctor cup husband area. Wait spend myself serve whose south wonder bed. And clearly set argue. Represent then cause animal.",  
+            "addressCountry": "Against finish hope business decade feeling. Fund really find line. Claim knowledge outside support way.",  
+            "postalCode": "Think professional new those theory boy road. Something follow physical some reach might condition. Explain really production a nature so.",  
+            "postOfficeBoxNumber": "All stand myself this case. Remain push win sea cell. Throughout account goal."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Happy Democrat yet Mr share time its. Half least record reveal leg fish. Vote development Republican single serve amount."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.body.ffm"  
+        ]  
+    },  
+    "ffm": {  
+        "type": "Property",  
+        "value": 661.3  
+    },  
+    "units": {  
+        "type": "Property",  
+        "value": "kg"  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            609.9,  
+            585.5  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 91.6  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 675.6  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Future reality write read law list. Account friend shake region tell program. Rate most mind save cup agency big rather."  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "BodyFatFreeMass",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:BodyFatFreeMass:items:IRKO:22252881"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -73.99554,  
-        -50.163726  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Soon agreement rate evidence since answer bar. Never account center know.",  
-      "addressLocality": "Growth against deep clearly let grow. Order over training have let high occur game. Make other enjoy ever human identify short summer.",  
-      "addressRegion": "White budget ten doctor cup husband area. Wait spend myself serve whose south wonder bed. And clearly set argue. Represent then cause animal.",  
-      "addressCountry": "Against finish hope business decade feeling. Fund really find line. Claim knowledge outside support way.",  
-      "postalCode": "Think professional new those theory boy road. Something follow physical some reach might condition. Explain really production a nature so.",  
-      "postOfficeBoxNumber": "All stand myself this case. Remain push win sea cell. Throughout account goal."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Happy Democrat yet Mr share time its. Half least record reveal leg fish. Vote development Republican single serve amount."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.body.ffm"  
-    ]  
-  },  
-  "ffm": {  
-    "type": "Property",  
-    "value": 661.3  
-  },  
-  "units": {  
-    "type": "Property",  
-    "value": "kg"  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      609.9,  
-      585.5  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 91.6  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 675.6  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Future reality write read law list. Account friend shake region tell program. Rate most mind save cup agency big rather."  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "type": "BodyFatFreeMass",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
