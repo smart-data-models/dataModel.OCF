@@ -1,17 +1,32 @@
-Entidad: BodyLocationTemperature  
-================================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entidad: BodyLocationTemperature  
+================================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.OCF/blob/master/BodyLocationTemperature/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descripción global: **Adaptación del Programa de Modelos de Datos Inteligentes de los Modelos de datos originales de IoTData. Este Recurso describe las Propiedades asociadas a la ubicación del cuerpo para la medición de la temperatura de una persona. La Propiedad bloc es un valor de sólo lectura que es proporcionado por el Servidor.**  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descripción global: **Adaptación del Programa de Modelos de Datos Inteligentes de los Modelos de datos originales de IoTData. Este Recurso describe las Propiedades asociadas a la localización del cuerpo para la medición de la temperatura de una persona. La Propiedad bloc es un valor de sólo lectura que es proporcionado por el Servidor.**  
+versión: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `bloc`: Una lista específica para el sitio de la temperatura  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `if`: El conjunto de interfaces OCF que admite este recurso  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n`: Nombre amistoso del recurso  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `rt`: Tipo de recurso  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type`: Tipo de entidad NGSI. Tiene que ser BodyLocationTemperature    
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>  
+- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `bloc[string]`: Una lista específica para el sitio de la temperatura  - `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Una descripción de este artículo  - `id[*]`: Identificador único de la entidad  - `if[array]`: El conjunto de interfaces OCF que admite este recurso  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n[string]`: Nombre amistoso del recurso  - `name[string]`: El nombre de este artículo.  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `rt[array]`: Tipo de recurso  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type[string]`: Tipo de entidad NGSI. Tiene que ser BodyLocationTemperature  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propiedades requeridas  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Este modelo de datos procede del original [repositorio de la Open Connectivity Foundation](https://github.com/openconnectivityfoundation/IoTDataModels). Se ha ampliado para cumplir con los requisitos de la NGSI.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 BodyLocationTemperature:    
@@ -340,9 +355,14 @@ BodyLocationTemperature:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Ejemplo de carga útil  
 #### BodyLocationTemperature NGSI-v2 key-values Ejemplo  
 Este es un ejemplo de BodyLocationTemperature en formato JSON-LD como valores clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:BodyLocationTemperature:id:DVEE:22471005",  
@@ -379,8 +399,10 @@ BodyLocationTemperature:
   "areaServed": "Again collection ten. Agent evidence necessary already. Push something environment central young born no."  
 }  
 ```  
+</details>  
 #### BodyLocationTemperature NGSI-v2 normalizado Ejemplo  
 Este es un ejemplo de BodyLocationTemperature en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -458,127 +480,141 @@ BodyLocationTemperature:
   }  
 }  
 ```  
+</details>  
 #### BodyLocationTemperature NGSI-LD key-values Ejemplo  
 Este es un ejemplo de BodyLocationTemperature en formato JSON-LD como valores clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:BodyLocationTemperature:id:DVEE:22471005",  
-  "dateCreated": "1986-05-14T05:25:58Z",  
-  "dateModified": "2004-03-17T12:13:13Z",  
-  "source": "Indeed professor interest hold might. Whose better reason letter. Statement hold church kind well much so commercial.",  
-  "name": "Marriage behind gas appear door appear special. Message themselves person assume walk. Shoulder act road thus both season.",  
-  "alternateName": "Fall old home understand old meet friend. Team at actually week dinner.",  
-  "description": "Support red party owner never consumer. Whom long protect almost leader particular. Chance technology any notice which story.",  
-  "dataProvider": "Hotel it increase especially home ball. Community smile station painting. Finish force effort worry cause region store just.",  
-  "owner": [  
-    "urn:ngsi-ld:BodyLocationTemperature:items:HNIK:73021014",  
-    "urn:ngsi-ld:BodyLocationTemperature:items:JIZY:16075956"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:BodyLocationTemperature:items:PJOG:26128975",  
-    "urn:ngsi-ld:BodyLocationTemperature:items:CMDA:05499547"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      7.4156865,  
-      107.49888  
+    "id": "urn:ngsi-ld:BodyLocationTemperature:id:DVEE:22471005",  
+    "dateCreated": "1986-05-14T05:25:58Z",  
+    "dateModified": "2004-03-17T12:13:13Z",  
+    "source": "Indeed professor interest hold might. Whose better reason letter. Statement hold church kind well much so commercial.",  
+    "name": "Marriage behind gas appear door appear special. Message themselves person assume walk. Shoulder act road thus both season.",  
+    "alternateName": "Fall old home understand old meet friend. Team at actually week dinner.",  
+    "description": "Support red party owner never consumer. Whom long protect almost leader particular. Chance technology any notice which story.",  
+    "dataProvider": "Hotel it increase especially home ball. Community smile station painting. Finish force effort worry cause region store just.",  
+    "owner": [  
+        "urn:ngsi-ld:BodyLocationTemperature:items:HNIK:73021014",  
+        "urn:ngsi-ld:BodyLocationTemperature:items:JIZY:16075956"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:BodyLocationTemperature:items:PJOG:26128975",  
+        "urn:ngsi-ld:BodyLocationTemperature:items:CMDA:05499547"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            7.4156865,  
+            107.49888  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Major popular tell usually fall avoid. Star claim show arrive determine.",  
+        "addressLocality": "Help simply well front point news. Movement will report responsibility those field capital night. Special sit late mouth reason body actually.",  
+        "addressRegion": "Fact brother act. Company traditional manage. Scientist manager shoulder draw.",  
+        "addressCountry": "Hair include firm time. Degree son old skin painting whom service.",  
+        "postalCode": "Station truth southern color. Former ever environmental low fly thing score recent. Seven indicate start modern education watch message election.",  
+        "postOfficeBoxNumber": "Firm not friend. However over computer."  
+    },  
+    "areaServed": "Again collection ten. Agent evidence necessary already. Push something environment central young born no.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Major popular tell usually fall avoid. Star claim show arrive determine.",  
-    "addressLocality": "Help simply well front point news. Movement will report responsibility those field capital night. Special sit late mouth reason body actually.",  
-    "addressRegion": "Fact brother act. Company traditional manage. Scientist manager shoulder draw.",  
-    "addressCountry": "Hair include firm time. Degree son old skin painting whom service.",  
-    "postalCode": "Station truth southern color. Former ever environmental low fly thing score recent. Seven indicate start modern education watch message election.",  
-    "postOfficeBoxNumber": "Firm not friend. However over computer."  
-  },  
-  "areaServed": "Again collection ten. Agent evidence necessary already. Push something environment central young born no.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### BodyLocationTemperature NGSI-LD normalizado Ejemplo  
 Este es un ejemplo de BodyLocationTemperature en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:BodyLocationTemperature:id:JKQS:15774687",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2002-12-03T00:56:09Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2013-09-18T04:07:02Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Military market through. Task environment college oil tonight sometimes else."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Agree school entire themselves east want vote. Once hot industry research yet stock fight reality."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Friend its speech much time. Senior town really different spend matter."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Picture believe cell agency. Six body radio behavior she cold."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Those now statement build firm think. Medical others for season return his."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:BodyLocationTemperature:items:QSWE:40587381",  
-      "urn:ngsi-ld:BodyLocationTemperature:items:XUGP:16309252"  
+    "id": "urn:ngsi-ld:BodyLocationTemperature:id:JKQS:15774687",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2002-12-03T00:56:09Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2013-09-18T04:07:02Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Military market through. Task environment college oil tonight sometimes else."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Agree school entire themselves east want vote. Once hot industry research yet stock fight reality."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Friend its speech much time. Senior town really different spend matter."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Picture believe cell agency. Six body radio behavior she cold."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Those now statement build firm think. Medical others for season return his."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:BodyLocationTemperature:items:QSWE:40587381",  
+            "urn:ngsi-ld:BodyLocationTemperature:items:XUGP:16309252"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:BodyLocationTemperature:items:IUGS:31998308"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                6.908481,  
+                179.542808  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Little cold believe third sure news individual. As everything short energy. Radio on store become plant responsibility. Development sometimes authority herself.",  
+            "addressLocality": "Life price onto traditional learn break play. Type eye edge fight child avoid really measure. North administration quality artist simple police. Back generation main method employee possible.",  
+            "addressRegion": "American involve fight part choice way early. Item skill rule voice instead when. Of once oil somebody yeah.",  
+            "addressCountry": "Particularly note hospital call dinner. Financial think magazine fill window.",  
+            "postalCode": "Sure road special financial camera rule someone.",  
+            "postOfficeBoxNumber": "Manage challenge suffer idea perform. Certain score able decide near."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Central hot save view nature window suddenly. Free eye build commercial."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:BodyLocationTemperature:items:IUGS:31998308"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        6.908481,  
-        179.542808  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Little cold believe third sure news individual. As everything short energy. Radio on store become plant responsibility. Development sometimes authority herself.",  
-      "addressLocality": "Life price onto traditional learn break play. Type eye edge fight child avoid really measure. North administration quality artist simple police. Back generation main method employee possible.",  
-      "addressRegion": "American involve fight part choice way early. Item skill rule voice instead when. Of once oil somebody yeah.",  
-      "addressCountry": "Particularly note hospital call dinner. Financial think magazine fill window.",  
-      "postalCode": "Sure road special financial camera rule someone.",  
-      "postOfficeBoxNumber": "Manage challenge suffer idea perform. Certain score able decide near."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Central hot save view nature window suddenly. Free eye build commercial."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
