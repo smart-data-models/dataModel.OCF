@@ -1,17 +1,32 @@
-エンティティカウント  
-==========  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティカウント  
+==========<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/Count/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな説明です。**スマートデータモデル オリジナルのIoTDataデータモデルをプログラム化したものです。このResourceは、アクティビティカウントを指定する。このResourceは、カウントを表すインスタンスではリードオンリー(oic.if.sインターフェース)にすることができます。このResourceは、カウントのゴールやターゲットを表すリードライト(oic.if.aインターフェース)にすることができます。プロパティ'count'は、現在のカウント値または目標値を表す整数です。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**スマートデータモデル IoTData のデータモデルをプログラム化したもの。この Resource は、アクティビティカウントを指定する。Resource は readonly (oic.if.s インターフェース)にすることができ、その場合、カウントを表す。Resource は readwrite (oic.if.a インターフェース) であり、そのインスタンスはカウントのゴールまたはターゲットを表す。Property 'count'は、現在のカウント値または目標値を表す整数である**。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `count`: カレントまたはターゲットのカウント。  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `if`: このResourceがサポートしているOCF Interface set。  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `n`: リソースのフレンドリーネーム  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `range`: リソースのプロパティの有効範囲を整数で表したもの。配列の最初の値が最小値、配列の2番目の値が最大値となります。  - `rt`: The Resource Type。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `step`: 範囲が整数の場合、定義された範囲のステップ値です。  例えば、範囲が0～10でステップが2の場合、有効な値は0,2,4,6,8,10となり、範囲内の有効な値の増分となります。  - `type`: NGSIエンティティタイプ。カウントである必要があります。    
-必須項目  
-- `id`  - `type`    
-このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)から来ています。NGSIの要件に適合するように拡張されています。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `count[integer]`: 現在またはターゲットのカウント。  - `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `if[array]`: このResourceがサポートするOCF Interfaceセット。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `n[string]`: リソースのフレンドリ名  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `range[array]`: Resource に含まれる Property の有効範囲を表す整数値。配列の最初の値が最小値、2 番目の値が最大値となります。  - `rt[array]`: リソースタイプです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `step[integer]`: 範囲が整数の場合、定義された範囲に渡るステップ値。  つまり、範囲が0〜10でステップが2の場合、有効な値は0,2,4,6,8,10である。  - `type[string]`: NGSIエンティティタイプ。これはCountでなければならない  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)に由来しています。NGSIの要件に適合するように拡張されている。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Count:    
@@ -345,9 +360,14 @@ Count:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### Count NGSI-v2 key-valuesの例。  
-JSON-LD形式でCountをkey-valuesにした例を紹介します。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### NGSI-v2 キー値のカウント例  
+ここでは、JSON-LD形式のCountをkey-valuesとした場合の例を示す。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Count:id:ANPP:64594792",  
@@ -384,8 +404,10 @@ Count:
   "areaServed": "Much maybe through you less cut after."  
 }  
 ```  
-#### 回数 NGSI-v2 正規化例  
-ここでは、正規化されたJSON-LD形式のCountの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### NGSI-v2 正規化例  
+以下は、正規化されたJSON-LD形式のCountの例である。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -463,127 +485,141 @@ Count:
   }  
 }  
 ```  
-#### カウントNGSI-LDのキーバリューの例  
-JSON-LD形式でCountをkey-valuesにした例を紹介します。これは、`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### NGSI-LD キー値のカウント例  
+ここでは、JSON-LD形式のCountをkey-valuesとした例を示す。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Count:id:ANPP:64594792",  
-  "dateCreated": "1970-08-14T20:52:44Z",  
-  "dateModified": "1982-07-21T00:53:54Z",  
-  "source": "Fear very opportunity sea prevent hospital check.",  
-  "name": "Federal simply turn meet less. North stay step while window network can.",  
-  "alternateName": "Produce summer alone toward attorney. Discuss article four go.",  
-  "description": "Head enter heart though later. Form agree plant exactly back before. Mouth able probably threat.",  
-  "dataProvider": "Lose allow oil box any film. Someone people reveal exist significant admit treatment idea. Bank perhaps choice none.",  
-  "owner": [  
-    "urn:ngsi-ld:Count:items:BHAE:96828546",  
-    "urn:ngsi-ld:Count:items:VDZM:08245550"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Count:items:JZGY:19989096",  
-    "urn:ngsi-ld:Count:items:VPFW:31471711"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -75.8259115,  
-      -9.81898  
+    "id": "urn:ngsi-ld:Count:id:ANPP:64594792",  
+    "dateCreated": "1970-08-14T20:52:44Z",  
+    "dateModified": "1982-07-21T00:53:54Z",  
+    "source": "Fear very opportunity sea prevent hospital check.",  
+    "name": "Federal simply turn meet less. North stay step while window network can.",  
+    "alternateName": "Produce summer alone toward attorney. Discuss article four go.",  
+    "description": "Head enter heart though later. Form agree plant exactly back before. Mouth able probably threat.",  
+    "dataProvider": "Lose allow oil box any film. Someone people reveal exist significant admit treatment idea. Bank perhaps choice none.",  
+    "owner": [  
+        "urn:ngsi-ld:Count:items:BHAE:96828546",  
+        "urn:ngsi-ld:Count:items:VDZM:08245550"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Count:items:JZGY:19989096",  
+        "urn:ngsi-ld:Count:items:VPFW:31471711"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -75.8259115,  
+            -9.81898  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Choice anything lawyer necessary open. Hope left believe science water bill. Cell several senior exist. Often a camera join picture.",  
+        "addressLocality": "Eight across him source democratic future create big.",  
+        "addressRegion": "Political memory how public almost. Affect local effort instead. Hard financial can small already.",  
+        "addressCountry": "Must happen degree truth something.",  
+        "postalCode": "Do thus address generation. Source medical many past realize service then. Work red central model professional small.",  
+        "postOfficeBoxNumber": "Myself until politics bag police citizen. Pretty contain process."  
+    },  
+    "areaServed": "Much maybe through you less cut after.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Choice anything lawyer necessary open. Hope left believe science water bill. Cell several senior exist. Often a camera join picture.",  
-    "addressLocality": "Eight across him source democratic future create big.",  
-    "addressRegion": "Political memory how public almost. Affect local effort instead. Hard financial can small already.",  
-    "addressCountry": "Must happen degree truth something.",  
-    "postalCode": "Do thus address generation. Source medical many past realize service then. Work red central model professional small.",  
-    "postOfficeBoxNumber": "Myself until politics bag police citizen. Pretty contain process."  
-  },  
-  "areaServed": "Much maybe through you less cut after.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-#### カウント NGSI-LDの正規化例  
-ここでは、正規化されたJSON-LD形式のCountの例を示します。これはオプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### NGSI-LD 正規化例  
+以下は、正規化されたJSON-LD形式のCountの例である。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Count:id:BDUD:14746690",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1976-07-07T08:45:45Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1981-11-13T20:20:30Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Partner child majority industry. Responsibility prepare statement story security great style. Project phone hear pass city including growth role."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Kind under nature day near."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Side heavy model. Nice identify fund push start. Upon edge much ok from image reality. When employee require standard during blue out."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Would adult but road. Still few attention professional."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Bed begin trouble first always up thank study. Item maybe public commercial series task month. Age down simple ahead radio ball."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Count:items:DNXT:36065942",  
-      "urn:ngsi-ld:Count:items:RFBR:16164093"  
+    "id": "urn:ngsi-ld:Count:id:BDUD:14746690",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1976-07-07T08:45:45Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1981-11-13T20:20:30Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Partner child majority industry. Responsibility prepare statement story security great style. Project phone hear pass city including growth role."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Kind under nature day near."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Side heavy model. Nice identify fund push start. Upon edge much ok from image reality. When employee require standard during blue out."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Would adult but road. Still few attention professional."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Bed begin trouble first always up thank study. Item maybe public commercial series task month. Age down simple ahead radio ball."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Count:items:DNXT:36065942",  
+            "urn:ngsi-ld:Count:items:RFBR:16164093"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Count:items:ATKL:76510154"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -11.246975,  
+                52.808364  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Level company sure reach. Federal majority not protect name what where. Brother board nearly none reduce decision.",  
+            "addressLocality": "Should act early art take how. Save us Mr set large. Day source play property data piece or.",  
+            "addressRegion": "Develop suggest purpose compare system. She task behavior worker color up owner.",  
+            "addressCountry": "Party ten political contain town little. Community reality Mrs city.",  
+            "postalCode": "Pretty skill old believe. Hear least base back. Knowledge green money this east identify almost. Glass all improve.",  
+            "postOfficeBoxNumber": "Wear itself here field should watch. Number listen local do likely wrong begin."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Machine knowledge oil situation business mother see. Team group young."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Count:items:ATKL:76510154"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -11.246975,  
-        52.808364  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Level company sure reach. Federal majority not protect name what where. Brother board nearly none reduce decision.",  
-      "addressLocality": "Should act early art take how. Save us Mr set large. Day source play property data piece or.",  
-      "addressRegion": "Develop suggest purpose compare system. She task behavior worker color up owner.",  
-      "addressCountry": "Party ten political contain town little. Community reality Mrs city.",  
-      "postalCode": "Pretty skill old believe. Hear least base back. Knowledge green money this east identify almost. Glass all improve.",  
-      "postOfficeBoxNumber": "Wear itself here field should watch. Number listen local do likely wrong begin."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Machine knowledge oil situation business mother see. Team group young."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
