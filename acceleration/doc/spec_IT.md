@@ -1,17 +1,32 @@
-Entità: accelerazione  
-=====================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entità: accelerazione  
+=====================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.OCF/blob/master/acceleration/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Adattamento del programma Smart Data Models dell'originale IoTData data Models. Questa risorsa fornisce una misura dell'accelerazione propria (forza g) in opposizione all'accelerazione coordinata (che dipende dal sistema di coordinate e dall'osservatore). La proprietà 'value' è un float che descrive l'accelerazione sperimentata dall'oggetto in 'g'.**  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **Adattamento del programma Smart Data Models dei modelli di dati IoTData originali. Questa risorsa fornisce una misura dell'accelerazione propria (forza g) rispetto all'accelerazione coordinata (che dipende dal sistema di coordinate e dall'osservatore). La proprietà 'value' è un float che descrive l'accelerazione subita dall'oggetto in 'g'**.  
+versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `acceleration`: L'accelerazione percepita in "g".  - `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `id`: Identificatore unico dell'entità  - `if`: L'insieme di interfacce OCF supportato da questa risorsa.  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n`: Nome amichevole della risorsa  - `name`: Il nome di questo articolo.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `precision`: Quando è esposto, il valore in 'precisione' fornisce una tolleranza +/- rispetto alle Proprietà nella Risorsa. Quindi, se una proprietà viene aggiornata a un valore e tale proprietà viene poi ripristinata, il valore ripristinato è valido se rientra nell'intervallo del valore impostato +/- precisione  - `range`: L'intervallo valido per la proprietà nella risorsa come numero. Il primo valore nell'array è il valore minimo, il secondo valore nell'array è il valore massimo.  - `rt`: Tipo di risorsa  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `step`: Valore di passo attraverso l'intervallo definito un intero quando l'intervallo è un numero.  Questo è l'incremento per i valori validi attraverso l'intervallo; così se l'intervallo è 0.0..10.0 e il passo è 2.5 allora i valori validi sono 0.0,2.5,5.0,7.5,10.0.  - `type`: Tipo di entità NGSI. Deve essere l'accelerazione    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `acceleration[number]`: L'accelerazione percepita è espressa in "g".  - `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `if[array]`: Il set di interfacce OCF supportato da questa risorsa.  - `location[*]`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `n[string]`: Nome amichevole della risorsa  - `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `precision[number]`: Quando viene esposto, il valore in 'precision' fornisce una tolleranza +/- rispetto alle proprietà della risorsa. Pertanto, se una proprietà viene AGGIORNATA a un valore e poi viene restituita, il valore restituito è valido se rientra nell'intervallo del valore impostato +/- precision.  - `range[array]`: L'intervallo valido per la proprietà nella risorsa come numero. Il primo valore della matrice è il valore minimo, il secondo valore della matrice è il valore massimo.  - `rt[array]`: Tipo di risorsa  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `step[number]`: Valore del passo nell'intervallo definito, un numero intero quando l'intervallo è un numero.  Si tratta dell'incremento per i valori validi nell'intervallo; quindi, se l'intervallo è 0.0..10.0 e il passo è 2.5, i valori validi sono 0.0,2.5,5.0,7.5,10.0.  - `type[string]`: Tipo di entità NGSI. Deve essere un'accelerazione  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- `id`  - `type`    
-Questo modello di dati proviene dall'originale [Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels). È stato esteso per soddisfare i requisiti di NGSI.  
-## Descrizione del modello di dati delle proprietà  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+Questo modello di dati proviene dal repository originale della [Open Connectivity Foundation] (https://github.com/openconnectivityfoundation/IoTDataModels). È stato esteso per soddisfare i requisiti NGSI.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 acceleration:    
@@ -351,9 +366,14 @@ acceleration:
   x-version: 0.0.1    
 ```  
 </details>    
-## Esempio di payloads  
-#### accelerazione valori chiave NGSI-v2 Esempio  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
+#### accelerazione NGSI-v2 valori-chiave Esempio  
 Ecco un esempio di accelerazione in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:acceleration:id:AKKA:92596343",  
@@ -390,8 +410,10 @@ acceleration:
   "areaServed": "Individual ask site marriage stuff thing. History others rich."  
 }  
 ```  
+</details>  
 #### accelerazione NGSI-v2 normalizzata Esempio  
-Ecco un esempio di accelerazione in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di accelerazione in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano le opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -469,127 +491,141 @@ acceleration:
   }  
 }  
 ```  
-#### accelerazione valori chiave NGSI-LD Esempio  
+</details>  
+#### accelerazione NGSI-LD valori-chiave Esempio  
 Ecco un esempio di accelerazione in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:acceleration:id:AKKA:92596343",  
-  "dateCreated": "2000-01-22T03:24:49Z",  
-  "dateModified": "2002-02-16T14:36:32Z",  
-  "source": "Half across bar analysis set another chance. Address run local name nothing whether newspaper.",  
-  "name": "Add remember often rock listen. Hard find every. News start message sea dinner seek hand.",  
-  "alternateName": "National store guy firm power race civil movie. Without difference live trade Democrat radio attention. Sort president push story improve free.",  
-  "description": "Act event need down crime sell. Thus serious identify song add how method.",  
-  "dataProvider": "Consider leave send chance fill small.",  
-  "owner": [  
-    "urn:ngsi-ld:acceleration:items:JBWN:36613923",  
-    "urn:ngsi-ld:acceleration:items:NOJT:32000181"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:acceleration:items:ATXW:46664069",  
-    "urn:ngsi-ld:acceleration:items:NBUQ:53228079"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      12.1695535,  
-      -135.072105  
+    "id": "urn:ngsi-ld:acceleration:id:AKKA:92596343",  
+    "dateCreated": "2000-01-22T03:24:49Z",  
+    "dateModified": "2002-02-16T14:36:32Z",  
+    "source": "Half across bar analysis set another chance. Address run local name nothing whether newspaper.",  
+    "name": "Add remember often rock listen. Hard find every. News start message sea dinner seek hand.",  
+    "alternateName": "National store guy firm power race civil movie. Without difference live trade Democrat radio attention. Sort president push story improve free.",  
+    "description": "Act event need down crime sell. Thus serious identify song add how method.",  
+    "dataProvider": "Consider leave send chance fill small.",  
+    "owner": [  
+        "urn:ngsi-ld:acceleration:items:JBWN:36613923",  
+        "urn:ngsi-ld:acceleration:items:NOJT:32000181"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:acceleration:items:ATXW:46664069",  
+        "urn:ngsi-ld:acceleration:items:NBUQ:53228079"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            12.1695535,  
+            -135.072105  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "High animal again very fish receive treatment. Learn simple less much certainly. Join reality section cut tough dark shoulder.",  
+        "addressLocality": "Deep each ever attorney capital future agree over. Cultural institution against face. Win wide off win source help against.",  
+        "addressRegion": "Ground include life small. We leader throughout player catch. Budget join trip war.",  
+        "addressCountry": "Moment quickly environment small late likely. Short final agreement stage green painting natural end.",  
+        "postalCode": "Her start similar control threat particular attorney.",  
+        "postOfficeBoxNumber": "Me form item data. Case bag spend available."  
+    },  
+    "areaServed": "Individual ask site marriage stuff thing. History others rich.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "High animal again very fish receive treatment. Learn simple less much certainly. Join reality section cut tough dark shoulder.",  
-    "addressLocality": "Deep each ever attorney capital future agree over. Cultural institution against face. Win wide off win source help against.",  
-    "addressRegion": "Ground include life small. We leader throughout player catch. Budget join trip war.",  
-    "addressCountry": "Moment quickly environment small late likely. Short final agreement stage green painting natural end.",  
-    "postalCode": "Her start similar control threat particular attorney.",  
-    "postOfficeBoxNumber": "Me form item data. Case bag spend available."  
-  },  
-  "areaServed": "Individual ask site marriage stuff thing. History others rich.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### accelerazione NGSI-LD normalizzata Esempio  
-Ecco un esempio di accelerazione in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di accelerazione in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:acceleration:id:NGIX:57424946",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2006-10-27T10:09:51Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1976-11-20T00:14:22Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Wife as child city mean current property. Result debate against within."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Design write amount task alone treatment Republican trip. List benefit strategy rest month. Guy throughout do doctor hair step really."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Energy song ability example. Big list air culture ever sometimes court."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Of build contain stage type discussion language. Force game upon enough arm score letter."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "High his series visit I. Sure event current and hair as."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:acceleration:items:RLAK:02634901",  
-      "urn:ngsi-ld:acceleration:items:GVYU:66034550"  
+    "id": "urn:ngsi-ld:acceleration:id:NGIX:57424946",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2006-10-27T10:09:51Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1976-11-20T00:14:22Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Wife as child city mean current property. Result debate against within."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Design write amount task alone treatment Republican trip. List benefit strategy rest month. Guy throughout do doctor hair step really."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Energy song ability example. Big list air culture ever sometimes court."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Of build contain stage type discussion language. Force game upon enough arm score letter."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "High his series visit I. Sure event current and hair as."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:acceleration:items:RLAK:02634901",  
+            "urn:ngsi-ld:acceleration:items:GVYU:66034550"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:acceleration:items:CNCF:95278992"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -71.507505,  
+                -18.291869  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Affect big level career see simple product. Six tough majority able only billion food expect. Go serve option suddenly beat.",  
+            "addressLocality": "Hit prove board similar game. Sea daughter Congress account behind.",  
+            "addressRegion": "Seek threat student ever expert positive serve become. Guy seek pull total happen enter. Every too just after long themselves turn.",  
+            "addressCountry": "Language family true might less. Make within begin myself certain enjoy.",  
+            "postalCode": "Expect any thank TV drop information behavior join. Situation type letter group.",  
+            "postOfficeBoxNumber": "Your score central return realize interview growth. Should per buy their stand nothing grow."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "My somebody behind property present view. Discuss tree second. Close score authority person throw."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:acceleration:items:CNCF:95278992"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -71.507505,  
-        -18.291869  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Affect big level career see simple product. Six tough majority able only billion food expect. Go serve option suddenly beat.",  
-      "addressLocality": "Hit prove board similar game. Sea daughter Congress account behind.",  
-      "addressRegion": "Seek threat student ever expert positive serve become. Guy seek pull total happen enter. Every too just after long themselves turn.",  
-      "addressCountry": "Language family true might less. Make within begin myself certain enjoy.",  
-      "postalCode": "Expect any thank TV drop information behavior join. Situation type letter group.",  
-      "postOfficeBoxNumber": "Your score central return realize interview growth. Should per buy their stand nothing grow."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "My somebody behind property present view. Discuss tree second. Close score authority person throw."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
