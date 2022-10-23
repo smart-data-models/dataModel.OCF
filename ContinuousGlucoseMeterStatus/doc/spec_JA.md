@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 エンティティContinuousGlucoseMeterStatus（連続グルコースメーターステータス  
-===================================================  
+===================================================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/ContinuousGlucoseMeterStatus/LICENSE.md)  
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**このリソースは、持続血糖測定器(CGM)の状態に関するプロパティを記述する。  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Global description:**このリソースは、持続血糖測定器（CGM）のステータスに関連するプロパティを記述している。  
 バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `cgmstatus`: 本プロパティは、警告、エラー、イベント処理など、CGM デバイスが発する特定の通知について説明する。  - `cgmtype`: 本プロパティは、CGM 測定タイプについて説明する。  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `gtrend`: 本プロパティは、ある時刻におけるグルコース測定値の変化率を記述するものである。  - `id`: エンティティの一意な識別子  - `if`: このResourceがサポートするOCF Interfaceセット。  - `location`: アイテムへのGeojsonリファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `malfunction`: 本プロパティは、センサー異常検知チェックについて説明するものである。  - `n`: リソースのフレンドリ名  - `name`: このアイテムの名称です。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `precision`: precision'の値が公開されると、ResourceのPropertiesに対して+/-の許容範囲を提供します。したがって、あるプロパティがある値にUPDATEされ、そのプロパティがRETRIEVEDされた場合、RETRIEVEDされた値は設定された値+/-精度の範囲内であれば有効である。  - `range`: リソースに含まれるプロパティの有効範囲を数値で表したもの。配列の最初の値が最小値、2 番目の値が最大値となります。  - `rt`: リソースタイプです。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで指定する文字の列。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `step`: 定義された範囲のステップ値（範囲が数値の場合は整数）。  範囲が0.0〜10.0でステップが2.5の場合、有効な値は0.0、2.5、5.0、7.5、10.0である。  - `type`: NGSIエンティティタイプ。ContinuousGlucoseMeterStatus でなければならない。    
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `cgmstatus[string]`: 本プロパティは、警告、エラー、イベント処理など、CGM デバイスが発する特定の通知について説明する。  - `cgmtype[string]`: 本プロパティでは、CGM 測定タイプについて説明する。  - `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `gtrend[number]`: 本プロパティは、ある時刻におけるグルコース測定値の変化率を記述するものである。  - `id[*]`: エンティティの一意な識別子  - `if[array]`: このResourceがサポートするOCF Interfaceセット。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `malfunction[boolean]`: 本プロパティは、センサー異常検知チェックについて説明するものである。  - `n[string]`: リソースのフレンドリ名  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `precision[number]`: 公開されるとき、'precision'の値は、ResourceのPropertyに対して+/-の許容範囲を提供する。したがって、あるプロパティがある値にUPDATEされ、そのプロパティがRETRIEVEDされた場合、RETRIEVEDされた値は設定された値+/-精度の範囲内であれば有効である。  - `range[array]`: Resource に含まれる Property の有効範囲を数値で表します。配列の最初の値が最小値、2 番目の値が最大値となります。  - `rt[array]`: リソースタイプです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `step[number]`: 定義された範囲にわたるステップ値。  範囲が0.0〜10.0でステップが2.5の場合、有効な値は0.0、2.5、5.0、7.5、10.0である。  - `type[string]`: NGSIエンティティタイプ。ContinuousGlucoseMeterStatus でなければならない。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 必要なプロパティ  
-- `cgmstatus`  - `cgmtype`  - `gtrend`  - `id`  - `malfunction`  - `type`    
+- `cgmstatus`  - `cgmtype`  - `gtrend`  - `id`  - `malfunction`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 データモデルは、Open Connectivity Foundationが作成したオリジナルを引用しています。https://github.com/openconnectivityfoundation/IoTDataModels のオリジナルリポジトリ  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
 アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ContinuousGlucoseMeterStatus:    
@@ -384,9 +397,14 @@ ContinuousGlucoseMeterStatus:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### ContinuousGlucoseMeterStatus NGSI-v2 key-value の例。  
-以下は、ContinuousGlucoseMeterStatusをJSON-LD形式でkey-valueとした例である。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+#### ContinuousGlucoseMeterStatus NGSI-v2 キー値例  
+以下は、ContinuousGlucoseMeterStatusをJSON-LD形式でkey-valuesとした例である。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:ContinuousGlucoseMeterStatus:id:FOLL:67268630",  
@@ -455,8 +473,10 @@ ContinuousGlucoseMeterStatus:
   "type": "ContinuousGlucoseMeterStatus"  
 }  
 ```  
+</details>  
 #### ContinuousGlucoseMeterStatus NGSI-v2 正規化例  
-以下は、ContinuousGlucoseMeterStatusをJSON-LD形式で正規化した例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、ContinuousGlucoseMeterStatus を JSON-LD 形式で正規化した例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -599,207 +619,221 @@ ContinuousGlucoseMeterStatus:
   }  
 }  
 ```  
+</details>  
 #### ContinuousGlucoseMeterStatus NGSI-LD キー値例  
-ContinuousGlucoseMeterStatusをJSON-LD形式でkey-valueとした例です。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、ContinuousGlucoseMeterStatusをJSON-LD形式でkey-valuesとした例である。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:ContinuousGlucoseMeterStatus:id:FOLL:67268630",  
-  "dateCreated": "1998-10-08T22:16:19Z",  
-  "dateModified": "2006-11-21T05:20:19Z",  
-  "source": "Same leg mention interesting throughout lay.",  
-  "name": "Interest time want they lot sing air. Poor system event writer. Prepare difficult card structure form present.",  
-  "alternateName": "Mean first real upon maintain choice actually woman. Possible term mind coach whole campaign.",  
-  "description": "Energy factor join research. Produce ball best son. Want huge big beat guess generation. Perform ahead national do.",  
-  "dataProvider": "Relationship difficult rather. Sit she help Republican ability court above state. Maybe mouth image. Born but pretty price father.",  
-  "owner": [  
-    "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:SHYQ:93356123",  
-    "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:EKNP:26634712"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:AIWB:97278201",  
-    "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:MDYT:32462764"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      58.850143,  
-      165.413238  
+    "id": "urn:ngsi-ld:ContinuousGlucoseMeterStatus:id:FOLL:67268630",  
+    "dateCreated": "1998-10-08T22:16:19Z",  
+    "dateModified": "2006-11-21T05:20:19Z",  
+    "source": "Same leg mention interesting throughout lay.",  
+    "name": "Interest time want they lot sing air. Poor system event writer. Prepare difficult card structure form present.",  
+    "alternateName": "Mean first real upon maintain choice actually woman. Possible term mind coach whole campaign.",  
+    "description": "Energy factor join research. Produce ball best son. Want huge big beat guess generation. Perform ahead national do.",  
+    "dataProvider": "Relationship difficult rather. Sit she help Republican ability court above state. Maybe mouth image. Born but pretty price father.",  
+    "owner": [  
+        "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:SHYQ:93356123",  
+        "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:EKNP:26634712"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:AIWB:97278201",  
+        "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:MDYT:32462764"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            58.850143,  
+            165.413238  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Whom common travel cost laugh start. Cultural general operation operation.",  
+        "addressLocality": "Material technology machine just. Single team produce your practice program leg. Card ask medical.",  
+        "addressRegion": "Describe cold piece hospital tough amount right traditional. Game try various mean her rule.",  
+        "addressCountry": "Do table fast check pay when argue deep.",  
+        "postalCode": "Final center but station actually under. Day figure be mother. Town officer skill drug huge each.",  
+        "postOfficeBoxNumber": "Old specific star attorney walk put people. Eat better road ok state energy."  
+    },  
+    "areaServed": "Draw north series leader. Such tell responsibility defense. Weight star hundred set pretty leave.",  
+    "cgmtype": "Interstitial Fluid",  
+    "cgmstatus": "Serve laugh center base development determine. Way someone opportunity realize around management stay.",  
+    "gtrend": {  
+        "type": "Property",  
+        "value": 912.7  
+    },  
+    "malfunction": {  
+        "type": "Property",  
+        "value": true  
+    },  
+    "rt": [  
+        "oic.r.cgm.status",  
+        "oic.r.cgm.status"  
+    ],  
+    "n": "About record want position they argue may. Action recognize must imagine fund leg security. Able rise surface first.",  
+    "if": [  
+        "oic.if.s",  
+        "oic.if.baseline"  
+    ],  
+    "range": [  
+        994.5,  
+        959.4  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 185.6  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 204.8  
+    },  
+    "type": "ContinuousGlucoseMeterStatus",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Whom common travel cost laugh start. Cultural general operation operation.",  
-    "addressLocality": "Material technology machine just. Single team produce your practice program leg. Card ask medical.",  
-    "addressRegion": "Describe cold piece hospital tough amount right traditional. Game try various mean her rule.",  
-    "addressCountry": "Do table fast check pay when argue deep.",  
-    "postalCode": "Final center but station actually under. Day figure be mother. Town officer skill drug huge each.",  
-    "postOfficeBoxNumber": "Old specific star attorney walk put people. Eat better road ok state energy."  
-  },  
-  "areaServed": "Draw north series leader. Such tell responsibility defense. Weight star hundred set pretty leave.",  
-  "cgmtype": "Interstitial Fluid",  
-  "cgmstatus": "Serve laugh center base development determine. Way someone opportunity realize around management stay.",  
-  "gtrend": {  
-    "type": "Property",  
-    "value": 912.7  
-  },  
-  "malfunction": {  
-    "type": "Property",  
-    "value": true  
-  },  
-  "rt": [  
-    "oic.r.cgm.status",  
-    "oic.r.cgm.status"  
-  ],  
-  "n": "About record want position they argue may. Action recognize must imagine fund leg security. Able rise surface first.",  
-  "if": [  
-    "oic.if.s",  
-    "oic.if.baseline"  
-  ],  
-  "range": [  
-    994.5,  
-    959.4  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 185.6  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 204.8  
-  },  
-  "type": "ContinuousGlucoseMeterStatus",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### ContinuousGlucoseMeterStatus NGSI-LD 正規化例  
 以下は、ContinuousGlucoseMeterStatusをJSON-LD形式で正規化した例である。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:ContinuousGlucoseMeterStatus:id:GEYM:33511226",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1970-01-31T04:25:22Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2013-03-06T21:48:48Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Son picture nice floor staff. Remember rest rather certainly education light trip."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Appear present citizen plan town light. Success sign near hot. Receive visit energy interview look total production."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Institution exist class. Tax Mrs news gas join especially easy. Fight about religious price school."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Enough local particularly capital show simply. Perform management type director. Statement central across bit class give."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Benefit able affect director upon sense happen. Yard born term set task cause between sure."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:CWSI:41736479",  
-      "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:EEOO:71067269"  
+    "id": "urn:ngsi-ld:ContinuousGlucoseMeterStatus:id:GEYM:33511226",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1970-01-31T04:25:22Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2013-03-06T21:48:48Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Son picture nice floor staff. Remember rest rather certainly education light trip."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Appear present citizen plan town light. Success sign near hot. Receive visit energy interview look total production."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Institution exist class. Tax Mrs news gas join especially easy. Fight about religious price school."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Enough local particularly capital show simply. Perform management type director. Statement central across bit class give."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Benefit able affect director upon sense happen. Yard born term set task cause between sure."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:CWSI:41736479",  
+            "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:EEOO:71067269"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:ARZK:43891632"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -29.772074,  
+                114.010154  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Can model hour give inside strong husband. Theory question evening step fast create. Eye remember industry than.",  
+            "addressLocality": "History long story I must. Bag campaign begin factor art prevent civil.",  
+            "addressRegion": "Process unit however north yet.",  
+            "addressCountry": "Law but live measure. Staff man mention buy billion develop these green. Most attention forget evidence idea show.",  
+            "postalCode": "Cell charge direction here them sure involve. Both hotel create challenge follow federal second.",  
+            "postOfficeBoxNumber": "She magazine loss themselves. And fear operation ready should democratic. Reflect serious during term decision heavy which."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Environment machine back central let deep race. Material cost yard like bank."  
+    },  
+    "cgmtype": {  
+        "type": "Property",  
+        "value": "Capillary Whole blood"  
+    },  
+    "cgmstatus": {  
+        "type": "Property",  
+        "value": "Name thousand great cell. Last action bed executive financial. Foot read environment film able trial could."  
+    },  
+    "gtrend": {  
+        "type": "Property",  
+        "value": 620.2  
+    },  
+    "malfunction": {  
+        "type": "Property",  
+        "value": true  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.cgm.status"  
+        ]  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Audience study meet today need international. Material Mrs plant part watch trip build professor. Protect your risk letter floor article nature."  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.s"  
+        ]  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            263.0,  
+            342.7  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 563.4  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 498.0  
+    },  
+    "type": "ContinuousGlucoseMeterStatus",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:ARZK:43891632"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -29.772074,  
-        114.010154  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Can model hour give inside strong husband. Theory question evening step fast create. Eye remember industry than.",  
-      "addressLocality": "History long story I must. Bag campaign begin factor art prevent civil.",  
-      "addressRegion": "Process unit however north yet.",  
-      "addressCountry": "Law but live measure. Staff man mention buy billion develop these green. Most attention forget evidence idea show.",  
-      "postalCode": "Cell charge direction here them sure involve. Both hotel create challenge follow federal second.",  
-      "postOfficeBoxNumber": "She magazine loss themselves. And fear operation ready should democratic. Reflect serious during term decision heavy which."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Environment machine back central let deep race. Material cost yard like bank."  
-  },  
-  "cgmtype": {  
-    "type": "Property",  
-    "value": "Capillary Whole blood"  
-  },  
-  "cgmstatus": {  
-    "type": "Property",  
-    "value": "Name thousand great cell. Last action bed executive financial. Foot read environment film able trial could."  
-  },  
-  "gtrend": {  
-    "type": "Property",  
-    "value": 620.2  
-  },  
-  "malfunction": {  
-    "type": "Property",  
-    "value": true  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.cgm.status"  
-    ]  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Audience study meet today need international. Material Mrs plant part watch trip build professor. Protect your risk letter floor article nature."  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.s"  
-    ]  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      263.0,  
-      342.7  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 563.4  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 498.0  
-  },  
-  "type": "ContinuousGlucoseMeterStatus",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
