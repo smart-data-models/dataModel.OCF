@@ -1,17 +1,32 @@
-Entità: AutoFocus  
-=================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entità: AutoFocus  
+=================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.OCF/blob/master/AutoFocus/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Adattamento del programma Smart Data Models dell'originale IoTData data Models. Questa risorsa descrive una funzione di autofocus on/off. La proprietà 'autoFocus' è un booleano. Un valore 'autoFocus' di 'true' significa che la caratteristica di autofocus è attiva. Un valore 'autoFocus' di 'false' significa che l'autofocus è disattivato. Nota che quando viene usato il Pan Tilt Zoom (vedi definizione della risorsa 'Pan Tilt Zoom') l'autofocus funziona solo nell'area selezionata.**  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **Programma di modelli di dati intelligenti adattamento dei modelli di dati IoTData originali. Questa risorsa descrive una funzione di attivazione/disattivazione dell'autofocus. La proprietà 'autoFocus' è un booleano. Un valore 'autoFocus' di 'true' significa che la funzione di autofocus è attiva. Un valore 'autoFocus' di 'false' significa che la funzione di autofocus è disattivata. Si noti che quando si usa il Pan Tilt Zoom (si veda la definizione di risorsa 'Pan Tilt Zoom'), l'autofocus funziona solo nell'area selezionata **.  
+versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `autoFocus`: Lo stato della funzione Auto Focus.  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `id`: Identificatore unico dell'entità  - `if`: L'insieme di interfacce OCF supportato da questa risorsa.  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n`: Nome amichevole della risorsa  - `name`: Il nome di questo articolo.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `rt`: Il tipo di risorsa.  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `type`: Tipo di entità NGSI. Deve essere AutoFocus    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `autoFocus[boolean]`: Lo stato della funzione di messa a fuoco automatica.  - `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `if[array]`: Il set di interfacce OCF supportato da questa risorsa.  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `n[string]`: Nome amichevole della risorsa  - `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `rt[array]`: Il tipo di risorsa.  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `type[string]`: Tipo di entità NGSI. Deve essere AutoFocus  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- `id`  - `type`    
-Questo modello di dati proviene dall'originale [Open Conenctivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels). È stato esteso per soddisfare i requisiti NGSI.  
-## Descrizione del modello di dati delle proprietà  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+Questo modello di dati proviene dall'originale [Open Conenctivity Foundation repository] (https://github.com/openconnectivityfoundation/IoTDataModels). È stato esteso per soddisfare i requisiti della NGSI.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 AutoFocus:    
@@ -328,21 +343,260 @@ AutoFocus:
   x-version: 0.0.1    
 ```  
 </details>    
-## Esempio di payloads  
-#### AutoFocus NGSI-v2 valori chiave Esempio  
-Ecco un esempio di un AutoFocus in formato JSON-LD come key-values. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
+#### Valori chiave AutoFocus NGSI-v2 Esempio  
+Ecco un esempio di AutoFocus in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
+{  
+  "id": "urn:ngsi-ld:AutoFocus:id:MDJJ:39804414",  
+  "dateCreated": "2016-09-05T02:46:41Z",  
+  "dateModified": "2019-09-26T17:37:19Z",  
+  "source": "Forget fear common east chance want. Writer city along simply money.",  
+  "name": "Ever probably seek first eight how follow Mrs. Choice western away either particular old.",  
+  "alternateName": "Modern already usually leader long. Rich region third authority employee not research.",  
+  "description": "Without million outside skin draw bar economic glass. Site course method speech respond.",  
+  "dataProvider": "Travel view final write commercial next. Edge stop according environmental money himself. Loss simply resource return protect he.",  
+  "owner": [  
+    "urn:ngsi-ld:AutoFocus:items:URFP:37492409",  
+    "urn:ngsi-ld:AutoFocus:items:QPKC:88758327"  
+  ],  
+  "seeAlso": [  
+    "urn:ngsi-ld:AutoFocus:items:NHYN:18141122",  
+    "urn:ngsi-ld:AutoFocus:items:KKHG:49747728"  
+  ],  
+  "location": {  
+    "type": "Point",  
+    "coordinates": [  
+      35.771134,  
+      133.186789  
+    ]  
+  },  
+  "address": {  
+    "streetAddress": "Franklinstrasse 13",  
+    "addressLocality": "Berlin",  
+    "addressRegion": "Berlin",  
+    "addressCountry": "Germany",  
+    "postalCode": "10587",  
+    "postOfficeBoxNumber": ""  
+  },  
+  "areaServed": "European Union"  
+}  
 ```  
+</details>  
 #### AutoFocus NGSI-v2 normalizzato Esempio  
-Ecco un esempio di un AutoFocus in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di AutoFocus in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si usano le opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
+{  
+  "id": "urn:ngsi-ld:AutoFocus:id:ENIM:82565304",  
+  "dateCreated": {  
+    "type": "Date-Time",  
+    "value": "2000-10-08T18:08:37Z"  
+  },  
+  "dateModified": {  
+    "type":  "DateTime",  
+      "@value": "1982-01-28T03:38:13Z"  
+  },  
+  "source": {  
+    "type": "Text",  
+    "value": "Up animal heavy girl. Which citizen life see ground show."  
+  },  
+  "name": {  
+    "type": "Text",  
+    "value": "Fly knowledge guess. Respond open unit approach. Give likely fight she film usually forget."  
+  },  
+  "alternateName": {  
+    "type": "Text",  
+    "value": "Group than life public popular. Simply feel travel leave baby ok five author."  
+  },  
+  "description": {  
+    "type": "Text",  
+    "value": "Will board eight stuff hundred run. Nature Mrs speech suggest foot these."  
+  },  
+  "dataProvider": {  
+    "type": "Text",  
+    "value": "Machine level blue third parent today continue allow. Little car edge plant live radio. Still claim like degree force."  
+  },  
+  "owner": {  
+    "type": "array",  
+    "value": [  
+      "urn:ngsi-ld:AutoFocus:items:FVVV:45930843",  
+      "urn:ngsi-ld:AutoFocus:items:IXPP:46777984"  
+    ]  
+  },  
+  "seeAlso": {  
+    "type": "array",  
+    "value": [  
+      "urn:ngsi-ld:AutoFocus:items:LJSM:63192540"  
+    ]  
+  },  
+  "location": {  
+    "type": "geo:json",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        35.0296575,  
+        49.48666  
+      ]  
+    }  
+  },  
+  "address": {  
+    "type": "StructuredValue",  
+    "value": {  
+      "streetAddress": "Strong detail guess manage possible eye.",  
+      "addressLocality": "Whose one involve simple thing star. Good ask it middle apply.",  
+      "addressRegion": "Building old scientist ball front agency hot. Provide article special.",  
+      "addressCountry": "Fact tonight professor minute sort professional significant. Me degree treatment young kitchen ball speak.",  
+      "postalCode": "Note level upon only usually administration. Open attack or watch base.",  
+      "postOfficeBoxNumber": "Class sound contain. Key appear skin half. Phone floor I enjoy rock suggest success travel."  
+    }  
+  },  
+  "areaServed": {  
+    "type": "Text",  
+    "value": "Material national good good join particularly bill. Crime once entire. Political imagine source."  
+  }  
+}  
 ```  
-#### AutoFocus NGSI-LD valori chiave Esempio  
-Ecco un esempio di un AutoFocus in formato JSON-LD come key-values. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### Valori chiave AutoFocus NGSI-LD Esempio  
+Ecco un esempio di AutoFocus in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
+{  
+    "id": "urn:ngsi-ld:AutoFocus:id:MDJJ:39804414",  
+    "dateCreated": "2016-09-05T02:46:41Z",  
+    "dateModified": "2019-09-26T17:37:19Z",  
+    "source": "Forget fear common east chance want. Writer city along simply money.",  
+    "name": "Ever probably seek first eight how follow Mrs. Choice western away either particular old.",  
+    "alternateName": "Modern already usually leader long. Rich region third authority employee not research.",  
+    "description": "Without million outside skin draw bar economic glass. Site course method speech respond.",  
+    "dataProvider": "Travel view final write commercial next. Edge stop according environmental money himself. Loss simply resource return protect he.",  
+    "owner": [  
+        "urn:ngsi-ld:AutoFocus:items:URFP:37492409",  
+        "urn:ngsi-ld:AutoFocus:items:QPKC:88758327"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:AutoFocus:items:NHYN:18141122",  
+        "urn:ngsi-ld:AutoFocus:items:KKHG:49747728"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            35.771134,  
+            133.186789  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Franklinstrasse 13",  
+        "addressLocality": "Berlin",  
+        "addressRegion": "Berlin",  
+        "addressCountry": "Germany",  
+        "postalCode": "10587",  
+        "postOfficeBoxNumber": ""  
+    },  
+    "areaServed": "European Union",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+    ]  
+}  
 ```  
+</details>  
 #### AutoFocus NGSI-LD normalizzato Esempio  
-Ecco un esempio di un AutoFocus in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di AutoFocus in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
+{  
+    "id": "urn:ngsi-ld:AutoFocus:id:ENIM:82565304",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2000-10-08T18:08:37Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1982-01-28T03:38:13Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Up animal heavy girl. Which citizen life see ground show."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Fly knowledge guess. Respond open unit approach. Give likely fight she film usually forget."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Group than life public popular. Simply feel travel leave baby ok five author."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Will board eight stuff hundred run. Nature Mrs speech suggest foot these."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Machine level blue third parent today continue allow. Little car edge plant live radio. Still claim like degree force."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:AutoFocus:items:FVVV:45930843",  
+            "urn:ngsi-ld:AutoFocus:items:IXPP:46777984"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:AutoFocus:items:LJSM:63192540"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                35.0296575,  
+                49.48666  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Strong detail guess manage possible eye.",  
+            "addressLocality": "Whose one involve simple thing star. Good ask it middle apply.",  
+            "addressRegion": "Building old scientist ball front agency hot. Provide article special.",  
+            "addressCountry": "Fact tonight professor minute sort professional significant. Me degree treatment young kitchen ball speak.",  
+            "postalCode": "Note level upon only usually administration. Open attack or watch base.",  
+            "postOfficeBoxNumber": "Class sound contain. Key appear skin half. Phone floor I enjoy rock suggest success travel."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Material national good good join particularly bill. Crime once entire. Political imagine source."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+    ]  
+}  
 ```  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
