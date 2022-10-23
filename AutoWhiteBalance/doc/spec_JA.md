@@ -1,17 +1,32 @@
-エンティティオートホワイトバランス  
-=================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティオートホワイトバランス  
+=================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/AutoWhiteBalance/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな説明です。**IoTDataのデータモデルをスマートデータモデルに変換したものです。このリソースは、オートバランスのオン/オフ機能を記述する。autoWhiteBalance」はブール値である。AutoWhiteBalanceの値が'true'であれば、オートホワイトバランス機能がオンであることを意味する。AutoWhiteBalanceの値が'false'の場合、オートホワイトバランス機能がオフであることを意味します。**  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**IoTData データモデルをスマートデータモデルプログラムに適応させたもの。本 Resource は、オートバランスのオン/オフ機能を記述する。Property 'autoWhiteBalance'はブール値である。AutoWhiteBalance 値が 'true' の場合は、オートホワイトバランス機能がオンであることを示す。AutoWhiteBalance 値が 'false' の場合は、オートホワイトバランス機能がオフであることを意味する。**  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `autoWhiteBalance`: オートホワイトバランス機能の状態です。  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `if`: このResourceがサポートしているOCF Interface set。  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `n`: リソースのフレンドリーネーム  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `rt`: The Resource Type。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSIエンティティタイプ。それはAutoWhiteBalanceでなければならない。    
-必須項目  
-- `id`  - `type`    
-このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)から来ています。NGSIの要件に適合するように拡張されています。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `autoWhiteBalance[boolean]`: オートホワイトバランス機能の状態です。  - `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `if[array]`: このResourceがサポートするOCF Interfaceセット。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `n[string]`: リソースのフレンドリ名  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `rt[array]`: リソースタイプです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSIエンティティタイプ。AutoWhiteBalanceでなければならない。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)に由来しています。NGSIの要件に適合するように拡張されている。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 AutoWhiteBalance:    
@@ -328,9 +343,14 @@ AutoWhiteBalance:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### AutoWhiteBalance NGSI-v2 キーバリューの例  
-JSON-LD形式でkey-valuesとしてAutoWhiteBalanceの例を示します。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### AutoWhiteBalance NGSI-v2 key-value の例。  
+以下は、AutoWhiteBalanceをJSON-LD形式でkey-valuesにした例である。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:AutoWhiteBalance:id:YBGX:79096195",  
@@ -367,8 +387,10 @@ AutoWhiteBalance:
   "areaServed": "Generation soldier history financial their. Simple tough clearly Congress artist wonder. International morning shoulder help."  
 }  
 ```  
-#### AutoWhiteBalance NGSI-v2の正規化例  
-ここでは、正規化されたJSON-LD形式のAutoWhiteBalanceの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### AutoWhiteBalance NGSI-v2 正規化例  
+以下は、AutoWhiteBalance を JSON-LD 形式で正規化した例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -446,127 +468,141 @@ AutoWhiteBalance:
   }  
 }  
 ```  
-#### AutoWhiteBalance NGSI-LDのキーバリューの例。  
-AutoWhiteBalanceをkey-valuesとしてJSON-LD形式で表現した例を示します。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### AutoWhiteBalance NGSI-LD キー値例  
+以下は、AutoWhiteBalanceをJSON-LD形式でkey-valuesにした例である。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:AutoWhiteBalance:id:YBGX:79096195",  
-  "dateCreated": "1988-12-28T18:35:21Z",  
-  "dateModified": "1995-01-26T21:45:21Z",  
-  "source": "Identify most event degree. Beautiful national baby Mr. True brother sign after head. Enjoy rather last evidence easy.",  
-  "name": "Name million behavior. Arrive enough kitchen financial control. Top Mr add structure.",  
-  "alternateName": "Computer long food sense born break air care. Rule camera college ability mind defense.",  
-  "description": "Reflect book religious rule argue born second artist. Class perform anything. Couple together dream.",  
-  "dataProvider": "Instead present poor decision manage tend. Receive plan thus already. Could see population full himself.",  
-  "owner": [  
-    "urn:ngsi-ld:AutoWhiteBalance:items:GMHA:08426645",  
-    "urn:ngsi-ld:AutoWhiteBalance:items:OQIY:30011178"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:AutoWhiteBalance:items:FELU:43170881",  
-    "urn:ngsi-ld:AutoWhiteBalance:items:RFVY:17552908"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -43.3466335,  
-      -125.620359  
+    "id": "urn:ngsi-ld:AutoWhiteBalance:id:YBGX:79096195",  
+    "dateCreated": "1988-12-28T18:35:21Z",  
+    "dateModified": "1995-01-26T21:45:21Z",  
+    "source": "Identify most event degree. Beautiful national baby Mr. True brother sign after head. Enjoy rather last evidence easy.",  
+    "name": "Name million behavior. Arrive enough kitchen financial control. Top Mr add structure.",  
+    "alternateName": "Computer long food sense born break air care. Rule camera college ability mind defense.",  
+    "description": "Reflect book religious rule argue born second artist. Class perform anything. Couple together dream.",  
+    "dataProvider": "Instead present poor decision manage tend. Receive plan thus already. Could see population full himself.",  
+    "owner": [  
+        "urn:ngsi-ld:AutoWhiteBalance:items:GMHA:08426645",  
+        "urn:ngsi-ld:AutoWhiteBalance:items:OQIY:30011178"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:AutoWhiteBalance:items:FELU:43170881",  
+        "urn:ngsi-ld:AutoWhiteBalance:items:RFVY:17552908"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -43.3466335,  
+            -125.620359  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Bag form author.",  
+        "addressLocality": "Family along class boy analysis. One control citizen language blue eye painting.",  
+        "addressRegion": "Song ago begin wear either. Dinner establish theory until. Argue describe behavior step.",  
+        "addressCountry": "Few near year notice. Thank white there once rich. Nothing clear line artist off effort image.",  
+        "postalCode": "Fast bar language young husband. Loss million enough me.",  
+        "postOfficeBoxNumber": "I paper share operation billion play mouth smile."  
+    },  
+    "areaServed": "Generation soldier history financial their. Simple tough clearly Congress artist wonder. International morning shoulder help.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Bag form author.",  
-    "addressLocality": "Family along class boy analysis. One control citizen language blue eye painting.",  
-    "addressRegion": "Song ago begin wear either. Dinner establish theory until. Argue describe behavior step.",  
-    "addressCountry": "Few near year notice. Thank white there once rich. Nothing clear line artist off effort image.",  
-    "postalCode": "Fast bar language young husband. Loss million enough me.",  
-    "postOfficeBoxNumber": "I paper share operation billion play mouth smile."  
-  },  
-  "areaServed": "Generation soldier history financial their. Simple tough clearly Congress artist wonder. International morning shoulder help.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-#### AutoWhiteBalance NGSI-LDの正規化例  
-ここでは、正規化されたJSON-LD形式のAutoWhiteBalanceの例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### AutoWhiteBalance NGSI-LD 正規化例  
+以下は、AutoWhiteBalance を JSON-LD 形式で正規化した例である。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:AutoWhiteBalance:id:SHPY:77370068",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2003-06-25T11:21:45Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1996-05-23T06:32:59Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Experience side choose different. Guess military improve another course."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Store machine cup chair American who fill. Term kid feeling south old. Which page late argue."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Role science important truth early ask. Fight nice culture attack laugh real produce."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Television sense parent without. Performance as subject camera help career enough itself."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Part maybe marriage well once husband impact. Whom fund clear. With decade friend environmental daughter color."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:AutoWhiteBalance:items:SPJG:46454935",  
-      "urn:ngsi-ld:AutoWhiteBalance:items:NSUP:12033069"  
+    "id": "urn:ngsi-ld:AutoWhiteBalance:id:SHPY:77370068",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2003-06-25T11:21:45Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1996-05-23T06:32:59Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Experience side choose different. Guess military improve another course."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Store machine cup chair American who fill. Term kid feeling south old. Which page late argue."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Role science important truth early ask. Fight nice culture attack laugh real produce."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Television sense parent without. Performance as subject camera help career enough itself."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Part maybe marriage well once husband impact. Whom fund clear. With decade friend environmental daughter color."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:AutoWhiteBalance:items:SPJG:46454935",  
+            "urn:ngsi-ld:AutoWhiteBalance:items:NSUP:12033069"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:AutoWhiteBalance:items:RRVP:40192072"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -45.953554,  
+                -4.363316  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Education draw firm citizen police. Meet return third fill step series.",  
+            "addressLocality": "Of top son too land write. Building memory idea forget yeah here peace.",  
+            "addressRegion": "Nature race need them only mouth since answer. Early scientist seat public.",  
+            "addressCountry": "Daughter address adult eight sort go sign right. See bag hand long.",  
+            "postalCode": "Bag station others music increase. Family entire serious including away nothing move. Blood hard the visit represent over another.",  
+            "postOfficeBoxNumber": "Movement pay way person goal. Gun move environmental apply reality always. Member drive economic kid husband social growth game."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Least change unit environmental. Top long because against case turn. Performance beautiful save where consider note then minute."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:AutoWhiteBalance:items:RRVP:40192072"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -45.953554,  
-        -4.363316  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Education draw firm citizen police. Meet return third fill step series.",  
-      "addressLocality": "Of top son too land write. Building memory idea forget yeah here peace.",  
-      "addressRegion": "Nature race need them only mouth since answer. Early scientist seat public.",  
-      "addressCountry": "Daughter address adult eight sort go sign right. See bag hand long.",  
-      "postalCode": "Bag station others music increase. Family entire serious including away nothing move. Blood hard the visit represent over another.",  
-      "postOfficeBoxNumber": "Movement pay way person goal. Gun move environmental apply reality always. Member drive economic kid husband social growth game."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Least change unit environmental. Top long because against case turn. Performance beautiful save where consider note then minute."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
