@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entidad: PVArrayConnectionTerminal  
-==================================  
+==================================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.OCF/blob/master/PVArrayConnectionTerminal/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Descripción global: **Este recurso describe las funciones para el control y la monitorización del terminal de conexión del sistema FV basado en IEC 61850.**  
 versión: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `arraycurrent`: Corriente de salida del conjunto en amperios (A).  - `arrayvoltage`: Tensión de salida del conjunto en voltios (V).  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `if`: El conjunto de interfaces OCF que admite este recurso.  - `insulationresistance`: Resistencia de aislamiento del disyuntor (M Ohm).  - `leakagecurrent`: La corriente de fuga en mA.  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n`: Nombre amistoso del recurso  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `ratedarraycurrent`: Corriente nominal del conjunto (valores nominales de la corriente de máxima potencia * número de módulos) (A), definida en el momento de la fabricación.  - `ratedarrayvoltage`: Tensión nominal del conjunto (Valores nominales de la tensión de máxima potencia * número de módulos) (V)  - `rt`: El tipo de recurso  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `timestamp`: Una hora con formato RFC3339 que indique cuándo se observaron los datos (por ejemplo: 2016-02-15T09:19Z, 1996-12-19T16:39:57-08:00). Tenga en cuenta que debe utilizarse una resolución de tiempo de 1/100.  - `type`: Tipo de entidad NGSI. Tiene que ser PVArrayConnectionTerminal    
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>  
+- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `arraycurrent[number]`: Corriente de salida del conjunto en amperios (A).  - `arrayvoltage[number]`: Tensión de salida del conjunto en voltios (V).  - `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Una descripción de este artículo  - `id[*]`: Identificador único de la entidad  - `if[array]`: El conjunto de interfaces OCF que admite este recurso.  - `insulationresistance[number]`: Resistencia de aislamiento del disyuntor (M Ohm).  - `leakagecurrent[number]`: La corriente de fuga en mA.  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n[string]`: Nombre amigable del Recurso  - `name[string]`: El nombre de este artículo.  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `ratedarraycurrent[number]`: Corriente nominal del conjunto (valores nominales de la corriente de máxima potencia * número de módulos) (A), definida en el momento de la fabricación.  - `ratedarrayvoltage[number]`: Tensión nominal del conjunto (Valores nominales de la tensión de máxima potencia * número de módulos) (V)  - `rt[array]`: El tipo de recurso  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `timestamp[string]`: Una hora con formato RFC3339 que indique cuándo se observaron los datos (por ejemplo: 2016-02-15T09:19Z, 1996-12-19T16:39:57-08:00). Tenga en cuenta que debe utilizarse una resolución de tiempo de 1/100.  - `type[string]`: Tipo de entidad NGSI. Tiene que ser PVArrayConnectionTerminal  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propiedades requeridas  
-- `arraycurrent`  - `arrayvoltage`  - `id`  - `ratedarraycurrent`  - `ratedarrayvoltage`  - `timestamp`  - `type`    
+- `arraycurrent`  - `arrayvoltage`  - `id`  - `ratedarraycurrent`  - `ratedarrayvoltage`  - `timestamp`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Modelo de datos adaptado del original creado por la Open Connectivity Foundation. Repositorio original en https://github.com/openconnectivityfoundation/IoTDataModels  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 PVArrayConnectionTerminal:    
@@ -373,9 +386,14 @@ PVArrayConnectionTerminal:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Ejemplo de carga útil  
 #### PVArrayConnectionTerminal NGSI-v2 key-values Ejemplo  
 Aquí hay un ejemplo de un PVArrayConnectionTerminal en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:PVArrayConnectionTerminal:id:PBQS:43835461",  
@@ -447,8 +465,10 @@ PVArrayConnectionTerminal:
   "type": "PVArrayConnectionTerminal"  
 }  
 ```  
+</details>  
 #### PVArrayConnectionTerminal NGSI-v2 normalizado Ejemplo  
 Aquí hay un ejemplo de un PVArrayConnectionTerminal en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -595,211 +615,225 @@ PVArrayConnectionTerminal:
   }  
 }  
 ```  
+</details>  
 #### PVArrayConnectionTerminal NGSI-LD key-values Ejemplo  
 Aquí hay un ejemplo de un PVArrayConnectionTerminal en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:PVArrayConnectionTerminal:id:PBQS:43835461",  
-  "dateCreated": "2012-07-24T16:11:16Z",  
-  "dateModified": "2003-05-24T19:12:32Z",  
-  "source": "Area able surface south attention measure involve. Establish product because floor reason exist design effect. Place point Republican conference ten. Professional teach budget mother unit.",  
-  "name": "Send offer season significant. Or glass especially Democrat enter spring people.",  
-  "alternateName": "Six benefit relationship. Language stay she fact explain growth sister. Reach reveal police day key read office.",  
-  "description": "Two might million benefit continue specific clearly street. Society dream show of.",  
-  "dataProvider": "Bad either recently rate candidate plan. Deep young again pass provide something ok.",  
-  "owner": [  
-    "urn:ngsi-ld:PVArrayConnectionTerminal:items:GZHR:33550282",  
-    "urn:ngsi-ld:PVArrayConnectionTerminal:items:JFYB:81797940"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:PVArrayConnectionTerminal:items:QZDS:82605439",  
-    "urn:ngsi-ld:PVArrayConnectionTerminal:items:CCOW:10298726"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -16.2130695,  
-      103.091866  
+    "id": "urn:ngsi-ld:PVArrayConnectionTerminal:id:PBQS:43835461",  
+    "dateCreated": "2012-07-24T16:11:16Z",  
+    "dateModified": "2003-05-24T19:12:32Z",  
+    "source": "Area able surface south attention measure involve. Establish product because floor reason exist design effect. Place point Republican conference ten. Professional teach budget mother unit.",  
+    "name": "Send offer season significant. Or glass especially Democrat enter spring people.",  
+    "alternateName": "Six benefit relationship. Language stay she fact explain growth sister. Reach reveal police day key read office.",  
+    "description": "Two might million benefit continue specific clearly street. Society dream show of.",  
+    "dataProvider": "Bad either recently rate candidate plan. Deep young again pass provide something ok.",  
+    "owner": [  
+        "urn:ngsi-ld:PVArrayConnectionTerminal:items:GZHR:33550282",  
+        "urn:ngsi-ld:PVArrayConnectionTerminal:items:JFYB:81797940"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:PVArrayConnectionTerminal:items:QZDS:82605439",  
+        "urn:ngsi-ld:PVArrayConnectionTerminal:items:CCOW:10298726"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -16.2130695,  
+            103.091866  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Like business much top tree fish. Exist place he two. Weight stop ball development yard already. Record cultural ground foreign purpose director make.",  
+        "addressLocality": "Police subject cup figure media stuff. My through sure good scene. Less action among hard quite leave stand apply.",  
+        "addressRegion": "Notice my power know water standard. Actually none effect at smile.",  
+        "addressCountry": "Production defense however dinner say successful. Ok model enter subject kid reduce art.",  
+        "postalCode": "Physical management she fish land director. Name nothing beyond kitchen.",  
+        "postOfficeBoxNumber": "Rock economic add physical power. Away physical size woman garden surface foreign."  
+    },  
+    "areaServed": "Over choice nearly they budget find. Power others environmental since page brother party house.",  
+    "rt": [  
+        "oic.r.pvconnectionterminal",  
+        "oic.r.pvconnectionterminal"  
+    ],  
+    "ratedarrayvoltage": {  
+        "type": "Property",  
+        "value": 391.0  
+    },  
+    "ratedarraycurrent": {  
+        "type": "Property",  
+        "value": 169.2  
+    },  
+    "arrayvoltage": {  
+        "type": "Property",  
+        "value": 763.9  
+    },  
+    "arraycurrent": {  
+        "type": "Property",  
+        "value": 519.0  
+    },  
+    "leakagecurrent": {  
+        "type": "Property",  
+        "value": 313.0  
+    },  
+    "insulationresistance": {  
+        "type": "Property",  
+        "value": 348.8  
+    },  
+    "timestamp": "1979-06-05T23:42:36Z",  
+    "n": "Reason movie student performance. Best gas including. Huge food deep relate raise fear.",  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.s"  
+    ],  
+    "type": "PVArrayConnectionTerminal",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Like business much top tree fish. Exist place he two. Weight stop ball development yard already. Record cultural ground foreign purpose director make.",  
-    "addressLocality": "Police subject cup figure media stuff. My through sure good scene. Less action among hard quite leave stand apply.",  
-    "addressRegion": "Notice my power know water standard. Actually none effect at smile.",  
-    "addressCountry": "Production defense however dinner say successful. Ok model enter subject kid reduce art.",  
-    "postalCode": "Physical management she fish land director. Name nothing beyond kitchen.",  
-    "postOfficeBoxNumber": "Rock economic add physical power. Away physical size woman garden surface foreign."  
-  },  
-  "areaServed": "Over choice nearly they budget find. Power others environmental since page brother party house.",  
-  "rt": [  
-    "oic.r.pvconnectionterminal",  
-    "oic.r.pvconnectionterminal"  
-  ],  
-  "ratedarrayvoltage": {  
-    "type": "Property",  
-    "value": 391.0  
-  },  
-  "ratedarraycurrent": {  
-    "type": "Property",  
-    "value": 169.2  
-  },  
-  "arrayvoltage": {  
-    "type": "Property",  
-    "value": 763.9  
-  },  
-  "arraycurrent": {  
-    "type": "Property",  
-    "value": 519.0  
-  },  
-  "leakagecurrent": {  
-    "type": "Property",  
-    "value": 313.0  
-  },  
-  "insulationresistance": {  
-    "type": "Property",  
-    "value": 348.8  
-  },  
-  "timestamp": "1979-06-05T23:42:36Z",  
-  "n": "Reason movie student performance. Best gas including. Huge food deep relate raise fear.",  
-  "if": [  
-    "oic.if.baseline",  
-    "oic.if.s"  
-  ],  
-  "type": "PVArrayConnectionTerminal",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### PVArrayConnectionTerminal NGSI-LD normalizado Ejemplo  
 Aquí hay un ejemplo de un PVArrayConnectionTerminal en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:PVArrayConnectionTerminal:id:TSKM:94319420",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1985-04-07T15:49:57Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2001-06-17T14:35:04Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Sit animal word hair design. Suffer until town human. Ever statement race ready also TV rock. Indicate sing rate your civil reality house."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Behavior Congress skill region huge. Young put sound agreement especially line section. Management approach work high great available charge rate."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Success south top especially. City ask store lawyer."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Hospital father remember including enjoy special. Green military interesting close they. Culture health doctor light seem magazine."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Anything performance building its drug. Character officer dream bar open body reflect."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:PVArrayConnectionTerminal:items:WIPM:01594399",  
-      "urn:ngsi-ld:PVArrayConnectionTerminal:items:MNFV:28890953"  
+    "id": "urn:ngsi-ld:PVArrayConnectionTerminal:id:TSKM:94319420",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1985-04-07T15:49:57Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2001-06-17T14:35:04Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Sit animal word hair design. Suffer until town human. Ever statement race ready also TV rock. Indicate sing rate your civil reality house."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Behavior Congress skill region huge. Young put sound agreement especially line section. Management approach work high great available charge rate."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Success south top especially. City ask store lawyer."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Hospital father remember including enjoy special. Green military interesting close they. Culture health doctor light seem magazine."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Anything performance building its drug. Character officer dream bar open body reflect."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:PVArrayConnectionTerminal:items:WIPM:01594399",  
+            "urn:ngsi-ld:PVArrayConnectionTerminal:items:MNFV:28890953"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:PVArrayConnectionTerminal:items:VXKM:24155728"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -56.20957,  
+                -170.652443  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Tv second concern least price relationship. International fly debate indicate exactly. Business experience control relate entire style game.",  
+            "addressLocality": "Themselves go financial skill sound full half. Mr our accept plant adult beat partner. Red present movement option reason low indicate.",  
+            "addressRegion": "Usually stand evening deep activity. Instead catch physical song cell. Unit member would dinner form other water treat.",  
+            "addressCountry": "Share place reduce available leader nor. Smile them fly. Can main example water technology world break.",  
+            "postalCode": "Assume fight fund them number white. Music again knowledge defense. Establish once those degree board data.",  
+            "postOfficeBoxNumber": "Wear air crime performance."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Fill person national. Concern dream upon."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.pvconnectionterminal"  
+        ]  
+    },  
+    "ratedarrayvoltage": {  
+        "type": "Property",  
+        "value": 775.5  
+    },  
+    "ratedarraycurrent": {  
+        "type": "Property",  
+        "value": 712.8  
+    },  
+    "arrayvoltage": {  
+        "type": "Property",  
+        "value": 977.5  
+    },  
+    "arraycurrent": {  
+        "type": "Property",  
+        "value": 460.0  
+    },  
+    "leakagecurrent": {  
+        "type": "Property",  
+        "value": 951.2  
+    },  
+    "insulationresistance": {  
+        "type": "Property",  
+        "value": 438.9  
+    },  
+    "timestamp": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1976-04-28T20:02:52Z"  
+        }  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Owner surface news eat piece land. Front realize cover week within along. Student war painting rate."  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.s",  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "PVArrayConnectionTerminal",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:PVArrayConnectionTerminal:items:VXKM:24155728"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -56.20957,  
-        -170.652443  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Tv second concern least price relationship. International fly debate indicate exactly. Business experience control relate entire style game.",  
-      "addressLocality": "Themselves go financial skill sound full half. Mr our accept plant adult beat partner. Red present movement option reason low indicate.",  
-      "addressRegion": "Usually stand evening deep activity. Instead catch physical song cell. Unit member would dinner form other water treat.",  
-      "addressCountry": "Share place reduce available leader nor. Smile them fly. Can main example water technology world break.",  
-      "postalCode": "Assume fight fund them number white. Music again knowledge defense. Establish once those degree board data.",  
-      "postOfficeBoxNumber": "Wear air crime performance."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Fill person national. Concern dream upon."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.pvconnectionterminal"  
-    ]  
-  },  
-  "ratedarrayvoltage": {  
-    "type": "Property",  
-    "value": 775.5  
-  },  
-  "ratedarraycurrent": {  
-    "type": "Property",  
-    "value": 712.8  
-  },  
-  "arrayvoltage": {  
-    "type": "Property",  
-    "value": 977.5  
-  },  
-  "arraycurrent": {  
-    "type": "Property",  
-    "value": 460.0  
-  },  
-  "leakagecurrent": {  
-    "type": "Property",  
-    "value": 951.2  
-  },  
-  "insulationresistance": {  
-    "type": "Property",  
-    "value": 438.9  
-  },  
-  "timestamp": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1976-04-28T20:02:52Z"  
-    }  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Owner surface news eat piece land. Front realize cover week within along. Student war painting rate."  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.s",  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "type": "PVArrayConnectionTerminal",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
