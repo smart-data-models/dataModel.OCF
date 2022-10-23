@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-Entità: HeartRate  
-=================  
+Entità: Frequenza cardiaca  
+==========================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.OCF/blob/master/HeartRate/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Questa risorsa descrive le proprietà associate alla frequenza cardiaca di una persona. L'unità, che è quella di default, è bpm. La proprietà heartrate è un valore di sola lettura fornito dal server. Quando l'intervallo (da 'oic.r.baseresource') è omesso il default è da 0 a +MAXFLOAT.**  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **Questa risorsa descrive le proprietà associate alla frequenza cardiaca di una persona. L'unità, che è quella predefinita, è bpm. La proprietà heartrate è un valore di sola lettura fornito dal server. Quando l'intervallo (da 'oic.r.baseresource') è omesso, il valore predefinito è compreso tra 0 e +MAXFLOAT.  
 versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `heartrate`: Questa proprietà descrive la frequenza cardiaca in bpm.  - `id`: Identificatore unico dell'entità  - `if`: L'insieme di interfacce OCF supportato da questa risorsa.  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n`: Nome amichevole della risorsa  - `name`: Il nome di questo articolo.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `range`: L'intervallo valido per la proprietà nella risorsa come un intero. Il primo valore nell'array è il valore minimo, il secondo valore nell'array è il valore massimo.  - `rt`: Il tipo di risorsa.  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `step`: Valore di passo attraverso l'intervallo definito quando l'intervallo è un intero.  Questo è l'incremento per i valori validi attraverso l'intervallo; quindi se l'intervallo è 0..10 e il passo è 2 allora i valori validi sono 0,2,4,6,8,10.  - `type`: Tipo di entità NGSI. Deve essere HeartRate    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `heartrate[integer]`: Questa proprietà descrive la frequenza cardiaca in bpm.  - `id[*]`: Identificatore univoco dell'entità  - `if[array]`: Il set di interfacce OCF supportato da questa risorsa.  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `n[string]`: Nome amichevole della risorsa  - `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `range[array]`: L'intervallo valido per la proprietà nella risorsa come numero intero. Il primo valore della matrice è il valore minimo, il secondo valore della matrice è il valore massimo.  - `rt[array]`: Il tipo di risorsa.  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `step[integer]`: Valore di passo nell'intervallo definito quando l'intervallo è un numero intero.  Si tratta dell'incremento per i valori validi nell'intervallo; quindi se l'intervallo è 0..10 e il passo è 2, i valori validi sono 0,2,4,6,8,10.  - `type[string]`: Tipo di entità NGSI. Deve essere HeartRate  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- `heartrate`  - `id`  - `type`    
+- `heartrate`  - `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Modello di dati adattato dall'originale creato dalla Open Connectivity Foundation. Repository originale in https://github.com/openconnectivityfoundation/IoTDataModels  
-## Descrizione del modello di dati delle proprietà  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 HeartRate:    
@@ -348,9 +361,14 @@ HeartRate:
   x-version: 0.0.1    
 ```  
 </details>    
-## Esempio di payloads  
-#### HeartRate NGSI-v2 valori chiave Esempio  
-Ecco un esempio di un HeartRate in formato JSON-LD come key-values. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
+#### Valori-chiave HeartRate NGSI-v2 Esempio  
+Ecco un esempio di HeartRate in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:HeartRate:id:WBGG:05919309",  
@@ -409,8 +427,10 @@ HeartRate:
   "type": "HeartRate"  
 }  
 ```  
-#### HeartRate NGSI-v2 normalizzato Esempio  
-Ecco un esempio di un HeartRate in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### Frequenza cardiaca NGSI-v2 normalizzata Esempio  
+Ecco un esempio di HeartRate in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -531,181 +551,195 @@ HeartRate:
   }  
 }  
 ```  
-#### HeartRate NGSI-LD valori chiave Esempio  
-Ecco un esempio di un HeartRate in formato JSON-LD come key-values. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### Valori chiave NGSI-LD della frequenza cardiaca Esempio  
+Ecco un esempio di HeartRate in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:HeartRate:id:WBGG:05919309",  
-  "dateCreated": "1985-03-01T05:58:44Z",  
-  "dateModified": "1976-07-25T02:17:31Z",  
-  "source": "Often include red top certain. At hair lay entire strategy friend. Perhaps scientist court decide.",  
-  "name": "Side interest will account. Control coach detail radio direction case. Let institution successful range.",  
-  "alternateName": "Sure drop American shake. Different edge position wrong south majority institution.",  
-  "description": "Size relationship upon person activity. Doctor dark center accept law unit. Identify stand still social position use magazine.",  
-  "dataProvider": "Me into real strategy score public peace chair. Tell doctor hard notice.",  
-  "owner": [  
-    "urn:ngsi-ld:HeartRate:items:LZKI:27056879",  
-    "urn:ngsi-ld:HeartRate:items:KWVF:14431346"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:HeartRate:items:GNNF:45249104",  
-    "urn:ngsi-ld:HeartRate:items:ICON:63518480"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      60.4631845,  
-      -4.194848  
+    "id": "urn:ngsi-ld:HeartRate:id:WBGG:05919309",  
+    "dateCreated": "1985-03-01T05:58:44Z",  
+    "dateModified": "1976-07-25T02:17:31Z",  
+    "source": "Often include red top certain. At hair lay entire strategy friend. Perhaps scientist court decide.",  
+    "name": "Side interest will account. Control coach detail radio direction case. Let institution successful range.",  
+    "alternateName": "Sure drop American shake. Different edge position wrong south majority institution.",  
+    "description": "Size relationship upon person activity. Doctor dark center accept law unit. Identify stand still social position use magazine.",  
+    "dataProvider": "Me into real strategy score public peace chair. Tell doctor hard notice.",  
+    "owner": [  
+        "urn:ngsi-ld:HeartRate:items:LZKI:27056879",  
+        "urn:ngsi-ld:HeartRate:items:KWVF:14431346"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:HeartRate:items:GNNF:45249104",  
+        "urn:ngsi-ld:HeartRate:items:ICON:63518480"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            60.4631845,  
+            -4.194848  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Box care beat last. Enjoy security pull inside company half. Strong huge help amount write environment.",  
+        "addressLocality": "Before size past article. Week music finish lot manage quality.",  
+        "addressRegion": "There history indeed modern identify difference already speech. Again use risk strong since.",  
+        "addressCountry": "Sort phone generation. American add second above near drop might.",  
+        "postalCode": "Join account guess. Most occur perhaps item enjoy couple.",  
+        "postOfficeBoxNumber": "Meeting everyone we evening onto. We writer together why whose light."  
+    },  
+    "areaServed": "Though available fire great television artist way. Student few building summer. Bar discuss join wife. Sound book wall during.",  
+    "heartrate": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "rt": [  
+        "oic.r.heartrate",  
+        "oic.r.heartrate"  
+    ],  
+    "n": "Whole magazine truth stop whose.",  
+    "if": [  
+        "oic.if.s",  
+        "oic.if.baseline"  
+    ],  
+    "range": [  
+        864,  
+        864  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "type": "HeartRate",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Box care beat last. Enjoy security pull inside company half. Strong huge help amount write environment.",  
-    "addressLocality": "Before size past article. Week music finish lot manage quality.",  
-    "addressRegion": "There history indeed modern identify difference already speech. Again use risk strong since.",  
-    "addressCountry": "Sort phone generation. American add second above near drop might.",  
-    "postalCode": "Join account guess. Most occur perhaps item enjoy couple.",  
-    "postOfficeBoxNumber": "Meeting everyone we evening onto. We writer together why whose light."  
-  },  
-  "areaServed": "Though available fire great television artist way. Student few building summer. Bar discuss join wife. Sound book wall during.",  
-  "heartrate": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "rt": [  
-    "oic.r.heartrate",  
-    "oic.r.heartrate"  
-  ],  
-  "n": "Whole magazine truth stop whose.",  
-  "if": [  
-    "oic.if.s",  
-    "oic.if.baseline"  
-  ],  
-  "range": [  
-    864,  
-    864  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "type": "HeartRate",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-#### HeartRate NGSI-LD normalizzato Esempio  
-Ecco un esempio di un HeartRate in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### Frequenza cardiaca normalizzata NGSI-LD Esempio  
+Ecco un esempio di HeartRate in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si usano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:HeartRate:id:NFBD:30269076",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2007-12-09T09:52:06Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2018-12-18T03:13:55Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Follow discover we each reach democratic. View space agree seven month throughout city security."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Agent game world appear per type carry. Per family authority public cost sell."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Keep make long provide. Look try training check so or Mrs."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Federal line lay. Step event staff maybe who purpose from. Brother organization process relationship art."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Middle language kid. Become different president care election computer world parent."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:HeartRate:items:GODZ:83600727",  
-      "urn:ngsi-ld:HeartRate:items:ZCNU:18685273"  
+    "id": "urn:ngsi-ld:HeartRate:id:NFBD:30269076",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2007-12-09T09:52:06Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2018-12-18T03:13:55Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Follow discover we each reach democratic. View space agree seven month throughout city security."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Agent game world appear per type carry. Per family authority public cost sell."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Keep make long provide. Look try training check so or Mrs."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Federal line lay. Step event staff maybe who purpose from. Brother organization process relationship art."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Middle language kid. Become different president care election computer world parent."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:HeartRate:items:GODZ:83600727",  
+            "urn:ngsi-ld:HeartRate:items:ZCNU:18685273"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:HeartRate:items:ABTG:22875588"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                32.8233835,  
+                174.295929  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Young free other figure mouth ever become. Boy really majority power.",  
+            "addressLocality": "Myself action impact. Kid that structure unit. Begin clear art thus official.",  
+            "addressRegion": "Bring bank exist place particular adult alone. Such drug finally here. Stand group project standard true organization.",  
+            "addressCountry": "General score pattern our. Although policy start enjoy. Serve family life four fact compare season Mr.",  
+            "postalCode": "Represent smile such. Travel house buy wind marriage affect blue customer. Effect then wait many.",  
+            "postOfficeBoxNumber": "Them opportunity get goal firm sound. Ever state man recently candidate behavior many. Think election Democrat think prevent particular."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Man member spring issue food. Walk middle development many maybe word defense great."  
+    },  
+    "heartrate": {  
+        "type": "Property",  
+        "value": 583  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.heartrate"  
+        ]  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Debate work television central left appear. Agent stop speech specific meet question option. Son part social traditional blue phone second class."  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.s"  
+        ]  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            764,  
+            82  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 414  
+    },  
+    "type": "HeartRate",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:HeartRate:items:ABTG:22875588"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        32.8233835,  
-        174.295929  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Young free other figure mouth ever become. Boy really majority power.",  
-      "addressLocality": "Myself action impact. Kid that structure unit. Begin clear art thus official.",  
-      "addressRegion": "Bring bank exist place particular adult alone. Such drug finally here. Stand group project standard true organization.",  
-      "addressCountry": "General score pattern our. Although policy start enjoy. Serve family life four fact compare season Mr.",  
-      "postalCode": "Represent smile such. Travel house buy wind marriage affect blue customer. Effect then wait many.",  
-      "postOfficeBoxNumber": "Them opportunity get goal firm sound. Ever state man recently candidate behavior many. Think election Democrat think prevent particular."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Man member spring issue food. Walk middle development many maybe word defense great."  
-  },  
-  "heartrate": {  
-    "type": "Property",  
-    "value": 583  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.heartrate"  
-    ]  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Debate work television central left appear. Agent stop speech specific meet question option. Son part social traditional blue phone second class."  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.s"  
-    ]  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      764,  
-      82  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 414  
-  },  
-  "type": "HeartRate",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
