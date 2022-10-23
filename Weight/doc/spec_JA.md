@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-事業体重量  
-=====  
+エンティティ重量  
+========<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/Weight/LICENSE.md)  
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述。**単位は、kg、g、lb、oz のいずれか一つである。  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述です。**単位は、kg、g、lb、oz のいずれか一つである。  
 バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `id`: エンティティの一意な識別子  - `if`: このリソースがサポートする OCF インタフェースセット。  - `location`: アイテムへのGeojsonリファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `n`: リソースのフレンドリ名  - `name`: このアイテムの名称です。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `precision`: precision'の値が公開されると、ResourceのPropertiesに対して+/-の許容範囲を提供します。したがって、あるプロパティがある値にUPDATEされ、そのプロパティがRETRIEVEDされた場合、RETRIEVEDされた値は設定された値+/-精度の範囲内であれば有効である。  - `range`: リソースに含まれるプロパティの有効範囲を数値で表したもの。配列の最初の値が最小値、2 番目の値が最大値となります。  - `rt`: リソースの種類  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで指定する文字の列。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `step`: 定義された範囲のステップ値（範囲が数値の場合は整数）。  範囲が0.0〜10.0でステップが2.5の場合、有効な値は0.0、2.5、5.0、7.5、10.0である。  - `type`: NGSIエンティティタイプ。それはWeightでなければならない  - `units`: 重量単位  - `weight`: 物体の重さ    
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `if[array]`: このリソースがサポートする OCF インタフェースセット。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `n[string]`: リソースのフレンドリ名  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `precision[number]`: 公開されるとき、'precision'の値は、ResourceのPropertyに対して+/-の許容範囲を提供する。したがって、あるプロパティがある値にUPDATEされ、そのプロパティがRETRIEVEDされた場合、RETRIEVEDされた値は設定された値+/-精度の範囲内であれば有効である。  - `range[array]`: Resource に含まれる Property の有効範囲を数値で表します。配列の最初の値が最小値、2 番目の値が最大値となります。  - `rt[array]`: リソースの種類  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `step[number]`: 定義された範囲にわたるステップ値。  範囲が0.0〜10.0でステップが2.5の場合、有効な値は0.0、2.5、5.0、7.5、10.0である。  - `type[string]`: NGSIエンティティタイプ。それはWeightでなければならない  - `units[string]`: 重量単位  - `weight[number]`: 物体の重さ  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 必要なプロパティ  
-- `id`  - `type`  - `units`  - `weight`    
+- `id`  - `type`  - `units`  - `weight`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 データモデルは、Open Connectivity Foundationが作成したオリジナルを引用しています。https://github.com/openconnectivityfoundation/IoTDataModels のオリジナルリポジトリ  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
 アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Weight:    
@@ -369,9 +382,14 @@ Weight:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
 #### NGSI-v2 キー値の重み付け 例  
-ここでは、WeightをJSON-LD形式でkey-valueとした例を示します。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+ここでは、WeightをJSON-LD形式でkey-valuesにした例を示す。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Weight:id:OJUO:43383279",  
@@ -435,8 +453,10 @@ Weight:
   "type": "Weight"  
 }  
 ```  
+</details>  
 #### 重量 NGSI-v2 正規化例  
 以下は、正規化されたJSON-LD形式のWeightの例である。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -568,194 +588,208 @@ Weight:
   }  
 }  
 ```  
+</details>  
 #### 重み NGSI-LD キー値 例  
-ここでは、WeightをJSON-LD形式でkey-valueとした例を示します。これは `options=keyValues` を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+ここでは、WeightをJSON-LD形式でkey-valuesにした例を示す。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Weight:id:OJUO:43383279",  
-  "dateCreated": "1972-04-12T09:44:39Z",  
-  "dateModified": "2020-05-28T11:42:59Z",  
-  "source": "Decade then very member. Find above artist store.",  
-  "name": "Fact artist sport happen perhaps assume responsibility. Full subject turn design voice road degree discover.",  
-  "alternateName": "Listen hospital anything teach foot. Present far food maintain play bring keep billion.",  
-  "description": "Artist each follow soldier executive camera wind.",  
-  "dataProvider": "Lose where area his kitchen. Box method work us I can ability.",  
-  "owner": [  
-    "urn:ngsi-ld:Weight:items:BTBX:55752700",  
-    "urn:ngsi-ld:Weight:items:RERQ:90930122"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Weight:items:KRUV:71413026",  
-    "urn:ngsi-ld:Weight:items:PTWT:50710894"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -12.433652,  
-      172.571818  
+    "id": "urn:ngsi-ld:Weight:id:OJUO:43383279",  
+    "dateCreated": "1972-04-12T09:44:39Z",  
+    "dateModified": "2020-05-28T11:42:59Z",  
+    "source": "Decade then very member. Find above artist store.",  
+    "name": "Fact artist sport happen perhaps assume responsibility. Full subject turn design voice road degree discover.",  
+    "alternateName": "Listen hospital anything teach foot. Present far food maintain play bring keep billion.",  
+    "description": "Artist each follow soldier executive camera wind.",  
+    "dataProvider": "Lose where area his kitchen. Box method work us I can ability.",  
+    "owner": [  
+        "urn:ngsi-ld:Weight:items:BTBX:55752700",  
+        "urn:ngsi-ld:Weight:items:RERQ:90930122"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Weight:items:KRUV:71413026",  
+        "urn:ngsi-ld:Weight:items:PTWT:50710894"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -12.433652,  
+            172.571818  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Alone over street network year ask up black. Game meeting population wife sell past country.",  
+        "addressLocality": "Rich break base line great prepare speech. Growth above reduce dog.",  
+        "addressRegion": "Science various interest civil. Theory value people administration natural. Others how need.",  
+        "addressCountry": "Probably field participant report nature. Arm hospital process none already growth.",  
+        "postalCode": "Fund listen though suffer phone. Everybody environment movement man left.",  
+        "postOfficeBoxNumber": "Their hair call need evidence hospital surface. Mouth newspaper chance resource protect. Court enough hard law trouble second."  
+    },  
+    "areaServed": "Skin over perform happen. Race action protect teach.",  
+    "rt": [  
+        "oic.r.weight",  
+        "oic.r.weight"  
+    ],  
+    "weight": {  
+        "type": "Property",  
+        "value": 732.0  
+    },  
+    "units": "kg",  
+    "range": [  
+        25.2,  
+        787.6  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 227.8  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 390.9  
+    },  
+    "n": "Offer field Mrs music near will big. Wrong offer bag pick phone improve.",  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.baseline"  
+    ],  
+    "type": "Weight",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Alone over street network year ask up black. Game meeting population wife sell past country.",  
-    "addressLocality": "Rich break base line great prepare speech. Growth above reduce dog.",  
-    "addressRegion": "Science various interest civil. Theory value people administration natural. Others how need.",  
-    "addressCountry": "Probably field participant report nature. Arm hospital process none already growth.",  
-    "postalCode": "Fund listen though suffer phone. Everybody environment movement man left.",  
-    "postOfficeBoxNumber": "Their hair call need evidence hospital surface. Mouth newspaper chance resource protect. Court enough hard law trouble second."  
-  },  
-  "areaServed": "Skin over perform happen. Race action protect teach.",  
-  "rt": [  
-    "oic.r.weight",  
-    "oic.r.weight"  
-  ],  
-  "weight": {  
-    "type": "Property",  
-    "value": 732.0  
-  },  
-  "units": "kg",  
-  "range": [  
-    25.2,  
-    787.6  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 227.8  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 390.9  
-  },  
-  "n": "Offer field Mrs music near will big. Wrong offer bag pick phone improve.",  
-  "if": [  
-    "oic.if.baseline",  
-    "oic.if.baseline"  
-  ],  
-  "type": "Weight",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### 重量 NGSI-LD 正規化例  
 以下は、正規化されたJSON-LD形式のWeightの例である。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Weight:id:SJPG:70921933",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1993-03-15T11:24:45Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2015-07-28T06:46:49Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Later white success officer bag."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Environmental notice also home professional occur picture. Land mention charge whether good."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Many happen family better. They bed treatment across son service believe. Protect sport citizen key high that. Leg office sign head."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Animal prepare include run. Structure big represent contain of here head."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Important candidate case fight senior wife. President mean we your."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Weight:items:WCAY:56473919",  
-      "urn:ngsi-ld:Weight:items:DUDL:86411480"  
+    "id": "urn:ngsi-ld:Weight:id:SJPG:70921933",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1993-03-15T11:24:45Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2015-07-28T06:46:49Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Later white success officer bag."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Environmental notice also home professional occur picture. Land mention charge whether good."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Many happen family better. They bed treatment across son service believe. Protect sport citizen key high that. Leg office sign head."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Animal prepare include run. Structure big represent contain of here head."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Important candidate case fight senior wife. President mean we your."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Weight:items:WCAY:56473919",  
+            "urn:ngsi-ld:Weight:items:DUDL:86411480"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Weight:items:QLPQ:72550779"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                62.3391355,  
+                -48.594117  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Week perform real soon but discuss expect leader. End front reach benefit price. Put personal usually size Mrs industry.",  
+            "addressLocality": "Money four middle but author free speech town.",  
+            "addressRegion": "Institution prove certain first page car lay. Evening look speak Democrat technology recognize. There five arrive line last material.",  
+            "addressCountry": "Green strategy forget yard good finally.",  
+            "postalCode": "Design seat enough artist over. Treatment necessary question protect class fill call.",  
+            "postOfficeBoxNumber": "Record girl president particularly actually group. Sense you continue she. Alone some teach."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Rest anyone specific great source offer. Analysis range available entire."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.weight"  
+        ]  
+    },  
+    "weight": {  
+        "type": "Property",  
+        "value": 573.9  
+    },  
+    "units": {  
+        "type": "Property",  
+        "value": "oz"  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            998.1,  
+            197.8  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 718.8  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 946.7  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Somebody would commercial life population third. Live involve save."  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.a"  
+        ]  
+    },  
+    "type": "Weight",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Weight:items:QLPQ:72550779"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        62.3391355,  
-        -48.594117  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Week perform real soon but discuss expect leader. End front reach benefit price. Put personal usually size Mrs industry.",  
-      "addressLocality": "Money four middle but author free speech town.",  
-      "addressRegion": "Institution prove certain first page car lay. Evening look speak Democrat technology recognize. There five arrive line last material.",  
-      "addressCountry": "Green strategy forget yard good finally.",  
-      "postalCode": "Design seat enough artist over. Treatment necessary question protect class fill call.",  
-      "postOfficeBoxNumber": "Record girl president particularly actually group. Sense you continue she. Alone some teach."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Rest anyone specific great source offer. Analysis range available entire."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.weight"  
-    ]  
-  },  
-  "weight": {  
-    "type": "Property",  
-    "value": 573.9  
-  },  
-  "units": {  
-    "type": "Property",  
-    "value": "oz"  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      998.1,  
-      197.8  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 718.8  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 946.7  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Somebody would commercial life population third. Live involve save."  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.a"  
-    ]  
-  },  
-  "type": "Weight",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
