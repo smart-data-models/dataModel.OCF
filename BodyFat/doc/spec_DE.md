@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entität: Körperfett  
-===================  
+===================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.OCF/blob/master/BodyFat/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Globale Beschreibung: **Diese Ressource beschreibt die Eigenschaften, die mit dem Körperfett einer Person verbunden sind.** Die Einheit ist ein einzelner Wert, der entweder kg, lb oder Prozent ist.** Fehlt die Einheitseigenschaft, ist der Standardwert Kilogramm [kg].** Die Eigenschaften bodyfat und unit sind schreibgeschützte Werte, die vom Server bereitgestellt werden.** Wenn range weggelassen wird, ist der Standardwert 0 bis +MAXFLOAT.  
 Version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `bodyfat`: Körperfett.  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `if`: Der von dieser Ressource unterstützte OCF-Schnittstellensatz  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `n`: Freundlicher Name der Ressource  - `name`: Der Name dieses Artikels.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `precision`: Bei der Exposition bietet der Wert in "precision" eine +/- Toleranz gegenüber den Eigenschaften in der Ressource. Wenn also eine Eigenschaft auf einen Wert AKTUALISIERT wird und diese Eigenschaft dann ZURÜCKGEZOGEN wird, ist der ZURÜCKGEZOGENE Wert gültig, wenn er im Bereich des festgelegten Wertes +/- Präzision liegt  - `range`: Der gültige Bereich für die Eigenschaft in der Ressource in Form einer Zahl. Der erste Wert im Array ist der Mindestwert, der zweite Wert im Array ist der Höchstwert.  - `rt`: Ressourcentyp  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `step`: Schrittwert über den definierten Bereich eine ganze Zahl, wenn der Bereich eine Zahl ist.  Dies ist die Schrittweite für gültige Werte innerhalb des Bereichs; wenn also der Bereich 0.0..10.0 und der Schritt 2.5 ist, sind die Werte 0.0,2.5,5.0,7.5,10.0 gültig.  - `type`: NGSI-Entitätstyp. Es muss BodyFat sein  - `units`: Körperfett-Einheiten    
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, liegt das daran, dass es mehrere Typen oder unterschiedliche Formate/Muster haben kann</sub></sup>.  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `bodyfat[number]`: Körperfett.  - `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `id[*]`: Eindeutiger Bezeichner der Entität  - `if[array]`: Der von dieser Ressource unterstützte OCF-Schnittstellensatz  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `n[string]`: Freundlicher Name der Ressource  - `name[string]`: Der Name dieses Artikels.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `precision[number]`: Bei der Exposition bietet der Wert in "precision" eine +/- Toleranz gegenüber den Eigenschaften in der Ressource. Wenn also eine Eigenschaft auf einen Wert AKTUALISIERT wird und diese Eigenschaft dann ZURÜCKGEZOGEN wird, ist der ZURÜCKGEZOGENE Wert gültig, wenn er im Bereich des festgelegten Wertes +/- Präzision liegt  - `range[array]`: Der gültige Bereich für die Eigenschaft in der Ressource in Form einer Zahl. Der erste Wert im Array ist der Mindestwert, der zweite Wert im Array ist der Höchstwert.  - `rt[array]`: Ressourcentyp  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `step[number]`: Schrittwert über den definierten Bereich eine ganze Zahl, wenn der Bereich eine Zahl ist.  Dies ist die Schrittweite für gültige Werte innerhalb des Bereichs; wenn also der Bereich 0.0..10.0 und der Schritt 2.5 ist, sind die Werte 0.0,2.5,5.0,7.5,10.0 gültig.  - `type[string]`: NGSI-Entitätstyp. Es muss BodyFat sein  - `units[string]`: Körperfett-Einheiten  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
-- `bodyfat`  - `id`  - `type`    
+- `bodyfat`  - `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Datenmodell nach dem von der Open Connectivity Foundation erstellten Original. Ursprüngliches Repository in https://github.com/openconnectivityfoundation/IoTDataModels  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 BodyFat:    
@@ -366,9 +379,14 @@ BodyFat:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Beispiel-Nutzlasten  
 #### BodyFat NGSI-v2 Schlüsselwerte Beispiel  
 Hier ist ein Beispiel für ein BodyFat im JSON-LD-Format als Schlüsselwerte. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:BodyFat:id:NCXO:90580036",  
@@ -432,8 +450,10 @@ BodyFat:
   "type": "BodyFat"  
 }  
 ```  
+</details>  
 #### BodyFat NGSI-v2 normalisiert Beispiel  
 Hier ist ein Beispiel für ein BodyFat im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -565,194 +585,208 @@ BodyFat:
   }  
 }  
 ```  
+</details>  
 #### BodyFat NGSI-LD Schlüsselwerte Beispiel  
 Hier ist ein Beispiel für ein BodyFat im JSON-LD-Format als Schlüsselwerte. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:BodyFat:id:NCXO:90580036",  
-  "dateCreated": "2005-02-19T20:56:16Z",  
-  "dateModified": "2005-11-28T17:19:04Z",  
-  "source": "Attack force rise tree author. Feeling clearly prepare much commercial everyone might quality.",  
-  "name": "The health whether feel. Five investment never base collection official. West later close without only country same affect.",  
-  "alternateName": "Support not big recently media wind near. Writer suffer kind population scene he any.",  
-  "description": "Yeah model bar cup population mention meeting hundred.",  
-  "dataProvider": "Thing yourself thing fly control.",  
-  "owner": [  
-    "urn:ngsi-ld:BodyFat:items:PVXS:05086008",  
-    "urn:ngsi-ld:BodyFat:items:XFWO:96280071"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:BodyFat:items:HPXB:45693919",  
-    "urn:ngsi-ld:BodyFat:items:LODK:47292476"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -75.359217,  
-      169.747483  
+    "id": "urn:ngsi-ld:BodyFat:id:NCXO:90580036",  
+    "dateCreated": "2005-02-19T20:56:16Z",  
+    "dateModified": "2005-11-28T17:19:04Z",  
+    "source": "Attack force rise tree author. Feeling clearly prepare much commercial everyone might quality.",  
+    "name": "The health whether feel. Five investment never base collection official. West later close without only country same affect.",  
+    "alternateName": "Support not big recently media wind near. Writer suffer kind population scene he any.",  
+    "description": "Yeah model bar cup population mention meeting hundred.",  
+    "dataProvider": "Thing yourself thing fly control.",  
+    "owner": [  
+        "urn:ngsi-ld:BodyFat:items:PVXS:05086008",  
+        "urn:ngsi-ld:BodyFat:items:XFWO:96280071"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:BodyFat:items:HPXB:45693919",  
+        "urn:ngsi-ld:BodyFat:items:LODK:47292476"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -75.359217,  
+            169.747483  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Return responsibility future nature child travel themselves. Listen show production skin offer individual artist.",  
+        "addressLocality": "Question find unit. Newspaper program do television speech game attorney difference.",  
+        "addressRegion": "Will piece character hair agency over. Red quickly wait west. Heavy consider couple.",  
+        "addressCountry": "Nor factor off Democrat research event low. Red media possible quickly role color evidence approach.",  
+        "postalCode": "Hold drop tough ask material mind simply. Hope lot environment scene only night challenge.",  
+        "postOfficeBoxNumber": "Fear food out modern hotel town every. Since authority field minute sort finish. Against campaign science mention week myself."  
+    },  
+    "areaServed": "Treatment claim morning away individual anyone international. Economy girl morning.",  
+    "rt": [  
+        "oic.r.body.fat",  
+        "oic.r.body.fat"  
+    ],  
+    "bodyfat": {  
+        "type": "Property",  
+        "value": 828.2  
+    },  
+    "units": "kg",  
+    "range": [  
+        744.7,  
+        370.0  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 990.8  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 238.8  
+    },  
+    "n": "Either establish then long war eat. Tell ground describe home determine similar. Democrat someone development young nation. Defense total explain trial.",  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.baseline"  
+    ],  
+    "type": "BodyFat",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Return responsibility future nature child travel themselves. Listen show production skin offer individual artist.",  
-    "addressLocality": "Question find unit. Newspaper program do television speech game attorney difference.",  
-    "addressRegion": "Will piece character hair agency over. Red quickly wait west. Heavy consider couple.",  
-    "addressCountry": "Nor factor off Democrat research event low. Red media possible quickly role color evidence approach.",  
-    "postalCode": "Hold drop tough ask material mind simply. Hope lot environment scene only night challenge.",  
-    "postOfficeBoxNumber": "Fear food out modern hotel town every. Since authority field minute sort finish. Against campaign science mention week myself."  
-  },  
-  "areaServed": "Treatment claim morning away individual anyone international. Economy girl morning.",  
-  "rt": [  
-    "oic.r.body.fat",  
-    "oic.r.body.fat"  
-  ],  
-  "bodyfat": {  
-    "type": "Property",  
-    "value": 828.2  
-  },  
-  "units": "kg",  
-  "range": [  
-    744.7,  
-    370.0  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 990.8  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 238.8  
-  },  
-  "n": "Either establish then long war eat. Tell ground describe home determine similar. Democrat someone development young nation. Defense total explain trial.",  
-  "if": [  
-    "oic.if.baseline",  
-    "oic.if.baseline"  
-  ],  
-  "type": "BodyFat",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### Körperfett NGSI-LD normalisiert Beispiel  
-Hier ist ein Beispiel für ein BodyFat im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für ein BodyFat im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-LD kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:BodyFat:id:VUOK:95021473",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1987-10-14T09:02:16Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1994-07-04T01:12:53Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Must green international thank. Spring plant control partner. At information decide for born action."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Child over claim administration by attention still."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Company mouth Mrs door. Rich national store list whom. Side produce fact study. Television travel him bank."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Seat half sometimes year customer science notice. Knowledge he use."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Since professional son perhaps yard. General little worker glass southern state middle. Often including about son."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:BodyFat:items:MQTE:23850921",  
-      "urn:ngsi-ld:BodyFat:items:NQZR:87612870"  
+    "id": "urn:ngsi-ld:BodyFat:id:VUOK:95021473",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1987-10-14T09:02:16Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1994-07-04T01:12:53Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Must green international thank. Spring plant control partner. At information decide for born action."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Child over claim administration by attention still."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Company mouth Mrs door. Rich national store list whom. Side produce fact study. Television travel him bank."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Seat half sometimes year customer science notice. Knowledge he use."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Since professional son perhaps yard. General little worker glass southern state middle. Often including about son."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:BodyFat:items:MQTE:23850921",  
+            "urn:ngsi-ld:BodyFat:items:NQZR:87612870"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:BodyFat:items:XDTN:06870476"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                56.538434,  
+                -168.581689  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Show occur size war. Prevent father teacher clear.",  
+            "addressLocality": "Indeed able about international major visit. Door minute station second only mission room.",  
+            "addressRegion": "Drive machine director. Five rise boy partner.",  
+            "addressCountry": "Direction pretty item car model election discussion protect. Long rule to painting low. Ago exist here smile sell. And three thus expert history country improve.",  
+            "postalCode": "Continue west least writer few prevent seem. Last apply strong dream bed. Remain write which hospital let political action.",  
+            "postOfficeBoxNumber": "Exactly PM behind huge life news. Such road former whole enter yes political represent."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Mr financial again here nature create. General to bar mother discuss figure."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.body.fat"  
+        ]  
+    },  
+    "bodyfat": {  
+        "type": "Property",  
+        "value": 171.6  
+    },  
+    "units": {  
+        "type": "Property",  
+        "value": "kg"  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            362.3,  
+            206.0  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 453.1  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 124.2  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Write recent suffer marriage must affect. Sense indeed me kitchen. Describe speech even small offer area goal."  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.s"  
+        ]  
+    },  
+    "type": "BodyFat",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:BodyFat:items:XDTN:06870476"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        56.538434,  
-        -168.581689  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Show occur size war. Prevent father teacher clear.",  
-      "addressLocality": "Indeed able about international major visit. Door minute station second only mission room.",  
-      "addressRegion": "Drive machine director. Five rise boy partner.",  
-      "addressCountry": "Direction pretty item car model election discussion protect. Long rule to painting low. Ago exist here smile sell. And three thus expert history country improve.",  
-      "postalCode": "Continue west least writer few prevent seem. Last apply strong dream bed. Remain write which hospital let political action.",  
-      "postOfficeBoxNumber": "Exactly PM behind huge life news. Such road former whole enter yes political represent."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Mr financial again here nature create. General to bar mother discuss figure."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.body.fat"  
-    ]  
-  },  
-  "bodyfat": {  
-    "type": "Property",  
-    "value": 171.6  
-  },  
-  "units": {  
-    "type": "Property",  
-    "value": "kg"  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      362.3,  
-      206.0  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 453.1  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 124.2  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Write recent suffer marriage must affect. Sense indeed me kitchen. Describe speech even small offer area goal."  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.s"  
-    ]  
-  },  
-  "type": "BodyFat",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
