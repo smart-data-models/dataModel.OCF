@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entità: SensorProps  
-===================  
+===================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.OCF/blob/master/SensorProps/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Questa risorsa descrive le proprietà che guidano la segnalazione di un cambiamento di stato di un sensore.La proprietà 'silenttime' rappresenta il periodo dopo il quale è stato inviato un rapporto di cambiamento di stato in cui il cambiamento di stato del sensore non è segnalato.La proprietà 'sensitivity' rappresenta il livello al quale il sensore rileva un cambiamento di stato.Questi valori sono completamente dipendenti dal tipo di sensore e dalla capacità del produttore, quindi non sono utilizzate restrizioni di intervallo.Le proprietà 'range', 'step' e 'precision' sono applicate solo alla proprietà 'sensitivity'.**  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **La proprietà 'silenttime' rappresenta il periodo dopo il quale è stata inviata una segnalazione di cambiamento di stato in cui il cambiamento di stato del sensore non viene segnalato.La proprietà 'sensitivity' rappresenta il livello al quale il sensore rileva un cambiamento di stato.Questi valori dipendono completamente dal tipo di sensore e dalla capacità del produttore, quindi non vengono utilizzate restrizioni di intervallo.Le proprietà 'range', 'step' e 'precision' sono applicate solo alla proprietà 'sensitivity'.**  
 versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `id`: Identificatore unico dell'entità  - `if`: L'insieme di interfacce OCF supportato da questa risorsa.  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n`: Nome amichevole della risorsa  - `name`: Il nome di questo articolo.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `precision`: Quando è esposto, il valore in 'precisione' fornisce una tolleranza +/- rispetto alle Proprietà nella Risorsa. Quindi, se una proprietà viene aggiornata a un valore e tale proprietà viene poi ripristinata, il valore ripristinato è valido se rientra nell'intervallo del valore impostato +/- precisione  - `range`: L'intervallo valido per la proprietà nella risorsa come numero. Il primo valore nell'array è il valore minimo, il secondo valore nell'array è il valore massimo.  - `rt`: Il tipo di risorsa.  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `sensitivity`: Il livello della precisione di rilevamento del sensore. Questo è usato per controllare il livello al quale il sensore rileva un cambiamento di stato. La proprietà 'range' dovrebbe essere specificata in base alle capacità del dispositivo del produttore.  - `silenttime`: Il tempo in secondi dal rapporto precedente che il sensore trattiene dall'inviare un cambio di stato. Questo è usato per evitare ripetuti rapporti di cambio di stato.  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `step`: Valore di passo attraverso l'intervallo definito un intero quando l'intervallo è un numero.  Questo è l'incremento per i valori validi attraverso l'intervallo; così se l'intervallo è 0.0..10.0 e il passo è 2.5 allora i valori validi sono 0.0,2.5,5.0,7.5,10.0.  - `type`: Tipo di entità NGSI. Deve essere SensorProps    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `if[array]`: Il set di interfacce OCF supportato da questa risorsa.  - `location[*]`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `n[string]`: Nome amichevole della risorsa  - `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `precision[number]`: Quando viene esposto, il valore in 'precision' fornisce una tolleranza +/- rispetto alle proprietà della risorsa. Pertanto, se una proprietà viene AGGIORNATA a un valore e poi viene restituita, il valore restituito è valido se rientra nell'intervallo del valore impostato +/- precision.  - `range[array]`: L'intervallo valido per la proprietà nella risorsa come numero. Il primo valore della matrice è il valore minimo, il secondo valore della matrice è il valore massimo.  - `rt[array]`: Il tipo di risorsa.  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `sensitivity[number]`: Livello di precisione di rilevamento del sensore. Viene utilizzato per controllare il livello a cui il sensore rileva un cambiamento di stato. La proprietà 'range' deve essere specificata in base alle capacità del dispositivo del produttore.  - `silenttime[integer]`: L'intervallo di tempo in secondi dal rapporto precedente in cui il sensore si trattiene dall'inviare una modifica di stato. Viene utilizzato per evitare ripetute segnalazioni di cambio di stato.  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `step[number]`: Valore del passo nell'intervallo definito, un numero intero quando l'intervallo è un numero.  Si tratta dell'incremento per i valori validi in tutto l'intervallo; quindi se l'intervallo è 0.0..10.0 e il passo è 2.5, i valori validi sono 0.0,2.5,5.0,7.5,10.0.  - `type[string]`: Tipo di entità NGSI. Deve essere SensorProps  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- `id`  - `sensitivity`  - `silenttime`  - `type`    
+- `id`  - `sensitivity`  - `silenttime`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Modello di dati adattato dall'originale creato dalla Open Connectivity Foundation. Repository originale in https://github.com/openconnectivityfoundation/IoTDataModels  
-## Descrizione del modello di dati delle proprietà  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 SensorProps:    
@@ -359,9 +372,14 @@ SensorProps:
   x-version: 0.0.1    
 ```  
 </details>    
-## Esempio di payloads  
-#### SensorProps NGSI-v2 valori chiave Esempio  
-Ecco un esempio di un SensorProps in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
+#### SensorProps NGSI-v2 valori-chiave Esempio  
+Ecco un esempio di SensorProps in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:SensorProps:id:YVXU:42637893",  
@@ -428,8 +446,10 @@ SensorProps:
   "type": "SensorProps"  
 }  
 ```  
+</details>  
 #### SensorProps NGSI-v2 normalizzato Esempio  
-Ecco un esempio di un SensorProps in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di SensorProps in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano le opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -564,198 +584,212 @@ SensorProps:
   }  
 }  
 ```  
-#### SensorProps NGSI-LD valori chiave Esempio  
-Ecco un esempio di un SensorProps in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### SensorProps Valori chiave NGSI-LD Esempio  
+Ecco un esempio di SensorProps in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:SensorProps:id:YVXU:42637893",  
-  "dateCreated": "2001-03-14T07:22:29Z",  
-  "dateModified": "1978-09-22T09:34:56Z",  
-  "source": "While simply allow miss like marriage hit. Reveal author guess nearly enjoy.",  
-  "name": "Ball financial head read. Stay trial must particularly question range or.",  
-  "alternateName": "Front growth room. Study kid young pick.",  
-  "description": "Their nature much up. Believe modern quickly particularly heavy better chair body. Great drive stop age loss.",  
-  "dataProvider": "Of visit senior training book while happen word. Look improve daughter life explain area new. Place represent option can treat.",  
-  "owner": [  
-    "urn:ngsi-ld:SensorProps:items:LMHY:88012207",  
-    "urn:ngsi-ld:SensorProps:items:JIBE:61713140"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:SensorProps:items:XJZJ:14603122",  
-    "urn:ngsi-ld:SensorProps:items:WMHF:99500885"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      10.5752175,  
-      -85.719918  
+    "id": "urn:ngsi-ld:SensorProps:id:YVXU:42637893",  
+    "dateCreated": "2001-03-14T07:22:29Z",  
+    "dateModified": "1978-09-22T09:34:56Z",  
+    "source": "While simply allow miss like marriage hit. Reveal author guess nearly enjoy.",  
+    "name": "Ball financial head read. Stay trial must particularly question range or.",  
+    "alternateName": "Front growth room. Study kid young pick.",  
+    "description": "Their nature much up. Believe modern quickly particularly heavy better chair body. Great drive stop age loss.",  
+    "dataProvider": "Of visit senior training book while happen word. Look improve daughter life explain area new. Place represent option can treat.",  
+    "owner": [  
+        "urn:ngsi-ld:SensorProps:items:LMHY:88012207",  
+        "urn:ngsi-ld:SensorProps:items:JIBE:61713140"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:SensorProps:items:XJZJ:14603122",  
+        "urn:ngsi-ld:SensorProps:items:WMHF:99500885"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            10.5752175,  
+            -85.719918  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Of answer cost they soldier image. Serve pull air lay. Structure phone be trade trial those. Position special meeting trip gun second.",  
+        "addressLocality": "Standard machine final if read economy. Chair decide under action the notice.",  
+        "addressRegion": "One glass pass we. Week production put. Today nice collection look next account determine.",  
+        "addressCountry": "Fund place case less wear item article. Customer instead according or better.",  
+        "postalCode": "Several reduce rock yet book. Dog sit traditional one network Republican. Great church yard within mission million.",  
+        "postOfficeBoxNumber": "Situation enjoy show. Lose from style pretty here. Such chair father prove radio."  
+    },  
+    "areaServed": "Challenge after behavior again cell because.",  
+    "rt": [  
+        "oic.r.sensor.props",  
+        "oic.r.sensor.props"  
+    ],  
+    "silenttime": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "sensitivity": {  
+        "type": "Property",  
+        "value": 706.5  
+    },  
+    "n": "Management alone morning million public travel. Sit guess staff once marriage. Wrong describe office seven bit miss off.",  
+    "range": [  
+        846.0,  
+        714.8  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 782.2  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 770.3  
+    },  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.baseline"  
+    ],  
+    "type": "SensorProps",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Of answer cost they soldier image. Serve pull air lay. Structure phone be trade trial those. Position special meeting trip gun second.",  
-    "addressLocality": "Standard machine final if read economy. Chair decide under action the notice.",  
-    "addressRegion": "One glass pass we. Week production put. Today nice collection look next account determine.",  
-    "addressCountry": "Fund place case less wear item article. Customer instead according or better.",  
-    "postalCode": "Several reduce rock yet book. Dog sit traditional one network Republican. Great church yard within mission million.",  
-    "postOfficeBoxNumber": "Situation enjoy show. Lose from style pretty here. Such chair father prove radio."  
-  },  
-  "areaServed": "Challenge after behavior again cell because.",  
-  "rt": [  
-    "oic.r.sensor.props",  
-    "oic.r.sensor.props"  
-  ],  
-  "silenttime": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "sensitivity": {  
-    "type": "Property",  
-    "value": 706.5  
-  },  
-  "n": "Management alone morning million public travel. Sit guess staff once marriage. Wrong describe office seven bit miss off.",  
-  "range": [  
-    846.0,  
-    714.8  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 782.2  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 770.3  
-  },  
-  "if": [  
-    "oic.if.baseline",  
-    "oic.if.baseline"  
-  ],  
-  "type": "SensorProps",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### SensorProps NGSI-LD normalizzato Esempio  
-Ecco un esempio di un SensorProps in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di SensorProps in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:SensorProps:id:KXOX:86098583",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1984-12-31T17:02:03Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2006-04-22T23:48:28Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Have local modern firm. Mr total not election enough."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Indicate crime compare partner. Marriage officer she old sign view act husband."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Ahead imagine health station fear. Voice share society despite himself both. Style plan green pattern into up animal."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "City way economic hit make cell goal. Place apply administration little prevent. Security same teacher police same until art cold."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Apply job work discover maintain. Feel father prepare positive. Material ask compare yourself."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:SensorProps:items:VLUH:05879065",  
-      "urn:ngsi-ld:SensorProps:items:XEFK:27739524"  
+    "id": "urn:ngsi-ld:SensorProps:id:KXOX:86098583",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1984-12-31T17:02:03Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2006-04-22T23:48:28Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Have local modern firm. Mr total not election enough."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Indicate crime compare partner. Marriage officer she old sign view act husband."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Ahead imagine health station fear. Voice share society despite himself both. Style plan green pattern into up animal."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "City way economic hit make cell goal. Place apply administration little prevent. Security same teacher police same until art cold."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Apply job work discover maintain. Feel father prepare positive. Material ask compare yourself."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:SensorProps:items:VLUH:05879065",  
+            "urn:ngsi-ld:SensorProps:items:XEFK:27739524"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:SensorProps:items:JNTX:91967149"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -38.0434205,  
+                -34.086759  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Agree best tell condition standard. Care rock surface organization various field. Receive fly reveal pass owner.",  
+            "addressLocality": "Argue more poor board bring individual. Detail while next model no. Big ball data daughter region sister.",  
+            "addressRegion": "Ready certain him spend save me Mrs. Main pattern second place. Score network share remain production step task major.",  
+            "addressCountry": "Wife player good. Activity place meeting who western bring town.",  
+            "postalCode": "Hour effort marriage talk. Floor quite call stuff tonight ever. Energy win improve tell miss eye just travel.",  
+            "postOfficeBoxNumber": "Window especially bad. Either try development science stand on. Despite per lose fill."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Quite mind draw decide. Win my say office computer pressure."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.sensor.props"  
+        ]  
+    },  
+    "silenttime": {  
+        "type": "Property",  
+        "value": 599  
+    },  
+    "sensitivity": {  
+        "type": "Property",  
+        "value": 40.5  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Better hospital offer indeed."  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            818.0,  
+            689.1  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 580.4  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 698.4  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.rw",  
+            "oic.if.rw"  
+        ]  
+    },  
+    "type": "SensorProps",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:SensorProps:items:JNTX:91967149"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -38.0434205,  
-        -34.086759  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Agree best tell condition standard. Care rock surface organization various field. Receive fly reveal pass owner.",  
-      "addressLocality": "Argue more poor board bring individual. Detail while next model no. Big ball data daughter region sister.",  
-      "addressRegion": "Ready certain him spend save me Mrs. Main pattern second place. Score network share remain production step task major.",  
-      "addressCountry": "Wife player good. Activity place meeting who western bring town.",  
-      "postalCode": "Hour effort marriage talk. Floor quite call stuff tonight ever. Energy win improve tell miss eye just travel.",  
-      "postOfficeBoxNumber": "Window especially bad. Either try development science stand on. Despite per lose fill."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Quite mind draw decide. Win my say office computer pressure."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.sensor.props"  
-    ]  
-  },  
-  "silenttime": {  
-    "type": "Property",  
-    "value": 599  
-  },  
-  "sensitivity": {  
-    "type": "Property",  
-    "value": 40.5  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Better hospital offer indeed."  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      818.0,  
-      689.1  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 580.4  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 698.4  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.rw",  
-      "oic.if.rw"  
-    ]  
-  },  
-  "type": "SensorProps",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
