@@ -1,17 +1,32 @@
-エンティティパンティルトズーム  
-===============  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティパンティルトズーム  
+===============<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/PanTiltZoom/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな説明です。**IoTDataのデータモデルをスマートデータモデルに変換したものです。このResourceは、デバイスのパン・チルト・ズーム機能を指定するものである。Resource Typeは動的で、値がデバイスの物理的な動きに適用されるのか、画像のデジタル/バーチャル拡張に適用されるのかを反映している。物理的な動きについては、Resource Typeは'oic.r.movement.ptz'である。デジタル／バーチャルイメージの拡張の場合、リソースタイプは「oic.r.image.ptz」となります。パン」と「チルト」のプロパティは度数で指定します。zoomFactor」は、リニア（光学）ズームの場合、1〜100の範囲で指定します。ズームファクターは、デジタルズームの場合は、[1x, 2x, 4x, 8x, 16x, 32x]の範囲の値です。設定するズーム値がない場合、ズームファクターは「1x」とする。値0度はニュートラルを意味し、これはベンダーが定義した設定である。このリソースは、物理的な移動のためのオフセットを作成するためにも使用できることに注意する。この場合、Resource Typeの値は、'oic.r.movement.offset.ptz'となる。 また、このリソースは、画像の移動のためのオフセットを作成するためにも使用できる。その場合、Resource Typeの値は、'oic.r.image.offset.ptz'となります。プロパティ「pan_range」の値が省略された場合、その範囲は[-180.0,180.0]となります。パン」がサポートされていない場合、その範囲は「0.0,0.0」となります。チルト」がサポートされていない場合、その範囲は[0.0,0.0]となります。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**IoTData データモデルをスマートデータモデルプログラムに適応させたものである。この Resource は、デバイスのパン・チルト・ズーム機能を指定する。Resource Type は動的であり、値がデバイスの物理的な動きに適用されるか、または画像へのデジタル/仮想的な 拡張に適用されるかを反映する。物理的な移動の場合、Resource Type は 'oic.r.movement.ptz' となる。デジタル／バーチャル画像の拡張の場合、Resource Typeは'oic.r.image.ptz'である。Properties 'pan' と 'tilt' は度数で指定されます。Property 'zoomFactor' は、リニア（光学）ズームの場合、1-100の範囲の値である。ズームファクターは、デジタルズームの場合、範囲[1x, 2x, 4x, 8x, 16x, 32x]の値である。設定するズーム値がない場合、ズームファクターは「1x」とする。0 度という値は中立を意味し、これはベンダーの定義による設定である。このリソースは、物理的な移動のためのオフセットを作成するためにも使用できることに注意する。この場合、Resource Type の値は 'oic.r.movement.offset.ptz' このリソースは、画像移動のためのオフセットを作成するために使用することもできる。その場合、Resource Type の値は 'oic.r.image.offset.ptz' となる。Property 'pan_range' の値が省略された場合、範囲は [-180.0,180.0] となる。pan をサポートしていない場合は、[0.0,0.0] とする。 property 'tilt_range' の値を省略した場合は、[-180.0,180.0] とする。また、'tilt' をサポートしていない場合は、'0.0,0.0' の範囲とする。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `if`: このResourceがサポートしているOCF Interface set。  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `n`: リソースのフレンドリーネーム  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `pan`: 水平方向のパンを度単位で表示します。  - `pan_range`: リソースのプロパティの有効範囲を数値で表したもの。配列の最初の値が最小値、配列の2番目の値が最大値となります。  - `precision`: 公開された場合、「精度」の値は、リソース内のプロパティに対して±の許容範囲を提供する。従って、あるプロパティがある値に更新され、そのプロパティがRETRIEVEDされた場合、RETRIEVEDされた値は、設定された値の±精度の範囲内であれば有効である。  - `rt`: The Resource Type。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `tilt`: 垂直方向の傾きを角度で表します。  - `tilt_range`: リソースのプロパティの有効範囲を数値で表したもの。配列の最初の値が最小値、配列の2番目の値が最大値となります。  - `type`: NGSIエンティティタイプ。PanTiltZoomでなければならない。  - `zoomFactor`: ズームファクターの値です。  - `zoomFactorRange`: 許容されるズームファクターの値です。Linearは1～100のmin/maxに相当します。    
-必須項目  
-- `id`  - `type`    
-このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)から来ています。NGSIの要件に適合するように拡張されています。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `if[array]`: このResourceがサポートするOCF Interfaceセット。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `n[string]`: リソースのフレンドリ名  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `pan[number]`: 水平方向のパン（度数）です。  - `pan_range[array]`: Resource に含まれる Property の有効範囲を数値で表します。配列の最初の値が最小値、2 番目の値が最大値となります。  - `precision[number]`: 公開されるとき、'precision'の値は、ResourceのPropertyに対して+/-の許容範囲を提供する。したがって、あるプロパティがある値にUPDATEされ、そのプロパティがRETRIEVEDされた場合、RETRIEVEDされた値は設定された値+/-精度の範囲内であれば有効である。  - `rt[array]`: リソースタイプです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `tilt[number]`: 垂直方向の傾きを度数で表したもの。  - `tilt_range[array]`: Resource に含まれる Property の有効範囲を数値で表します。配列の最初の値が最小値、2 番目の値が最大値となります。  - `type[string]`: NGSIエンティティタイプ。PanTiltZoomである必要があります。  - `zoomFactor[string]`: ズームファクターの値です。  - `zoomFactorRange[string]`: ズームファクター（Zoom Factor）の許容値。Linearは1-100 min/maxに相当する。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)に由来しています。NGSIの要件に適合するように拡張されている。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 PanTiltZoom:    
@@ -378,9 +393,14 @@ PanTiltZoom:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### PanTiltZoom NGSI-v2 キーバリューの例  
-PanTiltZoomをkey-valuesとしてJSON-LD形式で表現した例を示します。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### PanTiltZoom NGSI-v2 key-value の例。  
+以下は、PanTiltZoomをJSON-LD形式でkey-valuesにした例である。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:PanTiltZoom:id:UHWT:54067498",  
@@ -417,8 +437,10 @@ PanTiltZoom:
   "areaServed": "Man lay sometimes begin compare get course. Front there music."  
 }  
 ```  
+</details>  
 #### PanTiltZoom NGSI-v2 正規化例  
-PanTiltZoomを正規化したJSON-LD形式の例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+PanTiltZoom を正規化した JSON-LD 形式の例です。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -496,127 +518,141 @@ PanTiltZoom:
   }  
 }  
 ```  
-#### PanTiltZoom NGSI-LD のキーバリューの例。  
-PanTiltZoomをkey-valuesとしてJSON-LD形式で表現した例を示します。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### PanTiltZoom NGSI-LD キー値例  
+ここでは、PanTiltZoomをJSON-LD形式でkey-valuesとして表現した例を示す。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:PanTiltZoom:id:UHWT:54067498",  
-  "dateCreated": "1973-12-23T12:38:20Z",  
-  "dateModified": "1978-03-27T01:53:55Z",  
-  "source": "Resource however management now much. While free environmental himself culture whose. History job series movement.",  
-  "name": "Though lead take method door. Forget law those fly.",  
-  "alternateName": "Skin financial dog yet success.",  
-  "description": "Rich speak camera without history. Wait growth low want appear feel spend.",  
-  "dataProvider": "Cut not while reveal. Laugh whole field boy figure total.",  
-  "owner": [  
-    "urn:ngsi-ld:PanTiltZoom:items:CGQE:63039182",  
-    "urn:ngsi-ld:PanTiltZoom:items:AECL:70645964"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:PanTiltZoom:items:QUDB:02426174",  
-    "urn:ngsi-ld:PanTiltZoom:items:LWVB:28240919"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      39.0863645,  
-      100.59068  
+    "id": "urn:ngsi-ld:PanTiltZoom:id:UHWT:54067498",  
+    "dateCreated": "1973-12-23T12:38:20Z",  
+    "dateModified": "1978-03-27T01:53:55Z",  
+    "source": "Resource however management now much. While free environmental himself culture whose. History job series movement.",  
+    "name": "Though lead take method door. Forget law those fly.",  
+    "alternateName": "Skin financial dog yet success.",  
+    "description": "Rich speak camera without history. Wait growth low want appear feel spend.",  
+    "dataProvider": "Cut not while reveal. Laugh whole field boy figure total.",  
+    "owner": [  
+        "urn:ngsi-ld:PanTiltZoom:items:CGQE:63039182",  
+        "urn:ngsi-ld:PanTiltZoom:items:AECL:70645964"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:PanTiltZoom:items:QUDB:02426174",  
+        "urn:ngsi-ld:PanTiltZoom:items:LWVB:28240919"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            39.0863645,  
+            100.59068  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Develop box sense nearly for speech. Street stock possible. Identify increase trial try reveal there model end.",  
+        "addressLocality": "Whose environmental continue result early note. Find agent wrong seek line later weight. Room act think last whom minute again.",  
+        "addressRegion": "Interview piece idea employee trade old use.",  
+        "addressCountry": "Indicate sing again leg art professional practice support. Return increase administration challenge toward art computer there. Speak activity still fall agreement look significant.",  
+        "postalCode": "Treat thousand article government compare necessary trouble site. Million fight two.",  
+        "postOfficeBoxNumber": "Yard outside deal receive. On attorney teach federal high standard."  
+    },  
+    "areaServed": "Man lay sometimes begin compare get course. Front there music.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Develop box sense nearly for speech. Street stock possible. Identify increase trial try reveal there model end.",  
-    "addressLocality": "Whose environmental continue result early note. Find agent wrong seek line later weight. Room act think last whom minute again.",  
-    "addressRegion": "Interview piece idea employee trade old use.",  
-    "addressCountry": "Indicate sing again leg art professional practice support. Return increase administration challenge toward art computer there. Speak activity still fall agreement look significant.",  
-    "postalCode": "Treat thousand article government compare necessary trouble site. Million fight two.",  
-    "postOfficeBoxNumber": "Yard outside deal receive. On attorney teach federal high standard."  
-  },  
-  "areaServed": "Man lay sometimes begin compare get course. Front there music.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-#### PanTiltZoom NGSI-LDの正規化例  
-JSON-LD形式のPanTiltZoomを正規化した例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### PanTiltZoom NGSI-LD 正規化例  
+PanTiltZoom を JSON-LD 形式で正規化した例を示す。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返す。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:PanTiltZoom:id:RDKB:12056428",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2012-12-10T11:17:16Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1996-12-15T22:16:07Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Throughout second century according soon space how. Church push grow trial sign speech include."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Itself reflect child image detail. Boy would challenge."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Put owner lot offer beyond air difficult. Sometimes impact television course."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Kitchen way region dinner. Lead because happen central. See lay onto candidate we imagine mission could."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Kind teach nation discuss social. Painting we future would anyone kitchen forward would."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:PanTiltZoom:items:QSEI:87305470",  
-      "urn:ngsi-ld:PanTiltZoom:items:WEFY:37838415"  
+    "id": "urn:ngsi-ld:PanTiltZoom:id:RDKB:12056428",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2012-12-10T11:17:16Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1996-12-15T22:16:07Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Throughout second century according soon space how. Church push grow trial sign speech include."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Itself reflect child image detail. Boy would challenge."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Put owner lot offer beyond air difficult. Sometimes impact television course."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Kitchen way region dinner. Lead because happen central. See lay onto candidate we imagine mission could."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Kind teach nation discuss social. Painting we future would anyone kitchen forward would."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:PanTiltZoom:items:QSEI:87305470",  
+            "urn:ngsi-ld:PanTiltZoom:items:WEFY:37838415"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:PanTiltZoom:items:OOAX:70233899"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                3.685433,  
+                -111.432176  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Drug leg detail yard represent take. Share our after your resource.",  
+            "addressLocality": "Ball say where nature democratic blood anyone. Upon home order hospital. Source technology create policy house.",  
+            "addressRegion": "Turn suggest interest believe mother compare Mrs. Bring or down serve model rest science.",  
+            "addressCountry": "Head food treatment per speak. Rate start history less raise.",  
+            "postalCode": "Good reach nice against thank apply human. Defense dark meeting.",  
+            "postOfficeBoxNumber": "Right art social born. Young skill his activity from until sure."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Back impact including something church get. Wonder peace end then go fast certainly. Smile program doctor father."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:PanTiltZoom:items:OOAX:70233899"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        3.685433,  
-        -111.432176  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Drug leg detail yard represent take. Share our after your resource.",  
-      "addressLocality": "Ball say where nature democratic blood anyone. Upon home order hospital. Source technology create policy house.",  
-      "addressRegion": "Turn suggest interest believe mother compare Mrs. Bring or down serve model rest science.",  
-      "addressCountry": "Head food treatment per speak. Rate start history less raise.",  
-      "postalCode": "Good reach nice against thank apply human. Defense dark meeting.",  
-      "postOfficeBoxNumber": "Right art social born. Young skill his activity from until sure."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Back impact including something church get. Wonder peace end then go fast certainly. Smile program doctor father."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
