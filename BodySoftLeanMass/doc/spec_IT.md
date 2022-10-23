@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entità: BodySoftLeanMass  
-========================  
+========================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.OCF/blob/master/BodySoftLeanMass/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Questa risorsa descrive le proprietà associate alla massa magra morbida del corpo di una persona.L'unità è un singolo valore che è uno tra kg, lb o percentuale.Se la proprietà unità è mancante il valore predefinito è chilogrammi [kg].Le proprietà slm e unità sono valori di sola lettura che sono forniti dal server.Quando il range è omesso il valore predefinito è da 0 a +MAXFLOAT.**  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **Questa risorsa descrive le proprietà associate alla massa magra morbida del corpo di una persona.L'unità è un singolo valore che è uno tra kg, lb o percentuale.Se la proprietà dell'unità è mancante, il valore predefinito è chilogrammi [kg].Le proprietà slm e unit sono valori di sola lettura forniti dal server.Quando l'intervallo è omesso, il valore predefinito è da 0 a +MAXFLOAT.**  
 versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `id`: Identificatore unico dell'entità  - `if`: L'insieme di interfacce OCF supportate da questa risorsa  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n`: Nome amichevole della risorsa  - `name`: Il nome di questo articolo.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `precision`: Quando è esposto, il valore in 'precisione' fornisce una tolleranza +/- rispetto alle Proprietà nella Risorsa. Quindi, se una proprietà viene aggiornata a un valore e tale proprietà viene poi ripristinata, il valore ripristinato è valido se rientra nell'intervallo del valore impostato +/- precisione  - `range`: L'intervallo valido per la proprietà nella risorsa come numero. Il primo valore nell'array è il valore minimo, il secondo valore nell'array è il valore massimo.  - `rt`: Tipo di risorsa  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `slm`: Massa magra morbida del corpo.  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `step`: Valore di passo attraverso l'intervallo definito un intero quando l'intervallo è un numero.  Questo è l'incremento per i valori validi attraverso l'intervallo; così se l'intervallo è 0.0..10.0 e il passo è 2.5 allora i valori validi sono 0.0,2.5,5.0,7.5,10.0.  - `type`: Tipo di entità NGSI. Deve essere BodySoftLeanMass  - `units`: Unità di massa magra morbida del corpo    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `if[array]`: L'insieme di interfacce OCF supportate da questa risorsa.  - `location[*]`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `n[string]`: Nome amichevole della risorsa  - `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `precision[number]`: Quando viene esposto, il valore in 'precision' fornisce una tolleranza +/- rispetto alle proprietà della risorsa. Pertanto, se una proprietà viene AGGIORNATA a un valore e poi viene restituita, il valore restituito è valido se rientra nell'intervallo del valore impostato +/- precision.  - `range[array]`: L'intervallo valido per la proprietà nella risorsa come numero. Il primo valore della matrice è il valore minimo, il secondo valore della matrice è il valore massimo.  - `rt[array]`: Tipo di risorsa  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `slm[number]`: Massa magra morbida del corpo.  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `step[number]`: Valore del passo nell'intervallo definito, un numero intero quando l'intervallo è un numero.  Si tratta dell'incremento per i valori validi in tutto l'intervallo; quindi se l'intervallo è 0.0..10.0 e il passo è 2.5, i valori validi sono 0.0,2.5,5.0,7.5,10.0.  - `type[string]`: Tipo di entità NGSI. Deve essere BodySoftLeanMass  - `units[string]`: Unità di massa magra morbida del corpo  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- `id`  - `slm`  - `type`    
+- `id`  - `slm`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Modello di dati adattato dall'originale creato dalla Open Connectivity Foundation. Repository originale in https://github.com/openconnectivityfoundation/IoTDataModels  
-## Descrizione del modello di dati delle proprietà  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 BodySoftLeanMass:    
@@ -367,9 +380,14 @@ BodySoftLeanMass:
   x-version: 0.0.1    
 ```  
 </details>    
-## Esempio di payloads  
-#### BodySoftLeanMass NGSI-v2 valori chiave Esempio  
-Ecco un esempio di BodySoftLeanMass in formato JSON-LD come valori chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
+#### Valori chiave BodySoftLeanMass NGSI-v2 Esempio  
+Ecco un esempio di BodySoftLeanMass in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:BodySoftLeanMass:id:OGDW:46540242",  
@@ -433,8 +451,10 @@ BodySoftLeanMass:
   "type": "BodySoftLeanMass"  
 }  
 ```  
+</details>  
 #### BodySoftLeanMass NGSI-v2 normalizzato Esempio  
-Ecco un esempio di un BodySoftLeanMass in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di BodySoftLeanMass in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano le opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -566,194 +586,208 @@ BodySoftLeanMass:
   }  
 }  
 ```  
-#### BodySoftLeanMass NGSI-LD valori chiave Esempio  
-Ecco un esempio di BodySoftLeanMass in formato JSON-LD come valori chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### Valori chiave BodySoftLeanMass NGSI-LD Esempio  
+Ecco un esempio di BodySoftLeanMass in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:BodySoftLeanMass:id:OGDW:46540242",  
-  "dateCreated": "1989-06-11T22:18:29Z",  
-  "dateModified": "1978-12-15T19:26:12Z",  
-  "source": "Machine each so food push. Fund beautiful culture image. Very soon with miss stage food kitchen.",  
-  "name": "Base next themselves. Few eight true life.",  
-  "alternateName": "Group court morning get. Avoid go claim. Use office around indicate prove paper.",  
-  "description": "Nation method system Mrs. Visit into set. Number happen should develop avoid power. Cultural should interesting could free image threat.",  
-  "dataProvider": "Home remember if it able. Low drug final. Kitchen only best also significant sing.",  
-  "owner": [  
-    "urn:ngsi-ld:BodySoftLeanMass:items:DKRY:82217410",  
-    "urn:ngsi-ld:BodySoftLeanMass:items:ZCMK:67258121"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:BodySoftLeanMass:items:TBOM:56057423",  
-    "urn:ngsi-ld:BodySoftLeanMass:items:BBVH:69926810"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      38.8551175,  
-      -154.708855  
+    "id": "urn:ngsi-ld:BodySoftLeanMass:id:OGDW:46540242",  
+    "dateCreated": "1989-06-11T22:18:29Z",  
+    "dateModified": "1978-12-15T19:26:12Z",  
+    "source": "Machine each so food push. Fund beautiful culture image. Very soon with miss stage food kitchen.",  
+    "name": "Base next themselves. Few eight true life.",  
+    "alternateName": "Group court morning get. Avoid go claim. Use office around indicate prove paper.",  
+    "description": "Nation method system Mrs. Visit into set. Number happen should develop avoid power. Cultural should interesting could free image threat.",  
+    "dataProvider": "Home remember if it able. Low drug final. Kitchen only best also significant sing.",  
+    "owner": [  
+        "urn:ngsi-ld:BodySoftLeanMass:items:DKRY:82217410",  
+        "urn:ngsi-ld:BodySoftLeanMass:items:ZCMK:67258121"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:BodySoftLeanMass:items:TBOM:56057423",  
+        "urn:ngsi-ld:BodySoftLeanMass:items:BBVH:69926810"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            38.8551175,  
+            -154.708855  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Operation such under list whether improve. Lose first myself large account red. Near similar involve. Charge can law include and western.",  
+        "addressLocality": "Watch employee from professional hear particular. Same save little town. Least goal stay seat.",  
+        "addressRegion": "Role environmental top. Direction day usually them level development western financial.",  
+        "addressCountry": "Career these western whom. Officer interview family fact. Always party stand development perform require machine drug.",  
+        "postalCode": "South answer story. Hold fight when I each. Natural actually bit investment. Compare without where prepare take.",  
+        "postOfficeBoxNumber": "Probably minute source great. Republican ask on whose week matter major. Age ago heart political."  
+    },  
+    "areaServed": "Yard difficult fill resource however open. Term like politics nothing.",  
+    "rt": [  
+        "oic.r.body.slm",  
+        "oic.r.body.slm"  
+    ],  
+    "slm": {  
+        "type": "Property",  
+        "value": 331.6  
+    },  
+    "units": "lb",  
+    "range": [  
+        918.8,  
+        946.6  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 240.5  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 850.2  
+    },  
+    "n": "Enter part history small. Everyone difficult else feeling.",  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.baseline"  
+    ],  
+    "type": "BodySoftLeanMass",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Operation such under list whether improve. Lose first myself large account red. Near similar involve. Charge can law include and western.",  
-    "addressLocality": "Watch employee from professional hear particular. Same save little town. Least goal stay seat.",  
-    "addressRegion": "Role environmental top. Direction day usually them level development western financial.",  
-    "addressCountry": "Career these western whom. Officer interview family fact. Always party stand development perform require machine drug.",  
-    "postalCode": "South answer story. Hold fight when I each. Natural actually bit investment. Compare without where prepare take.",  
-    "postOfficeBoxNumber": "Probably minute source great. Republican ask on whose week matter major. Age ago heart political."  
-  },  
-  "areaServed": "Yard difficult fill resource however open. Term like politics nothing.",  
-  "rt": [  
-    "oic.r.body.slm",  
-    "oic.r.body.slm"  
-  ],  
-  "slm": {  
-    "type": "Property",  
-    "value": 331.6  
-  },  
-  "units": "lb",  
-  "range": [  
-    918.8,  
-    946.6  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 240.5  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 850.2  
-  },  
-  "n": "Enter part history small. Everyone difficult else feeling.",  
-  "if": [  
-    "oic.if.baseline",  
-    "oic.if.baseline"  
-  ],  
-  "type": "BodySoftLeanMass",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### BodySoftLeanMass NGSI-LD normalizzato Esempio  
-Ecco un esempio di un BodySoftLeanMass in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di BodySoftLeanMass in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:BodySoftLeanMass:id:SYRF:82432210",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1996-02-28T20:56:42Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1991-02-21T22:05:11Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Range six speech act. Husband ball water before church thought resource change."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Argue push management."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Scientist talk education fine full population level thank. Investment because reveal memory choose. Official south inside fund."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Together difficult then any. Notice animal performance since sometimes ready so. Bit should its suffer house their. Son as much next actually."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Painting book hand low certain sometimes itself. Painting hundred face field. Return buy upon maybe service."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:BodySoftLeanMass:items:UQUW:63154460",  
-      "urn:ngsi-ld:BodySoftLeanMass:items:FZVF:84597741"  
+    "id": "urn:ngsi-ld:BodySoftLeanMass:id:SYRF:82432210",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1996-02-28T20:56:42Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1991-02-21T22:05:11Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Range six speech act. Husband ball water before church thought resource change."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Argue push management."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Scientist talk education fine full population level thank. Investment because reveal memory choose. Official south inside fund."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Together difficult then any. Notice animal performance since sometimes ready so. Bit should its suffer house their. Son as much next actually."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Painting book hand low certain sometimes itself. Painting hundred face field. Return buy upon maybe service."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:BodySoftLeanMass:items:UQUW:63154460",  
+            "urn:ngsi-ld:BodySoftLeanMass:items:FZVF:84597741"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:BodySoftLeanMass:items:DGRC:74899642"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -54.613213,  
+                -49.063645  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Cost note enough. Human feeling how certainly care. Security next success of attack measure.",  
+            "addressLocality": "Able rock move tree part. Despite ago seat bit easy everything indicate. Policy ten hour none determine tell lose.",  
+            "addressRegion": "Garden pretty build. Certain couple teach cold table.",  
+            "addressCountry": "Pressure ask stop fund least political. Responsibility the election morning culture.",  
+            "postalCode": "World simply whatever create radio tell finally. She field detail voice body employee sometimes.",  
+            "postOfficeBoxNumber": "Wear knowledge member begin hear question bit. Production court pull sort common majority population. Someone part west decade appear resource. Treat win check action."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Network despite recently fall chance. Occur training quite. Brother western blood life than red almost."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.body.slm"  
+        ]  
+    },  
+    "slm": {  
+        "type": "Property",  
+        "value": 585.5  
+    },  
+    "units": {  
+        "type": "Property",  
+        "value": "percent"  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            190.3,  
+            292.8  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 944.6  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 411.9  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Fund foreign forget."  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.s"  
+        ]  
+    },  
+    "type": "BodySoftLeanMass",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:BodySoftLeanMass:items:DGRC:74899642"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -54.613213,  
-        -49.063645  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Cost note enough. Human feeling how certainly care. Security next success of attack measure.",  
-      "addressLocality": "Able rock move tree part. Despite ago seat bit easy everything indicate. Policy ten hour none determine tell lose.",  
-      "addressRegion": "Garden pretty build. Certain couple teach cold table.",  
-      "addressCountry": "Pressure ask stop fund least political. Responsibility the election morning culture.",  
-      "postalCode": "World simply whatever create radio tell finally. She field detail voice body employee sometimes.",  
-      "postOfficeBoxNumber": "Wear knowledge member begin hear question bit. Production court pull sort common majority population. Someone part west decade appear resource. Treat win check action."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Network despite recently fall chance. Occur training quite. Brother western blood life than red almost."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.body.slm"  
-    ]  
-  },  
-  "slm": {  
-    "type": "Property",  
-    "value": 585.5  
-  },  
-  "units": {  
-    "type": "Property",  
-    "value": "percent"  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      190.3,  
-      292.8  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 944.6  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 411.9  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Fund foreign forget."  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.s"  
-    ]  
-  },  
-  "type": "BodySoftLeanMass",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
