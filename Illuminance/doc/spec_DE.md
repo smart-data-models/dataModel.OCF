@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entität: Beleuchtungsstärke  
-===========================  
+===========================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.OCF/blob/master/Illuminance/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Globale Beschreibung: **Diese Ressource beschreibt einen Beleuchtungsstärkesensor Die Eigenschaft "Beleuchtungsstärke" ist eine Fließkommazahl und stellt den gemessenen Lichtstrom pro Flächeneinheit in Lux dar.  
 Version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `if`: Der von dieser Ressource unterstützte OCF-Schnittstellensatz.  - `illuminance`: Der erfasste Lichtstrom pro Flächeneinheit in Lux.  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `n`: Freundlicher Name der Ressource  - `name`: Der Name dieses Artikels.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `range`: Der gültige Bereich für die Eigenschaft in der Ressource in Form einer Zahl. Der erste Wert im Array ist der Mindestwert, der zweite Wert im Array ist der Höchstwert.  - `rt`: Der Ressourcentyp.  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `type`: NGSI-Entitätstyp. Es muss Illuminance sein    
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, liegt das daran, dass es mehrere Typen oder unterschiedliche Formate/Muster haben kann</sub></sup>.  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `id[*]`: Eindeutiger Bezeichner der Entität  - `if[array]`: Der von dieser Ressource unterstützte OCF-Schnittstellensatz.  - `illuminance[number]`: Der erfasste Lichtstrom pro Flächeneinheit in Lux.  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `n[string]`: Freundlicher Name der Ressource  - `name[string]`: Der Name dieses Artikels.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `range[array]`: Der gültige Bereich für die Eigenschaft in der Ressource in Form einer Zahl. Der erste Wert im Array ist der Mindestwert, der zweite Wert im Array ist der Höchstwert.  - `rt[array]`: Der Ressourcentyp.  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `type[string]`: NGSI-Entitätstyp. Es muss Illuminance sein  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
-- `id`  - `illuminance`  - `type`    
+- `id`  - `illuminance`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Datenmodell nach dem von der Open Connectivity Foundation erstellten Original. Ursprüngliches Repository in https://github.com/openconnectivityfoundation/IoTDataModels  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Illuminance:    
@@ -342,9 +355,14 @@ Illuminance:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Beispiel-Nutzlasten  
 #### Beleuchtungsstärke NGSI-v2 Schlüsselwerte Beispiel  
-Hier ist ein Beispiel für eine Illuminanz im JSON-LD-Format als Schlüsselwerte. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für eine Illuminanz im JSON-LD-Format als Schlüsselwerte. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Illuminance:id:UUWN:34352123",  
@@ -399,8 +417,10 @@ Illuminance:
   "type": "Illuminance"  
 }  
 ```  
+</details>  
 #### Beleuchtungsstärke NGSI-v2 normalisiert Beispiel  
 Hier ist ein Beispiel für eine Illuminanz im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -514,174 +534,188 @@ Illuminance:
   }  
 }  
 ```  
+</details>  
 #### Beleuchtungsstärke NGSI-LD Schlüsselwerte Beispiel  
 Hier ist ein Beispiel für eine Illuminanz im JSON-LD-Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Illuminance:id:UUWN:34352123",  
-  "dateCreated": "2008-10-06T19:22:33Z",  
-  "dateModified": "1990-03-17T17:23:24Z",  
-  "source": "Security door report officer lay debate magazine.",  
-  "name": "Tell size compare point. Out big get entire culture hit. Hospital popular term join pressure else opportunity.",  
-  "alternateName": "Dark hour behind executive find old least half.",  
-  "description": "High edge measure political common front. After of while middle off morning staff. Those Republican individual fast forget culture.",  
-  "dataProvider": "Administration different leader environment whole weight truth. Concern there hand travel unit investment class. Always tree property him economic computer.",  
-  "owner": [  
-    "urn:ngsi-ld:Illuminance:items:GZNR:96026419",  
-    "urn:ngsi-ld:Illuminance:items:PAZK:42934372"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Illuminance:items:DEZP:64675308",  
-    "urn:ngsi-ld:Illuminance:items:BVYK:88404285"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -67.769054,  
-      -112.378099  
+    "id": "urn:ngsi-ld:Illuminance:id:UUWN:34352123",  
+    "dateCreated": "2008-10-06T19:22:33Z",  
+    "dateModified": "1990-03-17T17:23:24Z",  
+    "source": "Security door report officer lay debate magazine.",  
+    "name": "Tell size compare point. Out big get entire culture hit. Hospital popular term join pressure else opportunity.",  
+    "alternateName": "Dark hour behind executive find old least half.",  
+    "description": "High edge measure political common front. After of while middle off morning staff. Those Republican individual fast forget culture.",  
+    "dataProvider": "Administration different leader environment whole weight truth. Concern there hand travel unit investment class. Always tree property him economic computer.",  
+    "owner": [  
+        "urn:ngsi-ld:Illuminance:items:GZNR:96026419",  
+        "urn:ngsi-ld:Illuminance:items:PAZK:42934372"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Illuminance:items:DEZP:64675308",  
+        "urn:ngsi-ld:Illuminance:items:BVYK:88404285"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -67.769054,  
+            -112.378099  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Necessary likely movement product five billion decision nearly. Mention top perform personal.",  
+        "addressLocality": "Everyone final page performance interesting. Between management population experience.",  
+        "addressRegion": "Sense all raise. Population writer bank difficult general from. Itself ability less three either teach. Situation great agreement best if.",  
+        "addressCountry": "Join including continue bring quality. Change policy song marriage employee interest.",  
+        "postalCode": "Citizen feel wife big actually there decide.",  
+        "postOfficeBoxNumber": "Before leg garden win administration. Particular according book nor still thank take. Executive inside street agree."  
+    },  
+    "areaServed": "View up present as consider market administration wear. Now collection well create traditional because first student.",  
+    "rt": [  
+        "oic.r.sensor.illuminance",  
+        "oic.r.sensor.illuminance"  
+    ],  
+    "illuminance": {  
+        "type": "Property",  
+        "value": 744.9  
+    },  
+    "n": "Executive great amount approach statement edge a mind. Life Democrat note laugh capital week culture speak.",  
+    "range": [  
+        9.5,  
+        497.1  
+    ],  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.s"  
+    ],  
+    "type": "Illuminance",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Necessary likely movement product five billion decision nearly. Mention top perform personal.",  
-    "addressLocality": "Everyone final page performance interesting. Between management population experience.",  
-    "addressRegion": "Sense all raise. Population writer bank difficult general from. Itself ability less three either teach. Situation great agreement best if.",  
-    "addressCountry": "Join including continue bring quality. Change policy song marriage employee interest.",  
-    "postalCode": "Citizen feel wife big actually there decide.",  
-    "postOfficeBoxNumber": "Before leg garden win administration. Particular according book nor still thank take. Executive inside street agree."  
-  },  
-  "areaServed": "View up present as consider market administration wear. Now collection well create traditional because first student.",  
-  "rt": [  
-    "oic.r.sensor.illuminance",  
-    "oic.r.sensor.illuminance"  
-  ],  
-  "illuminance": {  
-    "type": "Property",  
-    "value": 744.9  
-  },  
-  "n": "Executive great amount approach statement edge a mind. Life Democrat note laugh capital week culture speak.",  
-  "range": [  
-    9.5,  
-    497.1  
-  ],  
-  "if": [  
-    "oic.if.baseline",  
-    "oic.if.s"  
-  ],  
-  "type": "Illuminance",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### Beleuchtungsstärke NGSI-LD normalisiert Beispiel  
 Hier ist ein Beispiel für eine Illuminanz im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-LD kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Illuminance:id:MNLY:30937921",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1975-05-11T13:09:10Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2003-12-02T03:26:21Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "After thing maybe watch spring show we. Several south address building she. Protect force hair machine. Season government goal wait air section."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Method institution hand first up. Media care sea."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Image man after large."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Really although sign paper season store. Fear exactly collection."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Start plan effort soon smile probably."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Illuminance:items:SVMJ:39738594",  
-      "urn:ngsi-ld:Illuminance:items:IPBX:16843864"  
+    "id": "urn:ngsi-ld:Illuminance:id:MNLY:30937921",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1975-05-11T13:09:10Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2003-12-02T03:26:21Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "After thing maybe watch spring show we. Several south address building she. Protect force hair machine. Season government goal wait air section."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Method institution hand first up. Media care sea."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Image man after large."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Really although sign paper season store. Fear exactly collection."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Start plan effort soon smile probably."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Illuminance:items:SVMJ:39738594",  
+            "urn:ngsi-ld:Illuminance:items:IPBX:16843864"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Illuminance:items:PBYJ:13845109"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -72.2442105,  
+                103.919595  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Figure shoulder activity south test. Doctor herself detail. Power teach itself ability risk consider.",  
+            "addressLocality": "Report feeling player picture. Program air sometimes crime son management. Home choose cup drive standard.",  
+            "addressRegion": "Admit art half adult image memory.",  
+            "addressCountry": "Nature support else week power present own floor.",  
+            "postalCode": "Right open effect sense question end. Training laugh speak behind focus in win analysis.",  
+            "postOfficeBoxNumber": "To under car if newspaper player prove article."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Film consumer why indeed heavy. Perform production report. North seven risk company ever firm."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.sensor.illuminance"  
+        ]  
+    },  
+    "illuminance": {  
+        "type": "Property",  
+        "value": 338.8  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Off woman hour your also. Lead hold race space. Rich available hold base project page."  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            194.8,  
+            76.4  
+        ]  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline",  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "Illuminance",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Illuminance:items:PBYJ:13845109"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -72.2442105,  
-        103.919595  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Figure shoulder activity south test. Doctor herself detail. Power teach itself ability risk consider.",  
-      "addressLocality": "Report feeling player picture. Program air sometimes crime son management. Home choose cup drive standard.",  
-      "addressRegion": "Admit art half adult image memory.",  
-      "addressCountry": "Nature support else week power present own floor.",  
-      "postalCode": "Right open effect sense question end. Training laugh speak behind focus in win analysis.",  
-      "postOfficeBoxNumber": "To under car if newspaper player prove article."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Film consumer why indeed heavy. Perform production report. North seven risk company ever firm."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.sensor.illuminance"  
-    ]  
-  },  
-  "illuminance": {  
-    "type": "Property",  
-    "value": 338.8  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Off woman hour your also. Lead hold race space. Rich available hold base project page."  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      194.8,  
-      76.4  
-    ]  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.baseline",  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "type": "Illuminance",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
