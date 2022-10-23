@@ -1,17 +1,32 @@
-エンティティ：消耗品  
-==========  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティ：消耗品  
+==========<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/consumable/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな説明です。**IoTDataのデータモデルをスマートデータモデルに変換したものです。プロパティ「typeofconsumable」は、Smart Home Device Specificationで定義されている、消費されるものを定義する列挙です。 プロパティ「remaining」は、残りの寿命の割合を示す整数です。プロパティ「orderpercentage」は、メーカーが交換や補充を推奨する寿命の割合を示す整数です。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**IoTData のデータモデルをスマートデータモデルプログラムに適応させたもの。プロパティ 'typeofconsumable' は、スマートホーム機器仕様で定義された消費されるものを定義する列挙 型である。プロパティ 'remaining' は、残存寿命を示す整数である。プロパティ 'orderpercentage' は、メーカーが交換や補充を推奨する寿命を示す整数である。プロパティ 'url' は、消耗品に関する詳細情報を得ることができる URL を含む文字列である**。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `if`: このResourceがサポートしているOCF Interface set。  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `n`: リソースのフレンドリーネーム  - `name`: このアイテムの名前です。  - `orderpercentage`: メーカーが再注文を推奨する割合。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `remaining`: 残りの寿命の割合です。  - `rt`: The Resource Type。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSIのエンティティタイプ。消費可能なものでなければならない  - `typeofconsumable`: 消費されているもの。  - `url`: 追加の注文情報を見つけることができるURLです。    
-必須項目  
-- `id`  - `type`    
-このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)から来ています。NGSIの要件に適合するように拡張されています。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `if[array]`: このResourceがサポートするOCF Interfaceセット。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `n[string]`: リソースのフレンドリ名  - `name[string]`: このアイテムの名称です。  - `orderpercentage[integer]`: メーカーが再注文することを推奨する割合。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `remaining[integer]`: 寿命が残っている割合。  - `rt[array]`: リソースタイプです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSIエンティティタイプ。消費可能でなければならない  - `typeofconsumable[string]`: 消費されるもの。  - `url[string]`: 追加の注文情報を参照できる URL。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)に由来しています。NGSIの要件に適合するように拡張されている。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 consumable:    
@@ -352,9 +367,14 @@ consumable:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### 消耗品 NGSI-v2 キー・バリューの例  
-ここでは、key-valuesとしてJSON-LD形式での消耗品の例を示します。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### 消費可能な NGSI-v2 キー値 例  
+ここでは、key-valuesとしてJSON-LD形式でconsumerableを提供する例を示す。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:consumable:id:HQRQ:55721588",  
@@ -391,8 +411,10 @@ consumable:
   "areaServed": "Organization reflect will fall now plan sign. Artist Congress thus own."  
 }  
 ```  
+</details>  
 #### 消耗品 NGSI-v2 正規化例  
-ここでは、正規化されたJSON-LD形式のコンシューマブルの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、正規化された JSON-LD 形式の consumable の例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -470,127 +492,141 @@ consumable:
   }  
 }  
 ```  
-#### 消耗品であるNGSI-LDのキーバリューの例  
-ここでは、JSON-LD形式のkey-valuesとしての消耗品の例を紹介します。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### 消耗品 NGSI-LD キー値 例  
+ここでは、JSON-LD形式でkey-valuesとしてconsumableの例を示す。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:consumable:id:HQRQ:55721588",  
-  "dateCreated": "1994-02-03T09:06:25Z",  
-  "dateModified": "1980-12-14T14:08:28Z",  
-  "source": "Subject already view bring force animal according especially. Clearly leg investment anyone.",  
-  "name": "Share degree hope society free down. Expect result expert control such thing. Past something every future billion.",  
-  "alternateName": "Court green answer career garden special.",  
-  "description": "In bad page tell wide. Key least out nation machine assume alone.",  
-  "dataProvider": "Window him own work human pattern all. Approach officer live treatment future activity participant.",  
-  "owner": [  
-    "urn:ngsi-ld:consumable:items:OIWA:88403035",  
-    "urn:ngsi-ld:consumable:items:EBDB:93426135"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:consumable:items:QTFW:38344697",  
-    "urn:ngsi-ld:consumable:items:EUTD:81027203"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -57.68437,  
-      -85.068576  
+    "id": "urn:ngsi-ld:consumable:id:HQRQ:55721588",  
+    "dateCreated": "1994-02-03T09:06:25Z",  
+    "dateModified": "1980-12-14T14:08:28Z",  
+    "source": "Subject already view bring force animal according especially. Clearly leg investment anyone.",  
+    "name": "Share degree hope society free down. Expect result expert control such thing. Past something every future billion.",  
+    "alternateName": "Court green answer career garden special.",  
+    "description": "In bad page tell wide. Key least out nation machine assume alone.",  
+    "dataProvider": "Window him own work human pattern all. Approach officer live treatment future activity participant.",  
+    "owner": [  
+        "urn:ngsi-ld:consumable:items:OIWA:88403035",  
+        "urn:ngsi-ld:consumable:items:EBDB:93426135"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:consumable:items:QTFW:38344697",  
+        "urn:ngsi-ld:consumable:items:EUTD:81027203"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -57.68437,  
+            -85.068576  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Direction success analysis ok them democratic. Require especially concern doctor possible cover. Article live against course month color.",  
+        "addressLocality": "Arm few stand religious. It turn everything. Decide population change message there sometimes general.",  
+        "addressRegion": "Whom seek case score five. Side whole better conference. Imagine detail according goal form.",  
+        "addressCountry": "New face medical and production.",  
+        "postalCode": "Measure middle structure enter particularly find.",  
+        "postOfficeBoxNumber": "Itself everything community morning subject not play wonder. Finally arm painting wind."  
+    },  
+    "areaServed": "Organization reflect will fall now plan sign. Artist Congress thus own.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Direction success analysis ok them democratic. Require especially concern doctor possible cover. Article live against course month color.",  
-    "addressLocality": "Arm few stand religious. It turn everything. Decide population change message there sometimes general.",  
-    "addressRegion": "Whom seek case score five. Side whole better conference. Imagine detail according goal form.",  
-    "addressCountry": "New face medical and production.",  
-    "postalCode": "Measure middle structure enter particularly find.",  
-    "postOfficeBoxNumber": "Itself everything community morning subject not play wonder. Finally arm painting wind."  
-  },  
-  "areaServed": "Organization reflect will fall now plan sign. Artist Congress thus own.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### 消耗品 NGSI-LD 正規化例  
-ここでは、正規化されたJSON-LD形式のコンシューマブルの例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、正規化されたJSON-LD形式のConsumerableの例である。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:consumable:id:RYTM:51125314",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1996-01-07T04:49:52Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2003-09-05T21:18:59Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Operation every though. Clear past boy you research important. By magazine those serve add PM bill."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "First down south laugh someone effect sound. Move shoulder play deal city work serious. Leave trip live will."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Service offer statement one sing central place nice. World hospital bit camera fight his order just. Sure responsibility me cover discuss forget it. Model site what along serious wear high."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Court have detail color. To science compare whom yeah home recent. Own across situation ever law."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "National require majority. Image beyond contain despite seek. Close mention control that big talk radio."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:consumable:items:GBGK:43976081",  
-      "urn:ngsi-ld:consumable:items:KXTT:78055740"  
+    "id": "urn:ngsi-ld:consumable:id:RYTM:51125314",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1996-01-07T04:49:52Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2003-09-05T21:18:59Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Operation every though. Clear past boy you research important. By magazine those serve add PM bill."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "First down south laugh someone effect sound. Move shoulder play deal city work serious. Leave trip live will."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Service offer statement one sing central place nice. World hospital bit camera fight his order just. Sure responsibility me cover discuss forget it. Model site what along serious wear high."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Court have detail color. To science compare whom yeah home recent. Own across situation ever law."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "National require majority. Image beyond contain despite seek. Close mention control that big talk radio."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:consumable:items:GBGK:43976081",  
+            "urn:ngsi-ld:consumable:items:KXTT:78055740"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:consumable:items:REDU:05679850"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -79.272204,  
+                60.44487  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Matter final group lead ever respond. Radio exist stock side address.",  
+            "addressLocality": "Single professor character thousand environment job. Story a outside north without. Benefit TV local.",  
+            "addressRegion": "Wind as exist east success enough hundred. Professional when sense.",  
+            "addressCountry": "Identify show rise work edge. Eight store fish for five according drive decade.",  
+            "postalCode": "Then east performance investment future deal. Strong big until per age policy up art. Ten speak hit who.",  
+            "postOfficeBoxNumber": "Evidence scene finally. Where cell adult western report."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Treatment claim author common their brother discussion. Outside poor without position article. Necessary machine company manage."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:consumable:items:REDU:05679850"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -79.272204,  
-        60.44487  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Matter final group lead ever respond. Radio exist stock side address.",  
-      "addressLocality": "Single professor character thousand environment job. Story a outside north without. Benefit TV local.",  
-      "addressRegion": "Wind as exist east success enough hundred. Professional when sense.",  
-      "addressCountry": "Identify show rise work edge. Eight store fish for five according drive decade.",  
-      "postalCode": "Then east performance investment future deal. Strong big until per age policy up art. Ten speak hit who.",  
-      "postOfficeBoxNumber": "Evidence scene finally. Where cell adult western report."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Treatment claim author common their brother discussion. Outside poor without position article. Necessary machine company manage."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
