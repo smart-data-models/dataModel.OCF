@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entität: Wechselrichter  
-=======================  
+=======================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.OCF/blob/master/Inverter/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Globale Beschreibung: **Diese Ressource beschreibt Funktionen für die Steuerung und Überwachung von IEC 61850-basierten Leistungsschaltern**.  
 Version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `if`: Der von dieser Ressource unterstützte OCF-Schnittstellensatz.  - `inputcurrent`: Eingangsstrom in Ampere.  - `inputvoltage`: Eingangsspannung in Volt.  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `maxvoltmppt`: Maximale Spannung für die MPPT (Maximum Power Point Tracking)-Steuerungsmethode (V), definiert zum Zeitpunkt der Herstellung.  - `minvoltmppt`: Mindestspannung für die MPPT (Maximum Power Point Tracking)-Steuerungsmethode (V), definiert zum Zeitpunkt der Herstellung.  - `n`: Freundlicher Name der Ressource  - `name`: Der Name dieses Artikels.  - `outputpower`: Ausgangsleistung in kW.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `ratedpower`: Die Nennleistung in kW, die zum Zeitpunkt der Herstellung festgelegt wird.  - `rt`: Der Ressourcentyp  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `status`: Der Status des Wechselrichters. Der Status kann nur außerhalb der Grenzen zurückgesetzt werden.  - `timestamp`: Eine RFC3339-formatierte Zeit, die angibt, wann die Daten beobachtet wurden (z. B.: 2016-02-15T09:19Z, 1996-12-19T16:39:57-08:00). Auflösung in 1/100 Sekunde.  - `type`: NGSI-Entitätstyp. Es muss Wechselrichter sein    
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, liegt das daran, dass es mehrere Typen oder unterschiedliche Formate/Muster haben kann</sub></sup>.  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `id[*]`: Eindeutiger Bezeichner der Entität  - `if[array]`: Der von dieser Ressource unterstützte OCF-Schnittstellensatz.  - `inputcurrent[number]`: Eingangsstrom in Ampere.  - `inputvoltage[number]`: Eingangsspannung in Volt.  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `maxvoltmppt[number]`: Maximale Spannung für die MPPT (Maximum Power Point Tracking)-Steuerungsmethode (V), definiert zum Zeitpunkt der Herstellung.  - `minvoltmppt[number]`: Mindestspannung für die MPPT (Maximum Power Point Tracking)-Steuerungsmethode (V), definiert zum Zeitpunkt der Herstellung.  - `n[string]`: Freundlicher Name der Ressource  - `name[string]`: Der Name dieses Artikels.  - `outputpower[number]`: Ausgangsleistung in kW.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `ratedpower[number]`: Die Nennleistung in kW, die zum Zeitpunkt der Herstellung festgelegt wird.  - `rt[array]`: Der Ressourcentyp  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `status[string]`: Der Status des Wechselrichters. Der Status kann nur außerhalb der Grenzen zurückgesetzt werden.  - `timestamp[string]`: Eine RFC3339-formatierte Zeit, die angibt, wann die Daten beobachtet wurden (z. B.: 2016-02-15T09:19Z, 1996-12-19T16:39:57-08:00). Auflösung in 1/100 Sekunde.  - `type[string]`: NGSI-Entitätstyp. Es muss Inverter sein  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
-- `id`  - `inputcurrent`  - `inputvoltage`  - `maxvoltmppt`  - `minvoltmppt`  - `outputpower`  - `ratedpower`  - `status`  - `timestamp`  - `type`    
+- `id`  - `inputcurrent`  - `inputvoltage`  - `maxvoltmppt`  - `minvoltmppt`  - `outputpower`  - `ratedpower`  - `status`  - `timestamp`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Datenmodell nach dem von der Open Connectivity Foundation erstellten Original. Ursprüngliches Repository in https://github.com/openconnectivityfoundation/IoTDataModels  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Inverter:    
@@ -386,9 +399,14 @@ Inverter:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Beispiel-Nutzlasten  
 #### Inverter NGSI-v2 Schlüsselwerte Beispiel  
 Hier ist ein Beispiel für einen Inverter im JSON-LD-Format als Schlüsselwerte. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Inverter:id:QKHM:28779877",  
@@ -461,8 +479,10 @@ Inverter:
   "type": "Inverter"  
 }  
 ```  
+</details>  
 #### Wechselrichter NGSI-v2 normalisiert Beispiel  
 Hier ist ein Beispiel für einen Wechselrichter im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -613,216 +633,230 @@ Inverter:
   }  
 }  
 ```  
+</details>  
 #### Wechselrichter NGSI-LD Schlüsselwerte Beispiel  
 Hier ist ein Beispiel für einen Inverter im JSON-LD-Format als Schlüsselwerte. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Inverter:id:QKHM:28779877",  
-  "dateCreated": "2011-09-26T02:57:58Z",  
-  "dateModified": "1999-06-01T10:31:41Z",  
-  "source": "Both before finish whole space including hospital. Arrive anything take deep reveal more seven page.",  
-  "name": "Whether life realize fire. Guy happen thought material no certainly.",  
-  "alternateName": "Certain difference boy. Performance score weight performance. Republican stuff visit ten.",  
-  "description": "So describe believe environmental build necessary. Treat they memory oil parent.",  
-  "dataProvider": "Risk such medical. Among whom every discuss series deal.",  
-  "owner": [  
-    "urn:ngsi-ld:Inverter:items:KSSI:21376961",  
-    "urn:ngsi-ld:Inverter:items:YQQI:56248386"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Inverter:items:STCD:23046259",  
-    "urn:ngsi-ld:Inverter:items:UJCA:53322929"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -88.997438,  
-      -124.268822  
+    "id": "urn:ngsi-ld:Inverter:id:QKHM:28779877",  
+    "dateCreated": "2011-09-26T02:57:58Z",  
+    "dateModified": "1999-06-01T10:31:41Z",  
+    "source": "Both before finish whole space including hospital. Arrive anything take deep reveal more seven page.",  
+    "name": "Whether life realize fire. Guy happen thought material no certainly.",  
+    "alternateName": "Certain difference boy. Performance score weight performance. Republican stuff visit ten.",  
+    "description": "So describe believe environmental build necessary. Treat they memory oil parent.",  
+    "dataProvider": "Risk such medical. Among whom every discuss series deal.",  
+    "owner": [  
+        "urn:ngsi-ld:Inverter:items:KSSI:21376961",  
+        "urn:ngsi-ld:Inverter:items:YQQI:56248386"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Inverter:items:STCD:23046259",  
+        "urn:ngsi-ld:Inverter:items:UJCA:53322929"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -88.997438,  
+            -124.268822  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Grow after much house our.",  
+        "addressLocality": "Firm yard answer consider second.",  
+        "addressRegion": "Also challenge discover event picture onto. Subject machine into lawyer major hold get.",  
+        "addressCountry": "House identify inside student along. See right husband weight education get positive assume. Certain environmental worry specific.",  
+        "postalCode": "Pm man born hit crime space kitchen treat. Physical method southern provide.",  
+        "postOfficeBoxNumber": "Century treat create pattern voice analysis level. Property newspaper rest."  
+    },  
+    "areaServed": "Try opportunity along some skill. Ball cover machine stage want than father. Create authority pressure.",  
+    "rt": [  
+        "oic.r.inverter",  
+        "oic.r.inverter"  
+    ],  
+    "status": "on",  
+    "ratedpower": {  
+        "type": "Property",  
+        "value": 792.6  
+    },  
+    "minvoltmppt": {  
+        "type": "Property",  
+        "value": 429.9  
+    },  
+    "maxvoltmppt": {  
+        "type": "Property",  
+        "value": 549.6  
+    },  
+    "inputvoltage": {  
+        "type": "Property",  
+        "value": 333.3  
+    },  
+    "inputcurrent": {  
+        "type": "Property",  
+        "value": 227.3  
+    },  
+    "outputpower": {  
+        "type": "Property",  
+        "value": 237.0  
+    },  
+    "timestamp": "1977-09-25T18:29:39Z",  
+    "n": "Whatever nice teach possible well.",  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.s"  
+    ],  
+    "type": "Inverter",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Grow after much house our.",  
-    "addressLocality": "Firm yard answer consider second.",  
-    "addressRegion": "Also challenge discover event picture onto. Subject machine into lawyer major hold get.",  
-    "addressCountry": "House identify inside student along. See right husband weight education get positive assume. Certain environmental worry specific.",  
-    "postalCode": "Pm man born hit crime space kitchen treat. Physical method southern provide.",  
-    "postOfficeBoxNumber": "Century treat create pattern voice analysis level. Property newspaper rest."  
-  },  
-  "areaServed": "Try opportunity along some skill. Ball cover machine stage want than father. Create authority pressure.",  
-  "rt": [  
-    "oic.r.inverter",  
-    "oic.r.inverter"  
-  ],  
-  "status": "on",  
-  "ratedpower": {  
-    "type": "Property",  
-    "value": 792.6  
-  },  
-  "minvoltmppt": {  
-    "type": "Property",  
-    "value": 429.9  
-  },  
-  "maxvoltmppt": {  
-    "type": "Property",  
-    "value": 549.6  
-  },  
-  "inputvoltage": {  
-    "type": "Property",  
-    "value": 333.3  
-  },  
-  "inputcurrent": {  
-    "type": "Property",  
-    "value": 227.3  
-  },  
-  "outputpower": {  
-    "type": "Property",  
-    "value": 237.0  
-  },  
-  "timestamp": "1977-09-25T18:29:39Z",  
-  "n": "Whatever nice teach possible well.",  
-  "if": [  
-    "oic.if.baseline",  
-    "oic.if.s"  
-  ],  
-  "type": "Inverter",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### Wechselrichter NGSI-LD normalisiert Beispiel  
 Hier ist ein Beispiel für einen Wechselrichter im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Inverter:id:JJXX:06248424",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1991-06-28T22:23:41Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1995-07-25T00:46:03Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Fear class ability close benefit. We moment score fund allow art."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Never ask too future billion window. May blood class sort message nothing. Fine through accept attorney fish."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Bit middle research church exactly current. Like single ok cup."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Population throw soldier action kitchen soon professor. Particularly which sea away financial of wife."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Night public evening foot section. Clearly talk effort century. Natural attack street unit."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Inverter:items:AWPK:98614702",  
-      "urn:ngsi-ld:Inverter:items:FCYN:45549371"  
+    "id": "urn:ngsi-ld:Inverter:id:JJXX:06248424",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1991-06-28T22:23:41Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1995-07-25T00:46:03Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Fear class ability close benefit. We moment score fund allow art."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Never ask too future billion window. May blood class sort message nothing. Fine through accept attorney fish."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Bit middle research church exactly current. Like single ok cup."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Population throw soldier action kitchen soon professor. Particularly which sea away financial of wife."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Night public evening foot section. Clearly talk effort century. Natural attack street unit."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Inverter:items:AWPK:98614702",  
+            "urn:ngsi-ld:Inverter:items:FCYN:45549371"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Inverter:items:NTQT:09016096"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                81.1846425,  
+                53.749567  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Operation probably one sell. Table stand number heart personal able bank. Draw prove continue second fact truth number loss.",  
+            "addressLocality": "Plant street could drop expect. Either late Democrat to. Strategy difference practice address. Low size campaign see political thus.",  
+            "addressRegion": "Would smile next body level Mr moment. Something court attack continue. Describe under market especially research weight million measure.",  
+            "addressCountry": "Agent go case may break.",  
+            "postalCode": "Agree activity without project agree. Its material evidence.",  
+            "postOfficeBoxNumber": "Key despite computer apply system into. Exist water key answer building against. Wind site without more health quite good church."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Meeting event office. Fill certain talk safe authority public."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.inverter"  
+        ]  
+    },  
+    "status": {  
+        "type": "Property",  
+        "value": "trip"  
+    },  
+    "ratedpower": {  
+        "type": "Property",  
+        "value": 507.0  
+    },  
+    "minvoltmppt": {  
+        "type": "Property",  
+        "value": 937.7  
+    },  
+    "maxvoltmppt": {  
+        "type": "Property",  
+        "value": 7.0  
+    },  
+    "inputvoltage": {  
+        "type": "Property",  
+        "value": 993.2  
+    },  
+    "inputcurrent": {  
+        "type": "Property",  
+        "value": 875.3  
+    },  
+    "outputpower": {  
+        "type": "Property",  
+        "value": 799.9  
+    },  
+    "timestamp": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1972-12-17T09:04:11Z"  
+        }  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Difficult however coach will cover final hear. Cup husband box they."  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline",  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "Inverter",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Inverter:items:NTQT:09016096"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        81.1846425,  
-        53.749567  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Operation probably one sell. Table stand number heart personal able bank. Draw prove continue second fact truth number loss.",  
-      "addressLocality": "Plant street could drop expect. Either late Democrat to. Strategy difference practice address. Low size campaign see political thus.",  
-      "addressRegion": "Would smile next body level Mr moment. Something court attack continue. Describe under market especially research weight million measure.",  
-      "addressCountry": "Agent go case may break.",  
-      "postalCode": "Agree activity without project agree. Its material evidence.",  
-      "postOfficeBoxNumber": "Key despite computer apply system into. Exist water key answer building against. Wind site without more health quite good church."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Meeting event office. Fill certain talk safe authority public."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.inverter"  
-    ]  
-  },  
-  "status": {  
-    "type": "Property",  
-    "value": "trip"  
-  },  
-  "ratedpower": {  
-    "type": "Property",  
-    "value": 507.0  
-  },  
-  "minvoltmppt": {  
-    "type": "Property",  
-    "value": 937.7  
-  },  
-  "maxvoltmppt": {  
-    "type": "Property",  
-    "value": 7.0  
-  },  
-  "inputvoltage": {  
-    "type": "Property",  
-    "value": 993.2  
-  },  
-  "inputcurrent": {  
-    "type": "Property",  
-    "value": 875.3  
-  },  
-  "outputpower": {  
-    "type": "Property",  
-    "value": 799.9  
-  },  
-  "timestamp": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1972-12-17T09:04:11Z"  
-    }  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Difficult however coach will cover final hear. Cup husband box they."  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.baseline",  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "type": "Inverter",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
