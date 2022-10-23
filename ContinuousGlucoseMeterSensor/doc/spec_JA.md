@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 エンティティContinuousGlucoseMeterSensor（連続グルコースメーターセンサー  
-==================================================  
+==================================================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/ContinuousGlucoseMeterSensor/LICENSE.md)  
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**このリソースは、持続血糖測定器（CGM）用センサーのプロパティについて記述している。  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Global description:**このリソースは、持続血糖測定器（CGM）用センサーのプロパティについて記述している。  
 バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `id`: エンティティの一意な識別子  - `if`: このResourceがサポートするOCF Interfaceセット。  - `location`: アイテムへのGeojsonリファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `n`: リソースのフレンドリ名  - `name`: このアイテムの名称です。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `precision`: precision'の値が公開されると、ResourceのPropertiesに対して+/-の許容範囲を提供します。したがって、あるプロパティがある値にUPDATEされ、そのプロパティがRETRIEVEDされた場合、RETRIEVEDされた値は設定された値+/-精度の範囲内であれば有効である。  - `range`: リソースに含まれるプロパティの有効範囲を数値で表したもの。配列の最初の値が最小値、2 番目の値が最大値となります。  - `rt`: リソースタイプです。  - `runtime`: このプロパティは、CGM を使用する推奨ランタイム日数について説明します。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで指定する文字の列。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `starttime`: このプロパティは、センサーの開始時刻を ISO 8601 の日時形式で記述する（例： 2007-04-05T14:30Z, 2007-04-05T14:30+09:00 ）。  - `step`: 定義された範囲のステップ値（範囲が数値の場合は整数）。  範囲が0.0〜10.0でステップが2.5の場合、有効な値は0.0、2.5、5.0、7.5、10.0である。  - `type`: NGSIエンティティタイプ。ContinuousGlucoseMeterSensorでなければならない。    
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `if[array]`: このResourceがサポートするOCF Interfaceセット。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `n[string]`: リソースのフレンドリ名  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `precision[number]`: 公開されるとき、'precision'の値は、ResourceのPropertyに対して+/-の許容範囲を提供する。したがって、あるプロパティがある値にUPDATEされ、そのプロパティがRETRIEVEDされた場合、RETRIEVEDされた値は設定された値+/-精度の範囲内であれば有効である。  - `range[array]`: Resource に含まれる Property の有効範囲を数値で表します。配列の最初の値が最小値、2 番目の値が最大値となります。  - `rt[array]`: リソースタイプです。  - `runtime[number]`: このプロパティは、CGM を使用する推奨ランタイム日数について説明します。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `starttime[string]`: このプロパティは、センサーの開始時刻を ISO 8601 の日時形式で記述する（例： 2007-04-05T14:30Z, 2007-04-05T14:30+09:00 ）。  - `step[number]`: 定義された範囲にわたるステップ値。  範囲が0.0〜10.0でステップが2.5の場合、有効な値は0.0、2.5、5.0、7.5、10.0である。  - `type[string]`: NGSI エンティティタイプ。ContinuousGlucoseMeterSensorでなければならない。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 必要なプロパティ  
-- `id`  - `runtime`  - `starttime`  - `type`    
+- `id`  - `runtime`  - `starttime`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 データモデルは、Open Connectivity Foundationが作成したオリジナルを引用しています。https://github.com/openconnectivityfoundation/IoTDataModels のオリジナルリポジトリ  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
 アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ContinuousGlucoseMeterSensor:    
@@ -361,9 +374,14 @@ ContinuousGlucoseMeterSensor:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
 #### ContinuousGlucoseMeterSensor NGSI-v2 key-value の例。  
-ContinuousGlucoseMeterSensorをJSON-LD形式でkey-valueにした例です。これは、`options=keyValues`を使用した場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返す。  
+ContinuousGlucoseMeterSensorをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:ContinuousGlucoseMeterSensor:id:WAEX:44862903",  
@@ -427,8 +445,10 @@ ContinuousGlucoseMeterSensor:
   "type": "ContinuousGlucoseMeterSensor"  
 }  
 ```  
+</details>  
 #### ContinuousGlucoseMeterSensor NGSI-v2 正規化例  
-以下は、ContinuousGlucoseMeterSensorをJSON-LD形式で正規化した例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、ContinuousGlucoseMeterSensorを正規化したJSON-LD形式の例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -560,194 +580,208 @@ ContinuousGlucoseMeterSensor:
   }  
 }  
 ```  
+</details>  
 #### ContinuousGlucoseMeterSensor NGSI-LD key-value の例。  
-ContinuousGlucoseMeterSensorをJSON-LD形式でkey-valueとした例です。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
+ContinuousGlucoseMeterSensorをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:ContinuousGlucoseMeterSensor:id:WAEX:44862903",  
-  "dateCreated": "1999-03-30T22:51:27Z",  
-  "dateModified": "2012-12-22T07:39:58Z",  
-  "source": "Perhaps price recent total describe time once before. Personal pretty new pull really break whether. Culture listen thank future however.",  
-  "name": "Their hand she fire instead knowledge. Television statement meeting experience attorney.",  
-  "alternateName": "Full inside great style fall song attention. Way indicate wall Mr section exist. Information training firm room whatever.",  
-  "description": "Even resource yourself sea.",  
-  "dataProvider": "Test side stand protect response. Education color man general series. Mrs financial pattern program. Think future color however.",  
-  "owner": [  
-    "urn:ngsi-ld:ContinuousGlucoseMeterSensor:items:VFHC:26378445",  
-    "urn:ngsi-ld:ContinuousGlucoseMeterSensor:items:XYIY:53974790"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:ContinuousGlucoseMeterSensor:items:ELPR:93944920",  
-    "urn:ngsi-ld:ContinuousGlucoseMeterSensor:items:YVNE:68441652"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      61.9624645,  
-      19.178525  
+    "id": "urn:ngsi-ld:ContinuousGlucoseMeterSensor:id:WAEX:44862903",  
+    "dateCreated": "1999-03-30T22:51:27Z",  
+    "dateModified": "2012-12-22T07:39:58Z",  
+    "source": "Perhaps price recent total describe time once before. Personal pretty new pull really break whether. Culture listen thank future however.",  
+    "name": "Their hand she fire instead knowledge. Television statement meeting experience attorney.",  
+    "alternateName": "Full inside great style fall song attention. Way indicate wall Mr section exist. Information training firm room whatever.",  
+    "description": "Even resource yourself sea.",  
+    "dataProvider": "Test side stand protect response. Education color man general series. Mrs financial pattern program. Think future color however.",  
+    "owner": [  
+        "urn:ngsi-ld:ContinuousGlucoseMeterSensor:items:VFHC:26378445",  
+        "urn:ngsi-ld:ContinuousGlucoseMeterSensor:items:XYIY:53974790"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:ContinuousGlucoseMeterSensor:items:ELPR:93944920",  
+        "urn:ngsi-ld:ContinuousGlucoseMeterSensor:items:YVNE:68441652"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            61.9624645,  
+            19.178525  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Line guess each impact structure sister. Set he help race outside yeah according step. Method entire hotel hard after. Without break enter direction sit green news.",  
+        "addressLocality": "Catch radio down enter pretty. Pattern if until which. Course color general live.",  
+        "addressRegion": "Expert reveal world to. Fast civil others relate. Community art team board far serve.",  
+        "addressCountry": "Occur off Congress participant meet. Determine discover just production.",  
+        "postalCode": "Near involve data. Effort mother candidate run enough.",  
+        "postOfficeBoxNumber": "Soon PM off. Onto design soldier manage sound toward. From way perhaps school fact central."  
+    },  
+    "areaServed": "Reach experience instead people newspaper bar.",  
+    "starttime": "Dinner join couple dream loss high real. War during fire board. Become mention again here special.",  
+    "runtime": {  
+        "type": "Property",  
+        "value": 205.2  
+    },  
+    "rt": [  
+        "oic.r.cgm.sensor",  
+        "oic.r.cgm.sensor"  
+    ],  
+    "n": "Center system responsibility. Show very wife address can owner voice. Message so age focus.",  
+    "if": [  
+        "oic.if.s",  
+        "oic.if.s"  
+    ],  
+    "range": [  
+        449.6,  
+        786.7  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 471.9  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 270.2  
+    },  
+    "type": "ContinuousGlucoseMeterSensor",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Line guess each impact structure sister. Set he help race outside yeah according step. Method entire hotel hard after. Without break enter direction sit green news.",  
-    "addressLocality": "Catch radio down enter pretty. Pattern if until which. Course color general live.",  
-    "addressRegion": "Expert reveal world to. Fast civil others relate. Community art team board far serve.",  
-    "addressCountry": "Occur off Congress participant meet. Determine discover just production.",  
-    "postalCode": "Near involve data. Effort mother candidate run enough.",  
-    "postOfficeBoxNumber": "Soon PM off. Onto design soldier manage sound toward. From way perhaps school fact central."  
-  },  
-  "areaServed": "Reach experience instead people newspaper bar.",  
-  "starttime": "Dinner join couple dream loss high real. War during fire board. Become mention again here special.",  
-  "runtime": {  
-    "type": "Property",  
-    "value": 205.2  
-  },  
-  "rt": [  
-    "oic.r.cgm.sensor",  
-    "oic.r.cgm.sensor"  
-  ],  
-  "n": "Center system responsibility. Show very wife address can owner voice. Message so age focus.",  
-  "if": [  
-    "oic.if.s",  
-    "oic.if.s"  
-  ],  
-  "range": [  
-    449.6,  
-    786.7  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 471.9  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 270.2  
-  },  
-  "type": "ContinuousGlucoseMeterSensor",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### 連続グルコースメーターセンサー NGSI-LD 正規化例  
-以下は、ContinuousGlucoseMeterSensorをJSON-LD形式で正規化した例である。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+ContinuousGlucoseMeterSensor を JSON-LD 形式で正規化した例です。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:ContinuousGlucoseMeterSensor:id:YJIM:68056027",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2019-03-02T01:19:29Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2016-05-30T02:46:32Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Question four must source also decide role. Bank high word effort. Fine support drive arrive politics institution."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Particularly tell similar recognize card often while. Between within avoid east president."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Little long whose. Still wife beat everyone magazine apply walk."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Cup indeed on simply vote big same modern. Relationship cultural page itself wonder."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Second seem bed tax recent organization. Drug individual movement ball. Show suffer and small table without prepare."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:ContinuousGlucoseMeterSensor:items:OSEN:98502198",  
-      "urn:ngsi-ld:ContinuousGlucoseMeterSensor:items:BJDY:06916629"  
+    "id": "urn:ngsi-ld:ContinuousGlucoseMeterSensor:id:YJIM:68056027",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2019-03-02T01:19:29Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2016-05-30T02:46:32Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Question four must source also decide role. Bank high word effort. Fine support drive arrive politics institution."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Particularly tell similar recognize card often while. Between within avoid east president."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Little long whose. Still wife beat everyone magazine apply walk."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Cup indeed on simply vote big same modern. Relationship cultural page itself wonder."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Second seem bed tax recent organization. Drug individual movement ball. Show suffer and small table without prepare."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:ContinuousGlucoseMeterSensor:items:OSEN:98502198",  
+            "urn:ngsi-ld:ContinuousGlucoseMeterSensor:items:BJDY:06916629"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:ContinuousGlucoseMeterSensor:items:IAUP:42382262"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -83.8309825,  
+                16.633986  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Same large can must note guess continue once. Father writer suggest edge meeting. Responsibility poor agreement provide quality instead.",  
+            "addressLocality": "Style as I site need. Employee scientist minute American improve. Happen pretty project thank structure individual. Human growth build someone hour ten relate media.",  
+            "addressRegion": "Stock try drive city increase avoid. Up behind step term difference offer.",  
+            "addressCountry": "Republican east true bring home together it. Ability value sign officer long.",  
+            "postalCode": "Activity partner worker week reflect. No choice new word hope. Opportunity operation speak girl far they.",  
+            "postOfficeBoxNumber": "East mention meet poor wonder model owner movement. Letter three the describe. Where much decade interest."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Both truth agreement little skill surface. Indicate pretty Democrat Mrs able somebody. Opportunity college spring ask expect couple still audience."  
+    },  
+    "starttime": {  
+        "type": "Property",  
+        "value": "Product husband dog science word able. Usually relationship already you."  
+    },  
+    "runtime": {  
+        "type": "Property",  
+        "value": 2.8  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.cgm.sensor"  
+        ]  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Picture chair his small small. Story which determine quality."  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.s"  
+        ]  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            39.0,  
+            191.7  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 481.8  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 103.6  
+    },  
+    "type": "ContinuousGlucoseMeterSensor",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:ContinuousGlucoseMeterSensor:items:IAUP:42382262"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -83.8309825,  
-        16.633986  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Same large can must note guess continue once. Father writer suggest edge meeting. Responsibility poor agreement provide quality instead.",  
-      "addressLocality": "Style as I site need. Employee scientist minute American improve. Happen pretty project thank structure individual. Human growth build someone hour ten relate media.",  
-      "addressRegion": "Stock try drive city increase avoid. Up behind step term difference offer.",  
-      "addressCountry": "Republican east true bring home together it. Ability value sign officer long.",  
-      "postalCode": "Activity partner worker week reflect. No choice new word hope. Opportunity operation speak girl far they.",  
-      "postOfficeBoxNumber": "East mention meet poor wonder model owner movement. Letter three the describe. Where much decade interest."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Both truth agreement little skill surface. Indicate pretty Democrat Mrs able somebody. Opportunity college spring ask expect couple still audience."  
-  },  
-  "starttime": {  
-    "type": "Property",  
-    "value": "Product husband dog science word able. Usually relationship already you."  
-  },  
-  "runtime": {  
-    "type": "Property",  
-    "value": 2.8  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.cgm.sensor"  
-    ]  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Picture chair his small small. Story which determine quality."  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.s"  
-    ]  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      39.0,  
-      191.7  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 481.8  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 103.6  
-  },  
-  "type": "ContinuousGlucoseMeterSensor",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
