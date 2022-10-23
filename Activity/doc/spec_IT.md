@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entità: Attività  
-================  
+================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.OCF/blob/master/Activity/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Questa risorsa descrive le proprietà associate all'attività fisica di una persona. Tutte le proprietà sono valori di sola lettura forniti dal server. Quando l'intervallo (da 'oic.r.baseresource') è omesso il default è da 0 a +MAXFLOAT.**  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **Questa risorsa descrive le proprietà associate all'attività fisica di una persona. Tutte le proprietà sono valori di sola lettura forniti dal server. Quando l'intervallo (da 'oic.r.baseresource') è omesso, il valore predefinito è compreso tra 0 e +MAXFLOAT.  
 versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `activity`: Questa proprietà descrive il tipo di attività corrente riconosciuta dell'utente  - `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `ccal_day`: Questa proprietà descrive le calorie bruciate dall'utente dall'inizio della giornata.  - `ccal_day_precision`: Quando è esposto, il valore in 'precisione' fornisce una tolleranza +/- rispetto alle Proprietà nella Risorsa. Quindi, se una proprietà viene aggiornata a un valore e tale proprietà viene poi ripristinata, il valore ripristinato è valido se rientra nell'intervallo del valore impostato +/- precisione  - `ccal_day_range`: L'intervallo valido per la proprietà nella risorsa come numero. Il primo valore nell'array è il valore minimo, il secondo valore nell'array è il valore massimo.  - `ccal_day_step`: Valore di passo attraverso l'intervallo definito un intero quando l'intervallo è un numero.  Questo è l'incremento per i valori validi attraverso l'intervallo; così se l'intervallo è 0.0..10.0 e il passo è 2.5 allora i valori validi sono 0.0,2.5,5.0,7.5,10.0.  - `ccal_reset`: Questa proprietà descrive le calorie bruciate dall'utente dall'ultimo reset.  - `ccal_reset_precision`: Quando è esposto, il valore in 'precisione' fornisce una tolleranza +/- rispetto alle Proprietà nella Risorsa. Quindi, se una proprietà viene aggiornata a un valore e tale proprietà viene poi ripristinata, il valore ripristinato è valido se rientra nell'intervallo del valore impostato +/- precisione  - `ccal_reset_range`: L'intervallo valido per la proprietà nella risorsa come numero. Il primo valore nell'array è il valore minimo, il secondo valore nell'array è il valore massimo.  - `ccal_reset_step`: Valore di passo attraverso l'intervallo definito un intero quando l'intervallo è un numero.  Questo è l'incremento per i valori validi attraverso l'intervallo; così se l'intervallo è 0.0..10.0 e il passo è 2.5 allora i valori validi sono 0.0,2.5,5.0,7.5,10.0.  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `id`: Identificatore unico dell'entità  - `if`: L'insieme di interfacce OCF supportato da questa risorsa.  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n`: Nome amichevole della risorsa  - `name`: Il nome di questo articolo.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `rt`: Il tipo di risorsa.  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `steps_day`: Questa proprietà descrive il conteggio dei passi dell'utente che misura il numero di passi che l'utente ha fatto dall'inizio della giornata.  - `steps_day_range`: L'intervallo valido per la proprietà nella risorsa come un intero. Il primo valore nell'array è il valore minimo, il secondo valore nell'array è il valore massimo.  - `steps_day_step`: Valore di passo attraverso l'intervallo definito quando l'intervallo è un intero.  Questo è l'incremento per i valori validi attraverso l'intervallo; quindi se l'intervallo è 0..10 e il passo è 2 allora i valori validi sono 0,2,4,6,8,10.  - `steps_reset`: Questa proprietà descrive il conteggio dei passi dell'utente che misura il numero di passi che l'utente ha fatto dall'ultimo reset.  - `steps_reset_range`: L'intervallo valido per la proprietà nella risorsa come un intero. Il primo valore nell'array è il valore minimo, il secondo valore nell'array è il valore massimo.  - `steps_reset_step`: Valore di passo attraverso l'intervallo definito quando l'intervallo è un intero.  Questo è l'incremento per i valori validi attraverso l'intervallo; quindi se l'intervallo è 0..10 e il passo è 2 allora i valori validi sono 0,2,4,6,8,10.  - `type`: Tipo di entità NGSI. Deve essere Attività    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `activity[string]`: Questa proprietà descrive il tipo di attività corrente riconosciuta dell'utente  - `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `ccal_day[number]`: Questa proprietà descrive le calorie bruciate dall'utente dall'inizio della giornata.  - `ccal_day_precision[number]`: Quando viene esposto, il valore in 'precision' fornisce una tolleranza +/- rispetto alle proprietà della risorsa. Pertanto, se una proprietà viene AGGIORNATA a un valore e poi viene restituita, il valore restituito è valido se rientra nell'intervallo del valore impostato +/- precision.  - `ccal_day_range[array]`: L'intervallo valido per la proprietà nella risorsa come numero. Il primo valore della matrice è il valore minimo, il secondo valore della matrice è il valore massimo.  - `ccal_day_step[number]`: Valore del passo nell'intervallo definito, un numero intero quando l'intervallo è un numero.  Si tratta dell'incremento per i valori validi nell'intervallo; quindi se l'intervallo è 0.0..10.0 e il passo è 2.5, i valori validi sono 0.0,2.5,5.0,7.5,10.0.  - `ccal_reset[number]`: Questa proprietà descrive le calorie bruciate dall'utente dall'ultimo azzeramento.  - `ccal_reset_precision[number]`: Quando viene esposto, il valore in 'precision' fornisce una tolleranza +/- rispetto alle proprietà della risorsa. Pertanto, se una proprietà viene AGGIORNATA a un valore e poi viene restituita, il valore restituito è valido se rientra nell'intervallo del valore impostato +/- precision.  - `ccal_reset_range[array]`: L'intervallo valido per la proprietà nella risorsa come numero. Il primo valore della matrice è il valore minimo, il secondo valore della matrice è il valore massimo.  - `ccal_reset_step[number]`: Valore del passo nell'intervallo definito, un numero intero quando l'intervallo è un numero.  Si tratta dell'incremento per i valori validi in tutto l'intervallo; quindi se l'intervallo è 0.0..10.0 e il passo è 2.5, i valori validi sono 0.0,2.5,5.0,7.5,10.0.  - `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `if[array]`: Il set di interfacce OCF supportato da questa risorsa.  - `location[*]`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `n[string]`: Nome amichevole della risorsa  - `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `rt[array]`: Il tipo di risorsa.  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `steps_day[integer]`: Questa proprietà descrive il conteggio dei passi dell'utente, che misura il numero di passi compiuti dall'inizio della giornata.  - `steps_day_range[array]`: L'intervallo valido per la proprietà nella risorsa come numero intero. Il primo valore della matrice è il valore minimo, il secondo valore della matrice è il valore massimo.  - `steps_day_step[integer]`: Valore di passo nell'intervallo definito quando l'intervallo è un numero intero.  Si tratta dell'incremento per i valori validi in tutto l'intervallo; quindi se l'intervallo è 0..10 e il passo è 2, i valori validi sono 0,2,4,6,8,10.  - `steps_reset[integer]`: Questa proprietà descrive il conteggio dei passi dell'utente, che misura il numero di passi compiuti dall'ultimo azzeramento.  - `steps_reset_range[array]`: L'intervallo valido per la proprietà nella risorsa come numero intero. Il primo valore della matrice è il valore minimo, il secondo valore della matrice è il valore massimo.  - `steps_reset_step[integer]`: Valore di passo nell'intervallo definito quando l'intervallo è un numero intero.  Si tratta dell'incremento per i valori validi nell'intervallo; quindi se l'intervallo è 0..10 e il passo è 2, i valori validi sono 0,2,4,6,8,10.  - `type[string]`: Tipo di entità NGSI. Deve essere Attività  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- `activity`  - `id`  - `type`    
+- `activity`  - `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Modello di dati adattato dall'originale creato dalla Open Connectivity Foundation. Repository originale in https://github.com/openconnectivityfoundation/IoTDataModels  
-## Descrizione del modello di dati delle proprietà  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Activity:    
@@ -442,9 +455,14 @@ Activity:
   x-version: 0.0.1    
 ```  
 </details>    
-## Esempio di payloads  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
 #### Attività Valori chiave NGSI-v2 Esempio  
-Ecco un esempio di un'attività in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di attività in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Activity:id:DUCN:00203733",  
@@ -548,8 +566,10 @@ Activity:
   "type": "Activity"  
 }  
 ```  
+</details>  
 #### Attività NGSI-v2 normalizzata Esempio  
-Ecco un esempio di un'attività in formato JSON-LD normalizzata. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di attività in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si usano le opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -751,283 +771,297 @@ Activity:
   }  
 }  
 ```  
+</details>  
 #### Attività Valori chiave NGSI-LD Esempio  
 Ecco un esempio di attività in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Activity:id:DUCN:00203733",  
-  "dateCreated": "1995-09-14T09:07:48Z",  
-  "dateModified": "1976-12-05T00:37:06Z",  
-  "source": "Ability hand reason management. Middle entire room public suggest.",  
-  "name": "Those catch research instead prove up. Career small great sense become certain wait require. Thank break whole street black.",  
-  "alternateName": "Particularly attention at citizen lead scientist. North conference anyone. Against consider dog seek.",  
-  "description": "Measure his everyone manage participant six.",  
-  "dataProvider": "Street standard Congress anything. Way million discover nation mission teach. Race table from.",  
-  "owner": [  
-    "urn:ngsi-ld:Activity:items:BRJD:11553936",  
-    "urn:ngsi-ld:Activity:items:ZGHH:01998249"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Activity:items:PTPX:08898077",  
-    "urn:ngsi-ld:Activity:items:LQLV:84757861"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      41.0514365,  
-      -160.549428  
+    "id": "urn:ngsi-ld:Activity:id:DUCN:00203733",  
+    "dateCreated": "1995-09-14T09:07:48Z",  
+    "dateModified": "1976-12-05T00:37:06Z",  
+    "source": "Ability hand reason management. Middle entire room public suggest.",  
+    "name": "Those catch research instead prove up. Career small great sense become certain wait require. Thank break whole street black.",  
+    "alternateName": "Particularly attention at citizen lead scientist. North conference anyone. Against consider dog seek.",  
+    "description": "Measure his everyone manage participant six.",  
+    "dataProvider": "Street standard Congress anything. Way million discover nation mission teach. Race table from.",  
+    "owner": [  
+        "urn:ngsi-ld:Activity:items:BRJD:11553936",  
+        "urn:ngsi-ld:Activity:items:ZGHH:01998249"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Activity:items:PTPX:08898077",  
+        "urn:ngsi-ld:Activity:items:LQLV:84757861"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            41.0514365,  
+            -160.549428  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "His situation focus final. Idea summer determine win every PM time explain.",  
+        "addressLocality": "Audience issue policy present growth along. Less ten make picture late allow everyone take.",  
+        "addressRegion": "Under surface paper event month. Offer room such the work threat group order.",  
+        "addressCountry": "Gun those among cup good inside successful. Base option break poor third.",  
+        "postalCode": "Interview someone subject office. Laugh Mrs reason maintain ten source everybody.",  
+        "postOfficeBoxNumber": "Party eat hope box lot ready poor. South town room guy. Day throughout exactly actually be."  
+    },  
+    "areaServed": "Many body chair listen protect see kid. Establish born American number civil happy. Letter chance or thus mention size.",  
+    "activity": "walk",  
+    "steps_day": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "steps_reset": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "ccal_day": {  
+        "type": "Property",  
+        "value": 927.6  
+    },  
+    "ccal_reset": {  
+        "type": "Property",  
+        "value": 848.5  
+    },  
+    "rt": [  
+        "oic.r.activity",  
+        "oic.r.activity"  
+    ],  
+    "n": "Address future financial sing. Cut outside everybody soon. State they animal case industry chance though. Decision but force economic left report ability.",  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.s"  
+    ],  
+    "steps_day_range": [  
+        864,  
+        864  
+    ],  
+    "steps_day_step": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "steps_reset_range": [  
+        864,  
+        864  
+    ],  
+    "steps_reset_step": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "ccal_day_range": [  
+        428.4,  
+        249.0  
+    ],  
+    "ccal_day_step": {  
+        "type": "Property",  
+        "value": 23.2  
+    },  
+    "ccal_day_precision": {  
+        "type": "Property",  
+        "value": 836.0  
+    },  
+    "ccal_reset_range": [  
+        162.8,  
+        797.5  
+    ],  
+    "ccal_reset_step": {  
+        "type": "Property",  
+        "value": 252.5  
+    },  
+    "ccal_reset_precision": {  
+        "type": "Property",  
+        "value": 442.1  
+    },  
+    "type": "Activity",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "His situation focus final. Idea summer determine win every PM time explain.",  
-    "addressLocality": "Audience issue policy present growth along. Less ten make picture late allow everyone take.",  
-    "addressRegion": "Under surface paper event month. Offer room such the work threat group order.",  
-    "addressCountry": "Gun those among cup good inside successful. Base option break poor third.",  
-    "postalCode": "Interview someone subject office. Laugh Mrs reason maintain ten source everybody.",  
-    "postOfficeBoxNumber": "Party eat hope box lot ready poor. South town room guy. Day throughout exactly actually be."  
-  },  
-  "areaServed": "Many body chair listen protect see kid. Establish born American number civil happy. Letter chance or thus mention size.",  
-  "activity": "walk",  
-  "steps_day": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "steps_reset": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "ccal_day": {  
-    "type": "Property",  
-    "value": 927.6  
-  },  
-  "ccal_reset": {  
-    "type": "Property",  
-    "value": 848.5  
-  },  
-  "rt": [  
-    "oic.r.activity",  
-    "oic.r.activity"  
-  ],  
-  "n": "Address future financial sing. Cut outside everybody soon. State they animal case industry chance though. Decision but force economic left report ability.",  
-  "if": [  
-    "oic.if.baseline",  
-    "oic.if.s"  
-  ],  
-  "steps_day_range": [  
-    864,  
-    864  
-  ],  
-  "steps_day_step": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "steps_reset_range": [  
-    864,  
-    864  
-  ],  
-  "steps_reset_step": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "ccal_day_range": [  
-    428.4,  
-    249.0  
-  ],  
-  "ccal_day_step": {  
-    "type": "Property",  
-    "value": 23.2  
-  },  
-  "ccal_day_precision": {  
-    "type": "Property",  
-    "value": 836.0  
-  },  
-  "ccal_reset_range": [  
-    162.8,  
-    797.5  
-  ],  
-  "ccal_reset_step": {  
-    "type": "Property",  
-    "value": 252.5  
-  },  
-  "ccal_reset_precision": {  
-    "type": "Property",  
-    "value": 442.1  
-  },  
-  "type": "Activity",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### Attività NGSI-LD normalizzata Esempio  
-Ecco un esempio di un'attività in formato JSON-LD normalizzata. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di attività in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si usano le opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Activity:id:MZWF:26893545",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1983-04-27T11:52:16Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2010-10-31T00:41:19Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Expert mouth media difficult anyone pull must. Employee let father can easy opportunity fact. In begin appear."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Feel everyone form. City reality exactly believe different open least. Lawyer pay travel foreign."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Once have cold she writer size. Direction girl some into memory close receive."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Garden author drop place dinner method notice. Subject head true environment leave."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "North ready because probably in yourself professional."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Activity:items:XPCK:51151835",  
-      "urn:ngsi-ld:Activity:items:EEHP:04982258"  
+    "id": "urn:ngsi-ld:Activity:id:MZWF:26893545",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1983-04-27T11:52:16Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2010-10-31T00:41:19Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Expert mouth media difficult anyone pull must. Employee let father can easy opportunity fact. In begin appear."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Feel everyone form. City reality exactly believe different open least. Lawyer pay travel foreign."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Once have cold she writer size. Direction girl some into memory close receive."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Garden author drop place dinner method notice. Subject head true environment leave."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "North ready because probably in yourself professional."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Activity:items:XPCK:51151835",  
+            "urn:ngsi-ld:Activity:items:EEHP:04982258"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Activity:items:GSIY:61112353"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                20.34346,  
+                68.954533  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Pass else western century perhaps relate for. Perhaps suffer product loss office. Action first idea fact everybody.",  
+            "addressLocality": "Attention decade course everything. Line sell three over senior player measure. Country movement almost true change idea.",  
+            "addressRegion": "Else much time heavy two detail. Similar drug want enjoy sure surface. Mean market total.",  
+            "addressCountry": "Hundred high ability grow professional own often film.",  
+            "postalCode": "Current seat explain keep spring certainly yourself. Room toward agreement.",  
+            "postOfficeBoxNumber": "Positive memory small family energy. Peace value eye reflect teach study dinner hospital. Three of may street election I night."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "System management responsibility least."  
+    },  
+    "activity": {  
+        "type": "Property",  
+        "value": "sleep"  
+    },  
+    "steps_day": {  
+        "type": "Property",  
+        "value": 308  
+    },  
+    "steps_reset": {  
+        "type": "Property",  
+        "value": 221  
+    },  
+    "ccal_day": {  
+        "type": "Property",  
+        "value": 140.9  
+    },  
+    "ccal_reset": {  
+        "type": "Property",  
+        "value": 545.7  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.activity"  
+        ]  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Simple figure consumer my defense across tough. Decision religious attorney."  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.s"  
+        ]  
+    },  
+    "steps_day_range": {  
+        "type": "Property",  
+        "value": [  
+            935,  
+            193  
+        ]  
+    },  
+    "steps_day_step": {  
+        "type": "Property",  
+        "value": 21  
+    },  
+    "steps_reset_range": {  
+        "type": "Property",  
+        "value": [  
+            513,  
+            809  
+        ]  
+    },  
+    "steps_reset_step": {  
+        "type": "Property",  
+        "value": 890  
+    },  
+    "ccal_day_range": {  
+        "type": "Property",  
+        "value": [  
+            506.1,  
+            443.7  
+        ]  
+    },  
+    "ccal_day_step": {  
+        "type": "Property",  
+        "value": 70.2  
+    },  
+    "ccal_day_precision": {  
+        "type": "Property",  
+        "value": 588.3  
+    },  
+    "ccal_reset_range": {  
+        "type": "Property",  
+        "value": [  
+            533.3,  
+            185.3  
+        ]  
+    },  
+    "ccal_reset_step": {  
+        "type": "Property",  
+        "value": 823.7  
+    },  
+    "ccal_reset_precision": {  
+        "type": "Property",  
+        "value": 802.8  
+    },  
+    "type": "Activity",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Activity:items:GSIY:61112353"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        20.34346,  
-        68.954533  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Pass else western century perhaps relate for. Perhaps suffer product loss office. Action first idea fact everybody.",  
-      "addressLocality": "Attention decade course everything. Line sell three over senior player measure. Country movement almost true change idea.",  
-      "addressRegion": "Else much time heavy two detail. Similar drug want enjoy sure surface. Mean market total.",  
-      "addressCountry": "Hundred high ability grow professional own often film.",  
-      "postalCode": "Current seat explain keep spring certainly yourself. Room toward agreement.",  
-      "postOfficeBoxNumber": "Positive memory small family energy. Peace value eye reflect teach study dinner hospital. Three of may street election I night."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "System management responsibility least."  
-  },  
-  "activity": {  
-    "type": "Property",  
-    "value": "sleep"  
-  },  
-  "steps_day": {  
-    "type": "Property",  
-    "value": 308  
-  },  
-  "steps_reset": {  
-    "type": "Property",  
-    "value": 221  
-  },  
-  "ccal_day": {  
-    "type": "Property",  
-    "value": 140.9  
-  },  
-  "ccal_reset": {  
-    "type": "Property",  
-    "value": 545.7  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.activity"  
-    ]  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Simple figure consumer my defense across tough. Decision religious attorney."  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.s"  
-    ]  
-  },  
-  "steps_day_range": {  
-    "type": "Property",  
-    "value": [  
-      935,  
-      193  
-    ]  
-  },  
-  "steps_day_step": {  
-    "type": "Property",  
-    "value": 21  
-  },  
-  "steps_reset_range": {  
-    "type": "Property",  
-    "value": [  
-      513,  
-      809  
-    ]  
-  },  
-  "steps_reset_step": {  
-    "type": "Property",  
-    "value": 890  
-  },  
-  "ccal_day_range": {  
-    "type": "Property",  
-    "value": [  
-      506.1,  
-      443.7  
-    ]  
-  },  
-  "ccal_day_step": {  
-    "type": "Property",  
-    "value": 70.2  
-  },  
-  "ccal_day_precision": {  
-    "type": "Property",  
-    "value": 588.3  
-  },  
-  "ccal_reset_range": {  
-    "type": "Property",  
-    "value": [  
-      533.3,  
-      185.3  
-    ]  
-  },  
-  "ccal_reset_step": {  
-    "type": "Property",  
-    "value": 823.7  
-  },  
-  "ccal_reset_precision": {  
-    "type": "Property",  
-    "value": 802.8  
-  },  
-  "type": "Activity",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
