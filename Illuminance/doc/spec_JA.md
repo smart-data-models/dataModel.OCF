@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 エンティティイルミネンス  
-============  
+============<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/Illuminance/LICENSE.md)  
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**照度センサーのプロパティは float であり、単位面積あたりの感知光束を lux で表す**。  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Global description:**照度センサーのプロパティは float であり、単位面積当たりの感知光束を lux で表す**。  
 バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `id`: エンティティの一意な識別子  - `if`: このResourceがサポートするOCF Interfaceセット。  - `illuminance`: 単位面積あたりの感知光束をルクスで表したもの。  - `location`: アイテムへのGeojsonリファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `n`: リソースのフレンドリ名  - `name`: このアイテムの名称です。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `range`: リソースに含まれるプロパティの有効範囲を数値で表したもの。配列の最初の値が最小値、2 番目の値が最大値となります。  - `rt`: リソースタイプです。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで指定する文字の列。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSIエンティティタイプ。イルミネンスでなければならない    
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `if[array]`: このResourceがサポートするOCF Interfaceセット。  - `illuminance[number]`: 単位面積あたりの感知光束をルクスで表したもの。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `n[string]`: リソースのフレンドリ名  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `range[array]`: Resource に含まれる Property の有効範囲を数値で表します。配列の最初の値が最小値、2 番目の値が最大値となります。  - `rt[array]`: リソースタイプです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSIエンティティタイプ。イルミネンスでなければならない  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 必要なプロパティ  
-- `id`  - `illuminance`  - `type`    
+- `id`  - `illuminance`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 データモデルは、Open Connectivity Foundationが作成したオリジナルを引用しています。https://github.com/openconnectivityfoundation/IoTDataModels のオリジナルリポジトリ  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
 アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Illuminance:    
@@ -342,9 +355,14 @@ Illuminance:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### 照度 NGSI-v2 キー値例  
-イルミナンスをJSON-LD形式でkey-valueにした例を紹介します。これは `options=keyValues` を使用した場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータが返される。  
+#### 照度 NGSI-v2 Key-value 例  
+ここでは、IlluminanceをJSON-LD形式でkey-valuesとした例を示す。これは `options=keyValues` を使用した場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Illuminance:id:UUWN:34352123",  
@@ -399,8 +417,10 @@ Illuminance:
   "type": "Illuminance"  
 }  
 ```  
+</details>  
 #### 照度 NGSI-v2 正規化例  
-以下は、イルミナンスを正規化したJSON-LD形式の例である。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、正規化されたJSON-LD形式のIlluminanceの例である。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -514,174 +534,188 @@ Illuminance:
   }  
 }  
 ```  
+</details>  
 #### 照度 NGSI-LD キー値例  
-イルミナンスをJSON-LD形式でkey-valueにした例です。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを返します。  
+IlluminanceをJSON-LD形式でkey-valuesにした例です。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Illuminance:id:UUWN:34352123",  
-  "dateCreated": "2008-10-06T19:22:33Z",  
-  "dateModified": "1990-03-17T17:23:24Z",  
-  "source": "Security door report officer lay debate magazine.",  
-  "name": "Tell size compare point. Out big get entire culture hit. Hospital popular term join pressure else opportunity.",  
-  "alternateName": "Dark hour behind executive find old least half.",  
-  "description": "High edge measure political common front. After of while middle off morning staff. Those Republican individual fast forget culture.",  
-  "dataProvider": "Administration different leader environment whole weight truth. Concern there hand travel unit investment class. Always tree property him economic computer.",  
-  "owner": [  
-    "urn:ngsi-ld:Illuminance:items:GZNR:96026419",  
-    "urn:ngsi-ld:Illuminance:items:PAZK:42934372"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Illuminance:items:DEZP:64675308",  
-    "urn:ngsi-ld:Illuminance:items:BVYK:88404285"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -67.769054,  
-      -112.378099  
+    "id": "urn:ngsi-ld:Illuminance:id:UUWN:34352123",  
+    "dateCreated": "2008-10-06T19:22:33Z",  
+    "dateModified": "1990-03-17T17:23:24Z",  
+    "source": "Security door report officer lay debate magazine.",  
+    "name": "Tell size compare point. Out big get entire culture hit. Hospital popular term join pressure else opportunity.",  
+    "alternateName": "Dark hour behind executive find old least half.",  
+    "description": "High edge measure political common front. After of while middle off morning staff. Those Republican individual fast forget culture.",  
+    "dataProvider": "Administration different leader environment whole weight truth. Concern there hand travel unit investment class. Always tree property him economic computer.",  
+    "owner": [  
+        "urn:ngsi-ld:Illuminance:items:GZNR:96026419",  
+        "urn:ngsi-ld:Illuminance:items:PAZK:42934372"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Illuminance:items:DEZP:64675308",  
+        "urn:ngsi-ld:Illuminance:items:BVYK:88404285"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -67.769054,  
+            -112.378099  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Necessary likely movement product five billion decision nearly. Mention top perform personal.",  
+        "addressLocality": "Everyone final page performance interesting. Between management population experience.",  
+        "addressRegion": "Sense all raise. Population writer bank difficult general from. Itself ability less three either teach. Situation great agreement best if.",  
+        "addressCountry": "Join including continue bring quality. Change policy song marriage employee interest.",  
+        "postalCode": "Citizen feel wife big actually there decide.",  
+        "postOfficeBoxNumber": "Before leg garden win administration. Particular according book nor still thank take. Executive inside street agree."  
+    },  
+    "areaServed": "View up present as consider market administration wear. Now collection well create traditional because first student.",  
+    "rt": [  
+        "oic.r.sensor.illuminance",  
+        "oic.r.sensor.illuminance"  
+    ],  
+    "illuminance": {  
+        "type": "Property",  
+        "value": 744.9  
+    },  
+    "n": "Executive great amount approach statement edge a mind. Life Democrat note laugh capital week culture speak.",  
+    "range": [  
+        9.5,  
+        497.1  
+    ],  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.s"  
+    ],  
+    "type": "Illuminance",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Necessary likely movement product five billion decision nearly. Mention top perform personal.",  
-    "addressLocality": "Everyone final page performance interesting. Between management population experience.",  
-    "addressRegion": "Sense all raise. Population writer bank difficult general from. Itself ability less three either teach. Situation great agreement best if.",  
-    "addressCountry": "Join including continue bring quality. Change policy song marriage employee interest.",  
-    "postalCode": "Citizen feel wife big actually there decide.",  
-    "postOfficeBoxNumber": "Before leg garden win administration. Particular according book nor still thank take. Executive inside street agree."  
-  },  
-  "areaServed": "View up present as consider market administration wear. Now collection well create traditional because first student.",  
-  "rt": [  
-    "oic.r.sensor.illuminance",  
-    "oic.r.sensor.illuminance"  
-  ],  
-  "illuminance": {  
-    "type": "Property",  
-    "value": 744.9  
-  },  
-  "n": "Executive great amount approach statement edge a mind. Life Democrat note laugh capital week culture speak.",  
-  "range": [  
-    9.5,  
-    497.1  
-  ],  
-  "if": [  
-    "oic.if.baseline",  
-    "oic.if.s"  
-  ],  
-  "type": "Illuminance",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### 照度 NGSI-LD 正規化例  
-以下は、イルミナンスを正規化したJSON-LD形式の例です。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、正規化されたJSON-LD形式のイルミナンスの例である。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Illuminance:id:MNLY:30937921",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1975-05-11T13:09:10Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2003-12-02T03:26:21Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "After thing maybe watch spring show we. Several south address building she. Protect force hair machine. Season government goal wait air section."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Method institution hand first up. Media care sea."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Image man after large."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Really although sign paper season store. Fear exactly collection."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Start plan effort soon smile probably."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Illuminance:items:SVMJ:39738594",  
-      "urn:ngsi-ld:Illuminance:items:IPBX:16843864"  
+    "id": "urn:ngsi-ld:Illuminance:id:MNLY:30937921",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1975-05-11T13:09:10Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2003-12-02T03:26:21Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "After thing maybe watch spring show we. Several south address building she. Protect force hair machine. Season government goal wait air section."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Method institution hand first up. Media care sea."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Image man after large."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Really although sign paper season store. Fear exactly collection."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Start plan effort soon smile probably."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Illuminance:items:SVMJ:39738594",  
+            "urn:ngsi-ld:Illuminance:items:IPBX:16843864"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Illuminance:items:PBYJ:13845109"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -72.2442105,  
+                103.919595  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Figure shoulder activity south test. Doctor herself detail. Power teach itself ability risk consider.",  
+            "addressLocality": "Report feeling player picture. Program air sometimes crime son management. Home choose cup drive standard.",  
+            "addressRegion": "Admit art half adult image memory.",  
+            "addressCountry": "Nature support else week power present own floor.",  
+            "postalCode": "Right open effect sense question end. Training laugh speak behind focus in win analysis.",  
+            "postOfficeBoxNumber": "To under car if newspaper player prove article."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Film consumer why indeed heavy. Perform production report. North seven risk company ever firm."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.sensor.illuminance"  
+        ]  
+    },  
+    "illuminance": {  
+        "type": "Property",  
+        "value": 338.8  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Off woman hour your also. Lead hold race space. Rich available hold base project page."  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            194.8,  
+            76.4  
+        ]  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline",  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "Illuminance",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Illuminance:items:PBYJ:13845109"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -72.2442105,  
-        103.919595  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Figure shoulder activity south test. Doctor herself detail. Power teach itself ability risk consider.",  
-      "addressLocality": "Report feeling player picture. Program air sometimes crime son management. Home choose cup drive standard.",  
-      "addressRegion": "Admit art half adult image memory.",  
-      "addressCountry": "Nature support else week power present own floor.",  
-      "postalCode": "Right open effect sense question end. Training laugh speak behind focus in win analysis.",  
-      "postOfficeBoxNumber": "To under car if newspaper player prove article."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Film consumer why indeed heavy. Perform production report. North seven risk company ever firm."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.sensor.illuminance"  
-    ]  
-  },  
-  "illuminance": {  
-    "type": "Property",  
-    "value": 338.8  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Off woman hour your also. Lead hold race space. Rich available hold base project page."  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      194.8,  
-      76.4  
-    ]  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.baseline",  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "type": "Illuminance",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
