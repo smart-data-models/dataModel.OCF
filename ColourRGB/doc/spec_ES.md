@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entidad: ColourRGB  
-==================  
+==================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.OCF/blob/master/ColourRGB/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Descripción global: **Este Recurso especifica el color real en el espacio RGB representado como una matriz de enteros.Cada valor de color se describe con un componente Rojo, Verde, Azul.Estos valores de color se codifican como una matriz de valores enteros ([R,G,B]).El valor de color mínimo y máximo por componente puede describirse mediante la Propiedad 'range'.Cuando se omite 'range', entonces el 'range' es [0,255].**  
 versión: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `if`: El conjunto de interfaces OCF que admite este recurso.  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n`: Nombre amistoso del recurso  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `range`: El rango válido para la Propiedad en el Recurso como un entero. El primer valor de la matriz es el valor mínimo, el segundo valor de la matriz es el valor máximo.  - `rgbValue`: El valor RGB; el primer elemento es el R, el segundo el G, el tercero el B.  - `rt`: El tipo de recurso.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `step`: Valor del paso a través del rango definido cuando el rango es un entero.  Este es el incremento para los valores válidos a través del rango; así que si el rango es 0..10 y el paso es 2 entonces los valores válidos son 0,2,4,6,8,10.  - `type`: Tipo de entidad NGSI. Tiene que ser ColourRGB    
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>  
+- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Una descripción de este artículo  - `id[*]`: Identificador único de la entidad  - `if[array]`: El conjunto de interfaces OCF que admite este recurso.  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n[string]`: Nombre amigable del Recurso  - `name[string]`: El nombre de este artículo.  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `range[array]`: El rango válido para la Propiedad en el Recurso como un entero. El primer valor de la matriz es el valor mínimo, el segundo valor de la matriz es el valor máximo.  - `rgbValue[array]`: El valor RGB; el primer elemento es el R, el segundo el G, el tercero el B.  - `rt[array]`: El tipo de recurso.  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `step[integer]`: Valor del paso a través del rango definido cuando el rango es un entero.  Este es el incremento para los valores válidos a través del rango; así que si el rango es 0..10 y el paso es 2 entonces los valores válidos son 0,2,4,6,8,10.  - `type[string]`: Tipo de entidad NGSI. Tiene que ser ColourRGB  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propiedades requeridas  
-- `id`  - `rgbValue`  - `type`    
+- `id`  - `rgbValue`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Modelo de datos adaptado del original creado por la Open Connectivity Foundation. Repositorio original en https://github.com/openconnectivityfoundation/IoTDataModels  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ColourRGB:    
@@ -351,9 +364,14 @@ ColourRGB:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Ejemplo de carga útil  
 #### ColourRGB NGSI-v2 key-values Ejemplo  
 Aquí hay un ejemplo de un ColourRGB en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:ColourRGB:id:SBFN:43526348",  
@@ -412,8 +430,10 @@ ColourRGB:
   "type": "ColourRGB"  
 }  
 ```  
+</details>  
 #### ColourRGB NGSI-v2 normalizado Ejemplo  
 Aquí hay un ejemplo de un ColourRGB en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -534,186 +554,200 @@ ColourRGB:
   }  
 }  
 ```  
+</details>  
 #### ColourRGB NGSI-LD key-values Ejemplo  
 Aquí hay un ejemplo de un ColourRGB en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:ColourRGB:id:SBFN:43526348",  
-  "dateCreated": "2004-03-05T02:33:53Z",  
-  "dateModified": "1993-02-07T07:54:02Z",  
-  "source": "Quickly challenge PM interview sense.",  
-  "name": "Although late bar lose might lay any. Onto day success should.",  
-  "alternateName": "Continue want pick. Buy scientist floor Mrs anyone yeah training.",  
-  "description": "Beyond generation through develop some. Past matter upon live per purpose.",  
-  "dataProvider": "Us argue southern. Matter even billion growth game thousand.",  
-  "owner": [  
-    "urn:ngsi-ld:ColourRGB:items:AVKI:08794223",  
-    "urn:ngsi-ld:ColourRGB:items:DXEJ:68189427"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:ColourRGB:items:ZTRB:95997585",  
-    "urn:ngsi-ld:ColourRGB:items:SBPQ:37878570"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      84.505348,  
-      52.402685  
+    "id": "urn:ngsi-ld:ColourRGB:id:SBFN:43526348",  
+    "dateCreated": "2004-03-05T02:33:53Z",  
+    "dateModified": "1993-02-07T07:54:02Z",  
+    "source": "Quickly challenge PM interview sense.",  
+    "name": "Although late bar lose might lay any. Onto day success should.",  
+    "alternateName": "Continue want pick. Buy scientist floor Mrs anyone yeah training.",  
+    "description": "Beyond generation through develop some. Past matter upon live per purpose.",  
+    "dataProvider": "Us argue southern. Matter even billion growth game thousand.",  
+    "owner": [  
+        "urn:ngsi-ld:ColourRGB:items:AVKI:08794223",  
+        "urn:ngsi-ld:ColourRGB:items:DXEJ:68189427"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:ColourRGB:items:ZTRB:95997585",  
+        "urn:ngsi-ld:ColourRGB:items:SBPQ:37878570"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            84.505348,  
+            52.402685  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Garden give card determine. Season whether nothing senior popular. Step model father bed miss recently. Church material take choice cut.",  
+        "addressLocality": "News month focus around free surface. Clearly through interview see pressure machine money.",  
+        "addressRegion": "Brother describe agree yes have material list. Soldier alone car bank too talk push. Modern brother gun service I air.",  
+        "addressCountry": "Tend rise certainly water response interesting. Can bad prevent yes worker learn owner. Fight increase bar produce recently. Back road entire look end color reflect exist.",  
+        "postalCode": "Resource nothing week boy. Focus off sister compare seek physical.",  
+        "postOfficeBoxNumber": "Head know general away reduce assume. Represent piece physical investment throughout. Choose news stay throw."  
+    },  
+    "areaServed": "Reach gas send if establish guess short. Audience write police indicate author talk.",  
+    "rt": [  
+        "oic.r.colour.rgb",  
+        "oic.r.colour.rgb"  
+    ],  
+    "rgbValue": [  
+        864,  
+        864  
+    ],  
+    "n": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair.",  
+    "range": [  
+        864,  
+        864  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "if": [  
+        "oic.if.a",  
+        "oic.if.baseline"  
+    ],  
+    "type": "ColourRGB",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Garden give card determine. Season whether nothing senior popular. Step model father bed miss recently. Church material take choice cut.",  
-    "addressLocality": "News month focus around free surface. Clearly through interview see pressure machine money.",  
-    "addressRegion": "Brother describe agree yes have material list. Soldier alone car bank too talk push. Modern brother gun service I air.",  
-    "addressCountry": "Tend rise certainly water response interesting. Can bad prevent yes worker learn owner. Fight increase bar produce recently. Back road entire look end color reflect exist.",  
-    "postalCode": "Resource nothing week boy. Focus off sister compare seek physical.",  
-    "postOfficeBoxNumber": "Head know general away reduce assume. Represent piece physical investment throughout. Choose news stay throw."  
-  },  
-  "areaServed": "Reach gas send if establish guess short. Audience write police indicate author talk.",  
-  "rt": [  
-    "oic.r.colour.rgb",  
-    "oic.r.colour.rgb"  
-  ],  
-  "rgbValue": [  
-    864,  
-    864  
-  ],  
-  "n": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair.",  
-  "range": [  
-    864,  
-    864  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "if": [  
-    "oic.if.a",  
-    "oic.if.baseline"  
-  ],  
-  "type": "ColourRGB",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### ColourRGB NGSI-LD normalizado Ejemplo  
 He aquí un ejemplo de un ColourRGB en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:ColourRGB:id:VHWB:56558954",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1991-05-27T05:12:38Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2007-07-25T15:41:21Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Require modern high same meet second. That myself nature industry dinner professional. Central while memory live third far successful half. Hospital avoid allow place."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Goal picture method everything forward report. Certain probably every figure dog without."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Culture coach western act. Vote beat reduce argue discussion investment lot moment."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Business feel foot itself author little method resource. Bad feeling charge student type. Country green focus walk."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Party discover organization everyone father nothing science. Reduce surface special here Democrat drop agent. Window evidence establish now month ground."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:ColourRGB:items:XNXK:84019011",  
-      "urn:ngsi-ld:ColourRGB:items:WREB:79366163"  
+    "id": "urn:ngsi-ld:ColourRGB:id:VHWB:56558954",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1991-05-27T05:12:38Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2007-07-25T15:41:21Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Require modern high same meet second. That myself nature industry dinner professional. Central while memory live third far successful half. Hospital avoid allow place."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Goal picture method everything forward report. Certain probably every figure dog without."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Culture coach western act. Vote beat reduce argue discussion investment lot moment."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Business feel foot itself author little method resource. Bad feeling charge student type. Country green focus walk."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Party discover organization everyone father nothing science. Reduce surface special here Democrat drop agent. Window evidence establish now month ground."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:ColourRGB:items:XNXK:84019011",  
+            "urn:ngsi-ld:ColourRGB:items:WREB:79366163"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:ColourRGB:items:NLBR:70214598"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                69.3938615,  
+                -144.508054  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "High very participant. Wall indeed medical teacher responsibility set line.",  
+            "addressLocality": "Officer tree answer message state. Result rather and possible must budget. Investment well why race notice key herself arm.",  
+            "addressRegion": "Event find financial whatever this. Course administration ok learn certainly. Response mention new find check.",  
+            "addressCountry": "Around bank between. Family field continue because face man once political. Ever performance bill respond decade.",  
+            "postalCode": "Rule ok beautiful behind and perform. Mr clear when technology. Growth bring water boy six.",  
+            "postOfficeBoxNumber": "Those surface arrive see ball. Rock anyone may subject analysis leg east."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Social accept do itself dark decade. Along black about skill six. American language key since life southern. Nice east risk talk identify plant."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.colour.rgb"  
+        ]  
+    },  
+    "rgbValue": {  
+        "type": "Property",  
+        "value": [  
+            378,  
+            453,  
+            21  
+        ]  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Fight fill sound themselves sea. Candidate southern population within. Amount only help third hospital."  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            100,  
+            825  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 972  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.a",  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "ColourRGB",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:ColourRGB:items:NLBR:70214598"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        69.3938615,  
-        -144.508054  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "High very participant. Wall indeed medical teacher responsibility set line.",  
-      "addressLocality": "Officer tree answer message state. Result rather and possible must budget. Investment well why race notice key herself arm.",  
-      "addressRegion": "Event find financial whatever this. Course administration ok learn certainly. Response mention new find check.",  
-      "addressCountry": "Around bank between. Family field continue because face man once political. Ever performance bill respond decade.",  
-      "postalCode": "Rule ok beautiful behind and perform. Mr clear when technology. Growth bring water boy six.",  
-      "postOfficeBoxNumber": "Those surface arrive see ball. Rock anyone may subject analysis leg east."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Social accept do itself dark decade. Along black about skill six. American language key since life southern. Nice east risk talk identify plant."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.colour.rgb"  
-    ]  
-  },  
-  "rgbValue": {  
-    "type": "Property",  
-    "value": [  
-      378,  
-      453,  
-      21  
-    ]  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Fight fill sound themselves sea. Candidate southern population within. Amount only help third hospital."  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      100,  
-      825  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 972  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.a",  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "type": "ColourRGB",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
