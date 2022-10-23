@@ -1,17 +1,32 @@
-エンティティロックコード  
-============  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティロックコード  
+============<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/LockCode/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな説明です。**スマートデータモデル オリジナルのIoTDataデータモデルをプログラム化したものです。ロックコードを記述するリソース。プロパティ「lockCodeList」は、ロックに関連する可能性のあるコードの配列である。コードは全て文字列として表現される。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**IoTData のデータモデルをスマートデータモデルプログラムに適応させたもの。Resource は、ロックコードを記述する。Property 'lockCodeList' は、ロックに関連づけられる可能性があるコードの配列である。コードはすべて文字列で表現される**。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `if`: このResourceがサポートしているOCF Interface set。  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `lockCodeList`: ロックコードの値  - `n`: リソースのフレンドリーネーム  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `rt`: The Resource Type。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSIエンティティタイプ。LockCodeでなければならない。    
-必須項目  
-- `id`  - `type`    
-このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)から来ています。NGSIの要件に適合するように拡張されています。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `if[array]`: このResourceがサポートするOCF Interfaceセット。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `lockCodeList[array]`: ロックコードに対応する値  - `n[string]`: リソースのフレンドリ名  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `rt[array]`: リソースタイプです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSIエンティティタイプ。LockCodeでなければならない。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)に由来しています。NGSIの要件に適合するように拡張されている。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 LockCode:    
@@ -330,9 +345,14 @@ LockCode:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### LockCode NGSI-v2 key-values の例  
-LockCodeをkey-valuesとしてJSON-LD形式で表現した例を紹介します。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### LockCode NGSI-v2 key-value の例。  
+以下は、LockCodeをJSON-LD形式でkey-valuesとした例である。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:LockCode:id:UAFO:32880755",  
@@ -369,8 +389,10 @@ LockCode:
   "areaServed": "Hold state wait point camera marriage according. Newspaper partner teach rest candidate. Provide yard black pattern."  
 }  
 ```  
-#### LockCode NGSI-v2 規格化例  
-JSON-LD形式のLockCodeを正規化した例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### LockCode NGSI-v2 正規化例  
+以下は、LockCode を JSON-LD 形式で正規化した例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -448,127 +470,141 @@ LockCode:
   }  
 }  
 ```  
-#### LockCode NGSI-LD のキーバリューの例  
-LockCodeをkey-valuesとしてJSON-LD形式で表現した例です。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### ロックコード NGSI-LD キー値例  
+以下は、LockCodeをJSON-LD形式でkey-valuesにした例である。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:LockCode:id:UAFO:32880755",  
-  "dateCreated": "1973-11-19T13:11:24Z",  
-  "dateModified": "1976-10-21T20:02:58Z",  
-  "source": "Big their thing bank growth. Court adult matter structure. Ask focus artist young speak. Part actually song lead financial summer.",  
-  "name": "Most case this be. Factor leader weight science firm miss bed if. Play still wait evidence however without.",  
-  "alternateName": "Each kitchen soldier take if brother. Assume our article close couple school five issue. Lot policy maybe culture notice.",  
-  "description": "Candidate why industry apply. Late official the represent window mind especially. Cultural rock need learn organization evening.",  
-  "dataProvider": "Shake campaign culture church ok. Money thing agree. Hair few cause many some resource wide.",  
-  "owner": [  
-    "urn:ngsi-ld:LockCode:items:BPFG:16122473",  
-    "urn:ngsi-ld:LockCode:items:KYAO:28376534"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:LockCode:items:IQKM:49639880",  
-    "urn:ngsi-ld:LockCode:items:HHKM:59980343"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      40.5582215,  
-      -6.700416  
+    "id": "urn:ngsi-ld:LockCode:id:UAFO:32880755",  
+    "dateCreated": "1973-11-19T13:11:24Z",  
+    "dateModified": "1976-10-21T20:02:58Z",  
+    "source": "Big their thing bank growth. Court adult matter structure. Ask focus artist young speak. Part actually song lead financial summer.",  
+    "name": "Most case this be. Factor leader weight science firm miss bed if. Play still wait evidence however without.",  
+    "alternateName": "Each kitchen soldier take if brother. Assume our article close couple school five issue. Lot policy maybe culture notice.",  
+    "description": "Candidate why industry apply. Late official the represent window mind especially. Cultural rock need learn organization evening.",  
+    "dataProvider": "Shake campaign culture church ok. Money thing agree. Hair few cause many some resource wide.",  
+    "owner": [  
+        "urn:ngsi-ld:LockCode:items:BPFG:16122473",  
+        "urn:ngsi-ld:LockCode:items:KYAO:28376534"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:LockCode:items:IQKM:49639880",  
+        "urn:ngsi-ld:LockCode:items:HHKM:59980343"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            40.5582215,  
+            -6.700416  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Fall would bar under. Soldier certain group expert could specific mouth off. World successful special ball adult yourself.",  
+        "addressLocality": "Energy least many Democrat box occur.",  
+        "addressRegion": "Certain large sort avoid cultural. Pay movement save from consumer turn.",  
+        "addressCountry": "Worker theory speak truth. Tell college skill. Matter customer range none story likely.",  
+        "postalCode": "Deep remember return energy employee mouth anyone full. Remember father ok figure record election rule simply. Maybe test vote result identify often growth.",  
+        "postOfficeBoxNumber": "Wife what allow various high threat black war. Model million yourself. Either stand right suggest add however north."  
+    },  
+    "areaServed": "Hold state wait point camera marriage according. Newspaper partner teach rest candidate. Provide yard black pattern.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Fall would bar under. Soldier certain group expert could specific mouth off. World successful special ball adult yourself.",  
-    "addressLocality": "Energy least many Democrat box occur.",  
-    "addressRegion": "Certain large sort avoid cultural. Pay movement save from consumer turn.",  
-    "addressCountry": "Worker theory speak truth. Tell college skill. Matter customer range none story likely.",  
-    "postalCode": "Deep remember return energy employee mouth anyone full. Remember father ok figure record election rule simply. Maybe test vote result identify often growth.",  
-    "postOfficeBoxNumber": "Wife what allow various high threat black war. Model million yourself. Either stand right suggest add however north."  
-  },  
-  "areaServed": "Hold state wait point camera marriage according. Newspaper partner teach rest candidate. Provide yard black pattern.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### LockCode NGSI-LD 正規化例  
-JSON-LD形式のLockCodeを正規化した例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、LockCode を JSON-LD 形式で正規化した例である。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:LockCode:id:DSOC:42964529",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1994-04-07T20:31:59Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2010-09-17T15:38:07Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Among happy produce class."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Quality red believe leader sure contain. Indicate final policy question change environment person."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Return key window decision. Only take today."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Audience challenge three main experience what. Personal American ago cold. Next financial administration deal."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Claim cold throughout oil network. Conference sort day yard or financial. Easy take cultural apply program determine send mind."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:LockCode:items:CCGS:49580900",  
-      "urn:ngsi-ld:LockCode:items:LFBS:64671066"  
+    "id": "urn:ngsi-ld:LockCode:id:DSOC:42964529",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1994-04-07T20:31:59Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2010-09-17T15:38:07Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Among happy produce class."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Quality red believe leader sure contain. Indicate final policy question change environment person."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Return key window decision. Only take today."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Audience challenge three main experience what. Personal American ago cold. Next financial administration deal."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Claim cold throughout oil network. Conference sort day yard or financial. Easy take cultural apply program determine send mind."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:LockCode:items:CCGS:49580900",  
+            "urn:ngsi-ld:LockCode:items:LFBS:64671066"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:LockCode:items:WDUI:94831427"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                26.500678,  
+                7.456238  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Well more treat movement wind. Finish attorney realize daughter office share back.",  
+            "addressLocality": "Cold care relate until among any. Television education law.",  
+            "addressRegion": "Summer bad cause take. Mention before quickly dark. Across community end behavior before.",  
+            "addressCountry": "Current his state I. Available next which health. Week matter collection prevent.",  
+            "postalCode": "Education tell energy middle raise continue. Teach must site trouble.",  
+            "postOfficeBoxNumber": "Down common plant kind. Really strong somebody and only executive consumer. Too reflect affect buy painting."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Recognize be page unit well behind. Contain always right son minute world."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:LockCode:items:WDUI:94831427"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        26.500678,  
-        7.456238  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Well more treat movement wind. Finish attorney realize daughter office share back.",  
-      "addressLocality": "Cold care relate until among any. Television education law.",  
-      "addressRegion": "Summer bad cause take. Mention before quickly dark. Across community end behavior before.",  
-      "addressCountry": "Current his state I. Available next which health. Week matter collection prevent.",  
-      "postalCode": "Education tell energy middle raise continue. Teach must site trouble.",  
-      "postOfficeBoxNumber": "Down common plant kind. Really strong somebody and only executive consumer. Too reflect affect buy painting."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Recognize be page unit well behind. Contain always right son minute world."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
