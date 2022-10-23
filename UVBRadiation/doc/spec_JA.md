@@ -1,17 +1,32 @@
-エンティティUVBRadiation  
-==================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティUVBRadiation  
+==================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/UVBRadiation/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな説明です。**IoTDataのデータモデルをスマートデータモデルに変換したものです。このResourceは、UV放射測定を指定する。プロパティ「measure」は、現在測定されているUVBである。紫外線の強さは、ミリワット/平方センチメートル（mW/cm2）の単位で測定され、これは1秒間に受けた平方センチメートルあたりのエネルギーである。UVBは電磁スペクトルの280から315ナノメートルの間で測定されます。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**IoTData データモデルをスマートデータモデルプログラムに適応させたもの。本 Resource は、紫外線の測定値を規定する。プロパティ 'measurement'は、現在計測中の UVB である。紫外線の強度は、ミリワット・パー・スクエアセンチメートル（mW/cm2）の単位で測定され、これは1秒間に受信する平方センチメートルあたりのエネルギーである。UVBは、電磁波スペクトルの280～315ナノメートルの間で測定されます**。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `if`: このResourceがサポートしているOCF Interface set。  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `measurement`: 測定されたUVBです。  - `n`: リソースのフレンドリーネーム  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `rt`: The Resource Type。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSIエンティティタイプ。UVBRadiationでなければならない。    
-必須項目  
-- `id`  - `type`    
-このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)から来ています。NGSIの要件に適合するように拡張されています。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `if[array]`: このResourceがサポートするOCF Interfaceセット。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `measurement[number]`: 測定されたUVB。  - `n[string]`: リソースのフレンドリ名  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `rt[array]`: リソースタイプです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSIエンティティタイプ。UVBRadiationでなければならない  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)に由来しています。NGSIの要件に適合するように拡張されている。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 UVBRadiation:    
@@ -330,9 +345,14 @@ UVBRadiation:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### UVBRadiation NGSI-v2 key-values 例  
-ここでは、UVBRadiationをkey-valuesとしてJSON-LD形式で表した例を示します。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### UVBRadiation NGSI-v2 key-value の例  
+UVBRadiationをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用したときにNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:UVBRadiation:id:RUFN:84434026",  
@@ -369,8 +389,10 @@ UVBRadiation:
   "areaServed": "Which boy see no audience sound. Everything but air reach sing perhaps red. Agree set performance practice tend send."  
 }  
 ```  
+</details>  
 #### UVBRadiation NGSI-v2 正規化例  
-ここでは、JSON-LD形式のUVBRadiationを正規化した例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+UVBRadiationをJSON-LD形式で正規化した例です。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -448,127 +470,141 @@ UVBRadiation:
   }  
 }  
 ```  
-#### UVBRadiation NGSI-LD key-values例  
-ここでは、UVBRadiationをkey-valuesとしてJSON-LD形式で表現した例を紹介します。これは`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### UVBRadiation NGSI-LDのキー値例  
+UVBRadiationをJSON-LD形式でkey-valuesにした例です。これは `options=keyValues` を使ったときにNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:UVBRadiation:id:RUFN:84434026",  
-  "dateCreated": "1979-02-01T21:38:01Z",  
-  "dateModified": "1988-11-04T08:50:06Z",  
-  "source": "Shake business seem why state until. Memory western we which back technology speech health. Push performance scene information radio total college.",  
-  "name": "Turn program teach heavy son. Bad bank yeah. All security water indicate teach.",  
-  "alternateName": "American theory gas other. Down where tend benefit position model friend use. Democrat director air each teach audience. Democratic painting center former.",  
-  "description": "College color amount individual job quality. Employee region modern wear look short employee. Red strong song each activity conference.",  
-  "dataProvider": "Loss return food life she blue here throw. Major Democrat sister husband street kind. Sport white station difference movie population in help.",  
-  "owner": [  
-    "urn:ngsi-ld:UVBRadiation:items:OYEQ:78049778",  
-    "urn:ngsi-ld:UVBRadiation:items:ETDC:16806735"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:UVBRadiation:items:MKPQ:73465414",  
-    "urn:ngsi-ld:UVBRadiation:items:KUHU:28508572"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -89.050093,  
-      -69.422876  
+    "id": "urn:ngsi-ld:UVBRadiation:id:RUFN:84434026",  
+    "dateCreated": "1979-02-01T21:38:01Z",  
+    "dateModified": "1988-11-04T08:50:06Z",  
+    "source": "Shake business seem why state until. Memory western we which back technology speech health. Push performance scene information radio total college.",  
+    "name": "Turn program teach heavy son. Bad bank yeah. All security water indicate teach.",  
+    "alternateName": "American theory gas other. Down where tend benefit position model friend use. Democrat director air each teach audience. Democratic painting center former.",  
+    "description": "College color amount individual job quality. Employee region modern wear look short employee. Red strong song each activity conference.",  
+    "dataProvider": "Loss return food life she blue here throw. Major Democrat sister husband street kind. Sport white station difference movie population in help.",  
+    "owner": [  
+        "urn:ngsi-ld:UVBRadiation:items:OYEQ:78049778",  
+        "urn:ngsi-ld:UVBRadiation:items:ETDC:16806735"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:UVBRadiation:items:MKPQ:73465414",  
+        "urn:ngsi-ld:UVBRadiation:items:KUHU:28508572"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -89.050093,  
+            -69.422876  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Shake assume apply space indeed window. Ok shoulder responsibility person us increase. As check attention book.",  
+        "addressLocality": "No spend sport owner. Interesting relate form yet score market.",  
+        "addressRegion": "Back which pick war.",  
+        "addressCountry": "Agent bar high single. Risk piece chance likely often television. Might science catch indicate save. Officer wrong become part move assume.",  
+        "postalCode": "Carry move position goal. Plan whom past current alone environmental. Two better suddenly bed gun challenge.",  
+        "postOfficeBoxNumber": "Author be federal long paper product. Enjoy catch cell company even act yard. Kitchen field visit true determine imagine yes."  
+    },  
+    "areaServed": "Which boy see no audience sound. Everything but air reach sing perhaps red. Agree set performance practice tend send.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Shake assume apply space indeed window. Ok shoulder responsibility person us increase. As check attention book.",  
-    "addressLocality": "No spend sport owner. Interesting relate form yet score market.",  
-    "addressRegion": "Back which pick war.",  
-    "addressCountry": "Agent bar high single. Risk piece chance likely often television. Might science catch indicate save. Officer wrong become part move assume.",  
-    "postalCode": "Carry move position goal. Plan whom past current alone environmental. Two better suddenly bed gun challenge.",  
-    "postOfficeBoxNumber": "Author be federal long paper product. Enjoy catch cell company even act yard. Kitchen field visit true determine imagine yes."  
-  },  
-  "areaServed": "Which boy see no audience sound. Everything but air reach sing perhaps red. Agree set performance practice tend send.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-#### UVBRadiation NGSI-LDの正規化例  
-ここでは、JSON-LD形式のUVBRadiationを正規化した例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### UVBRadiation NGSI-LD 正規化例  
+UVBRadiationをJSON-LD形式で正規化した例です。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:UVBRadiation:id:LKJP:50948325",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1995-01-18T23:27:40Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1984-12-17T17:18:49Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Here start blood health prove challenge perform. Idea another watch the possible."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Trip we view. Current now same continue one moment social."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Particularly make evening production. Reduce major above institution image. Left law every include protect several."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Call stock economic. Leave pick stuff usually."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Region author doctor might. Stop financial realize admit picture father find."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:UVBRadiation:items:LBQI:53524326",  
-      "urn:ngsi-ld:UVBRadiation:items:HXII:53345543"  
+    "id": "urn:ngsi-ld:UVBRadiation:id:LKJP:50948325",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1995-01-18T23:27:40Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1984-12-17T17:18:49Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Here start blood health prove challenge perform. Idea another watch the possible."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Trip we view. Current now same continue one moment social."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Particularly make evening production. Reduce major above institution image. Left law every include protect several."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Call stock economic. Leave pick stuff usually."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Region author doctor might. Stop financial realize admit picture father find."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:UVBRadiation:items:LBQI:53524326",  
+            "urn:ngsi-ld:UVBRadiation:items:HXII:53345543"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:UVBRadiation:items:YIHE:58894024"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                52.194558,  
+                6.329331  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Study accept according teach effect it able be. It crime south chance together floor.",  
+            "addressLocality": "Force recently particular these remain find want. Moment relate send structure moment final business.",  
+            "addressRegion": "Sign approach phone picture. Treat lay her hold both.",  
+            "addressCountry": "From east phone bar adult chance. Discussion his leg today each wear amount.",  
+            "postalCode": "True cost consider. Rest long pull treatment improve.",  
+            "postOfficeBoxNumber": "Point perform team care technology. Away break training then. Born beautiful trouble single fall respond."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "East share system increase interesting. Friend box positive report concern wait."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:UVBRadiation:items:YIHE:58894024"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        52.194558,  
-        6.329331  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Study accept according teach effect it able be. It crime south chance together floor.",  
-      "addressLocality": "Force recently particular these remain find want. Moment relate send structure moment final business.",  
-      "addressRegion": "Sign approach phone picture. Treat lay her hold both.",  
-      "addressCountry": "From east phone bar adult chance. Discussion his leg today each wear amount.",  
-      "postalCode": "True cost consider. Rest long pull treatment improve.",  
-      "postOfficeBoxNumber": "Point perform team care technology. Away break training then. Born beautiful trouble single fall respond."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "East share system increase interesting. Friend box positive report concern wait."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
