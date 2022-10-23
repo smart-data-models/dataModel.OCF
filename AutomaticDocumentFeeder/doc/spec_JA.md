@@ -1,17 +1,32 @@
-エンティティAutomaticDocumentFeeder  
-=============================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティAutomaticDocumentFeeder  
+=============================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/AutomaticDocumentFeeder/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな説明です。**IoTDataデータモデルをスマートデータモデルに変換したものです。このリソースは、スキャナで使用される自動ドキュメントフィーダの状態を記述する。プロパティ'adfstates'と'currentAdfState'は読み取り専用である。プロパティ'adfStates'は、可能な動作状態の配列である。プロパティ'adfProcessing'はOKの状態で、その他の状態はエラーまたは'ユーザーの注意'が必要な状態です。currentAdfStateは、デバイス上のADF状態の現在の値です。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**オリジナルの IoTData データモデルをスマートデータモデルプログラムに適応させたもの。この Resource は、通常スキャナで使用される自動ドキュメントフィーダの状態を記述している。Property 'adfstates' と 'currentAdfState' は読み込み専用である。Property 'adfStates' は、可能な動作状態の配列である。プロパティ 'adfProcessing' は OK 状態で、その他の状態はエラーまたは 'ユーザーの注意' を必要とする状態です。currentAdfStateは、デバイス上のADFステートの現在値である**。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `adfStates`: adfの可能な状態の配列です。  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `currentAdfState`: 現在のadfの状態です。  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `if`: このResourceがサポートしているOCF Interface set。  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `n`: リソースのフレンドリーネーム  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `rt`: The Resource Type。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSIエンティティタイプ。それはAutomaticDocumentFeederでなければなりません。    
-必須項目  
-- `id`  - `type`    
-このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)から来ています。NGSIの要件に適合するように拡張されています。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `adfStates[array]`: 使用可能な adf 状態の配列。  - `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `currentAdfState[string]`: 現在のadfの状態です。  - `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `if[array]`: このResourceがサポートするOCF Interfaceセット。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `n[string]`: リソースのフレンドリ名  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `rt[array]`: リソースタイプです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSIエンティティタイプ。AutomaticDocumentFeeder である必要があります。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)に由来しています。NGSIの要件に適合するように拡張されている。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 AutomaticDocumentFeeder:    
@@ -338,9 +353,14 @@ AutomaticDocumentFeeder:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### AutomaticDocumentFeeder NGSI-v2 key-values の例。  
-ここでは、AutomaticDocumentFeederをJSON-LD形式でkey-valuesにした例を紹介します。これは、`options=keyValues`を使うとNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### AutomaticDocumentFeeder NGSI-v2 key-value の例  
+AutomaticDocumentFeederをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:AutomaticDocumentFeeder:id:ZQKU:56184669",  
@@ -377,8 +397,10 @@ AutomaticDocumentFeeder:
   "areaServed": "Future receive among quite price. This seek even mouth character ahead agree. While beat sound that fast particularly business."  
 }  
 ```  
-#### AutomaticDocumentFeeder NGSI-v2の正規化例  
-ここでは、正規化されたJSON-LD形式のAutomaticDocumentFeederの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### AutomaticDocumentFeeder NGSI-v2 正規化例  
+以下は、AutomaticDocumentFeederをJSON-LD形式で正規化した例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -456,127 +478,141 @@ AutomaticDocumentFeeder:
   }  
 }  
 ```  
-#### AutomaticDocumentFeeder NGSI-LD key-values 例  
-ここでは、AutomaticDocumentFeederをkey-valuesとしてJSON-LD形式で表現した例を紹介します。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### AutomaticDocumentFeeder NGSI-LD key-value 例  
+AutomaticDocumentFeederをJSON-LD形式でkey-valuesにした例です。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:AutomaticDocumentFeeder:id:ZQKU:56184669",  
-  "dateCreated": "1976-12-18T06:20:43Z",  
-  "dateModified": "1993-01-30T15:42:46Z",  
-  "source": "Stock how account owner PM floor. Easy public lead star where such next.",  
-  "name": "Black institution since leave remain across. Structure low hand pick TV main end. Seven blue few where author industry some.",  
-  "alternateName": "Need cut professional campaign. Anything rest citizen analysis catch significant film. Learn important force consider individual any field specific.",  
-  "description": "Second task charge need foot stuff serious. Reflect blue the expect husband. Own require language attention. Participant trouble note three relationship.",  
-  "dataProvider": "Game full result head professor. Fine stage response could gas within. Suddenly almost pattern simple wide majority wife manager.",  
-  "owner": [  
-    "urn:ngsi-ld:AutomaticDocumentFeeder:items:JIZT:98809158",  
-    "urn:ngsi-ld:AutomaticDocumentFeeder:items:PLTN:27424383"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:AutomaticDocumentFeeder:items:IGAP:14582256",  
-    "urn:ngsi-ld:AutomaticDocumentFeeder:items:MLZR:78921517"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -29.3315105,  
-      89.803881  
+    "id": "urn:ngsi-ld:AutomaticDocumentFeeder:id:ZQKU:56184669",  
+    "dateCreated": "1976-12-18T06:20:43Z",  
+    "dateModified": "1993-01-30T15:42:46Z",  
+    "source": "Stock how account owner PM floor. Easy public lead star where such next.",  
+    "name": "Black institution since leave remain across. Structure low hand pick TV main end. Seven blue few where author industry some.",  
+    "alternateName": "Need cut professional campaign. Anything rest citizen analysis catch significant film. Learn important force consider individual any field specific.",  
+    "description": "Second task charge need foot stuff serious. Reflect blue the expect husband. Own require language attention. Participant trouble note three relationship.",  
+    "dataProvider": "Game full result head professor. Fine stage response could gas within. Suddenly almost pattern simple wide majority wife manager.",  
+    "owner": [  
+        "urn:ngsi-ld:AutomaticDocumentFeeder:items:JIZT:98809158",  
+        "urn:ngsi-ld:AutomaticDocumentFeeder:items:PLTN:27424383"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:AutomaticDocumentFeeder:items:IGAP:14582256",  
+        "urn:ngsi-ld:AutomaticDocumentFeeder:items:MLZR:78921517"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -29.3315105,  
+            89.803881  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Full standard major. Blood seem live son challenge pass.",  
+        "addressLocality": "Really fill scientist toward write identify only describe. Always difference difficult option.",  
+        "addressRegion": "Also bag challenge against read. Capital wonder enjoy per. Baby structure letter assume contain.",  
+        "addressCountry": "Soldier election after kid particular always. Agency decade similar scientist. Collection mother evidence pretty add.",  
+        "postalCode": "Truth network two recent. City scene institution represent. Game understand some church interest sort course.",  
+        "postOfficeBoxNumber": "Support born few sea family move. He could quite give rule him candidate."  
+    },  
+    "areaServed": "Future receive among quite price. This seek even mouth character ahead agree. While beat sound that fast particularly business.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Full standard major. Blood seem live son challenge pass.",  
-    "addressLocality": "Really fill scientist toward write identify only describe. Always difference difficult option.",  
-    "addressRegion": "Also bag challenge against read. Capital wonder enjoy per. Baby structure letter assume contain.",  
-    "addressCountry": "Soldier election after kid particular always. Agency decade similar scientist. Collection mother evidence pretty add.",  
-    "postalCode": "Truth network two recent. City scene institution represent. Game understand some church interest sort course.",  
-    "postOfficeBoxNumber": "Support born few sea family move. He could quite give rule him candidate."  
-  },  
-  "areaServed": "Future receive among quite price. This seek even mouth character ahead agree. While beat sound that fast particularly business.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-#### AutomaticDocumentFeeder NGSI-LDの正規化例  
-ここでは、正規化されたJSON-LD形式のAutomaticDocumentFeederの例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### AutomaticDocumentFeeder NGSI-LD 正規化例  
+以下は、AutomaticDocumentFeederをJSON-LD形式で正規化した例である。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:AutomaticDocumentFeeder:id:IUVF:43770942",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2022-01-16T06:44:54Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1989-10-01T00:48:43Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Ever total along choice miss industry."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Fill not worry of drug child."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Enter be data. Task add rather surface through event cover. Against like reach process cell this."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Public must along name purpose explain. None green nation before give new tend."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Grow amount cut believe. Guess street scene summer kid simple project. It investment smile bit wife beyond."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:AutomaticDocumentFeeder:items:XFLV:89902711",  
-      "urn:ngsi-ld:AutomaticDocumentFeeder:items:BXLH:66680147"  
+    "id": "urn:ngsi-ld:AutomaticDocumentFeeder:id:IUVF:43770942",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2022-01-16T06:44:54Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1989-10-01T00:48:43Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Ever total along choice miss industry."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Fill not worry of drug child."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Enter be data. Task add rather surface through event cover. Against like reach process cell this."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Public must along name purpose explain. None green nation before give new tend."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Grow amount cut believe. Guess street scene summer kid simple project. It investment smile bit wife beyond."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:AutomaticDocumentFeeder:items:XFLV:89902711",  
+            "urn:ngsi-ld:AutomaticDocumentFeeder:items:BXLH:66680147"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:AutomaticDocumentFeeder:items:IFQO:59716788"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -36.977523,  
+                -32.719309  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Speech save leader guy. Table without church western. Color hour represent outside.",  
+            "addressLocality": "Serve owner court remain.",  
+            "addressRegion": "Fish in simple eat too space reduce. Skill social three phone coach local out point. Sea series official sister benefit radio cup.",  
+            "addressCountry": "Current something after enough human population. Message oil career present day when. Money often interest hand rather question.",  
+            "postalCode": "Home add modern maintain local. Rise grow sit close beyond enter. Different attention garden push.",  
+            "postOfficeBoxNumber": "Customer suggest enter specific event involve learn interest. Month standard myself maintain provide three."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Child significant sing nice his establish beat. Include eight allow determine work. Know perform arm within inside police."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:AutomaticDocumentFeeder:items:IFQO:59716788"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -36.977523,  
-        -32.719309  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Speech save leader guy. Table without church western. Color hour represent outside.",  
-      "addressLocality": "Serve owner court remain.",  
-      "addressRegion": "Fish in simple eat too space reduce. Skill social three phone coach local out point. Sea series official sister benefit radio cup.",  
-      "addressCountry": "Current something after enough human population. Message oil career present day when. Money often interest hand rather question.",  
-      "postalCode": "Home add modern maintain local. Rise grow sit close beyond enter. Different attention garden push.",  
-      "postOfficeBoxNumber": "Customer suggest enter specific event involve learn interest. Month standard myself maintain provide three."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Child significant sing nice his establish beat. Include eight allow determine work. Know perform arm within inside police."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
