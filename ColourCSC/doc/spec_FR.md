@@ -1,17 +1,32 @@
-Entité : ColourCSC  
-==================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entité : ColourCSC  
+==================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.OCF/blob/master/ColourCSC/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Description globale : **Adaptation du programme Smart Data Models des modèles de données IoTData originaux. Cette ressource décrit la couleur en utilisant les coordonnées de l'espace couleur. La propriété 'csc' correspond aux coordonnées de l'espace couleur dans l'espace couleur CIE.   Le premier élément du tableau est la coordonnée X.   Le deuxième élément du tableau est la coordonnée Y.   Si la propriété " precision " est fournie, elle s'applique à la fois aux coordonnées X et Y. La ressource fournit la couleur en utilisant les coordonnées de l'espace couleur. **  
+version : 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `csc`: Les coordonnées X et Y de la couleur dans l'espace couleur CIE.  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `if`: Le jeu d'interfaces OCF supporté par cette ressource.  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `n`: Nom amical de la ressource  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `precision`: Lorsqu'elle est exposée, la valeur de "précision" fournit une tolérance +/- par rapport aux propriétés de la ressource. Ainsi, si une propriété est mise à jour avec une valeur et que cette propriété est ensuite récupérée, la valeur récupérée est valide si elle se situe dans la plage de la valeur définie +/- précision.  - `rt`: Le type de ressource.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type`: Type d'entité NGSI. Il doit s'agir de ColourCSC    
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour cet élément  - `areaServed[string]`: La zone géographique où un service ou un article offert est fourni  . Model: [https://schema.org/Text](https://schema.org/Text)- `csc[array]`: Les coordonnées X et Y de la couleur dans l'espace couleur CIE.  - `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified[string]`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description[string]`: Une description de cet article  - `id[*]`: Identifiant unique de l'entité  - `if[array]`: L'ensemble des interfaces OCF supportées par cette ressource.  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `n[string]`: Nom amical de la ressource  - `name[string]`: Le nom de cet élément.  - `owner[array]`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `precision[number]`: Lorsqu'elle est exposée, la valeur de "précision" fournit une tolérance +/- par rapport aux propriétés de la ressource. Ainsi, si une propriété est mise à jour avec une valeur et que cette propriété est ensuite récupérée, la valeur récupérée est valide si elle se situe dans la plage de la valeur définie +/- la précision.  - `rt[array]`: Le type de ressource.  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type[string]`: Type d'entité NGSI. Il doit s'agir de ColourCSC  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propriétés requises  
-- `id`  - `type`    
-Ce modèle de données provient du référentiel original de la [Open Connectivity Foundation] (https://github.com/openconnectivityfoundation/IoTDataModels). Il a été étendu pour se conformer aux exigences de la NGSI.  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+Ce modèle de données provient du référentiel original de la [Open Connectivity Foundation] (https://github.com/openconnectivityfoundation/IoTDataModels). Il a été étendu pour être conforme aux exigences de la NGSI.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ColourCSC:    
@@ -340,9 +355,14 @@ ColourCSC:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Exemples de charges utiles  
-#### ColourCSC Valeurs-clés NGSI-v2 Exemple  
+#### ColourCSC Valeurs clés NGSI-v2 Exemple  
 Voici un exemple de ColourCSC au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec la NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:ColourCSC:id:CILR:22609889",  
@@ -379,8 +399,10 @@ ColourCSC:
   "areaServed": "Power last south movement. Provide wrong half within on building cup idea."  
 }  
 ```  
+</details>  
 #### CouleurCSC NGSI-v2 normalisée Exemple  
 Voici un exemple d'un ColourCSC au format JSON-LD tel que normalisé. Ce format est compatible avec la NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -458,127 +480,141 @@ ColourCSC:
   }  
 }  
 ```  
+</details>  
 #### ColourCSC Valeurs clés NGSI-LD Exemple  
 Voici un exemple de ColourCSC au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:ColourCSC:id:CILR:22609889",  
-  "dateCreated": "1972-02-07T04:39:05Z",  
-  "dateModified": "1995-06-21T21:30:16Z",  
-  "source": "Sit whole certainly chance eye. Picture blood himself movement put enter camera.",  
-  "name": "Actually open walk occur red tonight eight. Marriage either before focus hand fear. Choice executive dream too your goal up similar.",  
-  "alternateName": "Must help seat together deep. Pick just hundred. Along with development sound night matter.",  
-  "description": "Exist major pick.",  
-  "dataProvider": "Shoulder floor off another any.",  
-  "owner": [  
-    "urn:ngsi-ld:ColourCSC:items:HVOC:54830748",  
-    "urn:ngsi-ld:ColourCSC:items:ZZYY:78981473"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:ColourCSC:items:FYZV:24314298",  
-    "urn:ngsi-ld:ColourCSC:items:EKPS:06727525"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      9.5180045,  
-      -162.458131  
+    "id": "urn:ngsi-ld:ColourCSC:id:CILR:22609889",  
+    "dateCreated": "1972-02-07T04:39:05Z",  
+    "dateModified": "1995-06-21T21:30:16Z",  
+    "source": "Sit whole certainly chance eye. Picture blood himself movement put enter camera.",  
+    "name": "Actually open walk occur red tonight eight. Marriage either before focus hand fear. Choice executive dream too your goal up similar.",  
+    "alternateName": "Must help seat together deep. Pick just hundred. Along with development sound night matter.",  
+    "description": "Exist major pick.",  
+    "dataProvider": "Shoulder floor off another any.",  
+    "owner": [  
+        "urn:ngsi-ld:ColourCSC:items:HVOC:54830748",  
+        "urn:ngsi-ld:ColourCSC:items:ZZYY:78981473"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:ColourCSC:items:FYZV:24314298",  
+        "urn:ngsi-ld:ColourCSC:items:EKPS:06727525"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            9.5180045,  
+            -162.458131  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Still information trial adult. Feel total between activity that own different.",  
+        "addressLocality": "Rest computer though I can. Within nature game reason.",  
+        "addressRegion": "Cost later tough data. Hotel him technology national imagine along. Sound Mr off.",  
+        "addressCountry": "Guess say miss increase lay attention. Road free president make page. Know wind data. Score little dream put size know daughter.",  
+        "postalCode": "Continue ask at fast likely site color. Art those worry treat. Price tonight white maintain.",  
+        "postOfficeBoxNumber": "Result fund generation direction."  
+    },  
+    "areaServed": "Power last south movement. Provide wrong half within on building cup idea.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Still information trial adult. Feel total between activity that own different.",  
-    "addressLocality": "Rest computer though I can. Within nature game reason.",  
-    "addressRegion": "Cost later tough data. Hotel him technology national imagine along. Sound Mr off.",  
-    "addressCountry": "Guess say miss increase lay attention. Road free president make page. Know wind data. Score little dream put size know daughter.",  
-    "postalCode": "Continue ask at fast likely site color. Art those worry treat. Price tonight white maintain.",  
-    "postOfficeBoxNumber": "Result fund generation direction."  
-  },  
-  "areaServed": "Power last south movement. Provide wrong half within on building cup idea.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### CouleurCSC NGSI-LD normalisé Exemple  
 Voici un exemple d'un ColourCSC au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:ColourCSC:id:QXXW:01773179",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1981-01-01T22:54:47Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2018-04-25T12:29:34Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Pick tend read employee art interview. Wife production know officer small. Let training study specific seat young."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Dog police quite prove ok law but."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Line power thought plan surface. None often arm catch not night new public."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Month feeling region international make son. Six spend certainly. Suggest bad great lawyer."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Such allow nothing down very her record. Or travel reduce throughout change. Brother history over medical."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:ColourCSC:items:NUWJ:83419287",  
-      "urn:ngsi-ld:ColourCSC:items:PSON:82588261"  
+    "id": "urn:ngsi-ld:ColourCSC:id:QXXW:01773179",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1981-01-01T22:54:47Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2018-04-25T12:29:34Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Pick tend read employee art interview. Wife production know officer small. Let training study specific seat young."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Dog police quite prove ok law but."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Line power thought plan surface. None often arm catch not night new public."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Month feeling region international make son. Six spend certainly. Suggest bad great lawyer."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Such allow nothing down very her record. Or travel reduce throughout change. Brother history over medical."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:ColourCSC:items:NUWJ:83419287",  
+            "urn:ngsi-ld:ColourCSC:items:PSON:82588261"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:ColourCSC:items:IFMS:64015606"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -34.482211,  
+                33.71405  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Foreign per begin.",  
+            "addressLocality": "Vote rule always section. Respond fish event run particularly style establish key.",  
+            "addressRegion": "Foot computer seven unit future. Front employee step star.",  
+            "addressCountry": "Game relationship where civil research improve later. Practice agent each recently until send.",  
+            "postalCode": "Reduce single culture hour can lawyer speech. Point attention stay reason. Evening benefit subject between.",  
+            "postOfficeBoxNumber": "Can stop save military despite memory would."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Simple pressure test difficult Congress business mean. North dark lose blue test your buy."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:ColourCSC:items:IFMS:64015606"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -34.482211,  
-        33.71405  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Foreign per begin.",  
-      "addressLocality": "Vote rule always section. Respond fish event run particularly style establish key.",  
-      "addressRegion": "Foot computer seven unit future. Front employee step star.",  
-      "addressCountry": "Game relationship where civil research improve later. Practice agent each recently until send.",  
-      "postalCode": "Reduce single culture hour can lawyer speech. Point attention stay reason. Evening benefit subject between.",  
-      "postOfficeBoxNumber": "Can stop save military despite memory would."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Simple pressure test difficult Congress business mean. North dark lose blue test your buy."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
