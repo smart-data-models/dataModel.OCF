@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 エンティティ温度  
-========  
+========<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/Temperature/LICENSE.md)  
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**プロパティ「units」は、「C」、「F」、「K」のいずれか1つの値であり、「温度」値の測定単位を提供する。クライアントは、要求された温度の単位をクエリパラメータで指定できます。クエリパラメータが指定されない場合、サーバはそのデフォルトの測定値または設定値を提供します。  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**プロパティ「units」は、「C」、「F」、「K」のいずれか1つの値であり、「温度」値の測定単位を提供する。クライアントは、要求された温度の単位をクエリパラメータで指定できます。クエリパラメータが指定されない場合、サーバはそのデフォルトの測定値または設定値を提供します。  
 バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `id`: エンティティの一意な識別子  - `if`: このResourceがサポートするOCF Interfaceセット。  - `location`: アイテムへのGeojsonリファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `n`: リソースのフレンドリ名  - `name`: このアイテムの名称です。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `precision`: precision'の値が公開されると、ResourceのPropertiesに対して+/-の許容範囲を提供します。したがって、あるプロパティがある値にUPDATEされ、そのプロパティがRETRIEVEDされた場合、RETRIEVEDされた値は設定された値+/-精度の範囲内であれば有効である。  - `range`: リソースに含まれるプロパティの有効範囲を数値で表したもの。配列の最初の値が最小値、2 番目の値が最大値となります。  - `rt`: リソースタイプです。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで指定する文字の列。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `step`: 定義された範囲のステップ値（範囲が数値の場合は整数）。  範囲が0.0〜10.0でステップが2.5の場合、有効な値は0.0、2.5、5.0、7.5、10.0である。  - `temperature`: 現在の設定温度または測定値。  - `type`: NGSIエンティティタイプ。それは温度でなければなりません  - `units`: 搬送される温度値の単位。ただし、UPDATEを行う際、装置上の単位は変更されず、UPDATE操作中の搬送値の単位を示すだけである。    
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `if[array]`: このResourceがサポートするOCF Interfaceセット。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `n[string]`: リソースのフレンドリ名  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリスト  - `precision[number]`: 公開されるとき、'precision'の値は、ResourceのPropertyに対して+/-の許容範囲を提供する。したがって、あるプロパティがある値にUPDATEされ、そのプロパティがRETRIEVEDされた場合、RETRIEVEDされた値は設定された値+/-精度の範囲内であれば有効である。  - `range[array]`: Resource に含まれる Property の有効範囲を数値で表します。配列の最初の値が最小値、2 番目の値が最大値となります。  - `rt[array]`: リソースタイプです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `step[number]`: 定義された範囲にわたるステップ値。  範囲が0.0〜10.0でステップが2.5の場合、有効な値は0.0、2.5、5.0、7.5、10.0である。  - `temperature[number]`: 現在の設定温度または測定値。  - `type[string]`: NGSIエンティティタイプ。それは温度でなければなりません  - `units[string]`: 搬送される温度値の単位。ただし、UPDATEを行う際、装置上の単位は変更されず、UPDATE操作中の搬送値の単位を示すだけである。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 必要なプロパティ  
-- `id`  - `temperature`  - `type`    
+- `id`  - `temperature`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 データモデルは、Open Connectivity Foundationが作成したオリジナルを引用しています。https://github.com/openconnectivityfoundation/IoTDataModels のオリジナルリポジトリ  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
 アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Temperature:    
@@ -364,9 +377,14 @@ Temperature:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
 #### 温度 NGSI-v2 キー値例  
-ここでは、TemperatureをJSON-LD形式でkey-valueとした場合の例を示します。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+ここでは、TemperatureをJSON-LD形式でkey-valuesとした例を示す。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Temperature:id:TDIW:54028449",  
@@ -430,8 +448,10 @@ Temperature:
   "type": "Temperature"  
 }  
 ```  
+</details>  
 #### 温度 NGSI-v2 正規化例  
-以下は、JSON-LD形式で正規化されたTemperatureの例である。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、正規化されたJSON-LD形式のTemperatureの例である。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -563,195 +583,209 @@ Temperature:
   }  
 }  
 ```  
+</details>  
 #### 温度 NGSI-LD キー値例  
-ここでは、TemperatureをJSON-LD形式でkey-valueとした例を示します。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返す。  
+ここでは、TemperatureをJSON-LD形式でkey-valuesにした例を示す。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Temperature:id:TDIW:54028449",  
-  "dateCreated": "2002-11-15T00:39:26Z",  
-  "dateModified": "1984-04-05T09:28:18Z",  
-  "source": "Report reveal along thank conference anything. Strong commercial oil great little eat film. Son source question all bed continue.",  
-  "name": "Hope clearly appear my project former goal ago. Put edge assume close believe focus.",  
-  "alternateName": "Employee machine rate among goal drive. Management fish author until second.",  
-  "description": "Mission full life thank feeling approach. Newspaper our color bring final. Enter fall wear age ago.",  
-  "dataProvider": "Improve reflect ago bad result.",  
-  "owner": [  
-    "urn:ngsi-ld:Temperature:items:RMOR:11444543",  
-    "urn:ngsi-ld:Temperature:items:GBKW:61820150"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Temperature:items:AXXM:54456212",  
-    "urn:ngsi-ld:Temperature:items:LIWH:14572760"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      39.6865755,  
-      168.763262  
+    "id": "urn:ngsi-ld:Temperature:id:TDIW:54028449",  
+    "dateCreated": "2002-11-15T00:39:26Z",  
+    "dateModified": "1984-04-05T09:28:18Z",  
+    "source": "Report reveal along thank conference anything. Strong commercial oil great little eat film. Son source question all bed continue.",  
+    "name": "Hope clearly appear my project former goal ago. Put edge assume close believe focus.",  
+    "alternateName": "Employee machine rate among goal drive. Management fish author until second.",  
+    "description": "Mission full life thank feeling approach. Newspaper our color bring final. Enter fall wear age ago.",  
+    "dataProvider": "Improve reflect ago bad result.",  
+    "owner": [  
+        "urn:ngsi-ld:Temperature:items:RMOR:11444543",  
+        "urn:ngsi-ld:Temperature:items:GBKW:61820150"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Temperature:items:AXXM:54456212",  
+        "urn:ngsi-ld:Temperature:items:LIWH:14572760"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            39.6865755,  
+            168.763262  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Case institution side suddenly land set trip. Other police own activity field they. With new individual. Notice he loss recognize start exactly difference picture.",  
+        "addressLocality": "President president new.",  
+        "addressRegion": "Little newspaper to some Congress. School organization account heavy now strong organization. Bit it great its very.",  
+        "addressCountry": "Control outside save similar. Citizen only PM able product main.",  
+        "postalCode": "Road Mr or success science. Civil fact compare floor loss.",  
+        "postOfficeBoxNumber": "Add in spring often American. When coach relationship sell production. Great relationship participant piece ground."  
+    },  
+    "areaServed": "Policy yet line half. Meet machine still never. Father both phone teacher throw particularly admit seek.",  
+    "rt": [  
+        "oic.r.temperature",  
+        "oic.r.temperature"  
+    ],  
+    "temperature": {  
+        "type": "Property",  
+        "value": 246.8  
+    },  
+    "units": "F",  
+    "n": "Action thought sing fall play require owner. Business itself artist how chair interest.",  
+    "range": [  
+        515.3,  
+        539.9  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 292.0  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 843.0  
+    },  
+    "if": [  
+        "oic.if.a",  
+        "oic.if.baseline"  
+    ],  
+    "type": "Temperature",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Case institution side suddenly land set trip. Other police own activity field they. With new individual. Notice he loss recognize start exactly difference picture.",  
-    "addressLocality": "President president new.",  
-    "addressRegion": "Little newspaper to some Congress. School organization account heavy now strong organization. Bit it great its very.",  
-    "addressCountry": "Control outside save similar. Citizen only PM able product main.",  
-    "postalCode": "Road Mr or success science. Civil fact compare floor loss.",  
-    "postOfficeBoxNumber": "Add in spring often American. When coach relationship sell production. Great relationship participant piece ground."  
-  },  
-  "areaServed": "Policy yet line half. Meet machine still never. Father both phone teacher throw particularly admit seek.",  
-  "rt": [  
-    "oic.r.temperature",  
-    "oic.r.temperature"  
-  ],  
-  "temperature": {  
-    "type": "Property",  
-    "value": 246.8  
-  },  
-  "units": "F",  
-  "n": "Action thought sing fall play require owner. Business itself artist how chair interest.",  
-  "range": [  
-    515.3,  
-    539.9  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 292.0  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 843.0  
-  },  
-  "if": [  
-    "oic.if.a",  
-    "oic.if.baseline"  
-  ],  
-  "type": "Temperature",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### 温度 NGSI-LD 正規化例  
-以下は、JSON-LD形式で正規化されたTemperatureの例である。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、正規化されたJSON-LD形式のTemperatureの例である。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Temperature:id:YJWE:44231919",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1974-10-02T12:25:25Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1982-01-05T09:10:50Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Well culture past key little information. Wrong economic never child."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Hospital across offer surface when difference tend. Hour modern break need organization. Mission management available."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Seem stock list thousand officer remain opportunity. Between believe both never world mean."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Your good drug security either indeed happen than. City another spend history sister indeed. Lay remember sell resource necessary recognize."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Them yourself just. City available performance policy crime term show."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Temperature:items:EASB:74128989",  
-      "urn:ngsi-ld:Temperature:items:OBHQ:72441409"  
+    "id": "urn:ngsi-ld:Temperature:id:YJWE:44231919",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1974-10-02T12:25:25Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1982-01-05T09:10:50Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Well culture past key little information. Wrong economic never child."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Hospital across offer surface when difference tend. Hour modern break need organization. Mission management available."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Seem stock list thousand officer remain opportunity. Between believe both never world mean."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Your good drug security either indeed happen than. City another spend history sister indeed. Lay remember sell resource necessary recognize."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Them yourself just. City available performance policy crime term show."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Temperature:items:EASB:74128989",  
+            "urn:ngsi-ld:Temperature:items:OBHQ:72441409"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Temperature:items:LNIB:52742786"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                86.8298555,  
+                179.323609  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Expect indeed activity military. Take country research above word home grow.",  
+            "addressLocality": "Technology black remain find himself. Industry business response relationship there.",  
+            "addressRegion": "North although among. Computer specific do avoid beyond fly house recognize. Certainly teacher pay main summer.",  
+            "addressCountry": "Girl budget pick cup color. Dream a agency debate tough else explain. Age thousand important take interesting write.",  
+            "postalCode": "Leg and safe speak reveal almost know. Soon player hand culture morning own here. Eat start field bill close might media. Development crime wear.",  
+            "postOfficeBoxNumber": "Task interest nature choose purpose. Option charge bring other."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Difference herself huge able. Street author heavy born star when response. Smile picture staff human."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.temperature"  
+        ]  
+    },  
+    "temperature": {  
+        "type": "Property",  
+        "value": 691.4  
+    },  
+    "units": {  
+        "type": "Property",  
+        "value": "F"  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Current dog involve laugh PM. Option use indeed first then."  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            717.5,  
+            181.7  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 720.9  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 909.2  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.s",  
+            "oic.if.a"  
+        ]  
+    },  
+    "type": "Temperature",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Temperature:items:LNIB:52742786"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        86.8298555,  
-        179.323609  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Expect indeed activity military. Take country research above word home grow.",  
-      "addressLocality": "Technology black remain find himself. Industry business response relationship there.",  
-      "addressRegion": "North although among. Computer specific do avoid beyond fly house recognize. Certainly teacher pay main summer.",  
-      "addressCountry": "Girl budget pick cup color. Dream a agency debate tough else explain. Age thousand important take interesting write.",  
-      "postalCode": "Leg and safe speak reveal almost know. Soon player hand culture morning own here. Eat start field bill close might media. Development crime wear.",  
-      "postOfficeBoxNumber": "Task interest nature choose purpose. Option charge bring other."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Difference herself huge able. Street author heavy born star when response. Smile picture staff human."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.temperature"  
-    ]  
-  },  
-  "temperature": {  
-    "type": "Property",  
-    "value": 691.4  
-  },  
-  "units": {  
-    "type": "Property",  
-    "value": "F"  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Current dog involve laugh PM. Option use indeed first then."  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      717.5,  
-      181.7  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 720.9  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 909.2  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.s",  
-      "oic.if.a"  
-    ]  
-  },  
-  "type": "Temperature",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
