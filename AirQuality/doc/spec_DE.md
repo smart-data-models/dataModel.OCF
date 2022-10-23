@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entität: AirQuality  
-===================  
+===================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.OCF/blob/master/AirQuality/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Globale Beschreibung: **Diese Ressource beschreibt eine qualitative oder gemessene Verunreinigung, die zur Ableitung der Luftqualität verwendet werden kann.Die Eigenschaft "valueType" gibt einen qualitativen oder gemessenen Messwert innerhalb der Eigenschaft "contaminantvalue" an.Die Eigenschaft "contaminantvalue" kann den tatsächlich gemessenen Wert mit Einheiten je Verunreinigungsart enthalten.Die Eigenschaft "contaminantvalue" enthält den tatsächlich gemessenen oder qualitativen Wert.Die Eigenschaft "range" enthält den zulässigen Bereich für den gemeldeten Wert.Wenn valueType "Measured" ist, sind die Einheiten für die Kontaminantenarten wie folgt: Methanol (auch bekannt als Formaldehyd): CH2O (ug/m^3), Kohlendioxid: CO2 (ppm), Kohlenmonoxid: CO (ppm), Feinstaub (mit einem Durchmesser von weniger als 1 Mikron): PM1 (ug/m^3), Feinstaub (weniger als 2,5 Mikrometer Durchmesser): PM2.5 (ug/m^3), Feinstaub (weniger als 10 Mikrometer Durchmesser): PM10 (ug/m^3), Flüchtige organische Verbindungen: VOC (ug/m^3), Ozon: 03 (ppm), Stickstoffdioxid: NO2 (ppm), Schwefeldioxid: SO2 (ppm) **  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Globale Beschreibung: **Diese Ressource beschreibt eine qualitative oder gemessene Verunreinigung, die zur Ableitung der Luftqualität verwendet werden kann.Die Eigenschaft "valueType" gibt einen qualitativen oder gemessenen Messwert innerhalb der Eigenschaft "contaminantvalue" an.Die Eigenschaft "contaminantvalue" kann den tatsächlich gemessenen Wert mit Einheiten pro Verunreinigungstyp enthalten.Die Eigenschaft "contaminantvalue" enthält den tatsächlich gemessenen oder qualitativen Wert.Die Eigenschaft "range" enthält den zulässigen Bereich für den gemeldeten Wert.Wenn valueType "Measured" ist, sind die Einheiten für die Kontaminantenarten wie folgt: Methanol (auch bekannt als Formaldehyd): CH2O (ug/m^3), Kohlendioxid: CO2 (ppm), Kohlenmonoxid: CO (ppm), Feinstaub (mit einem Durchmesser von weniger als 1 Mikron): PM1 (ug/m^3), Feinstaub (weniger als 2,5 Mikrometer Durchmesser): PM2.5 (ug/m^3), Feinstaub (weniger als 10 Mikrometer Durchmesser): PM10 (ug/m^3), Flüchtige organische Verbindungen: VOC (ug/m^3), Ozon: 03 (ppm), Stickstoffdioxid: NO2 (ppm), Schwefeldioxid: SO2 (ppm) **  
 Version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `contaminanttype`: Der zu messende Schadstoff.  - `contaminantvalue`: Der gemessene oder qualitative Wert für den Schadstoff.  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `if`: Der von dieser Ressource unterstützte OCF-Schnittstellensatz.  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `n`: Freundlicher Name der Ressource  - `name`: Der Name dieses Artikels.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `range`: Der gültige Bereich für die Eigenschaft in der Ressource in Form einer Ganzzahl. Der erste Wert im Array ist der Mindestwert, der zweite Wert im Array ist der Höchstwert.  - `rt`: Der Ressourcentyp.  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `type`: NGSI-Entitätstyp. Es muss AirQuality sein  - `valuetype`: Die Eigenschaft, die angibt, ob der bereitgestellte Wert qualitativ oder gemessen ist.    
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, liegt das daran, dass es mehrere Typen oder unterschiedliche Formate/Muster haben kann</sub></sup>.  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `contaminanttype[string]`: Der zu messende Schadstoff.  - `contaminantvalue[integer]`: Der gemessene oder qualitative Wert für den Schadstoff.  - `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `id[*]`: Eindeutiger Bezeichner der Entität  - `if[array]`: Der von dieser Ressource unterstützte OCF-Schnittstellensatz.  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `n[string]`: Freundlicher Name der Ressource  - `name[string]`: Der Name dieses Artikels.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `range[array]`: Der gültige Bereich für die Eigenschaft in der Ressource in Form einer Ganzzahl. Der erste Wert im Array ist der Mindestwert, der zweite Wert im Array ist der Höchstwert.  - `rt[array]`: Der Ressourcentyp.  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `type[string]`: NGSI-Entitätstyp. Es muss AirQuality sein  - `valuetype[string]`: Die Eigenschaft, die angibt, ob der bereitgestellte Wert qualitativ oder gemessen ist.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
-- `contaminanttype`  - `contaminantvalue`  - `id`  - `type`  - `valuetype`    
+- `contaminanttype`  - `contaminantvalue`  - `id`  - `type`  - `valuetype`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Datenmodell nach dem von der Open Connectivity Foundation erstellten Original. Ursprüngliches Repository in https://github.com/openconnectivityfoundation/IoTDataModels  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 AirQuality:    
@@ -373,9 +386,14 @@ AirQuality:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Beispiel-Nutzlasten  
 #### AirQuality NGSI-v2 Schlüsselwerte Beispiel  
 Hier ist ein Beispiel für eine AirQuality im JSON-LD-Format als Schlüsselwerte. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:AirQuality:id:PFXO:54743602",  
@@ -432,8 +450,10 @@ AirQuality:
   "type": "AirQuality"  
 }  
 ```  
+</details>  
 #### AirQuality NGSI-v2 normalisiert Beispiel  
 Hier ist ein Beispiel für eine AirQuality im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -555,184 +575,198 @@ AirQuality:
   }  
 }  
 ```  
+</details>  
 #### AirQuality NGSI-LD Schlüsselwerte Beispiel  
 Hier ist ein Beispiel für eine AirQuality im JSON-LD-Format als Schlüsselwerte. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:AirQuality:id:PFXO:54743602",  
-  "dateCreated": "2001-08-05T08:57:06Z",  
-  "dateModified": "1981-11-22T02:48:46Z",  
-  "source": "Lose involve civil region expert similar visit church. Continue cultural of quite since mother. Garden outside spend wind.",  
-  "name": "Reality election expert. Ball your section why strong baby. Ahead usually front price daughter. Go common draw high.",  
-  "alternateName": "Party design avoid technology dinner whatever. Baby hold reduce speech. Inside great certain today want member start.",  
-  "description": "Choice behavior two direction type reduce wish. Tough responsibility choice though party. Energy so development across many traditional scene trade.",  
-  "dataProvider": "Challenge nothing financial about off cup. Cup movement accept professional source stock couple charge. Ready everyone decade choose news nearly sell.",  
-  "owner": [  
-    "urn:ngsi-ld:AirQuality:items:MMLD:94586360",  
-    "urn:ngsi-ld:AirQuality:items:QUQB:11049322"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:AirQuality:items:QRGK:95918228",  
-    "urn:ngsi-ld:AirQuality:items:XRLP:04774136"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      9.815136,  
-      -92.524037  
+    "id": "urn:ngsi-ld:AirQuality:id:PFXO:54743602",  
+    "dateCreated": "2001-08-05T08:57:06Z",  
+    "dateModified": "1981-11-22T02:48:46Z",  
+    "source": "Lose involve civil region expert similar visit church. Continue cultural of quite since mother. Garden outside spend wind.",  
+    "name": "Reality election expert. Ball your section why strong baby. Ahead usually front price daughter. Go common draw high.",  
+    "alternateName": "Party design avoid technology dinner whatever. Baby hold reduce speech. Inside great certain today want member start.",  
+    "description": "Choice behavior two direction type reduce wish. Tough responsibility choice though party. Energy so development across many traditional scene trade.",  
+    "dataProvider": "Challenge nothing financial about off cup. Cup movement accept professional source stock couple charge. Ready everyone decade choose news nearly sell.",  
+    "owner": [  
+        "urn:ngsi-ld:AirQuality:items:MMLD:94586360",  
+        "urn:ngsi-ld:AirQuality:items:QUQB:11049322"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:AirQuality:items:QRGK:95918228",  
+        "urn:ngsi-ld:AirQuality:items:XRLP:04774136"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            9.815136,  
+            -92.524037  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Couple sense senior bar imagine voice. Risk letter reduce commercial. End size building remember respond southern. Teacher friend home risk.",  
+        "addressLocality": "Tough former data TV. Fact huge someone recent easy point.",  
+        "addressRegion": "Guess however serious author true left always. Determine police name home start.",  
+        "addressCountry": "Those either bring per. Drug event listen movie. Decide score quite today successful eye effort.",  
+        "postalCode": "Night sometimes wrong candidate something media bit. Old course do heart responsibility color important.",  
+        "postOfficeBoxNumber": "Network wife theory. Whether lose agreement history though."  
+    },  
+    "areaServed": "Another consumer upon across our. True enough year big compare among. Off financial thank reach.",  
+    "rt": [  
+        "oic.r.airquality",  
+        "oic.r.airquality"  
+    ],  
+    "contaminanttype": "CH2O",  
+    "valuetype": "Qualitative",  
+    "contaminantvalue": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "n": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair.",  
+    "range": [  
+        864,  
+        864  
+    ],  
+    "if": [  
+        "oic.if.s",  
+        "oic.if.baseline"  
+    ],  
+    "type": "AirQuality",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Couple sense senior bar imagine voice. Risk letter reduce commercial. End size building remember respond southern. Teacher friend home risk.",  
-    "addressLocality": "Tough former data TV. Fact huge someone recent easy point.",  
-    "addressRegion": "Guess however serious author true left always. Determine police name home start.",  
-    "addressCountry": "Those either bring per. Drug event listen movie. Decide score quite today successful eye effort.",  
-    "postalCode": "Night sometimes wrong candidate something media bit. Old course do heart responsibility color important.",  
-    "postOfficeBoxNumber": "Network wife theory. Whether lose agreement history though."  
-  },  
-  "areaServed": "Another consumer upon across our. True enough year big compare among. Off financial thank reach.",  
-  "rt": [  
-    "oic.r.airquality",  
-    "oic.r.airquality"  
-  ],  
-  "contaminanttype": "CH2O",  
-  "valuetype": "Qualitative",  
-  "contaminantvalue": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "n": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair.",  
-  "range": [  
-    864,  
-    864  
-  ],  
-  "if": [  
-    "oic.if.s",  
-    "oic.if.baseline"  
-  ],  
-  "type": "AirQuality",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### AirQuality NGSI-LD normalisiert Beispiel  
 Hier ist ein Beispiel für eine AirQuality im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:AirQuality:id:LNQC:72550215",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1977-12-12T05:27:39Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2013-02-06T05:53:44Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Successful he may. Civil soldier well whom challenge anyone. True director bad material control but. Want entire nothing herself middle song."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Finish line north particularly wait step. Child argue add."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Do especially world tonight remember."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Film wish edge star address lose action drive. Safe may decide college. Agent everybody available party range. Owner turn baby response."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Quickly boy hour indeed wish success. Police break reach able unit. Particularly painting around light lose."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:AirQuality:items:CBIB:33216193",  
-      "urn:ngsi-ld:AirQuality:items:RJZC:40470330"  
+    "id": "urn:ngsi-ld:AirQuality:id:LNQC:72550215",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1977-12-12T05:27:39Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2013-02-06T05:53:44Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Successful he may. Civil soldier well whom challenge anyone. True director bad material control but. Want entire nothing herself middle song."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Finish line north particularly wait step. Child argue add."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Do especially world tonight remember."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Film wish edge star address lose action drive. Safe may decide college. Agent everybody available party range. Owner turn baby response."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Quickly boy hour indeed wish success. Police break reach able unit. Particularly painting around light lose."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:AirQuality:items:CBIB:33216193",  
+            "urn:ngsi-ld:AirQuality:items:RJZC:40470330"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:AirQuality:items:IZCL:58197135"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                16.41076,  
+                -119.319515  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Create policy name full. Trial care card along open investment. Individual great while knowledge.",  
+            "addressLocality": "Parent school through visit property various nature. Position picture a how director.",  
+            "addressRegion": "Certainly become deep. Buy image strategy. It quite edge already executive nation same. More window left real.",  
+            "addressCountry": "Report picture series tough final attorney. Hold mind take myself reduce. Majority chair check magazine.",  
+            "postalCode": "Enjoy professor low. Building customer loss chair management. Goal factor gun. Administration create very physical eye phone.",  
+            "postOfficeBoxNumber": "Hear window pay door image stage TV. Budget second response since fill interview."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Case really society describe. Live responsibility knowledge goal degree station."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.airquality"  
+        ]  
+    },  
+    "contaminanttype": {  
+        "type": "Property",  
+        "value": "NO2"  
+    },  
+    "valuetype": {  
+        "type": "Property",  
+        "value": "Measured"  
+    },  
+    "contaminantvalue": {  
+        "type": "Property",  
+        "value": 939  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Happen opportunity town religious parent social bad. Mean parent nature understand cell stuff."  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            728,  
+            9  
+        ]  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.s",  
+            "oic.if.s"  
+        ]  
+    },  
+    "type": "AirQuality",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:AirQuality:items:IZCL:58197135"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        16.41076,  
-        -119.319515  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Create policy name full. Trial care card along open investment. Individual great while knowledge.",  
-      "addressLocality": "Parent school through visit property various nature. Position picture a how director.",  
-      "addressRegion": "Certainly become deep. Buy image strategy. It quite edge already executive nation same. More window left real.",  
-      "addressCountry": "Report picture series tough final attorney. Hold mind take myself reduce. Majority chair check magazine.",  
-      "postalCode": "Enjoy professor low. Building customer loss chair management. Goal factor gun. Administration create very physical eye phone.",  
-      "postOfficeBoxNumber": "Hear window pay door image stage TV. Budget second response since fill interview."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Case really society describe. Live responsibility knowledge goal degree station."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.airquality"  
-    ]  
-  },  
-  "contaminanttype": {  
-    "type": "Property",  
-    "value": "NO2"  
-  },  
-  "valuetype": {  
-    "type": "Property",  
-    "value": "Measured"  
-  },  
-  "contaminantvalue": {  
-    "type": "Property",  
-    "value": 939  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Happen opportunity town religious parent social bad. Mean parent nature understand cell stuff."  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      728,  
-      9  
-    ]  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.s",  
-      "oic.if.s"  
-    ]  
-  },  
-  "type": "AirQuality",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
