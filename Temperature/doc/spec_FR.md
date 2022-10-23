@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entité : Température  
-====================  
+====================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.OCF/blob/master/Temperature/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Description globale : **Cette ressource décrit une valeur de température détectée ou actionnée.la propriété 'temperature' décrit la valeur actuelle mesurée.la propriété 'units' est une valeur unique parmi 'C', 'F' ou 'K'.elle fournit l'unité de mesure pour la valeur 'temperature'.c'est une valeur en lecture seule qui est fournie par le serveur.Si la propriété 'units' est absente, la valeur par défaut est Celsius [C].Lorsque la propriété 'range' est omise, la valeur par défaut est +/- MAXINT.Un client peut spécifier les unités pour la température demandée en utilisant un paramètre de requête.Si aucun paramètre de requête n'est fourni, le serveur fournit sa mesure ou sa valeur par défaut.Il est recommandé de toujours retourner la propriété 'units' dans le résultat.**  
 version : 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `if`: Le jeu d'interfaces OCF supporté par cette ressource.  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `n`: Nom amical de la ressource  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `precision`: Lorsqu'elle est exposée, la valeur de "précision" fournit une tolérance +/- par rapport aux propriétés de la ressource. Ainsi, si une propriété est mise à jour avec une valeur et que cette propriété est ensuite récupérée, la valeur récupérée est valide si elle se situe dans la plage de la valeur définie +/- la précision.  - `range`: La plage valide pour la propriété de la ressource sous forme de nombre. La première valeur du tableau est la valeur minimale, la deuxième valeur du tableau est la valeur maximale.  - `rt`: Le type de ressource.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `step`: Valeur de pas sur la plage définie, un nombre entier lorsque la plage est un nombre.  Il s'agit de l'incrément pour les valeurs valides dans l'intervalle ; ainsi, si l'intervalle est de 0,0 à 10,0 et que le pas est de 2,5, les valeurs valides sont 0,0, 2,5, 5,0, 7,5 et 10,0.  - `temperature`: Le réglage ou la mesure de la température actuelle.  - `type`: Type d'entité NGSI. Il doit s'agir d'une température  - `units`: L'unité de la valeur de température transportée, Notez que lors d'une mise à jour, l'unité sur le dispositif ne change PAS, elle indique seulement l'unité de la valeur transportée pendant l'opération de mise à jour.    
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour cet élément  - `areaServed[string]`: La zone géographique où un service ou un article offert est fourni  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified[string]`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description[string]`: Une description de cet article  - `id[*]`: Identifiant unique de l'entité  - `if[array]`: L'ensemble des interfaces OCF supportées par cette ressource.  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `n[string]`: Nom amical de la ressource  - `name[string]`: Le nom de cet élément.  - `owner[array]`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `precision[number]`: Lorsqu'elle est exposée, la valeur de "précision" fournit une tolérance +/- par rapport aux propriétés de la ressource. Ainsi, si une propriété est mise à jour avec une valeur et que cette propriété est ensuite récupérée, la valeur récupérée est valide si elle se situe dans la plage de la valeur définie +/- la précision.  - `range[array]`: La plage valide pour la propriété de la ressource sous forme de nombre. La première valeur du tableau est la valeur minimale, la deuxième valeur du tableau est la valeur maximale.  - `rt[array]`: Le type de ressource.  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `step[number]`: Valeur de pas sur la plage définie, un nombre entier lorsque la plage est un nombre.  Il s'agit de l'incrément pour les valeurs valides dans l'intervalle ; ainsi, si l'intervalle est de 0,0 à 10,0 et que le pas est de 2,5, les valeurs valides sont 0,0, 2,5, 5,0, 7,5 et 10,0.  - `temperature[number]`: Le réglage ou la mesure de la température actuelle.  - `type[string]`: Type d'entité NGSI. Il doit s'agir d'une température  - `units[string]`: L'unité de la valeur de température transportée, Notez que lors d'une mise à jour, l'unité sur le dispositif ne change PAS, elle indique seulement l'unité de la valeur transportée pendant l'opération de mise à jour.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propriétés requises  
-- `id`  - `temperature`  - `type`    
+- `id`  - `temperature`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Modèle de données adapté de l'original créé par l'Open Connectivity Foundation. Dépôt original dans https://github.com/openconnectivityfoundation/IoTDataModels  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Temperature:    
@@ -364,9 +377,14 @@ Temperature:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Exemples de charges utiles  
 #### Température Valeurs-clés NGSI-v2 Exemple  
 Voici un exemple de température au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Temperature:id:TDIW:54028449",  
@@ -430,8 +448,10 @@ Temperature:
   "type": "Temperature"  
 }  
 ```  
+</details>  
 #### Température NGSI-v2 normalisée Exemple  
 Voici un exemple de température au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -563,195 +583,209 @@ Temperature:
   }  
 }  
 ```  
+</details>  
 #### Température Valeurs clés NGSI-LD Exemple  
 Voici un exemple de température au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-LD lorsque vous utilisez `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Temperature:id:TDIW:54028449",  
-  "dateCreated": "2002-11-15T00:39:26Z",  
-  "dateModified": "1984-04-05T09:28:18Z",  
-  "source": "Report reveal along thank conference anything. Strong commercial oil great little eat film. Son source question all bed continue.",  
-  "name": "Hope clearly appear my project former goal ago. Put edge assume close believe focus.",  
-  "alternateName": "Employee machine rate among goal drive. Management fish author until second.",  
-  "description": "Mission full life thank feeling approach. Newspaper our color bring final. Enter fall wear age ago.",  
-  "dataProvider": "Improve reflect ago bad result.",  
-  "owner": [  
-    "urn:ngsi-ld:Temperature:items:RMOR:11444543",  
-    "urn:ngsi-ld:Temperature:items:GBKW:61820150"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Temperature:items:AXXM:54456212",  
-    "urn:ngsi-ld:Temperature:items:LIWH:14572760"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      39.6865755,  
-      168.763262  
+    "id": "urn:ngsi-ld:Temperature:id:TDIW:54028449",  
+    "dateCreated": "2002-11-15T00:39:26Z",  
+    "dateModified": "1984-04-05T09:28:18Z",  
+    "source": "Report reveal along thank conference anything. Strong commercial oil great little eat film. Son source question all bed continue.",  
+    "name": "Hope clearly appear my project former goal ago. Put edge assume close believe focus.",  
+    "alternateName": "Employee machine rate among goal drive. Management fish author until second.",  
+    "description": "Mission full life thank feeling approach. Newspaper our color bring final. Enter fall wear age ago.",  
+    "dataProvider": "Improve reflect ago bad result.",  
+    "owner": [  
+        "urn:ngsi-ld:Temperature:items:RMOR:11444543",  
+        "urn:ngsi-ld:Temperature:items:GBKW:61820150"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Temperature:items:AXXM:54456212",  
+        "urn:ngsi-ld:Temperature:items:LIWH:14572760"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            39.6865755,  
+            168.763262  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Case institution side suddenly land set trip. Other police own activity field they. With new individual. Notice he loss recognize start exactly difference picture.",  
+        "addressLocality": "President president new.",  
+        "addressRegion": "Little newspaper to some Congress. School organization account heavy now strong organization. Bit it great its very.",  
+        "addressCountry": "Control outside save similar. Citizen only PM able product main.",  
+        "postalCode": "Road Mr or success science. Civil fact compare floor loss.",  
+        "postOfficeBoxNumber": "Add in spring often American. When coach relationship sell production. Great relationship participant piece ground."  
+    },  
+    "areaServed": "Policy yet line half. Meet machine still never. Father both phone teacher throw particularly admit seek.",  
+    "rt": [  
+        "oic.r.temperature",  
+        "oic.r.temperature"  
+    ],  
+    "temperature": {  
+        "type": "Property",  
+        "value": 246.8  
+    },  
+    "units": "F",  
+    "n": "Action thought sing fall play require owner. Business itself artist how chair interest.",  
+    "range": [  
+        515.3,  
+        539.9  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 292.0  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 843.0  
+    },  
+    "if": [  
+        "oic.if.a",  
+        "oic.if.baseline"  
+    ],  
+    "type": "Temperature",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Case institution side suddenly land set trip. Other police own activity field they. With new individual. Notice he loss recognize start exactly difference picture.",  
-    "addressLocality": "President president new.",  
-    "addressRegion": "Little newspaper to some Congress. School organization account heavy now strong organization. Bit it great its very.",  
-    "addressCountry": "Control outside save similar. Citizen only PM able product main.",  
-    "postalCode": "Road Mr or success science. Civil fact compare floor loss.",  
-    "postOfficeBoxNumber": "Add in spring often American. When coach relationship sell production. Great relationship participant piece ground."  
-  },  
-  "areaServed": "Policy yet line half. Meet machine still never. Father both phone teacher throw particularly admit seek.",  
-  "rt": [  
-    "oic.r.temperature",  
-    "oic.r.temperature"  
-  ],  
-  "temperature": {  
-    "type": "Property",  
-    "value": 246.8  
-  },  
-  "units": "F",  
-  "n": "Action thought sing fall play require owner. Business itself artist how chair interest.",  
-  "range": [  
-    515.3,  
-    539.9  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 292.0  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 843.0  
-  },  
-  "if": [  
-    "oic.if.a",  
-    "oic.if.baseline"  
-  ],  
-  "type": "Temperature",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### Température normalisée NGSI-LD Exemple  
 Voici un exemple de température au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Temperature:id:YJWE:44231919",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1974-10-02T12:25:25Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1982-01-05T09:10:50Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Well culture past key little information. Wrong economic never child."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Hospital across offer surface when difference tend. Hour modern break need organization. Mission management available."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Seem stock list thousand officer remain opportunity. Between believe both never world mean."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Your good drug security either indeed happen than. City another spend history sister indeed. Lay remember sell resource necessary recognize."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Them yourself just. City available performance policy crime term show."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Temperature:items:EASB:74128989",  
-      "urn:ngsi-ld:Temperature:items:OBHQ:72441409"  
+    "id": "urn:ngsi-ld:Temperature:id:YJWE:44231919",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1974-10-02T12:25:25Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1982-01-05T09:10:50Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Well culture past key little information. Wrong economic never child."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Hospital across offer surface when difference tend. Hour modern break need organization. Mission management available."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Seem stock list thousand officer remain opportunity. Between believe both never world mean."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Your good drug security either indeed happen than. City another spend history sister indeed. Lay remember sell resource necessary recognize."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Them yourself just. City available performance policy crime term show."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Temperature:items:EASB:74128989",  
+            "urn:ngsi-ld:Temperature:items:OBHQ:72441409"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Temperature:items:LNIB:52742786"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                86.8298555,  
+                179.323609  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Expect indeed activity military. Take country research above word home grow.",  
+            "addressLocality": "Technology black remain find himself. Industry business response relationship there.",  
+            "addressRegion": "North although among. Computer specific do avoid beyond fly house recognize. Certainly teacher pay main summer.",  
+            "addressCountry": "Girl budget pick cup color. Dream a agency debate tough else explain. Age thousand important take interesting write.",  
+            "postalCode": "Leg and safe speak reveal almost know. Soon player hand culture morning own here. Eat start field bill close might media. Development crime wear.",  
+            "postOfficeBoxNumber": "Task interest nature choose purpose. Option charge bring other."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Difference herself huge able. Street author heavy born star when response. Smile picture staff human."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.temperature"  
+        ]  
+    },  
+    "temperature": {  
+        "type": "Property",  
+        "value": 691.4  
+    },  
+    "units": {  
+        "type": "Property",  
+        "value": "F"  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Current dog involve laugh PM. Option use indeed first then."  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            717.5,  
+            181.7  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 720.9  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 909.2  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.s",  
+            "oic.if.a"  
+        ]  
+    },  
+    "type": "Temperature",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Temperature:items:LNIB:52742786"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        86.8298555,  
-        179.323609  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Expect indeed activity military. Take country research above word home grow.",  
-      "addressLocality": "Technology black remain find himself. Industry business response relationship there.",  
-      "addressRegion": "North although among. Computer specific do avoid beyond fly house recognize. Certainly teacher pay main summer.",  
-      "addressCountry": "Girl budget pick cup color. Dream a agency debate tough else explain. Age thousand important take interesting write.",  
-      "postalCode": "Leg and safe speak reveal almost know. Soon player hand culture morning own here. Eat start field bill close might media. Development crime wear.",  
-      "postOfficeBoxNumber": "Task interest nature choose purpose. Option charge bring other."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Difference herself huge able. Street author heavy born star when response. Smile picture staff human."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.temperature"  
-    ]  
-  },  
-  "temperature": {  
-    "type": "Property",  
-    "value": 691.4  
-  },  
-  "units": {  
-    "type": "Property",  
-    "value": "F"  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Current dog involve laugh PM. Option use indeed first then."  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      717.5,  
-      181.7  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 720.9  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 909.2  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.s",  
-      "oic.if.a"  
-    ]  
-  },  
-  "type": "Temperature",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
