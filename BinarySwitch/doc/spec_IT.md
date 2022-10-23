@@ -1,17 +1,32 @@
-Entità: BinarySwitch  
-====================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entità: BinarySwitch  
+====================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.OCF/blob/master/BinarySwitch/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Adattamento del programma Smart Data Models dell'originale IoTData data Models. Questa risorsa descrive un interruttore binario (on/off). La proprietà 'value' è un booleano. Un valore di 'true' significa che l'interruttore è acceso. Un valore 'false' significa che l'interruttore è off. **  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **Programma di modelli di dati intelligenti adattamento dei modelli di dati IoTData originali. Questa risorsa descrive un interruttore binario (on/off). La proprietà 'value' è un booleano. Un valore di 'true' significa che l'interruttore è acceso. Un valore di 'false' significa che l'interruttore è spento. **  
+versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `id`: Identificatore unico dell'entità  - `if`: L'insieme di interfacce OCF supportato da questa risorsa.  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n`: Nome amichevole della risorsa  - `name`: Il nome di questo articolo.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `rt`: Il tipo di risorsa.  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `type`: Tipo di entità NGSI. Deve essere BinarySwitch  - `value`: Lo stato dell'interruttore.    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `if[array]`: Il set di interfacce OCF supportato da questa risorsa.  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `n[string]`: Nome amichevole della risorsa  - `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `rt[array]`: Il tipo di risorsa.  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `type[string]`: Tipo di entità NGSI. Deve essere BinarySwitch  - `value[boolean]`: Lo stato dello switch.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- `id`  - `type`    
-Questo modello di dati proviene dall'originale [Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels). È stato esteso per soddisfare i requisiti di NGSI.  
-## Descrizione del modello di dati delle proprietà  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+Questo modello di dati proviene dal repository originale della [Open Connectivity Foundation] (https://github.com/openconnectivityfoundation/IoTDataModels). È stato esteso per soddisfare i requisiti NGSI.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 BinarySwitch:    
@@ -328,9 +343,14 @@ BinarySwitch:
   x-version: 0.0.1    
 ```  
 </details>    
-## Esempio di payloads  
-#### Esempio di valori chiave di BinarySwitch NGSI-v2  
-Ecco un esempio di un BinarySwitch in formato JSON-LD come key-values. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
+#### Esempio di valori chiave BinarySwitch NGSI-v2  
+Ecco un esempio di BinarySwitch in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:BinarySwitch:id:FUWM:76347888",  
@@ -367,8 +387,10 @@ BinarySwitch:
   "areaServed": "To gun drug concern. Stand memory sense without."  
 }  
 ```  
+</details>  
 #### BinarySwitch NGSI-v2 normalizzato Esempio  
-Ecco un esempio di un BinarySwitch in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di BinarySwitch in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -446,127 +468,141 @@ BinarySwitch:
   }  
 }  
 ```  
-#### BinarySwitch NGSI-LD valori-chiave Esempio  
-Ecco un esempio di un BinarySwitch in formato JSON-LD come key-values. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### BinarySwitch NGSI-LD valori chiave Esempio  
+Ecco un esempio di BinarySwitch in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:BinarySwitch:id:FUWM:76347888",  
-  "dateCreated": "2012-08-12T19:01:35Z",  
-  "dateModified": "1997-08-16T11:48:31Z",  
-  "source": "Listen now remember compare. Without indeed become thing.",  
-  "name": "Recent personal sister toward cup attorney. Movement offer gas along. Sure will ahead hour poor pay price.",  
-  "alternateName": "View Mr song do thought ten. Resource now often recent walk apply.",  
-  "description": "Contain pass early member. Reach price quality miss charge. Share notice lay water travel.",  
-  "dataProvider": "Look else collection analysis lay fish. Foreign art perhaps his only. Group treatment available own market billion.",  
-  "owner": [  
-    "urn:ngsi-ld:BinarySwitch:items:WDLW:60793756",  
-    "urn:ngsi-ld:BinarySwitch:items:RKFU:64379233"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:BinarySwitch:items:NKTQ:43294724",  
-    "urn:ngsi-ld:BinarySwitch:items:LTOV:90056783"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      73.757996,  
-      40.59649  
+    "id": "urn:ngsi-ld:BinarySwitch:id:FUWM:76347888",  
+    "dateCreated": "2012-08-12T19:01:35Z",  
+    "dateModified": "1997-08-16T11:48:31Z",  
+    "source": "Listen now remember compare. Without indeed become thing.",  
+    "name": "Recent personal sister toward cup attorney. Movement offer gas along. Sure will ahead hour poor pay price.",  
+    "alternateName": "View Mr song do thought ten. Resource now often recent walk apply.",  
+    "description": "Contain pass early member. Reach price quality miss charge. Share notice lay water travel.",  
+    "dataProvider": "Look else collection analysis lay fish. Foreign art perhaps his only. Group treatment available own market billion.",  
+    "owner": [  
+        "urn:ngsi-ld:BinarySwitch:items:WDLW:60793756",  
+        "urn:ngsi-ld:BinarySwitch:items:RKFU:64379233"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:BinarySwitch:items:NKTQ:43294724",  
+        "urn:ngsi-ld:BinarySwitch:items:LTOV:90056783"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            73.757996,  
+            40.59649  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Better risk among art hear education. Study new call research.",  
+        "addressLocality": "Camera each begin choose too base show. Name of court model evidence professor know.",  
+        "addressRegion": "Wide wonder theory foot report mind. Reduce country same truth there his.",  
+        "addressCountry": "Positive sound scene authority might. Top style whatever support at whatever a they. Fall before week then.",  
+        "postalCode": "Method spring fish. Reveal southern family song ok subject sing.",  
+        "postOfficeBoxNumber": "My or tonight chance vote effort street power. Sell activity cell color. Apply yard record friend half million organization."  
+    },  
+    "areaServed": "To gun drug concern. Stand memory sense without.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Better risk among art hear education. Study new call research.",  
-    "addressLocality": "Camera each begin choose too base show. Name of court model evidence professor know.",  
-    "addressRegion": "Wide wonder theory foot report mind. Reduce country same truth there his.",  
-    "addressCountry": "Positive sound scene authority might. Top style whatever support at whatever a they. Fall before week then.",  
-    "postalCode": "Method spring fish. Reveal southern family song ok subject sing.",  
-    "postOfficeBoxNumber": "My or tonight chance vote effort street power. Sell activity cell color. Apply yard record friend half million organization."  
-  },  
-  "areaServed": "To gun drug concern. Stand memory sense without.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### BinarySwitch NGSI-LD normalizzato Esempio  
-Ecco un esempio di un BinarySwitch in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di BinarySwitch in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si usano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:BinarySwitch:id:MBYI:62994024",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2011-12-19T10:56:00Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2011-04-28T16:30:27Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Point story other far. Field central like might."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Group establish manager cell exist save challenge. Market Mrs agree college. Car officer like today moment account."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Animal less life. Time especially action represent least hot. The pay perhaps loss plant campaign order."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Themselves left because last how see travel."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Financial agency father ready. Audience all system behind. Toward beat anything. Sport probably wrong tonight behind."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:BinarySwitch:items:BSXN:34386254",  
-      "urn:ngsi-ld:BinarySwitch:items:WKOT:94703715"  
+    "id": "urn:ngsi-ld:BinarySwitch:id:MBYI:62994024",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2011-12-19T10:56:00Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2011-04-28T16:30:27Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Point story other far. Field central like might."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Group establish manager cell exist save challenge. Market Mrs agree college. Car officer like today moment account."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Animal less life. Time especially action represent least hot. The pay perhaps loss plant campaign order."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Themselves left because last how see travel."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Financial agency father ready. Audience all system behind. Toward beat anything. Sport probably wrong tonight behind."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:BinarySwitch:items:BSXN:34386254",  
+            "urn:ngsi-ld:BinarySwitch:items:WKOT:94703715"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:BinarySwitch:items:ZPKH:25901423"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                58.1844035,  
+                -93.247878  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Answer goal rather meet leave let. Seek forward clear. Want such color institution month.",  
+            "addressLocality": "Including certainly remain recognize field early.",  
+            "addressRegion": "Actually building measure learn garden specific level. Address continue trip home technology window strong. Heavy arrive science just maintain recent.",  
+            "addressCountry": "Call though drug look American skill president. Hair create add ground. Last civil interview among woman stop sign.",  
+            "postalCode": "Speech create word light citizen phone. Responsibility oil college maybe number. Speech skin defense shoulder program.",  
+            "postOfficeBoxNumber": "Network study friend exist about consider. Own thank game finally central data community born. Police field product impact season unit we."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Certain these special very probably. Account choose authority piece vote."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:BinarySwitch:items:ZPKH:25901423"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        58.1844035,  
-        -93.247878  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Answer goal rather meet leave let. Seek forward clear. Want such color institution month.",  
-      "addressLocality": "Including certainly remain recognize field early.",  
-      "addressRegion": "Actually building measure learn garden specific level. Address continue trip home technology window strong. Heavy arrive science just maintain recent.",  
-      "addressCountry": "Call though drug look American skill president. Hair create add ground. Last civil interview among woman stop sign.",  
-      "postalCode": "Speech create word light citizen phone. Responsibility oil college maybe number. Speech skin defense shoulder program.",  
-      "postOfficeBoxNumber": "Network study friend exist about consider. Own thank game finally central data community born. Police field product impact season unit we."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Certain these special very probably. Account choose authority piece vote."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
