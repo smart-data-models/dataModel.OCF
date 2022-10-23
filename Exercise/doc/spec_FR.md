@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entité : Exercice  
-=================  
+=================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.OCF/blob/master/Exercise/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Description globale : **Cette ressource décrit les propriétés associées à l'exercice de glucose.** La propriété de l'exercice a une unité par défaut de pourcentage.** La propriété de l'exercice est une valeur en lecture seule fournie par le serveur.  
 version : 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `exercise`: Le niveau d'exercice entrepris en pourcentage  - `id`: Identifiant unique de l'entité  - `if`: L'ensemble des interfaces OCF supportées par cette ressource  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `n`: Nom amical de la ressource  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `precision`: Lorsqu'elle est exposée, la valeur de "précision" fournit une tolérance +/- par rapport aux propriétés de la ressource. Ainsi, si une propriété est mise à jour avec une valeur et que cette propriété est ensuite récupérée, la valeur récupérée est valide si elle se situe dans la plage de la valeur définie +/- la précision.  - `range`: La plage valide pour la propriété de la ressource sous forme de nombre. La première valeur du tableau est la valeur minimale, la deuxième valeur du tableau est la valeur maximale.  - `rt`: Type de ressource  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `step`: Valeur de pas sur la plage définie, un nombre entier lorsque la plage est un nombre.  Il s'agit de l'incrément pour les valeurs valides dans l'intervalle ; ainsi, si l'intervalle est de 0,0 à 10,0 et que le pas est de 2,5, les valeurs valides sont 0,0, 2,5, 5,0, 7,5 et 10,0.  - `type`: Type d'entité NGSI. Il doit s'agir d'un exercice    
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour cet élément  - `areaServed[string]`: La zone géographique où un service ou un article offert est fourni  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified[string]`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description[string]`: Une description de cet article  - `exercise[number]`: Le niveau d'exercice entrepris en pourcentage  - `id[*]`: Identifiant unique de l'entité  - `if[array]`: L'ensemble des interfaces OCF supportées par cette ressource  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `n[string]`: Nom amical de la ressource  - `name[string]`: Le nom de cet élément.  - `owner[array]`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `precision[number]`: Lorsqu'elle est exposée, la valeur de "précision" fournit une tolérance +/- par rapport aux propriétés de la ressource. Ainsi, si une propriété est mise à jour avec une valeur et que cette propriété est ensuite récupérée, la valeur récupérée est valide si elle se situe dans la plage de la valeur définie +/- la précision.  - `range[array]`: La plage valide pour la propriété de la ressource sous forme de nombre. La première valeur du tableau est la valeur minimale, la deuxième valeur du tableau est la valeur maximale.  - `rt[array]`: Type de ressource  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `step[number]`: Valeur de pas sur la plage définie, un nombre entier lorsque la plage est un nombre.  Il s'agit de l'incrément pour les valeurs valides dans l'intervalle ; ainsi, si l'intervalle est de 0,0 à 10,0 et que le pas est de 2,5, les valeurs valides sont 0,0, 2,5, 5,0, 7,5 et 10,0.  - `type[string]`: Type d'entité NGSI. Il doit s'agir d'un exercice  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propriétés requises  
-- `exercise`  - `id`  - `type`    
+- `exercise`  - `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Modèle de données adapté de l'original créé par l'Open Connectivity Foundation. Dépôt original dans https://github.com/openconnectivityfoundation/IoTDataModels  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Exercise:    
@@ -357,9 +370,14 @@ Exercise:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Exemples de charges utiles  
 #### Exercice Valeurs-clés NGSI-v2 Exemple  
 Voici un exemple d'exercice au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-v2 quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Exercise:id:JGBJ:53980716",  
@@ -422,8 +440,10 @@ Exercise:
   "type": "Exercise"  
 }  
 ```  
+</details>  
 #### Exercice NGSI-v2 normalisé Exemple  
 Voici un exemple d'exercice au format JSON-LD tel que normalisé. Ce format est compatible avec la NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -551,189 +571,203 @@ Exercise:
   }  
 }  
 ```  
+</details>  
 #### Exercice Valeurs-clés NGSI-LD Exemple  
 Voici un exemple d'exercice au format JSON-LD en tant que key-values. Ceci est compatible avec NGSI-LD quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Exercise:id:JGBJ:53980716",  
-  "dateCreated": "1993-01-31T15:09:33Z",  
-  "dateModified": "1982-03-15T00:18:01Z",  
-  "source": "Ago fund along American mean. Fish federal body thought sing.",  
-  "name": "Experience season meet deal care. Available five study interview specific particular. Traditional minute probably manage half amount Mrs. Whose memory ground in field.",  
-  "alternateName": "Treatment course account drug peace nature physical. Outside recognize others argue attention. Specific couple total success lead seek expert. Their blue store project.",  
-  "description": "Level article decide goal.",  
-  "dataProvider": "Identify cultural board news. Mission it trouble after both I pull share.",  
-  "owner": [  
-    "urn:ngsi-ld:Exercise:items:WGHS:28673615",  
-    "urn:ngsi-ld:Exercise:items:MXJB:48370746"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Exercise:items:OOUL:62187452",  
-    "urn:ngsi-ld:Exercise:items:JJUR:56610269"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      80.5504325,  
-      64.021025  
+    "id": "urn:ngsi-ld:Exercise:id:JGBJ:53980716",  
+    "dateCreated": "1993-01-31T15:09:33Z",  
+    "dateModified": "1982-03-15T00:18:01Z",  
+    "source": "Ago fund along American mean. Fish federal body thought sing.",  
+    "name": "Experience season meet deal care. Available five study interview specific particular. Traditional minute probably manage half amount Mrs. Whose memory ground in field.",  
+    "alternateName": "Treatment course account drug peace nature physical. Outside recognize others argue attention. Specific couple total success lead seek expert. Their blue store project.",  
+    "description": "Level article decide goal.",  
+    "dataProvider": "Identify cultural board news. Mission it trouble after both I pull share.",  
+    "owner": [  
+        "urn:ngsi-ld:Exercise:items:WGHS:28673615",  
+        "urn:ngsi-ld:Exercise:items:MXJB:48370746"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Exercise:items:OOUL:62187452",  
+        "urn:ngsi-ld:Exercise:items:JJUR:56610269"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            80.5504325,  
+            64.021025  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Its whole prepare stand. Beyond apply magazine finish window whole. Help or out region major foreign relate. Husband fine stock politics stand.",  
+        "addressLocality": "Nation magazine guy themselves character. Order factor song doctor easy.",  
+        "addressRegion": "Sit toward left young.",  
+        "addressCountry": "Reason none meet power. Against cell event. About each become be. Choose as get sea.",  
+        "postalCode": "Control commercial shoulder. Source well activity three pressure too bad teach. Source second any just TV attack eight.",  
+        "postOfficeBoxNumber": "Yard purpose speech team south brother. Response ready tax focus."  
+    },  
+    "areaServed": "Thought compare personal light rich foot. Bar state positive spend appear language party do. Baby then property together back story.",  
+    "rt": [  
+        "oic.r.glucose.exercise",  
+        "oic.r.glucose.exercise"  
+    ],  
+    "exercise": {  
+        "type": "Property",  
+        "value": 86.5  
+    },  
+    "range": [  
+        655.2,  
+        560.6  
+    ],  
+    "step": {  
+        "type": "Property",  
+        "value": 448.3  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 111.5  
+    },  
+    "n": "Sound form along. Arm class air little. Line later teacher truth anyone perhaps. Support trip style he really free fund.",  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.baseline"  
+    ],  
+    "type": "Exercise",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Its whole prepare stand. Beyond apply magazine finish window whole. Help or out region major foreign relate. Husband fine stock politics stand.",  
-    "addressLocality": "Nation magazine guy themselves character. Order factor song doctor easy.",  
-    "addressRegion": "Sit toward left young.",  
-    "addressCountry": "Reason none meet power. Against cell event. About each become be. Choose as get sea.",  
-    "postalCode": "Control commercial shoulder. Source well activity three pressure too bad teach. Source second any just TV attack eight.",  
-    "postOfficeBoxNumber": "Yard purpose speech team south brother. Response ready tax focus."  
-  },  
-  "areaServed": "Thought compare personal light rich foot. Bar state positive spend appear language party do. Baby then property together back story.",  
-  "rt": [  
-    "oic.r.glucose.exercise",  
-    "oic.r.glucose.exercise"  
-  ],  
-  "exercise": {  
-    "type": "Property",  
-    "value": 86.5  
-  },  
-  "range": [  
-    655.2,  
-    560.6  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 448.3  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 111.5  
-  },  
-  "n": "Sound form along. Arm class air little. Line later teacher truth anyone perhaps. Support trip style he really free fund.",  
-  "if": [  
-    "oic.if.baseline",  
-    "oic.if.baseline"  
-  ],  
-  "type": "Exercise",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### Exercice NGSI-LD normalisé Exemple  
 Voici un exemple d'exercice au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Exercise:id:BICD:19768156",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2010-02-12T20:49:40Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1987-05-28T10:25:55Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Total heart table before because. Capital detail show do. Front history mention address."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Must believe professional arrive. Rich suggest bad. Participant chance one."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Choose gun local charge almost low. Science fire life."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Quite already others oil sit type. Government eye bit cultural sort. Store fine have when value drop population. Side establish debate feeling herself."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Reason realize develop simply democratic about our. Relationship man resource figure. Letter fear maybe buy age member."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Exercise:items:EVOS:60128818",  
-      "urn:ngsi-ld:Exercise:items:DQRS:06073019"  
+    "id": "urn:ngsi-ld:Exercise:id:BICD:19768156",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2010-02-12T20:49:40Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1987-05-28T10:25:55Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Total heart table before because. Capital detail show do. Front history mention address."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Must believe professional arrive. Rich suggest bad. Participant chance one."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Choose gun local charge almost low. Science fire life."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Quite already others oil sit type. Government eye bit cultural sort. Store fine have when value drop population. Side establish debate feeling herself."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Reason realize develop simply democratic about our. Relationship man resource figure. Letter fear maybe buy age member."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Exercise:items:EVOS:60128818",  
+            "urn:ngsi-ld:Exercise:items:DQRS:06073019"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Exercise:items:DSHC:77333553"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -24.634838,  
+                50.1582  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Service day media energy. Item instead minute this woman.",  
+            "addressLocality": "As popular people make pay. Democratic authority pressure allow other.",  
+            "addressRegion": "Artist seek significant.",  
+            "addressCountry": "Exactly serve sea president new.",  
+            "postalCode": "Someone move ahead painting. Talk tough senior manager young point. Campaign yes central break off.",  
+            "postOfficeBoxNumber": "Real training loss so bad majority."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Manage left letter. House group without girl laugh out above."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.glucose.exercise"  
+        ]  
+    },  
+    "exercise": {  
+        "type": "Property",  
+        "value": 75.1  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            936.3,  
+            509.9  
+        ]  
+    },  
+    "step": {  
+        "type": "Property",  
+        "value": 992.3  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 939.2  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Require foot practice chance much receive. Pull TV industry happy tree pretty American. Himself game ask short wide beat."  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.s"  
+        ]  
+    },  
+    "type": "Exercise",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Exercise:items:DSHC:77333553"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -24.634838,  
-        50.1582  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Service day media energy. Item instead minute this woman.",  
-      "addressLocality": "As popular people make pay. Democratic authority pressure allow other.",  
-      "addressRegion": "Artist seek significant.",  
-      "addressCountry": "Exactly serve sea president new.",  
-      "postalCode": "Someone move ahead painting. Talk tough senior manager young point. Campaign yes central break off.",  
-      "postOfficeBoxNumber": "Real training loss so bad majority."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Manage left letter. House group without girl laugh out above."  
-  },  
-  "rt": {  
-    "type": "Property",  
-    "value": [  
-      "oic.r.glucose.exercise"  
-    ]  
-  },  
-  "exercise": {  
-    "type": "Property",  
-    "value": 75.1  
-  },  
-  "range": {  
-    "type": "Property",  
-    "value": [  
-      936.3,  
-      509.9  
-    ]  
-  },  
-  "step": {  
-    "type": "Property",  
-    "value": 992.3  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 939.2  
-  },  
-  "n": {  
-    "type": "Property",  
-    "value": "Require foot practice chance much receive. Pull TV industry happy tree pretty American. Himself game ask short wide beat."  
-  },  
-  "if": {  
-    "type": "Property",  
-    "value": [  
-      "oic.if.s"  
-    ]  
-  },  
-  "type": "Exercise",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
