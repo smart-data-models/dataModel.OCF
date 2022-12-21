@@ -1,0 +1,3 @@
+/* (Beta) Export of data model settings-sound of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE settings-sound_type AS ENUM ('settings-sound');
+CREATE TABLE settings-sound (address json, alternateName text, areaServed text, auto-volume text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, dolby-atmos-compatibility text, id text, if json, location json, name text, owner json, rt json, seeAlso json, sound-mode text, source text, speaker text, supported-sound-modes json, supported-speakers json, type settings-sound_type);
