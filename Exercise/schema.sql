@@ -1,0 +1,3 @@
+/* (Beta) Export of data model Exercise of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE Exercise_type AS ENUM ('Exercise');
+CREATE TABLE Exercise (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, exercise text, id text, if json, location json, n text, name text, owner json, precision text, range json, rt json, seeAlso json, source text, step text, type Exercise_type);
