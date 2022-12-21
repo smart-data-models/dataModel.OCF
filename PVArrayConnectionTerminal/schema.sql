@@ -1,0 +1,3 @@
+/* (Beta) Export of data model PVArrayConnectionTerminal of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE PVArrayConnectionTerminal_type AS ENUM ('PVArrayConnectionTerminal');
+CREATE TABLE PVArrayConnectionTerminal (address json, alternateName text, areaServed text, arraycurrent text, arrayvoltage text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, if json, insulationresistance text, leakagecurrent text, location json, n text, name text, owner json, ratedarraycurrent text, ratedarrayvoltage text, rt json, seeAlso json, source text, timestamp timestamp, type PVArrayConnectionTerminal_type);
