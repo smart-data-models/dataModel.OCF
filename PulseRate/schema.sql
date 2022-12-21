@@ -1,0 +1,3 @@
+/* (Beta) Export of data model PulseRate of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE PulseRate_type AS ENUM ('PulseRate');
+CREATE TABLE PulseRate (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, if json, location json, n text, name text, owner json, pulserate integer, range json, rt json, seeAlso json, source text, step integer, type PulseRate_type);
