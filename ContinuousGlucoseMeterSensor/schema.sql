@@ -1,0 +1,3 @@
+/* (Beta) Export of data model ContinuousGlucoseMeterSensor of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE ContinuousGlucoseMeterSensor_type AS ENUM ('ContinuousGlucoseMeterSensor');
+CREATE TABLE ContinuousGlucoseMeterSensor (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, if json, location json, n text, name text, owner json, precision text, range json, rt json, runtime text, seeAlso json, source text, starttime text, step text, type ContinuousGlucoseMeterSensor_type);
