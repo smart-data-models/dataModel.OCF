@@ -1,0 +1,3 @@
+/* (Beta) Export of data model GlucoseCarb of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE meal_type AS ENUM ('breakfast', 'lunch', 'dinner', 'snack', 'drink', 'supper', 'brunch', 'undetermined', 'other', 'no_entry', 'no_ingestion');CREATE TYPE GlucoseCarb_type AS ENUM ('GlucoseCarb');
+CREATE TABLE GlucoseCarb (address json, alternateName text, areaServed text, carb text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, if json, location json, meal meal_type, n text, name text, owner json, precision text, range json, rt json, seeAlso json, source text, step text, type GlucoseCarb_type);
