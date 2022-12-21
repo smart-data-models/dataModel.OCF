@@ -1,0 +1,3 @@
+/* (Beta) Export of data model ColourCSC of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE ColourCSC_type AS ENUM ('ColourCSC');
+CREATE TABLE ColourCSC (address json, alternateName text, areaServed text, csc json, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, if json, location json, n text, name text, owner json, precision text, rt json, seeAlso json, source text, type ColourCSC_type);
