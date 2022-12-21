@@ -1,0 +1,3 @@
+/* (Beta) Export of data model ContinuousGlucoseMeterCalibrate of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE ContinuousGlucoseMeterCalibrate_type AS ENUM ('ContinuousGlucoseMeterCalibrate');
+CREATE TABLE ContinuousGlucoseMeterCalibrate (Cstatus text, Cvalue text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, if json, location json, n text, name text, owner json, precision text, range json, rt json, seeAlso json, source text, step text, type ContinuousGlucoseMeterCalibrate_type);
