@@ -1,0 +1,3 @@
+/* (Beta) Export of data model HeartRate of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE HeartRate_type AS ENUM ('HeartRate');
+CREATE TABLE HeartRate (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, heartrate integer, id text, if json, location json, n text, name text, owner json, range json, rt json, seeAlso json, source text, step integer, type HeartRate_type);
