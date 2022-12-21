@@ -1,0 +1,3 @@
+/* (Beta) Export of data model settings-accessibility of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE settings-accessibility_type AS ENUM ('settings-accessibility');
+CREATE TABLE settings-accessibility (address json, alternateName text, areaServed text, caption text, caption-mode text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, enlarge text, high-contrast text, id text, if json, location json, name text, owner json, rt json, seeAlso json, source text, supported-caption-modes json, type settings-accessibility_type, video-description text, voice-guide text);
