@@ -1,0 +1,3 @@
+/* (Beta) Export of data model Brewing of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE Brewing_type AS ENUM ('Brewing');
+CREATE TABLE Brewing (address json, alternateName text, amountrequested integer, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, if json, location json, n text, name text, owner json, rt json, seeAlso json, source text, strength integer, strengthrange json, type Brewing_type);
