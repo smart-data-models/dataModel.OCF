@@ -1,0 +1,3 @@
+/* (Beta) Export of data model Sensor of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE Sensor_type AS ENUM ('Sensor');
+CREATE TABLE Sensor (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, if json, location json, measurement text, n text, name text, owner json, precision text, range json, rt json, seeAlso json, source text, step text, type Sensor_type, value text);
