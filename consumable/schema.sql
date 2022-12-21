@@ -1,0 +1,3 @@
+/* (Beta) Export of data model consumable of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE consumable_type AS ENUM ('consumable');
+CREATE TABLE consumable (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, if json, location json, n text, name text, orderpercentage integer, owner json, remaining integer, rt json, seeAlso json, source text, type consumable_type, typeofconsumable text, url text);
