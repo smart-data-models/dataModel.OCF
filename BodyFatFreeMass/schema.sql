@@ -1,0 +1,3 @@
+/* (Beta) Export of data model BodyFatFreeMass of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE BodyFatFreeMass_type AS ENUM ('BodyFatFreeMass');CREATE TYPE units_type AS ENUM ('kg', 'lb', 'percent');
+CREATE TABLE BodyFatFreeMass (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, ffm text, id text, if json, location json, n text, name text, owner json, precision text, range json, rt json, seeAlso json, source text, step text, type BodyFatFreeMass_type, units units_type);
