@@ -1,0 +1,3 @@
+/* (Beta) Export of data model Sleep of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE Sleep_type AS ENUM ('Sleep');
+CREATE TABLE Sleep (address json, alternateName text, areaServed text, awake integer, dataProvider text, dateCreated timestamp, dateModified timestamp, deepsleep integer, description text, id text, if json, lightsleep integer, location json, n text, name text, nrem1 integer, nrem2 integer, nrem3 integer, nrem4 integer, owner json, precision text, range_phases json, range_score json, rem integer, rt json, seeAlso json, sleepscore text, source text, step_phases integer, step_score text, type Sleep_type);
