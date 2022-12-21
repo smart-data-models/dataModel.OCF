@@ -1,0 +1,3 @@
+/* (Beta) Export of data model Height of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE Height_type AS ENUM ('Height');CREATE TYPE units_type AS ENUM ('m', 'cm', 'ft', 'in');
+CREATE TABLE Height (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, height text, id text, if json, location json, n text, name text, owner json, precision text, range json, rt json, seeAlso json, source text, step text, type Height_type, units units_type);
