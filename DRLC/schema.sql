@@ -1,0 +1,3 @@
+/* (Beta) Export of data model DRLC of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE DRLC_type AS ENUM ('DRLC');
+CREATE TABLE DRLC (DRType integer, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, drlevel integer, duration integer, id text, if json, location json, mandate text, n text, name text, override text, owner json, rt json, seeAlso json, source text, start timestamp, type DRLC_type);
