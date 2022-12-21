@@ -1,0 +1,3 @@
+/* (Beta) Export of data model CO2 of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE CO2_type AS ENUM ('CO2');
+CREATE TABLE CO2 (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, if json, location json, measurement text, n text, name text, owner json, precision text, range json, rt json, seeAlso json, source text, step text, type CO2_type, value text);
