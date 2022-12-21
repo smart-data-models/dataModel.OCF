@@ -1,0 +1,3 @@
+/* (Beta) Export of data model Geolocation of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE Geolocation_type AS ENUM ('Geolocation');
+CREATE TABLE Geolocation (accuracy text, address json, alt text, alternateName text, altitudeAccuracy text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, heading text, id text, if json, latitude text, location json, longitude text, n text, name text, owner json, rt json, seeAlso json, source text, speed text, type Geolocation_type);
