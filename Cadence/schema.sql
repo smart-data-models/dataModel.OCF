@@ -1,0 +1,3 @@
+/* (Beta) Export of data model Cadence of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE Cadence_type AS ENUM ('Cadence');
+CREATE TABLE Cadence (address json, alternateName text, areaServed text, cadence integer, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, if json, location json, n text, name text, owner json, range json, rt json, seeAlso json, source text, step integer, type Cadence_type);
