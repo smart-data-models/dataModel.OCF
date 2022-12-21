@@ -1,0 +1,3 @@
+/* (Beta) Export of data model Temperature of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE Temperature_type AS ENUM ('Temperature');CREATE TYPE units_type AS ENUM ('C', 'F', 'K');
+CREATE TABLE Temperature (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, if json, location json, n text, name text, owner json, precision text, range json, rt json, seeAlso json, source text, step text, temperature text, type Temperature_type, units units_type);
