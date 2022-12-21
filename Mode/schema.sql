@@ -1,0 +1,3 @@
+/* (Beta) Export of data model Mode of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE Mode_type AS ENUM ('Mode');
+CREATE TABLE Mode (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, if json, location json, modes json, n text, name text, owner json, rt json, seeAlso json, source text, supportedModes json, type Mode_type);
