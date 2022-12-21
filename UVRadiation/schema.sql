@@ -1,0 +1,3 @@
+/* (Beta) Export of data model UVRadiation of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE UVRadiation_type AS ENUM ('UVRadiation');
+CREATE TABLE UVRadiation (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, if json, location json, measurement text, n text, name text, owner json, rt json, seeAlso json, source text, type UVRadiation_type);
