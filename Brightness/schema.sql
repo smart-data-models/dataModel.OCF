@@ -1,0 +1,3 @@
+/* (Beta) Export of data model Brightness of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE Brightness_type AS ENUM ('Brightness');
+CREATE TABLE Brightness (address json, alternateName text, areaServed text, brightness integer, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, if json, location json, n text, name text, owner json, rt json, seeAlso json, source text, type Brightness_type);
