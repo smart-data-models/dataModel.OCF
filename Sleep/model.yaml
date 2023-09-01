@@ -1,121 +1,139 @@
 Sleep:
-  description: 'Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the Properties associated with Sleep. Sleep shows the time spent in each of the sleep stages (awake, nrem1, nrem2, nrem3, nrem4, rem, light sleep, deep sleep), along with a sleep score indicating the quality of sleep.'
+
+  description: Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the Properties associated with Sleep. Sleep shows the time spent in each of the sleep stages (awake, nrem1, nrem2, nrem3, nrem4, rem, light sleep, deep sleep), along with a sleep score indicating the quality of sleep.
+
   properties:
+
     address:
+
       description: The mailing address
+
       properties:
+
         addressCountry:
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''
+          description: The country. For example, Spain
           type: string
+          x-ngsi:
+            model: https://schema.org/addressCountry
+            type: Property
+
         addressLocality:
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''
+          description: The locality in which the street address is, and which is in the region
           type: string
+          x-ngsi:
+            model: https://schema.org/addressLocality
+            type: Property
+
         addressRegion:
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''
+          description: The region in which the locality is, and which is in the country
           type: string
+          x-ngsi:
+            model: https://schema.org/addressRegion
+            type: Property
+
         district:
-          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'
+          description: A district is a type of administrative division that, in some countries, is managed by the local government
           type: string
+          x-ngsi:
+            type: Property
+
         postOfficeBoxNumber:
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''
+          description: The post office box number for PO box addresses. For example, 03578
           type: string
+          x-ngsi:
+            model: https://schema.org/postOfficeBoxNumber
+            type: Property
+
         postalCode:
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''
+          description: The postal code. For example, 24004
           type: string
+          x-ngsi:
+            model: https://schema.org/https://schema.org/postalCode
+            type: Property
+
         streetAddress:
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''
+          description: The street address
           type: string
+          x-ngsi:
+            model: https://schema.org/streetAddress
+            type: Property
+
         streetNr:
-          description: Number identifying a specific property on a public street.
+          description: Number identifying a specific property on a public street
           type: string
+          x-ngsi:
+            type: Property
+
       type: object
+
       x-ngsi:
         model: https://schema.org/address
         type: Property
+
     alternateName:
       description: An alternative name for this item
       type: string
       x-ngsi:
         type: Property
+
     areaServed:
       description: The geographic area where a service or offered item is provided
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-    awake:
-      description: Time spent in Awake stage (in seconds)
-      minimum: 0
-      readOnly: true
-      type: number
-      x-ngsi:
-        type: Property
+
     dataProvider:
-      description: A sequence of characters identifying the provider of the harmonised data entity.
+      description: A sequence of characters identifying the provider of the harmonised data entity
       type: string
       x-ngsi:
         type: Property
+
     dateCreated:
-      description: Entity creation timestamp. This will usually be allocated by the storage platform.
+      description: Entity creation timestamp. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
+
     dateModified:
-      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
-    deepsleep:
-      description: 'Time spent in Deep Sleep stage, consisting in NREM stages 3 and 4 (in seconds)'
-      minimum: 0
-      readOnly: true
-      type: number
-      x-ngsi:
-        type: Property
+
     description:
       description: A description of this item
       type: string
       x-ngsi:
         type: Property
+
     id:
-      anyOf: &sleep_-_properties_-_owner_-_items_-_anyof
-        - description: Property. Identifier format of any NGSI entity
+      anyOf:
+        - description: Identifier format of any NGSI entity
           maxLength: 256
           minLength: 1
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
           type: string
-        - description: Property. Identifier format of any NGSI entity
+          x-ngsi:
+            type: Property
+        - description: Identifier format of any NGSI entity
           format: uri
           type: string
+          x-ngsi:
+            type: Property
       description: Unique identifier of the entity
       x-ngsi:
         type: Property
-    if:
-      description: The Interface set supported by this Resource
-      items:
-        enum:
-          - oic.if.s
-          - oic.if.baseline
-        type: string
-      minItems: 1
-      readOnly: true
-      type: array
-      uniqueItems: true
-      x-ngsi:
-        type: Property
-    lightsleep:
-      description: 'Time spent in Light Sleep stage, consisting in NREM stages 1 and 2 (in seconds)'
-      minimum: 0
-      readOnly: true
-      type: number
-      x-ngsi:
-        type: Property
+
     location:
-      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
+
+      description: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon
+
       oneOf:
-        - description: GeoProperty. Geojson reference to the item. Point
+
+        - description: Geojson reference to the item. Point
           properties:
             bbox:
               items:
@@ -136,7 +154,10 @@ Sleep:
             - coordinates
           title: GeoJSON Point
           type: object
-        - description: GeoProperty. Geojson reference to the item. LineString
+          x-ngsi:
+            type: GeoProperty
+
+        - description: Geojson reference to the item. LineString
           properties:
             bbox:
               items:
@@ -160,7 +181,10 @@ Sleep:
             - coordinates
           title: GeoJSON LineString
           type: object
-        - description: GeoProperty. Geojson reference to the item. Polygon
+          x-ngsi:
+            type: GeoProperty
+
+        - description: Geojson reference to the item. Polygon
           properties:
             bbox:
               items:
@@ -186,7 +210,10 @@ Sleep:
             - coordinates
           title: GeoJSON Polygon
           type: object
-        - description: GeoProperty. Geojson reference to the item. MultiPoint
+          x-ngsi:
+            type: GeoProperty
+
+        - description: Geojson reference to the item. MultiPoint
           properties:
             bbox:
               items:
@@ -209,7 +236,10 @@ Sleep:
             - coordinates
           title: GeoJSON MultiPoint
           type: object
-        - description: GeoProperty. Geojson reference to the item. MultiLineString
+          x-ngsi:
+            type: GeoProperty
+
+        - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
               items:
@@ -235,7 +265,10 @@ Sleep:
             - coordinates
           title: GeoJSON MultiLineString
           type: object
-        - description: GeoProperty. Geojson reference to the item. MultiLineString
+          x-ngsi:
+            type: GeoProperty
+
+        - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
               items:
@@ -263,101 +296,41 @@ Sleep:
             - coordinates
           title: GeoJSON MultiPolygon
           type: object
+          x-ngsi:
+            type: GeoProperty
+
       x-ngsi:
         type: GeoProperty
-    n:
-      description: Friendly name of the Resource
-      maxLength: 64
-      readOnly: true
-      type: string
-      x-ngsi:
-        type: Property
+
     name:
-      description: The name of this item.
+      description: The name of this item
       type: string
       x-ngsi:
         type: Property
-    nrem1:
-      description: Time spent in Non Rapid Eye Movement stage 1 (in seconds)
-      minimum: 0
-      readOnly: true
-      type: number
-      x-ngsi:
-        type: Property
-    nrem2:
-      description: Time spent in Non Rapid Eye Movement stage 2 (in seconds)
-      minimum: 0
-      readOnly: true
-      type: number
-      x-ngsi:
-        type: Property
-    nrem3:
-      description: Time spent in Non Rapid Eye Movement stage 3 (in seconds)
-      minimum: 0
-      readOnly: true
-      type: number
-      x-ngsi:
-        type: Property
-    nrem4:
-      description: Time spent in Non Rapid Eye Movement stage 4 (in seconds)
-      minimum: 0
-      readOnly: true
-      type: number
-      x-ngsi:
-        type: Property
+
     owner:
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
       items:
-        anyOf: *sleep_-_properties_-_owner_-_items_-_anyof
-        description: Property. Unique identifier of the entity
+        anyOf:
+          - description: Identifier format of any NGSI entity
+            maxLength: 256
+            minLength: 1
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
+            type: string
+            x-ngsi:
+              type: Property
+          - description: Identifier format of any NGSI entity
+            format: uri
+            type: string
+            x-ngsi:
+              type: Property
+        description: Unique identifier of the entity
+        x-ngsi:
+          type: Property
       type: array
       x-ngsi:
         type: Property
-    precision:
-      description: 'When exposed the value in ''precision'' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision'
-      readOnly: true
-      type: number
-      x-ngsi:
-        type: Property
-    range_phases:
-      description: 'The valid range for the Property in the Resource as an integer. The first value in the array is the minimum value, the second value in the array is the maximum value.'
-      items:
-        type: integer
-      maxItems: 2
-      minItems: 2
-      readOnly: true
-      type: array
-      x-ngsi:
-        type: Property
-    range_score:
-      description: 'The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.'
-      items:
-        type: number
-      maxItems: 2
-      minItems: 2
-      readOnly: true
-      type: array
-      x-ngsi:
-        type: Property
-    rem:
-      description: Time spent in Rapid Eye Movement (in seconds)
-      minimum: 0
-      readOnly: true
-      type: number
-      x-ngsi:
-        type: Property
-    rt:
-      description: Resource Type
-      items:
-        enum:
-          - oic.r.sleep
-        type: string
-      minItems: 1
-      readOnly: true
-      type: array
-      uniqueItems: true
-      x-ngsi:
-        type: Property
+
     seeAlso:
       description: list of uri pointing to additional resources about the item
       oneOf:
@@ -370,44 +343,27 @@ Sleep:
           type: string
       x-ngsi:
         type: Property
-    sleepscore:
-      description: 'Score computed from the time spent in each sleep stage, indicative of the quality of sleep'
-      minimum: 0
-      readOnly: true
-      type: number
-      x-ngsi:
-        type: Property
+
     source:
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'
+      description: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object
       type: string
       x-ngsi:
         type: Property
-    step_phases:
-      description: 'Step value across the defined range when the range is an integer.  This is the increment for valid values across the range; so if range is 0..10 and step is 2 then valid values are 0,2,4,6,8,10.'
-      readOnly: true
-      type: number
-      x-ngsi:
-        type: Property
-    step_score:
-      description: 'Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.'
-      readOnly: true
-      type: number
-      x-ngsi:
-        type: Property
-    type:
-      description: NGSI entity type. It has to be Sleep
-      enum:
-        - Sleep
-      type: string
-      x-ngsi:
-        type: Property
+
   required:
     - id
     - type
+
   type: object
+
   x-derived-from: https://github.com/OpenInterConnect/IoTDataModels/blob/master/SleepResURI.swagger.json
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
+
+  x-disclaimer: Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program
+
   x-license-url: https://github.com/smart-data-models/dataModel.OCF/blob/master/Sleep/LICENSE.md
+
   x-model-schema: https://smart-data-models.github.io/dataModel.IoTDataModels/Sleep/schema.json
+
   x-model-tags: OCF
+
   x-version: 0.0.1
