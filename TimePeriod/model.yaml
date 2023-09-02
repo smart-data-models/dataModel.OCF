@@ -1,114 +1,92 @@
 TimePeriod:
-
-  description: This Resource describes the time period over which any additionally provided information is derived or bounded.The Property 'startTime' and 'stopTime' are RFC3339 encoded strings. The Property 'startTime' must be present.The interval is the interval of the time period in minutes, if present this value must be no less than 0 minute.The intervalsecond is the interval of the time period in seconds, if present this value must be numerical zero or greater.The repeat is the number of the time period's iteration, which means how many times to repeat the time period. The Property 'repeat' accepts only negative one, numerical zero, and positive number. When this value is numerical zero, the time period will be repeated infinitely until a client makes it stop by inputting negative one for the value.The Property 'stoptime' and 'interval' are mutually exclusive; both Properties cannot be present in a Resource instance.The Property 'intervalsecond' cannot be presented with the Property 'stopTime'. In case of both the Property 'interval' and 'intervalsecond' are presented together, the total time interval is the sum of 'interval' and 'intervalsecond'.The Property 'triggertiming' describes a specific time to execute an action. This property must have one of the values among 'startTime', 'stopTime', and 'totalInterval'. The totalInterval means the sum of the Property 'interval' and 'intervalsecond'. If one of the properties does not exist, the value of the unexpressed property is taken as a numerical zero.The Property 'state' describes a state of time interval. This property must have one of the values among 'preInterval', 'inInterval', and 'postInterval'.The Resource defines a time period for information retrieval, action or other behaviour.
-
+  description: 'This Resource describes the time period over which any additionally provided information is derived or bounded.The Property ''startTime'' and ''stopTime'' are RFC3339 encoded strings. The Property ''startTime'' must be present.The interval is the interval of the time period in minutes, if present this value must be no less than 0 minute.The intervalsecond is the interval of the time period in seconds, if present this value must be numerical zero or greater.The repeat is the number of the time period''s iteration, which means how many times to repeat the time period. The Property ''repeat'' accepts only negative one, numerical zero, and positive number. When this value is numerical zero, the time period will be repeated infinitely until a client makes it stop by inputting negative one for the value.The Property ''stoptime'' and ''interval'' are mutually exclusive; both Properties cannot be present in a Resource instance.The Property ''intervalsecond'' cannot be presented with the Property ''stopTime''. In case of both the Property ''interval'' and ''intervalsecond'' are presented together, the total time interval is the sum of ''interval'' and ''intervalsecond''.The Property ''triggertiming'' describes a specific time to execute an action. This property must have one of the values among ''startTime'', ''stopTime'', and ''totalInterval''. The totalInterval means the sum of the Property ''interval'' and ''intervalsecond''. If one of the properties does not exist, the value of the unexpressed property is taken as a numerical zero.The Property ''state'' describes a state of time interval. This property must have one of the values among ''preInterval'', ''inInterval'', and ''postInterval''.The Resource defines a time period for information retrieval, action or other behaviour.'
   properties:
-
     address:
-
       description: The mailing address
-
       properties:
-
         addressCountry:
-          description: The country. For example, Spain
+          description: 'The country. For example, Spain'
           type: string
           x-ngsi:
             model: https://schema.org/addressCountry
             type: Property
-
         addressLocality:
-          description: The locality in which the street address is, and which is in the region
+          description: 'The locality in which the street address is, and which is in the region'
           type: string
           x-ngsi:
             model: https://schema.org/addressLocality
             type: Property
-
         addressRegion:
-          description: The region in which the locality is, and which is in the country
+          description: 'The region in which the locality is, and which is in the country'
           type: string
           x-ngsi:
             model: https://schema.org/addressRegion
             type: Property
-
         district:
-          description: A district is a type of administrative division that, in some countries, is managed by the local government
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'
           type: string
           x-ngsi:
             type: Property
-
         postOfficeBoxNumber:
-          description: The post office box number for PO box addresses. For example, 03578
+          description: 'The post office box number for PO box addresses. For example, 03578'
           type: string
           x-ngsi:
             model: https://schema.org/postOfficeBoxNumber
             type: Property
-
         postalCode:
-          description: The postal code. For example, 24004
+          description: 'The postal code. For example, 24004'
           type: string
           x-ngsi:
             model: https://schema.org/https://schema.org/postalCode
             type: Property
-
         streetAddress:
           description: The street address
           type: string
           x-ngsi:
             model: https://schema.org/streetAddress
             type: Property
-
         streetNr:
           description: Number identifying a specific property on a public street
           type: string
           x-ngsi:
             type: Property
-
       type: object
-
       x-ngsi:
         model: https://schema.org/address
         type: Property
-
     alternateName:
       description: An alternative name for this item
       type: string
       x-ngsi:
         type: Property
-
     areaServed:
       description: The geographic area where a service or offered item is provided
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-
     dataProvider:
       description: A sequence of characters identifying the provider of the harmonised data entity
       type: string
       x-ngsi:
         type: Property
-
     dateCreated:
       description: Entity creation timestamp. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
-
     dateModified:
       description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
-
     description:
       description: A description of this item
       type: string
       x-ngsi:
         type: Property
-
     id:
       anyOf:
         - description: Identifier format of any NGSI entity
@@ -126,7 +104,6 @@ TimePeriod:
       description: Unique identifier of the entity
       x-ngsi:
         type: Property
-
     if:
       description: The OCF Interface set supported by this Resource
       items:
@@ -135,32 +112,26 @@ TimePeriod:
           - oic.if.baseline
         type: string
       minItems: 2
-      readOnly: yes
+      readOnly: true
       type: array
-      uniqueItems: yes
+      uniqueItems: true
       x-ngsi:
         type: Property
-
     interval:
-      description: The time interval in minutes after the 'startTime', if present the Property 'stopTime' cannot be present
+      description: 'The time interval in minutes after the ''startTime'', if present the Property ''stopTime'' cannot be present'
       minimum: 0
       type: number
       x-ngsi:
         type: Property
-
     intervalsecond:
-      description: The time interval in seconds after the 'startTime', if present the Property 'stopTime' cannot be present
+      description: 'The time interval in seconds after the ''startTime'', if present the Property ''stopTime'' cannot be present'
       minimum: 0
       type: number
       x-ngsi:
         type: Property
-
     location:
-
-      description: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon
-
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
-
         - description: Geojson reference to the item. Point
           properties:
             bbox:
@@ -184,7 +155,6 @@ TimePeriod:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. LineString
           properties:
             bbox:
@@ -211,7 +181,6 @@ TimePeriod:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. Polygon
           properties:
             bbox:
@@ -240,7 +209,6 @@ TimePeriod:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiPoint
           properties:
             bbox:
@@ -266,7 +234,6 @@ TimePeriod:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
@@ -295,7 +262,6 @@ TimePeriod:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
@@ -326,24 +292,20 @@ TimePeriod:
           type: object
           x-ngsi:
             type: GeoProperty
-
       x-ngsi:
         type: GeoProperty
-
     n:
       description: Friendly name of the Resource
       maxLength: 64
-      readOnly: yes
+      readOnly: true
       type: string
       x-ngsi:
         type: Property
-
     name:
       description: The name of this item
       type: string
       x-ngsi:
         type: Property
-
     owner:
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
       items:
@@ -366,14 +328,12 @@ TimePeriod:
       type: array
       x-ngsi:
         type: Property
-
     repeat:
       description: The number of times to repeat the time period
       minimum: -1
       type: number
       x-ngsi:
         type: Property
-
     rt:
       description: The Resource Type
       items:
@@ -382,12 +342,11 @@ TimePeriod:
         maxLength: 64
         type: string
       minItems: 1
-      readOnly: yes
+      readOnly: true
       type: array
-      uniqueItems: yes
+      uniqueItems: true
       x-ngsi:
         type: Property
-
     seeAlso:
       description: list of uri pointing to additional resources about the item
       oneOf:
@@ -400,38 +359,33 @@ TimePeriod:
           type: string
       x-ngsi:
         type: Property
-
     source:
-      description: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'
       type: string
       x-ngsi:
         type: Property
-
     startTime:
       description: The start time for the time period
       format: date-time
       type: string
       x-ngsi:
         type: Property
-
     state:
       description: The current state of the time interval
       enum:
         - preInterval
         - inInterval
         - postInterval
-      readOnly: yes
+      readOnly: true
       type: string
       x-ngsi:
         type: Property
-
     stopTime:
-      description: The stop time for the time period, if present the Property 'interval' or 'intervalsecond' cannot be present
+      description: 'The stop time for the time period, if present the Property ''interval'' or ''intervalsecond'' cannot be present'
       format: date-time
       type: string
       x-ngsi:
         type: Property
-
     triggertiming:
       description: The desired timing to trigger an action execution
       enum:
@@ -441,7 +395,6 @@ TimePeriod:
       type: string
       x-ngsi:
         type: Property
-
     type:
       description: NGSI entity type. It has to be TimePeriod
       enum:
@@ -449,22 +402,14 @@ TimePeriod:
       type: string
       x-ngsi:
         type: Property
-
   required:
     - startTime
     - id
     - type
-
   type: object
-
   x-derived-from: https://raw.githubusercontent.com/openconnectivityfoundation/IoTDataModels/master/TimePeriodResURI.swagger.json
-
-  x-disclaimer: Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program
-
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.OCF/blob/master/TimePeriod/LICENSE.md
-
   x-model-schema: https://smart-data-models.github.io/dataModel.OCF/TimePeriod/schema.json
-
   x-model-tags: OCF
-
   x-version: 0.0.1
