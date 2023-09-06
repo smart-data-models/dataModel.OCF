@@ -7,15 +7,22 @@
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-Descripción global: **Este recurso describe el periodo de tiempo sobre el que se deriva o delimita cualquier información proporcionada adicionalmente.La propiedad 'startTime' y 'stopTime' son cadenas codificadas RFC3339. La propiedad 'startTime' debe estar presente.El intervalo es el intervalo del período de tiempo en minutos, si está presente este valor no debe ser inferior a 0 minutos.El intervalosegundo es el intervalo del período de tiempo en segundos, si está presente este valor debe ser numérico cero o mayor.La repetición es el número de la iteración del período de tiempo, lo que significa cuántas veces se repite el período de tiempo. La propiedad 'repeat' sólo acepta uno negativo, cero numérico y número positivo. Cuando este valor es cero numérico, el periodo de tiempo se repetirá infinitamente hasta que un cliente lo haga parar introduciendo un uno negativo para el valor.La Propiedad 'stoptime' e 'interval' son mutuamente excluyentes; ambas Propiedades no pueden estar presentes en una instancia de Recurso.La Propiedad 'intervalosegundo' no puede presentarse con la Propiedad 'stopTime'. En el caso de que las propiedades "intervalo" e "intervalosegundo" se presenten juntas, el intervalo de tiempo total es la suma de "intervalo" e "intervalosegundo". Esta propiedad debe tener uno de los valores entre 'startTime', 'stopTime', y 'totalInterval'. El totalInterval significa la suma de las propiedades 'intervalo' e 'intervalosegundo'. Si una de las propiedades no existe, el valor de la propiedad no expresada se toma como un cero numérico.La Propiedad 'state' describe un estado del intervalo de tiempo. Esta propiedad debe tener uno de los valores entre 'preInterval', 'inInterval', y 'postInterval'.El Recurso define un periodo de tiempo para la recuperación de información, acción u otro comportamiento.**  
+Descripción global: **Este Recurso describe el periodo de tiempo sobre el que se deriva o delimita cualquier información proporcionada adicionalmente.La Propiedad 'startTime' y 'stopTime' son cadenas codificadas RFC3339. La propiedad 'startTime' debe estar presente.The interval es el intervalo del periodo de tiempo en minutos, si está presente este valor no debe ser inferior a 0 minute.The intervalsecond es el intervalo del periodo de tiempo en segundos, si está presente este valor debe ser numérico cero o mayor.The repeat es el número de iteración del periodo de tiempo, lo que significa cuántas veces repetir el periodo de tiempo. La propiedad 'repeat' sólo acepta uno negativo, cero numérico y número positivo. Cuando este valor es cero numérico, el periodo de tiempo se repetirá infinitamente hasta que un cliente haga que se detenga introduciendo un uno negativo para el valor.La Propiedad 'stoptime' e 'interval' son mutuamente excluyentes; ambas Propiedades no pueden estar presentes en una instancia de Recurso.La Propiedad 'intervalosegundo' no puede presentarse con la Propiedad 'stopTime'. En caso de que las propiedades "interval" e "intervalsecond" se presenten juntas, el intervalo de tiempo total será la suma de "interval" e "intervalsecond". Esta propiedad debe tener uno de los valores entre 'startTime', 'stopTime', y 'totalInterval'. El totalInterval es la suma de las propiedades 'interval' e 'intervalsecond'. Si una de las propiedades no existe, el valor de la propiedad no expresada se toma como un cero numérico.La Propiedad 'state' describe un estado del intervalo de tiempo. Esta propiedad debe tener uno de los valores entre 'preInterval', 'inInterval', y 'postInterval'.El Recurso define un periodo de tiempo para la recuperación de información, acción u otro comportamiento.**  
 versión: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>  
-- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Una descripción de este artículo  - `id[*]`: Identificador único de la entidad  - `if[array]`: El conjunto de interfaces OCF que admite este recurso.  - `interval[integer]`: El intervalo de tiempo en minutos después del 'startTime', si está presente la propiedad 'stopTime' no puede estar presente.  - `intervalsecond[integer]`: El intervalo de tiempo en segundos después del 'startTime', si está presente la propiedad 'stopTime' no puede estar presente.  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n[string]`: Nombre amigable del Recurso  - `name[string]`: El nombre de este artículo.  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `repeat[integer]`: El número de veces que se repite el periodo de tiempo  - `rt[array]`: El tipo de recurso.  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `startTime[string]`: La hora de inicio del periodo de tiempo.  - `state[string]`: El estado actual del intervalo de tiempo  - `stopTime[string]`: La hora de finalización del periodo de tiempo, si está presente la propiedad 'intervalo' o 'intervalosegundo' no puede estar presente.  - `triggertiming[string]`: El momento deseado para desencadenar la ejecución de una acción  - `type[string]`: Tipo de entidad NGSI. Tiene que ser TimePeriod  <!-- /30-PropertiesList -->  
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>.  
+- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: El país. Por ejemplo, España  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: La localidad en la que se encuentra la dirección postal, y que está en la región  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: La región en la que se encuentra la localidad, y que está en el país  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Un distrito es un tipo de división administrativa que, en algunos países, gestiona el gobierno local    
+	- `postOfficeBoxNumber[string]`: El número del apartado de correos para las direcciones de apartados postales. Por ejemplo, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: El código postal. Por ejemplo, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: La dirección  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada  - `dateCreated[date-time]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento  - `dateModified[date-time]`: Marca de tiempo de la última modificación de la entidad. Suele ser asignada por la plataforma de almacenamiento  - `description[string]`: Descripción de este artículo  - `id[*]`: Identificador único de la entidad  - `if[array]`: El conjunto de interfaces OCF que admite este recurso  - `interval[number]`: El intervalo de tiempo en minutos después de 'startTime', si está presente la propiedad 'stopTime' no puede estar presente  - `intervalsecond[number]`: El intervalo de tiempo en segundos después de 'startTime', si está presente la propiedad 'stopTime' no puede estar presente  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  - `n[string]`: Nombre descriptivo del recurso  - `name[string]`: El nombre de este artículo  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  - `repeat[number]`: El número de veces que se repetirá el período de tiempo  - `rt[array]`: El tipo de recurso  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `startTime[date-time]`: La hora de inicio del período de tiempo  - `state[string]`: Estado actual del intervalo de tiempo  - `stopTime[date-time]`: La hora de finalización del periodo de tiempo, si está presente la propiedad 'interval' o 'intervalsecond' no puede estar presente.  - `triggertiming[string]`: El momento deseado para desencadenar la ejecución de una acción  - `type[string]`: Tipo de entidad NGSI. Tiene que ser TimePeriod  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propiedades requeridas  
 - `id`  - `startTime`  - `type`  <!-- /35-RequiredProperties -->  
@@ -23,8 +30,8 @@
 Modelo de datos adaptado del original creado por la Open Connectivity Foundation. Repositorio original en https://github.com/openconnectivityfoundation/IoTDataModels  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
-## Descripción del modelo de datos de las propiedades  
-Ordenados alfabéticamente (haga clic para ver los detalles)  
+## Descripción de las propiedades del modelo de datos  
+Ordenados alfabéticamente (pulse para más detalles)  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -33,78 +40,110 @@ TimePeriod:
   description: 'This Resource describes the time period over which any additionally provided information is derived or bounded.The Property ''startTime'' and ''stopTime'' are RFC3339 encoded strings. The Property ''startTime'' must be present.The interval is the interval of the time period in minutes, if present this value must be no less than 0 minute.The intervalsecond is the interval of the time period in seconds, if present this value must be numerical zero or greater.The repeat is the number of the time period''s iteration, which means how many times to repeat the time period. The Property ''repeat'' accepts only negative one, numerical zero, and positive number. When this value is numerical zero, the time period will be repeated infinitely until a client makes it stop by inputting negative one for the value.The Property ''stoptime'' and ''interval'' are mutually exclusive; both Properties cannot be present in a Resource instance.The Property ''intervalsecond'' cannot be presented with the Property ''stopTime''. In case of both the Property ''interval'' and ''intervalsecond'' are presented together, the total time interval is the sum of ''interval'' and ''intervalsecond''.The Property ''triggertiming'' describes a specific time to execute an action. This property must have one of the values among ''startTime'', ''stopTime'', and ''totalInterval''. The totalInterval means the sum of the Property ''interval'' and ''intervalsecond''. If one of the properties does not exist, the value of the unexpressed property is taken as a numerical zero.The Property ''state'' describes a state of time interval. This property must have one of the values among ''preInterval'', ''inInterval'', and ''postInterval''.The Resource defines a time period for information retrieval, action or other behaviour.'    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
     id:    
-      anyOf: &timeperiod_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     if:    
-      description: 'The OCF Interface set supported by this Resource.'    
+      description: The OCF Interface set supported by this Resource    
       items:    
         enum:    
           - oic.if.a    
@@ -117,21 +156,21 @@ TimePeriod:
       x-ngsi:    
         type: Property    
     interval:    
-      description: 'The time interval in minutes after the ''startTime'', if present the Property ''stopTime'' cannot be present.'    
+      description: 'The time interval in minutes after the ''startTime'', if present the Property ''stopTime'' cannot be present'    
       minimum: 0    
-      type: integer    
+      type: number    
       x-ngsi:    
         type: Property    
     intervalsecond:    
-      description: 'The time interval in seconds after the ''startTime'', if present the Property ''stopTime'' cannot be present.'    
+      description: 'The time interval in seconds after the ''startTime'', if present the Property ''stopTime'' cannot be present'    
       minimum: 0    
-      type: integer    
+      type: number    
       x-ngsi:    
         type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -150,9 +189,11 @@ TimePeriod:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -174,9 +215,11 @@ TimePeriod:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -200,9 +243,11 @@ TimePeriod:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -223,9 +268,11 @@ TimePeriod:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -249,9 +296,11 @@ TimePeriod:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -277,38 +326,54 @@ TimePeriod:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     n:    
-      description: 'Friendly name of the Resource'    
+      description: Friendly name of the Resource    
       maxLength: 64    
       readOnly: true    
       type: string    
       x-ngsi:    
         type: Property    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *timeperiod_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
     repeat:    
-      description: 'The number of times to repeat the time period'    
+      description: The number of times to repeat the time period    
       minimum: -1    
-      type: integer    
+      type: number    
       x-ngsi:    
         type: Property    
     rt:    
-      description: 'The Resource Type.'    
+      description: The Resource Type    
       items:    
         enum:    
           - oic.r.time.period    
@@ -321,7 +386,7 @@ TimePeriod:
       x-ngsi:    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -333,18 +398,18 @@ TimePeriod:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
     startTime:    
-      description: 'The start time for the time period.'    
+      description: The start time for the time period    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     state:    
-      description: 'The current state of the time interval'    
+      description: The current state of the time interval    
       enum:    
         - preInterval    
         - inInterval    
@@ -354,13 +419,13 @@ TimePeriod:
       x-ngsi:    
         type: Property    
     stopTime:    
-      description: 'The stop time for the time period, if present the Property ''interval'' or ''intervalsecond'' cannot be present.'    
+      description: 'The stop time for the time period, if present the Property ''interval'' or ''intervalsecond'' cannot be present'    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     triggertiming:    
-      description: 'The desired timing to trigger an action execution'    
+      description: The desired timing to trigger an action execution    
       enum:    
         - startTime    
         - stopTime    
@@ -369,7 +434,7 @@ TimePeriod:
       x-ngsi:    
         type: Property    
     type:    
-      description: 'NGSI entity type. It has to be TimePeriod'    
+      description: NGSI entity type. It has to be TimePeriod    
       enum:    
         - TimePeriod    
       type: string    
@@ -381,7 +446,7 @@ TimePeriod:
     - type    
   type: object    
   x-derived-from: https://raw.githubusercontent.com/openconnectivityfoundation/IoTDataModels/master/TimePeriodResURI.swagger.json    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.OCF/blob/master/TimePeriod/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.OCF/TimePeriod/schema.json    
   x-model-tags: OCF    
@@ -459,8 +524,8 @@ TimePeriod:
 }  
 ```  
 </details>  
-#### TimePeriod NGSI-v2 normalizado Ejemplo  
-Este es un ejemplo de un TimePeriod en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+#### TimePeriod NGSI-v2 normalized Ejemplo  
+He aquí un ejemplo de un TimePeriod en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -602,7 +667,7 @@ TimePeriod:
 ```  
 </details>  
 #### TimePeriod NGSI-LD key-values Ejemplo  
-Aquí hay un ejemplo de un TimePeriod en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+He aquí un ejemplo de un TimePeriod en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -672,7 +737,7 @@ TimePeriod:
 ```  
 </details>  
 #### TimePeriod NGSI-LD normalizado Ejemplo  
-Este es un ejemplo de un TimePeriod en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+He aquí un ejemplo de un TimePeriod en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -811,7 +876,7 @@ TimePeriod:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud.  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
