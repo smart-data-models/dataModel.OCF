@@ -3,108 +3,37 @@
 エンティティロック  
 =========<!-- /10-Header -->  
 <!-- 15-License -->  
-[オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/Lock/LICENSE.md)  
-[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+[オープン・ライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/Lock/LICENSE.md)  
+[文書は自動的に生成される](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-グローバルな記述。**IoTData データモデルをスマートデータモデルプログラムに適応させたもの。Resource はロックを記述している。Property 'lockState' は文字列である。値'Locked'はドアがロックされていることを示す。値'Unlocked'は、ドアがUnlockedであることを示す**。  
+グローバルな記述：**オリジナルの IoTData データモデルをスマート・データモデル・プログラムに適応させたもの。ロックを記述するリソース。プロパティ 'lockState' は文字列である。値 'Locked' はドアがロックされていることを示す。値'Unlocked'はドアがUnlockedであることを示す**。  
 バージョン: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
-## プロパティ一覧  
+## プロパティのリスト  
 
-<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
-- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `if[array]`: このResourceがサポートするOCF Interfaceセット。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `lockState[string]`: ロックの状態です。  - `n[string]`: リソースのフレンドリ名  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `rt[array]`: リソースの種類  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSIエンティティタイプ。ロックでなければならない  <!-- /30-PropertiesList -->  
+<sup><sub>[*] 属性に型がない場合は、複数の型があるか、異なるフォーマット/パターンがある可能性があるためです</sub></sup>。  
+- `if[array]`: このリソースがサポートする OCF インタフェースセット。  - `lockState[string]`: ロックの状態。  - `n[string]`: リソースのフレンドリーネーム  - `rt[array]`: リソースタイプ  - `type[string]`: NGSIエンティティタイプ。これは Lock でなければならない。  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
-必要なプロパティ  
+必須プロパティ  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)に由来しています。NGSIの要件に適合するように拡張されている。  
+このデータモデルはオリジナルの[Open Connectivity Foundationリポジトリ](https://github.com/openconnectivityfoundation/IoTDataModels)に由来する。NGSIの要件に適合するように拡張されている。  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
-アルファベット順に並びます（クリックで詳細へ）  
+アルファベット順（クリックで詳細表示）  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Lock:    
-  description: 'Smart Data Models Program adaptation of the original IoTData data Models. The Resource describing a lock. The Property ''lockState'' is a string. The value ''Locked'' indicates that the door is Locked. The value ''Unlocked'' indicates that the door is Unlocked.'    
+  description: Smart Data Models Program adaptation of the original IoTData data Models. The Resource describing a lock. The Property 'lockState' is a string. The value 'Locked' indicates that the door is Locked. The value 'Unlocked' indicates that the door is Unlocked.    
   properties:    
-    address:    
-      description: 'The mailing address'    
-      properties:    
-        addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
-          type: string    
-        addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
-          type: string    
-        addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
-          type: string    
-        postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
-          type: string    
-        postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
-          type: string    
-        streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
-          type: string    
-      type: object    
-      x-ngsi:    
-        model: https://schema.org/address    
-        type: Property    
-    alternateName:    
-      description: 'An alternative name for this item'    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
-      type: string    
-      x-ngsi:    
-        model: https://schema.org/Text    
-        type: Property    
-    dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
-      format: date-time    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
-      format: date-time    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    description:    
-      description: 'A description of this item'    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    id:    
-      anyOf: &lock_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
-          maxLength: 256    
-          minLength: 1    
-          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
-          type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
-          format: uri    
-          type: string    
-      description: 'Unique identifier of the entity'    
-      x-ngsi:    
-        type: Property    
     if:    
-      description: 'The OCF Interface set supported by this Resource.'    
+      description: The OCF Interface set supported by this Resource.    
       items:    
         enum:    
           - oic.if.a    
@@ -116,161 +45,8 @@ Lock:
       uniqueItems: true    
       x-ngsi:    
         type: Property    
-    location:    
-      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
-      oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
-          properties:    
-            bbox:    
-              items:    
-                type: number    
-              minItems: 4    
-              type: array    
-            coordinates:    
-              items:    
-                type: number    
-              minItems: 2    
-              type: array    
-            type:    
-              enum:    
-                - Point    
-              type: string    
-          required:    
-            - type    
-            - coordinates    
-          title: 'GeoJSON Point'    
-          type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
-          properties:    
-            bbox:    
-              items:    
-                type: number    
-              minItems: 4    
-              type: array    
-            coordinates:    
-              items:    
-                items:    
-                  type: number    
-                minItems: 2    
-                type: array    
-              minItems: 2    
-              type: array    
-            type:    
-              enum:    
-                - LineString    
-              type: string    
-          required:    
-            - type    
-            - coordinates    
-          title: 'GeoJSON LineString'    
-          type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
-          properties:    
-            bbox:    
-              items:    
-                type: number    
-              minItems: 4    
-              type: array    
-            coordinates:    
-              items:    
-                items:    
-                  items:    
-                    type: number    
-                  minItems: 2    
-                  type: array    
-                minItems: 4    
-                type: array    
-              type: array    
-            type:    
-              enum:    
-                - Polygon    
-              type: string    
-          required:    
-            - type    
-            - coordinates    
-          title: 'GeoJSON Polygon'    
-          type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
-          properties:    
-            bbox:    
-              items:    
-                type: number    
-              minItems: 4    
-              type: array    
-            coordinates:    
-              items:    
-                items:    
-                  type: number    
-                minItems: 2    
-                type: array    
-              type: array    
-            type:    
-              enum:    
-                - MultiPoint    
-              type: string    
-          required:    
-            - type    
-            - coordinates    
-          title: 'GeoJSON MultiPoint'    
-          type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
-          properties:    
-            bbox:    
-              items:    
-                type: number    
-              minItems: 4    
-              type: array    
-            coordinates:    
-              items:    
-                items:    
-                  items:    
-                    type: number    
-                  minItems: 2    
-                  type: array    
-                minItems: 2    
-                type: array    
-              type: array    
-            type:    
-              enum:    
-                - MultiLineString    
-              type: string    
-          required:    
-            - type    
-            - coordinates    
-          title: 'GeoJSON MultiLineString'    
-          type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
-          properties:    
-            bbox:    
-              items:    
-                type: number    
-              minItems: 4    
-              type: array    
-            coordinates:    
-              items:    
-                items:    
-                  items:    
-                    items:    
-                      type: number    
-                    minItems: 2    
-                    type: array    
-                  minItems: 4    
-                  type: array    
-                type: array    
-              type: array    
-            type:    
-              enum:    
-                - MultiPolygon    
-              type: string    
-          required:    
-            - type    
-            - coordinates    
-          title: 'GeoJSON MultiPolygon'    
-          type: object    
-      x-ngsi:    
-        type: GeoProperty    
     lockState:    
-      description: 'The state of the lock.'    
+      description: The state of the lock.    
       enum:    
         - Locked    
         - Unlocked    
@@ -278,27 +54,14 @@ Lock:
       x-ngsi:    
         type: Property    
     n:    
-      description: 'Friendly name of the Resource'    
+      description: Friendly name of the Resource    
       maxLength: 64    
       readOnly: true    
       type: string    
       x-ngsi:    
         type: Property    
-    name:    
-      description: 'The name of this item.'    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
-      items:    
-        anyOf: *lock_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
-      type: array    
-      x-ngsi:    
-        type: Property    
     rt:    
-      description: 'Resource Type'    
+      description: Resource Type    
       items:    
         enum:    
           - oic.r.lock.status    
@@ -310,25 +73,8 @@ Lock:
       uniqueItems: true    
       x-ngsi:    
         type: Property    
-    seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
-      oneOf:    
-        - items:    
-            format: uri    
-            type: string    
-          minItems: 1    
-          type: array    
-        - format: uri    
-          type: string    
-      x-ngsi:    
-        type: Property    
-    source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: string    
-      x-ngsi:    
-        type: Property    
     type:    
-      description: 'NGSI entity type. It has to be Lock'    
+      description: NGSI entity type. It has to be Lock    
       enum:    
         - Lock    
       type: string    
@@ -339,7 +85,7 @@ Lock:
     - type    
   type: object    
   x-derived-from: https://github.com/OpenInterConnect/IoTDataModels/blob/master/LockResURI.swagger.json    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.OCF/blob/master/Lock/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.IoTDataModels/Lock/schema.json    
   x-model-tags: OCF    
@@ -351,8 +97,8 @@ Lock:
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
 ## ペイロードの例  
-#### NGSI-v2鍵のロック例  
-ここでは、LockをJSON-LD形式でkey-valuesとした場合の例を示す。これは、`options=keyValues` を使用した場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータを返す。  
+#### NGSI-v2 キー値のロック 例  
+以下はJSON-LD形式のLockをkey-valuesとした例である。これはNGSI-v2と互換性があり、`options=keyValues`を使用すると個々のエンティティのコンテキストデータを返す。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -392,7 +138,7 @@ Lock:
 ```  
 </details>  
 #### ロック NGSI-v2 正規化例  
-以下は、正規化されたJSON-LD形式のLockの例である。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、正規化されたJSON-LD形式のLockの例である。これはNGSI-v2と互換性があり、オプションを使用しない場合、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -472,8 +218,8 @@ Lock:
 }  
 ```  
 </details>  
-#### NGSI-LDのキー値をロックする 例  
-ここでは、LockをJSON-LD形式でkey-valuesとした例を示す。これは `options=keyValues` を使った場合の NGSI-LD と互換性があり、個々のエンティティのコンテキストデータが返される。  
+#### NGSI-LD キー値のロック 例  
+以下はJSON-LD形式のLockをkey-valuesとした例である。options=keyValues`を使うとNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返す。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -517,7 +263,7 @@ Lock:
 ```  
 </details>  
 #### ロック NGSI-LD 正規化例  
-ここでは、JSON-LD 形式の Lock を正規化した例を示す。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、正規化されたJSON-LD形式のLockの例である。これは、オプションを使用しない場合はNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -604,7 +350,7 @@ Lock:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+マグニチュード単位の扱い方については、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照のこと。  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
