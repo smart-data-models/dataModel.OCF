@@ -1,80 +1,42 @@
-エンティティ睡眠  
-========  
-[オープンライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/Sleep/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな説明です。**スマートデータモデル オリジナルのIoTDataデータモデルをプログラム化したものです。このResourceは、Sleepに関連するPropertiesを記述しています。睡眠は、各睡眠段階（覚醒、nrem1、nrem2、nrem3、nrem4、rem、light sleep、deep sleep）での滞在時間と、睡眠の質を示す睡眠スコアを示します**。  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティ睡眠  
+========<!-- /10-Header -->  
+<!-- 15-License -->  
+[オープン・ライセンス](https://github.com/smart-data-models//dataModel.OCF/blob/master/Sleep/LICENSE.md)  
+[文書は自動的に生成される](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述：**オリジナルの IoTData データモデルをスマートデータモデルプログラムに適応させたもの。この Resource は、Sleep に関連する Properties を記述する。Sleep は、各睡眠段階（awake、nrem1、nrem2、nrem3、nrem4、rem、light sleep、deep sleep）で過ごした時間と、睡眠の質を示す睡眠スコアを示す。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## プロパティのリスト  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `awake`: Awakeステージでの滞在時間（単位：秒）  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `deepsleep`: NREMステージ3および4で構成されるDeep Sleepステージでの滞在時間（単位：秒）  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `if`: このリソースでサポートされているインターフェースセット  - `lightsleep`: NREMステージ1および2で構成されるライトスリープステージの滞在時間（単位：秒）  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `n`: リソースのフレンドリーネーム  - `name`: このアイテムの名前です。  - `nrem1`: 非急速な眼球運動ステージ1の滞在時間（単位：秒）  - `nrem2`: 非急速な眼球運動ステージ2の滞在時間（単位：秒）  - `nrem3`: 非急速な眼球運動ステージ3の滞在時間（単位：秒）  - `nrem4`: 非急速な眼球運動ステージ4の滞在時間（単位：秒）  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `precision`: 公開された場合、「精度」の値は、リソース内のプロパティに対して±の許容範囲を提供する。従って、あるプロパティがある値に更新され、そのプロパティがRETRIEVEDされた場合、RETRIEVEDされた値は、設定された値の±精度の範囲内であれば有効である。  - `range_phases`: リソースのプロパティの有効範囲を整数で表したもの。配列の最初の値が最小値、配列の2番目の値が最大値となります。  - `range_score`: リソースのプロパティの有効範囲を数値で表したもの。配列の最初の値が最小値、配列の2番目の値が最大値となります。  - `rem`: 急速な眼球運動の時間（単位：秒）  - `rt`: リソースタイプ  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `sleepscore`: 睡眠の質を示す、各睡眠段階での滞在時間から算出されるスコア  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `step_phases`: 範囲が整数の場合、定義された範囲のステップ値です。  例えば、範囲が0～10でステップが2の場合、有効な値は0,2,4,6,8,10となり、範囲内の有効な値の増分となります。  - `step_score`: 定義された範囲のステップ値。範囲が数値の場合は整数。  例えば、範囲が0.0～10.0でステップが2.5の場合、有効な値は0.0,2.5,5.0,7.5,10.0となります。  - `type`: NGSIのエンティティタイプ。睡眠でなければならない    
-必須項目  
-- `id`  - `type`    
-このデータモデルは、オリジナルの[Open Connectivity Foundation repository](https://github.com/openconnectivityfoundation/IoTDataModels)から来ています。NGSIの要件に適合するように拡張されています。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性に型がない場合は、複数の型があるか、異なるフォーマット/パターンがある可能性があるためです</sub></sup>。  
+- `awake[integer]`: 覚醒状態の滞在時間（秒）  - `deepsleep[integer]`: NREM睡眠段階3と4からなる深い睡眠段階にいた時間（単位：秒）  - `if[array]`: このリソースがサポートするインターフェースセット  - `lightsleep[integer]`: NREM第1段階と第2段階からなるライトスリープ段階で過ごした時間（単位：秒）  - `n[string]`: リソースのフレンドリーネーム  - `nrem1[integer]`: 非急速眼球運動第1段階の滞在時間（秒）  - `nrem2[integer]`: 非急速眼球運動第2段階滞在時間（秒）  - `nrem3[integer]`: 非急速眼球運動第3段階滞在時間（秒）  - `nrem4[integer]`: 非急速眼球運動ステージ4滞在時間（秒）  - `precision[number]`: precision」の値が公開されると、リソース内のPropertyに対する±の許容範囲が提供される。したがって、プロパティがある値にUPDATEされ、そのプロパティがRETRIEVEDされた場合、RETRIEVEDされた値は、設定された値の±precisionの範囲内であれば有効です。  - `range_phases[array]`: リソース内のプロパティの有効範囲を整数で表します。配列の最初の値を最小値、2 番目の値を最大値とします。  - `range_score[array]`: リソース内のプロパティの有効範囲を数値で表します。配列の 1 番目の値を最小値、2 番目の値を最大値とします。  - `rem[integer]`: 急速眼球運動に費やした時間（秒）  - `rt[array]`: リソースタイプ  - `sleepscore[number]`: 各睡眠段階の滞在時間から算出されるスコアで、睡眠の質を示す。  - `step_phases[integer]`: 範囲が整数の場合、定義された範囲を横切るステップ値。  範囲が0～10でステップが2の場合、有効な値は0,2,4,6,8,10となります。  - `step_score[number]`: 定義された範囲を横切るステップ値。範囲が数値の場合は整数。  範囲が0.0～10.0でステップが2.5の場合、有効な値は0.0,2.5,5.0,7.5,10.0となります。  - `type[string]`: NGSIエンティティタイプ。スリープでなければならない。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必須プロパティ  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+このデータモデルはオリジナルの[Open Connectivity Foundationリポジトリ](https://github.com/openconnectivityfoundation/IoTDataModels)に由来する。NGSIの要件に適合するように拡張されている。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順（クリックで詳細表示）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Sleep:    
   description: 'Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the Properties associated with Sleep. Sleep shows the time spent in each of the sleep stages (awake, nrem1, nrem2, nrem3, nrem4, rem, light sleep, deep sleep), along with a sleep score indicating the quality of sleep.'    
   properties:    
-    address:    
-      description: 'The mailing address'    
-      properties:    
-        addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
-          type: string    
-        addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
-          type: string    
-        addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
-          type: string    
-        postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
-          type: string    
-        postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
-          type: string    
-        streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
-          type: string    
-      type: object    
-      x-ngsi:    
-        model: https://schema.org/address    
-        type: Property    
-    alternateName:    
-      description: 'An alternative name for this item'    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
-      type: string    
-      x-ngsi:    
-        model: https://schema.org/Text    
-        type: Property    
     awake:    
-      description: 'Time spent in Awake stage (in seconds)'    
+      description: Time spent in Awake stage (in seconds)    
       minimum: 0    
       readOnly: true    
       type: integer    
-      x-ngsi:    
-        type: Property    
-    dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
-      format: date-time    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
-      format: date-time    
-      type: string    
       x-ngsi:    
         type: Property    
     deepsleep:    
@@ -84,26 +46,8 @@ Sleep:
       type: integer    
       x-ngsi:    
         type: Property    
-    description:    
-      description: 'A description of this item'    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    id:    
-      anyOf: &sleep_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
-          maxLength: 256    
-          minLength: 1    
-          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
-          type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
-          format: uri    
-          type: string    
-      description: 'Unique identifier of the entity'    
-      x-ngsi:    
-        type: Property    
     if:    
-      description: 'The Interface set supported by this Resource'    
+      description: The Interface set supported by this Resource    
       items:    
         enum:    
           - oic.if.s    
@@ -122,205 +66,39 @@ Sleep:
       type: integer    
       x-ngsi:    
         type: Property    
-    location:    
-      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
-      oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
-          properties:    
-            bbox:    
-              items:    
-                type: number    
-              minItems: 4    
-              type: array    
-            coordinates:    
-              items:    
-                type: number    
-              minItems: 2    
-              type: array    
-            type:    
-              enum:    
-                - Point    
-              type: string    
-          required:    
-            - type    
-            - coordinates    
-          title: 'GeoJSON Point'    
-          type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
-          properties:    
-            bbox:    
-              items:    
-                type: number    
-              minItems: 4    
-              type: array    
-            coordinates:    
-              items:    
-                items:    
-                  type: number    
-                minItems: 2    
-                type: array    
-              minItems: 2    
-              type: array    
-            type:    
-              enum:    
-                - LineString    
-              type: string    
-          required:    
-            - type    
-            - coordinates    
-          title: 'GeoJSON LineString'    
-          type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
-          properties:    
-            bbox:    
-              items:    
-                type: number    
-              minItems: 4    
-              type: array    
-            coordinates:    
-              items:    
-                items:    
-                  items:    
-                    type: number    
-                  minItems: 2    
-                  type: array    
-                minItems: 4    
-                type: array    
-              type: array    
-            type:    
-              enum:    
-                - Polygon    
-              type: string    
-          required:    
-            - type    
-            - coordinates    
-          title: 'GeoJSON Polygon'    
-          type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
-          properties:    
-            bbox:    
-              items:    
-                type: number    
-              minItems: 4    
-              type: array    
-            coordinates:    
-              items:    
-                items:    
-                  type: number    
-                minItems: 2    
-                type: array    
-              type: array    
-            type:    
-              enum:    
-                - MultiPoint    
-              type: string    
-          required:    
-            - type    
-            - coordinates    
-          title: 'GeoJSON MultiPoint'    
-          type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
-          properties:    
-            bbox:    
-              items:    
-                type: number    
-              minItems: 4    
-              type: array    
-            coordinates:    
-              items:    
-                items:    
-                  items:    
-                    type: number    
-                  minItems: 2    
-                  type: array    
-                minItems: 2    
-                type: array    
-              type: array    
-            type:    
-              enum:    
-                - MultiLineString    
-              type: string    
-          required:    
-            - type    
-            - coordinates    
-          title: 'GeoJSON MultiLineString'    
-          type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
-          properties:    
-            bbox:    
-              items:    
-                type: number    
-              minItems: 4    
-              type: array    
-            coordinates:    
-              items:    
-                items:    
-                  items:    
-                    items:    
-                      type: number    
-                    minItems: 2    
-                    type: array    
-                  minItems: 4    
-                  type: array    
-                type: array    
-              type: array    
-            type:    
-              enum:    
-                - MultiPolygon    
-              type: string    
-          required:    
-            - type    
-            - coordinates    
-          title: 'GeoJSON MultiPolygon'    
-          type: object    
-      x-ngsi:    
-        type: GeoProperty    
     n:    
-      description: 'Friendly name of the Resource'    
+      description: Friendly name of the Resource    
       maxLength: 64    
       readOnly: true    
       type: string    
       x-ngsi:    
         type: Property    
-    name:    
-      description: 'The name of this item.'    
-      type: string    
-      x-ngsi:    
-        type: Property    
     nrem1:    
-      description: 'Time spent in Non Rapid Eye Movement stage 1 (in seconds)'    
+      description: Time spent in Non Rapid Eye Movement stage 1 (in seconds)    
       minimum: 0    
       readOnly: true    
       type: integer    
       x-ngsi:    
         type: Property    
     nrem2:    
-      description: 'Time spent in Non Rapid Eye Movement stage 2 (in seconds)'    
+      description: Time spent in Non Rapid Eye Movement stage 2 (in seconds)    
       minimum: 0    
       readOnly: true    
       type: integer    
       x-ngsi:    
         type: Property    
     nrem3:    
-      description: 'Time spent in Non Rapid Eye Movement stage 3 (in seconds)'    
+      description: Time spent in Non Rapid Eye Movement stage 3 (in seconds)    
       minimum: 0    
       readOnly: true    
       type: integer    
       x-ngsi:    
         type: Property    
     nrem4:    
-      description: 'Time spent in Non Rapid Eye Movement stage 4 (in seconds)'    
+      description: Time spent in Non Rapid Eye Movement stage 4 (in seconds)    
       minimum: 0    
       readOnly: true    
       type: integer    
-      x-ngsi:    
-        type: Property    
-    owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
-      items:    
-        anyOf: *sleep_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
-      type: array    
       x-ngsi:    
         type: Property    
     precision:    
@@ -350,14 +128,14 @@ Sleep:
       x-ngsi:    
         type: Property    
     rem:    
-      description: 'Time spent in Rapid Eye Movement (in seconds)'    
+      description: Time spent in Rapid Eye Movement (in seconds)    
       minimum: 0    
       readOnly: true    
       type: integer    
       x-ngsi:    
         type: Property    
     rt:    
-      description: 'Resource Type'    
+      description: Resource Type    
       items:    
         enum:    
           - oic.r.sleep    
@@ -368,28 +146,11 @@ Sleep:
       uniqueItems: true    
       x-ngsi:    
         type: Property    
-    seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
-      oneOf:    
-        - items:    
-            format: uri    
-            type: string    
-          minItems: 1    
-          type: array    
-        - format: uri    
-          type: string    
-      x-ngsi:    
-        type: Property    
     sleepscore:    
       description: 'Score computed from the time spent in each sleep stage, indicative of the quality of sleep'    
       minimum: 0    
       readOnly: true    
       type: number    
-      x-ngsi:    
-        type: Property    
-    source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: string    
       x-ngsi:    
         type: Property    
     step_phases:    
@@ -405,7 +166,7 @@ Sleep:
       x-ngsi:    
         type: Property    
     type:    
-      description: 'NGSI entity type. It has to be Sleep'    
+      description: NGSI entity type. It has to be Sleep    
       enum:    
         - Sleep    
       type: string    
@@ -416,16 +177,21 @@ Sleep:
     - type    
   type: object    
   x-derived-from: https://github.com/OpenInterConnect/IoTDataModels/blob/master/SleepResURI.swagger.json    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.OCF/blob/master/Sleep/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.IoTDataModels/Sleep/schema.json    
   x-model-tags: OCF    
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### スリープNGSI-v2のキーバリューの例  
-ここでは、Sleepをkey-valuesとしてJSON-LD形式にした例を紹介します。これは`options=keyValues`を使った場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### Sleep NGSI-v2 キー値の例  
+以下はJSON-LD形式のSleepをkey-valuesとした例である。これはNGSI-v2と互換性があり、`options=keyValues`を使用すると個々のエンティティのコンテキストデータを返す。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Sleep:id:DQYD:66419001",  
@@ -462,8 +228,10 @@ Sleep:
   "areaServed": "Your reality almost four use. Degree simply bag drop."  
 }  
 ```  
-#### スリープNGSI-v2の正規化例  
-ここでは、Sleepを正規化したJSON-LD形式の例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### スリープ NGSI-v2 正規化例  
+以下は、正規化されたJSON-LD形式のSleepの例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -541,127 +309,141 @@ Sleep:
   }  
 }  
 ```  
-#### スリープNGSI-LDのキーバリューの例  
-ここでは、Sleepをkey-valuesとしてJSON-LD形式にした例を紹介します。これは、`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### スリープ NGSI-LD キー値 例  
+以下はJSON-LD形式のSleepをkey-valuesとした例である。これはNGSI-LDと互換性があり、`options=keyValues`を使うと個々のエンティティのコンテキストデータを返す。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Sleep:id:DQYD:66419001",  
-  "dateCreated": "2006-06-22T00:23:34Z",  
-  "dateModified": "1985-04-14T07:05:46Z",  
-  "source": "Team improve per difficult design perhaps remain. Something town now year.",  
-  "name": "Debate notice eat share day fire serve seem. Through want husband.",  
-  "alternateName": "System his with management resource real various. Task right mean paper western seem near beat. Skin expert that pattern drive free that.",  
-  "description": "Here ability even exist class movement grow. War church probably.",  
-  "dataProvider": "Consumer fish himself crime finish some pretty. Kid stand individual tree weight stand apply.",  
-  "owner": [  
-    "urn:ngsi-ld:Sleep:items:NRHF:98813192",  
-    "urn:ngsi-ld:Sleep:items:ROUA:34648361"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Sleep:items:JVPG:56549433",  
-    "urn:ngsi-ld:Sleep:items:CGGJ:52083387"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -0.4463355,  
-      155.160512  
+    "id": "urn:ngsi-ld:Sleep:id:DQYD:66419001",  
+    "dateCreated": "2006-06-22T00:23:34Z",  
+    "dateModified": "1985-04-14T07:05:46Z",  
+    "source": "Team improve per difficult design perhaps remain. Something town now year.",  
+    "name": "Debate notice eat share day fire serve seem. Through want husband.",  
+    "alternateName": "System his with management resource real various. Task right mean paper western seem near beat. Skin expert that pattern drive free that.",  
+    "description": "Here ability even exist class movement grow. War church probably.",  
+    "dataProvider": "Consumer fish himself crime finish some pretty. Kid stand individual tree weight stand apply.",  
+    "owner": [  
+        "urn:ngsi-ld:Sleep:items:NRHF:98813192",  
+        "urn:ngsi-ld:Sleep:items:ROUA:34648361"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Sleep:items:JVPG:56549433",  
+        "urn:ngsi-ld:Sleep:items:CGGJ:52083387"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -0.4463355,  
+            155.160512  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Example experience bar cover machine him along. Last must general sister yourself. Mean also store apply.",  
+        "addressLocality": "They arrive among would participant those seem. Run door mission player ever year.",  
+        "addressRegion": "Professor we raise. Brother treat you ahead whatever tough game necessary.",  
+        "addressCountry": "Technology specific key generation. Process most apply choose feel visit with. Play modern state address popular job.",  
+        "postalCode": "Yourself news TV institution how again field democratic. Industry water body.",  
+        "postOfficeBoxNumber": "Series election free cold. System information else even evening."  
+    },  
+    "areaServed": "Your reality almost four use. Degree simply bag drop.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Example experience bar cover machine him along. Last must general sister yourself. Mean also store apply.",  
-    "addressLocality": "They arrive among would participant those seem. Run door mission player ever year.",  
-    "addressRegion": "Professor we raise. Brother treat you ahead whatever tough game necessary.",  
-    "addressCountry": "Technology specific key generation. Process most apply choose feel visit with. Play modern state address popular job.",  
-    "postalCode": "Yourself news TV institution how again field democratic. Industry water body.",  
-    "postOfficeBoxNumber": "Series election free cold. System information else even evening."  
-  },  
-  "areaServed": "Your reality almost four use. Degree simply bag drop.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-#### 睡眠NGSI-LDの正規化例  
-ここでは、Sleepを正規化したJSON-LD形式の例を示します。これはオプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### スリープ NGSI-LD 正規化例  
+以下は、正規化された JSON-LD 形式の Sleep の例である。これは、オプションを使用しない場合はNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Sleep:id:DEWW:30338193",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1988-01-12T23:48:03Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2007-07-28T08:40:23Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Agree daughter finally morning less share than. Choose training between bring town. Door truth upon upon."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Position keep forward crime reach. Especially wish paper."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Significant concern significant local concern represent particularly serious. Others above onto no. Lawyer hard able two thus oil sit action."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Matter raise goal my. Into send what."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "American protect material. Three realize leader watch entire material."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Sleep:items:ORVF:05537533",  
-      "urn:ngsi-ld:Sleep:items:EZSB:78221686"  
+    "id": "urn:ngsi-ld:Sleep:id:DEWW:30338193",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1988-01-12T23:48:03Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2007-07-28T08:40:23Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Agree daughter finally morning less share than. Choose training between bring town. Door truth upon upon."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Position keep forward crime reach. Especially wish paper."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Significant concern significant local concern represent particularly serious. Others above onto no. Lawyer hard able two thus oil sit action."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Matter raise goal my. Into send what."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "American protect material. Three realize leader watch entire material."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Sleep:items:ORVF:05537533",  
+            "urn:ngsi-ld:Sleep:items:EZSB:78221686"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Sleep:items:UJRS:30722806"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -86.6050775,  
+                -132.16776  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Successful better perform job deal. Work concern require join opportunity magazine general. Occur determine firm nice school. Activity create central executive.",  
+            "addressLocality": "Imagine quality last purpose. Sound like catch population writer. Possible establish provide. Less strong certainly visit open.",  
+            "addressRegion": "Successful according meet hear recent well. Now policy lay democratic he something important.",  
+            "addressCountry": "Something edge pressure wide six suffer. Age consider specific foreign measure. Fly those huge general future hand woman.",  
+            "postalCode": "Between return long rest her best prepare relationship. Instead set art sport quickly.",  
+            "postOfficeBoxNumber": "Sort threat between deal. Over turn every billion. On look lot deal rock. Society wait pass century figure crime picture."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Thought chance help hear miss ability. Remember report real matter strategy. Offer walk as plant environment. Control executive class list."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Sleep:items:UJRS:30722806"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -86.6050775,  
-        -132.16776  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Successful better perform job deal. Work concern require join opportunity magazine general. Occur determine firm nice school. Activity create central executive.",  
-      "addressLocality": "Imagine quality last purpose. Sound like catch population writer. Possible establish provide. Less strong certainly visit open.",  
-      "addressRegion": "Successful according meet hear recent well. Now policy lay democratic he something important.",  
-      "addressCountry": "Something edge pressure wide six suffer. Age consider specific foreign measure. Fly those huge general future hand woman.",  
-      "postalCode": "Between return long rest her best prepare relationship. Instead set art sport quickly.",  
-      "postOfficeBoxNumber": "Sort threat between deal. Over turn every billion. On look lot deal rock. Society wait pass century figure crime picture."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Thought chance help hear miss ability. Remember report real matter strategy. Offer walk as plant environment. Control executive class list."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱い方については、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照のこと。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
