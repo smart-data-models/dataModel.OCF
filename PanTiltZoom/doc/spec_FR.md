@@ -7,23 +7,23 @@
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-Description globale : **Adaptation du programme Smart Data Models des modèles de données IoTData originaux. Cette ressource spécifie les capacités de panoramique, d'inclinaison et de zoom d'un dispositif. Le type de ressource est dynamique et indique si les valeurs s'appliquent au mouvement physique du dispositif ou aux améliorations numériques/virtuelles de l'image. Pour le mouvement physique, le type de ressource est "oic.r.movement.ptz". Pour les améliorations numériques/virtuelles de l'image, le type de ressource est "oic.r.image.ptz". Les propriétés 'pan' et 'tilt' sont spécifiées en degrés. La propriété 'zoomFactor' est une valeur comprise entre 1 et 100 pour un zoom linéaire (optique). Le facteur de zoom est une valeur comprise dans la plage [1x, 2x, 4x, 8x, 16x, 32x] pour le zoom numérique. S'il n'y a pas de valeur de zoom à définir, le facteur de zoom sera '1x'. La valeur 0 degrés signifie neutre, il s'agit d'un paramètre défini par le fournisseur. Notez que cette ressource peut également être utilisée pour créer un décalage pour le mouvement physique. Dans ce cas, la valeur du type de ressource est : "oic.r.movement.offset.ptz". Notez que cette ressource peut également être utilisée pour créer un décalage pour le mouvement de l'image. Dans ce cas, la valeur du type de ressource est : "oic.r.image.offset.ptz". Lorsque la valeur de la propriété 'pan_range' est omise, la plage est [-180.0,180.0]. Si la propriété 'pan' n'est pas prise en charge, la plage est [0,0,0]. Lorsque la valeur de la propriété 'tilt_range' est omise, la plage est [-180,0,180,0]. Si la propriété "tilt" n'est pas prise en charge, la plage est de [0.0,0.0].  
+Description globale : **Adaptation du programme Smart Data Models des modèles de données IoTData originaux. Cette ressource spécifie les capacités de panoramique, d'inclinaison et de zoom d'un appareil. Le type de ressource est dynamique et indique si les valeurs s'appliquent au mouvement physique de l'appareil ou aux améliorations numériques/virtuelles de l'image. Pour le mouvement physique, le type de ressource est "oic.r.movement.ptz". Pour les améliorations numériques/virtuelles de l'image, le type de ressource est "oic.r.image.ptz". Les propriétés "pan" et "tilt" sont spécifiées en degrés. La propriété "zoomFactor" est une valeur comprise entre 1 et 100 pour un zoom linéaire (optique). Le facteur de zoom est une valeur comprise dans la plage [1x, 2x, 4x, 8x, 16x, 32x] pour le zoom numérique. S'il n'y a pas de valeur de zoom à définir, le facteur de zoom sera "1x". La valeur 0 degré signifie neutre, il s'agit d'un paramètre défini par le fournisseur. Notez que cette ressource peut également être utilisée pour créer un décalage pour le mouvement physique. Dans ce cas, la valeur du type de ressource est : "oic.r.movement.offset.ptz" Il convient de noter que cette ressource peut également être utilisée pour créer un décalage pour le mouvement de l'image. Dans ce cas, la valeur du type de ressource est : "oic.r.image.offset.ptz". Lorsque la valeur de la propriété "pan_range" est omise, la plage est de [-180.0,180.0]. Si la fonction "pan" n'est pas prise en charge, la plage est [0.0,0.0]. Si la valeur de la propriété "tilt_range" est omise, la plage est [-180.0,180.0]. Si la fonction "tilt" n'est pas prise en charge, la plage sera [0.0,0.0].  
 version : 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
-<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
-- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour cet élément  - `areaServed[string]`: La zone géographique où un service ou un article offert est fourni  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified[string]`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description[string]`: Une description de cet article  - `id[*]`: Identifiant unique de l'entité  - `if[array]`: L'ensemble des interfaces OCF supportées par cette ressource.  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `n[string]`: Nom amical de la ressource  - `name[string]`: Le nom de cet élément.  - `owner[array]`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `pan[number]`: Le panoramique horizontal en degrés.  - `pan_range[array]`: La plage valide pour la propriété de la ressource sous forme de nombre. La première valeur du tableau est la valeur minimale, la deuxième valeur du tableau est la valeur maximale.  - `precision[number]`: Lorsqu'elle est exposée, la valeur de "précision" fournit une tolérance +/- par rapport aux propriétés de la ressource. Ainsi, si une propriété est mise à jour avec une valeur et que cette propriété est ensuite récupérée, la valeur récupérée est valide si elle se situe dans la plage de la valeur définie +/- la précision.  - `rt[array]`: Le type de ressource.  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `tilt[number]`: L'inclinaison verticale en degrés.  - `tilt_range[array]`: La plage valide pour la propriété de la ressource sous forme de nombre. La première valeur du tableau est la valeur minimale, la deuxième valeur du tableau est la valeur maximale.  - `type[string]`: Type d'entité NGSI. Il doit être PanTiltZoom  - `zoomFactor[string]`: La valeur du facteur de zoom.  - `zoomFactorRange[string]`: Les valeurs du facteur de zoom autorisées. Linéaire équivaut à 1-100 min/max.  <!-- /30-PropertiesList -->  
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il peut avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `if[array]`: L'ensemble d'interfaces OCF pris en charge par cette ressource.  - `n[string]`: Nom amical de la ressource  - `pan[number]`: Le panoramique horizontal en degrés.  - `pan_range[array]`: La plage de validité de la propriété dans la ressource, sous la forme d'un nombre. La première valeur du tableau est la valeur minimale, la deuxième valeur du tableau est la valeur maximale.  - `precision[number]`: Lorsqu'elle est exposée, la valeur de "précision" fournit une tolérance de +/- par rapport aux propriétés de la ressource. Ainsi, si une propriété est mise à jour avec une valeur et que cette propriété est ensuite récupérée, la valeur récupérée est valide si elle se situe dans la plage de la valeur définie +/- précision.  - `rt[array]`: Le type de ressources.  - `tilt[number]`: L'inclinaison verticale en degrés.  - `tilt_range[array]`: La plage de validité de la propriété dans la ressource, sous la forme d'un nombre. La première valeur du tableau est la valeur minimale, la deuxième valeur du tableau est la valeur maximale.  - `type[string]`: Type d'entité NGSI. Il doit s'agir de PanTiltZoom  - `zoomFactor[string]`: Valeur du facteur de zoom.  - `zoomFactorRange[string]`: Valeurs autorisées pour le facteur de zoom. Linéaire équivaut à 1-100 min/max.  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propriétés requises  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-Ce modèle de données provient du référentiel original de la [Open Connectivity Foundation] (https://github.com/openconnectivityfoundation/IoTDataModels). Il a été étendu pour être conforme aux exigences de la NGSI.  
+Ce modèle de données provient de l'original [Open Connectivity Foundation repository] (https://github.com/openconnectivityfoundation/IoTDataModels). Il a été étendu pour répondre aux exigences des NGSI.  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
-## Description des propriétés du modèle de données  
+## Modèle de données description des propriétés  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
@@ -32,79 +32,8 @@
 PanTiltZoom:    
   description: 'Smart Data Models Program adaptation of the original IoTData data Models. This Resource specifies the pan tilt and zoom capabilities of a device. The Resource Type is dynamic and reflects whether the values apply to   physical movement of the device or digital/virtual enhancements to the image. For physical movement the Resource Type is ''oic.r.movement.ptz''. For digital/virtual image enhancements the Resource Type is ''oic.r.image.ptz''. The Properties ''pan'' and ''tilt'' are specified in degrees. The Property ''zoomFactor'' is a value in the range 1-100 for linear (optical) zoom. The zoom factor is a value in the range [1x, 2x, 4x, 8x, 16x, 32x] for digital zoom. If there is no zoom value to set the zoom factor shall be ''1x''. The value 0 degrees means neutral, this is a vendor defined setting. Note that this resource also can be used to create an offset for physical movement. When that is the case, the Resource Type value is: ''oic.r.movement.offset.ptz'' Note that this resource also can be used to create an offset for image movement. When that is the case, the Resource Type value is: ''oic.r.image.offset.ptz''. When the Property ''pan_range'' value is omitted, then the range is [-180.0,180.0]. If ''pan'' is not supported then the range shall be [0.0,0.0] When the Property ''tilt_range'' value is omitted, then the range is [-180.0,180.0]. If ''tilt'' is not supported then the range shall be [0.0,0.0].'    
   properties:    
-    address:    
-      description: 'The mailing address'    
-      properties:    
-        addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
-          type: string    
-        addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
-          type: string    
-        addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
-          type: string    
-        postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
-          type: string    
-        postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
-          type: string    
-        streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
-          type: string    
-      type: object    
-      x-ngsi:    
-        model: https://schema.org/address    
-        type: Property    
-    alternateName:    
-      description: 'An alternative name for this item'    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
-      type: string    
-      x-ngsi:    
-        model: https://schema.org/Text    
-        type: Property    
-    dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
-      format: date-time    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
-      format: date-time    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    description:    
-      description: 'A description of this item'    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    id:    
-      anyOf: &pantiltzoom_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
-          maxLength: 256    
-          minLength: 1    
-          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
-          type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
-          format: uri    
-          type: string    
-      description: 'Unique identifier of the entity'    
-      x-ngsi:    
-        type: Property    
     if:    
-      description: 'The OCF Interface set supported by this Resource.'    
+      description: The OCF Interface set supported by this Resource.    
       items:    
         enum:    
           - oic.if.a    
@@ -116,181 +45,15 @@ PanTiltZoom:
       uniqueItems: true    
       x-ngsi:    
         type: Property    
-    location:    
-      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
-      oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
-          properties:    
-            bbox:    
-              items:    
-                type: number    
-              minItems: 4    
-              type: array    
-            coordinates:    
-              items:    
-                type: number    
-              minItems: 2    
-              type: array    
-            type:    
-              enum:    
-                - Point    
-              type: string    
-          required:    
-            - type    
-            - coordinates    
-          title: 'GeoJSON Point'    
-          type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
-          properties:    
-            bbox:    
-              items:    
-                type: number    
-              minItems: 4    
-              type: array    
-            coordinates:    
-              items:    
-                items:    
-                  type: number    
-                minItems: 2    
-                type: array    
-              minItems: 2    
-              type: array    
-            type:    
-              enum:    
-                - LineString    
-              type: string    
-          required:    
-            - type    
-            - coordinates    
-          title: 'GeoJSON LineString'    
-          type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
-          properties:    
-            bbox:    
-              items:    
-                type: number    
-              minItems: 4    
-              type: array    
-            coordinates:    
-              items:    
-                items:    
-                  items:    
-                    type: number    
-                  minItems: 2    
-                  type: array    
-                minItems: 4    
-                type: array    
-              type: array    
-            type:    
-              enum:    
-                - Polygon    
-              type: string    
-          required:    
-            - type    
-            - coordinates    
-          title: 'GeoJSON Polygon'    
-          type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
-          properties:    
-            bbox:    
-              items:    
-                type: number    
-              minItems: 4    
-              type: array    
-            coordinates:    
-              items:    
-                items:    
-                  type: number    
-                minItems: 2    
-                type: array    
-              type: array    
-            type:    
-              enum:    
-                - MultiPoint    
-              type: string    
-          required:    
-            - type    
-            - coordinates    
-          title: 'GeoJSON MultiPoint'    
-          type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
-          properties:    
-            bbox:    
-              items:    
-                type: number    
-              minItems: 4    
-              type: array    
-            coordinates:    
-              items:    
-                items:    
-                  items:    
-                    type: number    
-                  minItems: 2    
-                  type: array    
-                minItems: 2    
-                type: array    
-              type: array    
-            type:    
-              enum:    
-                - MultiLineString    
-              type: string    
-          required:    
-            - type    
-            - coordinates    
-          title: 'GeoJSON MultiLineString'    
-          type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
-          properties:    
-            bbox:    
-              items:    
-                type: number    
-              minItems: 4    
-              type: array    
-            coordinates:    
-              items:    
-                items:    
-                  items:    
-                    items:    
-                      type: number    
-                    minItems: 2    
-                    type: array    
-                  minItems: 4    
-                  type: array    
-                type: array    
-              type: array    
-            type:    
-              enum:    
-                - MultiPolygon    
-              type: string    
-          required:    
-            - type    
-            - coordinates    
-          title: 'GeoJSON MultiPolygon'    
-          type: object    
-      x-ngsi:    
-        type: GeoProperty    
     n:    
-      description: 'Friendly name of the Resource'    
+      description: Friendly name of the Resource    
       maxLength: 64    
       readOnly: true    
       type: string    
       x-ngsi:    
         type: Property    
-    name:    
-      description: 'The name of this item.'    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
-      items:    
-        anyOf: *pantiltzoom_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
-      type: array    
-      x-ngsi:    
-        type: Property    
     pan:    
-      description: 'The horizontal pan in degrees.'    
+      description: The horizontal pan in degrees.    
       type: number    
       x-ngsi:    
         type: Property    
@@ -311,7 +74,7 @@ PanTiltZoom:
       x-ngsi:    
         type: Property    
     rt:    
-      description: 'The Resource Type.'    
+      description: The Resource Type.    
       items:    
         enum:    
           - oic.r.ptz    
@@ -323,25 +86,8 @@ PanTiltZoom:
       uniqueItems: true    
       x-ngsi:    
         type: Property    
-    seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
-      oneOf:    
-        - items:    
-            format: uri    
-            type: string    
-          minItems: 1    
-          type: array    
-        - format: uri    
-          type: string    
-      x-ngsi:    
-        type: Property    
-    source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: string    
-      x-ngsi:    
-        type: Property    
     tilt:    
-      description: 'The vertical tilt in degrees.'    
+      description: The vertical tilt in degrees.    
       type: number    
       x-ngsi:    
         type: Property    
@@ -356,19 +102,19 @@ PanTiltZoom:
       x-ngsi:    
         type: Property    
     type:    
-      description: 'NGSI entity type. It has to be PanTiltZoom'    
+      description: NGSI entity type. It has to be PanTiltZoom    
       enum:    
         - PanTiltZoom    
       type: string    
       x-ngsi:    
         type: Property    
     zoomFactor:    
-      description: 'The zoom factor value.'    
+      description: The zoom factor value.    
       type: string    
       x-ngsi:    
         type: Property    
     zoomFactorRange:    
-      description: 'The allowed Zoom Factor values. Linear equates to a 1-100 min/max.'    
+      description: The allowed Zoom Factor values. Linear equates to a 1-100 min/max.    
       enum:    
         - linear    
         - 1x    
@@ -386,7 +132,7 @@ PanTiltZoom:
     - type    
   type: object    
   x-derived-from: https://github.com/OpenInterConnect/IoTDataModels/blob/master/PanTiltZoomResURI.swagger.json    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.OCF/blob/master/PanTiltZoom/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.IoTDataModels/PanTiltZoom/schema.json    
   x-model-tags: OCF    
@@ -398,8 +144,8 @@ PanTiltZoom:
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
 ## Exemples de charges utiles  
-#### PanTiltZoom NGSI-v2 valeurs-clés Exemple  
-Voici un exemple de PanTiltZoom au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+#### PanTiltZoom Valeurs clés NGSI-v2 Exemple  
+Voici un exemple de PanTiltZoom au format JSON-LD sous forme de valeurs clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données de contexte d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -439,7 +185,7 @@ PanTiltZoom:
 ```  
 </details>  
 #### PanTiltZoom NGSI-v2 normalisé Exemple  
-Voici un exemple de PanTiltZoom au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Voici un exemple de PanTiltZoom au format JSON-LD tel que normalisé. Ce format est compatible avec l'INSG-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -519,8 +265,8 @@ PanTiltZoom:
 }  
 ```  
 </details>  
-#### Valeurs-clés NGSI-LD PanTiltZoom Exemple  
-Voici un exemple de PanTiltZoom au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+#### PanTiltZoom Valeurs clés NGSI-LD Exemple  
+Voici un exemple de PanTiltZoom au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données de contexte d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -651,7 +397,7 @@ PanTiltZoom:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
+Voir [FAQ 10] (https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse à la question de savoir comment traiter les unités de magnitude.  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
