@@ -1,80 +1,42 @@
-Entidad: Dormir  
-===============  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entidad: Sleep  
+==============<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.OCF/blob/master/Sleep/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descripción global: **Adaptación del programa de modelos de datos inteligentes de los modelos de datos originales de IoTData. Este recurso describe las propiedades asociadas al sueño. El sueño muestra el tiempo pasado en cada una de las etapas del sueño (despierto, nrem1, nrem2, nrem3, nrem4, rem, sueño ligero, sueño profundo), junto con una puntuación del sueño que indica la calidad del mismo.**  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descripción global: **Adaptación del Programa Smart Data Models de los Modelos de datos IoTData originales. Este Recurso describe las Propiedades asociadas al Sueño. Sleep muestra el tiempo pasado en cada una de las etapas del sueño (despierto, nrem1, nrem2, nrem3, nrem4, rem, sueño ligero, sueño profundo), junto con una puntuación de sueño que indica la calidad del sueño.**  
+versión: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `awake`: Tiempo de permanencia en el estado de vigilia (en segundos)  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `deepsleep`: Tiempo de permanencia en la fase de sueño profundo, consistente en las fases NREM 3 y 4 (en segundos)  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `if`: El conjunto de interfaces que admite este recurso  - `lightsleep`: Tiempo de permanencia en la fase de sueño ligero, consistente en las fases NREM 1 y 2 (en segundos)  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n`: Nombre amistoso del recurso  - `name`: El nombre de este artículo.  - `nrem1`: Tiempo de permanencia en la fase 1 de movimientos oculares no rápidos (en segundos)  - `nrem2`: Tiempo de permanencia en la fase 2 de movimientos oculares no rápidos (en segundos)  - `nrem3`: Tiempo de permanencia en la fase 3 de movimientos oculares no rápidos (en segundos)  - `nrem4`: Tiempo de permanencia en la fase 4 de movimientos oculares no rápidos (en segundos)  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `precision`: Cuando se expone el valor en "precisión" proporciona una tolerancia +/- contra las Propiedades en el Recurso. Por lo tanto, si una propiedad se actualiza a un valor y esa propiedad se recupera, el valor recuperado es válido si está en el rango del valor establecido +/- precisión.  - `range_phases`: El rango válido para la Propiedad en el Recurso como un entero. El primer valor de la matriz es el valor mínimo, el segundo valor de la matriz es el valor máximo.  - `range_score`: El rango válido para la Propiedad en el Recurso como un número. El primer valor de la matriz es el valor mínimo, el segundo valor de la matriz es el valor máximo.  - `rem`: Tiempo de movimiento ocular rápido (en segundos)  - `rt`: Tipo de recurso  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `sleepscore`: Puntuación calculada a partir del tiempo transcurrido en cada fase del sueño, indicativa de la calidad del mismo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `step_phases`: Valor del paso a través del rango definido cuando el rango es un entero.  Este es el incremento para los valores válidos a través del rango; así que si el rango es 0..10 y el paso es 2 entonces los valores válidos son 0,2,4,6,8,10.  - `step_score`: Valor del paso a través del rango definido un número entero cuando el rango es un número.  Este es el incremento para los valores válidos a través del rango; así que si el rango es 0.0..10.0 y el paso es 2.5 entonces los valores válidos son 0.0,2.5,5.0,7.5,10.0.  - `type`: Tipo de entidad NGSI. Tiene que ser Sleep    
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>.  
+- `awake[integer]`: Tiempo en estado de vigilia (en segundos)  - `deepsleep[integer]`: Tiempo transcurrido en la fase de Sueño Profundo, consistente en las fases NREM 3 y 4 (en segundos)  - `if[array]`: Conjunto de interfaces que admite este recurso  - `lightsleep[integer]`: Tiempo transcurrido en la fase de sueño ligero, consistente en las fases NREM 1 y 2 (en segundos)  - `n[string]`: Nombre descriptivo del recurso  - `nrem1[integer]`: Tiempo transcurrido en la fase 1 de movimientos oculares no rápidos (en segundos)  - `nrem2[integer]`: Tiempo de permanencia en la fase 2 de movimientos oculares no rápidos (en segundos)  - `nrem3[integer]`: Tiempo de permanencia en la fase 3 de movimientos oculares no rápidos (en segundos)  - `nrem4[integer]`: Tiempo de permanencia en la fase 4 de movimientos oculares no rápidos (en segundos)  - `precision[number]`: Cuando se expone, el valor en "precisión" proporciona una tolerancia +/- con respecto a las Propiedades del Recurso. Por lo tanto, si una propiedad se actualiza con un valor y luego se recupera, el valor recuperado será válido si se encuentra dentro del intervalo del valor establecido +/- precisión.  - `range_phases[array]`: El rango válido para la Propiedad en el Recurso como un entero. El primer valor del rango es el valor mínimo, el segundo valor del rango es el valor máximo.  - `range_score[array]`: El rango válido para la Propiedad en el Recurso como un número. El primer valor de la matriz es el valor mínimo, el segundo valor de la matriz es el valor máximo.  - `rem[integer]`: Tiempo de movimiento ocular rápido (en segundos)  - `rt[array]`: Tipo de recurso  - `sleepscore[number]`: Puntuación calculada a partir del tiempo transcurrido en cada fase del sueño, indicativa de la calidad del sueño.  - `step_phases[integer]`: Valor de paso a través del rango definido cuando el rango es un número entero.  Este es el incremento para valores válidos a través del rango; así que si el rango es 0..10 y el paso es 2 entonces los valores válidos son 0,2,4,6,8,10.  - `step_score[number]`: Valor del paso a través del rango definido un número entero cuando el rango es un número.  Es el incremento de los valores válidos en el intervalo; así, si el intervalo es 0,0..10,0 y el paso es 2,5, los valores válidos son 0,0,2,5,5,0,7,5,10,0.  - `type[string]`: Tipo de entidad NGSI. Tiene que ser Sleep  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propiedades requeridas  
-- `id`  - `type`    
-Este modelo de datos procede del original [repositorio de la Open Connectivity Foundation](https://github.com/openconnectivityfoundation/IoTDataModels). Se ha ampliado para cumplir con los requisitos de la NGSI.  
-## Descripción del modelo de datos de las propiedades  
-Ordenados alfabéticamente (haga clic para ver los detalles)  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+Este modelo de datos procede del [repositorio de la Open Connectivity Foundation] original (https://github.com/openconnectivityfoundation/IoTDataModels). Se ha ampliado para cumplir los requisitos de los NGSI.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Descripción de las propiedades del modelo de datos  
+Ordenados alfabéticamente (pulse para más detalles)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Sleep:    
   description: 'Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the Properties associated with Sleep. Sleep shows the time spent in each of the sleep stages (awake, nrem1, nrem2, nrem3, nrem4, rem, light sleep, deep sleep), along with a sleep score indicating the quality of sleep.'    
   properties:    
-    address:    
-      description: 'The mailing address'    
-      properties:    
-        addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
-          type: string    
-        addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
-          type: string    
-        addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
-          type: string    
-        postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
-          type: string    
-        postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
-          type: string    
-        streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
-          type: string    
-      type: object    
-      x-ngsi:    
-        model: https://schema.org/address    
-        type: Property    
-    alternateName:    
-      description: 'An alternative name for this item'    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
-      type: string    
-      x-ngsi:    
-        model: https://schema.org/Text    
-        type: Property    
     awake:    
-      description: 'Time spent in Awake stage (in seconds)'    
+      description: Time spent in Awake stage (in seconds)    
       minimum: 0    
       readOnly: true    
       type: integer    
-      x-ngsi:    
-        type: Property    
-    dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
-      format: date-time    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
-      format: date-time    
-      type: string    
       x-ngsi:    
         type: Property    
     deepsleep:    
@@ -84,26 +46,8 @@ Sleep:
       type: integer    
       x-ngsi:    
         type: Property    
-    description:    
-      description: 'A description of this item'    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    id:    
-      anyOf: &sleep_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
-          maxLength: 256    
-          minLength: 1    
-          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
-          type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
-          format: uri    
-          type: string    
-      description: 'Unique identifier of the entity'    
-      x-ngsi:    
-        type: Property    
     if:    
-      description: 'The Interface set supported by this Resource'    
+      description: The Interface set supported by this Resource    
       items:    
         enum:    
           - oic.if.s    
@@ -122,205 +66,39 @@ Sleep:
       type: integer    
       x-ngsi:    
         type: Property    
-    location:    
-      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
-      oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
-          properties:    
-            bbox:    
-              items:    
-                type: number    
-              minItems: 4    
-              type: array    
-            coordinates:    
-              items:    
-                type: number    
-              minItems: 2    
-              type: array    
-            type:    
-              enum:    
-                - Point    
-              type: string    
-          required:    
-            - type    
-            - coordinates    
-          title: 'GeoJSON Point'    
-          type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
-          properties:    
-            bbox:    
-              items:    
-                type: number    
-              minItems: 4    
-              type: array    
-            coordinates:    
-              items:    
-                items:    
-                  type: number    
-                minItems: 2    
-                type: array    
-              minItems: 2    
-              type: array    
-            type:    
-              enum:    
-                - LineString    
-              type: string    
-          required:    
-            - type    
-            - coordinates    
-          title: 'GeoJSON LineString'    
-          type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
-          properties:    
-            bbox:    
-              items:    
-                type: number    
-              minItems: 4    
-              type: array    
-            coordinates:    
-              items:    
-                items:    
-                  items:    
-                    type: number    
-                  minItems: 2    
-                  type: array    
-                minItems: 4    
-                type: array    
-              type: array    
-            type:    
-              enum:    
-                - Polygon    
-              type: string    
-          required:    
-            - type    
-            - coordinates    
-          title: 'GeoJSON Polygon'    
-          type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
-          properties:    
-            bbox:    
-              items:    
-                type: number    
-              minItems: 4    
-              type: array    
-            coordinates:    
-              items:    
-                items:    
-                  type: number    
-                minItems: 2    
-                type: array    
-              type: array    
-            type:    
-              enum:    
-                - MultiPoint    
-              type: string    
-          required:    
-            - type    
-            - coordinates    
-          title: 'GeoJSON MultiPoint'    
-          type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
-          properties:    
-            bbox:    
-              items:    
-                type: number    
-              minItems: 4    
-              type: array    
-            coordinates:    
-              items:    
-                items:    
-                  items:    
-                    type: number    
-                  minItems: 2    
-                  type: array    
-                minItems: 2    
-                type: array    
-              type: array    
-            type:    
-              enum:    
-                - MultiLineString    
-              type: string    
-          required:    
-            - type    
-            - coordinates    
-          title: 'GeoJSON MultiLineString'    
-          type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
-          properties:    
-            bbox:    
-              items:    
-                type: number    
-              minItems: 4    
-              type: array    
-            coordinates:    
-              items:    
-                items:    
-                  items:    
-                    items:    
-                      type: number    
-                    minItems: 2    
-                    type: array    
-                  minItems: 4    
-                  type: array    
-                type: array    
-              type: array    
-            type:    
-              enum:    
-                - MultiPolygon    
-              type: string    
-          required:    
-            - type    
-            - coordinates    
-          title: 'GeoJSON MultiPolygon'    
-          type: object    
-      x-ngsi:    
-        type: GeoProperty    
     n:    
-      description: 'Friendly name of the Resource'    
+      description: Friendly name of the Resource    
       maxLength: 64    
       readOnly: true    
       type: string    
       x-ngsi:    
         type: Property    
-    name:    
-      description: 'The name of this item.'    
-      type: string    
-      x-ngsi:    
-        type: Property    
     nrem1:    
-      description: 'Time spent in Non Rapid Eye Movement stage 1 (in seconds)'    
+      description: Time spent in Non Rapid Eye Movement stage 1 (in seconds)    
       minimum: 0    
       readOnly: true    
       type: integer    
       x-ngsi:    
         type: Property    
     nrem2:    
-      description: 'Time spent in Non Rapid Eye Movement stage 2 (in seconds)'    
+      description: Time spent in Non Rapid Eye Movement stage 2 (in seconds)    
       minimum: 0    
       readOnly: true    
       type: integer    
       x-ngsi:    
         type: Property    
     nrem3:    
-      description: 'Time spent in Non Rapid Eye Movement stage 3 (in seconds)'    
+      description: Time spent in Non Rapid Eye Movement stage 3 (in seconds)    
       minimum: 0    
       readOnly: true    
       type: integer    
       x-ngsi:    
         type: Property    
     nrem4:    
-      description: 'Time spent in Non Rapid Eye Movement stage 4 (in seconds)'    
+      description: Time spent in Non Rapid Eye Movement stage 4 (in seconds)    
       minimum: 0    
       readOnly: true    
       type: integer    
-      x-ngsi:    
-        type: Property    
-    owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
-      items:    
-        anyOf: *sleep_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
-      type: array    
       x-ngsi:    
         type: Property    
     precision:    
@@ -350,14 +128,14 @@ Sleep:
       x-ngsi:    
         type: Property    
     rem:    
-      description: 'Time spent in Rapid Eye Movement (in seconds)'    
+      description: Time spent in Rapid Eye Movement (in seconds)    
       minimum: 0    
       readOnly: true    
       type: integer    
       x-ngsi:    
         type: Property    
     rt:    
-      description: 'Resource Type'    
+      description: Resource Type    
       items:    
         enum:    
           - oic.r.sleep    
@@ -368,28 +146,11 @@ Sleep:
       uniqueItems: true    
       x-ngsi:    
         type: Property    
-    seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
-      oneOf:    
-        - items:    
-            format: uri    
-            type: string    
-          minItems: 1    
-          type: array    
-        - format: uri    
-          type: string    
-      x-ngsi:    
-        type: Property    
     sleepscore:    
       description: 'Score computed from the time spent in each sleep stage, indicative of the quality of sleep'    
       minimum: 0    
       readOnly: true    
       type: number    
-      x-ngsi:    
-        type: Property    
-    source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: string    
       x-ngsi:    
         type: Property    
     step_phases:    
@@ -405,7 +166,7 @@ Sleep:
       x-ngsi:    
         type: Property    
     type:    
-      description: 'NGSI entity type. It has to be Sleep'    
+      description: NGSI entity type. It has to be Sleep    
       enum:    
         - Sleep    
       type: string    
@@ -416,16 +177,21 @@ Sleep:
     - type    
   type: object    
   x-derived-from: https://github.com/OpenInterConnect/IoTDataModels/blob/master/SleepResURI.swagger.json    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.OCF/blob/master/Sleep/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.IoTDataModels/Sleep/schema.json    
   x-model-tags: OCF    
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Ejemplo de carga útil  
-#### Dormir NGSI-v2 valores-clave Ejemplo  
-Aquí hay un ejemplo de un Sueño en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+#### Dormir NGSI-v2 key-values Ejemplo  
+He aquí un ejemplo de un Sueño en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Sleep:id:DQYD:66419001",  
@@ -462,8 +228,10 @@ Sleep:
   "areaServed": "Your reality almost four use. Degree simply bag drop."  
 }  
 ```  
+</details>  
 #### Sueño NGSI-v2 normalizado Ejemplo  
-Este es un ejemplo de un Sueño en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+He aquí un ejemplo de un Sueño en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": {  
@@ -541,127 +309,141 @@ Sleep:
   }  
 }  
 ```  
+</details>  
 #### Dormir NGSI-LD key-values Ejemplo  
-Aquí hay un ejemplo de un Sueño en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+He aquí un ejemplo de un Sueño en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Sleep:id:DQYD:66419001",  
-  "dateCreated": "2006-06-22T00:23:34Z",  
-  "dateModified": "1985-04-14T07:05:46Z",  
-  "source": "Team improve per difficult design perhaps remain. Something town now year.",  
-  "name": "Debate notice eat share day fire serve seem. Through want husband.",  
-  "alternateName": "System his with management resource real various. Task right mean paper western seem near beat. Skin expert that pattern drive free that.",  
-  "description": "Here ability even exist class movement grow. War church probably.",  
-  "dataProvider": "Consumer fish himself crime finish some pretty. Kid stand individual tree weight stand apply.",  
-  "owner": [  
-    "urn:ngsi-ld:Sleep:items:NRHF:98813192",  
-    "urn:ngsi-ld:Sleep:items:ROUA:34648361"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Sleep:items:JVPG:56549433",  
-    "urn:ngsi-ld:Sleep:items:CGGJ:52083387"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -0.4463355,  
-      155.160512  
+    "id": "urn:ngsi-ld:Sleep:id:DQYD:66419001",  
+    "dateCreated": "2006-06-22T00:23:34Z",  
+    "dateModified": "1985-04-14T07:05:46Z",  
+    "source": "Team improve per difficult design perhaps remain. Something town now year.",  
+    "name": "Debate notice eat share day fire serve seem. Through want husband.",  
+    "alternateName": "System his with management resource real various. Task right mean paper western seem near beat. Skin expert that pattern drive free that.",  
+    "description": "Here ability even exist class movement grow. War church probably.",  
+    "dataProvider": "Consumer fish himself crime finish some pretty. Kid stand individual tree weight stand apply.",  
+    "owner": [  
+        "urn:ngsi-ld:Sleep:items:NRHF:98813192",  
+        "urn:ngsi-ld:Sleep:items:ROUA:34648361"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Sleep:items:JVPG:56549433",  
+        "urn:ngsi-ld:Sleep:items:CGGJ:52083387"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -0.4463355,  
+            155.160512  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Example experience bar cover machine him along. Last must general sister yourself. Mean also store apply.",  
+        "addressLocality": "They arrive among would participant those seem. Run door mission player ever year.",  
+        "addressRegion": "Professor we raise. Brother treat you ahead whatever tough game necessary.",  
+        "addressCountry": "Technology specific key generation. Process most apply choose feel visit with. Play modern state address popular job.",  
+        "postalCode": "Yourself news TV institution how again field democratic. Industry water body.",  
+        "postOfficeBoxNumber": "Series election free cold. System information else even evening."  
+    },  
+    "areaServed": "Your reality almost four use. Degree simply bag drop.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Example experience bar cover machine him along. Last must general sister yourself. Mean also store apply.",  
-    "addressLocality": "They arrive among would participant those seem. Run door mission player ever year.",  
-    "addressRegion": "Professor we raise. Brother treat you ahead whatever tough game necessary.",  
-    "addressCountry": "Technology specific key generation. Process most apply choose feel visit with. Play modern state address popular job.",  
-    "postalCode": "Yourself news TV institution how again field democratic. Industry water body.",  
-    "postOfficeBoxNumber": "Series election free cold. System information else even evening."  
-  },  
-  "areaServed": "Your reality almost four use. Degree simply bag drop.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### Sueño NGSI-LD normalizado Ejemplo  
-Este es un ejemplo de un Sueño en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+He aquí un ejemplo de un Sueño en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Sleep:id:DEWW:30338193",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1988-01-12T23:48:03Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2007-07-28T08:40:23Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Agree daughter finally morning less share than. Choose training between bring town. Door truth upon upon."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Position keep forward crime reach. Especially wish paper."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Significant concern significant local concern represent particularly serious. Others above onto no. Lawyer hard able two thus oil sit action."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Matter raise goal my. Into send what."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "American protect material. Three realize leader watch entire material."  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Sleep:items:ORVF:05537533",  
-      "urn:ngsi-ld:Sleep:items:EZSB:78221686"  
+    "id": "urn:ngsi-ld:Sleep:id:DEWW:30338193",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1988-01-12T23:48:03Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2007-07-28T08:40:23Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Agree daughter finally morning less share than. Choose training between bring town. Door truth upon upon."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Position keep forward crime reach. Especially wish paper."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Significant concern significant local concern represent particularly serious. Others above onto no. Lawyer hard able two thus oil sit action."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Matter raise goal my. Into send what."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "American protect material. Three realize leader watch entire material."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Sleep:items:ORVF:05537533",  
+            "urn:ngsi-ld:Sleep:items:EZSB:78221686"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Sleep:items:UJRS:30722806"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -86.6050775,  
+                -132.16776  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Successful better perform job deal. Work concern require join opportunity magazine general. Occur determine firm nice school. Activity create central executive.",  
+            "addressLocality": "Imagine quality last purpose. Sound like catch population writer. Possible establish provide. Less strong certainly visit open.",  
+            "addressRegion": "Successful according meet hear recent well. Now policy lay democratic he something important.",  
+            "addressCountry": "Something edge pressure wide six suffer. Age consider specific foreign measure. Fly those huge general future hand woman.",  
+            "postalCode": "Between return long rest her best prepare relationship. Instead set art sport quickly.",  
+            "postOfficeBoxNumber": "Sort threat between deal. Over turn every billion. On look lot deal rock. Society wait pass century figure crime picture."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Thought chance help hear miss ability. Remember report real matter strategy. Offer walk as plant environment. Control executive class list."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Sleep:items:UJRS:30722806"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -86.6050775,  
-        -132.16776  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Successful better perform job deal. Work concern require join opportunity magazine general. Occur determine firm nice school. Activity create central executive.",  
-      "addressLocality": "Imagine quality last purpose. Sound like catch population writer. Possible establish provide. Less strong certainly visit open.",  
-      "addressRegion": "Successful according meet hear recent well. Now policy lay democratic he something important.",  
-      "addressCountry": "Something edge pressure wide six suffer. Age consider specific foreign measure. Fly those huge general future hand woman.",  
-      "postalCode": "Between return long rest her best prepare relationship. Instead set art sport quickly.",  
-      "postOfficeBoxNumber": "Sort threat between deal. Over turn every billion. On look lot deal rock. Society wait pass century figure crime picture."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Thought chance help hear miss ability. Remember report real matter strategy. Offer walk as plant environment. Control executive class list."  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
