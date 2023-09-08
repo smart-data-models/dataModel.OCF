@@ -142,6 +142,10 @@
         "automode": "https://smartdatamodels.org/dataModel.OCF/automode",
         "availablelevels": "https://smartdatamodels.org/dataModel.OCF/availablelevels",
         "awake": "https://smartdatamodels.org/dataModel.OCF/awake",
+        "bbox": {
+            "@container": "@list",
+            "@id": "geojson:bbox"
+        },
         "bloc": "https://smartdatamodels.org/dataModel.OCF/bloc",
         "bmi": "https://smartdatamodels.org/dataModel.OCF/bmi",
         "bodyfat": "https://smartdatamodels.org/dataModel.OCF/bodyfat",
@@ -172,6 +176,10 @@
         "contaminanttype": "https://smartdatamodels.org/dataModel.OCF/contaminanttype",
         "contaminantvalue": "https://smartdatamodels.org/dataModel.OCF/contaminantvalue",
         "conversion": "https://smartdatamodels.org/dataModel.OCF/conversion",
+        "coordinates": {
+            "@container": "@list",
+            "@id": "geojson:coordinates"
+        },
         "count": "https://smartdatamodels.org/dataModel.OCF/count",
         "countdown": "https://smartdatamodels.org/dataModel.OCF/countdown",
         "cri": "https://smartdatamodels.org/dataModel.OCF/cri",
@@ -325,6 +333,7 @@
         "runtime": "https://smartdatamodels.org/dataModel.OCF/runtime",
         "samplelocation": "https://smartdatamodels.org/dataModel.OCF/samplelocation",
         "saturation": "https://smartdatamodels.org/dataModel.OCF/saturation",
+        "sdp": "https://smartdatamodels.org/dataModel.OCF/sdp",
         "seeAlso": "https://smartdatamodels.org/seeAlso",
         "sensitivity": "https://smartdatamodels.org/dataModel.OCF/sensitivity",
         "settings-accessibility": "https://smartdatamodels.org/dataModel.OCF/settings-accessibility",
@@ -400,6 +409,7 @@
         "typeofconsumable": "https://smartdatamodels.org/dataModel.OCF/typeofconsumable",
         "unit": "https://smartdatamodels.org/dataModel.OCF/unit",
         "units": "https://smartdatamodels.org/dataModel.OCF/units",
+        "uri": "ngsi-ld:uri",
         "url": "https://smartdatamodels.org/url",
         "userid": "https://smartdatamodels.org/dataModel.OCF/userid",
         "utterance": "https://smartdatamodels.org/dataModel.OCF/utterance",
