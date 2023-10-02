@@ -1,3 +1,3 @@
-/* (Beta) Export of data model capacity of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model capacity of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE capacity_type AS ENUM ('capacity');
-CREATE TABLE capacity (address json, alternateName text, areaServed text, capacity text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, if json, location json, n text, name text, owner json, rt json, seeAlso json, source text, type capacity_type);
+CREATE TABLE capacity (address JSON, alternateName TEXT, areaServed TEXT, capacity NUMERIC, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, if JSON, n TEXT, name TEXT, owner JSON, rt JSON, source TEXT, type capacity_type);
