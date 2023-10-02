@@ -1,3 +1,3 @@
-/* (Beta) Export of data model Deodorization of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE currentstate_type AS ENUM ('off', 'on');CREATE TYPE mode_type AS ENUM ('off', 'on', 'auto');CREATE TYPE Deodorization_type AS ENUM ('Deodorization');
-CREATE TABLE Deodorization (address json, alternateName text, areaServed text, currentstate currentstate_type, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, if json, location json, mode mode_type, n text, name text, owner json, rt json, seeAlso json, source text, type Deodorization_type);
+/* (Beta) Export of data model Deodorization of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE currentstate_type AS ENUM ('off','on');CREATE TYPE mode_type AS ENUM ('off','on','auto');CREATE TYPE Deodorization_type AS ENUM ('Deodorization');
+CREATE TABLE Deodorization (currentstate currentstate_type, if JSON, mode mode_type, n TEXT, rt JSON, type Deodorization_type);
