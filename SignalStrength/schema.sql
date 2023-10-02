@@ -1,3 +1,3 @@
-/* (Beta) Export of data model SignalStrength of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model SignalStrength of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE SignalStrength_type AS ENUM ('SignalStrength');
-CREATE TABLE SignalStrength (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, if json, location json, lqi text, n text, name text, owner json, rssi text, rt json, seeAlso json, source text, type SignalStrength_type);
+CREATE TABLE SignalStrength (if JSON, lqi NUMERIC, n TEXT, rssi NUMERIC, rt JSON, type SignalStrength_type);
