@@ -1,3 +1,3 @@
-/* (Beta) Export of data model BodySoftLeanMass of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE BodySoftLeanMass_type AS ENUM ('BodySoftLeanMass');CREATE TYPE units_type AS ENUM ('kg', 'lb', 'percent');
-CREATE TABLE BodySoftLeanMass (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, if json, location json, n text, name text, owner json, precision text, range json, rt json, seeAlso json, slm text, source text, step text, type BodySoftLeanMass_type, units units_type);
+/* (Beta) Export of data model BodySoftLeanMass of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE BodySoftLeanMass_type AS ENUM ('BodySoftLeanMass');CREATE TYPE units_type AS ENUM ('kg','lb','percent');
+CREATE TABLE BodySoftLeanMass (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, if JSON, n TEXT, name TEXT, owner JSON, precision NUMERIC, range JSON, rt JSON, slm NUMERIC, source TEXT, step NUMERIC, type BodySoftLeanMass_type, units units_type);
