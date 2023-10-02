@@ -1,3 +1,3 @@
-/* (Beta) Export of data model OpenLevel of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model OpenLevel of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE OpenLevel_type AS ENUM ('OpenLevel');
-CREATE TABLE OpenLevel (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, if json, location json, n text, name text, openLevel integer, owner json, range json, rt json, seeAlso json, source text, step integer, type OpenLevel_type);
+CREATE TABLE OpenLevel (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, if JSON, n TEXT, name TEXT, openLevel NUMERIC, owner JSON, range JSON, rt JSON, source TEXT, step NUMERIC, type OpenLevel_type);
