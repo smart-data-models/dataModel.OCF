@@ -1,3 +1,3 @@
-/* (Beta) Export of data model atmosphericPressure of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model atmosphericPressure of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE atmosphericPressure_type AS ENUM ('atmosphericPressure');
-CREATE TABLE atmosphericPressure (address json, alternateName text, areaServed text, atmosphericPressure text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, if json, location json, n text, name text, owner json, precision text, range json, rt json, seeAlso json, source text, step text, type atmosphericPressure_type);
+CREATE TABLE atmosphericPressure (address JSON, alternateName TEXT, areaServed TEXT, atmosphericPressure NUMERIC, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, if JSON, n TEXT, name TEXT, owner JSON, precision NUMERIC, range JSON, rt JSON, source TEXT, step NUMERIC, type atmosphericPressure_type);
