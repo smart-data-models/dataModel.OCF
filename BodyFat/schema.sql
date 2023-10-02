@@ -1,3 +1,3 @@
-/* (Beta) Export of data model BodyFat of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE BodyFat_type AS ENUM ('BodyFat');CREATE TYPE units_type AS ENUM ('kg', 'lb', 'percent');
-CREATE TABLE BodyFat (address json, alternateName text, areaServed text, bodyfat text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, if json, location json, n text, name text, owner json, precision text, range json, rt json, seeAlso json, source text, step text, type BodyFat_type, units units_type);
+/* (Beta) Export of data model BodyFat of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE BodyFat_type AS ENUM ('BodyFat');CREATE TYPE units_type AS ENUM ('kg','lb','percent');
+CREATE TABLE BodyFat (address JSON, alternateName TEXT, areaServed TEXT, bodyfat NUMERIC, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, if JSON, n TEXT, name TEXT, owner JSON, precision NUMERIC, range JSON, rt JSON, source TEXT, step NUMERIC, type BodyFat_type, units units_type);
