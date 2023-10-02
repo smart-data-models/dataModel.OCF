@@ -1,3 +1,3 @@
-/* (Beta) Export of data model Speech of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model Speech of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE Speech_type AS ENUM ('Speech');
-CREATE TABLE Speech (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, if json, location json, n text, name text, owner json, rt json, seeAlso json, source text, supportedLanguages json, supportedVoices text, type Speech_type, utterance text);
+CREATE TABLE Speech (if JSON, n TEXT, rt JSON, supportedLanguages JSON, supportedVoices TEXT, type Speech_type, utterance TEXT);
