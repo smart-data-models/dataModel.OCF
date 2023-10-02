@@ -1,3 +1,3 @@
-/* (Beta) Export of data model Inverter of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE status_type AS ENUM ('on', 'off', 'trip');CREATE TYPE Inverter_type AS ENUM ('Inverter');
-CREATE TABLE Inverter (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, if json, inputcurrent text, inputvoltage text, location json, maxvoltmppt text, minvoltmppt text, n text, name text, outputpower text, owner json, ratedpower text, rt json, seeAlso json, source text, status status_type, timestamp timestamp, type Inverter_type);
+/* (Beta) Export of data model Inverter of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE status_type AS ENUM ('on','off','trip');CREATE TYPE Inverter_type AS ENUM ('Inverter');
+CREATE TABLE Inverter (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, if JSON, inputcurrent NUMERIC, inputvoltage NUMERIC, maxvoltmppt NUMERIC, minvoltmppt NUMERIC, n TEXT, name TEXT, outputpower NUMERIC, owner JSON, ratedpower NUMERIC, rt JSON, source TEXT, status status_type, timestamp TIMESTAMP, type Inverter_type);
