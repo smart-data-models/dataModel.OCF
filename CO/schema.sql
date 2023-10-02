@@ -1,3 +1,3 @@
-/* (Beta) Export of data model CO of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model CO of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE CO_type AS ENUM ('CO');
-CREATE TABLE CO (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, if json, location json, measurement text, n text, name text, owner json, precision text, range json, rt json, seeAlso json, source text, step text, type CO_type, value text);
+CREATE TABLE CO (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, if JSON, measurement NUMERIC, n TEXT, name TEXT, owner JSON, precision NUMERIC, range JSON, rt JSON, source TEXT, step NUMERIC, type CO_type, value BOOLEAN);
