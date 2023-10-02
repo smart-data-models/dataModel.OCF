@@ -1,3 +1,3 @@
-/* (Beta) Export of data model Button of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model Button of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE Button_type AS ENUM ('Button');
-CREATE TABLE Button (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, if json, location json, n text, name text, owner json, rt json, seeAlso json, source text, type Button_type, value text);
+CREATE TABLE Button (if JSON, n TEXT, rt JSON, type Button_type, value BOOLEAN);
