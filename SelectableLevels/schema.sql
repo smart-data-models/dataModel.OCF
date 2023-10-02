@@ -1,3 +1,3 @@
-/* (Beta) Export of data model SelectableLevels of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model SelectableLevels of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE SelectableLevels_type AS ENUM ('SelectableLevels');
-CREATE TABLE SelectableLevels (address json, alternateName text, areaServed text, availablelevels json, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, if json, location json, name text, owner json, rt json, seeAlso json, source text, targetlevel text, type SelectableLevels_type);
+CREATE TABLE SelectableLevels (availablelevels JSON, if JSON, rt JSON, targetlevel NUMERIC, type SelectableLevels_type);
