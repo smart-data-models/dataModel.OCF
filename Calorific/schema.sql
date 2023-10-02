@@ -1,3 +1,3 @@
-/* (Beta) Export of data model Calorific of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model Calorific of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE Calorific_type AS ENUM ('Calorific');
-CREATE TABLE Calorific (address json, alternateName text, areaServed text, calorific text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, if json, location json, n text, name text, owner json, precision text, rt json, seeAlso json, source text, type Calorific_type);
+CREATE TABLE Calorific (calorific NUMERIC, if JSON, n TEXT, precision NUMERIC, rt JSON, type Calorific_type);
