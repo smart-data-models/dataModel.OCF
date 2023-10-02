@@ -1,3 +1,3 @@
-/* (Beta) Export of data model Clock of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model Clock of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE Clock_type AS ENUM ('Clock');
-CREATE TABLE Clock (address json, alternateName text, areaServed text, countdown text, dataProvider text, dateCreated timestamp, dateModified timestamp, datetime timestamp, description text, id text, if json, location json, n text, name text, owner json, rt json, seeAlso json, source text, type Clock_type);
+CREATE TABLE Clock (countdown NUMERIC, datetime TIMESTAMP, if JSON, n TEXT, rt JSON, type Clock_type);
