@@ -1,3 +1,3 @@
-/* (Beta) Export of data model PanTiltZoom of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE PanTiltZoom_type AS ENUM ('PanTiltZoom');CREATE TYPE zoomFactorRange_type AS ENUM ('linear', '1x', '2x', '4x', '8x', '16x', '32x');
-CREATE TABLE PanTiltZoom (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, if json, location json, n text, name text, owner json, pan text, pan_range json, precision text, rt json, seeAlso json, source text, tilt text, tilt_range json, type PanTiltZoom_type, zoomFactor text, zoomFactorRange zoomFactorRange_type);
+/* (Beta) Export of data model PanTiltZoom of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE PanTiltZoom_type AS ENUM ('PanTiltZoom');CREATE TYPE zoomFactorRange_type AS ENUM ('linear','1x','2x','4x','8x','16x','32x');
+CREATE TABLE PanTiltZoom (if JSON, n TEXT, pan NUMERIC, pan_range JSON, precision NUMERIC, rt JSON, tilt NUMERIC, tilt_range JSON, type PanTiltZoom_type, zoomFactor TEXT, zoomFactorRange zoomFactorRange_type);
