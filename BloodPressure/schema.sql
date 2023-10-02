@@ -1,3 +1,3 @@
-/* (Beta) Export of data model BloodPressure of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE BloodPressure_type AS ENUM ('BloodPressure');CREATE TYPE units_type AS ENUM ('mmHg', 'kPa');
-CREATE TABLE BloodPressure (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, diastolic text, id text, if json, location json, map text, n text, name text, owner json, precision text, range json, rt json, seeAlso json, source text, step text, systolic text, type BloodPressure_type, units units_type);
+/* (Beta) Export of data model BloodPressure of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE BloodPressure_type AS ENUM ('BloodPressure');CREATE TYPE units_type AS ENUM ('mmHg','kPa');
+CREATE TABLE BloodPressure (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, diastolic NUMERIC, if JSON, map NUMERIC, n TEXT, name TEXT, owner JSON, precision NUMERIC, range JSON, rt JSON, source TEXT, step NUMERIC, systolic NUMERIC, type BloodPressure_type, units units_type);
