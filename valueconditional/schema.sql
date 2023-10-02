@@ -1,3 +1,3 @@
-/* (Beta) Export of data model valueconditional of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model valueconditional of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE valueconditional_type AS ENUM ('valueconditional');
-CREATE TABLE valueconditional (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, if json, location json, maxnotifyperiod integer, minnotifyperiod integer, n text, name text, owner json, rt json, seeAlso json, source text, threshold text, type valueconditional_type);
+CREATE TABLE valueconditional (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, if JSON, maxnotifyperiod NUMERIC, minnotifyperiod NUMERIC, n TEXT, name TEXT, owner JSON, rt JSON, source TEXT, threshold NUMERIC, type valueconditional_type);
