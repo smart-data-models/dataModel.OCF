@@ -1,3 +1,3 @@
-/* (Beta) Export of data model KeyCardSwitch of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE stateofcard_type AS ENUM ('validCardInserted', 'validCardNotInserted');CREATE TYPE KeyCardSwitch_type AS ENUM ('KeyCardSwitch');
-CREATE TABLE KeyCardSwitch (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, if json, location json, n text, name text, owner json, rt json, seeAlso json, source text, stateofcard stateofcard_type, type KeyCardSwitch_type);
+/* (Beta) Export of data model KeyCardSwitch of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE stateofcard_type AS ENUM ('validCardInserted','validCardNotInserted');CREATE TYPE KeyCardSwitch_type AS ENUM ('KeyCardSwitch');
+CREATE TABLE KeyCardSwitch (if JSON, n TEXT, rt JSON, stateofcard stateofcard_type, type KeyCardSwitch_type);
