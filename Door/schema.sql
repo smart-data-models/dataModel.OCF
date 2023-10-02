@@ -1,3 +1,3 @@
-/* (Beta) Export of data model Door of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE openState_type AS ENUM ('Open', 'Closed');CREATE TYPE Door_type AS ENUM ('Door');
-CREATE TABLE Door (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, if json, location json, n text, name text, openAlarm text, openDuration text, openState openState_type, owner json, rt json, seeAlso json, source text, type Door_type);
+/* (Beta) Export of data model Door of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE openState_type AS ENUM ('Open','Closed');CREATE TYPE Door_type AS ENUM ('Door');
+CREATE TABLE Door (if JSON, n TEXT, openAlarm BOOLEAN, openDuration TEXT, openState openState_type, rt JSON, type Door_type);
