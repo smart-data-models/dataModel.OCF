@@ -1,3 +1,3 @@
-/* (Beta) Export of data model SoundPressure of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model SoundPressure of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE SoundPressure_type AS ENUM ('SoundPressure');
-CREATE TABLE SoundPressure (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, if json, location json, n text, name text, owner json, rt json, seeAlso json, soundpa text, source text, type SoundPressure_type);
+CREATE TABLE SoundPressure (if JSON, n TEXT, rt JSON, soundpa NUMERIC, type SoundPressure_type);
