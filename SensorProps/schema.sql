@@ -1,3 +1,3 @@
-/* (Beta) Export of data model SensorProps of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model SensorProps of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE SensorProps_type AS ENUM ('SensorProps');
-CREATE TABLE SensorProps (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, if json, location json, n text, name text, owner json, precision text, range json, rt json, seeAlso json, sensitivity text, silenttime integer, source text, step text, type SensorProps_type);
+CREATE TABLE SensorProps (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, if JSON, n TEXT, name TEXT, owner JSON, precision NUMERIC, range JSON, rt JSON, sensitivity NUMERIC, silenttime NUMERIC, source TEXT, step NUMERIC, type SensorProps_type);
