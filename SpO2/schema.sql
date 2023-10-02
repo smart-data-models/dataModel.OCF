@@ -1,3 +1,3 @@
-/* (Beta) Export of data model SpO2 of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model SpO2 of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE SpO2_type AS ENUM ('SpO2');
-CREATE TABLE SpO2 (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, if json, location json, n text, name text, owner json, perfusion text, perfusion_precision text, perfusion_range json, perfusion_step text, rt json, seeAlso json, source text, spo2 text, spo2_precision text, spo2_range json, spo2_step text, type SpO2_type);
+CREATE TABLE SpO2 (if JSON, n TEXT, perfusion NUMERIC, perfusion_precision NUMERIC, perfusion_range JSON, perfusion_step NUMERIC, rt JSON, spo2 NUMERIC, spo2_precision NUMERIC, spo2_range JSON, spo2_step NUMERIC, type SpO2_type);
