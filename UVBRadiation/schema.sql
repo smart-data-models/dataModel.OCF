@@ -1,3 +1,3 @@
-/* (Beta) Export of data model UVBRadiation of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model UVBRadiation of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE UVBRadiation_type AS ENUM ('UVBRadiation');
-CREATE TABLE UVBRadiation (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, if json, location json, measurement text, n text, name text, owner json, rt json, seeAlso json, source text, type UVBRadiation_type);
+CREATE TABLE UVBRadiation (if JSON, measurement NUMERIC, n TEXT, rt JSON, type UVBRadiation_type);
