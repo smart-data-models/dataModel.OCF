@@ -1,3 +1,3 @@
-/* (Beta) Export of data model BodyLocationTemperature of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE bloc_type AS ENUM ('axillary', 'body', 'ear', 'finger', 'gitract', 'mouth', 'rectum', 'toe', 'tympanum');CREATE TYPE BodyLocationTemperature_type AS ENUM ('BodyLocationTemperature');
-CREATE TABLE BodyLocationTemperature (address json, alternateName text, areaServed text, bloc bloc_type, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, if json, location json, n text, name text, owner json, rt json, seeAlso json, source text, type BodyLocationTemperature_type);
+/* (Beta) Export of data model BodyLocationTemperature of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE bloc_type AS ENUM ('axillary','body','ear','finger','gitract','mouth','rectum','toe','tympanum');CREATE TYPE BodyLocationTemperature_type AS ENUM ('BodyLocationTemperature');
+CREATE TABLE BodyLocationTemperature (bloc bloc_type, if JSON, n TEXT, rt JSON, type BodyLocationTemperature_type);
