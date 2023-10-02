@@ -1,3 +1,3 @@
-/* (Beta) Export of data model Illuminance of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model Illuminance of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE Illuminance_type AS ENUM ('Illuminance');
-CREATE TABLE Illuminance (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, if json, illuminance text, location json, n text, name text, owner json, range json, rt json, seeAlso json, source text, type Illuminance_type);
+CREATE TABLE Illuminance (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, if JSON, illuminance NUMERIC, n TEXT, name TEXT, owner JSON, range JSON, rt JSON, source TEXT, type Illuminance_type);
