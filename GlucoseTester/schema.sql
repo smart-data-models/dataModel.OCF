@@ -1,3 +1,3 @@
-/* (Beta) Export of data model GlucoseTester of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE tester_type AS ENUM ('self', 'hcp', 'lab');CREATE TYPE GlucoseTester_type AS ENUM ('GlucoseTester');
-CREATE TABLE GlucoseTester (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, if json, location json, n text, name text, owner json, rt json, seeAlso json, source text, tester tester_type, type GlucoseTester_type);
+/* (Beta) Export of data model GlucoseTester of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE tester_type AS ENUM ('self','hcp','lab');CREATE TYPE GlucoseTester_type AS ENUM ('GlucoseTester');
+CREATE TABLE GlucoseTester (if JSON, n TEXT, rt JSON, tester tester_type, type GlucoseTester_type);
