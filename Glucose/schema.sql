@@ -1,3 +1,3 @@
-/* (Beta) Export of data model Glucose of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE Glucose_type AS ENUM ('Glucose');CREATE TYPE units_type AS ENUM ('mg/dL', 'mmol/L');
-CREATE TABLE Glucose (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, glucose text, id text, if json, location json, n text, name text, owner json, precision text, range json, rt json, seeAlso json, source text, step text, type Glucose_type, units units_type);
+/* (Beta) Export of data model Glucose of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE Glucose_type AS ENUM ('Glucose');CREATE TYPE units_type AS ENUM ('mg/dL','mmol/L');
+CREATE TABLE Glucose (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, glucose NUMERIC, if JSON, n TEXT, name TEXT, owner JSON, precision NUMERIC, range JSON, rt JSON, source TEXT, step NUMERIC, type Glucose_type, units units_type);
