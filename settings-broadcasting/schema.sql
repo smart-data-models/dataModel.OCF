@@ -1,3 +1,3 @@
-/* (Beta) Export of data model settings-broadcasting of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model settings-broadcasting of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE settings-broadcasting_type AS ENUM ('settings-broadcasting');
-CREATE TABLE settings-broadcasting (address json, alternateName text, antenna text, areaServed text, auto-program text, carrier-info text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, if json, location json, location-info text, name text, owner json, rt json, seeAlso json, source text, supported-antennas json, type settings-broadcasting_type);
+CREATE TABLE settings-broadcasting (antenna TEXT, auto-program BOOLEAN, carrier-info TEXT, if JSON, location-info TEXT, rt JSON, supported-antennas JSON, type settings-broadcasting_type);
