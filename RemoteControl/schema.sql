@@ -1,3 +1,3 @@
-/* (Beta) Export of data model RemoteControl of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model RemoteControl of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE RemoteControl_type AS ENUM ('RemoteControl');
-CREATE TABLE RemoteControl (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, if json, location json, n text, name text, owner json, rt json, seeAlso json, source text, supportedactions json, type RemoteControl_type);
+CREATE TABLE RemoteControl (if JSON, n TEXT, rt JSON, supportedactions JSON, type RemoteControl_type);
