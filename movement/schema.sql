@@ -1,3 +1,3 @@
-/* (Beta) Export of data model movement of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model movement of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE movement_type AS ENUM ('movement');
-CREATE TABLE movement (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, if json, location json, movement text, movementModifier text, movementSettings json, n text, name text, owner json, rt json, seeAlso json, source text, type movement_type);
+CREATE TABLE movement (if JSON, movement TEXT, movementModifier TEXT, movementSettings JSON, n TEXT, rt JSON, type movement_type);
