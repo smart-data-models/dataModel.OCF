@@ -1,3 +1,3 @@
-/* (Beta) Export of data model GlucoseSampleLocation of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE samplelocation_type AS ENUM ('finger', 'ast', 'earlobe', 'ctrlsolution');CREATE TYPE GlucoseSampleLocation_type AS ENUM ('GlucoseSampleLocation');
-CREATE TABLE GlucoseSampleLocation (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, if json, location json, n text, name text, owner json, rt json, samplelocation samplelocation_type, seeAlso json, source text, type GlucoseSampleLocation_type);
+/* (Beta) Export of data model GlucoseSampleLocation of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE samplelocation_type AS ENUM ('finger','ast','earlobe','ctrlsolution');CREATE TYPE GlucoseSampleLocation_type AS ENUM ('GlucoseSampleLocation');
+CREATE TABLE GlucoseSampleLocation (if JSON, n TEXT, rt JSON, samplelocation samplelocation_type, type GlucoseSampleLocation_type);
