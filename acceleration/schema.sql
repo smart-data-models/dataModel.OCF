@@ -1,3 +1,3 @@
-/* (Beta) Export of data model acceleration of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model acceleration of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE acceleration_type AS ENUM ('acceleration');
-CREATE TABLE acceleration (acceleration text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, if json, location json, n text, name text, owner json, precision text, range json, rt json, seeAlso json, source text, step text, type acceleration_type);
+CREATE TABLE acceleration (acceleration NUMERIC, if JSON, n TEXT, precision NUMERIC, range JSON, rt JSON, step NUMERIC, type acceleration_type);
