@@ -1,3 +1,3 @@
-/* (Beta) Export of data model OpaqueData of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model OpaqueData of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE OpaqueData_type AS ENUM ('OpaqueData');
-CREATE TABLE OpaqueData (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, encoding text, hash text, id text, if json, location json, name text, owner json, payload text, payloadtype text, rt json, seeAlso json, size integer, source text, system text, type OpaqueData_type);
+CREATE TABLE OpaqueData (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, encoding TEXT, hash TEXT, if JSON, name TEXT, owner JSON, payload TEXT, payloadtype TEXT, rt JSON, size NUMERIC, source TEXT, system TEXT, type OpaqueData_type);
