@@ -1,3 +1,3 @@
-/* (Beta) Export of data model HeatingZone of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model HeatingZone of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE HeatingZone_type AS ENUM ('HeatingZone');
-CREATE TABLE HeatingZone (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, heatinglevel integer, id text, if json, location json, maxheatinglevel integer, n text, name text, owner json, rt json, seeAlso json, source text, type HeatingZone_type);
+CREATE TABLE HeatingZone (heatinglevel INTEGER, if JSON, maxheatinglevel INTEGER, n TEXT, rt JSON, type HeatingZone_type);
