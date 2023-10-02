@@ -1,3 +1,3 @@
-/* (Beta) Export of data model Alarm of the subject dataModel.OCF for a postgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE alarmtype_type AS ENUM ('General', 'Fire', 'Flood', 'Weather', 'Security');CREATE TYPE Alarm_type AS ENUM ('Alarm');
-CREATE TABLE Alarm (address json, alarmtype alarmtype_type, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, duration text, id text, if json, location json, n text, name text, owner json, precision text, range json, rt json, seeAlso json, source text, status text, step text, time text, type Alarm_type);
+/* (Beta) Export of data model Alarm of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE alarmtype_type AS ENUM ('General','Fire','Flood','Weather','Security');CREATE TYPE Alarm_type AS ENUM ('Alarm');
+CREATE TABLE Alarm (address JSON, alarmtype alarmtype_type, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, duration NUMERIC, if JSON, n TEXT, name TEXT, owner JSON, precision NUMERIC, range JSON, rt JSON, source TEXT, status BOOLEAN, step NUMERIC, time TEXT, type Alarm_type);
