@@ -16,11 +16,11 @@
         "urn:ngsi-ld:Activity:items:LQLV:84757861"
     ],
     "location": {
-        "type": "Point",
-        "coordinates": [
-            41.0514365,
-            -160.549428
-        ]
+    "type": "Point",
+    "coordinates": [
+      41.0514365,
+      -160.549428
+    ]
     },
     "address": {
         "streetAddress": "His situation focus final. Idea summer determine win every PM time explain.",
@@ -32,22 +32,10 @@
     },
     "areaServed": "Many body chair listen protect see kid. Establish born American number civil happy. Letter chance or thus mention size.",
     "activity": "walk",
-    "steps_day": {
-        "type": "Property",
-        "value": 864
-    },
-    "steps_reset": {
-        "type": "Property",
-        "value": 864
-    },
-    "ccal_day": {
-        "type": "Property",
-        "value": 927.6
-    },
-    "ccal_reset": {
-        "type": "Property",
-        "value": 848.5
-    },
+    "steps_day": 864,
+    "steps_reset": 864,
+    "ccal_day": 927.6,
+    "ccal_reset": 848.5,
     "rt": [
         "oic.r.activity",
         "oic.r.activity"
@@ -61,42 +49,24 @@
         864,
         864
     ],
-    "steps_day_step": {
-        "type": "Property",
-        "value": 864
-    },
+    "steps_day_step": 864,
     "steps_reset_range": [
         864,
         864
     ],
-    "steps_reset_step": {
-        "type": "Property",
-        "value": 864
-    },
+    "steps_reset_step": 864,
     "ccal_day_range": [
         428.4,
         249.0
     ],
-    "ccal_day_step": {
-        "type": "Property",
-        "value": 23.2
-    },
-    "ccal_day_precision": {
-        "type": "Property",
-        "value": 836.0
-    },
+    "ccal_day_step": 23.2,
+    "ccal_day_precision": 836.0,
     "ccal_reset_range": [
         162.8,
         797.5
     ],
-    "ccal_reset_step": {
-        "type": "Property",
-        "value": 252.5
-    },
-    "ccal_reset_precision": {
-        "type": "Property",
-        "value": 442.1
-    },
+    "ccal_reset_step": 252.5,
+    "ccal_reset_precision": 442.1,
     "type": "Activity",
     "@context": [
         "https://smartdatamodels.org/context.jsonld",
