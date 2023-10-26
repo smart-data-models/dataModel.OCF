@@ -1,3 +1,3 @@
 /* (Beta) Export of data model BodyWater of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE BodyWater_type AS ENUM ('BodyWater');CREATE TYPE units_type AS ENUM ('kg','lb');
-CREATE TABLE BodyWater (address JSON, alternateName TEXT, areaServed TEXT, bwater NUMERIC, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, if JSON, n TEXT, name TEXT, owner JSON, precision NUMERIC, range JSON, rt JSON, source TEXT, step NUMERIC, type BodyWater_type, units units_type);
+CREATE TABLE BodyWater (address JSON, alternateName TEXT, areaServed TEXT, bwater NUMERIC, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, if JSON, location JSON, n TEXT, name TEXT, owner JSON, precision NUMERIC, range JSON, rt JSON, seeAlso JSON, source TEXT, step NUMERIC, type BodyWater_type, units units_type);
