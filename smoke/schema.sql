@@ -1,3 +1,3 @@
 /* (Beta) Export of data model smoke of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE smoke_type AS ENUM ('smoke');
-CREATE TABLE smoke (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, if JSON, measurement NUMERIC, n TEXT, name TEXT, owner JSON, precision NUMERIC, range JSON, rt JSON, source TEXT, step NUMERIC, type smoke_type, value BOOLEAN);
+CREATE TABLE smoke (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, if JSON, location JSON, measurement NUMERIC, n TEXT, name TEXT, owner JSON, precision NUMERIC, range JSON, rt JSON, seeAlso JSON, source TEXT, step NUMERIC, type smoke_type, value BOOLEAN);
