@@ -1,0 +1,838 @@
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+엔티티: 엔티티: AirQuality  
+====================<!-- /10-Header -->  
+<!-- 15-License -->  
+[오픈 라이선스](https://github.com/smart-data-models//dataModel.OCF/blob/master/AirQuality/LICENSE.md)  
+[문서 자동 생성](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+글로벌 설명: **이 리소스는 공기 품질을 추론하는 데 사용할 수 있는 정성적 또는 측정된 오염 물질을 설명합니다. 'valueType' 속성은 오염 물질 값 속성 내에서 정성적 또는 측정된 수치를 나타내며, '오염 물질 값' 속성은 오염 물질 유형별 단위와 함께 실제 감지된 값을 포함할 수 있습니다.정성값은 제공된 범위 내의 대표값으로 최소값은 특정 오염 물질에 대한 최소 오염, 최대값은 최대 오염이며, '오염 물질 값' 속성에는 실제 측정 또는 정성 수준이 포함되고, '범위' 속성에는 보고되는 값의 허용 범위가 포함되며, valueType이 '측정'인 경우 오염 물질 유형에 대한 단위는 다음과 같습니다: 메탄올(포름알데히드라고도 함): CH2O(ug/m^3), 이산화탄소: CO2(ppm), 일산화탄소: CO(ppm), 입자상 물질(직경 1미크론 미만): PM1(ug/m^3), 입자상 물질(직경 2.5마이크론 미만): PM2.5(ug/m^3), 입자상 물질(직경 10마이크론 미만): PM10(ug/m^3), 휘발성 유기 화합물: VOC(ug/m^3), 오존: 03(ppm), 이산화질소: NO2 (ppm), 이산화황: SO2 (ppm) **  
+버전: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
+
+## 속성 목록  
+
+<sup><sub>[*] 속성에 유형이 없는 것은 여러 유형 또는 다른 형식/패턴을 가질 수 있기 때문입니다</sub></sup>.  
+- `address[object]`: 우편 주소  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 국가. 예를 들어, 스페인  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 도로명 주소가 있는 지역 및 해당 지역에 속한 지역  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: 해당 지역이 위치한 지역과 해당 국가의 지역  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 지구는 일부 국가에서는 지방 정부에서 관리하는 행정 구역의 일종입니다.    
+	- `postOfficeBoxNumber[string]`: 사서함 주소의 우체국 사서함 번호입니다. 예: 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 우편 번호입니다. 예: 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 거리 주소  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: 공공 도로의 특정 건물을 식별하는 번호    
+- `alternateName[string]`: 이 항목의 대체 이름  - `areaServed[string]`: 서비스 또는 제공 품목이 제공되는 지리적 영역  . Model: [https://schema.org/Text](https://schema.org/Text)- `contaminanttype[string]`: 측정 중인 오염 물질  - `contaminantvalue[number]`: 오염 물질에 대한 측정 또는 정성적 값  - `dataProvider[string]`: 조화된 데이터 엔티티의 공급자를 식별하는 일련의 문자  - `dateCreated[date-time]`: 엔티티 생성 타임스탬프. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `dateModified[date-time]`: 엔티티의 마지막 수정 타임스탬프입니다. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `description[string]`: 이 항목에 대한 설명  - `id[*]`: 엔티티의 고유 식별자  - `if[array]`: 이 리소스에서 지원하는 OCF 인터페이스 세트  - `location[*]`: 항목에 대한 지오숀 참조입니다. 포인트, 라인 문자열, 다각형, 멀티포인트, 멀티라인 문자열 또는 멀티폴리곤일 수 있습니다.  - `n[string]`: 리소스의 친근한 이름  - `name[string]`: 이 항목의 이름  - `owner[array]`: 소유자의 고유 ID를 참조하는 JSON 인코딩된 문자 시퀀스가 포함된 목록입니다.  - `range[array]`: 리소스에 있는 프로퍼티의 유효한 범위는 정수입니다. 배열의 첫 번째 값은 최소값, 배열의 두 번째 값은 최대값입니다.  - `rt[array]`: 리소스 유형  - `seeAlso[*]`: 항목에 대한 추가 리소스를 가리키는 URL 목록  - `source[string]`: 엔티티 데이터의 원본 소스를 URL로 제공하는 문자 시퀀스입니다. 소스 공급자의 정규화된 도메인 이름 또는 소스 개체에 대한 URL을 사용하는 것이 좋습니다.  - `type[string]`: NGSI 엔티티 유형. AirQuality여야 합니다.  - `valuetype[string]`: 제공된 값이 정성적인지 또는 측정값인지를 나타내는 속성입니다.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+필수 속성  
+- `contaminanttype`  - `contaminantvalue`  - `id`  - `type`  - `valuetype`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+오픈 커넥티비티 재단에서 만든 원본을 수정한 데이터 모델입니다. 원본 리포지토리: https://github.com/openconnectivityfoundation/IoTDataModels  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## 속성에 대한 데이터 모델 설명  
+알파벳순으로 정렬(자세한 내용을 보려면 클릭)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
+<details><summary><strong>full yaml details</strong></summary>    
+```yaml  
+AirQuality:    
+  description: 'This Resource describes a qualitative or measured contaminant that can be used to infer Air Quality.The Property ''valueType'' indicates a qualitative or measured reading within the contaminantvalue Property.The Property ''contaminantvalue'' can contain the actual sensed value with units per contaminant type.Qualitative is a representative value within the range provided where the minimum value is minimum contamination and maximum value is maximum contamination for the specific contaminant.The Property ''contaminantvalue'' contains the actual measured or qualitative level.The Property ''range'' contains the allowed range for the value that is being reported.If valueType is ''Measured'' then the units for the contaminant types are as follows: Methanol (also known as Formaldehyde): CH2O (ug/m^3), Carbon Dioxide: CO2 (ppm), Carbon Monoxide: CO (ppm), Particulate Matter (less than 1 micron in diameter): PM1 (ug/m^3), Particulate Matter (less than 2.5 microns in diameter): PM2.5 (ug/m^3), Particulate Matter (less than 10 microns in diameter): PM10 (ug/m^3), Volatile Organic Compounds: VOC (ug/m^3), Ozone: 03 (ppm), Nitrogen dioxide: NO2 (ppm), Sulphur dioxide: SO2 (ppm) '    
+  properties:    
+    address:    
+      description: The mailing address    
+      properties:    
+        addressCountry:    
+          description: 'The country. For example, Spain'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
+        addressLocality:    
+          description: 'The locality in which the street address is, and which is in the region'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
+        addressRegion:    
+          description: 'The region in which the locality is, and which is in the country'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        postOfficeBoxNumber:    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
+        postalCode:    
+          description: 'The postal code. For example, 24004'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
+        streetAddress:    
+          description: The street address    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      type: object    
+      x-ngsi:    
+        model: https://schema.org/address    
+        type: Property    
+    alternateName:    
+      description: An alternative name for this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    areaServed:    
+      description: The geographic area where a service or offered item is provided    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    contaminanttype:    
+      description: The contaminant being measured    
+      enum:    
+        - CH2O    
+        - CO2    
+        - CO    
+        - PM1    
+        - PM2.5    
+        - PM10    
+        - VOC    
+        - Smoke    
+        - Odor    
+        - AirPollution    
+        - NO2    
+        - SO2    
+        - O3    
+      readOnly: true    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    contaminantvalue:    
+      description: The measured or qualitative value for the contaminant    
+      readOnly: true    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    dataProvider:    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateCreated:    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateModified:    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    description:    
+      description: A description of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    id:    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
+      x-ngsi:    
+        type: Property    
+    if:    
+      description: The OCF Interface set supported by this Resource    
+      items:    
+        enum:    
+          - oic.if.s    
+          - oic.if.baseline    
+        type: string    
+      minItems: 2    
+      readOnly: true    
+      type: array    
+      uniqueItems: true    
+      x-ngsi:    
+        type: Property    
+    location:    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+      oneOf:    
+        - description: Geojson reference to the item. Point    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                type: number    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - Point    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Point    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - LineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON LineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 4    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - Polygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Polygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPoint    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPoint    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiLineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiLineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    items:    
+                      type: number    
+                    minItems: 2    
+                    type: array    
+                  minItems: 4    
+                  type: array    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPolygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPolygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+      x-ngsi:    
+        type: GeoProperty    
+    n:    
+      description: Friendly name of the Resource    
+      maxLength: 64    
+      readOnly: true    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    name:    
+      description: The name of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    owner:    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
+      items:    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
+    range:    
+      description: 'The valid range for the Property in the Resource as an integer. The first value in the array is the minimum value, the second value in the array is the maximum value'    
+      items:    
+        type: integer    
+      maxItems: 2    
+      minItems: 2    
+      readOnly: true    
+      type: array    
+      x-ngsi:    
+        type: Property    
+    rt:    
+      description: The Resource Type    
+      items:    
+        enum:    
+          - oic.r.airquality    
+        maxLength: 64    
+        type: string    
+      minItems: 1    
+      readOnly: true    
+      type: array    
+      uniqueItems: true    
+      x-ngsi:    
+        type: Property    
+    seeAlso:    
+      description: list of uri pointing to additional resources about the item    
+      oneOf:    
+        - items:    
+            format: uri    
+            type: string    
+          minItems: 1    
+          type: array    
+        - format: uri    
+          type: string    
+      x-ngsi:    
+        type: Property    
+    source:    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    type:    
+      description: NGSI entity type. It has to be AirQuality    
+      enum:    
+        - AirQuality    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    valuetype:    
+      description: The property that indicates whether the provided value is qualitative or measured    
+      enum:    
+        - Qualitative    
+        - Measured    
+      readOnly: true    
+      type: string    
+      x-ngsi:    
+        type: Property    
+  required:    
+    - contaminantvalue    
+    - contaminanttype    
+    - valuetype    
+    - id    
+    - type    
+  type: object    
+  x-derived-from: https://raw.githubusercontent.com/openconnectivityfoundation/IoTDataModels/master/AirQualityResURI.swagger.json    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.OCF/blob/master/AirQuality/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.OCF/AirQuality/schema.json    
+  x-model-tags: OCF    
+  x-version: 0.0.1    
+```  
+</details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## 페이로드 예시  
+#### AirQuality NGSI-v2 키값 예시  
+다음은 키-값으로 JSON-LD 형식의 AirQuality 예제입니다. 이는 `옵션=키값`을 사용할 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+  "id": "urn:ngsi-ld:AirQuality:id:PFXO:54743602",  
+  "dateCreated": "2001-08-05T08:57:06Z",  
+  "dateModified": "1981-11-22T02:48:46Z",  
+  "source": "Lose involve civil region expert similar visit church. Continue cultural of quite since mother. Garden outside spend wind.",  
+  "name": "Reality election expert. Ball your section why strong baby. Ahead usually front price daughter. Go common draw high.",  
+  "alternateName": "Party design avoid technology dinner whatever. Baby hold reduce speech. Inside great certain today want member start.",  
+  "description": "Choice behavior two direction type reduce wish. Tough responsibility choice though party. Energy so development across many traditional scene trade.",  
+  "dataProvider": "Challenge nothing financial about off cup. Cup movement accept professional source stock couple charge. Ready everyone decade choose news nearly sell.",  
+  "owner": [  
+    "urn:ngsi-ld:AirQuality:items:MMLD:94586360",  
+    "urn:ngsi-ld:AirQuality:items:QUQB:11049322"  
+  ],  
+  "seeAlso": [  
+    "urn:ngsi-ld:AirQuality:items:QRGK:95918228",  
+    "urn:ngsi-ld:AirQuality:items:XRLP:04774136"  
+  ],  
+  "location": {  
+    "type": "Point",  
+    "coordinates": [  
+      9.815136,  
+      -92.524037  
+    ]  
+  },  
+  "address": {  
+    "streetAddress": "Couple sense senior bar imagine voice. Risk letter reduce commercial. End size building remember respond southern. Teacher friend home risk.",  
+    "addressLocality": "Tough former data TV. Fact huge someone recent easy point.",  
+    "addressRegion": "Guess however serious author true left always. Determine police name home start.",  
+    "addressCountry": "Those either bring per. Drug event listen movie. Decide score quite today successful eye effort.",  
+    "postalCode": "Night sometimes wrong candidate something media bit. Old course do heart responsibility color important.",  
+    "postOfficeBoxNumber": "Network wife theory. Whether lose agreement history though."  
+  },  
+  "areaServed": "Another consumer upon across our. True enough year big compare among. Off financial thank reach.",  
+  "rt": [  
+    "oic.r.airquality",  
+    "oic.r.airquality"  
+  ],  
+  "contaminanttype": "CH2O",  
+  "valuetype": "Qualitative",  
+  "contaminantvalue": {  
+    "type": "Property",  
+    "value": 864  
+  },  
+  "n": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair.",  
+  "range": [  
+    864,  
+    864  
+  ],  
+  "if": [  
+    "oic.if.s",  
+    "oic.if.baseline"  
+  ],  
+  "type": "AirQuality"  
+}  
+```  
+</details>  
+#### AirQuality NGSI-v2 정규화 예제  
+다음은 정규화된 JSON-LD 형식의 AirQuality 예시입니다. 이는 옵션을 사용하지 않을 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+  "id": {  
+    "type": "string",  
+    "value": "urn:ngsi-ld:AirQuality:id:PFXO:54743602"  
+  },  
+  "dateCreated": {  
+    "format": "date-time",  
+    "type": "string",  
+    "value": "2001-08-05T08:57:06Z"  
+  },  
+  "dateModified": {  
+    "format": "date-time",  
+    "type": "string",  
+    "value": "1981-11-22T02:48:46Z"  
+  },  
+  "source": {  
+    "type": "string",  
+    "value": "Lose involve civil region expert similar visit church. Continue cultural of quite since mother. Garden outside spend wind."  
+  },  
+  "name": {  
+    "type": "string",  
+    "value": "Reality election expert. Ball your section why strong baby. Ahead usually front price daughter. Go common draw high."  
+  },  
+  "alternateName": {  
+    "type": "string",  
+    "value": "Party design avoid technology dinner whatever. Baby hold reduce speech. Inside great certain today want member start."  
+  },  
+  "description": {  
+    "type": "string",  
+    "value": "Choice behavior two direction type reduce wish. Tough responsibility choice though party. Energy so development across many traditional scene trade."  
+  },  
+  "dataProvider": {  
+    "type": "string",  
+    "value": "Challenge nothing financial about off cup. Cup movement accept professional source stock couple charge. Ready everyone decade choose news nearly sell."  
+  },  
+  "owner": {  
+    "type": "array",  
+    "value": [  
+      "urn:ngsi-ld:AirQuality:items:MMLD:94586360",  
+      "urn:ngsi-ld:AirQuality:items:QUQB:11049322"  
+    ]  
+  },  
+  "seeAlso": {  
+    "type": "array",  
+    "value": [  
+      "urn:ngsi-ld:AirQuality:items:QRGK:95918228",  
+      "urn:ngsi-ld:AirQuality:items:XRLP:04774136"  
+    ]  
+  },  
+  "location": {  
+    "type": "object",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        9.815136,  
+        -92.524037  
+      ]  
+    }  
+  },  
+  "address": {  
+    "type": "object",  
+    "value": {  
+      "streetAddress": "Couple sense senior bar imagine voice. Risk letter reduce commercial. End size building remember respond southern. Teacher friend home risk.",  
+      "addressLocality": "Tough former data TV. Fact huge someone recent easy point.",  
+      "addressRegion": "Guess however serious author true left always. Determine police name home start.",  
+      "addressCountry": "Those either bring per. Drug event listen movie. Decide score quite today successful eye effort.",  
+      "postalCode": "Night sometimes wrong candidate something media bit. Old course do heart responsibility color important.",  
+      "postOfficeBoxNumber": "Network wife theory. Whether lose agreement history though."  
+    }  
+  },  
+  "areaServed": {  
+    "type": "string",  
+    "value": "Another consumer upon across our. True enough year big compare among. Off financial thank reach."  
+  },  
+  "rt": {  
+    "type": "array",  
+    "value": [  
+      "oic.r.airquality",  
+      "oic.r.airquality"  
+    ]  
+  },  
+  "contaminanttype": {  
+    "type": "string",  
+    "value": "CH2O"  
+  },  
+  "valuetype": {  
+    "type": "string",  
+    "value": "Qualitative"  
+  },  
+  "contaminantvalue": {  
+    "type": "object",  
+    "value": {  
+      "type": "Property",  
+      "value": 864  
+    }  
+  },  
+  "n": {  
+    "type": "string",  
+    "value": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair."  
+  },  
+  "range": {  
+    "type": "array",  
+    "value": [  
+      864,  
+      864  
+    ]  
+  },  
+  "if": {  
+    "type": "array",  
+    "value": [  
+      "oic.if.s",  
+      "oic.if.baseline"  
+    ]  
+  },  
+  "type": {  
+    "type": "string",  
+    "value": "AirQuality"  
+  }  
+}  
+```  
+</details>  
+#### AirQuality NGSI-LD 키 값 예시  
+다음은 키 값으로 JSON-LD 형식의 AirQuality의 예입니다. 이는 `옵션=키값`을 사용할 때 NGSI-LD와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+    "id": "urn:ngsi-ld:AirQuality:id:PFXO:54743602",  
+    "dateCreated": "2001-08-05T08:57:06Z",  
+    "dateModified": "1981-11-22T02:48:46Z",  
+    "source": "Lose involve civil region expert similar visit church. Continue cultural of quite since mother. Garden outside spend wind.",  
+    "name": "Reality election expert. Ball your section why strong baby. Ahead usually front price daughter. Go common draw high.",  
+    "alternateName": "Party design avoid technology dinner whatever. Baby hold reduce speech. Inside great certain today want member start.",  
+    "description": "Choice behavior two direction type reduce wish. Tough responsibility choice though party. Energy so development across many traditional scene trade.",  
+    "dataProvider": "Challenge nothing financial about off cup. Cup movement accept professional source stock couple charge. Ready everyone decade choose news nearly sell.",  
+    "owner": [  
+        "urn:ngsi-ld:AirQuality:items:MMLD:94586360",  
+        "urn:ngsi-ld:AirQuality:items:QUQB:11049322"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:AirQuality:items:QRGK:95918228",  
+        "urn:ngsi-ld:AirQuality:items:XRLP:04774136"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            9.815136,  
+            -92.524037  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Couple sense senior bar imagine voice. Risk letter reduce commercial. End size building remember respond southern. Teacher friend home risk.",  
+        "addressLocality": "Tough former data TV. Fact huge someone recent easy point.",  
+        "addressRegion": "Guess however serious author true left always. Determine police name home start.",  
+        "addressCountry": "Those either bring per. Drug event listen movie. Decide score quite today successful eye effort.",  
+        "postalCode": "Night sometimes wrong candidate something media bit. Old course do heart responsibility color important.",  
+        "postOfficeBoxNumber": "Network wife theory. Whether lose agreement history though."  
+    },  
+    "areaServed": "Another consumer upon across our. True enough year big compare among. Off financial thank reach.",  
+    "rt": [  
+        "oic.r.airquality",  
+        "oic.r.airquality"  
+    ],  
+    "contaminanttype": "CH2O",  
+    "valuetype": "Qualitative",  
+    "contaminantvalue": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "n": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair.",  
+    "range": [  
+        864,  
+        864  
+    ],  
+    "if": [  
+        "oic.if.s",  
+        "oic.if.baseline"  
+    ],  
+    "type": "AirQuality",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+    ]  
+}  
+```  
+</details>  
+#### AirQuality NGSI-LD 정규화 예제  
+다음은 정규화된 JSON-LD 형식의 AirQuality 예시입니다. 이는 옵션을 사용하지 않을 때 NGSI-LD와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+    "id": "urn:ngsi-ld:AirQuality:id:LNQC:72550215",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1977-12-12T05:27:39Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2013-02-06T05:53:44Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Successful he may. Civil soldier well whom challenge anyone. True director bad material control but. Want entire nothing herself middle song."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Finish line north particularly wait step. Child argue add."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Do especially world tonight remember."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Film wish edge star address lose action drive. Safe may decide college. Agent everybody available party range. Owner turn baby response."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Quickly boy hour indeed wish success. Police break reach able unit. Particularly painting around light lose."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:AirQuality:items:CBIB:33216193",  
+            "urn:ngsi-ld:AirQuality:items:RJZC:40470330"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:AirQuality:items:IZCL:58197135"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                16.41076,  
+                -119.319515  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Create policy name full. Trial care card along open investment. Individual great while knowledge.",  
+            "addressLocality": "Parent school through visit property various nature. Position picture a how director.",  
+            "addressRegion": "Certainly become deep. Buy image strategy. It quite edge already executive nation same. More window left real.",  
+            "addressCountry": "Report picture series tough final attorney. Hold mind take myself reduce. Majority chair check magazine.",  
+            "postalCode": "Enjoy professor low. Building customer loss chair management. Goal factor gun. Administration create very physical eye phone.",  
+            "postOfficeBoxNumber": "Hear window pay door image stage TV. Budget second response since fill interview."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Case really society describe. Live responsibility knowledge goal degree station."  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.airquality"  
+        ]  
+    },  
+    "contaminanttype": {  
+        "type": "Property",  
+        "value": "NO2"  
+    },  
+    "valuetype": {  
+        "type": "Property",  
+        "value": "Measured"  
+    },  
+    "contaminantvalue": {  
+        "type": "Property",  
+        "value": 939  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Happen opportunity town religious parent social bad. Mean parent nature understand cell stuff."  
+    },  
+    "range": {  
+        "type": "Property",  
+        "value": [  
+            728,  
+            9  
+        ]  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.s",  
+            "oic.if.s"  
+        ]  
+    },  
+    "type": "AirQuality",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+    ]  
+}  
+```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+[FAQ 10](https://smartdatamodels.org/index.php/faqs/)을 참조하여 규모 단위를 다루는 방법에 대한 답변을 확인하세요.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
