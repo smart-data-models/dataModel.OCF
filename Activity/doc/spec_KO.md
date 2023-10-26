@@ -1,0 +1,1073 @@
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+엔티티: 활동  
+=======<!-- /10-Header -->  
+<!-- 15-License -->  
+[오픈 라이선스](https://github.com/smart-data-models//dataModel.OCF/blob/master/Activity/LICENSE.md)  
+[문서 자동 생성](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+글로벌 설명: **이 리소스는 개인의 신체 활동과 관련된 속성에 대해 설명합니다. 모든 속성은 서버에서 제공하는 읽기 전용 값입니다. 범위('oic.r.baseresource'에서)가 생략된 경우 기본값은 0에서 +MAXFLOAT.**입니다.  
+버전: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
+
+## 속성 목록  
+
+<sup><sub>[*] 속성에 유형이 없는 것은 여러 유형 또는 다른 형식/패턴을 가질 수 있기 때문입니다</sub></sup>.  
+- `activity[string]`: 이 속성은 사용자의 인식된 현재 활동 유형을 설명합니다.  - `address[object]`: 우편 주소  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 국가. 예를 들어, 스페인  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 도로명 주소가 있는 지역 및 해당 지역에 속한 지역  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: 해당 지역이 위치한 지역과 해당 국가의 지역  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 지구는 일부 국가에서는 지방 정부에서 관리하는 행정 구역의 일종입니다.    
+	- `postOfficeBoxNumber[string]`: 사서함 주소의 우체국 사서함 번호입니다. 예: 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 우편 번호입니다. 예: 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 거리 주소  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: 공공 도로의 특정 건물을 식별하는 번호    
+- `alternateName[string]`: 이 항목의 대체 이름  - `areaServed[string]`: 서비스 또는 제공 품목이 제공되는 지리적 영역  . Model: [https://schema.org/Text](https://schema.org/Text)- `ccal_day[number]`: 이 속성은 하루가 시작된 이후 사용자가 소모한 칼로리를 설명합니다.  - `ccal_day_precision[number]`: 노출된 '정밀도' 값은 리소스의 프로퍼티에 대해 +/- 허용 오차를 제공합니다. 따라서 프로퍼티가 값으로 업데이트된 후 해당 프로퍼티가 RETRIEVED인 경우, 설정된 값 +/- 정밀도 범위 내에 있는 경우 RETRIEVED 값이 유효합니다.  - `ccal_day_range[array]`: 리소스에서 프로퍼티의 유효한 범위를 숫자로 나타냅니다. 배열의 첫 번째 값은 최소값, 배열의 두 번째 값은 최대값입니다.  - `ccal_day_step[number]`: 범위가 숫자인 경우 정의된 범위의 단계 값은 정수입니다.  범위 전체에서 유효한 값에 대한 증분이므로 범위가 0.0..10.0이고 단계가 2.5인 경우 유효한 값은 0.0,2.5,5.0,7.5,10.0입니다.  - `ccal_reset[number]`: 이 속성은 마지막 재설정 이후 사용자가 소모한 칼로리를 설명합니다.  - `ccal_reset_precision[number]`: 노출된 '정밀도' 값은 리소스의 프로퍼티에 대해 +/- 허용 오차를 제공합니다. 따라서 프로퍼티가 값으로 업데이트된 후 해당 프로퍼티가 RETRIEVED인 경우, 설정된 값 +/- 정밀도 범위 내에 있는 경우 RETRIEVED 값이 유효합니다.  - `ccal_reset_range[array]`: 리소스에서 프로퍼티의 유효한 범위를 숫자로 나타냅니다. 배열의 첫 번째 값은 최소값, 배열의 두 번째 값은 최대값입니다.  - `ccal_reset_step[number]`: 범위가 숫자인 경우 정의된 범위의 단계 값은 정수입니다.  범위 전체에서 유효한 값에 대한 증분이므로 범위가 0.0..10.0이고 단계가 2.5인 경우 유효한 값은 0.0,2.5,5.0,7.5,10.0입니다.  - `dataProvider[string]`: 조화된 데이터 엔티티의 공급자를 식별하는 일련의 문자  - `dateCreated[date-time]`: 엔티티 생성 타임스탬프. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `dateModified[date-time]`: 엔티티의 마지막 수정 타임스탬프입니다. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `description[string]`: 이 항목에 대한 설명  - `id[*]`: 엔티티의 고유 식별자  - `if[array]`: 이 리소스에서 지원하는 OCF 인터페이스 세트  - `location[*]`: 항목에 대한 지오숀 참조입니다. 포인트, 라인 문자열, 다각형, 멀티포인트, 멀티라인 문자열 또는 멀티폴리곤일 수 있습니다.  - `n[string]`: 리소스의 친근한 이름  - `name[string]`: 이 항목의 이름  - `owner[array]`: 소유자의 고유 ID를 참조하는 JSON 인코딩된 문자 시퀀스가 포함된 목록입니다.  - `rt[array]`: 리소스 유형  - `seeAlso[*]`: 항목에 대한 추가 리소스를 가리키는 URL 목록  - `source[string]`: 엔티티 데이터의 원본 소스를 URL로 제공하는 문자 시퀀스입니다. 소스 공급자의 정규화된 도메인 이름 또는 소스 개체에 대한 URL을 사용하는 것이 좋습니다.  - `steps_day[number]`: 이 속성은 사용자가 하루를 시작한 이후 걸은 걸음 수를 측정하는 사용자의 걸음 수를 설명합니다.  - `steps_day_range[array]`: 리소스에 있는 프로퍼티의 유효한 범위는 정수입니다. 배열의 첫 번째 값은 최소값, 배열의 두 번째 값은 최대값입니다.  - `steps_day_step[number]`: 범위가 정수인 경우 정의된 범위의 단계 값입니다.  범위 전체에서 유효한 값에 대한 증분이므로 범위가 0..10이고 단계가 2인 경우 유효한 값은 0,2,4,6,8,10입니다.  - `steps_reset[number]`: 이 속성은 사용자가 마지막으로 재설정한 이후 걸은 걸음 수를 측정하는 사용자의 걸음 수를 설명합니다.  - `steps_reset_range[array]`: 리소스에 있는 프로퍼티의 유효한 범위는 정수입니다. 배열의 첫 번째 값은 최소값, 배열의 두 번째 값은 최대값입니다.  - `steps_reset_step[number]`: 범위가 정수인 경우 정의된 범위의 단계 값입니다.  범위 전체에서 유효한 값에 대한 증분이므로 범위가 0..10이고 단계가 2인 경우 유효한 값은 0,2,4,6,8,10입니다.  - `type[string]`: NGSI 엔티티 유형입니다. 활동이어야 합니다.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+필수 속성  
+- `activity`  - `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+오픈 커넥티비티 재단에서 만든 원본을 수정한 데이터 모델입니다. 원본 리포지토리: https://github.com/openconnectivityfoundation/IoTDataModels  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## 속성에 대한 데이터 모델 설명  
+알파벳순으로 정렬(자세한 내용을 보려면 클릭)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
+<details><summary><strong>full yaml details</strong></summary>    
+```yaml  
+Activity:    
+  description: This Resource describes the Properties associated with a person's physical activity. All Properties are read-only values that are provided by the server. When range (from 'oic.r.baseresource') is omitted the default is 0 to +MAXFLOAT.    
+  properties:    
+    activity:    
+      description: This Property describes the recognized current activity type of user    
+      enum:    
+        - sleep    
+        - sit    
+        - stand    
+        - walk    
+        - run    
+        - unknown    
+      readOnly: true    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    address:    
+      description: The mailing address    
+      properties:    
+        addressCountry:    
+          description: 'The country. For example, Spain'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
+        addressLocality:    
+          description: 'The locality in which the street address is, and which is in the region'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
+        addressRegion:    
+          description: 'The region in which the locality is, and which is in the country'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        postOfficeBoxNumber:    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
+        postalCode:    
+          description: 'The postal code. For example, 24004'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
+        streetAddress:    
+          description: The street address    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      type: object    
+      x-ngsi:    
+        model: https://schema.org/address    
+        type: Property    
+    alternateName:    
+      description: An alternative name for this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    areaServed:    
+      description: The geographic area where a service or offered item is provided    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    ccal_day:    
+      description: This Property describes the burned off calories of user since the beginning of the day    
+      minimum: 0.0    
+      readOnly: true    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    ccal_day_precision:    
+      description: 'When exposed the value in ''precision'' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision'    
+      readOnly: true    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    ccal_day_range:    
+      description: 'The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value'    
+      items:    
+        type: number    
+      maxItems: 2    
+      minItems: 2    
+      readOnly: true    
+      type: array    
+      x-ngsi:    
+        type: Property    
+    ccal_day_step:    
+      description: 'Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0'    
+      readOnly: true    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    ccal_reset:    
+      description: This Property describes the burned off calories of user since the last reset    
+      minimum: 0.0    
+      readOnly: true    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    ccal_reset_precision:    
+      description: 'When exposed the value in ''precision'' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision'    
+      readOnly: true    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    ccal_reset_range:    
+      description: 'The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value'    
+      items:    
+        type: number    
+      maxItems: 2    
+      minItems: 2    
+      readOnly: true    
+      type: array    
+      x-ngsi:    
+        type: Property    
+    ccal_reset_step:    
+      description: 'Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0'    
+      readOnly: true    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    dataProvider:    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateCreated:    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateModified:    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    description:    
+      description: A description of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    id:    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
+      x-ngsi:    
+        type: Property    
+    if:    
+      description: The OCF Interface set supported by this Resource    
+      items:    
+        enum:    
+          - oic.if.s    
+          - oic.if.baseline    
+        type: string    
+      minItems: 1    
+      readOnly: true    
+      type: array    
+      uniqueItems: true    
+      x-ngsi:    
+        type: Property    
+    location:    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+      oneOf:    
+        - description: Geojson reference to the item. Point    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                type: number    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - Point    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Point    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - LineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON LineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 4    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - Polygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Polygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPoint    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPoint    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiLineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiLineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    items:    
+                      type: number    
+                    minItems: 2    
+                    type: array    
+                  minItems: 4    
+                  type: array    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPolygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPolygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+      x-ngsi:    
+        type: GeoProperty    
+    n:    
+      description: Friendly name of the Resource    
+      maxLength: 64    
+      readOnly: true    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    name:    
+      description: The name of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    owner:    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
+      items:    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
+    rt:    
+      description: The Resource Type    
+      items:    
+        enum:    
+          - oic.r.activity    
+        type: string    
+      minItems: 1    
+      readOnly: true    
+      type: array    
+      uniqueItems: true    
+      x-ngsi:    
+        type: Property    
+    seeAlso:    
+      description: list of uri pointing to additional resources about the item    
+      oneOf:    
+        - items:    
+            format: uri    
+            type: string    
+          minItems: 1    
+          type: array    
+        - format: uri    
+          type: string    
+      x-ngsi:    
+        type: Property    
+    source:    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    steps_day:    
+      description: This Property describes the user's step count that measures the number of steps the user has taken since the beginning of the day    
+      minimum: 0    
+      readOnly: true    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    steps_day_range:    
+      description: 'The valid range for the Property in the Resource as an integer. The first value in the array is the minimum value, the second value in the array is the maximum value'    
+      items:    
+        type: integer    
+      maxItems: 2    
+      minItems: 2    
+      readOnly: true    
+      type: array    
+      x-ngsi:    
+        type: Property    
+    steps_day_step:    
+      description: 'Step value across the defined range when the range is an integer.  This is the increment for valid values across the range; so if range is 0..10 and step is 2 then valid values are 0,2,4,6,8,10'    
+      readOnly: true    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    steps_reset:    
+      description: This Property describes the user's step count that measures the number of steps the user has taken since the last reset    
+      minimum: 0    
+      readOnly: true    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    steps_reset_range:    
+      description: 'The valid range for the Property in the Resource as an integer. The first value in the array is the minimum value, the second value in the array is the maximum value'    
+      items:    
+        type: integer    
+      maxItems: 2    
+      minItems: 2    
+      readOnly: true    
+      type: array    
+      x-ngsi:    
+        type: Property    
+    steps_reset_step:    
+      description: 'Step value across the defined range when the range is an integer.  This is the increment for valid values across the range; so if range is 0..10 and step is 2 then valid values are 0,2,4,6,8,10'    
+      readOnly: true    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    type:    
+      description: NGSI entity type. It has to be Activity    
+      enum:    
+        - Activity    
+      type: string    
+      x-ngsi:    
+        type: Property    
+  required:    
+    - activity    
+    - id    
+    - type    
+  type: object    
+  x-derived-from: https://raw.githubusercontent.com/openconnectivityfoundation/IoTDataModels/master/Activity.swagger.json    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.OCF/blob/master/Activity/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.OCF/Activity/schema.json    
+  x-model-tags: OCF    
+  x-version: 0.0.1    
+```  
+</details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## 페이로드 예시  
+#### 활동 NGSI-v2 키-값 예시  
+다음은 키-값으로 JSON-LD 형식의 활동의 예입니다. 이는 `옵션=키값`을 사용할 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+  "id": "urn:ngsi-ld:Activity:id:DUCN:00203733",  
+  "dateCreated": "1995-09-14T09:07:48Z",  
+  "dateModified": "1976-12-05T00:37:06Z",  
+  "source": "Ability hand reason management. Middle entire room public suggest.",  
+  "name": "Those catch research instead prove up. Career small great sense become certain wait require. Thank break whole street black.",  
+  "alternateName": "Particularly attention at citizen lead scientist. North conference anyone. Against consider dog seek.",  
+  "description": "Measure his everyone manage participant six.",  
+  "dataProvider": "Street standard Congress anything. Way million discover nation mission teach. Race table from.",  
+  "owner": [  
+    "urn:ngsi-ld:Activity:items:BRJD:11553936",  
+    "urn:ngsi-ld:Activity:items:ZGHH:01998249"  
+  ],  
+  "seeAlso": [  
+    "urn:ngsi-ld:Activity:items:PTPX:08898077",  
+    "urn:ngsi-ld:Activity:items:LQLV:84757861"  
+  ],  
+  "location": {  
+    "type": "Point",  
+    "coordinates": [  
+      41.0514365,  
+      -160.549428  
+    ]  
+  },  
+  "address": {  
+    "streetAddress": "His situation focus final. Idea summer determine win every PM time explain.",  
+    "addressLocality": "Audience issue policy present growth along. Less ten make picture late allow everyone take.",  
+    "addressRegion": "Under surface paper event month. Offer room such the work threat group order.",  
+    "addressCountry": "Gun those among cup good inside successful. Base option break poor third.",  
+    "postalCode": "Interview someone subject office. Laugh Mrs reason maintain ten source everybody.",  
+    "postOfficeBoxNumber": "Party eat hope box lot ready poor. South town room guy. Day throughout exactly actually be."  
+  },  
+  "areaServed": "Many body chair listen protect see kid. Establish born American number civil happy. Letter chance or thus mention size.",  
+  "activity": "walk",  
+  "steps_day": 864,  
+  "steps_reset": 864,  
+  "ccal_day": 927.6,  
+  "ccal_reset": 848.5,  
+  "rt": [  
+    "oic.r.activity",  
+    "oic.r.activity"  
+  ],  
+  "n": "Address future financial sing. Cut outside everybody soon. State they animal case industry chance though. Decision but force economic left report ability.",  
+  "if": [  
+    "oic.if.baseline",  
+    "oic.if.s"  
+  ],  
+  "steps_day_range": [  
+    864,  
+    864  
+  ],  
+  "steps_day_step": 864,  
+  "steps_reset_range": [  
+    864,  
+    864  
+  ],  
+  "steps_reset_step": 864,  
+  "ccal_day_range": [  
+    428.4,  
+    249.0  
+  ],  
+  "ccal_day_step": 23.2,  
+  "ccal_day_precision": 836.0,  
+  "ccal_reset_range": [  
+    162.8,  
+    797.5  
+  ],  
+  "ccal_reset_step": 252.5,  
+  "ccal_reset_precision": 442.1,  
+  "type": "Activity"  
+}  
+```  
+</details>  
+#### 활동 NGSI-v2 정규화 예제  
+다음은 정규화된 JSON-LD 형식의 활동의 예입니다. 이는 옵션을 사용하지 않을 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+  "id": {  
+    "type": "string",  
+    "value": "urn:ngsi-ld:Activity:id:DUCN:00203733"  
+  },  
+  "dateCreated": {  
+    "format": "date-time",  
+    "type": "string",  
+    "value": "1995-09-14T09:07:48Z"  
+  },  
+  "dateModified": {  
+    "format": "date-time",  
+    "type": "string",  
+    "value": "1976-12-05T00:37:06Z"  
+  },  
+  "source": {  
+    "type": "string",  
+    "value": "Ability hand reason management. Middle entire room public suggest."  
+  },  
+  "name": {  
+    "type": "string",  
+    "value": "Those catch research instead prove up. Career small great sense become certain wait require. Thank break whole street black."  
+  },  
+  "alternateName": {  
+    "type": "string",  
+    "value": "Particularly attention at citizen lead scientist. North conference anyone. Against consider dog seek."  
+  },  
+  "description": {  
+    "type": "string",  
+    "value": "Measure his everyone manage participant six."  
+  },  
+  "dataProvider": {  
+    "type": "string",  
+    "value": "Street standard Congress anything. Way million discover nation mission teach. Race table from."  
+  },  
+  "owner": {  
+    "type": "array",  
+    "value": [  
+      "urn:ngsi-ld:Activity:items:BRJD:11553936",  
+      "urn:ngsi-ld:Activity:items:ZGHH:01998249"  
+    ]  
+  },  
+  "seeAlso": {  
+    "type": "array",  
+    "value": [  
+      "urn:ngsi-ld:Activity:items:PTPX:08898077",  
+      "urn:ngsi-ld:Activity:items:LQLV:84757861"  
+    ]  
+  },  
+  "location": {  
+    "type": "object",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        41.0514365,  
+        -160.549428  
+      ]  
+    }  
+  },  
+  "address": {  
+    "type": "object",  
+    "value": {  
+      "streetAddress": "His situation focus final. Idea summer determine win every PM time explain.",  
+      "addressLocality": "Audience issue policy present growth along. Less ten make picture late allow everyone take.",  
+      "addressRegion": "Under surface paper event month. Offer room such the work threat group order.",  
+      "addressCountry": "Gun those among cup good inside successful. Base option break poor third.",  
+      "postalCode": "Interview someone subject office. Laugh Mrs reason maintain ten source everybody.",  
+      "postOfficeBoxNumber": "Party eat hope box lot ready poor. South town room guy. Day throughout exactly actually be."  
+    }  
+  },  
+  "areaServed": {  
+    "type": "string",  
+    "value": "Many body chair listen protect see kid. Establish born American number civil happy. Letter chance or thus mention size."  
+  },  
+  "activity": {  
+    "type": "string",  
+    "value": "walk"  
+  },  
+  "steps_day": {  
+    "type": "object",  
+    "value": {  
+      "type": "Property",  
+      "value": 864  
+    }  
+  },  
+  "steps_reset": {  
+    "type": "object",  
+    "value": {  
+      "type": "Property",  
+      "value": 864  
+    }  
+  },  
+  "ccal_day": {  
+    "type": "object",  
+    "value": {  
+      "type": "Property",  
+      "value": 927.6  
+    }  
+  },  
+  "ccal_reset": {  
+    "type": "object",  
+    "value": {  
+      "type": "Property",  
+      "value": 848.5  
+    }  
+  },  
+  "rt": {  
+    "type": "array",  
+    "value": [  
+      "oic.r.activity",  
+      "oic.r.activity"  
+    ]  
+  },  
+  "n": {  
+    "type": "string",  
+    "value": "Address future financial sing. Cut outside everybody soon. State they animal case industry chance though. Decision but force economic left report ability."  
+  },  
+  "if": {  
+    "type": "array",  
+    "value": [  
+      "oic.if.baseline",  
+      "oic.if.s"  
+    ]  
+  },  
+  "steps_day_range": {  
+    "type": "array",  
+    "value": [  
+      864,  
+      864  
+    ]  
+  },  
+  "steps_day_step": {  
+    "type": "object",  
+    "value": {  
+      "type": "Property",  
+      "value": 864  
+    }  
+  },  
+  "steps_reset_range": {  
+    "type": "array",  
+    "value": [  
+      864,  
+      864  
+    ]  
+  },  
+  "steps_reset_step": {  
+    "type": "object",  
+    "value": {  
+      "type": "Property",  
+      "value": 864  
+    }  
+  },  
+  "ccal_day_range": {  
+    "type": "array",  
+    "value": [  
+      428.4,  
+      249.0  
+    ]  
+  },  
+  "ccal_day_step": {  
+    "type": "object",  
+    "value": {  
+      "type": "Property",  
+      "value": 23.2  
+    }  
+  },  
+  "ccal_day_precision": {  
+    "type": "object",  
+    "value": {  
+      "type": "Property",  
+      "value": 836.0  
+    }  
+  },  
+  "ccal_reset_range": {  
+    "type": "array",  
+    "value": [  
+      162.8,  
+      797.5  
+    ]  
+  },  
+  "ccal_reset_step": {  
+    "type": "object",  
+    "value": {  
+      "type": "Property",  
+      "value": 252.5  
+    }  
+  },  
+  "ccal_reset_precision": {  
+    "type": "object",  
+    "value": {  
+      "type": "Property",  
+      "value": 442.1  
+    }  
+  },  
+  "type": {  
+    "type": "string",  
+    "value": "Activity"  
+  }  
+}  
+```  
+</details>  
+#### 활동 NGSI-LD 키 값 예시  
+다음은 키-값으로 JSON-LD 형식의 활동의 예입니다. 이는 `옵션=키값`을 사용할 때 NGSI-LD와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+    "id": "urn:ngsi-ld:Activity:id:DUCN:00203733",  
+    "dateCreated": "1995-09-14T09:07:48Z",  
+    "dateModified": "1976-12-05T00:37:06Z",  
+    "source": "Ability hand reason management. Middle entire room public suggest.",  
+    "name": "Those catch research instead prove up. Career small great sense become certain wait require. Thank break whole street black.",  
+    "alternateName": "Particularly attention at citizen lead scientist. North conference anyone. Against consider dog seek.",  
+    "description": "Measure his everyone manage participant six.",  
+    "dataProvider": "Street standard Congress anything. Way million discover nation mission teach. Race table from.",  
+    "owner": [  
+        "urn:ngsi-ld:Activity:items:BRJD:11553936",  
+        "urn:ngsi-ld:Activity:items:ZGHH:01998249"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Activity:items:PTPX:08898077",  
+        "urn:ngsi-ld:Activity:items:LQLV:84757861"  
+    ],  
+    "location": {  
+    "type": "Point",  
+    "coordinates": [  
+      41.0514365,  
+      -160.549428  
+    ]  
+    },  
+    "address": {  
+        "streetAddress": "His situation focus final. Idea summer determine win every PM time explain.",  
+        "addressLocality": "Audience issue policy present growth along. Less ten make picture late allow everyone take.",  
+        "addressRegion": "Under surface paper event month. Offer room such the work threat group order.",  
+        "addressCountry": "Gun those among cup good inside successful. Base option break poor third.",  
+        "postalCode": "Interview someone subject office. Laugh Mrs reason maintain ten source everybody.",  
+        "postOfficeBoxNumber": "Party eat hope box lot ready poor. South town room guy. Day throughout exactly actually be."  
+    },  
+    "areaServed": "Many body chair listen protect see kid. Establish born American number civil happy. Letter chance or thus mention size.",  
+    "activity": "walk",  
+    "steps_day": 864,  
+    "steps_reset": 864,  
+    "ccal_day": 927.6,  
+    "ccal_reset": 848.5,  
+    "rt": [  
+        "oic.r.activity",  
+        "oic.r.activity"  
+    ],  
+    "n": "Address future financial sing. Cut outside everybody soon. State they animal case industry chance though. Decision but force economic left report ability.",  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.s"  
+    ],  
+    "steps_day_range": [  
+        864,  
+        864  
+    ],  
+    "steps_day_step": 864,  
+    "steps_reset_range": [  
+        864,  
+        864  
+    ],  
+    "steps_reset_step": 864,  
+    "ccal_day_range": [  
+        428.4,  
+        249.0  
+    ],  
+    "ccal_day_step": 23.2,  
+    "ccal_day_precision": 836.0,  
+    "ccal_reset_range": [  
+        162.8,  
+        797.5  
+    ],  
+    "ccal_reset_step": 252.5,  
+    "ccal_reset_precision": 442.1,  
+    "type": "Activity",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+    ]  
+}  
+```  
+</details>  
+#### 활동 NGSI-LD 정규화 예제  
+다음은 정규화된 JSON-LD 형식의 활동의 예입니다. 이는 옵션을 사용하지 않을 때 NGSI-LD와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+    "id": "urn:ngsi-ld:Activity:id:MZWF:26893545",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1983-04-27T11:52:16Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2010-10-31T00:41:19Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Expert mouth media difficult anyone pull must. Employee let father can easy opportunity fact. In begin appear."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Feel everyone form. City reality exactly believe different open least. Lawyer pay travel foreign."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Once have cold she writer size. Direction girl some into memory close receive."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Garden author drop place dinner method notice. Subject head true environment leave."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "North ready because probably in yourself professional."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Activity:items:XPCK:51151835",  
+            "urn:ngsi-ld:Activity:items:EEHP:04982258"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Activity:items:GSIY:61112353"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                20.34346,  
+                68.954533  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Pass else western century perhaps relate for. Perhaps suffer product loss office. Action first idea fact everybody.",  
+            "addressLocality": "Attention decade course everything. Line sell three over senior player measure. Country movement almost true change idea.",  
+            "addressRegion": "Else much time heavy two detail. Similar drug want enjoy sure surface. Mean market total.",  
+            "addressCountry": "Hundred high ability grow professional own often film.",  
+            "postalCode": "Current seat explain keep spring certainly yourself. Room toward agreement.",  
+            "postOfficeBoxNumber": "Positive memory small family energy. Peace value eye reflect teach study dinner hospital. Three of may street election I night."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "System management responsibility least."  
+    },  
+    "activity": {  
+        "type": "Property",  
+        "value": "sleep"  
+    },  
+    "steps_day": {  
+        "type": "Property",  
+        "value": 308  
+    },  
+    "steps_reset": {  
+        "type": "Property",  
+        "value": 221  
+    },  
+    "ccal_day": {  
+        "type": "Property",  
+        "value": 140.9  
+    },  
+    "ccal_reset": {  
+        "type": "Property",  
+        "value": 545.7  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.activity"  
+        ]  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Simple figure consumer my defense across tough. Decision religious attorney."  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.s"  
+        ]  
+    },  
+    "steps_day_range": {  
+        "type": "Property",  
+        "value": [  
+            935,  
+            193  
+        ]  
+    },  
+    "steps_day_step": {  
+        "type": "Property",  
+        "value": 21  
+    },  
+    "steps_reset_range": {  
+        "type": "Property",  
+        "value": [  
+            513,  
+            809  
+        ]  
+    },  
+    "steps_reset_step": {  
+        "type": "Property",  
+        "value": 890  
+    },  
+    "ccal_day_range": {  
+        "type": "Property",  
+        "value": [  
+            506.1,  
+            443.7  
+        ]  
+    },  
+    "ccal_day_step": {  
+        "type": "Property",  
+        "value": 70.2  
+    },  
+    "ccal_day_precision": {  
+        "type": "Property",  
+        "value": 588.3  
+    },  
+    "ccal_reset_range": {  
+        "type": "Property",  
+        "value": [  
+            533.3,  
+            185.3  
+        ]  
+    },  
+    "ccal_reset_step": {  
+        "type": "Property",  
+        "value": 823.7  
+    },  
+    "ccal_reset_precision": {  
+        "type": "Property",  
+        "value": 802.8  
+    },  
+    "type": "Activity",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+    ]  
+}  
+```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+[FAQ 10](https://smartdatamodels.org/index.php/faqs/)을 참조하여 규모 단위를 다루는 방법에 대한 답변을 확인하세요.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
