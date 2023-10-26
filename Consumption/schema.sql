@@ -1,3 +1,3 @@
 /* (Beta) Export of data model Consumption of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE Consumption_type AS ENUM ('Consumption');
-CREATE TABLE Consumption (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, gas NUMERIC, if JSON, n TEXT, name TEXT, owner JSON, precision NUMERIC, rt JSON, source TEXT, type Consumption_type, volume NUMERIC);
+CREATE TABLE Consumption (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, gas NUMERIC, id TEXT PRIMARY KEY, if JSON, location JSON, n TEXT, name TEXT, owner JSON, precision NUMERIC, rt JSON, seeAlso JSON, source TEXT, type Consumption_type, volume NUMERIC);
