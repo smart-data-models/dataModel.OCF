@@ -1,3 +1,3 @@
 /* (Beta) Export of data model Speed of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE Speed_type AS ENUM ('Speed');
-CREATE TABLE Speed (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, if JSON, n TEXT, name TEXT, owner JSON, range JSON, rt JSON, source TEXT, speed NUMERIC, step NUMERIC, type Speed_type);
+CREATE TABLE Speed (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, if JSON, location JSON, n TEXT, name TEXT, owner JSON, range JSON, rt JSON, seeAlso JSON, source TEXT, speed NUMERIC, step NUMERIC, type Speed_type);
