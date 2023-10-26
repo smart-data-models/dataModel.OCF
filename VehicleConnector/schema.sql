@@ -1,3 +1,3 @@
 /* (Beta) Export of data model VehicleConnector of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE VehicleConnector_type AS ENUM ('VehicleConnector');
-CREATE TABLE VehicleConnector (address JSON, alternateName TEXT, areaServed TEXT, connected BOOLEAN, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, if JSON, n TEXT, name TEXT, owner JSON, ratedchargingcapacity NUMERIC, rateddischargingcapacity NUMERIC, rt JSON, source TEXT, type VehicleConnector_type);
+CREATE TABLE VehicleConnector (address JSON, alternateName TEXT, areaServed TEXT, connected BOOLEAN, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, if JSON, location JSON, n TEXT, name TEXT, owner JSON, ratedchargingcapacity NUMERIC, rateddischargingcapacity NUMERIC, rt JSON, seeAlso JSON, source TEXT, type VehicleConnector_type);
