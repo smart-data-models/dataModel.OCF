@@ -1,3 +1,3 @@
 /* (Beta) Export of data model mediaSourceList of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE mediaSourceList_type AS ENUM ('mediaSourceList');
-CREATE TABLE mediaSourceList (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, if JSON, n TEXT, name TEXT, owner JSON, rt JSON, source TEXT, sources JSON, type mediaSourceList_type);
+CREATE TABLE mediaSourceList (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, if JSON, location JSON, n TEXT, name TEXT, owner JSON, rt JSON, seeAlso JSON, source TEXT, sources JSON, type mediaSourceList_type);
