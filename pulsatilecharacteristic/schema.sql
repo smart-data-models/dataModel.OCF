@@ -1,3 +1,3 @@
 /* (Beta) Export of data model pulsatilecharacteristic of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE pulsatilecharacteristic_type AS ENUM ('pulsatilecharacteristic');
-CREATE TABLE pulsatilecharacteristic (address JSON, alternateName TEXT, areaServed TEXT, characteristic NUMERIC, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, if JSON, n TEXT, name TEXT, owner JSON, range JSON, rt JSON, source TEXT, step NUMERIC, type pulsatilecharacteristic_type);
+CREATE TABLE pulsatilecharacteristic (address JSON, alternateName TEXT, areaServed TEXT, characteristic NUMERIC, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, if JSON, location JSON, n TEXT, name TEXT, owner JSON, range JSON, rt JSON, seeAlso JSON, source TEXT, step NUMERIC, type pulsatilecharacteristic_type);
