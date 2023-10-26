@@ -24,6 +24,8 @@ Link alla [specifica](https://github.com/smart-data-models/dataModel.OCF/blob/ma
 [仕様へのリンク](https://github.com/smart-data-models/dataModel.OCF/blob/master/Altimeter/doc/spec_JA.md)
 
 [链接到规范](https://github.com/smart-data-models/dataModel.OCF/blob/master/Altimeter/doc/spec_ZH.md)
+
+[사양 링크](https://github.com/smart-data-models/dataModel.OCF/blob/master/Altimeter/doc/spec_KO.md)
 ### Examples
 
 Link to the [example](https://smart-data-models.github.io/dataModel.OCF/Altimeter/examples/example.json) (keyvalues) for NGSI v2
