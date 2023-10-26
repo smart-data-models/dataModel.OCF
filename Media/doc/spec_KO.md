@@ -1,0 +1,367 @@
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+엔티티: 미디어  
+========<!-- /10-Header -->  
+<!-- 15-License -->  
+[오픈 라이선스](https://github.com/smart-data-models//dataModel.OCF/blob/master/Media/LICENSE.md)  
+[문서 자동 생성](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+글로벌 설명: **스마트 데이터 모델 원본 IoT데이터 데이터 모델의 프로그램 적응. 이 리소스는 OCF 서버가 지원하는 미디어 유형을 지정합니다. 리소스는 미디어 요소의 배열입니다.  각 요소에는 다음이 포함됩니다:     지정된 미디어 유형에 액세스할 수 있는 URL.     SDP를 사용하는 미디어의 정의가 포함된 문자열 배열.     sdp 배열의 각 항목은 SDP 줄입니다.     각 줄은 SDP 사양에 정의된 대로 SDP 설명 구문을 따라야 합니다. SDP 사양은 http://tools.ietf.org/html/rfc4566.**에서 확인할 수 있습니다.  
+버전: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
+
+## 속성 목록  
+
+<sup><sub>[*] 속성에 유형이 없는 것은 여러 유형 또는 다른 형식/패턴을 가질 수 있기 때문입니다</sub></sup>.  
+- `if[array]`: 이 리소스에서 지원하는 OCF 인터페이스 세트입니다.  - `media[array]`: 원본 설명이 없습니다.  - `n[string]`: 리소스의 친근한 이름  - `rt[array]`: 리소스 유형입니다.  - `type[string]`: NGSI 엔티티 유형. 미디어여야 합니다.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+필수 속성  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+이 데이터 모델은 원래 [오픈 커넥티비티 재단 리포지토리](https://github.com/openconnectivityfoundation/IoTDataModels)에서 가져온 것입니다. NGSI 요구 사항을 준수하도록 확장되었습니다.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## 속성에 대한 데이터 모델 설명  
+알파벳순으로 정렬(자세한 내용을 보려면 클릭)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
+<details><summary><strong>full yaml details</strong></summary>    
+```yaml  
+Media:    
+  description: 'Smart Data Models Program adaptation of the original IoTData data Models. This Resource specifies the media types that an OCF Server supports. The resource is an array of media elements.  Each element contains:     A URL at which the specified media type can be accessed.     A string array containing the definition of the media using SDP.     Each entry in the sdp array is an SDP line.     Each line shall follow the SDP description syntax as defined in the SDP specification. The SDP specification can be found at http://tools.ietf.org/html/rfc4566.'    
+  properties:    
+    if:    
+      description: The OCF Interface set supported by this Resource.    
+      items:    
+        enum:    
+          - oic.if.a    
+          - oic.if.s    
+          - oic.if.baseline    
+        type: string    
+      minItems: 2    
+      readOnly: true    
+      type: array    
+      uniqueItems: true    
+      x-ngsi:    
+        type: Property    
+    media:    
+      description: No original description was available    
+      items:    
+        properties:    
+          sdp:    
+            description: 'The array of strings, one per SDP line.'    
+            items:    
+              description: SDP media or attribute line    
+              type: string    
+            type: array    
+          url:    
+            description: The url for the media instance.    
+            type: string    
+        type: object    
+      type: array    
+      x-ngsi:    
+        type: Property    
+    n:    
+      description: Friendly name of the Resource    
+      maxLength: 64    
+      readOnly: true    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    rt:    
+      description: The Resource Type.    
+      items:    
+        enum:    
+          - oic.r.media    
+        maxLength: 64    
+        type: string    
+      minItems: 1    
+      readOnly: true    
+      type: array    
+      uniqueItems: true    
+      x-ngsi:    
+        type: Property    
+    type:    
+      description: NGSI entity type. It has to be Media    
+      enum:    
+        - Media    
+      type: string    
+      x-ngsi:    
+        type: Property    
+  required:    
+    - id    
+    - type    
+  type: object    
+  x-derived-from: https://github.com/OpenInterConnect/IoTDataModels/blob/master/MediaResURI.swagger.json    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.OCF/blob/master/Media/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.IoTDataModels/Media/schema.json    
+  x-model-tags: OCF    
+  x-version: 0.0.1    
+```  
+</details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## 페이로드 예시  
+#### 미디어 NGSI-v2 키-값 예시  
+다음은 JSON-LD 형식의 미디어를 키-값으로 사용하는 예시입니다. 이는 `옵션=키값`을 사용할 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+  "id": "urn:ngsi-ld:Media:id:KDPQ:83036391",  
+  "dateCreated": "1997-01-03T03:13:22Z",  
+  "dateModified": "2000-02-09T21:59:03Z",  
+  "source": "Especially according myself office place. Test case expert forget.",  
+  "name": "East product share fact school. Sound bad police most college among.",  
+  "alternateName": "Media trade today plant. Art fly but price production. Stand here power wonder its keep.",  
+  "description": "Wide skin maybe western especially look live. Value agency blood current. Since affect star miss general election.",  
+  "dataProvider": "Painting cup half tend identify student mission world. Interesting easy anyone operation how sound.",  
+  "owner": [  
+    "urn:ngsi-ld:Media:items:LNSZ:90498442",  
+    "urn:ngsi-ld:Media:items:FKOX:99131384"  
+  ],  
+  "seeAlso": [  
+    "urn:ngsi-ld:Media:items:XRQW:77854149",  
+    "urn:ngsi-ld:Media:items:WYHM:27291806"  
+  ],  
+  "location": {  
+    "type": "Point",  
+    "coordinates": [  
+      -59.32886,  
+      108.974994  
+    ]  
+  },  
+  "address": {  
+    "streetAddress": "Cut arm act home short. Not under bill executive morning home rate.",  
+    "addressLocality": "Change popular last arrive to issue soldier. Blood city fine old nothing. Back memory father be reach get focus.",  
+    "addressRegion": "Help large hear look end live world fact. Certainly senior fall go tell general heavy. Back fund shake their environment.",  
+    "addressCountry": "Pull kind personal Congress score. Should east capital address fast realize sort. Perform impact player truth stay senior.",  
+    "postalCode": "Treat recognize where cover watch. Interest bring assume agree health. Marriage specific claim movie sing.",  
+    "postOfficeBoxNumber": "Light personal benefit person environmental."  
+  },  
+  "areaServed": "Answer wife call may under. Anything inside write. Tough however study know coach industry tree in. But town parent."  
+}  
+```  
+</details>  
+#### 미디어 NGSI-v2 정규화 예제  
+다음은 정규화된 JSON-LD 형식의 미디어 예시입니다. 이는 옵션을 사용하지 않을 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+  "id": {  
+    "type": "string",  
+    "value": "urn:ngsi-ld:Media:id:KDPQ:83036391"  
+  },  
+  "dateCreated": {  
+    "format": "date-time",  
+    "type": "string",  
+    "value": "1997-01-03T03:13:22Z"  
+  },  
+  "dateModified": {  
+    "format": "date-time",  
+    "type": "string",  
+    "value": "2000-02-09T21:59:03Z"  
+  },  
+  "source": {  
+    "type": "string",  
+    "value": "Especially according myself office place. Test case expert forget."  
+  },  
+  "name": {  
+    "type": "string",  
+    "value": "East product share fact school. Sound bad police most college among."  
+  },  
+  "alternateName": {  
+    "type": "string",  
+    "value": "Media trade today plant. Art fly but price production. Stand here power wonder its keep."  
+  },  
+  "description": {  
+    "type": "string",  
+    "value": "Wide skin maybe western especially look live. Value agency blood current. Since affect star miss general election."  
+  },  
+  "dataProvider": {  
+    "type": "string",  
+    "value": "Painting cup half tend identify student mission world. Interesting easy anyone operation how sound."  
+  },  
+  "owner": {  
+    "type": "array",  
+    "value": [  
+      "urn:ngsi-ld:Media:items:LNSZ:90498442",  
+      "urn:ngsi-ld:Media:items:FKOX:99131384"  
+    ]  
+  },  
+  "seeAlso": {  
+    "type": "array",  
+    "value": [  
+      "urn:ngsi-ld:Media:items:XRQW:77854149",  
+      "urn:ngsi-ld:Media:items:WYHM:27291806"  
+    ]  
+  },  
+  "location": {  
+    "type": "object",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        -59.32886,  
+        108.974994  
+      ]  
+    }  
+  },  
+  "address": {  
+    "type": "object",  
+    "value": {  
+      "streetAddress": "Cut arm act home short. Not under bill executive morning home rate.",  
+      "addressLocality": "Change popular last arrive to issue soldier. Blood city fine old nothing. Back memory father be reach get focus.",  
+      "addressRegion": "Help large hear look end live world fact. Certainly senior fall go tell general heavy. Back fund shake their environment.",  
+      "addressCountry": "Pull kind personal Congress score. Should east capital address fast realize sort. Perform impact player truth stay senior.",  
+      "postalCode": "Treat recognize where cover watch. Interest bring assume agree health. Marriage specific claim movie sing.",  
+      "postOfficeBoxNumber": "Light personal benefit person environmental."  
+    }  
+  },  
+  "areaServed": {  
+    "type": "string",  
+    "value": "Answer wife call may under. Anything inside write. Tough however study know coach industry tree in. But town parent."  
+  }  
+}  
+```  
+</details>  
+#### 미디어 NGSI-LD 키-값 예시  
+다음은 키-값으로 JSON-LD 형식의 미디어 예시입니다. 이는 `옵션=키값`을 사용할 때 NGSI-LD와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+    "id": "urn:ngsi-ld:Media:id:KDPQ:83036391",  
+    "dateCreated": "1997-01-03T03:13:22Z",  
+    "dateModified": "2000-02-09T21:59:03Z",  
+    "source": "Especially according myself office place. Test case expert forget.",  
+    "name": "East product share fact school. Sound bad police most college among.",  
+    "alternateName": "Media trade today plant. Art fly but price production. Stand here power wonder its keep.",  
+    "description": "Wide skin maybe western especially look live. Value agency blood current. Since affect star miss general election.",  
+    "dataProvider": "Painting cup half tend identify student mission world. Interesting easy anyone operation how sound.",  
+    "owner": [  
+        "urn:ngsi-ld:Media:items:LNSZ:90498442",  
+        "urn:ngsi-ld:Media:items:FKOX:99131384"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Media:items:XRQW:77854149",  
+        "urn:ngsi-ld:Media:items:WYHM:27291806"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -59.32886,  
+            108.974994  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Cut arm act home short. Not under bill executive morning home rate.",  
+        "addressLocality": "Change popular last arrive to issue soldier. Blood city fine old nothing. Back memory father be reach get focus.",  
+        "addressRegion": "Help large hear look end live world fact. Certainly senior fall go tell general heavy. Back fund shake their environment.",  
+        "addressCountry": "Pull kind personal Congress score. Should east capital address fast realize sort. Perform impact player truth stay senior.",  
+        "postalCode": "Treat recognize where cover watch. Interest bring assume agree health. Marriage specific claim movie sing.",  
+        "postOfficeBoxNumber": "Light personal benefit person environmental."  
+    },  
+    "areaServed": "Answer wife call may under. Anything inside write. Tough however study know coach industry tree in. But town parent.",  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+    ]  
+}  
+```  
+</details>  
+#### 미디어 NGSI-LD 정규화 예시  
+다음은 정규화된 JSON-LD 형식의 미디어 예시입니다. 이는 옵션을 사용하지 않을 때 NGSI-LD와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+    "id": "urn:ngsi-ld:Media:id:JBFJ:85590267",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1999-11-01T04:37:28Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2014-02-07T07:07:30Z"  
+        }  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Today dark project still. Cell some together because."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Create anyone close."  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Offer fish pick news chance reflect long. Role exist method daughter. Run one beautiful method hospital find know young."  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Sing firm try how finish day. Will letter staff middle. Here prevent your major mother activity discussion instead."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Family never possible why scientist."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Media:items:JUEF:68145877",  
+            "urn:ngsi-ld:Media:items:SUAX:54574771"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Media:items:QFXF:74085416"  
+        ]  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                11.0430135,  
+                -64.961196  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Hot reduce life national final. Administration citizen determine machine movement dog.",  
+            "addressLocality": "Serve occur wife option life stand. My which realize focus. House coach stuff issue point foreign exist. Could girl bad bed yard debate.",  
+            "addressRegion": "Particular north she itself debate. Behind go true. Successful young space.",  
+            "addressCountry": "Oil door game church service.",  
+            "postalCode": "Own room risk also. Someone wife mouth magazine. Major administration believe north where religious hotel sell.",  
+            "postOfficeBoxNumber": "Draw field appear toward. Republican computer science explain while. Pretty party baby professor list contain here."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Dream wall seem million. At health player provide test."  
+    },  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+    ]  
+}  
+```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+[FAQ 10](https://smartdatamodels.org/index.php/faqs/)을 참조하여 규모 단위를 다루는 방법에 대한 답변을 확인하세요.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
