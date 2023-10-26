@@ -1,3 +1,3 @@
 /* (Beta) Export of data model Dimming of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE Dimming_type AS ENUM ('Dimming');
-CREATE TABLE Dimming (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, dimmingSetting NUMERIC, if JSON, n TEXT, name TEXT, owner JSON, range JSON, rt JSON, source TEXT, step NUMERIC, type Dimming_type);
+CREATE TABLE Dimming (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, dimmingSetting NUMERIC, id TEXT PRIMARY KEY, if JSON, location JSON, n TEXT, name TEXT, owner JSON, range JSON, rt JSON, seeAlso JSON, source TEXT, step NUMERIC, type Dimming_type);
