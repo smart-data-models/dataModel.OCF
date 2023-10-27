@@ -35,27 +35,12 @@
         "oic.r.printer.3d",
         "oic.r.printer.3d"
     ],
-    "printsizey": {
-        "type": "Property",
-        "value": 141.9
-    },
-    "memorysize": {
-        "type": "Property",
-        "value": 423.2
-    },
+    "printsizey": 141.9,
+    "memorysize": 423.2,
     "3dprinttype": "Digital Light Processing",
-    "wanconnected": {
-        "type": "Property",
-        "value": true
-    },
-    "printsizex": {
-        "type": "Property",
-        "value": 638.7
-    },
-    "printsizez": {
-        "type": "Property",
-        "value": 659.8
-    },
+    "wanconnected": true,
+    "printsizex": 638.7,
+    "printsizez": 659.8,
     "n": "Direction expert staff property. Wall score before increase.",
     "if": [
         "oic.if.r",
