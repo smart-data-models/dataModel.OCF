@@ -107,7 +107,6 @@
   "rt": {
     "type": "array",
     "value": [
-      "oic.r.activity",
       "oic.r.activity"
     ]
   },
