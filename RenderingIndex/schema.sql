@@ -1,3 +1,3 @@
 /* (Beta) Export of data model RenderingIndex of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE RenderingIndex_type AS ENUM ('RenderingIndex');
-CREATE TABLE RenderingIndex (cri NUMERIC, if JSON, n TEXT, rt JSON, type RenderingIndex_type);
+CREATE TABLE RenderingIndex (address JSON, alternateName TEXT, areaServed TEXT, cri NUMERIC, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, if JSON, location JSON, n TEXT, name TEXT, owner JSON, rt JSON, seeAlso JSON, source TEXT, type RenderingIndex_type);
