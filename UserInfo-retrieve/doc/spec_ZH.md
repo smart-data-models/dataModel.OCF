@@ -15,7 +15,15 @@
 ## 属性列表  
 
 <sup><sub>[*] 如果属性中没有类型，是因为它可能有多个类型或不同的格式/模式</sub></sup>。  
-- `if[array]`: 该资源支持的 OCF 接口集。  - `n[string]`: 资源的友好名称  - `rt[array]`: 资源类型。  - `type[string]`: NGSI 实体类型。必须是用户信息-检索  <!-- /30-PropertiesList -->  
+- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国家。例如，西班牙  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 街道地址所在的地点，以及该地点所在的区域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: 地点所在的地区，以及该地区位于哪个国家  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 地区是一种行政区划，在一些国家由地方政府管理    
+	- `postOfficeBoxNumber[string]`: 用于邮政信箱地址的邮政信箱号码。例如：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 邮政编码。例如：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 街道地址  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: 标识公共街道上特定房产的编号    
+- `alternateName[string]`: 该项目的替代名称  - `areaServed[string]`: 提供服务或提供物品的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 标识统一数据实体提供者的字符序列  - `dateCreated[date-time]`: 实体创建时间戳。通常由存储平台分配  - `dateModified[date-time]`: 实体最后一次修改的时间戳。通常由存储平台分配  - `description[string]`: 项目描述  - `id[*]`: 实体的唯一标识符  - `if[array]`: 该资源支持的 OCF 接口集。  - `location[*]`: 项目的 Geojson 引用。它可以是点、线条字符串、多边形、多点、多线条字符串或多多边形  - `n[string]`: 资源的友好名称  - `name[string]`: 该项目的名称  - `owner[array]`: 包含一个 JSON 编码字符序列的列表，其中引用了所有者的唯一 Ids  - `rt[array]`: 资源类型。  - `seeAlso[*]`: 指向有关该项目的其他资源的 uri 列表  - `source[string]`: 以 URL 形式给出实体数据原始来源的字符串。建议使用源提供者的完全合格域名或源对象的 URL  - `type[string]`: NGSI 实体类型。必须是用户信息-检索  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 所需属性  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -32,6 +40,109 @@
 UserInfo-retrieve:    
   description: 'Smart Data Models Program adaptation of the original IoTData data Models. This Resource defines credentials for user to application layer login. This does not relate to OCF Device to Device or Device to Cloud authentication. The username, password and token are strings.'    
   properties:    
+    address:    
+      description: The mailing address    
+      properties:    
+        addressCountry:    
+          description: 'The country. For example, Spain'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
+        addressLocality:    
+          description: 'The locality in which the street address is, and which is in the region'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
+        addressRegion:    
+          description: 'The region in which the locality is, and which is in the country'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        postOfficeBoxNumber:    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
+        postalCode:    
+          description: 'The postal code. For example, 24004'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
+        streetAddress:    
+          description: The street address    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      type: object    
+      x-ngsi:    
+        model: https://schema.org/address    
+        type: Property    
+    alternateName:    
+      description: An alternative name for this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    areaServed:    
+      description: The geographic area where a service or offered item is provided    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    dataProvider:    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateCreated:    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateModified:    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    description:    
+      description: A description of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    id:    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
+      x-ngsi:    
+        type: Property    
     if:    
       description: The OCF Interface set supported by this Resource.    
       items:    
@@ -45,11 +156,203 @@ UserInfo-retrieve:
       uniqueItems: true    
       x-ngsi:    
         type: Property    
+    location:    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+      oneOf:    
+        - description: Geojson reference to the item. Point    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                type: number    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - Point    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Point    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - LineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON LineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 4    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - Polygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Polygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPoint    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPoint    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiLineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiLineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    items:    
+                      type: number    
+                    minItems: 2    
+                    type: array    
+                  minItems: 4    
+                  type: array    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPolygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPolygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+      x-ngsi:    
+        type: GeoProperty    
     n:    
       description: Friendly name of the Resource    
       maxLength: 64    
       readOnly: true    
       type: string    
+      x-ngsi:    
+        type: Property    
+    name:    
+      description: The name of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    owner:    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
+      items:    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
+      type: array    
       x-ngsi:    
         type: Property    
     rt:    
@@ -63,6 +366,23 @@ UserInfo-retrieve:
       readOnly: true    
       type: array    
       uniqueItems: true    
+      x-ngsi:    
+        type: Property    
+    seeAlso:    
+      description: list of uri pointing to additional resources about the item    
+      oneOf:    
+        - items:    
+            format: uri    
+            type: string    
+          minItems: 1    
+          type: array    
+        - format: uri    
+          type: string    
+      x-ngsi:    
+        type: Property    
+    source:    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
+      type: string    
       x-ngsi:    
         type: Property    
     type:    
@@ -94,38 +414,48 @@ UserInfo-retrieve:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:UserInfo-retrieve:id:IHKI:27253319",  
-  "dateCreated": "2007-09-14T06:36:40Z",  
-  "dateModified": "2021-07-07T07:30:19Z",  
-  "source": "As simply read resource best research. Plant leave small apply next cover. Cup difference clearly could read.",  
-  "name": "Movie put perform executive mind smile. Special other market recognize budget yeah. Share adult war sound.",  
-  "alternateName": "Pm easy answer food. Eat special nice stand situation. Design continue girl food law last.",  
-  "description": "Economy usually pressure positive and less tree herself. Expert worker wide east each run later shoulder. Able agree similar raise reflect feel its.",  
-  "dataProvider": "Current police card through fear. Somebody travel side moment follow him. Still occur Congress material together into use skin.",  
-  "owner": [  
-    "urn:ngsi-ld:UserInfo-retrieve:items:HFOS:13005145",  
-    "urn:ngsi-ld:UserInfo-retrieve:items:SRTT:52024706"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:UserInfo-retrieve:items:QVVK:28692168",  
-    "urn:ngsi-ld:UserInfo-retrieve:items:FWSM:63094973"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      79.31196,  
-      137.523533  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Reason beautiful answer stay prepare interview newspaper computer. Audience middle side more. Actually energy win writer onto.",  
-    "addressLocality": "Conference line single school. Skill check happy station relate foot. Myself newspaper to interview edge figure serve.",  
-    "addressRegion": "Collection admit sell physical. Without significant quickly now agent able.",  
-    "addressCountry": "Lead TV that subject race power. Forward with individual best senior health. Theory lot section always five might through degree.",  
-    "postalCode": "Option business enough tell debate. Pull attorney local. Official important entire detail allow late for. Former perform lot feeling represent charge lead.",  
-    "postOfficeBoxNumber": "Analysis could street put reach program. Star radio start ready science."  
-  },  
-  "areaServed": "Person then their deal former. Add one major himself anything voice person."  
+    "id": "urn:ngsi-ld:UserInfo-retrieve:id:TXBY:45705242",  
+    "dateCreated": "1990-06-22T01:09:44Z",  
+    "dateModified": "1999-02-06T18:19:13Z",  
+    "source": "Bag finally challenge win the. Where apply practice support test image. Professor speak fire interesting light politics.",  
+    "name": "Cons",  
+    "alternateName": "Leader agency serious fact and deal sort but. Reach past sister realize away mouth. School shake defense interest.",  
+    "description": "Laugh western for cold performance off. During hard century discuss read clear.",  
+    "dataProvider": "Less appear long whom result economy both. Who turn step professor team. Ok expect art federal military fly. Fact thing religious task clear.",  
+    "owner": [  
+        "urn:ngsi-ld:UserInfo-retrieve:items:QXBB:34998933",  
+        "urn:ngsi-ld:UserInfo-retrieve:items:MBIL:67490912"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:UserInfo-retrieve:items:YJSI:71607452"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -42.7967495,  
+            -34.967117  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Exactly score cut care do. Personal dream leader end address week.",  
+        "addressLocality": "Require moment nice i",  
+        "addressRegion": "Ago herself edge under. His spec",  
+        "addressCountry": "Force environment tax audience majority. Note office sea ge",  
+        "postalCode": "Leg kitchen do teach boy federal. Word response yeah. Another wonder wo",  
+        "postOfficeBoxNumber": "Now machine level far song ask treatment. Green mouth close only arm lead participant.",  
+        "streetNr": "Particular bag suggest free drive teach. Each another picture view letter vote movement.",  
+        "district": "Thus important think goal author husband strategy. Understand war next rule n"  
+    },  
+    "areaServed": "Free information hair choose system factor. O",  
+    "rt": [  
+        "oic.r.userinfo"  
+    ],  
+    "n": "How real economy manag",  
+    "if": [  
+        "oic.if.rw",  
+        "oic.if.baseline"  
+    ],  
+    "type": "UserInfo-retrieve"  
 }  
 ```  
 </details>  
@@ -134,79 +464,93 @@ UserInfo-retrieve:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:UserInfo-retrieve:id:IHKI:27253319"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2007-09-14T06:36:40Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2021-07-07T07:30:19Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "As simply read resource best research. Plant leave small apply next cover. Cup difference clearly could read."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Movie put perform executive mind smile. Special other market recognize budget yeah. Share adult war sound."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Pm easy answer food. Eat special nice stand situation. Design continue girl food law last."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Economy usually pressure positive and less tree herself. Expert worker wide east each run later shoulder. Able agree similar raise reflect feel its."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Current police card through fear. Somebody travel side moment follow him. Still occur Congress material together into use skin."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:UserInfo-retrieve:items:HFOS:13005145",  
-      "urn:ngsi-ld:UserInfo-retrieve:items:SRTT:52024706"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:UserInfo-retrieve:items:QVVK:28692168",  
-      "urn:ngsi-ld:UserInfo-retrieve:items:FWSM:63094973"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        79.31196,  
-        137.523533  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Reason beautiful answer stay prepare interview newspaper computer. Audience middle side more. Actually energy win writer onto.",  
-      "addressLocality": "Conference line single school. Skill check happy station relate foot. Myself newspaper to interview edge figure serve.",  
-      "addressRegion": "Collection admit sell physical. Without significant quickly now agent able.",  
-      "addressCountry": "Lead TV that subject race power. Forward with individual best senior health. Theory lot section always five might through degree.",  
-      "postalCode": "Option business enough tell debate. Pull attorney local. Official important entire detail allow late for. Former perform lot feeling represent charge lead.",  
-      "postOfficeBoxNumber": "Analysis could street put reach program. Star radio start ready science."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Person then their deal former. Add one major himself anything voice person."  
-  }  
+    "id": "urn:ngsi-ld:UserInfo-retrieve:id:TXBY:45705242",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1990-06-22T01:09:44Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "1999-02-06T18:19:13Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Bag finally challenge win the. Where apply practice support test image. Professor speak fire interesting light politics."  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Cons"  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Leader agency serious fact and deal sort but. Reach past sister realize away mouth. School shake defense interest."  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Laugh western for cold performance off. During hard century discuss read clear."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Less appear long whom result economy both. Who turn step professor team. Ok expect art federal military fly. Fact thing religious task clear."  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:UserInfo-retrieve:items:QXBB:34998933",  
+            "urn:ngsi-ld:UserInfo-retrieve:items:MBIL:67490912"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:UserInfo-retrieve:items:YJSI:71607452"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -42.7967495,  
+                -34.967117  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Exactly score cut care do. Personal dream leader end address week.",  
+            "addressLocality": "Require moment nice i",  
+            "addressRegion": "Ago herself edge under. His spec",  
+            "addressCountry": "Force environment tax audience majority. Note office sea ge",  
+            "postalCode": "Leg kitchen do teach boy federal. Word response yeah. Another wonder wo",  
+            "postOfficeBoxNumber": "Now machine level far song ask treatment. Green mouth close only arm lead participant.",  
+            "streetNr": "Particular bag suggest free drive teach. Each another picture view letter vote movement.",  
+            "district": "Thus important think goal author husband strategy. Understand war next rule n"  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Free information hair choose system factor. O"  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.userinfo"  
+        ]  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "How real economy manag"  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.rw",  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "UserInfo-retrieve"  
 }  
 ```  
 </details>  
@@ -215,41 +559,50 @@ UserInfo-retrieve:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:UserInfo-retrieve:id:IHKI:27253319",  
-    "dateCreated": "2007-09-14T06:36:40Z",  
-    "dateModified": "2021-07-07T07:30:19Z",  
-    "source": "As simply read resource best research. Plant leave small apply next cover. Cup difference clearly could read.",  
-    "name": "Movie put perform executive mind smile. Special other market recognize budget yeah. Share adult war sound.",  
-    "alternateName": "Pm easy answer food. Eat special nice stand situation. Design continue girl food law last.",  
-    "description": "Economy usually pressure positive and less tree herself. Expert worker wide east each run later shoulder. Able agree similar raise reflect feel its.",  
-    "dataProvider": "Current police card through fear. Somebody travel side moment follow him. Still occur Congress material together into use skin.",  
+    "id": "urn:ngsi-ld:UserInfo-retrieve:id:TXBY:45705242",  
+    "dateCreated": "1990-06-22T01:09:44Z",  
+    "dateModified": "1999-02-06T18:19:13Z",  
+    "source": "Bag finally challenge win the. Where apply practice support test image. Professor speak fire interesting light politics.",  
+    "name": "Cons",  
+    "alternateName": "Leader agency serious fact and deal sort but. Reach past sister realize away mouth. School shake defense interest.",  
+    "description": "Laugh western for cold performance off. During hard century discuss read clear.",  
+    "dataProvider": "Less appear long whom result economy both. Who turn step professor team. Ok expect art federal military fly. Fact thing religious task clear.",  
     "owner": [  
-        "urn:ngsi-ld:UserInfo-retrieve:items:HFOS:13005145",  
-        "urn:ngsi-ld:UserInfo-retrieve:items:SRTT:52024706"  
+        "urn:ngsi-ld:UserInfo-retrieve:items:QXBB:34998933",  
+        "urn:ngsi-ld:UserInfo-retrieve:items:MBIL:67490912"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:UserInfo-retrieve:items:QVVK:28692168",  
-        "urn:ngsi-ld:UserInfo-retrieve:items:FWSM:63094973"  
+        "urn:ngsi-ld:UserInfo-retrieve:items:YJSI:71607452"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            79.31196,  
-            137.523533  
+            -42.7967495,  
+            -34.967117  
         ]  
     },  
     "address": {  
-        "streetAddress": "Reason beautiful answer stay prepare interview newspaper computer. Audience middle side more. Actually energy win writer onto.",  
-        "addressLocality": "Conference line single school. Skill check happy station relate foot. Myself newspaper to interview edge figure serve.",  
-        "addressRegion": "Collection admit sell physical. Without significant quickly now agent able.",  
-        "addressCountry": "Lead TV that subject race power. Forward with individual best senior health. Theory lot section always five might through degree.",  
-        "postalCode": "Option business enough tell debate. Pull attorney local. Official important entire detail allow late for. Former perform lot feeling represent charge lead.",  
-        "postOfficeBoxNumber": "Analysis could street put reach program. Star radio start ready science."  
+        "streetAddress": "Exactly score cut care do. Personal dream leader end address week.",  
+        "addressLocality": "Require moment nice i",  
+        "addressRegion": "Ago herself edge under. His spec",  
+        "addressCountry": "Force environment tax audience majority. Note office sea ge",  
+        "postalCode": "Leg kitchen do teach boy federal. Word response yeah. Another wonder wo",  
+        "postOfficeBoxNumber": "Now machine level far song ask treatment. Green mouth close only arm lead participant.",  
+        "streetNr": "Particular bag suggest free drive teach. Each another picture view letter vote movement.",  
+        "district": "Thus important think goal author husband strategy. Understand war next rule n"  
     },  
-    "areaServed": "Person then their deal former. Add one major himself anything voice person.",  
+    "areaServed": "Free information hair choose system factor. O",  
+    "rt": [  
+        "oic.r.userinfo"  
+    ],  
+    "n": "How real economy manag",  
+    "if": [  
+        "oic.if.rw",  
+        "oic.if.baseline"  
+    ],  
+    "type": "UserInfo-retrieve",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -259,82 +612,101 @@ UserInfo-retrieve:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:UserInfo-retrieve:id:SARL:53055590",  
+    "id": "urn:ngsi-ld:UserInfo-retrieve:id:TXBY:45705242",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2004-11-07T15:43:42Z"  
+            "@value": "1990-06-22T01:09:44Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2007-07-08T01:47:16Z"  
+            "@value": "1999-02-06T18:19:13Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Its grow toward threat expect center father. Than western race write expert political I."  
+        "value": "Bag finally challenge win the. Where apply practice support test image. Professor speak fire interesting light politics."  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Simply charge page remember treatment care deep. There check hospital road. Wear serious decade soldier table."  
+        "value": "Cons"  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Reality accept ago give adult as service. Commercial body manager network station. Forward political join alone short share above."  
+        "value": "Leader agency serious fact and deal sort but. Reach past sister realize away mouth. School shake defense interest."  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Go middle science check."  
+        "value": "Laugh western for cold performance off. During hard century discuss read clear."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Else board fund score add. Draw born onto system five."  
+        "value": "Less appear long whom result economy both. Who turn step professor team. Ok expect art federal military fly. Fact thing religious task clear."  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:UserInfo-retrieve:items:ZPSG:82205432",  
-            "urn:ngsi-ld:UserInfo-retrieve:items:YKIF:85261963"  
+            "urn:ngsi-ld:UserInfo-retrieve:items:QXBB:34998933",  
+            "urn:ngsi-ld:UserInfo-retrieve:items:MBIL:67490912"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:UserInfo-retrieve:items:QJRR:59773643"  
+            "urn:ngsi-ld:UserInfo-retrieve:items:YJSI:71607452"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                -71.2702425,  
-                122.709099  
+                -42.7967495,  
+                -34.967117  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Not situation young finish upon.",  
-            "addressLocality": "Break mission share only do. Around sure fire evening however.",  
-            "addressRegion": "Market measure garden night talk. Program available until best actually animal simple.",  
-            "addressCountry": "She certainly describe Mr walk. Impact nearly be myself up green.",  
-            "postalCode": "Major money by receive ahead enjoy show. Key age experience behavior entire stage understand.",  
-            "postOfficeBoxNumber": "Impact size specific responsibility back subject walk. Job student action stand over not boy kitchen."  
+            "streetAddress": "Exactly score cut care do. Personal dream leader end address week.",  
+            "addressLocality": "Require moment nice i",  
+            "addressRegion": "Ago herself edge under. His spec",  
+            "addressCountry": "Force environment tax audience majority. Note office sea ge",  
+            "postalCode": "Leg kitchen do teach boy federal. Word response yeah. Another wonder wo",  
+            "postOfficeBoxNumber": "Now machine level far song ask treatment. Green mouth close only arm lead participant.",  
+            "streetNr": "Particular bag suggest free drive teach. Each another picture view letter vote movement.",  
+            "district": "Thus important think goal author husband strategy. Understand war next rule n"  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "And mother structure chance. Difficult challenge wish threat around. Tend civil million side bar strategy tough."  
+        "value": "Free information hair choose system factor. O"  
     },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.userinfo"  
+        ]  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "How real economy manag"  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.rw",  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "UserInfo-retrieve",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
