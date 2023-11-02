@@ -12,57 +12,59 @@
     },
     {
       "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "rt": {
+          "description": "Property. The Resource Type.",
+          "items": {
+            "enum": [
+              "oic.r.selectablelevels"
+            ],
+            "maxLength": 64,
+            "type": "string"
+          },
+          "minItems": 1,
+          "uniqueItems": true,
+          "readOnly": true,
+          "type": "array"
+        },
+        "targetlevel": {
+          "description": "Property. The target level from the available selectable set.",
+          "type": "number"
+        },
+        "availablelevels": {
+          "description": "Property. The set of levels to select from.",
+          "items": {
+            "type": "number"
+          },
+          "readOnly": true,
+          "type": "array"
+        },
+        "if": {
+          "description": "Property. The OCF Interface set supported by this Resource.",
+          "items": {
+            "enum": [
+              "oic.if.a",
+              "oic.if.baseline"
+            ],
+            "type": "string"
+          },
+          "minItems": 2,
+          "uniqueItems": true,
+          "readOnly": true,
+          "type": "array"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "SelectableLevels"
+          ],
+          "description": "Property. NGSI entity type. It has to be SelectableLevels"
+        }
+      }
     }
   ],
-  "properties": {
-    "rt": {
-      "description": "Property. The Resource Type.",
-      "items": {
-        "enum": [
-          "oic.r.selectablelevels"
-        ],
-        "maxLength": 64,
-        "type": "string"
-      },
-      "minItems": 1,
-      "uniqueItems": true,
-      "readOnly": true,
-      "type": "array"
-    },
-    "targetlevel": {
-      "description": "Property. The target level from the available selectable set.",
-      "type": "number"
-    },
-    "availablelevels": {
-      "description": "Property. The set of levels to select from.",
-      "items": {
-        "type": "number"
-      },
-      "readOnly": true,
-      "type": "array"
-    },
-    "if": {
-      "description": "Property. The OCF Interface set supported by this Resource.",
-      "items": {
-        "enum": [
-          "oic.if.a",
-          "oic.if.baseline"
-        ],
-        "type": "string"
-      },
-      "minItems": 2,
-      "uniqueItems": true,
-      "readOnly": true,
-      "type": "array"
-    },
-    "type": {
-      "type": "string",
-      "enum": [
-        "SelectableLevels"
-      ],
-      "description": "Property. NGSI entity type. It has to be SelectableLevels"
-    }
-  },
   "derivedFrom": "https://github.com/OpenInterConnect/IoTDataModels/blob/master/SelectableLevelsResURI.swagger.json",
   "license": "https://github.com/OpenInterConnect/IoTDataModels/blob/master/README.md",
   "required": [
