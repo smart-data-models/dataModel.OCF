@@ -1,79 +1,101 @@
 {
-    "id": "urn:ngsi-ld:GlucoseHealth:id:OYOG:86546161",
+    "id": "urn:ngsi-ld:GlucoseHealth:id:QBNE:37382998",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1996-03-31T08:57:37Z"
+            "@value": "1993-11-20T10:31:37Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1992-09-20T11:34:04Z"
+            "@value": "1972-10-16T23:59:32Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Civil agreement after organization. Medical computer statement tree herself wonder. Investment ago society late particular place."
+        "value": "Mr card current seat down. Offer commercial last."
     },
     "name": {
         "type": "Property",
-        "value": "Point magazine feel. Successful career play window. Avoid she debate drop."
+        "value": "Walk arm receive air generation. Approach education and four until s"
     },
     "alternateName": {
         "type": "Property",
-        "value": "Subject public evening body difference society. Again decade analysis music."
+        "value": "Structure herself meet support. Year institution tonight far out. Among feeling employee shake opti"
     },
     "description": {
         "type": "Property",
-        "value": "Maintain collection idea quickly out. Leader teacher reason play view. Significant build painting what population worker."
+        "value": "Green issue plan. Just anything ahead stage wind."
     },
     "dataProvider": {
         "type": "Property",
-        "value": "Affect church pattern heavy camera water month."
+        "value": "Onto suggest blood energy. Whom have money more will financial. Final people certainly wall though serious military."
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:GlucoseHealth:items:WXXP:92272198",
-            "urn:ngsi-ld:GlucoseHealth:items:GOFL:73035775"
+            "urn:ngsi-ld:GlucoseHealth:items:TGKA:23765444",
+            "urn:ngsi-ld:GlucoseHealth:items:IBBT:31467875"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:GlucoseHealth:items:PYQU:68924026"
+            "urn:ngsi-ld:GlucoseHealth:items:YGAQ:73514661"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                -65.464196,
-                -102.585699
+                -57.6638655,
+                115.048046
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "Traditional least property. Eye message ability wrong.",
-            "addressLocality": "Remember wide culture. Weight senior pay.",
-            "addressRegion": "Attorney money decide its off author. Traditional citizen attorney dark.",
-            "addressCountry": "Pretty old foot imagine. Yourself sound lot physical relationship.",
-            "postalCode": "Entire sport white operation month. Sing garden wall want. Interview our cold product class. Likely agent southern this.",
-            "postOfficeBoxNumber": "Administration clear assume consider summer cold read. Hundred guess list energy bed drive rest."
+            "streetAddress": "Former staff mentio",
+            "addressLocality": "Much just a assume pay. Month such only strong.",
+            "addressRegion": "Parent price live official reality meet attention. Yard girl listen stop pattern find keep. Institution into people stock civil word season real.",
+            "addressCountry": "Main yard century recent. Manager possibl",
+            "postalCode": "New none surface. Company prepare foot.",
+            "postOfficeBoxNumber": "High half visit according resource which occur. Likely power paper similar shake message laugh about. Eight national thousand live might.",
+            "streetNr": "Student collection deep. Report dinner end with situat",
+            "district": "Me just stay maintain. Magazine film least both "
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "Picture memory picture red letter crime already. Watch place expert out choose big stop way. Job Mr agree."
+        "value": "Whether side alone position coach series. Moment move walk very. Tha"
     },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.glucose.health"
+        ]
+    },
+    "health": {
+        "type": "Property",
+        "value": "menses"
+    },
+    "n": {
+        "type": "Property",
+        "value": "Before"
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.baseline"
+        ]
+    },
+    "type": "GlucoseHealth",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
