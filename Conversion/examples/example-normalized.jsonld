@@ -1,79 +1,106 @@
 {
-    "id": "urn:ngsi-ld:Conversion:id:MLBE:30264218",
+    "id": "urn:ngsi-ld:Conversion:id:KTUG:11578156",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2013-06-24T03:19:06Z"
+            "@value": "2007-08-08T01:12:34Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2002-09-22T02:56:38Z"
+            "@value": "2002-06-18T03:24:51Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Anyone season apply something might send. Our marriage final choose."
+        "value": "Employee source nature add rest human station. Ability management test during foot that course nothing. Sound central myself before year."
     },
     "name": {
         "type": "Property",
-        "value": "Ground unit candidate day else boy next. Listen office car star."
+        "value": "Board necessary religious natural sport music white. Natural explain before so"
     },
     "alternateName": {
         "type": "Property",
-        "value": "Sound price sister. Cell phone within seem. Try hotel lot can more one."
+        "value": "Theory type successful together. Raise study modern miss dog Democrat quickly."
     },
     "description": {
         "type": "Property",
-        "value": "Pass gun nearly image still subject. Your nothing about people moment contain get. Try treatment body level decide."
+        "value": "Every manage political record word group fo"
     },
     "dataProvider": {
         "type": "Property",
-        "value": "Network respond land media near able design."
+        "value": "Own available buy country store build before. Already against which continue. Look road article quickly."
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:Conversion:items:EEEA:28093445",
-            "urn:ngsi-ld:Conversion:items:ZXDN:42698908"
+            "urn:ngsi-ld:Conversion:items:UJLN:86914131",
+            "urn:ngsi-ld:Conversion:items:GILX:20870916"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:Conversion:items:BDPQ:45490144"
+            "urn:ngsi-ld:Conversion:items:QIDT:79230225"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                25.8744655,
-                -47.724996
+                28.732768,
+                177.344405
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "Rather live government course. Pass mention training or base. Near peace second indicate. Seem lot real amount movie my.",
-            "addressLocality": "Author director lead face. Through tonight crime. Red save up action add mouth when.",
-            "addressRegion": "Goal there hard determine. Set help size heavy. Model yes newspaper both without blue between.",
-            "addressCountry": "Class future wrong. Picture they help firm road.",
-            "postalCode": "Indeed all decade. Create move season hour clear more system. Save only cut order.",
-            "postOfficeBoxNumber": "Budget bill situation throw so new oil."
+            "streetAddress": "Likely improve notice. True power home price check real leader.",
+            "addressLocality": "School name care several loss partic",
+            "addressRegion": "Organization recognize civil. Pm her then nothing increase.",
+            "addressCountry": "Industry product another knowledge else citizen month. Traditional page a although for study anyone. Could yourself plan base rise would.",
+            "postalCode": "First degree response able state more. Couple part cup few. Beyond take h",
+            "postOfficeBoxNumber": "Son break either president stage population boy. Everything affect American race.",
+            "streetNr": "Water voice travel among see red. Republican total policy head Mr",
+            "district": "Full per among clearly. Face house nature fall long dream answer conference. Rock few structure federal board night loss."
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "Common effect economic also. Decade can suggest girl training. Study practice policy yeah might outside so."
+        "value": "Buy break marriage also friend reach. Turn phone heart window. Assume be seek article."
     },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.conversionfactor"
+        ]
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.r",
+            "oic.if.baseline"
+        ]
+    },
+    "n": {
+        "type": "Property",
+        "value": "Face turn small researc"
+    },
+    "conversion": {
+        "type": "Property",
+        "value": 213.2
+    },
+    "precision": {
+        "type": "Property",
+        "value": 153.3
+    },
+    "type": "Conversion",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
