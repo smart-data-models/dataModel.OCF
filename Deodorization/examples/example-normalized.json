@@ -1,75 +1,97 @@
 {
-  "id": {
-    "type": "string",
-    "value": "urn:ngsi-ld:Deodorization:id:XDXD:95550483"
-  },
-  "dateCreated": {
-    "format": "date-time",
-    "type": "string",
-    "value": "1999-03-18T19:45:38Z"
-  },
-  "dateModified": {
-    "format": "date-time",
-    "type": "string",
-    "value": "2003-06-19T17:39:31Z"
-  },
-  "source": {
-    "type": "string",
-    "value": "Enter example study enjoy get research cost once. Professor bill page center."
-  },
-  "name": {
-    "type": "string",
-    "value": "Attention produce quite newspaper world story approach."
-  },
-  "alternateName": {
-    "type": "string",
-    "value": "Stand usually material per great although young. During move somebody everybody inside."
-  },
-  "description": {
-    "type": "string",
-    "value": "Talk fund we course affect mother. Bring western apply security democratic."
-  },
-  "dataProvider": {
-    "type": "string",
-    "value": "Success show social modern view. Officer stock true center have foot watch firm. Require capital yourself yard bar approach."
-  },
-  "owner": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:Deodorization:items:RAZH:64911453",
-      "urn:ngsi-ld:Deodorization:items:TUDH:55185476"
-    ]
-  },
-  "seeAlso": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:Deodorization:items:KRVY:49754379",
-      "urn:ngsi-ld:Deodorization:items:YFMD:65193227"
-    ]
-  },
-  "location": {
-    "type": "object",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        -4.4983885,
-        -135.992885
-      ]
-    }
-  },
-  "address": {
-    "type": "object",
-    "value": {
-      "streetAddress": "Low record Republican number prevent citizen group. List memory begin marriage weight.",
-      "addressLocality": "Standard religious your buy boy down lot. Partner someone available guess security sing between create. Within standard everyone speech require street manage.",
-      "addressRegion": "Short yet just table month until. Expert true dark director throughout red continue. You remain street various than training able.",
-      "addressCountry": "There meet maybe message language such.",
-      "postalCode": "Someone music several little training easy human.",
-      "postOfficeBoxNumber": "Walk me continue executive green. Feel coach fall stuff often."
-    }
-  },
-  "areaServed": {
-    "type": "string",
-    "value": "Common collection agree away. Gun collection recently old project."
-  }
+    "id": "urn:ngsi-ld:Deodorization:id:DDRP:28146546",
+    "dateCreated": {
+        "type": "DateTime",
+        "value": "2002-04-04T10:47:16Z"
+    },
+    "dateModified": {
+        "type": "DateTime",
+        "value": "1992-12-09T04:22:28Z"
+    },
+    "source": {
+        "type": "Text",
+        "value": "Look record interview few. Turn phone heart window. Assume be seek article."
+    },
+    "name": {
+        "type": "Text",
+        "value": "Hour million large major."
+    },
+    "alternateName": {
+        "type": "Text",
+        "value": "Institution happy write end since. Court boy state table agree moment. Budget huge debate among way. Per"
+    },
+    "description": {
+        "type": "Text",
+        "value": "Work chance image quite there many true follow. Your play themselves myself use act relationship."
+    },
+    "dataProvider": {
+        "type": "Text",
+        "value": "Along chance either six success on. At be than always different American address. Former claim chance prevent why measure too."
+    },
+    "owner": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:Deodorization:items:YGJR:80918916",
+            "urn:ngsi-ld:Deodorization:items:VAXF:96769930"
+        ]
+    },
+    "seeAlso": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:Deodorization:items:JYNM:48945174"
+        ]
+    },
+    "location": {
+        "type": "geo:json",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                12.993162,
+                -146.575081
+            ]
+        }
+    },
+    "address": {
+        "type": "StructuredValue",
+        "value": {
+            "streetAddress": "Dream role free walk. Individual man tell response purpo",
+            "addressLocality": "Partner hit another. Sing after our car food record power. Himself simply make t",
+            "addressRegion": "Place full buy radio perform small camera tr",
+            "addressCountry": "What top always effort. War project occur. Director simply those physical maybe. Information figure box international not type very.",
+            "postalCode": "Between similar safe air. Issue",
+            "postOfficeBoxNumber": "Audience throw debate daughter purpose voice. Security fall ready usually.",
+            "streetNr": "Co",
+            "district": "Player contain year bill ok "
+        }
+    },
+    "areaServed": {
+        "type": "Text",
+        "value": "Information animal car after back available. Federal indicate unit opportunity fear great."
+    },
+    "rt": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.r.deodorization"
+        ]
+    },
+    "mode": {
+        "type": "Text",
+        "value": "on"
+    },
+    "currentstate": {
+        "type": "Text",
+        "value": "on"
+    },
+    "n": {
+        "type": "Text",
+        "value": "Heavy across while top. Daught"
+    },
+    "if": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.if.baseline",
+            "oic.if.a"
+        ]
+    },
+    "type": "Deodorization"
 }
