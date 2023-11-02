@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: El número del apartado de correos para las direcciones de apartados postales. Por ejemplo, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: El código postal. Por ejemplo, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: La dirección  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Número que identifica una propiedad específica en una vía pública    
 - `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada  - `dateCreated[date-time]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento  - `dateModified[date-time]`: Marca de tiempo de la última modificación de la entidad. Suele ser asignada por la plataforma de almacenamiento  - `description[string]`: Descripción de este artículo  - `id[*]`: Identificador único de la entidad  - `if[array]`: El conjunto de interfaces OCF que admite este recurso  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  - `memorysize[number]`: Esta propiedad representa el tamaño total de la memoria de la impresora. La unidad es MB(Mega Bytes)  - `n[string]`: Nombre descriptivo del recurso  - `name[string]`: El nombre de este artículo  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  - `printsizex[number]`: Esta propiedad representa el tamaño máximo del objeto de impresión en la dirección del eje X. La unidad es mm  - `printsizey[number]`: Esta Propiedad representa el tamaño máximo del objeto de impresión en la dirección del eje Y. La unidad es mm  - `printsizez[number]`: Esta Propiedad representa el tamaño máximo del objeto de impresión en la dirección del eje Z. La unidad es mm  - `rt[array]`: El tipo de recurso  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type[string]`: Tipo de entidad NGSI. Tiene que ser 3DPrinter  - `wanconnected[boolean]`: Esta propiedad indica la capacidad de conectividad de la impresora 3D. Si el valor es false, la impresora no dispone de conectividad a redes de área amplia como Internet y GSM. Si el valor es verdadero, la impresora tiene conectividad de red.  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propiedades requeridas  
@@ -465,69 +466,54 @@
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:3DPrinter:id:YUSH:12422704",  
-  "dateCreated": "1982-12-22T16:51:18Z",  
-  "dateModified": "2016-04-19T02:35:28Z",  
-  "source": "Size purpose hit American color minute. Improve send public crime long bag. Design benefit our evening her expect seek. Process catch up hear source work this.",  
-  "name": "Wall relate upon decision official. Return per system sound society current. Environment bar hope.",  
-  "alternateName": "Range though no ground study store.",  
-  "description": "Party prevent sort. Population simply keep run line. Ground about wish raise.",  
-  "dataProvider": "Stage environment effort expect. It company history place really. Result Mr data those on organization. Affect save factor up cause.",  
-  "owner": [  
-    "urn:ngsi-ld:3DPrinter:items:BJQF:44557977",  
-    "urn:ngsi-ld:3DPrinter:items:UJGY:74455021"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:3DPrinter:items:INTV:14103670",  
-    "urn:ngsi-ld:3DPrinter:items:HVOD:77311767"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -88.6783455,  
-      -161.926308  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Their soldier next full together. Us word national pretty war common. Either herself event either career.",  
-    "addressLocality": "Letter imagine box watch nation value. Along start put pattern try. Per smile however media money resource gun.",  
-    "addressRegion": "Clearly generation light quite less.",  
-    "addressCountry": "Pretty popular plant attention. Start physical phone measure your eye. High instead book yourself.",  
-    "postalCode": "Law close sound along card. While tough evening fight ball radio whose.",  
-    "postOfficeBoxNumber": "Leg charge people senior. Look foreign possible be. Case figure coach road sell on."  
-  },  
-  "areaServed": "Show near system coach particularly memory provide front. Already risk close plan value member. Son Mr only edge.",  
-  "rt": [  
-    "oic.r.printer.3d",  
-    "oic.r.printer.3d"  
-  ],  
-  "printsizey": {  
-    "type": "Property",  
-    "value": 141.9  
-  },  
-  "memorysize": {  
-    "type": "Property",  
-    "value": 423.2  
-  },  
-  "3dprinttype": "Digital Light Processing",  
-  "wanconnected": {  
-    "type": "Property",  
-    "value": true  
-  },  
-  "printsizex": {  
-    "type": "Property",  
-    "value": 638.7  
-  },  
-  "printsizez": {  
-    "type": "Property",  
-    "value": 659.8  
-  },  
-  "n": "Direction expert staff property. Wall score before increase.",  
-  "if": [  
-    "oic.if.r",  
-    "oic.if.r"  
-  ],  
-  "type": "3DPrinter"  
+    "id": "urn:ngsi-ld:3DPrinter:id:KCVX:35224692",  
+    "dateCreated": "1982-11-04T23:54:34Z",  
+    "dateModified": "1971-11-12T21:21:33Z",  
+    "source": "Blood poor value boy financial education. Vote kid finally arm onto.",  
+    "name": "Sit that listen. Offer entire discuss full quality detail. Gener",  
+    "alternateName": "List unit join key factor amount. List sense raise dream. Important writer their get itself value bag.",  
+    "description": "Name ball to gun section surface every. Audience light science dinner mother bar involve.",  
+    "dataProvider": "Run page report after",  
+    "owner": [  
+        "urn:ngsi-ld:3DPrinter:items:EHSC:91826821",  
+        "urn:ngsi-ld:3DPrinter:items:WAEO:96901911"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:3DPrinter:items:PIFJ:54891254"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            68.5908185,  
+            -168.209783  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Indeed concern society team change. Election maybe stage pattern summer out. Want hand when score listen again.",  
+        "addressLocality": "Find career old on iss",  
+        "addressRegion": "Hot ahead mother side. Painting industry case those. Long hospital cell.",  
+        "addressCountry": "Realize station story. Friend our away model specific. Than different certain other.",  
+        "postalCode": "Son final staff. Change ball put require",  
+        "postOfficeBoxNumber": "He city agency under bill short remain. Return sinc",  
+        "streetNr": "Tell theory style century game thousand beyond. Her attack detail tonight either.",  
+        "district": "Early nature ahead democratic."  
+    },  
+    "areaServed": "Sister line PM girl. Themselves especially about go task com",  
+    "rt": [  
+        "oic.r.printer.3d"  
+    ],  
+    "printsizey": 528.5,  
+    "memorysize": 561.5,  
+    "3dprinttype": "Photopolymer Jetting Technology",  
+    "wanconnected": true,  
+    "printsizex": 564.7,  
+    "printsizez": 810.7,  
+    "n": "Religious deal ",  
+    "if": [  
+        "oic.if.r",  
+        "oic.if.baseline"  
+    ],  
+    "type": "3DPrinter"  
 }  
 ```  
 </details>  
@@ -536,140 +522,117 @@
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:3DPrinter:id:YUSH:12422704"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1982-12-22T16:51:18Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2016-04-19T02:35:28Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Size purpose hit American color minute. Improve send public crime long bag. Design benefit our evening her expect seek. Process catch up hear source work this."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Wall relate upon decision official. Return per system sound society current. Environment bar hope."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Range though no ground study store."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Party prevent sort. Population simply keep run line. Ground about wish raise."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Stage environment effort expect. It company history place really. Result Mr data those on organization. Affect save factor up cause."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:3DPrinter:items:BJQF:44557977",  
-      "urn:ngsi-ld:3DPrinter:items:UJGY:74455021"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:3DPrinter:items:INTV:14103670",  
-      "urn:ngsi-ld:3DPrinter:items:HVOD:77311767"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -88.6783455,  
-        -161.926308  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Their soldier next full together. Us word national pretty war common. Either herself event either career.",  
-      "addressLocality": "Letter imagine box watch nation value. Along start put pattern try. Per smile however media money resource gun.",  
-      "addressRegion": "Clearly generation light quite less.",  
-      "addressCountry": "Pretty popular plant attention. Start physical phone measure your eye. High instead book yourself.",  
-      "postalCode": "Law close sound along card. While tough evening fight ball radio whose.",  
-      "postOfficeBoxNumber": "Leg charge people senior. Look foreign possible be. Case figure coach road sell on."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Show near system coach particularly memory provide front. Already risk close plan value member. Son Mr only edge."  
-  },  
-  "rt": {  
-    "type": "array",  
-    "value": [  
-      "oic.r.printer.3d",  
-      "oic.r.printer.3d"  
-    ]  
-  },  
-  "printsizey": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 141.9  
-    }  
-  },  
-  "memorysize": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 423.2  
-    }  
-  },  
-  "3dprinttype": {  
-    "type": "string",  
-    "value": "Digital Light Processing"  
-  },  
-  "wanconnected": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": true  
-    }  
-  },  
-  "printsizex": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 638.7  
-    }  
-  },  
-  "printsizez": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 659.8  
-    }  
-  },  
-  "n": {  
-    "type": "string",  
-    "value": "Direction expert staff property. Wall score before increase."  
-  },  
-  "if": {  
-    "type": "array",  
-    "value": [  
-      "oic.if.r",  
-      "oic.if.r"  
-    ]  
-  },  
-  "type": {  
-    "type": "string",  
-    "value": "3DPrinter"  
-  }  
+    "id": "urn:ngsi-ld:3DPrinter:id:KCVX:35224692",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1982-11-04T23:54:34Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "1971-11-12T21:21:33Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Blood poor value boy financial education. Vote kid finally arm onto."  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Sit that listen. Offer entire discuss full quality detail. Gener"  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "List unit join key factor amount. List sense raise dream. Important writer their get itself value bag."  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Name ball to gun section surface every. Audience light science dinner mother bar involve."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Run page report after"  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:3DPrinter:items:EHSC:91826821",  
+            "urn:ngsi-ld:3DPrinter:items:WAEO:96901911"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:3DPrinter:items:PIFJ:54891254"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                68.5908185,  
+                -168.209783  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Indeed concern society team change. Election maybe stage pattern summer out. Want hand when score listen again.",  
+            "addressLocality": "Find career old on iss",  
+            "addressRegion": "Hot ahead mother side. Painting industry case those. Long hospital cell.",  
+            "addressCountry": "Realize station story. Friend our away model specific. Than different certain other.",  
+            "postalCode": "Son final staff. Change ball put require",  
+            "postOfficeBoxNumber": "He city agency under bill short remain. Return sinc",  
+            "streetNr": "Tell theory style century game thousand beyond. Her attack detail tonight either.",  
+            "district": "Early nature ahead democratic."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Sister line PM girl. Themselves especially about go task com"  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.printer.3d"  
+        ]  
+    },  
+    "printsizey": {  
+        "type": "Number",  
+        "value": 528.5  
+    },  
+    "memorysize": {  
+        "type": "Number",  
+        "value": 561.5  
+    },  
+    "3dprinttype": {  
+        "type": "Text",  
+        "value": "Photopolymer Jetting Technology"  
+    },  
+    "wanconnected": {  
+        "type": "Boolean",  
+        "value": true  
+    },  
+    "printsizex": {  
+        "type": "Number",  
+        "value": 564.7  
+    },  
+    "printsizez": {  
+        "type": "Number",  
+        "value": 810.7  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Religious deal "  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.r",  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "3DPrinter"  
 }  
 ```  
 </details>  
@@ -678,72 +641,56 @@
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:3DPrinter:id:YUSH:12422704",  
-    "dateCreated": "1982-12-22T16:51:18Z",  
-    "dateModified": "2016-04-19T02:35:28Z",  
-    "source": "Size purpose hit American color minute. Improve send public crime long bag. Design benefit our evening her expect seek. Process catch up hear source work this.",  
-    "name": "Wall relate upon decision official. Return per system sound society current. Environment bar hope.",  
-    "alternateName": "Range though no ground study store.",  
-    "description": "Party prevent sort. Population simply keep run line. Ground about wish raise.",  
-    "dataProvider": "Stage environment effort expect. It company history place really. Result Mr data those on organization. Affect save factor up cause.",  
+    "id": "urn:ngsi-ld:3DPrinter:id:KCVX:35224692",  
+    "dateCreated": "1982-11-04T23:54:34Z",  
+    "dateModified": "1971-11-12T21:21:33Z",  
+    "source": "Blood poor value boy financial education. Vote kid finally arm onto.",  
+    "name": "Sit that listen. Offer entire discuss full quality detail. Gener",  
+    "alternateName": "List unit join key factor amount. List sense raise dream. Important writer their get itself value bag.",  
+    "description": "Name ball to gun section surface every. Audience light science dinner mother bar involve.",  
+    "dataProvider": "Run page report after",  
     "owner": [  
-        "urn:ngsi-ld:3DPrinter:items:BJQF:44557977",  
-        "urn:ngsi-ld:3DPrinter:items:UJGY:74455021"  
+        "urn:ngsi-ld:3DPrinter:items:EHSC:91826821",  
+        "urn:ngsi-ld:3DPrinter:items:WAEO:96901911"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:3DPrinter:items:INTV:14103670",  
-        "urn:ngsi-ld:3DPrinter:items:HVOD:77311767"  
+        "urn:ngsi-ld:3DPrinter:items:PIFJ:54891254"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            -88.6783455,  
-            -161.926308  
+            68.5908185,  
+            -168.209783  
         ]  
     },  
     "address": {  
-        "streetAddress": "Their soldier next full together. Us word national pretty war common. Either herself event either career.",  
-        "addressLocality": "Letter imagine box watch nation value. Along start put pattern try. Per smile however media money resource gun.",  
-        "addressRegion": "Clearly generation light quite less.",  
-        "addressCountry": "Pretty popular plant attention. Start physical phone measure your eye. High instead book yourself.",  
-        "postalCode": "Law close sound along card. While tough evening fight ball radio whose.",  
-        "postOfficeBoxNumber": "Leg charge people senior. Look foreign possible be. Case figure coach road sell on."  
+        "streetAddress": "Indeed concern society team change. Election maybe stage pattern summer out. Want hand when score listen again.",  
+        "addressLocality": "Find career old on iss",  
+        "addressRegion": "Hot ahead mother side. Painting industry case those. Long hospital cell.",  
+        "addressCountry": "Realize station story. Friend our away model specific. Than different certain other.",  
+        "postalCode": "Son final staff. Change ball put require",  
+        "postOfficeBoxNumber": "He city agency under bill short remain. Return sinc",  
+        "streetNr": "Tell theory style century game thousand beyond. Her attack detail tonight either.",  
+        "district": "Early nature ahead democratic."  
     },  
-    "areaServed": "Show near system coach particularly memory provide front. Already risk close plan value member. Son Mr only edge.",  
+    "areaServed": "Sister line PM girl. Themselves especially about go task com",  
     "rt": [  
-        "oic.r.printer.3d",  
         "oic.r.printer.3d"  
     ],  
-    "printsizey": {  
-        "type": "Property",  
-        "value": 141.9  
-    },  
-    "memorysize": {  
-        "type": "Property",  
-        "value": 423.2  
-    },  
-    "3dprinttype": "Digital Light Processing",  
-    "wanconnected": {  
-        "type": "Property",  
-        "value": true  
-    },  
-    "printsizex": {  
-        "type": "Property",  
-        "value": 638.7  
-    },  
-    "printsizez": {  
-        "type": "Property",  
-        "value": 659.8  
-    },  
-    "n": "Direction expert staff property. Wall score before increase.",  
+    "printsizey": 528.5,  
+    "memorysize": 561.5,  
+    "3dprinttype": "Photopolymer Jetting Technology",  
+    "wanconnected": true,  
+    "printsizex": 564.7,  
+    "printsizez": 810.7,  
+    "n": "Religious deal ",  
     "if": [  
         "oic.if.r",  
-        "oic.if.r"  
+        "oic.if.baseline"  
     ],  
     "type": "3DPrinter",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -753,78 +700,80 @@
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:3DPrinter:id:OSAJ:25765068",  
+    "id": "urn:ngsi-ld:3DPrinter:id:KCVX:35224692",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1988-01-28T14:13:40Z"  
+            "@value": "1982-11-04T23:54:34Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2012-05-04T06:05:12Z"  
+            "@value": "1971-11-12T21:21:33Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Score nearly wait."  
+        "value": "Blood poor value boy financial education. Vote kid finally arm onto."  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Day claim democratic standard sing general growth miss. Large for yard city behavior anyone. Pretty down too."  
+        "value": "Sit that listen. Offer entire discuss full quality detail. Gener"  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Water popular pretty head. Visit as although quickly away Congress sell rule. Language approach challenge of situation home prove. May gas civil word suddenly."  
+        "value": "List unit join key factor amount. List sense raise dream. Important writer their get itself value bag."  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Reach beautiful key article wish. Range age future suggest choose stop organization. Total claim why involve."  
+        "value": "Name ball to gun section surface every. Audience light science dinner mother bar involve."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Sort left must. First Mrs everybody eat thank it. Relationship source hear recent every drive."  
+        "value": "Run page report after"  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:3DPrinter:items:KCRI:07432229",  
-            "urn:ngsi-ld:3DPrinter:items:CIVT:12782306"  
+            "urn:ngsi-ld:3DPrinter:items:EHSC:91826821",  
+            "urn:ngsi-ld:3DPrinter:items:WAEO:96901911"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:3DPrinter:items:ANXI:44669183"  
+            "urn:ngsi-ld:3DPrinter:items:PIFJ:54891254"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                20.7678465,  
-                -50.604614  
+                68.5908185,  
+                -168.209783  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Chair series join shoulder southern camera. These wear ever it leave create. Middle nice fish push property network.",  
-            "addressLocality": "Meet industry experience fire. Let local civil public federal.",  
-            "addressRegion": "Among hospital condition human focus reach customer. Subject shoulder plant computer worry meeting.",  
-            "addressCountry": "Finally hot address establish drug else. Language in rate. Physical quickly note you. Rock both degree him consider gun number certain.",  
-            "postalCode": "Population camera second identify cold single. Miss act seek heavy south company. Grow both relate. Its including she represent.",  
-            "postOfficeBoxNumber": "Join task enough. College travel north. Region collection research opportunity agency condition court."  
+            "streetAddress": "Indeed concern society team change. Election maybe stage pattern summer out. Want hand when score listen again.",  
+            "addressLocality": "Find career old on iss",  
+            "addressRegion": "Hot ahead mother side. Painting industry case those. Long hospital cell.",  
+            "addressCountry": "Realize station story. Friend our away model specific. Than different certain other.",  
+            "postalCode": "Son final staff. Change ball put require",  
+            "postOfficeBoxNumber": "He city agency under bill short remain. Return sinc",  
+            "streetNr": "Tell theory style century game thousand beyond. Her attack detail tonight either.",  
+            "district": "Early nature ahead democratic."  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Station gun during instead energy politics. Health find expert. Civil land past mouth watch series kind."  
+        "value": "Sister line PM girl. Themselves especially about go task com"  
     },  
     "rt": {  
         "type": "Property",  
@@ -834,43 +783,42 @@
     },  
     "printsizey": {  
         "type": "Property",  
-        "value": 862.4  
+        "value": 528.5  
     },  
     "memorysize": {  
         "type": "Property",  
-        "value": 798.4  
+        "value": 561.5  
     },  
     "3dprinttype": {  
         "type": "Property",  
-        "value": "Digital Light Processing"  
+        "value": "Photopolymer Jetting Technology"  
     },  
     "wanconnected": {  
         "type": "Property",  
-        "value": false  
+        "value": true  
     },  
     "printsizex": {  
         "type": "Property",  
-        "value": 172.6  
+        "value": 564.7  
     },  
     "printsizez": {  
         "type": "Property",  
-        "value": 926.1  
+        "value": 810.7  
     },  
     "n": {  
         "type": "Property",  
-        "value": "Threat look change. Down company do wall since bank."  
+        "value": "Religious deal "  
     },  
     "if": {  
         "type": "Property",  
         "value": [  
             "oic.if.r",  
-            "oic.if.r"  
+            "oic.if.baseline"  
         ]  
     },  
     "type": "3DPrinter",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
