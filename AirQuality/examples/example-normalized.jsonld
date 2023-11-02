@@ -1,76 +1,78 @@
 {
-    "id": "urn:ngsi-ld:AirQuality:id:LNQC:72550215",
+    "id": "urn:ngsi-ld:AirQuality:id:GQEJ:48764759",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1977-12-12T05:27:39Z"
+            "@value": "1979-07-06T09:36:23Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2013-02-06T05:53:44Z"
+            "@value": "2021-06-07T14:46:20Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Successful he may. Civil soldier well whom challenge anyone. True director bad material control but. Want entire nothing herself middle song."
+        "value": "Son would mouth relate own chair better available. Line beyond its particularly tree whom."
     },
     "name": {
         "type": "Property",
-        "value": "Finish line north particularly wait step. Child argue add."
+        "value": "Tend employee source nature add rest. Report size personal partner stock four. Region as true develop sound central."
     },
     "alternateName": {
         "type": "Property",
-        "value": "Do especially world tonight remember."
+        "value": ""
     },
     "description": {
         "type": "Property",
-        "value": "Film wish edge star address lose action drive. Safe may decide college. Agent everybody available party range. Owner turn baby response."
+        "value": "Wonder employee attorney quickly candidate change although bag."
     },
     "dataProvider": {
         "type": "Property",
-        "value": "Quickly boy hour indeed wish success. Police break reach able unit. Particularly painting around light lose."
+        "value": "Study modern miss dog Democrat quickly. Often late produce you true soldier. Food break onto friend."
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:AirQuality:items:CBIB:33216193",
-            "urn:ngsi-ld:AirQuality:items:RJZC:40470330"
+            "urn:ngsi-ld:AirQuality:items:KNBD:33041352",
+            "urn:ngsi-ld:AirQuality:items:DUGT:23098910"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:AirQuality:items:IZCL:58197135"
+            "urn:ngsi-ld:AirQuality:items:AGFW:91615109"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                16.41076,
-                -119.319515
+                -56.7421445,
+                77.286609
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "Create policy name full. Trial care card along open investment. Individual great while knowledge.",
-            "addressLocality": "Parent school through visit property various nature. Position picture a how director.",
-            "addressRegion": "Certainly become deep. Buy image strategy. It quite edge already executive nation same. More window left real.",
-            "addressCountry": "Report picture series tough final attorney. Hold mind take myself reduce. Majority chair check magazine.",
-            "postalCode": "Enjoy professor low. Building customer loss chair management. Goal factor gun. Administration create very physical eye phone.",
-            "postOfficeBoxNumber": "Hear window pay door image stage TV. Budget second response since fill interview."
+            "streetAddress": "View age international big. Attorney author feeling job article.",
+            "addressLocality": "Others record hospital. Grow rule stuff truth college. Whom around put suddenly garden.",
+            "addressRegion": "Others kind company likely. Tonight themselves true power home price.",
+            "addressCountry": "Real leader bad school name care several. Good explain grow water plant perform resource.",
+            "postalCode": "S",
+            "postOfficeBoxNumber": "Those traditional page a although for study. Speak themselves speech. Nature white without study candidate.",
+            "streetNr": "Wear individual about add senior woman.",
+            "district": "Best budget power them evidence"
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "Case really society describe. Live responsibility knowledge goal degree station."
+        "value": "Fire"
     },
     "rt": {
         "type": "Property",
@@ -80,37 +82,36 @@
     },
     "contaminanttype": {
         "type": "Property",
-        "value": "NO2"
+        "value": "CO"
     },
     "valuetype": {
         "type": "Property",
-        "value": "Measured"
+        "value": "Qualitative"
     },
     "contaminantvalue": {
         "type": "Property",
-        "value": 939
+        "value": 864
     },
     "n": {
         "type": "Property",
-        "value": "Happen opportunity town religious parent social bad. Mean parent nature understand cell stuff."
+        "value": "American whole magazine truth stop whose. On tradition"
     },
     "range": {
         "type": "Property",
         "value": [
-            728,
-            9
+            864,
+            864
         ]
     },
     "if": {
         "type": "Property",
         "value": [
-            "oic.if.s",
+            "oic.if.baseline",
             "oic.if.s"
         ]
     },
     "type": "AirQuality",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
