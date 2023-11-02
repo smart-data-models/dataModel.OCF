@@ -1,75 +1,93 @@
 {
-  "id": {
-    "type": "string",
-    "value": "urn:ngsi-ld:Saturation:id:UAQO:16151655"
-  },
-  "dateCreated": {
-    "format": "date-time",
-    "type": "string",
-    "value": "1984-09-23T14:35:27Z"
-  },
-  "dateModified": {
-    "format": "date-time",
-    "type": "string",
-    "value": "1999-01-24T17:38:14Z"
-  },
-  "source": {
-    "type": "string",
-    "value": "As nation meeting structure person. Realize science design so."
-  },
-  "name": {
-    "type": "string",
-    "value": "Probably apply month next attention land establish. Various respond report opportunity light agent."
-  },
-  "alternateName": {
-    "type": "string",
-    "value": "Sing lose spring join. Store interest fact long. Try dinner town situation window law. Forget instead every school."
-  },
-  "description": {
-    "type": "string",
-    "value": "Toward true former series list result. Stand food style site north election."
-  },
-  "dataProvider": {
-    "type": "string",
-    "value": "Door control carry indeed very. Her chance late of build everyone. Small report charge score sit."
-  },
-  "owner": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:Saturation:items:LTXZ:22207364",
-      "urn:ngsi-ld:Saturation:items:LYGT:62865746"
-    ]
-  },
-  "seeAlso": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:Saturation:items:RRFG:80837873",
-      "urn:ngsi-ld:Saturation:items:JKFG:05511341"
-    ]
-  },
-  "location": {
-    "type": "object",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        -82.4344335,
-        127.876722
-      ]
-    }
-  },
-  "address": {
-    "type": "object",
-    "value": {
-      "streetAddress": "Us yes thank too address. Prevent yet state build property.",
-      "addressLocality": "Guy on physical song city why think. Section attorney argue nation.",
-      "addressRegion": "Word wife crime choose. Own across social position senior common Congress.",
-      "addressCountry": "Thing television water girl realize help. Late myself choose speech investment whose front.",
-      "postalCode": "Himself dream skill spend clearly. Development research character moment from lay identify. Part yet even again.",
-      "postOfficeBoxNumber": "Somebody nature under young rock occur case outside. Air suffer week next population war that. Argue anyone miss land often hold offer song."
-    }
-  },
-  "areaServed": {
-    "type": "string",
-    "value": "Campaign personal gas someone speak treatment. Relate something degree itself item. International environment add arrive early them show."
-  }
+    "id": "urn:ngsi-ld:Saturation:id:PLSG:66048764",
+    "dateCreated": {
+        "type": "DateTime",
+        "value": "2004-05-06T01:26:19Z"
+    },
+    "dateModified": {
+        "type": "DateTime",
+        "value": "1979-06-24T16:00:13Z"
+    },
+    "source": {
+        "type": "Text",
+        "value": "Sense peace economy travel. Total financial role together range line beyond its."
+    },
+    "name": {
+        "type": "Text",
+        "value": "Whom local tend employee source. Trouble behavior style repo"
+    },
+    "alternateName": {
+        "type": "Text",
+        "value": "Board necessary religious natural sport music white. Natural explain before something first drug contain start. Party prevent live."
+    },
+    "description": {
+        "type": "Text",
+        "value": "Theory type successful together. Raise study modern miss dog Democrat quickly."
+    },
+    "dataProvider": {
+        "type": "Text",
+        "value": "Every manage political record word group food b"
+    },
+    "owner": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:Saturation:items:SDMC:98910139",
+            "urn:ngsi-ld:Saturation:items:PGXZ:51090321"
+        ]
+    },
+    "seeAlso": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:Saturation:items:HCUJ:00869141"
+        ]
+    },
+    "location": {
+        "type": "geo:json",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                4.0313215,
+                54.112573
+            ]
+        }
+    },
+    "address": {
+        "type": "StructuredValue",
+        "value": {
+            "streetAddress": "Mean always beyond write. Employee toward like total now.",
+            "addressLocality": "Small citizen class morning. Others kind company likel",
+            "addressRegion": "Themselves true power home price check real. Score from animal exactly drive well good. Pull opportunity throughout take car.",
+            "addressCountry": "Security stock ball organization recognize civil. Pm her then nothing increase.",
+            "postalCode": "Industry product another knowledge else citizen month. Traditional page a although for study anyone. Could yourself plan base rise would.",
+            "postOfficeBoxNumber": "First degree response able state more. Couple part cup few. Beyond",
+            "streetNr": "Son break either president stage population boy. Everything af",
+            "district": "Water voice travel among see red. Republican total policy head Mrs debate onto. Catch even fr"
+        }
+    },
+    "areaServed": {
+        "type": "Text",
+        "value": "Full per among clearly. Face house nature fall long dream answer conference. Rock few structure federal board night loss."
+    },
+    "rt": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.r.colour.saturation"
+        ]
+    },
+    "colourSaturation": {
+        "type": "Number",
+        "value": 49
+    },
+    "n": {
+        "type": "Text",
+        "value": "Else memory if. Whose group through despite cau"
+    },
+    "if": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.if.a",
+            "oic.if.baseline"
+        ]
+    },
+    "type": "Saturation"
 }
