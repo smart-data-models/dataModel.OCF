@@ -13,6 +13,7 @@
     {
       "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
     },
+    {
       "properties": {
         "rt": {
           "description": "Property. The Resource Type.",
