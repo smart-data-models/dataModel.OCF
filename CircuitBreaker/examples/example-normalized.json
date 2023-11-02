@@ -1,141 +1,117 @@
 {
-  "id": {
-    "type": "string",
-    "value": "urn:ngsi-ld:CircuitBreaker:id:GAWA:26483322"
-  },
-  "dateCreated": {
-    "format": "date-time",
-    "type": "string",
-    "value": "1975-09-18T13:42:58Z"
-  },
-  "dateModified": {
-    "format": "date-time",
-    "type": "string",
-    "value": "2017-02-05T13:44:17Z"
-  },
-  "source": {
-    "type": "string",
-    "value": "Right site might whose and."
-  },
-  "name": {
-    "type": "string",
-    "value": "Open lose material big eight military benefit believe. Someone daughter peace draw sit say beautiful."
-  },
-  "alternateName": {
-    "type": "string",
-    "value": "Job night make station take take page. Save reduce each by strong."
-  },
-  "description": {
-    "type": "string",
-    "value": "Week after represent economy leave. Physical threat area hard difficult road minute grow."
-  },
-  "dataProvider": {
-    "type": "string",
-    "value": "Today build staff score like."
-  },
-  "owner": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:CircuitBreaker:items:FSTL:10434961",
-      "urn:ngsi-ld:CircuitBreaker:items:PTJI:96858742"
-    ]
-  },
-  "seeAlso": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:CircuitBreaker:items:GAYB:75604341",
-      "urn:ngsi-ld:CircuitBreaker:items:HJGW:42840646"
-    ]
-  },
-  "location": {
-    "type": "object",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        1.1981925,
-        -156.48494
-      ]
-    }
-  },
-  "address": {
-    "type": "object",
-    "value": {
-      "streetAddress": "Country as close board worry car score other. Treatment likely between century church author raise.",
-      "addressLocality": "Family mean strategy future federal. Term article rise article business grow make. Visit art by choice morning politics.",
-      "addressRegion": "Individual him business purpose. Bad interesting smile.",
-      "addressCountry": "Focus agency know note town season policy respond. Up represent building though official. Cut sort serious every compare describe.",
-      "postalCode": "Practice happy today social somebody less. Standard common half door team move.",
-      "postOfficeBoxNumber": "Cup song notice than. On look building likely. Leave from option style reality score kind. Together natural learn."
-    }
-  },
-  "areaServed": {
-    "type": "string",
-    "value": "Remember pressure whole form industry interest wish. Forget week dark avoid themselves say mother."
-  },
-  "rt": {
-    "type": "array",
-    "value": [
-      "oic.r.circuitbreaker",
-      "oic.r.circuitbreaker"
-    ]
-  },
-  "status": {
-    "type": "string",
-    "value": "off"
-  },
-  "ratedcurrent": {
-    "type": "object",
-    "value": {
-      "type": "Property",
-      "value": 479.6
-    }
-  },
-  "ratedbreakingcurrent": {
-    "type": "object",
-    "value": {
-      "type": "Property",
-      "value": 999.7
-    }
-  },
-  "ratedvoltage": {
-    "type": "object",
-    "value": {
-      "type": "Property",
-      "value": 816.8
-    }
-  },
-  "leakagecurrent": {
-    "type": "object",
-    "value": {
-      "type": "Property",
-      "value": 790.2
-    }
-  },
-  "insulationresistance": {
-    "type": "object",
-    "value": {
-      "type": "Property",
-      "value": 966.6
-    }
-  },
-  "timestamp": {
-    "format": "date-time",
-    "type": "string",
-    "value": "1972-10-08T10:26:39Z"
-  },
-  "n": {
-    "type": "string",
-    "value": "Child admit group hit too. Wind eye can."
-  },
-  "if": {
-    "type": "array",
-    "value": [
-      "oic.if.s",
-      "oic.if.baseline"
-    ]
-  },
-  "type": {
-    "type": "string",
-    "value": "CircuitBreaker"
-  }
+    "id": "urn:ngsi-ld:CircuitBreaker:id:LGMX:15498127",
+    "dateCreated": {
+        "type": "DateTime",
+        "value": "1971-09-22T10:38:32Z"
+    },
+    "dateModified": {
+        "type": "DateTime",
+        "value": "2022-11-03T22:43:22Z"
+    },
+    "source": {
+        "type": "Text",
+        "value": "Though who even response plan. Evidence author black wide clear."
+    },
+    "name": {
+        "type": "Text",
+        "value": "Check down on en"
+    },
+    "alternateName": {
+        "type": "Text",
+        "value": "Size lay agree range take wonder. Mean us final ch"
+    },
+    "description": {
+        "type": "Text",
+        "value": "Well property read throw star themselves. Stock avoid four key sit successful. Deal right prove arrive."
+    },
+    "dataProvider": {
+        "type": "Text",
+        "value": "Must can lot why success body citizen. A season born difference summer financial among."
+    },
+    "owner": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:CircuitBreaker:items:YUBU:66545897",
+            "urn:ngsi-ld:CircuitBreaker:items:AGFD:76761477"
+        ]
+    },
+    "seeAlso": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:CircuitBreaker:items:EFEJ:04230683"
+        ]
+    },
+    "location": {
+        "type": "geo:json",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -31.2590175,
+                103.15369
+            ]
+        }
+    },
+    "address": {
+        "type": "StructuredValue",
+        "value": {
+            "streetAddress": "Money brother air support side. Understand offer whom toward student long part.",
+            "addressLocality": "Always fear",
+            "addressRegion": "Blood approach item more",
+            "addressCountry": "Past red difference fall environmental father. Voice t",
+            "postalCode": "Others especially authority poor deep. Wro",
+            "postOfficeBoxNumber": "Cell go especially others land. Deal common T",
+            "streetNr": "North general pass trouble allow. Get member let shake. Adult purpose necessary.",
+            "district": "Six share much. Voice mean wear film side either treatment material. It find detail range energy."
+        }
+    },
+    "areaServed": {
+        "type": "Text",
+        "value": "Window rest personal score. Federal water home Democrat fast food late. Car agent activity interview trade voice."
+    },
+    "rt": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.r.circuitbreaker"
+        ]
+    },
+    "status": {
+        "type": "Text",
+        "value": "trip"
+    },
+    "ratedcurrent": {
+        "type": "Number",
+        "value": 867.5
+    },
+    "ratedbreakingcurrent": {
+        "type": "Number",
+        "value": 561.4
+    },
+    "ratedvoltage": {
+        "type": "Number",
+        "value": 717.8
+    },
+    "leakagecurrent": {
+        "type": "Number",
+        "value": 458.9
+    },
+    "insulationresistance": {
+        "type": "Number",
+        "value": 511.7
+    },
+    "timestamp": {
+        "type": "DateTime",
+        "value": "1985-05-05T10:12:08Z"
+    },
+    "n": {
+        "type": "Text",
+        "value": "Idea exactly former light. Appear put tree sing several. Fight "
+    },
+    "if": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.if.s",
+            "oic.if.baseline"
+        ]
+    },
+    "type": "CircuitBreaker"
 }
