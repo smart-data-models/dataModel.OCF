@@ -1,79 +1,114 @@
 {
-    "id": "urn:ngsi-ld:consumable:id:RYTM:51125314",
+    "id": "urn:ngsi-ld:consumable:id:EKND:74179116",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1996-01-07T04:49:52Z"
+            "@value": "1999-04-25T21:16:15Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2003-09-05T21:18:59Z"
+            "@value": "2021-12-25T02:01:21Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Operation every though. Clear past boy you research important. By magazine those serve add PM bill."
+        "value": "Rather hospital across certain Congress east. Give ability red mouth. Occur much eye camera paper not who."
     },
     "name": {
         "type": "Property",
-        "value": "First down south laugh someone effect sound. Move shoulder play deal city work serious. Leave trip live will."
+        "value": "You policy dog allow administration offer. Benefit whether without world outside forward wind. Yard stay bring medical write until."
     },
     "alternateName": {
         "type": "Property",
-        "value": "Service offer statement one sing central place nice. World hospital bit camera fight his order just. Sure responsibility me cover discuss forget it. Model site what along serious wear high."
+        "value": "Arm newspaper subject student show. Foot where just example raise enter. Alone participant later nor result. Good operation common experience prove foot opportunity"
     },
     "description": {
         "type": "Property",
-        "value": "Court have detail color. To science compare whom yeah home recent. Own across situation ever law."
+        "value": "Exactly check never control color chance individual. Current inside boy lot everybody time."
     },
     "dataProvider": {
         "type": "Property",
-        "value": "National require majority. Image beyond contain despite seek. Close mention control that big talk radio."
+        "value": "Forward feel I who. Term possible service interesting."
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:consumable:items:GBGK:43976081",
-            "urn:ngsi-ld:consumable:items:KXTT:78055740"
+            "urn:ngsi-ld:consumable:items:NRHO:20185619",
+            "urn:ngsi-ld:consumable:items:ZADU:56601079"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:consumable:items:REDU:05679850"
+            "urn:ngsi-ld:consumable:items:AMTK:54230190"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                -79.272204,
-                60.44487
+                -26.224805,
+                -15.65884
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "Matter final group lead ever respond. Radio exist stock side address.",
-            "addressLocality": "Single professor character thousand environment job. Story a outside north without. Benefit TV local.",
-            "addressRegion": "Wind as exist east success enough hundred. Professional when sense.",
-            "addressCountry": "Identify show rise work edge. Eight store fish for five according drive decade.",
-            "postalCode": "Then east performance investment future deal. Strong big until per age policy up art. Ten speak hit who.",
-            "postOfficeBoxNumber": "Evidence scene finally. Where cell adult western report."
+            "streetAddress": "Book defense move business. Goal message effect describe option happy now. Along kind set so they owner.",
+            "addressLocality": "Summer buy ask drive. His land attorney person treat. Popular assume movement light become beautiful here item.",
+            "addressRegion": "Crime size material table. West",
+            "addressCountry": "A",
+            "postalCode": "Peace short situation generat",
+            "postOfficeBoxNumber": "Final ok here dark explain indeed if front. Life future group investment they. Both woman level by option.",
+            "streetNr": "Thus alone drive decision.",
+            "district": "Threat class maintain next. Arrive recognize wrong population different Republican pro"
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "Treatment claim author common their brother discussion. Outside poor without position article. Necessary machine company manage."
+        "value": "Beat dog teach low. Professor value here "
     },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.consumable"
+        ]
+    },
+    "remaining": {
+        "type": "Property",
+        "value": 49
+    },
+    "typeofconsumable": {
+        "type": "Property",
+        "value": "Else memory if. Whose group through despite cause. S"
+    },
+    "url": {
+        "type": "Property",
+        "value": "urn:ngsi-ld:consumable:url:DLNK:92411578"
+    },
+    "orderpercentage": {
+        "type": "Property",
+        "value": 49
+    },
+    "n": {
+        "type": "Property",
+        "value": "Else memory if. Whose group t"
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.s",
+            "oic.if.baseline"
+        ]
+    },
+    "type": "consumable",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
