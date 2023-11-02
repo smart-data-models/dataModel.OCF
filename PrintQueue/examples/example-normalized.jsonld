@@ -1,79 +1,111 @@
 {
-    "id": "urn:ngsi-ld:PrintQueue:id:OEMJ:12779437",
+    "id": "urn:ngsi-ld:PrintQueue:id:DSBY:69849407",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1990-09-03T20:56:23Z"
+            "@value": "1977-04-13T01:13:50Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2020-07-04T18:25:54Z"
+            "@value": "2008-02-09T11:24:49Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Agree hope popular cut single father approach. Year page rise theory. Mind know allow."
+        "value": "Can wall board culture. Window benefit its wrong degree drop simply."
     },
     "name": {
         "type": "Property",
-        "value": "End southern night while arrive film be. Listen degree thousand technology at word."
+        "value": "City short sound big rest. Near evening beyond professional herself."
     },
     "alternateName": {
         "type": "Property",
-        "value": "Region almost trip sometimes test seek first. Although yard expect hundred at teach politics."
+        "value": "Sea perform require"
     },
     "description": {
         "type": "Property",
-        "value": "Author benefit while player. Boy card course anything sell open away."
+        "value": "Bank interesting prot"
     },
     "dataProvider": {
         "type": "Property",
-        "value": "Kind mean fish five plan traditional wrong."
+        "value": "Summer reason word. Late animal bit able race method example member."
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:PrintQueue:items:OKZE:51742354",
-            "urn:ngsi-ld:PrintQueue:items:HYJQ:55236644"
+            "urn:ngsi-ld:PrintQueue:items:QLZW:77438571",
+            "urn:ngsi-ld:PrintQueue:items:UICK:43859697"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:PrintQueue:items:MZMO:08550907"
+            "urn:ngsi-ld:PrintQueue:items:YRUI:41497039"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                -37.2988135,
-                -156.766091
+                81.4915515,
+                99.488164
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "North everybody democratic. Behind last test computer than usually fund. Thought eight interview spend morning measure book.",
-            "addressLocality": "Only ready next. Attorney wish name.",
-            "addressRegion": "Entire budget land. Oil sometimes American exist such five run. Car sense technology both.",
-            "addressCountry": "Threat high form well candidate rest listen minute. Scientist budget candidate officer person. Short half water south fish.",
-            "postalCode": "Create white end they describe production parent face. Rise its baby. Break me base night what high.",
-            "postOfficeBoxNumber": "Themselves collection town water life can. Suffer hope memory provide."
+            "streetAddress": "Detail girl case provide responsibility area week. Institution sing century standard. Real however enjoy agent determine next doctor around.",
+            "addressLocality": "Bar soon set performance exactly ten try",
+            "addressRegion": "Poor natural some certain available. Far opportunity theory rise above purpose within baby. Business police art technology development both.",
+            "addressCountry": "Kitchen born",
+            "postalCode": "Bill one main. Almost type purp",
+            "postOfficeBoxNumber": "Throw stop hard arrive suffer also tend.",
+            "streetNr": "Indeed second travel late wo",
+            "district": "Feeling laugh news anything whole environmental. Interesting analysis better playe"
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "Along south word course green. Ball hope there security along."
+        "value": "Final draw feeling understand role Mr husband. Rise peace ser"
     },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.printer.queue"
+        ]
+    },
+    "queue": {
+        "type": "Property",
+        "value": [
+            {
+                "status": "Unknown",
+                "uri": "urn:ngsi-ld:PrintQueue:uri:AHBT:92472595"
+            },
+            {
+                "status": "Pending",
+                "uri": "urn:ngsi-ld:PrintQueue:uri:SGIL:98471141"
+            }
+        ]
+    },
+    "n": {
+        "type": "Property",
+        "value": "Emplo"
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.baseline",
+            "oic.if.r"
+        ]
+    },
+    "type": "PrintQueue",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
