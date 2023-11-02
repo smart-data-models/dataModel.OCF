@@ -1,104 +1,97 @@
 {
-  "id": {
-    "type": "string",
-    "value": "urn:ngsi-ld:threeAxis:id:RASO:06616206"
-  },
-  "dateCreated": {
-    "format": "date-time",
-    "type": "string",
-    "value": "1979-04-23T14:45:08Z"
-  },
-  "dateModified": {
-    "format": "date-time",
-    "type": "string",
-    "value": "1970-12-05T09:45:00Z"
-  },
-  "source": {
-    "type": "string",
-    "value": "Indeed begin week action. Blood before record democratic. Moment imagine evidence which front. Simply office because have number for."
-  },
-  "name": {
-    "type": "string",
-    "value": "Media vote fund glass likely hour. Eye peace everyone live half teacher. Dark man marriage raise most. Process bag so specific growth."
-  },
-  "alternateName": {
-    "type": "string",
-    "value": "Century every task miss none those statement. Career station now use listen alone language."
-  },
-  "description": {
-    "type": "string",
-    "value": "Mr property both ago nature blood subject teach. Amount read position stay. Hot point group office."
-  },
-  "dataProvider": {
-    "type": "string",
-    "value": "Compare war data identify movie talk fine. Trip move sit identify already education information. Add level financial view huge lay."
-  },
-  "owner": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:threeAxis:items:OAYB:94248007",
-      "urn:ngsi-ld:threeAxis:items:EBDC:08126235"
-    ]
-  },
-  "seeAlso": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:threeAxis:items:CJOO:72940193",
-      "urn:ngsi-ld:threeAxis:items:DCWZ:29485898"
-    ]
-  },
-  "location": {
-    "type": "object",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        -49.994884,
-        141.567463
-      ]
-    }
-  },
-  "address": {
-    "type": "object",
-    "value": {
-      "streetAddress": "Property anyone point choose poor family one. Here those choose.",
-      "addressLocality": "Strategy year town determine value thank. Ago girl middle soldier class.",
-      "addressRegion": "Rather company large quite continue. Probably where whether space address.",
-      "addressCountry": "Help once pass however outside accept to deep. Middle other argue author world. Before billion in argue guy. Quickly understand year face let piece sound there.",
-      "postalCode": "Treat value within charge artist run management. Heart share environment put as.",
-      "postOfficeBoxNumber": "Follow foot the hold five season add. Process be my your enjoy degree. Me figure who."
-    }
-  },
-  "areaServed": {
-    "type": "string",
-    "value": "Off animal argue. Discover follow store cup operation win movement property."
-  },
-  "rt": {
-    "type": "array",
-    "value": [
-      "oic.r.sensor.threeaxis",
-      "oic.r.sensor.threeaxis"
-    ]
-  },
-  "orientation": {
-    "type": "array",
-    "value": [
-      477.9,
-      239.9
-    ]
-  },
-  "n": {
-    "type": "string",
-    "value": "Democratic inside three contain short find never. Sense they off project."
-  },
-  "if": {
-    "type": "array",
-    "value": [
-      "oic.if.baseline",
-      "oic.if.s"
-    ]
-  },
-  "type": {
-    "type": "string",
-    "value": "threeAxis"
-  }
+    "id": "urn:ngsi-ld:threeAxis:id:QZPT:75196263",
+    "dateCreated": {
+        "type": "DateTime",
+        "value": "1983-10-24T19:51:05Z"
+    },
+    "dateModified": {
+        "type": "DateTime",
+        "value": "2004-08-04T06:17:20Z"
+    },
+    "source": {
+        "type": "Text",
+        "value": "Course debate he decade yeah not. Themselves remain much food way drop. Easy couple person "
+    },
+    "name": {
+        "type": "Text",
+        "value": "Network Mr soon thousand figure town. Stuff explain evidence but picture site wear force. Experience enough nation star."
+    },
+    "alternateName": {
+        "type": "Text",
+        "value": "Always with magazine safe assume. Identify top more. Might describe leader current stre"
+    },
+    "description": {
+        "type": "Text",
+        "value": "Past analysis stock. Form top them choice day."
+    },
+    "dataProvider": {
+        "type": "Text",
+        "value": "Left project type air interview. Physical spend measure friend."
+    },
+    "owner": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:threeAxis:items:CTYU:51884285",
+            "urn:ngsi-ld:threeAxis:items:OSFS:08678990"
+        ]
+    },
+    "seeAlso": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:threeAxis:items:XJKL:03106181"
+        ]
+    },
+    "location": {
+        "type": "geo:json",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -42.3517035,
+                6.360951
+            ]
+        }
+    },
+    "address": {
+        "type": "StructuredValue",
+        "value": {
+            "streetAddress": "Central blood budget. Give fly stage expect minute these sister.",
+            "addressLocality": "Big commercial to act full across cost. Player bank will set. The see protect can argue maintain.",
+            "addressRegion": "Performance perform just. Next evening increase sort instead project even certain.",
+            "addressCountry": "Issue feel without bed yes travel head impact. On student result which. Design strong kin",
+            "postalCode": "If big bar challenge hear. Economic expect production month in board.",
+            "postOfficeBoxNumber": "Job control su",
+            "streetNr": "Chance might seem ",
+            "district": "Care center kid quality fact shake its."
+        }
+    },
+    "areaServed": {
+        "type": "Text",
+        "value": "Article few pattern stand agree mean beyond. Meeting rate her where. Resp"
+    },
+    "rt": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.r.sensor.threeaxis"
+        ]
+    },
+    "orientation": {
+        "type": "StructuredValue",
+        "value": [
+            965.7,
+            13.4,
+            82.1
+        ]
+    },
+    "n": {
+        "type": "Text",
+        "value": "Build force community group total trip ready. "
+    },
+    "if": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.if.s",
+            "oic.if.baseline"
+        ]
+    },
+    "type": "threeAxis"
 }
