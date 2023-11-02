@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: El número del apartado de correos para las direcciones de apartados postales. Por ejemplo, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: El código postal. Por ejemplo, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: La dirección  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Número que identifica una propiedad específica en una vía pública    
 - `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `bmi[number]`: Índice de masa corporal (IMC) en kg/m^2  - `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada  - `dateCreated[date-time]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento  - `dateModified[date-time]`: Marca de tiempo de la última modificación de la entidad. Suele ser asignada por la plataforma de almacenamiento  - `description[string]`: Descripción de este artículo  - `id[*]`: Identificador único de la entidad  - `if[array]`: El conjunto de interfaces OCF que admite este recurso  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  - `n[string]`: Nombre descriptivo del recurso  - `name[string]`: El nombre de este artículo  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  - `precision[number]`: Cuando se expone, el valor en "precisión" proporciona una tolerancia +/- con respecto a las Propiedades del Recurso. Por lo tanto, si una propiedad se actualiza con un valor y luego se recupera, el valor recuperado será válido si se encuentra dentro del intervalo del valor establecido +/- precisión.  - `range[array]`: El rango válido para la Propiedad en el Recurso como un número. El primer valor de la matriz es el valor mínimo, el segundo valor de la matriz es el valor máximo  - `rt[array]`: Tipo de recurso  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `step[number]`: Valor del paso a través del rango definido un número entero cuando el rango es un número.  Es el incremento de los valores válidos en el intervalo; así, si el intervalo es 0,0..10,0 y el paso es 2,5, los valores válidos son 0,0,2,5,5,0,7,5,10,0.  - `type[string]`: Tipo de entidad NGSI. Tiene que ser IMC  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propiedades requeridas  
@@ -444,64 +445,54 @@ BMI:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:BMI:id:VDFV:55667741",  
-  "dateCreated": "1972-08-04T01:32:47Z",  
-  "dateModified": "1990-12-10T18:23:52Z",  
-  "source": "Perhaps particularly over news. Section ability young read whose experience put.",  
-  "name": "Figure risk bill other. Manage account sell language middle learn.",  
-  "alternateName": "Campaign military adult maintain movie our more. Figure energy small include little institution. Something government anyone there spend skill.",  
-  "description": "Fly person development around control. Discover back nature politics apply crime teach recognize. Give nearly collection resource left site agree meeting.",  
-  "dataProvider": "Box scientist major really face everything final remember. Notice cover leave feel out word activity listen.",  
-  "owner": [  
-    "urn:ngsi-ld:BMI:items:TLGO:89545122",  
-    "urn:ngsi-ld:BMI:items:ZSQM:54988728"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:BMI:items:EWVZ:54612682",  
-    "urn:ngsi-ld:BMI:items:HUQO:69722028"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      54.2093595,  
-      -81.722699  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Bag key computer home. Pm view however right speech.",  
-    "addressLocality": "Response smile place our.",  
-    "addressRegion": "Little poor public sense. Else race ready.",  
-    "addressCountry": "Example prepare arm bag spend movie simple today. Skin her research box.",  
-    "postalCode": "Their street figure decade parent. Land respond whatever generation explain.",  
-    "postOfficeBoxNumber": "Power receive which certainly shake organization better. Congress discussion where suddenly specific too west. Dog hear series voice glass open white."  
-  },  
-  "areaServed": "Administration hundred ever speak medical. Another movement live environment author let show. Sit myself third later boy put poor.",  
-  "rt": [  
-    "oic.r.bmi",  
-    "oic.r.bmi"  
-  ],  
-  "bmi": {  
-    "type": "Property",  
-    "value": 969.4  
-  },  
-  "range": [  
-    966.8,  
-    231.5  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 326.9  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 465.9  
-  },  
-  "n": "Mother various avoid few describe. Develop deal artist write end down language. Yourself section staff authority already.",  
-  "if": [  
-    "oic.if.baseline",  
-    "oic.if.baseline"  
-  ],  
-  "type": "BMI"  
+    "id": "urn:ngsi-ld:BMI:id:JQXP:11604104",  
+    "dateCreated": "2023-04-27T03:38:23Z",  
+    "dateModified": "1999-07-17T13:50:02Z",  
+    "source": "Student civil cultural worry. Democrat woman fine soon example education. Add adult democratic wind la",  
+    "name": "Speech marriage treat family understand your voice newspaper. Child cover treat high pretty item profes",  
+    "alternateName": "Program fish girl our offer pick.",  
+    "description": "Act situation own stop must song. Treatment future professor follow difference job. When activity dec",  
+    "dataProvider": "Science various imagine usually can two expect. Seat president item reveal federal send.",  
+    "owner": [  
+        "urn:ngsi-ld:BMI:items:ANAV:58006639",  
+        "urn:ngsi-ld:BMI:items:ODIH:85202865"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:BMI:items:RQXM:68509576"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -44.575855,  
+            76.463418  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Message generation across listen despite.",  
+        "addressLocality": "Experie",  
+        "addressRegion": "Serious investment teacher identify before about not. Analysis scientist expert itself down can.",  
+        "addressCountry": "Star thing least Congress toward main. Hospital down door tonight from ",  
+        "postalCode": "Environmental with suddenly detail huge finally. Father position strategy air. Partner least fly relate new cam",  
+        "postOfficeBoxNumber": "Reduce morning field. Market something front price ma",  
+        "streetNr": "Four blood chance heart public. Certain coach skill already fire picture future lis",  
+        "district": "Ca"  
+    },  
+    "areaServed": "Recently sing high energy million show enter. College full allow put cove",  
+    "rt": [  
+        "oic.r.bmi"  
+    ],  
+    "bmi": 294.7,  
+    "range": [  
+        341.6,  
+        577.3  
+    ],  
+    "step": 64.0,  
+    "precision": 901.2,  
+    "n": "Significant although boy includin",  
+    "if": [  
+        "oic.if.s"  
+    ],  
+    "type": "BMI"  
 }  
 ```  
 </details>  
@@ -510,129 +501,111 @@ BMI:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:BMI:id:VDFV:55667741"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1972-08-04T01:32:47Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1990-12-10T18:23:52Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Perhaps particularly over news. Section ability young read whose experience put."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Figure risk bill other. Manage account sell language middle learn."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Campaign military adult maintain movie our more. Figure energy small include little institution. Something government anyone there spend skill."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Fly person development around control. Discover back nature politics apply crime teach recognize. Give nearly collection resource left site agree meeting."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Box scientist major really face everything final remember. Notice cover leave feel out word activity listen."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:BMI:items:TLGO:89545122",  
-      "urn:ngsi-ld:BMI:items:ZSQM:54988728"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:BMI:items:EWVZ:54612682",  
-      "urn:ngsi-ld:BMI:items:HUQO:69722028"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        54.2093595,  
-        -81.722699  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Bag key computer home. Pm view however right speech.",  
-      "addressLocality": "Response smile place our.",  
-      "addressRegion": "Little poor public sense. Else race ready.",  
-      "addressCountry": "Example prepare arm bag spend movie simple today. Skin her research box.",  
-      "postalCode": "Their street figure decade parent. Land respond whatever generation explain.",  
-      "postOfficeBoxNumber": "Power receive which certainly shake organization better. Congress discussion where suddenly specific too west. Dog hear series voice glass open white."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Administration hundred ever speak medical. Another movement live environment author let show. Sit myself third later boy put poor."  
-  },  
-  "rt": {  
-    "type": "array",  
-    "value": [  
-      "oic.r.bmi",  
-      "oic.r.bmi"  
-    ]  
-  },  
-  "bmi": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 969.4  
-    }  
-  },  
-  "range": {  
-    "type": "array",  
-    "value": [  
-      966.8,  
-      231.5  
-    ]  
-  },  
-  "step": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 326.9  
-    }  
-  },  
-  "precision": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 465.9  
-    }  
-  },  
-  "n": {  
-    "type": "string",  
-    "value": "Mother various avoid few describe. Develop deal artist write end down language. Yourself section staff authority already."  
-  },  
-  "if": {  
-    "type": "array",  
-    "value": [  
-      "oic.if.baseline",  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "type": {  
-    "type": "string",  
-    "value": "BMI"  
-  }  
+    "id": "urn:ngsi-ld:BMI:id:JQXP:11604104",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "2023-04-27T03:38:23Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "1999-07-17T13:50:02Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Student civil cultural worry. Democrat woman fine soon example education. Add adult democratic wind la"  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Speech marriage treat family understand your voice newspaper. Child cover treat high pretty item profes"  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Program fish girl our offer pick."  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Act situation own stop must song. Treatment future professor follow difference job. When activity dec"  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Science various imagine usually can two expect. Seat president item reveal federal send."  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:BMI:items:ANAV:58006639",  
+            "urn:ngsi-ld:BMI:items:ODIH:85202865"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:BMI:items:RQXM:68509576"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -44.575855,  
+                76.463418  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Message generation across listen despite.",  
+            "addressLocality": "Experie",  
+            "addressRegion": "Serious investment teacher identify before about not. Analysis scientist expert itself down can.",  
+            "addressCountry": "Star thing least Congress toward main. Hospital down door tonight from ",  
+            "postalCode": "Environmental with suddenly detail huge finally. Father position strategy air. Partner least fly relate new cam",  
+            "postOfficeBoxNumber": "Reduce morning field. Market something front price ma",  
+            "streetNr": "Four blood chance heart public. Certain coach skill already fire picture future lis",  
+            "district": "Ca"  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Recently sing high energy million show enter. College full allow put cove"  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.bmi"  
+        ]  
+    },  
+    "bmi": {  
+        "type": "Number",  
+        "value": 294.7  
+    },  
+    "range": {  
+        "type": "StructuredValue",  
+        "value": [  
+            341.6,  
+            577.3  
+        ]  
+    },  
+    "step": {  
+        "type": "Number",  
+        "value": 64.0  
+    },  
+    "precision": {  
+        "type": "Number",  
+        "value": 901.2  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Significant although boy includin"  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.s"  
+        ]  
+    },  
+    "type": "BMI"  
 }  
 ```  
 </details>  
@@ -641,67 +614,56 @@ BMI:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:BMI:id:VDFV:55667741",  
-    "dateCreated": "1972-08-04T01:32:47Z",  
-    "dateModified": "1990-12-10T18:23:52Z",  
-    "source": "Perhaps particularly over news. Section ability young read whose experience put.",  
-    "name": "Figure risk bill other. Manage account sell language middle learn.",  
-    "alternateName": "Campaign military adult maintain movie our more. Figure energy small include little institution. Something government anyone there spend skill.",  
-    "description": "Fly person development around control. Discover back nature politics apply crime teach recognize. Give nearly collection resource left site agree meeting.",  
-    "dataProvider": "Box scientist major really face everything final remember. Notice cover leave feel out word activity listen.",  
+    "id": "urn:ngsi-ld:BMI:id:JQXP:11604104",  
+    "dateCreated": "2023-04-27T03:38:23Z",  
+    "dateModified": "1999-07-17T13:50:02Z",  
+    "source": "Student civil cultural worry. Democrat woman fine soon example education. Add adult democratic wind la",  
+    "name": "Speech marriage treat family understand your voice newspaper. Child cover treat high pretty item profes",  
+    "alternateName": "Program fish girl our offer pick.",  
+    "description": "Act situation own stop must song. Treatment future professor follow difference job. When activity dec",  
+    "dataProvider": "Science various imagine usually can two expect. Seat president item reveal federal send.",  
     "owner": [  
-        "urn:ngsi-ld:BMI:items:TLGO:89545122",  
-        "urn:ngsi-ld:BMI:items:ZSQM:54988728"  
+        "urn:ngsi-ld:BMI:items:ANAV:58006639",  
+        "urn:ngsi-ld:BMI:items:ODIH:85202865"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:BMI:items:EWVZ:54612682",  
-        "urn:ngsi-ld:BMI:items:HUQO:69722028"  
+        "urn:ngsi-ld:BMI:items:RQXM:68509576"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            54.2093595,  
-            -81.722699  
+            -44.575855,  
+            76.463418  
         ]  
     },  
     "address": {  
-        "streetAddress": "Bag key computer home. Pm view however right speech.",  
-        "addressLocality": "Response smile place our.",  
-        "addressRegion": "Little poor public sense. Else race ready.",  
-        "addressCountry": "Example prepare arm bag spend movie simple today. Skin her research box.",  
-        "postalCode": "Their street figure decade parent. Land respond whatever generation explain.",  
-        "postOfficeBoxNumber": "Power receive which certainly shake organization better. Congress discussion where suddenly specific too west. Dog hear series voice glass open white."  
+        "streetAddress": "Message generation across listen despite.",  
+        "addressLocality": "Experie",  
+        "addressRegion": "Serious investment teacher identify before about not. Analysis scientist expert itself down can.",  
+        "addressCountry": "Star thing least Congress toward main. Hospital down door tonight from ",  
+        "postalCode": "Environmental with suddenly detail huge finally. Father position strategy air. Partner least fly relate new cam",  
+        "postOfficeBoxNumber": "Reduce morning field. Market something front price ma",  
+        "streetNr": "Four blood chance heart public. Certain coach skill already fire picture future lis",  
+        "district": "Ca"  
     },  
-    "areaServed": "Administration hundred ever speak medical. Another movement live environment author let show. Sit myself third later boy put poor.",  
+    "areaServed": "Recently sing high energy million show enter. College full allow put cove",  
     "rt": [  
-        "oic.r.bmi",  
         "oic.r.bmi"  
     ],  
-    "bmi": {  
-        "type": "Property",  
-        "value": 969.4  
-    },  
+    "bmi": 294.7,  
     "range": [  
-        966.8,  
-        231.5  
+        341.6,  
+        577.3  
     ],  
-    "step": {  
-        "type": "Property",  
-        "value": 326.9  
-    },  
-    "precision": {  
-        "type": "Property",  
-        "value": 465.9  
-    },  
-    "n": "Mother various avoid few describe. Develop deal artist write end down language. Yourself section staff authority already.",  
+    "step": 64.0,  
+    "precision": 901.2,  
+    "n": "Significant although boy includin",  
     "if": [  
-        "oic.if.baseline",  
-        "oic.if.baseline"  
+        "oic.if.s"  
     ],  
     "type": "BMI",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -711,78 +673,80 @@ BMI:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:BMI:id:EMJI:97474029",  
+    "id": "urn:ngsi-ld:BMI:id:JQXP:11604104",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2022-03-01T18:43:19Z"  
+            "@value": "2023-04-27T03:38:23Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1995-08-23T11:49:56Z"  
+            "@value": "1999-07-17T13:50:02Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Fill lot management perform professor admit herself."  
+        "value": "Student civil cultural worry. Democrat woman fine soon example education. Add adult democratic wind la"  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Late college somebody a property thought. Ever sell board just require."  
+        "value": "Speech marriage treat family understand your voice newspaper. Child cover treat high pretty item profes"  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Bar suffer thought record shoulder activity one. Support music serious so speak feeling event. Phone radio about produce practice order."  
+        "value": "Program fish girl our offer pick."  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Say book popular back million. Degree local live."  
+        "value": "Act situation own stop must song. Treatment future professor follow difference job. When activity dec"  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Good morning shake whose. Safe employee buy offer majority. Provide lead catch try chair main develop. Chance here type heavy."  
+        "value": "Science various imagine usually can two expect. Seat president item reveal federal send."  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:BMI:items:WJYW:99456940",  
-            "urn:ngsi-ld:BMI:items:IBTQ:54917398"  
+            "urn:ngsi-ld:BMI:items:ANAV:58006639",  
+            "urn:ngsi-ld:BMI:items:ODIH:85202865"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:BMI:items:DUBD:09125435"  
+            "urn:ngsi-ld:BMI:items:RQXM:68509576"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                -71.4924345,  
-                -95.488647  
+                -44.575855,  
+                76.463418  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "That claim else already.",  
-            "addressLocality": "Painting break mother speak while eye. Political student hospital free down teacher.",  
-            "addressRegion": "Gas beat scientist. Election full defense deep morning black. Interesting PM in. Production authority name method price talk.",  
-            "addressCountry": "Door floor most task so fast much. Also address play stand.",  
-            "postalCode": "Happy value analysis far. Spring true family yeah.",  
-            "postOfficeBoxNumber": "Toward raise wait send mouth be everybody evidence. Court majority grow employee yourself crime. Car alone kitchen most painting at sea."  
+            "streetAddress": "Message generation across listen despite.",  
+            "addressLocality": "Experie",  
+            "addressRegion": "Serious investment teacher identify before about not. Analysis scientist expert itself down can.",  
+            "addressCountry": "Star thing least Congress toward main. Hospital down door tonight from ",  
+            "postalCode": "Environmental with suddenly detail huge finally. Father position strategy air. Partner least fly relate new cam",  
+            "postOfficeBoxNumber": "Reduce morning field. Market something front price ma",  
+            "streetNr": "Four blood chance heart public. Certain coach skill already fire picture future lis",  
+            "district": "Ca"  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Us outside simply suffer. Social inside above war bit light charge."  
+        "value": "Recently sing high energy million show enter. College full allow put cove"  
     },  
     "rt": {  
         "type": "Property",  
@@ -792,37 +756,36 @@ BMI:
     },  
     "bmi": {  
         "type": "Property",  
-        "value": 443.8  
+        "value": 294.7  
     },  
     "range": {  
         "type": "Property",  
         "value": [  
-            661.2,  
-            444.8  
+            341.6,  
+            577.3  
         ]  
     },  
     "step": {  
         "type": "Property",  
-        "value": 198.7  
+        "value": 64.0  
     },  
     "precision": {  
         "type": "Property",  
-        "value": 977.8  
+        "value": 901.2  
     },  
     "n": {  
         "type": "Property",  
-        "value": "Laugh such force final. Them media line involve. Age meet follow character card news seat."  
+        "value": "Significant although boy includin"  
     },  
     "if": {  
         "type": "Property",  
         "value": [  
-            "oic.if.baseline"  
+            "oic.if.s"  
         ]  
     },  
     "type": "BMI",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
