@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: The post office box number for PO box addresses. For example, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: The postal code. For example, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: The street address  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Number identifying a specific property on a public street    
 - `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `ct[number]`: The Mired colour temperature  - `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity  - `dateCreated[date-time]`: Entity creation timestamp. This will usually be allocated by the storage platform  - `dateModified[date-time]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform  - `description[string]`: A description of this item  - `id[*]`: Unique identifier of the entity  - `if[array]`: The OCF Interface set supported by this Resource  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n[string]`: Friendly name of the Resource  - `name[string]`: The name of this item  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `range[array]`: The valid range for the Property in the Resource as an integer. The first value in the array is the minimum value, the second value in the array is the maximum value  - `rt[array]`: The Resource Type  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object  - `step[number]`: Step value across the defined range when the range is an integer.  This is the increment for valid values across the range; so if range is 0..10 and step is 2 then valid values are 0,2,4,6,8,10  - `type[string]`: NGSI entity type. It has to be ColourTemp  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Required properties  
@@ -436,60 +437,54 @@ ColourTemp:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:ColourTemp:id:SIGR:57783175",  
-  "dateCreated": "2013-02-09T19:26:34Z",  
-  "dateModified": "1980-05-22T11:29:50Z",  
-  "source": "Social race dream improve between. Mind hear final mother hundred happen. Suddenly fact mother mouth city campaign resource.",  
-  "name": "Reality these sometimes choice begin hit. Spring full offer common receive situation. Ability well personal across cold.",  
-  "alternateName": "Identify stay local dream main apply government. Identify clearly forget subject it lawyer. High skill need nice factor. Save like international sense bar produce source.",  
-  "description": "Ground the long toward tend someone. Social risk bank oil better weight wide.",  
-  "dataProvider": "Night likely into issue particularly school. For career team since pattern. Few red bed year situation.",  
-  "owner": [  
-    "urn:ngsi-ld:ColourTemp:items:GIII:86193381",  
-    "urn:ngsi-ld:ColourTemp:items:LEUS:66364515"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:ColourTemp:items:IKWJ:11271274",  
-    "urn:ngsi-ld:ColourTemp:items:WUAG:37359340"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      35.625337,  
-      124.92428  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Movie Democrat sometimes. Structure visit instead believe. Risk sense three action chance.",  
-    "addressLocality": "Mouth call whom make black. Both wrong small in. Member field with position her include home. School particularly require behind data.",  
-    "addressRegion": "Contain interview weight summer. Able change rock trial stock check. Recently name finish dinner business. Common issue Congress city.",  
-    "addressCountry": "Anything purpose just step tell performance. Effect find say outside first really sing. Subject rate yet fire box per. Religious sound call range within believe.",  
-    "postalCode": "Space move law customer box impact. Former dark economy if.",  
-    "postOfficeBoxNumber": "Minute power to plant charge. Determine over training wear campaign stock. Force most final. Thing admit since goal especially soon letter ago."  
-  },  
-  "areaServed": "Skin every federal son table. Charge surface letter movie radio.",  
-  "rt": [  
-    "oic.r.colour.colourtemperature",  
-    "oic.r.colour.colourtemperature"  
-  ],  
-  "ct": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "n": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair.",  
-  "range": [  
-    864,  
-    864  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "if": [  
-    "oic.if.a",  
-    "oic.if.baseline"  
-  ],  
-  "type": "ColourTemp"  
+    "id": "urn:ngsi-ld:ColourTemp:id:GQEJ:48764759",  
+    "dateCreated": "1979-07-06T09:36:23Z",  
+    "dateModified": "2021-06-07T14:46:20Z",  
+    "source": "Son would mouth relate own chair better available. Line beyond its particularly tree whom.",  
+    "name": "Tend employee source nature add rest. R",  
+    "alternateName": "Before year themselves your majority feeling fact. Natural sport music white. Natural",  
+    "description": "Wonder employee attorney quickly candidate change although bag.",  
+    "dataProvider": "Study modern miss dog Democrat quickly. Often late produce you true soldier. Food break o",  
+    "owner": [  
+        "urn:ngsi-ld:ColourTemp:items:KNBD:33041352",  
+        "urn:ngsi-ld:ColourTemp:items:DUGT:23098910"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:ColourTemp:items:AGFW:91615109"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -56.7421445,  
+            77.286609  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "View age international big. Attorney author feeling job article.",  
+        "addressLocality": "Others record hospital. Grow rule stuff truth college. Whom around put suddenly ga",  
+        "addressRegion": "Others kind company likely. Tonight themselv",  
+        "addressCountry": "Real leader bad schoo",  
+        "postalCode": "Stock ball organization recognize civil development. Her then nothing increase",  
+        "postOfficeBoxNumber": "Those traditional page a although for study. Speak themselves speech. Nature white without study candidate.",  
+        "streetNr": "Wear individual about add senior woman.",  
+        "district": "Best budget power them evidence without beyond take. Physical against t"  
+    },  
+    "areaServed": "Fire happen nothin",  
+    "rt": [  
+        "oic.r.colour.colourtemperature"  
+    ],  
+    "ct": 864,  
+    "n": "American whole mag",  
+    "range": [  
+        864,  
+        864  
+    ],  
+    "step": 864,  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.a"  
+    ],  
+    "type": "ColourTemp"  
 }  
 ```  
 </details>  
@@ -498,122 +493,108 @@ ColourTemp:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:ColourTemp:id:SIGR:57783175"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2013-02-09T19:26:34Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1980-05-22T11:29:50Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Social race dream improve between. Mind hear final mother hundred happen. Suddenly fact mother mouth city campaign resource."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Reality these sometimes choice begin hit. Spring full offer common receive situation. Ability well personal across cold."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Identify stay local dream main apply government. Identify clearly forget subject it lawyer. High skill need nice factor. Save like international sense bar produce source."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Ground the long toward tend someone. Social risk bank oil better weight wide."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Night likely into issue particularly school. For career team since pattern. Few red bed year situation."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:ColourTemp:items:GIII:86193381",  
-      "urn:ngsi-ld:ColourTemp:items:LEUS:66364515"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:ColourTemp:items:IKWJ:11271274",  
-      "urn:ngsi-ld:ColourTemp:items:WUAG:37359340"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        35.625337,  
-        124.92428  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Movie Democrat sometimes. Structure visit instead believe. Risk sense three action chance.",  
-      "addressLocality": "Mouth call whom make black. Both wrong small in. Member field with position her include home. School particularly require behind data.",  
-      "addressRegion": "Contain interview weight summer. Able change rock trial stock check. Recently name finish dinner business. Common issue Congress city.",  
-      "addressCountry": "Anything purpose just step tell performance. Effect find say outside first really sing. Subject rate yet fire box per. Religious sound call range within believe.",  
-      "postalCode": "Space move law customer box impact. Former dark economy if.",  
-      "postOfficeBoxNumber": "Minute power to plant charge. Determine over training wear campaign stock. Force most final. Thing admit since goal especially soon letter ago."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Skin every federal son table. Charge surface letter movie radio."  
-  },  
-  "rt": {  
-    "type": "array",  
-    "value": [  
-      "oic.r.colour.colourtemperature",  
-      "oic.r.colour.colourtemperature"  
-    ]  
-  },  
-  "ct": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 864  
-    }  
-  },  
-  "n": {  
-    "type": "string",  
-    "value": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair."  
-  },  
-  "range": {  
-    "type": "array",  
-    "value": [  
-      864,  
-      864  
-    ]  
-  },  
-  "step": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 864  
-    }  
-  },  
-  "if": {  
-    "type": "array",  
-    "value": [  
-      "oic.if.a",  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "type": {  
-    "type": "string",  
-    "value": "ColourTemp"  
-  }  
+    "id": "urn:ngsi-ld:ColourTemp:id:GQEJ:48764759",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1979-07-06T09:36:23Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "2021-06-07T14:46:20Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Son would mouth relate own chair better available. Line beyond its particularly tree whom."  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Tend employee source nature add rest. R"  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Before year themselves your majority feeling fact. Natural sport music white. Natural"  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Wonder employee attorney quickly candidate change although bag."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Study modern miss dog Democrat quickly. Often late produce you true soldier. Food break o"  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:ColourTemp:items:KNBD:33041352",  
+            "urn:ngsi-ld:ColourTemp:items:DUGT:23098910"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:ColourTemp:items:AGFW:91615109"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -56.7421445,  
+                77.286609  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "View age international big. Attorney author feeling job article.",  
+            "addressLocality": "Others record hospital. Grow rule stuff truth college. Whom around put suddenly ga",  
+            "addressRegion": "Others kind company likely. Tonight themselv",  
+            "addressCountry": "Real leader bad schoo",  
+            "postalCode": "Stock ball organization recognize civil development. Her then nothing increase",  
+            "postOfficeBoxNumber": "Those traditional page a although for study. Speak themselves speech. Nature white without study candidate.",  
+            "streetNr": "Wear individual about add senior woman.",  
+            "district": "Best budget power them evidence without beyond take. Physical against t"  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Fire happen nothin"  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.colour.colourtemperature"  
+        ]  
+    },  
+    "ct": {  
+        "type": "Number",  
+        "value": 864  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "American whole mag"  
+    },  
+    "range": {  
+        "type": "StructuredValue",  
+        "value": [  
+            864,  
+            864  
+        ]  
+    },  
+    "step": {  
+        "type": "Number",  
+        "value": 864  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.baseline",  
+            "oic.if.a"  
+        ]  
+    },  
+    "type": "ColourTemp"  
 }  
 ```  
 </details>  
@@ -622,63 +603,56 @@ ColourTemp:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:ColourTemp:id:SIGR:57783175",  
-    "dateCreated": "2013-02-09T19:26:34Z",  
-    "dateModified": "1980-05-22T11:29:50Z",  
-    "source": "Social race dream improve between. Mind hear final mother hundred happen. Suddenly fact mother mouth city campaign resource.",  
-    "name": "Reality these sometimes choice begin hit. Spring full offer common receive situation. Ability well personal across cold.",  
-    "alternateName": "Identify stay local dream main apply government. Identify clearly forget subject it lawyer. High skill need nice factor. Save like international sense bar produce source.",  
-    "description": "Ground the long toward tend someone. Social risk bank oil better weight wide.",  
-    "dataProvider": "Night likely into issue particularly school. For career team since pattern. Few red bed year situation.",  
+    "id": "urn:ngsi-ld:ColourTemp:id:GQEJ:48764759",  
+    "dateCreated": "1979-07-06T09:36:23Z",  
+    "dateModified": "2021-06-07T14:46:20Z",  
+    "source": "Son would mouth relate own chair better available. Line beyond its particularly tree whom.",  
+    "name": "Tend employee source nature add rest. R",  
+    "alternateName": "Before year themselves your majority feeling fact. Natural sport music white. Natural",  
+    "description": "Wonder employee attorney quickly candidate change although bag.",  
+    "dataProvider": "Study modern miss dog Democrat quickly. Often late produce you true soldier. Food break o",  
     "owner": [  
-        "urn:ngsi-ld:ColourTemp:items:GIII:86193381",  
-        "urn:ngsi-ld:ColourTemp:items:LEUS:66364515"  
+        "urn:ngsi-ld:ColourTemp:items:KNBD:33041352",  
+        "urn:ngsi-ld:ColourTemp:items:DUGT:23098910"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:ColourTemp:items:IKWJ:11271274",  
-        "urn:ngsi-ld:ColourTemp:items:WUAG:37359340"  
+        "urn:ngsi-ld:ColourTemp:items:AGFW:91615109"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            35.625337,  
-            124.92428  
+            -56.7421445,  
+            77.286609  
         ]  
     },  
     "address": {  
-        "streetAddress": "Movie Democrat sometimes. Structure visit instead believe. Risk sense three action chance.",  
-        "addressLocality": "Mouth call whom make black. Both wrong small in. Member field with position her include home. School particularly require behind data.",  
-        "addressRegion": "Contain interview weight summer. Able change rock trial stock check. Recently name finish dinner business. Common issue Congress city.",  
-        "addressCountry": "Anything purpose just step tell performance. Effect find say outside first really sing. Subject rate yet fire box per. Religious sound call range within believe.",  
-        "postalCode": "Space move law customer box impact. Former dark economy if.",  
-        "postOfficeBoxNumber": "Minute power to plant charge. Determine over training wear campaign stock. Force most final. Thing admit since goal especially soon letter ago."  
+        "streetAddress": "View age international big. Attorney author feeling job article.",  
+        "addressLocality": "Others record hospital. Grow rule stuff truth college. Whom around put suddenly ga",  
+        "addressRegion": "Others kind company likely. Tonight themselv",  
+        "addressCountry": "Real leader bad schoo",  
+        "postalCode": "Stock ball organization recognize civil development. Her then nothing increase",  
+        "postOfficeBoxNumber": "Those traditional page a although for study. Speak themselves speech. Nature white without study candidate.",  
+        "streetNr": "Wear individual about add senior woman.",  
+        "district": "Best budget power them evidence without beyond take. Physical against t"  
     },  
-    "areaServed": "Skin every federal son table. Charge surface letter movie radio.",  
+    "areaServed": "Fire happen nothin",  
     "rt": [  
-        "oic.r.colour.colourtemperature",  
         "oic.r.colour.colourtemperature"  
     ],  
-    "ct": {  
-        "type": "Property",  
-        "value": 864  
-    },  
-    "n": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair.",  
+    "ct": 864,  
+    "n": "American whole mag",  
     "range": [  
         864,  
         864  
     ],  
-    "step": {  
-        "type": "Property",  
-        "value": 864  
-    },  
+    "step": 864,  
     "if": [  
-        "oic.if.a",  
-        "oic.if.baseline"  
+        "oic.if.baseline",  
+        "oic.if.a"  
     ],  
     "type": "ColourTemp",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -688,78 +662,80 @@ ColourTemp:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:ColourTemp:id:MXZP:04964505",  
+    "id": "urn:ngsi-ld:ColourTemp:id:GQEJ:48764759",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2003-04-02T22:58:26Z"  
+            "@value": "1979-07-06T09:36:23Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1986-08-04T00:21:58Z"  
+            "@value": "2021-06-07T14:46:20Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Safe thousand southern rate top. Them job very."  
+        "value": "Son would mouth relate own chair better available. Line beyond its particularly tree whom."  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Although fast perhaps move. Prevent lose our exactly item across author. Off recently minute. Church where large movie."  
+        "value": "Tend employee source nature add rest. R"  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Notice project take computer. Defense develop rate anything interesting science."  
+        "value": "Before year themselves your majority feeling fact. Natural sport music white. Natural"  
     },  
     "description": {  
         "type": "Property",  
-        "value": "That standard risk. Company wish spend reach movie sell. If hair notice rock writer."  
+        "value": "Wonder employee attorney quickly candidate change although bag."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Also beyond full method bar. Check American increase when."  
+        "value": "Study modern miss dog Democrat quickly. Often late produce you true soldier. Food break o"  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:ColourTemp:items:MJFM:80235046",  
-            "urn:ngsi-ld:ColourTemp:items:YIJV:04552958"  
+            "urn:ngsi-ld:ColourTemp:items:KNBD:33041352",  
+            "urn:ngsi-ld:ColourTemp:items:DUGT:23098910"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:ColourTemp:items:DNNY:14770603"  
+            "urn:ngsi-ld:ColourTemp:items:AGFW:91615109"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                -45.7508565,  
-                70.843307  
+                -56.7421445,  
+                77.286609  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Hold matter by worry international right hotel. Machine risk professor himself big time.",  
-            "addressLocality": "After various stock event fact. Probably see on trial anyone recent care. Last available rate song.",  
-            "addressRegion": "Month family opportunity ground fight certain talk.",  
-            "addressCountry": "Appear second course term successful yes someone memory. Remain leg trip million. Laugh good yeah again table tree weight space. Particularly party fish like seem notice.",  
-            "postalCode": "Environment level responsibility behavior. Culture scene future stop peace another.",  
-            "postOfficeBoxNumber": "My try ask traditional. Its most hair benefit pattern during. Per represent central music tough total society."  
+            "streetAddress": "View age international big. Attorney author feeling job article.",  
+            "addressLocality": "Others record hospital. Grow rule stuff truth college. Whom around put suddenly ga",  
+            "addressRegion": "Others kind company likely. Tonight themselv",  
+            "addressCountry": "Real leader bad schoo",  
+            "postalCode": "Stock ball organization recognize civil development. Her then nothing increase",  
+            "postOfficeBoxNumber": "Those traditional page a although for study. Speak themselves speech. Nature white without study candidate.",  
+            "streetNr": "Wear individual about add senior woman.",  
+            "district": "Best budget power them evidence without beyond take. Physical against t"  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Card whether eight quite among. Yes keep particular statement dog million my."  
+        "value": "Fire happen nothin"  
     },  
     "rt": {  
         "type": "Property",  
@@ -769,34 +745,33 @@ ColourTemp:
     },  
     "ct": {  
         "type": "Property",  
-        "value": 123  
+        "value": 864  
     },  
     "n": {  
         "type": "Property",  
-        "value": "Recently movie evidence feeling moment. Like along international. Still likely either garden her human."  
+        "value": "American whole mag"  
     },  
     "range": {  
         "type": "Property",  
         "value": [  
-            972,  
-            421  
+            864,  
+            864  
         ]  
     },  
     "step": {  
         "type": "Property",  
-        "value": 785  
+        "value": 864  
     },  
     "if": {  
         "type": "Property",  
         "value": [  
-            "oic.if.a",  
-            "oic.if.baseline"  
+            "oic.if.baseline",  
+            "oic.if.a"  
         ]  
     },  
     "type": "ColourTemp",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
