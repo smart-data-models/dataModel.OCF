@@ -15,7 +15,15 @@
 ## Liste des propriétés  
 
 <sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il peut avoir plusieurs types ou différents formats/modèles</sub></sup>.  
-- `if[array]`: L'ensemble d'interfaces OCF pris en charge par cette ressource.  - `lockCodeList[array]`: Valeur du code de verrouillage  - `n[string]`: Nom amical de la ressource  - `rt[array]`: Le type de ressources.  - `type[string]`: Type d'entité NGSI. Il doit s'agir de LockCode  <!-- /30-PropertiesList -->  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Le pays. Par exemple, l'Espagne  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: La localité dans laquelle se trouve l'adresse postale et qui se trouve dans la région  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: La région dans laquelle se trouve la localité et qui se trouve dans le pays  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Un district est un type de division administrative qui, dans certains pays, est géré par le gouvernement local.    
+	- `postOfficeBoxNumber[string]`: Le numéro de la boîte postale pour les adresses de boîtes postales. Par exemple, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Le code postal. Par exemple, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: L'adresse de la rue  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Numéro identifiant une propriété spécifique sur une voie publique    
+- `alternateName[string]`: Un nom alternatif pour ce poste  - `areaServed[string]`: La zone géographique où un service ou un article est offert  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées  - `dateCreated[date-time]`: Horodatage de la création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage  - `dateModified[date-time]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage  - `description[string]`: Une description de l'article  - `id[*]`: Identifiant unique de l'entité  - `if[array]`: L'ensemble d'interfaces OCF pris en charge par cette ressource.  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une chaîne de ligne, d'un polygone, d'un point multiple, d'une chaîne de ligne multiple ou d'un polygone multiple.  - `lockCodeList[array]`: Valeur du code de verrouillage  - `n[string]`: Nom amical de la ressource  - `name[string]`: Le nom de cet élément  - `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  - `rt[array]`: Le type de ressources.  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  - `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  - `type[string]`: Type d'entité NGSI. Il doit s'agir de LockCode  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propriétés requises  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -32,6 +40,109 @@
 LockCode:    
   description: Smart Data Models Program adaptation of the original IoTData data Models. The Resource describing a lock code. The Property 'lockCodeList' is an array of possible codes that may be associated with a lock. The codes are all presented as strings.    
   properties:    
+    address:    
+      description: The mailing address    
+      properties:    
+        addressCountry:    
+          description: 'The country. For example, Spain'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
+        addressLocality:    
+          description: 'The locality in which the street address is, and which is in the region'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
+        addressRegion:    
+          description: 'The region in which the locality is, and which is in the country'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        postOfficeBoxNumber:    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
+        postalCode:    
+          description: 'The postal code. For example, 24004'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
+        streetAddress:    
+          description: The street address    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      type: object    
+      x-ngsi:    
+        model: https://schema.org/address    
+        type: Property    
+    alternateName:    
+      description: An alternative name for this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    areaServed:    
+      description: The geographic area where a service or offered item is provided    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    dataProvider:    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateCreated:    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateModified:    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    description:    
+      description: A description of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    id:    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
+      x-ngsi:    
+        type: Property    
     if:    
       description: The OCF Interface set supported by this Resource.    
       items:    
@@ -45,6 +156,171 @@ LockCode:
       uniqueItems: true    
       x-ngsi:    
         type: Property    
+    location:    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+      oneOf:    
+        - description: Geojson reference to the item. Point    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                type: number    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - Point    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Point    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - LineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON LineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 4    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - Polygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Polygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPoint    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPoint    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiLineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiLineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    items:    
+                      type: number    
+                    minItems: 2    
+                    type: array    
+                  minItems: 4    
+                  type: array    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPolygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPolygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+      x-ngsi:    
+        type: GeoProperty    
     lockCodeList:    
       description: The value for the lock code    
       items:    
@@ -59,6 +335,33 @@ LockCode:
       type: string    
       x-ngsi:    
         type: Property    
+    name:    
+      description: The name of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    owner:    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
+      items:    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     rt:    
       description: The Resource Type.    
       items:    
@@ -70,6 +373,23 @@ LockCode:
       readOnly: true    
       type: array    
       uniqueItems: true    
+      x-ngsi:    
+        type: Property    
+    seeAlso:    
+      description: list of uri pointing to additional resources about the item    
+      oneOf:    
+        - items:    
+            format: uri    
+            type: string    
+          minItems: 1    
+          type: array    
+        - format: uri    
+          type: string    
+      x-ngsi:    
+        type: Property    
+    source:    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
+      type: string    
       x-ngsi:    
         type: Property    
     type:    
@@ -101,38 +421,52 @@ LockCode:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:LockCode:id:UAFO:32880755",  
-  "dateCreated": "1973-11-19T13:11:24Z",  
-  "dateModified": "1976-10-21T20:02:58Z",  
-  "source": "Big their thing bank growth. Court adult matter structure. Ask focus artist young speak. Part actually song lead financial summer.",  
-  "name": "Most case this be. Factor leader weight science firm miss bed if. Play still wait evidence however without.",  
-  "alternateName": "Each kitchen soldier take if brother. Assume our article close couple school five issue. Lot policy maybe culture notice.",  
-  "description": "Candidate why industry apply. Late official the represent window mind especially. Cultural rock need learn organization evening.",  
-  "dataProvider": "Shake campaign culture church ok. Money thing agree. Hair few cause many some resource wide.",  
-  "owner": [  
-    "urn:ngsi-ld:LockCode:items:BPFG:16122473",  
-    "urn:ngsi-ld:LockCode:items:KYAO:28376534"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:LockCode:items:IQKM:49639880",  
-    "urn:ngsi-ld:LockCode:items:HHKM:59980343"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      40.5582215,  
-      -6.700416  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Fall would bar under. Soldier certain group expert could specific mouth off. World successful special ball adult yourself.",  
-    "addressLocality": "Energy least many Democrat box occur.",  
-    "addressRegion": "Certain large sort avoid cultural. Pay movement save from consumer turn.",  
-    "addressCountry": "Worker theory speak truth. Tell college skill. Matter customer range none story likely.",  
-    "postalCode": "Deep remember return energy employee mouth anyone full. Remember father ok figure record election rule simply. Maybe test vote result identify often growth.",  
-    "postOfficeBoxNumber": "Wife what allow various high threat black war. Model million yourself. Either stand right suggest add however north."  
-  },  
-  "areaServed": "Hold state wait point camera marriage according. Newspaper partner teach rest candidate. Provide yard black pattern."  
+    "id": "urn:ngsi-ld:LockCode:id:XTKB:17156589",  
+    "dateCreated": "1995-03-22T09:46:16Z",  
+    "dateModified": "1989-05-15T06:56:35Z",  
+    "source": "Occur expert go feel de",  
+    "name": "Suggest understand",  
+    "alternateName": "They laugh note near during never happy.",  
+    "description": "Fee",  
+    "dataProvider": "Image color central floor particular make summer hand. ",  
+    "owner": [  
+        "urn:ngsi-ld:LockCode:items:HTRD:76227389",  
+        "urn:ngsi-ld:LockCode:items:YGNR:67121480"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:LockCode:items:OTTV:99825070"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -60.885144,  
+            -171.913549  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Account summer debate two nothing.",  
+        "addressLocality": "Organization road life tree. Foot state brother. Unit generation trade accept space.",  
+        "addressRegion": "Agency now short recognize that have. Dog drop recent these media. Notice certainly and play ",  
+        "addressCountry": "Those test full nice adult attorney. Class visit effort gas campaign.",  
+        "postalCode": "Assume head open apply civil thank environment",  
+        "postOfficeBoxNumber": "Prepare group imagine already none. Price next model value risk us. Professional",  
+        "streetNr": "Throw prevent strategy hold include. Effort talk author up are",  
+        "district": "Process design behavior room big ok college. Along effor"  
+    },  
+    "areaServed": "Apply pressure matter leave raise Democrat baby. Cut memory scientist activity",  
+    "rt": [  
+        "oic.r.lock.code"  
+    ],  
+    "lockCodeList": [  
+        "Action fill yard send wrong. Including history phone to.",  
+        "Prove almost at administration. Behind inv"  
+    ],  
+    "n": "Firm new rule p",  
+    "if": [  
+        "oic.if.a",  
+        "oic.if.baseline"  
+    ],  
+    "type": "LockCode"  
 }  
 ```  
 </details>  
@@ -141,79 +475,100 @@ LockCode:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:LockCode:id:UAFO:32880755"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1973-11-19T13:11:24Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1976-10-21T20:02:58Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Big their thing bank growth. Court adult matter structure. Ask focus artist young speak. Part actually song lead financial summer."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Most case this be. Factor leader weight science firm miss bed if. Play still wait evidence however without."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Each kitchen soldier take if brother. Assume our article close couple school five issue. Lot policy maybe culture notice."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Candidate why industry apply. Late official the represent window mind especially. Cultural rock need learn organization evening."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Shake campaign culture church ok. Money thing agree. Hair few cause many some resource wide."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:LockCode:items:BPFG:16122473",  
-      "urn:ngsi-ld:LockCode:items:KYAO:28376534"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:LockCode:items:IQKM:49639880",  
-      "urn:ngsi-ld:LockCode:items:HHKM:59980343"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        40.5582215,  
-        -6.700416  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Fall would bar under. Soldier certain group expert could specific mouth off. World successful special ball adult yourself.",  
-      "addressLocality": "Energy least many Democrat box occur.",  
-      "addressRegion": "Certain large sort avoid cultural. Pay movement save from consumer turn.",  
-      "addressCountry": "Worker theory speak truth. Tell college skill. Matter customer range none story likely.",  
-      "postalCode": "Deep remember return energy employee mouth anyone full. Remember father ok figure record election rule simply. Maybe test vote result identify often growth.",  
-      "postOfficeBoxNumber": "Wife what allow various high threat black war. Model million yourself. Either stand right suggest add however north."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Hold state wait point camera marriage according. Newspaper partner teach rest candidate. Provide yard black pattern."  
-  }  
+    "id": "urn:ngsi-ld:LockCode:id:XTKB:17156589",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1995-03-22T09:46:16Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "1989-05-15T06:56:35Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Occur expert go feel de"  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Suggest understand"  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "They laugh note near during never happy."  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Fee"  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Image color central floor particular make summer hand. "  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:LockCode:items:HTRD:76227389",  
+            "urn:ngsi-ld:LockCode:items:YGNR:67121480"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:LockCode:items:OTTV:99825070"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -60.885144,  
+                -171.913549  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Account summer debate two nothing.",  
+            "addressLocality": "Organization road life tree. Foot state brother. Unit generation trade accept space.",  
+            "addressRegion": "Agency now short recognize that have. Dog drop recent these media. Notice certainly and play ",  
+            "addressCountry": "Those test full nice adult attorney. Class visit effort gas campaign.",  
+            "postalCode": "Assume head open apply civil thank environment",  
+            "postOfficeBoxNumber": "Prepare group imagine already none. Price next model value risk us. Professional",  
+            "streetNr": "Throw prevent strategy hold include. Effort talk author up are",  
+            "district": "Process design behavior room big ok college. Along effor"  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Apply pressure matter leave raise Democrat baby. Cut memory scientist activity"  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.lock.code"  
+        ]  
+    },  
+    "lockCodeList": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "Action fill yard send wrong. Including history phone to.",  
+            "Prove almost at administration. Behind inv"  
+        ]  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Firm new rule p"  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.a",  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "LockCode"  
 }  
 ```  
 </details>  
@@ -222,41 +577,54 @@ LockCode:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:LockCode:id:UAFO:32880755",  
-    "dateCreated": "1973-11-19T13:11:24Z",  
-    "dateModified": "1976-10-21T20:02:58Z",  
-    "source": "Big their thing bank growth. Court adult matter structure. Ask focus artist young speak. Part actually song lead financial summer.",  
-    "name": "Most case this be. Factor leader weight science firm miss bed if. Play still wait evidence however without.",  
-    "alternateName": "Each kitchen soldier take if brother. Assume our article close couple school five issue. Lot policy maybe culture notice.",  
-    "description": "Candidate why industry apply. Late official the represent window mind especially. Cultural rock need learn organization evening.",  
-    "dataProvider": "Shake campaign culture church ok. Money thing agree. Hair few cause many some resource wide.",  
+    "id": "urn:ngsi-ld:LockCode:id:XTKB:17156589",  
+    "dateCreated": "1995-03-22T09:46:16Z",  
+    "dateModified": "1989-05-15T06:56:35Z",  
+    "source": "Occur expert go feel de",  
+    "name": "Suggest understand",  
+    "alternateName": "They laugh note near during never happy.",  
+    "description": "Fee",  
+    "dataProvider": "Image color central floor particular make summer hand. ",  
     "owner": [  
-        "urn:ngsi-ld:LockCode:items:BPFG:16122473",  
-        "urn:ngsi-ld:LockCode:items:KYAO:28376534"  
+        "urn:ngsi-ld:LockCode:items:HTRD:76227389",  
+        "urn:ngsi-ld:LockCode:items:YGNR:67121480"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:LockCode:items:IQKM:49639880",  
-        "urn:ngsi-ld:LockCode:items:HHKM:59980343"  
+        "urn:ngsi-ld:LockCode:items:OTTV:99825070"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            40.5582215,  
-            -6.700416  
+            -60.885144,  
+            -171.913549  
         ]  
     },  
     "address": {  
-        "streetAddress": "Fall would bar under. Soldier certain group expert could specific mouth off. World successful special ball adult yourself.",  
-        "addressLocality": "Energy least many Democrat box occur.",  
-        "addressRegion": "Certain large sort avoid cultural. Pay movement save from consumer turn.",  
-        "addressCountry": "Worker theory speak truth. Tell college skill. Matter customer range none story likely.",  
-        "postalCode": "Deep remember return energy employee mouth anyone full. Remember father ok figure record election rule simply. Maybe test vote result identify often growth.",  
-        "postOfficeBoxNumber": "Wife what allow various high threat black war. Model million yourself. Either stand right suggest add however north."  
+        "streetAddress": "Account summer debate two nothing.",  
+        "addressLocality": "Organization road life tree. Foot state brother. Unit generation trade accept space.",  
+        "addressRegion": "Agency now short recognize that have. Dog drop recent these media. Notice certainly and play ",  
+        "addressCountry": "Those test full nice adult attorney. Class visit effort gas campaign.",  
+        "postalCode": "Assume head open apply civil thank environment",  
+        "postOfficeBoxNumber": "Prepare group imagine already none. Price next model value risk us. Professional",  
+        "streetNr": "Throw prevent strategy hold include. Effort talk author up are",  
+        "district": "Process design behavior room big ok college. Along effor"  
     },  
-    "areaServed": "Hold state wait point camera marriage according. Newspaper partner teach rest candidate. Provide yard black pattern.",  
+    "areaServed": "Apply pressure matter leave raise Democrat baby. Cut memory scientist activity",  
+    "rt": [  
+        "oic.r.lock.code"  
+    ],  
+    "lockCodeList": [  
+        "Action fill yard send wrong. Including history phone to.",  
+        "Prove almost at administration. Behind inv"  
+    ],  
+    "n": "Firm new rule p",  
+    "if": [  
+        "oic.if.a",  
+        "oic.if.baseline"  
+    ],  
+    "type": "LockCode",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -266,82 +634,108 @@ LockCode:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:LockCode:id:DSOC:42964529",  
+    "id": "urn:ngsi-ld:LockCode:id:XTKB:17156589",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1994-04-07T20:31:59Z"  
+            "@value": "1995-03-22T09:46:16Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2010-09-17T15:38:07Z"  
+            "@value": "1989-05-15T06:56:35Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Among happy produce class."  
+        "value": "Occur expert go feel de"  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Quality red believe leader sure contain. Indicate final policy question change environment person."  
+        "value": "Suggest understand"  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Return key window decision. Only take today."  
+        "value": "They laugh note near during never happy."  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Audience challenge three main experience what. Personal American ago cold. Next financial administration deal."  
+        "value": "Fee"  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Claim cold throughout oil network. Conference sort day yard or financial. Easy take cultural apply program determine send mind."  
+        "value": "Image color central floor particular make summer hand. "  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:LockCode:items:CCGS:49580900",  
-            "urn:ngsi-ld:LockCode:items:LFBS:64671066"  
+            "urn:ngsi-ld:LockCode:items:HTRD:76227389",  
+            "urn:ngsi-ld:LockCode:items:YGNR:67121480"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:LockCode:items:WDUI:94831427"  
+            "urn:ngsi-ld:LockCode:items:OTTV:99825070"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                26.500678,  
-                7.456238  
+                -60.885144,  
+                -171.913549  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Well more treat movement wind. Finish attorney realize daughter office share back.",  
-            "addressLocality": "Cold care relate until among any. Television education law.",  
-            "addressRegion": "Summer bad cause take. Mention before quickly dark. Across community end behavior before.",  
-            "addressCountry": "Current his state I. Available next which health. Week matter collection prevent.",  
-            "postalCode": "Education tell energy middle raise continue. Teach must site trouble.",  
-            "postOfficeBoxNumber": "Down common plant kind. Really strong somebody and only executive consumer. Too reflect affect buy painting."  
+            "streetAddress": "Account summer debate two nothing.",  
+            "addressLocality": "Organization road life tree. Foot state brother. Unit generation trade accept space.",  
+            "addressRegion": "Agency now short recognize that have. Dog drop recent these media. Notice certainly and play ",  
+            "addressCountry": "Those test full nice adult attorney. Class visit effort gas campaign.",  
+            "postalCode": "Assume head open apply civil thank environment",  
+            "postOfficeBoxNumber": "Prepare group imagine already none. Price next model value risk us. Professional",  
+            "streetNr": "Throw prevent strategy hold include. Effort talk author up are",  
+            "district": "Process design behavior room big ok college. Along effor"  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Recognize be page unit well behind. Contain always right son minute world."  
+        "value": "Apply pressure matter leave raise Democrat baby. Cut memory scientist activity"  
     },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.lock.code"  
+        ]  
+    },  
+    "lockCodeList": {  
+        "type": "Property",  
+        "value": [  
+            "Action fill yard send wrong. Including history phone to.",  
+            "Prove almost at administration. Behind inv"  
+        ]  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Firm new rule p"  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.a",  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "LockCode",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
