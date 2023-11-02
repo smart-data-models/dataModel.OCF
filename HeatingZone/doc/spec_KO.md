@@ -15,7 +15,15 @@
 ## 속성 목록  
 
 <sup><sub>[*] 속성에 유형이 없는 것은 여러 유형 또는 다른 형식/패턴을 가질 수 있기 때문입니다</sub></sup>.  
-- `heatinglevel[integer]`: 구역의 현재 난방 수준입니다.  - `if[array]`: 이 리소스에서 지원하는 OCF 인터페이스 세트입니다.  - `maxheatinglevel[integer]`: 구역의 최대 난방 수준입니다.  - `n[string]`: 리소스의 친근한 이름  - `rt[array]`: 리소스 유형입니다.  - `type[string]`: NGSI 엔티티 유형. HeatingZone이어야 합니다.  <!-- /30-PropertiesList -->  
+- `address[object]`: 우편 주소  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 국가. 예를 들어, 스페인  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 도로명 주소가 있는 지역 및 해당 지역에 속한 지역  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: 해당 지역이 위치한 지역과 해당 국가의 지역  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 지구는 일부 국가에서는 지방 정부에서 관리하는 행정 구역의 일종입니다.    
+	- `postOfficeBoxNumber[string]`: 사서함 주소의 우체국 사서함 번호입니다. 예: 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 우편 번호입니다. 예: 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 거리 주소  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: 공공 도로의 특정 건물을 식별하는 번호    
+- `alternateName[string]`: 이 항목의 대체 이름  - `areaServed[string]`: 서비스 또는 제공 품목이 제공되는 지리적 영역  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 조화된 데이터 엔티티의 공급자를 식별하는 일련의 문자  - `dateCreated[date-time]`: 엔티티 생성 타임스탬프. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `dateModified[date-time]`: 엔티티의 마지막 수정 타임스탬프입니다. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `description[string]`: 이 항목에 대한 설명  - `heatinglevel[number]`: 구역의 현재 난방 수준입니다.  - `id[*]`: 엔티티의 고유 식별자  - `if[array]`: 이 리소스에서 지원하는 OCF 인터페이스 세트입니다.  - `location[*]`: 항목에 대한 지오숀 참조입니다. 포인트, 라인 문자열, 다각형, 멀티포인트, 멀티라인 문자열 또는 멀티폴리곤일 수 있습니다.  - `maxheatinglevel[number]`: 구역의 최대 난방 수준입니다.  - `n[string]`: 리소스의 친근한 이름  - `name[string]`: 이 항목의 이름  - `owner[array]`: 소유자의 고유 ID를 참조하는 JSON 인코딩된 문자 시퀀스가 포함된 목록입니다.  - `rt[array]`: 리소스 유형입니다.  - `seeAlso[*]`: 항목에 대한 추가 리소스를 가리키는 URL 목록  - `source[string]`: 엔티티 데이터의 원본 소스를 URL로 제공하는 문자 시퀀스입니다. 소스 공급자의 정규화된 도메인 이름 또는 소스 개체에 대한 URL을 사용하는 것이 좋습니다.  - `type[string]`: NGSI 엔티티 유형. HeatingZone이어야 합니다.  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 필수 속성  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -32,10 +40,113 @@
 HeatingZone:    
   description: 'Smart Data Models Program adaptation of the original IoTData data Models. This Resource provides information about the status of a (single) heating zone of a Cook-Top. It describes the case of a Cook-Top whose zones can be activated dynamically (i.e. the device implements pot recognition). The Property ''maxheatinglevel'' defines the max level for the heating zone The Property ''heatinglevel'' is the current heating level of the zone   For each element, the value range is from 0 (indication that the zone is not heating) to ''maxheatinglevel''.'    
   properties:    
+    address:    
+      description: The mailing address    
+      properties:    
+        addressCountry:    
+          description: 'The country. For example, Spain'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
+        addressLocality:    
+          description: 'The locality in which the street address is, and which is in the region'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
+        addressRegion:    
+          description: 'The region in which the locality is, and which is in the country'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        postOfficeBoxNumber:    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
+        postalCode:    
+          description: 'The postal code. For example, 24004'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
+        streetAddress:    
+          description: The street address    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      type: object    
+      x-ngsi:    
+        model: https://schema.org/address    
+        type: Property    
+    alternateName:    
+      description: An alternative name for this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    areaServed:    
+      description: The geographic area where a service or offered item is provided    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    dataProvider:    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateCreated:    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateModified:    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    description:    
+      description: A description of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
     heatinglevel:    
       description: The current heating level for the zone.    
       readOnly: true    
-      type: integer    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    id:    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     if:    
@@ -51,10 +162,175 @@ HeatingZone:
       uniqueItems: true    
       x-ngsi:    
         type: Property    
+    location:    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+      oneOf:    
+        - description: Geojson reference to the item. Point    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                type: number    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - Point    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Point    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - LineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON LineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 4    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - Polygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Polygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPoint    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPoint    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiLineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiLineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    items:    
+                      type: number    
+                    minItems: 2    
+                    type: array    
+                  minItems: 4    
+                  type: array    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPolygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPolygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+      x-ngsi:    
+        type: GeoProperty    
     maxheatinglevel:    
       description: The maximum heating level for the zone.    
       readOnly: true    
-      type: integer    
+      type: number    
       x-ngsi:    
         type: Property    
     n:    
@@ -62,6 +338,33 @@ HeatingZone:
       maxLength: 64    
       readOnly: true    
       type: string    
+      x-ngsi:    
+        type: Property    
+    name:    
+      description: The name of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    owner:    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
+      items:    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
+      type: array    
       x-ngsi:    
         type: Property    
     rt:    
@@ -75,6 +378,23 @@ HeatingZone:
       readOnly: true    
       type: array    
       uniqueItems: true    
+      x-ngsi:    
+        type: Property    
+    seeAlso:    
+      description: list of uri pointing to additional resources about the item    
+      oneOf:    
+        - items:    
+            format: uri    
+            type: string    
+          minItems: 1    
+          type: array    
+        - format: uri    
+          type: string    
+      x-ngsi:    
+        type: Property    
+    source:    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
+      type: string    
       x-ngsi:    
         type: Property    
     type:    
@@ -106,38 +426,50 @@ HeatingZone:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:HeatingZone:id:THMX:89392478",  
-  "dateCreated": "1975-06-12T13:28:15Z",  
-  "dateModified": "2020-12-18T11:29:37Z",  
-  "source": "Administration treat month also movie oil. I unit nothing green dinner ask. Foot name can.",  
-  "name": "Ever hospital bring PM south family foreign necessary. Form story over step everybody watch important.",  
-  "alternateName": "Station level action others young energy town. Happy only cover anything sing sit.",  
-  "description": "Partner Mr receive view especially read player. Ready consider save listen.",  
-  "dataProvider": "Once audience summer themselves. Not avoid natural radio many blood relationship. Keep drug agent tonight.",  
-  "owner": [  
-    "urn:ngsi-ld:HeatingZone:items:TFYW:95365282",  
-    "urn:ngsi-ld:HeatingZone:items:XVWO:21267042"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:HeatingZone:items:BKFP:50989634",  
-    "urn:ngsi-ld:HeatingZone:items:GWYJ:65777501"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -22.0545635,  
-      124.132065  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Heart build road end age people third man. Sister nice range election actually.",  
-    "addressLocality": "Establish trouble realize us. Learn everything appear most.",  
-    "addressRegion": "Control evidence must cover age. Begin think agreement house.",  
-    "addressCountry": "Product third back everybody onto science. Three south people stop world model test. Develop final certainly black.",  
-    "postalCode": "Exist into kid night power walk. End with student.",  
-    "postOfficeBoxNumber": "Player today magazine bag check. Trouble today civil."  
-  },  
-  "areaServed": "Owner market range executive point."  
+    "id": "urn:ngsi-ld:HeatingZone:id:WYRW:78551335",  
+    "dateCreated": "1994-05-25T00:16:38Z",  
+    "dateModified": "1973-08-12T04:18:53Z",  
+    "source": "Compar",  
+    "name": "Receive material fear avoid culture staff cut thousand.",  
+    "alternateName": "Education week risk spring let.",  
+    "description": "Great discuss administration money care. Business factor team begin.",  
+    "dataProvider": "Too yeah through born since contain pressure. Good season perform bal",  
+    "owner": [  
+        "urn:ngsi-ld:HeatingZone:items:BPLI:90016877",  
+        "urn:ngsi-ld:HeatingZone:items:KNJW:15261328"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:HeatingZone:items:ZCSB:30140728"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            73.9101395,  
+            56.752641  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Story although test pressure recently daughter. Very hear audience occur senior live environmen",  
+        "addressLocality": "Tree a example bring just old. Attention dog outside part. Although this animal space.",  
+        "addressRegion": "Mind traditional certainly name present yourself. Oil another operation unit board bring sometimes.",  
+        "addressCountry": "Fall choose act statement grow ten exist. Relate relationship south say four bed. Service at Congress cell card.",  
+        "postalCode": "Happen case pattern call six camera. Smile place wind page newspaper theory board. Moment less compare suggest p",  
+        "postOfficeBoxNumber": "Case political usually down president owner contain. C",  
+        "streetNr": "You head start. Understand mind best follow. East public return believe policy un",  
+        "district": "Throw law avoid pull why suffer century. Former certainly black."  
+    },  
+    "areaServed": "Idea direction development exactly contain a",  
+    "rt": [  
+        "oic.r.heatingzone"  
+    ],  
+    "heatinglevel": 864,  
+    "maxheatinglevel": 864,  
+    "n": "American whole magazine truth stop whose. On traditi",  
+    "if": [  
+        "oic.if.s",  
+        "oic.if.baseline"  
+    ],  
+    "type": "HeatingZone"  
 }  
 ```  
 </details>  
@@ -146,79 +478,101 @@ HeatingZone:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:HeatingZone:id:THMX:89392478"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1975-06-12T13:28:15Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2020-12-18T11:29:37Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Administration treat month also movie oil. I unit nothing green dinner ask. Foot name can."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Ever hospital bring PM south family foreign necessary. Form story over step everybody watch important."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Station level action others young energy town. Happy only cover anything sing sit."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Partner Mr receive view especially read player. Ready consider save listen."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Once audience summer themselves. Not avoid natural radio many blood relationship. Keep drug agent tonight."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:HeatingZone:items:TFYW:95365282",  
-      "urn:ngsi-ld:HeatingZone:items:XVWO:21267042"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:HeatingZone:items:BKFP:50989634",  
-      "urn:ngsi-ld:HeatingZone:items:GWYJ:65777501"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -22.0545635,  
-        124.132065  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Heart build road end age people third man. Sister nice range election actually.",  
-      "addressLocality": "Establish trouble realize us. Learn everything appear most.",  
-      "addressRegion": "Control evidence must cover age. Begin think agreement house.",  
-      "addressCountry": "Product third back everybody onto science. Three south people stop world model test. Develop final certainly black.",  
-      "postalCode": "Exist into kid night power walk. End with student.",  
-      "postOfficeBoxNumber": "Player today magazine bag check. Trouble today civil."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Owner market range executive point."  
-  }  
+    "id": "urn:ngsi-ld:HeatingZone:id:WYRW:78551335",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1994-05-25T00:16:38Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "1973-08-12T04:18:53Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Compar"  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Receive material fear avoid culture staff cut thousand."  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Education week risk spring let."  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Great discuss administration money care. Business factor team begin."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Too yeah through born since contain pressure. Good season perform bal"  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:HeatingZone:items:BPLI:90016877",  
+            "urn:ngsi-ld:HeatingZone:items:KNJW:15261328"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:HeatingZone:items:ZCSB:30140728"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                73.9101395,  
+                56.752641  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Story although test pressure recently daughter. Very hear audience occur senior live environmen",  
+            "addressLocality": "Tree a example bring just old. Attention dog outside part. Although this animal space.",  
+            "addressRegion": "Mind traditional certainly name present yourself. Oil another operation unit board bring sometimes.",  
+            "addressCountry": "Fall choose act statement grow ten exist. Relate relationship south say four bed. Service at Congress cell card.",  
+            "postalCode": "Happen case pattern call six camera. Smile place wind page newspaper theory board. Moment less compare suggest p",  
+            "postOfficeBoxNumber": "Case political usually down president owner contain. C",  
+            "streetNr": "You head start. Understand mind best follow. East public return believe policy un",  
+            "district": "Throw law avoid pull why suffer century. Former certainly black."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Idea direction development exactly contain a"  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.heatingzone"  
+        ]  
+    },  
+    "heatinglevel": {  
+        "type": "Number",  
+        "value": 864  
+    },  
+    "maxheatinglevel": {  
+        "type": "Number",  
+        "value": 864  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "American whole magazine truth stop whose. On traditi"  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.s",  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "HeatingZone"  
 }  
 ```  
 </details>  
@@ -227,41 +581,52 @@ HeatingZone:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:HeatingZone:id:THMX:89392478",  
-    "dateCreated": "1975-06-12T13:28:15Z",  
-    "dateModified": "2020-12-18T11:29:37Z",  
-    "source": "Administration treat month also movie oil. I unit nothing green dinner ask. Foot name can.",  
-    "name": "Ever hospital bring PM south family foreign necessary. Form story over step everybody watch important.",  
-    "alternateName": "Station level action others young energy town. Happy only cover anything sing sit.",  
-    "description": "Partner Mr receive view especially read player. Ready consider save listen.",  
-    "dataProvider": "Once audience summer themselves. Not avoid natural radio many blood relationship. Keep drug agent tonight.",  
+    "id": "urn:ngsi-ld:HeatingZone:id:WYRW:78551335",  
+    "dateCreated": "1994-05-25T00:16:38Z",  
+    "dateModified": "1973-08-12T04:18:53Z",  
+    "source": "Compar",  
+    "name": "Receive material fear avoid culture staff cut thousand.",  
+    "alternateName": "Education week risk spring let.",  
+    "description": "Great discuss administration money care. Business factor team begin.",  
+    "dataProvider": "Too yeah through born since contain pressure. Good season perform bal",  
     "owner": [  
-        "urn:ngsi-ld:HeatingZone:items:TFYW:95365282",  
-        "urn:ngsi-ld:HeatingZone:items:XVWO:21267042"  
+        "urn:ngsi-ld:HeatingZone:items:BPLI:90016877",  
+        "urn:ngsi-ld:HeatingZone:items:KNJW:15261328"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:HeatingZone:items:BKFP:50989634",  
-        "urn:ngsi-ld:HeatingZone:items:GWYJ:65777501"  
+        "urn:ngsi-ld:HeatingZone:items:ZCSB:30140728"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            -22.0545635,  
-            124.132065  
+            73.9101395,  
+            56.752641  
         ]  
     },  
     "address": {  
-        "streetAddress": "Heart build road end age people third man. Sister nice range election actually.",  
-        "addressLocality": "Establish trouble realize us. Learn everything appear most.",  
-        "addressRegion": "Control evidence must cover age. Begin think agreement house.",  
-        "addressCountry": "Product third back everybody onto science. Three south people stop world model test. Develop final certainly black.",  
-        "postalCode": "Exist into kid night power walk. End with student.",  
-        "postOfficeBoxNumber": "Player today magazine bag check. Trouble today civil."  
+        "streetAddress": "Story although test pressure recently daughter. Very hear audience occur senior live environmen",  
+        "addressLocality": "Tree a example bring just old. Attention dog outside part. Although this animal space.",  
+        "addressRegion": "Mind traditional certainly name present yourself. Oil another operation unit board bring sometimes.",  
+        "addressCountry": "Fall choose act statement grow ten exist. Relate relationship south say four bed. Service at Congress cell card.",  
+        "postalCode": "Happen case pattern call six camera. Smile place wind page newspaper theory board. Moment less compare suggest p",  
+        "postOfficeBoxNumber": "Case political usually down president owner contain. C",  
+        "streetNr": "You head start. Understand mind best follow. East public return believe policy un",  
+        "district": "Throw law avoid pull why suffer century. Former certainly black."  
     },  
-    "areaServed": "Owner market range executive point.",  
+    "areaServed": "Idea direction development exactly contain a",  
+    "rt": [  
+        "oic.r.heatingzone"  
+    ],  
+    "heatinglevel": 864,  
+    "maxheatinglevel": 864,  
+    "n": "American whole magazine truth stop whose. On traditi",  
+    "if": [  
+        "oic.if.s",  
+        "oic.if.baseline"  
+    ],  
+    "type": "HeatingZone",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -271,82 +636,109 @@ HeatingZone:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:HeatingZone:id:RBNR:18879286",  
+    "id": "urn:ngsi-ld:HeatingZone:id:WYRW:78551335",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1986-11-22T05:39:29Z"  
+            "@value": "1994-05-25T00:16:38Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1999-08-09T02:32:27Z"  
+            "@value": "1973-08-12T04:18:53Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Throw range clear base. Certain discover middle old along law. Whose sea pressure."  
+        "value": "Compar"  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Leg stop defense. Meeting coach success single administration."  
+        "value": "Receive material fear avoid culture staff cut thousand."  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Already girl visit national total. Whatever expert mouth plan yard."  
+        "value": "Education week risk spring let."  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Too exactly Mrs letter camera thing ability. Article under culture company perform high."  
+        "value": "Great discuss administration money care. Business factor team begin."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Eight ever who look. Point establish however stop."  
+        "value": "Too yeah through born since contain pressure. Good season perform bal"  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:HeatingZone:items:SJDN:43138533",  
-            "urn:ngsi-ld:HeatingZone:items:SHII:92547783"  
+            "urn:ngsi-ld:HeatingZone:items:BPLI:90016877",  
+            "urn:ngsi-ld:HeatingZone:items:KNJW:15261328"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:HeatingZone:items:BOFC:36575947"  
+            "urn:ngsi-ld:HeatingZone:items:ZCSB:30140728"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                -13.2668295,  
-                -167.674428  
+                73.9101395,  
+                56.752641  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Business toward style really least several affect. Would school plan can company his. Court memory one central remain south.",  
-            "addressLocality": "Race class police use certainly lay seat. Issue upon determine possible everybody agree catch the. Then ground performance exactly. Kind place court later PM.",  
-            "addressRegion": "According practice west media political senior. Stuff leader lead make challenge. Picture level check look. Machine throughout image tonight.",  
-            "addressCountry": "Until kid city law least knowledge. Respond especially true adult well. Affect all nothing.",  
-            "postalCode": "Art black reality herself. Although friend relate floor western in expect. Establish staff become method imagine center.",  
-            "postOfficeBoxNumber": "Old employee sometimes example recent. Card space while fact meet consider."  
+            "streetAddress": "Story although test pressure recently daughter. Very hear audience occur senior live environmen",  
+            "addressLocality": "Tree a example bring just old. Attention dog outside part. Although this animal space.",  
+            "addressRegion": "Mind traditional certainly name present yourself. Oil another operation unit board bring sometimes.",  
+            "addressCountry": "Fall choose act statement grow ten exist. Relate relationship south say four bed. Service at Congress cell card.",  
+            "postalCode": "Happen case pattern call six camera. Smile place wind page newspaper theory board. Moment less compare suggest p",  
+            "postOfficeBoxNumber": "Case political usually down president owner contain. C",  
+            "streetNr": "You head start. Understand mind best follow. East public return believe policy un",  
+            "district": "Throw law avoid pull why suffer century. Former certainly black."  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Authority amount in middle. Physical own save skin store political stock man. Bank six similar issue."  
+        "value": "Idea direction development exactly contain a"  
     },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.heatingzone"  
+        ]  
+    },  
+    "heatinglevel": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "maxheatinglevel": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "American whole magazine truth stop whose. On traditi"  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.s",  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "HeatingZone",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -354,7 +746,7 @@ HeatingZone:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-[FAQ 10](https://smartdatamodels.org/index.php/faqs/)을 참조하여 규모 단위를 다루는 방법에 대한 답변을 확인하세요.  
+10](https://smartdatamodels.org/index.php/faqs/)를 참조하여 규모 단위를 다루는 방법에 대한 답변을 확인하세요.  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
