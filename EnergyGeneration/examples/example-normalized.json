@@ -1,75 +1,93 @@
 {
-  "id": {
-    "type": "string",
-    "value": "urn:ngsi-ld:EnergyGeneration:id:NIZJ:28989247"
-  },
-  "dateCreated": {
-    "format": "date-time",
-    "type": "string",
-    "value": "1977-04-16T03:33:04Z"
-  },
-  "dateModified": {
-    "format": "date-time",
-    "type": "string",
-    "value": "1982-01-04T18:23:31Z"
-  },
-  "source": {
-    "type": "string",
-    "value": "Accept way PM country address amount inside."
-  },
-  "name": {
-    "type": "string",
-    "value": "Keep ever beyond grow tax note. Draw similar service alone imagine property kid."
-  },
-  "alternateName": {
-    "type": "string",
-    "value": "Language its everyone use."
-  },
-  "description": {
-    "type": "string",
-    "value": "Party family form agree eat often production. Perform yeah research store challenge manager already well. Manager very owner sort be popular."
-  },
-  "dataProvider": {
-    "type": "string",
-    "value": "Also environmental think interesting decision least argue. Seem another garden responsibility. Fear four bad ok family."
-  },
-  "owner": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:EnergyGeneration:items:JTPC:21932573",
-      "urn:ngsi-ld:EnergyGeneration:items:WPJQ:33657693"
-    ]
-  },
-  "seeAlso": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:EnergyGeneration:items:MOYD:73023861",
-      "urn:ngsi-ld:EnergyGeneration:items:OKBV:17090919"
-    ]
-  },
-  "location": {
-    "type": "object",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        -89.750316,
-        124.245173
-      ]
-    }
-  },
-  "address": {
-    "type": "object",
-    "value": {
-      "streetAddress": "Adult to radio management hard while writer story. Institution beat international say.",
-      "addressLocality": "Actually become shoulder market head majority standard. Language board field table claim toward find.",
-      "addressRegion": "Gas wish enjoy reach decide measure price. Than note group forget charge fish force. Whom reason middle.",
-      "addressCountry": "Language not plan force stage last foreign. Great state general manager himself ability have.",
-      "postalCode": "Evidence represent later behavior color defense. Expect them few lead college.",
-      "postOfficeBoxNumber": "Water sense maybe manager. First box quite these term. Suggest public apply line."
-    }
-  },
-  "areaServed": {
-    "type": "string",
-    "value": "Recent control program himself. Tv later up music green he campaign. Report thank choose central executive."
-  }
+    "id": "urn:ngsi-ld:EnergyGeneration:id:YRBR:93782527",
+    "dateCreated": {
+        "type": "DateTime",
+        "value": "1975-08-11T11:22:54Z"
+    },
+    "dateModified": {
+        "type": "DateTime",
+        "value": "2005-03-24T18:35:19Z"
+    },
+    "source": {
+        "type": "Text",
+        "value": "Spend bag into. Now from her gun subject PM. First age safe affect."
+    },
+    "name": {
+        "type": "Text",
+        "value": "Analysis population recognize someone treatment. Should represent group strong back approach"
+    },
+    "alternateName": {
+        "type": "Text",
+        "value": "Pattern president add lead network the. Live teach movie I situation understand agree."
+    },
+    "description": {
+        "type": "Text",
+        "value": "Student bag grow better. Child might source. A front war."
+    },
+    "dataProvider": {
+        "type": "Text",
+        "value": "Company TV policy drug. Foreign agency when personal huge difficult player forget."
+    },
+    "owner": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:EnergyGeneration:items:EMSY:35326759",
+            "urn:ngsi-ld:EnergyGeneration:items:AKQA:02906220"
+        ]
+    },
+    "seeAlso": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:EnergyGeneration:items:ZANN:00199226"
+        ]
+    },
+    "location": {
+        "type": "geo:json",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                62.4831025,
+                -1.263129
+            ]
+        }
+    },
+    "address": {
+        "type": "StructuredValue",
+        "value": {
+            "streetAddress": "Hair describe hundred candidate. Probably whom it job likely different house.",
+            "addressLocality": "Turn attorney education every money my. Particularly listen down American focus something who blood. Certain hotel should.",
+            "addressRegion": "Under require page claim future in. Truth ten seven both happy central group line. Send cultural whatever computer on fast play.",
+            "addressCountry": "Issue radio especially road get car party. All office less politics.",
+            "postalCode": "Nation network college debate direction moment. Ground think save respond friend budget while.",
+            "postOfficeBoxNumber": "Tonight garden maybe forward reason. Worker season figure they yeah get. Memory who yet spend raise child above.",
+            "streetNr": "Blood sin",
+            "district": "Important produce just raise enough onto try. Those north trouble up"
+        }
+    },
+    "areaServed": {
+        "type": "Text",
+        "value": "If do them altho"
+    },
+    "rt": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.r.energy.generation"
+        ]
+    },
+    "energygenerated": {
+        "type": "Number",
+        "value": 299.3
+    },
+    "n": {
+        "type": "Text",
+        "value": "Cold profess"
+    },
+    "if": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.if.baseline",
+            "oic.if.s"
+        ]
+    },
+    "type": "EnergyGeneration"
 }
