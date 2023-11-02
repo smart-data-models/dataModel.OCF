@@ -1,76 +1,78 @@
 {
-    "id": "urn:ngsi-ld:Illuminance:id:MNLY:30937921",
+    "id": "urn:ngsi-ld:Illuminance:id:SIWE:31441837",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1975-05-11T13:09:10Z"
+            "@value": "1997-03-30T08:35:43Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2003-12-02T03:26:21Z"
+            "@value": "1978-11-29T12:38:41Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "After thing maybe watch spring show we. Several south address building she. Protect force hair machine. Season government goal wait air section."
+        "value": "Price total activity perform item re"
     },
     "name": {
         "type": "Property",
-        "value": "Method institution hand first up. Media care sea."
+        "value": "Prove as morning person. Believe close fall bag interest. Pm something opportunity million political."
     },
     "alternateName": {
         "type": "Property",
-        "value": "Image man after large."
+        "value": "Buy woman church. News chair product whom which. Form minute society prevent. Only lose store science citizen dream modern."
     },
     "description": {
         "type": "Property",
-        "value": "Really although sign paper season store. Fear exactly collection."
+        "value": "Expert past lead find few save inside."
     },
     "dataProvider": {
         "type": "Property",
-        "value": "Start plan effort soon smile probably."
+        "value": "Cultural exactly eye result. Test defense them audience. Reveal event find team."
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:Illuminance:items:SVMJ:39738594",
-            "urn:ngsi-ld:Illuminance:items:IPBX:16843864"
+            "urn:ngsi-ld:Illuminance:items:VTNJ:81104321",
+            "urn:ngsi-ld:Illuminance:items:ENYO:05623287"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:Illuminance:items:PBYJ:13845109"
+            "urn:ngsi-ld:Illuminance:items:JPEY:65902555"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                -72.2442105,
-                103.919595
+                20.7452555,
+                92.717322
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "Figure shoulder activity south test. Doctor herself detail. Power teach itself ability risk consider.",
-            "addressLocality": "Report feeling player picture. Program air sometimes crime son management. Home choose cup drive standard.",
-            "addressRegion": "Admit art half adult image memory.",
-            "addressCountry": "Nature support else week power present own floor.",
-            "postalCode": "Right open effect sense question end. Training laugh speak behind focus in win analysis.",
-            "postOfficeBoxNumber": "To under car if newspaper player prove article."
+            "streetAddress": "Market office future secon",
+            "addressLocality": "Stage watch win. Serve customer social foreign yeah lead.",
+            "addressRegion": "Discover city heavy receive medical price face. Recognize human once place together ability.",
+            "addressCountry": "Soldier century recently learn. Huge worry college so. Sort who instead audience scientist push party model.",
+            "postalCode": "Relationship government majority meeting. Popular fight voice movement par",
+            "postOfficeBoxNumber": "Question bill exist stock. Important shake sell theory. Them line contain success less practice car.",
+            "streetNr": "Site serve indicate busin",
+            "district": "Letter cultural north medical. Ever several structure. Either move gas live lose agreement test."
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "Film consumer why indeed heavy. Perform production report. North seven risk company ever firm."
+        "value": "Travel accept receive draw dark. Both them account. Open national large whatever executive simple challenge."
     },
     "rt": {
         "type": "Property",
@@ -80,29 +82,28 @@
     },
     "illuminance": {
         "type": "Property",
-        "value": 338.8
+        "value": 840.3
     },
     "n": {
         "type": "Property",
-        "value": "Off woman hour your also. Lead hold race space. Rich available hold base project page."
+        "value": "Her prove adult arm care together make list. "
     },
     "range": {
         "type": "Property",
         "value": [
-            194.8,
-            76.4
+            110.0,
+            567.3
         ]
     },
     "if": {
         "type": "Property",
         "value": [
             "oic.if.baseline",
-            "oic.if.baseline"
+            "oic.if.s"
         ]
     },
     "type": "Illuminance",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
