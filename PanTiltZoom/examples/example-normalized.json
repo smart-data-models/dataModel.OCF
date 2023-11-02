@@ -1,75 +1,123 @@
 {
-  "id": {
-    "type": "string",
-    "value": "urn:ngsi-ld:PanTiltZoom:id:UHWT:54067498"
-  },
-  "dateCreated": {
-    "format": "date-time",
-    "type": "string",
-    "value": "1973-12-23T12:38:20Z"
-  },
-  "dateModified": {
-    "format": "date-time",
-    "type": "string",
-    "value": "1978-03-27T01:53:55Z"
-  },
-  "source": {
-    "type": "string",
-    "value": "Resource however management now much. While free environmental himself culture whose. History job series movement."
-  },
-  "name": {
-    "type": "string",
-    "value": "Though lead take method door. Forget law those fly."
-  },
-  "alternateName": {
-    "type": "string",
-    "value": "Skin financial dog yet success."
-  },
-  "description": {
-    "type": "string",
-    "value": "Rich speak camera without history. Wait growth low want appear feel spend."
-  },
-  "dataProvider": {
-    "type": "string",
-    "value": "Cut not while reveal. Laugh whole field boy figure total."
-  },
-  "owner": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:PanTiltZoom:items:CGQE:63039182",
-      "urn:ngsi-ld:PanTiltZoom:items:AECL:70645964"
-    ]
-  },
-  "seeAlso": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:PanTiltZoom:items:QUDB:02426174",
-      "urn:ngsi-ld:PanTiltZoom:items:LWVB:28240919"
-    ]
-  },
-  "location": {
-    "type": "object",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        39.0863645,
-        100.59068
-      ]
-    }
-  },
-  "address": {
-    "type": "object",
-    "value": {
-      "streetAddress": "Develop box sense nearly for speech. Street stock possible. Identify increase trial try reveal there model end.",
-      "addressLocality": "Whose environmental continue result early note. Find agent wrong seek line later weight. Room act think last whom minute again.",
-      "addressRegion": "Interview piece idea employee trade old use.",
-      "addressCountry": "Indicate sing again leg art professional practice support. Return increase administration challenge toward art computer there. Speak activity still fall agreement look significant.",
-      "postalCode": "Treat thousand article government compare necessary trouble site. Million fight two.",
-      "postOfficeBoxNumber": "Yard outside deal receive. On attorney teach federal high standard."
-    }
-  },
-  "areaServed": {
-    "type": "string",
-    "value": "Man lay sometimes begin compare get course. Front there music."
-  }
+    "id": "urn:ngsi-ld:PanTiltZoom:id:YTUX:86779168",
+    "dateCreated": {
+        "type": "DateTime",
+        "value": "1983-03-06T11:53:43Z"
+    },
+    "dateModified": {
+        "type": "DateTime",
+        "value": "1984-07-04T17:53:03Z"
+    },
+    "source": {
+        "type": "Text",
+        "value": "Enough data gun glass structure. Identify key for fly fine set."
+    },
+    "name": {
+        "type": "Text",
+        "value": "Most"
+    },
+    "alternateName": {
+        "type": "Text",
+        "value": "Special myself assume research. Risk skin letter three customer hair arm big."
+    },
+    "description": {
+        "type": "Text",
+        "value": "Around our check employee citizen moment energy cover. Relate southern data environmental reason them good. Organization "
+    },
+    "dataProvider": {
+        "type": "Text",
+        "value": "Decide particularly people method machine write consider. Modern example foot poor rich."
+    },
+    "owner": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:PanTiltZoom:items:LADC:82474202",
+            "urn:ngsi-ld:PanTiltZoom:items:XSAL:35307419"
+        ]
+    },
+    "seeAlso": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:PanTiltZoom:items:BPQX:76791780"
+        ]
+    },
+    "location": {
+        "type": "geo:json",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -0.9096775,
+                24.468291
+            ]
+        }
+    },
+    "address": {
+        "type": "StructuredValue",
+        "value": {
+            "streetAddress": "Surface position upon interview where. Officer field until condition officer well manager would. Better clearly look ",
+            "addressLocality": "Make bed traditional sort. Less either less ready watch. Western should professor under.",
+            "addressRegion": "Treatment main light rich. Recently pass team movie short meet. Suffer return defense sing four rate trouble.",
+            "addressCountry": "Size finish race property win past a. Benefit make light watch his move many.",
+            "postalCode": "Country administration feeling. Interesting better author entire financial.",
+            "postOfficeBoxNumber": "Worry report force account activity sell hit movement.",
+            "streetNr": "We could a feel. Bef",
+            "district": "Prove improve world cup maintain security return. Medical meeting issue. Indicate style any early."
+        }
+    },
+    "areaServed": {
+        "type": "Text",
+        "value": "Would not international. Together tonight reduce take scene. Water medical own among."
+    },
+    "rt": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.r.ptz"
+        ]
+    },
+    "tilt_range": {
+        "type": "StructuredValue",
+        "value": [
+            972.1,
+            351.2
+        ]
+    },
+    "zoomFactor": {
+        "type": "Text",
+        "value": "Best onto college type pick."
+    },
+    "tilt": {
+        "type": "Number",
+        "value": 122.5
+    },
+    "precision": {
+        "type": "Number",
+        "value": 565.5
+    },
+    "pan_range": {
+        "type": "StructuredValue",
+        "value": [
+            208.0,
+            628.7
+        ]
+    },
+    "zoomFactorRange": {
+        "type": "Text",
+        "value": "32x"
+    },
+    "pan": {
+        "type": "Number",
+        "value": 612.2
+    },
+    "n": {
+        "type": "Text",
+        "value": "Defense region protect between head reduce science any. Nea"
+    },
+    "if": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.if.a",
+            "oic.if.baseline"
+        ]
+    },
+    "type": "PanTiltZoom"
 }
