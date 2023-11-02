@@ -15,7 +15,15 @@
 ## Elenco delle proprietà  
 
 <sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
-- `brightness[integer]`: Rappresentazione quantizzata nell'intervallo 0-100 del valore attuale rilevato o impostato per la luminosità.  - `if[array]`: Il set di interfacce OCF supportato da questa risorsa.  - `n[string]`: Nome amichevole della risorsa  - `rt[array]`: Il tipo di risorsa.  - `type[string]`: Tipo di entità NGSI. Deve essere Luminosità  <!-- /30-PropertiesList -->  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Il paese. Ad esempio, la Spagna  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: La località in cui si trova l'indirizzo civico e che si trova nella regione  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: La regione in cui si trova la località, e che si trova nel paese  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Un distretto è un tipo di divisione amministrativa che, in alcuni paesi, è gestita dal governo locale.    
+	- `postOfficeBoxNumber[string]`: Il numero di casella postale per gli indirizzi di casella postale. Ad esempio, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Il codice postale. Ad esempio, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: L'indirizzo stradale  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Numero che identifica una proprietà specifica su una strada pubblica    
+- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `brightness[number]`: Rappresentazione quantizzata nell'intervallo 0-100 del valore attuale rilevato o impostato per la luminosità.  - `dataProvider[string]`: una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata  - `dateCreated[date-time]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `if[array]`: Il set di interfacce OCF supportato da questa risorsa.  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `n[string]`: Nome amichevole della risorsa  - `name[string]`: Il nome di questo elemento  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `rt[array]`: Il tipo di risorsa.  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `type[string]`: Tipo di entità NGSI. Deve essere Luminosità  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Proprietà richieste  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -32,11 +40,114 @@
 Brightness:    
   description: Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the brightness of a light or lamp. The Property 'brightness' is an integer showing the current brightness level as a quantized representation in the range 0-100. A brightness of 0 is the minimum for the resource. A brightness of 100 is the maximum for the resource.    
   properties:    
+    address:    
+      description: The mailing address    
+      properties:    
+        addressCountry:    
+          description: 'The country. For example, Spain'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
+        addressLocality:    
+          description: 'The locality in which the street address is, and which is in the region'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
+        addressRegion:    
+          description: 'The region in which the locality is, and which is in the country'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        postOfficeBoxNumber:    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
+        postalCode:    
+          description: 'The postal code. For example, 24004'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
+        streetAddress:    
+          description: The street address    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      type: object    
+      x-ngsi:    
+        model: https://schema.org/address    
+        type: Property    
+    alternateName:    
+      description: An alternative name for this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    areaServed:    
+      description: The geographic area where a service or offered item is provided    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
     brightness:    
       description: The Quantized representation in the range 0-100 of the current sensed or set value for Brightness.    
       maximum: 100    
       minimum: 0    
-      type: integer    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    dataProvider:    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateCreated:    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateModified:    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    description:    
+      description: A description of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    id:    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     if:    
@@ -52,11 +163,203 @@ Brightness:
       uniqueItems: true    
       x-ngsi:    
         type: Property    
+    location:    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+      oneOf:    
+        - description: Geojson reference to the item. Point    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                type: number    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - Point    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Point    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - LineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON LineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 4    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - Polygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Polygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPoint    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPoint    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiLineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiLineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    items:    
+                      type: number    
+                    minItems: 2    
+                    type: array    
+                  minItems: 4    
+                  type: array    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPolygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPolygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+      x-ngsi:    
+        type: GeoProperty    
     n:    
       description: Friendly name of the Resource    
       maxLength: 64    
       readOnly: true    
       type: string    
+      x-ngsi:    
+        type: Property    
+    name:    
+      description: The name of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    owner:    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
+      items:    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
+      type: array    
       x-ngsi:    
         type: Property    
     rt:    
@@ -70,6 +373,23 @@ Brightness:
       readOnly: true    
       type: array    
       uniqueItems: true    
+      x-ngsi:    
+        type: Property    
+    seeAlso:    
+      description: list of uri pointing to additional resources about the item    
+      oneOf:    
+        - items:    
+            format: uri    
+            type: string    
+          minItems: 1    
+          type: array    
+        - format: uri    
+          type: string    
+      x-ngsi:    
+        type: Property    
+    source:    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
+      type: string    
       x-ngsi:    
         type: Property    
     type:    
@@ -101,119 +421,148 @@ Brightness:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Brightness:id:WQCM:27115895",  
-  "dateCreated": "2016-08-17T21:11:58Z",  
-  "dateModified": "1980-09-17T16:44:12Z",  
-  "source": "Town career six agreement half financial born. Learn everyone level most. Radio force build I leave environment system.",  
-  "name": "Until case family. Research day practice go from car.",  
-  "alternateName": "Ball law read very paper traditional.",  
-  "description": "But stand once miss. Easy mention it. Yeah center past movement.",  
-  "dataProvider": "Low enjoy listen five rock poor. Machine it us determine any.",  
-  "owner": [  
-    "urn:ngsi-ld:Brightness:items:FXDV:13819924",  
-    "urn:ngsi-ld:Brightness:items:ABGQ:72000460"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Brightness:items:PMDS:79707077",  
-    "urn:ngsi-ld:Brightness:items:DHES:41648412"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -41.7502805,  
-      -102.953763  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Increase money loss begin billion. Town future less general make control become. Decision positive edge.",  
-    "addressLocality": "Go low box might marriage natural. Notice include group growth walk fund card. Again management stay skill factor action.",  
-    "addressRegion": "Skill sing maybe call deep. Report push almost drop.",  
-    "addressCountry": "Other film between one. Measure team way already behind. Sea quality adult news civil.",  
-    "postalCode": "Very when remember seven seem final system. Network notice accept probably board yourself tell. One operation assume use simply section available.",  
-    "postOfficeBoxNumber": "Soon image stop. Deal newspaper factor brother."  
-  },  
-  "areaServed": "Or parent civil miss seem season kitchen. Next order another manage a."  
+    "id": "urn:ngsi-ld:Brightness:id:RPOQ:78156593",  
+    "dateCreated": "1987-09-23T13:42:57Z",  
+    "dateModified": "1974-03-28T23:13:05Z",  
+    "source": "Behavior style report. Ability management test during foot that course nothing. Sound central myself before year.",  
+    "name": "Board necessary religious natural sport music white. Natural explain before something first drug contain start.",  
+    "alternateName": "Theory type successful together. Raise study modern miss dog Democrat quickly.",  
+    "description": "Every manage political record word group food break. Picture suddenly drug rule bring determine some forward. Beyond chair recently and.",  
+    "dataProvider": "Own ",  
+    "owner": [  
+        "urn:ngsi-ld:Brightness:items:UJLN:86914131",  
+        "urn:ngsi-ld:Brightness:items:GILX:20870916"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Brightness:items:QIDT:79230225"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            28.732768,  
+            177.344405  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Likely improve notice. True power home price check real leader.",  
+        "addressLocality": "School name care several loss particular. Opportunity throughout take car financial security.",  
+        "addressRegion": "Organization recognize civil. Pm her then nothing increase.",  
+        "addressCountry": "Industry product another knowledge else citizen month. Traditional page a although for study anyone. Could yourself plan base rise would.",  
+        "postalCode": "First degree response able state more. Couple part cup few. Beyond take however ball.",  
+        "postOfficeBoxNumber": "Son break either president stage population boy. Everything affect America",  
+        "streetNr": "Water voice travel among see red. Republican total policy hea",  
+        "district": "Full per among clearly. Face house nature fall long dream answer confere"  
+    },  
+    "areaServed": "Buy break marriage also friend reach. Turn phone heart window. Assume be seek article.",  
+    "rt": [  
+        "oic.r.light.brightness"  
+    ],  
+    "brightness": 49,  
+    "n": "Else memory if. Whose group through de",  
+    "if": [  
+        "oic.if.a",  
+        "oic.if.baseline"  
+    ],  
+    "type": "Brightness"  
 }  
 ```  
 </details>  
 #### Luminosità NGSI-v2 normalizzata Esempio  
-Ecco un esempio di Luminosità in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano le opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di luminosità in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano le opzioni e restituisce i dati di contesto di una singola entità.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:Brightness:id:WQCM:27115895"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2016-08-17T21:11:58Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1980-09-17T16:44:12Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Town career six agreement half financial born. Learn everyone level most. Radio force build I leave environment system."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Until case family. Research day practice go from car."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Ball law read very paper traditional."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "But stand once miss. Easy mention it. Yeah center past movement."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Low enjoy listen five rock poor. Machine it us determine any."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Brightness:items:FXDV:13819924",  
-      "urn:ngsi-ld:Brightness:items:ABGQ:72000460"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Brightness:items:PMDS:79707077",  
-      "urn:ngsi-ld:Brightness:items:DHES:41648412"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -41.7502805,  
-        -102.953763  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Increase money loss begin billion. Town future less general make control become. Decision positive edge.",  
-      "addressLocality": "Go low box might marriage natural. Notice include group growth walk fund card. Again management stay skill factor action.",  
-      "addressRegion": "Skill sing maybe call deep. Report push almost drop.",  
-      "addressCountry": "Other film between one. Measure team way already behind. Sea quality adult news civil.",  
-      "postalCode": "Very when remember seven seem final system. Network notice accept probably board yourself tell. One operation assume use simply section available.",  
-      "postOfficeBoxNumber": "Soon image stop. Deal newspaper factor brother."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Or parent civil miss seem season kitchen. Next order another manage a."  
-  }  
+    "id": "urn:ngsi-ld:Brightness:id:RPOQ:78156593",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1987-09-23T13:42:57Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "1974-03-28T23:13:05Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Behavior style report. Ability management test during foot that course nothing. Sound central myself before year."  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Board necessary religious natural sport music white. Natural explain before something first drug contain start."  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Theory type successful together. Raise study modern miss dog Democrat quickly."  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Every manage political record word group food break. Picture suddenly drug rule bring determine some forward. Beyond chair recently and."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Own "  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Brightness:items:UJLN:86914131",  
+            "urn:ngsi-ld:Brightness:items:GILX:20870916"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Brightness:items:QIDT:79230225"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                28.732768,  
+                177.344405  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Likely improve notice. True power home price check real leader.",  
+            "addressLocality": "School name care several loss particular. Opportunity throughout take car financial security.",  
+            "addressRegion": "Organization recognize civil. Pm her then nothing increase.",  
+            "addressCountry": "Industry product another knowledge else citizen month. Traditional page a although for study anyone. Could yourself plan base rise would.",  
+            "postalCode": "First degree response able state more. Couple part cup few. Beyond take however ball.",  
+            "postOfficeBoxNumber": "Son break either president stage population boy. Everything affect America",  
+            "streetNr": "Water voice travel among see red. Republican total policy hea",  
+            "district": "Full per among clearly. Face house nature fall long dream answer confere"  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Buy break marriage also friend reach. Turn phone heart window. Assume be seek article."  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.light.brightness"  
+        ]  
+    },  
+    "brightness": {  
+        "type": "Number",  
+        "value": 49  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Else memory if. Whose group through de"  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.a",  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "Brightness"  
 }  
 ```  
 </details>  
@@ -222,41 +571,51 @@ Brightness:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Brightness:id:WQCM:27115895",  
-    "dateCreated": "2016-08-17T21:11:58Z",  
-    "dateModified": "1980-09-17T16:44:12Z",  
-    "source": "Town career six agreement half financial born. Learn everyone level most. Radio force build I leave environment system.",  
-    "name": "Until case family. Research day practice go from car.",  
-    "alternateName": "Ball law read very paper traditional.",  
-    "description": "But stand once miss. Easy mention it. Yeah center past movement.",  
-    "dataProvider": "Low enjoy listen five rock poor. Machine it us determine any.",  
+    "id": "urn:ngsi-ld:Brightness:id:RPOQ:78156593",  
+    "dateCreated": "1987-09-23T13:42:57Z",  
+    "dateModified": "1974-03-28T23:13:05Z",  
+    "source": "Behavior style report. Ability management test during foot that course nothing. Sound central myself before year.",  
+    "name": "Board necessary religious natural sport music white. Natural explain before something first drug contain start.",  
+    "alternateName": "Theory type successful together. Raise study modern miss dog Democrat quickly.",  
+    "description": "Every manage political record word group food break. Picture suddenly drug rule bring determine some forward. Beyond chair recently and.",  
+    "dataProvider": "Own ",  
     "owner": [  
-        "urn:ngsi-ld:Brightness:items:FXDV:13819924",  
-        "urn:ngsi-ld:Brightness:items:ABGQ:72000460"  
+        "urn:ngsi-ld:Brightness:items:UJLN:86914131",  
+        "urn:ngsi-ld:Brightness:items:GILX:20870916"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:Brightness:items:PMDS:79707077",  
-        "urn:ngsi-ld:Brightness:items:DHES:41648412"  
+        "urn:ngsi-ld:Brightness:items:QIDT:79230225"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            -41.7502805,  
-            -102.953763  
+            28.732768,  
+            177.344405  
         ]  
     },  
     "address": {  
-        "streetAddress": "Increase money loss begin billion. Town future less general make control become. Decision positive edge.",  
-        "addressLocality": "Go low box might marriage natural. Notice include group growth walk fund card. Again management stay skill factor action.",  
-        "addressRegion": "Skill sing maybe call deep. Report push almost drop.",  
-        "addressCountry": "Other film between one. Measure team way already behind. Sea quality adult news civil.",  
-        "postalCode": "Very when remember seven seem final system. Network notice accept probably board yourself tell. One operation assume use simply section available.",  
-        "postOfficeBoxNumber": "Soon image stop. Deal newspaper factor brother."  
+        "streetAddress": "Likely improve notice. True power home price check real leader.",  
+        "addressLocality": "School name care several loss particular. Opportunity throughout take car financial security.",  
+        "addressRegion": "Organization recognize civil. Pm her then nothing increase.",  
+        "addressCountry": "Industry product another knowledge else citizen month. Traditional page a although for study anyone. Could yourself plan base rise would.",  
+        "postalCode": "First degree response able state more. Couple part cup few. Beyond take however ball.",  
+        "postOfficeBoxNumber": "Son break either president stage population boy. Everything affect America",  
+        "streetNr": "Water voice travel among see red. Republican total policy hea",  
+        "district": "Full per among clearly. Face house nature fall long dream answer confere"  
     },  
-    "areaServed": "Or parent civil miss seem season kitchen. Next order another manage a.",  
+    "areaServed": "Buy break marriage also friend reach. Turn phone heart window. Assume be seek article.",  
+    "rt": [  
+        "oic.r.light.brightness"  
+    ],  
+    "brightness": 49,  
+    "n": "Else memory if. Whose group through de",  
+    "if": [  
+        "oic.if.a",  
+        "oic.if.baseline"  
+    ],  
+    "type": "Brightness",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -266,82 +625,105 @@ Brightness:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Brightness:id:RSNQ:68207834",  
+    "id": "urn:ngsi-ld:Brightness:id:RPOQ:78156593",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2015-11-22T15:03:19Z"  
+            "@value": "1987-09-23T13:42:57Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1984-04-26T19:36:27Z"  
+            "@value": "1974-03-28T23:13:05Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Get more effort admit education far great. Note factor assume state civil attack. Hand all degree agency add."  
+        "value": "Behavior style report. Ability management test during foot that course nothing. Sound central myself before year."  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Decade size collection station tend blue. Exist fall major foot stay benefit north customer."  
+        "value": "Board necessary religious natural sport music white. Natural explain before something first drug contain start."  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Green establish board forward itself site. Fear this toward."  
+        "value": "Theory type successful together. Raise study modern miss dog Democrat quickly."  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Happen network history fight half law. Wear rate place improve best. Health effect concern happen whose loss. Information action leave bar heavy support city cut."  
+        "value": "Every manage political record word group food break. Picture suddenly drug rule bring determine some forward. Beyond chair recently and."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Sort hear walk close dark more get. Baby general candidate guy treat."  
+        "value": "Own "  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Brightness:items:KFXN:87184809",  
-            "urn:ngsi-ld:Brightness:items:FIHS:96874543"  
+            "urn:ngsi-ld:Brightness:items:UJLN:86914131",  
+            "urn:ngsi-ld:Brightness:items:GILX:20870916"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Brightness:items:RCAP:18990801"  
+            "urn:ngsi-ld:Brightness:items:QIDT:79230225"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                -36.083538,  
-                -0.107567  
+                28.732768,  
+                177.344405  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Wait myself upon huge coach decide allow decade. One without improve drive across security also imagine. Trade early challenge ok job blue.",  
-            "addressLocality": "Example hour already rise reduce again everybody degree. Onto range campaign research night. Share white single case get international.",  
-            "addressRegion": "Manager together personal all. Back trip receive bill.",  
-            "addressCountry": "Beautiful recent herself beyond game major into. Explain society dream day history record change speech. Those under direction.",  
-            "postalCode": "Husband support clearly once new only. Visit establish between identify attorney. Every week federal describe best building prove day.",  
-            "postOfficeBoxNumber": "Theory expert miss live. Sense information become detail."  
+            "streetAddress": "Likely improve notice. True power home price check real leader.",  
+            "addressLocality": "School name care several loss particular. Opportunity throughout take car financial security.",  
+            "addressRegion": "Organization recognize civil. Pm her then nothing increase.",  
+            "addressCountry": "Industry product another knowledge else citizen month. Traditional page a although for study anyone. Could yourself plan base rise would.",  
+            "postalCode": "First degree response able state more. Couple part cup few. Beyond take however ball.",  
+            "postOfficeBoxNumber": "Son break either president stage population boy. Everything affect America",  
+            "streetNr": "Water voice travel among see red. Republican total policy hea",  
+            "district": "Full per among clearly. Face house nature fall long dream answer confere"  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Budget fire country discover travel."  
+        "value": "Buy break marriage also friend reach. Turn phone heart window. Assume be seek article."  
     },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.light.brightness"  
+        ]  
+    },  
+    "brightness": {  
+        "type": "Property",  
+        "value": 49  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Else memory if. Whose group through de"  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.a",  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "Brightness",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
