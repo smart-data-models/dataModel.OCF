@@ -22,7 +22,8 @@
 	- `postOfficeBoxNumber[string]`: Die Postfachnummer für Postfachadressen. Zum Beispiel, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: Die Postleitzahl. Zum Beispiel, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: Die Straßenanschrift  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
-- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit  - `dateCreated[date-time]`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen  - `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben  - `description[string]`: Eine Beschreibung dieses Artikels  - `gas[number]`: verbrauchte Gasenergie in kWh  - `id[*]`: Eindeutiger Bezeichner der Entität  - `if[array]`: Die von dieser Ressource unterstützten OCF-Schnittstellen  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `n[string]`: Freundlicher Name der Ressource  - `name[string]`: Der Name dieses Artikels  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `precision[number]`: Genauigkeitsgranularität des exponierten Wertes  - `rt[array]`: Ressourcentyp  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `type[string]`: NGSI-Entitätstyp. Es muss Verbrauch sein  - `volume[number]`: verbrauchte Gasmenge in m3 (Kubikmeter)  <!-- /30-PropertiesList -->  
+	- `streetNr[string]`: Nummer zur Identifizierung eines bestimmten Grundstücks an einer öffentlichen Straße    
+- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit  - `dateCreated[date-time]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen  - `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben  - `description[string]`: Eine Beschreibung dieses Artikels  - `gas[number]`: verbrauchte Gasenergie in kWh  - `id[*]`: Eindeutiger Bezeichner der Entität  - `if[array]`: Die von dieser Ressource unterstützten OCF-Schnittstellen  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `n[string]`: Freundlicher Name der Ressource  - `name[string]`: Der Name dieses Artikels  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `precision[number]`: Genauigkeitsgranularität des exponierten Wertes  - `rt[array]`: Ressourcentyp  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `type[string]`: NGSI-Entitätstyp. Es muss Verbrauch sein  - `volume[number]`: verbrauchte Gasmenge in m3 (Kubikmeter)  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
 - `gas`  - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -434,60 +435,50 @@ Consumption:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Consumption:id:MBLZ:89037969",  
-  "dateCreated": "1994-06-10T09:16:21Z",  
-  "dateModified": "1989-03-09T16:35:40Z",  
-  "source": "About woman law fear water if lose serious. Point direction probably structure member.",  
-  "name": "Forward recognize health where sit. Clearly space down attack. Really dream star specific.",  
-  "alternateName": "Above ball glass give. Method alone mean particularly with. Off total nice heavy she pressure six pressure.",  
-  "description": "Pretty increase miss daughter fall base represent. Month consider quite black.",  
-  "dataProvider": "Party small finally girl.",  
-  "owner": [  
-    "urn:ngsi-ld:Consumption:items:CEYP:76446909",  
-    "urn:ngsi-ld:Consumption:items:ACRF:69587722"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Consumption:items:PJCD:36748962",  
-    "urn:ngsi-ld:Consumption:items:XIQR:39589952"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      12.537086,  
-      -64.777382  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "South now run girl whatever onto run. Father somebody production far away. Education tell member anything word amount truth. Environmental land join PM since plan school.",  
-    "addressLocality": "Best increase hand above able test case explain. Record teach song. Western beautiful stuff dark.",  
-    "addressRegion": "Small past second southern. Brother reveal Mr southern animal recently. Action activity manage try hundred truth really.",  
-    "addressCountry": "Ask tend exist might tough trade between. One indeed of high one. Senior minute set only building southern outside. How threat sure share per do visit space.",  
-    "postalCode": "Three college industry character.",  
-    "postOfficeBoxNumber": "Not environmental expect former. Close through both because full specific. Mrs truth kind west science responsibility area enjoy."  
-  },  
-  "areaServed": "Staff up research read degree maybe body television. Finally drug Mr high. Traditional issue people south.",  
-  "rt": [  
-    "oic.r.gas.consumption",  
-    "oic.r.gas.consumption"  
-  ],  
-  "if": [  
-    "oic.if.r",  
-    "oic.if.r"  
-  ],  
-  "n": "Walk past none truth sound small. Feel house road she against. Street interesting daughter be chair image. Still religious sit.",  
-  "gas": {  
-    "type": "Property",  
-    "value": 696.9  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 321.2  
-  },  
-  "volume": {  
-    "type": "Property",  
-    "value": 991.4  
-  },  
-  "type": "Consumption"  
+    "id": "urn:ngsi-ld:Consumption:id:GQEJ:48764759",  
+    "dateCreated": "1979-07-06T09:36:23Z",  
+    "dateModified": "2021-06-07T14:46:20Z",  
+    "source": "Son would mouth relate own chair bett",  
+    "name": "Tend employee source nature add rest. Report size personal partner stock four. Region as true develop sound cen",  
+    "alternateName": "Before year thems",  
+    "description": "Wonder employee attorney quickly candidate change although bag.",  
+    "dataProvider": "Study modern miss dog Democrat quickly. Often late produce you true soldier. Food break on",  
+    "owner": [  
+        "urn:ngsi-ld:Consumption:items:KNBD:33041352",  
+        "urn:ngsi-ld:Consumption:items:DUGT:23098910"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Consumption:items:AGFW:91615109"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -56.7421445,  
+            77.286609  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "View age international bi",  
+        "addressLocality": "Others record hospital. Grow rule stuff truth college. Whom around put suddenly garden.",  
+        "addressRegion": "Others kind company likely. Tonight themselves true power home price.",  
+        "addressCountry": "Real leader bad school name care several. Good explain grow water plant",  
+        "postalCode": "Stock ball organization rec",  
+        "postOfficeBoxNumber": "Those traditional page a although for study. Speak themselves speech. Nature white without study candidate.",  
+        "streetNr": "Wear individual about add senior woman.",  
+        "district": "Best budget power them evidence without beyond take. Physical against trial son break either. Stage population boy child surface amount d"  
+    },  
+    "areaServed": "Fire happen nothing support suffer which parent. Republic",  
+    "rt": [  
+        "oic.r.gas.consumption"  
+    ],  
+    "if": [  
+        "oic.if.r"  
+    ],  
+    "n": "Four smile responsibi",  
+    "gas": 879.0,  
+    "precision": 995.8,  
+    "volume": 644.7,  
+    "type": "Consumption"  
 }  
 ```  
 </details>  
@@ -496,122 +487,104 @@ Consumption:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:Consumption:id:MBLZ:89037969"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1994-06-10T09:16:21Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1989-03-09T16:35:40Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "About woman law fear water if lose serious. Point direction probably structure member."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Forward recognize health where sit. Clearly space down attack. Really dream star specific."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Above ball glass give. Method alone mean particularly with. Off total nice heavy she pressure six pressure."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Pretty increase miss daughter fall base represent. Month consider quite black."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Party small finally girl."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Consumption:items:CEYP:76446909",  
-      "urn:ngsi-ld:Consumption:items:ACRF:69587722"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Consumption:items:PJCD:36748962",  
-      "urn:ngsi-ld:Consumption:items:XIQR:39589952"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        12.537086,  
-        -64.777382  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "South now run girl whatever onto run. Father somebody production far away. Education tell member anything word amount truth. Environmental land join PM since plan school.",  
-      "addressLocality": "Best increase hand above able test case explain. Record teach song. Western beautiful stuff dark.",  
-      "addressRegion": "Small past second southern. Brother reveal Mr southern animal recently. Action activity manage try hundred truth really.",  
-      "addressCountry": "Ask tend exist might tough trade between. One indeed of high one. Senior minute set only building southern outside. How threat sure share per do visit space.",  
-      "postalCode": "Three college industry character.",  
-      "postOfficeBoxNumber": "Not environmental expect former. Close through both because full specific. Mrs truth kind west science responsibility area enjoy."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Staff up research read degree maybe body television. Finally drug Mr high. Traditional issue people south."  
-  },  
-  "rt": {  
-    "type": "array",  
-    "value": [  
-      "oic.r.gas.consumption",  
-      "oic.r.gas.consumption"  
-    ]  
-  },  
-  "if": {  
-    "type": "array",  
-    "value": [  
-      "oic.if.r",  
-      "oic.if.r"  
-    ]  
-  },  
-  "n": {  
-    "type": "string",  
-    "value": "Walk past none truth sound small. Feel house road she against. Street interesting daughter be chair image. Still religious sit."  
-  },  
-  "gas": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 696.9  
-    }  
-  },  
-  "precision": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 321.2  
-    }  
-  },  
-  "volume": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 991.4  
-    }  
-  },  
-  "type": {  
-    "type": "string",  
-    "value": "Consumption"  
-  }  
+    "id": "urn:ngsi-ld:Consumption:id:GQEJ:48764759",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1979-07-06T09:36:23Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "2021-06-07T14:46:20Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Son would mouth relate own chair bett"  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Tend employee source nature add rest. Report size personal partner stock four. Region as true develop sound cen"  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Before year thems"  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Wonder employee attorney quickly candidate change although bag."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Study modern miss dog Democrat quickly. Often late produce you true soldier. Food break on"  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Consumption:items:KNBD:33041352",  
+            "urn:ngsi-ld:Consumption:items:DUGT:23098910"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Consumption:items:AGFW:91615109"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -56.7421445,  
+                77.286609  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "View age international bi",  
+            "addressLocality": "Others record hospital. Grow rule stuff truth college. Whom around put suddenly garden.",  
+            "addressRegion": "Others kind company likely. Tonight themselves true power home price.",  
+            "addressCountry": "Real leader bad school name care several. Good explain grow water plant",  
+            "postalCode": "Stock ball organization rec",  
+            "postOfficeBoxNumber": "Those traditional page a although for study. Speak themselves speech. Nature white without study candidate.",  
+            "streetNr": "Wear individual about add senior woman.",  
+            "district": "Best budget power them evidence without beyond take. Physical against trial son break either. Stage population boy child surface amount d"  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Fire happen nothing support suffer which parent. Republic"  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.gas.consumption"  
+        ]  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.r"  
+        ]  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Four smile responsibi"  
+    },  
+    "gas": {  
+        "type": "Number",  
+        "value": 879.0  
+    },  
+    "precision": {  
+        "type": "Number",  
+        "value": 995.8  
+    },  
+    "volume": {  
+        "type": "Number",  
+        "value": 644.7  
+    },  
+    "type": "Consumption"  
 }  
 ```  
 </details>  
@@ -620,63 +593,52 @@ Consumption:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Consumption:id:MBLZ:89037969",  
-    "dateCreated": "1994-06-10T09:16:21Z",  
-    "dateModified": "1989-03-09T16:35:40Z",  
-    "source": "About woman law fear water if lose serious. Point direction probably structure member.",  
-    "name": "Forward recognize health where sit. Clearly space down attack. Really dream star specific.",  
-    "alternateName": "Above ball glass give. Method alone mean particularly with. Off total nice heavy she pressure six pressure.",  
-    "description": "Pretty increase miss daughter fall base represent. Month consider quite black.",  
-    "dataProvider": "Party small finally girl.",  
+    "id": "urn:ngsi-ld:Consumption:id:GQEJ:48764759",  
+    "dateCreated": "1979-07-06T09:36:23Z",  
+    "dateModified": "2021-06-07T14:46:20Z",  
+    "source": "Son would mouth relate own chair bett",  
+    "name": "Tend employee source nature add rest. Report size personal partner stock four. Region as true develop sound cen",  
+    "alternateName": "Before year thems",  
+    "description": "Wonder employee attorney quickly candidate change although bag.",  
+    "dataProvider": "Study modern miss dog Democrat quickly. Often late produce you true soldier. Food break on",  
     "owner": [  
-        "urn:ngsi-ld:Consumption:items:CEYP:76446909",  
-        "urn:ngsi-ld:Consumption:items:ACRF:69587722"  
+        "urn:ngsi-ld:Consumption:items:KNBD:33041352",  
+        "urn:ngsi-ld:Consumption:items:DUGT:23098910"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:Consumption:items:PJCD:36748962",  
-        "urn:ngsi-ld:Consumption:items:XIQR:39589952"  
+        "urn:ngsi-ld:Consumption:items:AGFW:91615109"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            12.537086,  
-            -64.777382  
+            -56.7421445,  
+            77.286609  
         ]  
     },  
     "address": {  
-        "streetAddress": "South now run girl whatever onto run. Father somebody production far away. Education tell member anything word amount truth. Environmental land join PM since plan school.",  
-        "addressLocality": "Best increase hand above able test case explain. Record teach song. Western beautiful stuff dark.",  
-        "addressRegion": "Small past second southern. Brother reveal Mr southern animal recently. Action activity manage try hundred truth really.",  
-        "addressCountry": "Ask tend exist might tough trade between. One indeed of high one. Senior minute set only building southern outside. How threat sure share per do visit space.",  
-        "postalCode": "Three college industry character.",  
-        "postOfficeBoxNumber": "Not environmental expect former. Close through both because full specific. Mrs truth kind west science responsibility area enjoy."  
+        "streetAddress": "View age international bi",  
+        "addressLocality": "Others record hospital. Grow rule stuff truth college. Whom around put suddenly garden.",  
+        "addressRegion": "Others kind company likely. Tonight themselves true power home price.",  
+        "addressCountry": "Real leader bad school name care several. Good explain grow water plant",  
+        "postalCode": "Stock ball organization rec",  
+        "postOfficeBoxNumber": "Those traditional page a although for study. Speak themselves speech. Nature white without study candidate.",  
+        "streetNr": "Wear individual about add senior woman.",  
+        "district": "Best budget power them evidence without beyond take. Physical against trial son break either. Stage population boy child surface amount d"  
     },  
-    "areaServed": "Staff up research read degree maybe body television. Finally drug Mr high. Traditional issue people south.",  
+    "areaServed": "Fire happen nothing support suffer which parent. Republic",  
     "rt": [  
-        "oic.r.gas.consumption",  
         "oic.r.gas.consumption"  
     ],  
     "if": [  
-        "oic.if.r",  
         "oic.if.r"  
     ],  
-    "n": "Walk past none truth sound small. Feel house road she against. Street interesting daughter be chair image. Still religious sit.",  
-    "gas": {  
-        "type": "Property",  
-        "value": 696.9  
-    },  
-    "precision": {  
-        "type": "Property",  
-        "value": 321.2  
-    },  
-    "volume": {  
-        "type": "Property",  
-        "value": 991.4  
-    },  
+    "n": "Four smile responsibi",  
+    "gas": 879.0,  
+    "precision": 995.8,  
+    "volume": 644.7,  
     "type": "Consumption",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -686,78 +648,80 @@ Consumption:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Consumption:id:RWEB:24364675",  
+    "id": "urn:ngsi-ld:Consumption:id:GQEJ:48764759",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1989-07-06T18:37:14Z"  
+            "@value": "1979-07-06T09:36:23Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1994-11-08T02:45:06Z"  
+            "@value": "2021-06-07T14:46:20Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Son worry animal. Foot service including any manage policy."  
+        "value": "Son would mouth relate own chair bett"  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Green decade man. Stuff different too security analysis."  
+        "value": "Tend employee source nature add rest. Report size personal partner stock four. Region as true develop sound cen"  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Hundred how live approach. More impact deep agree. Major system represent indeed."  
+        "value": "Before year thems"  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Push country they simply management will. Must pressure quite remain."  
+        "value": "Wonder employee attorney quickly candidate change although bag."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Model participant position music three agency yes medical. Thought analysis space sort eight budget. Computer while less sea listen project."  
+        "value": "Study modern miss dog Democrat quickly. Often late produce you true soldier. Food break on"  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Consumption:items:SUTR:00014807",  
-            "urn:ngsi-ld:Consumption:items:SIDL:46053291"  
+            "urn:ngsi-ld:Consumption:items:KNBD:33041352",  
+            "urn:ngsi-ld:Consumption:items:DUGT:23098910"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Consumption:items:WHLG:61639670"  
+            "urn:ngsi-ld:Consumption:items:AGFW:91615109"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                -41.379881,  
-                -97.456012  
+                -56.7421445,  
+                77.286609  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Visit economic size. Raise sign statement.",  
-            "addressLocality": "Bar safe production suddenly be. Their former say from recently fact.",  
-            "addressRegion": "Give tell everything political admit world fear. Teacher under area feel reveal.",  
-            "addressCountry": "Bed dream fast three. Particularly onto enough painting.",  
-            "postalCode": "Create nothing major sometimes international work. Management Congress building meet. Teacher minute particular should.",  
-            "postOfficeBoxNumber": "Improve report forget or. Congress interview peace nature player. Should TV yard my increase music."  
+            "streetAddress": "View age international bi",  
+            "addressLocality": "Others record hospital. Grow rule stuff truth college. Whom around put suddenly garden.",  
+            "addressRegion": "Others kind company likely. Tonight themselves true power home price.",  
+            "addressCountry": "Real leader bad school name care several. Good explain grow water plant",  
+            "postalCode": "Stock ball organization rec",  
+            "postOfficeBoxNumber": "Those traditional page a although for study. Speak themselves speech. Nature white without study candidate.",  
+            "streetNr": "Wear individual about add senior woman.",  
+            "district": "Best budget power them evidence without beyond take. Physical against trial son break either. Stage population boy child surface amount d"  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Upon century information event act. Two suggest this health just fly."  
+        "value": "Fire happen nothing support suffer which parent. Republic"  
     },  
     "rt": {  
         "type": "Property",  
@@ -768,29 +732,28 @@ Consumption:
     "if": {  
         "type": "Property",  
         "value": [  
-            "oic.if.baseline"  
+            "oic.if.r"  
         ]  
     },  
     "n": {  
         "type": "Property",  
-        "value": "Key there sea. Difficult wonder moment paper suggest huge. Fear population major stage."  
+        "value": "Four smile responsibi"  
     },  
     "gas": {  
         "type": "Property",  
-        "value": 217.2  
+        "value": 879.0  
     },  
     "precision": {  
         "type": "Property",  
-        "value": 963.4  
+        "value": 995.8  
     },  
     "volume": {  
         "type": "Property",  
-        "value": 213.0  
+        "value": 644.7  
     },  
     "type": "Consumption",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
