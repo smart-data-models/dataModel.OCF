@@ -1,0 +1,278 @@
+{
+    "@id": "dtmi:com:ngsi-ld:Sleep;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "Sleep adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/Sleep/schema.json",
+    "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the Properties associated with Sleep. Sleep shows the time spent in each of the sleep stages (awake, nrem1, nrem2, nrem3, nrem4, rem, light sleep, deep sleep), along with a sleep score indicating the quality of sleep.",
+    "displayName": "Sleep",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "awake",
+            "writable": true,
+            "displayName": "awake",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Time spent in Awake stage (in seconds)"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity"
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform"
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform"
+        },
+        {
+            "name": "deepsleep",
+            "writable": true,
+            "displayName": "deepsleep",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Time spent in Deep Sleep stage, consisting in NREM stages 3 and 4 (in seconds)"
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "lightsleep",
+            "writable": true,
+            "displayName": "lightsleep",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Time spent in Light Sleep stage, consisting in NREM stages 1 and 2 (in seconds)"
+        },
+        {
+            "name": "location",
+            "writable": true,
+            "displayName": "location"
+        },
+        {
+            "name": "n",
+            "writable": true,
+            "displayName": "n",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Friendly name of the Resource"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item"
+        },
+        {
+            "name": "nrem1",
+            "writable": true,
+            "displayName": "nrem1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Time spent in Non Rapid Eye Movement stage 1 (in seconds)"
+        },
+        {
+            "name": "nrem2",
+            "writable": true,
+            "displayName": "nrem2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Time spent in Non Rapid Eye Movement stage 2 (in seconds)"
+        },
+        {
+            "name": "nrem3",
+            "writable": true,
+            "displayName": "nrem3",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Time spent in Non Rapid Eye Movement stage 3 (in seconds)"
+        },
+        {
+            "name": "nrem4",
+            "writable": true,
+            "displayName": "nrem4",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Time spent in Non Rapid Eye Movement stage 4 (in seconds)"
+        },
+        {
+            "name": "precision",
+            "writable": true,
+            "displayName": "precision",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision"
+        },
+        {
+            "name": "rem",
+            "writable": true,
+            "displayName": "rem",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Time spent in Rapid Eye Movement (in seconds)"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "sleepscore",
+            "writable": true,
+            "displayName": "sleepscore",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Score computed from the time spent in each sleep stage, indicative of the quality of sleep"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object"
+        },
+        {
+            "name": "step_phases",
+            "writable": true,
+            "displayName": "step_phases",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Step value across the defined range when the range is an integer.  This is the increment for valid values across the range; so if range is 0..10 and step is 2 then valid values are 0,2,4,6,8,10."
+        },
+        {
+            "name": "step_score",
+            "writable": true,
+            "displayName": "step_score",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0."
+        },
+        {
+            "@type": "Telemetry",
+            "name": "if",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "The Interface set supported by this Resource",
+            "displayName": "if"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "range_phases",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "integer"
+            },
+            "comment": "The valid range for the Property in the Resource as an integer. The first value in the array is the minimum value, the second value in the array is the maximum value.",
+            "displayName": "range_phases"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "range_score",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "number"
+            },
+            "comment": "The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.",
+            "displayName": "range_score"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "rt",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Resource Type",
+            "displayName": "rt"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "district",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetNr",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
