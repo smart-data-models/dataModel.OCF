@@ -1,79 +1,113 @@
 {
-    "id": "urn:ngsi-ld:Speech:id:GEWQ:12227601",
+    "id": "urn:ngsi-ld:Speech:id:MTAH:54624975",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1991-09-26T05:16:34Z"
+            "@value": "1977-09-18T08:24:30Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2006-01-12T06:39:33Z"
+            "@value": "2017-07-02T18:10:10Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Strong cost see certainly job push. At set baby professional."
+        "value": "Chance week down around nice "
     },
     "name": {
         "type": "Property",
-        "value": "Machine miss fly guess authority everyone. Different language condition town government lot opportunity."
+        "value": "By doctor phone win each life candidate. Discuss voice computer method instead force million. Everything new relate little door me."
     },
     "alternateName": {
         "type": "Property",
-        "value": "Doctor early east hour near ball. Order language doctor water still head any face. True career officer get amount nation since those."
+        "value": "Measure behavior executive result sense pass study responsibility. Man different everything PM you hundred area."
     },
     "description": {
         "type": "Property",
-        "value": "Have foot particular nearly culture suffer. Wife partner by way itself. Employee much relationship his majority near travel think."
+        "value": "Success civil continue poor today thousand worker. Future upon art of power."
     },
     "dataProvider": {
         "type": "Property",
-        "value": "Health field section above within cell each. Speech give that individual break against."
+        "value": "Quite glass purpose pay."
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:Speech:items:VFPP:46854686",
-            "urn:ngsi-ld:Speech:items:FUNQ:67496691"
+            "urn:ngsi-ld:Speech:items:SWGQ:98874752",
+            "urn:ngsi-ld:Speech:items:YHXD:38446135"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:Speech:items:JXWG:61166781"
+            "urn:ngsi-ld:Speech:items:MODH:42245430"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                52.163571,
-                -38.680616
+                72.636308,
+                21.53756
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "You first sure Mrs. Staff nice community ready forward affect least. Admit five subject accept.",
-            "addressLocality": "Little thousand bag system cover. Animal newspaper matter ok surface main. Collection letter reality.",
-            "addressRegion": "Arrive each real side speak reduce station Democrat. Some wish material whether.",
-            "addressCountry": "Tax leader tonight item remember occur drug position.",
-            "postalCode": "Economic prepare spend discussion.",
-            "postOfficeBoxNumber": "Police election ready board again. Think right discover institution issue."
+            "streetAddress": "Expect bag short learn. Past",
+            "addressLocality": "Others whole guy you for. Cut ask sit soon.",
+            "addressRegion": "Amount organization hope forget management may material. Pull spring difference dog.",
+            "addressCountry": "M",
+            "postalCode": "Design south liste",
+            "postOfficeBoxNumber": "Floor do course maybe camera. International agree itself we",
+            "streetNr": "Window name especially. South hope go.",
+            "district": "Impact p"
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "None medical result market process cell type send. Summer heart half. Late all system ok movement travel pretty."
+        "value": "Health final politics down operation specific speak. Ready may amount likely. Everyone and never job year white. Cover evening t"
     },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.speech.tts"
+        ]
+    },
+    "supportedLanguages": {
+        "type": "Property",
+        "value": [
+            "Employee blood hospital my impact. Small suggest now lawyer.",
+            "Side teach quit"
+        ]
+    },
+    "supportedVoices": {
+        "type": "Property",
+        "value": "Development less court else dark know. Couple less none ago order certainly film. House help hospital east."
+    },
+    "utterance": {
+        "type": "Property",
+        "value": "Style themselves keep follow exist. Voice produce candidate thought total."
+    },
+    "n": {
+        "type": "Property",
+        "value": "Century enter difference every consumer whate"
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.baseline",
+            "oic.if.a"
+        ]
+    },
+    "type": "Speech",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
