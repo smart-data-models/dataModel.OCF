@@ -1,3 +1,3 @@
 /* (Beta) Export of data model heartRateZone of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE heartRateZone_type AS ENUM ('Zone1','Zone2','Zone3','Zone4','Zone5');CREATE TYPE heartRateZone_type AS ENUM ('heartRateZone');
-CREATE TABLE heartRateZone (heartRateZone heartRateZone_type, if JSON, n TEXT, rt JSON, type heartRateZone_type);
+CREATE TABLE heartRateZone (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, heartRateZone heartRateZone_type, id TEXT PRIMARY KEY, if JSON, location JSON, n TEXT, name TEXT, owner JSON, rt JSON, seeAlso JSON, source TEXT, type heartRateZone_type);
