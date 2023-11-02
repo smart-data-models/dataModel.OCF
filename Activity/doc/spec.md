@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: The post office box number for PO box addresses. For example, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: The postal code. For example, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: The street address  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Number identifying a specific property on a public street    
 - `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `ccal_day[number]`: This Property describes the burned off calories of user since the beginning of the day  - `ccal_day_precision[number]`: When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision  - `ccal_day_range[array]`: The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value  - `ccal_day_step[number]`: Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0  - `ccal_reset[number]`: This Property describes the burned off calories of user since the last reset  - `ccal_reset_precision[number]`: When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision  - `ccal_reset_range[array]`: The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value  - `ccal_reset_step[number]`: Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0  - `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity  - `dateCreated[date-time]`: Entity creation timestamp. This will usually be allocated by the storage platform  - `dateModified[date-time]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform  - `description[string]`: A description of this item  - `id[*]`: Unique identifier of the entity  - `if[array]`: The OCF Interface set supported by this Resource  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n[string]`: Friendly name of the Resource  - `name[string]`: The name of this item  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `rt[array]`: The Resource Type  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object  - `steps_day[number]`: This Property describes the user's step count that measures the number of steps the user has taken since the beginning of the day  - `steps_day_range[array]`: The valid range for the Property in the Resource as an integer. The first value in the array is the minimum value, the second value in the array is the maximum value  - `steps_day_step[number]`: Step value across the defined range when the range is an integer.  This is the increment for valid values across the range; so if range is 0..10 and step is 2 then valid values are 0,2,4,6,8,10  - `steps_reset[number]`: This Property describes the user's step count that measures the number of steps the user has taken since the last reset  - `steps_reset_range[array]`: The valid range for the Property in the Resource as an integer. The first value in the array is the minimum value, the second value in the array is the maximum value  - `steps_reset_step[number]`: Step value across the defined range when the range is an integer.  This is the increment for valid values across the range; so if range is 0..10 and step is 2 then valid values are 0,2,4,6,8,10  - `type[string]`: NGSI entity type. It has to be Activity  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Required properties  
@@ -530,105 +531,74 @@ Activity:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Activity:id:DUCN:00203733",  
-  "dateCreated": "1995-09-14T09:07:48Z",  
-  "dateModified": "1976-12-05T00:37:06Z",  
-  "source": "Ability hand reason management. Middle entire room public suggest.",  
-  "name": "Those catch research instead prove up. Career small great sense become certain wait require. Thank break whole street black.",  
-  "alternateName": "Particularly attention at citizen lead scientist. North conference anyone. Against consider dog seek.",  
-  "description": "Measure his everyone manage participant six.",  
-  "dataProvider": "Street standard Congress anything. Way million discover nation mission teach. Race table from.",  
-  "owner": [  
-    "urn:ngsi-ld:Activity:items:BRJD:11553936",  
-    "urn:ngsi-ld:Activity:items:ZGHH:01998249"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Activity:items:PTPX:08898077",  
-    "urn:ngsi-ld:Activity:items:LQLV:84757861"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      41.0514365,  
-      -160.549428  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "His situation focus final. Idea summer determine win every PM time explain.",  
-    "addressLocality": "Audience issue policy present growth along. Less ten make picture late allow everyone take.",  
-    "addressRegion": "Under surface paper event month. Offer room such the work threat group order.",  
-    "addressCountry": "Gun those among cup good inside successful. Base option break poor third.",  
-    "postalCode": "Interview someone subject office. Laugh Mrs reason maintain ten source everybody.",  
-    "postOfficeBoxNumber": "Party eat hope box lot ready poor. South town room guy. Day throughout exactly actually be."  
-  },  
-  "areaServed": "Many body chair listen protect see kid. Establish born American number civil happy. Letter chance or thus mention size.",  
-  "activity": "walk",  
-  "steps_day": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "steps_reset": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "ccal_day": {  
-    "type": "Property",  
-    "value": 927.6  
-  },  
-  "ccal_reset": {  
-    "type": "Property",  
-    "value": 848.5  
-  },  
-  "rt": [  
-    "oic.r.activity",  
-    "oic.r.activity"  
-  ],  
-  "n": "Address future financial sing. Cut outside everybody soon. State they animal case industry chance though. Decision but force economic left report ability.",  
-  "if": [  
-    "oic.if.baseline",  
-    "oic.if.s"  
-  ],  
-  "steps_day_range": [  
-    864,  
-    864  
-  ],  
-  "steps_day_step": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "steps_reset_range": [  
-    864,  
-    864  
-  ],  
-  "steps_reset_step": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "ccal_day_range": [  
-    428.4,  
-    249.0  
-  ],  
-  "ccal_day_step": {  
-    "type": "Property",  
-    "value": 23.2  
-  },  
-  "ccal_day_precision": {  
-    "type": "Property",  
-    "value": 836.0  
-  },  
-  "ccal_reset_range": [  
-    162.8,  
-    797.5  
-  ],  
-  "ccal_reset_step": {  
-    "type": "Property",  
-    "value": 252.5  
-  },  
-  "ccal_reset_precision": {  
-    "type": "Property",  
-    "value": 442.1  
-  },  
-  "type": "Activity"  
+    "id": "urn:ngsi-ld:Activity:id:QLWH:51153027",  
+    "dateCreated": "1996-07-16T03:21:42Z",  
+    "dateModified": "2001-07-06T17:20:02Z",  
+    "source": "Sea dog car green firm. Student green short whom. Very bring bit early change threat.",  
+    "name": "Center along certainly bring art. Show cas",  
+    "alternateName": "From approach I econ",  
+    "description": "Hear someone office certainly edge shake could. Owner inside Mrs by.",  
+    "dataProvider": "Resource always possible must account. Among prevent f",  
+    "owner": [  
+        "urn:ngsi-ld:Activity:items:PFZA:34840773",  
+        "urn:ngsi-ld:Activity:items:XGBV:59628768"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Activity:items:BUDY:81766032"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            0.4908525,  
+            -173.441483  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Always outside fear short. Pass base how look daughter show reach.",  
+        "addressLocality": "Work n",  
+        "addressRegion": "Senior TV news because night. Analysis provide attention then positive establish present impact.",  
+        "addressCountry": "Production stand",  
+        "postalCode": "Ahead adult hard. Operation paper nice letter.",  
+        "postOfficeBoxNumber": "Smile simple exist pull wind walk book. Record adult raise seven offer.",  
+        "streetNr": "Interest far deep yeah. Cultural follow reflect chair child court financial community. Chair save piece relate.",  
+        "district": "Memory Mrs dog power we fight. Office when feeling water at home under impact. Nation some language should p"  
+    },  
+    "areaServed": "Common success sit nearly eat best plant.",  
+    "activity": "sit",  
+    "steps_day": 864,  
+    "steps_reset": 864,  
+    "ccal_day": 371.0,  
+    "ccal_reset": 806.4,  
+    "rt": [  
+        "oic.r.activity"  
+    ],  
+    "n": "Hold early professional partner decade onto anyon",  
+    "if": [  
+        "oic.if.s"  
+    ],  
+    "steps_day_range": [  
+        864,  
+        864  
+    ],  
+    "steps_day_step": 864,  
+    "steps_reset_range": [  
+        864,  
+        864  
+    ],  
+    "steps_reset_step": 864,  
+    "ccal_day_range": [  
+        541.6,  
+        629.5  
+    ],  
+    "ccal_day_step": 209.8,  
+    "ccal_day_precision": 474.6,  
+    "ccal_reset_range": [  
+        431.7,  
+        635.1  
+    ],  
+    "ccal_reset_step": 137.2,  
+    "ccal_reset_precision": 403.7,  
+    "type": "Activity"  
 }  
 ```  
 </details>  
@@ -637,203 +607,164 @@ Activity:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:Activity:id:DUCN:00203733"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1995-09-14T09:07:48Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1976-12-05T00:37:06Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Ability hand reason management. Middle entire room public suggest."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Those catch research instead prove up. Career small great sense become certain wait require. Thank break whole street black."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Particularly attention at citizen lead scientist. North conference anyone. Against consider dog seek."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Measure his everyone manage participant six."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Street standard Congress anything. Way million discover nation mission teach. Race table from."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Activity:items:BRJD:11553936",  
-      "urn:ngsi-ld:Activity:items:ZGHH:01998249"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Activity:items:PTPX:08898077",  
-      "urn:ngsi-ld:Activity:items:LQLV:84757861"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        41.0514365,  
-        -160.549428  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "His situation focus final. Idea summer determine win every PM time explain.",  
-      "addressLocality": "Audience issue policy present growth along. Less ten make picture late allow everyone take.",  
-      "addressRegion": "Under surface paper event month. Offer room such the work threat group order.",  
-      "addressCountry": "Gun those among cup good inside successful. Base option break poor third.",  
-      "postalCode": "Interview someone subject office. Laugh Mrs reason maintain ten source everybody.",  
-      "postOfficeBoxNumber": "Party eat hope box lot ready poor. South town room guy. Day throughout exactly actually be."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Many body chair listen protect see kid. Establish born American number civil happy. Letter chance or thus mention size."  
-  },  
-  "activity": {  
-    "type": "string",  
-    "value": "walk"  
-  },  
-  "steps_day": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 864  
-    }  
-  },  
-  "steps_reset": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 864  
-    }  
-  },  
-  "ccal_day": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 927.6  
-    }  
-  },  
-  "ccal_reset": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 848.5  
-    }  
-  },  
-  "rt": {  
-    "type": "array",  
-    "value": [  
-      "oic.r.activity",  
-      "oic.r.activity"  
-    ]  
-  },  
-  "n": {  
-    "type": "string",  
-    "value": "Address future financial sing. Cut outside everybody soon. State they animal case industry chance though. Decision but force economic left report ability."  
-  },  
-  "if": {  
-    "type": "array",  
-    "value": [  
-      "oic.if.baseline",  
-      "oic.if.s"  
-    ]  
-  },  
-  "steps_day_range": {  
-    "type": "array",  
-    "value": [  
-      864,  
-      864  
-    ]  
-  },  
-  "steps_day_step": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 864  
-    }  
-  },  
-  "steps_reset_range": {  
-    "type": "array",  
-    "value": [  
-      864,  
-      864  
-    ]  
-  },  
-  "steps_reset_step": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 864  
-    }  
-  },  
-  "ccal_day_range": {  
-    "type": "array",  
-    "value": [  
-      428.4,  
-      249.0  
-    ]  
-  },  
-  "ccal_day_step": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 23.2  
-    }  
-  },  
-  "ccal_day_precision": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 836.0  
-    }  
-  },  
-  "ccal_reset_range": {  
-    "type": "array",  
-    "value": [  
-      162.8,  
-      797.5  
-    ]  
-  },  
-  "ccal_reset_step": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 252.5  
-    }  
-  },  
-  "ccal_reset_precision": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 442.1  
-    }  
-  },  
-  "type": {  
-    "type": "string",  
-    "value": "Activity"  
-  }  
+    "id": "urn:ngsi-ld:Activity:id:QLWH:51153027",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1996-07-16T03:21:42Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "2001-07-06T17:20:02Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Sea dog car green firm. Student green short whom. Very bring bit early change threat."  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Center along certainly bring art. Show cas"  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "From approach I econ"  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Hear someone office certainly edge shake could. Owner inside Mrs by."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Resource always possible must account. Among prevent f"  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Activity:items:PFZA:34840773",  
+            "urn:ngsi-ld:Activity:items:XGBV:59628768"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Activity:items:BUDY:81766032"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                0.4908525,  
+                -173.441483  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Always outside fear short. Pass base how look daughter show reach.",  
+            "addressLocality": "Work n",  
+            "addressRegion": "Senior TV news because night. Analysis provide attention then positive establish present impact.",  
+            "addressCountry": "Production stand",  
+            "postalCode": "Ahead adult hard. Operation paper nice letter.",  
+            "postOfficeBoxNumber": "Smile simple exist pull wind walk book. Record adult raise seven offer.",  
+            "streetNr": "Interest far deep yeah. Cultural follow reflect chair child court financial community. Chair save piece relate.",  
+            "district": "Memory Mrs dog power we fight. Office when feeling water at home under impact. Nation some language should p"  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Common success sit nearly eat best plant."  
+    },  
+    "activity": {  
+        "type": "Text",  
+        "value": "sit"  
+    },  
+    "steps_day": {  
+        "type": "Number",  
+        "value": 864  
+    },  
+    "steps_reset": {  
+        "type": "Number",  
+        "value": 864  
+    },  
+    "ccal_day": {  
+        "type": "Number",  
+        "value": 371.0  
+    },  
+    "ccal_reset": {  
+        "type": "Number",  
+        "value": 806.4  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.activity"  
+        ]  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Hold early professional partner decade onto anyon"  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.s"  
+        ]  
+    },  
+    "steps_day_range": {  
+        "type": "StructuredValue",  
+        "value": [  
+            864,  
+            864  
+        ]  
+    },  
+    "steps_day_step": {  
+        "type": "Number",  
+        "value": 864  
+    },  
+    "steps_reset_range": {  
+        "type": "StructuredValue",  
+        "value": [  
+            864,  
+            864  
+        ]  
+    },  
+    "steps_reset_step": {  
+        "type": "Number",  
+        "value": 864  
+    },  
+    "ccal_day_range": {  
+        "type": "StructuredValue",  
+        "value": [  
+            541.6,  
+            629.5  
+        ]  
+    },  
+    "ccal_day_step": {  
+        "type": "Number",  
+        "value": 209.8  
+    },  
+    "ccal_day_precision": {  
+        "type": "Number",  
+        "value": 474.6  
+    },  
+    "ccal_reset_range": {  
+        "type": "StructuredValue",  
+        "value": [  
+            431.7,  
+            635.1  
+        ]  
+    },  
+    "ccal_reset_step": {  
+        "type": "Number",  
+        "value": 137.2  
+    },  
+    "ccal_reset_precision": {  
+        "type": "Number",  
+        "value": 403.7  
+    },  
+    "type": "Activity"  
 }  
 ```  
 </details>  
@@ -842,108 +773,76 @@ Activity:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Activity:id:DUCN:00203733",  
-    "dateCreated": "1995-09-14T09:07:48Z",  
-    "dateModified": "1976-12-05T00:37:06Z",  
-    "source": "Ability hand reason management. Middle entire room public suggest.",  
-    "name": "Those catch research instead prove up. Career small great sense become certain wait require. Thank break whole street black.",  
-    "alternateName": "Particularly attention at citizen lead scientist. North conference anyone. Against consider dog seek.",  
-    "description": "Measure his everyone manage participant six.",  
-    "dataProvider": "Street standard Congress anything. Way million discover nation mission teach. Race table from.",  
+    "id": "urn:ngsi-ld:Activity:id:QLWH:51153027",  
+    "dateCreated": "1996-07-16T03:21:42Z",  
+    "dateModified": "2001-07-06T17:20:02Z",  
+    "source": "Sea dog car green firm. Student green short whom. Very bring bit early change threat.",  
+    "name": "Center along certainly bring art. Show cas",  
+    "alternateName": "From approach I econ",  
+    "description": "Hear someone office certainly edge shake could. Owner inside Mrs by.",  
+    "dataProvider": "Resource always possible must account. Among prevent f",  
     "owner": [  
-        "urn:ngsi-ld:Activity:items:BRJD:11553936",  
-        "urn:ngsi-ld:Activity:items:ZGHH:01998249"  
+        "urn:ngsi-ld:Activity:items:PFZA:34840773",  
+        "urn:ngsi-ld:Activity:items:XGBV:59628768"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:Activity:items:PTPX:08898077",  
-        "urn:ngsi-ld:Activity:items:LQLV:84757861"  
+        "urn:ngsi-ld:Activity:items:BUDY:81766032"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            41.0514365,  
-            -160.549428  
+            0.4908525,  
+            -173.441483  
         ]  
     },  
     "address": {  
-        "streetAddress": "His situation focus final. Idea summer determine win every PM time explain.",  
-        "addressLocality": "Audience issue policy present growth along. Less ten make picture late allow everyone take.",  
-        "addressRegion": "Under surface paper event month. Offer room such the work threat group order.",  
-        "addressCountry": "Gun those among cup good inside successful. Base option break poor third.",  
-        "postalCode": "Interview someone subject office. Laugh Mrs reason maintain ten source everybody.",  
-        "postOfficeBoxNumber": "Party eat hope box lot ready poor. South town room guy. Day throughout exactly actually be."  
+        "streetAddress": "Always outside fear short. Pass base how look daughter show reach.",  
+        "addressLocality": "Work n",  
+        "addressRegion": "Senior TV news because night. Analysis provide attention then positive establish present impact.",  
+        "addressCountry": "Production stand",  
+        "postalCode": "Ahead adult hard. Operation paper nice letter.",  
+        "postOfficeBoxNumber": "Smile simple exist pull wind walk book. Record adult raise seven offer.",  
+        "streetNr": "Interest far deep yeah. Cultural follow reflect chair child court financial community. Chair save piece relate.",  
+        "district": "Memory Mrs dog power we fight. Office when feeling water at home under impact. Nation some language should p"  
     },  
-    "areaServed": "Many body chair listen protect see kid. Establish born American number civil happy. Letter chance or thus mention size.",  
-    "activity": "walk",  
-    "steps_day": {  
-        "type": "Property",  
-        "value": 864  
-    },  
-    "steps_reset": {  
-        "type": "Property",  
-        "value": 864  
-    },  
-    "ccal_day": {  
-        "type": "Property",  
-        "value": 927.6  
-    },  
-    "ccal_reset": {  
-        "type": "Property",  
-        "value": 848.5  
-    },  
+    "areaServed": "Common success sit nearly eat best plant.",  
+    "activity": "sit",  
+    "steps_day": 864,  
+    "steps_reset": 864,  
+    "ccal_day": 371.0,  
+    "ccal_reset": 806.4,  
     "rt": [  
-        "oic.r.activity",  
         "oic.r.activity"  
     ],  
-    "n": "Address future financial sing. Cut outside everybody soon. State they animal case industry chance though. Decision but force economic left report ability.",  
+    "n": "Hold early professional partner decade onto anyon",  
     "if": [  
-        "oic.if.baseline",  
         "oic.if.s"  
     ],  
     "steps_day_range": [  
         864,  
         864  
     ],  
-    "steps_day_step": {  
-        "type": "Property",  
-        "value": 864  
-    },  
+    "steps_day_step": 864,  
     "steps_reset_range": [  
         864,  
         864  
     ],  
-    "steps_reset_step": {  
-        "type": "Property",  
-        "value": 864  
-    },  
+    "steps_reset_step": 864,  
     "ccal_day_range": [  
-        428.4,  
-        249.0  
+        541.6,  
+        629.5  
     ],  
-    "ccal_day_step": {  
-        "type": "Property",  
-        "value": 23.2  
-    },  
-    "ccal_day_precision": {  
-        "type": "Property",  
-        "value": 836.0  
-    },  
+    "ccal_day_step": 209.8,  
+    "ccal_day_precision": 474.6,  
     "ccal_reset_range": [  
-        162.8,  
-        797.5  
+        431.7,  
+        635.1  
     ],  
-    "ccal_reset_step": {  
-        "type": "Property",  
-        "value": 252.5  
-    },  
-    "ccal_reset_precision": {  
-        "type": "Property",  
-        "value": 442.1  
-    },  
+    "ccal_reset_step": 137.2,  
+    "ccal_reset_precision": 403.7,  
     "type": "Activity",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -953,98 +852,100 @@ Activity:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Activity:id:MZWF:26893545",  
+    "id": "urn:ngsi-ld:Activity:id:QLWH:51153027",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1983-04-27T11:52:16Z"  
+            "@value": "1996-07-16T03:21:42Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2010-10-31T00:41:19Z"  
+            "@value": "2001-07-06T17:20:02Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Expert mouth media difficult anyone pull must. Employee let father can easy opportunity fact. In begin appear."  
+        "value": "Sea dog car green firm. Student green short whom. Very bring bit early change threat."  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Feel everyone form. City reality exactly believe different open least. Lawyer pay travel foreign."  
+        "value": "Center along certainly bring art. Show cas"  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Once have cold she writer size. Direction girl some into memory close receive."  
+        "value": "From approach I econ"  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Garden author drop place dinner method notice. Subject head true environment leave."  
+        "value": "Hear someone office certainly edge shake could. Owner inside Mrs by."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "North ready because probably in yourself professional."  
+        "value": "Resource always possible must account. Among prevent f"  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Activity:items:XPCK:51151835",  
-            "urn:ngsi-ld:Activity:items:EEHP:04982258"  
+            "urn:ngsi-ld:Activity:items:PFZA:34840773",  
+            "urn:ngsi-ld:Activity:items:XGBV:59628768"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Activity:items:GSIY:61112353"  
+            "urn:ngsi-ld:Activity:items:BUDY:81766032"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                20.34346,  
-                68.954533  
+                0.4908525,  
+                -173.441483  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Pass else western century perhaps relate for. Perhaps suffer product loss office. Action first idea fact everybody.",  
-            "addressLocality": "Attention decade course everything. Line sell three over senior player measure. Country movement almost true change idea.",  
-            "addressRegion": "Else much time heavy two detail. Similar drug want enjoy sure surface. Mean market total.",  
-            "addressCountry": "Hundred high ability grow professional own often film.",  
-            "postalCode": "Current seat explain keep spring certainly yourself. Room toward agreement.",  
-            "postOfficeBoxNumber": "Positive memory small family energy. Peace value eye reflect teach study dinner hospital. Three of may street election I night."  
+            "streetAddress": "Always outside fear short. Pass base how look daughter show reach.",  
+            "addressLocality": "Work n",  
+            "addressRegion": "Senior TV news because night. Analysis provide attention then positive establish present impact.",  
+            "addressCountry": "Production stand",  
+            "postalCode": "Ahead adult hard. Operation paper nice letter.",  
+            "postOfficeBoxNumber": "Smile simple exist pull wind walk book. Record adult raise seven offer.",  
+            "streetNr": "Interest far deep yeah. Cultural follow reflect chair child court financial community. Chair save piece relate.",  
+            "district": "Memory Mrs dog power we fight. Office when feeling water at home under impact. Nation some language should p"  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "System management responsibility least."  
+        "value": "Common success sit nearly eat best plant."  
     },  
     "activity": {  
         "type": "Property",  
-        "value": "sleep"  
+        "value": "sit"  
     },  
     "steps_day": {  
         "type": "Property",  
-        "value": 308  
+        "value": 864  
     },  
     "steps_reset": {  
         "type": "Property",  
-        "value": 221  
+        "value": 864  
     },  
     "ccal_day": {  
         "type": "Property",  
-        "value": 140.9  
+        "value": 371.0  
     },  
     "ccal_reset": {  
         "type": "Property",  
-        "value": 545.7  
+        "value": 806.4  
     },  
     "rt": {  
         "type": "Property",  
@@ -1054,7 +955,7 @@ Activity:
     },  
     "n": {  
         "type": "Property",  
-        "value": "Simple figure consumer my defense across tough. Decision religious attorney."  
+        "value": "Hold early professional partner decade onto anyon"  
     },  
     "if": {  
         "type": "Property",  
@@ -1065,59 +966,58 @@ Activity:
     "steps_day_range": {  
         "type": "Property",  
         "value": [  
-            935,  
-            193  
+            864,  
+            864  
         ]  
     },  
     "steps_day_step": {  
         "type": "Property",  
-        "value": 21  
+        "value": 864  
     },  
     "steps_reset_range": {  
         "type": "Property",  
         "value": [  
-            513,  
-            809  
+            864,  
+            864  
         ]  
     },  
     "steps_reset_step": {  
         "type": "Property",  
-        "value": 890  
+        "value": 864  
     },  
     "ccal_day_range": {  
         "type": "Property",  
         "value": [  
-            506.1,  
-            443.7  
+            541.6,  
+            629.5  
         ]  
     },  
     "ccal_day_step": {  
         "type": "Property",  
-        "value": 70.2  
+        "value": 209.8  
     },  
     "ccal_day_precision": {  
         "type": "Property",  
-        "value": 588.3  
+        "value": 474.6  
     },  
     "ccal_reset_range": {  
         "type": "Property",  
         "value": [  
-            533.3,  
-            185.3  
+            431.7,  
+            635.1  
         ]  
     },  
     "ccal_reset_step": {  
         "type": "Property",  
-        "value": 823.7  
+        "value": 137.2  
     },  
     "ccal_reset_precision": {  
         "type": "Property",  
-        "value": 802.8  
+        "value": 403.7  
     },  
     "type": "Activity",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
