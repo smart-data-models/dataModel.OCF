@@ -1,79 +1,121 @@
 {
-    "id": "urn:ngsi-ld:ColourChroma:id:XBCJ:78890788",
+    "id": "urn:ngsi-ld:ColourChroma:id:VBKK:04819905",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1983-04-11T03:39:24Z"
+            "@value": "1993-07-29T18:02:30Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1993-03-06T19:48:24Z"
+            "@value": "1997-02-20T15:50:29Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Believe rise company similar seven. Week network nice room whose. Worker treat statement former how direction. Have lead act write money."
+        "value": "Similar let phone prevent live local. Lay thus teacher send ea"
     },
     "name": {
         "type": "Property",
-        "value": "Race enjoy see more will ball. Concern sign happen really. Yard senior scientist magazine country."
+        "value": "As investment offer fact become senior. Avoid want information them west present."
     },
     "alternateName": {
         "type": "Property",
-        "value": "Send though firm usually. Laugh he paper building husband. Old push above rather."
+        "value": "Great pay beat. D"
     },
     "description": {
         "type": "Property",
-        "value": "Financial thing safe policy. Security ability remain act. House agreement side fast."
+        "value": "Read pass respond hour which hea"
     },
     "dataProvider": {
         "type": "Property",
-        "value": "School capital job worry radio full claim. Wall agree car new population red world note. Trip far environment talk."
+        "value": "Suffer prove push "
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:ColourChroma:items:QHKT:12885344",
-            "urn:ngsi-ld:ColourChroma:items:EFGF:01514513"
+            "urn:ngsi-ld:ColourChroma:items:PUPR:35081327",
+            "urn:ngsi-ld:ColourChroma:items:DDOU:92095052"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:ColourChroma:items:YLHX:20933403"
+            "urn:ngsi-ld:ColourChroma:items:ZIZO:86166167"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                23.189858,
-                14.005876
+                -9.2514065,
+                77.705794
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "Radio interesting but fill suddenly.",
-            "addressLocality": "Activity forward scene economy collection hope page here. Role box similar fine who last. Material center school throw today let executive.",
-            "addressRegion": "Guy suggest task paper name hard. Research pull project weight young course land high.",
-            "addressCountry": "Seek from shoulder read. Front later effect thus. Behavior until enjoy note meet interview.",
-            "postalCode": "Outside white impact probably. Strategy different difference forward physical house become.",
-            "postOfficeBoxNumber": "Police for send fine price for east. Note memory especially during family argue crime. Staff us nice strong."
+            "streetAddress": "Contain color start respond pressure seven entire. Theory step difficult.",
+            "addressLocality": "Receive skin join opportunity government activity relate. Job region shake executive. Any father help decide bad go.",
+            "addressRegion": "Pressure board collection",
+            "addressCountry": "Say floor radio similar former high. Director ch",
+            "postalCode": "Send pressure yet executive computer.",
+            "postOfficeBoxNumber": "Better little why. Discover report local chair a. Letter American later minute scientist. Great change every artist return.",
+            "streetNr": "Citizen ",
+            "district": "Follow price at matter contain fine. North environmental citizen hundred start. Many live upon name Mrs."
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "Write form bank executive affect may above."
+        "value": "Recognize never"
     },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.colour.chroma"
+        ]
+    },
+    "ct": {
+        "type": "Property",
+        "value": 864
+    },
+    "hue": {
+        "type": "Property",
+        "value": 80.9
+    },
+    "saturation": {
+        "type": "Property",
+        "value": 25247
+    },
+    "maximumsaturation": {
+        "type": "Property",
+        "value": 25247
+    },
+    "csc": {
+        "type": "Property",
+        "value": [
+            0.4,
+            0.6
+        ]
+    },
+    "n": {
+        "type": "Property",
+        "value": "Sure although middle eye official."
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.a",
+            "oic.if.baseline"
+        ]
+    },
+    "type": "ColourChroma",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
