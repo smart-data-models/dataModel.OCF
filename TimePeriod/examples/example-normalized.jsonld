@@ -1,76 +1,78 @@
 {
-    "id": "urn:ngsi-ld:TimePeriod:id:TFSS:01462651",
+    "id": "urn:ngsi-ld:TimePeriod:id:NOEN:50560068",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2018-04-07T03:15:37Z"
+            "@value": "1981-01-04T19:02:57Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2000-11-20T13:02:07Z"
+            "@value": "2009-04-19T11:34:49Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Future health he interesting deal wife team. Early possible official similar individual actually good. Me something peace year but society."
+        "value": "Other indeed glass although building view."
     },
     "name": {
         "type": "Property",
-        "value": "Myself rate help sort still. Growth fill bed support smile. Stop usually product pretty use response."
+        "value": "Doctor point art foot. Third ever personal."
     },
     "alternateName": {
         "type": "Property",
-        "value": "Act we hope east everything represent. Because probably service example government."
+        "value": "Before"
     },
     "description": {
         "type": "Property",
-        "value": "Interview actually authority performance kid score. Blood against have. Beautiful game tree drop listen often citizen."
+        "value": "Medical glass drop site wonder technology. Clear ch"
     },
     "dataProvider": {
         "type": "Property",
-        "value": "Say size strategy easy. Summer may discuss beat ten. Hospital couple same analysis break."
+        "value": "Market finally bed song two former."
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:TimePeriod:items:KCTO:34471219",
-            "urn:ngsi-ld:TimePeriod:items:WOCL:63416768"
+            "urn:ngsi-ld:TimePeriod:items:NJUA:07679517",
+            "urn:ngsi-ld:TimePeriod:items:ECZZ:36221154"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:TimePeriod:items:IEHN:03499364"
+            "urn:ngsi-ld:TimePeriod:items:KXTB:74769498"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                4.979827,
-                27.027311
+                -66.690941,
+                -78.148887
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "Painting for street surface cup. Here particularly identify ahead news bill. Along investment possible painting treat.",
-            "addressLocality": "Director your be billion us sea glass heavy. Boy program against development improve life conference. Political store general.",
-            "addressRegion": "Treat maintain just protect clear poor. Must morning security describe. Foreign structure score music.",
-            "addressCountry": "Size early item agent test key color. Game mind wall defense science institution. Activity claim white no some truth.",
-            "postalCode": "Range later letter contain plan. Let grow population skill respond.",
-            "postOfficeBoxNumber": "Case look election some tough exactly. Mr visit out choose life floor his hotel."
+            "streetAddress": "Understand throughout staff four design agent growth. ",
+            "addressLocality": "Skill thing level clear fish spend government. Parent mem",
+            "addressRegion": "Young suggest trial soldier conference nor play. Mouth move music fill maybe war quality. Production evening mean region ",
+            "addressCountry": "Training fear system moment treat own. Rest gun about.",
+            "postalCode": "Re",
+            "postOfficeBoxNumber": "Night doctor media hot his.",
+            "streetNr": "Adult free Democrat. Language couple nation ready stay identify PM.",
+            "district": "Owner difficult big force TV blood. Opportunity friend local exactly month. Who degree individual west. Thousand gun few might feel see."
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "Front particular maintain lead economy. Visit hotel focus position."
+        "value": "Guess network adult organization. Attack assume"
     },
     "rt": {
         "type": "Property",
@@ -80,52 +82,51 @@
     },
     "interval": {
         "type": "Property",
-        "value": 850
+        "value": 864
     },
     "intervalsecond": {
         "type": "Property",
-        "value": 176
+        "value": 864
     },
     "stopTime": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2002-11-06T17:47:24Z"
+            "@value": "1996-03-20T07:46:39Z"
         }
     },
     "startTime": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1985-01-08T06:11:51Z"
+            "@value": "2021-07-31T01:24:38Z"
         }
     },
     "repeat": {
         "type": "Property",
-        "value": 128
+        "value": 863
     },
     "triggertiming": {
         "type": "Property",
-        "value": "startTime"
+        "value": "stopTime"
     },
     "state": {
         "type": "Property",
-        "value": "preInterval"
+        "value": "inInterval"
     },
     "n": {
         "type": "Property",
-        "value": "Former answer political resource nothing. Develop lawyer important executive clear. Financial industry night trip bank end."
+        "value": "Whole magazine truth stop whose."
     },
     "if": {
         "type": "Property",
         "value": [
             "oic.if.baseline",
-            "oic.if.baseline"
+            "oic.if.a"
         ]
     },
     "type": "TimePeriod",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
