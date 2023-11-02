@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: Il numero di casella postale per gli indirizzi di casella postale. Ad esempio, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: Il codice postale. Ad esempio, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: L'indirizzo stradale  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Numero che identifica una proprietà specifica su una strada pubblica    
 - `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `connected[boolean]`: Lo stato della connessione  - `dataProvider[string]`: una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata  - `dateCreated[date-time]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `if[array]`: Il set di interfacce OCF supportato da questa risorsa.  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `n[string]`: Nome amichevole della risorsa  - `name[string]`: Il nome di questo elemento  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `ratedchargingcapacity[number]`: La capacità di carica nominale in Ampere (A)  - `rateddischargingcapacity[number]`: La capacità di scarica nominale in Ampere (A)  - `rt[array]`: Il tipo di risorsa  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `type[string]`: Tipo di entità NGSI. Deve essere VehicleConnector  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Proprietà richieste  
@@ -432,60 +433,51 @@ VehicleConnector:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:VehicleConnector:id:JADI:02407105",  
-  "dateCreated": "1987-12-29T01:28:41Z",  
-  "dateModified": "2007-05-07T23:28:25Z",  
-  "source": "Contain member fire popular when great join. Data may job social minute beat east.",  
-  "name": "Tv run cold might wall force. Site practice certain state.",  
-  "alternateName": "Moment oil trade accept. Especially event piece never. Partner security play mission put support just.",  
-  "description": "Case ten according yes. Student only side safe enter. Plan fine civil threat imagine.",  
-  "dataProvider": "Month without prepare financial. Theory door number Mrs itself third. Remember job middle energy standard image care.",  
-  "owner": [  
-    "urn:ngsi-ld:VehicleConnector:items:GOHP:94242286",  
-    "urn:ngsi-ld:VehicleConnector:items:DNMA:32514112"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:VehicleConnector:items:FHFN:25053328",  
-    "urn:ngsi-ld:VehicleConnector:items:JUMC:26636842"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -65.886465,  
-      -22.450009  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Floor back near although nothing detail. Cultural result page project miss form college. Improve yeah walk sure she whose.",  
-    "addressLocality": "Including record happen claim. Itself worry hospital career likely that local. House professional husband record enough set focus. Public goal bank current star begin house.",  
-    "addressRegion": "Quality live force just including official. Need season side middle.",  
-    "addressCountry": "Under debate city today seem. Rate sing test sport series. Tough public imagine officer answer.",  
-    "postalCode": "Health anyone product figure wonder here. You several admit establish everyone age wall. Measure information together technology. Size wish risk move cause Democrat.",  
-    "postOfficeBoxNumber": "Beyond defense standard church describe social painting. Matter child capital new sometimes its right. Fact worry fish phone."  
-  },  
-  "areaServed": "Southern hour success toward agree choose environment. Size feel his computer door eat weight eye.",  
-  "rt": [  
-    "oic.r.vehicle.connector",  
-    "oic.r.vehicle.connector"  
-  ],  
-  "connected": {  
-    "type": "Property",  
-    "value": true  
-  },  
-  "ratedchargingcapacity": {  
-    "type": "Property",  
-    "value": 385.6  
-  },  
-  "rateddischargingcapacity": {  
-    "type": "Property",  
-    "value": 679.8  
-  },  
-  "n": "East man seven explain worry nation choice. Whether trouble young perhaps friend course. As vote hour professional across home.",  
-  "if": [  
-    "oic.if.baseline",  
-    "oic.if.s"  
-  ],  
-  "type": "VehicleConnector"  
+    "id": "urn:ngsi-ld:VehicleConnector:id:JPXG:63090686",  
+    "dateCreated": "2004-11-18T08:54:05Z",  
+    "dateModified": "2023-01-15T04:30:42Z",  
+    "source": "Apply carry speech nor responsibility ",  
+    "name": "Friend well happy degree end. Decision a",  
+    "alternateName": "Under Congress hand institution analysis establish build listen. Hard forward since try animal executive. Simpl",  
+    "description": "Skin family consumer drive. Arm per establish. Style chance have later.",  
+    "dataProvider": "Have follow control peace know.",  
+    "owner": [  
+        "urn:ngsi-ld:VehicleConnector:items:HMCJ:34623597",  
+        "urn:ngsi-ld:VehicleConnector:items:XNIW:54386436"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:VehicleConnector:items:WASN:20285756"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -57.2071525,  
+            50.016674  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Central successful image tree significant write. Up father cold decision recognize the enter. Opportunity word across large.",  
+        "addressLocality": "His administration perform police program table si",  
+        "addressRegion": "Wear actually market daughter cour",  
+        "addressCountry": "Give true business sport continue over increase newspaper. Arrive support cause shoulder decision. Share sell wrong they.",  
+        "postalCode": "Bring degree cover always particularly none on.",  
+        "postOfficeBoxNumber": "Time those Congress measure best. Relationship development over rec",  
+        "streetNr": "Name approach walk practice. Easy here decide so.",  
+        "district": "Near strategy however finally their plan. Resourc"  
+    },  
+    "areaServed": "Lawyer if customer project. Democrat may above sister way prevent. Reason five already best dream.",  
+    "rt": [  
+        "oic.r.vehicle.connector"  
+    ],  
+    "connected": false,  
+    "ratedchargingcapacity": 161.4,  
+    "rateddischargingcapacity": 196.6,  
+    "n": "Action stuff hot",  
+    "if": [  
+        "oic.if.s",  
+        "oic.if.baseline"  
+    ],  
+    "type": "VehicleConnector"  
 }  
 ```  
 </details>  
@@ -494,122 +486,105 @@ VehicleConnector:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:VehicleConnector:id:JADI:02407105"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1987-12-29T01:28:41Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2007-05-07T23:28:25Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Contain member fire popular when great join. Data may job social minute beat east."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Tv run cold might wall force. Site practice certain state."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Moment oil trade accept. Especially event piece never. Partner security play mission put support just."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Case ten according yes. Student only side safe enter. Plan fine civil threat imagine."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Month without prepare financial. Theory door number Mrs itself third. Remember job middle energy standard image care."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:VehicleConnector:items:GOHP:94242286",  
-      "urn:ngsi-ld:VehicleConnector:items:DNMA:32514112"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:VehicleConnector:items:FHFN:25053328",  
-      "urn:ngsi-ld:VehicleConnector:items:JUMC:26636842"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -65.886465,  
-        -22.450009  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Floor back near although nothing detail. Cultural result page project miss form college. Improve yeah walk sure she whose.",  
-      "addressLocality": "Including record happen claim. Itself worry hospital career likely that local. House professional husband record enough set focus. Public goal bank current star begin house.",  
-      "addressRegion": "Quality live force just including official. Need season side middle.",  
-      "addressCountry": "Under debate city today seem. Rate sing test sport series. Tough public imagine officer answer.",  
-      "postalCode": "Health anyone product figure wonder here. You several admit establish everyone age wall. Measure information together technology. Size wish risk move cause Democrat.",  
-      "postOfficeBoxNumber": "Beyond defense standard church describe social painting. Matter child capital new sometimes its right. Fact worry fish phone."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Southern hour success toward agree choose environment. Size feel his computer door eat weight eye."  
-  },  
-  "rt": {  
-    "type": "array",  
-    "value": [  
-      "oic.r.vehicle.connector",  
-      "oic.r.vehicle.connector"  
-    ]  
-  },  
-  "connected": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": true  
-    }  
-  },  
-  "ratedchargingcapacity": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 385.6  
-    }  
-  },  
-  "rateddischargingcapacity": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 679.8  
-    }  
-  },  
-  "n": {  
-    "type": "string",  
-    "value": "East man seven explain worry nation choice. Whether trouble young perhaps friend course. As vote hour professional across home."  
-  },  
-  "if": {  
-    "type": "array",  
-    "value": [  
-      "oic.if.baseline",  
-      "oic.if.s"  
-    ]  
-  },  
-  "type": {  
-    "type": "string",  
-    "value": "VehicleConnector"  
-  }  
+    "id": "urn:ngsi-ld:VehicleConnector:id:JPXG:63090686",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "2004-11-18T08:54:05Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "2023-01-15T04:30:42Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Apply carry speech nor responsibility "  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Friend well happy degree end. Decision a"  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Under Congress hand institution analysis establish build listen. Hard forward since try animal executive. Simpl"  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Skin family consumer drive. Arm per establish. Style chance have later."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Have follow control peace know."  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:VehicleConnector:items:HMCJ:34623597",  
+            "urn:ngsi-ld:VehicleConnector:items:XNIW:54386436"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:VehicleConnector:items:WASN:20285756"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -57.2071525,  
+                50.016674  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Central successful image tree significant write. Up father cold decision recognize the enter. Opportunity word across large.",  
+            "addressLocality": "His administration perform police program table si",  
+            "addressRegion": "Wear actually market daughter cour",  
+            "addressCountry": "Give true business sport continue over increase newspaper. Arrive support cause shoulder decision. Share sell wrong they.",  
+            "postalCode": "Bring degree cover always particularly none on.",  
+            "postOfficeBoxNumber": "Time those Congress measure best. Relationship development over rec",  
+            "streetNr": "Name approach walk practice. Easy here decide so.",  
+            "district": "Near strategy however finally their plan. Resourc"  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Lawyer if customer project. Democrat may above sister way prevent. Reason five already best dream."  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.vehicle.connector"  
+        ]  
+    },  
+    "connected": {  
+        "type": "Boolean",  
+        "value": false  
+    },  
+    "ratedchargingcapacity": {  
+        "type": "Number",  
+        "value": 161.4  
+    },  
+    "rateddischargingcapacity": {  
+        "type": "Number",  
+        "value": 196.6  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Action stuff hot"  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.s",  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "VehicleConnector"  
 }  
 ```  
 </details>  
@@ -618,63 +593,53 @@ VehicleConnector:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:VehicleConnector:id:JADI:02407105",  
-    "dateCreated": "1987-12-29T01:28:41Z",  
-    "dateModified": "2007-05-07T23:28:25Z",  
-    "source": "Contain member fire popular when great join. Data may job social minute beat east.",  
-    "name": "Tv run cold might wall force. Site practice certain state.",  
-    "alternateName": "Moment oil trade accept. Especially event piece never. Partner security play mission put support just.",  
-    "description": "Case ten according yes. Student only side safe enter. Plan fine civil threat imagine.",  
-    "dataProvider": "Month without prepare financial. Theory door number Mrs itself third. Remember job middle energy standard image care.",  
+    "id": "urn:ngsi-ld:VehicleConnector:id:JPXG:63090686",  
+    "dateCreated": "2004-11-18T08:54:05Z",  
+    "dateModified": "2023-01-15T04:30:42Z",  
+    "source": "Apply carry speech nor responsibility ",  
+    "name": "Friend well happy degree end. Decision a",  
+    "alternateName": "Under Congress hand institution analysis establish build listen. Hard forward since try animal executive. Simpl",  
+    "description": "Skin family consumer drive. Arm per establish. Style chance have later.",  
+    "dataProvider": "Have follow control peace know.",  
     "owner": [  
-        "urn:ngsi-ld:VehicleConnector:items:GOHP:94242286",  
-        "urn:ngsi-ld:VehicleConnector:items:DNMA:32514112"  
+        "urn:ngsi-ld:VehicleConnector:items:HMCJ:34623597",  
+        "urn:ngsi-ld:VehicleConnector:items:XNIW:54386436"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:VehicleConnector:items:FHFN:25053328",  
-        "urn:ngsi-ld:VehicleConnector:items:JUMC:26636842"  
+        "urn:ngsi-ld:VehicleConnector:items:WASN:20285756"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            -65.886465,  
-            -22.450009  
+            -57.2071525,  
+            50.016674  
         ]  
     },  
     "address": {  
-        "streetAddress": "Floor back near although nothing detail. Cultural result page project miss form college. Improve yeah walk sure she whose.",  
-        "addressLocality": "Including record happen claim. Itself worry hospital career likely that local. House professional husband record enough set focus. Public goal bank current star begin house.",  
-        "addressRegion": "Quality live force just including official. Need season side middle.",  
-        "addressCountry": "Under debate city today seem. Rate sing test sport series. Tough public imagine officer answer.",  
-        "postalCode": "Health anyone product figure wonder here. You several admit establish everyone age wall. Measure information together technology. Size wish risk move cause Democrat.",  
-        "postOfficeBoxNumber": "Beyond defense standard church describe social painting. Matter child capital new sometimes its right. Fact worry fish phone."  
+        "streetAddress": "Central successful image tree significant write. Up father cold decision recognize the enter. Opportunity word across large.",  
+        "addressLocality": "His administration perform police program table si",  
+        "addressRegion": "Wear actually market daughter cour",  
+        "addressCountry": "Give true business sport continue over increase newspaper. Arrive support cause shoulder decision. Share sell wrong they.",  
+        "postalCode": "Bring degree cover always particularly none on.",  
+        "postOfficeBoxNumber": "Time those Congress measure best. Relationship development over rec",  
+        "streetNr": "Name approach walk practice. Easy here decide so.",  
+        "district": "Near strategy however finally their plan. Resourc"  
     },  
-    "areaServed": "Southern hour success toward agree choose environment. Size feel his computer door eat weight eye.",  
+    "areaServed": "Lawyer if customer project. Democrat may above sister way prevent. Reason five already best dream.",  
     "rt": [  
-        "oic.r.vehicle.connector",  
         "oic.r.vehicle.connector"  
     ],  
-    "connected": {  
-        "type": "Property",  
-        "value": true  
-    },  
-    "ratedchargingcapacity": {  
-        "type": "Property",  
-        "value": 385.6  
-    },  
-    "rateddischargingcapacity": {  
-        "type": "Property",  
-        "value": 679.8  
-    },  
-    "n": "East man seven explain worry nation choice. Whether trouble young perhaps friend course. As vote hour professional across home.",  
+    "connected": false,  
+    "ratedchargingcapacity": 161.4,  
+    "rateddischargingcapacity": 196.6,  
+    "n": "Action stuff hot",  
     "if": [  
-        "oic.if.baseline",  
-        "oic.if.s"  
+        "oic.if.s",  
+        "oic.if.baseline"  
     ],  
     "type": "VehicleConnector",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -684,78 +649,80 @@ VehicleConnector:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:VehicleConnector:id:KJFN:91046688",  
+    "id": "urn:ngsi-ld:VehicleConnector:id:JPXG:63090686",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1979-06-19T14:53:09Z"  
+            "@value": "2004-11-18T08:54:05Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1984-01-17T10:15:27Z"  
+            "@value": "2023-01-15T04:30:42Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Nice kind who a very animal yourself. Cause performance professional parent."  
+        "value": "Apply carry speech nor responsibility "  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Mean political investment movie never. Look only base play."  
+        "value": "Friend well happy degree end. Decision a"  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Finally nature about degree. But upon cost agreement force continue have. Win even rule especially send and subject."  
+        "value": "Under Congress hand institution analysis establish build listen. Hard forward since try animal executive. Simpl"  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Less easy state possible much. Cut size east. Rule also care since. Could line foot different."  
+        "value": "Skin family consumer drive. Arm per establish. Style chance have later."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Concern blood during trip address key. Artist above little tend without cover."  
+        "value": "Have follow control peace know."  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:VehicleConnector:items:QZMD:32671659",  
-            "urn:ngsi-ld:VehicleConnector:items:OWTS:91756327"  
+            "urn:ngsi-ld:VehicleConnector:items:HMCJ:34623597",  
+            "urn:ngsi-ld:VehicleConnector:items:XNIW:54386436"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:VehicleConnector:items:DJCP:79960404"  
+            "urn:ngsi-ld:VehicleConnector:items:WASN:20285756"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                -22.827501,  
-                -44.485689  
+                -57.2071525,  
+                50.016674  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Fill science against describe include sign. Air man develop oil shake scene fall. Bring though production science.",  
-            "addressLocality": "Draw necessary store catch. Teach half southern understand. Oil mission own move establish available beyond.",  
-            "addressRegion": "Bring sound risk they general. Position officer song knowledge war none.",  
-            "addressCountry": "Evidence consider summer investment east against heavy line. Course every whole perhaps them fear. End collection report. Interview not goal ground political continue.",  
-            "postalCode": "Education thus oil end those. Up feeling approach fire run challenge dog.",  
-            "postOfficeBoxNumber": "Range your whether resource couple bad indicate surface. Head expert in data wonder. Song black write happy several billion."  
+            "streetAddress": "Central successful image tree significant write. Up father cold decision recognize the enter. Opportunity word across large.",  
+            "addressLocality": "His administration perform police program table si",  
+            "addressRegion": "Wear actually market daughter cour",  
+            "addressCountry": "Give true business sport continue over increase newspaper. Arrive support cause shoulder decision. Share sell wrong they.",  
+            "postalCode": "Bring degree cover always particularly none on.",  
+            "postOfficeBoxNumber": "Time those Congress measure best. Relationship development over rec",  
+            "streetNr": "Name approach walk practice. Easy here decide so.",  
+            "district": "Near strategy however finally their plan. Resourc"  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Common him rest understand however color. Answer add during admit they quickly need."  
+        "value": "Lawyer if customer project. Democrat may above sister way prevent. Reason five already best dream."  
     },  
     "rt": {  
         "type": "Property",  
@@ -769,27 +736,26 @@ VehicleConnector:
     },  
     "ratedchargingcapacity": {  
         "type": "Property",  
-        "value": 519.5  
+        "value": 161.4  
     },  
     "rateddischargingcapacity": {  
         "type": "Property",  
-        "value": 460.6  
+        "value": 196.6  
     },  
     "n": {  
         "type": "Property",  
-        "value": "Education particularly employee trade. Dinner research big hope least accept analysis."  
+        "value": "Action stuff hot"  
     },  
     "if": {  
         "type": "Property",  
         "value": [  
-            "oic.if.baseline",  
-            "oic.if.s"  
+            "oic.if.s",  
+            "oic.if.baseline"  
         ]  
     },  
     "type": "VehicleConnector",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
