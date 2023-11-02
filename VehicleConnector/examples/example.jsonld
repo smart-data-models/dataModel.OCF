@@ -1,60 +1,50 @@
 {
-    "id": "urn:ngsi-ld:VehicleConnector:id:JADI:02407105",
-    "dateCreated": "1987-12-29T01:28:41Z",
-    "dateModified": "2007-05-07T23:28:25Z",
-    "source": "Contain member fire popular when great join. Data may job social minute beat east.",
-    "name": "Tv run cold might wall force. Site practice certain state.",
-    "alternateName": "Moment oil trade accept. Especially event piece never. Partner security play mission put support just.",
-    "description": "Case ten according yes. Student only side safe enter. Plan fine civil threat imagine.",
-    "dataProvider": "Month without prepare financial. Theory door number Mrs itself third. Remember job middle energy standard image care.",
+    "id": "urn:ngsi-ld:VehicleConnector:id:JPXG:63090686",
+    "dateCreated": "2004-11-18T08:54:05Z",
+    "dateModified": "2023-01-15T04:30:42Z",
+    "source": "Apply carry speech nor responsibility ",
+    "name": "Friend well happy degree end. Decision a",
+    "alternateName": "Under Congress hand institution analysis establish build listen. Hard forward since try animal executive. Simpl",
+    "description": "Skin family consumer drive. Arm per establish. Style chance have later.",
+    "dataProvider": "Have follow control peace know.",
     "owner": [
-        "urn:ngsi-ld:VehicleConnector:items:GOHP:94242286",
-        "urn:ngsi-ld:VehicleConnector:items:DNMA:32514112"
+        "urn:ngsi-ld:VehicleConnector:items:HMCJ:34623597",
+        "urn:ngsi-ld:VehicleConnector:items:XNIW:54386436"
     ],
     "seeAlso": [
-        "urn:ngsi-ld:VehicleConnector:items:FHFN:25053328",
-        "urn:ngsi-ld:VehicleConnector:items:JUMC:26636842"
+        "urn:ngsi-ld:VehicleConnector:items:WASN:20285756"
     ],
     "location": {
         "type": "Point",
         "coordinates": [
-            -65.886465,
-            -22.450009
+            -57.2071525,
+            50.016674
         ]
     },
     "address": {
-        "streetAddress": "Floor back near although nothing detail. Cultural result page project miss form college. Improve yeah walk sure she whose.",
-        "addressLocality": "Including record happen claim. Itself worry hospital career likely that local. House professional husband record enough set focus. Public goal bank current star begin house.",
-        "addressRegion": "Quality live force just including official. Need season side middle.",
-        "addressCountry": "Under debate city today seem. Rate sing test sport series. Tough public imagine officer answer.",
-        "postalCode": "Health anyone product figure wonder here. You several admit establish everyone age wall. Measure information together technology. Size wish risk move cause Democrat.",
-        "postOfficeBoxNumber": "Beyond defense standard church describe social painting. Matter child capital new sometimes its right. Fact worry fish phone."
+        "streetAddress": "Central successful image tree significant write. Up father cold decision recognize the enter. Opportunity word across large.",
+        "addressLocality": "His administration perform police program table si",
+        "addressRegion": "Wear actually market daughter cour",
+        "addressCountry": "Give true business sport continue over increase newspaper. Arrive support cause shoulder decision. Share sell wrong they.",
+        "postalCode": "Bring degree cover always particularly none on.",
+        "postOfficeBoxNumber": "Time those Congress measure best. Relationship development over rec",
+        "streetNr": "Name approach walk practice. Easy here decide so.",
+        "district": "Near strategy however finally their plan. Resourc"
     },
-    "areaServed": "Southern hour success toward agree choose environment. Size feel his computer door eat weight eye.",
+    "areaServed": "Lawyer if customer project. Democrat may above sister way prevent. Reason five already best dream.",
     "rt": [
-        "oic.r.vehicle.connector",
         "oic.r.vehicle.connector"
     ],
-    "connected": {
-        "type": "Property",
-        "value": true
-    },
-    "ratedchargingcapacity": {
-        "type": "Property",
-        "value": 385.6
-    },
-    "rateddischargingcapacity": {
-        "type": "Property",
-        "value": 679.8
-    },
-    "n": "East man seven explain worry nation choice. Whether trouble young perhaps friend course. As vote hour professional across home.",
+    "connected": false,
+    "ratedchargingcapacity": 161.4,
+    "rateddischargingcapacity": 196.6,
+    "n": "Action stuff hot",
     "if": [
-        "oic.if.baseline",
-        "oic.if.s"
+        "oic.if.s",
+        "oic.if.baseline"
     ],
     "type": "VehicleConnector",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
