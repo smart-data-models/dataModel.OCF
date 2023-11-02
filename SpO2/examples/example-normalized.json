@@ -1,75 +1,126 @@
 {
-  "id": {
-    "type": "string",
-    "value": "urn:ngsi-ld:SpO2:id:UXVB:49250554"
-  },
-  "dateCreated": {
-    "format": "date-time",
-    "type": "string",
-    "value": "1979-10-18T15:29:13Z"
-  },
-  "dateModified": {
-    "format": "date-time",
-    "type": "string",
-    "value": "2012-12-25T02:07:10Z"
-  },
-  "source": {
-    "type": "string",
-    "value": "No own particularly tough marriage west person. Perform country stay necessary best. Move to still less specific general quality clear. It report far over."
-  },
-  "name": {
-    "type": "string",
-    "value": "Exactly join represent. Board least develop."
-  },
-  "alternateName": {
-    "type": "string",
-    "value": "Form after speech think within hotel need effort. Commercial several threat officer paper have side. Sing believe commercial TV vote exactly for continue."
-  },
-  "description": {
-    "type": "string",
-    "value": "Form carry human action much age care future. Well make every recognize. State consumer might continue."
-  },
-  "dataProvider": {
-    "type": "string",
-    "value": "Gun cost leave once amount phone. Beyond save guess approach you big over. Small summer style very value candidate stay wait."
-  },
-  "owner": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:SpO2:items:FOVM:74049734",
-      "urn:ngsi-ld:SpO2:items:VNLZ:87274151"
-    ]
-  },
-  "seeAlso": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:SpO2:items:EDDV:12327755",
-      "urn:ngsi-ld:SpO2:items:PKWK:80687657"
-    ]
-  },
-  "location": {
-    "type": "object",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        -35.838291,
-        27.47286
-      ]
-    }
-  },
-  "address": {
-    "type": "object",
-    "value": {
-      "streetAddress": "Sell main that different. News ground include. Whose fear mouth table each issue.",
-      "addressLocality": "Fall while back.",
-      "addressRegion": "Affect down us new relate. Hold adult despite fear position red hair.",
-      "addressCountry": "Necessary purpose base field imagine mention popular. Discover could fill two field. Policy energy option simply.",
-      "postalCode": "Have your fear single food year. This coach whose total food. Tend call career wife.",
-      "postOfficeBoxNumber": "Consider performance produce black group it instead. Organization after American similar appear."
-    }
-  },
-  "areaServed": {
-    "type": "string",
-    "value": "Traditional society technology little plant on ago. Audience heavy point expect security difficult general read. Participant everybody action Mrs middle enter agency."
-  }
+    "id": "urn:ngsi-ld:SpO2:id:ZKYV:83346917",
+    "dateCreated": {
+        "type": "DateTime",
+        "value": "1984-01-01T13:11:29Z"
+    },
+    "dateModified": {
+        "type": "DateTime",
+        "value": "2010-07-22T14:24:24Z"
+    },
+    "source": {
+        "type": "Text",
+        "value": "Its play American determine say. Stop security so machine seek value lead. Suffer anything late such."
+    },
+    "name": {
+        "type": "Text",
+        "value": "Physical number home radio. Executive wear impact. Tough they floor shake sea."
+    },
+    "alternateName": {
+        "type": "Text",
+        "value": "Computer never different cup test wind body deal. Son four site professional. Bit night ever."
+    },
+    "description": {
+        "type": "Text",
+        "value": "Energy yard close stock describe us. Hear it maybe return tell side better. Mrs begin our seek either impact."
+    },
+    "dataProvider": {
+        "type": "Text",
+        "value": "Toward different assume voice soon role field. Sing term herself police around sing floor. Also behavior treat quality simple"
+    },
+    "owner": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:SpO2:items:QUMD:74880931",
+            "urn:ngsi-ld:SpO2:items:HUFM:32764913"
+        ]
+    },
+    "seeAlso": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:SpO2:items:DFZI:02093368"
+        ]
+    },
+    "location": {
+        "type": "geo:json",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                12.572857,
+                164.962958
+            ]
+        }
+    },
+    "address": {
+        "type": "StructuredValue",
+        "value": {
+            "streetAddress": "Stock senior section even. Ahead Congress throughout sport could. Throughout pay will bu",
+            "addressLocality": "Relate whole note maybe study. Become according page summer often smile. Member community feel.",
+            "addressRegion": "Probably top major. Various new thing carry trouble interesting painting.",
+            "addressCountry": "Happy song explain program us include throw. Live tough nor range design such break.",
+            "postalCode": "Thank plan fly keep the",
+            "postOfficeBoxNumber": "Various value organization son suddenly candidate. Star rest head position second decade time.",
+            "streetNr": "Certain Mrs free develop know once citizen white. Toward all heart close information stand.",
+            "district": "Together whet"
+        }
+    },
+    "areaServed": {
+        "type": "Text",
+        "value": "Education something just final. Issue too any cut pay. Seven indeed memory since."
+    },
+    "spo2": {
+        "type": "Number",
+        "value": 52.3
+    },
+    "perfusion": {
+        "type": "Number",
+        "value": 332.7
+    },
+    "rt": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.r.spo2"
+        ]
+    },
+    "n": {
+        "type": "Text",
+        "value": "Industry alone bed various. Tend bar table always put wheth"
+    },
+    "if": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.if.s"
+        ]
+    },
+    "spo2_range": {
+        "type": "StructuredValue",
+        "value": [
+            766.0,
+            412.2
+        ]
+    },
+    "perfusion_range": {
+        "type": "StructuredValue",
+        "value": [
+            918.2,
+            174.9
+        ]
+    },
+    "spo2_step": {
+        "type": "Number",
+        "value": 223.6
+    },
+    "perfusion_step": {
+        "type": "Number",
+        "value": 323.8
+    },
+    "spo2_precision": {
+        "type": "Number",
+        "value": 250.7
+    },
+    "perfusion_precision": {
+        "type": "Number",
+        "value": 23.1
+    },
+    "type": "SpO2"
 }
