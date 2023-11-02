@@ -32,7 +32,7 @@
                 "capacity": {
                     "description": "Property. The rated capacity for the Device",
                     "minimum": 0,
-                    "exclusiveMinimum": true,
+                    "exclusiveMinimum": 0,
                     "readOnly": true,
                     "type": "number"
                 },
