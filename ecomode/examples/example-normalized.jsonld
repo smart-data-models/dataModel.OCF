@@ -1,79 +1,116 @@
 {
-    "id": "urn:ngsi-ld:ecomode:id:GJVA:13699863",
+    "id": "urn:ngsi-ld:ecomode:id:AHBA:98025070",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1994-11-01T22:23:55Z"
+            "@value": "1985-05-13T16:22:28Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2006-05-08T02:19:52Z"
+            "@value": "2014-07-01T04:44:52Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Color attorney late customer enjoy. Wait think range before. Water save good well city might."
+        "value": "Start general professional career. Large center fin"
     },
     "name": {
         "type": "Property",
-        "value": "Energy happen through difficult sense arm edge. Understand street tree notice dog scene."
+        "value": "North but west. About catch than m"
     },
     "alternateName": {
         "type": "Property",
-        "value": "Enjoy soon son recognize wear site energy. Reality no government allow open easy me."
+        "value": "Sea stuff no response."
     },
     "description": {
         "type": "Property",
-        "value": "Throughout government half somebody piece keep better agent. Eat else society region century affect."
+        "value": "Billion pick report past always future scene heavy. Usually already bed fall character door green save. Front sound war address morning explain."
     },
     "dataProvider": {
         "type": "Property",
-        "value": "Each financial cut maintain. Sign until yourself son act teach particular."
+        "value": "Significant now energy. Lay return identify. Anything event yet effect quite reflect upon."
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:ecomode:items:TLNB:35212256",
-            "urn:ngsi-ld:ecomode:items:JTVR:32851398"
+            "urn:ngsi-ld:ecomode:items:SKZH:38856431",
+            "urn:ngsi-ld:ecomode:items:BSEL:98522509"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:ecomode:items:QBWQ:99867251"
+            "urn:ngsi-ld:ecomode:items:FAZE:54457696"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                -78.420297,
-                -10.920941
+                62.6331415,
+                -156.591688
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "Build myself health. Let generation movie. Safe interest popular buy.",
-            "addressLocality": "Apply idea buy. Like simply point staff each nor member. Nature prevent religious share set fine the.",
-            "addressRegion": "Senior method leader. Research prepare health style. Out might simple interesting marriage space present wall.",
-            "addressCountry": "Result station draw return education professor tend practice. Agency offer sure thus. Visit safe wonder traditional. Name where rate.",
-            "postalCode": "Talk political position anyone building despite. Long candidate stuff away.",
-            "postOfficeBoxNumber": "Congress audience then throw treat here president. Reality situation enter though we high past under. Green outside easy process various or."
+            "streetAddress": "Game act return travel. Secti",
+            "addressLocality": "Someone painting senior entire expect investm",
+            "addressRegion": "Guess we no in pass sound. Tonight gun word citizen create. Physical market room eat through ever.",
+            "addressCountry": "Of door research tell. When clearly type up",
+            "postalCode": "Action econ",
+            "postOfficeBoxNumber": "Let stop camera report foreign agency list miss.",
+            "streetNr": "Not girl above course.",
+            "district": "Likely fire"
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "Political night prove along sure coach. Way system another up herself. Idea high standard make. Short whom sister wait this."
+        "value": "Throughout treat relate respond. Role mind statement."
     },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.ecomode"
+        ]
+    },
+    "modes": {
+        "type": "Property",
+        "value": [
+            "disabled",
+            "enabled"
+        ]
+    },
+    "supportedModes": {
+        "type": "Property",
+        "value": [
+            "notsupported",
+            "disabled"
+        ]
+    },
+    "adminforced": {
+        "type": "Property",
+        "value": true
+    },
+    "n": {
+        "type": "Property",
+        "value": "Spend cut end red. S"
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.a",
+            "oic.if.baseline"
+        ]
+    },
+    "type": "ecomode",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
