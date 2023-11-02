@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: El número del apartado de correos para las direcciones de apartados postales. Por ejemplo, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: El código postal. Por ejemplo, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: La dirección  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Número que identifica una propiedad específica en una vía pública    
 - `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada  - `dateCreated[date-time]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento  - `dateModified[date-time]`: Marca de tiempo de la última modificación de la entidad. Suele ser asignada por la plataforma de almacenamiento  - `description[string]`: Descripción de este artículo  - `id[*]`: Identificador único de la entidad  - `if[array]`: El conjunto de interfaces OCF que admite este recurso  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  - `n[string]`: Nombre descriptivo del recurso  - `name[string]`: El nombre de este artículo  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  - `range[array]`: El rango válido para la Propiedad en el Recurso como un entero. El primer valor de la matriz es el valor mínimo, el segundo valor de la matriz es el valor máximo  - `rgbValue[array]`: El valor RGB; el primer elemento es el R, el segundo el G, el tercero el B  - `rt[array]`: El tipo de recurso  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `step[number]`: Valor de paso a través del rango definido cuando el rango es un número entero.  Este es el incremento para valores válidos a través del rango; así que si el rango es 0..10 y el paso es 2 entonces los valores válidos son 0,2,4,6,8,10  - `type[string]`: Tipo de entidad NGSI. Tiene que ser ColourRGB  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propiedades requeridas  
@@ -435,64 +436,62 @@ ColourRGB:
 <!-- 80-Examples -->  
 ## Ejemplo de carga útil  
 #### ColourRGB NGSI-v2 key-values Ejemplo  
-He aquí un ejemplo de un ColourRGB en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+He aquí un ejemplo de un ColourRGB en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:ColourRGB:id:SBFN:43526348",  
-  "dateCreated": "2004-03-05T02:33:53Z",  
-  "dateModified": "1993-02-07T07:54:02Z",  
-  "source": "Quickly challenge PM interview sense.",  
-  "name": "Although late bar lose might lay any. Onto day success should.",  
-  "alternateName": "Continue want pick. Buy scientist floor Mrs anyone yeah training.",  
-  "description": "Beyond generation through develop some. Past matter upon live per purpose.",  
-  "dataProvider": "Us argue southern. Matter even billion growth game thousand.",  
-  "owner": [  
-    "urn:ngsi-ld:ColourRGB:items:AVKI:08794223",  
-    "urn:ngsi-ld:ColourRGB:items:DXEJ:68189427"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:ColourRGB:items:ZTRB:95997585",  
-    "urn:ngsi-ld:ColourRGB:items:SBPQ:37878570"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      84.505348,  
-      52.402685  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Garden give card determine. Season whether nothing senior popular. Step model father bed miss recently. Church material take choice cut.",  
-    "addressLocality": "News month focus around free surface. Clearly through interview see pressure machine money.",  
-    "addressRegion": "Brother describe agree yes have material list. Soldier alone car bank too talk push. Modern brother gun service I air.",  
-    "addressCountry": "Tend rise certainly water response interesting. Can bad prevent yes worker learn owner. Fight increase bar produce recently. Back road entire look end color reflect exist.",  
-    "postalCode": "Resource nothing week boy. Focus off sister compare seek physical.",  
-    "postOfficeBoxNumber": "Head know general away reduce assume. Represent piece physical investment throughout. Choose news stay throw."  
-  },  
-  "areaServed": "Reach gas send if establish guess short. Audience write police indicate author talk.",  
-  "rt": [  
-    "oic.r.colour.rgb",  
-    "oic.r.colour.rgb"  
-  ],  
-  "rgbValue": [  
-    864,  
-    864  
-  ],  
-  "n": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair.",  
-  "range": [  
-    864,  
-    864  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "if": [  
-    "oic.if.a",  
-    "oic.if.baseline"  
-  ],  
-  "type": "ColourRGB"  
+    "id": "urn:ngsi-ld:ColourRGB:id:KJWY:68382916",  
+    "dateCreated": "2006-08-05T19:36:08Z",  
+    "dateModified": "1995-09-26T08:55:09Z",  
+    "source": "That line reveal big. Reach picture feel note",  
+    "name": "Need Republican nice risk. Evening Republican right then. Trade team less research.",  
+    "alternateName": "Name five now ahead attack. Continue vote behavior a maintain. Himself if Congress large land education.",  
+    "description": "Myself risk finally this discussion. Citizen beautiful want room force sure draw several.",  
+    "dataProvider": "Watch author own stop east point.",  
+    "owner": [  
+        "urn:ngsi-ld:ColourRGB:items:WTEF:42428519",  
+        "urn:ngsi-ld:ColourRGB:items:BGJN:78474606"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:ColourRGB:items:YDVE:88023157"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            37.353019,  
+            142.932264  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Carry thing probably consumer billion less. Account source against. Affect keep happy election cell not.",  
+        "addressLocality": "Important if before senior. Baby prevent possible behavior dark place",  
+        "addressRegion": "Money sing body natural development. Environmental PM chance call son.",  
+        "addressCountry": "Camera foreign behind short prepare already field. Various pick stock year.",  
+        "postalCode": "Discover act feeling control beat newspaper. Wind",  
+        "postOfficeBoxNumber": "West environment appear toward fish. Structure consider early. These first until place character.",  
+        "streetNr": "Over true plant sit pattern. Field also rule program big loss song.",  
+        "district": "Science through own. Surface very hand house."  
+    },  
+    "areaServed": "Establish president meeti",  
+    "rt": [  
+        "oic.r.colour.rgb"  
+    ],  
+    "rgbValue": [  
+        864,  
+        864,  
+        864  
+    ],  
+    "n": "American whole magazine truth stop w",  
+    "range": [  
+        864,  
+        864  
+    ],  
+    "step": 864,  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.a"  
+    ],  
+    "type": "ColourRGB"  
 }  
 ```  
 </details>  
@@ -501,122 +500,112 @@ ColourRGB:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:ColourRGB:id:SBFN:43526348"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2004-03-05T02:33:53Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1993-02-07T07:54:02Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Quickly challenge PM interview sense."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Although late bar lose might lay any. Onto day success should."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Continue want pick. Buy scientist floor Mrs anyone yeah training."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Beyond generation through develop some. Past matter upon live per purpose."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Us argue southern. Matter even billion growth game thousand."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:ColourRGB:items:AVKI:08794223",  
-      "urn:ngsi-ld:ColourRGB:items:DXEJ:68189427"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:ColourRGB:items:ZTRB:95997585",  
-      "urn:ngsi-ld:ColourRGB:items:SBPQ:37878570"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        84.505348,  
-        52.402685  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Garden give card determine. Season whether nothing senior popular. Step model father bed miss recently. Church material take choice cut.",  
-      "addressLocality": "News month focus around free surface. Clearly through interview see pressure machine money.",  
-      "addressRegion": "Brother describe agree yes have material list. Soldier alone car bank too talk push. Modern brother gun service I air.",  
-      "addressCountry": "Tend rise certainly water response interesting. Can bad prevent yes worker learn owner. Fight increase bar produce recently. Back road entire look end color reflect exist.",  
-      "postalCode": "Resource nothing week boy. Focus off sister compare seek physical.",  
-      "postOfficeBoxNumber": "Head know general away reduce assume. Represent piece physical investment throughout. Choose news stay throw."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Reach gas send if establish guess short. Audience write police indicate author talk."  
-  },  
-  "rt": {  
-    "type": "array",  
-    "value": [  
-      "oic.r.colour.rgb",  
-      "oic.r.colour.rgb"  
-    ]  
-  },  
-  "rgbValue": {  
-    "type": "array",  
-    "value": [  
-      864,  
-      864  
-    ]  
-  },  
-  "n": {  
-    "type": "string",  
-    "value": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair."  
-  },  
-  "range": {  
-    "type": "array",  
-    "value": [  
-      864,  
-      864  
-    ]  
-  },  
-  "step": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 864  
-    }  
-  },  
-  "if": {  
-    "type": "array",  
-    "value": [  
-      "oic.if.a",  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "type": {  
-    "type": "string",  
-    "value": "ColourRGB"  
-  }  
+    "id": "urn:ngsi-ld:ColourRGB:id:KJWY:68382916",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "2006-08-05T19:36:08Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "1995-09-26T08:55:09Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "That line reveal big. Reach picture feel note"  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Need Republican nice risk. Evening Republican right then. Trade team less research."  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Name five now ahead attack. Continue vote behavior a maintain. Himself if Congress large land education."  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Myself risk finally this discussion. Citizen beautiful want room force sure draw several."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Watch author own stop east point."  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:ColourRGB:items:WTEF:42428519",  
+            "urn:ngsi-ld:ColourRGB:items:BGJN:78474606"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:ColourRGB:items:YDVE:88023157"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                37.353019,  
+                142.932264  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Carry thing probably consumer billion less. Account source against. Affect keep happy election cell not.",  
+            "addressLocality": "Important if before senior. Baby prevent possible behavior dark place",  
+            "addressRegion": "Money sing body natural development. Environmental PM chance call son.",  
+            "addressCountry": "Camera foreign behind short prepare already field. Various pick stock year.",  
+            "postalCode": "Discover act feeling control beat newspaper. Wind",  
+            "postOfficeBoxNumber": "West environment appear toward fish. Structure consider early. These first until place character.",  
+            "streetNr": "Over true plant sit pattern. Field also rule program big loss song.",  
+            "district": "Science through own. Surface very hand house."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Establish president meeti"  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.colour.rgb"  
+        ]  
+    },  
+    "rgbValue": {  
+        "type": "StructuredValue",  
+        "value": [  
+            864,  
+            864,  
+            864  
+        ]  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "American whole magazine truth stop w"  
+    },  
+    "range": {  
+        "type": "StructuredValue",  
+        "value": [  
+            864,  
+            864  
+        ]  
+    },  
+    "step": {  
+        "type": "Number",  
+        "value": 864  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.baseline",  
+            "oic.if.a"  
+        ]  
+    },  
+    "type": "ColourRGB"  
 }  
 ```  
 </details>  
@@ -625,63 +614,60 @@ ColourRGB:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:ColourRGB:id:SBFN:43526348",  
-    "dateCreated": "2004-03-05T02:33:53Z",  
-    "dateModified": "1993-02-07T07:54:02Z",  
-    "source": "Quickly challenge PM interview sense.",  
-    "name": "Although late bar lose might lay any. Onto day success should.",  
-    "alternateName": "Continue want pick. Buy scientist floor Mrs anyone yeah training.",  
-    "description": "Beyond generation through develop some. Past matter upon live per purpose.",  
-    "dataProvider": "Us argue southern. Matter even billion growth game thousand.",  
+    "id": "urn:ngsi-ld:ColourRGB:id:KJWY:68382916",  
+    "dateCreated": "2006-08-05T19:36:08Z",  
+    "dateModified": "1995-09-26T08:55:09Z",  
+    "source": "That line reveal big. Reach picture feel note",  
+    "name": "Need Republican nice risk. Evening Republican right then. Trade team less research.",  
+    "alternateName": "Name five now ahead attack. Continue vote behavior a maintain. Himself if Congress large land education.",  
+    "description": "Myself risk finally this discussion. Citizen beautiful want room force sure draw several.",  
+    "dataProvider": "Watch author own stop east point.",  
     "owner": [  
-        "urn:ngsi-ld:ColourRGB:items:AVKI:08794223",  
-        "urn:ngsi-ld:ColourRGB:items:DXEJ:68189427"  
+        "urn:ngsi-ld:ColourRGB:items:WTEF:42428519",  
+        "urn:ngsi-ld:ColourRGB:items:BGJN:78474606"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:ColourRGB:items:ZTRB:95997585",  
-        "urn:ngsi-ld:ColourRGB:items:SBPQ:37878570"  
+        "urn:ngsi-ld:ColourRGB:items:YDVE:88023157"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            84.505348,  
-            52.402685  
+            37.353019,  
+            142.932264  
         ]  
     },  
     "address": {  
-        "streetAddress": "Garden give card determine. Season whether nothing senior popular. Step model father bed miss recently. Church material take choice cut.",  
-        "addressLocality": "News month focus around free surface. Clearly through interview see pressure machine money.",  
-        "addressRegion": "Brother describe agree yes have material list. Soldier alone car bank too talk push. Modern brother gun service I air.",  
-        "addressCountry": "Tend rise certainly water response interesting. Can bad prevent yes worker learn owner. Fight increase bar produce recently. Back road entire look end color reflect exist.",  
-        "postalCode": "Resource nothing week boy. Focus off sister compare seek physical.",  
-        "postOfficeBoxNumber": "Head know general away reduce assume. Represent piece physical investment throughout. Choose news stay throw."  
+        "streetAddress": "Carry thing probably consumer billion less. Account source against. Affect keep happy election cell not.",  
+        "addressLocality": "Important if before senior. Baby prevent possible behavior dark place",  
+        "addressRegion": "Money sing body natural development. Environmental PM chance call son.",  
+        "addressCountry": "Camera foreign behind short prepare already field. Various pick stock year.",  
+        "postalCode": "Discover act feeling control beat newspaper. Wind",  
+        "postOfficeBoxNumber": "West environment appear toward fish. Structure consider early. These first until place character.",  
+        "streetNr": "Over true plant sit pattern. Field also rule program big loss song.",  
+        "district": "Science through own. Surface very hand house."  
     },  
-    "areaServed": "Reach gas send if establish guess short. Audience write police indicate author talk.",  
+    "areaServed": "Establish president meeti",  
     "rt": [  
-        "oic.r.colour.rgb",  
         "oic.r.colour.rgb"  
     ],  
     "rgbValue": [  
         864,  
+        864,  
         864  
     ],  
-    "n": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair.",  
+    "n": "American whole magazine truth stop w",  
     "range": [  
         864,  
         864  
     ],  
-    "step": {  
-        "type": "Property",  
-        "value": 864  
-    },  
+    "step": 864,  
     "if": [  
-        "oic.if.a",  
-        "oic.if.baseline"  
+        "oic.if.baseline",  
+        "oic.if.a"  
     ],  
     "type": "ColourRGB",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -691,78 +677,80 @@ ColourRGB:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:ColourRGB:id:VHWB:56558954",  
+    "id": "urn:ngsi-ld:ColourRGB:id:KJWY:68382916",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1991-05-27T05:12:38Z"  
+            "@value": "2006-08-05T19:36:08Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2007-07-25T15:41:21Z"  
+            "@value": "1995-09-26T08:55:09Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Require modern high same meet second. That myself nature industry dinner professional. Central while memory live third far successful half. Hospital avoid allow place."  
+        "value": "That line reveal big. Reach picture feel note"  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Goal picture method everything forward report. Certain probably every figure dog without."  
+        "value": "Need Republican nice risk. Evening Republican right then. Trade team less research."  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Culture coach western act. Vote beat reduce argue discussion investment lot moment."  
+        "value": "Name five now ahead attack. Continue vote behavior a maintain. Himself if Congress large land education."  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Business feel foot itself author little method resource. Bad feeling charge student type. Country green focus walk."  
+        "value": "Myself risk finally this discussion. Citizen beautiful want room force sure draw several."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Party discover organization everyone father nothing science. Reduce surface special here Democrat drop agent. Window evidence establish now month ground."  
+        "value": "Watch author own stop east point."  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:ColourRGB:items:XNXK:84019011",  
-            "urn:ngsi-ld:ColourRGB:items:WREB:79366163"  
+            "urn:ngsi-ld:ColourRGB:items:WTEF:42428519",  
+            "urn:ngsi-ld:ColourRGB:items:BGJN:78474606"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:ColourRGB:items:NLBR:70214598"  
+            "urn:ngsi-ld:ColourRGB:items:YDVE:88023157"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                69.3938615,  
-                -144.508054  
+                37.353019,  
+                142.932264  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "High very participant. Wall indeed medical teacher responsibility set line.",  
-            "addressLocality": "Officer tree answer message state. Result rather and possible must budget. Investment well why race notice key herself arm.",  
-            "addressRegion": "Event find financial whatever this. Course administration ok learn certainly. Response mention new find check.",  
-            "addressCountry": "Around bank between. Family field continue because face man once political. Ever performance bill respond decade.",  
-            "postalCode": "Rule ok beautiful behind and perform. Mr clear when technology. Growth bring water boy six.",  
-            "postOfficeBoxNumber": "Those surface arrive see ball. Rock anyone may subject analysis leg east."  
+            "streetAddress": "Carry thing probably consumer billion less. Account source against. Affect keep happy election cell not.",  
+            "addressLocality": "Important if before senior. Baby prevent possible behavior dark place",  
+            "addressRegion": "Money sing body natural development. Environmental PM chance call son.",  
+            "addressCountry": "Camera foreign behind short prepare already field. Various pick stock year.",  
+            "postalCode": "Discover act feeling control beat newspaper. Wind",  
+            "postOfficeBoxNumber": "West environment appear toward fish. Structure consider early. These first until place character.",  
+            "streetNr": "Over true plant sit pattern. Field also rule program big loss song.",  
+            "district": "Science through own. Surface very hand house."  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Social accept do itself dark decade. Along black about skill six. American language key since life southern. Nice east risk talk identify plant."  
+        "value": "Establish president meeti"  
     },  
     "rt": {  
         "type": "Property",  
@@ -773,37 +761,36 @@ ColourRGB:
     "rgbValue": {  
         "type": "Property",  
         "value": [  
-            378,  
-            453,  
-            21  
+            864,  
+            864,  
+            864  
         ]  
     },  
     "n": {  
         "type": "Property",  
-        "value": "Fight fill sound themselves sea. Candidate southern population within. Amount only help third hospital."  
+        "value": "American whole magazine truth stop w"  
     },  
     "range": {  
         "type": "Property",  
         "value": [  
-            100,  
-            825  
+            864,  
+            864  
         ]  
     },  
     "step": {  
         "type": "Property",  
-        "value": 972  
+        "value": 864  
     },  
     "if": {  
         "type": "Property",  
         "value": [  
-            "oic.if.a",  
-            "oic.if.baseline"  
+            "oic.if.baseline",  
+            "oic.if.a"  
         ]  
     },  
     "type": "ColourRGB",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
