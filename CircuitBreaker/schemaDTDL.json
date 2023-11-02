@@ -28,7 +28,7 @@
             "displayName": "dataProvider",
             "@type": "Property",
             "schema": "string",
-            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity"
         },
         {
             "name": "dateCreated",
@@ -36,7 +36,7 @@
             "displayName": "dateCreated",
             "@type": "Property",
             "schema": "dateTime",
-            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform"
         },
         {
             "name": "dateModified",
@@ -44,7 +44,7 @@
             "displayName": "dateModified",
             "@type": "Property",
             "schema": "dateTime",
-            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform"
         },
         {
             "name": "description",
@@ -60,7 +60,7 @@
             "displayName": "insulationresistance",
             "@type": "Property",
             "schema": "long",
-            "comment": "Insulation resistance of circuit breaker (M Ohm)."
+            "comment": "Insulation resistance of circuit breaker (M Ohm)"
         },
         {
             "name": "leakagecurrent",
@@ -68,7 +68,12 @@
             "displayName": "leakagecurrent",
             "@type": "Property",
             "schema": "long",
-            "comment": "The leakage current in mA."
+            "comment": "The leakage current in mA"
+        },
+        {
+            "name": "location",
+            "writable": true,
+            "displayName": "location"
         },
         {
             "name": "n",
@@ -84,7 +89,7 @@
             "displayName": "name",
             "@type": "Property",
             "schema": "string",
-            "comment": "The name of this item."
+            "comment": "The name of this item"
         },
         {
             "name": "ratedbreakingcurrent",
@@ -92,7 +97,7 @@
             "displayName": "ratedbreakingcurrent",
             "@type": "Property",
             "schema": "long",
-            "comment": "The rated breaking current in Ampere, defined at manufacturing time."
+            "comment": "The rated breaking current in Ampere, defined at manufacturing time"
         },
         {
             "name": "ratedcurrent",
@@ -100,7 +105,7 @@
             "displayName": "ratedcurrent",
             "@type": "Property",
             "schema": "long",
-            "comment": "The rated current in Ampere, defined at manufacturing time."
+            "comment": "The rated current in Ampere, defined at manufacturing time"
         },
         {
             "name": "ratedvoltage",
@@ -108,7 +113,7 @@
             "displayName": "ratedvoltage",
             "@type": "Property",
             "schema": "long",
-            "comment": "The rated voltage in Volts, defined at manufacturing time."
+            "comment": "The rated voltage in Volts, defined at manufacturing time"
         },
         {
             "name": "seeAlso",
@@ -121,7 +126,7 @@
             "displayName": "source",
             "@type": "Property",
             "schema": "string",
-            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object"
         },
         {
             "name": "timestamp",
@@ -129,7 +134,7 @@
             "displayName": "timestamp",
             "@type": "Property",
             "schema": "dateTime",
-            "comment": "An RFC3339 formatted time indicating when the data was observed (e.g.: 2016-02-15T09:19Z, 1996-12-19T16:39:57-08:00). Note that 1/100 time resolution should be used."
+            "comment": "An RFC3339 formatted time indicating when the data was observed (e.g.: 2016-02-15T09:19Z, 1996-12-19T16:39:57-08:00). Note that 1/100 time resolution should be used"
         },
         {
             "@type": "Telemetry",
@@ -138,7 +143,7 @@
                 "@type": "Array",
                 "elementSchema": "string"
             },
-            "comment": "The OCF Interface set supported by this Resource.",
+            "comment": "The OCF Interface set supported by this Resource",
             "displayName": "if"
         },
         {
@@ -180,6 +185,10 @@
                     "schema": "string"
                 },
                 {
+                    "name": "district",
+                    "schema": "string"
+                },
+                {
                     "name": "postOfficeBoxNumber",
                     "schema": "string"
                 },
@@ -190,38 +199,12 @@
                 {
                     "name": "streetAddress",
                     "schema": "string"
+                },
+                {
+                    "name": "streetNr",
+                    "schema": "string"
                 }
             ]
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_Point",
-            "schema": "point"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_LineString",
-            "schema": "lineString"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_Polygon",
-            "schema": "polygon"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_MultiPoint",
-            "schema": "multiPoint"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_MultiLineString",
-            "schema": "multiLineString"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_MultiPolygon",
-            "schema": "multiPolygon"
         },
         {
             "@type": "Telemetry",
