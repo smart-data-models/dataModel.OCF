@@ -18,10 +18,11 @@
 - `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Il paese. Ad esempio, la Spagna  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
 	- `addressLocality[string]`: La località in cui si trova l'indirizzo civico e che si trova nella regione  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
 	- `addressRegion[string]`: La regione in cui si trova la località, e che si trova nel paese  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
-	- `district[string]`: Un distretto è un tipo di divisione amministrativa che, in alcuni paesi, è gestita dal governo locale.    
+	- `district[string]`: Un distretto è un tipo di divisione amministrativa che, in alcuni Paesi, è gestita dal governo locale.    
 	- `postOfficeBoxNumber[string]`: Il numero di casella postale per gli indirizzi di casella postale. Ad esempio, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: Il codice postale. Ad esempio, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: L'indirizzo stradale  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Numero che identifica una proprietà specifica su una strada pubblica    
 - `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `arraycurrent[number]`: Corrente di uscita del campo in Ampere (A)  - `arrayvoltage[number]`: Tensione di uscita del campo in volt (V)  - `dataProvider[string]`: una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata  - `dateCreated[date-time]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `if[array]`: Il set di interfacce OCF supportato da questa risorsa.  - `insulationresistance[number]`: Resistenza di isolamento dell'interruttore (M Ohm)  - `leakagecurrent[number]`: La corrente di dispersione in mA  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `n[string]`: Nome amichevole della risorsa  - `name[string]`: Il nome di questo elemento  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `ratedarraycurrent[number]`: Corrente nominale del campo (valori nominali della corrente di potenza massima * numero di moduli) (A), definita al momento della produzione  - `ratedarrayvoltage[number]`: Tensione nominale del campo (valori nominali della tensione di potenza massima * numero di moduli) (V)  - `rt[array]`: Il tipo di risorsa  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `timestamp[date-time]`: Un orario formattato RFC3339 che indica quando i dati sono stati osservati (ad esempio: 2016-02-15T09:19Z, 1996-12-19T16:39:57-08:00). Si noti che deve essere utilizzata una risoluzione temporale di 1/100  - `type[string]`: Tipo di entità NGSI. Deve essere PVArrayConnectionTerminal  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Proprietà richieste  
@@ -461,73 +462,55 @@ PVArrayConnectionTerminal:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:PVArrayConnectionTerminal:id:PBQS:43835461",  
-  "dateCreated": "2012-07-24T16:11:16Z",  
-  "dateModified": "2003-05-24T19:12:32Z",  
-  "source": "Area able surface south attention measure involve. Establish product because floor reason exist design effect. Place point Republican conference ten. Professional teach budget mother unit.",  
-  "name": "Send offer season significant. Or glass especially Democrat enter spring people.",  
-  "alternateName": "Six benefit relationship. Language stay she fact explain growth sister. Reach reveal police day key read office.",  
-  "description": "Two might million benefit continue specific clearly street. Society dream show of.",  
-  "dataProvider": "Bad either recently rate candidate plan. Deep young again pass provide something ok.",  
-  "owner": [  
-    "urn:ngsi-ld:PVArrayConnectionTerminal:items:GZHR:33550282",  
-    "urn:ngsi-ld:PVArrayConnectionTerminal:items:JFYB:81797940"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:PVArrayConnectionTerminal:items:QZDS:82605439",  
-    "urn:ngsi-ld:PVArrayConnectionTerminal:items:CCOW:10298726"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -16.2130695,  
-      103.091866  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Like business much top tree fish. Exist place he two. Weight stop ball development yard already. Record cultural ground foreign purpose director make.",  
-    "addressLocality": "Police subject cup figure media stuff. My through sure good scene. Less action among hard quite leave stand apply.",  
-    "addressRegion": "Notice my power know water standard. Actually none effect at smile.",  
-    "addressCountry": "Production defense however dinner say successful. Ok model enter subject kid reduce art.",  
-    "postalCode": "Physical management she fish land director. Name nothing beyond kitchen.",  
-    "postOfficeBoxNumber": "Rock economic add physical power. Away physical size woman garden surface foreign."  
-  },  
-  "areaServed": "Over choice nearly they budget find. Power others environmental since page brother party house.",  
-  "rt": [  
-    "oic.r.pvconnectionterminal",  
-    "oic.r.pvconnectionterminal"  
-  ],  
-  "ratedarrayvoltage": {  
-    "type": "Property",  
-    "value": 391.0  
-  },  
-  "ratedarraycurrent": {  
-    "type": "Property",  
-    "value": 169.2  
-  },  
-  "arrayvoltage": {  
-    "type": "Property",  
-    "value": 763.9  
-  },  
-  "arraycurrent": {  
-    "type": "Property",  
-    "value": 519.0  
-  },  
-  "leakagecurrent": {  
-    "type": "Property",  
-    "value": 313.0  
-  },  
-  "insulationresistance": {  
-    "type": "Property",  
-    "value": 348.8  
-  },  
-  "timestamp": "1979-06-05T23:42:36Z",  
-  "n": "Reason movie student performance. Best gas including. Huge food deep relate raise fear.",  
-  "if": [  
-    "oic.if.baseline",  
-    "oic.if.s"  
-  ],  
-  "type": "PVArrayConnectionTerminal"  
+    "id": "urn:ngsi-ld:PVArrayConnectionTerminal:id:KTUG:11578156",  
+    "dateCreated": "2007-08-08T01:12:34Z",  
+    "dateModified": "2002-06-18T03:24:51Z",  
+    "source": "Employee source ",  
+    "name": "Board necessary religious natural sport music white. Natural explain before something first drug contain start. Party prevent live.",  
+    "alternateName": "Theory type successful together. Raise study modern miss dog Democrat quickly.",  
+    "description": "Every manage political record word group food break. Picture suddenly drug rule bring determine some forward. Beyond chair recently and.",  
+    "dataProvider": "Own available buy country store build before. Alread",  
+    "owner": [  
+        "urn:ngsi-ld:PVArrayConnectionTerminal:items:UJLN:86914131",  
+        "urn:ngsi-ld:PVArrayConnectionTerminal:items:GILX:20870916"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:PVArrayConnectionTerminal:items:QIDT:79230225"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            28.732768,  
+            177.344405  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Likely improve notice. True power home price check real leader.",  
+        "addressLocality": "School n",  
+        "addressRegion": "Organization recognize civil. Pm her then nothing increase.",  
+        "addressCountry": "Industry product another knowledge else citizen month. Traditional page a although for study anyone. Could yourself plan base rise would.",  
+        "postalCode": "First degree response able state m",  
+        "postOfficeBoxNumber": "Son break either president stage population boy. Everything affect American race.",  
+        "streetNr": "Water voice travel among see red. Republican total policy head Mrs deb",  
+        "district": "Full per among clearly. Face hou"  
+    },  
+    "areaServed": "Buy break marriage also friend reach. Turn phone heart window. Assume be seek article.",  
+    "rt": [  
+        "oic.r.pvconnectionterminal"  
+    ],  
+    "ratedarrayvoltage": 650.3,  
+    "ratedarraycurrent": 64.9,  
+    "arrayvoltage": 382.2,  
+    "arraycurrent": 379.1,  
+    "leakagecurrent": 81.8,  
+    "insulationresistance": 533.9,  
+    "timestamp": "1994-06-14T12:11:52Z",  
+    "n": "Standard towa",  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.s"  
+    ],  
+    "type": "PVArrayConnectionTerminal"  
 }  
 ```  
 </details>  
@@ -536,148 +519,121 @@ PVArrayConnectionTerminal:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:PVArrayConnectionTerminal:id:PBQS:43835461"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2012-07-24T16:11:16Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2003-05-24T19:12:32Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Area able surface south attention measure involve. Establish product because floor reason exist design effect. Place point Republican conference ten. Professional teach budget mother unit."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Send offer season significant. Or glass especially Democrat enter spring people."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Six benefit relationship. Language stay she fact explain growth sister. Reach reveal police day key read office."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Two might million benefit continue specific clearly street. Society dream show of."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Bad either recently rate candidate plan. Deep young again pass provide something ok."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:PVArrayConnectionTerminal:items:GZHR:33550282",  
-      "urn:ngsi-ld:PVArrayConnectionTerminal:items:JFYB:81797940"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:PVArrayConnectionTerminal:items:QZDS:82605439",  
-      "urn:ngsi-ld:PVArrayConnectionTerminal:items:CCOW:10298726"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -16.2130695,  
-        103.091866  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Like business much top tree fish. Exist place he two. Weight stop ball development yard already. Record cultural ground foreign purpose director make.",  
-      "addressLocality": "Police subject cup figure media stuff. My through sure good scene. Less action among hard quite leave stand apply.",  
-      "addressRegion": "Notice my power know water standard. Actually none effect at smile.",  
-      "addressCountry": "Production defense however dinner say successful. Ok model enter subject kid reduce art.",  
-      "postalCode": "Physical management she fish land director. Name nothing beyond kitchen.",  
-      "postOfficeBoxNumber": "Rock economic add physical power. Away physical size woman garden surface foreign."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Over choice nearly they budget find. Power others environmental since page brother party house."  
-  },  
-  "rt": {  
-    "type": "array",  
-    "value": [  
-      "oic.r.pvconnectionterminal",  
-      "oic.r.pvconnectionterminal"  
-    ]  
-  },  
-  "ratedarrayvoltage": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 391.0  
-    }  
-  },  
-  "ratedarraycurrent": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 169.2  
-    }  
-  },  
-  "arrayvoltage": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 763.9  
-    }  
-  },  
-  "arraycurrent": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 519.0  
-    }  
-  },  
-  "leakagecurrent": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 313.0  
-    }  
-  },  
-  "insulationresistance": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 348.8  
-    }  
-  },  
-  "timestamp": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1979-06-05T23:42:36Z"  
-  },  
-  "n": {  
-    "type": "string",  
-    "value": "Reason movie student performance. Best gas including. Huge food deep relate raise fear."  
-  },  
-  "if": {  
-    "type": "array",  
-    "value": [  
-      "oic.if.baseline",  
-      "oic.if.s"  
-    ]  
-  },  
-  "type": {  
-    "type": "string",  
-    "value": "PVArrayConnectionTerminal"  
-  }  
+    "id": "urn:ngsi-ld:PVArrayConnectionTerminal:id:KTUG:11578156",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "2007-08-08T01:12:34Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "2002-06-18T03:24:51Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Employee source "  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Board necessary religious natural sport music white. Natural explain before something first drug contain start. Party prevent live."  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Theory type successful together. Raise study modern miss dog Democrat quickly."  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Every manage political record word group food break. Picture suddenly drug rule bring determine some forward. Beyond chair recently and."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Own available buy country store build before. Alread"  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:PVArrayConnectionTerminal:items:UJLN:86914131",  
+            "urn:ngsi-ld:PVArrayConnectionTerminal:items:GILX:20870916"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:PVArrayConnectionTerminal:items:QIDT:79230225"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                28.732768,  
+                177.344405  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Likely improve notice. True power home price check real leader.",  
+            "addressLocality": "School n",  
+            "addressRegion": "Organization recognize civil. Pm her then nothing increase.",  
+            "addressCountry": "Industry product another knowledge else citizen month. Traditional page a although for study anyone. Could yourself plan base rise would.",  
+            "postalCode": "First degree response able state m",  
+            "postOfficeBoxNumber": "Son break either president stage population boy. Everything affect American race.",  
+            "streetNr": "Water voice travel among see red. Republican total policy head Mrs deb",  
+            "district": "Full per among clearly. Face hou"  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Buy break marriage also friend reach. Turn phone heart window. Assume be seek article."  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.pvconnectionterminal"  
+        ]  
+    },  
+    "ratedarrayvoltage": {  
+        "type": "Number",  
+        "value": 650.3  
+    },  
+    "ratedarraycurrent": {  
+        "type": "Number",  
+        "value": 64.9  
+    },  
+    "arrayvoltage": {  
+        "type": "Number",  
+        "value": 382.2  
+    },  
+    "arraycurrent": {  
+        "type": "Number",  
+        "value": 379.1  
+    },  
+    "leakagecurrent": {  
+        "type": "Number",  
+        "value": 81.8  
+    },  
+    "insulationresistance": {  
+        "type": "Number",  
+        "value": 533.9  
+    },  
+    "timestamp": {  
+        "type": "DateTime",  
+        "value": "1994-06-14T12:11:52Z"  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Standard towa"  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.baseline",  
+            "oic.if.s"  
+        ]  
+    },  
+    "type": "PVArrayConnectionTerminal"  
 }  
 ```  
 </details>  
@@ -686,76 +642,57 @@ PVArrayConnectionTerminal:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:PVArrayConnectionTerminal:id:PBQS:43835461",  
-    "dateCreated": "2012-07-24T16:11:16Z",  
-    "dateModified": "2003-05-24T19:12:32Z",  
-    "source": "Area able surface south attention measure involve. Establish product because floor reason exist design effect. Place point Republican conference ten. Professional teach budget mother unit.",  
-    "name": "Send offer season significant. Or glass especially Democrat enter spring people.",  
-    "alternateName": "Six benefit relationship. Language stay she fact explain growth sister. Reach reveal police day key read office.",  
-    "description": "Two might million benefit continue specific clearly street. Society dream show of.",  
-    "dataProvider": "Bad either recently rate candidate plan. Deep young again pass provide something ok.",  
+    "id": "urn:ngsi-ld:PVArrayConnectionTerminal:id:KTUG:11578156",  
+    "dateCreated": "2007-08-08T01:12:34Z",  
+    "dateModified": "2002-06-18T03:24:51Z",  
+    "source": "Employee source ",  
+    "name": "Board necessary religious natural sport music white. Natural explain before something first drug contain start. Party prevent live.",  
+    "alternateName": "Theory type successful together. Raise study modern miss dog Democrat quickly.",  
+    "description": "Every manage political record word group food break. Picture suddenly drug rule bring determine some forward. Beyond chair recently and.",  
+    "dataProvider": "Own available buy country store build before. Alread",  
     "owner": [  
-        "urn:ngsi-ld:PVArrayConnectionTerminal:items:GZHR:33550282",  
-        "urn:ngsi-ld:PVArrayConnectionTerminal:items:JFYB:81797940"  
+        "urn:ngsi-ld:PVArrayConnectionTerminal:items:UJLN:86914131",  
+        "urn:ngsi-ld:PVArrayConnectionTerminal:items:GILX:20870916"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:PVArrayConnectionTerminal:items:QZDS:82605439",  
-        "urn:ngsi-ld:PVArrayConnectionTerminal:items:CCOW:10298726"  
+        "urn:ngsi-ld:PVArrayConnectionTerminal:items:QIDT:79230225"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            -16.2130695,  
-            103.091866  
+            28.732768,  
+            177.344405  
         ]  
     },  
     "address": {  
-        "streetAddress": "Like business much top tree fish. Exist place he two. Weight stop ball development yard already. Record cultural ground foreign purpose director make.",  
-        "addressLocality": "Police subject cup figure media stuff. My through sure good scene. Less action among hard quite leave stand apply.",  
-        "addressRegion": "Notice my power know water standard. Actually none effect at smile.",  
-        "addressCountry": "Production defense however dinner say successful. Ok model enter subject kid reduce art.",  
-        "postalCode": "Physical management she fish land director. Name nothing beyond kitchen.",  
-        "postOfficeBoxNumber": "Rock economic add physical power. Away physical size woman garden surface foreign."  
+        "streetAddress": "Likely improve notice. True power home price check real leader.",  
+        "addressLocality": "School n",  
+        "addressRegion": "Organization recognize civil. Pm her then nothing increase.",  
+        "addressCountry": "Industry product another knowledge else citizen month. Traditional page a although for study anyone. Could yourself plan base rise would.",  
+        "postalCode": "First degree response able state m",  
+        "postOfficeBoxNumber": "Son break either president stage population boy. Everything affect American race.",  
+        "streetNr": "Water voice travel among see red. Republican total policy head Mrs deb",  
+        "district": "Full per among clearly. Face hou"  
     },  
-    "areaServed": "Over choice nearly they budget find. Power others environmental since page brother party house.",  
+    "areaServed": "Buy break marriage also friend reach. Turn phone heart window. Assume be seek article.",  
     "rt": [  
-        "oic.r.pvconnectionterminal",  
         "oic.r.pvconnectionterminal"  
     ],  
-    "ratedarrayvoltage": {  
-        "type": "Property",  
-        "value": 391.0  
-    },  
-    "ratedarraycurrent": {  
-        "type": "Property",  
-        "value": 169.2  
-    },  
-    "arrayvoltage": {  
-        "type": "Property",  
-        "value": 763.9  
-    },  
-    "arraycurrent": {  
-        "type": "Property",  
-        "value": 519.0  
-    },  
-    "leakagecurrent": {  
-        "type": "Property",  
-        "value": 313.0  
-    },  
-    "insulationresistance": {  
-        "type": "Property",  
-        "value": 348.8  
-    },  
-    "timestamp": "1979-06-05T23:42:36Z",  
-    "n": "Reason movie student performance. Best gas including. Huge food deep relate raise fear.",  
+    "ratedarrayvoltage": 650.3,  
+    "ratedarraycurrent": 64.9,  
+    "arrayvoltage": 382.2,  
+    "arraycurrent": 379.1,  
+    "leakagecurrent": 81.8,  
+    "insulationresistance": 533.9,  
+    "timestamp": "1994-06-14T12:11:52Z",  
+    "n": "Standard towa",  
     "if": [  
         "oic.if.baseline",  
         "oic.if.s"  
     ],  
     "type": "PVArrayConnectionTerminal",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -765,78 +702,80 @@ PVArrayConnectionTerminal:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:PVArrayConnectionTerminal:id:TSKM:94319420",  
+    "id": "urn:ngsi-ld:PVArrayConnectionTerminal:id:KTUG:11578156",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1985-04-07T15:49:57Z"  
+            "@value": "2007-08-08T01:12:34Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2001-06-17T14:35:04Z"  
+            "@value": "2002-06-18T03:24:51Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Sit animal word hair design. Suffer until town human. Ever statement race ready also TV rock. Indicate sing rate your civil reality house."  
+        "value": "Employee source "  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Behavior Congress skill region huge. Young put sound agreement especially line section. Management approach work high great available charge rate."  
+        "value": "Board necessary religious natural sport music white. Natural explain before something first drug contain start. Party prevent live."  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Success south top especially. City ask store lawyer."  
+        "value": "Theory type successful together. Raise study modern miss dog Democrat quickly."  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Hospital father remember including enjoy special. Green military interesting close they. Culture health doctor light seem magazine."  
+        "value": "Every manage political record word group food break. Picture suddenly drug rule bring determine some forward. Beyond chair recently and."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Anything performance building its drug. Character officer dream bar open body reflect."  
+        "value": "Own available buy country store build before. Alread"  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:PVArrayConnectionTerminal:items:WIPM:01594399",  
-            "urn:ngsi-ld:PVArrayConnectionTerminal:items:MNFV:28890953"  
+            "urn:ngsi-ld:PVArrayConnectionTerminal:items:UJLN:86914131",  
+            "urn:ngsi-ld:PVArrayConnectionTerminal:items:GILX:20870916"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:PVArrayConnectionTerminal:items:VXKM:24155728"  
+            "urn:ngsi-ld:PVArrayConnectionTerminal:items:QIDT:79230225"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                -56.20957,  
-                -170.652443  
+                28.732768,  
+                177.344405  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Tv second concern least price relationship. International fly debate indicate exactly. Business experience control relate entire style game.",  
-            "addressLocality": "Themselves go financial skill sound full half. Mr our accept plant adult beat partner. Red present movement option reason low indicate.",  
-            "addressRegion": "Usually stand evening deep activity. Instead catch physical song cell. Unit member would dinner form other water treat.",  
-            "addressCountry": "Share place reduce available leader nor. Smile them fly. Can main example water technology world break.",  
-            "postalCode": "Assume fight fund them number white. Music again knowledge defense. Establish once those degree board data.",  
-            "postOfficeBoxNumber": "Wear air crime performance."  
+            "streetAddress": "Likely improve notice. True power home price check real leader.",  
+            "addressLocality": "School n",  
+            "addressRegion": "Organization recognize civil. Pm her then nothing increase.",  
+            "addressCountry": "Industry product another knowledge else citizen month. Traditional page a although for study anyone. Could yourself plan base rise would.",  
+            "postalCode": "First degree response able state m",  
+            "postOfficeBoxNumber": "Son break either president stage population boy. Everything affect American race.",  
+            "streetNr": "Water voice travel among see red. Republican total policy head Mrs deb",  
+            "district": "Full per among clearly. Face hou"  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Fill person national. Concern dream upon."  
+        "value": "Buy break marriage also friend reach. Turn phone heart window. Assume be seek article."  
     },  
     "rt": {  
         "type": "Property",  
@@ -846,50 +785,49 @@ PVArrayConnectionTerminal:
     },  
     "ratedarrayvoltage": {  
         "type": "Property",  
-        "value": 775.5  
+        "value": 650.3  
     },  
     "ratedarraycurrent": {  
         "type": "Property",  
-        "value": 712.8  
+        "value": 64.9  
     },  
     "arrayvoltage": {  
         "type": "Property",  
-        "value": 977.5  
+        "value": 382.2  
     },  
     "arraycurrent": {  
         "type": "Property",  
-        "value": 460.0  
+        "value": 379.1  
     },  
     "leakagecurrent": {  
         "type": "Property",  
-        "value": 951.2  
+        "value": 81.8  
     },  
     "insulationresistance": {  
         "type": "Property",  
-        "value": 438.9  
+        "value": 533.9  
     },  
     "timestamp": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1976-04-28T20:02:52Z"  
+            "@value": "1994-06-14T12:11:52Z"  
         }  
     },  
     "n": {  
         "type": "Property",  
-        "value": "Owner surface news eat piece land. Front realize cover week within along. Student war painting rate."  
+        "value": "Standard towa"  
     },  
     "if": {  
         "type": "Property",  
         "value": [  
-            "oic.if.s",  
-            "oic.if.baseline"  
+            "oic.if.baseline",  
+            "oic.if.s"  
         ]  
     },  
     "type": "PVArrayConnectionTerminal",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
