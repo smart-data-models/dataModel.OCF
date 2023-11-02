@@ -1,34 +1,45 @@
 {
-  "id": "urn:ngsi-ld:UVBRadiation:id:RUFN:84434026",
-  "dateCreated": "1979-02-01T21:38:01Z",
-  "dateModified": "1988-11-04T08:50:06Z",
-  "source": "Shake business seem why state until. Memory western we which back technology speech health. Push performance scene information radio total college.",
-  "name": "Turn program teach heavy son. Bad bank yeah. All security water indicate teach.",
-  "alternateName": "American theory gas other. Down where tend benefit position model friend use. Democrat director air each teach audience. Democratic painting center former.",
-  "description": "College color amount individual job quality. Employee region modern wear look short employee. Red strong song each activity conference.",
-  "dataProvider": "Loss return food life she blue here throw. Major Democrat sister husband street kind. Sport white station difference movie population in help.",
-  "owner": [
-    "urn:ngsi-ld:UVBRadiation:items:OYEQ:78049778",
-    "urn:ngsi-ld:UVBRadiation:items:ETDC:16806735"
-  ],
-  "seeAlso": [
-    "urn:ngsi-ld:UVBRadiation:items:MKPQ:73465414",
-    "urn:ngsi-ld:UVBRadiation:items:KUHU:28508572"
-  ],
-  "location": {
-    "type": "Point",
-    "coordinates": [
-      -89.050093,
-      -69.422876
-    ]
-  },
-  "address": {
-    "streetAddress": "Shake assume apply space indeed window. Ok shoulder responsibility person us increase. As check attention book.",
-    "addressLocality": "No spend sport owner. Interesting relate form yet score market.",
-    "addressRegion": "Back which pick war.",
-    "addressCountry": "Agent bar high single. Risk piece chance likely often television. Might science catch indicate save. Officer wrong become part move assume.",
-    "postalCode": "Carry move position goal. Plan whom past current alone environmental. Two better suddenly bed gun challenge.",
-    "postOfficeBoxNumber": "Author be federal long paper product. Enjoy catch cell company even act yard. Kitchen field visit true determine imagine yes."
-  },
-  "areaServed": "Which boy see no audience sound. Everything but air reach sing perhaps red. Agree set performance practice tend send."
+    "id": "urn:ngsi-ld:UVBRadiation:id:DAAT:22565561",
+    "dateCreated": "2006-10-26T08:41:06Z",
+    "dateModified": "1987-04-06T20:33:21Z",
+    "source": "World foreign open miss share. Sea push determine leave me down. Mean trip yeah against goal.",
+    "name": "Pretty dog out edge everything. Way instead trial western quickly sea easy establish.",
+    "alternateName": "Light girl thought land myself probably step.",
+    "description": "Among first material professor live quickly important. Son m",
+    "dataProvider": "Manage up lose draw security item season wide. Environment buy between model effect trade once. Also camera party couple window son.",
+    "owner": [
+        "urn:ngsi-ld:UVBRadiation:items:HBDC:38129595",
+        "urn:ngsi-ld:UVBRadiation:items:IGYI:62683417"
+    ],
+    "seeAlso": [
+        "urn:ngsi-ld:UVBRadiation:items:TLXJ:54023310"
+    ],
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            -77.4075855,
+            16.228071
+        ]
+    },
+    "address": {
+        "streetAddress": "Site budget call remember hotel. Race determine old first feel it.",
+        "addressLocality": "Challenge poor far middle possible join page. Even source attorney dinner protect return science. Together me knowledge agree security.",
+        "addressRegion": "New to voice adult summer yet. Method environment issue.",
+        "addressCountry": "According huge whatever hotel next ever experience. Student partner bring unit economic bed usually.",
+        "postalCode": "Difference factor thus key program pop",
+        "postOfficeBoxNumber": "Them drug news but seven detail physical.",
+        "streetNr": "However station rest seek. Change thing financial. Than listen base. Should return person.",
+        "district": "Sound effect quickly bar chance TV. Hair then I."
+    },
+    "areaServed": "Free resource though information tough economy center. Return space statement just stock market.",
+    "rt": [
+        "oic.r.sensor.radiation.uvb"
+    ],
+    "measurement": 454.5,
+    "n": "Very write already source stock small whom",
+    "if": [
+        "oic.if.baseline",
+        "oic.if.s"
+    ],
+    "type": "UVBRadiation"
 }
