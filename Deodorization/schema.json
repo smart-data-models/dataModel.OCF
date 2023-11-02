@@ -12,69 +12,71 @@
     },
     {
       "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "rt": {
+          "description": "Property. The Resource Type.",
+          "items": {
+            "enum": [
+              "oic.r.deodorization"
+            ],
+            "maxLength": 64,
+            "type": "string"
+          },
+          "minItems": 1,
+          "uniqueItems": true,
+          "readOnly": true,
+          "type": "array"
+        },
+        "mode": {
+          "description": "Property. The modes of the Deodorization function.",
+          "enum": [
+            "off",
+            "on",
+            "auto"
+          ],
+          "type": "string"
+        },
+        "currentstate": {
+          "description": "Property. The current state of the Deodorization function.",
+          "enum": [
+            "off",
+            "on"
+          ],
+          "readOnly": true,
+          "type": "string"
+        },
+        "n": {
+          "type": "string",
+          "maxLength": 64,
+          "readOnly": true,
+          "description": "Property. Friendly name of the Resource"
+        },
+        "if": {
+          "description": "Property. The OCF Interface set supported by this Resource.",
+          "items": {
+            "enum": [
+              "oic.if.a",
+              "oic.if.baseline"
+            ],
+            "type": "string"
+          },
+          "minItems": 2,
+          "uniqueItems": true,
+          "readOnly": true,
+          "type": "array"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "Deodorization"
+          ],
+          "description": "Property. NGSI entity type. It has to be Deodorization"
+        }
+      }
     }
   ],
-  "properties": {
-    "rt": {
-      "description": "Property. The Resource Type.",
-      "items": {
-        "enum": [
-          "oic.r.deodorization"
-        ],
-        "maxLength": 64,
-        "type": "string"
-      },
-      "minItems": 1,
-      "uniqueItems": true,
-      "readOnly": true,
-      "type": "array"
-    },
-    "mode": {
-      "description": "Property. The modes of the Deodorization function.",
-      "enum": [
-        "off",
-        "on",
-        "auto"
-      ],
-      "type": "string"
-    },
-    "currentstate": {
-      "description": "Property. The current state of the Deodorization function.",
-      "enum": [
-        "off",
-        "on"
-      ],
-      "readOnly": true,
-      "type": "string"
-    },
-    "n": {
-      "type": "string",
-      "maxLength": 64,
-      "readOnly": true,
-      "description": "Property. Friendly name of the Resource"
-    },
-    "if": {
-      "description": "Property. The OCF Interface set supported by this Resource.",
-      "items": {
-        "enum": [
-          "oic.if.a",
-          "oic.if.baseline"
-        ],
-        "type": "string"
-      },
-      "minItems": 2,
-      "uniqueItems": true,
-      "readOnly": true,
-      "type": "array"
-    },
-    "type": {
-      "type": "string",
-      "enum": [
-        "Deodorization"
-      ],
-      "description": "Property. NGSI entity type. It has to be Deodorization"
-    }
-  },
   "derivedFrom": "https://github.com/OpenInterConnect/IoTDataModels/blob/master/DeodorizationResURI.swagger.json",
   "license": "https://github.com/OpenInterConnect/IoTDataModels/blob/master/README.md",
   "required": [
