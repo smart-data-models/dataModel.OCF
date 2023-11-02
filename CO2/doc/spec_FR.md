@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: Le numéro de la boîte postale pour les adresses de boîtes postales. Par exemple, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: Le code postal. Par exemple, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: L'adresse de la rue  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Numéro identifiant une propriété spécifique sur une voie publique    
 - `alternateName[string]`: Un nom alternatif pour ce poste  - `areaServed[string]`: La zone géographique où un service ou un article est offert  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées  - `dateCreated[date-time]`: Horodatage de la création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage  - `dateModified[date-time]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage  - `description[string]`: Une description de l'article  - `id[*]`: Identifiant unique de l'entité  - `if[array]`: L'ensemble d'interfaces OCF pris en charge par cette ressource  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une chaîne de ligne, d'un polygone, d'un point multiple, d'une chaîne de ligne multiple ou d'un polygone multiple.  - `measurement[number]`: Valeur mesurée pour ce capteur, unités en ppm  - `n[string]`: Nom amical de la ressource  - `name[string]`: Le nom de cet élément  - `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  - `precision[number]`: Lorsqu'elle est exposée, la valeur de "précision" fournit une tolérance de +/- par rapport aux propriétés de la ressource. Ainsi, si une propriété est mise à jour avec une valeur et que cette propriété est ensuite récupérée, la valeur récupérée est valide si elle se situe dans la plage de la valeur définie +/- précision.  - `range[array]`: L'intervalle de validité de la propriété dans la ressource sous la forme d'un nombre. La première valeur du tableau est la valeur minimale, la deuxième valeur du tableau est la valeur maximale.  - `rt[array]`: Le type de ressource  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  - `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  - `step[number]`: Valeur de l'échelon dans la plage définie - un entier lorsque la plage est un nombre.  Il s'agit de l'incrément pour les valeurs valides dans la plage ; ainsi, si la plage est 0.0..10.0 et que le pas est 2.5, les valeurs valides sont 0.0,2.5,5.0,7.5,10.0.  - `type[string]`: Type d'entité NGSI. Il doit s'agir de CO2  - `value[boolean]`: L'indicateur de dioxyde de carbone, vrai = détecté, faux = non détecté  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propriétés requises  
@@ -449,68 +450,56 @@ CO2:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:CO2:id:CCNH:15843409",  
-  "dateCreated": "1986-12-14T04:30:52Z",  
-  "dateModified": "2015-09-11T00:07:26Z",  
-  "source": "Prove action boy today city do. Spend effort watch first.",  
-  "name": "Meeting could respond individual bed receive four. Key worker suggest learn Congress.",  
-  "alternateName": "Collection small find per word cup explain check. Body list they American newspaper purpose although.",  
-  "description": "Theory consider teach north news different. Deal partner money.",  
-  "dataProvider": "Because officer quite walk next reveal recognize. Place break fight take.",  
-  "owner": [  
-    "urn:ngsi-ld:CO2:items:UXPG:87304304",  
-    "urn:ngsi-ld:CO2:items:USYI:41576659"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:CO2:items:CMQE:26360445",  
-    "urn:ngsi-ld:CO2:items:SUUK:32060695"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -38.7693965,  
-      35.719856  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Me force entire money finish ten sure property. Tax good probably shake discuss political general glass.",  
-    "addressLocality": "Ground everything join fish apply. Yet small easy door. Somebody bill benefit individual happy relationship. Tax all source evening particular charge.",  
-    "addressRegion": "Hold cut attention community wish form. Board call simple operation notice range industry. Outside institution deep nor.",  
-    "addressCountry": "Night state issue although however system development. Much great authority claim no church black agency.",  
-    "postalCode": "Wrong move make job themselves still federal pull. Relationship everyone family. Audience trial article book soldier.",  
-    "postOfficeBoxNumber": "Fall light black several Mrs Congress knowledge hear. Door big population."  
-  },  
-  "areaServed": "Cause easy sister themselves protect type field.",  
-  "rt": [  
-    "oic.r.sensor.carbondioxide",  
-    "oic.r.sensor.carbondioxide"  
-  ],  
-  "value": {  
-    "type": "Property",  
-    "value": true  
-  },  
-  "measurement": {  
-    "type": "Property",  
-    "value": 80.6  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 106.0  
-  },  
-  "n": "Itself now ball so. Quality upon outside risk likely stock budget.",  
-  "range": [  
-    335.3,  
-    963.5  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 383.7  
-  },  
-  "if": [  
-    "oic.if.s",  
-    "oic.if.s"  
-  ],  
-  "type": "CO2"  
+    "id": "urn:ngsi-ld:CO2:id:ECDY:29770386",  
+    "dateCreated": "2006-01-06T20:14:07Z",  
+    "dateModified": "1973-10-28T17:23:17Z",  
+    "source": "Bar nature agent we country various friend week. Range like science set.",  
+    "name": "Rock improve author produce. Green city wonder their around.",  
+    "alternateName": "Guy collection store. Whether most operati",  
+    "description": "Arrive land art sing notice crime stuff improve. One just peace show interview act its.",  
+    "dataProvider": "War radio while able significant finish. Different actually far however.",  
+    "owner": [  
+        "urn:ngsi-ld:CO2:items:SFGW:03494449",  
+        "urn:ngsi-ld:CO2:items:XQMI:62092917"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:CO2:items:TYCI:58813039"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -30.9524135,  
+            92.601413  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Result whole save leg me could nation. Just people mind actually town. Get push various according.",  
+        "addressLocality": "There describe attent",  
+        "addressRegion": "Quite it fact dinner allow. Item they production point area outside from.",  
+        "addressCountry": "Who him particular matter late. Way receive star.",  
+        "postalCode": "Drug today artist year. Government write al",  
+        "postOfficeBoxNumber": "Machine course record another without politics. History five rich a",  
+        "streetNr": "Purpose wear physical tough. Water staff media information your few thing. Enter sometimes play supp",  
+        "district": "Down federal once PM create piece class green. Let structure bed top seem different television. Parent order bit story."  
+    },  
+    "areaServed": "Author project kitchen me local boy. Officer society section sort deal choose gas.",  
+    "rt": [  
+        "oic.r.sensor.carbondioxide"  
+    ],  
+    "value": true,  
+    "measurement": 339.0,  
+    "precision": 532.9,  
+    "n": "Politics water fall woman study. Marriage scientist itself i",  
+    "range": [  
+        141.8,  
+        193.5  
+    ],  
+    "step": 87.6,  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.s"  
+    ],  
+    "type": "CO2"  
 }  
 ```  
 </details>  
@@ -519,136 +508,116 @@ CO2:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:CO2:id:CCNH:15843409"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1986-12-14T04:30:52Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2015-09-11T00:07:26Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Prove action boy today city do. Spend effort watch first."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Meeting could respond individual bed receive four. Key worker suggest learn Congress."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Collection small find per word cup explain check. Body list they American newspaper purpose although."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Theory consider teach north news different. Deal partner money."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Because officer quite walk next reveal recognize. Place break fight take."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:CO2:items:UXPG:87304304",  
-      "urn:ngsi-ld:CO2:items:USYI:41576659"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:CO2:items:CMQE:26360445",  
-      "urn:ngsi-ld:CO2:items:SUUK:32060695"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
+    "id": "urn:ngsi-ld:CO2:id:ECDY:29770386",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "2006-01-06T20:14:07Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "1973-10-28T17:23:17Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Bar nature agent we country various friend week. Range like science set."  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Rock improve author produce. Green city wonder their around."  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Guy collection store. Whether most operati"  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Arrive land art sing notice crime stuff improve. One just peace show interview act its."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "War radio while able significant finish. Different actually far however."  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:CO2:items:SFGW:03494449",  
+            "urn:ngsi-ld:CO2:items:XQMI:62092917"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:CO2:items:TYCI:58813039"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -30.9524135,  
+                92.601413  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Result whole save leg me could nation. Just people mind actually town. Get push various according.",  
+            "addressLocality": "There describe attent",  
+            "addressRegion": "Quite it fact dinner allow. Item they production point area outside from.",  
+            "addressCountry": "Who him particular matter late. Way receive star.",  
+            "postalCode": "Drug today artist year. Government write al",  
+            "postOfficeBoxNumber": "Machine course record another without politics. History five rich a",  
+            "streetNr": "Purpose wear physical tough. Water staff media information your few thing. Enter sometimes play supp",  
+            "district": "Down federal once PM create piece class green. Let structure bed top seem different television. Parent order bit story."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Author project kitchen me local boy. Officer society section sort deal choose gas."  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.sensor.carbondioxide"  
+        ]  
+    },  
     "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -38.7693965,  
-        35.719856  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Me force entire money finish ten sure property. Tax good probably shake discuss political general glass.",  
-      "addressLocality": "Ground everything join fish apply. Yet small easy door. Somebody bill benefit individual happy relationship. Tax all source evening particular charge.",  
-      "addressRegion": "Hold cut attention community wish form. Board call simple operation notice range industry. Outside institution deep nor.",  
-      "addressCountry": "Night state issue although however system development. Much great authority claim no church black agency.",  
-      "postalCode": "Wrong move make job themselves still federal pull. Relationship everyone family. Audience trial article book soldier.",  
-      "postOfficeBoxNumber": "Fall light black several Mrs Congress knowledge hear. Door big population."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Cause easy sister themselves protect type field."  
-  },  
-  "rt": {  
-    "type": "array",  
-    "value": [  
-      "oic.r.sensor.carbondioxide",  
-      "oic.r.sensor.carbondioxide"  
-    ]  
-  },  
-  "value": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": true  
-    }  
-  },  
-  "measurement": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 80.6  
-    }  
-  },  
-  "precision": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 106.0  
-    }  
-  },  
-  "n": {  
-    "type": "string",  
-    "value": "Itself now ball so. Quality upon outside risk likely stock budget."  
-  },  
-  "range": {  
-    "type": "array",  
-    "value": [  
-      335.3,  
-      963.5  
-    ]  
-  },  
-  "step": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 383.7  
-    }  
-  },  
-  "if": {  
-    "type": "array",  
-    "value": [  
-      "oic.if.s",  
-      "oic.if.s"  
-    ]  
-  },  
-  "type": {  
-    "type": "string",  
-    "value": "CO2"  
-  }  
+        "type": "Boolean",  
+        "value": true  
+    },  
+    "measurement": {  
+        "type": "Number",  
+        "value": 339.0  
+    },  
+    "precision": {  
+        "type": "Number",  
+        "value": 532.9  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Politics water fall woman study. Marriage scientist itself i"  
+    },  
+    "range": {  
+        "type": "StructuredValue",  
+        "value": [  
+            141.8,  
+            193.5  
+        ]  
+    },  
+    "step": {  
+        "type": "Number",  
+        "value": 87.6  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.baseline",  
+            "oic.if.s"  
+        ]  
+    },  
+    "type": "CO2"  
 }  
 ```  
 </details>  
@@ -657,71 +626,58 @@ CO2:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:CO2:id:CCNH:15843409",  
-    "dateCreated": "1986-12-14T04:30:52Z",  
-    "dateModified": "2015-09-11T00:07:26Z",  
-    "source": "Prove action boy today city do. Spend effort watch first.",  
-    "name": "Meeting could respond individual bed receive four. Key worker suggest learn Congress.",  
-    "alternateName": "Collection small find per word cup explain check. Body list they American newspaper purpose although.",  
-    "description": "Theory consider teach north news different. Deal partner money.",  
-    "dataProvider": "Because officer quite walk next reveal recognize. Place break fight take.",  
+    "id": "urn:ngsi-ld:CO2:id:ECDY:29770386",  
+    "dateCreated": "2006-01-06T20:14:07Z",  
+    "dateModified": "1973-10-28T17:23:17Z",  
+    "source": "Bar nature agent we country various friend week. Range like science set.",  
+    "name": "Rock improve author produce. Green city wonder their around.",  
+    "alternateName": "Guy collection store. Whether most operati",  
+    "description": "Arrive land art sing notice crime stuff improve. One just peace show interview act its.",  
+    "dataProvider": "War radio while able significant finish. Different actually far however.",  
     "owner": [  
-        "urn:ngsi-ld:CO2:items:UXPG:87304304",  
-        "urn:ngsi-ld:CO2:items:USYI:41576659"  
+        "urn:ngsi-ld:CO2:items:SFGW:03494449",  
+        "urn:ngsi-ld:CO2:items:XQMI:62092917"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:CO2:items:CMQE:26360445",  
-        "urn:ngsi-ld:CO2:items:SUUK:32060695"  
+        "urn:ngsi-ld:CO2:items:TYCI:58813039"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            -38.7693965,  
-            35.719856  
+            -30.9524135,  
+            92.601413  
         ]  
     },  
     "address": {  
-        "streetAddress": "Me force entire money finish ten sure property. Tax good probably shake discuss political general glass.",  
-        "addressLocality": "Ground everything join fish apply. Yet small easy door. Somebody bill benefit individual happy relationship. Tax all source evening particular charge.",  
-        "addressRegion": "Hold cut attention community wish form. Board call simple operation notice range industry. Outside institution deep nor.",  
-        "addressCountry": "Night state issue although however system development. Much great authority claim no church black agency.",  
-        "postalCode": "Wrong move make job themselves still federal pull. Relationship everyone family. Audience trial article book soldier.",  
-        "postOfficeBoxNumber": "Fall light black several Mrs Congress knowledge hear. Door big population."  
+        "streetAddress": "Result whole save leg me could nation. Just people mind actually town. Get push various according.",  
+        "addressLocality": "There describe attent",  
+        "addressRegion": "Quite it fact dinner allow. Item they production point area outside from.",  
+        "addressCountry": "Who him particular matter late. Way receive star.",  
+        "postalCode": "Drug today artist year. Government write al",  
+        "postOfficeBoxNumber": "Machine course record another without politics. History five rich a",  
+        "streetNr": "Purpose wear physical tough. Water staff media information your few thing. Enter sometimes play supp",  
+        "district": "Down federal once PM create piece class green. Let structure bed top seem different television. Parent order bit story."  
     },  
-    "areaServed": "Cause easy sister themselves protect type field.",  
+    "areaServed": "Author project kitchen me local boy. Officer society section sort deal choose gas.",  
     "rt": [  
-        "oic.r.sensor.carbondioxide",  
         "oic.r.sensor.carbondioxide"  
     ],  
-    "value": {  
-        "type": "Property",  
-        "value": true  
-    },  
-    "measurement": {  
-        "type": "Property",  
-        "value": 80.6  
-    },  
-    "precision": {  
-        "type": "Property",  
-        "value": 106.0  
-    },  
-    "n": "Itself now ball so. Quality upon outside risk likely stock budget.",  
+    "value": true,  
+    "measurement": 339.0,  
+    "precision": 532.9,  
+    "n": "Politics water fall woman study. Marriage scientist itself i",  
     "range": [  
-        335.3,  
-        963.5  
+        141.8,  
+        193.5  
     ],  
-    "step": {  
-        "type": "Property",  
-        "value": 383.7  
-    },  
+    "step": 87.6,  
     "if": [  
-        "oic.if.s",  
+        "oic.if.baseline",  
         "oic.if.s"  
     ],  
     "type": "CO2",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -731,78 +687,80 @@ CO2:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:CO2:id:SVES:89502461",  
+    "id": "urn:ngsi-ld:CO2:id:ECDY:29770386",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1980-11-02T05:43:09Z"  
+            "@value": "2006-01-06T20:14:07Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1987-05-22T08:24:10Z"  
+            "@value": "1973-10-28T17:23:17Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Receive wife price issue laugh campaign. Spend detail case practice as. Generation in describe body friend ground style."  
+        "value": "Bar nature agent we country various friend week. Range like science set."  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Allow set least expect we person. Interview what change class specific. Energy put into military identify."  
+        "value": "Rock improve author produce. Green city wonder their around."  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Deep view report which budget. Friend top because purpose word nature box. Nature south campaign treatment week wrong."  
+        "value": "Guy collection store. Whether most operati"  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Picture generation use star among. Either send future scene military."  
+        "value": "Arrive land art sing notice crime stuff improve. One just peace show interview act its."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Born say already sense song author cut. Task place discuss score."  
+        "value": "War radio while able significant finish. Different actually far however."  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:CO2:items:JOUW:60859756",  
-            "urn:ngsi-ld:CO2:items:DGAF:22248342"  
+            "urn:ngsi-ld:CO2:items:SFGW:03494449",  
+            "urn:ngsi-ld:CO2:items:XQMI:62092917"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:CO2:items:ETQR:90005195"  
+            "urn:ngsi-ld:CO2:items:TYCI:58813039"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                27.2603735,  
-                -163.603735  
+                -30.9524135,  
+                92.601413  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Water fish floor end every lose. Indicate trouble authority pick room million catch. Kid for receive well.",  
-            "addressLocality": "Fall to thing second whom. First them already two until.",  
-            "addressRegion": "High thus national call staff concern. Value range order artist. Because culture your will thus.",  
-            "addressCountry": "Place word thank book culture. Though project building guy action open doctor. Whole population new music chance manage.",  
-            "postalCode": "Third according teach stock true pull significant over. Suggest wife foot mouth mother since support.",  
-            "postOfficeBoxNumber": "Somebody left car growth."  
+            "streetAddress": "Result whole save leg me could nation. Just people mind actually town. Get push various according.",  
+            "addressLocality": "There describe attent",  
+            "addressRegion": "Quite it fact dinner allow. Item they production point area outside from.",  
+            "addressCountry": "Who him particular matter late. Way receive star.",  
+            "postalCode": "Drug today artist year. Government write al",  
+            "postOfficeBoxNumber": "Machine course record another without politics. History five rich a",  
+            "streetNr": "Purpose wear physical tough. Water staff media information your few thing. Enter sometimes play supp",  
+            "district": "Down federal once PM create piece class green. Let structure bed top seem different television. Parent order bit story."  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Soon discover leg fight each shoulder eight set. Majority Republican play show standard well."  
+        "value": "Author project kitchen me local boy. Officer society section sort deal choose gas."  
     },  
     "rt": {  
         "type": "Property",  
@@ -812,42 +770,41 @@ CO2:
     },  
     "value": {  
         "type": "Property",  
-        "value": false  
+        "value": true  
     },  
     "measurement": {  
         "type": "Property",  
-        "value": 874.2  
+        "value": 339.0  
     },  
     "precision": {  
         "type": "Property",  
-        "value": 765.9  
+        "value": 532.9  
     },  
     "n": {  
         "type": "Property",  
-        "value": "Hit his kid."  
+        "value": "Politics water fall woman study. Marriage scientist itself i"  
     },  
     "range": {  
         "type": "Property",  
         "value": [  
-            316.3,  
-            505.4  
+            141.8,  
+            193.5  
         ]  
     },  
     "step": {  
         "type": "Property",  
-        "value": 641.7  
+        "value": 87.6  
     },  
     "if": {  
         "type": "Property",  
         "value": [  
-            "oic.if.s",  
+            "oic.if.baseline",  
             "oic.if.s"  
         ]  
     },  
     "type": "CO2",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
