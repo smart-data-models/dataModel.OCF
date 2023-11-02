@@ -12,82 +12,84 @@
     },
     {
       "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "rt": {
+          "description": "Property. The Resource Type.",
+          "items": {
+            "enum": [
+              "oic.r.ecomode"
+            ],
+            "maxLength": 64,
+            "type": "string"
+          },
+          "minItems": 1,
+          "uniqueItems": true,
+          "readOnly": true,
+          "type": "array"
+        },
+        "modes": {
+          "description": "Property. The array of the currently active mode(s).",
+          "items": {
+            "enum": [
+              "disabled",
+              "enabled",
+              "notsupported"
+            ],
+            "type": "string"
+          },
+          "uniqueItems": true,
+          "type": "array"
+        },
+        "supportedModes": {
+          "description": "Property. The array of possible modes the device supports.",
+          "items": {
+            "enum": [
+              "disabled",
+              "enabled",
+              "notsupported"
+            ],
+            "type": "string"
+          },
+          "readOnly": true,
+          "type": "array"
+        },
+        "adminforced": {
+          "description": "Property. The indicator that the current mode of operation has been forced by admin action.",
+          "readOnly": true,
+          "type": "boolean"
+        },
+        "n": {
+          "type": "string",
+          "maxLength": 64,
+          "readOnly": true,
+          "description": "Property. Friendly name of the Resource"
+        },
+        "if": {
+          "description": "Property. The OCF Interface set supported by this Resource.",
+          "items": {
+            "enum": [
+              "oic.if.a",
+              "oic.if.baseline"
+            ],
+            "type": "string"
+          },
+          "minItems": 2,
+          "uniqueItems": true,
+          "readOnly": true,
+          "type": "array"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "ecomode"
+          ],
+          "description": "Property. NGSI entity type. It has to be ecomode"
+        }
+      }
     }
   ],
-  "properties": {
-    "rt": {
-      "description": "Property. The Resource Type.",
-      "items": {
-        "enum": [
-          "oic.r.ecomode"
-        ],
-        "maxLength": 64,
-        "type": "string"
-      },
-      "minItems": 1,
-      "uniqueItems": true,
-      "readOnly": true,
-      "type": "array"
-    },
-    "modes": {
-      "description": "Property. The array of the currently active mode(s).",
-      "items": {
-        "enum": [
-          "disabled",
-          "enabled",
-          "notsupported"
-        ],
-        "type": "string"
-      },
-      "uniqueItems": true,
-      "type": "array"
-    },
-    "supportedModes": {
-      "description": "Property. The array of possible modes the device supports.",
-      "items": {
-        "enum": [
-          "disabled",
-          "enabled",
-          "notsupported"
-        ],
-        "type": "string"
-      },
-      "readOnly": true,
-      "type": "array"
-    },
-    "adminforced": {
-      "description": "Property. The indicator that the current mode of operation has been forced by admin action.",
-      "readOnly": true,
-      "type": "boolean"
-    },
-    "n": {
-      "type": "string",
-      "maxLength": 64,
-      "readOnly": true,
-      "description": "Property. Friendly name of the Resource"
-    },
-    "if": {
-      "description": "Property. The OCF Interface set supported by this Resource.",
-      "items": {
-        "enum": [
-          "oic.if.a",
-          "oic.if.baseline"
-        ],
-        "type": "string"
-      },
-      "minItems": 2,
-      "uniqueItems": true,
-      "readOnly": true,
-      "type": "array"
-    },
-    "type": {
-      "type": "string",
-      "enum": [
-        "ecomode"
-      ],
-      "description": "Property. NGSI entity type. It has to be ecomode"
-    }
-  },
   "derivedFrom": "https://github.com/OpenInterConnect/IoTDataModels/blob/master/ecomodeResURI.swagger.json",
   "license": "https://github.com/OpenInterConnect/IoTDataModels/blob/master/README.md",
   "required": [
