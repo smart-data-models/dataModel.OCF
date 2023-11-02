@@ -1,3 +1,3 @@
 /* (Beta) Export of data model BinarySwitch of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE BinarySwitch_type AS ENUM ('BinarySwitch');
-CREATE TABLE BinarySwitch (if JSON, n TEXT, rt JSON, type BinarySwitch_type, value BOOLEAN);
+CREATE TABLE BinarySwitch (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, if JSON, location JSON, n TEXT, name TEXT, owner JSON, rt JSON, seeAlso JSON, source TEXT, type BinarySwitch_type, value BOOLEAN);
