@@ -1,79 +1,102 @@
 {
-    "id": "urn:ngsi-ld:Button:id:CSOS:74812314",
+    "id": "urn:ngsi-ld:Button:id:KTUG:11578156",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1998-01-07T10:00:33Z"
+            "@value": "2007-08-08T01:12:34Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2013-03-24T08:33:25Z"
+            "@value": "2002-06-18T03:24:51Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Everything choose bring about ball himself seat street. Item play hour do. Add child stop."
+        "value": "Employee source nature add rest human station. Ability management test during foot that course nothing. Soun"
     },
     "name": {
         "type": "Property",
-        "value": "Recognize always bed system value several. Cold involve myself this pass me. Return also everything poor environmental people."
+        "value": "Board necessary religious natural sport music white. Natural explain before "
     },
     "alternateName": {
         "type": "Property",
-        "value": "Situation several spring serve occur. Pick sport land feel left by. Station region cultural Mrs film item life."
+        "value": "Theory type successful together. Rais"
     },
     "description": {
         "type": "Property",
-        "value": "Study interesting listen chance ready lead brother key. Although future job bed business."
+        "value": "Every manage political record word group food break. Picture suddenly drug rule bring "
     },
     "dataProvider": {
         "type": "Property",
-        "value": "Return participant positive another everything strategy. Threat cultural quality hundred night white knowledge."
+        "value": "Own available buy country store bu"
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:Button:items:TTQN:67676614",
-            "urn:ngsi-ld:Button:items:SYJP:41408316"
+            "urn:ngsi-ld:Button:items:UJLN:86914131",
+            "urn:ngsi-ld:Button:items:GILX:20870916"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:Button:items:LWCH:82036977"
+            "urn:ngsi-ld:Button:items:QIDT:79230225"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                -26.20595,
-                -78.346435
+                28.732768,
+                177.344405
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "Air last nearly two. Official crime country reach radio.",
-            "addressLocality": "Debate medical population ball rule TV. Federal stock list just buy.",
-            "addressRegion": "Already training ok with pattern positive. Adult design church visit low oil. Scientist probably beyond college.",
-            "addressCountry": "That city year check up true. Answer notice week change. Next pressure leave yes stop college two.",
-            "postalCode": "Above already because cultural single. Election much prepare reduce sign.",
-            "postOfficeBoxNumber": "Friend expert treatment win. Floor community shoulder generation miss theory. Ago tell reason."
+            "streetAddress": "Likely improve notice. True power home price check real leader.",
+            "addressLocality": "School name care several loss particular.",
+            "addressRegion": "Organization recognize civil. Pm her then nothing increase.",
+            "addressCountry": "Industry product another knowledge else citizen month. Traditional page a although ",
+            "postalCode": "First degree respons",
+            "postOfficeBoxNumber": "Son break either president stage population bo",
+            "streetNr": "Water voice trav",
+            "district": "Full per among clearly. Face house nature fall long dream answer conference. Rock few structure federal board night loss."
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "Benefit write begin. Theory buy sister among develop minute sure."
+        "value": "Buy break marriage also friend reach. Turn phone heart window. Assume be seek article."
     },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.button"
+        ]
+    },
+    "value": {
+        "type": "Property",
+        "value": true
+    },
+    "n": {
+        "type": "Property",
+        "value": "Million large major "
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.s",
+            "oic.if.baseline"
+        ]
+    },
+    "type": "Button",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
