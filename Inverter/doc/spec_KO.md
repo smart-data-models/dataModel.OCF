@@ -475,74 +475,56 @@ Inverter:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Inverter:id:QKHM:28779877",  
-  "dateCreated": "2011-09-26T02:57:58Z",  
-  "dateModified": "1999-06-01T10:31:41Z",  
-  "source": "Both before finish whole space including hospital. Arrive anything take deep reveal more seven page.",  
-  "name": "Whether life realize fire. Guy happen thought material no certainly.",  
-  "alternateName": "Certain difference boy. Performance score weight performance. Republican stuff visit ten.",  
-  "description": "So describe believe environmental build necessary. Treat they memory oil parent.",  
-  "dataProvider": "Risk such medical. Among whom every discuss series deal.",  
-  "owner": [  
-    "urn:ngsi-ld:Inverter:items:KSSI:21376961",  
-    "urn:ngsi-ld:Inverter:items:YQQI:56248386"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Inverter:items:STCD:23046259",  
-    "urn:ngsi-ld:Inverter:items:UJCA:53322929"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -88.997438,  
-      -124.268822  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Grow after much house our.",  
-    "addressLocality": "Firm yard answer consider second.",  
-    "addressRegion": "Also challenge discover event picture onto. Subject machine into lawyer major hold get.",  
-    "addressCountry": "House identify inside student along. See right husband weight education get positive assume. Certain environmental worry specific.",  
-    "postalCode": "Pm man born hit crime space kitchen treat. Physical method southern provide.",  
-    "postOfficeBoxNumber": "Century treat create pattern voice analysis level. Property newspaper rest."  
-  },  
-  "areaServed": "Try opportunity along some skill. Ball cover machine stage want than father. Create authority pressure.",  
-  "rt": [  
-    "oic.r.inverter",  
-    "oic.r.inverter"  
-  ],  
-  "status": "on",  
-  "ratedpower": {  
-    "type": "Property",  
-    "value": 792.6  
-  },  
-  "minvoltmppt": {  
-    "type": "Property",  
-    "value": 429.9  
-  },  
-  "maxvoltmppt": {  
-    "type": "Property",  
-    "value": 549.6  
-  },  
-  "inputvoltage": {  
-    "type": "Property",  
-    "value": 333.3  
-  },  
-  "inputcurrent": {  
-    "type": "Property",  
-    "value": 227.3  
-  },  
-  "outputpower": {  
-    "type": "Property",  
-    "value": 237.0  
-  },  
-  "timestamp": "1977-09-25T18:29:39Z",  
-  "n": "Whatever nice teach possible well.",  
-  "if": [  
-    "oic.if.baseline",  
-    "oic.if.s"  
-  ],  
-  "type": "Inverter"  
+    "id": "urn:ngsi-ld:Inverter:id:FBOE:61943307",  
+    "dateCreated": "2017-08-27T05:59:39Z",  
+    "dateModified": "2010-01-04T16:24:41Z",  
+    "source": "Partner remember share structure Mrs. Get again official race.",  
+    "name": "Join approach reality worry away simple. Goal where memory",  
+    "alternateName": "Always whatever without huge. Culture capital Republican wife. Education offer score material court.",  
+    "description": "Recognize m",  
+    "dataProvider": "Third free and institution with house base fine. Win public discover argue market.",  
+    "owner": [  
+        "urn:ngsi-ld:Inverter:items:TVRM:86781171",  
+        "urn:ngsi-ld:Inverter:items:WZYG:44884108"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Inverter:items:GRNR:13478925"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -18.0500775,  
+            -100.852308  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Kind economy stand",  
+        "addressLocality": "Recently audience sure her care informat",  
+        "addressRegion": "Year stand stuff risk. Realize knowledge subject admit we successful. Former expect travel beyond.",  
+        "addressCountry": "Phone space special parent page since bank. Conference list career sout",  
+        "postalCode": "Race condition thought never none",  
+        "postOfficeBoxNumber": "Society senior measure. Throughout program until memory design glass through.",  
+        "streetNr": "Wall production your meet rather. Subject he animal today.",  
+        "district": "Once protect throughout line take many future effect. Team without woul"  
+    },  
+    "areaServed": "Product hundred key TV wrong.",  
+    "rt": [  
+        "oic.r.inverter"  
+    ],  
+    "status": "on",  
+    "ratedpower": 284.8,  
+    "minvoltmppt": 676.9,  
+    "maxvoltmppt": 707.0,  
+    "inputvoltage": 180.4,  
+    "inputcurrent": 981.9,  
+    "outputpower": 643.1,  
+    "timestamp": "1980-10-25T16:17:04Z",  
+    "n": "Black research ",  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.s"  
+    ],  
+    "type": "Inverter"  
 }  
 ```  
 </details>  
@@ -551,231 +533,185 @@ Inverter:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:Inverter:id:QKHM:28779877"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2011-09-26T02:57:58Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1999-06-01T10:31:41Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Both before finish whole space including hospital. Arrive anything take deep reveal more seven page."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Whether life realize fire. Guy happen thought material no certainly."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Certain difference boy. Performance score weight performance. Republican stuff visit ten."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "So describe believe environmental build necessary. Treat they memory oil parent."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Risk such medical. Among whom every discuss series deal."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Inverter:items:KSSI:21376961",  
-      "urn:ngsi-ld:Inverter:items:YQQI:56248386"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Inverter:items:STCD:23046259",  
-      "urn:ngsi-ld:Inverter:items:UJCA:53322929"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -88.997438,  
-        -124.268822  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Grow after much house our.",  
-      "addressLocality": "Firm yard answer consider second.",  
-      "addressRegion": "Also challenge discover event picture onto. Subject machine into lawyer major hold get.",  
-      "addressCountry": "House identify inside student along. See right husband weight education get positive assume. Certain environmental worry specific.",  
-      "postalCode": "Pm man born hit crime space kitchen treat. Physical method southern provide.",  
-      "postOfficeBoxNumber": "Century treat create pattern voice analysis level. Property newspaper rest."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Try opportunity along some skill. Ball cover machine stage want than father. Create authority pressure."  
-  },  
-  "rt": {  
-    "type": "array",  
-    "value": [  
-      "oic.r.inverter",  
-      "oic.r.inverter"  
-    ]  
-  },  
-  "status": {  
-    "type": "string",  
-    "value": "on"  
-  },  
-  "ratedpower": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 792.6  
-    }  
-  },  
-  "minvoltmppt": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 429.9  
-    }  
-  },  
-  "maxvoltmppt": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 549.6  
-    }  
-  },  
-  "inputvoltage": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 333.3  
-    }  
-  },  
-  "inputcurrent": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 227.3  
-    }  
-  },  
-  "outputpower": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 237.0  
-    }  
-  },  
-  "timestamp": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1977-09-25T18:29:39Z"  
-  },  
-  "n": {  
-    "type": "string",  
-    "value": "Whatever nice teach possible well."  
-  },  
-  "if": {  
-    "type": "array",  
-    "value": [  
-      "oic.if.baseline",  
-      "oic.if.s"  
-    ]  
-  },  
-  "type": {  
-    "type": "string",  
-    "value": "Inverter"  
-  }  
+    "id": "urn:ngsi-ld:Inverter:id:FBOE:61943307",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "2017-08-27T05:59:39Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "2010-01-04T16:24:41Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Partner remember share structure Mrs. Get again official race."  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Join approach reality worry away simple. Goal where memory"  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Always whatever without huge. Culture capital Republican wife. Education offer score material court."  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Recognize m"  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Third free and institution with house base fine. Win public discover argue market."  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Inverter:items:TVRM:86781171",  
+            "urn:ngsi-ld:Inverter:items:WZYG:44884108"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Inverter:items:GRNR:13478925"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -18.0500775,  
+                -100.852308  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Kind economy stand",  
+            "addressLocality": "Recently audience sure her care informat",  
+            "addressRegion": "Year stand stuff risk. Realize knowledge subject admit we successful. Former expect travel beyond.",  
+            "addressCountry": "Phone space special parent page since bank. Conference list career sout",  
+            "postalCode": "Race condition thought never none",  
+            "postOfficeBoxNumber": "Society senior measure. Throughout program until memory design glass through.",  
+            "streetNr": "Wall production your meet rather. Subject he animal today.",  
+            "district": "Once protect throughout line take many future effect. Team without woul"  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Product hundred key TV wrong."  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.inverter"  
+        ]  
+    },  
+    "status": {  
+        "type": "Text",  
+        "value": "on"  
+    },  
+    "ratedpower": {  
+        "type": "Number",  
+        "value": 284.8  
+    },  
+    "minvoltmppt": {  
+        "type": "Number",  
+        "value": 676.9  
+    },  
+    "maxvoltmppt": {  
+        "type": "Number",  
+        "value": 707.0  
+    },  
+    "inputvoltage": {  
+        "type": "Number",  
+        "value": 180.4  
+    },  
+    "inputcurrent": {  
+        "type": "Number",  
+        "value": 981.9  
+    },  
+    "outputpower": {  
+        "type": "Number",  
+        "value": 643.1  
+    },  
+    "timestamp": {  
+        "type": "DateTime",  
+        "value": "1980-10-25T16:17:04Z"  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Black research "  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.baseline",  
+            "oic.if.s"  
+        ]  
+    },  
+    "type": "Inverter"  
 }  
 ```  
 </details>  
-#### 인버터 NGSI-LD 키 값 예시  
+#### 인버터 NGSI-LD 키값 예시  
 다음은 키-값으로 JSON-LD 형식의 인버터의 예입니다. 이는 `옵션=키값`을 사용할 때 NGSI-LD와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Inverter:id:QKHM:28779877",  
-    "dateCreated": "2011-09-26T02:57:58Z",  
-    "dateModified": "1999-06-01T10:31:41Z",  
-    "source": "Both before finish whole space including hospital. Arrive anything take deep reveal more seven page.",  
-    "name": "Whether life realize fire. Guy happen thought material no certainly.",  
-    "alternateName": "Certain difference boy. Performance score weight performance. Republican stuff visit ten.",  
-    "description": "So describe believe environmental build necessary. Treat they memory oil parent.",  
-    "dataProvider": "Risk such medical. Among whom every discuss series deal.",  
+    "id": "urn:ngsi-ld:Inverter:id:FBOE:61943307",  
+    "dateCreated": "2017-08-27T05:59:39Z",  
+    "dateModified": "2010-01-04T16:24:41Z",  
+    "source": "Partner remember share structure Mrs. Get again official race.",  
+    "name": "Join approach reality worry away simple. Goal where memory",  
+    "alternateName": "Always whatever without huge. Culture capital Republican wife. Education offer score material court.",  
+    "description": "Recognize m",  
+    "dataProvider": "Third free and institution with house base fine. Win public discover argue market.",  
     "owner": [  
-        "urn:ngsi-ld:Inverter:items:KSSI:21376961",  
-        "urn:ngsi-ld:Inverter:items:YQQI:56248386"  
+        "urn:ngsi-ld:Inverter:items:TVRM:86781171",  
+        "urn:ngsi-ld:Inverter:items:WZYG:44884108"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:Inverter:items:STCD:23046259",  
-        "urn:ngsi-ld:Inverter:items:UJCA:53322929"  
+        "urn:ngsi-ld:Inverter:items:GRNR:13478925"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            -88.997438,  
-            -124.268822  
+            -18.0500775,  
+            -100.852308  
         ]  
     },  
     "address": {  
-        "streetAddress": "Grow after much house our.",  
-        "addressLocality": "Firm yard answer consider second.",  
-        "addressRegion": "Also challenge discover event picture onto. Subject machine into lawyer major hold get.",  
-        "addressCountry": "House identify inside student along. See right husband weight education get positive assume. Certain environmental worry specific.",  
-        "postalCode": "Pm man born hit crime space kitchen treat. Physical method southern provide.",  
-        "postOfficeBoxNumber": "Century treat create pattern voice analysis level. Property newspaper rest."  
+        "streetAddress": "Kind economy stand",  
+        "addressLocality": "Recently audience sure her care informat",  
+        "addressRegion": "Year stand stuff risk. Realize knowledge subject admit we successful. Former expect travel beyond.",  
+        "addressCountry": "Phone space special parent page since bank. Conference list career sout",  
+        "postalCode": "Race condition thought never none",  
+        "postOfficeBoxNumber": "Society senior measure. Throughout program until memory design glass through.",  
+        "streetNr": "Wall production your meet rather. Subject he animal today.",  
+        "district": "Once protect throughout line take many future effect. Team without woul"  
     },  
-    "areaServed": "Try opportunity along some skill. Ball cover machine stage want than father. Create authority pressure.",  
+    "areaServed": "Product hundred key TV wrong.",  
     "rt": [  
-        "oic.r.inverter",  
         "oic.r.inverter"  
     ],  
     "status": "on",  
-    "ratedpower": {  
-        "type": "Property",  
-        "value": 792.6  
-    },  
-    "minvoltmppt": {  
-        "type": "Property",  
-        "value": 429.9  
-    },  
-    "maxvoltmppt": {  
-        "type": "Property",  
-        "value": 549.6  
-    },  
-    "inputvoltage": {  
-        "type": "Property",  
-        "value": 333.3  
-    },  
-    "inputcurrent": {  
-        "type": "Property",  
-        "value": 227.3  
-    },  
-    "outputpower": {  
-        "type": "Property",  
-        "value": 237.0  
-    },  
-    "timestamp": "1977-09-25T18:29:39Z",  
-    "n": "Whatever nice teach possible well.",  
+    "ratedpower": 284.8,  
+    "minvoltmppt": 676.9,  
+    "maxvoltmppt": 707.0,  
+    "inputvoltage": 180.4,  
+    "inputcurrent": 981.9,  
+    "outputpower": 643.1,  
+    "timestamp": "1980-10-25T16:17:04Z",  
+    "n": "Black research ",  
     "if": [  
         "oic.if.baseline",  
         "oic.if.s"  
     ],  
     "type": "Inverter",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -785,78 +721,80 @@ Inverter:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Inverter:id:JJXX:06248424",  
+    "id": "urn:ngsi-ld:Inverter:id:FBOE:61943307",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1991-06-28T22:23:41Z"  
+            "@value": "2017-08-27T05:59:39Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1995-07-25T00:46:03Z"  
+            "@value": "2010-01-04T16:24:41Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Fear class ability close benefit. We moment score fund allow art."  
+        "value": "Partner remember share structure Mrs. Get again official race."  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Never ask too future billion window. May blood class sort message nothing. Fine through accept attorney fish."  
+        "value": "Join approach reality worry away simple. Goal where memory"  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Bit middle research church exactly current. Like single ok cup."  
+        "value": "Always whatever without huge. Culture capital Republican wife. Education offer score material court."  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Population throw soldier action kitchen soon professor. Particularly which sea away financial of wife."  
+        "value": "Recognize m"  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Night public evening foot section. Clearly talk effort century. Natural attack street unit."  
+        "value": "Third free and institution with house base fine. Win public discover argue market."  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Inverter:items:AWPK:98614702",  
-            "urn:ngsi-ld:Inverter:items:FCYN:45549371"  
+            "urn:ngsi-ld:Inverter:items:TVRM:86781171",  
+            "urn:ngsi-ld:Inverter:items:WZYG:44884108"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Inverter:items:NTQT:09016096"  
+            "urn:ngsi-ld:Inverter:items:GRNR:13478925"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                81.1846425,  
-                53.749567  
+                -18.0500775,  
+                -100.852308  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Operation probably one sell. Table stand number heart personal able bank. Draw prove continue second fact truth number loss.",  
-            "addressLocality": "Plant street could drop expect. Either late Democrat to. Strategy difference practice address. Low size campaign see political thus.",  
-            "addressRegion": "Would smile next body level Mr moment. Something court attack continue. Describe under market especially research weight million measure.",  
-            "addressCountry": "Agent go case may break.",  
-            "postalCode": "Agree activity without project agree. Its material evidence.",  
-            "postOfficeBoxNumber": "Key despite computer apply system into. Exist water key answer building against. Wind site without more health quite good church."  
+            "streetAddress": "Kind economy stand",  
+            "addressLocality": "Recently audience sure her care informat",  
+            "addressRegion": "Year stand stuff risk. Realize knowledge subject admit we successful. Former expect travel beyond.",  
+            "addressCountry": "Phone space special parent page since bank. Conference list career sout",  
+            "postalCode": "Race condition thought never none",  
+            "postOfficeBoxNumber": "Society senior measure. Throughout program until memory design glass through.",  
+            "streetNr": "Wall production your meet rather. Subject he animal today.",  
+            "district": "Once protect throughout line take many future effect. Team without woul"  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Meeting event office. Fill certain talk safe authority public."  
+        "value": "Product hundred key TV wrong."  
     },  
     "rt": {  
         "type": "Property",  
@@ -866,54 +804,53 @@ Inverter:
     },  
     "status": {  
         "type": "Property",  
-        "value": "trip"  
+        "value": "on"  
     },  
     "ratedpower": {  
         "type": "Property",  
-        "value": 507.0  
+        "value": 284.8  
     },  
     "minvoltmppt": {  
         "type": "Property",  
-        "value": 937.7  
+        "value": 676.9  
     },  
     "maxvoltmppt": {  
         "type": "Property",  
-        "value": 7.0  
+        "value": 707.0  
     },  
     "inputvoltage": {  
         "type": "Property",  
-        "value": 993.2  
+        "value": 180.4  
     },  
     "inputcurrent": {  
         "type": "Property",  
-        "value": 875.3  
+        "value": 981.9  
     },  
     "outputpower": {  
         "type": "Property",  
-        "value": 799.9  
+        "value": 643.1  
     },  
     "timestamp": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1972-12-17T09:04:11Z"  
+            "@value": "1980-10-25T16:17:04Z"  
         }  
     },  
     "n": {  
         "type": "Property",  
-        "value": "Difficult however coach will cover final hear. Cup husband box they."  
+        "value": "Black research "  
     },  
     "if": {  
         "type": "Property",  
         "value": [  
             "oic.if.baseline",  
-            "oic.if.baseline"  
+            "oic.if.s"  
         ]  
     },  
     "type": "Inverter",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -921,7 +858,7 @@ Inverter:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-[FAQ 10](https://smartdatamodels.org/index.php/faqs/)을 참조하여 규모 단위를 다루는 방법에 대한 답변을 확인하세요.  
+10](https://smartdatamodels.org/index.php/faqs/)를 참조하여 규모 단위를 다루는 방법에 대한 답변을 확인하세요.  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
