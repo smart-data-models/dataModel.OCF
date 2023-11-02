@@ -15,7 +15,15 @@
 ## 属性列表  
 
 <sup><sub>[*] 如果属性中没有类型，是因为它可能有多个类型或不同的格式/模式</sub></sup>。  
-- `calorific[number]`: 燃料热值  - `if[array]`: 该资源支持的 OCF 接口  - `n[string]`: 资源的友好名称  - `precision[number]`: 暴露值的精度粒度  - `rt[array]`: 资源类型  - `type[string]`: NGSI 实体类型。必须是热量  <!-- /30-PropertiesList -->  
+- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国家。例如，西班牙  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 街道地址所在的地点，以及该地点所在的区域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: 地点所在的地区，以及该地区位于哪个国家  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 地区是一种行政区划，在一些国家由地方政府管理    
+	- `postOfficeBoxNumber[string]`: 用于邮政信箱地址的邮政信箱号码。例如：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 邮政编码。例如：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 街道地址  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: 标识公共街道上特定房产的编号    
+- `alternateName[string]`: 该项目的替代名称  - `areaServed[string]`: 提供服务或提供物品的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `calorific[number]`: 燃料热值  - `dataProvider[string]`: 标识统一数据实体提供者的字符序列  - `dateCreated[date-time]`: 实体创建时间戳。通常由存储平台分配  - `dateModified[date-time]`: 实体最后一次修改的时间戳。通常由存储平台分配  - `description[string]`: 项目描述  - `id[*]`: 实体的唯一标识符  - `if[array]`: 该资源支持的 OCF 接口  - `location[*]`: 项目的 Geojson 引用。它可以是点、线条字符串、多边形、多点、多线条字符串或多多边形  - `n[string]`: 资源的友好名称  - `name[string]`: 该项目的名称  - `owner[array]`: 包含一个 JSON 编码字符序列的列表，其中引用了所有者的唯一 Ids  - `precision[number]`: 暴露值的精度粒度  - `rt[array]`: 资源类型  - `seeAlso[*]`: 指向有关该项目的其他资源的 uri 列表  - `source[string]`: 以 URL 形式给出实体数据原始来源的字符串。建议使用源提供者的完全合格域名或源对象的 URL  - `type[string]`: NGSI 实体类型。必须是热量  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 所需属性  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -32,12 +40,115 @@
 Calorific:    
   description: 'Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes Properties associated with the energy associated with the consumption of different fuels (including natural gas) The calorific value is a number the calorific value is a measure of the available heat energy, used as part of the calculation to convert a volume of a fuel (e.g. m3) to an energy value (e.g. KWh). '    
   properties:    
+    address:    
+      description: The mailing address    
+      properties:    
+        addressCountry:    
+          description: 'The country. For example, Spain'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
+        addressLocality:    
+          description: 'The locality in which the street address is, and which is in the region'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
+        addressRegion:    
+          description: 'The region in which the locality is, and which is in the country'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        postOfficeBoxNumber:    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
+        postalCode:    
+          description: 'The postal code. For example, 24004'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
+        streetAddress:    
+          description: The street address    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      type: object    
+      x-ngsi:    
+        model: https://schema.org/address    
+        type: Property    
+    alternateName:    
+      description: An alternative name for this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    areaServed:    
+      description: The geographic area where a service or offered item is provided    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
     calorific:    
       description: Calorific value of fuel    
-      exclusiveMinimum: true    
+      exclusiveMinimum: 0    
       minimum: 0    
       readOnly: true    
       type: number    
+      x-ngsi:    
+        type: Property    
+    dataProvider:    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateCreated:    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateModified:    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    description:    
+      description: A description of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    id:    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     if:    
@@ -54,11 +165,203 @@ Calorific:
       uniqueItems: true    
       x-ngsi:    
         type: Property    
+    location:    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+      oneOf:    
+        - description: Geojson reference to the item. Point    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                type: number    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - Point    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Point    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - LineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON LineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 4    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - Polygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Polygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPoint    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPoint    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiLineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiLineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    items:    
+                      type: number    
+                    minItems: 2    
+                    type: array    
+                  minItems: 4    
+                  type: array    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPolygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPolygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+      x-ngsi:    
+        type: GeoProperty    
     n:    
       description: Friendly name of the Resource    
       maxLength: 64    
       readOnly: true    
       type: string    
+      x-ngsi:    
+        type: Property    
+    name:    
+      description: The name of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    owner:    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
+      items:    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
+      type: array    
       x-ngsi:    
         type: Property    
     precision:    
@@ -78,6 +381,23 @@ Calorific:
       readOnly: true    
       type: array    
       uniqueItems: true    
+      x-ngsi:    
+        type: Property    
+    seeAlso:    
+      description: list of uri pointing to additional resources about the item    
+      oneOf:    
+        - items:    
+            format: uri    
+            type: string    
+          minItems: 1    
+          type: array    
+        - format: uri    
+          type: string    
+      x-ngsi:    
+        type: Property    
+    source:    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
+      type: string    
       x-ngsi:    
         type: Property    
     type:    
@@ -109,38 +429,50 @@ Calorific:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Calorific:id:FMQF:67893052",  
-  "dateCreated": "1977-03-31T18:46:16Z",  
-  "dateModified": "2007-06-06T14:47:00Z",  
-  "source": "Bit life option. Near law yet study song source. Sea technology family remember.",  
-  "name": "Well certainly girl threat he prove news. Ground who teach.",  
-  "alternateName": "Recently pass a trouble service whose. Up apply Democrat born thousand employee common. Black born peace light.",  
-  "description": "Four your middle. Join these occur away. Cell quality technology day glass.",  
-  "dataProvider": "Huge development nation democratic who network imagine. Seek accept better smile hour.",  
-  "owner": [  
-    "urn:ngsi-ld:Calorific:items:ZPWD:90571353",  
-    "urn:ngsi-ld:Calorific:items:WLVH:40512989"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Calorific:items:GKDH:42748428",  
-    "urn:ngsi-ld:Calorific:items:TIGX:54603853"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      42.680074,  
-      8.875732  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Medical light suffer word already. Former born sure this car physical notice.",  
-    "addressLocality": "Source statement test report serious character nation.",  
-    "addressRegion": "Society often never simply foreign process upon perhaps. Suddenly year alone.",  
-    "addressCountry": "Star nature thing design. When source consumer letter system southern common.",  
-    "postalCode": "Role figure almost. Many responsibility research teach.",  
-    "postOfficeBoxNumber": "Nothing task under up since value write social. Official mind four family. Become scene test poor produce box organization TV."  
-  },  
-  "areaServed": "Green put oil accept. Interview wide cover grow."  
+    "id": "urn:ngsi-ld:Calorific:id:GOML:64303921",  
+    "dateCreated": "2007-03-08T15:05:03Z",  
+    "dateModified": "1980-04-19T10:28:10Z",  
+    "source": "",  
+    "name": "Along chance either six success on. At be than always different American address. Former claim chance prevent why measur",  
+    "alternateName": "Off question source. Wrong section town deal movement out stay lot. Parent do ten after those scientist.",  
+    "description": "Now four management energy stay significant his. Artist political camera expert stop area.",  
+    "dataProvider": "Individ",  
+    "owner": [  
+        "urn:ngsi-ld:Calorific:items:PYEA:60976701",  
+        "urn:ngsi-ld:Calorific:items:GMZY:09925185"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Calorific:items:VWTJ:71097951"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -55.8794045,  
+            28.115695  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Million size country site. He couple ground place what top.",  
+        "addressLocality": "Effort ago mind notice then director simply.",  
+        "addressRegion": "Recognize information figure box international not type. Indeed between similar safe. Social issue indicate. Try while reveal bad aud",  
+        "addressCountry": "Act window standard audience. Debate daughter purpose voice. Security fal",  
+        "postalCode": "Cost both general where. Agreement decade friend which.",  
+        "postOfficeBoxNumber": "Player contain year bill ok choose today. Source firm drug senior.",  
+        "streetNr": "Inf",  
+        "district": "Plan PM more heavy across while. Kid he weight before "  
+    },  
+    "areaServed": "Painting child reflect up control instead company. Future model green place beat sense far.",  
+    "rt": [  
+        "oic.r.calorificvalue"  
+    ],  
+    "if": [  
+        "oic.if.r",  
+        "oic.if.baseline"  
+    ],  
+    "n": "Boy without",  
+    "precision": 109.1,  
+    "calorific": 803.4,  
+    "type": "Calorific"  
 }  
 ```  
 </details>  
@@ -149,79 +481,101 @@ Calorific:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:Calorific:id:FMQF:67893052"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1977-03-31T18:46:16Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2007-06-06T14:47:00Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Bit life option. Near law yet study song source. Sea technology family remember."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Well certainly girl threat he prove news. Ground who teach."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Recently pass a trouble service whose. Up apply Democrat born thousand employee common. Black born peace light."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Four your middle. Join these occur away. Cell quality technology day glass."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Huge development nation democratic who network imagine. Seek accept better smile hour."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Calorific:items:ZPWD:90571353",  
-      "urn:ngsi-ld:Calorific:items:WLVH:40512989"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Calorific:items:GKDH:42748428",  
-      "urn:ngsi-ld:Calorific:items:TIGX:54603853"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        42.680074,  
-        8.875732  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Medical light suffer word already. Former born sure this car physical notice.",  
-      "addressLocality": "Source statement test report serious character nation.",  
-      "addressRegion": "Society often never simply foreign process upon perhaps. Suddenly year alone.",  
-      "addressCountry": "Star nature thing design. When source consumer letter system southern common.",  
-      "postalCode": "Role figure almost. Many responsibility research teach.",  
-      "postOfficeBoxNumber": "Nothing task under up since value write social. Official mind four family. Become scene test poor produce box organization TV."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Green put oil accept. Interview wide cover grow."  
-  }  
+    "id": "urn:ngsi-ld:Calorific:id:GOML:64303921",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "2007-03-08T15:05:03Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "1980-04-19T10:28:10Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": ""  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Along chance either six success on. At be than always different American address. Former claim chance prevent why measur"  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Off question source. Wrong section town deal movement out stay lot. Parent do ten after those scientist."  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Now four management energy stay significant his. Artist political camera expert stop area."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Individ"  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Calorific:items:PYEA:60976701",  
+            "urn:ngsi-ld:Calorific:items:GMZY:09925185"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Calorific:items:VWTJ:71097951"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -55.8794045,  
+                28.115695  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Million size country site. He couple ground place what top.",  
+            "addressLocality": "Effort ago mind notice then director simply.",  
+            "addressRegion": "Recognize information figure box international not type. Indeed between similar safe. Social issue indicate. Try while reveal bad aud",  
+            "addressCountry": "Act window standard audience. Debate daughter purpose voice. Security fal",  
+            "postalCode": "Cost both general where. Agreement decade friend which.",  
+            "postOfficeBoxNumber": "Player contain year bill ok choose today. Source firm drug senior.",  
+            "streetNr": "Inf",  
+            "district": "Plan PM more heavy across while. Kid he weight before "  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Painting child reflect up control instead company. Future model green place beat sense far."  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.calorificvalue"  
+        ]  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.r",  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Boy without"  
+    },  
+    "precision": {  
+        "type": "Number",  
+        "value": 109.1  
+    },  
+    "calorific": {  
+        "type": "Number",  
+        "value": 803.4  
+    },  
+    "type": "Calorific"  
 }  
 ```  
 </details>  
@@ -230,41 +584,52 @@ Calorific:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Calorific:id:FMQF:67893052",  
-    "dateCreated": "1977-03-31T18:46:16Z",  
-    "dateModified": "2007-06-06T14:47:00Z",  
-    "source": "Bit life option. Near law yet study song source. Sea technology family remember.",  
-    "name": "Well certainly girl threat he prove news. Ground who teach.",  
-    "alternateName": "Recently pass a trouble service whose. Up apply Democrat born thousand employee common. Black born peace light.",  
-    "description": "Four your middle. Join these occur away. Cell quality technology day glass.",  
-    "dataProvider": "Huge development nation democratic who network imagine. Seek accept better smile hour.",  
+    "id": "urn:ngsi-ld:Calorific:id:GOML:64303921",  
+    "dateCreated": "2007-03-08T15:05:03Z",  
+    "dateModified": "1980-04-19T10:28:10Z",  
+    "source": "",  
+    "name": "Along chance either six success on. At be than always different American address. Former claim chance prevent why measur",  
+    "alternateName": "Off question source. Wrong section town deal movement out stay lot. Parent do ten after those scientist.",  
+    "description": "Now four management energy stay significant his. Artist political camera expert stop area.",  
+    "dataProvider": "Individ",  
     "owner": [  
-        "urn:ngsi-ld:Calorific:items:ZPWD:90571353",  
-        "urn:ngsi-ld:Calorific:items:WLVH:40512989"  
+        "urn:ngsi-ld:Calorific:items:PYEA:60976701",  
+        "urn:ngsi-ld:Calorific:items:GMZY:09925185"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:Calorific:items:GKDH:42748428",  
-        "urn:ngsi-ld:Calorific:items:TIGX:54603853"  
+        "urn:ngsi-ld:Calorific:items:VWTJ:71097951"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            42.680074,  
-            8.875732  
+            -55.8794045,  
+            28.115695  
         ]  
     },  
     "address": {  
-        "streetAddress": "Medical light suffer word already. Former born sure this car physical notice.",  
-        "addressLocality": "Source statement test report serious character nation.",  
-        "addressRegion": "Society often never simply foreign process upon perhaps. Suddenly year alone.",  
-        "addressCountry": "Star nature thing design. When source consumer letter system southern common.",  
-        "postalCode": "Role figure almost. Many responsibility research teach.",  
-        "postOfficeBoxNumber": "Nothing task under up since value write social. Official mind four family. Become scene test poor produce box organization TV."  
+        "streetAddress": "Million size country site. He couple ground place what top.",  
+        "addressLocality": "Effort ago mind notice then director simply.",  
+        "addressRegion": "Recognize information figure box international not type. Indeed between similar safe. Social issue indicate. Try while reveal bad aud",  
+        "addressCountry": "Act window standard audience. Debate daughter purpose voice. Security fal",  
+        "postalCode": "Cost both general where. Agreement decade friend which.",  
+        "postOfficeBoxNumber": "Player contain year bill ok choose today. Source firm drug senior.",  
+        "streetNr": "Inf",  
+        "district": "Plan PM more heavy across while. Kid he weight before "  
     },  
-    "areaServed": "Green put oil accept. Interview wide cover grow.",  
+    "areaServed": "Painting child reflect up control instead company. Future model green place beat sense far.",  
+    "rt": [  
+        "oic.r.calorificvalue"  
+    ],  
+    "if": [  
+        "oic.if.r",  
+        "oic.if.baseline"  
+    ],  
+    "n": "Boy without",  
+    "precision": 109.1,  
+    "calorific": 803.4,  
+    "type": "Calorific",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -274,82 +639,109 @@ Calorific:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Calorific:id:CFRO:24987966",  
+    "id": "urn:ngsi-ld:Calorific:id:GOML:64303921",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1980-01-14T16:27:01Z"  
+            "@value": "2007-03-08T15:05:03Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2005-10-09T16:08:25Z"  
+            "@value": "1980-04-19T10:28:10Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "May give voice long. Option shake detail business camera right."  
+        "value": ""  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Up toward weight matter. Mention cup oil provide state."  
+        "value": "Along chance either six success on. At be than always different American address. Former claim chance prevent why measur"  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Single industry including. Price TV whether marriage responsibility better."  
+        "value": "Off question source. Wrong section town deal movement out stay lot. Parent do ten after those scientist."  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Imagine a tell best artist. Certain fact join any return."  
+        "value": "Now four management energy stay significant his. Artist political camera expert stop area."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Upon enter then. Prove nor table hotel show same board. Media other bed door accept skin. Article hit fact speak quality."  
+        "value": "Individ"  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Calorific:items:PVCH:41794062",  
-            "urn:ngsi-ld:Calorific:items:AXTC:32120303"  
+            "urn:ngsi-ld:Calorific:items:PYEA:60976701",  
+            "urn:ngsi-ld:Calorific:items:GMZY:09925185"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Calorific:items:EWBK:09194755"  
+            "urn:ngsi-ld:Calorific:items:VWTJ:71097951"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                -10.590852,  
-                43.387916  
+                -55.8794045,  
+                28.115695  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Administration see claim bring gun. Draw consumer let should place.",  
-            "addressLocality": "Pay situation discussion seek open time. How list during off. Her worry power you against recently.",  
-            "addressRegion": "Account which interesting one anyone community shoulder. Close issue early positive house newspaper test. Must process heart including partner.",  
-            "addressCountry": "Fact science there establish agree strategy thus. Who produce trip movie generation.",  
-            "postalCode": "That house generation face machine service be if. As under line environmental drug head.",  
-            "postOfficeBoxNumber": "Federal yet from there. Ready same involve truth thousand play enter really."  
+            "streetAddress": "Million size country site. He couple ground place what top.",  
+            "addressLocality": "Effort ago mind notice then director simply.",  
+            "addressRegion": "Recognize information figure box international not type. Indeed between similar safe. Social issue indicate. Try while reveal bad aud",  
+            "addressCountry": "Act window standard audience. Debate daughter purpose voice. Security fal",  
+            "postalCode": "Cost both general where. Agreement decade friend which.",  
+            "postOfficeBoxNumber": "Player contain year bill ok choose today. Source firm drug senior.",  
+            "streetNr": "Inf",  
+            "district": "Plan PM more heavy across while. Kid he weight before "  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Speech who operation hundred."  
+        "value": "Painting child reflect up control instead company. Future model green place beat sense far."  
     },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.calorificvalue"  
+        ]  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.r",  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Boy without"  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 109.1  
+    },  
+    "calorific": {  
+        "type": "Property",  
+        "value": 803.4  
+    },  
+    "type": "Calorific",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
