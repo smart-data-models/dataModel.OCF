@@ -1,75 +1,93 @@
 {
-  "id": {
-    "type": "string",
-    "value": "urn:ngsi-ld:AutoWhiteBalance:id:YBGX:79096195"
-  },
-  "dateCreated": {
-    "format": "date-time",
-    "type": "string",
-    "value": "1988-12-28T18:35:21Z"
-  },
-  "dateModified": {
-    "format": "date-time",
-    "type": "string",
-    "value": "1995-01-26T21:45:21Z"
-  },
-  "source": {
-    "type": "string",
-    "value": "Identify most event degree. Beautiful national baby Mr. True brother sign after head. Enjoy rather last evidence easy."
-  },
-  "name": {
-    "type": "string",
-    "value": "Name million behavior. Arrive enough kitchen financial control. Top Mr add structure."
-  },
-  "alternateName": {
-    "type": "string",
-    "value": "Computer long food sense born break air care. Rule camera college ability mind defense."
-  },
-  "description": {
-    "type": "string",
-    "value": "Reflect book religious rule argue born second artist. Class perform anything. Couple together dream."
-  },
-  "dataProvider": {
-    "type": "string",
-    "value": "Instead present poor decision manage tend. Receive plan thus already. Could see population full himself."
-  },
-  "owner": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:AutoWhiteBalance:items:GMHA:08426645",
-      "urn:ngsi-ld:AutoWhiteBalance:items:OQIY:30011178"
-    ]
-  },
-  "seeAlso": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:AutoWhiteBalance:items:FELU:43170881",
-      "urn:ngsi-ld:AutoWhiteBalance:items:RFVY:17552908"
-    ]
-  },
-  "location": {
-    "type": "object",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        -43.3466335,
-        -125.620359
-      ]
-    }
-  },
-  "address": {
-    "type": "object",
-    "value": {
-      "streetAddress": "Bag form author.",
-      "addressLocality": "Family along class boy analysis. One control citizen language blue eye painting.",
-      "addressRegion": "Song ago begin wear either. Dinner establish theory until. Argue describe behavior step.",
-      "addressCountry": "Few near year notice. Thank white there once rich. Nothing clear line artist off effort image.",
-      "postalCode": "Fast bar language young husband. Loss million enough me.",
-      "postOfficeBoxNumber": "I paper share operation billion play mouth smile."
-    }
-  },
-  "areaServed": {
-    "type": "string",
-    "value": "Generation soldier history financial their. Simple tough clearly Congress artist wonder. International morning shoulder help."
-  }
+    "id": "urn:ngsi-ld:AutoWhiteBalance:id:IWWJ:89932325",
+    "dateCreated": {
+        "type": "DateTime",
+        "value": "2006-08-15T17:31:25Z"
+    },
+    "dateModified": {
+        "type": "DateTime",
+        "value": "2009-08-14T00:51:49Z"
+    },
+    "source": {
+        "type": "Text",
+        "value": "Though realize sav"
+    },
+    "name": {
+        "type": "Text",
+        "value": "International management go get. Degree production skill season attention away many."
+    },
+    "alternateName": {
+        "type": "Text",
+        "value": "Manager wear exist article kind. Hope smile recent than once property more. Cause personal actually war choice unit assume."
+    },
+    "description": {
+        "type": "Text",
+        "value": "Security benefit rather eat member whose southern. Painting individual himself g"
+    },
+    "dataProvider": {
+        "type": "Text",
+        "value": "Without meet majority station. Ok yourself president Republican."
+    },
+    "owner": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:AutoWhiteBalance:items:BDSM:75724340",
+            "urn:ngsi-ld:AutoWhiteBalance:items:QYOC:51435150"
+        ]
+    },
+    "seeAlso": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:AutoWhiteBalance:items:ZSQT:71423685"
+        ]
+    },
+    "location": {
+        "type": "geo:json",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -77.6840755,
+                -114.923609
+            ]
+        }
+    },
+    "address": {
+        "type": "StructuredValue",
+        "value": {
+            "streetAddress": "Across speak research build blue method lawyer. Top require too campaign travel condition. Use player sing Mrs.",
+            "addressLocality": "History maybe any me. City support anyone participant central wife place. Bar open set until safe in outside. Design management respons",
+            "addressRegion": "Soldier east coach. Close marriage perhaps despite she pattern tough. Spring conf",
+            "addressCountry": "Result key e",
+            "postalCode": "Very Congress body. Financial quite fear area run according evidence. Power sound reality law change call.",
+            "postOfficeBoxNumber": "Through house read school change cell before. Data city order future put bit play animal.",
+            "streetNr": "Own condition expert time kee",
+            "district": "Significant admit TV far meeting health bit. Increase factor anyone provide probably."
+        }
+    },
+    "areaServed": {
+        "type": "Text",
+        "value": "Various notice tree. Real within on go doctor officer glass."
+    },
+    "rt": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.r.colour.autowhitebalance"
+        ]
+    },
+    "autoWhiteBalance": {
+        "type": "Boolean",
+        "value": true
+    },
+    "n": {
+        "type": "Text",
+        "value": "Face picture case entire face house describe autho"
+    },
+    "if": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.if.baseline",
+            "oic.if.a"
+        ]
+    },
+    "type": "AutoWhiteBalance"
 }
