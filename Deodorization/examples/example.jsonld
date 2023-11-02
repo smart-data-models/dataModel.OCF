@@ -1,38 +1,49 @@
 {
-    "id": "urn:ngsi-ld:Deodorization:id:XDXD:95550483",
-    "dateCreated": "1999-03-18T19:45:38Z",
-    "dateModified": "2003-06-19T17:39:31Z",
-    "source": "Enter example study enjoy get research cost once. Professor bill page center.",
-    "name": "Attention produce quite newspaper world story approach.",
-    "alternateName": "Stand usually material per great although young. During move somebody everybody inside.",
-    "description": "Talk fund we course affect mother. Bring western apply security democratic.",
-    "dataProvider": "Success show social modern view. Officer stock true center have foot watch firm. Require capital yourself yard bar approach.",
+    "id": "urn:ngsi-ld:Deodorization:id:DDRP:28146546",
+    "dateCreated": "2002-04-04T10:47:16Z",
+    "dateModified": "1992-12-09T04:22:28Z",
+    "source": "Look record interview few. Turn phone heart window. Assume be seek article.",
+    "name": "Hour million large major.",
+    "alternateName": "Institution happy write end since. Court boy state table agree moment. Budget huge debate among way. Per",
+    "description": "Work chance image quite there many true follow. Your play themselves myself use act relationship.",
+    "dataProvider": "Along chance either six success on. At be than always different American address. Former claim chance prevent why measure too.",
     "owner": [
-        "urn:ngsi-ld:Deodorization:items:RAZH:64911453",
-        "urn:ngsi-ld:Deodorization:items:TUDH:55185476"
+        "urn:ngsi-ld:Deodorization:items:YGJR:80918916",
+        "urn:ngsi-ld:Deodorization:items:VAXF:96769930"
     ],
     "seeAlso": [
-        "urn:ngsi-ld:Deodorization:items:KRVY:49754379",
-        "urn:ngsi-ld:Deodorization:items:YFMD:65193227"
+        "urn:ngsi-ld:Deodorization:items:JYNM:48945174"
     ],
     "location": {
         "type": "Point",
         "coordinates": [
-            -4.4983885,
-            -135.992885
+            12.993162,
+            -146.575081
         ]
     },
     "address": {
-        "streetAddress": "Low record Republican number prevent citizen group. List memory begin marriage weight.",
-        "addressLocality": "Standard religious your buy boy down lot. Partner someone available guess security sing between create. Within standard everyone speech require street manage.",
-        "addressRegion": "Short yet just table month until. Expert true dark director throughout red continue. You remain street various than training able.",
-        "addressCountry": "There meet maybe message language such.",
-        "postalCode": "Someone music several little training easy human.",
-        "postOfficeBoxNumber": "Walk me continue executive green. Feel coach fall stuff often."
+        "streetAddress": "Dream role free walk. Individual man tell response purpo",
+        "addressLocality": "Partner hit another. Sing after our car food record power. Himself simply make t",
+        "addressRegion": "Place full buy radio perform small camera tr",
+        "addressCountry": "What top always effort. War project occur. Director simply those physical maybe. Information figure box international not type very.",
+        "postalCode": "Between similar safe air. Issue",
+        "postOfficeBoxNumber": "Audience throw debate daughter purpose voice. Security fall ready usually.",
+        "streetNr": "Co",
+        "district": "Player contain year bill ok "
     },
-    "areaServed": "Common collection agree away. Gun collection recently old project.",
+    "areaServed": "Information animal car after back available. Federal indicate unit opportunity fear great.",
+    "rt": [
+        "oic.r.deodorization"
+    ],
+    "mode": "on",
+    "currentstate": "on",
+    "n": "Heavy across while top. Daught",
+    "if": [
+        "oic.if.baseline",
+        "oic.if.a"
+    ],
+    "type": "Deodorization",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
