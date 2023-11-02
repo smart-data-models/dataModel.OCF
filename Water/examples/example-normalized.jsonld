@@ -1,76 +1,78 @@
 {
-    "id": "urn:ngsi-ld:Water:id:IGIX:52349323",
+    "id": "urn:ngsi-ld:Water:id:DOYR:11912958",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2008-12-09T09:24:38Z"
+            "@value": "2023-02-21T17:22:09Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1970-07-26T10:30:36Z"
+            "@value": "2023-07-29T02:37:33Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Wait method certain to. Three prevent southern turn market outside. Should night edge policy benefit any store. Audience keep else on name."
+        "value": "For community student education record middle place reduce. Should only happy. Space mention wide actually because such produce."
     },
     "name": {
         "type": "Property",
-        "value": "Democratic especially behavior good discover recognize behavior. Reason yeah nice population."
+        "value": "It hour heart own. Maybe day public n"
     },
     "alternateName": {
         "type": "Property",
-        "value": "East majority painting fact. Watch recognize city system result simply concern. Song possible on accept."
+        "value": "But rule rock d"
     },
     "description": {
         "type": "Property",
-        "value": "Either movement understand manage call. Seven market table mouth feeling now base. Short size act sound."
+        "value": "Represent turn there education. Receive scene water despite than member pretty I. Apply test hop"
     },
     "dataProvider": {
         "type": "Property",
-        "value": "Industry national task lay. Thank as line level."
+        "value": "Away action difference five. Easy socie"
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:Water:items:QYEH:60886268",
-            "urn:ngsi-ld:Water:items:SCJR:34861037"
+            "urn:ngsi-ld:Water:items:TJIX:66655738",
+            "urn:ngsi-ld:Water:items:CJGX:87961037"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:Water:items:VHGW:29144445"
+            "urn:ngsi-ld:Water:items:GDCA:73327487"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                -38.9642505,
-                -126.072131
+                29.625734,
+                35.828906
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "Give represent government use eye. Police road return focus.",
-            "addressLocality": "Someone area I oil. Military wind direction yes environmental.",
-            "addressRegion": "Possible hold can. Born likely group.",
-            "addressCountry": "Future upon information learn certain. Democrat argue wind member. Current probably campaign seem language young future above.",
-            "postalCode": "Big push federal weight play. Involve onto however soldier contain. Give raise because over.",
-            "postOfficeBoxNumber": "Democrat ahead when return poor well. Speech effort those. Simply particular big they better."
+            "streetAddress": "Family not system skill. Resource statement thus against authori",
+            "addressLocality": "Suddenly west goal same happy. Information every economic party determine social.",
+            "addressRegion": "Analysis head develop present grow. Already three protect investment. Later cause while draw tell citizen chance.",
+            "addressCountry": "Might court myself stage entire major move health. Usually a clear science serve main very should.",
+            "postalCode": "Including into popular treatment check probably. There film attorney challenge suggest. While",
+            "postOfficeBoxNumber": "But camp",
+            "streetNr": "Now action hand ever half process. Improve any list lead ",
+            "district": "Skin benefit exactly oil financial. Assume foreign wear listen water executive economy best. May food field occur base surface approach water."
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "Rule full country result community central environment. Memory authority popular election alone."
+        "value": "Enjoy less interest. Develop near nothing another. Teach ef"
     },
     "rt": {
         "type": "Property",
@@ -84,26 +86,26 @@
     },
     "measurement": {
         "type": "Property",
-        "value": 488.6
+        "value": 262.5
     },
     "precision": {
         "type": "Property",
-        "value": 976.2
+        "value": 296.1
     },
     "n": {
         "type": "Property",
-        "value": "Mind arm popular rate never. Similar so body box. Reflect right development."
+        "value": "Well drive season thought."
     },
     "range": {
         "type": "Property",
         "value": [
-            450.6,
-            89.0
+            610.2,
+            284.2
         ]
     },
     "step": {
         "type": "Property",
-        "value": 832.4
+        "value": 846.3
     },
     "if": {
         "type": "Property",
@@ -113,7 +115,6 @@
     },
     "type": "Water",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
