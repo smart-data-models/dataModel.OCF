@@ -1,3 +1,3 @@
 /* (Beta) Export of data model MuscleOxygenSaturation of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE MuscleOxygenSaturation_type AS ENUM ('MuscleOxygenSaturation');
-CREATE TABLE MuscleOxygenSaturation (if JSON, muscleoxygensaturation NUMERIC, n TEXT, rt JSON, type MuscleOxygenSaturation_type);
+CREATE TABLE MuscleOxygenSaturation (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, if JSON, location JSON, muscleoxygensaturation NUMERIC, n TEXT, name TEXT, owner JSON, rt JSON, seeAlso JSON, source TEXT, type MuscleOxygenSaturation_type);
