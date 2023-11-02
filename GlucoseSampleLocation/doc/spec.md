@@ -15,7 +15,15 @@
 ## List of properties  
 
 <sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
-- `if[array]`: The OCF Interface set supported by this Resource  - `n[string]`: Friendly name of the Resource  - `rt[array]`: Resource Type  - `samplelocation[string]`: The possible blood locations where the blood sample may be taken.  - `type[string]`: NGSI entity type. It has to be GlucoseSampleLocation  <!-- /30-PropertiesList -->  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: The country. For example, Spain  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: The locality in which the street address is, and which is in the region  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: The region in which the locality is, and which is in the country  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: A district is a type of administrative division that, in some countries, is managed by the local government    
+	- `postOfficeBoxNumber[string]`: The post office box number for PO box addresses. For example, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: The postal code. For example, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: The street address  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Number identifying a specific property on a public street    
+- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity  - `dateCreated[date-time]`: Entity creation timestamp. This will usually be allocated by the storage platform  - `dateModified[date-time]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform  - `description[string]`: A description of this item  - `id[*]`: Unique identifier of the entity  - `if[array]`: The OCF Interface set supported by this Resource  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n[string]`: Friendly name of the Resource  - `name[string]`: The name of this item  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `rt[array]`: Resource Type  - `samplelocation[string]`: The possible blood locations where the blood sample may be taken.  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object  - `type[string]`: NGSI entity type. It has to be GlucoseSampleLocation  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Required properties  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -32,6 +40,109 @@
 GlucoseSampleLocation:    
   description: Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the Properties associated with context sample Location. AST means Alternative Site Test specifying that the location of test performed was from an alternative site on the body. The samplelocation Property is a read-only value that is provided by the Server.    
   properties:    
+    address:    
+      description: The mailing address    
+      properties:    
+        addressCountry:    
+          description: 'The country. For example, Spain'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
+        addressLocality:    
+          description: 'The locality in which the street address is, and which is in the region'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
+        addressRegion:    
+          description: 'The region in which the locality is, and which is in the country'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        postOfficeBoxNumber:    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
+        postalCode:    
+          description: 'The postal code. For example, 24004'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
+        streetAddress:    
+          description: The street address    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      type: object    
+      x-ngsi:    
+        model: https://schema.org/address    
+        type: Property    
+    alternateName:    
+      description: An alternative name for this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    areaServed:    
+      description: The geographic area where a service or offered item is provided    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    dataProvider:    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateCreated:    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateModified:    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    description:    
+      description: A description of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    id:    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
+      x-ngsi:    
+        type: Property    
     if:    
       description: The OCF Interface set supported by this Resource    
       items:    
@@ -46,11 +157,203 @@ GlucoseSampleLocation:
       uniqueItems: true    
       x-ngsi:    
         type: Property    
+    location:    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+      oneOf:    
+        - description: Geojson reference to the item. Point    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                type: number    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - Point    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Point    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - LineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON LineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 4    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - Polygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Polygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPoint    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPoint    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiLineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiLineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    items:    
+                      type: number    
+                    minItems: 2    
+                    type: array    
+                  minItems: 4    
+                  type: array    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPolygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPolygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+      x-ngsi:    
+        type: GeoProperty    
     n:    
       description: Friendly name of the Resource    
       maxLength: 64    
       readOnly: true    
       type: string    
+      x-ngsi:    
+        type: Property    
+    name:    
+      description: The name of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    owner:    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
+      items:    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
+      type: array    
       x-ngsi:    
         type: Property    
     rt:    
@@ -74,6 +377,23 @@ GlucoseSampleLocation:
         - earlobe    
         - ctrlsolution    
       readOnly: true    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    seeAlso:    
+      description: list of uri pointing to additional resources about the item    
+      oneOf:    
+        - items:    
+            format: uri    
+            type: string    
+          minItems: 1    
+          type: array    
+        - format: uri    
+          type: string    
+      x-ngsi:    
+        type: Property    
+    source:    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
@@ -106,38 +426,48 @@ GlucoseSampleLocation:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:GlucoseSampleLocation:id:HMRW:59656193",  
-  "dateCreated": "1988-11-05T02:31:54Z",  
-  "dateModified": "1981-06-04T04:33:39Z",  
-  "source": "Decision despite soon. Will decision another avoid wall believe. Pick serious hotel arrive like indeed.",  
-  "name": "Place fire majority theory today senior according.",  
-  "alternateName": "Peace pick consumer quality issue claim. Policy arm yard structure two. Similar girl who bring before inside trial.",  
-  "description": "Five spring player play go record modern. White yard trouble last chance. Some others as just kitchen do hospital.",  
-  "dataProvider": "Clearly establish draw action land end. Method look cause human partner whatever.",  
-  "owner": [  
-    "urn:ngsi-ld:GlucoseSampleLocation:items:GTSG:35648681",  
-    "urn:ngsi-ld:GlucoseSampleLocation:items:BRNL:14310622"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:GlucoseSampleLocation:items:COGG:05616250",  
-    "urn:ngsi-ld:GlucoseSampleLocation:items:AJHV:00001057"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -5.802658,  
-      118.84406  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Everything hour piece nothing simply effort. Business various entire. Bad member trade meet. Bring fall shoulder several help.",  
-    "addressLocality": "Total deep region buy. Arm kind stay government possible.",  
-    "addressRegion": "Source ready ten wind.",  
-    "addressCountry": "Bring western here. Child physical like able truth. Kind alone major thought agreement worker.",  
-    "postalCode": "Nothing father task analysis again blood. Friend threat society art wait. Middle theory customer field.",  
-    "postOfficeBoxNumber": "Before not second anyone example point."  
-  },  
-  "areaServed": "Young similar late with what. Respond quality fact green assume movement. White president discover garden here."  
+    "id": "urn:ngsi-ld:GlucoseSampleLocation:id:FULW:15305695",  
+    "dateCreated": "2021-05-16T17:35:47Z",  
+    "dateModified": "2004-02-19T01:49:02Z",  
+    "source": "Country move fall better hotel. Head letter here day recent three. Leave product response happen person hair help skill. Old early why sort story open news toward.",  
+    "name": "Same land administration camera administration. Case nation care store ac",  
+    "alternateName": "Sense set area truth. Certain audience life",  
+    "description": "General consumer thought again memory return.",  
+    "dataProvider": "Stock view book message weight though technology. ",  
+    "owner": [  
+        "urn:ngsi-ld:GlucoseSampleLocation:items:DKBV:55759974",  
+        "urn:ngsi-ld:GlucoseSampleLocation:items:YXLQ:06862334"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:GlucoseSampleLocation:items:CYPW:78190486"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            9.4263155,  
+            172.558196  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Mrs remember how catch. Church policy reduce new world learn government. When service cons",  
+        "addressLocality": "Commercial either partner building week adult l",  
+        "addressRegion": "State so",  
+        "addressCountry": "Decide their defense next hair. Someone official course community white close suddenly hope. Challenge lo",  
+        "postalCode": "With intern",  
+        "postOfficeBoxNumber": "Continue join fact authority. Business cause past. Mention computer decade nearly if coach crime. Drop manage write same rest",  
+        "streetNr": "Camera imagine ",  
+        "district": "Do hot century south process. Kid likely include great north."  
+    },  
+    "areaServed": "Pretty today home page month. Sometimes compare high a war often. C",  
+    "rt": [  
+        "oic.r.glucose.samplelocation"  
+    ],  
+    "samplelocation": "ctrlsolution",  
+    "n": "Wind behind finish opportunity",  
+    "if": [  
+        "oic.if.baseline"  
+    ],  
+    "type": "GlucoseSampleLocation"  
 }  
 ```  
 </details>  
@@ -146,79 +476,96 @@ GlucoseSampleLocation:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:GlucoseSampleLocation:id:HMRW:59656193"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1988-11-05T02:31:54Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1981-06-04T04:33:39Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Decision despite soon. Will decision another avoid wall believe. Pick serious hotel arrive like indeed."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Place fire majority theory today senior according."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Peace pick consumer quality issue claim. Policy arm yard structure two. Similar girl who bring before inside trial."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Five spring player play go record modern. White yard trouble last chance. Some others as just kitchen do hospital."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Clearly establish draw action land end. Method look cause human partner whatever."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:GlucoseSampleLocation:items:GTSG:35648681",  
-      "urn:ngsi-ld:GlucoseSampleLocation:items:BRNL:14310622"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:GlucoseSampleLocation:items:COGG:05616250",  
-      "urn:ngsi-ld:GlucoseSampleLocation:items:AJHV:00001057"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -5.802658,  
-        118.84406  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Everything hour piece nothing simply effort. Business various entire. Bad member trade meet. Bring fall shoulder several help.",  
-      "addressLocality": "Total deep region buy. Arm kind stay government possible.",  
-      "addressRegion": "Source ready ten wind.",  
-      "addressCountry": "Bring western here. Child physical like able truth. Kind alone major thought agreement worker.",  
-      "postalCode": "Nothing father task analysis again blood. Friend threat society art wait. Middle theory customer field.",  
-      "postOfficeBoxNumber": "Before not second anyone example point."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Young similar late with what. Respond quality fact green assume movement. White president discover garden here."  
-  }  
+    "id": "urn:ngsi-ld:GlucoseSampleLocation:id:FULW:15305695",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "2021-05-16T17:35:47Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "2004-02-19T01:49:02Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Country move fall better hotel. Head letter here day recent three. Leave product response happen person hair help skill. Old early why sort story open news toward."  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Same land administration camera administration. Case nation care store ac"  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Sense set area truth. Certain audience life"  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "General consumer thought again memory return."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Stock view book message weight though technology. "  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:GlucoseSampleLocation:items:DKBV:55759974",  
+            "urn:ngsi-ld:GlucoseSampleLocation:items:YXLQ:06862334"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:GlucoseSampleLocation:items:CYPW:78190486"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                9.4263155,  
+                172.558196  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Mrs remember how catch. Church policy reduce new world learn government. When service cons",  
+            "addressLocality": "Commercial either partner building week adult l",  
+            "addressRegion": "State so",  
+            "addressCountry": "Decide their defense next hair. Someone official course community white close suddenly hope. Challenge lo",  
+            "postalCode": "With intern",  
+            "postOfficeBoxNumber": "Continue join fact authority. Business cause past. Mention computer decade nearly if coach crime. Drop manage write same rest",  
+            "streetNr": "Camera imagine ",  
+            "district": "Do hot century south process. Kid likely include great north."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Pretty today home page month. Sometimes compare high a war often. C"  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.glucose.samplelocation"  
+        ]  
+    },  
+    "samplelocation": {  
+        "type": "Text",  
+        "value": "ctrlsolution"  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Wind behind finish opportunity"  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "GlucoseSampleLocation"  
 }  
 ```  
 </details>  
@@ -227,41 +574,50 @@ GlucoseSampleLocation:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:GlucoseSampleLocation:id:HMRW:59656193",  
-    "dateCreated": "1988-11-05T02:31:54Z",  
-    "dateModified": "1981-06-04T04:33:39Z",  
-    "source": "Decision despite soon. Will decision another avoid wall believe. Pick serious hotel arrive like indeed.",  
-    "name": "Place fire majority theory today senior according.",  
-    "alternateName": "Peace pick consumer quality issue claim. Policy arm yard structure two. Similar girl who bring before inside trial.",  
-    "description": "Five spring player play go record modern. White yard trouble last chance. Some others as just kitchen do hospital.",  
-    "dataProvider": "Clearly establish draw action land end. Method look cause human partner whatever.",  
+    "id": "urn:ngsi-ld:GlucoseSampleLocation:id:FULW:15305695",  
+    "dateCreated": "2021-05-16T17:35:47Z",  
+    "dateModified": "2004-02-19T01:49:02Z",  
+    "source": "Country move fall better hotel. Head letter here day recent three. Leave product response happen person hair help skill. Old early why sort story open news toward.",  
+    "name": "Same land administration camera administration. Case nation care store ac",  
+    "alternateName": "Sense set area truth. Certain audience life",  
+    "description": "General consumer thought again memory return.",  
+    "dataProvider": "Stock view book message weight though technology. ",  
     "owner": [  
-        "urn:ngsi-ld:GlucoseSampleLocation:items:GTSG:35648681",  
-        "urn:ngsi-ld:GlucoseSampleLocation:items:BRNL:14310622"  
+        "urn:ngsi-ld:GlucoseSampleLocation:items:DKBV:55759974",  
+        "urn:ngsi-ld:GlucoseSampleLocation:items:YXLQ:06862334"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:GlucoseSampleLocation:items:COGG:05616250",  
-        "urn:ngsi-ld:GlucoseSampleLocation:items:AJHV:00001057"  
+        "urn:ngsi-ld:GlucoseSampleLocation:items:CYPW:78190486"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            -5.802658,  
-            118.84406  
+            9.4263155,  
+            172.558196  
         ]  
     },  
     "address": {  
-        "streetAddress": "Everything hour piece nothing simply effort. Business various entire. Bad member trade meet. Bring fall shoulder several help.",  
-        "addressLocality": "Total deep region buy. Arm kind stay government possible.",  
-        "addressRegion": "Source ready ten wind.",  
-        "addressCountry": "Bring western here. Child physical like able truth. Kind alone major thought agreement worker.",  
-        "postalCode": "Nothing father task analysis again blood. Friend threat society art wait. Middle theory customer field.",  
-        "postOfficeBoxNumber": "Before not second anyone example point."  
+        "streetAddress": "Mrs remember how catch. Church policy reduce new world learn government. When service cons",  
+        "addressLocality": "Commercial either partner building week adult l",  
+        "addressRegion": "State so",  
+        "addressCountry": "Decide their defense next hair. Someone official course community white close suddenly hope. Challenge lo",  
+        "postalCode": "With intern",  
+        "postOfficeBoxNumber": "Continue join fact authority. Business cause past. Mention computer decade nearly if coach crime. Drop manage write same rest",  
+        "streetNr": "Camera imagine ",  
+        "district": "Do hot century south process. Kid likely include great north."  
     },  
-    "areaServed": "Young similar late with what. Respond quality fact green assume movement. White president discover garden here.",  
+    "areaServed": "Pretty today home page month. Sometimes compare high a war often. C",  
+    "rt": [  
+        "oic.r.glucose.samplelocation"  
+    ],  
+    "samplelocation": "ctrlsolution",  
+    "n": "Wind behind finish opportunity",  
+    "if": [  
+        "oic.if.baseline"  
+    ],  
+    "type": "GlucoseSampleLocation",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -271,82 +627,104 @@ GlucoseSampleLocation:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:GlucoseSampleLocation:id:QSBX:29851292",  
+    "id": "urn:ngsi-ld:GlucoseSampleLocation:id:FULW:15305695",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1982-02-15T19:25:40Z"  
+            "@value": "2021-05-16T17:35:47Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1975-12-28T04:09:27Z"  
+            "@value": "2004-02-19T01:49:02Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "And forward sort now."  
+        "value": "Country move fall better hotel. Head letter here day recent three. Leave product response happen person hair help skill. Old early why sort story open news toward."  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Outside election free another relationship me above."  
+        "value": "Same land administration camera administration. Case nation care store ac"  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Budget card forward option. Political or town money around leg second. Job kid result baby."  
+        "value": "Sense set area truth. Certain audience life"  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Season door win note three. Team ball notice who me top. Can tend fund where include responsibility necessary."  
+        "value": "General consumer thought again memory return."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Series hundred however man. Place bill soldier security then perform animal election."  
+        "value": "Stock view book message weight though technology. "  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:GlucoseSampleLocation:items:REPG:54879373",  
-            "urn:ngsi-ld:GlucoseSampleLocation:items:HHTT:80346776"  
+            "urn:ngsi-ld:GlucoseSampleLocation:items:DKBV:55759974",  
+            "urn:ngsi-ld:GlucoseSampleLocation:items:YXLQ:06862334"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:GlucoseSampleLocation:items:WEIJ:01724018"  
+            "urn:ngsi-ld:GlucoseSampleLocation:items:CYPW:78190486"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                58.0901955,  
-                -109.970684  
+                9.4263155,  
+                172.558196  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Society factor big benefit school much. Fly ahead reduce key including attorney. Half manage firm kitchen. It majority new good right.",  
-            "addressLocality": "As no involve option natural. Other certain Democrat continue hotel. Usually how rather onto already itself.",  
-            "addressRegion": "Rise clear candidate rest security record skin. Sense watch although against ago agreement.",  
-            "addressCountry": "Against break reach great he. Size soon film stage let.",  
-            "postalCode": "Good not pressure arrive.",  
-            "postOfficeBoxNumber": "Despite minute above difference. Claim impact education moment. Answer TV establish indicate throw."  
+            "streetAddress": "Mrs remember how catch. Church policy reduce new world learn government. When service cons",  
+            "addressLocality": "Commercial either partner building week adult l",  
+            "addressRegion": "State so",  
+            "addressCountry": "Decide their defense next hair. Someone official course community white close suddenly hope. Challenge lo",  
+            "postalCode": "With intern",  
+            "postOfficeBoxNumber": "Continue join fact authority. Business cause past. Mention computer decade nearly if coach crime. Drop manage write same rest",  
+            "streetNr": "Camera imagine ",  
+            "district": "Do hot century south process. Kid likely include great north."  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Until outside low often area professor fact."  
+        "value": "Pretty today home page month. Sometimes compare high a war often. C"  
     },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.glucose.samplelocation"  
+        ]  
+    },  
+    "samplelocation": {  
+        "type": "Property",  
+        "value": "ctrlsolution"  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Wind behind finish opportunity"  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "GlucoseSampleLocation",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
