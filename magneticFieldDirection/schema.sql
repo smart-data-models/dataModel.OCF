@@ -1,3 +1,3 @@
 /* (Beta) Export of data model magneticFieldDirection of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE magneticFieldDirection_type AS ENUM ('magneticFieldDirection');
-CREATE TABLE magneticFieldDirection (if JSON, n TEXT, rt JSON, type magneticFieldDirection_type, value JSON);
+CREATE TABLE magneticFieldDirection (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, if JSON, location JSON, n TEXT, name TEXT, owner JSON, rt JSON, seeAlso JSON, source TEXT, type magneticFieldDirection_type, value JSON);
