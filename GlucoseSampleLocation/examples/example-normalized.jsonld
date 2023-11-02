@@ -1,79 +1,101 @@
 {
-    "id": "urn:ngsi-ld:GlucoseSampleLocation:id:QSBX:29851292",
+    "id": "urn:ngsi-ld:GlucoseSampleLocation:id:FULW:15305695",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1982-02-15T19:25:40Z"
+            "@value": "2021-05-16T17:35:47Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1975-12-28T04:09:27Z"
+            "@value": "2004-02-19T01:49:02Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "And forward sort now."
+        "value": "Country move fall better hotel. Head letter here day recent three. Leave product response happen person hair help skill. Old early why sort story open news toward."
     },
     "name": {
         "type": "Property",
-        "value": "Outside election free another relationship me above."
+        "value": "Same land administration camera administration. Case nation care store ac"
     },
     "alternateName": {
         "type": "Property",
-        "value": "Budget card forward option. Political or town money around leg second. Job kid result baby."
+        "value": "Sense set area truth. Certain audience life"
     },
     "description": {
         "type": "Property",
-        "value": "Season door win note three. Team ball notice who me top. Can tend fund where include responsibility necessary."
+        "value": "General consumer thought again memory return."
     },
     "dataProvider": {
         "type": "Property",
-        "value": "Series hundred however man. Place bill soldier security then perform animal election."
+        "value": "Stock view book message weight though technology. "
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:GlucoseSampleLocation:items:REPG:54879373",
-            "urn:ngsi-ld:GlucoseSampleLocation:items:HHTT:80346776"
+            "urn:ngsi-ld:GlucoseSampleLocation:items:DKBV:55759974",
+            "urn:ngsi-ld:GlucoseSampleLocation:items:YXLQ:06862334"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:GlucoseSampleLocation:items:WEIJ:01724018"
+            "urn:ngsi-ld:GlucoseSampleLocation:items:CYPW:78190486"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                58.0901955,
-                -109.970684
+                9.4263155,
+                172.558196
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "Society factor big benefit school much. Fly ahead reduce key including attorney. Half manage firm kitchen. It majority new good right.",
-            "addressLocality": "As no involve option natural. Other certain Democrat continue hotel. Usually how rather onto already itself.",
-            "addressRegion": "Rise clear candidate rest security record skin. Sense watch although against ago agreement.",
-            "addressCountry": "Against break reach great he. Size soon film stage let.",
-            "postalCode": "Good not pressure arrive.",
-            "postOfficeBoxNumber": "Despite minute above difference. Claim impact education moment. Answer TV establish indicate throw."
+            "streetAddress": "Mrs remember how catch. Church policy reduce new world learn government. When service cons",
+            "addressLocality": "Commercial either partner building week adult l",
+            "addressRegion": "State so",
+            "addressCountry": "Decide their defense next hair. Someone official course community white close suddenly hope. Challenge lo",
+            "postalCode": "With intern",
+            "postOfficeBoxNumber": "Continue join fact authority. Business cause past. Mention computer decade nearly if coach crime. Drop manage write same rest",
+            "streetNr": "Camera imagine ",
+            "district": "Do hot century south process. Kid likely include great north."
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "Until outside low often area professor fact."
+        "value": "Pretty today home page month. Sometimes compare high a war often. C"
     },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.glucose.samplelocation"
+        ]
+    },
+    "samplelocation": {
+        "type": "Property",
+        "value": "ctrlsolution"
+    },
+    "n": {
+        "type": "Property",
+        "value": "Wind behind finish opportunity"
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.baseline"
+        ]
+    },
+    "type": "GlucoseSampleLocation",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
