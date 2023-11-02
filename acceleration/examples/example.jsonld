@@ -1,38 +1,54 @@
 {
-    "id": "urn:ngsi-ld:acceleration:id:AKKA:92596343",
-    "dateCreated": "2000-01-22T03:24:49Z",
-    "dateModified": "2002-02-16T14:36:32Z",
-    "source": "Half across bar analysis set another chance. Address run local name nothing whether newspaper.",
-    "name": "Add remember often rock listen. Hard find every. News start message sea dinner seek hand.",
-    "alternateName": "National store guy firm power race civil movie. Without difference live trade Democrat radio attention. Sort president push story improve free.",
-    "description": "Act event need down crime sell. Thus serious identify song add how method.",
-    "dataProvider": "Consider leave send chance fill small.",
+    "id": "urn:ngsi-ld:acceleration:id:PTIV:66263429",
+    "dateCreated": "1992-09-18T15:41:47Z",
+    "dateModified": "1993-03-23T07:22:41Z",
+    "source": "Mouth gas court skin street such. Full your senior design.",
+    "name": "Country be firm ground list. Drive top section test them bank guess. Sometimes fo",
+    "alternateName": "Wife ground south arrive season. Career yard choice.",
+    "description": "Hot happy campaign recognize our nature say. Since answer these look ",
+    "dataProvider": "Happen movie order much. Stand night take action assume.",
     "owner": [
-        "urn:ngsi-ld:acceleration:items:JBWN:36613923",
-        "urn:ngsi-ld:acceleration:items:NOJT:32000181"
+        "urn:ngsi-ld:acceleration:items:FHKM:06950447",
+        "urn:ngsi-ld:acceleration:items:PMQF:69472898"
     ],
     "seeAlso": [
-        "urn:ngsi-ld:acceleration:items:ATXW:46664069",
-        "urn:ngsi-ld:acceleration:items:NBUQ:53228079"
+        "urn:ngsi-ld:acceleration:items:BIAJ:36620039"
     ],
     "location": {
         "type": "Point",
         "coordinates": [
-            12.1695535,
-            -135.072105
+            46.791425,
+            130.647646
         ]
     },
     "address": {
-        "streetAddress": "High animal again very fish receive treatment. Learn simple less much certainly. Join reality section cut tough dark shoulder.",
-        "addressLocality": "Deep each ever attorney capital future agree over. Cultural institution against face. Win wide off win source help against.",
-        "addressRegion": "Ground include life small. We leader throughout player catch. Budget join trip war.",
-        "addressCountry": "Moment quickly environment small late likely. Short final agreement stage green painting natural end.",
-        "postalCode": "Her start similar control threat particular attorney.",
-        "postOfficeBoxNumber": "Me form item data. Case bag spend available."
+        "streetAddress": "Assume book we term former sort role main. By pay store peace situation say response age. Among window together girl establish send",
+        "addressLocality": "Edge lay the hear ",
+        "addressRegion": "Accept let own you machine dark population. Day thing hundred everybody plant part. Least car box teacher sense moth",
+        "addressCountry": "When prepare ok take degree story pay. Image quite state actually. Ask like front condition value where.",
+        "postalCode": "Themselves build machine operation level can often choice. Serve design thank.",
+        "postOfficeBoxNumber": "Who east cell and. Hour success family pres",
+        "streetNr": "Course ball art two partner. Enough score court yard property win. Through writer cup ",
+        "district": "Poor yourself business simple. Turn"
     },
-    "areaServed": "Individual ask site marriage stuff thing. History others rich.",
+    "areaServed": "Toward southern site same choose blood. Use necessary ",
+    "rt": [
+        "oic.r.sensor.acceleration"
+    ],
+    "acceleration": 253.7,
+    "n": "Throughout return commercial plac",
+    "range": [
+        192.1,
+        532.9
+    ],
+    "step": 986.6,
+    "precision": 223.4,
+    "if": [
+        "oic.if.s",
+        "oic.if.baseline"
+    ],
+    "type": "acceleration",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
