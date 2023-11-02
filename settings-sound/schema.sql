@@ -1,3 +1,3 @@
 /* (Beta) Export of data model settings-sound of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE settings-sound_type AS ENUM ('settings-sound');
-CREATE TABLE settings-sound (auto-volume BOOLEAN, dolby-atmos-compatibility BOOLEAN, if JSON, rt JSON, sound-mode TEXT, speaker TEXT, supported-sound-modes JSON, supported-speakers JSON, type settings-sound_type);
+CREATE TABLE settings-sound (address JSON, alternateName TEXT, areaServed TEXT, auto-volume BOOLEAN, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, dolby-atmos-compatibility BOOLEAN, id TEXT PRIMARY KEY, if JSON, location JSON, name TEXT, owner JSON, rt JSON, seeAlso JSON, sound-mode TEXT, source TEXT, speaker TEXT, supported-sound-modes JSON, supported-speakers JSON, type settings-sound_type);
