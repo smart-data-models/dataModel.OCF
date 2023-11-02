@@ -1,79 +1,101 @@
 {
-    "id": "urn:ngsi-ld:heartRateZone:id:CEHZ:58898697",
+    "id": "urn:ngsi-ld:heartRateZone:id:ENQF:45741847",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1991-04-18T21:11:56Z"
+            "@value": "1985-03-21T10:18:33Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1995-01-26T05:36:04Z"
+            "@value": "2001-06-01T12:28:15Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Member attorney through allow environmental traditional low. Rate near federal rise always consider good."
+        "value": "Speak fund coach politics rate open. Fly black leave model all these. Occur increase indeed home eight each soon community."
     },
     "name": {
         "type": "Property",
-        "value": "Machine create herself dark determine painting suddenly. Drug foot morning her commercial as. Himself court account after stage street establish. Still color technology certain section everything job."
+        "value": "Throw new behind catch great sport. Everyone family describe wonder par"
     },
     "alternateName": {
         "type": "Property",
-        "value": "Huge fund oil end card I enter. Professor black action act task follow outside. Message member week general."
+        "value": "Religious partner low conference husband. Director medical game city decide g"
     },
     "description": {
         "type": "Property",
-        "value": "Local light product commercial sound. Reduce national lead myself watch."
+        "value": "Together authority must best. Artist music his establish could."
     },
     "dataProvider": {
         "type": "Property",
-        "value": "Similar far its. Project these sometimes first."
+        "value": "Research product nice bed. Support may sure meeting subject politics."
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:heartRateZone:items:BPSC:73150514",
-            "urn:ngsi-ld:heartRateZone:items:EFSD:48378576"
+            "urn:ngsi-ld:heartRateZone:items:OFPW:07697765",
+            "urn:ngsi-ld:heartRateZone:items:GPIR:74445561"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:heartRateZone:items:WMWA:60306746"
+            "urn:ngsi-ld:heartRateZone:items:KDLO:05139773"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                -5.0300965,
-                -156.656203
+                -52.4623695,
+                100.384494
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "Collection thus manager customer. Read almost top now I set lose. Including lose war central benefit him others never.",
-            "addressLocality": "Happy child option wall. Mother many environment student score main person. Ready easy sure direction compare project cold.",
-            "addressRegion": "Generation foreign include admit prepare music want success. Nature continue manager back. Quality commercial learn identify full.",
-            "addressCountry": "Lead pick computer expert office pass. Apply reduce old live off sure eat everything.",
-            "postalCode": "Maybe direction future plan. Act address may hour lead. Poor way several.",
-            "postOfficeBoxNumber": "Arrive democratic research thus end ready."
+            "streetAddress": "Positive amount official. Small card throw letter. Simply me whose grow according.",
+            "addressLocality": "Chance nat",
+            "addressRegion": "Industry thought office poor nation. Usually argue teach option bed. Cut physical true name any enjoy low.",
+            "addressCountry": "Night which white popul",
+            "postalCode": "Picture why officer store he order. Amount represent weight owner instead. Air reduce executive grow question class.",
+            "postOfficeBoxNumber": "About conference message that city. Main despite region before. Occur information speak roa",
+            "streetNr": "There positive top country walk someone on improve",
+            "district": "Nature history run seek call skin me. Catch memory entire writer "
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "Blood class media follow author consider. Magazine upon which artist. She power system hundred."
+        "value": "Around daughter mouth condition operation. Two su"
     },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.sensor.heart.zone"
+        ]
+    },
+    "n": {
+        "type": "Property",
+        "value": "Fly bag worry always. Base prev"
+    },
+    "heartRateZone": {
+        "type": "Property",
+        "value": "Zone3"
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.s"
+        ]
+    },
+    "type": "heartRateZone",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
