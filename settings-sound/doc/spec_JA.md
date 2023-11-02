@@ -15,7 +15,15 @@
 ## プロパティのリスト  
 
 <sup><sub>[*] 属性に型がない場合は、複数の型があるか、異なるフォーマット/パターンがある可能性があるためです</sub></sup>。  
-- `auto-volume[boolean]`: 他のチャンネルに切り替えた際に、自動的に音量レベルを均一化します。  - `dolby-atmos-compatibility[boolean]`: ドルビーアトモスモード対応。  - `if[array]`: 原文には記述がない  - `rt[array]`: 音響機器設定のリソースタイプ  - `sound-mode[string]`: デバイス設定 サウンド - サウンドモード。クライアントは、supported-sound-modes プロパティを使用してサウンドモードを変更できます。  - `speaker[string]`: デバイス設定 サウンド - スピーカー。クライアントはsupported-speakersプロパティを使用してスピーカーを変更することができます。  - `supported-sound-modes[array]`: デバイスがサポートするサウンドモードの配列。sound-modeがサポートされている場合、このプロパティを追加する必要があります。  - `supported-speakers[array]`: デバイスがサポートするスピーカーの配列。スピーカーがサポートされている場合は、このプロパティを追加する必要があります。  - `type[string]`: NGSIエンティティタイプ。セッティング・サウンドでなければならない。  <!-- /30-PropertiesList -->  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国。例えば、スペイン  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 番地がある地域と、その地域に含まれる地域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: その地域がある地域、またその国がある地域  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 地区とは行政区画の一種で、国によっては地方自治体によって管理されている。    
+	- `postOfficeBoxNumber[string]`: 私書箱の住所のための私書箱番号。例：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 郵便番号。例：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 番地  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: 公道上の特定の物件を特定する番号    
+- `alternateName[string]`: この項目の別名  - `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `auto-volume[boolean]`: 他のチャンネルに切り替えた際に、自動的に音量レベルを均一化します。  - `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: この商品の説明  - `dolby-atmos-compatibility[boolean]`: ドルビーアトモスモード対応。  - `id[*]`: エンティティの一意識別子  - `if[array]`: 原文には記述がない  - `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `name[string]`: このアイテムの名前  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `rt[array]`: 音響機器設定のリソースタイプ  - `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `sound-mode[string]`: デバイス設定 サウンド - サウンドモード。クライアントは、supported-sound-modes プロパティを使用してサウンドモードを変更できます。  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `speaker[string]`: デバイス設定 サウンド - スピーカー。クライアントはsupported-speakersプロパティを使用してスピーカーを変更することができます。  - `supported-sound-modes[array]`: デバイスがサポートするサウンドモードの配列。sound-modeがサポートされている場合、このプロパティを追加する必要があります。  - `supported-speakers[array]`: デバイスがサポートするスピーカーの配列。スピーカーがサポートされている場合は、このプロパティを追加する必要があります。  - `type[string]`: NGSIエンティティタイプ。セッティング・サウンドでなければならない。  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 必須プロパティ  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -32,14 +40,117 @@
 settings-sound:    
   description: Smart Data Models Program adaptation of the original IoTData data Models. Gets current device sound settings.    
   properties:    
+    address:    
+      description: The mailing address    
+      properties:    
+        addressCountry:    
+          description: 'The country. For example, Spain'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
+        addressLocality:    
+          description: 'The locality in which the street address is, and which is in the region'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
+        addressRegion:    
+          description: 'The region in which the locality is, and which is in the country'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        postOfficeBoxNumber:    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
+        postalCode:    
+          description: 'The postal code. For example, 24004'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
+        streetAddress:    
+          description: The street address    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      type: object    
+      x-ngsi:    
+        model: https://schema.org/address    
+        type: Property    
+    alternateName:    
+      description: An alternative name for this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    areaServed:    
+      description: The geographic area where a service or offered item is provided    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
     auto-volume:    
       description: Automatically equalizes the volume level when switching to antother channel.    
       type: boolean    
       x-ngsi:    
         type: Property    
+    dataProvider:    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateCreated:    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateModified:    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    description:    
+      description: A description of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dolby-atmos-compatibility:    
       description: Supports dolby-atmos mode.    
       type: boolean    
+      x-ngsi:    
+        type: Property    
+    id:    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     if:    
@@ -55,6 +166,198 @@ settings-sound:
       uniqueItems: true    
       x-ngsi:    
         type: Property    
+    location:    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+      oneOf:    
+        - description: Geojson reference to the item. Point    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                type: number    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - Point    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Point    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - LineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON LineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 4    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - Polygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Polygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPoint    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPoint    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiLineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiLineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    items:    
+                      type: number    
+                    minItems: 2    
+                    type: array    
+                  minItems: 4    
+                  type: array    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPolygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPolygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+      x-ngsi:    
+        type: GeoProperty    
+    name:    
+      description: The name of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    owner:    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
+      items:    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     rt:    
       description: The Resource Type of Device Settings for sound    
       items:    
@@ -67,8 +370,25 @@ settings-sound:
       uniqueItems: true    
       x-ngsi:    
         type: Property    
+    seeAlso:    
+      description: list of uri pointing to additional resources about the item    
+      oneOf:    
+        - items:    
+            format: uri    
+            type: string    
+          minItems: 1    
+          type: array    
+        - format: uri    
+          type: string    
+      x-ngsi:    
+        type: Property    
     sound-mode:    
       description: Device Settings Sound - Sound Mode. Client can change sound-mode using supported-sound-modes property.    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    source:    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
@@ -124,38 +444,57 @@ settings-sound:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:settings-sound:id:DJPZ:53873776",  
-  "dateCreated": "1997-10-31T22:05:18Z",  
-  "dateModified": "1996-03-30T03:46:06Z",  
-  "source": "Administration radio federal significant cup need. Read hour at build exactly left read. Everyone perform nothing popular.",  
-  "name": "Later food speech computer.",  
-  "alternateName": "Manage perform attack computer hard. General get tax story degree.",  
-  "description": "For today at cup laugh.",  
-  "dataProvider": "Meeting sound author hotel court style they. Might final course simply rather. Machine life do thousand a professional. Similar return wait.",  
-  "owner": [  
-    "urn:ngsi-ld:settings-sound:items:TAGU:20409749",  
-    "urn:ngsi-ld:settings-sound:items:OACX:13015302"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:settings-sound:items:BAFE:60565166",  
-    "urn:ngsi-ld:settings-sound:items:WFCN:62742480"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      81.343291,  
-      -101.756791  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Trial recent wait grow. Learn west glass upon shake none.",  
-    "addressLocality": "Learn turn about security director. Current occur person.",  
-    "addressRegion": "First court group student cause accept prove. Board thank before sing few address. Wall save tough maintain for Congress.",  
-    "addressCountry": "Entire citizen method concern sit fall activity. Baby two food through force my. Shoulder imagine might name.",  
-    "postalCode": "Those side short miss less. Budget top run trial. Woman his arrive whether common act.",  
-    "postOfficeBoxNumber": "Effort find experience north shake short year. Reality analysis expert see president. True include event city behavior admit."  
-  },  
-  "areaServed": "Movement begin or well design analysis least. Another writer central their add successful bed. East four deal ten common purpose once either."  
+    "id": "urn:ngsi-ld:settings-sound:id:FEOR:54068496",  
+    "dateCreated": "1980-08-26T09:43:11Z",  
+    "dateModified": "2006-05-19T00:55:48Z",  
+    "source": "Important position share care same sea. Argue internatio",  
+    "name": "Authority within mouth work shoulder. Tree news seem black all police.",  
+    "alternateName": "Daughter media increase half behind decide leave. Customer modern prevent weight kitchen where recent perhaps.",  
+    "description": "Give continue almost foreign skill same eye. Clear heavy house use food.",  
+    "dataProvider": "Order bar garden make population. Particularly end down career well agent kitchen country. Military he choice character.",  
+    "owner": [  
+        "urn:ngsi-ld:settings-sound:items:ASBD:54571276",  
+        "urn:ngsi-ld:settings-sound:items:GAGW:59069925"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:settings-sound:items:EDDJ:79167522"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            53.9771575,  
+            -164.350245  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "By health walk production television happen. Strategy everybody fall reason so. Space city within and bit reveal gas.",  
+        "addressLocality": "South minute friend. Buy finish yet say class.",  
+        "addressRegion": "National half way enter. Single redu",  
+        "addressCountry": "Throughout send share room PM tell. Music",  
+        "postalCode": "Front southern each class act can. Least discover involve maybe.",  
+        "postOfficeBoxNumber": "Since hot spring only president manage whole. Suggest item find moment else you recently ready.",  
+        "streetNr": "Occur a white recognize attack political. Sell difficult these gun.",  
+        "district": "Seek career green p"  
+    },  
+    "areaServed": "Budget",  
+    "rt": [  
+        "oic.r.settings.sound"  
+    ],  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.rw"  
+    ],  
+    "speaker": "Long great expert Democrat visit for later. Floor world serious case light product.",  
+    "supported-speakers": [  
+        "Degree between number theory western real. Very data election sell of stay style."  
+    ],  
+    "sound-mode": "Make production within authority.",  
+    "supported-sound-modes": [  
+        "Stand bed little month car suffer. Soon summer bit. Certain final trouble you however reflect skill activity. Wonder trouble "  
+    ],  
+    "auto-volume": true,  
+    "dolby-atmos-compatibility": false,  
+    "type": "settings-sound"  
 }  
 ```  
 </details>  
@@ -164,79 +503,117 @@ settings-sound:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:settings-sound:id:DJPZ:53873776"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1997-10-31T22:05:18Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1996-03-30T03:46:06Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Administration radio federal significant cup need. Read hour at build exactly left read. Everyone perform nothing popular."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Later food speech computer."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Manage perform attack computer hard. General get tax story degree."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "For today at cup laugh."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Meeting sound author hotel court style they. Might final course simply rather. Machine life do thousand a professional. Similar return wait."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:settings-sound:items:TAGU:20409749",  
-      "urn:ngsi-ld:settings-sound:items:OACX:13015302"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:settings-sound:items:BAFE:60565166",  
-      "urn:ngsi-ld:settings-sound:items:WFCN:62742480"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        81.343291,  
-        -101.756791  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Trial recent wait grow. Learn west glass upon shake none.",  
-      "addressLocality": "Learn turn about security director. Current occur person.",  
-      "addressRegion": "First court group student cause accept prove. Board thank before sing few address. Wall save tough maintain for Congress.",  
-      "addressCountry": "Entire citizen method concern sit fall activity. Baby two food through force my. Shoulder imagine might name.",  
-      "postalCode": "Those side short miss less. Budget top run trial. Woman his arrive whether common act.",  
-      "postOfficeBoxNumber": "Effort find experience north shake short year. Reality analysis expert see president. True include event city behavior admit."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Movement begin or well design analysis least. Another writer central their add successful bed. East four deal ten common purpose once either."  
-  }  
+    "id": "urn:ngsi-ld:settings-sound:id:FEOR:54068496",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1980-08-26T09:43:11Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "2006-05-19T00:55:48Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Important position share care same sea. Argue internatio"  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Authority within mouth work shoulder. Tree news seem black all police."  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Daughter media increase half behind decide leave. Customer modern prevent weight kitchen where recent perhaps."  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Give continue almost foreign skill same eye. Clear heavy house use food."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Order bar garden make population. Particularly end down career well agent kitchen country. Military he choice character."  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:settings-sound:items:ASBD:54571276",  
+            "urn:ngsi-ld:settings-sound:items:GAGW:59069925"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:settings-sound:items:EDDJ:79167522"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                53.9771575,  
+                -164.350245  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "By health walk production television happen. Strategy everybody fall reason so. Space city within and bit reveal gas.",  
+            "addressLocality": "South minute friend. Buy finish yet say class.",  
+            "addressRegion": "National half way enter. Single redu",  
+            "addressCountry": "Throughout send share room PM tell. Music",  
+            "postalCode": "Front southern each class act can. Least discover involve maybe.",  
+            "postOfficeBoxNumber": "Since hot spring only president manage whole. Suggest item find moment else you recently ready.",  
+            "streetNr": "Occur a white recognize attack political. Sell difficult these gun.",  
+            "district": "Seek career green p"  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Budget"  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.settings.sound"  
+        ]  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.baseline",  
+            "oic.if.rw"  
+        ]  
+    },  
+    "speaker": {  
+        "type": "Text",  
+        "value": "Long great expert Democrat visit for later. Floor world serious case light product."  
+    },  
+    "supported-speakers": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "Degree between number theory western real. Very data election sell of stay style."  
+        ]  
+    },  
+    "sound-mode": {  
+        "type": "Text",  
+        "value": "Make production within authority."  
+    },  
+    "supported-sound-modes": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "Stand bed little month car suffer. Soon summer bit. Certain final trouble you however reflect skill activity. Wonder trouble "  
+        ]  
+    },  
+    "auto-volume": {  
+        "type": "Boolean",  
+        "value": true  
+    },  
+    "dolby-atmos-compatibility": {  
+        "type": "Boolean",  
+        "value": false  
+    },  
+    "type": "settings-sound"  
 }  
 ```  
 </details>  
@@ -245,41 +622,59 @@ settings-sound:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:settings-sound:id:DJPZ:53873776",  
-    "dateCreated": "1997-10-31T22:05:18Z",  
-    "dateModified": "1996-03-30T03:46:06Z",  
-    "source": "Administration radio federal significant cup need. Read hour at build exactly left read. Everyone perform nothing popular.",  
-    "name": "Later food speech computer.",  
-    "alternateName": "Manage perform attack computer hard. General get tax story degree.",  
-    "description": "For today at cup laugh.",  
-    "dataProvider": "Meeting sound author hotel court style they. Might final course simply rather. Machine life do thousand a professional. Similar return wait.",  
+    "id": "urn:ngsi-ld:settings-sound:id:FEOR:54068496",  
+    "dateCreated": "1980-08-26T09:43:11Z",  
+    "dateModified": "2006-05-19T00:55:48Z",  
+    "source": "Important position share care same sea. Argue internatio",  
+    "name": "Authority within mouth work shoulder. Tree news seem black all police.",  
+    "alternateName": "Daughter media increase half behind decide leave. Customer modern prevent weight kitchen where recent perhaps.",  
+    "description": "Give continue almost foreign skill same eye. Clear heavy house use food.",  
+    "dataProvider": "Order bar garden make population. Particularly end down career well agent kitchen country. Military he choice character.",  
     "owner": [  
-        "urn:ngsi-ld:settings-sound:items:TAGU:20409749",  
-        "urn:ngsi-ld:settings-sound:items:OACX:13015302"  
+        "urn:ngsi-ld:settings-sound:items:ASBD:54571276",  
+        "urn:ngsi-ld:settings-sound:items:GAGW:59069925"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:settings-sound:items:BAFE:60565166",  
-        "urn:ngsi-ld:settings-sound:items:WFCN:62742480"  
+        "urn:ngsi-ld:settings-sound:items:EDDJ:79167522"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            81.343291,  
-            -101.756791  
+            53.9771575,  
+            -164.350245  
         ]  
     },  
     "address": {  
-        "streetAddress": "Trial recent wait grow. Learn west glass upon shake none.",  
-        "addressLocality": "Learn turn about security director. Current occur person.",  
-        "addressRegion": "First court group student cause accept prove. Board thank before sing few address. Wall save tough maintain for Congress.",  
-        "addressCountry": "Entire citizen method concern sit fall activity. Baby two food through force my. Shoulder imagine might name.",  
-        "postalCode": "Those side short miss less. Budget top run trial. Woman his arrive whether common act.",  
-        "postOfficeBoxNumber": "Effort find experience north shake short year. Reality analysis expert see president. True include event city behavior admit."  
+        "streetAddress": "By health walk production television happen. Strategy everybody fall reason so. Space city within and bit reveal gas.",  
+        "addressLocality": "South minute friend. Buy finish yet say class.",  
+        "addressRegion": "National half way enter. Single redu",  
+        "addressCountry": "Throughout send share room PM tell. Music",  
+        "postalCode": "Front southern each class act can. Least discover involve maybe.",  
+        "postOfficeBoxNumber": "Since hot spring only president manage whole. Suggest item find moment else you recently ready.",  
+        "streetNr": "Occur a white recognize attack political. Sell difficult these gun.",  
+        "district": "Seek career green p"  
     },  
-    "areaServed": "Movement begin or well design analysis least. Another writer central their add successful bed. East four deal ten common purpose once either.",  
+    "areaServed": "Budget",  
+    "rt": [  
+        "oic.r.settings.sound"  
+    ],  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.rw"  
+    ],  
+    "speaker": "Long great expert Democrat visit for later. Floor world serious case light product.",  
+    "supported-speakers": [  
+        "Degree between number theory western real. Very data election sell of stay style."  
+    ],  
+    "sound-mode": "Make production within authority.",  
+    "supported-sound-modes": [  
+        "Stand bed little month car suffer. Soon summer bit. Certain final trouble you however reflect skill activity. Wonder trouble "  
+    ],  
+    "auto-volume": true,  
+    "dolby-atmos-compatibility": false,  
+    "type": "settings-sound",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -289,82 +684,125 @@ settings-sound:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:settings-sound:id:TWFM:59833741",  
+    "id": "urn:ngsi-ld:settings-sound:id:FEOR:54068496",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1980-08-20T20:10:35Z"  
+            "@value": "1980-08-26T09:43:11Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2021-06-16T21:25:41Z"  
+            "@value": "2006-05-19T00:55:48Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Sound professor pass. East never sort scientist while prepare region knowledge. Seven be hold along civil west capital resource."  
+        "value": "Important position share care same sea. Argue internatio"  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Away president early media you. Always fill industry thought."  
+        "value": "Authority within mouth work shoulder. Tree news seem black all police."  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Indeed heart price in identify state hold church. Nor child heart great common."  
+        "value": "Daughter media increase half behind decide leave. Customer modern prevent weight kitchen where recent perhaps."  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Choice likely thought. Southern agreement week guess deep choose. Condition money able reflect staff series develop."  
+        "value": "Give continue almost foreign skill same eye. Clear heavy house use food."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Order probably yard Democrat draw. Save fund might southern resource training activity. Music hope city physical."  
+        "value": "Order bar garden make population. Particularly end down career well agent kitchen country. Military he choice character."  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:settings-sound:items:QXMH:74451942",  
-            "urn:ngsi-ld:settings-sound:items:IDJX:14479708"  
+            "urn:ngsi-ld:settings-sound:items:ASBD:54571276",  
+            "urn:ngsi-ld:settings-sound:items:GAGW:59069925"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:settings-sound:items:INPA:31446788"  
+            "urn:ngsi-ld:settings-sound:items:EDDJ:79167522"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                38.16846,  
-                138.887384  
+                53.9771575,  
+                -164.350245  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Course lead indeed key plant network. Role policy direction many.",  
-            "addressLocality": "Want behind anyone seat.",  
-            "addressRegion": "Knowledge wife give speak total back. Three form different I final. Perhaps need skin factor board service heart.",  
-            "addressCountry": "Baby age pay news than nation. Exactly forget more prepare blue instead. Body personal affect likely hour middle chair.",  
-            "postalCode": "High spend treat. However hair behavior particularly.",  
-            "postOfficeBoxNumber": "Stay lawyer wide ahead expect some. Alone crime after kind perform."  
+            "streetAddress": "By health walk production television happen. Strategy everybody fall reason so. Space city within and bit reveal gas.",  
+            "addressLocality": "South minute friend. Buy finish yet say class.",  
+            "addressRegion": "National half way enter. Single redu",  
+            "addressCountry": "Throughout send share room PM tell. Music",  
+            "postalCode": "Front southern each class act can. Least discover involve maybe.",  
+            "postOfficeBoxNumber": "Since hot spring only president manage whole. Suggest item find moment else you recently ready.",  
+            "streetNr": "Occur a white recognize attack political. Sell difficult these gun.",  
+            "district": "Seek career green p"  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Both or window media. White national feeling public chance behind."  
+        "value": "Budget"  
     },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.settings.sound"  
+        ]  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline",  
+            "oic.if.rw"  
+        ]  
+    },  
+    "speaker": {  
+        "type": "Property",  
+        "value": "Long great expert Democrat visit for later. Floor world serious case light product."  
+    },  
+    "supported-speakers": {  
+        "type": "Property",  
+        "value": [  
+            "Degree between number theory western real. Very data election sell of stay style."  
+        ]  
+    },  
+    "sound-mode": {  
+        "type": "Property",  
+        "value": "Make production within authority."  
+    },  
+    "supported-sound-modes": {  
+        "type": "Property",  
+        "value": [  
+            "Stand bed little month car suffer. Soon summer bit. Certain final trouble you however reflect skill activity. Wonder trouble "  
+        ]  
+    },  
+    "auto-volume": {  
+        "type": "Property",  
+        "value": true  
+    },  
+    "dolby-atmos-compatibility": {  
+        "type": "Property",  
+        "value": false  
+    },  
+    "type": "settings-sound",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
