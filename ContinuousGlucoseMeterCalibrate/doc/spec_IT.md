@@ -16,13 +16,14 @@
 
 <sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
 - `Cstatus[boolean]`: Flag di calibrazione del sensore necessaria  - `Cvalue[number]`: Questa proprietà descrive il valore di calibrazione del sensore in unità mg/dL. Questa misurazione della glicemia con un altro glucometro esterno  - `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Il paese. Ad esempio, la Spagna  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
-	- `addressLocality[string]`: La località in cui si trova l'indirizzo stradale e che si trova nella regione  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
-	- `addressRegion[string]`: La regione in cui si trova la località, e che si trova nel paese  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `addressLocality[string]`: La località in cui si trova l'indirizzo civico e che si trova nella regione  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: La regione in cui si trova la località, e che si trova in campagna  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
 	- `district[string]`: Un distretto è un tipo di divisione amministrativa che, in alcuni paesi, è gestita dal governo locale.    
 	- `postOfficeBoxNumber[string]`: Il numero di casella postale per gli indirizzi di casella postale. Ad esempio, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: Il codice postale. Ad esempio, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: L'indirizzo stradale  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
-- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata  - `dateCreated[date-time]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `if[array]`: Il set di interfacce OCF supportato da questa risorsa.  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `n[string]`: Nome amichevole della risorsa  - `name[string]`: Il nome di questo elemento  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `precision[number]`: Quando viene esposto, il valore in 'precision' fornisce una tolleranza +/- rispetto alle proprietà della risorsa. Pertanto, se una proprietà viene AGGIORNATA a un valore e poi viene restituita, il valore restituito è valido se rientra nell'intervallo del valore impostato +/- precision.  - `range[array]`: L'intervallo valido per la proprietà nella risorsa come numero. Il primo valore della matrice è il valore minimo, il secondo valore della matrice è il valore massimo.  - `rt[array]`: Il tipo di risorsa  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `step[number]`: Valore del passo nell'intervallo definito, un numero intero quando l'intervallo è un numero.  Si tratta dell'incremento per i valori validi nell'intervallo; quindi se l'intervallo è 0.0..10.0 e il passo è 2.5, i valori validi sono 0.0,2.5,5.0,7.5,10.0.  - `type[string]`: Tipo di entità NGSI. Deve essere ContinuousGlucoseMeterCalibrate (Misuratore di glucosio continuo).  <!-- /30-PropertiesList -->  
+	- `streetNr[string]`: Numero che identifica una proprietà specifica su una strada pubblica    
+- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata  - `dateCreated[date-time]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `if[array]`: Il set di interfacce OCF supportato da questa risorsa.  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `n[string]`: Nome amichevole della risorsa  - `name[string]`: Il nome di questo elemento  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `precision[number]`: Quando viene esposto, il valore in 'precision' fornisce una tolleranza +/- rispetto alle proprietà della risorsa. Pertanto, se una proprietà viene AGGIORNATA a un valore e poi viene restituita, il valore restituito è valido se rientra nell'intervallo del valore impostato +/- precision.  - `range[array]`: L'intervallo valido per la proprietà nella risorsa come numero. Il primo valore della matrice è il valore minimo, il secondo valore della matrice è il valore massimo.  - `rt[array]`: Il tipo di risorsa  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `step[number]`: Valore del passo nell'intervallo definito, un numero intero quando l'intervallo è un numero.  È l'incremento per i valori validi nell'intervallo; quindi se l'intervallo è 0.0..10.0 e il passo è 2.5, i valori validi sono 0.0,2.5,5.0,7.5,10.0.  - `type[string]`: Tipo di entità NGSI. Deve essere ContinuousGlucoseMeterCalibrate (Misuratore di glucosio continuo).  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Proprietà richieste  
 - `Cstatus`  - `Cvalue`  - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -449,68 +450,55 @@ ContinuousGlucoseMeterCalibrate:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:id:CJHL:94857287",  
-  "dateCreated": "1997-03-04T06:55:37Z",  
-  "dateModified": "2017-06-11T05:32:12Z",  
-  "source": "Window manager computer energy participant yourself. Every prevent lay those.",  
-  "name": "Executive simple adult probably agreement. Seek dog room. Off machine middle after theory challenge father.",  
-  "alternateName": "Base parent hear detail. Likely PM loss chair kind whom take. Begin paper somebody once before order.",  
-  "description": "Reflect billion edge brother. Billion half inside whose prepare. Market evening ahead address population turn.",  
-  "dataProvider": "Social behind national focus case. Only keep teacher side. Remain among attack probably way believe. Consider like car could.",  
-  "owner": [  
-    "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:items:FUFH:29025073",  
-    "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:items:MFGW:68854970"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:items:HUXT:70560900",  
-    "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:items:YXWE:18747159"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -11.3563695,  
-      44.763616  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Other choose represent accept hard environmental reason event. By world game despite statement real ball.",  
-    "addressLocality": "Player traditional forward evening admit. Own hotel little sometimes themselves example eat.",  
-    "addressRegion": "Possible appear production PM. Agency cell health civil. Fill performance style teacher military safe. Sport politics already more seat.",  
-    "addressCountry": "Rich particular green part young practice region. Development have everything class.",  
-    "postalCode": "Light arrive medical brother somebody medical. Anyone determine month conference there throughout.",  
-    "postOfficeBoxNumber": "Usually according thing power over whose audience. Property eye nature. Reduce girl return garden however help husband. Establish several owner per water forward."  
-  },  
-  "areaServed": "Focus pull job case possible must which nearly. Thus woman play. Focus religious fly must might field.",  
-  "Cvalue": {  
-    "type": "Property",  
-    "value": 809.6  
-  },  
-  "Cstatus": {  
-    "type": "Property",  
-    "value": false  
-  },  
-  "rt": [  
-    "oic.r.cgm.calibrate",  
-    "oic.r.cgm.calibrate"  
-  ],  
-  "n": "Story catch imagine now mention pressure thousand. Represent week notice government.",  
-  "if": [  
-    "oic.if.rw",  
-    "oic.if.baseline"  
-  ],  
-  "range": [  
-    578.5,  
-    349.1  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 494.8  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 932.6  
-  },  
-  "type": "ContinuousGlucoseMeterCalibrate"  
+    "id": "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:id:QGWE:64356631",  
+    "dateCreated": "1973-12-14T21:01:55Z",  
+    "dateModified": "1992-12-27T22:50:57Z",  
+    "source": "Plant look central interview. Girl night as guess lot. Range wait then.",  
+    "name": "Night that city stand nig",  
+    "alternateName": "Score door specific kind white land Mr. Defense south final modern. Knowledge also none catch.",  
+    "description": "Center environment need rock training people. Ahead soon according teach long. Character eat along smile.",  
+    "dataProvider": "Media reduce theory smile economy stop nothing. Deal statement argue section end agent. Story law",  
+    "owner": [  
+        "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:items:HWYT:79494000",  
+        "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:items:KBKO:89611627"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:items:IXON:79345007"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            44.4290575,  
+            113.521212  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Movement country son develop hospital. Alone usually drop realize",  
+        "addressLocality": "Dark individual along this kind that. Practice large like center pe",  
+        "addressRegion": "Why movement red begin task benefit conference exist. Claim",  
+        "addressCountry": "Quality people",  
+        "postalCode": "At read trial month. Result everything build approach collection. Open inside property sport ",  
+        "postOfficeBoxNumber": "Ahead scientist behavior clearly whom.",  
+        "streetNr": "Sport interest interest drive room. Leader",  
+        "district": "Practice probably life worker year watch space court. Less color low top news artist student."  
+    },  
+    "areaServed": "Hold action senior bit study after certainly. Amount resource none teacher minute degree. Suppor",  
+    "Cvalue": 718.8,  
+    "Cstatus": true,  
+    "rt": [  
+        "oic.r.cgm.calibrate"  
+    ],  
+    "n": "Floor might cold when e",  
+    "if": [  
+        "oic.if.rw"  
+    ],  
+    "range": [  
+        277.4,  
+        186.8  
+    ],  
+    "step": 393.0,  
+    "precision": 721.9,  
+    "type": "ContinuousGlucoseMeterCalibrate"  
 }  
 ```  
 </details>  
@@ -519,136 +507,115 @@ ContinuousGlucoseMeterCalibrate:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:id:CJHL:94857287"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1997-03-04T06:55:37Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2017-06-11T05:32:12Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Window manager computer energy participant yourself. Every prevent lay those."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Executive simple adult probably agreement. Seek dog room. Off machine middle after theory challenge father."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Base parent hear detail. Likely PM loss chair kind whom take. Begin paper somebody once before order."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Reflect billion edge brother. Billion half inside whose prepare. Market evening ahead address population turn."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Social behind national focus case. Only keep teacher side. Remain among attack probably way believe. Consider like car could."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:items:FUFH:29025073",  
-      "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:items:MFGW:68854970"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:items:HUXT:70560900",  
-      "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:items:YXWE:18747159"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -11.3563695,  
-        44.763616  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Other choose represent accept hard environmental reason event. By world game despite statement real ball.",  
-      "addressLocality": "Player traditional forward evening admit. Own hotel little sometimes themselves example eat.",  
-      "addressRegion": "Possible appear production PM. Agency cell health civil. Fill performance style teacher military safe. Sport politics already more seat.",  
-      "addressCountry": "Rich particular green part young practice region. Development have everything class.",  
-      "postalCode": "Light arrive medical brother somebody medical. Anyone determine month conference there throughout.",  
-      "postOfficeBoxNumber": "Usually according thing power over whose audience. Property eye nature. Reduce girl return garden however help husband. Establish several owner per water forward."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Focus pull job case possible must which nearly. Thus woman play. Focus religious fly must might field."  
-  },  
-  "Cvalue": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 809.6  
-    }  
-  },  
-  "Cstatus": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": false  
-    }  
-  },  
-  "rt": {  
-    "type": "array",  
-    "value": [  
-      "oic.r.cgm.calibrate",  
-      "oic.r.cgm.calibrate"  
-    ]  
-  },  
-  "n": {  
-    "type": "string",  
-    "value": "Story catch imagine now mention pressure thousand. Represent week notice government."  
-  },  
-  "if": {  
-    "type": "array",  
-    "value": [  
-      "oic.if.rw",  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "range": {  
-    "type": "array",  
-    "value": [  
-      578.5,  
-      349.1  
-    ]  
-  },  
-  "step": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 494.8  
-    }  
-  },  
-  "precision": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 932.6  
-    }  
-  },  
-  "type": {  
-    "type": "string",  
-    "value": "ContinuousGlucoseMeterCalibrate"  
-  }  
+    "id": "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:id:QGWE:64356631",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1973-12-14T21:01:55Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "1992-12-27T22:50:57Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Plant look central interview. Girl night as guess lot. Range wait then."  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Night that city stand nig"  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Score door specific kind white land Mr. Defense south final modern. Knowledge also none catch."  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Center environment need rock training people. Ahead soon according teach long. Character eat along smile."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Media reduce theory smile economy stop nothing. Deal statement argue section end agent. Story law"  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:items:HWYT:79494000",  
+            "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:items:KBKO:89611627"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:items:IXON:79345007"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                44.4290575,  
+                113.521212  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Movement country son develop hospital. Alone usually drop realize",  
+            "addressLocality": "Dark individual along this kind that. Practice large like center pe",  
+            "addressRegion": "Why movement red begin task benefit conference exist. Claim",  
+            "addressCountry": "Quality people",  
+            "postalCode": "At read trial month. Result everything build approach collection. Open inside property sport ",  
+            "postOfficeBoxNumber": "Ahead scientist behavior clearly whom.",  
+            "streetNr": "Sport interest interest drive room. Leader",  
+            "district": "Practice probably life worker year watch space court. Less color low top news artist student."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Hold action senior bit study after certainly. Amount resource none teacher minute degree. Suppor"  
+    },  
+    "Cvalue": {  
+        "type": "Number",  
+        "value": 718.8  
+    },  
+    "Cstatus": {  
+        "type": "Boolean",  
+        "value": true  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.cgm.calibrate"  
+        ]  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Floor might cold when e"  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.rw"  
+        ]  
+    },  
+    "range": {  
+        "type": "StructuredValue",  
+        "value": [  
+            277.4,  
+            186.8  
+        ]  
+    },  
+    "step": {  
+        "type": "Number",  
+        "value": 393.0  
+    },  
+    "precision": {  
+        "type": "Number",  
+        "value": 721.9  
+    },  
+    "type": "ContinuousGlucoseMeterCalibrate"  
 }  
 ```  
 </details>  
@@ -657,71 +624,57 @@ ContinuousGlucoseMeterCalibrate:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:id:CJHL:94857287",  
-    "dateCreated": "1997-03-04T06:55:37Z",  
-    "dateModified": "2017-06-11T05:32:12Z",  
-    "source": "Window manager computer energy participant yourself. Every prevent lay those.",  
-    "name": "Executive simple adult probably agreement. Seek dog room. Off machine middle after theory challenge father.",  
-    "alternateName": "Base parent hear detail. Likely PM loss chair kind whom take. Begin paper somebody once before order.",  
-    "description": "Reflect billion edge brother. Billion half inside whose prepare. Market evening ahead address population turn.",  
-    "dataProvider": "Social behind national focus case. Only keep teacher side. Remain among attack probably way believe. Consider like car could.",  
+    "id": "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:id:QGWE:64356631",  
+    "dateCreated": "1973-12-14T21:01:55Z",  
+    "dateModified": "1992-12-27T22:50:57Z",  
+    "source": "Plant look central interview. Girl night as guess lot. Range wait then.",  
+    "name": "Night that city stand nig",  
+    "alternateName": "Score door specific kind white land Mr. Defense south final modern. Knowledge also none catch.",  
+    "description": "Center environment need rock training people. Ahead soon according teach long. Character eat along smile.",  
+    "dataProvider": "Media reduce theory smile economy stop nothing. Deal statement argue section end agent. Story law",  
     "owner": [  
-        "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:items:FUFH:29025073",  
-        "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:items:MFGW:68854970"  
+        "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:items:HWYT:79494000",  
+        "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:items:KBKO:89611627"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:items:HUXT:70560900",  
-        "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:items:YXWE:18747159"  
+        "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:items:IXON:79345007"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            -11.3563695,  
-            44.763616  
+            44.4290575,  
+            113.521212  
         ]  
     },  
     "address": {  
-        "streetAddress": "Other choose represent accept hard environmental reason event. By world game despite statement real ball.",  
-        "addressLocality": "Player traditional forward evening admit. Own hotel little sometimes themselves example eat.",  
-        "addressRegion": "Possible appear production PM. Agency cell health civil. Fill performance style teacher military safe. Sport politics already more seat.",  
-        "addressCountry": "Rich particular green part young practice region. Development have everything class.",  
-        "postalCode": "Light arrive medical brother somebody medical. Anyone determine month conference there throughout.",  
-        "postOfficeBoxNumber": "Usually according thing power over whose audience. Property eye nature. Reduce girl return garden however help husband. Establish several owner per water forward."  
+        "streetAddress": "Movement country son develop hospital. Alone usually drop realize",  
+        "addressLocality": "Dark individual along this kind that. Practice large like center pe",  
+        "addressRegion": "Why movement red begin task benefit conference exist. Claim",  
+        "addressCountry": "Quality people",  
+        "postalCode": "At read trial month. Result everything build approach collection. Open inside property sport ",  
+        "postOfficeBoxNumber": "Ahead scientist behavior clearly whom.",  
+        "streetNr": "Sport interest interest drive room. Leader",  
+        "district": "Practice probably life worker year watch space court. Less color low top news artist student."  
     },  
-    "areaServed": "Focus pull job case possible must which nearly. Thus woman play. Focus religious fly must might field.",  
-    "Cvalue": {  
-        "type": "Property",  
-        "value": 809.6  
-    },  
-    "Cstatus": {  
-        "type": "Property",  
-        "value": false  
-    },  
+    "areaServed": "Hold action senior bit study after certainly. Amount resource none teacher minute degree. Suppor",  
+    "Cvalue": 718.8,  
+    "Cstatus": true,  
     "rt": [  
-        "oic.r.cgm.calibrate",  
         "oic.r.cgm.calibrate"  
     ],  
-    "n": "Story catch imagine now mention pressure thousand. Represent week notice government.",  
+    "n": "Floor might cold when e",  
     "if": [  
-        "oic.if.rw",  
-        "oic.if.baseline"  
+        "oic.if.rw"  
     ],  
     "range": [  
-        578.5,  
-        349.1  
+        277.4,  
+        186.8  
     ],  
-    "step": {  
-        "type": "Property",  
-        "value": 494.8  
-    },  
-    "precision": {  
-        "type": "Property",  
-        "value": 932.6  
-    },  
+    "step": 393.0,  
+    "precision": 721.9,  
     "type": "ContinuousGlucoseMeterCalibrate",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -731,86 +684,88 @@ ContinuousGlucoseMeterCalibrate:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:id:SEWK:90676930",  
+    "id": "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:id:QGWE:64356631",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1996-12-04T09:57:28Z"  
+            "@value": "1973-12-14T21:01:55Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1983-07-21T12:42:10Z"  
+            "@value": "1992-12-27T22:50:57Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Us foot local third benefit ok. Recognize cup beat dream way language she."  
+        "value": "Plant look central interview. Girl night as guess lot. Range wait then."  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Military door mention exist. Shoulder pull amount hand everything prevent. Training they cultural kid buy list short."  
+        "value": "Night that city stand nig"  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "This put picture its. None physical strategy inside federal form accept bar."  
+        "value": "Score door specific kind white land Mr. Defense south final modern. Knowledge also none catch."  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Each explain key quality down great check save. Message beyond popular reason then. Your particular picture specific."  
+        "value": "Center environment need rock training people. Ahead soon according teach long. Character eat along smile."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Part artist after enough. Investment early site forget cut word."  
+        "value": "Media reduce theory smile economy stop nothing. Deal statement argue section end agent. Story law"  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:items:NWGK:89677578",  
-            "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:items:PMKI:28809116"  
+            "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:items:HWYT:79494000",  
+            "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:items:KBKO:89611627"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:items:NJVQ:22211200"  
+            "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:items:IXON:79345007"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                86.177363,  
-                -84.223666  
+                44.4290575,  
+                113.521212  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Including realize energy draw car television sell beat. Crime number all daughter growth today true.",  
-            "addressLocality": "Field small meeting environmental generation order style ten. Note trip wind yes next available generation.",  
-            "addressRegion": "Room easy near traditional fact. Entire agent school. Really risk few listen get account.",  
-            "addressCountry": "Management understand third ever hundred project economic. Hotel book scientist skin these ahead. Gas experience kid.",  
-            "postalCode": "Man worker resource by police strategy create. Phone son activity music find.",  
-            "postOfficeBoxNumber": "There ten against trouble. Notice less pull once because meeting worry."  
+            "streetAddress": "Movement country son develop hospital. Alone usually drop realize",  
+            "addressLocality": "Dark individual along this kind that. Practice large like center pe",  
+            "addressRegion": "Why movement red begin task benefit conference exist. Claim",  
+            "addressCountry": "Quality people",  
+            "postalCode": "At read trial month. Result everything build approach collection. Open inside property sport ",  
+            "postOfficeBoxNumber": "Ahead scientist behavior clearly whom.",  
+            "streetNr": "Sport interest interest drive room. Leader",  
+            "district": "Practice probably life worker year watch space court. Less color low top news artist student."  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Along itself it order whose. Law use produce only."  
+        "value": "Hold action senior bit study after certainly. Amount resource none teacher minute degree. Suppor"  
     },  
     "Cvalue": {  
         "type": "Property",  
-        "value": 796.9  
+        "value": 718.8  
     },  
     "Cstatus": {  
         "type": "Property",  
-        "value": false  
+        "value": true  
     },  
     "rt": {  
         "type": "Property",  
@@ -820,33 +775,32 @@ ContinuousGlucoseMeterCalibrate:
     },  
     "n": {  
         "type": "Property",  
-        "value": "Mission water site surface. Watch sure career hospital stock meeting. Process however mean set. Wonder try pretty American."  
+        "value": "Floor might cold when e"  
     },  
     "if": {  
         "type": "Property",  
         "value": [  
-            "oic.if.baseline"  
+            "oic.if.rw"  
         ]  
     },  
     "range": {  
         "type": "Property",  
         "value": [  
-            860.8,  
-            779.6  
+            277.4,  
+            186.8  
         ]  
     },  
     "step": {  
         "type": "Property",  
-        "value": 430.7  
+        "value": 393.0  
     },  
     "precision": {  
         "type": "Property",  
-        "value": 129.5  
+        "value": 721.9  
     },  
     "type": "ContinuousGlucoseMeterCalibrate",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
