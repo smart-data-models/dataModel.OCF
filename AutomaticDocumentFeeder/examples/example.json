@@ -1,34 +1,49 @@
 {
-  "id": "urn:ngsi-ld:AutomaticDocumentFeeder:id:ZQKU:56184669",
-  "dateCreated": "1976-12-18T06:20:43Z",
-  "dateModified": "1993-01-30T15:42:46Z",
-  "source": "Stock how account owner PM floor. Easy public lead star where such next.",
-  "name": "Black institution since leave remain across. Structure low hand pick TV main end. Seven blue few where author industry some.",
-  "alternateName": "Need cut professional campaign. Anything rest citizen analysis catch significant film. Learn important force consider individual any field specific.",
-  "description": "Second task charge need foot stuff serious. Reflect blue the expect husband. Own require language attention. Participant trouble note three relationship.",
-  "dataProvider": "Game full result head professor. Fine stage response could gas within. Suddenly almost pattern simple wide majority wife manager.",
-  "owner": [
-    "urn:ngsi-ld:AutomaticDocumentFeeder:items:JIZT:98809158",
-    "urn:ngsi-ld:AutomaticDocumentFeeder:items:PLTN:27424383"
-  ],
-  "seeAlso": [
-    "urn:ngsi-ld:AutomaticDocumentFeeder:items:IGAP:14582256",
-    "urn:ngsi-ld:AutomaticDocumentFeeder:items:MLZR:78921517"
-  ],
-  "location": {
-    "type": "Point",
-    "coordinates": [
-      -29.3315105,
-      89.803881
-    ]
-  },
-  "address": {
-    "streetAddress": "Full standard major. Blood seem live son challenge pass.",
-    "addressLocality": "Really fill scientist toward write identify only describe. Always difference difficult option.",
-    "addressRegion": "Also bag challenge against read. Capital wonder enjoy per. Baby structure letter assume contain.",
-    "addressCountry": "Soldier election after kid particular always. Agency decade similar scientist. Collection mother evidence pretty add.",
-    "postalCode": "Truth network two recent. City scene institution represent. Game understand some church interest sort course.",
-    "postOfficeBoxNumber": "Support born few sea family move. He could quite give rule him candidate."
-  },
-  "areaServed": "Future receive among quite price. This seek even mouth character ahead agree. While beat sound that fast particularly business."
+    "id": "urn:ngsi-ld:AutomaticDocumentFeeder:id:JMBR:40356808",
+    "dateCreated": "2016-12-09T12:20:09Z",
+    "dateModified": "2022-05-24T07:38:50Z",
+    "source": "Article executive whether seem hard and could. North activity would stand.",
+    "name": "Part possible such agree anything design cell. Organizatio",
+    "alternateName": "Party seek parent three effort. Stuff past raise each forc",
+    "description": "Car right image. Bad short boy least yeah line keep whether. Such once foreign ask general treatment wish.",
+    "dataProvider": "Order in significant best consider them. Relate rate southern nice suffer.",
+    "owner": [
+        "urn:ngsi-ld:AutomaticDocumentFeeder:items:ZFFN:68119665",
+        "urn:ngsi-ld:AutomaticDocumentFeeder:items:VZGZ:95854717"
+    ],
+    "seeAlso": [
+        "urn:ngsi-ld:AutomaticDocumentFeeder:items:JJPK:41205101"
+    ],
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            -43.0078925,
+            -159.844304
+        ]
+    },
+    "address": {
+        "streetAddress": "Its drive without though new themselves. Throughout positive seat even.",
+        "addressLocality": "International behavior finish. Health radio toward apply sell policy down team.",
+        "addressRegion": "Involve before include race ago finally me. Own late light power. Why statement daughter front less program.",
+        "addressCountry": "Part role factor fight southern look success. Necessary side couple teach hospital election. Foreign fight continue newspaper.",
+        "postalCode": "Stock",
+        "postOfficeBoxNumber": "Spend summer weight down season. Hour color street nati",
+        "streetNr": "Color half middle. Could caus",
+        "district": "Anyone at company card discuss. Recent him great allow."
+    },
+    "areaServed": "Here matter right family. Establish health figure player news continue.",
+    "rt": [
+        "oic.r.automaticdocumentfeeder"
+    ],
+    "adfStates": [
+        "Goal trial sign simply black. Mention edge bar long interest support. Major Repub",
+        "Why country day close just somebody. Wall subject future listen sell might year."
+    ],
+    "currentAdfState": "Police player there mor",
+    "n": "Reality whatever less ball diff",
+    "if": [
+        "oic.if.baseline",
+        "oic.if.s"
+    ],
+    "type": "AutomaticDocumentFeeder"
 }
