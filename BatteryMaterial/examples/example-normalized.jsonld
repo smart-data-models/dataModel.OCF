@@ -1,79 +1,102 @@
 {
-    "id": "urn:ngsi-ld:BatteryMaterial:id:HCTC:40821775",
+    "id": "urn:ngsi-ld:BatteryMaterial:id:YHLJ:63936175",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2017-07-21T12:56:20Z"
+            "@value": "1981-05-13T21:09:19Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1993-07-01T23:00:49Z"
+            "@value": "1980-07-16T20:07:15Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Live current program whom order throughout. Then as sure daughter may. Head adult result increase edge lay."
+        "value": "I"
     },
     "name": {
         "type": "Property",
-        "value": "Himself central situation prepare that adult point."
+        "value": "Particular garden free effort for film."
     },
     "alternateName": {
         "type": "Property",
-        "value": "Type statement only air dark open despite. Ball college military number."
+        "value": "Start performance approach Republican. Tough board leave baby security item. Law way inside."
     },
     "description": {
         "type": "Property",
-        "value": "Modern affect item. Bag better according modern similar week. Outside interest beat often do. Protect debate evidence range city some."
+        "value": "Much wish look bed gun store. Boy present wide old."
     },
     "dataProvider": {
         "type": "Property",
-        "value": "Choose either although once. Population director color fall. Everyone whose bit. Economy lot your organization she road learn plan."
+        "value": "Indeed white could account benefit produce. Cultural anyone southern you letter board watch."
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:BatteryMaterial:items:JHVW:48519448",
-            "urn:ngsi-ld:BatteryMaterial:items:IZMM:77243061"
+            "urn:ngsi-ld:BatteryMaterial:items:WJNR:66047443",
+            "urn:ngsi-ld:BatteryMaterial:items:HPXL:60042311"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:BatteryMaterial:items:NXED:66845258"
+            "urn:ngsi-ld:BatteryMaterial:items:KLOB:32503034"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                3.9893905,
-                -149.157008
+                10.1892095,
+                -5.495683
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "Probably ask half behavior risk. Citizen school tough government north simple former. American view rock school fill true. Away behind level whether.",
-            "addressLocality": "Class amount again system act consumer subject. Left keep building identify case. Decade create reveal billion Mr. Clear purpose stand piece today bit who.",
-            "addressRegion": "Be other official life. Court first available find face across task.",
-            "addressCountry": "Public home rock point maybe design. Police that whom morning inside coach choose. Sell whole remain range account candidate over paper.",
-            "postalCode": "Ten heavy recently miss concern. Race several great know. Care once level western trouble.",
-            "postOfficeBoxNumber": "Specific cause example government nice free window product. And she water she between."
+            "streetAddress": "Information raise various American I structure. Indeed public oil student rather discuss.",
+            "addressLocality": "Your dark result just. Small run true.",
+            "addressRegion": "Agency training need. Certainly work open in.",
+            "addressCountry": "Power daughter suffer store else. Offer real leg side.",
+            "postalCode": "Store world standard middle town how ten. By so tough sometimes most agent. Smile agency sometimes west.",
+            "postOfficeBoxNumber": "Daughter father media Democrat city relationship ball. Cultural across space top lot. Understand team necessary PM explain enough near.",
+            "streetNr": "Bit today already. Table major pull garden seat. Together artist great include. Such consider partner onto treatment.",
+            "district": ""
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "Yourself activity wrong pattern Mrs important. Finally moment western wish strategy likely be."
+        "value": "Community career science. Play reason skill matter sometimes seem direction produce. Wide idea else true military explain."
     },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.batterymaterial"
+        ]
+    },
+    "material": {
+        "type": "Property",
+        "value": "Zinc Carbon"
+    },
+    "n": {
+        "type": "Property",
+        "value": "Fast to this identify summer. Signifi"
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.s",
+            "oic.if.baseline"
+        ]
+    },
+    "type": "BatteryMaterial",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
