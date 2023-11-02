@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: 私書箱の住所のための私書箱番号。例：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: 郵便番号。例：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: 番地  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: 公道上の特定の物件を特定する番号    
 - `alternateName[string]`: この項目の別名  - `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: この商品の説明  - `dhyper[number]`: 本プロパティは、デバイス高血糖閾値(mg/dL)を示す。  - `dhypo[number]`: 本プロパティは、デバイス低血糖閾値（mg/dL）を記述する。  - `gdr[number]`: 本プロパティは、グルコース減少率閾値(％)を記述する。  - `gir[number]`: 本プロパティは、グルコース増加率閾値(％)を記述する。  - `id[*]`: エンティティの一意識別子  - `if[array]`: このリソースがサポートする OCF インタフェースセット。  - `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `n[string]`: リソースのフレンドリーネーム  - `name[string]`: このアイテムの名前  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `phigh[number]`: このプロパティは、患者高値閾値(mg/dL)を記述する。  - `plow[number]`: 本プロパティは、患者低値閾値(mg/dL)を記述する。  - `precision[number]`: precision」の値が公開されると、リソース内のPropertyに対する±の許容範囲が提供される。したがって、プロパティがある値にUPDATEされ、そのプロパティがRETRIEVEDされた場合、RETRIEVEDされた値は、設定された値の±precisionの範囲内であれば有効です。  - `range[array]`: リソース内のプロパティの有効範囲を数値で表します。配列の 1 番目の値を最小値、2 番目の値を最大値とします。  - `rt[array]`: リソース・タイプ  - `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `step[number]`: 定義された範囲を横切るステップ値。範囲が数値の場合は整数。  範囲が0.0～10.0でステップが2.5の場合、有効な値は0.0,2.5,5.0,7.5,10.0となります。  - `type[string]`: NGSI エンティティタイプ。これは ContinuousGlucoseMeterThreshold でなければならない。  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 必須プロパティ  
@@ -482,84 +483,59 @@ ContinuousGlucoseMeterThreshold:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:id:CVLC:04532465",  
-  "dateCreated": "2004-01-04T01:24:18Z",  
-  "dateModified": "2002-01-05T16:59:18Z",  
-  "source": "Pull most article nation radio official. Perhaps much recently above suffer knowledge. Box forget theory American room pass six thousand.",  
-  "name": "My door old quite force. Position difficult man lose standard grow ground.",  
-  "alternateName": "Many level ever nothing market officer discover. Interesting simply summer including apply. Soldier painting movie month always budget artist through.",  
-  "description": "Stock one hot allow. Just consider out true. Property data compare send could family very billion.",  
-  "dataProvider": "Station enough real green. Night strong final television yes.",  
-  "owner": [  
-    "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:EIPO:90879168",  
-    "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:NTIT:46901124"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:WRLC:85100790",  
-    "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:LKKG:98184784"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      61.618817,  
-      96.892198  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Which opportunity expect grow. Time truth serious best product very. Yeah but million think seven good language.",  
-    "addressLocality": "Finally talk enter personal medical above. Book senior yourself life second back.",  
-    "addressRegion": "Bring value future cover meeting across station spring. Let kitchen leg game cover.",  
-    "addressCountry": "Include present book best. Always along attack. Officer dog later decade light.",  
-    "postalCode": "World probably until result detail window. Form himself design population war. Think black sell up discover month.",  
-    "postOfficeBoxNumber": "Paper wall think focus. Figure threat material increase increase respond protect. Recently character reach see type."  
-  },  
-  "areaServed": "Start including movement trip. Machine moment light court. Own that once smile nation just. Push everything total save option investment manage.",  
-  "plow": {  
-    "type": "Property",  
-    "value": 977.2  
-  },  
-  "phigh": {  
-    "type": "Property",  
-    "value": 381.1  
-  },  
-  "dhypo": {  
-    "type": "Property",  
-    "value": 879.9  
-  },  
-  "dhyper": {  
-    "type": "Property",  
-    "value": 851.2  
-  },  
-  "gir": {  
-    "type": "Property",  
-    "value": 711.2  
-  },  
-  "gdr": {  
-    "type": "Property",  
-    "value": 725.3  
-  },  
-  "rt": [  
-    "oic.r.cgm.threshold",  
-    "oic.r.cgm.threshold"  
-  ],  
-  "n": "Heart against through live size work. Apply vote system show sea.",  
-  "if": [  
-    "oic.if.rw",  
-    "oic.if.rw"  
-  ],  
-  "range": [  
-    776.5,  
-    406.9  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 751.9  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 471.3  
-  },  
-  "type": "ContinuousGlucoseMeterThreshold"  
+    "id": "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:id:QSII:08545277",  
+    "dateCreated": "2011-06-12T08:24:11Z",  
+    "dateModified": "1994-09-18T20:29:43Z",  
+    "source": "For or prevent right still if rich. Us maintain event. Meeting fish show nor only. Here manage threat profes",  
+    "name": "Stuff alone team responsibility. Yourself look c",  
+    "alternateName": "Court particularly song lay follow film movie. Response size character tax.",  
+    "description": "Card color them teach drug college management. Good director beyond exactly heavy family.",  
+    "dataProvider": "Audience fill free position. Debate imagine court throughout.",  
+    "owner": [  
+        "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:EUJH:30934965",  
+        "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:RTPX:39835000"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:RQAB:55271114"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            69.193737,  
+            -84.724615  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Finally born probably TV realize pattern available tax. Say of",  
+        "addressLocality": "Water culture respond game feel debate. No make third.",  
+        "addressRegion": "One family window eye area approach people along. Prepare order around play production difference ball true.",  
+        "addressCountry": "Identify administratio",  
+        "postalCode": "Need bad always small some apply.",  
+        "postOfficeBoxNumber": "House clearly second improve human. Box main outside throughout discussion evidence beautiful.",  
+        "streetNr": "Leg research force worker strategy name. Knowledge stuff person change magazine hard well.",  
+        "district": "Quite author"  
+    },  
+    "areaServed": "Rise item research study phone. Co",  
+    "plow": 53.9,  
+    "phigh": 705.7,  
+    "dhypo": 755.1,  
+    "dhyper": 517.6,  
+    "gir": 375.6,  
+    "gdr": 263.1,  
+    "rt": [  
+        "oic.r.cgm.threshold"  
+    ],  
+    "n": "Design president specific approa",  
+    "if": [  
+        "oic.if.rw"  
+    ],  
+    "range": [  
+        13.4,  
+        330.3  
+    ],  
+    "step": 872.4,  
+    "precision": 23.4,  
+    "type": "ContinuousGlucoseMeterThreshold"  
 }  
 ```  
 </details>  
@@ -568,164 +544,131 @@ ContinuousGlucoseMeterThreshold:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:id:CVLC:04532465"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2004-01-04T01:24:18Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2002-01-05T16:59:18Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Pull most article nation radio official. Perhaps much recently above suffer knowledge. Box forget theory American room pass six thousand."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "My door old quite force. Position difficult man lose standard grow ground."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Many level ever nothing market officer discover. Interesting simply summer including apply. Soldier painting movie month always budget artist through."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Stock one hot allow. Just consider out true. Property data compare send could family very billion."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Station enough real green. Night strong final television yes."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:EIPO:90879168",  
-      "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:NTIT:46901124"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:WRLC:85100790",  
-      "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:LKKG:98184784"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        61.618817,  
-        96.892198  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Which opportunity expect grow. Time truth serious best product very. Yeah but million think seven good language.",  
-      "addressLocality": "Finally talk enter personal medical above. Book senior yourself life second back.",  
-      "addressRegion": "Bring value future cover meeting across station spring. Let kitchen leg game cover.",  
-      "addressCountry": "Include present book best. Always along attack. Officer dog later decade light.",  
-      "postalCode": "World probably until result detail window. Form himself design population war. Think black sell up discover month.",  
-      "postOfficeBoxNumber": "Paper wall think focus. Figure threat material increase increase respond protect. Recently character reach see type."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Start including movement trip. Machine moment light court. Own that once smile nation just. Push everything total save option investment manage."  
-  },  
-  "plow": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 977.2  
-    }  
-  },  
-  "phigh": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 381.1  
-    }  
-  },  
-  "dhypo": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 879.9  
-    }  
-  },  
-  "dhyper": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 851.2  
-    }  
-  },  
-  "gir": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 711.2  
-    }  
-  },  
-  "gdr": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 725.3  
-    }  
-  },  
-  "rt": {  
-    "type": "array",  
-    "value": [  
-      "oic.r.cgm.threshold",  
-      "oic.r.cgm.threshold"  
-    ]  
-  },  
-  "n": {  
-    "type": "string",  
-    "value": "Heart against through live size work. Apply vote system show sea."  
-  },  
-  "if": {  
-    "type": "array",  
-    "value": [  
-      "oic.if.rw",  
-      "oic.if.rw"  
-    ]  
-  },  
-  "range": {  
-    "type": "array",  
-    "value": [  
-      776.5,  
-      406.9  
-    ]  
-  },  
-  "step": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 751.9  
-    }  
-  },  
-  "precision": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 471.3  
-    }  
-  },  
-  "type": {  
-    "type": "string",  
-    "value": "ContinuousGlucoseMeterThreshold"  
-  }  
+    "id": "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:id:QSII:08545277",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "2011-06-12T08:24:11Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "1994-09-18T20:29:43Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "For or prevent right still if rich. Us maintain event. Meeting fish show nor only. Here manage threat profes"  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Stuff alone team responsibility. Yourself look c"  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Court particularly song lay follow film movie. Response size character tax."  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Card color them teach drug college management. Good director beyond exactly heavy family."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Audience fill free position. Debate imagine court throughout."  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:EUJH:30934965",  
+            "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:RTPX:39835000"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:RQAB:55271114"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                69.193737,  
+                -84.724615  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Finally born probably TV realize pattern available tax. Say of",  
+            "addressLocality": "Water culture respond game feel debate. No make third.",  
+            "addressRegion": "One family window eye area approach people along. Prepare order around play production difference ball true.",  
+            "addressCountry": "Identify administratio",  
+            "postalCode": "Need bad always small some apply.",  
+            "postOfficeBoxNumber": "House clearly second improve human. Box main outside throughout discussion evidence beautiful.",  
+            "streetNr": "Leg research force worker strategy name. Knowledge stuff person change magazine hard well.",  
+            "district": "Quite author"  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Rise item research study phone. Co"  
+    },  
+    "plow": {  
+        "type": "Number",  
+        "value": 53.9  
+    },  
+    "phigh": {  
+        "type": "Number",  
+        "value": 705.7  
+    },  
+    "dhypo": {  
+        "type": "Number",  
+        "value": 755.1  
+    },  
+    "dhyper": {  
+        "type": "Number",  
+        "value": 517.6  
+    },  
+    "gir": {  
+        "type": "Number",  
+        "value": 375.6  
+    },  
+    "gdr": {  
+        "type": "Number",  
+        "value": 263.1  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.cgm.threshold"  
+        ]  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Design president specific approa"  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.rw"  
+        ]  
+    },  
+    "range": {  
+        "type": "StructuredValue",  
+        "value": [  
+            13.4,  
+            330.3  
+        ]  
+    },  
+    "step": {  
+        "type": "Number",  
+        "value": 872.4  
+    },  
+    "precision": {  
+        "type": "Number",  
+        "value": 23.4  
+    },  
+    "type": "ContinuousGlucoseMeterThreshold"  
 }  
 ```  
 </details>  
@@ -734,87 +677,61 @@ ContinuousGlucoseMeterThreshold:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:id:CVLC:04532465",  
-    "dateCreated": "2004-01-04T01:24:18Z",  
-    "dateModified": "2002-01-05T16:59:18Z",  
-    "source": "Pull most article nation radio official. Perhaps much recently above suffer knowledge. Box forget theory American room pass six thousand.",  
-    "name": "My door old quite force. Position difficult man lose standard grow ground.",  
-    "alternateName": "Many level ever nothing market officer discover. Interesting simply summer including apply. Soldier painting movie month always budget artist through.",  
-    "description": "Stock one hot allow. Just consider out true. Property data compare send could family very billion.",  
-    "dataProvider": "Station enough real green. Night strong final television yes.",  
+    "id": "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:id:QSII:08545277",  
+    "dateCreated": "2011-06-12T08:24:11Z",  
+    "dateModified": "1994-09-18T20:29:43Z",  
+    "source": "For or prevent right still if rich. Us maintain event. Meeting fish show nor only. Here manage threat profes",  
+    "name": "Stuff alone team responsibility. Yourself look c",  
+    "alternateName": "Court particularly song lay follow film movie. Response size character tax.",  
+    "description": "Card color them teach drug college management. Good director beyond exactly heavy family.",  
+    "dataProvider": "Audience fill free position. Debate imagine court throughout.",  
     "owner": [  
-        "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:EIPO:90879168",  
-        "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:NTIT:46901124"  
+        "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:EUJH:30934965",  
+        "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:RTPX:39835000"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:WRLC:85100790",  
-        "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:LKKG:98184784"  
+        "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:RQAB:55271114"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            61.618817,  
-            96.892198  
+            69.193737,  
+            -84.724615  
         ]  
     },  
     "address": {  
-        "streetAddress": "Which opportunity expect grow. Time truth serious best product very. Yeah but million think seven good language.",  
-        "addressLocality": "Finally talk enter personal medical above. Book senior yourself life second back.",  
-        "addressRegion": "Bring value future cover meeting across station spring. Let kitchen leg game cover.",  
-        "addressCountry": "Include present book best. Always along attack. Officer dog later decade light.",  
-        "postalCode": "World probably until result detail window. Form himself design population war. Think black sell up discover month.",  
-        "postOfficeBoxNumber": "Paper wall think focus. Figure threat material increase increase respond protect. Recently character reach see type."  
+        "streetAddress": "Finally born probably TV realize pattern available tax. Say of",  
+        "addressLocality": "Water culture respond game feel debate. No make third.",  
+        "addressRegion": "One family window eye area approach people along. Prepare order around play production difference ball true.",  
+        "addressCountry": "Identify administratio",  
+        "postalCode": "Need bad always small some apply.",  
+        "postOfficeBoxNumber": "House clearly second improve human. Box main outside throughout discussion evidence beautiful.",  
+        "streetNr": "Leg research force worker strategy name. Knowledge stuff person change magazine hard well.",  
+        "district": "Quite author"  
     },  
-    "areaServed": "Start including movement trip. Machine moment light court. Own that once smile nation just. Push everything total save option investment manage.",  
-    "plow": {  
-        "type": "Property",  
-        "value": 977.2  
-    },  
-    "phigh": {  
-        "type": "Property",  
-        "value": 381.1  
-    },  
-    "dhypo": {  
-        "type": "Property",  
-        "value": 879.9  
-    },  
-    "dhyper": {  
-        "type": "Property",  
-        "value": 851.2  
-    },  
-    "gir": {  
-        "type": "Property",  
-        "value": 711.2  
-    },  
-    "gdr": {  
-        "type": "Property",  
-        "value": 725.3  
-    },  
+    "areaServed": "Rise item research study phone. Co",  
+    "plow": 53.9,  
+    "phigh": 705.7,  
+    "dhypo": 755.1,  
+    "dhyper": 517.6,  
+    "gir": 375.6,  
+    "gdr": 263.1,  
     "rt": [  
-        "oic.r.cgm.threshold",  
         "oic.r.cgm.threshold"  
     ],  
-    "n": "Heart against through live size work. Apply vote system show sea.",  
+    "n": "Design president specific approa",  
     "if": [  
-        "oic.if.rw",  
         "oic.if.rw"  
     ],  
     "range": [  
-        776.5,  
-        406.9  
+        13.4,  
+        330.3  
     ],  
-    "step": {  
-        "type": "Property",  
-        "value": 751.9  
-    },  
-    "precision": {  
-        "type": "Property",  
-        "value": 471.3  
-    },  
+    "step": 872.4,  
+    "precision": 23.4,  
     "type": "ContinuousGlucoseMeterThreshold",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -824,102 +741,104 @@ ContinuousGlucoseMeterThreshold:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:id:JNLC:20811520",  
+    "id": "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:id:QSII:08545277",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2014-10-06T01:57:51Z"  
+            "@value": "2011-06-12T08:24:11Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2009-09-21T14:09:17Z"  
+            "@value": "1994-09-18T20:29:43Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Contain check product major certainly. Quickly expect wait cost conference fund similar. Night or carry purpose of article."  
+        "value": "For or prevent right still if rich. Us maintain event. Meeting fish show nor only. Here manage threat profes"  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Bed close late gun. Later financial on. Both lose rather. Necessary mouth question."  
+        "value": "Stuff alone team responsibility. Yourself look c"  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Meet PM service water. Trade interesting consumer idea."  
+        "value": "Court particularly song lay follow film movie. Response size character tax."  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Number lot edge whatever democratic. How total treat. Though not represent control leader marriage."  
+        "value": "Card color them teach drug college management. Good director beyond exactly heavy family."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Soldier different school far reality south charge. Piece exactly today gas loss thousand idea."  
+        "value": "Audience fill free position. Debate imagine court throughout."  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:OEJX:09311250",  
-            "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:QHQH:24761502"  
+            "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:EUJH:30934965",  
+            "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:RTPX:39835000"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:EANX:32862165"  
+            "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:RQAB:55271114"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                -14.737475,  
-                -83.850391  
+                69.193737,  
+                -84.724615  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Send arm you yeah somebody. Blue along push wait.",  
-            "addressLocality": "Billion central ask trade significant could eat. Again piece Mr. Mother upon quickly reach also.",  
-            "addressRegion": "Media per contain bed type major. Open view social use see laugh. Party budget back. Program money protect.",  
-            "addressCountry": "Quality sort course yard several agent. Activity throughout memory arm.",  
-            "postalCode": "Guy effect computer less soon. Know never southern bar audience. Respond check share risk this story six. Age eight watch special everybody thank.",  
-            "postOfficeBoxNumber": "Candidate happy natural. See wear case few."  
+            "streetAddress": "Finally born probably TV realize pattern available tax. Say of",  
+            "addressLocality": "Water culture respond game feel debate. No make third.",  
+            "addressRegion": "One family window eye area approach people along. Prepare order around play production difference ball true.",  
+            "addressCountry": "Identify administratio",  
+            "postalCode": "Need bad always small some apply.",  
+            "postOfficeBoxNumber": "House clearly second improve human. Box main outside throughout discussion evidence beautiful.",  
+            "streetNr": "Leg research force worker strategy name. Knowledge stuff person change magazine hard well.",  
+            "district": "Quite author"  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Local across including real. Pattern resource everybody ability."  
+        "value": "Rise item research study phone. Co"  
     },  
     "plow": {  
         "type": "Property",  
-        "value": 352.0  
+        "value": 53.9  
     },  
     "phigh": {  
         "type": "Property",  
-        "value": 410.6  
+        "value": 705.7  
     },  
     "dhypo": {  
         "type": "Property",  
-        "value": 472.3  
+        "value": 755.1  
     },  
     "dhyper": {  
         "type": "Property",  
-        "value": 117.2  
+        "value": 517.6  
     },  
     "gir": {  
         "type": "Property",  
-        "value": 650.9  
+        "value": 375.6  
     },  
     "gdr": {  
         "type": "Property",  
-        "value": 718.9  
+        "value": 263.1  
     },  
     "rt": {  
         "type": "Property",  
@@ -929,33 +848,32 @@ ContinuousGlucoseMeterThreshold:
     },  
     "n": {  
         "type": "Property",  
-        "value": "Story her eye key rich individual. Area avoid small these. Usually night health responsibility behind no ground. Design drive above discover."  
+        "value": "Design president specific approa"  
     },  
     "if": {  
         "type": "Property",  
         "value": [  
-            "oic.if.baseline"  
+            "oic.if.rw"  
         ]  
     },  
     "range": {  
         "type": "Property",  
         "value": [  
-            641.4,  
-            917.0  
+            13.4,  
+            330.3  
         ]  
     },  
     "step": {  
         "type": "Property",  
-        "value": 228.3  
+        "value": 872.4  
     },  
     "precision": {  
         "type": "Property",  
-        "value": 832.7  
+        "value": 23.4  
     },  
     "type": "ContinuousGlucoseMeterThreshold",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
