@@ -1,38 +1,47 @@
 {
-    "id": "urn:ngsi-ld:GlucoseMeal:id:HLGE:82344698",
-    "dateCreated": "1977-08-15T01:39:07Z",
-    "dateModified": "1997-06-24T22:20:47Z",
-    "source": "Say alone feel sound. Every affect billion feel during. Particular road instead fast should grow. Give next skin deal building.",
-    "name": "Film experience anything us accept respond late really. Building still foot main.",
-    "alternateName": "Low anything score rather my will continue. By city people raise operation amount. Mission measure cause company short.",
-    "description": "Radio computer listen high return sit. Professor watch stock among eye. Speech phone firm reason.",
-    "dataProvider": "Fire church cold early doctor civil white. Until easy action candidate few skin. Guy four production community film.",
+    "id": "urn:ngsi-ld:GlucoseMeal:id:XLQI:55161502",
+    "dateCreated": "2018-01-26T01:51:09Z",
+    "dateModified": "2000-10-08T00:28:43Z",
+    "source": "Story country cup site real",
+    "name": "Help billion that bit south owner.",
+    "alternateName": "Quality all rich. Apply do work writer. Community camera deep mention along.",
+    "description": "Scene purpose participant school morning wish everything film. Even rock pretty sum",
+    "dataProvider": "Look better national none speech young where.",
     "owner": [
-        "urn:ngsi-ld:GlucoseMeal:items:KJWE:83688146",
-        "urn:ngsi-ld:GlucoseMeal:items:CPXX:84082182"
+        "urn:ngsi-ld:GlucoseMeal:items:QNKH:66553031",
+        "urn:ngsi-ld:GlucoseMeal:items:HTKX:04734989"
     ],
     "seeAlso": [
-        "urn:ngsi-ld:GlucoseMeal:items:NLUW:70195588",
-        "urn:ngsi-ld:GlucoseMeal:items:ZPDL:30436070"
+        "urn:ngsi-ld:GlucoseMeal:items:CRDB:94365951"
     ],
     "location": {
         "type": "Point",
         "coordinates": [
-            -82.9153815,
-            -36.845329
+            -14.45525,
+            -161.337485
         ]
     },
     "address": {
-        "streetAddress": "Anything build writer reduce behind shoulder to. Third Republican kind develop money.",
-        "addressLocality": "Parent name poor action item table support. Forward decide tree sign here strong.",
-        "addressRegion": "Life rise only fall little approach. Themselves affect before pay none. Trade kitchen guess.",
-        "addressCountry": "Expect American suddenly forget senior cost. Line defense big activity. Leg rich firm subject you.",
-        "postalCode": "Shake should offer foreign list. Decision life win major capital manage either. Throw performance soldier know goal black.",
-        "postOfficeBoxNumber": "Sit those arm rich rather consider will. Million much campaign director free."
+        "streetAddress": "However standard generation ground charge indeed today. Same water film pattern.",
+        "addressLocality": "Across feel happen. Scientist design effect although. Note conference powe",
+        "addressRegion": "Office southern before animal walk something. Always word truth image security dark although. Reduce individual act before medical.",
+        "addressCountry": "Need star sport. Ability impact race position involve.",
+        "postalCode": "Movemen",
+        "postOfficeBoxNumber": "Inside card many movie. Start college take sou",
+        "streetNr": "Range lay seven general. Org",
+        "district": "Nearly clear short play travel. Reflect energy produce drop. Tough hold speak also return always financial."
     },
-    "areaServed": "Guy sport garden too result worker institution. Tough seat pattern light sing. Standard attack staff require there light article.",
+    "areaServed": "Go three also bill member traditional keep. Result woman carry cell include especially Congress meet.",
+    "rt": [
+        "oic.r.glucose.meal"
+    ],
+    "meal": "preprandial",
+    "n": "Kind option indeed industry. Until claim citizen t",
+    "if": [
+        "oic.if.baseline"
+    ],
+    "type": "GlucoseMeal",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
