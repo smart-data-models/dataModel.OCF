@@ -1,3 +1,3 @@
 /* (Beta) Export of data model PrintQueue of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE PrintQueue_type AS ENUM ('PrintQueue');
-CREATE TABLE PrintQueue (if JSON, n TEXT, queue JSON, rt JSON, type PrintQueue_type);
+CREATE TABLE PrintQueue (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, if JSON, location JSON, n TEXT, name TEXT, owner JSON, queue JSON, rt JSON, seeAlso JSON, source TEXT, type PrintQueue_type);
