@@ -18,10 +18,11 @@
 - `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Il paese. Ad esempio, la Spagna  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
 	- `addressLocality[string]`: La località in cui si trova l'indirizzo civico e che si trova nella regione  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
 	- `addressRegion[string]`: La regione in cui si trova la località, e che si trova nel paese  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
-	- `district[string]`: Un distretto è un tipo di divisione amministrativa che, in alcuni paesi, è gestita dal governo locale.    
+	- `district[string]`: Un distretto è un tipo di divisione amministrativa che, in alcuni Paesi, è gestita dal governo locale.    
 	- `postOfficeBoxNumber[string]`: Il numero di casella postale per gli indirizzi di casella postale. Ad esempio, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: Il codice postale. Ad esempio, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: L'indirizzo stradale  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Numero che identifica una proprietà specifica su una strada pubblica    
 - `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata  - `dateCreated[date-time]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `if[array]`: Il set di interfacce OCF supportato da questa risorsa.  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `n[string]`: Nome amichevole della risorsa  - `name[string]`: Il nome di questo elemento  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `precision[number]`: Quando viene esposto, il valore in 'precision' fornisce una tolleranza +/- rispetto alle proprietà della risorsa. Pertanto, se una proprietà viene AGGIORNATA a un valore e poi viene restituita, il valore restituito è valido se rientra nell'intervallo del valore impostato +/- precision.  - `range[array]`: L'intervallo valido per la proprietà nella risorsa come numero. Il primo valore della matrice è il valore minimo, il secondo valore della matrice è il valore massimo.  - `rt[array]`: Tipo di risorsa  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `step[number]`: Valore del passo nell'intervallo definito, un numero intero quando l'intervallo è un numero.  Si tratta dell'incremento per i valori validi nell'intervallo; quindi se l'intervallo è 0.0..10.0 e il passo è 2.5, i valori validi sono 0.0,2.5,5.0,7.5,10.0.  - `type[string]`: Tipo di entità NGSI. Deve essere Peso  - `units[string]`: Unità di peso  - `weight[number]`: Peso di un oggetto  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Proprietà richieste  
@@ -457,65 +458,55 @@ Weight:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Weight:id:OJUO:43383279",  
-  "dateCreated": "1972-04-12T09:44:39Z",  
-  "dateModified": "2020-05-28T11:42:59Z",  
-  "source": "Decade then very member. Find above artist store.",  
-  "name": "Fact artist sport happen perhaps assume responsibility. Full subject turn design voice road degree discover.",  
-  "alternateName": "Listen hospital anything teach foot. Present far food maintain play bring keep billion.",  
-  "description": "Artist each follow soldier executive camera wind.",  
-  "dataProvider": "Lose where area his kitchen. Box method work us I can ability.",  
-  "owner": [  
-    "urn:ngsi-ld:Weight:items:BTBX:55752700",  
-    "urn:ngsi-ld:Weight:items:RERQ:90930122"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Weight:items:KRUV:71413026",  
-    "urn:ngsi-ld:Weight:items:PTWT:50710894"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -12.433652,  
-      172.571818  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Alone over street network year ask up black. Game meeting population wife sell past country.",  
-    "addressLocality": "Rich break base line great prepare speech. Growth above reduce dog.",  
-    "addressRegion": "Science various interest civil. Theory value people administration natural. Others how need.",  
-    "addressCountry": "Probably field participant report nature. Arm hospital process none already growth.",  
-    "postalCode": "Fund listen though suffer phone. Everybody environment movement man left.",  
-    "postOfficeBoxNumber": "Their hair call need evidence hospital surface. Mouth newspaper chance resource protect. Court enough hard law trouble second."  
-  },  
-  "areaServed": "Skin over perform happen. Race action protect teach.",  
-  "rt": [  
-    "oic.r.weight",  
-    "oic.r.weight"  
-  ],  
-  "weight": {  
-    "type": "Property",  
-    "value": 732.0  
-  },  
-  "units": "kg",  
-  "range": [  
-    25.2,  
-    787.6  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 227.8  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 390.9  
-  },  
-  "n": "Offer field Mrs music near will big. Wrong offer bag pick phone improve.",  
-  "if": [  
-    "oic.if.baseline",  
-    "oic.if.baseline"  
-  ],  
-  "type": "Weight"  
+    "id": "urn:ngsi-ld:Weight:id:PXJS:38939979",  
+    "dateCreated": "1973-09-18T05:35:54Z",  
+    "dateModified": "1970-09-12T11:25:12Z",  
+    "source": "Street ask beat again health figure. Exactly president protect certainly situation avoid always.",  
+    "name": "Compare top under. Policy significa",  
+    "alternateName": "Place wonder whom seven. Thank future tonight notice firm",  
+    "description": "Unit economy light might debate finally. Prove understand pass relate develop consumer perform. The instead smile behavior chance during produce.",  
+    "dataProvider": "Crime window how defense. Beyond area central already usually as which. Successful night wife father rock economy media.",  
+    "owner": [  
+        "urn:ngsi-ld:Weight:items:CIDP:31330312",  
+        "urn:ngsi-ld:Weight:items:KPDZ:31790939"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Weight:items:LOVM:09152413"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            59.1616925,  
+            4.378997  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Before box would figure.",  
+        "addressLocality": "Voice majority case it. These term field race million leader add. Return computer tell catch ready. Nearly recognize set affect.",  
+        "addressRegion": "Event ok fish nearly run. Value deep their feel deep only. Word member camera language character.",  
+        "addressCountry": "Enough minute every",  
+        "postalCode": "Follow market light interest. Gas animal seem rest senior however gr",  
+        "postOfficeBoxNumber": "Practice end yet stay she maybe. Land shake indeed different public issue.",  
+        "streetNr": "Forward on dark movie both current fund unt",  
+        "district": "East project would likely. Computer indeed truth American write even. Capital year military part."  
+    },  
+    "areaServed": "Development age computer happen let wall. Raise upon party. Democrat serious month env",  
+    "rt": [  
+        "oic.r.weight"  
+    ],  
+    "weight": 473.7,  
+    "units": "lb",  
+    "range": [  
+        361.9,  
+        412.9  
+    ],  
+    "step": 66.1,  
+    "precision": 10.6,  
+    "n": "Be I than enough opportunity at. Turn ge",  
+    "if": [  
+        "oic.if.s"  
+    ],  
+    "type": "Weight"  
 }  
 ```  
 </details>  
@@ -524,133 +515,115 @@ Weight:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:Weight:id:OJUO:43383279"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1972-04-12T09:44:39Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2020-05-28T11:42:59Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Decade then very member. Find above artist store."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Fact artist sport happen perhaps assume responsibility. Full subject turn design voice road degree discover."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Listen hospital anything teach foot. Present far food maintain play bring keep billion."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Artist each follow soldier executive camera wind."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Lose where area his kitchen. Box method work us I can ability."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Weight:items:BTBX:55752700",  
-      "urn:ngsi-ld:Weight:items:RERQ:90930122"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Weight:items:KRUV:71413026",  
-      "urn:ngsi-ld:Weight:items:PTWT:50710894"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -12.433652,  
-        172.571818  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Alone over street network year ask up black. Game meeting population wife sell past country.",  
-      "addressLocality": "Rich break base line great prepare speech. Growth above reduce dog.",  
-      "addressRegion": "Science various interest civil. Theory value people administration natural. Others how need.",  
-      "addressCountry": "Probably field participant report nature. Arm hospital process none already growth.",  
-      "postalCode": "Fund listen though suffer phone. Everybody environment movement man left.",  
-      "postOfficeBoxNumber": "Their hair call need evidence hospital surface. Mouth newspaper chance resource protect. Court enough hard law trouble second."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Skin over perform happen. Race action protect teach."  
-  },  
-  "rt": {  
-    "type": "array",  
-    "value": [  
-      "oic.r.weight",  
-      "oic.r.weight"  
-    ]  
-  },  
-  "weight": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 732.0  
-    }  
-  },  
-  "units": {  
-    "type": "string",  
-    "value": "kg"  
-  },  
-  "range": {  
-    "type": "array",  
-    "value": [  
-      25.2,  
-      787.6  
-    ]  
-  },  
-  "step": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 227.8  
-    }  
-  },  
-  "precision": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 390.9  
-    }  
-  },  
-  "n": {  
-    "type": "string",  
-    "value": "Offer field Mrs music near will big. Wrong offer bag pick phone improve."  
-  },  
-  "if": {  
-    "type": "array",  
-    "value": [  
-      "oic.if.baseline",  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "type": {  
-    "type": "string",  
-    "value": "Weight"  
-  }  
+    "id": "urn:ngsi-ld:Weight:id:PXJS:38939979",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1973-09-18T05:35:54Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "1970-09-12T11:25:12Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Street ask beat again health figure. Exactly president protect certainly situation avoid always."  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Compare top under. Policy significa"  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Place wonder whom seven. Thank future tonight notice firm"  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Unit economy light might debate finally. Prove understand pass relate develop consumer perform. The instead smile behavior chance during produce."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Crime window how defense. Beyond area central already usually as which. Successful night wife father rock economy media."  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Weight:items:CIDP:31330312",  
+            "urn:ngsi-ld:Weight:items:KPDZ:31790939"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Weight:items:LOVM:09152413"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                59.1616925,  
+                4.378997  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Before box would figure.",  
+            "addressLocality": "Voice majority case it. These term field race million leader add. Return computer tell catch ready. Nearly recognize set affect.",  
+            "addressRegion": "Event ok fish nearly run. Value deep their feel deep only. Word member camera language character.",  
+            "addressCountry": "Enough minute every",  
+            "postalCode": "Follow market light interest. Gas animal seem rest senior however gr",  
+            "postOfficeBoxNumber": "Practice end yet stay she maybe. Land shake indeed different public issue.",  
+            "streetNr": "Forward on dark movie both current fund unt",  
+            "district": "East project would likely. Computer indeed truth American write even. Capital year military part."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Development age computer happen let wall. Raise upon party. Democrat serious month env"  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.weight"  
+        ]  
+    },  
+    "weight": {  
+        "type": "Number",  
+        "value": 473.7  
+    },  
+    "units": {  
+        "type": "Text",  
+        "value": "lb"  
+    },  
+    "range": {  
+        "type": "StructuredValue",  
+        "value": [  
+            361.9,  
+            412.9  
+        ]  
+    },  
+    "step": {  
+        "type": "Number",  
+        "value": 66.1  
+    },  
+    "precision": {  
+        "type": "Number",  
+        "value": 10.6  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Be I than enough opportunity at. Turn ge"  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.s"  
+        ]  
+    },  
+    "type": "Weight"  
 }  
 ```  
 </details>  
@@ -659,149 +632,140 @@ Weight:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Weight:id:OJUO:43383279",  
-    "dateCreated": "1972-04-12T09:44:39Z",  
-    "dateModified": "2020-05-28T11:42:59Z",  
-    "source": "Decade then very member. Find above artist store.",  
-    "name": "Fact artist sport happen perhaps assume responsibility. Full subject turn design voice road degree discover.",  
-    "alternateName": "Listen hospital anything teach foot. Present far food maintain play bring keep billion.",  
-    "description": "Artist each follow soldier executive camera wind.",  
-    "dataProvider": "Lose where area his kitchen. Box method work us I can ability.",  
+    "id": "urn:ngsi-ld:Weight:id:PXJS:38939979",  
+    "dateCreated": "1973-09-18T05:35:54Z",  
+    "dateModified": "1970-09-12T11:25:12Z",  
+    "source": "Street ask beat again health figure. Exactly president protect certainly situation avoid always.",  
+    "name": "Compare top under. Policy significa",  
+    "alternateName": "Place wonder whom seven. Thank future tonight notice firm",  
+    "description": "Unit economy light might debate finally. Prove understand pass relate develop consumer perform. The instead smile behavior chance during produce.",  
+    "dataProvider": "Crime window how defense. Beyond area central already usually as which. Successful night wife father rock economy media.",  
     "owner": [  
-        "urn:ngsi-ld:Weight:items:BTBX:55752700",  
-        "urn:ngsi-ld:Weight:items:RERQ:90930122"  
+        "urn:ngsi-ld:Weight:items:CIDP:31330312",  
+        "urn:ngsi-ld:Weight:items:KPDZ:31790939"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:Weight:items:KRUV:71413026",  
-        "urn:ngsi-ld:Weight:items:PTWT:50710894"  
+        "urn:ngsi-ld:Weight:items:LOVM:09152413"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            -12.433652,  
-            172.571818  
+            59.1616925,  
+            4.378997  
         ]  
     },  
     "address": {  
-        "streetAddress": "Alone over street network year ask up black. Game meeting population wife sell past country.",  
-        "addressLocality": "Rich break base line great prepare speech. Growth above reduce dog.",  
-        "addressRegion": "Science various interest civil. Theory value people administration natural. Others how need.",  
-        "addressCountry": "Probably field participant report nature. Arm hospital process none already growth.",  
-        "postalCode": "Fund listen though suffer phone. Everybody environment movement man left.",  
-        "postOfficeBoxNumber": "Their hair call need evidence hospital surface. Mouth newspaper chance resource protect. Court enough hard law trouble second."  
+        "streetAddress": "Before box would figure.",  
+        "addressLocality": "Voice majority case it. These term field race million leader add. Return computer tell catch ready. Nearly recognize set affect.",  
+        "addressRegion": "Event ok fish nearly run. Value deep their feel deep only. Word member camera language character.",  
+        "addressCountry": "Enough minute every",  
+        "postalCode": "Follow market light interest. Gas animal seem rest senior however gr",  
+        "postOfficeBoxNumber": "Practice end yet stay she maybe. Land shake indeed different public issue.",  
+        "streetNr": "Forward on dark movie both current fund unt",  
+        "district": "East project would likely. Computer indeed truth American write even. Capital year military part."  
     },  
-    "areaServed": "Skin over perform happen. Race action protect teach.",  
+    "areaServed": "Development age computer happen let wall. Raise upon party. Democrat serious month env",  
     "rt": [  
-        "oic.r.weight",  
         "oic.r.weight"  
     ],  
-    "weight": {  
-        "type": "Property",  
-        "value": 732.0  
-    },  
-    "units": "kg",  
+    "weight": 473.7,  
+    "units": "lb",  
     "range": [  
-        25.2,  
-        787.6  
+        361.9,  
+        412.9  
     ],  
-    "step": {  
-        "type": "Property",  
-        "value": 227.8  
-    },  
-    "precision": {  
-        "type": "Property",  
-        "value": 390.9  
-    },  
-    "n": "Offer field Mrs music near will big. Wrong offer bag pick phone improve.",  
+    "step": 66.1,  
+    "precision": 10.6,  
+    "n": "Be I than enough opportunity at. Turn ge",  
     "if": [  
-        "oic.if.baseline",  
-        "oic.if.baseline"  
+        "oic.if.s"  
     ],  
     "type": "Weight",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
 </details>  
 #### Peso NGSI-LD normalizzato Esempio  
-Ecco un esempio di un Peso in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si usano opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di un Peso in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Weight:id:SJPG:70921933",  
+    "id": "urn:ngsi-ld:Weight:id:PXJS:38939979",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1993-03-15T11:24:45Z"  
+            "@value": "1973-09-18T05:35:54Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2015-07-28T06:46:49Z"  
+            "@value": "1970-09-12T11:25:12Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Later white success officer bag."  
+        "value": "Street ask beat again health figure. Exactly president protect certainly situation avoid always."  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Environmental notice also home professional occur picture. Land mention charge whether good."  
+        "value": "Compare top under. Policy significa"  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Many happen family better. They bed treatment across son service believe. Protect sport citizen key high that. Leg office sign head."  
+        "value": "Place wonder whom seven. Thank future tonight notice firm"  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Animal prepare include run. Structure big represent contain of here head."  
+        "value": "Unit economy light might debate finally. Prove understand pass relate develop consumer perform. The instead smile behavior chance during produce."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Important candidate case fight senior wife. President mean we your."  
+        "value": "Crime window how defense. Beyond area central already usually as which. Successful night wife father rock economy media."  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Weight:items:WCAY:56473919",  
-            "urn:ngsi-ld:Weight:items:DUDL:86411480"  
+            "urn:ngsi-ld:Weight:items:CIDP:31330312",  
+            "urn:ngsi-ld:Weight:items:KPDZ:31790939"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Weight:items:QLPQ:72550779"  
+            "urn:ngsi-ld:Weight:items:LOVM:09152413"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                62.3391355,  
-                -48.594117  
+                59.1616925,  
+                4.378997  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Week perform real soon but discuss expect leader. End front reach benefit price. Put personal usually size Mrs industry.",  
-            "addressLocality": "Money four middle but author free speech town.",  
-            "addressRegion": "Institution prove certain first page car lay. Evening look speak Democrat technology recognize. There five arrive line last material.",  
-            "addressCountry": "Green strategy forget yard good finally.",  
-            "postalCode": "Design seat enough artist over. Treatment necessary question protect class fill call.",  
-            "postOfficeBoxNumber": "Record girl president particularly actually group. Sense you continue she. Alone some teach."  
+            "streetAddress": "Before box would figure.",  
+            "addressLocality": "Voice majority case it. These term field race million leader add. Return computer tell catch ready. Nearly recognize set affect.",  
+            "addressRegion": "Event ok fish nearly run. Value deep their feel deep only. Word member camera language character.",  
+            "addressCountry": "Enough minute every",  
+            "postalCode": "Follow market light interest. Gas animal seem rest senior however gr",  
+            "postOfficeBoxNumber": "Practice end yet stay she maybe. Land shake indeed different public issue.",  
+            "streetNr": "Forward on dark movie both current fund unt",  
+            "district": "East project would likely. Computer indeed truth American write even. Capital year military part."  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Rest anyone specific great source offer. Analysis range available entire."  
+        "value": "Development age computer happen let wall. Raise upon party. Democrat serious month env"  
     },  
     "rt": {  
         "type": "Property",  
@@ -811,41 +775,40 @@ Weight:
     },  
     "weight": {  
         "type": "Property",  
-        "value": 573.9  
+        "value": 473.7  
     },  
     "units": {  
         "type": "Property",  
-        "value": "oz"  
+        "value": "lb"  
     },  
     "range": {  
         "type": "Property",  
         "value": [  
-            998.1,  
-            197.8  
+            361.9,  
+            412.9  
         ]  
     },  
     "step": {  
         "type": "Property",  
-        "value": 718.8  
+        "value": 66.1  
     },  
     "precision": {  
         "type": "Property",  
-        "value": 946.7  
+        "value": 10.6  
     },  
     "n": {  
         "type": "Property",  
-        "value": "Somebody would commercial life population third. Live involve save."  
+        "value": "Be I than enough opportunity at. Turn ge"  
     },  
     "if": {  
         "type": "Property",  
         "value": [  
-            "oic.if.a"  
+            "oic.if.s"  
         ]  
     },  
     "type": "Weight",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
