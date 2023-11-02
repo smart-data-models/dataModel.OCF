@@ -15,7 +15,15 @@
 ## Lista de propiedades  
 
 <sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>.  
-- `health[string]`: Los distintos niveles de salud que siente una persona al tomar una glucosa.  - `if[array]`: El conjunto de interfaces OCF que admite este recurso  - `n[string]`: Nombre descriptivo del recurso  - `rt[array]`: Tipo de recurso  - `type[string]`: Tipo de entidad NGSI. Tiene que ser GlucoseHealth  <!-- /30-PropertiesList -->  
+- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: El país. Por ejemplo, España  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: La localidad en la que se encuentra la dirección postal, y que está en la región  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: La región en la que se encuentra la localidad, y que está en el país  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Un distrito es un tipo de división administrativa que, en algunos países, gestiona el gobierno local    
+	- `postOfficeBoxNumber[string]`: El número del apartado de correos para las direcciones de apartados postales. Por ejemplo, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: El código postal. Por ejemplo, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: La dirección  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Número que identifica una propiedad específica en una vía pública    
+- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada  - `dateCreated[date-time]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento  - `dateModified[date-time]`: Marca de tiempo de la última modificación de la entidad. Suele ser asignada por la plataforma de almacenamiento  - `description[string]`: Descripción de este artículo  - `health[string]`: Los distintos niveles de salud que siente una persona al tomar una glucosa.  - `id[*]`: Identificador único de la entidad  - `if[array]`: El conjunto de interfaces OCF que admite este recurso  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  - `n[string]`: Nombre descriptivo del recurso  - `name[string]`: El nombre de este artículo  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  - `rt[array]`: Tipo de recurso  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type[string]`: Tipo de entidad NGSI. Tiene que ser GlucoseHealth  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propiedades requeridas  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -32,6 +40,92 @@
 GlucoseHealth:    
   description: Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the Properties associated with context health. The health Property is a read-only value that is provided by the Server where minor and major are related to the general health or the level of illness of the person; menses refers to the female menstrual cycle; stress refers to physiological or psychological stress.    
   properties:    
+    address:    
+      description: The mailing address    
+      properties:    
+        addressCountry:    
+          description: 'The country. For example, Spain'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
+        addressLocality:    
+          description: 'The locality in which the street address is, and which is in the region'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
+        addressRegion:    
+          description: 'The region in which the locality is, and which is in the country'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        postOfficeBoxNumber:    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
+        postalCode:    
+          description: 'The postal code. For example, 24004'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
+        streetAddress:    
+          description: The street address    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      type: object    
+      x-ngsi:    
+        model: https://schema.org/address    
+        type: Property    
+    alternateName:    
+      description: An alternative name for this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    areaServed:    
+      description: The geographic area where a service or offered item is provided    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    dataProvider:    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateCreated:    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateModified:    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    description:    
+      description: A description of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
     health:    
       description: The various levels of health a person feels when taking a glucose.    
       enum:    
@@ -42,6 +136,23 @@ GlucoseHealth:
         - none    
       readOnly: true    
       type: string    
+      x-ngsi:    
+        type: Property    
+    id:    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     if:    
@@ -58,11 +169,203 @@ GlucoseHealth:
       uniqueItems: true    
       x-ngsi:    
         type: Property    
+    location:    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+      oneOf:    
+        - description: Geojson reference to the item. Point    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                type: number    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - Point    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Point    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - LineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON LineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 4    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - Polygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Polygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPoint    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPoint    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiLineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiLineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    items:    
+                      type: number    
+                    minItems: 2    
+                    type: array    
+                  minItems: 4    
+                  type: array    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPolygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPolygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+      x-ngsi:    
+        type: GeoProperty    
     n:    
       description: Friendly name of the Resource    
       maxLength: 64    
       readOnly: true    
       type: string    
+      x-ngsi:    
+        type: Property    
+    name:    
+      description: The name of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    owner:    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
+      items:    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
+      type: array    
       x-ngsi:    
         type: Property    
     rt:    
@@ -75,6 +378,23 @@ GlucoseHealth:
       minItems: 1    
       readOnly: true    
       type: array    
+      x-ngsi:    
+        type: Property    
+    seeAlso:    
+      description: list of uri pointing to additional resources about the item    
+      oneOf:    
+        - items:    
+            format: uri    
+            type: string    
+          minItems: 1    
+          type: array    
+        - format: uri    
+          type: string    
+      x-ngsi:    
+        type: Property    
+    source:    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
+      type: string    
       x-ngsi:    
         type: Property    
     type:    
@@ -106,38 +426,48 @@ GlucoseHealth:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:GlucoseHealth:id:YGNK:51960649",  
-  "dateCreated": "1986-04-06T00:49:05Z",  
-  "dateModified": "2008-08-16T16:15:39Z",  
-  "source": "Response control produce traditional thing boy professional. Lot professional perhaps evening.",  
-  "name": "Subject me sound admit within. Ahead different final and already.",  
-  "alternateName": "Toward bring ten. Best citizen project majority strong bad. On series another she whose.",  
-  "description": "Make produce able society. A meet natural have off child.",  
-  "dataProvider": "Just white short when stay. Work civil rise front.",  
-  "owner": [  
-    "urn:ngsi-ld:GlucoseHealth:items:FZEK:56874643",  
-    "urn:ngsi-ld:GlucoseHealth:items:FWOW:04889902"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:GlucoseHealth:items:WUFR:61731131",  
-    "urn:ngsi-ld:GlucoseHealth:items:CRGK:49104126"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -53.461772,  
-      1.252465  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Rise rather see recognize better dinner. Not evidence find view buy. Garden note skin during blue meeting.",  
-    "addressLocality": "Charge high early take. Defense daughter protect I simple. Name current in.",  
-    "addressRegion": "Detail tend military baby protect focus. Including money describe. School political interesting involve art information once bring.",  
-    "addressCountry": "Civil experience not off. History hour rest she.",  
-    "postalCode": "Consumer despite degree process. Sister budget total anyone behavior book. Billion require law participant election front month maybe.",  
-    "postOfficeBoxNumber": "Relate national take capital off half picture. That class apply line color have skill. Such Republican yard issue. Tough manager court grow summer your thousand."  
-  },  
-  "areaServed": "Other song mission education artist specific goal. White worker order follow head. Grow design option control."  
+    "id": "urn:ngsi-ld:GlucoseHealth:id:QBNE:37382998",  
+    "dateCreated": "1993-11-20T10:31:37Z",  
+    "dateModified": "1972-10-16T23:59:32Z",  
+    "source": "Mr card current seat down. Offer commercial last.",  
+    "name": "Walk arm receive air generation. Approach education and four until s",  
+    "alternateName": "Structure herself meet support. Year institution tonight far out. Among feeling employee shake opti",  
+    "description": "Green issue plan. Just anything ahead stage wind.",  
+    "dataProvider": "Onto suggest blood energy. Whom have money more will financial. Final people certainly wall though serious military.",  
+    "owner": [  
+        "urn:ngsi-ld:GlucoseHealth:items:TGKA:23765444",  
+        "urn:ngsi-ld:GlucoseHealth:items:IBBT:31467875"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:GlucoseHealth:items:YGAQ:73514661"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -57.6638655,  
+            115.048046  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Former staff mentio",  
+        "addressLocality": "Much just a assume pay. Month such only strong.",  
+        "addressRegion": "Parent price live official reality meet attention. Yard girl listen stop pattern find keep. Institution into people stock civil word season real.",  
+        "addressCountry": "Main yard century recent. Manager possibl",  
+        "postalCode": "New none surface. Company prepare foot.",  
+        "postOfficeBoxNumber": "High half visit according resource which occur. Likely power paper similar shake message laugh about. Eight national thousand live might.",  
+        "streetNr": "Student collection deep. Report dinner end with situat",  
+        "district": "Me just stay maintain. Magazine film least both "  
+    },  
+    "areaServed": "Whether side alone position coach series. Moment move walk very. Tha",  
+    "rt": [  
+        "oic.r.glucose.health"  
+    ],  
+    "health": "menses",  
+    "n": "Before",  
+    "if": [  
+        "oic.if.baseline"  
+    ],  
+    "type": "GlucoseHealth"  
 }  
 ```  
 </details>  
@@ -146,79 +476,96 @@ GlucoseHealth:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:GlucoseHealth:id:YGNK:51960649"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1986-04-06T00:49:05Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2008-08-16T16:15:39Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Response control produce traditional thing boy professional. Lot professional perhaps evening."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Subject me sound admit within. Ahead different final and already."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Toward bring ten. Best citizen project majority strong bad. On series another she whose."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Make produce able society. A meet natural have off child."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Just white short when stay. Work civil rise front."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:GlucoseHealth:items:FZEK:56874643",  
-      "urn:ngsi-ld:GlucoseHealth:items:FWOW:04889902"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:GlucoseHealth:items:WUFR:61731131",  
-      "urn:ngsi-ld:GlucoseHealth:items:CRGK:49104126"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -53.461772,  
-        1.252465  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Rise rather see recognize better dinner. Not evidence find view buy. Garden note skin during blue meeting.",  
-      "addressLocality": "Charge high early take. Defense daughter protect I simple. Name current in.",  
-      "addressRegion": "Detail tend military baby protect focus. Including money describe. School political interesting involve art information once bring.",  
-      "addressCountry": "Civil experience not off. History hour rest she.",  
-      "postalCode": "Consumer despite degree process. Sister budget total anyone behavior book. Billion require law participant election front month maybe.",  
-      "postOfficeBoxNumber": "Relate national take capital off half picture. That class apply line color have skill. Such Republican yard issue. Tough manager court grow summer your thousand."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Other song mission education artist specific goal. White worker order follow head. Grow design option control."  
-  }  
+    "id": "urn:ngsi-ld:GlucoseHealth:id:QBNE:37382998",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1993-11-20T10:31:37Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "1972-10-16T23:59:32Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Mr card current seat down. Offer commercial last."  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Walk arm receive air generation. Approach education and four until s"  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Structure herself meet support. Year institution tonight far out. Among feeling employee shake opti"  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Green issue plan. Just anything ahead stage wind."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Onto suggest blood energy. Whom have money more will financial. Final people certainly wall though serious military."  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:GlucoseHealth:items:TGKA:23765444",  
+            "urn:ngsi-ld:GlucoseHealth:items:IBBT:31467875"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:GlucoseHealth:items:YGAQ:73514661"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -57.6638655,  
+                115.048046  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Former staff mentio",  
+            "addressLocality": "Much just a assume pay. Month such only strong.",  
+            "addressRegion": "Parent price live official reality meet attention. Yard girl listen stop pattern find keep. Institution into people stock civil word season real.",  
+            "addressCountry": "Main yard century recent. Manager possibl",  
+            "postalCode": "New none surface. Company prepare foot.",  
+            "postOfficeBoxNumber": "High half visit according resource which occur. Likely power paper similar shake message laugh about. Eight national thousand live might.",  
+            "streetNr": "Student collection deep. Report dinner end with situat",  
+            "district": "Me just stay maintain. Magazine film least both "  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Whether side alone position coach series. Moment move walk very. Tha"  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.glucose.health"  
+        ]  
+    },  
+    "health": {  
+        "type": "Text",  
+        "value": "menses"  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Before"  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "GlucoseHealth"  
 }  
 ```  
 </details>  
@@ -227,41 +574,50 @@ GlucoseHealth:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:GlucoseHealth:id:YGNK:51960649",  
-    "dateCreated": "1986-04-06T00:49:05Z",  
-    "dateModified": "2008-08-16T16:15:39Z",  
-    "source": "Response control produce traditional thing boy professional. Lot professional perhaps evening.",  
-    "name": "Subject me sound admit within. Ahead different final and already.",  
-    "alternateName": "Toward bring ten. Best citizen project majority strong bad. On series another she whose.",  
-    "description": "Make produce able society. A meet natural have off child.",  
-    "dataProvider": "Just white short when stay. Work civil rise front.",  
+    "id": "urn:ngsi-ld:GlucoseHealth:id:QBNE:37382998",  
+    "dateCreated": "1993-11-20T10:31:37Z",  
+    "dateModified": "1972-10-16T23:59:32Z",  
+    "source": "Mr card current seat down. Offer commercial last.",  
+    "name": "Walk arm receive air generation. Approach education and four until s",  
+    "alternateName": "Structure herself meet support. Year institution tonight far out. Among feeling employee shake opti",  
+    "description": "Green issue plan. Just anything ahead stage wind.",  
+    "dataProvider": "Onto suggest blood energy. Whom have money more will financial. Final people certainly wall though serious military.",  
     "owner": [  
-        "urn:ngsi-ld:GlucoseHealth:items:FZEK:56874643",  
-        "urn:ngsi-ld:GlucoseHealth:items:FWOW:04889902"  
+        "urn:ngsi-ld:GlucoseHealth:items:TGKA:23765444",  
+        "urn:ngsi-ld:GlucoseHealth:items:IBBT:31467875"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:GlucoseHealth:items:WUFR:61731131",  
-        "urn:ngsi-ld:GlucoseHealth:items:CRGK:49104126"  
+        "urn:ngsi-ld:GlucoseHealth:items:YGAQ:73514661"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            -53.461772,  
-            1.252465  
+            -57.6638655,  
+            115.048046  
         ]  
     },  
     "address": {  
-        "streetAddress": "Rise rather see recognize better dinner. Not evidence find view buy. Garden note skin during blue meeting.",  
-        "addressLocality": "Charge high early take. Defense daughter protect I simple. Name current in.",  
-        "addressRegion": "Detail tend military baby protect focus. Including money describe. School political interesting involve art information once bring.",  
-        "addressCountry": "Civil experience not off. History hour rest she.",  
-        "postalCode": "Consumer despite degree process. Sister budget total anyone behavior book. Billion require law participant election front month maybe.",  
-        "postOfficeBoxNumber": "Relate national take capital off half picture. That class apply line color have skill. Such Republican yard issue. Tough manager court grow summer your thousand."  
+        "streetAddress": "Former staff mentio",  
+        "addressLocality": "Much just a assume pay. Month such only strong.",  
+        "addressRegion": "Parent price live official reality meet attention. Yard girl listen stop pattern find keep. Institution into people stock civil word season real.",  
+        "addressCountry": "Main yard century recent. Manager possibl",  
+        "postalCode": "New none surface. Company prepare foot.",  
+        "postOfficeBoxNumber": "High half visit according resource which occur. Likely power paper similar shake message laugh about. Eight national thousand live might.",  
+        "streetNr": "Student collection deep. Report dinner end with situat",  
+        "district": "Me just stay maintain. Magazine film least both "  
     },  
-    "areaServed": "Other song mission education artist specific goal. White worker order follow head. Grow design option control.",  
+    "areaServed": "Whether side alone position coach series. Moment move walk very. Tha",  
+    "rt": [  
+        "oic.r.glucose.health"  
+    ],  
+    "health": "menses",  
+    "n": "Before",  
+    "if": [  
+        "oic.if.baseline"  
+    ],  
+    "type": "GlucoseHealth",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -271,82 +627,104 @@ GlucoseHealth:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:GlucoseHealth:id:OYOG:86546161",  
+    "id": "urn:ngsi-ld:GlucoseHealth:id:QBNE:37382998",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1996-03-31T08:57:37Z"  
+            "@value": "1993-11-20T10:31:37Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1992-09-20T11:34:04Z"  
+            "@value": "1972-10-16T23:59:32Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Civil agreement after organization. Medical computer statement tree herself wonder. Investment ago society late particular place."  
+        "value": "Mr card current seat down. Offer commercial last."  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Point magazine feel. Successful career play window. Avoid she debate drop."  
+        "value": "Walk arm receive air generation. Approach education and four until s"  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Subject public evening body difference society. Again decade analysis music."  
+        "value": "Structure herself meet support. Year institution tonight far out. Among feeling employee shake opti"  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Maintain collection idea quickly out. Leader teacher reason play view. Significant build painting what population worker."  
+        "value": "Green issue plan. Just anything ahead stage wind."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Affect church pattern heavy camera water month."  
+        "value": "Onto suggest blood energy. Whom have money more will financial. Final people certainly wall though serious military."  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:GlucoseHealth:items:WXXP:92272198",  
-            "urn:ngsi-ld:GlucoseHealth:items:GOFL:73035775"  
+            "urn:ngsi-ld:GlucoseHealth:items:TGKA:23765444",  
+            "urn:ngsi-ld:GlucoseHealth:items:IBBT:31467875"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:GlucoseHealth:items:PYQU:68924026"  
+            "urn:ngsi-ld:GlucoseHealth:items:YGAQ:73514661"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                -65.464196,  
-                -102.585699  
+                -57.6638655,  
+                115.048046  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Traditional least property. Eye message ability wrong.",  
-            "addressLocality": "Remember wide culture. Weight senior pay.",  
-            "addressRegion": "Attorney money decide its off author. Traditional citizen attorney dark.",  
-            "addressCountry": "Pretty old foot imagine. Yourself sound lot physical relationship.",  
-            "postalCode": "Entire sport white operation month. Sing garden wall want. Interview our cold product class. Likely agent southern this.",  
-            "postOfficeBoxNumber": "Administration clear assume consider summer cold read. Hundred guess list energy bed drive rest."  
+            "streetAddress": "Former staff mentio",  
+            "addressLocality": "Much just a assume pay. Month such only strong.",  
+            "addressRegion": "Parent price live official reality meet attention. Yard girl listen stop pattern find keep. Institution into people stock civil word season real.",  
+            "addressCountry": "Main yard century recent. Manager possibl",  
+            "postalCode": "New none surface. Company prepare foot.",  
+            "postOfficeBoxNumber": "High half visit according resource which occur. Likely power paper similar shake message laugh about. Eight national thousand live might.",  
+            "streetNr": "Student collection deep. Report dinner end with situat",  
+            "district": "Me just stay maintain. Magazine film least both "  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Picture memory picture red letter crime already. Watch place expert out choose big stop way. Job Mr agree."  
+        "value": "Whether side alone position coach series. Moment move walk very. Tha"  
     },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.glucose.health"  
+        ]  
+    },  
+    "health": {  
+        "type": "Property",  
+        "value": "menses"  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Before"  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "GlucoseHealth",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
