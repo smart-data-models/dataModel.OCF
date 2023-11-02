@@ -1,76 +1,78 @@
 {
-    "id": "urn:ngsi-ld:Exercise:id:BICD:19768156",
+    "id": "urn:ngsi-ld:Exercise:id:WZTE:82421948",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2010-02-12T20:49:40Z"
+            "@value": "1991-02-08T18:14:04Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1987-05-28T10:25:55Z"
+            "@value": "1976-09-20T18:37:42Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Total heart table before because. Capital detail show do. Front history mention address."
+        "value": "Line"
     },
     "name": {
         "type": "Property",
-        "value": "Must believe professional arrive. Rich suggest bad. Participant chance one."
+        "value": "Partner sto"
     },
     "alternateName": {
         "type": "Property",
-        "value": "Choose gun local charge almost low. Science fire life."
+        "value": "Onto knowle"
     },
     "description": {
         "type": "Property",
-        "value": "Quite already others oil sit type. Government eye bit cultural sort. Store fine have when value drop population. Side establish debate feeling herself."
+        "value": "Every manage political record word group food break. Picture suddenly drug rule bring determine some forward. Beyond chair recently and."
     },
     "dataProvider": {
         "type": "Property",
-        "value": "Reason realize develop simply democratic about our. Relationship man resource figure. Letter fear maybe buy age member."
+        "value": "Own available buy country store build before. Already against which continue. Look road article quickly."
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:Exercise:items:EVOS:60128818",
-            "urn:ngsi-ld:Exercise:items:DQRS:06073019"
+            "urn:ngsi-ld:Exercise:items:UJLN:86914131",
+            "urn:ngsi-ld:Exercise:items:GILX:20870916"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:Exercise:items:DSHC:77333553"
+            "urn:ngsi-ld:Exercise:items:QIDT:79230225"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                -24.634838,
-                50.1582
+                28.732768,
+                177.344405
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "Service day media energy. Item instead minute this woman.",
-            "addressLocality": "As popular people make pay. Democratic authority pressure allow other.",
-            "addressRegion": "Artist seek significant.",
-            "addressCountry": "Exactly serve sea president new.",
-            "postalCode": "Someone move ahead painting. Talk tough senior manager young point. Campaign yes central break off.",
-            "postOfficeBoxNumber": "Real training loss so bad majority."
+            "streetAddress": "Likely improve notice. True power home price check real leader.",
+            "addressLocality": "School name care se",
+            "addressRegion": "Organization r",
+            "addressCountry": "Industry product another know",
+            "postalCode": "First degree response able state more. Couple part cup",
+            "postOfficeBoxNumber": "Son break either president stage population boy. Everything affect American race.",
+            "streetNr": "Water voice travel among see ",
+            "district": "Full"
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "Manage left letter. House group without girl laugh out above."
+        "value": "Buy break marriage also friend reach. Turn phone heart window. Assume be seek article."
     },
     "rt": {
         "type": "Property",
@@ -80,36 +82,35 @@
     },
     "exercise": {
         "type": "Property",
-        "value": 75.1
+        "value": 7.3
     },
     "range": {
         "type": "Property",
         "value": [
-            936.3,
-            509.9
+            29.4,
+            265.1
         ]
     },
     "step": {
         "type": "Property",
-        "value": 992.3
+        "value": 20.6
     },
     "precision": {
         "type": "Property",
-        "value": 939.2
+        "value": 454.9
     },
     "n": {
         "type": "Property",
-        "value": "Require foot practice chance much receive. Pull TV industry happy tree pretty American. Himself game ask short wide beat."
+        "value": "Send former rest foreign project. Against"
     },
     "if": {
         "type": "Property",
         "value": [
-            "oic.if.s"
+            "oic.if.baseline"
         ]
     },
     "type": "Exercise",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
