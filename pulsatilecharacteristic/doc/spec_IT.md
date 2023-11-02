@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: Il numero di casella postale per gli indirizzi di casella postale. Ad esempio, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: Il codice postale. Ad esempio, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: L'indirizzo stradale  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Numero che identifica una proprietà specifica su una strada pubblica    
 - `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `characteristic[number]`: Questa proprietà descrive la misura della caratteristica pulsatile corrente. Il valore è un valore intero mappato in bit. Di seguito viene descritto il significato di ciascun numero intero. 0 - La qualità del polso rilevato è nominale, nel senso che non ci sono anomalie riconosciute nel polso rilevato. 1 - La perfusione o la qualità dell'impulso rilevato è marginale. 2 - La perfusione o la qualità del polso rilevato è minima. 3 - La perfusione o la qualità del polso rilevato è inaccettabile.  - `dataProvider[string]`: una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata  - `dateCreated[date-time]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `if[array]`: Il set di interfacce OCF supportato da questa risorsa.  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `n[string]`: Nome amichevole della risorsa  - `name[string]`: Il nome di questo elemento  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `range[array]`: L'intervallo valido per la proprietà nella risorsa come numero intero. Il primo valore della matrice è il valore minimo, il secondo valore della matrice è il valore massimo.  - `rt[array]`: Il tipo di risorsa  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `step[number]`: Valore di passo nell'intervallo definito quando l'intervallo è un numero intero.  Si tratta dell'incremento per i valori validi nell'intervallo; quindi se l'intervallo è 0..10 e il passo è 2, i valori validi sono 0,2,4,6,8,10.  - `type[string]`: Tipo di entità NGSI. Deve essere una caratteristica pulsatile.  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Proprietà richieste  
@@ -437,60 +438,53 @@ pulsatilecharacteristic:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:pulsatilecharacteristic:id:YHCK:29783958",  
-  "dateCreated": "1976-02-28T05:22:23Z",  
-  "dateModified": "2017-07-16T13:00:46Z",  
-  "source": "Yet agreement bill answer hope social turn. Letter about loss simple.",  
-  "name": "Financial wall black. Fund lay writer allow need.",  
-  "alternateName": "Chance another opportunity board science. Sometimes east firm traditional heavy talk. Where democratic agree majority.",  
-  "description": "Why we behavior support. Republican fine character. Management range me color reduce only accept.",  
-  "dataProvider": "Why large entire simply recognize policy center. Responsibility start one film family condition away. Individual condition suggest reveal. Kind gas weight life.",  
-  "owner": [  
-    "urn:ngsi-ld:pulsatilecharacteristic:items:BFZF:28818876",  
-    "urn:ngsi-ld:pulsatilecharacteristic:items:AMNC:70571781"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:pulsatilecharacteristic:items:AZOK:81117701",  
-    "urn:ngsi-ld:pulsatilecharacteristic:items:CDIN:32720162"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      15.6929545,  
-      -154.323339  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Modern store western training.",  
-    "addressLocality": "Program manager prove heart raise key once. Least lay compare. In prevent baby.",  
-    "addressRegion": "Subject our baby line. Vote its your society record. Find remain space capital structure. List offer although computer reflect.",  
-    "addressCountry": "Early right size whole teacher trip. Over behavior ok positive.",  
-    "postalCode": "Single industry skill like blue shake box. Adult sound would yeah.",  
-    "postOfficeBoxNumber": "Lay plant possible involve huge. Ok me always specific white growth. Generation check end visit TV quality family."  
-  },  
-  "areaServed": "During effect type short light. Structure pretty stock heavy list officer laugh actually.",  
-  "characteristic": {  
-    "type": "Property",  
-    "value": 3  
-  },  
-  "rt": [  
-    "oic.r.pulsatilecharacteristic",  
-    "oic.r.pulsatilecharacteristic"  
-  ],  
-  "n": "Magazine truth stop whose group through despite. Example sense peace economy.",  
-  "if": [  
-    "oic.if.baseline",  
-    "oic.if.baseline"  
-  ],  
-  "range": [  
-    864,  
-    864  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "type": "pulsatilecharacteristic"  
+    "id": "urn:ngsi-ld:pulsatilecharacteristic:id:GQEJ:48764759",  
+    "dateCreated": "1979-07-06T09:36:23Z",  
+    "dateModified": "2021-06-07T14:46:20Z",  
+    "source": "Son wou",  
+    "name": "Tend employee source nature add rest. Report size personal partner stock four. Region as true develop sound central.",  
+    "alternateName": "Before year themselves your m",  
+    "description": "Wonder employee attorney quickly candidate change although bag.",  
+    "dataProvider": "Study modern miss dog Democrat quickly. Often late produce you true soldier. Food break onto fri",  
+    "owner": [  
+        "urn:ngsi-ld:pulsatilecharacteristic:items:KNBD:33041352",  
+        "urn:ngsi-ld:pulsatilecharacteristic:items:DUGT:23098910"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:pulsatilecharacteristic:items:AGFW:91615109"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -56.7421445,  
+            77.286609  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "View age internat",  
+        "addressLocality": "Other",  
+        "addressRegion": "Others kind company likely. Tonight themselves true power home price.",  
+        "addressCountry": "Real leader bad school name care several. Good explain grow water plant perform resource.",  
+        "postalCode": "Stock ball organization recognize civil development. Her then nothing increase I reduce industry. Close ask reduce.",  
+        "postOfficeBoxNumber": "Those traditional page a although for study. Spe",  
+        "streetNr": "Wear individual about add senior woman.",  
+        "district": "Best budget power them evidence without beyond take. Physical against trial son break either. Stage population boy child surface amount day."  
+    },  
+    "areaServed": "Fire h",  
+    "characteristic": 3,  
+    "rt": [  
+        "oic.r.pulsatilecharacteristic"  
+    ],  
+    "n": "Whole magazine truth stop whose.",  
+    "if": [  
+        "oic.if.baseline"  
+    ],  
+    "range": [  
+        864,  
+        864  
+    ],  
+    "step": 864,  
+    "type": "pulsatilecharacteristic"  
 }  
 ```  
 </details>  
@@ -499,122 +493,107 @@ pulsatilecharacteristic:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:pulsatilecharacteristic:id:YHCK:29783958"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1976-02-28T05:22:23Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2017-07-16T13:00:46Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Yet agreement bill answer hope social turn. Letter about loss simple."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Financial wall black. Fund lay writer allow need."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Chance another opportunity board science. Sometimes east firm traditional heavy talk. Where democratic agree majority."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Why we behavior support. Republican fine character. Management range me color reduce only accept."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Why large entire simply recognize policy center. Responsibility start one film family condition away. Individual condition suggest reveal. Kind gas weight life."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:pulsatilecharacteristic:items:BFZF:28818876",  
-      "urn:ngsi-ld:pulsatilecharacteristic:items:AMNC:70571781"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:pulsatilecharacteristic:items:AZOK:81117701",  
-      "urn:ngsi-ld:pulsatilecharacteristic:items:CDIN:32720162"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        15.6929545,  
-        -154.323339  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Modern store western training.",  
-      "addressLocality": "Program manager prove heart raise key once. Least lay compare. In prevent baby.",  
-      "addressRegion": "Subject our baby line. Vote its your society record. Find remain space capital structure. List offer although computer reflect.",  
-      "addressCountry": "Early right size whole teacher trip. Over behavior ok positive.",  
-      "postalCode": "Single industry skill like blue shake box. Adult sound would yeah.",  
-      "postOfficeBoxNumber": "Lay plant possible involve huge. Ok me always specific white growth. Generation check end visit TV quality family."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "During effect type short light. Structure pretty stock heavy list officer laugh actually."  
-  },  
-  "characteristic": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 3  
-    }  
-  },  
-  "rt": {  
-    "type": "array",  
-    "value": [  
-      "oic.r.pulsatilecharacteristic",  
-      "oic.r.pulsatilecharacteristic"  
-    ]  
-  },  
-  "n": {  
-    "type": "string",  
-    "value": "Magazine truth stop whose group through despite. Example sense peace economy."  
-  },  
-  "if": {  
-    "type": "array",  
-    "value": [  
-      "oic.if.baseline",  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "range": {  
-    "type": "array",  
-    "value": [  
-      864,  
-      864  
-    ]  
-  },  
-  "step": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 864  
-    }  
-  },  
-  "type": {  
-    "type": "string",  
-    "value": "pulsatilecharacteristic"  
-  }  
+    "id": "urn:ngsi-ld:pulsatilecharacteristic:id:GQEJ:48764759",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1979-07-06T09:36:23Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "2021-06-07T14:46:20Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Son wou"  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Tend employee source nature add rest. Report size personal partner stock four. Region as true develop sound central."  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Before year themselves your m"  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Wonder employee attorney quickly candidate change although bag."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Study modern miss dog Democrat quickly. Often late produce you true soldier. Food break onto fri"  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:pulsatilecharacteristic:items:KNBD:33041352",  
+            "urn:ngsi-ld:pulsatilecharacteristic:items:DUGT:23098910"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:pulsatilecharacteristic:items:AGFW:91615109"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -56.7421445,  
+                77.286609  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "View age internat",  
+            "addressLocality": "Other",  
+            "addressRegion": "Others kind company likely. Tonight themselves true power home price.",  
+            "addressCountry": "Real leader bad school name care several. Good explain grow water plant perform resource.",  
+            "postalCode": "Stock ball organization recognize civil development. Her then nothing increase I reduce industry. Close ask reduce.",  
+            "postOfficeBoxNumber": "Those traditional page a although for study. Spe",  
+            "streetNr": "Wear individual about add senior woman.",  
+            "district": "Best budget power them evidence without beyond take. Physical against trial son break either. Stage population boy child surface amount day."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Fire h"  
+    },  
+    "characteristic": {  
+        "type": "Number",  
+        "value": 3  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.pulsatilecharacteristic"  
+        ]  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Whole magazine truth stop whose."  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "range": {  
+        "type": "StructuredValue",  
+        "value": [  
+            864,  
+            864  
+        ]  
+    },  
+    "step": {  
+        "type": "Number",  
+        "value": 864  
+    },  
+    "type": "pulsatilecharacteristic"  
 }  
 ```  
 </details>  
@@ -623,63 +602,55 @@ pulsatilecharacteristic:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:pulsatilecharacteristic:id:YHCK:29783958",  
-    "dateCreated": "1976-02-28T05:22:23Z",  
-    "dateModified": "2017-07-16T13:00:46Z",  
-    "source": "Yet agreement bill answer hope social turn. Letter about loss simple.",  
-    "name": "Financial wall black. Fund lay writer allow need.",  
-    "alternateName": "Chance another opportunity board science. Sometimes east firm traditional heavy talk. Where democratic agree majority.",  
-    "description": "Why we behavior support. Republican fine character. Management range me color reduce only accept.",  
-    "dataProvider": "Why large entire simply recognize policy center. Responsibility start one film family condition away. Individual condition suggest reveal. Kind gas weight life.",  
+    "id": "urn:ngsi-ld:pulsatilecharacteristic:id:GQEJ:48764759",  
+    "dateCreated": "1979-07-06T09:36:23Z",  
+    "dateModified": "2021-06-07T14:46:20Z",  
+    "source": "Son wou",  
+    "name": "Tend employee source nature add rest. Report size personal partner stock four. Region as true develop sound central.",  
+    "alternateName": "Before year themselves your m",  
+    "description": "Wonder employee attorney quickly candidate change although bag.",  
+    "dataProvider": "Study modern miss dog Democrat quickly. Often late produce you true soldier. Food break onto fri",  
     "owner": [  
-        "urn:ngsi-ld:pulsatilecharacteristic:items:BFZF:28818876",  
-        "urn:ngsi-ld:pulsatilecharacteristic:items:AMNC:70571781"  
+        "urn:ngsi-ld:pulsatilecharacteristic:items:KNBD:33041352",  
+        "urn:ngsi-ld:pulsatilecharacteristic:items:DUGT:23098910"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:pulsatilecharacteristic:items:AZOK:81117701",  
-        "urn:ngsi-ld:pulsatilecharacteristic:items:CDIN:32720162"  
+        "urn:ngsi-ld:pulsatilecharacteristic:items:AGFW:91615109"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            15.6929545,  
-            -154.323339  
+            -56.7421445,  
+            77.286609  
         ]  
     },  
     "address": {  
-        "streetAddress": "Modern store western training.",  
-        "addressLocality": "Program manager prove heart raise key once. Least lay compare. In prevent baby.",  
-        "addressRegion": "Subject our baby line. Vote its your society record. Find remain space capital structure. List offer although computer reflect.",  
-        "addressCountry": "Early right size whole teacher trip. Over behavior ok positive.",  
-        "postalCode": "Single industry skill like blue shake box. Adult sound would yeah.",  
-        "postOfficeBoxNumber": "Lay plant possible involve huge. Ok me always specific white growth. Generation check end visit TV quality family."  
+        "streetAddress": "View age internat",  
+        "addressLocality": "Other",  
+        "addressRegion": "Others kind company likely. Tonight themselves true power home price.",  
+        "addressCountry": "Real leader bad school name care several. Good explain grow water plant perform resource.",  
+        "postalCode": "Stock ball organization recognize civil development. Her then nothing increase I reduce industry. Close ask reduce.",  
+        "postOfficeBoxNumber": "Those traditional page a although for study. Spe",  
+        "streetNr": "Wear individual about add senior woman.",  
+        "district": "Best budget power them evidence without beyond take. Physical against trial son break either. Stage population boy child surface amount day."  
     },  
-    "areaServed": "During effect type short light. Structure pretty stock heavy list officer laugh actually.",  
-    "characteristic": {  
-        "type": "Property",  
-        "value": 3  
-    },  
+    "areaServed": "Fire h",  
+    "characteristic": 3,  
     "rt": [  
-        "oic.r.pulsatilecharacteristic",  
         "oic.r.pulsatilecharacteristic"  
     ],  
-    "n": "Magazine truth stop whose group through despite. Example sense peace economy.",  
+    "n": "Whole magazine truth stop whose.",  
     "if": [  
-        "oic.if.baseline",  
         "oic.if.baseline"  
     ],  
     "range": [  
         864,  
         864  
     ],  
-    "step": {  
-        "type": "Property",  
-        "value": 864  
-    },  
+    "step": 864,  
     "type": "pulsatilecharacteristic",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -689,78 +660,80 @@ pulsatilecharacteristic:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:pulsatilecharacteristic:id:PEQB:72314296",  
+    "id": "urn:ngsi-ld:pulsatilecharacteristic:id:GQEJ:48764759",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1984-03-15T12:56:52Z"  
+            "@value": "1979-07-06T09:36:23Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2008-12-25T07:46:38Z"  
+            "@value": "2021-06-07T14:46:20Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Security major fill. Marriage mind pass view few."  
+        "value": "Son wou"  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Science three kitchen back commercial cup."  
+        "value": "Tend employee source nature add rest. Report size personal partner stock four. Region as true develop sound central."  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Practice too itself attorney. Again idea by business. Only still require. Ball from writer book very."  
+        "value": "Before year themselves your m"  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Often him movement top say woman room. Majority north rest. View statement kitchen stock share."  
+        "value": "Wonder employee attorney quickly candidate change although bag."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Nice city marriage fish fast significant reality treatment."  
+        "value": "Study modern miss dog Democrat quickly. Often late produce you true soldier. Food break onto fri"  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:pulsatilecharacteristic:items:NCQB:61984770",  
-            "urn:ngsi-ld:pulsatilecharacteristic:items:DTSC:44774924"  
+            "urn:ngsi-ld:pulsatilecharacteristic:items:KNBD:33041352",  
+            "urn:ngsi-ld:pulsatilecharacteristic:items:DUGT:23098910"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:pulsatilecharacteristic:items:IOXR:74178561"  
+            "urn:ngsi-ld:pulsatilecharacteristic:items:AGFW:91615109"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                -9.058526,  
-                -178.41251  
+                -56.7421445,  
+                77.286609  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Start account director increase firm defense. Teacher television recently home. Around administration drug artist team little our purpose. Interview out wrong daughter why drop image.",  
-            "addressLocality": "Top young young call inside.",  
-            "addressRegion": "I gas animal into. Father end mind. Three religious travel heart.",  
-            "addressCountry": "Seat artist cut black. Low go threat final.",  
-            "postalCode": "Bank history top. Appear a him land truth leg center. Hope TV at pass nation author.",  
-            "postOfficeBoxNumber": "Spend use news main strong each."  
+            "streetAddress": "View age internat",  
+            "addressLocality": "Other",  
+            "addressRegion": "Others kind company likely. Tonight themselves true power home price.",  
+            "addressCountry": "Real leader bad school name care several. Good explain grow water plant perform resource.",  
+            "postalCode": "Stock ball organization recognize civil development. Her then nothing increase I reduce industry. Close ask reduce.",  
+            "postOfficeBoxNumber": "Those traditional page a although for study. Spe",  
+            "streetNr": "Wear individual about add senior woman.",  
+            "district": "Best budget power them evidence without beyond take. Physical against trial son break either. Stage population boy child surface amount day."  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Box kitchen world kitchen public technology save."  
+        "value": "Fire h"  
     },  
     "characteristic": {  
         "type": "Property",  
@@ -774,7 +747,7 @@ pulsatilecharacteristic:
     },  
     "n": {  
         "type": "Property",  
-        "value": "Under recently discover ready its. So color capital current. Kitchen require half."  
+        "value": "Whole magazine truth stop whose."  
     },  
     "if": {  
         "type": "Property",  
@@ -785,18 +758,17 @@ pulsatilecharacteristic:
     "range": {  
         "type": "Property",  
         "value": [  
-            304,  
-            754  
+            864,  
+            864  
         ]  
     },  
     "step": {  
         "type": "Property",  
-        "value": 737  
+        "value": 864  
     },  
     "type": "pulsatilecharacteristic",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
