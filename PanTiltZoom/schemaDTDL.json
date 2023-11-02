@@ -1,0 +1,259 @@
+{
+    "@id": "dtmi:com:ngsi-ld:PanTiltZoom;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "Pan Tilt Zoom Movement adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/PanTiltZoom/schema.json",
+    "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource specifies the pan tilt and zoom capabilities of a device. The Resource Type is dynamic and reflects whether the values apply to   physical movement of the device or digital/virtual enhancements to the image. For physical movement the Resource Type is 'oic.r.movement.ptz'. For digital/virtual image enhancements the Resource Type is 'oic.r.image.ptz'. The Properties 'pan' and 'tilt' are specified in degrees. The Property '",
+    "displayName": "PanTiltZoom",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity"
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform"
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform"
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "location",
+            "writable": true,
+            "displayName": "location"
+        },
+        {
+            "name": "n",
+            "writable": true,
+            "displayName": "n",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Friendly name of the Resource"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item"
+        },
+        {
+            "name": "pan",
+            "writable": true,
+            "displayName": "pan",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The horizontal pan in degrees."
+        },
+        {
+            "name": "precision",
+            "writable": true,
+            "displayName": "precision",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object"
+        },
+        {
+            "name": "tilt",
+            "writable": true,
+            "displayName": "tilt",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The vertical tilt in degrees."
+        },
+        {
+            "name": "zoomFactor",
+            "writable": true,
+            "displayName": "zoomFactor",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The zoom factor value."
+        },
+        {
+            "@type": "Telemetry",
+            "name": "if",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "The OCF Interface set supported by this Resource.",
+            "displayName": "if"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "pan_range",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "number"
+            },
+            "comment": "The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.",
+            "displayName": "pan_range"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "rt",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "The Resource Type.",
+            "displayName": "rt"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "tilt_range",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "number"
+            },
+            "comment": "The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.",
+            "displayName": "tilt_range"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "district",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetNr",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "Telemetry",
+            "name": "zoomFactorRange",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "linear",
+                        "displayName": "linear",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "1x",
+                        "displayName": "1x",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "2x",
+                        "displayName": "2x",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "4x",
+                        "displayName": "4x",
+                        "enumValue": 4
+                    },
+                    {
+                        "name": "8x",
+                        "displayName": "8x",
+                        "enumValue": 5
+                    },
+                    {
+                        "name": "16x",
+                        "displayName": "16x",
+                        "enumValue": 6
+                    },
+                    {
+                        "name": "32x",
+                        "displayName": "32x",
+                        "enumValue": 7
+                    }
+                ]
+            }
+        }
+    ]
+}
