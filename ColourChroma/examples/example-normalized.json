@@ -1,75 +1,112 @@
 {
-  "id": {
-    "type": "string",
-    "value": "urn:ngsi-ld:ColourChroma:id:KXUY:75560351"
-  },
-  "dateCreated": {
-    "format": "date-time",
-    "type": "string",
-    "value": "2012-06-16T11:21:50Z"
-  },
-  "dateModified": {
-    "format": "date-time",
-    "type": "string",
-    "value": "1995-10-29T01:15:24Z"
-  },
-  "source": {
-    "type": "string",
-    "value": "Evening building state. Receive edge management pass recognize information nothing. Dog run thousand newspaper want hear each down. Letter north ground protect."
-  },
-  "name": {
-    "type": "string",
-    "value": "Everything live maintain but wonder effect finish. Five per turn admit amount. Involve style available."
-  },
-  "alternateName": {
-    "type": "string",
-    "value": "Rather fire rate try behind medical leader. I imagine five movement. Up occur weight south."
-  },
-  "description": {
-    "type": "string",
-    "value": "Theory peace skill red pretty subject story. Have think hundred foot. Turn information there Republican participant ready population."
-  },
-  "dataProvider": {
-    "type": "string",
-    "value": "These writer dog travel will base public. Thousand responsibility risk organization operation plant truth. Finish defense together gun. Voice soon long institution."
-  },
-  "owner": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:ColourChroma:items:PBMH:06259714",
-      "urn:ngsi-ld:ColourChroma:items:EGFN:24379609"
-    ]
-  },
-  "seeAlso": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:ColourChroma:items:NZIB:01052551",
-      "urn:ngsi-ld:ColourChroma:items:GVUJ:91800255"
-    ]
-  },
-  "location": {
-    "type": "object",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        6.6581095,
-        163.113571
-      ]
-    }
-  },
-  "address": {
-    "type": "object",
-    "value": {
-      "streetAddress": "Production coach five serve safe. Rest attention staff lay key expect. Decide suddenly represent watch.",
-      "addressLocality": "Yes body last consider despite. Put try get all center discussion or.",
-      "addressRegion": "Half none call because. Nature young nature west. Summer price ask be force this.",
-      "addressCountry": "Character very sometimes pay skin impact others. Traditional maybe half region change physical. City high blood where network manage series management.",
-      "postalCode": "Change and prove green. Decision character away reality vote another ready them.",
-      "postOfficeBoxNumber": "Movie modern maintain million type lot. Live speak middle structure not group."
-    }
-  },
-  "areaServed": {
-    "type": "string",
-    "value": "Quickly ten off behavior story laugh change."
-  }
+    "id": "urn:ngsi-ld:ColourChroma:id:VBKK:04819905",
+    "dateCreated": {
+        "type": "DateTime",
+        "value": "1993-07-29T18:02:30Z"
+    },
+    "dateModified": {
+        "type": "DateTime",
+        "value": "1997-02-20T15:50:29Z"
+    },
+    "source": {
+        "type": "Text",
+        "value": "Similar let phone prevent live local. Lay thus teacher send ea"
+    },
+    "name": {
+        "type": "Text",
+        "value": "As investment offer fact become senior. Avoid want information them west present."
+    },
+    "alternateName": {
+        "type": "Text",
+        "value": "Great pay beat. D"
+    },
+    "description": {
+        "type": "Text",
+        "value": "Read pass respond hour which hea"
+    },
+    "dataProvider": {
+        "type": "Text",
+        "value": "Suffer prove push "
+    },
+    "owner": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:ColourChroma:items:PUPR:35081327",
+            "urn:ngsi-ld:ColourChroma:items:DDOU:92095052"
+        ]
+    },
+    "seeAlso": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:ColourChroma:items:ZIZO:86166167"
+        ]
+    },
+    "location": {
+        "type": "geo:json",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -9.2514065,
+                77.705794
+            ]
+        }
+    },
+    "address": {
+        "type": "StructuredValue",
+        "value": {
+            "streetAddress": "Contain color start respond pressure seven entire. Theory step difficult.",
+            "addressLocality": "Receive skin join opportunity government activity relate. Job region shake executive. Any father help decide bad go.",
+            "addressRegion": "Pressure board collection",
+            "addressCountry": "Say floor radio similar former high. Director ch",
+            "postalCode": "Send pressure yet executive computer.",
+            "postOfficeBoxNumber": "Better little why. Discover report local chair a. Letter American later minute scientist. Great change every artist return.",
+            "streetNr": "Citizen ",
+            "district": "Follow price at matter contain fine. North environmental citizen hundred start. Many live upon name Mrs."
+        }
+    },
+    "areaServed": {
+        "type": "Text",
+        "value": "Recognize never"
+    },
+    "rt": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.r.colour.chroma"
+        ]
+    },
+    "ct": {
+        "type": "Number",
+        "value": 864
+    },
+    "hue": {
+        "type": "Number",
+        "value": 80.9
+    },
+    "saturation": {
+        "type": "Number",
+        "value": 25247
+    },
+    "maximumsaturation": {
+        "type": "Number",
+        "value": 25247
+    },
+    "csc": {
+        "type": "StructuredValue",
+        "value": [
+            0.4,
+            0.6
+        ]
+    },
+    "n": {
+        "type": "Text",
+        "value": "Sure although middle eye official."
+    },
+    "if": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.if.a",
+            "oic.if.baseline"
+        ]
+    },
+    "type": "ColourChroma"
 }
