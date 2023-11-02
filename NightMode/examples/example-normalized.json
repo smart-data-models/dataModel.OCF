@@ -1,75 +1,93 @@
 {
-  "id": {
-    "type": "string",
-    "value": "urn:ngsi-ld:NightMode:id:AWMD:73023927"
-  },
-  "dateCreated": {
-    "format": "date-time",
-    "type": "string",
-    "value": "1970-09-04T13:16:55Z"
-  },
-  "dateModified": {
-    "format": "date-time",
-    "type": "string",
-    "value": "1980-02-03T17:58:53Z"
-  },
-  "source": {
-    "type": "string",
-    "value": "Change debate hour stock."
-  },
-  "name": {
-    "type": "string",
-    "value": "Store day firm owner turn trouble compare. Sure list require lead form."
-  },
-  "alternateName": {
-    "type": "string",
-    "value": "Magazine program manager consider. Pull difficult red process figure live."
-  },
-  "description": {
-    "type": "string",
-    "value": "Interview behind provide happy black industry right service. Dream exactly safe wait white edge address."
-  },
-  "dataProvider": {
-    "type": "string",
-    "value": "Design record lead lead artist deal peace. Black throw democratic movement detail begin size amount."
-  },
-  "owner": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:NightMode:items:JULK:15845973",
-      "urn:ngsi-ld:NightMode:items:QOJR:35576615"
-    ]
-  },
-  "seeAlso": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:NightMode:items:YZVC:86779056",
-      "urn:ngsi-ld:NightMode:items:UAYK:95782700"
-    ]
-  },
-  "location": {
-    "type": "object",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        9.086368,
-        -115.572061
-      ]
-    }
-  },
-  "address": {
-    "type": "object",
-    "value": {
-      "streetAddress": "Few career level space raise population. Send I down into.",
-      "addressLocality": "Travel officer watch but throw war. Talk ball member trip probably. Say cup player check.",
-      "addressRegion": "Argue role into type politics evidence between. Various brother agreement property apply talk our lot.",
-      "addressCountry": "Agree heavy across peace. Nearly follow according with might. Camera near site source. Gas service establish south sense.",
-      "postalCode": "Maybe form seem administration TV. Perhaps whom dinner magazine. Successful certainly old store specific. South experience month five out save win.",
-      "postOfficeBoxNumber": "Letter laugh partner teacher game. Cup election popular see."
-    }
-  },
-  "areaServed": {
-    "type": "string",
-    "value": "Parent debate heart no. Detail address guess we star environmental card. Job agreement seek here too over too."
-  }
+    "id": "urn:ngsi-ld:NightMode:id:VBIY:91736852",
+    "dateCreated": {
+        "type": "DateTime",
+        "value": "2016-09-11T09:50:41Z"
+    },
+    "dateModified": {
+        "type": "DateTime",
+        "value": "2007-04-26T15:52:45Z"
+    },
+    "source": {
+        "type": "Text",
+        "value": "Music"
+    },
+    "name": {
+        "type": "Text",
+        "value": "Say charge sing. Our or red new. Time relationship little whether type century."
+    },
+    "alternateName": {
+        "type": "Text",
+        "value": "Response determine week. General student when person lot marriage concern."
+    },
+    "description": {
+        "type": "Text",
+        "value": "Entire sell loss page charge bank hear. Consider account draw tonight alone decision together. Specific power fine nature about loo"
+    },
+    "dataProvider": {
+        "type": "Text",
+        "value": "Our resource stop particular interview brother hear. They political statement reflect."
+    },
+    "owner": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:NightMode:items:IJQK:94756514",
+            "urn:ngsi-ld:NightMode:items:QCHQ:69278104"
+        ]
+    },
+    "seeAlso": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:NightMode:items:JUTZ:74445495"
+        ]
+    },
+    "location": {
+        "type": "geo:json",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                53.862734,
+                -35.10157
+            ]
+        }
+    },
+    "address": {
+        "type": "StructuredValue",
+        "value": {
+            "streetAddress": "Theory religious friend yard any leave. Five still civil southern bag picture. Mea",
+            "addressLocality": "Indicate its see scene available of feeling. Reveal read several kind. All land ball movie chair know.",
+            "addressRegion": "Energy eye father itself.",
+            "addressCountry": "Above treatment wall. White suggest all major before green. Wonder once add nor.",
+            "postalCode": "Environmental sometimes black bar board s",
+            "postOfficeBoxNumber": "May future yeah upon identify. Time again baby police create idea teach.",
+            "streetNr": "Few best avoid recently role. Imagine per from.",
+            "district": "Actually build head throw century be. Course yourself gas simple enjoy follow interesting. Analysis relationship painting name trade audience also not."
+        }
+    },
+    "areaServed": {
+        "type": "Text",
+        "value": "Sort modern computer evening million. Hair outside pass none now human set we. Lose store firm test."
+    },
+    "rt": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.r.nightmode"
+        ]
+    },
+    "nightMode": {
+        "type": "Boolean",
+        "value": true
+    },
+    "n": {
+        "type": "Text",
+        "value": "Then phone both or scientist let. Seek up perform"
+    },
+    "if": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.if.a",
+            "oic.if.baseline"
+        ]
+    },
+    "type": "NightMode"
 }
