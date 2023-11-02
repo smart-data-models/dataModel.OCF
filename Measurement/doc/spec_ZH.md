@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: 用于邮政信箱地址的邮政信箱号码。例如：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: 邮政编码。例如：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: 街道地址  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: 标识公共街道上特定房产的编号    
 - `alternateName[string]`: 该项目的替代名称  - `areaServed[string]`: 提供服务或提供物品的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 标识统一数据实体提供者的字符序列  - `dateCreated[date-time]`: 实体创建时间戳。通常由存储平台分配  - `dateModified[date-time]`: 实体最后一次修改的时间戳。通常由存储平台分配  - `description[string]`: 项目描述  - `id[*]`: 实体的唯一标识符  - `if[array]`: 该资源支持的 OCF 接口集  - `location[*]`: 项目的 Geojson 引用。它可以是点、线条字符串、多边形、多点、多线条字符串或多多边形  - `measurement[number]`: 该传感器的测量值，单位取决于传感器的具体类型  - `n[string]`: 资源的友好名称  - `name[string]`: 该项目的名称  - `owner[array]`: 包含一个 JSON 编码字符序列的列表，其中引用了所有者的唯一 Ids  - `precision[number]`: 当 "精确度 "中的值被暴露时，会对资源中的属性提供一个 +/- 容差。因此，如果一个属性被更新为一个值，然后该属性又被重新读取，那么重新读取的值如果在设定值 +/- 精度的范围内就是有效的。  - `range[array]`: 资源中属性的有效范围（数字）。数组中的第一个值是最小值，数组中的第二个值是最大值  - `rt[array]`: 资源类型  - `seeAlso[*]`: 指向有关该项目的其他资源的 uri 列表  - `source[string]`: 以 URL 形式给出实体数据原始来源的字符串。建议使用源提供者的完全合格域名或源对象的 URL  - `step[number]`: 跨定义范围的步长值，当范围为数字时为整数。  这是整个范围内有效值的增量；因此，如果范围为 0.0...10.0，步长为 2.5，则有效值为 0.0,2.5,5.0,7.5,10.0  - `type[string]`: NGSI 实体类型。必须是测量  - `unit[string]`: 以森摩尔为单位的 SI 计量单位  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 所需属性  
@@ -450,65 +451,56 @@ Measurement:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Measurement:id:SIOX:11739593",  
-  "dateCreated": "2012-07-28T08:54:49Z",  
-  "dateModified": "2006-03-02T07:04:57Z",  
-  "source": "First response big PM. Bad not program what worry.",  
-  "name": "Outside actually Democrat foot sign situation. Professor society wife especially. Cost law close maintain interesting.",  
-  "alternateName": "Kitchen take bit hold away dream region team.",  
-  "description": "Center adult even feeling. Chance send light tell skin likely.",  
-  "dataProvider": "Body maybe design collection. Song try dinner huge help.",  
-  "owner": [  
-    "urn:ngsi-ld:Measurement:items:QZGX:60313449",  
-    "urn:ngsi-ld:Measurement:items:BXXK:45037618"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Measurement:items:GEJJ:63681855",  
-    "urn:ngsi-ld:Measurement:items:AJTT:05782902"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -12.225041,  
-      58.259399  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Break edge particularly each possible degree four. If pay contain responsibility kid nor manage get. Life argue five.",  
-    "addressLocality": "Final already free customer research close past himself. Maintain gun next mission camera.",  
-    "addressRegion": "Test certainly that follow available evidence explain. He meeting he management rich industry price. Three decade prevent something.",  
-    "addressCountry": "Focus produce whatever keep official use hear happen.",  
-    "postalCode": "Evidence miss middle pull increase determine. Sing range eye be among benefit peace tax. Ready rule send lay.",  
-    "postOfficeBoxNumber": "Lawyer road century reveal method. Partner anyone far."  
-  },  
-  "areaServed": "Ten force hand present us story. That beat record economic table mouth image understand. Run see article still work.",  
-  "rt": [  
-    "oic.r.sensor.measurement",  
-    "oic.r.sensor.measurement"  
-  ],  
-  "unit": "Scene consider so me push professional employee thank.",  
-  "measurement": {  
-    "type": "Property",  
-    "value": 17.5  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 619.8  
-  },  
-  "n": "Size voice write best.",  
-  "range": [  
-    395.3,  
-    73.0  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 944.6  
-  },  
-  "if": [  
-    "oic.if.s",  
-    "oic.if.baseline"  
-  ],  
-  "type": "Measurement"  
+    "id": "urn:ngsi-ld:Measurement:id:AQLI:51178583",  
+    "dateCreated": "1998-03-30T20:52:03Z",  
+    "dateModified": "1976-08-25T05:03:29Z",  
+    "source": "Cover government view event culture establish study task. Enjoy time bad according grow wear stuff century. New rise then church.",  
+    "name": "Answer tax garden air ",  
+    "alternateName": "Think people produc",  
+    "description": "Evidence participant west important us day. Soldier agreement share population.",  
+    "dataProvider": "Water task without he establish many camera. Up fre",  
+    "owner": [  
+        "urn:ngsi-ld:Measurement:items:WQGU:79970367",  
+        "urn:ngsi-ld:Measurement:items:XWQY:99988646"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Measurement:items:MCAO:14774075"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            67.9714165,  
+            -159.754124  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Deal still risk policy.",  
+        "addressLocality": "Skin di",  
+        "addressRegion": "Three manage what prove instead i",  
+        "addressCountry": "Again Democrat college couple its share adult. Me including bank direction include. Series trade think senior your trip true.",  
+        "postalCode": "Low amount yet.",  
+        "postOfficeBoxNumber": "It ground another card know bit. Mention modern piece number spend. Tonight",  
+        "streetNr": "Teach pick among box because style. Fight everybody your throughout u",  
+        "district": "Help growth truth stock reality book that. Manage herself capital rest wonder science yourself. Toward determine movie chance stop bar radio try."  
+    },  
+    "areaServed": "Become financial agent only society challenge by box.",  
+    "rt": [  
+        "oic.r.sensor.measurement"  
+    ],  
+    "unit": "Each well west show it deep line exactly. Result game foot former. Language sometimes thank in physical agency.",  
+    "measurement": 487.2,  
+    "precision": 967.1,  
+    "n": "Almost need benefit spring natural until effect. Lar",  
+    "range": [  
+        552.1,  
+        288.9  
+    ],  
+    "step": 32.8,  
+    "if": [  
+        "oic.if.s",  
+        "oic.if.baseline"  
+    ],  
+    "type": "Measurement"  
 }  
 ```  
 </details>  
@@ -517,133 +509,116 @@ Measurement:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:Measurement:id:SIOX:11739593"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2012-07-28T08:54:49Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2006-03-02T07:04:57Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "First response big PM. Bad not program what worry."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Outside actually Democrat foot sign situation. Professor society wife especially. Cost law close maintain interesting."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Kitchen take bit hold away dream region team."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Center adult even feeling. Chance send light tell skin likely."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Body maybe design collection. Song try dinner huge help."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Measurement:items:QZGX:60313449",  
-      "urn:ngsi-ld:Measurement:items:BXXK:45037618"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Measurement:items:GEJJ:63681855",  
-      "urn:ngsi-ld:Measurement:items:AJTT:05782902"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -12.225041,  
-        58.259399  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Break edge particularly each possible degree four. If pay contain responsibility kid nor manage get. Life argue five.",  
-      "addressLocality": "Final already free customer research close past himself. Maintain gun next mission camera.",  
-      "addressRegion": "Test certainly that follow available evidence explain. He meeting he management rich industry price. Three decade prevent something.",  
-      "addressCountry": "Focus produce whatever keep official use hear happen.",  
-      "postalCode": "Evidence miss middle pull increase determine. Sing range eye be among benefit peace tax. Ready rule send lay.",  
-      "postOfficeBoxNumber": "Lawyer road century reveal method. Partner anyone far."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Ten force hand present us story. That beat record economic table mouth image understand. Run see article still work."  
-  },  
-  "rt": {  
-    "type": "array",  
-    "value": [  
-      "oic.r.sensor.measurement",  
-      "oic.r.sensor.measurement"  
-    ]  
-  },  
-  "unit": {  
-    "type": "string",  
-    "value": "Scene consider so me push professional employee thank."  
-  },  
-  "measurement": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 17.5  
-    }  
-  },  
-  "precision": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 619.8  
-    }  
-  },  
-  "n": {  
-    "type": "string",  
-    "value": "Size voice write best."  
-  },  
-  "range": {  
-    "type": "array",  
-    "value": [  
-      395.3,  
-      73.0  
-    ]  
-  },  
-  "step": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 944.6  
-    }  
-  },  
-  "if": {  
-    "type": "array",  
-    "value": [  
-      "oic.if.s",  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "type": {  
-    "type": "string",  
-    "value": "Measurement"  
-  }  
+    "id": "urn:ngsi-ld:Measurement:id:AQLI:51178583",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1998-03-30T20:52:03Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "1976-08-25T05:03:29Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Cover government view event culture establish study task. Enjoy time bad according grow wear stuff century. New rise then church."  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Answer tax garden air "  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Think people produc"  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Evidence participant west important us day. Soldier agreement share population."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Water task without he establish many camera. Up fre"  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Measurement:items:WQGU:79970367",  
+            "urn:ngsi-ld:Measurement:items:XWQY:99988646"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Measurement:items:MCAO:14774075"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                67.9714165,  
+                -159.754124  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Deal still risk policy.",  
+            "addressLocality": "Skin di",  
+            "addressRegion": "Three manage what prove instead i",  
+            "addressCountry": "Again Democrat college couple its share adult. Me including bank direction include. Series trade think senior your trip true.",  
+            "postalCode": "Low amount yet.",  
+            "postOfficeBoxNumber": "It ground another card know bit. Mention modern piece number spend. Tonight",  
+            "streetNr": "Teach pick among box because style. Fight everybody your throughout u",  
+            "district": "Help growth truth stock reality book that. Manage herself capital rest wonder science yourself. Toward determine movie chance stop bar radio try."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Become financial agent only society challenge by box."  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.sensor.measurement"  
+        ]  
+    },  
+    "unit": {  
+        "type": "Text",  
+        "value": "Each well west show it deep line exactly. Result game foot former. Language sometimes thank in physical agency."  
+    },  
+    "measurement": {  
+        "type": "Number",  
+        "value": 487.2  
+    },  
+    "precision": {  
+        "type": "Number",  
+        "value": 967.1  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Almost need benefit spring natural until effect. Lar"  
+    },  
+    "range": {  
+        "type": "StructuredValue",  
+        "value": [  
+            552.1,  
+            288.9  
+        ]  
+    },  
+    "step": {  
+        "type": "Number",  
+        "value": 32.8  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.s",  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "Measurement"  
 }  
 ```  
 </details>  
@@ -652,68 +627,58 @@ Measurement:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Measurement:id:SIOX:11739593",  
-    "dateCreated": "2012-07-28T08:54:49Z",  
-    "dateModified": "2006-03-02T07:04:57Z",  
-    "source": "First response big PM. Bad not program what worry.",  
-    "name": "Outside actually Democrat foot sign situation. Professor society wife especially. Cost law close maintain interesting.",  
-    "alternateName": "Kitchen take bit hold away dream region team.",  
-    "description": "Center adult even feeling. Chance send light tell skin likely.",  
-    "dataProvider": "Body maybe design collection. Song try dinner huge help.",  
+    "id": "urn:ngsi-ld:Measurement:id:AQLI:51178583",  
+    "dateCreated": "1998-03-30T20:52:03Z",  
+    "dateModified": "1976-08-25T05:03:29Z",  
+    "source": "Cover government view event culture establish study task. Enjoy time bad according grow wear stuff century. New rise then church.",  
+    "name": "Answer tax garden air ",  
+    "alternateName": "Think people produc",  
+    "description": "Evidence participant west important us day. Soldier agreement share population.",  
+    "dataProvider": "Water task without he establish many camera. Up fre",  
     "owner": [  
-        "urn:ngsi-ld:Measurement:items:QZGX:60313449",  
-        "urn:ngsi-ld:Measurement:items:BXXK:45037618"  
+        "urn:ngsi-ld:Measurement:items:WQGU:79970367",  
+        "urn:ngsi-ld:Measurement:items:XWQY:99988646"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:Measurement:items:GEJJ:63681855",  
-        "urn:ngsi-ld:Measurement:items:AJTT:05782902"  
+        "urn:ngsi-ld:Measurement:items:MCAO:14774075"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            -12.225041,  
-            58.259399  
+            67.9714165,  
+            -159.754124  
         ]  
     },  
     "address": {  
-        "streetAddress": "Break edge particularly each possible degree four. If pay contain responsibility kid nor manage get. Life argue five.",  
-        "addressLocality": "Final already free customer research close past himself. Maintain gun next mission camera.",  
-        "addressRegion": "Test certainly that follow available evidence explain. He meeting he management rich industry price. Three decade prevent something.",  
-        "addressCountry": "Focus produce whatever keep official use hear happen.",  
-        "postalCode": "Evidence miss middle pull increase determine. Sing range eye be among benefit peace tax. Ready rule send lay.",  
-        "postOfficeBoxNumber": "Lawyer road century reveal method. Partner anyone far."  
+        "streetAddress": "Deal still risk policy.",  
+        "addressLocality": "Skin di",  
+        "addressRegion": "Three manage what prove instead i",  
+        "addressCountry": "Again Democrat college couple its share adult. Me including bank direction include. Series trade think senior your trip true.",  
+        "postalCode": "Low amount yet.",  
+        "postOfficeBoxNumber": "It ground another card know bit. Mention modern piece number spend. Tonight",  
+        "streetNr": "Teach pick among box because style. Fight everybody your throughout u",  
+        "district": "Help growth truth stock reality book that. Manage herself capital rest wonder science yourself. Toward determine movie chance stop bar radio try."  
     },  
-    "areaServed": "Ten force hand present us story. That beat record economic table mouth image understand. Run see article still work.",  
+    "areaServed": "Become financial agent only society challenge by box.",  
     "rt": [  
-        "oic.r.sensor.measurement",  
         "oic.r.sensor.measurement"  
     ],  
-    "unit": "Scene consider so me push professional employee thank.",  
-    "measurement": {  
-        "type": "Property",  
-        "value": 17.5  
-    },  
-    "precision": {  
-        "type": "Property",  
-        "value": 619.8  
-    },  
-    "n": "Size voice write best.",  
+    "unit": "Each well west show it deep line exactly. Result game foot former. Language sometimes thank in physical agency.",  
+    "measurement": 487.2,  
+    "precision": 967.1,  
+    "n": "Almost need benefit spring natural until effect. Lar",  
     "range": [  
-        395.3,  
-        73.0  
+        552.1,  
+        288.9  
     ],  
-    "step": {  
-        "type": "Property",  
-        "value": 944.6  
-    },  
+    "step": 32.8,  
     "if": [  
         "oic.if.s",  
         "oic.if.baseline"  
     ],  
     "type": "Measurement",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -723,78 +688,80 @@ Measurement:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Measurement:id:YAWA:53179077",  
+    "id": "urn:ngsi-ld:Measurement:id:AQLI:51178583",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1989-03-04T00:13:33Z"  
+            "@value": "1998-03-30T20:52:03Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2007-12-31T15:08:19Z"  
+            "@value": "1976-08-25T05:03:29Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Mean consider even nature mouth. Road treatment staff."  
+        "value": "Cover government view event culture establish study task. Enjoy time bad according grow wear stuff century. New rise then church."  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Policy across Democrat part girl pattern reality. List drug machine college."  
+        "value": "Answer tax garden air "  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Machine cultural describe matter. Move bed drop expert upon catch guy."  
+        "value": "Think people produc"  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Democrat her reality sure memory boy support training. Interesting weight theory out under."  
+        "value": "Evidence participant west important us day. Soldier agreement share population."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Prevent expert decision ahead. Customer generation finish course marriage organization very."  
+        "value": "Water task without he establish many camera. Up fre"  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Measurement:items:MTAY:57069402",  
-            "urn:ngsi-ld:Measurement:items:OBSI:19767896"  
+            "urn:ngsi-ld:Measurement:items:WQGU:79970367",  
+            "urn:ngsi-ld:Measurement:items:XWQY:99988646"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Measurement:items:HPGE:08143492"  
+            "urn:ngsi-ld:Measurement:items:MCAO:14774075"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                51.5163355,  
-                97.358247  
+                67.9714165,  
+                -159.754124  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Standard risk management piece. Anything fund either form. Eye street word family.",  
-            "addressLocality": "Upon type degree off skill possible area. School power traditional eat. Deep successful mind single system.",  
-            "addressRegion": "Yeah happy to research. Catch surface billion race ok activity.",  
-            "addressCountry": "Including region half pick.",  
-            "postalCode": "Sing fear score make capital. Ever finish red out necessary. Because laugh trouble might.",  
-            "postOfficeBoxNumber": "Effort enjoy reach billion similar project less. Strong stand season me. That record ready could reflect place."  
+            "streetAddress": "Deal still risk policy.",  
+            "addressLocality": "Skin di",  
+            "addressRegion": "Three manage what prove instead i",  
+            "addressCountry": "Again Democrat college couple its share adult. Me including bank direction include. Series trade think senior your trip true.",  
+            "postalCode": "Low amount yet.",  
+            "postOfficeBoxNumber": "It ground another card know bit. Mention modern piece number spend. Tonight",  
+            "streetNr": "Teach pick among box because style. Fight everybody your throughout u",  
+            "district": "Help growth truth stock reality book that. Manage herself capital rest wonder science yourself. Toward determine movie chance stop bar radio try."  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Report him laugh. Yard particular politics."  
+        "value": "Become financial agent only society challenge by box."  
     },  
     "rt": {  
         "type": "Property",  
@@ -804,42 +771,41 @@ Measurement:
     },  
     "unit": {  
         "type": "Property",  
-        "value": "Week deep drive lead everybody. Necessary lawyer indeed strategy sing. Information voice remain. Bag benefit behavior he."  
+        "value": "Each well west show it deep line exactly. Result game foot former. Language sometimes thank in physical agency."  
     },  
     "measurement": {  
         "type": "Property",  
-        "value": 27.0  
+        "value": 487.2  
     },  
     "precision": {  
         "type": "Property",  
-        "value": 145.8  
+        "value": 967.1  
     },  
     "n": {  
         "type": "Property",  
-        "value": "Environmental anything follow military reach. Stock trip rest view perhaps single painting. Program company doctor chair field voice pay."  
+        "value": "Almost need benefit spring natural until effect. Lar"  
     },  
     "range": {  
         "type": "Property",  
         "value": [  
-            556.9,  
-            981.2  
+            552.1,  
+            288.9  
         ]  
     },  
     "step": {  
         "type": "Property",  
-        "value": 840.7  
+        "value": 32.8  
     },  
     "if": {  
         "type": "Property",  
         "value": [  
-            "oic.if.baseline",  
-            "oic.if.s"  
+            "oic.if.s",  
+            "oic.if.baseline"  
         ]  
     },  
     "type": "Measurement",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
