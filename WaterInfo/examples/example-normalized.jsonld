@@ -1,79 +1,122 @@
 {
-    "id": "urn:ngsi-ld:WaterInfo:id:YOCI:60285099",
+    "id": "urn:ngsi-ld:WaterInfo:id:LZQI:23960151",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1998-08-15T18:04:30Z"
+            "@value": "1994-04-08T20:36:19Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1988-08-23T07:30:17Z"
+            "@value": "1974-09-04T18:29:37Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Ask use then represent society toward behind. Report amount from determine movement. Anyone leg market long price."
+        "value": ""
     },
     "name": {
         "type": "Property",
-        "value": "Make from radio. Dream agency trouble garden up."
+        "value": "Follow around town bit subject which. Smile remember during player mean new. Above drug rise who candidate what."
     },
     "alternateName": {
         "type": "Property",
-        "value": "Heart daughter modern through democratic perform time. New picture true."
+        "value": "Voice argue agree. From "
     },
     "description": {
         "type": "Property",
-        "value": "Of board while gas surface hundred. Goal fund note responsibility media yes. American tell sometimes stop series."
+        "value": "Today mention rich let the guy "
     },
     "dataProvider": {
         "type": "Property",
-        "value": "Ever election point beat speak."
+        "value": "Find which now wear understand. Person necessary actually card real real."
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:WaterInfo:items:HBMT:72566566",
-            "urn:ngsi-ld:WaterInfo:items:TPIP:75041044"
+            "urn:ngsi-ld:WaterInfo:items:DBVP:23498137",
+            "urn:ngsi-ld:WaterInfo:items:GDJX:46883476"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:WaterInfo:items:ICKZ:40105092"
+            "urn:ngsi-ld:WaterInfo:items:NFSN:31596421"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                17.8641435,
-                -30.215867
+                -75.2620405,
+                132.745561
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "At still black. Everyone often chance. Away notice year inside room ago.",
-            "addressLocality": "Third fill play. Resource pull skin take school religious side. Effort close analysis best interest group. Pull available feeling learn wear statement.",
-            "addressRegion": "Rise doctor window me bed short. Art represent begin run letter.",
-            "addressCountry": "Law price police machine size. Thing firm would memory.",
-            "postalCode": "Suggest ahead light from among magazine.",
-            "postOfficeBoxNumber": "Everyone eight until compare four. Charge evening environment far successful kitchen history. Happy response PM seven."
+            "streetAddress": "Skin yes finish responsibility politics follow. Fine these thought lose. Safe green their last.",
+            "addressLocality": "Oil require reality. If reality almost machine walk.",
+            "addressRegion": "Expert environment person rise century. Him song case three boy song democratic. Over poor kid a.",
+            "addressCountry": "World system about. Program compare perform prepare something.",
+            "postalCode": "Contain ",
+            "postOfficeBoxNumber": "Cold have few through. Political major either about s",
+            "streetNr": "Find someone machine finish pass draw religious. Number lawyer stay his. Fund piece already everything poli",
+            "district": "Matter compare government prevent too something none. Writer just current skin want environmental wide."
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "Bar everybody surface appear within bit exactly."
+        "value": "Law threat gun d"
     },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.waterinfo"
+        ]
+    },
+    "supportedwatertypes": {
+        "type": "Property",
+        "value": [
+            "Less dream off. Spring something western social.",
+            "Scene like speech surface huge land hand."
+        ]
+    },
+    "supportedadditivetypes": {
+        "type": "Property",
+        "value": [
+            "Produce whatever team really. Support later artist seven wait ask.",
+            "Author start four common impact. Door form blue three. Art mean size."
+        ]
+    },
+    "currentwatertype": {
+        "type": "Property",
+        "value": "Chair wear production fill. Mention there box wide."
+    },
+    "currentadditivetypes": {
+        "type": "Property",
+        "value": [
+            "Class international discussion different rate though. Successful hour local born impact present official it. Feel above partner exist item outside tell role."
+        ]
+    },
+    "n": {
+        "type": "Property",
+        "value": "Field government positive guy item necessary. Beha"
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.baseline",
+            "oic.if.rw"
+        ]
+    },
+    "type": "WaterInfo",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
