@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: El número del apartado de correos para las direcciones de apartados postales. Por ejemplo, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: El código postal. Por ejemplo, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: La dirección  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Número que identifica una propiedad específica en una vía pública    
 - `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada  - `dateCreated[date-time]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento  - `dateModified[date-time]`: Marca de tiempo de la última modificación de la entidad. Suele ser asignada por la plataforma de almacenamiento  - `description[string]`: Descripción de este artículo  - `id[*]`: Identificador único de la entidad  - `if[array]`: El conjunto de interfaces OCF que admite este recurso  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  - `n[string]`: Nombre descriptivo del recurso  - `name[string]`: El nombre de este artículo  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  - `range[array]`: El rango válido para la Propiedad en el Recurso como un número. El primer valor de la matriz es el valor mínimo, el segundo valor de la matriz es el valor máximo  - `rt[array]`: El tipo de recurso  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `speed[number]`: Esta Propiedad describe la velocidad de un objeto en metros por segundo (Unidad SI). Debe tenerse en cuenta, sin embargo, que la unidad de velocidad más común en el uso diario es el kilómetro por hora o, en EE.UU. y el Reino Unido, millas por hora.  - `step[number]`: Valor del paso a través del rango definido un número entero cuando el rango es un número.  Es el incremento de los valores válidos en el intervalo; así, si el intervalo es 0,0..10,0 y el paso es 2,5, los valores válidos son 0,0,2,5,5,0,7,5,10,0.  - `type[string]`: Tipo de entidad NGSI. Tiene que ser Speed  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propiedades requeridas  
@@ -436,60 +437,53 @@ Speed:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Speed:id:TMBQ:86557501",  
-  "dateCreated": "1971-05-07T09:22:01Z",  
-  "dateModified": "2001-02-25T04:31:00Z",  
-  "source": "Standard trip consider development. Analysis walk similar clearly commercial western animal. News mouth year consumer.",  
-  "name": "Office arrive structure down. Make become number mind.",  
-  "alternateName": "Ahead recognize event guy player land. West community increase sure. Night office account toward.",  
-  "description": "Stock can best face treat first arrive here. She some recent fight wrong white. Somebody month soon future but reflect explain.",  
-  "dataProvider": "Black member here serve evidence near wind. Learn college say interesting make great affect. Democrat local because treatment.",  
-  "owner": [  
-    "urn:ngsi-ld:Speed:items:EOKC:04139618",  
-    "urn:ngsi-ld:Speed:items:LTWJ:10169397"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Speed:items:ARYG:93617525",  
-    "urn:ngsi-ld:Speed:items:IUVN:24628987"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      63.217539,  
-      -175.83232  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Red ahead culture reality Mr difficult. Politics involve note just.",  
-    "addressLocality": "Ability watch Mrs minute. Artist about quite read exactly education director keep. Director else away power perhaps.",  
-    "addressRegion": "Gun more short then action. Skin course father house. Two guess strong onto.",  
-    "addressCountry": "Necessary memory drug available newspaper. Discussion modern away coach foot plant.",  
-    "postalCode": "Consumer future measure total many order early. Leave defense center around company attorney customer.",  
-    "postOfficeBoxNumber": "Direction small strategy oil sit."  
-  },  
-  "areaServed": "Future heart guess kitchen set check official.",  
-  "speed": {  
-    "type": "Property",  
-    "value": 242.3  
-  },  
-  "rt": [  
-    "oic.r.speed",  
-    "oic.r.speed"  
-  ],  
-  "n": "Nice I happy ground foreign fall. Sell style treat. Series build be continue.",  
-  "if": [  
-    "oic.if.baseline",  
-    "oic.if.s"  
-  ],  
-  "range": [  
-    255.1,  
-    419.5  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 266.2  
-  },  
-  "type": "Speed"  
+    "id": "urn:ngsi-ld:Speed:id:IWUQ:49277359",  
+    "dateCreated": "2019-06-06T15:04:38Z",  
+    "dateModified": "1973-01-31T23:49:09Z",  
+    "source": "Including surface suggest note church others develop. Yard group bag question better represent southern.",  
+    "name": "Worry without light off consumer from old. Indeed prevent hard respond success.",  
+    "alternateName": "Culture outside view rate song key. Response before job if clearly visit claim. Good presi",  
+    "description": "Occur wind fast. Board painting case main force value. Yourself mission blue set agency relate might.",  
+    "dataProvider": "None from reflect agent c",  
+    "owner": [  
+        "urn:ngsi-ld:Speed:items:OPJL:54746889",  
+        "urn:ngsi-ld:Speed:items:NKGZ:02642474"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Speed:items:ERQF:65897920"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -33.339846,  
+            121.076645  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Add animal travel citizen various best everything. Whether life rock account. Happen tal",  
+        "addressLocality": "Image sit culture feel population. Someti",  
+        "addressRegion": "Young about through debate community. Deep eight baby huge car want beyond. Some suggest live network car put.",  
+        "addressCountry": "Rule spring recognize carry interview. Since requ",  
+        "postalCode": "Wife total whole cultural. Term determine leader reduce gas marriage. Knowledge will radio scene.",  
+        "postOfficeBoxNumber": "Beat situation reveal. Analysis few to bank a",  
+        "streetNr": "Newspaper direction about person teach. To front picture book. Travel energy south cost mouth rise kid.",  
+        "district": "Him reflec"  
+    },  
+    "areaServed": "Company case by particularly key open. Authority her himself interview lay. Garden cell question dark.",  
+    "speed": 843.6,  
+    "rt": [  
+        "oic.r.speed"  
+    ],  
+    "n": "Idea respond both leave do",  
+    "if": [  
+        "oic.if.baseline"  
+    ],  
+    "range": [  
+        159.3,  
+        265.1  
+    ],  
+    "step": 879.9,  
+    "type": "Speed"  
 }  
 ```  
 </details>  
@@ -498,122 +492,107 @@ Speed:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:Speed:id:TMBQ:86557501"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1971-05-07T09:22:01Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2001-02-25T04:31:00Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Standard trip consider development. Analysis walk similar clearly commercial western animal. News mouth year consumer."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Office arrive structure down. Make become number mind."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Ahead recognize event guy player land. West community increase sure. Night office account toward."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Stock can best face treat first arrive here. She some recent fight wrong white. Somebody month soon future but reflect explain."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Black member here serve evidence near wind. Learn college say interesting make great affect. Democrat local because treatment."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Speed:items:EOKC:04139618",  
-      "urn:ngsi-ld:Speed:items:LTWJ:10169397"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Speed:items:ARYG:93617525",  
-      "urn:ngsi-ld:Speed:items:IUVN:24628987"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        63.217539,  
-        -175.83232  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Red ahead culture reality Mr difficult. Politics involve note just.",  
-      "addressLocality": "Ability watch Mrs minute. Artist about quite read exactly education director keep. Director else away power perhaps.",  
-      "addressRegion": "Gun more short then action. Skin course father house. Two guess strong onto.",  
-      "addressCountry": "Necessary memory drug available newspaper. Discussion modern away coach foot plant.",  
-      "postalCode": "Consumer future measure total many order early. Leave defense center around company attorney customer.",  
-      "postOfficeBoxNumber": "Direction small strategy oil sit."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Future heart guess kitchen set check official."  
-  },  
-  "speed": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 242.3  
-    }  
-  },  
-  "rt": {  
-    "type": "array",  
-    "value": [  
-      "oic.r.speed",  
-      "oic.r.speed"  
-    ]  
-  },  
-  "n": {  
-    "type": "string",  
-    "value": "Nice I happy ground foreign fall. Sell style treat. Series build be continue."  
-  },  
-  "if": {  
-    "type": "array",  
-    "value": [  
-      "oic.if.baseline",  
-      "oic.if.s"  
-    ]  
-  },  
-  "range": {  
-    "type": "array",  
-    "value": [  
-      255.1,  
-      419.5  
-    ]  
-  },  
-  "step": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 266.2  
-    }  
-  },  
-  "type": {  
-    "type": "string",  
-    "value": "Speed"  
-  }  
+    "id": "urn:ngsi-ld:Speed:id:IWUQ:49277359",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "2019-06-06T15:04:38Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "1973-01-31T23:49:09Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Including surface suggest note church others develop. Yard group bag question better represent southern."  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Worry without light off consumer from old. Indeed prevent hard respond success."  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Culture outside view rate song key. Response before job if clearly visit claim. Good presi"  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Occur wind fast. Board painting case main force value. Yourself mission blue set agency relate might."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "None from reflect agent c"  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Speed:items:OPJL:54746889",  
+            "urn:ngsi-ld:Speed:items:NKGZ:02642474"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Speed:items:ERQF:65897920"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -33.339846,  
+                121.076645  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Add animal travel citizen various best everything. Whether life rock account. Happen tal",  
+            "addressLocality": "Image sit culture feel population. Someti",  
+            "addressRegion": "Young about through debate community. Deep eight baby huge car want beyond. Some suggest live network car put.",  
+            "addressCountry": "Rule spring recognize carry interview. Since requ",  
+            "postalCode": "Wife total whole cultural. Term determine leader reduce gas marriage. Knowledge will radio scene.",  
+            "postOfficeBoxNumber": "Beat situation reveal. Analysis few to bank a",  
+            "streetNr": "Newspaper direction about person teach. To front picture book. Travel energy south cost mouth rise kid.",  
+            "district": "Him reflec"  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Company case by particularly key open. Authority her himself interview lay. Garden cell question dark."  
+    },  
+    "speed": {  
+        "type": "Number",  
+        "value": 843.6  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.speed"  
+        ]  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Idea respond both leave do"  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "range": {  
+        "type": "StructuredValue",  
+        "value": [  
+            159.3,  
+            265.1  
+        ]  
+    },  
+    "step": {  
+        "type": "Number",  
+        "value": 879.9  
+    },  
+    "type": "Speed"  
 }  
 ```  
 </details>  
@@ -622,63 +601,55 @@ Speed:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Speed:id:TMBQ:86557501",  
-    "dateCreated": "1971-05-07T09:22:01Z",  
-    "dateModified": "2001-02-25T04:31:00Z",  
-    "source": "Standard trip consider development. Analysis walk similar clearly commercial western animal. News mouth year consumer.",  
-    "name": "Office arrive structure down. Make become number mind.",  
-    "alternateName": "Ahead recognize event guy player land. West community increase sure. Night office account toward.",  
-    "description": "Stock can best face treat first arrive here. She some recent fight wrong white. Somebody month soon future but reflect explain.",  
-    "dataProvider": "Black member here serve evidence near wind. Learn college say interesting make great affect. Democrat local because treatment.",  
+    "id": "urn:ngsi-ld:Speed:id:IWUQ:49277359",  
+    "dateCreated": "2019-06-06T15:04:38Z",  
+    "dateModified": "1973-01-31T23:49:09Z",  
+    "source": "Including surface suggest note church others develop. Yard group bag question better represent southern.",  
+    "name": "Worry without light off consumer from old. Indeed prevent hard respond success.",  
+    "alternateName": "Culture outside view rate song key. Response before job if clearly visit claim. Good presi",  
+    "description": "Occur wind fast. Board painting case main force value. Yourself mission blue set agency relate might.",  
+    "dataProvider": "None from reflect agent c",  
     "owner": [  
-        "urn:ngsi-ld:Speed:items:EOKC:04139618",  
-        "urn:ngsi-ld:Speed:items:LTWJ:10169397"  
+        "urn:ngsi-ld:Speed:items:OPJL:54746889",  
+        "urn:ngsi-ld:Speed:items:NKGZ:02642474"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:Speed:items:ARYG:93617525",  
-        "urn:ngsi-ld:Speed:items:IUVN:24628987"  
+        "urn:ngsi-ld:Speed:items:ERQF:65897920"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            63.217539,  
-            -175.83232  
+            -33.339846,  
+            121.076645  
         ]  
     },  
     "address": {  
-        "streetAddress": "Red ahead culture reality Mr difficult. Politics involve note just.",  
-        "addressLocality": "Ability watch Mrs minute. Artist about quite read exactly education director keep. Director else away power perhaps.",  
-        "addressRegion": "Gun more short then action. Skin course father house. Two guess strong onto.",  
-        "addressCountry": "Necessary memory drug available newspaper. Discussion modern away coach foot plant.",  
-        "postalCode": "Consumer future measure total many order early. Leave defense center around company attorney customer.",  
-        "postOfficeBoxNumber": "Direction small strategy oil sit."  
+        "streetAddress": "Add animal travel citizen various best everything. Whether life rock account. Happen tal",  
+        "addressLocality": "Image sit culture feel population. Someti",  
+        "addressRegion": "Young about through debate community. Deep eight baby huge car want beyond. Some suggest live network car put.",  
+        "addressCountry": "Rule spring recognize carry interview. Since requ",  
+        "postalCode": "Wife total whole cultural. Term determine leader reduce gas marriage. Knowledge will radio scene.",  
+        "postOfficeBoxNumber": "Beat situation reveal. Analysis few to bank a",  
+        "streetNr": "Newspaper direction about person teach. To front picture book. Travel energy south cost mouth rise kid.",  
+        "district": "Him reflec"  
     },  
-    "areaServed": "Future heart guess kitchen set check official.",  
-    "speed": {  
-        "type": "Property",  
-        "value": 242.3  
-    },  
+    "areaServed": "Company case by particularly key open. Authority her himself interview lay. Garden cell question dark.",  
+    "speed": 843.6,  
     "rt": [  
-        "oic.r.speed",  
         "oic.r.speed"  
     ],  
-    "n": "Nice I happy ground foreign fall. Sell style treat. Series build be continue.",  
+    "n": "Idea respond both leave do",  
     "if": [  
-        "oic.if.baseline",  
-        "oic.if.s"  
+        "oic.if.baseline"  
     ],  
     "range": [  
-        255.1,  
-        419.5  
+        159.3,  
+        265.1  
     ],  
-    "step": {  
-        "type": "Property",  
-        "value": 266.2  
-    },  
+    "step": 879.9,  
     "type": "Speed",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -688,82 +659,84 @@ Speed:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Speed:id:FDJH:34364969",  
+    "id": "urn:ngsi-ld:Speed:id:IWUQ:49277359",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1985-11-16T03:08:33Z"  
+            "@value": "2019-06-06T15:04:38Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1990-12-26T00:39:02Z"  
+            "@value": "1973-01-31T23:49:09Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Soon beat life own good since social. Society road remain agency specific describe."  
+        "value": "Including surface suggest note church others develop. Yard group bag question better represent southern."  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Wrong level worker describe computer food speech. Campaign hundred how source."  
+        "value": "Worry without light off consumer from old. Indeed prevent hard respond success."  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Lose us ready beautiful message store up. Top certain ground. Memory none dark inside ball some boy always."  
+        "value": "Culture outside view rate song key. Response before job if clearly visit claim. Good presi"  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Despite about national today worry use under. Person per key specific foot claim into. Whole rise wide small art rise."  
+        "value": "Occur wind fast. Board painting case main force value. Yourself mission blue set agency relate might."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Church board executive boy girl. Important cut price above age."  
+        "value": "None from reflect agent c"  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Speed:items:ZOUH:64779507",  
-            "urn:ngsi-ld:Speed:items:HAKR:79899173"  
+            "urn:ngsi-ld:Speed:items:OPJL:54746889",  
+            "urn:ngsi-ld:Speed:items:NKGZ:02642474"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Speed:items:JKMX:48696197"  
+            "urn:ngsi-ld:Speed:items:ERQF:65897920"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                -39.8227335,  
-                163.224954  
+                -33.339846,  
+                121.076645  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Represent reach bag worker within. Value wonder image week. Decade term from responsibility sell.",  
-            "addressLocality": "Represent value ball last population least season. Organization significant discussion increase standard similar old. Alone him situation. Improve light officer become.",  
-            "addressRegion": "Professor can find. Assume protect pattern high pick. Difficult former still meet player director. Detail listen eat try major challenge.",  
-            "addressCountry": "Leader industry performance discover cause. His discussion have produce international worry bank.",  
-            "postalCode": "Material where prevent animal moment. Challenge party role now leg camera development produce.",  
-            "postOfficeBoxNumber": "Certainly popular science them describe drive through. Present might series nice picture."  
+            "streetAddress": "Add animal travel citizen various best everything. Whether life rock account. Happen tal",  
+            "addressLocality": "Image sit culture feel population. Someti",  
+            "addressRegion": "Young about through debate community. Deep eight baby huge car want beyond. Some suggest live network car put.",  
+            "addressCountry": "Rule spring recognize carry interview. Since requ",  
+            "postalCode": "Wife total whole cultural. Term determine leader reduce gas marriage. Knowledge will radio scene.",  
+            "postOfficeBoxNumber": "Beat situation reveal. Analysis few to bank a",  
+            "streetNr": "Newspaper direction about person teach. To front picture book. Travel energy south cost mouth rise kid.",  
+            "district": "Him reflec"  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Ability half easy discuss series alone. Item factor note well accept. Including time audience."  
+        "value": "Company case by particularly key open. Authority her himself interview lay. Garden cell question dark."  
     },  
     "speed": {  
         "type": "Property",  
-        "value": 954.1  
+        "value": 843.6  
     },  
     "rt": {  
         "type": "Property",  
@@ -773,7 +746,7 @@ Speed:
     },  
     "n": {  
         "type": "Property",  
-        "value": "Anyone national writer author pretty. Step close his future model."  
+        "value": "Idea respond both leave do"  
     },  
     "if": {  
         "type": "Property",  
@@ -784,18 +757,17 @@ Speed:
     "range": {  
         "type": "Property",  
         "value": [  
-            196.3,  
-            305.1  
+            159.3,  
+            265.1  
         ]  
     },  
     "step": {  
         "type": "Property",  
-        "value": 803.5  
+        "value": 879.9  
     },  
     "type": "Speed",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
