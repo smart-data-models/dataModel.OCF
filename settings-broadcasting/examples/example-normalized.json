@@ -1,75 +1,107 @@
 {
-  "id": {
-    "type": "string",
-    "value": "urn:ngsi-ld:settings-broadcasting:id:SLUP:43489974"
-  },
-  "dateCreated": {
-    "format": "date-time",
-    "type": "string",
-    "value": "2006-03-23T01:49:22Z"
-  },
-  "dateModified": {
-    "format": "date-time",
-    "type": "string",
-    "value": "1996-05-23T17:55:21Z"
-  },
-  "source": {
-    "type": "string",
-    "value": "Person contain eight foot yet film. Stuff life paper."
-  },
-  "name": {
-    "type": "string",
-    "value": "Good friend pick physical too become teacher. Enjoy should near investment. Available left science up experience end."
-  },
-  "alternateName": {
-    "type": "string",
-    "value": "We opportunity management before. Easy cause line dream area join let."
-  },
-  "description": {
-    "type": "string",
-    "value": "Skill all room cost billion. Security herself beat everybody door."
-  },
-  "dataProvider": {
-    "type": "string",
-    "value": "Bed hard again traditional success key either. Onto professional staff over attention. Other treatment pay property cut upon. Any action former matter gun."
-  },
-  "owner": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:settings-broadcasting:items:LGAG:86343291",
-      "urn:ngsi-ld:settings-broadcasting:items:MPVF:05612437"
-    ]
-  },
-  "seeAlso": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:settings-broadcasting:items:CKBR:08618962",
-      "urn:ngsi-ld:settings-broadcasting:items:MUGP:50818543"
-    ]
-  },
-  "location": {
-    "type": "object",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        -80.067935,
-        -43.419269
-      ]
-    }
-  },
-  "address": {
-    "type": "object",
-    "value": {
-      "streetAddress": "Low election scientist up they night. Dark north tree.",
-      "addressLocality": "Decade more knowledge state need term. More case character owner skin ago. Hair generation environmental machine.",
-      "addressRegion": "After walk project reality challenge we quickly. Painting brother choice thousand go child.",
-      "addressCountry": "Article central standard door result heavy teacher. Friend democratic look member foot central around. Score successful item particularly country.",
-      "postalCode": "Agency opportunity listen relate product only memory. Well beyond network.",
-      "postOfficeBoxNumber": "Case interest arrive information. Without success current say account everybody."
-    }
-  },
-  "areaServed": {
-    "type": "string",
-    "value": "Worry here exist candidate. Avoid knowledge election audience yourself beat."
-  }
+    "id": "urn:ngsi-ld:settings-broadcasting:id:YWMD:14174205",
+    "dateCreated": {
+        "type": "DateTime",
+        "value": "1981-06-24T23:59:36Z"
+    },
+    "dateModified": {
+        "type": "DateTime",
+        "value": "1978-03-16T10:29:14Z"
+    },
+    "source": {
+        "type": "Text",
+        "value": "Probably turn reach not north answer. Course occur easy give concern. Research someone lawyer situation pro"
+    },
+    "name": {
+        "type": "Text",
+        "value": "Charge commercial development tough technology make often bit. Pick th"
+    },
+    "alternateName": {
+        "type": "Text",
+        "value": "Yes create vo"
+    },
+    "description": {
+        "type": "Text",
+        "value": "Structure smile nice goal. Pretty first here say sometimes."
+    },
+    "dataProvider": {
+        "type": "Text",
+        "value": "What challenge myself business something outside. Half hear any all relationship "
+    },
+    "owner": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:settings-broadcasting:items:IYDV:67275654",
+            "urn:ngsi-ld:settings-broadcasting:items:NZOU:92414940"
+        ]
+    },
+    "seeAlso": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:settings-broadcasting:items:QQFK:04713049"
+        ]
+    },
+    "location": {
+        "type": "geo:json",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                20.587973,
+                69.82222
+            ]
+        }
+    },
+    "address": {
+        "type": "StructuredValue",
+        "value": {
+            "streetAddress": "Tree set environm",
+            "addressLocality": "Miss home respond family start environmental population. Scientist mention compare north when personal. Defense successful",
+            "addressRegion": "Focus themselves outside provide card chair report. Machine art data guess summer se",
+            "addressCountry": "Main glass day expect move western. Win machine suddenly professor expect. Affect present cold president how. Responsibility nat",
+            "postalCode": "Tend political card visit. Up behavior federal fall million history not market.",
+            "postOfficeBoxNumber": "State partner door market wide yourself. Line development money buy check include likely serious. Know security stop field tend police.",
+            "streetNr": "Dream some now eye recognize democratic production. Plan need think relationship. Rather culture continue family everyone society writer nothing. Those rather role bad.",
+            "district": "Year mean TV huge whose. Consid"
+        }
+    },
+    "areaServed": {
+        "type": "Text",
+        "value": "Gun good deep them. Here you police tough public economic friend."
+    },
+    "rt": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.r.settings.broadcasting"
+        ]
+    },
+    "if": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.if.baseline",
+            "oic.if.rw"
+        ]
+    },
+    "antenna": {
+        "type": "Text",
+        "value": "The billion"
+    },
+    "supported-antennas": {
+        "type": "StructuredValue",
+        "value": [
+            "Scene money move that south beyond. Up candidate up test. Around imagine quite commercial minute."
+        ]
+    },
+    "location-info": {
+        "type": "Text",
+        "value": "Poor kid dream be street ed"
+    },
+    "carrier-info": {
+        "type": "Text",
+        "value": "Art when prove discuss medical blood"
+    },
+    "auto-program": {
+        "type": "Boolean",
+        "value": true
+    },
+    "type": "settings-broadcasting"
 }
