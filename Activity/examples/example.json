@@ -1,70 +1,70 @@
 {
-  "id": "urn:ngsi-ld:Activity:id:DUCN:00203733",
-  "dateCreated": "1995-09-14T09:07:48Z",
-  "dateModified": "1976-12-05T00:37:06Z",
-  "source": "Ability hand reason management. Middle entire room public suggest.",
-  "name": "Those catch research instead prove up. Career small great sense become certain wait require. Thank break whole street black.",
-  "alternateName": "Particularly attention at citizen lead scientist. North conference anyone. Against consider dog seek.",
-  "description": "Measure his everyone manage participant six.",
-  "dataProvider": "Street standard Congress anything. Way million discover nation mission teach. Race table from.",
-  "owner": [
-    "urn:ngsi-ld:Activity:items:BRJD:11553936",
-    "urn:ngsi-ld:Activity:items:ZGHH:01998249"
-  ],
-  "seeAlso": [
-    "urn:ngsi-ld:Activity:items:PTPX:08898077",
-    "urn:ngsi-ld:Activity:items:LQLV:84757861"
-  ],
-  "location": {
-    "type": "Point",
-    "coordinates": [
-      41.0514365,
-      -160.549428
-    ]
-  },
-  "address": {
-    "streetAddress": "His situation focus final. Idea summer determine win every PM time explain.",
-    "addressLocality": "Audience issue policy present growth along. Less ten make picture late allow everyone take.",
-    "addressRegion": "Under surface paper event month. Offer room such the work threat group order.",
-    "addressCountry": "Gun those among cup good inside successful. Base option break poor third.",
-    "postalCode": "Interview someone subject office. Laugh Mrs reason maintain ten source everybody.",
-    "postOfficeBoxNumber": "Party eat hope box lot ready poor. South town room guy. Day throughout exactly actually be."
-  },
-  "areaServed": "Many body chair listen protect see kid. Establish born American number civil happy. Letter chance or thus mention size.",
-  "activity": "walk",
-  "steps_day": 864,
-  "steps_reset": 864,
-  "ccal_day": 927.6,
-  "ccal_reset": 848.5,
-  "rt": [
-    "oic.r.activity"
-  ],
-  "n": "Address future financial sing. Cut outside everybody soon.",
-  "if": [
-    "oic.if.baseline",
-    "oic.if.s"
-  ],
-  "steps_day_range": [
-    864,
-    864
-  ],
-  "steps_day_step": 864,
-  "steps_reset_range": [
-    864,
-    864
-  ],
-  "steps_reset_step": 864,
-  "ccal_day_range": [
-    428.4,
-    249.0
-  ],
-  "ccal_day_step": 23.2,
-  "ccal_day_precision": 836.0,
-  "ccal_reset_range": [
-    162.8,
-    797.5
-  ],
-  "ccal_reset_step": 252.5,
-  "ccal_reset_precision": 442.1,
-  "type": "Activity"
+    "id": "urn:ngsi-ld:Activity:id:QLWH:51153027",
+    "dateCreated": "1996-07-16T03:21:42Z",
+    "dateModified": "2001-07-06T17:20:02Z",
+    "source": "Sea dog car green firm. Student green short whom. Very bring bit early change threat.",
+    "name": "Center along certainly bring art. Show cas",
+    "alternateName": "From approach I econ",
+    "description": "Hear someone office certainly edge shake could. Owner inside Mrs by.",
+    "dataProvider": "Resource always possible must account. Among prevent f",
+    "owner": [
+        "urn:ngsi-ld:Activity:items:PFZA:34840773",
+        "urn:ngsi-ld:Activity:items:XGBV:59628768"
+    ],
+    "seeAlso": [
+        "urn:ngsi-ld:Activity:items:BUDY:81766032"
+    ],
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            0.4908525,
+            -173.441483
+        ]
+    },
+    "address": {
+        "streetAddress": "Always outside fear short. Pass base how look daughter show reach.",
+        "addressLocality": "Work n",
+        "addressRegion": "Senior TV news because night. Analysis provide attention then positive establish present impact.",
+        "addressCountry": "Production stand",
+        "postalCode": "Ahead adult hard. Operation paper nice letter.",
+        "postOfficeBoxNumber": "Smile simple exist pull wind walk book. Record adult raise seven offer.",
+        "streetNr": "Interest far deep yeah. Cultural follow reflect chair child court financial community. Chair save piece relate.",
+        "district": "Memory Mrs dog power we fight. Office when feeling water at home under impact. Nation some language should p"
+    },
+    "areaServed": "Common success sit nearly eat best plant.",
+    "activity": "sit",
+    "steps_day": 864,
+    "steps_reset": 864,
+    "ccal_day": 371.0,
+    "ccal_reset": 806.4,
+    "rt": [
+        "oic.r.activity"
+    ],
+    "n": "Hold early professional partner decade onto anyon",
+    "if": [
+        "oic.if.s"
+    ],
+    "steps_day_range": [
+        864,
+        864
+    ],
+    "steps_day_step": 864,
+    "steps_reset_range": [
+        864,
+        864
+    ],
+    "steps_reset_step": 864,
+    "ccal_day_range": [
+        541.6,
+        629.5
+    ],
+    "ccal_day_step": 209.8,
+    "ccal_day_precision": 474.6,
+    "ccal_reset_range": [
+        431.7,
+        635.1
+    ],
+    "ccal_reset_step": 137.2,
+    "ccal_reset_precision": 403.7,
+    "type": "Activity"
 }
