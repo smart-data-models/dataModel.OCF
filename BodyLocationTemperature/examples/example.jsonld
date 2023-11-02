@@ -1,38 +1,47 @@
 {
-    "id": "urn:ngsi-ld:BodyLocationTemperature:id:DVEE:22471005",
-    "dateCreated": "1986-05-14T05:25:58Z",
-    "dateModified": "2004-03-17T12:13:13Z",
-    "source": "Indeed professor interest hold might. Whose better reason letter. Statement hold church kind well much so commercial.",
-    "name": "Marriage behind gas appear door appear special. Message themselves person assume walk. Shoulder act road thus both season.",
-    "alternateName": "Fall old home understand old meet friend. Team at actually week dinner.",
-    "description": "Support red party owner never consumer. Whom long protect almost leader particular. Chance technology any notice which story.",
-    "dataProvider": "Hotel it increase especially home ball. Community smile station painting. Finish force effort worry cause region store just.",
+    "id": "urn:ngsi-ld:BodyLocationTemperature:id:OJOU:20990699",
+    "dateCreated": "1989-08-03T16:46:41Z",
+    "dateModified": "2000-09-28T16:40:46Z",
+    "source": "Natural machine art Mr anyone allow. Way can each get thank inside. Find fall feeling interest here even particular account.",
+    "name": "Boy crime soldier position boy how. People propert",
+    "alternateName": "Movement wonder security. Into fish life season sometimes. Prove trial value give in.",
+    "description": "Federal entire occur. Now best return. Provide certain type nor check.",
+    "dataProvider": "Floor week authority. Very people play fact ten discuss. Western often pa",
     "owner": [
-        "urn:ngsi-ld:BodyLocationTemperature:items:HNIK:73021014",
-        "urn:ngsi-ld:BodyLocationTemperature:items:JIZY:16075956"
+        "urn:ngsi-ld:BodyLocationTemperature:items:DQNB:28110612",
+        "urn:ngsi-ld:BodyLocationTemperature:items:UYGQ:39785325"
     ],
     "seeAlso": [
-        "urn:ngsi-ld:BodyLocationTemperature:items:PJOG:26128975",
-        "urn:ngsi-ld:BodyLocationTemperature:items:CMDA:05499547"
+        "urn:ngsi-ld:BodyLocationTemperature:items:WRKH:23444925"
     ],
     "location": {
         "type": "Point",
         "coordinates": [
-            7.4156865,
-            107.49888
+            87.0870265,
+            8.704007
         ]
     },
     "address": {
-        "streetAddress": "Major popular tell usually fall avoid. Star claim show arrive determine.",
-        "addressLocality": "Help simply well front point news. Movement will report responsibility those field capital night. Special sit late mouth reason body actually.",
-        "addressRegion": "Fact brother act. Company traditional manage. Scientist manager shoulder draw.",
-        "addressCountry": "Hair include firm time. Degree son old skin painting whom service.",
-        "postalCode": "Station truth southern color. Former ever environmental low fly thing score recent. Seven indicate start modern education watch message election.",
-        "postOfficeBoxNumber": "Firm not friend. However over computer."
+        "streetAddress": "Do past na",
+        "addressLocality": "Allow order design difference. Industr",
+        "addressRegion": "Note doctor table cover partner director five. Building tell kid affect including yeah actually. Require white because boy",
+        "addressCountry": "College before character popular activity. Dream involve level crime structure customer toward.",
+        "postalCode": "Art tax medical out finish too method across. Physical board car quickly. Individual level expect material coach.",
+        "postOfficeBoxNumber": "Unit cultural participant speech nation sign teacher. Ground never west ",
+        "streetNr": "Field minute as final card. Expect occur decide affect.",
+        "district": "Treat put buy. Help stop federal son. Spend full police out away hair."
     },
-    "areaServed": "Again collection ten. Agent evidence necessary already. Push something environment central young born no.",
+    "areaServed": "Hospital may two. Orde",
+    "rt": [
+        "oic.r.body.location.temperature"
+    ],
+    "bloc": "toe",
+    "n": "Hour ",
+    "if": [
+        "oic.if.s"
+    ],
+    "type": "BodyLocationTemperature",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
