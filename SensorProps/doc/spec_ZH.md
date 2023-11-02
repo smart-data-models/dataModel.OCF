@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: 用于邮政信箱地址的邮政信箱号码。例如：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: 邮政编码。例如：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: 街道地址  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: 标识公共街道上特定房产的编号    
 - `alternateName[string]`: 该项目的替代名称  - `areaServed[string]`: 提供服务或提供物品的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 标识统一数据实体提供者的字符序列  - `dateCreated[date-time]`: 实体创建时间戳。通常由存储平台分配  - `dateModified[date-time]`: 实体最后一次修改的时间戳。通常由存储平台分配  - `description[string]`: 项目描述  - `id[*]`: 实体的唯一标识符  - `if[array]`: 该资源支持的 OCF 接口集  - `location[*]`: 项目的 Geojson 引用。它可以是点、线条字符串、多边形、多点、多线条字符串或多多边形  - `n[string]`: 资源的友好名称  - `name[string]`: 该项目的名称  - `owner[array]`: 包含一个 JSON 编码字符序列的列表，其中引用了所有者的唯一 Ids  - `precision[number]`: 当 "精确度 "中的值被暴露时，会对资源中的属性提供一个 +/- 容差。因此，如果一个属性被更新为一个值，然后该属性又被重新读取，那么重新读取的值如果在设定值 +/- 精度的范围内就是有效的。  - `range[array]`: 资源中属性的有效范围（数字）。数组中的第一个值是最小值，数组中的第二个值是最大值  - `rt[array]`: 资源类型  - `seeAlso[*]`: 指向有关该项目的其他资源的 uri 列表  - `sensitivity[number]`: 传感器检测精度的级别。用于控制传感器检测状态变化的级别。范围 "属性应根据制造商的设备能力来指定。  - `silenttime[number]`: 从上一次报告开始，传感器停止发送状态变化报告的时间（以秒为单位）。用于避免重复发送状态变化报告  - `source[string]`: 以 URL 形式给出实体数据原始来源的字符串。建议使用源提供者的完全合格域名或源对象的 URL  - `step[number]`: 跨定义范围的步长值，当范围为数字时为整数。  这是整个范围内有效值的增量；因此，如果范围为 0.0...10.0，步长为 2.5，则有效值为 0.0,2.5,5.0,7.5,10.0  - `type[string]`: NGSI 实体类型。必须是 SensorProps  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 所需属性  
@@ -447,68 +448,56 @@ SensorProps:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:SensorProps:id:YVXU:42637893",  
-  "dateCreated": "2001-03-14T07:22:29Z",  
-  "dateModified": "1978-09-22T09:34:56Z",  
-  "source": "While simply allow miss like marriage hit. Reveal author guess nearly enjoy.",  
-  "name": "Ball financial head read. Stay trial must particularly question range or.",  
-  "alternateName": "Front growth room. Study kid young pick.",  
-  "description": "Their nature much up. Believe modern quickly particularly heavy better chair body. Great drive stop age loss.",  
-  "dataProvider": "Of visit senior training book while happen word. Look improve daughter life explain area new. Place represent option can treat.",  
-  "owner": [  
-    "urn:ngsi-ld:SensorProps:items:LMHY:88012207",  
-    "urn:ngsi-ld:SensorProps:items:JIBE:61713140"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:SensorProps:items:XJZJ:14603122",  
-    "urn:ngsi-ld:SensorProps:items:WMHF:99500885"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      10.5752175,  
-      -85.719918  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Of answer cost they soldier image. Serve pull air lay. Structure phone be trade trial those. Position special meeting trip gun second.",  
-    "addressLocality": "Standard machine final if read economy. Chair decide under action the notice.",  
-    "addressRegion": "One glass pass we. Week production put. Today nice collection look next account determine.",  
-    "addressCountry": "Fund place case less wear item article. Customer instead according or better.",  
-    "postalCode": "Several reduce rock yet book. Dog sit traditional one network Republican. Great church yard within mission million.",  
-    "postOfficeBoxNumber": "Situation enjoy show. Lose from style pretty here. Such chair father prove radio."  
-  },  
-  "areaServed": "Challenge after behavior again cell because.",  
-  "rt": [  
-    "oic.r.sensor.props",  
-    "oic.r.sensor.props"  
-  ],  
-  "silenttime": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "sensitivity": {  
-    "type": "Property",  
-    "value": 706.5  
-  },  
-  "n": "Management alone morning million public travel. Sit guess staff once marriage. Wrong describe office seven bit miss off.",  
-  "range": [  
-    846.0,  
-    714.8  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 782.2  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 770.3  
-  },  
-  "if": [  
-    "oic.if.baseline",  
-    "oic.if.baseline"  
-  ],  
-  "type": "SensorProps"  
+    "id": "urn:ngsi-ld:SensorProps:id:YESK:52293597",  
+    "dateCreated": "1983-01-30T05:35:37Z",  
+    "dateModified": "1981-06-21T03:52:14Z",  
+    "source": "Air present skin away rule. Pa",  
+    "name": "Democratic blue",  
+    "alternateName": "Short until wait. Attention friend data within. Student draw this leave back.",  
+    "description": "Life scene discuss choice officer customer little force. Rule significant business foot speech. Agree final happen similar.",  
+    "dataProvider": "Lose they weight growth certain financial. Only effect born explain too western tree. Song great theory evening. Prove stay toward improve also happy catch.",  
+    "owner": [  
+        "urn:ngsi-ld:SensorProps:items:RRQL:54909527",  
+        "urn:ngsi-ld:SensorProps:items:RAJU:77143332"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:SensorProps:items:JMLR:39881665"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -70.014934,  
+            3.829985  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Learn hospital newspaper ahead music agreement bed nation. Drop sort cultural success star idea that say.",  
+        "addressLocality": "Edge woman maintain woman visit product. Really capital color group memory. Adm",  
+        "addressRegion": "The probably skin about continue field grow. Hand sense compare director already education. Ask night course.",  
+        "addressCountry": "Federal young walk baby hair. Foot pressure th",  
+        "postalCode": "Democratic game community law listen couple. ",  
+        "postOfficeBoxNumber": "Unit lose action over national. Already kind system treat.",  
+        "streetNr": "Build total appear staff health consider nearly. Name sure ",  
+        "district": "Garden central agreement form foreign charge. Student everything such TV."  
+    },  
+    "areaServed": "Some various early place. Into surface any which responsibility record different along. Well standard",  
+    "rt": [  
+        "oic.r.sensor.props"  
+    ],  
+    "silenttime": 864,  
+    "sensitivity": 117.8,  
+    "n": "Quite wid",  
+    "range": [  
+        802.9,  
+        881.6  
+    ],  
+    "step": 817.8,  
+    "precision": 303.4,  
+    "if": [  
+        "oic.if.rw",  
+        "oic.if.baseline"  
+    ],  
+    "type": "SensorProps"  
 }  
 ```  
 </details>  
@@ -517,136 +506,116 @@ SensorProps:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:SensorProps:id:YVXU:42637893"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2001-03-14T07:22:29Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1978-09-22T09:34:56Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "While simply allow miss like marriage hit. Reveal author guess nearly enjoy."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Ball financial head read. Stay trial must particularly question range or."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Front growth room. Study kid young pick."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Their nature much up. Believe modern quickly particularly heavy better chair body. Great drive stop age loss."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Of visit senior training book while happen word. Look improve daughter life explain area new. Place represent option can treat."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:SensorProps:items:LMHY:88012207",  
-      "urn:ngsi-ld:SensorProps:items:JIBE:61713140"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:SensorProps:items:XJZJ:14603122",  
-      "urn:ngsi-ld:SensorProps:items:WMHF:99500885"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        10.5752175,  
-        -85.719918  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Of answer cost they soldier image. Serve pull air lay. Structure phone be trade trial those. Position special meeting trip gun second.",  
-      "addressLocality": "Standard machine final if read economy. Chair decide under action the notice.",  
-      "addressRegion": "One glass pass we. Week production put. Today nice collection look next account determine.",  
-      "addressCountry": "Fund place case less wear item article. Customer instead according or better.",  
-      "postalCode": "Several reduce rock yet book. Dog sit traditional one network Republican. Great church yard within mission million.",  
-      "postOfficeBoxNumber": "Situation enjoy show. Lose from style pretty here. Such chair father prove radio."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Challenge after behavior again cell because."  
-  },  
-  "rt": {  
-    "type": "array",  
-    "value": [  
-      "oic.r.sensor.props",  
-      "oic.r.sensor.props"  
-    ]  
-  },  
-  "silenttime": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 864  
-    }  
-  },  
-  "sensitivity": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 706.5  
-    }  
-  },  
-  "n": {  
-    "type": "string",  
-    "value": "Management alone morning million public travel. Sit guess staff once marriage. Wrong describe office seven bit miss off."  
-  },  
-  "range": {  
-    "type": "array",  
-    "value": [  
-      846.0,  
-      714.8  
-    ]  
-  },  
-  "step": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 782.2  
-    }  
-  },  
-  "precision": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 770.3  
-    }  
-  },  
-  "if": {  
-    "type": "array",  
-    "value": [  
-      "oic.if.baseline",  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "type": {  
-    "type": "string",  
-    "value": "SensorProps"  
-  }  
+    "id": "urn:ngsi-ld:SensorProps:id:YESK:52293597",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1983-01-30T05:35:37Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "1981-06-21T03:52:14Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Air present skin away rule. Pa"  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Democratic blue"  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Short until wait. Attention friend data within. Student draw this leave back."  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Life scene discuss choice officer customer little force. Rule significant business foot speech. Agree final happen similar."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Lose they weight growth certain financial. Only effect born explain too western tree. Song great theory evening. Prove stay toward improve also happy catch."  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:SensorProps:items:RRQL:54909527",  
+            "urn:ngsi-ld:SensorProps:items:RAJU:77143332"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:SensorProps:items:JMLR:39881665"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -70.014934,  
+                3.829985  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Learn hospital newspaper ahead music agreement bed nation. Drop sort cultural success star idea that say.",  
+            "addressLocality": "Edge woman maintain woman visit product. Really capital color group memory. Adm",  
+            "addressRegion": "The probably skin about continue field grow. Hand sense compare director already education. Ask night course.",  
+            "addressCountry": "Federal young walk baby hair. Foot pressure th",  
+            "postalCode": "Democratic game community law listen couple. ",  
+            "postOfficeBoxNumber": "Unit lose action over national. Already kind system treat.",  
+            "streetNr": "Build total appear staff health consider nearly. Name sure ",  
+            "district": "Garden central agreement form foreign charge. Student everything such TV."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Some various early place. Into surface any which responsibility record different along. Well standard"  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.sensor.props"  
+        ]  
+    },  
+    "silenttime": {  
+        "type": "Number",  
+        "value": 864  
+    },  
+    "sensitivity": {  
+        "type": "Number",  
+        "value": 117.8  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Quite wid"  
+    },  
+    "range": {  
+        "type": "StructuredValue",  
+        "value": [  
+            802.9,  
+            881.6  
+        ]  
+    },  
+    "step": {  
+        "type": "Number",  
+        "value": 817.8  
+    },  
+    "precision": {  
+        "type": "Number",  
+        "value": 303.4  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.rw",  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "SensorProps"  
 }  
 ```  
 </details>  
@@ -655,71 +624,58 @@ SensorProps:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:SensorProps:id:YVXU:42637893",  
-    "dateCreated": "2001-03-14T07:22:29Z",  
-    "dateModified": "1978-09-22T09:34:56Z",  
-    "source": "While simply allow miss like marriage hit. Reveal author guess nearly enjoy.",  
-    "name": "Ball financial head read. Stay trial must particularly question range or.",  
-    "alternateName": "Front growth room. Study kid young pick.",  
-    "description": "Their nature much up. Believe modern quickly particularly heavy better chair body. Great drive stop age loss.",  
-    "dataProvider": "Of visit senior training book while happen word. Look improve daughter life explain area new. Place represent option can treat.",  
+    "id": "urn:ngsi-ld:SensorProps:id:YESK:52293597",  
+    "dateCreated": "1983-01-30T05:35:37Z",  
+    "dateModified": "1981-06-21T03:52:14Z",  
+    "source": "Air present skin away rule. Pa",  
+    "name": "Democratic blue",  
+    "alternateName": "Short until wait. Attention friend data within. Student draw this leave back.",  
+    "description": "Life scene discuss choice officer customer little force. Rule significant business foot speech. Agree final happen similar.",  
+    "dataProvider": "Lose they weight growth certain financial. Only effect born explain too western tree. Song great theory evening. Prove stay toward improve also happy catch.",  
     "owner": [  
-        "urn:ngsi-ld:SensorProps:items:LMHY:88012207",  
-        "urn:ngsi-ld:SensorProps:items:JIBE:61713140"  
+        "urn:ngsi-ld:SensorProps:items:RRQL:54909527",  
+        "urn:ngsi-ld:SensorProps:items:RAJU:77143332"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:SensorProps:items:XJZJ:14603122",  
-        "urn:ngsi-ld:SensorProps:items:WMHF:99500885"  
+        "urn:ngsi-ld:SensorProps:items:JMLR:39881665"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            10.5752175,  
-            -85.719918  
+            -70.014934,  
+            3.829985  
         ]  
     },  
     "address": {  
-        "streetAddress": "Of answer cost they soldier image. Serve pull air lay. Structure phone be trade trial those. Position special meeting trip gun second.",  
-        "addressLocality": "Standard machine final if read economy. Chair decide under action the notice.",  
-        "addressRegion": "One glass pass we. Week production put. Today nice collection look next account determine.",  
-        "addressCountry": "Fund place case less wear item article. Customer instead according or better.",  
-        "postalCode": "Several reduce rock yet book. Dog sit traditional one network Republican. Great church yard within mission million.",  
-        "postOfficeBoxNumber": "Situation enjoy show. Lose from style pretty here. Such chair father prove radio."  
+        "streetAddress": "Learn hospital newspaper ahead music agreement bed nation. Drop sort cultural success star idea that say.",  
+        "addressLocality": "Edge woman maintain woman visit product. Really capital color group memory. Adm",  
+        "addressRegion": "The probably skin about continue field grow. Hand sense compare director already education. Ask night course.",  
+        "addressCountry": "Federal young walk baby hair. Foot pressure th",  
+        "postalCode": "Democratic game community law listen couple. ",  
+        "postOfficeBoxNumber": "Unit lose action over national. Already kind system treat.",  
+        "streetNr": "Build total appear staff health consider nearly. Name sure ",  
+        "district": "Garden central agreement form foreign charge. Student everything such TV."  
     },  
-    "areaServed": "Challenge after behavior again cell because.",  
+    "areaServed": "Some various early place. Into surface any which responsibility record different along. Well standard",  
     "rt": [  
-        "oic.r.sensor.props",  
         "oic.r.sensor.props"  
     ],  
-    "silenttime": {  
-        "type": "Property",  
-        "value": 864  
-    },  
-    "sensitivity": {  
-        "type": "Property",  
-        "value": 706.5  
-    },  
-    "n": "Management alone morning million public travel. Sit guess staff once marriage. Wrong describe office seven bit miss off.",  
+    "silenttime": 864,  
+    "sensitivity": 117.8,  
+    "n": "Quite wid",  
     "range": [  
-        846.0,  
-        714.8  
+        802.9,  
+        881.6  
     ],  
-    "step": {  
-        "type": "Property",  
-        "value": 782.2  
-    },  
-    "precision": {  
-        "type": "Property",  
-        "value": 770.3  
-    },  
+    "step": 817.8,  
+    "precision": 303.4,  
     "if": [  
-        "oic.if.baseline",  
+        "oic.if.rw",  
         "oic.if.baseline"  
     ],  
     "type": "SensorProps",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -729,78 +685,80 @@ SensorProps:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:SensorProps:id:KXOX:86098583",  
+    "id": "urn:ngsi-ld:SensorProps:id:YESK:52293597",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1984-12-31T17:02:03Z"  
+            "@value": "1983-01-30T05:35:37Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2006-04-22T23:48:28Z"  
+            "@value": "1981-06-21T03:52:14Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Have local modern firm. Mr total not election enough."  
+        "value": "Air present skin away rule. Pa"  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Indicate crime compare partner. Marriage officer she old sign view act husband."  
+        "value": "Democratic blue"  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Ahead imagine health station fear. Voice share society despite himself both. Style plan green pattern into up animal."  
+        "value": "Short until wait. Attention friend data within. Student draw this leave back."  
     },  
     "description": {  
         "type": "Property",  
-        "value": "City way economic hit make cell goal. Place apply administration little prevent. Security same teacher police same until art cold."  
+        "value": "Life scene discuss choice officer customer little force. Rule significant business foot speech. Agree final happen similar."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Apply job work discover maintain. Feel father prepare positive. Material ask compare yourself."  
+        "value": "Lose they weight growth certain financial. Only effect born explain too western tree. Song great theory evening. Prove stay toward improve also happy catch."  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:SensorProps:items:VLUH:05879065",  
-            "urn:ngsi-ld:SensorProps:items:XEFK:27739524"  
+            "urn:ngsi-ld:SensorProps:items:RRQL:54909527",  
+            "urn:ngsi-ld:SensorProps:items:RAJU:77143332"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:SensorProps:items:JNTX:91967149"  
+            "urn:ngsi-ld:SensorProps:items:JMLR:39881665"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                -38.0434205,  
-                -34.086759  
+                -70.014934,  
+                3.829985  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Agree best tell condition standard. Care rock surface organization various field. Receive fly reveal pass owner.",  
-            "addressLocality": "Argue more poor board bring individual. Detail while next model no. Big ball data daughter region sister.",  
-            "addressRegion": "Ready certain him spend save me Mrs. Main pattern second place. Score network share remain production step task major.",  
-            "addressCountry": "Wife player good. Activity place meeting who western bring town.",  
-            "postalCode": "Hour effort marriage talk. Floor quite call stuff tonight ever. Energy win improve tell miss eye just travel.",  
-            "postOfficeBoxNumber": "Window especially bad. Either try development science stand on. Despite per lose fill."  
+            "streetAddress": "Learn hospital newspaper ahead music agreement bed nation. Drop sort cultural success star idea that say.",  
+            "addressLocality": "Edge woman maintain woman visit product. Really capital color group memory. Adm",  
+            "addressRegion": "The probably skin about continue field grow. Hand sense compare director already education. Ask night course.",  
+            "addressCountry": "Federal young walk baby hair. Foot pressure th",  
+            "postalCode": "Democratic game community law listen couple. ",  
+            "postOfficeBoxNumber": "Unit lose action over national. Already kind system treat.",  
+            "streetNr": "Build total appear staff health consider nearly. Name sure ",  
+            "district": "Garden central agreement form foreign charge. Student everything such TV."  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Quite mind draw decide. Win my say office computer pressure."  
+        "value": "Some various early place. Into surface any which responsibility record different along. Well standard"  
     },  
     "rt": {  
         "type": "Property",  
@@ -810,42 +768,41 @@ SensorProps:
     },  
     "silenttime": {  
         "type": "Property",  
-        "value": 599  
+        "value": 864  
     },  
     "sensitivity": {  
         "type": "Property",  
-        "value": 40.5  
+        "value": 117.8  
     },  
     "n": {  
         "type": "Property",  
-        "value": "Better hospital offer indeed."  
+        "value": "Quite wid"  
     },  
     "range": {  
         "type": "Property",  
         "value": [  
-            818.0,  
-            689.1  
+            802.9,  
+            881.6  
         ]  
     },  
     "step": {  
         "type": "Property",  
-        "value": 580.4  
+        "value": 817.8  
     },  
     "precision": {  
         "type": "Property",  
-        "value": 698.4  
+        "value": 303.4  
     },  
     "if": {  
         "type": "Property",  
         "value": [  
             "oic.if.rw",  
-            "oic.if.rw"  
+            "oic.if.baseline"  
         ]  
     },  
     "type": "SensorProps",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
