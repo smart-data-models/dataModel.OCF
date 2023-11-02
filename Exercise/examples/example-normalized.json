@@ -1,125 +1,107 @@
 {
-  "id": {
-    "type": "string",
-    "value": "urn:ngsi-ld:Exercise:id:JGBJ:53980716"
-  },
-  "dateCreated": {
-    "format": "date-time",
-    "type": "string",
-    "value": "1993-01-31T15:09:33Z"
-  },
-  "dateModified": {
-    "format": "date-time",
-    "type": "string",
-    "value": "1982-03-15T00:18:01Z"
-  },
-  "source": {
-    "type": "string",
-    "value": "Ago fund along American mean. Fish federal body thought sing."
-  },
-  "name": {
-    "type": "string",
-    "value": "Experience season meet deal care. Available five study interview specific particular. Traditional minute probably manage half amount Mrs. Whose memory ground in field."
-  },
-  "alternateName": {
-    "type": "string",
-    "value": "Treatment course account drug peace nature physical. Outside recognize others argue attention. Specific couple total success lead seek expert. Their blue store project."
-  },
-  "description": {
-    "type": "string",
-    "value": "Level article decide goal."
-  },
-  "dataProvider": {
-    "type": "string",
-    "value": "Identify cultural board news. Mission it trouble after both I pull share."
-  },
-  "owner": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:Exercise:items:WGHS:28673615",
-      "urn:ngsi-ld:Exercise:items:MXJB:48370746"
-    ]
-  },
-  "seeAlso": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:Exercise:items:OOUL:62187452",
-      "urn:ngsi-ld:Exercise:items:JJUR:56610269"
-    ]
-  },
-  "location": {
-    "type": "object",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        80.5504325,
-        64.021025
-      ]
-    }
-  },
-  "address": {
-    "type": "object",
-    "value": {
-      "streetAddress": "Its whole prepare stand. Beyond apply magazine finish window whole. Help or out region major foreign relate. Husband fine stock politics stand.",
-      "addressLocality": "Nation magazine guy themselves character. Order factor song doctor easy.",
-      "addressRegion": "Sit toward left young.",
-      "addressCountry": "Reason none meet power. Against cell event. About each become be. Choose as get sea.",
-      "postalCode": "Control commercial shoulder. Source well activity three pressure too bad teach. Source second any just TV attack eight.",
-      "postOfficeBoxNumber": "Yard purpose speech team south brother. Response ready tax focus."
-    }
-  },
-  "areaServed": {
-    "type": "string",
-    "value": "Thought compare personal light rich foot. Bar state positive spend appear language party do. Baby then property together back story."
-  },
-  "rt": {
-    "type": "array",
-    "value": [
-      "oic.r.glucose.exercise",
-      "oic.r.glucose.exercise"
-    ]
-  },
-  "exercise": {
-    "type": "object",
-    "value": {
-      "type": "Property",
-      "value": 86.5
-    }
-  },
-  "range": {
-    "type": "array",
-    "value": [
-      655.2,
-      560.6
-    ]
-  },
-  "step": {
-    "type": "object",
-    "value": {
-      "type": "Property",
-      "value": 448.3
-    }
-  },
-  "precision": {
-    "type": "object",
-    "value": {
-      "type": "Property",
-      "value": 111.5
-    }
-  },
-  "n": {
-    "type": "string",
-    "value": "Sound form along. Arm class air little. Line later teacher truth anyone perhaps. Support trip style he really free fund."
-  },
-  "if": {
-    "type": "array",
-    "value": [
-      "oic.if.baseline",
-      "oic.if.baseline"
-    ]
-  },
-  "type": {
-    "type": "string",
-    "value": "Exercise"
-  }
+    "id": "urn:ngsi-ld:Exercise:id:WZTE:82421948",
+    "dateCreated": {
+        "type": "DateTime",
+        "value": "1991-02-08T18:14:04Z"
+    },
+    "dateModified": {
+        "type": "DateTime",
+        "value": "1976-09-20T18:37:42Z"
+    },
+    "source": {
+        "type": "Text",
+        "value": "Line"
+    },
+    "name": {
+        "type": "Text",
+        "value": "Partner sto"
+    },
+    "alternateName": {
+        "type": "Text",
+        "value": "Onto knowle"
+    },
+    "description": {
+        "type": "Text",
+        "value": "Every manage political record word group food break. Picture suddenly drug rule bring determine some forward. Beyond chair recently and."
+    },
+    "dataProvider": {
+        "type": "Text",
+        "value": "Own available buy country store build before. Already against which continue. Look road article quickly."
+    },
+    "owner": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:Exercise:items:UJLN:86914131",
+            "urn:ngsi-ld:Exercise:items:GILX:20870916"
+        ]
+    },
+    "seeAlso": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:Exercise:items:QIDT:79230225"
+        ]
+    },
+    "location": {
+        "type": "geo:json",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                28.732768,
+                177.344405
+            ]
+        }
+    },
+    "address": {
+        "type": "StructuredValue",
+        "value": {
+            "streetAddress": "Likely improve notice. True power home price check real leader.",
+            "addressLocality": "School name care se",
+            "addressRegion": "Organization r",
+            "addressCountry": "Industry product another know",
+            "postalCode": "First degree response able state more. Couple part cup",
+            "postOfficeBoxNumber": "Son break either president stage population boy. Everything affect American race.",
+            "streetNr": "Water voice travel among see ",
+            "district": "Full"
+        }
+    },
+    "areaServed": {
+        "type": "Text",
+        "value": "Buy break marriage also friend reach. Turn phone heart window. Assume be seek article."
+    },
+    "rt": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.r.glucose.exercise"
+        ]
+    },
+    "exercise": {
+        "type": "Number",
+        "value": 7.3
+    },
+    "range": {
+        "type": "StructuredValue",
+        "value": [
+            29.4,
+            265.1
+        ]
+    },
+    "step": {
+        "type": "Number",
+        "value": 20.6
+    },
+    "precision": {
+        "type": "Number",
+        "value": 454.9
+    },
+    "n": {
+        "type": "Text",
+        "value": "Send former rest foreign project. Against"
+    },
+    "if": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.if.baseline"
+        ]
+    },
+    "type": "Exercise"
 }
