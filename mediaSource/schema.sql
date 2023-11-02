@@ -1,3 +1,3 @@
 /* (Beta) Export of data model mediaSource of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE sourceType_type AS ENUM ('audioOnly','videoOnly','audioPlusVideo');CREATE TYPE mediaSource_type AS ENUM ('mediaSource');
-CREATE TABLE mediaSource (if JSON, n TEXT, rt JSON, sourceName TEXT, sourceNumber TEXT, sourceType sourceType_type, status BOOLEAN, type mediaSource_type);
+CREATE TABLE mediaSource (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, if JSON, location JSON, n TEXT, name TEXT, owner JSON, rt JSON, seeAlso JSON, source TEXT, sourceName TEXT, sourceNumber TEXT, sourceType sourceType_type, status BOOLEAN, type mediaSource_type);
