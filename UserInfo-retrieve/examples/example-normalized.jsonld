@@ -1,79 +1,98 @@
 {
-    "id": "urn:ngsi-ld:UserInfo-retrieve:id:SARL:53055590",
+    "id": "urn:ngsi-ld:UserInfo-retrieve:id:TXBY:45705242",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2004-11-07T15:43:42Z"
+            "@value": "1990-06-22T01:09:44Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2007-07-08T01:47:16Z"
+            "@value": "1999-02-06T18:19:13Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Its grow toward threat expect center father. Than western race write expert political I."
+        "value": "Bag finally challenge win the. Where apply practice support test image. Professor speak fire interesting light politics."
     },
     "name": {
         "type": "Property",
-        "value": "Simply charge page remember treatment care deep. There check hospital road. Wear serious decade soldier table."
+        "value": "Cons"
     },
     "alternateName": {
         "type": "Property",
-        "value": "Reality accept ago give adult as service. Commercial body manager network station. Forward political join alone short share above."
+        "value": "Leader agency serious fact and deal sort but. Reach past sister realize away mouth. School shake defense interest."
     },
     "description": {
         "type": "Property",
-        "value": "Go middle science check."
+        "value": "Laugh western for cold performance off. During hard century discuss read clear."
     },
     "dataProvider": {
         "type": "Property",
-        "value": "Else board fund score add. Draw born onto system five."
+        "value": "Less appear long whom result economy both. Who turn step professor team. Ok expect art federal military fly. Fact thing religious task clear."
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:UserInfo-retrieve:items:ZPSG:82205432",
-            "urn:ngsi-ld:UserInfo-retrieve:items:YKIF:85261963"
+            "urn:ngsi-ld:UserInfo-retrieve:items:QXBB:34998933",
+            "urn:ngsi-ld:UserInfo-retrieve:items:MBIL:67490912"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:UserInfo-retrieve:items:QJRR:59773643"
+            "urn:ngsi-ld:UserInfo-retrieve:items:YJSI:71607452"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                -71.2702425,
-                122.709099
+                -42.7967495,
+                -34.967117
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "Not situation young finish upon.",
-            "addressLocality": "Break mission share only do. Around sure fire evening however.",
-            "addressRegion": "Market measure garden night talk. Program available until best actually animal simple.",
-            "addressCountry": "She certainly describe Mr walk. Impact nearly be myself up green.",
-            "postalCode": "Major money by receive ahead enjoy show. Key age experience behavior entire stage understand.",
-            "postOfficeBoxNumber": "Impact size specific responsibility back subject walk. Job student action stand over not boy kitchen."
+            "streetAddress": "Exactly score cut care do. Personal dream leader end address week.",
+            "addressLocality": "Require moment nice i",
+            "addressRegion": "Ago herself edge under. His spec",
+            "addressCountry": "Force environment tax audience majority. Note office sea ge",
+            "postalCode": "Leg kitchen do teach boy federal. Word response yeah. Another wonder wo",
+            "postOfficeBoxNumber": "Now machine level far song ask treatment. Green mouth close only arm lead participant.",
+            "streetNr": "Particular bag suggest free drive teach. Each another picture view letter vote movement.",
+            "district": "Thus important think goal author husband strategy. Understand war next rule n"
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "And mother structure chance. Difficult challenge wish threat around. Tend civil million side bar strategy tough."
+        "value": "Free information hair choose system factor. O"
     },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.userinfo"
+        ]
+    },
+    "n": {
+        "type": "Property",
+        "value": "How real economy manag"
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.rw",
+            "oic.if.baseline"
+        ]
+    },
+    "type": "UserInfo-retrieve",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
