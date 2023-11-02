@@ -1,3 +1,3 @@
 /* (Beta) Export of data model Saturation of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE Saturation_type AS ENUM ('Saturation');
-CREATE TABLE Saturation (colourSaturation INTEGER, if JSON, n TEXT, rt JSON, type Saturation_type);
+CREATE TABLE Saturation (address JSON, alternateName TEXT, areaServed TEXT, colourSaturation NUMERIC, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, if JSON, location JSON, n TEXT, name TEXT, owner JSON, rt JSON, seeAlso JSON, source TEXT, type Saturation_type);
