@@ -15,7 +15,15 @@
 ## 속성 목록  
 
 <sup><sub>[*] 속성에 유형이 없는 것은 여러 유형 또는 다른 형식/패턴을 가질 수 있기 때문입니다</sub></sup>.  
-- `caption[boolean]`: 접근성 캡션을 켜거나 끕니다.  - `caption-mode[string]`: 접근성 캡션 모드. 클라이언트는 지원되는 캡션 모드 속성을 사용하여 캡션 모드를 변경할 수 있습니다.  - `enlarge[boolean]`: 인쇄 확대를 켜거나 끕니다.  - `high-contrast[boolean]`: 고 대비를 켜거나 끕니다.  - `if[array]`: 원본에는 설명이 없습니다.  - `rt[array]`: 접근성을 위한 장치 설정의 리소스 유형  - `supported-caption-modes[array]`: 디바이스에서 지원하는 가능한 캡션 모드의 배열입니다. 캡션 모드가 지원되는 경우 이 속성을 추가해야 합니다.  - `type[string]`: NGSI 엔티티 유형. 설정 접근성이어야 합니다.  - `video-description[boolean]`: 동영상 설명을 켜거나 끕니다.  - `voice-guide[boolean]`: 음성 가이드를 켜거나 끕니다.  <!-- /30-PropertiesList -->  
+- `address[object]`: 우편 주소  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 국가. 예를 들어, 스페인  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 도로명 주소가 있는 지역 및 해당 지역에 속한 지역  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: 해당 지역이 위치한 지역과 해당 국가의 지역  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 지구는 일부 국가에서는 지방 정부에서 관리하는 행정 구역의 일종입니다.    
+	- `postOfficeBoxNumber[string]`: 사서함 주소의 우체국 사서함 번호입니다. 예: 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 우편 번호입니다. 예: 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 거리 주소  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: 공공 도로의 특정 건물을 식별하는 번호    
+- `alternateName[string]`: 이 항목의 대체 이름  - `areaServed[string]`: 서비스 또는 제공 품목이 제공되는 지리적 영역  . Model: [https://schema.org/Text](https://schema.org/Text)- `caption[boolean]`: 접근성 캡션을 켜거나 끕니다.  - `caption-mode[string]`: 접근성 캡션 모드. 클라이언트는 지원되는 캡션 모드 속성을 사용하여 캡션 모드를 변경할 수 있습니다.  - `dataProvider[string]`: 조화된 데이터 엔티티의 공급자를 식별하는 일련의 문자  - `dateCreated[date-time]`: 엔티티 생성 타임스탬프. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `dateModified[date-time]`: 엔티티의 마지막 수정 타임스탬프입니다. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `description[string]`: 이 항목에 대한 설명  - `enlarge[boolean]`: 인쇄 확대를 켜거나 끕니다.  - `high-contrast[boolean]`: 고 대비를 켜거나 끕니다.  - `id[*]`: 엔티티의 고유 식별자  - `if[array]`: 원본에는 설명이 없습니다.  - `location[*]`: 항목에 대한 지오숀 참조입니다. 포인트, 라인 문자열, 다각형, 멀티포인트, 멀티라인 문자열 또는 멀티폴리곤일 수 있습니다.  - `name[string]`: 이 항목의 이름  - `owner[array]`: 소유자의 고유 ID를 참조하는 JSON 인코딩된 문자 시퀀스가 포함된 목록입니다.  - `rt[array]`: 접근성을 위한 장치 설정의 리소스 유형  - `seeAlso[*]`: 항목에 대한 추가 리소스를 가리키는 URL 목록  - `source[string]`: 엔티티 데이터의 원본 소스를 URL로 제공하는 문자 시퀀스입니다. 소스 공급자의 정규화된 도메인 이름 또는 소스 개체에 대한 URL을 사용하는 것이 좋습니다.  - `supported-caption-modes[array]`: 디바이스에서 지원하는 가능한 캡션 모드의 배열입니다. 캡션 모드가 지원되는 경우 이 속성을 추가해야 합니다.  - `type[string]`: NGSI 엔티티 유형. 설정 접근성이어야 합니다.  - `video-description[boolean]`: 동영상 설명을 켜거나 끕니다.  - `voice-guide[boolean]`: 음성 가이드를 켜거나 끕니다.  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 필수 속성  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -32,6 +40,70 @@
 settings-accessibility:    
   description: Smart Data Models Program adaptation of the original IoTData data Models. Gets current device accessibility settings.    
   properties:    
+    address:    
+      description: The mailing address    
+      properties:    
+        addressCountry:    
+          description: 'The country. For example, Spain'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
+        addressLocality:    
+          description: 'The locality in which the street address is, and which is in the region'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
+        addressRegion:    
+          description: 'The region in which the locality is, and which is in the country'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        postOfficeBoxNumber:    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
+        postalCode:    
+          description: 'The postal code. For example, 24004'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
+        streetAddress:    
+          description: The street address    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      type: object    
+      x-ngsi:    
+        model: https://schema.org/address    
+        type: Property    
+    alternateName:    
+      description: An alternative name for this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    areaServed:    
+      description: The geographic area where a service or offered item is provided    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
     caption:    
       description: Turns on or off accessibility caption.    
       type: boolean    
@@ -39,6 +111,28 @@ settings-accessibility:
         type: Property    
     caption-mode:    
       description: Accessibility Caption Mode. Client can change caption-mode using supported-caption-modes property.    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dataProvider:    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateCreated:    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateModified:    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    description:    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -50,6 +144,23 @@ settings-accessibility:
     high-contrast:    
       description: Turns on or off high contrast.    
       type: boolean    
+      x-ngsi:    
+        type: Property    
+    id:    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     if:    
@@ -65,6 +176,198 @@ settings-accessibility:
       uniqueItems: true    
       x-ngsi:    
         type: Property    
+    location:    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+      oneOf:    
+        - description: Geojson reference to the item. Point    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                type: number    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - Point    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Point    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - LineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON LineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 4    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - Polygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Polygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPoint    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPoint    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiLineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiLineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    items:    
+                      type: number    
+                    minItems: 2    
+                    type: array    
+                  minItems: 4    
+                  type: array    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPolygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPolygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+      x-ngsi:    
+        type: GeoProperty    
+    name:    
+      description: The name of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    owner:    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
+      items:    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     rt:    
       description: The Resource Type of Device Settings for accessibility    
       items:    
@@ -75,6 +378,23 @@ settings-accessibility:
       readOnly: true    
       type: array    
       uniqueItems: true    
+      x-ngsi:    
+        type: Property    
+    seeAlso:    
+      description: list of uri pointing to additional resources about the item    
+      oneOf:    
+        - items:    
+            format: uri    
+            type: string    
+          minItems: 1    
+          type: array    
+        - format: uri    
+          type: string    
+      x-ngsi:    
+        type: Property    
+    source:    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
+      type: string    
       x-ngsi:    
         type: Property    
     supported-caption-modes:    
@@ -125,38 +445,55 @@ settings-accessibility:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:settings-accessibility:id:TECG:18432141",  
-  "dateCreated": "1990-01-22T08:50:58Z",  
-  "dateModified": "1991-05-06T23:01:22Z",  
-  "source": "Up happen avoid. Walk but fund whose interview.",  
-  "name": "Deal girl institution worry various dark. Address new real type establish chair college well. Protect police short focus life.",  
-  "alternateName": "Happy I nothing all forget tough fast amount. Tough husband blood also. Research treat soldier analysis.",  
-  "description": "Eight thousand thing style part thank. Chance could start clearly remain south meeting certain. Opportunity smile again imagine.",  
-  "dataProvider": "Do religious deal speak individual try. Try home tonight fight drop act instead. Measure whether entire design run Republican.",  
-  "owner": [  
-    "urn:ngsi-ld:settings-accessibility:items:DRZA:51824785",  
-    "urn:ngsi-ld:settings-accessibility:items:CCNB:36841156"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:settings-accessibility:items:VLJR:83966680",  
-    "urn:ngsi-ld:settings-accessibility:items:YXOM:61457574"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -86.3649985,  
-      -23.385687  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Seem phone they let. Alone high crime group generation you book. Can head end apply side later.",  
-    "addressLocality": "Sound though relate. Southern blue arm high. Best become five step make.",  
-    "addressRegion": "Order see fall worker meeting.",  
-    "addressCountry": "Seat culture throw decade. There when too. Easy practice force marriage medical especially.",  
-    "postalCode": "Tend each drop list. Really check give its understand.",  
-    "postOfficeBoxNumber": "Central child tough. Describe camera both indeed modern sport. Charge condition decade. Hospital his already process nearly smile."  
-  },  
-  "areaServed": "Through parent price show today own mind drive. Shake couple south she of."  
+    "id": "urn:ngsi-ld:settings-accessibility:id:UYNP:54359209",  
+    "dateCreated": "1999-03-01T07:36:19Z",  
+    "dateModified": "1971-10-23T22:48:05Z",  
+    "source": "Positive people government measure. Open though window fund happy dinner political. School full",  
+    "name": "Thousand allow senior third condition lay. Group success floor foot. Friend expert check ability bar at. Wife lead cover by talk head before.",  
+    "alternateName": "Mr represent yeah believe me you responsibility. Bill record com",  
+    "description": "Difficult little despite foot. First race maintain be road seem test investment.",  
+    "dataProvider": "Court five fine community together next entire. Somebody force century hot ",  
+    "owner": [  
+        "urn:ngsi-ld:settings-accessibility:items:EXWB:77961969",  
+        "urn:ngsi-ld:settings-accessibility:items:BXLI:79322410"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:settings-accessibility:items:DWXN:61706508"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -82.4260675,  
+            -77.021835  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "A same interview she. Cold h",  
+        "addressLocality": "Enter size line security box. C",  
+        "addressRegion": "Next mouth throw believe. Possible street wrong finally. My commun",  
+        "addressCountry": "Clearly character simply couple issue small tel",  
+        "postalCode": "Detail office article indicate industry sister result military. Several may letter tonight hotel. So threat personal size couple way.",  
+        "postOfficeBoxNumber": "Tonight television apply remember personal whether father. While standard condition economic safe decide nearly.",  
+        "streetNr": "Lose between that peace site. Another condition stage product control month.",  
+        "district": "Record move society charge wall. Area degree budget. West according late."  
+    },  
+    "areaServed": "Avoid civil c",  
+    "rt": [  
+        "oic.r.settings.accessibility"  
+    ],  
+    "if": [  
+        "oic.if.baseline"  
+    ],  
+    "voice-guide": false,  
+    "video-description": false,  
+    "caption": false,  
+    "caption-mode": "Serve analysis ahead space challenge at resource. Century city wide policy order. Almost can mo",  
+    "supported-caption-modes": [  
+        "Since attack stuff force lay eight class end."  
+    ],  
+    "high-contrast": true,  
+    "enlarge": false,  
+    "type": "settings-accessibility"  
 }  
 ```  
 </details>  
@@ -165,79 +502,118 @@ settings-accessibility:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:settings-accessibility:id:TECG:18432141"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1990-01-22T08:50:58Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1991-05-06T23:01:22Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Up happen avoid. Walk but fund whose interview."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Deal girl institution worry various dark. Address new real type establish chair college well. Protect police short focus life."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Happy I nothing all forget tough fast amount. Tough husband blood also. Research treat soldier analysis."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Eight thousand thing style part thank. Chance could start clearly remain south meeting certain. Opportunity smile again imagine."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Do religious deal speak individual try. Try home tonight fight drop act instead. Measure whether entire design run Republican."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:settings-accessibility:items:DRZA:51824785",  
-      "urn:ngsi-ld:settings-accessibility:items:CCNB:36841156"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:settings-accessibility:items:VLJR:83966680",  
-      "urn:ngsi-ld:settings-accessibility:items:YXOM:61457574"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -86.3649985,  
-        -23.385687  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Seem phone they let. Alone high crime group generation you book. Can head end apply side later.",  
-      "addressLocality": "Sound though relate. Southern blue arm high. Best become five step make.",  
-      "addressRegion": "Order see fall worker meeting.",  
-      "addressCountry": "Seat culture throw decade. There when too. Easy practice force marriage medical especially.",  
-      "postalCode": "Tend each drop list. Really check give its understand.",  
-      "postOfficeBoxNumber": "Central child tough. Describe camera both indeed modern sport. Charge condition decade. Hospital his already process nearly smile."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Through parent price show today own mind drive. Shake couple south she of."  
-  }  
+    "id": "urn:ngsi-ld:settings-accessibility:id:UYNP:54359209",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1999-03-01T07:36:19Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "1971-10-23T22:48:05Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Positive people government measure. Open though window fund happy dinner political. School full"  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Thousand allow senior third condition lay. Group success floor foot. Friend expert check ability bar at. Wife lead cover by talk head before."  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Mr represent yeah believe me you responsibility. Bill record com"  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Difficult little despite foot. First race maintain be road seem test investment."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Court five fine community together next entire. Somebody force century hot "  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:settings-accessibility:items:EXWB:77961969",  
+            "urn:ngsi-ld:settings-accessibility:items:BXLI:79322410"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:settings-accessibility:items:DWXN:61706508"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -82.4260675,  
+                -77.021835  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "A same interview she. Cold h",  
+            "addressLocality": "Enter size line security box. C",  
+            "addressRegion": "Next mouth throw believe. Possible street wrong finally. My commun",  
+            "addressCountry": "Clearly character simply couple issue small tel",  
+            "postalCode": "Detail office article indicate industry sister result military. Several may letter tonight hotel. So threat personal size couple way.",  
+            "postOfficeBoxNumber": "Tonight television apply remember personal whether father. While standard condition economic safe decide nearly.",  
+            "streetNr": "Lose between that peace site. Another condition stage product control month.",  
+            "district": "Record move society charge wall. Area degree budget. West according late."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Avoid civil c"  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.settings.accessibility"  
+        ]  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "voice-guide": {  
+        "type": "Boolean",  
+        "value": false  
+    },  
+    "video-description": {  
+        "type": "Boolean",  
+        "value": false  
+    },  
+    "caption": {  
+        "type": "Boolean",  
+        "value": false  
+    },  
+    "caption-mode": {  
+        "type": "Text",  
+        "value": "Serve analysis ahead space challenge at resource. Century city wide policy order. Almost can mo"  
+    },  
+    "supported-caption-modes": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "Since attack stuff force lay eight class end."  
+        ]  
+    },  
+    "high-contrast": {  
+        "type": "Boolean",  
+        "value": true  
+    },  
+    "enlarge": {  
+        "type": "Boolean",  
+        "value": false  
+    },  
+    "type": "settings-accessibility"  
 }  
 ```  
 </details>  
@@ -246,41 +622,57 @@ settings-accessibility:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:settings-accessibility:id:TECG:18432141",  
-    "dateCreated": "1990-01-22T08:50:58Z",  
-    "dateModified": "1991-05-06T23:01:22Z",  
-    "source": "Up happen avoid. Walk but fund whose interview.",  
-    "name": "Deal girl institution worry various dark. Address new real type establish chair college well. Protect police short focus life.",  
-    "alternateName": "Happy I nothing all forget tough fast amount. Tough husband blood also. Research treat soldier analysis.",  
-    "description": "Eight thousand thing style part thank. Chance could start clearly remain south meeting certain. Opportunity smile again imagine.",  
-    "dataProvider": "Do religious deal speak individual try. Try home tonight fight drop act instead. Measure whether entire design run Republican.",  
+    "id": "urn:ngsi-ld:settings-accessibility:id:UYNP:54359209",  
+    "dateCreated": "1999-03-01T07:36:19Z",  
+    "dateModified": "1971-10-23T22:48:05Z",  
+    "source": "Positive people government measure. Open though window fund happy dinner political. School full",  
+    "name": "Thousand allow senior third condition lay. Group success floor foot. Friend expert check ability bar at. Wife lead cover by talk head before.",  
+    "alternateName": "Mr represent yeah believe me you responsibility. Bill record com",  
+    "description": "Difficult little despite foot. First race maintain be road seem test investment.",  
+    "dataProvider": "Court five fine community together next entire. Somebody force century hot ",  
     "owner": [  
-        "urn:ngsi-ld:settings-accessibility:items:DRZA:51824785",  
-        "urn:ngsi-ld:settings-accessibility:items:CCNB:36841156"  
+        "urn:ngsi-ld:settings-accessibility:items:EXWB:77961969",  
+        "urn:ngsi-ld:settings-accessibility:items:BXLI:79322410"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:settings-accessibility:items:VLJR:83966680",  
-        "urn:ngsi-ld:settings-accessibility:items:YXOM:61457574"  
+        "urn:ngsi-ld:settings-accessibility:items:DWXN:61706508"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            -86.3649985,  
-            -23.385687  
+            -82.4260675,  
+            -77.021835  
         ]  
     },  
     "address": {  
-        "streetAddress": "Seem phone they let. Alone high crime group generation you book. Can head end apply side later.",  
-        "addressLocality": "Sound though relate. Southern blue arm high. Best become five step make.",  
-        "addressRegion": "Order see fall worker meeting.",  
-        "addressCountry": "Seat culture throw decade. There when too. Easy practice force marriage medical especially.",  
-        "postalCode": "Tend each drop list. Really check give its understand.",  
-        "postOfficeBoxNumber": "Central child tough. Describe camera both indeed modern sport. Charge condition decade. Hospital his already process nearly smile."  
+        "streetAddress": "A same interview she. Cold h",  
+        "addressLocality": "Enter size line security box. C",  
+        "addressRegion": "Next mouth throw believe. Possible street wrong finally. My commun",  
+        "addressCountry": "Clearly character simply couple issue small tel",  
+        "postalCode": "Detail office article indicate industry sister result military. Several may letter tonight hotel. So threat personal size couple way.",  
+        "postOfficeBoxNumber": "Tonight television apply remember personal whether father. While standard condition economic safe decide nearly.",  
+        "streetNr": "Lose between that peace site. Another condition stage product control month.",  
+        "district": "Record move society charge wall. Area degree budget. West according late."  
     },  
-    "areaServed": "Through parent price show today own mind drive. Shake couple south she of.",  
+    "areaServed": "Avoid civil c",  
+    "rt": [  
+        "oic.r.settings.accessibility"  
+    ],  
+    "if": [  
+        "oic.if.baseline"  
+    ],  
+    "voice-guide": false,  
+    "video-description": false,  
+    "caption": false,  
+    "caption-mode": "Serve analysis ahead space challenge at resource. Century city wide policy order. Almost can mo",  
+    "supported-caption-modes": [  
+        "Since attack stuff force lay eight class end."  
+    ],  
+    "high-contrast": true,  
+    "enlarge": false,  
+    "type": "settings-accessibility",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -290,82 +682,126 @@ settings-accessibility:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:settings-accessibility:id:YTYO:39074734",  
+    "id": "urn:ngsi-ld:settings-accessibility:id:UYNP:54359209",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1985-08-23T22:17:38Z"  
+            "@value": "1999-03-01T07:36:19Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1984-07-04T10:36:24Z"  
+            "@value": "1971-10-23T22:48:05Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "End during card evidence available music as yeah. Level more ever."  
+        "value": "Positive people government measure. Open though window fund happy dinner political. School full"  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Card these technology right cause fear. Citizen dream word teach international."  
+        "value": "Thousand allow senior third condition lay. Group success floor foot. Friend expert check ability bar at. Wife lead cover by talk head before."  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Character picture wide area friend."  
+        "value": "Mr represent yeah believe me you responsibility. Bill record com"  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Perhaps mother at main great. Week analysis mission a name image matter. Key region exist recently inside loss woman."  
+        "value": "Difficult little despite foot. First race maintain be road seem test investment."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Performance kid west company. Trade listen woman final. Leave including window wonder where purpose."  
+        "value": "Court five fine community together next entire. Somebody force century hot "  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:settings-accessibility:items:TSVP:47098070",  
-            "urn:ngsi-ld:settings-accessibility:items:KVUU:35972170"  
+            "urn:ngsi-ld:settings-accessibility:items:EXWB:77961969",  
+            "urn:ngsi-ld:settings-accessibility:items:BXLI:79322410"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:settings-accessibility:items:IBXG:89083403"  
+            "urn:ngsi-ld:settings-accessibility:items:DWXN:61706508"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                -27.4331595,  
-                -82.080853  
+                -82.4260675,  
+                -77.021835  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Beyond low hotel black poor page tonight. Account summer admit name some. Provide game change explain consider produce reveal.",  
-            "addressLocality": "Partner business best term high against. Others wish especially security whole if. Visit outside over player produce when.",  
-            "addressRegion": "Return he important least much consumer hot. Collection for number for tend.",  
-            "addressCountry": "Weight concern behind deal take sing. Tv hit during music poor whole. Cell couple character brother member describe fly.",  
-            "postalCode": "Activity green key drug far accept actually. Discussion soon break reflect TV minute. Pretty perhaps movement water mother.",  
-            "postOfficeBoxNumber": "Mention performance thus market majority who one. Speak score put feeling cost. Politics off keep everyone partner."  
+            "streetAddress": "A same interview she. Cold h",  
+            "addressLocality": "Enter size line security box. C",  
+            "addressRegion": "Next mouth throw believe. Possible street wrong finally. My commun",  
+            "addressCountry": "Clearly character simply couple issue small tel",  
+            "postalCode": "Detail office article indicate industry sister result military. Several may letter tonight hotel. So threat personal size couple way.",  
+            "postOfficeBoxNumber": "Tonight television apply remember personal whether father. While standard condition economic safe decide nearly.",  
+            "streetNr": "Lose between that peace site. Another condition stage product control month.",  
+            "district": "Record move society charge wall. Area degree budget. West according late."  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Out today dinner. Store power campaign your management rich even."  
+        "value": "Avoid civil c"  
     },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.settings.accessibility"  
+        ]  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "voice-guide": {  
+        "type": "Property",  
+        "value": false  
+    },  
+    "video-description": {  
+        "type": "Property",  
+        "value": false  
+    },  
+    "caption": {  
+        "type": "Property",  
+        "value": false  
+    },  
+    "caption-mode": {  
+        "type": "Property",  
+        "value": "Serve analysis ahead space challenge at resource. Century city wide policy order. Almost can mo"  
+    },  
+    "supported-caption-modes": {  
+        "type": "Property",  
+        "value": [  
+            "Since attack stuff force lay eight class end."  
+        ]  
+    },  
+    "high-contrast": {  
+        "type": "Property",  
+        "value": true  
+    },  
+    "enlarge": {  
+        "type": "Property",  
+        "value": false  
+    },  
+    "type": "settings-accessibility",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -373,7 +809,7 @@ settings-accessibility:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-[FAQ 10](https://smartdatamodels.org/index.php/faqs/)을 참조하여 규모 단위를 다루는 방법에 대한 답변을 확인하세요.  
+10](https://smartdatamodels.org/index.php/faqs/)를 참조하여 규모 단위를 다루는 방법에 대한 답변을 확인하세요.  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
