@@ -1,76 +1,78 @@
 {
-    "id": "urn:ngsi-ld:Inverter:id:JJXX:06248424",
+    "id": "urn:ngsi-ld:Inverter:id:FBOE:61943307",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1991-06-28T22:23:41Z"
+            "@value": "2017-08-27T05:59:39Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1995-07-25T00:46:03Z"
+            "@value": "2010-01-04T16:24:41Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Fear class ability close benefit. We moment score fund allow art."
+        "value": "Partner remember share structure Mrs. Get again official race."
     },
     "name": {
         "type": "Property",
-        "value": "Never ask too future billion window. May blood class sort message nothing. Fine through accept attorney fish."
+        "value": "Join approach reality worry away simple. Goal where memory"
     },
     "alternateName": {
         "type": "Property",
-        "value": "Bit middle research church exactly current. Like single ok cup."
+        "value": "Always whatever without huge. Culture capital Republican wife. Education offer score material court."
     },
     "description": {
         "type": "Property",
-        "value": "Population throw soldier action kitchen soon professor. Particularly which sea away financial of wife."
+        "value": "Recognize m"
     },
     "dataProvider": {
         "type": "Property",
-        "value": "Night public evening foot section. Clearly talk effort century. Natural attack street unit."
+        "value": "Third free and institution with house base fine. Win public discover argue market."
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:Inverter:items:AWPK:98614702",
-            "urn:ngsi-ld:Inverter:items:FCYN:45549371"
+            "urn:ngsi-ld:Inverter:items:TVRM:86781171",
+            "urn:ngsi-ld:Inverter:items:WZYG:44884108"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:Inverter:items:NTQT:09016096"
+            "urn:ngsi-ld:Inverter:items:GRNR:13478925"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                81.1846425,
-                53.749567
+                -18.0500775,
+                -100.852308
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "Operation probably one sell. Table stand number heart personal able bank. Draw prove continue second fact truth number loss.",
-            "addressLocality": "Plant street could drop expect. Either late Democrat to. Strategy difference practice address. Low size campaign see political thus.",
-            "addressRegion": "Would smile next body level Mr moment. Something court attack continue. Describe under market especially research weight million measure.",
-            "addressCountry": "Agent go case may break.",
-            "postalCode": "Agree activity without project agree. Its material evidence.",
-            "postOfficeBoxNumber": "Key despite computer apply system into. Exist water key answer building against. Wind site without more health quite good church."
+            "streetAddress": "Kind economy stand",
+            "addressLocality": "Recently audience sure her care informat",
+            "addressRegion": "Year stand stuff risk. Realize knowledge subject admit we successful. Former expect travel beyond.",
+            "addressCountry": "Phone space special parent page since bank. Conference list career sout",
+            "postalCode": "Race condition thought never none",
+            "postOfficeBoxNumber": "Society senior measure. Throughout program until memory design glass through.",
+            "streetNr": "Wall production your meet rather. Subject he animal today.",
+            "district": "Once protect throughout line take many future effect. Team without woul"
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "Meeting event office. Fill certain talk safe authority public."
+        "value": "Product hundred key TV wrong."
     },
     "rt": {
         "type": "Property",
@@ -80,53 +82,52 @@
     },
     "status": {
         "type": "Property",
-        "value": "trip"
+        "value": "on"
     },
     "ratedpower": {
         "type": "Property",
-        "value": 507.0
+        "value": 284.8
     },
     "minvoltmppt": {
         "type": "Property",
-        "value": 937.7
+        "value": 676.9
     },
     "maxvoltmppt": {
         "type": "Property",
-        "value": 7.0
+        "value": 707.0
     },
     "inputvoltage": {
         "type": "Property",
-        "value": 993.2
+        "value": 180.4
     },
     "inputcurrent": {
         "type": "Property",
-        "value": 875.3
+        "value": 981.9
     },
     "outputpower": {
         "type": "Property",
-        "value": 799.9
+        "value": 643.1
     },
     "timestamp": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1972-12-17T09:04:11Z"
+            "@value": "1980-10-25T16:17:04Z"
         }
     },
     "n": {
         "type": "Property",
-        "value": "Difficult however coach will cover final hear. Cup husband box they."
+        "value": "Black research "
     },
     "if": {
         "type": "Property",
         "value": [
             "oic.if.baseline",
-            "oic.if.baseline"
+            "oic.if.s"
         ]
     },
     "type": "Inverter",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
