@@ -15,7 +15,15 @@
 ## 属性列表  
 
 <sup><sub>[*] 如果属性中没有类型，是因为它可能有多个类型或不同的格式/模式</sub></sup>。  
-- `if[array]`: 该资源支持的 OCF 接口集。  - `muscleoxygensaturation[number]`: 该属性描述肌肉氧饱和度（SmO2），即肌肉毛细血管中氧饱和血红蛋白的百分比。单位为百分比。  - `n[string]`: 资源的友好名称  - `rt[array]`: 资源类型。  - `type[string]`: NGSI 实体类型。必须是肌肉氧饱和度  <!-- /30-PropertiesList -->  
+- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国家。例如，西班牙  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 街道地址所在的地点，以及该地点所在的区域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: 地点所在的地区，以及该地区位于哪个国家  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 地区是一种行政区划，在一些国家由地方政府管理    
+	- `postOfficeBoxNumber[string]`: 用于邮政信箱地址的邮政信箱号码。例如：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 邮政编码。例如：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 街道地址  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: 标识公共街道上特定房产的编号    
+- `alternateName[string]`: 该项目的替代名称  - `areaServed[string]`: 提供服务或提供物品的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 标识统一数据实体提供者的字符序列  - `dateCreated[date-time]`: 实体创建时间戳。通常由存储平台分配  - `dateModified[date-time]`: 实体最后一次修改的时间戳。通常由存储平台分配  - `description[string]`: 项目描述  - `id[*]`: 实体的唯一标识符  - `if[array]`: 该资源支持的 OCF 接口集。  - `location[*]`: 项目的 Geojson 引用。它可以是点、线条字符串、多边形、多点、多线条字符串或多多边形  - `muscleoxygensaturation[number]`: 该属性描述肌肉氧饱和度（SmO2），即肌肉毛细血管中氧饱和血红蛋白的百分比。单位为百分比。  - `n[string]`: 资源的友好名称  - `name[string]`: 该项目的名称  - `owner[array]`: 包含一个 JSON 编码字符序列的列表，其中引用了所有者的唯一 Ids  - `rt[array]`: 资源类型。  - `seeAlso[*]`: 指向有关该项目的其他资源的 uri 列表  - `source[string]`: 以 URL 形式给出实体数据原始来源的字符串。建议使用源提供者的完全合格域名或源对象的 URL  - `type[string]`: NGSI 实体类型。必须是肌肉氧饱和度  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 所需属性  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -32,6 +40,109 @@
 MuscleOxygenSaturation:    
   description: 'Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the muscle oxygen saturation (SmO2), which is the percentage of hemoglobin that is saturated with oxygen in the capillaries of a muscle.  The unit is percentage.  The smo2 Property is a read-only value that is provided by the server.'    
   properties:    
+    address:    
+      description: The mailing address    
+      properties:    
+        addressCountry:    
+          description: 'The country. For example, Spain'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
+        addressLocality:    
+          description: 'The locality in which the street address is, and which is in the region'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
+        addressRegion:    
+          description: 'The region in which the locality is, and which is in the country'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        postOfficeBoxNumber:    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
+        postalCode:    
+          description: 'The postal code. For example, 24004'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
+        streetAddress:    
+          description: The street address    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      type: object    
+      x-ngsi:    
+        model: https://schema.org/address    
+        type: Property    
+    alternateName:    
+      description: An alternative name for this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    areaServed:    
+      description: The geographic area where a service or offered item is provided    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    dataProvider:    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateCreated:    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateModified:    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    description:    
+      description: A description of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    id:    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
+      x-ngsi:    
+        type: Property    
     if:    
       description: The OCF Interface set supported by this Resource.    
       items:    
@@ -45,6 +156,171 @@ MuscleOxygenSaturation:
       uniqueItems: true    
       x-ngsi:    
         type: Property    
+    location:    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+      oneOf:    
+        - description: Geojson reference to the item. Point    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                type: number    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - Point    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Point    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - LineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON LineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 4    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - Polygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Polygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPoint    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPoint    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiLineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiLineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    items:    
+                      type: number    
+                    minItems: 2    
+                    type: array    
+                  minItems: 4    
+                  type: array    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPolygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPolygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+      x-ngsi:    
+        type: GeoProperty    
     muscleoxygensaturation:    
       description: 'This Property describes the muscle oxygen saturation (SmO2), which is the percentage of hemoglobin that is saturated with oxygen in the capillaries of a muscle. The unit is percentage.'    
       maximum: 100    
@@ -60,6 +336,33 @@ MuscleOxygenSaturation:
       type: string    
       x-ngsi:    
         type: Property    
+    name:    
+      description: The name of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    owner:    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
+      items:    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     rt:    
       description: The Resource Type.    
       items:    
@@ -70,6 +373,23 @@ MuscleOxygenSaturation:
       readOnly: true    
       type: array    
       uniqueItems: true    
+      x-ngsi:    
+        type: Property    
+    seeAlso:    
+      description: list of uri pointing to additional resources about the item    
+      oneOf:    
+        - items:    
+            format: uri    
+            type: string    
+          minItems: 1    
+          type: array    
+        - format: uri    
+          type: string    
+      x-ngsi:    
+        type: Property    
+    source:    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
+      type: string    
       x-ngsi:    
         type: Property    
     type:    
@@ -101,38 +421,48 @@ MuscleOxygenSaturation:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:MuscleOxygenSaturation:id:MJZI:03017437",  
-  "dateCreated": "2013-07-10T17:13:30Z",  
-  "dateModified": "2012-11-08T18:30:37Z",  
-  "source": "Worker car play from product become city. Heavy act gas must. Choice former often political at face to hot.",  
-  "name": "Support center item sport. Laugh discover cause herself surface. Author sense certainly cover of beyond.",  
-  "alternateName": "Something goal decision nearly dark. House consumer like will necessary seat place note. Marriage hour free special everybody agreement me.",  
-  "description": "Choose often single onto game smile right off. Together up fast he already maintain lawyer.",  
-  "dataProvider": "Responsibility population a paper base material certain. Tough item offer road condition nice. Generation however trip car interesting south me leg.",  
-  "owner": [  
-    "urn:ngsi-ld:MuscleOxygenSaturation:items:WGLA:65975855",  
-    "urn:ngsi-ld:MuscleOxygenSaturation:items:CMHD:47128517"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:MuscleOxygenSaturation:items:VUSP:21428811",  
-    "urn:ngsi-ld:MuscleOxygenSaturation:items:WZCN:91502055"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -83.5104955,  
-      93.47094  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "His staff second game clearly pass guess.",  
-    "addressLocality": "Impact specific get season process. Live scientist customer white statement low. Director notice option full dark.",  
-    "addressRegion": "Great subject next likely sound reason suffer. Eye quickly spend head speech raise return. Building situation market court including appear together. Show here vote hard use involve help.",  
-    "addressCountry": "Teach box fear room eat religious. Through drive per available tough. Hour artist at beautiful return public inside. Magazine near thousand expect sound claim.",  
-    "postalCode": "Get off meeting ahead close or break. Happy four rule future and series. Table happen possible everybody mean.",  
-    "postOfficeBoxNumber": "Option that likely world very who standard. Impact without pay magazine information smile. Particular him rate minute particularly."  
-  },  
-  "areaServed": "Well memory author they long final position. Door strong rest certainly final."  
+    "id": "urn:ngsi-ld:MuscleOxygenSaturation:id:MTWT:28907643",  
+    "dateCreated": "1996-06-23T09:43:32Z",  
+    "dateModified": "2009-03-27T18:29:11Z",  
+    "source": "Sign understand power education. Ever also blue range none.",  
+    "name": "Yourself Democrat college start stage you leg.",  
+    "alternateName": "Measure candidate your agree father audience attorney. Hit produce need once work",  
+    "description": "Around senior forget treatment family hour if. Fall effort now sign book level.",  
+    "dataProvider": "Clearly simple civil site great week better. Tv effort situation military way young. Box become however co",  
+    "owner": [  
+        "urn:ngsi-ld:MuscleOxygenSaturation:items:TVUV:17185482",  
+        "urn:ngsi-ld:MuscleOxygenSaturation:items:JQNG:29889794"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:MuscleOxygenSaturation:items:OPKU:41094765"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            71.7190375,  
+            -58.523052  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Form ag",  
+        "addressLocality": "Condition size feeling attack bit fall. Shou",  
+        "addressRegion": "Forget establish it million majority above support. Approach people himself plant weight certainly.",  
+        "addressCountry": "Lawyer modern take poor tonight ok without. Evening meet at under caus",  
+        "postalCode": "Expert kid teacher view for guess market. Nature analysis receive design let few upon. Cause hard treatment order tree line news.",  
+        "postOfficeBoxNumber": "Number ground student ",  
+        "streetNr": "Little mission stoc",  
+        "district": "List per ever use. Body provide page adult. Likely situation court well wide."  
+    },  
+    "areaServed": "Play idea benefit hope. Guess expert and network threat make. Mr drop turn next. Concern deal loss social trial kid.",  
+    "muscleoxygensaturation": 27.7,  
+    "rt": [  
+        "oic.r.muscleoxygensaturation"  
+    ],  
+    "n": "Coach it fac",  
+    "if": [  
+        "oic.if.s"  
+    ],  
+    "type": "MuscleOxygenSaturation"  
 }  
 ```  
 </details>  
@@ -141,79 +471,96 @@ MuscleOxygenSaturation:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:MuscleOxygenSaturation:id:MJZI:03017437"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2013-07-10T17:13:30Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2012-11-08T18:30:37Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Worker car play from product become city. Heavy act gas must. Choice former often political at face to hot."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Support center item sport. Laugh discover cause herself surface. Author sense certainly cover of beyond."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Something goal decision nearly dark. House consumer like will necessary seat place note. Marriage hour free special everybody agreement me."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Choose often single onto game smile right off. Together up fast he already maintain lawyer."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Responsibility population a paper base material certain. Tough item offer road condition nice. Generation however trip car interesting south me leg."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:MuscleOxygenSaturation:items:WGLA:65975855",  
-      "urn:ngsi-ld:MuscleOxygenSaturation:items:CMHD:47128517"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:MuscleOxygenSaturation:items:VUSP:21428811",  
-      "urn:ngsi-ld:MuscleOxygenSaturation:items:WZCN:91502055"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -83.5104955,  
-        93.47094  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "His staff second game clearly pass guess.",  
-      "addressLocality": "Impact specific get season process. Live scientist customer white statement low. Director notice option full dark.",  
-      "addressRegion": "Great subject next likely sound reason suffer. Eye quickly spend head speech raise return. Building situation market court including appear together. Show here vote hard use involve help.",  
-      "addressCountry": "Teach box fear room eat religious. Through drive per available tough. Hour artist at beautiful return public inside. Magazine near thousand expect sound claim.",  
-      "postalCode": "Get off meeting ahead close or break. Happy four rule future and series. Table happen possible everybody mean.",  
-      "postOfficeBoxNumber": "Option that likely world very who standard. Impact without pay magazine information smile. Particular him rate minute particularly."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Well memory author they long final position. Door strong rest certainly final."  
-  }  
+    "id": "urn:ngsi-ld:MuscleOxygenSaturation:id:MTWT:28907643",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1996-06-23T09:43:32Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "2009-03-27T18:29:11Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Sign understand power education. Ever also blue range none."  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Yourself Democrat college start stage you leg."  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Measure candidate your agree father audience attorney. Hit produce need once work"  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Around senior forget treatment family hour if. Fall effort now sign book level."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Clearly simple civil site great week better. Tv effort situation military way young. Box become however co"  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:MuscleOxygenSaturation:items:TVUV:17185482",  
+            "urn:ngsi-ld:MuscleOxygenSaturation:items:JQNG:29889794"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:MuscleOxygenSaturation:items:OPKU:41094765"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                71.7190375,  
+                -58.523052  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Form ag",  
+            "addressLocality": "Condition size feeling attack bit fall. Shou",  
+            "addressRegion": "Forget establish it million majority above support. Approach people himself plant weight certainly.",  
+            "addressCountry": "Lawyer modern take poor tonight ok without. Evening meet at under caus",  
+            "postalCode": "Expert kid teacher view for guess market. Nature analysis receive design let few upon. Cause hard treatment order tree line news.",  
+            "postOfficeBoxNumber": "Number ground student ",  
+            "streetNr": "Little mission stoc",  
+            "district": "List per ever use. Body provide page adult. Likely situation court well wide."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Play idea benefit hope. Guess expert and network threat make. Mr drop turn next. Concern deal loss social trial kid."  
+    },  
+    "muscleoxygensaturation": {  
+        "type": "Number",  
+        "value": 27.7  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.muscleoxygensaturation"  
+        ]  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Coach it fac"  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.s"  
+        ]  
+    },  
+    "type": "MuscleOxygenSaturation"  
 }  
 ```  
 </details>  
@@ -222,41 +569,50 @@ MuscleOxygenSaturation:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:MuscleOxygenSaturation:id:MJZI:03017437",  
-    "dateCreated": "2013-07-10T17:13:30Z",  
-    "dateModified": "2012-11-08T18:30:37Z",  
-    "source": "Worker car play from product become city. Heavy act gas must. Choice former often political at face to hot.",  
-    "name": "Support center item sport. Laugh discover cause herself surface. Author sense certainly cover of beyond.",  
-    "alternateName": "Something goal decision nearly dark. House consumer like will necessary seat place note. Marriage hour free special everybody agreement me.",  
-    "description": "Choose often single onto game smile right off. Together up fast he already maintain lawyer.",  
-    "dataProvider": "Responsibility population a paper base material certain. Tough item offer road condition nice. Generation however trip car interesting south me leg.",  
+    "id": "urn:ngsi-ld:MuscleOxygenSaturation:id:MTWT:28907643",  
+    "dateCreated": "1996-06-23T09:43:32Z",  
+    "dateModified": "2009-03-27T18:29:11Z",  
+    "source": "Sign understand power education. Ever also blue range none.",  
+    "name": "Yourself Democrat college start stage you leg.",  
+    "alternateName": "Measure candidate your agree father audience attorney. Hit produce need once work",  
+    "description": "Around senior forget treatment family hour if. Fall effort now sign book level.",  
+    "dataProvider": "Clearly simple civil site great week better. Tv effort situation military way young. Box become however co",  
     "owner": [  
-        "urn:ngsi-ld:MuscleOxygenSaturation:items:WGLA:65975855",  
-        "urn:ngsi-ld:MuscleOxygenSaturation:items:CMHD:47128517"  
+        "urn:ngsi-ld:MuscleOxygenSaturation:items:TVUV:17185482",  
+        "urn:ngsi-ld:MuscleOxygenSaturation:items:JQNG:29889794"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:MuscleOxygenSaturation:items:VUSP:21428811",  
-        "urn:ngsi-ld:MuscleOxygenSaturation:items:WZCN:91502055"  
+        "urn:ngsi-ld:MuscleOxygenSaturation:items:OPKU:41094765"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            -83.5104955,  
-            93.47094  
+            71.7190375,  
+            -58.523052  
         ]  
     },  
     "address": {  
-        "streetAddress": "His staff second game clearly pass guess.",  
-        "addressLocality": "Impact specific get season process. Live scientist customer white statement low. Director notice option full dark.",  
-        "addressRegion": "Great subject next likely sound reason suffer. Eye quickly spend head speech raise return. Building situation market court including appear together. Show here vote hard use involve help.",  
-        "addressCountry": "Teach box fear room eat religious. Through drive per available tough. Hour artist at beautiful return public inside. Magazine near thousand expect sound claim.",  
-        "postalCode": "Get off meeting ahead close or break. Happy four rule future and series. Table happen possible everybody mean.",  
-        "postOfficeBoxNumber": "Option that likely world very who standard. Impact without pay magazine information smile. Particular him rate minute particularly."  
+        "streetAddress": "Form ag",  
+        "addressLocality": "Condition size feeling attack bit fall. Shou",  
+        "addressRegion": "Forget establish it million majority above support. Approach people himself plant weight certainly.",  
+        "addressCountry": "Lawyer modern take poor tonight ok without. Evening meet at under caus",  
+        "postalCode": "Expert kid teacher view for guess market. Nature analysis receive design let few upon. Cause hard treatment order tree line news.",  
+        "postOfficeBoxNumber": "Number ground student ",  
+        "streetNr": "Little mission stoc",  
+        "district": "List per ever use. Body provide page adult. Likely situation court well wide."  
     },  
-    "areaServed": "Well memory author they long final position. Door strong rest certainly final.",  
+    "areaServed": "Play idea benefit hope. Guess expert and network threat make. Mr drop turn next. Concern deal loss social trial kid.",  
+    "muscleoxygensaturation": 27.7,  
+    "rt": [  
+        "oic.r.muscleoxygensaturation"  
+    ],  
+    "n": "Coach it fac",  
+    "if": [  
+        "oic.if.s"  
+    ],  
+    "type": "MuscleOxygenSaturation",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -266,82 +622,104 @@ MuscleOxygenSaturation:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:MuscleOxygenSaturation:id:IBLJ:74568783",  
+    "id": "urn:ngsi-ld:MuscleOxygenSaturation:id:MTWT:28907643",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2006-10-03T06:43:11Z"  
+            "@value": "1996-06-23T09:43:32Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2014-04-01T18:48:04Z"  
+            "@value": "2009-03-27T18:29:11Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Open must meeting. System describe way act several bag available."  
+        "value": "Sign understand power education. Ever also blue range none."  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Anything Mr some board area science miss. Particularly finish near hard majority writer whom. Administration away especially generation recent."  
+        "value": "Yourself Democrat college start stage you leg."  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Maintain never possible week. Her anyone college cost."  
+        "value": "Measure candidate your agree father audience attorney. Hit produce need once work"  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Rate system audience will lot middle. War add truth pattern stuff know marriage. Party better week suggest food language fly."  
+        "value": "Around senior forget treatment family hour if. Fall effort now sign book level."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Ready fear shake where throughout which. Next drop letter rate job. Health method spring fact there music share appear."  
+        "value": "Clearly simple civil site great week better. Tv effort situation military way young. Box become however co"  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:MuscleOxygenSaturation:items:XLVR:40170732",  
-            "urn:ngsi-ld:MuscleOxygenSaturation:items:RWDB:65001685"  
+            "urn:ngsi-ld:MuscleOxygenSaturation:items:TVUV:17185482",  
+            "urn:ngsi-ld:MuscleOxygenSaturation:items:JQNG:29889794"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:MuscleOxygenSaturation:items:LHGZ:59229115"  
+            "urn:ngsi-ld:MuscleOxygenSaturation:items:OPKU:41094765"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                -14.2965595,  
-                -144.282412  
+                71.7190375,  
+                -58.523052  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Kid world energy before sense dog. Skin force picture nearly manager. Hotel open mouth know ground view should.",  
-            "addressLocality": "Laugh report central space political. Student wait institution soldier reveal book. Kid decade pass customer.",  
-            "addressRegion": "Southern institution adult light member. Occur smile fish couple.",  
-            "addressCountry": "Artist activity itself administration since window. Can weight figure about remember nation. Popular charge part. Fight before wide pressure art design charge.",  
-            "postalCode": "Sea current fight.",  
-            "postOfficeBoxNumber": "Visit style part begin try next face. Either choose music person. Life magazine management image bill social."  
+            "streetAddress": "Form ag",  
+            "addressLocality": "Condition size feeling attack bit fall. Shou",  
+            "addressRegion": "Forget establish it million majority above support. Approach people himself plant weight certainly.",  
+            "addressCountry": "Lawyer modern take poor tonight ok without. Evening meet at under caus",  
+            "postalCode": "Expert kid teacher view for guess market. Nature analysis receive design let few upon. Cause hard treatment order tree line news.",  
+            "postOfficeBoxNumber": "Number ground student ",  
+            "streetNr": "Little mission stoc",  
+            "district": "List per ever use. Body provide page adult. Likely situation court well wide."  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "High firm card this south Republican gun. Last lead wrong key matter get kid. Southern little fall example."  
+        "value": "Play idea benefit hope. Guess expert and network threat make. Mr drop turn next. Concern deal loss social trial kid."  
     },  
+    "muscleoxygensaturation": {  
+        "type": "Property",  
+        "value": 27.7  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.muscleoxygensaturation"  
+        ]  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Coach it fac"  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.s"  
+        ]  
+    },  
+    "type": "MuscleOxygenSaturation",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
