@@ -1,118 +1,103 @@
 {
-  "id": {
-    "type": "string",
-    "value": "urn:ngsi-ld:Torque:id:AHRY:39993102"
-  },
-  "dateCreated": {
-    "format": "date-time",
-    "type": "string",
-    "value": "2020-07-30T12:21:20Z"
-  },
-  "dateModified": {
-    "format": "date-time",
-    "type": "string",
-    "value": "2000-07-15T22:05:12Z"
-  },
-  "source": {
-    "type": "string",
-    "value": "Kind democratic example. Safe determine early activity. Response rule cultural student himself administration reality."
-  },
-  "name": {
-    "type": "string",
-    "value": "Country but scientist heart structure easy. Chance past life laugh."
-  },
-  "alternateName": {
-    "type": "string",
-    "value": "Network serve east moment can. Grow democratic party. Church hour response dream."
-  },
-  "description": {
-    "type": "string",
-    "value": "Dog food country blood mean analysis. Practice here gun knowledge remain. Various information day management trip mouth keep might."
-  },
-  "dataProvider": {
-    "type": "string",
-    "value": "Blue inside serve culture modern. Identify analysis cover probably leave. Probably senior teach couple."
-  },
-  "owner": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:Torque:items:XCPF:15637893",
-      "urn:ngsi-ld:Torque:items:BIEE:45180365"
-    ]
-  },
-  "seeAlso": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:Torque:items:CLYF:27135589",
-      "urn:ngsi-ld:Torque:items:LUCC:27975542"
-    ]
-  },
-  "location": {
-    "type": "object",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        9.9461635,
-        53.930522
-      ]
-    }
-  },
-  "address": {
-    "type": "object",
-    "value": {
-      "streetAddress": "Radio people bag control foot person for.",
-      "addressLocality": "Forget somebody list bit ahead. Parent discuss color low accept.",
-      "addressRegion": "Range team public note what explain. Life garden sound dark world course.",
-      "addressCountry": "Blue hair compare issue believe you. Thousand everybody since day give student. Common break question. Policy let daughter challenge risk fast.",
-      "postalCode": "Republican turn war development impact own message. Question despite concern five indeed.",
-      "postOfficeBoxNumber": "With member knowledge newspaper east ahead none beautiful. Want choose physical create upon month. Hundred officer whom movement team within remember."
-    }
-  },
-  "areaServed": {
-    "type": "string",
-    "value": "Lot move peace water more pass. Whatever marriage outside third knowledge a sense. Have purpose majority court interview."
-  },
-  "torque": {
-    "type": "object",
-    "value": {
-      "type": "Property",
-      "value": 73.3
-    }
-  },
-  "rt": {
-    "type": "array",
-    "value": [
-      "oic.r.torque",
-      "oic.r.torque"
-    ]
-  },
-  "n": {
-    "type": "string",
-    "value": "Property blood turn fast center standard very. Sit serve never can once about challenge. Try list choice control."
-  },
-  "if": {
-    "type": "array",
-    "value": [
-      "oic.if.s",
-      "oic.if.s"
-    ]
-  },
-  "range": {
-    "type": "array",
-    "value": [
-      29.2,
-      164.7
-    ]
-  },
-  "step": {
-    "type": "object",
-    "value": {
-      "type": "Property",
-      "value": 742.9
-    }
-  },
-  "type": {
-    "type": "string",
-    "value": "Torque"
-  }
+    "id": "urn:ngsi-ld:Torque:id:GOML:64303921",
+    "dateCreated": {
+        "type": "DateTime",
+        "value": "2007-03-08T15:05:03Z"
+    },
+    "dateModified": {
+        "type": "DateTime",
+        "value": "1980-04-19T10:28:10Z"
+    },
+    "source": {
+        "type": "Text",
+        "value": "Work chance image quite there many true follow."
+    },
+    "name": {
+        "type": "Text",
+        "value": "Along chance either six success on. At be than always different American address. Former claim chance prevent"
+    },
+    "alternateName": {
+        "type": "Text",
+        "value": "Off question source. Wrong section town deal movemen"
+    },
+    "description": {
+        "type": "Text",
+        "value": "Now four management energy stay significant his. Artist "
+    },
+    "dataProvider": {
+        "type": "Text",
+        "value": "Indi"
+    },
+    "owner": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:Torque:items:PYEA:60976701",
+            "urn:ngsi-ld:Torque:items:GMZY:09925185"
+        ]
+    },
+    "seeAlso": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:Torque:items:VWTJ:71097951"
+        ]
+    },
+    "location": {
+        "type": "geo:json",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -55.8794045,
+                28.115695
+            ]
+        }
+    },
+    "address": {
+        "type": "StructuredValue",
+        "value": {
+            "streetAddress": "Million size country site. He couple ground place what top.",
+            "addressLocality": "Effo",
+            "addressRegion": "Recognize information figure box international not type. Indeed between similar safe. Social issue indicate. Try while reveal bad audience grow ahead.",
+            "addressCountry": "Act window standard audience. Debat",
+            "postalCode": "Cost both general where. Agreement decade friend which.",
+            "postOfficeBoxNumber": "Player contain year bill ok choose today. Source firm drug senior.",
+            "streetNr": "Information animal car after back available. Federal indicate unit opportunity fear great.",
+            "district": "Plan PM more heavy "
+        }
+    },
+    "areaServed": {
+        "type": "Text",
+        "value": "Painting child reflect up control instead company. Futur"
+    },
+    "torque": {
+        "type": "Number",
+        "value": 285.9
+    },
+    "rt": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.r.torque"
+        ]
+    },
+    "n": {
+        "type": "Text",
+        "value": "Interview carry build impr"
+    },
+    "if": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.if.baseline"
+        ]
+    },
+    "range": {
+        "type": "StructuredValue",
+        "value": [
+            421.9,
+            523.8
+        ]
+    },
+    "step": {
+        "type": "Number",
+        "value": 857.2
+    },
+    "type": "Torque"
 }
