@@ -1,118 +1,103 @@
 {
-  "id": {
-    "type": "string",
-    "value": "urn:ngsi-ld:Speed:id:TMBQ:86557501"
-  },
-  "dateCreated": {
-    "format": "date-time",
-    "type": "string",
-    "value": "1971-05-07T09:22:01Z"
-  },
-  "dateModified": {
-    "format": "date-time",
-    "type": "string",
-    "value": "2001-02-25T04:31:00Z"
-  },
-  "source": {
-    "type": "string",
-    "value": "Standard trip consider development. Analysis walk similar clearly commercial western animal. News mouth year consumer."
-  },
-  "name": {
-    "type": "string",
-    "value": "Office arrive structure down. Make become number mind."
-  },
-  "alternateName": {
-    "type": "string",
-    "value": "Ahead recognize event guy player land. West community increase sure. Night office account toward."
-  },
-  "description": {
-    "type": "string",
-    "value": "Stock can best face treat first arrive here. She some recent fight wrong white. Somebody month soon future but reflect explain."
-  },
-  "dataProvider": {
-    "type": "string",
-    "value": "Black member here serve evidence near wind. Learn college say interesting make great affect. Democrat local because treatment."
-  },
-  "owner": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:Speed:items:EOKC:04139618",
-      "urn:ngsi-ld:Speed:items:LTWJ:10169397"
-    ]
-  },
-  "seeAlso": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:Speed:items:ARYG:93617525",
-      "urn:ngsi-ld:Speed:items:IUVN:24628987"
-    ]
-  },
-  "location": {
-    "type": "object",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        63.217539,
-        -175.83232
-      ]
-    }
-  },
-  "address": {
-    "type": "object",
-    "value": {
-      "streetAddress": "Red ahead culture reality Mr difficult. Politics involve note just.",
-      "addressLocality": "Ability watch Mrs minute. Artist about quite read exactly education director keep. Director else away power perhaps.",
-      "addressRegion": "Gun more short then action. Skin course father house. Two guess strong onto.",
-      "addressCountry": "Necessary memory drug available newspaper. Discussion modern away coach foot plant.",
-      "postalCode": "Consumer future measure total many order early. Leave defense center around company attorney customer.",
-      "postOfficeBoxNumber": "Direction small strategy oil sit."
-    }
-  },
-  "areaServed": {
-    "type": "string",
-    "value": "Future heart guess kitchen set check official."
-  },
-  "speed": {
-    "type": "object",
-    "value": {
-      "type": "Property",
-      "value": 242.3
-    }
-  },
-  "rt": {
-    "type": "array",
-    "value": [
-      "oic.r.speed",
-      "oic.r.speed"
-    ]
-  },
-  "n": {
-    "type": "string",
-    "value": "Nice I happy ground foreign fall. Sell style treat. Series build be continue."
-  },
-  "if": {
-    "type": "array",
-    "value": [
-      "oic.if.baseline",
-      "oic.if.s"
-    ]
-  },
-  "range": {
-    "type": "array",
-    "value": [
-      255.1,
-      419.5
-    ]
-  },
-  "step": {
-    "type": "object",
-    "value": {
-      "type": "Property",
-      "value": 266.2
-    }
-  },
-  "type": {
-    "type": "string",
-    "value": "Speed"
-  }
+    "id": "urn:ngsi-ld:Speed:id:IWUQ:49277359",
+    "dateCreated": {
+        "type": "DateTime",
+        "value": "2019-06-06T15:04:38Z"
+    },
+    "dateModified": {
+        "type": "DateTime",
+        "value": "1973-01-31T23:49:09Z"
+    },
+    "source": {
+        "type": "Text",
+        "value": "Including surface suggest note church others develop. Yard group bag question better represent southern."
+    },
+    "name": {
+        "type": "Text",
+        "value": "Worry without light off consumer from old. Indeed prevent hard respond success."
+    },
+    "alternateName": {
+        "type": "Text",
+        "value": "Culture outside view rate song key. Response before job if clearly visit claim. Good presi"
+    },
+    "description": {
+        "type": "Text",
+        "value": "Occur wind fast. Board painting case main force value. Yourself mission blue set agency relate might."
+    },
+    "dataProvider": {
+        "type": "Text",
+        "value": "None from reflect agent c"
+    },
+    "owner": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:Speed:items:OPJL:54746889",
+            "urn:ngsi-ld:Speed:items:NKGZ:02642474"
+        ]
+    },
+    "seeAlso": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:Speed:items:ERQF:65897920"
+        ]
+    },
+    "location": {
+        "type": "geo:json",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -33.339846,
+                121.076645
+            ]
+        }
+    },
+    "address": {
+        "type": "StructuredValue",
+        "value": {
+            "streetAddress": "Add animal travel citizen various best everything. Whether life rock account. Happen tal",
+            "addressLocality": "Image sit culture feel population. Someti",
+            "addressRegion": "Young about through debate community. Deep eight baby huge car want beyond. Some suggest live network car put.",
+            "addressCountry": "Rule spring recognize carry interview. Since requ",
+            "postalCode": "Wife total whole cultural. Term determine leader reduce gas marriage. Knowledge will radio scene.",
+            "postOfficeBoxNumber": "Beat situation reveal. Analysis few to bank a",
+            "streetNr": "Newspaper direction about person teach. To front picture book. Travel energy south cost mouth rise kid.",
+            "district": "Him reflec"
+        }
+    },
+    "areaServed": {
+        "type": "Text",
+        "value": "Company case by particularly key open. Authority her himself interview lay. Garden cell question dark."
+    },
+    "speed": {
+        "type": "Number",
+        "value": 843.6
+    },
+    "rt": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.r.speed"
+        ]
+    },
+    "n": {
+        "type": "Text",
+        "value": "Idea respond both leave do"
+    },
+    "if": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.if.baseline"
+        ]
+    },
+    "range": {
+        "type": "StructuredValue",
+        "value": [
+            159.3,
+            265.1
+        ]
+    },
+    "step": {
+        "type": "Number",
+        "value": 879.9
+    },
+    "type": "Speed"
 }
