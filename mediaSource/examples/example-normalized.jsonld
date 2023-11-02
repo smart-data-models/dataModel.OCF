@@ -1,79 +1,114 @@
 {
-    "id": "urn:ngsi-ld:mediaSource:id:UFBP:40162706",
+    "id": "urn:ngsi-ld:mediaSource:id:LJAC:84422647",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2017-03-03T06:37:12Z"
+            "@value": "2002-02-03T14:43:20Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1971-08-11T10:31:18Z"
+            "@value": "2006-02-11T14:03:31Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Cultural player sort trouble heart lot production deal. Themselves car foot student. Else law act night third."
+        "value": "Institution research bad "
     },
     "name": {
         "type": "Property",
-        "value": "Often dog democratic more short recognize past. Each social purpose four key relate. Live last science. Long real seem free hard."
+        "value": "Probably yours"
     },
     "alternateName": {
         "type": "Property",
-        "value": "Rest old Congress see small. May plant financial attack life figure. Meeting baby throw talk."
+        "value": "Coach have school join hour. Nothing affect d"
     },
     "description": {
         "type": "Property",
-        "value": "Girl first mouth help friend hundred foot program. Add if close. Country even interesting response both decision. Maintain chance customer war thousand others situation."
+        "value": "Knowledge large close new election within reduce. News eye majority."
     },
     "dataProvider": {
         "type": "Property",
-        "value": "Your organization week course. Today less try list stuff life."
+        "value": "We morning easy although rich. Under save have southern one most. Know why ball attention responsibility da"
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:mediaSource:items:ZIVE:79826817",
-            "urn:ngsi-ld:mediaSource:items:MYBU:68140592"
+            "urn:ngsi-ld:mediaSource:items:TLEL:58779962",
+            "urn:ngsi-ld:mediaSource:items:REDI:91656547"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:mediaSource:items:REKA:63415753"
+            "urn:ngsi-ld:mediaSource:items:AJGB:26743605"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                4.9847935,
-                2.355449
+                67.4900935,
+                -69.768952
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "Before campaign form lead. Test rate piece point together quickly claim.",
-            "addressLocality": "Still response feel thank. Season environmental quite reflect rise.",
-            "addressRegion": "Pm sound medical least want factor. Through treat look expect although visit health purpose. Reveal actually thought.",
-            "addressCountry": "Policy own have. Allow beat need interesting. They drop condition citizen former.",
-            "postalCode": "Staff them foot need town.",
-            "postOfficeBoxNumber": "Heavy too charge level blue. Free generation relate fast American lose."
+            "streetAddress": "Summer fi",
+            "addressLocality": "Network movie successful join carry result amount. Often mouth throw wear hit car technolo",
+            "addressRegion": "Crime both beat leader today issue personal area. Stock heart industry allow cover price within. Seat reduce attention language push image each six.",
+            "addressCountry": "Animal them involve others home sense after. Occur page minute.",
+            "postalCode": "Discuss sure avoid pretty building season. Available health them throw present. Even blue young city leave anything.",
+            "postOfficeBoxNumber": "May which writer need sell follow. Reason first thank represent drive. Parent consumer north adult list standard head.",
+            "streetNr": "Fall seat evening beautiful image. Other where suggest right break. Whether check mission draw go lose.",
+            "district": "Turn its part Republican resource baby memory. Table meet serve shoulder. Box film film meet drug stuff."
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "Similar history more serious American city. Move make memory tax. Reveal energy catch interesting region too. Sing serve president."
+        "value": "Act camera human. Onto tax vote on. Keep suggest mother war able college door."
     },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.mediasource"
+        ]
+    },
+    "status": {
+        "type": "Property",
+        "value": true
+    },
+    "sourceType": {
+        "type": "Property",
+        "value": "audioPlusVideo"
+    },
+    "sourceName": {
+        "type": "Property",
+        "value": "Finally during country operation task time attorney those. Reality account future never manager."
+    },
+    "sourceNumber": {
+        "type": "Property",
+        "value": "Help government clearly alone."
+    },
+    "n": {
+        "type": "Property",
+        "value": "Doctor meet though. Adult voice large oil communit"
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.baseline",
+            "oic.if.a"
+        ]
+    },
+    "type": "mediaSource",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
