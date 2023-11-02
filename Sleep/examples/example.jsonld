@@ -1,38 +1,66 @@
 {
-    "id": "urn:ngsi-ld:Sleep:id:DQYD:66419001",
-    "dateCreated": "2006-06-22T00:23:34Z",
-    "dateModified": "1985-04-14T07:05:46Z",
-    "source": "Team improve per difficult design perhaps remain. Something town now year.",
-    "name": "Debate notice eat share day fire serve seem. Through want husband.",
-    "alternateName": "System his with management resource real various. Task right mean paper western seem near beat. Skin expert that pattern drive free that.",
-    "description": "Here ability even exist class movement grow. War church probably.",
-    "dataProvider": "Consumer fish himself crime finish some pretty. Kid stand individual tree weight stand apply.",
+    "id": "urn:ngsi-ld:Sleep:id:EOXI:64784328",
+    "dateCreated": "2012-05-08T18:33:40Z",
+    "dateModified": "2017-08-05T04:09:21Z",
+    "source": "Experience somebody democratic happen form. Born recently field. Answer activity image control difficult value simple.",
+    "name": "Know myself treat include fund blood and. Himself population pull partner walk vote.",
+    "alternateName": "Sport effort race seven million energy hotel. Treat sign card market least court American particular. Computer put quite hospital walk score.",
+    "description": "",
+    "dataProvider": "Want person season form model thought song head. Picture himself realize far your art mouth real. Low or born enter.",
     "owner": [
-        "urn:ngsi-ld:Sleep:items:NRHF:98813192",
-        "urn:ngsi-ld:Sleep:items:ROUA:34648361"
+        "urn:ngsi-ld:Sleep:items:EVHF:32347913",
+        "urn:ngsi-ld:Sleep:items:QUUJ:68624316"
     ],
     "seeAlso": [
-        "urn:ngsi-ld:Sleep:items:JVPG:56549433",
-        "urn:ngsi-ld:Sleep:items:CGGJ:52083387"
+        "urn:ngsi-ld:Sleep:items:BYWE:96773582"
     ],
     "location": {
         "type": "Point",
         "coordinates": [
-            -0.4463355,
-            155.160512
+            -43.8165545,
+            170.462299
         ]
     },
     "address": {
-        "streetAddress": "Example experience bar cover machine him along. Last must general sister yourself. Mean also store apply.",
-        "addressLocality": "They arrive among would participant those seem. Run door mission player ever year.",
-        "addressRegion": "Professor we raise. Brother treat you ahead whatever tough game necessary.",
-        "addressCountry": "Technology specific key generation. Process most apply choose feel visit with. Play modern state address popular job.",
-        "postalCode": "Yourself news TV institution how again field democratic. Industry water body.",
-        "postOfficeBoxNumber": "Series election free cold. System information else even evening."
+        "streetAddress": "Reach black huge image care compa",
+        "addressLocality": "Toward as work better enough. Not wife yes pretty quickly. Stage field nor. House dream field",
+        "addressRegion": "Build expect doctor official. Detail into should treatment part. Capital resource another two.",
+        "addressCountry": "Build later fear wall.",
+        "postalCode": "Value dream on off pretty avoid. Perhaps large collection buy budget. Begin send everybody to manager.",
+        "postOfficeBoxNumber": "Alone another defense get. Into population pretty baby.",
+        "streetNr": "Impact easy rise chair guess. Pretty imagine charge red garden. Growth guy pattern little environmental dream",
+        "district": "Force before sing leader some traditional scientist. Tv particularly such painting open her fig"
     },
-    "areaServed": "Your reality almost four use. Degree simply bag drop.",
+    "areaServed": "Inside matter technology white shake. Light t",
+    "awake": 864,
+    "nrem1": 864,
+    "nrem2": 864,
+    "nrem3": 864,
+    "nrem4": 864,
+    "rem": 864,
+    "lightsleep": 864,
+    "deepsleep": 864,
+    "sleepscore": 877.2,
+    "if": [
+        "oic.if.baseline"
+    ],
+    "rt": [
+        "oic.r.sleep"
+    ],
+    "n": "Soldier player professor ever style",
+    "range_phases": [
+        864,
+        864
+    ],
+    "step_phases": 864,
+    "range_score": [
+        796.4,
+        476.3
+    ],
+    "step_score": 276.4,
+    "precision": 394.0,
+    "type": "Sleep",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
