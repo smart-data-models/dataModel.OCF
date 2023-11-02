@@ -1,76 +1,78 @@
 {
-    "id": "urn:ngsi-ld:Measurement:id:YAWA:53179077",
+    "id": "urn:ngsi-ld:Measurement:id:AQLI:51178583",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1989-03-04T00:13:33Z"
+            "@value": "1998-03-30T20:52:03Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2007-12-31T15:08:19Z"
+            "@value": "1976-08-25T05:03:29Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Mean consider even nature mouth. Road treatment staff."
+        "value": "Cover government view event culture establish study task. Enjoy time bad according grow wear stuff century. New rise then church."
     },
     "name": {
         "type": "Property",
-        "value": "Policy across Democrat part girl pattern reality. List drug machine college."
+        "value": "Answer tax garden air "
     },
     "alternateName": {
         "type": "Property",
-        "value": "Machine cultural describe matter. Move bed drop expert upon catch guy."
+        "value": "Think people produc"
     },
     "description": {
         "type": "Property",
-        "value": "Democrat her reality sure memory boy support training. Interesting weight theory out under."
+        "value": "Evidence participant west important us day. Soldier agreement share population."
     },
     "dataProvider": {
         "type": "Property",
-        "value": "Prevent expert decision ahead. Customer generation finish course marriage organization very."
+        "value": "Water task without he establish many camera. Up fre"
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:Measurement:items:MTAY:57069402",
-            "urn:ngsi-ld:Measurement:items:OBSI:19767896"
+            "urn:ngsi-ld:Measurement:items:WQGU:79970367",
+            "urn:ngsi-ld:Measurement:items:XWQY:99988646"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:Measurement:items:HPGE:08143492"
+            "urn:ngsi-ld:Measurement:items:MCAO:14774075"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                51.5163355,
-                97.358247
+                67.9714165,
+                -159.754124
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "Standard risk management piece. Anything fund either form. Eye street word family.",
-            "addressLocality": "Upon type degree off skill possible area. School power traditional eat. Deep successful mind single system.",
-            "addressRegion": "Yeah happy to research. Catch surface billion race ok activity.",
-            "addressCountry": "Including region half pick.",
-            "postalCode": "Sing fear score make capital. Ever finish red out necessary. Because laugh trouble might.",
-            "postOfficeBoxNumber": "Effort enjoy reach billion similar project less. Strong stand season me. That record ready could reflect place."
+            "streetAddress": "Deal still risk policy.",
+            "addressLocality": "Skin di",
+            "addressRegion": "Three manage what prove instead i",
+            "addressCountry": "Again Democrat college couple its share adult. Me including bank direction include. Series trade think senior your trip true.",
+            "postalCode": "Low amount yet.",
+            "postOfficeBoxNumber": "It ground another card know bit. Mention modern piece number spend. Tonight",
+            "streetNr": "Teach pick among box because style. Fight everybody your throughout u",
+            "district": "Help growth truth stock reality book that. Manage herself capital rest wonder science yourself. Toward determine movie chance stop bar radio try."
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "Report him laugh. Yard particular politics."
+        "value": "Become financial agent only society challenge by box."
     },
     "rt": {
         "type": "Property",
@@ -80,41 +82,40 @@
     },
     "unit": {
         "type": "Property",
-        "value": "Week deep drive lead everybody. Necessary lawyer indeed strategy sing. Information voice remain. Bag benefit behavior he."
+        "value": "Each well west show it deep line exactly. Result game foot former. Language sometimes thank in physical agency."
     },
     "measurement": {
         "type": "Property",
-        "value": 27.0
+        "value": 487.2
     },
     "precision": {
         "type": "Property",
-        "value": 145.8
+        "value": 967.1
     },
     "n": {
         "type": "Property",
-        "value": "Environmental anything follow military reach. Stock trip rest view perhaps single painting. Program company doctor chair field voice pay."
+        "value": "Almost need benefit spring natural until effect. Lar"
     },
     "range": {
         "type": "Property",
         "value": [
-            556.9,
-            981.2
+            552.1,
+            288.9
         ]
     },
     "step": {
         "type": "Property",
-        "value": 840.7
+        "value": 32.8
     },
     "if": {
         "type": "Property",
         "value": [
-            "oic.if.baseline",
-            "oic.if.s"
+            "oic.if.s",
+            "oic.if.baseline"
         ]
     },
     "type": "Measurement",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
