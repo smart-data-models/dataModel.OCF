@@ -437,60 +437,53 @@ Torque:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Torque:id:AHRY:39993102",  
-  "dateCreated": "2020-07-30T12:21:20Z",  
-  "dateModified": "2000-07-15T22:05:12Z",  
-  "source": "Kind democratic example. Safe determine early activity. Response rule cultural student himself administration reality.",  
-  "name": "Country but scientist heart structure easy. Chance past life laugh.",  
-  "alternateName": "Network serve east moment can. Grow democratic party. Church hour response dream.",  
-  "description": "Dog food country blood mean analysis. Practice here gun knowledge remain. Various information day management trip mouth keep might.",  
-  "dataProvider": "Blue inside serve culture modern. Identify analysis cover probably leave. Probably senior teach couple.",  
-  "owner": [  
-    "urn:ngsi-ld:Torque:items:XCPF:15637893",  
-    "urn:ngsi-ld:Torque:items:BIEE:45180365"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Torque:items:CLYF:27135589",  
-    "urn:ngsi-ld:Torque:items:LUCC:27975542"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      9.9461635,  
-      53.930522  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Radio people bag control foot person for.",  
-    "addressLocality": "Forget somebody list bit ahead. Parent discuss color low accept.",  
-    "addressRegion": "Range team public note what explain. Life garden sound dark world course.",  
-    "addressCountry": "Blue hair compare issue believe you. Thousand everybody since day give student. Common break question. Policy let daughter challenge risk fast.",  
-    "postalCode": "Republican turn war development impact own message. Question despite concern five indeed.",  
-    "postOfficeBoxNumber": "With member knowledge newspaper east ahead none beautiful. Want choose physical create upon month. Hundred officer whom movement team within remember."  
-  },  
-  "areaServed": "Lot move peace water more pass. Whatever marriage outside third knowledge a sense. Have purpose majority court interview.",  
-  "torque": {  
-    "type": "Property",  
-    "value": 73.3  
-  },  
-  "rt": [  
-    "oic.r.torque",  
-    "oic.r.torque"  
-  ],  
-  "n": "Property blood turn fast center standard very. Sit serve never can once about challenge. Try list choice control.",  
-  "if": [  
-    "oic.if.s",  
-    "oic.if.s"  
-  ],  
-  "range": [  
-    29.2,  
-    164.7  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 742.9  
-  },  
-  "type": "Torque"  
+    "id": "urn:ngsi-ld:Torque:id:GOML:64303921",  
+    "dateCreated": "2007-03-08T15:05:03Z",  
+    "dateModified": "1980-04-19T10:28:10Z",  
+    "source": "Work chance image quite there many true follow.",  
+    "name": "Along chance either six success on. At be than always different American address. Former claim chance prevent",  
+    "alternateName": "Off question source. Wrong section town deal movemen",  
+    "description": "Now four management energy stay significant his. Artist ",  
+    "dataProvider": "Indi",  
+    "owner": [  
+        "urn:ngsi-ld:Torque:items:PYEA:60976701",  
+        "urn:ngsi-ld:Torque:items:GMZY:09925185"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Torque:items:VWTJ:71097951"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -55.8794045,  
+            28.115695  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Million size country site. He couple ground place what top.",  
+        "addressLocality": "Effo",  
+        "addressRegion": "Recognize information figure box international not type. Indeed between similar safe. Social issue indicate. Try while reveal bad audience grow ahead.",  
+        "addressCountry": "Act window standard audience. Debat",  
+        "postalCode": "Cost both general where. Agreement decade friend which.",  
+        "postOfficeBoxNumber": "Player contain year bill ok choose today. Source firm drug senior.",  
+        "streetNr": "Information animal car after back available. Federal indicate unit opportunity fear great.",  
+        "district": "Plan PM more heavy "  
+    },  
+    "areaServed": "Painting child reflect up control instead company. Futur",  
+    "torque": 285.9,  
+    "rt": [  
+        "oic.r.torque"  
+    ],  
+    "n": "Interview carry build impr",  
+    "if": [  
+        "oic.if.baseline"  
+    ],  
+    "range": [  
+        421.9,  
+        523.8  
+    ],  
+    "step": 857.2,  
+    "type": "Torque"  
 }  
 ```  
 </details>  
@@ -499,122 +492,107 @@ Torque:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:Torque:id:AHRY:39993102"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2020-07-30T12:21:20Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2000-07-15T22:05:12Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Kind democratic example. Safe determine early activity. Response rule cultural student himself administration reality."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Country but scientist heart structure easy. Chance past life laugh."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Network serve east moment can. Grow democratic party. Church hour response dream."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Dog food country blood mean analysis. Practice here gun knowledge remain. Various information day management trip mouth keep might."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Blue inside serve culture modern. Identify analysis cover probably leave. Probably senior teach couple."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Torque:items:XCPF:15637893",  
-      "urn:ngsi-ld:Torque:items:BIEE:45180365"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Torque:items:CLYF:27135589",  
-      "urn:ngsi-ld:Torque:items:LUCC:27975542"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        9.9461635,  
-        53.930522  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Radio people bag control foot person for.",  
-      "addressLocality": "Forget somebody list bit ahead. Parent discuss color low accept.",  
-      "addressRegion": "Range team public note what explain. Life garden sound dark world course.",  
-      "addressCountry": "Blue hair compare issue believe you. Thousand everybody since day give student. Common break question. Policy let daughter challenge risk fast.",  
-      "postalCode": "Republican turn war development impact own message. Question despite concern five indeed.",  
-      "postOfficeBoxNumber": "With member knowledge newspaper east ahead none beautiful. Want choose physical create upon month. Hundred officer whom movement team within remember."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Lot move peace water more pass. Whatever marriage outside third knowledge a sense. Have purpose majority court interview."  
-  },  
-  "torque": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 73.3  
-    }  
-  },  
-  "rt": {  
-    "type": "array",  
-    "value": [  
-      "oic.r.torque",  
-      "oic.r.torque"  
-    ]  
-  },  
-  "n": {  
-    "type": "string",  
-    "value": "Property blood turn fast center standard very. Sit serve never can once about challenge. Try list choice control."  
-  },  
-  "if": {  
-    "type": "array",  
-    "value": [  
-      "oic.if.s",  
-      "oic.if.s"  
-    ]  
-  },  
-  "range": {  
-    "type": "array",  
-    "value": [  
-      29.2,  
-      164.7  
-    ]  
-  },  
-  "step": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 742.9  
-    }  
-  },  
-  "type": {  
-    "type": "string",  
-    "value": "Torque"  
-  }  
+    "id": "urn:ngsi-ld:Torque:id:GOML:64303921",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "2007-03-08T15:05:03Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "1980-04-19T10:28:10Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Work chance image quite there many true follow."  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Along chance either six success on. At be than always different American address. Former claim chance prevent"  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Off question source. Wrong section town deal movemen"  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Now four management energy stay significant his. Artist "  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Indi"  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Torque:items:PYEA:60976701",  
+            "urn:ngsi-ld:Torque:items:GMZY:09925185"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Torque:items:VWTJ:71097951"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -55.8794045,  
+                28.115695  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Million size country site. He couple ground place what top.",  
+            "addressLocality": "Effo",  
+            "addressRegion": "Recognize information figure box international not type. Indeed between similar safe. Social issue indicate. Try while reveal bad audience grow ahead.",  
+            "addressCountry": "Act window standard audience. Debat",  
+            "postalCode": "Cost both general where. Agreement decade friend which.",  
+            "postOfficeBoxNumber": "Player contain year bill ok choose today. Source firm drug senior.",  
+            "streetNr": "Information animal car after back available. Federal indicate unit opportunity fear great.",  
+            "district": "Plan PM more heavy "  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Painting child reflect up control instead company. Futur"  
+    },  
+    "torque": {  
+        "type": "Number",  
+        "value": 285.9  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.torque"  
+        ]  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Interview carry build impr"  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "range": {  
+        "type": "StructuredValue",  
+        "value": [  
+            421.9,  
+            523.8  
+        ]  
+    },  
+    "step": {  
+        "type": "Number",  
+        "value": 857.2  
+    },  
+    "type": "Torque"  
 }  
 ```  
 </details>  
@@ -623,63 +601,55 @@ Torque:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Torque:id:AHRY:39993102",  
-    "dateCreated": "2020-07-30T12:21:20Z",  
-    "dateModified": "2000-07-15T22:05:12Z",  
-    "source": "Kind democratic example. Safe determine early activity. Response rule cultural student himself administration reality.",  
-    "name": "Country but scientist heart structure easy. Chance past life laugh.",  
-    "alternateName": "Network serve east moment can. Grow democratic party. Church hour response dream.",  
-    "description": "Dog food country blood mean analysis. Practice here gun knowledge remain. Various information day management trip mouth keep might.",  
-    "dataProvider": "Blue inside serve culture modern. Identify analysis cover probably leave. Probably senior teach couple.",  
+    "id": "urn:ngsi-ld:Torque:id:GOML:64303921",  
+    "dateCreated": "2007-03-08T15:05:03Z",  
+    "dateModified": "1980-04-19T10:28:10Z",  
+    "source": "Work chance image quite there many true follow.",  
+    "name": "Along chance either six success on. At be than always different American address. Former claim chance prevent",  
+    "alternateName": "Off question source. Wrong section town deal movemen",  
+    "description": "Now four management energy stay significant his. Artist ",  
+    "dataProvider": "Indi",  
     "owner": [  
-        "urn:ngsi-ld:Torque:items:XCPF:15637893",  
-        "urn:ngsi-ld:Torque:items:BIEE:45180365"  
+        "urn:ngsi-ld:Torque:items:PYEA:60976701",  
+        "urn:ngsi-ld:Torque:items:GMZY:09925185"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:Torque:items:CLYF:27135589",  
-        "urn:ngsi-ld:Torque:items:LUCC:27975542"  
+        "urn:ngsi-ld:Torque:items:VWTJ:71097951"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            9.9461635,  
-            53.930522  
+            -55.8794045,  
+            28.115695  
         ]  
     },  
     "address": {  
-        "streetAddress": "Radio people bag control foot person for.",  
-        "addressLocality": "Forget somebody list bit ahead. Parent discuss color low accept.",  
-        "addressRegion": "Range team public note what explain. Life garden sound dark world course.",  
-        "addressCountry": "Blue hair compare issue believe you. Thousand everybody since day give student. Common break question. Policy let daughter challenge risk fast.",  
-        "postalCode": "Republican turn war development impact own message. Question despite concern five indeed.",  
-        "postOfficeBoxNumber": "With member knowledge newspaper east ahead none beautiful. Want choose physical create upon month. Hundred officer whom movement team within remember."  
+        "streetAddress": "Million size country site. He couple ground place what top.",  
+        "addressLocality": "Effo",  
+        "addressRegion": "Recognize information figure box international not type. Indeed between similar safe. Social issue indicate. Try while reveal bad audience grow ahead.",  
+        "addressCountry": "Act window standard audience. Debat",  
+        "postalCode": "Cost both general where. Agreement decade friend which.",  
+        "postOfficeBoxNumber": "Player contain year bill ok choose today. Source firm drug senior.",  
+        "streetNr": "Information animal car after back available. Federal indicate unit opportunity fear great.",  
+        "district": "Plan PM more heavy "  
     },  
-    "areaServed": "Lot move peace water more pass. Whatever marriage outside third knowledge a sense. Have purpose majority court interview.",  
-    "torque": {  
-        "type": "Property",  
-        "value": 73.3  
-    },  
+    "areaServed": "Painting child reflect up control instead company. Futur",  
+    "torque": 285.9,  
     "rt": [  
-        "oic.r.torque",  
         "oic.r.torque"  
     ],  
-    "n": "Property blood turn fast center standard very. Sit serve never can once about challenge. Try list choice control.",  
+    "n": "Interview carry build impr",  
     "if": [  
-        "oic.if.s",  
-        "oic.if.s"  
+        "oic.if.baseline"  
     ],  
     "range": [  
-        29.2,  
-        164.7  
+        421.9,  
+        523.8  
     ],  
-    "step": {  
-        "type": "Property",  
-        "value": 742.9  
-    },  
+    "step": 857.2,  
     "type": "Torque",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -689,82 +659,84 @@ Torque:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Torque:id:PWSP:64950507",  
+    "id": "urn:ngsi-ld:Torque:id:GOML:64303921",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2012-06-02T09:48:18Z"  
+            "@value": "2007-03-08T15:05:03Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1984-10-18T01:58:07Z"  
+            "@value": "1980-04-19T10:28:10Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Direction man coach theory. Cover do name forward. Arrive level tell will hundred also."  
+        "value": "Work chance image quite there many true follow."  
     },  
     "name": {  
         "type": "Property",  
-        "value": "A page space according. Result coach study director. Specific receive fall they despite. This go air amount job."  
+        "value": "Along chance either six success on. At be than always different American address. Former claim chance prevent"  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Seem account already second back song. Move style process rock director. How since system."  
+        "value": "Off question source. Wrong section town deal movemen"  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Have which party sound every. Dream side ahead. Security traditional fine real school effort everyone."  
+        "value": "Now four management energy stay significant his. Artist "  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Successful ago boy ask. Yet goal image structure south. Apply physical their assume middle owner."  
+        "value": "Indi"  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Torque:items:SURM:54518655",  
-            "urn:ngsi-ld:Torque:items:RYYZ:32856448"  
+            "urn:ngsi-ld:Torque:items:PYEA:60976701",  
+            "urn:ngsi-ld:Torque:items:GMZY:09925185"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Torque:items:VIUT:41240428"  
+            "urn:ngsi-ld:Torque:items:VWTJ:71097951"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                -84.7598125,  
-                67.696977  
+                -55.8794045,  
+                28.115695  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Newspaper lot interesting speak class way. Also school police possible performance mind. Maintain traditional including decide dog.",  
-            "addressLocality": "General do subject lawyer interview sit. Our return who direction value poor. Bank international staff door although own cold.",  
-            "addressRegion": "Its letter mention modern give year. Fight happen up that woman wrong. First they behind office see conference gas.",  
-            "addressCountry": "Reduce know property event happy. Town peace tough woman national clearly fact. Fund its brother pay.",  
-            "postalCode": "Try drop final police challenge. Forget pattern hold leg option be however.",  
-            "postOfficeBoxNumber": "Similar low whole audience charge. Win air deep difference. Piece analysis create information eat far. Culture question group behavior age key."  
+            "streetAddress": "Million size country site. He couple ground place what top.",  
+            "addressLocality": "Effo",  
+            "addressRegion": "Recognize information figure box international not type. Indeed between similar safe. Social issue indicate. Try while reveal bad audience grow ahead.",  
+            "addressCountry": "Act window standard audience. Debat",  
+            "postalCode": "Cost both general where. Agreement decade friend which.",  
+            "postOfficeBoxNumber": "Player contain year bill ok choose today. Source firm drug senior.",  
+            "streetNr": "Information animal car after back available. Federal indicate unit opportunity fear great.",  
+            "district": "Plan PM more heavy "  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "New report serve. Small star fly place bad."  
+        "value": "Painting child reflect up control instead company. Futur"  
     },  
     "torque": {  
         "type": "Property",  
-        "value": 881.5  
+        "value": 285.9  
     },  
     "rt": {  
         "type": "Property",  
@@ -774,7 +746,7 @@ Torque:
     },  
     "n": {  
         "type": "Property",  
-        "value": "Military build often sound day election others. Animal card event woman doctor stay."  
+        "value": "Interview carry build impr"  
     },  
     "if": {  
         "type": "Property",  
@@ -785,18 +757,17 @@ Torque:
     "range": {  
         "type": "Property",  
         "value": [  
-            399.8,  
-            528.9  
+            421.9,  
+            523.8  
         ]  
     },  
     "step": {  
         "type": "Property",  
-        "value": 794.0  
+        "value": 857.2  
     },  
     "type": "Torque",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -804,7 +775,7 @@ Torque:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-[FAQ 10](https://smartdatamodels.org/index.php/faqs/)을 참조하여 규모 단위를 다루는 방법에 대한 답변을 확인하세요.  
+10](https://smartdatamodels.org/index.php/faqs/)를 참조하여 규모 단위를 다루는 방법에 대한 답변을 확인하세요.  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
