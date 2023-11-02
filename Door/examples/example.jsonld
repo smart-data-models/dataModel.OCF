@@ -1,38 +1,50 @@
 {
-    "id": "urn:ngsi-ld:Door:id:VCIY:56887503",
-    "dateCreated": "1979-09-10T12:21:15Z",
-    "dateModified": "1992-06-21T16:13:30Z",
-    "source": "Blue other across force turn. After standard now resource two. New behind training unit health tend anyone.",
-    "name": "Rule hour car scene hit alone. Cut true property either treatment. Her cell relate level wife.",
-    "alternateName": "In focus person. Determine painting series be. Offer still health color establish.",
-    "description": "Eight close pull country within beat work. Record exactly senior.",
-    "dataProvider": "Win between she sport. Second appear couple beat. Perform on create successful able.",
+    "id": "urn:ngsi-ld:Door:id:TOAG:57173407",
+    "dateCreated": "1990-04-26T18:03:09Z",
+    "dateModified": "1977-10-15T20:23:28Z",
+    "source": "Nation choose relationship likely question. Myself if place again establish. A huge three. Know second government the pull cultural.",
+    "name": "Audience energy move. Morning eat turn clear.",
+    "alternateName": "Executive care mission decision black. Idea sing small factor head pick church. High opportunity cause property.",
+    "description": "Line indeed live reason five present art feel. Appear perform agent likely thousand act money. Rather bank we under.",
+    "dataProvider": "Guess break about. Their record road dinner seem. Course its respond himself former.",
     "owner": [
-        "urn:ngsi-ld:Door:items:AHUR:85284630",
-        "urn:ngsi-ld:Door:items:MIYK:06076807"
+        "urn:ngsi-ld:Door:items:FOLZ:62728523",
+        "urn:ngsi-ld:Door:items:SWBM:66763373"
     ],
     "seeAlso": [
-        "urn:ngsi-ld:Door:items:DOII:39861843",
-        "urn:ngsi-ld:Door:items:NURV:05944119"
+        "urn:ngsi-ld:Door:items:TJTC:03125023"
     ],
     "location": {
         "type": "Point",
         "coordinates": [
-            -41.917993,
-            -156.219139
+            47.4708025,
+            -27.301033
         ]
     },
     "address": {
-        "streetAddress": "True market let believe wrong business allow. Woman later information suggest admit.",
-        "addressLocality": "Run air when five still church certainly. Reflect short east late in line.",
-        "addressRegion": "National office heart high them. Organization deal why wear important. Military effect Mrs floor environment skill detail.",
-        "addressCountry": "Would throughout realize moment marriage want. Sense fight radio hold gun throw before.",
-        "postalCode": "Save beautiful drive break down kitchen job. School state religious score development region.",
-        "postOfficeBoxNumber": "Mention affect approach."
+        "streetAddress": "Learn place",
+        "addressLocality": "Wife however TV law fund. Paper beat five movie. Eight miss couple bag thank generation.",
+        "addressRegion": "Pull save fine team effort. The drive figure necessary across manager.",
+        "addressCountry": "True include management. Brother bank better she increase try. Partner stand next though house where.",
+        "postalCode": "",
+        "postOfficeBoxNumber": "Situation between run eat expect save process score. Into anyone his evening wife north director.",
+        "streetNr": "Develop story drive million push. Health lose old case administration. Foreign one agent candidate how wish member.",
+        "district": "Share sit simple notice. Dog car do his part."
     },
-    "areaServed": "Stuff conference chair during open expect fight. Investment she matter present back.",
+    "areaServed": "Material truth pattern ago other majority final when. Present produce manager well lose finish summer.",
+    "rt": [
+        "oic.r.door"
+    ],
+    "openDuration": "P1710168910W264733215084615551330344341353172274567622193828821450614981840335945689055955212929777261D",
+    "openState": "Open",
+    "openAlarm": false,
+    "n": "Size himself arrive although risk which",
+    "if": [
+        "oic.if.a",
+        "oic.if.baseline"
+    ],
+    "type": "Door",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
