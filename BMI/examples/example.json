@@ -1,60 +1,50 @@
 {
-  "id": "urn:ngsi-ld:BMI:id:VDFV:55667741",
-  "dateCreated": "1972-08-04T01:32:47Z",
-  "dateModified": "1990-12-10T18:23:52Z",
-  "source": "Perhaps particularly over news. Section ability young read whose experience put.",
-  "name": "Figure risk bill other. Manage account sell language middle learn.",
-  "alternateName": "Campaign military adult maintain movie our more. Figure energy small include little institution. Something government anyone there spend skill.",
-  "description": "Fly person development around control. Discover back nature politics apply crime teach recognize. Give nearly collection resource left site agree meeting.",
-  "dataProvider": "Box scientist major really face everything final remember. Notice cover leave feel out word activity listen.",
-  "owner": [
-    "urn:ngsi-ld:BMI:items:TLGO:89545122",
-    "urn:ngsi-ld:BMI:items:ZSQM:54988728"
-  ],
-  "seeAlso": [
-    "urn:ngsi-ld:BMI:items:EWVZ:54612682",
-    "urn:ngsi-ld:BMI:items:HUQO:69722028"
-  ],
-  "location": {
-    "type": "Point",
-    "coordinates": [
-      54.2093595,
-      -81.722699
-    ]
-  },
-  "address": {
-    "streetAddress": "Bag key computer home. Pm view however right speech.",
-    "addressLocality": "Response smile place our.",
-    "addressRegion": "Little poor public sense. Else race ready.",
-    "addressCountry": "Example prepare arm bag spend movie simple today. Skin her research box.",
-    "postalCode": "Their street figure decade parent. Land respond whatever generation explain.",
-    "postOfficeBoxNumber": "Power receive which certainly shake organization better. Congress discussion where suddenly specific too west. Dog hear series voice glass open white."
-  },
-  "areaServed": "Administration hundred ever speak medical. Another movement live environment author let show. Sit myself third later boy put poor.",
-  "rt": [
-    "oic.r.bmi",
-    "oic.r.bmi"
-  ],
-  "bmi": {
-    "type": "Property",
-    "value": 969.4
-  },
-  "range": [
-    966.8,
-    231.5
-  ],
-  "step": {
-    "type": "Property",
-    "value": 326.9
-  },
-  "precision": {
-    "type": "Property",
-    "value": 465.9
-  },
-  "n": "Mother various avoid few describe. Develop deal artist write end down language. Yourself section staff authority already.",
-  "if": [
-    "oic.if.baseline",
-    "oic.if.baseline"
-  ],
-  "type": "BMI"
+    "id": "urn:ngsi-ld:BMI:id:JQXP:11604104",
+    "dateCreated": "2023-04-27T03:38:23Z",
+    "dateModified": "1999-07-17T13:50:02Z",
+    "source": "Student civil cultural worry. Democrat woman fine soon example education. Add adult democratic wind la",
+    "name": "Speech marriage treat family understand your voice newspaper. Child cover treat high pretty item profes",
+    "alternateName": "Program fish girl our offer pick.",
+    "description": "Act situation own stop must song. Treatment future professor follow difference job. When activity dec",
+    "dataProvider": "Science various imagine usually can two expect. Seat president item reveal federal send.",
+    "owner": [
+        "urn:ngsi-ld:BMI:items:ANAV:58006639",
+        "urn:ngsi-ld:BMI:items:ODIH:85202865"
+    ],
+    "seeAlso": [
+        "urn:ngsi-ld:BMI:items:RQXM:68509576"
+    ],
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            -44.575855,
+            76.463418
+        ]
+    },
+    "address": {
+        "streetAddress": "Message generation across listen despite.",
+        "addressLocality": "Experie",
+        "addressRegion": "Serious investment teacher identify before about not. Analysis scientist expert itself down can.",
+        "addressCountry": "Star thing least Congress toward main. Hospital down door tonight from ",
+        "postalCode": "Environmental with suddenly detail huge finally. Father position strategy air. Partner least fly relate new cam",
+        "postOfficeBoxNumber": "Reduce morning field. Market something front price ma",
+        "streetNr": "Four blood chance heart public. Certain coach skill already fire picture future lis",
+        "district": "Ca"
+    },
+    "areaServed": "Recently sing high energy million show enter. College full allow put cove",
+    "rt": [
+        "oic.r.bmi"
+    ],
+    "bmi": 294.7,
+    "range": [
+        341.6,
+        577.3
+    ],
+    "step": 64.0,
+    "precision": 901.2,
+    "n": "Significant although boy includin",
+    "if": [
+        "oic.if.s"
+    ],
+    "type": "BMI"
 }
