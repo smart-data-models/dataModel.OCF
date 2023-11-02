@@ -1,75 +1,93 @@
 {
-  "id": {
-    "type": "string",
-    "value": "urn:ngsi-ld:SoundPressureLevel:id:NLPM:36024607"
-  },
-  "dateCreated": {
-    "format": "date-time",
-    "type": "string",
-    "value": "1994-11-21T08:10:27Z"
-  },
-  "dateModified": {
-    "format": "date-time",
-    "type": "string",
-    "value": "1994-02-01T16:52:26Z"
-  },
-  "source": {
-    "type": "string",
-    "value": "Like sure likely scientist family series away. From gun image style factor marriage box."
-  },
-  "name": {
-    "type": "string",
-    "value": "Street lose meeting."
-  },
-  "alternateName": {
-    "type": "string",
-    "value": "Enter many doctor election. Half check side but often. Daughter prove whose television other. Lose drive action attorney window sister."
-  },
-  "description": {
-    "type": "string",
-    "value": "Mean should enter human. Black foot decide represent opportunity thing nor goal. Public become painting none seek."
-  },
-  "dataProvider": {
-    "type": "string",
-    "value": "Article write next money. Take feeling music happy fight. Increase one remember respond strategy young."
-  },
-  "owner": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:SoundPressureLevel:items:UYKY:61155327",
-      "urn:ngsi-ld:SoundPressureLevel:items:KRAM:94468927"
-    ]
-  },
-  "seeAlso": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:SoundPressureLevel:items:PZKV:28652036",
-      "urn:ngsi-ld:SoundPressureLevel:items:ETTY:68001950"
-    ]
-  },
-  "location": {
-    "type": "object",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        9.316914,
-        107.47875
-      ]
-    }
-  },
-  "address": {
-    "type": "object",
-    "value": {
-      "streetAddress": "Morning some consider finally ball. Run spring radio magazine history.",
-      "addressLocality": "Return establish east high course eye large. More if network tend.",
-      "addressRegion": "Move newspaper really tough protect capital series.",
-      "addressCountry": "Hour through measure across community speak. Least among card particular feeling anything effect. Agency day help physical few former.",
-      "postalCode": "Hold subject unit spend. Out boy make like town almost.",
-      "postOfficeBoxNumber": "Quality campaign how one past. Respond culture unit table step. Necessary charge responsibility."
-    }
-  },
-  "areaServed": {
-    "type": "string",
-    "value": "Well industry order. Service choice out. Choice watch above compare finish develop director. Soon hold order somebody skin toward."
-  }
+    "id": "urn:ngsi-ld:SoundPressureLevel:id:HFIM:74257828",
+    "dateCreated": {
+        "type": "DateTime",
+        "value": "2004-05-29T07:02:52Z"
+    },
+    "dateModified": {
+        "type": "DateTime",
+        "value": "2000-07-13T19:13:46Z"
+    },
+    "source": {
+        "type": "Text",
+        "value": "Price court lot back."
+    },
+    "name": {
+        "type": "Text",
+        "value": "Commercial now certain science. Purpose threat carry six her total across number."
+    },
+    "alternateName": {
+        "type": "Text",
+        "value": "Form war southern red little do. Fly land either meet among great back seven. Commercial view college."
+    },
+    "description": {
+        "type": "Text",
+        "value": "Finish effort whole must somebody gas owner. Win trouble home agreement leader check simply. Explain particularly style maj"
+    },
+    "dataProvider": {
+        "type": "Text",
+        "value": "Thus morning do travel. Give bit stage wish wear pro"
+    },
+    "owner": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:SoundPressureLevel:items:IEOL:15344972",
+            "urn:ngsi-ld:SoundPressureLevel:items:UWPZ:31973552"
+        ]
+    },
+    "seeAlso": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:SoundPressureLevel:items:ONKQ:98958230"
+        ]
+    },
+    "location": {
+        "type": "geo:json",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -20.035359,
+                -53.268156
+            ]
+        }
+    },
+    "address": {
+        "type": "StructuredValue",
+        "value": {
+            "streetAddress": "Usuall",
+            "addressLocality": "Take second parent never executive exist. Term experience adult situation.",
+            "addressRegion": "Old arrive fine sea hard lay husband. Into c",
+            "addressCountry": "Friend grow beat police because determine again. Office head best identify focus short fill. Speak none m",
+            "postalCode": "Anything station pe",
+            "postOfficeBoxNumber": "Candidate front not nor beyond would action.",
+            "streetNr": "Trouble plan financial if common themselves. Despite wear agree another east local should price.",
+            "district": "Brother top serve. His prove beautiful bar."
+        }
+    },
+    "areaServed": {
+        "type": "Text",
+        "value": "Vote step kitchen pay. Turn provide go guess. Fine no risk television. Require understand she."
+    },
+    "rt": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.r.sound.pressurelevel"
+        ]
+    },
+    "sounddB": {
+        "type": "Number",
+        "value": 766.7
+    },
+    "n": {
+        "type": "Text",
+        "value": "Than but teach tax cove"
+    },
+    "if": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.if.s",
+            "oic.if.baseline"
+        ]
+    },
+    "type": "SoundPressureLevel"
 }
