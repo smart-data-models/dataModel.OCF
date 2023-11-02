@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: El número del apartado de correos para las direcciones de apartados postales. Por ejemplo, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: El código postal. Por ejemplo, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: La dirección  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Número que identifica una propiedad específica en una vía pública    
 - `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada  - `dateCreated[date-time]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento  - `dateModified[date-time]`: Marca de tiempo de la última modificación de la entidad. Suele ser asignada por la plataforma de almacenamiento  - `description[string]`: Descripción de este artículo  - `id[*]`: Identificador único de la entidad  - `if[array]`: El conjunto de interfaces OCF que admite este recurso  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  - `measurement[number]`: Valor medido para este sensor, unidades en ppm  - `n[string]`: Nombre descriptivo del recurso  - `name[string]`: El nombre de este artículo  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  - `precision[number]`: Cuando se expone, el valor en "precisión" proporciona una tolerancia +/- con respecto a las Propiedades del Recurso. Por lo tanto, si una propiedad se actualiza con un valor y luego se recupera, el valor recuperado será válido si se encuentra dentro del intervalo del valor establecido +/- precisión.  - `range[array]`: El rango válido para la Propiedad en el Recurso como un número. El primer valor de la matriz es el valor mínimo, el segundo valor de la matriz es el valor máximo  - `rt[array]`: Tipo de recurso  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `step[number]`: Valor del paso a través del rango definido un número entero cuando el rango es un número.  Es el incremento de los valores válidos en el intervalo; así, si el intervalo es 0,0..10,0 y el paso es 2,5, los valores válidos son 0,0,2,5,5,0,7,5,10,0.  - `type[string]`: Tipo de entidad NGSI. Tiene que ser CO  - `value[boolean]`: El indicador de monóxido de carbono, verdadero = detectado, falso = no detectado.  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propiedades requeridas  
@@ -449,68 +450,55 @@ CO:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:CO:id:YQVH:59080054",  
-  "dateCreated": "2009-04-24T13:29:20Z",  
-  "dateModified": "2001-09-01T12:10:21Z",  
-  "source": "Year sort eat student happen federal message.",  
-  "name": "Manager ever future him. Executive school list final consider increase staff.",  
-  "alternateName": "Fall firm here lay. Call management dinner.",  
-  "description": "Kid evening four goal lay. Down trip third cell or over class.",  
-  "dataProvider": "Which color human at main. Offer exactly next field soldier move. Site bad should who minute.",  
-  "owner": [  
-    "urn:ngsi-ld:CO:items:RGMJ:62379010",  
-    "urn:ngsi-ld:CO:items:GJQM:91546810"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:CO:items:KLIZ:44237049",  
-    "urn:ngsi-ld:CO:items:CTKA:51545589"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -65.6347215,  
-      -20.584982  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Million bill shoulder writer respond type television. Group it partner recently in. Believe class face wonder heart.",  
-    "addressLocality": "Not someone second evening with north down. Anyone and relate challenge cell reveal long news. Win TV today side kid public. Rest quite have face partner act senior.",  
-    "addressRegion": "Whether floor standard rate carry great. Something miss partner live democratic product camera.",  
-    "addressCountry": "Social member late them offer argue military Mrs. Safe as as report responsibility anything stuff. Seat happy both listen. Provide true leave business.",  
-    "postalCode": "Dream must federal build. Grow nice company thus.",  
-    "postOfficeBoxNumber": "Under have majority while quite environment single anyone. Finally international possible record practice ball so. Maintain keep letter entire last. Notice loss some important share computer heart chair."  
-  },  
-  "areaServed": "Know author property imagine event relate. Someone either pattern particularly thank. Indicate east by value single yet. Happen PM certain tough.",  
-  "rt": [  
-    "oic.r.sensor.carbonmonoxide",  
-    "oic.r.sensor.carbonmonoxide"  
-  ],  
-  "value": {  
-    "type": "Property",  
-    "value": false  
-  },  
-  "measurement": {  
-    "type": "Property",  
-    "value": 629.1  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 771.1  
-  },  
-  "n": "Serve main throughout agent. End perhaps thus policy five budget indeed history.",  
-  "range": [  
-    904.9,  
-    165.3  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 848.4  
-  },  
-  "if": [  
-    "oic.if.s",  
-    "oic.if.s"  
-  ],  
-  "type": "CO"  
+    "id": "urn:ngsi-ld:CO:id:DPCB:07895086",  
+    "dateCreated": "1982-03-28T23:23:50Z",  
+    "dateModified": "1993-10-04T04:14:04Z",  
+    "source": "Image throw feeling field arrive describe he. Dream road maybe ok enough turn.",  
+    "name": "Unit trouble me minute compare. Administration recognize oil well billion experience",  
+    "alternateName": "To ",  
+    "description": "Body teach campaign week. Item pull buy believe order manager adult.",  
+    "dataProvider": "Pay indeed entire answer responsibility. Could travel crime when along. Now into pay back on at manage not.",  
+    "owner": [  
+        "urn:ngsi-ld:CO:items:CXFT:79775642",  
+        "urn:ngsi-ld:CO:items:VVBZ:92396579"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:CO:items:CMBA:70572957"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            48.755996,  
+            115.719262  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Represent control hot court glass page structure. Adult street law economy time because suffer. Give human green bar hotel daughter.",  
+        "addressLocality": "Later message forget major. Discuss office plan popular turn.",  
+        "addressRegion": "Number film",  
+        "addressCountry": "Bad consumer young that eight ago five. Human sound various nature look natural hair",  
+        "postalCode": "Case within meet instead big tax family. Nearly goal often TV. Possible true painting drug laugh.",  
+        "postOfficeBoxNumber": "Art along within star",  
+        "streetNr": "Wind wonder professional bill firm big administration yard. Close eye De",  
+        "district": "With thought right federal. Single camer"  
+    },  
+    "areaServed": "Prove occur do rest. Yard government personal body base artist set.",  
+    "rt": [  
+        "oic.r.sensor.carbonmonoxide"  
+    ],  
+    "value": false,  
+    "measurement": 441.5,  
+    "precision": 51.6,  
+    "n": "Rather nature job free ed",  
+    "range": [  
+        897.9,  
+        389.6  
+    ],  
+    "step": 635.5,  
+    "if": [  
+        "oic.if.s"  
+    ],  
+    "type": "CO"  
 }  
 ```  
 </details>  
@@ -519,136 +507,115 @@ CO:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:CO:id:YQVH:59080054"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2009-04-24T13:29:20Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2001-09-01T12:10:21Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Year sort eat student happen federal message."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Manager ever future him. Executive school list final consider increase staff."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Fall firm here lay. Call management dinner."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Kid evening four goal lay. Down trip third cell or over class."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Which color human at main. Offer exactly next field soldier move. Site bad should who minute."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:CO:items:RGMJ:62379010",  
-      "urn:ngsi-ld:CO:items:GJQM:91546810"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:CO:items:KLIZ:44237049",  
-      "urn:ngsi-ld:CO:items:CTKA:51545589"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
+    "id": "urn:ngsi-ld:CO:id:DPCB:07895086",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1982-03-28T23:23:50Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "1993-10-04T04:14:04Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Image throw feeling field arrive describe he. Dream road maybe ok enough turn."  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Unit trouble me minute compare. Administration recognize oil well billion experience"  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "To "  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Body teach campaign week. Item pull buy believe order manager adult."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Pay indeed entire answer responsibility. Could travel crime when along. Now into pay back on at manage not."  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:CO:items:CXFT:79775642",  
+            "urn:ngsi-ld:CO:items:VVBZ:92396579"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:CO:items:CMBA:70572957"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                48.755996,  
+                115.719262  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Represent control hot court glass page structure. Adult street law economy time because suffer. Give human green bar hotel daughter.",  
+            "addressLocality": "Later message forget major. Discuss office plan popular turn.",  
+            "addressRegion": "Number film",  
+            "addressCountry": "Bad consumer young that eight ago five. Human sound various nature look natural hair",  
+            "postalCode": "Case within meet instead big tax family. Nearly goal often TV. Possible true painting drug laugh.",  
+            "postOfficeBoxNumber": "Art along within star",  
+            "streetNr": "Wind wonder professional bill firm big administration yard. Close eye De",  
+            "district": "With thought right federal. Single camer"  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Prove occur do rest. Yard government personal body base artist set."  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.sensor.carbonmonoxide"  
+        ]  
+    },  
     "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -65.6347215,  
-        -20.584982  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Million bill shoulder writer respond type television. Group it partner recently in. Believe class face wonder heart.",  
-      "addressLocality": "Not someone second evening with north down. Anyone and relate challenge cell reveal long news. Win TV today side kid public. Rest quite have face partner act senior.",  
-      "addressRegion": "Whether floor standard rate carry great. Something miss partner live democratic product camera.",  
-      "addressCountry": "Social member late them offer argue military Mrs. Safe as as report responsibility anything stuff. Seat happy both listen. Provide true leave business.",  
-      "postalCode": "Dream must federal build. Grow nice company thus.",  
-      "postOfficeBoxNumber": "Under have majority while quite environment single anyone. Finally international possible record practice ball so. Maintain keep letter entire last. Notice loss some important share computer heart chair."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Know author property imagine event relate. Someone either pattern particularly thank. Indicate east by value single yet. Happen PM certain tough."  
-  },  
-  "rt": {  
-    "type": "array",  
-    "value": [  
-      "oic.r.sensor.carbonmonoxide",  
-      "oic.r.sensor.carbonmonoxide"  
-    ]  
-  },  
-  "value": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": false  
-    }  
-  },  
-  "measurement": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 629.1  
-    }  
-  },  
-  "precision": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 771.1  
-    }  
-  },  
-  "n": {  
-    "type": "string",  
-    "value": "Serve main throughout agent. End perhaps thus policy five budget indeed history."  
-  },  
-  "range": {  
-    "type": "array",  
-    "value": [  
-      904.9,  
-      165.3  
-    ]  
-  },  
-  "step": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 848.4  
-    }  
-  },  
-  "if": {  
-    "type": "array",  
-    "value": [  
-      "oic.if.s",  
-      "oic.if.s"  
-    ]  
-  },  
-  "type": {  
-    "type": "string",  
-    "value": "CO"  
-  }  
+        "type": "Boolean",  
+        "value": false  
+    },  
+    "measurement": {  
+        "type": "Number",  
+        "value": 441.5  
+    },  
+    "precision": {  
+        "type": "Number",  
+        "value": 51.6  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Rather nature job free ed"  
+    },  
+    "range": {  
+        "type": "StructuredValue",  
+        "value": [  
+            897.9,  
+            389.6  
+        ]  
+    },  
+    "step": {  
+        "type": "Number",  
+        "value": 635.5  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.s"  
+        ]  
+    },  
+    "type": "CO"  
 }  
 ```  
 </details>  
@@ -657,71 +624,57 @@ CO:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:CO:id:YQVH:59080054",  
-    "dateCreated": "2009-04-24T13:29:20Z",  
-    "dateModified": "2001-09-01T12:10:21Z",  
-    "source": "Year sort eat student happen federal message.",  
-    "name": "Manager ever future him. Executive school list final consider increase staff.",  
-    "alternateName": "Fall firm here lay. Call management dinner.",  
-    "description": "Kid evening four goal lay. Down trip third cell or over class.",  
-    "dataProvider": "Which color human at main. Offer exactly next field soldier move. Site bad should who minute.",  
+    "id": "urn:ngsi-ld:CO:id:DPCB:07895086",  
+    "dateCreated": "1982-03-28T23:23:50Z",  
+    "dateModified": "1993-10-04T04:14:04Z",  
+    "source": "Image throw feeling field arrive describe he. Dream road maybe ok enough turn.",  
+    "name": "Unit trouble me minute compare. Administration recognize oil well billion experience",  
+    "alternateName": "To ",  
+    "description": "Body teach campaign week. Item pull buy believe order manager adult.",  
+    "dataProvider": "Pay indeed entire answer responsibility. Could travel crime when along. Now into pay back on at manage not.",  
     "owner": [  
-        "urn:ngsi-ld:CO:items:RGMJ:62379010",  
-        "urn:ngsi-ld:CO:items:GJQM:91546810"  
+        "urn:ngsi-ld:CO:items:CXFT:79775642",  
+        "urn:ngsi-ld:CO:items:VVBZ:92396579"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:CO:items:KLIZ:44237049",  
-        "urn:ngsi-ld:CO:items:CTKA:51545589"  
+        "urn:ngsi-ld:CO:items:CMBA:70572957"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            -65.6347215,  
-            -20.584982  
+            48.755996,  
+            115.719262  
         ]  
     },  
     "address": {  
-        "streetAddress": "Million bill shoulder writer respond type television. Group it partner recently in. Believe class face wonder heart.",  
-        "addressLocality": "Not someone second evening with north down. Anyone and relate challenge cell reveal long news. Win TV today side kid public. Rest quite have face partner act senior.",  
-        "addressRegion": "Whether floor standard rate carry great. Something miss partner live democratic product camera.",  
-        "addressCountry": "Social member late them offer argue military Mrs. Safe as as report responsibility anything stuff. Seat happy both listen. Provide true leave business.",  
-        "postalCode": "Dream must federal build. Grow nice company thus.",  
-        "postOfficeBoxNumber": "Under have majority while quite environment single anyone. Finally international possible record practice ball so. Maintain keep letter entire last. Notice loss some important share computer heart chair."  
+        "streetAddress": "Represent control hot court glass page structure. Adult street law economy time because suffer. Give human green bar hotel daughter.",  
+        "addressLocality": "Later message forget major. Discuss office plan popular turn.",  
+        "addressRegion": "Number film",  
+        "addressCountry": "Bad consumer young that eight ago five. Human sound various nature look natural hair",  
+        "postalCode": "Case within meet instead big tax family. Nearly goal often TV. Possible true painting drug laugh.",  
+        "postOfficeBoxNumber": "Art along within star",  
+        "streetNr": "Wind wonder professional bill firm big administration yard. Close eye De",  
+        "district": "With thought right federal. Single camer"  
     },  
-    "areaServed": "Know author property imagine event relate. Someone either pattern particularly thank. Indicate east by value single yet. Happen PM certain tough.",  
+    "areaServed": "Prove occur do rest. Yard government personal body base artist set.",  
     "rt": [  
-        "oic.r.sensor.carbonmonoxide",  
         "oic.r.sensor.carbonmonoxide"  
     ],  
-    "value": {  
-        "type": "Property",  
-        "value": false  
-    },  
-    "measurement": {  
-        "type": "Property",  
-        "value": 629.1  
-    },  
-    "precision": {  
-        "type": "Property",  
-        "value": 771.1  
-    },  
-    "n": "Serve main throughout agent. End perhaps thus policy five budget indeed history.",  
+    "value": false,  
+    "measurement": 441.5,  
+    "precision": 51.6,  
+    "n": "Rather nature job free ed",  
     "range": [  
-        904.9,  
-        165.3  
+        897.9,  
+        389.6  
     ],  
-    "step": {  
-        "type": "Property",  
-        "value": 848.4  
-    },  
+    "step": 635.5,  
     "if": [  
-        "oic.if.s",  
         "oic.if.s"  
     ],  
     "type": "CO",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -731,78 +684,80 @@ CO:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:CO:id:TLMT:85397772",  
+    "id": "urn:ngsi-ld:CO:id:DPCB:07895086",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1993-02-12T18:56:03Z"  
+            "@value": "1982-03-28T23:23:50Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2003-12-05T22:57:02Z"  
+            "@value": "1993-10-04T04:14:04Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "He top today program. Strong sign treatment quickly bank."  
+        "value": "Image throw feeling field arrive describe he. Dream road maybe ok enough turn."  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Manager whatever station mother. Possible across wind before."  
+        "value": "Unit trouble me minute compare. Administration recognize oil well billion experience"  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "State stand main practice kid. Require less its own mouth. International movement have study arrive fight fact ground. Need source most resource practice old American."  
+        "value": "To "  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Argue body subject daughter us. Task have condition side bad program shoulder. Situation personal suffer eat man production soldier."  
+        "value": "Body teach campaign week. Item pull buy believe order manager adult."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Have the young point education agree. Whether crime question individual personal now social."  
+        "value": "Pay indeed entire answer responsibility. Could travel crime when along. Now into pay back on at manage not."  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:CO:items:PMDY:07690464",  
-            "urn:ngsi-ld:CO:items:KZPY:00464484"  
+            "urn:ngsi-ld:CO:items:CXFT:79775642",  
+            "urn:ngsi-ld:CO:items:VVBZ:92396579"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:CO:items:UUCE:15603427"  
+            "urn:ngsi-ld:CO:items:CMBA:70572957"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                -23.156593,  
-                70.781554  
+                48.755996,  
+                115.719262  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Base coach himself marriage though population. Statement ready along find truth cover drop. People daughter teacher contain apply.",  
-            "addressLocality": "Someone four particularly use morning environment next. Describe reduce think minute door key hard. Culture stock own authority shoulder.",  
-            "addressRegion": "Will down assume consider high doctor street. Bad five return bit their challenge know.",  
-            "addressCountry": "Wall card kid peace fly exactly performance. Hair method medical window whose outside. Image up successful usually nice.",  
-            "postalCode": "Cover compare long left itself. Sell up term. A bit teach space recognize.",  
-            "postOfficeBoxNumber": "Say bill computer often difference trade."  
+            "streetAddress": "Represent control hot court glass page structure. Adult street law economy time because suffer. Give human green bar hotel daughter.",  
+            "addressLocality": "Later message forget major. Discuss office plan popular turn.",  
+            "addressRegion": "Number film",  
+            "addressCountry": "Bad consumer young that eight ago five. Human sound various nature look natural hair",  
+            "postalCode": "Case within meet instead big tax family. Nearly goal often TV. Possible true painting drug laugh.",  
+            "postOfficeBoxNumber": "Art along within star",  
+            "streetNr": "Wind wonder professional bill firm big administration yard. Close eye De",  
+            "district": "With thought right federal. Single camer"  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Condition certain rest determine still soldier write. Energy low not sit lot care class. Test little social."  
+        "value": "Prove occur do rest. Yard government personal body base artist set."  
     },  
     "rt": {  
         "type": "Property",  
@@ -812,30 +767,30 @@ CO:
     },  
     "value": {  
         "type": "Property",  
-        "value": true  
+        "value": false  
     },  
     "measurement": {  
         "type": "Property",  
-        "value": 235.2  
+        "value": 441.5  
     },  
     "precision": {  
         "type": "Property",  
-        "value": 624.8  
+        "value": 51.6  
     },  
     "n": {  
         "type": "Property",  
-        "value": "Down see reach. Win physical want arrive financial. Same I sometimes pass."  
+        "value": "Rather nature job free ed"  
     },  
     "range": {  
         "type": "Property",  
         "value": [  
-            341.7,  
-            185.5  
+            897.9,  
+            389.6  
         ]  
     },  
     "step": {  
         "type": "Property",  
-        "value": 259.2  
+        "value": 635.5  
     },  
     "if": {  
         "type": "Property",  
@@ -845,8 +800,7 @@ CO:
     },  
     "type": "CO",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
