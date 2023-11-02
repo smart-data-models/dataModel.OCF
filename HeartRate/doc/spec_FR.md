@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: Le numéro de la boîte postale pour les adresses de boîtes postales. Par exemple, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: Le code postal. Par exemple, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: L'adresse de la rue  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Numéro identifiant une propriété spécifique sur une voie publique    
 - `alternateName[string]`: Un nom alternatif pour ce poste  - `areaServed[string]`: La zone géographique où un service ou un article est offert  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées  - `dateCreated[date-time]`: Horodatage de la création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage  - `dateModified[date-time]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage  - `description[string]`: Une description de l'article  - `heartrate[number]`: Cette propriété décrit la fréquence cardiaque en bpm  - `id[*]`: Identifiant unique de l'entité  - `if[array]`: L'ensemble d'interfaces OCF pris en charge par cette ressource  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une chaîne de ligne, d'un polygone, d'un point multiple, d'une chaîne de ligne multiple ou d'un polygone multiple.  - `n[string]`: Nom amical de la ressource  - `name[string]`: Le nom de cet élément  - `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  - `range[array]`: La plage de validité de la propriété dans la ressource sous la forme d'un nombre entier. La première valeur du tableau est la valeur minimale, la deuxième valeur du tableau est la valeur maximale.  - `rt[array]`: Le type de ressource  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  - `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  - `step[number]`: Valeur du pas dans l'intervalle défini lorsque l'intervalle est un nombre entier.  Il s'agit de l'incrément pour les valeurs valides dans la plage ; ainsi, si la plage est 0..10 et que le pas est 2, les valeurs valides sont 0,2,4,6,8,10.  - `type[string]`: Type d'entité NGSI. Il doit s'agir de HeartRate  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propriétés requises  
@@ -436,60 +437,53 @@ HeartRate:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:HeartRate:id:WBGG:05919309",  
-  "dateCreated": "1985-03-01T05:58:44Z",  
-  "dateModified": "1976-07-25T02:17:31Z",  
-  "source": "Often include red top certain. At hair lay entire strategy friend. Perhaps scientist court decide.",  
-  "name": "Side interest will account. Control coach detail radio direction case. Let institution successful range.",  
-  "alternateName": "Sure drop American shake. Different edge position wrong south majority institution.",  
-  "description": "Size relationship upon person activity. Doctor dark center accept law unit. Identify stand still social position use magazine.",  
-  "dataProvider": "Me into real strategy score public peace chair. Tell doctor hard notice.",  
-  "owner": [  
-    "urn:ngsi-ld:HeartRate:items:LZKI:27056879",  
-    "urn:ngsi-ld:HeartRate:items:KWVF:14431346"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:HeartRate:items:GNNF:45249104",  
-    "urn:ngsi-ld:HeartRate:items:ICON:63518480"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      60.4631845,  
-      -4.194848  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Box care beat last. Enjoy security pull inside company half. Strong huge help amount write environment.",  
-    "addressLocality": "Before size past article. Week music finish lot manage quality.",  
-    "addressRegion": "There history indeed modern identify difference already speech. Again use risk strong since.",  
-    "addressCountry": "Sort phone generation. American add second above near drop might.",  
-    "postalCode": "Join account guess. Most occur perhaps item enjoy couple.",  
-    "postOfficeBoxNumber": "Meeting everyone we evening onto. We writer together why whose light."  
-  },  
-  "areaServed": "Though available fire great television artist way. Student few building summer. Bar discuss join wife. Sound book wall during.",  
-  "heartrate": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "rt": [  
-    "oic.r.heartrate",  
-    "oic.r.heartrate"  
-  ],  
-  "n": "Whole magazine truth stop whose.",  
-  "if": [  
-    "oic.if.s",  
-    "oic.if.baseline"  
-  ],  
-  "range": [  
-    864,  
-    864  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "type": "HeartRate"  
+    "id": "urn:ngsi-ld:HeartRate:id:ZQCH:19903717",  
+    "dateCreated": "1987-10-11T05:53:15Z",  
+    "dateModified": "1977-06-30T00:04:38Z",  
+    "source": "Worry",  
+    "name": "Discover agent expect do parent social as.",  
+    "alternateName": "Such Mr military only.",  
+    "description": "Deal century live your four. Learn purpose against always over step. Really parent plant reflect man. Director kitchen campaign plan.",  
+    "dataProvider": "Make general animal ten. Change listen activity subject prepare many.",  
+    "owner": [  
+        "urn:ngsi-ld:HeartRate:items:HXBP:54976394",  
+        "urn:ngsi-ld:HeartRate:items:PQZZ:08108911"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:HeartRate:items:YXOE:93796375"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -59.0235675,  
+            95.827935  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Go trial easy if happen. Ball degree story bit. Short newspaper that threat.",  
+        "addressLocality": "Person fish development industry consumer property. Eight call too Mrs.",  
+        "addressRegion": "Cold consumer site. Carry minute positive.",  
+        "addressCountry": "Policy call prod",  
+        "postalCode": "Relate evening fly beat town. Stay sing including treatment.",  
+        "postOfficeBoxNumber": "College job film coach professor k",  
+        "streetNr": "One unit per above least check. Must international we. Quickly perhaps bed cold.",  
+        "district": "Power bed opportunity. Information can his"  
+    },  
+    "areaServed": "Herself yard democratic common nor. Color personal evening throughout skin management itself stage. Too in employee rule.",  
+    "heartrate": 864,  
+    "rt": [  
+        "oic.r.heartrate"  
+    ],  
+    "n": "Else memory if",  
+    "if": [  
+        "oic.if.s"  
+    ],  
+    "range": [  
+        864,  
+        864  
+    ],  
+    "step": 864,  
+    "type": "HeartRate"  
 }  
 ```  
 </details>  
@@ -498,122 +492,107 @@ HeartRate:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:HeartRate:id:WBGG:05919309"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1985-03-01T05:58:44Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1976-07-25T02:17:31Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Often include red top certain. At hair lay entire strategy friend. Perhaps scientist court decide."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Side interest will account. Control coach detail radio direction case. Let institution successful range."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Sure drop American shake. Different edge position wrong south majority institution."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Size relationship upon person activity. Doctor dark center accept law unit. Identify stand still social position use magazine."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Me into real strategy score public peace chair. Tell doctor hard notice."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:HeartRate:items:LZKI:27056879",  
-      "urn:ngsi-ld:HeartRate:items:KWVF:14431346"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:HeartRate:items:GNNF:45249104",  
-      "urn:ngsi-ld:HeartRate:items:ICON:63518480"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        60.4631845,  
-        -4.194848  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Box care beat last. Enjoy security pull inside company half. Strong huge help amount write environment.",  
-      "addressLocality": "Before size past article. Week music finish lot manage quality.",  
-      "addressRegion": "There history indeed modern identify difference already speech. Again use risk strong since.",  
-      "addressCountry": "Sort phone generation. American add second above near drop might.",  
-      "postalCode": "Join account guess. Most occur perhaps item enjoy couple.",  
-      "postOfficeBoxNumber": "Meeting everyone we evening onto. We writer together why whose light."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Though available fire great television artist way. Student few building summer. Bar discuss join wife. Sound book wall during."  
-  },  
-  "heartrate": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 864  
-    }  
-  },  
-  "rt": {  
-    "type": "array",  
-    "value": [  
-      "oic.r.heartrate",  
-      "oic.r.heartrate"  
-    ]  
-  },  
-  "n": {  
-    "type": "string",  
-    "value": "Whole magazine truth stop whose."  
-  },  
-  "if": {  
-    "type": "array",  
-    "value": [  
-      "oic.if.s",  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "range": {  
-    "type": "array",  
-    "value": [  
-      864,  
-      864  
-    ]  
-  },  
-  "step": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 864  
-    }  
-  },  
-  "type": {  
-    "type": "string",  
-    "value": "HeartRate"  
-  }  
+    "id": "urn:ngsi-ld:HeartRate:id:ZQCH:19903717",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1987-10-11T05:53:15Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "1977-06-30T00:04:38Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Worry"  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Discover agent expect do parent social as."  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Such Mr military only."  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Deal century live your four. Learn purpose against always over step. Really parent plant reflect man. Director kitchen campaign plan."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Make general animal ten. Change listen activity subject prepare many."  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:HeartRate:items:HXBP:54976394",  
+            "urn:ngsi-ld:HeartRate:items:PQZZ:08108911"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:HeartRate:items:YXOE:93796375"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -59.0235675,  
+                95.827935  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Go trial easy if happen. Ball degree story bit. Short newspaper that threat.",  
+            "addressLocality": "Person fish development industry consumer property. Eight call too Mrs.",  
+            "addressRegion": "Cold consumer site. Carry minute positive.",  
+            "addressCountry": "Policy call prod",  
+            "postalCode": "Relate evening fly beat town. Stay sing including treatment.",  
+            "postOfficeBoxNumber": "College job film coach professor k",  
+            "streetNr": "One unit per above least check. Must international we. Quickly perhaps bed cold.",  
+            "district": "Power bed opportunity. Information can his"  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Herself yard democratic common nor. Color personal evening throughout skin management itself stage. Too in employee rule."  
+    },  
+    "heartrate": {  
+        "type": "Number",  
+        "value": 864  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.heartrate"  
+        ]  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Else memory if"  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.s"  
+        ]  
+    },  
+    "range": {  
+        "type": "StructuredValue",  
+        "value": [  
+            864,  
+            864  
+        ]  
+    },  
+    "step": {  
+        "type": "Number",  
+        "value": 864  
+    },  
+    "type": "HeartRate"  
 }  
 ```  
 </details>  
@@ -622,63 +601,55 @@ HeartRate:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:HeartRate:id:WBGG:05919309",  
-    "dateCreated": "1985-03-01T05:58:44Z",  
-    "dateModified": "1976-07-25T02:17:31Z",  
-    "source": "Often include red top certain. At hair lay entire strategy friend. Perhaps scientist court decide.",  
-    "name": "Side interest will account. Control coach detail radio direction case. Let institution successful range.",  
-    "alternateName": "Sure drop American shake. Different edge position wrong south majority institution.",  
-    "description": "Size relationship upon person activity. Doctor dark center accept law unit. Identify stand still social position use magazine.",  
-    "dataProvider": "Me into real strategy score public peace chair. Tell doctor hard notice.",  
+    "id": "urn:ngsi-ld:HeartRate:id:ZQCH:19903717",  
+    "dateCreated": "1987-10-11T05:53:15Z",  
+    "dateModified": "1977-06-30T00:04:38Z",  
+    "source": "Worry",  
+    "name": "Discover agent expect do parent social as.",  
+    "alternateName": "Such Mr military only.",  
+    "description": "Deal century live your four. Learn purpose against always over step. Really parent plant reflect man. Director kitchen campaign plan.",  
+    "dataProvider": "Make general animal ten. Change listen activity subject prepare many.",  
     "owner": [  
-        "urn:ngsi-ld:HeartRate:items:LZKI:27056879",  
-        "urn:ngsi-ld:HeartRate:items:KWVF:14431346"  
+        "urn:ngsi-ld:HeartRate:items:HXBP:54976394",  
+        "urn:ngsi-ld:HeartRate:items:PQZZ:08108911"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:HeartRate:items:GNNF:45249104",  
-        "urn:ngsi-ld:HeartRate:items:ICON:63518480"  
+        "urn:ngsi-ld:HeartRate:items:YXOE:93796375"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            60.4631845,  
-            -4.194848  
+            -59.0235675,  
+            95.827935  
         ]  
     },  
     "address": {  
-        "streetAddress": "Box care beat last. Enjoy security pull inside company half. Strong huge help amount write environment.",  
-        "addressLocality": "Before size past article. Week music finish lot manage quality.",  
-        "addressRegion": "There history indeed modern identify difference already speech. Again use risk strong since.",  
-        "addressCountry": "Sort phone generation. American add second above near drop might.",  
-        "postalCode": "Join account guess. Most occur perhaps item enjoy couple.",  
-        "postOfficeBoxNumber": "Meeting everyone we evening onto. We writer together why whose light."  
+        "streetAddress": "Go trial easy if happen. Ball degree story bit. Short newspaper that threat.",  
+        "addressLocality": "Person fish development industry consumer property. Eight call too Mrs.",  
+        "addressRegion": "Cold consumer site. Carry minute positive.",  
+        "addressCountry": "Policy call prod",  
+        "postalCode": "Relate evening fly beat town. Stay sing including treatment.",  
+        "postOfficeBoxNumber": "College job film coach professor k",  
+        "streetNr": "One unit per above least check. Must international we. Quickly perhaps bed cold.",  
+        "district": "Power bed opportunity. Information can his"  
     },  
-    "areaServed": "Though available fire great television artist way. Student few building summer. Bar discuss join wife. Sound book wall during.",  
-    "heartrate": {  
-        "type": "Property",  
-        "value": 864  
-    },  
+    "areaServed": "Herself yard democratic common nor. Color personal evening throughout skin management itself stage. Too in employee rule.",  
+    "heartrate": 864,  
     "rt": [  
-        "oic.r.heartrate",  
         "oic.r.heartrate"  
     ],  
-    "n": "Whole magazine truth stop whose.",  
+    "n": "Else memory if",  
     "if": [  
-        "oic.if.s",  
-        "oic.if.baseline"  
+        "oic.if.s"  
     ],  
     "range": [  
         864,  
         864  
     ],  
-    "step": {  
-        "type": "Property",  
-        "value": 864  
-    },  
+    "step": 864,  
     "type": "HeartRate",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -688,82 +659,84 @@ HeartRate:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:HeartRate:id:NFBD:30269076",  
+    "id": "urn:ngsi-ld:HeartRate:id:ZQCH:19903717",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2007-12-09T09:52:06Z"  
+            "@value": "1987-10-11T05:53:15Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2018-12-18T03:13:55Z"  
+            "@value": "1977-06-30T00:04:38Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Follow discover we each reach democratic. View space agree seven month throughout city security."  
+        "value": "Worry"  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Agent game world appear per type carry. Per family authority public cost sell."  
+        "value": "Discover agent expect do parent social as."  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Keep make long provide. Look try training check so or Mrs."  
+        "value": "Such Mr military only."  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Federal line lay. Step event staff maybe who purpose from. Brother organization process relationship art."  
+        "value": "Deal century live your four. Learn purpose against always over step. Really parent plant reflect man. Director kitchen campaign plan."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Middle language kid. Become different president care election computer world parent."  
+        "value": "Make general animal ten. Change listen activity subject prepare many."  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:HeartRate:items:GODZ:83600727",  
-            "urn:ngsi-ld:HeartRate:items:ZCNU:18685273"  
+            "urn:ngsi-ld:HeartRate:items:HXBP:54976394",  
+            "urn:ngsi-ld:HeartRate:items:PQZZ:08108911"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:HeartRate:items:ABTG:22875588"  
+            "urn:ngsi-ld:HeartRate:items:YXOE:93796375"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                32.8233835,  
-                174.295929  
+                -59.0235675,  
+                95.827935  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Young free other figure mouth ever become. Boy really majority power.",  
-            "addressLocality": "Myself action impact. Kid that structure unit. Begin clear art thus official.",  
-            "addressRegion": "Bring bank exist place particular adult alone. Such drug finally here. Stand group project standard true organization.",  
-            "addressCountry": "General score pattern our. Although policy start enjoy. Serve family life four fact compare season Mr.",  
-            "postalCode": "Represent smile such. Travel house buy wind marriage affect blue customer. Effect then wait many.",  
-            "postOfficeBoxNumber": "Them opportunity get goal firm sound. Ever state man recently candidate behavior many. Think election Democrat think prevent particular."  
+            "streetAddress": "Go trial easy if happen. Ball degree story bit. Short newspaper that threat.",  
+            "addressLocality": "Person fish development industry consumer property. Eight call too Mrs.",  
+            "addressRegion": "Cold consumer site. Carry minute positive.",  
+            "addressCountry": "Policy call prod",  
+            "postalCode": "Relate evening fly beat town. Stay sing including treatment.",  
+            "postOfficeBoxNumber": "College job film coach professor k",  
+            "streetNr": "One unit per above least check. Must international we. Quickly perhaps bed cold.",  
+            "district": "Power bed opportunity. Information can his"  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Man member spring issue food. Walk middle development many maybe word defense great."  
+        "value": "Herself yard democratic common nor. Color personal evening throughout skin management itself stage. Too in employee rule."  
     },  
     "heartrate": {  
         "type": "Property",  
-        "value": 583  
+        "value": 864  
     },  
     "rt": {  
         "type": "Property",  
@@ -773,7 +746,7 @@ HeartRate:
     },  
     "n": {  
         "type": "Property",  
-        "value": "Debate work television central left appear. Agent stop speech specific meet question option. Son part social traditional blue phone second class."  
+        "value": "Else memory if"  
     },  
     "if": {  
         "type": "Property",  
@@ -784,18 +757,17 @@ HeartRate:
     "range": {  
         "type": "Property",  
         "value": [  
-            764,  
-            82  
+            864,  
+            864  
         ]  
     },  
     "step": {  
         "type": "Property",  
-        "value": 414  
+        "value": 864  
     },  
     "type": "HeartRate",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
