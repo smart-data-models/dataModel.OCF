@@ -1,49 +1,48 @@
 {
-    "id": "urn:ngsi-ld:TimeStamp:id:MAHH:24093348",
-    "dateCreated": "1986-04-12T11:36:49Z",
-    "dateModified": "2013-08-14T18:12:01Z",
-    "source": "Deep better little skin nature central economic couple. Tell month feeling alone already little become heart. Collection person affect tell reality look.",
-    "name": "Information hot debate indicate social hold. Them two card price college among. Society course may must break radio true.",
-    "alternateName": "Chair myself six one easy really action. However skin anyone would how meet service. Present agree report.",
-    "description": "Effect all young read. Here view responsibility front.",
-    "dataProvider": "Military pass traditional avoid relate black over argue. Television unit pretty suggest.",
+    "id": "urn:ngsi-ld:TimeStamp:id:WZTE:82421948",
+    "dateCreated": "1991-02-08T18:14:04Z",
+    "dateModified": "1976-09-20T18:37:42Z",
+    "source": "Line beyond its particularly tree whom. Kind miss artist truth trouble behavior style.",
+    "name": "Partner stock four. Region as true develop so",
+    "alternateName": "Onto knowledge other his offer face country. Almo",
+    "description": "Every manage political record word group food break. Picture suddenly drug rule bring determine some forward. Beyond chair recently and.",
+    "dataProvider": "Own available buy country store build before. Already against which continue. Look roa",
     "owner": [
-        "urn:ngsi-ld:TimeStamp:items:OQUS:98081300",
-        "urn:ngsi-ld:TimeStamp:items:IRCF:24818802"
+        "urn:ngsi-ld:TimeStamp:items:UJLN:86914131",
+        "urn:ngsi-ld:TimeStamp:items:GILX:20870916"
     ],
     "seeAlso": [
-        "urn:ngsi-ld:TimeStamp:items:ESOV:66345533",
-        "urn:ngsi-ld:TimeStamp:items:BVZU:99440929"
+        "urn:ngsi-ld:TimeStamp:items:QIDT:79230225"
     ],
     "location": {
         "type": "Point",
         "coordinates": [
-            -18.361737,
-            119.219709
+            28.732768,
+            177.344405
         ]
     },
     "address": {
-        "streetAddress": "Skin his cultural land once keep student Mrs. Hospital condition company activity hotel kid guess. Long your then stand set now during. Short step follow natural beautiful detail.",
-        "addressLocality": "Trouble where state lot. Source prepare make structure low front too.",
-        "addressRegion": "Look wonder dream if across. Concern full where activity. Item event few two describe factor base.",
-        "addressCountry": "Various girl conference seat somebody name class yourself. Force standard cut run. Necessary near kitchen floor. Treatment here approach song moment keep list.",
-        "postalCode": "Last kitchen begin. Street bag include television. Tv middle account throw.",
-        "postOfficeBoxNumber": "Generation mind likely over imagine federal. Finally show weight father must. Support summer agency red for."
+        "streetAddress": "Likely improve n",
+        "addressLocality": "School name care several loss particular. Opportunity throughout take car financial security.",
+        "addressRegion": "Organization recogni",
+        "addressCountry": "Industry product another knowledge else citizen month. Traditional page a although for study ",
+        "postalCode": "First degree response able state more. Couple part cup few. Beyond take however ball.",
+        "postOfficeBoxNumber": "Son break either president stage population boy. Everything affect American race.",
+        "streetNr": "Water voice",
+        "district": "Full per among clearly. Face house nature fall long dream answer conference. Rock few structure federal board night loss."
     },
-    "areaServed": "More go chair set again.",
+    "areaServed": "Buy break marriage also friend reach. Turn phone heart window. Assume be seek article.",
     "rt": [
-        "oic.r.time.stamp",
         "oic.r.time.stamp"
     ],
-    "timestamp": "1983-11-05T20:20:56Z",
-    "n": "Poor allow read establish. Eye still morning simple over your fire various. Teacher today leave reach help imagine.",
+    "timestamp": "1976-09-03T16:55:11Z",
+    "n": "Million larg",
     "if": [
         "oic.if.s",
-        "oic.if.baseline"
+        "oic.if.r"
     ],
     "type": "TimeStamp",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
