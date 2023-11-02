@@ -1,79 +1,117 @@
 {
-    "id": "urn:ngsi-ld:Media:id:JBFJ:85590267",
+    "id": "urn:ngsi-ld:Media:id:KMUP:25040035",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1999-11-01T04:37:28Z"
+            "@value": "2021-04-11T05:34:39Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2014-02-07T07:07:30Z"
+            "@value": "1982-02-12T20:54:43Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Today dark project still. Cell some together because."
+        "value": "Shoulder bad yet five. Character church certainly activity fire."
     },
     "name": {
         "type": "Property",
-        "value": "Create anyone close."
+        "value": "Science treat support arm identify t"
     },
     "alternateName": {
         "type": "Property",
-        "value": "Offer fish pick news chance reflect long. Role exist method daughter. Run one beautiful method hospital find know young."
+        "value": "Same never character you bank thank capital. Tough point force blood."
     },
     "description": {
         "type": "Property",
-        "value": "Sing firm try how finish day. Will letter staff middle. Here prevent your major mother activity discussion instead."
+        "value": "Point woman open similar indicate available. National score thousand future discuss create. Development woman authority sea tell."
     },
     "dataProvider": {
         "type": "Property",
-        "value": "Family never possible why scientist."
+        "value": "Stand good claim economy think remember. Arm water have consider Mrs."
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:Media:items:JUEF:68145877",
-            "urn:ngsi-ld:Media:items:SUAX:54574771"
+            "urn:ngsi-ld:Media:items:ZEFZ:21408276",
+            "urn:ngsi-ld:Media:items:OOXY:12879420"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:Media:items:QFXF:74085416"
+            "urn:ngsi-ld:Media:items:CBWT:71662128"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                11.0430135,
-                -64.961196
+                -9.1899865,
+                -8.895685
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "Hot reduce life national final. Administration citizen determine machine movement dog.",
-            "addressLocality": "Serve occur wife option life stand. My which realize focus. House coach stuff issue point foreign exist. Could girl bad bed yard debate.",
-            "addressRegion": "Particular north she itself debate. Behind go true. Successful young space.",
-            "addressCountry": "Oil door game church service.",
-            "postalCode": "Own room risk also. Someone wife mouth magazine. Major administration believe north where religious hotel sell.",
-            "postOfficeBoxNumber": "Draw field appear toward. Republican computer science explain while. Pretty party baby professor list contain here."
+            "streetAddress": "Music why game however recently big. South half most three situation. Blood side without policy case upon nearly imagine.",
+            "addressLocality": "Star key over. Floor parent here part tax everybody sometimes. Worry next concern try receive almost.",
+            "addressRegion": "Return ask prove within. Back budget manager know their treat month. La",
+            "addressCountry": "Air job pull.",
+            "postalCode": "Red number kind defense conference kitchen. Ok receive ago listen.",
+            "postOfficeBoxNumber": "Through wall include again. Yet manager of low.",
+            "streetNr": "At feeling oil purpose agent. Most similar available mouth position. Approach significant plant already ten receive employee yard.",
+            "district": "Society various view "
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "Dream wall seem million. At health player provide test."
+        "value": "Six political phone grow dream. Inside enjoy total near appear market catch certainly."
     },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.media"
+        ]
+    },
+    "media": {
+        "type": "Property",
+        "value": [
+            {
+                "sdp": [
+                    "Half item our nor past. Success soldier reveal surface. Be by few ",
+                    "Billion box set song production hard those dinner. Prove end author plan unit finally."
+                ],
+                "url": "History couple Republican us right perhaps none. Last position concern. Either along me bit loss."
+            },
+            {
+                "sdp": [
+                    "Authorit",
+                    "Continue figure project quickly church."
+                ],
+                "url": "Thank quickly education only rate usually hot. Door century range drug bank myself. Customer must interesting build pick collection."
+            }
+        ]
+    },
+    "n": {
+        "type": "Property",
+        "value": "Value impro"
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.baseline",
+            "oic.if.s"
+        ]
+    },
+    "type": "Media",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
