@@ -1,50 +1,50 @@
 {
-    "3dprinttype": "Photopolymer Jetting Technology",
-    "address": {
-        "addressCountry": "Realize station story. Friend our away model specific. Than different certain other.",
-        "addressLocality": "Find career old on iss",
-        "addressRegion": "Hot ahead mother side. Painting industry case those. Long hospital cell.",
-        "district": "Early nature ahead democratic.",
-        "postOfficeBoxNumber": "He city agency under bill short remain. Return sinc",
-        "postalCode": "Son final staff. Change ball put require",
-        "streetAddress": "Indeed concern society team change. Election maybe stage pattern summer out. Want hand when score listen again.",
-        "streetNr": "Tell theory style century game thousand beyond. Her attack detail tonight either."
-    },
-    "alternateName": "List unit join key factor amount. List sense raise dream. Important writer their get itself value bag.",
-    "areaServed": "Sister line PM girl. Themselves especially about go task com",
-    "dataProvider": "Run page report after",
+    "id": "urn:ngsi-ld:3DPrinter:id:KCVX:35224692",
     "dateCreated": "1982-11-04T23:54:34Z",
     "dateModified": "1971-11-12T21:21:33Z",
-    "description": "Name ball to gun section surface every. Audience light science dinner mother bar involve.",
-    "id": "urn:ngsi-ld:3DPrinter:id:KCVX:35224692",
-    "if": [
-        "oic.if.r",
-        "oic.if.baseline"
-    ],
-    "location": {
-        "coordinates": [
-            68.5908185,
-            -168.209783
-        ],
-        "type": "Point"
-    },
-    "memorysize": 561.5,
-    "n": "Religious deal ",
+    "source": "Blood poor value boy financial education. Vote kid finally arm onto.",
     "name": "Sit that listen. Offer entire discuss full quality detail. Gener",
+    "alternateName": "List unit join key factor amount. List sense raise dream. Important writer their get itself value bag.",
+    "description": "Name ball to gun section surface every. Audience light science dinner mother bar involve.",
+    "dataProvider": "Run page report after",
     "owner": [
         "urn:ngsi-ld:3DPrinter:items:EHSC:91826821",
         "urn:ngsi-ld:3DPrinter:items:WAEO:96901911"
     ],
-    "printsizex": 564.7,
-    "printsizey": 528.5,
-    "printsizez": 810.7,
-    "rt": [
-        "oic.r.printer.3d"
-    ],
     "seeAlso": [
         "urn:ngsi-ld:3DPrinter:items:PIFJ:54891254"
     ],
-    "source": "Blood poor value boy financial education. Vote kid finally arm onto.",
-    "type": "3DPrinter",
-    "wanconnected": true
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            68.5908185,
+            -168.209783
+        ]
+    },
+    "address": {
+        "streetAddress": "Indeed concern society team change. Election maybe stage pattern summer out. Want hand when score listen again.",
+        "addressLocality": "Find career old on iss",
+        "addressRegion": "Hot ahead mother side. Painting industry case those. Long hospital cell.",
+        "addressCountry": "Realize station story. Friend our away model specific. Than different certain other.",
+        "postalCode": "Son final staff. Change ball put require",
+        "postOfficeBoxNumber": "He city agency under bill short remain. Return sinc",
+        "streetNr": "Tell theory style century game thousand beyond. Her attack detail tonight either.",
+        "district": "Early nature ahead democratic."
+    },
+    "areaServed": "Sister line PM girl. Themselves especially about go task com",
+    "rt": [
+        "oic.r.printer.3d"
+    ],
+    "printsizey": 528.5,
+    "memorysize": 561.5,
+    "3dprinttype": "Photopolymer Jetting Technology",
+    "wanconnected": true,
+    "printsizex": 564.7,
+    "printsizez": 810.7,
+    "n": "Religious deal ",
+    "if": [
+        "oic.if.r",
+        "oic.if.baseline"
+    ],
+    "type": "3DPrinter"
 }
