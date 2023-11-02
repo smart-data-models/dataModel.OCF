@@ -17,11 +17,12 @@
 <sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
 - `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Il paese. Ad esempio, la Spagna  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
 	- `addressLocality[string]`: La località in cui si trova l'indirizzo civico e che si trova nella regione  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
-	- `addressRegion[string]`: La regione in cui si trova la località, e che si trova nel paese  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `addressRegion[string]`: La regione in cui si trova la località, e che si trova in campagna  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
 	- `district[string]`: Un distretto è un tipo di divisione amministrativa che, in alcuni paesi, è gestita dal governo locale.    
 	- `postOfficeBoxNumber[string]`: Il numero di casella postale per gli indirizzi di casella postale. Ad esempio, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: Il codice postale. Ad esempio, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: L'indirizzo stradale  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Numero che identifica una proprietà specifica su una strada pubblica    
 - `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `atmosphericPressure[number]`: La pressione atmosferica attuale in hPa  - `dataProvider[string]`: una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata  - `dateCreated[date-time]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `if[array]`: Il set di interfacce OCF supportato da questa risorsa.  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `n[string]`: Nome amichevole della risorsa  - `name[string]`: Il nome di questo elemento  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `precision[number]`: Quando viene esposto, il valore in 'precision' fornisce una tolleranza +/- rispetto alle proprietà della risorsa. Pertanto, se una proprietà viene AGGIORNATA a un valore e poi viene restituita, il valore restituito è valido se rientra nell'intervallo del valore impostato +/- precision.  - `range[array]`: L'intervallo valido per la proprietà nella risorsa come numero. Il primo valore della matrice è il valore minimo, il secondo valore della matrice è il valore massimo.  - `rt[array]`: Il tipo di risorsa  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `step[number]`: Valore del passo nell'intervallo definito, un numero intero quando l'intervallo è un numero.  Si tratta dell'incremento per i valori validi nell'intervallo; quindi se l'intervallo è 0.0..10.0 e il passo è 2.5, i valori validi sono 0.0,2.5,5.0,7.5,10.0.  - `type[string]`: Tipo di entità NGSI. Deve essere atmosphericPressure  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Proprietà richieste  
@@ -442,64 +443,55 @@ atmosphericPressure:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:atmosphericPressure:id:ELDP:82735557",  
-  "dateCreated": "1978-10-18T02:53:27Z",  
-  "dateModified": "1971-05-22T13:45:28Z",  
-  "source": "Leader right relationship conference treatment until police. A cold language to though benefit want. Ten own anyone low fight answer.",  
-  "name": "Do write story your should present claim. Coach himself size strategy fine kind.",  
-  "alternateName": "Four send region above oil record. Believe item western catch method body time successful.",  
-  "description": "Pressure few number form. Upon set bit process per of. Kitchen six source probably movement.",  
-  "dataProvider": "Sort general exactly able pretty. Apply stay artist throw pull second.",  
-  "owner": [  
-    "urn:ngsi-ld:atmosphericPressure:items:ABBA:58876358",  
-    "urn:ngsi-ld:atmosphericPressure:items:OJQG:19954985"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:atmosphericPressure:items:FGYB:46319843",  
-    "urn:ngsi-ld:atmosphericPressure:items:KYKB:58015149"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -77.1844825,  
-      108.947418  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Billion particular decade prove drug draw get. Good happen truth wonder car material.",  
-    "addressLocality": "Necessary capital would cover. Upon hold institution myself author first small. Those tonight may several soldier.",  
-    "addressRegion": "Left baby no mother leader detail result. Or may from morning why. View common foot arm suggest life home.",  
-    "addressCountry": "Cost ok part company fund office. Past reflect company within above. Person rise himself drug.",  
-    "postalCode": "Without interview produce owner. Stand why ready consumer. Explain trip cultural fill bad court bring.",  
-    "postOfficeBoxNumber": "Adult response democratic middle hand. Prepare such thank reach itself sometimes. Already shoulder actually."  
-  },  
-  "areaServed": "Nearly effect individual four positive price. Court resource single cultural PM probably.",  
-  "rt": [  
-    "oic.r.sensor.atmosphericpressure",  
-    "oic.r.sensor.atmosphericpressure"  
-  ],  
-  "atmosphericPressure": {  
-    "type": "Property",  
-    "value": 88.8  
-  },  
-  "n": "His away back interesting enter hair sea. Continue care buy between generation throw without. Owner hospital current should thus increase.",  
-  "precision": {  
-    "type": "Property",  
-    "value": 964.0  
-  },  
-  "range": [  
-    987.9,  
-    288.3  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 605.4  
-  },  
-  "if": [  
-    "oic.if.s",  
-    "oic.if.s"  
-  ],  
-  "type": "atmosphericPressure"  
+    "id": "urn:ngsi-ld:atmosphericPressure:id:HZZV:82467762",  
+    "dateCreated": "1997-08-06T08:52:44Z",  
+    "dateModified": "1996-11-11T23:42:34Z",  
+    "source": "Strategy some state thus most pretty. Dog crime bag wrong during. Action feeling see they mission science success position.",  
+    "name": "West sell meet artist window within bring protect. Such team contain. Fill support suddenly who.",  
+    "alternateName": "Artist wind realize. Matter ahead close general. Through likely some continue lead.",  
+    "description": "Wall she enough step theory. Good arriv",  
+    "dataProvider": "Through join discussion near admit must other. Attack yard on figure either. Of begin international some.",  
+    "owner": [  
+        "urn:ngsi-ld:atmosphericPressure:items:AKQX:40798143",  
+        "urn:ngsi-ld:atmosphericPressure:items:IICX:50031645"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:atmosphericPressure:items:AERV:66370194"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -85.9629705,  
+            -58.365214  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Along chair evidence early. Effect marriage ch",  
+        "addressLocality": "Sam",  
+        "addressRegion": "Thank sit agree manager PM customer. Evidence exist thus office individual one collection base.",  
+        "addressCountry": "Fact mention hundred property choose involve small. Term throw then whether home compare. Store assume art long fast table. Yet help pretty campaign.",  
+        "postalCode": "Agree exactly far coach. Teacher include really positive long game pla",  
+        "postOfficeBoxNumber": "Former lose part model reflect apply final all. Task yes rise teach reason history hard.",  
+        "streetNr": "In could mean well. Democratic media place far let ",  
+        "district": "Federal name for baby senior. Perform authority black financial allow care direction "  
+    },  
+    "areaServed": "Throw whose will whose never stop development agreement.",  
+    "rt": [  
+        "oic.r.sensor.atmosphericpressure"  
+    ],  
+    "atmosphericPressure": 706.0,  
+    "n": "Care avoid inside account protect spend couple. Read",  
+    "precision": 370.9,  
+    "range": [  
+        767.4,  
+        71.3  
+    ],  
+    "step": 371.2,  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.s"  
+    ],  
+    "type": "atmosphericPressure"  
 }  
 ```  
 </details>  
@@ -508,129 +500,112 @@ atmosphericPressure:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:atmosphericPressure:id:ELDP:82735557"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1978-10-18T02:53:27Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1971-05-22T13:45:28Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Leader right relationship conference treatment until police. A cold language to though benefit want. Ten own anyone low fight answer."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Do write story your should present claim. Coach himself size strategy fine kind."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Four send region above oil record. Believe item western catch method body time successful."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Pressure few number form. Upon set bit process per of. Kitchen six source probably movement."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Sort general exactly able pretty. Apply stay artist throw pull second."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:atmosphericPressure:items:ABBA:58876358",  
-      "urn:ngsi-ld:atmosphericPressure:items:OJQG:19954985"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:atmosphericPressure:items:FGYB:46319843",  
-      "urn:ngsi-ld:atmosphericPressure:items:KYKB:58015149"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -77.1844825,  
-        108.947418  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Billion particular decade prove drug draw get. Good happen truth wonder car material.",  
-      "addressLocality": "Necessary capital would cover. Upon hold institution myself author first small. Those tonight may several soldier.",  
-      "addressRegion": "Left baby no mother leader detail result. Or may from morning why. View common foot arm suggest life home.",  
-      "addressCountry": "Cost ok part company fund office. Past reflect company within above. Person rise himself drug.",  
-      "postalCode": "Without interview produce owner. Stand why ready consumer. Explain trip cultural fill bad court bring.",  
-      "postOfficeBoxNumber": "Adult response democratic middle hand. Prepare such thank reach itself sometimes. Already shoulder actually."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Nearly effect individual four positive price. Court resource single cultural PM probably."  
-  },  
-  "rt": {  
-    "type": "array",  
-    "value": [  
-      "oic.r.sensor.atmosphericpressure",  
-      "oic.r.sensor.atmosphericpressure"  
-    ]  
-  },  
-  "atmosphericPressure": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 88.8  
-    }  
-  },  
-  "n": {  
-    "type": "string",  
-    "value": "His away back interesting enter hair sea. Continue care buy between generation throw without. Owner hospital current should thus increase."  
-  },  
-  "precision": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 964.0  
-    }  
-  },  
-  "range": {  
-    "type": "array",  
-    "value": [  
-      987.9,  
-      288.3  
-    ]  
-  },  
-  "step": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 605.4  
-    }  
-  },  
-  "if": {  
-    "type": "array",  
-    "value": [  
-      "oic.if.s",  
-      "oic.if.s"  
-    ]  
-  },  
-  "type": {  
-    "type": "string",  
-    "value": "atmosphericPressure"  
-  }  
+    "id": "urn:ngsi-ld:atmosphericPressure:id:HZZV:82467762",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1997-08-06T08:52:44Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "1996-11-11T23:42:34Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Strategy some state thus most pretty. Dog crime bag wrong during. Action feeling see they mission science success position."  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "West sell meet artist window within bring protect. Such team contain. Fill support suddenly who."  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Artist wind realize. Matter ahead close general. Through likely some continue lead."  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Wall she enough step theory. Good arriv"  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Through join discussion near admit must other. Attack yard on figure either. Of begin international some."  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:atmosphericPressure:items:AKQX:40798143",  
+            "urn:ngsi-ld:atmosphericPressure:items:IICX:50031645"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:atmosphericPressure:items:AERV:66370194"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -85.9629705,  
+                -58.365214  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Along chair evidence early. Effect marriage ch",  
+            "addressLocality": "Sam",  
+            "addressRegion": "Thank sit agree manager PM customer. Evidence exist thus office individual one collection base.",  
+            "addressCountry": "Fact mention hundred property choose involve small. Term throw then whether home compare. Store assume art long fast table. Yet help pretty campaign.",  
+            "postalCode": "Agree exactly far coach. Teacher include really positive long game pla",  
+            "postOfficeBoxNumber": "Former lose part model reflect apply final all. Task yes rise teach reason history hard.",  
+            "streetNr": "In could mean well. Democratic media place far let ",  
+            "district": "Federal name for baby senior. Perform authority black financial allow care direction "  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Throw whose will whose never stop development agreement."  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.sensor.atmosphericpressure"  
+        ]  
+    },  
+    "atmosphericPressure": {  
+        "type": "Number",  
+        "value": 706.0  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Care avoid inside account protect spend couple. Read"  
+    },  
+    "precision": {  
+        "type": "Number",  
+        "value": 370.9  
+    },  
+    "range": {  
+        "type": "StructuredValue",  
+        "value": [  
+            767.4,  
+            71.3  
+        ]  
+    },  
+    "step": {  
+        "type": "Number",  
+        "value": 371.2  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.baseline",  
+            "oic.if.s"  
+        ]  
+    },  
+    "type": "atmosphericPressure"  
 }  
 ```  
 </details>  
@@ -639,67 +614,57 @@ atmosphericPressure:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:atmosphericPressure:id:ELDP:82735557",  
-    "dateCreated": "1978-10-18T02:53:27Z",  
-    "dateModified": "1971-05-22T13:45:28Z",  
-    "source": "Leader right relationship conference treatment until police. A cold language to though benefit want. Ten own anyone low fight answer.",  
-    "name": "Do write story your should present claim. Coach himself size strategy fine kind.",  
-    "alternateName": "Four send region above oil record. Believe item western catch method body time successful.",  
-    "description": "Pressure few number form. Upon set bit process per of. Kitchen six source probably movement.",  
-    "dataProvider": "Sort general exactly able pretty. Apply stay artist throw pull second.",  
+    "id": "urn:ngsi-ld:atmosphericPressure:id:HZZV:82467762",  
+    "dateCreated": "1997-08-06T08:52:44Z",  
+    "dateModified": "1996-11-11T23:42:34Z",  
+    "source": "Strategy some state thus most pretty. Dog crime bag wrong during. Action feeling see they mission science success position.",  
+    "name": "West sell meet artist window within bring protect. Such team contain. Fill support suddenly who.",  
+    "alternateName": "Artist wind realize. Matter ahead close general. Through likely some continue lead.",  
+    "description": "Wall she enough step theory. Good arriv",  
+    "dataProvider": "Through join discussion near admit must other. Attack yard on figure either. Of begin international some.",  
     "owner": [  
-        "urn:ngsi-ld:atmosphericPressure:items:ABBA:58876358",  
-        "urn:ngsi-ld:atmosphericPressure:items:OJQG:19954985"  
+        "urn:ngsi-ld:atmosphericPressure:items:AKQX:40798143",  
+        "urn:ngsi-ld:atmosphericPressure:items:IICX:50031645"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:atmosphericPressure:items:FGYB:46319843",  
-        "urn:ngsi-ld:atmosphericPressure:items:KYKB:58015149"  
+        "urn:ngsi-ld:atmosphericPressure:items:AERV:66370194"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            -77.1844825,  
-            108.947418  
+            -85.9629705,  
+            -58.365214  
         ]  
     },  
     "address": {  
-        "streetAddress": "Billion particular decade prove drug draw get. Good happen truth wonder car material.",  
-        "addressLocality": "Necessary capital would cover. Upon hold institution myself author first small. Those tonight may several soldier.",  
-        "addressRegion": "Left baby no mother leader detail result. Or may from morning why. View common foot arm suggest life home.",  
-        "addressCountry": "Cost ok part company fund office. Past reflect company within above. Person rise himself drug.",  
-        "postalCode": "Without interview produce owner. Stand why ready consumer. Explain trip cultural fill bad court bring.",  
-        "postOfficeBoxNumber": "Adult response democratic middle hand. Prepare such thank reach itself sometimes. Already shoulder actually."  
+        "streetAddress": "Along chair evidence early. Effect marriage ch",  
+        "addressLocality": "Sam",  
+        "addressRegion": "Thank sit agree manager PM customer. Evidence exist thus office individual one collection base.",  
+        "addressCountry": "Fact mention hundred property choose involve small. Term throw then whether home compare. Store assume art long fast table. Yet help pretty campaign.",  
+        "postalCode": "Agree exactly far coach. Teacher include really positive long game pla",  
+        "postOfficeBoxNumber": "Former lose part model reflect apply final all. Task yes rise teach reason history hard.",  
+        "streetNr": "In could mean well. Democratic media place far let ",  
+        "district": "Federal name for baby senior. Perform authority black financial allow care direction "  
     },  
-    "areaServed": "Nearly effect individual four positive price. Court resource single cultural PM probably.",  
+    "areaServed": "Throw whose will whose never stop development agreement.",  
     "rt": [  
-        "oic.r.sensor.atmosphericpressure",  
         "oic.r.sensor.atmosphericpressure"  
     ],  
-    "atmosphericPressure": {  
-        "type": "Property",  
-        "value": 88.8  
-    },  
-    "n": "His away back interesting enter hair sea. Continue care buy between generation throw without. Owner hospital current should thus increase.",  
-    "precision": {  
-        "type": "Property",  
-        "value": 964.0  
-    },  
+    "atmosphericPressure": 706.0,  
+    "n": "Care avoid inside account protect spend couple. Read",  
+    "precision": 370.9,  
     "range": [  
-        987.9,  
-        288.3  
+        767.4,  
+        71.3  
     ],  
-    "step": {  
-        "type": "Property",  
-        "value": 605.4  
-    },  
+    "step": 371.2,  
     "if": [  
-        "oic.if.s",  
+        "oic.if.baseline",  
         "oic.if.s"  
     ],  
     "type": "atmosphericPressure",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -709,78 +674,80 @@ atmosphericPressure:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:atmosphericPressure:id:RJQY:59820312",  
+    "id": "urn:ngsi-ld:atmosphericPressure:id:HZZV:82467762",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2007-06-26T17:29:21Z"  
+            "@value": "1997-08-06T08:52:44Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2011-06-17T02:00:43Z"  
+            "@value": "1996-11-11T23:42:34Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Teach Mrs easy fight across reason himself. Former section why today stay. High way official structure."  
+        "value": "Strategy some state thus most pretty. Dog crime bag wrong during. Action feeling see they mission science success position."  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Little compare take education. Dinner lose western feel. Next list since then."  
+        "value": "West sell meet artist window within bring protect. Such team contain. Fill support suddenly who."  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Door recently drive."  
+        "value": "Artist wind realize. Matter ahead close general. Through likely some continue lead."  
     },  
     "description": {  
         "type": "Property",  
-        "value": "End consider financial hope. Mouth south start single strong. Doctor itself popular choose give possible into."  
+        "value": "Wall she enough step theory. Good arriv"  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Share cover road fish think investment account."  
+        "value": "Through join discussion near admit must other. Attack yard on figure either. Of begin international some."  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:atmosphericPressure:items:HDEN:32343695",  
-            "urn:ngsi-ld:atmosphericPressure:items:RVRC:69480931"  
+            "urn:ngsi-ld:atmosphericPressure:items:AKQX:40798143",  
+            "urn:ngsi-ld:atmosphericPressure:items:IICX:50031645"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:atmosphericPressure:items:PRFC:27292619"  
+            "urn:ngsi-ld:atmosphericPressure:items:AERV:66370194"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                -11.8938735,  
-                11.02388  
+                -85.9629705,  
+                -58.365214  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Six boy would produce. Beyond forward ability much resource.",  
-            "addressLocality": "Catch heavy usually phone whom property every.",  
-            "addressRegion": "Visit response direction statement feeling. Medical new matter a president them.",  
-            "addressCountry": "Institution recent consider clearly and argue indicate. Tell general wear keep arm relationship hundred.",  
-            "postalCode": "American campaign too at view card. School word those score in. Article table size near crime investment.",  
-            "postOfficeBoxNumber": "Particularly skin research whether goal need. Last court position politics sell."  
+            "streetAddress": "Along chair evidence early. Effect marriage ch",  
+            "addressLocality": "Sam",  
+            "addressRegion": "Thank sit agree manager PM customer. Evidence exist thus office individual one collection base.",  
+            "addressCountry": "Fact mention hundred property choose involve small. Term throw then whether home compare. Store assume art long fast table. Yet help pretty campaign.",  
+            "postalCode": "Agree exactly far coach. Teacher include really positive long game pla",  
+            "postOfficeBoxNumber": "Former lose part model reflect apply final all. Task yes rise teach reason history hard.",  
+            "streetNr": "In could mean well. Democratic media place far let ",  
+            "district": "Federal name for baby senior. Perform authority black financial allow care direction "  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Game education structure force fine resource. Expert rise board sometimes. Wrong simple a public study get."  
+        "value": "Throw whose will whose never stop development agreement."  
     },  
     "rt": {  
         "type": "Property",  
@@ -790,38 +757,37 @@ atmosphericPressure:
     },  
     "atmosphericPressure": {  
         "type": "Property",  
-        "value": 904.6  
+        "value": 706.0  
     },  
     "n": {  
         "type": "Property",  
-        "value": "Factor charge often artist husband wall region. Continue role particularly top. Of song attorney week force continue because few."  
+        "value": "Care avoid inside account protect spend couple. Read"  
     },  
     "precision": {  
         "type": "Property",  
-        "value": 953.2  
+        "value": 370.9  
     },  
     "range": {  
         "type": "Property",  
         "value": [  
-            801.2,  
-            869.8  
+            767.4,  
+            71.3  
         ]  
     },  
     "step": {  
         "type": "Property",  
-        "value": 620.7  
+        "value": 371.2  
     },  
     "if": {  
         "type": "Property",  
         "value": [  
             "oic.if.baseline",  
-            "oic.if.baseline"  
+            "oic.if.s"  
         ]  
     },  
     "type": "atmosphericPressure",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
