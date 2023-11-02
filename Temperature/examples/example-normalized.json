@@ -1,129 +1,112 @@
 {
-  "id": {
-    "type": "string",
-    "value": "urn:ngsi-ld:Temperature:id:TDIW:54028449"
-  },
-  "dateCreated": {
-    "format": "date-time",
-    "type": "string",
-    "value": "2002-11-15T00:39:26Z"
-  },
-  "dateModified": {
-    "format": "date-time",
-    "type": "string",
-    "value": "1984-04-05T09:28:18Z"
-  },
-  "source": {
-    "type": "string",
-    "value": "Report reveal along thank conference anything. Strong commercial oil great little eat film. Son source question all bed continue."
-  },
-  "name": {
-    "type": "string",
-    "value": "Hope clearly appear my project former goal ago. Put edge assume close believe focus."
-  },
-  "alternateName": {
-    "type": "string",
-    "value": "Employee machine rate among goal drive. Management fish author until second."
-  },
-  "description": {
-    "type": "string",
-    "value": "Mission full life thank feeling approach. Newspaper our color bring final. Enter fall wear age ago."
-  },
-  "dataProvider": {
-    "type": "string",
-    "value": "Improve reflect ago bad result."
-  },
-  "owner": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:Temperature:items:RMOR:11444543",
-      "urn:ngsi-ld:Temperature:items:GBKW:61820150"
-    ]
-  },
-  "seeAlso": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:Temperature:items:AXXM:54456212",
-      "urn:ngsi-ld:Temperature:items:LIWH:14572760"
-    ]
-  },
-  "location": {
-    "type": "object",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        39.6865755,
-        168.763262
-      ]
-    }
-  },
-  "address": {
-    "type": "object",
-    "value": {
-      "streetAddress": "Case institution side suddenly land set trip. Other police own activity field they. With new individual. Notice he loss recognize start exactly difference picture.",
-      "addressLocality": "President president new.",
-      "addressRegion": "Little newspaper to some Congress. School organization account heavy now strong organization. Bit it great its very.",
-      "addressCountry": "Control outside save similar. Citizen only PM able product main.",
-      "postalCode": "Road Mr or success science. Civil fact compare floor loss.",
-      "postOfficeBoxNumber": "Add in spring often American. When coach relationship sell production. Great relationship participant piece ground."
-    }
-  },
-  "areaServed": {
-    "type": "string",
-    "value": "Policy yet line half. Meet machine still never. Father both phone teacher throw particularly admit seek."
-  },
-  "rt": {
-    "type": "array",
-    "value": [
-      "oic.r.temperature",
-      "oic.r.temperature"
-    ]
-  },
-  "temperature": {
-    "type": "object",
-    "value": {
-      "type": "Property",
-      "value": 246.8
-    }
-  },
-  "units": {
-    "type": "string",
-    "value": "F"
-  },
-  "n": {
-    "type": "string",
-    "value": "Action thought sing fall play require owner. Business itself artist how chair interest."
-  },
-  "range": {
-    "type": "array",
-    "value": [
-      515.3,
-      539.9
-    ]
-  },
-  "step": {
-    "type": "object",
-    "value": {
-      "type": "Property",
-      "value": 292.0
-    }
-  },
-  "precision": {
-    "type": "object",
-    "value": {
-      "type": "Property",
-      "value": 843.0
-    }
-  },
-  "if": {
-    "type": "array",
-    "value": [
-      "oic.if.a",
-      "oic.if.baseline"
-    ]
-  },
-  "type": {
-    "type": "string",
-    "value": "Temperature"
-  }
+    "id": "urn:ngsi-ld:Temperature:id:KUHP:87123041",
+    "dateCreated": {
+        "type": "DateTime",
+        "value": "1973-02-16T10:24:42Z"
+    },
+    "dateModified": {
+        "type": "DateTime",
+        "value": "2014-09-28T19:16:20Z"
+    },
+    "source": {
+        "type": "Text",
+        "value": "Produce visit laugh bring. Floor budget break push gas do."
+    },
+    "name": {
+        "type": "Text",
+        "value": "Safe life through case offer hold. Ok son old cover."
+    },
+    "alternateName": {
+        "type": "Text",
+        "value": "Dra"
+    },
+    "description": {
+        "type": "Text",
+        "value": "The and sense business box ten. One wear accept really sing section boy. Feeling morning husband best travel campaign suggest. There high account across political three."
+    },
+    "dataProvider": {
+        "type": "Text",
+        "value": "Ground room parent provide move language."
+    },
+    "owner": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:Temperature:items:NWXV:43893681",
+            "urn:ngsi-ld:Temperature:items:MGUP:41314069"
+        ]
+    },
+    "seeAlso": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:Temperature:items:ZFLJ:77368631"
+        ]
+    },
+    "location": {
+        "type": "geo:json",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                58.8891655,
+                7.124082
+            ]
+        }
+    },
+    "address": {
+        "type": "StructuredValue",
+        "value": {
+            "streetAddress": "Look receive concern fill society. Call lay guy pull among answer.",
+            "addressLocality": "Watch main official be. Word scientist card drop man operation her. At east yourself.",
+            "addressRegion": "Should general most worry source of factor short. Up case their last.",
+            "addressCountry": "Season treatment ",
+            "postalCode": "Language evi",
+            "postOfficeBoxNumber": "Center produce result. Week li",
+            "streetNr": "As management other section cold upon might. Technology authority common might. ",
+            "district": "Fear avoid true. About ability local though account heart. Few exist l"
+        }
+    },
+    "areaServed": {
+        "type": "Text",
+        "value": "Level social attorney range can voice box. Speak t"
+    },
+    "rt": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.r.temperature"
+        ]
+    },
+    "temperature": {
+        "type": "Number",
+        "value": 210.2
+    },
+    "units": {
+        "type": "Text",
+        "value": "F"
+    },
+    "n": {
+        "type": "Text",
+        "value": "Indeed close "
+    },
+    "range": {
+        "type": "StructuredValue",
+        "value": [
+            272.4,
+            406.0
+        ]
+    },
+    "step": {
+        "type": "Number",
+        "value": 76.3
+    },
+    "precision": {
+        "type": "Number",
+        "value": 34.3
+    },
+    "if": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.if.baseline",
+            "oic.if.a"
+        ]
+    },
+    "type": "Temperature"
 }
