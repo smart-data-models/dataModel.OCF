@@ -15,7 +15,15 @@
 ## 속성 목록  
 
 <sup><sub>[*] 속성에 유형이 없는 것은 여러 유형 또는 다른 형식/패턴을 가질 수 있기 때문입니다</sub></sup>.  
-- `if[array]`: 이 리소스에서 지원하는 OCF 인터페이스 세트입니다.  - `n[string]`: 리소스의 친근한 이름  - `rt[array]`: 리소스 유형입니다.  - `type[string]`: NGSI 엔티티 유형입니다. EnergyOverload여야 합니다.  - `value[boolean]`: 에너지 과부하 표시, 참 = 트립됨, 거짓 = 트립되지 않음.  <!-- /30-PropertiesList -->  
+- `address[object]`: 우편 주소  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 국가. 예를 들어, 스페인  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 도로명 주소가 있는 지역 및 해당 지역에 속한 지역  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: 해당 지역이 위치한 지역과 해당 국가의 지역  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 지구는 일부 국가에서는 지방 정부에서 관리하는 행정 구역의 일종입니다.    
+	- `postOfficeBoxNumber[string]`: 사서함 주소의 우체국 사서함 번호입니다. 예: 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 우편 번호입니다. 예: 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 거리 주소  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: 공공 도로의 특정 건물을 식별하는 번호    
+- `alternateName[string]`: 이 항목의 대체 이름  - `areaServed[string]`: 서비스 또는 제공 품목이 제공되는 지리적 영역  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 조화된 데이터 엔티티의 공급자를 식별하는 일련의 문자  - `dateCreated[date-time]`: 엔티티 생성 타임스탬프. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `dateModified[date-time]`: 엔티티의 마지막 수정 타임스탬프입니다. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `description[string]`: 이 항목에 대한 설명  - `id[*]`: 엔티티의 고유 식별자  - `if[array]`: 이 리소스에서 지원하는 OCF 인터페이스 세트입니다.  - `location[*]`: 항목에 대한 지오숀 참조입니다. 포인트, 라인 문자열, 다각형, 멀티포인트, 멀티라인 문자열 또는 멀티폴리곤일 수 있습니다.  - `n[string]`: 리소스의 친근한 이름  - `name[string]`: 이 항목의 이름  - `owner[array]`: 소유자의 고유 ID를 참조하는 JSON 인코딩된 문자 시퀀스가 포함된 목록입니다.  - `rt[array]`: 리소스 유형입니다.  - `seeAlso[*]`: 항목에 대한 추가 리소스를 가리키는 URL 목록  - `source[string]`: 엔티티 데이터의 원본 소스를 URL로 제공하는 문자 시퀀스입니다. 소스 공급자의 정규화된 도메인 이름 또는 소스 개체에 대한 URL을 사용하는 것이 좋습니다.  - `type[string]`: NGSI 엔티티 유형입니다. EnergyOverload여야 합니다.  - `value[boolean]`: 에너지 과부하 표시, 참 = 트립됨, 거짓 = 트립되지 않음.  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 필수 속성  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -32,6 +40,109 @@
 EnergyOverload:    
   description: 'Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes whether an energy overload detector/circuit breaker is currently tripped. The Property ''value'' is a boolean. A value of ''true'' means that energy overload has been tripped. A value of ''false'' means that energy overload has not been tripped. '    
   properties:    
+    address:    
+      description: The mailing address    
+      properties:    
+        addressCountry:    
+          description: 'The country. For example, Spain'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
+        addressLocality:    
+          description: 'The locality in which the street address is, and which is in the region'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
+        addressRegion:    
+          description: 'The region in which the locality is, and which is in the country'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        postOfficeBoxNumber:    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
+        postalCode:    
+          description: 'The postal code. For example, 24004'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
+        streetAddress:    
+          description: The street address    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      type: object    
+      x-ngsi:    
+        model: https://schema.org/address    
+        type: Property    
+    alternateName:    
+      description: An alternative name for this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    areaServed:    
+      description: The geographic area where a service or offered item is provided    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    dataProvider:    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateCreated:    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateModified:    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    description:    
+      description: A description of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    id:    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
+      x-ngsi:    
+        type: Property    
     if:    
       description: The OCF Interface set supported by this Resource.    
       items:    
@@ -45,11 +156,203 @@ EnergyOverload:
       uniqueItems: true    
       x-ngsi:    
         type: Property    
+    location:    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+      oneOf:    
+        - description: Geojson reference to the item. Point    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                type: number    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - Point    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Point    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - LineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON LineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 4    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - Polygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Polygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPoint    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPoint    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiLineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiLineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    items:    
+                      type: number    
+                    minItems: 2    
+                    type: array    
+                  minItems: 4    
+                  type: array    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPolygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPolygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+      x-ngsi:    
+        type: GeoProperty    
     n:    
       description: Friendly name of the Resource    
       maxLength: 64    
       readOnly: true    
       type: string    
+      x-ngsi:    
+        type: Property    
+    name:    
+      description: The name of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    owner:    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
+      items:    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
+      type: array    
       x-ngsi:    
         type: Property    
     rt:    
@@ -63,6 +366,23 @@ EnergyOverload:
       readOnly: true    
       type: array    
       uniqueItems: true    
+      x-ngsi:    
+        type: Property    
+    seeAlso:    
+      description: list of uri pointing to additional resources about the item    
+      oneOf:    
+        - items:    
+            format: uri    
+            type: string    
+          minItems: 1    
+          type: array    
+        - format: uri    
+          type: string    
+      x-ngsi:    
+        type: Property    
+    source:    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
+      type: string    
       x-ngsi:    
         type: Property    
     type:    
@@ -100,38 +420,49 @@ EnergyOverload:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:EnergyOverload:id:XYJB:57383405",  
-  "dateCreated": "1974-03-17T20:21:35Z",  
-  "dateModified": "2003-05-25T04:57:21Z",  
-  "source": "Response alone this great visit site industry add. Painting according woman former several.",  
-  "name": "Age standard mention Mrs. Explain art class chance drug who everything. Style stuff financial. Owner remember glass yes performance section.",  
-  "alternateName": "Care network speech brother ahead. His religious college star.",  
-  "description": "Church two record painting. Strong season end identify remember message. Nation side soon learn realize bad.",  
-  "dataProvider": "Nice international week actually. Appear chance light attack discussion world land.",  
-  "owner": [  
-    "urn:ngsi-ld:EnergyOverload:items:VFZT:44182994",  
-    "urn:ngsi-ld:EnergyOverload:items:UUEJ:58597087"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:EnergyOverload:items:DZHC:27624371",  
-    "urn:ngsi-ld:EnergyOverload:items:DTBB:94053851"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -62.3715995,  
-      82.314226  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Reduce this protect able. Add history dream rather condition partner. Authority laugh become color represent image.",  
-    "addressLocality": "Might production exactly account. Imagine behind offer maybe push expect behavior vote. She grow heavy.",  
-    "addressRegion": "Parent site lawyer woman stage. Somebody again early he nice. Mother however they live task together.",  
-    "addressCountry": "Task computer card notice road feel. May research produce address. Five act serious environment protect itself lose.",  
-    "postalCode": "Think material rock. Thank back center parent set outside both. He avoid on understand to thousand perhaps.",  
-    "postOfficeBoxNumber": "Owner big result turn born. Threat chance by particular could man."  
-  },  
-  "areaServed": "That relationship plant know. Full natural wall coach."  
+    "id": "urn:ngsi-ld:EnergyOverload:id:TJFR:44040039",  
+    "dateCreated": "2021-07-11T17:34:36Z",  
+    "dateModified": "2020-01-13T13:54:22Z",  
+    "source": "Cause fast buy design word area.",  
+    "name": "Arm son allow garden goal po",  
+    "alternateName": "Only account that knowledge ball season. Baby sea military almost. Range whom group public professional knowledge only.",  
+    "description": "Either course market me. Relationship him bring away.",  
+    "dataProvider": "Left above meet too cover public Mr phone. Road relate ",  
+    "owner": [  
+        "urn:ngsi-ld:EnergyOverload:items:OBGL:58595014",  
+        "urn:ngsi-ld:EnergyOverload:items:RDDS:88337121"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:EnergyOverload:items:DMKU:92062252"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            37.7313715,  
+            -80.62013  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Meeting gas small ready us. Suddenly current stock result north its second. Yo",  
+        "addressLocality": "I",  
+        "addressRegion": "After culture Democrat week sure threat. Conference of bed he. Go career local face police energy.",  
+        "addressCountry": "Hard close pressure begin. Free throughout cut tree",  
+        "postalCode": "Fear cause data hot. Fi",  
+        "postOfficeBoxNumber": "Throw drop daughter yard walk visit. Bad car own visit peace why piece raise. Popular gas save ten. Cause ever yourself another treat.",  
+        "streetNr": "Suggest section why pay often newspaper. Pick card responsibility own region hospital quality game. Far building color. Father who",  
+        "district": "Skin certain same remain. Example up listen develop positive through staff. Trade your"  
+    },  
+    "areaServed": "Relationship alone of wester",  
+    "rt": [  
+        "oic.r.energy.overload"  
+    ],  
+    "value": false,  
+    "n": "Chance develop serious. Leave various entire live.",  
+    "if": [  
+        "oic.if.s",  
+        "oic.if.baseline"  
+    ],  
+    "type": "EnergyOverload"  
 }  
 ```  
 </details>  
@@ -140,79 +471,97 @@ EnergyOverload:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:EnergyOverload:id:XYJB:57383405"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1974-03-17T20:21:35Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2003-05-25T04:57:21Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Response alone this great visit site industry add. Painting according woman former several."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Age standard mention Mrs. Explain art class chance drug who everything. Style stuff financial. Owner remember glass yes performance section."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Care network speech brother ahead. His religious college star."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Church two record painting. Strong season end identify remember message. Nation side soon learn realize bad."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Nice international week actually. Appear chance light attack discussion world land."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:EnergyOverload:items:VFZT:44182994",  
-      "urn:ngsi-ld:EnergyOverload:items:UUEJ:58597087"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:EnergyOverload:items:DZHC:27624371",  
-      "urn:ngsi-ld:EnergyOverload:items:DTBB:94053851"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
+    "id": "urn:ngsi-ld:EnergyOverload:id:TJFR:44040039",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "2021-07-11T17:34:36Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "2020-01-13T13:54:22Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Cause fast buy design word area."  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Arm son allow garden goal po"  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Only account that knowledge ball season. Baby sea military almost. Range whom group public professional knowledge only."  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Either course market me. Relationship him bring away."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Left above meet too cover public Mr phone. Road relate "  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:EnergyOverload:items:OBGL:58595014",  
+            "urn:ngsi-ld:EnergyOverload:items:RDDS:88337121"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:EnergyOverload:items:DMKU:92062252"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                37.7313715,  
+                -80.62013  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Meeting gas small ready us. Suddenly current stock result north its second. Yo",  
+            "addressLocality": "I",  
+            "addressRegion": "After culture Democrat week sure threat. Conference of bed he. Go career local face police energy.",  
+            "addressCountry": "Hard close pressure begin. Free throughout cut tree",  
+            "postalCode": "Fear cause data hot. Fi",  
+            "postOfficeBoxNumber": "Throw drop daughter yard walk visit. Bad car own visit peace why piece raise. Popular gas save ten. Cause ever yourself another treat.",  
+            "streetNr": "Suggest section why pay often newspaper. Pick card responsibility own region hospital quality game. Far building color. Father who",  
+            "district": "Skin certain same remain. Example up listen develop positive through staff. Trade your"  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Relationship alone of wester"  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.energy.overload"  
+        ]  
+    },  
     "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -62.3715995,  
-        82.314226  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Reduce this protect able. Add history dream rather condition partner. Authority laugh become color represent image.",  
-      "addressLocality": "Might production exactly account. Imagine behind offer maybe push expect behavior vote. She grow heavy.",  
-      "addressRegion": "Parent site lawyer woman stage. Somebody again early he nice. Mother however they live task together.",  
-      "addressCountry": "Task computer card notice road feel. May research produce address. Five act serious environment protect itself lose.",  
-      "postalCode": "Think material rock. Thank back center parent set outside both. He avoid on understand to thousand perhaps.",  
-      "postOfficeBoxNumber": "Owner big result turn born. Threat chance by particular could man."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "That relationship plant know. Full natural wall coach."  
-  }  
+        "type": "Boolean",  
+        "value": false  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Chance develop serious. Leave various entire live."  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.s",  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "EnergyOverload"  
 }  
 ```  
 </details>  
@@ -221,41 +570,51 @@ EnergyOverload:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:EnergyOverload:id:XYJB:57383405",  
-    "dateCreated": "1974-03-17T20:21:35Z",  
-    "dateModified": "2003-05-25T04:57:21Z",  
-    "source": "Response alone this great visit site industry add. Painting according woman former several.",  
-    "name": "Age standard mention Mrs. Explain art class chance drug who everything. Style stuff financial. Owner remember glass yes performance section.",  
-    "alternateName": "Care network speech brother ahead. His religious college star.",  
-    "description": "Church two record painting. Strong season end identify remember message. Nation side soon learn realize bad.",  
-    "dataProvider": "Nice international week actually. Appear chance light attack discussion world land.",  
+    "id": "urn:ngsi-ld:EnergyOverload:id:TJFR:44040039",  
+    "dateCreated": "2021-07-11T17:34:36Z",  
+    "dateModified": "2020-01-13T13:54:22Z",  
+    "source": "Cause fast buy design word area.",  
+    "name": "Arm son allow garden goal po",  
+    "alternateName": "Only account that knowledge ball season. Baby sea military almost. Range whom group public professional knowledge only.",  
+    "description": "Either course market me. Relationship him bring away.",  
+    "dataProvider": "Left above meet too cover public Mr phone. Road relate ",  
     "owner": [  
-        "urn:ngsi-ld:EnergyOverload:items:VFZT:44182994",  
-        "urn:ngsi-ld:EnergyOverload:items:UUEJ:58597087"  
+        "urn:ngsi-ld:EnergyOverload:items:OBGL:58595014",  
+        "urn:ngsi-ld:EnergyOverload:items:RDDS:88337121"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:EnergyOverload:items:DZHC:27624371",  
-        "urn:ngsi-ld:EnergyOverload:items:DTBB:94053851"  
+        "urn:ngsi-ld:EnergyOverload:items:DMKU:92062252"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            -62.3715995,  
-            82.314226  
+            37.7313715,  
+            -80.62013  
         ]  
     },  
     "address": {  
-        "streetAddress": "Reduce this protect able. Add history dream rather condition partner. Authority laugh become color represent image.",  
-        "addressLocality": "Might production exactly account. Imagine behind offer maybe push expect behavior vote. She grow heavy.",  
-        "addressRegion": "Parent site lawyer woman stage. Somebody again early he nice. Mother however they live task together.",  
-        "addressCountry": "Task computer card notice road feel. May research produce address. Five act serious environment protect itself lose.",  
-        "postalCode": "Think material rock. Thank back center parent set outside both. He avoid on understand to thousand perhaps.",  
-        "postOfficeBoxNumber": "Owner big result turn born. Threat chance by particular could man."  
+        "streetAddress": "Meeting gas small ready us. Suddenly current stock result north its second. Yo",  
+        "addressLocality": "I",  
+        "addressRegion": "After culture Democrat week sure threat. Conference of bed he. Go career local face police energy.",  
+        "addressCountry": "Hard close pressure begin. Free throughout cut tree",  
+        "postalCode": "Fear cause data hot. Fi",  
+        "postOfficeBoxNumber": "Throw drop daughter yard walk visit. Bad car own visit peace why piece raise. Popular gas save ten. Cause ever yourself another treat.",  
+        "streetNr": "Suggest section why pay often newspaper. Pick card responsibility own region hospital quality game. Far building color. Father who",  
+        "district": "Skin certain same remain. Example up listen develop positive through staff. Trade your"  
     },  
-    "areaServed": "That relationship plant know. Full natural wall coach.",  
+    "areaServed": "Relationship alone of wester",  
+    "rt": [  
+        "oic.r.energy.overload"  
+    ],  
+    "value": false,  
+    "n": "Chance develop serious. Leave various entire live.",  
+    "if": [  
+        "oic.if.s",  
+        "oic.if.baseline"  
+    ],  
+    "type": "EnergyOverload",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -265,82 +624,105 @@ EnergyOverload:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:EnergyOverload:id:PXSH:23096499",  
+    "id": "urn:ngsi-ld:EnergyOverload:id:TJFR:44040039",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1998-01-05T07:49:58Z"  
+            "@value": "2021-07-11T17:34:36Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1989-05-27T02:44:22Z"  
+            "@value": "2020-01-13T13:54:22Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Move building will two a. Including drop drop policy opportunity."  
+        "value": "Cause fast buy design word area."  
     },  
     "name": {  
         "type": "Property",  
-        "value": "President admit both realize remember hot relationship."  
+        "value": "Arm son allow garden goal po"  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Keep imagine stand answer. Appear owner we. Live whom contain miss."  
+        "value": "Only account that knowledge ball season. Baby sea military almost. Range whom group public professional knowledge only."  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Article stock treat. Anything set claim whom contain those."  
+        "value": "Either course market me. Relationship him bring away."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Hear property it effect top. First central bit particular American mean. Hundred light also church."  
+        "value": "Left above meet too cover public Mr phone. Road relate "  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:EnergyOverload:items:KLTE:97669741",  
-            "urn:ngsi-ld:EnergyOverload:items:LGOK:70219090"  
+            "urn:ngsi-ld:EnergyOverload:items:OBGL:58595014",  
+            "urn:ngsi-ld:EnergyOverload:items:RDDS:88337121"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:EnergyOverload:items:LKOG:56325483"  
+            "urn:ngsi-ld:EnergyOverload:items:DMKU:92062252"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                -77.6364145,  
-                46.870351  
+                37.7313715,  
+                -80.62013  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Fund alone role determine conference realize against including. Reflect save scene subject state sense certainly successful. Improve develop medical people over. Least cover manager.",  
-            "addressLocality": "Make son per Democrat information. Picture color run training billion read. Than big stay. Increase religious choose year drive born company.",  
-            "addressRegion": "Situation account yourself his several approach indicate. Travel character easy policy record west seat.",  
-            "addressCountry": "Finish just discuss agree event. Cup evidence point least happen measure. Television lose down instead painting others.",  
-            "postalCode": "Seat protect doctor thank later. Full whatever at door commercial. Every agency spring answer.",  
-            "postOfficeBoxNumber": "Short north family fish. Artist challenge those."  
+            "streetAddress": "Meeting gas small ready us. Suddenly current stock result north its second. Yo",  
+            "addressLocality": "I",  
+            "addressRegion": "After culture Democrat week sure threat. Conference of bed he. Go career local face police energy.",  
+            "addressCountry": "Hard close pressure begin. Free throughout cut tree",  
+            "postalCode": "Fear cause data hot. Fi",  
+            "postOfficeBoxNumber": "Throw drop daughter yard walk visit. Bad car own visit peace why piece raise. Popular gas save ten. Cause ever yourself another treat.",  
+            "streetNr": "Suggest section why pay often newspaper. Pick card responsibility own region hospital quality game. Far building color. Father who",  
+            "district": "Skin certain same remain. Example up listen develop positive through staff. Trade your"  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Just choice cell stage. Student own son economy book others lot. Foot science heart bank. Service beautiful fact shake arm over when art."  
+        "value": "Relationship alone of wester"  
     },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.energy.overload"  
+        ]  
+    },  
+    "value": {  
+        "type": "Property",  
+        "value": false  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Chance develop serious. Leave various entire live."  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.s",  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "EnergyOverload",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -348,7 +730,7 @@ EnergyOverload:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-[FAQ 10](https://smartdatamodels.org/index.php/faqs/)을 참조하여 규모 단위를 다루는 방법에 대한 답변을 확인하세요.  
+10](https://smartdatamodels.org/index.php/faqs/)를 참조하여 규모 단위를 다루는 방법에 대한 답변을 확인하세요.  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
