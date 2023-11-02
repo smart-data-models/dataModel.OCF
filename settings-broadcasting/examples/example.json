@@ -1,34 +1,50 @@
 {
-  "id": "urn:ngsi-ld:settings-broadcasting:id:SLUP:43489974",
-  "dateCreated": "2006-03-23T01:49:22Z",
-  "dateModified": "1996-05-23T17:55:21Z",
-  "source": "Person contain eight foot yet film. Stuff life paper.",
-  "name": "Good friend pick physical too become teacher. Enjoy should near investment. Available left science up experience end.",
-  "alternateName": "We opportunity management before. Easy cause line dream area join let.",
-  "description": "Skill all room cost billion. Security herself beat everybody door.",
-  "dataProvider": "Bed hard again traditional success key either. Onto professional staff over attention. Other treatment pay property cut upon. Any action former matter gun.",
-  "owner": [
-    "urn:ngsi-ld:settings-broadcasting:items:LGAG:86343291",
-    "urn:ngsi-ld:settings-broadcasting:items:MPVF:05612437"
-  ],
-  "seeAlso": [
-    "urn:ngsi-ld:settings-broadcasting:items:CKBR:08618962",
-    "urn:ngsi-ld:settings-broadcasting:items:MUGP:50818543"
-  ],
-  "location": {
-    "type": "Point",
-    "coordinates": [
-      -80.067935,
-      -43.419269
-    ]
-  },
-  "address": {
-    "streetAddress": "Low election scientist up they night. Dark north tree.",
-    "addressLocality": "Decade more knowledge state need term. More case character owner skin ago. Hair generation environmental machine.",
-    "addressRegion": "After walk project reality challenge we quickly. Painting brother choice thousand go child.",
-    "addressCountry": "Article central standard door result heavy teacher. Friend democratic look member foot central around. Score successful item particularly country.",
-    "postalCode": "Agency opportunity listen relate product only memory. Well beyond network.",
-    "postOfficeBoxNumber": "Case interest arrive information. Without success current say account everybody."
-  },
-  "areaServed": "Worry here exist candidate. Avoid knowledge election audience yourself beat."
+    "id": "urn:ngsi-ld:settings-broadcasting:id:YWMD:14174205",
+    "dateCreated": "1981-06-24T23:59:36Z",
+    "dateModified": "1978-03-16T10:29:14Z",
+    "source": "Probably turn reach not north answer. Course occur easy give concern. Research someone lawyer situation pro",
+    "name": "Charge commercial development tough technology make often bit. Pick th",
+    "alternateName": "Yes create vo",
+    "description": "Structure smile nice goal. Pretty first here say sometimes.",
+    "dataProvider": "What challenge myself business something outside. Half hear any all relationship ",
+    "owner": [
+        "urn:ngsi-ld:settings-broadcasting:items:IYDV:67275654",
+        "urn:ngsi-ld:settings-broadcasting:items:NZOU:92414940"
+    ],
+    "seeAlso": [
+        "urn:ngsi-ld:settings-broadcasting:items:QQFK:04713049"
+    ],
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            20.587973,
+            69.82222
+        ]
+    },
+    "address": {
+        "streetAddress": "Tree set environm",
+        "addressLocality": "Miss home respond family start environmental population. Scientist mention compare north when personal. Defense successful",
+        "addressRegion": "Focus themselves outside provide card chair report. Machine art data guess summer se",
+        "addressCountry": "Main glass day expect move western. Win machine suddenly professor expect. Affect present cold president how. Responsibility nat",
+        "postalCode": "Tend political card visit. Up behavior federal fall million history not market.",
+        "postOfficeBoxNumber": "State partner door market wide yourself. Line development money buy check include likely serious. Know security stop field tend police.",
+        "streetNr": "Dream some now eye recognize democratic production. Plan need think relationship. Rather culture continue family everyone society writer nothing. Those rather role bad.",
+        "district": "Year mean TV huge whose. Consid"
+    },
+    "areaServed": "Gun good deep them. Here you police tough public economic friend.",
+    "rt": [
+        "oic.r.settings.broadcasting"
+    ],
+    "if": [
+        "oic.if.baseline",
+        "oic.if.rw"
+    ],
+    "antenna": "The billion",
+    "supported-antennas": [
+        "Scene money move that south beyond. Up candidate up test. Around imagine quite commercial minute."
+    ],
+    "location-info": "Poor kid dream be street ed",
+    "carrier-info": "Art when prove discuss medical blood",
+    "auto-program": true,
+    "type": "settings-broadcasting"
 }
