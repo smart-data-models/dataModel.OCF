@@ -1,3 +1,3 @@
 /* (Beta) Export of data model EnergyGeneration of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE EnergyGeneration_type AS ENUM ('EnergyGeneration');
-CREATE TABLE EnergyGeneration (energygenerated NUMERIC, if JSON, n TEXT, rt JSON, type EnergyGeneration_type);
+CREATE TABLE EnergyGeneration (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, energygenerated NUMERIC, id TEXT PRIMARY KEY, if JSON, location JSON, n TEXT, name TEXT, owner JSON, rt JSON, seeAlso JSON, source TEXT, type EnergyGeneration_type);
