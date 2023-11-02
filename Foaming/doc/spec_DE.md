@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: Die Postfachnummer für Postfachadressen. Zum Beispiel, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: Die Postleitzahl. Zum Beispiel, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: Die Straßenanschrift  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Nummer zur Identifizierung eines bestimmten Grundstücks an einer öffentlichen Straße    
 - `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit  - `dateCreated[date-time]`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen  - `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben  - `description[string]`: Eine Beschreibung dieses Artikels  - `foamstrength[number]`: Die gewünschte Schaumbildung der Flüssigkeit  - `id[*]`: Eindeutiger Bezeichner der Entität  - `if[array]`: Der von dieser Ressource unterstützte Schnittstellensatz  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `n[string]`: Freundlicher Name der Ressource  - `name[string]`: Der Name dieses Artikels  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `range[array]`: Der gültige Bereich für die Eigenschaft in der Ressource in Form einer Ganzzahl. Der erste Wert im Array ist der Mindestwert, der zweite Wert im Array ist der Höchstwert  - `rt[array]`: Ressourcentyp  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `step[number]`: Schrittwert über den definierten Bereich, wenn der Bereich eine ganze Zahl ist.  Dies ist die Schrittweite für gültige Werte innerhalb des Bereichs; wenn also der Bereich 0..10 und der Schritt 2 ist, sind die Werte 0,2,4,6,8,10 gültig.  - `type[string]`: NGSI-Entitätstyp. Es muss Foaming sein  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
@@ -435,60 +436,54 @@ Foaming:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Foaming:id:JVUH:45422568",  
-  "dateCreated": "2006-03-05T12:55:37Z",  
-  "dateModified": "2017-01-14T01:28:34Z",  
-  "source": "Summer most science while. Structure would address plan avoid very everybody exist.",  
-  "name": "Identify city outside personal. Call back try. Watch president scientist prove responsibility say rich appear.",  
-  "alternateName": "Friend capital fund doctor test product character house. Notice know step fight young enter edge medical. She likely man.",  
-  "description": "Suddenly range discussion. Little large either thought. Rest care thus building hotel political. Case who get child.",  
-  "dataProvider": "Executive reveal audience among impact young occur. Everyone worker relate eight.",  
-  "owner": [  
-    "urn:ngsi-ld:Foaming:items:XZJP:84751263",  
-    "urn:ngsi-ld:Foaming:items:JAIZ:59812776"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Foaming:items:DXAV:64111853",  
-    "urn:ngsi-ld:Foaming:items:GNTA:34626623"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -35.0776695,  
-      158.939982  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "She audience class former. Accept affect player cell message floor. Unit ok any research far.",  
-    "addressLocality": "Real may increase. Finish up east edge speech reason. Difficult history policy prepare good mouth maintain where.",  
-    "addressRegion": "Sense exist play. Single seek between.",  
-    "addressCountry": "Mouth mouth such sing culture note water. Cell human former throughout.",  
-    "postalCode": "Building present according item movement three apply. Long price group raise leader throughout to.",  
-    "postOfficeBoxNumber": "Draw nation particular public order when easy. Do this science across radio."  
-  },  
-  "areaServed": "Analysis serious instead staff. Buy the seem admit six tonight. Between there five. Form she color thus story.",  
-  "rt": [  
-    "oic.r.foaming",  
-    "oic.r.foaming"  
-  ],  
-  "foamstrength": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "n": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair.",  
-  "range": [  
-    864,  
-    864  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "if": [  
-    "oic.if.rw",  
-    "oic.if.baseline"  
-  ],  
-  "type": "Foaming"  
+    "id": "urn:ngsi-ld:Foaming:id:ENSI:34755994",  
+    "dateCreated": "2023-10-11T02:02:24Z",  
+    "dateModified": "1985-02-11T00:17:18Z",  
+    "source": "Perhaps long lay particularly term attack score white. Guy red office gun.",  
+    "name": "Enter key res",  
+    "alternateName": "Instead very also ball later course my. Part task about magazine defense. Question everything chair past public reveal him.",  
+    "description": "True election democratic manager heart various control. Day certain bag once star western home buy.",  
+    "dataProvider": "Better sister continue should have common. Conference poor member decide author.",  
+    "owner": [  
+        "urn:ngsi-ld:Foaming:items:NJXO:44416928",  
+        "urn:ngsi-ld:Foaming:items:EHZZ:25860570"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Foaming:items:GRSQ:95376720"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            81.868721,  
+            -8.283063  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Stock likely wide glass cut. Strategy long only feelin",  
+        "addressLocality": "Research or policy realize tonight else eat against. Quickly enough discuss improve. Person seven herself teacher recently off be. Very wide reach draw relationship mana",  
+        "addressRegion": "Worker ho",  
+        "addressCountry": "Leg stand seat visit stuff know. Cup individual also tab",  
+        "postalCode": "Expert police bed win newspaper specific near candidate. Lot common include herself audience order. Electio",  
+        "postOfficeBoxNumber": "Management agent rate relate new. Nothing meeting night model.",  
+        "streetNr": "Letter whose right sense yard create director. Five house poor their firm i",  
+        "district": "Per order huge floor more two. Career PM easy expect eye. How those thought teach structure become both."  
+    },  
+    "areaServed": "Interview this light serious. Fish recently may type then late. Try small very your.",  
+    "rt": [  
+        "oic.r.foaming"  
+    ],  
+    "foamstrength": 864,  
+    "n": "American whole magaz",  
+    "range": [  
+        864,  
+        864  
+    ],  
+    "step": 864,  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.rw"  
+    ],  
+    "type": "Foaming"  
 }  
 ```  
 </details>  
@@ -497,122 +492,108 @@ Foaming:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:Foaming:id:JVUH:45422568"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2006-03-05T12:55:37Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2017-01-14T01:28:34Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Summer most science while. Structure would address plan avoid very everybody exist."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Identify city outside personal. Call back try. Watch president scientist prove responsibility say rich appear."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Friend capital fund doctor test product character house. Notice know step fight young enter edge medical. She likely man."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Suddenly range discussion. Little large either thought. Rest care thus building hotel political. Case who get child."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Executive reveal audience among impact young occur. Everyone worker relate eight."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Foaming:items:XZJP:84751263",  
-      "urn:ngsi-ld:Foaming:items:JAIZ:59812776"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Foaming:items:DXAV:64111853",  
-      "urn:ngsi-ld:Foaming:items:GNTA:34626623"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -35.0776695,  
-        158.939982  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "She audience class former. Accept affect player cell message floor. Unit ok any research far.",  
-      "addressLocality": "Real may increase. Finish up east edge speech reason. Difficult history policy prepare good mouth maintain where.",  
-      "addressRegion": "Sense exist play. Single seek between.",  
-      "addressCountry": "Mouth mouth such sing culture note water. Cell human former throughout.",  
-      "postalCode": "Building present according item movement three apply. Long price group raise leader throughout to.",  
-      "postOfficeBoxNumber": "Draw nation particular public order when easy. Do this science across radio."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Analysis serious instead staff. Buy the seem admit six tonight. Between there five. Form she color thus story."  
-  },  
-  "rt": {  
-    "type": "array",  
-    "value": [  
-      "oic.r.foaming",  
-      "oic.r.foaming"  
-    ]  
-  },  
-  "foamstrength": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 864  
-    }  
-  },  
-  "n": {  
-    "type": "string",  
-    "value": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair."  
-  },  
-  "range": {  
-    "type": "array",  
-    "value": [  
-      864,  
-      864  
-    ]  
-  },  
-  "step": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 864  
-    }  
-  },  
-  "if": {  
-    "type": "array",  
-    "value": [  
-      "oic.if.rw",  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "type": {  
-    "type": "string",  
-    "value": "Foaming"  
-  }  
+    "id": "urn:ngsi-ld:Foaming:id:ENSI:34755994",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "2023-10-11T02:02:24Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "1985-02-11T00:17:18Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Perhaps long lay particularly term attack score white. Guy red office gun."  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Enter key res"  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Instead very also ball later course my. Part task about magazine defense. Question everything chair past public reveal him."  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "True election democratic manager heart various control. Day certain bag once star western home buy."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Better sister continue should have common. Conference poor member decide author."  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Foaming:items:NJXO:44416928",  
+            "urn:ngsi-ld:Foaming:items:EHZZ:25860570"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Foaming:items:GRSQ:95376720"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                81.868721,  
+                -8.283063  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Stock likely wide glass cut. Strategy long only feelin",  
+            "addressLocality": "Research or policy realize tonight else eat against. Quickly enough discuss improve. Person seven herself teacher recently off be. Very wide reach draw relationship mana",  
+            "addressRegion": "Worker ho",  
+            "addressCountry": "Leg stand seat visit stuff know. Cup individual also tab",  
+            "postalCode": "Expert police bed win newspaper specific near candidate. Lot common include herself audience order. Electio",  
+            "postOfficeBoxNumber": "Management agent rate relate new. Nothing meeting night model.",  
+            "streetNr": "Letter whose right sense yard create director. Five house poor their firm i",  
+            "district": "Per order huge floor more two. Career PM easy expect eye. How those thought teach structure become both."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Interview this light serious. Fish recently may type then late. Try small very your."  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.foaming"  
+        ]  
+    },  
+    "foamstrength": {  
+        "type": "Number",  
+        "value": 864  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "American whole magaz"  
+    },  
+    "range": {  
+        "type": "StructuredValue",  
+        "value": [  
+            864,  
+            864  
+        ]  
+    },  
+    "step": {  
+        "type": "Number",  
+        "value": 864  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.baseline",  
+            "oic.if.rw"  
+        ]  
+    },  
+    "type": "Foaming"  
 }  
 ```  
 </details>  
@@ -621,63 +602,56 @@ Foaming:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Foaming:id:JVUH:45422568",  
-    "dateCreated": "2006-03-05T12:55:37Z",  
-    "dateModified": "2017-01-14T01:28:34Z",  
-    "source": "Summer most science while. Structure would address plan avoid very everybody exist.",  
-    "name": "Identify city outside personal. Call back try. Watch president scientist prove responsibility say rich appear.",  
-    "alternateName": "Friend capital fund doctor test product character house. Notice know step fight young enter edge medical. She likely man.",  
-    "description": "Suddenly range discussion. Little large either thought. Rest care thus building hotel political. Case who get child.",  
-    "dataProvider": "Executive reveal audience among impact young occur. Everyone worker relate eight.",  
+    "id": "urn:ngsi-ld:Foaming:id:ENSI:34755994",  
+    "dateCreated": "2023-10-11T02:02:24Z",  
+    "dateModified": "1985-02-11T00:17:18Z",  
+    "source": "Perhaps long lay particularly term attack score white. Guy red office gun.",  
+    "name": "Enter key res",  
+    "alternateName": "Instead very also ball later course my. Part task about magazine defense. Question everything chair past public reveal him.",  
+    "description": "True election democratic manager heart various control. Day certain bag once star western home buy.",  
+    "dataProvider": "Better sister continue should have common. Conference poor member decide author.",  
     "owner": [  
-        "urn:ngsi-ld:Foaming:items:XZJP:84751263",  
-        "urn:ngsi-ld:Foaming:items:JAIZ:59812776"  
+        "urn:ngsi-ld:Foaming:items:NJXO:44416928",  
+        "urn:ngsi-ld:Foaming:items:EHZZ:25860570"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:Foaming:items:DXAV:64111853",  
-        "urn:ngsi-ld:Foaming:items:GNTA:34626623"  
+        "urn:ngsi-ld:Foaming:items:GRSQ:95376720"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            -35.0776695,  
-            158.939982  
+            81.868721,  
+            -8.283063  
         ]  
     },  
     "address": {  
-        "streetAddress": "She audience class former. Accept affect player cell message floor. Unit ok any research far.",  
-        "addressLocality": "Real may increase. Finish up east edge speech reason. Difficult history policy prepare good mouth maintain where.",  
-        "addressRegion": "Sense exist play. Single seek between.",  
-        "addressCountry": "Mouth mouth such sing culture note water. Cell human former throughout.",  
-        "postalCode": "Building present according item movement three apply. Long price group raise leader throughout to.",  
-        "postOfficeBoxNumber": "Draw nation particular public order when easy. Do this science across radio."  
+        "streetAddress": "Stock likely wide glass cut. Strategy long only feelin",  
+        "addressLocality": "Research or policy realize tonight else eat against. Quickly enough discuss improve. Person seven herself teacher recently off be. Very wide reach draw relationship mana",  
+        "addressRegion": "Worker ho",  
+        "addressCountry": "Leg stand seat visit stuff know. Cup individual also tab",  
+        "postalCode": "Expert police bed win newspaper specific near candidate. Lot common include herself audience order. Electio",  
+        "postOfficeBoxNumber": "Management agent rate relate new. Nothing meeting night model.",  
+        "streetNr": "Letter whose right sense yard create director. Five house poor their firm i",  
+        "district": "Per order huge floor more two. Career PM easy expect eye. How those thought teach structure become both."  
     },  
-    "areaServed": "Analysis serious instead staff. Buy the seem admit six tonight. Between there five. Form she color thus story.",  
+    "areaServed": "Interview this light serious. Fish recently may type then late. Try small very your.",  
     "rt": [  
-        "oic.r.foaming",  
         "oic.r.foaming"  
     ],  
-    "foamstrength": {  
-        "type": "Property",  
-        "value": 864  
-    },  
-    "n": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair.",  
+    "foamstrength": 864,  
+    "n": "American whole magaz",  
     "range": [  
         864,  
         864  
     ],  
-    "step": {  
-        "type": "Property",  
-        "value": 864  
-    },  
+    "step": 864,  
     "if": [  
-        "oic.if.rw",  
-        "oic.if.baseline"  
+        "oic.if.baseline",  
+        "oic.if.rw"  
     ],  
     "type": "Foaming",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -687,78 +661,80 @@ Foaming:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Foaming:id:GEGO:66285307",  
+    "id": "urn:ngsi-ld:Foaming:id:ENSI:34755994",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2003-09-02T12:26:48Z"  
+            "@value": "2023-10-11T02:02:24Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1981-04-29T20:42:24Z"  
+            "@value": "1985-02-11T00:17:18Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Training media arm need avoid child develop. Surface animal kid president serious. Still ten prove leave bar."  
+        "value": "Perhaps long lay particularly term attack score white. Guy red office gun."  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Cup can including choose. Police student modern still six media about. But try instead cultural understand game perhaps."  
+        "value": "Enter key res"  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Or mother everyone part billion bit only. Ok share investment hard discover Mr."  
+        "value": "Instead very also ball later course my. Part task about magazine defense. Question everything chair past public reveal him."  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Build write room country hear. Whose along fill."  
+        "value": "True election democratic manager heart various control. Day certain bag once star western home buy."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Blood determine prove know must. Organization possible growth between. Far billion individual then. Account sometimes although."  
+        "value": "Better sister continue should have common. Conference poor member decide author."  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Foaming:items:XKMJ:59551566",  
-            "urn:ngsi-ld:Foaming:items:CNPL:54368317"  
+            "urn:ngsi-ld:Foaming:items:NJXO:44416928",  
+            "urn:ngsi-ld:Foaming:items:EHZZ:25860570"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Foaming:items:CYRA:63394422"  
+            "urn:ngsi-ld:Foaming:items:GRSQ:95376720"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                -76.5520235,  
-                -158.221848  
+                81.868721,  
+                -8.283063  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Human draw really remain. Task various argue keep.",  
-            "addressLocality": "Conference generation on in case opportunity detail. Stand town entire minute over effort war far.",  
-            "addressRegion": "Purpose number trade right yet. Her service clear north fish. Back blood mind whose.",  
-            "addressCountry": "Move it food democratic minute line. Leg pressure science audience.",  
-            "postalCode": "Even crime white believe for. Suddenly nature bag measure. There heart apply upon raise face.",  
-            "postOfficeBoxNumber": "Run follow rock seem assume. West care at develop item able money lot."  
+            "streetAddress": "Stock likely wide glass cut. Strategy long only feelin",  
+            "addressLocality": "Research or policy realize tonight else eat against. Quickly enough discuss improve. Person seven herself teacher recently off be. Very wide reach draw relationship mana",  
+            "addressRegion": "Worker ho",  
+            "addressCountry": "Leg stand seat visit stuff know. Cup individual also tab",  
+            "postalCode": "Expert police bed win newspaper specific near candidate. Lot common include herself audience order. Electio",  
+            "postOfficeBoxNumber": "Management agent rate relate new. Nothing meeting night model.",  
+            "streetNr": "Letter whose right sense yard create director. Five house poor their firm i",  
+            "district": "Per order huge floor more two. Career PM easy expect eye. How those thought teach structure become both."  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Drug war our Democrat senior. Down notice another answer newspaper notice goal. Activity someone create explain center once allow."  
+        "value": "Interview this light serious. Fish recently may type then late. Try small very your."  
     },  
     "rt": {  
         "type": "Property",  
@@ -768,34 +744,33 @@ Foaming:
     },  
     "foamstrength": {  
         "type": "Property",  
-        "value": 714  
+        "value": 864  
     },  
     "n": {  
         "type": "Property",  
-        "value": "Value person that. Night at interesting push TV computer."  
+        "value": "American whole magaz"  
     },  
     "range": {  
         "type": "Property",  
         "value": [  
-            233,  
-            781  
+            864,  
+            864  
         ]  
     },  
     "step": {  
         "type": "Property",  
-        "value": 433  
+        "value": 864  
     },  
     "if": {  
         "type": "Property",  
         "value": [  
-            "oic.if.rw",  
+            "oic.if.baseline",  
             "oic.if.rw"  
         ]  
     },  
     "type": "Foaming",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
