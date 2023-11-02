@@ -12,64 +12,66 @@
     },
     {
       "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "rt": {
+          "description": "Property. Resource Type",
+          "items": {
+            "maxLength": 64,
+            "type": "string",
+            "enum": [
+              "oic.r.calorificvalue"
+            ]
+          },
+          "minItems": 1,
+          "readOnly": true,
+          "uniqueItems": true,
+          "type": "array"
+        },
+        "if": {
+          "description": "Property. The OCF Interfaces supported by this Resource",
+          "items": {
+            "enum": [
+              "oic.if.baseline",
+              "oic.if.r"
+            ],
+            "type": "string",
+            "maxLength": 64
+          },
+          "minItems": 2,
+          "readOnly": true,
+          "uniqueItems": true,
+          "type": "array"
+        },
+        "n": {
+          "type": "string",
+          "maxLength": 64,
+          "readOnly": true,
+          "description": "Property. Friendly name of the Resource"
+        },
+        "precision": {
+          "description": "Property. Accuracy granularity of the exposed value",
+          "readOnly": true,
+          "type": "number"
+        },
+        "calorific": {
+          "description": "Property. Calorific value of fuel",
+          "readOnly": true,
+          "type": "number",
+          "minimum": 0,
+          "exclusiveMinimum": 0
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "Calorific"
+          ],
+          "description": "Property. NGSI entity type. It has to be Calorific"
+        }
+      }
     }
   ],
-  "properties": {
-    "rt": {
-      "description": "Property. Resource Type",
-      "items": {
-        "maxLength": 64,
-        "type": "string",
-        "enum": [
-          "oic.r.calorificvalue"
-        ]
-      },
-      "minItems": 1,
-      "readOnly": true,
-      "uniqueItems": true,
-      "type": "array"
-    },
-    "if": {
-      "description": "Property. The OCF Interfaces supported by this Resource",
-      "items": {
-        "enum": [
-          "oic.if.baseline",
-          "oic.if.r"
-        ],
-        "type": "string",
-        "maxLength": 64
-      },
-      "minItems": 2,
-      "readOnly": true,
-      "uniqueItems": true,
-      "type": "array"
-    },
-    "n": {
-      "type": "string",
-      "maxLength": 64,
-      "readOnly": true,
-      "description": "Property. Friendly name of the Resource"
-    },
-    "precision": {
-      "description": "Property. Accuracy granularity of the exposed value",
-      "readOnly": true,
-      "type": "number"
-    },
-    "calorific": {
-      "description": "Property. Calorific value of fuel",
-      "readOnly": true,
-      "type": "number",
-      "minimum": 0,
-      "exclusiveMinimum": true
-    },
-    "type": {
-      "type": "string",
-      "enum": [
-        "Calorific"
-      ],
-      "description": "Property. NGSI entity type. It has to be Calorific"
-    }
-  },
   "derivedFrom": "https://github.com/OpenInterConnect/IoTDataModels/blob/master/CalorificResURI.swagger.json",
   "license": "https://github.com/OpenInterConnect/IoTDataModels/blob/master/README.md",
   "required": [
