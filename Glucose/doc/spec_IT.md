@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: Il numero di casella postale per gli indirizzi di casella postale. Ad esempio, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: Il codice postale. Ad esempio, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: L'indirizzo stradale  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Numero che identifica una proprietà specifica su una strada pubblica    
 - `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata  - `dateCreated[date-time]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `description[string]`: Descrizione dell'articolo  - `glucose[number]`: Misura della concentrazione di glucosio nel sangue  - `id[*]`: Identificatore univoco dell'entità  - `if[array]`: Il set di interfacce OCF supportato da questa risorsa.  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `n[string]`: Nome amichevole della risorsa  - `name[string]`: Il nome di questo elemento  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `precision[number]`: Quando viene esposto, il valore in 'precision' fornisce una tolleranza +/- rispetto alle proprietà della risorsa. Pertanto, se una proprietà viene AGGIORNATA a un valore e poi viene restituita, il valore restituito è valido se rientra nell'intervallo del valore impostato +/- precision.  - `range[array]`: L'intervallo valido per la proprietà nella risorsa come numero. Il primo valore della matrice è il valore minimo, il secondo valore della matrice è il valore massimo.  - `rt[array]`: Tipo di risorsa  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `step[number]`: Valore del passo nell'intervallo definito, un numero intero quando l'intervallo è un numero.  Si tratta dell'incremento per i valori validi nell'intervallo; quindi se l'intervallo è 0.0..10.0 e il passo è 2.5, i valori validi sono 0.0,2.5,5.0,7.5,10.0.  - `type[string]`: Tipo di entità NGSI. Deve essere Glucosio  - `units[string]`: Unità di glucosio  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Proprietà richieste  
@@ -454,65 +455,55 @@ Glucose:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Glucose:id:JSJQ:51587881",  
-  "dateCreated": "1975-09-01T13:27:41Z",  
-  "dateModified": "1993-03-08T05:43:55Z",  
-  "source": "Black travel drive role interest store probably. Sort figure quite I full. Theory all part staff against operation boy.",  
-  "name": "Bank clearly color safe born.",  
-  "alternateName": "Though situation from develop. Yes difference million cost research international. Collection say financial.",  
-  "description": "Need record half country military.",  
-  "dataProvider": "History start a sound article in. Million well likely difficult son manage administration.",  
-  "owner": [  
-    "urn:ngsi-ld:Glucose:items:KXZR:70407791",  
-    "urn:ngsi-ld:Glucose:items:KYIF:96473148"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Glucose:items:HSIL:33388034",  
-    "urn:ngsi-ld:Glucose:items:HWWV:68040790"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      35.1666325,  
-      -13.973505  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Need explain yourself trip head. Away difficult bit grow. Name page service bit old bad.",  
-    "addressLocality": "Improve from particularly night whose soon. Treat talk adult control.",  
-    "addressRegion": "Him service relationship employee painting easy. Between season also leg tonight.",  
-    "addressCountry": "System prove serious moment rock knowledge while. Memory market call car size.",  
-    "postalCode": "Young center through friend somebody. Bit those million hand heavy those. Specific model glass note culture style.",  
-    "postOfficeBoxNumber": "Hit able dinner stage line. Whatever around glass specific tough. Present toward rock throughout project."  
-  },  
-  "areaServed": "Camera sport hot animal ask director necessary. Several perhaps traditional listen successful time should. Coach increase leave there with.",  
-  "rt": [  
-    "oic.r.glucose",  
-    "oic.r.glucose"  
-  ],  
-  "glucose": {  
-    "type": "Property",  
-    "value": 596.7  
-  },  
-  "units": "mg/dL",  
-  "range": [  
-    207.3,  
-    256.4  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 922.2  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 25.6  
-  },  
-  "n": "Support far board how resource order physical.",  
-  "if": [  
-    "oic.if.baseline",  
-    "oic.if.s"  
-  ],  
-  "type": "Glucose"  
+    "id": "urn:ngsi-ld:Glucose:id:KXFS:45363637",  
+    "dateCreated": "1996-05-23T15:17:56Z",  
+    "dateModified": "2014-05-24T14:55:37Z",  
+    "source": "Toward day push drug. Realize six guy. Skin follow make although ",  
+    "name": "Stay often suffer memory simple conference man. Reality hour east happen ten.",  
+    "alternateName": "Southern really money alone fast. Maybe gas maintain response worry surface. Summer opportunity recen",  
+    "description": "Indeed free western thousand. Notice the not imagine must.",  
+    "dataProvider": "Surface follow north shake common local point. Third m",  
+    "owner": [  
+        "urn:ngsi-ld:Glucose:items:HLVK:89940267",  
+        "urn:ngsi-ld:Glucose:items:JNWF:86984313"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Glucose:items:ZMBO:59836801"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -44.276347,  
+            -0.319588  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Performance science modern give government that. Mission future president this",  
+        "addressLocality": "Relationship information scene Mr training nearly yourself. Human something my then.",  
+        "addressRegion": "Book you moment later entire small score pay. Occur know after.",  
+        "addressCountry": "Only state point throughout. Wall improve reason carry do think man.",  
+        "postalCode": "Although wrong bit disco",  
+        "postOfficeBoxNumber": "City situation blue well. Natural within put article.",  
+        "streetNr": "Operation cost particular message cost call behavior including. Rise month kind.",  
+        "district": "Set interview list be note he whether. Enter during site own. Require worker grow live manage."  
+    },  
+    "areaServed": "Research total officer poor wall mouth sure. Garden report message writer late guess theory.",  
+    "rt": [  
+        "oic.r.glucose"  
+    ],  
+    "glucose": 722.9,  
+    "units": "mmol/L",  
+    "range": [  
+        411.9,  
+        444.5  
+    ],  
+    "step": 84.7,  
+    "precision": 16.4,  
+    "n": "Realize beg",  
+    "if": [  
+        "oic.if.s"  
+    ],  
+    "type": "Glucose"  
 }  
 ```  
 </details>  
@@ -521,133 +512,115 @@ Glucose:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:Glucose:id:JSJQ:51587881"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1975-09-01T13:27:41Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1993-03-08T05:43:55Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Black travel drive role interest store probably. Sort figure quite I full. Theory all part staff against operation boy."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Bank clearly color safe born."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Though situation from develop. Yes difference million cost research international. Collection say financial."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Need record half country military."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "History start a sound article in. Million well likely difficult son manage administration."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Glucose:items:KXZR:70407791",  
-      "urn:ngsi-ld:Glucose:items:KYIF:96473148"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Glucose:items:HSIL:33388034",  
-      "urn:ngsi-ld:Glucose:items:HWWV:68040790"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        35.1666325,  
-        -13.973505  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Need explain yourself trip head. Away difficult bit grow. Name page service bit old bad.",  
-      "addressLocality": "Improve from particularly night whose soon. Treat talk adult control.",  
-      "addressRegion": "Him service relationship employee painting easy. Between season also leg tonight.",  
-      "addressCountry": "System prove serious moment rock knowledge while. Memory market call car size.",  
-      "postalCode": "Young center through friend somebody. Bit those million hand heavy those. Specific model glass note culture style.",  
-      "postOfficeBoxNumber": "Hit able dinner stage line. Whatever around glass specific tough. Present toward rock throughout project."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Camera sport hot animal ask director necessary. Several perhaps traditional listen successful time should. Coach increase leave there with."  
-  },  
-  "rt": {  
-    "type": "array",  
-    "value": [  
-      "oic.r.glucose",  
-      "oic.r.glucose"  
-    ]  
-  },  
-  "glucose": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 596.7  
-    }  
-  },  
-  "units": {  
-    "type": "string",  
-    "value": "mg/dL"  
-  },  
-  "range": {  
-    "type": "array",  
-    "value": [  
-      207.3,  
-      256.4  
-    ]  
-  },  
-  "step": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 922.2  
-    }  
-  },  
-  "precision": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 25.6  
-    }  
-  },  
-  "n": {  
-    "type": "string",  
-    "value": "Support far board how resource order physical."  
-  },  
-  "if": {  
-    "type": "array",  
-    "value": [  
-      "oic.if.baseline",  
-      "oic.if.s"  
-    ]  
-  },  
-  "type": {  
-    "type": "string",  
-    "value": "Glucose"  
-  }  
+    "id": "urn:ngsi-ld:Glucose:id:KXFS:45363637",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1996-05-23T15:17:56Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "2014-05-24T14:55:37Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Toward day push drug. Realize six guy. Skin follow make although "  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Stay often suffer memory simple conference man. Reality hour east happen ten."  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Southern really money alone fast. Maybe gas maintain response worry surface. Summer opportunity recen"  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Indeed free western thousand. Notice the not imagine must."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Surface follow north shake common local point. Third m"  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Glucose:items:HLVK:89940267",  
+            "urn:ngsi-ld:Glucose:items:JNWF:86984313"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Glucose:items:ZMBO:59836801"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -44.276347,  
+                -0.319588  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Performance science modern give government that. Mission future president this",  
+            "addressLocality": "Relationship information scene Mr training nearly yourself. Human something my then.",  
+            "addressRegion": "Book you moment later entire small score pay. Occur know after.",  
+            "addressCountry": "Only state point throughout. Wall improve reason carry do think man.",  
+            "postalCode": "Although wrong bit disco",  
+            "postOfficeBoxNumber": "City situation blue well. Natural within put article.",  
+            "streetNr": "Operation cost particular message cost call behavior including. Rise month kind.",  
+            "district": "Set interview list be note he whether. Enter during site own. Require worker grow live manage."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Research total officer poor wall mouth sure. Garden report message writer late guess theory."  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.glucose"  
+        ]  
+    },  
+    "glucose": {  
+        "type": "Number",  
+        "value": 722.9  
+    },  
+    "units": {  
+        "type": "Text",  
+        "value": "mmol/L"  
+    },  
+    "range": {  
+        "type": "StructuredValue",  
+        "value": [  
+            411.9,  
+            444.5  
+        ]  
+    },  
+    "step": {  
+        "type": "Number",  
+        "value": 84.7  
+    },  
+    "precision": {  
+        "type": "Number",  
+        "value": 16.4  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Realize beg"  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.s"  
+        ]  
+    },  
+    "type": "Glucose"  
 }  
 ```  
 </details>  
@@ -656,68 +629,57 @@ Glucose:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Glucose:id:JSJQ:51587881",  
-    "dateCreated": "1975-09-01T13:27:41Z",  
-    "dateModified": "1993-03-08T05:43:55Z",  
-    "source": "Black travel drive role interest store probably. Sort figure quite I full. Theory all part staff against operation boy.",  
-    "name": "Bank clearly color safe born.",  
-    "alternateName": "Though situation from develop. Yes difference million cost research international. Collection say financial.",  
-    "description": "Need record half country military.",  
-    "dataProvider": "History start a sound article in. Million well likely difficult son manage administration.",  
+    "id": "urn:ngsi-ld:Glucose:id:KXFS:45363637",  
+    "dateCreated": "1996-05-23T15:17:56Z",  
+    "dateModified": "2014-05-24T14:55:37Z",  
+    "source": "Toward day push drug. Realize six guy. Skin follow make although ",  
+    "name": "Stay often suffer memory simple conference man. Reality hour east happen ten.",  
+    "alternateName": "Southern really money alone fast. Maybe gas maintain response worry surface. Summer opportunity recen",  
+    "description": "Indeed free western thousand. Notice the not imagine must.",  
+    "dataProvider": "Surface follow north shake common local point. Third m",  
     "owner": [  
-        "urn:ngsi-ld:Glucose:items:KXZR:70407791",  
-        "urn:ngsi-ld:Glucose:items:KYIF:96473148"  
+        "urn:ngsi-ld:Glucose:items:HLVK:89940267",  
+        "urn:ngsi-ld:Glucose:items:JNWF:86984313"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:Glucose:items:HSIL:33388034",  
-        "urn:ngsi-ld:Glucose:items:HWWV:68040790"  
+        "urn:ngsi-ld:Glucose:items:ZMBO:59836801"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            35.1666325,  
-            -13.973505  
+            -44.276347,  
+            -0.319588  
         ]  
     },  
     "address": {  
-        "streetAddress": "Need explain yourself trip head. Away difficult bit grow. Name page service bit old bad.",  
-        "addressLocality": "Improve from particularly night whose soon. Treat talk adult control.",  
-        "addressRegion": "Him service relationship employee painting easy. Between season also leg tonight.",  
-        "addressCountry": "System prove serious moment rock knowledge while. Memory market call car size.",  
-        "postalCode": "Young center through friend somebody. Bit those million hand heavy those. Specific model glass note culture style.",  
-        "postOfficeBoxNumber": "Hit able dinner stage line. Whatever around glass specific tough. Present toward rock throughout project."  
+        "streetAddress": "Performance science modern give government that. Mission future president this",  
+        "addressLocality": "Relationship information scene Mr training nearly yourself. Human something my then.",  
+        "addressRegion": "Book you moment later entire small score pay. Occur know after.",  
+        "addressCountry": "Only state point throughout. Wall improve reason carry do think man.",  
+        "postalCode": "Although wrong bit disco",  
+        "postOfficeBoxNumber": "City situation blue well. Natural within put article.",  
+        "streetNr": "Operation cost particular message cost call behavior including. Rise month kind.",  
+        "district": "Set interview list be note he whether. Enter during site own. Require worker grow live manage."  
     },  
-    "areaServed": "Camera sport hot animal ask director necessary. Several perhaps traditional listen successful time should. Coach increase leave there with.",  
+    "areaServed": "Research total officer poor wall mouth sure. Garden report message writer late guess theory.",  
     "rt": [  
-        "oic.r.glucose",  
         "oic.r.glucose"  
     ],  
-    "glucose": {  
-        "type": "Property",  
-        "value": 596.7  
-    },  
-    "units": "mg/dL",  
+    "glucose": 722.9,  
+    "units": "mmol/L",  
     "range": [  
-        207.3,  
-        256.4  
+        411.9,  
+        444.5  
     ],  
-    "step": {  
-        "type": "Property",  
-        "value": 922.2  
-    },  
-    "precision": {  
-        "type": "Property",  
-        "value": 25.6  
-    },  
-    "n": "Support far board how resource order physical.",  
+    "step": 84.7,  
+    "precision": 16.4,  
+    "n": "Realize beg",  
     "if": [  
-        "oic.if.baseline",  
         "oic.if.s"  
     ],  
     "type": "Glucose",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -727,78 +689,80 @@ Glucose:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Glucose:id:IVSS:30679394",  
+    "id": "urn:ngsi-ld:Glucose:id:KXFS:45363637",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2019-08-31T00:56:15Z"  
+            "@value": "1996-05-23T15:17:56Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2020-10-18T13:20:32Z"  
+            "@value": "2014-05-24T14:55:37Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "His hit generation early of."  
+        "value": "Toward day push drug. Realize six guy. Skin follow make although "  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Nation heavy themselves group Mrs. Movement morning fund worker experience them around. Nice north find later act."  
+        "value": "Stay often suffer memory simple conference man. Reality hour east happen ten."  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Ball share help administration beautiful imagine great. Include writer animal four. Consider visit direction carry very."  
+        "value": "Southern really money alone fast. Maybe gas maintain response worry surface. Summer opportunity recen"  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Wish customer end collection position until career benefit."  
+        "value": "Indeed free western thousand. Notice the not imagine must."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Need daughter card series at. Thought remember only prove thousand campaign. Method attention itself."  
+        "value": "Surface follow north shake common local point. Third m"  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Glucose:items:FKDJ:98345867",  
-            "urn:ngsi-ld:Glucose:items:IZPH:43223618"  
+            "urn:ngsi-ld:Glucose:items:HLVK:89940267",  
+            "urn:ngsi-ld:Glucose:items:JNWF:86984313"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Glucose:items:VGCR:54273116"  
+            "urn:ngsi-ld:Glucose:items:ZMBO:59836801"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                15.7658455,  
-                124.71625  
+                -44.276347,  
+                -0.319588  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Lay beat loss goal face. Where western apply company head. Data chair police church cold.",  
-            "addressLocality": "Two red democratic surface follow buy themselves. Out last then difference.",  
-            "addressRegion": "Firm finish center grow like church total. Season new per though music hard win.",  
-            "addressCountry": "News adult especially form media series scene. Cold treatment year.",  
-            "postalCode": "Attention purpose reveal try between. Then expect pull both.",  
-            "postOfficeBoxNumber": "Not Mr spend their will. Threat ok civil sometimes draw maintain assume employee. Think animal day nice business foreign."  
+            "streetAddress": "Performance science modern give government that. Mission future president this",  
+            "addressLocality": "Relationship information scene Mr training nearly yourself. Human something my then.",  
+            "addressRegion": "Book you moment later entire small score pay. Occur know after.",  
+            "addressCountry": "Only state point throughout. Wall improve reason carry do think man.",  
+            "postalCode": "Although wrong bit disco",  
+            "postOfficeBoxNumber": "City situation blue well. Natural within put article.",  
+            "streetNr": "Operation cost particular message cost call behavior including. Rise month kind.",  
+            "district": "Set interview list be note he whether. Enter during site own. Require worker grow live manage."  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Now world wish fish wall. Forward modern follow name herself send political ask. Maybe majority goal there."  
+        "value": "Research total officer poor wall mouth sure. Garden report message writer late guess theory."  
     },  
     "rt": {  
         "type": "Property",  
@@ -808,7 +772,7 @@ Glucose:
     },  
     "glucose": {  
         "type": "Property",  
-        "value": 174.1  
+        "value": 722.9  
     },  
     "units": {  
         "type": "Property",  
@@ -817,32 +781,31 @@ Glucose:
     "range": {  
         "type": "Property",  
         "value": [  
-            675.0,  
-            291.5  
+            411.9,  
+            444.5  
         ]  
     },  
     "step": {  
         "type": "Property",  
-        "value": 691.5  
+        "value": 84.7  
     },  
     "precision": {  
         "type": "Property",  
-        "value": 421.4  
+        "value": 16.4  
     },  
     "n": {  
         "type": "Property",  
-        "value": "Player nature front relationship job think. Also five outside subject. Record produce country among news."  
+        "value": "Realize beg"  
     },  
     "if": {  
         "type": "Property",  
         "value": [  
-            "oic.if.baseline"  
+            "oic.if.s"  
         ]  
     },  
     "type": "Glucose",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
