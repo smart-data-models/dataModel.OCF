@@ -1,79 +1,109 @@
 {
-    "id": "urn:ngsi-ld:ColourCSC:id:QXXW:01773179",
+    "id": "urn:ngsi-ld:ColourCSC:id:ZBCR:36913254",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1981-01-01T22:54:47Z"
+            "@value": "1977-07-31T23:35:46Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2018-04-25T12:29:34Z"
+            "@value": "2021-02-10T09:29:37Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Pick tend read employee art interview. Wife production know officer small. Let training study specific seat young."
+        "value": "Under how many"
     },
     "name": {
         "type": "Property",
-        "value": "Dog police quite prove ok law but."
+        "value": "War none culture draw eight nation rise."
     },
     "alternateName": {
         "type": "Property",
-        "value": "Line power thought plan surface. None often arm catch not night new public."
+        "value": "Method wear whatever example. Wear work science change n"
     },
     "description": {
         "type": "Property",
-        "value": "Month feeling region international make son. Six spend certainly. Suggest bad great lawyer."
+        "value": "Life sense high consumer nearly keep wind. Can else down purpose. Good nature when after."
     },
     "dataProvider": {
         "type": "Property",
-        "value": "Such allow nothing down very her record. Or travel reduce throughout change. Brother history over medical."
+        "value": "Executive focus really. Simply wall worry call voice."
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:ColourCSC:items:NUWJ:83419287",
-            "urn:ngsi-ld:ColourCSC:items:PSON:82588261"
+            "urn:ngsi-ld:ColourCSC:items:MXSJ:82773762",
+            "urn:ngsi-ld:ColourCSC:items:RQWT:27386818"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:ColourCSC:items:IFMS:64015606"
+            "urn:ngsi-ld:ColourCSC:items:KKHC:89261548"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                -34.482211,
-                33.71405
+                -14.435297,
+                -92.521246
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "Foreign per begin.",
-            "addressLocality": "Vote rule always section. Respond fish event run particularly style establish key.",
-            "addressRegion": "Foot computer seven unit future. Front employee step star.",
-            "addressCountry": "Game relationship where civil research improve later. Practice agent each recently until send.",
-            "postalCode": "Reduce single culture hour can lawyer speech. Point attention stay reason. Evening benefit subject between.",
-            "postOfficeBoxNumber": "Can stop save military despite memory would."
+            "streetAddress": "Reach down attorney six central consider among across. Yet per administration other community. Stay a here rate.",
+            "addressLocality": "Speech serious myself appear throughout those. Measure century food card. Southern no full range rate compare.",
+            "addressRegion": "Likely expert before tell apply within. Affect brother less minute eat ever hand. Leader hair example north each early. Decide prog",
+            "addressCountry": "Business plan determine sport work expect. Director fear subject here him way create.",
+            "postalCode": "Executive other debate investment yourself before. Then deal today study.",
+            "postOfficeBoxNumber": "Policy finish unit offer politics feeling during try. Whose southern every girl story sometimes same.",
+            "streetNr": "Control so economy energy movie happy. Station third gun ok bar local morning something. Structure bad safe example se",
+            "district": "Approach off plant. Describe good goal actually image near against child."
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "Simple pressure test difficult Congress business mean. North dark lose blue test your buy."
+        "value": "Decade your act strong. Art factor fast employee."
     },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.colour.csc"
+        ]
+    },
+    "csc": {
+        "type": "Property",
+        "value": [
+            0.5,
+            0.3
+        ]
+    },
+    "n": {
+        "type": "Property",
+        "value": "Hot support west young. Suc"
+    },
+    "precision": {
+        "type": "Property",
+        "value": 18.2
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.a",
+            "oic.if.baseline"
+        ]
+    },
+    "type": "ColourCSC",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
