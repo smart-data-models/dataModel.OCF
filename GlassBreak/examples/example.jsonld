@@ -1,38 +1,48 @@
 {
-    "id": "urn:ngsi-ld:GlassBreak:id:FWUH:35942957",
-    "dateCreated": "2009-10-21T02:22:36Z",
-    "dateModified": "2013-10-14T04:05:52Z",
-    "source": "Carry check everybody less movie country. Involve least whole base reveal issue.",
-    "name": "Administration top open least peace bring memory. State executive necessary while clearly.",
-    "alternateName": "Guy machine American summer into become clear. Field ago serve example lay.",
-    "description": "Relate at bad exist. World threat enjoy production seat least growth. Pick late month.",
-    "dataProvider": "Certain friend they phone. Consumer physical public car maybe really notice. Form able seat drive book ball. Respond eight add year rich inside.",
+    "id": "urn:ngsi-ld:GlassBreak:id:ITVG:10465267",
+    "dateCreated": "1976-09-25T15:44:38Z",
+    "dateModified": "1984-11-13T20:38:56Z",
+    "source": "Trip morning probably environmental spring his.",
+    "name": "Good war west way. Day when tend. Others better create reveal.",
+    "alternateName": "Into protect stuff rather thing. Play ",
+    "description": "Subject budget b",
+    "dataProvider": "Meeting difference still speak market instead. Close word nor describe chance carry. Attention hear tough professor.",
     "owner": [
-        "urn:ngsi-ld:GlassBreak:items:ORFJ:17538036",
-        "urn:ngsi-ld:GlassBreak:items:DKLT:96666411"
+        "urn:ngsi-ld:GlassBreak:items:TXNU:21334401",
+        "urn:ngsi-ld:GlassBreak:items:IANL:21085989"
     ],
     "seeAlso": [
-        "urn:ngsi-ld:GlassBreak:items:WDSY:29441631",
-        "urn:ngsi-ld:GlassBreak:items:BNHK:54637489"
+        "urn:ngsi-ld:GlassBreak:items:VGVC:09832274"
     ],
     "location": {
         "type": "Point",
         "coordinates": [
-            50.243696,
-            -4.489475
+            14.1631575,
+            -20.590702
         ]
     },
     "address": {
-        "streetAddress": "Choice property share charge available individual help. Front its let. Knowledge long adult whom mention some black. Investment few list action around policy.",
-        "addressLocality": "When learn behind. Interesting if inside attorney executive discover.",
-        "addressRegion": "Begin film remain sense focus tonight join forward. Receive mind learn image final. Find my attorney good another poor popular.",
-        "addressCountry": "Moment force open today son. Move level participant reflect. Each together change light truth tough building. Billion region news dream create serious.",
-        "postalCode": "Throw live modern every camera authority chance. Serious guy almost goal tree a. Four think better war. Five loss always heavy off relate Republican check.",
-        "postOfficeBoxNumber": "Authority never mission wide bank reduce pull for. Many girl get teach big. Issue view rise most join."
+        "streetAddress": "Approach reduce that hand somebody Mr.",
+        "addressLocality": "Assume and green sometimes little both.",
+        "addressRegion": "Campaign any right class read pressure lot worker. Study amount increase option alone.",
+        "addressCountry": "Surface clear ahead technology.",
+        "postalCode": "Receive under kind identify yard. ",
+        "postOfficeBoxNumber": "Think easy mind inside start likely tell. Add character Congress speech manage marriage right. Almost though decade.",
+        "streetNr": "Produce send current staff air offer here ok. Carry reflect fly work. Among blood he attorney.",
+        "district": "Growth point leader so billion decade deep."
     },
-    "areaServed": "Land debate account resource. Green defense mind Mrs field together.",
+    "areaServed": "Do so alone she property issue light effect.",
+    "rt": [
+        "oic.r.sensor.glassbreak"
+    ],
+    "value": true,
+    "n": "Rule family similar field indeed.",
+    "if": [
+        "oic.if.s",
+        "oic.if.baseline"
+    ],
+    "type": "GlassBreak",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
