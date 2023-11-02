@@ -1,129 +1,111 @@
 {
-  "id": {
-    "type": "string",
-    "value": "urn:ngsi-ld:GlucoseCarb:id:IXKW:55577808"
-  },
-  "dateCreated": {
-    "format": "date-time",
-    "type": "string",
-    "value": "1993-02-18T14:28:07Z"
-  },
-  "dateModified": {
-    "format": "date-time",
-    "type": "string",
-    "value": "1997-09-28T09:47:10Z"
-  },
-  "source": {
-    "type": "string",
-    "value": "Financial civil western modern message together strategy. Meeting room hold drug mention. Policy indeed school identify government know. Take ok together environmental candidate."
-  },
-  "name": {
-    "type": "string",
-    "value": "Meeting and under hair occur. Within season check special example."
-  },
-  "alternateName": {
-    "type": "string",
-    "value": "Develop involve source study participant commercial. Figure recent whom brother answer. Often conference country let among although book modern."
-  },
-  "description": {
-    "type": "string",
-    "value": "Plant present consumer if fire. Information still movie language style. Page per form reality."
-  },
-  "dataProvider": {
-    "type": "string",
-    "value": "Project she real. Foot half movement north."
-  },
-  "owner": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:GlucoseCarb:items:TDIO:31776660",
-      "urn:ngsi-ld:GlucoseCarb:items:TJOS:80357915"
-    ]
-  },
-  "seeAlso": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:GlucoseCarb:items:FTII:88661137",
-      "urn:ngsi-ld:GlucoseCarb:items:LQRK:95045619"
-    ]
-  },
-  "location": {
-    "type": "object",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        -78.118671,
-        -21.584307
-      ]
-    }
-  },
-  "address": {
-    "type": "object",
-    "value": {
-      "streetAddress": "Yard writer after economy since audience. Again little must exactly.",
-      "addressLocality": "Throw network second design threat. Several radio budget set against maintain. Provide movie receive Republican base read boy.",
-      "addressRegion": "Significant chance training individual forget learn state. Church who yes recent yet although trial. Here information only.",
-      "addressCountry": "Contain bar other bed draw. Me natural girl music account law. Film education let what upon war measure relate.",
-      "postalCode": "Answer east nature this. Join that social. Miss game save step choice.",
-      "postOfficeBoxNumber": "Record mind market task power fund find. Skill region stage happen. Suddenly total want against former. Military deal institution."
-    }
-  },
-  "areaServed": {
-    "type": "string",
-    "value": "Work hand gas appear type. Entire why her huge first."
-  },
-  "rt": {
-    "type": "array",
-    "value": [
-      "oic.r.glucose.carb",
-      "oic.r.glucose.carb"
-    ]
-  },
-  "carb": {
-    "type": "object",
-    "value": {
-      "type": "Property",
-      "value": 136.7
-    }
-  },
-  "meal": {
-    "type": "string",
-    "value": "other"
-  },
-  "range": {
-    "type": "array",
-    "value": [
-      170.5,
-      706.1
-    ]
-  },
-  "step": {
-    "type": "object",
-    "value": {
-      "type": "Property",
-      "value": 671.9
-    }
-  },
-  "precision": {
-    "type": "object",
-    "value": {
-      "type": "Property",
-      "value": 648.4
-    }
-  },
-  "n": {
-    "type": "string",
-    "value": "Interview person person whole success top edge. Brother quite describe could Republican network single walk. Among program determine doctor."
-  },
-  "if": {
-    "type": "array",
-    "value": [
-      "oic.if.s",
-      "oic.if.baseline"
-    ]
-  },
-  "type": {
-    "type": "string",
-    "value": "GlucoseCarb"
-  }
+    "id": "urn:ngsi-ld:GlucoseCarb:id:XAGW:80879157",
+    "dateCreated": {
+        "type": "DateTime",
+        "value": "1992-01-25T16:35:15Z"
+    },
+    "dateModified": {
+        "type": "DateTime",
+        "value": "1971-10-13T23:35:12Z"
+    },
+    "source": {
+        "type": "Text",
+        "value": "Goal song mo"
+    },
+    "name": {
+        "type": "Text",
+        "value": "Itself rise sport air."
+    },
+    "alternateName": {
+        "type": "Text",
+        "value": "Opportunity te"
+    },
+    "description": {
+        "type": "Text",
+        "value": "Worry heavy physical. Trip consumer senior ability range. Deal career how difference."
+    },
+    "dataProvider": {
+        "type": "Text",
+        "value": "Letter owner several anything wrong be financial. Among a make business whole garde"
+    },
+    "owner": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:GlucoseCarb:items:UAHX:69542090",
+            "urn:ngsi-ld:GlucoseCarb:items:RATV:82291018"
+        ]
+    },
+    "seeAlso": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:GlucoseCarb:items:KSLO:48651451"
+        ]
+    },
+    "location": {
+        "type": "geo:json",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                1.453833,
+                148.088804
+            ]
+        }
+    },
+    "address": {
+        "type": "StructuredValue",
+        "value": {
+            "streetAddress": "Number word successful marriage level sense. Matter within how occur key more up night.",
+            "addressLocality": "Mind wall director hear continue decade military. It trade area research. Participant audie",
+            "addressRegion": "Could sing offer yourself threat total as. Carry impact factor.",
+            "addressCountry": "College hot animal because. Music save sell over share buy.",
+            "postalCode": "Law day provide piece law draw. Foreign situation anyone strong. Movement wish anyone teac",
+            "postOfficeBoxNumber": "On six significant. Middle pattern trouble ",
+            "streetNr": "Debate u",
+            "district": "Go"
+        }
+    },
+    "areaServed": {
+        "type": "Text",
+        "value": "Stage Republican attorney like. Hotel back watch such prepare produce recently. Since before if. Himself on traditional."
+    },
+    "rt": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.r.glucose.carb"
+        ]
+    },
+    "carb": {
+        "type": "Number",
+        "value": 315.9
+    },
+    "meal": {
+        "type": "Text",
+        "value": "no_ingestion"
+    },
+    "range": {
+        "type": "StructuredValue",
+        "value": [
+            273.7,
+            549.7
+        ]
+    },
+    "step": {
+        "type": "Number",
+        "value": 555.1
+    },
+    "precision": {
+        "type": "Number",
+        "value": 784.1
+    },
+    "n": {
+        "type": "Text",
+        "value": "Forward beat nothing audience. Three "
+    },
+    "if": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.if.baseline"
+        ]
+    },
+    "type": "GlucoseCarb"
 }
