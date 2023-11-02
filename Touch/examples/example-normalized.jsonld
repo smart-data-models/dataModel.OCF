@@ -1,79 +1,102 @@
 {
-    "id": "urn:ngsi-ld:Touch:id:BHOE:99629945",
+    "id": "urn:ngsi-ld:Touch:id:NIDZ:89728507",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1976-09-22T04:56:59Z"
+            "@value": "1971-08-23T11:21:33Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1976-08-17T10:01:00Z"
+            "@value": "2008-10-09T07:54:17Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Evening pick report."
+        "value": "Get similar note head free game. Ago if help blood. Year practice phone without still sport guess exist"
     },
     "name": {
         "type": "Property",
-        "value": "Protect or trip keep keep. Society every card happy."
+        "value": "Addr"
     },
     "alternateName": {
         "type": "Property",
-        "value": "Long down deep order across. Dinner space keep compare. Manager majority tonight."
+        "value": "Dark fly describe when. Their stand draw expect TV star scienti"
     },
     "description": {
         "type": "Property",
-        "value": "Message amount always between use yes. Plan plan actually thus focus authority. Task perhaps build professional movement individual field."
+        "value": "Opportunity financial on sit determine perform process. Tend huge interview before."
     },
     "dataProvider": {
         "type": "Property",
-        "value": "Reality house we apply hit."
+        "value": "Account relate structure anyone allow some time."
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:Touch:items:ORBA:00184639",
-            "urn:ngsi-ld:Touch:items:YLIL:03077083"
+            "urn:ngsi-ld:Touch:items:PRIP:81746251",
+            "urn:ngsi-ld:Touch:items:SXPR:59698179"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:Touch:items:JXOV:82597506"
+            "urn:ngsi-ld:Touch:items:BMXR:44472001"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                -0.1744025,
-                -153.346539
+                25.6702675,
+                -113.845787
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "Cultural teach light factor keep.",
-            "addressLocality": "Each risk sell final game save major collection. Also interview drug let participant. Cup nor mind check much fear.",
-            "addressRegion": "Ground Mr hot sometimes change off deep. Loss eye image level something recent yes.",
-            "addressCountry": "Full pay response win require increase despite. Bring which bar. Concern you cause black democratic back.",
-            "postalCode": "Hand decision share. Technology imagine score technology treat state image name.",
-            "postOfficeBoxNumber": "Find turn think some than role. Treat serve change final think cost somebody. Financial turn population hair do ahead."
+            "streetAddress": "Report another gas go. So school job rather.",
+            "addressLocality": "Fall color hard bill wind summer sit. Lawyer follow economic season least. Pressure morning either arm.",
+            "addressRegion": "Production despite very change range society. Country environment poor community we. Recent the least law",
+            "addressCountry": "Notice not bag building structure candidate military. Along let real detail change court",
+            "postalCode": "Sing end adult analysis serious field. Generation help somebody check beyond rule sometimes. Describe every under ",
+            "postOfficeBoxNumber": "Research father your kitchen audience if president. Father act system where voice two idea majority.",
+            "streetNr": "Course prevent organization Democrat believe. Loss once assume player visit. Service career campaign test beyond leader.",
+            "district": "Whatever expect notice answer"
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "List impact owner detail everyone. By picture rich middle long very. Window indicate walk exactly figure."
+        "value": "Staff test exist difficult. Assume tough art meeti"
     },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.sensor.touch"
+        ]
+    },
+    "value": {
+        "type": "Property",
+        "value": true
+    },
+    "n": {
+        "type": "Property",
+        "value": "Walk where hour mission ok final. Article new she recent enough"
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.s",
+            "oic.if.baseline"
+        ]
+    },
+    "type": "Touch",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
