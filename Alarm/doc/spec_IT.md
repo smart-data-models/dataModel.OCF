@@ -22,7 +22,8 @@
 	- `postOfficeBoxNumber[string]`: Il numero di casella postale per gli indirizzi di casella postale. Ad esempio, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: Il codice postale. Ad esempio, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: L'indirizzo stradale  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
-- `alarmtype[string]`: Il tipo di allarme  - `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata  - `dateCreated[date-time]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `description[string]`: Descrizione dell'articolo  - `duration[number]`: Questa proprietà descrive la durata dell'allarme (secondi).  - `id[*]`: Identificatore univoco dell'entità  - `if[array]`: Il set di interfacce OCF supportato da questa risorsa.  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `n[string]`: Nome amichevole della risorsa  - `name[string]`: Il nome di questo elemento  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `precision[number]`: Quando viene esposto, il valore in 'precision' fornisce una tolleranza +/- rispetto alle proprietà della risorsa. Pertanto, se una proprietà viene AGGIORNATA a un valore e poi viene restituita, il valore restituito è valido se rientra nell'intervallo del valore impostato +/- precision.  - `range[array]`: L'intervallo valido per la proprietà nella risorsa come numero. Il primo valore della matrice è il valore minimo, il secondo valore della matrice è il valore massimo.  - `rt[array]`: Il tipo di risorsa  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `status[boolean]`: Questa proprietà descrive lo stato dell'allarme: true - attivo, false - disattivato  - `step[number]`: Valore del passo nell'intervallo definito, un numero intero quando l'intervallo è un numero.  Si tratta dell'incremento per i valori validi nell'intervallo; quindi se l'intervallo è 0.0..10.0 e il passo è 2.5, i valori validi sono 0.0,2.5,5.0,7.5,10.0.  - `time[string]`: Questa proprietà descrive l'ora dell'allarme utilizzando il formato ISO 8601 (ad esempio: 2007-04-05T14:30Z, 2007-04-05T14:30+09:00).  - `type[string]`: Tipo di entità NGSI. Deve essere Allarme  <!-- /30-PropertiesList -->  
+	- `streetNr[string]`: Numero che identifica una proprietà specifica su una strada pubblica    
+- `alarmtype[string]`: Il tipo di allarme  - `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata  - `dateCreated[date-time]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `description[string]`: Descrizione dell'articolo  - `duration[number]`: Questa proprietà descrive la durata dell'allarme (secondi).  - `id[*]`: Identificatore univoco dell'entità  - `if[array]`: Il set di interfacce OCF supportato da questa risorsa.  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `n[string]`: Nome amichevole della risorsa  - `name[string]`: Il nome di questo elemento  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `precision[number]`: Quando viene esposto, il valore in 'precision' fornisce una tolleranza +/- rispetto alle proprietà della risorsa. Pertanto, se una proprietà viene AGGIORNATA a un valore e poi viene restituita, il valore restituito è valido se rientra nell'intervallo del valore impostato +/- precision.  - `range[array]`: L'intervallo valido per la proprietà nella risorsa come numero. Il primo valore della matrice è il valore minimo, il secondo valore della matrice è il valore massimo.  - `rt[array]`: Il tipo di risorsa  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `status[boolean]`: Questa proprietà descrive lo stato dell'allarme: true - attivo, false - disattivato  - `step[number]`: Valore del passo nell'intervallo definito, un numero intero quando l'intervallo è un numero.  È l'incremento per i valori validi nell'intervallo; quindi se l'intervallo è 0.0..10.0 e il passo è 2.5, i valori validi sono 0.0,2.5,5.0,7.5,10.0.  - `time[string]`: Questa proprietà descrive l'ora dell'allarme utilizzando il formato ISO 8601 (ad esempio: 2007-04-05T14:30Z, 2007-04-05T14:30+09:00).  - `type[string]`: Tipo di entità NGSI. Deve essere Allarme  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Proprietà richieste  
 - `id`  - `status`  - `type`  <!-- /35-RequiredProperties -->  
@@ -466,70 +467,57 @@ Alarm:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Alarm:id:ZHIS:63298431",  
-  "dateCreated": "1982-12-26T01:01:12Z",  
-  "dateModified": "1995-10-16T11:14:54Z",  
-  "source": "Camera now natural drive reduce consumer themselves fact.",  
-  "name": "Season your ten big. Though support return she information. May concern determine born. Never positive be buy.",  
-  "alternateName": "Similar down while shake type reality. They reason at financial perhaps. That performance teacher many message how officer. Throw me head.",  
-  "description": "Improve last approach bad pass. Reveal check sit forget member note side too.",  
-  "dataProvider": "Cut region push care clear benefit. Difficult contain we my cut. Year hit care world.",  
-  "owner": [  
-    "urn:ngsi-ld:Alarm:items:VLBT:83946472",  
-    "urn:ngsi-ld:Alarm:items:KJQR:31565876"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Alarm:items:IBYB:42338597",  
-    "urn:ngsi-ld:Alarm:items:QXVK:05986964"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -9.0469705,  
-      105.770773  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Sure its everybody without. Save agency customer fall Democrat economic raise kid. Plan TV grow seek name. Kind room management.",  
-    "addressLocality": "Hot seem spring according court.",  
-    "addressRegion": "Team government mean son. You back she marriage themselves. Light class trouble effort.",  
-    "addressCountry": "Expect people turn measure system wide reach. Many political yes speech. Movie seem government actually.",  
-    "postalCode": "Fact several test ago help. Range late call bag south. Necessary ground career interview particular drop bill.",  
-    "postOfficeBoxNumber": "Whom fear class professor to store. Make know lead executive side."  
-  },  
-  "areaServed": "Administration information cut new make century. Generation simply wall close. Few such listen key dog arrive citizen cultural.",  
-  "rt": [  
-    "oic.r.alarm",  
-    "oic.r.alarm"  
-  ],  
-  "status": {  
-    "type": "Property",  
-    "value": true  
-  },  
-  "duration": {  
-    "type": "Property",  
-    "value": 977.1  
-  },  
-  "time": "Defense public two couple article. Fast collection too main play.",  
-  "alarmtype": "Flood",  
-  "n": "Money it couple idea success oil adult. Culture report want certain. Measure have war food together morning up.",  
-  "if": [  
-    "oic.if.baseline",  
-    "oic.if.baseline"  
-  ],  
-  "range": [  
-    468.7,  
-    952.7  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 170.4  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 590.6  
-  },  
-  "type": "Alarm"  
+    "id": "urn:ngsi-ld:Alarm:id:GQEJ:48764759",  
+    "dateCreated": "1979-07-06T09:36:23Z",  
+    "dateModified": "2021-06-07T14:46:20Z",  
+    "source": "Son would mouth relate own chair better available. Line bey",  
+    "name": "Tend employee source nature add rest. Report size personal par",  
+    "alternateName": "Before ye",  
+    "description": "Wonder employee attorney quickly candidate change although bag.",  
+    "dataProvider": "Study modern miss dog Democrat ",  
+    "owner": [  
+        "urn:ngsi-ld:Alarm:items:KNBD:33041352",  
+        "urn:ngsi-ld:Alarm:items:DUGT:23098910"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Alarm:items:AGFW:91615109"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -56.7421445,  
+            77.286609  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "View age international big. Attorney author feeling job article.",  
+        "addressLocality": "Others record hospital. Grow rule stuff truth college. Whom around put ",  
+        "addressRegion": "Others kind company likely. Tonight themselves true power home price.",  
+        "addressCountry": "Real lea",  
+        "postalCode": "Stock ball organization recognize civil development. Her then nothing increase I reduce industry. Close ask reduce.",  
+        "postOfficeBoxNumber": "Those traditional page a although for study. Spea",  
+        "streetNr": "Wear individual about add senior woman.",  
+        "district": "Best budget power them evidence without beyond take. Physical against trial son break either. Stage population boy child surface amount day."  
+    },  
+    "areaServed": "Fire happen nothing support suffer which parent. Republican total policy head Mrs debat",  
+    "rt": [  
+        "oic.r.alarm"  
+    ],  
+    "status": true,  
+    "duration": 445.6,  
+    "time": "Western our degree. Mother necessary Democrat author strategy radio lot. Identify through between especially late.",  
+    "alarmtype": "Weather",  
+    "n": "Pay loss themselves fi",  
+    "if": [  
+        "oic.if.baseline"  
+    ],  
+    "range": [  
+        722.1,  
+        789.3  
+    ],  
+    "step": 208.6,  
+    "precision": 520.8,  
+    "type": "Alarm"  
 }  
 ```  
 </details>  
@@ -538,144 +526,123 @@ Alarm:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:Alarm:id:ZHIS:63298431"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1982-12-26T01:01:12Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1995-10-16T11:14:54Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Camera now natural drive reduce consumer themselves fact."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Season your ten big. Though support return she information. May concern determine born. Never positive be buy."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Similar down while shake type reality. They reason at financial perhaps. That performance teacher many message how officer. Throw me head."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Improve last approach bad pass. Reveal check sit forget member note side too."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Cut region push care clear benefit. Difficult contain we my cut. Year hit care world."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Alarm:items:VLBT:83946472",  
-      "urn:ngsi-ld:Alarm:items:KJQR:31565876"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Alarm:items:IBYB:42338597",  
-      "urn:ngsi-ld:Alarm:items:QXVK:05986964"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -9.0469705,  
-        105.770773  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Sure its everybody without. Save agency customer fall Democrat economic raise kid. Plan TV grow seek name. Kind room management.",  
-      "addressLocality": "Hot seem spring according court.",  
-      "addressRegion": "Team government mean son. You back she marriage themselves. Light class trouble effort.",  
-      "addressCountry": "Expect people turn measure system wide reach. Many political yes speech. Movie seem government actually.",  
-      "postalCode": "Fact several test ago help. Range late call bag south. Necessary ground career interview particular drop bill.",  
-      "postOfficeBoxNumber": "Whom fear class professor to store. Make know lead executive side."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Administration information cut new make century. Generation simply wall close. Few such listen key dog arrive citizen cultural."  
-  },  
-  "rt": {  
-    "type": "array",  
-    "value": [  
-      "oic.r.alarm",  
-      "oic.r.alarm"  
-    ]  
-  },  
-  "status": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": true  
-    }  
-  },  
-  "duration": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 977.1  
-    }  
-  },  
-  "time": {  
-    "type": "string",  
-    "value": "Defense public two couple article. Fast collection too main play."  
-  },  
-  "alarmtype": {  
-    "type": "string",  
-    "value": "Flood"  
-  },  
-  "n": {  
-    "type": "string",  
-    "value": "Money it couple idea success oil adult. Culture report want certain. Measure have war food together morning up."  
-  },  
-  "if": {  
-    "type": "array",  
-    "value": [  
-      "oic.if.baseline",  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "range": {  
-    "type": "array",  
-    "value": [  
-      468.7,  
-      952.7  
-    ]  
-  },  
-  "step": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 170.4  
-    }  
-  },  
-  "precision": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 590.6  
-    }  
-  },  
-  "type": {  
-    "type": "string",  
-    "value": "Alarm"  
-  }  
+    "id": "urn:ngsi-ld:Alarm:id:GQEJ:48764759",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1979-07-06T09:36:23Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "2021-06-07T14:46:20Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Son would mouth relate own chair better available. Line bey"  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Tend employee source nature add rest. Report size personal par"  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Before ye"  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Wonder employee attorney quickly candidate change although bag."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Study modern miss dog Democrat "  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Alarm:items:KNBD:33041352",  
+            "urn:ngsi-ld:Alarm:items:DUGT:23098910"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Alarm:items:AGFW:91615109"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -56.7421445,  
+                77.286609  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "View age international big. Attorney author feeling job article.",  
+            "addressLocality": "Others record hospital. Grow rule stuff truth college. Whom around put ",  
+            "addressRegion": "Others kind company likely. Tonight themselves true power home price.",  
+            "addressCountry": "Real lea",  
+            "postalCode": "Stock ball organization recognize civil development. Her then nothing increase I reduce industry. Close ask reduce.",  
+            "postOfficeBoxNumber": "Those traditional page a although for study. Spea",  
+            "streetNr": "Wear individual about add senior woman.",  
+            "district": "Best budget power them evidence without beyond take. Physical against trial son break either. Stage population boy child surface amount day."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Fire happen nothing support suffer which parent. Republican total policy head Mrs debat"  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.alarm"  
+        ]  
+    },  
+    "status": {  
+        "type": "Boolean",  
+        "value": true  
+    },  
+    "duration": {  
+        "type": "Number",  
+        "value": 445.6  
+    },  
+    "time": {  
+        "type": "Text",  
+        "value": "Western our degree. Mother necessary Democrat author strategy radio lot. Identify through between especially late."  
+    },  
+    "alarmtype": {  
+        "type": "Text",  
+        "value": "Weather"  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Pay loss themselves fi"  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "range": {  
+        "type": "StructuredValue",  
+        "value": [  
+            722.1,  
+            789.3  
+        ]  
+    },  
+    "step": {  
+        "type": "Number",  
+        "value": 208.6  
+    },  
+    "precision": {  
+        "type": "Number",  
+        "value": 520.8  
+    },  
+    "type": "Alarm"  
 }  
 ```  
 </details>  
@@ -684,73 +651,59 @@ Alarm:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Alarm:id:ZHIS:63298431",  
-    "dateCreated": "1982-12-26T01:01:12Z",  
-    "dateModified": "1995-10-16T11:14:54Z",  
-    "source": "Camera now natural drive reduce consumer themselves fact.",  
-    "name": "Season your ten big. Though support return she information. May concern determine born. Never positive be buy.",  
-    "alternateName": "Similar down while shake type reality. They reason at financial perhaps. That performance teacher many message how officer. Throw me head.",  
-    "description": "Improve last approach bad pass. Reveal check sit forget member note side too.",  
-    "dataProvider": "Cut region push care clear benefit. Difficult contain we my cut. Year hit care world.",  
+    "id": "urn:ngsi-ld:Alarm:id:GQEJ:48764759",  
+    "dateCreated": "1979-07-06T09:36:23Z",  
+    "dateModified": "2021-06-07T14:46:20Z",  
+    "source": "Son would mouth relate own chair better available. Line bey",  
+    "name": "Tend employee source nature add rest. Report size personal par",  
+    "alternateName": "Before ye",  
+    "description": "Wonder employee attorney quickly candidate change although bag.",  
+    "dataProvider": "Study modern miss dog Democrat ",  
     "owner": [  
-        "urn:ngsi-ld:Alarm:items:VLBT:83946472",  
-        "urn:ngsi-ld:Alarm:items:KJQR:31565876"  
+        "urn:ngsi-ld:Alarm:items:KNBD:33041352",  
+        "urn:ngsi-ld:Alarm:items:DUGT:23098910"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:Alarm:items:IBYB:42338597",  
-        "urn:ngsi-ld:Alarm:items:QXVK:05986964"  
+        "urn:ngsi-ld:Alarm:items:AGFW:91615109"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            -9.0469705,  
-            105.770773  
+            -56.7421445,  
+            77.286609  
         ]  
     },  
     "address": {  
-        "streetAddress": "Sure its everybody without. Save agency customer fall Democrat economic raise kid. Plan TV grow seek name. Kind room management.",  
-        "addressLocality": "Hot seem spring according court.",  
-        "addressRegion": "Team government mean son. You back she marriage themselves. Light class trouble effort.",  
-        "addressCountry": "Expect people turn measure system wide reach. Many political yes speech. Movie seem government actually.",  
-        "postalCode": "Fact several test ago help. Range late call bag south. Necessary ground career interview particular drop bill.",  
-        "postOfficeBoxNumber": "Whom fear class professor to store. Make know lead executive side."  
+        "streetAddress": "View age international big. Attorney author feeling job article.",  
+        "addressLocality": "Others record hospital. Grow rule stuff truth college. Whom around put ",  
+        "addressRegion": "Others kind company likely. Tonight themselves true power home price.",  
+        "addressCountry": "Real lea",  
+        "postalCode": "Stock ball organization recognize civil development. Her then nothing increase I reduce industry. Close ask reduce.",  
+        "postOfficeBoxNumber": "Those traditional page a although for study. Spea",  
+        "streetNr": "Wear individual about add senior woman.",  
+        "district": "Best budget power them evidence without beyond take. Physical against trial son break either. Stage population boy child surface amount day."  
     },  
-    "areaServed": "Administration information cut new make century. Generation simply wall close. Few such listen key dog arrive citizen cultural.",  
+    "areaServed": "Fire happen nothing support suffer which parent. Republican total policy head Mrs debat",  
     "rt": [  
-        "oic.r.alarm",  
         "oic.r.alarm"  
     ],  
-    "status": {  
-        "type": "Property",  
-        "value": true  
-    },  
-    "duration": {  
-        "type": "Property",  
-        "value": 977.1  
-    },  
-    "time": "Defense public two couple article. Fast collection too main play.",  
-    "alarmtype": "Flood",  
-    "n": "Money it couple idea success oil adult. Culture report want certain. Measure have war food together morning up.",  
+    "status": true,  
+    "duration": 445.6,  
+    "time": "Western our degree. Mother necessary Democrat author strategy radio lot. Identify through between especially late.",  
+    "alarmtype": "Weather",  
+    "n": "Pay loss themselves fi",  
     "if": [  
-        "oic.if.baseline",  
         "oic.if.baseline"  
     ],  
     "range": [  
-        468.7,  
-        952.7  
+        722.1,  
+        789.3  
     ],  
-    "step": {  
-        "type": "Property",  
-        "value": 170.4  
-    },  
-    "precision": {  
-        "type": "Property",  
-        "value": 590.6  
-    },  
+    "step": 208.6,  
+    "precision": 520.8,  
     "type": "Alarm",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -760,78 +713,80 @@ Alarm:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Alarm:id:CQWI:87210186",  
+    "id": "urn:ngsi-ld:Alarm:id:GQEJ:48764759",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2016-11-17T03:07:59Z"  
+            "@value": "1979-07-06T09:36:23Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2004-01-01T23:29:51Z"  
+            "@value": "2021-06-07T14:46:20Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Still some hotel majority child event yes. Woman traditional key hard. During company her better."  
+        "value": "Son would mouth relate own chair better available. Line bey"  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Although record least mother. Risk reach various right camera sense. This begin charge participant include seem relate."  
+        "value": "Tend employee source nature add rest. Report size personal par"  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "White travel rest human detail free paper. Kid base page notice wonder. Notice friend identify doctor."  
+        "value": "Before ye"  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Top result media onto the carry memory. A guess half decide every value season."  
+        "value": "Wonder employee attorney quickly candidate change although bag."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Team personal store administration strategy. Stuff policy home let group hope nature. Star worry seem first huge music."  
+        "value": "Study modern miss dog Democrat "  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Alarm:items:YZSD:84563060",  
-            "urn:ngsi-ld:Alarm:items:HSBD:00505684"  
+            "urn:ngsi-ld:Alarm:items:KNBD:33041352",  
+            "urn:ngsi-ld:Alarm:items:DUGT:23098910"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Alarm:items:QUCE:80086314"  
+            "urn:ngsi-ld:Alarm:items:AGFW:91615109"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                47.7292685,  
-                167.452011  
+                -56.7421445,  
+                77.286609  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "However environment represent. Before one situation word. Edge shake popular rather common activity.",  
-            "addressLocality": "Throughout car drive sit sea hope. News guess least. Agreement increase school until try toward friend idea. Ready far however social measure mother never.",  
-            "addressRegion": "Save already inside million employee. Here law skill.",  
-            "addressCountry": "Friend pay save wonder senior ever edge. Left reach husband provide too security past.",  
-            "postalCode": "Film sometimes even throughout necessary. Born technology military ground reveal live door issue.",  
-            "postOfficeBoxNumber": "Lot whether husband skin remember organization. Apply president key standard close market successful. International evidence successful."  
+            "streetAddress": "View age international big. Attorney author feeling job article.",  
+            "addressLocality": "Others record hospital. Grow rule stuff truth college. Whom around put ",  
+            "addressRegion": "Others kind company likely. Tonight themselves true power home price.",  
+            "addressCountry": "Real lea",  
+            "postalCode": "Stock ball organization recognize civil development. Her then nothing increase I reduce industry. Close ask reduce.",  
+            "postOfficeBoxNumber": "Those traditional page a although for study. Spea",  
+            "streetNr": "Wear individual about add senior woman.",  
+            "district": "Best budget power them evidence without beyond take. Physical against trial son break either. Stage population boy child surface amount day."  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Wear use by strong difference least science entire. None hard scientist event the everything. Wrong trip vote leave analysis test point."  
+        "value": "Fire happen nothing support suffer which parent. Republican total policy head Mrs debat"  
     },  
     "rt": {  
         "type": "Property",  
@@ -841,23 +796,23 @@ Alarm:
     },  
     "status": {  
         "type": "Property",  
-        "value": false  
+        "value": true  
     },  
     "duration": {  
         "type": "Property",  
-        "value": 167.8  
+        "value": 445.6  
     },  
     "time": {  
         "type": "Property",  
-        "value": "Get low crime leg heavy. Table response share effect treatment."  
+        "value": "Western our degree. Mother necessary Democrat author strategy radio lot. Identify through between especially late."  
     },  
     "alarmtype": {  
         "type": "Property",  
-        "value": "Flood"  
+        "value": "Weather"  
     },  
     "n": {  
         "type": "Property",  
-        "value": "Property environmental clear attack bar just study. There well knowledge work better. Plant she never whom guy identify."  
+        "value": "Pay loss themselves fi"  
     },  
     "if": {  
         "type": "Property",  
@@ -868,22 +823,21 @@ Alarm:
     "range": {  
         "type": "Property",  
         "value": [  
-            160.7,  
-            645.1  
+            722.1,  
+            789.3  
         ]  
     },  
     "step": {  
         "type": "Property",  
-        "value": 967.3  
+        "value": 208.6  
     },  
     "precision": {  
         "type": "Property",  
-        "value": 330.0  
+        "value": 520.8  
     },  
     "type": "Alarm",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
