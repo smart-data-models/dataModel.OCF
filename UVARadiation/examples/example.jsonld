@@ -1,38 +1,48 @@
 {
-    "id": "urn:ngsi-ld:UVARadiation:id:XLXB:19118181",
-    "dateCreated": "1976-06-20T20:20:58Z",
-    "dateModified": "1986-09-17T07:45:30Z",
-    "source": "Out recognize head health him return. Open skill well factor social pay.",
-    "name": "Mouth nation quite bring price administration. Relate end their part rate information. Pattern look recently let member. Perhaps thus perhaps force report value.",
-    "alternateName": "Beat usually once us Mr soon. Cost record take moment particular participant.",
-    "description": "Discussion during phone loss.",
-    "dataProvider": "Education however exist close either hard seem.",
+    "id": "urn:ngsi-ld:UVARadiation:id:TOWY:13263480",
+    "dateCreated": "1994-09-13T19:03:24Z",
+    "dateModified": "1999-01-09T03:06:34Z",
+    "source": "Best explain fine play late. Home writer election we mother all.",
+    "name": "Practice since low expect tree compare messa",
+    "alternateName": "Group give find. Standard trial two sit",
+    "description": "Race model single name black. Forward act else everything production school age per. Small entire according similar food child. Visit read wonder source personal fast dark.",
+    "dataProvider": "Road l",
     "owner": [
-        "urn:ngsi-ld:UVARadiation:items:YRGO:27251925",
-        "urn:ngsi-ld:UVARadiation:items:VOMP:44723721"
+        "urn:ngsi-ld:UVARadiation:items:UCPL:14802457",
+        "urn:ngsi-ld:UVARadiation:items:QLYI:61301922"
     ],
     "seeAlso": [
-        "urn:ngsi-ld:UVARadiation:items:JOIY:23173391",
-        "urn:ngsi-ld:UVARadiation:items:OIHP:83028662"
+        "urn:ngsi-ld:UVARadiation:items:XQUJ:21897202"
     ],
     "location": {
         "type": "Point",
         "coordinates": [
-            16.951078,
-            -96.703778
+            -45.624785,
+            1.262295
         ]
     },
     "address": {
-        "streetAddress": "Majority man available side. Item ready individual time. Box month cover I than.",
-        "addressLocality": "As produce writer strategy little green need. Only here heart leg.",
-        "addressRegion": "Finally both much on evening along foreign. Product culture term shoulder career. Forget especially body past course executive push. Away chance friend information detail her.",
-        "addressCountry": "Marriage by central sport kitchen politics. Term question run add door.",
-        "postalCode": "Admit science prepare maybe well president season. Determine true high baby according three.",
-        "postOfficeBoxNumber": "Eye gun beat possible service. Thank service law air. Worry specific claim girl machine future."
+        "streetAddress": "Film single member detail sometime",
+        "addressLocality": "Concern all forget half. Property recently return stage event finish shake. Set how task south.",
+        "addressRegion": "Happy nature population. City receive contain you bring care.",
+        "addressCountry": "You without top nor computer. Beat three word age standard American right.",
+        "postalCode": "Fish good pass organization rich into nature suddenly. Same seven make may base put.",
+        "postOfficeBoxNumber": "Capital beat single. Sell address system none thought identify rock walk. Decision through some onto.",
+        "streetNr": "Month question detail idea from join admit. At laugh item beat amount off pass.",
+        "district": "Whole word stage. Every cold walk within"
     },
-    "areaServed": "Film really information land. Arm decade foreign phone. Avoid least once plan page.",
+    "areaServed": "None why else. Skill measure under season. Positive view radio well ground should. Government seven American red.",
+    "rt": [
+        "oic.r.sensor.radiation.uva"
+    ],
+    "measurement": 80.2,
+    "n": "Show town everyt",
+    "if": [
+        "oic.if.s",
+        "oic.if.baseline"
+    ],
+    "type": "UVARadiation",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
