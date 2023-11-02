@@ -15,7 +15,15 @@
 ## 속성 목록  
 
 <sup><sub>[*] 속성에 유형이 없는 것은 여러 유형 또는 다른 형식/패턴을 가질 수 있기 때문입니다</sub></sup>.  
-- `if[array]`: 이 리소스에서 지원하는 OCF 인터페이스 세트입니다.  - `n[string]`: 리소스의 친근한 이름  - `openAlarm[boolean]`: 문 열림 알람의 상태입니다.  - `openDuration[string]`: ISO 8601에 정의된 형식의 기간을 나타내는 문자열입니다. 허용되는 형식은 다음과 같습니다: P[n]Y[n]M[n]DT[n]H[n]M[n]S, P[n]W, P[n]Y[n]-M[n]-DT[0-23]H[0-59]:M[0-59]:S 및 P[n]W, P[n]Y[n]M[n]DT[0-23]H[0-59]M[0-59]S입니다. P는 필수이고 다른 모든 요소는 선택 사항이며 시간 요소는 T 뒤에 와야 합니다.  - `openState[string]`: 문의 상태(열림 또는 닫힘)입니다.  - `rt[array]`: 리소스 유형입니다.  - `type[string]`: NGSI 엔티티 유형. Door여야 합니다.  <!-- /30-PropertiesList -->  
+- `address[object]`: 우편 주소  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 국가. 예를 들어, 스페인  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 도로명 주소가 있는 지역 및 해당 지역에 속한 지역  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: 해당 지역이 위치한 지역과 해당 국가의 지역  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 지구는 일부 국가에서는 지방 정부에서 관리하는 행정 구역의 일종입니다.    
+	- `postOfficeBoxNumber[string]`: 사서함 주소의 우체국 사서함 번호입니다. 예: 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 우편 번호입니다. 예: 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 거리 주소  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: 공공 도로의 특정 건물을 식별하는 번호    
+- `alternateName[string]`: 이 항목의 대체 이름  - `areaServed[string]`: 서비스 또는 제공 품목이 제공되는 지리적 영역  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 조화된 데이터 엔티티의 공급자를 식별하는 일련의 문자  - `dateCreated[date-time]`: 엔티티 생성 타임스탬프. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `dateModified[date-time]`: 엔티티의 마지막 수정 타임스탬프입니다. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `description[string]`: 이 항목에 대한 설명  - `id[*]`: 엔티티의 고유 식별자  - `if[array]`: 이 리소스에서 지원하는 OCF 인터페이스 세트입니다.  - `location[*]`: 항목에 대한 지오숀 참조입니다. 포인트, 라인 문자열, 다각형, 멀티포인트, 멀티라인 문자열 또는 멀티폴리곤일 수 있습니다.  - `n[string]`: 리소스의 친근한 이름  - `name[string]`: 이 항목의 이름  - `openAlarm[boolean]`: 문 열림 알람의 상태입니다.  - `openDuration[string]`: ISO 8601에 정의된 형식의 기간을 나타내는 문자열입니다. 허용되는 형식은 다음과 같습니다: P[n]Y[n]M[n]DT[n]H[n]M[n]S, P[n]W, P[n]Y[n]-M[n]-DT[0-23]H[0-59]:M[0-59]:S 및 P[n]W, P[n]Y[n]M[n]DT[0-23]H[0-59]M[0-59]S입니다. P는 필수이고 다른 모든 요소는 선택 사항이며 시간 요소는 T 뒤에 와야 합니다.  - `openState[string]`: 문의 상태(열림 또는 닫힘)입니다.  - `owner[array]`: 소유자의 고유 ID를 참조하는 JSON 인코딩된 문자 시퀀스가 포함된 목록입니다.  - `rt[array]`: 리소스 유형입니다.  - `seeAlso[*]`: 항목에 대한 추가 리소스를 가리키는 URL 목록  - `source[string]`: 엔티티 데이터의 원본 소스를 URL로 제공하는 문자 시퀀스입니다. 소스 공급자의 정규화된 도메인 이름 또는 소스 개체에 대한 URL을 사용하는 것이 좋습니다.  - `type[string]`: NGSI 엔티티 유형. Door여야 합니다.  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 필수 속성  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -32,6 +40,109 @@
 Door:    
   description: 'Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the open state of the door. A door is modelled by means of openState (Open/Closed), openDuration (ISO 8601 Time), and openAlarm (boolean). For Property ''openState'', the value ''Open'' indicates the door is open. The value ''Closed'' indicates the door is closed. The type of Property ''openDuration'' is an RFC Time encoded string. The Property ''openAlarm'' value ''true'' indicates that the open alarm is active. The openAlarm value ''false'' indicates that open alarm is not active. retrieves the state of the Door.'    
   properties:    
+    address:    
+      description: The mailing address    
+      properties:    
+        addressCountry:    
+          description: 'The country. For example, Spain'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
+        addressLocality:    
+          description: 'The locality in which the street address is, and which is in the region'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
+        addressRegion:    
+          description: 'The region in which the locality is, and which is in the country'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        postOfficeBoxNumber:    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
+        postalCode:    
+          description: 'The postal code. For example, 24004'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
+        streetAddress:    
+          description: The street address    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      type: object    
+      x-ngsi:    
+        model: https://schema.org/address    
+        type: Property    
+    alternateName:    
+      description: An alternative name for this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    areaServed:    
+      description: The geographic area where a service or offered item is provided    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    dataProvider:    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateCreated:    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateModified:    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    description:    
+      description: A description of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    id:    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
+      x-ngsi:    
+        type: Property    
     if:    
       description: The OCF Interface set supported by this Resource.    
       items:    
@@ -45,10 +156,180 @@ Door:
       uniqueItems: true    
       x-ngsi:    
         type: Property    
+    location:    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+      oneOf:    
+        - description: Geojson reference to the item. Point    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                type: number    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - Point    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Point    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - LineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON LineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 4    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - Polygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Polygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPoint    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPoint    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiLineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiLineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    items:    
+                      type: number    
+                    minItems: 2    
+                    type: array    
+                  minItems: 4    
+                  type: array    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPolygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPolygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+      x-ngsi:    
+        type: GeoProperty    
     n:    
       description: Friendly name of the Resource    
       maxLength: 64    
       readOnly: true    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    name:    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -72,6 +353,28 @@ Door:
       type: string    
       x-ngsi:    
         type: Property    
+    owner:    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
+      items:    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     rt:    
       description: The Resource Type.    
       items:    
@@ -83,6 +386,23 @@ Door:
       readOnly: true    
       type: array    
       uniqueItems: true    
+      x-ngsi:    
+        type: Property    
+    seeAlso:    
+      description: list of uri pointing to additional resources about the item    
+      oneOf:    
+        - items:    
+            format: uri    
+            type: string    
+          minItems: 1    
+          type: array    
+        - format: uri    
+          type: string    
+      x-ngsi:    
+        type: Property    
+    source:    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
+      type: string    
       x-ngsi:    
         type: Property    
     type:    
@@ -114,38 +434,51 @@ Door:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Door:id:VCIY:56887503",  
-  "dateCreated": "1979-09-10T12:21:15Z",  
-  "dateModified": "1992-06-21T16:13:30Z",  
-  "source": "Blue other across force turn. After standard now resource two. New behind training unit health tend anyone.",  
-  "name": "Rule hour car scene hit alone. Cut true property either treatment. Her cell relate level wife.",  
-  "alternateName": "In focus person. Determine painting series be. Offer still health color establish.",  
-  "description": "Eight close pull country within beat work. Record exactly senior.",  
-  "dataProvider": "Win between she sport. Second appear couple beat. Perform on create successful able.",  
-  "owner": [  
-    "urn:ngsi-ld:Door:items:AHUR:85284630",  
-    "urn:ngsi-ld:Door:items:MIYK:06076807"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Door:items:DOII:39861843",  
-    "urn:ngsi-ld:Door:items:NURV:05944119"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -41.917993,  
-      -156.219139  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "True market let believe wrong business allow. Woman later information suggest admit.",  
-    "addressLocality": "Run air when five still church certainly. Reflect short east late in line.",  
-    "addressRegion": "National office heart high them. Organization deal why wear important. Military effect Mrs floor environment skill detail.",  
-    "addressCountry": "Would throughout realize moment marriage want. Sense fight radio hold gun throw before.",  
-    "postalCode": "Save beautiful drive break down kitchen job. School state religious score development region.",  
-    "postOfficeBoxNumber": "Mention affect approach."  
-  },  
-  "areaServed": "Stuff conference chair during open expect fight. Investment she matter present back."  
+    "id": "urn:ngsi-ld:Door:id:TOAG:57173407",  
+    "dateCreated": "1990-04-26T18:03:09Z",  
+    "dateModified": "1977-10-15T20:23:28Z",  
+    "source": "Nation choose relationship likely question. Myself if place again establish. A huge three. Know second government the pull cultural.",  
+    "name": "Audience energy move. Morning eat turn clear.",  
+    "alternateName": "Executive care mission decision black. Idea sing small factor head pick church. High opportunity cause property.",  
+    "description": "Line indeed live reason five present art feel. Appear perform agent likely thousand act money. Rather bank we under.",  
+    "dataProvider": "Guess break about. Their record road dinner seem. Course its respond himself former.",  
+    "owner": [  
+        "urn:ngsi-ld:Door:items:FOLZ:62728523",  
+        "urn:ngsi-ld:Door:items:SWBM:66763373"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Door:items:TJTC:03125023"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            47.4708025,  
+            -27.301033  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Learn place",  
+        "addressLocality": "Wife however TV law fund. Paper beat five movie. Eight miss couple bag thank generation.",  
+        "addressRegion": "Pull save fine team effort. The drive figure necessary across manager.",  
+        "addressCountry": "True include management. Brother bank better she increase try. Partner stand next though house where.",  
+        "postalCode": "",  
+        "postOfficeBoxNumber": "Situation between run eat expect save process score. Into anyone his evening wife north director.",  
+        "streetNr": "Develop story drive million push. Health lose old case administration. Foreign one agent candidate how wish member.",  
+        "district": "Share sit simple notice. Dog car do his part."  
+    },  
+    "areaServed": "Material truth pattern ago other majority final when. Present produce manager well lose finish summer.",  
+    "rt": [  
+        "oic.r.door"  
+    ],  
+    "openDuration": "P1710168910W264733215084615551330344341353172274567622193828821450614981840335945689055955212929777261D",  
+    "openState": "Open",  
+    "openAlarm": false,  
+    "n": "Size himself arrive although risk which",  
+    "if": [  
+        "oic.if.a",  
+        "oic.if.baseline"  
+    ],  
+    "type": "Door"  
 }  
 ```  
 </details>  
@@ -154,79 +487,105 @@ Door:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:Door:id:VCIY:56887503"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1979-09-10T12:21:15Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1992-06-21T16:13:30Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Blue other across force turn. After standard now resource two. New behind training unit health tend anyone."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Rule hour car scene hit alone. Cut true property either treatment. Her cell relate level wife."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "In focus person. Determine painting series be. Offer still health color establish."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Eight close pull country within beat work. Record exactly senior."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Win between she sport. Second appear couple beat. Perform on create successful able."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Door:items:AHUR:85284630",  
-      "urn:ngsi-ld:Door:items:MIYK:06076807"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Door:items:DOII:39861843",  
-      "urn:ngsi-ld:Door:items:NURV:05944119"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -41.917993,  
-        -156.219139  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "True market let believe wrong business allow. Woman later information suggest admit.",  
-      "addressLocality": "Run air when five still church certainly. Reflect short east late in line.",  
-      "addressRegion": "National office heart high them. Organization deal why wear important. Military effect Mrs floor environment skill detail.",  
-      "addressCountry": "Would throughout realize moment marriage want. Sense fight radio hold gun throw before.",  
-      "postalCode": "Save beautiful drive break down kitchen job. School state religious score development region.",  
-      "postOfficeBoxNumber": "Mention affect approach."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Stuff conference chair during open expect fight. Investment she matter present back."  
-  }  
+    "id": "urn:ngsi-ld:Door:id:TOAG:57173407",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1990-04-26T18:03:09Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "1977-10-15T20:23:28Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Nation choose relationship likely question. Myself if place again establish. A huge three. Know second government the pull cultural."  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Audience energy move. Morning eat turn clear."  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Executive care mission decision black. Idea sing small factor head pick church. High opportunity cause property."  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Line indeed live reason five present art feel. Appear perform agent likely thousand act money. Rather bank we under."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Guess break about. Their record road dinner seem. Course its respond himself former."  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Door:items:FOLZ:62728523",  
+            "urn:ngsi-ld:Door:items:SWBM:66763373"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Door:items:TJTC:03125023"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                47.4708025,  
+                -27.301033  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Learn place",  
+            "addressLocality": "Wife however TV law fund. Paper beat five movie. Eight miss couple bag thank generation.",  
+            "addressRegion": "Pull save fine team effort. The drive figure necessary across manager.",  
+            "addressCountry": "True include management. Brother bank better she increase try. Partner stand next though house where.",  
+            "postalCode": "",  
+            "postOfficeBoxNumber": "Situation between run eat expect save process score. Into anyone his evening wife north director.",  
+            "streetNr": "Develop story drive million push. Health lose old case administration. Foreign one agent candidate how wish member.",  
+            "district": "Share sit simple notice. Dog car do his part."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Material truth pattern ago other majority final when. Present produce manager well lose finish summer."  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.door"  
+        ]  
+    },  
+    "openDuration": {  
+        "type": "Text",  
+        "value": "P1710168910W264733215084615551330344341353172274567622193828821450614981840335945689055955212929777261D"  
+    },  
+    "openState": {  
+        "type": "Text",  
+        "value": "Open"  
+    },  
+    "openAlarm": {  
+        "type": "Boolean",  
+        "value": false  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Size himself arrive although risk which"  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.a",  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "Door"  
 }  
 ```  
 </details>  
@@ -235,41 +594,53 @@ Door:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Door:id:VCIY:56887503",  
-    "dateCreated": "1979-09-10T12:21:15Z",  
-    "dateModified": "1992-06-21T16:13:30Z",  
-    "source": "Blue other across force turn. After standard now resource two. New behind training unit health tend anyone.",  
-    "name": "Rule hour car scene hit alone. Cut true property either treatment. Her cell relate level wife.",  
-    "alternateName": "In focus person. Determine painting series be. Offer still health color establish.",  
-    "description": "Eight close pull country within beat work. Record exactly senior.",  
-    "dataProvider": "Win between she sport. Second appear couple beat. Perform on create successful able.",  
+    "id": "urn:ngsi-ld:Door:id:TOAG:57173407",  
+    "dateCreated": "1990-04-26T18:03:09Z",  
+    "dateModified": "1977-10-15T20:23:28Z",  
+    "source": "Nation choose relationship likely question. Myself if place again establish. A huge three. Know second government the pull cultural.",  
+    "name": "Audience energy move. Morning eat turn clear.",  
+    "alternateName": "Executive care mission decision black. Idea sing small factor head pick church. High opportunity cause property.",  
+    "description": "Line indeed live reason five present art feel. Appear perform agent likely thousand act money. Rather bank we under.",  
+    "dataProvider": "Guess break about. Their record road dinner seem. Course its respond himself former.",  
     "owner": [  
-        "urn:ngsi-ld:Door:items:AHUR:85284630",  
-        "urn:ngsi-ld:Door:items:MIYK:06076807"  
+        "urn:ngsi-ld:Door:items:FOLZ:62728523",  
+        "urn:ngsi-ld:Door:items:SWBM:66763373"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:Door:items:DOII:39861843",  
-        "urn:ngsi-ld:Door:items:NURV:05944119"  
+        "urn:ngsi-ld:Door:items:TJTC:03125023"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            -41.917993,  
-            -156.219139  
+            47.4708025,  
+            -27.301033  
         ]  
     },  
     "address": {  
-        "streetAddress": "True market let believe wrong business allow. Woman later information suggest admit.",  
-        "addressLocality": "Run air when five still church certainly. Reflect short east late in line.",  
-        "addressRegion": "National office heart high them. Organization deal why wear important. Military effect Mrs floor environment skill detail.",  
-        "addressCountry": "Would throughout realize moment marriage want. Sense fight radio hold gun throw before.",  
-        "postalCode": "Save beautiful drive break down kitchen job. School state religious score development region.",  
-        "postOfficeBoxNumber": "Mention affect approach."  
+        "streetAddress": "Learn place",  
+        "addressLocality": "Wife however TV law fund. Paper beat five movie. Eight miss couple bag thank generation.",  
+        "addressRegion": "Pull save fine team effort. The drive figure necessary across manager.",  
+        "addressCountry": "True include management. Brother bank better she increase try. Partner stand next though house where.",  
+        "postalCode": "",  
+        "postOfficeBoxNumber": "Situation between run eat expect save process score. Into anyone his evening wife north director.",  
+        "streetNr": "Develop story drive million push. Health lose old case administration. Foreign one agent candidate how wish member.",  
+        "district": "Share sit simple notice. Dog car do his part."  
     },  
-    "areaServed": "Stuff conference chair during open expect fight. Investment she matter present back.",  
+    "areaServed": "Material truth pattern ago other majority final when. Present produce manager well lose finish summer.",  
+    "rt": [  
+        "oic.r.door"  
+    ],  
+    "openDuration": "P1710168910W264733215084615551330344341353172274567622193828821450614981840335945689055955212929777261D",  
+    "openState": "Open",  
+    "openAlarm": false,  
+    "n": "Size himself arrive although risk which",  
+    "if": [  
+        "oic.if.a",  
+        "oic.if.baseline"  
+    ],  
+    "type": "Door",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -279,82 +650,113 @@ Door:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Door:id:BPYU:35495736",  
+    "id": "urn:ngsi-ld:Door:id:TOAG:57173407",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1981-10-31T15:38:52Z"  
+            "@value": "1990-04-26T18:03:09Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1983-02-10T00:04:25Z"  
+            "@value": "1977-10-15T20:23:28Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Why discussion visit. Rest as himself situation around employee. Get blue nature late impact heart friend."  
+        "value": "Nation choose relationship likely question. Myself if place again establish. A huge three. Know second government the pull cultural."  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Time training significant key. Think benefit skin finally tend like structure also."  
+        "value": "Audience energy move. Morning eat turn clear."  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Better together high option effort. Necessary although interview opportunity trial stock. Central want raise morning."  
+        "value": "Executive care mission decision black. Idea sing small factor head pick church. High opportunity cause property."  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Feel parent next four sound statement list. Every seem remain society west term. Right share middle run theory reduce."  
+        "value": "Line indeed live reason five present art feel. Appear perform agent likely thousand act money. Rather bank we under."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Card scene notice. Center just four worker maintain conference."  
+        "value": "Guess break about. Their record road dinner seem. Course its respond himself former."  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Door:items:IMUY:85423080",  
-            "urn:ngsi-ld:Door:items:QZIH:12147561"  
+            "urn:ngsi-ld:Door:items:FOLZ:62728523",  
+            "urn:ngsi-ld:Door:items:SWBM:66763373"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Door:items:YQXT:11349906"  
+            "urn:ngsi-ld:Door:items:TJTC:03125023"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                -25.8682615,  
-                -34.601028  
+                47.4708025,  
+                -27.301033  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Hope somebody reveal chair model he step. Help scene treat should group serious. Plant series claim store arm family heart.",  
-            "addressLocality": "Option give house whose admit society. Meet away late beautiful billion thing field.",  
-            "addressRegion": "Shoulder student win my. Art part exist bank. For tell cup choice though.",  
-            "addressCountry": "Find authority whole heart. Professional trial hand seven raise. Learn democratic whether play car all.",  
-            "postalCode": "Minute small such away worry. Air window material fire sometimes these team best. Term best because indeed player summer visit.",  
-            "postOfficeBoxNumber": "Together international Republican owner upon me paper. Store force remember director three. Magazine five really become establish affect degree cause. On help certainly buy land through."  
+            "streetAddress": "Learn place",  
+            "addressLocality": "Wife however TV law fund. Paper beat five movie. Eight miss couple bag thank generation.",  
+            "addressRegion": "Pull save fine team effort. The drive figure necessary across manager.",  
+            "addressCountry": "True include management. Brother bank better she increase try. Partner stand next though house where.",  
+            "postalCode": "",  
+            "postOfficeBoxNumber": "Situation between run eat expect save process score. Into anyone his evening wife north director.",  
+            "streetNr": "Develop story drive million push. Health lose old case administration. Foreign one agent candidate how wish member.",  
+            "district": "Share sit simple notice. Dog car do his part."  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Talk respond sort group environmental. Cause court page type. When end study run loss activity responsibility."  
+        "value": "Material truth pattern ago other majority final when. Present produce manager well lose finish summer."  
     },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.door"  
+        ]  
+    },  
+    "openDuration": {  
+        "type": "Property",  
+        "value": "P1710168910W264733215084615551330344341353172274567622193828821450614981840335945689055955212929777261D"  
+    },  
+    "openState": {  
+        "type": "Property",  
+        "value": "Open"  
+    },  
+    "openAlarm": {  
+        "type": "Property",  
+        "value": false  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Size himself arrive although risk which"  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.a",  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "Door",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -362,7 +764,7 @@ Door:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-[FAQ 10](https://smartdatamodels.org/index.php/faqs/)을 참조하여 규모 단위를 다루는 방법에 대한 답변을 확인하세요.  
+10](https://smartdatamodels.org/index.php/faqs/)를 참조하여 규모 단위를 다루는 방법에 대한 답변을 확인하세요.  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
