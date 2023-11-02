@@ -1,34 +1,48 @@
 {
-  "id": "urn:ngsi-ld:LockCode:id:UAFO:32880755",
-  "dateCreated": "1973-11-19T13:11:24Z",
-  "dateModified": "1976-10-21T20:02:58Z",
-  "source": "Big their thing bank growth. Court adult matter structure. Ask focus artist young speak. Part actually song lead financial summer.",
-  "name": "Most case this be. Factor leader weight science firm miss bed if. Play still wait evidence however without.",
-  "alternateName": "Each kitchen soldier take if brother. Assume our article close couple school five issue. Lot policy maybe culture notice.",
-  "description": "Candidate why industry apply. Late official the represent window mind especially. Cultural rock need learn organization evening.",
-  "dataProvider": "Shake campaign culture church ok. Money thing agree. Hair few cause many some resource wide.",
-  "owner": [
-    "urn:ngsi-ld:LockCode:items:BPFG:16122473",
-    "urn:ngsi-ld:LockCode:items:KYAO:28376534"
-  ],
-  "seeAlso": [
-    "urn:ngsi-ld:LockCode:items:IQKM:49639880",
-    "urn:ngsi-ld:LockCode:items:HHKM:59980343"
-  ],
-  "location": {
-    "type": "Point",
-    "coordinates": [
-      40.5582215,
-      -6.700416
-    ]
-  },
-  "address": {
-    "streetAddress": "Fall would bar under. Soldier certain group expert could specific mouth off. World successful special ball adult yourself.",
-    "addressLocality": "Energy least many Democrat box occur.",
-    "addressRegion": "Certain large sort avoid cultural. Pay movement save from consumer turn.",
-    "addressCountry": "Worker theory speak truth. Tell college skill. Matter customer range none story likely.",
-    "postalCode": "Deep remember return energy employee mouth anyone full. Remember father ok figure record election rule simply. Maybe test vote result identify often growth.",
-    "postOfficeBoxNumber": "Wife what allow various high threat black war. Model million yourself. Either stand right suggest add however north."
-  },
-  "areaServed": "Hold state wait point camera marriage according. Newspaper partner teach rest candidate. Provide yard black pattern."
+    "id": "urn:ngsi-ld:LockCode:id:XTKB:17156589",
+    "dateCreated": "1995-03-22T09:46:16Z",
+    "dateModified": "1989-05-15T06:56:35Z",
+    "source": "Occur expert go feel de",
+    "name": "Suggest understand",
+    "alternateName": "They laugh note near during never happy.",
+    "description": "Fee",
+    "dataProvider": "Image color central floor particular make summer hand. ",
+    "owner": [
+        "urn:ngsi-ld:LockCode:items:HTRD:76227389",
+        "urn:ngsi-ld:LockCode:items:YGNR:67121480"
+    ],
+    "seeAlso": [
+        "urn:ngsi-ld:LockCode:items:OTTV:99825070"
+    ],
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            -60.885144,
+            -171.913549
+        ]
+    },
+    "address": {
+        "streetAddress": "Account summer debate two nothing.",
+        "addressLocality": "Organization road life tree. Foot state brother. Unit generation trade accept space.",
+        "addressRegion": "Agency now short recognize that have. Dog drop recent these media. Notice certainly and play ",
+        "addressCountry": "Those test full nice adult attorney. Class visit effort gas campaign.",
+        "postalCode": "Assume head open apply civil thank environment",
+        "postOfficeBoxNumber": "Prepare group imagine already none. Price next model value risk us. Professional",
+        "streetNr": "Throw prevent strategy hold include. Effort talk author up are",
+        "district": "Process design behavior room big ok college. Along effor"
+    },
+    "areaServed": "Apply pressure matter leave raise Democrat baby. Cut memory scientist activity",
+    "rt": [
+        "oic.r.lock.code"
+    ],
+    "lockCodeList": [
+        "Action fill yard send wrong. Including history phone to.",
+        "Prove almost at administration. Behind inv"
+    ],
+    "n": "Firm new rule p",
+    "if": [
+        "oic.if.a",
+        "oic.if.baseline"
+    ],
+    "type": "LockCode"
 }
