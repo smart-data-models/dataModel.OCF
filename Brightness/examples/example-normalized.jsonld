@@ -1,79 +1,102 @@
 {
-    "id": "urn:ngsi-ld:Brightness:id:RSNQ:68207834",
+    "id": "urn:ngsi-ld:Brightness:id:RPOQ:78156593",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2015-11-22T15:03:19Z"
+            "@value": "1987-09-23T13:42:57Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1984-04-26T19:36:27Z"
+            "@value": "1974-03-28T23:13:05Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Get more effort admit education far great. Note factor assume state civil attack. Hand all degree agency add."
+        "value": "Behavior style report. Ability management test during foot that course nothing. Sound central myself before year."
     },
     "name": {
         "type": "Property",
-        "value": "Decade size collection station tend blue. Exist fall major foot stay benefit north customer."
+        "value": "Board necessary religious natural sport music white. Natural explain before something first drug contain start."
     },
     "alternateName": {
         "type": "Property",
-        "value": "Green establish board forward itself site. Fear this toward."
+        "value": "Theory type successful together. Raise study modern miss dog Democrat quickly."
     },
     "description": {
         "type": "Property",
-        "value": "Happen network history fight half law. Wear rate place improve best. Health effect concern happen whose loss. Information action leave bar heavy support city cut."
+        "value": "Every manage political record word group food break. Picture suddenly drug rule bring determine some forward. Beyond chair recently and."
     },
     "dataProvider": {
         "type": "Property",
-        "value": "Sort hear walk close dark more get. Baby general candidate guy treat."
+        "value": "Own "
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:Brightness:items:KFXN:87184809",
-            "urn:ngsi-ld:Brightness:items:FIHS:96874543"
+            "urn:ngsi-ld:Brightness:items:UJLN:86914131",
+            "urn:ngsi-ld:Brightness:items:GILX:20870916"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:Brightness:items:RCAP:18990801"
+            "urn:ngsi-ld:Brightness:items:QIDT:79230225"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                -36.083538,
-                -0.107567
+                28.732768,
+                177.344405
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "Wait myself upon huge coach decide allow decade. One without improve drive across security also imagine. Trade early challenge ok job blue.",
-            "addressLocality": "Example hour already rise reduce again everybody degree. Onto range campaign research night. Share white single case get international.",
-            "addressRegion": "Manager together personal all. Back trip receive bill.",
-            "addressCountry": "Beautiful recent herself beyond game major into. Explain society dream day history record change speech. Those under direction.",
-            "postalCode": "Husband support clearly once new only. Visit establish between identify attorney. Every week federal describe best building prove day.",
-            "postOfficeBoxNumber": "Theory expert miss live. Sense information become detail."
+            "streetAddress": "Likely improve notice. True power home price check real leader.",
+            "addressLocality": "School name care several loss particular. Opportunity throughout take car financial security.",
+            "addressRegion": "Organization recognize civil. Pm her then nothing increase.",
+            "addressCountry": "Industry product another knowledge else citizen month. Traditional page a although for study anyone. Could yourself plan base rise would.",
+            "postalCode": "First degree response able state more. Couple part cup few. Beyond take however ball.",
+            "postOfficeBoxNumber": "Son break either president stage population boy. Everything affect America",
+            "streetNr": "Water voice travel among see red. Republican total policy hea",
+            "district": "Full per among clearly. Face house nature fall long dream answer confere"
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "Budget fire country discover travel."
+        "value": "Buy break marriage also friend reach. Turn phone heart window. Assume be seek article."
     },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.light.brightness"
+        ]
+    },
+    "brightness": {
+        "type": "Property",
+        "value": 49
+    },
+    "n": {
+        "type": "Property",
+        "value": "Else memory if. Whose group through de"
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.a",
+            "oic.if.baseline"
+        ]
+    },
+    "type": "Brightness",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
