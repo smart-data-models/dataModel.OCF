@@ -1,76 +1,78 @@
 {
-    "id": "urn:ngsi-ld:DRLC:id:XRYK:72373882",
+    "id": "urn:ngsi-ld:DRLC:id:GQEJ:48764759",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1984-11-10T01:19:28Z"
+            "@value": "1979-07-06T09:36:23Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2019-04-01T13:43:00Z"
+            "@value": "2021-06-07T14:46:20Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Role seat coach. Everything if kid spend really single. Song together shoulder heavy walk between hospital."
+        "value": "Son would mouth relate own chair better available. Line beyond its particularly tree whom."
     },
     "name": {
         "type": "Property",
-        "value": "Whose choice best population speak newspaper. Read four citizen manage drop."
+        "value": "Tend employee source nature add rest. Report size personal partner stock four. Region as true develop sound central."
     },
     "alternateName": {
         "type": "Property",
-        "value": "Recently a because impact create. Peace common but name notice hundred affect. Research question campaign black take great."
+        "value": "Before year themselves your majority feeling fact. Natural sport music white. Na"
     },
     "description": {
         "type": "Property",
-        "value": "Pull country consider heavy pretty. American produce evening by interview finish. He leg war fear."
+        "value": "Wonder employee attorney quickly candidate change although bag."
     },
     "dataProvider": {
         "type": "Property",
-        "value": "He thank add second pressure teach forward rate. Picture force long avoid figure would. Throw high direction type vote."
+        "value": "Study modern miss dog Democrat quickly. Often late produce you true soldier. Food break onto friend."
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:DRLC:items:RAVC:41248553",
-            "urn:ngsi-ld:DRLC:items:JIRT:96354185"
+            "urn:ngsi-ld:DRLC:items:KNBD:33041352",
+            "urn:ngsi-ld:DRLC:items:DUGT:23098910"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:DRLC:items:WSDX:92810352"
+            "urn:ngsi-ld:DRLC:items:AGFW:91615109"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                5.129012,
-                103.296499
+                -56.7421445,
+                77.286609
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "Unit admit common seem power office find. Indeed number accept range million hotel use. Government especially prevent other growth color certainly. Policy these simple position check simply letter.",
-            "addressLocality": "Year century as ok. Hotel treatment stop quickly computer. Least picture another.",
-            "addressRegion": "Yes unit century hair ok live part sell. Quickly road town large think return.",
-            "addressCountry": "Successful prove seem building close front different always. Statement real science anyone realize quality.",
-            "postalCode": "During table either after him religious. Hard heavy anyone modern.",
-            "postOfficeBoxNumber": "You church black. Hear game ok treatment prepare item."
+            "streetAddress": "Vie",
+            "addressLocality": "Others record hospital. Grow rule stuff truth college. Whom around put suddenly garden.",
+            "addressRegion": "Others kind company likely. Tonight",
+            "addressCountry": "Real leader bad school name care several. Good explain grow water plant perform resource.",
+            "postalCode": "Stock ball organization recognize civil development. Her then nothing increase I reduce industr",
+            "postOfficeBoxNumber": "Those traditional page a al",
+            "streetNr": "Wear individual about add senior woman.",
+            "district": "Best budget power them evi"
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "Of owner hold over them wonder. Chance represent at news country."
+        "value": "Fire happen nothing support suffer which parent. Republican total policy head Mrs debate onto."
     },
     "rt": {
         "type": "Property",
@@ -82,24 +84,24 @@
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2010-05-18T22:28:57Z"
+            "@value": "1979-06-04T08:47:18Z"
         }
     },
     "duration": {
         "type": "Property",
-        "value": 88
+        "value": 864
     },
     "override": {
         "type": "Property",
-        "value": true
+        "value": false
     },
     "DRType": {
         "type": "Property",
-        "value": 118
+        "value": 864
     },
     "drlevel": {
         "type": "Property",
-        "value": 1
+        "value": 3
     },
     "mandate": {
         "type": "Property",
@@ -107,18 +109,17 @@
     },
     "n": {
         "type": "Property",
-        "value": "In do instead style number resource. Truth game official want."
+        "value": "Whole magazine truth stop whose."
     },
     "if": {
         "type": "Property",
         "value": [
-            "oic.if.a",
+            "oic.if.baseline",
             "oic.if.a"
         ]
     },
     "type": "DRLC",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
