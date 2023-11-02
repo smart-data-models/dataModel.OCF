@@ -1,80 +1,82 @@
 {
-    "id": "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:id:AIIG:74958910",
+    "id": "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:id:XDQX:30731712",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2007-01-18T12:32:22Z"
+            "@value": "1993-10-06T07:15:17Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1984-03-30T06:35:44Z"
+            "@value": "1983-07-24T10:41:21Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Article mention some agree field western standard. Professor describe hot interesting. First side main source woman."
+        "value": "Out husband human left. List "
     },
     "name": {
         "type": "Property",
-        "value": "Want experience different parent. Director rather subject my husband goal risk. Enjoy direction task wait."
+        "value": "Someone top girl do safe glass instead. Girl consider condition television work audience."
     },
     "alternateName": {
         "type": "Property",
-        "value": "Authority study describe. Key agency away blood heart police. Offer program study foreign."
+        "value": "Throughout traditional east quality. Amount TV chance shoulder speak line."
     },
     "description": {
         "type": "Property",
-        "value": "Practice large shoulder feeling. Administration happy live into drive cause. Outside face expert kitchen agent guess hope. Road future finish tree will."
+        "value": "Who who smile. Stage challenge respond above at under score."
     },
     "dataProvider": {
         "type": "Property",
-        "value": "Contain them positive discussion tough free. Number keep oil box big activity table never. Consider let western receive economy."
+        "value": "Until build heart seem throughout."
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:IUDT:75300031",
-            "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:FDEE:72612683"
+            "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:CNMY:18920441",
+            "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:PPTV:53147945"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:RGOV:72508868"
+            "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:MBSH:12361960"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                61.4283155,
-                63.567087
+                -8.503401,
+                9.432166
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "Affect accept local single. College cost couple. Customer safe dream cold final star.",
-            "addressLocality": "Minute church pass believe even song. Shake wind boy animal story everyone. Adult at top responsibility head dog generation.",
-            "addressRegion": "Choice color western animal myself bring. Hear serious food garden. Key remember area kid recognize.",
-            "addressCountry": "Democratic trip glass quality eye. Marriage glass reveal state huge article. Keep minute rule those identify high ever.",
-            "postalCode": "Us push food effect party mouth likely. Oil cold box final stand.",
-            "postOfficeBoxNumber": "Technology fear throughout wife give realize. Organization write task in while senior. Or area spring size second hour evidence."
+            "streetAddress": "Money total health college end choose. Although half improve.",
+            "addressLocality": "Perform executive American",
+            "addressRegion": "Factor data those reveal. Affect information small edge ",
+            "addressCountry": "Where song attention feel list bar own. Owner main shake receive. Financial from soon enough.",
+            "postalCode": "May sea compare magazine discover around brother. International yeah",
+            "postOfficeBoxNumber": "Teach fact movie pay. Treat reflect live investment gun career. Trade body there now however blue. Evidence operation occur somebody so staff along.",
+            "streetNr": "Laugh office employee write amount once deal. Might mission within scientist condition. Especia",
+            "district": "Edge receive write trade scientist organization about first. Response agent vote before. Day population thus answer machine peace."
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "Take record treatment area response. System rock wear particular sport sea."
+        "value": "Heart list who because could down billion. Only discuss mean deep point audience who. Help quality film feeling record city appear."
     },
     "interval": {
         "type": "Property",
-        "value": 76.1
+        "value": 0.4
     },
     "rt": {
         "type": "Property",
@@ -84,7 +86,7 @@
     },
     "n": {
         "type": "Property",
-        "value": "Believe marriage career cut war I. Behavior resource since field put. Art again miss director let. Hundred anyone energy city let day sit."
+        "value": "Generation med"
     },
     "if": {
         "type": "Property",
@@ -95,21 +97,20 @@
     "range": {
         "type": "Property",
         "value": [
-            776.9,
-            500.2
+            538.0,
+            453.8
         ]
     },
     "step": {
         "type": "Property",
-        "value": 403.2
+        "value": 840.6
     },
     "precision": {
         "type": "Property",
-        "value": 79.5
+        "value": 233.7
     },
     "type": "ContinuousGlucoseMeterSamplingInterval",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
