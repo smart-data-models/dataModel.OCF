@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: The post office box number for PO box addresses. For example, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: The postal code. For example, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: The street address  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Number identifying a specific property on a public street    
 - `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `cgmstatus[string]`: This Property describes the specific notifications given by the CGM device including, but not limited to, warnings, errors, and handling events  - `cgmtype[string]`: This Property describes the CGM measurement type  - `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity  - `dateCreated[date-time]`: Entity creation timestamp. This will usually be allocated by the storage platform  - `dateModified[date-time]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform  - `description[string]`: A description of this item  - `gtrend[number]`: This Property describes the rate of change in glucose measurements at a time instant  - `id[*]`: Unique identifier of the entity  - `if[array]`: The OCF Interface set supported by this Resource  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `malfunction[boolean]`: This Property describes the sensor malfunction detection check  - `n[string]`: Friendly name of the Resource  - `name[string]`: The name of this item  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `precision[number]`: When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision  - `range[array]`: The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value  - `rt[array]`: The Resource Type  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object  - `step[number]`: Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0  - `type[string]`: NGSI entity type. It has to be ContinuousGlucoseMeterStatus  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Required properties  
@@ -472,70 +473,57 @@ ContinuousGlucoseMeterStatus:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:ContinuousGlucoseMeterStatus:id:FOLL:67268630",  
-  "dateCreated": "1998-10-08T22:16:19Z",  
-  "dateModified": "2006-11-21T05:20:19Z",  
-  "source": "Same leg mention interesting throughout lay.",  
-  "name": "Interest time want they lot sing air. Poor system event writer. Prepare difficult card structure form present.",  
-  "alternateName": "Mean first real upon maintain choice actually woman. Possible term mind coach whole campaign.",  
-  "description": "Energy factor join research. Produce ball best son. Want huge big beat guess generation. Perform ahead national do.",  
-  "dataProvider": "Relationship difficult rather. Sit she help Republican ability court above state. Maybe mouth image. Born but pretty price father.",  
-  "owner": [  
-    "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:SHYQ:93356123",  
-    "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:EKNP:26634712"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:AIWB:97278201",  
-    "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:MDYT:32462764"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      58.850143,  
-      165.413238  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Whom common travel cost laugh start. Cultural general operation operation.",  
-    "addressLocality": "Material technology machine just. Single team produce your practice program leg. Card ask medical.",  
-    "addressRegion": "Describe cold piece hospital tough amount right traditional. Game try various mean her rule.",  
-    "addressCountry": "Do table fast check pay when argue deep.",  
-    "postalCode": "Final center but station actually under. Day figure be mother. Town officer skill drug huge each.",  
-    "postOfficeBoxNumber": "Old specific star attorney walk put people. Eat better road ok state energy."  
-  },  
-  "areaServed": "Draw north series leader. Such tell responsibility defense. Weight star hundred set pretty leave.",  
-  "cgmtype": "Interstitial Fluid",  
-  "cgmstatus": "Serve laugh center base development determine. Way someone opportunity realize around management stay.",  
-  "gtrend": {  
-    "type": "Property",  
-    "value": 912.7  
-  },  
-  "malfunction": {  
-    "type": "Property",  
-    "value": true  
-  },  
-  "rt": [  
-    "oic.r.cgm.status",  
-    "oic.r.cgm.status"  
-  ],  
-  "n": "About record want position they argue may. Action recognize must imagine fund leg security. Able rise surface first.",  
-  "if": [  
-    "oic.if.s",  
-    "oic.if.baseline"  
-  ],  
-  "range": [  
-    994.5,  
-    959.4  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 185.6  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 204.8  
-  },  
-  "type": "ContinuousGlucoseMeterStatus"  
+    "id": "urn:ngsi-ld:ContinuousGlucoseMeterStatus:id:KHCJ:93310505",  
+    "dateCreated": "1984-10-26T16:58:05Z",  
+    "dateModified": "2007-09-13T05:46:42Z",  
+    "source": "Notice reflect edge against. My woman during response economic these. Civil we green enough allow pass.",  
+    "name": "Modern ago sure statement sense pressure this. Those family interesting how environment.",  
+    "alternateName": "Decide student like boa",  
+    "description": "Voice TV almost scene.",  
+    "dataProvider": "Mrs late would. Have there air until. Really everybody necessary increase specific",  
+    "owner": [  
+        "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:TROU:92706769",  
+        "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:JEKY:64511844"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:PKWO:52183801"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            43.241175,  
+            -134.642422  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Idea sort gun another white. Current concern exist structure. Sign role fund cost meeting have travel so.",  
+        "addressLocality": "Not treatment push will beat value. Seek across suddenly example sister almost security. Cause guess listen individual mother build wife.",  
+        "addressRegion": "Threat",  
+        "addressCountry": "If wonder rate want inside send rich.",  
+        "postalCode": "Heart Republican series ever thousand morning.",  
+        "postOfficeBoxNumber": "Condition imagine follow check. Conference budget true claim deep. Whether soon husband as investment nearly.",  
+        "streetNr": "End avoid safe ground traditional rise course. Receive news save low.",  
+        "district": "Next quality teacher require data so. Old quality shake growth mention. Many project forget address artist sim"  
+    },  
+    "areaServed": "Next audience general whole clearly also star. This important rate land. Oil course from sing.",  
+    "cgmtype": "Capillary Plasma",  
+    "cgmstatus": "Reach task action anything benefit grow th",  
+    "gtrend": 907.8,  
+    "malfunction": true,  
+    "rt": [  
+        "oic.r.cgm.status"  
+    ],  
+    "n": "Lead new trade special ",  
+    "if": [  
+        "oic.if.s"  
+    ],  
+    "range": [  
+        995.2,  
+        139.8  
+    ],  
+    "step": 772.1,  
+    "precision": 662.2,  
+    "type": "ContinuousGlucoseMeterStatus"  
 }  
 ```  
 </details>  
@@ -544,144 +532,123 @@ ContinuousGlucoseMeterStatus:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:ContinuousGlucoseMeterStatus:id:FOLL:67268630"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1998-10-08T22:16:19Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2006-11-21T05:20:19Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Same leg mention interesting throughout lay."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Interest time want they lot sing air. Poor system event writer. Prepare difficult card structure form present."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Mean first real upon maintain choice actually woman. Possible term mind coach whole campaign."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Energy factor join research. Produce ball best son. Want huge big beat guess generation. Perform ahead national do."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Relationship difficult rather. Sit she help Republican ability court above state. Maybe mouth image. Born but pretty price father."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:SHYQ:93356123",  
-      "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:EKNP:26634712"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:AIWB:97278201",  
-      "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:MDYT:32462764"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        58.850143,  
-        165.413238  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Whom common travel cost laugh start. Cultural general operation operation.",  
-      "addressLocality": "Material technology machine just. Single team produce your practice program leg. Card ask medical.",  
-      "addressRegion": "Describe cold piece hospital tough amount right traditional. Game try various mean her rule.",  
-      "addressCountry": "Do table fast check pay when argue deep.",  
-      "postalCode": "Final center but station actually under. Day figure be mother. Town officer skill drug huge each.",  
-      "postOfficeBoxNumber": "Old specific star attorney walk put people. Eat better road ok state energy."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Draw north series leader. Such tell responsibility defense. Weight star hundred set pretty leave."  
-  },  
-  "cgmtype": {  
-    "type": "string",  
-    "value": "Interstitial Fluid"  
-  },  
-  "cgmstatus": {  
-    "type": "string",  
-    "value": "Serve laugh center base development determine. Way someone opportunity realize around management stay."  
-  },  
-  "gtrend": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 912.7  
-    }  
-  },  
-  "malfunction": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": true  
-    }  
-  },  
-  "rt": {  
-    "type": "array",  
-    "value": [  
-      "oic.r.cgm.status",  
-      "oic.r.cgm.status"  
-    ]  
-  },  
-  "n": {  
-    "type": "string",  
-    "value": "About record want position they argue may. Action recognize must imagine fund leg security. Able rise surface first."  
-  },  
-  "if": {  
-    "type": "array",  
-    "value": [  
-      "oic.if.s",  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "range": {  
-    "type": "array",  
-    "value": [  
-      994.5,  
-      959.4  
-    ]  
-  },  
-  "step": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 185.6  
-    }  
-  },  
-  "precision": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 204.8  
-    }  
-  },  
-  "type": {  
-    "type": "string",  
-    "value": "ContinuousGlucoseMeterStatus"  
-  }  
+    "id": "urn:ngsi-ld:ContinuousGlucoseMeterStatus:id:KHCJ:93310505",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1984-10-26T16:58:05Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "2007-09-13T05:46:42Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Notice reflect edge against. My woman during response economic these. Civil we green enough allow pass."  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Modern ago sure statement sense pressure this. Those family interesting how environment."  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Decide student like boa"  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Voice TV almost scene."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Mrs late would. Have there air until. Really everybody necessary increase specific"  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:TROU:92706769",  
+            "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:JEKY:64511844"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:PKWO:52183801"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                43.241175,  
+                -134.642422  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Idea sort gun another white. Current concern exist structure. Sign role fund cost meeting have travel so.",  
+            "addressLocality": "Not treatment push will beat value. Seek across suddenly example sister almost security. Cause guess listen individual mother build wife.",  
+            "addressRegion": "Threat",  
+            "addressCountry": "If wonder rate want inside send rich.",  
+            "postalCode": "Heart Republican series ever thousand morning.",  
+            "postOfficeBoxNumber": "Condition imagine follow check. Conference budget true claim deep. Whether soon husband as investment nearly.",  
+            "streetNr": "End avoid safe ground traditional rise course. Receive news save low.",  
+            "district": "Next quality teacher require data so. Old quality shake growth mention. Many project forget address artist sim"  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Next audience general whole clearly also star. This important rate land. Oil course from sing."  
+    },  
+    "cgmtype": {  
+        "type": "Text",  
+        "value": "Capillary Plasma"  
+    },  
+    "cgmstatus": {  
+        "type": "Text",  
+        "value": "Reach task action anything benefit grow th"  
+    },  
+    "gtrend": {  
+        "type": "Number",  
+        "value": 907.8  
+    },  
+    "malfunction": {  
+        "type": "Boolean",  
+        "value": true  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.cgm.status"  
+        ]  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Lead new trade special "  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.s"  
+        ]  
+    },  
+    "range": {  
+        "type": "StructuredValue",  
+        "value": [  
+            995.2,  
+            139.8  
+        ]  
+    },  
+    "step": {  
+        "type": "Number",  
+        "value": 772.1  
+    },  
+    "precision": {  
+        "type": "Number",  
+        "value": 662.2  
+    },  
+    "type": "ContinuousGlucoseMeterStatus"  
 }  
 ```  
 </details>  
@@ -690,73 +657,59 @@ ContinuousGlucoseMeterStatus:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:ContinuousGlucoseMeterStatus:id:FOLL:67268630",  
-    "dateCreated": "1998-10-08T22:16:19Z",  
-    "dateModified": "2006-11-21T05:20:19Z",  
-    "source": "Same leg mention interesting throughout lay.",  
-    "name": "Interest time want they lot sing air. Poor system event writer. Prepare difficult card structure form present.",  
-    "alternateName": "Mean first real upon maintain choice actually woman. Possible term mind coach whole campaign.",  
-    "description": "Energy factor join research. Produce ball best son. Want huge big beat guess generation. Perform ahead national do.",  
-    "dataProvider": "Relationship difficult rather. Sit she help Republican ability court above state. Maybe mouth image. Born but pretty price father.",  
+    "id": "urn:ngsi-ld:ContinuousGlucoseMeterStatus:id:KHCJ:93310505",  
+    "dateCreated": "1984-10-26T16:58:05Z",  
+    "dateModified": "2007-09-13T05:46:42Z",  
+    "source": "Notice reflect edge against. My woman during response economic these. Civil we green enough allow pass.",  
+    "name": "Modern ago sure statement sense pressure this. Those family interesting how environment.",  
+    "alternateName": "Decide student like boa",  
+    "description": "Voice TV almost scene.",  
+    "dataProvider": "Mrs late would. Have there air until. Really everybody necessary increase specific",  
     "owner": [  
-        "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:SHYQ:93356123",  
-        "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:EKNP:26634712"  
+        "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:TROU:92706769",  
+        "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:JEKY:64511844"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:AIWB:97278201",  
-        "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:MDYT:32462764"  
+        "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:PKWO:52183801"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            58.850143,  
-            165.413238  
+            43.241175,  
+            -134.642422  
         ]  
     },  
     "address": {  
-        "streetAddress": "Whom common travel cost laugh start. Cultural general operation operation.",  
-        "addressLocality": "Material technology machine just. Single team produce your practice program leg. Card ask medical.",  
-        "addressRegion": "Describe cold piece hospital tough amount right traditional. Game try various mean her rule.",  
-        "addressCountry": "Do table fast check pay when argue deep.",  
-        "postalCode": "Final center but station actually under. Day figure be mother. Town officer skill drug huge each.",  
-        "postOfficeBoxNumber": "Old specific star attorney walk put people. Eat better road ok state energy."  
+        "streetAddress": "Idea sort gun another white. Current concern exist structure. Sign role fund cost meeting have travel so.",  
+        "addressLocality": "Not treatment push will beat value. Seek across suddenly example sister almost security. Cause guess listen individual mother build wife.",  
+        "addressRegion": "Threat",  
+        "addressCountry": "If wonder rate want inside send rich.",  
+        "postalCode": "Heart Republican series ever thousand morning.",  
+        "postOfficeBoxNumber": "Condition imagine follow check. Conference budget true claim deep. Whether soon husband as investment nearly.",  
+        "streetNr": "End avoid safe ground traditional rise course. Receive news save low.",  
+        "district": "Next quality teacher require data so. Old quality shake growth mention. Many project forget address artist sim"  
     },  
-    "areaServed": "Draw north series leader. Such tell responsibility defense. Weight star hundred set pretty leave.",  
-    "cgmtype": "Interstitial Fluid",  
-    "cgmstatus": "Serve laugh center base development determine. Way someone opportunity realize around management stay.",  
-    "gtrend": {  
-        "type": "Property",  
-        "value": 912.7  
-    },  
-    "malfunction": {  
-        "type": "Property",  
-        "value": true  
-    },  
+    "areaServed": "Next audience general whole clearly also star. This important rate land. Oil course from sing.",  
+    "cgmtype": "Capillary Plasma",  
+    "cgmstatus": "Reach task action anything benefit grow th",  
+    "gtrend": 907.8,  
+    "malfunction": true,  
     "rt": [  
-        "oic.r.cgm.status",  
         "oic.r.cgm.status"  
     ],  
-    "n": "About record want position they argue may. Action recognize must imagine fund leg security. Able rise surface first.",  
+    "n": "Lead new trade special ",  
     "if": [  
-        "oic.if.s",  
-        "oic.if.baseline"  
+        "oic.if.s"  
     ],  
     "range": [  
-        994.5,  
-        959.4  
+        995.2,  
+        139.8  
     ],  
-    "step": {  
-        "type": "Property",  
-        "value": 185.6  
-    },  
-    "precision": {  
-        "type": "Property",  
-        "value": 204.8  
-    },  
+    "step": 772.1,  
+    "precision": 662.2,  
     "type": "ContinuousGlucoseMeterStatus",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -766,90 +719,92 @@ ContinuousGlucoseMeterStatus:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:ContinuousGlucoseMeterStatus:id:GEYM:33511226",  
+    "id": "urn:ngsi-ld:ContinuousGlucoseMeterStatus:id:KHCJ:93310505",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1970-01-31T04:25:22Z"  
+            "@value": "1984-10-26T16:58:05Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2013-03-06T21:48:48Z"  
+            "@value": "2007-09-13T05:46:42Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Son picture nice floor staff. Remember rest rather certainly education light trip."  
+        "value": "Notice reflect edge against. My woman during response economic these. Civil we green enough allow pass."  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Appear present citizen plan town light. Success sign near hot. Receive visit energy interview look total production."  
+        "value": "Modern ago sure statement sense pressure this. Those family interesting how environment."  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Institution exist class. Tax Mrs news gas join especially easy. Fight about religious price school."  
+        "value": "Decide student like boa"  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Enough local particularly capital show simply. Perform management type director. Statement central across bit class give."  
+        "value": "Voice TV almost scene."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Benefit able affect director upon sense happen. Yard born term set task cause between sure."  
+        "value": "Mrs late would. Have there air until. Really everybody necessary increase specific"  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:CWSI:41736479",  
-            "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:EEOO:71067269"  
+            "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:TROU:92706769",  
+            "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:JEKY:64511844"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:ARZK:43891632"  
+            "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:PKWO:52183801"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                -29.772074,  
-                114.010154  
+                43.241175,  
+                -134.642422  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Can model hour give inside strong husband. Theory question evening step fast create. Eye remember industry than.",  
-            "addressLocality": "History long story I must. Bag campaign begin factor art prevent civil.",  
-            "addressRegion": "Process unit however north yet.",  
-            "addressCountry": "Law but live measure. Staff man mention buy billion develop these green. Most attention forget evidence idea show.",  
-            "postalCode": "Cell charge direction here them sure involve. Both hotel create challenge follow federal second.",  
-            "postOfficeBoxNumber": "She magazine loss themselves. And fear operation ready should democratic. Reflect serious during term decision heavy which."  
+            "streetAddress": "Idea sort gun another white. Current concern exist structure. Sign role fund cost meeting have travel so.",  
+            "addressLocality": "Not treatment push will beat value. Seek across suddenly example sister almost security. Cause guess listen individual mother build wife.",  
+            "addressRegion": "Threat",  
+            "addressCountry": "If wonder rate want inside send rich.",  
+            "postalCode": "Heart Republican series ever thousand morning.",  
+            "postOfficeBoxNumber": "Condition imagine follow check. Conference budget true claim deep. Whether soon husband as investment nearly.",  
+            "streetNr": "End avoid safe ground traditional rise course. Receive news save low.",  
+            "district": "Next quality teacher require data so. Old quality shake growth mention. Many project forget address artist sim"  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Environment machine back central let deep race. Material cost yard like bank."  
+        "value": "Next audience general whole clearly also star. This important rate land. Oil course from sing."  
     },  
     "cgmtype": {  
         "type": "Property",  
-        "value": "Capillary Whole blood"  
+        "value": "Capillary Plasma"  
     },  
     "cgmstatus": {  
         "type": "Property",  
-        "value": "Name thousand great cell. Last action bed executive financial. Foot read environment film able trial could."  
+        "value": "Reach task action anything benefit grow th"  
     },  
     "gtrend": {  
         "type": "Property",  
-        "value": 620.2  
+        "value": 907.8  
     },  
     "malfunction": {  
         "type": "Property",  
@@ -863,7 +818,7 @@ ContinuousGlucoseMeterStatus:
     },  
     "n": {  
         "type": "Property",  
-        "value": "Audience study meet today need international. Material Mrs plant part watch trip build professor. Protect your risk letter floor article nature."  
+        "value": "Lead new trade special "  
     },  
     "if": {  
         "type": "Property",  
@@ -874,22 +829,21 @@ ContinuousGlucoseMeterStatus:
     "range": {  
         "type": "Property",  
         "value": [  
-            263.0,  
-            342.7  
+            995.2,  
+            139.8  
         ]  
     },  
     "step": {  
         "type": "Property",  
-        "value": 563.4  
+        "value": 772.1  
     },  
     "precision": {  
         "type": "Property",  
-        "value": 498.0  
+        "value": 662.2  
     },  
     "type": "ContinuousGlucoseMeterStatus",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
