@@ -1,56 +1,47 @@
 {
-  "id": "urn:ngsi-ld:valueconditional:id:BISX:77681840",
-  "dateCreated": "1997-11-18T18:13:36Z",
-  "dateModified": "2015-01-18T22:14:58Z",
-  "source": "Body old owner tend mention age.",
-  "name": "Effect apply table. Purpose natural center clearly pay. Show just per light.",
-  "alternateName": "Respond fear piece military. South life both school operation how which. Without event generation television believe avoid. Chair though thus north.",
-  "description": "Statement list method. Tv guy production ever. Record picture eye recent. Media face charge water.",
-  "dataProvider": "Him particularly tell body school. Push fast during beyond factor.",
-  "owner": [
-    "urn:ngsi-ld:valueconditional:items:OUAM:46082102",
-    "urn:ngsi-ld:valueconditional:items:IVSZ:02100459"
-  ],
-  "seeAlso": [
-    "urn:ngsi-ld:valueconditional:items:CVRL:46090390",
-    "urn:ngsi-ld:valueconditional:items:XDVQ:18129772"
-  ],
-  "location": {
-    "type": "Point",
-    "coordinates": [
-      -1.3326215,
-      -35.006362
-    ]
-  },
-  "address": {
-    "streetAddress": "Able red glass sure southern rather carry author.",
-    "addressLocality": "Authority war over before a TV plan. Give we account air. Deal result first federal page.",
-    "addressRegion": "Growth outside stage its share movie. Voice remain so could student. Leave black without.",
-    "addressCountry": "Site key available amount art their safe. Most market mission civil. Serve treat collection seat food condition. Upon expert cold TV throw federal.",
-    "postalCode": "Nation wonder pattern suffer worker only play. Six catch area less crime fine international.",
-    "postOfficeBoxNumber": "Push live term seven despite condition teach."
-  },
-  "areaServed": "Hold exist quickly debate dark. Play American certainly seek very we data.",
-  "rt": [
-    "oic.r.value.conditional",
-    "oic.r.value.conditional"
-  ],
-  "maxnotifyperiod": {
-    "type": "Property",
-    "value": 864
-  },
-  "minnotifyperiod": {
-    "type": "Property",
-    "value": 864
-  },
-  "threshold": {
-    "type": "Property",
-    "value": 515.9
-  },
-  "n": "Raise occur movie mention central. Factor control whether. Brother prevent recent close.",
-  "if": [
-    "oic.if.rw",
-    "oic.if.baseline"
-  ],
-  "type": "valueconditional"
+    "id": "urn:ngsi-ld:valueconditional:id:SDEW:33209754",
+    "dateCreated": "2019-01-19T07:29:26Z",
+    "dateModified": "1972-12-15T08:21:08Z",
+    "source": "Continue short person operation serve happy small.",
+    "name": "Know thousand food true challenge.",
+    "alternateName": "Sea get special senior. New administration its former indeed image.",
+    "description": "Admit between century. Effect shoulder send rest society recently suggest. Go outside article reach.",
+    "dataProvider": "Deep weight small who day worker lawyer child. Painting again seek whole level you. Space nor identify head exactly.",
+    "owner": [
+        "urn:ngsi-ld:valueconditional:items:RVGE:20842271",
+        "urn:ngsi-ld:valueconditional:items:GWWR:44594825"
+    ],
+    "seeAlso": [
+        "urn:ngsi-ld:valueconditional:items:ICEL:92972708"
+    ],
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            -75.679866,
+            -97.238743
+        ]
+    },
+    "address": {
+        "streetAddress": "Dark manage camera according upon easy sur",
+        "addressLocality": "Difficult space issue federal. Daughter understand color",
+        "addressRegion": "Child protect cut everybody important answer total those. Bank point deep nation about move herself modern.",
+        "addressCountry": "Region prev",
+        "postalCode": "Whom step actually for dark toward. Situation per likely teacher like appear ability agent. Family propert",
+        "postOfficeBoxNumber": "Performance meeting drop anything yourself black military. Whether from book professional walk if. Federal various wife lawyer choose data.",
+        "streetNr": "Project thus artist radio management remember. Push will recent become along. Under act half about know yeah.",
+        "district": "Piec"
+    },
+    "areaServed": "Bit bank picture six. Fall strong tough material. Few pressure many guy he world deep. Into claim try.",
+    "rt": [
+        "oic.r.value.conditional"
+    ],
+    "maxnotifyperiod": 864,
+    "minnotifyperiod": 864,
+    "threshold": 984.9,
+    "n": "Couple child candidate. Un",
+    "if": [
+        "oic.if.rw",
+        "oic.if.baseline"
+    ],
+    "type": "valueconditional"
 }
