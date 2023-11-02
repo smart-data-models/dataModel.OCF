@@ -1,79 +1,159 @@
 {
-    "id": "urn:ngsi-ld:Sleep:id:DEWW:30338193",
+    "id": "urn:ngsi-ld:Sleep:id:EOXI:64784328",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1988-01-12T23:48:03Z"
+            "@value": "2012-05-08T18:33:40Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2007-07-28T08:40:23Z"
+            "@value": "2017-08-05T04:09:21Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Agree daughter finally morning less share than. Choose training between bring town. Door truth upon upon."
+        "value": "Experience somebody democratic happen form. Born recently field. Answer activity image control difficult value simple."
     },
     "name": {
         "type": "Property",
-        "value": "Position keep forward crime reach. Especially wish paper."
+        "value": "Know myself treat include fund blood and. Himself population pull partner walk vote."
     },
     "alternateName": {
         "type": "Property",
-        "value": "Significant concern significant local concern represent particularly serious. Others above onto no. Lawyer hard able two thus oil sit action."
+        "value": "Sport effort race seven million energy hotel. Treat sign card market least court American particular. Computer put quite hospital walk score."
     },
     "description": {
         "type": "Property",
-        "value": "Matter raise goal my. Into send what."
+        "value": ""
     },
     "dataProvider": {
         "type": "Property",
-        "value": "American protect material. Three realize leader watch entire material."
+        "value": "Want person season form model thought song head. Picture himself realize far your art mouth real. Low or born enter."
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:Sleep:items:ORVF:05537533",
-            "urn:ngsi-ld:Sleep:items:EZSB:78221686"
+            "urn:ngsi-ld:Sleep:items:EVHF:32347913",
+            "urn:ngsi-ld:Sleep:items:QUUJ:68624316"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:Sleep:items:UJRS:30722806"
+            "urn:ngsi-ld:Sleep:items:BYWE:96773582"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                -86.6050775,
-                -132.16776
+                -43.8165545,
+                170.462299
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "Successful better perform job deal. Work concern require join opportunity magazine general. Occur determine firm nice school. Activity create central executive.",
-            "addressLocality": "Imagine quality last purpose. Sound like catch population writer. Possible establish provide. Less strong certainly visit open.",
-            "addressRegion": "Successful according meet hear recent well. Now policy lay democratic he something important.",
-            "addressCountry": "Something edge pressure wide six suffer. Age consider specific foreign measure. Fly those huge general future hand woman.",
-            "postalCode": "Between return long rest her best prepare relationship. Instead set art sport quickly.",
-            "postOfficeBoxNumber": "Sort threat between deal. Over turn every billion. On look lot deal rock. Society wait pass century figure crime picture."
+            "streetAddress": "Reach black huge image care compa",
+            "addressLocality": "Toward as work better enough. Not wife yes pretty quickly. Stage field nor. House dream field",
+            "addressRegion": "Build expect doctor official. Detail into should treatment part. Capital resource another two.",
+            "addressCountry": "Build later fear wall.",
+            "postalCode": "Value dream on off pretty avoid. Perhaps large collection buy budget. Begin send everybody to manager.",
+            "postOfficeBoxNumber": "Alone another defense get. Into population pretty baby.",
+            "streetNr": "Impact easy rise chair guess. Pretty imagine charge red garden. Growth guy pattern little environmental dream",
+            "district": "Force before sing leader some traditional scientist. Tv particularly such painting open her fig"
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "Thought chance help hear miss ability. Remember report real matter strategy. Offer walk as plant environment. Control executive class list."
+        "value": "Inside matter technology white shake. Light t"
     },
+    "awake": {
+        "type": "Property",
+        "value": 864
+    },
+    "nrem1": {
+        "type": "Property",
+        "value": 864
+    },
+    "nrem2": {
+        "type": "Property",
+        "value": 864
+    },
+    "nrem3": {
+        "type": "Property",
+        "value": 864
+    },
+    "nrem4": {
+        "type": "Property",
+        "value": 864
+    },
+    "rem": {
+        "type": "Property",
+        "value": 864
+    },
+    "lightsleep": {
+        "type": "Property",
+        "value": 864
+    },
+    "deepsleep": {
+        "type": "Property",
+        "value": 864
+    },
+    "sleepscore": {
+        "type": "Property",
+        "value": 877.2
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.baseline"
+        ]
+    },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.sleep"
+        ]
+    },
+    "n": {
+        "type": "Property",
+        "value": "Soldier player professor ever style"
+    },
+    "range_phases": {
+        "type": "Property",
+        "value": [
+            864,
+            864
+        ]
+    },
+    "step_phases": {
+        "type": "Property",
+        "value": 864
+    },
+    "range_score": {
+        "type": "Property",
+        "value": [
+            796.4,
+            476.3
+        ]
+    },
+    "step_score": {
+        "type": "Property",
+        "value": 276.4
+    },
+    "precision": {
+        "type": "Property",
+        "value": 394.0
+    },
+    "type": "Sleep",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
