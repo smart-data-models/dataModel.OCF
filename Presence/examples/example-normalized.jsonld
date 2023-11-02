@@ -1,79 +1,102 @@
 {
-    "id": "urn:ngsi-ld:Presence:id:HOZJ:52421725",
+    "id": "urn:ngsi-ld:Presence:id:IZDX:22722811",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1977-07-31T22:23:39Z"
+            "@value": "2021-04-10T22:10:41Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1977-07-07T03:50:10Z"
+            "@value": "1978-03-08T21:06:13Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Year account notice relationship behind reason."
+        "value": "Any something some car situation. Prevent"
     },
     "name": {
         "type": "Property",
-        "value": "Hear daughter indeed station paper find. Field strategy down much sport character program."
+        "value": "Offer mean southern want direction style fear. Dream report sell. Establish field voice watch beautiful."
     },
     "alternateName": {
         "type": "Property",
-        "value": "Leader environmental throw order power east fish. Group agree camera their draw personal even. Movement true though stage audience clear."
+        "value": "Guy desc"
     },
     "description": {
         "type": "Property",
-        "value": "Music same authority simple age suddenly. Ball yeah much himself employee finally."
+        "value": "Tell money time than after. Himself should tree prove."
     },
     "dataProvider": {
         "type": "Property",
-        "value": "Study reason security loss often especially."
+        "value": "Choose join outside class."
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:Presence:items:SXTP:56856707",
-            "urn:ngsi-ld:Presence:items:OXIC:88608101"
+            "urn:ngsi-ld:Presence:items:FSGP:23719158",
+            "urn:ngsi-ld:Presence:items:TLPN:53549867"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:Presence:items:WGDM:46942839"
+            "urn:ngsi-ld:Presence:items:TVYX:00173776"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                -33.2143295,
-                106.859226
+                -61.322875,
+                132.810208
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "Evening door data stand positive kind. Discover eye story let throw sometimes natural. Wear matter cultural risk grow.",
-            "addressLocality": "Vote face hospital baby program door. Green wide benefit last spring believe single.",
-            "addressRegion": "Pass but produce make address debate. Imagine third research if somebody defense instead. Former production vote cover wife develop strategy.",
-            "addressCountry": "Stage understand first give one less bad. Fine machine expect although.",
-            "postalCode": "Site ok chance question water Republican it. Also so down stuff. Actually soldier behavior three trip certain simply father. Half mouth kitchen strategy.",
-            "postOfficeBoxNumber": "Which various woman a wish."
+            "streetAddress": "Real Republican final. Garden hope different authority. Instead green so interesting local sea.",
+            "addressLocality": "Total require per threat strategy party although. This speak attention option interest season. Such who stage term fast story despite happy.",
+            "addressRegion": "Too itself town between enter cup service. Trade Mrs stand structure kitchen. Always until environmental bank all only. Increase especially certain wrong.",
+            "addressCountry": "Say realize involve others table past. Decade candidate born executive sell.",
+            "postalCode": "Because deep better own. Ok behavior apply risk key reason see.",
+            "postOfficeBoxNumber": "Appear third at though music during. Hold every hotel arm garden theory anyone.",
+            "streetNr": "Option institution eight. If upon prove ready shoulder.",
+            "district": "Raise seat husband hand month. Image suffer indeed. Know they point other letter."
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "Radio lay president this matter theory. Box per site call. Respond manager hundred interview choice purpose."
+        "value": "Cost leader phone American realize individual someb"
     },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.sensor.presence"
+        ]
+    },
+    "value": {
+        "type": "Property",
+        "value": true
+    },
+    "n": {
+        "type": "Property",
+        "value": "Very cer"
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.s",
+            "oic.if.baseline"
+        ]
+    },
+    "type": "Presence",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
