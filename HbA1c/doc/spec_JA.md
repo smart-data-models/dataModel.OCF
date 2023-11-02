@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: 私書箱の住所のための私書箱番号。例：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: 郵便番号。例：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: 番地  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: 公道上の特定の物件を特定する番号    
 - `alternateName[string]`: この項目の別名  - `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: この商品の説明  - `hba1c[number]`: 現在のHbA1c測定値（％表示  - `id[*]`: エンティティの一意識別子  - `if[array]`: このリソースがサポートする OCF インタフェースセット。  - `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `n[string]`: リソースのフレンドリーネーム  - `name[string]`: このアイテムの名前  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `precision[number]`: precision」の値が公開されると、リソース内のPropertyに対する±の許容範囲が提供される。したがって、プロパティがある値にUPDATEされ、そのプロパティがRETRIEVEDされた場合、RETRIEVEDされた値は、設定された値の±precisionの範囲内であれば有効です。  - `range[array]`: リソース内のプロパティの有効範囲を数値で表します。配列の 1 番目の値を最小値、2 番目の値を最大値とします。  - `rt[array]`: リソースタイプ  - `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `step[number]`: 定義された範囲を横切るステップ値。範囲が数値の場合は整数。  範囲が0.0～10.0でステップが2.5の場合、有効な値は0.0,2.5,5.0,7.5,10.0となります。  - `type[string]`: NGSI エンティティタイプ。HbA1cでなければならない。  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 必須プロパティ  
@@ -445,64 +446,54 @@ HbA1c:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:HbA1c:id:UWED:68312299",  
-  "dateCreated": "1977-01-27T17:50:21Z",  
-  "dateModified": "1993-11-12T19:53:01Z",  
-  "source": "Strong option relationship fact. Item kitchen pass show. Meeting personal upon.",  
-  "name": "Picture physical reason break glass. Small step lose above capital his.",  
-  "alternateName": "Opportunity first show main particular life. Individual back these note. Box foreign surface reality think.",  
-  "description": "Real expect however prevent song design behind. Three finish manage religious present. There this process meet who.",  
-  "dataProvider": "So seem office. By president alone fight economic production school few.",  
-  "owner": [  
-    "urn:ngsi-ld:HbA1c:items:ZRBL:34609429",  
-    "urn:ngsi-ld:HbA1c:items:IRSV:73111056"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:HbA1c:items:NWVA:01008160",  
-    "urn:ngsi-ld:HbA1c:items:NIJP:00792290"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -18.431417,  
-      -61.000553  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Popular hold wear notice. Defense head professional win reduce.",  
-    "addressLocality": "Security rock production public rather movie return base. Agreement national TV leave around international. Agency nice face low.",  
-    "addressRegion": "Daughter south safe quickly about. Could language traditional soldier growth week better security.",  
-    "addressCountry": "Vote work continue that into imagine example. White character last popular fish and. Rate identify issue here possible.",  
-    "postalCode": "Low job clear free. Case yard fund majority training.",  
-    "postOfficeBoxNumber": "Sure up theory all assume. Nature act enjoy however option industry."  
-  },  
-  "areaServed": "Leg off foreign recent if lot pull. Product majority seven market blue one skill this.",  
-  "rt": [  
-    "oic.r.glucose.hba1c",  
-    "oic.r.glucose.hba1c"  
-  ],  
-  "hba1c": {  
-    "type": "Property",  
-    "value": 67.1  
-  },  
-  "range": [  
-    553.7,  
-    255.0  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 342.7  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 978.5  
-  },  
-  "n": "Show front know total soldier spring him. Whatever guy like husband three. Finally Congress teacher partner usually.",  
-  "if": [  
-    "oic.if.s",  
-    "oic.if.s"  
-  ],  
-  "type": "HbA1c"  
+    "id": "urn:ngsi-ld:HbA1c:id:NUUA:84448495",  
+    "dateCreated": "1978-03-13T05:35:12Z",  
+    "dateModified": "1985-01-29T17:46:14Z",  
+    "source": "Amount majority start money school statement decade begin. Senior raise suggest bill firm book property.",  
+    "name": "Projec",  
+    "alternateName": "Surface difficult view same oil. Because girl protect buy window cell. Control section statement.",  
+    "description": "Long soldier successful everything. Presiden",  
+    "dataProvider": "Include view probably full. Rate view lot. Against hope enjoy ",  
+    "owner": [  
+        "urn:ngsi-ld:HbA1c:items:ISKK:07346260",  
+        "urn:ngsi-ld:HbA1c:items:KENT:72458444"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:HbA1c:items:LXIT:42668919"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            40.9928635,  
+            -6.596466  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Himself give already authority.",  
+        "addressLocality": "Much heart middle method live audience. Than campaign and week center respond. Approach whether di",  
+        "addressRegion": "Cost give sea reveal coach. Blue still not father risk million will adul",  
+        "addressCountry": "Employee you floor form. Financial she attention. Before military method far consider my we.",  
+        "postalCode": "Sound hear image admit. Director",  
+        "postOfficeBoxNumber": "Wall a gun pressure. Smile cultural hair stop. Wall increase involve family nature teacher.",  
+        "streetNr": "Dinner business response draw. Scene stuff Mr site again.",  
+        "district": "Seven recently husband care PM author company. History recent series price."  
+    },  
+    "areaServed": "Sound summer part have speak expect morning. Line report out process me. Along want experience space.",  
+    "rt": [  
+        "oic.r.glucose.hba1c"  
+    ],  
+    "hba1c": 8.0,  
+    "range": [  
+        765.7,  
+        907.2  
+    ],  
+    "step": 962.1,  
+    "precision": 285.2,  
+    "n": "True suffer scene skin. Involve view culture themselves brothe",  
+    "if": [  
+        "oic.if.s"  
+    ],  
+    "type": "HbA1c"  
 }  
 ```  
 </details>  
@@ -511,129 +502,111 @@ HbA1c:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:HbA1c:id:UWED:68312299"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1977-01-27T17:50:21Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1993-11-12T19:53:01Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Strong option relationship fact. Item kitchen pass show. Meeting personal upon."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Picture physical reason break glass. Small step lose above capital his."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Opportunity first show main particular life. Individual back these note. Box foreign surface reality think."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Real expect however prevent song design behind. Three finish manage religious present. There this process meet who."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "So seem office. By president alone fight economic production school few."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:HbA1c:items:ZRBL:34609429",  
-      "urn:ngsi-ld:HbA1c:items:IRSV:73111056"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:HbA1c:items:NWVA:01008160",  
-      "urn:ngsi-ld:HbA1c:items:NIJP:00792290"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -18.431417,  
-        -61.000553  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Popular hold wear notice. Defense head professional win reduce.",  
-      "addressLocality": "Security rock production public rather movie return base. Agreement national TV leave around international. Agency nice face low.",  
-      "addressRegion": "Daughter south safe quickly about. Could language traditional soldier growth week better security.",  
-      "addressCountry": "Vote work continue that into imagine example. White character last popular fish and. Rate identify issue here possible.",  
-      "postalCode": "Low job clear free. Case yard fund majority training.",  
-      "postOfficeBoxNumber": "Sure up theory all assume. Nature act enjoy however option industry."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Leg off foreign recent if lot pull. Product majority seven market blue one skill this."  
-  },  
-  "rt": {  
-    "type": "array",  
-    "value": [  
-      "oic.r.glucose.hba1c",  
-      "oic.r.glucose.hba1c"  
-    ]  
-  },  
-  "hba1c": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 67.1  
-    }  
-  },  
-  "range": {  
-    "type": "array",  
-    "value": [  
-      553.7,  
-      255.0  
-    ]  
-  },  
-  "step": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 342.7  
-    }  
-  },  
-  "precision": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 978.5  
-    }  
-  },  
-  "n": {  
-    "type": "string",  
-    "value": "Show front know total soldier spring him. Whatever guy like husband three. Finally Congress teacher partner usually."  
-  },  
-  "if": {  
-    "type": "array",  
-    "value": [  
-      "oic.if.s",  
-      "oic.if.s"  
-    ]  
-  },  
-  "type": {  
-    "type": "string",  
-    "value": "HbA1c"  
-  }  
+    "id": "urn:ngsi-ld:HbA1c:id:NUUA:84448495",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1978-03-13T05:35:12Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "1985-01-29T17:46:14Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Amount majority start money school statement decade begin. Senior raise suggest bill firm book property."  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Projec"  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Surface difficult view same oil. Because girl protect buy window cell. Control section statement."  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Long soldier successful everything. Presiden"  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Include view probably full. Rate view lot. Against hope enjoy "  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:HbA1c:items:ISKK:07346260",  
+            "urn:ngsi-ld:HbA1c:items:KENT:72458444"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:HbA1c:items:LXIT:42668919"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                40.9928635,  
+                -6.596466  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Himself give already authority.",  
+            "addressLocality": "Much heart middle method live audience. Than campaign and week center respond. Approach whether di",  
+            "addressRegion": "Cost give sea reveal coach. Blue still not father risk million will adul",  
+            "addressCountry": "Employee you floor form. Financial she attention. Before military method far consider my we.",  
+            "postalCode": "Sound hear image admit. Director",  
+            "postOfficeBoxNumber": "Wall a gun pressure. Smile cultural hair stop. Wall increase involve family nature teacher.",  
+            "streetNr": "Dinner business response draw. Scene stuff Mr site again.",  
+            "district": "Seven recently husband care PM author company. History recent series price."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Sound summer part have speak expect morning. Line report out process me. Along want experience space."  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.glucose.hba1c"  
+        ]  
+    },  
+    "hba1c": {  
+        "type": "Number",  
+        "value": 8.0  
+    },  
+    "range": {  
+        "type": "StructuredValue",  
+        "value": [  
+            765.7,  
+            907.2  
+        ]  
+    },  
+    "step": {  
+        "type": "Number",  
+        "value": 962.1  
+    },  
+    "precision": {  
+        "type": "Number",  
+        "value": 285.2  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "True suffer scene skin. Involve view culture themselves brothe"  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.s"  
+        ]  
+    },  
+    "type": "HbA1c"  
 }  
 ```  
 </details>  
@@ -642,67 +615,56 @@ HbA1c:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:HbA1c:id:UWED:68312299",  
-    "dateCreated": "1977-01-27T17:50:21Z",  
-    "dateModified": "1993-11-12T19:53:01Z",  
-    "source": "Strong option relationship fact. Item kitchen pass show. Meeting personal upon.",  
-    "name": "Picture physical reason break glass. Small step lose above capital his.",  
-    "alternateName": "Opportunity first show main particular life. Individual back these note. Box foreign surface reality think.",  
-    "description": "Real expect however prevent song design behind. Three finish manage religious present. There this process meet who.",  
-    "dataProvider": "So seem office. By president alone fight economic production school few.",  
+    "id": "urn:ngsi-ld:HbA1c:id:NUUA:84448495",  
+    "dateCreated": "1978-03-13T05:35:12Z",  
+    "dateModified": "1985-01-29T17:46:14Z",  
+    "source": "Amount majority start money school statement decade begin. Senior raise suggest bill firm book property.",  
+    "name": "Projec",  
+    "alternateName": "Surface difficult view same oil. Because girl protect buy window cell. Control section statement.",  
+    "description": "Long soldier successful everything. Presiden",  
+    "dataProvider": "Include view probably full. Rate view lot. Against hope enjoy ",  
     "owner": [  
-        "urn:ngsi-ld:HbA1c:items:ZRBL:34609429",  
-        "urn:ngsi-ld:HbA1c:items:IRSV:73111056"  
+        "urn:ngsi-ld:HbA1c:items:ISKK:07346260",  
+        "urn:ngsi-ld:HbA1c:items:KENT:72458444"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:HbA1c:items:NWVA:01008160",  
-        "urn:ngsi-ld:HbA1c:items:NIJP:00792290"  
+        "urn:ngsi-ld:HbA1c:items:LXIT:42668919"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            -18.431417,  
-            -61.000553  
+            40.9928635,  
+            -6.596466  
         ]  
     },  
     "address": {  
-        "streetAddress": "Popular hold wear notice. Defense head professional win reduce.",  
-        "addressLocality": "Security rock production public rather movie return base. Agreement national TV leave around international. Agency nice face low.",  
-        "addressRegion": "Daughter south safe quickly about. Could language traditional soldier growth week better security.",  
-        "addressCountry": "Vote work continue that into imagine example. White character last popular fish and. Rate identify issue here possible.",  
-        "postalCode": "Low job clear free. Case yard fund majority training.",  
-        "postOfficeBoxNumber": "Sure up theory all assume. Nature act enjoy however option industry."  
+        "streetAddress": "Himself give already authority.",  
+        "addressLocality": "Much heart middle method live audience. Than campaign and week center respond. Approach whether di",  
+        "addressRegion": "Cost give sea reveal coach. Blue still not father risk million will adul",  
+        "addressCountry": "Employee you floor form. Financial she attention. Before military method far consider my we.",  
+        "postalCode": "Sound hear image admit. Director",  
+        "postOfficeBoxNumber": "Wall a gun pressure. Smile cultural hair stop. Wall increase involve family nature teacher.",  
+        "streetNr": "Dinner business response draw. Scene stuff Mr site again.",  
+        "district": "Seven recently husband care PM author company. History recent series price."  
     },  
-    "areaServed": "Leg off foreign recent if lot pull. Product majority seven market blue one skill this.",  
+    "areaServed": "Sound summer part have speak expect morning. Line report out process me. Along want experience space.",  
     "rt": [  
-        "oic.r.glucose.hba1c",  
         "oic.r.glucose.hba1c"  
     ],  
-    "hba1c": {  
-        "type": "Property",  
-        "value": 67.1  
-    },  
+    "hba1c": 8.0,  
     "range": [  
-        553.7,  
-        255.0  
+        765.7,  
+        907.2  
     ],  
-    "step": {  
-        "type": "Property",  
-        "value": 342.7  
-    },  
-    "precision": {  
-        "type": "Property",  
-        "value": 978.5  
-    },  
-    "n": "Show front know total soldier spring him. Whatever guy like husband three. Finally Congress teacher partner usually.",  
+    "step": 962.1,  
+    "precision": 285.2,  
+    "n": "True suffer scene skin. Involve view culture themselves brothe",  
     "if": [  
-        "oic.if.s",  
         "oic.if.s"  
     ],  
     "type": "HbA1c",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -712,78 +674,80 @@ HbA1c:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:HbA1c:id:RCVD:88651516",  
+    "id": "urn:ngsi-ld:HbA1c:id:NUUA:84448495",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2016-03-12T15:26:00Z"  
+            "@value": "1978-03-13T05:35:12Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1977-04-24T02:09:01Z"  
+            "@value": "1985-01-29T17:46:14Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Need fine customer apply notice staff let campaign. About young eat field yeah realize hot. Loss sort window gun girl."  
+        "value": "Amount majority start money school statement decade begin. Senior raise suggest bill firm book property."  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Market life mother military. Police happy he time subject anyone. Method small full bill newspaper even environmental."  
+        "value": "Projec"  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Summer travel draw game another. Think process serve low all above clearly."  
+        "value": "Surface difficult view same oil. Because girl protect buy window cell. Control section statement."  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Oil modern least Congress even machine. Someone surface peace concern size. Today join night officer section source argue natural."  
+        "value": "Long soldier successful everything. Presiden"  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Key top close listen article usually experience above. Nation appear more party sport. American which education. Wide local another term room."  
+        "value": "Include view probably full. Rate view lot. Against hope enjoy "  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:HbA1c:items:PZWR:06990420",  
-            "urn:ngsi-ld:HbA1c:items:MBAS:58596912"  
+            "urn:ngsi-ld:HbA1c:items:ISKK:07346260",  
+            "urn:ngsi-ld:HbA1c:items:KENT:72458444"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:HbA1c:items:OOXY:11821113"  
+            "urn:ngsi-ld:HbA1c:items:LXIT:42668919"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                15.365764,  
-                -119.004517  
+                40.9928635,  
+                -6.596466  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Focus option scene throughout question resource. Month car lead drug raise young. Something PM second certainly shake.",  
-            "addressLocality": "Carry friend assume huge lot. Evidence church political organization join kid what. Voice party appear but free.",  
-            "addressRegion": "Establish research far central likely. Range lawyer still mean box star. Strong people wear magazine.",  
-            "addressCountry": "Run whom myself close. Son technology tell probably member watch kid former. Candidate certainly investment laugh opportunity trip positive.",  
-            "postalCode": "Relationship bed over whatever peace TV throw. Building when local easy result officer ever.",  
-            "postOfficeBoxNumber": "Great turn thought leg skill. Tree man ago task amount. Kind year interest training society economy leave."  
+            "streetAddress": "Himself give already authority.",  
+            "addressLocality": "Much heart middle method live audience. Than campaign and week center respond. Approach whether di",  
+            "addressRegion": "Cost give sea reveal coach. Blue still not father risk million will adul",  
+            "addressCountry": "Employee you floor form. Financial she attention. Before military method far consider my we.",  
+            "postalCode": "Sound hear image admit. Director",  
+            "postOfficeBoxNumber": "Wall a gun pressure. Smile cultural hair stop. Wall increase involve family nature teacher.",  
+            "streetNr": "Dinner business response draw. Scene stuff Mr site again.",  
+            "district": "Seven recently husband care PM author company. History recent series price."  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Product successful your receive white management. Put professor because. Over like wall billion."  
+        "value": "Sound summer part have speak expect morning. Line report out process me. Along want experience space."  
     },  
     "rt": {  
         "type": "Property",  
@@ -793,26 +757,26 @@ HbA1c:
     },  
     "hba1c": {  
         "type": "Property",  
-        "value": 11.5  
+        "value": 8.0  
     },  
     "range": {  
         "type": "Property",  
         "value": [  
-            598.6,  
-            395.9  
+            765.7,  
+            907.2  
         ]  
     },  
     "step": {  
         "type": "Property",  
-        "value": 941.6  
+        "value": 962.1  
     },  
     "precision": {  
         "type": "Property",  
-        "value": 659.1  
+        "value": 285.2  
     },  
     "n": {  
         "type": "Property",  
-        "value": "Field notice idea professor draw dark heavy. Well ago room floor me successful."  
+        "value": "True suffer scene skin. Involve view culture themselves brothe"  
     },  
     "if": {  
         "type": "Property",  
@@ -822,8 +786,7 @@ HbA1c:
     },  
     "type": "HbA1c",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
