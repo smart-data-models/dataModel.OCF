@@ -1,34 +1,56 @@
 {
-  "id": "urn:ngsi-ld:WaterInfo:id:BWUP:35826914",
-  "dateCreated": "1984-11-27T20:49:31Z",
-  "dateModified": "2004-06-02T09:44:44Z",
-  "source": "Along those purpose ok painting television fill. Worker wish race music trial about.",
-  "name": "Enough thank teacher boy garden law both. Put modern customer short.",
-  "alternateName": "Realize above attention present participant. Billion those candidate TV raise low course. Early science kid down.",
-  "description": "According carry half. Civil meet option place pass perhaps. Mother might you age represent.",
-  "dataProvider": "Financial live local view single.",
-  "owner": [
-    "urn:ngsi-ld:WaterInfo:items:JMPQ:05255850",
-    "urn:ngsi-ld:WaterInfo:items:QJSR:25392303"
-  ],
-  "seeAlso": [
-    "urn:ngsi-ld:WaterInfo:items:NTHC:63052587",
-    "urn:ngsi-ld:WaterInfo:items:GRFX:83012714"
-  ],
-  "location": {
-    "type": "Point",
-    "coordinates": [
-      -80.746038,
-      66.99956
-    ]
-  },
-  "address": {
-    "streetAddress": "Area suddenly front game describe south. Store loss debate surface finish stand occur food.",
-    "addressLocality": "Kitchen accept both of natural. Maintain traditional laugh plant on mind require contain. Wife group guy challenge.",
-    "addressRegion": "Feel approach lead operation way single instead despite. Mean model social white near citizen firm.",
-    "addressCountry": "Heart describe forward generation maintain. Last term shake card issue.",
-    "postalCode": "Radio expect them usually decision none to. Tough certain tough while.",
-    "postOfficeBoxNumber": "Analysis leg program. Country computer plan reveal available article may. Now gun third knowledge record single."
-  },
-  "areaServed": "Future then expect everybody team garden spend. End compare significant discover notice including Democrat."
+    "id": "urn:ngsi-ld:WaterInfo:id:LZQI:23960151",
+    "dateCreated": "1994-04-08T20:36:19Z",
+    "dateModified": "1974-09-04T18:29:37Z",
+    "source": "",
+    "name": "Follow around town bit subject which. Smile remember during player mean new. Above drug rise who candidate what.",
+    "alternateName": "Voice argue agree. From ",
+    "description": "Today mention rich let the guy ",
+    "dataProvider": "Find which now wear understand. Person necessary actually card real real.",
+    "owner": [
+        "urn:ngsi-ld:WaterInfo:items:DBVP:23498137",
+        "urn:ngsi-ld:WaterInfo:items:GDJX:46883476"
+    ],
+    "seeAlso": [
+        "urn:ngsi-ld:WaterInfo:items:NFSN:31596421"
+    ],
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            -75.2620405,
+            132.745561
+        ]
+    },
+    "address": {
+        "streetAddress": "Skin yes finish responsibility politics follow. Fine these thought lose. Safe green their last.",
+        "addressLocality": "Oil require reality. If reality almost machine walk.",
+        "addressRegion": "Expert environment person rise century. Him song case three boy song democratic. Over poor kid a.",
+        "addressCountry": "World system about. Program compare perform prepare something.",
+        "postalCode": "Contain ",
+        "postOfficeBoxNumber": "Cold have few through. Political major either about s",
+        "streetNr": "Find someone machine finish pass draw religious. Number lawyer stay his. Fund piece already everything poli",
+        "district": "Matter compare government prevent too something none. Writer just current skin want environmental wide."
+    },
+    "areaServed": "Law threat gun d",
+    "rt": [
+        "oic.r.waterinfo"
+    ],
+    "supportedwatertypes": [
+        "Less dream off. Spring something western social.",
+        "Scene like speech surface huge land hand."
+    ],
+    "supportedadditivetypes": [
+        "Produce whatever team really. Support later artist seven wait ask.",
+        "Author start four common impact. Door form blue three. Art mean size."
+    ],
+    "currentwatertype": "Chair wear production fill. Mention there box wide.",
+    "currentadditivetypes": [
+        "Class international discussion different rate though. Successful hour local born impact present official it. Feel above partner exist item outside tell role."
+    ],
+    "n": "Field government positive guy item necessary. Beha",
+    "if": [
+        "oic.if.baseline",
+        "oic.if.rw"
+    ],
+    "type": "WaterInfo"
 }
