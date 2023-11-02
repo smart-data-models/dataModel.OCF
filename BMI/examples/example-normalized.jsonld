@@ -1,76 +1,78 @@
 {
-    "id": "urn:ngsi-ld:BMI:id:EMJI:97474029",
+    "id": "urn:ngsi-ld:BMI:id:JQXP:11604104",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2022-03-01T18:43:19Z"
+            "@value": "2023-04-27T03:38:23Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1995-08-23T11:49:56Z"
+            "@value": "1999-07-17T13:50:02Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Fill lot management perform professor admit herself."
+        "value": "Student civil cultural worry. Democrat woman fine soon example education. Add adult democratic wind la"
     },
     "name": {
         "type": "Property",
-        "value": "Late college somebody a property thought. Ever sell board just require."
+        "value": "Speech marriage treat family understand your voice newspaper. Child cover treat high pretty item profes"
     },
     "alternateName": {
         "type": "Property",
-        "value": "Bar suffer thought record shoulder activity one. Support music serious so speak feeling event. Phone radio about produce practice order."
+        "value": "Program fish girl our offer pick."
     },
     "description": {
         "type": "Property",
-        "value": "Say book popular back million. Degree local live."
+        "value": "Act situation own stop must song. Treatment future professor follow difference job. When activity dec"
     },
     "dataProvider": {
         "type": "Property",
-        "value": "Good morning shake whose. Safe employee buy offer majority. Provide lead catch try chair main develop. Chance here type heavy."
+        "value": "Science various imagine usually can two expect. Seat president item reveal federal send."
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:BMI:items:WJYW:99456940",
-            "urn:ngsi-ld:BMI:items:IBTQ:54917398"
+            "urn:ngsi-ld:BMI:items:ANAV:58006639",
+            "urn:ngsi-ld:BMI:items:ODIH:85202865"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:BMI:items:DUBD:09125435"
+            "urn:ngsi-ld:BMI:items:RQXM:68509576"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                -71.4924345,
-                -95.488647
+                -44.575855,
+                76.463418
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "That claim else already.",
-            "addressLocality": "Painting break mother speak while eye. Political student hospital free down teacher.",
-            "addressRegion": "Gas beat scientist. Election full defense deep morning black. Interesting PM in. Production authority name method price talk.",
-            "addressCountry": "Door floor most task so fast much. Also address play stand.",
-            "postalCode": "Happy value analysis far. Spring true family yeah.",
-            "postOfficeBoxNumber": "Toward raise wait send mouth be everybody evidence. Court majority grow employee yourself crime. Car alone kitchen most painting at sea."
+            "streetAddress": "Message generation across listen despite.",
+            "addressLocality": "Experie",
+            "addressRegion": "Serious investment teacher identify before about not. Analysis scientist expert itself down can.",
+            "addressCountry": "Star thing least Congress toward main. Hospital down door tonight from ",
+            "postalCode": "Environmental with suddenly detail huge finally. Father position strategy air. Partner least fly relate new cam",
+            "postOfficeBoxNumber": "Reduce morning field. Market something front price ma",
+            "streetNr": "Four blood chance heart public. Certain coach skill already fire picture future lis",
+            "district": "Ca"
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "Us outside simply suffer. Social inside above war bit light charge."
+        "value": "Recently sing high energy million show enter. College full allow put cove"
     },
     "rt": {
         "type": "Property",
@@ -80,36 +82,35 @@
     },
     "bmi": {
         "type": "Property",
-        "value": 443.8
+        "value": 294.7
     },
     "range": {
         "type": "Property",
         "value": [
-            661.2,
-            444.8
+            341.6,
+            577.3
         ]
     },
     "step": {
         "type": "Property",
-        "value": 198.7
+        "value": 64.0
     },
     "precision": {
         "type": "Property",
-        "value": 977.8
+        "value": 901.2
     },
     "n": {
         "type": "Property",
-        "value": "Laugh such force final. Them media line involve. Age meet follow character card news seat."
+        "value": "Significant although boy includin"
     },
     "if": {
         "type": "Property",
         "value": [
-            "oic.if.baseline"
+            "oic.if.s"
         ]
     },
     "type": "BMI",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
