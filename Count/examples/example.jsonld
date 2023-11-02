@@ -1,38 +1,53 @@
 {
-    "id": "urn:ngsi-ld:Count:id:ANPP:64594792",
-    "dateCreated": "1970-08-14T20:52:44Z",
-    "dateModified": "1982-07-21T00:53:54Z",
-    "source": "Fear very opportunity sea prevent hospital check.",
-    "name": "Federal simply turn meet less. North stay step while window network can.",
-    "alternateName": "Produce summer alone toward attorney. Discuss article four go.",
-    "description": "Head enter heart though later. Form agree plant exactly back before. Mouth able probably threat.",
-    "dataProvider": "Lose allow oil box any film. Someone people reveal exist significant admit treatment idea. Bank perhaps choice none.",
+    "id": "urn:ngsi-ld:Count:id:ENUR:81358476",
+    "dateCreated": "1996-09-22T22:01:28Z",
+    "dateModified": "1985-03-29T07:36:11Z",
+    "source": "Determine whole garden follow huge adult whom. Those those during staff movement during hour. Record memory their",
+    "name": "Local attention phone building than base by.",
+    "alternateName": "Necessary truth hope",
+    "description": "Open message film writer. Pick my money ability.",
+    "dataProvider": "Character spend speak goal.",
     "owner": [
-        "urn:ngsi-ld:Count:items:BHAE:96828546",
-        "urn:ngsi-ld:Count:items:VDZM:08245550"
+        "urn:ngsi-ld:Count:items:UVCP:78840094",
+        "urn:ngsi-ld:Count:items:NOWV:83316339"
     ],
     "seeAlso": [
-        "urn:ngsi-ld:Count:items:JZGY:19989096",
-        "urn:ngsi-ld:Count:items:VPFW:31471711"
+        "urn:ngsi-ld:Count:items:NYFT:67612718"
     ],
     "location": {
         "type": "Point",
         "coordinates": [
-            -75.8259115,
-            -9.81898
+            71.6998845,
+            -158.40622
         ]
     },
     "address": {
-        "streetAddress": "Choice anything lawyer necessary open. Hope left believe science water bill. Cell several senior exist. Often a camera join picture.",
-        "addressLocality": "Eight across him source democratic future create big.",
-        "addressRegion": "Political memory how public almost. Affect local effort instead. Hard financial can small already.",
-        "addressCountry": "Must happen degree truth something.",
-        "postalCode": "Do thus address generation. Source medical many past realize service then. Work red central model professional small.",
-        "postOfficeBoxNumber": "Myself until politics bag police citizen. Pretty contain process."
+        "streetAddress": "Open represent conference large. Modern walk more official glass.",
+        "addressLocality": "Free car bank between owner morning once. Off cut message fly management network system.",
+        "addressRegion": "Model sing by land another into rest only. Control government blue either.",
+        "addressCountry": "House east away.",
+        "postalCode": "Lot relationship law others every tree produce. Beyond range future north fina",
+        "postOfficeBoxNumber": "Political candi",
+        "streetNr": "Hit offer which specific one. Leave them down none summer. College lay",
+        "district": "Address reach able again crime or common. Hospital answer soon shoulder. Include color southern woman style visit population."
     },
-    "areaServed": "Much maybe through you less cut after.",
+    "areaServed": "Book they several him. School movement sense consumer remain.",
+    "rt": [
+        "oic.r.sensor.activity.count"
+    ],
+    "count": 864,
+    "n": "American whole",
+    "range": [
+        864,
+        864
+    ],
+    "step": 864,
+    "if": [
+        "oic.if.s",
+        "oic.if.a"
+    ],
+    "type": "Count",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
