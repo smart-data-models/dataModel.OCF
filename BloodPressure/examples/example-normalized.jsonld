@@ -1,76 +1,78 @@
 {
-    "id": "urn:ngsi-ld:BloodPressure:id:MWUO:80041751",
+    "id": "urn:ngsi-ld:BloodPressure:id:OYKZ:20915576",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2020-05-09T02:59:44Z"
+            "@value": "2005-10-31T03:17:09Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2010-09-02T23:50:12Z"
+            "@value": "1974-09-20T19:41:22Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "However long knowledge. Remain different action. Street ago apply."
+        "value": "Energy heavy commercial threat military thank. Front dream hour"
     },
     "name": {
         "type": "Property",
-        "value": "Pay reach all oil on. Major court seven hair painting see both."
+        "value": "To follow social degree experience. Someone ov"
     },
     "alternateName": {
         "type": "Property",
-        "value": "Open agree knowledge time walk able. Experience large report meet."
+        "value": "Add save add some. Defense agent performance by teach risk."
     },
     "description": {
         "type": "Property",
-        "value": "Myself say career ago design condition go. Thank citizen policy situation. Hit pretty gas remember effect ago minute."
+        "value": "Artist share often good here. Debate position series energy however. Catch hundred day score."
     },
     "dataProvider": {
         "type": "Property",
-        "value": "Magazine candidate need nearly church almost. Choose right stand something."
+        "value": "May find base health gas magazine event. Tree way include build town politics"
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:BloodPressure:items:KIIY:23731432",
-            "urn:ngsi-ld:BloodPressure:items:JSYR:00171590"
+            "urn:ngsi-ld:BloodPressure:items:BYTR:17522837",
+            "urn:ngsi-ld:BloodPressure:items:TABG:05694523"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:BloodPressure:items:VRNO:88271615"
+            "urn:ngsi-ld:BloodPressure:items:SOMO:80156322"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                2.782601,
-                91.84993
+                -34.40316,
+                -27.475728
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "New into method treat call. Society often over now before. Radio partner music.",
-            "addressLocality": "Mind do social find population young. Establish response we talk total. Reveal operation community contain produce likely money.",
-            "addressRegion": "Executive fast consider law model debate because. Share fine but sing majority shoulder. Factor over Republican gas throw.",
-            "addressCountry": "Modern camera air include authority player. System speech fire toward. Up until reach player likely.",
-            "postalCode": "Why kind agree page.",
-            "postOfficeBoxNumber": "Kind a heavy piece measure wonder least well. Page major material safe without defense feel hold. Father stop friend security allow. Man play degree magazine because."
+            "streetAddress": "Effort guess more deal company. Past structure each conference",
+            "addressLocality": "Street physical computer art stuff.",
+            "addressRegion": "Never real operation fast",
+            "addressCountry": "Three south instead hand. Table general light so many quality. You open eas",
+            "postalCode": "Agent one eight final analysis model. Face all body school. Many shake right tonight ago hot season.",
+            "postOfficeBoxNumber": "Talk industry management show. Town stay treat future. National consider allow. Mind official as exist.",
+            "streetNr": "Smile institution hear born policy. Then artist camera actually. Want music threat nation series.",
+            "district": "While expert up tree pressure they approach study. Notice authority safe one operation left. Ground"
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "Necessary section worker once body. They important involve discuss camera. Others statement set power kid mind more."
+        "value": "Then know whether argue "
     },
     "rt": {
         "type": "Property",
@@ -80,48 +82,47 @@
     },
     "map": {
         "type": "Property",
-        "value": 207.0
+        "value": 592.7
     },
     "units": {
         "type": "Property",
-        "value": "mmHg"
+        "value": "kPa"
     },
     "systolic": {
         "type": "Property",
-        "value": 457.9
+        "value": 558.1
     },
     "diastolic": {
         "type": "Property",
-        "value": 11.4
+        "value": 204.0
     },
     "if": {
         "type": "Property",
         "value": [
-            "oic.if.baseline"
+            "oic.if.s"
         ]
     },
     "range": {
         "type": "Property",
         "value": [
-            208.9,
-            583.5
+            94.2,
+            435.7
         ]
     },
     "step": {
         "type": "Property",
-        "value": 1.2
+        "value": 955.5
     },
     "precision": {
         "type": "Property",
-        "value": 933.1
+        "value": 787.6
     },
     "n": {
         "type": "Property",
-        "value": "Before effort technology commercial finally. Effect cell thousand rich. Modern happen less turn common around audience."
+        "value": "Officer front best identify everybody create board. Available c"
     },
     "type": "BloodPressure",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
