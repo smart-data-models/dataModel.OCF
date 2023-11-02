@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: Die Postfachnummer für Postfachadressen. Zum Beispiel, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: Die Postleitzahl. Zum Beispiel, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: Die Straßenanschrift  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Nummer zur Identifizierung eines bestimmten Grundstücks an einer öffentlichen Straße    
 - `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit  - `dateCreated[date-time]`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen  - `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben  - `description[string]`: Eine Beschreibung dieses Artikels  - `id[*]`: Eindeutiger Bezeichner der Entität  - `if[array]`: Der von dieser Ressource unterstützte OCF-Schnittstellensatz  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `n[string]`: Freundlicher Name der Ressource  - `name[string]`: Der Name dieses Artikels  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `precision[number]`: Bei der Exposition bietet der Wert in "precision" eine +/- Toleranz gegenüber den Eigenschaften in der Ressource. Wenn also eine Eigenschaft auf einen Wert AKTUALISIERT wird und diese Eigenschaft dann ZURÜCKGEZOGEN wird, ist der ZURÜCKGEZOGENE Wert gültig, wenn er im Bereich des festgelegten Wertes +/- Präzision liegt  - `rampTime[number]`: Die tatsächliche Geschwindigkeit des Wechsels zwischen 2 Dimmwerten  - `range[array]`: Der gültige Bereich für die Eigenschaft in der Ressource in Form einer Ganzzahl. Der erste Wert im Array ist der Mindestwert, der zweite Wert im Array ist der Höchstwert  - `rt[array]`: Der Ressourcentyp  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `step[number]`: Schrittwert über den definierten Bereich, wenn der Bereich eine ganze Zahl ist.  Dies ist die Schrittweite für gültige Werte innerhalb des Bereichs; wenn also der Bereich 0..10 und der Schritt 2 ist, sind die Werte 0,2,4,6,8,10 gültig.  - `type[string]`: NGSI-Entitätstyp. Es muss RampTime sein  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
@@ -441,64 +442,55 @@ RampTime:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:RampTime:id:ZHJF:61229976",  
-  "dateCreated": "2013-01-02T18:46:37Z",  
-  "dateModified": "1985-03-11T15:55:10Z",  
-  "source": "Since court baby. Nature alone dinner major break organization listen.",  
-  "name": "Industry officer member our. Research similar call exist way by teach. Natural understand organization ever create.",  
-  "alternateName": "Vote part free over long. Herself room piece save property democratic. Very experience evening play speech record.",  
-  "description": "Operation senior cold edge detail leg. Above theory eye administration economy third. Share personal ready reduce remain through owner.",  
-  "dataProvider": "He state score. Throw describe then seem federal someone.",  
-  "owner": [  
-    "urn:ngsi-ld:RampTime:items:TGKY:57138477",  
-    "urn:ngsi-ld:RampTime:items:QSGQ:84806884"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:RampTime:items:RCKL:49386497",  
-    "urn:ngsi-ld:RampTime:items:MEBB:04213405"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      59.1823935,  
-      169.242295  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Memory happen condition cold director you dream. Current financial care. Believe we report rest sport indicate sure.",  
-    "addressLocality": "Cold culture audience leave question continue office many. Walk note rich generation clearly drive to source.",  
-    "addressRegion": "Best meeting public whom us rather. Create citizen get civil local reveal my.",  
-    "addressCountry": "Find actually available safe. Pressure many chair must.",  
-    "postalCode": "Leave expect where particularly sometimes. Treatment official report make technology production.",  
-    "postOfficeBoxNumber": "Describe boy look yeah particular knowledge. Process else threat."  
-  },  
-  "areaServed": "Beautiful successful perform each democratic walk bill. Offer laugh just anyone far. Feel hope likely say into enter explain century.",  
-  "rt": [  
-    "oic.r.light.ramptime",  
-    "oic.r.light.ramptime"  
-  ],  
-  "rampTime": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "n": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair.",  
-  "range": [  
-    864,  
-    864  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 24.0  
-  },  
-  "if": [  
-    "oic.if.baseline",  
-    "oic.if.baseline"  
-  ],  
-  "type": "RampTime"  
+    "id": "urn:ngsi-ld:RampTime:id:SOVS:23859772",  
+    "dateCreated": "1984-02-11T15:42:17Z",  
+    "dateModified": "1974-12-05T16:14:49Z",  
+    "source": "Raise left serious one under over loss. As week office art.",  
+    "name": "Course election after pla",  
+    "alternateName": "Out ago simply note. Goal apply letter several top. Above high impact top camera.",  
+    "description": "Reduce catch goal treat. Maintain compare rule",  
+    "dataProvider": "Only camera last rate. Indicate forget population policy option spend arti",  
+    "owner": [  
+        "urn:ngsi-ld:RampTime:items:CZKU:18687524",  
+        "urn:ngsi-ld:RampTime:items:AYTX:66134959"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:RampTime:items:XJAL:21532442"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            17.46331,  
+            125.666274  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "He would indiv",  
+        "addressLocality": "Thing many business hot field. Yard join goal still current cell.",  
+        "addressRegion": "Recent design professional he court. Challenge let case as. Our age just human arm.",  
+        "addressCountry": "Several political policy town also popular. Nation cover popular big.",  
+        "postalCode": "Beat vote population write no spend computer. Between himself agency prove may. Can major set finally.",  
+        "postOfficeBoxNumber": "Cut mind up international military relate ok. Important today red lot rich. Send little strong sea party per happy.",  
+        "streetNr": "Finish interesting Congress save name. Matter edge middle health. Pressure control bill any cultural pers",  
+        "district": "Fire type spring away area service model. Cultural gues"  
+    },  
+    "areaServed": "Machine materi",  
+    "rt": [  
+        "oic.r.light.ramptime"  
+    ],  
+    "rampTime": 864,  
+    "n": "American whole magazine truth stop whose. On tra",  
+    "range": [  
+        864,  
+        864  
+    ],  
+    "step": 864,  
+    "precision": 924.7,  
+    "if": [  
+        "oic.if.a",  
+        "oic.if.baseline"  
+    ],  
+    "type": "RampTime"  
 }  
 ```  
 </details>  
@@ -507,129 +499,112 @@ RampTime:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:RampTime:id:ZHJF:61229976"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2013-01-02T18:46:37Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1985-03-11T15:55:10Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Since court baby. Nature alone dinner major break organization listen."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Industry officer member our. Research similar call exist way by teach. Natural understand organization ever create."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Vote part free over long. Herself room piece save property democratic. Very experience evening play speech record."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Operation senior cold edge detail leg. Above theory eye administration economy third. Share personal ready reduce remain through owner."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "He state score. Throw describe then seem federal someone."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:RampTime:items:TGKY:57138477",  
-      "urn:ngsi-ld:RampTime:items:QSGQ:84806884"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:RampTime:items:RCKL:49386497",  
-      "urn:ngsi-ld:RampTime:items:MEBB:04213405"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        59.1823935,  
-        169.242295  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Memory happen condition cold director you dream. Current financial care. Believe we report rest sport indicate sure.",  
-      "addressLocality": "Cold culture audience leave question continue office many. Walk note rich generation clearly drive to source.",  
-      "addressRegion": "Best meeting public whom us rather. Create citizen get civil local reveal my.",  
-      "addressCountry": "Find actually available safe. Pressure many chair must.",  
-      "postalCode": "Leave expect where particularly sometimes. Treatment official report make technology production.",  
-      "postOfficeBoxNumber": "Describe boy look yeah particular knowledge. Process else threat."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Beautiful successful perform each democratic walk bill. Offer laugh just anyone far. Feel hope likely say into enter explain century."  
-  },  
-  "rt": {  
-    "type": "array",  
-    "value": [  
-      "oic.r.light.ramptime",  
-      "oic.r.light.ramptime"  
-    ]  
-  },  
-  "rampTime": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 864  
-    }  
-  },  
-  "n": {  
-    "type": "string",  
-    "value": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair."  
-  },  
-  "range": {  
-    "type": "array",  
-    "value": [  
-      864,  
-      864  
-    ]  
-  },  
-  "step": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 864  
-    }  
-  },  
-  "precision": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 24.0  
-    }  
-  },  
-  "if": {  
-    "type": "array",  
-    "value": [  
-      "oic.if.baseline",  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "type": {  
-    "type": "string",  
-    "value": "RampTime"  
-  }  
+    "id": "urn:ngsi-ld:RampTime:id:SOVS:23859772",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1984-02-11T15:42:17Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "1974-12-05T16:14:49Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Raise left serious one under over loss. As week office art."  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Course election after pla"  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Out ago simply note. Goal apply letter several top. Above high impact top camera."  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Reduce catch goal treat. Maintain compare rule"  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Only camera last rate. Indicate forget population policy option spend arti"  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:RampTime:items:CZKU:18687524",  
+            "urn:ngsi-ld:RampTime:items:AYTX:66134959"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:RampTime:items:XJAL:21532442"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                17.46331,  
+                125.666274  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "He would indiv",  
+            "addressLocality": "Thing many business hot field. Yard join goal still current cell.",  
+            "addressRegion": "Recent design professional he court. Challenge let case as. Our age just human arm.",  
+            "addressCountry": "Several political policy town also popular. Nation cover popular big.",  
+            "postalCode": "Beat vote population write no spend computer. Between himself agency prove may. Can major set finally.",  
+            "postOfficeBoxNumber": "Cut mind up international military relate ok. Important today red lot rich. Send little strong sea party per happy.",  
+            "streetNr": "Finish interesting Congress save name. Matter edge middle health. Pressure control bill any cultural pers",  
+            "district": "Fire type spring away area service model. Cultural gues"  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Machine materi"  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.light.ramptime"  
+        ]  
+    },  
+    "rampTime": {  
+        "type": "Number",  
+        "value": 864  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "American whole magazine truth stop whose. On tra"  
+    },  
+    "range": {  
+        "type": "StructuredValue",  
+        "value": [  
+            864,  
+            864  
+        ]  
+    },  
+    "step": {  
+        "type": "Number",  
+        "value": 864  
+    },  
+    "precision": {  
+        "type": "Number",  
+        "value": 924.7  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.a",  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "RampTime"  
 }  
 ```  
 </details>  
@@ -638,67 +613,57 @@ RampTime:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:RampTime:id:ZHJF:61229976",  
-    "dateCreated": "2013-01-02T18:46:37Z",  
-    "dateModified": "1985-03-11T15:55:10Z",  
-    "source": "Since court baby. Nature alone dinner major break organization listen.",  
-    "name": "Industry officer member our. Research similar call exist way by teach. Natural understand organization ever create.",  
-    "alternateName": "Vote part free over long. Herself room piece save property democratic. Very experience evening play speech record.",  
-    "description": "Operation senior cold edge detail leg. Above theory eye administration economy third. Share personal ready reduce remain through owner.",  
-    "dataProvider": "He state score. Throw describe then seem federal someone.",  
+    "id": "urn:ngsi-ld:RampTime:id:SOVS:23859772",  
+    "dateCreated": "1984-02-11T15:42:17Z",  
+    "dateModified": "1974-12-05T16:14:49Z",  
+    "source": "Raise left serious one under over loss. As week office art.",  
+    "name": "Course election after pla",  
+    "alternateName": "Out ago simply note. Goal apply letter several top. Above high impact top camera.",  
+    "description": "Reduce catch goal treat. Maintain compare rule",  
+    "dataProvider": "Only camera last rate. Indicate forget population policy option spend arti",  
     "owner": [  
-        "urn:ngsi-ld:RampTime:items:TGKY:57138477",  
-        "urn:ngsi-ld:RampTime:items:QSGQ:84806884"  
+        "urn:ngsi-ld:RampTime:items:CZKU:18687524",  
+        "urn:ngsi-ld:RampTime:items:AYTX:66134959"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:RampTime:items:RCKL:49386497",  
-        "urn:ngsi-ld:RampTime:items:MEBB:04213405"  
+        "urn:ngsi-ld:RampTime:items:XJAL:21532442"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            59.1823935,  
-            169.242295  
+            17.46331,  
+            125.666274  
         ]  
     },  
     "address": {  
-        "streetAddress": "Memory happen condition cold director you dream. Current financial care. Believe we report rest sport indicate sure.",  
-        "addressLocality": "Cold culture audience leave question continue office many. Walk note rich generation clearly drive to source.",  
-        "addressRegion": "Best meeting public whom us rather. Create citizen get civil local reveal my.",  
-        "addressCountry": "Find actually available safe. Pressure many chair must.",  
-        "postalCode": "Leave expect where particularly sometimes. Treatment official report make technology production.",  
-        "postOfficeBoxNumber": "Describe boy look yeah particular knowledge. Process else threat."  
+        "streetAddress": "He would indiv",  
+        "addressLocality": "Thing many business hot field. Yard join goal still current cell.",  
+        "addressRegion": "Recent design professional he court. Challenge let case as. Our age just human arm.",  
+        "addressCountry": "Several political policy town also popular. Nation cover popular big.",  
+        "postalCode": "Beat vote population write no spend computer. Between himself agency prove may. Can major set finally.",  
+        "postOfficeBoxNumber": "Cut mind up international military relate ok. Important today red lot rich. Send little strong sea party per happy.",  
+        "streetNr": "Finish interesting Congress save name. Matter edge middle health. Pressure control bill any cultural pers",  
+        "district": "Fire type spring away area service model. Cultural gues"  
     },  
-    "areaServed": "Beautiful successful perform each democratic walk bill. Offer laugh just anyone far. Feel hope likely say into enter explain century.",  
+    "areaServed": "Machine materi",  
     "rt": [  
-        "oic.r.light.ramptime",  
         "oic.r.light.ramptime"  
     ],  
-    "rampTime": {  
-        "type": "Property",  
-        "value": 864  
-    },  
-    "n": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair.",  
+    "rampTime": 864,  
+    "n": "American whole magazine truth stop whose. On tra",  
     "range": [  
         864,  
         864  
     ],  
-    "step": {  
-        "type": "Property",  
-        "value": 864  
-    },  
-    "precision": {  
-        "type": "Property",  
-        "value": 24.0  
-    },  
+    "step": 864,  
+    "precision": 924.7,  
     "if": [  
-        "oic.if.baseline",  
+        "oic.if.a",  
         "oic.if.baseline"  
     ],  
     "type": "RampTime",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -708,78 +673,80 @@ RampTime:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:RampTime:id:FFSR:90520934",  
+    "id": "urn:ngsi-ld:RampTime:id:SOVS:23859772",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2018-03-18T03:19:11Z"  
+            "@value": "1984-02-11T15:42:17Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1993-01-25T21:55:52Z"  
+            "@value": "1974-12-05T16:14:49Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Three sound resource. Parent parent base including task like drive."  
+        "value": "Raise left serious one under over loss. As week office art."  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Almost identify bring imagine. Notice important party step old."  
+        "value": "Course election after pla"  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Here most data certainly strategy. Carry act process anyone foreign sell society. Especially summer appear. Better allow car administration."  
+        "value": "Out ago simply note. Goal apply letter several top. Above high impact top camera."  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Reduce process issue party clearly anything. Career condition opportunity general. Experience around manage room spend throw although few."  
+        "value": "Reduce catch goal treat. Maintain compare rule"  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Official culture indicate position. Cover leader medical law catch western."  
+        "value": "Only camera last rate. Indicate forget population policy option spend arti"  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:RampTime:items:OMMO:16943723",  
-            "urn:ngsi-ld:RampTime:items:NTJI:24099913"  
+            "urn:ngsi-ld:RampTime:items:CZKU:18687524",  
+            "urn:ngsi-ld:RampTime:items:AYTX:66134959"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:RampTime:items:EKVY:98458166"  
+            "urn:ngsi-ld:RampTime:items:XJAL:21532442"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                -5.345031,  
-                86.253962  
+                17.46331,  
+                125.666274  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Her our teach something edge seem. Event life respond including beyond huge. Job reflect go former level ready.",  
-            "addressLocality": "Picture professional central east computer PM executive.",  
-            "addressRegion": "Single current both pattern which list. Moment author subject lot.",  
-            "addressCountry": "Attack form former training. Win reduce history international. Site body study where. Report indicate until box former never whether.",  
-            "postalCode": "Program police whatever must. Fine place opportunity nation.",  
-            "postOfficeBoxNumber": "Tv assume much. Return reveal force myself."  
+            "streetAddress": "He would indiv",  
+            "addressLocality": "Thing many business hot field. Yard join goal still current cell.",  
+            "addressRegion": "Recent design professional he court. Challenge let case as. Our age just human arm.",  
+            "addressCountry": "Several political policy town also popular. Nation cover popular big.",  
+            "postalCode": "Beat vote population write no spend computer. Between himself agency prove may. Can major set finally.",  
+            "postOfficeBoxNumber": "Cut mind up international military relate ok. Important today red lot rich. Send little strong sea party per happy.",  
+            "streetNr": "Finish interesting Congress save name. Matter edge middle health. Pressure control bill any cultural pers",  
+            "district": "Fire type spring away area service model. Cultural gues"  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Address career trial statement. Subject president sense."  
+        "value": "Machine materi"  
     },  
     "rt": {  
         "type": "Property",  
@@ -789,26 +756,26 @@ RampTime:
     },  
     "rampTime": {  
         "type": "Property",  
-        "value": 932  
+        "value": 864  
     },  
     "n": {  
         "type": "Property",  
-        "value": "World practice town politics cost there physical out."  
+        "value": "American whole magazine truth stop whose. On tra"  
     },  
     "range": {  
         "type": "Property",  
         "value": [  
-            694,  
-            895  
+            864,  
+            864  
         ]  
     },  
     "step": {  
         "type": "Property",  
-        "value": 850  
+        "value": 864  
     },  
     "precision": {  
         "type": "Property",  
-        "value": 772.7  
+        "value": 924.7  
     },  
     "if": {  
         "type": "Property",  
@@ -819,8 +786,7 @@ RampTime:
     },  
     "type": "RampTime",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
