@@ -1,36 +1,5 @@
 {
-    "3dprinttype": {
-        "type": "Property",
-        "value": "Photopolymer Jetting Technology"
-    },
-    "@context": [
-        "https://smartdatamodels.org/context.jsonld"
-    ],
-    "address": {
-        "type": "Property",
-        "value": {
-            "addressCountry": "Realize station story. Friend our away model specific. Than different certain other.",
-            "addressLocality": "Find career old on iss",
-            "addressRegion": "Hot ahead mother side. Painting industry case those. Long hospital cell.",
-            "district": "Early nature ahead democratic.",
-            "postOfficeBoxNumber": "He city agency under bill short remain. Return sinc",
-            "postalCode": "Son final staff. Change ball put require",
-            "streetAddress": "Indeed concern society team change. Election maybe stage pattern summer out. Want hand when score listen again.",
-            "streetNr": "Tell theory style century game thousand beyond. Her attack detail tonight either."
-        }
-    },
-    "alternateName": {
-        "type": "Property",
-        "value": "List unit join key factor amount. List sense raise dream. Important writer their get itself value bag."
-    },
-    "areaServed": {
-        "type": "Property",
-        "value": "Sister line PM girl. Themselves especially about go task com"
-    },
-    "dataProvider": {
-        "type": "Property",
-        "value": "Run page report after"
-    },
+    "id": "urn:ngsi-ld:3DPrinter:id:KCVX:35224692",
     "dateCreated": {
         "type": "Property",
         "value": {
@@ -45,39 +14,25 @@
             "@value": "1971-11-12T21:21:33Z"
         }
     },
-    "description": {
+    "source": {
         "type": "Property",
-        "value": "Name ball to gun section surface every. Audience light science dinner mother bar involve."
-    },
-    "id": "urn:ngsi-ld:3DPrinter:id:KCVX:35224692",
-    "if": {
-        "type": "Property",
-        "value": [
-            "oic.if.r",
-            "oic.if.baseline"
-        ]
-    },
-    "location": {
-        "type": "GeoProperty",
-        "value": {
-            "coordinates": [
-                68.5908185,
-                -168.209783
-            ],
-            "type": "Point"
-        }
-    },
-    "memorysize": {
-        "type": "Property",
-        "value": 561.5
-    },
-    "n": {
-        "type": "Property",
-        "value": "Religious deal "
+        "value": "Blood poor value boy financial education. Vote kid finally arm onto."
     },
     "name": {
         "type": "Property",
         "value": "Sit that listen. Offer entire discuss full quality detail. Gener"
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "List unit join key factor amount. List sense raise dream. Important writer their get itself value bag."
+    },
+    "description": {
+        "type": "Property",
+        "value": "Name ball to gun section surface every. Audience light science dinner mother bar involve."
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Run page report after"
     },
     "owner": {
         "type": "Property",
@@ -86,17 +41,38 @@
             "urn:ngsi-ld:3DPrinter:items:WAEO:96901911"
         ]
     },
-    "printsizex": {
+    "seeAlso": {
         "type": "Property",
-        "value": 564.7
+        "value": [
+            "urn:ngsi-ld:3DPrinter:items:PIFJ:54891254"
+        ]
     },
-    "printsizey": {
-        "type": "Property",
-        "value": 528.5
+    "location": {
+        "type": "GeoProperty",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                68.5908185,
+                -168.209783
+            ]
+        }
     },
-    "printsizez": {
+    "address": {
         "type": "Property",
-        "value": 810.7
+        "value": {
+            "streetAddress": "Indeed concern society team change. Election maybe stage pattern summer out. Want hand when score listen again.",
+            "addressLocality": "Find career old on iss",
+            "addressRegion": "Hot ahead mother side. Painting industry case those. Long hospital cell.",
+            "addressCountry": "Realize station story. Friend our away model specific. Than different certain other.",
+            "postalCode": "Son final staff. Change ball put require",
+            "postOfficeBoxNumber": "He city agency under bill short remain. Return sinc",
+            "streetNr": "Tell theory style century game thousand beyond. Her attack detail tonight either.",
+            "district": "Early nature ahead democratic."
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Sister line PM girl. Themselves especially about go task com"
     },
     "rt": {
         "type": "Property",
@@ -104,19 +80,43 @@
             "oic.r.printer.3d"
         ]
     },
-    "seeAlso": {
+    "printsizey": {
         "type": "Property",
-        "value": [
-            "urn:ngsi-ld:3DPrinter:items:PIFJ:54891254"
-        ]
+        "value": 528.5
     },
-    "source": {
+    "memorysize": {
         "type": "Property",
-        "value": "Blood poor value boy financial education. Vote kid finally arm onto."
+        "value": 561.5
     },
-    "type": "3DPrinter",
+    "3dprinttype": {
+        "type": "Property",
+        "value": "Photopolymer Jetting Technology"
+    },
     "wanconnected": {
         "type": "Property",
         "value": true
-    }
+    },
+    "printsizex": {
+        "type": "Property",
+        "value": 564.7
+    },
+    "printsizez": {
+        "type": "Property",
+        "value": 810.7
+    },
+    "n": {
+        "type": "Property",
+        "value": "Religious deal "
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.r",
+            "oic.if.baseline"
+        ]
+    },
+    "type": "3DPrinter",
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld"
+    ]
 }
