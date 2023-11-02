@@ -1,76 +1,78 @@
 {
-    "id": "urn:ngsi-ld:smoke:id:SCJX:93736644",
+    "id": "urn:ngsi-ld:smoke:id:VYRR:57457247",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1993-09-01T10:02:46Z"
+            "@value": "2009-11-23T03:21:17Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1987-10-14T19:32:15Z"
+            "@value": "2019-04-21T20:17:35Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Turn turn any thing. Agent common three figure middle six. Quality guess seat late woman beautiful base."
+        "value": "Important actually hope she student ago. Car general third building three central. Thousand score bit."
     },
     "name": {
         "type": "Property",
-        "value": "Team voice up base move. Skill me scientist bill course."
+        "value": "News small TV imagine in quickly condition. Option speak view loca"
     },
     "alternateName": {
         "type": "Property",
-        "value": "Fight mean audience design conference."
+        "value": "Thing defense various five piece blood camera. Teacher relationship especially detail produce exactly take mont"
     },
     "description": {
         "type": "Property",
-        "value": "Model court power point. Strong authority agent morning. Also audience management dream realize letter."
+        "value": "Drive season as idea as what try. Experience very position t"
     },
     "dataProvider": {
         "type": "Property",
-        "value": "Produce citizen three top. Throw offer degree."
+        "value": ""
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:smoke:items:GYSB:34245560",
-            "urn:ngsi-ld:smoke:items:RVWA:68557559"
+            "urn:ngsi-ld:smoke:items:XZMK:53394567",
+            "urn:ngsi-ld:smoke:items:ZWJN:88654730"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:smoke:items:FELW:31350615"
+            "urn:ngsi-ld:smoke:items:FTUU:63403479"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                -23.4820015,
-                85.453417
+                46.5370525,
+                75.632336
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "Full sit west significant foreign contain. Skill allow key student white.",
-            "addressLocality": "Year instead visit establish. Power senior cell ball fine central discuss.",
-            "addressRegion": "Up process thousand task sell Mr. Cold according lead interest.",
-            "addressCountry": "Investment successful bed professional. Reduce task continue radio across.",
-            "postalCode": "Whether sport man necessary mission or. Change today something left development kind activity. Sound cell since help six writer.",
-            "postOfficeBoxNumber": "Still because painting soldier everybody plant work sport. Rule ago anyone staff."
+            "streetAddress": "Staff travel throw go room. Movement oil continue film concern never.",
+            "addressLocality": "Line doctor conference generation big like ",
+            "addressRegion": "Receive threat we management red economy than. East shoulder miss pattern. Station drop indeed. Realiz",
+            "addressCountry": "Agree style section h",
+            "postalCode": "Only commercial soldier receive material door age. Lay could myself usually star weight lawyer affect. Ef",
+            "postOfficeBoxNumber": "Feel describe war event sense on go knowledge. Accept nearly good last garden include.",
+            "streetNr": "Pass skill kid article serious. Garden product s",
+            "district": "Shake even city nor friend behavior explain watch. Budget or present."
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "Take add rate minute long practice security. Where lay price know final knowledge."
+        "value": "Glass p"
     },
     "rt": {
         "type": "Property",
@@ -80,30 +82,30 @@
     },
     "value": {
         "type": "Property",
-        "value": false
+        "value": true
     },
     "measurement": {
         "type": "Property",
-        "value": 805.1
+        "value": 701.8
     },
     "precision": {
         "type": "Property",
-        "value": 904.3
+        "value": 380.9
     },
     "n": {
         "type": "Property",
-        "value": "Evidence significant because long. Notice change understand trouble toward age leave short. Trial billion capital every try front I."
+        "value": "Sit pressure television necessary social station term. Mr wear"
     },
     "range": {
         "type": "Property",
         "value": [
-            594.8,
-            68.6
+            655.0,
+            186.5
         ]
     },
     "step": {
         "type": "Property",
-        "value": 31.9
+        "value": 88.9
     },
     "if": {
         "type": "Property",
@@ -113,7 +115,6 @@
     },
     "type": "smoke",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
