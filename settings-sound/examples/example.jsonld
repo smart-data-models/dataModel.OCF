@@ -1,38 +1,56 @@
 {
-    "id": "urn:ngsi-ld:settings-sound:id:DJPZ:53873776",
-    "dateCreated": "1997-10-31T22:05:18Z",
-    "dateModified": "1996-03-30T03:46:06Z",
-    "source": "Administration radio federal significant cup need. Read hour at build exactly left read. Everyone perform nothing popular.",
-    "name": "Later food speech computer.",
-    "alternateName": "Manage perform attack computer hard. General get tax story degree.",
-    "description": "For today at cup laugh.",
-    "dataProvider": "Meeting sound author hotel court style they. Might final course simply rather. Machine life do thousand a professional. Similar return wait.",
+    "id": "urn:ngsi-ld:settings-sound:id:FEOR:54068496",
+    "dateCreated": "1980-08-26T09:43:11Z",
+    "dateModified": "2006-05-19T00:55:48Z",
+    "source": "Important position share care same sea. Argue internatio",
+    "name": "Authority within mouth work shoulder. Tree news seem black all police.",
+    "alternateName": "Daughter media increase half behind decide leave. Customer modern prevent weight kitchen where recent perhaps.",
+    "description": "Give continue almost foreign skill same eye. Clear heavy house use food.",
+    "dataProvider": "Order bar garden make population. Particularly end down career well agent kitchen country. Military he choice character.",
     "owner": [
-        "urn:ngsi-ld:settings-sound:items:TAGU:20409749",
-        "urn:ngsi-ld:settings-sound:items:OACX:13015302"
+        "urn:ngsi-ld:settings-sound:items:ASBD:54571276",
+        "urn:ngsi-ld:settings-sound:items:GAGW:59069925"
     ],
     "seeAlso": [
-        "urn:ngsi-ld:settings-sound:items:BAFE:60565166",
-        "urn:ngsi-ld:settings-sound:items:WFCN:62742480"
+        "urn:ngsi-ld:settings-sound:items:EDDJ:79167522"
     ],
     "location": {
         "type": "Point",
         "coordinates": [
-            81.343291,
-            -101.756791
+            53.9771575,
+            -164.350245
         ]
     },
     "address": {
-        "streetAddress": "Trial recent wait grow. Learn west glass upon shake none.",
-        "addressLocality": "Learn turn about security director. Current occur person.",
-        "addressRegion": "First court group student cause accept prove. Board thank before sing few address. Wall save tough maintain for Congress.",
-        "addressCountry": "Entire citizen method concern sit fall activity. Baby two food through force my. Shoulder imagine might name.",
-        "postalCode": "Those side short miss less. Budget top run trial. Woman his arrive whether common act.",
-        "postOfficeBoxNumber": "Effort find experience north shake short year. Reality analysis expert see president. True include event city behavior admit."
+        "streetAddress": "By health walk production television happen. Strategy everybody fall reason so. Space city within and bit reveal gas.",
+        "addressLocality": "South minute friend. Buy finish yet say class.",
+        "addressRegion": "National half way enter. Single redu",
+        "addressCountry": "Throughout send share room PM tell. Music",
+        "postalCode": "Front southern each class act can. Least discover involve maybe.",
+        "postOfficeBoxNumber": "Since hot spring only president manage whole. Suggest item find moment else you recently ready.",
+        "streetNr": "Occur a white recognize attack political. Sell difficult these gun.",
+        "district": "Seek career green p"
     },
-    "areaServed": "Movement begin or well design analysis least. Another writer central their add successful bed. East four deal ten common purpose once either.",
+    "areaServed": "Budget",
+    "rt": [
+        "oic.r.settings.sound"
+    ],
+    "if": [
+        "oic.if.baseline",
+        "oic.if.rw"
+    ],
+    "speaker": "Long great expert Democrat visit for later. Floor world serious case light product.",
+    "supported-speakers": [
+        "Degree between number theory western real. Very data election sell of stay style."
+    ],
+    "sound-mode": "Make production within authority.",
+    "supported-sound-modes": [
+        "Stand bed little month car suffer. Soon summer bit. Certain final trouble you however reflect skill activity. Wonder trouble "
+    ],
+    "auto-volume": true,
+    "dolby-atmos-compatibility": false,
+    "type": "settings-sound",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
