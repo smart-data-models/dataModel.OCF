@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: 用于邮政信箱地址的邮政信箱号码。例如：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: 邮政编码。例如：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: 街道地址  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: 标识公共街道上特定房产的编号    
 - `alternateName[string]`: 该项目的替代名称  - `areaServed[string]`: 提供服务或提供物品的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 标识统一数据实体提供者的字符序列  - `dateCreated[date-time]`: 实体创建时间戳。通常由存储平台分配  - `dateModified[date-time]`: 实体最后一次修改的时间戳。通常由存储平台分配  - `description[string]`: 项目描述  - `id[*]`: 实体的唯一标识符  - `if[array]`: 该资源支持的 OCF 接口集  - `location[*]`: 项目的 Geojson 引用。它可以是点、线条字符串、多边形、多点、多线条字符串或多多边形  - `n[string]`: 资源的友好名称  - `name[string]`: 该项目的名称  - `owner[array]`: 包含一个 JSON 编码字符序列的列表，其中引用了所有者的唯一 Ids  - `pulserate[number]`: 脉搏（以 bpm 为单位  - `range[array]`: 资源中属性的有效范围（整数）。数组中的第一个值是最小值，数组中的第二个值是最大值  - `rt[array]`: 资源类型  - `seeAlso[*]`: 指向有关该项目的其他资源的 uri 列表  - `source[string]`: 以 URL 形式给出实体数据原始来源的字符串。建议使用源提供者的完全合格域名或源对象的 URL  - `step[number]`: 当范围为整数时，定义范围内的步长值。  这是整个范围内有效值的增量；因此，如果范围为 0...10，步长为 2，则有效值为 0,2,4,6,8,10  - `type[string]`: NGSI 实体类型。必须是 PulseRate  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 所需属性  
@@ -438,60 +439,53 @@ PulseRate:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:PulseRate:id:NUJB:58758354",  
-  "dateCreated": "1971-10-24T12:34:23Z",  
-  "dateModified": "1987-09-14T19:28:34Z",  
-  "source": "Sometimes with at we prevent Congress. Simply career occur race born program adult. Page behind response ready.",  
-  "name": "Customer likely my teach American turn address. Consumer message still moment. Early discover themselves professor car argue material.",  
-  "alternateName": "There there these whether brother. Dark Mrs avoid actually still. Government two check democratic suffer appear.",  
-  "description": "Itself necessary economic way issue. Certainly four financial soon reveal world social.",  
-  "dataProvider": "National here matter probably window such. Road model against candidate baby.",  
-  "owner": [  
-    "urn:ngsi-ld:PulseRate:items:KBKK:08734295",  
-    "urn:ngsi-ld:PulseRate:items:NCCB:30294375"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:PulseRate:items:MPUF:87206651",  
-    "urn:ngsi-ld:PulseRate:items:NDCP:58802805"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -78.467846,  
-      -21.346787  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Near stage reach hear throughout. Within onto later reason.",  
-    "addressLocality": "Open against trouble study. Possible compare describe foot although. Bill nor word evening despite. Property there lead worry.",  
-    "addressRegion": "Sit data recently future decide operation. Five check green hard make million chair.",  
-    "addressCountry": "Relate political low around weight collection city. However move sound.",  
-    "postalCode": "Against author heart kitchen fire door. Require game staff interest. Nearly executive small trip relationship.",  
-    "postOfficeBoxNumber": "Few fill agent behavior drug hit. All treat why subject now according number."  
-  },  
-  "areaServed": "Late notice skill field. Morning yard we in.",  
-  "rt": [  
-    "oic.r.pulserate",  
-    "oic.r.pulserate"  
-  ],  
-  "pulserate": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "if": [  
-    "oic.if.s",  
-    "oic.if.baseline"  
-  ],  
-  "range": [  
-    864,  
-    864  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "n": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair.",  
-  "type": "PulseRate"  
+    "id": "urn:ngsi-ld:PulseRate:id:PLSG:66048764",  
+    "dateCreated": "2004-05-06T01:26:19Z",  
+    "dateModified": "1979-06-24T16:00:13Z",  
+    "source": "Sense pea",  
+    "name": "Whom local tend employee source. Trouble behavior style report size personal partner. During foot that course nothing draw. Sort language ball floor.",  
+    "alternateName": "Board necessary religious natural sport music white. Natural explain before something first drug contain start. Party prevent live.",  
+    "description": "Theory type successful together. Raise study modern miss dog Democrat quickly.",  
+    "dataProvider": "Every manage political record word group food break. Picture suddenly drug rule bring determine some forward. Beyond chair recently and.",  
+    "owner": [  
+        "urn:ngsi-ld:PulseRate:items:SDMC:98910139",  
+        "urn:ngsi-ld:PulseRate:items:PGXZ:51090321"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:PulseRate:items:HCUJ:00869141"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            4.0313215,  
+            54.112573  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Mean always beyond write. Employe",  
+        "addressLocality": "Small citizen class morning. Others kind company li",  
+        "addressRegion": "Themselves true power home price check real. Score from animal exactly drive well good. Pull opportunity throughout take car.",  
+        "addressCountry": "Security stock ball organization recognize civil. Pm her",  
+        "postalCode": "Industry product another knowledge else citizen month. Traditional page a although for study anyone. Could yourself plan base rise would.",  
+        "postOfficeBoxNumber": "First degree response able state more. Couple part cup few. Beyond take however ball.",  
+        "streetNr": "Son break either president stage popu",  
+        "district": "Water voice travel among see red. Repu"  
+    },  
+    "areaServed": "Full per among clearly. Face house nat",  
+    "rt": [  
+        "oic.r.pulserate"  
+    ],  
+    "pulserate": 864,  
+    "if": [  
+        "oic.if.baseline"  
+    ],  
+    "range": [  
+        864,  
+        864  
+    ],  
+    "step": 864,  
+    "n": "American whole magazine truth stop whose. O",  
+    "type": "PulseRate"  
 }  
 ```  
 </details>  
@@ -500,122 +494,107 @@ PulseRate:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:PulseRate:id:NUJB:58758354"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1971-10-24T12:34:23Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1987-09-14T19:28:34Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Sometimes with at we prevent Congress. Simply career occur race born program adult. Page behind response ready."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Customer likely my teach American turn address. Consumer message still moment. Early discover themselves professor car argue material."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "There there these whether brother. Dark Mrs avoid actually still. Government two check democratic suffer appear."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Itself necessary economic way issue. Certainly four financial soon reveal world social."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "National here matter probably window such. Road model against candidate baby."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:PulseRate:items:KBKK:08734295",  
-      "urn:ngsi-ld:PulseRate:items:NCCB:30294375"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:PulseRate:items:MPUF:87206651",  
-      "urn:ngsi-ld:PulseRate:items:NDCP:58802805"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -78.467846,  
-        -21.346787  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Near stage reach hear throughout. Within onto later reason.",  
-      "addressLocality": "Open against trouble study. Possible compare describe foot although. Bill nor word evening despite. Property there lead worry.",  
-      "addressRegion": "Sit data recently future decide operation. Five check green hard make million chair.",  
-      "addressCountry": "Relate political low around weight collection city. However move sound.",  
-      "postalCode": "Against author heart kitchen fire door. Require game staff interest. Nearly executive small trip relationship.",  
-      "postOfficeBoxNumber": "Few fill agent behavior drug hit. All treat why subject now according number."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Late notice skill field. Morning yard we in."  
-  },  
-  "rt": {  
-    "type": "array",  
-    "value": [  
-      "oic.r.pulserate",  
-      "oic.r.pulserate"  
-    ]  
-  },  
-  "pulserate": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 864  
-    }  
-  },  
-  "if": {  
-    "type": "array",  
-    "value": [  
-      "oic.if.s",  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "range": {  
-    "type": "array",  
-    "value": [  
-      864,  
-      864  
-    ]  
-  },  
-  "step": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 864  
-    }  
-  },  
-  "n": {  
-    "type": "string",  
-    "value": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair."  
-  },  
-  "type": {  
-    "type": "string",  
-    "value": "PulseRate"  
-  }  
+    "id": "urn:ngsi-ld:PulseRate:id:PLSG:66048764",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "2004-05-06T01:26:19Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "1979-06-24T16:00:13Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Sense pea"  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Whom local tend employee source. Trouble behavior style report size personal partner. During foot that course nothing draw. Sort language ball floor."  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Board necessary religious natural sport music white. Natural explain before something first drug contain start. Party prevent live."  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Theory type successful together. Raise study modern miss dog Democrat quickly."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Every manage political record word group food break. Picture suddenly drug rule bring determine some forward. Beyond chair recently and."  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:PulseRate:items:SDMC:98910139",  
+            "urn:ngsi-ld:PulseRate:items:PGXZ:51090321"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:PulseRate:items:HCUJ:00869141"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                4.0313215,  
+                54.112573  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Mean always beyond write. Employe",  
+            "addressLocality": "Small citizen class morning. Others kind company li",  
+            "addressRegion": "Themselves true power home price check real. Score from animal exactly drive well good. Pull opportunity throughout take car.",  
+            "addressCountry": "Security stock ball organization recognize civil. Pm her",  
+            "postalCode": "Industry product another knowledge else citizen month. Traditional page a although for study anyone. Could yourself plan base rise would.",  
+            "postOfficeBoxNumber": "First degree response able state more. Couple part cup few. Beyond take however ball.",  
+            "streetNr": "Son break either president stage popu",  
+            "district": "Water voice travel among see red. Repu"  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Full per among clearly. Face house nat"  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.pulserate"  
+        ]  
+    },  
+    "pulserate": {  
+        "type": "Number",  
+        "value": 864  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "range": {  
+        "type": "StructuredValue",  
+        "value": [  
+            864,  
+            864  
+        ]  
+    },  
+    "step": {  
+        "type": "Number",  
+        "value": 864  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "American whole magazine truth stop whose. O"  
+    },  
+    "type": "PulseRate"  
 }  
 ```  
 </details>  
@@ -624,63 +603,55 @@ PulseRate:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:PulseRate:id:NUJB:58758354",  
-    "dateCreated": "1971-10-24T12:34:23Z",  
-    "dateModified": "1987-09-14T19:28:34Z",  
-    "source": "Sometimes with at we prevent Congress. Simply career occur race born program adult. Page behind response ready.",  
-    "name": "Customer likely my teach American turn address. Consumer message still moment. Early discover themselves professor car argue material.",  
-    "alternateName": "There there these whether brother. Dark Mrs avoid actually still. Government two check democratic suffer appear.",  
-    "description": "Itself necessary economic way issue. Certainly four financial soon reveal world social.",  
-    "dataProvider": "National here matter probably window such. Road model against candidate baby.",  
+    "id": "urn:ngsi-ld:PulseRate:id:PLSG:66048764",  
+    "dateCreated": "2004-05-06T01:26:19Z",  
+    "dateModified": "1979-06-24T16:00:13Z",  
+    "source": "Sense pea",  
+    "name": "Whom local tend employee source. Trouble behavior style report size personal partner. During foot that course nothing draw. Sort language ball floor.",  
+    "alternateName": "Board necessary religious natural sport music white. Natural explain before something first drug contain start. Party prevent live.",  
+    "description": "Theory type successful together. Raise study modern miss dog Democrat quickly.",  
+    "dataProvider": "Every manage political record word group food break. Picture suddenly drug rule bring determine some forward. Beyond chair recently and.",  
     "owner": [  
-        "urn:ngsi-ld:PulseRate:items:KBKK:08734295",  
-        "urn:ngsi-ld:PulseRate:items:NCCB:30294375"  
+        "urn:ngsi-ld:PulseRate:items:SDMC:98910139",  
+        "urn:ngsi-ld:PulseRate:items:PGXZ:51090321"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:PulseRate:items:MPUF:87206651",  
-        "urn:ngsi-ld:PulseRate:items:NDCP:58802805"  
+        "urn:ngsi-ld:PulseRate:items:HCUJ:00869141"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            -78.467846,  
-            -21.346787  
+            4.0313215,  
+            54.112573  
         ]  
     },  
     "address": {  
-        "streetAddress": "Near stage reach hear throughout. Within onto later reason.",  
-        "addressLocality": "Open against trouble study. Possible compare describe foot although. Bill nor word evening despite. Property there lead worry.",  
-        "addressRegion": "Sit data recently future decide operation. Five check green hard make million chair.",  
-        "addressCountry": "Relate political low around weight collection city. However move sound.",  
-        "postalCode": "Against author heart kitchen fire door. Require game staff interest. Nearly executive small trip relationship.",  
-        "postOfficeBoxNumber": "Few fill agent behavior drug hit. All treat why subject now according number."  
+        "streetAddress": "Mean always beyond write. Employe",  
+        "addressLocality": "Small citizen class morning. Others kind company li",  
+        "addressRegion": "Themselves true power home price check real. Score from animal exactly drive well good. Pull opportunity throughout take car.",  
+        "addressCountry": "Security stock ball organization recognize civil. Pm her",  
+        "postalCode": "Industry product another knowledge else citizen month. Traditional page a although for study anyone. Could yourself plan base rise would.",  
+        "postOfficeBoxNumber": "First degree response able state more. Couple part cup few. Beyond take however ball.",  
+        "streetNr": "Son break either president stage popu",  
+        "district": "Water voice travel among see red. Repu"  
     },  
-    "areaServed": "Late notice skill field. Morning yard we in.",  
+    "areaServed": "Full per among clearly. Face house nat",  
     "rt": [  
-        "oic.r.pulserate",  
         "oic.r.pulserate"  
     ],  
-    "pulserate": {  
-        "type": "Property",  
-        "value": 864  
-    },  
+    "pulserate": 864,  
     "if": [  
-        "oic.if.s",  
         "oic.if.baseline"  
     ],  
     "range": [  
         864,  
         864  
     ],  
-    "step": {  
-        "type": "Property",  
-        "value": 864  
-    },  
-    "n": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair.",  
+    "step": 864,  
+    "n": "American whole magazine truth stop whose. O",  
     "type": "PulseRate",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -690,78 +661,80 @@ PulseRate:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:PulseRate:id:CAKY:60522977",  
+    "id": "urn:ngsi-ld:PulseRate:id:PLSG:66048764",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2018-07-25T21:58:49Z"  
+            "@value": "2004-05-06T01:26:19Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2012-07-03T10:51:09Z"  
+            "@value": "1979-06-24T16:00:13Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Begin common friend job agreement billion. Employee several guy. Example yard kid attorney know hundred doctor."  
+        "value": "Sense pea"  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Write son could city his. Other part more late. One threat material least assume into."  
+        "value": "Whom local tend employee source. Trouble behavior style report size personal partner. During foot that course nothing draw. Sort language ball floor."  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Task not later gun unit off. Late home inside car pretty shake. Population edge let wonder dark standard. My might plan."  
+        "value": "Board necessary religious natural sport music white. Natural explain before something first drug contain start. Party prevent live."  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Worker yeah reflect. Describe plant coach save similar."  
+        "value": "Theory type successful together. Raise study modern miss dog Democrat quickly."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Audience blood art window."  
+        "value": "Every manage political record word group food break. Picture suddenly drug rule bring determine some forward. Beyond chair recently and."  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:PulseRate:items:CCUR:33782771",  
-            "urn:ngsi-ld:PulseRate:items:CXUS:74878184"  
+            "urn:ngsi-ld:PulseRate:items:SDMC:98910139",  
+            "urn:ngsi-ld:PulseRate:items:PGXZ:51090321"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:PulseRate:items:FPJW:35681671"  
+            "urn:ngsi-ld:PulseRate:items:HCUJ:00869141"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                89.796559,  
-                146.512788  
+                4.0313215,  
+                54.112573  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Election else quite show cause mean south five. Information necessary report probably and positive up.",  
-            "addressLocality": "Interest direction history party. Cost whether guess remember. Cup involve sort according positive population movie respond.",  
-            "addressRegion": "Cut cup about than require their near eat. Gas everyone training car we find treat. Old quality many anything mean.",  
-            "addressCountry": "Deal local although remain. Way similar peace significant name center.",  
-            "postalCode": "Just score parent main after. Republican create imagine else scene.",  
-            "postOfficeBoxNumber": "Kind thing safe order. Pull whatever success state nature girl star same."  
+            "streetAddress": "Mean always beyond write. Employe",  
+            "addressLocality": "Small citizen class morning. Others kind company li",  
+            "addressRegion": "Themselves true power home price check real. Score from animal exactly drive well good. Pull opportunity throughout take car.",  
+            "addressCountry": "Security stock ball organization recognize civil. Pm her",  
+            "postalCode": "Industry product another knowledge else citizen month. Traditional page a although for study anyone. Could yourself plan base rise would.",  
+            "postOfficeBoxNumber": "First degree response able state more. Couple part cup few. Beyond take however ball.",  
+            "streetNr": "Son break either president stage popu",  
+            "district": "Water voice travel among see red. Repu"  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Attack agent focus reason vote require. Almost sure movement hold pass before."  
+        "value": "Full per among clearly. Face house nat"  
     },  
     "rt": {  
         "type": "Property",  
@@ -771,33 +744,32 @@ PulseRate:
     },  
     "pulserate": {  
         "type": "Property",  
-        "value": 700  
+        "value": 864  
     },  
     "if": {  
         "type": "Property",  
         "value": [  
-            "oic.if.s"  
+            "oic.if.baseline"  
         ]  
     },  
     "range": {  
         "type": "Property",  
         "value": [  
-            152,  
-            528  
+            864,  
+            864  
         ]  
     },  
     "step": {  
         "type": "Property",  
-        "value": 872  
+        "value": 864  
     },  
     "n": {  
         "type": "Property",  
-        "value": "Reduce bill read politics identify also such. Score direction leave chance assume."  
+        "value": "American whole magazine truth stop whose. O"  
     },  
     "type": "PulseRate",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
