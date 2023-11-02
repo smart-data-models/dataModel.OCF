@@ -1,79 +1,98 @@
 {
-    "id": "urn:ngsi-ld:Dali:id:ASCA:96985110",
+    "id": "urn:ngsi-ld:Dali:id:GQEJ:48764759",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2003-06-06T14:11:29Z"
+            "@value": "1979-07-06T09:36:23Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1994-05-26T22:35:06Z"
+            "@value": "2021-06-07T14:46:20Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Under trade view piece. Value walk sense appear since sign evening. Teacher specific measure dinner whatever."
+        "value": "Son would mouth relate own chair better available. Line beyond its particularly tree whom."
     },
     "name": {
         "type": "Property",
-        "value": "Social how air threat memory hit effect. Total poor meeting race rich particularly yourself."
+        "value": "Tend employee source n"
     },
     "alternateName": {
         "type": "Property",
-        "value": "Contain admit newspaper system defense character."
+        "value": "Before year themselves your majority feeling fact. Natural sport music white. Natural explain before something first drug contain start."
     },
     "description": {
         "type": "Property",
-        "value": "Scene free success other so. Action lose report bill yard home painting man. Game senior expert ok talk general current. Stage scientist point card place inside."
+        "value": "Wonder employee attorney quickly candidate change alth"
     },
     "dataProvider": {
         "type": "Property",
-        "value": "Top daughter support open girl author wear season. Plan teacher several range. Anything street boy including."
+        "value": "Study modern miss dog Democrat quickly. Often late produce you true soldier. Food break onto friend."
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:Dali:items:YVYZ:75892470",
-            "urn:ngsi-ld:Dali:items:CZAM:05311010"
+            "urn:ngsi-ld:Dali:items:KNBD:33041352",
+            "urn:ngsi-ld:Dali:items:DUGT:23098910"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:Dali:items:IWBT:06739145"
+            "urn:ngsi-ld:Dali:items:AGFW:91615109"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                -55.820818,
-                18.312295
+                -56.7421445,
+                77.286609
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "Take high figure beautiful three relate. Throughout special wish idea plant heavy.",
-            "addressLocality": "Discuss seek tree eat state Democrat small total. Bill central public any strategy story.",
-            "addressRegion": "Ahead director window by hot simple prove still. Feeling too child.",
-            "addressCountry": "Answer use since federal certain check process. Under mean bad worry under fear lose commercial. Last ground inside number he.",
-            "postalCode": "Media none help body. You lot during daughter court pay size. Physical interest able center watch know.",
-            "postOfficeBoxNumber": "Day chair whole modern off local quite. Figure decide seat agency do."
+            "streetAddress": "View age inte",
+            "addressLocality": "Others record hospital. Grow rule stuff truth",
+            "addressRegion": "Others kind company likely. Tonight themselves true power home price.",
+            "addressCountry": "Real leader bad school name care several. Good explain grow water plant perform resource.",
+            "postalCode": "Stock ball organization recogni",
+            "postOfficeBoxNumber": "Those traditional page a although for study. Speak themselves speech. Nature white without study candidate.",
+            "streetNr": "Wear individual about add se",
+            "district": "Best budget power them evidence without beyond take. Physical against trial son break either. Stage population boy child surface amount day."
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "Its night former break through third mean interesting. Build beat wall until figure collection. Among opportunity or without ask."
+        "value": "Fire happen nothing support suffer which parent. Republican total poli"
     },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.dali"
+        ]
+    },
+    "n": {
+        "type": "Property",
+        "value": "Even front happen behavior. Along e"
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.baseline",
+            "oic.if.w"
+        ]
+    },
+    "type": "Dali",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
