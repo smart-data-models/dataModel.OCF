@@ -1,75 +1,95 @@
 {
-  "id": {
-    "type": "string",
-    "value": "urn:ngsi-ld:RemoteControl:id:MHYX:27427391"
-  },
-  "dateCreated": {
-    "format": "date-time",
-    "type": "string",
-    "value": "2020-10-23T08:18:45Z"
-  },
-  "dateModified": {
-    "format": "date-time",
-    "type": "string",
-    "value": "2011-02-10T14:50:06Z"
-  },
-  "source": {
-    "type": "string",
-    "value": "Age particularly place discover pull. Enter white start our man particularly. What let seem someone."
-  },
-  "name": {
-    "type": "string",
-    "value": "Item concern begin kitchen business. Push religious consumer more."
-  },
-  "alternateName": {
-    "type": "string",
-    "value": "Specific here floor though source yes. While great simple physical. Agree woman research."
-  },
-  "description": {
-    "type": "string",
-    "value": "Commercial rate Mrs I both task key. Describe night apply difficult each cut appear night."
-  },
-  "dataProvider": {
-    "type": "string",
-    "value": "Size hear sign apply. Front service box wind affect."
-  },
-  "owner": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:RemoteControl:items:RTDX:85566642",
-      "urn:ngsi-ld:RemoteControl:items:BEUB:18985018"
-    ]
-  },
-  "seeAlso": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:RemoteControl:items:XFFV:50856411",
-      "urn:ngsi-ld:RemoteControl:items:HRVI:81575167"
-    ]
-  },
-  "location": {
-    "type": "object",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        -71.980562,
-        89.374763
-      ]
-    }
-  },
-  "address": {
-    "type": "object",
-    "value": {
-      "streetAddress": "Arm begin themselves all million. Meeting believe away only. Only scientist make yeah kind.",
-      "addressLocality": "Tv so young.",
-      "addressRegion": "Animal analysis defense resource. Attorney find his box oil figure much. Test hair radio pay break herself important.",
-      "addressCountry": "Tonight under across history. Particular inside sound same. Idea manage author second.",
-      "postalCode": "Message make meet recognize foreign piece. Option stuff hotel condition. News product need program.",
-      "postOfficeBoxNumber": "Camera rate point until away. Now police sit benefit I sign. Enjoy face create number science level. Major hour where care wear."
-    }
-  },
-  "areaServed": {
-    "type": "string",
-    "value": "Often particular few science officer center feel. Government white watch north capital professional enter."
-  }
+    "id": "urn:ngsi-ld:RemoteControl:id:VQGO:05371583",
+    "dateCreated": {
+        "type": "DateTime",
+        "value": "1992-04-25T14:40:19Z"
+    },
+    "dateModified": {
+        "type": "DateTime",
+        "value": "1976-03-18T20:28:01Z"
+    },
+    "source": {
+        "type": "Text",
+        "value": "Which positive candidate school be summer. Effect personal range three. "
+    },
+    "name": {
+        "type": "Text",
+        "value": "Return Republican behavior analysis. Red house oil build choice gun up. Media role long sell picture learn reason capital."
+    },
+    "alternateName": {
+        "type": "Text",
+        "value": "Result their appear put agent these local. Rest administration father performance commercial shake special us."
+    },
+    "description": {
+        "type": "Text",
+        "value": ""
+    },
+    "dataProvider": {
+        "type": "Text",
+        "value": "Call kid over analysis Democrat power determine. To prove from worry."
+    },
+    "owner": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:RemoteControl:items:XWCO:84960583",
+            "urn:ngsi-ld:RemoteControl:items:LAMA:84316052"
+        ]
+    },
+    "seeAlso": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:RemoteControl:items:STYY:16962512"
+        ]
+    },
+    "location": {
+        "type": "geo:json",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                3.7770915,
+                -130.918871
+            ]
+        }
+    },
+    "address": {
+        "type": "StructuredValue",
+        "value": {
+            "streetAddress": "Across why collection through quickly window boy middle.",
+            "addressLocality": "Sport tel",
+            "addressRegion": "Enough audience loss page admit. Case history front effect quickly. Stuff property law investment.",
+            "addressCountry": "Site for production model.",
+            "postalCode": "Nor few serious single techno",
+            "postOfficeBoxNumber": "Technology soon room be right less. Use budget institution.",
+            "streetNr": "Wife ability too civil PM everyone movement.",
+            "district": "Enjoy name recent feel answer interview guy. Once political research."
+        }
+    },
+    "areaServed": {
+        "type": "Text",
+        "value": "Must yard one program board foot difference."
+    },
+    "rt": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.r.remotecontrol"
+        ]
+    },
+    "supportedactions": {
+        "type": "StructuredValue",
+        "value": [
+            "-"
+        ]
+    },
+    "n": {
+        "type": "Text",
+        "value": "End choice during like outside life firm many. Addr"
+    },
+    "if": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.if.a",
+            "oic.if.baseline"
+        ]
+    },
+    "type": "RemoteControl"
 }
