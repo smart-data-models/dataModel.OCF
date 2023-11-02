@@ -1,3 +1,3 @@
 /* (Beta) Export of data model AutomaticDocumentFeeder of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE AutomaticDocumentFeeder_type AS ENUM ('AutomaticDocumentFeeder');
-CREATE TABLE AutomaticDocumentFeeder (adfStates JSON, currentAdfState TEXT, if JSON, n TEXT, rt JSON, type AutomaticDocumentFeeder_type);
+CREATE TABLE AutomaticDocumentFeeder (address JSON, adfStates JSON, alternateName TEXT, areaServed TEXT, currentAdfState TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, if JSON, location JSON, n TEXT, name TEXT, owner JSON, rt JSON, seeAlso JSON, source TEXT, type AutomaticDocumentFeeder_type);
