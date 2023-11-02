@@ -1,34 +1,54 @@
 {
-  "id": "urn:ngsi-ld:PrintQueue:id:LXHD:13994505",
-  "dateCreated": "1979-09-20T10:22:44Z",
-  "dateModified": "2009-09-05T09:27:19Z",
-  "source": "When with even yet. Continue black rich ahead issue follow wish. Onto pull particular able.",
-  "name": "Officer respond return hard. Money team wonder break group pressure. Style section across agreement approach agent.",
-  "alternateName": "Experience all music field image as employee. Chair plant should understand society world writer exactly. Hospital food sea have trade effort investment.",
-  "description": "Window artist its company space decade operation. Appear whose without law laugh his physical television.",
-  "dataProvider": "Might coach anything. Above upon apply. Say product station recognize.",
-  "owner": [
-    "urn:ngsi-ld:PrintQueue:items:QKHC:45761722",
-    "urn:ngsi-ld:PrintQueue:items:WNVQ:88631782"
-  ],
-  "seeAlso": [
-    "urn:ngsi-ld:PrintQueue:items:AKXG:18898809",
-    "urn:ngsi-ld:PrintQueue:items:GCRN:39757926"
-  ],
-  "location": {
-    "type": "Point",
-    "coordinates": [
-      50.515152,
-      129.363957
-    ]
-  },
-  "address": {
-    "streetAddress": "Their career Congress away off mission source. Much poor trade later actually fast. Pressure tell itself wall.",
-    "addressLocality": "Turn statement involve. Hundred toward fear avoid week hair campaign. Party community increase beat situation kitchen significant. Probably fund decide skill many consumer thing particularly.",
-    "addressRegion": "With amount leg difference visit involve blue. While single health line.",
-    "addressCountry": "Center note father such ability sense suffer. Then pretty well information moment body camera.",
-    "postalCode": "Walk Republican bill work can. Look understand pull free.",
-    "postOfficeBoxNumber": "Because show stop near themselves look. Consider number firm next. Have throughout report could I white left. Stuff toward finally budget."
-  },
-  "areaServed": "Important us main leg seven unit explain best. It guess present material trouble. Medical what bed huge. Film indeed positive."
+    "id": "urn:ngsi-ld:PrintQueue:id:DSBY:69849407",
+    "dateCreated": "1977-04-13T01:13:50Z",
+    "dateModified": "2008-02-09T11:24:49Z",
+    "source": "Can wall board culture. Window benefit its wrong degree drop simply.",
+    "name": "City short sound big rest. Near evening beyond professional herself.",
+    "alternateName": "Sea perform require",
+    "description": "Bank interesting prot",
+    "dataProvider": "Summer reason word. Late animal bit able race method example member.",
+    "owner": [
+        "urn:ngsi-ld:PrintQueue:items:QLZW:77438571",
+        "urn:ngsi-ld:PrintQueue:items:UICK:43859697"
+    ],
+    "seeAlso": [
+        "urn:ngsi-ld:PrintQueue:items:YRUI:41497039"
+    ],
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            81.4915515,
+            99.488164
+        ]
+    },
+    "address": {
+        "streetAddress": "Detail girl case provide responsibility area week. Institution sing century standard. Real however enjoy agent determine next doctor around.",
+        "addressLocality": "Bar soon set performance exactly ten try",
+        "addressRegion": "Poor natural some certain available. Far opportunity theory rise above purpose within baby. Business police art technology development both.",
+        "addressCountry": "Kitchen born",
+        "postalCode": "Bill one main. Almost type purp",
+        "postOfficeBoxNumber": "Throw stop hard arrive suffer also tend.",
+        "streetNr": "Indeed second travel late wo",
+        "district": "Feeling laugh news anything whole environmental. Interesting analysis better playe"
+    },
+    "areaServed": "Final draw feeling understand role Mr husband. Rise peace ser",
+    "rt": [
+        "oic.r.printer.queue"
+    ],
+    "queue": [
+        {
+            "status": "Unknown",
+            "uri": "urn:ngsi-ld:PrintQueue:uri:AHBT:92472595"
+        },
+        {
+            "status": "Pending",
+            "uri": "urn:ngsi-ld:PrintQueue:uri:SGIL:98471141"
+        }
+    ],
+    "n": "Emplo",
+    "if": [
+        "oic.if.baseline",
+        "oic.if.r"
+    ],
+    "type": "PrintQueue"
 }
