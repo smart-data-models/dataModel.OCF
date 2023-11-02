@@ -1,129 +1,111 @@
 {
-  "id": {
-    "type": "string",
-    "value": "urn:ngsi-ld:BodyFatFreeMass:id:OWUF:38686534"
-  },
-  "dateCreated": {
-    "format": "date-time",
-    "type": "string",
-    "value": "2016-04-20T09:01:59Z"
-  },
-  "dateModified": {
-    "format": "date-time",
-    "type": "string",
-    "value": "2011-01-29T20:40:15Z"
-  },
-  "source": {
-    "type": "string",
-    "value": "Third draw do environment college. Author each position."
-  },
-  "name": {
-    "type": "string",
-    "value": "Feeling evidence adult loss thing new floor likely. Memory prove back finish record. Number eat fact natural describe able."
-  },
-  "alternateName": {
-    "type": "string",
-    "value": "Wish everyone end carry."
-  },
-  "description": {
-    "type": "string",
-    "value": "Sign summer house citizen official. Nearly business heart development population."
-  },
-  "dataProvider": {
-    "type": "string",
-    "value": "So as today reveal environmental safe right. Pick major environmental listen share day. Star term artist or want."
-  },
-  "owner": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:BodyFatFreeMass:items:VNNT:07840154",
-      "urn:ngsi-ld:BodyFatFreeMass:items:KFNY:73865310"
-    ]
-  },
-  "seeAlso": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:BodyFatFreeMass:items:KAPP:63866226",
-      "urn:ngsi-ld:BodyFatFreeMass:items:QYFK:82184121"
-    ]
-  },
-  "location": {
-    "type": "object",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        -30.758229,
-        124.110579
-      ]
-    }
-  },
-  "address": {
-    "type": "object",
-    "value": {
-      "streetAddress": "Fast ask camera food. Though traditional group number live coach agreement. Thank production hope reflect long else. May science difficult.",
-      "addressLocality": "Special major major sure apply thing operation set. Box tell serve almost simply. Better increase particular group sure both.",
-      "addressRegion": "Social best beyond lead structure. Challenge high beat nature.",
-      "addressCountry": "Staff better standard feel air oil other. Perhaps only newspaper recognize why Congress. High find suffer relationship eight letter door.",
-      "postalCode": "Day back these appear wear. Medical contain consider agent.",
-      "postOfficeBoxNumber": "Allow television gun industry morning. Home ability vote into nearly to."
-    }
-  },
-  "areaServed": {
-    "type": "string",
-    "value": "Behind cold hot benefit. Or many gas election for none."
-  },
-  "rt": {
-    "type": "array",
-    "value": [
-      "oic.r.body.ffm",
-      "oic.r.body.ffm"
-    ]
-  },
-  "ffm": {
-    "type": "object",
-    "value": {
-      "type": "Property",
-      "value": 103.8
-    }
-  },
-  "units": {
-    "type": "string",
-    "value": "percent"
-  },
-  "range": {
-    "type": "array",
-    "value": [
-      974.9,
-      706.9
-    ]
-  },
-  "step": {
-    "type": "object",
-    "value": {
-      "type": "Property",
-      "value": 406.8
-    }
-  },
-  "precision": {
-    "type": "object",
-    "value": {
-      "type": "Property",
-      "value": 396.6
-    }
-  },
-  "n": {
-    "type": "string",
-    "value": "Audience particularly receive offer national course."
-  },
-  "if": {
-    "type": "array",
-    "value": [
-      "oic.if.s",
-      "oic.if.s"
-    ]
-  },
-  "type": {
-    "type": "string",
-    "value": "BodyFatFreeMass"
-  }
+    "id": "urn:ngsi-ld:BodyFatFreeMass:id:OITA:84015603",
+    "dateCreated": {
+        "type": "DateTime",
+        "value": "2008-01-28T11:50:42Z"
+    },
+    "dateModified": {
+        "type": "DateTime",
+        "value": "1989-08-09T09:52:36Z"
+    },
+    "source": {
+        "type": "Text",
+        "value": "Until movie deal million. West course newspaper rest player stand scene. S"
+    },
+    "name": {
+        "type": "Text",
+        "value": "Thing town nor fine specific anyone mind. Pattern really cost film others fund office."
+    },
+    "alternateName": {
+        "type": "Text",
+        "value": "Eat skin conference charge born sometimes night "
+    },
+    "description": {
+        "type": "Text",
+        "value": "Little everything later study accept pretty. Above claim attack take part color big. Turn television determine fire old."
+    },
+    "dataProvider": {
+        "type": "Text",
+        "value": "A scientist such kitchen people song our. Building night risk imagine. We particularly conference mother unit."
+    },
+    "owner": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:BodyFatFreeMass:items:JOUM:77326907",
+            "urn:ngsi-ld:BodyFatFreeMass:items:QQGB:73829140"
+        ]
+    },
+    "seeAlso": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:BodyFatFreeMass:items:LGBL:55154773"
+        ]
+    },
+    "location": {
+        "type": "geo:json",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                20.177127,
+                89.726082
+            ]
+        }
+    },
+    "address": {
+        "type": "StructuredValue",
+        "value": {
+            "streetAddress": "Method city material energy evidence second.",
+            "addressLocality": "Argue certainly skill and consumer save. Lay those me yea",
+            "addressRegion": "Scene top image office. Quality save off pretty decide. Special oil deal.",
+            "addressCountry": "Away their when and hope. Use cultural campaign bank. I trial life offer visit cover.",
+            "postalCode": "Subject learn administration church wish rich. Relationship au",
+            "postOfficeBoxNumber": "Outside difficult adult south. Store data past analysis idea hot system. Year after side machine apply food. Safe too strong whole.",
+            "streetNr": "Month card television machine same speech thought save. High nice couple throw respond thousand might. Third appear grow simply water you.",
+            "district": "Break particular entire response participant bank. Operation window floor wind member responsibility. Bag investment hand answer position coll"
+        }
+    },
+    "areaServed": {
+        "type": "Text",
+        "value": "Development culture federal draw animal fish level central. Table main seat want assume. Raise mil"
+    },
+    "rt": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.r.body.ffm"
+        ]
+    },
+    "ffm": {
+        "type": "Number",
+        "value": 911.0
+    },
+    "units": {
+        "type": "Text",
+        "value": "percent"
+    },
+    "range": {
+        "type": "StructuredValue",
+        "value": [
+            77.7,
+            206.6
+        ]
+    },
+    "step": {
+        "type": "Number",
+        "value": 540.2
+    },
+    "precision": {
+        "type": "Number",
+        "value": 989.8
+    },
+    "n": {
+        "type": "Text",
+        "value": "Run probably certainly."
+    },
+    "if": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.if.s"
+        ]
+    },
+    "type": "BodyFatFreeMass"
 }
