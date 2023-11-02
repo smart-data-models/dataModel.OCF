@@ -1,79 +1,106 @@
 {
-    "id": "urn:ngsi-ld:Deodorization:id:GSSB:36330935",
+    "id": "urn:ngsi-ld:Deodorization:id:DDRP:28146546",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1993-06-11T07:49:03Z"
+            "@value": "2002-04-04T10:47:16Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2001-12-13T21:31:27Z"
+            "@value": "1992-12-09T04:22:28Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Commercial visit fly particularly training. Heart degree leave child. Surface summer style student red."
+        "value": "Look record interview few. Turn phone heart window. Assume be seek article."
     },
     "name": {
         "type": "Property",
-        "value": "Drive many rule check activity may. Of yeah ready career me."
+        "value": "Hour million large major."
     },
     "alternateName": {
         "type": "Property",
-        "value": "Market fund series. Share simply country kind music class. Degree push against company point energy court. I modern face if respond."
+        "value": "Institution happy write end since. Court boy state table agree moment. Budget huge debate among way. Per"
     },
     "description": {
         "type": "Property",
-        "value": "Loss often skin."
+        "value": "Work chance image quite there many true follow. Your play themselves myself use act relationship."
     },
     "dataProvider": {
         "type": "Property",
-        "value": "Economy it total stock PM just enjoy. Ground official professional idea present. Young open situation than debate concern."
+        "value": "Along chance either six success on. At be than always different American address. Former claim chance prevent why measure too."
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:Deodorization:items:XPSC:94768884",
-            "urn:ngsi-ld:Deodorization:items:FYFX:66660011"
+            "urn:ngsi-ld:Deodorization:items:YGJR:80918916",
+            "urn:ngsi-ld:Deodorization:items:VAXF:96769930"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:Deodorization:items:TUUK:04645794"
+            "urn:ngsi-ld:Deodorization:items:JYNM:48945174"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                -30.7009055,
-                60.468347
+                12.993162,
+                -146.575081
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "Claim Mrs seek tax condition down article. Teach start and nice blood myself dog.",
-            "addressLocality": "Middle rise score concern.",
-            "addressRegion": "Tax expect believe situation only stuff. These tax church surface happen arrive of.",
-            "addressCountry": "Local everyone everything them radio total.",
-            "postalCode": "Feeling perhaps course base involve oil try. Question democratic health design realize. Mean nothing machine officer form generation his.",
-            "postOfficeBoxNumber": "House rest health entire down every carry. Staff away sell task effect describe."
+            "streetAddress": "Dream role free walk. Individual man tell response purpo",
+            "addressLocality": "Partner hit another. Sing after our car food record power. Himself simply make t",
+            "addressRegion": "Place full buy radio perform small camera tr",
+            "addressCountry": "What top always effort. War project occur. Director simply those physical maybe. Information figure box international not type very.",
+            "postalCode": "Between similar safe air. Issue",
+            "postOfficeBoxNumber": "Audience throw debate daughter purpose voice. Security fall ready usually.",
+            "streetNr": "Co",
+            "district": "Player contain year bill ok "
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "Likely spring structure service. Congress various environment policy ground."
+        "value": "Information animal car after back available. Federal indicate unit opportunity fear great."
     },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.deodorization"
+        ]
+    },
+    "mode": {
+        "type": "Property",
+        "value": "on"
+    },
+    "currentstate": {
+        "type": "Property",
+        "value": "on"
+    },
+    "n": {
+        "type": "Property",
+        "value": "Heavy across while top. Daught"
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.baseline",
+            "oic.if.a"
+        ]
+    },
+    "type": "Deodorization",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
