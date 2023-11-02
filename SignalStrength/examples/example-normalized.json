@@ -1,75 +1,97 @@
 {
-  "id": {
-    "type": "string",
-    "value": "urn:ngsi-ld:SignalStrength:id:LYPG:67131944"
-  },
-  "dateCreated": {
-    "format": "date-time",
-    "type": "string",
-    "value": "1979-04-01T08:20:09Z"
-  },
-  "dateModified": {
-    "format": "date-time",
-    "type": "string",
-    "value": "1972-04-08T19:10:46Z"
-  },
-  "source": {
-    "type": "string",
-    "value": "Him financial boy top shoulder among building. Special easy against myself."
-  },
-  "name": {
-    "type": "string",
-    "value": "Issue tax executive edge risk event human. Physical science treat give put check."
-  },
-  "alternateName": {
-    "type": "string",
-    "value": "About tax century late control focus law son. Smile movie recent after partner everything popular model. Feeling building center blue free recent."
-  },
-  "description": {
-    "type": "string",
-    "value": "Fight bag listen police. Dog baby finally movement pressure almost."
-  },
-  "dataProvider": {
-    "type": "string",
-    "value": "Option price contain nice. Pattern find data fear. Husband ball same play."
-  },
-  "owner": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:SignalStrength:items:UUTV:05597043",
-      "urn:ngsi-ld:SignalStrength:items:HPGS:58277001"
-    ]
-  },
-  "seeAlso": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:SignalStrength:items:DHAC:60343846",
-      "urn:ngsi-ld:SignalStrength:items:SKJT:28033772"
-    ]
-  },
-  "location": {
-    "type": "object",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        48.4533765,
-        -149.18009
-      ]
-    }
-  },
-  "address": {
-    "type": "object",
-    "value": {
-      "streetAddress": "Respond network protect financial produce across. Should call direction protect employee. Including wind indeed.",
-      "addressLocality": "Type people those create apply share trip about. Management national another pattern age consumer follow over.",
-      "addressRegion": "Late site worry north suggest play yard result. Will peace Congress resource level require. Character chair within close.",
-      "addressCountry": "Southern decision food sound. Along take kid assume. See simple miss in.",
-      "postalCode": "Set seem condition yeah fly. Could growth toward mean court two. Situation skill raise big.",
-      "postOfficeBoxNumber": "Reduce glass what mother tough second. Break key strong partner stock."
-    }
-  },
-  "areaServed": {
-    "type": "string",
-    "value": "Trial idea daughter American mention. Cold level sport charge."
-  }
+    "id": "urn:ngsi-ld:SignalStrength:id:GGHD:03799689",
+    "dateCreated": {
+        "type": "DateTime",
+        "value": "2002-11-06T04:05:58Z"
+    },
+    "dateModified": {
+        "type": "DateTime",
+        "value": "1991-10-24T01:36:20Z"
+    },
+    "source": {
+        "type": "Text",
+        "value": "Gun arrive whatever arrive reflect base matter leas"
+    },
+    "name": {
+        "type": "Text",
+        "value": "Television tend yourself religious type mind trial. Story property watch box."
+    },
+    "alternateName": {
+        "type": "Text",
+        "value": "Relationship call other still follow poor. Simply create bed never pl"
+    },
+    "description": {
+        "type": "Text",
+        "value": "Reality hit energy outside w"
+    },
+    "dataProvider": {
+        "type": "Text",
+        "value": "Spend well subject song. Charge poor fight somebody camera direction hot"
+    },
+    "owner": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:SignalStrength:items:FPGM:70635641",
+            "urn:ngsi-ld:SignalStrength:items:KZWZ:57348603"
+        ]
+    },
+    "seeAlso": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:SignalStrength:items:TGTB:14466454"
+        ]
+    },
+    "location": {
+        "type": "geo:json",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -46.7711165,
+                -160.484273
+            ]
+        }
+    },
+    "address": {
+        "type": "StructuredValue",
+        "value": {
+            "streetAddress": "Customer form daugh",
+            "addressLocality": "Wear line young say. Investment important black various risk unit Mrs inside.",
+            "addressRegion": "Director national together sure shake leave by least. Office moment same difference style. Including environmental educatio",
+            "addressCountry": "Huge personal future operation. Second above want test today ",
+            "postalCode": "Arm position now however home music sing recently. Prove thus at this everyone. Look much product adult determine despite today. However daughter worry.",
+            "postOfficeBoxNumber": "Unit get write even among senior though. Character certain current that. Recent different arm win military response.",
+            "streetNr": "Any everything door home at. Together against instea",
+            "district": "Likely history television. Finally be wonder huge hard."
+        }
+    },
+    "areaServed": {
+        "type": "Text",
+        "value": "She cause right product matter bar if. Thing will environment any particular."
+    },
+    "rt": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.r.signalstrength"
+        ]
+    },
+    "lqi": {
+        "type": "Number",
+        "value": 649.9
+    },
+    "rssi": {
+        "type": "Number",
+        "value": 963.2
+    },
+    "n": {
+        "type": "Text",
+        "value": "Health new blood hour t"
+    },
+    "if": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.if.s",
+            "oic.if.baseline"
+        ]
+    },
+    "type": "SignalStrength"
 }
