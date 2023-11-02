@@ -1,79 +1,102 @@
 {
-    "id": "urn:ngsi-ld:UVBRadiation:id:LKJP:50948325",
+    "id": "urn:ngsi-ld:UVBRadiation:id:DAAT:22565561",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1995-01-18T23:27:40Z"
+            "@value": "2006-10-26T08:41:06Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1984-12-17T17:18:49Z"
+            "@value": "1987-04-06T20:33:21Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Here start blood health prove challenge perform. Idea another watch the possible."
+        "value": "World foreign open miss share. Sea push determine leave me down. Mean trip yeah against goal."
     },
     "name": {
         "type": "Property",
-        "value": "Trip we view. Current now same continue one moment social."
+        "value": "Pretty dog out edge everything. Way instead trial western quickly sea easy establish."
     },
     "alternateName": {
         "type": "Property",
-        "value": "Particularly make evening production. Reduce major above institution image. Left law every include protect several."
+        "value": "Light girl thought land myself probably step."
     },
     "description": {
         "type": "Property",
-        "value": "Call stock economic. Leave pick stuff usually."
+        "value": "Among first material professor live quickly important. Son m"
     },
     "dataProvider": {
         "type": "Property",
-        "value": "Region author doctor might. Stop financial realize admit picture father find."
+        "value": "Manage up lose draw security item season wide. Environment buy between model effect trade once. Also camera party couple window son."
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:UVBRadiation:items:LBQI:53524326",
-            "urn:ngsi-ld:UVBRadiation:items:HXII:53345543"
+            "urn:ngsi-ld:UVBRadiation:items:HBDC:38129595",
+            "urn:ngsi-ld:UVBRadiation:items:IGYI:62683417"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:UVBRadiation:items:YIHE:58894024"
+            "urn:ngsi-ld:UVBRadiation:items:TLXJ:54023310"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                52.194558,
-                6.329331
+                -77.4075855,
+                16.228071
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "Study accept according teach effect it able be. It crime south chance together floor.",
-            "addressLocality": "Force recently particular these remain find want. Moment relate send structure moment final business.",
-            "addressRegion": "Sign approach phone picture. Treat lay her hold both.",
-            "addressCountry": "From east phone bar adult chance. Discussion his leg today each wear amount.",
-            "postalCode": "True cost consider. Rest long pull treatment improve.",
-            "postOfficeBoxNumber": "Point perform team care technology. Away break training then. Born beautiful trouble single fall respond."
+            "streetAddress": "Site budget call remember hotel. Race determine old first feel it.",
+            "addressLocality": "Challenge poor far middle possible join page. Even source attorney dinner protect return science. Together me knowledge agree security.",
+            "addressRegion": "New to voice adult summer yet. Method environment issue.",
+            "addressCountry": "According huge whatever hotel next ever experience. Student partner bring unit economic bed usually.",
+            "postalCode": "Difference factor thus key program pop",
+            "postOfficeBoxNumber": "Them drug news but seven detail physical.",
+            "streetNr": "However station rest seek. Change thing financial. Than listen base. Should return person.",
+            "district": "Sound effect quickly bar chance TV. Hair then I."
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "East share system increase interesting. Friend box positive report concern wait."
+        "value": "Free resource though information tough economy center. Return space statement just stock market."
     },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.sensor.radiation.uvb"
+        ]
+    },
+    "measurement": {
+        "type": "Property",
+        "value": 454.5
+    },
+    "n": {
+        "type": "Property",
+        "value": "Very write already source stock small whom"
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.baseline",
+            "oic.if.s"
+        ]
+    },
+    "type": "UVBRadiation",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
