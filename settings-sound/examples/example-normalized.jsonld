@@ -1,79 +1,122 @@
 {
-    "id": "urn:ngsi-ld:settings-sound:id:TWFM:59833741",
+    "id": "urn:ngsi-ld:settings-sound:id:FEOR:54068496",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1980-08-20T20:10:35Z"
+            "@value": "1980-08-26T09:43:11Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2021-06-16T21:25:41Z"
+            "@value": "2006-05-19T00:55:48Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Sound professor pass. East never sort scientist while prepare region knowledge. Seven be hold along civil west capital resource."
+        "value": "Important position share care same sea. Argue internatio"
     },
     "name": {
         "type": "Property",
-        "value": "Away president early media you. Always fill industry thought."
+        "value": "Authority within mouth work shoulder. Tree news seem black all police."
     },
     "alternateName": {
         "type": "Property",
-        "value": "Indeed heart price in identify state hold church. Nor child heart great common."
+        "value": "Daughter media increase half behind decide leave. Customer modern prevent weight kitchen where recent perhaps."
     },
     "description": {
         "type": "Property",
-        "value": "Choice likely thought. Southern agreement week guess deep choose. Condition money able reflect staff series develop."
+        "value": "Give continue almost foreign skill same eye. Clear heavy house use food."
     },
     "dataProvider": {
         "type": "Property",
-        "value": "Order probably yard Democrat draw. Save fund might southern resource training activity. Music hope city physical."
+        "value": "Order bar garden make population. Particularly end down career well agent kitchen country. Military he choice character."
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:settings-sound:items:QXMH:74451942",
-            "urn:ngsi-ld:settings-sound:items:IDJX:14479708"
+            "urn:ngsi-ld:settings-sound:items:ASBD:54571276",
+            "urn:ngsi-ld:settings-sound:items:GAGW:59069925"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:settings-sound:items:INPA:31446788"
+            "urn:ngsi-ld:settings-sound:items:EDDJ:79167522"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                38.16846,
-                138.887384
+                53.9771575,
+                -164.350245
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "Course lead indeed key plant network. Role policy direction many.",
-            "addressLocality": "Want behind anyone seat.",
-            "addressRegion": "Knowledge wife give speak total back. Three form different I final. Perhaps need skin factor board service heart.",
-            "addressCountry": "Baby age pay news than nation. Exactly forget more prepare blue instead. Body personal affect likely hour middle chair.",
-            "postalCode": "High spend treat. However hair behavior particularly.",
-            "postOfficeBoxNumber": "Stay lawyer wide ahead expect some. Alone crime after kind perform."
+            "streetAddress": "By health walk production television happen. Strategy everybody fall reason so. Space city within and bit reveal gas.",
+            "addressLocality": "South minute friend. Buy finish yet say class.",
+            "addressRegion": "National half way enter. Single redu",
+            "addressCountry": "Throughout send share room PM tell. Music",
+            "postalCode": "Front southern each class act can. Least discover involve maybe.",
+            "postOfficeBoxNumber": "Since hot spring only president manage whole. Suggest item find moment else you recently ready.",
+            "streetNr": "Occur a white recognize attack political. Sell difficult these gun.",
+            "district": "Seek career green p"
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "Both or window media. White national feeling public chance behind."
+        "value": "Budget"
     },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.settings.sound"
+        ]
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.baseline",
+            "oic.if.rw"
+        ]
+    },
+    "speaker": {
+        "type": "Property",
+        "value": "Long great expert Democrat visit for later. Floor world serious case light product."
+    },
+    "supported-speakers": {
+        "type": "Property",
+        "value": [
+            "Degree between number theory western real. Very data election sell of stay style."
+        ]
+    },
+    "sound-mode": {
+        "type": "Property",
+        "value": "Make production within authority."
+    },
+    "supported-sound-modes": {
+        "type": "Property",
+        "value": [
+            "Stand bed little month car suffer. Soon summer bit. Certain final trouble you however reflect skill activity. Wonder trouble "
+        ]
+    },
+    "auto-volume": {
+        "type": "Property",
+        "value": true
+    },
+    "dolby-atmos-compatibility": {
+        "type": "Property",
+        "value": false
+    },
+    "type": "settings-sound",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
