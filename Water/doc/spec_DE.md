@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: Die Postfachnummer für Postfachadressen. Zum Beispiel, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: Die Postleitzahl. Zum Beispiel, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: Die Straßenanschrift  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Nummer zur Identifizierung eines bestimmten Grundstücks an einer öffentlichen Straße    
 - `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit  - `dateCreated[date-time]`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen  - `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben  - `description[string]`: Eine Beschreibung dieses Artikels  - `id[*]`: Eindeutiger Bezeichner der Entität  - `if[array]`: Der von dieser Ressource unterstützte OCF-Schnittstellensatz  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `measurement[number]`: Messwert für diesen Sensor in der Einheit Liter/Stunde  - `n[string]`: Freundlicher Name der Ressource  - `name[string]`: Der Name dieses Artikels  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `precision[number]`: Bei der Exposition bietet der Wert in "precision" eine +/- Toleranz gegenüber den Eigenschaften in der Ressource. Wenn also eine Eigenschaft auf einen Wert AKTUALISIERT wird und diese Eigenschaft dann ZURÜCKGEZOGEN wird, ist der ZURÜCKGEZOGENE Wert gültig, wenn er im Bereich des festgelegten Wertes +/- Präzision liegt  - `range[array]`: Der gültige Bereich für die Eigenschaft in der Ressource in Form einer Zahl. Der erste Wert im Array ist der Mindestwert, der zweite Wert im Array ist der Höchstwert  - `rt[array]`: Der Ressourcentyp  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `step[number]`: Schrittwert über den definierten Bereich eine ganze Zahl, wenn der Bereich eine Zahl ist.  Dies ist die Schrittweite für gültige Werte innerhalb des Bereichs; wenn also der Bereich 0.0..10.0 und der Schritt 2.5 ist, sind die folgenden Werte gültig: 0.0,2.5,5.0,7.5,10.0  - `type[string]`: NGSI-Entitätstyp. Es muss Wasser sein  - `value[boolean]`: wahr = wahrgenommen, falsch = nicht wahrgenommen  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
@@ -449,68 +450,55 @@ Water:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Water:id:ZWTK:51423051",  
-  "dateCreated": "1972-06-13T09:00:45Z",  
-  "dateModified": "1995-08-14T22:33:37Z",  
-  "source": "Up rule production rock catch. Look detail discover knowledge bank. Well a wonder successful suffer follow. Occur less big study despite.",  
-  "name": "Allow really nice interesting happy production thank. First technology produce least late task. Garden clearly memory establish market attention.",  
-  "alternateName": "Member hot seem town hundred after bit. Teacher top far actually fast herself. Good charge collection improve specific even rule.",  
-  "description": "Task somebody soon modern instead cell science. Rise grow himself politics soon success front individual. Win down admit service. College produce policy.",  
-  "dataProvider": "Religious person improve relate than approach cut.",  
-  "owner": [  
-    "urn:ngsi-ld:Water:items:POQB:86877040",  
-    "urn:ngsi-ld:Water:items:KRDJ:18769822"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Water:items:TKJZ:35513270",  
-    "urn:ngsi-ld:Water:items:CIRR:73493788"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -56.619548,  
-      105.731117  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Throughout fund much kitchen relationship.",  
-    "addressLocality": "Very leave turn again admit decide discuss.",  
-    "addressRegion": "Role break many tax.",  
-    "addressCountry": "Opportunity what create color. Community would around eight hot civil.",  
-    "postalCode": "Major sound great range. Stand hundred lot bring crime hold democratic until. Top together source represent onto prove century.",  
-    "postOfficeBoxNumber": "National your easy onto."  
-  },  
-  "areaServed": "Glass act six. Seven sort set western put agent bad. Capital position his safe skin single country.",  
-  "rt": [  
-    "oic.r.sensor.water",  
-    "oic.r.sensor.water"  
-  ],  
-  "value": {  
-    "type": "Property",  
-    "value": true  
-  },  
-  "measurement": {  
-    "type": "Property",  
-    "value": 337.9  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 149.1  
-  },  
-  "n": "Sort thank build year allow war possible federal. Bad network reach important strong age.",  
-  "range": [  
-    59.7,  
-    65.7  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 404.8  
-  },  
-  "if": [  
-    "oic.if.s",  
-    "oic.if.s"  
-  ],  
-  "type": "Water"  
+    "id": "urn:ngsi-ld:Water:id:DOYR:11912958",  
+    "dateCreated": "2023-02-21T17:22:09Z",  
+    "dateModified": "2023-07-29T02:37:33Z",  
+    "source": "For community student education record middle place reduce. Should only happy. Space mention wide actually because such produce.",  
+    "name": "It hour heart own. Maybe day public n",  
+    "alternateName": "But rule rock d",  
+    "description": "Represent turn there education. Receive scene water despite than member pretty I. Apply test hop",  
+    "dataProvider": "Away action difference five. Easy socie",  
+    "owner": [  
+        "urn:ngsi-ld:Water:items:TJIX:66655738",  
+        "urn:ngsi-ld:Water:items:CJGX:87961037"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Water:items:GDCA:73327487"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            29.625734,  
+            35.828906  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Family not system skill. Resource statement thus against authori",  
+        "addressLocality": "Suddenly west goal same happy. Information every economic party determine social.",  
+        "addressRegion": "Analysis head develop present grow. Already three protect investment. Later cause while draw tell citizen chance.",  
+        "addressCountry": "Might court myself stage entire major move health. Usually a clear science serve main very should.",  
+        "postalCode": "Including into popular treatment check probably. There film attorney challenge suggest. While",  
+        "postOfficeBoxNumber": "But camp",  
+        "streetNr": "Now action hand ever half process. Improve any list lead ",  
+        "district": "Skin benefit exactly oil financial. Assume foreign wear listen water executive economy best. May food field occur base surface approach water."  
+    },  
+    "areaServed": "Enjoy less interest. Develop near nothing another. Teach ef",  
+    "rt": [  
+        "oic.r.sensor.water"  
+    ],  
+    "value": false,  
+    "measurement": 262.5,  
+    "precision": 296.1,  
+    "n": "Well drive season thought.",  
+    "range": [  
+        610.2,  
+        284.2  
+    ],  
+    "step": 846.3,  
+    "if": [  
+        "oic.if.baseline"  
+    ],  
+    "type": "Water"  
 }  
 ```  
 </details>  
@@ -519,136 +507,115 @@ Water:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:Water:id:ZWTK:51423051"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1972-06-13T09:00:45Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1995-08-14T22:33:37Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Up rule production rock catch. Look detail discover knowledge bank. Well a wonder successful suffer follow. Occur less big study despite."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Allow really nice interesting happy production thank. First technology produce least late task. Garden clearly memory establish market attention."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Member hot seem town hundred after bit. Teacher top far actually fast herself. Good charge collection improve specific even rule."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Task somebody soon modern instead cell science. Rise grow himself politics soon success front individual. Win down admit service. College produce policy."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Religious person improve relate than approach cut."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Water:items:POQB:86877040",  
-      "urn:ngsi-ld:Water:items:KRDJ:18769822"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Water:items:TKJZ:35513270",  
-      "urn:ngsi-ld:Water:items:CIRR:73493788"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
+    "id": "urn:ngsi-ld:Water:id:DOYR:11912958",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "2023-02-21T17:22:09Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "2023-07-29T02:37:33Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "For community student education record middle place reduce. Should only happy. Space mention wide actually because such produce."  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "It hour heart own. Maybe day public n"  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "But rule rock d"  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Represent turn there education. Receive scene water despite than member pretty I. Apply test hop"  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Away action difference five. Easy socie"  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Water:items:TJIX:66655738",  
+            "urn:ngsi-ld:Water:items:CJGX:87961037"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Water:items:GDCA:73327487"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                29.625734,  
+                35.828906  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Family not system skill. Resource statement thus against authori",  
+            "addressLocality": "Suddenly west goal same happy. Information every economic party determine social.",  
+            "addressRegion": "Analysis head develop present grow. Already three protect investment. Later cause while draw tell citizen chance.",  
+            "addressCountry": "Might court myself stage entire major move health. Usually a clear science serve main very should.",  
+            "postalCode": "Including into popular treatment check probably. There film attorney challenge suggest. While",  
+            "postOfficeBoxNumber": "But camp",  
+            "streetNr": "Now action hand ever half process. Improve any list lead ",  
+            "district": "Skin benefit exactly oil financial. Assume foreign wear listen water executive economy best. May food field occur base surface approach water."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Enjoy less interest. Develop near nothing another. Teach ef"  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.sensor.water"  
+        ]  
+    },  
     "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -56.619548,  
-        105.731117  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Throughout fund much kitchen relationship.",  
-      "addressLocality": "Very leave turn again admit decide discuss.",  
-      "addressRegion": "Role break many tax.",  
-      "addressCountry": "Opportunity what create color. Community would around eight hot civil.",  
-      "postalCode": "Major sound great range. Stand hundred lot bring crime hold democratic until. Top together source represent onto prove century.",  
-      "postOfficeBoxNumber": "National your easy onto."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Glass act six. Seven sort set western put agent bad. Capital position his safe skin single country."  
-  },  
-  "rt": {  
-    "type": "array",  
-    "value": [  
-      "oic.r.sensor.water",  
-      "oic.r.sensor.water"  
-    ]  
-  },  
-  "value": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": true  
-    }  
-  },  
-  "measurement": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 337.9  
-    }  
-  },  
-  "precision": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 149.1  
-    }  
-  },  
-  "n": {  
-    "type": "string",  
-    "value": "Sort thank build year allow war possible federal. Bad network reach important strong age."  
-  },  
-  "range": {  
-    "type": "array",  
-    "value": [  
-      59.7,  
-      65.7  
-    ]  
-  },  
-  "step": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 404.8  
-    }  
-  },  
-  "if": {  
-    "type": "array",  
-    "value": [  
-      "oic.if.s",  
-      "oic.if.s"  
-    ]  
-  },  
-  "type": {  
-    "type": "string",  
-    "value": "Water"  
-  }  
+        "type": "Boolean",  
+        "value": false  
+    },  
+    "measurement": {  
+        "type": "Number",  
+        "value": 262.5  
+    },  
+    "precision": {  
+        "type": "Number",  
+        "value": 296.1  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Well drive season thought."  
+    },  
+    "range": {  
+        "type": "StructuredValue",  
+        "value": [  
+            610.2,  
+            284.2  
+        ]  
+    },  
+    "step": {  
+        "type": "Number",  
+        "value": 846.3  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "Water"  
 }  
 ```  
 </details>  
@@ -657,71 +624,57 @@ Water:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Water:id:ZWTK:51423051",  
-    "dateCreated": "1972-06-13T09:00:45Z",  
-    "dateModified": "1995-08-14T22:33:37Z",  
-    "source": "Up rule production rock catch. Look detail discover knowledge bank. Well a wonder successful suffer follow. Occur less big study despite.",  
-    "name": "Allow really nice interesting happy production thank. First technology produce least late task. Garden clearly memory establish market attention.",  
-    "alternateName": "Member hot seem town hundred after bit. Teacher top far actually fast herself. Good charge collection improve specific even rule.",  
-    "description": "Task somebody soon modern instead cell science. Rise grow himself politics soon success front individual. Win down admit service. College produce policy.",  
-    "dataProvider": "Religious person improve relate than approach cut.",  
+    "id": "urn:ngsi-ld:Water:id:DOYR:11912958",  
+    "dateCreated": "2023-02-21T17:22:09Z",  
+    "dateModified": "2023-07-29T02:37:33Z",  
+    "source": "For community student education record middle place reduce. Should only happy. Space mention wide actually because such produce.",  
+    "name": "It hour heart own. Maybe day public n",  
+    "alternateName": "But rule rock d",  
+    "description": "Represent turn there education. Receive scene water despite than member pretty I. Apply test hop",  
+    "dataProvider": "Away action difference five. Easy socie",  
     "owner": [  
-        "urn:ngsi-ld:Water:items:POQB:86877040",  
-        "urn:ngsi-ld:Water:items:KRDJ:18769822"  
+        "urn:ngsi-ld:Water:items:TJIX:66655738",  
+        "urn:ngsi-ld:Water:items:CJGX:87961037"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:Water:items:TKJZ:35513270",  
-        "urn:ngsi-ld:Water:items:CIRR:73493788"  
+        "urn:ngsi-ld:Water:items:GDCA:73327487"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            -56.619548,  
-            105.731117  
+            29.625734,  
+            35.828906  
         ]  
     },  
     "address": {  
-        "streetAddress": "Throughout fund much kitchen relationship.",  
-        "addressLocality": "Very leave turn again admit decide discuss.",  
-        "addressRegion": "Role break many tax.",  
-        "addressCountry": "Opportunity what create color. Community would around eight hot civil.",  
-        "postalCode": "Major sound great range. Stand hundred lot bring crime hold democratic until. Top together source represent onto prove century.",  
-        "postOfficeBoxNumber": "National your easy onto."  
+        "streetAddress": "Family not system skill. Resource statement thus against authori",  
+        "addressLocality": "Suddenly west goal same happy. Information every economic party determine social.",  
+        "addressRegion": "Analysis head develop present grow. Already three protect investment. Later cause while draw tell citizen chance.",  
+        "addressCountry": "Might court myself stage entire major move health. Usually a clear science serve main very should.",  
+        "postalCode": "Including into popular treatment check probably. There film attorney challenge suggest. While",  
+        "postOfficeBoxNumber": "But camp",  
+        "streetNr": "Now action hand ever half process. Improve any list lead ",  
+        "district": "Skin benefit exactly oil financial. Assume foreign wear listen water executive economy best. May food field occur base surface approach water."  
     },  
-    "areaServed": "Glass act six. Seven sort set western put agent bad. Capital position his safe skin single country.",  
+    "areaServed": "Enjoy less interest. Develop near nothing another. Teach ef",  
     "rt": [  
-        "oic.r.sensor.water",  
         "oic.r.sensor.water"  
     ],  
-    "value": {  
-        "type": "Property",  
-        "value": true  
-    },  
-    "measurement": {  
-        "type": "Property",  
-        "value": 337.9  
-    },  
-    "precision": {  
-        "type": "Property",  
-        "value": 149.1  
-    },  
-    "n": "Sort thank build year allow war possible federal. Bad network reach important strong age.",  
+    "value": false,  
+    "measurement": 262.5,  
+    "precision": 296.1,  
+    "n": "Well drive season thought.",  
     "range": [  
-        59.7,  
-        65.7  
+        610.2,  
+        284.2  
     ],  
-    "step": {  
-        "type": "Property",  
-        "value": 404.8  
-    },  
+    "step": 846.3,  
     "if": [  
-        "oic.if.s",  
-        "oic.if.s"  
+        "oic.if.baseline"  
     ],  
     "type": "Water",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -731,78 +684,80 @@ Water:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Water:id:IGIX:52349323",  
+    "id": "urn:ngsi-ld:Water:id:DOYR:11912958",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2008-12-09T09:24:38Z"  
+            "@value": "2023-02-21T17:22:09Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1970-07-26T10:30:36Z"  
+            "@value": "2023-07-29T02:37:33Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Wait method certain to. Three prevent southern turn market outside. Should night edge policy benefit any store. Audience keep else on name."  
+        "value": "For community student education record middle place reduce. Should only happy. Space mention wide actually because such produce."  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Democratic especially behavior good discover recognize behavior. Reason yeah nice population."  
+        "value": "It hour heart own. Maybe day public n"  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "East majority painting fact. Watch recognize city system result simply concern. Song possible on accept."  
+        "value": "But rule rock d"  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Either movement understand manage call. Seven market table mouth feeling now base. Short size act sound."  
+        "value": "Represent turn there education. Receive scene water despite than member pretty I. Apply test hop"  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Industry national task lay. Thank as line level."  
+        "value": "Away action difference five. Easy socie"  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Water:items:QYEH:60886268",  
-            "urn:ngsi-ld:Water:items:SCJR:34861037"  
+            "urn:ngsi-ld:Water:items:TJIX:66655738",  
+            "urn:ngsi-ld:Water:items:CJGX:87961037"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Water:items:VHGW:29144445"  
+            "urn:ngsi-ld:Water:items:GDCA:73327487"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                -38.9642505,  
-                -126.072131  
+                29.625734,  
+                35.828906  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Give represent government use eye. Police road return focus.",  
-            "addressLocality": "Someone area I oil. Military wind direction yes environmental.",  
-            "addressRegion": "Possible hold can. Born likely group.",  
-            "addressCountry": "Future upon information learn certain. Democrat argue wind member. Current probably campaign seem language young future above.",  
-            "postalCode": "Big push federal weight play. Involve onto however soldier contain. Give raise because over.",  
-            "postOfficeBoxNumber": "Democrat ahead when return poor well. Speech effort those. Simply particular big they better."  
+            "streetAddress": "Family not system skill. Resource statement thus against authori",  
+            "addressLocality": "Suddenly west goal same happy. Information every economic party determine social.",  
+            "addressRegion": "Analysis head develop present grow. Already three protect investment. Later cause while draw tell citizen chance.",  
+            "addressCountry": "Might court myself stage entire major move health. Usually a clear science serve main very should.",  
+            "postalCode": "Including into popular treatment check probably. There film attorney challenge suggest. While",  
+            "postOfficeBoxNumber": "But camp",  
+            "streetNr": "Now action hand ever half process. Improve any list lead ",  
+            "district": "Skin benefit exactly oil financial. Assume foreign wear listen water executive economy best. May food field occur base surface approach water."  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Rule full country result community central environment. Memory authority popular election alone."  
+        "value": "Enjoy less interest. Develop near nothing another. Teach ef"  
     },  
     "rt": {  
         "type": "Property",  
@@ -816,26 +771,26 @@ Water:
     },  
     "measurement": {  
         "type": "Property",  
-        "value": 488.6  
+        "value": 262.5  
     },  
     "precision": {  
         "type": "Property",  
-        "value": 976.2  
+        "value": 296.1  
     },  
     "n": {  
         "type": "Property",  
-        "value": "Mind arm popular rate never. Similar so body box. Reflect right development."  
+        "value": "Well drive season thought."  
     },  
     "range": {  
         "type": "Property",  
         "value": [  
-            450.6,  
-            89.0  
+            610.2,  
+            284.2  
         ]  
     },  
     "step": {  
         "type": "Property",  
-        "value": 832.4  
+        "value": 846.3  
     },  
     "if": {  
         "type": "Property",  
@@ -845,8 +800,7 @@ Water:
     },  
     "type": "Water",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
