@@ -15,7 +15,15 @@
 ## Liste des propriétés  
 
 <sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il peut avoir plusieurs types ou différents formats/modèles</sub></sup>.  
-- `if[array]`: L'ensemble d'interfaces OCF pris en charge par cette ressource.  - `n[string]`: Nom amical de la ressource  - `rt[array]`: Le type de ressources.  - `type[string]`: Type d'entité NGSI. Il doit s'agir de Touch  - `value[boolean]`: Le capteur tactile, vrai = détecté, faux = non détecté.  <!-- /30-PropertiesList -->  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Le pays. Par exemple, l'Espagne  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: La localité dans laquelle se trouve l'adresse postale et qui se trouve dans la région  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: La région dans laquelle se trouve la localité et qui se trouve dans le pays  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Un district est un type de division administrative qui, dans certains pays, est géré par le gouvernement local.    
+	- `postOfficeBoxNumber[string]`: Le numéro de la boîte postale pour les adresses de boîtes postales. Par exemple, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Le code postal. Par exemple, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: L'adresse de la rue  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Numéro identifiant une propriété spécifique sur une voie publique    
+- `alternateName[string]`: Un nom alternatif pour ce poste  - `areaServed[string]`: La zone géographique où un service ou un article est offert  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées  - `dateCreated[date-time]`: Horodatage de la création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage  - `dateModified[date-time]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage  - `description[string]`: Une description de l'article  - `id[*]`: Identifiant unique de l'entité  - `if[array]`: L'ensemble d'interfaces OCF pris en charge par cette ressource.  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une chaîne de ligne, d'un polygone, d'un point multiple, d'une chaîne de ligne multiple ou d'un polygone multiple.  - `n[string]`: Nom amical de la ressource  - `name[string]`: Le nom de cet élément  - `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  - `rt[array]`: Le type de ressources.  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  - `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  - `type[string]`: Type d'entité NGSI. Il doit s'agir de Touch  - `value[boolean]`: Le capteur tactile, vrai = détecté, faux = non détecté.  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propriétés requises  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -32,6 +40,109 @@
 Touch:    
   description: 'Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes whether a touch has been sensed or not. The Property ''value'' is a boolean. A value of ''true'' means that touch has been sensed. A value of ''false'' means that touch not been sensed. '    
   properties:    
+    address:    
+      description: The mailing address    
+      properties:    
+        addressCountry:    
+          description: 'The country. For example, Spain'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
+        addressLocality:    
+          description: 'The locality in which the street address is, and which is in the region'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
+        addressRegion:    
+          description: 'The region in which the locality is, and which is in the country'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        postOfficeBoxNumber:    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
+        postalCode:    
+          description: 'The postal code. For example, 24004'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
+        streetAddress:    
+          description: The street address    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      type: object    
+      x-ngsi:    
+        model: https://schema.org/address    
+        type: Property    
+    alternateName:    
+      description: An alternative name for this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    areaServed:    
+      description: The geographic area where a service or offered item is provided    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    dataProvider:    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateCreated:    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateModified:    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    description:    
+      description: A description of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    id:    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
+      x-ngsi:    
+        type: Property    
     if:    
       description: The OCF Interface set supported by this Resource.    
       items:    
@@ -45,11 +156,203 @@ Touch:
       uniqueItems: true    
       x-ngsi:    
         type: Property    
+    location:    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+      oneOf:    
+        - description: Geojson reference to the item. Point    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                type: number    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - Point    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Point    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - LineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON LineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 4    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - Polygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Polygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPoint    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPoint    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiLineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiLineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    items:    
+                      type: number    
+                    minItems: 2    
+                    type: array    
+                  minItems: 4    
+                  type: array    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPolygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPolygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+      x-ngsi:    
+        type: GeoProperty    
     n:    
       description: Friendly name of the Resource    
       maxLength: 64    
       readOnly: true    
       type: string    
+      x-ngsi:    
+        type: Property    
+    name:    
+      description: The name of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    owner:    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
+      items:    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
+      type: array    
       x-ngsi:    
         type: Property    
     rt:    
@@ -63,6 +366,23 @@ Touch:
       readOnly: true    
       type: array    
       uniqueItems: true    
+      x-ngsi:    
+        type: Property    
+    seeAlso:    
+      description: list of uri pointing to additional resources about the item    
+      oneOf:    
+        - items:    
+            format: uri    
+            type: string    
+          minItems: 1    
+          type: array    
+        - format: uri    
+          type: string    
+      x-ngsi:    
+        type: Property    
+    source:    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
+      type: string    
       x-ngsi:    
         type: Property    
     type:    
@@ -100,38 +420,49 @@ Touch:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Touch:id:LOIR:63598499",  
-  "dateCreated": "1983-12-11T19:06:03Z",  
-  "dateModified": "2013-08-06T21:33:42Z",  
-  "source": "National hold movie his idea hear actually. Represent tough another to high reach. Everyone consumer area a between player.",  
-  "name": "Second record indeed discussion discover. Modern candidate factor.",  
-  "alternateName": "Campaign wonder media international pass wait cost. Break certainly process car positive along learn. Yet everyone fast.",  
-  "description": "Mrs position force scene task. Believe manager challenge everything.",  
-  "dataProvider": "Course force hotel ability friend red beyond official. Reveal realize then medical name must. Exactly official population able little expert include.",  
-  "owner": [  
-    "urn:ngsi-ld:Touch:items:IHLX:24425242",  
-    "urn:ngsi-ld:Touch:items:QUCL:88074146"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Touch:items:DMBH:20221912",  
-    "urn:ngsi-ld:Touch:items:FGQX:49550308"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      54.5830575,  
-      95.942963  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Forward pass know suggest music from source. Our deep reality suggest change.",  
-    "addressLocality": "Leader positive already for cultural class. Turn treatment break quality. Success now special sound bank where relate.",  
-    "addressRegion": "Off perhaps necessary save deal late still. Nice ever gas. Area son house forward their then.",  
-    "addressCountry": "Successful our student none campaign.",  
-    "postalCode": "Pattern who author window loss culture over. Box method customer present. Course that enjoy within economic interview. Off quality edge pay church voice.",  
-    "postOfficeBoxNumber": "For agency treat style."  
-  },  
-  "areaServed": "These list spend local ball cultural. Series thought go vote. Per state push general."  
+    "id": "urn:ngsi-ld:Touch:id:NIDZ:89728507",  
+    "dateCreated": "1971-08-23T11:21:33Z",  
+    "dateModified": "2008-10-09T07:54:17Z",  
+    "source": "Get similar note head free game. Ago if help blood. Year practice phone without still sport guess exist",  
+    "name": "Addr",  
+    "alternateName": "Dark fly describe when. Their stand draw expect TV star scienti",  
+    "description": "Opportunity financial on sit determine perform process. Tend huge interview before.",  
+    "dataProvider": "Account relate structure anyone allow some time.",  
+    "owner": [  
+        "urn:ngsi-ld:Touch:items:PRIP:81746251",  
+        "urn:ngsi-ld:Touch:items:SXPR:59698179"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Touch:items:BMXR:44472001"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            25.6702675,  
+            -113.845787  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Report another gas go. So school job rather.",  
+        "addressLocality": "Fall color hard bill wind summer sit. Lawyer follow economic season least. Pressure morning either arm.",  
+        "addressRegion": "Production despite very change range society. Country environment poor community we. Recent the least law",  
+        "addressCountry": "Notice not bag building structure candidate military. Along let real detail change court",  
+        "postalCode": "Sing end adult analysis serious field. Generation help somebody check beyond rule sometimes. Describe every under ",  
+        "postOfficeBoxNumber": "Research father your kitchen audience if president. Father act system where voice two idea majority.",  
+        "streetNr": "Course prevent organization Democrat believe. Loss once assume player visit. Service career campaign test beyond leader.",  
+        "district": "Whatever expect notice answer"  
+    },  
+    "areaServed": "Staff test exist difficult. Assume tough art meeti",  
+    "rt": [  
+        "oic.r.sensor.touch"  
+    ],  
+    "value": true,  
+    "n": "Walk where hour mission ok final. Article new she recent enough",  
+    "if": [  
+        "oic.if.s",  
+        "oic.if.baseline"  
+    ],  
+    "type": "Touch"  
 }  
 ```  
 </details>  
@@ -140,79 +471,97 @@ Touch:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:Touch:id:LOIR:63598499"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1983-12-11T19:06:03Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2013-08-06T21:33:42Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "National hold movie his idea hear actually. Represent tough another to high reach. Everyone consumer area a between player."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Second record indeed discussion discover. Modern candidate factor."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Campaign wonder media international pass wait cost. Break certainly process car positive along learn. Yet everyone fast."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Mrs position force scene task. Believe manager challenge everything."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Course force hotel ability friend red beyond official. Reveal realize then medical name must. Exactly official population able little expert include."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Touch:items:IHLX:24425242",  
-      "urn:ngsi-ld:Touch:items:QUCL:88074146"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Touch:items:DMBH:20221912",  
-      "urn:ngsi-ld:Touch:items:FGQX:49550308"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
+    "id": "urn:ngsi-ld:Touch:id:NIDZ:89728507",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1971-08-23T11:21:33Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "2008-10-09T07:54:17Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Get similar note head free game. Ago if help blood. Year practice phone without still sport guess exist"  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Addr"  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Dark fly describe when. Their stand draw expect TV star scienti"  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Opportunity financial on sit determine perform process. Tend huge interview before."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Account relate structure anyone allow some time."  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Touch:items:PRIP:81746251",  
+            "urn:ngsi-ld:Touch:items:SXPR:59698179"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Touch:items:BMXR:44472001"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                25.6702675,  
+                -113.845787  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Report another gas go. So school job rather.",  
+            "addressLocality": "Fall color hard bill wind summer sit. Lawyer follow economic season least. Pressure morning either arm.",  
+            "addressRegion": "Production despite very change range society. Country environment poor community we. Recent the least law",  
+            "addressCountry": "Notice not bag building structure candidate military. Along let real detail change court",  
+            "postalCode": "Sing end adult analysis serious field. Generation help somebody check beyond rule sometimes. Describe every under ",  
+            "postOfficeBoxNumber": "Research father your kitchen audience if president. Father act system where voice two idea majority.",  
+            "streetNr": "Course prevent organization Democrat believe. Loss once assume player visit. Service career campaign test beyond leader.",  
+            "district": "Whatever expect notice answer"  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Staff test exist difficult. Assume tough art meeti"  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.sensor.touch"  
+        ]  
+    },  
     "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        54.5830575,  
-        95.942963  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Forward pass know suggest music from source. Our deep reality suggest change.",  
-      "addressLocality": "Leader positive already for cultural class. Turn treatment break quality. Success now special sound bank where relate.",  
-      "addressRegion": "Off perhaps necessary save deal late still. Nice ever gas. Area son house forward their then.",  
-      "addressCountry": "Successful our student none campaign.",  
-      "postalCode": "Pattern who author window loss culture over. Box method customer present. Course that enjoy within economic interview. Off quality edge pay church voice.",  
-      "postOfficeBoxNumber": "For agency treat style."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "These list spend local ball cultural. Series thought go vote. Per state push general."  
-  }  
+        "type": "Boolean",  
+        "value": true  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Walk where hour mission ok final. Article new she recent enough"  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.s",  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "Touch"  
 }  
 ```  
 </details>  
@@ -221,41 +570,51 @@ Touch:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Touch:id:LOIR:63598499",  
-    "dateCreated": "1983-12-11T19:06:03Z",  
-    "dateModified": "2013-08-06T21:33:42Z",  
-    "source": "National hold movie his idea hear actually. Represent tough another to high reach. Everyone consumer area a between player.",  
-    "name": "Second record indeed discussion discover. Modern candidate factor.",  
-    "alternateName": "Campaign wonder media international pass wait cost. Break certainly process car positive along learn. Yet everyone fast.",  
-    "description": "Mrs position force scene task. Believe manager challenge everything.",  
-    "dataProvider": "Course force hotel ability friend red beyond official. Reveal realize then medical name must. Exactly official population able little expert include.",  
+    "id": "urn:ngsi-ld:Touch:id:NIDZ:89728507",  
+    "dateCreated": "1971-08-23T11:21:33Z",  
+    "dateModified": "2008-10-09T07:54:17Z",  
+    "source": "Get similar note head free game. Ago if help blood. Year practice phone without still sport guess exist",  
+    "name": "Addr",  
+    "alternateName": "Dark fly describe when. Their stand draw expect TV star scienti",  
+    "description": "Opportunity financial on sit determine perform process. Tend huge interview before.",  
+    "dataProvider": "Account relate structure anyone allow some time.",  
     "owner": [  
-        "urn:ngsi-ld:Touch:items:IHLX:24425242",  
-        "urn:ngsi-ld:Touch:items:QUCL:88074146"  
+        "urn:ngsi-ld:Touch:items:PRIP:81746251",  
+        "urn:ngsi-ld:Touch:items:SXPR:59698179"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:Touch:items:DMBH:20221912",  
-        "urn:ngsi-ld:Touch:items:FGQX:49550308"  
+        "urn:ngsi-ld:Touch:items:BMXR:44472001"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            54.5830575,  
-            95.942963  
+            25.6702675,  
+            -113.845787  
         ]  
     },  
     "address": {  
-        "streetAddress": "Forward pass know suggest music from source. Our deep reality suggest change.",  
-        "addressLocality": "Leader positive already for cultural class. Turn treatment break quality. Success now special sound bank where relate.",  
-        "addressRegion": "Off perhaps necessary save deal late still. Nice ever gas. Area son house forward their then.",  
-        "addressCountry": "Successful our student none campaign.",  
-        "postalCode": "Pattern who author window loss culture over. Box method customer present. Course that enjoy within economic interview. Off quality edge pay church voice.",  
-        "postOfficeBoxNumber": "For agency treat style."  
+        "streetAddress": "Report another gas go. So school job rather.",  
+        "addressLocality": "Fall color hard bill wind summer sit. Lawyer follow economic season least. Pressure morning either arm.",  
+        "addressRegion": "Production despite very change range society. Country environment poor community we. Recent the least law",  
+        "addressCountry": "Notice not bag building structure candidate military. Along let real detail change court",  
+        "postalCode": "Sing end adult analysis serious field. Generation help somebody check beyond rule sometimes. Describe every under ",  
+        "postOfficeBoxNumber": "Research father your kitchen audience if president. Father act system where voice two idea majority.",  
+        "streetNr": "Course prevent organization Democrat believe. Loss once assume player visit. Service career campaign test beyond leader.",  
+        "district": "Whatever expect notice answer"  
     },  
-    "areaServed": "These list spend local ball cultural. Series thought go vote. Per state push general.",  
+    "areaServed": "Staff test exist difficult. Assume tough art meeti",  
+    "rt": [  
+        "oic.r.sensor.touch"  
+    ],  
+    "value": true,  
+    "n": "Walk where hour mission ok final. Article new she recent enough",  
+    "if": [  
+        "oic.if.s",  
+        "oic.if.baseline"  
+    ],  
+    "type": "Touch",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -265,82 +624,105 @@ Touch:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Touch:id:BHOE:99629945",  
+    "id": "urn:ngsi-ld:Touch:id:NIDZ:89728507",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1976-09-22T04:56:59Z"  
+            "@value": "1971-08-23T11:21:33Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1976-08-17T10:01:00Z"  
+            "@value": "2008-10-09T07:54:17Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Evening pick report."  
+        "value": "Get similar note head free game. Ago if help blood. Year practice phone without still sport guess exist"  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Protect or trip keep keep. Society every card happy."  
+        "value": "Addr"  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Long down deep order across. Dinner space keep compare. Manager majority tonight."  
+        "value": "Dark fly describe when. Their stand draw expect TV star scienti"  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Message amount always between use yes. Plan plan actually thus focus authority. Task perhaps build professional movement individual field."  
+        "value": "Opportunity financial on sit determine perform process. Tend huge interview before."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Reality house we apply hit."  
+        "value": "Account relate structure anyone allow some time."  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Touch:items:ORBA:00184639",  
-            "urn:ngsi-ld:Touch:items:YLIL:03077083"  
+            "urn:ngsi-ld:Touch:items:PRIP:81746251",  
+            "urn:ngsi-ld:Touch:items:SXPR:59698179"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Touch:items:JXOV:82597506"  
+            "urn:ngsi-ld:Touch:items:BMXR:44472001"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                -0.1744025,  
-                -153.346539  
+                25.6702675,  
+                -113.845787  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Cultural teach light factor keep.",  
-            "addressLocality": "Each risk sell final game save major collection. Also interview drug let participant. Cup nor mind check much fear.",  
-            "addressRegion": "Ground Mr hot sometimes change off deep. Loss eye image level something recent yes.",  
-            "addressCountry": "Full pay response win require increase despite. Bring which bar. Concern you cause black democratic back.",  
-            "postalCode": "Hand decision share. Technology imagine score technology treat state image name.",  
-            "postOfficeBoxNumber": "Find turn think some than role. Treat serve change final think cost somebody. Financial turn population hair do ahead."  
+            "streetAddress": "Report another gas go. So school job rather.",  
+            "addressLocality": "Fall color hard bill wind summer sit. Lawyer follow economic season least. Pressure morning either arm.",  
+            "addressRegion": "Production despite very change range society. Country environment poor community we. Recent the least law",  
+            "addressCountry": "Notice not bag building structure candidate military. Along let real detail change court",  
+            "postalCode": "Sing end adult analysis serious field. Generation help somebody check beyond rule sometimes. Describe every under ",  
+            "postOfficeBoxNumber": "Research father your kitchen audience if president. Father act system where voice two idea majority.",  
+            "streetNr": "Course prevent organization Democrat believe. Loss once assume player visit. Service career campaign test beyond leader.",  
+            "district": "Whatever expect notice answer"  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "List impact owner detail everyone. By picture rich middle long very. Window indicate walk exactly figure."  
+        "value": "Staff test exist difficult. Assume tough art meeti"  
     },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.sensor.touch"  
+        ]  
+    },  
+    "value": {  
+        "type": "Property",  
+        "value": true  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Walk where hour mission ok final. Article new she recent enough"  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.s",  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "Touch",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
