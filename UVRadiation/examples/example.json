@@ -1,34 +1,45 @@
 {
-  "id": "urn:ngsi-ld:UVRadiation:id:DVPN:03447085",
-  "dateCreated": "1998-04-20T02:40:35Z",
-  "dateModified": "1999-07-19T23:12:20Z",
-  "source": "Somebody debate picture direction. Off part machine face. Head high out.",
-  "name": "Security less security suggest fall point buy catch. Mouth show cultural continue pressure sell away.",
-  "alternateName": "Everyone exactly under cost. Chance take agent light contain.",
-  "description": "Free should name serve about. Despite box visit off cost. Great affect whose so sea particularly brother.",
-  "dataProvider": "Baby reduce well state myself establish glass. Model wall store reality management simply.",
-  "owner": [
-    "urn:ngsi-ld:UVRadiation:items:ZXLC:95274945",
-    "urn:ngsi-ld:UVRadiation:items:QOZS:96467115"
-  ],
-  "seeAlso": [
-    "urn:ngsi-ld:UVRadiation:items:GYGW:54600384",
-    "urn:ngsi-ld:UVRadiation:items:MRRI:23547865"
-  ],
-  "location": {
-    "type": "Point",
-    "coordinates": [
-      15.0318265,
-      -2.234148
-    ]
-  },
-  "address": {
-    "streetAddress": "Food why situation many prove while put. Early star person traditional picture fight owner. Senior may tell room decide.",
-    "addressLocality": "Clear matter enjoy us them general reach. While head second politics investment read. Yes model determine various power rest goal pass.",
-    "addressRegion": "Then house resource resource information wide. Team those notice south.",
-    "addressCountry": "Wind recent and wife pull. Analysis several bed attack activity amount job. Whatever short science least tend imagine.",
-    "postalCode": "Shake character leave candidate. Way next else power anything.",
-    "postOfficeBoxNumber": "Threat nearly until why season. Administration add parent scene. Choice back effort law."
-  },
-  "areaServed": "Eight wait table discover career involve include."
+    "id": "urn:ngsi-ld:UVRadiation:id:WSKD:78566837",
+    "dateCreated": "1995-10-19T07:10:44Z",
+    "dateModified": "2023-05-05T13:25:18Z",
+    "source": "Oil or dream health either. S",
+    "name": "Window beat former could community. Feel which these govern",
+    "alternateName": "Represent prevent human",
+    "description": "He minute mission gun others. Property way meet which any upon occur. Machin",
+    "dataProvider": "Box professional",
+    "owner": [
+        "urn:ngsi-ld:UVRadiation:items:JDQK:39870642",
+        "urn:ngsi-ld:UVRadiation:items:CCFF:72062329"
+    ],
+    "seeAlso": [
+        "urn:ngsi-ld:UVRadiation:items:KMGL:73137181"
+    ],
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            -5.2874375,
+            10.939345
+        ]
+    },
+    "address": {
+        "streetAddress": "Concern site child someone century camera. Night debate western lead fact place air necessary. Side box we issue poor easy impact meeting. Water nature PM attorney evening d",
+        "addressLocality": "Step like summer you around worry. Allow turn new health. Spend experience people particularly teach t",
+        "addressRegion": "Bank hit cold field public crime. Save yourself student magazine first.",
+        "addressCountry": "Although floor vote common administration. Will professor card sometim",
+        "postalCode": "Learn through institution brother. Live recently report player consider develop.",
+        "postOfficeBoxNumber": "Certain term involve television well attorney often. S",
+        "streetNr": "Across range in raise respond according. Policy finish city.",
+        "district": "Final race per. Story loss little commercial determine late"
+    },
+    "areaServed": "Upon probably sp",
+    "rt": [
+        "oic.r.sensor.radiation.uv"
+    ],
+    "measurement": 229.2,
+    "n": "M",
+    "if": [
+        "oic.if.baseline",
+        "oic.if.s"
+    ],
+    "type": "UVRadiation"
 }
