@@ -1,47 +1,44 @@
 {
-    "id": "urn:ngsi-ld:OpaqueData:id:TTMN:47954873",
-    "dateCreated": "1996-10-07T07:39:16Z",
-    "dateModified": "2018-10-06T00:30:42Z",
-    "source": "Draw less food. Born central require action development public national. Hot set course store.",
-    "name": "Important eye western oil.",
-    "alternateName": "Recent realize fear company. Light first what century man station according bring. Understand record stop author reach.",
-    "description": "Almost center world machine someone. Size star analysis protect.",
-    "dataProvider": "Fight exist than line behavior. Turn risk investment political energy activity.",
+    "id": "urn:ngsi-ld:OpaqueData:id:ZNOG:11395995",
+    "dateCreated": "1973-11-29T04:07:21Z",
+    "dateModified": "1971-10-13T05:50:39Z",
+    "source": "Scientist attorney movement imagine station. Rest where industry entire even. Admit whose step different provide purpose",
+    "name": "Them not painting executive cup home. Suffer management enjoy market hard. Third take production involve. Mission last situatio",
+    "alternateName": "Decision best recent what business. Goal general week member also us eight. It soon accept",
+    "description": "Of suggest year dream. Difference guy everything sign s",
+    "dataProvider": "Rich thousand short in play others reality. Especial",
     "owner": [
-        "urn:ngsi-ld:OpaqueData:items:YPJA:37648723",
-        "urn:ngsi-ld:OpaqueData:items:IKVA:78883767"
+        "urn:ngsi-ld:OpaqueData:items:LWKP:53355978",
+        "urn:ngsi-ld:OpaqueData:items:JKSX:17016600"
     ],
     "seeAlso": [
-        "urn:ngsi-ld:OpaqueData:items:YQIG:40434840",
-        "urn:ngsi-ld:OpaqueData:items:JQWJ:08248941"
+        "urn:ngsi-ld:OpaqueData:items:DJCA:66200669"
     ],
     "location": {
         "type": "Point",
         "coordinates": [
-            82.924221,
-            -154.083239
+            51.774314,
+            105.057187
         ]
     },
     "address": {
-        "streetAddress": "News imagine apply research six either which. At really anyone teacher since military. Indicate television from source nothing.",
-        "addressLocality": "Democratic exist audience investment. Against listen travel. Rest only back if despite.",
-        "addressRegion": "Red ready pay leader book cup. Letter something play their.",
-        "addressCountry": "Hold performance line have responsibility trip poor court.",
-        "postalCode": "His culture describe rock camera continue. Training accept act wear grow participant. Put cell quickly strategy budget.",
-        "postOfficeBoxNumber": "Myself manage care almost trouble top thousand. Begin build quickly audience scientist. Girl opportunity top exist against. Trade with fish her around."
+        "streetAddress": "All answer phone them.",
+        "addressLocality": "Military free key realize analysis but interview. Among machine enter watch during economic sell.",
+        "addressRegion": "Instead spring our east. Card physical left nation believe. Start interview year bit cut.",
+        "addressCountry": "Cold long against tonight word. At fear facto",
+        "postalCode": "Particularly policy quite whom rise. Image in politics result despite technology financial. Charge central life experience man.",
+        "postOfficeBoxNumber": "Beautiful condition pay",
+        "streetNr": "Also another international claim fill. Garden behind article.",
+        "district": "Recently save their here official. Risk interview piece memory hair. Reflect will main program reveal product wife."
     },
-    "areaServed": "Party consumer leave yes. Reality both finish since power.",
+    "areaServed": "Increase instead work class info",
     "rt": [
-        "oic.r.opaquedata",
         "oic.r.opaquedata"
     ],
-    "payload": "Close degree budget argue boy something off. Early meeting sell challenge condition brother but.",
-    "encoding": "Turn officer statement they person notice investment another. Important reach sort mention successful.",
-    "payloadtype": "Create hear yes support. Life by stay kind Congress stuff operation.",
-    "size": {
-        "type": "Property",
-        "value": 864
-    },
+    "payload": "Drop produce medical defense size. Money especially exist artis",
+    "encoding": "Natural every",
+    "payloadtype": "Soldier light read do not ",
+    "size": 864,
     "hash": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair.",
     "system": "Together range line beyond. First policy daughter need kind miss.",
     "if": [
@@ -50,7 +47,6 @@
     ],
     "type": "OpaqueData",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
