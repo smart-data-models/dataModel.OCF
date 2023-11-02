@@ -1,61 +1,51 @@
 {
-  "id": "urn:ngsi-ld:BodyWater:id:MEJE:18514125",
-  "dateCreated": "1997-04-10T16:39:09Z",
-  "dateModified": "2019-05-10T20:10:20Z",
-  "source": "Blue save design whose area church hit crime. Environmental environmental bill music heart finally. Few strong senior peace top book have.",
-  "name": "Behind place every window. Become area between general plan.",
-  "alternateName": "Large different eight collection room market society. Firm trouble live. Pattern concern employee movement. More religious beautiful moment serve Mrs.",
-  "description": "Animal right local sound argue. Image employee deal final good economy continue.",
-  "dataProvider": "Fish rather clearly power less crime. Appear hand science free.",
-  "owner": [
-    "urn:ngsi-ld:BodyWater:items:LMBU:67181228",
-    "urn:ngsi-ld:BodyWater:items:MHGW:24811389"
-  ],
-  "seeAlso": [
-    "urn:ngsi-ld:BodyWater:items:WKGV:03404439",
-    "urn:ngsi-ld:BodyWater:items:IYRC:15142649"
-  ],
-  "location": {
-    "type": "Point",
-    "coordinates": [
-      -77.4914945,
-      -21.70219
-    ]
-  },
-  "address": {
-    "streetAddress": "Memory easy difference. Onto stage purpose throw.",
-    "addressLocality": "Way if because ground. Market this father road. Agency true someone hand dream film.",
-    "addressRegion": "Recently consider most fall central stage. Other can land after.",
-    "addressCountry": "Ask quite lot region us. Thought long majority. Item list fill ready claim.",
-    "postalCode": "Affect adult find rule. They size focus response special.",
-    "postOfficeBoxNumber": "Focus ok industry. Your trial identify until improve speech American practice. Stage what north on someone player physical current."
-  },
-  "areaServed": "Life three degree goal seat. Guess late today family movement form. Stop many air shoulder subject technology.",
-  "rt": [
-    "oic.r.body.water",
-    "oic.r.body.water"
-  ],
-  "bwater": {
-    "type": "Property",
-    "value": 110.0
-  },
-  "units": "kg",
-  "range": [
-    117.8,
-    516.3
-  ],
-  "step": {
-    "type": "Property",
-    "value": 424.7
-  },
-  "precision": {
-    "type": "Property",
-    "value": 730.5
-  },
-  "n": "Think can no natural too half protect production. Board force sport himself say. Fear former collection make on.",
-  "if": [
-    "oic.if.s",
-    "oic.if.baseline"
-  ],
-  "type": "BodyWater"
+    "id": "urn:ngsi-ld:BodyWater:id:ILUG:06057800",
+    "dateCreated": "2001-08-15T20:11:14Z",
+    "dateModified": "1977-09-04T09:36:22Z",
+    "source": "Book ok argue film buy create. Meet stock member onto rule. Soon live anima",
+    "name": "Dark event last face could hand thus. Similar early service doctor involve soon member. Into ",
+    "alternateName": "Available production probably action contain alone computer one. Exist re",
+    "description": "Media chair cut training. Think process article really agency hit. Term rule surface tonight.",
+    "dataProvider": "Reduce analysis around guy available ",
+    "owner": [
+        "urn:ngsi-ld:BodyWater:items:AJNM:96519237",
+        "urn:ngsi-ld:BodyWater:items:LIJF:23536544"
+    ],
+    "seeAlso": [
+        "urn:ngsi-ld:BodyWater:items:TTXY:37487574"
+    ],
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            17.8879955,
+            -60.854531
+        ]
+    },
+    "address": {
+        "streetAddress": "Design occur than senior. Director think thank cost consider official.",
+        "addressLocality": "Expert eat structure anything ask station. Big rate structure Mr worry. Remember modern structure any.",
+        "addressRegion": "List from foreign cultural apply his manager. Language of pass different. Music use trade difference deal popular clearly. Sea leader finally step sure.",
+        "addressCountry": "Too when organization fear season management forward.",
+        "postalCode": "Increase last fine offer professional decide over I. Must glass attack factor.",
+        "postOfficeBoxNumber": "When shoulder current operation trial assume floor. Bus",
+        "streetNr": "Military debate my less employee though.",
+        "district": "State manager discussion condition nothing around. Should goal run begin throughout whatever campaig"
+    },
+    "areaServed": "Father baby turn left fire. Wha",
+    "rt": [
+        "oic.r.body.water"
+    ],
+    "bwater": 62.0,
+    "units": "kg",
+    "range": [
+        34.7,
+        488.4
+    ],
+    "step": 615.4,
+    "precision": 540.9,
+    "n": "Contain simple without herself. Against story eat new",
+    "if": [
+        "oic.if.baseline"
+    ],
+    "type": "BodyWater"
 }
