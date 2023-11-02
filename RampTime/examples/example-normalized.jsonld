@@ -1,76 +1,78 @@
 {
-    "id": "urn:ngsi-ld:RampTime:id:FFSR:90520934",
+    "id": "urn:ngsi-ld:RampTime:id:SOVS:23859772",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2018-03-18T03:19:11Z"
+            "@value": "1984-02-11T15:42:17Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1993-01-25T21:55:52Z"
+            "@value": "1974-12-05T16:14:49Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Three sound resource. Parent parent base including task like drive."
+        "value": "Raise left serious one under over loss. As week office art."
     },
     "name": {
         "type": "Property",
-        "value": "Almost identify bring imagine. Notice important party step old."
+        "value": "Course election after pla"
     },
     "alternateName": {
         "type": "Property",
-        "value": "Here most data certainly strategy. Carry act process anyone foreign sell society. Especially summer appear. Better allow car administration."
+        "value": "Out ago simply note. Goal apply letter several top. Above high impact top camera."
     },
     "description": {
         "type": "Property",
-        "value": "Reduce process issue party clearly anything. Career condition opportunity general. Experience around manage room spend throw although few."
+        "value": "Reduce catch goal treat. Maintain compare rule"
     },
     "dataProvider": {
         "type": "Property",
-        "value": "Official culture indicate position. Cover leader medical law catch western."
+        "value": "Only camera last rate. Indicate forget population policy option spend arti"
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:RampTime:items:OMMO:16943723",
-            "urn:ngsi-ld:RampTime:items:NTJI:24099913"
+            "urn:ngsi-ld:RampTime:items:CZKU:18687524",
+            "urn:ngsi-ld:RampTime:items:AYTX:66134959"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:RampTime:items:EKVY:98458166"
+            "urn:ngsi-ld:RampTime:items:XJAL:21532442"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                -5.345031,
-                86.253962
+                17.46331,
+                125.666274
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "Her our teach something edge seem. Event life respond including beyond huge. Job reflect go former level ready.",
-            "addressLocality": "Picture professional central east computer PM executive.",
-            "addressRegion": "Single current both pattern which list. Moment author subject lot.",
-            "addressCountry": "Attack form former training. Win reduce history international. Site body study where. Report indicate until box former never whether.",
-            "postalCode": "Program police whatever must. Fine place opportunity nation.",
-            "postOfficeBoxNumber": "Tv assume much. Return reveal force myself."
+            "streetAddress": "He would indiv",
+            "addressLocality": "Thing many business hot field. Yard join goal still current cell.",
+            "addressRegion": "Recent design professional he court. Challenge let case as. Our age just human arm.",
+            "addressCountry": "Several political policy town also popular. Nation cover popular big.",
+            "postalCode": "Beat vote population write no spend computer. Between himself agency prove may. Can major set finally.",
+            "postOfficeBoxNumber": "Cut mind up international military relate ok. Important today red lot rich. Send little strong sea party per happy.",
+            "streetNr": "Finish interesting Congress save name. Matter edge middle health. Pressure control bill any cultural pers",
+            "district": "Fire type spring away area service model. Cultural gues"
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "Address career trial statement. Subject president sense."
+        "value": "Machine materi"
     },
     "rt": {
         "type": "Property",
@@ -80,26 +82,26 @@
     },
     "rampTime": {
         "type": "Property",
-        "value": 932
+        "value": 864
     },
     "n": {
         "type": "Property",
-        "value": "World practice town politics cost there physical out."
+        "value": "American whole magazine truth stop whose. On tra"
     },
     "range": {
         "type": "Property",
         "value": [
-            694,
-            895
+            864,
+            864
         ]
     },
     "step": {
         "type": "Property",
-        "value": 850
+        "value": 864
     },
     "precision": {
         "type": "Property",
-        "value": 772.7
+        "value": 924.7
     },
     "if": {
         "type": "Property",
@@ -110,7 +112,6 @@
     },
     "type": "RampTime",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
