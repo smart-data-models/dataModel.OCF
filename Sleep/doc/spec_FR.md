@@ -15,12 +15,20 @@
 ## Liste des propriétés  
 
 <sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il peut avoir plusieurs types ou différents formats/modèles</sub></sup>.  
-- `awake[integer]`: Temps passé en phase d'éveil (en secondes)  - `deepsleep[integer]`: Temps passé en phase de sommeil profond, comprenant les phases NREM 3 et 4 (en secondes)  - `if[array]`: L'ensemble d'interfaces pris en charge par cette ressource  - `lightsleep[integer]`: Temps passé en phase de sommeil léger, comprenant les phases NREM 1 et 2 (en secondes)  - `n[string]`: Nom amical de la ressource  - `nrem1[integer]`: Temps passé au stade 1 des mouvements oculaires non rapides (en secondes)  - `nrem2[integer]`: Temps passé au stade 2 des mouvements oculaires non rapides (en secondes)  - `nrem3[integer]`: Temps passé au stade 3 des mouvements oculaires non rapides (en secondes)  - `nrem4[integer]`: Temps passé au stade 4 des mouvements oculaires non rapides (en secondes)  - `precision[number]`: Lorsqu'elle est exposée, la valeur de "précision" fournit une tolérance de +/- par rapport aux propriétés de la ressource. Ainsi, si une propriété est mise à jour avec une valeur et que cette propriété est ensuite récupérée, la valeur récupérée est valide si elle se situe dans la plage de la valeur définie +/- précision.  - `range_phases[array]`: La plage de validité de la propriété dans la ressource sous la forme d'un nombre entier. La première valeur du tableau est la valeur minimale, la deuxième valeur du tableau est la valeur maximale.  - `range_score[array]`: La plage de validité de la propriété dans la ressource, sous la forme d'un nombre. La première valeur du tableau est la valeur minimale, la deuxième valeur du tableau est la valeur maximale.  - `rem[integer]`: Temps passé en mouvements oculaires rapides (en secondes)  - `rt[array]`: Type de ressource  - `sleepscore[number]`: Score calculé à partir du temps passé dans chaque stade du sommeil, indiquant la qualité du sommeil.  - `step_phases[integer]`: Valeur de pas sur la plage définie lorsque la plage est un nombre entier.  Il s'agit de l'incrément pour les valeurs valides dans la plage ; ainsi, si la plage est 0..10 et que le pas est 2, les valeurs valides sont 0,2,4,6,8,10.  - `step_score[number]`: Valeur de l'échelon dans la plage définie - un entier lorsque la plage est un nombre.  Il s'agit de l'incrément pour les valeurs valides dans la plage ; ainsi, si la plage est 0.0..10.0 et que le pas est 2.5, les valeurs valides sont 0.0,2.5,5.0,7.5,10.0.  - `type[string]`: Type d'entité NGSI. Il doit s'agir de Sleep  <!-- /30-PropertiesList -->  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Le pays. Par exemple, l'Espagne  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: La localité dans laquelle se trouve l'adresse postale et qui se trouve dans la région  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: La région dans laquelle se trouve la localité et qui se trouve dans le pays  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Un district est un type de division administrative qui, dans certains pays, est géré par le gouvernement local.    
+	- `postOfficeBoxNumber[string]`: Le numéro de la boîte postale pour les adresses de boîtes postales. Par exemple, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Le code postal. Par exemple, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: L'adresse de la rue  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Numéro identifiant une propriété spécifique sur une voie publique    
+- `alternateName[string]`: Un nom alternatif pour ce poste  - `areaServed[string]`: La zone géographique où un service ou un article est offert  . Model: [https://schema.org/Text](https://schema.org/Text)- `awake[number]`: Temps passé en phase d'éveil (en secondes)  - `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées  - `dateCreated[date-time]`: Horodatage de la création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage  - `dateModified[date-time]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage  - `deepsleep[number]`: Temps passé en phase de sommeil profond, comprenant les phases NREM 3 et 4 (en secondes)  - `description[string]`: Une description de l'article  - `id[*]`: Identifiant unique de l'entité  - `if[array]`: L'ensemble d'interfaces pris en charge par cette ressource  - `lightsleep[number]`: Temps passé en phase de sommeil léger, comprenant les phases NREM 1 et 2 (en secondes)  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une chaîne de ligne, d'un polygone, d'un point multiple, d'une chaîne de ligne multiple ou d'un polygone multiple.  - `n[string]`: Nom amical de la ressource  - `name[string]`: Le nom de cet élément  - `nrem1[number]`: Temps passé au stade 1 des mouvements oculaires non rapides (en secondes)  - `nrem2[number]`: Temps passé au stade 2 des mouvements oculaires non rapides (en secondes)  - `nrem3[number]`: Temps passé au stade 3 des mouvements oculaires non rapides (en secondes)  - `nrem4[number]`: Temps passé au stade 4 des mouvements oculaires non rapides (en secondes)  - `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  - `precision[number]`: Lorsqu'elle est exposée, la valeur de "précision" fournit une tolérance de +/- par rapport aux propriétés de la ressource. Ainsi, si une propriété est mise à jour avec une valeur et que cette propriété est ensuite récupérée, la valeur récupérée est valide si elle se situe dans la plage de la valeur définie +/- précision.  - `range_phases[array]`: La plage de validité de la propriété dans la ressource sous la forme d'un nombre entier. La première valeur du tableau est la valeur minimale, la deuxième valeur du tableau est la valeur maximale.  - `range_score[array]`: La plage de validité de la propriété dans la ressource, sous la forme d'un nombre. La première valeur du tableau est la valeur minimale, la deuxième valeur du tableau est la valeur maximale.  - `rem[number]`: Temps passé en mouvements oculaires rapides (en secondes)  - `rt[array]`: Type de ressource  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  - `sleepscore[number]`: Score calculé à partir du temps passé dans chaque stade du sommeil, indiquant la qualité du sommeil.  - `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  - `step_phases[number]`: Valeur de pas sur la plage définie lorsque la plage est un nombre entier.  Il s'agit de l'incrément pour les valeurs valides dans la plage ; ainsi, si la plage est 0..10 et que le pas est 2, les valeurs valides sont 0,2,4,6,8,10.  - `step_score[number]`: Valeur de l'échelon dans la plage définie - un entier lorsque la plage est un nombre.  Il s'agit de l'incrément pour les valeurs valides dans la plage ; ainsi, si la plage est 0.0..10.0 et que le pas est 2.5, les valeurs valides sont 0.0,2.5,5.0,7.5,10.0.  - `type[string]`: Type d'entité NGSI. Il doit s'agir de Sleep  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propriétés requises  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-Ce modèle de données provient de l'original [Open Connectivity Foundation repository] (https://github.com/openconnectivityfoundation/IoTDataModels).   
+Ce modèle de données provient de l'original [Open Connectivity Foundation repository] (https://github.com/openconnectivityfoundation/IoTDataModels). Il a été étendu pour répondre aux exigences des NGSI.  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
 ## Modèle de données description des propriétés  
@@ -32,18 +40,121 @@
 Sleep:    
   description: 'Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the Properties associated with Sleep. Sleep shows the time spent in each of the sleep stages (awake, nrem1, nrem2, nrem3, nrem4, rem, light sleep, deep sleep), along with a sleep score indicating the quality of sleep.'    
   properties:    
+    address:    
+      description: The mailing address    
+      properties:    
+        addressCountry:    
+          description: 'The country. For example, Spain'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
+        addressLocality:    
+          description: 'The locality in which the street address is, and which is in the region'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
+        addressRegion:    
+          description: 'The region in which the locality is, and which is in the country'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        postOfficeBoxNumber:    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
+        postalCode:    
+          description: 'The postal code. For example, 24004'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
+        streetAddress:    
+          description: The street address    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      type: object    
+      x-ngsi:    
+        model: https://schema.org/address    
+        type: Property    
+    alternateName:    
+      description: An alternative name for this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    areaServed:    
+      description: The geographic area where a service or offered item is provided    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
     awake:    
       description: Time spent in Awake stage (in seconds)    
       minimum: 0    
       readOnly: true    
-      type: integer    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    dataProvider:    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateCreated:    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateModified:    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
       x-ngsi:    
         type: Property    
     deepsleep:    
       description: 'Time spent in Deep Sleep stage, consisting in NREM stages 3 and 4 (in seconds)'    
       minimum: 0    
       readOnly: true    
-      type: integer    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    description:    
+      description: A description of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    id:    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     if:    
@@ -63,9 +174,174 @@ Sleep:
       description: 'Time spent in Light Sleep stage, consisting in NREM stages 1 and 2 (in seconds)'    
       minimum: 0    
       readOnly: true    
-      type: integer    
+      type: number    
       x-ngsi:    
         type: Property    
+    location:    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+      oneOf:    
+        - description: Geojson reference to the item. Point    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                type: number    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - Point    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Point    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - LineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON LineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 4    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - Polygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Polygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPoint    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPoint    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiLineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiLineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    items:    
+                      type: number    
+                    minItems: 2    
+                    type: array    
+                  minItems: 4    
+                  type: array    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPolygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPolygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+      x-ngsi:    
+        type: GeoProperty    
     n:    
       description: Friendly name of the Resource    
       maxLength: 64    
@@ -73,32 +349,59 @@ Sleep:
       type: string    
       x-ngsi:    
         type: Property    
+    name:    
+      description: The name of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
     nrem1:    
       description: Time spent in Non Rapid Eye Movement stage 1 (in seconds)    
       minimum: 0    
       readOnly: true    
-      type: integer    
+      type: number    
       x-ngsi:    
         type: Property    
     nrem2:    
       description: Time spent in Non Rapid Eye Movement stage 2 (in seconds)    
       minimum: 0    
       readOnly: true    
-      type: integer    
+      type: number    
       x-ngsi:    
         type: Property    
     nrem3:    
       description: Time spent in Non Rapid Eye Movement stage 3 (in seconds)    
       minimum: 0    
       readOnly: true    
-      type: integer    
+      type: number    
       x-ngsi:    
         type: Property    
     nrem4:    
       description: Time spent in Non Rapid Eye Movement stage 4 (in seconds)    
       minimum: 0    
       readOnly: true    
-      type: integer    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    owner:    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
+      items:    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
+      type: array    
       x-ngsi:    
         type: Property    
     precision:    
@@ -131,7 +434,7 @@ Sleep:
       description: Time spent in Rapid Eye Movement (in seconds)    
       minimum: 0    
       readOnly: true    
-      type: integer    
+      type: number    
       x-ngsi:    
         type: Property    
     rt:    
@@ -146,6 +449,18 @@ Sleep:
       uniqueItems: true    
       x-ngsi:    
         type: Property    
+    seeAlso:    
+      description: list of uri pointing to additional resources about the item    
+      oneOf:    
+        - items:    
+            format: uri    
+            type: string    
+          minItems: 1    
+          type: array    
+        - format: uri    
+          type: string    
+      x-ngsi:    
+        type: Property    
     sleepscore:    
       description: 'Score computed from the time spent in each sleep stage, indicative of the quality of sleep'    
       minimum: 0    
@@ -153,10 +468,15 @@ Sleep:
       type: number    
       x-ngsi:    
         type: Property    
+    source:    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
+      type: string    
+      x-ngsi:    
+        type: Property    
     step_phases:    
       description: 'Step value across the defined range when the range is an integer.  This is the increment for valid values across the range; so if range is 0..10 and step is 2 then valid values are 0,2,4,6,8,10.'    
       readOnly: true    
-      type: integer    
+      type: number    
       x-ngsi:    
         type: Property    
     step_score:    
@@ -194,38 +514,67 @@ Sleep:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Sleep:id:DQYD:66419001",  
-  "dateCreated": "2006-06-22T00:23:34Z",  
-  "dateModified": "1985-04-14T07:05:46Z",  
-  "source": "Team improve per difficult design perhaps remain. Something town now year.",  
-  "name": "Debate notice eat share day fire serve seem. Through want husband.",  
-  "alternateName": "System his with management resource real various. Task right mean paper western seem near beat. Skin expert that pattern drive free that.",  
-  "description": "Here ability even exist class movement grow. War church probably.",  
-  "dataProvider": "Consumer fish himself crime finish some pretty. Kid stand individual tree weight stand apply.",  
-  "owner": [  
-    "urn:ngsi-ld:Sleep:items:NRHF:98813192",  
-    "urn:ngsi-ld:Sleep:items:ROUA:34648361"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Sleep:items:JVPG:56549433",  
-    "urn:ngsi-ld:Sleep:items:CGGJ:52083387"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -0.4463355,  
-      155.160512  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Example experience bar cover machine him along. Last must general sister yourself. Mean also store apply.",  
-    "addressLocality": "They arrive among would participant those seem. Run door mission player ever year.",  
-    "addressRegion": "Professor we raise. Brother treat you ahead whatever tough game necessary.",  
-    "addressCountry": "Technology specific key generation. Process most apply choose feel visit with. Play modern state address popular job.",  
-    "postalCode": "Yourself news TV institution how again field democratic. Industry water body.",  
-    "postOfficeBoxNumber": "Series election free cold. System information else even evening."  
-  },  
-  "areaServed": "Your reality almost four use. Degree simply bag drop."  
+    "id": "urn:ngsi-ld:Sleep:id:EOXI:64784328",  
+    "dateCreated": "2012-05-08T18:33:40Z",  
+    "dateModified": "2017-08-05T04:09:21Z",  
+    "source": "Experience somebody democratic happen form. Born recently field. Answer activity image control difficult value simple.",  
+    "name": "Know myself treat include fund blood and. Himself population pull partner walk vote.",  
+    "alternateName": "Sport effort race seven million energy hotel. Treat sign card market least court American particular. Computer put quite hospital walk score.",  
+    "description": "",  
+    "dataProvider": "Want person season form model thought song head. Picture himself realize far your art mouth real. Low or born enter.",  
+    "owner": [  
+        "urn:ngsi-ld:Sleep:items:EVHF:32347913",  
+        "urn:ngsi-ld:Sleep:items:QUUJ:68624316"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Sleep:items:BYWE:96773582"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -43.8165545,  
+            170.462299  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Reach black huge image care compa",  
+        "addressLocality": "Toward as work better enough. Not wife yes pretty quickly. Stage field nor. House dream field",  
+        "addressRegion": "Build expect doctor official. Detail into should treatment part. Capital resource another two.",  
+        "addressCountry": "Build later fear wall.",  
+        "postalCode": "Value dream on off pretty avoid. Perhaps large collection buy budget. Begin send everybody to manager.",  
+        "postOfficeBoxNumber": "Alone another defense get. Into population pretty baby.",  
+        "streetNr": "Impact easy rise chair guess. Pretty imagine charge red garden. Growth guy pattern little environmental dream",  
+        "district": "Force before sing leader some traditional scientist. Tv particularly such painting open her fig"  
+    },  
+    "areaServed": "Inside matter technology white shake. Light t",  
+    "awake": 864,  
+    "nrem1": 864,  
+    "nrem2": 864,  
+    "nrem3": 864,  
+    "nrem4": 864,  
+    "rem": 864,  
+    "lightsleep": 864,  
+    "deepsleep": 864,  
+    "sleepscore": 877.2,  
+    "if": [  
+        "oic.if.baseline"  
+    ],  
+    "rt": [  
+        "oic.r.sleep"  
+    ],  
+    "n": "Soldier player professor ever style",  
+    "range_phases": [  
+        864,  
+        864  
+    ],  
+    "step_phases": 864,  
+    "range_score": [  
+        796.4,  
+        476.3  
+    ],  
+    "step_score": 276.4,  
+    "precision": 394.0,  
+    "type": "Sleep"  
 }  
 ```  
 </details>  
@@ -234,79 +583,154 @@ Sleep:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:Sleep:id:DQYD:66419001"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2006-06-22T00:23:34Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1985-04-14T07:05:46Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Team improve per difficult design perhaps remain. Something town now year."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Debate notice eat share day fire serve seem. Through want husband."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "System his with management resource real various. Task right mean paper western seem near beat. Skin expert that pattern drive free that."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Here ability even exist class movement grow. War church probably."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Consumer fish himself crime finish some pretty. Kid stand individual tree weight stand apply."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Sleep:items:NRHF:98813192",  
-      "urn:ngsi-ld:Sleep:items:ROUA:34648361"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Sleep:items:JVPG:56549433",  
-      "urn:ngsi-ld:Sleep:items:CGGJ:52083387"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -0.4463355,  
-        155.160512  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Example experience bar cover machine him along. Last must general sister yourself. Mean also store apply.",  
-      "addressLocality": "They arrive among would participant those seem. Run door mission player ever year.",  
-      "addressRegion": "Professor we raise. Brother treat you ahead whatever tough game necessary.",  
-      "addressCountry": "Technology specific key generation. Process most apply choose feel visit with. Play modern state address popular job.",  
-      "postalCode": "Yourself news TV institution how again field democratic. Industry water body.",  
-      "postOfficeBoxNumber": "Series election free cold. System information else even evening."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Your reality almost four use. Degree simply bag drop."  
-  }  
+    "id": "urn:ngsi-ld:Sleep:id:EOXI:64784328",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "2012-05-08T18:33:40Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "2017-08-05T04:09:21Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Experience somebody democratic happen form. Born recently field. Answer activity image control difficult value simple."  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Know myself treat include fund blood and. Himself population pull partner walk vote."  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Sport effort race seven million energy hotel. Treat sign card market least court American particular. Computer put quite hospital walk score."  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": ""  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Want person season form model thought song head. Picture himself realize far your art mouth real. Low or born enter."  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Sleep:items:EVHF:32347913",  
+            "urn:ngsi-ld:Sleep:items:QUUJ:68624316"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Sleep:items:BYWE:96773582"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -43.8165545,  
+                170.462299  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Reach black huge image care compa",  
+            "addressLocality": "Toward as work better enough. Not wife yes pretty quickly. Stage field nor. House dream field",  
+            "addressRegion": "Build expect doctor official. Detail into should treatment part. Capital resource another two.",  
+            "addressCountry": "Build later fear wall.",  
+            "postalCode": "Value dream on off pretty avoid. Perhaps large collection buy budget. Begin send everybody to manager.",  
+            "postOfficeBoxNumber": "Alone another defense get. Into population pretty baby.",  
+            "streetNr": "Impact easy rise chair guess. Pretty imagine charge red garden. Growth guy pattern little environmental dream",  
+            "district": "Force before sing leader some traditional scientist. Tv particularly such painting open her fig"  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Inside matter technology white shake. Light t"  
+    },  
+    "awake": {  
+        "type": "Number",  
+        "value": 864  
+    },  
+    "nrem1": {  
+        "type": "Number",  
+        "value": 864  
+    },  
+    "nrem2": {  
+        "type": "Number",  
+        "value": 864  
+    },  
+    "nrem3": {  
+        "type": "Number",  
+        "value": 864  
+    },  
+    "nrem4": {  
+        "type": "Number",  
+        "value": 864  
+    },  
+    "rem": {  
+        "type": "Number",  
+        "value": 864  
+    },  
+    "lightsleep": {  
+        "type": "Number",  
+        "value": 864  
+    },  
+    "deepsleep": {  
+        "type": "Number",  
+        "value": 864  
+    },  
+    "sleepscore": {  
+        "type": "Number",  
+        "value": 877.2  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.sleep"  
+        ]  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Soldier player professor ever style"  
+    },  
+    "range_phases": {  
+        "type": "StructuredValue",  
+        "value": [  
+            864,  
+            864  
+        ]  
+    },  
+    "step_phases": {  
+        "type": "Number",  
+        "value": 864  
+    },  
+    "range_score": {  
+        "type": "StructuredValue",  
+        "value": [  
+            796.4,  
+            476.3  
+        ]  
+    },  
+    "step_score": {  
+        "type": "Number",  
+        "value": 276.4  
+    },  
+    "precision": {  
+        "type": "Number",  
+        "value": 394.0  
+    },  
+    "type": "Sleep"  
 }  
 ```  
 </details>  
@@ -315,41 +739,69 @@ Sleep:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Sleep:id:DQYD:66419001",  
-    "dateCreated": "2006-06-22T00:23:34Z",  
-    "dateModified": "1985-04-14T07:05:46Z",  
-    "source": "Team improve per difficult design perhaps remain. Something town now year.",  
-    "name": "Debate notice eat share day fire serve seem. Through want husband.",  
-    "alternateName": "System his with management resource real various. Task right mean paper western seem near beat. Skin expert that pattern drive free that.",  
-    "description": "Here ability even exist class movement grow. War church probably.",  
-    "dataProvider": "Consumer fish himself crime finish some pretty. Kid stand individual tree weight stand apply.",  
+    "id": "urn:ngsi-ld:Sleep:id:EOXI:64784328",  
+    "dateCreated": "2012-05-08T18:33:40Z",  
+    "dateModified": "2017-08-05T04:09:21Z",  
+    "source": "Experience somebody democratic happen form. Born recently field. Answer activity image control difficult value simple.",  
+    "name": "Know myself treat include fund blood and. Himself population pull partner walk vote.",  
+    "alternateName": "Sport effort race seven million energy hotel. Treat sign card market least court American particular. Computer put quite hospital walk score.",  
+    "description": "",  
+    "dataProvider": "Want person season form model thought song head. Picture himself realize far your art mouth real. Low or born enter.",  
     "owner": [  
-        "urn:ngsi-ld:Sleep:items:NRHF:98813192",  
-        "urn:ngsi-ld:Sleep:items:ROUA:34648361"  
+        "urn:ngsi-ld:Sleep:items:EVHF:32347913",  
+        "urn:ngsi-ld:Sleep:items:QUUJ:68624316"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:Sleep:items:JVPG:56549433",  
-        "urn:ngsi-ld:Sleep:items:CGGJ:52083387"  
+        "urn:ngsi-ld:Sleep:items:BYWE:96773582"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            -0.4463355,  
-            155.160512  
+            -43.8165545,  
+            170.462299  
         ]  
     },  
     "address": {  
-        "streetAddress": "Example experience bar cover machine him along. Last must general sister yourself. Mean also store apply.",  
-        "addressLocality": "They arrive among would participant those seem. Run door mission player ever year.",  
-        "addressRegion": "Professor we raise. Brother treat you ahead whatever tough game necessary.",  
-        "addressCountry": "Technology specific key generation. Process most apply choose feel visit with. Play modern state address popular job.",  
-        "postalCode": "Yourself news TV institution how again field democratic. Industry water body.",  
-        "postOfficeBoxNumber": "Series election free cold. System information else even evening."  
+        "streetAddress": "Reach black huge image care compa",  
+        "addressLocality": "Toward as work better enough. Not wife yes pretty quickly. Stage field nor. House dream field",  
+        "addressRegion": "Build expect doctor official. Detail into should treatment part. Capital resource another two.",  
+        "addressCountry": "Build later fear wall.",  
+        "postalCode": "Value dream on off pretty avoid. Perhaps large collection buy budget. Begin send everybody to manager.",  
+        "postOfficeBoxNumber": "Alone another defense get. Into population pretty baby.",  
+        "streetNr": "Impact easy rise chair guess. Pretty imagine charge red garden. Growth guy pattern little environmental dream",  
+        "district": "Force before sing leader some traditional scientist. Tv particularly such painting open her fig"  
     },  
-    "areaServed": "Your reality almost four use. Degree simply bag drop.",  
+    "areaServed": "Inside matter technology white shake. Light t",  
+    "awake": 864,  
+    "nrem1": 864,  
+    "nrem2": 864,  
+    "nrem3": 864,  
+    "nrem4": 864,  
+    "rem": 864,  
+    "lightsleep": 864,  
+    "deepsleep": 864,  
+    "sleepscore": 877.2,  
+    "if": [  
+        "oic.if.baseline"  
+    ],  
+    "rt": [  
+        "oic.r.sleep"  
+    ],  
+    "n": "Soldier player professor ever style",  
+    "range_phases": [  
+        864,  
+        864  
+    ],  
+    "step_phases": 864,  
+    "range_score": [  
+        796.4,  
+        476.3  
+    ],  
+    "step_score": 276.4,  
+    "precision": 394.0,  
+    "type": "Sleep",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -359,82 +811,162 @@ Sleep:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Sleep:id:DEWW:30338193",  
+    "id": "urn:ngsi-ld:Sleep:id:EOXI:64784328",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1988-01-12T23:48:03Z"  
+            "@value": "2012-05-08T18:33:40Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2007-07-28T08:40:23Z"  
+            "@value": "2017-08-05T04:09:21Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Agree daughter finally morning less share than. Choose training between bring town. Door truth upon upon."  
+        "value": "Experience somebody democratic happen form. Born recently field. Answer activity image control difficult value simple."  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Position keep forward crime reach. Especially wish paper."  
+        "value": "Know myself treat include fund blood and. Himself population pull partner walk vote."  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Significant concern significant local concern represent particularly serious. Others above onto no. Lawyer hard able two thus oil sit action."  
+        "value": "Sport effort race seven million energy hotel. Treat sign card market least court American particular. Computer put quite hospital walk score."  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Matter raise goal my. Into send what."  
+        "value": ""  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "American protect material. Three realize leader watch entire material."  
+        "value": "Want person season form model thought song head. Picture himself realize far your art mouth real. Low or born enter."  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Sleep:items:ORVF:05537533",  
-            "urn:ngsi-ld:Sleep:items:EZSB:78221686"  
+            "urn:ngsi-ld:Sleep:items:EVHF:32347913",  
+            "urn:ngsi-ld:Sleep:items:QUUJ:68624316"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Sleep:items:UJRS:30722806"  
+            "urn:ngsi-ld:Sleep:items:BYWE:96773582"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                -86.6050775,  
-                -132.16776  
+                -43.8165545,  
+                170.462299  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Successful better perform job deal. Work concern require join opportunity magazine general. Occur determine firm nice school. Activity create central executive.",  
-            "addressLocality": "Imagine quality last purpose. Sound like catch population writer. Possible establish provide. Less strong certainly visit open.",  
-            "addressRegion": "Successful according meet hear recent well. Now policy lay democratic he something important.",  
-            "addressCountry": "Something edge pressure wide six suffer. Age consider specific foreign measure. Fly those huge general future hand woman.",  
-            "postalCode": "Between return long rest her best prepare relationship. Instead set art sport quickly.",  
-            "postOfficeBoxNumber": "Sort threat between deal. Over turn every billion. On look lot deal rock. Society wait pass century figure crime picture."  
+            "streetAddress": "Reach black huge image care compa",  
+            "addressLocality": "Toward as work better enough. Not wife yes pretty quickly. Stage field nor. House dream field",  
+            "addressRegion": "Build expect doctor official. Detail into should treatment part. Capital resource another two.",  
+            "addressCountry": "Build later fear wall.",  
+            "postalCode": "Value dream on off pretty avoid. Perhaps large collection buy budget. Begin send everybody to manager.",  
+            "postOfficeBoxNumber": "Alone another defense get. Into population pretty baby.",  
+            "streetNr": "Impact easy rise chair guess. Pretty imagine charge red garden. Growth guy pattern little environmental dream",  
+            "district": "Force before sing leader some traditional scientist. Tv particularly such painting open her fig"  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Thought chance help hear miss ability. Remember report real matter strategy. Offer walk as plant environment. Control executive class list."  
+        "value": "Inside matter technology white shake. Light t"  
     },  
+    "awake": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "nrem1": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "nrem2": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "nrem3": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "nrem4": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "rem": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "lightsleep": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "deepsleep": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "sleepscore": {  
+        "type": "Property",  
+        "value": 877.2  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.sleep"  
+        ]  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Soldier player professor ever style"  
+    },  
+    "range_phases": {  
+        "type": "Property",  
+        "value": [  
+            864,  
+            864  
+        ]  
+    },  
+    "step_phases": {  
+        "type": "Property",  
+        "value": 864  
+    },  
+    "range_score": {  
+        "type": "Property",  
+        "value": [  
+            796.4,  
+            476.3  
+        ]  
+    },  
+    "step_score": {  
+        "type": "Property",  
+        "value": 276.4  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 394.0  
+    },  
+    "type": "Sleep",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -442,6 +974,7 @@ Sleep:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
+Voir [FAQ 10] (https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse à la question de savoir comment traiter les unités de magnitude.  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
