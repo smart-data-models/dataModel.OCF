@@ -1,76 +1,78 @@
 {
-    "id": "urn:ngsi-ld:CO2:id:SVES:89502461",
+    "id": "urn:ngsi-ld:CO2:id:ECDY:29770386",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1980-11-02T05:43:09Z"
+            "@value": "2006-01-06T20:14:07Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1987-05-22T08:24:10Z"
+            "@value": "1973-10-28T17:23:17Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Receive wife price issue laugh campaign. Spend detail case practice as. Generation in describe body friend ground style."
+        "value": "Bar nature agent we country various friend week. Range like science set."
     },
     "name": {
         "type": "Property",
-        "value": "Allow set least expect we person. Interview what change class specific. Energy put into military identify."
+        "value": "Rock improve author produce. Green city wonder their around."
     },
     "alternateName": {
         "type": "Property",
-        "value": "Deep view report which budget. Friend top because purpose word nature box. Nature south campaign treatment week wrong."
+        "value": "Guy collection store. Whether most operati"
     },
     "description": {
         "type": "Property",
-        "value": "Picture generation use star among. Either send future scene military."
+        "value": "Arrive land art sing notice crime stuff improve. One just peace show interview act its."
     },
     "dataProvider": {
         "type": "Property",
-        "value": "Born say already sense song author cut. Task place discuss score."
+        "value": "War radio while able significant finish. Different actually far however."
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:CO2:items:JOUW:60859756",
-            "urn:ngsi-ld:CO2:items:DGAF:22248342"
+            "urn:ngsi-ld:CO2:items:SFGW:03494449",
+            "urn:ngsi-ld:CO2:items:XQMI:62092917"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:CO2:items:ETQR:90005195"
+            "urn:ngsi-ld:CO2:items:TYCI:58813039"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                27.2603735,
-                -163.603735
+                -30.9524135,
+                92.601413
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "Water fish floor end every lose. Indicate trouble authority pick room million catch. Kid for receive well.",
-            "addressLocality": "Fall to thing second whom. First them already two until.",
-            "addressRegion": "High thus national call staff concern. Value range order artist. Because culture your will thus.",
-            "addressCountry": "Place word thank book culture. Though project building guy action open doctor. Whole population new music chance manage.",
-            "postalCode": "Third according teach stock true pull significant over. Suggest wife foot mouth mother since support.",
-            "postOfficeBoxNumber": "Somebody left car growth."
+            "streetAddress": "Result whole save leg me could nation. Just people mind actually town. Get push various according.",
+            "addressLocality": "There describe attent",
+            "addressRegion": "Quite it fact dinner allow. Item they production point area outside from.",
+            "addressCountry": "Who him particular matter late. Way receive star.",
+            "postalCode": "Drug today artist year. Government write al",
+            "postOfficeBoxNumber": "Machine course record another without politics. History five rich a",
+            "streetNr": "Purpose wear physical tough. Water staff media information your few thing. Enter sometimes play supp",
+            "district": "Down federal once PM create piece class green. Let structure bed top seem different television. Parent order bit story."
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "Soon discover leg fight each shoulder eight set. Majority Republican play show standard well."
+        "value": "Author project kitchen me local boy. Officer society section sort deal choose gas."
     },
     "rt": {
         "type": "Property",
@@ -80,41 +82,40 @@
     },
     "value": {
         "type": "Property",
-        "value": false
+        "value": true
     },
     "measurement": {
         "type": "Property",
-        "value": 874.2
+        "value": 339.0
     },
     "precision": {
         "type": "Property",
-        "value": 765.9
+        "value": 532.9
     },
     "n": {
         "type": "Property",
-        "value": "Hit his kid."
+        "value": "Politics water fall woman study. Marriage scientist itself i"
     },
     "range": {
         "type": "Property",
         "value": [
-            316.3,
-            505.4
+            141.8,
+            193.5
         ]
     },
     "step": {
         "type": "Property",
-        "value": 641.7
+        "value": 87.6
     },
     "if": {
         "type": "Property",
         "value": [
-            "oic.if.s",
+            "oic.if.baseline",
             "oic.if.s"
         ]
     },
     "type": "CO2",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
