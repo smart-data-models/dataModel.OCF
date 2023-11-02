@@ -1,76 +1,78 @@
 {
-    "id": "urn:ngsi-ld:BodySoftLeanMass:id:SYRF:82432210",
+    "id": "urn:ngsi-ld:BodySoftLeanMass:id:XDMZ:15679729",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1996-02-28T20:56:42Z"
+            "@value": "1982-09-12T09:16:04Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1991-02-21T22:05:11Z"
+            "@value": "1997-02-13T17:35:45Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Range six speech act. Husband ball water before church thought resource change."
+        "value": "Strong newspaper dog institut"
     },
     "name": {
         "type": "Property",
-        "value": "Argue push management."
+        "value": "Structure thousand town create spring new. Position police practice chair region phone city. Officer partner cell both parent."
     },
     "alternateName": {
         "type": "Property",
-        "value": "Scientist talk education fine full population level thank. Investment because reveal memory choose. Official south inside fund."
+        "value": "Again walk civil cost for. Out still all figure want specific. Debate finally tough check. Up gas cut."
     },
     "description": {
         "type": "Property",
-        "value": "Together difficult then any. Notice animal performance since sometimes ready so. Bit should its suffer house their. Son as much next actually."
+        "value": "Weight themselves"
     },
     "dataProvider": {
         "type": "Property",
-        "value": "Painting book hand low certain sometimes itself. Painting hundred face field. Return buy upon maybe service."
+        "value": "Me pretty stay protect participant fight. Art recognize finally key "
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:BodySoftLeanMass:items:UQUW:63154460",
-            "urn:ngsi-ld:BodySoftLeanMass:items:FZVF:84597741"
+            "urn:ngsi-ld:BodySoftLeanMass:items:GMHN:56339615",
+            "urn:ngsi-ld:BodySoftLeanMass:items:UVXV:74830962"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:BodySoftLeanMass:items:DGRC:74899642"
+            "urn:ngsi-ld:BodySoftLeanMass:items:NEJT:56397138"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                -54.613213,
-                -49.063645
+                -32.9838625,
+                -13.350756
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "Cost note enough. Human feeling how certainly care. Security next success of attack measure.",
-            "addressLocality": "Able rock move tree part. Despite ago seat bit easy everything indicate. Policy ten hour none determine tell lose.",
-            "addressRegion": "Garden pretty build. Certain couple teach cold table.",
-            "addressCountry": "Pressure ask stop fund least political. Responsibility the election morning culture.",
-            "postalCode": "World simply whatever create radio tell finally. She field detail voice body employee sometimes.",
-            "postOfficeBoxNumber": "Wear knowledge member begin hear question bit. Production court pull sort common majority population. Someone part west decade appear resource. Treat win check action."
+            "streetAddress": "Action whether hea",
+            "addressLocality": "Able this happen positive dark. Cut laugh cold blood seat. Expert sea spend magazine necessary when travel evening.",
+            "addressRegion": "Three join late health far save government born. Woman today conf",
+            "addressCountry": "Door control different general subject situation recently. Hear where during trip matter.",
+            "postalCode": "Record right reflect. Trouble move meeting.",
+            "postOfficeBoxNumber": "Really physical move how onto fine to. Could hotel reach raise color property probably not. Field condition second leader.",
+            "streetNr": "Positive to guess news. Quality run skill subject class.",
+            "district": "Look travel material. High floor machine race foot. Receive small wall crime."
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "Network despite recently fall chance. Occur training quite. Brother western blood life than red almost."
+        "value": "Property of side leader quickly government. Pl"
     },
     "rt": {
         "type": "Property",
@@ -80,7 +82,7 @@
     },
     "slm": {
         "type": "Property",
-        "value": 585.5
+        "value": 342.3
     },
     "units": {
         "type": "Property",
@@ -89,21 +91,21 @@
     "range": {
         "type": "Property",
         "value": [
-            190.3,
-            292.8
+            906.5,
+            314.9
         ]
     },
     "step": {
         "type": "Property",
-        "value": 944.6
+        "value": 109.9
     },
     "precision": {
         "type": "Property",
-        "value": 411.9
+        "value": 597.1
     },
     "n": {
         "type": "Property",
-        "value": "Fund foreign forget."
+        "value": "Design family wa"
     },
     "if": {
         "type": "Property",
@@ -113,7 +115,6 @@
     },
     "type": "BodySoftLeanMass",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
