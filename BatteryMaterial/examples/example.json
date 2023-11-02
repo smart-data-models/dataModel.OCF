@@ -1,34 +1,45 @@
 {
-  "id": "urn:ngsi-ld:BatteryMaterial:id:BIGG:65391750",
-  "dateCreated": "2015-08-09T21:48:44Z",
-  "dateModified": "2011-09-08T04:27:31Z",
-  "source": "Value two guy eye music wife might. Pressure police relationship cause person. Million official tree say art we system.",
-  "name": "Clearly turn series another kid. Arrive on firm TV the spring piece. Score man crime million stock peace risk.",
-  "alternateName": "Company kid pull realize special maybe. Letter result prevent room. Position billion home discover industry often general.",
-  "description": "Really road stay make face compare heart. Main note green item why ago.",
-  "dataProvider": "Develop throw bar discussion. Head continue growth either these hundred. Story space expect but church.",
-  "owner": [
-    "urn:ngsi-ld:BatteryMaterial:items:DZKF:56488970",
-    "urn:ngsi-ld:BatteryMaterial:items:XBYH:64008923"
-  ],
-  "seeAlso": [
-    "urn:ngsi-ld:BatteryMaterial:items:HLUT:17324623",
-    "urn:ngsi-ld:BatteryMaterial:items:RSRZ:45355989"
-  ],
-  "location": {
-    "type": "Point",
-    "coordinates": [
-      72.3612535,
-      145.935183
-    ]
-  },
-  "address": {
-    "streetAddress": "Break and six table agree. Year garden board claim mention total.",
-    "addressLocality": "Camera responsibility interview animal not. Artist end ball me.",
-    "addressRegion": "Say explain available Mrs floor fall security parent. Pick let challenge decade bed camera develop. Huge likely memory people great mention.",
-    "addressCountry": "Black beat run collection. Country billion any whom doctor. Contain may keep south.",
-    "postalCode": "Close organization man take type save. Tree space wind would off summer.",
-    "postOfficeBoxNumber": "Build president action cover."
-  },
-  "areaServed": "Reality drive forward enter travel game about. Successful who direction stay answer law vote certain."
+    "id": "urn:ngsi-ld:BatteryMaterial:id:YHLJ:63936175",
+    "dateCreated": "1981-05-13T21:09:19Z",
+    "dateModified": "1980-07-16T20:07:15Z",
+    "source": "I",
+    "name": "Particular garden free effort for film.",
+    "alternateName": "Start performance approach Republican. Tough board leave baby security item. Law way inside.",
+    "description": "Much wish look bed gun store. Boy present wide old.",
+    "dataProvider": "Indeed white could account benefit produce. Cultural anyone southern you letter board watch.",
+    "owner": [
+        "urn:ngsi-ld:BatteryMaterial:items:WJNR:66047443",
+        "urn:ngsi-ld:BatteryMaterial:items:HPXL:60042311"
+    ],
+    "seeAlso": [
+        "urn:ngsi-ld:BatteryMaterial:items:KLOB:32503034"
+    ],
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            10.1892095,
+            -5.495683
+        ]
+    },
+    "address": {
+        "streetAddress": "Information raise various American I structure. Indeed public oil student rather discuss.",
+        "addressLocality": "Your dark result just. Small run true.",
+        "addressRegion": "Agency training need. Certainly work open in.",
+        "addressCountry": "Power daughter suffer store else. Offer real leg side.",
+        "postalCode": "Store world standard middle town how ten. By so tough sometimes most agent. Smile agency sometimes west.",
+        "postOfficeBoxNumber": "Daughter father media Democrat city relationship ball. Cultural across space top lot. Understand team necessary PM explain enough near.",
+        "streetNr": "Bit today already. Table major pull garden seat. Together artist great include. Such consider partner onto treatment.",
+        "district": ""
+    },
+    "areaServed": "Community career science. Play reason skill matter sometimes seem direction produce. Wide idea else true military explain.",
+    "rt": [
+        "oic.r.batterymaterial"
+    ],
+    "material": "Zinc Carbon",
+    "n": "Fast to this identify summer. Signifi",
+    "if": [
+        "oic.if.s",
+        "oic.if.baseline"
+    ],
+    "type": "BatteryMaterial"
 }
