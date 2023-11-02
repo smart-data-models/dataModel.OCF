@@ -1,3 +1,3 @@
 /* (Beta) Export of data model settings-support of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE settings-support_type AS ENUM ('settings-support');
-CREATE TABLE settings-support (if JSON, remote-management BOOLEAN, rt JSON, software-auto-update BOOLEAN, type settings-support_type);
+CREATE TABLE settings-support (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, if JSON, location JSON, name TEXT, owner JSON, remote-management BOOLEAN, rt JSON, seeAlso JSON, software-auto-update BOOLEAN, source TEXT, type settings-support_type);
