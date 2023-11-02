@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: Le numéro de la boîte postale pour les adresses de boîtes postales. Par exemple, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: Le code postal. Par exemple, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: L'adresse de la rue  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Numéro identifiant une propriété spécifique sur une voie publique    
 - `alternateName[string]`: Un nom alternatif pour ce poste  - `areaServed[string]`: La zone géographique où un service ou un article est offert  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées  - `dateCreated[date-time]`: Horodatage de la création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage  - `dateModified[date-time]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage  - `description[string]`: Une description de l'article  - `ffm[number]`: Masse grasse libre  - `id[*]`: Identifiant unique de l'entité  - `if[array]`: L'ensemble d'interfaces OCF pris en charge par cette ressource  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une chaîne de ligne, d'un polygone, d'un point multiple, d'une chaîne de ligne multiple ou d'un polygone multiple.  - `n[string]`: Nom amical de la ressource  - `name[string]`: Le nom de cet élément  - `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  - `precision[number]`: Lorsqu'elle est exposée, la valeur de "précision" fournit une tolérance de +/- par rapport aux propriétés de la ressource. Ainsi, si une propriété est mise à jour avec une valeur et que cette propriété est ensuite récupérée, la valeur récupérée est valide si elle se situe dans la plage de la valeur définie +/- précision.  - `range[array]`: L'intervalle de validité de la propriété dans la ressource sous la forme d'un nombre. La première valeur du tableau est la valeur minimale, la deuxième valeur du tableau est la valeur maximale.  - `rt[array]`: Type de ressource  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  - `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  - `step[number]`: Valeur de l'échelon dans la plage définie - un entier lorsque la plage est un nombre.  Il s'agit de l'incrément pour les valeurs valides dans la plage ; ainsi, si la plage est 0.0..10.0 et que le pas est 2.5, les valeurs valides sont 0.0,2.5,5.0,7.5,10.0.  - `type[string]`: Type d'entité NGSI. Il doit s'agir de BodyFatFreeMass  - `units[string]`: Unités de masse libre de graisse corporelle  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propriétés requises  
@@ -455,65 +456,55 @@ BodyFatFreeMass:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:BodyFatFreeMass:id:OWUF:38686534",  
-  "dateCreated": "2016-04-20T09:01:59Z",  
-  "dateModified": "2011-01-29T20:40:15Z",  
-  "source": "Third draw do environment college. Author each position.",  
-  "name": "Feeling evidence adult loss thing new floor likely. Memory prove back finish record. Number eat fact natural describe able.",  
-  "alternateName": "Wish everyone end carry.",  
-  "description": "Sign summer house citizen official. Nearly business heart development population.",  
-  "dataProvider": "So as today reveal environmental safe right. Pick major environmental listen share day. Star term artist or want.",  
-  "owner": [  
-    "urn:ngsi-ld:BodyFatFreeMass:items:VNNT:07840154",  
-    "urn:ngsi-ld:BodyFatFreeMass:items:KFNY:73865310"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:BodyFatFreeMass:items:KAPP:63866226",  
-    "urn:ngsi-ld:BodyFatFreeMass:items:QYFK:82184121"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -30.758229,  
-      124.110579  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Fast ask camera food. Though traditional group number live coach agreement. Thank production hope reflect long else. May science difficult.",  
-    "addressLocality": "Special major major sure apply thing operation set. Box tell serve almost simply. Better increase particular group sure both.",  
-    "addressRegion": "Social best beyond lead structure. Challenge high beat nature.",  
-    "addressCountry": "Staff better standard feel air oil other. Perhaps only newspaper recognize why Congress. High find suffer relationship eight letter door.",  
-    "postalCode": "Day back these appear wear. Medical contain consider agent.",  
-    "postOfficeBoxNumber": "Allow television gun industry morning. Home ability vote into nearly to."  
-  },  
-  "areaServed": "Behind cold hot benefit. Or many gas election for none.",  
-  "rt": [  
-    "oic.r.body.ffm",  
-    "oic.r.body.ffm"  
-  ],  
-  "ffm": {  
-    "type": "Property",  
-    "value": 103.8  
-  },  
-  "units": "percent",  
-  "range": [  
-    974.9,  
-    706.9  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 406.8  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 396.6  
-  },  
-  "n": "Audience particularly receive offer national course.",  
-  "if": [  
-    "oic.if.s",  
-    "oic.if.s"  
-  ],  
-  "type": "BodyFatFreeMass"  
+    "id": "urn:ngsi-ld:BodyFatFreeMass:id:OITA:84015603",  
+    "dateCreated": "2008-01-28T11:50:42Z",  
+    "dateModified": "1989-08-09T09:52:36Z",  
+    "source": "Until movie deal million. West course newspaper rest player stand scene. S",  
+    "name": "Thing town nor fine specific anyone mind. Pattern really cost film others fund office.",  
+    "alternateName": "Eat skin conference charge born sometimes night ",  
+    "description": "Little everything later study accept pretty. Above claim attack take part color big. Turn television determine fire old.",  
+    "dataProvider": "A scientist such kitchen people song our. Building night risk imagine. We particularly conference mother unit.",  
+    "owner": [  
+        "urn:ngsi-ld:BodyFatFreeMass:items:JOUM:77326907",  
+        "urn:ngsi-ld:BodyFatFreeMass:items:QQGB:73829140"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:BodyFatFreeMass:items:LGBL:55154773"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            20.177127,  
+            89.726082  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Method city material energy evidence second.",  
+        "addressLocality": "Argue certainly skill and consumer save. Lay those me yea",  
+        "addressRegion": "Scene top image office. Quality save off pretty decide. Special oil deal.",  
+        "addressCountry": "Away their when and hope. Use cultural campaign bank. I trial life offer visit cover.",  
+        "postalCode": "Subject learn administration church wish rich. Relationship au",  
+        "postOfficeBoxNumber": "Outside difficult adult south. Store data past analysis idea hot system. Year after side machine apply food. Safe too strong whole.",  
+        "streetNr": "Month card television machine same speech thought save. High nice couple throw respond thousand might. Third appear grow simply water you.",  
+        "district": "Break particular entire response participant bank. Operation window floor wind member responsibility. Bag investment hand answer position coll"  
+    },  
+    "areaServed": "Development culture federal draw animal fish level central. Table main seat want assume. Raise mil",  
+    "rt": [  
+        "oic.r.body.ffm"  
+    ],  
+    "ffm": 911.0,  
+    "units": "percent",  
+    "range": [  
+        77.7,  
+        206.6  
+    ],  
+    "step": 540.2,  
+    "precision": 989.8,  
+    "n": "Run probably certainly.",  
+    "if": [  
+        "oic.if.s"  
+    ],  
+    "type": "BodyFatFreeMass"  
 }  
 ```  
 </details>  
@@ -522,133 +513,115 @@ BodyFatFreeMass:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:BodyFatFreeMass:id:OWUF:38686534"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2016-04-20T09:01:59Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2011-01-29T20:40:15Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Third draw do environment college. Author each position."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Feeling evidence adult loss thing new floor likely. Memory prove back finish record. Number eat fact natural describe able."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Wish everyone end carry."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Sign summer house citizen official. Nearly business heart development population."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "So as today reveal environmental safe right. Pick major environmental listen share day. Star term artist or want."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:BodyFatFreeMass:items:VNNT:07840154",  
-      "urn:ngsi-ld:BodyFatFreeMass:items:KFNY:73865310"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:BodyFatFreeMass:items:KAPP:63866226",  
-      "urn:ngsi-ld:BodyFatFreeMass:items:QYFK:82184121"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -30.758229,  
-        124.110579  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Fast ask camera food. Though traditional group number live coach agreement. Thank production hope reflect long else. May science difficult.",  
-      "addressLocality": "Special major major sure apply thing operation set. Box tell serve almost simply. Better increase particular group sure both.",  
-      "addressRegion": "Social best beyond lead structure. Challenge high beat nature.",  
-      "addressCountry": "Staff better standard feel air oil other. Perhaps only newspaper recognize why Congress. High find suffer relationship eight letter door.",  
-      "postalCode": "Day back these appear wear. Medical contain consider agent.",  
-      "postOfficeBoxNumber": "Allow television gun industry morning. Home ability vote into nearly to."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Behind cold hot benefit. Or many gas election for none."  
-  },  
-  "rt": {  
-    "type": "array",  
-    "value": [  
-      "oic.r.body.ffm",  
-      "oic.r.body.ffm"  
-    ]  
-  },  
-  "ffm": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 103.8  
-    }  
-  },  
-  "units": {  
-    "type": "string",  
-    "value": "percent"  
-  },  
-  "range": {  
-    "type": "array",  
-    "value": [  
-      974.9,  
-      706.9  
-    ]  
-  },  
-  "step": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 406.8  
-    }  
-  },  
-  "precision": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 396.6  
-    }  
-  },  
-  "n": {  
-    "type": "string",  
-    "value": "Audience particularly receive offer national course."  
-  },  
-  "if": {  
-    "type": "array",  
-    "value": [  
-      "oic.if.s",  
-      "oic.if.s"  
-    ]  
-  },  
-  "type": {  
-    "type": "string",  
-    "value": "BodyFatFreeMass"  
-  }  
+    "id": "urn:ngsi-ld:BodyFatFreeMass:id:OITA:84015603",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "2008-01-28T11:50:42Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "1989-08-09T09:52:36Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Until movie deal million. West course newspaper rest player stand scene. S"  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Thing town nor fine specific anyone mind. Pattern really cost film others fund office."  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Eat skin conference charge born sometimes night "  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Little everything later study accept pretty. Above claim attack take part color big. Turn television determine fire old."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "A scientist such kitchen people song our. Building night risk imagine. We particularly conference mother unit."  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:BodyFatFreeMass:items:JOUM:77326907",  
+            "urn:ngsi-ld:BodyFatFreeMass:items:QQGB:73829140"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:BodyFatFreeMass:items:LGBL:55154773"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                20.177127,  
+                89.726082  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Method city material energy evidence second.",  
+            "addressLocality": "Argue certainly skill and consumer save. Lay those me yea",  
+            "addressRegion": "Scene top image office. Quality save off pretty decide. Special oil deal.",  
+            "addressCountry": "Away their when and hope. Use cultural campaign bank. I trial life offer visit cover.",  
+            "postalCode": "Subject learn administration church wish rich. Relationship au",  
+            "postOfficeBoxNumber": "Outside difficult adult south. Store data past analysis idea hot system. Year after side machine apply food. Safe too strong whole.",  
+            "streetNr": "Month card television machine same speech thought save. High nice couple throw respond thousand might. Third appear grow simply water you.",  
+            "district": "Break particular entire response participant bank. Operation window floor wind member responsibility. Bag investment hand answer position coll"  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Development culture federal draw animal fish level central. Table main seat want assume. Raise mil"  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.body.ffm"  
+        ]  
+    },  
+    "ffm": {  
+        "type": "Number",  
+        "value": 911.0  
+    },  
+    "units": {  
+        "type": "Text",  
+        "value": "percent"  
+    },  
+    "range": {  
+        "type": "StructuredValue",  
+        "value": [  
+            77.7,  
+            206.6  
+        ]  
+    },  
+    "step": {  
+        "type": "Number",  
+        "value": 540.2  
+    },  
+    "precision": {  
+        "type": "Number",  
+        "value": 989.8  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Run probably certainly."  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.s"  
+        ]  
+    },  
+    "type": "BodyFatFreeMass"  
 }  
 ```  
 </details>  
@@ -657,68 +630,57 @@ BodyFatFreeMass:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:BodyFatFreeMass:id:OWUF:38686534",  
-    "dateCreated": "2016-04-20T09:01:59Z",  
-    "dateModified": "2011-01-29T20:40:15Z",  
-    "source": "Third draw do environment college. Author each position.",  
-    "name": "Feeling evidence adult loss thing new floor likely. Memory prove back finish record. Number eat fact natural describe able.",  
-    "alternateName": "Wish everyone end carry.",  
-    "description": "Sign summer house citizen official. Nearly business heart development population.",  
-    "dataProvider": "So as today reveal environmental safe right. Pick major environmental listen share day. Star term artist or want.",  
+    "id": "urn:ngsi-ld:BodyFatFreeMass:id:OITA:84015603",  
+    "dateCreated": "2008-01-28T11:50:42Z",  
+    "dateModified": "1989-08-09T09:52:36Z",  
+    "source": "Until movie deal million. West course newspaper rest player stand scene. S",  
+    "name": "Thing town nor fine specific anyone mind. Pattern really cost film others fund office.",  
+    "alternateName": "Eat skin conference charge born sometimes night ",  
+    "description": "Little everything later study accept pretty. Above claim attack take part color big. Turn television determine fire old.",  
+    "dataProvider": "A scientist such kitchen people song our. Building night risk imagine. We particularly conference mother unit.",  
     "owner": [  
-        "urn:ngsi-ld:BodyFatFreeMass:items:VNNT:07840154",  
-        "urn:ngsi-ld:BodyFatFreeMass:items:KFNY:73865310"  
+        "urn:ngsi-ld:BodyFatFreeMass:items:JOUM:77326907",  
+        "urn:ngsi-ld:BodyFatFreeMass:items:QQGB:73829140"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:BodyFatFreeMass:items:KAPP:63866226",  
-        "urn:ngsi-ld:BodyFatFreeMass:items:QYFK:82184121"  
+        "urn:ngsi-ld:BodyFatFreeMass:items:LGBL:55154773"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            -30.758229,  
-            124.110579  
+            20.177127,  
+            89.726082  
         ]  
     },  
     "address": {  
-        "streetAddress": "Fast ask camera food. Though traditional group number live coach agreement. Thank production hope reflect long else. May science difficult.",  
-        "addressLocality": "Special major major sure apply thing operation set. Box tell serve almost simply. Better increase particular group sure both.",  
-        "addressRegion": "Social best beyond lead structure. Challenge high beat nature.",  
-        "addressCountry": "Staff better standard feel air oil other. Perhaps only newspaper recognize why Congress. High find suffer relationship eight letter door.",  
-        "postalCode": "Day back these appear wear. Medical contain consider agent.",  
-        "postOfficeBoxNumber": "Allow television gun industry morning. Home ability vote into nearly to."  
+        "streetAddress": "Method city material energy evidence second.",  
+        "addressLocality": "Argue certainly skill and consumer save. Lay those me yea",  
+        "addressRegion": "Scene top image office. Quality save off pretty decide. Special oil deal.",  
+        "addressCountry": "Away their when and hope. Use cultural campaign bank. I trial life offer visit cover.",  
+        "postalCode": "Subject learn administration church wish rich. Relationship au",  
+        "postOfficeBoxNumber": "Outside difficult adult south. Store data past analysis idea hot system. Year after side machine apply food. Safe too strong whole.",  
+        "streetNr": "Month card television machine same speech thought save. High nice couple throw respond thousand might. Third appear grow simply water you.",  
+        "district": "Break particular entire response participant bank. Operation window floor wind member responsibility. Bag investment hand answer position coll"  
     },  
-    "areaServed": "Behind cold hot benefit. Or many gas election for none.",  
+    "areaServed": "Development culture federal draw animal fish level central. Table main seat want assume. Raise mil",  
     "rt": [  
-        "oic.r.body.ffm",  
         "oic.r.body.ffm"  
     ],  
-    "ffm": {  
-        "type": "Property",  
-        "value": 103.8  
-    },  
+    "ffm": 911.0,  
     "units": "percent",  
     "range": [  
-        974.9,  
-        706.9  
+        77.7,  
+        206.6  
     ],  
-    "step": {  
-        "type": "Property",  
-        "value": 406.8  
-    },  
-    "precision": {  
-        "type": "Property",  
-        "value": 396.6  
-    },  
-    "n": "Audience particularly receive offer national course.",  
+    "step": 540.2,  
+    "precision": 989.8,  
+    "n": "Run probably certainly.",  
     "if": [  
-        "oic.if.s",  
         "oic.if.s"  
     ],  
     "type": "BodyFatFreeMass",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -728,78 +690,80 @@ BodyFatFreeMass:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:BodyFatFreeMass:id:BYYC:85997792",  
+    "id": "urn:ngsi-ld:BodyFatFreeMass:id:OITA:84015603",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1979-04-14T17:16:17Z"  
+            "@value": "2008-01-28T11:50:42Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1982-11-26T18:17:09Z"  
+            "@value": "1989-08-09T09:52:36Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "With letter region set lay realize."  
+        "value": "Until movie deal million. West course newspaper rest player stand scene. S"  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Important hot speak product. Anything property face actually weight. Because hour admit case."  
+        "value": "Thing town nor fine specific anyone mind. Pattern really cost film others fund office."  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Race ball hard fine."  
+        "value": "Eat skin conference charge born sometimes night "  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Several list outside statement assume government. Size upon that staff lay everybody."  
+        "value": "Little everything later study accept pretty. Above claim attack take part color big. Turn television determine fire old."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "List exist worry authority. Ok strategy security able huge. Control that early type control action new mouth."  
+        "value": "A scientist such kitchen people song our. Building night risk imagine. We particularly conference mother unit."  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:BodyFatFreeMass:items:YGWC:27965149",  
-            "urn:ngsi-ld:BodyFatFreeMass:items:JJZI:38517462"  
+            "urn:ngsi-ld:BodyFatFreeMass:items:JOUM:77326907",  
+            "urn:ngsi-ld:BodyFatFreeMass:items:QQGB:73829140"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:BodyFatFreeMass:items:IRKO:22252881"  
+            "urn:ngsi-ld:BodyFatFreeMass:items:LGBL:55154773"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                -73.99554,  
-                -50.163726  
+                20.177127,  
+                89.726082  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Soon agreement rate evidence since answer bar. Never account center know.",  
-            "addressLocality": "Growth against deep clearly let grow. Order over training have let high occur game. Make other enjoy ever human identify short summer.",  
-            "addressRegion": "White budget ten doctor cup husband area. Wait spend myself serve whose south wonder bed. And clearly set argue. Represent then cause animal.",  
-            "addressCountry": "Against finish hope business decade feeling. Fund really find line. Claim knowledge outside support way.",  
-            "postalCode": "Think professional new those theory boy road. Something follow physical some reach might condition. Explain really production a nature so.",  
-            "postOfficeBoxNumber": "All stand myself this case. Remain push win sea cell. Throughout account goal."  
+            "streetAddress": "Method city material energy evidence second.",  
+            "addressLocality": "Argue certainly skill and consumer save. Lay those me yea",  
+            "addressRegion": "Scene top image office. Quality save off pretty decide. Special oil deal.",  
+            "addressCountry": "Away their when and hope. Use cultural campaign bank. I trial life offer visit cover.",  
+            "postalCode": "Subject learn administration church wish rich. Relationship au",  
+            "postOfficeBoxNumber": "Outside difficult adult south. Store data past analysis idea hot system. Year after side machine apply food. Safe too strong whole.",  
+            "streetNr": "Month card television machine same speech thought save. High nice couple throw respond thousand might. Third appear grow simply water you.",  
+            "district": "Break particular entire response participant bank. Operation window floor wind member responsibility. Bag investment hand answer position coll"  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Happy Democrat yet Mr share time its. Half least record reveal leg fish. Vote development Republican single serve amount."  
+        "value": "Development culture federal draw animal fish level central. Table main seat want assume. Raise mil"  
     },  
     "rt": {  
         "type": "Property",  
@@ -809,41 +773,40 @@ BodyFatFreeMass:
     },  
     "ffm": {  
         "type": "Property",  
-        "value": 661.3  
+        "value": 911.0  
     },  
     "units": {  
         "type": "Property",  
-        "value": "kg"  
+        "value": "percent"  
     },  
     "range": {  
         "type": "Property",  
         "value": [  
-            609.9,  
-            585.5  
+            77.7,  
+            206.6  
         ]  
     },  
     "step": {  
         "type": "Property",  
-        "value": 91.6  
+        "value": 540.2  
     },  
     "precision": {  
         "type": "Property",  
-        "value": 675.6  
+        "value": 989.8  
     },  
     "n": {  
         "type": "Property",  
-        "value": "Future reality write read law list. Account friend shake region tell program. Rate most mind save cup agency big rather."  
+        "value": "Run probably certainly."  
     },  
     "if": {  
         "type": "Property",  
         "value": [  
-            "oic.if.baseline"  
+            "oic.if.s"  
         ]  
     },  
     "type": "BodyFatFreeMass",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
