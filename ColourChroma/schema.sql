@@ -1,3 +1,3 @@
 /* (Beta) Export of data model ColourChroma of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE ColourChroma_type AS ENUM ('ColourChroma');
-CREATE TABLE ColourChroma (csc JSON, ct INTEGER, hue NUMERIC, if JSON, maximumsaturation INTEGER, n TEXT, rt JSON, saturation INTEGER, type ColourChroma_type);
+CREATE TABLE ColourChroma (address JSON, alternateName TEXT, areaServed TEXT, csc JSON, ct NUMERIC, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, hue NUMERIC, id TEXT PRIMARY KEY, if JSON, location JSON, maximumsaturation NUMERIC, n TEXT, name TEXT, owner JSON, rt JSON, saturation NUMERIC, seeAlso JSON, source TEXT, type ColourChroma_type);
