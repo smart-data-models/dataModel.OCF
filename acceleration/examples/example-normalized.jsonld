@@ -1,79 +1,117 @@
 {
-    "id": "urn:ngsi-ld:acceleration:id:NGIX:57424946",
+    "id": "urn:ngsi-ld:acceleration:id:PTIV:66263429",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2006-10-27T10:09:51Z"
+            "@value": "1992-09-18T15:41:47Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1976-11-20T00:14:22Z"
+            "@value": "1993-03-23T07:22:41Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Wife as child city mean current property. Result debate against within."
+        "value": "Mouth gas court skin street such. Full your senior design."
     },
     "name": {
         "type": "Property",
-        "value": "Design write amount task alone treatment Republican trip. List benefit strategy rest month. Guy throughout do doctor hair step really."
+        "value": "Country be firm ground list. Drive top section test them bank guess. Sometimes fo"
     },
     "alternateName": {
         "type": "Property",
-        "value": "Energy song ability example. Big list air culture ever sometimes court."
+        "value": "Wife ground south arrive season. Career yard choice."
     },
     "description": {
         "type": "Property",
-        "value": "Of build contain stage type discussion language. Force game upon enough arm score letter."
+        "value": "Hot happy campaign recognize our nature say. Since answer these look "
     },
     "dataProvider": {
         "type": "Property",
-        "value": "High his series visit I. Sure event current and hair as."
+        "value": "Happen movie order much. Stand night take action assume."
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:acceleration:items:RLAK:02634901",
-            "urn:ngsi-ld:acceleration:items:GVYU:66034550"
+            "urn:ngsi-ld:acceleration:items:FHKM:06950447",
+            "urn:ngsi-ld:acceleration:items:PMQF:69472898"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:acceleration:items:CNCF:95278992"
+            "urn:ngsi-ld:acceleration:items:BIAJ:36620039"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                -71.507505,
-                -18.291869
+                46.791425,
+                130.647646
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "Affect big level career see simple product. Six tough majority able only billion food expect. Go serve option suddenly beat.",
-            "addressLocality": "Hit prove board similar game. Sea daughter Congress account behind.",
-            "addressRegion": "Seek threat student ever expert positive serve become. Guy seek pull total happen enter. Every too just after long themselves turn.",
-            "addressCountry": "Language family true might less. Make within begin myself certain enjoy.",
-            "postalCode": "Expect any thank TV drop information behavior join. Situation type letter group.",
-            "postOfficeBoxNumber": "Your score central return realize interview growth. Should per buy their stand nothing grow."
+            "streetAddress": "Assume book we term former sort role main. By pay store peace situation say response age. Among window together girl establish send",
+            "addressLocality": "Edge lay the hear ",
+            "addressRegion": "Accept let own you machine dark population. Day thing hundred everybody plant part. Least car box teacher sense moth",
+            "addressCountry": "When prepare ok take degree story pay. Image quite state actually. Ask like front condition value where.",
+            "postalCode": "Themselves build machine operation level can often choice. Serve design thank.",
+            "postOfficeBoxNumber": "Who east cell and. Hour success family pres",
+            "streetNr": "Course ball art two partner. Enough score court yard property win. Through writer cup ",
+            "district": "Poor yourself business simple. Turn"
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "My somebody behind property present view. Discuss tree second. Close score authority person throw."
+        "value": "Toward southern site same choose blood. Use necessary "
     },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.sensor.acceleration"
+        ]
+    },
+    "acceleration": {
+        "type": "Property",
+        "value": 253.7
+    },
+    "n": {
+        "type": "Property",
+        "value": "Throughout return commercial plac"
+    },
+    "range": {
+        "type": "Property",
+        "value": [
+            192.1,
+            532.9
+        ]
+    },
+    "step": {
+        "type": "Property",
+        "value": 986.6
+    },
+    "precision": {
+        "type": "Property",
+        "value": 223.4
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.s",
+            "oic.if.baseline"
+        ]
+    },
+    "type": "acceleration",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
