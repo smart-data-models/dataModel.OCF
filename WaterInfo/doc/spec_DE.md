@@ -15,7 +15,15 @@
 ## Liste der Eigenschaften  
 
 <sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
-- `currentadditivetypes[array]`: Der/die aktuell gewünschte(n) Zusatzstofftyp(en) je nach Präferenz des Kunden.  - `currentwatertype[string]`:  Der aktuell gewünschte Wassertyp.  - `if[array]`: Der von dieser Ressource unterstützte OCF-Schnittstellensatz.  - `n[string]`: Freundlicher Name der Ressource  - `rt[array]`: Der Ressourcentyp.  - `supportedadditivetypes[array]`: Das Array der möglichen Additivtypen.  - `supportedwatertypes[array]`: Die Liste der möglichen Wassertypen.  - `type[string]`: NGSI-Entitätstyp. Es muss WaterInfo sein.  <!-- /30-PropertiesList -->  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Das Land. Zum Beispiel, Spanien  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: Die Ortschaft, in der sich die Adresse befindet, und die in der Region liegt  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: Die Region, in der sich der Ort befindet, und die auf dem Land liegt  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Ein Bezirk ist eine Art von Verwaltungseinheit, die in einigen Ländern von der lokalen Regierung verwaltet wird.    
+	- `postOfficeBoxNumber[string]`: Die Postfachnummer für Postfachadressen. Zum Beispiel, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Die Postleitzahl. Zum Beispiel, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: Die Straßenanschrift  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Nummer zur Identifizierung eines bestimmten Grundstücks an einer öffentlichen Straße    
+- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `currentadditivetypes[array]`: Der/die aktuell gewünschte(n) Zusatzstofftyp(en) je nach Präferenz des Kunden.  - `currentwatertype[string]`:  Der aktuell gewünschte Wassertyp.  - `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit  - `dateCreated[date-time]`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen  - `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben  - `description[string]`: Eine Beschreibung dieses Artikels  - `id[*]`: Eindeutiger Bezeichner der Entität  - `if[array]`: Der von dieser Ressource unterstützte OCF-Schnittstellensatz.  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `n[string]`: Freundlicher Name der Ressource  - `name[string]`: Der Name dieses Artikels  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `rt[array]`: Der Ressourcentyp.  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `supportedadditivetypes[array]`: Das Array der möglichen Additivtypen.  - `supportedwatertypes[array]`: Die Liste der möglichen Wassertypen.  - `type[string]`: NGSI-Entitätstyp. Es muss WaterInfo sein.  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -32,6 +40,70 @@
 WaterInfo:    
   description: 'Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the water information to indicate type of water currently provided by the device. The water type can be read or set. The Property ''supportedwatertypes'' is an array of the possible water types are defined by the enumeration [''cold'', ''hot'', ''ambient'', ''ice'']. The Property ''supportedadditivetypes'' is an array of the possible additive types for water. The additive types mean optional types that can be added to the specific water type according to Client''s preference and are defined by the enumeration [''none'', ''soda'', ''mineral'']. If absent, the default value is ''none''.  The Property ''currentwatertype'' is the currently desired water type.  The Property ''currentadditivetypes'' is the currently desired additive type(s).  For example, if ''cold'' is selected with the ''currentwatertype'', ''soda'' and ''mineral'' or both can be selected as ''currentadditivetypes''. Note that if ''hot'' is selected with the ''currentwatertype'', ''soda'' and ''mineral'' may be restricted for the ''currentadditivetypes''.'    
   properties:    
+    address:    
+      description: The mailing address    
+      properties:    
+        addressCountry:    
+          description: 'The country. For example, Spain'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
+        addressLocality:    
+          description: 'The locality in which the street address is, and which is in the region'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
+        addressRegion:    
+          description: 'The region in which the locality is, and which is in the country'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        postOfficeBoxNumber:    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
+        postalCode:    
+          description: 'The postal code. For example, 24004'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
+        streetAddress:    
+          description: The street address    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      type: object    
+      x-ngsi:    
+        model: https://schema.org/address    
+        type: Property    
+    alternateName:    
+      description: An alternative name for this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    areaServed:    
+      description: The geographic area where a service or offered item is provided    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
     currentadditivetypes:    
       description: The currently desired additive type(s) according to Client's preference.    
       items:    
@@ -43,6 +115,45 @@ WaterInfo:
     currentwatertype:    
       description: ' The currently desired water type.'    
       type: string    
+      x-ngsi:    
+        type: Property    
+    dataProvider:    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateCreated:    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateModified:    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    description:    
+      description: A description of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    id:    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     if:    
@@ -58,11 +169,203 @@ WaterInfo:
       uniqueItems: true    
       x-ngsi:    
         type: Property    
+    location:    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+      oneOf:    
+        - description: Geojson reference to the item. Point    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                type: number    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - Point    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Point    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - LineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON LineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 4    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - Polygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Polygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPoint    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPoint    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiLineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiLineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    items:    
+                      type: number    
+                    minItems: 2    
+                    type: array    
+                  minItems: 4    
+                  type: array    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPolygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPolygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+      x-ngsi:    
+        type: GeoProperty    
     n:    
       description: Friendly name of the Resource    
       maxLength: 64    
       readOnly: true    
       type: string    
+      x-ngsi:    
+        type: Property    
+    name:    
+      description: The name of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    owner:    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
+      items:    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
+      type: array    
       x-ngsi:    
         type: Property    
     rt:    
@@ -76,6 +379,23 @@ WaterInfo:
       readOnly: true    
       type: array    
       uniqueItems: true    
+      x-ngsi:    
+        type: Property    
+    seeAlso:    
+      description: list of uri pointing to additional resources about the item    
+      oneOf:    
+        - items:    
+            format: uri    
+            type: string    
+          minItems: 1    
+          type: array    
+        - format: uri    
+          type: string    
+      x-ngsi:    
+        type: Property    
+    source:    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
+      type: string    
       x-ngsi:    
         type: Property    
     supportedadditivetypes:    
@@ -123,38 +443,60 @@ WaterInfo:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:WaterInfo:id:BWUP:35826914",  
-  "dateCreated": "1984-11-27T20:49:31Z",  
-  "dateModified": "2004-06-02T09:44:44Z",  
-  "source": "Along those purpose ok painting television fill. Worker wish race music trial about.",  
-  "name": "Enough thank teacher boy garden law both. Put modern customer short.",  
-  "alternateName": "Realize above attention present participant. Billion those candidate TV raise low course. Early science kid down.",  
-  "description": "According carry half. Civil meet option place pass perhaps. Mother might you age represent.",  
-  "dataProvider": "Financial live local view single.",  
-  "owner": [  
-    "urn:ngsi-ld:WaterInfo:items:JMPQ:05255850",  
-    "urn:ngsi-ld:WaterInfo:items:QJSR:25392303"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:WaterInfo:items:NTHC:63052587",  
-    "urn:ngsi-ld:WaterInfo:items:GRFX:83012714"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -80.746038,  
-      66.99956  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Area suddenly front game describe south. Store loss debate surface finish stand occur food.",  
-    "addressLocality": "Kitchen accept both of natural. Maintain traditional laugh plant on mind require contain. Wife group guy challenge.",  
-    "addressRegion": "Feel approach lead operation way single instead despite. Mean model social white near citizen firm.",  
-    "addressCountry": "Heart describe forward generation maintain. Last term shake card issue.",  
-    "postalCode": "Radio expect them usually decision none to. Tough certain tough while.",  
-    "postOfficeBoxNumber": "Analysis leg program. Country computer plan reveal available article may. Now gun third knowledge record single."  
-  },  
-  "areaServed": "Future then expect everybody team garden spend. End compare significant discover notice including Democrat."  
+    "id": "urn:ngsi-ld:WaterInfo:id:LZQI:23960151",  
+    "dateCreated": "1994-04-08T20:36:19Z",  
+    "dateModified": "1974-09-04T18:29:37Z",  
+    "source": "",  
+    "name": "Follow around town bit subject which. Smile remember during player mean new. Above drug rise who candidate what.",  
+    "alternateName": "Voice argue agree. From ",  
+    "description": "Today mention rich let the guy ",  
+    "dataProvider": "Find which now wear understand. Person necessary actually card real real.",  
+    "owner": [  
+        "urn:ngsi-ld:WaterInfo:items:DBVP:23498137",  
+        "urn:ngsi-ld:WaterInfo:items:GDJX:46883476"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:WaterInfo:items:NFSN:31596421"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -75.2620405,  
+            132.745561  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Skin yes finish responsibility politics follow. Fine these thought lose. Safe green their last.",  
+        "addressLocality": "Oil require reality. If reality almost machine walk.",  
+        "addressRegion": "Expert environment person rise century. Him song case three boy song democratic. Over poor kid a.",  
+        "addressCountry": "World system about. Program compare perform prepare something.",  
+        "postalCode": "Contain ",  
+        "postOfficeBoxNumber": "Cold have few through. Political major either about s",  
+        "streetNr": "Find someone machine finish pass draw religious. Number lawyer stay his. Fund piece already everything poli",  
+        "district": "Matter compare government prevent too something none. Writer just current skin want environmental wide."  
+    },  
+    "areaServed": "Law threat gun d",  
+    "rt": [  
+        "oic.r.waterinfo"  
+    ],  
+    "supportedwatertypes": [  
+        "Less dream off. Spring something western social.",  
+        "Scene like speech surface huge land hand."  
+    ],  
+    "supportedadditivetypes": [  
+        "Produce whatever team really. Support later artist seven wait ask.",  
+        "Author start four common impact. Door form blue three. Art mean size."  
+    ],  
+    "currentwatertype": "Chair wear production fill. Mention there box wide.",  
+    "currentadditivetypes": [  
+        "Class international discussion different rate though. Successful hour local born impact present official it. Feel above partner exist item outside tell role."  
+    ],  
+    "n": "Field government positive guy item necessary. Beha",  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.rw"  
+    ],  
+    "type": "WaterInfo"  
 }  
 ```  
 </details>  
@@ -163,79 +505,117 @@ WaterInfo:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:WaterInfo:id:BWUP:35826914"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1984-11-27T20:49:31Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2004-06-02T09:44:44Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Along those purpose ok painting television fill. Worker wish race music trial about."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Enough thank teacher boy garden law both. Put modern customer short."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Realize above attention present participant. Billion those candidate TV raise low course. Early science kid down."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "According carry half. Civil meet option place pass perhaps. Mother might you age represent."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Financial live local view single."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:WaterInfo:items:JMPQ:05255850",  
-      "urn:ngsi-ld:WaterInfo:items:QJSR:25392303"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:WaterInfo:items:NTHC:63052587",  
-      "urn:ngsi-ld:WaterInfo:items:GRFX:83012714"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -80.746038,  
-        66.99956  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Area suddenly front game describe south. Store loss debate surface finish stand occur food.",  
-      "addressLocality": "Kitchen accept both of natural. Maintain traditional laugh plant on mind require contain. Wife group guy challenge.",  
-      "addressRegion": "Feel approach lead operation way single instead despite. Mean model social white near citizen firm.",  
-      "addressCountry": "Heart describe forward generation maintain. Last term shake card issue.",  
-      "postalCode": "Radio expect them usually decision none to. Tough certain tough while.",  
-      "postOfficeBoxNumber": "Analysis leg program. Country computer plan reveal available article may. Now gun third knowledge record single."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Future then expect everybody team garden spend. End compare significant discover notice including Democrat."  
-  }  
+    "id": "urn:ngsi-ld:WaterInfo:id:LZQI:23960151",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1994-04-08T20:36:19Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "1974-09-04T18:29:37Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": ""  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Follow around town bit subject which. Smile remember during player mean new. Above drug rise who candidate what."  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Voice argue agree. From "  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Today mention rich let the guy "  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Find which now wear understand. Person necessary actually card real real."  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:WaterInfo:items:DBVP:23498137",  
+            "urn:ngsi-ld:WaterInfo:items:GDJX:46883476"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:WaterInfo:items:NFSN:31596421"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -75.2620405,  
+                132.745561  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Skin yes finish responsibility politics follow. Fine these thought lose. Safe green their last.",  
+            "addressLocality": "Oil require reality. If reality almost machine walk.",  
+            "addressRegion": "Expert environment person rise century. Him song case three boy song democratic. Over poor kid a.",  
+            "addressCountry": "World system about. Program compare perform prepare something.",  
+            "postalCode": "Contain ",  
+            "postOfficeBoxNumber": "Cold have few through. Political major either about s",  
+            "streetNr": "Find someone machine finish pass draw religious. Number lawyer stay his. Fund piece already everything poli",  
+            "district": "Matter compare government prevent too something none. Writer just current skin want environmental wide."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Law threat gun d"  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.waterinfo"  
+        ]  
+    },  
+    "supportedwatertypes": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "Less dream off. Spring something western social.",  
+            "Scene like speech surface huge land hand."  
+        ]  
+    },  
+    "supportedadditivetypes": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "Produce whatever team really. Support later artist seven wait ask.",  
+            "Author start four common impact. Door form blue three. Art mean size."  
+        ]  
+    },  
+    "currentwatertype": {  
+        "type": "Text",  
+        "value": "Chair wear production fill. Mention there box wide."  
+    },  
+    "currentadditivetypes": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "Class international discussion different rate though. Successful hour local born impact present official it. Feel above partner exist item outside tell role."  
+        ]  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Field government positive guy item necessary. Beha"  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.baseline",  
+            "oic.if.rw"  
+        ]  
+    },  
+    "type": "WaterInfo"  
 }  
 ```  
 </details>  
@@ -244,41 +624,62 @@ WaterInfo:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:WaterInfo:id:BWUP:35826914",  
-    "dateCreated": "1984-11-27T20:49:31Z",  
-    "dateModified": "2004-06-02T09:44:44Z",  
-    "source": "Along those purpose ok painting television fill. Worker wish race music trial about.",  
-    "name": "Enough thank teacher boy garden law both. Put modern customer short.",  
-    "alternateName": "Realize above attention present participant. Billion those candidate TV raise low course. Early science kid down.",  
-    "description": "According carry half. Civil meet option place pass perhaps. Mother might you age represent.",  
-    "dataProvider": "Financial live local view single.",  
+    "id": "urn:ngsi-ld:WaterInfo:id:LZQI:23960151",  
+    "dateCreated": "1994-04-08T20:36:19Z",  
+    "dateModified": "1974-09-04T18:29:37Z",  
+    "source": "",  
+    "name": "Follow around town bit subject which. Smile remember during player mean new. Above drug rise who candidate what.",  
+    "alternateName": "Voice argue agree. From ",  
+    "description": "Today mention rich let the guy ",  
+    "dataProvider": "Find which now wear understand. Person necessary actually card real real.",  
     "owner": [  
-        "urn:ngsi-ld:WaterInfo:items:JMPQ:05255850",  
-        "urn:ngsi-ld:WaterInfo:items:QJSR:25392303"  
+        "urn:ngsi-ld:WaterInfo:items:DBVP:23498137",  
+        "urn:ngsi-ld:WaterInfo:items:GDJX:46883476"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:WaterInfo:items:NTHC:63052587",  
-        "urn:ngsi-ld:WaterInfo:items:GRFX:83012714"  
+        "urn:ngsi-ld:WaterInfo:items:NFSN:31596421"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            -80.746038,  
-            66.99956  
+            -75.2620405,  
+            132.745561  
         ]  
     },  
     "address": {  
-        "streetAddress": "Area suddenly front game describe south. Store loss debate surface finish stand occur food.",  
-        "addressLocality": "Kitchen accept both of natural. Maintain traditional laugh plant on mind require contain. Wife group guy challenge.",  
-        "addressRegion": "Feel approach lead operation way single instead despite. Mean model social white near citizen firm.",  
-        "addressCountry": "Heart describe forward generation maintain. Last term shake card issue.",  
-        "postalCode": "Radio expect them usually decision none to. Tough certain tough while.",  
-        "postOfficeBoxNumber": "Analysis leg program. Country computer plan reveal available article may. Now gun third knowledge record single."  
+        "streetAddress": "Skin yes finish responsibility politics follow. Fine these thought lose. Safe green their last.",  
+        "addressLocality": "Oil require reality. If reality almost machine walk.",  
+        "addressRegion": "Expert environment person rise century. Him song case three boy song democratic. Over poor kid a.",  
+        "addressCountry": "World system about. Program compare perform prepare something.",  
+        "postalCode": "Contain ",  
+        "postOfficeBoxNumber": "Cold have few through. Political major either about s",  
+        "streetNr": "Find someone machine finish pass draw religious. Number lawyer stay his. Fund piece already everything poli",  
+        "district": "Matter compare government prevent too something none. Writer just current skin want environmental wide."  
     },  
-    "areaServed": "Future then expect everybody team garden spend. End compare significant discover notice including Democrat.",  
+    "areaServed": "Law threat gun d",  
+    "rt": [  
+        "oic.r.waterinfo"  
+    ],  
+    "supportedwatertypes": [  
+        "Less dream off. Spring something western social.",  
+        "Scene like speech surface huge land hand."  
+    ],  
+    "supportedadditivetypes": [  
+        "Produce whatever team really. Support later artist seven wait ask.",  
+        "Author start four common impact. Door form blue three. Art mean size."  
+    ],  
+    "currentwatertype": "Chair wear production fill. Mention there box wide.",  
+    "currentadditivetypes": [  
+        "Class international discussion different rate though. Successful hour local born impact present official it. Feel above partner exist item outside tell role."  
+    ],  
+    "n": "Field government positive guy item necessary. Beha",  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.rw"  
+    ],  
+    "type": "WaterInfo",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -288,82 +689,125 @@ WaterInfo:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:WaterInfo:id:YOCI:60285099",  
+    "id": "urn:ngsi-ld:WaterInfo:id:LZQI:23960151",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1998-08-15T18:04:30Z"  
+            "@value": "1994-04-08T20:36:19Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1988-08-23T07:30:17Z"  
+            "@value": "1974-09-04T18:29:37Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Ask use then represent society toward behind. Report amount from determine movement. Anyone leg market long price."  
+        "value": ""  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Make from radio. Dream agency trouble garden up."  
+        "value": "Follow around town bit subject which. Smile remember during player mean new. Above drug rise who candidate what."  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Heart daughter modern through democratic perform time. New picture true."  
+        "value": "Voice argue agree. From "  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Of board while gas surface hundred. Goal fund note responsibility media yes. American tell sometimes stop series."  
+        "value": "Today mention rich let the guy "  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Ever election point beat speak."  
+        "value": "Find which now wear understand. Person necessary actually card real real."  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:WaterInfo:items:HBMT:72566566",  
-            "urn:ngsi-ld:WaterInfo:items:TPIP:75041044"  
+            "urn:ngsi-ld:WaterInfo:items:DBVP:23498137",  
+            "urn:ngsi-ld:WaterInfo:items:GDJX:46883476"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:WaterInfo:items:ICKZ:40105092"  
+            "urn:ngsi-ld:WaterInfo:items:NFSN:31596421"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                17.8641435,  
-                -30.215867  
+                -75.2620405,  
+                132.745561  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "At still black. Everyone often chance. Away notice year inside room ago.",  
-            "addressLocality": "Third fill play. Resource pull skin take school religious side. Effort close analysis best interest group. Pull available feeling learn wear statement.",  
-            "addressRegion": "Rise doctor window me bed short. Art represent begin run letter.",  
-            "addressCountry": "Law price police machine size. Thing firm would memory.",  
-            "postalCode": "Suggest ahead light from among magazine.",  
-            "postOfficeBoxNumber": "Everyone eight until compare four. Charge evening environment far successful kitchen history. Happy response PM seven."  
+            "streetAddress": "Skin yes finish responsibility politics follow. Fine these thought lose. Safe green their last.",  
+            "addressLocality": "Oil require reality. If reality almost machine walk.",  
+            "addressRegion": "Expert environment person rise century. Him song case three boy song democratic. Over poor kid a.",  
+            "addressCountry": "World system about. Program compare perform prepare something.",  
+            "postalCode": "Contain ",  
+            "postOfficeBoxNumber": "Cold have few through. Political major either about s",  
+            "streetNr": "Find someone machine finish pass draw religious. Number lawyer stay his. Fund piece already everything poli",  
+            "district": "Matter compare government prevent too something none. Writer just current skin want environmental wide."  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Bar everybody surface appear within bit exactly."  
+        "value": "Law threat gun d"  
     },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.waterinfo"  
+        ]  
+    },  
+    "supportedwatertypes": {  
+        "type": "Property",  
+        "value": [  
+            "Less dream off. Spring something western social.",  
+            "Scene like speech surface huge land hand."  
+        ]  
+    },  
+    "supportedadditivetypes": {  
+        "type": "Property",  
+        "value": [  
+            "Produce whatever team really. Support later artist seven wait ask.",  
+            "Author start four common impact. Door form blue three. Art mean size."  
+        ]  
+    },  
+    "currentwatertype": {  
+        "type": "Property",  
+        "value": "Chair wear production fill. Mention there box wide."  
+    },  
+    "currentadditivetypes": {  
+        "type": "Property",  
+        "value": [  
+            "Class international discussion different rate though. Successful hour local born impact present official it. Feel above partner exist item outside tell role."  
+        ]  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Field government positive guy item necessary. Beha"  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline",  
+            "oic.if.rw"  
+        ]  
+    },  
+    "type": "WaterInfo",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
