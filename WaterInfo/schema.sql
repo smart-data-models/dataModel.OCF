@@ -1,3 +1,3 @@
 /* (Beta) Export of data model WaterInfo of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE WaterInfo_type AS ENUM ('WaterInfo');
-CREATE TABLE WaterInfo (currentadditivetypes JSON, currentwatertype TEXT, if JSON, n TEXT, rt JSON, supportedadditivetypes JSON, supportedwatertypes JSON, type WaterInfo_type);
+CREATE TABLE WaterInfo (address JSON, alternateName TEXT, areaServed TEXT, currentadditivetypes JSON, currentwatertype TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, if JSON, location JSON, n TEXT, name TEXT, owner JSON, rt JSON, seeAlso JSON, source TEXT, supportedadditivetypes JSON, supportedwatertypes JSON, type WaterInfo_type);
