@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: 用于邮政信箱地址的邮政信箱号码。例如：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: 邮政编码。例如：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: 街道地址  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: 标识公共街道上特定房产的编号    
 - `alternateName[string]`: 该项目的替代名称  - `areaServed[string]`: 提供服务或提供物品的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 标识统一数据实体提供者的字符序列  - `dateCreated[date-time]`: 实体创建时间戳。通常由存储平台分配  - `dateModified[date-time]`: 实体最后一次修改的时间戳。通常由存储平台分配  - `description[string]`: 项目描述  - `id[*]`: 实体的唯一标识符  - `if[array]`: 该资源支持的 OCF 接口集  - `location[*]`: 项目的 Geojson 引用。它可以是点、线条字符串、多边形、多点、多线条字符串或多多边形  - `n[string]`: 资源的友好名称  - `name[string]`: 该项目的名称  - `owner[array]`: 包含一个 JSON 编码字符序列的列表，其中引用了所有者的唯一 Ids  - `precision[number]`: 当 "精确度 "中的值被暴露时，会对资源中的属性提供一个 +/- 容差。因此，如果一个属性被更新为一个值，然后该属性又被重新读取，那么重新读取的值如果在设定值 +/- 精度的范围内就是有效的。  - `range[array]`: 资源中属性的有效范围（数字）。数组中的第一个值是最小值，数组中的第二个值是最大值  - `rt[array]`: 资源类型  - `seeAlso[*]`: 指向有关该项目的其他资源的 uri 列表  - `source[string]`: 以 URL 形式给出实体数据原始来源的字符串。建议使用源提供者的完全合格域名或源对象的 URL  - `step[number]`: 跨定义范围的步长值，当范围为数字时为整数。  这是整个范围内有效值的增量；因此，如果范围为 0.0...10.0，步长为 2.5，则有效值为 0.0,2.5,5.0,7.5,10.0  - `temperature[number]`: 当前温度设置或测量值  - `type[string]`: NGSI 实体类型。必须是温度  - `units[string]`: 输送温度值的单位，注意在进行更新时，设备上的单位不会改变，只会在更新操作期间显示输送值的单位。  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 所需属性  
@@ -452,65 +453,56 @@ Temperature:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Temperature:id:TDIW:54028449",  
-  "dateCreated": "2002-11-15T00:39:26Z",  
-  "dateModified": "1984-04-05T09:28:18Z",  
-  "source": "Report reveal along thank conference anything. Strong commercial oil great little eat film. Son source question all bed continue.",  
-  "name": "Hope clearly appear my project former goal ago. Put edge assume close believe focus.",  
-  "alternateName": "Employee machine rate among goal drive. Management fish author until second.",  
-  "description": "Mission full life thank feeling approach. Newspaper our color bring final. Enter fall wear age ago.",  
-  "dataProvider": "Improve reflect ago bad result.",  
-  "owner": [  
-    "urn:ngsi-ld:Temperature:items:RMOR:11444543",  
-    "urn:ngsi-ld:Temperature:items:GBKW:61820150"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Temperature:items:AXXM:54456212",  
-    "urn:ngsi-ld:Temperature:items:LIWH:14572760"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      39.6865755,  
-      168.763262  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Case institution side suddenly land set trip. Other police own activity field they. With new individual. Notice he loss recognize start exactly difference picture.",  
-    "addressLocality": "President president new.",  
-    "addressRegion": "Little newspaper to some Congress. School organization account heavy now strong organization. Bit it great its very.",  
-    "addressCountry": "Control outside save similar. Citizen only PM able product main.",  
-    "postalCode": "Road Mr or success science. Civil fact compare floor loss.",  
-    "postOfficeBoxNumber": "Add in spring often American. When coach relationship sell production. Great relationship participant piece ground."  
-  },  
-  "areaServed": "Policy yet line half. Meet machine still never. Father both phone teacher throw particularly admit seek.",  
-  "rt": [  
-    "oic.r.temperature",  
-    "oic.r.temperature"  
-  ],  
-  "temperature": {  
-    "type": "Property",  
-    "value": 246.8  
-  },  
-  "units": "F",  
-  "n": "Action thought sing fall play require owner. Business itself artist how chair interest.",  
-  "range": [  
-    515.3,  
-    539.9  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 292.0  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 843.0  
-  },  
-  "if": [  
-    "oic.if.a",  
-    "oic.if.baseline"  
-  ],  
-  "type": "Temperature"  
+    "id": "urn:ngsi-ld:Temperature:id:KUHP:87123041",  
+    "dateCreated": "1973-02-16T10:24:42Z",  
+    "dateModified": "2014-09-28T19:16:20Z",  
+    "source": "Produce visit laugh bring. Floor budget break push gas do.",  
+    "name": "Safe life through case offer hold. Ok son old cover.",  
+    "alternateName": "Dra",  
+    "description": "The and sense business box ten. One wear accept really sing section boy. Feeling morning husband best travel campaign suggest. There high account across political three.",  
+    "dataProvider": "Ground room parent provide move language.",  
+    "owner": [  
+        "urn:ngsi-ld:Temperature:items:NWXV:43893681",  
+        "urn:ngsi-ld:Temperature:items:MGUP:41314069"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Temperature:items:ZFLJ:77368631"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            58.8891655,  
+            7.124082  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Look receive concern fill society. Call lay guy pull among answer.",  
+        "addressLocality": "Watch main official be. Word scientist card drop man operation her. At east yourself.",  
+        "addressRegion": "Should general most worry source of factor short. Up case their last.",  
+        "addressCountry": "Season treatment ",  
+        "postalCode": "Language evi",  
+        "postOfficeBoxNumber": "Center produce result. Week li",  
+        "streetNr": "As management other section cold upon might. Technology authority common might. ",  
+        "district": "Fear avoid true. About ability local though account heart. Few exist l"  
+    },  
+    "areaServed": "Level social attorney range can voice box. Speak t",  
+    "rt": [  
+        "oic.r.temperature"  
+    ],  
+    "temperature": 210.2,  
+    "units": "F",  
+    "n": "Indeed close ",  
+    "range": [  
+        272.4,  
+        406.0  
+    ],  
+    "step": 76.3,  
+    "precision": 34.3,  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.a"  
+    ],  
+    "type": "Temperature"  
 }  
 ```  
 </details>  
@@ -519,133 +511,116 @@ Temperature:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:Temperature:id:TDIW:54028449"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2002-11-15T00:39:26Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1984-04-05T09:28:18Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Report reveal along thank conference anything. Strong commercial oil great little eat film. Son source question all bed continue."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Hope clearly appear my project former goal ago. Put edge assume close believe focus."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Employee machine rate among goal drive. Management fish author until second."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Mission full life thank feeling approach. Newspaper our color bring final. Enter fall wear age ago."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Improve reflect ago bad result."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Temperature:items:RMOR:11444543",  
-      "urn:ngsi-ld:Temperature:items:GBKW:61820150"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Temperature:items:AXXM:54456212",  
-      "urn:ngsi-ld:Temperature:items:LIWH:14572760"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        39.6865755,  
-        168.763262  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Case institution side suddenly land set trip. Other police own activity field they. With new individual. Notice he loss recognize start exactly difference picture.",  
-      "addressLocality": "President president new.",  
-      "addressRegion": "Little newspaper to some Congress. School organization account heavy now strong organization. Bit it great its very.",  
-      "addressCountry": "Control outside save similar. Citizen only PM able product main.",  
-      "postalCode": "Road Mr or success science. Civil fact compare floor loss.",  
-      "postOfficeBoxNumber": "Add in spring often American. When coach relationship sell production. Great relationship participant piece ground."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Policy yet line half. Meet machine still never. Father both phone teacher throw particularly admit seek."  
-  },  
-  "rt": {  
-    "type": "array",  
-    "value": [  
-      "oic.r.temperature",  
-      "oic.r.temperature"  
-    ]  
-  },  
-  "temperature": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 246.8  
-    }  
-  },  
-  "units": {  
-    "type": "string",  
-    "value": "F"  
-  },  
-  "n": {  
-    "type": "string",  
-    "value": "Action thought sing fall play require owner. Business itself artist how chair interest."  
-  },  
-  "range": {  
-    "type": "array",  
-    "value": [  
-      515.3,  
-      539.9  
-    ]  
-  },  
-  "step": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 292.0  
-    }  
-  },  
-  "precision": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 843.0  
-    }  
-  },  
-  "if": {  
-    "type": "array",  
-    "value": [  
-      "oic.if.a",  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "type": {  
-    "type": "string",  
-    "value": "Temperature"  
-  }  
+    "id": "urn:ngsi-ld:Temperature:id:KUHP:87123041",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1973-02-16T10:24:42Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "2014-09-28T19:16:20Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Produce visit laugh bring. Floor budget break push gas do."  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Safe life through case offer hold. Ok son old cover."  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Dra"  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "The and sense business box ten. One wear accept really sing section boy. Feeling morning husband best travel campaign suggest. There high account across political three."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Ground room parent provide move language."  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Temperature:items:NWXV:43893681",  
+            "urn:ngsi-ld:Temperature:items:MGUP:41314069"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Temperature:items:ZFLJ:77368631"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                58.8891655,  
+                7.124082  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Look receive concern fill society. Call lay guy pull among answer.",  
+            "addressLocality": "Watch main official be. Word scientist card drop man operation her. At east yourself.",  
+            "addressRegion": "Should general most worry source of factor short. Up case their last.",  
+            "addressCountry": "Season treatment ",  
+            "postalCode": "Language evi",  
+            "postOfficeBoxNumber": "Center produce result. Week li",  
+            "streetNr": "As management other section cold upon might. Technology authority common might. ",  
+            "district": "Fear avoid true. About ability local though account heart. Few exist l"  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Level social attorney range can voice box. Speak t"  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.temperature"  
+        ]  
+    },  
+    "temperature": {  
+        "type": "Number",  
+        "value": 210.2  
+    },  
+    "units": {  
+        "type": "Text",  
+        "value": "F"  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Indeed close "  
+    },  
+    "range": {  
+        "type": "StructuredValue",  
+        "value": [  
+            272.4,  
+            406.0  
+        ]  
+    },  
+    "step": {  
+        "type": "Number",  
+        "value": 76.3  
+    },  
+    "precision": {  
+        "type": "Number",  
+        "value": 34.3  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.baseline",  
+            "oic.if.a"  
+        ]  
+    },  
+    "type": "Temperature"  
 }  
 ```  
 </details>  
@@ -654,68 +629,58 @@ Temperature:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Temperature:id:TDIW:54028449",  
-    "dateCreated": "2002-11-15T00:39:26Z",  
-    "dateModified": "1984-04-05T09:28:18Z",  
-    "source": "Report reveal along thank conference anything. Strong commercial oil great little eat film. Son source question all bed continue.",  
-    "name": "Hope clearly appear my project former goal ago. Put edge assume close believe focus.",  
-    "alternateName": "Employee machine rate among goal drive. Management fish author until second.",  
-    "description": "Mission full life thank feeling approach. Newspaper our color bring final. Enter fall wear age ago.",  
-    "dataProvider": "Improve reflect ago bad result.",  
+    "id": "urn:ngsi-ld:Temperature:id:KUHP:87123041",  
+    "dateCreated": "1973-02-16T10:24:42Z",  
+    "dateModified": "2014-09-28T19:16:20Z",  
+    "source": "Produce visit laugh bring. Floor budget break push gas do.",  
+    "name": "Safe life through case offer hold. Ok son old cover.",  
+    "alternateName": "Dra",  
+    "description": "The and sense business box ten. One wear accept really sing section boy. Feeling morning husband best travel campaign suggest. There high account across political three.",  
+    "dataProvider": "Ground room parent provide move language.",  
     "owner": [  
-        "urn:ngsi-ld:Temperature:items:RMOR:11444543",  
-        "urn:ngsi-ld:Temperature:items:GBKW:61820150"  
+        "urn:ngsi-ld:Temperature:items:NWXV:43893681",  
+        "urn:ngsi-ld:Temperature:items:MGUP:41314069"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:Temperature:items:AXXM:54456212",  
-        "urn:ngsi-ld:Temperature:items:LIWH:14572760"  
+        "urn:ngsi-ld:Temperature:items:ZFLJ:77368631"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            39.6865755,  
-            168.763262  
+            58.8891655,  
+            7.124082  
         ]  
     },  
     "address": {  
-        "streetAddress": "Case institution side suddenly land set trip. Other police own activity field they. With new individual. Notice he loss recognize start exactly difference picture.",  
-        "addressLocality": "President president new.",  
-        "addressRegion": "Little newspaper to some Congress. School organization account heavy now strong organization. Bit it great its very.",  
-        "addressCountry": "Control outside save similar. Citizen only PM able product main.",  
-        "postalCode": "Road Mr or success science. Civil fact compare floor loss.",  
-        "postOfficeBoxNumber": "Add in spring often American. When coach relationship sell production. Great relationship participant piece ground."  
+        "streetAddress": "Look receive concern fill society. Call lay guy pull among answer.",  
+        "addressLocality": "Watch main official be. Word scientist card drop man operation her. At east yourself.",  
+        "addressRegion": "Should general most worry source of factor short. Up case their last.",  
+        "addressCountry": "Season treatment ",  
+        "postalCode": "Language evi",  
+        "postOfficeBoxNumber": "Center produce result. Week li",  
+        "streetNr": "As management other section cold upon might. Technology authority common might. ",  
+        "district": "Fear avoid true. About ability local though account heart. Few exist l"  
     },  
-    "areaServed": "Policy yet line half. Meet machine still never. Father both phone teacher throw particularly admit seek.",  
+    "areaServed": "Level social attorney range can voice box. Speak t",  
     "rt": [  
-        "oic.r.temperature",  
         "oic.r.temperature"  
     ],  
-    "temperature": {  
-        "type": "Property",  
-        "value": 246.8  
-    },  
+    "temperature": 210.2,  
     "units": "F",  
-    "n": "Action thought sing fall play require owner. Business itself artist how chair interest.",  
+    "n": "Indeed close ",  
     "range": [  
-        515.3,  
-        539.9  
+        272.4,  
+        406.0  
     ],  
-    "step": {  
-        "type": "Property",  
-        "value": 292.0  
-    },  
-    "precision": {  
-        "type": "Property",  
-        "value": 843.0  
-    },  
+    "step": 76.3,  
+    "precision": 34.3,  
     "if": [  
-        "oic.if.a",  
-        "oic.if.baseline"  
+        "oic.if.baseline",  
+        "oic.if.a"  
     ],  
     "type": "Temperature",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -725,78 +690,80 @@ Temperature:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Temperature:id:YJWE:44231919",  
+    "id": "urn:ngsi-ld:Temperature:id:KUHP:87123041",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1974-10-02T12:25:25Z"  
+            "@value": "1973-02-16T10:24:42Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1982-01-05T09:10:50Z"  
+            "@value": "2014-09-28T19:16:20Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Well culture past key little information. Wrong economic never child."  
+        "value": "Produce visit laugh bring. Floor budget break push gas do."  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Hospital across offer surface when difference tend. Hour modern break need organization. Mission management available."  
+        "value": "Safe life through case offer hold. Ok son old cover."  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Seem stock list thousand officer remain opportunity. Between believe both never world mean."  
+        "value": "Dra"  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Your good drug security either indeed happen than. City another spend history sister indeed. Lay remember sell resource necessary recognize."  
+        "value": "The and sense business box ten. One wear accept really sing section boy. Feeling morning husband best travel campaign suggest. There high account across political three."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Them yourself just. City available performance policy crime term show."  
+        "value": "Ground room parent provide move language."  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Temperature:items:EASB:74128989",  
-            "urn:ngsi-ld:Temperature:items:OBHQ:72441409"  
+            "urn:ngsi-ld:Temperature:items:NWXV:43893681",  
+            "urn:ngsi-ld:Temperature:items:MGUP:41314069"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Temperature:items:LNIB:52742786"  
+            "urn:ngsi-ld:Temperature:items:ZFLJ:77368631"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                86.8298555,  
-                179.323609  
+                58.8891655,  
+                7.124082  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Expect indeed activity military. Take country research above word home grow.",  
-            "addressLocality": "Technology black remain find himself. Industry business response relationship there.",  
-            "addressRegion": "North although among. Computer specific do avoid beyond fly house recognize. Certainly teacher pay main summer.",  
-            "addressCountry": "Girl budget pick cup color. Dream a agency debate tough else explain. Age thousand important take interesting write.",  
-            "postalCode": "Leg and safe speak reveal almost know. Soon player hand culture morning own here. Eat start field bill close might media. Development crime wear.",  
-            "postOfficeBoxNumber": "Task interest nature choose purpose. Option charge bring other."  
+            "streetAddress": "Look receive concern fill society. Call lay guy pull among answer.",  
+            "addressLocality": "Watch main official be. Word scientist card drop man operation her. At east yourself.",  
+            "addressRegion": "Should general most worry source of factor short. Up case their last.",  
+            "addressCountry": "Season treatment ",  
+            "postalCode": "Language evi",  
+            "postOfficeBoxNumber": "Center produce result. Week li",  
+            "streetNr": "As management other section cold upon might. Technology authority common might. ",  
+            "district": "Fear avoid true. About ability local though account heart. Few exist l"  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Difference herself huge able. Street author heavy born star when response. Smile picture staff human."  
+        "value": "Level social attorney range can voice box. Speak t"  
     },  
     "rt": {  
         "type": "Property",  
@@ -806,7 +773,7 @@ Temperature:
     },  
     "temperature": {  
         "type": "Property",  
-        "value": 691.4  
+        "value": 210.2  
     },  
     "units": {  
         "type": "Property",  
@@ -814,34 +781,33 @@ Temperature:
     },  
     "n": {  
         "type": "Property",  
-        "value": "Current dog involve laugh PM. Option use indeed first then."  
+        "value": "Indeed close "  
     },  
     "range": {  
         "type": "Property",  
         "value": [  
-            717.5,  
-            181.7  
+            272.4,  
+            406.0  
         ]  
     },  
     "step": {  
         "type": "Property",  
-        "value": 720.9  
+        "value": 76.3  
     },  
     "precision": {  
         "type": "Property",  
-        "value": 909.2  
+        "value": 34.3  
     },  
     "if": {  
         "type": "Property",  
         "value": [  
-            "oic.if.s",  
+            "oic.if.baseline",  
             "oic.if.a"  
         ]  
     },  
     "type": "Temperature",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
