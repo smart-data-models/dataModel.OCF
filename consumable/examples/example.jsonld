@@ -1,38 +1,51 @@
 {
-    "id": "urn:ngsi-ld:consumable:id:HQRQ:55721588",
-    "dateCreated": "1994-02-03T09:06:25Z",
-    "dateModified": "1980-12-14T14:08:28Z",
-    "source": "Subject already view bring force animal according especially. Clearly leg investment anyone.",
-    "name": "Share degree hope society free down. Expect result expert control such thing. Past something every future billion.",
-    "alternateName": "Court green answer career garden special.",
-    "description": "In bad page tell wide. Key least out nation machine assume alone.",
-    "dataProvider": "Window him own work human pattern all. Approach officer live treatment future activity participant.",
+    "id": "urn:ngsi-ld:consumable:id:EKND:74179116",
+    "dateCreated": "1999-04-25T21:16:15Z",
+    "dateModified": "2021-12-25T02:01:21Z",
+    "source": "Rather hospital across certain Congress east. Give ability red mouth. Occur much eye camera paper not who.",
+    "name": "You policy dog allow administration offer. Benefit whether without world outside forward wind. Yard stay bring medical write until.",
+    "alternateName": "Arm newspaper subject student show. Foot where just example raise enter. Alone participant later nor result. Good operation common experience prove foot opportunity",
+    "description": "Exactly check never control color chance individual. Current inside boy lot everybody time.",
+    "dataProvider": "Forward feel I who. Term possible service interesting.",
     "owner": [
-        "urn:ngsi-ld:consumable:items:OIWA:88403035",
-        "urn:ngsi-ld:consumable:items:EBDB:93426135"
+        "urn:ngsi-ld:consumable:items:NRHO:20185619",
+        "urn:ngsi-ld:consumable:items:ZADU:56601079"
     ],
     "seeAlso": [
-        "urn:ngsi-ld:consumable:items:QTFW:38344697",
-        "urn:ngsi-ld:consumable:items:EUTD:81027203"
+        "urn:ngsi-ld:consumable:items:AMTK:54230190"
     ],
     "location": {
         "type": "Point",
         "coordinates": [
-            -57.68437,
-            -85.068576
+            -26.224805,
+            -15.65884
         ]
     },
     "address": {
-        "streetAddress": "Direction success analysis ok them democratic. Require especially concern doctor possible cover. Article live against course month color.",
-        "addressLocality": "Arm few stand religious. It turn everything. Decide population change message there sometimes general.",
-        "addressRegion": "Whom seek case score five. Side whole better conference. Imagine detail according goal form.",
-        "addressCountry": "New face medical and production.",
-        "postalCode": "Measure middle structure enter particularly find.",
-        "postOfficeBoxNumber": "Itself everything community morning subject not play wonder. Finally arm painting wind."
+        "streetAddress": "Book defense move business. Goal message effect describe option happy now. Along kind set so they owner.",
+        "addressLocality": "Summer buy ask drive. His land attorney person treat. Popular assume movement light become beautiful here item.",
+        "addressRegion": "Crime size material table. West",
+        "addressCountry": "A",
+        "postalCode": "Peace short situation generat",
+        "postOfficeBoxNumber": "Final ok here dark explain indeed if front. Life future group investment they. Both woman level by option.",
+        "streetNr": "Thus alone drive decision.",
+        "district": "Threat class maintain next. Arrive recognize wrong population different Republican pro"
     },
-    "areaServed": "Organization reflect will fall now plan sign. Artist Congress thus own.",
+    "areaServed": "Beat dog teach low. Professor value here ",
+    "rt": [
+        "oic.r.consumable"
+    ],
+    "remaining": 49,
+    "typeofconsumable": "Else memory if. Whose group through despite cause. S",
+    "url": "urn:ngsi-ld:consumable:url:DLNK:92411578",
+    "orderpercentage": 49,
+    "n": "Else memory if. Whose group t",
+    "if": [
+        "oic.if.s",
+        "oic.if.baseline"
+    ],
+    "type": "consumable",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
