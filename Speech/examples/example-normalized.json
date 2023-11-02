@@ -1,75 +1,104 @@
 {
-  "id": {
-    "type": "string",
-    "value": "urn:ngsi-ld:Speech:id:MSFY:34806271"
-  },
-  "dateCreated": {
-    "format": "date-time",
-    "type": "string",
-    "value": "1973-12-25T02:28:43Z"
-  },
-  "dateModified": {
-    "format": "date-time",
-    "type": "string",
-    "value": "2016-12-27T10:52:44Z"
-  },
-  "source": {
-    "type": "string",
-    "value": "Happy talk boy although everybody art central. Read Republican really cultural within."
-  },
-  "name": {
-    "type": "string",
-    "value": "With every game hard how. Direction management industry generation send director."
-  },
-  "alternateName": {
-    "type": "string",
-    "value": "Anything building move card east institution minute. Speech view since environmental however management painting. Long strategy price ask treatment of."
-  },
-  "description": {
-    "type": "string",
-    "value": "Always worker discover bank. Leg none six measure fast cost."
-  },
-  "dataProvider": {
-    "type": "string",
-    "value": "Manager about country smile. Fall woman yeah thing clear. Street already Republican life."
-  },
-  "owner": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:Speech:items:QSTJ:71949007",
-      "urn:ngsi-ld:Speech:items:YUJN:53243319"
-    ]
-  },
-  "seeAlso": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:Speech:items:XMUU:79983626",
-      "urn:ngsi-ld:Speech:items:PPOG:87651750"
-    ]
-  },
-  "location": {
-    "type": "object",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        -9.2267575,
-        -152.388253
-      ]
-    }
-  },
-  "address": {
-    "type": "object",
-    "value": {
-      "streetAddress": "White audience serious day suffer. Western outside word draw especially.",
-      "addressLocality": "Maintain response simply. Indeed dinner argue surface business move television education. Imagine hotel send Republican stage technology choice.",
-      "addressRegion": "Hot benefit list trial clear suffer. Important body difference cause only energy. Long attention there bad letter generation. Relationship worker model end they quickly.",
-      "addressCountry": "Practice change treat degree. Board conference name past space.",
-      "postalCode": "Effect garden fish while. Record professor determine dream.",
-      "postOfficeBoxNumber": "Keep education someone could. Mrs knowledge note great else half fish live. Base through likely newspaper throw read someone then."
-    }
-  },
-  "areaServed": {
-    "type": "string",
-    "value": "Camera talk statement ground base. Pull alone enjoy score off right do. Increase success front side."
-  }
+    "id": "urn:ngsi-ld:Speech:id:MTAH:54624975",
+    "dateCreated": {
+        "type": "DateTime",
+        "value": "1977-09-18T08:24:30Z"
+    },
+    "dateModified": {
+        "type": "DateTime",
+        "value": "2017-07-02T18:10:10Z"
+    },
+    "source": {
+        "type": "Text",
+        "value": "Chance week down around nice "
+    },
+    "name": {
+        "type": "Text",
+        "value": "By doctor phone win each life candidate. Discuss voice computer method instead force million. Everything new relate little door me."
+    },
+    "alternateName": {
+        "type": "Text",
+        "value": "Measure behavior executive result sense pass study responsibility. Man different everything PM you hundred area."
+    },
+    "description": {
+        "type": "Text",
+        "value": "Success civil continue poor today thousand worker. Future upon art of power."
+    },
+    "dataProvider": {
+        "type": "Text",
+        "value": "Quite glass purpose pay."
+    },
+    "owner": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:Speech:items:SWGQ:98874752",
+            "urn:ngsi-ld:Speech:items:YHXD:38446135"
+        ]
+    },
+    "seeAlso": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:Speech:items:MODH:42245430"
+        ]
+    },
+    "location": {
+        "type": "geo:json",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                72.636308,
+                21.53756
+            ]
+        }
+    },
+    "address": {
+        "type": "StructuredValue",
+        "value": {
+            "streetAddress": "Expect bag short learn. Past",
+            "addressLocality": "Others whole guy you for. Cut ask sit soon.",
+            "addressRegion": "Amount organization hope forget management may material. Pull spring difference dog.",
+            "addressCountry": "M",
+            "postalCode": "Design south liste",
+            "postOfficeBoxNumber": "Floor do course maybe camera. International agree itself we",
+            "streetNr": "Window name especially. South hope go.",
+            "district": "Impact p"
+        }
+    },
+    "areaServed": {
+        "type": "Text",
+        "value": "Health final politics down operation specific speak. Ready may amount likely. Everyone and never job year white. Cover evening t"
+    },
+    "rt": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.r.speech.tts"
+        ]
+    },
+    "supportedLanguages": {
+        "type": "StructuredValue",
+        "value": [
+            "Employee blood hospital my impact. Small suggest now lawyer.",
+            "Side teach quit"
+        ]
+    },
+    "supportedVoices": {
+        "type": "Text",
+        "value": "Development less court else dark know. Couple less none ago order certainly film. House help hospital east."
+    },
+    "utterance": {
+        "type": "Text",
+        "value": "Style themselves keep follow exist. Voice produce candidate thought total."
+    },
+    "n": {
+        "type": "Text",
+        "value": "Century enter difference every consumer whate"
+    },
+    "if": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.if.baseline",
+            "oic.if.a"
+        ]
+    },
+    "type": "Speech"
 }
