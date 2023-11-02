@@ -15,7 +15,15 @@
 ## Liste des propriétés  
 
 <sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il peut avoir plusieurs types ou différents formats/modèles</sub></sup>.  
-- `csc[array]`: Les coordonnées X et Y de la couleur dans l'espace couleur CIE.  - `if[array]`: L'ensemble d'interfaces OCF pris en charge par cette ressource.  - `n[string]`: Nom amical de la ressource  - `precision[number]`: Lorsqu'elle est exposée, la valeur de "précision" fournit une tolérance de +/- par rapport aux propriétés de la ressource. Ainsi, si une propriété est mise à jour avec une valeur et que cette propriété est ensuite récupérée, la valeur récupérée est valide si elle se situe dans la plage de la valeur définie +/- précision.  - `rt[array]`: Le type de ressources.  - `type[string]`: Type d'entité NGSI. Il doit s'agir de ColourCSC  <!-- /30-PropertiesList -->  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Le pays. Par exemple, l'Espagne  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: La localité dans laquelle se trouve l'adresse postale et qui se trouve dans la région  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: La région dans laquelle se trouve la localité et qui se trouve dans le pays  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Un district est un type de division administrative qui, dans certains pays, est géré par le gouvernement local.    
+	- `postOfficeBoxNumber[string]`: Le numéro de la boîte postale pour les adresses de boîtes postales. Par exemple, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Le code postal. Par exemple, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: L'adresse de la rue  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Numéro identifiant une propriété spécifique sur une voie publique    
+- `alternateName[string]`: Un nom alternatif pour ce poste  - `areaServed[string]`: La zone géographique où un service ou un article est offert  . Model: [https://schema.org/Text](https://schema.org/Text)- `csc[array]`: Les coordonnées X et Y de la couleur dans l'espace couleur CIE.  - `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées  - `dateCreated[date-time]`: Horodatage de la création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage  - `dateModified[date-time]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage  - `description[string]`: Une description de l'article  - `id[*]`: Identifiant unique de l'entité  - `if[array]`: L'ensemble d'interfaces OCF pris en charge par cette ressource.  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une chaîne de ligne, d'un polygone, d'un point multiple, d'une chaîne de ligne multiple ou d'un polygone multiple.  - `n[string]`: Nom amical de la ressource  - `name[string]`: Le nom de cet élément  - `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  - `precision[number]`: Lorsqu'elle est exposée, la valeur de "précision" fournit une tolérance de +/- par rapport aux propriétés de la ressource. Ainsi, si une propriété est mise à jour avec une valeur et que cette propriété est ensuite récupérée, la valeur récupérée est valide si elle se situe dans la plage de la valeur définie +/- précision.  - `rt[array]`: Le type de ressources.  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  - `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  - `type[string]`: Type d'entité NGSI. Il doit s'agir de ColourCSC  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propriétés requises  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -32,6 +40,70 @@
 ColourCSC:    
   description: 'Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the colour using colour space co-ordinates. The Property ''csc'' is the colour space coordinates in CIE colour space.   The first item in the array is the X coordinate.   The second item in the array is the Y coordinate.   If the Property ''precision'' is provided it applies to both the X and Y coordinates. The Resource provides the colour using colour space coordinates. '    
   properties:    
+    address:    
+      description: The mailing address    
+      properties:    
+        addressCountry:    
+          description: 'The country. For example, Spain'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
+        addressLocality:    
+          description: 'The locality in which the street address is, and which is in the region'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
+        addressRegion:    
+          description: 'The region in which the locality is, and which is in the country'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        postOfficeBoxNumber:    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
+        postalCode:    
+          description: 'The postal code. For example, 24004'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
+        streetAddress:    
+          description: The street address    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      type: object    
+      x-ngsi:    
+        model: https://schema.org/address    
+        type: Property    
+    alternateName:    
+      description: An alternative name for this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    areaServed:    
+      description: The geographic area where a service or offered item is provided    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
     csc:    
       description: The X and Y coordinates of the colour in CIE colour space.    
       items:    
@@ -41,6 +113,45 @@ ColourCSC:
       maxItems: 2    
       minItems: 2    
       type: array    
+      x-ngsi:    
+        type: Property    
+    dataProvider:    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateCreated:    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateModified:    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    description:    
+      description: A description of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    id:    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     if:    
@@ -56,11 +167,203 @@ ColourCSC:
       uniqueItems: true    
       x-ngsi:    
         type: Property    
+    location:    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+      oneOf:    
+        - description: Geojson reference to the item. Point    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                type: number    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - Point    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Point    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - LineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON LineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 4    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - Polygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Polygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPoint    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPoint    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiLineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiLineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    items:    
+                      type: number    
+                    minItems: 2    
+                    type: array    
+                  minItems: 4    
+                  type: array    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPolygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPolygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+      x-ngsi:    
+        type: GeoProperty    
     n:    
       description: Friendly name of the Resource    
       maxLength: 64    
       readOnly: true    
       type: string    
+      x-ngsi:    
+        type: Property    
+    name:    
+      description: The name of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    owner:    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
+      items:    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
+      type: array    
       x-ngsi:    
         type: Property    
     precision:    
@@ -80,6 +383,23 @@ ColourCSC:
       readOnly: true    
       type: array    
       uniqueItems: true    
+      x-ngsi:    
+        type: Property    
+    seeAlso:    
+      description: list of uri pointing to additional resources about the item    
+      oneOf:    
+        - items:    
+            format: uri    
+            type: string    
+          minItems: 1    
+          type: array    
+        - format: uri    
+          type: string    
+      x-ngsi:    
+        type: Property    
+    source:    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
+      type: string    
       x-ngsi:    
         type: Property    
     type:    
@@ -111,38 +431,53 @@ ColourCSC:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:ColourCSC:id:CILR:22609889",  
-  "dateCreated": "1972-02-07T04:39:05Z",  
-  "dateModified": "1995-06-21T21:30:16Z",  
-  "source": "Sit whole certainly chance eye. Picture blood himself movement put enter camera.",  
-  "name": "Actually open walk occur red tonight eight. Marriage either before focus hand fear. Choice executive dream too your goal up similar.",  
-  "alternateName": "Must help seat together deep. Pick just hundred. Along with development sound night matter.",  
-  "description": "Exist major pick.",  
-  "dataProvider": "Shoulder floor off another any.",  
-  "owner": [  
-    "urn:ngsi-ld:ColourCSC:items:HVOC:54830748",  
-    "urn:ngsi-ld:ColourCSC:items:ZZYY:78981473"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:ColourCSC:items:FYZV:24314298",  
-    "urn:ngsi-ld:ColourCSC:items:EKPS:06727525"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      9.5180045,  
-      -162.458131  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Still information trial adult. Feel total between activity that own different.",  
-    "addressLocality": "Rest computer though I can. Within nature game reason.",  
-    "addressRegion": "Cost later tough data. Hotel him technology national imagine along. Sound Mr off.",  
-    "addressCountry": "Guess say miss increase lay attention. Road free president make page. Know wind data. Score little dream put size know daughter.",  
-    "postalCode": "Continue ask at fast likely site color. Art those worry treat. Price tonight white maintain.",  
-    "postOfficeBoxNumber": "Result fund generation direction."  
-  },  
-  "areaServed": "Power last south movement. Provide wrong half within on building cup idea."  
+    "id": "urn:ngsi-ld:ColourCSC:id:ZBCR:36913254",  
+    "dateCreated": "1977-07-31T23:35:46Z",  
+    "dateModified": "2021-02-10T09:29:37Z",  
+    "source": "Under how many",  
+    "name": "War none culture draw eight nation rise.",  
+    "alternateName": "Method wear whatever example. Wear work science change n",  
+    "description": "Life sense high consumer nearly keep wind. Can else down purpose. Good nature when after.",  
+    "dataProvider": "Executive focus really. Simply wall worry call voice.",  
+    "owner": [  
+        "urn:ngsi-ld:ColourCSC:items:MXSJ:82773762",  
+        "urn:ngsi-ld:ColourCSC:items:RQWT:27386818"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:ColourCSC:items:KKHC:89261548"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -14.435297,  
+            -92.521246  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Reach down attorney six central consider among across. Yet per administration other community. Stay a here rate.",  
+        "addressLocality": "Speech serious myself appear throughout those. Measure century food card. Southern no full range rate compare.",  
+        "addressRegion": "Likely expert before tell apply within. Affect brother less minute eat ever hand. Leader hair example north each early. Decide prog",  
+        "addressCountry": "Business plan determine sport work expect. Director fear subject here him way create.",  
+        "postalCode": "Executive other debate investment yourself before. Then deal today study.",  
+        "postOfficeBoxNumber": "Policy finish unit offer politics feeling during try. Whose southern every girl story sometimes same.",  
+        "streetNr": "Control so economy energy movie happy. Station third gun ok bar local morning something. Structure bad safe example se",  
+        "district": "Approach off plant. Describe good goal actually image near against child."  
+    },  
+    "areaServed": "Decade your act strong. Art factor fast employee.",  
+    "rt": [  
+        "oic.r.colour.csc"  
+    ],  
+    "csc": [  
+        0.5,  
+        0.3  
+    ],  
+    "n": "Hot support west young. Suc",  
+    "precision": 18.2,  
+    "if": [  
+        "oic.if.a",  
+        "oic.if.baseline"  
+    ],  
+    "type": "ColourCSC"  
 }  
 ```  
 </details>  
@@ -151,122 +486,161 @@ ColourCSC:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:ColourCSC:id:CILR:22609889"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1972-02-07T04:39:05Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1995-06-21T21:30:16Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Sit whole certainly chance eye. Picture blood himself movement put enter camera."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Actually open walk occur red tonight eight. Marriage either before focus hand fear. Choice executive dream too your goal up similar."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Must help seat together deep. Pick just hundred. Along with development sound night matter."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Exist major pick."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Shoulder floor off another any."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:ColourCSC:items:HVOC:54830748",  
-      "urn:ngsi-ld:ColourCSC:items:ZZYY:78981473"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:ColourCSC:items:FYZV:24314298",  
-      "urn:ngsi-ld:ColourCSC:items:EKPS:06727525"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        9.5180045,  
-        -162.458131  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Still information trial adult. Feel total between activity that own different.",  
-      "addressLocality": "Rest computer though I can. Within nature game reason.",  
-      "addressRegion": "Cost later tough data. Hotel him technology national imagine along. Sound Mr off.",  
-      "addressCountry": "Guess say miss increase lay attention. Road free president make page. Know wind data. Score little dream put size know daughter.",  
-      "postalCode": "Continue ask at fast likely site color. Art those worry treat. Price tonight white maintain.",  
-      "postOfficeBoxNumber": "Result fund generation direction."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Power last south movement. Provide wrong half within on building cup idea."  
-  }  
+    "id": "urn:ngsi-ld:ColourCSC:id:ZBCR:36913254",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1977-07-31T23:35:46Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "2021-02-10T09:29:37Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Under how many"  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "War none culture draw eight nation rise."  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Method wear whatever example. Wear work science change n"  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Life sense high consumer nearly keep wind. Can else down purpose. Good nature when after."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Executive focus really. Simply wall worry call voice."  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:ColourCSC:items:MXSJ:82773762",  
+            "urn:ngsi-ld:ColourCSC:items:RQWT:27386818"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:ColourCSC:items:KKHC:89261548"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -14.435297,  
+                -92.521246  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Reach down attorney six central consider among across. Yet per administration other community. Stay a here rate.",  
+            "addressLocality": "Speech serious myself appear throughout those. Measure century food card. Southern no full range rate compare.",  
+            "addressRegion": "Likely expert before tell apply within. Affect brother less minute eat ever hand. Leader hair example north each early. Decide prog",  
+            "addressCountry": "Business plan determine sport work expect. Director fear subject here him way create.",  
+            "postalCode": "Executive other debate investment yourself before. Then deal today study.",  
+            "postOfficeBoxNumber": "Policy finish unit offer politics feeling during try. Whose southern every girl story sometimes same.",  
+            "streetNr": "Control so economy energy movie happy. Station third gun ok bar local morning something. Structure bad safe example se",  
+            "district": "Approach off plant. Describe good goal actually image near against child."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Decade your act strong. Art factor fast employee."  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.colour.csc"  
+        ]  
+    },  
+    "csc": {  
+        "type": "StructuredValue",  
+        "value": [  
+            0.5,  
+            0.3  
+        ]  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Hot support west young. Suc"  
+    },  
+    "precision": {  
+        "type": "Number",  
+        "value": 18.2  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.a",  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "ColourCSC"  
 }  
 ```  
 </details>  
 #### ColourCSC Valeurs clés NGSI-LD Exemple  
-Voici un exemple de ColourCSC au format JSON-LD sous forme de valeurs clés. Ce format est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Voici un exemple de ColourCSC au format JSON-LD sous forme de valeurs-clés. Ce format est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:ColourCSC:id:CILR:22609889",  
-    "dateCreated": "1972-02-07T04:39:05Z",  
-    "dateModified": "1995-06-21T21:30:16Z",  
-    "source": "Sit whole certainly chance eye. Picture blood himself movement put enter camera.",  
-    "name": "Actually open walk occur red tonight eight. Marriage either before focus hand fear. Choice executive dream too your goal up similar.",  
-    "alternateName": "Must help seat together deep. Pick just hundred. Along with development sound night matter.",  
-    "description": "Exist major pick.",  
-    "dataProvider": "Shoulder floor off another any.",  
+    "id": "urn:ngsi-ld:ColourCSC:id:ZBCR:36913254",  
+    "dateCreated": "1977-07-31T23:35:46Z",  
+    "dateModified": "2021-02-10T09:29:37Z",  
+    "source": "Under how many",  
+    "name": "War none culture draw eight nation rise.",  
+    "alternateName": "Method wear whatever example. Wear work science change n",  
+    "description": "Life sense high consumer nearly keep wind. Can else down purpose. Good nature when after.",  
+    "dataProvider": "Executive focus really. Simply wall worry call voice.",  
     "owner": [  
-        "urn:ngsi-ld:ColourCSC:items:HVOC:54830748",  
-        "urn:ngsi-ld:ColourCSC:items:ZZYY:78981473"  
+        "urn:ngsi-ld:ColourCSC:items:MXSJ:82773762",  
+        "urn:ngsi-ld:ColourCSC:items:RQWT:27386818"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:ColourCSC:items:FYZV:24314298",  
-        "urn:ngsi-ld:ColourCSC:items:EKPS:06727525"  
+        "urn:ngsi-ld:ColourCSC:items:KKHC:89261548"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            9.5180045,  
-            -162.458131  
+            -14.435297,  
+            -92.521246  
         ]  
     },  
     "address": {  
-        "streetAddress": "Still information trial adult. Feel total between activity that own different.",  
-        "addressLocality": "Rest computer though I can. Within nature game reason.",  
-        "addressRegion": "Cost later tough data. Hotel him technology national imagine along. Sound Mr off.",  
-        "addressCountry": "Guess say miss increase lay attention. Road free president make page. Know wind data. Score little dream put size know daughter.",  
-        "postalCode": "Continue ask at fast likely site color. Art those worry treat. Price tonight white maintain.",  
-        "postOfficeBoxNumber": "Result fund generation direction."  
+        "streetAddress": "Reach down attorney six central consider among across. Yet per administration other community. Stay a here rate.",  
+        "addressLocality": "Speech serious myself appear throughout those. Measure century food card. Southern no full range rate compare.",  
+        "addressRegion": "Likely expert before tell apply within. Affect brother less minute eat ever hand. Leader hair example north each early. Decide prog",  
+        "addressCountry": "Business plan determine sport work expect. Director fear subject here him way create.",  
+        "postalCode": "Executive other debate investment yourself before. Then deal today study.",  
+        "postOfficeBoxNumber": "Policy finish unit offer politics feeling during try. Whose southern every girl story sometimes same.",  
+        "streetNr": "Control so economy energy movie happy. Station third gun ok bar local morning something. Structure bad safe example se",  
+        "district": "Approach off plant. Describe good goal actually image near against child."  
     },  
-    "areaServed": "Power last south movement. Provide wrong half within on building cup idea.",  
+    "areaServed": "Decade your act strong. Art factor fast employee.",  
+    "rt": [  
+        "oic.r.colour.csc"  
+    ],  
+    "csc": [  
+        0.5,  
+        0.3  
+    ],  
+    "n": "Hot support west young. Suc",  
+    "precision": 18.2,  
+    "if": [  
+        "oic.if.a",  
+        "oic.if.baseline"  
+    ],  
+    "type": "ColourCSC",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -276,82 +650,112 @@ ColourCSC:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:ColourCSC:id:QXXW:01773179",  
+    "id": "urn:ngsi-ld:ColourCSC:id:ZBCR:36913254",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1981-01-01T22:54:47Z"  
+            "@value": "1977-07-31T23:35:46Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2018-04-25T12:29:34Z"  
+            "@value": "2021-02-10T09:29:37Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Pick tend read employee art interview. Wife production know officer small. Let training study specific seat young."  
+        "value": "Under how many"  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Dog police quite prove ok law but."  
+        "value": "War none culture draw eight nation rise."  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Line power thought plan surface. None often arm catch not night new public."  
+        "value": "Method wear whatever example. Wear work science change n"  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Month feeling region international make son. Six spend certainly. Suggest bad great lawyer."  
+        "value": "Life sense high consumer nearly keep wind. Can else down purpose. Good nature when after."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Such allow nothing down very her record. Or travel reduce throughout change. Brother history over medical."  
+        "value": "Executive focus really. Simply wall worry call voice."  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:ColourCSC:items:NUWJ:83419287",  
-            "urn:ngsi-ld:ColourCSC:items:PSON:82588261"  
+            "urn:ngsi-ld:ColourCSC:items:MXSJ:82773762",  
+            "urn:ngsi-ld:ColourCSC:items:RQWT:27386818"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:ColourCSC:items:IFMS:64015606"  
+            "urn:ngsi-ld:ColourCSC:items:KKHC:89261548"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                -34.482211,  
-                33.71405  
+                -14.435297,  
+                -92.521246  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Foreign per begin.",  
-            "addressLocality": "Vote rule always section. Respond fish event run particularly style establish key.",  
-            "addressRegion": "Foot computer seven unit future. Front employee step star.",  
-            "addressCountry": "Game relationship where civil research improve later. Practice agent each recently until send.",  
-            "postalCode": "Reduce single culture hour can lawyer speech. Point attention stay reason. Evening benefit subject between.",  
-            "postOfficeBoxNumber": "Can stop save military despite memory would."  
+            "streetAddress": "Reach down attorney six central consider among across. Yet per administration other community. Stay a here rate.",  
+            "addressLocality": "Speech serious myself appear throughout those. Measure century food card. Southern no full range rate compare.",  
+            "addressRegion": "Likely expert before tell apply within. Affect brother less minute eat ever hand. Leader hair example north each early. Decide prog",  
+            "addressCountry": "Business plan determine sport work expect. Director fear subject here him way create.",  
+            "postalCode": "Executive other debate investment yourself before. Then deal today study.",  
+            "postOfficeBoxNumber": "Policy finish unit offer politics feeling during try. Whose southern every girl story sometimes same.",  
+            "streetNr": "Control so economy energy movie happy. Station third gun ok bar local morning something. Structure bad safe example se",  
+            "district": "Approach off plant. Describe good goal actually image near against child."  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Simple pressure test difficult Congress business mean. North dark lose blue test your buy."  
+        "value": "Decade your act strong. Art factor fast employee."  
     },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.colour.csc"  
+        ]  
+    },  
+    "csc": {  
+        "type": "Property",  
+        "value": [  
+            0.5,  
+            0.3  
+        ]  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Hot support west young. Suc"  
+    },  
+    "precision": {  
+        "type": "Property",  
+        "value": 18.2  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.a",  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "ColourCSC",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
