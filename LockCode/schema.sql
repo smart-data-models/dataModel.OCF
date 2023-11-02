@@ -1,3 +1,3 @@
 /* (Beta) Export of data model LockCode of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE LockCode_type AS ENUM ('LockCode');
-CREATE TABLE LockCode (if JSON, lockCodeList JSON, n TEXT, rt JSON, type LockCode_type);
+CREATE TABLE LockCode (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, if JSON, location JSON, lockCodeList JSON, n TEXT, name TEXT, owner JSON, rt JSON, seeAlso JSON, source TEXT, type LockCode_type);
