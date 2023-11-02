@@ -1,79 +1,112 @@
 {
-    "id": "urn:ngsi-ld:Mode:id:APLU:09904504",
+    "id": "urn:ngsi-ld:Mode:id:FVHJ:32077177",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2012-10-23T11:05:02Z"
+            "@value": "1988-07-25T10:28:15Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2000-11-07T00:35:18Z"
+            "@value": "1996-11-19T09:06:48Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Industry model very tough can national increase. Director people win exist concern."
+        "value": "Agreement federal business site alone go. Into exactly act note cause."
     },
     "name": {
         "type": "Property",
-        "value": "Any interview after work both. Test almost responsibility little product apply."
+        "value": "Music explain one billion west picture. Home design play thought. Travel ok kitchen shake become."
     },
     "alternateName": {
         "type": "Property",
-        "value": "Spend six dog. Strong want for finally hand."
+        "value": "Majority keep challenge woman particularly early which."
     },
     "description": {
         "type": "Property",
-        "value": "Among around lay hotel. Bag stop idea most late citizen lay. Mouth kind cover manage thank lawyer."
+        "value": "Arm born drug fall charge civil of"
     },
     "dataProvider": {
         "type": "Property",
-        "value": "Other nothing key market fight gun true. Teach face similar pressure camera front administration. Learn through thought."
+        "value": "Down and office. Age word live within thank."
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:Mode:items:RRDS:56051869",
-            "urn:ngsi-ld:Mode:items:XGMO:64673219"
+            "urn:ngsi-ld:Mode:items:RPXN:10063362",
+            "urn:ngsi-ld:Mode:items:GGQJ:10808013"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:Mode:items:VTEU:28588649"
+            "urn:ngsi-ld:Mode:items:PYNJ:22077308"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                79.393507,
-                -152.446929
+                -63.5106485,
+                -90.677538
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "History star may bring such action. Really travel couple.",
-            "addressLocality": "Evening international truth evidence image sit financial. Trial unit world owner line. The week produce language when tree continue training.",
-            "addressRegion": "Arm relate only finish. Certain officer drug card. Actually summer bring situation build. Heart field degree against site current best.",
-            "addressCountry": "Set family civil question not rest current. Brother develop think place perhaps. Class concern pressure woman defense politics week.",
-            "postalCode": "Seat city forward hand house. Way doctor general rule.",
-            "postOfficeBoxNumber": "Speak bed information soldier do write light. Again professor film."
+            "streetAddress": "Despite product author another s",
+            "addressLocality": "Art war term know but. Region drop on high amount myself. Report economy president easy want.",
+            "addressRegion": "Born including scientist window stock deep. Type",
+            "addressCountry": "Suggest fund manager far. Accept that leader natural perform their partner media. His way the thought force.",
+            "postalCode": "Laugh increase little.",
+            "postOfficeBoxNumber": "President reason se",
+            "streetNr": "Type decide difference meeting language place. Agent televisio",
+            "district": "Discuss effort employee the envi"
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "History eat close old represent board herself."
+        "value": "It u"
     },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.mode"
+        ]
+    },
+    "modes": {
+        "type": "Property",
+        "value": [
+            "Mouth personal notice. Do lette",
+            "Lawyer situation single huge. Up simply fine itself themsel"
+        ]
+    },
+    "supportedModes": {
+        "type": "Property",
+        "value": [
+            "Decision already serious nature anyone peace ago. Baby but onto region.",
+            "Focus hotel smile record. Risk around dream second dream quality onto."
+        ]
+    },
+    "n": {
+        "type": "Property",
+        "value": "Fire customer surface. Like"
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.baseline",
+            "oic.if.a"
+        ]
+    },
+    "type": "Mode",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
