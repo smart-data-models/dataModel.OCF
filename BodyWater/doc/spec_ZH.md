@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: 用于邮政信箱地址的邮政信箱号码。例如：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: 邮政编码。例如：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: 街道地址  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: 标识公共街道上特定房产的编号    
 - `alternateName[string]`: 该项目的替代名称  - `areaServed[string]`: 提供服务或提供物品的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `bwater[number]`: 身体水分  - `dataProvider[string]`: 标识统一数据实体提供者的字符序列  - `dateCreated[date-time]`: 实体创建时间戳。通常由存储平台分配  - `dateModified[date-time]`: 实体最后一次修改的时间戳。通常由存储平台分配  - `description[string]`: 项目描述  - `id[*]`: 实体的唯一标识符  - `if[array]`: 该资源支持的 OCF 接口集  - `location[*]`: 项目的 Geojson 引用。它可以是点、线条字符串、多边形、多点、多线条字符串或多多边形  - `n[string]`: 资源的友好名称  - `name[string]`: 该项目的名称  - `owner[array]`: 包含一个 JSON 编码字符序列的列表，其中引用了所有者的唯一 Ids  - `precision[number]`: 当 "精确度 "中的值被暴露时，会对资源中的属性提供一个 +/- 容差。因此，如果一个属性被更新为一个值，然后该属性又被重新读取，那么重新读取的值如果在设定值 +/- 精度的范围内就是有效的。  - `range[array]`: 资源中属性的有效范围（数字）。数组中的第一个值是最小值，数组中的第二个值是最大值  - `rt[array]`: 资源类型  - `seeAlso[*]`: 指向有关该项目的其他资源的 uri 列表  - `source[string]`: 以 URL 形式给出实体数据原始来源的字符串。建议使用源提供者的完全合格域名或源对象的 URL  - `step[number]`: 跨定义范围的步长值，当范围为数字时为整数。  这是整个范围内有效值的增量；因此，如果范围为 0.0...10.0，步长为 2.5，则有效值为 0.0,2.5,5.0,7.5,10.0  - `type[string]`: NGSI 实体类型。必须是 BodyWater  - `units[string]`: 体水单元  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 所需属性  
@@ -454,65 +455,55 @@ BodyWater:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:BodyWater:id:MEJE:18514125",  
-  "dateCreated": "1997-04-10T16:39:09Z",  
-  "dateModified": "2019-05-10T20:10:20Z",  
-  "source": "Blue save design whose area church hit crime. Environmental environmental bill music heart finally. Few strong senior peace top book have.",  
-  "name": "Behind place every window. Become area between general plan.",  
-  "alternateName": "Large different eight collection room market society. Firm trouble live. Pattern concern employee movement. More religious beautiful moment serve Mrs.",  
-  "description": "Animal right local sound argue. Image employee deal final good economy continue.",  
-  "dataProvider": "Fish rather clearly power less crime. Appear hand science free.",  
-  "owner": [  
-    "urn:ngsi-ld:BodyWater:items:LMBU:67181228",  
-    "urn:ngsi-ld:BodyWater:items:MHGW:24811389"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:BodyWater:items:WKGV:03404439",  
-    "urn:ngsi-ld:BodyWater:items:IYRC:15142649"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -77.4914945,  
-      -21.70219  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Memory easy difference. Onto stage purpose throw.",  
-    "addressLocality": "Way if because ground. Market this father road. Agency true someone hand dream film.",  
-    "addressRegion": "Recently consider most fall central stage. Other can land after.",  
-    "addressCountry": "Ask quite lot region us. Thought long majority. Item list fill ready claim.",  
-    "postalCode": "Affect adult find rule. They size focus response special.",  
-    "postOfficeBoxNumber": "Focus ok industry. Your trial identify until improve speech American practice. Stage what north on someone player physical current."  
-  },  
-  "areaServed": "Life three degree goal seat. Guess late today family movement form. Stop many air shoulder subject technology.",  
-  "rt": [  
-    "oic.r.body.water",  
-    "oic.r.body.water"  
-  ],  
-  "bwater": {  
-    "type": "Property",  
-    "value": 110.0  
-  },  
-  "units": "kg",  
-  "range": [  
-    117.8,  
-    516.3  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 424.7  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 730.5  
-  },  
-  "n": "Think can no natural too half protect production. Board force sport himself say. Fear former collection make on.",  
-  "if": [  
-    "oic.if.s",  
-    "oic.if.baseline"  
-  ],  
-  "type": "BodyWater"  
+    "id": "urn:ngsi-ld:BodyWater:id:ILUG:06057800",  
+    "dateCreated": "2001-08-15T20:11:14Z",  
+    "dateModified": "1977-09-04T09:36:22Z",  
+    "source": "Book ok argue film buy create. Meet stock member onto rule. Soon live anima",  
+    "name": "Dark event last face could hand thus. Similar early service doctor involve soon member. Into ",  
+    "alternateName": "Available production probably action contain alone computer one. Exist re",  
+    "description": "Media chair cut training. Think process article really agency hit. Term rule surface tonight.",  
+    "dataProvider": "Reduce analysis around guy available ",  
+    "owner": [  
+        "urn:ngsi-ld:BodyWater:items:AJNM:96519237",  
+        "urn:ngsi-ld:BodyWater:items:LIJF:23536544"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:BodyWater:items:TTXY:37487574"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            17.8879955,  
+            -60.854531  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Design occur than senior. Director think thank cost consider official.",  
+        "addressLocality": "Expert eat structure anything ask station. Big rate structure Mr worry. Remember modern structure any.",  
+        "addressRegion": "List from foreign cultural apply his manager. Language of pass different. Music use trade difference deal popular clearly. Sea leader finally step sure.",  
+        "addressCountry": "Too when organization fear season management forward.",  
+        "postalCode": "Increase last fine offer professional decide over I. Must glass attack factor.",  
+        "postOfficeBoxNumber": "When shoulder current operation trial assume floor. Bus",  
+        "streetNr": "Military debate my less employee though.",  
+        "district": "State manager discussion condition nothing around. Should goal run begin throughout whatever campaig"  
+    },  
+    "areaServed": "Father baby turn left fire. Wha",  
+    "rt": [  
+        "oic.r.body.water"  
+    ],  
+    "bwater": 62.0,  
+    "units": "kg",  
+    "range": [  
+        34.7,  
+        488.4  
+    ],  
+    "step": 615.4,  
+    "precision": 540.9,  
+    "n": "Contain simple without herself. Against story eat new",  
+    "if": [  
+        "oic.if.baseline"  
+    ],  
+    "type": "BodyWater"  
 }  
 ```  
 </details>  
@@ -521,133 +512,115 @@ BodyWater:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:BodyWater:id:MEJE:18514125"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1997-04-10T16:39:09Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2019-05-10T20:10:20Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Blue save design whose area church hit crime. Environmental environmental bill music heart finally. Few strong senior peace top book have."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Behind place every window. Become area between general plan."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Large different eight collection room market society. Firm trouble live. Pattern concern employee movement. More religious beautiful moment serve Mrs."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Animal right local sound argue. Image employee deal final good economy continue."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Fish rather clearly power less crime. Appear hand science free."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:BodyWater:items:LMBU:67181228",  
-      "urn:ngsi-ld:BodyWater:items:MHGW:24811389"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:BodyWater:items:WKGV:03404439",  
-      "urn:ngsi-ld:BodyWater:items:IYRC:15142649"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -77.4914945,  
-        -21.70219  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Memory easy difference. Onto stage purpose throw.",  
-      "addressLocality": "Way if because ground. Market this father road. Agency true someone hand dream film.",  
-      "addressRegion": "Recently consider most fall central stage. Other can land after.",  
-      "addressCountry": "Ask quite lot region us. Thought long majority. Item list fill ready claim.",  
-      "postalCode": "Affect adult find rule. They size focus response special.",  
-      "postOfficeBoxNumber": "Focus ok industry. Your trial identify until improve speech American practice. Stage what north on someone player physical current."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Life three degree goal seat. Guess late today family movement form. Stop many air shoulder subject technology."  
-  },  
-  "rt": {  
-    "type": "array",  
-    "value": [  
-      "oic.r.body.water",  
-      "oic.r.body.water"  
-    ]  
-  },  
-  "bwater": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 110.0  
-    }  
-  },  
-  "units": {  
-    "type": "string",  
-    "value": "kg"  
-  },  
-  "range": {  
-    "type": "array",  
-    "value": [  
-      117.8,  
-      516.3  
-    ]  
-  },  
-  "step": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 424.7  
-    }  
-  },  
-  "precision": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 730.5  
-    }  
-  },  
-  "n": {  
-    "type": "string",  
-    "value": "Think can no natural too half protect production. Board force sport himself say. Fear former collection make on."  
-  },  
-  "if": {  
-    "type": "array",  
-    "value": [  
-      "oic.if.s",  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "type": {  
-    "type": "string",  
-    "value": "BodyWater"  
-  }  
+    "id": "urn:ngsi-ld:BodyWater:id:ILUG:06057800",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "2001-08-15T20:11:14Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "1977-09-04T09:36:22Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Book ok argue film buy create. Meet stock member onto rule. Soon live anima"  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Dark event last face could hand thus. Similar early service doctor involve soon member. Into "  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Available production probably action contain alone computer one. Exist re"  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Media chair cut training. Think process article really agency hit. Term rule surface tonight."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Reduce analysis around guy available "  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:BodyWater:items:AJNM:96519237",  
+            "urn:ngsi-ld:BodyWater:items:LIJF:23536544"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:BodyWater:items:TTXY:37487574"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                17.8879955,  
+                -60.854531  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Design occur than senior. Director think thank cost consider official.",  
+            "addressLocality": "Expert eat structure anything ask station. Big rate structure Mr worry. Remember modern structure any.",  
+            "addressRegion": "List from foreign cultural apply his manager. Language of pass different. Music use trade difference deal popular clearly. Sea leader finally step sure.",  
+            "addressCountry": "Too when organization fear season management forward.",  
+            "postalCode": "Increase last fine offer professional decide over I. Must glass attack factor.",  
+            "postOfficeBoxNumber": "When shoulder current operation trial assume floor. Bus",  
+            "streetNr": "Military debate my less employee though.",  
+            "district": "State manager discussion condition nothing around. Should goal run begin throughout whatever campaig"  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Father baby turn left fire. Wha"  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.body.water"  
+        ]  
+    },  
+    "bwater": {  
+        "type": "Number",  
+        "value": 62.0  
+    },  
+    "units": {  
+        "type": "Text",  
+        "value": "kg"  
+    },  
+    "range": {  
+        "type": "StructuredValue",  
+        "value": [  
+            34.7,  
+            488.4  
+        ]  
+    },  
+    "step": {  
+        "type": "Number",  
+        "value": 615.4  
+    },  
+    "precision": {  
+        "type": "Number",  
+        "value": 540.9  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Contain simple without herself. Against story eat new"  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "BodyWater"  
 }  
 ```  
 </details>  
@@ -656,68 +629,57 @@ BodyWater:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:BodyWater:id:MEJE:18514125",  
-    "dateCreated": "1997-04-10T16:39:09Z",  
-    "dateModified": "2019-05-10T20:10:20Z",  
-    "source": "Blue save design whose area church hit crime. Environmental environmental bill music heart finally. Few strong senior peace top book have.",  
-    "name": "Behind place every window. Become area between general plan.",  
-    "alternateName": "Large different eight collection room market society. Firm trouble live. Pattern concern employee movement. More religious beautiful moment serve Mrs.",  
-    "description": "Animal right local sound argue. Image employee deal final good economy continue.",  
-    "dataProvider": "Fish rather clearly power less crime. Appear hand science free.",  
+    "id": "urn:ngsi-ld:BodyWater:id:ILUG:06057800",  
+    "dateCreated": "2001-08-15T20:11:14Z",  
+    "dateModified": "1977-09-04T09:36:22Z",  
+    "source": "Book ok argue film buy create. Meet stock member onto rule. Soon live anima",  
+    "name": "Dark event last face could hand thus. Similar early service doctor involve soon member. Into ",  
+    "alternateName": "Available production probably action contain alone computer one. Exist re",  
+    "description": "Media chair cut training. Think process article really agency hit. Term rule surface tonight.",  
+    "dataProvider": "Reduce analysis around guy available ",  
     "owner": [  
-        "urn:ngsi-ld:BodyWater:items:LMBU:67181228",  
-        "urn:ngsi-ld:BodyWater:items:MHGW:24811389"  
+        "urn:ngsi-ld:BodyWater:items:AJNM:96519237",  
+        "urn:ngsi-ld:BodyWater:items:LIJF:23536544"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:BodyWater:items:WKGV:03404439",  
-        "urn:ngsi-ld:BodyWater:items:IYRC:15142649"  
+        "urn:ngsi-ld:BodyWater:items:TTXY:37487574"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            -77.4914945,  
-            -21.70219  
+            17.8879955,  
+            -60.854531  
         ]  
     },  
     "address": {  
-        "streetAddress": "Memory easy difference. Onto stage purpose throw.",  
-        "addressLocality": "Way if because ground. Market this father road. Agency true someone hand dream film.",  
-        "addressRegion": "Recently consider most fall central stage. Other can land after.",  
-        "addressCountry": "Ask quite lot region us. Thought long majority. Item list fill ready claim.",  
-        "postalCode": "Affect adult find rule. They size focus response special.",  
-        "postOfficeBoxNumber": "Focus ok industry. Your trial identify until improve speech American practice. Stage what north on someone player physical current."  
+        "streetAddress": "Design occur than senior. Director think thank cost consider official.",  
+        "addressLocality": "Expert eat structure anything ask station. Big rate structure Mr worry. Remember modern structure any.",  
+        "addressRegion": "List from foreign cultural apply his manager. Language of pass different. Music use trade difference deal popular clearly. Sea leader finally step sure.",  
+        "addressCountry": "Too when organization fear season management forward.",  
+        "postalCode": "Increase last fine offer professional decide over I. Must glass attack factor.",  
+        "postOfficeBoxNumber": "When shoulder current operation trial assume floor. Bus",  
+        "streetNr": "Military debate my less employee though.",  
+        "district": "State manager discussion condition nothing around. Should goal run begin throughout whatever campaig"  
     },  
-    "areaServed": "Life three degree goal seat. Guess late today family movement form. Stop many air shoulder subject technology.",  
+    "areaServed": "Father baby turn left fire. Wha",  
     "rt": [  
-        "oic.r.body.water",  
         "oic.r.body.water"  
     ],  
-    "bwater": {  
-        "type": "Property",  
-        "value": 110.0  
-    },  
+    "bwater": 62.0,  
     "units": "kg",  
     "range": [  
-        117.8,  
-        516.3  
+        34.7,  
+        488.4  
     ],  
-    "step": {  
-        "type": "Property",  
-        "value": 424.7  
-    },  
-    "precision": {  
-        "type": "Property",  
-        "value": 730.5  
-    },  
-    "n": "Think can no natural too half protect production. Board force sport himself say. Fear former collection make on.",  
+    "step": 615.4,  
+    "precision": 540.9,  
+    "n": "Contain simple without herself. Against story eat new",  
     "if": [  
-        "oic.if.s",  
         "oic.if.baseline"  
     ],  
     "type": "BodyWater",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -727,78 +689,80 @@ BodyWater:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:BodyWater:id:BVOV:66825399",  
+    "id": "urn:ngsi-ld:BodyWater:id:ILUG:06057800",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1982-05-18T07:17:49Z"  
+            "@value": "2001-08-15T20:11:14Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1974-02-21T12:36:24Z"  
+            "@value": "1977-09-04T09:36:22Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Lawyer risk doctor project answer them. Summer subject upon detail believe manager."  
+        "value": "Book ok argue film buy create. Meet stock member onto rule. Soon live anima"  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Without fight require. Country property hear. Thousand television miss understand."  
+        "value": "Dark event last face could hand thus. Similar early service doctor involve soon member. Into "  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Red our eye edge range. Chair box heavy source without."  
+        "value": "Available production probably action contain alone computer one. Exist re"  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Peace message attack great thousand visit read. Guy challenge language natural need. Suddenly may feel."  
+        "value": "Media chair cut training. Think process article really agency hit. Term rule surface tonight."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "List police heavy establish type. Create song region sign he benefit. Story wind message minute phone."  
+        "value": "Reduce analysis around guy available "  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:BodyWater:items:NNZA:54978923",  
-            "urn:ngsi-ld:BodyWater:items:HMFG:01092209"  
+            "urn:ngsi-ld:BodyWater:items:AJNM:96519237",  
+            "urn:ngsi-ld:BodyWater:items:LIJF:23536544"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:BodyWater:items:YEXG:25411046"  
+            "urn:ngsi-ld:BodyWater:items:TTXY:37487574"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                -6.6273955,  
-                -90.098469  
+                17.8879955,  
+                -60.854531  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Shake address agency could perform carry. Hundred until wide new make garden. Police identify girl second charge.",  
-            "addressLocality": "Lay natural go federal store present. Baby themselves stop program yes growth top.",  
-            "addressRegion": "Head score rest. Work southern response build middle particular ball. Service may laugh artist budget.",  
-            "addressCountry": "Painting hot senior expert father part play son.",  
-            "postalCode": "Field cold card. Career one left factor weight technology buy. Establish institution network car.",  
-            "postOfficeBoxNumber": "Performance ground phone discussion. Pass notice he include position able do. Property medical us quite time."  
+            "streetAddress": "Design occur than senior. Director think thank cost consider official.",  
+            "addressLocality": "Expert eat structure anything ask station. Big rate structure Mr worry. Remember modern structure any.",  
+            "addressRegion": "List from foreign cultural apply his manager. Language of pass different. Music use trade difference deal popular clearly. Sea leader finally step sure.",  
+            "addressCountry": "Too when organization fear season management forward.",  
+            "postalCode": "Increase last fine offer professional decide over I. Must glass attack factor.",  
+            "postOfficeBoxNumber": "When shoulder current operation trial assume floor. Bus",  
+            "streetNr": "Military debate my less employee though.",  
+            "district": "State manager discussion condition nothing around. Should goal run begin throughout whatever campaig"  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Ask young stuff wear big nothing factor my. Hold real win number."  
+        "value": "Father baby turn left fire. Wha"  
     },  
     "rt": {  
         "type": "Property",  
@@ -808,30 +772,30 @@ BodyWater:
     },  
     "bwater": {  
         "type": "Property",  
-        "value": 659.2  
+        "value": 62.0  
     },  
     "units": {  
         "type": "Property",  
-        "value": "lb"  
+        "value": "kg"  
     },  
     "range": {  
         "type": "Property",  
         "value": [  
-            603.5,  
-            483.9  
+            34.7,  
+            488.4  
         ]  
     },  
     "step": {  
         "type": "Property",  
-        "value": 70.0  
+        "value": 615.4  
     },  
     "precision": {  
         "type": "Property",  
-        "value": 404.2  
+        "value": 540.9  
     },  
     "n": {  
         "type": "Property",  
-        "value": "Sort maintain talk mission hair. Professional wall interest friend. Authority road cup education movie wait. All concern medical get traditional Mr year involve."  
+        "value": "Contain simple without herself. Against story eat new"  
     },  
     "if": {  
         "type": "Property",  
@@ -841,8 +805,7 @@ BodyWater:
     },  
     "type": "BodyWater",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
