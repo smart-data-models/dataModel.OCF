@@ -1,75 +1,107 @@
 {
-  "id": {
-    "type": "string",
-    "value": "urn:ngsi-ld:ecomode:id:XTKS:41735897"
-  },
-  "dateCreated": {
-    "format": "date-time",
-    "type": "string",
-    "value": "1984-05-09T22:46:30Z"
-  },
-  "dateModified": {
-    "format": "date-time",
-    "type": "string",
-    "value": "2005-12-26T00:05:52Z"
-  },
-  "source": {
-    "type": "string",
-    "value": "Pick five government out several. Onto care door future."
-  },
-  "name": {
-    "type": "string",
-    "value": "Source bed up these. Focus allow act rather cover what. Body rock product history management."
-  },
-  "alternateName": {
-    "type": "string",
-    "value": "Dark wrong could thank yard. Before think major necessary police responsibility himself think. Would sit avoid floor relationship suffer thousand modern."
-  },
-  "description": {
-    "type": "string",
-    "value": "Morning financial law compare paper. Two find model tough remember war. Business identify particularly claim."
-  },
-  "dataProvider": {
-    "type": "string",
-    "value": "Wish church to event in line. Ever career sound her from figure."
-  },
-  "owner": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:ecomode:items:VUPI:33448029",
-      "urn:ngsi-ld:ecomode:items:JAMY:20507933"
-    ]
-  },
-  "seeAlso": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:ecomode:items:NYJQ:21494614",
-      "urn:ngsi-ld:ecomode:items:MKLF:57041922"
-    ]
-  },
-  "location": {
-    "type": "object",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        -44.6641115,
-        141.353721
-      ]
-    }
-  },
-  "address": {
-    "type": "object",
-    "value": {
-      "streetAddress": "Name husband local positive hear past open. Pay dream recently card never.",
-      "addressLocality": "Arm should bar western beautiful. Continue affect Republican attention level on.",
-      "addressRegion": "Thousand yes beautiful work national key born. Cut stage believe town enough gas past. Scene peace six factor happy those blood condition. Dream police somebody fill.",
-      "addressCountry": "Somebody drug cup green stand. Upon finish outside agent.",
-      "postalCode": "Season ten movie different drug. Thus these picture seat.",
-      "postOfficeBoxNumber": "Special who big movement. Entire could page item decade consumer lawyer kitchen."
-    }
-  },
-  "areaServed": {
-    "type": "string",
-    "value": "Build type series executive technology whole situation for. Series natural religious enjoy oil. Beat eat arrive ever."
-  }
+    "id": "urn:ngsi-ld:ecomode:id:AHBA:98025070",
+    "dateCreated": {
+        "type": "DateTime",
+        "value": "1985-05-13T16:22:28Z"
+    },
+    "dateModified": {
+        "type": "DateTime",
+        "value": "2014-07-01T04:44:52Z"
+    },
+    "source": {
+        "type": "Text",
+        "value": "Start general professional career. Large center fin"
+    },
+    "name": {
+        "type": "Text",
+        "value": "North but west. About catch than m"
+    },
+    "alternateName": {
+        "type": "Text",
+        "value": "Sea stuff no response."
+    },
+    "description": {
+        "type": "Text",
+        "value": "Billion pick report past always future scene heavy. Usually already bed fall character door green save. Front sound war address morning explain."
+    },
+    "dataProvider": {
+        "type": "Text",
+        "value": "Significant now energy. Lay return identify. Anything event yet effect quite reflect upon."
+    },
+    "owner": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:ecomode:items:SKZH:38856431",
+            "urn:ngsi-ld:ecomode:items:BSEL:98522509"
+        ]
+    },
+    "seeAlso": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:ecomode:items:FAZE:54457696"
+        ]
+    },
+    "location": {
+        "type": "geo:json",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                62.6331415,
+                -156.591688
+            ]
+        }
+    },
+    "address": {
+        "type": "StructuredValue",
+        "value": {
+            "streetAddress": "Game act return travel. Secti",
+            "addressLocality": "Someone painting senior entire expect investm",
+            "addressRegion": "Guess we no in pass sound. Tonight gun word citizen create. Physical market room eat through ever.",
+            "addressCountry": "Of door research tell. When clearly type up",
+            "postalCode": "Action econ",
+            "postOfficeBoxNumber": "Let stop camera report foreign agency list miss.",
+            "streetNr": "Not girl above course.",
+            "district": "Likely fire"
+        }
+    },
+    "areaServed": {
+        "type": "Text",
+        "value": "Throughout treat relate respond. Role mind statement."
+    },
+    "rt": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.r.ecomode"
+        ]
+    },
+    "modes": {
+        "type": "StructuredValue",
+        "value": [
+            "disabled",
+            "enabled"
+        ]
+    },
+    "supportedModes": {
+        "type": "StructuredValue",
+        "value": [
+            "notsupported",
+            "disabled"
+        ]
+    },
+    "adminforced": {
+        "type": "Boolean",
+        "value": true
+    },
+    "n": {
+        "type": "Text",
+        "value": "Spend cut end red. S"
+    },
+    "if": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.if.a",
+            "oic.if.baseline"
+        ]
+    },
+    "type": "ecomode"
 }
