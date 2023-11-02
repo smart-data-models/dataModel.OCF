@@ -12,78 +12,80 @@
     },
     {
       "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "rt": {
+          "description": "Property. The Resource Type of Device Settings for sound",
+          "items": {
+            "enum": [
+              "oic.r.settings.sound"
+            ],
+            "type": "string"
+          },
+          "minItems": 1,
+          "uniqueItems": true,
+          "readOnly": true,
+          "type": "array"
+        },
+        "if": {
+          "items": {
+            "enum": [
+              "oic.if.rw",
+              "oic.if.baseline"
+            ],
+            "type": "string"
+          },
+          "minItems": 2,
+          "uniqueItems": true,
+          "readOnly": true,
+          "type": "array",
+          "description": "Property. No description is available in the original"
+        },
+        "speaker": {
+          "description": "Property. Device Settings Sound - Speaker. Client can change speaker using supported-speakers property.",
+          "type": "string"
+        },
+        "supported-speakers": {
+          "description": "Property. The array of possible speakers the device supports. This property should be added if speaker is supported.",
+          "items": {
+            "type": "string"
+          },
+          "readOnly": true,
+          "minItems": 1,
+          "type": "array"
+        },
+        "sound-mode": {
+          "description": "Property. Device Settings Sound - Sound Mode. Client can change sound-mode using supported-sound-modes property.",
+          "type": "string"
+        },
+        "supported-sound-modes": {
+          "description": "Property. The array of possible sound modes the device supports. This property should be added if sound-mode is supported.",
+          "items": {
+            "type": "string"
+          },
+          "readOnly": true,
+          "minItems": 1,
+          "type": "array"
+        },
+        "auto-volume": {
+          "description": "Property. Automatically equalizes the volume level when switching to antother channel.",
+          "type": "boolean"
+        },
+        "dolby-atmos-compatibility": {
+          "description": "Property. Supports dolby-atmos mode.",
+          "type": "boolean"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "settings-sound"
+          ],
+          "description": "Property. NGSI entity type. It has to be settings-sound"
+        }
+      }
     }
   ],
-  "properties": {
-    "rt": {
-      "description": "Property. The Resource Type of Device Settings for sound",
-      "items": {
-        "enum": [
-          "oic.r.settings.sound"
-        ],
-        "type": "string"
-      },
-      "minItems": 1,
-      "uniqueItems": true,
-      "readOnly": true,
-      "type": "array"
-    },
-    "if": {
-      "items": {
-        "enum": [
-          "oic.if.rw",
-          "oic.if.baseline"
-        ],
-        "type": "string"
-      },
-      "minItems": 2,
-      "uniqueItems": true,
-      "readOnly": true,
-      "type": "array",
-      "description": "Property. No description is available in the original"
-    },
-    "speaker": {
-      "description": "Property. Device Settings Sound - Speaker. Client can change speaker using supported-speakers property.",
-      "type": "string"
-    },
-    "supported-speakers": {
-      "description": "Property. The array of possible speakers the device supports. This property should be added if speaker is supported.",
-      "items": {
-        "type": "string"
-      },
-      "readOnly": true,
-      "minItems": 1,
-      "type": "array"
-    },
-    "sound-mode": {
-      "description": "Property. Device Settings Sound - Sound Mode. Client can change sound-mode using supported-sound-modes property.",
-      "type": "string"
-    },
-    "supported-sound-modes": {
-      "description": "Property. The array of possible sound modes the device supports. This property should be added if sound-mode is supported.",
-      "items": {
-        "type": "string"
-      },
-      "readOnly": true,
-      "minItems": 1,
-      "type": "array"
-    },
-    "auto-volume": {
-      "description": "Property. Automatically equalizes the volume level when switching to antother channel.",
-      "type": "boolean"
-    },
-    "dolby-atmos-compatibility": {
-      "description": "Property. Supports dolby-atmos mode.",
-      "type": "boolean"
-    },
-    "type": {
-      "type": "string",
-      "enum": [
-        "settings-sound"
-      ],
-      "description": "Property. NGSI entity type. It has to be settings-sound"
-    }
-  },
   "derivedFrom": "https://github.com/OpenInterConnect/IoTDataModels/blob/master/settings-soundResURI.swagger.json",
   "license": "https://github.com/OpenInterConnect/IoTDataModels/blob/master/README.md",
   "required": [
