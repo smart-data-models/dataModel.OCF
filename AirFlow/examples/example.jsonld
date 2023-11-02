@@ -1,66 +1,58 @@
 {
-    "id": "urn:ngsi-ld:AirFlow:id:XSWU:58062726",
-    "dateCreated": "2010-02-14T21:51:25Z",
-    "dateModified": "2010-03-18T13:03:00Z",
-    "source": "Hospital be move baby reality. Education affect risk off. Per building film soon get whatever.",
-    "name": "Power fill agency stay water body know. Physical option foreign common imagine relationship eight. Over coach next product bank situation daughter.",
-    "alternateName": "Senior consumer home peace. Against benefit treat heavy. Study avoid matter civil adult wind him.",
-    "description": "Cultural receive against particular with summer stay. Second commercial from another movie record rise.",
-    "dataProvider": "Win message smile dinner talk citizen. Professor spend see heart.",
+    "id": "urn:ngsi-ld:AirFlow:id:QBYQ:46486922",
+    "dateCreated": "2001-07-15T01:59:58Z",
+    "dateModified": "1999-01-10T11:13:04Z",
+    "source": "Later body goal nor. Ci",
+    "name": "Particular investment once team. Back finish water participant shake.",
+    "alternateName": "Itself key approach space defense development attack quite. Write offer tough. Every must particularly page would professor many.",
+    "description": "Challenge good live even sense black. Play site stand economy herself happen.",
+    "dataProvider": "Difference perform describe forward participant great. Less certain moment everyone college.",
     "owner": [
-        "urn:ngsi-ld:AirFlow:items:HQBW:07594514",
-        "urn:ngsi-ld:AirFlow:items:XTIH:34920922"
+        "urn:ngsi-ld:AirFlow:items:SRPE:15875448",
+        "urn:ngsi-ld:AirFlow:items:JHQL:37977670"
     ],
     "seeAlso": [
-        "urn:ngsi-ld:AirFlow:items:AAHX:93448219",
-        "urn:ngsi-ld:AirFlow:items:ZBBK:34409235"
+        "urn:ngsi-ld:AirFlow:items:XFSX:59784474"
     ],
     "location": {
         "type": "Point",
         "coordinates": [
-            -58.0369645,
-            22.817704
+            65.785205,
+            -176.72728
         ]
     },
     "address": {
-        "streetAddress": "Eye reason order father always. Wait oil beat benefit front technology finish.",
-        "addressLocality": "Space while so she. Tend blue determine level toward much keep.",
-        "addressRegion": "Although bring Democrat purpose threat nation wind. Hotel develop remain else point. Bill coach guy grow political family.",
-        "addressCountry": "Should list dark by firm already third agency. Page although what expect before expect. Affect enter hot I mission sort.",
-        "postalCode": "Public reach consumer picture catch plan.",
-        "postOfficeBoxNumber": "Lawyer leg agent follow finally."
+        "streetAddress": "Teacher after shoulder president state center. Hand happy unit catch charge team. Financial certain exactly current sou",
+        "addressLocality": "Section think part easy argue about com",
+        "addressRegion": "Free face your government field. Herself camera career alone. Any yard next spring everybody hope figure.",
+        "addressCountry": "Manage field d",
+        "postalCode": "Far fill experience maybe. Democratic power free colle",
+        "postOfficeBoxNumber": "Play into understand population. Area huge oil should.",
+        "streetNr": "Try their real man term side interesting. Eat according reason similar summer production force.",
+        "district": "Event big toward age nature million. Newspaper plan truth seat. Three left natural continue."
     },
-    "areaServed": "Seat great coach health yourself former simply. Impact under professional short scientist. Land season business inside reach.",
+    "areaServed": "Around claim western write window produce sit. Debate century e",
     "rt": [
-        "oic.r.airflow",
         "oic.r.airflow"
     ],
-    "speed": {
-        "type": "Property",
-        "value": 864
-    },
+    "speed": 864,
     "direction": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair.",
     "automode": "On",
     "supporteddirections": [
-        "Line beyond its particularly tree whom. Kind miss artist truth trouble behavior style.",
-        "Partner stock four. Region as true develop sound central. Language ball floor meet usually board necessary. Natural sport music white."
+        "Line beyond its particularly tree whom. Kind miss artist truth trouble behavior style."
     ],
-    "n": "Onto knowledge other his offer face country. Almost wonder employee attorney. Theory type successful together. Raise study modern miss dog Democrat quickly.",
+    "n": "Partner stock four. Region as true develop sound centr",
     "range": [
         864,
         864
     ],
-    "step": {
-        "type": "Property",
-        "value": 864
-    },
+    "step": 864,
     "if": [
-        "oic.if.a",
-        "oic.if.baseline"
+        "oic.if.baseline",
+        "oic.if.a"
     ],
     "type": "AirFlow",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
