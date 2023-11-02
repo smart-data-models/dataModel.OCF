@@ -1,79 +1,102 @@
 {
-    "id": "urn:ngsi-ld:EnergyGeneration:id:JKAS:17317112",
+    "id": "urn:ngsi-ld:EnergyGeneration:id:YRBR:93782527",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1973-06-23T15:48:55Z"
+            "@value": "1975-08-11T11:22:54Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1988-09-02T22:09:40Z"
+            "@value": "2005-03-24T18:35:19Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Quite these represent. Least occur save apply common condition make."
+        "value": "Spend bag into. Now from her gun subject PM. First age safe affect."
     },
     "name": {
         "type": "Property",
-        "value": "Help might brother total. Many manager true view bed remember perhaps sign."
+        "value": "Analysis population recognize someone treatment. Should represent group strong back approach"
     },
     "alternateName": {
         "type": "Property",
-        "value": "Example newspaper interest grow. Approach attorney east game culture how fast. Quality build officer sound weight community one."
+        "value": "Pattern president add lead network the. Live teach movie I situation understand agree."
     },
     "description": {
         "type": "Property",
-        "value": "See field service indeed total dark dream support. Son anything action job."
+        "value": "Student bag grow better. Child might source. A front war."
     },
     "dataProvider": {
         "type": "Property",
-        "value": "Which whole fire staff join early. Me decade gun."
+        "value": "Company TV policy drug. Foreign agency when personal huge difficult player forget."
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:EnergyGeneration:items:DFHG:21721195",
-            "urn:ngsi-ld:EnergyGeneration:items:ELES:06221684"
+            "urn:ngsi-ld:EnergyGeneration:items:EMSY:35326759",
+            "urn:ngsi-ld:EnergyGeneration:items:AKQA:02906220"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:EnergyGeneration:items:YMSQ:31557089"
+            "urn:ngsi-ld:EnergyGeneration:items:ZANN:00199226"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                9.638445,
-                -143.885877
+                62.4831025,
+                -1.263129
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "Hundred main opportunity result author him. Power view available Mrs.",
-            "addressLocality": "Executive black citizen nearly into deal. Step house recognize share discussion then once.",
-            "addressRegion": "Evening firm carry firm. Probably available south view process care money. Better red table remember wife.",
-            "addressCountry": "Hold possible too animal. Both land doctor seat. So majority unit culture rate avoid discussion.",
-            "postalCode": "Dinner threat week off leg ever watch. Action what key statement indeed together. Data key hard fight something line adult drug.",
-            "postOfficeBoxNumber": "Finish whether miss up."
+            "streetAddress": "Hair describe hundred candidate. Probably whom it job likely different house.",
+            "addressLocality": "Turn attorney education every money my. Particularly listen down American focus something who blood. Certain hotel should.",
+            "addressRegion": "Under require page claim future in. Truth ten seven both happy central group line. Send cultural whatever computer on fast play.",
+            "addressCountry": "Issue radio especially road get car party. All office less politics.",
+            "postalCode": "Nation network college debate direction moment. Ground think save respond friend budget while.",
+            "postOfficeBoxNumber": "Tonight garden maybe forward reason. Worker season figure they yeah get. Memory who yet spend raise child above.",
+            "streetNr": "Blood sin",
+            "district": "Important produce just raise enough onto try. Those north trouble up"
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "He notice ever read herself word kind. Owner suddenly customer nor."
+        "value": "If do them altho"
     },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.energy.generation"
+        ]
+    },
+    "energygenerated": {
+        "type": "Property",
+        "value": 299.3
+    },
+    "n": {
+        "type": "Property",
+        "value": "Cold profess"
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.baseline",
+            "oic.if.s"
+        ]
+    },
+    "type": "EnergyGeneration",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
