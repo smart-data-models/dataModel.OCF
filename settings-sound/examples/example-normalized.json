@@ -1,75 +1,113 @@
 {
-  "id": {
-    "type": "string",
-    "value": "urn:ngsi-ld:settings-sound:id:DJPZ:53873776"
-  },
-  "dateCreated": {
-    "format": "date-time",
-    "type": "string",
-    "value": "1997-10-31T22:05:18Z"
-  },
-  "dateModified": {
-    "format": "date-time",
-    "type": "string",
-    "value": "1996-03-30T03:46:06Z"
-  },
-  "source": {
-    "type": "string",
-    "value": "Administration radio federal significant cup need. Read hour at build exactly left read. Everyone perform nothing popular."
-  },
-  "name": {
-    "type": "string",
-    "value": "Later food speech computer."
-  },
-  "alternateName": {
-    "type": "string",
-    "value": "Manage perform attack computer hard. General get tax story degree."
-  },
-  "description": {
-    "type": "string",
-    "value": "For today at cup laugh."
-  },
-  "dataProvider": {
-    "type": "string",
-    "value": "Meeting sound author hotel court style they. Might final course simply rather. Machine life do thousand a professional. Similar return wait."
-  },
-  "owner": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:settings-sound:items:TAGU:20409749",
-      "urn:ngsi-ld:settings-sound:items:OACX:13015302"
-    ]
-  },
-  "seeAlso": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:settings-sound:items:BAFE:60565166",
-      "urn:ngsi-ld:settings-sound:items:WFCN:62742480"
-    ]
-  },
-  "location": {
-    "type": "object",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        81.343291,
-        -101.756791
-      ]
-    }
-  },
-  "address": {
-    "type": "object",
-    "value": {
-      "streetAddress": "Trial recent wait grow. Learn west glass upon shake none.",
-      "addressLocality": "Learn turn about security director. Current occur person.",
-      "addressRegion": "First court group student cause accept prove. Board thank before sing few address. Wall save tough maintain for Congress.",
-      "addressCountry": "Entire citizen method concern sit fall activity. Baby two food through force my. Shoulder imagine might name.",
-      "postalCode": "Those side short miss less. Budget top run trial. Woman his arrive whether common act.",
-      "postOfficeBoxNumber": "Effort find experience north shake short year. Reality analysis expert see president. True include event city behavior admit."
-    }
-  },
-  "areaServed": {
-    "type": "string",
-    "value": "Movement begin or well design analysis least. Another writer central their add successful bed. East four deal ten common purpose once either."
-  }
+    "id": "urn:ngsi-ld:settings-sound:id:FEOR:54068496",
+    "dateCreated": {
+        "type": "DateTime",
+        "value": "1980-08-26T09:43:11Z"
+    },
+    "dateModified": {
+        "type": "DateTime",
+        "value": "2006-05-19T00:55:48Z"
+    },
+    "source": {
+        "type": "Text",
+        "value": "Important position share care same sea. Argue internatio"
+    },
+    "name": {
+        "type": "Text",
+        "value": "Authority within mouth work shoulder. Tree news seem black all police."
+    },
+    "alternateName": {
+        "type": "Text",
+        "value": "Daughter media increase half behind decide leave. Customer modern prevent weight kitchen where recent perhaps."
+    },
+    "description": {
+        "type": "Text",
+        "value": "Give continue almost foreign skill same eye. Clear heavy house use food."
+    },
+    "dataProvider": {
+        "type": "Text",
+        "value": "Order bar garden make population. Particularly end down career well agent kitchen country. Military he choice character."
+    },
+    "owner": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:settings-sound:items:ASBD:54571276",
+            "urn:ngsi-ld:settings-sound:items:GAGW:59069925"
+        ]
+    },
+    "seeAlso": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:settings-sound:items:EDDJ:79167522"
+        ]
+    },
+    "location": {
+        "type": "geo:json",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                53.9771575,
+                -164.350245
+            ]
+        }
+    },
+    "address": {
+        "type": "StructuredValue",
+        "value": {
+            "streetAddress": "By health walk production television happen. Strategy everybody fall reason so. Space city within and bit reveal gas.",
+            "addressLocality": "South minute friend. Buy finish yet say class.",
+            "addressRegion": "National half way enter. Single redu",
+            "addressCountry": "Throughout send share room PM tell. Music",
+            "postalCode": "Front southern each class act can. Least discover involve maybe.",
+            "postOfficeBoxNumber": "Since hot spring only president manage whole. Suggest item find moment else you recently ready.",
+            "streetNr": "Occur a white recognize attack political. Sell difficult these gun.",
+            "district": "Seek career green p"
+        }
+    },
+    "areaServed": {
+        "type": "Text",
+        "value": "Budget"
+    },
+    "rt": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.r.settings.sound"
+        ]
+    },
+    "if": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.if.baseline",
+            "oic.if.rw"
+        ]
+    },
+    "speaker": {
+        "type": "Text",
+        "value": "Long great expert Democrat visit for later. Floor world serious case light product."
+    },
+    "supported-speakers": {
+        "type": "StructuredValue",
+        "value": [
+            "Degree between number theory western real. Very data election sell of stay style."
+        ]
+    },
+    "sound-mode": {
+        "type": "Text",
+        "value": "Make production within authority."
+    },
+    "supported-sound-modes": {
+        "type": "StructuredValue",
+        "value": [
+            "Stand bed little month car suffer. Soon summer bit. Certain final trouble you however reflect skill activity. Wonder trouble "
+        ]
+    },
+    "auto-volume": {
+        "type": "Boolean",
+        "value": true
+    },
+    "dolby-atmos-compatibility": {
+        "type": "Boolean",
+        "value": false
+    },
+    "type": "settings-sound"
 }
