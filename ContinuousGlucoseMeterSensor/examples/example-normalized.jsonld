@@ -1,84 +1,86 @@
 {
-    "id": "urn:ngsi-ld:ContinuousGlucoseMeterSensor:id:YJIM:68056027",
+    "id": "urn:ngsi-ld:ContinuousGlucoseMeterSensor:id:VMKL:33852976",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2019-03-02T01:19:29Z"
+            "@value": "2023-10-19T16:11:52Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2016-05-30T02:46:32Z"
+            "@value": "1983-06-12T17:45:55Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Question four must source also decide role. Bank high word effort. Fine support drive arrive politics institution."
+        "value": "Parent chance account to explain join shoulder. Clos"
     },
     "name": {
         "type": "Property",
-        "value": "Particularly tell similar recognize card often while. Between within avoid east president."
+        "value": "Expert relationship important group. Spring order chair thought message. Article thing grow management very."
     },
     "alternateName": {
         "type": "Property",
-        "value": "Little long whose. Still wife beat everyone magazine apply walk."
+        "value": "Sit mention fly above put. Bill glass win prevent less network always."
     },
     "description": {
         "type": "Property",
-        "value": "Cup indeed on simply vote big same modern. Relationship cultural page itself wonder."
+        "value": "Light record reason open. People generation large those technology. Represent process open down since long practice."
     },
     "dataProvider": {
         "type": "Property",
-        "value": "Second seem bed tax recent organization. Drug individual movement ball. Show suffer and small table without prepare."
+        "value": "Ability room around"
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:ContinuousGlucoseMeterSensor:items:OSEN:98502198",
-            "urn:ngsi-ld:ContinuousGlucoseMeterSensor:items:BJDY:06916629"
+            "urn:ngsi-ld:ContinuousGlucoseMeterSensor:items:OTAY:98259767",
+            "urn:ngsi-ld:ContinuousGlucoseMeterSensor:items:SRXB:50094831"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:ContinuousGlucoseMeterSensor:items:IAUP:42382262"
+            "urn:ngsi-ld:ContinuousGlucoseMeterSensor:items:YHNC:24340465"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                -83.8309825,
-                16.633986
+                30.97083,
+                138.893906
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "Same large can must note guess continue once. Father writer suggest edge meeting. Responsibility poor agreement provide quality instead.",
-            "addressLocality": "Style as I site need. Employee scientist minute American improve. Happen pretty project thank structure individual. Human growth build someone hour ten relate media.",
-            "addressRegion": "Stock try drive city increase avoid. Up behind step term difference offer.",
-            "addressCountry": "Republican east true bring home together it. Ability value sign officer long.",
-            "postalCode": "Activity partner worker week reflect. No choice new word hope. Opportunity operation speak girl far they.",
-            "postOfficeBoxNumber": "East mention meet poor wonder model owner movement. Letter three the describe. Where much decade interest."
+            "streetAddress": "Indicate adult per gun something. Simply grow of good.",
+            "addressLocality": "Inde",
+            "addressRegion": "With our truth also small. Listen act nearly child available project small. Evening test dream size.",
+            "addressCountry": "Special TV put national baby hit organization. Hotel national wall despite truth kitchen spend.",
+            "postalCode": "Minute reduce success easy.",
+            "postOfficeBoxNumber": "Dinner push blood if.",
+            "streetNr": "Her both challenge over. Meeting enjoy else certa",
+            "district": "Military letter result whatever no this. Top really father professional environmental language."
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "Both truth agreement little skill surface. Indicate pretty Democrat Mrs able somebody. Opportunity college spring ask expect couple still audience."
+        "value": "Street former concern use"
     },
     "starttime": {
         "type": "Property",
-        "value": "Product husband dog science word able. Usually relationship already you."
+        "value": "New accept throw within. Music region worry. Source far officer. Lose air site instead."
     },
     "runtime": {
         "type": "Property",
-        "value": 2.8
+        "value": 985.3
     },
     "rt": {
         "type": "Property",
@@ -88,32 +90,31 @@
     },
     "n": {
         "type": "Property",
-        "value": "Picture chair his small small. Story which determine quality."
+        "value": "Others response contain usually mouth"
     },
     "if": {
         "type": "Property",
         "value": [
-            "oic.if.s"
+            "oic.if.baseline"
         ]
     },
     "range": {
         "type": "Property",
         "value": [
-            39.0,
-            191.7
+            807.7,
+            294.6
         ]
     },
     "step": {
         "type": "Property",
-        "value": 481.8
+        "value": 461.9
     },
     "precision": {
         "type": "Property",
-        "value": 103.6
+        "value": 363.5
     },
     "type": "ContinuousGlucoseMeterSensor",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
