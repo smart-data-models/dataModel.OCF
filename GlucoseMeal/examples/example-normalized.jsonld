@@ -1,79 +1,101 @@
 {
-    "id": "urn:ngsi-ld:GlucoseMeal:id:ABVE:19702704",
+    "id": "urn:ngsi-ld:GlucoseMeal:id:XLQI:55161502",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2002-02-17T00:53:08Z"
+            "@value": "2018-01-26T01:51:09Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2010-03-31T20:20:55Z"
+            "@value": "2000-10-08T00:28:43Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Leader ten audience his."
+        "value": "Story country cup site real"
     },
     "name": {
         "type": "Property",
-        "value": "Play participant away rate claim none sense little. Evening class teach war game. Nation campaign body human. Program message protect economy chair race ago."
+        "value": "Help billion that bit south owner."
     },
     "alternateName": {
         "type": "Property",
-        "value": "Indeed finally indeed word mind hit shake. Section attorney take rate. Fear leg because suggest degree."
+        "value": "Quality all rich. Apply do work writer. Community camera deep mention along."
     },
     "description": {
         "type": "Property",
-        "value": "Fire charge outside head majority capital. Of happen past instead interesting audience throughout. Join marriage certain turn happen."
+        "value": "Scene purpose participant school morning wish everything film. Even rock pretty sum"
     },
     "dataProvider": {
         "type": "Property",
-        "value": "Him indeed some allow. Reduce somebody white card another. Member seat produce animal position."
+        "value": "Look better national none speech young where."
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:GlucoseMeal:items:IQSO:46372161",
-            "urn:ngsi-ld:GlucoseMeal:items:IZFK:40511946"
+            "urn:ngsi-ld:GlucoseMeal:items:QNKH:66553031",
+            "urn:ngsi-ld:GlucoseMeal:items:HTKX:04734989"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:GlucoseMeal:items:WFRZ:03670754"
+            "urn:ngsi-ld:GlucoseMeal:items:CRDB:94365951"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                0.614666,
-                60.591506
+                -14.45525,
+                -161.337485
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "Way tree option central car beautiful. Your able democratic already possible.",
-            "addressLocality": "Analysis focus sort agency. Open fall blood animal understand enough industry. Chair above drug figure sit result.",
-            "addressRegion": "Throughout no group participant medical call natural. Less collection top get everybody. Another improve risk suffer our leader century.",
-            "addressCountry": "Student travel floor fish hear matter nothing. Along people claim light fact maybe five. Walk middle arrive main address include.",
-            "postalCode": "Nearly eight happy water. College Republican buy door head. Stand especially science issue positive tend fast result.",
-            "postOfficeBoxNumber": "Ahead if design safe watch. Language sound guy fight break."
+            "streetAddress": "However standard generation ground charge indeed today. Same water film pattern.",
+            "addressLocality": "Across feel happen. Scientist design effect although. Note conference powe",
+            "addressRegion": "Office southern before animal walk something. Always word truth image security dark although. Reduce individual act before medical.",
+            "addressCountry": "Need star sport. Ability impact race position involve.",
+            "postalCode": "Movemen",
+            "postOfficeBoxNumber": "Inside card many movie. Start college take sou",
+            "streetNr": "Range lay seven general. Org",
+            "district": "Nearly clear short play travel. Reflect energy produce drop. Tough hold speak also return always financial."
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "My which public amount. Identify media none future cost network party. Modern six discuss writer receive."
+        "value": "Go three also bill member traditional keep. Result woman carry cell include especially Congress meet."
     },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.glucose.meal"
+        ]
+    },
+    "meal": {
+        "type": "Property",
+        "value": "preprandial"
+    },
+    "n": {
+        "type": "Property",
+        "value": "Kind option indeed industry. Until claim citizen t"
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.baseline"
+        ]
+    },
+    "type": "GlucoseMeal",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
