@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: Die Postfachnummer für Postfachadressen. Zum Beispiel, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: Die Postleitzahl. Zum Beispiel, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: Die Straßenanschrift  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Nummer zur Identifizierung eines bestimmten Grundstücks an einer öffentlichen Straße    
 - `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit  - `dateCreated[date-time]`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen  - `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben  - `description[string]`: Eine Beschreibung dieses Artikels  - `id[*]`: Eindeutiger Bezeichner der Entität  - `if[array]`: Der von dieser Ressource unterstützte OCF-Schnittstellensatz  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `n[string]`: Freundlicher Name der Ressource  - `name[string]`: Der Name dieses Artikels  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `rt[array]`: Ressourcentyp  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `type[string]`: NGSI-Entitätstyp. Es muss UserID sein  - `userid[string]`: Identität eines Patienten/Benutzers von Medizinprodukten  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
@@ -421,49 +422,48 @@ UserID:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:UserID:id:MPBR:64609342",  
-  "dateCreated": "2004-04-06T00:07:12Z",  
-  "dateModified": "1977-12-27T13:09:32Z",  
-  "source": "Focus most ability attention focus clear. Enter play see degree base pressure. Avoid campaign become son save blood.",  
-  "name": "International sign about seem.",  
-  "alternateName": "Pick meeting easy exist exactly through interesting. Find represent sometimes expert. Official child I. Brother investment interest home soldier remain.",  
-  "description": "Outside imagine couple crime. Pretty rule be hour walk. Travel at cut major great over from again.",  
-  "dataProvider": "Security mouth after share worry strategy despite film. Step account somebody anyone. Issue too right kitchen if fly pattern.",  
-  "owner": [  
-    "urn:ngsi-ld:UserID:items:YEGQ:90094094",  
-    "urn:ngsi-ld:UserID:items:EAPP:82632004"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:UserID:items:ZDPD:46962898",  
-    "urn:ngsi-ld:UserID:items:YVAX:99933622"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      85.6307245,  
-      172.147391  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Medical someone major structure consider. Animal ten away better young rest read. Doctor brother TV owner piece.",  
-    "addressLocality": "Join accept hour. Bring billion other place same full. Example season take head relate history especially.",  
-    "addressRegion": "Day state view else fast. Stock thus and. Student poor charge shake beautiful occur appear.",  
-    "addressCountry": "Campaign discuss anyone simple floor soon. Ball in trial eye military tough. Add work him item wait approach.",  
-    "postalCode": "Film enjoy actually sell there free instead. Hair message four catch little sea paper.",  
-    "postOfficeBoxNumber": "Red around wait plant. Subject approach world itself. Region recently recognize somebody employee box loss."  
-  },  
-  "areaServed": "Close agent start race skill bed glass. Than protect there play stay fund bank successful.",  
-  "rt": [  
-    "oic.r.userid",  
-    "oic.r.userid"  
-  ],  
-  "userid": "Road color pay. Impact yourself leg seek home admit.",  
-  "n": "Plan else situation attention among interest nice. Before part financial opportunity purpose leave mouth. Town remain indicate wind.",  
-  "if": [  
-    "oic.if.r",  
-    "oic.if.r"  
-  ],  
-  "type": "UserID"  
+    "id": "urn:ngsi-ld:UserID:id:TISP:88226783",  
+    "dateCreated": "1999-02-28T12:41:27Z",  
+    "dateModified": "2005-01-20T22:09:59Z",  
+    "source": "Health meet politics carry him world reduce. Position dea",  
+    "name": "Six air first artist both ago act. Toward dark without recognize open tonight contin",  
+    "alternateName": "Hotel learn five argue. Image great maybe new special no far day. Game glass pretty positive modern yard. Account east government soon adult activity.",  
+    "description": "Baby Democrat choose than mother language line class. Generation public within environmental conference.",  
+    "dataProvider": "Design prepare question character. Happen deal kitchen media and third.",  
+    "owner": [  
+        "urn:ngsi-ld:UserID:items:TKTQ:52248422",  
+        "urn:ngsi-ld:UserID:items:MUAU:95041539"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:UserID:items:XZNK:26327451"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -1.059131,  
+            79.58558  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Medical sit of benefit indeed. Despite increase nothing six history small begin.",  
+        "addressLocality": "Today case yourself factor police better choice. Movement some usually beat might agreement nation. Work turn tend discover.",  
+        "addressRegion": "Century prepare require baby. Hand stand care better you for in. Wish positive administration consider find stock.",  
+        "addressCountry": "Wor",  
+        "postalCode": "Consider process poor. Sing cut ball ",  
+        "postOfficeBoxNumber": "Success rule democratic sing size standard.",  
+        "streetNr": "Look four agreement sing available threat certain.",  
+        "district": "Responsibilit"  
+    },  
+    "areaServed": "As meet future standard open bar.",  
+    "rt": [  
+        "oic.r.userid"  
+    ],  
+    "userid": "Become knowledge keep industry mess",  
+    "n": "Trip call company science at whether. Expect I",  
+    "if": [  
+        "oic.if.baseline"  
+    ],  
+    "type": "UserID"  
 }  
 ```  
 </details>  
@@ -472,105 +472,96 @@ UserID:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:UserID:id:MPBR:64609342"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2004-04-06T00:07:12Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1977-12-27T13:09:32Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Focus most ability attention focus clear. Enter play see degree base pressure. Avoid campaign become son save blood."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "International sign about seem."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Pick meeting easy exist exactly through interesting. Find represent sometimes expert. Official child I. Brother investment interest home soldier remain."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Outside imagine couple crime. Pretty rule be hour walk. Travel at cut major great over from again."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Security mouth after share worry strategy despite film. Step account somebody anyone. Issue too right kitchen if fly pattern."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:UserID:items:YEGQ:90094094",  
-      "urn:ngsi-ld:UserID:items:EAPP:82632004"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:UserID:items:ZDPD:46962898",  
-      "urn:ngsi-ld:UserID:items:YVAX:99933622"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        85.6307245,  
-        172.147391  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Medical someone major structure consider. Animal ten away better young rest read. Doctor brother TV owner piece.",  
-      "addressLocality": "Join accept hour. Bring billion other place same full. Example season take head relate history especially.",  
-      "addressRegion": "Day state view else fast. Stock thus and. Student poor charge shake beautiful occur appear.",  
-      "addressCountry": "Campaign discuss anyone simple floor soon. Ball in trial eye military tough. Add work him item wait approach.",  
-      "postalCode": "Film enjoy actually sell there free instead. Hair message four catch little sea paper.",  
-      "postOfficeBoxNumber": "Red around wait plant. Subject approach world itself. Region recently recognize somebody employee box loss."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Close agent start race skill bed glass. Than protect there play stay fund bank successful."  
-  },  
-  "rt": {  
-    "type": "array",  
-    "value": [  
-      "oic.r.userid",  
-      "oic.r.userid"  
-    ]  
-  },  
-  "userid": {  
-    "type": "string",  
-    "value": "Road color pay. Impact yourself leg seek home admit."  
-  },  
-  "n": {  
-    "type": "string",  
-    "value": "Plan else situation attention among interest nice. Before part financial opportunity purpose leave mouth. Town remain indicate wind."  
-  },  
-  "if": {  
-    "type": "array",  
-    "value": [  
-      "oic.if.r",  
-      "oic.if.r"  
-    ]  
-  },  
-  "type": {  
-    "type": "string",  
-    "value": "UserID"  
-  }  
+    "id": "urn:ngsi-ld:UserID:id:TISP:88226783",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1999-02-28T12:41:27Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "2005-01-20T22:09:59Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Health meet politics carry him world reduce. Position dea"  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Six air first artist both ago act. Toward dark without recognize open tonight contin"  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Hotel learn five argue. Image great maybe new special no far day. Game glass pretty positive modern yard. Account east government soon adult activity."  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Baby Democrat choose than mother language line class. Generation public within environmental conference."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Design prepare question character. Happen deal kitchen media and third."  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:UserID:items:TKTQ:52248422",  
+            "urn:ngsi-ld:UserID:items:MUAU:95041539"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:UserID:items:XZNK:26327451"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -1.059131,  
+                79.58558  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Medical sit of benefit indeed. Despite increase nothing six history small begin.",  
+            "addressLocality": "Today case yourself factor police better choice. Movement some usually beat might agreement nation. Work turn tend discover.",  
+            "addressRegion": "Century prepare require baby. Hand stand care better you for in. Wish positive administration consider find stock.",  
+            "addressCountry": "Wor",  
+            "postalCode": "Consider process poor. Sing cut ball ",  
+            "postOfficeBoxNumber": "Success rule democratic sing size standard.",  
+            "streetNr": "Look four agreement sing available threat certain.",  
+            "district": "Responsibilit"  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "As meet future standard open bar."  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.userid"  
+        ]  
+    },  
+    "userid": {  
+        "type": "Text",  
+        "value": "Become knowledge keep industry mess"  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Trip call company science at whether. Expect I"  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "UserID"  
 }  
 ```  
 </details>  
@@ -579,52 +570,50 @@ UserID:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:UserID:id:MPBR:64609342",  
-    "dateCreated": "2004-04-06T00:07:12Z",  
-    "dateModified": "1977-12-27T13:09:32Z",  
-    "source": "Focus most ability attention focus clear. Enter play see degree base pressure. Avoid campaign become son save blood.",  
-    "name": "International sign about seem.",  
-    "alternateName": "Pick meeting easy exist exactly through interesting. Find represent sometimes expert. Official child I. Brother investment interest home soldier remain.",  
-    "description": "Outside imagine couple crime. Pretty rule be hour walk. Travel at cut major great over from again.",  
-    "dataProvider": "Security mouth after share worry strategy despite film. Step account somebody anyone. Issue too right kitchen if fly pattern.",  
+    "id": "urn:ngsi-ld:UserID:id:TISP:88226783",  
+    "dateCreated": "1999-02-28T12:41:27Z",  
+    "dateModified": "2005-01-20T22:09:59Z",  
+    "source": "Health meet politics carry him world reduce. Position dea",  
+    "name": "Six air first artist both ago act. Toward dark without recognize open tonight contin",  
+    "alternateName": "Hotel learn five argue. Image great maybe new special no far day. Game glass pretty positive modern yard. Account east government soon adult activity.",  
+    "description": "Baby Democrat choose than mother language line class. Generation public within environmental conference.",  
+    "dataProvider": "Design prepare question character. Happen deal kitchen media and third.",  
     "owner": [  
-        "urn:ngsi-ld:UserID:items:YEGQ:90094094",  
-        "urn:ngsi-ld:UserID:items:EAPP:82632004"  
+        "urn:ngsi-ld:UserID:items:TKTQ:52248422",  
+        "urn:ngsi-ld:UserID:items:MUAU:95041539"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:UserID:items:ZDPD:46962898",  
-        "urn:ngsi-ld:UserID:items:YVAX:99933622"  
+        "urn:ngsi-ld:UserID:items:XZNK:26327451"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            85.6307245,  
-            172.147391  
+            -1.059131,  
+            79.58558  
         ]  
     },  
     "address": {  
-        "streetAddress": "Medical someone major structure consider. Animal ten away better young rest read. Doctor brother TV owner piece.",  
-        "addressLocality": "Join accept hour. Bring billion other place same full. Example season take head relate history especially.",  
-        "addressRegion": "Day state view else fast. Stock thus and. Student poor charge shake beautiful occur appear.",  
-        "addressCountry": "Campaign discuss anyone simple floor soon. Ball in trial eye military tough. Add work him item wait approach.",  
-        "postalCode": "Film enjoy actually sell there free instead. Hair message four catch little sea paper.",  
-        "postOfficeBoxNumber": "Red around wait plant. Subject approach world itself. Region recently recognize somebody employee box loss."  
+        "streetAddress": "Medical sit of benefit indeed. Despite increase nothing six history small begin.",  
+        "addressLocality": "Today case yourself factor police better choice. Movement some usually beat might agreement nation. Work turn tend discover.",  
+        "addressRegion": "Century prepare require baby. Hand stand care better you for in. Wish positive administration consider find stock.",  
+        "addressCountry": "Wor",  
+        "postalCode": "Consider process poor. Sing cut ball ",  
+        "postOfficeBoxNumber": "Success rule democratic sing size standard.",  
+        "streetNr": "Look four agreement sing available threat certain.",  
+        "district": "Responsibilit"  
     },  
-    "areaServed": "Close agent start race skill bed glass. Than protect there play stay fund bank successful.",  
+    "areaServed": "As meet future standard open bar.",  
     "rt": [  
-        "oic.r.userid",  
         "oic.r.userid"  
     ],  
-    "userid": "Road color pay. Impact yourself leg seek home admit.",  
-    "n": "Plan else situation attention among interest nice. Before part financial opportunity purpose leave mouth. Town remain indicate wind.",  
+    "userid": "Become knowledge keep industry mess",  
+    "n": "Trip call company science at whether. Expect I",  
     "if": [  
-        "oic.if.r",  
-        "oic.if.r"  
+        "oic.if.baseline"  
     ],  
     "type": "UserID",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -634,78 +623,80 @@ UserID:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:UserID:id:SATK:66273727",  
+    "id": "urn:ngsi-ld:UserID:id:TISP:88226783",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1988-01-26T22:40:15Z"  
+            "@value": "1999-02-28T12:41:27Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2021-12-11T17:15:26Z"  
+            "@value": "2005-01-20T22:09:59Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Go give she reveal. Performance another low feeling election environment prove."  
+        "value": "Health meet politics carry him world reduce. Position dea"  
     },  
     "name": {  
         "type": "Property",  
-        "value": "School left college benefit already including director. Analysis become take TV final hundred. Lose family two seem. Soon responsibility call you dog pay."  
+        "value": "Six air first artist both ago act. Toward dark without recognize open tonight contin"  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Stay management skin smile part course. Wait before cup expect debate. Hospital tell think enough single many turn."  
+        "value": "Hotel learn five argue. Image great maybe new special no far day. Game glass pretty positive modern yard. Account east government soon adult activity."  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Will certainly news treat. Guy beautiful leader serve. View word authority."  
+        "value": "Baby Democrat choose than mother language line class. Generation public within environmental conference."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Throw feeling meeting central. Husband story some system understand few home."  
+        "value": "Design prepare question character. Happen deal kitchen media and third."  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:UserID:items:YXSN:35330506",  
-            "urn:ngsi-ld:UserID:items:SANZ:01194408"  
+            "urn:ngsi-ld:UserID:items:TKTQ:52248422",  
+            "urn:ngsi-ld:UserID:items:MUAU:95041539"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:UserID:items:BEQN:82535156"  
+            "urn:ngsi-ld:UserID:items:XZNK:26327451"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                77.454452,  
-                -121.266156  
+                -1.059131,  
+                79.58558  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Wish anyone smile if. I down seat environment food seek research room. Politics financial cup.",  
-            "addressLocality": "Difficult image join herself Mr collection white. Really next until return almost teach.",  
-            "addressRegion": "Year source force would run require reality. Fine production agree hand oil letter. Figure poor field may.",  
-            "addressCountry": "Administration more international industry current establish knowledge long. Democrat born assume scientist evidence culture remember very.",  
-            "postalCode": "Occur federal Democrat hope. Rise next former support space.",  
-            "postOfficeBoxNumber": "Start true me son then movement head new. Employee politics conference administration break. Theory market religious later Congress."  
+            "streetAddress": "Medical sit of benefit indeed. Despite increase nothing six history small begin.",  
+            "addressLocality": "Today case yourself factor police better choice. Movement some usually beat might agreement nation. Work turn tend discover.",  
+            "addressRegion": "Century prepare require baby. Hand stand care better you for in. Wish positive administration consider find stock.",  
+            "addressCountry": "Wor",  
+            "postalCode": "Consider process poor. Sing cut ball ",  
+            "postOfficeBoxNumber": "Success rule democratic sing size standard.",  
+            "streetNr": "Look four agreement sing available threat certain.",  
+            "district": "Responsibilit"  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Itself must change his car admit rule. Until worry listen page impact. Big real certain many street."  
+        "value": "As meet future standard open bar."  
     },  
     "rt": {  
         "type": "Property",  
@@ -715,22 +706,21 @@ UserID:
     },  
     "userid": {  
         "type": "Property",  
-        "value": "This too his lay inside. Give cup would."  
+        "value": "Become knowledge keep industry mess"  
     },  
     "n": {  
         "type": "Property",  
-        "value": "Customer politics since very those exactly."  
+        "value": "Trip call company science at whether. Expect I"  
     },  
     "if": {  
         "type": "Property",  
         "value": [  
-            "oic.if.r"  
+            "oic.if.baseline"  
         ]  
     },  
     "type": "UserID",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
