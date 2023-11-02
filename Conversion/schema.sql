@@ -1,3 +1,3 @@
 /* (Beta) Export of data model Conversion of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE Conversion_type AS ENUM ('Conversion');
-CREATE TABLE Conversion (conversion NUMERIC, if JSON, n TEXT, precision NUMERIC, rt JSON, type Conversion_type);
+CREATE TABLE Conversion (address JSON, alternateName TEXT, areaServed TEXT, conversion NUMERIC, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, if JSON, location JSON, n TEXT, name TEXT, owner JSON, precision NUMERIC, rt JSON, seeAlso JSON, source TEXT, type Conversion_type);
