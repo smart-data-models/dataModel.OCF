@@ -1,75 +1,104 @@
 {
-  "id": {
-    "type": "string",
-    "value": "urn:ngsi-ld:movement:id:CPZE:29185997"
-  },
-  "dateCreated": {
-    "format": "date-time",
-    "type": "string",
-    "value": "2014-08-15T05:57:18Z"
-  },
-  "dateModified": {
-    "format": "date-time",
-    "type": "string",
-    "value": "1990-04-02T03:13:24Z"
-  },
-  "source": {
-    "type": "string",
-    "value": "Billion parent city country citizen benefit order try. Sport hear very research. In series vote."
-  },
-  "name": {
-    "type": "string",
-    "value": "Between next production plant else want. Never during care goal people machine."
-  },
-  "alternateName": {
-    "type": "string",
-    "value": "Carry owner letter sure shake later into. Television people tell center teacher game sit."
-  },
-  "description": {
-    "type": "string",
-    "value": "Choose throughout school civil grow writer food. Language treat around travel brother their. Rich open machine at. Himself cut them live product region."
-  },
-  "dataProvider": {
-    "type": "string",
-    "value": "For door this agent another management size. Office upon strong way. Charge good although lot food body."
-  },
-  "owner": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:movement:items:TNVL:40980728",
-      "urn:ngsi-ld:movement:items:VRHP:35252843"
-    ]
-  },
-  "seeAlso": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:movement:items:JPAP:34694458",
-      "urn:ngsi-ld:movement:items:RDOR:34337888"
-    ]
-  },
-  "location": {
-    "type": "object",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        60.96489,
-        46.089257
-      ]
-    }
-  },
-  "address": {
-    "type": "object",
-    "value": {
-      "streetAddress": "Seek commercial out thousand exactly loss.",
-      "addressLocality": "Quite majority call agreement keep somebody that number.",
-      "addressRegion": "Rise lead imagine strategy future country girl. Family ahead effort pattern view effort writer. Every entire sell star product hand. President gun example nor.",
-      "addressCountry": "Full bring contain probably thing receive political get. National increase which stop hope must always.",
-      "postalCode": "Any herself same father teach involve seven indeed. Fish might ten goal.",
-      "postOfficeBoxNumber": "Unit step environmental finally. Process beautiful meeting seat. Use race out whole message success. Store real environmental try."
-    }
-  },
-  "areaServed": {
-    "type": "string",
-    "value": "Meet foreign Congress receive ahead year add. Child poor memory remain hot argue."
-  }
+    "id": "urn:ngsi-ld:movement:id:WMOH:91322370",
+    "dateCreated": {
+        "type": "DateTime",
+        "value": "1983-09-28T15:31:13Z"
+    },
+    "dateModified": {
+        "type": "DateTime",
+        "value": "2008-01-31T11:06:20Z"
+    },
+    "source": {
+        "type": "Text",
+        "value": "Example side agent trip. Part girl impact child ready nice model. Step tell try executive of."
+    },
+    "name": {
+        "type": "Text",
+        "value": "Decade ahead house should apply man need coach. Maintain stuff least inside. Activity new American floor wrong."
+    },
+    "alternateName": {
+        "type": "Text",
+        "value": "Other can PM. Machine fas"
+    },
+    "description": {
+        "type": "Text",
+        "value": "Son ready start. Future score put born. Have main range remain personal positive every assume."
+    },
+    "dataProvider": {
+        "type": "Text",
+        "value": "Great central government. Affect adult soldier American government. Amount last summer month officer make. Prepare author prove th"
+    },
+    "owner": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:movement:items:YSRS:72385041",
+            "urn:ngsi-ld:movement:items:XPBE:72152358"
+        ]
+    },
+    "seeAlso": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:movement:items:HBKJ:87209106"
+        ]
+    },
+    "location": {
+        "type": "geo:json",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -55.011893,
+                160.721991
+            ]
+        }
+    },
+    "address": {
+        "type": "StructuredValue",
+        "value": {
+            "streetAddress": "Attack third old not. Out control while standard up pass.",
+            "addressLocality": "Keep never card activity. Then store card management cell yet best.",
+            "addressRegion": "Loss race no main task break right. World behavior family sound.",
+            "addressCountry": "Store analysis particularly role. Quickly rather unit together cov",
+            "postalCode": "Poor appear lay. Blood ready book cell carry degree thought drop.",
+            "postOfficeBoxNumber": "Reveal ability guess friend face. Letter explain north tough laugh south price. Particular toward thus place whether go Mrs. Low home want hospital guy position so.",
+            "streetNr": "Challenge race hospital poor. Arm believe with stay with will per.",
+            "district": "Side himself agreement serve reflect sister. Investment "
+        }
+    },
+    "areaServed": {
+        "type": "Text",
+        "value": "Set food community. Security benefit front can against. Push too head."
+    },
+    "rt": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.r.movement.linear"
+        ]
+    },
+    "movementSettings": {
+        "type": "StructuredValue",
+        "value": [
+            "Socie",
+            "Anything treatment check. Security street draw unit win. Other then college computer life somebody."
+        ]
+    },
+    "movementModifier": {
+        "type": "Text",
+        "value": "Ok main mov"
+    },
+    "movement": {
+        "type": "Text",
+        "value": "Tonight address country. Range energy once southern international as"
+    },
+    "n": {
+        "type": "Text",
+        "value": "None run reach question now laugh happen strategy. Everyone n"
+    },
+    "if": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.if.baseline",
+            "oic.if.s"
+        ]
+    },
+    "type": "movement"
 }
