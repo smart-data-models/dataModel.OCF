@@ -1,75 +1,89 @@
 {
-  "id": {
-    "type": "string",
-    "value": "urn:ngsi-ld:UserInfo-retrieve:id:IHKI:27253319"
-  },
-  "dateCreated": {
-    "format": "date-time",
-    "type": "string",
-    "value": "2007-09-14T06:36:40Z"
-  },
-  "dateModified": {
-    "format": "date-time",
-    "type": "string",
-    "value": "2021-07-07T07:30:19Z"
-  },
-  "source": {
-    "type": "string",
-    "value": "As simply read resource best research. Plant leave small apply next cover. Cup difference clearly could read."
-  },
-  "name": {
-    "type": "string",
-    "value": "Movie put perform executive mind smile. Special other market recognize budget yeah. Share adult war sound."
-  },
-  "alternateName": {
-    "type": "string",
-    "value": "Pm easy answer food. Eat special nice stand situation. Design continue girl food law last."
-  },
-  "description": {
-    "type": "string",
-    "value": "Economy usually pressure positive and less tree herself. Expert worker wide east each run later shoulder. Able agree similar raise reflect feel its."
-  },
-  "dataProvider": {
-    "type": "string",
-    "value": "Current police card through fear. Somebody travel side moment follow him. Still occur Congress material together into use skin."
-  },
-  "owner": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:UserInfo-retrieve:items:HFOS:13005145",
-      "urn:ngsi-ld:UserInfo-retrieve:items:SRTT:52024706"
-    ]
-  },
-  "seeAlso": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:UserInfo-retrieve:items:QVVK:28692168",
-      "urn:ngsi-ld:UserInfo-retrieve:items:FWSM:63094973"
-    ]
-  },
-  "location": {
-    "type": "object",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        79.31196,
-        137.523533
-      ]
-    }
-  },
-  "address": {
-    "type": "object",
-    "value": {
-      "streetAddress": "Reason beautiful answer stay prepare interview newspaper computer. Audience middle side more. Actually energy win writer onto.",
-      "addressLocality": "Conference line single school. Skill check happy station relate foot. Myself newspaper to interview edge figure serve.",
-      "addressRegion": "Collection admit sell physical. Without significant quickly now agent able.",
-      "addressCountry": "Lead TV that subject race power. Forward with individual best senior health. Theory lot section always five might through degree.",
-      "postalCode": "Option business enough tell debate. Pull attorney local. Official important entire detail allow late for. Former perform lot feeling represent charge lead.",
-      "postOfficeBoxNumber": "Analysis could street put reach program. Star radio start ready science."
-    }
-  },
-  "areaServed": {
-    "type": "string",
-    "value": "Person then their deal former. Add one major himself anything voice person."
-  }
+    "id": "urn:ngsi-ld:UserInfo-retrieve:id:TXBY:45705242",
+    "dateCreated": {
+        "type": "DateTime",
+        "value": "1990-06-22T01:09:44Z"
+    },
+    "dateModified": {
+        "type": "DateTime",
+        "value": "1999-02-06T18:19:13Z"
+    },
+    "source": {
+        "type": "Text",
+        "value": "Bag finally challenge win the. Where apply practice support test image. Professor speak fire interesting light politics."
+    },
+    "name": {
+        "type": "Text",
+        "value": "Cons"
+    },
+    "alternateName": {
+        "type": "Text",
+        "value": "Leader agency serious fact and deal sort but. Reach past sister realize away mouth. School shake defense interest."
+    },
+    "description": {
+        "type": "Text",
+        "value": "Laugh western for cold performance off. During hard century discuss read clear."
+    },
+    "dataProvider": {
+        "type": "Text",
+        "value": "Less appear long whom result economy both. Who turn step professor team. Ok expect art federal military fly. Fact thing religious task clear."
+    },
+    "owner": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:UserInfo-retrieve:items:QXBB:34998933",
+            "urn:ngsi-ld:UserInfo-retrieve:items:MBIL:67490912"
+        ]
+    },
+    "seeAlso": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:UserInfo-retrieve:items:YJSI:71607452"
+        ]
+    },
+    "location": {
+        "type": "geo:json",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -42.7967495,
+                -34.967117
+            ]
+        }
+    },
+    "address": {
+        "type": "StructuredValue",
+        "value": {
+            "streetAddress": "Exactly score cut care do. Personal dream leader end address week.",
+            "addressLocality": "Require moment nice i",
+            "addressRegion": "Ago herself edge under. His spec",
+            "addressCountry": "Force environment tax audience majority. Note office sea ge",
+            "postalCode": "Leg kitchen do teach boy federal. Word response yeah. Another wonder wo",
+            "postOfficeBoxNumber": "Now machine level far song ask treatment. Green mouth close only arm lead participant.",
+            "streetNr": "Particular bag suggest free drive teach. Each another picture view letter vote movement.",
+            "district": "Thus important think goal author husband strategy. Understand war next rule n"
+        }
+    },
+    "areaServed": {
+        "type": "Text",
+        "value": "Free information hair choose system factor. O"
+    },
+    "rt": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.r.userinfo"
+        ]
+    },
+    "n": {
+        "type": "Text",
+        "value": "How real economy manag"
+    },
+    "if": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.if.rw",
+            "oic.if.baseline"
+        ]
+    },
+    "type": "UserInfo-retrieve"
 }
