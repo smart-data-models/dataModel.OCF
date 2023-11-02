@@ -1,100 +1,102 @@
 {
-    "id": "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:id:JNLC:20811520",
+    "id": "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:id:QSII:08545277",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2014-10-06T01:57:51Z"
+            "@value": "2011-06-12T08:24:11Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2009-09-21T14:09:17Z"
+            "@value": "1994-09-18T20:29:43Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Contain check product major certainly. Quickly expect wait cost conference fund similar. Night or carry purpose of article."
+        "value": "For or prevent right still if rich. Us maintain event. Meeting fish show nor only. Here manage threat profes"
     },
     "name": {
         "type": "Property",
-        "value": "Bed close late gun. Later financial on. Both lose rather. Necessary mouth question."
+        "value": "Stuff alone team responsibility. Yourself look c"
     },
     "alternateName": {
         "type": "Property",
-        "value": "Meet PM service water. Trade interesting consumer idea."
+        "value": "Court particularly song lay follow film movie. Response size character tax."
     },
     "description": {
         "type": "Property",
-        "value": "Number lot edge whatever democratic. How total treat. Though not represent control leader marriage."
+        "value": "Card color them teach drug college management. Good director beyond exactly heavy family."
     },
     "dataProvider": {
         "type": "Property",
-        "value": "Soldier different school far reality south charge. Piece exactly today gas loss thousand idea."
+        "value": "Audience fill free position. Debate imagine court throughout."
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:OEJX:09311250",
-            "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:QHQH:24761502"
+            "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:EUJH:30934965",
+            "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:RTPX:39835000"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:EANX:32862165"
+            "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:RQAB:55271114"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                -14.737475,
-                -83.850391
+                69.193737,
+                -84.724615
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "Send arm you yeah somebody. Blue along push wait.",
-            "addressLocality": "Billion central ask trade significant could eat. Again piece Mr. Mother upon quickly reach also.",
-            "addressRegion": "Media per contain bed type major. Open view social use see laugh. Party budget back. Program money protect.",
-            "addressCountry": "Quality sort course yard several agent. Activity throughout memory arm.",
-            "postalCode": "Guy effect computer less soon. Know never southern bar audience. Respond check share risk this story six. Age eight watch special everybody thank.",
-            "postOfficeBoxNumber": "Candidate happy natural. See wear case few."
+            "streetAddress": "Finally born probably TV realize pattern available tax. Say of",
+            "addressLocality": "Water culture respond game feel debate. No make third.",
+            "addressRegion": "One family window eye area approach people along. Prepare order around play production difference ball true.",
+            "addressCountry": "Identify administratio",
+            "postalCode": "Need bad always small some apply.",
+            "postOfficeBoxNumber": "House clearly second improve human. Box main outside throughout discussion evidence beautiful.",
+            "streetNr": "Leg research force worker strategy name. Knowledge stuff person change magazine hard well.",
+            "district": "Quite author"
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "Local across including real. Pattern resource everybody ability."
+        "value": "Rise item research study phone. Co"
     },
     "plow": {
         "type": "Property",
-        "value": 352.0
+        "value": 53.9
     },
     "phigh": {
         "type": "Property",
-        "value": 410.6
+        "value": 705.7
     },
     "dhypo": {
         "type": "Property",
-        "value": 472.3
+        "value": 755.1
     },
     "dhyper": {
         "type": "Property",
-        "value": 117.2
+        "value": 517.6
     },
     "gir": {
         "type": "Property",
-        "value": 650.9
+        "value": 375.6
     },
     "gdr": {
         "type": "Property",
-        "value": 718.9
+        "value": 263.1
     },
     "rt": {
         "type": "Property",
@@ -104,32 +106,31 @@
     },
     "n": {
         "type": "Property",
-        "value": "Story her eye key rich individual. Area avoid small these. Usually night health responsibility behind no ground. Design drive above discover."
+        "value": "Design president specific approa"
     },
     "if": {
         "type": "Property",
         "value": [
-            "oic.if.baseline"
+            "oic.if.rw"
         ]
     },
     "range": {
         "type": "Property",
         "value": [
-            641.4,
-            917.0
+            13.4,
+            330.3
         ]
     },
     "step": {
         "type": "Property",
-        "value": 228.3
+        "value": 872.4
     },
     "precision": {
         "type": "Property",
-        "value": 832.7
+        "value": 23.4
     },
     "type": "ContinuousGlucoseMeterThreshold",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
