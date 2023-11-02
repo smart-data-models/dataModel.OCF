@@ -15,7 +15,15 @@
 ## Elenco delle proprietà  
 
 <sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
-- `if[array]`: Il set di interfacce OCF supportato da questa risorsa.  - `measurement[number]`: Gli UVB misurati.  - `n[string]`: Nome amichevole della risorsa  - `rt[array]`: Il tipo di risorsa.  - `type[string]`: Tipo di entità NGSI. Deve essere UVBRadiation  <!-- /30-PropertiesList -->  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Il paese. Ad esempio, la Spagna  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: La località in cui si trova l'indirizzo civico e che si trova nella regione  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: La regione in cui si trova la località, e che si trova nel paese  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Un distretto è un tipo di divisione amministrativa che, in alcuni paesi, è gestita dal governo locale.    
+	- `postOfficeBoxNumber[string]`: Il numero di casella postale per gli indirizzi di casella postale. Ad esempio, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Il codice postale. Ad esempio, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: L'indirizzo stradale  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Numero che identifica una proprietà specifica su una strada pubblica    
+- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata  - `dateCreated[date-time]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `if[array]`: Il set di interfacce OCF supportato da questa risorsa.  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `measurement[number]`: Gli UVB misurati.  - `n[string]`: Nome amichevole della risorsa  - `name[string]`: Il nome di questo elemento  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `rt[array]`: Il tipo di risorsa.  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `type[string]`: Tipo di entità NGSI. Deve essere UVBRadiation  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Proprietà richieste  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -32,6 +40,109 @@
 UVBRadiation:    
   description: Smart Data Models Program adaptation of the original IoTData data Models. This Resource specifies UV radiation measurement. The Property 'measurement' is the current measured UVB. The intensity of UV radiation is measured in the units of milliwatts per square centimeter (mW/cm2) which is energy per square centimeter received per second. UVB is measured between 280 and 315 nanometers in the electromagnetic spectrum.    
   properties:    
+    address:    
+      description: The mailing address    
+      properties:    
+        addressCountry:    
+          description: 'The country. For example, Spain'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
+        addressLocality:    
+          description: 'The locality in which the street address is, and which is in the region'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
+        addressRegion:    
+          description: 'The region in which the locality is, and which is in the country'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        postOfficeBoxNumber:    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
+        postalCode:    
+          description: 'The postal code. For example, 24004'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
+        streetAddress:    
+          description: The street address    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      type: object    
+      x-ngsi:    
+        model: https://schema.org/address    
+        type: Property    
+    alternateName:    
+      description: An alternative name for this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    areaServed:    
+      description: The geographic area where a service or offered item is provided    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    dataProvider:    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateCreated:    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateModified:    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    description:    
+      description: A description of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    id:    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
+      x-ngsi:    
+        type: Property    
     if:    
       description: The OCF Interface set supported by this Resource.    
       items:    
@@ -45,6 +156,171 @@ UVBRadiation:
       uniqueItems: true    
       x-ngsi:    
         type: Property    
+    location:    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+      oneOf:    
+        - description: Geojson reference to the item. Point    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                type: number    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - Point    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Point    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - LineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON LineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 4    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - Polygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Polygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPoint    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPoint    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiLineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiLineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    items:    
+                      type: number    
+                    minItems: 2    
+                    type: array    
+                  minItems: 4    
+                  type: array    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPolygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPolygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+      x-ngsi:    
+        type: GeoProperty    
     measurement:    
       description: The measured UVB.    
       minimum: 0    
@@ -59,6 +335,33 @@ UVBRadiation:
       type: string    
       x-ngsi:    
         type: Property    
+    name:    
+      description: The name of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    owner:    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
+      items:    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     rt:    
       description: The Resource Type.    
       items:    
@@ -70,6 +373,23 @@ UVBRadiation:
       readOnly: true    
       type: array    
       uniqueItems: true    
+      x-ngsi:    
+        type: Property    
+    seeAlso:    
+      description: list of uri pointing to additional resources about the item    
+      oneOf:    
+        - items:    
+            format: uri    
+            type: string    
+          minItems: 1    
+          type: array    
+        - format: uri    
+          type: string    
+      x-ngsi:    
+        type: Property    
+    source:    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
+      type: string    
       x-ngsi:    
         type: Property    
     type:    
@@ -101,38 +421,49 @@ UVBRadiation:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:UVBRadiation:id:RUFN:84434026",  
-  "dateCreated": "1979-02-01T21:38:01Z",  
-  "dateModified": "1988-11-04T08:50:06Z",  
-  "source": "Shake business seem why state until. Memory western we which back technology speech health. Push performance scene information radio total college.",  
-  "name": "Turn program teach heavy son. Bad bank yeah. All security water indicate teach.",  
-  "alternateName": "American theory gas other. Down where tend benefit position model friend use. Democrat director air each teach audience. Democratic painting center former.",  
-  "description": "College color amount individual job quality. Employee region modern wear look short employee. Red strong song each activity conference.",  
-  "dataProvider": "Loss return food life she blue here throw. Major Democrat sister husband street kind. Sport white station difference movie population in help.",  
-  "owner": [  
-    "urn:ngsi-ld:UVBRadiation:items:OYEQ:78049778",  
-    "urn:ngsi-ld:UVBRadiation:items:ETDC:16806735"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:UVBRadiation:items:MKPQ:73465414",  
-    "urn:ngsi-ld:UVBRadiation:items:KUHU:28508572"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -89.050093,  
-      -69.422876  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Shake assume apply space indeed window. Ok shoulder responsibility person us increase. As check attention book.",  
-    "addressLocality": "No spend sport owner. Interesting relate form yet score market.",  
-    "addressRegion": "Back which pick war.",  
-    "addressCountry": "Agent bar high single. Risk piece chance likely often television. Might science catch indicate save. Officer wrong become part move assume.",  
-    "postalCode": "Carry move position goal. Plan whom past current alone environmental. Two better suddenly bed gun challenge.",  
-    "postOfficeBoxNumber": "Author be federal long paper product. Enjoy catch cell company even act yard. Kitchen field visit true determine imagine yes."  
-  },  
-  "areaServed": "Which boy see no audience sound. Everything but air reach sing perhaps red. Agree set performance practice tend send."  
+    "id": "urn:ngsi-ld:UVBRadiation:id:DAAT:22565561",  
+    "dateCreated": "2006-10-26T08:41:06Z",  
+    "dateModified": "1987-04-06T20:33:21Z",  
+    "source": "World foreign open miss share. Sea push determine leave me down. Mean trip yeah against goal.",  
+    "name": "Pretty dog out edge everything. Way instead trial western quickly sea easy establish.",  
+    "alternateName": "Light girl thought land myself probably step.",  
+    "description": "Among first material professor live quickly important. Son m",  
+    "dataProvider": "Manage up lose draw security item season wide. Environment buy between model effect trade once. Also camera party couple window son.",  
+    "owner": [  
+        "urn:ngsi-ld:UVBRadiation:items:HBDC:38129595",  
+        "urn:ngsi-ld:UVBRadiation:items:IGYI:62683417"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:UVBRadiation:items:TLXJ:54023310"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -77.4075855,  
+            16.228071  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Site budget call remember hotel. Race determine old first feel it.",  
+        "addressLocality": "Challenge poor far middle possible join page. Even source attorney dinner protect return science. Together me knowledge agree security.",  
+        "addressRegion": "New to voice adult summer yet. Method environment issue.",  
+        "addressCountry": "According huge whatever hotel next ever experience. Student partner bring unit economic bed usually.",  
+        "postalCode": "Difference factor thus key program pop",  
+        "postOfficeBoxNumber": "Them drug news but seven detail physical.",  
+        "streetNr": "However station rest seek. Change thing financial. Than listen base. Should return person.",  
+        "district": "Sound effect quickly bar chance TV. Hair then I."  
+    },  
+    "areaServed": "Free resource though information tough economy center. Return space statement just stock market.",  
+    "rt": [  
+        "oic.r.sensor.radiation.uvb"  
+    ],  
+    "measurement": 454.5,  
+    "n": "Very write already source stock small whom",  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.s"  
+    ],  
+    "type": "UVBRadiation"  
 }  
 ```  
 </details>  
@@ -141,79 +472,97 @@ UVBRadiation:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:UVBRadiation:id:RUFN:84434026"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1979-02-01T21:38:01Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1988-11-04T08:50:06Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Shake business seem why state until. Memory western we which back technology speech health. Push performance scene information radio total college."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Turn program teach heavy son. Bad bank yeah. All security water indicate teach."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "American theory gas other. Down where tend benefit position model friend use. Democrat director air each teach audience. Democratic painting center former."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "College color amount individual job quality. Employee region modern wear look short employee. Red strong song each activity conference."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Loss return food life she blue here throw. Major Democrat sister husband street kind. Sport white station difference movie population in help."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:UVBRadiation:items:OYEQ:78049778",  
-      "urn:ngsi-ld:UVBRadiation:items:ETDC:16806735"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:UVBRadiation:items:MKPQ:73465414",  
-      "urn:ngsi-ld:UVBRadiation:items:KUHU:28508572"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -89.050093,  
-        -69.422876  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Shake assume apply space indeed window. Ok shoulder responsibility person us increase. As check attention book.",  
-      "addressLocality": "No spend sport owner. Interesting relate form yet score market.",  
-      "addressRegion": "Back which pick war.",  
-      "addressCountry": "Agent bar high single. Risk piece chance likely often television. Might science catch indicate save. Officer wrong become part move assume.",  
-      "postalCode": "Carry move position goal. Plan whom past current alone environmental. Two better suddenly bed gun challenge.",  
-      "postOfficeBoxNumber": "Author be federal long paper product. Enjoy catch cell company even act yard. Kitchen field visit true determine imagine yes."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Which boy see no audience sound. Everything but air reach sing perhaps red. Agree set performance practice tend send."  
-  }  
+    "id": "urn:ngsi-ld:UVBRadiation:id:DAAT:22565561",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "2006-10-26T08:41:06Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "1987-04-06T20:33:21Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "World foreign open miss share. Sea push determine leave me down. Mean trip yeah against goal."  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Pretty dog out edge everything. Way instead trial western quickly sea easy establish."  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Light girl thought land myself probably step."  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Among first material professor live quickly important. Son m"  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Manage up lose draw security item season wide. Environment buy between model effect trade once. Also camera party couple window son."  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:UVBRadiation:items:HBDC:38129595",  
+            "urn:ngsi-ld:UVBRadiation:items:IGYI:62683417"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:UVBRadiation:items:TLXJ:54023310"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -77.4075855,  
+                16.228071  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Site budget call remember hotel. Race determine old first feel it.",  
+            "addressLocality": "Challenge poor far middle possible join page. Even source attorney dinner protect return science. Together me knowledge agree security.",  
+            "addressRegion": "New to voice adult summer yet. Method environment issue.",  
+            "addressCountry": "According huge whatever hotel next ever experience. Student partner bring unit economic bed usually.",  
+            "postalCode": "Difference factor thus key program pop",  
+            "postOfficeBoxNumber": "Them drug news but seven detail physical.",  
+            "streetNr": "However station rest seek. Change thing financial. Than listen base. Should return person.",  
+            "district": "Sound effect quickly bar chance TV. Hair then I."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Free resource though information tough economy center. Return space statement just stock market."  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.sensor.radiation.uvb"  
+        ]  
+    },  
+    "measurement": {  
+        "type": "Number",  
+        "value": 454.5  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Very write already source stock small whom"  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.baseline",  
+            "oic.if.s"  
+        ]  
+    },  
+    "type": "UVBRadiation"  
 }  
 ```  
 </details>  
@@ -222,41 +571,51 @@ UVBRadiation:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:UVBRadiation:id:RUFN:84434026",  
-    "dateCreated": "1979-02-01T21:38:01Z",  
-    "dateModified": "1988-11-04T08:50:06Z",  
-    "source": "Shake business seem why state until. Memory western we which back technology speech health. Push performance scene information radio total college.",  
-    "name": "Turn program teach heavy son. Bad bank yeah. All security water indicate teach.",  
-    "alternateName": "American theory gas other. Down where tend benefit position model friend use. Democrat director air each teach audience. Democratic painting center former.",  
-    "description": "College color amount individual job quality. Employee region modern wear look short employee. Red strong song each activity conference.",  
-    "dataProvider": "Loss return food life she blue here throw. Major Democrat sister husband street kind. Sport white station difference movie population in help.",  
+    "id": "urn:ngsi-ld:UVBRadiation:id:DAAT:22565561",  
+    "dateCreated": "2006-10-26T08:41:06Z",  
+    "dateModified": "1987-04-06T20:33:21Z",  
+    "source": "World foreign open miss share. Sea push determine leave me down. Mean trip yeah against goal.",  
+    "name": "Pretty dog out edge everything. Way instead trial western quickly sea easy establish.",  
+    "alternateName": "Light girl thought land myself probably step.",  
+    "description": "Among first material professor live quickly important. Son m",  
+    "dataProvider": "Manage up lose draw security item season wide. Environment buy between model effect trade once. Also camera party couple window son.",  
     "owner": [  
-        "urn:ngsi-ld:UVBRadiation:items:OYEQ:78049778",  
-        "urn:ngsi-ld:UVBRadiation:items:ETDC:16806735"  
+        "urn:ngsi-ld:UVBRadiation:items:HBDC:38129595",  
+        "urn:ngsi-ld:UVBRadiation:items:IGYI:62683417"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:UVBRadiation:items:MKPQ:73465414",  
-        "urn:ngsi-ld:UVBRadiation:items:KUHU:28508572"  
+        "urn:ngsi-ld:UVBRadiation:items:TLXJ:54023310"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            -89.050093,  
-            -69.422876  
+            -77.4075855,  
+            16.228071  
         ]  
     },  
     "address": {  
-        "streetAddress": "Shake assume apply space indeed window. Ok shoulder responsibility person us increase. As check attention book.",  
-        "addressLocality": "No spend sport owner. Interesting relate form yet score market.",  
-        "addressRegion": "Back which pick war.",  
-        "addressCountry": "Agent bar high single. Risk piece chance likely often television. Might science catch indicate save. Officer wrong become part move assume.",  
-        "postalCode": "Carry move position goal. Plan whom past current alone environmental. Two better suddenly bed gun challenge.",  
-        "postOfficeBoxNumber": "Author be federal long paper product. Enjoy catch cell company even act yard. Kitchen field visit true determine imagine yes."  
+        "streetAddress": "Site budget call remember hotel. Race determine old first feel it.",  
+        "addressLocality": "Challenge poor far middle possible join page. Even source attorney dinner protect return science. Together me knowledge agree security.",  
+        "addressRegion": "New to voice adult summer yet. Method environment issue.",  
+        "addressCountry": "According huge whatever hotel next ever experience. Student partner bring unit economic bed usually.",  
+        "postalCode": "Difference factor thus key program pop",  
+        "postOfficeBoxNumber": "Them drug news but seven detail physical.",  
+        "streetNr": "However station rest seek. Change thing financial. Than listen base. Should return person.",  
+        "district": "Sound effect quickly bar chance TV. Hair then I."  
     },  
-    "areaServed": "Which boy see no audience sound. Everything but air reach sing perhaps red. Agree set performance practice tend send.",  
+    "areaServed": "Free resource though information tough economy center. Return space statement just stock market.",  
+    "rt": [  
+        "oic.r.sensor.radiation.uvb"  
+    ],  
+    "measurement": 454.5,  
+    "n": "Very write already source stock small whom",  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.s"  
+    ],  
+    "type": "UVBRadiation",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -266,82 +625,105 @@ UVBRadiation:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:UVBRadiation:id:LKJP:50948325",  
+    "id": "urn:ngsi-ld:UVBRadiation:id:DAAT:22565561",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1995-01-18T23:27:40Z"  
+            "@value": "2006-10-26T08:41:06Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1984-12-17T17:18:49Z"  
+            "@value": "1987-04-06T20:33:21Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Here start blood health prove challenge perform. Idea another watch the possible."  
+        "value": "World foreign open miss share. Sea push determine leave me down. Mean trip yeah against goal."  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Trip we view. Current now same continue one moment social."  
+        "value": "Pretty dog out edge everything. Way instead trial western quickly sea easy establish."  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Particularly make evening production. Reduce major above institution image. Left law every include protect several."  
+        "value": "Light girl thought land myself probably step."  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Call stock economic. Leave pick stuff usually."  
+        "value": "Among first material professor live quickly important. Son m"  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Region author doctor might. Stop financial realize admit picture father find."  
+        "value": "Manage up lose draw security item season wide. Environment buy between model effect trade once. Also camera party couple window son."  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:UVBRadiation:items:LBQI:53524326",  
-            "urn:ngsi-ld:UVBRadiation:items:HXII:53345543"  
+            "urn:ngsi-ld:UVBRadiation:items:HBDC:38129595",  
+            "urn:ngsi-ld:UVBRadiation:items:IGYI:62683417"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:UVBRadiation:items:YIHE:58894024"  
+            "urn:ngsi-ld:UVBRadiation:items:TLXJ:54023310"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                52.194558,  
-                6.329331  
+                -77.4075855,  
+                16.228071  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Study accept according teach effect it able be. It crime south chance together floor.",  
-            "addressLocality": "Force recently particular these remain find want. Moment relate send structure moment final business.",  
-            "addressRegion": "Sign approach phone picture. Treat lay her hold both.",  
-            "addressCountry": "From east phone bar adult chance. Discussion his leg today each wear amount.",  
-            "postalCode": "True cost consider. Rest long pull treatment improve.",  
-            "postOfficeBoxNumber": "Point perform team care technology. Away break training then. Born beautiful trouble single fall respond."  
+            "streetAddress": "Site budget call remember hotel. Race determine old first feel it.",  
+            "addressLocality": "Challenge poor far middle possible join page. Even source attorney dinner protect return science. Together me knowledge agree security.",  
+            "addressRegion": "New to voice adult summer yet. Method environment issue.",  
+            "addressCountry": "According huge whatever hotel next ever experience. Student partner bring unit economic bed usually.",  
+            "postalCode": "Difference factor thus key program pop",  
+            "postOfficeBoxNumber": "Them drug news but seven detail physical.",  
+            "streetNr": "However station rest seek. Change thing financial. Than listen base. Should return person.",  
+            "district": "Sound effect quickly bar chance TV. Hair then I."  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "East share system increase interesting. Friend box positive report concern wait."  
+        "value": "Free resource though information tough economy center. Return space statement just stock market."  
     },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.sensor.radiation.uvb"  
+        ]  
+    },  
+    "measurement": {  
+        "type": "Property",  
+        "value": 454.5  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Very write already source stock small whom"  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline",  
+            "oic.if.s"  
+        ]  
+    },  
+    "type": "UVBRadiation",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
