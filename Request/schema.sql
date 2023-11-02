@@ -1,3 +1,3 @@
 /* (Beta) Export of data model Request of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE Request_type AS ENUM ('Request');
-CREATE TABLE Request (bus INTEGER, src INTEGER, type Request_type);
+CREATE TABLE Request (address JSON, alternateName TEXT, areaServed TEXT, bus NUMERIC, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, location JSON, name TEXT, owner JSON, seeAlso JSON, source TEXT, src NUMERIC, type Request_type);
