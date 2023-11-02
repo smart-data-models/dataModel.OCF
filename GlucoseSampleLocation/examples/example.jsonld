@@ -1,38 +1,47 @@
 {
-    "id": "urn:ngsi-ld:GlucoseSampleLocation:id:HMRW:59656193",
-    "dateCreated": "1988-11-05T02:31:54Z",
-    "dateModified": "1981-06-04T04:33:39Z",
-    "source": "Decision despite soon. Will decision another avoid wall believe. Pick serious hotel arrive like indeed.",
-    "name": "Place fire majority theory today senior according.",
-    "alternateName": "Peace pick consumer quality issue claim. Policy arm yard structure two. Similar girl who bring before inside trial.",
-    "description": "Five spring player play go record modern. White yard trouble last chance. Some others as just kitchen do hospital.",
-    "dataProvider": "Clearly establish draw action land end. Method look cause human partner whatever.",
+    "id": "urn:ngsi-ld:GlucoseSampleLocation:id:FULW:15305695",
+    "dateCreated": "2021-05-16T17:35:47Z",
+    "dateModified": "2004-02-19T01:49:02Z",
+    "source": "Country move fall better hotel. Head letter here day recent three. Leave product response happen person hair help skill. Old early why sort story open news toward.",
+    "name": "Same land administration camera administration. Case nation care store ac",
+    "alternateName": "Sense set area truth. Certain audience life",
+    "description": "General consumer thought again memory return.",
+    "dataProvider": "Stock view book message weight though technology. ",
     "owner": [
-        "urn:ngsi-ld:GlucoseSampleLocation:items:GTSG:35648681",
-        "urn:ngsi-ld:GlucoseSampleLocation:items:BRNL:14310622"
+        "urn:ngsi-ld:GlucoseSampleLocation:items:DKBV:55759974",
+        "urn:ngsi-ld:GlucoseSampleLocation:items:YXLQ:06862334"
     ],
     "seeAlso": [
-        "urn:ngsi-ld:GlucoseSampleLocation:items:COGG:05616250",
-        "urn:ngsi-ld:GlucoseSampleLocation:items:AJHV:00001057"
+        "urn:ngsi-ld:GlucoseSampleLocation:items:CYPW:78190486"
     ],
     "location": {
         "type": "Point",
         "coordinates": [
-            -5.802658,
-            118.84406
+            9.4263155,
+            172.558196
         ]
     },
     "address": {
-        "streetAddress": "Everything hour piece nothing simply effort. Business various entire. Bad member trade meet. Bring fall shoulder several help.",
-        "addressLocality": "Total deep region buy. Arm kind stay government possible.",
-        "addressRegion": "Source ready ten wind.",
-        "addressCountry": "Bring western here. Child physical like able truth. Kind alone major thought agreement worker.",
-        "postalCode": "Nothing father task analysis again blood. Friend threat society art wait. Middle theory customer field.",
-        "postOfficeBoxNumber": "Before not second anyone example point."
+        "streetAddress": "Mrs remember how catch. Church policy reduce new world learn government. When service cons",
+        "addressLocality": "Commercial either partner building week adult l",
+        "addressRegion": "State so",
+        "addressCountry": "Decide their defense next hair. Someone official course community white close suddenly hope. Challenge lo",
+        "postalCode": "With intern",
+        "postOfficeBoxNumber": "Continue join fact authority. Business cause past. Mention computer decade nearly if coach crime. Drop manage write same rest",
+        "streetNr": "Camera imagine ",
+        "district": "Do hot century south process. Kid likely include great north."
     },
-    "areaServed": "Young similar late with what. Respond quality fact green assume movement. White president discover garden here.",
+    "areaServed": "Pretty today home page month. Sometimes compare high a war often. C",
+    "rt": [
+        "oic.r.glucose.samplelocation"
+    ],
+    "samplelocation": "ctrlsolution",
+    "n": "Wind behind finish opportunity",
+    "if": [
+        "oic.if.baseline"
+    ],
+    "type": "GlucoseSampleLocation",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
