@@ -1,75 +1,105 @@
 {
-  "id": {
-    "type": "string",
-    "value": "urn:ngsi-ld:mediaSource:id:ECVX:00681141"
-  },
-  "dateCreated": {
-    "format": "date-time",
-    "type": "string",
-    "value": "2015-02-09T15:38:55Z"
-  },
-  "dateModified": {
-    "format": "date-time",
-    "type": "string",
-    "value": "1972-09-25T13:56:03Z"
-  },
-  "source": {
-    "type": "string",
-    "value": "Win off Congress thought order. Risk near listen spend. Successful reduce tell better."
-  },
-  "name": {
-    "type": "string",
-    "value": "Radio six seem floor player. Discussion many kind. Series this senior fact feel."
-  },
-  "alternateName": {
-    "type": "string",
-    "value": "Bring star somebody. Pm best exist begin television room professor."
-  },
-  "description": {
-    "type": "string",
-    "value": "Him range long their three yeah value. Turn sound he store industry realize. Quality become agreement black consumer site. Clear clear and investment those factor."
-  },
-  "dataProvider": {
-    "type": "string",
-    "value": "Program spring again ten. Kind agency prevent give bad term."
-  },
-  "owner": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:mediaSource:items:JUXL:73007356",
-      "urn:ngsi-ld:mediaSource:items:ATGQ:91911106"
-    ]
-  },
-  "seeAlso": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:mediaSource:items:OPHS:82281803",
-      "urn:ngsi-ld:mediaSource:items:XSND:63263592"
-    ]
-  },
-  "location": {
-    "type": "object",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        55.704287,
-        165.220634
-      ]
-    }
-  },
-  "address": {
-    "type": "object",
-    "value": {
-      "streetAddress": "Though carry country. Open amount budget.",
-      "addressLocality": "Senior front computer commercial operation. Seat tonight method accept.",
-      "addressRegion": "Series know spring activity. Now direction piece keep fight nature let.",
-      "addressCountry": "Include on attack budget. Station practice perform during last may realize. Marriage else walk beat computer.",
-      "postalCode": "Possible beat real performance. Every fill way bar participant. Thought relationship message admit especially.",
-      "postOfficeBoxNumber": "Everything town individual fine along pressure. Sell share can ahead real military. Bank rich forward candidate season believe politics. Pm economic enjoy political kid three."
-    }
-  },
-  "areaServed": {
-    "type": "string",
-    "value": "Teach financial resource return wife mean. Civil road vote summer state offer lead. Base while bad product back different throughout."
-  }
+    "id": "urn:ngsi-ld:mediaSource:id:LJAC:84422647",
+    "dateCreated": {
+        "type": "DateTime",
+        "value": "2002-02-03T14:43:20Z"
+    },
+    "dateModified": {
+        "type": "DateTime",
+        "value": "2006-02-11T14:03:31Z"
+    },
+    "source": {
+        "type": "Text",
+        "value": "Institution research bad "
+    },
+    "name": {
+        "type": "Text",
+        "value": "Probably yours"
+    },
+    "alternateName": {
+        "type": "Text",
+        "value": "Coach have school join hour. Nothing affect d"
+    },
+    "description": {
+        "type": "Text",
+        "value": "Knowledge large close new election within reduce. News eye majority."
+    },
+    "dataProvider": {
+        "type": "Text",
+        "value": "We morning easy although rich. Under save have southern one most. Know why ball attention responsibility da"
+    },
+    "owner": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:mediaSource:items:TLEL:58779962",
+            "urn:ngsi-ld:mediaSource:items:REDI:91656547"
+        ]
+    },
+    "seeAlso": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:mediaSource:items:AJGB:26743605"
+        ]
+    },
+    "location": {
+        "type": "geo:json",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                67.4900935,
+                -69.768952
+            ]
+        }
+    },
+    "address": {
+        "type": "StructuredValue",
+        "value": {
+            "streetAddress": "Summer fi",
+            "addressLocality": "Network movie successful join carry result amount. Often mouth throw wear hit car technolo",
+            "addressRegion": "Crime both beat leader today issue personal area. Stock heart industry allow cover price within. Seat reduce attention language push image each six.",
+            "addressCountry": "Animal them involve others home sense after. Occur page minute.",
+            "postalCode": "Discuss sure avoid pretty building season. Available health them throw present. Even blue young city leave anything.",
+            "postOfficeBoxNumber": "May which writer need sell follow. Reason first thank represent drive. Parent consumer north adult list standard head.",
+            "streetNr": "Fall seat evening beautiful image. Other where suggest right break. Whether check mission draw go lose.",
+            "district": "Turn its part Republican resource baby memory. Table meet serve shoulder. Box film film meet drug stuff."
+        }
+    },
+    "areaServed": {
+        "type": "Text",
+        "value": "Act camera human. Onto tax vote on. Keep suggest mother war able college door."
+    },
+    "rt": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.r.mediasource"
+        ]
+    },
+    "status": {
+        "type": "Boolean",
+        "value": true
+    },
+    "sourceType": {
+        "type": "Text",
+        "value": "audioPlusVideo"
+    },
+    "sourceName": {
+        "type": "Text",
+        "value": "Finally during country operation task time attorney those. Reality account future never manager."
+    },
+    "sourceNumber": {
+        "type": "Text",
+        "value": "Help government clearly alone."
+    },
+    "n": {
+        "type": "Text",
+        "value": "Doctor meet though. Adult voice large oil communit"
+    },
+    "if": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.if.baseline",
+            "oic.if.a"
+        ]
+    },
+    "type": "mediaSource"
 }
