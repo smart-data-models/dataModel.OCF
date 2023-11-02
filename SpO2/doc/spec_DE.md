@@ -15,7 +15,15 @@
 ## Liste der Eigenschaften  
 
 <sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
-- `if[array]`: Der von dieser Ressource unterstützte OCF-Schnittstellensatz.  - `n[string]`: Freundlicher Name der Ressource  - `perfusion[number]`: Diese Eigenschaft beschreibt das Verhältnis von AC zu DC von PPG.  - `perfusion_precision[number]`: Bei der Exposition bietet der Wert in "precision" eine +/- Toleranz gegenüber den Eigenschaften in der Ressource. Wenn also eine Eigenschaft auf einen Wert AKTUALISIERT wird und diese Eigenschaft dann ZURÜCKGEZOGEN wird, ist der ZURÜCKGEZOGENE Wert gültig, wenn er im Bereich des festgelegten Wertes +/- Präzision liegt  - `perfusion_range[array]`: Der gültige Bereich für die Eigenschaft in der Ressource in Form einer Zahl. Der erste Wert im Array ist der Mindestwert, der zweite Wert im Array ist der Höchstwert.  - `perfusion_step[number]`: Schrittwert über den definierten Bereich eine ganze Zahl, wenn der Bereich eine Zahl ist.  Dies ist die Schrittweite für gültige Werte innerhalb des Bereichs; wenn also der Bereich 0.0..10.0 und der Schritt 2.5 ist, sind die Werte 0.0,2.5,5.0,7.5,10.0 gültig.  - `rt[array]`: Der Ressourcentyp.  - `spo2[number]`: Diese Eigenschaft beschreibt die Schätzung des Sauerstoffsättigungsniveaus in Prozent.  - `spo2_precision[number]`: Bei der Exposition bietet der Wert in "precision" eine +/- Toleranz gegenüber den Eigenschaften in der Ressource. Wenn also eine Eigenschaft auf einen Wert AKTUALISIERT wird und diese Eigenschaft dann ZURÜCKGEZOGEN wird, ist der ZURÜCKGEZOGENE Wert gültig, wenn er im Bereich des festgelegten Wertes +/- Präzision liegt  - `spo2_range[array]`: Der gültige Bereich für die Eigenschaft in der Ressource in Form einer Zahl. Der erste Wert im Array ist der Mindestwert, der zweite Wert im Array ist der Höchstwert.  - `spo2_step[number]`: Schrittwert über den definierten Bereich eine ganze Zahl, wenn der Bereich eine Zahl ist.  Dies ist die Schrittweite für gültige Werte innerhalb des Bereichs; wenn also der Bereich 0.0..10.0 und der Schritt 2.5 ist, sind die Werte 0.0,2.5,5.0,7.5,10.0 gültig.  - `type[string]`: NGSI-Entitätstyp. Es muss SpO2 sein  <!-- /30-PropertiesList -->  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Das Land. Zum Beispiel, Spanien  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: Die Ortschaft, in der sich die Adresse befindet, und die in der Region liegt  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: Die Region, in der sich der Ort befindet, und die auf dem Land liegt  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Ein Bezirk ist eine Art von Verwaltungseinheit, die in einigen Ländern von der lokalen Regierung verwaltet wird.    
+	- `postOfficeBoxNumber[string]`: Die Postfachnummer für Postfachadressen. Zum Beispiel, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Die Postleitzahl. Zum Beispiel, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: Die Straßenanschrift  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Nummer zur Identifizierung eines bestimmten Grundstücks an einer öffentlichen Straße    
+- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit  - `dateCreated[date-time]`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen  - `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben  - `description[string]`: Eine Beschreibung dieses Artikels  - `id[*]`: Eindeutiger Bezeichner der Entität  - `if[array]`: Der von dieser Ressource unterstützte OCF-Schnittstellensatz.  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `n[string]`: Freundlicher Name der Ressource  - `name[string]`: Der Name dieses Artikels  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `perfusion[number]`: Diese Eigenschaft beschreibt das Verhältnis von AC zu DC von PPG.  - `perfusion_precision[number]`: Bei der Exposition bietet der Wert in "precision" eine +/- Toleranz gegenüber den Eigenschaften in der Ressource. Wenn also eine Eigenschaft auf einen Wert AKTUALISIERT wird und diese Eigenschaft dann ZURÜCKGEZOGEN wird, ist der ZURÜCKGEZOGENE Wert gültig, wenn er im Bereich des festgelegten Wertes +/- Präzision liegt  - `perfusion_range[array]`: Der gültige Bereich für die Eigenschaft in der Ressource in Form einer Zahl. Der erste Wert im Array ist der Mindestwert, der zweite Wert im Array ist der Höchstwert.  - `perfusion_step[number]`: Schrittwert über den definierten Bereich eine ganze Zahl, wenn der Bereich eine Zahl ist.  Dies ist die Schrittweite für gültige Werte innerhalb des Bereichs; wenn also der Bereich 0.0..10.0 und der Schritt 2.5 ist, sind die Werte 0.0,2.5,5.0,7.5,10.0 gültig.  - `rt[array]`: Der Ressourcentyp.  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `spo2[number]`: Diese Eigenschaft beschreibt die Schätzung des Sauerstoffsättigungsniveaus in Prozent.  - `spo2_precision[number]`: Bei der Exposition bietet der Wert in "precision" eine +/- Toleranz gegenüber den Eigenschaften in der Ressource. Wenn also eine Eigenschaft auf einen Wert AKTUALISIERT wird und diese Eigenschaft dann ZURÜCKGEZOGEN wird, ist der ZURÜCKGEZOGENE Wert gültig, wenn er im Bereich des festgelegten Wertes +/- Präzision liegt  - `spo2_range[array]`: Der gültige Bereich für die Eigenschaft in der Ressource in Form einer Zahl. Der erste Wert im Array ist der Mindestwert, der zweite Wert im Array ist der Höchstwert.  - `spo2_step[number]`: Schrittwert über den definierten Bereich eine ganze Zahl, wenn der Bereich eine Zahl ist.  Dies ist die Schrittweite für gültige Werte innerhalb des Bereichs; wenn also der Bereich 0.0..10.0 und der Schritt 2.5 ist, sind die Werte 0.0,2.5,5.0,7.5,10.0 gültig.  - `type[string]`: NGSI-Entitätstyp. Es muss SpO2 sein  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -32,6 +40,109 @@
 SpO2:    
   description: Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the Properties associated with a person's blood oxygen saturation level.  The spo2 and perfusion Properties are read-only value that is provided by the server.  When range (from 'oic.r.baseresource') is omitted the default is 0 to +MAXFLOAT.    
   properties:    
+    address:    
+      description: The mailing address    
+      properties:    
+        addressCountry:    
+          description: 'The country. For example, Spain'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
+        addressLocality:    
+          description: 'The locality in which the street address is, and which is in the region'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
+        addressRegion:    
+          description: 'The region in which the locality is, and which is in the country'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        postOfficeBoxNumber:    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
+        postalCode:    
+          description: 'The postal code. For example, 24004'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
+        streetAddress:    
+          description: The street address    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      type: object    
+      x-ngsi:    
+        model: https://schema.org/address    
+        type: Property    
+    alternateName:    
+      description: An alternative name for this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    areaServed:    
+      description: The geographic area where a service or offered item is provided    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    dataProvider:    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateCreated:    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateModified:    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    description:    
+      description: A description of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    id:    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
+      x-ngsi:    
+        type: Property    
     if:    
       description: The OCF Interface set supported by this Resource.    
       items:    
@@ -45,11 +156,203 @@ SpO2:
       uniqueItems: true    
       x-ngsi:    
         type: Property    
+    location:    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+      oneOf:    
+        - description: Geojson reference to the item. Point    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                type: number    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - Point    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Point    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - LineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON LineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 4    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - Polygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Polygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPoint    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPoint    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiLineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiLineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    items:    
+                      type: number    
+                    minItems: 2    
+                    type: array    
+                  minItems: 4    
+                  type: array    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPolygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPolygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+      x-ngsi:    
+        type: GeoProperty    
     n:    
       description: Friendly name of the Resource    
       maxLength: 64    
       readOnly: true    
       type: string    
+      x-ngsi:    
+        type: Property    
+    name:    
+      description: The name of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    owner:    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
+      items:    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
+      type: array    
       x-ngsi:    
         type: Property    
     perfusion:    
@@ -91,6 +394,23 @@ SpO2:
       readOnly: true    
       type: array    
       uniqueItems: true    
+      x-ngsi:    
+        type: Property    
+    seeAlso:    
+      description: list of uri pointing to additional resources about the item    
+      oneOf:    
+        - items:    
+            format: uri    
+            type: string    
+          minItems: 1    
+          type: array    
+        - format: uri    
+          type: string    
+      x-ngsi:    
+        type: Property    
+    source:    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
+      type: string    
       x-ngsi:    
         type: Property    
     spo2:    
@@ -152,38 +472,61 @@ SpO2:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:SpO2:id:UXVB:49250554",  
-  "dateCreated": "1979-10-18T15:29:13Z",  
-  "dateModified": "2012-12-25T02:07:10Z",  
-  "source": "No own particularly tough marriage west person. Perform country stay necessary best. Move to still less specific general quality clear. It report far over.",  
-  "name": "Exactly join represent. Board least develop.",  
-  "alternateName": "Form after speech think within hotel need effort. Commercial several threat officer paper have side. Sing believe commercial TV vote exactly for continue.",  
-  "description": "Form carry human action much age care future. Well make every recognize. State consumer might continue.",  
-  "dataProvider": "Gun cost leave once amount phone. Beyond save guess approach you big over. Small summer style very value candidate stay wait.",  
-  "owner": [  
-    "urn:ngsi-ld:SpO2:items:FOVM:74049734",  
-    "urn:ngsi-ld:SpO2:items:VNLZ:87274151"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:SpO2:items:EDDV:12327755",  
-    "urn:ngsi-ld:SpO2:items:PKWK:80687657"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -35.838291,  
-      27.47286  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Sell main that different. News ground include. Whose fear mouth table each issue.",  
-    "addressLocality": "Fall while back.",  
-    "addressRegion": "Affect down us new relate. Hold adult despite fear position red hair.",  
-    "addressCountry": "Necessary purpose base field imagine mention popular. Discover could fill two field. Policy energy option simply.",  
-    "postalCode": "Have your fear single food year. This coach whose total food. Tend call career wife.",  
-    "postOfficeBoxNumber": "Consider performance produce black group it instead. Organization after American similar appear."  
-  },  
-  "areaServed": "Traditional society technology little plant on ago. Audience heavy point expect security difficult general read. Participant everybody action Mrs middle enter agency."  
+    "id": "urn:ngsi-ld:SpO2:id:ZKYV:83346917",  
+    "dateCreated": "1984-01-01T13:11:29Z",  
+    "dateModified": "2010-07-22T14:24:24Z",  
+    "source": "Its play American determine say. Stop security so machine seek value lead. Suffer anything late such.",  
+    "name": "Physical number home radio. Executive wear impact. Tough they floor shake sea.",  
+    "alternateName": "Computer never different cup test wind body deal. Son four site professional. Bit night ever.",  
+    "description": "Energy yard close stock describe us. Hear it maybe return tell side better. Mrs begin our seek either impact.",  
+    "dataProvider": "Toward different assume voice soon role field. Sing term herself police around sing floor. Also behavior treat quality simple",  
+    "owner": [  
+        "urn:ngsi-ld:SpO2:items:QUMD:74880931",  
+        "urn:ngsi-ld:SpO2:items:HUFM:32764913"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:SpO2:items:DFZI:02093368"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            12.572857,  
+            164.962958  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Stock senior section even. Ahead Congress throughout sport could. Throughout pay will bu",  
+        "addressLocality": "Relate whole note maybe study. Become according page summer often smile. Member community feel.",  
+        "addressRegion": "Probably top major. Various new thing carry trouble interesting painting.",  
+        "addressCountry": "Happy song explain program us include throw. Live tough nor range design such break.",  
+        "postalCode": "Thank plan fly keep the",  
+        "postOfficeBoxNumber": "Various value organization son suddenly candidate. Star rest head position second decade time.",  
+        "streetNr": "Certain Mrs free develop know once citizen white. Toward all heart close information stand.",  
+        "district": "Together whet"  
+    },  
+    "areaServed": "Education something just final. Issue too any cut pay. Seven indeed memory since.",  
+    "spo2": 52.3,  
+    "perfusion": 332.7,  
+    "rt": [  
+        "oic.r.spo2"  
+    ],  
+    "n": "Industry alone bed various. Tend bar table always put wheth",  
+    "if": [  
+        "oic.if.s"  
+    ],  
+    "spo2_range": [  
+        766.0,  
+        412.2  
+    ],  
+    "perfusion_range": [  
+        918.2,  
+        174.9  
+    ],  
+    "spo2_step": 223.6,  
+    "perfusion_step": 323.8,  
+    "spo2_precision": 250.7,  
+    "perfusion_precision": 23.1,  
+    "type": "SpO2"  
 }  
 ```  
 </details>  
@@ -192,79 +535,130 @@ SpO2:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:SpO2:id:UXVB:49250554"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1979-10-18T15:29:13Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2012-12-25T02:07:10Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "No own particularly tough marriage west person. Perform country stay necessary best. Move to still less specific general quality clear. It report far over."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Exactly join represent. Board least develop."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Form after speech think within hotel need effort. Commercial several threat officer paper have side. Sing believe commercial TV vote exactly for continue."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Form carry human action much age care future. Well make every recognize. State consumer might continue."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Gun cost leave once amount phone. Beyond save guess approach you big over. Small summer style very value candidate stay wait."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:SpO2:items:FOVM:74049734",  
-      "urn:ngsi-ld:SpO2:items:VNLZ:87274151"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:SpO2:items:EDDV:12327755",  
-      "urn:ngsi-ld:SpO2:items:PKWK:80687657"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -35.838291,  
-        27.47286  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Sell main that different. News ground include. Whose fear mouth table each issue.",  
-      "addressLocality": "Fall while back.",  
-      "addressRegion": "Affect down us new relate. Hold adult despite fear position red hair.",  
-      "addressCountry": "Necessary purpose base field imagine mention popular. Discover could fill two field. Policy energy option simply.",  
-      "postalCode": "Have your fear single food year. This coach whose total food. Tend call career wife.",  
-      "postOfficeBoxNumber": "Consider performance produce black group it instead. Organization after American similar appear."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Traditional society technology little plant on ago. Audience heavy point expect security difficult general read. Participant everybody action Mrs middle enter agency."  
-  }  
+    "id": "urn:ngsi-ld:SpO2:id:ZKYV:83346917",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1984-01-01T13:11:29Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "2010-07-22T14:24:24Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Its play American determine say. Stop security so machine seek value lead. Suffer anything late such."  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Physical number home radio. Executive wear impact. Tough they floor shake sea."  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Computer never different cup test wind body deal. Son four site professional. Bit night ever."  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Energy yard close stock describe us. Hear it maybe return tell side better. Mrs begin our seek either impact."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Toward different assume voice soon role field. Sing term herself police around sing floor. Also behavior treat quality simple"  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:SpO2:items:QUMD:74880931",  
+            "urn:ngsi-ld:SpO2:items:HUFM:32764913"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:SpO2:items:DFZI:02093368"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                12.572857,  
+                164.962958  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Stock senior section even. Ahead Congress throughout sport could. Throughout pay will bu",  
+            "addressLocality": "Relate whole note maybe study. Become according page summer often smile. Member community feel.",  
+            "addressRegion": "Probably top major. Various new thing carry trouble interesting painting.",  
+            "addressCountry": "Happy song explain program us include throw. Live tough nor range design such break.",  
+            "postalCode": "Thank plan fly keep the",  
+            "postOfficeBoxNumber": "Various value organization son suddenly candidate. Star rest head position second decade time.",  
+            "streetNr": "Certain Mrs free develop know once citizen white. Toward all heart close information stand.",  
+            "district": "Together whet"  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Education something just final. Issue too any cut pay. Seven indeed memory since."  
+    },  
+    "spo2": {  
+        "type": "Number",  
+        "value": 52.3  
+    },  
+    "perfusion": {  
+        "type": "Number",  
+        "value": 332.7  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.spo2"  
+        ]  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Industry alone bed various. Tend bar table always put wheth"  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.s"  
+        ]  
+    },  
+    "spo2_range": {  
+        "type": "StructuredValue",  
+        "value": [  
+            766.0,  
+            412.2  
+        ]  
+    },  
+    "perfusion_range": {  
+        "type": "StructuredValue",  
+        "value": [  
+            918.2,  
+            174.9  
+        ]  
+    },  
+    "spo2_step": {  
+        "type": "Number",  
+        "value": 223.6  
+    },  
+    "perfusion_step": {  
+        "type": "Number",  
+        "value": 323.8  
+    },  
+    "spo2_precision": {  
+        "type": "Number",  
+        "value": 250.7  
+    },  
+    "perfusion_precision": {  
+        "type": "Number",  
+        "value": 23.1  
+    },  
+    "type": "SpO2"  
 }  
 ```  
 </details>  
@@ -273,41 +667,63 @@ SpO2:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:SpO2:id:UXVB:49250554",  
-    "dateCreated": "1979-10-18T15:29:13Z",  
-    "dateModified": "2012-12-25T02:07:10Z",  
-    "source": "No own particularly tough marriage west person. Perform country stay necessary best. Move to still less specific general quality clear. It report far over.",  
-    "name": "Exactly join represent. Board least develop.",  
-    "alternateName": "Form after speech think within hotel need effort. Commercial several threat officer paper have side. Sing believe commercial TV vote exactly for continue.",  
-    "description": "Form carry human action much age care future. Well make every recognize. State consumer might continue.",  
-    "dataProvider": "Gun cost leave once amount phone. Beyond save guess approach you big over. Small summer style very value candidate stay wait.",  
+    "id": "urn:ngsi-ld:SpO2:id:ZKYV:83346917",  
+    "dateCreated": "1984-01-01T13:11:29Z",  
+    "dateModified": "2010-07-22T14:24:24Z",  
+    "source": "Its play American determine say. Stop security so machine seek value lead. Suffer anything late such.",  
+    "name": "Physical number home radio. Executive wear impact. Tough they floor shake sea.",  
+    "alternateName": "Computer never different cup test wind body deal. Son four site professional. Bit night ever.",  
+    "description": "Energy yard close stock describe us. Hear it maybe return tell side better. Mrs begin our seek either impact.",  
+    "dataProvider": "Toward different assume voice soon role field. Sing term herself police around sing floor. Also behavior treat quality simple",  
     "owner": [  
-        "urn:ngsi-ld:SpO2:items:FOVM:74049734",  
-        "urn:ngsi-ld:SpO2:items:VNLZ:87274151"  
+        "urn:ngsi-ld:SpO2:items:QUMD:74880931",  
+        "urn:ngsi-ld:SpO2:items:HUFM:32764913"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:SpO2:items:EDDV:12327755",  
-        "urn:ngsi-ld:SpO2:items:PKWK:80687657"  
+        "urn:ngsi-ld:SpO2:items:DFZI:02093368"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            -35.838291,  
-            27.47286  
+            12.572857,  
+            164.962958  
         ]  
     },  
     "address": {  
-        "streetAddress": "Sell main that different. News ground include. Whose fear mouth table each issue.",  
-        "addressLocality": "Fall while back.",  
-        "addressRegion": "Affect down us new relate. Hold adult despite fear position red hair.",  
-        "addressCountry": "Necessary purpose base field imagine mention popular. Discover could fill two field. Policy energy option simply.",  
-        "postalCode": "Have your fear single food year. This coach whose total food. Tend call career wife.",  
-        "postOfficeBoxNumber": "Consider performance produce black group it instead. Organization after American similar appear."  
+        "streetAddress": "Stock senior section even. Ahead Congress throughout sport could. Throughout pay will bu",  
+        "addressLocality": "Relate whole note maybe study. Become according page summer often smile. Member community feel.",  
+        "addressRegion": "Probably top major. Various new thing carry trouble interesting painting.",  
+        "addressCountry": "Happy song explain program us include throw. Live tough nor range design such break.",  
+        "postalCode": "Thank plan fly keep the",  
+        "postOfficeBoxNumber": "Various value organization son suddenly candidate. Star rest head position second decade time.",  
+        "streetNr": "Certain Mrs free develop know once citizen white. Toward all heart close information stand.",  
+        "district": "Together whet"  
     },  
-    "areaServed": "Traditional society technology little plant on ago. Audience heavy point expect security difficult general read. Participant everybody action Mrs middle enter agency.",  
+    "areaServed": "Education something just final. Issue too any cut pay. Seven indeed memory since.",  
+    "spo2": 52.3,  
+    "perfusion": 332.7,  
+    "rt": [  
+        "oic.r.spo2"  
+    ],  
+    "n": "Industry alone bed various. Tend bar table always put wheth",  
+    "if": [  
+        "oic.if.s"  
+    ],  
+    "spo2_range": [  
+        766.0,  
+        412.2  
+    ],  
+    "perfusion_range": [  
+        918.2,  
+        174.9  
+    ],  
+    "spo2_step": 223.6,  
+    "perfusion_step": 323.8,  
+    "spo2_precision": 250.7,  
+    "perfusion_precision": 23.1,  
+    "type": "SpO2",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -317,82 +733,138 @@ SpO2:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:SpO2:id:MEUN:62331652",  
+    "id": "urn:ngsi-ld:SpO2:id:ZKYV:83346917",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1972-09-30T16:17:09Z"  
+            "@value": "1984-01-01T13:11:29Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2011-03-03T21:22:48Z"  
+            "@value": "2010-07-22T14:24:24Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Task various station public conference per necessary. Animal wrong like capital analysis. Benefit agree draw bill. Perhaps tax test plant boy bar last perform."  
+        "value": "Its play American determine say. Stop security so machine seek value lead. Suffer anything late such."  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Bed join another now theory young whose important. Worry education everything six shoulder force."  
+        "value": "Physical number home radio. Executive wear impact. Tough they floor shake sea."  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Father cell election company hair black. Wife marriage assume care experience article guess."  
+        "value": "Computer never different cup test wind body deal. Son four site professional. Bit night ever."  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Population show soldier. Music apply foreign. People policy most left. Appear computer cut deep allow carry."  
+        "value": "Energy yard close stock describe us. Hear it maybe return tell side better. Mrs begin our seek either impact."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Including these beautiful goal move role serve. Might herself fill create throw. Both free campaign station describe."  
+        "value": "Toward different assume voice soon role field. Sing term herself police around sing floor. Also behavior treat quality simple"  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:SpO2:items:HUNW:33943179",  
-            "urn:ngsi-ld:SpO2:items:ZQCA:74870697"  
+            "urn:ngsi-ld:SpO2:items:QUMD:74880931",  
+            "urn:ngsi-ld:SpO2:items:HUFM:32764913"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:SpO2:items:VCRV:48239423"  
+            "urn:ngsi-ld:SpO2:items:DFZI:02093368"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                -70.0546185,  
-                -23.401117  
+                12.572857,  
+                164.962958  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Case discussion game mother performance yes. Face skin whose television lawyer where. Ok store lay prove wish within.",  
-            "addressLocality": "Hold possible free nor. Paper have structure church. Star fly hot improve material nation appear.",  
-            "addressRegion": "Development debate tough charge information either miss. Speech right drug wife behind themselves. Despite inside raise choose.",  
-            "addressCountry": "Top sometimes above base month put. Team media culture economy yes next. Represent imagine drive task career.",  
-            "postalCode": "Class sister present brother democratic life. Different pick action else he where trial. Program cost foot outside after end.",  
-            "postOfficeBoxNumber": "Until establish be clear such."  
+            "streetAddress": "Stock senior section even. Ahead Congress throughout sport could. Throughout pay will bu",  
+            "addressLocality": "Relate whole note maybe study. Become according page summer often smile. Member community feel.",  
+            "addressRegion": "Probably top major. Various new thing carry trouble interesting painting.",  
+            "addressCountry": "Happy song explain program us include throw. Live tough nor range design such break.",  
+            "postalCode": "Thank plan fly keep the",  
+            "postOfficeBoxNumber": "Various value organization son suddenly candidate. Star rest head position second decade time.",  
+            "streetNr": "Certain Mrs free develop know once citizen white. Toward all heart close information stand.",  
+            "district": "Together whet"  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "About have without main save off."  
+        "value": "Education something just final. Issue too any cut pay. Seven indeed memory since."  
     },  
+    "spo2": {  
+        "type": "Property",  
+        "value": 52.3  
+    },  
+    "perfusion": {  
+        "type": "Property",  
+        "value": 332.7  
+    },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.spo2"  
+        ]  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Industry alone bed various. Tend bar table always put wheth"  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.s"  
+        ]  
+    },  
+    "spo2_range": {  
+        "type": "Property",  
+        "value": [  
+            766.0,  
+            412.2  
+        ]  
+    },  
+    "perfusion_range": {  
+        "type": "Property",  
+        "value": [  
+            918.2,  
+            174.9  
+        ]  
+    },  
+    "spo2_step": {  
+        "type": "Property",  
+        "value": 223.6  
+    },  
+    "perfusion_step": {  
+        "type": "Property",  
+        "value": 323.8  
+    },  
+    "spo2_precision": {  
+        "type": "Property",  
+        "value": 250.7  
+    },  
+    "perfusion_precision": {  
+        "type": "Property",  
+        "value": 23.1  
+    },  
+    "type": "SpO2",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
