@@ -1,88 +1,90 @@
 {
-    "id": "urn:ngsi-ld:ContinuousGlucoseMeterStatus:id:GEYM:33511226",
+    "id": "urn:ngsi-ld:ContinuousGlucoseMeterStatus:id:KHCJ:93310505",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1970-01-31T04:25:22Z"
+            "@value": "1984-10-26T16:58:05Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2013-03-06T21:48:48Z"
+            "@value": "2007-09-13T05:46:42Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Son picture nice floor staff. Remember rest rather certainly education light trip."
+        "value": "Notice reflect edge against. My woman during response economic these. Civil we green enough allow pass."
     },
     "name": {
         "type": "Property",
-        "value": "Appear present citizen plan town light. Success sign near hot. Receive visit energy interview look total production."
+        "value": "Modern ago sure statement sense pressure this. Those family interesting how environment."
     },
     "alternateName": {
         "type": "Property",
-        "value": "Institution exist class. Tax Mrs news gas join especially easy. Fight about religious price school."
+        "value": "Decide student like boa"
     },
     "description": {
         "type": "Property",
-        "value": "Enough local particularly capital show simply. Perform management type director. Statement central across bit class give."
+        "value": "Voice TV almost scene."
     },
     "dataProvider": {
         "type": "Property",
-        "value": "Benefit able affect director upon sense happen. Yard born term set task cause between sure."
+        "value": "Mrs late would. Have there air until. Really everybody necessary increase specific"
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:CWSI:41736479",
-            "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:EEOO:71067269"
+            "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:TROU:92706769",
+            "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:JEKY:64511844"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:ARZK:43891632"
+            "urn:ngsi-ld:ContinuousGlucoseMeterStatus:items:PKWO:52183801"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                -29.772074,
-                114.010154
+                43.241175,
+                -134.642422
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "Can model hour give inside strong husband. Theory question evening step fast create. Eye remember industry than.",
-            "addressLocality": "History long story I must. Bag campaign begin factor art prevent civil.",
-            "addressRegion": "Process unit however north yet.",
-            "addressCountry": "Law but live measure. Staff man mention buy billion develop these green. Most attention forget evidence idea show.",
-            "postalCode": "Cell charge direction here them sure involve. Both hotel create challenge follow federal second.",
-            "postOfficeBoxNumber": "She magazine loss themselves. And fear operation ready should democratic. Reflect serious during term decision heavy which."
+            "streetAddress": "Idea sort gun another white. Current concern exist structure. Sign role fund cost meeting have travel so.",
+            "addressLocality": "Not treatment push will beat value. Seek across suddenly example sister almost security. Cause guess listen individual mother build wife.",
+            "addressRegion": "Threat",
+            "addressCountry": "If wonder rate want inside send rich.",
+            "postalCode": "Heart Republican series ever thousand morning.",
+            "postOfficeBoxNumber": "Condition imagine follow check. Conference budget true claim deep. Whether soon husband as investment nearly.",
+            "streetNr": "End avoid safe ground traditional rise course. Receive news save low.",
+            "district": "Next quality teacher require data so. Old quality shake growth mention. Many project forget address artist sim"
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "Environment machine back central let deep race. Material cost yard like bank."
+        "value": "Next audience general whole clearly also star. This important rate land. Oil course from sing."
     },
     "cgmtype": {
         "type": "Property",
-        "value": "Capillary Whole blood"
+        "value": "Capillary Plasma"
     },
     "cgmstatus": {
         "type": "Property",
-        "value": "Name thousand great cell. Last action bed executive financial. Foot read environment film able trial could."
+        "value": "Reach task action anything benefit grow th"
     },
     "gtrend": {
         "type": "Property",
-        "value": 620.2
+        "value": 907.8
     },
     "malfunction": {
         "type": "Property",
@@ -96,7 +98,7 @@
     },
     "n": {
         "type": "Property",
-        "value": "Audience study meet today need international. Material Mrs plant part watch trip build professor. Protect your risk letter floor article nature."
+        "value": "Lead new trade special "
     },
     "if": {
         "type": "Property",
@@ -107,21 +109,20 @@
     "range": {
         "type": "Property",
         "value": [
-            263.0,
-            342.7
+            995.2,
+            139.8
         ]
     },
     "step": {
         "type": "Property",
-        "value": 563.4
+        "value": 772.1
     },
     "precision": {
         "type": "Property",
-        "value": 498.0
+        "value": 662.2
     },
     "type": "ContinuousGlucoseMeterStatus",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
