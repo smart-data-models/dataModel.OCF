@@ -1,79 +1,114 @@
 {
-    "id": "urn:ngsi-ld:ColourHS:id:VIED:72184359",
+    "id": "urn:ngsi-ld:ColourHS:id:AKJK:40127853",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1974-12-21T13:03:31Z"
+            "@value": "1993-08-24T03:01:43Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2010-08-25T07:04:37Z"
+            "@value": "2002-11-27T06:16:46Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Lot whole task use."
+        "value": "Wear prepare traditional a like indicate. Significant include whose future. Detail who likely business old."
     },
     "name": {
         "type": "Property",
-        "value": "Until drug young what way agency reality. Mission explain wrong moment here source. Since down unit policy price candidate start."
+        "value": "Point agent including beyond. Community body every visit but she. Speak when may maybe worry. Tell attack crime it s"
     },
     "alternateName": {
         "type": "Property",
-        "value": "Myself entire past face cup support behavior. Face such could character according send end."
+        "value": "Above they also environment analysis. Card throw trip get within red. Cell drug democratic."
     },
     "description": {
         "type": "Property",
-        "value": "Upon respond analysis fall mission mention miss a. None drug report tend future."
+        "value": "Land good law market put agent. Our any watch reach energ"
     },
     "dataProvider": {
         "type": "Property",
-        "value": "Sell anything later really major. Mention data partner."
+        "value": "Million organization possible expect mention cover. Treat painting with who."
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:ColourHS:items:DRUT:10402699",
-            "urn:ngsi-ld:ColourHS:items:XTXA:97530272"
+            "urn:ngsi-ld:ColourHS:items:ADWD:27178996",
+            "urn:ngsi-ld:ColourHS:items:JQMN:51128252"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:ColourHS:items:IQHE:71148899"
+            "urn:ngsi-ld:ColourHS:items:YQTT:85182548"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                -86.1604745,
-                -18.960842
+                -39.4098375,
+                -99.344663
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "Walk land try relate peace hour quality. Although fall star treat career still.",
-            "addressLocality": "Letter fill billion could either every. Stage throughout position brother sell. Talk material at everybody why yet.",
-            "addressRegion": "Dream top hold let day strong. Also road ask radio. Middle partner middle administration past.",
-            "addressCountry": "Purpose every traditional pass low sense choice.",
-            "postalCode": "Until their benefit green set find. Message place member player picture task condition. Best across green figure born.",
-            "postOfficeBoxNumber": "Wrong up customer stop church goal. Heavy way sister admit between actually he."
+            "streetAddress": "Able stage Mr. If if every probably never. Start ",
+            "addressLocality": "Stop important generation research. Mr need itself power. Happy most color contain dinner s",
+            "addressRegion": "Class ev",
+            "addressCountry": "Sell child Mr his can range. Memory morning record. Suddenly too born environmental prepare account city official.",
+            "postalCode": "Case kid anyone discover white. Run trip rich approach. Tend at Democrat possible away life road.",
+            "postOfficeBoxNumber": "Say anything seem require. Model experience election player.",
+            "streetNr": "After same machine soldier life. Glass effect order foreign. Wind dream least yourself degree.",
+            "district": "Company early research offer meet animal sometimes. Former response house always of."
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "Spring never girl deep season. Floor media company election."
+        "value": "Morning no each thank image. Claim civil positive have summer. Close couple knowledge brother born."
     },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.colour.hs"
+        ]
+    },
+    "hue": {
+        "type": "Property",
+        "value": 311.1
+    },
+    "saturation": {
+        "type": "Property",
+        "value": 25247
+    },
+    "maximumsaturation": {
+        "type": "Property",
+        "value": 25247
+    },
+    "n": {
+        "type": "Property",
+        "value": "Else memory if. Whose group through despite cause. Sense p"
+    },
+    "precision": {
+        "type": "Property",
+        "value": 100.2
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.baseline",
+            "oic.if.a"
+        ]
+    },
+    "type": "ColourHS",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
