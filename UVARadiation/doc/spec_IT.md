@@ -15,7 +15,15 @@
 ## Elenco delle proprietà  
 
 <sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
-- `if[array]`: Il set di interfacce OCF supportato da questa risorsa.  - `measurement[number]`: Gli UVA misurati.  - `n[string]`: Nome amichevole della risorsa  - `rt[array]`: Il tipo di risorsa.  - `type[string]`: Tipo di entità NGSI. Deve essere UVARadiation  <!-- /30-PropertiesList -->  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Il paese. Ad esempio, la Spagna  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: La località in cui si trova l'indirizzo civico e che si trova nella regione  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: La regione in cui si trova la località, e che si trova nel paese  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Un distretto è un tipo di divisione amministrativa che, in alcuni paesi, è gestita dal governo locale.    
+	- `postOfficeBoxNumber[string]`: Il numero di casella postale per gli indirizzi di casella postale. Ad esempio, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Il codice postale. Ad esempio, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: L'indirizzo stradale  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Numero che identifica una proprietà specifica su una strada pubblica    
+- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata  - `dateCreated[date-time]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `if[array]`: Il set di interfacce OCF supportato da questa risorsa.  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `measurement[number]`: Gli UVA misurati.  - `n[string]`: Nome amichevole della risorsa  - `name[string]`: Il nome di questo elemento  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `rt[array]`: Il tipo di risorsa.  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `type[string]`: Tipo di entità NGSI. Deve essere UVARadiation  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Proprietà richieste  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -32,6 +40,109 @@
 UVARadiation:    
   description: Smart Data Models Program adaptation of the original IoTData data Models. This Resource specifies UV radiation measurement. The Property 'measurement' is the current measured UVA. The intensity of UV radiation is measured in the units of milliwatts per square centimeter (mW/cm2) which is energy per square centimeter received per second. UVA is measured between 315 and 400 nanometers in the electromagnetic spectrum.    
   properties:    
+    address:    
+      description: The mailing address    
+      properties:    
+        addressCountry:    
+          description: 'The country. For example, Spain'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
+        addressLocality:    
+          description: 'The locality in which the street address is, and which is in the region'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
+        addressRegion:    
+          description: 'The region in which the locality is, and which is in the country'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        postOfficeBoxNumber:    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
+        postalCode:    
+          description: 'The postal code. For example, 24004'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
+        streetAddress:    
+          description: The street address    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      type: object    
+      x-ngsi:    
+        model: https://schema.org/address    
+        type: Property    
+    alternateName:    
+      description: An alternative name for this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    areaServed:    
+      description: The geographic area where a service or offered item is provided    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    dataProvider:    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateCreated:    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateModified:    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    description:    
+      description: A description of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    id:    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
+      x-ngsi:    
+        type: Property    
     if:    
       description: The OCF Interface set supported by this Resource.    
       items:    
@@ -45,6 +156,171 @@ UVARadiation:
       uniqueItems: true    
       x-ngsi:    
         type: Property    
+    location:    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+      oneOf:    
+        - description: Geojson reference to the item. Point    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                type: number    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - Point    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Point    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - LineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON LineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 4    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - Polygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Polygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPoint    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPoint    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiLineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiLineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    items:    
+                      type: number    
+                    minItems: 2    
+                    type: array    
+                  minItems: 4    
+                  type: array    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPolygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPolygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+      x-ngsi:    
+        type: GeoProperty    
     measurement:    
       description: The measured UVA.    
       minimum: 0    
@@ -59,6 +335,33 @@ UVARadiation:
       type: string    
       x-ngsi:    
         type: Property    
+    name:    
+      description: The name of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    owner:    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
+      items:    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     rt:    
       description: The Resource Type.    
       items:    
@@ -70,6 +373,23 @@ UVARadiation:
       readOnly: true    
       type: array    
       uniqueItems: true    
+      x-ngsi:    
+        type: Property    
+    seeAlso:    
+      description: list of uri pointing to additional resources about the item    
+      oneOf:    
+        - items:    
+            format: uri    
+            type: string    
+          minItems: 1    
+          type: array    
+        - format: uri    
+          type: string    
+      x-ngsi:    
+        type: Property    
+    source:    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
+      type: string    
       x-ngsi:    
         type: Property    
     type:    
@@ -101,38 +421,49 @@ UVARadiation:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:UVARadiation:id:XLXB:19118181",  
-  "dateCreated": "1976-06-20T20:20:58Z",  
-  "dateModified": "1986-09-17T07:45:30Z",  
-  "source": "Out recognize head health him return. Open skill well factor social pay.",  
-  "name": "Mouth nation quite bring price administration. Relate end their part rate information. Pattern look recently let member. Perhaps thus perhaps force report value.",  
-  "alternateName": "Beat usually once us Mr soon. Cost record take moment particular participant.",  
-  "description": "Discussion during phone loss.",  
-  "dataProvider": "Education however exist close either hard seem.",  
-  "owner": [  
-    "urn:ngsi-ld:UVARadiation:items:YRGO:27251925",  
-    "urn:ngsi-ld:UVARadiation:items:VOMP:44723721"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:UVARadiation:items:JOIY:23173391",  
-    "urn:ngsi-ld:UVARadiation:items:OIHP:83028662"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      16.951078,  
-      -96.703778  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Majority man available side. Item ready individual time. Box month cover I than.",  
-    "addressLocality": "As produce writer strategy little green need. Only here heart leg.",  
-    "addressRegion": "Finally both much on evening along foreign. Product culture term shoulder career. Forget especially body past course executive push. Away chance friend information detail her.",  
-    "addressCountry": "Marriage by central sport kitchen politics. Term question run add door.",  
-    "postalCode": "Admit science prepare maybe well president season. Determine true high baby according three.",  
-    "postOfficeBoxNumber": "Eye gun beat possible service. Thank service law air. Worry specific claim girl machine future."  
-  },  
-  "areaServed": "Film really information land. Arm decade foreign phone. Avoid least once plan page."  
+    "id": "urn:ngsi-ld:UVARadiation:id:TOWY:13263480",  
+    "dateCreated": "1994-09-13T19:03:24Z",  
+    "dateModified": "1999-01-09T03:06:34Z",  
+    "source": "Best explain fine play late. Home writer election we mother all.",  
+    "name": "Practice since low expect tree compare messa",  
+    "alternateName": "Group give find. Standard trial two sit",  
+    "description": "Race model single name black. Forward act else everything production school age per. Small entire according similar food child. Visit read wonder source personal fast dark.",  
+    "dataProvider": "Road l",  
+    "owner": [  
+        "urn:ngsi-ld:UVARadiation:items:UCPL:14802457",  
+        "urn:ngsi-ld:UVARadiation:items:QLYI:61301922"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:UVARadiation:items:XQUJ:21897202"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -45.624785,  
+            1.262295  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Film single member detail sometime",  
+        "addressLocality": "Concern all forget half. Property recently return stage event finish shake. Set how task south.",  
+        "addressRegion": "Happy nature population. City receive contain you bring care.",  
+        "addressCountry": "You without top nor computer. Beat three word age standard American right.",  
+        "postalCode": "Fish good pass organization rich into nature suddenly. Same seven make may base put.",  
+        "postOfficeBoxNumber": "Capital beat single. Sell address system none thought identify rock walk. Decision through some onto.",  
+        "streetNr": "Month question detail idea from join admit. At laugh item beat amount off pass.",  
+        "district": "Whole word stage. Every cold walk within"  
+    },  
+    "areaServed": "None why else. Skill measure under season. Positive view radio well ground should. Government seven American red.",  
+    "rt": [  
+        "oic.r.sensor.radiation.uva"  
+    ],  
+    "measurement": 80.2,  
+    "n": "Show town everyt",  
+    "if": [  
+        "oic.if.s",  
+        "oic.if.baseline"  
+    ],  
+    "type": "UVARadiation"  
 }  
 ```  
 </details>  
@@ -141,79 +472,97 @@ UVARadiation:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:UVARadiation:id:XLXB:19118181"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1976-06-20T20:20:58Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1986-09-17T07:45:30Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Out recognize head health him return. Open skill well factor social pay."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Mouth nation quite bring price administration. Relate end their part rate information. Pattern look recently let member. Perhaps thus perhaps force report value."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Beat usually once us Mr soon. Cost record take moment particular participant."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Discussion during phone loss."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Education however exist close either hard seem."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:UVARadiation:items:YRGO:27251925",  
-      "urn:ngsi-ld:UVARadiation:items:VOMP:44723721"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:UVARadiation:items:JOIY:23173391",  
-      "urn:ngsi-ld:UVARadiation:items:OIHP:83028662"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        16.951078,  
-        -96.703778  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Majority man available side. Item ready individual time. Box month cover I than.",  
-      "addressLocality": "As produce writer strategy little green need. Only here heart leg.",  
-      "addressRegion": "Finally both much on evening along foreign. Product culture term shoulder career. Forget especially body past course executive push. Away chance friend information detail her.",  
-      "addressCountry": "Marriage by central sport kitchen politics. Term question run add door.",  
-      "postalCode": "Admit science prepare maybe well president season. Determine true high baby according three.",  
-      "postOfficeBoxNumber": "Eye gun beat possible service. Thank service law air. Worry specific claim girl machine future."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Film really information land. Arm decade foreign phone. Avoid least once plan page."  
-  }  
+    "id": "urn:ngsi-ld:UVARadiation:id:TOWY:13263480",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1994-09-13T19:03:24Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "1999-01-09T03:06:34Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Best explain fine play late. Home writer election we mother all."  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Practice since low expect tree compare messa"  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Group give find. Standard trial two sit"  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Race model single name black. Forward act else everything production school age per. Small entire according similar food child. Visit read wonder source personal fast dark."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Road l"  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:UVARadiation:items:UCPL:14802457",  
+            "urn:ngsi-ld:UVARadiation:items:QLYI:61301922"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:UVARadiation:items:XQUJ:21897202"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -45.624785,  
+                1.262295  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Film single member detail sometime",  
+            "addressLocality": "Concern all forget half. Property recently return stage event finish shake. Set how task south.",  
+            "addressRegion": "Happy nature population. City receive contain you bring care.",  
+            "addressCountry": "You without top nor computer. Beat three word age standard American right.",  
+            "postalCode": "Fish good pass organization rich into nature suddenly. Same seven make may base put.",  
+            "postOfficeBoxNumber": "Capital beat single. Sell address system none thought identify rock walk. Decision through some onto.",  
+            "streetNr": "Month question detail idea from join admit. At laugh item beat amount off pass.",  
+            "district": "Whole word stage. Every cold walk within"  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "None why else. Skill measure under season. Positive view radio well ground should. Government seven American red."  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.sensor.radiation.uva"  
+        ]  
+    },  
+    "measurement": {  
+        "type": "Number",  
+        "value": 80.2  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Show town everyt"  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.s",  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "UVARadiation"  
 }  
 ```  
 </details>  
@@ -222,41 +571,51 @@ UVARadiation:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:UVARadiation:id:XLXB:19118181",  
-    "dateCreated": "1976-06-20T20:20:58Z",  
-    "dateModified": "1986-09-17T07:45:30Z",  
-    "source": "Out recognize head health him return. Open skill well factor social pay.",  
-    "name": "Mouth nation quite bring price administration. Relate end their part rate information. Pattern look recently let member. Perhaps thus perhaps force report value.",  
-    "alternateName": "Beat usually once us Mr soon. Cost record take moment particular participant.",  
-    "description": "Discussion during phone loss.",  
-    "dataProvider": "Education however exist close either hard seem.",  
+    "id": "urn:ngsi-ld:UVARadiation:id:TOWY:13263480",  
+    "dateCreated": "1994-09-13T19:03:24Z",  
+    "dateModified": "1999-01-09T03:06:34Z",  
+    "source": "Best explain fine play late. Home writer election we mother all.",  
+    "name": "Practice since low expect tree compare messa",  
+    "alternateName": "Group give find. Standard trial two sit",  
+    "description": "Race model single name black. Forward act else everything production school age per. Small entire according similar food child. Visit read wonder source personal fast dark.",  
+    "dataProvider": "Road l",  
     "owner": [  
-        "urn:ngsi-ld:UVARadiation:items:YRGO:27251925",  
-        "urn:ngsi-ld:UVARadiation:items:VOMP:44723721"  
+        "urn:ngsi-ld:UVARadiation:items:UCPL:14802457",  
+        "urn:ngsi-ld:UVARadiation:items:QLYI:61301922"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:UVARadiation:items:JOIY:23173391",  
-        "urn:ngsi-ld:UVARadiation:items:OIHP:83028662"  
+        "urn:ngsi-ld:UVARadiation:items:XQUJ:21897202"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            16.951078,  
-            -96.703778  
+            -45.624785,  
+            1.262295  
         ]  
     },  
     "address": {  
-        "streetAddress": "Majority man available side. Item ready individual time. Box month cover I than.",  
-        "addressLocality": "As produce writer strategy little green need. Only here heart leg.",  
-        "addressRegion": "Finally both much on evening along foreign. Product culture term shoulder career. Forget especially body past course executive push. Away chance friend information detail her.",  
-        "addressCountry": "Marriage by central sport kitchen politics. Term question run add door.",  
-        "postalCode": "Admit science prepare maybe well president season. Determine true high baby according three.",  
-        "postOfficeBoxNumber": "Eye gun beat possible service. Thank service law air. Worry specific claim girl machine future."  
+        "streetAddress": "Film single member detail sometime",  
+        "addressLocality": "Concern all forget half. Property recently return stage event finish shake. Set how task south.",  
+        "addressRegion": "Happy nature population. City receive contain you bring care.",  
+        "addressCountry": "You without top nor computer. Beat three word age standard American right.",  
+        "postalCode": "Fish good pass organization rich into nature suddenly. Same seven make may base put.",  
+        "postOfficeBoxNumber": "Capital beat single. Sell address system none thought identify rock walk. Decision through some onto.",  
+        "streetNr": "Month question detail idea from join admit. At laugh item beat amount off pass.",  
+        "district": "Whole word stage. Every cold walk within"  
     },  
-    "areaServed": "Film really information land. Arm decade foreign phone. Avoid least once plan page.",  
+    "areaServed": "None why else. Skill measure under season. Positive view radio well ground should. Government seven American red.",  
+    "rt": [  
+        "oic.r.sensor.radiation.uva"  
+    ],  
+    "measurement": 80.2,  
+    "n": "Show town everyt",  
+    "if": [  
+        "oic.if.s",  
+        "oic.if.baseline"  
+    ],  
+    "type": "UVARadiation",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -266,82 +625,105 @@ UVARadiation:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:UVARadiation:id:KQAD:81292509",  
+    "id": "urn:ngsi-ld:UVARadiation:id:TOWY:13263480",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1992-01-21T04:38:55Z"  
+            "@value": "1994-09-13T19:03:24Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1996-10-01T07:58:59Z"  
+            "@value": "1999-01-09T03:06:34Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Yard generation knowledge data. Onto policy yet bag especially can into. Sea live sea this. Always test carry experience thank thing dream."  
+        "value": "Best explain fine play late. Home writer election we mother all."  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Area financial civil Republican lay. Much stage either onto newspaper."  
+        "value": "Practice since low expect tree compare messa"  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "School heavy plant reveal cell. Art cut each evening. Simply could cultural physical low."  
+        "value": "Group give find. Standard trial two sit"  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Turn buy material discussion. News against participant seven fly. Stand not see."  
+        "value": "Race model single name black. Forward act else everything production school age per. Small entire according similar food child. Visit read wonder source personal fast dark."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Ready else position scene level positive. Drop debate answer above decide key program. Seven stand practice rock down space scientist form."  
+        "value": "Road l"  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:UVARadiation:items:XKZW:26791641",  
-            "urn:ngsi-ld:UVARadiation:items:GGFG:22456376"  
+            "urn:ngsi-ld:UVARadiation:items:UCPL:14802457",  
+            "urn:ngsi-ld:UVARadiation:items:QLYI:61301922"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:UVARadiation:items:UMFI:73942232"  
+            "urn:ngsi-ld:UVARadiation:items:XQUJ:21897202"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                87.5524365,  
-                -1.506489  
+                -45.624785,  
+                1.262295  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Dream score human head yet good bit. World agent knowledge them law call peace. Great after art lay.",  
-            "addressLocality": "Cold goal support around. Admit first gas teach memory. War sort take indicate return.",  
-            "addressRegion": "Recent company usually maybe middle short serve. Television many plan need. Throw paper once lawyer mother interview.",  
-            "addressCountry": "Performance foot various bed evening design region. Decision base the. Value father picture ever type common wear.",  
-            "postalCode": "Say ground commercial impact about news. Science financial cultural much.",  
-            "postOfficeBoxNumber": "System appear account particularly marriage my available. Shoulder ever customer test base account anything."  
+            "streetAddress": "Film single member detail sometime",  
+            "addressLocality": "Concern all forget half. Property recently return stage event finish shake. Set how task south.",  
+            "addressRegion": "Happy nature population. City receive contain you bring care.",  
+            "addressCountry": "You without top nor computer. Beat three word age standard American right.",  
+            "postalCode": "Fish good pass organization rich into nature suddenly. Same seven make may base put.",  
+            "postOfficeBoxNumber": "Capital beat single. Sell address system none thought identify rock walk. Decision through some onto.",  
+            "streetNr": "Month question detail idea from join admit. At laugh item beat amount off pass.",  
+            "district": "Whole word stage. Every cold walk within"  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Threat effect experience central. Speak least vote information purpose move. Instead necessary hundred couple sell."  
+        "value": "None why else. Skill measure under season. Positive view radio well ground should. Government seven American red."  
     },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.sensor.radiation.uva"  
+        ]  
+    },  
+    "measurement": {  
+        "type": "Property",  
+        "value": 80.2  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Show town everyt"  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.s",  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "UVARadiation",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
