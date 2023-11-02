@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: The post office box number for PO box addresses. For example, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: The postal code. For example, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: The street address  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Number identifying a specific property on a public street    
 - `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity  - `dateCreated[date-time]`: Entity creation timestamp. This will usually be allocated by the storage platform  - `dateModified[date-time]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform  - `description[string]`: A description of this item  - `dimmingSetting[number]`: The current dimming value  - `id[*]`: Unique identifier of the entity  - `if[array]`: The OCF Interface set supported by this Resource  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n[string]`: Friendly name of the Resource  - `name[string]`: The name of this item  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `range[array]`: The valid range for the Property in the Resource as an integer. The first value in the array is the minimum value, the second value in the array is the maximum value  - `rt[array]`: The Resource Type  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object  - `step[number]`: Step value across the defined range when the range is an integer.  This is the increment for valid values across the range; so if range is 0..10 and step is 2 then valid values are 0,2,4,6,8,10  - `type[string]`: NGSI entity type. It has to be Dimming  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Required properties  
@@ -435,60 +436,54 @@ Dimming:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Dimming:id:FQDB:16398581",  
-  "dateCreated": "2013-03-14T23:32:57Z",  
-  "dateModified": "2000-04-30T06:54:11Z",  
-  "source": "Southern act artist figure body. Someone write name performance network talk dog also.",  
-  "name": "Focus finish apply many far few. Because different onto material sometimes. Work wife little agree.",  
-  "alternateName": "New soldier apply personal. Particularly goal help individual accept seat.",  
-  "description": "Well single natural near rather that country. Language social buy manage officer.",  
-  "dataProvider": "Break everybody group include. Then name key television. Beyond tend surface eat last herself interesting.",  
-  "owner": [  
-    "urn:ngsi-ld:Dimming:items:UYRH:03063472",  
-    "urn:ngsi-ld:Dimming:items:MLEW:62413875"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Dimming:items:HSCK:11633956",  
-    "urn:ngsi-ld:Dimming:items:PAOU:39584686"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      75.8030785,  
-      -21.050609  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Study plant while camera. Support each specific travel.",  
-    "addressLocality": "After interview value. Officer accept power language summer. Data site soon act cost enjoy.",  
-    "addressRegion": "See shoulder clear agree. Rate stop often teacher big economy.",  
-    "addressCountry": "Place bank money performance. Big director and force Congress. Rich paper like trouble morning read. Daughter onto spring peace end.",  
-    "postalCode": "Question animal oil leader air mention. Will lose Mr. Control long increase statement.",  
-    "postOfficeBoxNumber": "Article go skin charge. Up would few region turn scientist respond."  
-  },  
-  "areaServed": "Best whether force in military. Season woman major month.",  
-  "rt": [  
-    "oic.r.light.dimming",  
-    "oic.r.light.dimming"  
-  ],  
-  "dimmingSetting": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "n": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair.",  
-  "range": [  
-    864,  
-    864  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "if": [  
-    "oic.if.a",  
-    "oic.if.baseline"  
-  ],  
-  "type": "Dimming"  
+    "id": "urn:ngsi-ld:Dimming:id:ZYZJ:17424858",  
+    "dateCreated": "1980-07-17T05:44:38Z",  
+    "dateModified": "2017-05-07T02:48:36Z",  
+    "source": "Child stage whom grow their whatever. Right play notice.",  
+    "name": "Still it exist can. Collection above hope Republican prove improve individual not. M",  
+    "alternateName": "Discover onto need purpose into year.",  
+    "description": "Long try late hear bad. Hour player reveal painting western.",  
+    "dataProvider": "Team recognize management American star. First whose generation respond. Serve above country news method.",  
+    "owner": [  
+        "urn:ngsi-ld:Dimming:items:HHUM:48141835",  
+        "urn:ngsi-ld:Dimming:items:DUDE:05074023"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Dimming:items:RLSZ:23337963"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -47.4269135,  
+            76.238651  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Visit under past after reality. Grow last weight know task air environmental letter.",  
+        "addressLocality": "Course space boy middle owner threat. Magazine peace young arrive piece dark fire.",  
+        "addressRegion": "Development guy around like. Force past few put pay which. Show show notice u",  
+        "addressCountry": "Former area international TV. Maintain author fire bag.",  
+        "postalCode": "Should network modern air summer off group. Special politics",  
+        "postOfficeBoxNumber": "During explain network. Any design strong health. Employee important soon arrive between score truth.",  
+        "streetNr": "National factor leave create throughout mouth agree. Member",  
+        "district": "Approach worker approach anyone."  
+    },  
+    "areaServed": "Sometimes ahead born military. Seek against never. His out others agency traditional near success.",  
+    "rt": [  
+        "oic.r.light.dimming"  
+    ],  
+    "dimmingSetting": 864,  
+    "n": "American whole magazine truth stop whose. On t",  
+    "range": [  
+        864,  
+        864  
+    ],  
+    "step": 864,  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.a"  
+    ],  
+    "type": "Dimming"  
 }  
 ```  
 </details>  
@@ -497,122 +492,108 @@ Dimming:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:Dimming:id:FQDB:16398581"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2013-03-14T23:32:57Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2000-04-30T06:54:11Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Southern act artist figure body. Someone write name performance network talk dog also."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Focus finish apply many far few. Because different onto material sometimes. Work wife little agree."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "New soldier apply personal. Particularly goal help individual accept seat."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Well single natural near rather that country. Language social buy manage officer."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Break everybody group include. Then name key television. Beyond tend surface eat last herself interesting."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Dimming:items:UYRH:03063472",  
-      "urn:ngsi-ld:Dimming:items:MLEW:62413875"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Dimming:items:HSCK:11633956",  
-      "urn:ngsi-ld:Dimming:items:PAOU:39584686"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        75.8030785,  
-        -21.050609  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Study plant while camera. Support each specific travel.",  
-      "addressLocality": "After interview value. Officer accept power language summer. Data site soon act cost enjoy.",  
-      "addressRegion": "See shoulder clear agree. Rate stop often teacher big economy.",  
-      "addressCountry": "Place bank money performance. Big director and force Congress. Rich paper like trouble morning read. Daughter onto spring peace end.",  
-      "postalCode": "Question animal oil leader air mention. Will lose Mr. Control long increase statement.",  
-      "postOfficeBoxNumber": "Article go skin charge. Up would few region turn scientist respond."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Best whether force in military. Season woman major month."  
-  },  
-  "rt": {  
-    "type": "array",  
-    "value": [  
-      "oic.r.light.dimming",  
-      "oic.r.light.dimming"  
-    ]  
-  },  
-  "dimmingSetting": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 864  
-    }  
-  },  
-  "n": {  
-    "type": "string",  
-    "value": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair."  
-  },  
-  "range": {  
-    "type": "array",  
-    "value": [  
-      864,  
-      864  
-    ]  
-  },  
-  "step": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 864  
-    }  
-  },  
-  "if": {  
-    "type": "array",  
-    "value": [  
-      "oic.if.a",  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "type": {  
-    "type": "string",  
-    "value": "Dimming"  
-  }  
+    "id": "urn:ngsi-ld:Dimming:id:ZYZJ:17424858",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1980-07-17T05:44:38Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "2017-05-07T02:48:36Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Child stage whom grow their whatever. Right play notice."  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Still it exist can. Collection above hope Republican prove improve individual not. M"  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Discover onto need purpose into year."  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Long try late hear bad. Hour player reveal painting western."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Team recognize management American star. First whose generation respond. Serve above country news method."  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Dimming:items:HHUM:48141835",  
+            "urn:ngsi-ld:Dimming:items:DUDE:05074023"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Dimming:items:RLSZ:23337963"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -47.4269135,  
+                76.238651  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Visit under past after reality. Grow last weight know task air environmental letter.",  
+            "addressLocality": "Course space boy middle owner threat. Magazine peace young arrive piece dark fire.",  
+            "addressRegion": "Development guy around like. Force past few put pay which. Show show notice u",  
+            "addressCountry": "Former area international TV. Maintain author fire bag.",  
+            "postalCode": "Should network modern air summer off group. Special politics",  
+            "postOfficeBoxNumber": "During explain network. Any design strong health. Employee important soon arrive between score truth.",  
+            "streetNr": "National factor leave create throughout mouth agree. Member",  
+            "district": "Approach worker approach anyone."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Sometimes ahead born military. Seek against never. His out others agency traditional near success."  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.light.dimming"  
+        ]  
+    },  
+    "dimmingSetting": {  
+        "type": "Number",  
+        "value": 864  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "American whole magazine truth stop whose. On t"  
+    },  
+    "range": {  
+        "type": "StructuredValue",  
+        "value": [  
+            864,  
+            864  
+        ]  
+    },  
+    "step": {  
+        "type": "Number",  
+        "value": 864  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.baseline",  
+            "oic.if.a"  
+        ]  
+    },  
+    "type": "Dimming"  
 }  
 ```  
 </details>  
@@ -621,63 +602,56 @@ Dimming:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Dimming:id:FQDB:16398581",  
-    "dateCreated": "2013-03-14T23:32:57Z",  
-    "dateModified": "2000-04-30T06:54:11Z",  
-    "source": "Southern act artist figure body. Someone write name performance network talk dog also.",  
-    "name": "Focus finish apply many far few. Because different onto material sometimes. Work wife little agree.",  
-    "alternateName": "New soldier apply personal. Particularly goal help individual accept seat.",  
-    "description": "Well single natural near rather that country. Language social buy manage officer.",  
-    "dataProvider": "Break everybody group include. Then name key television. Beyond tend surface eat last herself interesting.",  
+    "id": "urn:ngsi-ld:Dimming:id:ZYZJ:17424858",  
+    "dateCreated": "1980-07-17T05:44:38Z",  
+    "dateModified": "2017-05-07T02:48:36Z",  
+    "source": "Child stage whom grow their whatever. Right play notice.",  
+    "name": "Still it exist can. Collection above hope Republican prove improve individual not. M",  
+    "alternateName": "Discover onto need purpose into year.",  
+    "description": "Long try late hear bad. Hour player reveal painting western.",  
+    "dataProvider": "Team recognize management American star. First whose generation respond. Serve above country news method.",  
     "owner": [  
-        "urn:ngsi-ld:Dimming:items:UYRH:03063472",  
-        "urn:ngsi-ld:Dimming:items:MLEW:62413875"  
+        "urn:ngsi-ld:Dimming:items:HHUM:48141835",  
+        "urn:ngsi-ld:Dimming:items:DUDE:05074023"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:Dimming:items:HSCK:11633956",  
-        "urn:ngsi-ld:Dimming:items:PAOU:39584686"  
+        "urn:ngsi-ld:Dimming:items:RLSZ:23337963"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            75.8030785,  
-            -21.050609  
+            -47.4269135,  
+            76.238651  
         ]  
     },  
     "address": {  
-        "streetAddress": "Study plant while camera. Support each specific travel.",  
-        "addressLocality": "After interview value. Officer accept power language summer. Data site soon act cost enjoy.",  
-        "addressRegion": "See shoulder clear agree. Rate stop often teacher big economy.",  
-        "addressCountry": "Place bank money performance. Big director and force Congress. Rich paper like trouble morning read. Daughter onto spring peace end.",  
-        "postalCode": "Question animal oil leader air mention. Will lose Mr. Control long increase statement.",  
-        "postOfficeBoxNumber": "Article go skin charge. Up would few region turn scientist respond."  
+        "streetAddress": "Visit under past after reality. Grow last weight know task air environmental letter.",  
+        "addressLocality": "Course space boy middle owner threat. Magazine peace young arrive piece dark fire.",  
+        "addressRegion": "Development guy around like. Force past few put pay which. Show show notice u",  
+        "addressCountry": "Former area international TV. Maintain author fire bag.",  
+        "postalCode": "Should network modern air summer off group. Special politics",  
+        "postOfficeBoxNumber": "During explain network. Any design strong health. Employee important soon arrive between score truth.",  
+        "streetNr": "National factor leave create throughout mouth agree. Member",  
+        "district": "Approach worker approach anyone."  
     },  
-    "areaServed": "Best whether force in military. Season woman major month.",  
+    "areaServed": "Sometimes ahead born military. Seek against never. His out others agency traditional near success.",  
     "rt": [  
-        "oic.r.light.dimming",  
         "oic.r.light.dimming"  
     ],  
-    "dimmingSetting": {  
-        "type": "Property",  
-        "value": 864  
-    },  
-    "n": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair.",  
+    "dimmingSetting": 864,  
+    "n": "American whole magazine truth stop whose. On t",  
     "range": [  
         864,  
         864  
     ],  
-    "step": {  
-        "type": "Property",  
-        "value": 864  
-    },  
+    "step": 864,  
     "if": [  
-        "oic.if.a",  
-        "oic.if.baseline"  
+        "oic.if.baseline",  
+        "oic.if.a"  
     ],  
     "type": "Dimming",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -687,78 +661,80 @@ Dimming:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Dimming:id:GJEI:27775424",  
+    "id": "urn:ngsi-ld:Dimming:id:ZYZJ:17424858",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1997-03-04T04:45:11Z"  
+            "@value": "1980-07-17T05:44:38Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1978-08-08T07:33:27Z"  
+            "@value": "2017-05-07T02:48:36Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Morning member nation return section hand player. Social right him television and world. From unit best send cut current."  
+        "value": "Child stage whom grow their whatever. Right play notice."  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Fly institution owner every. Street research hair smile where parent media."  
+        "value": "Still it exist can. Collection above hope Republican prove improve individual not. M"  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Most unit not day head."  
+        "value": "Discover onto need purpose into year."  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Old million order even peace wait so. Reveal than part least fire race character."  
+        "value": "Long try late hear bad. Hour player reveal painting western."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Inside decade recognize choice. Green clear seem environment shake. Choice few responsibility action citizen."  
+        "value": "Team recognize management American star. First whose generation respond. Serve above country news method."  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Dimming:items:VZPC:69696442",  
-            "urn:ngsi-ld:Dimming:items:KAOV:68332845"  
+            "urn:ngsi-ld:Dimming:items:HHUM:48141835",  
+            "urn:ngsi-ld:Dimming:items:DUDE:05074023"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Dimming:items:WRHS:76719441"  
+            "urn:ngsi-ld:Dimming:items:RLSZ:23337963"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                45.639393,  
-                -103.289701  
+                -47.4269135,  
+                76.238651  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Within fight civil join American leader perform. Far writer rich raise north.",  
-            "addressLocality": "Similar treatment necessary back. Prevent above on. In trade perhaps time almost myself world. Newspaper safe must.",  
-            "addressRegion": "Economy opportunity although hour become recognize. Media list crime fine quite spend serve.",  
-            "addressCountry": "Able front including. Evidence maintain identify front travel attack.",  
-            "postalCode": "Yeah far reach indicate goal security ten prevent. Positive foot successful system list respond what.",  
-            "postOfficeBoxNumber": "Carry trip on born. Movie right happen them speech see almost."  
+            "streetAddress": "Visit under past after reality. Grow last weight know task air environmental letter.",  
+            "addressLocality": "Course space boy middle owner threat. Magazine peace young arrive piece dark fire.",  
+            "addressRegion": "Development guy around like. Force past few put pay which. Show show notice u",  
+            "addressCountry": "Former area international TV. Maintain author fire bag.",  
+            "postalCode": "Should network modern air summer off group. Special politics",  
+            "postOfficeBoxNumber": "During explain network. Any design strong health. Employee important soon arrive between score truth.",  
+            "streetNr": "National factor leave create throughout mouth agree. Member",  
+            "district": "Approach worker approach anyone."  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Relate class another production check buy sister life. Blood including life senior until represent. Series ability fund ask interview."  
+        "value": "Sometimes ahead born military. Seek against never. His out others agency traditional near success."  
     },  
     "rt": {  
         "type": "Property",  
@@ -768,22 +744,22 @@ Dimming:
     },  
     "dimmingSetting": {  
         "type": "Property",  
-        "value": 80  
+        "value": 864  
     },  
     "n": {  
         "type": "Property",  
-        "value": "Pressure imagine forget hand model summer. Gas use record water."  
+        "value": "American whole magazine truth stop whose. On t"  
     },  
     "range": {  
         "type": "Property",  
         "value": [  
-            740,  
-            905  
+            864,  
+            864  
         ]  
     },  
     "step": {  
         "type": "Property",  
-        "value": 916  
+        "value": 864  
     },  
     "if": {  
         "type": "Property",  
@@ -794,8 +770,7 @@ Dimming:
     },  
     "type": "Dimming",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
