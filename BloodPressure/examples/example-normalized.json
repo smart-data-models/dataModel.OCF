@@ -1,143 +1,119 @@
 {
-  "id": {
-    "type": "string",
-    "value": "urn:ngsi-ld:BloodPressure:id:FWRY:98906666"
-  },
-  "dateCreated": {
-    "format": "date-time",
-    "type": "string",
-    "value": "2011-02-21T13:43:08Z"
-  },
-  "dateModified": {
-    "format": "date-time",
-    "type": "string",
-    "value": "2007-05-05T04:35:49Z"
-  },
-  "source": {
-    "type": "string",
-    "value": "Development minute same clear painting audience. Single ready church low social message. Sister up receive travel perform physical material. Trade word world open then energy claim."
-  },
-  "name": {
-    "type": "string",
-    "value": "Again center newspaper catch democratic way. Throw age while professional hear five."
-  },
-  "alternateName": {
-    "type": "string",
-    "value": "School radio lose structure. Way marriage these answer."
-  },
-  "description": {
-    "type": "string",
-    "value": "Test career add behind explain media doctor near. Fire hope job people. Owner front enjoy material economic would development."
-  },
-  "dataProvider": {
-    "type": "string",
-    "value": "West game your style. Arrive now stock left against officer."
-  },
-  "owner": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:BloodPressure:items:YVEO:41144099",
-      "urn:ngsi-ld:BloodPressure:items:UWAN:50182026"
-    ]
-  },
-  "seeAlso": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:BloodPressure:items:ZADQ:82722565",
-      "urn:ngsi-ld:BloodPressure:items:KENT:89839721"
-    ]
-  },
-  "location": {
-    "type": "object",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        44.0087455,
-        -5.319791
-      ]
-    }
-  },
-  "address": {
-    "type": "object",
-    "value": {
-      "streetAddress": "Particular personal second. Create bad because light draw message year PM. Lay wrong even call.",
-      "addressLocality": "Land middle part war money when other fish. Part fact reflect fund.",
-      "addressRegion": "During leader matter important follow.",
-      "addressCountry": "Only message off what what soldier firm. Continue spend present offer leave run head.",
-      "postalCode": "Defense resource certain different. So local director region.",
-      "postOfficeBoxNumber": "Glass condition president indicate any. Rise might move give thought local huge."
-    }
-  },
-  "areaServed": {
-    "type": "string",
-    "value": "Herself world allow work. Point nice sort amount summer standard. Capital dinner parent power. Help election reach."
-  },
-  "rt": {
-    "type": "array",
-    "value": [
-      "oic.r.blood.pressure",
-      "oic.r.blood.pressure"
-    ]
-  },
-  "map": {
-    "type": "object",
-    "value": {
-      "type": "Property",
-      "value": 934.7
-    }
-  },
-  "units": {
-    "type": "string",
-    "value": "mmHg"
-  },
-  "systolic": {
-    "type": "object",
-    "value": {
-      "type": "Property",
-      "value": 907.5
-    }
-  },
-  "diastolic": {
-    "type": "object",
-    "value": {
-      "type": "Property",
-      "value": 687.6
-    }
-  },
-  "if": {
-    "type": "array",
-    "value": [
-      "oic.if.s",
-      "oic.if.baseline"
-    ]
-  },
-  "range": {
-    "type": "array",
-    "value": [
-      395.4,
-      494.6
-    ]
-  },
-  "step": {
-    "type": "object",
-    "value": {
-      "type": "Property",
-      "value": 948.3
-    }
-  },
-  "precision": {
-    "type": "object",
-    "value": {
-      "type": "Property",
-      "value": 716.2
-    }
-  },
-  "n": {
-    "type": "string",
-    "value": "Very human south price. Case sign fight data myself quickly relationship. Deep different set respond necessary share produce."
-  },
-  "type": {
-    "type": "string",
-    "value": "BloodPressure"
-  }
+    "id": "urn:ngsi-ld:BloodPressure:id:OYKZ:20915576",
+    "dateCreated": {
+        "type": "DateTime",
+        "value": "2005-10-31T03:17:09Z"
+    },
+    "dateModified": {
+        "type": "DateTime",
+        "value": "1974-09-20T19:41:22Z"
+    },
+    "source": {
+        "type": "Text",
+        "value": "Energy heavy commercial threat military thank. Front dream hour"
+    },
+    "name": {
+        "type": "Text",
+        "value": "To follow social degree experience. Someone ov"
+    },
+    "alternateName": {
+        "type": "Text",
+        "value": "Add save add some. Defense agent performance by teach risk."
+    },
+    "description": {
+        "type": "Text",
+        "value": "Artist share often good here. Debate position series energy however. Catch hundred day score."
+    },
+    "dataProvider": {
+        "type": "Text",
+        "value": "May find base health gas magazine event. Tree way include build town politics"
+    },
+    "owner": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:BloodPressure:items:BYTR:17522837",
+            "urn:ngsi-ld:BloodPressure:items:TABG:05694523"
+        ]
+    },
+    "seeAlso": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:BloodPressure:items:SOMO:80156322"
+        ]
+    },
+    "location": {
+        "type": "geo:json",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -34.40316,
+                -27.475728
+            ]
+        }
+    },
+    "address": {
+        "type": "StructuredValue",
+        "value": {
+            "streetAddress": "Effort guess more deal company. Past structure each conference",
+            "addressLocality": "Street physical computer art stuff.",
+            "addressRegion": "Never real operation fast",
+            "addressCountry": "Three south instead hand. Table general light so many quality. You open eas",
+            "postalCode": "Agent one eight final analysis model. Face all body school. Many shake right tonight ago hot season.",
+            "postOfficeBoxNumber": "Talk industry management show. Town stay treat future. National consider allow. Mind official as exist.",
+            "streetNr": "Smile institution hear born policy. Then artist camera actually. Want music threat nation series.",
+            "district": "While expert up tree pressure they approach study. Notice authority safe one operation left. Ground"
+        }
+    },
+    "areaServed": {
+        "type": "Text",
+        "value": "Then know whether argue "
+    },
+    "rt": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.r.blood.pressure"
+        ]
+    },
+    "map": {
+        "type": "Number",
+        "value": 592.7
+    },
+    "units": {
+        "type": "Text",
+        "value": "kPa"
+    },
+    "systolic": {
+        "type": "Number",
+        "value": 558.1
+    },
+    "diastolic": {
+        "type": "Number",
+        "value": 204.0
+    },
+    "if": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.if.s"
+        ]
+    },
+    "range": {
+        "type": "StructuredValue",
+        "value": [
+            94.2,
+            435.7
+        ]
+    },
+    "step": {
+        "type": "Number",
+        "value": 955.5
+    },
+    "precision": {
+        "type": "Number",
+        "value": 787.6
+    },
+    "n": {
+        "type": "Text",
+        "value": "Officer front best identify everybody create board. Available c"
+    },
+    "type": "BloodPressure"
 }
