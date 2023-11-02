@@ -443,64 +443,55 @@ Altimeter:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Altimeter:id:YYBR:30368709",  
-  "dateCreated": "1986-03-01T02:40:38Z",  
-  "dateModified": "2001-12-01T21:24:11Z",  
-  "source": "Itself almost analysis wide foot friend. Stage especially series long word animal. Eat generation draw clearly relate.",  
-  "name": "Whose else interest into hit. Cost reveal technology recognize. Sport concern north agreement success.",  
-  "alternateName": "At itself art open news commercial technology. Color set floor develop care begin. Anyone generation price. College he soon whether his child democratic.",  
-  "description": "Cut laugh western after. Senior hit look possible. Thought stop hand behind.",  
-  "dataProvider": "Mouth space ball bad. Receive father gas industry.",  
-  "owner": [  
-    "urn:ngsi-ld:Altimeter:items:LSEB:86391437",  
-    "urn:ngsi-ld:Altimeter:items:PZHR:42287265"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Altimeter:items:QQGX:27750120",  
-    "urn:ngsi-ld:Altimeter:items:UDQN:45142445"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      19.3085445,  
-      142.76353  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Today find there pull feeling garden. Nothing to manager watch. Accept two step value.",  
-    "addressLocality": "Base control beat cause national at out. Beautiful put increase less than its young. Charge role sit social help to even.",  
-    "addressRegion": "Example somebody through speech. Fund international use fly song live. Film road site all suffer necessary up.",  
-    "addressCountry": "Quickly at something true help. Program when keep reason boy main.",  
-    "postalCode": "Mouth order from degree later view. Suffer senior although modern wind be growth. Rate operation appear ten ability.",  
-    "postOfficeBoxNumber": "Quality question since for away young. Summer little nature plant store less figure. Bring response resource discover finish staff."  
-  },  
-  "areaServed": "Up easy miss treatment society might black approach. Gas public item choose church.",  
-  "rt": [  
-    "oic.r.altimeter",  
-    "oic.r.altimeter"  
-  ],  
-  "alt": {  
-    "type": "Property",  
-    "value": 956.8  
-  },  
-  "n": "Suddenly bank assume north often tell. Beat night contain fast fight game wish. We option know institution especially.",  
-  "precision": {  
-    "type": "Property",  
-    "value": 446.9  
-  },  
-  "range": [  
-    219.9,  
-    173.9  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 62.6  
-  },  
-  "if": [  
-    "oic.if.baseline",  
-    "oic.if.baseline"  
-  ],  
-  "type": "Altimeter"  
+    "id": "urn:ngsi-ld:Altimeter:id:TWDF:66254261",  
+    "dateCreated": "1998-06-13T14:49:06Z",  
+    "dateModified": "2023-02-09T05:06:53Z",  
+    "source": "Perhaps maybe class. Authority according wear develop become. Letter fall reduce woman f",  
+    "name": "Result build remain close natural history relate method. Later nature yeah party arrive. Dog something friend special.",  
+    "alternateName": "Care learn whole. Arrive employee meeting about still cold once view. Check leave space.",  
+    "description": "Court",  
+    "dataProvider": "Mean eight design put. Focus specific instead finally region two various. Whatever them seem let head program environment. Behind impro",  
+    "owner": [  
+        "urn:ngsi-ld:Altimeter:items:REST:24340353",  
+        "urn:ngsi-ld:Altimeter:items:JPXH:89305576"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Altimeter:items:YJDK:74161276"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            71.586845,  
+            113.083418  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Concern today writer song operation city issue. Challenge conference service price miss. National w",  
+        "addressLocality": "Age simply score character force. Thousand seem hope. Field fill great care.",  
+        "addressRegion": "Help like find size. Check explain reduce value. Across recently choice policy writer avoid.",  
+        "addressCountry": "Arrive east threat south wear budget. Tv program job unit blue sit.",  
+        "postalCode": "And until cultural quickly her pick Mrs. Medical fear light.",  
+        "postOfficeBoxNumber": "Story thousand employee either second customer oil. Space American avoid police work drug water physical. Resource husband Congress government follow economic dream.",  
+        "streetNr": "South worker history wish bot",  
+        "district": "Station want national quickly father thing. Whatever ago across do long clearly worker."  
+    },  
+    "areaServed": "Order nothing mention pull war stand. Store along feel without seem. Young candidate whether learn glass.",  
+    "rt": [  
+        "oic.r.altimeter"  
+    ],  
+    "alt": 821.8,  
+    "n": "Want among want model its whether visit",  
+    "precision": 735.5,  
+    "range": [  
+        826.2,  
+        991.8  
+    ],  
+    "step": 295.7,  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.s"  
+    ],  
+    "type": "Altimeter"  
 }  
 ```  
 </details>  
@@ -509,129 +500,112 @@ Altimeter:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:Altimeter:id:YYBR:30368709"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1986-03-01T02:40:38Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2001-12-01T21:24:11Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Itself almost analysis wide foot friend. Stage especially series long word animal. Eat generation draw clearly relate."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Whose else interest into hit. Cost reveal technology recognize. Sport concern north agreement success."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "At itself art open news commercial technology. Color set floor develop care begin. Anyone generation price. College he soon whether his child democratic."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Cut laugh western after. Senior hit look possible. Thought stop hand behind."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Mouth space ball bad. Receive father gas industry."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Altimeter:items:LSEB:86391437",  
-      "urn:ngsi-ld:Altimeter:items:PZHR:42287265"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Altimeter:items:QQGX:27750120",  
-      "urn:ngsi-ld:Altimeter:items:UDQN:45142445"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        19.3085445,  
-        142.76353  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Today find there pull feeling garden. Nothing to manager watch. Accept two step value.",  
-      "addressLocality": "Base control beat cause national at out. Beautiful put increase less than its young. Charge role sit social help to even.",  
-      "addressRegion": "Example somebody through speech. Fund international use fly song live. Film road site all suffer necessary up.",  
-      "addressCountry": "Quickly at something true help. Program when keep reason boy main.",  
-      "postalCode": "Mouth order from degree later view. Suffer senior although modern wind be growth. Rate operation appear ten ability.",  
-      "postOfficeBoxNumber": "Quality question since for away young. Summer little nature plant store less figure. Bring response resource discover finish staff."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Up easy miss treatment society might black approach. Gas public item choose church."  
-  },  
-  "rt": {  
-    "type": "array",  
-    "value": [  
-      "oic.r.altimeter",  
-      "oic.r.altimeter"  
-    ]  
-  },  
-  "alt": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 956.8  
-    }  
-  },  
-  "n": {  
-    "type": "string",  
-    "value": "Suddenly bank assume north often tell. Beat night contain fast fight game wish. We option know institution especially."  
-  },  
-  "precision": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 446.9  
-    }  
-  },  
-  "range": {  
-    "type": "array",  
-    "value": [  
-      219.9,  
-      173.9  
-    ]  
-  },  
-  "step": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 62.6  
-    }  
-  },  
-  "if": {  
-    "type": "array",  
-    "value": [  
-      "oic.if.baseline",  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "type": {  
-    "type": "string",  
-    "value": "Altimeter"  
-  }  
+    "id": "urn:ngsi-ld:Altimeter:id:TWDF:66254261",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1998-06-13T14:49:06Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "2023-02-09T05:06:53Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Perhaps maybe class. Authority according wear develop become. Letter fall reduce woman f"  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Result build remain close natural history relate method. Later nature yeah party arrive. Dog something friend special."  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Care learn whole. Arrive employee meeting about still cold once view. Check leave space."  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Court"  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Mean eight design put. Focus specific instead finally region two various. Whatever them seem let head program environment. Behind impro"  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Altimeter:items:REST:24340353",  
+            "urn:ngsi-ld:Altimeter:items:JPXH:89305576"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Altimeter:items:YJDK:74161276"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                71.586845,  
+                113.083418  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Concern today writer song operation city issue. Challenge conference service price miss. National w",  
+            "addressLocality": "Age simply score character force. Thousand seem hope. Field fill great care.",  
+            "addressRegion": "Help like find size. Check explain reduce value. Across recently choice policy writer avoid.",  
+            "addressCountry": "Arrive east threat south wear budget. Tv program job unit blue sit.",  
+            "postalCode": "And until cultural quickly her pick Mrs. Medical fear light.",  
+            "postOfficeBoxNumber": "Story thousand employee either second customer oil. Space American avoid police work drug water physical. Resource husband Congress government follow economic dream.",  
+            "streetNr": "South worker history wish bot",  
+            "district": "Station want national quickly father thing. Whatever ago across do long clearly worker."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Order nothing mention pull war stand. Store along feel without seem. Young candidate whether learn glass."  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.altimeter"  
+        ]  
+    },  
+    "alt": {  
+        "type": "Number",  
+        "value": 821.8  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Want among want model its whether visit"  
+    },  
+    "precision": {  
+        "type": "Number",  
+        "value": 735.5  
+    },  
+    "range": {  
+        "type": "StructuredValue",  
+        "value": [  
+            826.2,  
+            991.8  
+        ]  
+    },  
+    "step": {  
+        "type": "Number",  
+        "value": 295.7  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.baseline",  
+            "oic.if.s"  
+        ]  
+    },  
+    "type": "Altimeter"  
 }  
 ```  
 </details>  
@@ -640,67 +614,57 @@ Altimeter:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Altimeter:id:YYBR:30368709",  
-    "dateCreated": "1986-03-01T02:40:38Z",  
-    "dateModified": "2001-12-01T21:24:11Z",  
-    "source": "Itself almost analysis wide foot friend. Stage especially series long word animal. Eat generation draw clearly relate.",  
-    "name": "Whose else interest into hit. Cost reveal technology recognize. Sport concern north agreement success.",  
-    "alternateName": "At itself art open news commercial technology. Color set floor develop care begin. Anyone generation price. College he soon whether his child democratic.",  
-    "description": "Cut laugh western after. Senior hit look possible. Thought stop hand behind.",  
-    "dataProvider": "Mouth space ball bad. Receive father gas industry.",  
+    "id": "urn:ngsi-ld:Altimeter:id:TWDF:66254261",  
+    "dateCreated": "1998-06-13T14:49:06Z",  
+    "dateModified": "2023-02-09T05:06:53Z",  
+    "source": "Perhaps maybe class. Authority according wear develop become. Letter fall reduce woman f",  
+    "name": "Result build remain close natural history relate method. Later nature yeah party arrive. Dog something friend special.",  
+    "alternateName": "Care learn whole. Arrive employee meeting about still cold once view. Check leave space.",  
+    "description": "Court",  
+    "dataProvider": "Mean eight design put. Focus specific instead finally region two various. Whatever them seem let head program environment. Behind impro",  
     "owner": [  
-        "urn:ngsi-ld:Altimeter:items:LSEB:86391437",  
-        "urn:ngsi-ld:Altimeter:items:PZHR:42287265"  
+        "urn:ngsi-ld:Altimeter:items:REST:24340353",  
+        "urn:ngsi-ld:Altimeter:items:JPXH:89305576"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:Altimeter:items:QQGX:27750120",  
-        "urn:ngsi-ld:Altimeter:items:UDQN:45142445"  
+        "urn:ngsi-ld:Altimeter:items:YJDK:74161276"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            19.3085445,  
-            142.76353  
+            71.586845,  
+            113.083418  
         ]  
     },  
     "address": {  
-        "streetAddress": "Today find there pull feeling garden. Nothing to manager watch. Accept two step value.",  
-        "addressLocality": "Base control beat cause national at out. Beautiful put increase less than its young. Charge role sit social help to even.",  
-        "addressRegion": "Example somebody through speech. Fund international use fly song live. Film road site all suffer necessary up.",  
-        "addressCountry": "Quickly at something true help. Program when keep reason boy main.",  
-        "postalCode": "Mouth order from degree later view. Suffer senior although modern wind be growth. Rate operation appear ten ability.",  
-        "postOfficeBoxNumber": "Quality question since for away young. Summer little nature plant store less figure. Bring response resource discover finish staff."  
+        "streetAddress": "Concern today writer song operation city issue. Challenge conference service price miss. National w",  
+        "addressLocality": "Age simply score character force. Thousand seem hope. Field fill great care.",  
+        "addressRegion": "Help like find size. Check explain reduce value. Across recently choice policy writer avoid.",  
+        "addressCountry": "Arrive east threat south wear budget. Tv program job unit blue sit.",  
+        "postalCode": "And until cultural quickly her pick Mrs. Medical fear light.",  
+        "postOfficeBoxNumber": "Story thousand employee either second customer oil. Space American avoid police work drug water physical. Resource husband Congress government follow economic dream.",  
+        "streetNr": "South worker history wish bot",  
+        "district": "Station want national quickly father thing. Whatever ago across do long clearly worker."  
     },  
-    "areaServed": "Up easy miss treatment society might black approach. Gas public item choose church.",  
+    "areaServed": "Order nothing mention pull war stand. Store along feel without seem. Young candidate whether learn glass.",  
     "rt": [  
-        "oic.r.altimeter",  
         "oic.r.altimeter"  
     ],  
-    "alt": {  
-        "type": "Property",  
-        "value": 956.8  
-    },  
-    "n": "Suddenly bank assume north often tell. Beat night contain fast fight game wish. We option know institution especially.",  
-    "precision": {  
-        "type": "Property",  
-        "value": 446.9  
-    },  
+    "alt": 821.8,  
+    "n": "Want among want model its whether visit",  
+    "precision": 735.5,  
     "range": [  
-        219.9,  
-        173.9  
+        826.2,  
+        991.8  
     ],  
-    "step": {  
-        "type": "Property",  
-        "value": 62.6  
-    },  
+    "step": 295.7,  
     "if": [  
         "oic.if.baseline",  
-        "oic.if.baseline"  
+        "oic.if.s"  
     ],  
     "type": "Altimeter",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -710,78 +674,80 @@ Altimeter:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Altimeter:id:XXJS:08120957",  
+    "id": "urn:ngsi-ld:Altimeter:id:TWDF:66254261",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1975-04-10T00:13:53Z"  
+            "@value": "1998-06-13T14:49:06Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1986-06-13T16:36:25Z"  
+            "@value": "2023-02-09T05:06:53Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Rock ask look run. Her share majority within provide. Cold simple area."  
+        "value": "Perhaps maybe class. Authority according wear develop become. Letter fall reduce woman f"  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Follow level single maintain north letter. Another tough can off. Town hundred help traditional feeling rock cell."  
+        "value": "Result build remain close natural history relate method. Later nature yeah party arrive. Dog something friend special."  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Big wide plant assume team put never."  
+        "value": "Care learn whole. Arrive employee meeting about still cold once view. Check leave space."  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Town position skin record mind. Positive source exactly team edge. Either child a study everyone process."  
+        "value": "Court"  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Within six ok sit edge marriage could. Yard international it feeling between itself sure. End answer fill tough human."  
+        "value": "Mean eight design put. Focus specific instead finally region two various. Whatever them seem let head program environment. Behind impro"  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Altimeter:items:CPCX:44604650",  
-            "urn:ngsi-ld:Altimeter:items:FUHL:47481286"  
+            "urn:ngsi-ld:Altimeter:items:REST:24340353",  
+            "urn:ngsi-ld:Altimeter:items:JPXH:89305576"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Altimeter:items:KSOB:49084055"  
+            "urn:ngsi-ld:Altimeter:items:YJDK:74161276"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                71.048026,  
-                94.574079  
+                71.586845,  
+                113.083418  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Not pay art. Manager hope dinner style yes difference model know.",  
-            "addressLocality": "Become man Democrat argue best. Seven thank space understand manage writer.",  
-            "addressRegion": "Hand serious live important when. Tough shoulder entire most. Nature note smile open.",  
-            "addressCountry": "Program amount company would. Letter tell full despite.",  
-            "postalCode": "Movie write government although and very sometimes. Hand address hold him every walk south cultural. Hotel second describe include party tax different.",  
-            "postOfficeBoxNumber": "Life fast television economic. Hope rule or could toward. Get yes here even floor nor."  
+            "streetAddress": "Concern today writer song operation city issue. Challenge conference service price miss. National w",  
+            "addressLocality": "Age simply score character force. Thousand seem hope. Field fill great care.",  
+            "addressRegion": "Help like find size. Check explain reduce value. Across recently choice policy writer avoid.",  
+            "addressCountry": "Arrive east threat south wear budget. Tv program job unit blue sit.",  
+            "postalCode": "And until cultural quickly her pick Mrs. Medical fear light.",  
+            "postOfficeBoxNumber": "Story thousand employee either second customer oil. Space American avoid police work drug water physical. Resource husband Congress government follow economic dream.",  
+            "streetNr": "South worker history wish bot",  
+            "district": "Station want national quickly father thing. Whatever ago across do long clearly worker."  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Half two stock low. Back management successful almost cold building democratic."  
+        "value": "Order nothing mention pull war stand. Store along feel without seem. Young candidate whether learn glass."  
     },  
     "rt": {  
         "type": "Property",  
@@ -791,38 +757,37 @@ Altimeter:
     },  
     "alt": {  
         "type": "Property",  
-        "value": 916.8  
+        "value": 821.8  
     },  
     "n": {  
         "type": "Property",  
-        "value": "Somebody audience yet magazine hundred support but. Move building public part court price."  
+        "value": "Want among want model its whether visit"  
     },  
     "precision": {  
         "type": "Property",  
-        "value": 171.6  
+        "value": 735.5  
     },  
     "range": {  
         "type": "Property",  
         "value": [  
-            593.9,  
-            778.3  
+            826.2,  
+            991.8  
         ]  
     },  
     "step": {  
         "type": "Property",  
-        "value": 276.9  
+        "value": 295.7  
     },  
     "if": {  
         "type": "Property",  
         "value": [  
             "oic.if.baseline",  
-            "oic.if.baseline"  
+            "oic.if.s"  
         ]  
     },  
     "type": "Altimeter",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -830,7 +795,7 @@ Altimeter:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-[FAQ 10](https://smartdatamodels.org/index.php/faqs/)을 참조하여 규모 단위를 다루는 방법에 대한 답변을 확인하세요.  
+10](https://smartdatamodels.org/index.php/faqs/)를 참조하여 규모 단위를 다루는 방법에 대한 답변을 확인하세요.  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
