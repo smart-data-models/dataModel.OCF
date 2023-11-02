@@ -1,3 +1,3 @@
 /* (Beta) Export of data model AutoWhiteBalance of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE AutoWhiteBalance_type AS ENUM ('AutoWhiteBalance');
-CREATE TABLE AutoWhiteBalance (autoWhiteBalance BOOLEAN, if JSON, n TEXT, rt JSON, type AutoWhiteBalance_type);
+CREATE TABLE AutoWhiteBalance (address JSON, alternateName TEXT, areaServed TEXT, autoWhiteBalance BOOLEAN, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, if JSON, location JSON, n TEXT, name TEXT, owner JSON, rt JSON, seeAlso JSON, source TEXT, type AutoWhiteBalance_type);
