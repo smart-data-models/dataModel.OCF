@@ -1,79 +1,132 @@
 {
-    "id": "urn:ngsi-ld:PanTiltZoom:id:RDKB:12056428",
+    "id": "urn:ngsi-ld:PanTiltZoom:id:YTUX:86779168",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "2012-12-10T11:17:16Z"
+            "@value": "1983-03-06T11:53:43Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1996-12-15T22:16:07Z"
+            "@value": "1984-07-04T17:53:03Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Throughout second century according soon space how. Church push grow trial sign speech include."
+        "value": "Enough data gun glass structure. Identify key for fly fine set."
     },
     "name": {
         "type": "Property",
-        "value": "Itself reflect child image detail. Boy would challenge."
+        "value": "Most"
     },
     "alternateName": {
         "type": "Property",
-        "value": "Put owner lot offer beyond air difficult. Sometimes impact television course."
+        "value": "Special myself assume research. Risk skin letter three customer hair arm big."
     },
     "description": {
         "type": "Property",
-        "value": "Kitchen way region dinner. Lead because happen central. See lay onto candidate we imagine mission could."
+        "value": "Around our check employee citizen moment energy cover. Relate southern data environmental reason them good. Organization "
     },
     "dataProvider": {
         "type": "Property",
-        "value": "Kind teach nation discuss social. Painting we future would anyone kitchen forward would."
+        "value": "Decide particularly people method machine write consider. Modern example foot poor rich."
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:PanTiltZoom:items:QSEI:87305470",
-            "urn:ngsi-ld:PanTiltZoom:items:WEFY:37838415"
+            "urn:ngsi-ld:PanTiltZoom:items:LADC:82474202",
+            "urn:ngsi-ld:PanTiltZoom:items:XSAL:35307419"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:PanTiltZoom:items:OOAX:70233899"
+            "urn:ngsi-ld:PanTiltZoom:items:BPQX:76791780"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                3.685433,
-                -111.432176
+                -0.9096775,
+                24.468291
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "Drug leg detail yard represent take. Share our after your resource.",
-            "addressLocality": "Ball say where nature democratic blood anyone. Upon home order hospital. Source technology create policy house.",
-            "addressRegion": "Turn suggest interest believe mother compare Mrs. Bring or down serve model rest science.",
-            "addressCountry": "Head food treatment per speak. Rate start history less raise.",
-            "postalCode": "Good reach nice against thank apply human. Defense dark meeting.",
-            "postOfficeBoxNumber": "Right art social born. Young skill his activity from until sure."
+            "streetAddress": "Surface position upon interview where. Officer field until condition officer well manager would. Better clearly look ",
+            "addressLocality": "Make bed traditional sort. Less either less ready watch. Western should professor under.",
+            "addressRegion": "Treatment main light rich. Recently pass team movie short meet. Suffer return defense sing four rate trouble.",
+            "addressCountry": "Size finish race property win past a. Benefit make light watch his move many.",
+            "postalCode": "Country administration feeling. Interesting better author entire financial.",
+            "postOfficeBoxNumber": "Worry report force account activity sell hit movement.",
+            "streetNr": "We could a feel. Bef",
+            "district": "Prove improve world cup maintain security return. Medical meeting issue. Indicate style any early."
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "Back impact including something church get. Wonder peace end then go fast certainly. Smile program doctor father."
+        "value": "Would not international. Together tonight reduce take scene. Water medical own among."
     },
+    "rt": {
+        "type": "Property",
+        "value": [
+            "oic.r.ptz"
+        ]
+    },
+    "tilt_range": {
+        "type": "Property",
+        "value": [
+            972.1,
+            351.2
+        ]
+    },
+    "zoomFactor": {
+        "type": "Property",
+        "value": "Best onto college type pick."
+    },
+    "tilt": {
+        "type": "Property",
+        "value": 122.5
+    },
+    "precision": {
+        "type": "Property",
+        "value": 565.5
+    },
+    "pan_range": {
+        "type": "Property",
+        "value": [
+            208.0,
+            628.7
+        ]
+    },
+    "zoomFactorRange": {
+        "type": "Property",
+        "value": "32x"
+    },
+    "pan": {
+        "type": "Property",
+        "value": 612.2
+    },
+    "n": {
+        "type": "Property",
+        "value": "Defense region protect between head reduce science any. Nea"
+    },
+    "if": {
+        "type": "Property",
+        "value": [
+            "oic.if.a",
+            "oic.if.baseline"
+        ]
+    },
+    "type": "PanTiltZoom",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
