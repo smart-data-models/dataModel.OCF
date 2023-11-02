@@ -1,34 +1,44 @@
 {
-  "id": "urn:ngsi-ld:GlucoseTester:id:NYRG:29308322",
-  "dateCreated": "1980-11-08T18:27:08Z",
-  "dateModified": "2014-03-28T16:12:00Z",
-  "source": "Time like management low agree language knowledge. Answer term enjoy career well knowledge material. Strategy decade week theory.",
-  "name": "Break age my audience budget behavior mention. Organization involve become example fast.",
-  "alternateName": "Who total than leg. Which everybody sit sit structure doctor physical.",
-  "description": "Someone choice minute fact kid. Social professor bring race matter save create.",
-  "dataProvider": "Capital particular away realize operation. Common tree number wear exactly difficult. Evidence lead red without risk small half.",
-  "owner": [
-    "urn:ngsi-ld:GlucoseTester:items:KDOJ:82541574",
-    "urn:ngsi-ld:GlucoseTester:items:TXYP:18981011"
-  ],
-  "seeAlso": [
-    "urn:ngsi-ld:GlucoseTester:items:RMSY:70339406",
-    "urn:ngsi-ld:GlucoseTester:items:RLTE:72455890"
-  ],
-  "location": {
-    "type": "Point",
-    "coordinates": [
-      75.3523795,
-      -77.248798
-    ]
-  },
-  "address": {
-    "streetAddress": "Eight painting author by born history themselves than. Father century sound role together professor both.",
-    "addressLocality": "Throughout eat another I drug democratic gas great. Detail too election physical concern positive particularly. Church face blue skill center despite stage.",
-    "addressRegion": "Score writer teach night again space defense. Use scientist claim pressure family. Season politics talk others. Likely decade size know.",
-    "addressCountry": "Decide effort simple personal. Middle young their people professor physical.",
-    "postalCode": "Determine effort quality many trouble public current too. Agree tree this together occur draw need. Point current number animal. Current many phone world bank ahead fire.",
-    "postOfficeBoxNumber": "Republican try hit. Fall family approach thing issue type single. Cultural away least major someone. Prevent dog none different environment create."
-  },
-  "areaServed": "Among my plant oil question able protect forget. Democrat drive find pick."
+    "id": "urn:ngsi-ld:GlucoseTester:id:IGZH:59622975",
+    "dateCreated": "1974-07-04T04:54:26Z",
+    "dateModified": "1990-12-11T00:54:45Z",
+    "source": "War official structur",
+    "name": "Space argue he able learn rate. Feeling machine",
+    "alternateName": "Heavy decide surface gas. Race strong d",
+    "description": "Race I entire remember half feeling. System city live interest con",
+    "dataProvider": "Alone interview tend. Cup road finally eve",
+    "owner": [
+        "urn:ngsi-ld:GlucoseTester:items:SLEO:64460310",
+        "urn:ngsi-ld:GlucoseTester:items:VBWT:20572250"
+    ],
+    "seeAlso": [
+        "urn:ngsi-ld:GlucoseTester:items:AXAI:66252777"
+    ],
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            -17.675074,
+            -143.961557
+        ]
+    },
+    "address": {
+        "streetAddress": "Lot also learn class. Realize drop occur behavior this agent.",
+        "addressLocality": "Form south although fund research. Market purpose help study expect se",
+        "addressRegion": "Kitchen fire its out challenge offer. Common should what economy total discover.",
+        "addressCountry": "Rule American phone interest. Congress party may drop.",
+        "postalCode": "Throw break it. Return agree market else vote.",
+        "postOfficeBoxNumber": "Sell lay blue growth fact reduce. Community role will card action war experience. Individual customer city quality cut. Few leave threat coach.",
+        "streetNr": "Hotel assume class interview pattern minute. Green half then.",
+        "district": "Character ball sec"
+    },
+    "areaServed": "Vote back indeed movement story amount. After name treat pattern section step.",
+    "rt": [
+        "oic.r.glucose.tester"
+    ],
+    "tester": "self",
+    "n": "Character nation sing American more ok carry even. Per",
+    "if": [
+        "oic.if.baseline"
+    ],
+    "type": "GlucoseTester"
 }
