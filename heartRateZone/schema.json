@@ -12,64 +12,66 @@
     },
     {
       "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "rt": {
+          "description": "Property. Resource Type",
+          "items": {
+            "enum": [
+              "oic.r.sensor.heart.zone"
+            ],
+            "maxLength": 64,
+            "type": "string"
+          },
+          "minItems": 1,
+          "readOnly": true,
+          "uniqueItems": true,
+          "type": "array"
+        },
+        "n": {
+          "type": "string",
+          "maxLength": 64,
+          "readOnly": true,
+          "description": "Property. Friendly name of the Resource"
+        },
+        "heartRateZone": {
+          "description": "Property. Current heart rate zone based on the Zoladz system.",
+          "enum": [
+            "Zone1",
+            "Zone2",
+            "Zone3",
+            "Zone4",
+            "Zone5"
+          ],
+          "readOnly": true,
+          "type": "string"
+        },
+        "if": {
+          "description": "Property. The OCF Interface set supported by this Resource",
+          "items": {
+            "enum": [
+              "oic.if.s",
+              "oic.if.baseline"
+            ],
+            "type": "string",
+            "maxLength": 64
+          },
+          "minItems": 1,
+          "readOnly": true,
+          "uniqueItems": true,
+          "type": "array"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "heartRateZone"
+          ],
+          "description": "Property. NGSI entity type. It has to be heartRateZone"
+        }
+      }
     }
   ],
-  "properties": {
-    "rt": {
-      "description": "Property. Resource Type",
-      "items": {
-        "enum": [
-          "oic.r.sensor.heart.zone"
-        ],
-        "maxLength": 64,
-        "type": "string"
-      },
-      "minItems": 1,
-      "readOnly": true,
-      "uniqueItems": true,
-      "type": "array"
-    },
-    "n": {
-      "type": "string",
-      "maxLength": 64,
-      "readOnly": true,
-      "description": "Property. Friendly name of the Resource"
-    },
-    "heartRateZone": {
-      "description": "Property. Current heart rate zone based on the Zoladz system.",
-      "enum": [
-        "Zone1",
-        "Zone2",
-        "Zone3",
-        "Zone4",
-        "Zone5"
-      ],
-      "readOnly": true,
-      "type": "string"
-    },
-    "if": {
-      "description": "Property. The OCF Interface set supported by this Resource",
-      "items": {
-        "enum": [
-          "oic.if.s",
-          "oic.if.baseline"
-        ],
-        "type": "string",
-        "maxLength": 64
-      },
-      "minItems": 1,
-      "readOnly": true,
-      "uniqueItems": true,
-      "type": "array"
-    },
-    "type": {
-      "type": "string",
-      "enum": [
-        "heartRateZone"
-      ],
-      "description": "Property. NGSI entity type. It has to be heartRateZone"
-    }
-  },
   "derivedFrom": "https://github.com/OpenInterConnect/IoTDataModels/blob/master/heartRateZoneResURI.swagger.json",
   "license": "https://github.com/OpenInterConnect/IoTDataModels/blob/master/README.md",
   "required": [
