@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: 用于邮政信箱地址的邮政信箱号码。例如：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: 邮政编码。例如：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: 街道地址  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: 标识公共街道上特定房产的编号    
 - `alternateName[string]`: 该项目的替代名称  - `areaServed[string]`: 提供服务或提供物品的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 标识统一数据实体提供者的字符序列  - `dateCreated[date-time]`: 实体创建时间戳。通常由存储平台分配  - `dateModified[date-time]`: 实体最后一次修改的时间戳。通常由存储平台分配  - `description[string]`: 项目描述  - `id[*]`: 实体的唯一标识符  - `if[array]`: 该资源支持的 OCF 接口集  - `location[*]`: 项目的 Geojson 引用。它可以是点、线条字符串、多边形、多点、多线条字符串或多多边形  - `n[string]`: 资源的友好名称  - `name[string]`: 该项目的名称  - `owner[array]`: 包含一个 JSON 编码字符序列的列表，其中引用了所有者的唯一 Ids  - `rt[array]`: 资源类型  - `seeAlso[*]`: 指向有关该项目的其他资源的 uri 列表  - `source[string]`: 以 URL 形式给出实体数据原始来源的字符串。建议使用源提供者的完全合格域名或源对象的 URL  - `timestamp[date-time]`: RFC3339 格式的时间，表示数据被观测到的时间（例如：2016-02-15T09:19Z, 1996-12-19T16:39:57-08:00）  - `type[string]`: NGSI 实体类型。必须是 TimeStamp  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 所需属性  
@@ -422,49 +423,49 @@ TimeStamp:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:TimeStamp:id:MAHH:24093348",  
-  "dateCreated": "1986-04-12T11:36:49Z",  
-  "dateModified": "2013-08-14T18:12:01Z",  
-  "source": "Deep better little skin nature central economic couple. Tell month feeling alone already little become heart. Collection person affect tell reality look.",  
-  "name": "Information hot debate indicate social hold. Them two card price college among. Society course may must break radio true.",  
-  "alternateName": "Chair myself six one easy really action. However skin anyone would how meet service. Present agree report.",  
-  "description": "Effect all young read. Here view responsibility front.",  
-  "dataProvider": "Military pass traditional avoid relate black over argue. Television unit pretty suggest.",  
-  "owner": [  
-    "urn:ngsi-ld:TimeStamp:items:OQUS:98081300",  
-    "urn:ngsi-ld:TimeStamp:items:IRCF:24818802"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:TimeStamp:items:ESOV:66345533",  
-    "urn:ngsi-ld:TimeStamp:items:BVZU:99440929"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -18.361737,  
-      119.219709  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Skin his cultural land once keep student Mrs. Hospital condition company activity hotel kid guess. Long your then stand set now during. Short step follow natural beautiful detail.",  
-    "addressLocality": "Trouble where state lot. Source prepare make structure low front too.",  
-    "addressRegion": "Look wonder dream if across. Concern full where activity. Item event few two describe factor base.",  
-    "addressCountry": "Various girl conference seat somebody name class yourself. Force standard cut run. Necessary near kitchen floor. Treatment here approach song moment keep list.",  
-    "postalCode": "Last kitchen begin. Street bag include television. Tv middle account throw.",  
-    "postOfficeBoxNumber": "Generation mind likely over imagine federal. Finally show weight father must. Support summer agency red for."  
-  },  
-  "areaServed": "More go chair set again.",  
-  "rt": [  
-    "oic.r.time.stamp",  
-    "oic.r.time.stamp"  
-  ],  
-  "timestamp": "1983-11-05T20:20:56Z",  
-  "n": "Poor allow read establish. Eye still morning simple over your fire various. Teacher today leave reach help imagine.",  
-  "if": [  
-    "oic.if.s",  
-    "oic.if.baseline"  
-  ],  
-  "type": "TimeStamp"  
+    "id": "urn:ngsi-ld:TimeStamp:id:WZTE:82421948",  
+    "dateCreated": "1991-02-08T18:14:04Z",  
+    "dateModified": "1976-09-20T18:37:42Z",  
+    "source": "Line beyond its particularly tree whom. Kind miss artist truth trouble behavior style.",  
+    "name": "Partner stock four. Region as true develop so",  
+    "alternateName": "Onto knowledge other his offer face country. Almo",  
+    "description": "Every manage political record word group food break. Picture suddenly drug rule bring determine some forward. Beyond chair recently and.",  
+    "dataProvider": "Own available buy country store build before. Already against which continue. Look roa",  
+    "owner": [  
+        "urn:ngsi-ld:TimeStamp:items:UJLN:86914131",  
+        "urn:ngsi-ld:TimeStamp:items:GILX:20870916"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:TimeStamp:items:QIDT:79230225"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            28.732768,  
+            177.344405  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Likely improve n",  
+        "addressLocality": "School name care several loss particular. Opportunity throughout take car financial security.",  
+        "addressRegion": "Organization recogni",  
+        "addressCountry": "Industry product another knowledge else citizen month. Traditional page a although for study ",  
+        "postalCode": "First degree response able state more. Couple part cup few. Beyond take however ball.",  
+        "postOfficeBoxNumber": "Son break either president stage population boy. Everything affect American race.",  
+        "streetNr": "Water voice",  
+        "district": "Full per among clearly. Face house nature fall long dream answer conference. Rock few structure federal board night loss."  
+    },  
+    "areaServed": "Buy break marriage also friend reach. Turn phone heart window. Assume be seek article.",  
+    "rt": [  
+        "oic.r.time.stamp"  
+    ],  
+    "timestamp": "1976-09-03T16:55:11Z",  
+    "n": "Million larg",  
+    "if": [  
+        "oic.if.s",  
+        "oic.if.r"  
+    ],  
+    "type": "TimeStamp"  
 }  
 ```  
 </details>  
@@ -473,106 +474,97 @@ TimeStamp:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:TimeStamp:id:MAHH:24093348"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1986-04-12T11:36:49Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2013-08-14T18:12:01Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Deep better little skin nature central economic couple. Tell month feeling alone already little become heart. Collection person affect tell reality look."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Information hot debate indicate social hold. Them two card price college among. Society course may must break radio true."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Chair myself six one easy really action. However skin anyone would how meet service. Present agree report."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Effect all young read. Here view responsibility front."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Military pass traditional avoid relate black over argue. Television unit pretty suggest."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:TimeStamp:items:OQUS:98081300",  
-      "urn:ngsi-ld:TimeStamp:items:IRCF:24818802"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:TimeStamp:items:ESOV:66345533",  
-      "urn:ngsi-ld:TimeStamp:items:BVZU:99440929"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -18.361737,  
-        119.219709  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Skin his cultural land once keep student Mrs. Hospital condition company activity hotel kid guess. Long your then stand set now during. Short step follow natural beautiful detail.",  
-      "addressLocality": "Trouble where state lot. Source prepare make structure low front too.",  
-      "addressRegion": "Look wonder dream if across. Concern full where activity. Item event few two describe factor base.",  
-      "addressCountry": "Various girl conference seat somebody name class yourself. Force standard cut run. Necessary near kitchen floor. Treatment here approach song moment keep list.",  
-      "postalCode": "Last kitchen begin. Street bag include television. Tv middle account throw.",  
-      "postOfficeBoxNumber": "Generation mind likely over imagine federal. Finally show weight father must. Support summer agency red for."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "More go chair set again."  
-  },  
-  "rt": {  
-    "type": "array",  
-    "value": [  
-      "oic.r.time.stamp",  
-      "oic.r.time.stamp"  
-    ]  
-  },  
-  "timestamp": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1983-11-05T20:20:56Z"  
-  },  
-  "n": {  
-    "type": "string",  
-    "value": "Poor allow read establish. Eye still morning simple over your fire various. Teacher today leave reach help imagine."  
-  },  
-  "if": {  
-    "type": "array",  
-    "value": [  
-      "oic.if.s",  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "type": {  
-    "type": "string",  
-    "value": "TimeStamp"  
-  }  
+    "id": "urn:ngsi-ld:TimeStamp:id:WZTE:82421948",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1991-02-08T18:14:04Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "1976-09-20T18:37:42Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Line beyond its particularly tree whom. Kind miss artist truth trouble behavior style."  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Partner stock four. Region as true develop so"  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Onto knowledge other his offer face country. Almo"  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Every manage political record word group food break. Picture suddenly drug rule bring determine some forward. Beyond chair recently and."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Own available buy country store build before. Already against which continue. Look roa"  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:TimeStamp:items:UJLN:86914131",  
+            "urn:ngsi-ld:TimeStamp:items:GILX:20870916"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:TimeStamp:items:QIDT:79230225"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                28.732768,  
+                177.344405  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Likely improve n",  
+            "addressLocality": "School name care several loss particular. Opportunity throughout take car financial security.",  
+            "addressRegion": "Organization recogni",  
+            "addressCountry": "Industry product another knowledge else citizen month. Traditional page a although for study ",  
+            "postalCode": "First degree response able state more. Couple part cup few. Beyond take however ball.",  
+            "postOfficeBoxNumber": "Son break either president stage population boy. Everything affect American race.",  
+            "streetNr": "Water voice",  
+            "district": "Full per among clearly. Face house nature fall long dream answer conference. Rock few structure federal board night loss."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Buy break marriage also friend reach. Turn phone heart window. Assume be seek article."  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.time.stamp"  
+        ]  
+    },  
+    "timestamp": {  
+        "type": "DateTime",  
+        "value": "1976-09-03T16:55:11Z"  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Million larg"  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.s",  
+            "oic.if.r"  
+        ]  
+    },  
+    "type": "TimeStamp"  
 }  
 ```  
 </details>  
@@ -581,52 +573,51 @@ TimeStamp:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:TimeStamp:id:MAHH:24093348",  
-    "dateCreated": "1986-04-12T11:36:49Z",  
-    "dateModified": "2013-08-14T18:12:01Z",  
-    "source": "Deep better little skin nature central economic couple. Tell month feeling alone already little become heart. Collection person affect tell reality look.",  
-    "name": "Information hot debate indicate social hold. Them two card price college among. Society course may must break radio true.",  
-    "alternateName": "Chair myself six one easy really action. However skin anyone would how meet service. Present agree report.",  
-    "description": "Effect all young read. Here view responsibility front.",  
-    "dataProvider": "Military pass traditional avoid relate black over argue. Television unit pretty suggest.",  
+    "id": "urn:ngsi-ld:TimeStamp:id:WZTE:82421948",  
+    "dateCreated": "1991-02-08T18:14:04Z",  
+    "dateModified": "1976-09-20T18:37:42Z",  
+    "source": "Line beyond its particularly tree whom. Kind miss artist truth trouble behavior style.",  
+    "name": "Partner stock four. Region as true develop so",  
+    "alternateName": "Onto knowledge other his offer face country. Almo",  
+    "description": "Every manage political record word group food break. Picture suddenly drug rule bring determine some forward. Beyond chair recently and.",  
+    "dataProvider": "Own available buy country store build before. Already against which continue. Look roa",  
     "owner": [  
-        "urn:ngsi-ld:TimeStamp:items:OQUS:98081300",  
-        "urn:ngsi-ld:TimeStamp:items:IRCF:24818802"  
+        "urn:ngsi-ld:TimeStamp:items:UJLN:86914131",  
+        "urn:ngsi-ld:TimeStamp:items:GILX:20870916"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:TimeStamp:items:ESOV:66345533",  
-        "urn:ngsi-ld:TimeStamp:items:BVZU:99440929"  
+        "urn:ngsi-ld:TimeStamp:items:QIDT:79230225"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            -18.361737,  
-            119.219709  
+            28.732768,  
+            177.344405  
         ]  
     },  
     "address": {  
-        "streetAddress": "Skin his cultural land once keep student Mrs. Hospital condition company activity hotel kid guess. Long your then stand set now during. Short step follow natural beautiful detail.",  
-        "addressLocality": "Trouble where state lot. Source prepare make structure low front too.",  
-        "addressRegion": "Look wonder dream if across. Concern full where activity. Item event few two describe factor base.",  
-        "addressCountry": "Various girl conference seat somebody name class yourself. Force standard cut run. Necessary near kitchen floor. Treatment here approach song moment keep list.",  
-        "postalCode": "Last kitchen begin. Street bag include television. Tv middle account throw.",  
-        "postOfficeBoxNumber": "Generation mind likely over imagine federal. Finally show weight father must. Support summer agency red for."  
+        "streetAddress": "Likely improve n",  
+        "addressLocality": "School name care several loss particular. Opportunity throughout take car financial security.",  
+        "addressRegion": "Organization recogni",  
+        "addressCountry": "Industry product another knowledge else citizen month. Traditional page a although for study ",  
+        "postalCode": "First degree response able state more. Couple part cup few. Beyond take however ball.",  
+        "postOfficeBoxNumber": "Son break either president stage population boy. Everything affect American race.",  
+        "streetNr": "Water voice",  
+        "district": "Full per among clearly. Face house nature fall long dream answer conference. Rock few structure federal board night loss."  
     },  
-    "areaServed": "More go chair set again.",  
+    "areaServed": "Buy break marriage also friend reach. Turn phone heart window. Assume be seek article.",  
     "rt": [  
-        "oic.r.time.stamp",  
         "oic.r.time.stamp"  
     ],  
-    "timestamp": "1983-11-05T20:20:56Z",  
-    "n": "Poor allow read establish. Eye still morning simple over your fire various. Teacher today leave reach help imagine.",  
+    "timestamp": "1976-09-03T16:55:11Z",  
+    "n": "Million larg",  
     "if": [  
         "oic.if.s",  
-        "oic.if.baseline"  
+        "oic.if.r"  
     ],  
     "type": "TimeStamp",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -636,78 +627,80 @@ TimeStamp:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:TimeStamp:id:UEVV:41074270",  
+    "id": "urn:ngsi-ld:TimeStamp:id:WZTE:82421948",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2000-12-06T14:34:04Z"  
+            "@value": "1991-02-08T18:14:04Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1987-09-11T01:17:16Z"  
+            "@value": "1976-09-20T18:37:42Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Price discover some million whose remember. Discuss establish who hotel."  
+        "value": "Line beyond its particularly tree whom. Kind miss artist truth trouble behavior style."  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Myself state everything officer parent. Whether democratic manage themselves use. Finally even industry thing sign write agreement. Director security group about."  
+        "value": "Partner stock four. Region as true develop so"  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Class similar here author carry table particularly case. Quality during store represent. Race age its do."  
+        "value": "Onto knowledge other his offer face country. Almo"  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Manage hard young his several try. Letter message at result. Old different up simple itself. Mother two soldier outside decade home effort."  
+        "value": "Every manage political record word group food break. Picture suddenly drug rule bring determine some forward. Beyond chair recently and."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Kind but learn well thing and ball. Identify mouth still home vote race view wall. While five every policy."  
+        "value": "Own available buy country store build before. Already against which continue. Look roa"  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:TimeStamp:items:WPNG:60576733",  
-            "urn:ngsi-ld:TimeStamp:items:OAFN:97290886"  
+            "urn:ngsi-ld:TimeStamp:items:UJLN:86914131",  
+            "urn:ngsi-ld:TimeStamp:items:GILX:20870916"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:TimeStamp:items:CXRM:15094818"  
+            "urn:ngsi-ld:TimeStamp:items:QIDT:79230225"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                -71.802608,  
-                -116.144207  
+                28.732768,  
+                177.344405  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Four race this be foreign time. Effect no control half me discuss decision collection.",  
-            "addressLocality": "Quality there sound him close tax smile. Figure experience however free. Mention trouble follow up personal current bed.",  
-            "addressRegion": "Wife Mr away size article. Same respond system outside yeah audience. West majority determine grow at car.",  
-            "addressCountry": "Interest right shoulder allow real step. Inside six conference wait medical surface. Finish skill base option attorney.",  
-            "postalCode": "Both avoid discover way church.",  
-            "postOfficeBoxNumber": "Authority dark business media wait rate. Station seem adult international race impact."  
+            "streetAddress": "Likely improve n",  
+            "addressLocality": "School name care several loss particular. Opportunity throughout take car financial security.",  
+            "addressRegion": "Organization recogni",  
+            "addressCountry": "Industry product another knowledge else citizen month. Traditional page a although for study ",  
+            "postalCode": "First degree response able state more. Couple part cup few. Beyond take however ball.",  
+            "postOfficeBoxNumber": "Son break either president stage population boy. Everything affect American race.",  
+            "streetNr": "Water voice",  
+            "district": "Full per among clearly. Face house nature fall long dream answer conference. Rock few structure federal board night loss."  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Can magazine just trial. Box later second imagine throughout know third evening. Cover later same reveal that focus."  
+        "value": "Buy break marriage also friend reach. Turn phone heart window. Assume be seek article."  
     },  
     "rt": {  
         "type": "Property",  
@@ -719,24 +712,23 @@ TimeStamp:
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1991-12-30T10:38:29Z"  
+            "@value": "1976-09-03T16:55:11Z"  
         }  
     },  
     "n": {  
         "type": "Property",  
-        "value": "Card film direction eat cover available. Read network lose laugh structure style. Feeling strategy door benefit stock."  
+        "value": "Million larg"  
     },  
     "if": {  
         "type": "Property",  
         "value": [  
-            "oic.if.baseline",  
+            "oic.if.s",  
             "oic.if.r"  
         ]  
     },  
     "type": "TimeStamp",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
