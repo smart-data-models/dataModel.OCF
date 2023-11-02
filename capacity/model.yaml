@@ -67,7 +67,7 @@ capacity:
         type: Property
     capacity:
       description: The rated capacity for the Device
-      exclusiveMinimum: true
+      exclusiveMinimum: 0
       minimum: 0
       readOnly: true
       type: number
