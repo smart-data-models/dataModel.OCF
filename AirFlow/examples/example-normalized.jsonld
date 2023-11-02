@@ -1,76 +1,78 @@
 {
-    "id": "urn:ngsi-ld:AirFlow:id:CTQH:10088755",
+    "id": "urn:ngsi-ld:AirFlow:id:QBYQ:46486922",
     "dateCreated": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1971-04-04T11:51:02Z"
+            "@value": "2001-07-15T01:59:58Z"
         }
     },
     "dateModified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
-            "@value": "1972-10-11T04:22:40Z"
+            "@value": "1999-01-10T11:13:04Z"
         }
     },
     "source": {
         "type": "Property",
-        "value": "Above add institution message use. Player owner together ago."
+        "value": "Later body goal nor. Ci"
     },
     "name": {
         "type": "Property",
-        "value": "Could read computer minute. Trip no last thought push."
+        "value": "Particular investment once team. Back finish water participant shake."
     },
     "alternateName": {
         "type": "Property",
-        "value": "Most oil his tonight. Five perform any media."
+        "value": "Itself key approach space defense development attack quite. Write offer tough. Every must particularly page would professor many."
     },
     "description": {
         "type": "Property",
-        "value": "History trade per summer. Material spring base attack note forget. Win not itself character thought according property."
+        "value": "Challenge good live even sense black. Play site stand economy herself happen."
     },
     "dataProvider": {
         "type": "Property",
-        "value": "Kitchen commercial bed modern mean finish people. Rate base cultural bar time."
+        "value": "Difference perform describe forward participant great. Less certain moment everyone college."
     },
     "owner": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:AirFlow:items:THBX:12648291",
-            "urn:ngsi-ld:AirFlow:items:WYAI:06881272"
+            "urn:ngsi-ld:AirFlow:items:SRPE:15875448",
+            "urn:ngsi-ld:AirFlow:items:JHQL:37977670"
         ]
     },
     "seeAlso": {
         "type": "Property",
         "value": [
-            "urn:ngsi-ld:AirFlow:items:FOOH:86766119"
+            "urn:ngsi-ld:AirFlow:items:XFSX:59784474"
         ]
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
-                11.690259,
-                -163.367986
+                65.785205,
+                -176.72728
             ]
         }
     },
     "address": {
         "type": "Property",
         "value": {
-            "streetAddress": "Quickly leg little certain his. Financial music run miss out. Attack again same production leg fund. Task consider nature author.",
-            "addressLocality": "Single particularly some economy choice. Will tree success call window direction though be. Deep serious play establish.",
-            "addressRegion": "Moment strategy sing party up. There travel sit science government. Military democratic hard case probably kitchen. Suffer kid order year since affect.",
-            "addressCountry": "Toward product indeed voice character. Low drug view memory.",
-            "postalCode": "West figure produce. Nature month husband.",
-            "postOfficeBoxNumber": "Early true turn. Son wonder politics young health. Suggest design message standard save style school agree."
+            "streetAddress": "Teacher after shoulder president state center. Hand happy unit catch charge team. Financial certain exactly current sou",
+            "addressLocality": "Section think part easy argue about com",
+            "addressRegion": "Free face your government field. Herself camera career alone. Any yard next spring everybody hope figure.",
+            "addressCountry": "Manage field d",
+            "postalCode": "Far fill experience maybe. Democratic power free colle",
+            "postOfficeBoxNumber": "Play into understand population. Area huge oil should.",
+            "streetNr": "Try their real man term side interesting. Eat according reason similar summer production force.",
+            "district": "Event big toward age nature million. Newspaper plan truth seat. Three left natural continue."
         }
     },
     "areaServed": {
         "type": "Property",
-        "value": "Art guess ok front become lay per. Attorney step company."
+        "value": "Around claim western write window produce sit. Debate century e"
     },
     "rt": {
         "type": "Property",
@@ -80,47 +82,46 @@
     },
     "speed": {
         "type": "Property",
-        "value": 725
+        "value": 864
     },
     "direction": {
         "type": "Property",
-        "value": "For team service avoid boy clear election small."
+        "value": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair."
     },
     "automode": {
         "type": "Property",
-        "value": "Off"
+        "value": "On"
     },
     "supporteddirections": {
         "type": "Property",
         "value": [
-            "Instead process economy bad. Television chance name sort claim current. Attention adult onto dog American sport."
+            "Line beyond its particularly tree whom. Kind miss artist truth trouble behavior style."
         ]
     },
     "n": {
         "type": "Property",
-        "value": "Account today process discussion factor need race wait. System produce professor choose trouble join. Focus edge picture."
+        "value": "Partner stock four. Region as true develop sound centr"
     },
     "range": {
         "type": "Property",
         "value": [
-            961,
-            463
+            864,
+            864
         ]
     },
     "step": {
         "type": "Property",
-        "value": 320
+        "value": 864
     },
     "if": {
         "type": "Property",
         "value": [
             "oic.if.baseline",
-            "oic.if.baseline"
+            "oic.if.a"
         ]
     },
     "type": "AirFlow",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
