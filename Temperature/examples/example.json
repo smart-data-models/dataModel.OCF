@@ -1,61 +1,52 @@
 {
-  "id": "urn:ngsi-ld:Temperature:id:TDIW:54028449",
-  "dateCreated": "2002-11-15T00:39:26Z",
-  "dateModified": "1984-04-05T09:28:18Z",
-  "source": "Report reveal along thank conference anything. Strong commercial oil great little eat film. Son source question all bed continue.",
-  "name": "Hope clearly appear my project former goal ago. Put edge assume close believe focus.",
-  "alternateName": "Employee machine rate among goal drive. Management fish author until second.",
-  "description": "Mission full life thank feeling approach. Newspaper our color bring final. Enter fall wear age ago.",
-  "dataProvider": "Improve reflect ago bad result.",
-  "owner": [
-    "urn:ngsi-ld:Temperature:items:RMOR:11444543",
-    "urn:ngsi-ld:Temperature:items:GBKW:61820150"
-  ],
-  "seeAlso": [
-    "urn:ngsi-ld:Temperature:items:AXXM:54456212",
-    "urn:ngsi-ld:Temperature:items:LIWH:14572760"
-  ],
-  "location": {
-    "type": "Point",
-    "coordinates": [
-      39.6865755,
-      168.763262
-    ]
-  },
-  "address": {
-    "streetAddress": "Case institution side suddenly land set trip. Other police own activity field they. With new individual. Notice he loss recognize start exactly difference picture.",
-    "addressLocality": "President president new.",
-    "addressRegion": "Little newspaper to some Congress. School organization account heavy now strong organization. Bit it great its very.",
-    "addressCountry": "Control outside save similar. Citizen only PM able product main.",
-    "postalCode": "Road Mr or success science. Civil fact compare floor loss.",
-    "postOfficeBoxNumber": "Add in spring often American. When coach relationship sell production. Great relationship participant piece ground."
-  },
-  "areaServed": "Policy yet line half. Meet machine still never. Father both phone teacher throw particularly admit seek.",
-  "rt": [
-    "oic.r.temperature",
-    "oic.r.temperature"
-  ],
-  "temperature": {
-    "type": "Property",
-    "value": 246.8
-  },
-  "units": "F",
-  "n": "Action thought sing fall play require owner. Business itself artist how chair interest.",
-  "range": [
-    515.3,
-    539.9
-  ],
-  "step": {
-    "type": "Property",
-    "value": 292.0
-  },
-  "precision": {
-    "type": "Property",
-    "value": 843.0
-  },
-  "if": [
-    "oic.if.a",
-    "oic.if.baseline"
-  ],
-  "type": "Temperature"
+    "id": "urn:ngsi-ld:Temperature:id:KUHP:87123041",
+    "dateCreated": "1973-02-16T10:24:42Z",
+    "dateModified": "2014-09-28T19:16:20Z",
+    "source": "Produce visit laugh bring. Floor budget break push gas do.",
+    "name": "Safe life through case offer hold. Ok son old cover.",
+    "alternateName": "Dra",
+    "description": "The and sense business box ten. One wear accept really sing section boy. Feeling morning husband best travel campaign suggest. There high account across political three.",
+    "dataProvider": "Ground room parent provide move language.",
+    "owner": [
+        "urn:ngsi-ld:Temperature:items:NWXV:43893681",
+        "urn:ngsi-ld:Temperature:items:MGUP:41314069"
+    ],
+    "seeAlso": [
+        "urn:ngsi-ld:Temperature:items:ZFLJ:77368631"
+    ],
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            58.8891655,
+            7.124082
+        ]
+    },
+    "address": {
+        "streetAddress": "Look receive concern fill society. Call lay guy pull among answer.",
+        "addressLocality": "Watch main official be. Word scientist card drop man operation her. At east yourself.",
+        "addressRegion": "Should general most worry source of factor short. Up case their last.",
+        "addressCountry": "Season treatment ",
+        "postalCode": "Language evi",
+        "postOfficeBoxNumber": "Center produce result. Week li",
+        "streetNr": "As management other section cold upon might. Technology authority common might. ",
+        "district": "Fear avoid true. About ability local though account heart. Few exist l"
+    },
+    "areaServed": "Level social attorney range can voice box. Speak t",
+    "rt": [
+        "oic.r.temperature"
+    ],
+    "temperature": 210.2,
+    "units": "F",
+    "n": "Indeed close ",
+    "range": [
+        272.4,
+        406.0
+    ],
+    "step": 76.3,
+    "precision": 34.3,
+    "if": [
+        "oic.if.baseline",
+        "oic.if.a"
+    ],
+    "type": "Temperature"
 }
