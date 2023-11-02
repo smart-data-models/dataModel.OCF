@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: Le numéro de la boîte postale pour les adresses de boîtes postales. Par exemple, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: Le code postal. Par exemple, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: L'adresse de la rue  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Numéro identifiant une propriété spécifique sur une voie publique    
 - `alternateName[string]`: Un nom alternatif pour ce poste  - `areaServed[string]`: La zone géographique où un service ou un article est offert  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées  - `dateCreated[date-time]`: Horodatage de la création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage  - `dateModified[date-time]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage  - `description[string]`: Une description de l'article  - `id[*]`: Identifiant unique de l'entité  - `if[array]`: L'ensemble d'interfaces OCF pris en charge par cette ressource  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une chaîne de ligne, d'un polygone, d'un point multiple, d'une chaîne de ligne multiple ou d'un polygone multiple.  - `n[string]`: Nom amical de la ressource  - `name[string]`: Le nom de cet élément  - `orientation[array]`: Tableau contenant l'orientation des plans x, y et z en "g".  - `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  - `rt[array]`: Le type de ressource  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  - `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  - `type[string]`: Type d'entité NGSI. Il doit s'agir d'une entité à trois axes  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propriétés requises  
@@ -424,52 +425,53 @@ threeAxis:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:threeAxis:id:RASO:06616206",  
-  "dateCreated": "1979-04-23T14:45:08Z",  
-  "dateModified": "1970-12-05T09:45:00Z",  
-  "source": "Indeed begin week action. Blood before record democratic. Moment imagine evidence which front. Simply office because have number for.",  
-  "name": "Media vote fund glass likely hour. Eye peace everyone live half teacher. Dark man marriage raise most. Process bag so specific growth.",  
-  "alternateName": "Century every task miss none those statement. Career station now use listen alone language.",  
-  "description": "Mr property both ago nature blood subject teach. Amount read position stay. Hot point group office.",  
-  "dataProvider": "Compare war data identify movie talk fine. Trip move sit identify already education information. Add level financial view huge lay.",  
-  "owner": [  
-    "urn:ngsi-ld:threeAxis:items:OAYB:94248007",  
-    "urn:ngsi-ld:threeAxis:items:EBDC:08126235"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:threeAxis:items:CJOO:72940193",  
-    "urn:ngsi-ld:threeAxis:items:DCWZ:29485898"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -49.994884,  
-      141.567463  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Property anyone point choose poor family one. Here those choose.",  
-    "addressLocality": "Strategy year town determine value thank. Ago girl middle soldier class.",  
-    "addressRegion": "Rather company large quite continue. Probably where whether space address.",  
-    "addressCountry": "Help once pass however outside accept to deep. Middle other argue author world. Before billion in argue guy. Quickly understand year face let piece sound there.",  
-    "postalCode": "Treat value within charge artist run management. Heart share environment put as.",  
-    "postOfficeBoxNumber": "Follow foot the hold five season add. Process be my your enjoy degree. Me figure who."  
-  },  
-  "areaServed": "Off animal argue. Discover follow store cup operation win movement property.",  
-  "rt": [  
-    "oic.r.sensor.threeaxis",  
-    "oic.r.sensor.threeaxis"  
-  ],  
-  "orientation": [  
-    477.9,  
-    239.9  
-  ],  
-  "n": "Democratic inside three contain short find never. Sense they off project.",  
-  "if": [  
-    "oic.if.baseline",  
-    "oic.if.s"  
-  ],  
-  "type": "threeAxis"  
+    "id": "urn:ngsi-ld:threeAxis:id:QZPT:75196263",  
+    "dateCreated": "1983-10-24T19:51:05Z",  
+    "dateModified": "2004-08-04T06:17:20Z",  
+    "source": "Course debate he decade yeah not. Themselves remain much food way drop. Easy couple person ",  
+    "name": "Network Mr soon thousand figure town. Stuff explain evidence but picture site wear force. Experience enough nation star.",  
+    "alternateName": "Always with magazine safe assume. Identify top more. Might describe leader current stre",  
+    "description": "Past analysis stock. Form top them choice day.",  
+    "dataProvider": "Left project type air interview. Physical spend measure friend.",  
+    "owner": [  
+        "urn:ngsi-ld:threeAxis:items:CTYU:51884285",  
+        "urn:ngsi-ld:threeAxis:items:OSFS:08678990"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:threeAxis:items:XJKL:03106181"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -42.3517035,  
+            6.360951  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Central blood budget. Give fly stage expect minute these sister.",  
+        "addressLocality": "Big commercial to act full across cost. Player bank will set. The see protect can argue maintain.",  
+        "addressRegion": "Performance perform just. Next evening increase sort instead project even certain.",  
+        "addressCountry": "Issue feel without bed yes travel head impact. On student result which. Design strong kin",  
+        "postalCode": "If big bar challenge hear. Economic expect production month in board.",  
+        "postOfficeBoxNumber": "Job control su",  
+        "streetNr": "Chance might seem ",  
+        "district": "Care center kid quality fact shake its."  
+    },  
+    "areaServed": "Article few pattern stand agree mean beyond. Meeting rate her where. Resp",  
+    "rt": [  
+        "oic.r.sensor.threeaxis"  
+    ],  
+    "orientation": [  
+        965.7,  
+        13.4,  
+        82.1  
+    ],  
+    "n": "Build force community group total trip ready. ",  
+    "if": [  
+        "oic.if.s",  
+        "oic.if.baseline"  
+    ],  
+    "type": "threeAxis"  
 }  
 ```  
 </details>  
@@ -478,108 +480,101 @@ threeAxis:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:threeAxis:id:RASO:06616206"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1979-04-23T14:45:08Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1970-12-05T09:45:00Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Indeed begin week action. Blood before record democratic. Moment imagine evidence which front. Simply office because have number for."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Media vote fund glass likely hour. Eye peace everyone live half teacher. Dark man marriage raise most. Process bag so specific growth."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Century every task miss none those statement. Career station now use listen alone language."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Mr property both ago nature blood subject teach. Amount read position stay. Hot point group office."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Compare war data identify movie talk fine. Trip move sit identify already education information. Add level financial view huge lay."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:threeAxis:items:OAYB:94248007",  
-      "urn:ngsi-ld:threeAxis:items:EBDC:08126235"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:threeAxis:items:CJOO:72940193",  
-      "urn:ngsi-ld:threeAxis:items:DCWZ:29485898"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -49.994884,  
-        141.567463  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Property anyone point choose poor family one. Here those choose.",  
-      "addressLocality": "Strategy year town determine value thank. Ago girl middle soldier class.",  
-      "addressRegion": "Rather company large quite continue. Probably where whether space address.",  
-      "addressCountry": "Help once pass however outside accept to deep. Middle other argue author world. Before billion in argue guy. Quickly understand year face let piece sound there.",  
-      "postalCode": "Treat value within charge artist run management. Heart share environment put as.",  
-      "postOfficeBoxNumber": "Follow foot the hold five season add. Process be my your enjoy degree. Me figure who."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Off animal argue. Discover follow store cup operation win movement property."  
-  },  
-  "rt": {  
-    "type": "array",  
-    "value": [  
-      "oic.r.sensor.threeaxis",  
-      "oic.r.sensor.threeaxis"  
-    ]  
-  },  
-  "orientation": {  
-    "type": "array",  
-    "value": [  
-      477.9,  
-      239.9  
-    ]  
-  },  
-  "n": {  
-    "type": "string",  
-    "value": "Democratic inside three contain short find never. Sense they off project."  
-  },  
-  "if": {  
-    "type": "array",  
-    "value": [  
-      "oic.if.baseline",  
-      "oic.if.s"  
-    ]  
-  },  
-  "type": {  
-    "type": "string",  
-    "value": "threeAxis"  
-  }  
+    "id": "urn:ngsi-ld:threeAxis:id:QZPT:75196263",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1983-10-24T19:51:05Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "2004-08-04T06:17:20Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Course debate he decade yeah not. Themselves remain much food way drop. Easy couple person "  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Network Mr soon thousand figure town. Stuff explain evidence but picture site wear force. Experience enough nation star."  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Always with magazine safe assume. Identify top more. Might describe leader current stre"  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Past analysis stock. Form top them choice day."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Left project type air interview. Physical spend measure friend."  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:threeAxis:items:CTYU:51884285",  
+            "urn:ngsi-ld:threeAxis:items:OSFS:08678990"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:threeAxis:items:XJKL:03106181"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -42.3517035,  
+                6.360951  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Central blood budget. Give fly stage expect minute these sister.",  
+            "addressLocality": "Big commercial to act full across cost. Player bank will set. The see protect can argue maintain.",  
+            "addressRegion": "Performance perform just. Next evening increase sort instead project even certain.",  
+            "addressCountry": "Issue feel without bed yes travel head impact. On student result which. Design strong kin",  
+            "postalCode": "If big bar challenge hear. Economic expect production month in board.",  
+            "postOfficeBoxNumber": "Job control su",  
+            "streetNr": "Chance might seem ",  
+            "district": "Care center kid quality fact shake its."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Article few pattern stand agree mean beyond. Meeting rate her where. Resp"  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.sensor.threeaxis"  
+        ]  
+    },  
+    "orientation": {  
+        "type": "StructuredValue",  
+        "value": [  
+            965.7,  
+            13.4,  
+            82.1  
+        ]  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Build force community group total trip ready. "  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.s",  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "threeAxis"  
 }  
 ```  
 </details>  
@@ -588,55 +583,55 @@ threeAxis:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:threeAxis:id:RASO:06616206",  
-    "dateCreated": "1979-04-23T14:45:08Z",  
-    "dateModified": "1970-12-05T09:45:00Z",  
-    "source": "Indeed begin week action. Blood before record democratic. Moment imagine evidence which front. Simply office because have number for.",  
-    "name": "Media vote fund glass likely hour. Eye peace everyone live half teacher. Dark man marriage raise most. Process bag so specific growth.",  
-    "alternateName": "Century every task miss none those statement. Career station now use listen alone language.",  
-    "description": "Mr property both ago nature blood subject teach. Amount read position stay. Hot point group office.",  
-    "dataProvider": "Compare war data identify movie talk fine. Trip move sit identify already education information. Add level financial view huge lay.",  
+    "id": "urn:ngsi-ld:threeAxis:id:QZPT:75196263",  
+    "dateCreated": "1983-10-24T19:51:05Z",  
+    "dateModified": "2004-08-04T06:17:20Z",  
+    "source": "Course debate he decade yeah not. Themselves remain much food way drop. Easy couple person ",  
+    "name": "Network Mr soon thousand figure town. Stuff explain evidence but picture site wear force. Experience enough nation star.",  
+    "alternateName": "Always with magazine safe assume. Identify top more. Might describe leader current stre",  
+    "description": "Past analysis stock. Form top them choice day.",  
+    "dataProvider": "Left project type air interview. Physical spend measure friend.",  
     "owner": [  
-        "urn:ngsi-ld:threeAxis:items:OAYB:94248007",  
-        "urn:ngsi-ld:threeAxis:items:EBDC:08126235"  
+        "urn:ngsi-ld:threeAxis:items:CTYU:51884285",  
+        "urn:ngsi-ld:threeAxis:items:OSFS:08678990"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:threeAxis:items:CJOO:72940193",  
-        "urn:ngsi-ld:threeAxis:items:DCWZ:29485898"  
+        "urn:ngsi-ld:threeAxis:items:XJKL:03106181"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            -49.994884,  
-            141.567463  
+            -42.3517035,  
+            6.360951  
         ]  
     },  
     "address": {  
-        "streetAddress": "Property anyone point choose poor family one. Here those choose.",  
-        "addressLocality": "Strategy year town determine value thank. Ago girl middle soldier class.",  
-        "addressRegion": "Rather company large quite continue. Probably where whether space address.",  
-        "addressCountry": "Help once pass however outside accept to deep. Middle other argue author world. Before billion in argue guy. Quickly understand year face let piece sound there.",  
-        "postalCode": "Treat value within charge artist run management. Heart share environment put as.",  
-        "postOfficeBoxNumber": "Follow foot the hold five season add. Process be my your enjoy degree. Me figure who."  
+        "streetAddress": "Central blood budget. Give fly stage expect minute these sister.",  
+        "addressLocality": "Big commercial to act full across cost. Player bank will set. The see protect can argue maintain.",  
+        "addressRegion": "Performance perform just. Next evening increase sort instead project even certain.",  
+        "addressCountry": "Issue feel without bed yes travel head impact. On student result which. Design strong kin",  
+        "postalCode": "If big bar challenge hear. Economic expect production month in board.",  
+        "postOfficeBoxNumber": "Job control su",  
+        "streetNr": "Chance might seem ",  
+        "district": "Care center kid quality fact shake its."  
     },  
-    "areaServed": "Off animal argue. Discover follow store cup operation win movement property.",  
+    "areaServed": "Article few pattern stand agree mean beyond. Meeting rate her where. Resp",  
     "rt": [  
-        "oic.r.sensor.threeaxis",  
         "oic.r.sensor.threeaxis"  
     ],  
     "orientation": [  
-        477.9,  
-        239.9  
+        965.7,  
+        13.4,  
+        82.1  
     ],  
-    "n": "Democratic inside three contain short find never. Sense they off project.",  
+    "n": "Build force community group total trip ready. ",  
     "if": [  
-        "oic.if.baseline",  
-        "oic.if.s"  
+        "oic.if.s",  
+        "oic.if.baseline"  
     ],  
     "type": "threeAxis",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -646,78 +641,80 @@ threeAxis:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:threeAxis:id:HWJT:19776306",  
+    "id": "urn:ngsi-ld:threeAxis:id:QZPT:75196263",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2019-08-17T14:34:59Z"  
+            "@value": "1983-10-24T19:51:05Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1973-09-02T07:45:08Z"  
+            "@value": "2004-08-04T06:17:20Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Film president near election agent teacher. Learn organization green play moment ball role."  
+        "value": "Course debate he decade yeah not. Themselves remain much food way drop. Easy couple person "  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Born fight agreement then computer top describe page. Task loss compare financial attack."  
+        "value": "Network Mr soon thousand figure town. Stuff explain evidence but picture site wear force. Experience enough nation star."  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Computer building service so life actually effort. Entire bed interest data. Teach world operation Congress general major."  
+        "value": "Always with magazine safe assume. Identify top more. Might describe leader current stre"  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Including detail building Mr might. Think participant east section."  
+        "value": "Past analysis stock. Form top them choice day."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Response to anything investment beautiful possible network."  
+        "value": "Left project type air interview. Physical spend measure friend."  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:threeAxis:items:RFJU:81627755",  
-            "urn:ngsi-ld:threeAxis:items:RTKZ:08401097"  
+            "urn:ngsi-ld:threeAxis:items:CTYU:51884285",  
+            "urn:ngsi-ld:threeAxis:items:OSFS:08678990"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:threeAxis:items:LHRP:82492240"  
+            "urn:ngsi-ld:threeAxis:items:XJKL:03106181"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                47.491969,  
-                151.603806  
+                -42.3517035,  
+                6.360951  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Southern much knowledge edge. With smile vote card forward reach.",  
-            "addressLocality": "Red seven believe hard rule arrive move place. Smile drop home future family debate. Political blue guess paper lose cup.",  
-            "addressRegion": "Kid not test else age research. Reveal number would music. Then range less general.",  
-            "addressCountry": "Need international consider soon month toward. Total person particularly author authority everybody Mr set.",  
-            "postalCode": "Home live history tough. Least ever president buy spend look. Phone man race role develop friend with.",  
-            "postOfficeBoxNumber": "Less message certain prevent age major. Far answer onto sometimes employee significant."  
+            "streetAddress": "Central blood budget. Give fly stage expect minute these sister.",  
+            "addressLocality": "Big commercial to act full across cost. Player bank will set. The see protect can argue maintain.",  
+            "addressRegion": "Performance perform just. Next evening increase sort instead project even certain.",  
+            "addressCountry": "Issue feel without bed yes travel head impact. On student result which. Design strong kin",  
+            "postalCode": "If big bar challenge hear. Economic expect production month in board.",  
+            "postOfficeBoxNumber": "Job control su",  
+            "streetNr": "Chance might seem ",  
+            "district": "Care center kid quality fact shake its."  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Rise financial technology option natural quickly. Sure offer memory."  
+        "value": "Article few pattern stand agree mean beyond. Meeting rate her where. Resp"  
     },  
     "rt": {  
         "type": "Property",  
@@ -728,26 +725,25 @@ threeAxis:
     "orientation": {  
         "type": "Property",  
         "value": [  
-            533.4,  
-            302.7,  
-            612.3  
+            965.7,  
+            13.4,  
+            82.1  
         ]  
     },  
     "n": {  
         "type": "Property",  
-        "value": "Change term dream officer memory. Institution here on financial develop popular relationship choice."  
+        "value": "Build force community group total trip ready. "  
     },  
     "if": {  
         "type": "Property",  
         "value": [  
-            "oic.if.baseline",  
+            "oic.if.s",  
             "oic.if.baseline"  
         ]  
     },  
     "type": "threeAxis",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
