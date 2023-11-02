@@ -15,7 +15,15 @@
 ## Elenco delle proprietà  
 
 <sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
-- `heartRateZone[string]`: Zona di frequenza cardiaca attuale basata sul sistema Zoladz.  - `if[array]`: Il set di interfacce OCF supportato da questa risorsa.  - `n[string]`: Nome amichevole della risorsa  - `rt[array]`: Tipo di risorsa  - `type[string]`: Tipo di entità NGSI. Deve essere heartRateZone  <!-- /30-PropertiesList -->  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Il paese. Ad esempio, la Spagna  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: La località in cui si trova l'indirizzo civico e che si trova nella regione  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: La regione in cui si trova la località, e che si trova nel paese  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Un distretto è un tipo di divisione amministrativa che, in alcuni paesi, è gestita dal governo locale.    
+	- `postOfficeBoxNumber[string]`: Il numero di casella postale per gli indirizzi di casella postale. Ad esempio, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Il codice postale. Ad esempio, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: L'indirizzo stradale  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Numero che identifica una proprietà specifica su una strada pubblica    
+- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata  - `dateCreated[date-time]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `description[string]`: Descrizione dell'articolo  - `heartRateZone[string]`: Zona di frequenza cardiaca attuale basata sul sistema Zoladz.  - `id[*]`: Identificatore univoco dell'entità  - `if[array]`: Il set di interfacce OCF supportato da questa risorsa.  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `n[string]`: Nome amichevole della risorsa  - `name[string]`: Il nome di questo elemento  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `rt[array]`: Tipo di risorsa  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `type[string]`: Tipo di entità NGSI. Deve essere heartRateZone  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Proprietà richieste  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -32,6 +40,92 @@
 heartRateZone:    
   description: 'Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes a measured heart rate by the current Zone using the Zoladz method. The Zoladz method defines Zones based on maximum heart rate; Zone 1 is the lowest, Zone 5 is the highest. The heartRateZone is an enumeration containing one of: ''Zone1'', ''Zone2'', ''Zone3'', ''Zone4'', and ''Zone5''. '    
   properties:    
+    address:    
+      description: The mailing address    
+      properties:    
+        addressCountry:    
+          description: 'The country. For example, Spain'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
+        addressLocality:    
+          description: 'The locality in which the street address is, and which is in the region'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
+        addressRegion:    
+          description: 'The region in which the locality is, and which is in the country'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        postOfficeBoxNumber:    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
+        postalCode:    
+          description: 'The postal code. For example, 24004'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
+        streetAddress:    
+          description: The street address    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      type: object    
+      x-ngsi:    
+        model: https://schema.org/address    
+        type: Property    
+    alternateName:    
+      description: An alternative name for this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    areaServed:    
+      description: The geographic area where a service or offered item is provided    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    dataProvider:    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateCreated:    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateModified:    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    description:    
+      description: A description of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
     heartRateZone:    
       description: Current heart rate zone based on the Zoladz system.    
       enum:    
@@ -42,6 +136,23 @@ heartRateZone:
         - Zone5    
       readOnly: true    
       type: string    
+      x-ngsi:    
+        type: Property    
+    id:    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     if:    
@@ -58,11 +169,203 @@ heartRateZone:
       uniqueItems: true    
       x-ngsi:    
         type: Property    
+    location:    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+      oneOf:    
+        - description: Geojson reference to the item. Point    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                type: number    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - Point    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Point    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - LineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON LineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 4    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - Polygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Polygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPoint    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPoint    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiLineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiLineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    items:    
+                      type: number    
+                    minItems: 2    
+                    type: array    
+                  minItems: 4    
+                  type: array    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPolygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPolygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+      x-ngsi:    
+        type: GeoProperty    
     n:    
       description: Friendly name of the Resource    
       maxLength: 64    
       readOnly: true    
       type: string    
+      x-ngsi:    
+        type: Property    
+    name:    
+      description: The name of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    owner:    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
+      items:    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
+      type: array    
       x-ngsi:    
         type: Property    
     rt:    
@@ -76,6 +379,23 @@ heartRateZone:
       readOnly: true    
       type: array    
       uniqueItems: true    
+      x-ngsi:    
+        type: Property    
+    seeAlso:    
+      description: list of uri pointing to additional resources about the item    
+      oneOf:    
+        - items:    
+            format: uri    
+            type: string    
+          minItems: 1    
+          type: array    
+        - format: uri    
+          type: string    
+      x-ngsi:    
+        type: Property    
+    source:    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
+      type: string    
       x-ngsi:    
         type: Property    
     type:    
@@ -107,38 +427,48 @@ heartRateZone:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:heartRateZone:id:UZVJ:22985409",  
-  "dateCreated": "1979-03-05T13:38:17Z",  
-  "dateModified": "2018-12-08T03:09:47Z",  
-  "source": "Property responsibility heart buy history tree local. Economic wife easy able. Experience create condition or story.",  
-  "name": "Ever message major so goal. Of size them determine.",  
-  "alternateName": "Among appear far result. Tree force chance reach author inside certain. Meeting guess forward knowledge central feeling sense culture.",  
-  "description": "Few nice prepare read process. Who particular relationship serious quickly hear crime effort.",  
-  "dataProvider": "Explain you avoid property provide buy. Agreement seem political learn understand new argue.",  
-  "owner": [  
-    "urn:ngsi-ld:heartRateZone:items:VDWX:92609296",  
-    "urn:ngsi-ld:heartRateZone:items:TPGH:46115386"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:heartRateZone:items:EGNT:69353743",  
-    "urn:ngsi-ld:heartRateZone:items:CVQC:21023520"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      33.114013,  
-      -116.102574  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Low ahead also actually speak college far throughout. Three pull many seat sea vote our approach. Stay huge hospital along probably kid the machine. Claim opportunity few throughout.",  
-    "addressLocality": "Service what others enjoy up response. Western budget model especially. Read few your expert.",  
-    "addressRegion": "Not anyone hand accept scene road. Official travel carry back arm happen region.",  
-    "addressCountry": "Resource politics garden identify teacher whole. Like information include carry rich middle. Agency western age work board officer establish may.",  
-    "postalCode": "Machine right total. Expect wish establish north section rise ask something. So indeed large leg three. Fight themselves man draw machine once good.",  
-    "postOfficeBoxNumber": "Drop easy order turn actually. Produce marriage month purpose send."  
-  },  
-  "areaServed": "Arrive response nothing ahead. Whether east if reflect feeling. Opportunity group special."  
+    "id": "urn:ngsi-ld:heartRateZone:id:ENQF:45741847",  
+    "dateCreated": "1985-03-21T10:18:33Z",  
+    "dateModified": "2001-06-01T12:28:15Z",  
+    "source": "Speak fund coach politics rate open. Fly black leave model all these. Occur increase indeed home eight each soon community.",  
+    "name": "Throw new behind catch great sport. Everyone family describe wonder par",  
+    "alternateName": "Religious partner low conference husband. Director medical game city decide g",  
+    "description": "Together authority must best. Artist music his establish could.",  
+    "dataProvider": "Research product nice bed. Support may sure meeting subject politics.",  
+    "owner": [  
+        "urn:ngsi-ld:heartRateZone:items:OFPW:07697765",  
+        "urn:ngsi-ld:heartRateZone:items:GPIR:74445561"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:heartRateZone:items:KDLO:05139773"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -52.4623695,  
+            100.384494  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Positive amount official. Small card throw letter. Simply me whose grow according.",  
+        "addressLocality": "Chance nat",  
+        "addressRegion": "Industry thought office poor nation. Usually argue teach option bed. Cut physical true name any enjoy low.",  
+        "addressCountry": "Night which white popul",  
+        "postalCode": "Picture why officer store he order. Amount represent weight owner instead. Air reduce executive grow question class.",  
+        "postOfficeBoxNumber": "About conference message that city. Main despite region before. Occur information speak roa",  
+        "streetNr": "There positive top country walk someone on improve",  
+        "district": "Nature history run seek call skin me. Catch memory entire writer "  
+    },  
+    "areaServed": "Around daughter mouth condition operation. Two su",  
+    "rt": [  
+        "oic.r.sensor.heart.zone"  
+    ],  
+    "n": "Fly bag worry always. Base prev",  
+    "heartRateZone": "Zone3",  
+    "if": [  
+        "oic.if.s"  
+    ],  
+    "type": "heartRateZone"  
 }  
 ```  
 </details>  
@@ -147,79 +477,96 @@ heartRateZone:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:heartRateZone:id:UZVJ:22985409"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1979-03-05T13:38:17Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2018-12-08T03:09:47Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Property responsibility heart buy history tree local. Economic wife easy able. Experience create condition or story."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Ever message major so goal. Of size them determine."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Among appear far result. Tree force chance reach author inside certain. Meeting guess forward knowledge central feeling sense culture."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Few nice prepare read process. Who particular relationship serious quickly hear crime effort."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Explain you avoid property provide buy. Agreement seem political learn understand new argue."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:heartRateZone:items:VDWX:92609296",  
-      "urn:ngsi-ld:heartRateZone:items:TPGH:46115386"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:heartRateZone:items:EGNT:69353743",  
-      "urn:ngsi-ld:heartRateZone:items:CVQC:21023520"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        33.114013,  
-        -116.102574  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Low ahead also actually speak college far throughout. Three pull many seat sea vote our approach. Stay huge hospital along probably kid the machine. Claim opportunity few throughout.",  
-      "addressLocality": "Service what others enjoy up response. Western budget model especially. Read few your expert.",  
-      "addressRegion": "Not anyone hand accept scene road. Official travel carry back arm happen region.",  
-      "addressCountry": "Resource politics garden identify teacher whole. Like information include carry rich middle. Agency western age work board officer establish may.",  
-      "postalCode": "Machine right total. Expect wish establish north section rise ask something. So indeed large leg three. Fight themselves man draw machine once good.",  
-      "postOfficeBoxNumber": "Drop easy order turn actually. Produce marriage month purpose send."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Arrive response nothing ahead. Whether east if reflect feeling. Opportunity group special."  
-  }  
+    "id": "urn:ngsi-ld:heartRateZone:id:ENQF:45741847",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1985-03-21T10:18:33Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "2001-06-01T12:28:15Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Speak fund coach politics rate open. Fly black leave model all these. Occur increase indeed home eight each soon community."  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Throw new behind catch great sport. Everyone family describe wonder par"  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Religious partner low conference husband. Director medical game city decide g"  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Together authority must best. Artist music his establish could."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Research product nice bed. Support may sure meeting subject politics."  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:heartRateZone:items:OFPW:07697765",  
+            "urn:ngsi-ld:heartRateZone:items:GPIR:74445561"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:heartRateZone:items:KDLO:05139773"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -52.4623695,  
+                100.384494  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Positive amount official. Small card throw letter. Simply me whose grow according.",  
+            "addressLocality": "Chance nat",  
+            "addressRegion": "Industry thought office poor nation. Usually argue teach option bed. Cut physical true name any enjoy low.",  
+            "addressCountry": "Night which white popul",  
+            "postalCode": "Picture why officer store he order. Amount represent weight owner instead. Air reduce executive grow question class.",  
+            "postOfficeBoxNumber": "About conference message that city. Main despite region before. Occur information speak roa",  
+            "streetNr": "There positive top country walk someone on improve",  
+            "district": "Nature history run seek call skin me. Catch memory entire writer "  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Around daughter mouth condition operation. Two su"  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.sensor.heart.zone"  
+        ]  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Fly bag worry always. Base prev"  
+    },  
+    "heartRateZone": {  
+        "type": "Text",  
+        "value": "Zone3"  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.s"  
+        ]  
+    },  
+    "type": "heartRateZone"  
 }  
 ```  
 </details>  
@@ -228,41 +575,50 @@ heartRateZone:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:heartRateZone:id:UZVJ:22985409",  
-    "dateCreated": "1979-03-05T13:38:17Z",  
-    "dateModified": "2018-12-08T03:09:47Z",  
-    "source": "Property responsibility heart buy history tree local. Economic wife easy able. Experience create condition or story.",  
-    "name": "Ever message major so goal. Of size them determine.",  
-    "alternateName": "Among appear far result. Tree force chance reach author inside certain. Meeting guess forward knowledge central feeling sense culture.",  
-    "description": "Few nice prepare read process. Who particular relationship serious quickly hear crime effort.",  
-    "dataProvider": "Explain you avoid property provide buy. Agreement seem political learn understand new argue.",  
+    "id": "urn:ngsi-ld:heartRateZone:id:ENQF:45741847",  
+    "dateCreated": "1985-03-21T10:18:33Z",  
+    "dateModified": "2001-06-01T12:28:15Z",  
+    "source": "Speak fund coach politics rate open. Fly black leave model all these. Occur increase indeed home eight each soon community.",  
+    "name": "Throw new behind catch great sport. Everyone family describe wonder par",  
+    "alternateName": "Religious partner low conference husband. Director medical game city decide g",  
+    "description": "Together authority must best. Artist music his establish could.",  
+    "dataProvider": "Research product nice bed. Support may sure meeting subject politics.",  
     "owner": [  
-        "urn:ngsi-ld:heartRateZone:items:VDWX:92609296",  
-        "urn:ngsi-ld:heartRateZone:items:TPGH:46115386"  
+        "urn:ngsi-ld:heartRateZone:items:OFPW:07697765",  
+        "urn:ngsi-ld:heartRateZone:items:GPIR:74445561"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:heartRateZone:items:EGNT:69353743",  
-        "urn:ngsi-ld:heartRateZone:items:CVQC:21023520"  
+        "urn:ngsi-ld:heartRateZone:items:KDLO:05139773"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            33.114013,  
-            -116.102574  
+            -52.4623695,  
+            100.384494  
         ]  
     },  
     "address": {  
-        "streetAddress": "Low ahead also actually speak college far throughout. Three pull many seat sea vote our approach. Stay huge hospital along probably kid the machine. Claim opportunity few throughout.",  
-        "addressLocality": "Service what others enjoy up response. Western budget model especially. Read few your expert.",  
-        "addressRegion": "Not anyone hand accept scene road. Official travel carry back arm happen region.",  
-        "addressCountry": "Resource politics garden identify teacher whole. Like information include carry rich middle. Agency western age work board officer establish may.",  
-        "postalCode": "Machine right total. Expect wish establish north section rise ask something. So indeed large leg three. Fight themselves man draw machine once good.",  
-        "postOfficeBoxNumber": "Drop easy order turn actually. Produce marriage month purpose send."  
+        "streetAddress": "Positive amount official. Small card throw letter. Simply me whose grow according.",  
+        "addressLocality": "Chance nat",  
+        "addressRegion": "Industry thought office poor nation. Usually argue teach option bed. Cut physical true name any enjoy low.",  
+        "addressCountry": "Night which white popul",  
+        "postalCode": "Picture why officer store he order. Amount represent weight owner instead. Air reduce executive grow question class.",  
+        "postOfficeBoxNumber": "About conference message that city. Main despite region before. Occur information speak roa",  
+        "streetNr": "There positive top country walk someone on improve",  
+        "district": "Nature history run seek call skin me. Catch memory entire writer "  
     },  
-    "areaServed": "Arrive response nothing ahead. Whether east if reflect feeling. Opportunity group special.",  
+    "areaServed": "Around daughter mouth condition operation. Two su",  
+    "rt": [  
+        "oic.r.sensor.heart.zone"  
+    ],  
+    "n": "Fly bag worry always. Base prev",  
+    "heartRateZone": "Zone3",  
+    "if": [  
+        "oic.if.s"  
+    ],  
+    "type": "heartRateZone",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -272,82 +628,104 @@ heartRateZone:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:heartRateZone:id:CEHZ:58898697",  
+    "id": "urn:ngsi-ld:heartRateZone:id:ENQF:45741847",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1991-04-18T21:11:56Z"  
+            "@value": "1985-03-21T10:18:33Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1995-01-26T05:36:04Z"  
+            "@value": "2001-06-01T12:28:15Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Member attorney through allow environmental traditional low. Rate near federal rise always consider good."  
+        "value": "Speak fund coach politics rate open. Fly black leave model all these. Occur increase indeed home eight each soon community."  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Machine create herself dark determine painting suddenly. Drug foot morning her commercial as. Himself court account after stage street establish. Still color technology certain section everything job."  
+        "value": "Throw new behind catch great sport. Everyone family describe wonder par"  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Huge fund oil end card I enter. Professor black action act task follow outside. Message member week general."  
+        "value": "Religious partner low conference husband. Director medical game city decide g"  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Local light product commercial sound. Reduce national lead myself watch."  
+        "value": "Together authority must best. Artist music his establish could."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Similar far its. Project these sometimes first."  
+        "value": "Research product nice bed. Support may sure meeting subject politics."  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:heartRateZone:items:BPSC:73150514",  
-            "urn:ngsi-ld:heartRateZone:items:EFSD:48378576"  
+            "urn:ngsi-ld:heartRateZone:items:OFPW:07697765",  
+            "urn:ngsi-ld:heartRateZone:items:GPIR:74445561"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:heartRateZone:items:WMWA:60306746"  
+            "urn:ngsi-ld:heartRateZone:items:KDLO:05139773"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                -5.0300965,  
-                -156.656203  
+                -52.4623695,  
+                100.384494  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Collection thus manager customer. Read almost top now I set lose. Including lose war central benefit him others never.",  
-            "addressLocality": "Happy child option wall. Mother many environment student score main person. Ready easy sure direction compare project cold.",  
-            "addressRegion": "Generation foreign include admit prepare music want success. Nature continue manager back. Quality commercial learn identify full.",  
-            "addressCountry": "Lead pick computer expert office pass. Apply reduce old live off sure eat everything.",  
-            "postalCode": "Maybe direction future plan. Act address may hour lead. Poor way several.",  
-            "postOfficeBoxNumber": "Arrive democratic research thus end ready."  
+            "streetAddress": "Positive amount official. Small card throw letter. Simply me whose grow according.",  
+            "addressLocality": "Chance nat",  
+            "addressRegion": "Industry thought office poor nation. Usually argue teach option bed. Cut physical true name any enjoy low.",  
+            "addressCountry": "Night which white popul",  
+            "postalCode": "Picture why officer store he order. Amount represent weight owner instead. Air reduce executive grow question class.",  
+            "postOfficeBoxNumber": "About conference message that city. Main despite region before. Occur information speak roa",  
+            "streetNr": "There positive top country walk someone on improve",  
+            "district": "Nature history run seek call skin me. Catch memory entire writer "  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Blood class media follow author consider. Magazine upon which artist. She power system hundred."  
+        "value": "Around daughter mouth condition operation. Two su"  
     },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.sensor.heart.zone"  
+        ]  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Fly bag worry always. Base prev"  
+    },  
+    "heartRateZone": {  
+        "type": "Property",  
+        "value": "Zone3"  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.s"  
+        ]  
+    },  
+    "type": "heartRateZone",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
