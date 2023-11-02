@@ -12,87 +12,89 @@
     },
     {
       "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "rt": {
+          "description": "Property. The Resource Type.",
+          "items": {
+            "enum": [
+              "oic.r.colour.chroma"
+            ],
+            "maxLength": 64,
+            "type": "string"
+          },
+          "minItems": 1,
+          "uniqueItems": true,
+          "readOnly": true,
+          "type": "array"
+        },
+        "ct": {
+          "description": "Property. The Mired colour temperature.",
+          "minimum": 0,
+          "type": "integer"
+        },
+        "hue": {
+          "description": "Property. The hue angle as defined by the CIECAM02 model definition.",
+          "maximum": 360.0,
+          "minimum": 0.0,
+          "type": "number"
+        },
+        "saturation": {
+          "description": "Property. The saturation as defined by the CIECAM02 model definition.",
+          "maximum": 32767,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "maximumsaturation": {
+          "description": "Property. The maximum supported value of 'saturation' for this Device.",
+          "maximum": 32767,
+          "minimum": 0,
+          "readOnly": true,
+          "type": "integer"
+        },
+        "csc": {
+          "description": "Property. The X and Y coordinates of the colour in CIE colour space",
+          "items": {
+            "maximum": 1,
+            "minimum": 0,
+            "type": "number"
+          },
+          "maxItems": 2,
+          "minItems": 2,
+          "type": "array"
+        },
+        "n": {
+          "type": "string",
+          "maxLength": 64,
+          "readOnly": true,
+          "description": "Property. Friendly name of the Resource"
+        },
+        "if": {
+          "description": "Property. The OCF Interface set supported by this Resource.",
+          "items": {
+            "enum": [
+              "oic.if.a",
+              "oic.if.baseline"
+            ],
+            "maxLength": 64,
+            "type": "string"
+          },
+          "minItems": 2,
+          "uniqueItems": true,
+          "readOnly": true,
+          "type": "array"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "ColourChroma"
+          ],
+          "description": "Property. NGSI entity type. It has to be ColourChroma"
+        }
+      }
     }
   ],
-  "properties": {
-    "rt": {
-      "description": "Property. The Resource Type.",
-      "items": {
-        "enum": [
-          "oic.r.colour.chroma"
-        ],
-        "maxLength": 64,
-        "type": "string"
-      },
-      "minItems": 1,
-      "uniqueItems": true,
-      "readOnly": true,
-      "type": "array"
-    },
-    "ct": {
-      "description": "Property. The Mired colour temperature.",
-      "minimum": 0,
-      "type": "integer"
-    },
-    "hue": {
-      "description": "Property. The hue angle as defined by the CIECAM02 model definition.",
-      "maximum": 360.0,
-      "minimum": 0.0,
-      "type": "number"
-    },
-    "saturation": {
-      "description": "Property. The saturation as defined by the CIECAM02 model definition.",
-      "maximum": 32767,
-      "minimum": 0,
-      "type": "integer"
-    },
-    "maximumsaturation": {
-      "description": "Property. The maximum supported value of 'saturation' for this Device.",
-      "maximum": 32767,
-      "minimum": 0,
-      "readOnly": true,
-      "type": "integer"
-    },
-    "csc": {
-      "description": "Property. The X and Y coordinates of the colour in CIE colour space",
-      "items": {
-        "maximum": 1,
-        "minimum": 0,
-        "type": "number"
-      },
-      "maxItems": 2,
-      "minItems": 2,
-      "type": "array"
-    },
-    "n": {
-      "type": "string",
-      "maxLength": 64,
-      "readOnly": true,
-      "description": "Property. Friendly name of the Resource"
-    },
-    "if": {
-      "description": "Property. The OCF Interface set supported by this Resource.",
-      "items": {
-        "enum": [
-          "oic.if.a",
-          "oic.if.baseline"
-        ],
-        "maxLength": 64,
-        "type": "string"
-      },
-      "minItems": 2,
-      "uniqueItems": true,
-      "readOnly": true,
-      "type": "array"
-    },
-    "type": {
-      "type": "string",
-      "enum": [
-        "ColourChroma"
-      ],
-      "description": "Property. NGSI entity type. It has to be ColourChroma"
-    }
-  },
   "derivedFrom": "https://github.com/OpenInterConnect/IoTDataModels/blob/master/ColourChromaResURI.swagger.json",
   "license": "https://github.com/OpenInterConnect/IoTDataModels/blob/master/README.md",
   "required": [
