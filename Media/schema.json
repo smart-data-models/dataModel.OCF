@@ -12,73 +12,75 @@
     },
     {
       "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "rt": {
+          "description": "Property. The Resource Type.",
+          "items": {
+            "enum": [
+              "oic.r.media"
+            ],
+            "maxLength": 64,
+            "type": "string"
+          },
+          "minItems": 1,
+          "uniqueItems": true,
+          "readOnly": true,
+          "type": "array"
+        },
+        "media": {
+          "items": {
+            "properties": {
+              "sdp": {
+                "description": "The array of strings, one per SDP line.",
+                "items": {
+                  "description": "SDP media or attribute line",
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "url": {
+                "description": "The url for the media instance.",
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "type": "array",
+          "description": "Property. No original description was available"
+        },
+        "n": {
+          "type": "string",
+          "maxLength": 64,
+          "readOnly": true,
+          "description": "Property. Friendly name of the Resource"
+        },
+        "if": {
+          "description": "Property. The OCF Interface set supported by this Resource.",
+          "items": {
+            "enum": [
+              "oic.if.a",
+              "oic.if.s",
+              "oic.if.baseline"
+            ],
+            "type": "string"
+          },
+          "minItems": 2,
+          "uniqueItems": true,
+          "readOnly": true,
+          "type": "array"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "Media"
+          ],
+          "description": "Property. NGSI entity type. It has to be Media"
+        }
+      }
     }
   ],
-  "properties": {
-    "rt": {
-      "description": "Property. The Resource Type.",
-      "items": {
-        "enum": [
-          "oic.r.media"
-        ],
-        "maxLength": 64,
-        "type": "string"
-      },
-      "minItems": 1,
-      "uniqueItems": true,
-      "readOnly": true,
-      "type": "array"
-    },
-    "media": {
-      "items": {
-        "properties": {
-          "sdp": {
-            "description": "The array of strings, one per SDP line.",
-            "items": {
-              "description": "SDP media or attribute line",
-              "type": "string"
-            },
-            "type": "array"
-          },
-          "url": {
-            "description": "The url for the media instance.",
-            "type": "string"
-          }
-        },
-        "type": "object"
-      },
-      "type": "array",
-      "description": "Property. No original description was available"
-    },
-    "n": {
-      "type": "string",
-      "maxLength": 64,
-      "readOnly": true,
-      "description": "Property. Friendly name of the Resource"
-    },
-    "if": {
-      "description": "Property. The OCF Interface set supported by this Resource.",
-      "items": {
-        "enum": [
-          "oic.if.a",
-          "oic.if.s",
-          "oic.if.baseline"
-        ],
-        "type": "string"
-      },
-      "minItems": 2,
-      "uniqueItems": true,
-      "readOnly": true,
-      "type": "array"
-    },
-    "type": {
-      "type": "string",
-      "enum": [
-        "Media"
-      ],
-      "description": "Property. NGSI entity type. It has to be Media"
-    }
-  },
   "derivedFrom": "https://github.com/OpenInterConnect/IoTDataModels/blob/master/MediaResURI.swagger.json",
   "license": "https://github.com/OpenInterConnect/IoTDataModels/blob/master/README.md",
   "required": [
