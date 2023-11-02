@@ -1,64 +1,51 @@
 {
-  "id": "urn:ngsi-ld:Sensor:id:EEVF:23119928",
-  "dateCreated": "1991-01-27T02:40:57Z",
-  "dateModified": "1971-12-13T00:43:58Z",
-  "source": "Term event garden father large.",
-  "name": "Hundred number record population speak democratic consider. Describe exist ok also black imagine son.",
-  "alternateName": "Measure bank part still low century. Wind our our foreign prove southern. Hit moment drop anyone. According eye hospital have fund partner.",
-  "description": "Amount until similar Mr debate. Other skin high term challenge Mrs building. Whatever stay our this.",
-  "dataProvider": "Plant suggest decision movement. Training term put agent common eat help while. Single morning offer detail other man look. Baby age dinner task right property lot.",
-  "owner": [
-    "urn:ngsi-ld:Sensor:items:NGFL:29340842",
-    "urn:ngsi-ld:Sensor:items:HZVS:91325080"
-  ],
-  "seeAlso": [
-    "urn:ngsi-ld:Sensor:items:SVWN:41330440",
-    "urn:ngsi-ld:Sensor:items:DLFC:40040901"
-  ],
-  "location": {
-    "type": "Point",
-    "coordinates": [
-      -19.9539755,
-      -135.278603
-    ]
-  },
-  "address": {
-    "streetAddress": "Into Mrs old blood. Reflect better land direction.",
-    "addressLocality": "One thus five the stand our open. Large approach in hard place. Business begin program kid. Religious include home guy now five feel hour.",
-    "addressRegion": "Out both range clearly just. Event they realize this somebody.",
-    "addressCountry": "Every only vote stock he power list. Believe contain inside next buy bill particularly food.",
-    "postalCode": "Century major more. Rise glass anyone sit our class family thing.",
-    "postOfficeBoxNumber": "That direction attention significant though article day. Hour various south note later."
-  },
-  "areaServed": "Another article Mr. Determine art treat answer. Career list cold from stuff rather material.",
-  "rt": [
-    "oic.r.sensor",
-    "oic.r.sensor"
-  ],
-  "value": {
-    "type": "Property",
-    "value": false
-  },
-  "measurement": {
-    "type": "Property",
-    "value": 96.8
-  },
-  "precision": {
-    "type": "Property",
-    "value": 314.9
-  },
-  "n": "Between apply probably seat half. Republican world accept job.",
-  "range": [
-    791.0,
-    897.9
-  ],
-  "step": {
-    "type": "Property",
-    "value": 917.7
-  },
-  "if": [
-    "oic.if.s",
-    "oic.if.baseline"
-  ],
-  "type": "Sensor"
+    "id": "urn:ngsi-ld:Sensor:id:WPTP:35827884",
+    "dateCreated": "1996-08-31T15:15:49Z",
+    "dateModified": "1975-12-20T10:52:56Z",
+    "source": "Weight wait require experience my collection. Hold policy lead plant. Human indicate her only. Sea resource east sign into.",
+    "name": "She pull fill that. Avoid bed maintain mother. Wait this run particularly.",
+    "alternateName": "Along television foreign. Majority effort inside this best realize. Difficult note address newspaper talk according.",
+    "description": "Center north record side economy administration chance off. List need staff.",
+    "dataProvider": "Small leg upon live foot big. Direction morning address six.",
+    "owner": [
+        "urn:ngsi-ld:Sensor:items:KKJR:79761930",
+        "urn:ngsi-ld:Sensor:items:KGRZ:45195777"
+    ],
+    "seeAlso": [
+        "urn:ngsi-ld:Sensor:items:XBPZ:05320212"
+    ],
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            38.113858,
+            67.542463
+        ]
+    },
+    "address": {
+        "streetAddress": "Ago law thank make challenge which travel. National fish national worry find affect. Tell prevent along west power science admit.",
+        "addressLocality": "Onto key gas we moment full together. Magaz",
+        "addressRegion": "These identify believ",
+        "addressCountry": "Data agency stay of mean expect analysis. Ever other cup eight not sure. Score fight practice notice.",
+        "postalCode": "Church many room worker affect huge claim. Scientist nothing do career. Cup other cultural soldier fact majority.",
+        "postOfficeBoxNumber": "Learn amount change or space everyone. Fear since as. Happen firm product blue store big quality.",
+        "streetNr": "Above whatever same stop ahead pattern rather. Instead hop",
+        "district": "Fish then different true since. Produce seat upon option fe"
+    },
+    "areaServed": "Level conference church system anyone.",
+    "rt": [
+        "oic.r.sensor"
+    ],
+    "value": false,
+    "measurement": 985.0,
+    "precision": 481.2,
+    "n": "Beat agreement house heavy arrive.",
+    "range": [
+        739.2,
+        759.3
+    ],
+    "step": 604.3,
+    "if": [
+        "oic.if.s"
+    ],
+    "type": "Sensor"
 }
