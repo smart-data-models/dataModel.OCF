@@ -12,51 +12,53 @@
     },
     {
       "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "rt": {
+          "description": "Property. The Resource Type.",
+          "items": {
+            "maxLength": 64,
+            "type": "string",
+            "enum": [
+              "oic.r.userinfo"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true,
+          "readOnly": true,
+          "type": "array"
+        },
+        "n": {
+          "type": "string",
+          "maxLength": 64,
+          "readOnly": true,
+          "description": "Property. Friendly name of the Resource"
+        },
+        "if": {
+          "description": "Property. The OCF Interface set supported by this Resource.",
+          "items": {
+            "enum": [
+              "oic.if.rw",
+              "oic.if.baseline"
+            ],
+            "type": "string"
+          },
+          "minItems": 2,
+          "uniqueItems": true,
+          "readOnly": true,
+          "type": "array"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "UserInfo-retrieve"
+          ],
+          "description": "Property. NGSI entity type. It has to be UserInfo-retrieve"
+        }
+      }
     }
   ],
-  "properties": {
-    "rt": {
-      "description": "Property. The Resource Type.",
-      "items": {
-        "maxLength": 64,
-        "type": "string",
-        "enum": [
-          "oic.r.userinfo"
-        ]
-      },
-      "minItems": 1,
-      "uniqueItems": true,
-      "readOnly": true,
-      "type": "array"
-    },
-    "n": {
-      "type": "string",
-      "maxLength": 64,
-      "readOnly": true,
-      "description": "Property. Friendly name of the Resource"
-    },
-    "if": {
-      "description": "Property. The OCF Interface set supported by this Resource.",
-      "items": {
-        "enum": [
-          "oic.if.rw",
-          "oic.if.baseline"
-        ],
-        "type": "string"
-      },
-      "minItems": 2,
-      "uniqueItems": true,
-      "readOnly": true,
-      "type": "array"
-    },
-    "type": {
-      "type": "string",
-      "enum": [
-        "UserInfo-retrieve"
-      ],
-      "description": "Property. NGSI entity type. It has to be UserInfo-retrieve"
-    }
-  },
   "derivedFrom": "https://github.com/OpenInterConnect/IoTDataModels/blob/master/UserInfo-retrieveResURI.swagger.json",
   "license": "https://github.com/OpenInterConnect/IoTDataModels/blob/master/README.md",
   "required": [
