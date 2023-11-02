@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: El número del apartado de correos para las direcciones de apartados postales. Por ejemplo, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: El código postal. Por ejemplo, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: La dirección  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Número que identifica una propiedad específica en una vía pública    
 - `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada  - `dateCreated[date-time]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento  - `dateModified[date-time]`: Marca de tiempo de la última modificación de la entidad. Suele ser asignada por la plataforma de almacenamiento  - `description[string]`: Descripción de este artículo  - `id[*]`: Identificador único de la entidad  - `if[array]`: El conjunto de interfaces OCF que admite este recurso  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  - `n[string]`: Nombre descriptivo del recurso  - `name[string]`: El nombre de este artículo  - `openLevel[number]`: Cómo de abierta o entreabierta está la entidad  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  - `range[array]`: El rango válido para la Propiedad en el Recurso como un entero. El primer valor de la matriz es el valor mínimo, el segundo valor de la matriz es el valor máximo  - `rt[array]`: El tipo de recurso  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `step[number]`: Valor de paso a través del rango definido cuando el rango es un número entero.  Este es el incremento para valores válidos a través del rango; así que si el rango es 0..10 y el paso es 2 entonces los valores válidos son 0,2,4,6,8,10  - `type[string]`: Tipo de entidad NGSI. Tiene que ser OpenLevel  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propiedades requeridas  
@@ -435,60 +436,54 @@ OpenLevel:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:OpenLevel:id:DXZU:90727712",  
-  "dateCreated": "1974-06-12T04:22:16Z",  
-  "dateModified": "2001-04-01T12:10:53Z",  
-  "source": "Model fact everybody subject listen rather suggest. Within crime ok central sing unit thing. Family car eye very.",  
-  "name": "Traditional understand reduce two ok between. Claim today herself sing travel. Every while expect down best society.",  
-  "alternateName": "Issue lose certain this fish. Sport hour he force benefit because. Company year rule Mrs despite.",  
-  "description": "Color discussion college by partner team back less. Impact front official watch meet.",  
-  "dataProvider": "Leave thus thing only treatment. Which more operation mouth.",  
-  "owner": [  
-    "urn:ngsi-ld:OpenLevel:items:ZFES:00965111",  
-    "urn:ngsi-ld:OpenLevel:items:VBPJ:93015429"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:OpenLevel:items:KREP:15798269",  
-    "urn:ngsi-ld:OpenLevel:items:EWJY:42743420"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      74.6360845,  
-      80.399151  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Especially tend successful thousand thank occur. Security three so choose somebody staff.",  
-    "addressLocality": "Maybe drug government war. Suffer but thank all street call full account. Responsibility himself mission half claim market information.",  
-    "addressRegion": "Within environmental black head capital raise daughter. Throw matter need author spend industry fly. Enter board try little their group.",  
-    "addressCountry": "Would suffer traditional couple woman always sort brother. Near agency blood number continue.",  
-    "postalCode": "We determine dog figure source talk. Pay data result carry sort. Same sell huge only ever.",  
-    "postOfficeBoxNumber": "Knowledge fall well art doctor. They raise international. Choice require event."  
-  },  
-  "areaServed": "Front dinner third term figure. Project also none spring compare identify.",  
-  "rt": [  
-    "oic.r.openlevel",  
-    "oic.r.openlevel"  
-  ],  
-  "openLevel": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "n": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair.",  
-  "range": [  
-    864,  
-    864  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "if": [  
-    "oic.if.a",  
-    "oic.if.baseline"  
-  ],  
-  "type": "OpenLevel"  
+    "id": "urn:ngsi-ld:OpenLevel:id:SHHZ:09753513",  
+    "dateCreated": "1979-09-12T17:12:57Z",  
+    "dateModified": "2006-12-14T02:07:28Z",  
+    "source": "Ball floor meet usually. Feeling fact by four. Data son natural explain before something first.",  
+    "name": "Contain start almost wonder employee. Bed serious theory type.",  
+    "alternateName": "Raise study modern miss dog Democrat quickly. Often l",  
+    "description": "Party main picture suddenly drug rule. Relate head color international.",  
+    "dataProvider": "Situation talk despite stage. Own available buy country store build before.",  
+    "owner": [  
+        "urn:ngsi-ld:OpenLevel:items:GXZB:10903217",  
+        "urn:ngsi-ld:OpenLevel:items:CUJL:08691413"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:OpenLevel:items:WMGI:62087091"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            6.2489555,  
+            72.445376  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Recently data should small. Suddenly garden economy others. Program actually race tonight themselves true.",  
+        "addressLocality": "Study economy night actually score from. Name care several. Good explain grow water plant perform resource.",  
+        "addressRegion": "Stock ball organization recognize civi",  
+        "addressCountry": "Those traditional page a although for study. Speak themselves speech. Nature white without study candidate.",  
+        "postalCode": "Wear individual about add senior woman.",  
+        "postOfficeBoxNumber": "Best budget power them evidence without beyond take. Physical against trial son break either. Stage",  
+        "streetNr": "Fire happen nothing support suffer which parent. Republican total policy head Mrs debate onto.",  
+        "district": "Character four smile responsibility."  
+    },  
+    "areaServed": "Along especially change on guess writer can boy. Value film tax rock few. Federal board night loss front something.",  
+    "rt": [  
+        "oic.r.openlevel"  
+    ],  
+    "openLevel": 864,  
+    "n": "American whole magazine truth stop whose. On traditional measu",  
+    "range": [  
+        864,  
+        864  
+    ],  
+    "step": 864,  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.a"  
+    ],  
+    "type": "OpenLevel"  
 }  
 ```  
 </details>  
@@ -497,122 +492,108 @@ OpenLevel:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:OpenLevel:id:DXZU:90727712"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1974-06-12T04:22:16Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2001-04-01T12:10:53Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Model fact everybody subject listen rather suggest. Within crime ok central sing unit thing. Family car eye very."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Traditional understand reduce two ok between. Claim today herself sing travel. Every while expect down best society."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Issue lose certain this fish. Sport hour he force benefit because. Company year rule Mrs despite."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Color discussion college by partner team back less. Impact front official watch meet."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Leave thus thing only treatment. Which more operation mouth."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:OpenLevel:items:ZFES:00965111",  
-      "urn:ngsi-ld:OpenLevel:items:VBPJ:93015429"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:OpenLevel:items:KREP:15798269",  
-      "urn:ngsi-ld:OpenLevel:items:EWJY:42743420"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        74.6360845,  
-        80.399151  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Especially tend successful thousand thank occur. Security three so choose somebody staff.",  
-      "addressLocality": "Maybe drug government war. Suffer but thank all street call full account. Responsibility himself mission half claim market information.",  
-      "addressRegion": "Within environmental black head capital raise daughter. Throw matter need author spend industry fly. Enter board try little their group.",  
-      "addressCountry": "Would suffer traditional couple woman always sort brother. Near agency blood number continue.",  
-      "postalCode": "We determine dog figure source talk. Pay data result carry sort. Same sell huge only ever.",  
-      "postOfficeBoxNumber": "Knowledge fall well art doctor. They raise international. Choice require event."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Front dinner third term figure. Project also none spring compare identify."  
-  },  
-  "rt": {  
-    "type": "array",  
-    "value": [  
-      "oic.r.openlevel",  
-      "oic.r.openlevel"  
-    ]  
-  },  
-  "openLevel": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 864  
-    }  
-  },  
-  "n": {  
-    "type": "string",  
-    "value": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair."  
-  },  
-  "range": {  
-    "type": "array",  
-    "value": [  
-      864,  
-      864  
-    ]  
-  },  
-  "step": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 864  
-    }  
-  },  
-  "if": {  
-    "type": "array",  
-    "value": [  
-      "oic.if.a",  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "type": {  
-    "type": "string",  
-    "value": "OpenLevel"  
-  }  
+    "id": "urn:ngsi-ld:OpenLevel:id:SHHZ:09753513",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1979-09-12T17:12:57Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "2006-12-14T02:07:28Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Ball floor meet usually. Feeling fact by four. Data son natural explain before something first."  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Contain start almost wonder employee. Bed serious theory type."  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Raise study modern miss dog Democrat quickly. Often l"  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Party main picture suddenly drug rule. Relate head color international."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Situation talk despite stage. Own available buy country store build before."  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:OpenLevel:items:GXZB:10903217",  
+            "urn:ngsi-ld:OpenLevel:items:CUJL:08691413"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:OpenLevel:items:WMGI:62087091"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                6.2489555,  
+                72.445376  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Recently data should small. Suddenly garden economy others. Program actually race tonight themselves true.",  
+            "addressLocality": "Study economy night actually score from. Name care several. Good explain grow water plant perform resource.",  
+            "addressRegion": "Stock ball organization recognize civi",  
+            "addressCountry": "Those traditional page a although for study. Speak themselves speech. Nature white without study candidate.",  
+            "postalCode": "Wear individual about add senior woman.",  
+            "postOfficeBoxNumber": "Best budget power them evidence without beyond take. Physical against trial son break either. Stage",  
+            "streetNr": "Fire happen nothing support suffer which parent. Republican total policy head Mrs debate onto.",  
+            "district": "Character four smile responsibility."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Along especially change on guess writer can boy. Value film tax rock few. Federal board night loss front something."  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.openlevel"  
+        ]  
+    },  
+    "openLevel": {  
+        "type": "Number",  
+        "value": 864  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "American whole magazine truth stop whose. On traditional measu"  
+    },  
+    "range": {  
+        "type": "StructuredValue",  
+        "value": [  
+            864,  
+            864  
+        ]  
+    },  
+    "step": {  
+        "type": "Number",  
+        "value": 864  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.baseline",  
+            "oic.if.a"  
+        ]  
+    },  
+    "type": "OpenLevel"  
 }  
 ```  
 </details>  
@@ -621,63 +602,56 @@ OpenLevel:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:OpenLevel:id:DXZU:90727712",  
-    "dateCreated": "1974-06-12T04:22:16Z",  
-    "dateModified": "2001-04-01T12:10:53Z",  
-    "source": "Model fact everybody subject listen rather suggest. Within crime ok central sing unit thing. Family car eye very.",  
-    "name": "Traditional understand reduce two ok between. Claim today herself sing travel. Every while expect down best society.",  
-    "alternateName": "Issue lose certain this fish. Sport hour he force benefit because. Company year rule Mrs despite.",  
-    "description": "Color discussion college by partner team back less. Impact front official watch meet.",  
-    "dataProvider": "Leave thus thing only treatment. Which more operation mouth.",  
+    "id": "urn:ngsi-ld:OpenLevel:id:SHHZ:09753513",  
+    "dateCreated": "1979-09-12T17:12:57Z",  
+    "dateModified": "2006-12-14T02:07:28Z",  
+    "source": "Ball floor meet usually. Feeling fact by four. Data son natural explain before something first.",  
+    "name": "Contain start almost wonder employee. Bed serious theory type.",  
+    "alternateName": "Raise study modern miss dog Democrat quickly. Often l",  
+    "description": "Party main picture suddenly drug rule. Relate head color international.",  
+    "dataProvider": "Situation talk despite stage. Own available buy country store build before.",  
     "owner": [  
-        "urn:ngsi-ld:OpenLevel:items:ZFES:00965111",  
-        "urn:ngsi-ld:OpenLevel:items:VBPJ:93015429"  
+        "urn:ngsi-ld:OpenLevel:items:GXZB:10903217",  
+        "urn:ngsi-ld:OpenLevel:items:CUJL:08691413"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:OpenLevel:items:KREP:15798269",  
-        "urn:ngsi-ld:OpenLevel:items:EWJY:42743420"  
+        "urn:ngsi-ld:OpenLevel:items:WMGI:62087091"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            74.6360845,  
-            80.399151  
+            6.2489555,  
+            72.445376  
         ]  
     },  
     "address": {  
-        "streetAddress": "Especially tend successful thousand thank occur. Security three so choose somebody staff.",  
-        "addressLocality": "Maybe drug government war. Suffer but thank all street call full account. Responsibility himself mission half claim market information.",  
-        "addressRegion": "Within environmental black head capital raise daughter. Throw matter need author spend industry fly. Enter board try little their group.",  
-        "addressCountry": "Would suffer traditional couple woman always sort brother. Near agency blood number continue.",  
-        "postalCode": "We determine dog figure source talk. Pay data result carry sort. Same sell huge only ever.",  
-        "postOfficeBoxNumber": "Knowledge fall well art doctor. They raise international. Choice require event."  
+        "streetAddress": "Recently data should small. Suddenly garden economy others. Program actually race tonight themselves true.",  
+        "addressLocality": "Study economy night actually score from. Name care several. Good explain grow water plant perform resource.",  
+        "addressRegion": "Stock ball organization recognize civi",  
+        "addressCountry": "Those traditional page a although for study. Speak themselves speech. Nature white without study candidate.",  
+        "postalCode": "Wear individual about add senior woman.",  
+        "postOfficeBoxNumber": "Best budget power them evidence without beyond take. Physical against trial son break either. Stage",  
+        "streetNr": "Fire happen nothing support suffer which parent. Republican total policy head Mrs debate onto.",  
+        "district": "Character four smile responsibility."  
     },  
-    "areaServed": "Front dinner third term figure. Project also none spring compare identify.",  
+    "areaServed": "Along especially change on guess writer can boy. Value film tax rock few. Federal board night loss front something.",  
     "rt": [  
-        "oic.r.openlevel",  
         "oic.r.openlevel"  
     ],  
-    "openLevel": {  
-        "type": "Property",  
-        "value": 864  
-    },  
-    "n": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair.",  
+    "openLevel": 864,  
+    "n": "American whole magazine truth stop whose. On traditional measu",  
     "range": [  
         864,  
         864  
     ],  
-    "step": {  
-        "type": "Property",  
-        "value": 864  
-    },  
+    "step": 864,  
     "if": [  
-        "oic.if.a",  
-        "oic.if.baseline"  
+        "oic.if.baseline",  
+        "oic.if.a"  
     ],  
     "type": "OpenLevel",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -687,78 +661,80 @@ OpenLevel:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:OpenLevel:id:GFHN:95096500",  
+    "id": "urn:ngsi-ld:OpenLevel:id:SHHZ:09753513",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2021-02-12T19:29:57Z"  
+            "@value": "1979-09-12T17:12:57Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1984-01-25T00:06:23Z"  
+            "@value": "2006-12-14T02:07:28Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Final too tax still traditional majority. Certainly tough admit."  
+        "value": "Ball floor meet usually. Feeling fact by four. Data son natural explain before something first."  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Class good main page parent. Note wind series few wide. Base surface environment inside Democrat better pay. High action enter ground marriage card community."  
+        "value": "Contain start almost wonder employee. Bed serious theory type."  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Tough move something deep fact so. Already order read act owner wish. Both one each."  
+        "value": "Raise study modern miss dog Democrat quickly. Often l"  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Might stock eight a."  
+        "value": "Party main picture suddenly drug rule. Relate head color international."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Sign dog indicate wrong. Affect never school face notice finally while."  
+        "value": "Situation talk despite stage. Own available buy country store build before."  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:OpenLevel:items:DFVT:37088837",  
-            "urn:ngsi-ld:OpenLevel:items:SEGJ:48404454"  
+            "urn:ngsi-ld:OpenLevel:items:GXZB:10903217",  
+            "urn:ngsi-ld:OpenLevel:items:CUJL:08691413"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:OpenLevel:items:APOK:02229473"  
+            "urn:ngsi-ld:OpenLevel:items:WMGI:62087091"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                -50.800692,  
-                135.281918  
+                6.2489555,  
+                72.445376  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Also would attorney. Number ability approach season. Imagine only age program.",  
-            "addressLocality": "Response effort wait human where particularly pay. Concern language response able police toward tell.",  
-            "addressRegion": "Music study they item admit name beautiful. House capital goal national. Discover treat table ready summer defense. West away high training force ground every.",  
-            "addressCountry": "Impact themselves contain nearly time cup later. Real view box foot. Focus why sense year job daughter work.",  
-            "postalCode": "Cold prove answer off. Recognize second attention how everybody cause. Want defense model relationship attorney maybe they. Win mother both chair.",  
-            "postOfficeBoxNumber": "Talk trial budget property coach much white."  
+            "streetAddress": "Recently data should small. Suddenly garden economy others. Program actually race tonight themselves true.",  
+            "addressLocality": "Study economy night actually score from. Name care several. Good explain grow water plant perform resource.",  
+            "addressRegion": "Stock ball organization recognize civi",  
+            "addressCountry": "Those traditional page a although for study. Speak themselves speech. Nature white without study candidate.",  
+            "postalCode": "Wear individual about add senior woman.",  
+            "postOfficeBoxNumber": "Best budget power them evidence without beyond take. Physical against trial son break either. Stage",  
+            "streetNr": "Fire happen nothing support suffer which parent. Republican total policy head Mrs debate onto.",  
+            "district": "Character four smile responsibility."  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Spring yet collection. Live information case mention particularly notice report."  
+        "value": "Along especially change on guess writer can boy. Value film tax rock few. Federal board night loss front something."  
     },  
     "rt": {  
         "type": "Property",  
@@ -768,22 +744,22 @@ OpenLevel:
     },  
     "openLevel": {  
         "type": "Property",  
-        "value": 586  
+        "value": 864  
     },  
     "n": {  
         "type": "Property",  
-        "value": "Between letter everything. Fish into collection final commercial these."  
+        "value": "American whole magazine truth stop whose. On traditional measu"  
     },  
     "range": {  
         "type": "Property",  
         "value": [  
-            564,  
-            341  
+            864,  
+            864  
         ]  
     },  
     "step": {  
         "type": "Property",  
-        "value": 695  
+        "value": 864  
     },  
     "if": {  
         "type": "Property",  
@@ -794,8 +770,7 @@ OpenLevel:
     },  
     "type": "OpenLevel",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
