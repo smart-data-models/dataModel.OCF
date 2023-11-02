@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: El número del apartado de correos para las direcciones de apartados postales. Por ejemplo, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: El código postal. Por ejemplo, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: La dirección  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Número que identifica una propiedad específica en una vía pública    
 - `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `cadence[number]`: Esta propiedad describe la velocidad a la que un ciclista pedalea o gira los pedales.  - `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada  - `dateCreated[date-time]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento  - `dateModified[date-time]`: Marca de tiempo de la última modificación de la entidad. Suele ser asignada por la plataforma de almacenamiento  - `description[string]`: Descripción de este artículo  - `id[*]`: Identificador único de la entidad  - `if[array]`: El conjunto de interfaces OCF que admite este recurso  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  - `n[string]`: Nombre descriptivo del recurso  - `name[string]`: El nombre de este artículo  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  - `range[array]`: El rango válido para la Propiedad en el Recurso como un entero. El primer valor de la matriz es el valor mínimo, el segundo valor de la matriz es el valor máximo  - `rt[array]`: El tipo de recurso  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `step[number]`: Valor de paso a través del rango definido cuando el rango es un número entero.  Este es el incremento para valores válidos a través del rango; así que si el rango es 0..10 y el paso es 2 entonces los valores válidos son 0,2,4,6,8,10  - `type[string]`: Tipo de entidad NGSI. Tiene que ser Cadence  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propiedades requeridas  
@@ -436,60 +437,53 @@ Cadence:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Cadence:id:HOCY:33423995",  
-  "dateCreated": "1982-07-11T18:42:18Z",  
-  "dateModified": "1976-08-10T22:06:18Z",  
-  "source": "Key state be. Coach lead image fear late picture.",  
-  "name": "Produce miss structure policy fall east move. Mouth sort free recent range positive make. Ready eye east little.",  
-  "alternateName": "Minute room executive present happen pick sing nor. Job future behind poor. Answer mother possible significant.",  
-  "description": "Window trouble ever prepare along especially check skin. Seem look trade kid add finally process speech.",  
-  "dataProvider": "Building form store media economy shoulder body yeah. Court certain field wall wind. Much five argue Mrs Mr.",  
-  "owner": [  
-    "urn:ngsi-ld:Cadence:items:ACCG:67885309",  
-    "urn:ngsi-ld:Cadence:items:DUAP:61806876"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Cadence:items:OOOM:73838844",  
-    "urn:ngsi-ld:Cadence:items:SKJC:85233323"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -9.528281,  
-      95.749617  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "By who issue continue perhaps if black. During kind world table air. Modern ever about goal some some research.",  
-    "addressLocality": "Would chair suggest recognize learn.",  
-    "addressRegion": "Claim here evening go response front rise phone. Success father series including important low. Minute glass she task its.",  
-    "addressCountry": "Financial north pattern poor rise structure history. Director student picture.",  
-    "postalCode": "Prepare role money dream here prepare tend. Fight nearly now attention alone personal increase. Fish guess family nature drop eight drug. Paper medical similar thank.",  
-    "postOfficeBoxNumber": "Magazine where party agent draw might carry. Story she image next society exactly. Season discussion Congress news movement mouth radio."  
-  },  
-  "areaServed": "Free step record paper ever quality. Inside west baby letter. Organization guess pay rich environment him choice film.",  
-  "cadence": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "rt": [  
-    "oic.r.cadence",  
-    "oic.r.cadence"  
-  ],  
-  "n": "Whole magazine truth stop whose.",  
-  "if": [  
-    "oic.if.s",  
-    "oic.if.baseline"  
-  ],  
-  "range": [  
-    864,  
-    864  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "type": "Cadence"  
+    "id": "urn:ngsi-ld:Cadence:id:TPHF:03053239",  
+    "dateCreated": "1978-01-30T19:52:56Z",  
+    "dateModified": "1983-06-21T10:31:38Z",  
+    "source": "On visit act fact of good difference radio. Wom",  
+    "name": "Truth table real fall. Light us trip class too skin win. Capital family knowledge cause year.",  
+    "alternateName": "Friend group responsibility democratic similar plan ok ahead. Rate hundred trial amount population air appear. Reduce bar stock.",  
+    "description": "Agree kitchen human available job toward Democrat operation.",  
+    "dataProvider": "Would",  
+    "owner": [  
+        "urn:ngsi-ld:Cadence:items:HVXJ:51284952",  
+        "urn:ngsi-ld:Cadence:items:CKFD:65641415"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Cadence:items:TRMB:82747414"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -2.589504,  
+            -25.845441  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Position body well. Suddenly garden trade politics gas institution against. Soon level there able",  
+        "addressLocality": "Throughout report always later wide center morning.",  
+        "addressRegion": "Administration modern impact skill computer police. Wife",  
+        "addressCountry": "Edge data main magazine. Hair region medical attention program real culture. Lawyer set thousand human me their.",  
+        "postalCode": "Individual cell away owner. Beat nature someone. This music unit view recognize face.",  
+        "postOfficeBoxNumber": "Institut",  
+        "streetNr": "Usually war evidence. School science small i",  
+        "district": "Rich hold choose sense "  
+    },  
+    "areaServed": "Weight network meet property. Security present read on charge. Career heart yeah general so.",  
+    "cadence": 864,  
+    "rt": [  
+        "oic.r.cadence"  
+    ],  
+    "n": "Else memory if. Whose",  
+    "if": [  
+        "oic.if.s"  
+    ],  
+    "range": [  
+        864,  
+        864  
+    ],  
+    "step": 864,  
+    "type": "Cadence"  
 }  
 ```  
 </details>  
@@ -498,122 +492,107 @@ Cadence:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:Cadence:id:HOCY:33423995"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1982-07-11T18:42:18Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1976-08-10T22:06:18Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Key state be. Coach lead image fear late picture."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Produce miss structure policy fall east move. Mouth sort free recent range positive make. Ready eye east little."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Minute room executive present happen pick sing nor. Job future behind poor. Answer mother possible significant."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Window trouble ever prepare along especially check skin. Seem look trade kid add finally process speech."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Building form store media economy shoulder body yeah. Court certain field wall wind. Much five argue Mrs Mr."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Cadence:items:ACCG:67885309",  
-      "urn:ngsi-ld:Cadence:items:DUAP:61806876"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Cadence:items:OOOM:73838844",  
-      "urn:ngsi-ld:Cadence:items:SKJC:85233323"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -9.528281,  
-        95.749617  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "By who issue continue perhaps if black. During kind world table air. Modern ever about goal some some research.",  
-      "addressLocality": "Would chair suggest recognize learn.",  
-      "addressRegion": "Claim here evening go response front rise phone. Success father series including important low. Minute glass she task its.",  
-      "addressCountry": "Financial north pattern poor rise structure history. Director student picture.",  
-      "postalCode": "Prepare role money dream here prepare tend. Fight nearly now attention alone personal increase. Fish guess family nature drop eight drug. Paper medical similar thank.",  
-      "postOfficeBoxNumber": "Magazine where party agent draw might carry. Story she image next society exactly. Season discussion Congress news movement mouth radio."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Free step record paper ever quality. Inside west baby letter. Organization guess pay rich environment him choice film."  
-  },  
-  "cadence": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 864  
-    }  
-  },  
-  "rt": {  
-    "type": "array",  
-    "value": [  
-      "oic.r.cadence",  
-      "oic.r.cadence"  
-    ]  
-  },  
-  "n": {  
-    "type": "string",  
-    "value": "Whole magazine truth stop whose."  
-  },  
-  "if": {  
-    "type": "array",  
-    "value": [  
-      "oic.if.s",  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "range": {  
-    "type": "array",  
-    "value": [  
-      864,  
-      864  
-    ]  
-  },  
-  "step": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 864  
-    }  
-  },  
-  "type": {  
-    "type": "string",  
-    "value": "Cadence"  
-  }  
+    "id": "urn:ngsi-ld:Cadence:id:TPHF:03053239",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1978-01-30T19:52:56Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "1983-06-21T10:31:38Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "On visit act fact of good difference radio. Wom"  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Truth table real fall. Light us trip class too skin win. Capital family knowledge cause year."  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Friend group responsibility democratic similar plan ok ahead. Rate hundred trial amount population air appear. Reduce bar stock."  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Agree kitchen human available job toward Democrat operation."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Would"  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Cadence:items:HVXJ:51284952",  
+            "urn:ngsi-ld:Cadence:items:CKFD:65641415"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Cadence:items:TRMB:82747414"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -2.589504,  
+                -25.845441  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Position body well. Suddenly garden trade politics gas institution against. Soon level there able",  
+            "addressLocality": "Throughout report always later wide center morning.",  
+            "addressRegion": "Administration modern impact skill computer police. Wife",  
+            "addressCountry": "Edge data main magazine. Hair region medical attention program real culture. Lawyer set thousand human me their.",  
+            "postalCode": "Individual cell away owner. Beat nature someone. This music unit view recognize face.",  
+            "postOfficeBoxNumber": "Institut",  
+            "streetNr": "Usually war evidence. School science small i",  
+            "district": "Rich hold choose sense "  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Weight network meet property. Security present read on charge. Career heart yeah general so."  
+    },  
+    "cadence": {  
+        "type": "Number",  
+        "value": 864  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.cadence"  
+        ]  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Else memory if. Whose"  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.s"  
+        ]  
+    },  
+    "range": {  
+        "type": "StructuredValue",  
+        "value": [  
+            864,  
+            864  
+        ]  
+    },  
+    "step": {  
+        "type": "Number",  
+        "value": 864  
+    },  
+    "type": "Cadence"  
 }  
 ```  
 </details>  
@@ -622,148 +601,142 @@ Cadence:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Cadence:id:HOCY:33423995",  
-    "dateCreated": "1982-07-11T18:42:18Z",  
-    "dateModified": "1976-08-10T22:06:18Z",  
-    "source": "Key state be. Coach lead image fear late picture.",  
-    "name": "Produce miss structure policy fall east move. Mouth sort free recent range positive make. Ready eye east little.",  
-    "alternateName": "Minute room executive present happen pick sing nor. Job future behind poor. Answer mother possible significant.",  
-    "description": "Window trouble ever prepare along especially check skin. Seem look trade kid add finally process speech.",  
-    "dataProvider": "Building form store media economy shoulder body yeah. Court certain field wall wind. Much five argue Mrs Mr.",  
+    "id": "urn:ngsi-ld:Cadence:id:TPHF:03053239",  
+    "dateCreated": "1978-01-30T19:52:56Z",  
+    "dateModified": "1983-06-21T10:31:38Z",  
+    "source": "On visit act fact of good difference radio. Wom",  
+    "name": "Truth table real fall. Light us trip class too skin win. Capital family knowledge cause year.",  
+    "alternateName": "Friend group responsibility democratic similar plan ok ahead. Rate hundred trial amount population air appear. Reduce bar stock.",  
+    "description": "Agree kitchen human available job toward Democrat operation.",  
+    "dataProvider": "Would",  
     "owner": [  
-        "urn:ngsi-ld:Cadence:items:ACCG:67885309",  
-        "urn:ngsi-ld:Cadence:items:DUAP:61806876"  
+        "urn:ngsi-ld:Cadence:items:HVXJ:51284952",  
+        "urn:ngsi-ld:Cadence:items:CKFD:65641415"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:Cadence:items:OOOM:73838844",  
-        "urn:ngsi-ld:Cadence:items:SKJC:85233323"  
+        "urn:ngsi-ld:Cadence:items:TRMB:82747414"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            -9.528281,  
-            95.749617  
+            -2.589504,  
+            -25.845441  
         ]  
     },  
     "address": {  
-        "streetAddress": "By who issue continue perhaps if black. During kind world table air. Modern ever about goal some some research.",  
-        "addressLocality": "Would chair suggest recognize learn.",  
-        "addressRegion": "Claim here evening go response front rise phone. Success father series including important low. Minute glass she task its.",  
-        "addressCountry": "Financial north pattern poor rise structure history. Director student picture.",  
-        "postalCode": "Prepare role money dream here prepare tend. Fight nearly now attention alone personal increase. Fish guess family nature drop eight drug. Paper medical similar thank.",  
-        "postOfficeBoxNumber": "Magazine where party agent draw might carry. Story she image next society exactly. Season discussion Congress news movement mouth radio."  
+        "streetAddress": "Position body well. Suddenly garden trade politics gas institution against. Soon level there able",  
+        "addressLocality": "Throughout report always later wide center morning.",  
+        "addressRegion": "Administration modern impact skill computer police. Wife",  
+        "addressCountry": "Edge data main magazine. Hair region medical attention program real culture. Lawyer set thousand human me their.",  
+        "postalCode": "Individual cell away owner. Beat nature someone. This music unit view recognize face.",  
+        "postOfficeBoxNumber": "Institut",  
+        "streetNr": "Usually war evidence. School science small i",  
+        "district": "Rich hold choose sense "  
     },  
-    "areaServed": "Free step record paper ever quality. Inside west baby letter. Organization guess pay rich environment him choice film.",  
-    "cadence": {  
-        "type": "Property",  
-        "value": 864  
-    },  
+    "areaServed": "Weight network meet property. Security present read on charge. Career heart yeah general so.",  
+    "cadence": 864,  
     "rt": [  
-        "oic.r.cadence",  
         "oic.r.cadence"  
     ],  
-    "n": "Whole magazine truth stop whose.",  
+    "n": "Else memory if. Whose",  
     "if": [  
-        "oic.if.s",  
-        "oic.if.baseline"  
+        "oic.if.s"  
     ],  
     "range": [  
         864,  
         864  
     ],  
-    "step": {  
-        "type": "Property",  
-        "value": 864  
-    },  
+    "step": 864,  
     "type": "Cadence",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
 </details>  
-#### Cadencia NGSI-LD normalizada Ejemplo  
+#### Cadence NGSI-LD normalizado Ejemplo  
 He aquí un ejemplo de Cadencia en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Cadence:id:CPQI:14485913",  
+    "id": "urn:ngsi-ld:Cadence:id:TPHF:03053239",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1982-12-31T04:23:33Z"  
+            "@value": "1978-01-30T19:52:56Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2006-06-01T01:53:09Z"  
+            "@value": "1983-06-21T10:31:38Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Soldier piece chance. Design whether tonight mouth if. Management present government few might million four and."  
+        "value": "On visit act fact of good difference radio. Wom"  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Explain hundred pretty the miss center recognize. Operation could indicate bit throw."  
+        "value": "Truth table real fall. Light us trip class too skin win. Capital family knowledge cause year."  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "News federal spend recent recent. Dog appear feel often each. Research feeling son tend."  
+        "value": "Friend group responsibility democratic similar plan ok ahead. Rate hundred trial amount population air appear. Reduce bar stock."  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Personal political respond light whom through short maybe. Lay high exist night bring try expert. Successful star draw."  
+        "value": "Agree kitchen human available job toward Democrat operation."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Job condition message station fact watch. Start evening traditional growth push. Parent detail around oil American picture."  
+        "value": "Would"  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Cadence:items:MCBW:69103959",  
-            "urn:ngsi-ld:Cadence:items:FGEA:86464655"  
+            "urn:ngsi-ld:Cadence:items:HVXJ:51284952",  
+            "urn:ngsi-ld:Cadence:items:CKFD:65641415"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Cadence:items:ZZBY:81588794"  
+            "urn:ngsi-ld:Cadence:items:TRMB:82747414"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                -78.402157,  
-                -60.655419  
+                -2.589504,  
+                -25.845441  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Front color even community majority reflect. Situation wish design major level half. Parent claim lot image.",  
-            "addressLocality": "Something focus center try.",  
-            "addressRegion": "None clearly picture education live apply current great. Author beyond mind certainly.",  
-            "addressCountry": "Claim decide career gas dark wonder. Suddenly federal similar very learn free. Maintain loss drive their though.",  
-            "postalCode": "Billion along necessary history every yet down hair. Morning with mention life suddenly many.",  
-            "postOfficeBoxNumber": "By Mrs too nor."  
+            "streetAddress": "Position body well. Suddenly garden trade politics gas institution against. Soon level there able",  
+            "addressLocality": "Throughout report always later wide center morning.",  
+            "addressRegion": "Administration modern impact skill computer police. Wife",  
+            "addressCountry": "Edge data main magazine. Hair region medical attention program real culture. Lawyer set thousand human me their.",  
+            "postalCode": "Individual cell away owner. Beat nature someone. This music unit view recognize face.",  
+            "postOfficeBoxNumber": "Institut",  
+            "streetNr": "Usually war evidence. School science small i",  
+            "district": "Rich hold choose sense "  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Use will family stand question suggest. Choice across but center continue modern continue. Out account always cultural some watch hear. Attack safe until career."  
+        "value": "Weight network meet property. Security present read on charge. Career heart yeah general so."  
     },  
     "cadence": {  
         "type": "Property",  
-        "value": 779  
+        "value": 864  
     },  
     "rt": {  
         "type": "Property",  
@@ -773,7 +746,7 @@ Cadence:
     },  
     "n": {  
         "type": "Property",  
-        "value": "Sing six consider ground. Wish collection character remember message son whatever real."  
+        "value": "Else memory if. Whose"  
     },  
     "if": {  
         "type": "Property",  
@@ -784,18 +757,17 @@ Cadence:
     "range": {  
         "type": "Property",  
         "value": [  
-            469,  
-            155  
+            864,  
+            864  
         ]  
     },  
     "step": {  
         "type": "Property",  
-        "value": 400  
+        "value": 864  
     },  
     "type": "Cadence",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
