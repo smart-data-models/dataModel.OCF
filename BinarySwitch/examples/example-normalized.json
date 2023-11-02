@@ -1,75 +1,93 @@
 {
-  "id": {
-    "type": "string",
-    "value": "urn:ngsi-ld:BinarySwitch:id:FUWM:76347888"
-  },
-  "dateCreated": {
-    "format": "date-time",
-    "type": "string",
-    "value": "2012-08-12T19:01:35Z"
-  },
-  "dateModified": {
-    "format": "date-time",
-    "type": "string",
-    "value": "1997-08-16T11:48:31Z"
-  },
-  "source": {
-    "type": "string",
-    "value": "Listen now remember compare. Without indeed become thing."
-  },
-  "name": {
-    "type": "string",
-    "value": "Recent personal sister toward cup attorney. Movement offer gas along. Sure will ahead hour poor pay price."
-  },
-  "alternateName": {
-    "type": "string",
-    "value": "View Mr song do thought ten. Resource now often recent walk apply."
-  },
-  "description": {
-    "type": "string",
-    "value": "Contain pass early member. Reach price quality miss charge. Share notice lay water travel."
-  },
-  "dataProvider": {
-    "type": "string",
-    "value": "Look else collection analysis lay fish. Foreign art perhaps his only. Group treatment available own market billion."
-  },
-  "owner": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:BinarySwitch:items:WDLW:60793756",
-      "urn:ngsi-ld:BinarySwitch:items:RKFU:64379233"
-    ]
-  },
-  "seeAlso": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:BinarySwitch:items:NKTQ:43294724",
-      "urn:ngsi-ld:BinarySwitch:items:LTOV:90056783"
-    ]
-  },
-  "location": {
-    "type": "object",
+    "id": "urn:ngsi-ld:BinarySwitch:id:KSRN:63934709",
+    "dateCreated": {
+        "type": "DateTime",
+        "value": "2004-04-11T04:25:15Z"
+    },
+    "dateModified": {
+        "type": "DateTime",
+        "value": "1977-08-07T15:24:17Z"
+    },
+    "source": {
+        "type": "Text",
+        "value": "Style recent network economy exactly more ground international. Building t"
+    },
+    "name": {
+        "type": "Text",
+        "value": "Total quite"
+    },
+    "alternateName": {
+        "type": "Text",
+        "value": "Late term particul"
+    },
+    "description": {
+        "type": "Text",
+        "value": ""
+    },
+    "dataProvider": {
+        "type": "Text",
+        "value": "Mind first charge base position them peace. Page reflect ok unit see west thank. Personal ball father capital."
+    },
+    "owner": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:BinarySwitch:items:PJOQ:56642349",
+            "urn:ngsi-ld:BinarySwitch:items:SODH:76834134"
+        ]
+    },
+    "seeAlso": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:BinarySwitch:items:LFIE:84485764"
+        ]
+    },
+    "location": {
+        "type": "geo:json",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -36.911266,
+                152.471699
+            ]
+        }
+    },
+    "address": {
+        "type": "StructuredValue",
+        "value": {
+            "streetAddress": "Weight employee manage go prove commercial. Follow shake source way. Bill there within benef",
+            "addressLocality": "Arrive study participant knowledge. Service industry bed avoid first edge occur. Color collection area lay community training focus.",
+            "addressRegion": "Sense lose fine business leader own. More possible end arrive under address. Early cri",
+            "addressCountry": "Price response team radio stop.",
+            "postalCode": "Rise blue history establish red.",
+            "postOfficeBoxNumber": "From su",
+            "streetNr": "Another wait game need team house other very. Strategy body police leave. Event late car range common guess.",
+            "district": "High garden far evidence you want explain. To player week approach tonight whether close."
+        }
+    },
+    "areaServed": {
+        "type": "Text",
+        "value": "Serve until whatever drive. Southern method up "
+    },
+    "rt": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.r.switch.binary"
+        ]
+    },
     "value": {
-      "type": "Point",
-      "coordinates": [
-        73.757996,
-        40.59649
-      ]
-    }
-  },
-  "address": {
-    "type": "object",
-    "value": {
-      "streetAddress": "Better risk among art hear education. Study new call research.",
-      "addressLocality": "Camera each begin choose too base show. Name of court model evidence professor know.",
-      "addressRegion": "Wide wonder theory foot report mind. Reduce country same truth there his.",
-      "addressCountry": "Positive sound scene authority might. Top style whatever support at whatever a they. Fall before week then.",
-      "postalCode": "Method spring fish. Reveal southern family song ok subject sing.",
-      "postOfficeBoxNumber": "My or tonight chance vote effort street power. Sell activity cell color. Apply yard record friend half million organization."
-    }
-  },
-  "areaServed": {
-    "type": "string",
-    "value": "To gun drug concern. Stand memory sense without."
-  }
+        "type": "Boolean",
+        "value": false
+    },
+    "n": {
+        "type": "Text",
+        "value": "Age j"
+    },
+    "if": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.if.baseline",
+            "oic.if.a"
+        ]
+    },
+    "type": "BinarySwitch"
 }
