@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: Le numéro de la boîte postale pour les adresses de boîtes postales. Par exemple, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: Le code postal. Par exemple, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: L'adresse de la rue  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Numéro identifiant une propriété spécifique sur une voie publique    
 - `alternateName[string]`: Un nom alternatif pour ce poste  - `areaServed[string]`: La zone géographique où un service ou un article est offert  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées  - `dateCreated[date-time]`: Horodatage de la création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage  - `dateModified[date-time]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage  - `description[string]`: Une description de l'article  - `id[*]`: Identifiant unique de l'entité  - `if[array]`: L'ensemble d'interfaces OCF pris en charge par cette ressource  - `illuminance[number]`: Le flux lumineux détecté par unité de surface en lux  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une chaîne de ligne, d'un polygone, d'un point multiple, d'une chaîne de ligne multiple ou d'un polygone multiple.  - `n[string]`: Nom amical de la ressource  - `name[string]`: Le nom de cet élément  - `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  - `range[array]`: L'intervalle de validité de la propriété dans la ressource sous la forme d'un nombre. La première valeur du tableau est la valeur minimale, la deuxième valeur du tableau est la valeur maximale.  - `rt[array]`: Le type de ressource  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  - `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  - `type[string]`: Type d'entité NGSI. Il doit s'agir d'Illuminance  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propriétés requises  
@@ -430,56 +431,53 @@ Illuminance:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Illuminance:id:UUWN:34352123",  
-  "dateCreated": "2008-10-06T19:22:33Z",  
-  "dateModified": "1990-03-17T17:23:24Z",  
-  "source": "Security door report officer lay debate magazine.",  
-  "name": "Tell size compare point. Out big get entire culture hit. Hospital popular term join pressure else opportunity.",  
-  "alternateName": "Dark hour behind executive find old least half.",  
-  "description": "High edge measure political common front. After of while middle off morning staff. Those Republican individual fast forget culture.",  
-  "dataProvider": "Administration different leader environment whole weight truth. Concern there hand travel unit investment class. Always tree property him economic computer.",  
-  "owner": [  
-    "urn:ngsi-ld:Illuminance:items:GZNR:96026419",  
-    "urn:ngsi-ld:Illuminance:items:PAZK:42934372"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Illuminance:items:DEZP:64675308",  
-    "urn:ngsi-ld:Illuminance:items:BVYK:88404285"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -67.769054,  
-      -112.378099  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Necessary likely movement product five billion decision nearly. Mention top perform personal.",  
-    "addressLocality": "Everyone final page performance interesting. Between management population experience.",  
-    "addressRegion": "Sense all raise. Population writer bank difficult general from. Itself ability less three either teach. Situation great agreement best if.",  
-    "addressCountry": "Join including continue bring quality. Change policy song marriage employee interest.",  
-    "postalCode": "Citizen feel wife big actually there decide.",  
-    "postOfficeBoxNumber": "Before leg garden win administration. Particular according book nor still thank take. Executive inside street agree."  
-  },  
-  "areaServed": "View up present as consider market administration wear. Now collection well create traditional because first student.",  
-  "rt": [  
-    "oic.r.sensor.illuminance",  
-    "oic.r.sensor.illuminance"  
-  ],  
-  "illuminance": {  
-    "type": "Property",  
-    "value": 744.9  
-  },  
-  "n": "Executive great amount approach statement edge a mind. Life Democrat note laugh capital week culture speak.",  
-  "range": [  
-    9.5,  
-    497.1  
-  ],  
-  "if": [  
-    "oic.if.baseline",  
-    "oic.if.s"  
-  ],  
-  "type": "Illuminance"  
+    "id": "urn:ngsi-ld:Illuminance:id:SIWE:31441837",  
+    "dateCreated": "1997-03-30T08:35:43Z",  
+    "dateModified": "1978-11-29T12:38:41Z",  
+    "source": "Price total activity perform item re",  
+    "name": "Prove as morning person. Believe close fall bag interest. Pm something opportunity million political.",  
+    "alternateName": "Buy woman church. News chair product whom which. Form minute society prevent. Only lose store science citizen dream modern.",  
+    "description": "Expert past lead find few save inside.",  
+    "dataProvider": "Cultural exactly eye result. Test defense them audience. Reveal event find team.",  
+    "owner": [  
+        "urn:ngsi-ld:Illuminance:items:VTNJ:81104321",  
+        "urn:ngsi-ld:Illuminance:items:ENYO:05623287"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Illuminance:items:JPEY:65902555"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            20.7452555,  
+            92.717322  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Market office future secon",  
+        "addressLocality": "Stage watch win. Serve customer social foreign yeah lead.",  
+        "addressRegion": "Discover city heavy receive medical price face. Recognize human once place together ability.",  
+        "addressCountry": "Soldier century recently learn. Huge worry college so. Sort who instead audience scientist push party model.",  
+        "postalCode": "Relationship government majority meeting. Popular fight voice movement par",  
+        "postOfficeBoxNumber": "Question bill exist stock. Important shake sell theory. Them line contain success less practice car.",  
+        "streetNr": "Site serve indicate busin",  
+        "district": "Letter cultural north medical. Ever several structure. Either move gas live lose agreement test."  
+    },  
+    "areaServed": "Travel accept receive draw dark. Both them account. Open national large whatever executive simple challenge.",  
+    "rt": [  
+        "oic.r.sensor.illuminance"  
+    ],  
+    "illuminance": 840.3,  
+    "n": "Her prove adult arm care together make list. ",  
+    "range": [  
+        110.0,  
+        567.3  
+    ],  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.s"  
+    ],  
+    "type": "Illuminance"  
 }  
 ```  
 </details>  
@@ -488,115 +486,104 @@ Illuminance:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:Illuminance:id:UUWN:34352123"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2008-10-06T19:22:33Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1990-03-17T17:23:24Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Security door report officer lay debate magazine."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Tell size compare point. Out big get entire culture hit. Hospital popular term join pressure else opportunity."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Dark hour behind executive find old least half."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "High edge measure political common front. After of while middle off morning staff. Those Republican individual fast forget culture."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Administration different leader environment whole weight truth. Concern there hand travel unit investment class. Always tree property him economic computer."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Illuminance:items:GZNR:96026419",  
-      "urn:ngsi-ld:Illuminance:items:PAZK:42934372"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Illuminance:items:DEZP:64675308",  
-      "urn:ngsi-ld:Illuminance:items:BVYK:88404285"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -67.769054,  
-        -112.378099  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Necessary likely movement product five billion decision nearly. Mention top perform personal.",  
-      "addressLocality": "Everyone final page performance interesting. Between management population experience.",  
-      "addressRegion": "Sense all raise. Population writer bank difficult general from. Itself ability less three either teach. Situation great agreement best if.",  
-      "addressCountry": "Join including continue bring quality. Change policy song marriage employee interest.",  
-      "postalCode": "Citizen feel wife big actually there decide.",  
-      "postOfficeBoxNumber": "Before leg garden win administration. Particular according book nor still thank take. Executive inside street agree."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "View up present as consider market administration wear. Now collection well create traditional because first student."  
-  },  
-  "rt": {  
-    "type": "array",  
-    "value": [  
-      "oic.r.sensor.illuminance",  
-      "oic.r.sensor.illuminance"  
-    ]  
-  },  
-  "illuminance": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 744.9  
-    }  
-  },  
-  "n": {  
-    "type": "string",  
-    "value": "Executive great amount approach statement edge a mind. Life Democrat note laugh capital week culture speak."  
-  },  
-  "range": {  
-    "type": "array",  
-    "value": [  
-      9.5,  
-      497.1  
-    ]  
-  },  
-  "if": {  
-    "type": "array",  
-    "value": [  
-      "oic.if.baseline",  
-      "oic.if.s"  
-    ]  
-  },  
-  "type": {  
-    "type": "string",  
-    "value": "Illuminance"  
-  }  
+    "id": "urn:ngsi-ld:Illuminance:id:SIWE:31441837",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1997-03-30T08:35:43Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "1978-11-29T12:38:41Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Price total activity perform item re"  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Prove as morning person. Believe close fall bag interest. Pm something opportunity million political."  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Buy woman church. News chair product whom which. Form minute society prevent. Only lose store science citizen dream modern."  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Expert past lead find few save inside."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Cultural exactly eye result. Test defense them audience. Reveal event find team."  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Illuminance:items:VTNJ:81104321",  
+            "urn:ngsi-ld:Illuminance:items:ENYO:05623287"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Illuminance:items:JPEY:65902555"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                20.7452555,  
+                92.717322  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Market office future secon",  
+            "addressLocality": "Stage watch win. Serve customer social foreign yeah lead.",  
+            "addressRegion": "Discover city heavy receive medical price face. Recognize human once place together ability.",  
+            "addressCountry": "Soldier century recently learn. Huge worry college so. Sort who instead audience scientist push party model.",  
+            "postalCode": "Relationship government majority meeting. Popular fight voice movement par",  
+            "postOfficeBoxNumber": "Question bill exist stock. Important shake sell theory. Them line contain success less practice car.",  
+            "streetNr": "Site serve indicate busin",  
+            "district": "Letter cultural north medical. Ever several structure. Either move gas live lose agreement test."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Travel accept receive draw dark. Both them account. Open national large whatever executive simple challenge."  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.sensor.illuminance"  
+        ]  
+    },  
+    "illuminance": {  
+        "type": "Number",  
+        "value": 840.3  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Her prove adult arm care together make list. "  
+    },  
+    "range": {  
+        "type": "StructuredValue",  
+        "value": [  
+            110.0,  
+            567.3  
+        ]  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.baseline",  
+            "oic.if.s"  
+        ]  
+    },  
+    "type": "Illuminance"  
 }  
 ```  
 </details>  
@@ -605,50 +592,47 @@ Illuminance:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Illuminance:id:UUWN:34352123",  
-    "dateCreated": "2008-10-06T19:22:33Z",  
-    "dateModified": "1990-03-17T17:23:24Z",  
-    "source": "Security door report officer lay debate magazine.",  
-    "name": "Tell size compare point. Out big get entire culture hit. Hospital popular term join pressure else opportunity.",  
-    "alternateName": "Dark hour behind executive find old least half.",  
-    "description": "High edge measure political common front. After of while middle off morning staff. Those Republican individual fast forget culture.",  
-    "dataProvider": "Administration different leader environment whole weight truth. Concern there hand travel unit investment class. Always tree property him economic computer.",  
+    "id": "urn:ngsi-ld:Illuminance:id:SIWE:31441837",  
+    "dateCreated": "1997-03-30T08:35:43Z",  
+    "dateModified": "1978-11-29T12:38:41Z",  
+    "source": "Price total activity perform item re",  
+    "name": "Prove as morning person. Believe close fall bag interest. Pm something opportunity million political.",  
+    "alternateName": "Buy woman church. News chair product whom which. Form minute society prevent. Only lose store science citizen dream modern.",  
+    "description": "Expert past lead find few save inside.",  
+    "dataProvider": "Cultural exactly eye result. Test defense them audience. Reveal event find team.",  
     "owner": [  
-        "urn:ngsi-ld:Illuminance:items:GZNR:96026419",  
-        "urn:ngsi-ld:Illuminance:items:PAZK:42934372"  
+        "urn:ngsi-ld:Illuminance:items:VTNJ:81104321",  
+        "urn:ngsi-ld:Illuminance:items:ENYO:05623287"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:Illuminance:items:DEZP:64675308",  
-        "urn:ngsi-ld:Illuminance:items:BVYK:88404285"  
+        "urn:ngsi-ld:Illuminance:items:JPEY:65902555"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            -67.769054,  
-            -112.378099  
+            20.7452555,  
+            92.717322  
         ]  
     },  
     "address": {  
-        "streetAddress": "Necessary likely movement product five billion decision nearly. Mention top perform personal.",  
-        "addressLocality": "Everyone final page performance interesting. Between management population experience.",  
-        "addressRegion": "Sense all raise. Population writer bank difficult general from. Itself ability less three either teach. Situation great agreement best if.",  
-        "addressCountry": "Join including continue bring quality. Change policy song marriage employee interest.",  
-        "postalCode": "Citizen feel wife big actually there decide.",  
-        "postOfficeBoxNumber": "Before leg garden win administration. Particular according book nor still thank take. Executive inside street agree."  
+        "streetAddress": "Market office future secon",  
+        "addressLocality": "Stage watch win. Serve customer social foreign yeah lead.",  
+        "addressRegion": "Discover city heavy receive medical price face. Recognize human once place together ability.",  
+        "addressCountry": "Soldier century recently learn. Huge worry college so. Sort who instead audience scientist push party model.",  
+        "postalCode": "Relationship government majority meeting. Popular fight voice movement par",  
+        "postOfficeBoxNumber": "Question bill exist stock. Important shake sell theory. Them line contain success less practice car.",  
+        "streetNr": "Site serve indicate busin",  
+        "district": "Letter cultural north medical. Ever several structure. Either move gas live lose agreement test."  
     },  
-    "areaServed": "View up present as consider market administration wear. Now collection well create traditional because first student.",  
+    "areaServed": "Travel accept receive draw dark. Both them account. Open national large whatever executive simple challenge.",  
     "rt": [  
-        "oic.r.sensor.illuminance",  
         "oic.r.sensor.illuminance"  
     ],  
-    "illuminance": {  
-        "type": "Property",  
-        "value": 744.9  
-    },  
-    "n": "Executive great amount approach statement edge a mind. Life Democrat note laugh capital week culture speak.",  
+    "illuminance": 840.3,  
+    "n": "Her prove adult arm care together make list. ",  
     "range": [  
-        9.5,  
-        497.1  
+        110.0,  
+        567.3  
     ],  
     "if": [  
         "oic.if.baseline",  
@@ -656,8 +640,7 @@ Illuminance:
     ],  
     "type": "Illuminance",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -667,78 +650,80 @@ Illuminance:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Illuminance:id:MNLY:30937921",  
+    "id": "urn:ngsi-ld:Illuminance:id:SIWE:31441837",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1975-05-11T13:09:10Z"  
+            "@value": "1997-03-30T08:35:43Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2003-12-02T03:26:21Z"  
+            "@value": "1978-11-29T12:38:41Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "After thing maybe watch spring show we. Several south address building she. Protect force hair machine. Season government goal wait air section."  
+        "value": "Price total activity perform item re"  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Method institution hand first up. Media care sea."  
+        "value": "Prove as morning person. Believe close fall bag interest. Pm something opportunity million political."  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Image man after large."  
+        "value": "Buy woman church. News chair product whom which. Form minute society prevent. Only lose store science citizen dream modern."  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Really although sign paper season store. Fear exactly collection."  
+        "value": "Expert past lead find few save inside."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Start plan effort soon smile probably."  
+        "value": "Cultural exactly eye result. Test defense them audience. Reveal event find team."  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Illuminance:items:SVMJ:39738594",  
-            "urn:ngsi-ld:Illuminance:items:IPBX:16843864"  
+            "urn:ngsi-ld:Illuminance:items:VTNJ:81104321",  
+            "urn:ngsi-ld:Illuminance:items:ENYO:05623287"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Illuminance:items:PBYJ:13845109"  
+            "urn:ngsi-ld:Illuminance:items:JPEY:65902555"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                -72.2442105,  
-                103.919595  
+                20.7452555,  
+                92.717322  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Figure shoulder activity south test. Doctor herself detail. Power teach itself ability risk consider.",  
-            "addressLocality": "Report feeling player picture. Program air sometimes crime son management. Home choose cup drive standard.",  
-            "addressRegion": "Admit art half adult image memory.",  
-            "addressCountry": "Nature support else week power present own floor.",  
-            "postalCode": "Right open effect sense question end. Training laugh speak behind focus in win analysis.",  
-            "postOfficeBoxNumber": "To under car if newspaper player prove article."  
+            "streetAddress": "Market office future secon",  
+            "addressLocality": "Stage watch win. Serve customer social foreign yeah lead.",  
+            "addressRegion": "Discover city heavy receive medical price face. Recognize human once place together ability.",  
+            "addressCountry": "Soldier century recently learn. Huge worry college so. Sort who instead audience scientist push party model.",  
+            "postalCode": "Relationship government majority meeting. Popular fight voice movement par",  
+            "postOfficeBoxNumber": "Question bill exist stock. Important shake sell theory. Them line contain success less practice car.",  
+            "streetNr": "Site serve indicate busin",  
+            "district": "Letter cultural north medical. Ever several structure. Either move gas live lose agreement test."  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Film consumer why indeed heavy. Perform production report. North seven risk company ever firm."  
+        "value": "Travel accept receive draw dark. Both them account. Open national large whatever executive simple challenge."  
     },  
     "rt": {  
         "type": "Property",  
@@ -748,30 +733,29 @@ Illuminance:
     },  
     "illuminance": {  
         "type": "Property",  
-        "value": 338.8  
+        "value": 840.3  
     },  
     "n": {  
         "type": "Property",  
-        "value": "Off woman hour your also. Lead hold race space. Rich available hold base project page."  
+        "value": "Her prove adult arm care together make list. "  
     },  
     "range": {  
         "type": "Property",  
         "value": [  
-            194.8,  
-            76.4  
+            110.0,  
+            567.3  
         ]  
     },  
     "if": {  
         "type": "Property",  
         "value": [  
             "oic.if.baseline",  
-            "oic.if.baseline"  
+            "oic.if.s"  
         ]  
     },  
     "type": "Illuminance",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
