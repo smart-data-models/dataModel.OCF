@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: Il numero di casella postale per gli indirizzi di casella postale. Ad esempio, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: Il codice postale. Ad esempio, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: L'indirizzo stradale  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Numero che identifica una proprietà specifica su una strada pubblica    
 - `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata  - `dateCreated[date-time]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `if[array]`: Il set di interfacce OCF supportato da questa risorsa.  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `n[string]`: Nome amichevole della risorsa  - `name[string]`: Il nome di questo elemento  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `rt[array]`: Il tipo di risorsa  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `type[string]`: Tipo di entità NGSI. Deve essere Contatto  - `value[boolean]`: L'indicazione del contatto, vero = rotto (aperto), falso = in posizione (chiuso)  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Proprietà richieste  
@@ -420,52 +421,49 @@ Contact:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Contact:id:HMUT:83435609",  
-  "dateCreated": "2019-11-03T13:34:13Z",  
-  "dateModified": "1987-05-08T16:34:27Z",  
-  "source": "Yet back writer so bank nature south. Resource including speak.",  
-  "name": "Court material main five appear. Answer face bad leader.",  
-  "alternateName": "Especially term detail beautiful. Coach step agreement home.",  
-  "description": "Country off allow rate record. Growth when economy save. Example later whom son audience.",  
-  "dataProvider": "Important pick red while machine take. Born baby because back way hit play.",  
-  "owner": [  
-    "urn:ngsi-ld:Contact:items:VORM:50502773",  
-    "urn:ngsi-ld:Contact:items:ADVX:61609895"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Contact:items:KLNB:69768334",  
-    "urn:ngsi-ld:Contact:items:ITWA:14516433"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      53.154571,  
-      157.418088  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Part physical really head work past maintain. Late third kitchen suffer fund fill each. Four three your heart industry employee realize.",  
-    "addressLocality": "Behind explain show mission. Thousand forward wall. Size worry any town chance.",  
-    "addressRegion": "Job ever design toward boy citizen. Happy city part rule present try. Indicate doctor job look different.",  
-    "addressCountry": "Despite cup fund thank fight hard camera. Myself area pull watch dog.",  
-    "postalCode": "Size else present still now. Country support choose treatment manager.",  
-    "postOfficeBoxNumber": "Food often candidate century popular huge. After culture tend feel. Sport win because according election present customer."  
-  },  
-  "areaServed": "Take reflect member. Next attack discover employee sit accept. Range available nearly impact federal how receive view.",  
-  "rt": [  
-    "oic.r.sensor.contact",  
-    "oic.r.sensor.contact"  
-  ],  
-  "value": {  
-    "type": "Property",  
-    "value": false  
-  },  
-  "n": "Condition lay state ask. Him we safe program. Responsibility among imagine everything within pass.",  
-  "if": [  
-    "oic.if.s",  
-    "oic.if.s"  
-  ],  
-  "type": "Contact"  
+    "id": "urn:ngsi-ld:Contact:id:NIYE:38833705",  
+    "dateCreated": "1979-07-08T09:22:39Z",  
+    "dateModified": "2014-12-06T02:35:48Z",  
+    "source": "National find analysis wish analy",  
+    "name": "All friend across. Treat career house state wall. ",  
+    "alternateName": "Blue pay off could national shake head. Short who democr",  
+    "description": "Strong interesting down decade. Might source night plan Mr.",  
+    "dataProvider": "Ability soon soldier. Hear",  
+    "owner": [  
+        "urn:ngsi-ld:Contact:items:HCTI:07644860",  
+        "urn:ngsi-ld:Contact:items:WPVS:33072712"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Contact:items:EHLJ:26897302"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -46.4613705,  
+            113.760115  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Time family operation add. Pick project something into watch rest. Figure ten floor operation instead from.",  
+        "addressLocality": "City impact member sit worker administration.",  
+        "addressRegion": "Road difference no movement such. Fact human option commercial s",  
+        "addressCountry": "Mean successful population value various. Here bad w",  
+        "postalCode": "Painting professor trade machine let child clear street. National three challenge describe stuff professional pare",  
+        "postOfficeBoxNumber": "Live way determine. Nam",  
+        "streetNr": "Should ten eight others. Couple challenge popular pay send.",  
+        "district": "Hour woman matter notice approach. Lawyer capital middle bad."  
+    },  
+    "areaServed": "Seat true whatever green. Size TV focus new south each.",  
+    "rt": [  
+        "oic.r.sensor.contact"  
+    ],  
+    "value": false,  
+    "n": "Analysis drive yeah kid public politics save gar",  
+    "if": [  
+        "oic.if.s",  
+        "oic.if.baseline"  
+    ],  
+    "type": "Contact"  
 }  
 ```  
 </details>  
@@ -474,108 +472,97 @@ Contact:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:Contact:id:HMUT:83435609"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2019-11-03T13:34:13Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1987-05-08T16:34:27Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Yet back writer so bank nature south. Resource including speak."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Court material main five appear. Answer face bad leader."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Especially term detail beautiful. Coach step agreement home."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Country off allow rate record. Growth when economy save. Example later whom son audience."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Important pick red while machine take. Born baby because back way hit play."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Contact:items:VORM:50502773",  
-      "urn:ngsi-ld:Contact:items:ADVX:61609895"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Contact:items:KLNB:69768334",  
-      "urn:ngsi-ld:Contact:items:ITWA:14516433"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
+    "id": "urn:ngsi-ld:Contact:id:NIYE:38833705",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1979-07-08T09:22:39Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "2014-12-06T02:35:48Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "National find analysis wish analy"  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "All friend across. Treat career house state wall. "  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Blue pay off could national shake head. Short who democr"  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Strong interesting down decade. Might source night plan Mr."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Ability soon soldier. Hear"  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Contact:items:HCTI:07644860",  
+            "urn:ngsi-ld:Contact:items:WPVS:33072712"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Contact:items:EHLJ:26897302"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -46.4613705,  
+                113.760115  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Time family operation add. Pick project something into watch rest. Figure ten floor operation instead from.",  
+            "addressLocality": "City impact member sit worker administration.",  
+            "addressRegion": "Road difference no movement such. Fact human option commercial s",  
+            "addressCountry": "Mean successful population value various. Here bad w",  
+            "postalCode": "Painting professor trade machine let child clear street. National three challenge describe stuff professional pare",  
+            "postOfficeBoxNumber": "Live way determine. Nam",  
+            "streetNr": "Should ten eight others. Couple challenge popular pay send.",  
+            "district": "Hour woman matter notice approach. Lawyer capital middle bad."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Seat true whatever green. Size TV focus new south each."  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.sensor.contact"  
+        ]  
+    },  
     "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        53.154571,  
-        157.418088  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Part physical really head work past maintain. Late third kitchen suffer fund fill each. Four three your heart industry employee realize.",  
-      "addressLocality": "Behind explain show mission. Thousand forward wall. Size worry any town chance.",  
-      "addressRegion": "Job ever design toward boy citizen. Happy city part rule present try. Indicate doctor job look different.",  
-      "addressCountry": "Despite cup fund thank fight hard camera. Myself area pull watch dog.",  
-      "postalCode": "Size else present still now. Country support choose treatment manager.",  
-      "postOfficeBoxNumber": "Food often candidate century popular huge. After culture tend feel. Sport win because according election present customer."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Take reflect member. Next attack discover employee sit accept. Range available nearly impact federal how receive view."  
-  },  
-  "rt": {  
-    "type": "array",  
-    "value": [  
-      "oic.r.sensor.contact",  
-      "oic.r.sensor.contact"  
-    ]  
-  },  
-  "value": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": false  
-    }  
-  },  
-  "n": {  
-    "type": "string",  
-    "value": "Condition lay state ask. Him we safe program. Responsibility among imagine everything within pass."  
-  },  
-  "if": {  
-    "type": "array",  
-    "value": [  
-      "oic.if.s",  
-      "oic.if.s"  
-    ]  
-  },  
-  "type": {  
-    "type": "string",  
-    "value": "Contact"  
-  }  
+        "type": "Boolean",  
+        "value": false  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Analysis drive yeah kid public politics save gar"  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.s",  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "Contact"  
 }  
 ```  
 </details>  
@@ -584,55 +571,51 @@ Contact:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Contact:id:HMUT:83435609",  
-    "dateCreated": "2019-11-03T13:34:13Z",  
-    "dateModified": "1987-05-08T16:34:27Z",  
-    "source": "Yet back writer so bank nature south. Resource including speak.",  
-    "name": "Court material main five appear. Answer face bad leader.",  
-    "alternateName": "Especially term detail beautiful. Coach step agreement home.",  
-    "description": "Country off allow rate record. Growth when economy save. Example later whom son audience.",  
-    "dataProvider": "Important pick red while machine take. Born baby because back way hit play.",  
+    "id": "urn:ngsi-ld:Contact:id:NIYE:38833705",  
+    "dateCreated": "1979-07-08T09:22:39Z",  
+    "dateModified": "2014-12-06T02:35:48Z",  
+    "source": "National find analysis wish analy",  
+    "name": "All friend across. Treat career house state wall. ",  
+    "alternateName": "Blue pay off could national shake head. Short who democr",  
+    "description": "Strong interesting down decade. Might source night plan Mr.",  
+    "dataProvider": "Ability soon soldier. Hear",  
     "owner": [  
-        "urn:ngsi-ld:Contact:items:VORM:50502773",  
-        "urn:ngsi-ld:Contact:items:ADVX:61609895"  
+        "urn:ngsi-ld:Contact:items:HCTI:07644860",  
+        "urn:ngsi-ld:Contact:items:WPVS:33072712"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:Contact:items:KLNB:69768334",  
-        "urn:ngsi-ld:Contact:items:ITWA:14516433"  
+        "urn:ngsi-ld:Contact:items:EHLJ:26897302"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            53.154571,  
-            157.418088  
+            -46.4613705,  
+            113.760115  
         ]  
     },  
     "address": {  
-        "streetAddress": "Part physical really head work past maintain. Late third kitchen suffer fund fill each. Four three your heart industry employee realize.",  
-        "addressLocality": "Behind explain show mission. Thousand forward wall. Size worry any town chance.",  
-        "addressRegion": "Job ever design toward boy citizen. Happy city part rule present try. Indicate doctor job look different.",  
-        "addressCountry": "Despite cup fund thank fight hard camera. Myself area pull watch dog.",  
-        "postalCode": "Size else present still now. Country support choose treatment manager.",  
-        "postOfficeBoxNumber": "Food often candidate century popular huge. After culture tend feel. Sport win because according election present customer."  
+        "streetAddress": "Time family operation add. Pick project something into watch rest. Figure ten floor operation instead from.",  
+        "addressLocality": "City impact member sit worker administration.",  
+        "addressRegion": "Road difference no movement such. Fact human option commercial s",  
+        "addressCountry": "Mean successful population value various. Here bad w",  
+        "postalCode": "Painting professor trade machine let child clear street. National three challenge describe stuff professional pare",  
+        "postOfficeBoxNumber": "Live way determine. Nam",  
+        "streetNr": "Should ten eight others. Couple challenge popular pay send.",  
+        "district": "Hour woman matter notice approach. Lawyer capital middle bad."  
     },  
-    "areaServed": "Take reflect member. Next attack discover employee sit accept. Range available nearly impact federal how receive view.",  
+    "areaServed": "Seat true whatever green. Size TV focus new south each.",  
     "rt": [  
-        "oic.r.sensor.contact",  
         "oic.r.sensor.contact"  
     ],  
-    "value": {  
-        "type": "Property",  
-        "value": false  
-    },  
-    "n": "Condition lay state ask. Him we safe program. Responsibility among imagine everything within pass.",  
+    "value": false,  
+    "n": "Analysis drive yeah kid public politics save gar",  
     "if": [  
         "oic.if.s",  
-        "oic.if.s"  
+        "oic.if.baseline"  
     ],  
     "type": "Contact",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -642,78 +625,80 @@ Contact:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Contact:id:PHQT:43656254",  
+    "id": "urn:ngsi-ld:Contact:id:NIYE:38833705",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1979-06-21T02:42:47Z"  
+            "@value": "1979-07-08T09:22:39Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2009-05-13T06:47:50Z"  
+            "@value": "2014-12-06T02:35:48Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Project need follow simply brother. Gas continue everyone those language. Receive new always yard ever both."  
+        "value": "National find analysis wish analy"  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Special nice how today culture. Grow age world step quickly how move off. Here style data no bill discussion."  
+        "value": "All friend across. Treat career house state wall. "  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Window more similar contain. Anything song key."  
+        "value": "Blue pay off could national shake head. Short who democr"  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Debate bank spend technology father."  
+        "value": "Strong interesting down decade. Might source night plan Mr."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Billion democratic behind fly memory. Poor window significant accept look amount probably."  
+        "value": "Ability soon soldier. Hear"  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Contact:items:EONI:36946282",  
-            "urn:ngsi-ld:Contact:items:JZPI:03143081"  
+            "urn:ngsi-ld:Contact:items:HCTI:07644860",  
+            "urn:ngsi-ld:Contact:items:WPVS:33072712"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Contact:items:IKIB:26985774"  
+            "urn:ngsi-ld:Contact:items:EHLJ:26897302"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                -16.2109895,  
-                118.55362  
+                -46.4613705,  
+                113.760115  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Our food use business but. Push behavior affect quite small travel.",  
-            "addressLocality": "Bad front check fight. Ten must place fast. Pattern chance some. Police forget certain once degree wrong page scientist.",  
-            "addressRegion": "Parent campaign notice can agent back produce career. Under color style difference. Summer recognize join good type hospital thought argue. Still public foreign if camera thus.",  
-            "addressCountry": "Meet me television social research industry. Voice also seat police. Assume stay color time western pay. Style rather build specific.",  
-            "postalCode": "Certainly join deal agent mention entire speak. No space little attorney number nor firm old. Simple red six day consider recognize.",  
-            "postOfficeBoxNumber": "Stop middle individual since truth exist expect expect. Husband yeah learn beat. Bed reduce identify old Democrat whole citizen."  
+            "streetAddress": "Time family operation add. Pick project something into watch rest. Figure ten floor operation instead from.",  
+            "addressLocality": "City impact member sit worker administration.",  
+            "addressRegion": "Road difference no movement such. Fact human option commercial s",  
+            "addressCountry": "Mean successful population value various. Here bad w",  
+            "postalCode": "Painting professor trade machine let child clear street. National three challenge describe stuff professional pare",  
+            "postOfficeBoxNumber": "Live way determine. Nam",  
+            "streetNr": "Should ten eight others. Couple challenge popular pay send.",  
+            "district": "Hour woman matter notice approach. Lawyer capital middle bad."  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Allow coach population sit movement local. Catch budget piece matter."  
+        "value": "Seat true whatever green. Size TV focus new south each."  
     },  
     "rt": {  
         "type": "Property",  
@@ -727,19 +712,18 @@ Contact:
     },  
     "n": {  
         "type": "Property",  
-        "value": "Half daughter officer product travel toward every. Live never impact."  
+        "value": "Analysis drive yeah kid public politics save gar"  
     },  
     "if": {  
         "type": "Property",  
         "value": [  
-            "oic.if.baseline",  
+            "oic.if.s",  
             "oic.if.baseline"  
         ]  
     },  
     "type": "Contact",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
