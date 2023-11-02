@@ -1,34 +1,45 @@
 {
-  "id": "urn:ngsi-ld:Presence:id:JLTW:38479281",
-  "dateCreated": "1997-05-02T20:22:06Z",
-  "dateModified": "1979-07-21T14:01:17Z",
-  "source": "Away manage mouth instead. Benefit improve and seat real choose. Shake he many range imagine program.",
-  "name": "Under water less. Student question page develop focus whose factor. Move little stay really.",
-  "alternateName": "Hear hope need dream read too. Year a and team detail. Call owner recent certain plant everybody sign.",
-  "description": "Project almost political than section. Professional artist him six.",
-  "dataProvider": "My off around fear.",
-  "owner": [
-    "urn:ngsi-ld:Presence:items:WEHM:58203570",
-    "urn:ngsi-ld:Presence:items:OKMR:47628130"
-  ],
-  "seeAlso": [
-    "urn:ngsi-ld:Presence:items:XLNT:17090672",
-    "urn:ngsi-ld:Presence:items:NKKA:82599000"
-  ],
-  "location": {
-    "type": "Point",
-    "coordinates": [
-      -77.9042455,
-      -139.298575
-    ]
-  },
-  "address": {
-    "streetAddress": "Generation be color conference issue quickly human. Next study role example.",
-    "addressLocality": "It social level nor. It stand support then lot this forget. Ok moment financial rich hard.",
-    "addressRegion": "Few form radio industry head understand. Individual ten commercial easy understand pull good mouth. Dog wife bar ever consider in pull.",
-    "addressCountry": "Local model customer baby similar senior suggest. Religious coach responsibility major. Recognize say play right create name. Television seat somebody investment small to ball.",
-    "postalCode": "Strategy bar inside respond. Environmental major hope wear certain human make. Institution cause anything smile body structure impact.",
-    "postOfficeBoxNumber": "Congress great operation experience manager assume capital. Stay parent room other. Positive amount nation hope heart wait."
-  },
-  "areaServed": "Care perform into relationship check remain. Financial line item end. Store law produce. Total data expect both sound."
+    "id": "urn:ngsi-ld:Presence:id:IZDX:22722811",
+    "dateCreated": "2021-04-10T22:10:41Z",
+    "dateModified": "1978-03-08T21:06:13Z",
+    "source": "Any something some car situation. Prevent",
+    "name": "Offer mean southern want direction style fear. Dream report sell. Establish field voice watch beautiful.",
+    "alternateName": "Guy desc",
+    "description": "Tell money time than after. Himself should tree prove.",
+    "dataProvider": "Choose join outside class.",
+    "owner": [
+        "urn:ngsi-ld:Presence:items:FSGP:23719158",
+        "urn:ngsi-ld:Presence:items:TLPN:53549867"
+    ],
+    "seeAlso": [
+        "urn:ngsi-ld:Presence:items:TVYX:00173776"
+    ],
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            -61.322875,
+            132.810208
+        ]
+    },
+    "address": {
+        "streetAddress": "Real Republican final. Garden hope different authority. Instead green so interesting local sea.",
+        "addressLocality": "Total require per threat strategy party although. This speak attention option interest season. Such who stage term fast story despite happy.",
+        "addressRegion": "Too itself town between enter cup service. Trade Mrs stand structure kitchen. Always until environmental bank all only. Increase especially certain wrong.",
+        "addressCountry": "Say realize involve others table past. Decade candidate born executive sell.",
+        "postalCode": "Because deep better own. Ok behavior apply risk key reason see.",
+        "postOfficeBoxNumber": "Appear third at though music during. Hold every hotel arm garden theory anyone.",
+        "streetNr": "Option institution eight. If upon prove ready shoulder.",
+        "district": "Raise seat husband hand month. Image suffer indeed. Know they point other letter."
+    },
+    "areaServed": "Cost leader phone American realize individual someb",
+    "rt": [
+        "oic.r.sensor.presence"
+    ],
+    "value": true,
+    "n": "Very cer",
+    "if": [
+        "oic.if.s",
+        "oic.if.baseline"
+    ],
+    "type": "Presence"
 }
