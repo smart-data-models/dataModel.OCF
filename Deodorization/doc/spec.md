@@ -15,7 +15,15 @@
 ## List of properties  
 
 <sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
-- `currentstate[string]`: The current state of the Deodorization function.  - `if[array]`: The OCF Interface set supported by this Resource.  - `mode[string]`: The modes of the Deodorization function.  - `n[string]`: Friendly name of the Resource  - `rt[array]`: The Resource Type.  - `type[string]`: NGSI entity type. It has to be Deodorization  <!-- /30-PropertiesList -->  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: The country. For example, Spain  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: The locality in which the street address is, and which is in the region  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: The region in which the locality is, and which is in the country  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: A district is a type of administrative division that, in some countries, is managed by the local government    
+	- `postOfficeBoxNumber[string]`: The post office box number for PO box addresses. For example, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: The postal code. For example, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: The street address  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Number identifying a specific property on a public street    
+- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `currentstate[string]`: The current state of the Deodorization function.  - `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity  - `dateCreated[date-time]`: Entity creation timestamp. This will usually be allocated by the storage platform  - `dateModified[date-time]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform  - `description[string]`: A description of this item  - `id[*]`: Unique identifier of the entity  - `if[array]`: The OCF Interface set supported by this Resource.  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `mode[string]`: The modes of the Deodorization function.  - `n[string]`: Friendly name of the Resource  - `name[string]`: The name of this item  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `rt[array]`: The Resource Type.  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object  - `type[string]`: NGSI entity type. It has to be Deodorization  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Required properties  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -32,6 +40,70 @@
 Deodorization:    
   description: 'Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes a deodorization function, which can be supported by controlling on air filter.   The Property ''mode'' is a mode of the deodorization function. The supported modes are defined by the enumeration [''off'', ''on'', ''auto''].  ''off'' means that the deodorization function is not enabled. ''on'' means that the deodorization function is active. ''auto'' means that the deodorization function is automatically controlled depending on sensed air condition in the device inside.  The Property ''currentstate'' is the current state of the deodorization function. In the case of ''auto'' mode, if the sensed air condition is determined to be bad, the function will be ''on''. Then, ''mode'' value is ''auto'' and ''currentstate'' value is ''on''. If not, the function is remaining ''off'' state. Then, ''currentstate'' value is ''off''.'    
   properties:    
+    address:    
+      description: The mailing address    
+      properties:    
+        addressCountry:    
+          description: 'The country. For example, Spain'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
+        addressLocality:    
+          description: 'The locality in which the street address is, and which is in the region'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
+        addressRegion:    
+          description: 'The region in which the locality is, and which is in the country'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        postOfficeBoxNumber:    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
+        postalCode:    
+          description: 'The postal code. For example, 24004'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
+        streetAddress:    
+          description: The street address    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      type: object    
+      x-ngsi:    
+        model: https://schema.org/address    
+        type: Property    
+    alternateName:    
+      description: An alternative name for this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    areaServed:    
+      description: The geographic area where a service or offered item is provided    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
     currentstate:    
       description: The current state of the Deodorization function.    
       enum:    
@@ -39,6 +111,45 @@ Deodorization:
         - on    
       readOnly: true    
       type: string    
+      x-ngsi:    
+        type: Property    
+    dataProvider:    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateCreated:    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateModified:    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    description:    
+      description: A description of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    id:    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     if:    
@@ -54,6 +165,171 @@ Deodorization:
       uniqueItems: true    
       x-ngsi:    
         type: Property    
+    location:    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+      oneOf:    
+        - description: Geojson reference to the item. Point    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                type: number    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - Point    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Point    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - LineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON LineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 4    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - Polygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Polygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPoint    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPoint    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiLineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiLineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    items:    
+                      type: number    
+                    minItems: 2    
+                    type: array    
+                  minItems: 4    
+                  type: array    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPolygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPolygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+      x-ngsi:    
+        type: GeoProperty    
     mode:    
       description: The modes of the Deodorization function.    
       enum:    
@@ -70,6 +346,33 @@ Deodorization:
       type: string    
       x-ngsi:    
         type: Property    
+    name:    
+      description: The name of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    owner:    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
+      items:    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     rt:    
       description: The Resource Type.    
       items:    
@@ -81,6 +384,23 @@ Deodorization:
       readOnly: true    
       type: array    
       uniqueItems: true    
+      x-ngsi:    
+        type: Property    
+    seeAlso:    
+      description: list of uri pointing to additional resources about the item    
+      oneOf:    
+        - items:    
+            format: uri    
+            type: string    
+          minItems: 1    
+          type: array    
+        - format: uri    
+          type: string    
+      x-ngsi:    
+        type: Property    
+    source:    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
+      type: string    
       x-ngsi:    
         type: Property    
     type:    
@@ -112,38 +432,50 @@ Deodorization:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Deodorization:id:XDXD:95550483",  
-  "dateCreated": "1999-03-18T19:45:38Z",  
-  "dateModified": "2003-06-19T17:39:31Z",  
-  "source": "Enter example study enjoy get research cost once. Professor bill page center.",  
-  "name": "Attention produce quite newspaper world story approach.",  
-  "alternateName": "Stand usually material per great although young. During move somebody everybody inside.",  
-  "description": "Talk fund we course affect mother. Bring western apply security democratic.",  
-  "dataProvider": "Success show social modern view. Officer stock true center have foot watch firm. Require capital yourself yard bar approach.",  
-  "owner": [  
-    "urn:ngsi-ld:Deodorization:items:RAZH:64911453",  
-    "urn:ngsi-ld:Deodorization:items:TUDH:55185476"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Deodorization:items:KRVY:49754379",  
-    "urn:ngsi-ld:Deodorization:items:YFMD:65193227"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -4.4983885,  
-      -135.992885  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Low record Republican number prevent citizen group. List memory begin marriage weight.",  
-    "addressLocality": "Standard religious your buy boy down lot. Partner someone available guess security sing between create. Within standard everyone speech require street manage.",  
-    "addressRegion": "Short yet just table month until. Expert true dark director throughout red continue. You remain street various than training able.",  
-    "addressCountry": "There meet maybe message language such.",  
-    "postalCode": "Someone music several little training easy human.",  
-    "postOfficeBoxNumber": "Walk me continue executive green. Feel coach fall stuff often."  
-  },  
-  "areaServed": "Common collection agree away. Gun collection recently old project."  
+    "id": "urn:ngsi-ld:Deodorization:id:DDRP:28146546",  
+    "dateCreated": "2002-04-04T10:47:16Z",  
+    "dateModified": "1992-12-09T04:22:28Z",  
+    "source": "Look record interview few. Turn phone heart window. Assume be seek article.",  
+    "name": "Hour million large major.",  
+    "alternateName": "Institution happy write end since. Court boy state table agree moment. Budget huge debate among way. Per",  
+    "description": "Work chance image quite there many true follow. Your play themselves myself use act relationship.",  
+    "dataProvider": "Along chance either six success on. At be than always different American address. Former claim chance prevent why measure too.",  
+    "owner": [  
+        "urn:ngsi-ld:Deodorization:items:YGJR:80918916",  
+        "urn:ngsi-ld:Deodorization:items:VAXF:96769930"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Deodorization:items:JYNM:48945174"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            12.993162,  
+            -146.575081  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Dream role free walk. Individual man tell response purpo",  
+        "addressLocality": "Partner hit another. Sing after our car food record power. Himself simply make t",  
+        "addressRegion": "Place full buy radio perform small camera tr",  
+        "addressCountry": "What top always effort. War project occur. Director simply those physical maybe. Information figure box international not type very.",  
+        "postalCode": "Between similar safe air. Issue",  
+        "postOfficeBoxNumber": "Audience throw debate daughter purpose voice. Security fall ready usually.",  
+        "streetNr": "Co",  
+        "district": "Player contain year bill ok "  
+    },  
+    "areaServed": "Information animal car after back available. Federal indicate unit opportunity fear great.",  
+    "rt": [  
+        "oic.r.deodorization"  
+    ],  
+    "mode": "on",  
+    "currentstate": "on",  
+    "n": "Heavy across while top. Daught",  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.a"  
+    ],  
+    "type": "Deodorization"  
 }  
 ```  
 </details>  
@@ -152,79 +484,101 @@ Deodorization:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:Deodorization:id:XDXD:95550483"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1999-03-18T19:45:38Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2003-06-19T17:39:31Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Enter example study enjoy get research cost once. Professor bill page center."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Attention produce quite newspaper world story approach."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Stand usually material per great although young. During move somebody everybody inside."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Talk fund we course affect mother. Bring western apply security democratic."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Success show social modern view. Officer stock true center have foot watch firm. Require capital yourself yard bar approach."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Deodorization:items:RAZH:64911453",  
-      "urn:ngsi-ld:Deodorization:items:TUDH:55185476"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Deodorization:items:KRVY:49754379",  
-      "urn:ngsi-ld:Deodorization:items:YFMD:65193227"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -4.4983885,  
-        -135.992885  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Low record Republican number prevent citizen group. List memory begin marriage weight.",  
-      "addressLocality": "Standard religious your buy boy down lot. Partner someone available guess security sing between create. Within standard everyone speech require street manage.",  
-      "addressRegion": "Short yet just table month until. Expert true dark director throughout red continue. You remain street various than training able.",  
-      "addressCountry": "There meet maybe message language such.",  
-      "postalCode": "Someone music several little training easy human.",  
-      "postOfficeBoxNumber": "Walk me continue executive green. Feel coach fall stuff often."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Common collection agree away. Gun collection recently old project."  
-  }  
+    "id": "urn:ngsi-ld:Deodorization:id:DDRP:28146546",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "2002-04-04T10:47:16Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "1992-12-09T04:22:28Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Look record interview few. Turn phone heart window. Assume be seek article."  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Hour million large major."  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Institution happy write end since. Court boy state table agree moment. Budget huge debate among way. Per"  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Work chance image quite there many true follow. Your play themselves myself use act relationship."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Along chance either six success on. At be than always different American address. Former claim chance prevent why measure too."  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Deodorization:items:YGJR:80918916",  
+            "urn:ngsi-ld:Deodorization:items:VAXF:96769930"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:Deodorization:items:JYNM:48945174"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                12.993162,  
+                -146.575081  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Dream role free walk. Individual man tell response purpo",  
+            "addressLocality": "Partner hit another. Sing after our car food record power. Himself simply make t",  
+            "addressRegion": "Place full buy radio perform small camera tr",  
+            "addressCountry": "What top always effort. War project occur. Director simply those physical maybe. Information figure box international not type very.",  
+            "postalCode": "Between similar safe air. Issue",  
+            "postOfficeBoxNumber": "Audience throw debate daughter purpose voice. Security fall ready usually.",  
+            "streetNr": "Co",  
+            "district": "Player contain year bill ok "  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Information animal car after back available. Federal indicate unit opportunity fear great."  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.deodorization"  
+        ]  
+    },  
+    "mode": {  
+        "type": "Text",  
+        "value": "on"  
+    },  
+    "currentstate": {  
+        "type": "Text",  
+        "value": "on"  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Heavy across while top. Daught"  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.baseline",  
+            "oic.if.a"  
+        ]  
+    },  
+    "type": "Deodorization"  
 }  
 ```  
 </details>  
@@ -233,41 +587,52 @@ Deodorization:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Deodorization:id:XDXD:95550483",  
-    "dateCreated": "1999-03-18T19:45:38Z",  
-    "dateModified": "2003-06-19T17:39:31Z",  
-    "source": "Enter example study enjoy get research cost once. Professor bill page center.",  
-    "name": "Attention produce quite newspaper world story approach.",  
-    "alternateName": "Stand usually material per great although young. During move somebody everybody inside.",  
-    "description": "Talk fund we course affect mother. Bring western apply security democratic.",  
-    "dataProvider": "Success show social modern view. Officer stock true center have foot watch firm. Require capital yourself yard bar approach.",  
+    "id": "urn:ngsi-ld:Deodorization:id:DDRP:28146546",  
+    "dateCreated": "2002-04-04T10:47:16Z",  
+    "dateModified": "1992-12-09T04:22:28Z",  
+    "source": "Look record interview few. Turn phone heart window. Assume be seek article.",  
+    "name": "Hour million large major.",  
+    "alternateName": "Institution happy write end since. Court boy state table agree moment. Budget huge debate among way. Per",  
+    "description": "Work chance image quite there many true follow. Your play themselves myself use act relationship.",  
+    "dataProvider": "Along chance either six success on. At be than always different American address. Former claim chance prevent why measure too.",  
     "owner": [  
-        "urn:ngsi-ld:Deodorization:items:RAZH:64911453",  
-        "urn:ngsi-ld:Deodorization:items:TUDH:55185476"  
+        "urn:ngsi-ld:Deodorization:items:YGJR:80918916",  
+        "urn:ngsi-ld:Deodorization:items:VAXF:96769930"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:Deodorization:items:KRVY:49754379",  
-        "urn:ngsi-ld:Deodorization:items:YFMD:65193227"  
+        "urn:ngsi-ld:Deodorization:items:JYNM:48945174"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            -4.4983885,  
-            -135.992885  
+            12.993162,  
+            -146.575081  
         ]  
     },  
     "address": {  
-        "streetAddress": "Low record Republican number prevent citizen group. List memory begin marriage weight.",  
-        "addressLocality": "Standard religious your buy boy down lot. Partner someone available guess security sing between create. Within standard everyone speech require street manage.",  
-        "addressRegion": "Short yet just table month until. Expert true dark director throughout red continue. You remain street various than training able.",  
-        "addressCountry": "There meet maybe message language such.",  
-        "postalCode": "Someone music several little training easy human.",  
-        "postOfficeBoxNumber": "Walk me continue executive green. Feel coach fall stuff often."  
+        "streetAddress": "Dream role free walk. Individual man tell response purpo",  
+        "addressLocality": "Partner hit another. Sing after our car food record power. Himself simply make t",  
+        "addressRegion": "Place full buy radio perform small camera tr",  
+        "addressCountry": "What top always effort. War project occur. Director simply those physical maybe. Information figure box international not type very.",  
+        "postalCode": "Between similar safe air. Issue",  
+        "postOfficeBoxNumber": "Audience throw debate daughter purpose voice. Security fall ready usually.",  
+        "streetNr": "Co",  
+        "district": "Player contain year bill ok "  
     },  
-    "areaServed": "Common collection agree away. Gun collection recently old project.",  
+    "areaServed": "Information animal car after back available. Federal indicate unit opportunity fear great.",  
+    "rt": [  
+        "oic.r.deodorization"  
+    ],  
+    "mode": "on",  
+    "currentstate": "on",  
+    "n": "Heavy across while top. Daught",  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.a"  
+    ],  
+    "type": "Deodorization",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -277,82 +642,109 @@ Deodorization:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Deodorization:id:GSSB:36330935",  
+    "id": "urn:ngsi-ld:Deodorization:id:DDRP:28146546",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1993-06-11T07:49:03Z"  
+            "@value": "2002-04-04T10:47:16Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2001-12-13T21:31:27Z"  
+            "@value": "1992-12-09T04:22:28Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Commercial visit fly particularly training. Heart degree leave child. Surface summer style student red."  
+        "value": "Look record interview few. Turn phone heart window. Assume be seek article."  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Drive many rule check activity may. Of yeah ready career me."  
+        "value": "Hour million large major."  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Market fund series. Share simply country kind music class. Degree push against company point energy court. I modern face if respond."  
+        "value": "Institution happy write end since. Court boy state table agree moment. Budget huge debate among way. Per"  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Loss often skin."  
+        "value": "Work chance image quite there many true follow. Your play themselves myself use act relationship."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Economy it total stock PM just enjoy. Ground official professional idea present. Young open situation than debate concern."  
+        "value": "Along chance either six success on. At be than always different American address. Former claim chance prevent why measure too."  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Deodorization:items:XPSC:94768884",  
-            "urn:ngsi-ld:Deodorization:items:FYFX:66660011"  
+            "urn:ngsi-ld:Deodorization:items:YGJR:80918916",  
+            "urn:ngsi-ld:Deodorization:items:VAXF:96769930"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:Deodorization:items:TUUK:04645794"  
+            "urn:ngsi-ld:Deodorization:items:JYNM:48945174"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                -30.7009055,  
-                60.468347  
+                12.993162,  
+                -146.575081  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Claim Mrs seek tax condition down article. Teach start and nice blood myself dog.",  
-            "addressLocality": "Middle rise score concern.",  
-            "addressRegion": "Tax expect believe situation only stuff. These tax church surface happen arrive of.",  
-            "addressCountry": "Local everyone everything them radio total.",  
-            "postalCode": "Feeling perhaps course base involve oil try. Question democratic health design realize. Mean nothing machine officer form generation his.",  
-            "postOfficeBoxNumber": "House rest health entire down every carry. Staff away sell task effect describe."  
+            "streetAddress": "Dream role free walk. Individual man tell response purpo",  
+            "addressLocality": "Partner hit another. Sing after our car food record power. Himself simply make t",  
+            "addressRegion": "Place full buy radio perform small camera tr",  
+            "addressCountry": "What top always effort. War project occur. Director simply those physical maybe. Information figure box international not type very.",  
+            "postalCode": "Between similar safe air. Issue",  
+            "postOfficeBoxNumber": "Audience throw debate daughter purpose voice. Security fall ready usually.",  
+            "streetNr": "Co",  
+            "district": "Player contain year bill ok "  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Likely spring structure service. Congress various environment policy ground."  
+        "value": "Information animal car after back available. Federal indicate unit opportunity fear great."  
     },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.deodorization"  
+        ]  
+    },  
+    "mode": {  
+        "type": "Property",  
+        "value": "on"  
+    },  
+    "currentstate": {  
+        "type": "Property",  
+        "value": "on"  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Heavy across while top. Daught"  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline",  
+            "oic.if.a"  
+        ]  
+    },  
+    "type": "Deodorization",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
