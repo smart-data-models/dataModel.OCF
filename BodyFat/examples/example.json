@@ -1,61 +1,51 @@
 {
-  "id": "urn:ngsi-ld:BodyFat:id:NCXO:90580036",
-  "dateCreated": "2005-02-19T20:56:16Z",
-  "dateModified": "2005-11-28T17:19:04Z",
-  "source": "Attack force rise tree author. Feeling clearly prepare much commercial everyone might quality.",
-  "name": "The health whether feel. Five investment never base collection official. West later close without only country same affect.",
-  "alternateName": "Support not big recently media wind near. Writer suffer kind population scene he any.",
-  "description": "Yeah model bar cup population mention meeting hundred.",
-  "dataProvider": "Thing yourself thing fly control.",
-  "owner": [
-    "urn:ngsi-ld:BodyFat:items:PVXS:05086008",
-    "urn:ngsi-ld:BodyFat:items:XFWO:96280071"
-  ],
-  "seeAlso": [
-    "urn:ngsi-ld:BodyFat:items:HPXB:45693919",
-    "urn:ngsi-ld:BodyFat:items:LODK:47292476"
-  ],
-  "location": {
-    "type": "Point",
-    "coordinates": [
-      -75.359217,
-      169.747483
-    ]
-  },
-  "address": {
-    "streetAddress": "Return responsibility future nature child travel themselves. Listen show production skin offer individual artist.",
-    "addressLocality": "Question find unit. Newspaper program do television speech game attorney difference.",
-    "addressRegion": "Will piece character hair agency over. Red quickly wait west. Heavy consider couple.",
-    "addressCountry": "Nor factor off Democrat research event low. Red media possible quickly role color evidence approach.",
-    "postalCode": "Hold drop tough ask material mind simply. Hope lot environment scene only night challenge.",
-    "postOfficeBoxNumber": "Fear food out modern hotel town every. Since authority field minute sort finish. Against campaign science mention week myself."
-  },
-  "areaServed": "Treatment claim morning away individual anyone international. Economy girl morning.",
-  "rt": [
-    "oic.r.body.fat",
-    "oic.r.body.fat"
-  ],
-  "bodyfat": {
-    "type": "Property",
-    "value": 828.2
-  },
-  "units": "kg",
-  "range": [
-    744.7,
-    370.0
-  ],
-  "step": {
-    "type": "Property",
-    "value": 990.8
-  },
-  "precision": {
-    "type": "Property",
-    "value": 238.8
-  },
-  "n": "Either establish then long war eat. Tell ground describe home determine similar. Democrat someone development young nation. Defense total explain trial.",
-  "if": [
-    "oic.if.baseline",
-    "oic.if.baseline"
-  ],
-  "type": "BodyFat"
+    "id": "urn:ngsi-ld:BodyFat:id:SVXF:83776721",
+    "dateCreated": "2004-10-07T23:47:06Z",
+    "dateModified": "2003-08-03T23:16:37Z",
+    "source": "Million something eight training threat leader employee spend. Floor brother clear light oil again home son",
+    "name": "Sure action population character they for. Answer something here shake he forward population. Final manage these hour ",
+    "alternateName": "Sure cover some operation. Another TV low above ready determine. Participant help begin tax.",
+    "description": "No run though image plant seem. Pass human business sister left.",
+    "dataProvider": "Civil account themselves not share. Lead between coach car event cause. Few book office PM she.",
+    "owner": [
+        "urn:ngsi-ld:BodyFat:items:AJIB:93564199",
+        "urn:ngsi-ld:BodyFat:items:PCKF:02926766"
+    ],
+    "seeAlso": [
+        "urn:ngsi-ld:BodyFat:items:RGZK:83274851"
+    ],
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            -24.056832,
+            76.595722
+        ]
+    },
+    "address": {
+        "streetAddress": "Reduce vote back person enter lose miss. Too us today hope close purpose. Across top join sort television participant special officer.",
+        "addressLocality": "Whom notice view. Perhaps tend cup hundred recently sure animal.",
+        "addressRegion": "Rock technology administration same professor. Example much become certainly. Front magazine environmental mean forget televi",
+        "addressCountry": "Until physical beautiful poor Congress her. Score condition arrive evening. Weight building above house know here.",
+        "postalCode": "Huge interview pattern series simple first. Church understand hospital sell. Tree accept fact music wind area.",
+        "postOfficeBoxNumber": "Truth final military group job view. Recognize cut occur consider store rest.",
+        "streetNr": "Board oth",
+        "district": "For sit edge Democrat Republican question main assume. Firm movie politics it learn add foreign."
+    },
+    "areaServed": "Who six p",
+    "rt": [
+        "oic.r.body.fat"
+    ],
+    "bodyfat": 109.9,
+    "units": "percent",
+    "range": [
+        341.8,
+        526.6
+    ],
+    "step": 673.8,
+    "precision": 887.0,
+    "n": "V",
+    "if": [
+        "oic.if.s"
+    ],
+    "type": "BodyFat"
 }
