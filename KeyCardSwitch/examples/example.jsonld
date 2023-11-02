@@ -1,38 +1,48 @@
 {
-    "id": "urn:ngsi-ld:KeyCardSwitch:id:GZOF:35641475",
-    "dateCreated": "1979-06-19T15:05:24Z",
-    "dateModified": "1999-08-17T22:39:05Z",
-    "source": "Star total weight would. Yeah general down government.",
-    "name": "Ago three pattern sport remember skin walk pressure. Rule specific agree why oil morning exactly. Around think couple particular long long agency.",
-    "alternateName": "Tree mission after strategy window coach. Loss shake newspaper myself sure now project movie. Senior like glass sister success toward discover.",
-    "description": "Decision risk citizen in must. Know not change result wish none your.",
-    "dataProvider": "Writer standard skin notice. Institution man relationship material someone skill.",
+    "id": "urn:ngsi-ld:KeyCardSwitch:id:EICU:62882679",
+    "dateCreated": "1984-05-02T03:57:17Z",
+    "dateModified": "1990-10-10T17:17:22Z",
+    "source": "Early generation once couple whom would. Item toni",
+    "name": "Institution game o",
+    "alternateName": "Special say hundred ",
+    "description": "Go own involve region candidate there go. Provide finish card thousand. Why raise second pick thus.",
+    "dataProvider": "Total big nation couple writer picture voice. Easy charge centur",
     "owner": [
-        "urn:ngsi-ld:KeyCardSwitch:items:YDJZ:93348834",
-        "urn:ngsi-ld:KeyCardSwitch:items:SKQE:26700583"
+        "urn:ngsi-ld:KeyCardSwitch:items:MQFE:06102243",
+        "urn:ngsi-ld:KeyCardSwitch:items:JYJG:56880066"
     ],
     "seeAlso": [
-        "urn:ngsi-ld:KeyCardSwitch:items:ICWM:26074718",
-        "urn:ngsi-ld:KeyCardSwitch:items:QCPV:59780183"
+        "urn:ngsi-ld:KeyCardSwitch:items:QFUB:66511170"
     ],
     "location": {
         "type": "Point",
         "coordinates": [
-            14.563401,
-            -16.208054
+            79.4951555,
+            -149.538487
         ]
     },
     "address": {
-        "streetAddress": "Number wall perhaps let whom throughout bring pattern.",
-        "addressLocality": "Pass cell building. Hair senior college receive option south. Step recent local list feel.",
-        "addressRegion": "Agency real man forward house heart wind democratic. Citizen affect choose bit help theory. And machine culture short piece thousand.",
-        "addressCountry": "Again goal push fund compare item do. Street through evening vote single join she wonder.",
-        "postalCode": "Establish record successful whatever since less probably. Pull member form strategy.",
-        "postOfficeBoxNumber": "There quite gas. Sing painting wonder there let boy summer. Staff until skill camera whole could center."
+        "streetAddress": "View ball rock subject those decide bring. Number ok line use door.",
+        "addressLocality": "Deep relationship about fight mind. Really wall today cause position.",
+        "addressRegion": "Do authority religious college director thought. Hear air nat",
+        "addressCountry": "Enough accept nearly sport hotel. Know child away en",
+        "postalCode": "Near huge black. Would issue he need.",
+        "postOfficeBoxNumber": "S",
+        "streetNr": "System plan tax point analysis reduce. Individual stand work",
+        "district": "Writer share reduce child form. Growth smile clear information nothing heavy sport. Figure method church southern attorney fish."
     },
-    "areaServed": "Front cup leave vote per official race. Else present evening let right these person. Institution peace three current.",
+    "areaServed": "Campaign paper seven. List former movement throughout all red act.",
+    "rt": [
+        "oic.r.keycardswitch"
+    ],
+    "stateofcard": "validCardInserted",
+    "n": "Use su",
+    "if": [
+        "oic.if.baseline",
+        "oic.if.s"
+    ],
+    "type": "KeyCardSwitch",
     "@context": [
-        "https://smartdatamodels.org/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"
+        "https://smartdatamodels.org/context.jsonld"
     ]
 }
