@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: 用于邮政信箱地址的邮政信箱号码。例如：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: 邮政编码。例如：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: 街道地址  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: 标识公共街道上特定房产的编号    
 - `alternateName[string]`: 该项目的替代名称  - `areaServed[string]`: 提供服务或提供物品的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 标识统一数据实体提供者的字符序列  - `dateCreated[date-time]`: 实体创建时间戳。通常由存储平台分配  - `dateModified[date-time]`: 实体最后一次修改的时间戳。通常由存储平台分配  - `description[string]`: 项目描述  - `id[*]`: 实体的唯一标识符  - `if[array]`: 该资源支持的 OCF 接口集  - `interval[number]`: startTime "后的时间间隔（以分钟为单位），如果存在，则属性 "stopTime "不能存在  - `intervalsecond[number]`: startTime "后的时间间隔（以秒为单位），如果存在，则属性 "stopTime "不能存在  - `location[*]`: 项目的 Geojson 引用。它可以是点、线条字符串、多边形、多点、多线条字符串或多多边形  - `n[string]`: 资源的友好名称  - `name[string]`: 该项目的名称  - `owner[array]`: 包含一个 JSON 编码字符序列的列表，其中引用了所有者的唯一 Ids  - `repeat[number]`: 重复时间段的次数  - `rt[array]`: 资源类型  - `seeAlso[*]`: 指向有关该项目的其他资源的 uri 列表  - `source[string]`: 以 URL 形式给出实体数据原始来源的字符串。建议使用源提供者的完全合格域名或源对象的 URL  - `startTime[date-time]`: 时间段的开始时间  - `state[string]`: 时间间隔的当前状态  - `stopTime[date-time]`: 时间段的停止时间，如果存在，则属性 "interval "或 "intervalsecond "不能出现  - `triggertiming[string]`: 触发行动执行的所需时间  - `type[string]`: NGSI 实体类型。必须是 TimePeriod  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 所需属性  
@@ -463,64 +464,55 @@ TimePeriod:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:TimePeriod:id:TPVF:35142901",  
-  "dateCreated": "1981-10-01T03:58:28Z",  
-  "dateModified": "1974-09-01T01:11:55Z",  
-  "source": "Case girl this call woman where. Easy area sport church.",  
-  "name": "Industry artist resource contain strategy Democrat far. From here theory behind these. Itself modern face page indicate.",  
-  "alternateName": "Let we even hold coach morning particular. Form after read language cultural worry.",  
-  "description": "Town word young necessary south.",  
-  "dataProvider": "Then plant hot. Stage conference institution most.",  
-  "owner": [  
-    "urn:ngsi-ld:TimePeriod:items:XCRJ:98728117",  
-    "urn:ngsi-ld:TimePeriod:items:TSXQ:22724273"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:TimePeriod:items:UYCH:34421521",  
-    "urn:ngsi-ld:TimePeriod:items:WXER:47463782"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      44.6383085,  
-      67.311772  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Among region sea two. Treatment drop American large morning turn. Information cultural institution control growth claim manager.",  
-    "addressLocality": "Reduce finally size because business. Store defense force debate instead such dream face.",  
-    "addressRegion": "Attorney situation TV fly authority himself. Attack gas bring.",  
-    "addressCountry": "Defense those sing Mr seek build. Rest garden level financial good. Market training evidence firm establish thus.",  
-    "postalCode": "Region reflect money condition join town career. Least wait still strategy structure under.",  
-    "postOfficeBoxNumber": "Impact my about pressure picture. Recent party then party nature ability dinner. Dark green everything bag wear make even provide."  
-  },  
-  "areaServed": "Order require grow him. Reveal sell dark ever as.",  
-  "rt": [  
-    "oic.r.time.period",  
-    "oic.r.time.period"  
-  ],  
-  "interval": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "intervalsecond": {  
-    "type": "Property",  
-    "value": 864  
-  },  
-  "stopTime": "1996-03-20T07:46:39Z",  
-  "startTime": "2021-07-31T01:24:38Z",  
-  "repeat": {  
-    "type": "Property",  
-    "value": 863  
-  },  
-  "triggertiming": "stopTime",  
-  "state": "postInterval",  
-  "n": "Whole magazine truth stop whose.",  
-  "if": [  
-    "oic.if.a",  
-    "oic.if.baseline"  
-  ],  
-  "type": "TimePeriod"  
+    "id": "urn:ngsi-ld:TimePeriod:id:NOEN:50560068",  
+    "dateCreated": "1981-01-04T19:02:57Z",  
+    "dateModified": "2009-04-19T11:34:49Z",  
+    "source": "Other indeed glass although building view.",  
+    "name": "Doctor point art foot. Third ever personal.",  
+    "alternateName": "Before",  
+    "description": "Medical glass drop site wonder technology. Clear ch",  
+    "dataProvider": "Market finally bed song two former.",  
+    "owner": [  
+        "urn:ngsi-ld:TimePeriod:items:NJUA:07679517",  
+        "urn:ngsi-ld:TimePeriod:items:ECZZ:36221154"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:TimePeriod:items:KXTB:74769498"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -66.690941,  
+            -78.148887  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Understand throughout staff four design agent growth. ",  
+        "addressLocality": "Skill thing level clear fish spend government. Parent mem",  
+        "addressRegion": "Young suggest trial soldier conference nor play. Mouth move music fill maybe war quality. Production evening mean region ",  
+        "addressCountry": "Training fear system moment treat own. Rest gun about.",  
+        "postalCode": "Re",  
+        "postOfficeBoxNumber": "Night doctor media hot his.",  
+        "streetNr": "Adult free Democrat. Language couple nation ready stay identify PM.",  
+        "district": "Owner difficult big force TV blood. Opportunity friend local exactly month. Who degree individual west. Thousand gun few might feel see."  
+    },  
+    "areaServed": "Guess network adult organization. Attack assume",  
+    "rt": [  
+        "oic.r.time.period"  
+    ],  
+    "interval": 864,  
+    "intervalsecond": 864,  
+    "stopTime": "1996-03-20T07:46:39Z",  
+    "startTime": "2021-07-31T01:24:38Z",  
+    "repeat": 863,  
+    "triggertiming": "stopTime",  
+    "state": "inInterval",  
+    "n": "Whole magazine truth stop whose.",  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.a"  
+    ],  
+    "type": "TimePeriod"  
 }  
 ```  
 </details>  
@@ -529,140 +521,121 @@ TimePeriod:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:TimePeriod:id:TPVF:35142901"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1981-10-01T03:58:28Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1974-09-01T01:11:55Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Case girl this call woman where. Easy area sport church."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Industry artist resource contain strategy Democrat far. From here theory behind these. Itself modern face page indicate."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Let we even hold coach morning particular. Form after read language cultural worry."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Town word young necessary south."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Then plant hot. Stage conference institution most."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:TimePeriod:items:XCRJ:98728117",  
-      "urn:ngsi-ld:TimePeriod:items:TSXQ:22724273"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:TimePeriod:items:UYCH:34421521",  
-      "urn:ngsi-ld:TimePeriod:items:WXER:47463782"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        44.6383085,  
-        67.311772  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Among region sea two. Treatment drop American large morning turn. Information cultural institution control growth claim manager.",  
-      "addressLocality": "Reduce finally size because business. Store defense force debate instead such dream face.",  
-      "addressRegion": "Attorney situation TV fly authority himself. Attack gas bring.",  
-      "addressCountry": "Defense those sing Mr seek build. Rest garden level financial good. Market training evidence firm establish thus.",  
-      "postalCode": "Region reflect money condition join town career. Least wait still strategy structure under.",  
-      "postOfficeBoxNumber": "Impact my about pressure picture. Recent party then party nature ability dinner. Dark green everything bag wear make even provide."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Order require grow him. Reveal sell dark ever as."  
-  },  
-  "rt": {  
-    "type": "array",  
-    "value": [  
-      "oic.r.time.period",  
-      "oic.r.time.period"  
-    ]  
-  },  
-  "interval": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 864  
-    }  
-  },  
-  "intervalsecond": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 864  
-    }  
-  },  
-  "stopTime": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1996-03-20T07:46:39Z"  
-  },  
-  "startTime": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "2021-07-31T01:24:38Z"  
-  },  
-  "repeat": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 863  
-    }  
-  },  
-  "triggertiming": {  
-    "type": "string",  
-    "value": "stopTime"  
-  },  
-  "state": {  
-    "type": "string",  
-    "value": "postInterval"  
-  },  
-  "n": {  
-    "type": "string",  
-    "value": "Whole magazine truth stop whose."  
-  },  
-  "if": {  
-    "type": "array",  
-    "value": [  
-      "oic.if.a",  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "type": {  
-    "type": "string",  
-    "value": "TimePeriod"  
-  }  
+    "id": "urn:ngsi-ld:TimePeriod:id:NOEN:50560068",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1981-01-04T19:02:57Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "2009-04-19T11:34:49Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Other indeed glass although building view."  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Doctor point art foot. Third ever personal."  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Before"  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Medical glass drop site wonder technology. Clear ch"  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Market finally bed song two former."  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:TimePeriod:items:NJUA:07679517",  
+            "urn:ngsi-ld:TimePeriod:items:ECZZ:36221154"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:TimePeriod:items:KXTB:74769498"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -66.690941,  
+                -78.148887  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Understand throughout staff four design agent growth. ",  
+            "addressLocality": "Skill thing level clear fish spend government. Parent mem",  
+            "addressRegion": "Young suggest trial soldier conference nor play. Mouth move music fill maybe war quality. Production evening mean region ",  
+            "addressCountry": "Training fear system moment treat own. Rest gun about.",  
+            "postalCode": "Re",  
+            "postOfficeBoxNumber": "Night doctor media hot his.",  
+            "streetNr": "Adult free Democrat. Language couple nation ready stay identify PM.",  
+            "district": "Owner difficult big force TV blood. Opportunity friend local exactly month. Who degree individual west. Thousand gun few might feel see."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Guess network adult organization. Attack assume"  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.time.period"  
+        ]  
+    },  
+    "interval": {  
+        "type": "Number",  
+        "value": 864  
+    },  
+    "intervalsecond": {  
+        "type": "Number",  
+        "value": 864  
+    },  
+    "stopTime": {  
+        "type": "DateTime",  
+        "value": "1996-03-20T07:46:39Z"  
+    },  
+    "startTime": {  
+        "type": "DateTime",  
+        "value": "2021-07-31T01:24:38Z"  
+    },  
+    "repeat": {  
+        "type": "Number",  
+        "value": 863  
+    },  
+    "triggertiming": {  
+        "type": "Text",  
+        "value": "stopTime"  
+    },  
+    "state": {  
+        "type": "Text",  
+        "value": "inInterval"  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Whole magazine truth stop whose."  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.baseline",  
+            "oic.if.a"  
+        ]  
+    },  
+    "type": "TimePeriod"  
 }  
 ```  
 </details>  
@@ -671,67 +644,57 @@ TimePeriod:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:TimePeriod:id:TPVF:35142901",  
-    "dateCreated": "1981-10-01T03:58:28Z",  
-    "dateModified": "1974-09-01T01:11:55Z",  
-    "source": "Case girl this call woman where. Easy area sport church.",  
-    "name": "Industry artist resource contain strategy Democrat far. From here theory behind these. Itself modern face page indicate.",  
-    "alternateName": "Let we even hold coach morning particular. Form after read language cultural worry.",  
-    "description": "Town word young necessary south.",  
-    "dataProvider": "Then plant hot. Stage conference institution most.",  
+    "id": "urn:ngsi-ld:TimePeriod:id:NOEN:50560068",  
+    "dateCreated": "1981-01-04T19:02:57Z",  
+    "dateModified": "2009-04-19T11:34:49Z",  
+    "source": "Other indeed glass although building view.",  
+    "name": "Doctor point art foot. Third ever personal.",  
+    "alternateName": "Before",  
+    "description": "Medical glass drop site wonder technology. Clear ch",  
+    "dataProvider": "Market finally bed song two former.",  
     "owner": [  
-        "urn:ngsi-ld:TimePeriod:items:XCRJ:98728117",  
-        "urn:ngsi-ld:TimePeriod:items:TSXQ:22724273"  
+        "urn:ngsi-ld:TimePeriod:items:NJUA:07679517",  
+        "urn:ngsi-ld:TimePeriod:items:ECZZ:36221154"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:TimePeriod:items:UYCH:34421521",  
-        "urn:ngsi-ld:TimePeriod:items:WXER:47463782"  
+        "urn:ngsi-ld:TimePeriod:items:KXTB:74769498"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            44.6383085,  
-            67.311772  
+            -66.690941,  
+            -78.148887  
         ]  
     },  
     "address": {  
-        "streetAddress": "Among region sea two. Treatment drop American large morning turn. Information cultural institution control growth claim manager.",  
-        "addressLocality": "Reduce finally size because business. Store defense force debate instead such dream face.",  
-        "addressRegion": "Attorney situation TV fly authority himself. Attack gas bring.",  
-        "addressCountry": "Defense those sing Mr seek build. Rest garden level financial good. Market training evidence firm establish thus.",  
-        "postalCode": "Region reflect money condition join town career. Least wait still strategy structure under.",  
-        "postOfficeBoxNumber": "Impact my about pressure picture. Recent party then party nature ability dinner. Dark green everything bag wear make even provide."  
+        "streetAddress": "Understand throughout staff four design agent growth. ",  
+        "addressLocality": "Skill thing level clear fish spend government. Parent mem",  
+        "addressRegion": "Young suggest trial soldier conference nor play. Mouth move music fill maybe war quality. Production evening mean region ",  
+        "addressCountry": "Training fear system moment treat own. Rest gun about.",  
+        "postalCode": "Re",  
+        "postOfficeBoxNumber": "Night doctor media hot his.",  
+        "streetNr": "Adult free Democrat. Language couple nation ready stay identify PM.",  
+        "district": "Owner difficult big force TV blood. Opportunity friend local exactly month. Who degree individual west. Thousand gun few might feel see."  
     },  
-    "areaServed": "Order require grow him. Reveal sell dark ever as.",  
+    "areaServed": "Guess network adult organization. Attack assume",  
     "rt": [  
-        "oic.r.time.period",  
         "oic.r.time.period"  
     ],  
-    "interval": {  
-        "type": "Property",  
-        "value": 864  
-    },  
-    "intervalsecond": {  
-        "type": "Property",  
-        "value": 864  
-    },  
+    "interval": 864,  
+    "intervalsecond": 864,  
     "stopTime": "1996-03-20T07:46:39Z",  
     "startTime": "2021-07-31T01:24:38Z",  
-    "repeat": {  
-        "type": "Property",  
-        "value": 863  
-    },  
+    "repeat": 863,  
     "triggertiming": "stopTime",  
-    "state": "postInterval",  
+    "state": "inInterval",  
     "n": "Whole magazine truth stop whose.",  
     "if": [  
-        "oic.if.a",  
-        "oic.if.baseline"  
+        "oic.if.baseline",  
+        "oic.if.a"  
     ],  
     "type": "TimePeriod",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -741,78 +704,80 @@ TimePeriod:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:TimePeriod:id:TFSS:01462651",  
+    "id": "urn:ngsi-ld:TimePeriod:id:NOEN:50560068",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2018-04-07T03:15:37Z"  
+            "@value": "1981-01-04T19:02:57Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2000-11-20T13:02:07Z"  
+            "@value": "2009-04-19T11:34:49Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Future health he interesting deal wife team. Early possible official similar individual actually good. Me something peace year but society."  
+        "value": "Other indeed glass although building view."  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Myself rate help sort still. Growth fill bed support smile. Stop usually product pretty use response."  
+        "value": "Doctor point art foot. Third ever personal."  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Act we hope east everything represent. Because probably service example government."  
+        "value": "Before"  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Interview actually authority performance kid score. Blood against have. Beautiful game tree drop listen often citizen."  
+        "value": "Medical glass drop site wonder technology. Clear ch"  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Say size strategy easy. Summer may discuss beat ten. Hospital couple same analysis break."  
+        "value": "Market finally bed song two former."  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:TimePeriod:items:KCTO:34471219",  
-            "urn:ngsi-ld:TimePeriod:items:WOCL:63416768"  
+            "urn:ngsi-ld:TimePeriod:items:NJUA:07679517",  
+            "urn:ngsi-ld:TimePeriod:items:ECZZ:36221154"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:TimePeriod:items:IEHN:03499364"  
+            "urn:ngsi-ld:TimePeriod:items:KXTB:74769498"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                4.979827,  
-                27.027311  
+                -66.690941,  
+                -78.148887  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Painting for street surface cup. Here particularly identify ahead news bill. Along investment possible painting treat.",  
-            "addressLocality": "Director your be billion us sea glass heavy. Boy program against development improve life conference. Political store general.",  
-            "addressRegion": "Treat maintain just protect clear poor. Must morning security describe. Foreign structure score music.",  
-            "addressCountry": "Size early item agent test key color. Game mind wall defense science institution. Activity claim white no some truth.",  
-            "postalCode": "Range later letter contain plan. Let grow population skill respond.",  
-            "postOfficeBoxNumber": "Case look election some tough exactly. Mr visit out choose life floor his hotel."  
+            "streetAddress": "Understand throughout staff four design agent growth. ",  
+            "addressLocality": "Skill thing level clear fish spend government. Parent mem",  
+            "addressRegion": "Young suggest trial soldier conference nor play. Mouth move music fill maybe war quality. Production evening mean region ",  
+            "addressCountry": "Training fear system moment treat own. Rest gun about.",  
+            "postalCode": "Re",  
+            "postOfficeBoxNumber": "Night doctor media hot his.",  
+            "streetNr": "Adult free Democrat. Language couple nation ready stay identify PM.",  
+            "district": "Owner difficult big force TV blood. Opportunity friend local exactly month. Who degree individual west. Thousand gun few might feel see."  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Front particular maintain lead economy. Visit hotel focus position."  
+        "value": "Guess network adult organization. Attack assume"  
     },  
     "rt": {  
         "type": "Property",  
@@ -822,53 +787,52 @@ TimePeriod:
     },  
     "interval": {  
         "type": "Property",  
-        "value": 850  
+        "value": 864  
     },  
     "intervalsecond": {  
         "type": "Property",  
-        "value": 176  
+        "value": 864  
     },  
     "stopTime": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2002-11-06T17:47:24Z"  
+            "@value": "1996-03-20T07:46:39Z"  
         }  
     },  
     "startTime": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1985-01-08T06:11:51Z"  
+            "@value": "2021-07-31T01:24:38Z"  
         }  
     },  
     "repeat": {  
         "type": "Property",  
-        "value": 128  
+        "value": 863  
     },  
     "triggertiming": {  
         "type": "Property",  
-        "value": "startTime"  
+        "value": "stopTime"  
     },  
     "state": {  
         "type": "Property",  
-        "value": "preInterval"  
+        "value": "inInterval"  
     },  
     "n": {  
         "type": "Property",  
-        "value": "Former answer political resource nothing. Develop lawyer important executive clear. Financial industry night trip bank end."  
+        "value": "Whole magazine truth stop whose."  
     },  
     "if": {  
         "type": "Property",  
         "value": [  
             "oic.if.baseline",  
-            "oic.if.baseline"  
+            "oic.if.a"  
         ]  
     },  
     "type": "TimePeriod",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
