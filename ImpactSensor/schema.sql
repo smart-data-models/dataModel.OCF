@@ -1,3 +1,3 @@
 /* (Beta) Export of data model ImpactSensor of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE ImpactSensor_type AS ENUM ('ImpactSensor');
-CREATE TABLE ImpactSensor (if JSON, impactdirectionhorizontal NUMERIC, impactdirectionvertical NUMERIC, impactlevel NUMERIC, impactstatus BOOLEAN, n TEXT, rt JSON, type ImpactSensor_type);
+CREATE TABLE ImpactSensor (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, if JSON, impactdirectionhorizontal NUMERIC, impactdirectionvertical NUMERIC, impactlevel NUMERIC, impactstatus BOOLEAN, location JSON, n TEXT, name TEXT, owner JSON, rt JSON, seeAlso JSON, source TEXT, type ImpactSensor_type);
