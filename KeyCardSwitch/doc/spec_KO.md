@@ -15,7 +15,15 @@
 ## 속성 목록  
 
 <sup><sub>[*] 속성에 유형이 없는 것은 여러 유형 또는 다른 형식/패턴을 가질 수 있기 때문입니다</sub></sup>.  
-- `if[array]`: 이 리소스에서 지원하는 OCF 인터페이스 세트입니다.  - `n[string]`: 리소스의 친근한 이름  - `rt[array]`: KeyCardSwitch의 리소스 유형  - `stateofcard[string]`: 키카드 스위치의 상태입니다. 'validCardInserted'는 키카드가 삽입되어 유효성 검사를 통과했음을 의미합니다. 'validCardNotInserted'는 키카드가 삽입되지 않았거나 삽입되었지만 유효성 검사를 통과하지 못했음을 의미합니다.  - `type[string]`: NGSI 엔티티 유형입니다. KeyCardSwitch여야 합니다.  <!-- /30-PropertiesList -->  
+- `address[object]`: 우편 주소  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 국가. 예를 들어, 스페인  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 도로명 주소가 있는 지역 및 해당 지역에 속한 지역  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: 해당 지역이 위치한 지역과 해당 국가의 지역  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 지구는 일부 국가에서는 지방 정부에서 관리하는 행정 구역의 일종입니다.    
+	- `postOfficeBoxNumber[string]`: 사서함 주소의 우체국 사서함 번호입니다. 예: 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 우편 번호입니다. 예: 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 거리 주소  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: 공공 도로의 특정 건물을 식별하는 번호    
+- `alternateName[string]`: 이 항목의 대체 이름  - `areaServed[string]`: 서비스 또는 제공 품목이 제공되는 지리적 영역  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 조화된 데이터 엔티티의 공급자를 식별하는 일련의 문자  - `dateCreated[date-time]`: 엔티티 생성 타임스탬프. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `dateModified[date-time]`: 엔티티의 마지막 수정 타임스탬프입니다. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `description[string]`: 이 항목에 대한 설명  - `id[*]`: 엔티티의 고유 식별자  - `if[array]`: 이 리소스에서 지원하는 OCF 인터페이스 세트입니다.  - `location[*]`: 항목에 대한 지오숀 참조입니다. 포인트, 라인 문자열, 다각형, 멀티포인트, 멀티라인 문자열 또는 멀티폴리곤일 수 있습니다.  - `n[string]`: 리소스의 친근한 이름  - `name[string]`: 이 항목의 이름  - `owner[array]`: 소유자의 고유 ID를 참조하는 JSON 인코딩된 문자 시퀀스가 포함된 목록입니다.  - `rt[array]`: KeyCardSwitch의 리소스 유형  - `seeAlso[*]`: 항목에 대한 추가 리소스를 가리키는 URL 목록  - `source[string]`: 엔티티 데이터의 원본 소스를 URL로 제공하는 문자 시퀀스입니다. 소스 공급자의 정규화된 도메인 이름 또는 소스 개체에 대한 URL을 사용하는 것이 좋습니다.  - `stateofcard[string]`: 키카드 스위치의 상태입니다. 'validCardInserted'는 키카드가 삽입되어 유효성 검사를 통과했음을 의미합니다. 'validCardNotInserted'는 키카드가 삽입되지 않았거나 삽입되었지만 유효성 검사를 통과하지 못했음을 의미합니다.  - `type[string]`: NGSI 엔티티 유형입니다. KeyCardSwitch여야 합니다.  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 필수 속성  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -32,6 +40,109 @@
 KeyCardSwitch:    
   description: 'Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the operation of a KeyCard style switch. It has one mandatory Property,''stateofcard'', which is a string enum type. It has two enum values: ''validCardInserted'', ''validCardNotInserted''. ''validCardInserted'' means that a keycard was inserted and passed validation check. ''validCardNotInserted'' means that a keycard is not inserted or it was inserted but failed to pass validation check.'    
   properties:    
+    address:    
+      description: The mailing address    
+      properties:    
+        addressCountry:    
+          description: 'The country. For example, Spain'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
+        addressLocality:    
+          description: 'The locality in which the street address is, and which is in the region'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
+        addressRegion:    
+          description: 'The region in which the locality is, and which is in the country'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        postOfficeBoxNumber:    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
+        postalCode:    
+          description: 'The postal code. For example, 24004'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
+        streetAddress:    
+          description: The street address    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      type: object    
+      x-ngsi:    
+        model: https://schema.org/address    
+        type: Property    
+    alternateName:    
+      description: An alternative name for this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    areaServed:    
+      description: The geographic area where a service or offered item is provided    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    dataProvider:    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateCreated:    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateModified:    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    description:    
+      description: A description of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    id:    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
+      x-ngsi:    
+        type: Property    
     if:    
       description: The OCF Interface set supported by this Resource.    
       items:    
@@ -45,11 +156,203 @@ KeyCardSwitch:
       uniqueItems: true    
       x-ngsi:    
         type: Property    
+    location:    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+      oneOf:    
+        - description: Geojson reference to the item. Point    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                type: number    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - Point    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Point    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - LineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON LineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 4    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - Polygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Polygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPoint    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPoint    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiLineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiLineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    items:    
+                      type: number    
+                    minItems: 2    
+                    type: array    
+                  minItems: 4    
+                  type: array    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPolygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPolygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+      x-ngsi:    
+        type: GeoProperty    
     n:    
       description: Friendly name of the Resource    
       maxLength: 64    
       readOnly: true    
       type: string    
+      x-ngsi:    
+        type: Property    
+    name:    
+      description: The name of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    owner:    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
+      items:    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
+      type: array    
       x-ngsi:    
         type: Property    
     rt:    
@@ -63,6 +366,23 @@ KeyCardSwitch:
       readOnly: true    
       type: array    
       uniqueItems: true    
+      x-ngsi:    
+        type: Property    
+    seeAlso:    
+      description: list of uri pointing to additional resources about the item    
+      oneOf:    
+        - items:    
+            format: uri    
+            type: string    
+          minItems: 1    
+          type: array    
+        - format: uri    
+          type: string    
+      x-ngsi:    
+        type: Property    
+    source:    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
+      type: string    
       x-ngsi:    
         type: Property    
     stateofcard:    
@@ -103,38 +423,49 @@ KeyCardSwitch:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:KeyCardSwitch:id:GZOF:35641475",  
-  "dateCreated": "1979-06-19T15:05:24Z",  
-  "dateModified": "1999-08-17T22:39:05Z",  
-  "source": "Star total weight would. Yeah general down government.",  
-  "name": "Ago three pattern sport remember skin walk pressure. Rule specific agree why oil morning exactly. Around think couple particular long long agency.",  
-  "alternateName": "Tree mission after strategy window coach. Loss shake newspaper myself sure now project movie. Senior like glass sister success toward discover.",  
-  "description": "Decision risk citizen in must. Know not change result wish none your.",  
-  "dataProvider": "Writer standard skin notice. Institution man relationship material someone skill.",  
-  "owner": [  
-    "urn:ngsi-ld:KeyCardSwitch:items:YDJZ:93348834",  
-    "urn:ngsi-ld:KeyCardSwitch:items:SKQE:26700583"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:KeyCardSwitch:items:ICWM:26074718",  
-    "urn:ngsi-ld:KeyCardSwitch:items:QCPV:59780183"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      14.563401,  
-      -16.208054  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Number wall perhaps let whom throughout bring pattern.",  
-    "addressLocality": "Pass cell building. Hair senior college receive option south. Step recent local list feel.",  
-    "addressRegion": "Agency real man forward house heart wind democratic. Citizen affect choose bit help theory. And machine culture short piece thousand.",  
-    "addressCountry": "Again goal push fund compare item do. Street through evening vote single join she wonder.",  
-    "postalCode": "Establish record successful whatever since less probably. Pull member form strategy.",  
-    "postOfficeBoxNumber": "There quite gas. Sing painting wonder there let boy summer. Staff until skill camera whole could center."  
-  },  
-  "areaServed": "Front cup leave vote per official race. Else present evening let right these person. Institution peace three current."  
+    "id": "urn:ngsi-ld:KeyCardSwitch:id:EICU:62882679",  
+    "dateCreated": "1984-05-02T03:57:17Z",  
+    "dateModified": "1990-10-10T17:17:22Z",  
+    "source": "Early generation once couple whom would. Item toni",  
+    "name": "Institution game o",  
+    "alternateName": "Special say hundred ",  
+    "description": "Go own involve region candidate there go. Provide finish card thousand. Why raise second pick thus.",  
+    "dataProvider": "Total big nation couple writer picture voice. Easy charge centur",  
+    "owner": [  
+        "urn:ngsi-ld:KeyCardSwitch:items:MQFE:06102243",  
+        "urn:ngsi-ld:KeyCardSwitch:items:JYJG:56880066"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:KeyCardSwitch:items:QFUB:66511170"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            79.4951555,  
+            -149.538487  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "View ball rock subject those decide bring. Number ok line use door.",  
+        "addressLocality": "Deep relationship about fight mind. Really wall today cause position.",  
+        "addressRegion": "Do authority religious college director thought. Hear air nat",  
+        "addressCountry": "Enough accept nearly sport hotel. Know child away en",  
+        "postalCode": "Near huge black. Would issue he need.",  
+        "postOfficeBoxNumber": "S",  
+        "streetNr": "System plan tax point analysis reduce. Individual stand work",  
+        "district": "Writer share reduce child form. Growth smile clear information nothing heavy sport. Figure method church southern attorney fish."  
+    },  
+    "areaServed": "Campaign paper seven. List former movement throughout all red act.",  
+    "rt": [  
+        "oic.r.keycardswitch"  
+    ],  
+    "stateofcard": "validCardInserted",  
+    "n": "Use su",  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.s"  
+    ],  
+    "type": "KeyCardSwitch"  
 }  
 ```  
 </details>  
@@ -143,79 +474,97 @@ KeyCardSwitch:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:KeyCardSwitch:id:GZOF:35641475"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1979-06-19T15:05:24Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1999-08-17T22:39:05Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Star total weight would. Yeah general down government."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Ago three pattern sport remember skin walk pressure. Rule specific agree why oil morning exactly. Around think couple particular long long agency."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Tree mission after strategy window coach. Loss shake newspaper myself sure now project movie. Senior like glass sister success toward discover."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Decision risk citizen in must. Know not change result wish none your."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Writer standard skin notice. Institution man relationship material someone skill."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:KeyCardSwitch:items:YDJZ:93348834",  
-      "urn:ngsi-ld:KeyCardSwitch:items:SKQE:26700583"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:KeyCardSwitch:items:ICWM:26074718",  
-      "urn:ngsi-ld:KeyCardSwitch:items:QCPV:59780183"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        14.563401,  
-        -16.208054  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Number wall perhaps let whom throughout bring pattern.",  
-      "addressLocality": "Pass cell building. Hair senior college receive option south. Step recent local list feel.",  
-      "addressRegion": "Agency real man forward house heart wind democratic. Citizen affect choose bit help theory. And machine culture short piece thousand.",  
-      "addressCountry": "Again goal push fund compare item do. Street through evening vote single join she wonder.",  
-      "postalCode": "Establish record successful whatever since less probably. Pull member form strategy.",  
-      "postOfficeBoxNumber": "There quite gas. Sing painting wonder there let boy summer. Staff until skill camera whole could center."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Front cup leave vote per official race. Else present evening let right these person. Institution peace three current."  
-  }  
+    "id": "urn:ngsi-ld:KeyCardSwitch:id:EICU:62882679",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1984-05-02T03:57:17Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "1990-10-10T17:17:22Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Early generation once couple whom would. Item toni"  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Institution game o"  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Special say hundred "  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Go own involve region candidate there go. Provide finish card thousand. Why raise second pick thus."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Total big nation couple writer picture voice. Easy charge centur"  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:KeyCardSwitch:items:MQFE:06102243",  
+            "urn:ngsi-ld:KeyCardSwitch:items:JYJG:56880066"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:KeyCardSwitch:items:QFUB:66511170"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                79.4951555,  
+                -149.538487  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "View ball rock subject those decide bring. Number ok line use door.",  
+            "addressLocality": "Deep relationship about fight mind. Really wall today cause position.",  
+            "addressRegion": "Do authority religious college director thought. Hear air nat",  
+            "addressCountry": "Enough accept nearly sport hotel. Know child away en",  
+            "postalCode": "Near huge black. Would issue he need.",  
+            "postOfficeBoxNumber": "S",  
+            "streetNr": "System plan tax point analysis reduce. Individual stand work",  
+            "district": "Writer share reduce child form. Growth smile clear information nothing heavy sport. Figure method church southern attorney fish."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Campaign paper seven. List former movement throughout all red act."  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.keycardswitch"  
+        ]  
+    },  
+    "stateofcard": {  
+        "type": "Text",  
+        "value": "validCardInserted"  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Use su"  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.baseline",  
+            "oic.if.s"  
+        ]  
+    },  
+    "type": "KeyCardSwitch"  
 }  
 ```  
 </details>  
@@ -224,41 +573,51 @@ KeyCardSwitch:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:KeyCardSwitch:id:GZOF:35641475",  
-    "dateCreated": "1979-06-19T15:05:24Z",  
-    "dateModified": "1999-08-17T22:39:05Z",  
-    "source": "Star total weight would. Yeah general down government.",  
-    "name": "Ago three pattern sport remember skin walk pressure. Rule specific agree why oil morning exactly. Around think couple particular long long agency.",  
-    "alternateName": "Tree mission after strategy window coach. Loss shake newspaper myself sure now project movie. Senior like glass sister success toward discover.",  
-    "description": "Decision risk citizen in must. Know not change result wish none your.",  
-    "dataProvider": "Writer standard skin notice. Institution man relationship material someone skill.",  
+    "id": "urn:ngsi-ld:KeyCardSwitch:id:EICU:62882679",  
+    "dateCreated": "1984-05-02T03:57:17Z",  
+    "dateModified": "1990-10-10T17:17:22Z",  
+    "source": "Early generation once couple whom would. Item toni",  
+    "name": "Institution game o",  
+    "alternateName": "Special say hundred ",  
+    "description": "Go own involve region candidate there go. Provide finish card thousand. Why raise second pick thus.",  
+    "dataProvider": "Total big nation couple writer picture voice. Easy charge centur",  
     "owner": [  
-        "urn:ngsi-ld:KeyCardSwitch:items:YDJZ:93348834",  
-        "urn:ngsi-ld:KeyCardSwitch:items:SKQE:26700583"  
+        "urn:ngsi-ld:KeyCardSwitch:items:MQFE:06102243",  
+        "urn:ngsi-ld:KeyCardSwitch:items:JYJG:56880066"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:KeyCardSwitch:items:ICWM:26074718",  
-        "urn:ngsi-ld:KeyCardSwitch:items:QCPV:59780183"  
+        "urn:ngsi-ld:KeyCardSwitch:items:QFUB:66511170"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            14.563401,  
-            -16.208054  
+            79.4951555,  
+            -149.538487  
         ]  
     },  
     "address": {  
-        "streetAddress": "Number wall perhaps let whom throughout bring pattern.",  
-        "addressLocality": "Pass cell building. Hair senior college receive option south. Step recent local list feel.",  
-        "addressRegion": "Agency real man forward house heart wind democratic. Citizen affect choose bit help theory. And machine culture short piece thousand.",  
-        "addressCountry": "Again goal push fund compare item do. Street through evening vote single join she wonder.",  
-        "postalCode": "Establish record successful whatever since less probably. Pull member form strategy.",  
-        "postOfficeBoxNumber": "There quite gas. Sing painting wonder there let boy summer. Staff until skill camera whole could center."  
+        "streetAddress": "View ball rock subject those decide bring. Number ok line use door.",  
+        "addressLocality": "Deep relationship about fight mind. Really wall today cause position.",  
+        "addressRegion": "Do authority religious college director thought. Hear air nat",  
+        "addressCountry": "Enough accept nearly sport hotel. Know child away en",  
+        "postalCode": "Near huge black. Would issue he need.",  
+        "postOfficeBoxNumber": "S",  
+        "streetNr": "System plan tax point analysis reduce. Individual stand work",  
+        "district": "Writer share reduce child form. Growth smile clear information nothing heavy sport. Figure method church southern attorney fish."  
     },  
-    "areaServed": "Front cup leave vote per official race. Else present evening let right these person. Institution peace three current.",  
+    "areaServed": "Campaign paper seven. List former movement throughout all red act.",  
+    "rt": [  
+        "oic.r.keycardswitch"  
+    ],  
+    "stateofcard": "validCardInserted",  
+    "n": "Use su",  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.s"  
+    ],  
+    "type": "KeyCardSwitch",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -268,82 +627,105 @@ KeyCardSwitch:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:KeyCardSwitch:id:LEEZ:97554540",  
+    "id": "urn:ngsi-ld:KeyCardSwitch:id:EICU:62882679",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2013-05-18T21:24:36Z"  
+            "@value": "1984-05-02T03:57:17Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2006-07-08T05:04:06Z"  
+            "@value": "1990-10-10T17:17:22Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Stock for lead best add yourself decide everyone. Member pass toward treat. Skin throw remain four."  
+        "value": "Early generation once couple whom would. Item toni"  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Lot too town drive. Per fear science buy pull. Notice forward energy necessary."  
+        "value": "Institution game o"  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Fund worry leader return executive I house. World everybody learn day."  
+        "value": "Special say hundred "  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Cultural industry worry black well. Because nation project third better. Mention art window owner very."  
+        "value": "Go own involve region candidate there go. Provide finish card thousand. Why raise second pick thus."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Southern public ability feel think. Military fire green guy yes better authority same. Until wind these fly for hand."  
+        "value": "Total big nation couple writer picture voice. Easy charge centur"  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:KeyCardSwitch:items:HCSA:07183623",  
-            "urn:ngsi-ld:KeyCardSwitch:items:POTQ:78503118"  
+            "urn:ngsi-ld:KeyCardSwitch:items:MQFE:06102243",  
+            "urn:ngsi-ld:KeyCardSwitch:items:JYJG:56880066"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:KeyCardSwitch:items:NNBX:82221089"  
+            "urn:ngsi-ld:KeyCardSwitch:items:QFUB:66511170"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                1.61911,  
-                -121.561893  
+                79.4951555,  
+                -149.538487  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Bring choice by a hundred ago guess. Pass floor watch attorney individual.",  
-            "addressLocality": "Out indeed process difficult let whole necessary. Action could produce without sit talk performance not.",  
-            "addressRegion": "Outside hotel question foot international term.",  
-            "addressCountry": "Girl only another action throughout. Perhaps table this list. Sign civil red eight. Do fish move during across once.",  
-            "postalCode": "Civil ready affect knowledge. Amount six against example go learn.",  
-            "postOfficeBoxNumber": "Bank significant similar station leader. Bag country cup military. Police fund simple put."  
+            "streetAddress": "View ball rock subject those decide bring. Number ok line use door.",  
+            "addressLocality": "Deep relationship about fight mind. Really wall today cause position.",  
+            "addressRegion": "Do authority religious college director thought. Hear air nat",  
+            "addressCountry": "Enough accept nearly sport hotel. Know child away en",  
+            "postalCode": "Near huge black. Would issue he need.",  
+            "postOfficeBoxNumber": "S",  
+            "streetNr": "System plan tax point analysis reduce. Individual stand work",  
+            "district": "Writer share reduce child form. Growth smile clear information nothing heavy sport. Figure method church southern attorney fish."  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Congress newspaper education seat. Spring month skill land production away. I back plant mind bag deal who. Glass fill think expect remain."  
+        "value": "Campaign paper seven. List former movement throughout all red act."  
     },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.keycardswitch"  
+        ]  
+    },  
+    "stateofcard": {  
+        "type": "Property",  
+        "value": "validCardInserted"  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Use su"  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline",  
+            "oic.if.s"  
+        ]  
+    },  
+    "type": "KeyCardSwitch",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -351,7 +733,7 @@ KeyCardSwitch:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-[FAQ 10](https://smartdatamodels.org/index.php/faqs/)을 참조하여 규모 단위를 다루는 방법에 대한 답변을 확인하세요.  
+10](https://smartdatamodels.org/index.php/faqs/)를 참조하여 규모 단위를 다루는 방법에 대한 답변을 확인하세요.  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
