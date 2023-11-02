@@ -15,7 +15,15 @@
 ## 属性列表  
 
 <sup><sub>[*] 如果属性中没有类型，是因为它可能有多个类型或不同的格式/模式</sub></sup>。  
-- `autoWhiteBalance[boolean]`: 自动白平衡功能的状态。  - `if[array]`: 该资源支持的 OCF 接口集。  - `n[string]`: 资源的友好名称  - `rt[array]`: 资源类型。  - `type[string]`: NGSI 实体类型。必须是 AutoWhiteBalance  <!-- /30-PropertiesList -->  
+- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国家。例如，西班牙  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 街道地址所在的地点，以及该地点所在的区域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: 地点所在的地区，以及该地区位于哪个国家  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 地区是一种行政区划，在一些国家由地方政府管理    
+	- `postOfficeBoxNumber[string]`: 用于邮政信箱地址的邮政信箱号码。例如：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 邮政编码。例如：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 街道地址  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: 标识公共街道上特定房产的编号    
+- `alternateName[string]`: 该项目的替代名称  - `areaServed[string]`: 提供服务或提供物品的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `autoWhiteBalance[boolean]`: 自动白平衡功能的状态。  - `dataProvider[string]`: 标识统一数据实体提供者的字符序列  - `dateCreated[date-time]`: 实体创建时间戳。通常由存储平台分配  - `dateModified[date-time]`: 实体最后一次修改的时间戳。通常由存储平台分配  - `description[string]`: 项目描述  - `id[*]`: 实体的唯一标识符  - `if[array]`: 该资源支持的 OCF 接口集。  - `location[*]`: 项目的 Geojson 引用。它可以是点、线条字符串、多边形、多点、多线条字符串或多多边形  - `n[string]`: 资源的友好名称  - `name[string]`: 该项目的名称  - `owner[array]`: 包含一个 JSON 编码字符序列的列表，其中引用了所有者的唯一 Ids  - `rt[array]`: 资源类型。  - `seeAlso[*]`: 指向有关该项目的其他资源的 uri 列表  - `source[string]`: 以 URL 形式给出实体数据原始来源的字符串。建议使用源提供者的完全合格域名或源对象的 URL  - `type[string]`: NGSI 实体类型。必须是 AutoWhiteBalance  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 所需属性  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -32,9 +40,112 @@
 AutoWhiteBalance:    
   description: 'Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes an auto balance on/off feature. The Property ''autoWhiteBalance'' is a boolean. An AutoWhiteBalance value of ''true'' means that the auto white balance feature is on. An AutoWhiteBalance value of ''false'' means that the auto white balance feature is off. '    
   properties:    
+    address:    
+      description: The mailing address    
+      properties:    
+        addressCountry:    
+          description: 'The country. For example, Spain'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
+        addressLocality:    
+          description: 'The locality in which the street address is, and which is in the region'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
+        addressRegion:    
+          description: 'The region in which the locality is, and which is in the country'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        postOfficeBoxNumber:    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
+        postalCode:    
+          description: 'The postal code. For example, 24004'    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
+        streetAddress:    
+          description: The street address    
+          type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      type: object    
+      x-ngsi:    
+        model: https://schema.org/address    
+        type: Property    
+    alternateName:    
+      description: An alternative name for this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    areaServed:    
+      description: The geographic area where a service or offered item is provided    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
     autoWhiteBalance:    
       description: The status of the Auto White balance feature.    
       type: boolean    
+      x-ngsi:    
+        type: Property    
+    dataProvider:    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateCreated:    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateModified:    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    description:    
+      description: A description of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    id:    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     if:    
@@ -50,11 +161,203 @@ AutoWhiteBalance:
       uniqueItems: true    
       x-ngsi:    
         type: Property    
+    location:    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+      oneOf:    
+        - description: Geojson reference to the item. Point    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                type: number    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - Point    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Point    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - LineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON LineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 4    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - Polygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Polygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPoint    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPoint    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiLineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiLineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    items:    
+                      type: number    
+                    minItems: 2    
+                    type: array    
+                  minItems: 4    
+                  type: array    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPolygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPolygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+      x-ngsi:    
+        type: GeoProperty    
     n:    
       description: Friendly name of the Resource    
       maxLength: 64    
       readOnly: true    
       type: string    
+      x-ngsi:    
+        type: Property    
+    name:    
+      description: The name of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    owner:    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
+      items:    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
+      type: array    
       x-ngsi:    
         type: Property    
     rt:    
@@ -68,6 +371,23 @@ AutoWhiteBalance:
       readOnly: true    
       type: array    
       uniqueItems: true    
+      x-ngsi:    
+        type: Property    
+    seeAlso:    
+      description: list of uri pointing to additional resources about the item    
+      oneOf:    
+        - items:    
+            format: uri    
+            type: string    
+          minItems: 1    
+          type: array    
+        - format: uri    
+          type: string    
+      x-ngsi:    
+        type: Property    
+    source:    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
+      type: string    
       x-ngsi:    
         type: Property    
     type:    
@@ -99,38 +419,49 @@ AutoWhiteBalance:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:AutoWhiteBalance:id:YBGX:79096195",  
-  "dateCreated": "1988-12-28T18:35:21Z",  
-  "dateModified": "1995-01-26T21:45:21Z",  
-  "source": "Identify most event degree. Beautiful national baby Mr. True brother sign after head. Enjoy rather last evidence easy.",  
-  "name": "Name million behavior. Arrive enough kitchen financial control. Top Mr add structure.",  
-  "alternateName": "Computer long food sense born break air care. Rule camera college ability mind defense.",  
-  "description": "Reflect book religious rule argue born second artist. Class perform anything. Couple together dream.",  
-  "dataProvider": "Instead present poor decision manage tend. Receive plan thus already. Could see population full himself.",  
-  "owner": [  
-    "urn:ngsi-ld:AutoWhiteBalance:items:GMHA:08426645",  
-    "urn:ngsi-ld:AutoWhiteBalance:items:OQIY:30011178"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:AutoWhiteBalance:items:FELU:43170881",  
-    "urn:ngsi-ld:AutoWhiteBalance:items:RFVY:17552908"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -43.3466335,  
-      -125.620359  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Bag form author.",  
-    "addressLocality": "Family along class boy analysis. One control citizen language blue eye painting.",  
-    "addressRegion": "Song ago begin wear either. Dinner establish theory until. Argue describe behavior step.",  
-    "addressCountry": "Few near year notice. Thank white there once rich. Nothing clear line artist off effort image.",  
-    "postalCode": "Fast bar language young husband. Loss million enough me.",  
-    "postOfficeBoxNumber": "I paper share operation billion play mouth smile."  
-  },  
-  "areaServed": "Generation soldier history financial their. Simple tough clearly Congress artist wonder. International morning shoulder help."  
+    "id": "urn:ngsi-ld:AutoWhiteBalance:id:IWWJ:89932325",  
+    "dateCreated": "2006-08-15T17:31:25Z",  
+    "dateModified": "2009-08-14T00:51:49Z",  
+    "source": "Though realize sav",  
+    "name": "International management go get. Degree production skill season attention away many.",  
+    "alternateName": "Manager wear exist article kind. Hope smile recent than once property more. Cause personal actually war choice unit assume.",  
+    "description": "Security benefit rather eat member whose southern. Painting individual himself g",  
+    "dataProvider": "Without meet majority station. Ok yourself president Republican.",  
+    "owner": [  
+        "urn:ngsi-ld:AutoWhiteBalance:items:BDSM:75724340",  
+        "urn:ngsi-ld:AutoWhiteBalance:items:QYOC:51435150"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:AutoWhiteBalance:items:ZSQT:71423685"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -77.6840755,  
+            -114.923609  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Across speak research build blue method lawyer. Top require too campaign travel condition. Use player sing Mrs.",  
+        "addressLocality": "History maybe any me. City support anyone participant central wife place. Bar open set until safe in outside. Design management respons",  
+        "addressRegion": "Soldier east coach. Close marriage perhaps despite she pattern tough. Spring conf",  
+        "addressCountry": "Result key e",  
+        "postalCode": "Very Congress body. Financial quite fear area run according evidence. Power sound reality law change call.",  
+        "postOfficeBoxNumber": "Through house read school change cell before. Data city order future put bit play animal.",  
+        "streetNr": "Own condition expert time kee",  
+        "district": "Significant admit TV far meeting health bit. Increase factor anyone provide probably."  
+    },  
+    "areaServed": "Various notice tree. Real within on go doctor officer glass.",  
+    "rt": [  
+        "oic.r.colour.autowhitebalance"  
+    ],  
+    "autoWhiteBalance": true,  
+    "n": "Face picture case entire face house describe autho",  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.a"  
+    ],  
+    "type": "AutoWhiteBalance"  
 }  
 ```  
 </details>  
@@ -139,79 +470,97 @@ AutoWhiteBalance:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:AutoWhiteBalance:id:YBGX:79096195"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1988-12-28T18:35:21Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1995-01-26T21:45:21Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Identify most event degree. Beautiful national baby Mr. True brother sign after head. Enjoy rather last evidence easy."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Name million behavior. Arrive enough kitchen financial control. Top Mr add structure."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Computer long food sense born break air care. Rule camera college ability mind defense."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Reflect book religious rule argue born second artist. Class perform anything. Couple together dream."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Instead present poor decision manage tend. Receive plan thus already. Could see population full himself."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:AutoWhiteBalance:items:GMHA:08426645",  
-      "urn:ngsi-ld:AutoWhiteBalance:items:OQIY:30011178"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:AutoWhiteBalance:items:FELU:43170881",  
-      "urn:ngsi-ld:AutoWhiteBalance:items:RFVY:17552908"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -43.3466335,  
-        -125.620359  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Bag form author.",  
-      "addressLocality": "Family along class boy analysis. One control citizen language blue eye painting.",  
-      "addressRegion": "Song ago begin wear either. Dinner establish theory until. Argue describe behavior step.",  
-      "addressCountry": "Few near year notice. Thank white there once rich. Nothing clear line artist off effort image.",  
-      "postalCode": "Fast bar language young husband. Loss million enough me.",  
-      "postOfficeBoxNumber": "I paper share operation billion play mouth smile."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Generation soldier history financial their. Simple tough clearly Congress artist wonder. International morning shoulder help."  
-  }  
+    "id": "urn:ngsi-ld:AutoWhiteBalance:id:IWWJ:89932325",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "2006-08-15T17:31:25Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "2009-08-14T00:51:49Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Though realize sav"  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "International management go get. Degree production skill season attention away many."  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Manager wear exist article kind. Hope smile recent than once property more. Cause personal actually war choice unit assume."  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Security benefit rather eat member whose southern. Painting individual himself g"  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Without meet majority station. Ok yourself president Republican."  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:AutoWhiteBalance:items:BDSM:75724340",  
+            "urn:ngsi-ld:AutoWhiteBalance:items:QYOC:51435150"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:AutoWhiteBalance:items:ZSQT:71423685"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -77.6840755,  
+                -114.923609  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Across speak research build blue method lawyer. Top require too campaign travel condition. Use player sing Mrs.",  
+            "addressLocality": "History maybe any me. City support anyone participant central wife place. Bar open set until safe in outside. Design management respons",  
+            "addressRegion": "Soldier east coach. Close marriage perhaps despite she pattern tough. Spring conf",  
+            "addressCountry": "Result key e",  
+            "postalCode": "Very Congress body. Financial quite fear area run according evidence. Power sound reality law change call.",  
+            "postOfficeBoxNumber": "Through house read school change cell before. Data city order future put bit play animal.",  
+            "streetNr": "Own condition expert time kee",  
+            "district": "Significant admit TV far meeting health bit. Increase factor anyone provide probably."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Various notice tree. Real within on go doctor officer glass."  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.colour.autowhitebalance"  
+        ]  
+    },  
+    "autoWhiteBalance": {  
+        "type": "Boolean",  
+        "value": true  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Face picture case entire face house describe autho"  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.baseline",  
+            "oic.if.a"  
+        ]  
+    },  
+    "type": "AutoWhiteBalance"  
 }  
 ```  
 </details>  
@@ -220,41 +569,51 @@ AutoWhiteBalance:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:AutoWhiteBalance:id:YBGX:79096195",  
-    "dateCreated": "1988-12-28T18:35:21Z",  
-    "dateModified": "1995-01-26T21:45:21Z",  
-    "source": "Identify most event degree. Beautiful national baby Mr. True brother sign after head. Enjoy rather last evidence easy.",  
-    "name": "Name million behavior. Arrive enough kitchen financial control. Top Mr add structure.",  
-    "alternateName": "Computer long food sense born break air care. Rule camera college ability mind defense.",  
-    "description": "Reflect book religious rule argue born second artist. Class perform anything. Couple together dream.",  
-    "dataProvider": "Instead present poor decision manage tend. Receive plan thus already. Could see population full himself.",  
+    "id": "urn:ngsi-ld:AutoWhiteBalance:id:IWWJ:89932325",  
+    "dateCreated": "2006-08-15T17:31:25Z",  
+    "dateModified": "2009-08-14T00:51:49Z",  
+    "source": "Though realize sav",  
+    "name": "International management go get. Degree production skill season attention away many.",  
+    "alternateName": "Manager wear exist article kind. Hope smile recent than once property more. Cause personal actually war choice unit assume.",  
+    "description": "Security benefit rather eat member whose southern. Painting individual himself g",  
+    "dataProvider": "Without meet majority station. Ok yourself president Republican.",  
     "owner": [  
-        "urn:ngsi-ld:AutoWhiteBalance:items:GMHA:08426645",  
-        "urn:ngsi-ld:AutoWhiteBalance:items:OQIY:30011178"  
+        "urn:ngsi-ld:AutoWhiteBalance:items:BDSM:75724340",  
+        "urn:ngsi-ld:AutoWhiteBalance:items:QYOC:51435150"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:AutoWhiteBalance:items:FELU:43170881",  
-        "urn:ngsi-ld:AutoWhiteBalance:items:RFVY:17552908"  
+        "urn:ngsi-ld:AutoWhiteBalance:items:ZSQT:71423685"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            -43.3466335,  
-            -125.620359  
+            -77.6840755,  
+            -114.923609  
         ]  
     },  
     "address": {  
-        "streetAddress": "Bag form author.",  
-        "addressLocality": "Family along class boy analysis. One control citizen language blue eye painting.",  
-        "addressRegion": "Song ago begin wear either. Dinner establish theory until. Argue describe behavior step.",  
-        "addressCountry": "Few near year notice. Thank white there once rich. Nothing clear line artist off effort image.",  
-        "postalCode": "Fast bar language young husband. Loss million enough me.",  
-        "postOfficeBoxNumber": "I paper share operation billion play mouth smile."  
+        "streetAddress": "Across speak research build blue method lawyer. Top require too campaign travel condition. Use player sing Mrs.",  
+        "addressLocality": "History maybe any me. City support anyone participant central wife place. Bar open set until safe in outside. Design management respons",  
+        "addressRegion": "Soldier east coach. Close marriage perhaps despite she pattern tough. Spring conf",  
+        "addressCountry": "Result key e",  
+        "postalCode": "Very Congress body. Financial quite fear area run according evidence. Power sound reality law change call.",  
+        "postOfficeBoxNumber": "Through house read school change cell before. Data city order future put bit play animal.",  
+        "streetNr": "Own condition expert time kee",  
+        "district": "Significant admit TV far meeting health bit. Increase factor anyone provide probably."  
     },  
-    "areaServed": "Generation soldier history financial their. Simple tough clearly Congress artist wonder. International morning shoulder help.",  
+    "areaServed": "Various notice tree. Real within on go doctor officer glass.",  
+    "rt": [  
+        "oic.r.colour.autowhitebalance"  
+    ],  
+    "autoWhiteBalance": true,  
+    "n": "Face picture case entire face house describe autho",  
+    "if": [  
+        "oic.if.baseline",  
+        "oic.if.a"  
+    ],  
+    "type": "AutoWhiteBalance",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -264,82 +623,105 @@ AutoWhiteBalance:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:AutoWhiteBalance:id:SHPY:77370068",  
+    "id": "urn:ngsi-ld:AutoWhiteBalance:id:IWWJ:89932325",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2003-06-25T11:21:45Z"  
+            "@value": "2006-08-15T17:31:25Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1996-05-23T06:32:59Z"  
+            "@value": "2009-08-14T00:51:49Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Experience side choose different. Guess military improve another course."  
+        "value": "Though realize sav"  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Store machine cup chair American who fill. Term kid feeling south old. Which page late argue."  
+        "value": "International management go get. Degree production skill season attention away many."  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Role science important truth early ask. Fight nice culture attack laugh real produce."  
+        "value": "Manager wear exist article kind. Hope smile recent than once property more. Cause personal actually war choice unit assume."  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Television sense parent without. Performance as subject camera help career enough itself."  
+        "value": "Security benefit rather eat member whose southern. Painting individual himself g"  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Part maybe marriage well once husband impact. Whom fund clear. With decade friend environmental daughter color."  
+        "value": "Without meet majority station. Ok yourself president Republican."  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:AutoWhiteBalance:items:SPJG:46454935",  
-            "urn:ngsi-ld:AutoWhiteBalance:items:NSUP:12033069"  
+            "urn:ngsi-ld:AutoWhiteBalance:items:BDSM:75724340",  
+            "urn:ngsi-ld:AutoWhiteBalance:items:QYOC:51435150"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:AutoWhiteBalance:items:RRVP:40192072"  
+            "urn:ngsi-ld:AutoWhiteBalance:items:ZSQT:71423685"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                -45.953554,  
-                -4.363316  
+                -77.6840755,  
+                -114.923609  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Education draw firm citizen police. Meet return third fill step series.",  
-            "addressLocality": "Of top son too land write. Building memory idea forget yeah here peace.",  
-            "addressRegion": "Nature race need them only mouth since answer. Early scientist seat public.",  
-            "addressCountry": "Daughter address adult eight sort go sign right. See bag hand long.",  
-            "postalCode": "Bag station others music increase. Family entire serious including away nothing move. Blood hard the visit represent over another.",  
-            "postOfficeBoxNumber": "Movement pay way person goal. Gun move environmental apply reality always. Member drive economic kid husband social growth game."  
+            "streetAddress": "Across speak research build blue method lawyer. Top require too campaign travel condition. Use player sing Mrs.",  
+            "addressLocality": "History maybe any me. City support anyone participant central wife place. Bar open set until safe in outside. Design management respons",  
+            "addressRegion": "Soldier east coach. Close marriage perhaps despite she pattern tough. Spring conf",  
+            "addressCountry": "Result key e",  
+            "postalCode": "Very Congress body. Financial quite fear area run according evidence. Power sound reality law change call.",  
+            "postOfficeBoxNumber": "Through house read school change cell before. Data city order future put bit play animal.",  
+            "streetNr": "Own condition expert time kee",  
+            "district": "Significant admit TV far meeting health bit. Increase factor anyone provide probably."  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Least change unit environmental. Top long because against case turn. Performance beautiful save where consider note then minute."  
+        "value": "Various notice tree. Real within on go doctor officer glass."  
     },  
+    "rt": {  
+        "type": "Property",  
+        "value": [  
+            "oic.r.colour.autowhitebalance"  
+        ]  
+    },  
+    "autoWhiteBalance": {  
+        "type": "Property",  
+        "value": true  
+    },  
+    "n": {  
+        "type": "Property",  
+        "value": "Face picture case entire face house describe autho"  
+    },  
+    "if": {  
+        "type": "Property",  
+        "value": [  
+            "oic.if.baseline",  
+            "oic.if.a"  
+        ]  
+    },  
+    "type": "AutoWhiteBalance",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
