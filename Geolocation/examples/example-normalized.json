@@ -1,146 +1,117 @@
 {
-  "id": {
-    "type": "string",
-    "value": "urn:ngsi-ld:Geolocation:id:BEHA:68562233"
-  },
-  "dateCreated": {
-    "format": "date-time",
-    "type": "string",
-    "value": "2009-08-09T05:45:27Z"
-  },
-  "dateModified": {
-    "format": "date-time",
-    "type": "string",
-    "value": "1984-10-08T22:22:35Z"
-  },
-  "source": {
-    "type": "string",
-    "value": "Cover alone Congress station sense able. Summer court recognize yes. Foreign operation Mrs system."
-  },
-  "name": {
-    "type": "string",
-    "value": "Cut recently stand test third. Least similar end speech author Congress young."
-  },
-  "alternateName": {
-    "type": "string",
-    "value": "Cup above final indicate father. Each million letter just organization east."
-  },
-  "description": {
-    "type": "string",
-    "value": "Structure bed per season score organization significant. Reality out stock bad south care."
-  },
-  "dataProvider": {
-    "type": "string",
-    "value": "Understand production past list information career. Head wall edge build theory design. She building news could hotel. Rest series sound free want series could."
-  },
-  "owner": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:Geolocation:items:XHMM:99523747",
-      "urn:ngsi-ld:Geolocation:items:WXXZ:02303430"
-    ]
-  },
-  "seeAlso": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:Geolocation:items:KFQI:84642992",
-      "urn:ngsi-ld:Geolocation:items:DIMR:65496779"
-    ]
-  },
-  "location": {
-    "type": "object",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        -56.856346,
-        153.530621
-      ]
-    }
-  },
-  "address": {
-    "type": "object",
-    "value": {
-      "streetAddress": "Begin discuss language table. Bar might likely find interview herself think.",
-      "addressLocality": "Bed give create window blue. Project tend put must himself try. Pretty season my system.",
-      "addressRegion": "Reduce give information successful woman. Boy accept though mother year. Great hotel war home two official.",
-      "addressCountry": "Blood reality other during recognize miss task name. Discuss those she expect reduce agreement benefit.",
-      "postalCode": "Base happen age nature produce traditional floor. Build couple administration cell happen. Compare focus billion man increase nature phone.",
-      "postOfficeBoxNumber": "Significant poor central business. Be page ahead amount civil chance upon. Future once some none seek. Win blue a since sing leg."
-    }
-  },
-  "areaServed": {
-    "type": "string",
-    "value": "Local audience offer firm section whether way. Rest recognize worry become bill just."
-  },
-  "rt": {
-    "type": "array",
-    "value": [
-      "oic.r.sensor.geolocation",
-      "oic.r.sensor.geolocation"
-    ]
-  },
-  "longitude": {
-    "type": "object",
-    "value": {
-      "type": "Property",
-      "value": 65.0
-    }
-  },
-  "heading": {
-    "type": "object",
-    "value": {
-      "type": "Property",
-      "value": 0.3
-    }
-  },
-  "latitude": {
-    "type": "object",
-    "value": {
-      "type": "Property",
-      "value": 749.4
-    }
-  },
-  "altitudeAccuracy": {
-    "type": "object",
-    "value": {
-      "type": "Property",
-      "value": 870.8
-    }
-  },
-  "alt": {
-    "type": "object",
-    "value": {
-      "type": "Property",
-      "value": 488.6
-    }
-  },
-  "accuracy": {
-    "type": "object",
-    "value": {
-      "type": "Property",
-      "value": 660.8
-    }
-  },
-  "speed": {
-    "type": "object",
-    "value": {
-      "type": "Property",
-      "value": 63.3
-    }
-  },
-  "n": {
-    "type": "string",
-    "value": "East story TV end official relate. Image help significant particularly wall."
-  },
-  "if": {
-    "type": "array",
-    "value": [
-      "oic.if.baseline",
-      "oic.if.s"
-    ]
-  },
-  "type": {
-    "type": "string",
-    "value": "Geolocation"
-  }
+    "id": "urn:ngsi-ld:Geolocation:id:GQEJ:48764759",
+    "dateCreated": {
+        "type": "DateTime",
+        "value": "1979-07-06T09:36:23Z"
+    },
+    "dateModified": {
+        "type": "DateTime",
+        "value": "2021-06-07T14:46:20Z"
+    },
+    "source": {
+        "type": "Text",
+        "value": "Son would mouth relate own chair better available. Line beyond its particularly tree whom."
+    },
+    "name": {
+        "type": "Text",
+        "value": "Tend employee source nature add rest. Report size personal partner stock four. Region as true develop sound central."
+    },
+    "alternateName": {
+        "type": "Text",
+        "value": "Before year themselves your majority f"
+    },
+    "description": {
+        "type": "Text",
+        "value": "Wonder employee attorney quickly candidate change although bag."
+    },
+    "dataProvider": {
+        "type": "Text",
+        "value": "Study modern miss dog Democrat quickly. Often late produce you true soldier. Food break onto friend."
+    },
+    "owner": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:Geolocation:items:KNBD:33041352",
+            "urn:ngsi-ld:Geolocation:items:DUGT:23098910"
+        ]
+    },
+    "seeAlso": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:Geolocation:items:AGFW:91615109"
+        ]
+    },
+    "location": {
+        "type": "geo:json",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -56.7421445,
+                77.286609
+            ]
+        }
+    },
+    "address": {
+        "type": "StructuredValue",
+        "value": {
+            "streetAddress": "View age international big. Attorney author feeling job article.",
+            "addressLocality": "Others record hospital. Grow rule stuff truth college. Whom around put suddenly garden.",
+            "addressRegion": "Others kind company likely. Tonight themselves true power home price.",
+            "addressCountry": "Real leader bad school name care several. Good explain grow water plant perform resource.",
+            "postalCode": "Stock ball organization recognize civil development. Her ",
+            "postOfficeBoxNumber": "Those traditional page a although for study. Speak themselves speech. Nature white without study candidate.",
+            "streetNr": "Wear ind",
+            "district": "Best budget power them evidence without beyond take. Phy"
+        }
+    },
+    "areaServed": {
+        "type": "Text",
+        "value": "Fire happen nothing support suffer which parent. Republican total policy head Mrs debate onto."
+    },
+    "rt": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.r.sensor.geolocation"
+        ]
+    },
+    "longitude": {
+        "type": "Number",
+        "value": 876.2
+    },
+    "heading": {
+        "type": "Number",
+        "value": 81.9
+    },
+    "latitude": {
+        "type": "Number",
+        "value": 16.7
+    },
+    "altitudeAccuracy": {
+        "type": "Number",
+        "value": 332.1
+    },
+    "alt": {
+        "type": "Number",
+        "value": 32.9
+    },
+    "accuracy": {
+        "type": "Number",
+        "value": 706.2
+    },
+    "speed": {
+        "type": "Number",
+        "value": 823.4
+    },
+    "n": {
+        "type": "Text",
+        "value": "Despite society mission. Expect hundred le"
+    },
+    "if": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.if.s",
+            "oic.if.baseline"
+        ]
+    },
+    "type": "Geolocation"
 }
