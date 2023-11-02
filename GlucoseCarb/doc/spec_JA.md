@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: 私書箱の住所のための私書箱番号。例：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: 郵便番号。例：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: 番地  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: 公道上の特定の物件を特定する番号    
 - `alternateName[string]`: この項目の別名  - `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `carb[number]`: グラム単位の炭水化物の量  - `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: この商品の説明  - `id[*]`: エンティティの一意識別子  - `if[array]`: このリソースがサポートする OCF インタフェースセット。  - `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `meal[string]`: 炭水化物摂取時間の記録  - `n[string]`: リソースのフレンドリーネーム  - `name[string]`: このアイテムの名前  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `precision[number]`: precision」の値が公開されると、リソース内のPropertyに対する±の許容範囲が提供される。したがって、プロパティがある値にUPDATEされ、そのプロパティがRETRIEVEDされた場合、RETRIEVEDされた値は、設定された値の±precisionの範囲内であれば有効です。  - `range[array]`: リソース内のプロパティの有効範囲を数値で表します。配列の 1 番目の値を最小値、2 番目の値を最大値とします。  - `rt[array]`: リソースタイプ  - `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `step[number]`: 定義された範囲を横切るステップ値。範囲が数値の場合は整数。  範囲が0.0～10.0でステップが2.5の場合、有効な値は0.0,2.5,5.0,7.5,10.0となります。  - `type[string]`: NGSI エンティティタイプ。GlucoseCarb でなければならない。  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 必須プロパティ  
@@ -463,65 +464,55 @@ GlucoseCarb:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:GlucoseCarb:id:IXKW:55577808",  
-  "dateCreated": "1993-02-18T14:28:07Z",  
-  "dateModified": "1997-09-28T09:47:10Z",  
-  "source": "Financial civil western modern message together strategy. Meeting room hold drug mention. Policy indeed school identify government know. Take ok together environmental candidate.",  
-  "name": "Meeting and under hair occur. Within season check special example.",  
-  "alternateName": "Develop involve source study participant commercial. Figure recent whom brother answer. Often conference country let among although book modern.",  
-  "description": "Plant present consumer if fire. Information still movie language style. Page per form reality.",  
-  "dataProvider": "Project she real. Foot half movement north.",  
-  "owner": [  
-    "urn:ngsi-ld:GlucoseCarb:items:TDIO:31776660",  
-    "urn:ngsi-ld:GlucoseCarb:items:TJOS:80357915"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:GlucoseCarb:items:FTII:88661137",  
-    "urn:ngsi-ld:GlucoseCarb:items:LQRK:95045619"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -78.118671,  
-      -21.584307  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Yard writer after economy since audience. Again little must exactly.",  
-    "addressLocality": "Throw network second design threat. Several radio budget set against maintain. Provide movie receive Republican base read boy.",  
-    "addressRegion": "Significant chance training individual forget learn state. Church who yes recent yet although trial. Here information only.",  
-    "addressCountry": "Contain bar other bed draw. Me natural girl music account law. Film education let what upon war measure relate.",  
-    "postalCode": "Answer east nature this. Join that social. Miss game save step choice.",  
-    "postOfficeBoxNumber": "Record mind market task power fund find. Skill region stage happen. Suddenly total want against former. Military deal institution."  
-  },  
-  "areaServed": "Work hand gas appear type. Entire why her huge first.",  
-  "rt": [  
-    "oic.r.glucose.carb",  
-    "oic.r.glucose.carb"  
-  ],  
-  "carb": {  
-    "type": "Property",  
-    "value": 136.7  
-  },  
-  "meal": "other",  
-  "range": [  
-    170.5,  
-    706.1  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 671.9  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 648.4  
-  },  
-  "n": "Interview person person whole success top edge. Brother quite describe could Republican network single walk. Among program determine doctor.",  
-  "if": [  
-    "oic.if.s",  
-    "oic.if.baseline"  
-  ],  
-  "type": "GlucoseCarb"  
+    "id": "urn:ngsi-ld:GlucoseCarb:id:XAGW:80879157",  
+    "dateCreated": "1992-01-25T16:35:15Z",  
+    "dateModified": "1971-10-13T23:35:12Z",  
+    "source": "Goal song mo",  
+    "name": "Itself rise sport air.",  
+    "alternateName": "Opportunity te",  
+    "description": "Worry heavy physical. Trip consumer senior ability range. Deal career how difference.",  
+    "dataProvider": "Letter owner several anything wrong be financial. Among a make business whole garde",  
+    "owner": [  
+        "urn:ngsi-ld:GlucoseCarb:items:UAHX:69542090",  
+        "urn:ngsi-ld:GlucoseCarb:items:RATV:82291018"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:GlucoseCarb:items:KSLO:48651451"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            1.453833,  
+            148.088804  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Number word successful marriage level sense. Matter within how occur key more up night.",  
+        "addressLocality": "Mind wall director hear continue decade military. It trade area research. Participant audie",  
+        "addressRegion": "Could sing offer yourself threat total as. Carry impact factor.",  
+        "addressCountry": "College hot animal because. Music save sell over share buy.",  
+        "postalCode": "Law day provide piece law draw. Foreign situation anyone strong. Movement wish anyone teac",  
+        "postOfficeBoxNumber": "On six significant. Middle pattern trouble ",  
+        "streetNr": "Debate u",  
+        "district": "Go"  
+    },  
+    "areaServed": "Stage Republican attorney like. Hotel back watch such prepare produce recently. Since before if. Himself on traditional.",  
+    "rt": [  
+        "oic.r.glucose.carb"  
+    ],  
+    "carb": 315.9,  
+    "meal": "no_ingestion",  
+    "range": [  
+        273.7,  
+        549.7  
+    ],  
+    "step": 555.1,  
+    "precision": 784.1,  
+    "n": "Forward beat nothing audience. Three ",  
+    "if": [  
+        "oic.if.baseline"  
+    ],  
+    "type": "GlucoseCarb"  
 }  
 ```  
 </details>  
@@ -530,133 +521,115 @@ GlucoseCarb:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:GlucoseCarb:id:IXKW:55577808"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1993-02-18T14:28:07Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1997-09-28T09:47:10Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Financial civil western modern message together strategy. Meeting room hold drug mention. Policy indeed school identify government know. Take ok together environmental candidate."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Meeting and under hair occur. Within season check special example."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Develop involve source study participant commercial. Figure recent whom brother answer. Often conference country let among although book modern."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Plant present consumer if fire. Information still movie language style. Page per form reality."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Project she real. Foot half movement north."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:GlucoseCarb:items:TDIO:31776660",  
-      "urn:ngsi-ld:GlucoseCarb:items:TJOS:80357915"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:GlucoseCarb:items:FTII:88661137",  
-      "urn:ngsi-ld:GlucoseCarb:items:LQRK:95045619"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -78.118671,  
-        -21.584307  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Yard writer after economy since audience. Again little must exactly.",  
-      "addressLocality": "Throw network second design threat. Several radio budget set against maintain. Provide movie receive Republican base read boy.",  
-      "addressRegion": "Significant chance training individual forget learn state. Church who yes recent yet although trial. Here information only.",  
-      "addressCountry": "Contain bar other bed draw. Me natural girl music account law. Film education let what upon war measure relate.",  
-      "postalCode": "Answer east nature this. Join that social. Miss game save step choice.",  
-      "postOfficeBoxNumber": "Record mind market task power fund find. Skill region stage happen. Suddenly total want against former. Military deal institution."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Work hand gas appear type. Entire why her huge first."  
-  },  
-  "rt": {  
-    "type": "array",  
-    "value": [  
-      "oic.r.glucose.carb",  
-      "oic.r.glucose.carb"  
-    ]  
-  },  
-  "carb": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 136.7  
-    }  
-  },  
-  "meal": {  
-    "type": "string",  
-    "value": "other"  
-  },  
-  "range": {  
-    "type": "array",  
-    "value": [  
-      170.5,  
-      706.1  
-    ]  
-  },  
-  "step": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 671.9  
-    }  
-  },  
-  "precision": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 648.4  
-    }  
-  },  
-  "n": {  
-    "type": "string",  
-    "value": "Interview person person whole success top edge. Brother quite describe could Republican network single walk. Among program determine doctor."  
-  },  
-  "if": {  
-    "type": "array",  
-    "value": [  
-      "oic.if.s",  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "type": {  
-    "type": "string",  
-    "value": "GlucoseCarb"  
-  }  
+    "id": "urn:ngsi-ld:GlucoseCarb:id:XAGW:80879157",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "1992-01-25T16:35:15Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "1971-10-13T23:35:12Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Goal song mo"  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "Itself rise sport air."  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Opportunity te"  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Worry heavy physical. Trip consumer senior ability range. Deal career how difference."  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": "Letter owner several anything wrong be financial. Among a make business whole garde"  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:GlucoseCarb:items:UAHX:69542090",  
+            "urn:ngsi-ld:GlucoseCarb:items:RATV:82291018"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:GlucoseCarb:items:KSLO:48651451"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                1.453833,  
+                148.088804  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Number word successful marriage level sense. Matter within how occur key more up night.",  
+            "addressLocality": "Mind wall director hear continue decade military. It trade area research. Participant audie",  
+            "addressRegion": "Could sing offer yourself threat total as. Carry impact factor.",  
+            "addressCountry": "College hot animal because. Music save sell over share buy.",  
+            "postalCode": "Law day provide piece law draw. Foreign situation anyone strong. Movement wish anyone teac",  
+            "postOfficeBoxNumber": "On six significant. Middle pattern trouble ",  
+            "streetNr": "Debate u",  
+            "district": "Go"  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Stage Republican attorney like. Hotel back watch such prepare produce recently. Since before if. Himself on traditional."  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.glucose.carb"  
+        ]  
+    },  
+    "carb": {  
+        "type": "Number",  
+        "value": 315.9  
+    },  
+    "meal": {  
+        "type": "Text",  
+        "value": "no_ingestion"  
+    },  
+    "range": {  
+        "type": "StructuredValue",  
+        "value": [  
+            273.7,  
+            549.7  
+        ]  
+    },  
+    "step": {  
+        "type": "Number",  
+        "value": 555.1  
+    },  
+    "precision": {  
+        "type": "Number",  
+        "value": 784.1  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Forward beat nothing audience. Three "  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "GlucoseCarb"  
 }  
 ```  
 </details>  
@@ -665,68 +638,57 @@ GlucoseCarb:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:GlucoseCarb:id:IXKW:55577808",  
-    "dateCreated": "1993-02-18T14:28:07Z",  
-    "dateModified": "1997-09-28T09:47:10Z",  
-    "source": "Financial civil western modern message together strategy. Meeting room hold drug mention. Policy indeed school identify government know. Take ok together environmental candidate.",  
-    "name": "Meeting and under hair occur. Within season check special example.",  
-    "alternateName": "Develop involve source study participant commercial. Figure recent whom brother answer. Often conference country let among although book modern.",  
-    "description": "Plant present consumer if fire. Information still movie language style. Page per form reality.",  
-    "dataProvider": "Project she real. Foot half movement north.",  
+    "id": "urn:ngsi-ld:GlucoseCarb:id:XAGW:80879157",  
+    "dateCreated": "1992-01-25T16:35:15Z",  
+    "dateModified": "1971-10-13T23:35:12Z",  
+    "source": "Goal song mo",  
+    "name": "Itself rise sport air.",  
+    "alternateName": "Opportunity te",  
+    "description": "Worry heavy physical. Trip consumer senior ability range. Deal career how difference.",  
+    "dataProvider": "Letter owner several anything wrong be financial. Among a make business whole garde",  
     "owner": [  
-        "urn:ngsi-ld:GlucoseCarb:items:TDIO:31776660",  
-        "urn:ngsi-ld:GlucoseCarb:items:TJOS:80357915"  
+        "urn:ngsi-ld:GlucoseCarb:items:UAHX:69542090",  
+        "urn:ngsi-ld:GlucoseCarb:items:RATV:82291018"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:GlucoseCarb:items:FTII:88661137",  
-        "urn:ngsi-ld:GlucoseCarb:items:LQRK:95045619"  
+        "urn:ngsi-ld:GlucoseCarb:items:KSLO:48651451"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            -78.118671,  
-            -21.584307  
+            1.453833,  
+            148.088804  
         ]  
     },  
     "address": {  
-        "streetAddress": "Yard writer after economy since audience. Again little must exactly.",  
-        "addressLocality": "Throw network second design threat. Several radio budget set against maintain. Provide movie receive Republican base read boy.",  
-        "addressRegion": "Significant chance training individual forget learn state. Church who yes recent yet although trial. Here information only.",  
-        "addressCountry": "Contain bar other bed draw. Me natural girl music account law. Film education let what upon war measure relate.",  
-        "postalCode": "Answer east nature this. Join that social. Miss game save step choice.",  
-        "postOfficeBoxNumber": "Record mind market task power fund find. Skill region stage happen. Suddenly total want against former. Military deal institution."  
+        "streetAddress": "Number word successful marriage level sense. Matter within how occur key more up night.",  
+        "addressLocality": "Mind wall director hear continue decade military. It trade area research. Participant audie",  
+        "addressRegion": "Could sing offer yourself threat total as. Carry impact factor.",  
+        "addressCountry": "College hot animal because. Music save sell over share buy.",  
+        "postalCode": "Law day provide piece law draw. Foreign situation anyone strong. Movement wish anyone teac",  
+        "postOfficeBoxNumber": "On six significant. Middle pattern trouble ",  
+        "streetNr": "Debate u",  
+        "district": "Go"  
     },  
-    "areaServed": "Work hand gas appear type. Entire why her huge first.",  
+    "areaServed": "Stage Republican attorney like. Hotel back watch such prepare produce recently. Since before if. Himself on traditional.",  
     "rt": [  
-        "oic.r.glucose.carb",  
         "oic.r.glucose.carb"  
     ],  
-    "carb": {  
-        "type": "Property",  
-        "value": 136.7  
-    },  
-    "meal": "other",  
+    "carb": 315.9,  
+    "meal": "no_ingestion",  
     "range": [  
-        170.5,  
-        706.1  
+        273.7,  
+        549.7  
     ],  
-    "step": {  
-        "type": "Property",  
-        "value": 671.9  
-    },  
-    "precision": {  
-        "type": "Property",  
-        "value": 648.4  
-    },  
-    "n": "Interview person person whole success top edge. Brother quite describe could Republican network single walk. Among program determine doctor.",  
+    "step": 555.1,  
+    "precision": 784.1,  
+    "n": "Forward beat nothing audience. Three ",  
     "if": [  
-        "oic.if.s",  
         "oic.if.baseline"  
     ],  
     "type": "GlucoseCarb",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -736,78 +698,80 @@ GlucoseCarb:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:GlucoseCarb:id:COKE:43939058",  
+    "id": "urn:ngsi-ld:GlucoseCarb:id:XAGW:80879157",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1972-10-23T07:02:37Z"  
+            "@value": "1992-01-25T16:35:15Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "2020-07-11T01:59:03Z"  
+            "@value": "1971-10-13T23:35:12Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Sound than consumer yet meet around maybe. Tree report deal TV lawyer receive. Take manager several nice million bag."  
+        "value": "Goal song mo"  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Family detail federal bad practice as dark. Article really point step southern maintain central worry."  
+        "value": "Itself rise sport air."  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Serious simple art town nor plant state happen. Policy evidence idea game."  
+        "value": "Opportunity te"  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Tell magazine field kid free some. I certain picture front key."  
+        "value": "Worry heavy physical. Trip consumer senior ability range. Deal career how difference."  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Tough interest computer pattern happen less enjoy threat. Role life bad process explain. Finally soon first most. Tend street impact role."  
+        "value": "Letter owner several anything wrong be financial. Among a make business whole garde"  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:GlucoseCarb:items:NIZT:03977609",  
-            "urn:ngsi-ld:GlucoseCarb:items:DWEA:06806930"  
+            "urn:ngsi-ld:GlucoseCarb:items:UAHX:69542090",  
+            "urn:ngsi-ld:GlucoseCarb:items:RATV:82291018"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:GlucoseCarb:items:NTWO:83362058"  
+            "urn:ngsi-ld:GlucoseCarb:items:KSLO:48651451"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                -73.169997,  
-                -161.055539  
+                1.453833,  
+                148.088804  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "State table pretty account sort detail. Treatment pattern way attorney. Letter drop wish nothing yes indeed.",  
-            "addressLocality": "Peace hope popular shoulder career course choose. Husband keep collection machine water.",  
-            "addressRegion": "Wear thought box seven wind manager. Pay force surface manager day store. Ok head occur executive range.",  
-            "addressCountry": "Whatever administration it often. We fund idea ask capital despite pay.",  
-            "postalCode": "Feeling free these certainly brother. So situation court fire rich expert local.",  
-            "postOfficeBoxNumber": "Risk big lead particularly audience dinner sign and. Size difficult relationship back thousand realize."  
+            "streetAddress": "Number word successful marriage level sense. Matter within how occur key more up night.",  
+            "addressLocality": "Mind wall director hear continue decade military. It trade area research. Participant audie",  
+            "addressRegion": "Could sing offer yourself threat total as. Carry impact factor.",  
+            "addressCountry": "College hot animal because. Music save sell over share buy.",  
+            "postalCode": "Law day provide piece law draw. Foreign situation anyone strong. Movement wish anyone teac",  
+            "postOfficeBoxNumber": "On six significant. Middle pattern trouble ",  
+            "streetNr": "Debate u",  
+            "district": "Go"  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Both rock and defense imagine. Such especially grow civil per. Sea ago spring."  
+        "value": "Stage Republican attorney like. Hotel back watch such prepare produce recently. Since before if. Himself on traditional."  
     },  
     "rt": {  
         "type": "Property",  
@@ -817,41 +781,40 @@ GlucoseCarb:
     },  
     "carb": {  
         "type": "Property",  
-        "value": 156.3  
+        "value": 315.9  
     },  
     "meal": {  
         "type": "Property",  
-        "value": "undetermined"  
+        "value": "no_ingestion"  
     },  
     "range": {  
         "type": "Property",  
         "value": [  
-            730.8,  
-            508.3  
+            273.7,  
+            549.7  
         ]  
     },  
     "step": {  
         "type": "Property",  
-        "value": 60.5  
+        "value": 555.1  
     },  
     "precision": {  
         "type": "Property",  
-        "value": 892.1  
+        "value": 784.1  
     },  
     "n": {  
         "type": "Property",  
-        "value": "Its program population best. Wind through because then leave expert mouth. Lay tell drug animal law vote degree."  
+        "value": "Forward beat nothing audience. Three "  
     },  
     "if": {  
         "type": "Property",  
         "value": [  
-            "oic.if.s"  
+            "oic.if.baseline"  
         ]  
     },  
     "type": "GlucoseCarb",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
