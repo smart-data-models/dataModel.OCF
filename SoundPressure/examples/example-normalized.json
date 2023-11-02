@@ -1,75 +1,93 @@
 {
-  "id": {
-    "type": "string",
-    "value": "urn:ngsi-ld:SoundPressure:id:CKNQ:89924602"
-  },
-  "dateCreated": {
-    "format": "date-time",
-    "type": "string",
-    "value": "2005-05-14T05:51:42Z"
-  },
-  "dateModified": {
-    "format": "date-time",
-    "type": "string",
-    "value": "2020-02-22T11:45:25Z"
-  },
-  "source": {
-    "type": "string",
-    "value": "Against purpose question American. Major possible simply imagine. Discuss last small especially Democrat else."
-  },
-  "name": {
-    "type": "string",
-    "value": "Ago nor could summer on western. Trial white environmental."
-  },
-  "alternateName": {
-    "type": "string",
-    "value": "Chair remain community catch prove. Direction form gun require program. Everybody meet daughter line but."
-  },
-  "description": {
-    "type": "string",
-    "value": "Young result education market."
-  },
-  "dataProvider": {
-    "type": "string",
-    "value": "A worry around senior fall time religious. Consider control foot war drug his."
-  },
-  "owner": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:SoundPressure:items:SAGN:62135245",
-      "urn:ngsi-ld:SoundPressure:items:NHZI:18994579"
-    ]
-  },
-  "seeAlso": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:SoundPressure:items:DMLZ:04503933",
-      "urn:ngsi-ld:SoundPressure:items:JMBO:05242364"
-    ]
-  },
-  "location": {
-    "type": "object",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        -34.294154,
-        -104.619699
-      ]
-    }
-  },
-  "address": {
-    "type": "object",
-    "value": {
-      "streetAddress": "Moment life much both herself road.",
-      "addressLocality": "Him help his pattern. Feel already teach all.",
-      "addressRegion": "System former manager international smile four difficult hospital. Age cost officer sister.",
-      "addressCountry": "Audience finally statement paper. Majority hundred citizen. Serious information provide help great body.",
-      "postalCode": "Sport music sister. West offer weight author room.",
-      "postOfficeBoxNumber": "List health day son view will. Church Republican almost avoid call."
-    }
-  },
-  "areaServed": {
-    "type": "string",
-    "value": "Whether public kitchen glass."
-  }
+    "id": "urn:ngsi-ld:SoundPressure:id:NQGJ:10000554",
+    "dateCreated": {
+        "type": "DateTime",
+        "value": "1991-06-17T13:09:00Z"
+    },
+    "dateModified": {
+        "type": "DateTime",
+        "value": "1989-03-15T04:41:45Z"
+    },
+    "source": {
+        "type": "Text",
+        "value": "Pull arrive key my next detail behind. Debate true"
+    },
+    "name": {
+        "type": "Text",
+        "value": "Part scientist analysis speak left. Behind inside skin individual remain agent. Fire toward test mouth usually former total."
+    },
+    "alternateName": {
+        "type": "Text",
+        "value": "Never role system trouble evidence. Total gi"
+    },
+    "description": {
+        "type": "Text",
+        "value": "Good list practice contain."
+    },
+    "dataProvider": {
+        "type": "Text",
+        "value": "Product require hit future manage."
+    },
+    "owner": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:SoundPressure:items:DAQW:17556804",
+            "urn:ngsi-ld:SoundPressure:items:OQUG:68462891"
+        ]
+    },
+    "seeAlso": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:SoundPressure:items:DODE:26221439"
+        ]
+    },
+    "location": {
+        "type": "geo:json",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -41.256081,
+                20.495882
+            ]
+        }
+    },
+    "address": {
+        "type": "StructuredValue",
+        "value": {
+            "streetAddress": "Interest address pull produce. Interest chance standard material put cost. Court l",
+            "addressLocality": "Loss finish me commercial. Same sing world doctor collection.",
+            "addressRegion": "Foot start apply lose front. Possible add happen enter.",
+            "addressCountry": "Contain I him activity information trouble. Month crime occur born director audience.",
+            "postalCode": "Simple book across particular water decade. War politics voice way current cultural reach.",
+            "postOfficeBoxNumber": "Man less before bit fire w",
+            "streetNr": "While near thank international add. Stay he de",
+            "district": "Least room it water scene recognize game effort. First guy daughter help technology machine. Drive law account exist air."
+        }
+    },
+    "areaServed": {
+        "type": "Text",
+        "value": "Around manager region trial security."
+    },
+    "rt": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.r.sound.pressure"
+        ]
+    },
+    "soundpa": {
+        "type": "Number",
+        "value": 698.2
+    },
+    "n": {
+        "type": "Text",
+        "value": "Picture try summer coach."
+    },
+    "if": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.if.s",
+            "oic.if.baseline"
+        ]
+    },
+    "type": "SoundPressure"
 }
