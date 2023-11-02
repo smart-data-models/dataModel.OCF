@@ -1,133 +1,115 @@
 {
-  "id": {
-    "type": "string",
-    "value": "urn:ngsi-ld:GlucoseMedication:id:FUCJ:71822707"
-  },
-  "dateCreated": {
-    "format": "date-time",
-    "type": "string",
-    "value": "2019-06-23T02:12:16Z"
-  },
-  "dateModified": {
-    "format": "date-time",
-    "type": "string",
-    "value": "2006-11-21T13:06:16Z"
-  },
-  "source": {
-    "type": "string",
-    "value": "Week money out course up step."
-  },
-  "name": {
-    "type": "string",
-    "value": "Recent result figure fine phone after first. Happen training early."
-  },
-  "alternateName": {
-    "type": "string",
-    "value": "True wear attorney work writer baby."
-  },
-  "description": {
-    "type": "string",
-    "value": "President price character hard group per window too. Key reduce impact edge training system radio. Chair religious create dream six third they."
-  },
-  "dataProvider": {
-    "type": "string",
-    "value": "Hour third name impact remember computer event. Have social seek."
-  },
-  "owner": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:GlucoseMedication:items:QYNE:69055829",
-      "urn:ngsi-ld:GlucoseMedication:items:IFJD:14934446"
-    ]
-  },
-  "seeAlso": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:GlucoseMedication:items:VHJA:84783857",
-      "urn:ngsi-ld:GlucoseMedication:items:KIGQ:46185764"
-    ]
-  },
-  "location": {
-    "type": "object",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        56.010655,
-        -59.477813
-      ]
-    }
-  },
-  "address": {
-    "type": "object",
-    "value": {
-      "streetAddress": "Break trouble agreement choice at attention nothing. Trip white physical summer expect pass. Raise media practice goal garden red.",
-      "addressLocality": "Model from break add unit same offer. Meeting maybe picture poor face. Own amount know road budget agency she. Election president these action woman pressure though.",
-      "addressRegion": "East little voice source officer individual. Science new television serve machine pay talk. Drive near travel.",
-      "addressCountry": "Blood performance pass similar subject. Month explain check buy meet require.",
-      "postalCode": "Live hour indeed become vote. Lose shake line our single be win.",
-      "postOfficeBoxNumber": "Will high challenge remain food stage. Soldier vote see how."
-    }
-  },
-  "areaServed": {
-    "type": "string",
-    "value": "Drop image result manager theory practice Democrat enough. Building see strong send radio serve its. Offer page north born travel should and off."
-  },
-  "rt": {
-    "type": "array",
-    "value": [
-      "oic.r.glucose.medication",
-      "oic.r.glucose.medication"
-    ]
-  },
-  "regimen": {
-    "type": "string",
-    "value": "rapidacting"
-  },
-  "medication": {
-    "type": "object",
-    "value": {
-      "type": "Property",
-      "value": 972.0
-    }
-  },
-  "units": {
-    "type": "string",
-    "value": "mg"
-  },
-  "range": {
-    "type": "array",
-    "value": [
-      778.1,
-      631.7
-    ]
-  },
-  "step": {
-    "type": "object",
-    "value": {
-      "type": "Property",
-      "value": 150.9
-    }
-  },
-  "precision": {
-    "type": "object",
-    "value": {
-      "type": "Property",
-      "value": 560.6
-    }
-  },
-  "n": {
-    "type": "string",
-    "value": "Respond with lawyer arm off. Ahead own job mention. Institution matter represent eye."
-  },
-  "if": {
-    "type": "array",
-    "value": [
-      "oic.if.baseline",
-      "oic.if.baseline"
-    ]
-  },
-  "type": {
-    "type": "string",
-    "value": "GlucoseMedication"
-  }
+    "id": "urn:ngsi-ld:GlucoseMedication:id:NEQI:50808079",
+    "dateCreated": {
+        "type": "DateTime",
+        "value": "2009-03-27T04:45:05Z"
+    },
+    "dateModified": {
+        "type": "DateTime",
+        "value": "1983-03-09T12:43:58Z"
+    },
+    "source": {
+        "type": "Text",
+        "value": "Weight she career focus bank out. New travel way t"
+    },
+    "name": {
+        "type": "Text",
+        "value": "Other last treat population second year front. Soon grow bed south avoid past language."
+    },
+    "alternateName": {
+        "type": "Text",
+        "value": "The specific t"
+    },
+    "description": {
+        "type": "Text",
+        "value": "But economic him. Several sense old around left finish. Road arm player sea total."
+    },
+    "dataProvider": {
+        "type": "Text",
+        "value": "Detail thank maybe may buy true. Middle I tough."
+    },
+    "owner": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:GlucoseMedication:items:PRHR:49267004",
+            "urn:ngsi-ld:GlucoseMedication:items:SZGQ:19133090"
+        ]
+    },
+    "seeAlso": {
+        "type": "StructuredValue",
+        "value": [
+            "urn:ngsi-ld:GlucoseMedication:items:TOOR:29217177"
+        ]
+    },
+    "location": {
+        "type": "geo:json",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -23.502069,
+                85.871226
+            ]
+        }
+    },
+    "address": {
+        "type": "StructuredValue",
+        "value": {
+            "streetAddress": "Participant of",
+            "addressLocality": "Money sound consumer amount fund in",
+            "addressRegion": "Industry seven computer house. Fire newspaper medical shake loss pay. Easy instead instead item ask.",
+            "addressCountry": "Institution within follow institution. Far military find base current arrive peace. Knowledge charge budget eat.",
+            "postalCode": "Near charge year with drug official. Too guess stay where. We child market international.",
+            "postOfficeBoxNumber": "Conference west window physical best poor election. Type house suddenly table not often.",
+            "streetNr": "Source interview lawyer common. Everyone history have. Chance teach leg always total job body.",
+            "district": "Same study accept. Lay economic television fear politics message."
+        }
+    },
+    "areaServed": {
+        "type": "Text",
+        "value": "You sort number family environment. Suddenly note third however prevent cup."
+    },
+    "rt": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.r.glucose.medication"
+        ]
+    },
+    "regimen": {
+        "type": "Text",
+        "value": "intermediateacting"
+    },
+    "medication": {
+        "type": "Number",
+        "value": 76.5
+    },
+    "units": {
+        "type": "Text",
+        "value": "mL"
+    },
+    "range": {
+        "type": "StructuredValue",
+        "value": [
+            235.4,
+            989.4
+        ]
+    },
+    "step": {
+        "type": "Number",
+        "value": 346.9
+    },
+    "precision": {
+        "type": "Number",
+        "value": 341.5
+    },
+    "n": {
+        "type": "Text",
+        "value": "Best sister many discussion teach miss"
+    },
+    "if": {
+        "type": "StructuredValue",
+        "value": [
+            "oic.if.baseline"
+        ]
+    },
+    "type": "GlucoseMedication"
 }
