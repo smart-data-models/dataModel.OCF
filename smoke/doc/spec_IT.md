@@ -18,10 +18,11 @@
 - `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Il paese. Ad esempio, la Spagna  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
 	- `addressLocality[string]`: La località in cui si trova l'indirizzo civico e che si trova nella regione  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
 	- `addressRegion[string]`: La regione in cui si trova la località, e che si trova nel paese  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
-	- `district[string]`: Un distretto è un tipo di divisione amministrativa che, in alcuni paesi, è gestita dal governo locale.    
+	- `district[string]`: Un distretto è un tipo di divisione amministrativa che, in alcuni Paesi, è gestita dal governo locale.    
 	- `postOfficeBoxNumber[string]`: Il numero di casella postale per gli indirizzi di casella postale. Ad esempio, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: Il codice postale. Ad esempio, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: L'indirizzo stradale  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Numero che identifica una proprietà specifica su una strada pubblica    
 - `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata  - `dateCreated[date-time]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `if[array]`: Il set di interfacce OCF supportato da questa risorsa.  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `measurement[number]`: Valore misurato per questo sensore, in percentuale.  - `n[string]`: Nome amichevole della risorsa  - `name[string]`: Il nome di questo elemento  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `precision[number]`: Quando viene esposto, il valore in 'precision' fornisce una tolleranza +/- rispetto alle proprietà della risorsa. Pertanto, se una proprietà viene AGGIORNATA a un valore e poi viene restituita, il valore restituito è valido se rientra nell'intervallo del valore impostato +/- precision.  - `range[array]`: L'intervallo valido per la proprietà nella risorsa come numero. Il primo valore della matrice è il valore minimo, il secondo valore della matrice è il valore massimo.  - `rt[array]`: Il tipo di risorsa  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `step[number]`: Valore del passo nell'intervallo definito, un numero intero quando l'intervallo è un numero.  Si tratta dell'incremento per i valori validi nell'intervallo; quindi se l'intervallo è 0.0..10.0 e il passo è 2.5, i valori validi sono 0.0,2.5,5.0,7.5,10.0.  - `type[string]`: Tipo di entità NGSI. Deve essere fumo  - `value[boolean]`: L'indicatore di fumo, vero = rilevato, falso = non rilevato  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Proprietà richieste  
@@ -449,68 +450,55 @@ smoke:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:smoke:id:GQAK:36211876",  
-  "dateCreated": "1992-09-23T05:44:58Z",  
-  "dateModified": "1984-07-19T21:01:38Z",  
-  "source": "Professor director car by professor mean half. Edge war travel.",  
-  "name": "Daughter situation material can police. Role focus at take question.",  
-  "alternateName": "Debate across break Mrs drive. Truth notice anyone field necessary trial case. Address total skin carry. Medical finally discover production.",  
-  "description": "Respond there yard out. Operation feeling dream surface.",  
-  "dataProvider": "Choose of keep less position end. Drive either away speak I network hold deep. Value age necessary technology.",  
-  "owner": [  
-    "urn:ngsi-ld:smoke:items:AIIV:73533274",  
-    "urn:ngsi-ld:smoke:items:RHKO:33594575"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:smoke:items:LSEC:69544898",  
-    "urn:ngsi-ld:smoke:items:LMGY:01203312"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -9.5081105,  
-      134.428105  
-    ]  
-  },  
-  "address": {  
-    "streetAddress": "Team citizen like question response market investment. Opportunity heart choose could. Whatever help player soon.",  
-    "addressLocality": "Politics option interview movie student eye well gas. Physical so edge pressure decide. Inside executive decision development to contain sea find.",  
-    "addressRegion": "Whatever describe example cup. Yet agency quickly.",  
-    "addressCountry": "Thought support deep result century commercial. Per suddenly local service.",  
-    "postalCode": "Environment page tell wonder garden side process first. Exactly article a appear cultural indicate hit decade. Radio officer page.",  
-    "postOfficeBoxNumber": "Close seat yourself they. Pattern quite activity. Life deep now Mrs school expert pass."  
-  },  
-  "areaServed": "Culture change suggest. Process skill bar. Turn tree work wonder forget.",  
-  "rt": [  
-    "oic.r.sensor.smoke",  
-    "oic.r.sensor.smoke"  
-  ],  
-  "value": {  
-    "type": "Property",  
-    "value": false  
-  },  
-  "measurement": {  
-    "type": "Property",  
-    "value": 683.9  
-  },  
-  "precision": {  
-    "type": "Property",  
-    "value": 400.1  
-  },  
-  "n": "Discuss arrive most short send alone. Business author third rich. Technology we mention brother.",  
-  "range": [  
-    570.7,  
-    838.8  
-  ],  
-  "step": {  
-    "type": "Property",  
-    "value": 565.9  
-  },  
-  "if": [  
-    "oic.if.s",  
-    "oic.if.baseline"  
-  ],  
-  "type": "smoke"  
+    "id": "urn:ngsi-ld:smoke:id:VYRR:57457247",  
+    "dateCreated": "2009-11-23T03:21:17Z",  
+    "dateModified": "2019-04-21T20:17:35Z",  
+    "source": "Important actually hope she student ago. Car general third building three central. Thousand score bit.",  
+    "name": "News small TV imagine in quickly condition. Option speak view loca",  
+    "alternateName": "Thing defense various five piece blood camera. Teacher relationship especially detail produce exactly take mont",  
+    "description": "Drive season as idea as what try. Experience very position t",  
+    "dataProvider": "",  
+    "owner": [  
+        "urn:ngsi-ld:smoke:items:XZMK:53394567",  
+        "urn:ngsi-ld:smoke:items:ZWJN:88654730"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:smoke:items:FTUU:63403479"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            46.5370525,  
+            75.632336  
+        ]  
+    },  
+    "address": {  
+        "streetAddress": "Staff travel throw go room. Movement oil continue film concern never.",  
+        "addressLocality": "Line doctor conference generation big like ",  
+        "addressRegion": "Receive threat we management red economy than. East shoulder miss pattern. Station drop indeed. Realiz",  
+        "addressCountry": "Agree style section h",  
+        "postalCode": "Only commercial soldier receive material door age. Lay could myself usually star weight lawyer affect. Ef",  
+        "postOfficeBoxNumber": "Feel describe war event sense on go knowledge. Accept nearly good last garden include.",  
+        "streetNr": "Pass skill kid article serious. Garden product s",  
+        "district": "Shake even city nor friend behavior explain watch. Budget or present."  
+    },  
+    "areaServed": "Glass p",  
+    "rt": [  
+        "oic.r.sensor.smoke"  
+    ],  
+    "value": true,  
+    "measurement": 701.8,  
+    "precision": 380.9,  
+    "n": "Sit pressure television necessary social station term. Mr wear",  
+    "range": [  
+        655.0,  
+        186.5  
+    ],  
+    "step": 88.9,  
+    "if": [  
+        "oic.if.baseline"  
+    ],  
+    "type": "smoke"  
 }  
 ```  
 </details>  
@@ -519,136 +507,115 @@ smoke:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:smoke:id:GQAK:36211876"  
-  },  
-  "dateCreated": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1992-09-23T05:44:58Z"  
-  },  
-  "dateModified": {  
-    "format": "date-time",  
-    "type": "string",  
-    "value": "1984-07-19T21:01:38Z"  
-  },  
-  "source": {  
-    "type": "string",  
-    "value": "Professor director car by professor mean half. Edge war travel."  
-  },  
-  "name": {  
-    "type": "string",  
-    "value": "Daughter situation material can police. Role focus at take question."  
-  },  
-  "alternateName": {  
-    "type": "string",  
-    "value": "Debate across break Mrs drive. Truth notice anyone field necessary trial case. Address total skin carry. Medical finally discover production."  
-  },  
-  "description": {  
-    "type": "string",  
-    "value": "Respond there yard out. Operation feeling dream surface."  
-  },  
-  "dataProvider": {  
-    "type": "string",  
-    "value": "Choose of keep less position end. Drive either away speak I network hold deep. Value age necessary technology."  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:smoke:items:AIIV:73533274",  
-      "urn:ngsi-ld:smoke:items:RHKO:33594575"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:smoke:items:LSEC:69544898",  
-      "urn:ngsi-ld:smoke:items:LMGY:01203312"  
-    ]  
-  },  
-  "location": {  
-    "type": "object",  
+    "id": "urn:ngsi-ld:smoke:id:VYRR:57457247",  
+    "dateCreated": {  
+        "type": "DateTime",  
+        "value": "2009-11-23T03:21:17Z"  
+    },  
+    "dateModified": {  
+        "type": "DateTime",  
+        "value": "2019-04-21T20:17:35Z"  
+    },  
+    "source": {  
+        "type": "Text",  
+        "value": "Important actually hope she student ago. Car general third building three central. Thousand score bit."  
+    },  
+    "name": {  
+        "type": "Text",  
+        "value": "News small TV imagine in quickly condition. Option speak view loca"  
+    },  
+    "alternateName": {  
+        "type": "Text",  
+        "value": "Thing defense various five piece blood camera. Teacher relationship especially detail produce exactly take mont"  
+    },  
+    "description": {  
+        "type": "Text",  
+        "value": "Drive season as idea as what try. Experience very position t"  
+    },  
+    "dataProvider": {  
+        "type": "Text",  
+        "value": ""  
+    },  
+    "owner": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:smoke:items:XZMK:53394567",  
+            "urn:ngsi-ld:smoke:items:ZWJN:88654730"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "urn:ngsi-ld:smoke:items:FTUU:63403479"  
+        ]  
+    },  
+    "location": {  
+        "type": "geo:json",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                46.5370525,  
+                75.632336  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "streetAddress": "Staff travel throw go room. Movement oil continue film concern never.",  
+            "addressLocality": "Line doctor conference generation big like ",  
+            "addressRegion": "Receive threat we management red economy than. East shoulder miss pattern. Station drop indeed. Realiz",  
+            "addressCountry": "Agree style section h",  
+            "postalCode": "Only commercial soldier receive material door age. Lay could myself usually star weight lawyer affect. Ef",  
+            "postOfficeBoxNumber": "Feel describe war event sense on go knowledge. Accept nearly good last garden include.",  
+            "streetNr": "Pass skill kid article serious. Garden product s",  
+            "district": "Shake even city nor friend behavior explain watch. Budget or present."  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Text",  
+        "value": "Glass p"  
+    },  
+    "rt": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.r.sensor.smoke"  
+        ]  
+    },  
     "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -9.5081105,  
-        134.428105  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "object",  
-    "value": {  
-      "streetAddress": "Team citizen like question response market investment. Opportunity heart choose could. Whatever help player soon.",  
-      "addressLocality": "Politics option interview movie student eye well gas. Physical so edge pressure decide. Inside executive decision development to contain sea find.",  
-      "addressRegion": "Whatever describe example cup. Yet agency quickly.",  
-      "addressCountry": "Thought support deep result century commercial. Per suddenly local service.",  
-      "postalCode": "Environment page tell wonder garden side process first. Exactly article a appear cultural indicate hit decade. Radio officer page.",  
-      "postOfficeBoxNumber": "Close seat yourself they. Pattern quite activity. Life deep now Mrs school expert pass."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "string",  
-    "value": "Culture change suggest. Process skill bar. Turn tree work wonder forget."  
-  },  
-  "rt": {  
-    "type": "array",  
-    "value": [  
-      "oic.r.sensor.smoke",  
-      "oic.r.sensor.smoke"  
-    ]  
-  },  
-  "value": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": false  
-    }  
-  },  
-  "measurement": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 683.9  
-    }  
-  },  
-  "precision": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 400.1  
-    }  
-  },  
-  "n": {  
-    "type": "string",  
-    "value": "Discuss arrive most short send alone. Business author third rich. Technology we mention brother."  
-  },  
-  "range": {  
-    "type": "array",  
-    "value": [  
-      570.7,  
-      838.8  
-    ]  
-  },  
-  "step": {  
-    "type": "object",  
-    "value": {  
-      "type": "Property",  
-      "value": 565.9  
-    }  
-  },  
-  "if": {  
-    "type": "array",  
-    "value": [  
-      "oic.if.s",  
-      "oic.if.baseline"  
-    ]  
-  },  
-  "type": {  
-    "type": "string",  
-    "value": "smoke"  
-  }  
+        "type": "Boolean",  
+        "value": true  
+    },  
+    "measurement": {  
+        "type": "Number",  
+        "value": 701.8  
+    },  
+    "precision": {  
+        "type": "Number",  
+        "value": 380.9  
+    },  
+    "n": {  
+        "type": "Text",  
+        "value": "Sit pressure television necessary social station term. Mr wear"  
+    },  
+    "range": {  
+        "type": "StructuredValue",  
+        "value": [  
+            655.0,  
+            186.5  
+        ]  
+    },  
+    "step": {  
+        "type": "Number",  
+        "value": 88.9  
+    },  
+    "if": {  
+        "type": "StructuredValue",  
+        "value": [  
+            "oic.if.baseline"  
+        ]  
+    },  
+    "type": "smoke"  
 }  
 ```  
 </details>  
@@ -657,71 +624,57 @@ smoke:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:smoke:id:GQAK:36211876",  
-    "dateCreated": "1992-09-23T05:44:58Z",  
-    "dateModified": "1984-07-19T21:01:38Z",  
-    "source": "Professor director car by professor mean half. Edge war travel.",  
-    "name": "Daughter situation material can police. Role focus at take question.",  
-    "alternateName": "Debate across break Mrs drive. Truth notice anyone field necessary trial case. Address total skin carry. Medical finally discover production.",  
-    "description": "Respond there yard out. Operation feeling dream surface.",  
-    "dataProvider": "Choose of keep less position end. Drive either away speak I network hold deep. Value age necessary technology.",  
+    "id": "urn:ngsi-ld:smoke:id:VYRR:57457247",  
+    "dateCreated": "2009-11-23T03:21:17Z",  
+    "dateModified": "2019-04-21T20:17:35Z",  
+    "source": "Important actually hope she student ago. Car general third building three central. Thousand score bit.",  
+    "name": "News small TV imagine in quickly condition. Option speak view loca",  
+    "alternateName": "Thing defense various five piece blood camera. Teacher relationship especially detail produce exactly take mont",  
+    "description": "Drive season as idea as what try. Experience very position t",  
+    "dataProvider": "",  
     "owner": [  
-        "urn:ngsi-ld:smoke:items:AIIV:73533274",  
-        "urn:ngsi-ld:smoke:items:RHKO:33594575"  
+        "urn:ngsi-ld:smoke:items:XZMK:53394567",  
+        "urn:ngsi-ld:smoke:items:ZWJN:88654730"  
     ],  
     "seeAlso": [  
-        "urn:ngsi-ld:smoke:items:LSEC:69544898",  
-        "urn:ngsi-ld:smoke:items:LMGY:01203312"  
+        "urn:ngsi-ld:smoke:items:FTUU:63403479"  
     ],  
     "location": {  
         "type": "Point",  
         "coordinates": [  
-            -9.5081105,  
-            134.428105  
+            46.5370525,  
+            75.632336  
         ]  
     },  
     "address": {  
-        "streetAddress": "Team citizen like question response market investment. Opportunity heart choose could. Whatever help player soon.",  
-        "addressLocality": "Politics option interview movie student eye well gas. Physical so edge pressure decide. Inside executive decision development to contain sea find.",  
-        "addressRegion": "Whatever describe example cup. Yet agency quickly.",  
-        "addressCountry": "Thought support deep result century commercial. Per suddenly local service.",  
-        "postalCode": "Environment page tell wonder garden side process first. Exactly article a appear cultural indicate hit decade. Radio officer page.",  
-        "postOfficeBoxNumber": "Close seat yourself they. Pattern quite activity. Life deep now Mrs school expert pass."  
+        "streetAddress": "Staff travel throw go room. Movement oil continue film concern never.",  
+        "addressLocality": "Line doctor conference generation big like ",  
+        "addressRegion": "Receive threat we management red economy than. East shoulder miss pattern. Station drop indeed. Realiz",  
+        "addressCountry": "Agree style section h",  
+        "postalCode": "Only commercial soldier receive material door age. Lay could myself usually star weight lawyer affect. Ef",  
+        "postOfficeBoxNumber": "Feel describe war event sense on go knowledge. Accept nearly good last garden include.",  
+        "streetNr": "Pass skill kid article serious. Garden product s",  
+        "district": "Shake even city nor friend behavior explain watch. Budget or present."  
     },  
-    "areaServed": "Culture change suggest. Process skill bar. Turn tree work wonder forget.",  
+    "areaServed": "Glass p",  
     "rt": [  
-        "oic.r.sensor.smoke",  
         "oic.r.sensor.smoke"  
     ],  
-    "value": {  
-        "type": "Property",  
-        "value": false  
-    },  
-    "measurement": {  
-        "type": "Property",  
-        "value": 683.9  
-    },  
-    "precision": {  
-        "type": "Property",  
-        "value": 400.1  
-    },  
-    "n": "Discuss arrive most short send alone. Business author third rich. Technology we mention brother.",  
+    "value": true,  
+    "measurement": 701.8,  
+    "precision": 380.9,  
+    "n": "Sit pressure television necessary social station term. Mr wear",  
     "range": [  
-        570.7,  
-        838.8  
+        655.0,  
+        186.5  
     ],  
-    "step": {  
-        "type": "Property",  
-        "value": 565.9  
-    },  
+    "step": 88.9,  
     "if": [  
-        "oic.if.s",  
         "oic.if.baseline"  
     ],  
     "type": "smoke",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
@@ -731,78 +684,80 @@ smoke:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:smoke:id:SCJX:93736644",  
+    "id": "urn:ngsi-ld:smoke:id:VYRR:57457247",  
     "dateCreated": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1993-09-01T10:02:46Z"  
+            "@value": "2009-11-23T03:21:17Z"  
         }  
     },  
     "dateModified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
-            "@value": "1987-10-14T19:32:15Z"  
+            "@value": "2019-04-21T20:17:35Z"  
         }  
     },  
     "source": {  
         "type": "Property",  
-        "value": "Turn turn any thing. Agent common three figure middle six. Quality guess seat late woman beautiful base."  
+        "value": "Important actually hope she student ago. Car general third building three central. Thousand score bit."  
     },  
     "name": {  
         "type": "Property",  
-        "value": "Team voice up base move. Skill me scientist bill course."  
+        "value": "News small TV imagine in quickly condition. Option speak view loca"  
     },  
     "alternateName": {  
         "type": "Property",  
-        "value": "Fight mean audience design conference."  
+        "value": "Thing defense various five piece blood camera. Teacher relationship especially detail produce exactly take mont"  
     },  
     "description": {  
         "type": "Property",  
-        "value": "Model court power point. Strong authority agent morning. Also audience management dream realize letter."  
+        "value": "Drive season as idea as what try. Experience very position t"  
     },  
     "dataProvider": {  
         "type": "Property",  
-        "value": "Produce citizen three top. Throw offer degree."  
+        "value": ""  
     },  
     "owner": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:smoke:items:GYSB:34245560",  
-            "urn:ngsi-ld:smoke:items:RVWA:68557559"  
+            "urn:ngsi-ld:smoke:items:XZMK:53394567",  
+            "urn:ngsi-ld:smoke:items:ZWJN:88654730"  
         ]  
     },  
     "seeAlso": {  
         "type": "Property",  
         "value": [  
-            "urn:ngsi-ld:smoke:items:FELW:31350615"  
+            "urn:ngsi-ld:smoke:items:FTUU:63403479"  
         ]  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
-                -23.4820015,  
-                85.453417  
+                46.5370525,  
+                75.632336  
             ]  
         }  
     },  
     "address": {  
         "type": "Property",  
         "value": {  
-            "streetAddress": "Full sit west significant foreign contain. Skill allow key student white.",  
-            "addressLocality": "Year instead visit establish. Power senior cell ball fine central discuss.",  
-            "addressRegion": "Up process thousand task sell Mr. Cold according lead interest.",  
-            "addressCountry": "Investment successful bed professional. Reduce task continue radio across.",  
-            "postalCode": "Whether sport man necessary mission or. Change today something left development kind activity. Sound cell since help six writer.",  
-            "postOfficeBoxNumber": "Still because painting soldier everybody plant work sport. Rule ago anyone staff."  
+            "streetAddress": "Staff travel throw go room. Movement oil continue film concern never.",  
+            "addressLocality": "Line doctor conference generation big like ",  
+            "addressRegion": "Receive threat we management red economy than. East shoulder miss pattern. Station drop indeed. Realiz",  
+            "addressCountry": "Agree style section h",  
+            "postalCode": "Only commercial soldier receive material door age. Lay could myself usually star weight lawyer affect. Ef",  
+            "postOfficeBoxNumber": "Feel describe war event sense on go knowledge. Accept nearly good last garden include.",  
+            "streetNr": "Pass skill kid article serious. Garden product s",  
+            "district": "Shake even city nor friend behavior explain watch. Budget or present."  
         }  
     },  
     "areaServed": {  
         "type": "Property",  
-        "value": "Take add rate minute long practice security. Where lay price know final knowledge."  
+        "value": "Glass p"  
     },  
     "rt": {  
         "type": "Property",  
@@ -812,30 +767,30 @@ smoke:
     },  
     "value": {  
         "type": "Property",  
-        "value": false  
+        "value": true  
     },  
     "measurement": {  
         "type": "Property",  
-        "value": 805.1  
+        "value": 701.8  
     },  
     "precision": {  
         "type": "Property",  
-        "value": 904.3  
+        "value": 380.9  
     },  
     "n": {  
         "type": "Property",  
-        "value": "Evidence significant because long. Notice change understand trouble toward age leave short. Trial billion capital every try front I."  
+        "value": "Sit pressure television necessary social station term. Mr wear"  
     },  
     "range": {  
         "type": "Property",  
         "value": [  
-            594.8,  
-            68.6  
+            655.0,  
+            186.5  
         ]  
     },  
     "step": {  
         "type": "Property",  
-        "value": 31.9  
+        "value": 88.9  
     },  
     "if": {  
         "type": "Property",  
@@ -845,8 +800,7 @@ smoke:
     },  
     "type": "smoke",  
     "@context": [  
-        "https://smartdatamodels.org/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OCF/master/context.jsonld"  
+        "https://smartdatamodels.org/context.jsonld"  
     ]  
 }  
 ```  
