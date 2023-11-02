@@ -12,25 +12,27 @@
     },
     {
       "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Property. It has to be Request. NGSI entity type",
+          "enum": [
+            "Request"
+          ]
+        },
+        "bus": {
+          "description": "Property. assign the bus identifier.",
+          "type": "integer"
+        },
+        "src": {
+          "description": "Property. assigned source address. -1 means not yet assigned by the Application controller.",
+          "type": "integer"
+        }
+      }
     }
   ],
-  "properties": {
-    "type": {
-      "type": "string",
-      "description": "Property. It has to be Request. NGSI entity type",
-      "enum": [
-        "Request"
-      ]
-    },
-    "bus": {
-      "description": "Property. assign the bus identifier.",
-      "type": "integer"
-    },
-    "src": {
-      "description": "Property. assigned source address. -1 means not yet assigned by the Application controller.",
-      "type": "integer"
-    }
-  },
   "derivedFrom": "https://github.com/OpenInterConnect/IoTDataModels/blob/master/RequestResURI.swagger.json",
   "license": "https://github.com/OpenInterConnect/IoTDataModels/blob/master/README.md",
   "required": [
