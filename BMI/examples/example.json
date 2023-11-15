@@ -1,50 +1,50 @@
 {
-    "id": "urn:ngsi-ld:BMI:id:JQXP:11604104",
-    "dateCreated": "2023-04-27T03:38:23Z",
-    "dateModified": "1999-07-17T13:50:02Z",
-    "source": "Student civil cultural worry. Democrat woman fine soon example education. Add adult democratic wind la",
-    "name": "Speech marriage treat family understand your voice newspaper. Child cover treat high pretty item profes",
-    "alternateName": "Program fish girl our offer pick.",
-    "description": "Act situation own stop must song. Treatment future professor follow difference job. When activity dec",
-    "dataProvider": "Science various imagine usually can two expect. Seat president item reveal federal send.",
-    "owner": [
-        "urn:ngsi-ld:BMI:items:ANAV:58006639",
-        "urn:ngsi-ld:BMI:items:ODIH:85202865"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:BMI:items:RQXM:68509576"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            -44.575855,
-            76.463418
-        ]
-    },
-    "address": {
-        "streetAddress": "Message generation across listen despite.",
-        "addressLocality": "Experie",
-        "addressRegion": "Serious investment teacher identify before about not. Analysis scientist expert itself down can.",
-        "addressCountry": "Star thing least Congress toward main. Hospital down door tonight from ",
-        "postalCode": "Environmental with suddenly detail huge finally. Father position strategy air. Partner least fly relate new cam",
-        "postOfficeBoxNumber": "Reduce morning field. Market something front price ma",
-        "streetNr": "Four blood chance heart public. Certain coach skill already fire picture future lis",
-        "district": "Ca"
-    },
-    "areaServed": "Recently sing high energy million show enter. College full allow put cove",
-    "rt": [
-        "oic.r.bmi"
-    ],
-    "bmi": 294.7,
-    "range": [
-        341.6,
-        577.3
-    ],
-    "step": 64.0,
-    "precision": 901.2,
-    "n": "Significant although boy includin",
-    "if": [
-        "oic.if.s"
-    ],
-    "type": "BMI"
+  "id": "urn:ngsi-ld:BMI:id:JQXP:11604104",
+  "dateCreated": "2023-04-27T03:38:23Z",
+  "dateModified": "1999-07-17T13:50:02Z",
+  "source": "Student civil cultural worry. Democrat woman fine soon example education. Add adult democratic wind la",
+  "name": "Speech marriage treat family understand your voice newspaper. Child cover treat high pretty item profes",
+  "alternateName": "Program fish girl our offer pick.",
+  "description": "Act situation own stop must song. Treatment future professor follow difference job. When activity dec",
+  "dataProvider": "Science various imagine usually can two expect. Seat president item reveal federal send.",
+  "owner": [
+    "urn:ngsi-ld:BMI:items:ANAV:58006639",
+    "urn:ngsi-ld:BMI:items:ODIH:85202865"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:BMI:items:RQXM:68509576"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -44.575855,
+      76.463418
+    ]
+  },
+  "address": {
+    "streetAddress": "Message generation across listen despite.",
+    "addressLocality": "Experie",
+    "addressRegion": "Serious investment teacher identify before about not. Analysis scientist expert itself down can.",
+    "addressCountry": "Star thing least Congress toward main. Hospital down door tonight from ",
+    "postalCode": "Environmental with suddenly detail huge finally. Father position strategy air. Partner least fly relate new cam",
+    "postOfficeBoxNumber": "Reduce morning field. Market something front price ma",
+    "streetNr": "Four blood chance heart public. Certain coach skill already fire picture future lis",
+    "district": "Ca"
+  },
+  "areaServed": "Recently sing high energy million show enter. College full allow put cove",
+  "rt": [
+    "oic.r.bmi"
+  ],
+  "bmi": 294.7,
+  "range": [
+    341.6,
+    577.3
+  ],
+  "step": 64.0,
+  "precision": 901.2,
+  "n": "Significant although boy includin",
+  "if": [
+    "oic.if.s"
+  ],
+  "type": "BMI"
 }
