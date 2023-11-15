@@ -1,96 +1,96 @@
 {
-    "id": "urn:ngsi-ld:SelectableLevels:id:KTUG:11578156",
-    "dateCreated": {
-        "type": "DateTime",
-        "value": "2007-08-08T01:12:34Z"
-    },
-    "dateModified": {
-        "type": "DateTime",
-        "value": "2002-06-18T03:24:51Z"
-    },
-    "source": {
-        "type": "Text",
-        "value": "Employee source nature add rest human station. Ability"
-    },
-    "name": {
-        "type": "Text",
-        "value": "Board necessary religious natural sport music white. Natural explain before something first drug "
-    },
-    "alternateName": {
-        "type": "Text",
-        "value": "Theory type su"
-    },
-    "description": {
-        "type": "Text",
-        "value": "Every manage political record word group food break. Picture suddenly drug rule brin"
-    },
-    "dataProvider": {
-        "type": "Text",
-        "value": "Own available buy country store build before. Already against which continue. Look road article quickly."
-    },
-    "owner": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:SelectableLevels:items:UJLN:86914131",
-            "urn:ngsi-ld:SelectableLevels:items:GILX:20870916"
-        ]
-    },
-    "seeAlso": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:SelectableLevels:items:QIDT:79230225"
-        ]
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                28.732768,
-                177.344405
-            ]
-        }
-    },
-    "address": {
-        "type": "StructuredValue",
-        "value": {
-            "streetAddress": "Likely improve notice. T",
-            "addressLocality": "Sch",
-            "addressRegion": "Organization recognize civil. Pm her then nothing increase.",
-            "addressCountry": "Industry product anot",
-            "postalCode": "First degree response able s",
-            "postOfficeBoxNumber": "Son break either pre",
-            "streetNr": "Water voice travel among see red. Republican total policy head Mrs debate onto. Catch even front.",
-            "district": "Full per among clearly. Face house nature fall long dream answer conference. Rock few structure fed"
-        }
-    },
-    "areaServed": {
-        "type": "Text",
-        "value": "Buy break marriage also friend reach. Turn phone heart window. Assume be seek article."
-    },
-    "rt": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.r.selectablelevels"
-        ]
-    },
-    "targetlevel": {
-        "type": "Number",
-        "value": 503.7
-    },
-    "availablelevels": {
-        "type": "StructuredValue",
-        "value": [
-            802.4,
-            258.2
-        ]
-    },
-    "if": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.if.baseline",
-            "oic.if.a"
-        ]
-    },
-    "type": "SelectableLevels"
+  "id": "urn:ngsi-ld:SelectableLevels:id:KTUG:11578156",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "2007-08-08T01:12:34Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "2002-06-18T03:24:51Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": "Employee source nature add rest human station. Ability"
+  },
+  "name": {
+    "type": "Text",
+    "value": "Board necessary religious natural sport music white. Natural explain before something first drug "
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "Theory type su"
+  },
+  "description": {
+    "type": "Text",
+    "value": "Every manage political record word group food break. Picture suddenly drug rule brin"
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Own available buy country store build before. Already against which continue. Look road article quickly."
+  },
+  "owner": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:SelectableLevels:items:UJLN:86914131",
+      "urn:ngsi-ld:SelectableLevels:items:GILX:20870916"
+    ]
+  },
+  "seeAlso": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:SelectableLevels:items:QIDT:79230225"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        28.732768,
+        177.344405
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "Likely improve notice. T",
+      "addressLocality": "Sch",
+      "addressRegion": "Organization recognize civil. Pm her then nothing increase.",
+      "addressCountry": "Industry product anot",
+      "postalCode": "First degree response able s",
+      "postOfficeBoxNumber": "Son break either pre",
+      "streetNr": "Water voice travel among see red. Republican total policy head Mrs debate onto. Catch even front.",
+      "district": "Full per among clearly. Face house nature fall long dream answer conference. Rock few structure fed"
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "Buy break marriage also friend reach. Turn phone heart window. Assume be seek article."
+  },
+  "rt": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.r.selectablelevels"
+    ]
+  },
+  "targetlevel": {
+    "type": "Number",
+    "value": 503.7
+  },
+  "availablelevels": {
+    "type": "StructuredValue",
+    "value": [
+      802.4,
+      258.2
+    ]
+  },
+  "if": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.if.baseline",
+      "oic.if.a"
+    ]
+  },
+  "type": "SelectableLevels"
 }
