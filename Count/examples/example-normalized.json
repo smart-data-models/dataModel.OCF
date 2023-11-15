@@ -1,104 +1,104 @@
 {
-    "id": "urn:ngsi-ld:Count:id:ENUR:81358476",
-    "dateCreated": {
-        "type": "DateTime",
-        "value": "1996-09-22T22:01:28Z"
-    },
-    "dateModified": {
-        "type": "DateTime",
-        "value": "1985-03-29T07:36:11Z"
-    },
-    "source": {
-        "type": "Text",
-        "value": "Determine whole garden follow huge adult whom. Those those during staff movement during hour. Record memory their"
-    },
-    "name": {
-        "type": "Text",
-        "value": "Local attention phone building than base by."
-    },
-    "alternateName": {
-        "type": "Text",
-        "value": "Necessary truth hope"
-    },
-    "description": {
-        "type": "Text",
-        "value": "Open message film writer. Pick my money ability."
-    },
-    "dataProvider": {
-        "type": "Text",
-        "value": "Character spend speak goal."
-    },
-    "owner": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:Count:items:UVCP:78840094",
-            "urn:ngsi-ld:Count:items:NOWV:83316339"
-        ]
-    },
-    "seeAlso": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:Count:items:NYFT:67612718"
-        ]
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                71.6998845,
-                -158.40622
-            ]
-        }
-    },
-    "address": {
-        "type": "StructuredValue",
-        "value": {
-            "streetAddress": "Open represent conference large. Modern walk more official glass.",
-            "addressLocality": "Free car bank between owner morning once. Off cut message fly management network system.",
-            "addressRegion": "Model sing by land another into rest only. Control government blue either.",
-            "addressCountry": "House east away.",
-            "postalCode": "Lot relationship law others every tree produce. Beyond range future north fina",
-            "postOfficeBoxNumber": "Political candi",
-            "streetNr": "Hit offer which specific one. Leave them down none summer. College lay",
-            "district": "Address reach able again crime or common. Hospital answer soon shoulder. Include color southern woman style visit population."
-        }
-    },
-    "areaServed": {
-        "type": "Text",
-        "value": "Book they several him. School movement sense consumer remain."
-    },
-    "rt": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.r.sensor.activity.count"
-        ]
-    },
-    "count": {
-        "type": "Number",
-        "value": 864
-    },
-    "n": {
-        "type": "Text",
-        "value": "American whole"
-    },
-    "range": {
-        "type": "StructuredValue",
-        "value": [
-            864,
-            864
-        ]
-    },
-    "step": {
-        "type": "Number",
-        "value": 864
-    },
-    "if": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.if.s",
-            "oic.if.a"
-        ]
-    },
-    "type": "Count"
+  "id": "urn:ngsi-ld:Count:id:ENUR:81358476",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "1996-09-22T22:01:28Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "1985-03-29T07:36:11Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": "Determine whole garden follow huge adult whom. Those those during staff movement during hour. Record memory their"
+  },
+  "name": {
+    "type": "Text",
+    "value": "Local attention phone building than base by."
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "Necessary truth hope"
+  },
+  "description": {
+    "type": "Text",
+    "value": "Open message film writer. Pick my money ability."
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Character spend speak goal."
+  },
+  "owner": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:Count:items:UVCP:78840094",
+      "urn:ngsi-ld:Count:items:NOWV:83316339"
+    ]
+  },
+  "seeAlso": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:Count:items:NYFT:67612718"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        71.6998845,
+        -158.40622
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "Open represent conference large. Modern walk more official glass.",
+      "addressLocality": "Free car bank between owner morning once. Off cut message fly management network system.",
+      "addressRegion": "Model sing by land another into rest only. Control government blue either.",
+      "addressCountry": "House east away.",
+      "postalCode": "Lot relationship law others every tree produce. Beyond range future north fina",
+      "postOfficeBoxNumber": "Political candi",
+      "streetNr": "Hit offer which specific one. Leave them down none summer. College lay",
+      "district": "Address reach able again crime or common. Hospital answer soon shoulder. Include color southern woman style visit population."
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "Book they several him. School movement sense consumer remain."
+  },
+  "rt": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.r.sensor.activity.count"
+    ]
+  },
+  "count": {
+    "type": "Number",
+    "value": 864
+  },
+  "n": {
+    "type": "Text",
+    "value": "American whole"
+  },
+  "range": {
+    "type": "StructuredValue",
+    "value": [
+      864,
+      864
+    ]
+  },
+  "step": {
+    "type": "Number",
+    "value": 864
+  },
+  "if": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.if.s",
+      "oic.if.a"
+    ]
+  },
+  "type": "Count"
 }
