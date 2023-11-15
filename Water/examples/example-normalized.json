@@ -1,111 +1,111 @@
 {
-    "id": "urn:ngsi-ld:Water:id:DOYR:11912958",
-    "dateCreated": {
-        "type": "DateTime",
-        "value": "2023-02-21T17:22:09Z"
-    },
-    "dateModified": {
-        "type": "DateTime",
-        "value": "2023-07-29T02:37:33Z"
-    },
-    "source": {
-        "type": "Text",
-        "value": "For community student education record middle place reduce. Should only happy. Space mention wide actually because such produce."
-    },
-    "name": {
-        "type": "Text",
-        "value": "It hour heart own. Maybe day public n"
-    },
-    "alternateName": {
-        "type": "Text",
-        "value": "But rule rock d"
-    },
-    "description": {
-        "type": "Text",
-        "value": "Represent turn there education. Receive scene water despite than member pretty I. Apply test hop"
-    },
-    "dataProvider": {
-        "type": "Text",
-        "value": "Away action difference five. Easy socie"
-    },
-    "owner": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:Water:items:TJIX:66655738",
-            "urn:ngsi-ld:Water:items:CJGX:87961037"
-        ]
-    },
-    "seeAlso": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:Water:items:GDCA:73327487"
-        ]
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                29.625734,
-                35.828906
-            ]
-        }
-    },
-    "address": {
-        "type": "StructuredValue",
-        "value": {
-            "streetAddress": "Family not system skill. Resource statement thus against authori",
-            "addressLocality": "Suddenly west goal same happy. Information every economic party determine social.",
-            "addressRegion": "Analysis head develop present grow. Already three protect investment. Later cause while draw tell citizen chance.",
-            "addressCountry": "Might court myself stage entire major move health. Usually a clear science serve main very should.",
-            "postalCode": "Including into popular treatment check probably. There film attorney challenge suggest. While",
-            "postOfficeBoxNumber": "But camp",
-            "streetNr": "Now action hand ever half process. Improve any list lead ",
-            "district": "Skin benefit exactly oil financial. Assume foreign wear listen water executive economy best. May food field occur base surface approach water."
-        }
-    },
-    "areaServed": {
-        "type": "Text",
-        "value": "Enjoy less interest. Develop near nothing another. Teach ef"
-    },
-    "rt": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.r.sensor.water"
-        ]
-    },
+  "id": "urn:ngsi-ld:Water:id:DOYR:11912958",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "2023-02-21T17:22:09Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "2023-07-29T02:37:33Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": "For community student education record middle place reduce. Should only happy. Space mention wide actually because such produce."
+  },
+  "name": {
+    "type": "Text",
+    "value": "It hour heart own. Maybe day public n"
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "But rule rock d"
+  },
+  "description": {
+    "type": "Text",
+    "value": "Represent turn there education. Receive scene water despite than member pretty I. Apply test hop"
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Away action difference five. Easy socie"
+  },
+  "owner": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:Water:items:TJIX:66655738",
+      "urn:ngsi-ld:Water:items:CJGX:87961037"
+    ]
+  },
+  "seeAlso": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:Water:items:GDCA:73327487"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
     "value": {
-        "type": "Boolean",
-        "value": false
-    },
-    "measurement": {
-        "type": "Number",
-        "value": 262.5
-    },
-    "precision": {
-        "type": "Number",
-        "value": 296.1
-    },
-    "n": {
-        "type": "Text",
-        "value": "Well drive season thought."
-    },
-    "range": {
-        "type": "StructuredValue",
-        "value": [
-            610.2,
-            284.2
-        ]
-    },
-    "step": {
-        "type": "Number",
-        "value": 846.3
-    },
-    "if": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.if.baseline"
-        ]
-    },
-    "type": "Water"
+      "type": "Point",
+      "coordinates": [
+        29.625734,
+        35.828906
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "Family not system skill. Resource statement thus against authori",
+      "addressLocality": "Suddenly west goal same happy. Information every economic party determine social.",
+      "addressRegion": "Analysis head develop present grow. Already three protect investment. Later cause while draw tell citizen chance.",
+      "addressCountry": "Might court myself stage entire major move health. Usually a clear science serve main very should.",
+      "postalCode": "Including into popular treatment check probably. There film attorney challenge suggest. While",
+      "postOfficeBoxNumber": "But camp",
+      "streetNr": "Now action hand ever half process. Improve any list lead ",
+      "district": "Skin benefit exactly oil financial. Assume foreign wear listen water executive economy best. May food field occur base surface approach water."
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "Enjoy less interest. Develop near nothing another. Teach ef"
+  },
+  "rt": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.r.sensor.water"
+    ]
+  },
+  "value": {
+    "type": "Boolean",
+    "value": false
+  },
+  "measurement": {
+    "type": "Number",
+    "value": 262.5
+  },
+  "precision": {
+    "type": "Number",
+    "value": 296.1
+  },
+  "n": {
+    "type": "Text",
+    "value": "Well drive season thought."
+  },
+  "range": {
+    "type": "StructuredValue",
+    "value": [
+      610.2,
+      284.2
+    ]
+  },
+  "step": {
+    "type": "Number",
+    "value": 846.3
+  },
+  "if": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.if.baseline"
+    ]
+  },
+  "type": "Water"
 }
