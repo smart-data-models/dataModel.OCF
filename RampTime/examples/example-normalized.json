@@ -1,108 +1,108 @@
 {
-    "id": "urn:ngsi-ld:RampTime:id:SOVS:23859772",
-    "dateCreated": {
-        "type": "DateTime",
-        "value": "1984-02-11T15:42:17Z"
-    },
-    "dateModified": {
-        "type": "DateTime",
-        "value": "1974-12-05T16:14:49Z"
-    },
-    "source": {
-        "type": "Text",
-        "value": "Raise left serious one under over loss. As week office art."
-    },
-    "name": {
-        "type": "Text",
-        "value": "Course election after pla"
-    },
-    "alternateName": {
-        "type": "Text",
-        "value": "Out ago simply note. Goal apply letter several top. Above high impact top camera."
-    },
-    "description": {
-        "type": "Text",
-        "value": "Reduce catch goal treat. Maintain compare rule"
-    },
-    "dataProvider": {
-        "type": "Text",
-        "value": "Only camera last rate. Indicate forget population policy option spend arti"
-    },
-    "owner": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:RampTime:items:CZKU:18687524",
-            "urn:ngsi-ld:RampTime:items:AYTX:66134959"
-        ]
-    },
-    "seeAlso": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:RampTime:items:XJAL:21532442"
-        ]
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                17.46331,
-                125.666274
-            ]
-        }
-    },
-    "address": {
-        "type": "StructuredValue",
-        "value": {
-            "streetAddress": "He would indiv",
-            "addressLocality": "Thing many business hot field. Yard join goal still current cell.",
-            "addressRegion": "Recent design professional he court. Challenge let case as. Our age just human arm.",
-            "addressCountry": "Several political policy town also popular. Nation cover popular big.",
-            "postalCode": "Beat vote population write no spend computer. Between himself agency prove may. Can major set finally.",
-            "postOfficeBoxNumber": "Cut mind up international military relate ok. Important today red lot rich. Send little strong sea party per happy.",
-            "streetNr": "Finish interesting Congress save name. Matter edge middle health. Pressure control bill any cultural pers",
-            "district": "Fire type spring away area service model. Cultural gues"
-        }
-    },
-    "areaServed": {
-        "type": "Text",
-        "value": "Machine materi"
-    },
-    "rt": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.r.light.ramptime"
-        ]
-    },
-    "rampTime": {
-        "type": "Number",
-        "value": 864
-    },
-    "n": {
-        "type": "Text",
-        "value": "American whole magazine truth stop whose. On tra"
-    },
-    "range": {
-        "type": "StructuredValue",
-        "value": [
-            864,
-            864
-        ]
-    },
-    "step": {
-        "type": "Number",
-        "value": 864
-    },
-    "precision": {
-        "type": "Number",
-        "value": 924.7
-    },
-    "if": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.if.a",
-            "oic.if.baseline"
-        ]
-    },
-    "type": "RampTime"
+  "id": "urn:ngsi-ld:RampTime:id:SOVS:23859772",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "1984-02-11T15:42:17Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "1974-12-05T16:14:49Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": "Raise left serious one under over loss. As week office art."
+  },
+  "name": {
+    "type": "Text",
+    "value": "Course election after pla"
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "Out ago simply note. Goal apply letter several top. Above high impact top camera."
+  },
+  "description": {
+    "type": "Text",
+    "value": "Reduce catch goal treat. Maintain compare rule"
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Only camera last rate. Indicate forget population policy option spend arti"
+  },
+  "owner": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:RampTime:items:CZKU:18687524",
+      "urn:ngsi-ld:RampTime:items:AYTX:66134959"
+    ]
+  },
+  "seeAlso": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:RampTime:items:XJAL:21532442"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        17.46331,
+        125.666274
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "He would indiv",
+      "addressLocality": "Thing many business hot field. Yard join goal still current cell.",
+      "addressRegion": "Recent design professional he court. Challenge let case as. Our age just human arm.",
+      "addressCountry": "Several political policy town also popular. Nation cover popular big.",
+      "postalCode": "Beat vote population write no spend computer. Between himself agency prove may. Can major set finally.",
+      "postOfficeBoxNumber": "Cut mind up international military relate ok. Important today red lot rich. Send little strong sea party per happy.",
+      "streetNr": "Finish interesting Congress save name. Matter edge middle health. Pressure control bill any cultural pers",
+      "district": "Fire type spring away area service model. Cultural gues"
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "Machine materi"
+  },
+  "rt": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.r.light.ramptime"
+    ]
+  },
+  "rampTime": {
+    "type": "Number",
+    "value": 864
+  },
+  "n": {
+    "type": "Text",
+    "value": "American whole magazine truth stop whose. On tra"
+  },
+  "range": {
+    "type": "StructuredValue",
+    "value": [
+      864,
+      864
+    ]
+  },
+  "step": {
+    "type": "Number",
+    "value": 864
+  },
+  "precision": {
+    "type": "Number",
+    "value": 924.7
+  },
+  "if": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.if.a",
+      "oic.if.baseline"
+    ]
+  },
+  "type": "RampTime"
 }
