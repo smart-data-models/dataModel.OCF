@@ -1,50 +1,50 @@
 {
-    "id": "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:id:XDQX:30731712",
-    "dateCreated": "1993-10-06T07:15:17Z",
-    "dateModified": "1983-07-24T10:41:21Z",
-    "source": "Out husband human left. List ",
-    "name": "Someone top girl do safe glass instead. Girl consider condition television work audience.",
-    "alternateName": "Throughout traditional east quality. Amount TV chance shoulder speak line.",
-    "description": "Who who smile. Stage challenge respond above at under score.",
-    "dataProvider": "Until build heart seem throughout.",
-    "owner": [
-        "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:CNMY:18920441",
-        "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:PPTV:53147945"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:MBSH:12361960"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            -8.503401,
-            9.432166
-        ]
-    },
-    "address": {
-        "streetAddress": "Money total health college end choose. Although half improve.",
-        "addressLocality": "Perform executive American",
-        "addressRegion": "Factor data those reveal. Affect information small edge ",
-        "addressCountry": "Where song attention feel list bar own. Owner main shake receive. Financial from soon enough.",
-        "postalCode": "May sea compare magazine discover around brother. International yeah",
-        "postOfficeBoxNumber": "Teach fact movie pay. Treat reflect live investment gun career. Trade body there now however blue. Evidence operation occur somebody so staff along.",
-        "streetNr": "Laugh office employee write amount once deal. Might mission within scientist condition. Especia",
-        "district": "Edge receive write trade scientist organization about first. Response agent vote before. Day population thus answer machine peace."
-    },
-    "areaServed": "Heart list who because could down billion. Only discuss mean deep point audience who. Help quality film feeling record city appear.",
-    "interval": 0.4,
-    "rt": [
-        "oic.r.cgm.samplinginterval"
-    ],
-    "n": "Generation med",
-    "if": [
-        "oic.if.baseline"
-    ],
-    "range": [
-        538.0,
-        453.8
-    ],
-    "step": 840.6,
-    "precision": 233.7,
-    "type": "ContinuousGlucoseMeterSamplingInterval"
+  "id": "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:id:XDQX:30731712",
+  "dateCreated": "1993-10-06T07:15:17Z",
+  "dateModified": "1983-07-24T10:41:21Z",
+  "source": "Out husband human left. List ",
+  "name": "Someone top girl do safe glass instead. Girl consider condition television work audience.",
+  "alternateName": "Throughout traditional east quality. Amount TV chance shoulder speak line.",
+  "description": "Who who smile. Stage challenge respond above at under score.",
+  "dataProvider": "Until build heart seem throughout.",
+  "owner": [
+    "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:CNMY:18920441",
+    "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:PPTV:53147945"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:MBSH:12361960"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -8.503401,
+      9.432166
+    ]
+  },
+  "address": {
+    "streetAddress": "Money total health college end choose. Although half improve.",
+    "addressLocality": "Perform executive American",
+    "addressRegion": "Factor data those reveal. Affect information small edge ",
+    "addressCountry": "Where song attention feel list bar own. Owner main shake receive. Financial from soon enough.",
+    "postalCode": "May sea compare magazine discover around brother. International yeah",
+    "postOfficeBoxNumber": "Teach fact movie pay. Treat reflect live investment gun career. Trade body there now however blue. Evidence operation occur somebody so staff along.",
+    "streetNr": "Laugh office employee write amount once deal. Might mission within scientist condition. Especia",
+    "district": "Edge receive write trade scientist organization about first. Response agent vote before. Day population thus answer machine peace."
+  },
+  "areaServed": "Heart list who because could down billion. Only discuss mean deep point audience who. Help quality film feeling record city appear.",
+  "interval": 0.4,
+  "rt": [
+    "oic.r.cgm.samplinginterval"
+  ],
+  "n": "Generation med",
+  "if": [
+    "oic.if.baseline"
+  ],
+  "range": [
+    538.0,
+    453.8
+  ],
+  "step": 840.6,
+  "precision": 233.7,
+  "type": "ContinuousGlucoseMeterSamplingInterval"
 }
