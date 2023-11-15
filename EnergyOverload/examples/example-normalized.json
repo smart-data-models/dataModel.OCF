@@ -1,93 +1,93 @@
 {
-    "id": "urn:ngsi-ld:EnergyOverload:id:TJFR:44040039",
-    "dateCreated": {
-        "type": "DateTime",
-        "value": "2021-07-11T17:34:36Z"
-    },
-    "dateModified": {
-        "type": "DateTime",
-        "value": "2020-01-13T13:54:22Z"
-    },
-    "source": {
-        "type": "Text",
-        "value": "Cause fast buy design word area."
-    },
-    "name": {
-        "type": "Text",
-        "value": "Arm son allow garden goal po"
-    },
-    "alternateName": {
-        "type": "Text",
-        "value": "Only account that knowledge ball season. Baby sea military almost. Range whom group public professional knowledge only."
-    },
-    "description": {
-        "type": "Text",
-        "value": "Either course market me. Relationship him bring away."
-    },
-    "dataProvider": {
-        "type": "Text",
-        "value": "Left above meet too cover public Mr phone. Road relate "
-    },
-    "owner": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:EnergyOverload:items:OBGL:58595014",
-            "urn:ngsi-ld:EnergyOverload:items:RDDS:88337121"
-        ]
-    },
-    "seeAlso": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:EnergyOverload:items:DMKU:92062252"
-        ]
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                37.7313715,
-                -80.62013
-            ]
-        }
-    },
-    "address": {
-        "type": "StructuredValue",
-        "value": {
-            "streetAddress": "Meeting gas small ready us. Suddenly current stock result north its second. Yo",
-            "addressLocality": "I",
-            "addressRegion": "After culture Democrat week sure threat. Conference of bed he. Go career local face police energy.",
-            "addressCountry": "Hard close pressure begin. Free throughout cut tree",
-            "postalCode": "Fear cause data hot. Fi",
-            "postOfficeBoxNumber": "Throw drop daughter yard walk visit. Bad car own visit peace why piece raise. Popular gas save ten. Cause ever yourself another treat.",
-            "streetNr": "Suggest section why pay often newspaper. Pick card responsibility own region hospital quality game. Far building color. Father who",
-            "district": "Skin certain same remain. Example up listen develop positive through staff. Trade your"
-        }
-    },
-    "areaServed": {
-        "type": "Text",
-        "value": "Relationship alone of wester"
-    },
-    "rt": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.r.energy.overload"
-        ]
-    },
+  "id": "urn:ngsi-ld:EnergyOverload:id:TJFR:44040039",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "2021-07-11T17:34:36Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "2020-01-13T13:54:22Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": "Cause fast buy design word area."
+  },
+  "name": {
+    "type": "Text",
+    "value": "Arm son allow garden goal po"
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "Only account that knowledge ball season. Baby sea military almost. Range whom group public professional knowledge only."
+  },
+  "description": {
+    "type": "Text",
+    "value": "Either course market me. Relationship him bring away."
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Left above meet too cover public Mr phone. Road relate "
+  },
+  "owner": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:EnergyOverload:items:OBGL:58595014",
+      "urn:ngsi-ld:EnergyOverload:items:RDDS:88337121"
+    ]
+  },
+  "seeAlso": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:EnergyOverload:items:DMKU:92062252"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
     "value": {
-        "type": "Boolean",
-        "value": false
-    },
-    "n": {
-        "type": "Text",
-        "value": "Chance develop serious. Leave various entire live."
-    },
-    "if": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.if.s",
-            "oic.if.baseline"
-        ]
-    },
-    "type": "EnergyOverload"
+      "type": "Point",
+      "coordinates": [
+        37.7313715,
+        -80.62013
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "Meeting gas small ready us. Suddenly current stock result north its second. Yo",
+      "addressLocality": "I",
+      "addressRegion": "After culture Democrat week sure threat. Conference of bed he. Go career local face police energy.",
+      "addressCountry": "Hard close pressure begin. Free throughout cut tree",
+      "postalCode": "Fear cause data hot. Fi",
+      "postOfficeBoxNumber": "Throw drop daughter yard walk visit. Bad car own visit peace why piece raise. Popular gas save ten. Cause ever yourself another treat.",
+      "streetNr": "Suggest section why pay often newspaper. Pick card responsibility own region hospital quality game. Far building color. Father who",
+      "district": "Skin certain same remain. Example up listen develop positive through staff. Trade your"
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "Relationship alone of wester"
+  },
+  "rt": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.r.energy.overload"
+    ]
+  },
+  "value": {
+    "type": "Boolean",
+    "value": false
+  },
+  "n": {
+    "type": "Text",
+    "value": "Chance develop serious. Leave various entire live."
+  },
+  "if": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.if.s",
+      "oic.if.baseline"
+    ]
+  },
+  "type": "EnergyOverload"
 }
