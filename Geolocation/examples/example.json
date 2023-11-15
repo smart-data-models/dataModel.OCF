@@ -1,51 +1,51 @@
 {
-    "id": "urn:ngsi-ld:Geolocation:id:GQEJ:48764759",
-    "dateCreated": "1979-07-06T09:36:23Z",
-    "dateModified": "2021-06-07T14:46:20Z",
-    "source": "Son would mouth relate own chair better available. Line beyond its particularly tree whom.",
-    "name": "Tend employee source nature add rest. Report size personal partner stock four. Region as true develop sound central.",
-    "alternateName": "Before year themselves your majority f",
-    "description": "Wonder employee attorney quickly candidate change although bag.",
-    "dataProvider": "Study modern miss dog Democrat quickly. Often late produce you true soldier. Food break onto friend.",
-    "owner": [
-        "urn:ngsi-ld:Geolocation:items:KNBD:33041352",
-        "urn:ngsi-ld:Geolocation:items:DUGT:23098910"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:Geolocation:items:AGFW:91615109"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            -56.7421445,
-            77.286609
-        ]
-    },
-    "address": {
-        "streetAddress": "View age international big. Attorney author feeling job article.",
-        "addressLocality": "Others record hospital. Grow rule stuff truth college. Whom around put suddenly garden.",
-        "addressRegion": "Others kind company likely. Tonight themselves true power home price.",
-        "addressCountry": "Real leader bad school name care several. Good explain grow water plant perform resource.",
-        "postalCode": "Stock ball organization recognize civil development. Her ",
-        "postOfficeBoxNumber": "Those traditional page a although for study. Speak themselves speech. Nature white without study candidate.",
-        "streetNr": "Wear ind",
-        "district": "Best budget power them evidence without beyond take. Phy"
-    },
-    "areaServed": "Fire happen nothing support suffer which parent. Republican total policy head Mrs debate onto.",
-    "rt": [
-        "oic.r.sensor.geolocation"
-    ],
-    "longitude": 876.2,
-    "heading": 81.9,
-    "latitude": 16.7,
-    "altitudeAccuracy": 332.1,
-    "alt": 32.9,
-    "accuracy": 706.2,
-    "speed": 823.4,
-    "n": "Despite society mission. Expect hundred le",
-    "if": [
-        "oic.if.s",
-        "oic.if.baseline"
-    ],
-    "type": "Geolocation"
+  "id": "urn:ngsi-ld:Geolocation:id:GQEJ:48764759",
+  "dateCreated": "1979-07-06T09:36:23Z",
+  "dateModified": "2021-06-07T14:46:20Z",
+  "source": "Son would mouth relate own chair better available. Line beyond its particularly tree whom.",
+  "name": "Tend employee source nature add rest. Report size personal partner stock four. Region as true develop sound central.",
+  "alternateName": "Before year themselves your majority f",
+  "description": "Wonder employee attorney quickly candidate change although bag.",
+  "dataProvider": "Study modern miss dog Democrat quickly. Often late produce you true soldier. Food break onto friend.",
+  "owner": [
+    "urn:ngsi-ld:Geolocation:items:KNBD:33041352",
+    "urn:ngsi-ld:Geolocation:items:DUGT:23098910"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:Geolocation:items:AGFW:91615109"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -56.7421445,
+      77.286609
+    ]
+  },
+  "address": {
+    "streetAddress": "View age international big. Attorney author feeling job article.",
+    "addressLocality": "Others record hospital. Grow rule stuff truth college. Whom around put suddenly garden.",
+    "addressRegion": "Others kind company likely. Tonight themselves true power home price.",
+    "addressCountry": "Real leader bad school name care several. Good explain grow water plant perform resource.",
+    "postalCode": "Stock ball organization recognize civil development. Her ",
+    "postOfficeBoxNumber": "Those traditional page a although for study. Speak themselves speech. Nature white without study candidate.",
+    "streetNr": "Wear ind",
+    "district": "Best budget power them evidence without beyond take. Phy"
+  },
+  "areaServed": "Fire happen nothing support suffer which parent. Republican total policy head Mrs debate onto.",
+  "rt": [
+    "oic.r.sensor.geolocation"
+  ],
+  "longitude": 876.2,
+  "heading": 81.9,
+  "latitude": 16.7,
+  "altitudeAccuracy": 332.1,
+  "alt": 32.9,
+  "accuracy": 706.2,
+  "speed": 823.4,
+  "n": "Despite society mission. Expect hundred le",
+  "if": [
+    "oic.if.s",
+    "oic.if.baseline"
+  ],
+  "type": "Geolocation"
 }
