@@ -1,93 +1,93 @@
 {
-    "id": "urn:ngsi-ld:Presence:id:IZDX:22722811",
-    "dateCreated": {
-        "type": "DateTime",
-        "value": "2021-04-10T22:10:41Z"
-    },
-    "dateModified": {
-        "type": "DateTime",
-        "value": "1978-03-08T21:06:13Z"
-    },
-    "source": {
-        "type": "Text",
-        "value": "Any something some car situation. Prevent"
-    },
-    "name": {
-        "type": "Text",
-        "value": "Offer mean southern want direction style fear. Dream report sell. Establish field voice watch beautiful."
-    },
-    "alternateName": {
-        "type": "Text",
-        "value": "Guy desc"
-    },
-    "description": {
-        "type": "Text",
-        "value": "Tell money time than after. Himself should tree prove."
-    },
-    "dataProvider": {
-        "type": "Text",
-        "value": "Choose join outside class."
-    },
-    "owner": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:Presence:items:FSGP:23719158",
-            "urn:ngsi-ld:Presence:items:TLPN:53549867"
-        ]
-    },
-    "seeAlso": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:Presence:items:TVYX:00173776"
-        ]
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                -61.322875,
-                132.810208
-            ]
-        }
-    },
-    "address": {
-        "type": "StructuredValue",
-        "value": {
-            "streetAddress": "Real Republican final. Garden hope different authority. Instead green so interesting local sea.",
-            "addressLocality": "Total require per threat strategy party although. This speak attention option interest season. Such who stage term fast story despite happy.",
-            "addressRegion": "Too itself town between enter cup service. Trade Mrs stand structure kitchen. Always until environmental bank all only. Increase especially certain wrong.",
-            "addressCountry": "Say realize involve others table past. Decade candidate born executive sell.",
-            "postalCode": "Because deep better own. Ok behavior apply risk key reason see.",
-            "postOfficeBoxNumber": "Appear third at though music during. Hold every hotel arm garden theory anyone.",
-            "streetNr": "Option institution eight. If upon prove ready shoulder.",
-            "district": "Raise seat husband hand month. Image suffer indeed. Know they point other letter."
-        }
-    },
-    "areaServed": {
-        "type": "Text",
-        "value": "Cost leader phone American realize individual someb"
-    },
-    "rt": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.r.sensor.presence"
-        ]
-    },
+  "id": "urn:ngsi-ld:Presence:id:IZDX:22722811",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "2021-04-10T22:10:41Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "1978-03-08T21:06:13Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": "Any something some car situation. Prevent"
+  },
+  "name": {
+    "type": "Text",
+    "value": "Offer mean southern want direction style fear. Dream report sell. Establish field voice watch beautiful."
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "Guy desc"
+  },
+  "description": {
+    "type": "Text",
+    "value": "Tell money time than after. Himself should tree prove."
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Choose join outside class."
+  },
+  "owner": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:Presence:items:FSGP:23719158",
+      "urn:ngsi-ld:Presence:items:TLPN:53549867"
+    ]
+  },
+  "seeAlso": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:Presence:items:TVYX:00173776"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
     "value": {
-        "type": "Boolean",
-        "value": true
-    },
-    "n": {
-        "type": "Text",
-        "value": "Very cer"
-    },
-    "if": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.if.s",
-            "oic.if.baseline"
-        ]
-    },
-    "type": "Presence"
+      "type": "Point",
+      "coordinates": [
+        -61.322875,
+        132.810208
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "Real Republican final. Garden hope different authority. Instead green so interesting local sea.",
+      "addressLocality": "Total require per threat strategy party although. This speak attention option interest season. Such who stage term fast story despite happy.",
+      "addressRegion": "Too itself town between enter cup service. Trade Mrs stand structure kitchen. Always until environmental bank all only. Increase especially certain wrong.",
+      "addressCountry": "Say realize involve others table past. Decade candidate born executive sell.",
+      "postalCode": "Because deep better own. Ok behavior apply risk key reason see.",
+      "postOfficeBoxNumber": "Appear third at though music during. Hold every hotel arm garden theory anyone.",
+      "streetNr": "Option institution eight. If upon prove ready shoulder.",
+      "district": "Raise seat husband hand month. Image suffer indeed. Know they point other letter."
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "Cost leader phone American realize individual someb"
+  },
+  "rt": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.r.sensor.presence"
+    ]
+  },
+  "value": {
+    "type": "Boolean",
+    "value": true
+  },
+  "n": {
+    "type": "Text",
+    "value": "Very cer"
+  },
+  "if": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.if.s",
+      "oic.if.baseline"
+    ]
+  },
+  "type": "Presence"
 }
