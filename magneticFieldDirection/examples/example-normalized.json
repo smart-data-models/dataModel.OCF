@@ -1,97 +1,97 @@
 {
-    "id": "urn:ngsi-ld:magneticFieldDirection:id:ZQZN:48136323",
-    "dateCreated": {
-        "type": "DateTime",
-        "value": "2012-11-26T03:45:55Z"
-    },
-    "dateModified": {
-        "type": "DateTime",
-        "value": "2022-04-21T02:44:22Z"
-    },
-    "source": {
-        "type": "Text",
-        "value": "Kind qu"
-    },
-    "name": {
-        "type": "Text",
-        "value": "Account fear pretty woman marriage. Same conference give east."
-    },
-    "alternateName": {
-        "type": "Text",
-        "value": "Use ho"
-    },
-    "description": {
-        "type": "Text",
-        "value": "Already pretty choose someone. Event one"
-    },
-    "dataProvider": {
-        "type": "Text",
-        "value": "Push this drive table decide. Role clearly another performance over meeting wall against. Military such it lot sing seat something."
-    },
-    "owner": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:magneticFieldDirection:items:CMHR:27845200",
-            "urn:ngsi-ld:magneticFieldDirection:items:OEEU:78414935"
-        ]
-    },
-    "seeAlso": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:magneticFieldDirection:items:LOJQ:54472476"
-        ]
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                73.3103535,
-                137.175816
-            ]
-        }
-    },
-    "address": {
-        "type": "StructuredValue",
-        "value": {
-            "streetAddress": "Congress policy history militar",
-            "addressLocality": "Travel soldier discussion table. Prove effort arrive hundred course money article civil.",
-            "addressRegion": "Science visit building store his. Job single recognize quite.",
-            "addressCountry": "Just defense your one everyone I across. Speak material this.",
-            "postalCode": "Safe cup these cost after bette",
-            "postOfficeBoxNumber": "Seem station return drug marriage manage",
-            "streetNr": "Because cup forward on cold short tree say. Night senior family morning even concern land. Worker building ask minute leave.",
-            "district": "Although Mrs series. Investment report enter result wall garden."
-        }
-    },
-    "areaServed": {
-        "type": "Text",
-        "value": "Raise some tree author. Standard body before free increase or hit."
-    },
-    "rt": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.r.sensor.magneticfielddirection"
-        ]
-    },
+  "id": "urn:ngsi-ld:magneticFieldDirection:id:ZQZN:48136323",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "2012-11-26T03:45:55Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "2022-04-21T02:44:22Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": "Kind qu"
+  },
+  "name": {
+    "type": "Text",
+    "value": "Account fear pretty woman marriage. Same conference give east."
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "Use ho"
+  },
+  "description": {
+    "type": "Text",
+    "value": "Already pretty choose someone. Event one"
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Push this drive table decide. Role clearly another performance over meeting wall against. Military such it lot sing seat something."
+  },
+  "owner": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:magneticFieldDirection:items:CMHR:27845200",
+      "urn:ngsi-ld:magneticFieldDirection:items:OEEU:78414935"
+    ]
+  },
+  "seeAlso": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:magneticFieldDirection:items:LOJQ:54472476"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
     "value": {
-        "type": "StructuredValue",
-        "value": [
-            564.8,
-            52.7,
-            556.1
-        ]
-    },
-    "n": {
-        "type": "Text",
-        "value": "Particularly use expect show second paintin"
-    },
-    "if": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.if.s",
-            "oic.if.baseline"
-        ]
-    },
-    "type": "magneticFieldDirection"
+      "type": "Point",
+      "coordinates": [
+        73.3103535,
+        137.175816
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "Congress policy history militar",
+      "addressLocality": "Travel soldier discussion table. Prove effort arrive hundred course money article civil.",
+      "addressRegion": "Science visit building store his. Job single recognize quite.",
+      "addressCountry": "Just defense your one everyone I across. Speak material this.",
+      "postalCode": "Safe cup these cost after bette",
+      "postOfficeBoxNumber": "Seem station return drug marriage manage",
+      "streetNr": "Because cup forward on cold short tree say. Night senior family morning even concern land. Worker building ask minute leave.",
+      "district": "Although Mrs series. Investment report enter result wall garden."
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "Raise some tree author. Standard body before free increase or hit."
+  },
+  "rt": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.r.sensor.magneticfielddirection"
+    ]
+  },
+  "value": {
+    "type": "StructuredValue",
+    "value": [
+      564.8,
+      52.7,
+      556.1
+    ]
+  },
+  "n": {
+    "type": "Text",
+    "value": "Particularly use expect show second paintin"
+  },
+  "if": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.if.s",
+      "oic.if.baseline"
+    ]
+  },
+  "type": "magneticFieldDirection"
 }
