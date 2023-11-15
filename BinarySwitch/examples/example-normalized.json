@@ -1,93 +1,93 @@
 {
-    "id": "urn:ngsi-ld:BinarySwitch:id:KSRN:63934709",
-    "dateCreated": {
-        "type": "DateTime",
-        "value": "2004-04-11T04:25:15Z"
-    },
-    "dateModified": {
-        "type": "DateTime",
-        "value": "1977-08-07T15:24:17Z"
-    },
-    "source": {
-        "type": "Text",
-        "value": "Style recent network economy exactly more ground international. Building t"
-    },
-    "name": {
-        "type": "Text",
-        "value": "Total quite"
-    },
-    "alternateName": {
-        "type": "Text",
-        "value": "Late term particul"
-    },
-    "description": {
-        "type": "Text",
-        "value": ""
-    },
-    "dataProvider": {
-        "type": "Text",
-        "value": "Mind first charge base position them peace. Page reflect ok unit see west thank. Personal ball father capital."
-    },
-    "owner": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:BinarySwitch:items:PJOQ:56642349",
-            "urn:ngsi-ld:BinarySwitch:items:SODH:76834134"
-        ]
-    },
-    "seeAlso": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:BinarySwitch:items:LFIE:84485764"
-        ]
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                -36.911266,
-                152.471699
-            ]
-        }
-    },
-    "address": {
-        "type": "StructuredValue",
-        "value": {
-            "streetAddress": "Weight employee manage go prove commercial. Follow shake source way. Bill there within benef",
-            "addressLocality": "Arrive study participant knowledge. Service industry bed avoid first edge occur. Color collection area lay community training focus.",
-            "addressRegion": "Sense lose fine business leader own. More possible end arrive under address. Early cri",
-            "addressCountry": "Price response team radio stop.",
-            "postalCode": "Rise blue history establish red.",
-            "postOfficeBoxNumber": "From su",
-            "streetNr": "Another wait game need team house other very. Strategy body police leave. Event late car range common guess.",
-            "district": "High garden far evidence you want explain. To player week approach tonight whether close."
-        }
-    },
-    "areaServed": {
-        "type": "Text",
-        "value": "Serve until whatever drive. Southern method up "
-    },
-    "rt": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.r.switch.binary"
-        ]
-    },
+  "id": "urn:ngsi-ld:BinarySwitch:id:KSRN:63934709",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "2004-04-11T04:25:15Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "1977-08-07T15:24:17Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": "Style recent network economy exactly more ground international. Building t"
+  },
+  "name": {
+    "type": "Text",
+    "value": "Total quite"
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "Late term particul"
+  },
+  "description": {
+    "type": "Text",
+    "value": ""
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Mind first charge base position them peace. Page reflect ok unit see west thank. Personal ball father capital."
+  },
+  "owner": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:BinarySwitch:items:PJOQ:56642349",
+      "urn:ngsi-ld:BinarySwitch:items:SODH:76834134"
+    ]
+  },
+  "seeAlso": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:BinarySwitch:items:LFIE:84485764"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
     "value": {
-        "type": "Boolean",
-        "value": false
-    },
-    "n": {
-        "type": "Text",
-        "value": "Age j"
-    },
-    "if": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.if.baseline",
-            "oic.if.a"
-        ]
-    },
-    "type": "BinarySwitch"
+      "type": "Point",
+      "coordinates": [
+        -36.911266,
+        152.471699
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "Weight employee manage go prove commercial. Follow shake source way. Bill there within benef",
+      "addressLocality": "Arrive study participant knowledge. Service industry bed avoid first edge occur. Color collection area lay community training focus.",
+      "addressRegion": "Sense lose fine business leader own. More possible end arrive under address. Early cri",
+      "addressCountry": "Price response team radio stop.",
+      "postalCode": "Rise blue history establish red.",
+      "postOfficeBoxNumber": "From su",
+      "streetNr": "Another wait game need team house other very. Strategy body police leave. Event late car range common guess.",
+      "district": "High garden far evidence you want explain. To player week approach tonight whether close."
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "Serve until whatever drive. Southern method up "
+  },
+  "rt": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.r.switch.binary"
+    ]
+  },
+  "value": {
+    "type": "Boolean",
+    "value": false
+  },
+  "n": {
+    "type": "Text",
+    "value": "Age j"
+  },
+  "if": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.if.baseline",
+      "oic.if.a"
+    ]
+  },
+  "type": "BinarySwitch"
 }
