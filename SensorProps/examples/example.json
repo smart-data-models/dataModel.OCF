@@ -1,52 +1,52 @@
 {
-    "id": "urn:ngsi-ld:SensorProps:id:YESK:52293597",
-    "dateCreated": "1983-01-30T05:35:37Z",
-    "dateModified": "1981-06-21T03:52:14Z",
-    "source": "Air present skin away rule. Pa",
-    "name": "Democratic blue",
-    "alternateName": "Short until wait. Attention friend data within. Student draw this leave back.",
-    "description": "Life scene discuss choice officer customer little force. Rule significant business foot speech. Agree final happen similar.",
-    "dataProvider": "Lose they weight growth certain financial. Only effect born explain too western tree. Song great theory evening. Prove stay toward improve also happy catch.",
-    "owner": [
-        "urn:ngsi-ld:SensorProps:items:RRQL:54909527",
-        "urn:ngsi-ld:SensorProps:items:RAJU:77143332"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:SensorProps:items:JMLR:39881665"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            -70.014934,
-            3.829985
-        ]
-    },
-    "address": {
-        "streetAddress": "Learn hospital newspaper ahead music agreement bed nation. Drop sort cultural success star idea that say.",
-        "addressLocality": "Edge woman maintain woman visit product. Really capital color group memory. Adm",
-        "addressRegion": "The probably skin about continue field grow. Hand sense compare director already education. Ask night course.",
-        "addressCountry": "Federal young walk baby hair. Foot pressure th",
-        "postalCode": "Democratic game community law listen couple. ",
-        "postOfficeBoxNumber": "Unit lose action over national. Already kind system treat.",
-        "streetNr": "Build total appear staff health consider nearly. Name sure ",
-        "district": "Garden central agreement form foreign charge. Student everything such TV."
-    },
-    "areaServed": "Some various early place. Into surface any which responsibility record different along. Well standard",
-    "rt": [
-        "oic.r.sensor.props"
-    ],
-    "silenttime": 864,
-    "sensitivity": 117.8,
-    "n": "Quite wid",
-    "range": [
-        802.9,
-        881.6
-    ],
-    "step": 817.8,
-    "precision": 303.4,
-    "if": [
-        "oic.if.rw",
-        "oic.if.baseline"
-    ],
-    "type": "SensorProps"
+  "id": "urn:ngsi-ld:SensorProps:id:YESK:52293597",
+  "dateCreated": "1983-01-30T05:35:37Z",
+  "dateModified": "1981-06-21T03:52:14Z",
+  "source": "Air present skin away rule. Pa",
+  "name": "Democratic blue",
+  "alternateName": "Short until wait. Attention friend data within. Student draw this leave back.",
+  "description": "Life scene discuss choice officer customer little force. Rule significant business foot speech. Agree final happen similar.",
+  "dataProvider": "Lose they weight growth certain financial. Only effect born explain too western tree. Song great theory evening. Prove stay toward improve also happy catch.",
+  "owner": [
+    "urn:ngsi-ld:SensorProps:items:RRQL:54909527",
+    "urn:ngsi-ld:SensorProps:items:RAJU:77143332"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:SensorProps:items:JMLR:39881665"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -70.014934,
+      3.829985
+    ]
+  },
+  "address": {
+    "streetAddress": "Learn hospital newspaper ahead music agreement bed nation. Drop sort cultural success star idea that say.",
+    "addressLocality": "Edge woman maintain woman visit product. Really capital color group memory. Adm",
+    "addressRegion": "The probably skin about continue field grow. Hand sense compare director already education. Ask night course.",
+    "addressCountry": "Federal young walk baby hair. Foot pressure th",
+    "postalCode": "Democratic game community law listen couple. ",
+    "postOfficeBoxNumber": "Unit lose action over national. Already kind system treat.",
+    "streetNr": "Build total appear staff health consider nearly. Name sure ",
+    "district": "Garden central agreement form foreign charge. Student everything such TV."
+  },
+  "areaServed": "Some various early place. Into surface any which responsibility record different along. Well standard",
+  "rt": [
+    "oic.r.sensor.props"
+  ],
+  "silenttime": 864,
+  "sensitivity": 117.8,
+  "n": "Quite wid",
+  "range": [
+    802.9,
+    881.6
+  ],
+  "step": 817.8,
+  "precision": 303.4,
+  "if": [
+    "oic.if.rw",
+    "oic.if.baseline"
+  ],
+  "type": "SensorProps"
 }
