@@ -1,52 +1,52 @@
 {
-    "id": "urn:ngsi-ld:ColourChroma:id:VBKK:04819905",
-    "dateCreated": "1993-07-29T18:02:30Z",
-    "dateModified": "1997-02-20T15:50:29Z",
-    "source": "Similar let phone prevent live local. Lay thus teacher send ea",
-    "name": "As investment offer fact become senior. Avoid want information them west present.",
-    "alternateName": "Great pay beat. D",
-    "description": "Read pass respond hour which hea",
-    "dataProvider": "Suffer prove push ",
-    "owner": [
-        "urn:ngsi-ld:ColourChroma:items:PUPR:35081327",
-        "urn:ngsi-ld:ColourChroma:items:DDOU:92095052"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:ColourChroma:items:ZIZO:86166167"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            -9.2514065,
-            77.705794
-        ]
-    },
-    "address": {
-        "streetAddress": "Contain color start respond pressure seven entire. Theory step difficult.",
-        "addressLocality": "Receive skin join opportunity government activity relate. Job region shake executive. Any father help decide bad go.",
-        "addressRegion": "Pressure board collection",
-        "addressCountry": "Say floor radio similar former high. Director ch",
-        "postalCode": "Send pressure yet executive computer.",
-        "postOfficeBoxNumber": "Better little why. Discover report local chair a. Letter American later minute scientist. Great change every artist return.",
-        "streetNr": "Citizen ",
-        "district": "Follow price at matter contain fine. North environmental citizen hundred start. Many live upon name Mrs."
-    },
-    "areaServed": "Recognize never",
-    "rt": [
-        "oic.r.colour.chroma"
-    ],
-    "ct": 864,
-    "hue": 80.9,
-    "saturation": 25247,
-    "maximumsaturation": 25247,
-    "csc": [
-        0.4,
-        0.6
-    ],
-    "n": "Sure although middle eye official.",
-    "if": [
-        "oic.if.a",
-        "oic.if.baseline"
-    ],
-    "type": "ColourChroma"
+  "id": "urn:ngsi-ld:ColourChroma:id:VBKK:04819905",
+  "dateCreated": "1993-07-29T18:02:30Z",
+  "dateModified": "1997-02-20T15:50:29Z",
+  "source": "Similar let phone prevent live local. Lay thus teacher send ea",
+  "name": "As investment offer fact become senior. Avoid want information them west present.",
+  "alternateName": "Great pay beat. D",
+  "description": "Read pass respond hour which hea",
+  "dataProvider": "Suffer prove push ",
+  "owner": [
+    "urn:ngsi-ld:ColourChroma:items:PUPR:35081327",
+    "urn:ngsi-ld:ColourChroma:items:DDOU:92095052"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:ColourChroma:items:ZIZO:86166167"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -9.2514065,
+      77.705794
+    ]
+  },
+  "address": {
+    "streetAddress": "Contain color start respond pressure seven entire. Theory step difficult.",
+    "addressLocality": "Receive skin join opportunity government activity relate. Job region shake executive. Any father help decide bad go.",
+    "addressRegion": "Pressure board collection",
+    "addressCountry": "Say floor radio similar former high. Director ch",
+    "postalCode": "Send pressure yet executive computer.",
+    "postOfficeBoxNumber": "Better little why. Discover report local chair a. Letter American later minute scientist. Great change every artist return.",
+    "streetNr": "Citizen ",
+    "district": "Follow price at matter contain fine. North environmental citizen hundred start. Many live upon name Mrs."
+  },
+  "areaServed": "Recognize never",
+  "rt": [
+    "oic.r.colour.chroma"
+  ],
+  "ct": 864,
+  "hue": 80.9,
+  "saturation": 25247,
+  "maximumsaturation": 25247,
+  "csc": [
+    0.4,
+    0.6
+  ],
+  "n": "Sure although middle eye official.",
+  "if": [
+    "oic.if.a",
+    "oic.if.baseline"
+  ],
+  "type": "ColourChroma"
 }
