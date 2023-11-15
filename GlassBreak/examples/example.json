@@ -1,45 +1,45 @@
 {
-    "id": "urn:ngsi-ld:GlassBreak:id:ITVG:10465267",
-    "dateCreated": "1976-09-25T15:44:38Z",
-    "dateModified": "1984-11-13T20:38:56Z",
-    "source": "Trip morning probably environmental spring his.",
-    "name": "Good war west way. Day when tend. Others better create reveal.",
-    "alternateName": "Into protect stuff rather thing. Play ",
-    "description": "Subject budget b",
-    "dataProvider": "Meeting difference still speak market instead. Close word nor describe chance carry. Attention hear tough professor.",
-    "owner": [
-        "urn:ngsi-ld:GlassBreak:items:TXNU:21334401",
-        "urn:ngsi-ld:GlassBreak:items:IANL:21085989"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:GlassBreak:items:VGVC:09832274"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            14.1631575,
-            -20.590702
-        ]
-    },
-    "address": {
-        "streetAddress": "Approach reduce that hand somebody Mr.",
-        "addressLocality": "Assume and green sometimes little both.",
-        "addressRegion": "Campaign any right class read pressure lot worker. Study amount increase option alone.",
-        "addressCountry": "Surface clear ahead technology.",
-        "postalCode": "Receive under kind identify yard. ",
-        "postOfficeBoxNumber": "Think easy mind inside start likely tell. Add character Congress speech manage marriage right. Almost though decade.",
-        "streetNr": "Produce send current staff air offer here ok. Carry reflect fly work. Among blood he attorney.",
-        "district": "Growth point leader so billion decade deep."
-    },
-    "areaServed": "Do so alone she property issue light effect.",
-    "rt": [
-        "oic.r.sensor.glassbreak"
-    ],
-    "value": true,
-    "n": "Rule family similar field indeed.",
-    "if": [
-        "oic.if.s",
-        "oic.if.baseline"
-    ],
-    "type": "GlassBreak"
+  "id": "urn:ngsi-ld:GlassBreak:id:ITVG:10465267",
+  "dateCreated": "1976-09-25T15:44:38Z",
+  "dateModified": "1984-11-13T20:38:56Z",
+  "source": "Trip morning probably environmental spring his.",
+  "name": "Good war west way. Day when tend. Others better create reveal.",
+  "alternateName": "Into protect stuff rather thing. Play ",
+  "description": "Subject budget b",
+  "dataProvider": "Meeting difference still speak market instead. Close word nor describe chance carry. Attention hear tough professor.",
+  "owner": [
+    "urn:ngsi-ld:GlassBreak:items:TXNU:21334401",
+    "urn:ngsi-ld:GlassBreak:items:IANL:21085989"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:GlassBreak:items:VGVC:09832274"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      14.1631575,
+      -20.590702
+    ]
+  },
+  "address": {
+    "streetAddress": "Approach reduce that hand somebody Mr.",
+    "addressLocality": "Assume and green sometimes little both.",
+    "addressRegion": "Campaign any right class read pressure lot worker. Study amount increase option alone.",
+    "addressCountry": "Surface clear ahead technology.",
+    "postalCode": "Receive under kind identify yard. ",
+    "postOfficeBoxNumber": "Think easy mind inside start likely tell. Add character Congress speech manage marriage right. Almost though decade.",
+    "streetNr": "Produce send current staff air offer here ok. Carry reflect fly work. Among blood he attorney.",
+    "district": "Growth point leader so billion decade deep."
+  },
+  "areaServed": "Do so alone she property issue light effect.",
+  "rt": [
+    "oic.r.sensor.glassbreak"
+  ],
+  "value": true,
+  "n": "Rule family similar field indeed.",
+  "if": [
+    "oic.if.s",
+    "oic.if.baseline"
+  ],
+  "type": "GlassBreak"
 }
