@@ -1,97 +1,97 @@
 {
-    "id": "urn:ngsi-ld:Clock:id:KNNB:48612133",
-    "dateCreated": {
-        "type": "DateTime",
-        "value": "2012-01-18T03:45:31Z"
-    },
-    "dateModified": {
-        "type": "DateTime",
-        "value": "2005-05-24T17:26:56Z"
-    },
-    "source": {
-        "type": "Text",
-        "value": "Health quickly able bad enter positive education. Officer probably walk ground wall white probably."
-    },
-    "name": {
-        "type": "Text",
-        "value": "Paper read support consumer indeed. Themselves traditional you network operation cost head church. Return look kid PM."
-    },
-    "alternateName": {
-        "type": "Text",
-        "value": "Hard garden create method."
-    },
-    "description": {
-        "type": "Text",
-        "value": "New represent event provide because. Pressure common service deep lay."
-    },
-    "dataProvider": {
-        "type": "Text",
-        "value": "Need rate bad ball. C"
-    },
-    "owner": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:Clock:items:GAOB:91987918",
-            "urn:ngsi-ld:Clock:items:WNGQ:28000875"
-        ]
-    },
-    "seeAlso": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:Clock:items:HKBV:34608800"
-        ]
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                1.022875,
-                -104.816895
-            ]
-        }
-    },
-    "address": {
-        "type": "StructuredValue",
-        "value": {
-            "streetAddress": "To",
-            "addressLocality": "Only already various north or break. Catch author resource nothing movie sometimes wife opportunity. Sound doctor and usually.",
-            "addressRegion": "Third tonight social such but sure almost both. Admit attention shoulder public unit item adult. Final woman develop rep",
-            "addressCountry": "Girl themselves animal art trial. Community western although human difficult leg sit democratic.",
-            "postalCode": "Also special measure make act. Since require bill heavy. Technology want yes month.",
-            "postOfficeBoxNumber": "Also they media. Direction threat matter cover among discussion report by. Education good white level road company military.",
-            "streetNr": "Ago imagine step thing today. Agent building job certainly building. Forget own throug",
-            "district": "Goal yes amount could pressure. Cell his region simple. Gun four occur course dinner list."
-        }
-    },
-    "areaServed": {
-        "type": "Text",
-        "value": "Practice view loss reveal race admit create plan. Dog treat long Congress account care. In relationship your option similar improve financial."
-    },
-    "rt": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.r.clock"
-        ]
-    },
-    "countdown": {
-        "type": "Number",
-        "value": 678.4
-    },
-    "datetime": {
-        "type": "DateTime",
-        "value": "1992-12-09T06:56:25Z"
-    },
-    "n": {
-        "type": "Text",
-        "value": "Guess beat rich war administration. T"
-    },
-    "if": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.if.baseline",
-            "oic.if.a"
-        ]
-    },
-    "type": "Clock"
+  "id": "urn:ngsi-ld:Clock:id:KNNB:48612133",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "2012-01-18T03:45:31Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "2005-05-24T17:26:56Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": "Health quickly able bad enter positive education. Officer probably walk ground wall white probably."
+  },
+  "name": {
+    "type": "Text",
+    "value": "Paper read support consumer indeed. Themselves traditional you network operation cost head church. Return look kid PM."
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "Hard garden create method."
+  },
+  "description": {
+    "type": "Text",
+    "value": "New represent event provide because. Pressure common service deep lay."
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Need rate bad ball. C"
+  },
+  "owner": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:Clock:items:GAOB:91987918",
+      "urn:ngsi-ld:Clock:items:WNGQ:28000875"
+    ]
+  },
+  "seeAlso": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:Clock:items:HKBV:34608800"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        1.022875,
+        -104.816895
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "To",
+      "addressLocality": "Only already various north or break. Catch author resource nothing movie sometimes wife opportunity. Sound doctor and usually.",
+      "addressRegion": "Third tonight social such but sure almost both. Admit attention shoulder public unit item adult. Final woman develop rep",
+      "addressCountry": "Girl themselves animal art trial. Community western although human difficult leg sit democratic.",
+      "postalCode": "Also special measure make act. Since require bill heavy. Technology want yes month.",
+      "postOfficeBoxNumber": "Also they media. Direction threat matter cover among discussion report by. Education good white level road company military.",
+      "streetNr": "Ago imagine step thing today. Agent building job certainly building. Forget own throug",
+      "district": "Goal yes amount could pressure. Cell his region simple. Gun four occur course dinner list."
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "Practice view loss reveal race admit create plan. Dog treat long Congress account care. In relationship your option similar improve financial."
+  },
+  "rt": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.r.clock"
+    ]
+  },
+  "countdown": {
+    "type": "Number",
+    "value": 678.4
+  },
+  "datetime": {
+    "type": "DateTime",
+    "value": "1992-12-09T06:56:25Z"
+  },
+  "n": {
+    "type": "Text",
+    "value": "Guess beat rich war administration. T"
+  },
+  "if": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.if.baseline",
+      "oic.if.a"
+    ]
+  },
+  "type": "Clock"
 }
