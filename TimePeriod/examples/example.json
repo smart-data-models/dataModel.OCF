@@ -1,51 +1,51 @@
 {
-    "id": "urn:ngsi-ld:TimePeriod:id:NOEN:50560068",
-    "dateCreated": "1981-01-04T19:02:57Z",
-    "dateModified": "2009-04-19T11:34:49Z",
-    "source": "Other indeed glass although building view.",
-    "name": "Doctor point art foot. Third ever personal.",
-    "alternateName": "Before",
-    "description": "Medical glass drop site wonder technology. Clear ch",
-    "dataProvider": "Market finally bed song two former.",
-    "owner": [
-        "urn:ngsi-ld:TimePeriod:items:NJUA:07679517",
-        "urn:ngsi-ld:TimePeriod:items:ECZZ:36221154"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:TimePeriod:items:KXTB:74769498"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            -66.690941,
-            -78.148887
-        ]
-    },
-    "address": {
-        "streetAddress": "Understand throughout staff four design agent growth. ",
-        "addressLocality": "Skill thing level clear fish spend government. Parent mem",
-        "addressRegion": "Young suggest trial soldier conference nor play. Mouth move music fill maybe war quality. Production evening mean region ",
-        "addressCountry": "Training fear system moment treat own. Rest gun about.",
-        "postalCode": "Re",
-        "postOfficeBoxNumber": "Night doctor media hot his.",
-        "streetNr": "Adult free Democrat. Language couple nation ready stay identify PM.",
-        "district": "Owner difficult big force TV blood. Opportunity friend local exactly month. Who degree individual west. Thousand gun few might feel see."
-    },
-    "areaServed": "Guess network adult organization. Attack assume",
-    "rt": [
-        "oic.r.time.period"
-    ],
-    "interval": 864,
-    "intervalsecond": 864,
-    "stopTime": "1996-03-20T07:46:39Z",
-    "startTime": "2021-07-31T01:24:38Z",
-    "repeat": 863,
-    "triggertiming": "stopTime",
-    "state": "inInterval",
-    "n": "Whole magazine truth stop whose.",
-    "if": [
-        "oic.if.baseline",
-        "oic.if.a"
-    ],
-    "type": "TimePeriod"
+  "id": "urn:ngsi-ld:TimePeriod:id:NOEN:50560068",
+  "dateCreated": "1981-01-04T19:02:57Z",
+  "dateModified": "2009-04-19T11:34:49Z",
+  "source": "Other indeed glass although building view.",
+  "name": "Doctor point art foot. Third ever personal.",
+  "alternateName": "Before",
+  "description": "Medical glass drop site wonder technology. Clear ch",
+  "dataProvider": "Market finally bed song two former.",
+  "owner": [
+    "urn:ngsi-ld:TimePeriod:items:NJUA:07679517",
+    "urn:ngsi-ld:TimePeriod:items:ECZZ:36221154"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:TimePeriod:items:KXTB:74769498"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -66.690941,
+      -78.148887
+    ]
+  },
+  "address": {
+    "streetAddress": "Understand throughout staff four design agent growth. ",
+    "addressLocality": "Skill thing level clear fish spend government. Parent mem",
+    "addressRegion": "Young suggest trial soldier conference nor play. Mouth move music fill maybe war quality. Production evening mean region ",
+    "addressCountry": "Training fear system moment treat own. Rest gun about.",
+    "postalCode": "Re",
+    "postOfficeBoxNumber": "Night doctor media hot his.",
+    "streetNr": "Adult free Democrat. Language couple nation ready stay identify PM.",
+    "district": "Owner difficult big force TV blood. Opportunity friend local exactly month. Who degree individual west. Thousand gun few might feel see."
+  },
+  "areaServed": "Guess network adult organization. Attack assume",
+  "rt": [
+    "oic.r.time.period"
+  ],
+  "interval": 864,
+  "intervalsecond": 864,
+  "stopTime": "1996-03-20T07:46:39Z",
+  "startTime": "2021-07-31T01:24:38Z",
+  "repeat": 863,
+  "triggertiming": "stopTime",
+  "state": "inInterval",
+  "n": "Whole magazine truth stop whose.",
+  "if": [
+    "oic.if.baseline",
+    "oic.if.a"
+  ],
+  "type": "TimePeriod"
 }
