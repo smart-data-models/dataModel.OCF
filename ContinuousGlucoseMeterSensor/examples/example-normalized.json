@@ -1,111 +1,111 @@
 {
-    "id": "urn:ngsi-ld:ContinuousGlucoseMeterSensor:id:VMKL:33852976",
-    "dateCreated": {
-        "type": "DateTime",
-        "value": "2023-10-19T16:11:52Z"
-    },
-    "dateModified": {
-        "type": "DateTime",
-        "value": "1983-06-12T17:45:55Z"
-    },
-    "source": {
-        "type": "Text",
-        "value": "Parent chance account to explain join shoulder. Clos"
-    },
-    "name": {
-        "type": "Text",
-        "value": "Expert relationship important group. Spring order chair thought message. Article thing grow management very."
-    },
-    "alternateName": {
-        "type": "Text",
-        "value": "Sit mention fly above put. Bill glass win prevent less network always."
-    },
-    "description": {
-        "type": "Text",
-        "value": "Light record reason open. People generation large those technology. Represent process open down since long practice."
-    },
-    "dataProvider": {
-        "type": "Text",
-        "value": "Ability room around"
-    },
-    "owner": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:ContinuousGlucoseMeterSensor:items:OTAY:98259767",
-            "urn:ngsi-ld:ContinuousGlucoseMeterSensor:items:SRXB:50094831"
-        ]
-    },
-    "seeAlso": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:ContinuousGlucoseMeterSensor:items:YHNC:24340465"
-        ]
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                30.97083,
-                138.893906
-            ]
-        }
-    },
-    "address": {
-        "type": "StructuredValue",
-        "value": {
-            "streetAddress": "Indicate adult per gun something. Simply grow of good.",
-            "addressLocality": "Inde",
-            "addressRegion": "With our truth also small. Listen act nearly child available project small. Evening test dream size.",
-            "addressCountry": "Special TV put national baby hit organization. Hotel national wall despite truth kitchen spend.",
-            "postalCode": "Minute reduce success easy.",
-            "postOfficeBoxNumber": "Dinner push blood if.",
-            "streetNr": "Her both challenge over. Meeting enjoy else certa",
-            "district": "Military letter result whatever no this. Top really father professional environmental language."
-        }
-    },
-    "areaServed": {
-        "type": "Text",
-        "value": "Street former concern use"
-    },
-    "starttime": {
-        "type": "Text",
-        "value": "New accept throw within. Music region worry. Source far officer. Lose air site instead."
-    },
-    "runtime": {
-        "type": "Number",
-        "value": 985.3
-    },
-    "rt": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.r.cgm.sensor"
-        ]
-    },
-    "n": {
-        "type": "Text",
-        "value": "Others response contain usually mouth"
-    },
-    "if": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.if.baseline"
-        ]
-    },
-    "range": {
-        "type": "StructuredValue",
-        "value": [
-            807.7,
-            294.6
-        ]
-    },
-    "step": {
-        "type": "Number",
-        "value": 461.9
-    },
-    "precision": {
-        "type": "Number",
-        "value": 363.5
-    },
-    "type": "ContinuousGlucoseMeterSensor"
+  "id": "urn:ngsi-ld:ContinuousGlucoseMeterSensor:id:VMKL:33852976",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "2023-10-19T16:11:52Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "1983-06-12T17:45:55Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": "Parent chance account to explain join shoulder. Clos"
+  },
+  "name": {
+    "type": "Text",
+    "value": "Expert relationship important group. Spring order chair thought message. Article thing grow management very."
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "Sit mention fly above put. Bill glass win prevent less network always."
+  },
+  "description": {
+    "type": "Text",
+    "value": "Light record reason open. People generation large those technology. Represent process open down since long practice."
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Ability room around"
+  },
+  "owner": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:ContinuousGlucoseMeterSensor:items:OTAY:98259767",
+      "urn:ngsi-ld:ContinuousGlucoseMeterSensor:items:SRXB:50094831"
+    ]
+  },
+  "seeAlso": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:ContinuousGlucoseMeterSensor:items:YHNC:24340465"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        30.97083,
+        138.893906
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "Indicate adult per gun something. Simply grow of good.",
+      "addressLocality": "Inde",
+      "addressRegion": "With our truth also small. Listen act nearly child available project small. Evening test dream size.",
+      "addressCountry": "Special TV put national baby hit organization. Hotel national wall despite truth kitchen spend.",
+      "postalCode": "Minute reduce success easy.",
+      "postOfficeBoxNumber": "Dinner push blood if.",
+      "streetNr": "Her both challenge over. Meeting enjoy else certa",
+      "district": "Military letter result whatever no this. Top really father professional environmental language."
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "Street former concern use"
+  },
+  "starttime": {
+    "type": "Text",
+    "value": "New accept throw within. Music region worry. Source far officer. Lose air site instead."
+  },
+  "runtime": {
+    "type": "Number",
+    "value": 985.3
+  },
+  "rt": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.r.cgm.sensor"
+    ]
+  },
+  "n": {
+    "type": "Text",
+    "value": "Others response contain usually mouth"
+  },
+  "if": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.if.baseline"
+    ]
+  },
+  "range": {
+    "type": "StructuredValue",
+    "value": [
+      807.7,
+      294.6
+    ]
+  },
+  "step": {
+    "type": "Number",
+    "value": 461.9
+  },
+  "precision": {
+    "type": "Number",
+    "value": 363.5
+  },
+  "type": "ContinuousGlucoseMeterSensor"
 }
