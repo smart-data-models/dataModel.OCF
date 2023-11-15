@@ -1,89 +1,89 @@
 {
-    "id": "urn:ngsi-ld:Dali:id:GQEJ:48764759",
-    "dateCreated": {
-        "type": "DateTime",
-        "value": "1979-07-06T09:36:23Z"
-    },
-    "dateModified": {
-        "type": "DateTime",
-        "value": "2021-06-07T14:46:20Z"
-    },
-    "source": {
-        "type": "Text",
-        "value": "Son would mouth relate own chair better available. Line beyond its particularly tree whom."
-    },
-    "name": {
-        "type": "Text",
-        "value": "Tend employee source n"
-    },
-    "alternateName": {
-        "type": "Text",
-        "value": "Before year themselves your majority feeling fact. Natural sport music white. Natural explain before something first drug contain start."
-    },
-    "description": {
-        "type": "Text",
-        "value": "Wonder employee attorney quickly candidate change alth"
-    },
-    "dataProvider": {
-        "type": "Text",
-        "value": "Study modern miss dog Democrat quickly. Often late produce you true soldier. Food break onto friend."
-    },
-    "owner": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:Dali:items:KNBD:33041352",
-            "urn:ngsi-ld:Dali:items:DUGT:23098910"
-        ]
-    },
-    "seeAlso": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:Dali:items:AGFW:91615109"
-        ]
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                -56.7421445,
-                77.286609
-            ]
-        }
-    },
-    "address": {
-        "type": "StructuredValue",
-        "value": {
-            "streetAddress": "View age inte",
-            "addressLocality": "Others record hospital. Grow rule stuff truth",
-            "addressRegion": "Others kind company likely. Tonight themselves true power home price.",
-            "addressCountry": "Real leader bad school name care several. Good explain grow water plant perform resource.",
-            "postalCode": "Stock ball organization recogni",
-            "postOfficeBoxNumber": "Those traditional page a although for study. Speak themselves speech. Nature white without study candidate.",
-            "streetNr": "Wear individual about add se",
-            "district": "Best budget power them evidence without beyond take. Physical against trial son break either. Stage population boy child surface amount day."
-        }
-    },
-    "areaServed": {
-        "type": "Text",
-        "value": "Fire happen nothing support suffer which parent. Republican total poli"
-    },
-    "rt": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.r.dali"
-        ]
-    },
-    "n": {
-        "type": "Text",
-        "value": "Even front happen behavior. Along e"
-    },
-    "if": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.if.baseline",
-            "oic.if.w"
-        ]
-    },
-    "type": "Dali"
+  "id": "urn:ngsi-ld:Dali:id:GQEJ:48764759",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "1979-07-06T09:36:23Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "2021-06-07T14:46:20Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": "Son would mouth relate own chair better available. Line beyond its particularly tree whom."
+  },
+  "name": {
+    "type": "Text",
+    "value": "Tend employee source n"
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "Before year themselves your majority feeling fact. Natural sport music white. Natural explain before something first drug contain start."
+  },
+  "description": {
+    "type": "Text",
+    "value": "Wonder employee attorney quickly candidate change alth"
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Study modern miss dog Democrat quickly. Often late produce you true soldier. Food break onto friend."
+  },
+  "owner": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:Dali:items:KNBD:33041352",
+      "urn:ngsi-ld:Dali:items:DUGT:23098910"
+    ]
+  },
+  "seeAlso": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:Dali:items:AGFW:91615109"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -56.7421445,
+        77.286609
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "View age inte",
+      "addressLocality": "Others record hospital. Grow rule stuff truth",
+      "addressRegion": "Others kind company likely. Tonight themselves true power home price.",
+      "addressCountry": "Real leader bad school name care several. Good explain grow water plant perform resource.",
+      "postalCode": "Stock ball organization recogni",
+      "postOfficeBoxNumber": "Those traditional page a although for study. Speak themselves speech. Nature white without study candidate.",
+      "streetNr": "Wear individual about add se",
+      "district": "Best budget power them evidence without beyond take. Physical against trial son break either. Stage population boy child surface amount day."
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "Fire happen nothing support suffer which parent. Republican total poli"
+  },
+  "rt": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.r.dali"
+    ]
+  },
+  "n": {
+    "type": "Text",
+    "value": "Even front happen behavior. Along e"
+  },
+  "if": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.if.baseline",
+      "oic.if.w"
+    ]
+  },
+  "type": "Dali"
 }
