@@ -1,123 +1,123 @@
 {
-    "id": "urn:ngsi-ld:PanTiltZoom:id:YTUX:86779168",
-    "dateCreated": {
-        "type": "DateTime",
-        "value": "1983-03-06T11:53:43Z"
-    },
-    "dateModified": {
-        "type": "DateTime",
-        "value": "1984-07-04T17:53:03Z"
-    },
-    "source": {
-        "type": "Text",
-        "value": "Enough data gun glass structure. Identify key for fly fine set."
-    },
-    "name": {
-        "type": "Text",
-        "value": "Most"
-    },
-    "alternateName": {
-        "type": "Text",
-        "value": "Special myself assume research. Risk skin letter three customer hair arm big."
-    },
-    "description": {
-        "type": "Text",
-        "value": "Around our check employee citizen moment energy cover. Relate southern data environmental reason them good. Organization "
-    },
-    "dataProvider": {
-        "type": "Text",
-        "value": "Decide particularly people method machine write consider. Modern example foot poor rich."
-    },
-    "owner": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:PanTiltZoom:items:LADC:82474202",
-            "urn:ngsi-ld:PanTiltZoom:items:XSAL:35307419"
-        ]
-    },
-    "seeAlso": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:PanTiltZoom:items:BPQX:76791780"
-        ]
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                -0.9096775,
-                24.468291
-            ]
-        }
-    },
-    "address": {
-        "type": "StructuredValue",
-        "value": {
-            "streetAddress": "Surface position upon interview where. Officer field until condition officer well manager would. Better clearly look ",
-            "addressLocality": "Make bed traditional sort. Less either less ready watch. Western should professor under.",
-            "addressRegion": "Treatment main light rich. Recently pass team movie short meet. Suffer return defense sing four rate trouble.",
-            "addressCountry": "Size finish race property win past a. Benefit make light watch his move many.",
-            "postalCode": "Country administration feeling. Interesting better author entire financial.",
-            "postOfficeBoxNumber": "Worry report force account activity sell hit movement.",
-            "streetNr": "We could a feel. Bef",
-            "district": "Prove improve world cup maintain security return. Medical meeting issue. Indicate style any early."
-        }
-    },
-    "areaServed": {
-        "type": "Text",
-        "value": "Would not international. Together tonight reduce take scene. Water medical own among."
-    },
-    "rt": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.r.ptz"
-        ]
-    },
-    "tilt_range": {
-        "type": "StructuredValue",
-        "value": [
-            972.1,
-            351.2
-        ]
-    },
-    "zoomFactor": {
-        "type": "Text",
-        "value": "Best onto college type pick."
-    },
-    "tilt": {
-        "type": "Number",
-        "value": 122.5
-    },
-    "precision": {
-        "type": "Number",
-        "value": 565.5
-    },
-    "pan_range": {
-        "type": "StructuredValue",
-        "value": [
-            208.0,
-            628.7
-        ]
-    },
-    "zoomFactorRange": {
-        "type": "Text",
-        "value": "32x"
-    },
-    "pan": {
-        "type": "Number",
-        "value": 612.2
-    },
-    "n": {
-        "type": "Text",
-        "value": "Defense region protect between head reduce science any. Nea"
-    },
-    "if": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.if.a",
-            "oic.if.baseline"
-        ]
-    },
-    "type": "PanTiltZoom"
+  "id": "urn:ngsi-ld:PanTiltZoom:id:YTUX:86779168",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "1983-03-06T11:53:43Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "1984-07-04T17:53:03Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": "Enough data gun glass structure. Identify key for fly fine set."
+  },
+  "name": {
+    "type": "Text",
+    "value": "Most"
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "Special myself assume research. Risk skin letter three customer hair arm big."
+  },
+  "description": {
+    "type": "Text",
+    "value": "Around our check employee citizen moment energy cover. Relate southern data environmental reason them good. Organization "
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Decide particularly people method machine write consider. Modern example foot poor rich."
+  },
+  "owner": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:PanTiltZoom:items:LADC:82474202",
+      "urn:ngsi-ld:PanTiltZoom:items:XSAL:35307419"
+    ]
+  },
+  "seeAlso": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:PanTiltZoom:items:BPQX:76791780"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -0.9096775,
+        24.468291
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "Surface position upon interview where. Officer field until condition officer well manager would. Better clearly look ",
+      "addressLocality": "Make bed traditional sort. Less either less ready watch. Western should professor under.",
+      "addressRegion": "Treatment main light rich. Recently pass team movie short meet. Suffer return defense sing four rate trouble.",
+      "addressCountry": "Size finish race property win past a. Benefit make light watch his move many.",
+      "postalCode": "Country administration feeling. Interesting better author entire financial.",
+      "postOfficeBoxNumber": "Worry report force account activity sell hit movement.",
+      "streetNr": "We could a feel. Bef",
+      "district": "Prove improve world cup maintain security return. Medical meeting issue. Indicate style any early."
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "Would not international. Together tonight reduce take scene. Water medical own among."
+  },
+  "rt": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.r.ptz"
+    ]
+  },
+  "tilt_range": {
+    "type": "StructuredValue",
+    "value": [
+      972.1,
+      351.2
+    ]
+  },
+  "zoomFactor": {
+    "type": "Text",
+    "value": "Best onto college type pick."
+  },
+  "tilt": {
+    "type": "Number",
+    "value": 122.5
+  },
+  "precision": {
+    "type": "Number",
+    "value": 565.5
+  },
+  "pan_range": {
+    "type": "StructuredValue",
+    "value": [
+      208.0,
+      628.7
+    ]
+  },
+  "zoomFactorRange": {
+    "type": "Text",
+    "value": "32x"
+  },
+  "pan": {
+    "type": "Number",
+    "value": 612.2
+  },
+  "n": {
+    "type": "Text",
+    "value": "Defense region protect between head reduce science any. Nea"
+  },
+  "if": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.if.a",
+      "oic.if.baseline"
+    ]
+  },
+  "type": "PanTiltZoom"
 }
