@@ -1,100 +1,100 @@
 {
-    "id": "urn:ngsi-ld:Consumption:id:GQEJ:48764759",
-    "dateCreated": {
-        "type": "DateTime",
-        "value": "1979-07-06T09:36:23Z"
-    },
-    "dateModified": {
-        "type": "DateTime",
-        "value": "2021-06-07T14:46:20Z"
-    },
-    "source": {
-        "type": "Text",
-        "value": "Son would mouth relate own chair bett"
-    },
-    "name": {
-        "type": "Text",
-        "value": "Tend employee source nature add rest. Report size personal partner stock four. Region as true develop sound cen"
-    },
-    "alternateName": {
-        "type": "Text",
-        "value": "Before year thems"
-    },
-    "description": {
-        "type": "Text",
-        "value": "Wonder employee attorney quickly candidate change although bag."
-    },
-    "dataProvider": {
-        "type": "Text",
-        "value": "Study modern miss dog Democrat quickly. Often late produce you true soldier. Food break on"
-    },
-    "owner": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:Consumption:items:KNBD:33041352",
-            "urn:ngsi-ld:Consumption:items:DUGT:23098910"
-        ]
-    },
-    "seeAlso": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:Consumption:items:AGFW:91615109"
-        ]
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                -56.7421445,
-                77.286609
-            ]
-        }
-    },
-    "address": {
-        "type": "StructuredValue",
-        "value": {
-            "streetAddress": "View age international bi",
-            "addressLocality": "Others record hospital. Grow rule stuff truth college. Whom around put suddenly garden.",
-            "addressRegion": "Others kind company likely. Tonight themselves true power home price.",
-            "addressCountry": "Real leader bad school name care several. Good explain grow water plant",
-            "postalCode": "Stock ball organization rec",
-            "postOfficeBoxNumber": "Those traditional page a although for study. Speak themselves speech. Nature white without study candidate.",
-            "streetNr": "Wear individual about add senior woman.",
-            "district": "Best budget power them evidence without beyond take. Physical against trial son break either. Stage population boy child surface amount d"
-        }
-    },
-    "areaServed": {
-        "type": "Text",
-        "value": "Fire happen nothing support suffer which parent. Republic"
-    },
-    "rt": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.r.gas.consumption"
-        ]
-    },
-    "if": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.if.r"
-        ]
-    },
-    "n": {
-        "type": "Text",
-        "value": "Four smile responsibi"
-    },
-    "gas": {
-        "type": "Number",
-        "value": 879.0
-    },
-    "precision": {
-        "type": "Number",
-        "value": 995.8
-    },
-    "volume": {
-        "type": "Number",
-        "value": 644.7
-    },
-    "type": "Consumption"
+  "id": "urn:ngsi-ld:Consumption:id:GQEJ:48764759",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "1979-07-06T09:36:23Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "2021-06-07T14:46:20Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": "Son would mouth relate own chair bett"
+  },
+  "name": {
+    "type": "Text",
+    "value": "Tend employee source nature add rest. Report size personal partner stock four. Region as true develop sound cen"
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "Before year thems"
+  },
+  "description": {
+    "type": "Text",
+    "value": "Wonder employee attorney quickly candidate change although bag."
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Study modern miss dog Democrat quickly. Often late produce you true soldier. Food break on"
+  },
+  "owner": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:Consumption:items:KNBD:33041352",
+      "urn:ngsi-ld:Consumption:items:DUGT:23098910"
+    ]
+  },
+  "seeAlso": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:Consumption:items:AGFW:91615109"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -56.7421445,
+        77.286609
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "View age international bi",
+      "addressLocality": "Others record hospital. Grow rule stuff truth college. Whom around put suddenly garden.",
+      "addressRegion": "Others kind company likely. Tonight themselves true power home price.",
+      "addressCountry": "Real leader bad school name care several. Good explain grow water plant",
+      "postalCode": "Stock ball organization rec",
+      "postOfficeBoxNumber": "Those traditional page a although for study. Speak themselves speech. Nature white without study candidate.",
+      "streetNr": "Wear individual about add senior woman.",
+      "district": "Best budget power them evidence without beyond take. Physical against trial son break either. Stage population boy child surface amount d"
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "Fire happen nothing support suffer which parent. Republic"
+  },
+  "rt": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.r.gas.consumption"
+    ]
+  },
+  "if": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.if.r"
+    ]
+  },
+  "n": {
+    "type": "Text",
+    "value": "Four smile responsibi"
+  },
+  "gas": {
+    "type": "Number",
+    "value": 879.0
+  },
+  "precision": {
+    "type": "Number",
+    "value": 995.8
+  },
+  "volume": {
+    "type": "Number",
+    "value": 644.7
+  },
+  "type": "Consumption"
 }
