@@ -1,107 +1,107 @@
 {
-    "id": "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:id:XDQX:30731712",
-    "dateCreated": {
-        "type": "DateTime",
-        "value": "1993-10-06T07:15:17Z"
-    },
-    "dateModified": {
-        "type": "DateTime",
-        "value": "1983-07-24T10:41:21Z"
-    },
-    "source": {
-        "type": "Text",
-        "value": "Out husband human left. List "
-    },
-    "name": {
-        "type": "Text",
-        "value": "Someone top girl do safe glass instead. Girl consider condition television work audience."
-    },
-    "alternateName": {
-        "type": "Text",
-        "value": "Throughout traditional east quality. Amount TV chance shoulder speak line."
-    },
-    "description": {
-        "type": "Text",
-        "value": "Who who smile. Stage challenge respond above at under score."
-    },
-    "dataProvider": {
-        "type": "Text",
-        "value": "Until build heart seem throughout."
-    },
-    "owner": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:CNMY:18920441",
-            "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:PPTV:53147945"
-        ]
-    },
-    "seeAlso": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:MBSH:12361960"
-        ]
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                -8.503401,
-                9.432166
-            ]
-        }
-    },
-    "address": {
-        "type": "StructuredValue",
-        "value": {
-            "streetAddress": "Money total health college end choose. Although half improve.",
-            "addressLocality": "Perform executive American",
-            "addressRegion": "Factor data those reveal. Affect information small edge ",
-            "addressCountry": "Where song attention feel list bar own. Owner main shake receive. Financial from soon enough.",
-            "postalCode": "May sea compare magazine discover around brother. International yeah",
-            "postOfficeBoxNumber": "Teach fact movie pay. Treat reflect live investment gun career. Trade body there now however blue. Evidence operation occur somebody so staff along.",
-            "streetNr": "Laugh office employee write amount once deal. Might mission within scientist condition. Especia",
-            "district": "Edge receive write trade scientist organization about first. Response agent vote before. Day population thus answer machine peace."
-        }
-    },
-    "areaServed": {
-        "type": "Text",
-        "value": "Heart list who because could down billion. Only discuss mean deep point audience who. Help quality film feeling record city appear."
-    },
-    "interval": {
-        "type": "Number",
-        "value": 0.4
-    },
-    "rt": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.r.cgm.samplinginterval"
-        ]
-    },
-    "n": {
-        "type": "Text",
-        "value": "Generation med"
-    },
-    "if": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.if.baseline"
-        ]
-    },
-    "range": {
-        "type": "StructuredValue",
-        "value": [
-            538.0,
-            453.8
-        ]
-    },
-    "step": {
-        "type": "Number",
-        "value": 840.6
-    },
-    "precision": {
-        "type": "Number",
-        "value": 233.7
-    },
-    "type": "ContinuousGlucoseMeterSamplingInterval"
+  "id": "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:id:XDQX:30731712",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "1993-10-06T07:15:17Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "1983-07-24T10:41:21Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": "Out husband human left. List "
+  },
+  "name": {
+    "type": "Text",
+    "value": "Someone top girl do safe glass instead. Girl consider condition television work audience."
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "Throughout traditional east quality. Amount TV chance shoulder speak line."
+  },
+  "description": {
+    "type": "Text",
+    "value": "Who who smile. Stage challenge respond above at under score."
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Until build heart seem throughout."
+  },
+  "owner": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:CNMY:18920441",
+      "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:PPTV:53147945"
+    ]
+  },
+  "seeAlso": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:ContinuousGlucoseMeterSamplingInterval:items:MBSH:12361960"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -8.503401,
+        9.432166
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "Money total health college end choose. Although half improve.",
+      "addressLocality": "Perform executive American",
+      "addressRegion": "Factor data those reveal. Affect information small edge ",
+      "addressCountry": "Where song attention feel list bar own. Owner main shake receive. Financial from soon enough.",
+      "postalCode": "May sea compare magazine discover around brother. International yeah",
+      "postOfficeBoxNumber": "Teach fact movie pay. Treat reflect live investment gun career. Trade body there now however blue. Evidence operation occur somebody so staff along.",
+      "streetNr": "Laugh office employee write amount once deal. Might mission within scientist condition. Especia",
+      "district": "Edge receive write trade scientist organization about first. Response agent vote before. Day population thus answer machine peace."
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "Heart list who because could down billion. Only discuss mean deep point audience who. Help quality film feeling record city appear."
+  },
+  "interval": {
+    "type": "Number",
+    "value": 0.4
+  },
+  "rt": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.r.cgm.samplinginterval"
+    ]
+  },
+  "n": {
+    "type": "Text",
+    "value": "Generation med"
+  },
+  "if": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.if.baseline"
+    ]
+  },
+  "range": {
+    "type": "StructuredValue",
+    "value": [
+      538.0,
+      453.8
+    ]
+  },
+  "step": {
+    "type": "Number",
+    "value": 840.6
+  },
+  "precision": {
+    "type": "Number",
+    "value": 233.7
+  },
+  "type": "ContinuousGlucoseMeterSamplingInterval"
 }
