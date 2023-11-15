@@ -1,51 +1,51 @@
 {
-    "id": "urn:ngsi-ld:BodyFatFreeMass:id:OITA:84015603",
-    "dateCreated": "2008-01-28T11:50:42Z",
-    "dateModified": "1989-08-09T09:52:36Z",
-    "source": "Until movie deal million. West course newspaper rest player stand scene. S",
-    "name": "Thing town nor fine specific anyone mind. Pattern really cost film others fund office.",
-    "alternateName": "Eat skin conference charge born sometimes night ",
-    "description": "Little everything later study accept pretty. Above claim attack take part color big. Turn television determine fire old.",
-    "dataProvider": "A scientist such kitchen people song our. Building night risk imagine. We particularly conference mother unit.",
-    "owner": [
-        "urn:ngsi-ld:BodyFatFreeMass:items:JOUM:77326907",
-        "urn:ngsi-ld:BodyFatFreeMass:items:QQGB:73829140"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:BodyFatFreeMass:items:LGBL:55154773"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            20.177127,
-            89.726082
-        ]
-    },
-    "address": {
-        "streetAddress": "Method city material energy evidence second.",
-        "addressLocality": "Argue certainly skill and consumer save. Lay those me yea",
-        "addressRegion": "Scene top image office. Quality save off pretty decide. Special oil deal.",
-        "addressCountry": "Away their when and hope. Use cultural campaign bank. I trial life offer visit cover.",
-        "postalCode": "Subject learn administration church wish rich. Relationship au",
-        "postOfficeBoxNumber": "Outside difficult adult south. Store data past analysis idea hot system. Year after side machine apply food. Safe too strong whole.",
-        "streetNr": "Month card television machine same speech thought save. High nice couple throw respond thousand might. Third appear grow simply water you.",
-        "district": "Break particular entire response participant bank. Operation window floor wind member responsibility. Bag investment hand answer position coll"
-    },
-    "areaServed": "Development culture federal draw animal fish level central. Table main seat want assume. Raise mil",
-    "rt": [
-        "oic.r.body.ffm"
-    ],
-    "ffm": 911.0,
-    "units": "percent",
-    "range": [
-        77.7,
-        206.6
-    ],
-    "step": 540.2,
-    "precision": 989.8,
-    "n": "Run probably certainly.",
-    "if": [
-        "oic.if.s"
-    ],
-    "type": "BodyFatFreeMass"
+  "id": "urn:ngsi-ld:BodyFatFreeMass:id:OITA:84015603",
+  "dateCreated": "2008-01-28T11:50:42Z",
+  "dateModified": "1989-08-09T09:52:36Z",
+  "source": "Until movie deal million. West course newspaper rest player stand scene. S",
+  "name": "Thing town nor fine specific anyone mind. Pattern really cost film others fund office.",
+  "alternateName": "Eat skin conference charge born sometimes night ",
+  "description": "Little everything later study accept pretty. Above claim attack take part color big. Turn television determine fire old.",
+  "dataProvider": "A scientist such kitchen people song our. Building night risk imagine. We particularly conference mother unit.",
+  "owner": [
+    "urn:ngsi-ld:BodyFatFreeMass:items:JOUM:77326907",
+    "urn:ngsi-ld:BodyFatFreeMass:items:QQGB:73829140"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:BodyFatFreeMass:items:LGBL:55154773"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      20.177127,
+      89.726082
+    ]
+  },
+  "address": {
+    "streetAddress": "Method city material energy evidence second.",
+    "addressLocality": "Argue certainly skill and consumer save. Lay those me yea",
+    "addressRegion": "Scene top image office. Quality save off pretty decide. Special oil deal.",
+    "addressCountry": "Away their when and hope. Use cultural campaign bank. I trial life offer visit cover.",
+    "postalCode": "Subject learn administration church wish rich. Relationship au",
+    "postOfficeBoxNumber": "Outside difficult adult south. Store data past analysis idea hot system. Year after side machine apply food. Safe too strong whole.",
+    "streetNr": "Month card television machine same speech thought save. High nice couple throw respond thousand might. Third appear grow simply water you.",
+    "district": "Break particular entire response participant bank. Operation window floor wind member responsibility. Bag investment hand answer position coll"
+  },
+  "areaServed": "Development culture federal draw animal fish level central. Table main seat want assume. Raise mil",
+  "rt": [
+    "oic.r.body.ffm"
+  ],
+  "ffm": 911.0,
+  "units": "percent",
+  "range": [
+    77.7,
+    206.6
+  ],
+  "step": 540.2,
+  "precision": 989.8,
+  "n": "Run probably certainly.",
+  "if": [
+    "oic.if.s"
+  ],
+  "type": "BodyFatFreeMass"
 }
