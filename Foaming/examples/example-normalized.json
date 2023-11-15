@@ -1,104 +1,104 @@
 {
-    "id": "urn:ngsi-ld:Foaming:id:ENSI:34755994",
-    "dateCreated": {
-        "type": "DateTime",
-        "value": "2023-10-11T02:02:24Z"
-    },
-    "dateModified": {
-        "type": "DateTime",
-        "value": "1985-02-11T00:17:18Z"
-    },
-    "source": {
-        "type": "Text",
-        "value": "Perhaps long lay particularly term attack score white. Guy red office gun."
-    },
-    "name": {
-        "type": "Text",
-        "value": "Enter key res"
-    },
-    "alternateName": {
-        "type": "Text",
-        "value": "Instead very also ball later course my. Part task about magazine defense. Question everything chair past public reveal him."
-    },
-    "description": {
-        "type": "Text",
-        "value": "True election democratic manager heart various control. Day certain bag once star western home buy."
-    },
-    "dataProvider": {
-        "type": "Text",
-        "value": "Better sister continue should have common. Conference poor member decide author."
-    },
-    "owner": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:Foaming:items:NJXO:44416928",
-            "urn:ngsi-ld:Foaming:items:EHZZ:25860570"
-        ]
-    },
-    "seeAlso": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:Foaming:items:GRSQ:95376720"
-        ]
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                81.868721,
-                -8.283063
-            ]
-        }
-    },
-    "address": {
-        "type": "StructuredValue",
-        "value": {
-            "streetAddress": "Stock likely wide glass cut. Strategy long only feelin",
-            "addressLocality": "Research or policy realize tonight else eat against. Quickly enough discuss improve. Person seven herself teacher recently off be. Very wide reach draw relationship mana",
-            "addressRegion": "Worker ho",
-            "addressCountry": "Leg stand seat visit stuff know. Cup individual also tab",
-            "postalCode": "Expert police bed win newspaper specific near candidate. Lot common include herself audience order. Electio",
-            "postOfficeBoxNumber": "Management agent rate relate new. Nothing meeting night model.",
-            "streetNr": "Letter whose right sense yard create director. Five house poor their firm i",
-            "district": "Per order huge floor more two. Career PM easy expect eye. How those thought teach structure become both."
-        }
-    },
-    "areaServed": {
-        "type": "Text",
-        "value": "Interview this light serious. Fish recently may type then late. Try small very your."
-    },
-    "rt": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.r.foaming"
-        ]
-    },
-    "foamstrength": {
-        "type": "Number",
-        "value": 864
-    },
-    "n": {
-        "type": "Text",
-        "value": "American whole magaz"
-    },
-    "range": {
-        "type": "StructuredValue",
-        "value": [
-            864,
-            864
-        ]
-    },
-    "step": {
-        "type": "Number",
-        "value": 864
-    },
-    "if": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.if.baseline",
-            "oic.if.rw"
-        ]
-    },
-    "type": "Foaming"
+  "id": "urn:ngsi-ld:Foaming:id:ENSI:34755994",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "2023-10-11T02:02:24Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "1985-02-11T00:17:18Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": "Perhaps long lay particularly term attack score white. Guy red office gun."
+  },
+  "name": {
+    "type": "Text",
+    "value": "Enter key res"
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "Instead very also ball later course my. Part task about magazine defense. Question everything chair past public reveal him."
+  },
+  "description": {
+    "type": "Text",
+    "value": "True election democratic manager heart various control. Day certain bag once star western home buy."
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Better sister continue should have common. Conference poor member decide author."
+  },
+  "owner": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:Foaming:items:NJXO:44416928",
+      "urn:ngsi-ld:Foaming:items:EHZZ:25860570"
+    ]
+  },
+  "seeAlso": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:Foaming:items:GRSQ:95376720"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        81.868721,
+        -8.283063
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "Stock likely wide glass cut. Strategy long only feelin",
+      "addressLocality": "Research or policy realize tonight else eat against. Quickly enough discuss improve. Person seven herself teacher recently off be. Very wide reach draw relationship mana",
+      "addressRegion": "Worker ho",
+      "addressCountry": "Leg stand seat visit stuff know. Cup individual also tab",
+      "postalCode": "Expert police bed win newspaper specific near candidate. Lot common include herself audience order. Electio",
+      "postOfficeBoxNumber": "Management agent rate relate new. Nothing meeting night model.",
+      "streetNr": "Letter whose right sense yard create director. Five house poor their firm i",
+      "district": "Per order huge floor more two. Career PM easy expect eye. How those thought teach structure become both."
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "Interview this light serious. Fish recently may type then late. Try small very your."
+  },
+  "rt": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.r.foaming"
+    ]
+  },
+  "foamstrength": {
+    "type": "Number",
+    "value": 864
+  },
+  "n": {
+    "type": "Text",
+    "value": "American whole magaz"
+  },
+  "range": {
+    "type": "StructuredValue",
+    "value": [
+      864,
+      864
+    ]
+  },
+  "step": {
+    "type": "Number",
+    "value": 864
+  },
+  "if": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.if.baseline",
+      "oic.if.rw"
+    ]
+  },
+  "type": "Foaming"
 }
