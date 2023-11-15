@@ -1,97 +1,97 @@
 {
-    "id": "urn:ngsi-ld:HeatingZone:id:WYRW:78551335",
-    "dateCreated": {
-        "type": "DateTime",
-        "value": "1994-05-25T00:16:38Z"
-    },
-    "dateModified": {
-        "type": "DateTime",
-        "value": "1973-08-12T04:18:53Z"
-    },
-    "source": {
-        "type": "Text",
-        "value": "Compar"
-    },
-    "name": {
-        "type": "Text",
-        "value": "Receive material fear avoid culture staff cut thousand."
-    },
-    "alternateName": {
-        "type": "Text",
-        "value": "Education week risk spring let."
-    },
-    "description": {
-        "type": "Text",
-        "value": "Great discuss administration money care. Business factor team begin."
-    },
-    "dataProvider": {
-        "type": "Text",
-        "value": "Too yeah through born since contain pressure. Good season perform bal"
-    },
-    "owner": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:HeatingZone:items:BPLI:90016877",
-            "urn:ngsi-ld:HeatingZone:items:KNJW:15261328"
-        ]
-    },
-    "seeAlso": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:HeatingZone:items:ZCSB:30140728"
-        ]
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                73.9101395,
-                56.752641
-            ]
-        }
-    },
-    "address": {
-        "type": "StructuredValue",
-        "value": {
-            "streetAddress": "Story although test pressure recently daughter. Very hear audience occur senior live environmen",
-            "addressLocality": "Tree a example bring just old. Attention dog outside part. Although this animal space.",
-            "addressRegion": "Mind traditional certainly name present yourself. Oil another operation unit board bring sometimes.",
-            "addressCountry": "Fall choose act statement grow ten exist. Relate relationship south say four bed. Service at Congress cell card.",
-            "postalCode": "Happen case pattern call six camera. Smile place wind page newspaper theory board. Moment less compare suggest p",
-            "postOfficeBoxNumber": "Case political usually down president owner contain. C",
-            "streetNr": "You head start. Understand mind best follow. East public return believe policy un",
-            "district": "Throw law avoid pull why suffer century. Former certainly black."
-        }
-    },
-    "areaServed": {
-        "type": "Text",
-        "value": "Idea direction development exactly contain a"
-    },
-    "rt": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.r.heatingzone"
-        ]
-    },
-    "heatinglevel": {
-        "type": "Number",
-        "value": 864
-    },
-    "maxheatinglevel": {
-        "type": "Number",
-        "value": 864
-    },
-    "n": {
-        "type": "Text",
-        "value": "American whole magazine truth stop whose. On traditi"
-    },
-    "if": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.if.s",
-            "oic.if.baseline"
-        ]
-    },
-    "type": "HeatingZone"
+  "id": "urn:ngsi-ld:HeatingZone:id:WYRW:78551335",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "1994-05-25T00:16:38Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "1973-08-12T04:18:53Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": "Compar"
+  },
+  "name": {
+    "type": "Text",
+    "value": "Receive material fear avoid culture staff cut thousand."
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "Education week risk spring let."
+  },
+  "description": {
+    "type": "Text",
+    "value": "Great discuss administration money care. Business factor team begin."
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Too yeah through born since contain pressure. Good season perform bal"
+  },
+  "owner": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:HeatingZone:items:BPLI:90016877",
+      "urn:ngsi-ld:HeatingZone:items:KNJW:15261328"
+    ]
+  },
+  "seeAlso": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:HeatingZone:items:ZCSB:30140728"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        73.9101395,
+        56.752641
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "Story although test pressure recently daughter. Very hear audience occur senior live environmen",
+      "addressLocality": "Tree a example bring just old. Attention dog outside part. Although this animal space.",
+      "addressRegion": "Mind traditional certainly name present yourself. Oil another operation unit board bring sometimes.",
+      "addressCountry": "Fall choose act statement grow ten exist. Relate relationship south say four bed. Service at Congress cell card.",
+      "postalCode": "Happen case pattern call six camera. Smile place wind page newspaper theory board. Moment less compare suggest p",
+      "postOfficeBoxNumber": "Case political usually down president owner contain. C",
+      "streetNr": "You head start. Understand mind best follow. East public return believe policy un",
+      "district": "Throw law avoid pull why suffer century. Former certainly black."
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "Idea direction development exactly contain a"
+  },
+  "rt": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.r.heatingzone"
+    ]
+  },
+  "heatinglevel": {
+    "type": "Number",
+    "value": 864
+  },
+  "maxheatinglevel": {
+    "type": "Number",
+    "value": 864
+  },
+  "n": {
+    "type": "Text",
+    "value": "American whole magazine truth stop whose. On traditi"
+  },
+  "if": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.if.s",
+      "oic.if.baseline"
+    ]
+  },
+  "type": "HeatingZone"
 }
