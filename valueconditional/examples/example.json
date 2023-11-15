@@ -1,47 +1,47 @@
 {
-    "id": "urn:ngsi-ld:valueconditional:id:SDEW:33209754",
-    "dateCreated": "2019-01-19T07:29:26Z",
-    "dateModified": "1972-12-15T08:21:08Z",
-    "source": "Continue short person operation serve happy small.",
-    "name": "Know thousand food true challenge.",
-    "alternateName": "Sea get special senior. New administration its former indeed image.",
-    "description": "Admit between century. Effect shoulder send rest society recently suggest. Go outside article reach.",
-    "dataProvider": "Deep weight small who day worker lawyer child. Painting again seek whole level you. Space nor identify head exactly.",
-    "owner": [
-        "urn:ngsi-ld:valueconditional:items:RVGE:20842271",
-        "urn:ngsi-ld:valueconditional:items:GWWR:44594825"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:valueconditional:items:ICEL:92972708"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            -75.679866,
-            -97.238743
-        ]
-    },
-    "address": {
-        "streetAddress": "Dark manage camera according upon easy sur",
-        "addressLocality": "Difficult space issue federal. Daughter understand color",
-        "addressRegion": "Child protect cut everybody important answer total those. Bank point deep nation about move herself modern.",
-        "addressCountry": "Region prev",
-        "postalCode": "Whom step actually for dark toward. Situation per likely teacher like appear ability agent. Family propert",
-        "postOfficeBoxNumber": "Performance meeting drop anything yourself black military. Whether from book professional walk if. Federal various wife lawyer choose data.",
-        "streetNr": "Project thus artist radio management remember. Push will recent become along. Under act half about know yeah.",
-        "district": "Piec"
-    },
-    "areaServed": "Bit bank picture six. Fall strong tough material. Few pressure many guy he world deep. Into claim try.",
-    "rt": [
-        "oic.r.value.conditional"
-    ],
-    "maxnotifyperiod": 864,
-    "minnotifyperiod": 864,
-    "threshold": 984.9,
-    "n": "Couple child candidate. Un",
-    "if": [
-        "oic.if.rw",
-        "oic.if.baseline"
-    ],
-    "type": "valueconditional"
+  "id": "urn:ngsi-ld:valueconditional:id:SDEW:33209754",
+  "dateCreated": "2019-01-19T07:29:26Z",
+  "dateModified": "1972-12-15T08:21:08Z",
+  "source": "Continue short person operation serve happy small.",
+  "name": "Know thousand food true challenge.",
+  "alternateName": "Sea get special senior. New administration its former indeed image.",
+  "description": "Admit between century. Effect shoulder send rest society recently suggest. Go outside article reach.",
+  "dataProvider": "Deep weight small who day worker lawyer child. Painting again seek whole level you. Space nor identify head exactly.",
+  "owner": [
+    "urn:ngsi-ld:valueconditional:items:RVGE:20842271",
+    "urn:ngsi-ld:valueconditional:items:GWWR:44594825"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:valueconditional:items:ICEL:92972708"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -75.679866,
+      -97.238743
+    ]
+  },
+  "address": {
+    "streetAddress": "Dark manage camera according upon easy sur",
+    "addressLocality": "Difficult space issue federal. Daughter understand color",
+    "addressRegion": "Child protect cut everybody important answer total those. Bank point deep nation about move herself modern.",
+    "addressCountry": "Region prev",
+    "postalCode": "Whom step actually for dark toward. Situation per likely teacher like appear ability agent. Family propert",
+    "postOfficeBoxNumber": "Performance meeting drop anything yourself black military. Whether from book professional walk if. Federal various wife lawyer choose data.",
+    "streetNr": "Project thus artist radio management remember. Push will recent become along. Under act half about know yeah.",
+    "district": "Piec"
+  },
+  "areaServed": "Bit bank picture six. Fall strong tough material. Few pressure many guy he world deep. Into claim try.",
+  "rt": [
+    "oic.r.value.conditional"
+  ],
+  "maxnotifyperiod": 864,
+  "minnotifyperiod": 864,
+  "threshold": 984.9,
+  "n": "Couple child candidate. Un",
+  "if": [
+    "oic.if.rw",
+    "oic.if.baseline"
+  ],
+  "type": "valueconditional"
 }
