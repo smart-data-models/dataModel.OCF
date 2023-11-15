@@ -1,107 +1,107 @@
 {
-    "id": "urn:ngsi-ld:settings-broadcasting:id:YWMD:14174205",
-    "dateCreated": {
-        "type": "DateTime",
-        "value": "1981-06-24T23:59:36Z"
-    },
-    "dateModified": {
-        "type": "DateTime",
-        "value": "1978-03-16T10:29:14Z"
-    },
-    "source": {
-        "type": "Text",
-        "value": "Probably turn reach not north answer. Course occur easy give concern. Research someone lawyer situation pro"
-    },
-    "name": {
-        "type": "Text",
-        "value": "Charge commercial development tough technology make often bit. Pick th"
-    },
-    "alternateName": {
-        "type": "Text",
-        "value": "Yes create vo"
-    },
-    "description": {
-        "type": "Text",
-        "value": "Structure smile nice goal. Pretty first here say sometimes."
-    },
-    "dataProvider": {
-        "type": "Text",
-        "value": "What challenge myself business something outside. Half hear any all relationship "
-    },
-    "owner": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:settings-broadcasting:items:IYDV:67275654",
-            "urn:ngsi-ld:settings-broadcasting:items:NZOU:92414940"
-        ]
-    },
-    "seeAlso": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:settings-broadcasting:items:QQFK:04713049"
-        ]
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                20.587973,
-                69.82222
-            ]
-        }
-    },
-    "address": {
-        "type": "StructuredValue",
-        "value": {
-            "streetAddress": "Tree set environm",
-            "addressLocality": "Miss home respond family start environmental population. Scientist mention compare north when personal. Defense successful",
-            "addressRegion": "Focus themselves outside provide card chair report. Machine art data guess summer se",
-            "addressCountry": "Main glass day expect move western. Win machine suddenly professor expect. Affect present cold president how. Responsibility nat",
-            "postalCode": "Tend political card visit. Up behavior federal fall million history not market.",
-            "postOfficeBoxNumber": "State partner door market wide yourself. Line development money buy check include likely serious. Know security stop field tend police.",
-            "streetNr": "Dream some now eye recognize democratic production. Plan need think relationship. Rather culture continue family everyone society writer nothing. Those rather role bad.",
-            "district": "Year mean TV huge whose. Consid"
-        }
-    },
-    "areaServed": {
-        "type": "Text",
-        "value": "Gun good deep them. Here you police tough public economic friend."
-    },
-    "rt": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.r.settings.broadcasting"
-        ]
-    },
-    "if": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.if.baseline",
-            "oic.if.rw"
-        ]
-    },
-    "antenna": {
-        "type": "Text",
-        "value": "The billion"
-    },
-    "supported-antennas": {
-        "type": "StructuredValue",
-        "value": [
-            "Scene money move that south beyond. Up candidate up test. Around imagine quite commercial minute."
-        ]
-    },
-    "location-info": {
-        "type": "Text",
-        "value": "Poor kid dream be street ed"
-    },
-    "carrier-info": {
-        "type": "Text",
-        "value": "Art when prove discuss medical blood"
-    },
-    "auto-program": {
-        "type": "Boolean",
-        "value": true
-    },
-    "type": "settings-broadcasting"
+  "id": "urn:ngsi-ld:settings-broadcasting:id:YWMD:14174205",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "1981-06-24T23:59:36Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "1978-03-16T10:29:14Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": "Probably turn reach not north answer. Course occur easy give concern. Research someone lawyer situation pro"
+  },
+  "name": {
+    "type": "Text",
+    "value": "Charge commercial development tough technology make often bit. Pick th"
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "Yes create vo"
+  },
+  "description": {
+    "type": "Text",
+    "value": "Structure smile nice goal. Pretty first here say sometimes."
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "What challenge myself business something outside. Half hear any all relationship "
+  },
+  "owner": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:settings-broadcasting:items:IYDV:67275654",
+      "urn:ngsi-ld:settings-broadcasting:items:NZOU:92414940"
+    ]
+  },
+  "seeAlso": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:settings-broadcasting:items:QQFK:04713049"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        20.587973,
+        69.82222
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "Tree set environm",
+      "addressLocality": "Miss home respond family start environmental population. Scientist mention compare north when personal. Defense successful",
+      "addressRegion": "Focus themselves outside provide card chair report. Machine art data guess summer se",
+      "addressCountry": "Main glass day expect move western. Win machine suddenly professor expect. Affect present cold president how. Responsibility nat",
+      "postalCode": "Tend political card visit. Up behavior federal fall million history not market.",
+      "postOfficeBoxNumber": "State partner door market wide yourself. Line development money buy check include likely serious. Know security stop field tend police.",
+      "streetNr": "Dream some now eye recognize democratic production. Plan need think relationship. Rather culture continue family everyone society writer nothing. Those rather role bad.",
+      "district": "Year mean TV huge whose. Consid"
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "Gun good deep them. Here you police tough public economic friend."
+  },
+  "rt": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.r.settings.broadcasting"
+    ]
+  },
+  "if": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.if.baseline",
+      "oic.if.rw"
+    ]
+  },
+  "antenna": {
+    "type": "Text",
+    "value": "The billion"
+  },
+  "supported-antennas": {
+    "type": "StructuredValue",
+    "value": [
+      "Scene money move that south beyond. Up candidate up test. Around imagine quite commercial minute."
+    ]
+  },
+  "location-info": {
+    "type": "Text",
+    "value": "Poor kid dream be street ed"
+  },
+  "carrier-info": {
+    "type": "Text",
+    "value": "Art when prove discuss medical blood"
+  },
+  "auto-program": {
+    "type": "Boolean",
+    "value": true
+  },
+  "type": "settings-broadcasting"
 }
