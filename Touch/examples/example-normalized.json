@@ -1,93 +1,93 @@
 {
-    "id": "urn:ngsi-ld:Touch:id:NIDZ:89728507",
-    "dateCreated": {
-        "type": "DateTime",
-        "value": "1971-08-23T11:21:33Z"
-    },
-    "dateModified": {
-        "type": "DateTime",
-        "value": "2008-10-09T07:54:17Z"
-    },
-    "source": {
-        "type": "Text",
-        "value": "Get similar note head free game. Ago if help blood. Year practice phone without still sport guess exist"
-    },
-    "name": {
-        "type": "Text",
-        "value": "Addr"
-    },
-    "alternateName": {
-        "type": "Text",
-        "value": "Dark fly describe when. Their stand draw expect TV star scienti"
-    },
-    "description": {
-        "type": "Text",
-        "value": "Opportunity financial on sit determine perform process. Tend huge interview before."
-    },
-    "dataProvider": {
-        "type": "Text",
-        "value": "Account relate structure anyone allow some time."
-    },
-    "owner": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:Touch:items:PRIP:81746251",
-            "urn:ngsi-ld:Touch:items:SXPR:59698179"
-        ]
-    },
-    "seeAlso": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:Touch:items:BMXR:44472001"
-        ]
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                25.6702675,
-                -113.845787
-            ]
-        }
-    },
-    "address": {
-        "type": "StructuredValue",
-        "value": {
-            "streetAddress": "Report another gas go. So school job rather.",
-            "addressLocality": "Fall color hard bill wind summer sit. Lawyer follow economic season least. Pressure morning either arm.",
-            "addressRegion": "Production despite very change range society. Country environment poor community we. Recent the least law",
-            "addressCountry": "Notice not bag building structure candidate military. Along let real detail change court",
-            "postalCode": "Sing end adult analysis serious field. Generation help somebody check beyond rule sometimes. Describe every under ",
-            "postOfficeBoxNumber": "Research father your kitchen audience if president. Father act system where voice two idea majority.",
-            "streetNr": "Course prevent organization Democrat believe. Loss once assume player visit. Service career campaign test beyond leader.",
-            "district": "Whatever expect notice answer"
-        }
-    },
-    "areaServed": {
-        "type": "Text",
-        "value": "Staff test exist difficult. Assume tough art meeti"
-    },
-    "rt": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.r.sensor.touch"
-        ]
-    },
+  "id": "urn:ngsi-ld:Touch:id:NIDZ:89728507",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "1971-08-23T11:21:33Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "2008-10-09T07:54:17Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": "Get similar note head free game. Ago if help blood. Year practice phone without still sport guess exist"
+  },
+  "name": {
+    "type": "Text",
+    "value": "Addr"
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "Dark fly describe when. Their stand draw expect TV star scienti"
+  },
+  "description": {
+    "type": "Text",
+    "value": "Opportunity financial on sit determine perform process. Tend huge interview before."
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Account relate structure anyone allow some time."
+  },
+  "owner": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:Touch:items:PRIP:81746251",
+      "urn:ngsi-ld:Touch:items:SXPR:59698179"
+    ]
+  },
+  "seeAlso": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:Touch:items:BMXR:44472001"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
     "value": {
-        "type": "Boolean",
-        "value": true
-    },
-    "n": {
-        "type": "Text",
-        "value": "Walk where hour mission ok final. Article new she recent enough"
-    },
-    "if": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.if.s",
-            "oic.if.baseline"
-        ]
-    },
-    "type": "Touch"
+      "type": "Point",
+      "coordinates": [
+        25.6702675,
+        -113.845787
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "Report another gas go. So school job rather.",
+      "addressLocality": "Fall color hard bill wind summer sit. Lawyer follow economic season least. Pressure morning either arm.",
+      "addressRegion": "Production despite very change range society. Country environment poor community we. Recent the least law",
+      "addressCountry": "Notice not bag building structure candidate military. Along let real detail change court",
+      "postalCode": "Sing end adult analysis serious field. Generation help somebody check beyond rule sometimes. Describe every under ",
+      "postOfficeBoxNumber": "Research father your kitchen audience if president. Father act system where voice two idea majority.",
+      "streetNr": "Course prevent organization Democrat believe. Loss once assume player visit. Service career campaign test beyond leader.",
+      "district": "Whatever expect notice answer"
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "Staff test exist difficult. Assume tough art meeti"
+  },
+  "rt": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.r.sensor.touch"
+    ]
+  },
+  "value": {
+    "type": "Boolean",
+    "value": true
+  },
+  "n": {
+    "type": "Text",
+    "value": "Walk where hour mission ok final. Article new she recent enough"
+  },
+  "if": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.if.s",
+      "oic.if.baseline"
+    ]
+  },
+  "type": "Touch"
 }
