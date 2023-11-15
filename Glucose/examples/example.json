@@ -1,51 +1,51 @@
 {
-    "id": "urn:ngsi-ld:Glucose:id:KXFS:45363637",
-    "dateCreated": "1996-05-23T15:17:56Z",
-    "dateModified": "2014-05-24T14:55:37Z",
-    "source": "Toward day push drug. Realize six guy. Skin follow make although ",
-    "name": "Stay often suffer memory simple conference man. Reality hour east happen ten.",
-    "alternateName": "Southern really money alone fast. Maybe gas maintain response worry surface. Summer opportunity recen",
-    "description": "Indeed free western thousand. Notice the not imagine must.",
-    "dataProvider": "Surface follow north shake common local point. Third m",
-    "owner": [
-        "urn:ngsi-ld:Glucose:items:HLVK:89940267",
-        "urn:ngsi-ld:Glucose:items:JNWF:86984313"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:Glucose:items:ZMBO:59836801"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            -44.276347,
-            -0.319588
-        ]
-    },
-    "address": {
-        "streetAddress": "Performance science modern give government that. Mission future president this",
-        "addressLocality": "Relationship information scene Mr training nearly yourself. Human something my then.",
-        "addressRegion": "Book you moment later entire small score pay. Occur know after.",
-        "addressCountry": "Only state point throughout. Wall improve reason carry do think man.",
-        "postalCode": "Although wrong bit disco",
-        "postOfficeBoxNumber": "City situation blue well. Natural within put article.",
-        "streetNr": "Operation cost particular message cost call behavior including. Rise month kind.",
-        "district": "Set interview list be note he whether. Enter during site own. Require worker grow live manage."
-    },
-    "areaServed": "Research total officer poor wall mouth sure. Garden report message writer late guess theory.",
-    "rt": [
-        "oic.r.glucose"
-    ],
-    "glucose": 722.9,
-    "units": "mmol/L",
-    "range": [
-        411.9,
-        444.5
-    ],
-    "step": 84.7,
-    "precision": 16.4,
-    "n": "Realize beg",
-    "if": [
-        "oic.if.s"
-    ],
-    "type": "Glucose"
+  "id": "urn:ngsi-ld:Glucose:id:KXFS:45363637",
+  "dateCreated": "1996-05-23T15:17:56Z",
+  "dateModified": "2014-05-24T14:55:37Z",
+  "source": "Toward day push drug. Realize six guy. Skin follow make although ",
+  "name": "Stay often suffer memory simple conference man. Reality hour east happen ten.",
+  "alternateName": "Southern really money alone fast. Maybe gas maintain response worry surface. Summer opportunity recen",
+  "description": "Indeed free western thousand. Notice the not imagine must.",
+  "dataProvider": "Surface follow north shake common local point. Third m",
+  "owner": [
+    "urn:ngsi-ld:Glucose:items:HLVK:89940267",
+    "urn:ngsi-ld:Glucose:items:JNWF:86984313"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:Glucose:items:ZMBO:59836801"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -44.276347,
+      -0.319588
+    ]
+  },
+  "address": {
+    "streetAddress": "Performance science modern give government that. Mission future president this",
+    "addressLocality": "Relationship information scene Mr training nearly yourself. Human something my then.",
+    "addressRegion": "Book you moment later entire small score pay. Occur know after.",
+    "addressCountry": "Only state point throughout. Wall improve reason carry do think man.",
+    "postalCode": "Although wrong bit disco",
+    "postOfficeBoxNumber": "City situation blue well. Natural within put article.",
+    "streetNr": "Operation cost particular message cost call behavior including. Rise month kind.",
+    "district": "Set interview list be note he whether. Enter during site own. Require worker grow live manage."
+  },
+  "areaServed": "Research total officer poor wall mouth sure. Garden report message writer late guess theory.",
+  "rt": [
+    "oic.r.glucose"
+  ],
+  "glucose": 722.9,
+  "units": "mmol/L",
+  "range": [
+    411.9,
+    444.5
+  ],
+  "step": 84.7,
+  "precision": 16.4,
+  "n": "Realize beg",
+  "if": [
+    "oic.if.s"
+  ],
+  "type": "Glucose"
 }
