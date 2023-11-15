@@ -1,93 +1,93 @@
 {
-    "id": "urn:ngsi-ld:Lock:id:RPFO:44012131",
-    "dateCreated": {
-        "type": "DateTime",
-        "value": "2017-06-11T15:37:09Z"
-    },
-    "dateModified": {
-        "type": "DateTime",
-        "value": "1980-01-15T22:40:11Z"
-    },
-    "source": {
-        "type": "Text",
-        "value": "Senior agreement against environmental investment last simple. Him toward civil skill not per."
-    },
-    "name": {
-        "type": "Text",
-        "value": "Prevent administration state worker. Act thousand main consumer special more."
-    },
-    "alternateName": {
-        "type": "Text",
-        "value": "Sen"
-    },
-    "description": {
-        "type": "Text",
-        "value": "Share risk state. Lot lose become. Certainly professional word bar right order."
-    },
-    "dataProvider": {
-        "type": "Text",
-        "value": "Move four nation explain free. Already pull half good head possible relate."
-    },
-    "owner": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:Lock:items:FJTK:10760574",
-            "urn:ngsi-ld:Lock:items:FDDK:94705776"
-        ]
-    },
-    "seeAlso": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:Lock:items:BEUC:70787652"
-        ]
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                79.6651355,
-                156.419772
-            ]
-        }
-    },
-    "address": {
-        "type": "StructuredValue",
-        "value": {
-            "streetAddress": "Produce young white who.",
-            "addressLocality": "Return or exist but film improve. Without teach profes",
-            "addressRegion": "Drug right left",
-            "addressCountry": "Strong world treat also poor. Ball buy magazine thank simply",
-            "postalCode": "Ability heavy blood manage. Can different nor perhaps list. Trip push fast attention help seat audience.",
-            "postOfficeBoxNumber": "Himself list boy. Bette",
-            "streetNr": "Real those expect share present structure detail. Future decade notice stock.",
-            "district": "Report measure trade under memory consider. Worry "
-        }
-    },
-    "areaServed": {
-        "type": "Text",
-        "value": "Huge common unit lose industry she. Air Congress my point start power author."
-    },
-    "rt": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.r.lock.status"
-        ]
-    },
-    "lockState": {
-        "type": "Text",
-        "value": "Unlocked"
-    },
-    "n": {
-        "type": "Text",
-        "value": "Hard hold radio product"
-    },
-    "if": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.if.a",
-            "oic.if.baseline"
-        ]
-    },
-    "type": "Lock"
+  "id": "urn:ngsi-ld:Lock:id:RPFO:44012131",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "2017-06-11T15:37:09Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "1980-01-15T22:40:11Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": "Senior agreement against environmental investment last simple. Him toward civil skill not per."
+  },
+  "name": {
+    "type": "Text",
+    "value": "Prevent administration state worker. Act thousand main consumer special more."
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "Sen"
+  },
+  "description": {
+    "type": "Text",
+    "value": "Share risk state. Lot lose become. Certainly professional word bar right order."
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Move four nation explain free. Already pull half good head possible relate."
+  },
+  "owner": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:Lock:items:FJTK:10760574",
+      "urn:ngsi-ld:Lock:items:FDDK:94705776"
+    ]
+  },
+  "seeAlso": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:Lock:items:BEUC:70787652"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        79.6651355,
+        156.419772
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "Produce young white who.",
+      "addressLocality": "Return or exist but film improve. Without teach profes",
+      "addressRegion": "Drug right left",
+      "addressCountry": "Strong world treat also poor. Ball buy magazine thank simply",
+      "postalCode": "Ability heavy blood manage. Can different nor perhaps list. Trip push fast attention help seat audience.",
+      "postOfficeBoxNumber": "Himself list boy. Bette",
+      "streetNr": "Real those expect share present structure detail. Future decade notice stock.",
+      "district": "Report measure trade under memory consider. Worry "
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "Huge common unit lose industry she. Air Congress my point start power author."
+  },
+  "rt": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.r.lock.status"
+    ]
+  },
+  "lockState": {
+    "type": "Text",
+    "value": "Unlocked"
+  },
+  "n": {
+    "type": "Text",
+    "value": "Hard hold radio product"
+  },
+  "if": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.if.a",
+      "oic.if.baseline"
+    ]
+  },
+  "type": "Lock"
 }
