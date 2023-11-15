@@ -1,113 +1,113 @@
 {
-    "id": "urn:ngsi-ld:DRLC:id:GQEJ:48764759",
-    "dateCreated": {
-        "type": "DateTime",
-        "value": "1979-07-06T09:36:23Z"
-    },
-    "dateModified": {
-        "type": "DateTime",
-        "value": "2021-06-07T14:46:20Z"
-    },
-    "source": {
-        "type": "Text",
-        "value": "Son would mouth relate own chair better available. Line beyond its particularly tree whom."
-    },
-    "name": {
-        "type": "Text",
-        "value": "Tend employee source nature add rest. Report size personal partner stock four. Region as true develop sound central."
-    },
-    "alternateName": {
-        "type": "Text",
-        "value": "Before year themselves your majority feeling fact. Natural sport music white. Na"
-    },
-    "description": {
-        "type": "Text",
-        "value": "Wonder employee attorney quickly candidate change although bag."
-    },
-    "dataProvider": {
-        "type": "Text",
-        "value": "Study modern miss dog Democrat quickly. Often late produce you true soldier. Food break onto friend."
-    },
-    "owner": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:DRLC:items:KNBD:33041352",
-            "urn:ngsi-ld:DRLC:items:DUGT:23098910"
-        ]
-    },
-    "seeAlso": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:DRLC:items:AGFW:91615109"
-        ]
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                -56.7421445,
-                77.286609
-            ]
-        }
-    },
-    "address": {
-        "type": "StructuredValue",
-        "value": {
-            "streetAddress": "Vie",
-            "addressLocality": "Others record hospital. Grow rule stuff truth college. Whom around put suddenly garden.",
-            "addressRegion": "Others kind company likely. Tonight",
-            "addressCountry": "Real leader bad school name care several. Good explain grow water plant perform resource.",
-            "postalCode": "Stock ball organization recognize civil development. Her then nothing increase I reduce industr",
-            "postOfficeBoxNumber": "Those traditional page a al",
-            "streetNr": "Wear individual about add senior woman.",
-            "district": "Best budget power them evi"
-        }
-    },
-    "areaServed": {
-        "type": "Text",
-        "value": "Fire happen nothing support suffer which parent. Republican total policy head Mrs debate onto."
-    },
-    "rt": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.r.energy.drlc"
-        ]
-    },
-    "start": {
-        "type": "DateTime",
-        "value": "1979-06-04T08:47:18Z"
-    },
-    "duration": {
-        "type": "Number",
-        "value": 864
-    },
-    "override": {
-        "type": "Boolean",
-        "value": false
-    },
-    "DRType": {
-        "type": "Number",
-        "value": 864
-    },
-    "drlevel": {
-        "type": "Number",
-        "value": 3
-    },
-    "mandate": {
-        "type": "Boolean",
-        "value": false
-    },
-    "n": {
-        "type": "Text",
-        "value": "Whole magazine truth stop whose."
-    },
-    "if": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.if.baseline",
-            "oic.if.a"
-        ]
-    },
-    "type": "DRLC"
+  "id": "urn:ngsi-ld:DRLC:id:GQEJ:48764759",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "1979-07-06T09:36:23Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "2021-06-07T14:46:20Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": "Son would mouth relate own chair better available. Line beyond its particularly tree whom."
+  },
+  "name": {
+    "type": "Text",
+    "value": "Tend employee source nature add rest. Report size personal partner stock four. Region as true develop sound central."
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "Before year themselves your majority feeling fact. Natural sport music white. Na"
+  },
+  "description": {
+    "type": "Text",
+    "value": "Wonder employee attorney quickly candidate change although bag."
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Study modern miss dog Democrat quickly. Often late produce you true soldier. Food break onto friend."
+  },
+  "owner": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:DRLC:items:KNBD:33041352",
+      "urn:ngsi-ld:DRLC:items:DUGT:23098910"
+    ]
+  },
+  "seeAlso": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:DRLC:items:AGFW:91615109"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -56.7421445,
+        77.286609
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "Vie",
+      "addressLocality": "Others record hospital. Grow rule stuff truth college. Whom around put suddenly garden.",
+      "addressRegion": "Others kind company likely. Tonight",
+      "addressCountry": "Real leader bad school name care several. Good explain grow water plant perform resource.",
+      "postalCode": "Stock ball organization recognize civil development. Her then nothing increase I reduce industr",
+      "postOfficeBoxNumber": "Those traditional page a al",
+      "streetNr": "Wear individual about add senior woman.",
+      "district": "Best budget power them evi"
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "Fire happen nothing support suffer which parent. Republican total policy head Mrs debate onto."
+  },
+  "rt": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.r.energy.drlc"
+    ]
+  },
+  "start": {
+    "type": "DateTime",
+    "value": "1979-06-04T08:47:18Z"
+  },
+  "duration": {
+    "type": "Number",
+    "value": 864
+  },
+  "override": {
+    "type": "Boolean",
+    "value": false
+  },
+  "DRType": {
+    "type": "Number",
+    "value": 864
+  },
+  "drlevel": {
+    "type": "Number",
+    "value": 3
+  },
+  "mandate": {
+    "type": "Boolean",
+    "value": false
+  },
+  "n": {
+    "type": "Text",
+    "value": "Whole magazine truth stop whose."
+  },
+  "if": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.if.baseline",
+      "oic.if.a"
+    ]
+  },
+  "type": "DRLC"
 }
