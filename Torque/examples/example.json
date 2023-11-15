@@ -1,49 +1,49 @@
 {
-    "id": "urn:ngsi-ld:Torque:id:GOML:64303921",
-    "dateCreated": "2007-03-08T15:05:03Z",
-    "dateModified": "1980-04-19T10:28:10Z",
-    "source": "Work chance image quite there many true follow.",
-    "name": "Along chance either six success on. At be than always different American address. Former claim chance prevent",
-    "alternateName": "Off question source. Wrong section town deal movemen",
-    "description": "Now four management energy stay significant his. Artist ",
-    "dataProvider": "Indi",
-    "owner": [
-        "urn:ngsi-ld:Torque:items:PYEA:60976701",
-        "urn:ngsi-ld:Torque:items:GMZY:09925185"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:Torque:items:VWTJ:71097951"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            -55.8794045,
-            28.115695
-        ]
-    },
-    "address": {
-        "streetAddress": "Million size country site. He couple ground place what top.",
-        "addressLocality": "Effo",
-        "addressRegion": "Recognize information figure box international not type. Indeed between similar safe. Social issue indicate. Try while reveal bad audience grow ahead.",
-        "addressCountry": "Act window standard audience. Debat",
-        "postalCode": "Cost both general where. Agreement decade friend which.",
-        "postOfficeBoxNumber": "Player contain year bill ok choose today. Source firm drug senior.",
-        "streetNr": "Information animal car after back available. Federal indicate unit opportunity fear great.",
-        "district": "Plan PM more heavy "
-    },
-    "areaServed": "Painting child reflect up control instead company. Futur",
-    "torque": 285.9,
-    "rt": [
-        "oic.r.torque"
-    ],
-    "n": "Interview carry build impr",
-    "if": [
-        "oic.if.baseline"
-    ],
-    "range": [
-        421.9,
-        523.8
-    ],
-    "step": 857.2,
-    "type": "Torque"
+  "id": "urn:ngsi-ld:Torque:id:GOML:64303921",
+  "dateCreated": "2007-03-08T15:05:03Z",
+  "dateModified": "1980-04-19T10:28:10Z",
+  "source": "Work chance image quite there many true follow.",
+  "name": "Along chance either six success on. At be than always different American address. Former claim chance prevent",
+  "alternateName": "Off question source. Wrong section town deal movemen",
+  "description": "Now four management energy stay significant his. Artist ",
+  "dataProvider": "Indi",
+  "owner": [
+    "urn:ngsi-ld:Torque:items:PYEA:60976701",
+    "urn:ngsi-ld:Torque:items:GMZY:09925185"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:Torque:items:VWTJ:71097951"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -55.8794045,
+      28.115695
+    ]
+  },
+  "address": {
+    "streetAddress": "Million size country site. He couple ground place what top.",
+    "addressLocality": "Effo",
+    "addressRegion": "Recognize information figure box international not type. Indeed between similar safe. Social issue indicate. Try while reveal bad audience grow ahead.",
+    "addressCountry": "Act window standard audience. Debat",
+    "postalCode": "Cost both general where. Agreement decade friend which.",
+    "postOfficeBoxNumber": "Player contain year bill ok choose today. Source firm drug senior.",
+    "streetNr": "Information animal car after back available. Federal indicate unit opportunity fear great.",
+    "district": "Plan PM more heavy "
+  },
+  "areaServed": "Painting child reflect up control instead company. Futur",
+  "torque": 285.9,
+  "rt": [
+    "oic.r.torque"
+  ],
+  "n": "Interview carry build impr",
+  "if": [
+    "oic.if.baseline"
+  ],
+  "range": [
+    421.9,
+    523.8
+  ],
+  "step": 857.2,
+  "type": "Torque"
 }
