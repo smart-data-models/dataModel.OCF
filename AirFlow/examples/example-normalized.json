@@ -1,118 +1,118 @@
 {
-    "id": "urn:ngsi-ld:AirFlow:id:QBYQ:46486922",
-    "dateCreated": {
-        "type": "DateTime",
-        "value": "2001-07-15T01:59:58Z"
-    },
-    "dateModified": {
-        "type": "DateTime",
-        "value": "1999-01-10T11:13:04Z"
-    },
-    "source": {
-        "type": "Text",
-        "value": "Later body goal nor. Ci"
-    },
-    "name": {
-        "type": "Text",
-        "value": "Particular investment once team. Back finish water participant shake."
-    },
-    "alternateName": {
-        "type": "Text",
-        "value": "Itself key approach space defense development attack quite. Write offer tough. Every must particularly page would professor many."
-    },
-    "description": {
-        "type": "Text",
-        "value": "Challenge good live even sense black. Play site stand economy herself happen."
-    },
-    "dataProvider": {
-        "type": "Text",
-        "value": "Difference perform describe forward participant great. Less certain moment everyone college."
-    },
-    "owner": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:AirFlow:items:SRPE:15875448",
-            "urn:ngsi-ld:AirFlow:items:JHQL:37977670"
-        ]
-    },
-    "seeAlso": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:AirFlow:items:XFSX:59784474"
-        ]
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                65.785205,
-                -176.72728
-            ]
-        }
-    },
-    "address": {
-        "type": "StructuredValue",
-        "value": {
-            "streetAddress": "Teacher after shoulder president state center. Hand happy unit catch charge team. Financial certain exactly current sou",
-            "addressLocality": "Section think part easy argue about com",
-            "addressRegion": "Free face your government field. Herself camera career alone. Any yard next spring everybody hope figure.",
-            "addressCountry": "Manage field d",
-            "postalCode": "Far fill experience maybe. Democratic power free colle",
-            "postOfficeBoxNumber": "Play into understand population. Area huge oil should.",
-            "streetNr": "Try their real man term side interesting. Eat according reason similar summer production force.",
-            "district": "Event big toward age nature million. Newspaper plan truth seat. Three left natural continue."
-        }
-    },
-    "areaServed": {
-        "type": "Text",
-        "value": "Around claim western write window produce sit. Debate century e"
-    },
-    "rt": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.r.airflow"
-        ]
-    },
-    "speed": {
-        "type": "Number",
-        "value": 864
-    },
-    "direction": {
-        "type": "Text",
-        "value": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair."
-    },
-    "automode": {
-        "type": "Text",
-        "value": "On"
-    },
-    "supporteddirections": {
-        "type": "StructuredValue",
-        "value": [
-            "Line beyond its particularly tree whom. Kind miss artist truth trouble behavior style."
-        ]
-    },
-    "n": {
-        "type": "Text",
-        "value": "Partner stock four. Region as true develop sound centr"
-    },
-    "range": {
-        "type": "StructuredValue",
-        "value": [
-            864,
-            864
-        ]
-    },
-    "step": {
-        "type": "Number",
-        "value": 864
-    },
-    "if": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.if.baseline",
-            "oic.if.a"
-        ]
-    },
-    "type": "AirFlow"
+  "id": "urn:ngsi-ld:AirFlow:id:QBYQ:46486922",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "2001-07-15T01:59:58Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "1999-01-10T11:13:04Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": "Later body goal nor. Ci"
+  },
+  "name": {
+    "type": "Text",
+    "value": "Particular investment once team. Back finish water participant shake."
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "Itself key approach space defense development attack quite. Write offer tough. Every must particularly page would professor many."
+  },
+  "description": {
+    "type": "Text",
+    "value": "Challenge good live even sense black. Play site stand economy herself happen."
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Difference perform describe forward participant great. Less certain moment everyone college."
+  },
+  "owner": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:AirFlow:items:SRPE:15875448",
+      "urn:ngsi-ld:AirFlow:items:JHQL:37977670"
+    ]
+  },
+  "seeAlso": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:AirFlow:items:XFSX:59784474"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        65.785205,
+        -176.72728
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "Teacher after shoulder president state center. Hand happy unit catch charge team. Financial certain exactly current sou",
+      "addressLocality": "Section think part easy argue about com",
+      "addressRegion": "Free face your government field. Herself camera career alone. Any yard next spring everybody hope figure.",
+      "addressCountry": "Manage field d",
+      "postalCode": "Far fill experience maybe. Democratic power free colle",
+      "postOfficeBoxNumber": "Play into understand population. Area huge oil should.",
+      "streetNr": "Try their real man term side interesting. Eat according reason similar summer production force.",
+      "district": "Event big toward age nature million. Newspaper plan truth seat. Three left natural continue."
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "Around claim western write window produce sit. Debate century e"
+  },
+  "rt": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.r.airflow"
+    ]
+  },
+  "speed": {
+    "type": "Number",
+    "value": 864
+  },
+  "direction": {
+    "type": "Text",
+    "value": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair."
+  },
+  "automode": {
+    "type": "Text",
+    "value": "On"
+  },
+  "supporteddirections": {
+    "type": "StructuredValue",
+    "value": [
+      "Line beyond its particularly tree whom. Kind miss artist truth trouble behavior style."
+    ]
+  },
+  "n": {
+    "type": "Text",
+    "value": "Partner stock four. Region as true develop sound centr"
+  },
+  "range": {
+    "type": "StructuredValue",
+    "value": [
+      864,
+      864
+    ]
+  },
+  "step": {
+    "type": "Number",
+    "value": 864
+  },
+  "if": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.if.baseline",
+      "oic.if.a"
+    ]
+  },
+  "type": "AirFlow"
 }
