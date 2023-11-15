@@ -1,51 +1,51 @@
 {
-    "id": "urn:ngsi-ld:AirQuality:id:GQEJ:48764759",
-    "dateCreated": "1979-07-06T09:36:23Z",
-    "dateModified": "2021-06-07T14:46:20Z",
-    "source": "Son would mouth relate own chair better available. Line beyond its particularly tree whom.",
-    "name": "Tend employee source nature add rest. Report size personal partner stock four. Region as true develop sound central.",
-    "alternateName": "",
-    "description": "Wonder employee attorney quickly candidate change although bag.",
-    "dataProvider": "Study modern miss dog Democrat quickly. Often late produce you true soldier. Food break onto friend.",
-    "owner": [
-        "urn:ngsi-ld:AirQuality:items:KNBD:33041352",
-        "urn:ngsi-ld:AirQuality:items:DUGT:23098910"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:AirQuality:items:AGFW:91615109"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            -56.7421445,
-            77.286609
-        ]
-    },
-    "address": {
-        "streetAddress": "View age international big. Attorney author feeling job article.",
-        "addressLocality": "Others record hospital. Grow rule stuff truth college. Whom around put suddenly garden.",
-        "addressRegion": "Others kind company likely. Tonight themselves true power home price.",
-        "addressCountry": "Real leader bad school name care several. Good explain grow water plant perform resource.",
-        "postalCode": "S",
-        "postOfficeBoxNumber": "Those traditional page a although for study. Speak themselves speech. Nature white without study candidate.",
-        "streetNr": "Wear individual about add senior woman.",
-        "district": "Best budget power them evidence"
-    },
-    "areaServed": "Fire",
-    "rt": [
-        "oic.r.airquality"
-    ],
-    "contaminanttype": "CO",
-    "valuetype": "Qualitative",
-    "contaminantvalue": 864,
-    "n": "American whole magazine truth stop whose. On tradition",
-    "range": [
-        864,
-        864
-    ],
-    "if": [
-        "oic.if.baseline",
-        "oic.if.s"
-    ],
-    "type": "AirQuality"
+  "id": "urn:ngsi-ld:AirQuality:id:GQEJ:48764759",
+  "dateCreated": "1979-07-06T09:36:23Z",
+  "dateModified": "2021-06-07T14:46:20Z",
+  "source": "Son would mouth relate own chair better available. Line beyond its particularly tree whom.",
+  "name": "Tend employee source nature add rest. Report size personal partner stock four. Region as true develop sound central.",
+  "alternateName": "",
+  "description": "Wonder employee attorney quickly candidate change although bag.",
+  "dataProvider": "Study modern miss dog Democrat quickly. Often late produce you true soldier. Food break onto friend.",
+  "owner": [
+    "urn:ngsi-ld:AirQuality:items:KNBD:33041352",
+    "urn:ngsi-ld:AirQuality:items:DUGT:23098910"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:AirQuality:items:AGFW:91615109"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -56.7421445,
+      77.286609
+    ]
+  },
+  "address": {
+    "streetAddress": "View age international big. Attorney author feeling job article.",
+    "addressLocality": "Others record hospital. Grow rule stuff truth college. Whom around put suddenly garden.",
+    "addressRegion": "Others kind company likely. Tonight themselves true power home price.",
+    "addressCountry": "Real leader bad school name care several. Good explain grow water plant perform resource.",
+    "postalCode": "S",
+    "postOfficeBoxNumber": "Those traditional page a although for study. Speak themselves speech. Nature white without study candidate.",
+    "streetNr": "Wear individual about add senior woman.",
+    "district": "Best budget power them evidence"
+  },
+  "areaServed": "Fire",
+  "rt": [
+    "oic.r.airquality"
+  ],
+  "contaminanttype": "CO",
+  "valuetype": "Qualitative",
+  "contaminantvalue": 864,
+  "n": "American whole magazine truth stop whose. On tradition",
+  "range": [
+    864,
+    864
+  ],
+  "if": [
+    "oic.if.baseline",
+    "oic.if.s"
+  ],
+  "type": "AirQuality"
 }
