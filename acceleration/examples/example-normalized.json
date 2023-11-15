@@ -1,108 +1,108 @@
 {
-    "id": "urn:ngsi-ld:acceleration:id:PTIV:66263429",
-    "dateCreated": {
-        "type": "DateTime",
-        "value": "1992-09-18T15:41:47Z"
-    },
-    "dateModified": {
-        "type": "DateTime",
-        "value": "1993-03-23T07:22:41Z"
-    },
-    "source": {
-        "type": "Text",
-        "value": "Mouth gas court skin street such. Full your senior design."
-    },
-    "name": {
-        "type": "Text",
-        "value": "Country be firm ground list. Drive top section test them bank guess. Sometimes fo"
-    },
-    "alternateName": {
-        "type": "Text",
-        "value": "Wife ground south arrive season. Career yard choice."
-    },
-    "description": {
-        "type": "Text",
-        "value": "Hot happy campaign recognize our nature say. Since answer these look "
-    },
-    "dataProvider": {
-        "type": "Text",
-        "value": "Happen movie order much. Stand night take action assume."
-    },
-    "owner": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:acceleration:items:FHKM:06950447",
-            "urn:ngsi-ld:acceleration:items:PMQF:69472898"
-        ]
-    },
-    "seeAlso": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:acceleration:items:BIAJ:36620039"
-        ]
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                46.791425,
-                130.647646
-            ]
-        }
-    },
-    "address": {
-        "type": "StructuredValue",
-        "value": {
-            "streetAddress": "Assume book we term former sort role main. By pay store peace situation say response age. Among window together girl establish send",
-            "addressLocality": "Edge lay the hear ",
-            "addressRegion": "Accept let own you machine dark population. Day thing hundred everybody plant part. Least car box teacher sense moth",
-            "addressCountry": "When prepare ok take degree story pay. Image quite state actually. Ask like front condition value where.",
-            "postalCode": "Themselves build machine operation level can often choice. Serve design thank.",
-            "postOfficeBoxNumber": "Who east cell and. Hour success family pres",
-            "streetNr": "Course ball art two partner. Enough score court yard property win. Through writer cup ",
-            "district": "Poor yourself business simple. Turn"
-        }
-    },
-    "areaServed": {
-        "type": "Text",
-        "value": "Toward southern site same choose blood. Use necessary "
-    },
-    "rt": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.r.sensor.acceleration"
-        ]
-    },
-    "acceleration": {
-        "type": "Number",
-        "value": 253.7
-    },
-    "n": {
-        "type": "Text",
-        "value": "Throughout return commercial plac"
-    },
-    "range": {
-        "type": "StructuredValue",
-        "value": [
-            192.1,
-            532.9
-        ]
-    },
-    "step": {
-        "type": "Number",
-        "value": 986.6
-    },
-    "precision": {
-        "type": "Number",
-        "value": 223.4
-    },
-    "if": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.if.s",
-            "oic.if.baseline"
-        ]
-    },
-    "type": "acceleration"
+  "id": "urn:ngsi-ld:acceleration:id:PTIV:66263429",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "1992-09-18T15:41:47Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "1993-03-23T07:22:41Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": "Mouth gas court skin street such. Full your senior design."
+  },
+  "name": {
+    "type": "Text",
+    "value": "Country be firm ground list. Drive top section test them bank guess. Sometimes fo"
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "Wife ground south arrive season. Career yard choice."
+  },
+  "description": {
+    "type": "Text",
+    "value": "Hot happy campaign recognize our nature say. Since answer these look "
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Happen movie order much. Stand night take action assume."
+  },
+  "owner": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:acceleration:items:FHKM:06950447",
+      "urn:ngsi-ld:acceleration:items:PMQF:69472898"
+    ]
+  },
+  "seeAlso": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:acceleration:items:BIAJ:36620039"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        46.791425,
+        130.647646
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "Assume book we term former sort role main. By pay store peace situation say response age. Among window together girl establish send",
+      "addressLocality": "Edge lay the hear ",
+      "addressRegion": "Accept let own you machine dark population. Day thing hundred everybody plant part. Least car box teacher sense moth",
+      "addressCountry": "When prepare ok take degree story pay. Image quite state actually. Ask like front condition value where.",
+      "postalCode": "Themselves build machine operation level can often choice. Serve design thank.",
+      "postOfficeBoxNumber": "Who east cell and. Hour success family pres",
+      "streetNr": "Course ball art two partner. Enough score court yard property win. Through writer cup ",
+      "district": "Poor yourself business simple. Turn"
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "Toward southern site same choose blood. Use necessary "
+  },
+  "rt": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.r.sensor.acceleration"
+    ]
+  },
+  "acceleration": {
+    "type": "Number",
+    "value": 253.7
+  },
+  "n": {
+    "type": "Text",
+    "value": "Throughout return commercial plac"
+  },
+  "range": {
+    "type": "StructuredValue",
+    "value": [
+      192.1,
+      532.9
+    ]
+  },
+  "step": {
+    "type": "Number",
+    "value": 986.6
+  },
+  "precision": {
+    "type": "Number",
+    "value": 223.4
+  },
+  "if": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.if.s",
+      "oic.if.baseline"
+    ]
+  },
+  "type": "acceleration"
 }
