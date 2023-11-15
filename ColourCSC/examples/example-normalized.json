@@ -1,100 +1,100 @@
 {
-    "id": "urn:ngsi-ld:ColourCSC:id:ZBCR:36913254",
-    "dateCreated": {
-        "type": "DateTime",
-        "value": "1977-07-31T23:35:46Z"
-    },
-    "dateModified": {
-        "type": "DateTime",
-        "value": "2021-02-10T09:29:37Z"
-    },
-    "source": {
-        "type": "Text",
-        "value": "Under how many"
-    },
-    "name": {
-        "type": "Text",
-        "value": "War none culture draw eight nation rise."
-    },
-    "alternateName": {
-        "type": "Text",
-        "value": "Method wear whatever example. Wear work science change n"
-    },
-    "description": {
-        "type": "Text",
-        "value": "Life sense high consumer nearly keep wind. Can else down purpose. Good nature when after."
-    },
-    "dataProvider": {
-        "type": "Text",
-        "value": "Executive focus really. Simply wall worry call voice."
-    },
-    "owner": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:ColourCSC:items:MXSJ:82773762",
-            "urn:ngsi-ld:ColourCSC:items:RQWT:27386818"
-        ]
-    },
-    "seeAlso": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:ColourCSC:items:KKHC:89261548"
-        ]
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                -14.435297,
-                -92.521246
-            ]
-        }
-    },
-    "address": {
-        "type": "StructuredValue",
-        "value": {
-            "streetAddress": "Reach down attorney six central consider among across. Yet per administration other community. Stay a here rate.",
-            "addressLocality": "Speech serious myself appear throughout those. Measure century food card. Southern no full range rate compare.",
-            "addressRegion": "Likely expert before tell apply within. Affect brother less minute eat ever hand. Leader hair example north each early. Decide prog",
-            "addressCountry": "Business plan determine sport work expect. Director fear subject here him way create.",
-            "postalCode": "Executive other debate investment yourself before. Then deal today study.",
-            "postOfficeBoxNumber": "Policy finish unit offer politics feeling during try. Whose southern every girl story sometimes same.",
-            "streetNr": "Control so economy energy movie happy. Station third gun ok bar local morning something. Structure bad safe example se",
-            "district": "Approach off plant. Describe good goal actually image near against child."
-        }
-    },
-    "areaServed": {
-        "type": "Text",
-        "value": "Decade your act strong. Art factor fast employee."
-    },
-    "rt": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.r.colour.csc"
-        ]
-    },
-    "csc": {
-        "type": "StructuredValue",
-        "value": [
-            0.5,
-            0.3
-        ]
-    },
-    "n": {
-        "type": "Text",
-        "value": "Hot support west young. Suc"
-    },
-    "precision": {
-        "type": "Number",
-        "value": 18.2
-    },
-    "if": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.if.a",
-            "oic.if.baseline"
-        ]
-    },
-    "type": "ColourCSC"
+  "id": "urn:ngsi-ld:ColourCSC:id:ZBCR:36913254",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "1977-07-31T23:35:46Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "2021-02-10T09:29:37Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": "Under how many"
+  },
+  "name": {
+    "type": "Text",
+    "value": "War none culture draw eight nation rise."
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "Method wear whatever example. Wear work science change n"
+  },
+  "description": {
+    "type": "Text",
+    "value": "Life sense high consumer nearly keep wind. Can else down purpose. Good nature when after."
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Executive focus really. Simply wall worry call voice."
+  },
+  "owner": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:ColourCSC:items:MXSJ:82773762",
+      "urn:ngsi-ld:ColourCSC:items:RQWT:27386818"
+    ]
+  },
+  "seeAlso": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:ColourCSC:items:KKHC:89261548"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -14.435297,
+        -92.521246
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "Reach down attorney six central consider among across. Yet per administration other community. Stay a here rate.",
+      "addressLocality": "Speech serious myself appear throughout those. Measure century food card. Southern no full range rate compare.",
+      "addressRegion": "Likely expert before tell apply within. Affect brother less minute eat ever hand. Leader hair example north each early. Decide prog",
+      "addressCountry": "Business plan determine sport work expect. Director fear subject here him way create.",
+      "postalCode": "Executive other debate investment yourself before. Then deal today study.",
+      "postOfficeBoxNumber": "Policy finish unit offer politics feeling during try. Whose southern every girl story sometimes same.",
+      "streetNr": "Control so economy energy movie happy. Station third gun ok bar local morning something. Structure bad safe example se",
+      "district": "Approach off plant. Describe good goal actually image near against child."
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "Decade your act strong. Art factor fast employee."
+  },
+  "rt": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.r.colour.csc"
+    ]
+  },
+  "csc": {
+    "type": "StructuredValue",
+    "value": [
+      0.5,
+      0.3
+    ]
+  },
+  "n": {
+    "type": "Text",
+    "value": "Hot support west young. Suc"
+  },
+  "precision": {
+    "type": "Number",
+    "value": 18.2
+  },
+  "if": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.if.a",
+      "oic.if.baseline"
+    ]
+  },
+  "type": "ColourCSC"
 }
