@@ -1,108 +1,108 @@
 {
-    "id": "urn:ngsi-ld:atmosphericPressure:id:HZZV:82467762",
-    "dateCreated": {
-        "type": "DateTime",
-        "value": "1997-08-06T08:52:44Z"
-    },
-    "dateModified": {
-        "type": "DateTime",
-        "value": "1996-11-11T23:42:34Z"
-    },
-    "source": {
-        "type": "Text",
-        "value": "Strategy some state thus most pretty. Dog crime bag wrong during. Action feeling see they mission science success position."
-    },
-    "name": {
-        "type": "Text",
-        "value": "West sell meet artist window within bring protect. Such team contain. Fill support suddenly who."
-    },
-    "alternateName": {
-        "type": "Text",
-        "value": "Artist wind realize. Matter ahead close general. Through likely some continue lead."
-    },
-    "description": {
-        "type": "Text",
-        "value": "Wall she enough step theory. Good arriv"
-    },
-    "dataProvider": {
-        "type": "Text",
-        "value": "Through join discussion near admit must other. Attack yard on figure either. Of begin international some."
-    },
-    "owner": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:atmosphericPressure:items:AKQX:40798143",
-            "urn:ngsi-ld:atmosphericPressure:items:IICX:50031645"
-        ]
-    },
-    "seeAlso": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:atmosphericPressure:items:AERV:66370194"
-        ]
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                -85.9629705,
-                -58.365214
-            ]
-        }
-    },
-    "address": {
-        "type": "StructuredValue",
-        "value": {
-            "streetAddress": "Along chair evidence early. Effect marriage ch",
-            "addressLocality": "Sam",
-            "addressRegion": "Thank sit agree manager PM customer. Evidence exist thus office individual one collection base.",
-            "addressCountry": "Fact mention hundred property choose involve small. Term throw then whether home compare. Store assume art long fast table. Yet help pretty campaign.",
-            "postalCode": "Agree exactly far coach. Teacher include really positive long game pla",
-            "postOfficeBoxNumber": "Former lose part model reflect apply final all. Task yes rise teach reason history hard.",
-            "streetNr": "In could mean well. Democratic media place far let ",
-            "district": "Federal name for baby senior. Perform authority black financial allow care direction "
-        }
-    },
-    "areaServed": {
-        "type": "Text",
-        "value": "Throw whose will whose never stop development agreement."
-    },
-    "rt": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.r.sensor.atmosphericpressure"
-        ]
-    },
-    "atmosphericPressure": {
-        "type": "Number",
-        "value": 706.0
-    },
-    "n": {
-        "type": "Text",
-        "value": "Care avoid inside account protect spend couple. Read"
-    },
-    "precision": {
-        "type": "Number",
-        "value": 370.9
-    },
-    "range": {
-        "type": "StructuredValue",
-        "value": [
-            767.4,
-            71.3
-        ]
-    },
-    "step": {
-        "type": "Number",
-        "value": 371.2
-    },
-    "if": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.if.baseline",
-            "oic.if.s"
-        ]
-    },
-    "type": "atmosphericPressure"
+  "id": "urn:ngsi-ld:atmosphericPressure:id:HZZV:82467762",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "1997-08-06T08:52:44Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "1996-11-11T23:42:34Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": "Strategy some state thus most pretty. Dog crime bag wrong during. Action feeling see they mission science success position."
+  },
+  "name": {
+    "type": "Text",
+    "value": "West sell meet artist window within bring protect. Such team contain. Fill support suddenly who."
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "Artist wind realize. Matter ahead close general. Through likely some continue lead."
+  },
+  "description": {
+    "type": "Text",
+    "value": "Wall she enough step theory. Good arriv"
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Through join discussion near admit must other. Attack yard on figure either. Of begin international some."
+  },
+  "owner": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:atmosphericPressure:items:AKQX:40798143",
+      "urn:ngsi-ld:atmosphericPressure:items:IICX:50031645"
+    ]
+  },
+  "seeAlso": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:atmosphericPressure:items:AERV:66370194"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -85.9629705,
+        -58.365214
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "Along chair evidence early. Effect marriage ch",
+      "addressLocality": "Sam",
+      "addressRegion": "Thank sit agree manager PM customer. Evidence exist thus office individual one collection base.",
+      "addressCountry": "Fact mention hundred property choose involve small. Term throw then whether home compare. Store assume art long fast table. Yet help pretty campaign.",
+      "postalCode": "Agree exactly far coach. Teacher include really positive long game pla",
+      "postOfficeBoxNumber": "Former lose part model reflect apply final all. Task yes rise teach reason history hard.",
+      "streetNr": "In could mean well. Democratic media place far let ",
+      "district": "Federal name for baby senior. Perform authority black financial allow care direction "
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "Throw whose will whose never stop development agreement."
+  },
+  "rt": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.r.sensor.atmosphericpressure"
+    ]
+  },
+  "atmosphericPressure": {
+    "type": "Number",
+    "value": 706.0
+  },
+  "n": {
+    "type": "Text",
+    "value": "Care avoid inside account protect spend couple. Read"
+  },
+  "precision": {
+    "type": "Number",
+    "value": 370.9
+  },
+  "range": {
+    "type": "StructuredValue",
+    "value": [
+      767.4,
+      71.3
+    ]
+  },
+  "step": {
+    "type": "Number",
+    "value": 371.2
+  },
+  "if": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.if.baseline",
+      "oic.if.s"
+    ]
+  },
+  "type": "atmosphericPressure"
 }
