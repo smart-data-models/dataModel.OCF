@@ -1,111 +1,111 @@
 {
-    "id": "urn:ngsi-ld:smoke:id:VYRR:57457247",
-    "dateCreated": {
-        "type": "DateTime",
-        "value": "2009-11-23T03:21:17Z"
-    },
-    "dateModified": {
-        "type": "DateTime",
-        "value": "2019-04-21T20:17:35Z"
-    },
-    "source": {
-        "type": "Text",
-        "value": "Important actually hope she student ago. Car general third building three central. Thousand score bit."
-    },
-    "name": {
-        "type": "Text",
-        "value": "News small TV imagine in quickly condition. Option speak view loca"
-    },
-    "alternateName": {
-        "type": "Text",
-        "value": "Thing defense various five piece blood camera. Teacher relationship especially detail produce exactly take mont"
-    },
-    "description": {
-        "type": "Text",
-        "value": "Drive season as idea as what try. Experience very position t"
-    },
-    "dataProvider": {
-        "type": "Text",
-        "value": ""
-    },
-    "owner": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:smoke:items:XZMK:53394567",
-            "urn:ngsi-ld:smoke:items:ZWJN:88654730"
-        ]
-    },
-    "seeAlso": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:smoke:items:FTUU:63403479"
-        ]
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                46.5370525,
-                75.632336
-            ]
-        }
-    },
-    "address": {
-        "type": "StructuredValue",
-        "value": {
-            "streetAddress": "Staff travel throw go room. Movement oil continue film concern never.",
-            "addressLocality": "Line doctor conference generation big like ",
-            "addressRegion": "Receive threat we management red economy than. East shoulder miss pattern. Station drop indeed. Realiz",
-            "addressCountry": "Agree style section h",
-            "postalCode": "Only commercial soldier receive material door age. Lay could myself usually star weight lawyer affect. Ef",
-            "postOfficeBoxNumber": "Feel describe war event sense on go knowledge. Accept nearly good last garden include.",
-            "streetNr": "Pass skill kid article serious. Garden product s",
-            "district": "Shake even city nor friend behavior explain watch. Budget or present."
-        }
-    },
-    "areaServed": {
-        "type": "Text",
-        "value": "Glass p"
-    },
-    "rt": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.r.sensor.smoke"
-        ]
-    },
+  "id": "urn:ngsi-ld:smoke:id:VYRR:57457247",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "2009-11-23T03:21:17Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "2019-04-21T20:17:35Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": "Important actually hope she student ago. Car general third building three central. Thousand score bit."
+  },
+  "name": {
+    "type": "Text",
+    "value": "News small TV imagine in quickly condition. Option speak view loca"
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "Thing defense various five piece blood camera. Teacher relationship especially detail produce exactly take mont"
+  },
+  "description": {
+    "type": "Text",
+    "value": "Drive season as idea as what try. Experience very position t"
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": ""
+  },
+  "owner": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:smoke:items:XZMK:53394567",
+      "urn:ngsi-ld:smoke:items:ZWJN:88654730"
+    ]
+  },
+  "seeAlso": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:smoke:items:FTUU:63403479"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
     "value": {
-        "type": "Boolean",
-        "value": true
-    },
-    "measurement": {
-        "type": "Number",
-        "value": 701.8
-    },
-    "precision": {
-        "type": "Number",
-        "value": 380.9
-    },
-    "n": {
-        "type": "Text",
-        "value": "Sit pressure television necessary social station term. Mr wear"
-    },
-    "range": {
-        "type": "StructuredValue",
-        "value": [
-            655.0,
-            186.5
-        ]
-    },
-    "step": {
-        "type": "Number",
-        "value": 88.9
-    },
-    "if": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.if.baseline"
-        ]
-    },
-    "type": "smoke"
+      "type": "Point",
+      "coordinates": [
+        46.5370525,
+        75.632336
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "Staff travel throw go room. Movement oil continue film concern never.",
+      "addressLocality": "Line doctor conference generation big like ",
+      "addressRegion": "Receive threat we management red economy than. East shoulder miss pattern. Station drop indeed. Realiz",
+      "addressCountry": "Agree style section h",
+      "postalCode": "Only commercial soldier receive material door age. Lay could myself usually star weight lawyer affect. Ef",
+      "postOfficeBoxNumber": "Feel describe war event sense on go knowledge. Accept nearly good last garden include.",
+      "streetNr": "Pass skill kid article serious. Garden product s",
+      "district": "Shake even city nor friend behavior explain watch. Budget or present."
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "Glass p"
+  },
+  "rt": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.r.sensor.smoke"
+    ]
+  },
+  "value": {
+    "type": "Boolean",
+    "value": true
+  },
+  "measurement": {
+    "type": "Number",
+    "value": 701.8
+  },
+  "precision": {
+    "type": "Number",
+    "value": 380.9
+  },
+  "n": {
+    "type": "Text",
+    "value": "Sit pressure television necessary social station term. Mr wear"
+  },
+  "range": {
+    "type": "StructuredValue",
+    "value": [
+      655.0,
+      186.5
+    ]
+  },
+  "step": {
+    "type": "Number",
+    "value": 88.9
+  },
+  "if": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.if.baseline"
+    ]
+  },
+  "type": "smoke"
 }
