@@ -1,53 +1,53 @@
 {
-    "id": "urn:ngsi-ld:ecomode:id:AHBA:98025070",
-    "dateCreated": "1985-05-13T16:22:28Z",
-    "dateModified": "2014-07-01T04:44:52Z",
-    "source": "Start general professional career. Large center fin",
-    "name": "North but west. About catch than m",
-    "alternateName": "Sea stuff no response.",
-    "description": "Billion pick report past always future scene heavy. Usually already bed fall character door green save. Front sound war address morning explain.",
-    "dataProvider": "Significant now energy. Lay return identify. Anything event yet effect quite reflect upon.",
-    "owner": [
-        "urn:ngsi-ld:ecomode:items:SKZH:38856431",
-        "urn:ngsi-ld:ecomode:items:BSEL:98522509"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:ecomode:items:FAZE:54457696"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            62.6331415,
-            -156.591688
-        ]
-    },
-    "address": {
-        "streetAddress": "Game act return travel. Secti",
-        "addressLocality": "Someone painting senior entire expect investm",
-        "addressRegion": "Guess we no in pass sound. Tonight gun word citizen create. Physical market room eat through ever.",
-        "addressCountry": "Of door research tell. When clearly type up",
-        "postalCode": "Action econ",
-        "postOfficeBoxNumber": "Let stop camera report foreign agency list miss.",
-        "streetNr": "Not girl above course.",
-        "district": "Likely fire"
-    },
-    "areaServed": "Throughout treat relate respond. Role mind statement.",
-    "rt": [
-        "oic.r.ecomode"
-    ],
-    "modes": [
-        "disabled",
-        "enabled"
-    ],
-    "supportedModes": [
-        "notsupported",
-        "disabled"
-    ],
-    "adminforced": true,
-    "n": "Spend cut end red. S",
-    "if": [
-        "oic.if.a",
-        "oic.if.baseline"
-    ],
-    "type": "ecomode"
+  "id": "urn:ngsi-ld:ecomode:id:AHBA:98025070",
+  "dateCreated": "1985-05-13T16:22:28Z",
+  "dateModified": "2014-07-01T04:44:52Z",
+  "source": "Start general professional career. Large center fin",
+  "name": "North but west. About catch than m",
+  "alternateName": "Sea stuff no response.",
+  "description": "Billion pick report past always future scene heavy. Usually already bed fall character door green save. Front sound war address morning explain.",
+  "dataProvider": "Significant now energy. Lay return identify. Anything event yet effect quite reflect upon.",
+  "owner": [
+    "urn:ngsi-ld:ecomode:items:SKZH:38856431",
+    "urn:ngsi-ld:ecomode:items:BSEL:98522509"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:ecomode:items:FAZE:54457696"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      62.6331415,
+      -156.591688
+    ]
+  },
+  "address": {
+    "streetAddress": "Game act return travel. Secti",
+    "addressLocality": "Someone painting senior entire expect investm",
+    "addressRegion": "Guess we no in pass sound. Tonight gun word citizen create. Physical market room eat through ever.",
+    "addressCountry": "Of door research tell. When clearly type up",
+    "postalCode": "Action econ",
+    "postOfficeBoxNumber": "Let stop camera report foreign agency list miss.",
+    "streetNr": "Not girl above course.",
+    "district": "Likely fire"
+  },
+  "areaServed": "Throughout treat relate respond. Role mind statement.",
+  "rt": [
+    "oic.r.ecomode"
+  ],
+  "modes": [
+    "disabled",
+    "enabled"
+  ],
+  "supportedModes": [
+    "notsupported",
+    "disabled"
+  ],
+  "adminforced": true,
+  "n": "Spend cut end red. S",
+  "if": [
+    "oic.if.a",
+    "oic.if.baseline"
+  ],
+  "type": "ecomode"
 }
