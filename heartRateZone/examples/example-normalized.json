@@ -1,92 +1,92 @@
 {
-    "id": "urn:ngsi-ld:heartRateZone:id:ENQF:45741847",
-    "dateCreated": {
-        "type": "DateTime",
-        "value": "1985-03-21T10:18:33Z"
-    },
-    "dateModified": {
-        "type": "DateTime",
-        "value": "2001-06-01T12:28:15Z"
-    },
-    "source": {
-        "type": "Text",
-        "value": "Speak fund coach politics rate open. Fly black leave model all these. Occur increase indeed home eight each soon community."
-    },
-    "name": {
-        "type": "Text",
-        "value": "Throw new behind catch great sport. Everyone family describe wonder par"
-    },
-    "alternateName": {
-        "type": "Text",
-        "value": "Religious partner low conference husband. Director medical game city decide g"
-    },
-    "description": {
-        "type": "Text",
-        "value": "Together authority must best. Artist music his establish could."
-    },
-    "dataProvider": {
-        "type": "Text",
-        "value": "Research product nice bed. Support may sure meeting subject politics."
-    },
-    "owner": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:heartRateZone:items:OFPW:07697765",
-            "urn:ngsi-ld:heartRateZone:items:GPIR:74445561"
-        ]
-    },
-    "seeAlso": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:heartRateZone:items:KDLO:05139773"
-        ]
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                -52.4623695,
-                100.384494
-            ]
-        }
-    },
-    "address": {
-        "type": "StructuredValue",
-        "value": {
-            "streetAddress": "Positive amount official. Small card throw letter. Simply me whose grow according.",
-            "addressLocality": "Chance nat",
-            "addressRegion": "Industry thought office poor nation. Usually argue teach option bed. Cut physical true name any enjoy low.",
-            "addressCountry": "Night which white popul",
-            "postalCode": "Picture why officer store he order. Amount represent weight owner instead. Air reduce executive grow question class.",
-            "postOfficeBoxNumber": "About conference message that city. Main despite region before. Occur information speak roa",
-            "streetNr": "There positive top country walk someone on improve",
-            "district": "Nature history run seek call skin me. Catch memory entire writer "
-        }
-    },
-    "areaServed": {
-        "type": "Text",
-        "value": "Around daughter mouth condition operation. Two su"
-    },
-    "rt": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.r.sensor.heart.zone"
-        ]
-    },
-    "n": {
-        "type": "Text",
-        "value": "Fly bag worry always. Base prev"
-    },
-    "heartRateZone": {
-        "type": "Text",
-        "value": "Zone3"
-    },
-    "if": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.if.s"
-        ]
-    },
-    "type": "heartRateZone"
+  "id": "urn:ngsi-ld:heartRateZone:id:ENQF:45741847",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "1985-03-21T10:18:33Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "2001-06-01T12:28:15Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": "Speak fund coach politics rate open. Fly black leave model all these. Occur increase indeed home eight each soon community."
+  },
+  "name": {
+    "type": "Text",
+    "value": "Throw new behind catch great sport. Everyone family describe wonder par"
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "Religious partner low conference husband. Director medical game city decide g"
+  },
+  "description": {
+    "type": "Text",
+    "value": "Together authority must best. Artist music his establish could."
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Research product nice bed. Support may sure meeting subject politics."
+  },
+  "owner": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:heartRateZone:items:OFPW:07697765",
+      "urn:ngsi-ld:heartRateZone:items:GPIR:74445561"
+    ]
+  },
+  "seeAlso": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:heartRateZone:items:KDLO:05139773"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -52.4623695,
+        100.384494
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "Positive amount official. Small card throw letter. Simply me whose grow according.",
+      "addressLocality": "Chance nat",
+      "addressRegion": "Industry thought office poor nation. Usually argue teach option bed. Cut physical true name any enjoy low.",
+      "addressCountry": "Night which white popul",
+      "postalCode": "Picture why officer store he order. Amount represent weight owner instead. Air reduce executive grow question class.",
+      "postOfficeBoxNumber": "About conference message that city. Main despite region before. Occur information speak roa",
+      "streetNr": "There positive top country walk someone on improve",
+      "district": "Nature history run seek call skin me. Catch memory entire writer "
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "Around daughter mouth condition operation. Two su"
+  },
+  "rt": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.r.sensor.heart.zone"
+    ]
+  },
+  "n": {
+    "type": "Text",
+    "value": "Fly bag worry always. Base prev"
+  },
+  "heartRateZone": {
+    "type": "Text",
+    "value": "Zone3"
+  },
+  "if": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.if.s"
+    ]
+  },
+  "type": "heartRateZone"
 }
