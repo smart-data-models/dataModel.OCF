@@ -1,93 +1,93 @@
 {
-    "id": "urn:ngsi-ld:Brightness:id:RPOQ:78156593",
-    "dateCreated": {
-        "type": "DateTime",
-        "value": "1987-09-23T13:42:57Z"
-    },
-    "dateModified": {
-        "type": "DateTime",
-        "value": "1974-03-28T23:13:05Z"
-    },
-    "source": {
-        "type": "Text",
-        "value": "Behavior style report. Ability management test during foot that course nothing. Sound central myself before year."
-    },
-    "name": {
-        "type": "Text",
-        "value": "Board necessary religious natural sport music white. Natural explain before something first drug contain start."
-    },
-    "alternateName": {
-        "type": "Text",
-        "value": "Theory type successful together. Raise study modern miss dog Democrat quickly."
-    },
-    "description": {
-        "type": "Text",
-        "value": "Every manage political record word group food break. Picture suddenly drug rule bring determine some forward. Beyond chair recently and."
-    },
-    "dataProvider": {
-        "type": "Text",
-        "value": "Own "
-    },
-    "owner": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:Brightness:items:UJLN:86914131",
-            "urn:ngsi-ld:Brightness:items:GILX:20870916"
-        ]
-    },
-    "seeAlso": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:Brightness:items:QIDT:79230225"
-        ]
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                28.732768,
-                177.344405
-            ]
-        }
-    },
-    "address": {
-        "type": "StructuredValue",
-        "value": {
-            "streetAddress": "Likely improve notice. True power home price check real leader.",
-            "addressLocality": "School name care several loss particular. Opportunity throughout take car financial security.",
-            "addressRegion": "Organization recognize civil. Pm her then nothing increase.",
-            "addressCountry": "Industry product another knowledge else citizen month. Traditional page a although for study anyone. Could yourself plan base rise would.",
-            "postalCode": "First degree response able state more. Couple part cup few. Beyond take however ball.",
-            "postOfficeBoxNumber": "Son break either president stage population boy. Everything affect America",
-            "streetNr": "Water voice travel among see red. Republican total policy hea",
-            "district": "Full per among clearly. Face house nature fall long dream answer confere"
-        }
-    },
-    "areaServed": {
-        "type": "Text",
-        "value": "Buy break marriage also friend reach. Turn phone heart window. Assume be seek article."
-    },
-    "rt": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.r.light.brightness"
-        ]
-    },
-    "brightness": {
-        "type": "Number",
-        "value": 49
-    },
-    "n": {
-        "type": "Text",
-        "value": "Else memory if. Whose group through de"
-    },
-    "if": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.if.a",
-            "oic.if.baseline"
-        ]
-    },
-    "type": "Brightness"
+  "id": "urn:ngsi-ld:Brightness:id:RPOQ:78156593",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "1987-09-23T13:42:57Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "1974-03-28T23:13:05Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": "Behavior style report. Ability management test during foot that course nothing. Sound central myself before year."
+  },
+  "name": {
+    "type": "Text",
+    "value": "Board necessary religious natural sport music white. Natural explain before something first drug contain start."
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "Theory type successful together. Raise study modern miss dog Democrat quickly."
+  },
+  "description": {
+    "type": "Text",
+    "value": "Every manage political record word group food break. Picture suddenly drug rule bring determine some forward. Beyond chair recently and."
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Own "
+  },
+  "owner": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:Brightness:items:UJLN:86914131",
+      "urn:ngsi-ld:Brightness:items:GILX:20870916"
+    ]
+  },
+  "seeAlso": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:Brightness:items:QIDT:79230225"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        28.732768,
+        177.344405
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "Likely improve notice. True power home price check real leader.",
+      "addressLocality": "School name care several loss particular. Opportunity throughout take car financial security.",
+      "addressRegion": "Organization recognize civil. Pm her then nothing increase.",
+      "addressCountry": "Industry product another knowledge else citizen month. Traditional page a although for study anyone. Could yourself plan base rise would.",
+      "postalCode": "First degree response able state more. Couple part cup few. Beyond take however ball.",
+      "postOfficeBoxNumber": "Son break either president stage population boy. Everything affect America",
+      "streetNr": "Water voice travel among see red. Republican total policy hea",
+      "district": "Full per among clearly. Face house nature fall long dream answer confere"
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "Buy break marriage also friend reach. Turn phone heart window. Assume be seek article."
+  },
+  "rt": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.r.light.brightness"
+    ]
+  },
+  "brightness": {
+    "type": "Number",
+    "value": 49
+  },
+  "n": {
+    "type": "Text",
+    "value": "Else memory if. Whose group through de"
+  },
+  "if": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.if.a",
+      "oic.if.baseline"
+    ]
+  },
+  "type": "Brightness"
 }
