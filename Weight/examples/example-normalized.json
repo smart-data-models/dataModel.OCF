@@ -1,111 +1,111 @@
 {
-    "id": "urn:ngsi-ld:Weight:id:PXJS:38939979",
-    "dateCreated": {
-        "type": "DateTime",
-        "value": "1973-09-18T05:35:54Z"
-    },
-    "dateModified": {
-        "type": "DateTime",
-        "value": "1970-09-12T11:25:12Z"
-    },
-    "source": {
-        "type": "Text",
-        "value": "Street ask beat again health figure. Exactly president protect certainly situation avoid always."
-    },
-    "name": {
-        "type": "Text",
-        "value": "Compare top under. Policy significa"
-    },
-    "alternateName": {
-        "type": "Text",
-        "value": "Place wonder whom seven. Thank future tonight notice firm"
-    },
-    "description": {
-        "type": "Text",
-        "value": "Unit economy light might debate finally. Prove understand pass relate develop consumer perform. The instead smile behavior chance during produce."
-    },
-    "dataProvider": {
-        "type": "Text",
-        "value": "Crime window how defense. Beyond area central already usually as which. Successful night wife father rock economy media."
-    },
-    "owner": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:Weight:items:CIDP:31330312",
-            "urn:ngsi-ld:Weight:items:KPDZ:31790939"
-        ]
-    },
-    "seeAlso": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:Weight:items:LOVM:09152413"
-        ]
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                59.1616925,
-                4.378997
-            ]
-        }
-    },
-    "address": {
-        "type": "StructuredValue",
-        "value": {
-            "streetAddress": "Before box would figure.",
-            "addressLocality": "Voice majority case it. These term field race million leader add. Return computer tell catch ready. Nearly recognize set affect.",
-            "addressRegion": "Event ok fish nearly run. Value deep their feel deep only. Word member camera language character.",
-            "addressCountry": "Enough minute every",
-            "postalCode": "Follow market light interest. Gas animal seem rest senior however gr",
-            "postOfficeBoxNumber": "Practice end yet stay she maybe. Land shake indeed different public issue.",
-            "streetNr": "Forward on dark movie both current fund unt",
-            "district": "East project would likely. Computer indeed truth American write even. Capital year military part."
-        }
-    },
-    "areaServed": {
-        "type": "Text",
-        "value": "Development age computer happen let wall. Raise upon party. Democrat serious month env"
-    },
-    "rt": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.r.weight"
-        ]
-    },
-    "weight": {
-        "type": "Number",
-        "value": 473.7
-    },
-    "units": {
-        "type": "Text",
-        "value": "lb"
-    },
-    "range": {
-        "type": "StructuredValue",
-        "value": [
-            361.9,
-            412.9
-        ]
-    },
-    "step": {
-        "type": "Number",
-        "value": 66.1
-    },
-    "precision": {
-        "type": "Number",
-        "value": 10.6
-    },
-    "n": {
-        "type": "Text",
-        "value": "Be I than enough opportunity at. Turn ge"
-    },
-    "if": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.if.s"
-        ]
-    },
-    "type": "Weight"
+  "id": "urn:ngsi-ld:Weight:id:PXJS:38939979",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "1973-09-18T05:35:54Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "1970-09-12T11:25:12Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": "Street ask beat again health figure. Exactly president protect certainly situation avoid always."
+  },
+  "name": {
+    "type": "Text",
+    "value": "Compare top under. Policy significa"
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "Place wonder whom seven. Thank future tonight notice firm"
+  },
+  "description": {
+    "type": "Text",
+    "value": "Unit economy light might debate finally. Prove understand pass relate develop consumer perform. The instead smile behavior chance during produce."
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Crime window how defense. Beyond area central already usually as which. Successful night wife father rock economy media."
+  },
+  "owner": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:Weight:items:CIDP:31330312",
+      "urn:ngsi-ld:Weight:items:KPDZ:31790939"
+    ]
+  },
+  "seeAlso": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:Weight:items:LOVM:09152413"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        59.1616925,
+        4.378997
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "Before box would figure.",
+      "addressLocality": "Voice majority case it. These term field race million leader add. Return computer tell catch ready. Nearly recognize set affect.",
+      "addressRegion": "Event ok fish nearly run. Value deep their feel deep only. Word member camera language character.",
+      "addressCountry": "Enough minute every",
+      "postalCode": "Follow market light interest. Gas animal seem rest senior however gr",
+      "postOfficeBoxNumber": "Practice end yet stay she maybe. Land shake indeed different public issue.",
+      "streetNr": "Forward on dark movie both current fund unt",
+      "district": "East project would likely. Computer indeed truth American write even. Capital year military part."
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "Development age computer happen let wall. Raise upon party. Democrat serious month env"
+  },
+  "rt": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.r.weight"
+    ]
+  },
+  "weight": {
+    "type": "Number",
+    "value": 473.7
+  },
+  "units": {
+    "type": "Text",
+    "value": "lb"
+  },
+  "range": {
+    "type": "StructuredValue",
+    "value": [
+      361.9,
+      412.9
+    ]
+  },
+  "step": {
+    "type": "Number",
+    "value": 66.1
+  },
+  "precision": {
+    "type": "Number",
+    "value": 10.6
+  },
+  "n": {
+    "type": "Text",
+    "value": "Be I than enough opportunity at. Turn ge"
+  },
+  "if": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.if.s"
+    ]
+  },
+  "type": "Weight"
 }
