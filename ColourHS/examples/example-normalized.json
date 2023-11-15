@@ -1,105 +1,105 @@
 {
-    "id": "urn:ngsi-ld:ColourHS:id:AKJK:40127853",
-    "dateCreated": {
-        "type": "DateTime",
-        "value": "1993-08-24T03:01:43Z"
-    },
-    "dateModified": {
-        "type": "DateTime",
-        "value": "2002-11-27T06:16:46Z"
-    },
-    "source": {
-        "type": "Text",
-        "value": "Wear prepare traditional a like indicate. Significant include whose future. Detail who likely business old."
-    },
-    "name": {
-        "type": "Text",
-        "value": "Point agent including beyond. Community body every visit but she. Speak when may maybe worry. Tell attack crime it s"
-    },
-    "alternateName": {
-        "type": "Text",
-        "value": "Above they also environment analysis. Card throw trip get within red. Cell drug democratic."
-    },
-    "description": {
-        "type": "Text",
-        "value": "Land good law market put agent. Our any watch reach energ"
-    },
-    "dataProvider": {
-        "type": "Text",
-        "value": "Million organization possible expect mention cover. Treat painting with who."
-    },
-    "owner": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:ColourHS:items:ADWD:27178996",
-            "urn:ngsi-ld:ColourHS:items:JQMN:51128252"
-        ]
-    },
-    "seeAlso": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:ColourHS:items:YQTT:85182548"
-        ]
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                -39.4098375,
-                -99.344663
-            ]
-        }
-    },
-    "address": {
-        "type": "StructuredValue",
-        "value": {
-            "streetAddress": "Able stage Mr. If if every probably never. Start ",
-            "addressLocality": "Stop important generation research. Mr need itself power. Happy most color contain dinner s",
-            "addressRegion": "Class ev",
-            "addressCountry": "Sell child Mr his can range. Memory morning record. Suddenly too born environmental prepare account city official.",
-            "postalCode": "Case kid anyone discover white. Run trip rich approach. Tend at Democrat possible away life road.",
-            "postOfficeBoxNumber": "Say anything seem require. Model experience election player.",
-            "streetNr": "After same machine soldier life. Glass effect order foreign. Wind dream least yourself degree.",
-            "district": "Company early research offer meet animal sometimes. Former response house always of."
-        }
-    },
-    "areaServed": {
-        "type": "Text",
-        "value": "Morning no each thank image. Claim civil positive have summer. Close couple knowledge brother born."
-    },
-    "rt": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.r.colour.hs"
-        ]
-    },
-    "hue": {
-        "type": "Number",
-        "value": 311.1
-    },
-    "saturation": {
-        "type": "Number",
-        "value": 25247
-    },
-    "maximumsaturation": {
-        "type": "Number",
-        "value": 25247
-    },
-    "n": {
-        "type": "Text",
-        "value": "Else memory if. Whose group through despite cause. Sense p"
-    },
-    "precision": {
-        "type": "Number",
-        "value": 100.2
-    },
-    "if": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.if.baseline",
-            "oic.if.a"
-        ]
-    },
-    "type": "ColourHS"
+  "id": "urn:ngsi-ld:ColourHS:id:AKJK:40127853",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "1993-08-24T03:01:43Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "2002-11-27T06:16:46Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": "Wear prepare traditional a like indicate. Significant include whose future. Detail who likely business old."
+  },
+  "name": {
+    "type": "Text",
+    "value": "Point agent including beyond. Community body every visit but she. Speak when may maybe worry. Tell attack crime it s"
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "Above they also environment analysis. Card throw trip get within red. Cell drug democratic."
+  },
+  "description": {
+    "type": "Text",
+    "value": "Land good law market put agent. Our any watch reach energ"
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Million organization possible expect mention cover. Treat painting with who."
+  },
+  "owner": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:ColourHS:items:ADWD:27178996",
+      "urn:ngsi-ld:ColourHS:items:JQMN:51128252"
+    ]
+  },
+  "seeAlso": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:ColourHS:items:YQTT:85182548"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -39.4098375,
+        -99.344663
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "Able stage Mr. If if every probably never. Start ",
+      "addressLocality": "Stop important generation research. Mr need itself power. Happy most color contain dinner s",
+      "addressRegion": "Class ev",
+      "addressCountry": "Sell child Mr his can range. Memory morning record. Suddenly too born environmental prepare account city official.",
+      "postalCode": "Case kid anyone discover white. Run trip rich approach. Tend at Democrat possible away life road.",
+      "postOfficeBoxNumber": "Say anything seem require. Model experience election player.",
+      "streetNr": "After same machine soldier life. Glass effect order foreign. Wind dream least yourself degree.",
+      "district": "Company early research offer meet animal sometimes. Former response house always of."
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "Morning no each thank image. Claim civil positive have summer. Close couple knowledge brother born."
+  },
+  "rt": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.r.colour.hs"
+    ]
+  },
+  "hue": {
+    "type": "Number",
+    "value": 311.1
+  },
+  "saturation": {
+    "type": "Number",
+    "value": 25247
+  },
+  "maximumsaturation": {
+    "type": "Number",
+    "value": 25247
+  },
+  "n": {
+    "type": "Text",
+    "value": "Else memory if. Whose group through despite cause. Sense p"
+  },
+  "precision": {
+    "type": "Number",
+    "value": 100.2
+  },
+  "if": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.if.baseline",
+      "oic.if.a"
+    ]
+  },
+  "type": "ColourHS"
 }
