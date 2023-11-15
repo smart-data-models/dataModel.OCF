@@ -1,93 +1,93 @@
 {
-    "id": "urn:ngsi-ld:Motion:id:WJTJ:57187676",
-    "dateCreated": {
-        "type": "DateTime",
-        "value": "2019-07-10T18:06:29Z"
-    },
-    "dateModified": {
-        "type": "DateTime",
-        "value": "2001-04-25T00:12:11Z"
-    },
-    "source": {
-        "type": "Text",
-        "value": "Home expert watch result. Necessary bill picture time mean protect arrive. Sort home generation hope activity "
-    },
-    "name": {
-        "type": "Text",
-        "value": "Appear close than because chair article interest. Serious another red speech. Science weight house w"
-    },
-    "alternateName": {
-        "type": "Text",
-        "value": "Training hard own six himself land guess kind. Fact travel organization be or. College most attention d"
-    },
-    "description": {
-        "type": "Text",
-        "value": "Wonder picture bed "
-    },
-    "dataProvider": {
-        "type": "Text",
-        "value": "Loss sta"
-    },
-    "owner": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:Motion:items:KBNW:57561673",
-            "urn:ngsi-ld:Motion:items:JGNJ:31536690"
-        ]
-    },
-    "seeAlso": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:Motion:items:OMHS:02373339"
-        ]
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                57.4145695,
-                -150.804706
-            ]
-        }
-    },
-    "address": {
-        "type": "StructuredValue",
-        "value": {
-            "streetAddress": "Color mother believe. Ahead miss watch board middle me a",
-            "addressLocality": "Bit various front chair like middle stat",
-            "addressRegion": "Service design medical we.",
-            "addressCountry": "Career official outside Mr environment far. Card yeah productio",
-            "postalCode": "Center politics theory interesting population letter. Edge strong how question.",
-            "postOfficeBoxNumber": "Learn buy program under. Read glass enough fine key fall seat. Whom example study we.",
-            "streetNr": "Sell produce business majority drug simple since. Me arrive four four small head.",
-            "district": "Exactly what every support. Even mean exactly resource decision southern fight. Huge dark street."
-        }
-    },
-    "areaServed": {
-        "type": "Text",
-        "value": "Project wide teacher myself card scene. Dog get we."
-    },
-    "rt": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.r.sensor.motion"
-        ]
-    },
+  "id": "urn:ngsi-ld:Motion:id:WJTJ:57187676",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "2019-07-10T18:06:29Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "2001-04-25T00:12:11Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": "Home expert watch result. Necessary bill picture time mean protect arrive. Sort home generation hope activity "
+  },
+  "name": {
+    "type": "Text",
+    "value": "Appear close than because chair article interest. Serious another red speech. Science weight house w"
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "Training hard own six himself land guess kind. Fact travel organization be or. College most attention d"
+  },
+  "description": {
+    "type": "Text",
+    "value": "Wonder picture bed "
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Loss sta"
+  },
+  "owner": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:Motion:items:KBNW:57561673",
+      "urn:ngsi-ld:Motion:items:JGNJ:31536690"
+    ]
+  },
+  "seeAlso": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:Motion:items:OMHS:02373339"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
     "value": {
-        "type": "Boolean",
-        "value": true
-    },
-    "n": {
-        "type": "Text",
-        "value": "Shake half design campaign."
-    },
-    "if": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.if.s",
-            "oic.if.baseline"
-        ]
-    },
-    "type": "Motion"
+      "type": "Point",
+      "coordinates": [
+        57.4145695,
+        -150.804706
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "Color mother believe. Ahead miss watch board middle me a",
+      "addressLocality": "Bit various front chair like middle stat",
+      "addressRegion": "Service design medical we.",
+      "addressCountry": "Career official outside Mr environment far. Card yeah productio",
+      "postalCode": "Center politics theory interesting population letter. Edge strong how question.",
+      "postOfficeBoxNumber": "Learn buy program under. Read glass enough fine key fall seat. Whom example study we.",
+      "streetNr": "Sell produce business majority drug simple since. Me arrive four four small head.",
+      "district": "Exactly what every support. Even mean exactly resource decision southern fight. Huge dark street."
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "Project wide teacher myself card scene. Dog get we."
+  },
+  "rt": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.r.sensor.motion"
+    ]
+  },
+  "value": {
+    "type": "Boolean",
+    "value": true
+  },
+  "n": {
+    "type": "Text",
+    "value": "Shake half design campaign."
+  },
+  "if": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.if.s",
+      "oic.if.baseline"
+    ]
+  },
+  "type": "Motion"
 }
