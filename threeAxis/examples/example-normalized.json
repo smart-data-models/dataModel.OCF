@@ -1,97 +1,97 @@
 {
-    "id": "urn:ngsi-ld:threeAxis:id:QZPT:75196263",
-    "dateCreated": {
-        "type": "DateTime",
-        "value": "1983-10-24T19:51:05Z"
-    },
-    "dateModified": {
-        "type": "DateTime",
-        "value": "2004-08-04T06:17:20Z"
-    },
-    "source": {
-        "type": "Text",
-        "value": "Course debate he decade yeah not. Themselves remain much food way drop. Easy couple person "
-    },
-    "name": {
-        "type": "Text",
-        "value": "Network Mr soon thousand figure town. Stuff explain evidence but picture site wear force. Experience enough nation star."
-    },
-    "alternateName": {
-        "type": "Text",
-        "value": "Always with magazine safe assume. Identify top more. Might describe leader current stre"
-    },
-    "description": {
-        "type": "Text",
-        "value": "Past analysis stock. Form top them choice day."
-    },
-    "dataProvider": {
-        "type": "Text",
-        "value": "Left project type air interview. Physical spend measure friend."
-    },
-    "owner": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:threeAxis:items:CTYU:51884285",
-            "urn:ngsi-ld:threeAxis:items:OSFS:08678990"
-        ]
-    },
-    "seeAlso": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:threeAxis:items:XJKL:03106181"
-        ]
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                -42.3517035,
-                6.360951
-            ]
-        }
-    },
-    "address": {
-        "type": "StructuredValue",
-        "value": {
-            "streetAddress": "Central blood budget. Give fly stage expect minute these sister.",
-            "addressLocality": "Big commercial to act full across cost. Player bank will set. The see protect can argue maintain.",
-            "addressRegion": "Performance perform just. Next evening increase sort instead project even certain.",
-            "addressCountry": "Issue feel without bed yes travel head impact. On student result which. Design strong kin",
-            "postalCode": "If big bar challenge hear. Economic expect production month in board.",
-            "postOfficeBoxNumber": "Job control su",
-            "streetNr": "Chance might seem ",
-            "district": "Care center kid quality fact shake its."
-        }
-    },
-    "areaServed": {
-        "type": "Text",
-        "value": "Article few pattern stand agree mean beyond. Meeting rate her where. Resp"
-    },
-    "rt": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.r.sensor.threeaxis"
-        ]
-    },
-    "orientation": {
-        "type": "StructuredValue",
-        "value": [
-            965.7,
-            13.4,
-            82.1
-        ]
-    },
-    "n": {
-        "type": "Text",
-        "value": "Build force community group total trip ready. "
-    },
-    "if": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.if.s",
-            "oic.if.baseline"
-        ]
-    },
-    "type": "threeAxis"
+  "id": "urn:ngsi-ld:threeAxis:id:QZPT:75196263",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "1983-10-24T19:51:05Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "2004-08-04T06:17:20Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": "Course debate he decade yeah not. Themselves remain much food way drop. Easy couple person "
+  },
+  "name": {
+    "type": "Text",
+    "value": "Network Mr soon thousand figure town. Stuff explain evidence but picture site wear force. Experience enough nation star."
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "Always with magazine safe assume. Identify top more. Might describe leader current stre"
+  },
+  "description": {
+    "type": "Text",
+    "value": "Past analysis stock. Form top them choice day."
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Left project type air interview. Physical spend measure friend."
+  },
+  "owner": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:threeAxis:items:CTYU:51884285",
+      "urn:ngsi-ld:threeAxis:items:OSFS:08678990"
+    ]
+  },
+  "seeAlso": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:threeAxis:items:XJKL:03106181"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -42.3517035,
+        6.360951
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "Central blood budget. Give fly stage expect minute these sister.",
+      "addressLocality": "Big commercial to act full across cost. Player bank will set. The see protect can argue maintain.",
+      "addressRegion": "Performance perform just. Next evening increase sort instead project even certain.",
+      "addressCountry": "Issue feel without bed yes travel head impact. On student result which. Design strong kin",
+      "postalCode": "If big bar challenge hear. Economic expect production month in board.",
+      "postOfficeBoxNumber": "Job control su",
+      "streetNr": "Chance might seem ",
+      "district": "Care center kid quality fact shake its."
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "Article few pattern stand agree mean beyond. Meeting rate her where. Resp"
+  },
+  "rt": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.r.sensor.threeaxis"
+    ]
+  },
+  "orientation": {
+    "type": "StructuredValue",
+    "value": [
+      965.7,
+      13.4,
+      82.1
+    ]
+  },
+  "n": {
+    "type": "Text",
+    "value": "Build force community group total trip ready. "
+  },
+  "if": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.if.s",
+      "oic.if.baseline"
+    ]
+  },
+  "type": "threeAxis"
 }
