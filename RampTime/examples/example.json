@@ -1,51 +1,51 @@
 {
-    "id": "urn:ngsi-ld:RampTime:id:SOVS:23859772",
-    "dateCreated": "1984-02-11T15:42:17Z",
-    "dateModified": "1974-12-05T16:14:49Z",
-    "source": "Raise left serious one under over loss. As week office art.",
-    "name": "Course election after pla",
-    "alternateName": "Out ago simply note. Goal apply letter several top. Above high impact top camera.",
-    "description": "Reduce catch goal treat. Maintain compare rule",
-    "dataProvider": "Only camera last rate. Indicate forget population policy option spend arti",
-    "owner": [
-        "urn:ngsi-ld:RampTime:items:CZKU:18687524",
-        "urn:ngsi-ld:RampTime:items:AYTX:66134959"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:RampTime:items:XJAL:21532442"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            17.46331,
-            125.666274
-        ]
-    },
-    "address": {
-        "streetAddress": "He would indiv",
-        "addressLocality": "Thing many business hot field. Yard join goal still current cell.",
-        "addressRegion": "Recent design professional he court. Challenge let case as. Our age just human arm.",
-        "addressCountry": "Several political policy town also popular. Nation cover popular big.",
-        "postalCode": "Beat vote population write no spend computer. Between himself agency prove may. Can major set finally.",
-        "postOfficeBoxNumber": "Cut mind up international military relate ok. Important today red lot rich. Send little strong sea party per happy.",
-        "streetNr": "Finish interesting Congress save name. Matter edge middle health. Pressure control bill any cultural pers",
-        "district": "Fire type spring away area service model. Cultural gues"
-    },
-    "areaServed": "Machine materi",
-    "rt": [
-        "oic.r.light.ramptime"
-    ],
-    "rampTime": 864,
-    "n": "American whole magazine truth stop whose. On tra",
-    "range": [
-        864,
-        864
-    ],
-    "step": 864,
-    "precision": 924.7,
-    "if": [
-        "oic.if.a",
-        "oic.if.baseline"
-    ],
-    "type": "RampTime"
+  "id": "urn:ngsi-ld:RampTime:id:SOVS:23859772",
+  "dateCreated": "1984-02-11T15:42:17Z",
+  "dateModified": "1974-12-05T16:14:49Z",
+  "source": "Raise left serious one under over loss. As week office art.",
+  "name": "Course election after pla",
+  "alternateName": "Out ago simply note. Goal apply letter several top. Above high impact top camera.",
+  "description": "Reduce catch goal treat. Maintain compare rule",
+  "dataProvider": "Only camera last rate. Indicate forget population policy option spend arti",
+  "owner": [
+    "urn:ngsi-ld:RampTime:items:CZKU:18687524",
+    "urn:ngsi-ld:RampTime:items:AYTX:66134959"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:RampTime:items:XJAL:21532442"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      17.46331,
+      125.666274
+    ]
+  },
+  "address": {
+    "streetAddress": "He would indiv",
+    "addressLocality": "Thing many business hot field. Yard join goal still current cell.",
+    "addressRegion": "Recent design professional he court. Challenge let case as. Our age just human arm.",
+    "addressCountry": "Several political policy town also popular. Nation cover popular big.",
+    "postalCode": "Beat vote population write no spend computer. Between himself agency prove may. Can major set finally.",
+    "postOfficeBoxNumber": "Cut mind up international military relate ok. Important today red lot rich. Send little strong sea party per happy.",
+    "streetNr": "Finish interesting Congress save name. Matter edge middle health. Pressure control bill any cultural pers",
+    "district": "Fire type spring away area service model. Cultural gues"
+  },
+  "areaServed": "Machine materi",
+  "rt": [
+    "oic.r.light.ramptime"
+  ],
+  "rampTime": 864,
+  "n": "American whole magazine truth stop whose. On tra",
+  "range": [
+    864,
+    864
+  ],
+  "step": 864,
+  "precision": 924.7,
+  "if": [
+    "oic.if.a",
+    "oic.if.baseline"
+  ],
+  "type": "RampTime"
 }
