@@ -1,52 +1,52 @@
 {
-    "id": "urn:ngsi-ld:CO2:id:ECDY:29770386",
-    "dateCreated": "2006-01-06T20:14:07Z",
-    "dateModified": "1973-10-28T17:23:17Z",
-    "source": "Bar nature agent we country various friend week. Range like science set.",
-    "name": "Rock improve author produce. Green city wonder their around.",
-    "alternateName": "Guy collection store. Whether most operati",
-    "description": "Arrive land art sing notice crime stuff improve. One just peace show interview act its.",
-    "dataProvider": "War radio while able significant finish. Different actually far however.",
-    "owner": [
-        "urn:ngsi-ld:CO2:items:SFGW:03494449",
-        "urn:ngsi-ld:CO2:items:XQMI:62092917"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:CO2:items:TYCI:58813039"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            -30.9524135,
-            92.601413
-        ]
-    },
-    "address": {
-        "streetAddress": "Result whole save leg me could nation. Just people mind actually town. Get push various according.",
-        "addressLocality": "There describe attent",
-        "addressRegion": "Quite it fact dinner allow. Item they production point area outside from.",
-        "addressCountry": "Who him particular matter late. Way receive star.",
-        "postalCode": "Drug today artist year. Government write al",
-        "postOfficeBoxNumber": "Machine course record another without politics. History five rich a",
-        "streetNr": "Purpose wear physical tough. Water staff media information your few thing. Enter sometimes play supp",
-        "district": "Down federal once PM create piece class green. Let structure bed top seem different television. Parent order bit story."
-    },
-    "areaServed": "Author project kitchen me local boy. Officer society section sort deal choose gas.",
-    "rt": [
-        "oic.r.sensor.carbondioxide"
-    ],
-    "value": true,
-    "measurement": 339.0,
-    "precision": 532.9,
-    "n": "Politics water fall woman study. Marriage scientist itself i",
-    "range": [
-        141.8,
-        193.5
-    ],
-    "step": 87.6,
-    "if": [
-        "oic.if.baseline",
-        "oic.if.s"
-    ],
-    "type": "CO2"
+  "id": "urn:ngsi-ld:CO2:id:ECDY:29770386",
+  "dateCreated": "2006-01-06T20:14:07Z",
+  "dateModified": "1973-10-28T17:23:17Z",
+  "source": "Bar nature agent we country various friend week. Range like science set.",
+  "name": "Rock improve author produce. Green city wonder their around.",
+  "alternateName": "Guy collection store. Whether most operati",
+  "description": "Arrive land art sing notice crime stuff improve. One just peace show interview act its.",
+  "dataProvider": "War radio while able significant finish. Different actually far however.",
+  "owner": [
+    "urn:ngsi-ld:CO2:items:SFGW:03494449",
+    "urn:ngsi-ld:CO2:items:XQMI:62092917"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:CO2:items:TYCI:58813039"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -30.9524135,
+      92.601413
+    ]
+  },
+  "address": {
+    "streetAddress": "Result whole save leg me could nation. Just people mind actually town. Get push various according.",
+    "addressLocality": "There describe attent",
+    "addressRegion": "Quite it fact dinner allow. Item they production point area outside from.",
+    "addressCountry": "Who him particular matter late. Way receive star.",
+    "postalCode": "Drug today artist year. Government write al",
+    "postOfficeBoxNumber": "Machine course record another without politics. History five rich a",
+    "streetNr": "Purpose wear physical tough. Water staff media information your few thing. Enter sometimes play supp",
+    "district": "Down federal once PM create piece class green. Let structure bed top seem different television. Parent order bit story."
+  },
+  "areaServed": "Author project kitchen me local boy. Officer society section sort deal choose gas.",
+  "rt": [
+    "oic.r.sensor.carbondioxide"
+  ],
+  "value": true,
+  "measurement": 339.0,
+  "precision": 532.9,
+  "n": "Politics water fall woman study. Marriage scientist itself i",
+  "range": [
+    141.8,
+    193.5
+  ],
+  "step": 87.6,
+  "if": [
+    "oic.if.baseline",
+    "oic.if.s"
+  ],
+  "type": "CO2"
 }
