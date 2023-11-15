@@ -1,100 +1,100 @@
 {
-    "id": "urn:ngsi-ld:Illuminance:id:SIWE:31441837",
-    "dateCreated": {
-        "type": "DateTime",
-        "value": "1997-03-30T08:35:43Z"
-    },
-    "dateModified": {
-        "type": "DateTime",
-        "value": "1978-11-29T12:38:41Z"
-    },
-    "source": {
-        "type": "Text",
-        "value": "Price total activity perform item re"
-    },
-    "name": {
-        "type": "Text",
-        "value": "Prove as morning person. Believe close fall bag interest. Pm something opportunity million political."
-    },
-    "alternateName": {
-        "type": "Text",
-        "value": "Buy woman church. News chair product whom which. Form minute society prevent. Only lose store science citizen dream modern."
-    },
-    "description": {
-        "type": "Text",
-        "value": "Expert past lead find few save inside."
-    },
-    "dataProvider": {
-        "type": "Text",
-        "value": "Cultural exactly eye result. Test defense them audience. Reveal event find team."
-    },
-    "owner": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:Illuminance:items:VTNJ:81104321",
-            "urn:ngsi-ld:Illuminance:items:ENYO:05623287"
-        ]
-    },
-    "seeAlso": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:Illuminance:items:JPEY:65902555"
-        ]
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                20.7452555,
-                92.717322
-            ]
-        }
-    },
-    "address": {
-        "type": "StructuredValue",
-        "value": {
-            "streetAddress": "Market office future secon",
-            "addressLocality": "Stage watch win. Serve customer social foreign yeah lead.",
-            "addressRegion": "Discover city heavy receive medical price face. Recognize human once place together ability.",
-            "addressCountry": "Soldier century recently learn. Huge worry college so. Sort who instead audience scientist push party model.",
-            "postalCode": "Relationship government majority meeting. Popular fight voice movement par",
-            "postOfficeBoxNumber": "Question bill exist stock. Important shake sell theory. Them line contain success less practice car.",
-            "streetNr": "Site serve indicate busin",
-            "district": "Letter cultural north medical. Ever several structure. Either move gas live lose agreement test."
-        }
-    },
-    "areaServed": {
-        "type": "Text",
-        "value": "Travel accept receive draw dark. Both them account. Open national large whatever executive simple challenge."
-    },
-    "rt": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.r.sensor.illuminance"
-        ]
-    },
-    "illuminance": {
-        "type": "Number",
-        "value": 840.3
-    },
-    "n": {
-        "type": "Text",
-        "value": "Her prove adult arm care together make list. "
-    },
-    "range": {
-        "type": "StructuredValue",
-        "value": [
-            110.0,
-            567.3
-        ]
-    },
-    "if": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.if.baseline",
-            "oic.if.s"
-        ]
-    },
-    "type": "Illuminance"
+  "id": "urn:ngsi-ld:Illuminance:id:SIWE:31441837",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "1997-03-30T08:35:43Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "1978-11-29T12:38:41Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": "Price total activity perform item re"
+  },
+  "name": {
+    "type": "Text",
+    "value": "Prove as morning person. Believe close fall bag interest. Pm something opportunity million political."
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "Buy woman church. News chair product whom which. Form minute society prevent. Only lose store science citizen dream modern."
+  },
+  "description": {
+    "type": "Text",
+    "value": "Expert past lead find few save inside."
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Cultural exactly eye result. Test defense them audience. Reveal event find team."
+  },
+  "owner": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:Illuminance:items:VTNJ:81104321",
+      "urn:ngsi-ld:Illuminance:items:ENYO:05623287"
+    ]
+  },
+  "seeAlso": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:Illuminance:items:JPEY:65902555"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        20.7452555,
+        92.717322
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "Market office future secon",
+      "addressLocality": "Stage watch win. Serve customer social foreign yeah lead.",
+      "addressRegion": "Discover city heavy receive medical price face. Recognize human once place together ability.",
+      "addressCountry": "Soldier century recently learn. Huge worry college so. Sort who instead audience scientist push party model.",
+      "postalCode": "Relationship government majority meeting. Popular fight voice movement par",
+      "postOfficeBoxNumber": "Question bill exist stock. Important shake sell theory. Them line contain success less practice car.",
+      "streetNr": "Site serve indicate busin",
+      "district": "Letter cultural north medical. Ever several structure. Either move gas live lose agreement test."
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "Travel accept receive draw dark. Both them account. Open national large whatever executive simple challenge."
+  },
+  "rt": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.r.sensor.illuminance"
+    ]
+  },
+  "illuminance": {
+    "type": "Number",
+    "value": 840.3
+  },
+  "n": {
+    "type": "Text",
+    "value": "Her prove adult arm care together make list. "
+  },
+  "range": {
+    "type": "StructuredValue",
+    "value": [
+      110.0,
+      567.3
+    ]
+  },
+  "if": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.if.baseline",
+      "oic.if.s"
+    ]
+  },
+  "type": "Illuminance"
 }
