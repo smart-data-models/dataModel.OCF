@@ -1,107 +1,107 @@
 {
-    "id": "urn:ngsi-ld:HbA1c:id:NUUA:84448495",
-    "dateCreated": {
-        "type": "DateTime",
-        "value": "1978-03-13T05:35:12Z"
-    },
-    "dateModified": {
-        "type": "DateTime",
-        "value": "1985-01-29T17:46:14Z"
-    },
-    "source": {
-        "type": "Text",
-        "value": "Amount majority start money school statement decade begin. Senior raise suggest bill firm book property."
-    },
-    "name": {
-        "type": "Text",
-        "value": "Projec"
-    },
-    "alternateName": {
-        "type": "Text",
-        "value": "Surface difficult view same oil. Because girl protect buy window cell. Control section statement."
-    },
-    "description": {
-        "type": "Text",
-        "value": "Long soldier successful everything. Presiden"
-    },
-    "dataProvider": {
-        "type": "Text",
-        "value": "Include view probably full. Rate view lot. Against hope enjoy "
-    },
-    "owner": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:HbA1c:items:ISKK:07346260",
-            "urn:ngsi-ld:HbA1c:items:KENT:72458444"
-        ]
-    },
-    "seeAlso": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:HbA1c:items:LXIT:42668919"
-        ]
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                40.9928635,
-                -6.596466
-            ]
-        }
-    },
-    "address": {
-        "type": "StructuredValue",
-        "value": {
-            "streetAddress": "Himself give already authority.",
-            "addressLocality": "Much heart middle method live audience. Than campaign and week center respond. Approach whether di",
-            "addressRegion": "Cost give sea reveal coach. Blue still not father risk million will adul",
-            "addressCountry": "Employee you floor form. Financial she attention. Before military method far consider my we.",
-            "postalCode": "Sound hear image admit. Director",
-            "postOfficeBoxNumber": "Wall a gun pressure. Smile cultural hair stop. Wall increase involve family nature teacher.",
-            "streetNr": "Dinner business response draw. Scene stuff Mr site again.",
-            "district": "Seven recently husband care PM author company. History recent series price."
-        }
-    },
-    "areaServed": {
-        "type": "Text",
-        "value": "Sound summer part have speak expect morning. Line report out process me. Along want experience space."
-    },
-    "rt": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.r.glucose.hba1c"
-        ]
-    },
-    "hba1c": {
-        "type": "Number",
-        "value": 8.0
-    },
-    "range": {
-        "type": "StructuredValue",
-        "value": [
-            765.7,
-            907.2
-        ]
-    },
-    "step": {
-        "type": "Number",
-        "value": 962.1
-    },
-    "precision": {
-        "type": "Number",
-        "value": 285.2
-    },
-    "n": {
-        "type": "Text",
-        "value": "True suffer scene skin. Involve view culture themselves brothe"
-    },
-    "if": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.if.s"
-        ]
-    },
-    "type": "HbA1c"
+  "id": "urn:ngsi-ld:HbA1c:id:NUUA:84448495",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "1978-03-13T05:35:12Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "1985-01-29T17:46:14Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": "Amount majority start money school statement decade begin. Senior raise suggest bill firm book property."
+  },
+  "name": {
+    "type": "Text",
+    "value": "Projec"
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "Surface difficult view same oil. Because girl protect buy window cell. Control section statement."
+  },
+  "description": {
+    "type": "Text",
+    "value": "Long soldier successful everything. Presiden"
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Include view probably full. Rate view lot. Against hope enjoy "
+  },
+  "owner": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:HbA1c:items:ISKK:07346260",
+      "urn:ngsi-ld:HbA1c:items:KENT:72458444"
+    ]
+  },
+  "seeAlso": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:HbA1c:items:LXIT:42668919"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        40.9928635,
+        -6.596466
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "Himself give already authority.",
+      "addressLocality": "Much heart middle method live audience. Than campaign and week center respond. Approach whether di",
+      "addressRegion": "Cost give sea reveal coach. Blue still not father risk million will adul",
+      "addressCountry": "Employee you floor form. Financial she attention. Before military method far consider my we.",
+      "postalCode": "Sound hear image admit. Director",
+      "postOfficeBoxNumber": "Wall a gun pressure. Smile cultural hair stop. Wall increase involve family nature teacher.",
+      "streetNr": "Dinner business response draw. Scene stuff Mr site again.",
+      "district": "Seven recently husband care PM author company. History recent series price."
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "Sound summer part have speak expect morning. Line report out process me. Along want experience space."
+  },
+  "rt": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.r.glucose.hba1c"
+    ]
+  },
+  "hba1c": {
+    "type": "Number",
+    "value": 8.0
+  },
+  "range": {
+    "type": "StructuredValue",
+    "value": [
+      765.7,
+      907.2
+    ]
+  },
+  "step": {
+    "type": "Number",
+    "value": 962.1
+  },
+  "precision": {
+    "type": "Number",
+    "value": 285.2
+  },
+  "n": {
+    "type": "Text",
+    "value": "True suffer scene skin. Involve view culture themselves brothe"
+  },
+  "if": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.if.s"
+    ]
+  },
+  "type": "HbA1c"
 }
