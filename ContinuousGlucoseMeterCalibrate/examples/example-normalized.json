@@ -1,111 +1,111 @@
 {
-    "id": "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:id:QGWE:64356631",
-    "dateCreated": {
-        "type": "DateTime",
-        "value": "1973-12-14T21:01:55Z"
-    },
-    "dateModified": {
-        "type": "DateTime",
-        "value": "1992-12-27T22:50:57Z"
-    },
-    "source": {
-        "type": "Text",
-        "value": "Plant look central interview. Girl night as guess lot. Range wait then."
-    },
-    "name": {
-        "type": "Text",
-        "value": "Night that city stand nig"
-    },
-    "alternateName": {
-        "type": "Text",
-        "value": "Score door specific kind white land Mr. Defense south final modern. Knowledge also none catch."
-    },
-    "description": {
-        "type": "Text",
-        "value": "Center environment need rock training people. Ahead soon according teach long. Character eat along smile."
-    },
-    "dataProvider": {
-        "type": "Text",
-        "value": "Media reduce theory smile economy stop nothing. Deal statement argue section end agent. Story law"
-    },
-    "owner": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:items:HWYT:79494000",
-            "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:items:KBKO:89611627"
-        ]
-    },
-    "seeAlso": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:items:IXON:79345007"
-        ]
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                44.4290575,
-                113.521212
-            ]
-        }
-    },
-    "address": {
-        "type": "StructuredValue",
-        "value": {
-            "streetAddress": "Movement country son develop hospital. Alone usually drop realize",
-            "addressLocality": "Dark individual along this kind that. Practice large like center pe",
-            "addressRegion": "Why movement red begin task benefit conference exist. Claim",
-            "addressCountry": "Quality people",
-            "postalCode": "At read trial month. Result everything build approach collection. Open inside property sport ",
-            "postOfficeBoxNumber": "Ahead scientist behavior clearly whom.",
-            "streetNr": "Sport interest interest drive room. Leader",
-            "district": "Practice probably life worker year watch space court. Less color low top news artist student."
-        }
-    },
-    "areaServed": {
-        "type": "Text",
-        "value": "Hold action senior bit study after certainly. Amount resource none teacher minute degree. Suppor"
-    },
-    "Cvalue": {
-        "type": "Number",
-        "value": 718.8
-    },
-    "Cstatus": {
-        "type": "Boolean",
-        "value": true
-    },
-    "rt": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.r.cgm.calibrate"
-        ]
-    },
-    "n": {
-        "type": "Text",
-        "value": "Floor might cold when e"
-    },
-    "if": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.if.rw"
-        ]
-    },
-    "range": {
-        "type": "StructuredValue",
-        "value": [
-            277.4,
-            186.8
-        ]
-    },
-    "step": {
-        "type": "Number",
-        "value": 393.0
-    },
-    "precision": {
-        "type": "Number",
-        "value": 721.9
-    },
-    "type": "ContinuousGlucoseMeterCalibrate"
+  "id": "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:id:QGWE:64356631",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "1973-12-14T21:01:55Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "1992-12-27T22:50:57Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": "Plant look central interview. Girl night as guess lot. Range wait then."
+  },
+  "name": {
+    "type": "Text",
+    "value": "Night that city stand nig"
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "Score door specific kind white land Mr. Defense south final modern. Knowledge also none catch."
+  },
+  "description": {
+    "type": "Text",
+    "value": "Center environment need rock training people. Ahead soon according teach long. Character eat along smile."
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Media reduce theory smile economy stop nothing. Deal statement argue section end agent. Story law"
+  },
+  "owner": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:items:HWYT:79494000",
+      "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:items:KBKO:89611627"
+    ]
+  },
+  "seeAlso": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:items:IXON:79345007"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        44.4290575,
+        113.521212
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "Movement country son develop hospital. Alone usually drop realize",
+      "addressLocality": "Dark individual along this kind that. Practice large like center pe",
+      "addressRegion": "Why movement red begin task benefit conference exist. Claim",
+      "addressCountry": "Quality people",
+      "postalCode": "At read trial month. Result everything build approach collection. Open inside property sport ",
+      "postOfficeBoxNumber": "Ahead scientist behavior clearly whom.",
+      "streetNr": "Sport interest interest drive room. Leader",
+      "district": "Practice probably life worker year watch space court. Less color low top news artist student."
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "Hold action senior bit study after certainly. Amount resource none teacher minute degree. Suppor"
+  },
+  "Cvalue": {
+    "type": "Number",
+    "value": 718.8
+  },
+  "Cstatus": {
+    "type": "Boolean",
+    "value": true
+  },
+  "rt": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.r.cgm.calibrate"
+    ]
+  },
+  "n": {
+    "type": "Text",
+    "value": "Floor might cold when e"
+  },
+  "if": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.if.rw"
+    ]
+  },
+  "range": {
+    "type": "StructuredValue",
+    "value": [
+      277.4,
+      186.8
+    ]
+  },
+  "step": {
+    "type": "Number",
+    "value": 393.0
+  },
+  "precision": {
+    "type": "Number",
+    "value": 721.9
+  },
+  "type": "ContinuousGlucoseMeterCalibrate"
 }
