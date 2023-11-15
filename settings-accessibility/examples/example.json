@@ -1,51 +1,51 @@
 {
-    "id": "urn:ngsi-ld:settings-accessibility:id:UYNP:54359209",
-    "dateCreated": "1999-03-01T07:36:19Z",
-    "dateModified": "1971-10-23T22:48:05Z",
-    "source": "Positive people government measure. Open though window fund happy dinner political. School full",
-    "name": "Thousand allow senior third condition lay. Group success floor foot. Friend expert check ability bar at. Wife lead cover by talk head before.",
-    "alternateName": "Mr represent yeah believe me you responsibility. Bill record com",
-    "description": "Difficult little despite foot. First race maintain be road seem test investment.",
-    "dataProvider": "Court five fine community together next entire. Somebody force century hot ",
-    "owner": [
-        "urn:ngsi-ld:settings-accessibility:items:EXWB:77961969",
-        "urn:ngsi-ld:settings-accessibility:items:BXLI:79322410"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:settings-accessibility:items:DWXN:61706508"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            -82.4260675,
-            -77.021835
-        ]
-    },
-    "address": {
-        "streetAddress": "A same interview she. Cold h",
-        "addressLocality": "Enter size line security box. C",
-        "addressRegion": "Next mouth throw believe. Possible street wrong finally. My commun",
-        "addressCountry": "Clearly character simply couple issue small tel",
-        "postalCode": "Detail office article indicate industry sister result military. Several may letter tonight hotel. So threat personal size couple way.",
-        "postOfficeBoxNumber": "Tonight television apply remember personal whether father. While standard condition economic safe decide nearly.",
-        "streetNr": "Lose between that peace site. Another condition stage product control month.",
-        "district": "Record move society charge wall. Area degree budget. West according late."
-    },
-    "areaServed": "Avoid civil c",
-    "rt": [
-        "oic.r.settings.accessibility"
-    ],
-    "if": [
-        "oic.if.baseline"
-    ],
-    "voice-guide": false,
-    "video-description": false,
-    "caption": false,
-    "caption-mode": "Serve analysis ahead space challenge at resource. Century city wide policy order. Almost can mo",
-    "supported-caption-modes": [
-        "Since attack stuff force lay eight class end."
-    ],
-    "high-contrast": true,
-    "enlarge": false,
-    "type": "settings-accessibility"
+  "id": "urn:ngsi-ld:settings-accessibility:id:UYNP:54359209",
+  "dateCreated": "1999-03-01T07:36:19Z",
+  "dateModified": "1971-10-23T22:48:05Z",
+  "source": "Positive people government measure. Open though window fund happy dinner political. School full",
+  "name": "Thousand allow senior third condition lay. Group success floor foot. Friend expert check ability bar at. Wife lead cover by talk head before.",
+  "alternateName": "Mr represent yeah believe me you responsibility. Bill record com",
+  "description": "Difficult little despite foot. First race maintain be road seem test investment.",
+  "dataProvider": "Court five fine community together next entire. Somebody force century hot ",
+  "owner": [
+    "urn:ngsi-ld:settings-accessibility:items:EXWB:77961969",
+    "urn:ngsi-ld:settings-accessibility:items:BXLI:79322410"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:settings-accessibility:items:DWXN:61706508"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -82.4260675,
+      -77.021835
+    ]
+  },
+  "address": {
+    "streetAddress": "A same interview she. Cold h",
+    "addressLocality": "Enter size line security box. C",
+    "addressRegion": "Next mouth throw believe. Possible street wrong finally. My commun",
+    "addressCountry": "Clearly character simply couple issue small tel",
+    "postalCode": "Detail office article indicate industry sister result military. Several may letter tonight hotel. So threat personal size couple way.",
+    "postOfficeBoxNumber": "Tonight television apply remember personal whether father. While standard condition economic safe decide nearly.",
+    "streetNr": "Lose between that peace site. Another condition stage product control month.",
+    "district": "Record move society charge wall. Area degree budget. West according late."
+  },
+  "areaServed": "Avoid civil c",
+  "rt": [
+    "oic.r.settings.accessibility"
+  ],
+  "if": [
+    "oic.if.baseline"
+  ],
+  "voice-guide": false,
+  "video-description": false,
+  "caption": false,
+  "caption-mode": "Serve analysis ahead space challenge at resource. Century city wide policy order. Almost can mo",
+  "supported-caption-modes": [
+    "Since attack stuff force lay eight class end."
+  ],
+  "high-contrast": true,
+  "enlarge": false,
+  "type": "settings-accessibility"
 }
