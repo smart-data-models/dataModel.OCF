@@ -1,107 +1,107 @@
 {
-    "id": "urn:ngsi-ld:ecomode:id:AHBA:98025070",
-    "dateCreated": {
-        "type": "DateTime",
-        "value": "1985-05-13T16:22:28Z"
-    },
-    "dateModified": {
-        "type": "DateTime",
-        "value": "2014-07-01T04:44:52Z"
-    },
-    "source": {
-        "type": "Text",
-        "value": "Start general professional career. Large center fin"
-    },
-    "name": {
-        "type": "Text",
-        "value": "North but west. About catch than m"
-    },
-    "alternateName": {
-        "type": "Text",
-        "value": "Sea stuff no response."
-    },
-    "description": {
-        "type": "Text",
-        "value": "Billion pick report past always future scene heavy. Usually already bed fall character door green save. Front sound war address morning explain."
-    },
-    "dataProvider": {
-        "type": "Text",
-        "value": "Significant now energy. Lay return identify. Anything event yet effect quite reflect upon."
-    },
-    "owner": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:ecomode:items:SKZH:38856431",
-            "urn:ngsi-ld:ecomode:items:BSEL:98522509"
-        ]
-    },
-    "seeAlso": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:ecomode:items:FAZE:54457696"
-        ]
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                62.6331415,
-                -156.591688
-            ]
-        }
-    },
-    "address": {
-        "type": "StructuredValue",
-        "value": {
-            "streetAddress": "Game act return travel. Secti",
-            "addressLocality": "Someone painting senior entire expect investm",
-            "addressRegion": "Guess we no in pass sound. Tonight gun word citizen create. Physical market room eat through ever.",
-            "addressCountry": "Of door research tell. When clearly type up",
-            "postalCode": "Action econ",
-            "postOfficeBoxNumber": "Let stop camera report foreign agency list miss.",
-            "streetNr": "Not girl above course.",
-            "district": "Likely fire"
-        }
-    },
-    "areaServed": {
-        "type": "Text",
-        "value": "Throughout treat relate respond. Role mind statement."
-    },
-    "rt": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.r.ecomode"
-        ]
-    },
-    "modes": {
-        "type": "StructuredValue",
-        "value": [
-            "disabled",
-            "enabled"
-        ]
-    },
-    "supportedModes": {
-        "type": "StructuredValue",
-        "value": [
-            "notsupported",
-            "disabled"
-        ]
-    },
-    "adminforced": {
-        "type": "Boolean",
-        "value": true
-    },
-    "n": {
-        "type": "Text",
-        "value": "Spend cut end red. S"
-    },
-    "if": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.if.a",
-            "oic.if.baseline"
-        ]
-    },
-    "type": "ecomode"
+  "id": "urn:ngsi-ld:ecomode:id:AHBA:98025070",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "1985-05-13T16:22:28Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "2014-07-01T04:44:52Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": "Start general professional career. Large center fin"
+  },
+  "name": {
+    "type": "Text",
+    "value": "North but west. About catch than m"
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "Sea stuff no response."
+  },
+  "description": {
+    "type": "Text",
+    "value": "Billion pick report past always future scene heavy. Usually already bed fall character door green save. Front sound war address morning explain."
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Significant now energy. Lay return identify. Anything event yet effect quite reflect upon."
+  },
+  "owner": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:ecomode:items:SKZH:38856431",
+      "urn:ngsi-ld:ecomode:items:BSEL:98522509"
+    ]
+  },
+  "seeAlso": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:ecomode:items:FAZE:54457696"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        62.6331415,
+        -156.591688
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "Game act return travel. Secti",
+      "addressLocality": "Someone painting senior entire expect investm",
+      "addressRegion": "Guess we no in pass sound. Tonight gun word citizen create. Physical market room eat through ever.",
+      "addressCountry": "Of door research tell. When clearly type up",
+      "postalCode": "Action econ",
+      "postOfficeBoxNumber": "Let stop camera report foreign agency list miss.",
+      "streetNr": "Not girl above course.",
+      "district": "Likely fire"
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "Throughout treat relate respond. Role mind statement."
+  },
+  "rt": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.r.ecomode"
+    ]
+  },
+  "modes": {
+    "type": "StructuredValue",
+    "value": [
+      "disabled",
+      "enabled"
+    ]
+  },
+  "supportedModes": {
+    "type": "StructuredValue",
+    "value": [
+      "notsupported",
+      "disabled"
+    ]
+  },
+  "adminforced": {
+    "type": "Boolean",
+    "value": true
+  },
+  "n": {
+    "type": "Text",
+    "value": "Spend cut end red. S"
+  },
+  "if": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.if.a",
+      "oic.if.baseline"
+    ]
+  },
+  "type": "ecomode"
 }
