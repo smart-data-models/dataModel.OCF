@@ -1,45 +1,45 @@
 {
-    "id": "urn:ngsi-ld:BatteryMaterial:id:YHLJ:63936175",
-    "dateCreated": "1981-05-13T21:09:19Z",
-    "dateModified": "1980-07-16T20:07:15Z",
-    "source": "I",
-    "name": "Particular garden free effort for film.",
-    "alternateName": "Start performance approach Republican. Tough board leave baby security item. Law way inside.",
-    "description": "Much wish look bed gun store. Boy present wide old.",
-    "dataProvider": "Indeed white could account benefit produce. Cultural anyone southern you letter board watch.",
-    "owner": [
-        "urn:ngsi-ld:BatteryMaterial:items:WJNR:66047443",
-        "urn:ngsi-ld:BatteryMaterial:items:HPXL:60042311"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:BatteryMaterial:items:KLOB:32503034"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            10.1892095,
-            -5.495683
-        ]
-    },
-    "address": {
-        "streetAddress": "Information raise various American I structure. Indeed public oil student rather discuss.",
-        "addressLocality": "Your dark result just. Small run true.",
-        "addressRegion": "Agency training need. Certainly work open in.",
-        "addressCountry": "Power daughter suffer store else. Offer real leg side.",
-        "postalCode": "Store world standard middle town how ten. By so tough sometimes most agent. Smile agency sometimes west.",
-        "postOfficeBoxNumber": "Daughter father media Democrat city relationship ball. Cultural across space top lot. Understand team necessary PM explain enough near.",
-        "streetNr": "Bit today already. Table major pull garden seat. Together artist great include. Such consider partner onto treatment.",
-        "district": ""
-    },
-    "areaServed": "Community career science. Play reason skill matter sometimes seem direction produce. Wide idea else true military explain.",
-    "rt": [
-        "oic.r.batterymaterial"
-    ],
-    "material": "Zinc Carbon",
-    "n": "Fast to this identify summer. Signifi",
-    "if": [
-        "oic.if.s",
-        "oic.if.baseline"
-    ],
-    "type": "BatteryMaterial"
+  "id": "urn:ngsi-ld:BatteryMaterial:id:YHLJ:63936175",
+  "dateCreated": "1981-05-13T21:09:19Z",
+  "dateModified": "1980-07-16T20:07:15Z",
+  "source": "I",
+  "name": "Particular garden free effort for film.",
+  "alternateName": "Start performance approach Republican. Tough board leave baby security item. Law way inside.",
+  "description": "Much wish look bed gun store. Boy present wide old.",
+  "dataProvider": "Indeed white could account benefit produce. Cultural anyone southern you letter board watch.",
+  "owner": [
+    "urn:ngsi-ld:BatteryMaterial:items:WJNR:66047443",
+    "urn:ngsi-ld:BatteryMaterial:items:HPXL:60042311"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:BatteryMaterial:items:KLOB:32503034"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      10.1892095,
+      -5.495683
+    ]
+  },
+  "address": {
+    "streetAddress": "Information raise various American I structure. Indeed public oil student rather discuss.",
+    "addressLocality": "Your dark result just. Small run true.",
+    "addressRegion": "Agency training need. Certainly work open in.",
+    "addressCountry": "Power daughter suffer store else. Offer real leg side.",
+    "postalCode": "Store world standard middle town how ten. By so tough sometimes most agent. Smile agency sometimes west.",
+    "postOfficeBoxNumber": "Daughter father media Democrat city relationship ball. Cultural across space top lot. Understand team necessary PM explain enough near.",
+    "streetNr": "Bit today already. Table major pull garden seat. Together artist great include. Such consider partner onto treatment.",
+    "district": ""
+  },
+  "areaServed": "Community career science. Play reason skill matter sometimes seem direction produce. Wide idea else true military explain.",
+  "rt": [
+    "oic.r.batterymaterial"
+  ],
+  "material": "Zinc Carbon",
+  "n": "Fast to this identify summer. Signifi",
+  "if": [
+    "oic.if.s",
+    "oic.if.baseline"
+  ],
+  "type": "BatteryMaterial"
 }
