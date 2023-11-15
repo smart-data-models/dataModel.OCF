@@ -1,93 +1,93 @@
 {
-    "id": "urn:ngsi-ld:BatteryMaterial:id:YHLJ:63936175",
-    "dateCreated": {
-        "type": "DateTime",
-        "value": "1981-05-13T21:09:19Z"
-    },
-    "dateModified": {
-        "type": "DateTime",
-        "value": "1980-07-16T20:07:15Z"
-    },
-    "source": {
-        "type": "Text",
-        "value": "I"
-    },
-    "name": {
-        "type": "Text",
-        "value": "Particular garden free effort for film."
-    },
-    "alternateName": {
-        "type": "Text",
-        "value": "Start performance approach Republican. Tough board leave baby security item. Law way inside."
-    },
-    "description": {
-        "type": "Text",
-        "value": "Much wish look bed gun store. Boy present wide old."
-    },
-    "dataProvider": {
-        "type": "Text",
-        "value": "Indeed white could account benefit produce. Cultural anyone southern you letter board watch."
-    },
-    "owner": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:BatteryMaterial:items:WJNR:66047443",
-            "urn:ngsi-ld:BatteryMaterial:items:HPXL:60042311"
-        ]
-    },
-    "seeAlso": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:BatteryMaterial:items:KLOB:32503034"
-        ]
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                10.1892095,
-                -5.495683
-            ]
-        }
-    },
-    "address": {
-        "type": "StructuredValue",
-        "value": {
-            "streetAddress": "Information raise various American I structure. Indeed public oil student rather discuss.",
-            "addressLocality": "Your dark result just. Small run true.",
-            "addressRegion": "Agency training need. Certainly work open in.",
-            "addressCountry": "Power daughter suffer store else. Offer real leg side.",
-            "postalCode": "Store world standard middle town how ten. By so tough sometimes most agent. Smile agency sometimes west.",
-            "postOfficeBoxNumber": "Daughter father media Democrat city relationship ball. Cultural across space top lot. Understand team necessary PM explain enough near.",
-            "streetNr": "Bit today already. Table major pull garden seat. Together artist great include. Such consider partner onto treatment.",
-            "district": ""
-        }
-    },
-    "areaServed": {
-        "type": "Text",
-        "value": "Community career science. Play reason skill matter sometimes seem direction produce. Wide idea else true military explain."
-    },
-    "rt": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.r.batterymaterial"
-        ]
-    },
-    "material": {
-        "type": "Text",
-        "value": "Zinc Carbon"
-    },
-    "n": {
-        "type": "Text",
-        "value": "Fast to this identify summer. Signifi"
-    },
-    "if": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.if.s",
-            "oic.if.baseline"
-        ]
-    },
-    "type": "BatteryMaterial"
+  "id": "urn:ngsi-ld:BatteryMaterial:id:YHLJ:63936175",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "1981-05-13T21:09:19Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "1980-07-16T20:07:15Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": "I"
+  },
+  "name": {
+    "type": "Text",
+    "value": "Particular garden free effort for film."
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "Start performance approach Republican. Tough board leave baby security item. Law way inside."
+  },
+  "description": {
+    "type": "Text",
+    "value": "Much wish look bed gun store. Boy present wide old."
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Indeed white could account benefit produce. Cultural anyone southern you letter board watch."
+  },
+  "owner": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:BatteryMaterial:items:WJNR:66047443",
+      "urn:ngsi-ld:BatteryMaterial:items:HPXL:60042311"
+    ]
+  },
+  "seeAlso": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:BatteryMaterial:items:KLOB:32503034"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        10.1892095,
+        -5.495683
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "Information raise various American I structure. Indeed public oil student rather discuss.",
+      "addressLocality": "Your dark result just. Small run true.",
+      "addressRegion": "Agency training need. Certainly work open in.",
+      "addressCountry": "Power daughter suffer store else. Offer real leg side.",
+      "postalCode": "Store world standard middle town how ten. By so tough sometimes most agent. Smile agency sometimes west.",
+      "postOfficeBoxNumber": "Daughter father media Democrat city relationship ball. Cultural across space top lot. Understand team necessary PM explain enough near.",
+      "streetNr": "Bit today already. Table major pull garden seat. Together artist great include. Such consider partner onto treatment.",
+      "district": ""
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "Community career science. Play reason skill matter sometimes seem direction produce. Wide idea else true military explain."
+  },
+  "rt": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.r.batterymaterial"
+    ]
+  },
+  "material": {
+    "type": "Text",
+    "value": "Zinc Carbon"
+  },
+  "n": {
+    "type": "Text",
+    "value": "Fast to this identify summer. Signifi"
+  },
+  "if": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.if.s",
+      "oic.if.baseline"
+    ]
+  },
+  "type": "BatteryMaterial"
 }
