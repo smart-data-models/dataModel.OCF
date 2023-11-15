@@ -1,45 +1,45 @@
 {
-    "id": "urn:ngsi-ld:Motion:id:WJTJ:57187676",
-    "dateCreated": "2019-07-10T18:06:29Z",
-    "dateModified": "2001-04-25T00:12:11Z",
-    "source": "Home expert watch result. Necessary bill picture time mean protect arrive. Sort home generation hope activity ",
-    "name": "Appear close than because chair article interest. Serious another red speech. Science weight house w",
-    "alternateName": "Training hard own six himself land guess kind. Fact travel organization be or. College most attention d",
-    "description": "Wonder picture bed ",
-    "dataProvider": "Loss sta",
-    "owner": [
-        "urn:ngsi-ld:Motion:items:KBNW:57561673",
-        "urn:ngsi-ld:Motion:items:JGNJ:31536690"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:Motion:items:OMHS:02373339"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            57.4145695,
-            -150.804706
-        ]
-    },
-    "address": {
-        "streetAddress": "Color mother believe. Ahead miss watch board middle me a",
-        "addressLocality": "Bit various front chair like middle stat",
-        "addressRegion": "Service design medical we.",
-        "addressCountry": "Career official outside Mr environment far. Card yeah productio",
-        "postalCode": "Center politics theory interesting population letter. Edge strong how question.",
-        "postOfficeBoxNumber": "Learn buy program under. Read glass enough fine key fall seat. Whom example study we.",
-        "streetNr": "Sell produce business majority drug simple since. Me arrive four four small head.",
-        "district": "Exactly what every support. Even mean exactly resource decision southern fight. Huge dark street."
-    },
-    "areaServed": "Project wide teacher myself card scene. Dog get we.",
-    "rt": [
-        "oic.r.sensor.motion"
-    ],
-    "value": true,
-    "n": "Shake half design campaign.",
-    "if": [
-        "oic.if.s",
-        "oic.if.baseline"
-    ],
-    "type": "Motion"
+  "id": "urn:ngsi-ld:Motion:id:WJTJ:57187676",
+  "dateCreated": "2019-07-10T18:06:29Z",
+  "dateModified": "2001-04-25T00:12:11Z",
+  "source": "Home expert watch result. Necessary bill picture time mean protect arrive. Sort home generation hope activity ",
+  "name": "Appear close than because chair article interest. Serious another red speech. Science weight house w",
+  "alternateName": "Training hard own six himself land guess kind. Fact travel organization be or. College most attention d",
+  "description": "Wonder picture bed ",
+  "dataProvider": "Loss sta",
+  "owner": [
+    "urn:ngsi-ld:Motion:items:KBNW:57561673",
+    "urn:ngsi-ld:Motion:items:JGNJ:31536690"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:Motion:items:OMHS:02373339"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      57.4145695,
+      -150.804706
+    ]
+  },
+  "address": {
+    "streetAddress": "Color mother believe. Ahead miss watch board middle me a",
+    "addressLocality": "Bit various front chair like middle stat",
+    "addressRegion": "Service design medical we.",
+    "addressCountry": "Career official outside Mr environment far. Card yeah productio",
+    "postalCode": "Center politics theory interesting population letter. Edge strong how question.",
+    "postOfficeBoxNumber": "Learn buy program under. Read glass enough fine key fall seat. Whom example study we.",
+    "streetNr": "Sell produce business majority drug simple since. Me arrive four four small head.",
+    "district": "Exactly what every support. Even mean exactly resource decision southern fight. Huge dark street."
+  },
+  "areaServed": "Project wide teacher myself card scene. Dog get we.",
+  "rt": [
+    "oic.r.sensor.motion"
+  ],
+  "value": true,
+  "n": "Shake half design campaign.",
+  "if": [
+    "oic.if.s",
+    "oic.if.baseline"
+  ],
+  "type": "Motion"
 }
