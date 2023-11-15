@@ -1,127 +1,127 @@
 {
-    "id": "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:id:QSII:08545277",
-    "dateCreated": {
-        "type": "DateTime",
-        "value": "2011-06-12T08:24:11Z"
-    },
-    "dateModified": {
-        "type": "DateTime",
-        "value": "1994-09-18T20:29:43Z"
-    },
-    "source": {
-        "type": "Text",
-        "value": "For or prevent right still if rich. Us maintain event. Meeting fish show nor only. Here manage threat profes"
-    },
-    "name": {
-        "type": "Text",
-        "value": "Stuff alone team responsibility. Yourself look c"
-    },
-    "alternateName": {
-        "type": "Text",
-        "value": "Court particularly song lay follow film movie. Response size character tax."
-    },
-    "description": {
-        "type": "Text",
-        "value": "Card color them teach drug college management. Good director beyond exactly heavy family."
-    },
-    "dataProvider": {
-        "type": "Text",
-        "value": "Audience fill free position. Debate imagine court throughout."
-    },
-    "owner": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:EUJH:30934965",
-            "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:RTPX:39835000"
-        ]
-    },
-    "seeAlso": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:RQAB:55271114"
-        ]
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                69.193737,
-                -84.724615
-            ]
-        }
-    },
-    "address": {
-        "type": "StructuredValue",
-        "value": {
-            "streetAddress": "Finally born probably TV realize pattern available tax. Say of",
-            "addressLocality": "Water culture respond game feel debate. No make third.",
-            "addressRegion": "One family window eye area approach people along. Prepare order around play production difference ball true.",
-            "addressCountry": "Identify administratio",
-            "postalCode": "Need bad always small some apply.",
-            "postOfficeBoxNumber": "House clearly second improve human. Box main outside throughout discussion evidence beautiful.",
-            "streetNr": "Leg research force worker strategy name. Knowledge stuff person change magazine hard well.",
-            "district": "Quite author"
-        }
-    },
-    "areaServed": {
-        "type": "Text",
-        "value": "Rise item research study phone. Co"
-    },
-    "plow": {
-        "type": "Number",
-        "value": 53.9
-    },
-    "phigh": {
-        "type": "Number",
-        "value": 705.7
-    },
-    "dhypo": {
-        "type": "Number",
-        "value": 755.1
-    },
-    "dhyper": {
-        "type": "Number",
-        "value": 517.6
-    },
-    "gir": {
-        "type": "Number",
-        "value": 375.6
-    },
-    "gdr": {
-        "type": "Number",
-        "value": 263.1
-    },
-    "rt": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.r.cgm.threshold"
-        ]
-    },
-    "n": {
-        "type": "Text",
-        "value": "Design president specific approa"
-    },
-    "if": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.if.rw"
-        ]
-    },
-    "range": {
-        "type": "StructuredValue",
-        "value": [
-            13.4,
-            330.3
-        ]
-    },
-    "step": {
-        "type": "Number",
-        "value": 872.4
-    },
-    "precision": {
-        "type": "Number",
-        "value": 23.4
-    },
-    "type": "ContinuousGlucoseMeterThreshold"
+  "id": "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:id:QSII:08545277",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "2011-06-12T08:24:11Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "1994-09-18T20:29:43Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": "For or prevent right still if rich. Us maintain event. Meeting fish show nor only. Here manage threat profes"
+  },
+  "name": {
+    "type": "Text",
+    "value": "Stuff alone team responsibility. Yourself look c"
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "Court particularly song lay follow film movie. Response size character tax."
+  },
+  "description": {
+    "type": "Text",
+    "value": "Card color them teach drug college management. Good director beyond exactly heavy family."
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Audience fill free position. Debate imagine court throughout."
+  },
+  "owner": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:EUJH:30934965",
+      "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:RTPX:39835000"
+    ]
+  },
+  "seeAlso": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:RQAB:55271114"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        69.193737,
+        -84.724615
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "Finally born probably TV realize pattern available tax. Say of",
+      "addressLocality": "Water culture respond game feel debate. No make third.",
+      "addressRegion": "One family window eye area approach people along. Prepare order around play production difference ball true.",
+      "addressCountry": "Identify administratio",
+      "postalCode": "Need bad always small some apply.",
+      "postOfficeBoxNumber": "House clearly second improve human. Box main outside throughout discussion evidence beautiful.",
+      "streetNr": "Leg research force worker strategy name. Knowledge stuff person change magazine hard well.",
+      "district": "Quite author"
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "Rise item research study phone. Co"
+  },
+  "plow": {
+    "type": "Number",
+    "value": 53.9
+  },
+  "phigh": {
+    "type": "Number",
+    "value": 705.7
+  },
+  "dhypo": {
+    "type": "Number",
+    "value": 755.1
+  },
+  "dhyper": {
+    "type": "Number",
+    "value": 517.6
+  },
+  "gir": {
+    "type": "Number",
+    "value": 375.6
+  },
+  "gdr": {
+    "type": "Number",
+    "value": 263.1
+  },
+  "rt": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.r.cgm.threshold"
+    ]
+  },
+  "n": {
+    "type": "Text",
+    "value": "Design president specific approa"
+  },
+  "if": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.if.rw"
+    ]
+  },
+  "range": {
+    "type": "StructuredValue",
+    "value": [
+      13.4,
+      330.3
+    ]
+  },
+  "step": {
+    "type": "Number",
+    "value": 872.4
+  },
+  "precision": {
+    "type": "Number",
+    "value": 23.4
+  },
+  "type": "ContinuousGlucoseMeterThreshold"
 }
