@@ -1,111 +1,111 @@
 {
-    "id": "urn:ngsi-ld:CO:id:DPCB:07895086",
-    "dateCreated": {
-        "type": "DateTime",
-        "value": "1982-03-28T23:23:50Z"
-    },
-    "dateModified": {
-        "type": "DateTime",
-        "value": "1993-10-04T04:14:04Z"
-    },
-    "source": {
-        "type": "Text",
-        "value": "Image throw feeling field arrive describe he. Dream road maybe ok enough turn."
-    },
-    "name": {
-        "type": "Text",
-        "value": "Unit trouble me minute compare. Administration recognize oil well billion experience"
-    },
-    "alternateName": {
-        "type": "Text",
-        "value": "To "
-    },
-    "description": {
-        "type": "Text",
-        "value": "Body teach campaign week. Item pull buy believe order manager adult."
-    },
-    "dataProvider": {
-        "type": "Text",
-        "value": "Pay indeed entire answer responsibility. Could travel crime when along. Now into pay back on at manage not."
-    },
-    "owner": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:CO:items:CXFT:79775642",
-            "urn:ngsi-ld:CO:items:VVBZ:92396579"
-        ]
-    },
-    "seeAlso": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:CO:items:CMBA:70572957"
-        ]
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                48.755996,
-                115.719262
-            ]
-        }
-    },
-    "address": {
-        "type": "StructuredValue",
-        "value": {
-            "streetAddress": "Represent control hot court glass page structure. Adult street law economy time because suffer. Give human green bar hotel daughter.",
-            "addressLocality": "Later message forget major. Discuss office plan popular turn.",
-            "addressRegion": "Number film",
-            "addressCountry": "Bad consumer young that eight ago five. Human sound various nature look natural hair",
-            "postalCode": "Case within meet instead big tax family. Nearly goal often TV. Possible true painting drug laugh.",
-            "postOfficeBoxNumber": "Art along within star",
-            "streetNr": "Wind wonder professional bill firm big administration yard. Close eye De",
-            "district": "With thought right federal. Single camer"
-        }
-    },
-    "areaServed": {
-        "type": "Text",
-        "value": "Prove occur do rest. Yard government personal body base artist set."
-    },
-    "rt": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.r.sensor.carbonmonoxide"
-        ]
-    },
+  "id": "urn:ngsi-ld:CO:id:DPCB:07895086",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "1982-03-28T23:23:50Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "1993-10-04T04:14:04Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": "Image throw feeling field arrive describe he. Dream road maybe ok enough turn."
+  },
+  "name": {
+    "type": "Text",
+    "value": "Unit trouble me minute compare. Administration recognize oil well billion experience"
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "To "
+  },
+  "description": {
+    "type": "Text",
+    "value": "Body teach campaign week. Item pull buy believe order manager adult."
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Pay indeed entire answer responsibility. Could travel crime when along. Now into pay back on at manage not."
+  },
+  "owner": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:CO:items:CXFT:79775642",
+      "urn:ngsi-ld:CO:items:VVBZ:92396579"
+    ]
+  },
+  "seeAlso": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:CO:items:CMBA:70572957"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
     "value": {
-        "type": "Boolean",
-        "value": false
-    },
-    "measurement": {
-        "type": "Number",
-        "value": 441.5
-    },
-    "precision": {
-        "type": "Number",
-        "value": 51.6
-    },
-    "n": {
-        "type": "Text",
-        "value": "Rather nature job free ed"
-    },
-    "range": {
-        "type": "StructuredValue",
-        "value": [
-            897.9,
-            389.6
-        ]
-    },
-    "step": {
-        "type": "Number",
-        "value": 635.5
-    },
-    "if": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.if.s"
-        ]
-    },
-    "type": "CO"
+      "type": "Point",
+      "coordinates": [
+        48.755996,
+        115.719262
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "Represent control hot court glass page structure. Adult street law economy time because suffer. Give human green bar hotel daughter.",
+      "addressLocality": "Later message forget major. Discuss office plan popular turn.",
+      "addressRegion": "Number film",
+      "addressCountry": "Bad consumer young that eight ago five. Human sound various nature look natural hair",
+      "postalCode": "Case within meet instead big tax family. Nearly goal often TV. Possible true painting drug laugh.",
+      "postOfficeBoxNumber": "Art along within star",
+      "streetNr": "Wind wonder professional bill firm big administration yard. Close eye De",
+      "district": "With thought right federal. Single camer"
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "Prove occur do rest. Yard government personal body base artist set."
+  },
+  "rt": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.r.sensor.carbonmonoxide"
+    ]
+  },
+  "value": {
+    "type": "Boolean",
+    "value": false
+  },
+  "measurement": {
+    "type": "Number",
+    "value": 441.5
+  },
+  "precision": {
+    "type": "Number",
+    "value": 51.6
+  },
+  "n": {
+    "type": "Text",
+    "value": "Rather nature job free ed"
+  },
+  "range": {
+    "type": "StructuredValue",
+    "value": [
+      897.9,
+      389.6
+    ]
+  },
+  "step": {
+    "type": "Number",
+    "value": 635.5
+  },
+  "if": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.if.s"
+    ]
+  },
+  "type": "CO"
 }
