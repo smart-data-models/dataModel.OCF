@@ -1,51 +1,51 @@
 {
-    "id": "urn:ngsi-ld:ContinuousGlucoseMeterSensor:id:VMKL:33852976",
-    "dateCreated": "2023-10-19T16:11:52Z",
-    "dateModified": "1983-06-12T17:45:55Z",
-    "source": "Parent chance account to explain join shoulder. Clos",
-    "name": "Expert relationship important group. Spring order chair thought message. Article thing grow management very.",
-    "alternateName": "Sit mention fly above put. Bill glass win prevent less network always.",
-    "description": "Light record reason open. People generation large those technology. Represent process open down since long practice.",
-    "dataProvider": "Ability room around",
-    "owner": [
-        "urn:ngsi-ld:ContinuousGlucoseMeterSensor:items:OTAY:98259767",
-        "urn:ngsi-ld:ContinuousGlucoseMeterSensor:items:SRXB:50094831"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:ContinuousGlucoseMeterSensor:items:YHNC:24340465"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            30.97083,
-            138.893906
-        ]
-    },
-    "address": {
-        "streetAddress": "Indicate adult per gun something. Simply grow of good.",
-        "addressLocality": "Inde",
-        "addressRegion": "With our truth also small. Listen act nearly child available project small. Evening test dream size.",
-        "addressCountry": "Special TV put national baby hit organization. Hotel national wall despite truth kitchen spend.",
-        "postalCode": "Minute reduce success easy.",
-        "postOfficeBoxNumber": "Dinner push blood if.",
-        "streetNr": "Her both challenge over. Meeting enjoy else certa",
-        "district": "Military letter result whatever no this. Top really father professional environmental language."
-    },
-    "areaServed": "Street former concern use",
-    "starttime": "New accept throw within. Music region worry. Source far officer. Lose air site instead.",
-    "runtime": 985.3,
-    "rt": [
-        "oic.r.cgm.sensor"
-    ],
-    "n": "Others response contain usually mouth",
-    "if": [
-        "oic.if.baseline"
-    ],
-    "range": [
-        807.7,
-        294.6
-    ],
-    "step": 461.9,
-    "precision": 363.5,
-    "type": "ContinuousGlucoseMeterSensor"
+  "id": "urn:ngsi-ld:ContinuousGlucoseMeterSensor:id:VMKL:33852976",
+  "dateCreated": "2023-10-19T16:11:52Z",
+  "dateModified": "1983-06-12T17:45:55Z",
+  "source": "Parent chance account to explain join shoulder. Clos",
+  "name": "Expert relationship important group. Spring order chair thought message. Article thing grow management very.",
+  "alternateName": "Sit mention fly above put. Bill glass win prevent less network always.",
+  "description": "Light record reason open. People generation large those technology. Represent process open down since long practice.",
+  "dataProvider": "Ability room around",
+  "owner": [
+    "urn:ngsi-ld:ContinuousGlucoseMeterSensor:items:OTAY:98259767",
+    "urn:ngsi-ld:ContinuousGlucoseMeterSensor:items:SRXB:50094831"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:ContinuousGlucoseMeterSensor:items:YHNC:24340465"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      30.97083,
+      138.893906
+    ]
+  },
+  "address": {
+    "streetAddress": "Indicate adult per gun something. Simply grow of good.",
+    "addressLocality": "Inde",
+    "addressRegion": "With our truth also small. Listen act nearly child available project small. Evening test dream size.",
+    "addressCountry": "Special TV put national baby hit organization. Hotel national wall despite truth kitchen spend.",
+    "postalCode": "Minute reduce success easy.",
+    "postOfficeBoxNumber": "Dinner push blood if.",
+    "streetNr": "Her both challenge over. Meeting enjoy else certa",
+    "district": "Military letter result whatever no this. Top really father professional environmental language."
+  },
+  "areaServed": "Street former concern use",
+  "starttime": "New accept throw within. Music region worry. Source far officer. Lose air site instead.",
+  "runtime": 985.3,
+  "rt": [
+    "oic.r.cgm.sensor"
+  ],
+  "n": "Others response contain usually mouth",
+  "if": [
+    "oic.if.baseline"
+  ],
+  "range": [
+    807.7,
+    294.6
+  ],
+  "step": 461.9,
+  "precision": 363.5,
+  "type": "ContinuousGlucoseMeterSensor"
 }
