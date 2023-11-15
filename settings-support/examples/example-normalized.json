@@ -1,93 +1,93 @@
 {
-    "id": "urn:ngsi-ld:settings-support:id:RPNG:87364807",
-    "dateCreated": {
-        "type": "DateTime",
-        "value": "1988-11-09T16:34:34Z"
-    },
-    "dateModified": {
-        "type": "DateTime",
-        "value": "2009-06-05T15:26:22Z"
-    },
-    "source": {
-        "type": "Text",
-        "value": "Task teacher question adult bill."
-    },
-    "name": {
-        "type": "Text",
-        "value": "Military speech then consumer kid."
-    },
-    "alternateName": {
-        "type": "Text",
-        "value": "Hospital according interest study cold."
-    },
-    "description": {
-        "type": "Text",
-        "value": "Especially reduce staff start boy speak. Lot any theory management nearly. Serve little others practice performance."
-    },
-    "dataProvider": {
-        "type": "Text",
-        "value": "Discuss expert head. Early know bag guess whose. Particularly benefit special church young. Land u"
-    },
-    "owner": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:settings-support:items:WJYZ:91255701",
-            "urn:ngsi-ld:settings-support:items:YBIS:13492193"
-        ]
-    },
-    "seeAlso": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:settings-support:items:NNNW:56053553"
-        ]
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                69.8068515,
-                -158.428661
-            ]
-        }
-    },
-    "address": {
-        "type": "StructuredValue",
-        "value": {
-            "streetAddress": "Single order draw. Citizen keep rich coupl",
-            "addressLocality": "Usually order discover husband for style. Add coach condition method.",
-            "addressRegion": "Debate spring soldier discuss after above officer. Forward not have term create TV. According we add ago into.",
-            "addressCountry": "Plant expect surface agent maybe true school. Consumer ahead Congress while consumer happen.",
-            "postalCode": "For evening around deci",
-            "postOfficeBoxNumber": "Before detail recentl",
-            "streetNr": "Practice center image nature. Manager rule traditional down.",
-            "district": "Nice into project law year food bank. Consider brother old activity almost body partner. Our them nature leader kind part. Office according wife each product market rather day."
-        }
-    },
-    "areaServed": {
-        "type": "Text",
-        "value": "Law happy wait professor see player. Whose common draw order change reveal treat. Herself natural then measure."
-    },
-    "rt": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.r.settings.support"
-        ]
-    },
-    "if": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.if.baseline",
-            "oic.if.rw"
-        ]
-    },
-    "remote-management": {
-        "type": "Boolean",
-        "value": true
-    },
-    "software-auto-update": {
-        "type": "Boolean",
-        "value": false
-    },
-    "type": "settings-support"
+  "id": "urn:ngsi-ld:settings-support:id:RPNG:87364807",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "1988-11-09T16:34:34Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "2009-06-05T15:26:22Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": "Task teacher question adult bill."
+  },
+  "name": {
+    "type": "Text",
+    "value": "Military speech then consumer kid."
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "Hospital according interest study cold."
+  },
+  "description": {
+    "type": "Text",
+    "value": "Especially reduce staff start boy speak. Lot any theory management nearly. Serve little others practice performance."
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Discuss expert head. Early know bag guess whose. Particularly benefit special church young. Land u"
+  },
+  "owner": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:settings-support:items:WJYZ:91255701",
+      "urn:ngsi-ld:settings-support:items:YBIS:13492193"
+    ]
+  },
+  "seeAlso": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:settings-support:items:NNNW:56053553"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        69.8068515,
+        -158.428661
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "Single order draw. Citizen keep rich coupl",
+      "addressLocality": "Usually order discover husband for style. Add coach condition method.",
+      "addressRegion": "Debate spring soldier discuss after above officer. Forward not have term create TV. According we add ago into.",
+      "addressCountry": "Plant expect surface agent maybe true school. Consumer ahead Congress while consumer happen.",
+      "postalCode": "For evening around deci",
+      "postOfficeBoxNumber": "Before detail recentl",
+      "streetNr": "Practice center image nature. Manager rule traditional down.",
+      "district": "Nice into project law year food bank. Consider brother old activity almost body partner. Our them nature leader kind part. Office according wife each product market rather day."
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "Law happy wait professor see player. Whose common draw order change reveal treat. Herself natural then measure."
+  },
+  "rt": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.r.settings.support"
+    ]
+  },
+  "if": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.if.baseline",
+      "oic.if.rw"
+    ]
+  },
+  "remote-management": {
+    "type": "Boolean",
+    "value": true
+  },
+  "software-auto-update": {
+    "type": "Boolean",
+    "value": false
+  },
+  "type": "settings-support"
 }
