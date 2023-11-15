@@ -1,92 +1,92 @@
 {
-    "id": "urn:ngsi-ld:GlucoseSampleLocation:id:FULW:15305695",
-    "dateCreated": {
-        "type": "DateTime",
-        "value": "2021-05-16T17:35:47Z"
-    },
-    "dateModified": {
-        "type": "DateTime",
-        "value": "2004-02-19T01:49:02Z"
-    },
-    "source": {
-        "type": "Text",
-        "value": "Country move fall better hotel. Head letter here day recent three. Leave product response happen person hair help skill. Old early why sort story open news toward."
-    },
-    "name": {
-        "type": "Text",
-        "value": "Same land administration camera administration. Case nation care store ac"
-    },
-    "alternateName": {
-        "type": "Text",
-        "value": "Sense set area truth. Certain audience life"
-    },
-    "description": {
-        "type": "Text",
-        "value": "General consumer thought again memory return."
-    },
-    "dataProvider": {
-        "type": "Text",
-        "value": "Stock view book message weight though technology. "
-    },
-    "owner": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:GlucoseSampleLocation:items:DKBV:55759974",
-            "urn:ngsi-ld:GlucoseSampleLocation:items:YXLQ:06862334"
-        ]
-    },
-    "seeAlso": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:GlucoseSampleLocation:items:CYPW:78190486"
-        ]
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                9.4263155,
-                172.558196
-            ]
-        }
-    },
-    "address": {
-        "type": "StructuredValue",
-        "value": {
-            "streetAddress": "Mrs remember how catch. Church policy reduce new world learn government. When service cons",
-            "addressLocality": "Commercial either partner building week adult l",
-            "addressRegion": "State so",
-            "addressCountry": "Decide their defense next hair. Someone official course community white close suddenly hope. Challenge lo",
-            "postalCode": "With intern",
-            "postOfficeBoxNumber": "Continue join fact authority. Business cause past. Mention computer decade nearly if coach crime. Drop manage write same rest",
-            "streetNr": "Camera imagine ",
-            "district": "Do hot century south process. Kid likely include great north."
-        }
-    },
-    "areaServed": {
-        "type": "Text",
-        "value": "Pretty today home page month. Sometimes compare high a war often. C"
-    },
-    "rt": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.r.glucose.samplelocation"
-        ]
-    },
-    "samplelocation": {
-        "type": "Text",
-        "value": "ctrlsolution"
-    },
-    "n": {
-        "type": "Text",
-        "value": "Wind behind finish opportunity"
-    },
-    "if": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.if.baseline"
-        ]
-    },
-    "type": "GlucoseSampleLocation"
+  "id": "urn:ngsi-ld:GlucoseSampleLocation:id:FULW:15305695",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "2021-05-16T17:35:47Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "2004-02-19T01:49:02Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": "Country move fall better hotel. Head letter here day recent three. Leave product response happen person hair help skill. Old early why sort story open news toward."
+  },
+  "name": {
+    "type": "Text",
+    "value": "Same land administration camera administration. Case nation care store ac"
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "Sense set area truth. Certain audience life"
+  },
+  "description": {
+    "type": "Text",
+    "value": "General consumer thought again memory return."
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Stock view book message weight though technology. "
+  },
+  "owner": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:GlucoseSampleLocation:items:DKBV:55759974",
+      "urn:ngsi-ld:GlucoseSampleLocation:items:YXLQ:06862334"
+    ]
+  },
+  "seeAlso": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:GlucoseSampleLocation:items:CYPW:78190486"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        9.4263155,
+        172.558196
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "Mrs remember how catch. Church policy reduce new world learn government. When service cons",
+      "addressLocality": "Commercial either partner building week adult l",
+      "addressRegion": "State so",
+      "addressCountry": "Decide their defense next hair. Someone official course community white close suddenly hope. Challenge lo",
+      "postalCode": "With intern",
+      "postOfficeBoxNumber": "Continue join fact authority. Business cause past. Mention computer decade nearly if coach crime. Drop manage write same rest",
+      "streetNr": "Camera imagine ",
+      "district": "Do hot century south process. Kid likely include great north."
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "Pretty today home page month. Sometimes compare high a war often. C"
+  },
+  "rt": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.r.glucose.samplelocation"
+    ]
+  },
+  "samplelocation": {
+    "type": "Text",
+    "value": "ctrlsolution"
+  },
+  "n": {
+    "type": "Text",
+    "value": "Wind behind finish opportunity"
+  },
+  "if": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.if.baseline"
+    ]
+  },
+  "type": "GlucoseSampleLocation"
 }
