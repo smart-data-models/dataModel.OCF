@@ -1,50 +1,50 @@
 {
-    "id": "urn:ngsi-ld:HbA1c:id:NUUA:84448495",
-    "dateCreated": "1978-03-13T05:35:12Z",
-    "dateModified": "1985-01-29T17:46:14Z",
-    "source": "Amount majority start money school statement decade begin. Senior raise suggest bill firm book property.",
-    "name": "Projec",
-    "alternateName": "Surface difficult view same oil. Because girl protect buy window cell. Control section statement.",
-    "description": "Long soldier successful everything. Presiden",
-    "dataProvider": "Include view probably full. Rate view lot. Against hope enjoy ",
-    "owner": [
-        "urn:ngsi-ld:HbA1c:items:ISKK:07346260",
-        "urn:ngsi-ld:HbA1c:items:KENT:72458444"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:HbA1c:items:LXIT:42668919"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            40.9928635,
-            -6.596466
-        ]
-    },
-    "address": {
-        "streetAddress": "Himself give already authority.",
-        "addressLocality": "Much heart middle method live audience. Than campaign and week center respond. Approach whether di",
-        "addressRegion": "Cost give sea reveal coach. Blue still not father risk million will adul",
-        "addressCountry": "Employee you floor form. Financial she attention. Before military method far consider my we.",
-        "postalCode": "Sound hear image admit. Director",
-        "postOfficeBoxNumber": "Wall a gun pressure. Smile cultural hair stop. Wall increase involve family nature teacher.",
-        "streetNr": "Dinner business response draw. Scene stuff Mr site again.",
-        "district": "Seven recently husband care PM author company. History recent series price."
-    },
-    "areaServed": "Sound summer part have speak expect morning. Line report out process me. Along want experience space.",
-    "rt": [
-        "oic.r.glucose.hba1c"
-    ],
-    "hba1c": 8.0,
-    "range": [
-        765.7,
-        907.2
-    ],
-    "step": 962.1,
-    "precision": 285.2,
-    "n": "True suffer scene skin. Involve view culture themselves brothe",
-    "if": [
-        "oic.if.s"
-    ],
-    "type": "HbA1c"
+  "id": "urn:ngsi-ld:HbA1c:id:NUUA:84448495",
+  "dateCreated": "1978-03-13T05:35:12Z",
+  "dateModified": "1985-01-29T17:46:14Z",
+  "source": "Amount majority start money school statement decade begin. Senior raise suggest bill firm book property.",
+  "name": "Projec",
+  "alternateName": "Surface difficult view same oil. Because girl protect buy window cell. Control section statement.",
+  "description": "Long soldier successful everything. Presiden",
+  "dataProvider": "Include view probably full. Rate view lot. Against hope enjoy ",
+  "owner": [
+    "urn:ngsi-ld:HbA1c:items:ISKK:07346260",
+    "urn:ngsi-ld:HbA1c:items:KENT:72458444"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:HbA1c:items:LXIT:42668919"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      40.9928635,
+      -6.596466
+    ]
+  },
+  "address": {
+    "streetAddress": "Himself give already authority.",
+    "addressLocality": "Much heart middle method live audience. Than campaign and week center respond. Approach whether di",
+    "addressRegion": "Cost give sea reveal coach. Blue still not father risk million will adul",
+    "addressCountry": "Employee you floor form. Financial she attention. Before military method far consider my we.",
+    "postalCode": "Sound hear image admit. Director",
+    "postOfficeBoxNumber": "Wall a gun pressure. Smile cultural hair stop. Wall increase involve family nature teacher.",
+    "streetNr": "Dinner business response draw. Scene stuff Mr site again.",
+    "district": "Seven recently husband care PM author company. History recent series price."
+  },
+  "areaServed": "Sound summer part have speak expect morning. Line report out process me. Along want experience space.",
+  "rt": [
+    "oic.r.glucose.hba1c"
+  ],
+  "hba1c": 8.0,
+  "range": [
+    765.7,
+    907.2
+  ],
+  "step": 962.1,
+  "precision": 285.2,
+  "n": "True suffer scene skin. Involve view culture themselves brothe",
+  "if": [
+    "oic.if.s"
+  ],
+  "type": "HbA1c"
 }
