@@ -1,52 +1,52 @@
 {
-    "id": "urn:ngsi-ld:Mode:id:FVHJ:32077177",
-    "dateCreated": "1988-07-25T10:28:15Z",
-    "dateModified": "1996-11-19T09:06:48Z",
-    "source": "Agreement federal business site alone go. Into exactly act note cause.",
-    "name": "Music explain one billion west picture. Home design play thought. Travel ok kitchen shake become.",
-    "alternateName": "Majority keep challenge woman particularly early which.",
-    "description": "Arm born drug fall charge civil of",
-    "dataProvider": "Down and office. Age word live within thank.",
-    "owner": [
-        "urn:ngsi-ld:Mode:items:RPXN:10063362",
-        "urn:ngsi-ld:Mode:items:GGQJ:10808013"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:Mode:items:PYNJ:22077308"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            -63.5106485,
-            -90.677538
-        ]
-    },
-    "address": {
-        "streetAddress": "Despite product author another s",
-        "addressLocality": "Art war term know but. Region drop on high amount myself. Report economy president easy want.",
-        "addressRegion": "Born including scientist window stock deep. Type",
-        "addressCountry": "Suggest fund manager far. Accept that leader natural perform their partner media. His way the thought force.",
-        "postalCode": "Laugh increase little.",
-        "postOfficeBoxNumber": "President reason se",
-        "streetNr": "Type decide difference meeting language place. Agent televisio",
-        "district": "Discuss effort employee the envi"
-    },
-    "areaServed": "It u",
-    "rt": [
-        "oic.r.mode"
-    ],
-    "modes": [
-        "Mouth personal notice. Do lette",
-        "Lawyer situation single huge. Up simply fine itself themsel"
-    ],
-    "supportedModes": [
-        "Decision already serious nature anyone peace ago. Baby but onto region.",
-        "Focus hotel smile record. Risk around dream second dream quality onto."
-    ],
-    "n": "Fire customer surface. Like",
-    "if": [
-        "oic.if.baseline",
-        "oic.if.a"
-    ],
-    "type": "Mode"
+  "id": "urn:ngsi-ld:Mode:id:FVHJ:32077177",
+  "dateCreated": "1988-07-25T10:28:15Z",
+  "dateModified": "1996-11-19T09:06:48Z",
+  "source": "Agreement federal business site alone go. Into exactly act note cause.",
+  "name": "Music explain one billion west picture. Home design play thought. Travel ok kitchen shake become.",
+  "alternateName": "Majority keep challenge woman particularly early which.",
+  "description": "Arm born drug fall charge civil of",
+  "dataProvider": "Down and office. Age word live within thank.",
+  "owner": [
+    "urn:ngsi-ld:Mode:items:RPXN:10063362",
+    "urn:ngsi-ld:Mode:items:GGQJ:10808013"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:Mode:items:PYNJ:22077308"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -63.5106485,
+      -90.677538
+    ]
+  },
+  "address": {
+    "streetAddress": "Despite product author another s",
+    "addressLocality": "Art war term know but. Region drop on high amount myself. Report economy president easy want.",
+    "addressRegion": "Born including scientist window stock deep. Type",
+    "addressCountry": "Suggest fund manager far. Accept that leader natural perform their partner media. His way the thought force.",
+    "postalCode": "Laugh increase little.",
+    "postOfficeBoxNumber": "President reason se",
+    "streetNr": "Type decide difference meeting language place. Agent televisio",
+    "district": "Discuss effort employee the envi"
+  },
+  "areaServed": "It u",
+  "rt": [
+    "oic.r.mode"
+  ],
+  "modes": [
+    "Mouth personal notice. Do lette",
+    "Lawyer situation single huge. Up simply fine itself themsel"
+  ],
+  "supportedModes": [
+    "Decision already serious nature anyone peace ago. Baby but onto region.",
+    "Focus hotel smile record. Risk around dream second dream quality onto."
+  ],
+  "n": "Fire customer surface. Like",
+  "if": [
+    "oic.if.baseline",
+    "oic.if.a"
+  ],
+  "type": "Mode"
 }
