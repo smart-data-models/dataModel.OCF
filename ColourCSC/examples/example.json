@@ -1,49 +1,49 @@
 {
-    "id": "urn:ngsi-ld:ColourCSC:id:ZBCR:36913254",
-    "dateCreated": "1977-07-31T23:35:46Z",
-    "dateModified": "2021-02-10T09:29:37Z",
-    "source": "Under how many",
-    "name": "War none culture draw eight nation rise.",
-    "alternateName": "Method wear whatever example. Wear work science change n",
-    "description": "Life sense high consumer nearly keep wind. Can else down purpose. Good nature when after.",
-    "dataProvider": "Executive focus really. Simply wall worry call voice.",
-    "owner": [
-        "urn:ngsi-ld:ColourCSC:items:MXSJ:82773762",
-        "urn:ngsi-ld:ColourCSC:items:RQWT:27386818"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:ColourCSC:items:KKHC:89261548"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            -14.435297,
-            -92.521246
-        ]
-    },
-    "address": {
-        "streetAddress": "Reach down attorney six central consider among across. Yet per administration other community. Stay a here rate.",
-        "addressLocality": "Speech serious myself appear throughout those. Measure century food card. Southern no full range rate compare.",
-        "addressRegion": "Likely expert before tell apply within. Affect brother less minute eat ever hand. Leader hair example north each early. Decide prog",
-        "addressCountry": "Business plan determine sport work expect. Director fear subject here him way create.",
-        "postalCode": "Executive other debate investment yourself before. Then deal today study.",
-        "postOfficeBoxNumber": "Policy finish unit offer politics feeling during try. Whose southern every girl story sometimes same.",
-        "streetNr": "Control so economy energy movie happy. Station third gun ok bar local morning something. Structure bad safe example se",
-        "district": "Approach off plant. Describe good goal actually image near against child."
-    },
-    "areaServed": "Decade your act strong. Art factor fast employee.",
-    "rt": [
-        "oic.r.colour.csc"
-    ],
-    "csc": [
-        0.5,
-        0.3
-    ],
-    "n": "Hot support west young. Suc",
-    "precision": 18.2,
-    "if": [
-        "oic.if.a",
-        "oic.if.baseline"
-    ],
-    "type": "ColourCSC"
+  "id": "urn:ngsi-ld:ColourCSC:id:ZBCR:36913254",
+  "dateCreated": "1977-07-31T23:35:46Z",
+  "dateModified": "2021-02-10T09:29:37Z",
+  "source": "Under how many",
+  "name": "War none culture draw eight nation rise.",
+  "alternateName": "Method wear whatever example. Wear work science change n",
+  "description": "Life sense high consumer nearly keep wind. Can else down purpose. Good nature when after.",
+  "dataProvider": "Executive focus really. Simply wall worry call voice.",
+  "owner": [
+    "urn:ngsi-ld:ColourCSC:items:MXSJ:82773762",
+    "urn:ngsi-ld:ColourCSC:items:RQWT:27386818"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:ColourCSC:items:KKHC:89261548"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -14.435297,
+      -92.521246
+    ]
+  },
+  "address": {
+    "streetAddress": "Reach down attorney six central consider among across. Yet per administration other community. Stay a here rate.",
+    "addressLocality": "Speech serious myself appear throughout those. Measure century food card. Southern no full range rate compare.",
+    "addressRegion": "Likely expert before tell apply within. Affect brother less minute eat ever hand. Leader hair example north each early. Decide prog",
+    "addressCountry": "Business plan determine sport work expect. Director fear subject here him way create.",
+    "postalCode": "Executive other debate investment yourself before. Then deal today study.",
+    "postOfficeBoxNumber": "Policy finish unit offer politics feeling during try. Whose southern every girl story sometimes same.",
+    "streetNr": "Control so economy energy movie happy. Station third gun ok bar local morning something. Structure bad safe example se",
+    "district": "Approach off plant. Describe good goal actually image near against child."
+  },
+  "areaServed": "Decade your act strong. Art factor fast employee.",
+  "rt": [
+    "oic.r.colour.csc"
+  ],
+  "csc": [
+    0.5,
+    0.3
+  ],
+  "n": "Hot support west young. Suc",
+  "precision": 18.2,
+  "if": [
+    "oic.if.a",
+    "oic.if.baseline"
+  ],
+  "type": "ColourCSC"
 }
