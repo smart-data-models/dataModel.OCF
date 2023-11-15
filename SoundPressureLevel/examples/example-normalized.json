@@ -1,93 +1,93 @@
 {
-    "id": "urn:ngsi-ld:SoundPressureLevel:id:HFIM:74257828",
-    "dateCreated": {
-        "type": "DateTime",
-        "value": "2004-05-29T07:02:52Z"
-    },
-    "dateModified": {
-        "type": "DateTime",
-        "value": "2000-07-13T19:13:46Z"
-    },
-    "source": {
-        "type": "Text",
-        "value": "Price court lot back."
-    },
-    "name": {
-        "type": "Text",
-        "value": "Commercial now certain science. Purpose threat carry six her total across number."
-    },
-    "alternateName": {
-        "type": "Text",
-        "value": "Form war southern red little do. Fly land either meet among great back seven. Commercial view college."
-    },
-    "description": {
-        "type": "Text",
-        "value": "Finish effort whole must somebody gas owner. Win trouble home agreement leader check simply. Explain particularly style maj"
-    },
-    "dataProvider": {
-        "type": "Text",
-        "value": "Thus morning do travel. Give bit stage wish wear pro"
-    },
-    "owner": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:SoundPressureLevel:items:IEOL:15344972",
-            "urn:ngsi-ld:SoundPressureLevel:items:UWPZ:31973552"
-        ]
-    },
-    "seeAlso": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:SoundPressureLevel:items:ONKQ:98958230"
-        ]
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                -20.035359,
-                -53.268156
-            ]
-        }
-    },
-    "address": {
-        "type": "StructuredValue",
-        "value": {
-            "streetAddress": "Usuall",
-            "addressLocality": "Take second parent never executive exist. Term experience adult situation.",
-            "addressRegion": "Old arrive fine sea hard lay husband. Into c",
-            "addressCountry": "Friend grow beat police because determine again. Office head best identify focus short fill. Speak none m",
-            "postalCode": "Anything station pe",
-            "postOfficeBoxNumber": "Candidate front not nor beyond would action.",
-            "streetNr": "Trouble plan financial if common themselves. Despite wear agree another east local should price.",
-            "district": "Brother top serve. His prove beautiful bar."
-        }
-    },
-    "areaServed": {
-        "type": "Text",
-        "value": "Vote step kitchen pay. Turn provide go guess. Fine no risk television. Require understand she."
-    },
-    "rt": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.r.sound.pressurelevel"
-        ]
-    },
-    "sounddB": {
-        "type": "Number",
-        "value": 766.7
-    },
-    "n": {
-        "type": "Text",
-        "value": "Than but teach tax cove"
-    },
-    "if": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.if.s",
-            "oic.if.baseline"
-        ]
-    },
-    "type": "SoundPressureLevel"
+  "id": "urn:ngsi-ld:SoundPressureLevel:id:HFIM:74257828",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "2004-05-29T07:02:52Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "2000-07-13T19:13:46Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": "Price court lot back."
+  },
+  "name": {
+    "type": "Text",
+    "value": "Commercial now certain science. Purpose threat carry six her total across number."
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "Form war southern red little do. Fly land either meet among great back seven. Commercial view college."
+  },
+  "description": {
+    "type": "Text",
+    "value": "Finish effort whole must somebody gas owner. Win trouble home agreement leader check simply. Explain particularly style maj"
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Thus morning do travel. Give bit stage wish wear pro"
+  },
+  "owner": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:SoundPressureLevel:items:IEOL:15344972",
+      "urn:ngsi-ld:SoundPressureLevel:items:UWPZ:31973552"
+    ]
+  },
+  "seeAlso": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:SoundPressureLevel:items:ONKQ:98958230"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -20.035359,
+        -53.268156
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "Usuall",
+      "addressLocality": "Take second parent never executive exist. Term experience adult situation.",
+      "addressRegion": "Old arrive fine sea hard lay husband. Into c",
+      "addressCountry": "Friend grow beat police because determine again. Office head best identify focus short fill. Speak none m",
+      "postalCode": "Anything station pe",
+      "postOfficeBoxNumber": "Candidate front not nor beyond would action.",
+      "streetNr": "Trouble plan financial if common themselves. Despite wear agree another east local should price.",
+      "district": "Brother top serve. His prove beautiful bar."
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "Vote step kitchen pay. Turn provide go guess. Fine no risk television. Require understand she."
+  },
+  "rt": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.r.sound.pressurelevel"
+    ]
+  },
+  "sounddB": {
+    "type": "Number",
+    "value": 766.7
+  },
+  "n": {
+    "type": "Text",
+    "value": "Than but teach tax cove"
+  },
+  "if": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.if.s",
+      "oic.if.baseline"
+    ]
+  },
+  "type": "SoundPressureLevel"
 }
