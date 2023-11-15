@@ -1,93 +1,93 @@
 {
-    "id": "urn:ngsi-ld:SoundPressure:id:NQGJ:10000554",
-    "dateCreated": {
-        "type": "DateTime",
-        "value": "1991-06-17T13:09:00Z"
-    },
-    "dateModified": {
-        "type": "DateTime",
-        "value": "1989-03-15T04:41:45Z"
-    },
-    "source": {
-        "type": "Text",
-        "value": "Pull arrive key my next detail behind. Debate true"
-    },
-    "name": {
-        "type": "Text",
-        "value": "Part scientist analysis speak left. Behind inside skin individual remain agent. Fire toward test mouth usually former total."
-    },
-    "alternateName": {
-        "type": "Text",
-        "value": "Never role system trouble evidence. Total gi"
-    },
-    "description": {
-        "type": "Text",
-        "value": "Good list practice contain."
-    },
-    "dataProvider": {
-        "type": "Text",
-        "value": "Product require hit future manage."
-    },
-    "owner": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:SoundPressure:items:DAQW:17556804",
-            "urn:ngsi-ld:SoundPressure:items:OQUG:68462891"
-        ]
-    },
-    "seeAlso": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:SoundPressure:items:DODE:26221439"
-        ]
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                -41.256081,
-                20.495882
-            ]
-        }
-    },
-    "address": {
-        "type": "StructuredValue",
-        "value": {
-            "streetAddress": "Interest address pull produce. Interest chance standard material put cost. Court l",
-            "addressLocality": "Loss finish me commercial. Same sing world doctor collection.",
-            "addressRegion": "Foot start apply lose front. Possible add happen enter.",
-            "addressCountry": "Contain I him activity information trouble. Month crime occur born director audience.",
-            "postalCode": "Simple book across particular water decade. War politics voice way current cultural reach.",
-            "postOfficeBoxNumber": "Man less before bit fire w",
-            "streetNr": "While near thank international add. Stay he de",
-            "district": "Least room it water scene recognize game effort. First guy daughter help technology machine. Drive law account exist air."
-        }
-    },
-    "areaServed": {
-        "type": "Text",
-        "value": "Around manager region trial security."
-    },
-    "rt": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.r.sound.pressure"
-        ]
-    },
-    "soundpa": {
-        "type": "Number",
-        "value": 698.2
-    },
-    "n": {
-        "type": "Text",
-        "value": "Picture try summer coach."
-    },
-    "if": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.if.s",
-            "oic.if.baseline"
-        ]
-    },
-    "type": "SoundPressure"
+  "id": "urn:ngsi-ld:SoundPressure:id:NQGJ:10000554",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "1991-06-17T13:09:00Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "1989-03-15T04:41:45Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": "Pull arrive key my next detail behind. Debate true"
+  },
+  "name": {
+    "type": "Text",
+    "value": "Part scientist analysis speak left. Behind inside skin individual remain agent. Fire toward test mouth usually former total."
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "Never role system trouble evidence. Total gi"
+  },
+  "description": {
+    "type": "Text",
+    "value": "Good list practice contain."
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Product require hit future manage."
+  },
+  "owner": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:SoundPressure:items:DAQW:17556804",
+      "urn:ngsi-ld:SoundPressure:items:OQUG:68462891"
+    ]
+  },
+  "seeAlso": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:SoundPressure:items:DODE:26221439"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -41.256081,
+        20.495882
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "Interest address pull produce. Interest chance standard material put cost. Court l",
+      "addressLocality": "Loss finish me commercial. Same sing world doctor collection.",
+      "addressRegion": "Foot start apply lose front. Possible add happen enter.",
+      "addressCountry": "Contain I him activity information trouble. Month crime occur born director audience.",
+      "postalCode": "Simple book across particular water decade. War politics voice way current cultural reach.",
+      "postOfficeBoxNumber": "Man less before bit fire w",
+      "streetNr": "While near thank international add. Stay he de",
+      "district": "Least room it water scene recognize game effort. First guy daughter help technology machine. Drive law account exist air."
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "Around manager region trial security."
+  },
+  "rt": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.r.sound.pressure"
+    ]
+  },
+  "soundpa": {
+    "type": "Number",
+    "value": 698.2
+  },
+  "n": {
+    "type": "Text",
+    "value": "Picture try summer coach."
+  },
+  "if": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.if.s",
+      "oic.if.baseline"
+    ]
+  },
+  "type": "SoundPressure"
 }
