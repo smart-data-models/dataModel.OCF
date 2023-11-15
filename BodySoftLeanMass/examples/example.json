@@ -1,51 +1,51 @@
 {
-    "id": "urn:ngsi-ld:BodySoftLeanMass:id:XDMZ:15679729",
-    "dateCreated": "1982-09-12T09:16:04Z",
-    "dateModified": "1997-02-13T17:35:45Z",
-    "source": "Strong newspaper dog institut",
-    "name": "Structure thousand town create spring new. Position police practice chair region phone city. Officer partner cell both parent.",
-    "alternateName": "Again walk civil cost for. Out still all figure want specific. Debate finally tough check. Up gas cut.",
-    "description": "Weight themselves",
-    "dataProvider": "Me pretty stay protect participant fight. Art recognize finally key ",
-    "owner": [
-        "urn:ngsi-ld:BodySoftLeanMass:items:GMHN:56339615",
-        "urn:ngsi-ld:BodySoftLeanMass:items:UVXV:74830962"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:BodySoftLeanMass:items:NEJT:56397138"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            -32.9838625,
-            -13.350756
-        ]
-    },
-    "address": {
-        "streetAddress": "Action whether hea",
-        "addressLocality": "Able this happen positive dark. Cut laugh cold blood seat. Expert sea spend magazine necessary when travel evening.",
-        "addressRegion": "Three join late health far save government born. Woman today conf",
-        "addressCountry": "Door control different general subject situation recently. Hear where during trip matter.",
-        "postalCode": "Record right reflect. Trouble move meeting.",
-        "postOfficeBoxNumber": "Really physical move how onto fine to. Could hotel reach raise color property probably not. Field condition second leader.",
-        "streetNr": "Positive to guess news. Quality run skill subject class.",
-        "district": "Look travel material. High floor machine race foot. Receive small wall crime."
-    },
-    "areaServed": "Property of side leader quickly government. Pl",
-    "rt": [
-        "oic.r.body.slm"
-    ],
-    "slm": 342.3,
-    "units": "percent",
-    "range": [
-        906.5,
-        314.9
-    ],
-    "step": 109.9,
-    "precision": 597.1,
-    "n": "Design family wa",
-    "if": [
-        "oic.if.s"
-    ],
-    "type": "BodySoftLeanMass"
+  "id": "urn:ngsi-ld:BodySoftLeanMass:id:XDMZ:15679729",
+  "dateCreated": "1982-09-12T09:16:04Z",
+  "dateModified": "1997-02-13T17:35:45Z",
+  "source": "Strong newspaper dog institut",
+  "name": "Structure thousand town create spring new. Position police practice chair region phone city. Officer partner cell both parent.",
+  "alternateName": "Again walk civil cost for. Out still all figure want specific. Debate finally tough check. Up gas cut.",
+  "description": "Weight themselves",
+  "dataProvider": "Me pretty stay protect participant fight. Art recognize finally key ",
+  "owner": [
+    "urn:ngsi-ld:BodySoftLeanMass:items:GMHN:56339615",
+    "urn:ngsi-ld:BodySoftLeanMass:items:UVXV:74830962"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:BodySoftLeanMass:items:NEJT:56397138"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -32.9838625,
+      -13.350756
+    ]
+  },
+  "address": {
+    "streetAddress": "Action whether hea",
+    "addressLocality": "Able this happen positive dark. Cut laugh cold blood seat. Expert sea spend magazine necessary when travel evening.",
+    "addressRegion": "Three join late health far save government born. Woman today conf",
+    "addressCountry": "Door control different general subject situation recently. Hear where during trip matter.",
+    "postalCode": "Record right reflect. Trouble move meeting.",
+    "postOfficeBoxNumber": "Really physical move how onto fine to. Could hotel reach raise color property probably not. Field condition second leader.",
+    "streetNr": "Positive to guess news. Quality run skill subject class.",
+    "district": "Look travel material. High floor machine race foot. Receive small wall crime."
+  },
+  "areaServed": "Property of side leader quickly government. Pl",
+  "rt": [
+    "oic.r.body.slm"
+  ],
+  "slm": 342.3,
+  "units": "percent",
+  "range": [
+    906.5,
+    314.9
+  ],
+  "step": 109.9,
+  "precision": 597.1,
+  "n": "Design family wa",
+  "if": [
+    "oic.if.s"
+  ],
+  "type": "BodySoftLeanMass"
 }
