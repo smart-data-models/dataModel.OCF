@@ -1,51 +1,51 @@
 {
-    "id": "urn:ngsi-ld:acceleration:id:PTIV:66263429",
-    "dateCreated": "1992-09-18T15:41:47Z",
-    "dateModified": "1993-03-23T07:22:41Z",
-    "source": "Mouth gas court skin street such. Full your senior design.",
-    "name": "Country be firm ground list. Drive top section test them bank guess. Sometimes fo",
-    "alternateName": "Wife ground south arrive season. Career yard choice.",
-    "description": "Hot happy campaign recognize our nature say. Since answer these look ",
-    "dataProvider": "Happen movie order much. Stand night take action assume.",
-    "owner": [
-        "urn:ngsi-ld:acceleration:items:FHKM:06950447",
-        "urn:ngsi-ld:acceleration:items:PMQF:69472898"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:acceleration:items:BIAJ:36620039"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            46.791425,
-            130.647646
-        ]
-    },
-    "address": {
-        "streetAddress": "Assume book we term former sort role main. By pay store peace situation say response age. Among window together girl establish send",
-        "addressLocality": "Edge lay the hear ",
-        "addressRegion": "Accept let own you machine dark population. Day thing hundred everybody plant part. Least car box teacher sense moth",
-        "addressCountry": "When prepare ok take degree story pay. Image quite state actually. Ask like front condition value where.",
-        "postalCode": "Themselves build machine operation level can often choice. Serve design thank.",
-        "postOfficeBoxNumber": "Who east cell and. Hour success family pres",
-        "streetNr": "Course ball art two partner. Enough score court yard property win. Through writer cup ",
-        "district": "Poor yourself business simple. Turn"
-    },
-    "areaServed": "Toward southern site same choose blood. Use necessary ",
-    "rt": [
-        "oic.r.sensor.acceleration"
-    ],
-    "acceleration": 253.7,
-    "n": "Throughout return commercial plac",
-    "range": [
-        192.1,
-        532.9
-    ],
-    "step": 986.6,
-    "precision": 223.4,
-    "if": [
-        "oic.if.s",
-        "oic.if.baseline"
-    ],
-    "type": "acceleration"
+  "id": "urn:ngsi-ld:acceleration:id:PTIV:66263429",
+  "dateCreated": "1992-09-18T15:41:47Z",
+  "dateModified": "1993-03-23T07:22:41Z",
+  "source": "Mouth gas court skin street such. Full your senior design.",
+  "name": "Country be firm ground list. Drive top section test them bank guess. Sometimes fo",
+  "alternateName": "Wife ground south arrive season. Career yard choice.",
+  "description": "Hot happy campaign recognize our nature say. Since answer these look ",
+  "dataProvider": "Happen movie order much. Stand night take action assume.",
+  "owner": [
+    "urn:ngsi-ld:acceleration:items:FHKM:06950447",
+    "urn:ngsi-ld:acceleration:items:PMQF:69472898"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:acceleration:items:BIAJ:36620039"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      46.791425,
+      130.647646
+    ]
+  },
+  "address": {
+    "streetAddress": "Assume book we term former sort role main. By pay store peace situation say response age. Among window together girl establish send",
+    "addressLocality": "Edge lay the hear ",
+    "addressRegion": "Accept let own you machine dark population. Day thing hundred everybody plant part. Least car box teacher sense moth",
+    "addressCountry": "When prepare ok take degree story pay. Image quite state actually. Ask like front condition value where.",
+    "postalCode": "Themselves build machine operation level can often choice. Serve design thank.",
+    "postOfficeBoxNumber": "Who east cell and. Hour success family pres",
+    "streetNr": "Course ball art two partner. Enough score court yard property win. Through writer cup ",
+    "district": "Poor yourself business simple. Turn"
+  },
+  "areaServed": "Toward southern site same choose blood. Use necessary ",
+  "rt": [
+    "oic.r.sensor.acceleration"
+  ],
+  "acceleration": 253.7,
+  "n": "Throughout return commercial plac",
+  "range": [
+    192.1,
+    532.9
+  ],
+  "step": 986.6,
+  "precision": 223.4,
+  "if": [
+    "oic.if.s",
+    "oic.if.baseline"
+  ],
+  "type": "acceleration"
 }
