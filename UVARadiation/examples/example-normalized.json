@@ -1,93 +1,93 @@
 {
-    "id": "urn:ngsi-ld:UVARadiation:id:TOWY:13263480",
-    "dateCreated": {
-        "type": "DateTime",
-        "value": "1994-09-13T19:03:24Z"
-    },
-    "dateModified": {
-        "type": "DateTime",
-        "value": "1999-01-09T03:06:34Z"
-    },
-    "source": {
-        "type": "Text",
-        "value": "Best explain fine play late. Home writer election we mother all."
-    },
-    "name": {
-        "type": "Text",
-        "value": "Practice since low expect tree compare messa"
-    },
-    "alternateName": {
-        "type": "Text",
-        "value": "Group give find. Standard trial two sit"
-    },
-    "description": {
-        "type": "Text",
-        "value": "Race model single name black. Forward act else everything production school age per. Small entire according similar food child. Visit read wonder source personal fast dark."
-    },
-    "dataProvider": {
-        "type": "Text",
-        "value": "Road l"
-    },
-    "owner": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:UVARadiation:items:UCPL:14802457",
-            "urn:ngsi-ld:UVARadiation:items:QLYI:61301922"
-        ]
-    },
-    "seeAlso": {
-        "type": "StructuredValue",
-        "value": [
-            "urn:ngsi-ld:UVARadiation:items:XQUJ:21897202"
-        ]
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                -45.624785,
-                1.262295
-            ]
-        }
-    },
-    "address": {
-        "type": "StructuredValue",
-        "value": {
-            "streetAddress": "Film single member detail sometime",
-            "addressLocality": "Concern all forget half. Property recently return stage event finish shake. Set how task south.",
-            "addressRegion": "Happy nature population. City receive contain you bring care.",
-            "addressCountry": "You without top nor computer. Beat three word age standard American right.",
-            "postalCode": "Fish good pass organization rich into nature suddenly. Same seven make may base put.",
-            "postOfficeBoxNumber": "Capital beat single. Sell address system none thought identify rock walk. Decision through some onto.",
-            "streetNr": "Month question detail idea from join admit. At laugh item beat amount off pass.",
-            "district": "Whole word stage. Every cold walk within"
-        }
-    },
-    "areaServed": {
-        "type": "Text",
-        "value": "None why else. Skill measure under season. Positive view radio well ground should. Government seven American red."
-    },
-    "rt": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.r.sensor.radiation.uva"
-        ]
-    },
-    "measurement": {
-        "type": "Number",
-        "value": 80.2
-    },
-    "n": {
-        "type": "Text",
-        "value": "Show town everyt"
-    },
-    "if": {
-        "type": "StructuredValue",
-        "value": [
-            "oic.if.s",
-            "oic.if.baseline"
-        ]
-    },
-    "type": "UVARadiation"
+  "id": "urn:ngsi-ld:UVARadiation:id:TOWY:13263480",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "1994-09-13T19:03:24Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "1999-01-09T03:06:34Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": "Best explain fine play late. Home writer election we mother all."
+  },
+  "name": {
+    "type": "Text",
+    "value": "Practice since low expect tree compare messa"
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "Group give find. Standard trial two sit"
+  },
+  "description": {
+    "type": "Text",
+    "value": "Race model single name black. Forward act else everything production school age per. Small entire according similar food child. Visit read wonder source personal fast dark."
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Road l"
+  },
+  "owner": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:UVARadiation:items:UCPL:14802457",
+      "urn:ngsi-ld:UVARadiation:items:QLYI:61301922"
+    ]
+  },
+  "seeAlso": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:UVARadiation:items:XQUJ:21897202"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -45.624785,
+        1.262295
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "Film single member detail sometime",
+      "addressLocality": "Concern all forget half. Property recently return stage event finish shake. Set how task south.",
+      "addressRegion": "Happy nature population. City receive contain you bring care.",
+      "addressCountry": "You without top nor computer. Beat three word age standard American right.",
+      "postalCode": "Fish good pass organization rich into nature suddenly. Same seven make may base put.",
+      "postOfficeBoxNumber": "Capital beat single. Sell address system none thought identify rock walk. Decision through some onto.",
+      "streetNr": "Month question detail idea from join admit. At laugh item beat amount off pass.",
+      "district": "Whole word stage. Every cold walk within"
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "None why else. Skill measure under season. Positive view radio well ground should. Government seven American red."
+  },
+  "rt": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.r.sensor.radiation.uva"
+    ]
+  },
+  "measurement": {
+    "type": "Number",
+    "value": 80.2
+  },
+  "n": {
+    "type": "Text",
+    "value": "Show town everyt"
+  },
+  "if": {
+    "type": "StructuredValue",
+    "value": [
+      "oic.if.s",
+      "oic.if.baseline"
+    ]
+  },
+  "type": "UVARadiation"
 }
