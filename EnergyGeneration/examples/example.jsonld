@@ -1,48 +1,48 @@
 {
-    "id": "urn:ngsi-ld:EnergyGeneration:id:YRBR:93782527",
-    "dateCreated": "1975-08-11T11:22:54Z",
-    "dateModified": "2005-03-24T18:35:19Z",
-    "source": "Spend bag into. Now from her gun subject PM. First age safe affect.",
-    "name": "Analysis population recognize someone treatment. Should represent group strong back approach",
-    "alternateName": "Pattern president add lead network the. Live teach movie I situation understand agree.",
-    "description": "Student bag grow better. Child might source. A front war.",
-    "dataProvider": "Company TV policy drug. Foreign agency when personal huge difficult player forget.",
-    "owner": [
-        "urn:ngsi-ld:EnergyGeneration:items:EMSY:35326759",
-        "urn:ngsi-ld:EnergyGeneration:items:AKQA:02906220"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:EnergyGeneration:items:ZANN:00199226"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            62.4831025,
-            -1.263129
-        ]
-    },
-    "address": {
-        "streetAddress": "Hair describe hundred candidate. Probably whom it job likely different house.",
-        "addressLocality": "Turn attorney education every money my. Particularly listen down American focus something who blood. Certain hotel should.",
-        "addressRegion": "Under require page claim future in. Truth ten seven both happy central group line. Send cultural whatever computer on fast play.",
-        "addressCountry": "Issue radio especially road get car party. All office less politics.",
-        "postalCode": "Nation network college debate direction moment. Ground think save respond friend budget while.",
-        "postOfficeBoxNumber": "Tonight garden maybe forward reason. Worker season figure they yeah get. Memory who yet spend raise child above.",
-        "streetNr": "Blood sin",
-        "district": "Important produce just raise enough onto try. Those north trouble up"
-    },
-    "areaServed": "If do them altho",
-    "rt": [
-        "oic.r.energy.generation"
-    ],
-    "energygenerated": 299.3,
-    "n": "Cold profess",
-    "if": [
-        "oic.if.baseline",
-        "oic.if.s"
-    ],
-    "type": "EnergyGeneration",
-    "@context": [
-        "https://smartdatamodels.org/context.jsonld"
+  "id": "urn:ngsi-ld:EnergyGeneration:id:YRBR:93782527",
+  "dateCreated": "1975-08-11T11:22:54Z",
+  "dateModified": "2005-03-24T18:35:19Z",
+  "source": "Spend bag into. Now from her gun subject PM. First age safe affect.",
+  "name": "Analysis population recognize someone treatment. Should represent group strong back approach",
+  "alternateName": "Pattern president add lead network the. Live teach movie I situation understand agree.",
+  "description": "Student bag grow better. Child might source. A front war.",
+  "dataProvider": "Company TV policy drug. Foreign agency when personal huge difficult player forget.",
+  "owner": [
+    "urn:ngsi-ld:EnergyGeneration:items:EMSY:35326759",
+    "urn:ngsi-ld:EnergyGeneration:items:AKQA:02906220"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:EnergyGeneration:items:ZANN:00199226"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      62.4831025,
+      -1.263129
     ]
+  },
+  "address": {
+    "streetAddress": "Hair describe hundred candidate. Probably whom it job likely different house.",
+    "addressLocality": "Turn attorney education every money my. Particularly listen down American focus something who blood. Certain hotel should.",
+    "addressRegion": "Under require page claim future in. Truth ten seven both happy central group line. Send cultural whatever computer on fast play.",
+    "addressCountry": "Issue radio especially road get car party. All office less politics.",
+    "postalCode": "Nation network college debate direction moment. Ground think save respond friend budget while.",
+    "postOfficeBoxNumber": "Tonight garden maybe forward reason. Worker season figure they yeah get. Memory who yet spend raise child above.",
+    "streetNr": "Blood sin",
+    "district": "Important produce just raise enough onto try. Those north trouble up"
+  },
+  "areaServed": "If do them altho",
+  "rt": [
+    "oic.r.energy.generation"
+  ],
+  "energygenerated": 299.3,
+  "n": "Cold profess",
+  "if": [
+    "oic.if.baseline",
+    "oic.if.s"
+  ],
+  "type": "EnergyGeneration",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
 }
