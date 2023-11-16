@@ -1,55 +1,55 @@
 {
-    "id": "urn:ngsi-ld:Inverter:id:FBOE:61943307",
-    "dateCreated": "2017-08-27T05:59:39Z",
-    "dateModified": "2010-01-04T16:24:41Z",
-    "source": "Partner remember share structure Mrs. Get again official race.",
-    "name": "Join approach reality worry away simple. Goal where memory",
-    "alternateName": "Always whatever without huge. Culture capital Republican wife. Education offer score material court.",
-    "description": "Recognize m",
-    "dataProvider": "Third free and institution with house base fine. Win public discover argue market.",
-    "owner": [
-        "urn:ngsi-ld:Inverter:items:TVRM:86781171",
-        "urn:ngsi-ld:Inverter:items:WZYG:44884108"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:Inverter:items:GRNR:13478925"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            -18.0500775,
-            -100.852308
-        ]
-    },
-    "address": {
-        "streetAddress": "Kind economy stand",
-        "addressLocality": "Recently audience sure her care informat",
-        "addressRegion": "Year stand stuff risk. Realize knowledge subject admit we successful. Former expect travel beyond.",
-        "addressCountry": "Phone space special parent page since bank. Conference list career sout",
-        "postalCode": "Race condition thought never none",
-        "postOfficeBoxNumber": "Society senior measure. Throughout program until memory design glass through.",
-        "streetNr": "Wall production your meet rather. Subject he animal today.",
-        "district": "Once protect throughout line take many future effect. Team without woul"
-    },
-    "areaServed": "Product hundred key TV wrong.",
-    "rt": [
-        "oic.r.inverter"
-    ],
-    "status": "on",
-    "ratedpower": 284.8,
-    "minvoltmppt": 676.9,
-    "maxvoltmppt": 707.0,
-    "inputvoltage": 180.4,
-    "inputcurrent": 981.9,
-    "outputpower": 643.1,
-    "timestamp": "1980-10-25T16:17:04Z",
-    "n": "Black research ",
-    "if": [
-        "oic.if.baseline",
-        "oic.if.s"
-    ],
-    "type": "Inverter",
-    "@context": [
-        "https://smartdatamodels.org/context.jsonld"
+  "id": "urn:ngsi-ld:Inverter:id:FBOE:61943307",
+  "dateCreated": "2017-08-27T05:59:39Z",
+  "dateModified": "2010-01-04T16:24:41Z",
+  "source": "Partner remember share structure Mrs. Get again official race.",
+  "name": "Join approach reality worry away simple. Goal where memory",
+  "alternateName": "Always whatever without huge. Culture capital Republican wife. Education offer score material court.",
+  "description": "Recognize m",
+  "dataProvider": "Third free and institution with house base fine. Win public discover argue market.",
+  "owner": [
+    "urn:ngsi-ld:Inverter:items:TVRM:86781171",
+    "urn:ngsi-ld:Inverter:items:WZYG:44884108"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:Inverter:items:GRNR:13478925"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -18.0500775,
+      -100.852308
     ]
+  },
+  "address": {
+    "streetAddress": "Kind economy stand",
+    "addressLocality": "Recently audience sure her care informat",
+    "addressRegion": "Year stand stuff risk. Realize knowledge subject admit we successful. Former expect travel beyond.",
+    "addressCountry": "Phone space special parent page since bank. Conference list career sout",
+    "postalCode": "Race condition thought never none",
+    "postOfficeBoxNumber": "Society senior measure. Throughout program until memory design glass through.",
+    "streetNr": "Wall production your meet rather. Subject he animal today.",
+    "district": "Once protect throughout line take many future effect. Team without woul"
+  },
+  "areaServed": "Product hundred key TV wrong.",
+  "rt": [
+    "oic.r.inverter"
+  ],
+  "status": "on",
+  "ratedpower": 284.8,
+  "minvoltmppt": 676.9,
+  "maxvoltmppt": 707.0,
+  "inputvoltage": 180.4,
+  "inputcurrent": 981.9,
+  "outputpower": 643.1,
+  "timestamp": "1980-10-25T16:17:04Z",
+  "n": "Black research ",
+  "if": [
+    "oic.if.baseline",
+    "oic.if.s"
+  ],
+  "type": "Inverter",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
 }
