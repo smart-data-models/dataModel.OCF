@@ -1,52 +1,52 @@
 {
-    "id": "urn:ngsi-ld:magneticFieldDirection:id:ZQZN:48136323",
-    "dateCreated": "2012-11-26T03:45:55Z",
-    "dateModified": "2022-04-21T02:44:22Z",
-    "source": "Kind qu",
-    "name": "Account fear pretty woman marriage. Same conference give east.",
-    "alternateName": "Use ho",
-    "description": "Already pretty choose someone. Event one",
-    "dataProvider": "Push this drive table decide. Role clearly another performance over meeting wall against. Military such it lot sing seat something.",
-    "owner": [
-        "urn:ngsi-ld:magneticFieldDirection:items:CMHR:27845200",
-        "urn:ngsi-ld:magneticFieldDirection:items:OEEU:78414935"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:magneticFieldDirection:items:LOJQ:54472476"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            73.3103535,
-            137.175816
-        ]
-    },
-    "address": {
-        "streetAddress": "Congress policy history militar",
-        "addressLocality": "Travel soldier discussion table. Prove effort arrive hundred course money article civil.",
-        "addressRegion": "Science visit building store his. Job single recognize quite.",
-        "addressCountry": "Just defense your one everyone I across. Speak material this.",
-        "postalCode": "Safe cup these cost after bette",
-        "postOfficeBoxNumber": "Seem station return drug marriage manage",
-        "streetNr": "Because cup forward on cold short tree say. Night senior family morning even concern land. Worker building ask minute leave.",
-        "district": "Although Mrs series. Investment report enter result wall garden."
-    },
-    "areaServed": "Raise some tree author. Standard body before free increase or hit.",
-    "rt": [
-        "oic.r.sensor.magneticfielddirection"
-    ],
-    "value": [
-        564.8,
-        52.7,
-        556.1
-    ],
-    "n": "Particularly use expect show second paintin",
-    "if": [
-        "oic.if.s",
-        "oic.if.baseline"
-    ],
-    "type": "magneticFieldDirection",
-    "@context": [
-        "https://smartdatamodels.org/context.jsonld"
+  "id": "urn:ngsi-ld:magneticFieldDirection:id:ZQZN:48136323",
+  "dateCreated": "2012-11-26T03:45:55Z",
+  "dateModified": "2022-04-21T02:44:22Z",
+  "source": "Kind qu",
+  "name": "Account fear pretty woman marriage. Same conference give east.",
+  "alternateName": "Use ho",
+  "description": "Already pretty choose someone. Event one",
+  "dataProvider": "Push this drive table decide. Role clearly another performance over meeting wall against. Military such it lot sing seat something.",
+  "owner": [
+    "urn:ngsi-ld:magneticFieldDirection:items:CMHR:27845200",
+    "urn:ngsi-ld:magneticFieldDirection:items:OEEU:78414935"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:magneticFieldDirection:items:LOJQ:54472476"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      73.3103535,
+      137.175816
     ]
+  },
+  "address": {
+    "streetAddress": "Congress policy history militar",
+    "addressLocality": "Travel soldier discussion table. Prove effort arrive hundred course money article civil.",
+    "addressRegion": "Science visit building store his. Job single recognize quite.",
+    "addressCountry": "Just defense your one everyone I across. Speak material this.",
+    "postalCode": "Safe cup these cost after bette",
+    "postOfficeBoxNumber": "Seem station return drug marriage manage",
+    "streetNr": "Because cup forward on cold short tree say. Night senior family morning even concern land. Worker building ask minute leave.",
+    "district": "Although Mrs series. Investment report enter result wall garden."
+  },
+  "areaServed": "Raise some tree author. Standard body before free increase or hit.",
+  "rt": [
+    "oic.r.sensor.magneticfielddirection"
+  ],
+  "value": [
+    564.8,
+    52.7,
+    556.1
+  ],
+  "n": "Particularly use expect show second paintin",
+  "if": [
+    "oic.if.s",
+    "oic.if.baseline"
+  ],
+  "type": "magneticFieldDirection",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
 }
