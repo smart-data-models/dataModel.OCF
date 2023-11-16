@@ -1,58 +1,58 @@
 {
-    "id": "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:id:QSII:08545277",
-    "dateCreated": "2011-06-12T08:24:11Z",
-    "dateModified": "1994-09-18T20:29:43Z",
-    "source": "For or prevent right still if rich. Us maintain event. Meeting fish show nor only. Here manage threat profes",
-    "name": "Stuff alone team responsibility. Yourself look c",
-    "alternateName": "Court particularly song lay follow film movie. Response size character tax.",
-    "description": "Card color them teach drug college management. Good director beyond exactly heavy family.",
-    "dataProvider": "Audience fill free position. Debate imagine court throughout.",
-    "owner": [
-        "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:EUJH:30934965",
-        "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:RTPX:39835000"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:RQAB:55271114"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            69.193737,
-            -84.724615
-        ]
-    },
-    "address": {
-        "streetAddress": "Finally born probably TV realize pattern available tax. Say of",
-        "addressLocality": "Water culture respond game feel debate. No make third.",
-        "addressRegion": "One family window eye area approach people along. Prepare order around play production difference ball true.",
-        "addressCountry": "Identify administratio",
-        "postalCode": "Need bad always small some apply.",
-        "postOfficeBoxNumber": "House clearly second improve human. Box main outside throughout discussion evidence beautiful.",
-        "streetNr": "Leg research force worker strategy name. Knowledge stuff person change magazine hard well.",
-        "district": "Quite author"
-    },
-    "areaServed": "Rise item research study phone. Co",
-    "plow": 53.9,
-    "phigh": 705.7,
-    "dhypo": 755.1,
-    "dhyper": 517.6,
-    "gir": 375.6,
-    "gdr": 263.1,
-    "rt": [
-        "oic.r.cgm.threshold"
-    ],
-    "n": "Design president specific approa",
-    "if": [
-        "oic.if.rw"
-    ],
-    "range": [
-        13.4,
-        330.3
-    ],
-    "step": 872.4,
-    "precision": 23.4,
-    "type": "ContinuousGlucoseMeterThreshold",
-    "@context": [
-        "https://smartdatamodels.org/context.jsonld"
+  "id": "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:id:QSII:08545277",
+  "dateCreated": "2011-06-12T08:24:11Z",
+  "dateModified": "1994-09-18T20:29:43Z",
+  "source": "For or prevent right still if rich. Us maintain event. Meeting fish show nor only. Here manage threat profes",
+  "name": "Stuff alone team responsibility. Yourself look c",
+  "alternateName": "Court particularly song lay follow film movie. Response size character tax.",
+  "description": "Card color them teach drug college management. Good director beyond exactly heavy family.",
+  "dataProvider": "Audience fill free position. Debate imagine court throughout.",
+  "owner": [
+    "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:EUJH:30934965",
+    "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:RTPX:39835000"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:ContinuousGlucoseMeterThreshold:items:RQAB:55271114"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      69.193737,
+      -84.724615
     ]
+  },
+  "address": {
+    "streetAddress": "Finally born probably TV realize pattern available tax. Say of",
+    "addressLocality": "Water culture respond game feel debate. No make third.",
+    "addressRegion": "One family window eye area approach people along. Prepare order around play production difference ball true.",
+    "addressCountry": "Identify administratio",
+    "postalCode": "Need bad always small some apply.",
+    "postOfficeBoxNumber": "House clearly second improve human. Box main outside throughout discussion evidence beautiful.",
+    "streetNr": "Leg research force worker strategy name. Knowledge stuff person change magazine hard well.",
+    "district": "Quite author"
+  },
+  "areaServed": "Rise item research study phone. Co",
+  "plow": 53.9,
+  "phigh": 705.7,
+  "dhypo": 755.1,
+  "dhyper": 517.6,
+  "gir": 375.6,
+  "gdr": 263.1,
+  "rt": [
+    "oic.r.cgm.threshold"
+  ],
+  "n": "Design president specific approa",
+  "if": [
+    "oic.if.rw"
+  ],
+  "range": [
+    13.4,
+    330.3
+  ],
+  "step": 872.4,
+  "precision": 23.4,
+  "type": "ContinuousGlucoseMeterThreshold",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
 }
