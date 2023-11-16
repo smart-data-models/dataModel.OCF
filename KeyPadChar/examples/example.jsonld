@@ -1,48 +1,48 @@
 {
-    "id": "urn:ngsi-ld:KeyPadChar:id:SLPH:28584937",
-    "dateCreated": "2012-06-11T21:57:22Z",
-    "dateModified": "2022-03-17T02:56:31Z",
-    "source": "I political coach glass thing significant before. Cu",
-    "name": "Nice house subject smile consider break move TV. Discover determine rate space. Program official small minute teacher community.",
-    "alternateName": "Spring behind seat least. System seek build apply describe according someone. During election position back discover. Window husband often improve note risk the",
-    "description": "Eight practice then about fast. Conference whole visit. Manager rather age bad learn.",
-    "dataProvider": "Range speech collection security rule population issue. Say south worry firm Democrat everybody. The",
-    "owner": [
-        "urn:ngsi-ld:KeyPadChar:items:VFQB:56090069",
-        "urn:ngsi-ld:KeyPadChar:items:WRYS:67214863"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:KeyPadChar:items:CODS:04227854"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            43.101912,
-            -99.906767
-        ]
-    },
-    "address": {
-        "streetAddress": "Security tell issue my break. Have but American court charge Democrat specific.",
-        "addressLocality": "They minute painting turn. Finish bed outside employee ready individual.",
-        "addressRegion": "Body he approach environmental. Wide ready use. Citizen travel former authority lot customer.",
-        "addressCountry": "Want along structure practice whom every. Deal difficult test note.",
-        "postalCode": "Lead material memory himself consumer ",
-        "postOfficeBoxNumber": "Value serve light trial new white before. Interview traditional television letter.",
-        "streetNr": "Live peace discussion ago feel send. Film study guess budget across pattern. Human sort remember do whole marriage movie.",
-        "district": "Have try him outside. Soon take else heart."
-    },
-    "areaServed": "Could thank base feel",
-    "rt": [
-        "oic.r.keypadchar"
-    ],
-    "keyvalue": "4",
-    "n": "Argue start agree. Garden enjoy specific repres",
-    "if": [
-        "oic.if.rw",
-        "oic.if.baseline"
-    ],
-    "type": "KeyPadChar",
-    "@context": [
-        "https://smartdatamodels.org/context.jsonld"
+  "id": "urn:ngsi-ld:KeyPadChar:id:SLPH:28584937",
+  "dateCreated": "2012-06-11T21:57:22Z",
+  "dateModified": "2022-03-17T02:56:31Z",
+  "source": "I political coach glass thing significant before. Cu",
+  "name": "Nice house subject smile consider break move TV. Discover determine rate space. Program official small minute teacher community.",
+  "alternateName": "Spring behind seat least. System seek build apply describe according someone. During election position back discover. Window husband often improve note risk the",
+  "description": "Eight practice then about fast. Conference whole visit. Manager rather age bad learn.",
+  "dataProvider": "Range speech collection security rule population issue. Say south worry firm Democrat everybody. The",
+  "owner": [
+    "urn:ngsi-ld:KeyPadChar:items:VFQB:56090069",
+    "urn:ngsi-ld:KeyPadChar:items:WRYS:67214863"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:KeyPadChar:items:CODS:04227854"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      43.101912,
+      -99.906767
     ]
+  },
+  "address": {
+    "streetAddress": "Security tell issue my break. Have but American court charge Democrat specific.",
+    "addressLocality": "They minute painting turn. Finish bed outside employee ready individual.",
+    "addressRegion": "Body he approach environmental. Wide ready use. Citizen travel former authority lot customer.",
+    "addressCountry": "Want along structure practice whom every. Deal difficult test note.",
+    "postalCode": "Lead material memory himself consumer ",
+    "postOfficeBoxNumber": "Value serve light trial new white before. Interview traditional television letter.",
+    "streetNr": "Live peace discussion ago feel send. Film study guess budget across pattern. Human sort remember do whole marriage movie.",
+    "district": "Have try him outside. Soon take else heart."
+  },
+  "areaServed": "Could thank base feel",
+  "rt": [
+    "oic.r.keypadchar"
+  ],
+  "keyvalue": "4",
+  "n": "Argue start agree. Garden enjoy specific repres",
+  "if": [
+    "oic.if.rw",
+    "oic.if.baseline"
+  ],
+  "type": "KeyPadChar",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
 }
