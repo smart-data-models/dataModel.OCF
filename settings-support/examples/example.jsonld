@@ -1,48 +1,48 @@
 {
-    "id": "urn:ngsi-ld:settings-support:id:RPNG:87364807",
-    "dateCreated": "1988-11-09T16:34:34Z",
-    "dateModified": "2009-06-05T15:26:22Z",
-    "source": "Task teacher question adult bill.",
-    "name": "Military speech then consumer kid.",
-    "alternateName": "Hospital according interest study cold.",
-    "description": "Especially reduce staff start boy speak. Lot any theory management nearly. Serve little others practice performance.",
-    "dataProvider": "Discuss expert head. Early know bag guess whose. Particularly benefit special church young. Land u",
-    "owner": [
-        "urn:ngsi-ld:settings-support:items:WJYZ:91255701",
-        "urn:ngsi-ld:settings-support:items:YBIS:13492193"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:settings-support:items:NNNW:56053553"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            69.8068515,
-            -158.428661
-        ]
-    },
-    "address": {
-        "streetAddress": "Single order draw. Citizen keep rich coupl",
-        "addressLocality": "Usually order discover husband for style. Add coach condition method.",
-        "addressRegion": "Debate spring soldier discuss after above officer. Forward not have term create TV. According we add ago into.",
-        "addressCountry": "Plant expect surface agent maybe true school. Consumer ahead Congress while consumer happen.",
-        "postalCode": "For evening around deci",
-        "postOfficeBoxNumber": "Before detail recentl",
-        "streetNr": "Practice center image nature. Manager rule traditional down.",
-        "district": "Nice into project law year food bank. Consider brother old activity almost body partner. Our them nature leader kind part. Office according wife each product market rather day."
-    },
-    "areaServed": "Law happy wait professor see player. Whose common draw order change reveal treat. Herself natural then measure.",
-    "rt": [
-        "oic.r.settings.support"
-    ],
-    "if": [
-        "oic.if.baseline",
-        "oic.if.rw"
-    ],
-    "remote-management": true,
-    "software-auto-update": false,
-    "type": "settings-support",
-    "@context": [
-        "https://smartdatamodels.org/context.jsonld"
+  "id": "urn:ngsi-ld:settings-support:id:RPNG:87364807",
+  "dateCreated": "1988-11-09T16:34:34Z",
+  "dateModified": "2009-06-05T15:26:22Z",
+  "source": "Task teacher question adult bill.",
+  "name": "Military speech then consumer kid.",
+  "alternateName": "Hospital according interest study cold.",
+  "description": "Especially reduce staff start boy speak. Lot any theory management nearly. Serve little others practice performance.",
+  "dataProvider": "Discuss expert head. Early know bag guess whose. Particularly benefit special church young. Land u",
+  "owner": [
+    "urn:ngsi-ld:settings-support:items:WJYZ:91255701",
+    "urn:ngsi-ld:settings-support:items:YBIS:13492193"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:settings-support:items:NNNW:56053553"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      69.8068515,
+      -158.428661
     ]
+  },
+  "address": {
+    "streetAddress": "Single order draw. Citizen keep rich coupl",
+    "addressLocality": "Usually order discover husband for style. Add coach condition method.",
+    "addressRegion": "Debate spring soldier discuss after above officer. Forward not have term create TV. According we add ago into.",
+    "addressCountry": "Plant expect surface agent maybe true school. Consumer ahead Congress while consumer happen.",
+    "postalCode": "For evening around deci",
+    "postOfficeBoxNumber": "Before detail recentl",
+    "streetNr": "Practice center image nature. Manager rule traditional down.",
+    "district": "Nice into project law year food bank. Consider brother old activity almost body partner. Our them nature leader kind part. Office according wife each product market rather day."
+  },
+  "areaServed": "Law happy wait professor see player. Whose common draw order change reveal treat. Herself natural then measure.",
+  "rt": [
+    "oic.r.settings.support"
+  ],
+  "if": [
+    "oic.if.baseline",
+    "oic.if.rw"
+  ],
+  "remote-management": true,
+  "software-auto-update": false,
+  "type": "settings-support",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
 }
