@@ -1,50 +1,50 @@
 {
-    "id": "urn:ngsi-ld:VehicleConnector:id:JPXG:63090686",
-    "dateCreated": "2004-11-18T08:54:05Z",
-    "dateModified": "2023-01-15T04:30:42Z",
-    "source": "Apply carry speech nor responsibility ",
-    "name": "Friend well happy degree end. Decision a",
-    "alternateName": "Under Congress hand institution analysis establish build listen. Hard forward since try animal executive. Simpl",
-    "description": "Skin family consumer drive. Arm per establish. Style chance have later.",
-    "dataProvider": "Have follow control peace know.",
-    "owner": [
-        "urn:ngsi-ld:VehicleConnector:items:HMCJ:34623597",
-        "urn:ngsi-ld:VehicleConnector:items:XNIW:54386436"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:VehicleConnector:items:WASN:20285756"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            -57.2071525,
-            50.016674
-        ]
-    },
-    "address": {
-        "streetAddress": "Central successful image tree significant write. Up father cold decision recognize the enter. Opportunity word across large.",
-        "addressLocality": "His administration perform police program table si",
-        "addressRegion": "Wear actually market daughter cour",
-        "addressCountry": "Give true business sport continue over increase newspaper. Arrive support cause shoulder decision. Share sell wrong they.",
-        "postalCode": "Bring degree cover always particularly none on.",
-        "postOfficeBoxNumber": "Time those Congress measure best. Relationship development over rec",
-        "streetNr": "Name approach walk practice. Easy here decide so.",
-        "district": "Near strategy however finally their plan. Resourc"
-    },
-    "areaServed": "Lawyer if customer project. Democrat may above sister way prevent. Reason five already best dream.",
-    "rt": [
-        "oic.r.vehicle.connector"
-    ],
-    "connected": false,
-    "ratedchargingcapacity": 161.4,
-    "rateddischargingcapacity": 196.6,
-    "n": "Action stuff hot",
-    "if": [
-        "oic.if.s",
-        "oic.if.baseline"
-    ],
-    "type": "VehicleConnector",
-    "@context": [
-        "https://smartdatamodels.org/context.jsonld"
+  "id": "urn:ngsi-ld:VehicleConnector:id:JPXG:63090686",
+  "dateCreated": "2004-11-18T08:54:05Z",
+  "dateModified": "2023-01-15T04:30:42Z",
+  "source": "Apply carry speech nor responsibility ",
+  "name": "Friend well happy degree end. Decision a",
+  "alternateName": "Under Congress hand institution analysis establish build listen. Hard forward since try animal executive. Simpl",
+  "description": "Skin family consumer drive. Arm per establish. Style chance have later.",
+  "dataProvider": "Have follow control peace know.",
+  "owner": [
+    "urn:ngsi-ld:VehicleConnector:items:HMCJ:34623597",
+    "urn:ngsi-ld:VehicleConnector:items:XNIW:54386436"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:VehicleConnector:items:WASN:20285756"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -57.2071525,
+      50.016674
     ]
+  },
+  "address": {
+    "streetAddress": "Central successful image tree significant write. Up father cold decision recognize the enter. Opportunity word across large.",
+    "addressLocality": "His administration perform police program table si",
+    "addressRegion": "Wear actually market daughter cour",
+    "addressCountry": "Give true business sport continue over increase newspaper. Arrive support cause shoulder decision. Share sell wrong they.",
+    "postalCode": "Bring degree cover always particularly none on.",
+    "postOfficeBoxNumber": "Time those Congress measure best. Relationship development over rec",
+    "streetNr": "Name approach walk practice. Easy here decide so.",
+    "district": "Near strategy however finally their plan. Resourc"
+  },
+  "areaServed": "Lawyer if customer project. Democrat may above sister way prevent. Reason five already best dream.",
+  "rt": [
+    "oic.r.vehicle.connector"
+  ],
+  "connected": false,
+  "ratedchargingcapacity": 161.4,
+  "rateddischargingcapacity": 196.6,
+  "n": "Action stuff hot",
+  "if": [
+    "oic.if.s",
+    "oic.if.baseline"
+  ],
+  "type": "VehicleConnector",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
 }
