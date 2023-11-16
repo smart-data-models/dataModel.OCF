@@ -1,47 +1,47 @@
 {
-    "id": "urn:ngsi-ld:heartRateZone:id:ENQF:45741847",
-    "dateCreated": "1985-03-21T10:18:33Z",
-    "dateModified": "2001-06-01T12:28:15Z",
-    "source": "Speak fund coach politics rate open. Fly black leave model all these. Occur increase indeed home eight each soon community.",
-    "name": "Throw new behind catch great sport. Everyone family describe wonder par",
-    "alternateName": "Religious partner low conference husband. Director medical game city decide g",
-    "description": "Together authority must best. Artist music his establish could.",
-    "dataProvider": "Research product nice bed. Support may sure meeting subject politics.",
-    "owner": [
-        "urn:ngsi-ld:heartRateZone:items:OFPW:07697765",
-        "urn:ngsi-ld:heartRateZone:items:GPIR:74445561"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:heartRateZone:items:KDLO:05139773"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            -52.4623695,
-            100.384494
-        ]
-    },
-    "address": {
-        "streetAddress": "Positive amount official. Small card throw letter. Simply me whose grow according.",
-        "addressLocality": "Chance nat",
-        "addressRegion": "Industry thought office poor nation. Usually argue teach option bed. Cut physical true name any enjoy low.",
-        "addressCountry": "Night which white popul",
-        "postalCode": "Picture why officer store he order. Amount represent weight owner instead. Air reduce executive grow question class.",
-        "postOfficeBoxNumber": "About conference message that city. Main despite region before. Occur information speak roa",
-        "streetNr": "There positive top country walk someone on improve",
-        "district": "Nature history run seek call skin me. Catch memory entire writer "
-    },
-    "areaServed": "Around daughter mouth condition operation. Two su",
-    "rt": [
-        "oic.r.sensor.heart.zone"
-    ],
-    "n": "Fly bag worry always. Base prev",
-    "heartRateZone": "Zone3",
-    "if": [
-        "oic.if.s"
-    ],
-    "type": "heartRateZone",
-    "@context": [
-        "https://smartdatamodels.org/context.jsonld"
+  "id": "urn:ngsi-ld:heartRateZone:id:ENQF:45741847",
+  "dateCreated": "1985-03-21T10:18:33Z",
+  "dateModified": "2001-06-01T12:28:15Z",
+  "source": "Speak fund coach politics rate open. Fly black leave model all these. Occur increase indeed home eight each soon community.",
+  "name": "Throw new behind catch great sport. Everyone family describe wonder par",
+  "alternateName": "Religious partner low conference husband. Director medical game city decide g",
+  "description": "Together authority must best. Artist music his establish could.",
+  "dataProvider": "Research product nice bed. Support may sure meeting subject politics.",
+  "owner": [
+    "urn:ngsi-ld:heartRateZone:items:OFPW:07697765",
+    "urn:ngsi-ld:heartRateZone:items:GPIR:74445561"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:heartRateZone:items:KDLO:05139773"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -52.4623695,
+      100.384494
     ]
+  },
+  "address": {
+    "streetAddress": "Positive amount official. Small card throw letter. Simply me whose grow according.",
+    "addressLocality": "Chance nat",
+    "addressRegion": "Industry thought office poor nation. Usually argue teach option bed. Cut physical true name any enjoy low.",
+    "addressCountry": "Night which white popul",
+    "postalCode": "Picture why officer store he order. Amount represent weight owner instead. Air reduce executive grow question class.",
+    "postOfficeBoxNumber": "About conference message that city. Main despite region before. Occur information speak roa",
+    "streetNr": "There positive top country walk someone on improve",
+    "district": "Nature history run seek call skin me. Catch memory entire writer "
+  },
+  "areaServed": "Around daughter mouth condition operation. Two su",
+  "rt": [
+    "oic.r.sensor.heart.zone"
+  ],
+  "n": "Fly bag worry always. Base prev",
+  "heartRateZone": "Zone3",
+  "if": [
+    "oic.if.s"
+  ],
+  "type": "heartRateZone",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
 }
