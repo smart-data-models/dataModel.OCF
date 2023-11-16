@@ -1,48 +1,48 @@
 {
-    "id": "urn:ngsi-ld:Contact:id:NIYE:38833705",
-    "dateCreated": "1979-07-08T09:22:39Z",
-    "dateModified": "2014-12-06T02:35:48Z",
-    "source": "National find analysis wish analy",
-    "name": "All friend across. Treat career house state wall. ",
-    "alternateName": "Blue pay off could national shake head. Short who democr",
-    "description": "Strong interesting down decade. Might source night plan Mr.",
-    "dataProvider": "Ability soon soldier. Hear",
-    "owner": [
-        "urn:ngsi-ld:Contact:items:HCTI:07644860",
-        "urn:ngsi-ld:Contact:items:WPVS:33072712"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:Contact:items:EHLJ:26897302"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            -46.4613705,
-            113.760115
-        ]
-    },
-    "address": {
-        "streetAddress": "Time family operation add. Pick project something into watch rest. Figure ten floor operation instead from.",
-        "addressLocality": "City impact member sit worker administration.",
-        "addressRegion": "Road difference no movement such. Fact human option commercial s",
-        "addressCountry": "Mean successful population value various. Here bad w",
-        "postalCode": "Painting professor trade machine let child clear street. National three challenge describe stuff professional pare",
-        "postOfficeBoxNumber": "Live way determine. Nam",
-        "streetNr": "Should ten eight others. Couple challenge popular pay send.",
-        "district": "Hour woman matter notice approach. Lawyer capital middle bad."
-    },
-    "areaServed": "Seat true whatever green. Size TV focus new south each.",
-    "rt": [
-        "oic.r.sensor.contact"
-    ],
-    "value": false,
-    "n": "Analysis drive yeah kid public politics save gar",
-    "if": [
-        "oic.if.s",
-        "oic.if.baseline"
-    ],
-    "type": "Contact",
-    "@context": [
-        "https://smartdatamodels.org/context.jsonld"
+  "id": "urn:ngsi-ld:Contact:id:NIYE:38833705",
+  "dateCreated": "1979-07-08T09:22:39Z",
+  "dateModified": "2014-12-06T02:35:48Z",
+  "source": "National find analysis wish analy",
+  "name": "All friend across. Treat career house state wall. ",
+  "alternateName": "Blue pay off could national shake head. Short who democr",
+  "description": "Strong interesting down decade. Might source night plan Mr.",
+  "dataProvider": "Ability soon soldier. Hear",
+  "owner": [
+    "urn:ngsi-ld:Contact:items:HCTI:07644860",
+    "urn:ngsi-ld:Contact:items:WPVS:33072712"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:Contact:items:EHLJ:26897302"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -46.4613705,
+      113.760115
     ]
+  },
+  "address": {
+    "streetAddress": "Time family operation add. Pick project something into watch rest. Figure ten floor operation instead from.",
+    "addressLocality": "City impact member sit worker administration.",
+    "addressRegion": "Road difference no movement such. Fact human option commercial s",
+    "addressCountry": "Mean successful population value various. Here bad w",
+    "postalCode": "Painting professor trade machine let child clear street. National three challenge describe stuff professional pare",
+    "postOfficeBoxNumber": "Live way determine. Nam",
+    "streetNr": "Should ten eight others. Couple challenge popular pay send.",
+    "district": "Hour woman matter notice approach. Lawyer capital middle bad."
+  },
+  "areaServed": "Seat true whatever green. Size TV focus new south each.",
+  "rt": [
+    "oic.r.sensor.contact"
+  ],
+  "value": false,
+  "n": "Analysis drive yeah kid public politics save gar",
+  "if": [
+    "oic.if.s",
+    "oic.if.baseline"
+  ],
+  "type": "Contact",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
 }
