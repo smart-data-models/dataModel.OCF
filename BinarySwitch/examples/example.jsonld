@@ -1,48 +1,48 @@
 {
-    "id": "urn:ngsi-ld:BinarySwitch:id:KSRN:63934709",
-    "dateCreated": "2004-04-11T04:25:15Z",
-    "dateModified": "1977-08-07T15:24:17Z",
-    "source": "Style recent network economy exactly more ground international. Building t",
-    "name": "Total quite",
-    "alternateName": "Late term particul",
-    "description": "",
-    "dataProvider": "Mind first charge base position them peace. Page reflect ok unit see west thank. Personal ball father capital.",
-    "owner": [
-        "urn:ngsi-ld:BinarySwitch:items:PJOQ:56642349",
-        "urn:ngsi-ld:BinarySwitch:items:SODH:76834134"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:BinarySwitch:items:LFIE:84485764"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            -36.911266,
-            152.471699
-        ]
-    },
-    "address": {
-        "streetAddress": "Weight employee manage go prove commercial. Follow shake source way. Bill there within benef",
-        "addressLocality": "Arrive study participant knowledge. Service industry bed avoid first edge occur. Color collection area lay community training focus.",
-        "addressRegion": "Sense lose fine business leader own. More possible end arrive under address. Early cri",
-        "addressCountry": "Price response team radio stop.",
-        "postalCode": "Rise blue history establish red.",
-        "postOfficeBoxNumber": "From su",
-        "streetNr": "Another wait game need team house other very. Strategy body police leave. Event late car range common guess.",
-        "district": "High garden far evidence you want explain. To player week approach tonight whether close."
-    },
-    "areaServed": "Serve until whatever drive. Southern method up ",
-    "rt": [
-        "oic.r.switch.binary"
-    ],
-    "value": false,
-    "n": "Age j",
-    "if": [
-        "oic.if.baseline",
-        "oic.if.a"
-    ],
-    "type": "BinarySwitch",
-    "@context": [
-        "https://smartdatamodels.org/context.jsonld"
+  "id": "urn:ngsi-ld:BinarySwitch:id:KSRN:63934709",
+  "dateCreated": "2004-04-11T04:25:15Z",
+  "dateModified": "1977-08-07T15:24:17Z",
+  "source": "Style recent network economy exactly more ground international. Building t",
+  "name": "Total quite",
+  "alternateName": "Late term particul",
+  "description": "",
+  "dataProvider": "Mind first charge base position them peace. Page reflect ok unit see west thank. Personal ball father capital.",
+  "owner": [
+    "urn:ngsi-ld:BinarySwitch:items:PJOQ:56642349",
+    "urn:ngsi-ld:BinarySwitch:items:SODH:76834134"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:BinarySwitch:items:LFIE:84485764"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -36.911266,
+      152.471699
     ]
+  },
+  "address": {
+    "streetAddress": "Weight employee manage go prove commercial. Follow shake source way. Bill there within benef",
+    "addressLocality": "Arrive study participant knowledge. Service industry bed avoid first edge occur. Color collection area lay community training focus.",
+    "addressRegion": "Sense lose fine business leader own. More possible end arrive under address. Early cri",
+    "addressCountry": "Price response team radio stop.",
+    "postalCode": "Rise blue history establish red.",
+    "postOfficeBoxNumber": "From su",
+    "streetNr": "Another wait game need team house other very. Strategy body police leave. Event late car range common guess.",
+    "district": "High garden far evidence you want explain. To player week approach tonight whether close."
+  },
+  "areaServed": "Serve until whatever drive. Southern method up ",
+  "rt": [
+    "oic.r.switch.binary"
+  ],
+  "value": false,
+  "n": "Age j",
+  "if": [
+    "oic.if.baseline",
+    "oic.if.a"
+  ],
+  "type": "BinarySwitch",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
 }
