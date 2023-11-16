@@ -1,51 +1,51 @@
 {
-    "id": "urn:ngsi-ld:LockCode:id:XTKB:17156589",
-    "dateCreated": "1995-03-22T09:46:16Z",
-    "dateModified": "1989-05-15T06:56:35Z",
-    "source": "Occur expert go feel de",
-    "name": "Suggest understand",
-    "alternateName": "They laugh note near during never happy.",
-    "description": "Fee",
-    "dataProvider": "Image color central floor particular make summer hand. ",
-    "owner": [
-        "urn:ngsi-ld:LockCode:items:HTRD:76227389",
-        "urn:ngsi-ld:LockCode:items:YGNR:67121480"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:LockCode:items:OTTV:99825070"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            -60.885144,
-            -171.913549
-        ]
-    },
-    "address": {
-        "streetAddress": "Account summer debate two nothing.",
-        "addressLocality": "Organization road life tree. Foot state brother. Unit generation trade accept space.",
-        "addressRegion": "Agency now short recognize that have. Dog drop recent these media. Notice certainly and play ",
-        "addressCountry": "Those test full nice adult attorney. Class visit effort gas campaign.",
-        "postalCode": "Assume head open apply civil thank environment",
-        "postOfficeBoxNumber": "Prepare group imagine already none. Price next model value risk us. Professional",
-        "streetNr": "Throw prevent strategy hold include. Effort talk author up are",
-        "district": "Process design behavior room big ok college. Along effor"
-    },
-    "areaServed": "Apply pressure matter leave raise Democrat baby. Cut memory scientist activity",
-    "rt": [
-        "oic.r.lock.code"
-    ],
-    "lockCodeList": [
-        "Action fill yard send wrong. Including history phone to.",
-        "Prove almost at administration. Behind inv"
-    ],
-    "n": "Firm new rule p",
-    "if": [
-        "oic.if.a",
-        "oic.if.baseline"
-    ],
-    "type": "LockCode",
-    "@context": [
-        "https://smartdatamodels.org/context.jsonld"
+  "id": "urn:ngsi-ld:LockCode:id:XTKB:17156589",
+  "dateCreated": "1995-03-22T09:46:16Z",
+  "dateModified": "1989-05-15T06:56:35Z",
+  "source": "Occur expert go feel de",
+  "name": "Suggest understand",
+  "alternateName": "They laugh note near during never happy.",
+  "description": "Fee",
+  "dataProvider": "Image color central floor particular make summer hand. ",
+  "owner": [
+    "urn:ngsi-ld:LockCode:items:HTRD:76227389",
+    "urn:ngsi-ld:LockCode:items:YGNR:67121480"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:LockCode:items:OTTV:99825070"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -60.885144,
+      -171.913549
     ]
+  },
+  "address": {
+    "streetAddress": "Account summer debate two nothing.",
+    "addressLocality": "Organization road life tree. Foot state brother. Unit generation trade accept space.",
+    "addressRegion": "Agency now short recognize that have. Dog drop recent these media. Notice certainly and play ",
+    "addressCountry": "Those test full nice adult attorney. Class visit effort gas campaign.",
+    "postalCode": "Assume head open apply civil thank environment",
+    "postOfficeBoxNumber": "Prepare group imagine already none. Price next model value risk us. Professional",
+    "streetNr": "Throw prevent strategy hold include. Effort talk author up are",
+    "district": "Process design behavior room big ok college. Along effor"
+  },
+  "areaServed": "Apply pressure matter leave raise Democrat baby. Cut memory scientist activity",
+  "rt": [
+    "oic.r.lock.code"
+  ],
+  "lockCodeList": [
+    "Action fill yard send wrong. Including history phone to.",
+    "Prove almost at administration. Behind inv"
+  ],
+  "n": "Firm new rule p",
+  "if": [
+    "oic.if.a",
+    "oic.if.baseline"
+  ],
+  "type": "LockCode",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
 }
