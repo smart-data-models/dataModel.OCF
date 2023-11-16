@@ -1,51 +1,51 @@
 {
-    "id": "urn:ngsi-ld:consumable:id:EKND:74179116",
-    "dateCreated": "1999-04-25T21:16:15Z",
-    "dateModified": "2021-12-25T02:01:21Z",
-    "source": "Rather hospital across certain Congress east. Give ability red mouth. Occur much eye camera paper not who.",
-    "name": "You policy dog allow administration offer. Benefit whether without world outside forward wind. Yard stay bring medical write until.",
-    "alternateName": "Arm newspaper subject student show. Foot where just example raise enter. Alone participant later nor result. Good operation common experience prove foot opportunity",
-    "description": "Exactly check never control color chance individual. Current inside boy lot everybody time.",
-    "dataProvider": "Forward feel I who. Term possible service interesting.",
-    "owner": [
-        "urn:ngsi-ld:consumable:items:NRHO:20185619",
-        "urn:ngsi-ld:consumable:items:ZADU:56601079"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:consumable:items:AMTK:54230190"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            -26.224805,
-            -15.65884
-        ]
-    },
-    "address": {
-        "streetAddress": "Book defense move business. Goal message effect describe option happy now. Along kind set so they owner.",
-        "addressLocality": "Summer buy ask drive. His land attorney person treat. Popular assume movement light become beautiful here item.",
-        "addressRegion": "Crime size material table. West",
-        "addressCountry": "A",
-        "postalCode": "Peace short situation generat",
-        "postOfficeBoxNumber": "Final ok here dark explain indeed if front. Life future group investment they. Both woman level by option.",
-        "streetNr": "Thus alone drive decision.",
-        "district": "Threat class maintain next. Arrive recognize wrong population different Republican pro"
-    },
-    "areaServed": "Beat dog teach low. Professor value here ",
-    "rt": [
-        "oic.r.consumable"
-    ],
-    "remaining": 49,
-    "typeofconsumable": "Else memory if. Whose group through despite cause. S",
-    "url": "urn:ngsi-ld:consumable:url:DLNK:92411578",
-    "orderpercentage": 49,
-    "n": "Else memory if. Whose group t",
-    "if": [
-        "oic.if.s",
-        "oic.if.baseline"
-    ],
-    "type": "consumable",
-    "@context": [
-        "https://smartdatamodels.org/context.jsonld"
+  "id": "urn:ngsi-ld:consumable:id:EKND:74179116",
+  "dateCreated": "1999-04-25T21:16:15Z",
+  "dateModified": "2021-12-25T02:01:21Z",
+  "source": "Rather hospital across certain Congress east. Give ability red mouth. Occur much eye camera paper not who.",
+  "name": "You policy dog allow administration offer. Benefit whether without world outside forward wind. Yard stay bring medical write until.",
+  "alternateName": "Arm newspaper subject student show. Foot where just example raise enter. Alone participant later nor result. Good operation common experience prove foot opportunity",
+  "description": "Exactly check never control color chance individual. Current inside boy lot everybody time.",
+  "dataProvider": "Forward feel I who. Term possible service interesting.",
+  "owner": [
+    "urn:ngsi-ld:consumable:items:NRHO:20185619",
+    "urn:ngsi-ld:consumable:items:ZADU:56601079"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:consumable:items:AMTK:54230190"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -26.224805,
+      -15.65884
     ]
+  },
+  "address": {
+    "streetAddress": "Book defense move business. Goal message effect describe option happy now. Along kind set so they owner.",
+    "addressLocality": "Summer buy ask drive. His land attorney person treat. Popular assume movement light become beautiful here item.",
+    "addressRegion": "Crime size material table. West",
+    "addressCountry": "A",
+    "postalCode": "Peace short situation generat",
+    "postOfficeBoxNumber": "Final ok here dark explain indeed if front. Life future group investment they. Both woman level by option.",
+    "streetNr": "Thus alone drive decision.",
+    "district": "Threat class maintain next. Arrive recognize wrong population different Republican pro"
+  },
+  "areaServed": "Beat dog teach low. Professor value here ",
+  "rt": [
+    "oic.r.consumable"
+  ],
+  "remaining": 49,
+  "typeofconsumable": "Else memory if. Whose group through despite cause. S",
+  "url": "urn:ngsi-ld:consumable:url:DLNK:92411578",
+  "orderpercentage": 49,
+  "n": "Else memory if. Whose group t",
+  "if": [
+    "oic.if.s",
+    "oic.if.baseline"
+  ],
+  "type": "consumable",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
 }
