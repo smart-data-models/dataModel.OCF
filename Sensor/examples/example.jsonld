@@ -1,54 +1,54 @@
 {
-    "id": "urn:ngsi-ld:Sensor:id:WPTP:35827884",
-    "dateCreated": "1996-08-31T15:15:49Z",
-    "dateModified": "1975-12-20T10:52:56Z",
-    "source": "Weight wait require experience my collection. Hold policy lead plant. Human indicate her only. Sea resource east sign into.",
-    "name": "She pull fill that. Avoid bed maintain mother. Wait this run particularly.",
-    "alternateName": "Along television foreign. Majority effort inside this best realize. Difficult note address newspaper talk according.",
-    "description": "Center north record side economy administration chance off. List need staff.",
-    "dataProvider": "Small leg upon live foot big. Direction morning address six.",
-    "owner": [
-        "urn:ngsi-ld:Sensor:items:KKJR:79761930",
-        "urn:ngsi-ld:Sensor:items:KGRZ:45195777"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:Sensor:items:XBPZ:05320212"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            38.113858,
-            67.542463
-        ]
-    },
-    "address": {
-        "streetAddress": "Ago law thank make challenge which travel. National fish national worry find affect. Tell prevent along west power science admit.",
-        "addressLocality": "Onto key gas we moment full together. Magaz",
-        "addressRegion": "These identify believ",
-        "addressCountry": "Data agency stay of mean expect analysis. Ever other cup eight not sure. Score fight practice notice.",
-        "postalCode": "Church many room worker affect huge claim. Scientist nothing do career. Cup other cultural soldier fact majority.",
-        "postOfficeBoxNumber": "Learn amount change or space everyone. Fear since as. Happen firm product blue store big quality.",
-        "streetNr": "Above whatever same stop ahead pattern rather. Instead hop",
-        "district": "Fish then different true since. Produce seat upon option fe"
-    },
-    "areaServed": "Level conference church system anyone.",
-    "rt": [
-        "oic.r.sensor"
-    ],
-    "value": false,
-    "measurement": 985.0,
-    "precision": 481.2,
-    "n": "Beat agreement house heavy arrive.",
-    "range": [
-        739.2,
-        759.3
-    ],
-    "step": 604.3,
-    "if": [
-        "oic.if.s"
-    ],
-    "type": "Sensor",
-    "@context": [
-        "https://smartdatamodels.org/context.jsonld"
+  "id": "urn:ngsi-ld:Sensor:id:WPTP:35827884",
+  "dateCreated": "1996-08-31T15:15:49Z",
+  "dateModified": "1975-12-20T10:52:56Z",
+  "source": "Weight wait require experience my collection. Hold policy lead plant. Human indicate her only. Sea resource east sign into.",
+  "name": "She pull fill that. Avoid bed maintain mother. Wait this run particularly.",
+  "alternateName": "Along television foreign. Majority effort inside this best realize. Difficult note address newspaper talk according.",
+  "description": "Center north record side economy administration chance off. List need staff.",
+  "dataProvider": "Small leg upon live foot big. Direction morning address six.",
+  "owner": [
+    "urn:ngsi-ld:Sensor:items:KKJR:79761930",
+    "urn:ngsi-ld:Sensor:items:KGRZ:45195777"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:Sensor:items:XBPZ:05320212"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      38.113858,
+      67.542463
     ]
+  },
+  "address": {
+    "streetAddress": "Ago law thank make challenge which travel. National fish national worry find affect. Tell prevent along west power science admit.",
+    "addressLocality": "Onto key gas we moment full together. Magaz",
+    "addressRegion": "These identify believ",
+    "addressCountry": "Data agency stay of mean expect analysis. Ever other cup eight not sure. Score fight practice notice.",
+    "postalCode": "Church many room worker affect huge claim. Scientist nothing do career. Cup other cultural soldier fact majority.",
+    "postOfficeBoxNumber": "Learn amount change or space everyone. Fear since as. Happen firm product blue store big quality.",
+    "streetNr": "Above whatever same stop ahead pattern rather. Instead hop",
+    "district": "Fish then different true since. Produce seat upon option fe"
+  },
+  "areaServed": "Level conference church system anyone.",
+  "rt": [
+    "oic.r.sensor"
+  ],
+  "value": false,
+  "measurement": 985.0,
+  "precision": 481.2,
+  "n": "Beat agreement house heavy arrive.",
+  "range": [
+    739.2,
+    759.3
+  ],
+  "step": 604.3,
+  "if": [
+    "oic.if.s"
+  ],
+  "type": "Sensor",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
 }
