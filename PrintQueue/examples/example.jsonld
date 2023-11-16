@@ -1,57 +1,57 @@
 {
-    "id": "urn:ngsi-ld:PrintQueue:id:DSBY:69849407",
-    "dateCreated": "1977-04-13T01:13:50Z",
-    "dateModified": "2008-02-09T11:24:49Z",
-    "source": "Can wall board culture. Window benefit its wrong degree drop simply.",
-    "name": "City short sound big rest. Near evening beyond professional herself.",
-    "alternateName": "Sea perform require",
-    "description": "Bank interesting prot",
-    "dataProvider": "Summer reason word. Late animal bit able race method example member.",
-    "owner": [
-        "urn:ngsi-ld:PrintQueue:items:QLZW:77438571",
-        "urn:ngsi-ld:PrintQueue:items:UICK:43859697"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:PrintQueue:items:YRUI:41497039"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            81.4915515,
-            99.488164
-        ]
-    },
-    "address": {
-        "streetAddress": "Detail girl case provide responsibility area week. Institution sing century standard. Real however enjoy agent determine next doctor around.",
-        "addressLocality": "Bar soon set performance exactly ten try",
-        "addressRegion": "Poor natural some certain available. Far opportunity theory rise above purpose within baby. Business police art technology development both.",
-        "addressCountry": "Kitchen born",
-        "postalCode": "Bill one main. Almost type purp",
-        "postOfficeBoxNumber": "Throw stop hard arrive suffer also tend.",
-        "streetNr": "Indeed second travel late wo",
-        "district": "Feeling laugh news anything whole environmental. Interesting analysis better playe"
-    },
-    "areaServed": "Final draw feeling understand role Mr husband. Rise peace ser",
-    "rt": [
-        "oic.r.printer.queue"
-    ],
-    "queue": [
-        {
-            "status": "Unknown",
-            "uri": "urn:ngsi-ld:PrintQueue:uri:AHBT:92472595"
-        },
-        {
-            "status": "Pending",
-            "uri": "urn:ngsi-ld:PrintQueue:uri:SGIL:98471141"
-        }
-    ],
-    "n": "Emplo",
-    "if": [
-        "oic.if.baseline",
-        "oic.if.r"
-    ],
-    "type": "PrintQueue",
-    "@context": [
-        "https://smartdatamodels.org/context.jsonld"
+  "id": "urn:ngsi-ld:PrintQueue:id:DSBY:69849407",
+  "dateCreated": "1977-04-13T01:13:50Z",
+  "dateModified": "2008-02-09T11:24:49Z",
+  "source": "Can wall board culture. Window benefit its wrong degree drop simply.",
+  "name": "City short sound big rest. Near evening beyond professional herself.",
+  "alternateName": "Sea perform require",
+  "description": "Bank interesting prot",
+  "dataProvider": "Summer reason word. Late animal bit able race method example member.",
+  "owner": [
+    "urn:ngsi-ld:PrintQueue:items:QLZW:77438571",
+    "urn:ngsi-ld:PrintQueue:items:UICK:43859697"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:PrintQueue:items:YRUI:41497039"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      81.4915515,
+      99.488164
     ]
+  },
+  "address": {
+    "streetAddress": "Detail girl case provide responsibility area week. Institution sing century standard. Real however enjoy agent determine next doctor around.",
+    "addressLocality": "Bar soon set performance exactly ten try",
+    "addressRegion": "Poor natural some certain available. Far opportunity theory rise above purpose within baby. Business police art technology development both.",
+    "addressCountry": "Kitchen born",
+    "postalCode": "Bill one main. Almost type purp",
+    "postOfficeBoxNumber": "Throw stop hard arrive suffer also tend.",
+    "streetNr": "Indeed second travel late wo",
+    "district": "Feeling laugh news anything whole environmental. Interesting analysis better playe"
+  },
+  "areaServed": "Final draw feeling understand role Mr husband. Rise peace ser",
+  "rt": [
+    "oic.r.printer.queue"
+  ],
+  "queue": [
+    {
+      "status": "Unknown",
+      "uri": "urn:ngsi-ld:PrintQueue:uri:AHBT:92472595"
+    },
+    {
+      "status": "Pending",
+      "uri": "urn:ngsi-ld:PrintQueue:uri:SGIL:98471141"
+    }
+  ],
+  "n": "Emplo",
+  "if": [
+    "oic.if.baseline",
+    "oic.if.r"
+  ],
+  "type": "PrintQueue",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
 }
