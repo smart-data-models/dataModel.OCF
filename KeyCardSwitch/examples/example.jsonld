@@ -1,48 +1,48 @@
 {
-    "id": "urn:ngsi-ld:KeyCardSwitch:id:EICU:62882679",
-    "dateCreated": "1984-05-02T03:57:17Z",
-    "dateModified": "1990-10-10T17:17:22Z",
-    "source": "Early generation once couple whom would. Item toni",
-    "name": "Institution game o",
-    "alternateName": "Special say hundred ",
-    "description": "Go own involve region candidate there go. Provide finish card thousand. Why raise second pick thus.",
-    "dataProvider": "Total big nation couple writer picture voice. Easy charge centur",
-    "owner": [
-        "urn:ngsi-ld:KeyCardSwitch:items:MQFE:06102243",
-        "urn:ngsi-ld:KeyCardSwitch:items:JYJG:56880066"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:KeyCardSwitch:items:QFUB:66511170"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            79.4951555,
-            -149.538487
-        ]
-    },
-    "address": {
-        "streetAddress": "View ball rock subject those decide bring. Number ok line use door.",
-        "addressLocality": "Deep relationship about fight mind. Really wall today cause position.",
-        "addressRegion": "Do authority religious college director thought. Hear air nat",
-        "addressCountry": "Enough accept nearly sport hotel. Know child away en",
-        "postalCode": "Near huge black. Would issue he need.",
-        "postOfficeBoxNumber": "S",
-        "streetNr": "System plan tax point analysis reduce. Individual stand work",
-        "district": "Writer share reduce child form. Growth smile clear information nothing heavy sport. Figure method church southern attorney fish."
-    },
-    "areaServed": "Campaign paper seven. List former movement throughout all red act.",
-    "rt": [
-        "oic.r.keycardswitch"
-    ],
-    "stateofcard": "validCardInserted",
-    "n": "Use su",
-    "if": [
-        "oic.if.baseline",
-        "oic.if.s"
-    ],
-    "type": "KeyCardSwitch",
-    "@context": [
-        "https://smartdatamodels.org/context.jsonld"
+  "id": "urn:ngsi-ld:KeyCardSwitch:id:EICU:62882679",
+  "dateCreated": "1984-05-02T03:57:17Z",
+  "dateModified": "1990-10-10T17:17:22Z",
+  "source": "Early generation once couple whom would. Item toni",
+  "name": "Institution game o",
+  "alternateName": "Special say hundred ",
+  "description": "Go own involve region candidate there go. Provide finish card thousand. Why raise second pick thus.",
+  "dataProvider": "Total big nation couple writer picture voice. Easy charge centur",
+  "owner": [
+    "urn:ngsi-ld:KeyCardSwitch:items:MQFE:06102243",
+    "urn:ngsi-ld:KeyCardSwitch:items:JYJG:56880066"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:KeyCardSwitch:items:QFUB:66511170"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      79.4951555,
+      -149.538487
     ]
+  },
+  "address": {
+    "streetAddress": "View ball rock subject those decide bring. Number ok line use door.",
+    "addressLocality": "Deep relationship about fight mind. Really wall today cause position.",
+    "addressRegion": "Do authority religious college director thought. Hear air nat",
+    "addressCountry": "Enough accept nearly sport hotel. Know child away en",
+    "postalCode": "Near huge black. Would issue he need.",
+    "postOfficeBoxNumber": "S",
+    "streetNr": "System plan tax point analysis reduce. Individual stand work",
+    "district": "Writer share reduce child form. Growth smile clear information nothing heavy sport. Figure method church southern attorney fish."
+  },
+  "areaServed": "Campaign paper seven. List former movement throughout all red act.",
+  "rt": [
+    "oic.r.keycardswitch"
+  ],
+  "stateofcard": "validCardInserted",
+  "n": "Use su",
+  "if": [
+    "oic.if.baseline",
+    "oic.if.s"
+  ],
+  "type": "KeyCardSwitch",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
 }
