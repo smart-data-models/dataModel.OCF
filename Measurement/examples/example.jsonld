@@ -1,55 +1,55 @@
 {
-    "id": "urn:ngsi-ld:Measurement:id:AQLI:51178583",
-    "dateCreated": "1998-03-30T20:52:03Z",
-    "dateModified": "1976-08-25T05:03:29Z",
-    "source": "Cover government view event culture establish study task. Enjoy time bad according grow wear stuff century. New rise then church.",
-    "name": "Answer tax garden air ",
-    "alternateName": "Think people produc",
-    "description": "Evidence participant west important us day. Soldier agreement share population.",
-    "dataProvider": "Water task without he establish many camera. Up fre",
-    "owner": [
-        "urn:ngsi-ld:Measurement:items:WQGU:79970367",
-        "urn:ngsi-ld:Measurement:items:XWQY:99988646"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:Measurement:items:MCAO:14774075"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            67.9714165,
-            -159.754124
-        ]
-    },
-    "address": {
-        "streetAddress": "Deal still risk policy.",
-        "addressLocality": "Skin di",
-        "addressRegion": "Three manage what prove instead i",
-        "addressCountry": "Again Democrat college couple its share adult. Me including bank direction include. Series trade think senior your trip true.",
-        "postalCode": "Low amount yet.",
-        "postOfficeBoxNumber": "It ground another card know bit. Mention modern piece number spend. Tonight",
-        "streetNr": "Teach pick among box because style. Fight everybody your throughout u",
-        "district": "Help growth truth stock reality book that. Manage herself capital rest wonder science yourself. Toward determine movie chance stop bar radio try."
-    },
-    "areaServed": "Become financial agent only society challenge by box.",
-    "rt": [
-        "oic.r.sensor.measurement"
-    ],
-    "unit": "Each well west show it deep line exactly. Result game foot former. Language sometimes thank in physical agency.",
-    "measurement": 487.2,
-    "precision": 967.1,
-    "n": "Almost need benefit spring natural until effect. Lar",
-    "range": [
-        552.1,
-        288.9
-    ],
-    "step": 32.8,
-    "if": [
-        "oic.if.s",
-        "oic.if.baseline"
-    ],
-    "type": "Measurement",
-    "@context": [
-        "https://smartdatamodels.org/context.jsonld"
+  "id": "urn:ngsi-ld:Measurement:id:AQLI:51178583",
+  "dateCreated": "1998-03-30T20:52:03Z",
+  "dateModified": "1976-08-25T05:03:29Z",
+  "source": "Cover government view event culture establish study task. Enjoy time bad according grow wear stuff century. New rise then church.",
+  "name": "Answer tax garden air ",
+  "alternateName": "Think people produc",
+  "description": "Evidence participant west important us day. Soldier agreement share population.",
+  "dataProvider": "Water task without he establish many camera. Up fre",
+  "owner": [
+    "urn:ngsi-ld:Measurement:items:WQGU:79970367",
+    "urn:ngsi-ld:Measurement:items:XWQY:99988646"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:Measurement:items:MCAO:14774075"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      67.9714165,
+      -159.754124
     ]
+  },
+  "address": {
+    "streetAddress": "Deal still risk policy.",
+    "addressLocality": "Skin di",
+    "addressRegion": "Three manage what prove instead i",
+    "addressCountry": "Again Democrat college couple its share adult. Me including bank direction include. Series trade think senior your trip true.",
+    "postalCode": "Low amount yet.",
+    "postOfficeBoxNumber": "It ground another card know bit. Mention modern piece number spend. Tonight",
+    "streetNr": "Teach pick among box because style. Fight everybody your throughout u",
+    "district": "Help growth truth stock reality book that. Manage herself capital rest wonder science yourself. Toward determine movie chance stop bar radio try."
+  },
+  "areaServed": "Become financial agent only society challenge by box.",
+  "rt": [
+    "oic.r.sensor.measurement"
+  ],
+  "unit": "Each well west show it deep line exactly. Result game foot former. Language sometimes thank in physical agency.",
+  "measurement": 487.2,
+  "precision": 967.1,
+  "n": "Almost need benefit spring natural until effect. Lar",
+  "range": [
+    552.1,
+    288.9
+  ],
+  "step": 32.8,
+  "if": [
+    "oic.if.s",
+    "oic.if.baseline"
+  ],
+  "type": "Measurement",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
 }
