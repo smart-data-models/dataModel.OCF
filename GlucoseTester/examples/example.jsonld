@@ -1,47 +1,47 @@
 {
-    "id": "urn:ngsi-ld:GlucoseTester:id:IGZH:59622975",
-    "dateCreated": "1974-07-04T04:54:26Z",
-    "dateModified": "1990-12-11T00:54:45Z",
-    "source": "War official structur",
-    "name": "Space argue he able learn rate. Feeling machine",
-    "alternateName": "Heavy decide surface gas. Race strong d",
-    "description": "Race I entire remember half feeling. System city live interest con",
-    "dataProvider": "Alone interview tend. Cup road finally eve",
-    "owner": [
-        "urn:ngsi-ld:GlucoseTester:items:SLEO:64460310",
-        "urn:ngsi-ld:GlucoseTester:items:VBWT:20572250"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:GlucoseTester:items:AXAI:66252777"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            -17.675074,
-            -143.961557
-        ]
-    },
-    "address": {
-        "streetAddress": "Lot also learn class. Realize drop occur behavior this agent.",
-        "addressLocality": "Form south although fund research. Market purpose help study expect se",
-        "addressRegion": "Kitchen fire its out challenge offer. Common should what economy total discover.",
-        "addressCountry": "Rule American phone interest. Congress party may drop.",
-        "postalCode": "Throw break it. Return agree market else vote.",
-        "postOfficeBoxNumber": "Sell lay blue growth fact reduce. Community role will card action war experience. Individual customer city quality cut. Few leave threat coach.",
-        "streetNr": "Hotel assume class interview pattern minute. Green half then.",
-        "district": "Character ball sec"
-    },
-    "areaServed": "Vote back indeed movement story amount. After name treat pattern section step.",
-    "rt": [
-        "oic.r.glucose.tester"
-    ],
-    "tester": "self",
-    "n": "Character nation sing American more ok carry even. Per",
-    "if": [
-        "oic.if.baseline"
-    ],
-    "type": "GlucoseTester",
-    "@context": [
-        "https://smartdatamodels.org/context.jsonld"
+  "id": "urn:ngsi-ld:GlucoseTester:id:IGZH:59622975",
+  "dateCreated": "1974-07-04T04:54:26Z",
+  "dateModified": "1990-12-11T00:54:45Z",
+  "source": "War official structur",
+  "name": "Space argue he able learn rate. Feeling machine",
+  "alternateName": "Heavy decide surface gas. Race strong d",
+  "description": "Race I entire remember half feeling. System city live interest con",
+  "dataProvider": "Alone interview tend. Cup road finally eve",
+  "owner": [
+    "urn:ngsi-ld:GlucoseTester:items:SLEO:64460310",
+    "urn:ngsi-ld:GlucoseTester:items:VBWT:20572250"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:GlucoseTester:items:AXAI:66252777"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -17.675074,
+      -143.961557
     ]
+  },
+  "address": {
+    "streetAddress": "Lot also learn class. Realize drop occur behavior this agent.",
+    "addressLocality": "Form south although fund research. Market purpose help study expect se",
+    "addressRegion": "Kitchen fire its out challenge offer. Common should what economy total discover.",
+    "addressCountry": "Rule American phone interest. Congress party may drop.",
+    "postalCode": "Throw break it. Return agree market else vote.",
+    "postOfficeBoxNumber": "Sell lay blue growth fact reduce. Community role will card action war experience. Individual customer city quality cut. Few leave threat coach.",
+    "streetNr": "Hotel assume class interview pattern minute. Green half then.",
+    "district": "Character ball sec"
+  },
+  "areaServed": "Vote back indeed movement story amount. After name treat pattern section step.",
+  "rt": [
+    "oic.r.glucose.tester"
+  ],
+  "tester": "self",
+  "n": "Character nation sing American more ok carry even. Per",
+  "if": [
+    "oic.if.baseline"
+  ],
+  "type": "GlucoseTester",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
 }
