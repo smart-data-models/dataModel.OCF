@@ -1,56 +1,56 @@
 {
-    "id": "urn:ngsi-ld:BloodPressure:id:OYKZ:20915576",
-    "dateCreated": "2005-10-31T03:17:09Z",
-    "dateModified": "1974-09-20T19:41:22Z",
-    "source": "Energy heavy commercial threat military thank. Front dream hour",
-    "name": "To follow social degree experience. Someone ov",
-    "alternateName": "Add save add some. Defense agent performance by teach risk.",
-    "description": "Artist share often good here. Debate position series energy however. Catch hundred day score.",
-    "dataProvider": "May find base health gas magazine event. Tree way include build town politics",
-    "owner": [
-        "urn:ngsi-ld:BloodPressure:items:BYTR:17522837",
-        "urn:ngsi-ld:BloodPressure:items:TABG:05694523"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:BloodPressure:items:SOMO:80156322"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            -34.40316,
-            -27.475728
-        ]
-    },
-    "address": {
-        "streetAddress": "Effort guess more deal company. Past structure each conference",
-        "addressLocality": "Street physical computer art stuff.",
-        "addressRegion": "Never real operation fast",
-        "addressCountry": "Three south instead hand. Table general light so many quality. You open eas",
-        "postalCode": "Agent one eight final analysis model. Face all body school. Many shake right tonight ago hot season.",
-        "postOfficeBoxNumber": "Talk industry management show. Town stay treat future. National consider allow. Mind official as exist.",
-        "streetNr": "Smile institution hear born policy. Then artist camera actually. Want music threat nation series.",
-        "district": "While expert up tree pressure they approach study. Notice authority safe one operation left. Ground"
-    },
-    "areaServed": "Then know whether argue ",
-    "rt": [
-        "oic.r.blood.pressure"
-    ],
-    "map": 592.7,
-    "units": "kPa",
-    "systolic": 558.1,
-    "diastolic": 204.0,
-    "if": [
-        "oic.if.s"
-    ],
-    "range": [
-        94.2,
-        435.7
-    ],
-    "step": 955.5,
-    "precision": 787.6,
-    "n": "Officer front best identify everybody create board. Available c",
-    "type": "BloodPressure",
-    "@context": [
-        "https://smartdatamodels.org/context.jsonld"
+  "id": "urn:ngsi-ld:BloodPressure:id:OYKZ:20915576",
+  "dateCreated": "2005-10-31T03:17:09Z",
+  "dateModified": "1974-09-20T19:41:22Z",
+  "source": "Energy heavy commercial threat military thank. Front dream hour",
+  "name": "To follow social degree experience. Someone ov",
+  "alternateName": "Add save add some. Defense agent performance by teach risk.",
+  "description": "Artist share often good here. Debate position series energy however. Catch hundred day score.",
+  "dataProvider": "May find base health gas magazine event. Tree way include build town politics",
+  "owner": [
+    "urn:ngsi-ld:BloodPressure:items:BYTR:17522837",
+    "urn:ngsi-ld:BloodPressure:items:TABG:05694523"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:BloodPressure:items:SOMO:80156322"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -34.40316,
+      -27.475728
     ]
+  },
+  "address": {
+    "streetAddress": "Effort guess more deal company. Past structure each conference",
+    "addressLocality": "Street physical computer art stuff.",
+    "addressRegion": "Never real operation fast",
+    "addressCountry": "Three south instead hand. Table general light so many quality. You open eas",
+    "postalCode": "Agent one eight final analysis model. Face all body school. Many shake right tonight ago hot season.",
+    "postOfficeBoxNumber": "Talk industry management show. Town stay treat future. National consider allow. Mind official as exist.",
+    "streetNr": "Smile institution hear born policy. Then artist camera actually. Want music threat nation series.",
+    "district": "While expert up tree pressure they approach study. Notice authority safe one operation left. Ground"
+  },
+  "areaServed": "Then know whether argue ",
+  "rt": [
+    "oic.r.blood.pressure"
+  ],
+  "map": 592.7,
+  "units": "kPa",
+  "systolic": 558.1,
+  "diastolic": 204.0,
+  "if": [
+    "oic.if.s"
+  ],
+  "range": [
+    94.2,
+    435.7
+  ],
+  "step": 955.5,
+  "precision": 787.6,
+  "n": "Officer front best identify everybody create board. Available c",
+  "type": "BloodPressure",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
 }
