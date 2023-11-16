@@ -1,50 +1,50 @@
 {
-    "id": "urn:ngsi-ld:Door:id:TOAG:57173407",
-    "dateCreated": "1990-04-26T18:03:09Z",
-    "dateModified": "1977-10-15T20:23:28Z",
-    "source": "Nation choose relationship likely question. Myself if place again establish. A huge three. Know second government the pull cultural.",
-    "name": "Audience energy move. Morning eat turn clear.",
-    "alternateName": "Executive care mission decision black. Idea sing small factor head pick church. High opportunity cause property.",
-    "description": "Line indeed live reason five present art feel. Appear perform agent likely thousand act money. Rather bank we under.",
-    "dataProvider": "Guess break about. Their record road dinner seem. Course its respond himself former.",
-    "owner": [
-        "urn:ngsi-ld:Door:items:FOLZ:62728523",
-        "urn:ngsi-ld:Door:items:SWBM:66763373"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:Door:items:TJTC:03125023"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            47.4708025,
-            -27.301033
-        ]
-    },
-    "address": {
-        "streetAddress": "Learn place",
-        "addressLocality": "Wife however TV law fund. Paper beat five movie. Eight miss couple bag thank generation.",
-        "addressRegion": "Pull save fine team effort. The drive figure necessary across manager.",
-        "addressCountry": "True include management. Brother bank better she increase try. Partner stand next though house where.",
-        "postalCode": "",
-        "postOfficeBoxNumber": "Situation between run eat expect save process score. Into anyone his evening wife north director.",
-        "streetNr": "Develop story drive million push. Health lose old case administration. Foreign one agent candidate how wish member.",
-        "district": "Share sit simple notice. Dog car do his part."
-    },
-    "areaServed": "Material truth pattern ago other majority final when. Present produce manager well lose finish summer.",
-    "rt": [
-        "oic.r.door"
-    ],
-    "openDuration": "P1710168910W264733215084615551330344341353172274567622193828821450614981840335945689055955212929777261D",
-    "openState": "Open",
-    "openAlarm": false,
-    "n": "Size himself arrive although risk which",
-    "if": [
-        "oic.if.a",
-        "oic.if.baseline"
-    ],
-    "type": "Door",
-    "@context": [
-        "https://smartdatamodels.org/context.jsonld"
+  "id": "urn:ngsi-ld:Door:id:TOAG:57173407",
+  "dateCreated": "1990-04-26T18:03:09Z",
+  "dateModified": "1977-10-15T20:23:28Z",
+  "source": "Nation choose relationship likely question. Myself if place again establish. A huge three. Know second government the pull cultural.",
+  "name": "Audience energy move. Morning eat turn clear.",
+  "alternateName": "Executive care mission decision black. Idea sing small factor head pick church. High opportunity cause property.",
+  "description": "Line indeed live reason five present art feel. Appear perform agent likely thousand act money. Rather bank we under.",
+  "dataProvider": "Guess break about. Their record road dinner seem. Course its respond himself former.",
+  "owner": [
+    "urn:ngsi-ld:Door:items:FOLZ:62728523",
+    "urn:ngsi-ld:Door:items:SWBM:66763373"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:Door:items:TJTC:03125023"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      47.4708025,
+      -27.301033
     ]
+  },
+  "address": {
+    "streetAddress": "Learn place",
+    "addressLocality": "Wife however TV law fund. Paper beat five movie. Eight miss couple bag thank generation.",
+    "addressRegion": "Pull save fine team effort. The drive figure necessary across manager.",
+    "addressCountry": "True include management. Brother bank better she increase try. Partner stand next though house where.",
+    "postalCode": "",
+    "postOfficeBoxNumber": "Situation between run eat expect save process score. Into anyone his evening wife north director.",
+    "streetNr": "Develop story drive million push. Health lose old case administration. Foreign one agent candidate how wish member.",
+    "district": "Share sit simple notice. Dog car do his part."
+  },
+  "areaServed": "Material truth pattern ago other majority final when. Present produce manager well lose finish summer.",
+  "rt": [
+    "oic.r.door"
+  ],
+  "openDuration": "P1710168910W264733215084615551330344341353172274567622193828821450614981840335945689055955212929777261D",
+  "openState": "Open",
+  "openAlarm": false,
+  "n": "Size himself arrive although risk which",
+  "if": [
+    "oic.if.a",
+    "oic.if.baseline"
+  ],
+  "type": "Door",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
 }
