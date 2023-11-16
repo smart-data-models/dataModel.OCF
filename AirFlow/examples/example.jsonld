@@ -1,58 +1,58 @@
 {
-    "id": "urn:ngsi-ld:AirFlow:id:QBYQ:46486922",
-    "dateCreated": "2001-07-15T01:59:58Z",
-    "dateModified": "1999-01-10T11:13:04Z",
-    "source": "Later body goal nor. Ci",
-    "name": "Particular investment once team. Back finish water participant shake.",
-    "alternateName": "Itself key approach space defense development attack quite. Write offer tough. Every must particularly page would professor many.",
-    "description": "Challenge good live even sense black. Play site stand economy herself happen.",
-    "dataProvider": "Difference perform describe forward participant great. Less certain moment everyone college.",
-    "owner": [
-        "urn:ngsi-ld:AirFlow:items:SRPE:15875448",
-        "urn:ngsi-ld:AirFlow:items:JHQL:37977670"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:AirFlow:items:XFSX:59784474"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            65.785205,
-            -176.72728
-        ]
-    },
-    "address": {
-        "streetAddress": "Teacher after shoulder president state center. Hand happy unit catch charge team. Financial certain exactly current sou",
-        "addressLocality": "Section think part easy argue about com",
-        "addressRegion": "Free face your government field. Herself camera career alone. Any yard next spring everybody hope figure.",
-        "addressCountry": "Manage field d",
-        "postalCode": "Far fill experience maybe. Democratic power free colle",
-        "postOfficeBoxNumber": "Play into understand population. Area huge oil should.",
-        "streetNr": "Try their real man term side interesting. Eat according reason similar summer production force.",
-        "district": "Event big toward age nature million. Newspaper plan truth seat. Three left natural continue."
-    },
-    "areaServed": "Around claim western write window produce sit. Debate century e",
-    "rt": [
-        "oic.r.airflow"
-    ],
-    "speed": 864,
-    "direction": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair.",
-    "automode": "On",
-    "supporteddirections": [
-        "Line beyond its particularly tree whom. Kind miss artist truth trouble behavior style."
-    ],
-    "n": "Partner stock four. Region as true develop sound centr",
-    "range": [
-        864,
-        864
-    ],
-    "step": 864,
-    "if": [
-        "oic.if.baseline",
-        "oic.if.a"
-    ],
-    "type": "AirFlow",
-    "@context": [
-        "https://smartdatamodels.org/context.jsonld"
+  "id": "urn:ngsi-ld:AirFlow:id:QBYQ:46486922",
+  "dateCreated": "2001-07-15T01:59:58Z",
+  "dateModified": "1999-01-10T11:13:04Z",
+  "source": "Later body goal nor. Ci",
+  "name": "Particular investment once team. Back finish water participant shake.",
+  "alternateName": "Itself key approach space defense development attack quite. Write offer tough. Every must particularly page would professor many.",
+  "description": "Challenge good live even sense black. Play site stand economy herself happen.",
+  "dataProvider": "Difference perform describe forward participant great. Less certain moment everyone college.",
+  "owner": [
+    "urn:ngsi-ld:AirFlow:items:SRPE:15875448",
+    "urn:ngsi-ld:AirFlow:items:JHQL:37977670"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:AirFlow:items:XFSX:59784474"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      65.785205,
+      -176.72728
     ]
+  },
+  "address": {
+    "streetAddress": "Teacher after shoulder president state center. Hand happy unit catch charge team. Financial certain exactly current sou",
+    "addressLocality": "Section think part easy argue about com",
+    "addressRegion": "Free face your government field. Herself camera career alone. Any yard next spring everybody hope figure.",
+    "addressCountry": "Manage field d",
+    "postalCode": "Far fill experience maybe. Democratic power free colle",
+    "postOfficeBoxNumber": "Play into understand population. Area huge oil should.",
+    "streetNr": "Try their real man term side interesting. Eat according reason similar summer production force.",
+    "district": "Event big toward age nature million. Newspaper plan truth seat. Three left natural continue."
+  },
+  "areaServed": "Around claim western write window produce sit. Debate century e",
+  "rt": [
+    "oic.r.airflow"
+  ],
+  "speed": 864,
+  "direction": "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair.",
+  "automode": "On",
+  "supporteddirections": [
+    "Line beyond its particularly tree whom. Kind miss artist truth trouble behavior style."
+  ],
+  "n": "Partner stock four. Region as true develop sound centr",
+  "range": [
+    864,
+    864
+  ],
+  "step": 864,
+  "if": [
+    "oic.if.baseline",
+    "oic.if.a"
+  ],
+  "type": "AirFlow",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
 }
