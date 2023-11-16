@@ -1,48 +1,48 @@
 {
-    "id": "urn:ngsi-ld:EnergyOverload:id:TJFR:44040039",
-    "dateCreated": "2021-07-11T17:34:36Z",
-    "dateModified": "2020-01-13T13:54:22Z",
-    "source": "Cause fast buy design word area.",
-    "name": "Arm son allow garden goal po",
-    "alternateName": "Only account that knowledge ball season. Baby sea military almost. Range whom group public professional knowledge only.",
-    "description": "Either course market me. Relationship him bring away.",
-    "dataProvider": "Left above meet too cover public Mr phone. Road relate ",
-    "owner": [
-        "urn:ngsi-ld:EnergyOverload:items:OBGL:58595014",
-        "urn:ngsi-ld:EnergyOverload:items:RDDS:88337121"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:EnergyOverload:items:DMKU:92062252"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            37.7313715,
-            -80.62013
-        ]
-    },
-    "address": {
-        "streetAddress": "Meeting gas small ready us. Suddenly current stock result north its second. Yo",
-        "addressLocality": "I",
-        "addressRegion": "After culture Democrat week sure threat. Conference of bed he. Go career local face police energy.",
-        "addressCountry": "Hard close pressure begin. Free throughout cut tree",
-        "postalCode": "Fear cause data hot. Fi",
-        "postOfficeBoxNumber": "Throw drop daughter yard walk visit. Bad car own visit peace why piece raise. Popular gas save ten. Cause ever yourself another treat.",
-        "streetNr": "Suggest section why pay often newspaper. Pick card responsibility own region hospital quality game. Far building color. Father who",
-        "district": "Skin certain same remain. Example up listen develop positive through staff. Trade your"
-    },
-    "areaServed": "Relationship alone of wester",
-    "rt": [
-        "oic.r.energy.overload"
-    ],
-    "value": false,
-    "n": "Chance develop serious. Leave various entire live.",
-    "if": [
-        "oic.if.s",
-        "oic.if.baseline"
-    ],
-    "type": "EnergyOverload",
-    "@context": [
-        "https://smartdatamodels.org/context.jsonld"
+  "id": "urn:ngsi-ld:EnergyOverload:id:TJFR:44040039",
+  "dateCreated": "2021-07-11T17:34:36Z",
+  "dateModified": "2020-01-13T13:54:22Z",
+  "source": "Cause fast buy design word area.",
+  "name": "Arm son allow garden goal po",
+  "alternateName": "Only account that knowledge ball season. Baby sea military almost. Range whom group public professional knowledge only.",
+  "description": "Either course market me. Relationship him bring away.",
+  "dataProvider": "Left above meet too cover public Mr phone. Road relate ",
+  "owner": [
+    "urn:ngsi-ld:EnergyOverload:items:OBGL:58595014",
+    "urn:ngsi-ld:EnergyOverload:items:RDDS:88337121"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:EnergyOverload:items:DMKU:92062252"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      37.7313715,
+      -80.62013
     ]
+  },
+  "address": {
+    "streetAddress": "Meeting gas small ready us. Suddenly current stock result north its second. Yo",
+    "addressLocality": "I",
+    "addressRegion": "After culture Democrat week sure threat. Conference of bed he. Go career local face police energy.",
+    "addressCountry": "Hard close pressure begin. Free throughout cut tree",
+    "postalCode": "Fear cause data hot. Fi",
+    "postOfficeBoxNumber": "Throw drop daughter yard walk visit. Bad car own visit peace why piece raise. Popular gas save ten. Cause ever yourself another treat.",
+    "streetNr": "Suggest section why pay often newspaper. Pick card responsibility own region hospital quality game. Far building color. Father who",
+    "district": "Skin certain same remain. Example up listen develop positive through staff. Trade your"
+  },
+  "areaServed": "Relationship alone of wester",
+  "rt": [
+    "oic.r.energy.overload"
+  ],
+  "value": false,
+  "n": "Chance develop serious. Leave various entire live.",
+  "if": [
+    "oic.if.s",
+    "oic.if.baseline"
+  ],
+  "type": "EnergyOverload",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
 }
