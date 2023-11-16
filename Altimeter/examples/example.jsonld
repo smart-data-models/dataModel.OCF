@@ -1,54 +1,54 @@
 {
-    "id": "urn:ngsi-ld:Altimeter:id:TWDF:66254261",
-    "dateCreated": "1998-06-13T14:49:06Z",
-    "dateModified": "2023-02-09T05:06:53Z",
-    "source": "Perhaps maybe class. Authority according wear develop become. Letter fall reduce woman f",
-    "name": "Result build remain close natural history relate method. Later nature yeah party arrive. Dog something friend special.",
-    "alternateName": "Care learn whole. Arrive employee meeting about still cold once view. Check leave space.",
-    "description": "Court",
-    "dataProvider": "Mean eight design put. Focus specific instead finally region two various. Whatever them seem let head program environment. Behind impro",
-    "owner": [
-        "urn:ngsi-ld:Altimeter:items:REST:24340353",
-        "urn:ngsi-ld:Altimeter:items:JPXH:89305576"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:Altimeter:items:YJDK:74161276"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            71.586845,
-            113.083418
-        ]
-    },
-    "address": {
-        "streetAddress": "Concern today writer song operation city issue. Challenge conference service price miss. National w",
-        "addressLocality": "Age simply score character force. Thousand seem hope. Field fill great care.",
-        "addressRegion": "Help like find size. Check explain reduce value. Across recently choice policy writer avoid.",
-        "addressCountry": "Arrive east threat south wear budget. Tv program job unit blue sit.",
-        "postalCode": "And until cultural quickly her pick Mrs. Medical fear light.",
-        "postOfficeBoxNumber": "Story thousand employee either second customer oil. Space American avoid police work drug water physical. Resource husband Congress government follow economic dream.",
-        "streetNr": "South worker history wish bot",
-        "district": "Station want national quickly father thing. Whatever ago across do long clearly worker."
-    },
-    "areaServed": "Order nothing mention pull war stand. Store along feel without seem. Young candidate whether learn glass.",
-    "rt": [
-        "oic.r.altimeter"
-    ],
-    "alt": 821.8,
-    "n": "Want among want model its whether visit",
-    "precision": 735.5,
-    "range": [
-        826.2,
-        991.8
-    ],
-    "step": 295.7,
-    "if": [
-        "oic.if.baseline",
-        "oic.if.s"
-    ],
-    "type": "Altimeter",
-    "@context": [
-        "https://smartdatamodels.org/context.jsonld"
+  "id": "urn:ngsi-ld:Altimeter:id:TWDF:66254261",
+  "dateCreated": "1998-06-13T14:49:06Z",
+  "dateModified": "2023-02-09T05:06:53Z",
+  "source": "Perhaps maybe class. Authority according wear develop become. Letter fall reduce woman f",
+  "name": "Result build remain close natural history relate method. Later nature yeah party arrive. Dog something friend special.",
+  "alternateName": "Care learn whole. Arrive employee meeting about still cold once view. Check leave space.",
+  "description": "Court",
+  "dataProvider": "Mean eight design put. Focus specific instead finally region two various. Whatever them seem let head program environment. Behind impro",
+  "owner": [
+    "urn:ngsi-ld:Altimeter:items:REST:24340353",
+    "urn:ngsi-ld:Altimeter:items:JPXH:89305576"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:Altimeter:items:YJDK:74161276"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      71.586845,
+      113.083418
     ]
+  },
+  "address": {
+    "streetAddress": "Concern today writer song operation city issue. Challenge conference service price miss. National w",
+    "addressLocality": "Age simply score character force. Thousand seem hope. Field fill great care.",
+    "addressRegion": "Help like find size. Check explain reduce value. Across recently choice policy writer avoid.",
+    "addressCountry": "Arrive east threat south wear budget. Tv program job unit blue sit.",
+    "postalCode": "And until cultural quickly her pick Mrs. Medical fear light.",
+    "postOfficeBoxNumber": "Story thousand employee either second customer oil. Space American avoid police work drug water physical. Resource husband Congress government follow economic dream.",
+    "streetNr": "South worker history wish bot",
+    "district": "Station want national quickly father thing. Whatever ago across do long clearly worker."
+  },
+  "areaServed": "Order nothing mention pull war stand. Store along feel without seem. Young candidate whether learn glass.",
+  "rt": [
+    "oic.r.altimeter"
+  ],
+  "alt": 821.8,
+  "n": "Want among want model its whether visit",
+  "precision": 735.5,
+  "range": [
+    826.2,
+    991.8
+  ],
+  "step": 295.7,
+  "if": [
+    "oic.if.baseline",
+    "oic.if.s"
+  ],
+  "type": "Altimeter",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
 }
