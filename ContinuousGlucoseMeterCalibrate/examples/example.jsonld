@@ -1,54 +1,54 @@
 {
-    "id": "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:id:QGWE:64356631",
-    "dateCreated": "1973-12-14T21:01:55Z",
-    "dateModified": "1992-12-27T22:50:57Z",
-    "source": "Plant look central interview. Girl night as guess lot. Range wait then.",
-    "name": "Night that city stand nig",
-    "alternateName": "Score door specific kind white land Mr. Defense south final modern. Knowledge also none catch.",
-    "description": "Center environment need rock training people. Ahead soon according teach long. Character eat along smile.",
-    "dataProvider": "Media reduce theory smile economy stop nothing. Deal statement argue section end agent. Story law",
-    "owner": [
-        "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:items:HWYT:79494000",
-        "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:items:KBKO:89611627"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:items:IXON:79345007"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            44.4290575,
-            113.521212
-        ]
-    },
-    "address": {
-        "streetAddress": "Movement country son develop hospital. Alone usually drop realize",
-        "addressLocality": "Dark individual along this kind that. Practice large like center pe",
-        "addressRegion": "Why movement red begin task benefit conference exist. Claim",
-        "addressCountry": "Quality people",
-        "postalCode": "At read trial month. Result everything build approach collection. Open inside property sport ",
-        "postOfficeBoxNumber": "Ahead scientist behavior clearly whom.",
-        "streetNr": "Sport interest interest drive room. Leader",
-        "district": "Practice probably life worker year watch space court. Less color low top news artist student."
-    },
-    "areaServed": "Hold action senior bit study after certainly. Amount resource none teacher minute degree. Suppor",
-    "Cvalue": 718.8,
-    "Cstatus": true,
-    "rt": [
-        "oic.r.cgm.calibrate"
-    ],
-    "n": "Floor might cold when e",
-    "if": [
-        "oic.if.rw"
-    ],
-    "range": [
-        277.4,
-        186.8
-    ],
-    "step": 393.0,
-    "precision": 721.9,
-    "type": "ContinuousGlucoseMeterCalibrate",
-    "@context": [
-        "https://smartdatamodels.org/context.jsonld"
+  "id": "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:id:QGWE:64356631",
+  "dateCreated": "1973-12-14T21:01:55Z",
+  "dateModified": "1992-12-27T22:50:57Z",
+  "source": "Plant look central interview. Girl night as guess lot. Range wait then.",
+  "name": "Night that city stand nig",
+  "alternateName": "Score door specific kind white land Mr. Defense south final modern. Knowledge also none catch.",
+  "description": "Center environment need rock training people. Ahead soon according teach long. Character eat along smile.",
+  "dataProvider": "Media reduce theory smile economy stop nothing. Deal statement argue section end agent. Story law",
+  "owner": [
+    "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:items:HWYT:79494000",
+    "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:items:KBKO:89611627"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:ContinuousGlucoseMeterCalibrate:items:IXON:79345007"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      44.4290575,
+      113.521212
     ]
+  },
+  "address": {
+    "streetAddress": "Movement country son develop hospital. Alone usually drop realize",
+    "addressLocality": "Dark individual along this kind that. Practice large like center pe",
+    "addressRegion": "Why movement red begin task benefit conference exist. Claim",
+    "addressCountry": "Quality people",
+    "postalCode": "At read trial month. Result everything build approach collection. Open inside property sport ",
+    "postOfficeBoxNumber": "Ahead scientist behavior clearly whom.",
+    "streetNr": "Sport interest interest drive room. Leader",
+    "district": "Practice probably life worker year watch space court. Less color low top news artist student."
+  },
+  "areaServed": "Hold action senior bit study after certainly. Amount resource none teacher minute degree. Suppor",
+  "Cvalue": 718.8,
+  "Cstatus": true,
+  "rt": [
+    "oic.r.cgm.calibrate"
+  ],
+  "n": "Floor might cold when e",
+  "if": [
+    "oic.if.rw"
+  ],
+  "range": [
+    277.4,
+    186.8
+  ],
+  "step": 393.0,
+  "precision": 721.9,
+  "type": "ContinuousGlucoseMeterCalibrate",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
 }
