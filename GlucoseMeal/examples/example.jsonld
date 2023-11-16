@@ -1,47 +1,47 @@
 {
-    "id": "urn:ngsi-ld:GlucoseMeal:id:XLQI:55161502",
-    "dateCreated": "2018-01-26T01:51:09Z",
-    "dateModified": "2000-10-08T00:28:43Z",
-    "source": "Story country cup site real",
-    "name": "Help billion that bit south owner.",
-    "alternateName": "Quality all rich. Apply do work writer. Community camera deep mention along.",
-    "description": "Scene purpose participant school morning wish everything film. Even rock pretty sum",
-    "dataProvider": "Look better national none speech young where.",
-    "owner": [
-        "urn:ngsi-ld:GlucoseMeal:items:QNKH:66553031",
-        "urn:ngsi-ld:GlucoseMeal:items:HTKX:04734989"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:GlucoseMeal:items:CRDB:94365951"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            -14.45525,
-            -161.337485
-        ]
-    },
-    "address": {
-        "streetAddress": "However standard generation ground charge indeed today. Same water film pattern.",
-        "addressLocality": "Across feel happen. Scientist design effect although. Note conference powe",
-        "addressRegion": "Office southern before animal walk something. Always word truth image security dark although. Reduce individual act before medical.",
-        "addressCountry": "Need star sport. Ability impact race position involve.",
-        "postalCode": "Movemen",
-        "postOfficeBoxNumber": "Inside card many movie. Start college take sou",
-        "streetNr": "Range lay seven general. Org",
-        "district": "Nearly clear short play travel. Reflect energy produce drop. Tough hold speak also return always financial."
-    },
-    "areaServed": "Go three also bill member traditional keep. Result woman carry cell include especially Congress meet.",
-    "rt": [
-        "oic.r.glucose.meal"
-    ],
-    "meal": "preprandial",
-    "n": "Kind option indeed industry. Until claim citizen t",
-    "if": [
-        "oic.if.baseline"
-    ],
-    "type": "GlucoseMeal",
-    "@context": [
-        "https://smartdatamodels.org/context.jsonld"
+  "id": "urn:ngsi-ld:GlucoseMeal:id:XLQI:55161502",
+  "dateCreated": "2018-01-26T01:51:09Z",
+  "dateModified": "2000-10-08T00:28:43Z",
+  "source": "Story country cup site real",
+  "name": "Help billion that bit south owner.",
+  "alternateName": "Quality all rich. Apply do work writer. Community camera deep mention along.",
+  "description": "Scene purpose participant school morning wish everything film. Even rock pretty sum",
+  "dataProvider": "Look better national none speech young where.",
+  "owner": [
+    "urn:ngsi-ld:GlucoseMeal:items:QNKH:66553031",
+    "urn:ngsi-ld:GlucoseMeal:items:HTKX:04734989"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:GlucoseMeal:items:CRDB:94365951"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -14.45525,
+      -161.337485
     ]
+  },
+  "address": {
+    "streetAddress": "However standard generation ground charge indeed today. Same water film pattern.",
+    "addressLocality": "Across feel happen. Scientist design effect although. Note conference powe",
+    "addressRegion": "Office southern before animal walk something. Always word truth image security dark although. Reduce individual act before medical.",
+    "addressCountry": "Need star sport. Ability impact race position involve.",
+    "postalCode": "Movemen",
+    "postOfficeBoxNumber": "Inside card many movie. Start college take sou",
+    "streetNr": "Range lay seven general. Org",
+    "district": "Nearly clear short play travel. Reflect energy produce drop. Tough hold speak also return always financial."
+  },
+  "areaServed": "Go three also bill member traditional keep. Result woman carry cell include especially Congress meet.",
+  "rt": [
+    "oic.r.glucose.meal"
+  ],
+  "meal": "preprandial",
+  "n": "Kind option indeed industry. Until claim citizen t",
+  "if": [
+    "oic.if.baseline"
+  ],
+  "type": "GlucoseMeal",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
 }
