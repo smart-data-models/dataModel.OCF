@@ -74,12 +74,7 @@
                     "readOnly": true,
                     "description": "Property. Total acumulated energy. Units: Wh"
                 },
-                "totalDailyEnergy": {
-                    "type": "number",
-                    "readOnly": true,
-                    "description": "Property. Total energy for the day. Units: Wh"
-	            },
-	            "refInverterDevice": {
+	        "refInverterDevice": {
                     "type": "string",
                     "readOnly": true,
                     "description": "Relationship. Reference to the InverterDevice, and its static attributes."
