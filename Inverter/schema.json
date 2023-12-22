@@ -1,8 +1,7 @@
 {
   "$schema": "http://json-schema.org/schema#",
   "$schemaVersion": "0.0.2",
-  "modelTags": "OCF",
-  "greenEnergyProduction",
+  "modelTags": "OCF, greenEnergyProduction",
   "$id": "https://smart-data-models.github.io/dataModel.OCF/Inverter/schema.json",
   "title": "Smart Data models - Inverter schema derived from the open connectivity foundation repository https://github.com/openconnectivityfoundation/IoTDataModels",
   "description": "This Resource describes functions for the control and monitoring of IEC 61850 based circuit breaker.",
