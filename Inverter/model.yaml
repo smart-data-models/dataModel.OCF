@@ -352,6 +352,12 @@ Inverter:
       type: number
       x-ngsi:
         type: Property
+    refInverterDevice:
+      description: 'Reference to the InverterDevice, and its static attributes.'
+      readOnly: true
+      type: string
+      x-ngsi:
+        type: Relationship
     rt:
       description: The Resource Type
       items:
@@ -399,6 +405,13 @@ Inverter:
       type: string
       x-ngsi:
         type: Property
+    totalEnergy:
+      description: Total acumulated energy
+      readOnly: true
+      type: number
+      x-ngsi:
+        type: Property
+        units: Wh
     type:
       description: NGSI entity type. It has to be Inverter
       enum:
@@ -419,8 +432,8 @@ Inverter:
     - type
   type: object
   x-derived-from: https://raw.githubusercontent.com/openconnectivityfoundation/IoTDataModels/master/InverterResURI.swagger.json
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.OCF/blob/master/Inverter/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/dataModel.OCF/Inverter/schema.json
-  x-model-tags: OCF
-  x-version: 0.0.1
+  x-model-tags: 'OCF, greenEnergyProduction'
+  x-version: 0.0.2
