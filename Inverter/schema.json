@@ -72,7 +72,7 @@
                 "totalEnergy": {
                     "type": "number",
                     "readOnly": true,
-                    "description": "Property. Total acumulated energy. Units: Wh"
+                    "description": "Property. Total acumulated energy. Units:'Wh'"
                 },
 	        "refInverterDevice": {
                     "type": "string",
