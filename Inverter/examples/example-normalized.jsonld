@@ -1,133 +1,141 @@
 {
-    "id": "urn:ngsi-ld:Inverter:id:FBOE:61943307",
-    "dateCreated": {
-        "type": "Property",
-        "value": {
-            "@type": "DateTime",
-            "@value": "2017-08-27T05:59:39Z"
-        }
-    },
-    "dateModified": {
-        "type": "Property",
-        "value": {
-            "@type": "DateTime",
-            "@value": "2010-01-04T16:24:41Z"
-        }
-    },
-    "source": {
-        "type": "Property",
-        "value": "Partner remember share structure Mrs. Get again official race."
-    },
-    "name": {
-        "type": "Property",
-        "value": "Join approach reality worry away simple. Goal where memory"
-    },
-    "alternateName": {
-        "type": "Property",
-        "value": "Always whatever without huge. Culture capital Republican wife. Education offer score material court."
-    },
-    "description": {
-        "type": "Property",
-        "value": "Recognize m"
-    },
-    "dataProvider": {
-        "type": "Property",
-        "value": "Third free and institution with house base fine. Win public discover argue market."
-    },
-    "owner": {
-        "type": "Property",
-        "value": [
-            "urn:ngsi-ld:Inverter:items:TVRM:86781171",
-            "urn:ngsi-ld:Inverter:items:WZYG:44884108"
-        ]
-    },
-    "seeAlso": {
-        "type": "Property",
-        "value": [
-            "urn:ngsi-ld:Inverter:items:GRNR:13478925"
-        ]
-    },
-    "location": {
-        "type": "GeoProperty",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                -18.0500775,
-                -100.852308
-            ]
-        }
-    },
-    "address": {
-        "type": "Property",
-        "value": {
-            "streetAddress": "Kind economy stand",
-            "addressLocality": "Recently audience sure her care informat",
-            "addressRegion": "Year stand stuff risk. Realize knowledge subject admit we successful. Former expect travel beyond.",
-            "addressCountry": "Phone space special parent page since bank. Conference list career sout",
-            "postalCode": "Race condition thought never none",
-            "postOfficeBoxNumber": "Society senior measure. Throughout program until memory design glass through.",
-            "streetNr": "Wall production your meet rather. Subject he animal today.",
-            "district": "Once protect throughout line take many future effect. Team without woul"
-        }
-    },
-    "areaServed": {
-        "type": "Property",
-        "value": "Product hundred key TV wrong."
-    },
-    "rt": {
-        "type": "Property",
-        "value": [
-            "oic.r.inverter"
-        ]
-    },
-    "status": {
-        "type": "Property",
-        "value": "on"
-    },
-    "ratedpower": {
-        "type": "Property",
-        "value": 284.8
-    },
-    "minvoltmppt": {
-        "type": "Property",
-        "value": 676.9
-    },
-    "maxvoltmppt": {
-        "type": "Property",
-        "value": 707.0
-    },
-    "inputvoltage": {
-        "type": "Property",
-        "value": 180.4
-    },
-    "inputcurrent": {
-        "type": "Property",
-        "value": 981.9
-    },
-    "outputpower": {
-        "type": "Property",
-        "value": 643.1
-    },
-    "timestamp": {
-        "type": "Property",
-        "value": {
-            "@type": "DateTime",
-            "@value": "1980-10-25T16:17:04Z"
-        }
-    },
-    "n": {
-        "type": "Property",
-        "value": "Black research "
-    },
-    "if": {
-        "type": "Property",
-        "value": [
-            "oic.if.baseline",
-            "oic.if.s"
-        ]
-    },
-    "type": "Inverter",
-    "@context": [
-        "https://smartdatamodels.org/context.jsonld"
+  "id": "urn:ngsi-ld:Inverter:id:FBOE:61943307",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2017-08-27T05:59:39Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2010-01-04T16:24:41Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": "Partner remember share structure Mrs. Get again official race."
+  },
+  "name": {
+    "type": "Property",
+    "value": "Join approach reality worry away simple. Goal where memory"
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Always whatever without huge. Culture capital Republican wife. Education offer score material court."
+  },
+  "description": {
+    "type": "Property",
+    "value": "Recognize m"
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "Third free and institution with house base fine. Win public discover argue market."
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Inverter:items:TVRM:86781171",
+      "urn:ngsi-ld:Inverter:items:WZYG:44884108"
     ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Inverter:items:GRNR:13478925"
+    ]
+  },
+  "location": {
+    "type": "GeoProperty",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -18.0500775,
+        -100.852308
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "Kind economy stand",
+      "addressLocality": "Recently audience sure her care informat",
+      "addressRegion": "Year stand stuff risk. Realize knowledge subject admit we successful. Former expect travel beyond.",
+      "addressCountry": "Phone space special parent page since bank. Conference list career sout",
+      "postalCode": "Race condition thought never none",
+      "postOfficeBoxNumber": "Society senior measure. Throughout program until memory design glass through.",
+      "streetNr": "Wall production your meet rather. Subject he animal today.",
+      "district": "Once protect throughout line take many future effect. Team without woul"
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "Product hundred key TV wrong."
+  },
+  "rt": {
+    "type": "Property",
+    "value": [
+      "oic.r.inverter"
+    ]
+  },
+  "status": {
+    "type": "Property",
+    "value": "on"
+  },
+  "ratedpower": {
+    "type": "Property",
+    "value": 284.8
+  },
+  "minvoltmppt": {
+    "type": "Property",
+    "value": 676.9
+  },
+  "maxvoltmppt": {
+    "type": "Property",
+    "value": 707.0
+  },
+  "inputvoltage": {
+    "type": "Property",
+    "value": 180.4
+  },
+  "inputcurrent": {
+    "type": "Property",
+    "value": 981.9
+  },
+  "outputpower": {
+    "type": "Property",
+    "value": 643.1
+  },
+  "timestamp": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1980-10-25T16:17:04Z"
+    }
+  },
+  "n": {
+    "type": "Property",
+    "value": "Black research "
+  },
+  "if": {
+    "type": "Property",
+    "value": [
+      "oic.if.baseline",
+      "oic.if.s"
+    ]
+  },
+  "type": "Inverter",
+  "totalEnergy": {
+    "type": "Property",
+    "value": 4304000
+  },
+  "refInverterDevice": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:ARCHIVO-INVDEV-001"
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
 }

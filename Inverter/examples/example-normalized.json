@@ -117,5 +117,13 @@
       "oic.if.s"
     ]
   },
-  "type": "Inverter"
+  "type": "Inverter",
+  "totalEnergy": {
+    "type": "Number",
+    "value": 4304000,
+  },
+  "refInverterDevice": {
+    "type": "string",
+    "value": "ARCHIVO-INVDEV-001"
+  }
 }

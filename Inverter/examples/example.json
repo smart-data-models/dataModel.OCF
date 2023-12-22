@@ -48,5 +48,7 @@
     "oic.if.baseline",
     "oic.if.s"
   ],
-  "type": "Inverter"
+  "type": "Inverter",
+  "totalEnergy": 4304000,
+  "refInverterDevice": "ARCHIVO-INVDEV-001"
 }

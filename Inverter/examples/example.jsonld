@@ -49,6 +49,8 @@
     "oic.if.s"
   ],
   "type": "Inverter",
+  "totalEnergy": 4304000,
+  "refInverterDevice": "ARCHIVO-INVDEV-001",
   "@context": [
     "https://smartdatamodels.org/context.jsonld"
   ]
