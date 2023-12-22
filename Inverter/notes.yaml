@@ -1,8 +1,8 @@
 notesHeader:
-  Data Model adapted from the original created by the Open Connectivity Foundation. Original repository in https://github.com/openconnectivityfoundation/IoTDataModels
+  Data Model adapted from the original created by the Open Connectivity Foundation. Original repository in https://github.com/openconnectivityfoundation/IoTDataModels. Also extended from other use cases. Attributes totalEnergy and refInverterDevice
 notesMiddle:
 
 notesFooter:
 
 notesReadme:
-  Data Model adapted from the original created by the Open Connectivity Foundation. Original repository in https://github.com/openconnectivityfoundation/IoTDataModels
+  Data Model adapted from the original created by the Open Connectivity Foundation. Original repository in https://github.com/openconnectivityfoundation/IoTDataModels. Also extended from other use cases. Attributes totalEnergy and refInverterDevice
