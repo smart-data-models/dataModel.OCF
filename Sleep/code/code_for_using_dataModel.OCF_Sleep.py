@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "Sleep"
 subject = "dataModel.OCF"
-awake = {'type': 'Property', 'value': 864}
+awake = 864
 attribute = "awake"
 value = awake
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-nrem1 = {'type': 'Property', 'value': 864}
+nrem1 = 864
 attribute = "nrem1"
 value = nrem1
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-nrem2 = {'type': 'Property', 'value': 864}
+nrem2 = 864
 attribute = "nrem2"
 value = nrem2
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-nrem3 = {'type': 'Property', 'value': 864}
+nrem3 = 864
 attribute = "nrem3"
 value = nrem3
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
