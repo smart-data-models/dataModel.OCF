@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "AutomaticDocumentFeeder"
 subject = "dataModel.OCF"
-rt = {'type': 'Property', 'value': ['oic.r.automaticdocumentfeeder']}
+rt = ['oic.r.automaticdocumentfeeder']
 attribute = "rt"
 value = rt
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-adfStates = {'type': 'Property', 'value': ['Goal trial sign simply black. Mention edge bar long interest support. Major Repub', 'Why country day close just somebody. Wall subject future listen sell might year.']}
+adfStates = ['Goal trial sign simply black. Mention edge bar long interest support. Major Repub', 'Why country day close just somebody. Wall subject future listen sell might year.']
 attribute = "adfStates"
 value = adfStates
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-currentAdfState = "{'type': 'Property', 'value': 'Police player there mor'}"
+currentAdfState = "Police player there mor"
 attribute = "currentAdfState"
 value = currentAdfState
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-n = "{'type': 'Property', 'value': 'Reality whatever less ball diff'}"
+n = "Reality whatever less ball diff"
 attribute = "n"
 value = n
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
