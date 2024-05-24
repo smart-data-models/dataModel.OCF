@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "ContinuousGlucoseMeterThreshold"
 subject = "dataModel.OCF"
-plow = {'type': 'Property', 'value': 53.9}
+plow = 53.9
 attribute = "plow"
 value = plow
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-phigh = {'type': 'Property', 'value': 705.7}
+phigh = 705.7
 attribute = "phigh"
 value = phigh
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-dhypo = {'type': 'Property', 'value': 755.1}
+dhypo = 755.1
 attribute = "dhypo"
 value = dhypo
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-dhyper = {'type': 'Property', 'value': 517.6}
+dhyper = 517.6
 attribute = "dhyper"
 value = dhyper
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
