@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "mediaSource"
 subject = "dataModel.OCF"
-rt = {'type': 'Property', 'value': ['oic.r.mediasource']}
+rt = ['oic.r.mediasource']
 attribute = "rt"
 value = rt
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-status = {'type': 'Property', 'value': True}
+status = True
 attribute = "status"
 value = status
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-sourceType = "{'type': 'Property', 'value': 'audioPlusVideo'}"
+sourceType = "audioPlusVideo"
 attribute = "sourceType"
 value = sourceType
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-sourceName = "{'type': 'Property', 'value': 'Finally during country operation task time attorney those. Reality account future never manager.'}"
+sourceName = "Finally during country operation task time attorney those. Reality account future never manager."
 attribute = "sourceName"
 value = sourceName
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
