@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "PVArrayConnectionTerminal"
 subject = "dataModel.OCF"
-rt = {'type': 'Property', 'value': ['oic.r.pvconnectionterminal']}
+rt = ['oic.r.pvconnectionterminal']
 attribute = "rt"
 value = rt
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-ratedarrayvoltage = {'type': 'Property', 'value': 650.3}
+ratedarrayvoltage = 650.3
 attribute = "ratedarrayvoltage"
 value = ratedarrayvoltage
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-ratedarraycurrent = {'type': 'Property', 'value': 64.9}
+ratedarraycurrent = 64.9
 attribute = "ratedarraycurrent"
 value = ratedarraycurrent
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-arrayvoltage = {'type': 'Property', 'value': 382.2}
+arrayvoltage = 382.2
 attribute = "arrayvoltage"
 value = arrayvoltage
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
