@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "movement"
 subject = "dataModel.OCF"
-rt = {'type': 'Property', 'value': ['oic.r.movement.linear']}
+rt = ['oic.r.movement.linear']
 attribute = "rt"
 value = rt
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-movementSettings = {'type': 'Property', 'value': ['Socie', 'Anything treatment check. Security street draw unit win. Other then college computer life somebody.']}
+movementSettings = ['Socie', 'Anything treatment check. Security street draw unit win. Other then college computer life somebody.']
 attribute = "movementSettings"
 value = movementSettings
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-movementModifier = "{'type': 'Property', 'value': 'Ok main mov'}"
+movementModifier = "Ok main mov"
 attribute = "movementModifier"
 value = movementModifier
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-movement = "{'type': 'Property', 'value': 'Tonight address country. Range energy once southern international as'}"
+movement = "Tonight address country. Range energy once southern international as"
 attribute = "movement"
 value = movement
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
