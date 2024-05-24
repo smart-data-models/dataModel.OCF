@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "Glucose"
 subject = "dataModel.OCF"
-rt = {'type': 'Property', 'value': ['oic.r.glucose']}
+rt = ['oic.r.glucose']
 attribute = "rt"
 value = rt
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-glucose = {'type': 'Property', 'value': 722.9}
+glucose = 722.9
 attribute = "glucose"
 value = glucose
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-units = "{'type': 'Property', 'value': 'mmol/L'}"
+units = "mmol/L"
 attribute = "units"
 value = units
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-range = {'type': 'Property', 'value': [411.9, 444.5]}
+range = [411.9, 444.5]
 attribute = "range"
 value = range
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
