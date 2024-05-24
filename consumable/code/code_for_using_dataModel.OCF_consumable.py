@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "consumable"
 subject = "dataModel.OCF"
-rt = {'type': 'Property', 'value': ['oic.r.consumable']}
+rt = ['oic.r.consumable']
 attribute = "rt"
 value = rt
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-remaining = {'type': 'Property', 'value': 49}
+remaining = 49
 attribute = "remaining"
 value = remaining
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-typeofconsumable = "{'type': 'Property', 'value': 'Else memory if. Whose group through despite cause. S'}"
+typeofconsumable = "Else memory if. Whose group through despite cause. S"
 attribute = "typeofconsumable"
 value = typeofconsumable
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-url = "{'type': 'Property', 'value': 'urn:ngsi-ld:consumable:url:DLNK:92411578'}"
+url = "urn:ngsi-ld:consumable:url:DLNK:92411578"
 attribute = "url"
 value = url
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
