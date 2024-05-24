@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "DRLC"
 subject = "dataModel.OCF"
-rt = {'type': 'Property', 'value': ['oic.r.energy.drlc']}
+rt = ['oic.r.energy.drlc']
 attribute = "rt"
 value = rt
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-start = "{'type': 'Property', 'value': {'@type': 'DateTime', '@value': '1979-06-04T08:47:18Z'}}"
+start = "1979-06-04T08:47:18Z"
 attribute = "start"
 value = start
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-duration = {'type': 'Property', 'value': 864}
+duration = 864
 attribute = "duration"
 value = duration
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-override = {'type': 'Property', 'value': False}
+override = False
 attribute = "override"
 value = override
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
