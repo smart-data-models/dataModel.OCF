@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "mediaSourceList"
 subject = "dataModel.OCF"
-rt = {'type': 'Property', 'value': ['oic.r.media.input']}
+rt = ['oic.r.media.input']
 attribute = "rt"
 value = rt
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-sources = {'type': 'Property', 'value': [{'sourceName': 'Market movie head upon glass indicate. Structure field write medical. Network station arrive simply.', 'sourceNumber': 'Win increase center measu', 'sourceType': 'audioOnly', 'status': True}, {'sourceName': 'Run PM piece they cost item. His personal maybe wall.', 'sourceNumber': 'Effort exist sure shoulder national my. Offer various town author yet account.', 'sourceType': 'videoOnly', 'status': False}]}
+sources = [{'sourceName': 'Market movie head upon glass indicate. Structure field write medical. Network station arrive simply.', 'sourceNumber': 'Win increase center measu', 'sourceType': 'audioOnly', 'status': True}, {'sourceName': 'Run PM piece they cost item. His personal maybe wall.', 'sourceNumber': 'Effort exist sure shoulder national my. Offer various town author yet account.', 'sourceType': 'videoOnly', 'status': False}]
 attribute = "sources"
 value = sources
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-n = "{'type': 'Property', 'value': 'They fore'}"
+n = "They fore"
 attribute = "n"
 value = n
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-if = {'type': 'Property', 'value': ['oic.if.a', 'oic.if.baseline']}
+if = ['oic.if.a', 'oic.if.baseline']
 attribute = "if"
 value = if
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
