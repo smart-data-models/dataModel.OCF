@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "AutoFocus"
 subject = "dataModel.OCF"
-rt = {'type': 'Property', 'value': ['oic.r.autofocus']}
+rt = ['oic.r.autofocus']
 attribute = "rt"
 value = rt
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-autoFocus = {'type': 'Property', 'value': False}
+autoFocus = False
 attribute = "autoFocus"
 value = autoFocus
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-n = "{'type': 'Property', 'value': 'Find way mean finish next number wall mean. Body reveal there n'}"
+n = "Find way mean finish next number wall mean. Body reveal there n"
 attribute = "n"
 value = n
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-if = {'type': 'Property', 'value': ['oic.if.a', 'oic.if.baseline']}
+if = ['oic.if.a', 'oic.if.baseline']
 attribute = "if"
 value = if
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
