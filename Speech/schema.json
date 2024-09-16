@@ -1,10 +1,10 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0.1",
-  "modelTags": "OCF",
-  "$id": "https://smart-data-models.github.io/dataModel.IoTDataModels/Speech/schema.json",
-  "title": "Speech Synthesis-TTS",
-  "description": "Smart Data Models Program adaptation of the original IoTData data Models. This Resource may be created on the OCF Server that is capable of rendering speech by an OCF Client and allows the client to provide an SSML document with text to render  or may be created on the OIC Server by some resident application. The audio rendered is at this stage local to the Server (i.e. not streamed). The utterance is an SSML document. The supportedLanguages is an array of the RFC5646 defined language tags that are supported. The supportedVoices is an SSML document fragment indicating the voices that are supported. Utterance in the example shall be a properly escaped (JSON rules) SSML document. An example:   '<?xml version='1.0' encoding='ISO-8859-1'?> \r   <speak version='1.1' xmlns='http://www.w3.org/2001/10/synthesis' \r   \txmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' \r   \txsi:schemaLocation='http://www.w3.org/2001/10/synthesis \r   \thttp://www.w3.org/TR/speech-synthesis11/synthesis.xsd' \r   \txml:lang='en-US'> \r    \r   \tThe title of the movie is: \r   \t'Monty Pythons The Meaning of Life' \r   \twhich is directed by Terry Jones. \r   </speak' ",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$schemaVersion": "0.3.4",
+  "modelTags": "IUDX",
+  "$id": "https://smart-data-models.github.io/dataModel.Weather/WeatherObserved/schema.json",
+  "title": "Weather Observed schema - Smart Data Models",
+  "description": "An observation of weather conditions at a certain place and time. This data model has been developed in cooperation with mobile operators and the GSMA.",
   "type": "object",
   "allOf": [
     {
@@ -14,74 +14,132 @@
       "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
     },
     {
+      "$ref": "https://smart-data-models.github.io/dataModel.Weather/weather-schema.json#/definitions/Weather-Commons"
+    },
+    {
       "properties": {
-        "rt": {
-          "description": "Property. The Resource Type.",
-          "items": {
-            "enum": [
-              "oic.r.speech.tts"
-            ],
-            "maxLength": 64,
-            "type": "string"
-          },
-          "minItems": 1,
-          "uniqueItems": true,
-          "readOnly": true,
-          "type": "array"
-        },
-        "supportedLanguages": {
-          "description": "Property. The array of supported language tags.",
-          "items": {
-            "type": "string"
-          },
-          "readOnly": true,
-          "type": "array"
-        },
-        "supportedVoices": {
-          "description": "Property. The SSML document fragment indicating supported voices.",
-          "readOnly": true,
-          "maxLength": 1024,
-          "type": "string"
-        },
-        "utterance": {
-          "description": "Property. The SSML document including the speech body.",
-          "maxLength": 1024,
-          "type": "string"
-        },
-        "n": {
-          "type": "string",
-          "maxLength": 64,
-          "readOnly": true,
-          "description": "Property. Friendly name of the Resource"
-        },
-        "if": {
-          "description": "Property. The OCF Interface set supported by this Resource.",
-          "items": {
-            "enum": [
-              "oic.if.a",
-              "oic.if.baseline"
-            ],
-            "type": "string"
-          },
-          "minItems": 2,
-          "uniqueItems": true,
-          "readOnly": true,
-          "type": "array"
-        },
         "type": {
           "type": "string",
           "enum": [
-            "Speech"
+            "WeatherObserved"
           ],
-          "description": "Property. NGSI entity type. It has to be Speech"
+          "description": "Property. NGSI Entity type. It has to be WeatherObserved"
+        },
+        "dateObserved": {
+          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/dateObserved"
+        },
+        "precipitation": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. Amount of water rain registered. Units:'Liters per square meter'. "
+        },
+        "solarRadiation": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. The solar radiation observed measured in Watts per square. Units:'w/m2'"
+        },
+        "directIrradiation": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. Direct irradiance is the part of the solar irradiance that directly reaches a surface. Units:'w/m2'"
+        },
+        "diffuseIrradiation": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. Diffuse irradiance is the part of the solar irradiance that is scattered by the atmosphere. Units:'w/m2'"
+        },
+        "pressureTendency": {
+          "oneOf": [
+            {
+              "type": "string",
+              "enum": [
+                "falling",
+                "raising",
+                "steady"
+              ]
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "description": "Property. Enum:'falling, raising, steady'. Is the pressure rising or falling? It can be expressed in quantitative terms or qualitative terms"
+        },
+        "dewPoint": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. Units:'Celsius degrees'. The dew point encoded as a number. Observed temperature to which air must be cooled to become saturated with water vapor"
+        },
+        "refDevice": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 256,
+              "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+              "description": "Property. Identifier format of any NGSI entity"
+            },
+            {
+              "type": "string",
+              "format": "uri",
+              "description": "Property. Identifier format of any NGSI entity"
+            }
+          ],
+          "description": "Relationship. Model:'https://schema.org/URL'. A reference to the device(s) which captured this observation"
+        },
+        "streamGauge": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. The water level surface elevation observed by Hydrometric measurement sensors, namely a [Stream Gauge](https://en.wikipedia.org/wiki/Stream_gauge) expressed in centimeters. Units:'centimeters'"
+        },
+        "snowHeight": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. The snow height observed by generic snow depth measurement sensors, expressed in centimeters. Units:'centimeters'"
+        },
+        "uVIndexMax": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. The maximum UV index for the period, based on the World Health Organization's UV Index measure. [http://www.who.int/uv/intersunprogramme/activities/uv_index/en/](http://www.who.int/uv/intersunprogramme/activities/uv_index/en/) the values between 1 and 11 are the valid range for the index. The value 0 is for describing that no signal is detected so no value is stored"
+        },
+        "aqiMajorPollutant": {
+          "type": "string",
+          "description": "Property. Model:'https://schema.org/Text'. Major pollutant in the Air Quality Index (AQI)"
+        },
+        "aqiMajorPollutantForecast": {
+          "type": "string",
+          "description": "Property. Model:'https://schema.org/Text'. Forecasted major air pollutant in the Air Quality Index (AQI) over a certain duration in future"
+        },
+        "airTemperatureForecast": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. Forecasted value of air temperature over a certain duration in future"
+        },
+        "precipitationForecast": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. Forecasted rainfall over a certain duration in future"
+        },
+        "airQualityIndex": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. Air quality index is a number used to report the quality of the air on any given day"
+        },
+        "relativeHumidityForecast": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. Forecasted relative humidity (water vapour in air) over a certain duration in future"
+        },
+        "airQualityIndexForecast": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. Forecasted overall Air Quality Index (AQI) over a certain duration in future"
+        },
+        "airTemperatureTSA": {
+          "type": "object",
+          "description": "Property. Air temperature time series aggregation",
+          "$ref": "https://smart-data-models.github.io/dataModel.Environment/Environment-schema.json#/definitions/TimeSeriesAggregation"
         }
       }
     }
   ],
-  "derivedFrom": "https://github.com/OpenInterConnect/IoTDataModels/blob/master/SpeechResURI.swagger.json",
-  "license": "https://github.com/OpenInterConnect/IoTDataModels/blob/master/README.md",
   "required": [
     "id",
-    "type"
+    "type",
+    "dateObserved",
+    "location"
   ]
 }
