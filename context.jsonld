@@ -144,7 +144,7 @@
         "awake": "https://smartdatamodels.org/dataModel.OCF/awake",
         "bbox": {
             "@container": "@list",
-            "@id": "geojson:bbox"
+            "@id": "https://purl.org/geojson/vocab#bbox"
         },
         "bloc": "https://smartdatamodels.org/dataModel.OCF/bloc",
         "bmi": "https://smartdatamodels.org/dataModel.OCF/bmi",
@@ -178,7 +178,7 @@
         "conversion": "https://smartdatamodels.org/dataModel.OCF/conversion",
         "coordinates": {
             "@container": "@list",
-            "@id": "geojson:coordinates"
+            "@id": "https://purl.org/geojson/vocab#coordinates"
         },
         "count": "https://smartdatamodels.org/dataModel.OCF/count",
         "countdown": "https://smartdatamodels.org/dataModel.OCF/countdown",
@@ -242,7 +242,7 @@
         "latitude": "https://smartdatamodels.org/dataModel.OCF/latitude",
         "leakagecurrent": "https://smartdatamodels.org/dataModel.OCF/leakagecurrent",
         "lightsleep": "https://smartdatamodels.org/dataModel.OCF/lightsleep",
-        "location": "ngsi-ld:location",
+        "location": "https://uri.etsi.org/ngsi-ld/location",
         "location-info": "https://smartdatamodels.org/dataModel.OCF/location-info",
         "lockCodeList": "https://smartdatamodels.org/dataModel.OCF/lockCodeList",
         "lockState": "https://smartdatamodels.org/dataModel.OCF/lockState",
@@ -266,7 +266,7 @@
         "memorysize": "https://smartdatamodels.org/dataModel.OCF/memorysize",
         "minnotifyperiod": "https://smartdatamodels.org/dataModel.OCF/minnotifyperiod",
         "minvoltmppt": "https://smartdatamodels.org/dataModel.OCF/minvoltmppt",
-        "mode": "ngsi-ld:mode",
+        "mode": "https://uri.etsi.org/ngsi-ld/mode",
         "modes": "https://smartdatamodels.org/dataModel.OCF/modes",
         "movement": "https://smartdatamodels.org/dataModel.OCF/movement",
         "movementModifier": "https://smartdatamodels.org/dataModel.OCF/movementModifier",
@@ -367,7 +367,7 @@
         "starttime": "https://smartdatamodels.org/dataModel.OCF/starttime",
         "state": "https://smartdatamodels.org/dataModel.OCF/state",
         "stateofcard": "https://smartdatamodels.org/dataModel.OCF/stateofcard",
-        "status": "ngsi-ld:status",
+        "status": "https://uri.etsi.org/ngsi-ld/status",
         "step": "https://smartdatamodels.org/dataModel.OCF/step",
         "step_phases": "https://smartdatamodels.org/dataModel.OCF/step_phases",
         "step_score": "https://smartdatamodels.org/dataModel.OCF/step_score",
@@ -411,11 +411,11 @@
         "typeofconsumable": "https://smartdatamodels.org/dataModel.OCF/typeofconsumable",
         "unit": "https://smartdatamodels.org/dataModel.OCF/unit",
         "units": "https://smartdatamodels.org/dataModel.OCF/units",
-        "uri": "ngsi-ld:uri",
+        "uri": "https://uri.etsi.org/ngsi-ld/uri",
         "url": "https://smartdatamodels.org/url",
         "userid": "https://smartdatamodels.org/dataModel.OCF/userid",
         "utterance": "https://smartdatamodels.org/dataModel.OCF/utterance",
-        "value": "ngsi-ld:hasValue",
+        "value": "https://uri.etsi.org/ngsi-ld/hasValue",
         "valueconditional": "https://smartdatamodels.org/dataModel.OCF/valueconditional",
         "valuetype": "https://smartdatamodels.org/dataModel.OCF/valuetype",
         "video-description": "https://smartdatamodels.org/dataModel.OCF/video-description",
