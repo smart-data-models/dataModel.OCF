@@ -1,7 +1,7 @@
 /* (Beta) Export of data model GlucoseMedication of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE regimen_type AS ENUM ('rapidacting', 'shortacting', 'intermediateacting', 'longacting', 'premix');
+CREATE TYPE GlucoseMedication_regimen_type AS ENUM ('rapidacting', 'shortacting', 'intermediateacting', 'longacting', 'premix');
 CREATE TYPE GlucoseMedication_type AS ENUM ('GlucoseMedication');
-CREATE TYPE units_type AS ENUM ('mg', 'mL');
+CREATE TYPE GlucoseMedication_units_type AS ENUM ('mg', 'mL');
 CREATE TABLE GlucoseMedication (
   "address" JSON,
   "alternateName" TEXT,
@@ -19,11 +19,11 @@ CREATE TABLE GlucoseMedication (
   "owner" JSON,
   "precision" NUMERIC,
   "range" JSON,
-  "regimen" regimen_type,
+  "regimen" GlucoseMedication_regimen_type,
   "rt" JSON,
   "seeAlso" JSON,
   "source" TEXT,
   "step" NUMERIC,
   "type" GlucoseMedication_type,
-  "units" units_type
+  "units" GlucoseMedication_units_type
 );
