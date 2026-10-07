@@ -1,12 +1,12 @@
 /* (Beta) Export of data model ContinuousGlucoseMeterStatus of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE cgmtype_type AS ENUM ('Capillary Whole blood', 'Capillary Plasma', 'Venous Plasma', 'Arterial Whole blood', 'Arterial Plasma', 'Undetermined Whole blood', 'Undetermined Plasma', 'Interstitial Fluid');
+CREATE TYPE ContinuousGlucoseMeterStatus_cgmtype_type AS ENUM ('Capillary Whole blood', 'Capillary Plasma', 'Venous Plasma', 'Arterial Whole blood', 'Arterial Plasma', 'Undetermined Whole blood', 'Undetermined Plasma', 'Interstitial Fluid');
 CREATE TYPE ContinuousGlucoseMeterStatus_type AS ENUM ('ContinuousGlucoseMeterStatus');
 CREATE TABLE ContinuousGlucoseMeterStatus (
   "address" JSON,
   "alternateName" TEXT,
   "areaServed" TEXT,
   "cgmstatus" TEXT,
-  "cgmtype" cgmtype_type,
+  "cgmtype" ContinuousGlucoseMeterStatus_cgmtype_type,
   "dataProvider" TEXT,
   "dateCreated" TIMESTAMP,
   "dateModified" TIMESTAMP,
