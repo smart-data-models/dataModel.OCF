@@ -1,11 +1,11 @@
 /* (Beta) Export of data model AirFlow of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE automode_type AS ENUM ('On', 'Off');
+CREATE TYPE AirFlow_automode_type AS ENUM ('On', 'Off');
 CREATE TYPE AirFlow_type AS ENUM ('AirFlow');
 CREATE TABLE AirFlow (
   "address" JSON,
   "alternateName" TEXT,
   "areaServed" TEXT,
-  "automode" automode_type,
+  "automode" AirFlow_automode_type,
   "dataProvider" TEXT,
   "dateCreated" TIMESTAMP,
   "dateModified" TIMESTAMP,
