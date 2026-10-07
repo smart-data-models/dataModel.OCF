@@ -1,6 +1,6 @@
 /* (Beta) Export of data model Glucose of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE Glucose_type AS ENUM ('Glucose');
-CREATE TYPE units_type AS ENUM ('mg/dL', 'mmol/L');
+CREATE TYPE Glucose_units_type AS ENUM ('mg/dL', 'mmol/L');
 CREATE TABLE Glucose (
   "address" JSON,
   "alternateName" TEXT,
@@ -23,5 +23,5 @@ CREATE TABLE Glucose (
   "source" TEXT,
   "step" NUMERIC,
   "type" Glucose_type,
-  "units" units_type
+  "units" Glucose_units_type
 );
