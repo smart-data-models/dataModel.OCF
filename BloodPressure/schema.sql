@@ -1,6 +1,6 @@
 /* (Beta) Export of data model BloodPressure of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE BloodPressure_type AS ENUM ('BloodPressure');
-CREATE TYPE units_type AS ENUM ('mmHg', 'kPa');
+CREATE TYPE BloodPressure_units_type AS ENUM ('mmHg', 'kPa');
 CREATE TABLE BloodPressure (
   "address" JSON,
   "alternateName" TEXT,
@@ -25,5 +25,5 @@ CREATE TABLE BloodPressure (
   "step" NUMERIC,
   "systolic" NUMERIC,
   "type" BloodPressure_type,
-  "units" units_type
+  "units" BloodPressure_units_type
 );
