@@ -1,6 +1,6 @@
 /* (Beta) Export of data model BodyFat of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE BodyFat_type AS ENUM ('BodyFat');
-CREATE TYPE units_type AS ENUM ('kg', 'lb', 'percent');
+CREATE TYPE BodyFat_units_type AS ENUM ('kg', 'lb', 'percent');
 CREATE TABLE BodyFat (
   "address" JSON,
   "alternateName" TEXT,
@@ -23,5 +23,5 @@ CREATE TABLE BodyFat (
   "source" TEXT,
   "step" NUMERIC,
   "type" BodyFat_type,
-  "units" units_type
+  "units" BodyFat_units_type
 );
