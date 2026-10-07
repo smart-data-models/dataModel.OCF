@@ -1,8 +1,8 @@
 /* (Beta) Export of data model 3DPrinter of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE 3dprinttype_type AS ENUM ('Fused Filament Fabrication', 'Fused Deposition Modeling', 'Digital Light Processing', 'Powder Bed & inkjet head 3D Printing', 'Photopolymer Jetting Technology', 'Laminated Object Manufacturing', 'Stereolithography Apparatus', 'Selective Laser Sintering', 'Unknown');
+CREATE TYPE 3DPrinter_3dprinttype_type AS ENUM ('Fused Filament Fabrication', 'Fused Deposition Modeling', 'Digital Light Processing', 'Powder Bed & inkjet head 3D Printing', 'Photopolymer Jetting Technology', 'Laminated Object Manufacturing', 'Stereolithography Apparatus', 'Selective Laser Sintering', 'Unknown');
 CREATE TYPE 3DPrinter_type AS ENUM ('3DPrinter');
 CREATE TABLE 3DPrinter (
-  "3dprinttype" 3dprinttype_type,
+  "3dprinttype" 3DPrinter_3dprinttype_type,
   "address" JSON,
   "alternateName" TEXT,
   "areaServed" TEXT,
