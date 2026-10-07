@@ -1,6 +1,6 @@
 /* (Beta) Export of data model Weight of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE Weight_type AS ENUM ('Weight');
-CREATE TYPE units_type AS ENUM ('kg', 'g', 'lb', 'oz');
+CREATE TYPE Weight_units_type AS ENUM ('kg', 'g', 'lb', 'oz');
 CREATE TABLE Weight (
   "address" JSON,
   "alternateName" TEXT,
@@ -22,6 +22,6 @@ CREATE TABLE Weight (
   "source" TEXT,
   "step" NUMERIC,
   "type" Weight_type,
-  "units" units_type,
+  "units" Weight_units_type,
   "weight" NUMERIC
 );
