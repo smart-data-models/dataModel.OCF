@@ -1,5 +1,5 @@
 /* (Beta) Export of data model GlucoseHealth of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE health_type AS ENUM ('minor', 'major', 'menses', 'stress', 'none');
+CREATE TYPE GlucoseHealth_health_type AS ENUM ('minor', 'major', 'menses', 'stress', 'none');
 CREATE TYPE GlucoseHealth_type AS ENUM ('GlucoseHealth');
 CREATE TABLE GlucoseHealth (
   "address" JSON,
@@ -9,7 +9,7 @@ CREATE TABLE GlucoseHealth (
   "dateCreated" TIMESTAMP,
   "dateModified" TIMESTAMP,
   "description" TEXT,
-  "health" health_type,
+  "health" GlucoseHealth_health_type,
   "id" TEXT PRIMARY KEY,
   "if" JSON,
   "location" JSON,
