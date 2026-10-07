@@ -1,8 +1,8 @@
 /* (Beta) Export of data model Activity of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE activity_type AS ENUM ('sleep', 'sit', 'stand', 'walk', 'run', 'unknown');
+CREATE TYPE Activity_activity_type AS ENUM ('sleep', 'sit', 'stand', 'walk', 'run', 'unknown');
 CREATE TYPE Activity_type AS ENUM ('Activity');
 CREATE TABLE Activity (
-  "activity" activity_type,
+  "activity" Activity_activity_type,
   "address" JSON,
   "alternateName" TEXT,
   "areaServed" TEXT,
