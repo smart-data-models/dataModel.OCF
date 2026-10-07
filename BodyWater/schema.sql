@@ -1,6 +1,6 @@
 /* (Beta) Export of data model BodyWater of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE BodyWater_type AS ENUM ('BodyWater');
-CREATE TYPE units_type AS ENUM ('kg', 'lb');
+CREATE TYPE BodyWater_units_type AS ENUM ('kg', 'lb');
 CREATE TABLE BodyWater (
   "address" JSON,
   "alternateName" TEXT,
@@ -23,5 +23,5 @@ CREATE TABLE BodyWater (
   "source" TEXT,
   "step" NUMERIC,
   "type" BodyWater_type,
-  "units" units_type
+  "units" BodyWater_units_type
 );
