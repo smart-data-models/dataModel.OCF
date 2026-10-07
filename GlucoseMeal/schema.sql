@@ -1,5 +1,5 @@
 /* (Beta) Export of data model GlucoseMeal of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE meal_type AS ENUM ('preprandial', 'postprandial', 'fasting', 'bedtime', 'casual');
+CREATE TYPE GlucoseMeal_meal_type AS ENUM ('preprandial', 'postprandial', 'fasting', 'bedtime', 'casual');
 CREATE TYPE GlucoseMeal_type AS ENUM ('GlucoseMeal');
 CREATE TABLE GlucoseMeal (
   "address" JSON,
@@ -12,7 +12,7 @@ CREATE TABLE GlucoseMeal (
   "id" TEXT PRIMARY KEY,
   "if" JSON,
   "location" JSON,
-  "meal" meal_type,
+  "meal" GlucoseMeal_meal_type,
   "n" TEXT,
   "name" TEXT,
   "owner" JSON,
