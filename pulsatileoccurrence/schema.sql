@@ -1,5 +1,5 @@
 /* (Beta) Export of data model pulsatileoccurrence of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE occurrence_type AS ENUM ('BEAT', 'BEAT_MAX_INRUSH', 'NOS');
+CREATE TYPE pulsatileoccurrence_occurrence_type AS ENUM ('BEAT', 'BEAT_MAX_INRUSH', 'NOS');
 CREATE TYPE pulsatileoccurrence_type AS ENUM ('pulsatileoccurrence');
 CREATE TABLE pulsatileoccurrence (
   "address" JSON,
@@ -14,7 +14,7 @@ CREATE TABLE pulsatileoccurrence (
   "location" JSON,
   "n" TEXT,
   "name" TEXT,
-  "occurrence" occurrence_type,
+  "occurrence" pulsatileoccurrence_occurrence_type,
   "owner" JSON,
   "rt" JSON,
   "seeAlso" JSON,
