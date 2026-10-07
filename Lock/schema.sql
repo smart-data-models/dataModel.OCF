@@ -1,5 +1,5 @@
 /* (Beta) Export of data model Lock of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE lockState_type AS ENUM ('Locked', 'Unlocked');
+CREATE TYPE Lock_lockState_type AS ENUM ('Locked', 'Unlocked');
 CREATE TYPE Lock_type AS ENUM ('Lock');
 CREATE TABLE Lock (
   "address" JSON,
@@ -12,7 +12,7 @@ CREATE TABLE Lock (
   "id" TEXT PRIMARY KEY,
   "if" JSON,
   "location" JSON,
-  "lockState" lockState_type,
+  "lockState" Lock_lockState_type,
   "n" TEXT,
   "name" TEXT,
   "owner" JSON,
