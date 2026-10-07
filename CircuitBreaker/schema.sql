@@ -1,5 +1,5 @@
 /* (Beta) Export of data model CircuitBreaker of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE status_type AS ENUM ('on', 'off', 'trip');
+CREATE TYPE CircuitBreaker_status_type AS ENUM ('on', 'off', 'trip');
 CREATE TYPE CircuitBreaker_type AS ENUM ('CircuitBreaker');
 CREATE TABLE CircuitBreaker (
   "address" JSON,
@@ -23,7 +23,7 @@ CREATE TABLE CircuitBreaker (
   "rt" JSON,
   "seeAlso" JSON,
   "source" TEXT,
-  "status" status_type,
+  "status" CircuitBreaker_status_type,
   "timestamp" TIMESTAMP,
   "type" CircuitBreaker_type
 );
