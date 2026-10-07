@@ -1,5 +1,5 @@
 /* (Beta) Export of data model Inverter of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE status_type AS ENUM ('on', 'off', 'trip');
+CREATE TYPE Inverter_status_type AS ENUM ('on', 'off', 'trip');
 CREATE TYPE Inverter_type AS ENUM ('Inverter');
 CREATE TABLE Inverter (
   "address" JSON,
@@ -25,7 +25,7 @@ CREATE TABLE Inverter (
   "rt" JSON,
   "seeAlso" JSON,
   "source" TEXT,
-  "status" status_type,
+  "status" Inverter_status_type,
   "timestamp" TIMESTAMP,
   "totalEnergy" NUMERIC,
   "type" Inverter_type
