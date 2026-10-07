@@ -1,5 +1,5 @@
 /* (Beta) Export of data model GlucoseTester of the subject dataModel.OCF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE tester_type AS ENUM ('self', 'hcp', 'lab');
+CREATE TYPE GlucoseTester_tester_type AS ENUM ('self', 'hcp', 'lab');
 CREATE TYPE GlucoseTester_type AS ENUM ('GlucoseTester');
 CREATE TABLE GlucoseTester (
   "address" JSON,
@@ -18,6 +18,6 @@ CREATE TABLE GlucoseTester (
   "rt" JSON,
   "seeAlso" JSON,
   "source" TEXT,
-  "tester" tester_type,
+  "tester" GlucoseTester_tester_type,
   "type" GlucoseTester_type
 );
